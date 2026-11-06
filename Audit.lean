@@ -3449,6 +3449,15 @@ import PaperP1
 #print axioms PaperP1.CoarseSaddlePowerErrors.power_negligible
 #print axioms PaperP1.CommonCutoffSurfaceBudget.real_floor_budget
 #print axioms PaperP1.CommonCutoffSurfaceBudget.class_budget
+#print axioms PaperP1.CommonPrimeFrequencyException.doubled_value_continuous
+#print axioms PaperP1.CommonPrimeFrequencyException.exceptional_measurable
+#print axioms PaperP1.CommonPrimeFrequencyException.repulsion_off_exception
+#print axioms PaperP1.CommonPrimeFrequencyException.doubled_high_moment
+#print axioms PaperP1.CommonPrimeFrequencyException.exceptional_budget
+#print axioms PaperP1.CommonPrimeFrequencyException.exceptional_measure_bound
+#print axioms PaperP1.CommonPrimeFrequencyException.normalized_measure_bound
+#print axioms PaperP1.CommonPrimeFrequencyException.slow_band_fraction_bound
+#print axioms PaperP1.CommonPrimeFrequencyException.common_repulsion_uniform
 #print axioms PaperP1.CompactCurvePopulationEnds.closure_box
 #print axioms PaperP1.CompactCurvePopulationEnds.closure_curve
 #print axioms PaperP1.CompactCurvePopulationEnds.closure_comparison

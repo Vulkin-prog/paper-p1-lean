@@ -4605,3 +4605,4 @@ public import PaperP1.Analysis.FiniteGramLargeValues
 public import PaperP1.Analysis.DirichletGramLargeValues
 public import PaperP1.Analysis.LogarithmicExponentialSum
 public import PaperP1.Analysis.RealPretentiousDistance
+public import PaperP1.Analysis.CommonPrimeFrequencyException

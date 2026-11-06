@@ -31953,6 +31953,42 @@
         "status": "not_integrated"
       },
       "validation_commit": "20b8db376aa8df3c11810e8b467891425371fa6e"
+    },
+    {
+      "id": "P1-MATH-0675",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "Finite real repulsion still needed an actual measurable frequency set common to all real bounded coefficient choices, with a proved measure bound and a cutoff before every varying frequency interval and function.",
+      "finding": "One fixed reciprocal-prime large-value set works for all real bounded functions. Exact doubled-frequency moments and Markov give its actual measure, and the actual slow prime band gives arbitrarily large repulsion outside an arbitrarily small relative-measure set uniformly in all functions and T>=log N.",
+      "proposed_revision": "Use the proved common measurable exceptional set and its exact order/normalization factors. Preserve the threshold before all functions and intervals. Prove the multiplicative mean estimate and mass control on exceptional frequencies separately.",
+      "impact": "Closes actual common exceptional-frequency measure control for finite real repulsion. It does not prove the Halasz mean estimate, exceptional quotient-mass bound or T19.17.",
+      "evidence": [
+        "PaperP1.CommonPrimeFrequencyException.doubled_value_continuous",
+        "PaperP1.CommonPrimeFrequencyException.exceptional_measurable",
+        "PaperP1.CommonPrimeFrequencyException.repulsion_off_exception",
+        "PaperP1.CommonPrimeFrequencyException.doubled_high_moment",
+        "PaperP1.CommonPrimeFrequencyException.exceptional_budget",
+        "PaperP1.CommonPrimeFrequencyException.exceptional_measure_bound",
+        "PaperP1.CommonPrimeFrequencyException.normalized_measure_bound",
+        "PaperP1.CommonPrimeFrequencyException.slow_band_fraction_bound",
+        "PaperP1.CommonPrimeFrequencyException.common_repulsion_uniform",
+        "PaperP1.CommonPrimeFrequencyException.exceptional"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17897 jobs); direct axiom audit passed for 17803 declarations using only propext, Classical.choice and Quot.sound; all 17800 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.39 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
