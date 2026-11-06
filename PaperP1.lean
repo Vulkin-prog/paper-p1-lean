@@ -4755,3 +4755,4 @@ public import PaperP1.Analysis.FinalPrimeBandGeometry
 public import PaperP1.Analysis.FinalPrimeBandSieve
 public import PaperP1.Analysis.FinalPrimeBandPopulation
 public import PaperP1.Analysis.FinalRelativeApproximation
+public import PaperP1.Analysis.FinalRectangleApproximation

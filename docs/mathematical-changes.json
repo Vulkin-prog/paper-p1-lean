@@ -36797,6 +36797,33 @@
         "status": "not_integrated"
       },
       "validation_commit": "39f039bfa583495d106149b84d364acf5168fd70"
+    },
+    {
+      "id": "P1-MATH-0816",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "Applying a sparse frequency argument to the final prime band first requires an actual narrow product approximation with uniform cutoffs and count weights.",
+      "finding": "For every fixed B>=32 and epsilon>0, ONE width cutoff H0>=2 and size cutoff N0>=1 precede ALL H>=H0, N>=N0, all completely multiplicative complex coefficients bounded by 1 on Ico N (4*N), and every 0<T<=N. The square integral of the ACTUAL full dyadic Dirichlet polynomial minus the ACTUAL final-band narrow rectangle with first-band cofactor presence is at most epsilon. The proof combines the literal quotient approximation, exact narrow boundary error and square-integral triangle bound. One theorem establishes this usable final rectangle without claiming a bound for its remaining frequency contribution.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "The actual final-band narrow rectangle uniformly approximates the full polynomial. The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.FinalRectangleApproximation.rectangle_small_uniform"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18199 jobs); direct axiom audit passed for 18633 declarations using only propext, Classical.choice and Quot.sound; all 18828 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.84 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
