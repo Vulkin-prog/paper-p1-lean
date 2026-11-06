@@ -3458,6 +3458,15 @@ import PaperP1
 #print axioms PaperP1.CommonPrimeFrequencyException.normalized_measure_bound
 #print axioms PaperP1.CommonPrimeFrequencyException.slow_band_fraction_bound
 #print axioms PaperP1.CommonPrimeFrequencyException.common_repulsion_uniform
+#print axioms PaperP1.CommonUnitException.common_continuous
+#print axioms PaperP1.CommonUnitException.maxPoint_mem
+#print axioms PaperP1.CommonUnitException.maxPoint_eq
+#print axioms PaperP1.CommonUnitException.sample_range
+#print axioms PaperP1.CommonUnitException.sample_separated
+#print axioms PaperP1.CommonUnitException.sample_big
+#print axioms PaperP1.CommonUnitException.off_bad_distance
+#print axioms PaperP1.CommonUnitException.bad_units_card_small
+#print axioms PaperP1.CommonUnitException.unit_repulsion_small_uniform
 #print axioms PaperP1.CompactCurvePopulationEnds.closure_box
 #print axioms PaperP1.CompactCurvePopulationEnds.closure_curve
 #print axioms PaperP1.CompactCurvePopulationEnds.closure_comparison

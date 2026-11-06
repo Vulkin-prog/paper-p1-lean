@@ -1,6 +1,16 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0701: ACTUAL slow-prime discrete sixth
+Current checkpoint P1-MATH-0702: ACTUAL unit frequency maxima
+have a vanishing-density exceptional interval count. Attained
+maximizers and parity splitting give actual separated samples.
+Repulsion holds at EVERY point of EVERY good interval BEFORE ALL
+admissible real functions. The full Euler LOCAL-SUPREMUM budget
+and final Halasz/short-average assembly remain unfinished.
+T19.17 conditional; original T1.7 complete. Coverage: 164 proved,
+1 conditional, 2 in_progress /167; all 73 main proved.
+False scopes/corrections unchanged. No Palomar registration.
+
+Historical checkpoint P1-MATH-0701: ACTUAL slow-prime discrete sixth
 moments give vanishing-density counts of separated large frequency
 values for T>=log(N)^3. ONE threshold precedes ALL finite sample
 families; repeated-prime product fibres and bandwidth are explicit.
@@ -31142,6 +31152,16 @@ families. Unit maxima, full Euler local-supremum budget and final
 Halasz/short-average assembly remain unfinished. T19.17 conditional;
 original T1.7 unconditional.
 
+## Internal common unit frequency exceptions
+
+P1-MATH-0702 selects actual attained maxima of the common prime
+polynomial on unit intervals. Parity splitting ensures separation,
+so its actual sixth-moment bound gives vanishing-density bad-unit
+counts. Real repulsion holds throughout every good interval before
+all admissible coefficient functions. The full Euler local-supremum
+budget and final Halasz/short-average assembly remain unfinished.
+T19.17 conditional; original T1.7 unconditional.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -33223,3 +33243,18 @@ If the actual common prime polynomial is at least half its reciprocal prime mass
 This closes a uniform actual separated-frequency large-value count on the slow band, with a sixth-moment proof and no assumed pointwise or discrete frequency theorem. Conversion to actual unit-interval maxima and the full Euler local-supremum budget remains unfinished, as do the final Halasz and logarithmic short-average steps. T19.17 remains conditional; original complete T1.7 unconditional. Coverage stays 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, source hashes, pinned Lean and allowed axioms remain unchanged. About 53.9 GiB is free on Ubuntu; no dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17969 jobs); direct axiom audit passed for 18094 declarations using only propext, Classical.choice and Quot.sound; all 18173 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.90 GiB.
+
+
+## Actual common unit frequency maxima and vanishing exceptional interval counts
+
+Stable ID: p1:internal:common-unit-frequency-exceptions. Actual attained unit maxima, parity separation and bad-interval counts are internal. Good-unit repulsion holds before every admissible real function. Full Euler budget remains unfinished.
+
+CommonUnitException defines the ACTUAL common prime polynomial at doubled frequency and its attained square-norm maximum on every interval [j-K-1/2,j-K+1/2]. A literal choice of maximizer lies in that interval and realizes the same localSquareSup used in the analytic frequency budget. badUnits(N,K) is the ACTUAL finite subset where this square maximum is at least (H(N)/2)^2.
+
+The doubled maximizing frequencies lie in [-(2K+1),2K+1]. For distinct indices of the SAME parity they are separated by at least 1, including possible endpoint maximizers. At every bad index their actual common polynomial is at least H(N)/2. Splitting into the two parity filters and applying the proved actual separated sixth-moment count yields one N0 before ALL N>=N0 and ALL K with log(N)^3<=K, such that the ACTUAL bad-unit count is <=epsilon*(2K+1). The two filters partition the literal finite set exactly.
+
+At EVERY point of EVERY good unit interval, real phase repulsion gives D_slow>H(N)/8 before ALL real functions bounded by one on that actual prime set. Since H(N) tends to infinity, for any B and epsilon one threshold supplies BOTH the small bad-unit count and the distance bound >=B throughout EVERY good interval, uniformly before all admissible real functions. Nine theorems and three definitions are added in one module.
+
+This closes the actual unit-maxima common exception and its vanishing-density count. The full Euler local-supremum budget and final Halasz/logarithmic short-average assembly remain unfinished. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original corrections, preserved sources, pinned Lean and allowed axioms unchanged. About 53.9 GiB is free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17971 jobs); direct axiom audit passed for 18103 declarations using only propext, Classical.choice and Quot.sound; all 18185 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.88 GiB.

@@ -33065,6 +33065,44 @@
         "status": "not_integrated"
       },
       "validation_commit": "5e3552b507fd898aa7cf539ad3ca9187234b2585"
+    },
+    {
+      "id": "P1-MATH-0702",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "Separated-sample bounds alone did not control exceptional values anywhere inside unit intervals. Adjacent maximizing points can coincide at an endpoint.",
+      "finding": "Actual compact-interval maxima exist. Splitting their integer indices by parity guarantees the needed frequency separation, so the actual bad-unit count has vanishing density. Repulsion holds at every point of every good interval before all real coefficient functions.",
+      "proposed_revision": "Use the proved common unit exception when controlling local Euler suprema. Preserve the parity split and attained-maximizer argument, including interval endpoints.",
+      "impact": "Closes actual common unit-frequency maxima and vanishing exceptional interval counts. Full Euler budget, final Halasz/short-average assembly and T19.17 remain unfinished.",
+      "evidence": [
+        "PaperP1.CommonUnitException.common_continuous",
+        "PaperP1.CommonUnitException.maxPoint_mem",
+        "PaperP1.CommonUnitException.maxPoint_eq",
+        "PaperP1.CommonUnitException.sample_range",
+        "PaperP1.CommonUnitException.sample_separated",
+        "PaperP1.CommonUnitException.sample_big",
+        "PaperP1.CommonUnitException.off_bad_distance",
+        "PaperP1.CommonUnitException.bad_units_card_small",
+        "PaperP1.CommonUnitException.unit_repulsion_small_uniform",
+        "PaperP1.CommonUnitException.common",
+        "PaperP1.CommonUnitException.maxPoint",
+        "PaperP1.CommonUnitException.badUnits"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17971 jobs); direct axiom audit passed for 18103 declarations using only propext, Classical.choice and Quot.sound; all 18185 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.88 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
