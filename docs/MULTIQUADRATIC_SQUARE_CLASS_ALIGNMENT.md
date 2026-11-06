@@ -1,6 +1,13 @@
 # Multiquadratic split radicands: exact square-class independence
 
-Current checkpoint P1-MATH-0734: One actual dense population supports
+Current checkpoint P1-MATH-0735: Uniform actual Dirichlet approximation
+by both Ramare quotients on one dense population. Actual Ramare main
+terms and complete short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. No Palomar
+registration.
+
+Historical checkpoint P1-MATH-0734: One actual dense population supports
 both separated prime-band Ramare identities. Actual Ramare main terms
 and complete short-average concentration remain unproved. T19.17
 conditional; original T1.7 unconditional. Coverage: 164 proved, 1
@@ -25063,3 +25070,12 @@ The actual good population is the intersection of the two literal sieve-good sub
 The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.3 GiB free on Ubuntu. No download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18035 jobs); direct axiom audit passed for 18300 declarations using only propext, Classical.choice and Quot.sound; all 18430 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.31 GiB.
+
+
+## Uniform actual Dirichlet approximation by both Ramare quotients on one dense population
+
+The actual full dyadic Dirichlet polynomial minus the same dense-population polynomial is exactly the polynomial of the literal missing population. The existing support-square mean-value theorem and the proved zero missing density give a uniform negligible L2 error, before ALL complex coefficients bounded on [N,2N) and every 0<T<=N. The dense polynomial is EXACTLY either of the two literal Ramare quotients for complete coefficients. Thus one threshold makes BOTH actual quotient differences negligible in L2, with the same source population and exact denominators. The two quotient main terms themselves remain to be bounded.
+
+The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.3 GiB free on Ubuntu. No download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18037 jobs); direct axiom audit passed for 18306 declarations using only propext, Classical.choice and Quot.sound; all 18437 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.30 GiB.

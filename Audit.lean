@@ -4926,6 +4926,12 @@ import PaperP1
 #print axioms PaperP1.TrivialTripleBand.band_norm_bound
 #print axioms PaperP1.TruncatedAffineDegree.budget
 #print axioms PaperP1.TruncatedAffineDegree.prime_scale
+#print axioms PaperP1.TwoBandDirichletApproximation.difference_identity
+#print axioms PaperP1.TwoBandDirichletApproximation.difference_continuous
+#print axioms PaperP1.TwoBandDirichletApproximation.difference_small_uniform
+#print axioms PaperP1.TwoBandDirichletApproximation.first_identity
+#print axioms PaperP1.TwoBandDirichletApproximation.second_identity
+#print axioms PaperP1.TwoBandDirichletApproximation.both_quotients_small_uniform
 #print axioms PaperP1.TwoPrimeBandPopulation.good_subset
 #print axioms PaperP1.TwoPrimeBandPopulation.good_support
 #print axioms PaperP1.TwoPrimeBandPopulation.missing_good_density_tendsto

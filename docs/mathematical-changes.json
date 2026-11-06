@@ -34213,6 +34213,39 @@
         "status": "not_integrated"
       },
       "validation_commit": "b37d0e71b3cea648b9b162ee9d27d9c45165724e"
+    },
+    {
+      "id": "P1-MATH-0735",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "Independent bands must be applied to the SAME actual population, and a zero-density loss must be transferred to the actual Dirichlet mean square before estimating quotient main terms.",
+      "finding": "The actual full dyadic Dirichlet polynomial minus the same dense-population polynomial is exactly the polynomial of the literal missing population. The existing support-square mean-value theorem and the proved zero missing density give a uniform negligible L2 error, before ALL complex coefficients bounded on [N,2N) and every 0<T<=N. The dense polynomial is EXACTLY either of the two literal Ramare quotients for complete coefficients. Thus one threshold makes BOTH actual quotient differences negligible in L2, with the same source population and exact denominators. The two quotient main terms themselves remain to be bounded.",
+      "proposed_revision": "Use the literal simultaneous finite population, exact Ramare formulas and uniform negligible difference. Do not treat the main quotient frequency estimates as proved.",
+      "impact": "Uniform actual Dirichlet approximation by both Ramare quotients on one dense population. The actual quotient main terms and short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.TwoBandDirichletApproximation.difference_identity",
+        "PaperP1.TwoBandDirichletApproximation.difference_continuous",
+        "PaperP1.TwoBandDirichletApproximation.difference_small_uniform",
+        "PaperP1.TwoBandDirichletApproximation.first_identity",
+        "PaperP1.TwoBandDirichletApproximation.second_identity",
+        "PaperP1.TwoBandDirichletApproximation.both_quotients_small_uniform",
+        "PaperP1.TwoBandDirichletApproximation.quotient"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18037 jobs); direct axiom audit passed for 18306 declarations using only propext, Classical.choice and Quot.sound; all 18437 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.30 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
