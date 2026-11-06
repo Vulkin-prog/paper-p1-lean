@@ -4301,6 +4301,11 @@ import PaperP1
 #print axioms PaperP1.NarrowPrimeBands.band_disjoint
 #print axioms PaperP1.NarrowPrimeBands.sum_partition
 #print axioms PaperP1.NarrowPrimeBands.indices_card_bound
+#print axioms PaperP1.NarrowRamareRectangle.cofactorSet_eq_interval
+#print axioms PaperP1.NarrowRamareRectangle.cofactor_endpoints
+#print axioms PaperP1.NarrowRamareRectangle.twist_coefficient
+#print axioms PaperP1.NarrowRamareRectangle.band_product_expansion
+#print axioms PaperP1.NarrowRamareRectangle.rectangle_expansion
 #print axioms PaperP1.NonsingularMonomialPieces.exists_nonexceptional_piece
 #print axioms PaperP1.NonsingularMonomialPieces.exists_counting_piece
 #print axioms PaperP1.NonstationaryTangentImage.continuousOn_position

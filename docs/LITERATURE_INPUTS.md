@@ -1,6 +1,15 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0764: Actual narrow logarithmic prime bands
+Current checkpoint P1-MATH-0765: Literal narrow Ramare rectangles factor
+into actual prime and cofactor Dirichlet polynomials. The actual Ramare
+main-term frequency bounds and complete logarithmic short-average
+concentration remain unproved. T19.17 conditional; original T1.7
+unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167;
+all 73 main proved. Sources, false-scope corrections, compiler and
+axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download
+or Palomar registration.
+
+Historical checkpoint P1-MATH-0764: Actual narrow logarithmic prime bands
 with explicit relative width and finite partition. The actual Ramare
 main-term frequency bounds and complete logarithmic short-average
 concentration remain unproved. T19.17 conditional; original T1.7
@@ -32071,6 +32080,12 @@ For every integer H>=2 the literal index floor(H*log(p)), anchor exp(index/H) an
 
 The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.
 
+## Internal literal narrow ramare rectangles factor into actual prime and cofactor dirichlet polynomials
+
+The literal rectangle uses the source test X<=m*exp(j/H)<2*X, the actual other-band presence, and the FULL original support count denominator. Its cofactor support equals [ceil(X/anchor),ceil(2*X/anchor)), with positive lower endpoint and upper endpoint at most twice the lower endpoint for X>0. Each actual product of prime and cofactor Dirichlet polynomials equals the literal double sum, and the occupied-band sum equals the original-prime sum with its actual index anchor. Five theorems and three definitions establish these identities without a multiplicativity assumption. The difference between this rectangle and the coupled source quotient is still to be estimated.
+
+The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -34911,3 +34926,14 @@ For every integer H>=2 the literal index floor(H*log(p)), anchor exp(index/H) an
 The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18095 jobs); direct axiom audit passed for 18446 declarations using only propext, Classical.choice and Quot.sound; all 18605 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.77 GiB.
+
+
+## Literal narrow Ramare rectangles factor into actual prime and cofactor Dirichlet polynomials
+
+Stable ID: p1:internal:narrow-ramare-rectangle. Literal narrow Ramare rectangles factor into actual prime and cofactor Dirichlet polynomials. The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.
+
+The literal rectangle uses the source test X<=m*exp(j/H)<2*X, the actual other-band presence, and the FULL original support count denominator. Its cofactor support equals [ceil(X/anchor),ceil(2*X/anchor)), with positive lower endpoint and upper endpoint at most twice the lower endpoint for X>0. Each actual product of prime and cofactor Dirichlet polynomials equals the literal double sum, and the occupied-band sum equals the original-prime sum with its actual index anchor. Five theorems and three definitions establish these identities without a multiplicativity assumption. The difference between this rectangle and the coupled source quotient is still to be estimated.
+
+The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18097 jobs); direct axiom audit passed for 18451 declarations using only propext, Classical.choice and Quot.sound; all 18613 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.76 GiB.

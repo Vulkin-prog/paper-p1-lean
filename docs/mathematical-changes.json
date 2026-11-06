@@ -35198,6 +35198,40 @@
         "status": "not_integrated"
       },
       "validation_commit": "ea7a13ed721a3dc81429c5c16e8ec1b5b5707401"
+    },
+    {
+      "id": "P1-MATH-0765",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The cofactor denominator depends on the full original prime support, and replacing p by the band anchor creates an endpoint error which cannot be discarded.",
+      "finding": "The literal rectangle uses the source test X<=m*exp(j/H)<2*X, the actual other-band presence, and the FULL original support count denominator. Its cofactor support equals [ceil(X/anchor),ceil(2*X/anchor)), with positive lower endpoint and upper endpoint at most twice the lower endpoint for X>0. Each actual product of prime and cofactor Dirichlet polynomials equals the literal double sum, and the occupied-band sum equals the original-prime sum with its actual index anchor. Five theorems and three definitions establish these identities without a multiplicativity assumption. The difference between this rectangle and the coupled source quotient is still to be estimated.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Literal narrow Ramare rectangles factor into actual prime and cofactor Dirichlet polynomials. The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.NarrowRamareRectangle.cofactorSet_eq_interval",
+        "PaperP1.NarrowRamareRectangle.cofactor_endpoints",
+        "PaperP1.NarrowRamareRectangle.twist_coefficient",
+        "PaperP1.NarrowRamareRectangle.band_product_expansion",
+        "PaperP1.NarrowRamareRectangle.rectangle_expansion",
+        "PaperP1.NarrowRamareRectangle.cofactorSet",
+        "PaperP1.NarrowRamareRectangle.coefficient",
+        "PaperP1.NarrowRamareRectangle.rectangle"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18097 jobs); direct axiom audit passed for 18451 declarations using only propext, Classical.choice and Quot.sound; all 18613 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.76 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

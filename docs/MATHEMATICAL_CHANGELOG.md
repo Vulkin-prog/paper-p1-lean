@@ -1,6 +1,15 @@
 # Mathematical corrections and improvements
 
-Current checkpoint P1-MATH-0764: Actual narrow logarithmic prime bands
+Current checkpoint P1-MATH-0765: Literal narrow Ramare rectangles factor
+into actual prime and cofactor Dirichlet polynomials. The actual Ramare
+main-term frequency bounds and complete logarithmic short-average
+concentration remain unproved. T19.17 conditional; original T1.7
+unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167;
+all 73 main proved. Sources, false-scope corrections, compiler and
+axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download
+or Palomar registration.
+
+Historical checkpoint P1-MATH-0764: Actual narrow logarithmic prime bands
 with explicit relative width and finite partition. The actual Ramare
 main-term frequency bounds and complete logarithmic short-average
 concentration remain unproved. T19.17 conditional; original T1.7
@@ -1631,7 +1640,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**762 mathematical improvements and two statement-scope corrections are confirmed.**
+**763 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -31597,3 +31606,12 @@ For every integer H>=2 the literal index floor(H*log(p)), anchor exp(index/H) an
 The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18095 jobs); direct axiom audit passed for 18446 declarations using only propext, Classical.choice and Quot.sound; all 18605 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.77 GiB.
+
+
+## Literal narrow Ramare rectangles factor into actual prime and cofactor Dirichlet polynomials
+
+The literal rectangle uses the source test X<=m*exp(j/H)<2*X, the actual other-band presence, and the FULL original support count denominator. Its cofactor support equals [ceil(X/anchor),ceil(2*X/anchor)), with positive lower endpoint and upper endpoint at most twice the lower endpoint for X>0. Each actual product of prime and cofactor Dirichlet polynomials equals the literal double sum, and the occupied-band sum equals the original-prime sum with its actual index anchor. Five theorems and three definitions establish these identities without a multiplicativity assumption. The difference between this rectangle and the coupled source quotient is still to be estimated.
+
+The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18097 jobs); direct axiom audit passed for 18451 declarations using only propext, Classical.choice and Quot.sound; all 18613 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.76 GiB.
