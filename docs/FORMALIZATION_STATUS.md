@@ -1,6 +1,15 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0717: Every actual retained complex prime
+Current checkpoint P1-MATH-0718: Actual real frequency translations
+equal complete unit complex twists, preserving the full series, Euler
+factor, frequency budget and quantitative retained-band estimate. The
+actual geometric band partition, global Halasz assembly and final
+logarithmic short-average theorem remain unfinished. T19.17 conditional;
+original T1.7 complete. Coverage: 164 proved, 1 conditional, 2
+in_progress /167; all 73 main proved. False scopes/corrections
+unchanged. No Palomar registration.
+
+Historical checkpoint P1-MATH-0717: Every actual retained complex prime
 band has the full-budget bound with the same explicit combinedError(X);
 the prime cutoff implies the needed frequency separation. The actual
 geometric band partition, global Halasz assembly and final logarithmic
@@ -1381,7 +1390,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records715 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records716 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -1500,7 +1509,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **18199 audited theorem/lemma declarations**. This
+- The project currently has **18209 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -31672,3 +31681,14 @@ The actual condition p>floor(log(X)^20) implies p>=height(X)^2 by the literal na
 The actual geometric band partition, global Halasz assembly and final logarithmic short-average theorem remain unfinished. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, sources, pinned Lean and axioms unchanged. About 53.8 GiB is free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18001 jobs); direct axiom audit passed for 18199 declarations using only propext, Classical.choice and Quot.sound; all 18303 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.61 GiB.
+
+
+## Exact real frequency shifts as complete unit complex twists
+
+unitTwist(f,tau) is the product of the natural cast monoid map and the existing Dirichlet-twist monoid map. At every positive n it equals f(n)*phase(-log(n),tau), while its value at zero is explicitly zero. Its positive integer and prime norms are <=1.
+
+Termwise Dirichlet twists shift frequency EXACTLY, including n=0. The actual full series becomes the real full Euler product at t+tau, and the literal frequencyBudget is exactly the shifted full Euler budget. Its summatory function is the actual finite twisted sum of f(n). The retained-band bound therefore holds uniformly before all real complete monoid functions, all shifts, all admissible bands, with the same combinedError(X). Ten theorems and one definition prove the bridge.
+
+The actual geometric band partition, global Halasz assembly and final logarithmic short-average theorem remain unfinished. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, sources, pinned Lean and axioms unchanged. About 53.8 GiB is free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18003 jobs); direct axiom audit passed for 18209 declarations using only propext, Classical.choice and Quot.sound; all 18314 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.60 GiB.

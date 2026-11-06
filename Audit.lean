@@ -4449,6 +4449,16 @@ import PaperP1
 #print axioms PaperP1.RealSeriesTail.constant_tail
 #print axioms PaperP1.RealSmoothEvaluationDeterminant.bound
 #print axioms PaperP1.RealSmoothEvaluationDeterminant.coarse_bound
+#print axioms PaperP1.RealUnitTwist.unitTwist_apply
+#print axioms PaperP1.RealUnitTwist.unitTwist_zero
+#print axioms PaperP1.RealUnitTwist.unitTwist_norm
+#print axioms PaperP1.RealUnitTwist.unitTwist_prime_bound
+#print axioms PaperP1.RealUnitTwist.twist_identity
+#print axioms PaperP1.RealUnitTwist.total_twist_eq_series
+#print axioms PaperP1.RealUnitTwist.total_twist_eq_euler
+#print axioms PaperP1.RealUnitTwist.frequencyBudget_twist_eq
+#print axioms PaperP1.RealUnitTwist.summatory_twist
+#print axioms PaperP1.RealUnitTwist.twisted_retained_band_bound
 #print axioms PaperP1.ReciprocalFrequencyWeights.inverseSquare_finite_bound
 #print axioms PaperP1.ReciprocalFrequencyWeights.inverseSquare_summable
 #print axioms PaperP1.ReciprocalFrequencyWeights.inverseSquare_tsum_bound

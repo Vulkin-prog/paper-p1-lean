@@ -1,6 +1,15 @@
 # Mathematical corrections and improvements
 
-Current checkpoint P1-MATH-0717: Every actual retained complex prime
+Current checkpoint P1-MATH-0718: Actual real frequency translations
+equal complete unit complex twists, preserving the full series, Euler
+factor, frequency budget and quantitative retained-band estimate. The
+actual geometric band partition, global Halasz assembly and final
+logarithmic short-average theorem remain unfinished. T19.17 conditional;
+original T1.7 complete. Coverage: 164 proved, 1 conditional, 2
+in_progress /167; all 73 main proved. False scopes/corrections
+unchanged. No Palomar registration.
+
+Historical checkpoint P1-MATH-0717: Every actual retained complex prime
 band has the full-budget bound with the same explicit combinedError(X);
 the prime cutoff implies the needed frequency separation. The actual
 geometric band partition, global Halasz assembly and final logarithmic
@@ -1258,7 +1267,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**715 mathematical improvements and two statement-scope corrections are confirmed.**
+**716 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -30779,3 +30788,14 @@ The actual condition p>floor(log(X)^20) implies p>=height(X)^2 by the literal na
 The actual geometric band partition, global Halasz assembly and final logarithmic short-average theorem remain unfinished. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, sources, pinned Lean and axioms unchanged. About 53.8 GiB is free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18001 jobs); direct axiom audit passed for 18199 declarations using only propext, Classical.choice and Quot.sound; all 18303 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.61 GiB.
+
+
+## Exact real frequency shifts as complete unit complex twists
+
+unitTwist(f,tau) is the product of the natural cast monoid map and the existing Dirichlet-twist monoid map. At every positive n it equals f(n)*phase(-log(n),tau), while its value at zero is explicitly zero. Its positive integer and prime norms are <=1.
+
+Termwise Dirichlet twists shift frequency EXACTLY, including n=0. The actual full series becomes the real full Euler product at t+tau, and the literal frequencyBudget is exactly the shifted full Euler budget. Its summatory function is the actual finite twisted sum of f(n). The retained-band bound therefore holds uniformly before all real complete monoid functions, all shifts, all admissible bands, with the same combinedError(X). Ten theorems and one definition prove the bridge.
+
+The actual geometric band partition, global Halasz assembly and final logarithmic short-average theorem remain unfinished. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, sources, pinned Lean and axioms unchanged. About 53.8 GiB is free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18003 jobs); direct axiom audit passed for 18209 declarations using only propext, Classical.choice and Quot.sound; all 18314 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.60 GiB.
