@@ -4727,3 +4727,4 @@ public import PaperP1.Analysis.WeightedDivisorSquare
 public import PaperP1.Analysis.DivisorMajorantMeanValue
 public import PaperP1.Analysis.FiniteDirichletConvolution
 public import PaperP1.Analysis.DirichletProductMeanValue
+public import PaperP1.Analysis.PrimePowerPolynomial

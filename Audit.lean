@@ -4559,6 +4559,11 @@ import PaperP1
 #print axioms PaperP1.PrimePolynomialMoments.high_moment_bound
 #print axioms PaperP1.PrimePolynomialMoments.large_values_budget
 #print axioms PaperP1.PrimePolynomialMoments.large_values_measure
+#print axioms PaperP1.PrimePowerPolynomial.layer_positive
+#print axioms PaperP1.PrimePowerPolynomial.layer_bounds
+#print axioms PaperP1.PrimePowerPolynomial.coefficient_norm_bound
+#print axioms PaperP1.PrimePowerPolynomial.power_identity
+#print axioms PaperP1.PrimePowerPolynomial.reciprocal_layer_mass_bound
 #print axioms PaperP1.PrimePresence.present_bounds
 #print axioms PaperP1.PrimePresence.present_abs_bound
 #print axioms PaperP1.PrimePresence.count_zero_iff
