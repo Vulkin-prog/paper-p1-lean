@@ -1847,6 +1847,8 @@ import PaperP1
 #print axioms PaperP1.P3StandardMonomialWeightPolynomial.weight_sum_polynomial
 #print axioms PaperP1.P3StandardMonomialWeightPolynomial.natDegree_le
 #print axioms PaperP1.P3StandardMonomialWeightPolynomial.coeff_three
+#print axioms PaperP1.P3UniformIntegerAuxiliary.uniform_degree
+#print axioms PaperP1.P3UniformSmoothAuxiliary.uniform_degree
 #print axioms PaperP1.PairProductComparison.exact_difference
 #print axioms PaperP1.PairProductComparison.absolute_bound
 #print axioms PaperP1.PairwiseEqualSpan.exists_line
@@ -3919,6 +3921,11 @@ import PaperP1
 #print axioms PaperP1.SquareRootReciprocalUpper.small_pivot_bound
 #print axioms PaperP1.SquareRootReciprocalUpper.finite_upper
 #print axioms PaperP1.SquareRootReciprocalUpper.uniform_upper
+#print axioms PaperP1.SurfaceAuxiliaryDegreeChoice.minimum_le
+#print axioms PaperP1.SurfaceAuxiliaryDegreeChoice.power_le
+#print axioms PaperP1.SurfaceAuxiliaryDegreeChoice.degree_bound
+#print axioms PaperP1.SurfaceAuxiliaryDegreeChoice.log_height_bound
+#print axioms PaperP1.SurfaceAuxiliaryDegreeChoice.reciprocal_margin
 #print axioms PaperP1.SurfacePrimeMassLimits.mass_ratio
 #print axioms PaperP1.TangentCurvePieceZeros.partial_evaluation
 #print axioms PaperP1.TangentCurvePieceZeros.parameter_zero_bound

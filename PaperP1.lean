@@ -4377,3 +4377,6 @@ public import PaperP1.Analysis.P3CoefficientLogBudget
 public import PaperP1.Analysis.P3PrimeMassProxy
 public import PaperP1.Analysis.P3PrimeMassProxyComparison
 public import PaperP1.Arithmetic.CertificatePrimeWindow
+public import PaperP1.Algebra.P3UniformIntegerAuxiliary
+public import PaperP1.Algebra.P3UniformSmoothAuxiliary
+public import PaperP1.Analysis.SurfaceAuxiliaryDegreeChoice

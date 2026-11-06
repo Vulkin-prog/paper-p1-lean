@@ -28843,6 +28843,40 @@
         "status": "not_integrated"
       },
       "validation_commit": "531a03f47f7fef4cf7d6dab9b2620dca606e6fab"
+    },
+    {
+      "id": "P1-MATH-0606",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The global auxiliary degree must be uniform before coefficients and heights and must cover the entire original population, including rational singular points, while preserving independence from the original equation.",
+      "finding": "An actual rounded degree works for every H>=1. Uniform prime-mass construction handles the smooth subset, and multiplication by one actual independent homogeneous partial restores all remaining original points with only a fixed d-1 degree cost.",
+      "proposed_revision": "Choose the integer degree E0+ceil(H^beta), state the actual good-prime certificate/class-count premise explicitly, and use a fixed independent partial to restore every original point to the auxiliary zero set.",
+      "impact": "Closes uniform degree selection and the original rational singular subset. Leaves only the independent sharp finite-field certificate and the arbitrary-coefficient bounded-model connection before the global auxiliary reduction.",
+      "evidence": [
+        "PaperP1.P3UniformIntegerAuxiliary.uniform_degree",
+        "PaperP1.P3UniformSmoothAuxiliary.uniform_degree",
+        "PaperP1.SurfaceAuxiliaryDegreeChoice.minimum_le",
+        "PaperP1.SurfaceAuxiliaryDegreeChoice.power_le",
+        "PaperP1.SurfaceAuxiliaryDegreeChoice.degree_bound",
+        "PaperP1.SurfaceAuxiliaryDegreeChoice.log_height_bound",
+        "PaperP1.SurfaceAuxiliaryDegreeChoice.reciprocal_margin",
+        "PaperP1.SurfaceAuxiliaryDegreeChoice.degree"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17415 jobs); direct axiom audit passed for 16807 declarations using only propext, Classical.choice and Quot.sound; all 16551 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.06 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
