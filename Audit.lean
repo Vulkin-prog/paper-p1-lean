@@ -3473,6 +3473,9 @@ import PaperP1
 #print axioms PaperP1.BoundedAmplificationFactor.constant_pos
 #print axioms PaperP1.BoundedAmplificationFactor.real_factor_bound
 #print axioms PaperP1.BoundedAmplificationFactor.sampled_factor_bound
+#print axioms PaperP1.BoundedPrimeMassSieve.normalized_avoidance_bound
+#print axioms PaperP1.BoundedPrimeMassSieve.avoidance_eventually_bound
+#print axioms PaperP1.BoundedPrimeMassSieve.excluded_eventually_bound
 #print axioms PaperP1.BoxedLocalUnitGraphMaps.exists_bounded_interval
 #print axioms PaperP1.BoxedLocalUnitGraphMaps.exists_through_parameter
 #print axioms PaperP1.BoxedLocalUnitGraphMaps.exists_at_curve_point
