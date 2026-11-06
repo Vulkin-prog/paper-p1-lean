@@ -1601,6 +1601,7 @@ import PaperP1
 #print axioms PaperP1.LinearBivariateCoefficients.coefficient_height
 #print axioms PaperP1.LinearCombinationSupport.support_subset
 #print axioms PaperP1.LinearCombinationSupport.card_le
+#print axioms PaperP1.LinearCoordinateCurveImageDegree.exists_nat_linear_hilbert
 #print axioms PaperP1.LinearHilbertGrowth.unique
 #print axioms PaperP1.LinearHilbertGrowth.polynomial_affine
 #print axioms PaperP1.LinearHilbertGrowth.of_affine_polynomial
@@ -2534,6 +2535,9 @@ import PaperP1
 #print axioms PaperP1.TruncatedEvaluationDegreeBudget.strictly_mono_index_le
 #print axioms PaperP1.TruncatedEvaluationDegreeBudget.truncated_range_budget
 #print axioms PaperP1.TruncatedEvaluationDegreeBudget.triangular_budget
+#print axioms PaperP1.TwoParameterIntegralHilbertSlope.of_hyperplane
+#print axioms PaperP1.TwoParameterIntegralHilbertSlope.of_generators
+#print axioms PaperP1.TwoParameterIntegralHilbertSlope.of_finite
 #print axioms PaperP1.TwoParameterQuotientGenerators.ideal_homogeneous
 #print axioms PaperP1.TwoParameterQuotientGenerators.parameter_zero
 #print axioms PaperP1.TwoParameterQuotientGenerators.killFirst_X

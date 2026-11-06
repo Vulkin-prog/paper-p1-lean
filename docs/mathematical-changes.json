@@ -27707,6 +27707,36 @@
         "status": "not_integrated"
       },
       "validation_commit": "b09e7546a3274ea07110e413cde622f65b27a8fe"
+    },
+    {
+      "id": "P1-MATH-0579",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The genuine coordinate-image Hilbert polynomial existed, but its integral nonnegative linear coefficient and its proved comparison with the original curve degree were not yet available for constructing actual ordinary curve data.",
+      "finding": "Actual finite linear coordinate images now construct an actual natural linear Hilbert coefficient, and actual graded-piece injection proves that coefficient is at most the original genuine curve degree.",
+      "proposed_revision": "Retain the natural eventual hyperplane dimension in the actual Hilbert construction, compare actual linear coefficients, and prove positivity separately from the actual inverse chart-coordinate map.",
+      "impact": "Supplies the integral image-degree bound needed for ordinary curve construction while keeping the required noncollapse and height arguments explicit.",
+      "evidence": [
+        "PaperP1.LinearCoordinateCurveImageDegree.exists_nat_linear_hilbert",
+        "PaperP1.TwoParameterIntegralHilbertSlope.of_hyperplane",
+        "PaperP1.TwoParameterIntegralHilbertSlope.of_generators",
+        "PaperP1.TwoParameterIntegralHilbertSlope.of_finite"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17177 jobs); direct axiom audit passed for 16469 declarations using only propext, Classical.choice and Quot.sound; all 16140 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.33 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

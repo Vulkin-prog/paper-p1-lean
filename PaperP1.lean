@@ -4260,3 +4260,5 @@ public import PaperP1.Algebra.GradedPolynomialCoordinateImage
 public import PaperP1.Algebra.HomogeneousFiniteParameterDescent
 public import PaperP1.Algebra.LinearHilbertParameterDependence
 public import PaperP1.Algebra.TernaryPolynomialHilbert
+public import PaperP1.Algebra.LinearCoordinateCurveImageDegree
+public import PaperP1.Algebra.TwoParameterIntegralHilbertSlope
