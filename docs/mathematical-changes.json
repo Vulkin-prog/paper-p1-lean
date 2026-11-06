@@ -27327,6 +27327,45 @@
         "status": "not_integrated"
       },
       "validation_commit": "c04a06e801112252844c4efb78ef50c18df02a78"
+    },
+    {
+      "id": "P1-MATH-0569",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The exceptional divisor had a finite homogeneous prime decomposition but not the literal source-projective curve objects, exact original integer-point cover or a proved bound on each genuine chosen-embedding curve degree.",
+      "finding": "Actual divisor primes now construct the exact companion source-projective curves, covering the original normalized integer populations at every height, and every such curve has genuine degree at most e*2^k*D^2 by an actual quotient-Hilbert comparison.",
+      "proposed_revision": "Use the actual finite family of chart-relevant source-projective divisor curves and prove their individual degree bound from surjective graded quotient maps; distinguish this from the separate total-degree and curve-count bounds still needed.",
+      "impact": "Closes construction, original point membership and individual degree bounds for the exceptional divisor curves without inferring a uniform curve count from mere finiteness.",
+      "evidence": [
+        "PaperP1.GradedQuotientHilbertMonotonicity.quotientMap_surjective",
+        "PaperP1.GradedQuotientHilbertMonotonicity.factor_surjective",
+        "PaperP1.GradedQuotientHilbertMonotonicity.finrank_le",
+        "PaperP1.GradedQuotientHilbertMonotonicity.coefficient_le",
+        "PaperP1.SourcePrincipalComponentCurves.toCurve_sourceIdeal",
+        "PaperP1.SourcePrincipalComponentCurves.point_membership",
+        "PaperP1.SourcePrincipalComponentCurves.finite_curve_cover",
+        "PaperP1.SourceSurfaceSectionCurveDegree.degree_le",
+        "PaperP1.SourceSurfaceSectionCurveDegree.bounded_degree_finite_cover",
+        "PaperP1.GradedQuotientHilbertMonotonicity.quotientMap",
+        "PaperP1.GradedQuotientHilbertMonotonicity.factor",
+        "PaperP1.SourcePrincipalComponentCurves.chartCoordinate",
+        "PaperP1.SourcePrincipalComponentCurves.toCurve"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17111 jobs); direct axiom audit passed for 16392 declarations using only propext, Classical.choice and Quot.sound; all 16039 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.15 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

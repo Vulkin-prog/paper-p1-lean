@@ -1208,6 +1208,10 @@ import PaperP1
 #print axioms PaperP1.GradedQuotientChartMap.kernel
 #print axioms PaperP1.GradedQuotientChartMap.equiv_mk
 #print axioms PaperP1.GradedQuotientChartMap.transportEquiv_map
+#print axioms PaperP1.GradedQuotientHilbertMonotonicity.quotientMap_surjective
+#print axioms PaperP1.GradedQuotientHilbertMonotonicity.factor_surjective
+#print axioms PaperP1.GradedQuotientHilbertMonotonicity.finrank_le
+#print axioms PaperP1.GradedQuotientHilbertMonotonicity.coefficient_le
 #print axioms PaperP1.GradedQuotientIdealCongruence.parameters
 #print axioms PaperP1.GradedQuotientIdealCongruence.hilbertPolynomial
 #print axioms PaperP1.GradedQuotientModuleGenerators.baseIdeal_homogeneous
@@ -12660,6 +12664,9 @@ import PaperP1
 #print axioms PaperP1.SourceIntegerCurvePoint.containment_iff
 #print axioms PaperP1.SourceIntegerCurvePoint.embedded_degree_lower
 #print axioms PaperP1.SourceIntegerNonalignedCurvePoint.embedded_degree_lower
+#print axioms PaperP1.SourcePrincipalComponentCurves.toCurve_sourceIdeal
+#print axioms PaperP1.SourcePrincipalComponentCurves.point_membership
+#print axioms PaperP1.SourcePrincipalComponentCurves.finite_curve_cover
 #print axioms PaperP1.SourceProjectiveAffineField.baseEquiv_chartMap
 #print axioms PaperP1.SourceProjectiveAffineField.affineGenericMap_commutes
 #print axioms PaperP1.SourceProjectiveAffineField.sourceCoordinate_ne_zero
@@ -12729,6 +12736,8 @@ import PaperP1
 #print axioms PaperP1.SourceSurfaceBoundedProjection.exists_projection
 #print axioms PaperP1.SourceSurfaceGeometricImage.irreducible_after_extension
 #print axioms PaperP1.SourceSurfaceGeometricImage.source_irreducible_after_extension
+#print axioms PaperP1.SourceSurfaceSectionCurveDegree.degree_le
+#print axioms PaperP1.SourceSurfaceSectionCurveDegree.bounded_degree_finite_cover
 #print axioms PaperP1.VeroneseHomogeneousPrime.pointEquiv_apply
 #print axioms PaperP1.VeroneseHomogeneousPrime.comap_inverse
 #print axioms PaperP1.VeroneseHomogeneousPrime.exists_prime_over

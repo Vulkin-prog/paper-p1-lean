@@ -4228,3 +4228,6 @@ public import PaperP1.Algebra.HomogeneousPrincipalComponents
 public import PaperP1.Algebra.QuadraticHilbertDifference
 public import PaperP1.Algebra.RegularSurfaceHilbertSection
 public import PaperP1.Algebra.SourceSurfaceSectionHilbert
+public import PaperP1.Algebra.GradedQuotientHilbertMonotonicity
+public import PaperP1.Geometry.SourcePrincipalComponentCurves
+public import PaperP1.Geometry.SourceSurfaceSectionCurveDegree
