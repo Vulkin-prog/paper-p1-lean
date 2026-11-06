@@ -4938,6 +4938,7 @@ import PaperP1
 #print axioms PaperP1.ExactContactSeeds.mem_seeds
 #print axioms PaperP1.ExactContactSeeds.seed_coordinates
 #print axioms PaperP1.ExactContactSeeds.seed_mass
+#print axioms PaperP1.ExactDegreeSourceSurfaceCover.CoverAtSize.mono
 #print axioms PaperP1.ExactMatchCongruences.gcd_quotient_divides
 #print axioms PaperP1.ExactMatchCongruences.source_parameter
 #print axioms PaperP1.ExactMatchCongruences.one_family_congruence
@@ -6905,6 +6906,9 @@ import PaperP1
 #print axioms PaperP1.SourceSupportedCoefficientPool.fibre_card
 #print axioms PaperP1.SourceSupportedCoefficientPool.card_pool_real
 #print axioms PaperP1.SourceSupportedCoefficientPool.square_coefficient
+#print axioms PaperP1.SourceSurfaceCoverFromExactDegree.decay_le
+#print axioms PaperP1.SourceSurfaceCoverFromExactDegree.of_exact
+#print axioms PaperP1.SourceSurfaceCoverFromExactDegree.of_hypersurface_covers
 #print axioms PaperP1.SourceSurfaceCoverUnderP3.of_cover_at_degree
 #print axioms PaperP1.SourceTranslationInterval.rational_interval_error
 #print axioms PaperP1.SourceTranslationInterval.ordered_bounds
@@ -7460,6 +7464,7 @@ import PaperP1
 #print axioms PaperP1.UniformDefectCounts.companion_T1_3_fixed_affine
 #print axioms PaperP1.UniformDefectCounts.companion_T1_3_run_length
 #print axioms PaperP1.UniformDefectCounts.companion_T1_3_run_length_fixed_affine
+#print axioms PaperP1.UniformExactSourceCoverFromP3.of_hypersurface_covers
 #print axioms PaperP1.UniformFixedSourceCertificates.logarithmic_width_le_nat_eventually
 #print axioms PaperP1.UniformFixedSourceCertificates.certificateTargets_le_power_eventually
 #print axioms PaperP1.UniformFixedSourceCertificates.critical_band_certificateTargets
@@ -10974,6 +10979,9 @@ import PaperP1
 #print axioms PaperP1.UnconditionalDenseTwoTargetMass.article_15_2
 #print axioms PaperP1.UnconditionalTripleControlledActivity.uniform_weighted
 #print axioms PaperP1.uniformLittleOOn_zero
+#print axioms PaperP1.UniformGeometricCountsP3SourceInput.source_cover
+#print axioms PaperP1.UniformGeometricCountsP3SourceInput.surface_hypotheses
+#print axioms PaperP1.UniformGeometricCountsP3SourceInput.companion_T1_7
 #print axioms PaperP1.UniformGeometricCountsReducedInputs.companion_T1_7
 #print axioms PaperP1.UniformGeometricCountsSurfaceInputs.reduced_hypotheses
 #print axioms PaperP1.UniformGeometricCountsSurfaceInputs.companion_T1_7

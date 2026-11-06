@@ -27624,6 +27624,43 @@
         "status": "not_integrated"
       },
       "validation_commit": "1b7dab3cebca0a284363b970ca601bb1fa3156c9"
+    },
+    {
+      "id": "P1-MATH-0577",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "CompanionT1.7 assumed the whole coefficient-uniform chosen-source surface cover, including higher-dimensional projection, curve lifting, degree and count bounds and all uniformity translations in addition to the P3 determinant-method theorem.",
+      "finding": "Every chosen-source translation and uniformity step is now internally proved. The canonical conditional companionT1.7 needs only the exact P3 covering input at the actual image degrees, together with its two still-explicit ordinary surface covers.",
+      "proposed_revision": "Replace the chosen-source cover premise by the exact coefficient-uniform P3 theorem, cite the internal projection, component, lifting and uniformity proofs, and retain the full genuine-degree source-cover version for ordinary-height conversion.",
+      "impact": "Removes the whole chosen-embedding translation from the remaining external geometric boundary while keeping the primary P3 theorem and both ordinary covers explicitly unproved.",
+      "evidence": [
+        "PaperP1.ExactDegreeSourceSurfaceCover.CoverAtSize.mono",
+        "PaperP1.SourceSurfaceCoverFromExactDegree.decay_le",
+        "PaperP1.SourceSurfaceCoverFromExactDegree.of_exact",
+        "PaperP1.SourceSurfaceCoverFromExactDegree.of_hypersurface_covers",
+        "PaperP1.UniformExactSourceCoverFromP3.of_hypersurface_covers",
+        "PaperP1.UniformGeometricCountsP3SourceInput.source_cover",
+        "PaperP1.UniformGeometricCountsP3SourceInput.surface_hypotheses",
+        "PaperP1.UniformGeometricCountsP3SourceInput.companion_T1_7",
+        "PaperP1.ExactDegreeSourceSurfaceCover.CoverAtSize",
+        "PaperP1.ExactDegreeSourceSurfaceCover.UniformCover",
+        "PaperP1.UniformGeometricCountsP3SourceInput.Hypotheses"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17163 jobs); direct axiom audit passed for 16453 declarations using only propext, Classical.choice and Quot.sound; all 16118 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.38 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

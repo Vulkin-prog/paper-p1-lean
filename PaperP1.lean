@@ -4251,3 +4251,7 @@ public import PaperP1.Arithmetic.ActualSourceSurfaceCoverReduction
 public import PaperP1.Arithmetic.SourceSurfaceCoverUnderP3
 public import PaperP1.Arithmetic.UniformP3HypersurfaceCover
 public import PaperP1.Asymptotics.ScaledFiniteCoverBudget
+public import PaperP1.Arithmetic.ExactDegreeSourceSurfaceCover
+public import PaperP1.Arithmetic.SourceSurfaceCoverFromExactDegree
+public import PaperP1.Arithmetic.UniformExactSourceCoverFromP3
+public import PaperP1.Asymptotics.UniformGeometricCountsP3SourceInput
