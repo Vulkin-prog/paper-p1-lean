@@ -4805,6 +4805,11 @@ import PaperP1
 #print axioms PaperP1.UnitSlopeNormalizedCharts.exists_at_nonexceptional
 #print axioms PaperP1.UnitSlopeNormalizedCharts.exists_control_set_and_unit_slope_charts
 #print axioms PaperP1.UnitSlopePieceRestriction.exists_avoiding
+#print axioms PaperP1.UnitThickening.thickening_measurable
+#print axioms PaperP1.UnitThickening.thickening_measure
+#print axioms PaperP1.UnitThickening.unit_cover
+#print axioms PaperP1.UnitThickening.thickening_subset
+#print axioms PaperP1.UnitThickening.good_unit_at_point
 #print axioms PaperP1.VerticalGridLattice.center_identity
 #print axioms PaperP1.VerticalGridLattice.point_box
 #print axioms PaperP1.WeightedGaussianKernel.weighted_symmetric_bound

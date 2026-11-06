@@ -33171,6 +33171,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "295f2055f8f71ff4ab332ce32e0690e207d2146d"
+    },
+    {
+      "id": "P1-MATH-0705",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "An integer-index unit bound does not directly control a unit interval centered at an arbitrary real shift. Its coverage and exceptional measure had to be proved.",
+      "finding": "Actual exceptional unit-grid thickening is measurable with measure <=2*card(B), and every unit around a good real center is covered by good grid units.",
+      "proposed_revision": "Use the actual finite interval union and exact real-center coverage before bounding translated Euler local suprema.",
+      "impact": "Actual exceptional unit-grid thickening is measurable with measure <=2*card(B), and every unit around a good real center is covered by good grid units. Full shifted Euler budget smallness in measure, the final Halasz estimate and logarithmic short-average assembly remain unfinished.",
+      "evidence": [
+        "PaperP1.UnitThickening.thickening_measurable",
+        "PaperP1.UnitThickening.thickening_measure",
+        "PaperP1.UnitThickening.unit_cover",
+        "PaperP1.UnitThickening.thickening_subset",
+        "PaperP1.UnitThickening.good_unit_at_point",
+        "PaperP1.UnitThickening.thickening"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17977 jobs); direct axiom audit passed for 18120 declarations using only propext, Classical.choice and Quot.sound; all 18204 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.83 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
