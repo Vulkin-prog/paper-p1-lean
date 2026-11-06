@@ -4849,3 +4849,4 @@ public import PaperP1.Analysis.LognormalWeightVariation
 public import PaperP1.Analysis.LognormalBlockCancellation
 public import PaperP1.Analysis.LognormalMellinIntegral
 public import PaperP1.Analysis.LognormalSumIntegrability
+public import PaperP1.Analysis.LognormalPhaseVariation

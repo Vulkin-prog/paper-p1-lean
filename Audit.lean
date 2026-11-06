@@ -4516,6 +4516,13 @@ import PaperP1
 #print axioms PaperP1.LognormalMellinIntegral.integrand_identity
 #print axioms PaperP1.LognormalMellinIntegral.integral_identity
 #print axioms PaperP1.LognormalMellinIntegral.integral_norm
+#print axioms PaperP1.LognormalPhaseVariation.function_norm
+#print axioms PaperP1.LognormalPhaseVariation.hasDerivAt_function
+#print axioms PaperP1.LognormalPhaseVariation.derivative_norm_bound
+#print axioms PaperP1.LognormalPhaseVariation.derivative_uniform_bound
+#print axioms PaperP1.LognormalPhaseVariation.continuousOn_function
+#print axioms PaperP1.LognormalPhaseVariation.local_variation
+#print axioms PaperP1.LognormalPhaseVariation.unit_integral_error
 #print axioms PaperP1.LognormalSieveWeight.weight_pos
 #print axioms PaperP1.LognormalSieveWeight.weight_upper
 #print axioms PaperP1.LognormalSieveWeight.gaussian_identity
