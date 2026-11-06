@@ -4547,3 +4547,4 @@ public import PaperP1.Algebra.FullDegreePrimitiveAlgebra
 public import PaperP1.Algebra.TwoPowerFieldDimension
 public import PaperP1.Algebra.AffinePowerParameterFractionField
 public import PaperP1.Algebra.LocalizedAffineQuadraticSource
+public import PaperP1.Algebra.FullDegreeAffineSourceField

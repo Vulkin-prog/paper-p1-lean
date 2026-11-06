@@ -30801,6 +30801,40 @@
         "status": "not_integrated"
       },
       "validation_commit": "096d470da7f934036a9e8055f6589310cc69f1ce"
+    },
+    {
+      "id": "P1-MATH-0646",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The actual reduced source domain, primitive fraction field and separable generic extension had not been derived from the actual full-degree equation and source dimension.",
+      "finding": "A literal full-degree monic irreducible relation on an actual source element yields generic fieldness, source domain, primitive generation, exact dimension, minimal polynomial and actual fraction-ring identification. Separability of that polynomial yields separability of the whole extension.",
+      "proposed_revision": "Use the proved actual source-field implication after checking monicity, irreducibility, full degree and the literal relation for the reduced original integer equation. Keep reduced normalization, conductor and effective prime budgets explicit until verified.",
+      "impact": "Discharges the actual full-degree source field/fraction/primitive implication with internally proved dimension and compatibility. The original reduced model hypotheses and derivative conductor remain unfinished.",
+      "evidence": [
+        "PaperP1.FullDegreeAffineSourceField.generic_isField",
+        "PaperP1.FullDegreeAffineSourceField.primitive",
+        "PaperP1.FullDegreeAffineSourceField.source_isDomain",
+        "PaperP1.FullDegreeAffineSourceField.fraction_ring",
+        "PaperP1.FullDegreeAffineSourceField.dimension_eq",
+        "PaperP1.FullDegreeAffineSourceField.minimal_polynomial",
+        "PaperP1.FullDegreeAffineSourceField.primitive_intermediate",
+        "PaperP1.FullDegreeAffineSourceField.separable"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17779 jobs); direct axiom audit passed for 17496 declarations using only propext, Classical.choice and Quot.sound; all 17429 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.96 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

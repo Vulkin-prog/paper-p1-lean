@@ -1226,6 +1226,14 @@ import PaperP1
 #print axioms PaperP1.FreeApproximationRank.finite_of_span
 #print axioms PaperP1.FreeApproximationRank.finrank_eq
 #print axioms PaperP1.FreeApproximationRank.fraction_finrank_eq
+#print axioms PaperP1.FullDegreeAffineSourceField.generic_isField
+#print axioms PaperP1.FullDegreeAffineSourceField.primitive
+#print axioms PaperP1.FullDegreeAffineSourceField.source_isDomain
+#print axioms PaperP1.FullDegreeAffineSourceField.fraction_ring
+#print axioms PaperP1.FullDegreeAffineSourceField.dimension_eq
+#print axioms PaperP1.FullDegreeAffineSourceField.minimal_polynomial
+#print axioms PaperP1.FullDegreeAffineSourceField.primitive_intermediate
+#print axioms PaperP1.FullDegreeAffineSourceField.separable
 #print axioms PaperP1.FullDegreePrimitiveAlgebra.exists_equiv
 #print axioms PaperP1.FullDegreePrimitiveAlgebra.isField
 #print axioms PaperP1.FullDegreePrimitiveAlgebra.adjoin_eq_top

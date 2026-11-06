@@ -1,6 +1,18 @@
 # Multiquadratic split radicands: exact square-class independence
 
-Current checkpoint P1-MATH-0645: the ACTUAL affine quadratic source
+Current checkpoint P1-MATH-0646: a literal full-degree irreducible
+relation on an actual source element yields the ACTUAL generic field,
+source DOMAIN, primitive generation, fraction-ring identification, exact
+dimension and minimal polynomial. Separability of the same polynomial
+gives separability of the whole field extension. The actual source
+dimension and parameter compatibility are proved internally. Verification
+of these polynomial hypotheses for the ORIGINAL reduced integer model,
+its normalization and the derivative conductor remain UNPROVED.
+Canonical T1.7 retains ONLY its prior P3 input in degrees>2 at the
+original families and caps. Coverage stays 163 proved, 2 conditional,
+2 in_progress out of 167; all 73 main results proved. No Palomar registration.
+
+Historical checkpoint P1-MATH-0645: the ACTUAL affine quadratic source
 injects into its nontrivial generic algebra, finite of dimension
 <=2^k*D^2 over the ACTUAL power-parameter field. The source is finite
 over the power-parameter polynomial ring and both parameter actions
@@ -23080,3 +23092,14 @@ The source is finite over the ACTUAL ordered power-parameter polynomial algebra 
 One module adds eight theorems and five definitions, including two type abbreviations. This discharges the actual localized quadratic-source dimension upper bound and injective parameter-compatible comparison. The full-degree reduced original equation, generic field/fraction identification, monic normalization, derivative conductor and effective original-family assembly remain unfinished. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families/caps. Coverage remains 163 proved, 2 conditional, 2 in_progress out of 167; all 73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Work stays on Ubuntu with about 55.0 GiB available and no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17777 jobs); direct axiom audit passed for 17488 declarations using only propext, Classical.choice and Quot.sound; all 17421 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.97 GiB.
+
+
+## A full-degree actual source relation identifies its primitive fraction field and derives domain and separability
+
+FullDegreeAffineSourceField applies the full-degree argument to the ACTUAL affine quadratic source and its ACTUAL generic tower over the ordered power-parameter field. For an actual source element y, a monic irreducible polynomial P over that parameter field, its literal relation P(injection(y))=0 and degree at least 2^length(s)*D^2, it proves that the generic algebra is a field. The actual generic dimension bound is supplied internally, without a dimension premise.
+
+It proves that the image of y generates that generic algebra, that the affine source is a domain by the faithful generic injection, and that the generic field is the actual fraction ring of the source. The fraction identification uses the proved exact parameter compatibility and the concrete primitive source element. Further theorems give exact generic dimension, the actual minimal polynomial and primitive intermediate-field generation. If the same polynomial P is separable, separability of the whole generic field extension follows from its proved generation; separability is not assumed for all elements.
+
+One module adds eight theorems and no definitions. Domain, primitive generation, actual fraction-ring identification and field separability are thus conclusions of literal full-degree equation hypotheses. Verification of these equation hypotheses for the original reduced integer model, monic normalization and the actual derivative conductor remain unfinished. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families/caps. Coverage remains 163 proved, 2 conditional, 2 in_progress out of 167; all 73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Work stays on Ubuntu with about 55.0 GiB available and no dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17779 jobs); direct axiom audit passed for 17496 declarations using only propext, Classical.choice and Quot.sound; all 17429 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.96 GiB.
