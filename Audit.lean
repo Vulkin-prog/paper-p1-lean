@@ -4333,6 +4333,11 @@ import PaperP1
 #print axioms PaperP1.MixedGramRowBound.row_bound
 #print axioms PaperP1.MixedGramRowBound.analysis_bound
 #print axioms PaperP1.MixedGramRowBound.dirichlet_bound
+#print axioms PaperP1.MixedRegionEnvelope.second_prime_bounds
+#print axioms PaperP1.MixedRegionEnvelope.index_card_bounds
+#print axioms PaperP1.MixedRegionEnvelope.anchor_decay_bound
+#print axioms PaperP1.MixedRegionEnvelope.weight_sum_bound
+#print axioms PaperP1.MixedRegionEnvelope.envelope_bound
 #print axioms PaperP1.MonomialCountingParameters.height_exponent
 #print axioms PaperP1.MonomialCountingParameters.exceptional_budget
 #print axioms PaperP1.MonomialCurvePieceCount.partial_nonzero

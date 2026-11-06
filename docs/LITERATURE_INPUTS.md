@@ -1,6 +1,15 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0807: Actual intermediate frequency rectangle
+Current checkpoint P1-MATH-0808: Actual mixed region band counts and
+anchor decay give an explicit Gaussian envelope. The complementary bad-
+prime frequency contribution, the central-frequency mean subtraction and
+complete logarithmic short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 52.00 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0807: Actual intermediate frequency rectangle
 contribution is controlled by all proved pair budgets. The complementary
 bad-prime frequency contribution, the central-frequency mean subtraction
 and complete logarithmic short-average concentration remain unproved.
@@ -32726,6 +32735,12 @@ The ACTUAL intermediate region consists of frequencies where some first-band pri
 
 The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved.
 
+## Internal actual mixed region band counts and anchor decay give an explicit gaussian envelope
+
+For 2<=H<=x^3 with x=log(log N)>=2, the ACTUAL occupied first- and second-band counts are <=2*x^4 and <=2*x^6. Actual second anchors q>=exp(x^2)/2 satisfy q^(-1/100)<=2*exp(-x^2/100). Summing every actual pair budget, retaining both band-cardinality factors, bounds the WHOLE proved intermediate rectangle contribution by 32*C*x^16*exp(-x^2/100). Five theorems establish the actual second prime cap, both index counts, anchor power comparison, weighted sum and final explicit envelope. No count or cover factor is omitted.
+
+The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -36039,3 +36054,14 @@ The ACTUAL intermediate region consists of frequencies where some first-band pri
 The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.07 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18181 jobs); direct axiom audit passed for 18599 declarations using only propext, Classical.choice and Quot.sound; all 18788 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.01 GiB.
+
+
+## Actual mixed region band counts and anchor decay give an explicit Gaussian envelope
+
+Stable ID: p1:internal:mixed-region-envelope. Actual mixed region band counts and anchor decay give an explicit Gaussian envelope. The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved.
+
+For 2<=H<=x^3 with x=log(log N)>=2, the ACTUAL occupied first- and second-band counts are <=2*x^4 and <=2*x^6. Actual second anchors q>=exp(x^2)/2 satisfy q^(-1/100)<=2*exp(-x^2/100). Summing every actual pair budget, retaining both band-cardinality factors, bounds the WHOLE proved intermediate rectangle contribution by 32*C*x^16*exp(-x^2/100). Five theorems establish the actual second prime cap, both index counts, anchor power comparison, weighted sum and final explicit envelope. No count or cover factor is omitted.
+
+The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.00 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18183 jobs); direct axiom audit passed for 18604 declarations using only propext, Classical.choice and Quot.sound; all 18793 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.99 GiB.

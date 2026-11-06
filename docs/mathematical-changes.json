@@ -36542,6 +36542,37 @@
         "status": "not_integrated"
       },
       "validation_commit": "36df82d3dd157b5e931f27717133f8516a2ad5d1"
+    },
+    {
+      "id": "P1-MATH-0808",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "Vanishing of each pair alone is insufficient when the number of bands grows. Both actual band counts and their finite-cover/Cauchy costs must be absorbed by the actual decay.",
+      "finding": "For 2<=H<=x^3 with x=log(log N)>=2, the ACTUAL occupied first- and second-band counts are <=2*x^4 and <=2*x^6. Actual second anchors q>=exp(x^2)/2 satisfy q^(-1/100)<=2*exp(-x^2/100). Summing every actual pair budget, retaining both band-cardinality factors, bounds the WHOLE proved intermediate rectangle contribution by 32*C*x^16*exp(-x^2/100). Five theorems establish the actual second prime cap, both index counts, anchor power comparison, weighted sum and final explicit envelope. No count or cover factor is omitted.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Actual mixed region band counts and anchor decay give an explicit Gaussian envelope. The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.MixedRegionEnvelope.second_prime_bounds",
+        "PaperP1.MixedRegionEnvelope.index_card_bounds",
+        "PaperP1.MixedRegionEnvelope.anchor_decay_bound",
+        "PaperP1.MixedRegionEnvelope.weight_sum_bound",
+        "PaperP1.MixedRegionEnvelope.envelope_bound"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18183 jobs); direct axiom audit passed for 18604 declarations using only propext, Classical.choice and Quot.sound; all 18793 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.99 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
