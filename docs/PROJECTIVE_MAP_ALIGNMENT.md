@@ -1,6 +1,16 @@
 # Actual projective scheme map
 
-Current checkpoint P1-MATH-0700: the ACTUAL full Euler product
+Current checkpoint P1-MATH-0701: ACTUAL slow-prime discrete sixth
+moments give vanishing-density counts of separated large frequency
+values for T>=log(N)^3. ONE threshold precedes ALL finite sample
+families; repeated-prime product fibres and bandwidth are explicit.
+Conversion to UNIT MAXIMA, the full Euler LOCAL-SUPREMUM budget and
+final Halasz/short-average assembly remain unfinished. T19.17
+conditional; original T1.7 complete. Coverage: 164 proved,
+1 conditional, 2 in_progress /167; all 73 main proved.
+False scopes/corrections unchanged. No Palomar registration.
+
+Historical checkpoint P1-MATH-0700: the ACTUAL full Euler product
 has norm <=C*log(X), with the exact real-distance refinement.
 Common small-prime repulsion controls the FULL factor outside one
 small measurable frequency set BEFORE ALL admissible real functions.
@@ -23709,3 +23719,16 @@ The literal full Euler norm divided by log(X) is continuous, nonnegative and glo
 This closes the sharp logarithmic full-Euler bound and its ordinary whole-frequency mean control. It does NOT yet control the local-supremum frequency budget required by the actual triple estimate, nor the original unrestricted integer Dirichlet polynomial. Unit-thickened common exceptions, the final Halasz estimate and logarithmic short-average assembly remain unfinished. T19.17 remains conditional; original complete T1.7 unconditional. Coverage stays 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, source hashes, pinned Lean and allowed axioms remain unchanged. Ubuntu has about 54.0 GiB free; no dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17967 jobs); direct axiom audit passed for 18089 declarations using only propext, Classical.choice and Quot.sound; all 18167 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.92 GiB.
+
+
+## Actual separated slow-prime frequency values have vanishing density
+
+SlowPrimeDiscrete extends the actual prime-polynomial discrete moment argument to ANY finite prime set P with p<=M, rather than only a factor-two band. The literal k-th power is grouped by integer products; all repeated-prime fibres retain their proved factorial budget. Centered logarithmic sampling gives the exact bandwidth cost 2+(k*log(M))^2 and product endpoint M^k. No discrete moment estimate is assumed.
+
+For the ACTUAL slow prime band log(log(N))<p<=log(N), choose M=floor(log(N)) and k=3. Its actual reciprocal square sum is <=2/log(log(N)), while log(M)<=log(log(N)). For T>=log(N)^3, the discrete sixth moment over ANY finite family of actual frequencies in [-T,T] separated by at least 1 is <=cubicConstant*T/log(log(N)), with explicit positive cubicConstant=1056*exp(1)*(sqrt(pi)+pi).
+
+If the actual common prime polynomial is at least half its reciprocal prime mass at every sampled frequency and that mass is >=1, the ACTUAL number of sampled frequencies is <=64*cubicConstant*T/log(log(N)). The literal mass tends to infinity and the last coefficient tends to zero. Thus for EVERY epsilon>0, ONE N0 precedes ALL N>=N0, finite index sets, sample families and admissible T, and the actual large-value count is <=epsilon*T. Five theorems and one definition are added in one module.
+
+This closes a uniform actual separated-frequency large-value count on the slow band, with a sixth-moment proof and no assumed pointwise or discrete frequency theorem. Conversion to actual unit-interval maxima and the full Euler local-supremum budget remains unfinished, as do the final Halasz and logarithmic short-average steps. T19.17 remains conditional; original complete T1.7 unconditional. Coverage stays 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, source hashes, pinned Lean and allowed axioms remain unchanged. About 53.9 GiB is free on Ubuntu; no dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17969 jobs); direct axiom audit passed for 18094 declarations using only propext, Classical.choice and Quot.sound; all 18173 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.90 GiB.

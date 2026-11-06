@@ -1,6 +1,16 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0700: the ACTUAL full Euler product
+Current checkpoint P1-MATH-0701: ACTUAL slow-prime discrete sixth
+moments give vanishing-density counts of separated large frequency
+values for T>=log(N)^3. ONE threshold precedes ALL finite sample
+families; repeated-prime product fibres and bandwidth are explicit.
+Conversion to UNIT MAXIMA, the full Euler LOCAL-SUPREMUM budget and
+final Halasz/short-average assembly remain unfinished. T19.17
+conditional; original T1.7 complete. Coverage: 164 proved,
+1 conditional, 2 in_progress /167; all 73 main proved.
+False scopes/corrections unchanged. No Palomar registration.
+
+Historical checkpoint P1-MATH-0700: the ACTUAL full Euler product
 has norm <=C*log(X), with the exact real-distance refinement.
 Common small-prime repulsion controls the FULL factor outside one
 small measurable frequency set BEFORE ALL admissible real functions.
@@ -1234,7 +1244,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records698 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records699 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -1353,7 +1363,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **18089 audited theorem/lemma declarations**. This
+- The project currently has **18094 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -31324,3 +31334,16 @@ The literal full Euler norm divided by log(X) is continuous, nonnegative and glo
 This closes the sharp logarithmic full-Euler bound and its ordinary whole-frequency mean control. It does NOT yet control the local-supremum frequency budget required by the actual triple estimate, nor the original unrestricted integer Dirichlet polynomial. Unit-thickened common exceptions, the final Halasz estimate and logarithmic short-average assembly remain unfinished. T19.17 remains conditional; original complete T1.7 unconditional. Coverage stays 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, source hashes, pinned Lean and allowed axioms remain unchanged. Ubuntu has about 54.0 GiB free; no dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17967 jobs); direct axiom audit passed for 18089 declarations using only propext, Classical.choice and Quot.sound; all 18167 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.92 GiB.
+
+
+## Actual separated slow-prime frequency values have vanishing density
+
+SlowPrimeDiscrete extends the actual prime-polynomial discrete moment argument to ANY finite prime set P with p<=M, rather than only a factor-two band. The literal k-th power is grouped by integer products; all repeated-prime fibres retain their proved factorial budget. Centered logarithmic sampling gives the exact bandwidth cost 2+(k*log(M))^2 and product endpoint M^k. No discrete moment estimate is assumed.
+
+For the ACTUAL slow prime band log(log(N))<p<=log(N), choose M=floor(log(N)) and k=3. Its actual reciprocal square sum is <=2/log(log(N)), while log(M)<=log(log(N)). For T>=log(N)^3, the discrete sixth moment over ANY finite family of actual frequencies in [-T,T] separated by at least 1 is <=cubicConstant*T/log(log(N)), with explicit positive cubicConstant=1056*exp(1)*(sqrt(pi)+pi).
+
+If the actual common prime polynomial is at least half its reciprocal prime mass at every sampled frequency and that mass is >=1, the ACTUAL number of sampled frequencies is <=64*cubicConstant*T/log(log(N)). The literal mass tends to infinity and the last coefficient tends to zero. Thus for EVERY epsilon>0, ONE N0 precedes ALL N>=N0, finite index sets, sample families and admissible T, and the actual large-value count is <=epsilon*T. Five theorems and one definition are added in one module.
+
+This closes a uniform actual separated-frequency large-value count on the slow band, with a sixth-moment proof and no assumed pointwise or discrete frequency theorem. Conversion to actual unit-interval maxima and the full Euler local-supremum budget remains unfinished, as do the final Halasz and logarithmic short-average steps. T19.17 remains conditional; original complete T1.7 unconditional. Coverage stays 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, source hashes, pinned Lean and allowed axioms remain unchanged. About 53.9 GiB is free on Ubuntu; no dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17969 jobs); direct axiom audit passed for 18094 declarations using only propext, Classical.choice and Quot.sound; all 18173 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.90 GiB.

@@ -33032,6 +33032,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "fa05bcd500845860ba2390b57137c423b74e002e"
+    },
+    {
+      "id": "P1-MATH-0701",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The existing discrete high moments applied only to factor-two prime bands. Controlling maxima in unit frequency intervals requires a uniform separated-sample bound for the actual whole slow band.",
+      "finding": "The literal product-fibre expansion works for any prime set below M with bandwidth k*log(M). At order six, the actual slow-band reciprocal-square saving dominates this bandwidth cost, giving a vanishing-density count before all separated sample families.",
+      "proposed_revision": "Apply the actual separated-sample theorem to attained unit-interval maxima after splitting indices by parity. Prove that conversion and its full Euler consequences separately.",
+      "impact": "Closes actual slow-band separated-frequency large-value counts uniformly. Unit maxima, full Euler local-supremum budget and T19.17 remain unfinished.",
+      "evidence": [
+        "PaperP1.SlowPrimeDiscrete.sampled_high_moment_bound",
+        "PaperP1.SlowPrimeDiscrete.cubicConstant_pos",
+        "PaperP1.SlowPrimeDiscrete.slow_cubic_moment",
+        "PaperP1.SlowPrimeDiscrete.slow_large_values_card",
+        "PaperP1.SlowPrimeDiscrete.slow_large_values_small_uniform",
+        "PaperP1.SlowPrimeDiscrete.cubicConstant"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17969 jobs); direct axiom audit passed for 18094 declarations using only propext, Classical.choice and Quot.sound; all 18173 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.90 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

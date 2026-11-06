@@ -4660,6 +4660,11 @@ import PaperP1
 #print axioms PaperP1.SimplifiedUnitMapGridCount.logarithmic_power_bound
 #print axioms PaperP1.SimplifiedUnitMapGridCount.logarithmic_point_count
 #print axioms PaperP1.SinkComponentFamilyBound.card_bound
+#print axioms PaperP1.SlowPrimeDiscrete.sampled_high_moment_bound
+#print axioms PaperP1.SlowPrimeDiscrete.cubicConstant_pos
+#print axioms PaperP1.SlowPrimeDiscrete.slow_cubic_moment
+#print axioms PaperP1.SlowPrimeDiscrete.slow_large_values_card
+#print axioms PaperP1.SlowPrimeDiscrete.slow_large_values_small_uniform
 #print axioms PaperP1.SmallRecoveryParameter.power_order
 #print axioms PaperP1.SmallRecoveryParameter.exists_small
 #print axioms PaperP1.SmallRecoveryParameter.exists_relative_cost

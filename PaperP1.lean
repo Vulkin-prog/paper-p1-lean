@@ -4640,3 +4640,4 @@ public import PaperP1.Analysis.TripleSharpIdentity
 public import PaperP1.Analysis.EulerIntegralLimit
 public import PaperP1.Analysis.FullTriplePerron
 public import PaperP1.Analysis.FullEulerBound
+public import PaperP1.Analysis.SlowPrimeDiscrete

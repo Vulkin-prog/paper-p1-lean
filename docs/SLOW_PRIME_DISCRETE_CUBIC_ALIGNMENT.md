@@ -1,0 +1,11 @@
+# Actual separated slow-prime frequency values have vanishing density
+
+Source: companion T19.17 and the common-prime-frequency route to the full Euler local-supremum budget. Actual integer product fibres, repeated primes, sample separation and the slow-band endpoints are all explicit.
+
+SlowPrimeDiscrete extends the actual prime-polynomial discrete moment argument to ANY finite prime set P with p<=M, rather than only a factor-two band. The literal k-th power is grouped by integer products; all repeated-prime fibres retain their proved factorial budget. Centered logarithmic sampling gives the exact bandwidth cost 2+(k*log(M))^2 and product endpoint M^k. No discrete moment estimate is assumed.
+
+For the ACTUAL slow prime band log(log(N))<p<=log(N), choose M=floor(log(N)) and k=3. Its actual reciprocal square sum is <=2/log(log(N)), while log(M)<=log(log(N)). For T>=log(N)^3, the discrete sixth moment over ANY finite family of actual frequencies in [-T,T] separated by at least 1 is <=cubicConstant*T/log(log(N)), with explicit positive cubicConstant=1056*exp(1)*(sqrt(pi)+pi).
+
+If the actual common prime polynomial is at least half its reciprocal prime mass at every sampled frequency and that mass is >=1, the ACTUAL number of sampled frequencies is <=64*cubicConstant*T/log(log(N)). The literal mass tends to infinity and the last coefficient tends to zero. Thus for EVERY epsilon>0, ONE N0 precedes ALL N>=N0, finite index sets, sample families and admissible T, and the actual large-value count is <=epsilon*T. Five theorems and one definition are added in one module.
+
+This closes a uniform actual separated-frequency large-value count on the slow band, with a sixth-moment proof and no assumed pointwise or discrete frequency theorem. Conversion to actual unit-interval maxima and the full Euler local-supremum budget remains unfinished, as do the final Halasz and logarithmic short-average steps. T19.17 remains conditional; original complete T1.7 unconditional. Coverage stays 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, source hashes, pinned Lean and allowed axioms remain unchanged. About 53.9 GiB is free on Ubuntu; no dependency download or Palomar registration.
