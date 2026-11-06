@@ -1,6 +1,15 @@
 # Multiquadratic split radicands: exact square-class independence
 
-Current checkpoint P1-MATH-0932: The actual rounded power sieve level
+Current checkpoint P1-MATH-0933: The actual integer power sieve level
+absorbs every fixed logarithmic sample-cardinality loss. The triple-
+large prime frequency contribution, the central-frequency mean
+comparison and complete logarithmic short-average concentration remain
+unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164
+proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources,
+false-scope corrections, compiler and axioms unchanged. About 52.87 GiB
+free on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0932: The actual rounded power sieve level
 has the required support geometry and logarithmic denominator. The
 triple-large prime frequency contribution, the central-frequency mean
 comparison and complete logarithmic short-average concentration remain
@@ -28633,3 +28642,12 @@ Seven theorems and one definition prove for the actual integer level Z=floor(A^e
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.92 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18431 jobs); direct axiom audit passed for 19100 declarations using only propext, Classical.choice and Quot.sound; all 19380 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.88 GiB.
+
+
+## The actual integer power sieve level absorbs every fixed logarithmic sample-cardinality loss
+
+Three theorems and two definitions choose the actual fixed eta_B=min(1/32,delta_B/8)>0 and prove its support/error constraints. For EVERY fixed real B,C, ONE scale cutoff precedes ALL A and ALL integer m<=log(A)^C. The actual explicit Selberg operator budget at Z=floor(A^eta_B) is <=K_B*A/log(A), with K_B>0 independent of C. The actual Z^4 error is absorbed using a proved logarithmic-power limit; neither the sieve loss nor the sample count is suppressed.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.87 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18433 jobs); direct axiom audit passed for 19103 declarations using only propext, Classical.choice and Quot.sound; all 19385 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.86 GiB.
