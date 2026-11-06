@@ -1,6 +1,18 @@
 # Mathematical corrections and improvements
 
-Current checkpoint P1-MATH-0981: Almost every actual logarithmic window
+Current checkpoint P1-MATH-0982: The exact original ordinary source
+census holds unconditionally. The actual ordinary smooth logarithmic-
+window census and exact original source census interface are proved.
+Unconditional assembly of the printed deterministic and randomized
+T19.17 obstructions remains to be checked. The stronger uniform sharp
+short-average theorem for all real completely multiplicative functions
+is not established. T19.17 conditional; original T1.7 unconditional.
+Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main
+proved. Sources, false-scope corrections, compiler and axioms unchanged.
+About 51.93 GiB free on Ubuntu. No dependency download or Palomar
+registration.
+
+Historical checkpoint P1-MATH-0981: Almost every actual logarithmic window
 contains two ordinary N-to-a smooth integers. The actual almost-all
 ordinary smooth logarithmic-window census is proved. Its transfer to the
 source census interface and unconditional printed T19.17 obstructions
@@ -3687,7 +3699,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**979 mathematical improvements and two statement-scope corrections are confirmed.**
+**980 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -35606,3 +35618,12 @@ Two theorems and two definitions prove the actual finite boundary ledger and the
 The actual almost-all ordinary smooth logarithmic-window census is proved. Its transfer to the source census interface and unconditional printed T19.17 obstructions still need assembly. The stronger uniform sharp short-average theorem for all real completely multiplicative functions is not established. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.95 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18529 jobs); direct axiom audit passed for 19280 declarations using only propext, Classical.choice and Quot.sound; all 19599 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.94 GiB.
+
+
+## The exact original ordinary source census holds unconditionally
+
+Two theorems prove the exact equality between literal integer-window smooth populations and the finite-index ordinary candidate set, then discharge the original OrdinaryCensusDensity interface for every C and every a>0. One integer cutoff precedes the actual N, critical word length, both offsets and every actual source. The internally proved almost-all logarithmic-window census is transferred using only exact word-length and threshold monotonicity, with the single translated boundary point counted explicitly. No smooth-number, concentration or mean-square input occurs among the premises.
+
+The actual ordinary smooth logarithmic-window census and exact original source census interface are proved. Unconditional assembly of the printed deterministic and randomized T19.17 obstructions remains to be checked. The stronger uniform sharp short-average theorem for all real completely multiplicative functions is not established. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.93 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18531 jobs); direct axiom audit passed for 19282 declarations using only propext, Classical.choice and Quot.sound; all 19601 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.92 GiB.

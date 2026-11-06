@@ -42051,6 +42051,34 @@
         "status": "not_integrated"
       },
       "validation_commit": "f4fdbaee1288caad08f3e042ade29d44eaff525c"
+    },
+    {
+      "id": "P1-MATH-0982",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The exact independent ordinary source census required by the original deterministic and randomized T19.17 obstruction reductions is now internally proved.",
+      "finding": "Two theorems prove the exact equality between literal integer-window smooth populations and the finite-index ordinary candidate set, then discharge the original OrdinaryCensusDensity interface for every C and every a>0. One integer cutoff precedes the actual N, critical word length, both offsets and every actual source. The internally proved almost-all logarithmic-window census is transferred using only exact word-length and threshold monotonicity, with the single translated boundary point counted explicitly. No smooth-number, concentration or mean-square input occurs among the premises.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "The exact original ordinary source census holds unconditionally. The actual ordinary smooth logarithmic-window census and exact original source census interface are proved. Unconditional assembly of the printed deterministic and randomized T19.17 obstructions remains to be checked. The stronger uniform sharp short-average theorem for all real completely multiplicative functions is not established.",
+      "evidence": [
+        "PaperP1.UnconditionalOrdinarySourceCensus.window_card",
+        "PaperP1.UnconditionalOrdinarySourceCensus.ordinary_census"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18531 jobs); direct axiom audit passed for 19282 declarations using only propext, Classical.choice and Quot.sound; all 19601 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.92 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

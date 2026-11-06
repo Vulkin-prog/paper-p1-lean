@@ -5854,6 +5854,8 @@ import PaperP1
 #print axioms PaperP1.TwoPrimeBandPopulation.second_below_polynomial_eventually
 #print axioms PaperP1.TwoPrimeBandPopulation.first_ramare_sum
 #print axioms PaperP1.TwoPrimeBandPopulation.second_ramare_sum
+#print axioms PaperP1.UnconditionalOrdinarySourceCensus.window_card
+#print axioms PaperP1.UnconditionalOrdinarySourceCensus.ordinary_census
 #print axioms PaperP1.UniformActualNarrowCofactor.uniform_bound
 #print axioms PaperP1.UniformActualNarrowCofactor.rectangle_bound
 #print axioms PaperP1.UniformBinaryLogBudget.monotone
