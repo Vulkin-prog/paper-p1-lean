@@ -1,0 +1,11 @@
+# Actual full finite-prime series truncations uniform in frequency and coefficients
+
+Source: companion T19.17 and the actual finite triple Perron route. The truncation threshold depends on the fixed finite prime set. No growing-prime-set uniform bound or full integral limit is claimed here.
+
+FixedEulerTruncation defines the ACTUAL natural-integer support of the positive factored numbers <=Y and proves its exact membership test. Its literal integer Dirichlet polynomial equals the existing finite-prime series truncation. The support of the primes <=X contains EVERY integer from 1 to X when Y>=X: every prime divisor of such an integer is actually <=X. No assumed coverage is used.
+
+For any fixed finite set P of actual primes, the actual series tail is <=rootEuler(P)/sqrt(Y), uniformly in EVERY real frequency and EVERY complex coefficient function bounded by one on the actual factored-number support. The existing absolute convergence and reciprocal-tail proof supply the bound; sqrt(Y) tends to infinity. Thus one Y0 works BEFORE ALL Y>=Y0, admissible coefficient functions and frequencies, for any prescribed absolute error. The theorem makes no uniformity claim when P itself varies.
+
+The actual reciprocal majorant(P)=sum_{n factored over P}1/n is nonnegative and finite. Both the actual full series and every literal polynomial truncation have norm <=majorant(P), uniformly in frequency and admissible coefficients. The full series is continuous by its summable reciprocal majorant and the actual continuous term functions. A pointwise polynomial-to-series convergence theorem is also proved from the uniform tail. Thirteen theorems and three definitions are added in one module.
+
+This supplies the actual supports, full-series uniform truncation and domination needed for the next Euler/Perron transfer. The literal sharp triple identity, passage through the whole frequency integral, full Euler frequency budget and final short-average assembly remain unfinished. T19.17 remains conditional and original complete T1.7 unconditional. Coverage remains 164 proved, 1 conditional, 2 in_progress /167; all 73 main results proved. Original false scopes/corrections, source hashes, pinned Lean and allowed axioms remain unchanged. Ubuntu has about 54.0 GiB free; no dependency download or Palomar registration.

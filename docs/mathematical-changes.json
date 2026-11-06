@@ -32836,6 +32836,48 @@
         "status": "not_integrated"
       },
       "validation_commit": "54873db31340095e87b7463d3f967936b9feea71"
+    },
+    {
+      "id": "P1-MATH-0696",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "A finite integer factor in the actual triple Perron formula had not yet been connected to a full finite-prime series with uniform frequency convergence and a support containing the literal sharp interval.",
+      "finding": "Actual factored-number supports contain the whole required integer interval. The root reciprocal tail gives uniform convergence before all coefficient functions and frequencies for each fixed prime set, and an actual summable reciprocal majorant controls the series and all truncations.",
+      "proposed_revision": "Use the literal supports and the fixed-prime-set convergence to pass to the full series. Keep the dependence of the truncation threshold on P explicit; prove the whole frequency integral transfer separately.",
+      "impact": "Closes actual integer supports, fixed-prime uniform truncation, global norm domination and continuity. The full integral transfer and T19.17 remain unfinished.",
+      "evidence": [
+        "PaperP1.FixedEulerTruncation.mem_support",
+        "PaperP1.FixedEulerTruncation.support_positive",
+        "PaperP1.FixedEulerTruncation.polynomial_eq_truncated",
+        "PaperP1.FixedEulerTruncation.primes_prime",
+        "PaperP1.FixedEulerTruncation.small_factored",
+        "PaperP1.FixedEulerTruncation.support_contains",
+        "PaperP1.FixedEulerTruncation.truncation_bound",
+        "PaperP1.FixedEulerTruncation.truncation_small_uniform",
+        "PaperP1.FixedEulerTruncation.majorant_nonneg",
+        "PaperP1.FixedEulerTruncation.total_norm_bound",
+        "PaperP1.FixedEulerTruncation.polynomial_norm_bound",
+        "PaperP1.FixedEulerTruncation.total_continuous",
+        "PaperP1.FixedEulerTruncation.polynomial_tendsto",
+        "PaperP1.FixedEulerTruncation.support",
+        "PaperP1.FixedEulerTruncation.primes",
+        "PaperP1.FixedEulerTruncation.majorant"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17959 jobs); direct axiom audit passed for 18051 declarations using only propext, Classical.choice and Quot.sound; all 18122 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.99 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

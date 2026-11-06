@@ -1,6 +1,17 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0695: the ACTUAL finite triple Perron
+Current checkpoint P1-MATH-0696: ACTUAL finite-prime integer
+supports contain the required sharp interval. Full series
+truncation is uniform before ALL coefficients and frequencies
+for each FIXED prime set. An actual reciprocal majorant bounds
+both series and polynomials, and the full series is continuous.
+The whole Euler/Perron integral transfer, full frequency budget
+and final short-average assembly remain unfinished. T19.17
+conditional; original T1.7 complete. Coverage: 164 proved,
+1 conditional, 2 in_progress /167; all 73 main proved.
+False scopes/corrections unchanged. No Palomar registration.
+
+Historical checkpoint P1-MATH-0695: the ACTUAL finite triple Perron
 estimate is internal, with smoothing error <=epsilon*X after ONE
 threshold before ALL bounded coefficients and finite positive
 supports. Literal fibres, repeated primes and repeated products
@@ -31012,6 +31023,17 @@ integral plus this error. The full Euler limit, frequency budget
 and final short-average assembly remain unfinished. T19.17 stays
 conditional; original T1.7 unconditional.
 
+## Internal fixed-prime uniform series truncation
+
+P1-MATH-0696 identifies literal integer supports with the existing
+finite-prime series truncations and proves interval coverage for
+all primes <=X. The actual root reciprocal tail gives convergence
+uniform in every admissible coefficient function and frequency,
+for each fixed finite prime set. An actual summable reciprocal
+majorant gives global norm bounds and continuity. The whole
+Euler/Perron integral transfer and final short-average assembly
+remain unfinished. T19.17 conditional; original T1.7 unconditional.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -33001,3 +33023,18 @@ The actual_finite_triple_perron theorem combines this result, the exact finite G
 This closes the finite triple Perron estimate with an error uniform in the integer truncation. Passage to the full relevant Euler series, the full Euler frequency budget, and the final Halasz/short-average assembly remain unfinished. T19.17 remains conditional, original complete T1.7 unconditional. Coverage stays 164 proved, 1 conditional, 2 in_progress /167; all 73 main results proved. Original false scopes/corrections, source hashes, pinned Lean and allowed axioms remain unchanged. About 54.0 GiB is free on Ubuntu; no dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17957 jobs); direct axiom audit passed for 18038 declarations using only propext, Classical.choice and Quot.sound; all 18106 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.01 GiB.
+
+
+## Actual full finite-prime series truncations uniform in frequency and coefficients
+
+Stable ID: p1:internal:fixed-euler-uniform-truncation. Actual factored-number supports, uniform fixed-prime series truncation, a reciprocal norm majorant and continuity are internal. The whole Euler/Perron integral transfer remains unfinished.
+
+FixedEulerTruncation defines the ACTUAL natural-integer support of the positive factored numbers <=Y and proves its exact membership test. Its literal integer Dirichlet polynomial equals the existing finite-prime series truncation. The support of the primes <=X contains EVERY integer from 1 to X when Y>=X: every prime divisor of such an integer is actually <=X. No assumed coverage is used.
+
+For any fixed finite set P of actual primes, the actual series tail is <=rootEuler(P)/sqrt(Y), uniformly in EVERY real frequency and EVERY complex coefficient function bounded by one on the actual factored-number support. The existing absolute convergence and reciprocal-tail proof supply the bound; sqrt(Y) tends to infinity. Thus one Y0 works BEFORE ALL Y>=Y0, admissible coefficient functions and frequencies, for any prescribed absolute error. The theorem makes no uniformity claim when P itself varies.
+
+The actual reciprocal majorant(P)=sum_{n factored over P}1/n is nonnegative and finite. Both the actual full series and every literal polynomial truncation have norm <=majorant(P), uniformly in frequency and admissible coefficients. The full series is continuous by its summable reciprocal majorant and the actual continuous term functions. A pointwise polynomial-to-series convergence theorem is also proved from the uniform tail. Thirteen theorems and three definitions are added in one module.
+
+This supplies the actual supports, full-series uniform truncation and domination needed for the next Euler/Perron transfer. The literal sharp triple identity, passage through the whole frequency integral, full Euler frequency budget and final short-average assembly remain unfinished. T19.17 remains conditional and original complete T1.7 unconditional. Coverage remains 164 proved, 1 conditional, 2 in_progress /167; all 73 main results proved. Original false scopes/corrections, source hashes, pinned Lean and allowed axioms remain unchanged. Ubuntu has about 54.0 GiB free; no dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17959 jobs); direct axiom audit passed for 18051 declarations using only propext, Classical.choice and Quot.sound; all 18122 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.99 GiB.
