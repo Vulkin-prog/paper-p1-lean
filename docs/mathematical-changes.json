@@ -33562,6 +33562,39 @@
         "status": "not_integrated"
       },
       "validation_commit": "1bf923566f35b4b3134b152421ee1a9ed5a72c8b"
+    },
+    {
+      "id": "P1-MATH-0716",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The preceding internal analytic components did not yet provide this exact rate, coefficient scope or actual finite-band connection.",
+      "finding": "The actual complex full-series Gaussian frequency integral has the same uniform finite-height truncation and explicit scaled tail.",
+      "proposed_revision": "Use this proved actual quantitative component with its exact coefficient and cutoff scope in the geometric band assembly.",
+      "impact": "The actual complex full-series Gaussian frequency integral has the same uniform finite-height truncation and explicit scaled tail. The actual geometric band partition, global Halasz assembly and final logarithmic short-average theorem remain unfinished.",
+      "evidence": [
+        "PaperP1.ComplexEulerFrequencyTruncation.band_coefficient_norm",
+        "PaperP1.ComplexEulerFrequencyTruncation.base_continuous",
+        "PaperP1.ComplexEulerFrequencyTruncation.base_nonneg",
+        "PaperP1.ComplexEulerFrequencyTruncation.base_bound",
+        "PaperP1.ComplexEulerFrequencyTruncation.whole_integral_bound",
+        "PaperP1.ComplexEulerFrequencyTruncation.whole_integral_small_uniform",
+        "PaperP1.ComplexEulerFrequencyTruncation.base"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17999 jobs); direct axiom audit passed for 18195 declarations using only propext, Classical.choice and Quot.sound; all 18299 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.63 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

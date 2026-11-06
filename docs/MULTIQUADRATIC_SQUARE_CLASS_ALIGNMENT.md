@@ -1,6 +1,14 @@
 # Multiquadratic split radicands: exact square-class independence
 
-Current checkpoint P1-MATH-0715: The actual complex full finite-prime
+Current checkpoint P1-MATH-0716: The actual complex full-series Gaussian
+frequency integral has the same uniform finite-height truncation and
+explicit scaled tail. The actual geometric band partition, global Halasz
+assembly and final logarithmic short-average theorem remain unfinished.
+T19.17 conditional; original T1.7 complete. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. False
+scopes/corrections unchanged. No Palomar registration.
+
+Historical checkpoint P1-MATH-0715: The actual complex full finite-prime
 series equals its Euler product and has a uniform sharp C*log(X) norm
 bound. The actual geometric band partition, global Halasz assembly and
 final logarithmic short-average theorem remain unfinished. T19.17
@@ -24737,3 +24745,14 @@ The actual product is continuous and has norm <=exp(H+sum(1/p^2)). The proved ac
 The actual geometric band partition, global Halasz assembly and final logarithmic short-average theorem remain unfinished. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, sources, pinned Lean and axioms unchanged. About 53.8 GiB is free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17997 jobs); direct axiom audit passed for 18189 declarations using only propext, Classical.choice and Quot.sound; all 18292 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.65 GiB.
+
+
+## Actual complex full Euler frequency integral with uniform logarithmic truncation
+
+The actual band coefficient g(p)/log(X/p) has norm <=1/log(2) under 2*p<=X for any complete complex prime-bounded g. The literal two-prime/full-series integrand is continuous, nonnegative and bounded by the same explicit logarithmic mass envelope used in the real case.
+
+The whole Gaussian integral is <=its actual unweighted integral at height log(X)^10 plus the SAME nonnegative scaledTail(X) already proved to tend to zero. One cutoff precedes every admissible complex coefficient function and actual prime support. Six theorems and one definition give the complex version without assuming a Perron or frequency-truncation input.
+
+The actual geometric band partition, global Halasz assembly and final logarithmic short-average theorem remain unfinished. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, sources, pinned Lean and axioms unchanged. About 53.8 GiB is free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17999 jobs); direct axiom audit passed for 18195 declarations using only propext, Classical.choice and Quot.sound; all 18299 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.63 GiB.

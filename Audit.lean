@@ -3486,6 +3486,12 @@ import PaperP1
 #print axioms PaperP1.ComplexEuler.product_global_bound
 #print axioms PaperP1.ComplexEuler.total_global_bound
 #print axioms PaperP1.ComplexEuler.total_continuous
+#print axioms PaperP1.ComplexEulerFrequencyTruncation.band_coefficient_norm
+#print axioms PaperP1.ComplexEulerFrequencyTruncation.base_continuous
+#print axioms PaperP1.ComplexEulerFrequencyTruncation.base_nonneg
+#print axioms PaperP1.ComplexEulerFrequencyTruncation.base_bound
+#print axioms PaperP1.ComplexEulerFrequencyTruncation.whole_integral_bound
+#print axioms PaperP1.ComplexEulerFrequencyTruncation.whole_integral_small_uniform
 #print axioms PaperP1.ConnectedBarrierCrossing.crossing
 #print axioms PaperP1.ConnectedBarrierCrossing.common_positive_level
 #print axioms PaperP1.ConnectedGraphReachability.reachable_subset
