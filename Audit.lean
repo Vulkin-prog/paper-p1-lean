@@ -4522,6 +4522,12 @@ import PaperP1
 #print axioms PaperP1.LognormalSieveWeight.majorant_on_dyadic
 #print axioms PaperP1.LognormalSieveWeight.polynomial_tail_bound
 #print axioms PaperP1.LognormalSieveWeight.hasDerivAt_weight
+#print axioms PaperP1.LognormalSumIntegrability.kernel_norm
+#print axioms PaperP1.LognormalSumIntegrability.kernel_integrable
+#print axioms PaperP1.LognormalSumIntegrability.integrand_integrable
+#print axioms PaperP1.LognormalSumIntegrability.summable_terms
+#print axioms PaperP1.LognormalSumIntegrability.head_identity
+#print axioms PaperP1.LognormalSumIntegrability.head_tendsto
 #print axioms PaperP1.LognormalWeightVariation.constant_pos
 #print axioms PaperP1.LognormalWeightVariation.weight_le_ratio
 #print axioms PaperP1.LognormalWeightVariation.derivative_abs_bound

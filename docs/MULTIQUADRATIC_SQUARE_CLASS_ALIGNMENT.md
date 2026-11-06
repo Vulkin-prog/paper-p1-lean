@@ -1,6 +1,15 @@
 # Multiquadratic split radicands: exact square-class independence
 
-Current checkpoint P1-MATH-0908: The actual lognormal Mellin integral
+Current checkpoint P1-MATH-0909: The actual lognormal Mellin function
+and positive-integer series are integrable and absolutely summable. The
+triple-large prime frequency contribution, the central-frequency mean
+comparison and complete logarithmic short-average concentration remain
+unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164
+proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources,
+false-scope corrections, compiler and axioms unchanged. About 53.36 GiB
+free on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0908: The actual lognormal Mellin integral
 has an exact Gaussian formula. The triple-large prime frequency
 contribution, the central-frequency mean comparison and complete
 logarithmic short-average concentration remain unproved. T19.17
@@ -28200,3 +28209,12 @@ Six theorems and one definition prove the actual phase identities, Gaussian kern
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.36 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18383 jobs); direct axiom audit passed for 18981 declarations using only propext, Classical.choice and Quot.sound; all 19231 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.32 GiB.
+
+
+## The actual lognormal Mellin function and positive-integer series are integrable and absolutely summable
+
+Six theorems and one definition prove the Gaussian kernel norm and integrability, the literal positive-domain integrability of w_A(x)*exp(-it log x), and absolute summability of its actual positive-integer terms. The finite Icc 1 M sums are identified exactly with shifted range sums and are proved to converge to the actual series value. The integer series starts explicitly at n+1; the literal value w_A(0)=1 is not incorrectly discarded. No convergence or infinite-sum interchange is assumed.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.36 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18385 jobs); direct axiom audit passed for 18987 declarations using only propext, Classical.choice and Quot.sound; all 19238 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.30 GiB.

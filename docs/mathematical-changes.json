@@ -39712,6 +39712,39 @@
         "status": "not_integrated"
       },
       "validation_commit": "0e0992afada49c9a9e8e0aeffaca23f2e3b241f5"
+    },
+    {
+      "id": "P1-MATH-0909",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The infinite Selberg expansion requires actual absolute convergence and correct positive-integer indexing, in addition to a formal Mellin formula.",
+      "finding": "Six theorems and one definition prove the Gaussian kernel norm and integrability, the literal positive-domain integrability of w_A(x)*exp(-it log x), and absolute summability of its actual positive-integer terms. The finite Icc 1 M sums are identified exactly with shifted range sums and are proved to converge to the actual series value. The integer series starts explicitly at n+1; the literal value w_A(0)=1 is not incorrectly discarded. No convergence or infinite-sum interchange is assumed.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "The actual lognormal Mellin function and positive-integer series are integrable and absolutely summable. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.LognormalSumIntegrability.kernel_norm",
+        "PaperP1.LognormalSumIntegrability.kernel_integrable",
+        "PaperP1.LognormalSumIntegrability.integrand_integrable",
+        "PaperP1.LognormalSumIntegrability.summable_terms",
+        "PaperP1.LognormalSumIntegrability.head_identity",
+        "PaperP1.LognormalSumIntegrability.head_tendsto",
+        "PaperP1.LognormalSumIntegrability.value"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18385 jobs); direct axiom audit passed for 18987 declarations using only propext, Classical.choice and Quot.sound; all 19238 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.30 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
