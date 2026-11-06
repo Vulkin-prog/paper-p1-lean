@@ -31990,6 +31990,55 @@
         "status": "not_integrated"
       },
       "validation_commit": "fecc9a71c7ff8931aee057219c98a3fc560de881"
+    },
+    {
+      "id": "P1-MATH-0676",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The real distance constraint still needed to control an actual finite Euler product while retaining each quadratic logarithm error and avoiding an unjustified complex-log product branch rule.",
+      "finding": "Positive real factor norms give an exact additive logarithm. The factorwise checked Taylor bound yields a total error <=sum 1/p^2, normalized Euler suppression exp(sum 1/p^2-D) and uniform smallness outside one common measurable exceptional set.",
+      "proposed_revision": "Use the actual finite product with its explicit reciprocal-square error, real-log normalization and common-set threshold. Prove transfer to multiplicative integer means separately; do not identify a finite Euler product with a truncated Dirichlet sum.",
+      "impact": "Proves actual finite Euler-product logarithmic control and uniform real pretentious suppression. The Halasz multiplicative mean estimate and T19.17 remain unproved.",
+      "evidence": [
+        "PaperP1.FiniteEulerLogBound.factor_ne",
+        "PaperP1.FiniteEulerLogBound.point_log_error",
+        "PaperP1.FiniteEulerLogBound.product_ne",
+        "PaperP1.FiniteEulerLogBound.log_product_exact",
+        "PaperP1.FiniteEulerLogBound.log_product_error",
+        "PaperP1.FiniteEulerLogBound.norm_product_bound",
+        "PaperP1.RealPrimeEulerBound.primeTerm_continuous",
+        "PaperP1.RealPrimeEulerBound.primeTerm_norm",
+        "PaperP1.RealPrimeEulerBound.primeTerm_half",
+        "PaperP1.RealPrimeEulerBound.product_continuous",
+        "PaperP1.RealPrimeEulerBound.normalized_continuous",
+        "PaperP1.RealPrimeEulerBound.primeTerm_square",
+        "PaperP1.RealPrimeEulerBound.primeTerm_real_sum",
+        "PaperP1.RealPrimeEulerBound.log_product_error",
+        "PaperP1.RealPrimeEulerBound.norm_product_bound",
+        "PaperP1.RealPrimeEulerBound.normalized_bound",
+        "PaperP1.RealPrimeEulerBound.normalized_nonneg",
+        "PaperP1.RealPrimeEulerBound.normalized_global_bound",
+        "PaperP1.RealPrimeEulerBound.slow_band_uniform_off_exception",
+        "PaperP1.FiniteEulerLogBound.product",
+        "PaperP1.RealPrimeEulerBound.primeTerm",
+        "PaperP1.RealPrimeEulerBound.product",
+        "PaperP1.RealPrimeEulerBound.normalized"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17901 jobs); direct axiom audit passed for 17822 declarations using only propext, Classical.choice and Quot.sound; all 17823 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.37 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

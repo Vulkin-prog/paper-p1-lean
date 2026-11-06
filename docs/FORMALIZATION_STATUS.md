@@ -1,6 +1,17 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0675: ONE ACTUAL measurable frequency
+Current checkpoint P1-MATH-0676: ACTUAL finite Euler products
+have proved real-log error <=sum 1/p^2 and normalized norm
+<=exp(sum 1/p^2-D). Every factor, branch issue and error is handled.
+ONE threshold and common measurable exception give arbitrarily
+small normalized products for ALL real bounded coefficients.
+Transfer to actual multiplicative integer means and logarithmic
+short-average assembly remain UNPROVED. T19.17 conditional;
+T1.7 complete. Coverage: 164 proved, 1 conditional, 2 in_progress
+/167; all 73 main results proved. False scopes/corrections unchanged.
+No Palomar registration.
+
+Historical checkpoint P1-MATH-0675: ONE ACTUAL measurable frequency
 exception works for ALL bounded real prime coefficients. Exact
 all-order doubled-frequency moments prove its measure bound.
 For every B and epsilon>0, ONE threshold before all T>=log N and
@@ -982,7 +993,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records673 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records674 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -1101,7 +1112,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **17803 audited theorem/lemma declarations**. This
+- The project currently has **17822 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -30725,3 +30736,16 @@ Consequently, for EVERY real lower bound B and EVERY epsilon>0 there is ONE N0>=
 This closes actual measurable common exceptional-frequency control for finite real pretentious repulsion. It does NOT control the mean of a multiplicative function or prove that the main Dirichlet quotient polynomial has negligible mass on those exceptional frequencies. The Halasz/mean estimate, exceptional-frequency mass transport, coupled-domain handling and full logarithmic short-average assembly remain unfinished. T19.17 retains its explicit analytic input; original complete T1.7 remains unconditional. Coverage stays 164 proved, 1 conditional, 2 in_progress out of 167; all 73 main results proved. False original scopes and checked corrected replacements are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and allowed axioms are unchanged. Ubuntu retains about 54.4 GiB; no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17897 jobs); direct axiom audit passed for 17803 declarations using only propext, Classical.choice and Quot.sound; all 17800 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.39 GiB.
+
+
+## Finite Euler product logarithms and uniform real pretentious suppression
+
+FiniteEulerLogBound defines the literal finite product product(S,z)=prod_{i in S}(1-z_i)^(-1). For actual complex |z_i|<=1/2, every factor and the actual product are nonzero. The checked complex logarithm Taylor remainder proves |log|(1-z)^(-1)|-Re z|<=|z|^2. Real logarithms of the positive factor norms add exactly, so the actual full product satisfies |log|product|-sum Re z_i|<=sum|z_i|^2 and |product|<=exp(sum Re z_i+sum|z_i|^2). No complex-log product rule or unproved branch choice is used.
+
+RealPrimeEulerBound specializes to the actual factors z_p=(f(p)/p)*exp(-i*t*log p) for a finite prime set P and real |f(p)|<=1. It proves |z_p|<=1/2, |z_p|^2<=1/p^2, exact real-part summation and continuity of every actual factor, product and normalized norm. The actual logarithm of the Euler product differs from H-D_P(f,t) by at most sum_p 1/p^2, where H=sum_p1/p and D is the conventional squared-distance sum. Consequently the actual normalized norm exp(-H)*|prod_p(1-z_p)^(-1)| is at most exp(sum_p1/p^2-D_P(f,t)) and is nonnegative. Its global upper bound is exp(sum_p1/p^2).
+
+Combining the proved common exceptional-frequency theorem with the actual slow-band reciprocal-square tail gives a uniform suppression theorem. For EVERY delta>0 and epsilon>0 there is ONE N0>=1 before ALL N>=N0 and ALL T>=log N such that an actual measurable E subset (-T,T] has measure<=epsilon*T and outside E the normalized actual Euler norm is <=delta for EVERY real coefficient function bounded by one on the band log log N<p<=log N. The set is fixed before t and f. The proof uses B=1-log delta and the actual error sum<=1, with all logarithm positivity and threshold choices internal. Two modules add nineteen theorems and four definitions.
+
+This closes explicit finite Euler-product logarithmic errors and uniform real pretentious suppression off a common small-measure set. It does NOT identify the finite Euler product with a truncated integer Dirichlet mean or prove the Halasz mean estimate. Integrating the normalized Euler norm, transferring to actual multiplicative partial sums, controlling exceptional quotient-frequency mass, handling the coupled quotient domain and assembling logarithmic short-average decay remain unfinished. T19.17 retains its explicit analytic input; original complete T1.7 remains unconditional. Coverage stays 164 proved, 1 conditional, 2 in_progress out of 167; all 73 main results proved. False original scopes and checked corrections are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Ubuntu retains about 54.4 GiB; no dependency download. The existing selective Mathlib complex-log bounds were already cached. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17901 jobs); direct axiom audit passed for 17822 declarations using only propext, Classical.choice and Quot.sound; all 17823 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.37 GiB.
