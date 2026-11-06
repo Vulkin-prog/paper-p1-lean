@@ -4514,6 +4514,11 @@ import PaperP1
 #print axioms PaperP1.LognormalSieveWeight.majorant_on_dyadic
 #print axioms PaperP1.LognormalSieveWeight.polynomial_tail_bound
 #print axioms PaperP1.LognormalSieveWeight.hasDerivAt_weight
+#print axioms PaperP1.LognormalWeightVariation.constant_pos
+#print axioms PaperP1.LognormalWeightVariation.weight_le_ratio
+#print axioms PaperP1.LognormalWeightVariation.derivative_abs_bound
+#print axioms PaperP1.LognormalWeightVariation.derivative_uniform_bound
+#print axioms PaperP1.LognormalWeightVariation.local_variation
 #print axioms PaperP1.MahlerCoefficientBounds.coefficientEnergy_nonneg
 #print axioms PaperP1.MahlerCoefficientBounds.l2CoefficientNorm_nonneg
 #print axioms PaperP1.MahlerCoefficientBounds.l2CoefficientNorm_sq

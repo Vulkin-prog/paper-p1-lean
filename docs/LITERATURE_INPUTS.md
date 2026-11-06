@@ -1,6 +1,15 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0905: Actual Gaussian slope factors have
+Current checkpoint P1-MATH-0906: The actual lognormal smoothing weight
+has proved discrete-variation control. The triple-large prime frequency
+contribution, the central-frequency mean comparison and complete
+logarithmic short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 53.36 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0905: Actual Gaussian slope factors have
 proved uniform and exponential decay bounds. The triple-large prime
 frequency contribution, the central-frequency mean comparison and
 complete logarithmic short-average concentration remain unproved. T19.17
@@ -34200,6 +34209,12 @@ Five theorems prove the complete-square Gaussian bound for every real parameter,
 
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
 
+## Internal the actual lognormal smoothing weight has proved discrete-variation control
+
+Five theorems and one definition prove the explicit constant C=2 exp(2)>0, the actual bound w_A(x)<=A/x, its derivative bound <=C*A/x^2 and its uniform version on x>=N>0, and the actual unit-cell variation <=C*A/N^2. All statements refer to the constructed lognormal weight and its proved derivative on the positive domain. No smoothness or variation input is assumed.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -38591,3 +38606,14 @@ Five theorems prove the complete-square Gaussian bound for every real parameter,
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.41 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18377 jobs); direct axiom audit passed for 18968 declarations using only propext, Classical.choice and Quot.sound; all 19216 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.37 GiB.
+
+
+## The actual lognormal smoothing weight has proved discrete-variation control
+
+Stable ID: p1:internal:lognormal-weight-variation. The actual lognormal smoothing weight has proved discrete-variation control. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
+
+Five theorems and one definition prove the explicit constant C=2 exp(2)>0, the actual bound w_A(x)<=A/x, its derivative bound <=C*A/x^2 and its uniform version on x>=N>0, and the actual unit-cell variation <=C*A/N^2. All statements refer to the constructed lognormal weight and its proved derivative on the positive domain. No smoothness or variation input is assumed.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.36 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18379 jobs); direct axiom audit passed for 18973 declarations using only propext, Classical.choice and Quot.sound; all 19222 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.36 GiB.

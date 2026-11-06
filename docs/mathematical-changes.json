@@ -39616,6 +39616,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "5edaf1e177e8e554aeb3df463e731de302a336ba"
+    },
+    {
+      "id": "P1-MATH-0906",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The constructed smooth majorant must have an explicit actual variation bound before applying finite Abel summation.",
+      "finding": "Five theorems and one definition prove the explicit constant C=2 exp(2)>0, the actual bound w_A(x)<=A/x, its derivative bound <=C*A/x^2 and its uniform version on x>=N>0, and the actual unit-cell variation <=C*A/N^2. All statements refer to the constructed lognormal weight and its proved derivative on the positive domain. No smoothness or variation input is assumed.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "The actual lognormal smoothing weight has proved discrete-variation control. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.LognormalWeightVariation.constant_pos",
+        "PaperP1.LognormalWeightVariation.weight_le_ratio",
+        "PaperP1.LognormalWeightVariation.derivative_abs_bound",
+        "PaperP1.LognormalWeightVariation.derivative_uniform_bound",
+        "PaperP1.LognormalWeightVariation.local_variation",
+        "PaperP1.LognormalWeightVariation.constant"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18379 jobs); direct axiom audit passed for 18973 declarations using only propext, Classical.choice and Quot.sound; all 19222 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.36 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
