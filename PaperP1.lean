@@ -4846,3 +4846,4 @@ public import PaperP1.Analysis.FiniteAbelVariation
 public import PaperP1.Analysis.LognormalSieveWeight
 public import PaperP1.Analysis.GaussianSlopeDecay
 public import PaperP1.Analysis.LognormalWeightVariation
+public import PaperP1.Analysis.LognormalBlockCancellation

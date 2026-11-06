@@ -1,6 +1,15 @@
 # Actual projective scheme map
 
-Current checkpoint P1-MATH-0906: The actual lognormal smoothing weight
+Current checkpoint P1-MATH-0907: Actual lognormal-weighted logarithmic
+sums inherit uniform power cancellation. The triple-large prime
+frequency contribution, the central-frequency mean comparison and
+complete logarithmic short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 53.36 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0906: The actual lognormal smoothing weight
 has proved discrete-variation control. The triple-large prime frequency
 contribution, the central-frequency mean comparison and complete
 logarithmic short-average concentration remain unproved. T19.17
@@ -27445,3 +27454,12 @@ Five theorems and one definition prove the explicit constant C=2 exp(2)>0, the a
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.36 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18379 jobs); direct axiom audit passed for 18973 declarations using only propext, Classical.choice and Quot.sound; all 19222 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.36 GiB.
+
+
+## Actual lognormal-weighted logarithmic sums inherit uniform power cancellation
+
+Two theorems prove exact prefix reindexing and the genuine actual bound for EVERY partial lognormal-weighted sum on Ico N (N+L), L<=N: norm<= (1+C_weight)*C_b*A/N^gamma_(a,b), uniformly for N^a<=|t|<=N^b. ONE integer cutoff precedes ALL N,t,positive smoothing parameters A and endpoints L. The proof combines the actual proved all-prefix cancellation with the actual finite Abel difference bound and the proved lognormal variation. No weighted oscillatory estimate is assumed.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.36 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18381 jobs); direct axiom audit passed for 18975 declarations using only propext, Classical.choice and Quot.sound; all 19224 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.34 GiB.
