@@ -4667,6 +4667,10 @@ import PaperP1
 #print axioms PaperP1.NarrowRectangleWeight.weight_middle
 #print axioms PaperP1.NarrowRectangleWeight.weight_above
 #print axioms PaperP1.NarrowRectangleWeight.weight_outside_boundary
+#print axioms PaperP1.NearLognormalKernel.constant_pos
+#print axioms PaperP1.NearLognormalKernel.difference_bound
+#print axioms PaperP1.NearLognormalKernel.kernel_difference_bound
+#print axioms PaperP1.NearLognormalKernel.value_norm_bound
 #print axioms PaperP1.NonsingularMonomialPieces.exists_nonexceptional_piece
 #print axioms PaperP1.NonsingularMonomialPieces.exists_counting_piece
 #print axioms PaperP1.NonstationaryTangentImage.continuousOn_position

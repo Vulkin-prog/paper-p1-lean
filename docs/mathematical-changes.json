@@ -39966,6 +39966,37 @@
         "status": "not_integrated"
       },
       "validation_commit": "08eb5912aa783461125ff8033e73fce556c21c6c"
+    },
+    {
+      "id": "P1-MATH-0917",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The Selberg Gram argument requires an explicit power error on the actual whole smoothed integer kernel, with the exact Gaussian main term.",
+      "finding": "Four theorems and one definition prove C_near>0 and the actual full infinite-series Mellin difference bound <=C_near*A^(3/4) for A>=2 and |t|<=A^(1/4). The exact complex Gaussian main term, including its phase, is retained, and the literal series norm bound follows. This is derived from the complete proved quadrature-and-tail estimate; no near-frequency kernel bound is assumed.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "The actual smoothed integer Mellin kernel has an explicit three-quarter-power near-frequency error. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.NearLognormalKernel.constant_pos",
+        "PaperP1.NearLognormalKernel.difference_bound",
+        "PaperP1.NearLognormalKernel.kernel_difference_bound",
+        "PaperP1.NearLognormalKernel.value_norm_bound",
+        "PaperP1.NearLognormalKernel.constant"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18401 jobs); direct axiom audit passed for 19018 declarations using only propext, Classical.choice and Quot.sound; all 19274 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.16 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
