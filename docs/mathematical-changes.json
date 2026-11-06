@@ -30458,6 +30458,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "393881482208425eb7d0cf7271a6b706c110837d"
+    },
+    {
+      "id": "P1-MATH-0637",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The finite polynomial critical-locus estimate had not yet been transported to every actual point evaluation of a generated image algebra.",
+      "finding": "Actual coordinate evaluation is injective and commutes with the mixed polynomial identity, so the derivative locus of a three-generated algebra has the proved 2*d^3*q count under its explicit structural polynomial identities.",
+      "proposed_revision": "Use the generated-algebra derivative-locus theorem once the actual reduced image is identified and its equation and conductor derivative identities are proved. Retain those structural obligations and effective prime budgets explicitly.",
+      "impact": "Discharges the algebra-point to polynomial-critical-locus counting step with actual maps and cardinalities. Original reduced-model identities and the final arithmetic transfer are not yet proved; canonical T1.7 is unchanged.",
+      "evidence": [
+        "PaperP1.GeneratedThreeCoordinatePoints.coordinates_injective",
+        "PaperP1.GeneratedThreeCoordinatePoints.points_finite",
+        "PaperP1.GeneratedThreeCoordinatePoints.mixed_evaluation",
+        "PaperP1.GeneratedThreeCoordinatePoints.values_injective",
+        "PaperP1.GeneratedMonicCriticalPointCount.exceptional_cardinality",
+        "PaperP1.GeneratedThreeCoordinatePoints.values"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17755 jobs); direct axiom audit passed for 17420 declarations using only propext, Classical.choice and Quot.sound; all 17327 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.11 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

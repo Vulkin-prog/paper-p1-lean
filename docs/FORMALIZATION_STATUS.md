@@ -1,6 +1,17 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0636: actual monic irreducible polynomial
+Current checkpoint P1-MATH-0637: actual field points of a three-generated
+algebra killing its literal polynomial derivative have the proved bound
+2*d^3*q in characteristic p>d. Coordinate injectivity, point finiteness
+and mixed evaluation are internal proofs. Generation and the literal
+equation/derivative identities are explicit structural premises; their
+verification for the original reduced projection, its conductor and
+effective prime budgets remains UNPROVED. Canonical T1.7 retains ONLY
+its prior P3 input in degrees>2 at the original families and caps. Coverage
+stays 163 proved, 2 conditional, 2 in_progress out of 167; all 73 main
+results proved. No Palomar registration.
+
+Historical checkpoint P1-MATH-0636: actual monic irreducible polynomial
 critical loci have an UNCONDITIONAL bound 2*d^3*q in characteristic p>d,
 under the stated outer-degree and coefficient-degree caps. Resultant
 nonvanishing, determinant degrees, base zero counts and literal fibre
@@ -524,7 +535,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records634 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records635 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -643,7 +654,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **17415 audited theorem/lemma declarations**. This
+- The project currently has **17420 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -29774,3 +29785,14 @@ MonicCriticalPointCount assembles the actual image of a finite set of common zer
 The generic actual monic critical-locus estimate is now DISCHARGED. Identifying the exceptional conductor locus of the original reduced projection with this literal polynomial critical locus remains to be proved. Original integer projected-model reduction, reduced-conductor verification and effective uniform prime budgets also remain unfinished. This does not prove the general P3 input. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families/caps. Coverage remains 163 proved, 2 conditional, 2 in_progress out of 167, all 73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Work stays on Ubuntu with about 55.1 GiB available and no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17751 jobs); direct axiom audit passed for 17415 declarations using only propext, Classical.choice and Quot.sound; all 17321 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.13 GiB.
+
+
+## Actual generated-algebra critical-point counts from literal coordinate evaluations
+
+GeneratedThreeCoordinatePoints proves that scalar-preserving field points of an algebra generated by a coordinate family are determined by their actual coordinate values. Over a finite field and finite generating family, this proves the point set finite. It also proves the exact mixed-evaluation identity: evaluating a coefficient polynomial in the two base coordinates and an outer polynomial in the third coordinate commutes with every actual algebra point. The resulting map from points to their three field coordinates is injective.
+
+GeneratedMonicCriticalPointCount uses these actual maps for an algebra generated by three coordinates. A literal monic irreducible polynomial P must vanish on them, and the actual element delta must equal the evaluated derivative P'. Every point killing delta then maps injectively to an ACTUAL simultaneous zero of P and P'. The internally proved critical-locus theorem gives at most 2*d^3*q such algebra points when both degree caps are at most d and characteristic p>d. The theorem itself proves point finiteness and constructs the finite coordinate image. It assumes no matching point map, exceptional-point estimate or resultant nonvanishing conclusion.
+
+Two modules add five theorems and one definition. This discharges the generated-algebra derivative-locus counting step under explicit structural generation and polynomial identities. Verification of those identities and of the conductor for the original reduced projection remains unfinished. The original integer projected-model reduction, effective uniform prime budgets and final source-to-image assembly remain unproved. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families and caps. Coverage remains 163 proved, 2 conditional, 2 in_progress out of 167; all 73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Work stays on Ubuntu with about 55.1 GiB available and no dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17755 jobs); direct axiom audit passed for 17420 declarations using only propext, Classical.choice and Quot.sound; all 17327 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.11 GiB.

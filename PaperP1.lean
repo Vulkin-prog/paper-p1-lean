@@ -4534,3 +4534,5 @@ public import PaperP1.Algebra.MonicResultantSpecialization
 public import PaperP1.Algebra.PolynomialCoefficientResultantDegree
 public import PaperP1.Arithmetic.FiniteFieldMultivariateZeroBound
 public import PaperP1.Arithmetic.MonicCriticalPointCount
+public import PaperP1.Algebra.GeneratedThreeCoordinatePoints
+public import PaperP1.Arithmetic.GeneratedMonicCriticalPointCount

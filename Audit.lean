@@ -1213,6 +1213,10 @@ import PaperP1
 #print axioms PaperP1.FreeApproximationRank.finite_of_span
 #print axioms PaperP1.FreeApproximationRank.finrank_eq
 #print axioms PaperP1.FreeApproximationRank.fraction_finrank_eq
+#print axioms PaperP1.GeneratedThreeCoordinatePoints.coordinates_injective
+#print axioms PaperP1.GeneratedThreeCoordinatePoints.points_finite
+#print axioms PaperP1.GeneratedThreeCoordinatePoints.mixed_evaluation
+#print axioms PaperP1.GeneratedThreeCoordinatePoints.values_injective
 #print axioms PaperP1.GeometricBiformDegrees.constant_outer_degree
 #print axioms PaperP1.GeometricBiformDegrees.constant_irreducible_reflection
 #print axioms PaperP1.GeometricBiformDegrees.univariate_degree_one
@@ -5714,6 +5718,7 @@ import PaperP1
 #print axioms PaperP1.GeneralSplitRadicalPatternPool.coefficient_le_four_pow
 #print axioms PaperP1.GeneralSplitRadicalPatternPool.left_bound
 #print axioms PaperP1.GeneralSplitRadicalPatternPool.right_bound
+#print axioms PaperP1.GeneratedMonicCriticalPointCount.exceptional_cardinality
 #print axioms PaperP1.GeometricAlignedTargetData.scaled_offset_bound
 #print axioms PaperP1.GeometricAlignedTargetData.reduced_affine_data
 #print axioms PaperP1.GeometricAlignedTargetData.bounded_height
