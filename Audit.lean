@@ -4259,6 +4259,13 @@ import PaperP1
 #print axioms PaperP1.IteratedLogarithmicPhase.hasDerivAt_function
 #print axioms PaperP1.IteratedLogarithmicPhase.derivative_norm
 #print axioms PaperP1.IteratedLogarithmicPhase.hasDerivAt_logarithm_slope
+#print axioms PaperP1.IteratedOscillationAmplitude.denominator_ne
+#print axioms PaperP1.IteratedOscillationAmplitude.denominator_norm
+#print axioms PaperP1.IteratedOscillationAmplitude.hasDerivAt_amplitude
+#print axioms PaperP1.IteratedOscillationAmplitude.amplitude_norm
+#print axioms PaperP1.IteratedOscillationAmplitude.amplitudeDeriv_norm
+#print axioms PaperP1.IteratedOscillationAmplitude.derivative_amplitude_cancel
+#print axioms PaperP1.IteratedOscillationAmplitude.product_hasDeriv
 #print axioms PaperP1.JointExceptionalComponentGridCount.unitBox_isOpen
 #print axioms PaperP1.JointExceptionalComponentGridCount.openRegion_isOpen
 #print axioms PaperP1.JointExceptionalComponentGridCount.exists_first_component_count

@@ -4791,3 +4791,4 @@ public import PaperP1.Analysis.ReciprocalFiniteDifferences
 public import PaperP1.Analysis.ReciprocalDifferenceBounds
 public import PaperP1.Analysis.IteratedLogarithmicPhase
 public import PaperP1.Analysis.PositiveReciprocalKernel
+public import PaperP1.Analysis.IteratedOscillationAmplitude

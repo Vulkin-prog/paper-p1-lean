@@ -1,6 +1,15 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0851: Positive shifted kernels have an exact
+Current checkpoint P1-MATH-0852: The actual iterated oscillatory phase
+has a proved reciprocal amplitude and product derivative. The triple-
+large prime frequency contribution, the central-frequency mean
+comparison and complete logarithmic short-average concentration remain
+unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164
+proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources,
+false-scope corrections, compiler and axioms unchanged. About 51.20 GiB
+free on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0851: Positive shifted kernels have an exact
 reciprocal derivative and integral identity. The triple-large prime
 frequency contribution, the central-frequency mean comparison and
 complete logarithmic short-average concentration remain unproved. T19.17
@@ -33387,6 +33396,12 @@ For strictly positive shifts and m>0, the ACTUAL kernel K(hs,m,x) is strictly po
 
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
 
+## Internal the actual iterated oscillatory phase has a proved reciprocal amplitude and product derivative
+
+Define the ACTUAL reciprocal-kernel amplitude (1/K(hs,1,x))/(-i*t) and its exact derivative. For strictly positive shifts and x>0, prove its derivative, its exact norm and the exact cancellation of phase derivative times amplitude. The actual derivative of phase*amplitude is phase+phase*amplitudeDerivative. Seven theorems and three definitions prove every nonvanishing condition, real-to-complex transport, norm and product identity needed for integration by parts, with t!=0 only where cancellation requires it.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -37184,3 +37199,14 @@ For strictly positive shifts and m>0, the ACTUAL kernel K(hs,m,x) is strictly po
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.25 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18269 jobs); direct axiom audit passed for 18742 declarations using only propext, Classical.choice and Quot.sound; all 18954 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.21 GiB.
+
+
+## The actual iterated oscillatory phase has a proved reciprocal amplitude and product derivative
+
+Stable ID: p1:internal:iterated-oscillation-amplitude. The actual iterated oscillatory phase has a proved reciprocal amplitude and product derivative. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
+
+Define the ACTUAL reciprocal-kernel amplitude (1/K(hs,1,x))/(-i*t) and its exact derivative. For strictly positive shifts and x>0, prove its derivative, its exact norm and the exact cancellation of phase derivative times amplitude. The actual derivative of phase*amplitude is phase+phase*amplitudeDerivative. Seven theorems and three definitions prove every nonvanishing condition, real-to-complex transport, norm and product identity needed for integration by parts, with t!=0 only where cancellation requires it.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.20 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18271 jobs); direct axiom audit passed for 18749 declarations using only propext, Classical.choice and Quot.sound; all 18964 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.20 GiB.
