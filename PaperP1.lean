@@ -4490,3 +4490,6 @@ public import PaperP1.Arithmetic.SplitRadicalPointBoundFromCharacterSums
 public import PaperP1.Algebra.LinearFractionalValueBijection
 public import PaperP1.Arithmetic.QuadraticCharacterTwoFactorSum
 public import PaperP1.Arithmetic.SmallSplitBranchPointBound
+public import PaperP1.Arithmetic.BranchShiftCollisionPrimeBudget
+public import PaperP1.Arithmetic.BranchShiftReductionCertificate
+public import PaperP1.Arithmetic.SplitBranchPrimeCertificate

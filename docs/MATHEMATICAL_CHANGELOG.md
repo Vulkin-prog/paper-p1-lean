@@ -1,6 +1,19 @@
 # Mathematical corrections and improvements
 
-Current checkpoint P1-MATH-0621: the two-factor quadratic-character sum is
+Current checkpoint P1-MATH-0622: ONE actual nonzero integer certificate
+excludes characteristic2 and ALL collisions of the integer branch shifts.
+It controls every subset union simultaneously, with certificate size at most
+2*(2H)^(n*(n-1)) and an ACTUAL exceptional-prime logarithmic budget at most
+log2+n*(n-1)*log(2H). Every subset product has good separable reduction.
+The small-branch source count is assembled at certificate-good primes with
+its threshold before all branch supports, coefficients and primes.
+General higher-degree cancellation and transfer to original projected P3
+equations remain UNPROVED. Canonical T1.7 has ONLY its prior finite-field
+surface point-estimate input in actual degrees>2 at the original families/caps.
+Coverage stays163 proved,2 conditional,2 in_progress out of167; all73 main
+results proved. No Palomar registration.
+
+Historical checkpoint P1-MATH-0621: the two-factor quadratic-character sum is
 EXACTLY -1, proved by an actual fractional-linear bijection over the finite
 field. Nonempty branch unions of size<=2 have absolute character sum<=1 when
 the integer shifts remain distinct AFTER reduction. If each nonempty subset
@@ -233,7 +246,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**619 mathematical improvements and two statement-scope corrections are confirmed.**
+**620 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -28528,3 +28541,16 @@ SmallSplitBranchPointBound proves that a nonempty branch set of cardinality at m
 Three modules add fifteen theorems and one definition. The theorem does not cover arbitrary branch-union degrees and does not assert a source-to-general-projected-surface transfer. The general character-sum cancellation problem remains unproved, as do the two classical plane inputs of the alternative T1.7 route. Canonical T1.7 remains UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original families/caps. Coverage stays163 proved,2 conditional,2 in_progress out of167, with all73 main results proved. T19.17 and both false-original scopes are unchanged. Original source hashes, Lean v4.36.0-rc2, checking options and allowed axioms are unchanged. Work remains on Ubuntu with about55.4GiB available, without dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17663 jobs); direct axiom audit passed for 17223 declarations using only propext, Classical.choice and Quot.sound; all 17078 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.42 GiB.
+
+
+## Actual branch collision certificates, logarithmic prime budgets and source good reductions
+
+BranchShiftReductionCertificate constructs an ACTUAL integer difference product for every finite set S of integer shifts, and the certificate2 times that product. It proves that the certificate is nonzero, excludes characteristic2, and is divisible by EVERY prime at which two distinct shifts of S have the same reduced value. A prime not dividing the certificate therefore preserves injectivity on ALL of S simultaneously. If |a|<=H onS, its natAbs is at most2*(2H)^(n*(n-1)), n=cardS. For every subset T of S, the literal reduced product of X+a is separable; if T is nonempty it is also a nonsquare. The finite-field statement uses the actual field structure under the explicit primality premise.
+
+BranchShiftCollisionPrimeBudget defines the ACTUAL set of prime obstructions: characteristic2 or failure of shift injectivity. Every such prime divides the single nonzero certificate, so the full set is finite. Its logarithmic sum is at most log(natAbs(certificate)), and at heightH>0 at most log2+n*(n-1)*log(2H). The large-prime weighted logarithmic sum is bounded by the same expression divided by the lower prime cutoff. These are checked bounds for actual collision primes, not a supplied prime-budget premise.
+
+SplitBranchPrimeCertificate constructs the actual union of all I/J branch supports. Every subset union lies inside it, so ONE certificate controls ALL subsets at once and gives their separability. For the small-branch structural subclass of checkpoint621, the coefficient-leading-one source point estimate now follows for every original integer scalar vector modulo every sufficiently large prime not dividing that certificate. The threshold is chosen BEFORE branch supports, scalar coefficients and the prime. No separate finite-field distinctness hypothesis or external cancellation estimate is required in this assembled theorem; distinctness and odd characteristic are derived from the actual integer certificate.
+
+Three modules add twenty-one theorems and four definitions. This handles reduction obstructions for the explicit small-branch source subclass; it does not prove general higher-degree character cancellation or transfer source counts to all original projected P3 equations. The general classical plane inputs remain unproved. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families/caps. Coverage stays163 proved,2 conditional,2 in_progress out of167; all73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, allowed axioms and checking options are unchanged. Work remains on Ubuntu with about55.4GiB available and no dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17669 jobs); direct axiom audit passed for 17244 declarations using only propext, Classical.choice and Quot.sound; all 17103 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.40 GiB.

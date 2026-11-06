@@ -29810,6 +29810,57 @@
         "status": "not_integrated"
       },
       "validation_commit": "95ce3e431f2f29d85db03b6dae76113a0af4798d"
+    },
+    {
+      "id": "P1-MATH-0622",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The small-branch source theorem still required reduced shift distinctness separately in every subset. The integer obstructions and their height and prime budget were not yet explicit.",
+      "finding": "One actual nonzero integer certificate excludes characteristic2 and every shift collision on the full support, controls all subset separability and supplies an explicit logarithmic budget for the actual exceptional primes. The small-branch source estimate is assembled using this certificate.",
+      "proposed_revision": "Record the branch collision certificate and its height/logarithmic bounds. Derive all subset distinctness from the full support certificate and retain the higher-degree cancellation and geometric-transfer gaps.",
+      "impact": "Removes the separate reduction-distinctness premise from the stated source subclass and proves its actual exceptional-prime budget. General cancellation, projected-surface counts and numbered-result coverage remain unchanged.",
+      "evidence": [
+        "PaperP1.BranchShiftCollisionPrimeBudget.divides_certificate",
+        "PaperP1.BranchShiftCollisionPrimeBudget.finite",
+        "PaperP1.BranchShiftCollisionPrimeBudget.log_sum",
+        "PaperP1.BranchShiftCollisionPrimeBudget.weighted_log_sum",
+        "PaperP1.BranchShiftCollisionPrimeBudget.log_height_bound",
+        "PaperP1.BranchShiftCollisionPrimeBudget.full_log_budget",
+        "PaperP1.BranchShiftReductionCertificate.difference_nonzero",
+        "PaperP1.BranchShiftReductionCertificate.difference_divides_of_collision",
+        "PaperP1.BranchShiftReductionCertificate.difference_injective_reduction",
+        "PaperP1.BranchShiftReductionCertificate.difference_abs_bound",
+        "PaperP1.BranchShiftReductionCertificate.nonzero",
+        "PaperP1.BranchShiftReductionCertificate.divides_of_collision",
+        "PaperP1.BranchShiftReductionCertificate.injective_reduction",
+        "PaperP1.BranchShiftReductionCertificate.prime_ne_two",
+        "PaperP1.BranchShiftReductionCertificate.natAbs_bound",
+        "PaperP1.BranchShiftReductionCertificate.separable_on_subset",
+        "PaperP1.BranchShiftReductionCertificate.nonsquare_on_subset",
+        "PaperP1.SplitBranchPrimeCertificate.left_subset",
+        "PaperP1.SplitBranchPrimeCertificate.right_subset",
+        "PaperP1.SplitBranchPrimeCertificate.separable_subsets",
+        "PaperP1.SplitBranchPrimeCertificate.uniform_small_branch_count",
+        "PaperP1.BranchShiftCollisionPrimeBudget.badPrimes",
+        "PaperP1.BranchShiftReductionCertificate.differenceProduct",
+        "PaperP1.BranchShiftReductionCertificate.certificate",
+        "PaperP1.SplitBranchPrimeCertificate.support"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17669 jobs); direct axiom audit passed for 17244 declarations using only propext, Classical.choice and Quot.sound; all 17103 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.40 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
