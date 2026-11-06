@@ -5282,6 +5282,11 @@ import PaperP1
 #print axioms PaperP1.TripleCoefficientFibre.coefficient_norm_bound
 #print axioms PaperP1.TripleCoefficientFibre.actual_coefficient_fibre_bound
 #print axioms PaperP1.TripleCoefficientFibre.polynomial_factorization
+#print axioms PaperP1.TripleLargeFrequencyReduction.largeRegion_measurable
+#print axioms PaperP1.TripleLargeFrequencyReduction.largeRegion_iff
+#print axioms PaperP1.TripleLargeFrequencyReduction.joint_energy_split
+#print axioms PaperP1.TripleLargeFrequencyReduction.energy_split
+#print axioms PaperP1.TripleLargeFrequencyReduction.reduction_small_uniform
 #print axioms PaperP1.TripleSharpIdentity.filtered_levels
 #print axioms PaperP1.TripleSharpIdentity.sharp_expansion
 #print axioms PaperP1.TripleSharpIdentity.sharp_eq_triple

@@ -37545,6 +37545,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "29e48c70bec0344fff3d4416e9eb12a061f57dd0"
+    },
+    {
+      "id": "P1-MATH-0841",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "After the actual small-final region is controlled, its complementary integral must still be retained explicitly; neither a rare-set count nor a three-band decomposition completes the missing short-average theorem.",
+      "finding": "Define the ACTUAL retained region as the previous jointly-large region minus the condition that all final blocks are small. It is measurable and is characterized EXACTLY by membership in the bounded frequency interval and the existence of a LARGE actual block in EACH of the first, second and final prime families at their respective thresholds. The actual joint-region integral splits exactly into the proved small-final contribution and this literal remainder; the full Dirichlet energy splits exactly into FOUR actual integrals. For fixed B>=32 and every epsilon>0 ONE N0 precedes ALL complete positive-unit coefficients and 1<=T<=N/log N, giving full energy<=epsilon+the ACTUAL triple-large-region integral. Five theorems and one definition prove these exact statements. The retained contribution, including central constant-function energy, is not asserted to vanish.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "The actual full energy reduces to a literal region where all three prime bands have large blocks. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.TripleLargeFrequencyReduction.largeRegion_measurable",
+        "PaperP1.TripleLargeFrequencyReduction.largeRegion_iff",
+        "PaperP1.TripleLargeFrequencyReduction.joint_energy_split",
+        "PaperP1.TripleLargeFrequencyReduction.energy_split",
+        "PaperP1.TripleLargeFrequencyReduction.reduction_small_uniform",
+        "PaperP1.TripleLargeFrequencyReduction.largeRegion"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18249 jobs); direct axiom audit passed for 18699 declarations using only propext, Classical.choice and Quot.sound; all 18906 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.40 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

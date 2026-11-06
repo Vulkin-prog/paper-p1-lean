@@ -1,6 +1,15 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0840: The actual small-final-prime region has
+Current checkpoint P1-MATH-0841: The actual full energy reduces to a
+literal region where all three prime bands have large blocks. The joint
+large-prime frequency contribution, the central-frequency mean
+comparison and complete logarithmic short-average concentration remain
+unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164
+proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources,
+false-scope corrections, compiler and axioms unchanged. About 51.40 GiB
+free on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0840: The actual small-final-prime region has
 vanishing rectangle and original Dirichlet integrals. The joint large-
 prime frequency contribution, the central-frequency mean comparison and
 complete logarithmic short-average concentration remain unproved. T19.17
@@ -2449,7 +2458,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records838 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records839 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -2568,7 +2577,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **18694 audited theorem/lemma declarations**. This
+- The project currently has **18699 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -33869,3 +33878,12 @@ Define the ACTUAL measurable region as the previously retained jointly-large reg
 The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.45 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18247 jobs); direct axiom audit passed for 18694 declarations using only propext, Classical.choice and Quot.sound; all 18900 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.41 GiB.
+
+
+## The actual full energy reduces to a literal region where all three prime bands have large blocks
+
+Define the ACTUAL retained region as the previous jointly-large region minus the condition that all final blocks are small. It is measurable and is characterized EXACTLY by membership in the bounded frequency interval and the existence of a LARGE actual block in EACH of the first, second and final prime families at their respective thresholds. The actual joint-region integral splits exactly into the proved small-final contribution and this literal remainder; the full Dirichlet energy splits exactly into FOUR actual integrals. For fixed B>=32 and every epsilon>0 ONE N0 precedes ALL complete positive-unit coefficients and 1<=T<=N/log N, giving full energy<=epsilon+the ACTUAL triple-large-region integral. Five theorems and one definition prove these exact statements. The retained contribution, including central constant-function energy, is not asserted to vanish.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.40 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18249 jobs); direct axiom audit passed for 18699 declarations using only propext, Classical.choice and Quot.sound; all 18906 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.40 GiB.

@@ -1,0 +1,7 @@
+# The actual full energy reduces to a literal region where all three prime bands have large blocks
+
+Source: internal preparatory analytic route for companion T19.17. This is not a completed additional manuscript result.
+
+Define the ACTUAL retained region as the previous jointly-large region minus the condition that all final blocks are small. It is measurable and is characterized EXACTLY by membership in the bounded frequency interval and the existence of a LARGE actual block in EACH of the first, second and final prime families at their respective thresholds. The actual joint-region integral splits exactly into the proved small-final contribution and this literal remainder; the full Dirichlet energy splits exactly into FOUR actual integrals. For fixed B>=32 and every epsilon>0 ONE N0 precedes ALL complete positive-unit coefficients and 1<=T<=N/log N, giving full energy<=epsilon+the ACTUAL triple-large-region integral. Five theorems and one definition prove these exact statements. The retained contribution, including central constant-function energy, is not asserted to vanish.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.40 GiB free on Ubuntu. No dependency download or Palomar registration.
