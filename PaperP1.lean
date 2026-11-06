@@ -4838,3 +4838,4 @@ public import PaperP1.Analysis.UniformCountWeightedTwistedSum
 public import PaperP1.Analysis.UniformPresenceWeightedSum
 public import PaperP1.Analysis.UniformRealWeightedInterval
 public import PaperP1.Analysis.UniformActualNarrowCofactor
+public import PaperP1.Analysis.FixedPowerPrimeBand

@@ -1,6 +1,15 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0898: The actual narrow Ramare cofactors are
+Current checkpoint P1-MATH-0899: Actual fixed-power prime bands have
+exact harmonic-mass limits. The triple-large prime frequency
+contribution, the central-frequency mean comparison and complete
+logarithmic short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 53.49 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0898: The actual narrow Ramare cofactors are
 uniformly small at all off-central frequencies. The triple-large prime
 frequency contribution, the central-frequency mean comparison and
 complete logarithmic short-average concentration remain unproved. T19.17
@@ -34095,6 +34104,12 @@ Two theorems prove a genuine pointwise bound <=epsilon for the ACTUAL NarrowRama
 
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
 
+## Internal actual fixed-power prime bands have exact harmonic-mass limits
+
+Six theorems and two definitions establish the literal prime band N^a<p<=N^b with both floor endpoints, its geometry and exact logarithmic gap. For fixed 0<a<=b, its actual reciprocal mass converges to log(b/a), with every finite-window Mertens error justified. Consequently every M<log(b/a) is an eventual actual mass lower bound. The limit is finite; no density-one conclusion is inferred from a divergent-mass argument.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -38409,3 +38424,14 @@ Two theorems prove a genuine pointwise bound <=epsilon for the ACTUAL NarrowRama
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.56 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18363 jobs); direct axiom audit passed for 18936 declarations using only propext, Classical.choice and Quot.sound; all 19181 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.51 GiB.
+
+
+## Actual fixed-power prime bands have exact harmonic-mass limits
+
+Stable ID: p1:internal:fixed-power-prime-band. Actual fixed-power prime bands have exact harmonic-mass limits. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
+
+Six theorems and two definitions establish the literal prime band N^a<p<=N^b with both floor endpoints, its geometry and exact logarithmic gap. For fixed 0<a<=b, its actual reciprocal mass converges to log(b/a), with every finite-window Mertens error justified. Consequently every M<log(b/a) is an eventual actual mass lower bound. The limit is finite; no density-one conclusion is inferred from a divergent-mass argument.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.49 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18365 jobs); direct axiom audit passed for 18942 declarations using only propext, Classical.choice and Quot.sound; all 19189 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.49 GiB.

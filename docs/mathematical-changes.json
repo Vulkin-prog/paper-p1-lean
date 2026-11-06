@@ -39392,6 +39392,40 @@
         "status": "not_integrated"
       },
       "validation_commit": "fbb9505228f904688c66c446ca87d737ac9fe710"
+    },
+    {
+      "id": "P1-MATH-0899",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "A fixed-power final prime band requires its actual finite harmonic-mass limit and exact endpoint inequalities; the growing-band mass-divergence theorem does not apply.",
+      "finding": "Six theorems and two definitions establish the literal prime band N^a<p<=N^b with both floor endpoints, its geometry and exact logarithmic gap. For fixed 0<a<=b, its actual reciprocal mass converges to log(b/a), with every finite-window Mertens error justified. Consequently every M<log(b/a) is an eventual actual mass lower bound. The limit is finite; no density-one conclusion is inferred from a divergent-mass argument.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Actual fixed-power prime bands have exact harmonic-mass limits. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.FixedPowerPrimeBand.lower_tendsto",
+        "PaperP1.FixedPowerPrimeBand.geometry_eventually",
+        "PaperP1.FixedPowerPrimeBand.mem_primes",
+        "PaperP1.FixedPowerPrimeBand.logarithmic_gap",
+        "PaperP1.FixedPowerPrimeBand.reciprocal_mass_tendsto",
+        "PaperP1.FixedPowerPrimeBand.mass_eventually_lower",
+        "PaperP1.FixedPowerPrimeBand.lower",
+        "PaperP1.FixedPowerPrimeBand.primes"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18365 jobs); direct axiom audit passed for 18942 declarations using only propext, Classical.choice and Quot.sound; all 19189 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.49 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
