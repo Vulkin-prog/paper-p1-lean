@@ -1,6 +1,16 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0681: the ACTUAL finite interval sieve
+Current checkpoint P1-MATH-0682: ACTUAL primes in every interval
+[x,x+H), x>=1,H>=2, are <=20*H/log H, unconditionally.
+Actual logarithmic prime mass<=40H and reciprocal logarithmic
+mass<=40H/A hold if A+H<=H^2. The integer level and all errors
+are internal. Weighted Gaussian frequency rows/mean, full dyadic
+transfer and short-average assembly remain UNPROVED.
+T19.17 conditional; original T1.7 complete. Coverage: 164 proved,
+1 conditional, 2 in_progress /167; all 73 main proved. False scopes
+and checked corrections unchanged. No Palomar registration.
+
+Historical checkpoint P1-MATH-0681: the ACTUAL finite interval sieve
 is proved with G>=log(Z+1)/2 and aggregate error<=Z^4.
 The literal primorial coprime count is <=2*(L+1)/log(Z+1)+Z^4.
 Actual prime-count conversion and width optimization remain to be
@@ -1044,7 +1054,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records679 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records680 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -1163,7 +1173,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **17882 audited theorem/lemma declarations**. This
+- The project currently has **17889 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -30871,3 +30881,16 @@ SelbergLambdaError proves the actual divisor/lcm interchange and the universal a
 This closes the finite optimized interval sieve including its logarithmic denominator and all errors. Its conversion to the original actual prime count and optimization in the interval width remain to be assembled. The stronger weighted-prime mean, full dyadic Halasz transfer and logarithmic short-average assembly remain unfinished. T19.17 retains its explicit analytic input; original complete T1.7 remains unconditional. Coverage stays 164 proved, 1 conditional, 2 in_progress out of 167; all 73 main results proved. Original false scopes and checked corrections are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and allowed axioms are unchanged. Ubuntu retains about 54.3 GiB; no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17925 jobs); direct axiom audit passed for 17882 declarations using only propext, Classical.choice and Quot.sound; all 17901 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.26 GiB.
+
+
+## Unconditional uniform local prime count and logarithmic prime weights
+
+LocalPrimeSieve proves that every ACTUAL prime p>Z is coprime to the actual primorial(Z). Splitting the literal prime filter of the source interval into primes <=Z and the primorial-coprime filter, with exact finite cardinality bounds, gives count <= Z+2*(L+1)/log(Z+1)+Z^4. No assumed upper prime density appears.
+
+For EVERY real W>1 it chooses the actual integer level Z=floor(W^(1/8)). The proved inequalities Z<=W^(1/2), Z^4<=W^(1/2), log(Z+1)>=(1/8)*log W and log W<=2*W^(1/2) control all terms, yielding the explicit constant 20. Every floor, logarithm, positive denominator and real power is checked. Thus for EVERY integer start x>=1 and width H>=2, the literal cardinality of the primes in [x,x+H) is at most 20*H/log H. The constant is independent of BOTH the start and width, and there is no asymptotic threshold or local-density premise. The literal source window version is also proved, with width L+1.
+
+For every start A>=1 and width H>=2 satisfying A+H<=H^2, the ACTUAL logarithmic prime mass in [A,A+H) is at most 40*H. The literal sum of log(p)/p over those same primes is at most 40*H/A. These follow from the proved local prime count and the checked inequalities log(A+H)<=2*log H and p>=A; no weighted-prime estimate is an assumption. One module adds seven theorems and no definitions.
+
+This closes the actual uniform local prime-density bound and these interval logarithmic weights. A weighted Gaussian frequency-row bound and the stronger weighted-prime polynomial mean still need proof; neither follows merely by renaming the standard unweighted mean. Full dyadic Halasz transfer and logarithmic short-average assembly remain unfinished. T19.17 retains its explicit analytic input; original complete T1.7 remains unconditional. Coverage stays 164 proved, 1 conditional, 2 in_progress out of 167; all 73 main results proved. Original false scopes and checked corrections are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and allowed axioms are unchanged. Ubuntu retains about 54.2 GiB; no dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17927 jobs); direct axiom audit passed for 17889 declarations using only propext, Classical.choice and Quot.sound; all 17908 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.25 GiB.

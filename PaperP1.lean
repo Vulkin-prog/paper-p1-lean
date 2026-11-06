@@ -4619,3 +4619,4 @@ public import PaperP1.Arithmetic.ReciprocalDivisibilitySieve
 public import PaperP1.Arithmetic.OptimalSelbergWeights
 public import PaperP1.Arithmetic.SelbergLambdaError
 public import PaperP1.Arithmetic.SquarefreeHarmonicLower
+public import PaperP1.Arithmetic.LocalPrimeSieve

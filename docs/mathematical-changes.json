@@ -32253,6 +32253,39 @@
         "status": "not_integrated"
       },
       "validation_commit": "77dbc495c4bfc313b59009b37e1da9b999d403a6"
+    },
+    {
+      "id": "P1-MATH-0682",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The finite Selberg coprime count still needed an actual prime-count comparison and level optimization. The stronger weighted-prime mean requires proved local logarithmic prime mass, not an unweighted coefficient bound with an extra logarithm.",
+      "finding": "Actual prime counts in every interval [x,x+H), x>=1,H>=2, are <=20*H/log H. If A+H<=H^2, actual interval logarithmic prime mass is <=40H and reciprocal logarithmic prime mass is <=40H/A.",
+      "proposed_revision": "Use these internal local prime and logarithmic-mass estimates to prove weighted Gaussian rows and the actual weighted-prime polynomial mean before using that mean in the Halasz and short-average argument.",
+      "impact": "Closes uniform actual local prime density and its literal logarithmic interval weights. Weighted frequency rows/mean, full dyadic transfer and T19.17 remain unfinished.",
+      "evidence": [
+        "PaperP1.LocalPrimeSieve.prime_coprime_primorial",
+        "PaperP1.LocalPrimeSieve.window_prime_bound",
+        "PaperP1.LocalPrimeSieve.real_level_optimization",
+        "PaperP1.LocalPrimeSieve.window_prime_uniform",
+        "PaperP1.LocalPrimeSieve.interval_prime_uniform",
+        "PaperP1.LocalPrimeSieve.interval_prime_log_weight",
+        "PaperP1.LocalPrimeSieve.interval_prime_reciprocal_log_weight"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17927 jobs); direct axiom audit passed for 17889 declarations using only propext, Classical.choice and Quot.sound; all 17908 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.25 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

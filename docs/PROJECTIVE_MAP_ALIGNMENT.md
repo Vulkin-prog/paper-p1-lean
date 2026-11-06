@@ -1,6 +1,16 @@
 # Actual projective scheme map
 
-Current checkpoint P1-MATH-0681: the ACTUAL finite interval sieve
+Current checkpoint P1-MATH-0682: ACTUAL primes in every interval
+[x,x+H), x>=1,H>=2, are <=20*H/log H, unconditionally.
+Actual logarithmic prime mass<=40H and reciprocal logarithmic
+mass<=40H/A hold if A+H<=H^2. The integer level and all errors
+are internal. Weighted Gaussian frequency rows/mean, full dyadic
+transfer and short-average assembly remain UNPROVED.
+T19.17 conditional; original T1.7 complete. Coverage: 164 proved,
+1 conditional, 2 in_progress /167; all 73 main proved. False scopes
+and checked corrections unchanged. No Palomar registration.
+
+Historical checkpoint P1-MATH-0681: the ACTUAL finite interval sieve
 is proved with G>=log(Z+1)/2 and aggregate error<=Z^4.
 The literal primorial coprime count is <=2*(L+1)/log(Z+1)+Z^4.
 Actual prime-count conversion and width optimization remain to be
@@ -23256,3 +23266,16 @@ SelbergLambdaError proves the actual divisor/lcm interchange and the universal a
 This closes the finite optimized interval sieve including its logarithmic denominator and all errors. Its conversion to the original actual prime count and optimization in the interval width remain to be assembled. The stronger weighted-prime mean, full dyadic Halasz transfer and logarithmic short-average assembly remain unfinished. T19.17 retains its explicit analytic input; original complete T1.7 remains unconditional. Coverage stays 164 proved, 1 conditional, 2 in_progress out of 167; all 73 main results proved. Original false scopes and checked corrections are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and allowed axioms are unchanged. Ubuntu retains about 54.3 GiB; no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17925 jobs); direct axiom audit passed for 17882 declarations using only propext, Classical.choice and Quot.sound; all 17901 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.26 GiB.
+
+
+## Unconditional uniform local prime count and logarithmic prime weights
+
+LocalPrimeSieve proves that every ACTUAL prime p>Z is coprime to the actual primorial(Z). Splitting the literal prime filter of the source interval into primes <=Z and the primorial-coprime filter, with exact finite cardinality bounds, gives count <= Z+2*(L+1)/log(Z+1)+Z^4. No assumed upper prime density appears.
+
+For EVERY real W>1 it chooses the actual integer level Z=floor(W^(1/8)). The proved inequalities Z<=W^(1/2), Z^4<=W^(1/2), log(Z+1)>=(1/8)*log W and log W<=2*W^(1/2) control all terms, yielding the explicit constant 20. Every floor, logarithm, positive denominator and real power is checked. Thus for EVERY integer start x>=1 and width H>=2, the literal cardinality of the primes in [x,x+H) is at most 20*H/log H. The constant is independent of BOTH the start and width, and there is no asymptotic threshold or local-density premise. The literal source window version is also proved, with width L+1.
+
+For every start A>=1 and width H>=2 satisfying A+H<=H^2, the ACTUAL logarithmic prime mass in [A,A+H) is at most 40*H. The literal sum of log(p)/p over those same primes is at most 40*H/A. These follow from the proved local prime count and the checked inequalities log(A+H)<=2*log H and p>=A; no weighted-prime estimate is an assumption. One module adds seven theorems and no definitions.
+
+This closes the actual uniform local prime-density bound and these interval logarithmic weights. A weighted Gaussian frequency-row bound and the stronger weighted-prime polynomial mean still need proof; neither follows merely by renaming the standard unweighted mean. Full dyadic Halasz transfer and logarithmic short-average assembly remain unfinished. T19.17 retains its explicit analytic input; original complete T1.7 remains unconditional. Coverage stays 164 proved, 1 conditional, 2 in_progress out of 167; all 73 main results proved. Original false scopes and checked corrections are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and allowed axioms are unchanged. Ubuntu retains about 54.2 GiB; no dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17927 jobs); direct axiom audit passed for 17889 declarations using only propext, Classical.choice and Quot.sound; all 17908 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.25 GiB.

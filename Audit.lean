@@ -6355,6 +6355,13 @@ import PaperP1
 #print axioms PaperP1.LocalBlockBoundary.rightTruncated_card_le_one
 #print axioms PaperP1.LocalBlockBoundary.truncated_subset_sides
 #print axioms PaperP1.LocalBlockBoundary.truncated_card_le_two
+#print axioms PaperP1.LocalPrimeSieve.prime_coprime_primorial
+#print axioms PaperP1.LocalPrimeSieve.window_prime_bound
+#print axioms PaperP1.LocalPrimeSieve.real_level_optimization
+#print axioms PaperP1.LocalPrimeSieve.window_prime_uniform
+#print axioms PaperP1.LocalPrimeSieve.interval_prime_uniform
+#print axioms PaperP1.LocalPrimeSieve.interval_prime_log_weight
+#print axioms PaperP1.LocalPrimeSieve.interval_prime_reciprocal_log_weight
 #print axioms PaperP1.LocalRelationBlocks.first_mem
 #print axioms PaperP1.LocalRelationBlocks.last_mem
 #print axioms PaperP1.LocalRelationBlocks.first_le
