@@ -35514,6 +35514,34 @@
         "status": "not_integrated"
       },
       "validation_commit": "71b898e5d51b2797edb5384ef5a372f51c4f4064"
+    },
+    {
+      "id": "P1-MATH-0775",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The actual sparse-frequency mean value must apply to the genuine weighted coefficient and rounded support, uniformly before all bands, supports, coefficients and sample sets.",
+      "finding": "One X0 precedes ALL X>=X0, ALL band anchors<=X^(1/16), ALL finite unit-separated frequency sets in [-T,T] with 1<=T<=X and cardinality<=X^(1/200), ALL finite supports P,Q and complex coefficients unit-bounded on the ACTUAL cofactor support. The literal cofactor polynomial, retaining presence(Q,n)/(count(P,n)+1), has sampled square sum<=10*(1+log X). No prime or multiplicativity assumption is needed for this actual mean-value conclusion. The actual weighted coefficient is proved bounded by one; the uniform sparse theorem then applies to the exact rounded interval. Two theorems are added.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Actual presence weighted narrow cofactor polynomials obey a uniform sparse frequency mean value. The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.NarrowCofactorSparseMean.coefficient_norm_bound",
+        "PaperP1.NarrowCofactorSparseMean.sparse_mean_uniform"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18117 jobs); direct axiom audit passed for 18484 declarations using only propext, Classical.choice and Quot.sound; all 18653 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.58 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

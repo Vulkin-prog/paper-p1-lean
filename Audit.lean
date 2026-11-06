@@ -4299,6 +4299,8 @@ import PaperP1
 #print axioms PaperP1.NarrowCofactorRegime.length_regime
 #print axioms PaperP1.NarrowCofactorRegime.cofactor_regime
 #print axioms PaperP1.NarrowCofactorRegime.cofactor_subset_dyadic
+#print axioms PaperP1.NarrowCofactorSparseMean.coefficient_norm_bound
+#print axioms PaperP1.NarrowCofactorSparseMean.sparse_mean_uniform
 #print axioms PaperP1.NarrowPrimeBands.anchor_pos
 #print axioms PaperP1.NarrowPrimeBands.anchor_one_le
 #print axioms PaperP1.NarrowPrimeBands.growth_one_le

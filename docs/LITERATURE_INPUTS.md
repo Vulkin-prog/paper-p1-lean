@@ -1,6 +1,15 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0774: Actual rounded narrow cofactor lengths
+Current checkpoint P1-MATH-0775: Actual presence weighted narrow
+cofactor polynomials obey a uniform sparse frequency mean value. The
+actual Ramare main-term frequency bounds and complete logarithmic short-
+average concentration remain unproved. T19.17 conditional; original T1.7
+unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167;
+all 73 main proved. Sources, false-scope corrections, compiler and
+axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download
+or Palomar registration.
+
+Historical checkpoint P1-MATH-0774: Actual rounded narrow cofactor lengths
 satisfy the sparse sampling regime uniformly. The actual Ramare main-
 term frequency bounds and complete logarithmic short-average
 concentration remain unproved. T19.17 conditional; original T1.7
@@ -32220,6 +32229,12 @@ A single X0 precedes every X>=X0 and every integer length L with X^(7/8)<=L<=X, 
 
 The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.
 
+## Internal actual presence weighted narrow cofactor polynomials obey a uniform sparse frequency mean value
+
+One X0 precedes ALL X>=X0, ALL band anchors<=X^(1/16), ALL finite unit-separated frequency sets in [-T,T] with 1<=T<=X and cardinality<=X^(1/200), ALL finite supports P,Q and complex coefficients unit-bounded on the ACTUAL cofactor support. The literal cofactor polynomial, retaining presence(Q,n)/(count(P,n)+1), has sampled square sum<=10*(1+log X). No prime or multiplicativity assumption is needed for this actual mean-value conclusion. The actual weighted coefficient is proved bounded by one; the uniform sparse theorem then applies to the exact rounded interval. Two theorems are added.
+
+The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -35170,3 +35185,14 @@ A single X0 precedes every X>=X0 and every integer length L with X^(7/8)<=L<=X, 
 The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18115 jobs); direct axiom audit passed for 18482 declarations using only propext, Classical.choice and Quot.sound; all 18651 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.59 GiB.
+
+
+## Actual presence weighted narrow cofactor polynomials obey a uniform sparse frequency mean value
+
+Stable ID: p1:internal:narrow-cofactor-sparse-mean. Actual presence weighted narrow cofactor polynomials obey a uniform sparse frequency mean value. The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.
+
+One X0 precedes ALL X>=X0, ALL band anchors<=X^(1/16), ALL finite unit-separated frequency sets in [-T,T] with 1<=T<=X and cardinality<=X^(1/200), ALL finite supports P,Q and complex coefficients unit-bounded on the ACTUAL cofactor support. The literal cofactor polynomial, retaining presence(Q,n)/(count(P,n)+1), has sampled square sum<=10*(1+log X). No prime or multiplicativity assumption is needed for this actual mean-value conclusion. The actual weighted coefficient is proved bounded by one; the uniform sparse theorem then applies to the exact rounded interval. Two theorems are added.
+
+The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18117 jobs); direct axiom audit passed for 18484 declarations using only propext, Classical.choice and Quot.sound; all 18653 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.58 GiB.
