@@ -27590,6 +27590,39 @@
         "status": "not_integrated"
       },
       "validation_commit": "dca552363fc8d7786b8a5949e4facea0530e6ddb"
+    },
+    {
+      "id": "P1-MATH-0576",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The actual source cover transfer had explicit geometric budgets, but the degree-dependent height and curve multipliers had not yet been absorbed into constants chosen uniformly before the source coefficients and heights.",
+      "finding": "For every fixed k,D, the exact coefficient-uniform P3 input now yields the literal source-cover conclusion with constants before all source coefficients and heights and with the full genuine-degree exponents1/sqrt(2^kD^2),2/sqrt(2^kD^2) unchanged.",
+      "proposed_revision": "State the exact P3 covering input on the actual normalized point sets, absorb the proved fixed projection and curve budgets into coefficient-uniform constants, and retain the full embedding-degree factor in the exponents.",
+      "impact": "Discharges coefficient uniformity and height-scaling constant absorption in the source reduction, leaving the precise determinant-method theorem explicit and unproved.",
+      "evidence": [
+        "PaperP1.SourceSurfaceCoverUnderP3.of_cover_at_degree",
+        "PaperP1.UniformP3HypersurfaceCover.mem_points",
+        "PaperP1.UniformP3HypersurfaceCover.CoverAtDegree.mono",
+        "PaperP1.ScaledFiniteCoverBudget.exists_constant",
+        "PaperP1.UniformP3HypersurfaceCover.points",
+        "PaperP1.UniformP3HypersurfaceCover.CoverAtDegree",
+        "PaperP1.UniformP3HypersurfaceCover.UniformCover"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17155 jobs); direct axiom audit passed for 16445 declarations using only propext, Classical.choice and Quot.sound; all 16107 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.40 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

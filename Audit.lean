@@ -6905,6 +6905,7 @@ import PaperP1
 #print axioms PaperP1.SourceSupportedCoefficientPool.fibre_card
 #print axioms PaperP1.SourceSupportedCoefficientPool.card_pool_real
 #print axioms PaperP1.SourceSupportedCoefficientPool.square_coefficient
+#print axioms PaperP1.SourceSurfaceCoverUnderP3.of_cover_at_degree
 #print axioms PaperP1.SourceTranslationInterval.rational_interval_error
 #print axioms PaperP1.SourceTranslationInterval.ordered_bounds
 #print axioms PaperP1.SourceTranslationInterval.lower_le_upper
@@ -7472,6 +7473,8 @@ import PaperP1
 #print axioms PaperP1.UniformNormalizedCurvePointCount.ordinary_specialization
 #print axioms PaperP1.UniformOrdinarySurfaceCover.decay_mono
 #print axioms PaperP1.UniformOrdinarySurfaceCover.subpower_parameters
+#print axioms PaperP1.UniformP3HypersurfaceCover.mem_points
+#print axioms PaperP1.UniformP3HypersurfaceCover.CoverAtDegree.mono
 #print axioms PaperP1.UniformSourceCurvePointCount.source_points
 #print axioms PaperP1.UniformSourceCurvePointCount.uniform_bound
 #print axioms PaperP1.UnionMatchDensity.divisible_lcm_iff
@@ -10387,6 +10390,7 @@ import PaperP1
 #print axioms PaperP1.ScaledAlignedTripleMass.uniform_inclusion
 #print axioms PaperP1.ScaledAlignedTripleMass.uniform_mass
 #print axioms PaperP1.ScaledAlignedTripleMass.uniform_extensions
+#print axioms PaperP1.ScaledFiniteCoverBudget.exists_constant
 #print axioms PaperP1.ScaledPrimeCounts.cutoff_atTop
 #print axioms PaperP1.ScaledPrimeCounts.log_ratio
 #print axioms PaperP1.ScaledPrimeCounts.prime_count_scaled

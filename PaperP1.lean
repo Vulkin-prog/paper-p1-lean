@@ -4248,3 +4248,6 @@ public import PaperP1.Arithmetic.ActualSourceProjectedCurveFamilyCover
 public import PaperP1.Geometry.GradedProjectiveCurveData
 public import PaperP1.Geometry.PresentedProjectiveCurveData
 public import PaperP1.Arithmetic.ActualSourceSurfaceCoverReduction
+public import PaperP1.Arithmetic.SourceSurfaceCoverUnderP3
+public import PaperP1.Arithmetic.UniformP3HypersurfaceCover
+public import PaperP1.Asymptotics.ScaledFiniteCoverBudget
