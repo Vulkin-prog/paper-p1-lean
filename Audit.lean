@@ -5475,6 +5475,8 @@ import PaperP1
 #print axioms PaperP1.ScaledPolynomialTangentTrajectory.affine_trajectory
 #print axioms PaperP1.ScaledPrimeEulerBound.finite_exponent_bound
 #print axioms PaperP1.ScaledPrimeEulerBound.eventual_exponent_bound
+#print axioms PaperP1.ScaledRealOffCentralEnergy.common_central_bound
+#print axioms PaperP1.ScaledRealOffCentralEnergy.uniform_bound
 #print axioms PaperP1.ScaledWronskianTransformation.transformation_lower
 #print axioms PaperP1.ScaledWronskianTransformation.transformation_det
 #print axioms PaperP1.ScaledWronskianTransformation.transformation_det_ne_zero

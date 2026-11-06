@@ -41210,6 +41210,34 @@
         "status": "not_integrated"
       },
       "validation_commit": "9f69551b39dd3dc2b66a7593e4ed0b2170104796"
+    },
+    {
+      "id": "P1-MATH-0956",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The logarithmic short-window bridge needs arbitrary fixed frequency truncation factors while preserving one central cutoff chosen before those factors.",
+      "finding": "Two theorems prove the genuine stronger quantifier order: for EVERY epsilon>0, ONE central cutoff T0>=8 is chosen before EVERY fixed D>=0; then ONE integer cutoff precedes ALL N, ALL real completely multiplicative prime-unit f and ALL 1<=T<=D*N/log N. The actual square integral over Ioc(-T,T) intersect {abs(t)>=T0} is <=epsilon. The scaled first-small and intermediate estimates and the actual joint estimate are assembled through the proved restricted energy reduction. A fixed-D corollary is also proved. The central contribution is retained and no mean-square short-average theorem is assumed.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "One actual central cutoff controls real Dirichlet energy at every fixed multiple of logarithmic reciprocal height. The actual off-central Dirichlet frequency estimate is proved. The central-frequency short-to-long comparison, the analytic short-average bridge and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.ScaledRealOffCentralEnergy.common_central_bound",
+        "PaperP1.ScaledRealOffCentralEnergy.uniform_bound"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18479 jobs); direct axiom audit passed for 19166 declarations using only propext, Classical.choice and Quot.sound; all 19462 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.42 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

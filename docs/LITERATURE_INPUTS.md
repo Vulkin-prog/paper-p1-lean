@@ -1,6 +1,17 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0955: The actual intermediate frequency
+Current checkpoint P1-MATH-0956: One actual central cutoff controls real
+Dirichlet energy at every fixed multiple of logarithmic reciprocal
+height. The actual off-central Dirichlet frequency estimate is proved.
+The central-frequency short-to-long comparison, the analytic short-
+average bridge and complete logarithmic short-average concentration
+remain unproved. T19.17 conditional; original T1.7 unconditional.
+Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main
+proved. Sources, false-scope corrections, compiler and axioms unchanged.
+About 52.48 GiB free on Ubuntu. No dependency download or Palomar
+registration.
+
+Historical checkpoint P1-MATH-0955: The actual intermediate frequency
 contribution is small at every fixed logarithmic height factor. The
 actual off-central Dirichlet frequency estimate is proved. The central-
 frequency short-to-long comparison, the analytic short-average bridge
@@ -34963,6 +34974,12 @@ Three theorems prove an actual intermediate-rectangle envelope <=(D+1) times the
 
 The actual off-central Dirichlet frequency estimate is proved. The central-frequency short-to-long comparison, the analytic short-average bridge and complete logarithmic short-average concentration remain unproved.
 
+## Internal one actual central cutoff controls real dirichlet energy at every fixed multiple of logarithmic reciprocal height
+
+Two theorems prove the genuine stronger quantifier order: for EVERY epsilon>0, ONE central cutoff T0>=8 is chosen before EVERY fixed D>=0; then ONE integer cutoff precedes ALL N, ALL real completely multiplicative prime-unit f and ALL 1<=T<=D*N/log N. The actual square integral over Ioc(-T,T) intersect {abs(t)>=T0} is <=epsilon. The scaled first-small and intermediate estimates and the actual joint estimate are assembled through the proved restricted energy reduction. A fixed-D corollary is also proved. The central contribution is retained and no mean-square short-average theorem is assumed.
+
+The actual off-central Dirichlet frequency estimate is proved. The central-frequency short-to-long comparison, the analytic short-average bridge and complete logarithmic short-average concentration remain unproved.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -39904,3 +39921,14 @@ Three theorems prove an actual intermediate-rectangle envelope <=(D+1) times the
 The actual off-central Dirichlet frequency estimate is proved. The central-frequency short-to-long comparison, the analytic short-average bridge and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.48 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18477 jobs); direct axiom audit passed for 19164 declarations using only propext, Classical.choice and Quot.sound; all 19460 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.44 GiB.
+
+
+## One actual central cutoff controls real Dirichlet energy at every fixed multiple of logarithmic reciprocal height
+
+Stable ID: p1:internal:scaled-real-off-central-energy. One actual central cutoff controls real Dirichlet energy at every fixed multiple of logarithmic reciprocal height. The actual off-central Dirichlet frequency estimate is proved. The central-frequency short-to-long comparison, the analytic short-average bridge and complete logarithmic short-average concentration remain unproved.
+
+Two theorems prove the genuine stronger quantifier order: for EVERY epsilon>0, ONE central cutoff T0>=8 is chosen before EVERY fixed D>=0; then ONE integer cutoff precedes ALL N, ALL real completely multiplicative prime-unit f and ALL 1<=T<=D*N/log N. The actual square integral over Ioc(-T,T) intersect {abs(t)>=T0} is <=epsilon. The scaled first-small and intermediate estimates and the actual joint estimate are assembled through the proved restricted energy reduction. A fixed-D corollary is also proved. The central contribution is retained and no mean-square short-average theorem is assumed.
+
+The actual off-central Dirichlet frequency estimate is proved. The central-frequency short-to-long comparison, the analytic short-average bridge and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.48 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18479 jobs); direct axiom audit passed for 19166 declarations using only propext, Classical.choice and Quot.sound; all 19462 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.42 GiB.
