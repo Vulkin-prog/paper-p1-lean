@@ -3854,6 +3854,12 @@ import PaperP1
 #print axioms PaperP1.FullEulerBound.normalized_nonneg
 #print axioms PaperP1.FullEulerBound.normalized_bound
 #print axioms PaperP1.FullEulerBound.normalized_square_mean_small
+#print axioms PaperP1.FullEulerUnit.full_continuous
+#print axioms PaperP1.FullEulerUnit.global_unit_sup
+#print axioms PaperP1.FullEulerUnit.off_bad_unit_norm
+#print axioms PaperP1.FullEulerUnit.off_bad_unit_sup
+#print axioms PaperP1.FullEulerUnit.shifted_global_budget
+#print axioms PaperP1.FullEulerUnit.unit_sup_small_uniform
 #print axioms PaperP1.FullTriplePerron.actual_full_series_perron
 #print axioms PaperP1.FullTriplePerron.complexify_bound
 #print axioms PaperP1.FullTriplePerron.real_series_eq_product

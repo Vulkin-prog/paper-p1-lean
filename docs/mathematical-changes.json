@@ -33138,6 +33138,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "91067002fed6b6e8687bd9d7fd7a7c38d6e917f9"
+    },
+    {
+      "id": "P1-MATH-0704",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "Good-unit control was available only as a slow-prime distance bound. The actual full Euler local suprema and translated global budget still needed a precise transfer.",
+      "finding": "The actual full Euler unit suprema are small on every good interval, with one exceptional grid before all X>=N and all admissible real functions.",
+      "proposed_revision": "Use the actual common good-unit supremum bound, then justify real translations and averaging of exceptional units separately.",
+      "impact": "The actual full Euler unit suprema are small on every good interval, with one exceptional grid before all X>=N and all admissible real functions. Full shifted Euler budget smallness in measure, the final Halasz estimate and logarithmic short-average assembly remain unfinished.",
+      "evidence": [
+        "PaperP1.FullEulerUnit.full_continuous",
+        "PaperP1.FullEulerUnit.global_unit_sup",
+        "PaperP1.FullEulerUnit.off_bad_unit_norm",
+        "PaperP1.FullEulerUnit.off_bad_unit_sup",
+        "PaperP1.FullEulerUnit.shifted_global_budget",
+        "PaperP1.FullEulerUnit.unit_sup_small_uniform"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17975 jobs); direct axiom audit passed for 18115 declarations using only propext, Classical.choice and Quot.sound; all 18198 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.85 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

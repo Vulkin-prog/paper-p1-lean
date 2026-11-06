@@ -1,6 +1,14 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0703: ACTUAL reciprocal frequency
+Current checkpoint P1-MATH-0704: The actual full Euler unit suprema are
+small on every good interval, with one exceptional grid before all X>=N
+and all admissible real functions. Full shifted Euler budget smallness
+in measure, the final Halasz estimate and logarithmic short-average
+assembly remain unfinished. T19.17 conditional; original T1.7 complete.
+Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main
+proved. False scopes/corrections unchanged. No Palomar registration.
+
+Historical checkpoint P1-MATH-0703: ACTUAL reciprocal frequency
 weights sum to <=5 independently of the number of intervals.
 Attained unit suprema give the literal budget bound <=5*M^2 for
 every bounded continuous function and every cutoff. SMALLNESS of
@@ -1264,7 +1272,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records701 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records702 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -1383,7 +1391,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **18109 audited theorem/lemma declarations**. This
+- The project currently has **18115 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -31391,3 +31399,14 @@ For any actual continuous complex function globally bounded in norm by M, its at
 This closes the actual reciprocal weight sum and uniform global frequency-budget bound. Smallness of the full Euler local-supremum budget via its common unit exception, and final Halasz/logarithmic short-average assembly, remain unfinished. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original corrections, preserved sources, pinned Lean and allowed axioms unchanged. About 53.9 GiB is free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17973 jobs); direct axiom audit passed for 18109 declarations using only propext, Classical.choice and Quot.sound; all 18192 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.87 GiB.
+
+
+## Actual full Euler unit suprema with a common exceptional grid
+
+FullEulerUnit applies the actual common good-unit repulsion to the FULL Euler product over all primes <=X. For every 1<=N<=X, its actual slow prime set is a subset of the full prime set. If the slow reciprocal mass is at least 8*(harmonicConstant+1-log(delta)), the actual full Euler norm is <=delta*log(X) at EVERY frequency in EVERY good unit interval, BEFORE ALL real functions bounded by one on primes. Taking the actual attained maximum proves the same square-supremum bound delta^2*log(X)^2.
+
+The global unit square supremum is <=eulerConstant^2*log(X)^2, and EVERY shifted literal frequencyBudget is <=5*eulerConstant^2*log(X)^2 independently of its cutoff and shift. For each delta and epsilon, ONE N0>=2 works before ALL N>=N0, ALL X>=N, ALL grids K with log(N)^3<=K, and ALL admissible real functions: the actual bad-unit count is <=epsilon*(2K+1), and every good full-Euler unit square supremum is <=delta^2*log(X)^2. Six theorems are added in one module, with no new definitions.
+
+Full shifted Euler budget smallness in measure, the final Halasz estimate and logarithmic short-average assembly remain unfinished. T19.17 remains conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, preserved sources, pinned Lean and allowed axioms unchanged. About 53.9 GiB is free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17975 jobs); direct axiom audit passed for 18115 declarations using only propext, Classical.choice and Quot.sound; all 18198 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.85 GiB.

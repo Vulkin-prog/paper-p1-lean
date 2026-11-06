@@ -4643,3 +4643,4 @@ public import PaperP1.Analysis.FullEulerBound
 public import PaperP1.Analysis.SlowPrimeDiscrete
 public import PaperP1.Analysis.CommonUnitException
 public import PaperP1.Analysis.ReciprocalFrequencyWeights
+public import PaperP1.Analysis.FullEulerUnit
