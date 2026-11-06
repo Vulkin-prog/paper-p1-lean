@@ -1,6 +1,15 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0739: Actual logarithmic shift phase,
+Current checkpoint P1-MATH-0740: Actual integration by parts and
+explicit logarithmic shift integral bound. The actual Ramare main-term
+frequency bounds and complete logarithmic short-average concentration
+remain unproved. T19.17 conditional; original T1.7 unconditional.
+Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main
+proved. Sources, false-scope corrections, compiler and axioms unchanged.
+About 53.3 GiB free on Ubuntu. No dependency download or Palomar
+registration.
+
+Historical checkpoint P1-MATH-0739: Actual logarithmic shift phase,
 derivative and integration amplitude. The actual Ramare main-term
 frequency bounds and complete logarithmic short-average concentration
 remain unproved. T19.17 conditional; original T1.7 unconditional.
@@ -31702,6 +31711,12 @@ The actual product n^(-it)*conj((n+h)^(-it)) is identified with its logarithmic 
 
 The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.
 
+## Internal actual integration by parts and explicit logarithmic shift integral bound
+
+The actual logarithmic shift phase is continuous on each positive interval. Its literal integration amplitude and derivative are continuous, and the derivative of their product with the phase is proved. The fundamental theorem of calculus gives the exact integration-by-parts identity. For t!=0, h>0 and 0<A<=B the ACTUAL interval integral has norm <=4*B*(B+h)/(|t|*h), with every endpoint and remainder term controlled. Six theorems are proved internally. This is an oscillatory integral bound; the finite sum and short-average steps remain separate.
+
+The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -34267,3 +34282,14 @@ The actual product n^(-it)*conj((n+h)^(-it)) is identified with its logarithmic 
 The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.3 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18045 jobs); direct axiom audit passed for 18332 declarations using only propext, Classical.choice and Quot.sound; all 18469 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.23 GiB.
+
+
+## Actual integration by parts and explicit logarithmic shift integral bound
+
+Stable ID: p1:internal:logarithmic-shift-integral. Actual integration by parts and explicit logarithmic shift integral bound. The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.
+
+The actual logarithmic shift phase is continuous on each positive interval. Its literal integration amplitude and derivative are continuous, and the derivative of their product with the phase is proved. The fundamental theorem of calculus gives the exact integration-by-parts identity. For t!=0, h>0 and 0<A<=B the ACTUAL interval integral has norm <=4*B*(B+h)/(|t|*h), with every endpoint and remainder term controlled. Six theorems are proved internally. This is an oscillatory integral bound; the finite sum and short-average steps remain separate.
+
+The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.3 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18047 jobs); direct axiom audit passed for 18338 declarations using only propext, Classical.choice and Quot.sound; all 18475 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.21 GiB.

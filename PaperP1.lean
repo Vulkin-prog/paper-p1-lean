@@ -4679,3 +4679,4 @@ public import PaperP1.Analysis.FiniteDifferencing
 public import PaperP1.Analysis.ShiftedCorrelations
 public import PaperP1.Analysis.TriangularDifferencing
 public import PaperP1.Analysis.LogarithmicShiftPhase
+public import PaperP1.Analysis.LogarithmicShiftIntegral

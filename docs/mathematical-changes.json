@@ -34387,6 +34387,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "1b8b0c3f2960d4a14497db32934f6c716466af14"
+    },
+    {
+      "id": "P1-MATH-0740",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The actual endpoint and integral remainder terms must be controlled, rather than assuming the desired logarithmic correlation bound.",
+      "finding": "The actual logarithmic shift phase is continuous on each positive interval. Its literal integration amplitude and derivative are continuous, and the derivative of their product with the phase is proved. The fundamental theorem of calculus gives the exact integration-by-parts identity. For t!=0, h>0 and 0<A<=B the ACTUAL interval integral has norm <=4*B*(B+h)/(|t|*h), with every endpoint and remainder term controlled. Six theorems are proved internally. This is an oscillatory integral bound; the finite sum and short-average steps remain separate.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Actual integration by parts and explicit logarithmic shift integral bound. The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.LogarithmicShiftIntegral.continuousOn_function",
+        "PaperP1.LogarithmicShiftIntegral.continuous_amplitude",
+        "PaperP1.LogarithmicShiftIntegral.continuous_amplitudeDeriv",
+        "PaperP1.LogarithmicShiftIntegral.product_hasDeriv",
+        "PaperP1.LogarithmicShiftIntegral.integral_identity",
+        "PaperP1.LogarithmicShiftIntegral.integral_norm_bound"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18047 jobs); direct axiom audit passed for 18338 declarations using only propext, Classical.choice and Quot.sound; all 18475 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.21 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

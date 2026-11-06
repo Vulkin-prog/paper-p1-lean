@@ -1,6 +1,15 @@
 # Mathematical corrections and improvements
 
-Current checkpoint P1-MATH-0739: Actual logarithmic shift phase,
+Current checkpoint P1-MATH-0740: Actual integration by parts and
+explicit logarithmic shift integral bound. The actual Ramare main-term
+frequency bounds and complete logarithmic short-average concentration
+remain unproved. T19.17 conditional; original T1.7 unconditional.
+Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main
+proved. Sources, false-scope corrections, compiler and axioms unchanged.
+About 53.3 GiB free on Ubuntu. No dependency download or Palomar
+registration.
+
+Historical checkpoint P1-MATH-0739: Actual logarithmic shift phase,
 derivative and integration amplitude. The actual Ramare main-term
 frequency bounds and complete logarithmic short-average concentration
 remain unproved. T19.17 conditional; original T1.7 unconditional.
@@ -1412,7 +1421,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**737 mathematical improvements and two statement-scope corrections are confirmed.**
+**738 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -31153,3 +31162,12 @@ The actual product n^(-it)*conj((n+h)^(-it)) is identified with its logarithmic 
 The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.3 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18045 jobs); direct axiom audit passed for 18332 declarations using only propext, Classical.choice and Quot.sound; all 18469 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.23 GiB.
+
+
+## Actual integration by parts and explicit logarithmic shift integral bound
+
+The actual logarithmic shift phase is continuous on each positive interval. Its literal integration amplitude and derivative are continuous, and the derivative of their product with the phase is proved. The fundamental theorem of calculus gives the exact integration-by-parts identity. For t!=0, h>0 and 0<A<=B the ACTUAL interval integral has norm <=4*B*(B+h)/(|t|*h), with every endpoint and remainder term controlled. Six theorems are proved internally. This is an oscillatory integral bound; the finite sum and short-average steps remain separate.
+
+The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.3 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18047 jobs); direct axiom audit passed for 18338 declarations using only propext, Classical.choice and Quot.sound; all 18475 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.21 GiB.

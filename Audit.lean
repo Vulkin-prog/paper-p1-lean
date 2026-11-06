@@ -4194,6 +4194,12 @@ import PaperP1
 #print axioms PaperP1.LogarithmicPhase.gaussian_integral
 #print axioms PaperP1.LogarithmicScaleCover.interval_cover
 #print axioms PaperP1.LogarithmicScaleCover.exponential_cover
+#print axioms PaperP1.LogarithmicShiftIntegral.continuousOn_function
+#print axioms PaperP1.LogarithmicShiftIntegral.continuous_amplitude
+#print axioms PaperP1.LogarithmicShiftIntegral.continuous_amplitudeDeriv
+#print axioms PaperP1.LogarithmicShiftIntegral.product_hasDeriv
+#print axioms PaperP1.LogarithmicShiftIntegral.integral_identity
+#print axioms PaperP1.LogarithmicShiftIntegral.integral_norm_bound
 #print axioms PaperP1.LogarithmicShiftPhase.phase_identity
 #print axioms PaperP1.LogarithmicShiftPhase.function_norm
 #print axioms PaperP1.LogarithmicShiftPhase.hasDerivAt_function
