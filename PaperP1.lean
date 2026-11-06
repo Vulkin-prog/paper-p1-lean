@@ -4908,3 +4908,4 @@ public import PaperP1.Analysis.GaussianSmoothedEnergy
 public import PaperP1.Analysis.GaussianDifferenceWeights
 public import PaperP1.Analysis.GaussianEnergyReduction
 public import PaperP1.Analysis.GaussianLogarithmicScales
+public import PaperP1.Analysis.UniformGaussianFrequencyEnergy
