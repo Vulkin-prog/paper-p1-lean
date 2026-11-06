@@ -1,6 +1,15 @@
 # Multiquadratic split radicands: exact square-class independence
 
-Current checkpoint P1-MATH-0936: The actual union of fixed-width large
+Current checkpoint P1-MATH-0937: Actual fixed-power prime bands admit a
+sufficiently large fixed narrow-band width. The triple-large prime
+frequency contribution, the central-frequency mean comparison and
+complete logarithmic short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 52.83 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0936: The actual union of fixed-width large
 prime-block samples has a logarithmic-power cardinality bound. The
 triple-large prime frequency contribution, the central-frequency mean
 comparison and complete logarithmic short-average concentration remain
@@ -28706,3 +28715,12 @@ Two theorems bound the actual number of narrow blocks by (H+1)*log N and the act
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.83 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18439 jobs); direct axiom audit passed for 19113 declarations using only propext, Classical.choice and Quot.sound; all 19398 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.81 GiB.
+
+
+## Actual fixed-power prime bands admit a sufficiently large fixed narrow-band width
+
+Five theorems prove actual anchor bounds N^a/2<=anchor<=N^b, eventual anchor>=N^(a/2) for fixed a>0, and eventual anchor>=H with anchor^H>=N for fixed H>=4 satisfying a*H>=2. Such a fixed H exists above EVERY prescribed width. When b<=1/16 the actual anchors also satisfy the cofactor upper cutoff N^(1/16). Every claim is for the actual rounded prime set and actual logarithmic band indices.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.83 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18441 jobs); direct axiom audit passed for 19118 declarations using only propext, Classical.choice and Quot.sound; all 19403 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.79 GiB.

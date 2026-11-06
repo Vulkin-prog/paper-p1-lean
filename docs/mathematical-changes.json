@@ -40635,6 +40635,37 @@
         "status": "not_integrated"
       },
       "validation_commit": "dc2a845d24b585117655d73d3e798f49f91a22b8"
+    },
+    {
+      "id": "P1-MATH-0937",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The fixed-width moment argument requires actual anchor lower bounds and an admissible width chosen after the final power exponent and any prescribed approximation precision.",
+      "finding": "Five theorems prove actual anchor bounds N^a/2<=anchor<=N^b, eventual anchor>=N^(a/2) for fixed a>0, and eventual anchor>=H with anchor^H>=N for fixed H>=4 satisfying a*H>=2. Such a fixed H exists above EVERY prescribed width. When b<=1/16 the actual anchors also satisfy the cofactor upper cutoff N^(1/16). Every claim is for the actual rounded prime set and actual logarithmic band indices.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Actual fixed-power prime bands admit a sufficiently large fixed narrow-band width. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.FixedPowerNarrowGeometry.anchor_bounds",
+        "PaperP1.FixedPowerNarrowGeometry.eventual_lower",
+        "PaperP1.FixedPowerNarrowGeometry.eventual_geometry",
+        "PaperP1.FixedPowerNarrowGeometry.width_exists",
+        "PaperP1.FixedPowerNarrowGeometry.upper_anchor"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18441 jobs); direct axiom audit passed for 19118 declarations using only propext, Classical.choice and Quot.sound; all 19403 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.79 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

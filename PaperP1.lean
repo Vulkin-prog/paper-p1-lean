@@ -4876,3 +4876,4 @@ public import PaperP1.Analysis.SelbergLogarithmicBudget
 public import PaperP1.Analysis.PrimeHalaszLogarithmicSamples
 public import PaperP1.Analysis.FixedOrderPrimeMoment
 public import PaperP1.Analysis.FixedWidthLargeFrequencyCardinality
+public import PaperP1.Analysis.FixedPowerNarrowGeometry
