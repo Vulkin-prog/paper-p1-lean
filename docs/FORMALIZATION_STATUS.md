@@ -1,6 +1,15 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0707: The actual shifted exception weight has
+Current checkpoint P1-MATH-0708: The actual full shifted Euler local-
+supremum budget is small outside one measurable shift exception, chosen
+before every X>=N and every admissible real function. Gaussian
+frequency-tail transfer, the final Halasz estimate and logarithmic
+short-average assembly remain unfinished. T19.17 conditional; original
+T1.7 complete. Coverage: 164 proved, 1 conditional, 2 in_progress /167;
+all 73 main proved. False scopes/corrections unchanged. No Palomar
+registration.
+
+Historical checkpoint P1-MATH-0707: The actual shifted exception weight has
 interval integral <=5 times the exceptional measure, with an explicit
 measurable Markov level set. Uniform common smallness of the actual full
 shifted Euler budget, final Halasz and logarithmic short-average
@@ -1298,7 +1307,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records705 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records706 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -1417,7 +1426,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **18138 audited theorem/lemma declarations**. This
+- The project currently has **18139 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -31471,3 +31480,16 @@ The literal reciprocal-weighted badWeight is measurable and integrable. Finite i
 Uniform common smallness of the actual full shifted Euler budget, final Halasz and logarithmic short-average assembly remain unfinished. T19.17 remains conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, preserved sources, pinned Lean and allowed axioms unchanged. About 53.9 GiB is free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17981 jobs); direct axiom audit passed for 18138 declarations using only propext, Classical.choice and Quot.sound; all 18225 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.79 GiB.
+
+
+## Actual full Euler local-supremum budget small outside a common shift exception
+
+CommonFullEulerBudget proves the ACTUAL full-Euler local-supremum frequency-budget theorem. For EVERY eta>0 and epsilon>0, ONE N0>=2 works before ALL N>=N0, frequency cutoffs M and real T with T>=1, M<=T and log(N)^3<=T. There is ONE measurable shift exception E contained in (-T,T], of measure <=epsilon*T, chosen BEFORE ALL full Euler cutoffs X>=N and ALL real prime-bounded coefficient functions f. For EVERY tau outside E in that interval, the LITERAL frequencyBudget of the shifted full product over all primes <=X is <=eta*log(X)^2.
+
+The proof takes delta=sqrt(eta/10), V=eta/(2*eulerConstant^2) and zeta=epsilon*V/70. The actual covering grid K=ceil(T+M) satisfies 2*K+1<=7*T. The proved bad-unit count and finite thickening give exceptional measure <=14*zeta*T. The actual Markov budget then gives shift-exception measure <=epsilon*T. Outside it, the actual pointwise envelope is <=log(X)^2*(5*delta^2+eulerConstant^2*V)=eta*log(X)^2. Every maximum, finite sum, measure, grid endpoint and cutoff order is internal. One theorem is added in one module.
+
+This closes the previously missing FULL actual local-supremum frequency budget, including a common exception before ALL X>=N and ALL admissible real functions. The factor is the actual full relevant Euler product, not a restricted integer polynomial or a small-prime substitute.
+
+Gaussian frequency-tail transfer, the final Halasz estimate and logarithmic short-average assembly remain unfinished. T19.17 remains conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, preserved sources, pinned Lean and allowed axioms unchanged. About 53.9 GiB is free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17983 jobs); direct axiom audit passed for 18139 declarations using only propext, Classical.choice and Quot.sound; all 18226 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.77 GiB.

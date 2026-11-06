@@ -1,6 +1,15 @@
 # Mathematical corrections and improvements
 
-Current checkpoint P1-MATH-0707: The actual shifted exception weight has
+Current checkpoint P1-MATH-0708: The actual full shifted Euler local-
+supremum budget is small outside one measurable shift exception, chosen
+before every X>=N and every admissible real function. Gaussian
+frequency-tail transfer, the final Halasz estimate and logarithmic
+short-average assembly remain unfinished. T19.17 conditional; original
+T1.7 complete. Coverage: 164 proved, 1 conditional, 2 in_progress /167;
+all 73 main proved. False scopes/corrections unchanged. No Palomar
+registration.
+
+Historical checkpoint P1-MATH-0707: The actual shifted exception weight has
 interval integral <=5 times the exceptional measure, with an explicit
 measurable Markov level set. Uniform common smallness of the actual full
 shifted Euler budget, final Halasz and logarithmic short-average
@@ -1175,7 +1184,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**705 mathematical improvements and two statement-scope corrections are confirmed.**
+**706 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -30578,3 +30587,16 @@ The literal reciprocal-weighted badWeight is measurable and integrable. Finite i
 Uniform common smallness of the actual full shifted Euler budget, final Halasz and logarithmic short-average assembly remain unfinished. T19.17 remains conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, preserved sources, pinned Lean and allowed axioms unchanged. About 53.9 GiB is free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17981 jobs); direct axiom audit passed for 18138 declarations using only propext, Classical.choice and Quot.sound; all 18225 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.79 GiB.
+
+
+## Actual full Euler local-supremum budget small outside a common shift exception
+
+CommonFullEulerBudget proves the ACTUAL full-Euler local-supremum frequency-budget theorem. For EVERY eta>0 and epsilon>0, ONE N0>=2 works before ALL N>=N0, frequency cutoffs M and real T with T>=1, M<=T and log(N)^3<=T. There is ONE measurable shift exception E contained in (-T,T], of measure <=epsilon*T, chosen BEFORE ALL full Euler cutoffs X>=N and ALL real prime-bounded coefficient functions f. For EVERY tau outside E in that interval, the LITERAL frequencyBudget of the shifted full product over all primes <=X is <=eta*log(X)^2.
+
+The proof takes delta=sqrt(eta/10), V=eta/(2*eulerConstant^2) and zeta=epsilon*V/70. The actual covering grid K=ceil(T+M) satisfies 2*K+1<=7*T. The proved bad-unit count and finite thickening give exceptional measure <=14*zeta*T. The actual Markov budget then gives shift-exception measure <=epsilon*T. Outside it, the actual pointwise envelope is <=log(X)^2*(5*delta^2+eulerConstant^2*V)=eta*log(X)^2. Every maximum, finite sum, measure, grid endpoint and cutoff order is internal. One theorem is added in one module.
+
+This closes the previously missing FULL actual local-supremum frequency budget, including a common exception before ALL X>=N and ALL admissible real functions. The factor is the actual full relevant Euler product, not a restricted integer polynomial or a small-prime substitute.
+
+Gaussian frequency-tail transfer, the final Halasz estimate and logarithmic short-average assembly remain unfinished. T19.17 remains conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, preserved sources, pinned Lean and allowed axioms unchanged. About 53.9 GiB is free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17983 jobs); direct axiom audit passed for 18139 declarations using only propext, Classical.choice and Quot.sound; all 18226 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.77 GiB.

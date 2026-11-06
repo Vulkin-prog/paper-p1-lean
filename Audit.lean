@@ -3449,6 +3449,7 @@ import PaperP1
 #print axioms PaperP1.CoarseSaddlePowerErrors.power_negligible
 #print axioms PaperP1.CommonCutoffSurfaceBudget.real_floor_budget
 #print axioms PaperP1.CommonCutoffSurfaceBudget.class_budget
+#print axioms PaperP1.CommonFullEulerBudget.common_budget_small_uniform
 #print axioms PaperP1.CommonPrimeFrequencyException.doubled_value_continuous
 #print axioms PaperP1.CommonPrimeFrequencyException.exceptional_measurable
 #print axioms PaperP1.CommonPrimeFrequencyException.repulsion_off_exception

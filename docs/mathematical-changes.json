@@ -33279,6 +33279,33 @@
         "status": "not_integrated"
       },
       "validation_commit": "78035c50e835709351160f642eecd705fe297b41"
+    },
+    {
+      "id": "P1-MATH-0708",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "Ordinary full-Euler mean control did not imply smallness of the local-supremum budget. The common unit exception, its thickening, weights and Markov bound required final assembly.",
+      "finding": "The actual full shifted Euler local-supremum budget is small outside one measurable shift exception, chosen before every X>=N and every admissible real function.",
+      "proposed_revision": "Use the proved actual full local-supremum budget after the Gaussian tail and analytic band transfer. Complete the Halasz and logarithmic short-average steps separately.",
+      "impact": "The actual full shifted Euler local-supremum budget is small outside one measurable shift exception, chosen before every X>=N and every admissible real function. Gaussian frequency-tail transfer, the final Halasz estimate and logarithmic short-average assembly remain unfinished.",
+      "evidence": [
+        "PaperP1.CommonFullEulerBudget.common_budget_small_uniform"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17983 jobs); direct axiom audit passed for 18139 declarations using only propext, Classical.choice and Quot.sound; all 18226 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.77 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

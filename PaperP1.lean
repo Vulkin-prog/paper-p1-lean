@@ -4647,3 +4647,4 @@ public import PaperP1.Analysis.FullEulerUnit
 public import PaperP1.Analysis.UnitThickening
 public import PaperP1.Analysis.FullEulerEnvelope
 public import PaperP1.Analysis.ShiftedExceptionWeight
+public import PaperP1.Analysis.CommonFullEulerBudget
