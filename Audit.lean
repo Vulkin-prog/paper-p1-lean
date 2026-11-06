@@ -4918,6 +4918,11 @@ import PaperP1
 #print axioms PaperP1.RecursiveChebyshev.card_lt
 #print axioms PaperP1.RecursiveChebyshev.coefficients_eq_zero
 #print axioms PaperP1.RecursiveChebyshev.evaluation_injective
+#print axioms PaperP1.RecursiveLogarithmicDifferencing.budget_nonneg
+#print axioms PaperP1.RecursiveLogarithmicDifferencing.budget_monotone
+#print axioms PaperP1.RecursiveLogarithmicDifferencing.budget_tendsto
+#print axioms PaperP1.RecursiveLogarithmicDifferencing.iterate_bound
+#print axioms PaperP1.RecursiveLogarithmicDifferencing.logarithmic_bound
 #print axioms PaperP1.ReducedBinaryLatticeBasis.reduced_inverse
 #print axioms PaperP1.ReducedBinaryLatticeBasis.reduced_det
 #print axioms PaperP1.ReducedBinaryLatticeBasis.reduced_first
