@@ -42047,7 +42047,8 @@
             "PaperP1.MonicCriticalPointCount.critical_points_card_degree_cap"
           ]
         }
-      ]
+      ],
+      "validation_commit": "393881482208425eb7d0cf7271a6b706c110837d"
     },
     {
       "label": "p1:arith:dense",
