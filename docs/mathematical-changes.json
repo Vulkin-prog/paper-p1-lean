@@ -33665,6 +33665,37 @@
         "status": "not_integrated"
       },
       "validation_commit": "09ee2cf4c419086c0ae2dce1f00d6d74849ebe60"
+    },
+    {
+      "id": "P1-MATH-0719",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The preceding internal analytic components did not yet provide this exact rate, coefficient scope or actual finite-band connection.",
+      "finding": "The actual triple convolution on a logarithmic prime band has norm <=C*X*U, with a universal explicit positive constant.",
+      "proposed_revision": "Use this proved actual quantitative component with its exact coefficient and cutoff scope in the geometric band assembly.",
+      "impact": "The actual triple convolution on a logarithmic prime band has norm <=C*X*U, with a universal explicit positive constant. The actual geometric band partition, global Halasz assembly and final logarithmic short-average theorem remain unfinished.",
+      "evidence": [
+        "PaperP1.TrivialTripleBand.constant_pos",
+        "PaperP1.TrivialTripleBand.restricted_norm",
+        "PaperP1.TrivialTripleBand.reciprocal_weight_bound",
+        "PaperP1.TrivialTripleBand.band_norm_bound",
+        "PaperP1.TrivialTripleBand.constant"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18005 jobs); direct axiom audit passed for 18213 declarations using only propext, Classical.choice and Quot.sound; all 18319 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.58 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

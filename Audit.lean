@@ -4857,6 +4857,10 @@ import PaperP1
 #print axioms PaperP1.TripleSharpIdentity.band_primes_prime
 #print axioms PaperP1.TripleSharpIdentity.band_primes_log
 #print axioms PaperP1.TripleSharpIdentity.band_sharp_eq_triple
+#print axioms PaperP1.TrivialTripleBand.constant_pos
+#print axioms PaperP1.TrivialTripleBand.restricted_norm
+#print axioms PaperP1.TrivialTripleBand.reciprocal_weight_bound
+#print axioms PaperP1.TrivialTripleBand.band_norm_bound
 #print axioms PaperP1.TruncatedAffineDegree.budget
 #print axioms PaperP1.TruncatedAffineDegree.prime_scale
 #print axioms PaperP1.UniformBinaryLogBudget.monotone

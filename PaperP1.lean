@@ -4658,3 +4658,4 @@ public import PaperP1.Analysis.ComplexEuler
 public import PaperP1.Analysis.ComplexEulerFrequencyTruncation
 public import PaperP1.Analysis.QuantitativeEulerBand
 public import PaperP1.Analysis.RealUnitTwist
+public import PaperP1.Analysis.TrivialTripleBand

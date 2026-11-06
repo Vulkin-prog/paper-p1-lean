@@ -1,6 +1,14 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0718: Actual real frequency translations
+Current checkpoint P1-MATH-0719: The actual triple convolution on a
+logarithmic prime band has norm <=C*X*U, with a universal explicit
+positive constant. The actual geometric band partition, global Halasz
+assembly and final logarithmic short-average theorem remain unfinished.
+T19.17 conditional; original T1.7 complete. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. False
+scopes/corrections unchanged. No Palomar registration.
+
+Historical checkpoint P1-MATH-0718: Actual real frequency translations
 equal complete unit complex twists, preserving the full series, Euler
 factor, frequency budget and quantitative retained-band estimate. The
 actual geometric band partition, global Halasz assembly and final
@@ -31429,6 +31437,14 @@ partition, global Halasz assembly and final logarithmic short-average
 theorem remain unfinished. T19.17 conditional; original T1.7
 unconditional.
 
+## Internal actual elementary triple-band norm bound at its logarithmic scale
+
+The actual triple convolution on a logarithmic prime band has norm
+<=C*X*U, with a universal explicit positive constant. The actual
+geometric band partition, global Halasz assembly and final logarithmic
+short-average theorem remain unfinished. T19.17 conditional; original
+T1.7 unconditional.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -33743,3 +33759,16 @@ Termwise Dirichlet twists shift frequency EXACTLY, including n=0. The actual ful
 The actual geometric band partition, global Halasz assembly and final logarithmic short-average theorem remain unfinished. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, sources, pinned Lean and axioms unchanged. About 53.8 GiB is free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18003 jobs); direct axiom audit passed for 18209 declarations using only propext, Classical.choice and Quot.sound; all 18314 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.60 GiB.
+
+
+## Actual elementary triple-band norm bound at its logarithmic scale
+
+Stable ID: p1:internal:trivial-triple-band. The actual triple convolution on a logarithmic prime band has norm <=C*X*U, with a universal explicit positive constant. The actual geometric band partition, global Halasz assembly and final logarithmic short-average theorem remain unfinished.
+
+The actual restricted prime convolution has norm <=X times the literal prime logarithmic mass. In a band with U<=log(X/p), its actual reciprocal error weight is <=mass(P)/U. The proved exact triple reconstruction error and actual band mass <=U+C then give norm(triple)<=constant*X*U for U>=log(2).
+
+The positive constant is (1+C_diameter/log(2))*(1+(1+primePowerTotal)/log(2)). All coefficients are literal complete complex prime-bounded functions, with no assumed density or triple estimate. Four theorems and one definition supply the elementary small-band bound for the later geometric summation.
+
+The actual geometric band partition, global Halasz assembly and final logarithmic short-average theorem remain unfinished. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, sources, pinned Lean and axioms unchanged. About 53.8 GiB is free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18005 jobs); direct axiom audit passed for 18213 declarations using only propext, Classical.choice and Quot.sound; all 18319 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.58 GiB.
