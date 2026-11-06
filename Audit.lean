@@ -3452,6 +3452,9 @@ import PaperP1
 #print axioms PaperP1.ClippedPowerSum.finite_tail_le
 #print axioms PaperP1.ClippedPowerSum.finite_tail_le_power
 #print axioms PaperP1.CoarseSaddlePowerErrors.power_negligible
+#print axioms PaperP1.CofactorSparseRegime.margin_eventually
+#print axioms PaperP1.CofactorSparseRegime.cofactor_lower_uniform
+#print axioms PaperP1.CofactorSparseRegime.uniform_regime
 #print axioms PaperP1.CommonCutoffSurfaceBudget.real_floor_budget
 #print axioms PaperP1.CommonCutoffSurfaceBudget.class_budget
 #print axioms PaperP1.CommonDampedSum.twisted_sum_integral

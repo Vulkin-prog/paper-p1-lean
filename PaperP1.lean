@@ -4690,3 +4690,4 @@ public import PaperP1.Analysis.MixedGramRowBound
 public import PaperP1.Analysis.SparseGramEnvelope
 public import PaperP1.Analysis.SparseIntegerMeanValue
 public import PaperP1.Analysis.SparseSupportedMeanValue
+public import PaperP1.Analysis.CofactorSparseRegime

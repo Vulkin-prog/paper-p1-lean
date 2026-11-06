@@ -1,6 +1,14 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0750: Actual sparse sampled mean values for
+Current checkpoint P1-MATH-0751: Actual uniform cofactor rounding and
+sparse-frequency regime transfer. The actual Ramare main-term frequency
+bounds and complete logarithmic short-average concentration remain
+unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164
+proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources,
+false-scope corrections, compiler and axioms unchanged. About 53.1 GiB
+free on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0750: Actual sparse sampled mean values for
 arbitrary restricted and Ramare-weighted supports. The actual Ramare
 main-term frequency bounds and complete logarithmic short-average
 concentration remain unproved. T19.17 conditional; original T1.7
@@ -31864,6 +31872,12 @@ The actual finite Dirichlet polynomial on ANY subset S of [N,2N) is exactly the 
 
 The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.
 
+## Internal actual uniform cofactor rounding and sparse-frequency regime transfer
+
+The literal power margin (X^(7/8)+1)*X^(1/16)<=X holds eventually. The actual natural division identity then proves X^(7/8)<=floor(X/p) uniformly before ALL positive integers p<=X^(1/16), with its rounding loss retained. For ANY prescribed N0 one threshold X0 works before all such p: N0<=X/p, X/p>=1, X<=height(X/p), X^(1/200)<=cardEnvelope(X/p), and X/p<=X. Three theorems prove the actual cofactor scale and frequency-regime transfer, without a cofactor asymptotic input.
+
+The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -34550,3 +34564,14 @@ The actual finite Dirichlet polynomial on ANY subset S of [N,2N) is exactly the 
 The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.1 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18067 jobs); direct axiom audit passed for 18389 declarations using only propext, Classical.choice and Quot.sound; all 18535 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.04 GiB.
+
+
+## Actual uniform cofactor rounding and sparse-frequency regime transfer
+
+Stable ID: p1:internal:cofactor-sparse-regime. Actual uniform cofactor rounding and sparse-frequency regime transfer. The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.
+
+The literal power margin (X^(7/8)+1)*X^(1/16)<=X holds eventually. The actual natural division identity then proves X^(7/8)<=floor(X/p) uniformly before ALL positive integers p<=X^(1/16), with its rounding loss retained. For ANY prescribed N0 one threshold X0 works before all such p: N0<=X/p, X/p>=1, X<=height(X/p), X^(1/200)<=cardEnvelope(X/p), and X/p<=X. Three theorems prove the actual cofactor scale and frequency-regime transfer, without a cofactor asymptotic input.
+
+The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.1 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18069 jobs); direct axiom audit passed for 18392 declarations using only propext, Classical.choice and Quot.sound; all 18538 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.02 GiB.

@@ -34750,6 +34750,35 @@
         "status": "not_integrated"
       },
       "validation_commit": "1b1122f27fe29498fa0470dad2a05d85a0bed2df"
+    },
+    {
+      "id": "P1-MATH-0751",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "A sparse mean-value theorem in the cofactor length cannot be applied at height X without uniformly proving the actual integer-division, height and sample-cardinality comparisons.",
+      "finding": "The literal power margin (X^(7/8)+1)*X^(1/16)<=X holds eventually. The actual natural division identity then proves X^(7/8)<=floor(X/p) uniformly before ALL positive integers p<=X^(1/16), with its rounding loss retained. For ANY prescribed N0 one threshold X0 works before all such p: N0<=X/p, X/p>=1, X<=height(X/p), X^(1/200)<=cardEnvelope(X/p), and X/p<=X. Three theorems prove the actual cofactor scale and frequency-regime transfer, without a cofactor asymptotic input.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Actual uniform cofactor rounding and sparse-frequency regime transfer. The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.CofactorSparseRegime.margin_eventually",
+        "PaperP1.CofactorSparseRegime.cofactor_lower_uniform",
+        "PaperP1.CofactorSparseRegime.uniform_regime"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18069 jobs); direct axiom audit passed for 18392 declarations using only propext, Classical.choice and Quot.sound; all 18538 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.02 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
