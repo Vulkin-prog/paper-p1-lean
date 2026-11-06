@@ -1,6 +1,15 @@
 # Actual projective scheme map
 
-Current checkpoint P1-MATH-0823: The ceiling amplification order has
+Current checkpoint P1-MATH-0824: Actual narrow prime blocks satisfy the
+separated large-value cardinality bound. The joint large-prime frequency
+contribution, the central-frequency mean comparison and complete
+logarithmic short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 51.76 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0823: The ceiling amplification order has
 exact logarithmic and rounded-power bounds. The joint large-prime
 frequency contribution, the central-frequency mean comparison and
 complete logarithmic short-average concentration remain unproved. T19.17
@@ -25948,3 +25957,12 @@ Define k=ceil(log N/log u) for an actual anchor u>1. Prove log N<=k*log u<=log N
 The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.76 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18213 jobs); direct axiom audit passed for 18657 declarations using only propext, Classical.choice and Quot.sound; all 18858 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.72 GiB.
+
+
+## Actual narrow prime blocks satisfy the separated large-value cardinality bound
+
+For the ACTUAL narrow block at anchor u, H>=4, integer k<=H and u>=H, every unit-separated sample set at height T<=ceil(u)^k on which the actual block norm is at least V>0 has cardinality<=54*C*budget(k,actualBlock)/V^(2*k). One theorem proves all actual support, prime, mass, rounding and span hypotheses needed to apply the high-moment sample bound.
+
+The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.76 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18215 jobs); direct axiom audit passed for 18658 declarations using only propext, Classical.choice and Quot.sound; all 18859 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.70 GiB.

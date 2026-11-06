@@ -4446,6 +4446,7 @@ import PaperP1
 #print axioms PaperP1.NarrowPrimeBands.band_disjoint
 #print axioms PaperP1.NarrowPrimeBands.sum_partition
 #print axioms PaperP1.NarrowPrimeBands.indices_card_bound
+#print axioms PaperP1.NarrowPrimeLargeValues.sampled_card_bound
 #print axioms PaperP1.NarrowRamareRectangle.cofactorSet_eq_interval
 #print axioms PaperP1.NarrowRamareRectangle.cofactor_endpoints
 #print axioms PaperP1.NarrowRamareRectangle.twist_coefficient
