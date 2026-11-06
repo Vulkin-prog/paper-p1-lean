@@ -4922,6 +4922,9 @@ import PaperP1
 #print axioms PaperP1.RealPrimeEulerBound.normalized_nonneg
 #print axioms PaperP1.RealPrimeEulerBound.normalized_global_bound
 #print axioms PaperP1.RealPrimeEulerBound.slow_band_uniform_off_exception
+#print axioms PaperP1.RealPrimeEulerComparison.phase_double
+#print axioms PaperP1.RealPrimeEulerComparison.term_as_weight
+#print axioms PaperP1.RealPrimeEulerComparison.fourth_power_bound
 #print axioms PaperP1.RealSeriesEvaluation.term_add
 #print axioms PaperP1.RealSeriesEvaluation.term_mul
 #print axioms PaperP1.RealSeriesEvaluation.absolutelySummable_C

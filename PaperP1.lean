@@ -4822,3 +4822,4 @@ public import PaperP1.Analysis.ZetaMiddleEstimate
 public import PaperP1.Analysis.ZetaLogarithmicEnvelope
 public import PaperP1.Analysis.UniformZetaSublogarithmic
 public import PaperP1.Analysis.RealUnitEulerComparison
+public import PaperP1.Analysis.RealPrimeEulerComparison
