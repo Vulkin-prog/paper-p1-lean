@@ -4759,6 +4759,12 @@ import PaperP1
 #print axioms PaperP1.PrimeBandDiscreteMoments.sampled_high_moment_bound
 #print axioms PaperP1.PrimeBandDiscreteMoments.large_values_card
 #print axioms PaperP1.PrimeBandDiscreteMoments.reciprocal_sampled_estimates_eventually
+#print axioms PaperP1.PrimeDampingBudget.damping_bounds
+#print axioms PaperP1.PrimeDampingBudget.damping_defect
+#print axioms PaperP1.PrimeDampingBudget.prime_log_sum_bound
+#print axioms PaperP1.PrimeDampingBudget.reciprocal_square_budget
+#print axioms PaperP1.PrimeDampingBudget.summed_damping_defect
+#print axioms PaperP1.PrimeDampingBudget.uniform_summed_defect
 #print axioms PaperP1.PrimeEulerSaddleScale.exponent_bound
 #print axioms PaperP1.PrimeFactorCauchy.interval_cauchy
 #print axioms PaperP1.PrimeFactorCauchy.prime_factor_integral_bound
