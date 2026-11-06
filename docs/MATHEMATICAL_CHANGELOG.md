@@ -1,6 +1,16 @@
 # Mathematical corrections and improvements
 
-Current checkpoint P1-MATH-0800: Actual narrow mixed prime and cofactor
+Current checkpoint P1-MATH-0801: Actual amplification budget and first
+threshold loss have uniform growing-order power bounds. The
+complementary bad-prime frequency contribution, the central-frequency
+mean subtraction and complete logarithmic short-average concentration
+remain unproved. T19.17 conditional; original T1.7 unconditional.
+Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main
+proved. Sources, false-scope corrections, compiler and axioms unchanged.
+About 52.12 GiB free on Ubuntu. No dependency download or Palomar
+registration.
+
+Historical checkpoint P1-MATH-0800: Actual narrow mixed prime and cofactor
 frequency estimates retain all amplification parameters. The
 complementary bad-prime frequency contribution, the central-frequency
 mean subtraction and complete logarithmic short-average concentration
@@ -1962,7 +1972,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**798 mathematical improvements and two statement-scope corrections are confirmed.**
+**799 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -32252,3 +32262,12 @@ On the ACTUAL mixed set where the first narrow-band Dirichlet polynomial is >=v>
 The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.19 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18167 jobs); direct axiom audit passed for 18577 declarations using only propext, Classical.choice and Quot.sound; all 18762 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.14 GiB.
+
+
+## Actual amplification budget and first threshold loss have uniform growing-order power bounds
+
+For EVERY k and actual support of reciprocal mass<=1, the internally proved amplified moment budget is <=(32*k^2)^k, including k=0. The proof retains factorial multiplicity using k!<=k^k and k+1<=2^k. For EVERY x>=2 and k<=x^3, division by the ACTUAL first threshold (1/x^10)^(2*k) gives a bound <=x^(31*k). The exact power rearrangement and all growing-order inequalities are proved. Two theorems bound these actual combinatorial and threshold losses without assuming an asymptotic amplified moment.
+
+The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.12 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18169 jobs); direct axiom audit passed for 18579 declarations using only propext, Classical.choice and Quot.sound; all 18764 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.12 GiB.

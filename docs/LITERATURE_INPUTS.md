@@ -1,6 +1,16 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0800: Actual narrow mixed prime and cofactor
+Current checkpoint P1-MATH-0801: Actual amplification budget and first
+threshold loss have uniform growing-order power bounds. The
+complementary bad-prime frequency contribution, the central-frequency
+mean subtraction and complete logarithmic short-average concentration
+remain unproved. T19.17 conditional; original T1.7 unconditional.
+Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main
+proved. Sources, false-scope corrections, compiler and axioms unchanged.
+About 52.12 GiB free on Ubuntu. No dependency download or Palomar
+registration.
+
+Historical checkpoint P1-MATH-0800: Actual narrow mixed prime and cofactor
 frequency estimates retain all amplification parameters. The
 complementary bad-prime frequency contribution, the central-frequency
 mean subtraction and complete logarithmic short-average concentration
@@ -32618,6 +32628,12 @@ On the ACTUAL mixed set where the first narrow-band Dirichlet polynomial is >=v>
 
 The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved.
 
+## Internal actual amplification budget and first threshold loss have uniform growing-order power bounds
+
+For EVERY k and actual support of reciprocal mass<=1, the internally proved amplified moment budget is <=(32*k^2)^k, including k=0. The proof retains factorial multiplicity using k!<=k^k and k+1<=2^k. For EVERY x>=2 and k<=x^3, division by the ACTUAL first threshold (1/x^10)^(2*k) gives a bound <=x^(31*k). The exact power rearrangement and all growing-order inequalities are proved. Two theorems bound these actual combinatorial and threshold losses without assuming an asymptotic amplified moment.
+
+The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -35854,3 +35870,14 @@ On the ACTUAL mixed set where the first narrow-band Dirichlet polynomial is >=v>
 The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.19 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18167 jobs); direct axiom audit passed for 18577 declarations using only propext, Classical.choice and Quot.sound; all 18762 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.14 GiB.
+
+
+## Actual amplification budget and first threshold loss have uniform growing-order power bounds
+
+Stable ID: p1:internal:amplification-budget-bound. Actual amplification budget and first threshold loss have uniform growing-order power bounds. The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved.
+
+For EVERY k and actual support of reciprocal mass<=1, the internally proved amplified moment budget is <=(32*k^2)^k, including k=0. The proof retains factorial multiplicity using k!<=k^k and k+1<=2^k. For EVERY x>=2 and k<=x^3, division by the ACTUAL first threshold (1/x^10)^(2*k) gives a bound <=x^(31*k). The exact power rearrangement and all growing-order inequalities are proved. Two theorems bound these actual combinatorial and threshold losses without assuming an asymptotic amplified moment.
+
+The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.12 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18169 jobs); direct axiom audit passed for 18579 declarations using only propext, Classical.choice and Quot.sound; all 18764 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.12 GiB.

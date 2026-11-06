@@ -36327,6 +36327,34 @@
         "status": "not_integrated"
       },
       "validation_commit": "ed1f3950e2688283f8306b736246f2bc785d85d8"
+    },
+    {
+      "id": "P1-MATH-0801",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The factorial and threshold losses must be controlled uniformly at the chosen growing order; a fixed-order asymptotic is insufficient for the mixed-frequency argument.",
+      "finding": "For EVERY k and actual support of reciprocal mass<=1, the internally proved amplified moment budget is <=(32*k^2)^k, including k=0. The proof retains factorial multiplicity using k!<=k^k and k+1<=2^k. For EVERY x>=2 and k<=x^3, division by the ACTUAL first threshold (1/x^10)^(2*k) gives a bound <=x^(31*k). The exact power rearrangement and all growing-order inequalities are proved. Two theorems bound these actual combinatorial and threshold losses without assuming an asymptotic amplified moment.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Actual amplification budget and first threshold loss have uniform growing-order power bounds. The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.AmplificationBudgetBound.budget_power_bound",
+        "PaperP1.AmplificationBudgetBound.threshold_budget_bound"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18169 jobs); direct axiom audit passed for 18579 declarations using only propext, Classical.choice and Quot.sound; all 18764 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.12 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

@@ -3310,6 +3310,8 @@ import PaperP1
 #print axioms PaperP1.AffineUnitGraphParametrization.eq_or_transpose
 #print axioms PaperP1.AffineUnitGraphParametrization.unit_jets
 #print axioms PaperP1.AffineUnitGraphParametrization.unit_curve_parametrization
+#print axioms PaperP1.AmplificationBudgetBound.budget_power_bound
+#print axioms PaperP1.AmplificationBudgetBound.threshold_budget_bound
 #print axioms PaperP1.AmplifiedPrimeProductMean.budget_nonneg
 #print axioms PaperP1.AmplifiedPrimeProductMean.continuous_mean_bound
 #print axioms PaperP1.AmplifiedPrimeProductMean.sampled_mean_bound

@@ -4740,3 +4740,4 @@ public import PaperP1.Analysis.RoundedAmplificationGeometry
 public import PaperP1.Analysis.BoundedAmplificationFactor
 public import PaperP1.Analysis.ActualNarrowAmplifiedMean
 public import PaperP1.Analysis.ActualNarrowMixedMean
+public import PaperP1.Analysis.AmplificationBudgetBound
