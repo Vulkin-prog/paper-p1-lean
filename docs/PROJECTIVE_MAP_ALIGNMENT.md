@@ -1,6 +1,17 @@
 # Actual projective scheme map
 
-Current checkpoint P1-MATH-0980: One fixed Gaussian parameter makes
+Current checkpoint P1-MATH-0981: Almost every actual logarithmic window
+contains two ordinary N-to-a smooth integers. The actual almost-all
+ordinary smooth logarithmic-window census is proved. Its transfer to the
+source census interface and unconditional printed T19.17 obstructions
+still need assembly. The stronger uniform sharp short-average theorem
+for all real completely multiplicative functions is not established.
+T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 51.95 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0980: One fixed Gaussian parameter makes
 every actual bad logarithmic window uniformly small. The actual off-
 central estimate, the ordinary smooth long-interval mean comparison and
 the uniform Gaussian mean-square comparison are proved. Localization of
@@ -28864,3 +28875,12 @@ One theorem proves that for every epsilon>0, one actual D>0 and one integer cuto
 The actual off-central estimate, the ordinary smooth long-interval mean comparison and the uniform Gaussian mean-square comparison are proved. Localization of the Gaussian averages to the literal logarithmic windows remains unproved, so T19.17 stays conditional. The stronger uniform sharp short-average theorem for all real completely multiplicative functions is not established. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.97 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18527 jobs); direct axiom audit passed for 19278 declarations using only propext, Classical.choice and Quot.sound; all 19595 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.96 GiB.
+
+
+## Almost every actual logarithmic window contains two ordinary N-to-a smooth integers
+
+Two theorems and two definitions prove the actual finite boundary ledger and the genuine unconditional almost-all census. For every a>0 and tau>0, one integer cutoff precedes all N and the actual [N,2N) population of windows of exact length floor(log(N)/(4*log(2))) containing at most one ordinary floor(N^a)-smooth integer has cardinal at most tau*N. The proof combines the proved actual long Gaussian lower bound, the fixed-parameter short Gaussian bad-window upper bound, the actual complete-multiplicative Gaussian comparison, disjoint-cell square budgets and the exact at-most-windowLength boundary loss. No census, concentration or short-average estimate occurs as a premise.
+
+The actual almost-all ordinary smooth logarithmic-window census is proved. Its transfer to the source census interface and unconditional printed T19.17 obstructions still need assembly. The stronger uniform sharp short-average theorem for all real completely multiplicative functions is not established. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.95 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18529 jobs); direct axiom audit passed for 19280 declarations using only propext, Classical.choice and Quot.sound; all 19599 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.94 GiB.

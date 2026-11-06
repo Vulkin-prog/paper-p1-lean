@@ -42020,6 +42020,36 @@
         "status": "not_integrated"
       },
       "validation_commit": "a55a510b92edb49ac538903cd3edc5015dd7fb1a"
+    },
+    {
+      "id": "P1-MATH-0981",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The remaining original T19.17 proof required an independent almost-all logarithmic-window smooth census. This actual specialized census is now internally proved; the stronger general real sharp short-average theorem and Dickman asymptotic are not asserted.",
+      "finding": "Two theorems and two definitions prove the actual finite boundary ledger and the genuine unconditional almost-all census. For every a>0 and tau>0, one integer cutoff precedes all N and the actual [N,2N) population of windows of exact length floor(log(N)/(4*log(2))) containing at most one ordinary floor(N^a)-smooth integer has cardinal at most tau*N. The proof combines the proved actual long Gaussian lower bound, the fixed-parameter short Gaussian bad-window upper bound, the actual complete-multiplicative Gaussian comparison, disjoint-cell square budgets and the exact at-most-windowLength boundary loss. No census, concentration or short-average estimate occurs as a premise.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Almost every actual logarithmic window contains two ordinary N-to-a smooth integers. The actual almost-all ordinary smooth logarithmic-window census is proved. Its transfer to the source census interface and unconditional printed T19.17 obstructions still need assembly. The stronger uniform sharp short-average theorem for all real completely multiplicative functions is not established.",
+      "evidence": [
+        "PaperP1.SmoothLogarithmicWindowDensity.boundary_bound",
+        "PaperP1.SmoothLogarithmicWindowDensity.uniform_bound",
+        "PaperP1.SmoothLogarithmicWindowDensity.badWindows",
+        "PaperP1.SmoothLogarithmicWindowDensity.interiorBad"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18529 jobs); direct axiom audit passed for 19280 declarations using only propext, Classical.choice and Quot.sound; all 19599 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.94 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

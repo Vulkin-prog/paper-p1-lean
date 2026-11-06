@@ -4920,3 +4920,4 @@ public import PaperP1.Analysis.SmoothLongGaussianLower
 public import PaperP1.Analysis.SmoothGaussianWindowUpper
 public import PaperP1.Analysis.LogarithmicGaussianWindowScales
 public import PaperP1.Analysis.UniformSmoothGaussianWindowUpper
+public import PaperP1.Analysis.SmoothLogarithmicWindowDensity
