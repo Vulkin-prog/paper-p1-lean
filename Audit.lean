@@ -444,6 +444,9 @@ import PaperP1
 #print axioms PaperP1.AffineQuotientChartComparison.combinedEquiv_mk
 #print axioms PaperP1.AffineQuotientChartComparison.quotientEquiv_mk
 #print axioms PaperP1.AffineQuotientChartComparison.chartEquiv_dehomogenization
+#print axioms PaperP1.AffineSurfaceDeterminant.nilpotent_dvd
+#print axioms PaperP1.AffineSurfaceDeterminant.integer_dvd_last
+#print axioms PaperP1.AffineSurfaceDeterminant.integer_dvd
 #print axioms PaperP1.AllPairPolynomialExpansion.complement_generator
 #print axioms PaperP1.AllPairPolynomialExpansion.source_expansion
 #print axioms PaperP1.AllPairPolynomialExpansion.all_pair_expansion
@@ -831,6 +834,9 @@ import PaperP1
 #print axioms PaperP1.CoordinateRestrictionRank.zeroed_empty
 #print axioms PaperP1.CoordinateRestrictionRank.zeroed_rank_le
 #print axioms PaperP1.CoordinateRestrictionRank.cover_cost
+#print axioms PaperP1.CoordinateSwapEvaluation.evaluation
+#print axioms PaperP1.CoordinateSwapEvaluation.pderiv_swap
+#print axioms PaperP1.CoordinateSwapEvaluation.evaluation_partial
 #print axioms PaperP1.CountingWeightBudget.one_weight
 #print axioms PaperP1.CountingWeightBudget.layer_budget
 #print axioms PaperP1.CurveComponentBarrier.evaluation
@@ -1625,6 +1631,8 @@ import PaperP1
 #print axioms PaperP1.IteratedPowerSeriesEquiv.toIterated_monomial
 #print axioms PaperP1.IteratedPowerSeriesEquiv.toIterated_mul
 #print axioms PaperP1.IteratedPowerSeriesEquiv.coefficient_fromIterated
+#print axioms PaperP1.LastChartPolynomial.evaluation
+#print axioms PaperP1.LastChartPolynomial.pderiv
 #print axioms PaperP1.LinearBivariateCoefficients.degreeX_le_of_coeff_bound
 #print axioms PaperP1.LinearBivariateCoefficients.degreeX_eq_max_coefficients
 #print axioms PaperP1.LinearBivariateCoefficients.linear_coefficients_relprime
@@ -1741,6 +1749,8 @@ import PaperP1
 #print axioms PaperP1.NilpotentSimpleRoot.exists_root
 #print axioms PaperP1.NilpotentSimpleRoot.unique_root
 #print axioms PaperP1.NonnegativePowerDifference.bound
+#print axioms PaperP1.NormalizedP3SurfaceDeterminant.free_partial
+#print axioms PaperP1.NormalizedP3SurfaceDeterminant.integer_dvd
 #print axioms PaperP1.OddDegreeFieldSquares.two_dvd_degree
 #print axioms PaperP1.OddDegreeFieldSquares.isSquare_iff
 #print axioms PaperP1.OddDegreeFieldSquares.quadratic_descent
@@ -2524,6 +2534,8 @@ import PaperP1
 #print axioms PaperP1.SurfaceEvaluationDeterminantDivisibility.bivariate_dvd
 #print axioms PaperP1.SurfaceEvaluationDeterminantDivisibility.monomial_dvd
 #print axioms PaperP1.SurfaceEvaluationDeterminantDivisibility.congruent_monomial_dvd
+#print axioms PaperP1.TernaryMvPolynomialEvaluation.evaluation
+#print axioms PaperP1.TernaryMvPolynomialEvaluation.derivative
 #print axioms PaperP1.TernaryNilpotentImplicitFunction.local_evaluation_mod
 #print axioms PaperP1.TernaryNilpotentImplicitFunction.local_derivative_mod
 #print axioms PaperP1.TernaryNilpotentImplicitFunction.exists_local_branch

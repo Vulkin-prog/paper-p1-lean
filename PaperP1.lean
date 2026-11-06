@@ -4302,3 +4302,8 @@ public import PaperP1.Algebra.SmoothSurfaceDeterminant
 public import PaperP1.Algebra.TernaryNilpotentImplicitFunction
 public import PaperP1.Algebra.TernaryPolynomialEvaluation
 public import PaperP1.Arithmetic.SmoothIntegerSurfaceBranch
+public import PaperP1.Algebra.AffineSurfaceDeterminant
+public import PaperP1.Algebra.CoordinateSwapEvaluation
+public import PaperP1.Algebra.LastChartPolynomial
+public import PaperP1.Algebra.NormalizedP3SurfaceDeterminant
+public import PaperP1.Algebra.TernaryMvPolynomialEvaluation

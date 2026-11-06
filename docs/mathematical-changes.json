@@ -28195,6 +28195,46 @@
         "status": "not_integrated"
       },
       "validation_commit": "2e3f3a8cb2b97a8c0568bd71ece40d98a15d4424"
+    },
+    {
+      "id": "P1-MATH-0591",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The smooth local determinant theorem must be transported to the manuscript's original multivariable equations and X3=1 integer chart, allowing an arbitrary nonzero gradient coordinate without introducing an unnecessary exclusion of primes dividing the degree.",
+      "finding": "Actual polynomial evaluation and partial derivatives commute with the constructed conversion, coordinate transposition and last-chart dehomogenization. Euler's identity supplies a free-coordinate nonzero derivative without dividing by the degree, yielding the exact local divisor on the original P3 point matrix.",
+      "proposed_revision": "Apply the local determinant theorem directly to the original normalized integer coordinates through the proved coordinate homomorphisms, and use Euler's identity in its multiplicative form rather than dividing by d.",
+      "impact": "Discharges affine orientation and normalized P3 coordinate transport for actual smooth residue-class determinants, with no spurious p not dividing d hypothesis.",
+      "evidence": [
+        "PaperP1.AffineSurfaceDeterminant.nilpotent_dvd",
+        "PaperP1.AffineSurfaceDeterminant.integer_dvd_last",
+        "PaperP1.AffineSurfaceDeterminant.integer_dvd",
+        "PaperP1.CoordinateSwapEvaluation.evaluation",
+        "PaperP1.CoordinateSwapEvaluation.pderiv_swap",
+        "PaperP1.CoordinateSwapEvaluation.evaluation_partial",
+        "PaperP1.LastChartPolynomial.evaluation",
+        "PaperP1.LastChartPolynomial.pderiv",
+        "PaperP1.NormalizedP3SurfaceDeterminant.free_partial",
+        "PaperP1.NormalizedP3SurfaceDeterminant.integer_dvd",
+        "PaperP1.TernaryMvPolynomialEvaluation.evaluation",
+        "PaperP1.TernaryMvPolynomialEvaluation.derivative",
+        "PaperP1.LastChartPolynomial.dehomogenize",
+        "PaperP1.TernaryMvPolynomialEvaluation.iterated"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17267 jobs); direct axiom audit passed for 16614 declarations using only propext, Classical.choice and Quot.sound; all 16314 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.08 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
