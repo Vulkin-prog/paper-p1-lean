@@ -1,6 +1,15 @@
 # Mathematical corrections and improvements
 
-Current checkpoint P1-MATH-0925: The actual lognormal Selberg kernel has
+Current checkpoint P1-MATH-0926: The actual smoothed Selberg kernel is
+an absolutely convergent series with nonnegative integer weights. The
+triple-large prime frequency contribution, the central-frequency mean
+comparison and complete logarithmic short-average concentration remain
+unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164
+proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources,
+false-scope corrections, compiler and axioms unchanged. About 53.02 GiB
+free on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0925: The actual lognormal Selberg kernel has
 exact Gaussian main mass and uniform near and far errors. The triple-
 large prime frequency contribution, the central-frequency mean
 comparison and complete logarithmic short-average concentration remain
@@ -3094,7 +3103,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**923 mathematical improvements and two statement-scope corrections are confirmed.**
+**924 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -34509,3 +34518,12 @@ Four theorems and one definition form the actual finite combination of positive-
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.02 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18417 jobs); direct axiom audit passed for 19057 declarations using only propext, Classical.choice and Quot.sound; all 19327 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.01 GiB.
+
+
+## The actual smoothed Selberg kernel is an absolutely convergent series with nonnegative integer weights
+
+Nine theorems and two definitions prove an exact injective positive-multiple reindexing, its precise divisibility range, the actual divisibility-filtered series sum, the literal term expansion and the full finite/infinite sum interchange. The actual divisor weight is nonnegative at EVERY integer and exactly one at primes p>Z. The resulting absolutely convergent weighted integer series equals the actual Selberg kernel, with the positive-integer indexing and all multiplicities retained. No positivity of a signed finite combination is assumed.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.02 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18419 jobs); direct axiom audit passed for 19066 declarations using only propext, Classical.choice and Quot.sound; all 19338 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.99 GiB.

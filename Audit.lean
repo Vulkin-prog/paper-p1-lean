@@ -4855,6 +4855,15 @@ import PaperP1
 #print axioms PaperP1.PositiveReciprocalKernel.inverse_first_hasDerivAt
 #print axioms PaperP1.PositiveReciprocalKernel.inverse_derivative_nonneg
 #print axioms PaperP1.PositiveReciprocalKernel.inverse_integral
+#print axioms PaperP1.PositiveSelbergSeries.index_injective
+#print axioms PaperP1.PositiveSelbergSeries.range_iff
+#print axioms PaperP1.PositiveSelbergSeries.multiple_hasSum
+#print axioms PaperP1.PositiveSelbergSeries.weight_nonneg
+#print axioms PaperP1.PositiveSelbergSeries.weight_prime
+#print axioms PaperP1.PositiveSelbergSeries.term_identity
+#print axioms PaperP1.PositiveSelbergSeries.weighted_hasSum
+#print axioms PaperP1.PositiveSelbergSeries.summable_terms
+#print axioms PaperP1.PositiveSelbergSeries.value_identity
 #print axioms PaperP1.PositiveZetaBound.total_bound
 #print axioms PaperP1.PositiveZetaBound.norm_bound
 #print axioms PaperP1.PositiveZetaBound.logarithmic_norm_bound
