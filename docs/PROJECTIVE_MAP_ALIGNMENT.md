@@ -1,6 +1,14 @@
 # Actual projective scheme map
 
-Current checkpoint P1-MATH-0775: Actual presence weighted narrow
+Current checkpoint P1-MATH-0776: Actual narrow cofactor mean square has
+an explicit short height bound. The actual Ramare main-term frequency
+bounds and complete logarithmic short-average concentration remain
+unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164
+proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources,
+false-scope corrections, compiler and axioms unchanged. About 52.9 GiB
+free on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0775: Actual presence weighted narrow
 cofactor polynomials obey a uniform sparse frequency mean value. The
 actual Ramare main-term frequency bounds and complete logarithmic short-
 average concentration remain unproved. T19.17 conditional; original T1.7
@@ -25072,3 +25080,12 @@ One X0 precedes ALL X>=X0, ALL band anchors<=X^(1/16), ALL finite unit-separated
 The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18117 jobs); direct axiom audit passed for 18484 declarations using only propext, Classical.choice and Quot.sound; all 18653 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.58 GiB.
+
+
+## Actual narrow cofactor mean square has an explicit short height bound
+
+For X>0, every actual narrow cofactor polynomial with unit-bounded original coefficient has mean square on [-T,T] <=C*(T*anchor/X+1), with C=exp(1)*(sqrt(pi)+4*pi) and EVERY T>0. The proof keeps ceil(X/anchor), uses its exact reciprocal comparison and the actual weighted coefficient bound. In particular, if anchor<=h and 0<T<=X/h, its ACTUAL mean square is <=2*C, uniformly in the band and both finite supports. Two theorems prove the ordinary mean-value ingredient for the small-prime-polynomial frequency region.
+
+The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18119 jobs); direct axiom audit passed for 18486 declarations using only propext, Classical.choice and Quot.sound; all 18655 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.56 GiB.

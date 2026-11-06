@@ -35543,6 +35543,34 @@
         "status": "not_integrated"
       },
       "validation_commit": "3749b015cee04e83575ad3200424f558d036da63"
+    },
+    {
+      "id": "P1-MATH-0776",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "For logarithmic short windows the frequency height is X/h; the factor T*anchor/X must be retained to obtain a uniform cofactor bound when anchor<=h.",
+      "finding": "For X>0, every actual narrow cofactor polynomial with unit-bounded original coefficient has mean square on [-T,T] <=C*(T*anchor/X+1), with C=exp(1)*(sqrt(pi)+4*pi) and EVERY T>0. The proof keeps ceil(X/anchor), uses its exact reciprocal comparison and the actual weighted coefficient bound. In particular, if anchor<=h and 0<T<=X/h, its ACTUAL mean square is <=2*C, uniformly in the band and both finite supports. Two theorems prove the ordinary mean-value ingredient for the small-prime-polynomial frequency region.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Actual narrow cofactor mean square has an explicit short height bound. The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.NarrowCofactorMeanValue.quantitative_bound",
+        "PaperP1.NarrowCofactorMeanValue.short_height_bound"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18119 jobs); direct axiom audit passed for 18486 declarations using only propext, Classical.choice and Quot.sound; all 18655 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.56 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

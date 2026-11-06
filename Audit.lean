@@ -4296,6 +4296,8 @@ import PaperP1
 #print axioms PaperP1.NarrowBoundaryMeanValue.boundary_card_normalized
 #print axioms PaperP1.NarrowBoundaryMeanValue.support_square_budget
 #print axioms PaperP1.NarrowBoundaryMeanValue.supported_uniform_bound
+#print axioms PaperP1.NarrowCofactorMeanValue.quantitative_bound
+#print axioms PaperP1.NarrowCofactorMeanValue.short_height_bound
 #print axioms PaperP1.NarrowCofactorRegime.length_regime
 #print axioms PaperP1.NarrowCofactorRegime.cofactor_regime
 #print axioms PaperP1.NarrowCofactorRegime.cofactor_subset_dyadic
