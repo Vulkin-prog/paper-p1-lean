@@ -4926,6 +4926,16 @@ import PaperP1
 #print axioms PaperP1.TrivialTripleBand.band_norm_bound
 #print axioms PaperP1.TruncatedAffineDegree.budget
 #print axioms PaperP1.TruncatedAffineDegree.prime_scale
+#print axioms PaperP1.TwoPrimeBandPopulation.good_subset
+#print axioms PaperP1.TwoPrimeBandPopulation.good_support
+#print axioms PaperP1.TwoPrimeBandPopulation.missing_good_density_tendsto
+#print axioms PaperP1.TwoPrimeBandPopulation.separation_eventually
+#print axioms PaperP1.TwoPrimeBandPopulation.disjoint_eventually
+#print axioms PaperP1.TwoPrimeBandPopulation.first_subset_slow_eventually
+#print axioms PaperP1.TwoPrimeBandPopulation.first_below_polynomial_eventually
+#print axioms PaperP1.TwoPrimeBandPopulation.second_below_polynomial_eventually
+#print axioms PaperP1.TwoPrimeBandPopulation.first_ramare_sum
+#print axioms PaperP1.TwoPrimeBandPopulation.second_ramare_sum
 #print axioms PaperP1.UniformBinaryLogBudget.monotone
 #print axioms PaperP1.UniformBinaryLogBudget.absorption
 #print axioms PaperP1.UniformSaddleVariation.uniform_left_variation

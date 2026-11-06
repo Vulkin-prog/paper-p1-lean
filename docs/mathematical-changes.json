@@ -34173,6 +34173,45 @@
         "status": "not_integrated"
       },
       "validation_commit": "cde185bb07ed2f09c9f5690ee6c0394e4458be48"
+    },
+    {
+      "id": "P1-MATH-0734",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "Independent bands must be applied to the SAME actual population, and a zero-density loss must be transferred to the actual Dirichlet mean square before estimating quotient main terms.",
+      "finding": "The actual good population is the intersection of the two literal sieve-good subsets of [N,2N), with first prime band ((loglog(N))^1000,log(N)] and second band (exp((loglog(N))^2),exp((loglog(N))^3)]. Its missing population has density zero. Every member has a prime divisor in EACH band and no square divisor from EITHER band. The bands are eventually separated and disjoint, and all their primes lie below floor(N^a) eventually for EVERY fixed a>0. BOTH actual finite Ramare identities are proved on this SAME population, with the respective literal count denominator and full coefficient multiplicativity explicit.",
+      "proposed_revision": "Use the literal simultaneous finite population, exact Ramare formulas and uniform negligible difference. Do not treat the main quotient frequency estimates as proved.",
+      "impact": "One actual dense population supports both separated prime-band Ramare identities. The actual quotient main terms and short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.TwoPrimeBandPopulation.good_subset",
+        "PaperP1.TwoPrimeBandPopulation.good_support",
+        "PaperP1.TwoPrimeBandPopulation.missing_good_density_tendsto",
+        "PaperP1.TwoPrimeBandPopulation.separation_eventually",
+        "PaperP1.TwoPrimeBandPopulation.disjoint_eventually",
+        "PaperP1.TwoPrimeBandPopulation.first_subset_slow_eventually",
+        "PaperP1.TwoPrimeBandPopulation.first_below_polynomial_eventually",
+        "PaperP1.TwoPrimeBandPopulation.second_below_polynomial_eventually",
+        "PaperP1.TwoPrimeBandPopulation.first_ramare_sum",
+        "PaperP1.TwoPrimeBandPopulation.second_ramare_sum",
+        "PaperP1.TwoPrimeBandPopulation.first",
+        "PaperP1.TwoPrimeBandPopulation.second",
+        "PaperP1.TwoPrimeBandPopulation.good"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18035 jobs); direct axiom audit passed for 18300 declarations using only propext, Classical.choice and Quot.sound; all 18430 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.31 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

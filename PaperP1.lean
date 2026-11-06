@@ -4673,3 +4673,4 @@ public import PaperP1.Analysis.CountWeightedSum
 public import PaperP1.Analysis.FlexiblePrimeBandSieve
 public import PaperP1.Analysis.PowerLogPrimeBand
 public import PaperP1.Analysis.ExpLogPrimeBand
+public import PaperP1.Analysis.TwoPrimeBandPopulation
