@@ -38519,6 +38519,40 @@
         "status": "not_integrated"
       },
       "validation_commit": "bf8a29675b4ef294599890a028424fd4b070568d"
+    },
+    {
+      "id": "P1-MATH-0871",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "A sum-integral error proportional to M-N cannot control an infinite tail; an endpoint-independent error is required.",
+      "finding": "Eight theorems prove the exact derivative of the actual damped integrand and compare EVERY finite sum over Ico N M with its literal integral, for 0<N<=M and sigma>=0. The norm of the difference is <=2*(1+sigma+|t|)*N^(-sigma)/N, independently of M. For t nonzero, the sum norm is <=2*N^(-sigma)/|t| plus that error. The proof sums actual unit-cell errors and uses a proved reciprocal-square tail, rather than paying the interval length.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Actual damped sums admit an endpoint-independent sum-integral comparison. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.DampedLogarithmicQuadrature.denominator_norm_upper",
+        "PaperP1.DampedLogarithmicQuadrature.hasDerivAt_integrand",
+        "PaperP1.DampedLogarithmicQuadrature.derivative_norm_bound",
+        "PaperP1.DampedLogarithmicQuadrature.derivative_uniform_bound",
+        "PaperP1.DampedLogarithmicQuadrature.local_variation",
+        "PaperP1.DampedLogarithmicQuadrature.unit_integral_error",
+        "PaperP1.DampedLogarithmicQuadrature.finite_sum_integral_error",
+        "PaperP1.DampedLogarithmicQuadrature.finite_sum_norm_bound"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18309 jobs); direct axiom audit passed for 18840 declarations using only propext, Classical.choice and Quot.sound; all 19072 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.99 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

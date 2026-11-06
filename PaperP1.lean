@@ -4810,3 +4810,4 @@ public import PaperP1.Analysis.PolynomialPartialCancellation
 public import PaperP1.Analysis.PolynomialWeightedCancellation
 public import PaperP1.Analysis.PolynomialDampedCancellation
 public import PaperP1.Analysis.DampedLogarithmicIntegral
+public import PaperP1.Analysis.DampedLogarithmicQuadrature

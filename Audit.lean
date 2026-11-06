@@ -3632,6 +3632,14 @@ import PaperP1
 #print axioms PaperP1.DampedLogarithmicIntegral.continuousOn_integrand
 #print axioms PaperP1.DampedLogarithmicIntegral.integral_identity
 #print axioms PaperP1.DampedLogarithmicIntegral.integral_norm_bound
+#print axioms PaperP1.DampedLogarithmicQuadrature.denominator_norm_upper
+#print axioms PaperP1.DampedLogarithmicQuadrature.hasDerivAt_integrand
+#print axioms PaperP1.DampedLogarithmicQuadrature.derivative_norm_bound
+#print axioms PaperP1.DampedLogarithmicQuadrature.derivative_uniform_bound
+#print axioms PaperP1.DampedLogarithmicQuadrature.local_variation
+#print axioms PaperP1.DampedLogarithmicQuadrature.unit_integral_error
+#print axioms PaperP1.DampedLogarithmicQuadrature.finite_sum_integral_error
+#print axioms PaperP1.DampedLogarithmicQuadrature.finite_sum_norm_bound
 #print axioms PaperP1.DeterminantBoxScales.coordinate_bounds
 #print axioms PaperP1.DeterminantBoxScales.log_DE_upper
 #print axioms PaperP1.DeterminantBoxScales.uniform_base_logs

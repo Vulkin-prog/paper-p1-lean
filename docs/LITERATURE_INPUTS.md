@@ -1,6 +1,15 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0870: The damped logarithmic integral has an
+Current checkpoint P1-MATH-0871: Actual damped sums admit an endpoint-
+independent sum-integral comparison. The triple-large prime frequency
+contribution, the central-frequency mean comparison and complete
+logarithmic short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 53.99 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0870: The damped logarithmic integral has an
 exact primitive and an explicit frequency bound. The triple-large prime
 frequency contribution, the central-frequency mean comparison and
 complete logarithmic short-average concentration remain unproved. T19.17
@@ -33674,6 +33683,12 @@ Eight theorems and three definitions prove the actual damped phase numerator x^(
 
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
 
+## Internal actual damped sums admit an endpoint-independent sum-integral comparison
+
+Eight theorems prove the exact derivative of the actual damped integrand and compare EVERY finite sum over Ico N M with its literal integral, for 0<N<=M and sigma>=0. The norm of the difference is <=2*(1+sigma+|t|)*N^(-sigma)/N, independently of M. For t nonzero, the sum norm is <=2*N^(-sigma)/|t| plus that error. The proof sums actual unit-cell errors and uses a proved reciprocal-square tail, rather than paying the interval length.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -37680,3 +37695,14 @@ Eight theorems and three definitions prove the actual damped phase numerator x^(
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 54.03 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18307 jobs); direct axiom audit passed for 18832 declarations using only propext, Classical.choice and Quot.sound; all 19064 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.01 GiB.
+
+
+## Actual damped sums admit an endpoint-independent sum-integral comparison
+
+Stable ID: p1:internal:damped-logarithmic-quadrature. Actual damped sums admit an endpoint-independent sum-integral comparison. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
+
+Eight theorems prove the exact derivative of the actual damped integrand and compare EVERY finite sum over Ico N M with its literal integral, for 0<N<=M and sigma>=0. The norm of the difference is <=2*(1+sigma+|t|)*N^(-sigma)/N, independently of M. For t nonzero, the sum norm is <=2*N^(-sigma)/|t| plus that error. The proof sums actual unit-cell errors and uses a proved reciprocal-square tail, rather than paying the interval length.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.99 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18309 jobs); direct axiom audit passed for 18840 declarations using only propext, Classical.choice and Quot.sound; all 19072 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.99 GiB.
