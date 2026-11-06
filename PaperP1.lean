@@ -4501,3 +4501,6 @@ public import PaperP1.Algebra.HyperellipticOddDegreeNorm
 public import PaperP1.Algebra.HyperellipticPolynomialAlgebra
 public import PaperP1.Algebra.HyperellipticTangentDerivation
 public import PaperP1.Algebra.PolynomialCommonRootFactor
+public import PaperP1.Arithmetic.FiniteFieldPolynomialMultiplicityCount
+public import PaperP1.Arithmetic.HyperellipticFiniteFieldPoints
+public import PaperP1.Arithmetic.HyperellipticStepanovPointBound

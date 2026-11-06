@@ -5504,6 +5504,7 @@ import PaperP1
 #print axioms PaperP1.FiniteEvenSquareClasses.coefficient_zero
 #print axioms PaperP1.FiniteEvenSquareClasses.combination_injective
 #print axioms PaperP1.FiniteEvenSquareClasses.finrank_space
+#print axioms PaperP1.FiniteFieldPolynomialMultiplicityCount.cardinality
 #print axioms PaperP1.FiniteIndexIntegralCurveCount.population_bound
 #print axioms PaperP1.FiniteNormalizationIntegerCount.exists_primitive_count
 #print axioms PaperP1.FiniteResidualRank.kernel_le_rows
@@ -5679,6 +5680,14 @@ import PaperP1
 #print axioms PaperP1.HeightFiveChannelCorrection.correction_closed
 #print axioms PaperP1.HeightSensitiveAffineParameters.obstruction_nat
 #print axioms PaperP1.HeightSensitiveAffineParameters.obstruction_real
+#print axioms PaperP1.HyperellipticFiniteFieldPoints.mem_points
+#print axioms PaperP1.HyperellipticFiniteFieldPoints.character_cardinality
+#print axioms PaperP1.HyperellipticFiniteFieldPoints.cardinality_decomposition
+#print axioms PaperP1.HyperellipticFiniteFieldPoints.branch_card_le
+#print axioms PaperP1.HyperellipticFiniteFieldPoints.good_root
+#print axioms PaperP1.HyperellipticStepanovPointBound.good_cardinality_bound
+#print axioms PaperP1.HyperellipticStepanovPointBound.multiplicative_bound
+#print axioms PaperP1.HyperellipticStepanovPointBound.upper_bound
 #print axioms PaperP1.IndexedPrimeOffsets.indexEquiv_val
 #print axioms PaperP1.IndexedPrimeOffsets.indexEquiv_symm_val
 #print axioms PaperP1.IndexedPrimeOffsets.primeSet_prod

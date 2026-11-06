@@ -29960,6 +29960,44 @@
         "status": "not_integrated"
       },
       "validation_commit": "633d3d77caf7cd4b912b7b266d440cce05230fdd"
+    },
+    {
+      "id": "P1-MATH-0625",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The doubled norm multiplicity argument still needed a complete passage to the literal curve point count, including all branch points and finite root-count multiplicities.",
+      "finding": "The actual curve count has exact decomposition N=2*good+branch and character formula q+sum chi(f). An actual nonzero tangent auxiliary yields the checked bound m*N<=degree(norm)+m*degree(f), hence N<=L/m+degree(f).",
+      "proposed_revision": "State the exact branch-inclusive point decomposition and the proved multiplicity-to-count assembly. Keep auxiliary existence separate; do not supply the final point estimate as an auxiliary premise.",
+      "impact": "Completes the actual point-count consequence of a valid auxiliary. Its construction, general character cancellation and projected-surface transfer remain unproved; canonical dependencies and coverage do not change.",
+      "evidence": [
+        "PaperP1.FiniteFieldPolynomialMultiplicityCount.cardinality",
+        "PaperP1.HyperellipticFiniteFieldPoints.mem_points",
+        "PaperP1.HyperellipticFiniteFieldPoints.character_cardinality",
+        "PaperP1.HyperellipticFiniteFieldPoints.cardinality_decomposition",
+        "PaperP1.HyperellipticFiniteFieldPoints.branch_card_le",
+        "PaperP1.HyperellipticFiniteFieldPoints.good_root",
+        "PaperP1.HyperellipticStepanovPointBound.good_cardinality_bound",
+        "PaperP1.HyperellipticStepanovPointBound.multiplicative_bound",
+        "PaperP1.HyperellipticStepanovPointBound.upper_bound",
+        "PaperP1.HyperellipticFiniteFieldPoints.points",
+        "PaperP1.HyperellipticFiniteFieldPoints.goodX",
+        "PaperP1.HyperellipticFiniteFieldPoints.branchX"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17691 jobs); direct axiom audit passed for 17293 declarations using only propext, Classical.choice and Quot.sound; all 17159 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.34 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

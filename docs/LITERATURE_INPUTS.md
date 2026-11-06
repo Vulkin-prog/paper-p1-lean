@@ -1,6 +1,17 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0624: actual polynomial functions on Y^2=f(X),
+Current checkpoint P1-MATH-0625: the ACTUAL finite quadratic-curve point
+count has exact formulas N=q+sum chi(f) and N=2*good+branch. Actual branch
+points are bounded by degree(f). A literal nonzero tangent auxiliary gives
+the PROVED bound m*N<=degree(norm)+m*degree(f), hence N<=L/m+degree(f)
+when m>0 and its norm degree<=L. All points and multiplicities are actual.
+The required auxiliary's EXISTENCE remains UNPROVED; no complete general
+point estimate, character cancellation or projected-P3 transfer is claimed.
+Canonical T1.7 retains ONLY its prior finite-field surface input in actual
+degrees>2 at the original families/caps. Coverage stays163 proved,2 conditional,
+2 in_progress out of167; all73 main results proved. No Palomar registration.
+
+Historical checkpoint P1-MATH-0624: actual polynomial functions on Y^2=f(X),
 their literal point evaluations and the tangent derivation are constructed.
 Odd degree proves norm(z)!=0 for every nonzero function, with exact norm
 degree formulas. Vanishing tangent iterates at BOTH signs of a nonzero-y
@@ -29539,6 +29550,15 @@ nonzero-y restrictions explicit. Auxiliary existence, a complete general
 point estimate and the source-to-projected-P3 transfer remain unproved.
 Canonical T1.7 inputs and coverage are unchanged.
 
+## Literal quadratic-curve bound from an actual auxiliary
+
+P1-MATH-0625 proves the actual point decomposition, including branch points,
+and the full point-count consequence m*N<=degree(norm)+m*degree(f) of a
+literal nonzero tangent auxiliary. Its actual nonzero property, degree and
+derivative vanishings are explicit; the point-count conclusion is not a
+premise. Auxiliary EXISTENCE remains unproved. No general cancellation or
+source-to-projected-P3 transfer is asserted. Canonical inputs are unchanged.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -30466,3 +30486,18 @@ PolynomialCommonRootFactor proves a literal common factorization of two polynomi
 Five modules add twenty-five theorems and three definitions. This proves the concrete quadratic-curve multiplicity mechanism and norm nonvanishing needed for the planned direct source count. No auxiliary-function existence, complete higher-degree point bound, general character cancellation or source-to-projected-P3 transfer is claimed. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original families/caps; its two-plane-input alternative remains conditional. Coverage stays163 proved,2 conditional,2 in_progress out of167, with all73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, allowed axioms and checking options are unchanged. Work remains on Ubuntu with about55.4GiB available and no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17685 jobs); direct axiom audit passed for 17284 declarations using only propext, Classical.choice and Quot.sound; all 17147 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.36 GiB.
+
+
+## Actual quadratic-curve point count from an explicit nonzero tangent auxiliary
+
+Stable ID: p1:internal:literal-quadratic-curve-stepanov-bound. The actual curve point bound is derived from a literal auxiliary function, its degree and tangent vanishings. Auxiliary existence remains unproved and canonical T1.7 is unchanged.
+
+HyperellipticFiniteFieldPoints defines the ACTUAL finite set of pairs(x,y) satisfying y^2=f(x), the actual nonzero-square x-values and the actual branch x-values f(x)=0. A literal fibre equivalence proves the exact character count q+sum chi(f(x)). The exact natural cardinality decomposition is N=2*card(goodX)+card(branchX). A nonzero polynomial has at most degree(f) actual branch points, and every good x has an actual nonzero square-root witness. Zero radicands and branch points are retained.
+
+FiniteFieldPolynomialMultiplicityCount proves that if each point of a finite set has actual polynomial rootMultiplicity at leastm, then m times its cardinality is at most the actual polynomial degree. It sums the literal root counts in the existing roots multiset, so no intersection or multiplicity-count conclusion is supplied as a premise.
+
+HyperellipticStepanovPointBound assembles the full LITERAL quadratic-curve point bound from an ACTUAL nonzero auxiliary element with tangent derivatives vanishing at the actual points. The previously proved doubled norm root multiplicities control all good x-values, and the exact decomposition handles the branch points separately. It proves m*N<=degree(norm(z))+m*degree(f), for odd original degree, odd finite-field characteristic and m<=p. For m>0 and a supplied actual norm-degree capL, it derives N<=L/m+degree(f). The premise is the actual auxiliary function with its nonzero property, degree cap and derivative vanishings, NOT the desired point-count conclusion.
+
+Three modules add nine theorems and three definitions. The EXISTENCE of the required auxiliary function is still UNPROVED. This point-count reduction does not assert a general higher-degree curve estimate, character cancellation or a source-to-projected-P3 transfer. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families/caps; its two-plane-input alternative is still conditional. Coverage stays163 proved,2 conditional,2 in_progress out of167, with all73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and allowed axioms are unchanged. All work remains on Ubuntu with about55.3GiB available, without dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17691 jobs); direct axiom audit passed for 17293 declarations using only propext, Classical.choice and Quot.sound; all 17159 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.34 GiB.

@@ -1,6 +1,17 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0624: actual polynomial functions on Y^2=f(X),
+Current checkpoint P1-MATH-0625: the ACTUAL finite quadratic-curve point
+count has exact formulas N=q+sum chi(f) and N=2*good+branch. Actual branch
+points are bounded by degree(f). A literal nonzero tangent auxiliary gives
+the PROVED bound m*N<=degree(norm)+m*degree(f), hence N<=L/m+degree(f)
+when m>0 and its norm degree<=L. All points and multiplicities are actual.
+The required auxiliary's EXISTENCE remains UNPROVED; no complete general
+point estimate, character cancellation or projected-P3 transfer is claimed.
+Canonical T1.7 retains ONLY its prior finite-field surface input in actual
+degrees>2 at the original families/caps. Coverage stays163 proved,2 conditional,
+2 in_progress out of167; all73 main results proved. No Palomar registration.
+
+Historical checkpoint P1-MATH-0624: actual polynomial functions on Y^2=f(X),
 their literal point evaluations and the tangent derivation are constructed.
 Odd degree proves norm(z)!=0 for every nonzero function, with exact norm
 degree formulas. Vanishing tangent iterates at BOTH signs of a nonzero-y
@@ -392,7 +403,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records622 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records623 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -511,7 +522,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **17284 audited theorem/lemma declarations**. This
+- The project currently has **17293 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -29498,3 +29509,16 @@ PolynomialCommonRootFactor proves a literal common factorization of two polynomi
 Five modules add twenty-five theorems and three definitions. This proves the concrete quadratic-curve multiplicity mechanism and norm nonvanishing needed for the planned direct source count. No auxiliary-function existence, complete higher-degree point bound, general character cancellation or source-to-projected-P3 transfer is claimed. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original families/caps; its two-plane-input alternative remains conditional. Coverage stays163 proved,2 conditional,2 in_progress out of167, with all73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, allowed axioms and checking options are unchanged. Work remains on Ubuntu with about55.4GiB available and no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17685 jobs); direct axiom audit passed for 17284 declarations using only propext, Classical.choice and Quot.sound; all 17147 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.36 GiB.
+
+
+## Actual quadratic-curve point count from an explicit nonzero tangent auxiliary
+
+HyperellipticFiniteFieldPoints defines the ACTUAL finite set of pairs(x,y) satisfying y^2=f(x), the actual nonzero-square x-values and the actual branch x-values f(x)=0. A literal fibre equivalence proves the exact character count q+sum chi(f(x)). The exact natural cardinality decomposition is N=2*card(goodX)+card(branchX). A nonzero polynomial has at most degree(f) actual branch points, and every good x has an actual nonzero square-root witness. Zero radicands and branch points are retained.
+
+FiniteFieldPolynomialMultiplicityCount proves that if each point of a finite set has actual polynomial rootMultiplicity at leastm, then m times its cardinality is at most the actual polynomial degree. It sums the literal root counts in the existing roots multiset, so no intersection or multiplicity-count conclusion is supplied as a premise.
+
+HyperellipticStepanovPointBound assembles the full LITERAL quadratic-curve point bound from an ACTUAL nonzero auxiliary element with tangent derivatives vanishing at the actual points. The previously proved doubled norm root multiplicities control all good x-values, and the exact decomposition handles the branch points separately. It proves m*N<=degree(norm(z))+m*degree(f), for odd original degree, odd finite-field characteristic and m<=p. For m>0 and a supplied actual norm-degree capL, it derives N<=L/m+degree(f). The premise is the actual auxiliary function with its nonzero property, degree cap and derivative vanishings, NOT the desired point-count conclusion.
+
+Three modules add nine theorems and three definitions. The EXISTENCE of the required auxiliary function is still UNPROVED. This point-count reduction does not assert a general higher-degree curve estimate, character cancellation or a source-to-projected-P3 transfer. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families/caps; its two-plane-input alternative is still conditional. Coverage stays163 proved,2 conditional,2 in_progress out of167, with all73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and allowed axioms are unchanged. All work remains on Ubuntu with about55.3GiB available, without dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17691 jobs); direct axiom audit passed for 17293 declarations using only propext, Classical.choice and Quot.sound; all 17159 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.34 GiB.
