@@ -32537,6 +32537,43 @@
         "status": "not_integrated"
       },
       "validation_commit": "eda7140b79f782bf2f65b9302100c47e2acfb07f"
+    },
+    {
+      "id": "P1-MATH-0689",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The actual local-square budget did not yet bound the product of the two prime factors in the analytic triple argument. Their reciprocal-logarithmic coefficient energy and complementary prime range need uniform quantitative bounds.",
+      "finding": "Actual interval Cauchy-Schwarz and the internal prime means bound the literal factor integral. Actual Mertens band masses control both energies and their product uniformly, yielding an explicit universal band constant times the square root of the actual frequency budget.",
+      "proposed_revision": "Use the checked literal band factor estimate, then prove the Perron connection to the triple sum and the relevant full Euler budget before asserting the final multiplicative or short-average conclusion.",
+      "impact": "Closes the analytic factor integral and uniform actual band energies. The Perron/triple connection, full Euler budget and T19.17 assembly remain unfinished.",
+      "evidence": [
+        "PaperP1.PrimeFactorCauchy.interval_cauchy",
+        "PaperP1.PrimeFactorCauchy.prime_factor_integral_bound",
+        "PaperP1.PrimeFactorCauchy.energy_bound",
+        "PaperP1.PrimeFactorCauchy.band_prime_mass",
+        "PaperP1.PrimeFactorCauchy.band_energy",
+        "PaperP1.PrimeFactorCauchy.second_energy",
+        "PaperP1.PrimeFactorCauchy.band_energy_product",
+        "PaperP1.PrimeFactorCauchy.bandConstant_pos",
+        "PaperP1.PrimeFactorCauchy.band_factor_integral_bound",
+        "PaperP1.PrimeFactorCauchy.bandCoefficient",
+        "PaperP1.PrimeFactorCauchy.bandConstant"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17945 jobs); direct axiom audit passed for 17963 declarations using only propext, Classical.choice and Quot.sound; all 18007 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.12 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

@@ -4126,6 +4126,15 @@ import PaperP1
 #print axioms PaperP1.PrimeBandDiscreteMoments.large_values_card
 #print axioms PaperP1.PrimeBandDiscreteMoments.reciprocal_sampled_estimates_eventually
 #print axioms PaperP1.PrimeEulerSaddleScale.exponent_bound
+#print axioms PaperP1.PrimeFactorCauchy.interval_cauchy
+#print axioms PaperP1.PrimeFactorCauchy.prime_factor_integral_bound
+#print axioms PaperP1.PrimeFactorCauchy.energy_bound
+#print axioms PaperP1.PrimeFactorCauchy.band_prime_mass
+#print axioms PaperP1.PrimeFactorCauchy.band_energy
+#print axioms PaperP1.PrimeFactorCauchy.second_energy
+#print axioms PaperP1.PrimeFactorCauchy.band_energy_product
+#print axioms PaperP1.PrimeFactorCauchy.bandConstant_pos
+#print axioms PaperP1.PrimeFactorCauchy.band_factor_integral_bound
 #print axioms PaperP1.PrimeLogDiameter.constant_pos
 #print axioms PaperP1.PrimeLogDiameter.coefficient_nonneg
 #print axioms PaperP1.PrimeLogDiameter.interval_identity
