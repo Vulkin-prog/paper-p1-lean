@@ -4365,3 +4365,7 @@ public import PaperP1.Algebra.P3HomogeneousDerivativeHeight
 public import PaperP1.Arithmetic.P3CanonicalGradientPrimeLoss
 public import PaperP1.Arithmetic.PrimeDivisorLogBudget
 public import PaperP1.Arithmetic.WeightedExceptionalPrimeFibres
+public import PaperP1.Algebra.P3GlobalAuxiliaryOfPrimeMass
+public import PaperP1.Analysis.ExceptionalSurfaceClassBudget
+public import PaperP1.Analysis.P3BudgetedCanonicalDivisor
+public import PaperP1.Analysis.P3SmoothGlobalDivisorEstimate

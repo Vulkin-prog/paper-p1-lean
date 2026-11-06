@@ -28720,6 +28720,43 @@
         "status": "not_integrated"
       },
       "validation_commit": "038845307f19d430d788f8e1482a4515a86f471b"
+    },
+    {
+      "id": "P1-MATH-0603",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The global determinant must combine a finite-field class budget with actual exceptional-column losses and choose a single prime set which works before every full-size minor.",
+      "finding": "A cutoff based on all columns gives an explicit per-bad-column cost. Actual coefficient and height estimates then reduce the global auxiliary construction to one concrete elementary prime-sum inequality, with a proved coarse class-budget specialization.",
+      "proposed_revision": "State the explicit total-column cutoff and the three terms of the global logarithmic divisor estimate. Choose the prime set before the minors, and discharge quantitative parameter choice and the sharper finite-field input separately.",
+      "impact": "Closes the finite global arithmetic determinant-to-auxiliary argument, preserving exact quantifier order and the remaining sharp finite-field and asymptotic tasks.",
+      "evidence": [
+        "PaperP1.P3GlobalAuxiliaryOfPrimeMass.exists_auxiliary",
+        "PaperP1.P3GlobalAuxiliaryOfPrimeMass.coarse_exists_auxiliary",
+        "PaperP1.ExceptionalSurfaceClassBudget.class_budget",
+        "PaperP1.P3BudgetedCanonicalDivisor.sqrt_budget",
+        "PaperP1.P3BudgetedCanonicalDivisor.exponent_lower_bound",
+        "PaperP1.P3BudgetedCanonicalDivisor.log_divisor_lower_bound",
+        "PaperP1.P3SmoothGlobalDivisorEstimate.log_divisor_lower_bound",
+        "PaperP1.P3SmoothGlobalDivisorEstimate.coarse_log_divisor_lower_bound",
+        "PaperP1.ExceptionalSurfaceClassBudget.cutoff",
+        "PaperP1.P3BudgetedCanonicalDivisor.cutoffs",
+        "PaperP1.P3SmoothGlobalDivisorEstimate.lowerBound"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17393 jobs); direct axiom audit passed for 16775 declarations using only propext, Classical.choice and Quot.sound; all 16512 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.08 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

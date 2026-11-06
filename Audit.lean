@@ -1798,6 +1798,8 @@ import PaperP1
 #print axioms PaperP1.OrdinaryWeightedProjectionComposition.map_relation
 #print axioms PaperP1.P3GlobalAuxiliaryFromCanonicalDivisors.exists_auxiliary
 #print axioms PaperP1.P3GlobalAuxiliaryLogCriterion.exists_auxiliary
+#print axioms PaperP1.P3GlobalAuxiliaryOfPrimeMass.exists_auxiliary
+#print axioms PaperP1.P3GlobalAuxiliaryOfPrimeMass.coarse_exists_auxiliary
 #print axioms PaperP1.P3HeightControlledEquation.scalar_of_dvd
 #print axioms PaperP1.P3HeightControlledEquation.integer_evaluation
 #print axioms PaperP1.P3HeightControlledEquation.exists_model_or_auxiliary
@@ -3172,6 +3174,7 @@ import PaperP1
 #print axioms PaperP1.ElementaryReciprocalPivotUpper.dyadic_logarithmic_upper
 #print axioms PaperP1.ElementaryReciprocalPrimeLower.fixed_order
 #print axioms PaperP1.ElementaryReciprocalPrimeLower.uniform_lower
+#print axioms PaperP1.ExceptionalSurfaceClassBudget.class_budget
 #print axioms PaperP1.ExplicitSaddleVariation.log_difference_bound
 #print axioms PaperP1.ExplicitSaddleVariation.core_difference_bound
 #print axioms PaperP1.ExplicitSaddleVariation.scale_monotone
@@ -3458,6 +3461,9 @@ import PaperP1
 #print axioms PaperP1.P3AuxiliaryCoverExponentBudget.power_identity
 #print axioms PaperP1.P3AuxiliaryCoverExponentBudget.family_bound
 #print axioms PaperP1.P3AuxiliaryCoverExponentBudget.exception_bound
+#print axioms PaperP1.P3BudgetedCanonicalDivisor.sqrt_budget
+#print axioms PaperP1.P3BudgetedCanonicalDivisor.exponent_lower_bound
+#print axioms PaperP1.P3BudgetedCanonicalDivisor.log_divisor_lower_bound
 #print axioms PaperP1.P3CanonicalDivisorLowerBound.exponent_lower_bound
 #print axioms PaperP1.P3CanonicalDivisorLowerBound.log_divisor
 #print axioms PaperP1.P3CanonicalDivisorLowerBound.log_divisor_lower_bound
@@ -3465,6 +3471,8 @@ import PaperP1
 #print axioms PaperP1.P3OptimizedSurfaceDivisor.divisor_ratio
 #print axioms PaperP1.P3OptimizedSurfaceDivisor.weight_divisor_ratio
 #print axioms PaperP1.P3OptimizedSurfaceDivisor.exists_parameters
+#print axioms PaperP1.P3SmoothGlobalDivisorEstimate.log_divisor_lower_bound
+#print axioms PaperP1.P3SmoothGlobalDivisorEstimate.coarse_log_divisor_lower_bound
 #print axioms PaperP1.P3StandardMonomialLimits.size_real
 #print axioms PaperP1.P3StandardMonomialLimits.weight_real
 #print axioms PaperP1.P3StandardMonomialLimits.size_ratio
