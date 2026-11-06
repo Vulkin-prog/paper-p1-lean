@@ -4459,3 +4459,9 @@ public import PaperP1.Algebra.PolynomialSubstitutionDegree
 public import PaperP1.Arithmetic.PlaneNoetherSpecializationCount
 public import PaperP1.Arithmetic.PlaneUniversalNoetherForms
 public import PaperP1.Diophantine.FiniteFieldPolynomialZeroBound
+public import PaperP1.Algebra.NestedPolynomialCoefficientDegree
+public import PaperP1.Algebra.P3GraphPlaneAffineEvaluation
+public import PaperP1.Algebra.P3GraphPlaneSection
+public import PaperP1.Algebra.P3GraphPlaneSectionCoefficients
+public import PaperP1.Algebra.PlaneHomogeneousReconstruction
+public import PaperP1.Arithmetic.P3GraphPlaneBadSectionCount

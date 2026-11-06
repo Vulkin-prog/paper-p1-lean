@@ -29503,6 +29503,70 @@
         "status": "not_integrated"
       },
       "validation_commit": "9386bcdfd1bd946b04075cd8247ab76b3f68b0e3"
+    },
+    {
+      "id": "P1-MATH-0616",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The proved generic Noether specialization bound had not yet been connected to literal plane sections of the ORIGINAL surface, their actual coefficient polynomials or the original affine point evaluations.",
+      "finding": "Actual graph-plane coefficient polynomials have degree<=d, commute with every field embedding and reconstruct actual sections. From one explicit geometric good-section witness, all actual bad finite-field sections number<=d*N*q^2, with an actual rational good section for q>d*N.",
+      "proposed_revision": "Use the literal graph-plane family, proved parameter degree bound, exact field specialization and original affine point evaluation. Retain geometric good-section existence and finite-field curve point estimates as explicit unfinished tasks.",
+      "impact": "Connects the exceptional-section count to actual original surface coefficients and finite-field graph planes without a supplied coefficient-degree bound. It does not discharge the remaining point-count input; canonical coverage stays unchanged.",
+      "evidence": [
+        "PaperP1.NestedPolynomialCoefficientDegree.comm_monomial",
+        "PaperP1.NestedPolynomialCoefficientDegree.coefficient_comm",
+        "PaperP1.NestedPolynomialCoefficientDegree.coefficient_degree_le",
+        "PaperP1.P3GraphPlaneAffineEvaluation.projective_evaluation",
+        "PaperP1.P3GraphPlaneAffineEvaluation.affine_coordinates",
+        "PaperP1.P3GraphPlaneAffineEvaluation.affine_evaluation",
+        "PaperP1.P3GraphPlaneSection.form_homogeneous",
+        "PaperP1.P3GraphPlaneSection.coordinates_homogeneous",
+        "PaperP1.P3GraphPlaneSection.section_homogeneous",
+        "PaperP1.P3GraphPlaneSection.universalForm_homogeneous",
+        "PaperP1.P3GraphPlaneSection.universalCoordinates_homogeneous",
+        "PaperP1.P3GraphPlaneSection.universal_homogeneous",
+        "PaperP1.P3GraphPlaneSection.commute_universal",
+        "PaperP1.P3GraphPlaneSection.dual_degree_le",
+        "PaperP1.P3GraphPlaneSection.parameter_degree",
+        "PaperP1.P3GraphPlaneSection.homogeneous_parameter_degree",
+        "PaperP1.P3GraphPlaneSection.evaluate_universal",
+        "PaperP1.P3GraphPlaneSectionCoefficients.degree_bound",
+        "PaperP1.P3GraphPlaneSectionCoefficients.specialized_coefficient",
+        "PaperP1.P3GraphPlaneSectionCoefficients.specialized_polynomial",
+        "PaperP1.P3GraphPlaneSectionCoefficients.evaluation_polynomial",
+        "PaperP1.PlaneHomogeneousReconstruction.coeff_outside",
+        "PaperP1.PlaneHomogeneousReconstruction.reconstruct",
+        "PaperP1.P3GraphPlaneBadSectionCount.partition_card",
+        "PaperP1.P3GraphPlaneBadSectionCount.uniform_bad_section_bound",
+        "PaperP1.P3GraphPlaneBadSectionCount.good_card_lower",
+        "PaperP1.P3GraphPlaneBadSectionCount.exists_good_section",
+        "PaperP1.P3GraphPlaneAffineEvaluation.graphPoint",
+        "PaperP1.P3GraphPlaneSection.form",
+        "PaperP1.P3GraphPlaneSection.coordinates",
+        "PaperP1.P3GraphPlaneSection.planeSection",
+        "PaperP1.P3GraphPlaneSection.universalForm",
+        "PaperP1.P3GraphPlaneSection.universalCoordinates",
+        "PaperP1.P3GraphPlaneSection.universalSection",
+        "PaperP1.P3GraphPlaneSection.dualCoordinates",
+        "PaperP1.P3GraphPlaneSectionCoefficients.coefficients",
+        "PaperP1.P3GraphPlaneBadSectionCount.badSections",
+        "PaperP1.P3GraphPlaneBadSectionCount.goodSections"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17611 jobs); direct axiom audit passed for 17131 declarations using only propext, Classical.choice and Quot.sound; all 16971 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 5.82 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

@@ -1,6 +1,18 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0615: all-fields universal INTEGER Noether forms
+Current checkpoint P1-MATH-0616: actual ORIGINAL graph-plane sections are
+constructed, with parameter coefficient degree<=d proved internally. Every
+field specialization reconstructs the actual section, and affine point
+evaluation is exactly that of the original equation. ONE explicit geometric
+good-section witness gives<=d*N*q^2 actual bad finite-field sections and at
+least q^3-d*N*q^2 good sections; q>d*N gives an actual rational good section.
+Global geometric good-section existence and curve point estimates remain
+UNPROVED. Canonical T1.7 stays `UniformGeometricCountsFieldEstimateInput.companion_T1_7`
+with ONLY its prior finite-field point-estimate input in actual degrees>2.
+No canonical input is added or discharged. Coverage stays163 proved,
+2 conditional,2 in_progress out of167; all73 main results proved. No Palomar.
+
+Historical checkpoint P1-MATH-0615: all-fields universal INTEGER Noether forms
 for actual PLANE curves are proved in every degree by the literal coefficient
 embedding into four variables. Actual polynomial substitutions have proved
 degree bounds. One explicit good field-valued specialization yields a uniform
@@ -29323,6 +29335,16 @@ The good-specialization premise is explicit; its existence for every surface
 and finite-field curve point estimates are not claimed. This is preparatory
 progress, with no change to the sole canonical input below.
 
+## Actual original graph-plane sections and parameter degree
+
+At P1-MATH-0616 the literal original graph-plane coefficient polynomials have
+proved degree<=d and exact all-fields specialization/reconstruction. Their
+affine point evaluations equal evaluations in the original X3=1 chart.
+One EXPLICIT geometric good-section witness over an extension gives at most
+d*N*q^2 actual bad parameters, with N before all fields and original P.
+The global witness-existence theorem and finite-field curve point bound remain
+unproved. These preparatory results leave the sole canonical input below intact.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -30093,3 +30115,22 @@ The SINGLE-good-specialization hypothesis remains EXPLICIT in this preparatory t
 Eight modules add twenty-four theorems and seven definitions. Coverage stays163 proved,2 conditional,2 in_progress out of167, including all73 main results proved. The separate T19.17 input and two literal false-original scopes are unchanged. Manuscript hashes, Lean v4.36.0-rc2, checking options and allowed axioms are unchanged. All work remains on Ubuntu with about5.84GiB free and no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17599 jobs); direct axiom audit passed for 17104 declarations using only propext, Classical.choice and Quot.sound; all 16933 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 5.84 GiB.
+
+
+## Actual graph-plane sections have uniform coefficient degree and reducible-section counts
+
+Stable ID: p1:internal:actual-graph-plane-section-exception-counts. Actual graph-plane coefficient degree, specialization and affine evaluation are proved. One explicit geometric good section gives<=d*N*q^2 actual bad finite-field sections and a rational good section when q>d*N. The global witness existence and curve point estimates remain unproved.
+
+NestedPolynomialCoefficientDegree proves exact coefficient interchange for nested multivariate polynomials and bounds the degree of every coefficient polynomial by the total degree after exchanging the two variable families. PlaneHomogeneousReconstruction proves exact reconstruction of every actual homogeneous three-coordinate equation from its indexed coefficients.
+
+P3GraphPlaneSection constructs the ACTUAL projective graph-plane substitution X0=a0*X1+a1*X2+a2*X3 in the original four-coordinate polynomial. It also constructs the universal nested polynomial whose inner variables are the three literal plane parameters. All substitutions preserve the original homogeneous degree. Exchanging parameter and plane variables identifies a dual substitution of total degree<=1 in each variable; hence EVERY actual coefficient polynomial in the plane parameters has total degree at most the ORIGINAL polynomial total degree, and at most d for an original degree-d homogeneous equation. Exact evaluation commutes with EVERY coefficient-field homomorphism.
+
+P3GraphPlaneSectionCoefficients extracts the actual indexed parameter coefficient polynomials. Their degree bound is proved, and literal specialization over EVERY coefficient extension reconstructs the ACTUAL plane-section equation, not a surrogate equation. P3GraphPlaneAffineEvaluation proves the exact original-equation evaluation formula. The actual affine graph point (a0*u0+a1*u1+a2,u0,u1), in the original X3=1 chart, evaluates the original polynomial exactly as (u0,u1,1) evaluates its plane section.
+
+P3GraphPlaneBadSectionCount defines the ACTUAL finite sets of geometrically good and bad graph-plane parameters. In EVERY original degree d a constant N is selected BEFORE every finite base field, witness extension field, actual homogeneous P, coefficient embedding and parameter witness. If ONE actual plane section over that witness field is geometrically irreducible, the number of ACTUAL bad parameters over F is at most d*N*q^2. Good and bad parameter counts sum to q^3, so at least q^3-d*N*q^2 parameters are good. If q>d*N an ACTUAL good plane parameter over the original finite field exists.
+
+The single good-section witness remains an EXPLICIT premise. Existence of such a geometric section for EVERY original surface is NOT proved or assumed globally; finite-field curve point estimates also remain unproved. This checkpoint does NOT prove the remaining surface point estimate. Canonical T1.7 remains UniformGeometricCountsFieldEstimateInput.companion_T1_7, with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE unformalized in actual degrees>2 at the same original three families/caps. No input is added or discharged.
+
+Six modules add twenty-seven theorems and eleven definitions. Coverage stays163 proved,2 conditional,2 in_progress out of167, with all73 main results proved. The separate T19.17 input and the two literal false-original scopes retain their exact previous statuses. Manuscript hashes, Lean v4.36.0-rc2, checking options and allowed axioms are unchanged. Work remains on Ubuntu with about5.82GiB free and no dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17611 jobs); direct axiom audit passed for 17131 declarations using only propext, Classical.choice and Quot.sound; all 16971 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 5.82 GiB.
