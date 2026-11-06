@@ -1607,6 +1607,9 @@ import PaperP1
 #print axioms PaperP1.IntegerConstantCurve.ideal_horizontal
 #print axioms PaperP1.IntegerConstantCurve.coordinateEquiv_mk
 #print axioms PaperP1.IntegerConstantCurve.functionEquiv_specialize
+#print axioms PaperP1.IntegerFormPolynomialSubstitution.natural
+#print axioms PaperP1.IntegerFormPolynomialSubstitution.evaluation
+#print axioms PaperP1.IntegerFormPolynomialSubstitution.degree_bound
 #print axioms PaperP1.IntegerGraphEquation.eval_formula
 #print axioms PaperP1.IntegerGraphEquation.denominator_ne_zero
 #print axioms PaperP1.IntegerGraphEquation.coefficient_ne_zero_at_point
@@ -1676,6 +1679,8 @@ import PaperP1
 #print axioms PaperP1.IrreduciblePointFactor.exists_factor
 #print axioms PaperP1.IrreduciblePointFactor.integer_point
 #print axioms PaperP1.IrreduciblePointFactor.factor_partial_degrees
+#print axioms PaperP1.IrreducibleVariableExtension.prime_rename
+#print axioms PaperP1.IrreducibleVariableExtension.irreducible_rename
 #print axioms PaperP1.IrrelevantGenerated.irrelevant_eq_span
 #print axioms PaperP1.IrrelevantGenerated.irrelevant_le_radical
 #print axioms PaperP1.IteratedBivariatePolynomialDeterminant.evaluation
@@ -1993,6 +1998,10 @@ import PaperP1
 #print axioms PaperP1.PlaneCurveVeroneseHilbert.polynomial_natDegree
 #print axioms PaperP1.PlaneCurveVeroneseHilbert.polynomial_leadingCoeff
 #print axioms PaperP1.PlaneCurveVeroneseHilbert.multiplicity
+#print axioms PaperP1.PlaneHomogeneousCoefficientFamily.coeff_index
+#print axioms PaperP1.PlaneHomogeneousCoefficientFamily.homogeneous
+#print axioms PaperP1.PlaneHomogeneousCoefficientFamily.map_polynomial
+#print axioms PaperP1.PlaneHomogeneousCoefficientFamily.nonzero
 #print axioms PaperP1.PlaneIntersection.realDot_int_cast
 #print axioms PaperP1.PlaneIntersection.exists_nonzero_coordinate
 #print axioms PaperP1.PlaneIntersection.planes_equal_of_cross_zero_meet
@@ -2009,6 +2018,13 @@ import PaperP1
 #print axioms PaperP1.PlaneSingularPoints.population_card
 #print axioms PaperP1.PlaneSingularPoints.exists_finset
 #print axioms PaperP1.PlaneSingularPoints.gradient_nonzero_of_not_mem
+#print axioms PaperP1.PlaneToP3CoefficientExtension.form_homogeneous
+#print axioms PaperP1.PlaneToP3CoefficientExtension.evaluate_form
+#print axioms PaperP1.PlaneToP3CoefficientExtension.extended_coefficient
+#print axioms PaperP1.PlaneToP3CoefficientExtension.extended_homogeneous
+#print axioms PaperP1.PlaneToP3CoefficientExtension.reconstruct_extended
+#print axioms PaperP1.PlaneToP3CoefficientExtension.pullback_homogeneous
+#print axioms PaperP1.PlaneToP3CoefficientExtension.evaluate_pullback
 #print axioms PaperP1.PolynomialAuxiliaryExceptions.population_card
 #print axioms PaperP1.PolynomialAuxiliaryExceptions.exists_finset
 #print axioms PaperP1.PolynomialAuxiliaryExceptions.divisible_or_nonzero
@@ -2071,6 +2087,8 @@ import PaperP1
 #print axioms PaperP1.PolynomialScalarProjection.extend_coefficient
 #print axioms PaperP1.PolynomialScalarProjection.component_coefficient
 #print axioms PaperP1.PolynomialScalarProjection.component_constant_mul
+#print axioms PaperP1.PolynomialSubstitutionDegree.eval2_bound
+#print axioms PaperP1.PolynomialSubstitutionDegree.aeval_bound
 #print axioms PaperP1.PolynomialTangentDegree.pderiv_degree_le
 #print axioms PaperP1.PolynomialTangentDegree.tangent_self
 #print axioms PaperP1.PolynomialTangentDegree.tangent_constant
@@ -6397,6 +6415,9 @@ import PaperP1
 #print axioms PaperP1.PlaneCurvePointCount.growing_degree_under_BCN
 #print axioms PaperP1.PlaneCurvePointCount.source_uniform_bound_under_BCN
 #print axioms PaperP1.PlaneCurvePointCount.article_13_5_under_BCN
+#print axioms PaperP1.PlaneNoetherSpecializationCount.exists_nonzero_form
+#print axioms PaperP1.PlaneNoetherSpecializationCount.bad_parameter_bound
+#print axioms PaperP1.PlaneNoetherSpecializationCount.uniform_bad_parameter_bound
 #print axioms PaperP1.PlaneOffsetCRT.projection_injective
 #print axioms PaperP1.PlaneOffsetCRT.plane_card
 #print axioms PaperP1.PlaneProductCover.mem_fibre
@@ -6416,6 +6437,8 @@ import PaperP1
 #print axioms PaperP1.PlaneSupportCover.mem_certificates_of
 #print axioms PaperP1.PlaneSupportCover.restrict_centres
 #print axioms PaperP1.PlaneSupportCover.restrict_certificates
+#print axioms PaperP1.PlaneUniversalNoetherForms.valid_pullback
+#print axioms PaperP1.PlaneUniversalNoetherForms.exists_forms
 #print axioms PaperP1.PolylogPivotExceptions.pivot_subset_small_kernel
 #print axioms PaperP1.PolylogPivotExceptions.pivot_count_rankin
 #print axioms PaperP1.PolylogPivotExceptions.mem_badWindows
@@ -12534,6 +12557,7 @@ import PaperP1
 #print axioms PaperP1.FiniteFieldPlaneZeroBound.plane_card
 #print axioms PaperP1.FiniteFieldPlaneZeroBound.coefficient_map_degree_le
 #print axioms PaperP1.FiniteFieldPlaneZeroBound.smooth_integer_classes_card
+#print axioms PaperP1.FiniteFieldPolynomialZeroBound.cardinality
 #print axioms PaperP1.FiniteFieldQuadricFirstChartCount.cardinality_bound
 #print axioms PaperP1.FiniteFieldQuadricLastChartCount.cardinality_bound
 #print axioms PaperP1.FiniteFieldQuadricLinearCount.first_coefficient_bound

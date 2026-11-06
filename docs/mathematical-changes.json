@@ -29445,6 +29445,63 @@
         "status": "not_integrated"
       },
       "validation_commit": "3d14a36e603c94f4f4b1c49f33e888e56510a849"
+    },
+    {
+      "id": "P1-MATH-0615",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The all-degree integer Noether forms had not yet been specialized to actual plane curves or used to count actual reducible values in polynomial coefficient families.",
+      "finding": "Plane-curve universal integer Noether forms are proved in every degree. A single explicit good field-valued specialization yields an actual nonzero equation and a uniform M*N*q^(n-1) bound for all actual geometrically reducible parameter values.",
+      "proposed_revision": "Use the exact plane coefficient embedding, integer universal-form substitution, degree bound and Schwartz-Zippel to control reducible sections. Keep single-good-section existence and the finite-field curve point estimate explicit until proved.",
+      "impact": "Proves the uniform exceptional-parameter counting step for a plane-section route. It does not prove good-section existence or curve point counting; the canonical T1.7 input and coverage remain unchanged.",
+      "evidence": [
+        "PaperP1.IntegerFormPolynomialSubstitution.natural",
+        "PaperP1.IntegerFormPolynomialSubstitution.evaluation",
+        "PaperP1.IntegerFormPolynomialSubstitution.degree_bound",
+        "PaperP1.IrreducibleVariableExtension.prime_rename",
+        "PaperP1.IrreducibleVariableExtension.irreducible_rename",
+        "PaperP1.PlaneHomogeneousCoefficientFamily.coeff_index",
+        "PaperP1.PlaneHomogeneousCoefficientFamily.homogeneous",
+        "PaperP1.PlaneHomogeneousCoefficientFamily.map_polynomial",
+        "PaperP1.PlaneHomogeneousCoefficientFamily.nonzero",
+        "PaperP1.PlaneToP3CoefficientExtension.form_homogeneous",
+        "PaperP1.PlaneToP3CoefficientExtension.evaluate_form",
+        "PaperP1.PlaneToP3CoefficientExtension.extended_coefficient",
+        "PaperP1.PlaneToP3CoefficientExtension.extended_homogeneous",
+        "PaperP1.PlaneToP3CoefficientExtension.reconstruct_extended",
+        "PaperP1.PlaneToP3CoefficientExtension.pullback_homogeneous",
+        "PaperP1.PlaneToP3CoefficientExtension.evaluate_pullback",
+        "PaperP1.PolynomialSubstitutionDegree.eval2_bound",
+        "PaperP1.PolynomialSubstitutionDegree.aeval_bound",
+        "PaperP1.PlaneNoetherSpecializationCount.exists_nonzero_form",
+        "PaperP1.PlaneNoetherSpecializationCount.bad_parameter_bound",
+        "PaperP1.PlaneNoetherSpecializationCount.uniform_bad_parameter_bound",
+        "PaperP1.PlaneUniversalNoetherForms.valid_pullback",
+        "PaperP1.PlaneUniversalNoetherForms.exists_forms",
+        "PaperP1.FiniteFieldPolynomialZeroBound.cardinality",
+        "PaperP1.IntegerFormPolynomialSubstitution.substitute",
+        "PaperP1.PlaneHomogeneousCoefficientFamily.Index",
+        "PaperP1.PlaneHomogeneousCoefficientFamily.polynomial",
+        "PaperP1.PlaneToP3CoefficientExtension.coefficientForm",
+        "PaperP1.PlaneToP3CoefficientExtension.pullback",
+        "PaperP1.PlaneUniversalNoetherForms.Valid",
+        "PaperP1.PlaneUniversalNoetherForms.ExistsForms"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17599 jobs); direct axiom audit passed for 17104 declarations using only propext, Classical.choice and Quot.sound; all 16933 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 5.84 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

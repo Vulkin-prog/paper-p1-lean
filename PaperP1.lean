@@ -4451,3 +4451,11 @@ public import PaperP1.Arithmetic.P3FiniteFieldBudgetFixedHeight
 public import PaperP1.Arithmetic.P3GeometricReductionPrimeWindow
 public import PaperP1.Arithmetic.P3GoodReductionPrimeChoice
 public import PaperP1.Arithmetic.P3UniversalGoodReduction
+public import PaperP1.Algebra.IntegerFormPolynomialSubstitution
+public import PaperP1.Algebra.IrreducibleVariableExtension
+public import PaperP1.Algebra.PlaneHomogeneousCoefficientFamily
+public import PaperP1.Algebra.PlaneToP3CoefficientExtension
+public import PaperP1.Algebra.PolynomialSubstitutionDegree
+public import PaperP1.Arithmetic.PlaneNoetherSpecializationCount
+public import PaperP1.Arithmetic.PlaneUniversalNoetherForms
+public import PaperP1.Diophantine.FiniteFieldPolynomialZeroBound

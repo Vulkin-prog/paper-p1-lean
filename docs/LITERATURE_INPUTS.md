@@ -1,6 +1,19 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0614: in EVERY degree, unconditional actual
+Current checkpoint P1-MATH-0615: all-fields universal INTEGER Noether forms
+for actual PLANE curves are proved in every degree by the literal coefficient
+embedding into four variables. Actual polynomial substitutions have proved
+degree bounds. One explicit good field-valued specialization yields a uniform
+M*N*q^(n-1) bound for all actual geometrically reducible parameter values,
+with N chosen before every field, family and witness.
+The single good-specialization premise remains EXPLICIT; good-section existence
+for every surface and finite-field curve point bounds are NOT proved here.
+Canonical T1.7 stays `UniformGeometricCountsFieldEstimateInput.companion_T1_7`,
+with ONLY the prior finite-field point estimate unproved in actual degrees>2.
+No new canonical input is added or discharged. Coverage stays163 proved,
+2 conditional,2 in_progress out of167; all73 main results proved. No Palomar.
+
+Historical checkpoint P1-MATH-0614: in EVERY degree, unconditional actual
 nonzero INTEGER good-reduction certificates satisfy natAbs(z)<=T*A^N with
 T,N chosen before A,P and every counting tolerance. Every actual bad geometric
 reduction prime divides z; the full bad-prime set is finite and its logarithmic
@@ -29299,6 +29312,17 @@ These are unconditional algebraic prime-budget theorems in EVERY degree.
 They do not assert the independent leading-coefficient-one point count below;
 that remains the sole unformalized T1.7 input in actual degrees>2.
 
+## Proved plane Noether forms and specialization counts
+
+At P1-MATH-0615, plane-curve Noether forms with the exact all-fields criterion
+are internally proved in every degree. `PlaneNoetherSpecializationCount.uniform_bad_parameter_bound`
+chooses N before every field, dimension n, coefficient-polynomial degree M,
+actual family and field-valued witness. A SINGLE good specialization yields
+card(S)<=M*N*q^(n-1) for every actual finite bad-parameter set.
+The good-specialization premise is explicit; its existence for every surface
+and finite-field curve point estimates are not claimed. This is preparatory
+progress, with no change to the sole canonical input below.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -30050,3 +30074,22 @@ Canonical companionT1.7 remains UniformGeometricCountsFieldEstimateInput.compani
 Five modules add twenty-two theorems and four definitions. Coverage remains163 proved,2 conditional,2 in_progress out of167, including all73 main results proved. The separate T19.17 analytic input and the two literal false-original scopes are unchanged. Manuscript hashes, Lean v4.36.0-rc2, allowed axioms and checking options are unchanged. No dependency download. All work remains on Ubuntu. Git storage was compacted with the complete object-ID inventory preserved and a full integrity check; no history or unrelated files were removed. About5.87GiB remain. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17583 jobs); direct axiom audit passed for 17080 declarations using only propext, Classical.choice and Quot.sound; all 16902 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 5.87 GiB.
+
+
+## Prove all-fields plane-curve Noether forms and uniform reducible-specialization counts
+
+Stable ID: p1:internal:plane-noether-specialization-exception-counts. Plane Noether forms and uniform reducible-specialization counts are proved. A good-specialization witness remains an explicit premise of the preparatory count; canonical T1.7 retains its prior sole finite-field point-estimate input.
+
+IrreducibleVariableExtension proves exact primality and irreducibility equivalence under EVERY injective extension of multivariate polynomial variables. PlaneHomogeneousCoefficientFamily constructs literal finite homogeneous three-coordinate coefficient families, with exact coefficients, homogeneous degree, field transport and nonzero-polynomial implication. PlaneToP3CoefficientExtension constructs ACTUAL INTEGER linear coefficient forms extending a plane equation to four variables. Their homogeneous degree, literal field evaluation, exact reconstruction and all-fields substitution compatibility are proved.
+
+PlaneUniversalNoetherForms pulls back the already proved four-coordinate universal forms through this actual coefficient map. Injective-variable irreducibility and reconstruction prove the EXACT all-fields geometric-irreducibility nonvanishing criterion for actual plane curves in EVERY natural degree. No plane-form existence input is supplied.
+
+PolynomialSubstitutionDegree proves that substituting polynomials of degree<=M gives total degree<=M*totalDegree(original). IntegerFormPolynomialSubstitution proves exact naturality for every ring homomorphism evaluating the coefficient polynomials and the corresponding degree bound. FiniteFieldPolynomialZeroBound proves the literal Schwartz-Zippel cardinality bound in EVERY positive finite dimension n: any finite set of zeros of a nonzero polynomial has size<=totalDegree(P)*q^(n-1).
+
+PlaneNoetherSpecializationCount proves a SINGLE actual geometrically irreducible specialization, even via a field-valued evaluation into ANY extension field, yields an actual nonzero substituted Noether form. Every geometrically reducible parameter is a zero of that polynomial. For EACH degree d one constant N is chosen BEFORE every finite coefficient field F, positive parameter dimension n, degree bound M, actual coefficient-polynomial family and witness field/evaluation. Every finite set S of actual bad parameter values then satisfies card(S)<=M*N*q^(n-1). Neither the exceptional polynomial nor its zero bound is supplied as an input.
+
+The SINGLE-good-specialization hypothesis remains EXPLICIT in this preparatory theorem. Existence of such a plane section for every original surface is NOT proved or assumed globally, and the finite-field curve point bound also remains unproved. This does NOT prove the remaining leading-coefficient-one surface point estimate. Canonical T1.7 remains UniformGeometricCountsFieldEstimateInput.companion_T1_7, with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE unformalized in actual degrees>2 at the same original families/caps. No new independent input is inserted in that canonical theorem and none is discharged here.
+
+Eight modules add twenty-four theorems and seven definitions. Coverage stays163 proved,2 conditional,2 in_progress out of167, including all73 main results proved. The separate T19.17 input and two literal false-original scopes are unchanged. Manuscript hashes, Lean v4.36.0-rc2, checking options and allowed axioms are unchanged. All work remains on Ubuntu with about5.84GiB free and no dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17599 jobs); direct axiom audit passed for 17104 declarations using only propext, Classical.choice and Quot.sound; all 16933 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 5.84 GiB.
