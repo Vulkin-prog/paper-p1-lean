@@ -3481,6 +3481,8 @@ import PaperP1
 #print axioms PaperP1.CompleteShortAverage.concentration_of_mean_square
 #print axioms PaperP1.CompleteShortAverage.smoothHom_bound
 #print axioms PaperP1.CompleteShortAverage.smoothHom_prime_bound
+#print axioms PaperP1.CompleteSmoothCensusFromShortAverages.ordinary_census
+#print axioms PaperP1.CompleteSmoothCensusFromShortAverages.ordinary_census_of_mean_square
 #print axioms PaperP1.ComplexEuler.complex_hom_bound
 #print axioms PaperP1.ComplexEuler.prime_half
 #print axioms PaperP1.ComplexEuler.summable_and_hasSum

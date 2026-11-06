@@ -1,6 +1,12 @@
 # Mathematical corrections and improvements
 
-Current checkpoint P1-MATH-0725: Complete short-average concentration
+Current checkpoint P1-MATH-0726: Actual ordinary-smooth census reduced
+to complete short-average concentration. Complete short-average
+concentration remains unproved. T19.17 conditional; original T1.7
+unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167;
+all 73 main proved. No Palomar registration.
+
+Historical checkpoint P1-MATH-0725: Complete short-average concentration
 interface and actual ordinary-smooth monoid homomorphism. Complete
 short-average concentration remains unproved. T19.17 conditional;
 original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2
@@ -1315,7 +1321,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**723 mathematical improvements and two statement-scope corrections are confirmed.**
+**724 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -30924,3 +30930,14 @@ The general ArithmeticFunction multiplicativity interface was stronger than the 
 Complete logarithmic short-average concentration and original T19.17 remain unfinished. Original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Source v1.6, false-scope corrections, compiler and permitted axioms unchanged. About 53.6 GiB free on Ubuntu. No download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18017 jobs); direct axiom audit passed for 18240 declarations using only propext, Classical.choice and Quot.sound; all 18355 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.47 GiB.
+
+
+## Actual ordinary-smooth census reduced to complete short-average concentration
+
+The actual almost-all logarithmic-window ordinary census is derived from concentration for complete real prime-bounded monoid homomorphisms alone. The proof uses the literal floor(N^a)-smooth monoid homomorphism, the internal positive dyadic smooth density, the actual source windows and the same finite boundary correction. A second theorem reduces the census to the complete mean-square input. Two theorems are added.
+
+The earlier smooth-census bridge required concentration for all merely multiplicative ArithmeticFunctions. The complete subclass is sufficient for the actual smooth coefficient family; its concentration remains an explicit unproved argument.
+
+Complete logarithmic short-average concentration and original T19.17 remain unfinished. Original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Source v1.6, false-scope corrections, compiler and permitted axioms unchanged. About 53.6 GiB free on Ubuntu. No download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18019 jobs); direct axiom audit passed for 18242 declarations using only propext, Classical.choice and Quot.sound; all 18357 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.45 GiB.

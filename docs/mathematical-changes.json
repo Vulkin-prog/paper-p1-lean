@@ -33895,6 +33895,34 @@
         "status": "not_integrated"
       },
       "validation_commit": "7edbf1dc2fa024ca05c3d77aac17aa38fd940c31"
+    },
+    {
+      "id": "P1-MATH-0726",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The earlier smooth-census bridge required concentration for all merely multiplicative ArithmeticFunctions. The complete subclass is sufficient for the actual smooth coefficient family; its concentration remains an explicit unproved argument.",
+      "finding": "The actual almost-all logarithmic-window ordinary census is derived from concentration for complete real prime-bounded monoid homomorphisms alone. The proof uses the literal floor(N^a)-smooth monoid homomorphism, the internal positive dyadic smooth density, the actual source windows and the same finite boundary correction. A second theorem reduces the census to the complete mean-square input. Two theorems are added.",
+      "proposed_revision": "Use the complete coefficient scope for the actual ordinary-smooth family, retaining the explicit unproved concentration input.",
+      "impact": "Actual ordinary-smooth census reduced to complete short-average concentration. T19.17 remains conditional.",
+      "evidence": [
+        "PaperP1.CompleteSmoothCensusFromShortAverages.ordinary_census",
+        "PaperP1.CompleteSmoothCensusFromShortAverages.ordinary_census_of_mean_square"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18019 jobs); direct axiom audit passed for 18242 declarations using only propext, Classical.choice and Quot.sound; all 18357 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.45 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

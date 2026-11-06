@@ -4665,3 +4665,4 @@ public import PaperP1.Analysis.GlobalTripleBand
 public import PaperP1.Analysis.HalaszSmallBudget
 public import PaperP1.Analysis.CommonRealTwistedSum
 public import PaperP1.Analysis.CompleteShortAverage
+public import PaperP1.Analysis.CompleteSmoothCensusFromShortAverages

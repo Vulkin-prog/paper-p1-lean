@@ -1,6 +1,12 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0725: Complete short-average concentration
+Current checkpoint P1-MATH-0726: Actual ordinary-smooth census reduced
+to complete short-average concentration. Complete short-average
+concentration remains unproved. T19.17 conditional; original T1.7
+unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167;
+all 73 main proved. No Palomar registration.
+
+Historical checkpoint P1-MATH-0725: Complete short-average concentration
 interface and actual ordinary-smooth monoid homomorphism. Complete
 short-average concentration remains unproved. T19.17 conditional;
 original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2
@@ -31521,6 +31527,12 @@ The uniform mean-square and concentration hypotheses now quantify only complete 
 
 Theorem 1 and Corollary 6 of the primary source https://annals.math.princeton.edu/2016/183-3/p06 describe the external short-average/smooth-number result being reconstructed. Its logarithmic-window conclusion remains unproved internally.
 
+## Internal actual ordinary-smooth census reduced to complete short-average concentration
+
+The actual almost-all logarithmic-window ordinary census is derived from concentration for complete real prime-bounded monoid homomorphisms alone. The proof uses the literal floor(N^a)-smooth monoid homomorphism, the internal positive dyadic smooth density, the actual source windows and the same finite boundary correction. A second theorem reduces the census to the complete mean-square input. Two theorems are added.
+
+Theorem 1 and Corollary 6 of the primary source https://annals.math.princeton.edu/2016/183-3/p06 describe the external short-average/smooth-number result being reconstructed. Its logarithmic-window conclusion remains unproved internally.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -33926,3 +33938,16 @@ The general ArithmeticFunction multiplicativity interface was stronger than the 
 Complete logarithmic short-average concentration and original T19.17 remain unfinished. Original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Source v1.6, false-scope corrections, compiler and permitted axioms unchanged. About 53.6 GiB free on Ubuntu. No download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18017 jobs); direct axiom audit passed for 18240 declarations using only propext, Classical.choice and Quot.sound; all 18355 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.47 GiB.
+
+
+## Actual ordinary-smooth census reduced to complete short-average concentration
+
+Stable ID: p1:internal:complete-smooth-census. Actual ordinary-smooth census reduced to complete short-average concentration. Complete short-average concentration remains unproved.
+
+The actual almost-all logarithmic-window ordinary census is derived from concentration for complete real prime-bounded monoid homomorphisms alone. The proof uses the literal floor(N^a)-smooth monoid homomorphism, the internal positive dyadic smooth density, the actual source windows and the same finite boundary correction. A second theorem reduces the census to the complete mean-square input. Two theorems are added.
+
+The earlier smooth-census bridge required concentration for all merely multiplicative ArithmeticFunctions. The complete subclass is sufficient for the actual smooth coefficient family; its concentration remains an explicit unproved argument.
+
+Complete logarithmic short-average concentration and original T19.17 remain unfinished. Original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Source v1.6, false-scope corrections, compiler and permitted axioms unchanged. About 53.6 GiB free on Ubuntu. No download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18019 jobs); direct axiom audit passed for 18242 declarations using only propext, Classical.choice and Quot.sound; all 18357 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.45 GiB.
