@@ -1,6 +1,15 @@
 # Mathematical corrections and improvements
 
-Current checkpoint P1-MATH-0872: The actual infinite damped Dirichlet
+Current checkpoint P1-MATH-0873: The proved damped series and tail are
+identified with the actual Riemann zeta function. The triple-large prime
+frequency contribution, the central-frequency mean comparison and
+complete logarithmic short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 53.99 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0872: The actual infinite damped Dirichlet
 tail has a proved explicit frequency bound. The triple-large prime
 frequency contribution, the central-frequency mean comparison and
 complete logarithmic short-average concentration remain unproved. T19.17
@@ -2616,7 +2625,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**870 mathematical improvements and two statement-scope corrections are confirmed.**
+**871 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -33554,3 +33563,12 @@ Six theorems and two definitions establish absolute summability of the actual in
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.99 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18311 jobs); direct axiom audit passed for 18846 declarations using only propext, Classical.choice and Quot.sound; all 19080 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.97 GiB.
+
+
+## The proved damped series and tail are identified with the actual Riemann zeta function
+
+Six theorems and one definition identify exp(-it log x) with the actual complex power, the damped integrand with x^(-(1+sigma+it)), and its absolutely convergent series with Mathlib riemannZeta at 1+sigma+it when sigma>0. The exact proved remainder therefore gives norm(zeta minus its literal finite head)<=2*N^(-sigma)/|t|+2*(1+sigma+|t|)*N^(-sigma)/N for N>0,t nonzero. The zero integer, complex-power convention and real part of the argument are handled explicitly. This proves a genuine zeta-tail estimate, without asserting the still missing global smallness or MR frequency bound.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.99 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18313 jobs); direct axiom audit passed for 18852 declarations using only propext, Classical.choice and Quot.sound; all 19087 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.96 GiB.

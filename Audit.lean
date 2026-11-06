@@ -3308,6 +3308,12 @@ import PaperP1
 #print axioms PaperP1.ActualTaylorRemainderBound.factorial_divisor_bound
 #print axioms PaperP1.ActualTaylorRemainderBound.remainder_bound
 #print axioms PaperP1.ActualVariablePrimeLargeValues.sampled_card_bound
+#print axioms PaperP1.ActualZetaTail.argument_re
+#print axioms PaperP1.ActualZetaTail.phase_eq_cpow
+#print axioms PaperP1.ActualZetaTail.integrand_eq_cpow
+#print axioms PaperP1.ActualZetaTail.nat_integrand_eq_cpow
+#print axioms PaperP1.ActualZetaTail.series_eq_zeta
+#print axioms PaperP1.ActualZetaTail.zeta_difference_bound
 #print axioms PaperP1.AdjacentSquarefreeBudget.odd_term_bound
 #print axioms PaperP1.AdjacentSquarefreeBudget.odd_partial_sum
 #print axioms PaperP1.AdjacentSquarefreeBudget.odd_uniform_sum

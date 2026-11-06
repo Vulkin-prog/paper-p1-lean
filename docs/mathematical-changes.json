@@ -38589,6 +38589,39 @@
         "status": "not_integrated"
       },
       "validation_commit": "654c67d3a23ba141144206d821dc049e7fe48fde"
+    },
+    {
+      "id": "P1-MATH-0873",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The custom damped series must be compared with the actual analytic zeta definition before using it in an Euler-product argument.",
+      "finding": "Six theorems and one definition identify exp(-it log x) with the actual complex power, the damped integrand with x^(-(1+sigma+it)), and its absolutely convergent series with Mathlib riemannZeta at 1+sigma+it when sigma>0. The exact proved remainder therefore gives norm(zeta minus its literal finite head)<=2*N^(-sigma)/|t|+2*(1+sigma+|t|)*N^(-sigma)/N for N>0,t nonzero. The zero integer, complex-power convention and real part of the argument are handled explicitly. This proves a genuine zeta-tail estimate, without asserting the still missing global smallness or MR frequency bound.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "The proved damped series and tail are identified with the actual Riemann zeta function. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.ActualZetaTail.argument_re",
+        "PaperP1.ActualZetaTail.phase_eq_cpow",
+        "PaperP1.ActualZetaTail.integrand_eq_cpow",
+        "PaperP1.ActualZetaTail.nat_integrand_eq_cpow",
+        "PaperP1.ActualZetaTail.series_eq_zeta",
+        "PaperP1.ActualZetaTail.zeta_difference_bound",
+        "PaperP1.ActualZetaTail.argument"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18313 jobs); direct axiom audit passed for 18852 declarations using only propext, Classical.choice and Quot.sound; all 19087 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.96 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
