@@ -4623,6 +4623,13 @@ import PaperP1
 #print axioms PaperP1.PolynomialVerticalRootUniqueness.exists_nonzero_box
 #print axioms PaperP1.PolynomialVerticalRootUniqueness.exists_local_vertical_unique
 #print axioms PaperP1.PositiveFractionCostNormalization.with_errors
+#print axioms PaperP1.PositiveReciprocalKernel.coefficient_pos
+#print axioms PaperP1.PositiveReciprocalKernel.kernel_nonneg
+#print axioms PaperP1.PositiveReciprocalKernel.kernel_pos
+#print axioms PaperP1.PositiveReciprocalKernel.first_coefficient
+#print axioms PaperP1.PositiveReciprocalKernel.inverse_first_hasDerivAt
+#print axioms PaperP1.PositiveReciprocalKernel.inverse_derivative_nonneg
+#print axioms PaperP1.PositiveReciprocalKernel.inverse_integral
 #print axioms PaperP1.PowerLogPrimeBand.lower_tendsto
 #print axioms PaperP1.PowerLogPrimeBand.geometry_eventually
 #print axioms PaperP1.PowerLogPrimeBand.harmonic_gap_tendsto

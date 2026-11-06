@@ -1,6 +1,15 @@
 # Multiquadratic split radicands: exact square-class independence
 
-Current checkpoint P1-MATH-0850: Actual iterated logarithmic
+Current checkpoint P1-MATH-0851: Positive shifted kernels have an exact
+reciprocal derivative and integral identity. The triple-large prime
+frequency contribution, the central-frequency mean comparison and
+complete logarithmic short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 51.25 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0850: Actual iterated logarithmic
 correlations have exact reciprocal-kernel derivatives. The triple-large
 prime frequency contribution, the central-frequency mean comparison and
 complete logarithmic short-average concentration remain unproved. T19.17
@@ -27153,3 +27162,12 @@ Define the ACTUAL iterated logarithmic phase starting from -log x, and the actua
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.25 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18267 jobs); direct axiom audit passed for 18735 declarations using only propext, Classical.choice and Quot.sound; all 18947 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.23 GiB.
+
+
+## Positive shifted kernels have an exact reciprocal derivative and integral identity
+
+For strictly positive shifts and m>0, the ACTUAL kernel K(hs,m,x) is strictly positive on x>0; nonnegative shifts give a nonnegative kernel. The first coefficient is EXACTLY length(hs)!*product(hs). The reciprocal first kernel has actual derivative K(hs,2,x)/K(hs,1,x)^2, which is nonnegative. Its ACTUAL interval integral equals 1/K(hs,1,B)-1/K(hs,1,A) for 0<A<=B. Seven theorems retain every endpoint and positivity condition, preparing an integration-by-parts bound with exact remainder integration.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.25 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18269 jobs); direct axiom audit passed for 18742 declarations using only propext, Classical.choice and Quot.sound; all 18954 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.21 GiB.
