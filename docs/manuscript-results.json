@@ -42175,7 +42175,8 @@
             "PaperP1.GeneratedMonicCriticalPointCount.exceptional_cardinality"
           ]
         }
-      ]
+      ],
+      "validation_commit": "7e6b2ec36df566927fb2aa0485375b7260cdc05d"
     },
     {
       "label": "p1:arith:dense",
