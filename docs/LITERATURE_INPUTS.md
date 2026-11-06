@@ -1,6 +1,16 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0677: ACTUAL normalized finite Euler
+Current checkpoint P1-MATH-0678: ACTUAL finite integer polynomials
+on the selected-prime support have a UNIFORM N^(-1/4) truncation
+error and proved frequency square means. Every repeated prime
+power, finite index and coefficient/frequency quantifier is retained.
+This support is NOT the original full dyadic multiplicative sum;
+that transfer and logarithmic short-average assembly remain
+UNPROVED. T19.17 conditional; original T1.7 complete. Coverage:
+164 proved, 1 conditional, 2 in_progress /167; all 73 main proved.
+False scopes and checked corrections unchanged. No Palomar.
+
+Historical checkpoint P1-MATH-0677: ACTUAL normalized finite Euler
 products have UNIFORM small frequency square means. They equal
 an ACTUAL absolutely convergent integer Dirichlet series on the
 positive integers supported by the selected finite primes, with
@@ -30659,6 +30669,16 @@ series is not the original full dyadic sum; truncation, multiplicative
 mean transfer and logarithmic short-average assembly remain unfinished.
 T19.17 stays conditional; complete original T1.7 unconditional.
 
+## Internal actual finite-prime integer truncation
+
+P1-MATH-0678 proves the actual reciprocal tail, uniform N^(-1/4)
+truncation and frequency square means for the literal finite integer
+polynomial supported on the selected primes. Its restricted support
+and repeated powers are explicit. The original full dyadic mean,
+local prime-density/weighted prime estimate, exceptional quotient
+mass and logarithmic short-average assembly remain unfinished.
+T19.17 stays conditional; complete original T1.7 unconditional.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -32360,3 +32380,20 @@ The exact actual series inherits the normalized bound exp(sum 1/p^2-D). It also 
 This closes actual normalized Euler frequency integration and its exact absolutely convergent finite-prime INTEGER-series interpretation. The integer series is infinite on its actual finite-prime support; its truncation and transfer to the original full dyadic multiplicative sum remain unfinished. No identification with that full dyadic sum or Halasz mean theorem is asserted. Tail/truncation control, full multiplicative mean transfer, exceptional quotient-frequency mass and logarithmic short-average assembly remain unfinished. T19.17 retains its explicit analytic input; original complete T1.7 remains unconditional. Coverage stays 164 proved, 1 conditional, 2 in_progress out of 167; all 73 main results proved. Original false scopes and checked corrected replacements are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Ubuntu retains about 54.4 GiB. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17907 jobs); direct axiom audit passed for 17828 declarations using only propext, Classical.choice and Quot.sound; all 17831 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.35 GiB.
+
+
+## Actual finite-prime integer truncation with uniform power tails and square means
+
+Stable ID: p1:internal:finite-prime-integer-truncation. Actual finite integer truncation, uniform power tails and finite-supported square means are internal. The selected-prime support is preserved; transfer to the original full dyadic multiplicative sum remains unfinished.
+
+FinitePrimeReciprocalTail constructs the actual multiplicative weight 1/sqrt(n). On the positive integers supported by a finite prime set its series is absolutely convergent and equals the literal product prod_p(1-1/sqrt(p))^(-1). A pointwise Rankin inequality gives the actual reciprocal tail beyond ANY real X>0 at most this product divided by sqrt(X). If all selected integers p>=L>=4, the actual root product is at most exp(2*|P|/sqrt(L)), with every factor and quadratic logarithm error proved.
+
+For the actual band log log N<p<=log N, the exact cardinality cap and lower endpoint divergence give the unconditional eventual bound sum_{n in factoredNumbers(P_N), n>N}1/n <=N^(-1/4). The actual tail tends to zero. No distribution of finite-prime-supported integers, tail-smallness premise or external asymptotic is used. Every repeated prime power remains in the actual arithmetic series.
+
+FinitePrimeDirichletTruncation defines the literal finite set of positive n<=X all of whose prime factors belong to P, the actual finite sum on that set and its actual infinite series. Norm summability is proved for EVERY complex coefficient function bounded by one on this exact support. The exact finite-sum/complement identity and norm-sum bounds yield |infinite series-finite sum|<=the ACTUAL positive reciprocal tail. Therefore one eventual N cutoff works before ALL bounded complex coefficients and ALL real frequencies, with truncation error <=N^(-1/4) on the actual slow band. The finite polynomial is continuous. A checked prime induction also shows that real completely multiplicative functions with all prime values bounded by one have |f(n)|<=1 for every positive n.
+
+FinitePrimeTruncatedSquareMean proves the continuous square-error budget and transports the internal infinite-series/Euler mean to the ACTUAL finite integer polynomial. For EVERY eta>0 one N0>=2 is chosen before all N>=N0, all real T>=log N and every real completely multiplicative f with bounded prime values, so that integral_[-T,T](exp(-H_N)*|sum_{n<=N, n in factoredNumbers(P_N)}f(n)/n*exp(-it log n)|)^2 <=eta*T. The explicit uniform N^(-1/4) tail pays a proved frequency-square error, including exact interval length and coefficient normalization. Three modules add seventeen theorems and six definitions.
+
+This closes actual integer truncation and uniform frequency means for the finite-prime-supported polynomial. Its support is explicitly restricted to integers whose EVERY prime factor lies in P_N; it is NOT the original full dyadic multiplicative polynomial. Transfer to that original sum, the Halasz/mean estimate, exceptional quotient-frequency mass, coupled-domain handling and logarithmic short-average assembly remain unfinished. T19.17 retains its explicit analytic input; original complete T1.7 remains unconditional. Coverage stays 164 proved, 1 conditional, 2 in_progress out of 167; all 73 main results proved. Original false scopes and checked corrections are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Ubuntu retains about 54.3 GiB; no dependency download. For the subsequent local-prime-density stage, Mathlib.NumberTheory.SelbergSieve was built selectively and successfully from existing sources, with disk checks; it is not an unproved input or a completed Brun-type bound. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17913 jobs); direct axiom audit passed for 17845 declarations using only propext, Classical.choice and Quot.sound; all 17854 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.32 GiB.

@@ -4611,3 +4611,6 @@ public import PaperP1.Analysis.RealPrimeEulerBound
 public import PaperP1.Analysis.ExceptionalSquareIntegral
 public import PaperP1.Analysis.FinitePrimeDirichletSeries
 public import PaperP1.Analysis.RealEulerSquareMean
+public import PaperP1.Analysis.FinitePrimeDirichletTruncation
+public import PaperP1.Analysis.FinitePrimeReciprocalTail
+public import PaperP1.Analysis.FinitePrimeTruncatedSquareMean

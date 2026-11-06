@@ -1,6 +1,16 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0677: ACTUAL normalized finite Euler
+Current checkpoint P1-MATH-0678: ACTUAL finite integer polynomials
+on the selected-prime support have a UNIFORM N^(-1/4) truncation
+error and proved frequency square means. Every repeated prime
+power, finite index and coefficient/frequency quantifier is retained.
+This support is NOT the original full dyadic multiplicative sum;
+that transfer and logarithmic short-average assembly remain
+UNPROVED. T19.17 conditional; original T1.7 complete. Coverage:
+164 proved, 1 conditional, 2 in_progress /167; all 73 main proved.
+False scopes and checked corrections unchanged. No Palomar.
+
+Historical checkpoint P1-MATH-0677: ACTUAL normalized finite Euler
 products have UNIFORM small frequency square means. They equal
 an ACTUAL absolutely convergent integer Dirichlet series on the
 positive integers supported by the selected finite primes, with
@@ -1004,7 +1014,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records675 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records676 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -1123,7 +1133,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **17828 audited theorem/lemma declarations**. This
+- The project currently has **17845 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -30775,3 +30785,18 @@ The exact actual series inherits the normalized bound exp(sum 1/p^2-D). It also 
 This closes actual normalized Euler frequency integration and its exact absolutely convergent finite-prime INTEGER-series interpretation. The integer series is infinite on its actual finite-prime support; its truncation and transfer to the original full dyadic multiplicative sum remain unfinished. No identification with that full dyadic sum or Halasz mean theorem is asserted. Tail/truncation control, full multiplicative mean transfer, exceptional quotient-frequency mass and logarithmic short-average assembly remain unfinished. T19.17 retains its explicit analytic input; original complete T1.7 remains unconditional. Coverage stays 164 proved, 1 conditional, 2 in_progress out of 167; all 73 main results proved. Original false scopes and checked corrected replacements are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Ubuntu retains about 54.4 GiB. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17907 jobs); direct axiom audit passed for 17828 declarations using only propext, Classical.choice and Quot.sound; all 17831 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.35 GiB.
+
+
+## Actual finite-prime integer truncation with uniform power tails and square means
+
+FinitePrimeReciprocalTail constructs the actual multiplicative weight 1/sqrt(n). On the positive integers supported by a finite prime set its series is absolutely convergent and equals the literal product prod_p(1-1/sqrt(p))^(-1). A pointwise Rankin inequality gives the actual reciprocal tail beyond ANY real X>0 at most this product divided by sqrt(X). If all selected integers p>=L>=4, the actual root product is at most exp(2*|P|/sqrt(L)), with every factor and quadratic logarithm error proved.
+
+For the actual band log log N<p<=log N, the exact cardinality cap and lower endpoint divergence give the unconditional eventual bound sum_{n in factoredNumbers(P_N), n>N}1/n <=N^(-1/4). The actual tail tends to zero. No distribution of finite-prime-supported integers, tail-smallness premise or external asymptotic is used. Every repeated prime power remains in the actual arithmetic series.
+
+FinitePrimeDirichletTruncation defines the literal finite set of positive n<=X all of whose prime factors belong to P, the actual finite sum on that set and its actual infinite series. Norm summability is proved for EVERY complex coefficient function bounded by one on this exact support. The exact finite-sum/complement identity and norm-sum bounds yield |infinite series-finite sum|<=the ACTUAL positive reciprocal tail. Therefore one eventual N cutoff works before ALL bounded complex coefficients and ALL real frequencies, with truncation error <=N^(-1/4) on the actual slow band. The finite polynomial is continuous. A checked prime induction also shows that real completely multiplicative functions with all prime values bounded by one have |f(n)|<=1 for every positive n.
+
+FinitePrimeTruncatedSquareMean proves the continuous square-error budget and transports the internal infinite-series/Euler mean to the ACTUAL finite integer polynomial. For EVERY eta>0 one N0>=2 is chosen before all N>=N0, all real T>=log N and every real completely multiplicative f with bounded prime values, so that integral_[-T,T](exp(-H_N)*|sum_{n<=N, n in factoredNumbers(P_N)}f(n)/n*exp(-it log n)|)^2 <=eta*T. The explicit uniform N^(-1/4) tail pays a proved frequency-square error, including exact interval length and coefficient normalization. Three modules add seventeen theorems and six definitions.
+
+This closes actual integer truncation and uniform frequency means for the finite-prime-supported polynomial. Its support is explicitly restricted to integers whose EVERY prime factor lies in P_N; it is NOT the original full dyadic multiplicative polynomial. Transfer to that original sum, the Halasz/mean estimate, exceptional quotient-frequency mass, coupled-domain handling and logarithmic short-average assembly remain unfinished. T19.17 retains its explicit analytic input; original complete T1.7 remains unconditional. Coverage stays 164 proved, 1 conditional, 2 in_progress out of 167; all 73 main results proved. Original false scopes and checked corrections are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Ubuntu retains about 54.3 GiB; no dependency download. For the subsequent local-prime-density stage, Mathlib.NumberTheory.SelbergSieve was built selectively and successfully from existing sources, with disk checks; it is not an unproved input or a completed Brun-type bound. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17913 jobs); direct axiom audit passed for 17845 declarations using only propext, Classical.choice and Quot.sound; all 17854 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.32 GiB.

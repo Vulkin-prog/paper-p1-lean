@@ -32075,6 +32075,55 @@
         "status": "not_integrated"
       },
       "validation_commit": "9b9ae755c43f4ca0cc37914e9a07f90a459a54fc"
+    },
+    {
+      "id": "P1-MATH-0678",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The actual finite-prime Euler series was infinite, so its integrated estimate did not yet control a literal finite integer polynomial; a uniform tail and exact complement/truncation identity were still required.",
+      "finding": "An actual 1/sqrt(n) series gives a quantitative reciprocal tail, at most N^(-1/4) eventually on the slow band. Exact finite integer indices and complement summation give a coefficient- and frequency-uniform truncation error, and the frequency square-mean estimate transfers to that actual finite supported polynomial.",
+      "proposed_revision": "Use the proved actual finite integer polynomial and its uniform power tail, preserving the finite-prime support restriction and all repeated powers. Prove transfer to the original unrestricted dyadic polynomial and the remaining analytic estimates separately.",
+      "impact": "Closes actual finite-prime integer truncation and its uniform square means. The restricted support is not the original full dyadic sum; Halasz/short-average transfer and T19.17 remain unfinished.",
+      "evidence": [
+        "PaperP1.FinitePrimeDirichletTruncation.truncated_continuous",
+        "PaperP1.FinitePrimeDirichletTruncation.reciprocal_summable",
+        "PaperP1.FinitePrimeDirichletTruncation.norm_summable",
+        "PaperP1.FinitePrimeDirichletTruncation.complement_reciprocal",
+        "PaperP1.FinitePrimeDirichletTruncation.truncation_error",
+        "PaperP1.FinitePrimeDirichletTruncation.slow_band_uniform_truncation",
+        "PaperP1.FinitePrimeDirichletTruncation.real_hom_bound",
+        "PaperP1.FinitePrimeReciprocalTail.root_prime_lt_one",
+        "PaperP1.FinitePrimeReciprocalTail.root_series",
+        "PaperP1.FinitePrimeReciprocalTail.rankin_term",
+        "PaperP1.FinitePrimeReciprocalTail.tail_bound",
+        "PaperP1.FinitePrimeReciprocalTail.real_factor_bound",
+        "PaperP1.FinitePrimeReciprocalTail.root_euler_bound",
+        "PaperP1.FinitePrimeReciprocalTail.slow_band_tail_bound_eventually",
+        "PaperP1.FinitePrimeReciprocalTail.slow_band_tail_tendsto",
+        "PaperP1.FinitePrimeTruncatedSquareMean.square_error_budget",
+        "PaperP1.FinitePrimeTruncatedSquareMean.normalized_truncated_square_mean_small",
+        "PaperP1.FinitePrimeDirichletTruncation.indices",
+        "PaperP1.FinitePrimeDirichletTruncation.total",
+        "PaperP1.FinitePrimeDirichletTruncation.truncated",
+        "PaperP1.FinitePrimeReciprocalTail.rootWeight",
+        "PaperP1.FinitePrimeReciprocalTail.rootEuler",
+        "PaperP1.FinitePrimeReciprocalTail.tail"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17913 jobs); direct axiom audit passed for 17845 declarations using only propext, Classical.choice and Quot.sound; all 17854 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.32 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
