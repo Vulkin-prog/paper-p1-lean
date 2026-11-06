@@ -30184,6 +30184,34 @@
         "status": "not_integrated"
       },
       "validation_commit": "1a3cc1cdc5c32f1290bf4c2b513cf15af2450b37"
+    },
+    {
+      "id": "P1-MATH-0630",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The odd-degree literal point upper estimate did not yet bound the opposite sign of its character sum.",
+      "finding": "Comparing an actual polynomial with a nonsquare scalar twist proves both signs and hence an absolute relative character-sum bound, uniformly before all primes and coefficients at bounded odd degree.",
+      "proposed_revision": "Use this internally proved weak cancellation in the odd-degree split-product case. Retain the exact odd-degree and large-prime quantifiers; do not state a square-root error or a general plane estimate.",
+      "impact": "Discharges the internal odd-degree absolute cancellation gap. Even split products and projected-surface transfer still need proofs; canonical manuscript coverage and inputs do not change.",
+      "evidence": [
+        "PaperP1.HyperellipticOddDegreeCharacterEstimate.twisted_sum",
+        "PaperP1.HyperellipticOddDegreeCharacterEstimate.uniform_absolute"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17721 jobs); direct axiom audit passed for 17355 declarations using only propext, Classical.choice and Quot.sound; all 17238 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.24 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

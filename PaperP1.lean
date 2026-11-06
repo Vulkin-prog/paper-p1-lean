@@ -4518,3 +4518,4 @@ public import PaperP1.Algebra.HyperellipticTangentAuxiliary
 public import PaperP1.Algebra.HyperellipticAuxiliaryDimensionGap
 public import PaperP1.Analysis.HyperellipticAuxiliaryParameters
 public import PaperP1.Arithmetic.HyperellipticOddDegreePointEstimate
+public import PaperP1.Arithmetic.HyperellipticOddDegreeCharacterEstimate

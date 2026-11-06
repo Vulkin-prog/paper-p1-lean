@@ -1,6 +1,16 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0629: an UNCONDITIONAL actual point bound is
+Current checkpoint P1-MATH-0630: absolute relative character cancellation
+is UNCONDITIONAL for EVERY odd-degree polynomial of bounded degree over
+sufficiently large prime fields. The cutoff precedes all primes and all
+coefficients. Nonsquare scalar twists and both literal point estimates
+are internal proofs. This is a weak eta*p error, not a square-root bound.
+Even split products and source-to-projected-P3 transfer remain UNPROVED.
+Canonical T1.7 retains ONLY its prior P3 input in degrees>2 at the original
+families/caps. Coverage stays163 proved,2 conditional,2 in_progress out
+of167; all73 main results proved. No Palomar registration.
+
+Historical checkpoint P1-MATH-0629: an UNCONDITIONAL actual point bound is
 proved for EVERY odd-degree quadratic equation y^2=f(x). For eta>0 a cutoff
 chosen BEFORE all primes and coefficient polynomials gives N<=(1+eta)*p.
 One cutoff covers every odd degree up to a fixed cap. Actual auxiliaries,
@@ -447,7 +457,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records627 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records628 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -566,7 +576,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **17353 audited theorem/lemma declarations**. This
+- The project currently has **17355 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -29620,3 +29630,12 @@ HyperellipticOddDegreePointEstimate assembles the complete UNCONDITIONAL bound f
 Three modules add five theorems and no definitions. The internal uniform large-prime parameter and odd-degree quadratic-curve point-count gaps are now discharged. This is a WEAK relative-error estimate for actual odd-degree quadratic equations, not a square-root error theorem for all plane curves. Absolute character cancellation via twists, even-degree split products and the source-to-projected-P3 transfer still require proofs. Thus neither classical plane input of the alternative T1.7 route nor the canonical general P3 point input is discharged. Canonical T1.7 remains UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the original three families/caps. Coverage stays163 proved,2 conditional,2 in_progress out of167; all73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and allowed axioms are unchanged. All work remains on Ubuntu with about55.3GiB available and no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17719 jobs); direct axiom audit passed for 17353 declarations using only propext, Classical.choice and Quot.sound; all 17236 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.26 GiB.
+
+
+## Unconditional absolute quadratic-character cancellation for every bounded odd-degree polynomial
+
+HyperellipticOddDegreeCharacterEstimate proves the exact character-sum identity for a scalar twist and then derives UNCONDITIONAL absolute cancellation for EVERY odd-degree polynomial over a sufficiently large prime field. For each degree capD and each eta>0, one natural cutoffK is chosen BEFORE all primes and all coefficient polynomials. Every actual odd-degree f of degree at mostD satisfies |sum_x chi(f(x))|<=eta*p for every primep>=K. A nonsquare scalar exists in every odd prime field, its twist preserves the actual degree, and the two already proved literal quadratic-curve point estimates bound both signs of the sum. The proof handles the concrete prime-field character instances explicitly.
+
+One module adds two theorems and no definitions. The odd-degree absolute character-cancellation gap is discharged with no external Weil bound, no squarefreeness premise and no desired cancellation input. This is a weak relative-error estimate, not a square-root error. Even-degree split products, their exact inversion identity and the source-to-projected-P3 transfer remain unproved. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7, retaining ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same three original families/caps. Neither general plane input is discharged. Coverage remains163 proved,2 conditional,2 in_progress out of167; all73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and allowed axioms remain unchanged. Work stays on Ubuntu with about55.2GiB available and no dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17721 jobs); direct axiom audit passed for 17355 declarations using only propext, Classical.choice and Quot.sound; all 17238 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.24 GiB.

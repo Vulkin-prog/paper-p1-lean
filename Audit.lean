@@ -5743,6 +5743,8 @@ import PaperP1
 #print axioms PaperP1.HyperellipticFiniteFieldPoints.cardinality_decomposition
 #print axioms PaperP1.HyperellipticFiniteFieldPoints.branch_card_le
 #print axioms PaperP1.HyperellipticFiniteFieldPoints.good_root
+#print axioms PaperP1.HyperellipticOddDegreeCharacterEstimate.twisted_sum
+#print axioms PaperP1.HyperellipticOddDegreeCharacterEstimate.uniform_absolute
 #print axioms PaperP1.HyperellipticOddDegreePointEstimate.uniform_upper_bound
 #print axioms PaperP1.HyperellipticOddDegreePointEstimate.uniform_degree_cap
 #print axioms PaperP1.HyperellipticStepanovPointBound.good_cardinality_bound

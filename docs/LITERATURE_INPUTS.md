@@ -1,6 +1,16 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0629: an UNCONDITIONAL actual point bound is
+Current checkpoint P1-MATH-0630: absolute relative character cancellation
+is UNCONDITIONAL for EVERY odd-degree polynomial of bounded degree over
+sufficiently large prime fields. The cutoff precedes all primes and all
+coefficients. Nonsquare scalar twists and both literal point estimates
+are internal proofs. This is a weak eta*p error, not a square-root bound.
+Even split products and source-to-projected-P3 transfer remain UNPROVED.
+Canonical T1.7 retains ONLY its prior P3 input in degrees>2 at the original
+families/caps. Coverage stays163 proved,2 conditional,2 in_progress out
+of167; all73 main results proved. No Palomar registration.
+
+Historical checkpoint P1-MATH-0629: an UNCONDITIONAL actual point bound is
 proved for EVERY odd-degree quadratic equation y^2=f(x). For eta>0 a cutoff
 chosen BEFORE all primes and coefficient polynomials gives N<=(1+eta)*p.
 One cutoff covers every odd degree up to a fixed cap. Actual auxiliaries,
@@ -29643,6 +29653,14 @@ for the stated subclass. It does not discharge the general plane-curve or
 P3 input. Absolute character cancellation, even split products and
 source-to-projected-P3 transfer remain to be proved.
 
+## Internal odd-degree absolute character cancellation
+
+P1-MATH-0630 proves |sum chi(f)|<=eta*p for every odd-degree polynomial
+of bounded degree, with a prime cutoff before all primes and coefficients.
+A nonsquare scalar twist and the internally proved literal quadratic-curve
+counts provide both signs. No external Weil or character estimate is used.
+Even split products and projected-P3 transfer remain unproved.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -30647,3 +30665,14 @@ HyperellipticOddDegreePointEstimate assembles the complete UNCONDITIONAL bound f
 Three modules add five theorems and no definitions. The internal uniform large-prime parameter and odd-degree quadratic-curve point-count gaps are now discharged. This is a WEAK relative-error estimate for actual odd-degree quadratic equations, not a square-root error theorem for all plane curves. Absolute character cancellation via twists, even-degree split products and the source-to-projected-P3 transfer still require proofs. Thus neither classical plane input of the alternative T1.7 route nor the canonical general P3 point input is discharged. Canonical T1.7 remains UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the original three families/caps. Coverage stays163 proved,2 conditional,2 in_progress out of167; all73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and allowed axioms are unchanged. All work remains on Ubuntu with about55.3GiB available and no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17719 jobs); direct axiom audit passed for 17353 declarations using only propext, Classical.choice and Quot.sound; all 17236 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.26 GiB.
+
+
+## Unconditional absolute quadratic-character cancellation for every bounded odd-degree polynomial
+
+Stable ID: p1:internal:unconditional-odd-degree-character-cancellation. Odd-degree absolute cancellation is now an internal proof. Even split products and projected-P3 transfer remain unproved; canonical T1.7 is unchanged.
+
+HyperellipticOddDegreeCharacterEstimate proves the exact character-sum identity for a scalar twist and then derives UNCONDITIONAL absolute cancellation for EVERY odd-degree polynomial over a sufficiently large prime field. For each degree capD and each eta>0, one natural cutoffK is chosen BEFORE all primes and all coefficient polynomials. Every actual odd-degree f of degree at mostD satisfies |sum_x chi(f(x))|<=eta*p for every primep>=K. A nonsquare scalar exists in every odd prime field, its twist preserves the actual degree, and the two already proved literal quadratic-curve point estimates bound both signs of the sum. The proof handles the concrete prime-field character instances explicitly.
+
+One module adds two theorems and no definitions. The odd-degree absolute character-cancellation gap is discharged with no external Weil bound, no squarefreeness premise and no desired cancellation input. This is a weak relative-error estimate, not a square-root error. Even-degree split products, their exact inversion identity and the source-to-projected-P3 transfer remain unproved. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7, retaining ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same three original families/caps. Neither general plane input is discharged. Coverage remains163 proved,2 conditional,2 in_progress out of167; all73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and allowed axioms remain unchanged. Work stays on Ubuntu with about55.2GiB available and no dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17721 jobs); direct axiom audit passed for 17355 declarations using only propext, Classical.choice and Quot.sound; all 17238 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.24 GiB.
