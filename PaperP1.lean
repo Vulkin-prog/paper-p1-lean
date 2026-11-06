@@ -4753,3 +4753,4 @@ public import PaperP1.Analysis.IntermediateContributionSmall
 public import PaperP1.Analysis.JointLargeFrequencyReduction
 public import PaperP1.Analysis.FinalPrimeBandGeometry
 public import PaperP1.Analysis.FinalPrimeBandSieve
+public import PaperP1.Analysis.FinalPrimeBandPopulation

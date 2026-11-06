@@ -36736,6 +36736,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "ff1e1f0d856223f4417942a1c64a37199c1ff345"
+    },
+    {
+      "id": "P1-MATH-0814",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The final-band relative Ramare identity requires actual simultaneous support, no final prime squares, actual disjointness and a cofactor-size bound.",
+      "finding": "Intersect the ACTUAL two-band good population with the ACTUAL final-band good population. Its missing dyadic density tends to zero for every fixed B>=32. Every retained integer has a divisor from EACH of the three prime bands and has NO squared divisor from ANY of them. The final and first prime bands are eventually disjoint, and every final prime satisfies 1<=p<=N^(1/16) for B>=32 and N>=1. Five theorems and one actual population definition retain all counts and exclusions.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "A three-band good population retains density one and every required support condition. The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.FinalPrimeBandPopulation.good_subset",
+        "PaperP1.FinalPrimeBandPopulation.good_support",
+        "PaperP1.FinalPrimeBandPopulation.missing_good_density_tendsto",
+        "PaperP1.FinalPrimeBandPopulation.disjoint_first_eventually",
+        "PaperP1.FinalPrimeBandPopulation.prime_bounds",
+        "PaperP1.FinalPrimeBandPopulation.good"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18195 jobs); direct axiom audit passed for 18631 declarations using only propext, Classical.choice and Quot.sound; all 18826 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.88 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

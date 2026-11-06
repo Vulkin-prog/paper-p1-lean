@@ -3873,6 +3873,11 @@ import PaperP1
 #print axioms PaperP1.FinalPrimeBandGeometry.upper_tendsto
 #print axioms PaperP1.FinalPrimeBandGeometry.geometry_eventually
 #print axioms PaperP1.FinalPrimeBandGeometry.harmonic_gap_tendsto
+#print axioms PaperP1.FinalPrimeBandPopulation.good_subset
+#print axioms PaperP1.FinalPrimeBandPopulation.good_support
+#print axioms PaperP1.FinalPrimeBandPopulation.missing_good_density_tendsto
+#print axioms PaperP1.FinalPrimeBandPopulation.disjoint_first_eventually
+#print axioms PaperP1.FinalPrimeBandPopulation.prime_bounds
 #print axioms PaperP1.FinalPrimeBandSieve.upper_rpow
 #print axioms PaperP1.FinalPrimeBandSieve.upper_square_identity
 #print axioms PaperP1.FinalPrimeBandSieve.upper_square_tendsto
