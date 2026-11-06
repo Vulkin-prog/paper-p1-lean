@@ -3283,6 +3283,8 @@ import PaperP1
 #print axioms PaperP1.ActualEulerBand.real_band_bound
 #print axioms PaperP1.ActualLocalUnitMapGridCount.exists_at_nonexceptional
 #print axioms PaperP1.ActualLocalUnitMapGridCount.exists_control_set_and_maps
+#print axioms PaperP1.ActualMixedPrimeMean.continuous_mixed_bound
+#print axioms PaperP1.ActualMixedPrimeMean.sampled_mixed_bound
 #print axioms PaperP1.ActualTaylorRemainderBound.jet_self
 #print axioms PaperP1.ActualTaylorRemainderBound.within_eq_jet
 #print axioms PaperP1.ActualTaylorRemainderBound.factorial_divisor_bound

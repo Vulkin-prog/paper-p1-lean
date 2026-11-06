@@ -1,6 +1,15 @@
 # Actual projective scheme map
 
-Current checkpoint P1-MATH-0794: Actual mixed frequency sets admit a
+Current checkpoint P1-MATH-0795: Actual mixed prime polynomial frequency
+means have explicit all-order amplification bounds. The complementary
+bad-prime frequency contribution, the central-frequency mean subtraction
+and complete logarithmic short-average concentration remain unproved.
+T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 52.25 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0794: Actual mixed frequency sets admit a
 proved power amplification inequality. The complementary bad-prime
 frequency contribution, the central-frequency mean subtraction and
 complete logarithmic short-average concentration remain unproved. T19.17
@@ -25420,3 +25429,12 @@ For EVERY order k, threshold v>0 and w>=0, the pointwise conditions v<=|A| and |
 The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.25 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18155 jobs); direct axiom audit passed for 18558 declarations using only propext, Classical.choice and Quot.sound; all 18741 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.24 GiB.
+
+
+## Actual mixed prime polynomial frequency means have explicit all-order amplification bounds
+
+The actual mixed set is formed from the literal Dirichlet polynomial on P being >=v and the literal polynomial on Q being <=w. For prime P of reciprocal mass<=1, unit prime coefficients and unit coefficients on the actual cofactor interval, the restricted integral of the ACTUAL Q-polynomial times cofactor has the explicit factor w^2/v^(2*k) times the fully proved amplified-prime mean budget. A corresponding actual unit-separated sampled bound holds for every sample in this same mixed set, with the exact support powers and centered bandwidth. Two theorems establish both conclusions with all parameters and interval endpoints explicit; no asymptotic parameter choice is assumed.
+
+The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.25 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18157 jobs); direct axiom audit passed for 18560 declarations using only propext, Classical.choice and Quot.sound; all 18743 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.22 GiB.
