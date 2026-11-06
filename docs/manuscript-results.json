@@ -37451,7 +37451,8 @@
             "PaperP1.UniformGeometricCountsAuxiliaryInput.p3_hypotheses"
           ]
         }
-      ]
+      ],
+      "validation_commit": "27ca12a3396da84e64e23513d02eb877053b0e85"
     },
     {
       "label": "p1:arith:dense",
