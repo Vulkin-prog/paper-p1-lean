@@ -1,6 +1,15 @@
 # Mathematical corrections and improvements
 
-Current checkpoint P1-MATH-0929: Actual prime synthesis is bounded by
+Current checkpoint P1-MATH-0930: The actual Selberg kernel has one
+Gaussian-plus-power envelope on the full polynomial frequency range. The
+triple-large prime frequency contribution, the central-frequency mean
+comparison and complete logarithmic short-average concentration remain
+unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164
+proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources,
+false-scope corrections, compiler and axioms unchanged. About 52.92 GiB
+free on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0929: Actual prime synthesis is bounded by
 the positive Selberg energy and has a proved finite duality step. The
 triple-large prime frequency contribution, the central-frequency mean
 comparison and complete logarithmic short-average concentration remain
@@ -3130,7 +3139,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**927 mathematical improvements and two statement-scope corrections are confirmed.**
+**928 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -34581,3 +34590,12 @@ Five theorems prove the exact positive-integer reindexing of finite prime sets i
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.96 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18425 jobs); direct axiom audit passed for 19083 declarations using only propext, Classical.choice and Quot.sound; all 19359 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.94 GiB.
+
+
+## The actual Selberg kernel has one Gaussian-plus-power envelope on the full polynomial frequency range
+
+Six theorems and two definitions prove an explicit positive decay delta_B<=1/4, a positive error coefficient and the exact norm of the common-phase Gaussian main term. For fixed B>0, ONE scale cutoff precedes ALL A, ALL positive integer levels Z with Z^2<=sqrt(A), and ALL |t|<=A^B. The actual Selberg kernel norm is bounded by (A*sqrt(pi)/G)*exp(-t^2/4)+C_B*Z^4*A^(1-delta_B). The central Gaussian term is retained; the near and far regimes are covered by actual proved bounds.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.92 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18427 jobs); direct axiom audit passed for 19089 declarations using only propext, Classical.choice and Quot.sound; all 19367 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.92 GiB.

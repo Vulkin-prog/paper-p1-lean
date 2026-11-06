@@ -5685,6 +5685,12 @@ import PaperP1
 #print axioms PaperP1.UniformRealWeightedInterval.value_eq_weighted_sum
 #print axioms PaperP1.UniformRealWeightedInterval.uniform_bound
 #print axioms PaperP1.UniformSaddleVariation.uniform_left_variation
+#print axioms PaperP1.UniformSelbergKernelEnvelope.decay_pos
+#print axioms PaperP1.UniformSelbergKernelEnvelope.decay_le_quarter
+#print axioms PaperP1.UniformSelbergKernelEnvelope.coefficient_pos
+#print axioms PaperP1.UniformSelbergKernelEnvelope.main_norm
+#print axioms PaperP1.UniformSelbergKernelEnvelope.normalized_main_norm
+#print axioms PaperP1.UniformSelbergKernelEnvelope.uniform_bound
 #print axioms PaperP1.UniformZetaSublogarithmic.uniform_bound
 #print axioms PaperP1.UniformZetaSublogarithmic.normalized_bound
 #print axioms PaperP1.UniformZetaSublogarithmic.polynomial_height_bound
