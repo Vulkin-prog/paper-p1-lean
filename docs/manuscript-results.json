@@ -41165,7 +41165,8 @@
             "PaperP1.HyperellipticOddDegreeCharacterEstimate.uniform_absolute"
           ]
         }
-      ]
+      ],
+      "validation_commit": "16bea4bb22836b0fa7a1a30b29b1d7e42438df4f"
     },
     {
       "label": "p1:arith:dense",
