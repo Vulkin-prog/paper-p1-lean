@@ -1,6 +1,15 @@
 # Actual projective scheme map
 
-Current checkpoint P1-MATH-0894: Actual real completely multiplicative
+Current checkpoint P1-MATH-0895: Actual multiplicity and count weighted
+twisted sums satisfy genuine uniform pointwise bounds. The triple-large
+prime frequency contribution, the central-frequency mean comparison and
+complete logarithmic short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 53.56 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0894: Actual real completely multiplicative
 twisted sums are uniformly small on every fixed polynomial height range.
 The triple-large prime frequency contribution, the central-frequency
 mean comparison and complete logarithmic short-average concentration
@@ -27229,3 +27238,12 @@ Three theorems prove uniform cancellation for the literal sum over Icc 1 X of f(
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.63 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18355 jobs); direct axiom audit passed for 18929 declarations using only propext, Classical.choice and Quot.sound; all 19174 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.57 GiB.
+
+
+## Actual multiplicity and count weighted twisted sums satisfy genuine uniform pointwise bounds
+
+Two theorems transfer the actual proved real twisted-summatory bound to the valuation-multiplicity denominator by the exact damping integral, and then to the literal distinct-prime count denominator. For each B>0,epsilon>0, ONE R>=2, central threshold T0 and integer cutoff X0 precede ALL finite P of primes >R, ALL real completely multiplicative f with prime norm<=1 and ALL T0<=|tau|<=X^B. The actual count-weighted sum norm is <=epsilon*X. The square-divisibility error is explicitly <=4*X/R and its threshold is chosen after epsilon. No common exceptional set or weighted smallness assumption is used.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.56 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18357 jobs); direct axiom audit passed for 18931 declarations using only propext, Classical.choice and Quot.sound; all 19176 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.56 GiB.

@@ -4834,3 +4834,4 @@ public import PaperP1.Analysis.TranslatedFrequencyTail
 public import PaperP1.Analysis.LocalizedFrequencyBudget
 public import PaperP1.Analysis.UniformRealEulerBudget
 public import PaperP1.Analysis.UniformRealTwistedSum
+public import PaperP1.Analysis.UniformCountWeightedTwistedSum
