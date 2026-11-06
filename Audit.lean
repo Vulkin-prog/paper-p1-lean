@@ -3849,6 +3849,7 @@ import PaperP1
 #print axioms PaperP1.LocalRegularTangentPiece.exists_trajectory
 #print axioms PaperP1.LocalRegularTangentPiece.exists_regular_piece
 #print axioms PaperP1.LocalRegularTangentPiece.exists_piece_at_nonsingular
+#print axioms PaperP1.LocalSquareSampling.local_square_bound
 #print axioms PaperP1.LocalWronskianNonvanishing.exists_nonzero
 #print axioms PaperP1.LocalWronskianNonvanishing.exists_on_subinterval
 #print axioms PaperP1.LogarithmicAbelWindow.weight_nonneg
@@ -4356,6 +4357,14 @@ import PaperP1
 #print axioms PaperP1.SelectedPairWeightedSeries.kernel_change
 #print axioms PaperP1.SelectedPairWeightedSeries.point_bound
 #print axioms PaperP1.SelectedPairWeightedSeries.finite_bound
+#print axioms PaperP1.SeparatedIntervalBudget.unit_intervals_disjoint
+#print axioms PaperP1.SeparatedIntervalBudget.sum_integrals_le
+#print axioms PaperP1.SeparatedIntervalBudget.sampled_square_bound
+#print axioms PaperP1.SeparatedPolynomialSampling.phase_hasDerivAt
+#print axioms PaperP1.SeparatedPolynomialSampling.polynomial_hasDerivAt
+#print axioms PaperP1.SeparatedPolynomialSampling.derivative_coefficient_budget
+#print axioms PaperP1.SeparatedPolynomialSampling.sampled_mean_square
+#print axioms PaperP1.SeparatedPolynomialSampling.large_values_card
 #print axioms PaperP1.ShortBasisCurveScale.extractionExponent_choice
 #print axioms PaperP1.ShortBasisCurveScale.support_budget_eventually
 #print axioms PaperP1.ShortBasisCurveScale.log_succ_le

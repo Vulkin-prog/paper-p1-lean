@@ -31576,6 +31576,41 @@
         "status": "not_integrated"
       },
       "validation_commit": "51000acf6ad994ccdfcd3c4af911725cc0233805"
+    },
+    {
+      "id": "P1-MATH-0666",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "Continuous large-value measure estimates alone do not count an arbitrary well-spaced finite set of exceptional frequencies, and a sampling estimate had not yet been proved.",
+      "finding": "A proved local square bound, actual disjoint unit intervals and the exact exponential-polynomial derivative give unconditional discrete mean-square and actual finite large-value cardinality bounds.",
+      "proposed_revision": "Use the proved sampling inequality with its explicit derivative bandwidth cost and actual endpoint conventions. Center logarithmic frequencies before specializing to prime products; retain the stronger large-value and short-average requirements.",
+      "impact": "Closes the basic well-spaced sampling step without any discrete-large-value premise. It does not complete the stronger large-value estimate or T19.17.",
+      "evidence": [
+        "PaperP1.LocalSquareSampling.local_square_bound",
+        "PaperP1.SeparatedIntervalBudget.unit_intervals_disjoint",
+        "PaperP1.SeparatedIntervalBudget.sum_integrals_le",
+        "PaperP1.SeparatedIntervalBudget.sampled_square_bound",
+        "PaperP1.SeparatedPolynomialSampling.phase_hasDerivAt",
+        "PaperP1.SeparatedPolynomialSampling.polynomial_hasDerivAt",
+        "PaperP1.SeparatedPolynomialSampling.derivative_coefficient_budget",
+        "PaperP1.SeparatedPolynomialSampling.sampled_mean_square",
+        "PaperP1.SeparatedPolynomialSampling.large_values_card"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17867 jobs); direct axiom audit passed for 17688 declarations using only propext, Classical.choice and Quot.sound; all 17665 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.56 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

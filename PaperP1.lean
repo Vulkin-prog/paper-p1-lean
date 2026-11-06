@@ -4588,3 +4588,6 @@ public import PaperP1.Analysis.PrimePolynomialMoments
 public import PaperP1.Arithmetic.PrimeProductFibres
 public import PaperP1.Analysis.PrimeRangeHighMoments
 public import PaperP1.Arithmetic.PrimeRangeSquareBudget
+public import PaperP1.Analysis.LocalSquareSampling
+public import PaperP1.Analysis.SeparatedIntervalBudget
+public import PaperP1.Analysis.SeparatedPolynomialSampling
