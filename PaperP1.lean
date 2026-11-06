@@ -4885,3 +4885,4 @@ public import PaperP1.Analysis.FixedPowerPrimeSamples
 public import PaperP1.Analysis.FixedPowerLargeRectangle
 public import PaperP1.Analysis.FixedPowerLargeIntegral
 public import PaperP1.Analysis.FixedPowerSmallSamples
+public import PaperP1.Analysis.FixedPowerSmallIntegral

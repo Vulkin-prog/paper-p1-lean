@@ -4169,6 +4169,8 @@ import PaperP1
 #print axioms PaperP1.FixedPowerSamplingGeometry.cardinality_eventually
 #print axioms PaperP1.FixedPowerSamplingGeometry.scale_eventually
 #print axioms PaperP1.FixedPowerSamplingGeometry.logarithmic_square_bound
+#print axioms PaperP1.FixedPowerSmallIntegral.region_measurable
+#print axioms PaperP1.FixedPowerSmallIntegral.uniform_bound
 #print axioms PaperP1.FixedPowerSmallSamples.scalar_bound
 #print axioms PaperP1.FixedPowerSmallSamples.envelope_tendsto
 #print axioms PaperP1.FixedPowerSmallSamples.sampled_bound
