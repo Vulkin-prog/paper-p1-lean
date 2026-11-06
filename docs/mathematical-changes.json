@@ -34586,6 +34586,34 @@
         "status": "not_integrated"
       },
       "validation_commit": "19f8786412c86b9ec64a2c18cc23a1c0c74ffe1b"
+    },
+    {
+      "id": "P1-MATH-0746",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The positive-frequency estimate must account for BOTH signs of the distance to a center, including all endpoints and the actual finite partition.",
+      "finding": "The actual finite frequency set is partitioned by its side of a fixed real center. Applying the proved positive packing bounds on each side gives cardinality <=2*A and reciprocal absolute-distance sum <=2*(1+log(A)), under actual distances in [1,A] and separation by one. Consequently the ACTUAL sum of a/abs(distance)+b*abs(distance) is <=2*a*(1+log(A))+2*b*A^2 for all a,b>=0. Two theorems prove this without an unproved frequency-count input.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Actual two-sided separated frequency count and weighted distance budget. The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.SeparatedAbsoluteBudget.absolute_budgets",
+        "PaperP1.SeparatedAbsoluteBudget.weighted_distance_bound"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18059 jobs); direct axiom audit passed for 18368 declarations using only propext, Classical.choice and Quot.sound; all 18508 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.11 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

@@ -4819,6 +4819,8 @@ import PaperP1
 #print axioms PaperP1.SelectedPairWeightedSeries.kernel_change
 #print axioms PaperP1.SelectedPairWeightedSeries.point_bound
 #print axioms PaperP1.SelectedPairWeightedSeries.finite_bound
+#print axioms PaperP1.SeparatedAbsoluteBudget.absolute_budgets
+#print axioms PaperP1.SeparatedAbsoluteBudget.weighted_distance_bound
 #print axioms PaperP1.SeparatedIntervalBudget.unit_intervals_disjoint
 #print axioms PaperP1.SeparatedIntervalBudget.sum_integrals_le
 #print axioms PaperP1.SeparatedIntervalBudget.sampled_square_bound
