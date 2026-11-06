@@ -30285,6 +30285,47 @@
         "status": "not_integrated"
       },
       "validation_commit": "54ced986716bf8e2d1da1041bf6358c7a41ce1f3"
+    },
+    {
+      "id": "P1-MATH-0633",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The actual conductor proved injectivity of source point evaluations, but existence of extensions from image points had not been constructed.",
+      "finding": "The literal quotient formula psi(delta*a)/psi(delta) constructs and uniquely determines the extension, yielding an actual good-locus point equivalence and an explicit total point-count transfer with the true exceptional locus.",
+      "proposed_revision": "Use the explicit conductor extension when transferring finite-field counts, after verifying the conductor in the actual reduced coefficient ring. Bound the exceptional locus separately and retain the effective good-prime budget.",
+      "impact": "Discharges the algebraic point-extension and good-locus bijection steps. It does not establish original-model reduction, exceptional-locus estimates or the needed uniform arithmetic prime budget; canonical T1.7 is unchanged.",
+      "evidence": [
+        "PaperP1.ConductorPointExtension.cleared_one",
+        "PaperP1.ConductorPointExtension.cleared_add",
+        "PaperP1.ConductorPointExtension.cleared_mul",
+        "PaperP1.ConductorPointExtension.cleared_mem",
+        "PaperP1.ConductorPointExtension.extension_restrict",
+        "PaperP1.ConductorPointExtension.extension_denominator",
+        "PaperP1.ConductorPointExtension.extension_unique",
+        "PaperP1.ConductorPointExtension.extension_exists_unique",
+        "PaperP1.ConductorPointExtension.good_cardinality",
+        "PaperP1.ConductorPointExtension.good_cardinality_le",
+        "PaperP1.ConductorPointExtension.total_cardinality_le",
+        "PaperP1.ConductorPointExtension.denominator",
+        "PaperP1.ConductorPointExtension.cleared",
+        "PaperP1.ConductorPointExtension.extension",
+        "PaperP1.ConductorPointExtension.goodPointEquiv"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17731 jobs); direct axiom audit passed for 17381 declarations using only propext, Classical.choice and Quot.sound; all 17271 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.19 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

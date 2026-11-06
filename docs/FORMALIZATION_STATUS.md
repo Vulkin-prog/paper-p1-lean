@@ -1,6 +1,17 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0632: the COMPLETE weak point estimate for
+Current checkpoint P1-MATH-0633: point evaluations off an ACTUAL conductor
+extend uniquely by the proved formula psi(delta*a)/psi(delta). This gives
+an exact good-locus point equivalence. The total image-point count is at
+most the source count plus the ACTUAL exceptional-locus count. The source
+count is already unconditional for bounded split-radical systems. Original
+model reduction, reduced-conductor verification, exceptional-locus bounds
+and effective prime budgets remain UNPROVED. Canonical T1.7 retains ONLY
+its prior P3 input in degrees>2 at the original families and caps. Coverage
+stays 163 proved, 2 conditional, 2 in_progress out of 167; all 73 main
+results proved. No Palomar registration.
+
+Historical checkpoint P1-MATH-0632: the COMPLETE weak point estimate for
 actual bounded split-radical source systems is now UNCONDITIONAL. At
 certificate-good large primes, |N-p^2|<=eta*p^2, hence N<=(1+eta)*p^2.
 The cutoff precedes all integer branch supports and all coefficient vectors.
@@ -478,7 +489,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records630 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records631 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -597,7 +608,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **17370 audited theorem/lemma declarations**. This
+- The project currently has **17381 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -29682,3 +29693,14 @@ SplitRadicalUniformPointEstimate proves a relative-error expansion for the ACTUA
 Two modules add five theorems and no definitions. The complete internal weak source-point estimate is now DISCHARGED for all bounded systems in this stated split-radical subclass. This is not yet a point bound for the projected P3 equation: reduction of the original projective model, projection, exceptional loci and their precise prime budgets still need proofs. General plane/surface bounds remain unproved. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families and caps. Coverage stays 163 proved, 2 conditional, 2 in_progress out of 167, with all 73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Work stays on Ubuntu with about 55.2 GiB available and no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17729 jobs); direct axiom audit passed for 17370 declarations using only propext, Classical.choice and Quot.sound; all 17256 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.21 GiB.
+
+
+## Explicit unique conductor point extension and exact good-locus point correspondence
+
+ConductorPointExtension proves the actual point-extension step for a subalgebra S of A and a literal conductor delta with delta*a in S for every a. Given any scalar-preserving field evaluation psi on S with psi(delta) nonzero, it constructs the extension phi(a)=psi(delta*a)/psi(delta). Addition, multiplication, 0, 1 and scalar compatibility are proved directly. Its restriction equals the original evaluation, its value at delta is nonzero, and it is the UNIQUE scalar-preserving extension. No lying-over, extension-existence, finite-field point estimate or abstract target-count proposition is an input.
+
+The construction gives an ACTUAL equivalence between the field-valued points of S off delta=0 and the points of A off delta=0. Corresponding finite cardinalities are equal, the good S-point count is at most the full A-point count, and the total S-point count is at most the full A count plus the ACTUAL S-point count on delta=0. These are proved point maps and literal finite cardinalities. The explicit conductor premise is structural and must be verified in the ring under consideration. The earlier characteristic-zero projection already provides such a conductor; this file does not assert its survival in an unspecified integer reduction.
+
+One module adds eleven theorems and four definitions. This discharges the abstract-algebra point-extension and good-locus transfer steps. Identification and reduction of the original source/projected models, a bound for the actual exceptional locus, and uniform effective prime budgets still require proofs. The complete actual split-radical source estimate from P1-MATH-0632 remains unconditional, but no general projected P3 estimate is claimed. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same three original families and caps. Coverage stays 163 proved, 2 conditional, 2 in_progress out of 167, all 73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Work stays on Ubuntu with about 55.2 GiB available and no dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17731 jobs); direct axiom audit passed for 17381 declarations using only propext, Classical.choice and Quot.sound; all 17271 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.19 GiB.

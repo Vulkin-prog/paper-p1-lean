@@ -790,6 +790,17 @@ import PaperP1
 #print axioms PaperP1.ComplexProjectiveIrreducibility.singularity_input
 #print axioms PaperP1.ComplexProjectiveIrreducibility.nongeometric_input
 #print axioms PaperP1.ConductorFiberInjectivity.evaluations_equal
+#print axioms PaperP1.ConductorPointExtension.cleared_one
+#print axioms PaperP1.ConductorPointExtension.cleared_add
+#print axioms PaperP1.ConductorPointExtension.cleared_mul
+#print axioms PaperP1.ConductorPointExtension.cleared_mem
+#print axioms PaperP1.ConductorPointExtension.extension_restrict
+#print axioms PaperP1.ConductorPointExtension.extension_denominator
+#print axioms PaperP1.ConductorPointExtension.extension_unique
+#print axioms PaperP1.ConductorPointExtension.extension_exists_unique
+#print axioms PaperP1.ConductorPointExtension.good_cardinality
+#print axioms PaperP1.ConductorPointExtension.good_cardinality_le
+#print axioms PaperP1.ConductorPointExtension.total_cardinality_le
 #print axioms PaperP1.ConicCoordinateChanges.polynomial_expression
 #print axioms PaperP1.ConicCoordinateChanges.coefficients_polynomial
 #print axioms PaperP1.ConicCoordinateChanges.polynomial_shear
