@@ -1,6 +1,18 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0610: actual degree-two good reduction is proved
+Current checkpoint P1-MATH-0611: actual universal INTEGER projective
+factor-multiplication morphisms are constructed with proved rank-one relations,
+radical admissibility and properness. Their actual closed images have finite
+homogeneous integer equations. General Noether-form existence is NOT yet
+proved: field-valued coefficient points, geometric factorization and the exact
+finite-union nonvanishing criterion still require identification.
+Canonical T1.7 remains `UniformGeometricCountsHigherDegreeInput.companion_T1_7`,
+conditional on the SAME two independent geometric input families only at
+actual degrees>2. All d<=2 complete certificate/auxiliary properties remain
+unconditional. Coverage stays163 proved,2 conditional,2 in_progress out of167;
+all73 main results are proved. No Palomar registration.
+
+Historical checkpoint P1-MATH-0610: actual degree-two good reduction is proved
 with a nonzero INTEGER Hessian minor z satisfying natAbs(z)<=48*A^3. Every
 prime not dividing z preserves geometric irreducibility, including2 when good.
 All d<=2 certificate budgets and COMPLETE original global auxiliary properties
@@ -29185,6 +29197,22 @@ All-fields Noether forms in degree2 are bypassed and are not claimed. Both
 higher-degree input theorems remain UNPROVED. T1.7 remains conditional.
 Earlier descriptions retain their historical scopes.
 
+## Proved projective construction toward universal Noether forms
+
+At P1-MATH-0611, `P3FactorMultiplicationProper.multiplication_proper` proves
+properness of the ACTUAL universal integer factor-coefficient scheme morphism.
+The Segre relations, all-fields no-basepoint calculation and irrelevant radical
+containment are internal proofs. `ProjectiveIntegerClosedEquations.factor_image_equations`
+constructs a finite homogeneous integer family defining its ACTUAL closed image
+on relevant homogeneous prime ideals. No properness/image premise is supplied.
+
+This is not yet `P3UniversalNoetherForms.ExistsForms d`. The field-valued point
+and geometric factorization identification, finite positive-degree partition
+union and nonvanishing criterion including the zero vector remain to be proved.
+No independent input is discharged here. Canonical T1.7 stays conditional, with
+both general input families needed only at actual degrees>2; all d<=2 exact
+certificate/auxiliary results remain unconditional.
+
 ## Independent universal integer Noether forms
 
 Stable ID: `P1-GEO-P3-UNIVERSAL-NOETHER-FORMS`. Status: **explicit_hypothesis**.
@@ -29865,3 +29893,26 @@ UniformGeometricCountsHigherDegreeInput assembles the full aligned companionT1.7
 Fourteen modules add fifty-two theorems and ten definitions/hypothesis structures. Coverage stays163 proved,2 conditional,2 in_progress out of167, all73 main results proved. The separate companionT19.17 input and the two literal false original statements retain their previous scopes. Original manuscript hashes, Lean v4.36.0-rc2, permitted axioms and checking options are unchanged. Two existing Mathlib quadratic-isometry source modules were built selectively without downloading dependencies. No Palomar registration. All work remains on Ubuntu; free space is about5.96GiB.
 
 Verified under Lean v4.36.0-rc2: full build passed (17499 jobs); direct axiom audit passed for 16938 declarations using only propext, Classical.choice and Quot.sound; all 16716 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 5.96 GiB.
+
+
+## Actual universal integer projective factor-multiplication maps are proper with finite homogeneous image equations
+
+Stable ID: p1:internal:projective-factor-multiplication-finite-equations. Actual projective factor-multiplication maps, radical admissibility, properness and finite homogeneous integer image equations are proved. General universal Noether-form existence remains unproved pending the field-point/factorization identification.
+
+P3CoefficientMultiplication constructs actual universal INTEGER linear coefficient forms on the tensor-index space Index(e)*Index(f), for EVERY pair of natural degrees e,f. It proves their exact evaluation formula, the actual tensor polynomial coefficient formula and homogeneous degree, exact reconstruction, and equality with the original product for actual pure tensors. A product of two nonzero coefficient-family polynomials is proved nonzero over every field.
+
+RankOneTensorFactorization constructs literal nonzero left/right factor vectors from any nonzero matrix whose actual two-by-two minors vanish. The proof retains a selected nonzero pivot and exact division identity. P3MultiplicationBaseLocus proves that the universal product coefficient forms cannot all vanish on a nonzero rank-one matrix over ANY field. Equivalently, on that actual rank-one locus simultaneous coefficient vanishing forces the entire matrix to be zero. This is a concrete algebraic theorem, not a supplied no-basepoint hypothesis.
+
+P3FactorSegreRelations defines the ACTUAL finite family of universal integer two-by-two minor relations and its ideal. The ideal is proved homogeneous; all actual pure tensors satisfy the relations, and relation vanishing is equivalent to the literal rank-one identities. P3FactorSegrePrimeLocus passes the proved field calculation to EVERY prime ideal of the actual integer coefficient ring by its quotient fraction field. It proves that every tensor variable lies in the radical of the sum of the Segre relation ideal and the universal product coefficient ideal.
+
+P3FactorSegreGrading constructs the actual homogeneous quotient, its grading, literal coordinate and product coefficients, and the graded multiplication homomorphism. It proves the coordinates generate the quotient algebra, finite type over the integers, and the actual irrelevant-ideal radical containment required by the existing checked projective map construction. P3FactorMultiplicationMap therefore constructs an ACTUAL SCHEME MORPHISM from the projective Segre coefficient quotient to the original projective degree-(e+f) coefficient space, with exact basic-open inverse images. Admissibility and the source equations are proved internally.
+
+P3FactorSegreDegreeZero proves every degree-zero element is the image of an integer, the integer algebra map is surjective, the literal zero-degree ring is finite as an integer module, and the quotient is finite type over that ring. IntegerProjectiveProper proves the integer structure map is proper from the checked Mathlib Proj properness theorem and the actual finite zero-ring structure map. P3FactorMultiplicationProper proves both source and target are proper over SpecZ. Their actual multiplication morphism commutes with the integer structure maps by the terminal property of SpecZ; properness follows because the target structure map is separated. Thus its ACTUAL image is CLOSED over the integers for every e,f. No properness or closed-image premise is supplied.
+
+FiniteHomogeneousIdealBasis constructs a finite homogeneous generating family for a homogeneous Noetherian multivariate ideal by taking actual homogeneous components of a finite generating family, proving containment and exact ideal equality. ProjectiveIntegerClosedEquations applies this to the actual homogeneous vanishing ideal of each closed projective multiplication image. It proves existence of a FINITE FAMILY OF ACTUAL HOMOGENEOUS INTEGER POLYNOMIALS whose simultaneous containment in each relevant homogeneous prime ideal is exactly membership in that image.
+
+This does NOT yet prove P3UniversalNoetherForms.ExistsForms d. The remaining work is the exact identification of field-valued coefficient points and geometric factorization on each algebraic closure, the finite union over positive degree partitions and the global nonvanishing criterion including zero coefficient vectors. The higher-degree finite-field point estimate also remains UNPROVED. Canonical companionT1.7 stays UniformGeometricCountsHigherDegreeInput.companion_T1_7 with the SAME two independent input IDs only in actual degrees>2. The unconditional full degree<=2 certificate/auxiliary results from checkpoint610 remain intact. No input is marked discharged at this checkpoint.
+
+Twelve modules add forty-six theorems and twenty definitions, including the explicit quotient grading. Coverage stays163 proved,2 conditional,2 in_progress out of167, all73 main results proved. The separate companionT19.17 input and two literal false originals retain their previous scopes. Original manuscript hashes, Lean v4.36.0-rc2, checking options and allowed axioms are unchanged. Nine existing Mathlib source modules were built selectively for properness/valuative criteria, without a dependency download. All work remains on Ubuntu, with about5.90GiB free. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17541 jobs); direct axiom audit passed for 16984 declarations using only propext, Classical.choice and Quot.sound; all 16782 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 5.90 GiB.

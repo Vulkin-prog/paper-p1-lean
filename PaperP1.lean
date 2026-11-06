@@ -4419,3 +4419,15 @@ public import PaperP1.Arithmetic.P3QuadricFiniteFieldCertificate
 public import PaperP1.Arithmetic.QuadricHessianGoodReduction
 public import PaperP1.Arithmetic.QuadricHessianMinorHeight
 public import PaperP1.Asymptotics.UniformGeometricCountsHigherDegreeInput
+public import PaperP1.Algebra.FiniteHomogeneousIdealBasis
+public import PaperP1.Algebra.P3CoefficientMultiplication
+public import PaperP1.Algebra.P3FactorSegreDegreeZero
+public import PaperP1.Algebra.P3FactorSegreGrading
+public import PaperP1.Algebra.P3FactorSegrePrimeLocus
+public import PaperP1.Algebra.P3FactorSegreRelations
+public import PaperP1.Algebra.P3MultiplicationBaseLocus
+public import PaperP1.Algebra.RankOneTensorFactorization
+public import PaperP1.Geometry.IntegerProjectiveProper
+public import PaperP1.Geometry.P3FactorMultiplicationMap
+public import PaperP1.Geometry.P3FactorMultiplicationProper
+public import PaperP1.Geometry.ProjectiveIntegerClosedEquations
