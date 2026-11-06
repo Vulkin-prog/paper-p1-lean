@@ -33307,6 +33307,41 @@
         "status": "not_integrated"
       },
       "validation_commit": "06526617f156296d21dd24e5e5abd57cf2c245f0"
+    },
+    {
+      "id": "P1-MATH-0709",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "Passing from the whole-frequency Perron integral to a finite-height analytic estimate required an actual tail bound, not an assumed truncation error.",
+      "finding": "The actual whole Gaussian integral is bounded by its unweighted finite-height integral plus an explicit Gaussian tail, with exact endpoints and integrability.",
+      "proposed_revision": "Use the explicit tail and verify its decay for the literal logarithmic width and height before the analytic band assembly.",
+      "impact": "The actual whole Gaussian integral is bounded by its unweighted finite-height integral plus an explicit Gaussian tail, with exact endpoints and integrability. The quantitative global band/Halasz estimate and final logarithmic short-average assembly remain unfinished.",
+      "evidence": [
+        "PaperP1.GaussianFrequencyTail.outside_measurable",
+        "PaperP1.GaussianFrequencyTail.outside_square",
+        "PaperP1.GaussianFrequencyTail.gaussian_point",
+        "PaperP1.GaussianFrequencyTail.gaussian_tail",
+        "PaperP1.GaussianFrequencyTail.weighted_integrable",
+        "PaperP1.GaussianFrequencyTail.weighted_tail",
+        "PaperP1.GaussianFrequencyTail.whole_integral_bound",
+        "PaperP1.GaussianFrequencyTail.outside",
+        "PaperP1.GaussianFrequencyTail.tailBound"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17985 jobs); direct axiom audit passed for 18146 declarations using only propext, Classical.choice and Quot.sound; all 18235 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.76 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

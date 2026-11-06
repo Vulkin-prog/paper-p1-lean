@@ -1,6 +1,14 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0708: The actual full shifted Euler local-
+Current checkpoint P1-MATH-0709: The actual whole Gaussian integral is
+bounded by its unweighted finite-height integral plus an explicit
+Gaussian tail, with exact endpoints and integrability. The quantitative
+global band/Halasz estimate and final logarithmic short-average assembly
+remain unfinished. T19.17 conditional; original T1.7 complete. Coverage:
+164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. False
+scopes/corrections unchanged. No Palomar registration.
+
+Historical checkpoint P1-MATH-0708: The actual full shifted Euler local-
 supremum budget is small outside one measurable shift exception, chosen
 before every X>=N and every admissible real function. Gaussian
 frequency-tail transfer, the final Halasz estimate and logarithmic
@@ -1307,7 +1315,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records706 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records707 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -1426,7 +1434,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **18139 audited theorem/lemma declarations**. This
+- The project currently has **18146 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -31493,3 +31501,14 @@ This closes the previously missing FULL actual local-supremum frequency budget, 
 Gaussian frequency-tail transfer, the final Halasz estimate and logarithmic short-average assembly remain unfinished. T19.17 remains conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, preserved sources, pinned Lean and allowed axioms unchanged. About 53.9 GiB is free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17983 jobs); direct axiom audit passed for 18139 declarations using only propext, Classical.choice and Quot.sound; all 18226 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.77 GiB.
+
+
+## Actual whole-line Gaussian integral truncated with an explicit tail
+
+GaussianFrequencyTail defines the ACTUAL complement of (-T,T] and proves that every outside point satisfies t^2>=T^2 for T>=0. The pointwise Gaussian split exp(-b*t^2)<=exp(-b*T^2/2)*exp(-(b/2)*t^2) gives the ACTUAL tail integral <=tailBound(b,T)=exp(-b*T^2/2)*sqrt(pi/(b/2)) for b>0.
+
+For ANY continuous real function with 0<=F<=M, the literal Gaussian product is integrable and its actual tail integral is <=M*tailBound. Splitting the WHOLE real-line integral at (-T,T], with exact endpoint conventions, and using exp(-b*t^2)<=1 on the retained interval proves wholeIntegral(Gaussian*F)<=integral_{-T}^T(F)+M*tailBound. Seven theorems and two definitions are added in one module.
+
+The quantitative global band/Halasz estimate and final logarithmic short-average assembly remain unfinished. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, preserved sources, pinned Lean and allowed axioms unchanged. About 53.9 GiB is free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17985 jobs); direct axiom audit passed for 18146 declarations using only propext, Classical.choice and Quot.sound; all 18235 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.76 GiB.

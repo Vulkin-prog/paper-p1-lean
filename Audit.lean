@@ -3908,6 +3908,13 @@ import PaperP1
 #print axioms PaperP1.GaussianFrequencyRowBound.absolute_log_gap
 #print axioms PaperP1.GaussianFrequencyRowBound.integer_log_gap
 #print axioms PaperP1.GaussianFrequencyRowBound.logarithmic_row_bound
+#print axioms PaperP1.GaussianFrequencyTail.outside_measurable
+#print axioms PaperP1.GaussianFrequencyTail.outside_square
+#print axioms PaperP1.GaussianFrequencyTail.gaussian_point
+#print axioms PaperP1.GaussianFrequencyTail.gaussian_tail
+#print axioms PaperP1.GaussianFrequencyTail.weighted_integrable
+#print axioms PaperP1.GaussianFrequencyTail.weighted_tail
+#print axioms PaperP1.GaussianFrequencyTail.whole_integral_bound
 #print axioms PaperP1.GaussianLaplaceKernel.laplace_eq_exp
 #print axioms PaperP1.GaussianLaplaceKernel.laplace_integrable
 #print axioms PaperP1.GaussianLaplaceKernel.laplace_integral

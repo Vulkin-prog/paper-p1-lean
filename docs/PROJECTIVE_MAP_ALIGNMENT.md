@@ -1,6 +1,14 @@
 # Actual projective scheme map
 
-Current checkpoint P1-MATH-0708: The actual full shifted Euler local-
+Current checkpoint P1-MATH-0709: The actual whole Gaussian integral is
+bounded by its unweighted finite-height integral plus an explicit
+Gaussian tail, with exact endpoints and integrability. The quantitative
+global band/Halasz estimate and final logarithmic short-average assembly
+remain unfinished. T19.17 conditional; original T1.7 complete. Coverage:
+164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. False
+scopes/corrections unchanged. No Palomar registration.
+
+Historical checkpoint P1-MATH-0708: The actual full shifted Euler local-
 supremum budget is small outside one measurable shift exception, chosen
 before every X>=N and every admissible real function. Gaussian
 frequency-tail transfer, the final Halasz estimate and logarithmic
@@ -23878,3 +23886,14 @@ This closes the previously missing FULL actual local-supremum frequency budget, 
 Gaussian frequency-tail transfer, the final Halasz estimate and logarithmic short-average assembly remain unfinished. T19.17 remains conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, preserved sources, pinned Lean and allowed axioms unchanged. About 53.9 GiB is free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17983 jobs); direct axiom audit passed for 18139 declarations using only propext, Classical.choice and Quot.sound; all 18226 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.77 GiB.
+
+
+## Actual whole-line Gaussian integral truncated with an explicit tail
+
+GaussianFrequencyTail defines the ACTUAL complement of (-T,T] and proves that every outside point satisfies t^2>=T^2 for T>=0. The pointwise Gaussian split exp(-b*t^2)<=exp(-b*T^2/2)*exp(-(b/2)*t^2) gives the ACTUAL tail integral <=tailBound(b,T)=exp(-b*T^2/2)*sqrt(pi/(b/2)) for b>0.
+
+For ANY continuous real function with 0<=F<=M, the literal Gaussian product is integrable and its actual tail integral is <=M*tailBound. Splitting the WHOLE real-line integral at (-T,T], with exact endpoint conventions, and using exp(-b*t^2)<=1 on the retained interval proves wholeIntegral(Gaussian*F)<=integral_{-T}^T(F)+M*tailBound. Seven theorems and two definitions are added in one module.
+
+The quantitative global band/Halasz estimate and final logarithmic short-average assembly remain unfinished. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, preserved sources, pinned Lean and allowed axioms unchanged. About 53.9 GiB is free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17985 jobs); direct axiom audit passed for 18146 declarations using only propext, Classical.choice and Quot.sound; all 18235 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.76 GiB.
