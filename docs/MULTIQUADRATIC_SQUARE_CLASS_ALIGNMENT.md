@@ -1,6 +1,21 @@
 # Multiquadratic split radicands: exact square-class independence
 
-Current checkpoint P1-MATH-0653: the ORIGINAL integer projected
+Current checkpoint P1-MATH-0654: the ORIGINAL chosen integer
+projection has its exact normalized source relation and a UNIFORM
+(1+eta)*p^2 bound for its LITERAL canonical smooth residue classes.
+The cutoff precedes ALL original source lists of fixed length,
+integer coefficients, bounded supports and chosen rational/integer
+projection models. Normalization, source compatibility, conductor,
+hypersurface-point identification and canonical-class injection are
+INTERNAL proofs. Explicit branch, Noether and leading-coefficient
+prime exclusions remain. A combined effective original-family budget
+and restricted global determinant/cover assembly remain UNPROVED.
+This does NOT discharge the unrestricted P3 input. Canonical T1.7
+retains ONLY its prior P3 input in degrees>2 at the original families
+and caps. Coverage stays 163 proved, 2 conditional, 2 in_progress out
+of 167; all 73 main results proved. No Palomar registration.
+
+Historical checkpoint P1-MATH-0653: the ORIGINAL integer projected
 model has an actual nonzero INTEGER leading normalization coefficient,
 bounded by its original coefficient height. Combined with the proved
 Noether certificate it gives B!=0 with |B|<=T*A^N, constants BEFORE
@@ -23277,3 +23292,16 @@ The final theorem combines this literal leading coefficient with the ALREADY PRO
 One module adds nine theorems and two definitions. This discharges original integer-model monic normalization, retained full degree, affine irreducibility and their uniform polynomial-height exceptional-prime certificate. Exact original source vanishing after normalization, combination with the branch certificate, actual canonical residue-class count and original-family cover assembly remain unfinished. The unrestricted P3 input is unchanged. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families/caps. Coverage remains 163 proved, 2 conditional, 2 in_progress out of 167; all 73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Work stays on Ubuntu with about 54.9 GiB available and no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17797 jobs); direct axiom audit passed for 17561 declarations using only propext, Classical.choice and Quot.sound; all 17517 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.85 GiB.
+
+
+## The actual original integer projection model has a uniform count for its literal canonical smooth residue classes
+
+OriginalNormalizedSourceRelation identifies the images of ALL original integral projection coordinates with the literal affine tuple (y,Y^D,X^D,1). The primitive element uses the SAME original integer projection coefficients. The exact original rational image-kernel identity and scalar-multiple integer model give vanishing of the NORMALIZED affine polynomial at this actual source element over every field. Good-prime monicity, irreducibility, exact full degree, bounded coefficient degrees and literal source vanishing are then assembled for that SAME original model, with no reduced-source compatibility or vanishing premise.
+
+CanonicalClassesToMonicHypersurface explicitly injects every literal P3CanonicalSmoothResidues.Class of the ORIGINAL integer polynomial Q into the complete solution set of its normalized affine polynomial. Its coordinates are exactly the existing field representatives, reordered into parameter/primitive form. The original canonical root congruence proves literal normalized vanishing. Thus the original canonical smooth-class cardinality is bounded by the already proved complete hypersurface solution cardinality. These classes are the original Z=1 classes used by the determinant; no projective chart is omitted from that definition.
+
+OriginalProjectedModelPointEstimate gives a cutoff BEFORE the prime and ALL original source lists of fixed length, integer coefficients, bounded branch supports, chosen primitive coefficients, original rational equations and scalar-multiple integer models. At primes avoiding the actual branch-collision certificate, Noether certificate and leading coefficient, it proves BOTH the original-model affine solution bound and the LITERAL original canonical smooth-class bound <=(1+eta)*p^2. Monicity, degree, irreducibility, source relation, conductor, image generation, exhaustive hypersurface-point identification and canonical-class injection are all supplied internally. No finite-field point estimate is assumed.
+
+Three modules add ten theorems and three definitions. This discharges exact original normalized-source application and the uniform original canonical smooth-class point estimate at its explicit good primes. Combining all exclusions into one polynomial-height original-family budget and the restricted global determinant/cover assembly remain unfinished. This source-specific result does NOT discharge the unrestricted P3 surface input. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families/caps. Coverage remains 163 proved, 2 conditional, 2 in_progress out of 167; all 73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Work stays on Ubuntu with about 54.8 GiB available and no dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17803 jobs); direct axiom audit passed for 17571 declarations using only propext, Classical.choice and Quot.sound; all 17530 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.83 GiB.

@@ -2109,6 +2109,10 @@ import PaperP1
 #print axioms PaperP1.OrdinaryWeightedProjectionComposition.ordinary_homogeneous
 #print axioms PaperP1.OrdinaryWeightedProjectionComposition.weighted_homogeneous
 #print axioms PaperP1.OrdinaryWeightedProjectionComposition.map_relation
+#print axioms PaperP1.OriginalNormalizedSourceRelation.fieldCoordinates
+#print axioms PaperP1.OriginalNormalizedSourceRelation.normalized_relation
+#print axioms PaperP1.OriginalNormalizedSourceRelation.original_model_relation
+#print axioms PaperP1.OriginalNormalizedSourceRelation.original_good_prime_data
 #print axioms PaperP1.P3CoefficientFieldTransport.map_polynomial
 #print axioms PaperP1.P3CoefficientFieldTransport.map_reconstruct
 #print axioms PaperP1.P3CoefficientMultiplication.form_homogeneous
@@ -4888,6 +4892,10 @@ import PaperP1
 #print axioms PaperP1.CRTSupportCover.cardinal_bound
 #print axioms PaperP1.CRTSupportCover.short_product_bound
 #print axioms PaperP1.CRTSupportCover.certificate_card
+#print axioms PaperP1.CanonicalClassesToMonicHypersurface.coordinates_injective
+#print axioms PaperP1.CanonicalClassesToMonicHypersurface.normalized_zero
+#print axioms PaperP1.CanonicalClassesToMonicHypersurface.pointMap_injective
+#print axioms PaperP1.CanonicalClassesToMonicHypersurface.cardinality_le
 #print axioms PaperP1.CanonicalInteriorSourceBox.witness_box
 #print axioms PaperP1.CanonicalInteriorSourceBox.solutions_population
 #print axioms PaperP1.CertificatePairs.mem_pairs
@@ -6622,6 +6630,8 @@ import PaperP1
 #print axioms PaperP1.OrdinarySourcePointTransport.source_curve_chart_not_mem
 #print axioms PaperP1.OrdinarySourcePointTransport.ordinary_image_point
 #print axioms PaperP1.OrdinarySourcePointTransport.points_image_card
+#print axioms PaperP1.OriginalProjectedModelPointEstimate.uniform_upper_bound
+#print axioms PaperP1.OriginalProjectedModelPointEstimate.uniform_class_upper_bound
 #print axioms PaperP1.OriginalWindowValueBounds.values_geometry
 #print axioms PaperP1.P3BadReductionPrimeBudget.divides_certificate
 #print axioms PaperP1.P3BadReductionPrimeBudget.subset_prime_factors

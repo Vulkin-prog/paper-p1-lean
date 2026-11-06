@@ -31113,6 +31113,45 @@
         "status": "not_integrated"
       },
       "validation_commit": "a37f62c346a27cabb24aba6dbcd76a0c5c0729eb"
+    },
+    {
+      "id": "P1-MATH-0654",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The proved source-specific affine bound had not been applied to the exact original normalized integer equation, its actual chosen source coordinate and the literal canonical smooth classes used by the determinant.",
+      "finding": "The original integer projection model has its actual normalized source relation over every field. Every original canonical smooth class injects into its literal affine hypersurface solutions. A cutoff before all original source/model data gives the uniform (1+eta)*p squared count at explicit branch, Noether and leading-coefficient good primes.",
+      "proposed_revision": "Use this proved original canonical-class estimate in a restricted source-family determinant argument. Combine its explicit exclusions into one height-controlled certificate and verify the actual original-family height and cover hypotheses before replacing the canonical T1.7 input.",
+      "impact": "Discharges actual original normalized-source vanishing and its uniform canonical smooth-class count. Effective combined original-family prime budgets and the restricted global determinant/cover assembly remain unfinished; the unrestricted P3 input and canonical T1.7 are unchanged.",
+      "evidence": [
+        "PaperP1.OriginalNormalizedSourceRelation.fieldCoordinates",
+        "PaperP1.OriginalNormalizedSourceRelation.normalized_relation",
+        "PaperP1.OriginalNormalizedSourceRelation.original_model_relation",
+        "PaperP1.OriginalNormalizedSourceRelation.original_good_prime_data",
+        "PaperP1.CanonicalClassesToMonicHypersurface.coordinates_injective",
+        "PaperP1.CanonicalClassesToMonicHypersurface.normalized_zero",
+        "PaperP1.CanonicalClassesToMonicHypersurface.pointMap_injective",
+        "PaperP1.CanonicalClassesToMonicHypersurface.cardinality_le",
+        "PaperP1.OriginalProjectedModelPointEstimate.uniform_upper_bound",
+        "PaperP1.OriginalProjectedModelPointEstimate.uniform_class_upper_bound",
+        "PaperP1.OriginalNormalizedSourceRelation.fieldPrimitive",
+        "PaperP1.CanonicalClassesToMonicHypersurface.coordinates",
+        "PaperP1.CanonicalClassesToMonicHypersurface.pointMap"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17803 jobs); direct axiom audit passed for 17571 declarations using only propext, Classical.choice and Quot.sound; all 17530 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.83 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
