@@ -36511,6 +36511,36 @@
         "status": "not_integrated"
       },
       "validation_commit": "2e14b19430a3feae70cc77311f9385b0e2d50b94"
+    },
+    {
+      "id": "P1-MATH-0807",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The whole intermediate region requires an actual cover for every second block and the proved pair bound before any limiting conclusion. Every band count and cover overlap must be retained.",
+      "finding": "The ACTUAL intermediate region consists of frequencies where some first-band prime polynomial is >the first threshold while EVERY second-band polynomial is <=its own q^(-1/40) threshold. This region is proved measurable and, for every actual second block, covered by the literal first/second mixed pair sets. One N0 precedes all N, unit positive-integer coefficients and 0<T<=N/log N; the ACTUAL full second rectangle square integral on this region is <=card(J1)*card(J2)*sum(l in J2,2*C*q_l^(-1/100)). Three theorems and one definition prove the exact cover and actual finite-family integral estimate from the internally proved pair bounds. Its asymptotic decay remains a separate estimate.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Actual intermediate frequency rectangle contribution is controlled by all proved pair budgets. The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.ActualIntermediateFrequencyRegion.region_measurable",
+        "PaperP1.ActualIntermediateFrequencyRegion.cover_by_pairs",
+        "PaperP1.ActualIntermediateFrequencyRegion.rectangle_bound",
+        "PaperP1.ActualIntermediateFrequencyRegion.region"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18181 jobs); direct axiom audit passed for 18599 declarations using only propext, Classical.choice and Quot.sound; all 18788 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.01 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

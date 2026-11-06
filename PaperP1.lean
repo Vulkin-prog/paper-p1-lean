@@ -4746,3 +4746,4 @@ public import PaperP1.Analysis.FloorAmplificationOrder
 public import PaperP1.Analysis.ActualAnchorOrderGeometry
 public import PaperP1.Analysis.ActualMixedPairDecay
 public import PaperP1.Analysis.FiniteFrequencyCover
+public import PaperP1.Analysis.ActualIntermediateFrequencyRegion

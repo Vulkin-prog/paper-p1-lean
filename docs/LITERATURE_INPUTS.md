@@ -1,6 +1,15 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0806: Actual finite frequency covers preserve
+Current checkpoint P1-MATH-0807: Actual intermediate frequency rectangle
+contribution is controlled by all proved pair budgets. The complementary
+bad-prime frequency contribution, the central-frequency mean subtraction
+and complete logarithmic short-average concentration remain unproved.
+T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 52.07 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0806: Actual finite frequency covers preserve
 every overlap and band cardinality cost. The complementary bad-prime
 frequency contribution, the central-frequency mean subtraction and
 complete logarithmic short-average concentration remain unproved. T19.17
@@ -32711,6 +32720,12 @@ For a nonnegative continuous integrand on a bounded frequency interval, the ACTU
 
 The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved.
 
+## Internal actual intermediate frequency rectangle contribution is controlled by all proved pair budgets
+
+The ACTUAL intermediate region consists of frequencies where some first-band prime polynomial is >the first threshold while EVERY second-band polynomial is <=its own q^(-1/40) threshold. This region is proved measurable and, for every actual second block, covered by the literal first/second mixed pair sets. One N0 precedes all N, unit positive-integer coefficients and 0<T<=N/log N; the ACTUAL full second rectangle square integral on this region is <=card(J1)*card(J2)*sum(l in J2,2*C*q_l^(-1/100)). Three theorems and one definition prove the exact cover and actual finite-family integral estimate from the internally proved pair bounds. Its asymptotic decay remains a separate estimate.
+
+The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -36013,3 +36028,14 @@ For a nonnegative continuous integrand on a bounded frequency interval, the ACTU
 The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.07 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18179 jobs); direct axiom audit passed for 18596 declarations using only propext, Classical.choice and Quot.sound; all 18784 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.03 GiB.
+
+
+## Actual intermediate frequency rectangle contribution is controlled by all proved pair budgets
+
+Stable ID: p1:internal:actual-intermediate-frequency-region. Actual intermediate frequency rectangle contribution is controlled by all proved pair budgets. The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved.
+
+The ACTUAL intermediate region consists of frequencies where some first-band prime polynomial is >the first threshold while EVERY second-band polynomial is <=its own q^(-1/40) threshold. This region is proved measurable and, for every actual second block, covered by the literal first/second mixed pair sets. One N0 precedes all N, unit positive-integer coefficients and 0<T<=N/log N; the ACTUAL full second rectangle square integral on this region is <=card(J1)*card(J2)*sum(l in J2,2*C*q_l^(-1/100)). Three theorems and one definition prove the exact cover and actual finite-family integral estimate from the internally proved pair bounds. Its asymptotic decay remains a separate estimate.
+
+The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.07 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18181 jobs); direct axiom audit passed for 18599 declarations using only propext, Classical.choice and Quot.sound; all 18788 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.01 GiB.
