@@ -1,6 +1,15 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0864: The actual logarithmic sum has an
+Current checkpoint P1-MATH-0865: Actual logarithmic sums have a positive
+uniform power gain on every fixed polynomial frequency range. The
+triple-large prime frequency contribution, the central-frequency mean
+comparison and complete logarithmic short-average concentration remain
+unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164
+proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources,
+false-scope corrections, compiler and axioms unchanged. About 51.00 GiB
+free on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0864: The actual logarithmic sum has an
 explicit positive power gain on every fixed-order frequency band. The
 triple-large prime frequency contribution, the central-frequency mean
 comparison and complete logarithmic short-average concentration remain
@@ -33584,6 +33593,12 @@ Set C_n=6^(n+1)+n!+4 and gamma_n=(1/(16*n))/2^n. For EACH FIXED n>0, gamma_n>0 a
 
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
 
+## Internal actual logarithmic sums have a positive uniform power gain on every fixed polynomial frequency range
+
+Choose n=max(1,ceil b), C_b=C_n+5 and gamma_(a,b)=min(a,1/4,gamma_n). For ALL FIXED real a,b, ONE X0 precedes EVERY X>=X0 and EVERY X^a<=|t|<=X^b, giving the ACTUAL original dyadic logarithmic sum norm<=C_b*X^(1-gamma_(a,b)) and relative norm<=C_b/X^gamma_(a,b). If a>0, the displayed exponent is STRICTLY POSITIVE. Eight theorems and three definitions prove the order, constant, all exponent bounds and the genuine uniform power cancellation, combining the actual high-order theorem with the already proved small-frequency integral-comparison bound. No prime-supported or MR frequency contribution is assumed or completed.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -37524,3 +37539,14 @@ Set C_n=6^(n+1)+n!+4 and gamma_n=(1/(16*n))/2^n. For EACH FIXED n>0, gamma_n>0 a
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.00 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18295 jobs); direct axiom audit passed for 18802 declarations using only propext, Classical.choice and Quot.sound; all 19027 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.12 GiB.
+
+
+## Actual logarithmic sums have a positive uniform power gain on every fixed polynomial frequency range
+
+Stable ID: p1:internal:polynomial-logarithmic-cancellation. Actual logarithmic sums have a positive uniform power gain on every fixed polynomial frequency range. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
+
+Choose n=max(1,ceil b), C_b=C_n+5 and gamma_(a,b)=min(a,1/4,gamma_n). For ALL FIXED real a,b, ONE X0 precedes EVERY X>=X0 and EVERY X^a<=|t|<=X^b, giving the ACTUAL original dyadic logarithmic sum norm<=C_b*X^(1-gamma_(a,b)) and relative norm<=C_b/X^gamma_(a,b). If a>0, the displayed exponent is STRICTLY POSITIVE. Eight theorems and three definitions prove the order, constant, all exponent bounds and the genuine uniform power cancellation, combining the actual high-order theorem with the already proved small-frequency integral-comparison bound. No prime-supported or MR frequency contribution is assumed or completed.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.00 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18297 jobs); direct axiom audit passed for 18810 declarations using only propext, Classical.choice and Quot.sound; all 19038 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.10 GiB.

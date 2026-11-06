@@ -4804,3 +4804,4 @@ public import PaperP1.Analysis.FixedOrderSecondTermDecay
 public import PaperP1.Analysis.RoundedTerminalDecay
 public import PaperP1.Analysis.RecursiveBudgetPower
 public import PaperP1.Analysis.ActualLogarithmicPower
+public import PaperP1.Analysis.PolynomialLogarithmicCancellation

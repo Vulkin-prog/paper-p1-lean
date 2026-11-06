@@ -4636,6 +4636,14 @@ import PaperP1
 #print axioms PaperP1.PolynomialEvaluationDerivative.directional_mul
 #print axioms PaperP1.PolynomialEvaluationDerivative.hasDerivAt_eval
 #print axioms PaperP1.PolynomialEvaluationDerivative.contDiffOn_eval
+#print axioms PaperP1.PolynomialLogarithmicCancellation.order_pos
+#print axioms PaperP1.PolynomialLogarithmicCancellation.order_real
+#print axioms PaperP1.PolynomialLogarithmicCancellation.decay_pos
+#print axioms PaperP1.PolynomialLogarithmicCancellation.decay_bounds
+#print axioms PaperP1.PolynomialLogarithmicCancellation.constant_four_le
+#print axioms PaperP1.PolynomialLogarithmicCancellation.uniform_bound
+#print axioms PaperP1.PolynomialLogarithmicCancellation.relative_bound
+#print axioms PaperP1.PolynomialLogarithmicCancellation.power_gain
 #print axioms PaperP1.PolynomialNatRatioLimits.quadratic
 #print axioms PaperP1.PolynomialNatRatioLimits.cubic
 #print axioms PaperP1.PolynomialParsevalBounds.circleIntegrable_sq_norm_eval
