@@ -5454,6 +5454,9 @@ import PaperP1
 #print axioms PaperP1.ScaledDerivativeExpansion.smooth_coefficient
 #print axioms PaperP1.ScaledDerivativeExpansion.successor_sum
 #print axioms PaperP1.ScaledDerivativeExpansion.iterated_expansion
+#print axioms PaperP1.ScaledFirstGoodEnergy.quantitative_bound
+#print axioms PaperP1.ScaledFirstGoodEnergy.rectangle_small_uniform
+#print axioms PaperP1.ScaledFirstGoodEnergy.full_small_uniform
 #print axioms PaperP1.ScaledMonomialPieceCount.partial_nonzero
 #print axioms PaperP1.ScaledMonomialPieceCount.point_count
 #print axioms PaperP1.ScaledMonomialPieceCount.first_point_count

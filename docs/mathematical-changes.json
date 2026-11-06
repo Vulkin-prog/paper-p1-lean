@@ -41122,6 +41122,35 @@
         "status": "not_integrated"
       },
       "validation_commit": "877d014fea87251990d3bd1f218f5ff7a208ae22"
+    },
+    {
+      "id": "P1-MATH-0953",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The actual paper window is a fixed constant times log N, and frequency truncation requires arbitrary fixed multiples of N/log N rather than only the factor-one height.",
+      "finding": "Three theorems prove the actual first-small rectangle and original-polynomial square-integral estimates uniformly for 0<T<=D*N/log N for EVERY fixed D>=0. The cofactor mean is explicitly bounded by C*(D+1), the first-small envelope is multiplied by D+1, and its actual limit remains zero. The growing first-band width and actual approximation error are retained. The former height restriction with factor one is discharged by a proved quantitative cofactor estimate.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "The actual first-small frequency contribution remains small at every fixed multiple of logarithmic reciprocal height. The actual off-central Dirichlet frequency estimate is proved. The central-frequency short-to-long comparison, the analytic short-average bridge and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.ScaledFirstGoodEnergy.quantitative_bound",
+        "PaperP1.ScaledFirstGoodEnergy.rectangle_small_uniform",
+        "PaperP1.ScaledFirstGoodEnergy.full_small_uniform"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18473 jobs); direct axiom audit passed for 19160 declarations using only propext, Classical.choice and Quot.sound; all 19456 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.47 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

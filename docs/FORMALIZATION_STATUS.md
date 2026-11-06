@@ -1,6 +1,17 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0952: Actual real completely multiplicative
+Current checkpoint P1-MATH-0953: The actual first-small frequency
+contribution remains small at every fixed multiple of logarithmic
+reciprocal height. The actual off-central Dirichlet frequency estimate
+is proved. The central-frequency short-to-long comparison, the analytic
+short-average bridge and complete logarithmic short-average
+concentration remain unproved. T19.17 conditional; original T1.7
+unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167;
+all 73 main proved. Sources, false-scope corrections, compiler and
+axioms unchanged. About 52.48 GiB free on Ubuntu. No dependency download
+or Palomar registration.
+
+Historical checkpoint P1-MATH-0952: Actual real completely multiplicative
 Dirichlet polynomials have uniform off-central mean-square decay. The
 actual off-central Dirichlet frequency estimate is proved. The central-
 frequency short-to-long comparison, the analytic short-average bridge
@@ -3469,7 +3480,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records950 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records951 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -3588,7 +3599,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **19157 audited theorem/lemma declarations**. This
+- The project currently has **19160 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -35897,3 +35908,12 @@ Three theorems and one definition prove measurability, the actual restricted thr
 The actual off-central Dirichlet frequency estimate is proved. The central-frequency short-to-long comparison, the analytic short-average bridge and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.60 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18471 jobs); direct axiom audit passed for 19157 declarations using only propext, Classical.choice and Quot.sound; all 19453 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.50 GiB.
+
+
+## The actual first-small frequency contribution remains small at every fixed multiple of logarithmic reciprocal height
+
+Three theorems prove the actual first-small rectangle and original-polynomial square-integral estimates uniformly for 0<T<=D*N/log N for EVERY fixed D>=0. The cofactor mean is explicitly bounded by C*(D+1), the first-small envelope is multiplied by D+1, and its actual limit remains zero. The growing first-band width and actual approximation error are retained. The former height restriction with factor one is discharged by a proved quantitative cofactor estimate.
+
+The actual off-central Dirichlet frequency estimate is proved. The central-frequency short-to-long comparison, the analytic short-average bridge and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.48 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18473 jobs); direct axiom audit passed for 19160 declarations using only propext, Classical.choice and Quot.sound; all 19456 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.47 GiB.
