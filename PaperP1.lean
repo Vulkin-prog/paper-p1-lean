@@ -4688,3 +4688,4 @@ public import PaperP1.Analysis.SeparatedPositiveBudget
 public import PaperP1.Analysis.SeparatedAbsoluteBudget
 public import PaperP1.Analysis.MixedGramRowBound
 public import PaperP1.Analysis.SparseGramEnvelope
+public import PaperP1.Analysis.SparseIntegerMeanValue

@@ -4934,6 +4934,12 @@ import PaperP1
 #print axioms PaperP1.SparseGramEnvelope.normalizedCap_nonneg
 #print axioms PaperP1.SparseGramEnvelope.normalizedCap_tendsto
 #print axioms PaperP1.SparseGramEnvelope.uniform_small
+#print axioms PaperP1.SparseIntegerMeanValue.cap_height_mono
+#print axioms PaperP1.SparseIntegerMeanValue.separation_properties
+#print axioms PaperP1.SparseIntegerMeanValue.card_cap_uniform
+#print axioms PaperP1.SparseIntegerMeanValue.budget_bound_uniform
+#print axioms PaperP1.SparseIntegerMeanValue.sampled_bound_uniform
+#print axioms PaperP1.SparseIntegerMeanValue.dirichlet_unit_uniform
 #print axioms PaperP1.SquareRootGramBound.cap_nonneg
 #print axioms PaperP1.SquareRootGramBound.actual_sum_bound
 #print axioms PaperP1.SquareRootGramBound.mixed_sum_bound

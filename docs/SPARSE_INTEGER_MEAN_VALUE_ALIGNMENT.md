@@ -1,0 +1,7 @@
+# Actual uniform sparse integer mean-value theorem for arbitrary complex coefficients
+
+Source: internal preparatory analytic route for companion T19.17. This is not a completed additional manuscript result.
+
+The actual Gram cap is monotone in its height. The literal separation N^(1/4) is >=1, <=N and has square <=N. The proved vanishing cap gives one threshold before ALL sample cardinalities <=N^(1/100) and ALL heights <=N^(5/4). The actual mixed row budget is then <=10*N*(1+log(N)). Therefore ONE N0 precedes every finite sample of frequencies in [-T,T] separated by one, every admissible T and EVERY complex coefficient sequence a: the actual sampled polynomial square sum is <=10*N*(1+log(N))*sum(norm(a(n))^2). For actual Dirichlet coefficients f(n)/n with norm(f(n))<=1 on [N,2N), the actual sampled square sum is <=10*(1+log(N)). Six theorems prove the finite sparse integer mean-value result internally. This is a sparse sampled estimate, not an unrestricted o(1) mean-square estimate or a logarithmic short-average theorem.
+
+The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.1 GiB free on Ubuntu. No dependency download or Palomar registration.

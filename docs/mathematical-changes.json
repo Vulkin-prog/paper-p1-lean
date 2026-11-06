@@ -34686,6 +34686,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "174caa658f2667d0f2d162191f81c87fd47f26d2"
+    },
+    {
+      "id": "P1-MATH-0749",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The needed sparse integer mean-value theorem must be applied to the actual frequency sample with one threshold BEFORE all coefficient functions, not assumed as a large-values interface.",
+      "finding": "The actual Gram cap is monotone in its height. The literal separation N^(1/4) is >=1, <=N and has square <=N. The proved vanishing cap gives one threshold before ALL sample cardinalities <=N^(1/100) and ALL heights <=N^(5/4). The actual mixed row budget is then <=10*N*(1+log(N)). Therefore ONE N0 precedes every finite sample of frequencies in [-T,T] separated by one, every admissible T and EVERY complex coefficient sequence a: the actual sampled polynomial square sum is <=10*N*(1+log(N))*sum(norm(a(n))^2). For actual Dirichlet coefficients f(n)/n with norm(f(n))<=1 on [N,2N), the actual sampled square sum is <=10*(1+log(N)). Six theorems prove the finite sparse integer mean-value result internally. This is a sparse sampled estimate, not an unrestricted o(1) mean-square estimate or a logarithmic short-average theorem.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Actual uniform sparse integer mean-value theorem for arbitrary complex coefficients. The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.SparseIntegerMeanValue.cap_height_mono",
+        "PaperP1.SparseIntegerMeanValue.separation_properties",
+        "PaperP1.SparseIntegerMeanValue.card_cap_uniform",
+        "PaperP1.SparseIntegerMeanValue.budget_bound_uniform",
+        "PaperP1.SparseIntegerMeanValue.sampled_bound_uniform",
+        "PaperP1.SparseIntegerMeanValue.dirichlet_unit_uniform"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18065 jobs); direct axiom audit passed for 18385 declarations using only propext, Classical.choice and Quot.sound; all 18531 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.05 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
