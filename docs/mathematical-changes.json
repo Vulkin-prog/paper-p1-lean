@@ -36667,6 +36667,40 @@
         "status": "not_integrated"
       },
       "validation_commit": "483203ba8467837d349f1734d1e93dc671c9c98d"
+    },
+    {
+      "id": "P1-MATH-0812",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "A final prime band requires actual ordered endpoints and divergent reciprocal mass; selecting its endpoints does not establish a prime large-value theorem.",
+      "finding": "Define the ACTUAL final prime band by exp(log N/log(log N)) < p <= exp(log N/B). Its lower endpoint tends to infinity, its upper endpoint tends to infinity for each fixed positive B, its endpoints are eventually ordered above 2, and its harmonic logarithmic gap tends to infinity. The latter is eventually EXACTLY log(log(log N))-log B. Five theorems and three definitions retain the fixed-B quantifier order. This is a preparatory third band, not a bound for the remaining frequency contribution.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "A final prime band has divergent endpoints and a divergent harmonic gap. The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.FinalPrimeBandGeometry.exponent_lower_tendsto",
+        "PaperP1.FinalPrimeBandGeometry.lower_tendsto",
+        "PaperP1.FinalPrimeBandGeometry.upper_tendsto",
+        "PaperP1.FinalPrimeBandGeometry.geometry_eventually",
+        "PaperP1.FinalPrimeBandGeometry.harmonic_gap_tendsto",
+        "PaperP1.FinalPrimeBandGeometry.lower",
+        "PaperP1.FinalPrimeBandGeometry.upper",
+        "PaperP1.FinalPrimeBandGeometry.primes"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18191 jobs); direct axiom audit passed for 18619 declarations using only propext, Classical.choice and Quot.sound; all 18813 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.92 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

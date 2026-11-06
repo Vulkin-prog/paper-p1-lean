@@ -3868,6 +3868,11 @@ import PaperP1
 #print axioms PaperP1.FactorialResolvent.correction_abs_bound
 #print axioms PaperP1.FactorialResolvent.summable_abs_correction
 #print axioms PaperP1.FactorialResolvent.correction_l1_bound
+#print axioms PaperP1.FinalPrimeBandGeometry.exponent_lower_tendsto
+#print axioms PaperP1.FinalPrimeBandGeometry.lower_tendsto
+#print axioms PaperP1.FinalPrimeBandGeometry.upper_tendsto
+#print axioms PaperP1.FinalPrimeBandGeometry.geometry_eventually
+#print axioms PaperP1.FinalPrimeBandGeometry.harmonic_gap_tendsto
 #print axioms PaperP1.FiniteAbelNorm.partialSum_succ
 #print axioms PaperP1.FiniteAbelNorm.finite_identity
 #print axioms PaperP1.FiniteAbelNorm.telescoping
