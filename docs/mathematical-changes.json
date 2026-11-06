@@ -40572,6 +40572,39 @@
         "status": "not_integrated"
       },
       "validation_commit": "b550178dd1b98d8178ea8b8121eb02b03be84fd9"
+    },
+    {
+      "id": "P1-MATH-0935",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "For a final prime band of fixed positive power, choosing a sufficiently large fixed width permits a fixed moment order and avoids a growing-order loss in the large-value count.",
+      "finding": "Five theorems and two definitions prove a positive explicit fixed-order moment constant, the actual amplified prime budget bound whenever actual reciprocal mass<=1, and actual narrow-prime sample cardinality bounds. With H>=4 fixed, anchor>=H and T<=anchor^H, all unit-separated large samples at level V have card<=C_H/V^(2H); at V=1/z^100 this is exactly <=C_H*z^(200H). The proved bounded-width moment theorem is used at k=H, with the actual rounded power endpoint retained.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "A fixed narrow-prime moment has a constant budget and a literal logarithmic large-value count. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.FixedOrderPrimeMoment.moment_constant_pos",
+        "PaperP1.FixedOrderPrimeMoment.budget_bound",
+        "PaperP1.FixedOrderPrimeMoment.constant_pos",
+        "PaperP1.FixedOrderPrimeMoment.sampled_card_bound",
+        "PaperP1.FixedOrderPrimeMoment.threshold_bound",
+        "PaperP1.FixedOrderPrimeMoment.momentConstant",
+        "PaperP1.FixedOrderPrimeMoment.constant"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18437 jobs); direct axiom audit passed for 19111 declarations using only propext, Classical.choice and Quot.sound; all 19396 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.83 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

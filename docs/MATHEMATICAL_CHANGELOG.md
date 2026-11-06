@@ -1,6 +1,15 @@
 # Mathematical corrections and improvements
 
-Current checkpoint P1-MATH-0934: Actual prime Dirichlet polynomials have
+Current checkpoint P1-MATH-0935: A fixed narrow-prime moment has a
+constant budget and a literal logarithmic large-value count. The triple-
+large prime frequency contribution, the central-frequency mean
+comparison and complete logarithmic short-average concentration remain
+unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164
+proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources,
+false-scope corrections, compiler and axioms unchanged. About 52.83 GiB
+free on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0934: Actual prime Dirichlet polynomials have
 a uniform logarithmic operator gain on polynomial-height logarithmic-
 size samples. The triple-large prime frequency contribution, the
 central-frequency mean comparison and complete logarithmic short-average
@@ -3177,7 +3186,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**932 mathematical improvements and two statement-scope corrections are confirmed.**
+**933 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -34673,3 +34682,12 @@ Three theorems and one definition prove a positive explicit constant K_B and act
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.87 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18435 jobs); direct axiom audit passed for 19106 declarations using only propext, Classical.choice and Quot.sound; all 19389 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.85 GiB.
+
+
+## A fixed narrow-prime moment has a constant budget and a literal logarithmic large-value count
+
+Five theorems and two definitions prove a positive explicit fixed-order moment constant, the actual amplified prime budget bound whenever actual reciprocal mass<=1, and actual narrow-prime sample cardinality bounds. With H>=4 fixed, anchor>=H and T<=anchor^H, all unit-separated large samples at level V have card<=C_H/V^(2H); at V=1/z^100 this is exactly <=C_H*z^(200H). The proved bounded-width moment theorem is used at k=H, with the actual rounded power endpoint retained.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.83 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18437 jobs); direct axiom audit passed for 19111 declarations using only propext, Classical.choice and Quot.sound; all 19396 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.83 GiB.

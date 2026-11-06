@@ -4127,6 +4127,11 @@ import PaperP1
 #print axioms PaperP1.FixedOrderLogarithmicScale.scale_power_times
 #print axioms PaperP1.FixedOrderLogarithmicScale.scale_bounds
 #print axioms PaperP1.FixedOrderLogarithmicScale.floor_half_bounds
+#print axioms PaperP1.FixedOrderPrimeMoment.moment_constant_pos
+#print axioms PaperP1.FixedOrderPrimeMoment.budget_bound
+#print axioms PaperP1.FixedOrderPrimeMoment.constant_pos
+#print axioms PaperP1.FixedOrderPrimeMoment.sampled_card_bound
+#print axioms PaperP1.FixedOrderPrimeMoment.threshold_bound
 #print axioms PaperP1.FixedOrderSecondTermDecay.exponent_power
 #print axioms PaperP1.FixedOrderSecondTermDecay.quotient_identity
 #print axioms PaperP1.FixedOrderSecondTermDecay.second_bound
