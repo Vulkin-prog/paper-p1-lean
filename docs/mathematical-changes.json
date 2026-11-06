@@ -28236,6 +28236,52 @@
         "status": "not_integrated"
       },
       "validation_commit": "510d0771ffe55bf64177b410fcf6674eacf51a14"
+    },
+    {
+      "id": "P1-MATH-0592",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The coefficient-uniform P3 cover cannot assume a bounded integer equation or an independent auxiliary equation. Both must be constructed from the actual point population, and local prime divisibilities must be combined for the original determinant.",
+      "finding": "Actual finite interpolation gives a nonzero integer equation with coefficient bound (3*choose(d+3,3)*H^d)^(choose(d+3,3)-1). It either defines the original surface up to nonzero rational scalar or constructs a full d^2 curve cover. The exact multi-prime determinant divisor is also proved on original point values.",
+      "proposed_revision": "State the explicit coefficient-controlled integer-model-or-distinct-equation alternative at the start of the global covering proof, discharge the distinct-equation branch by the actual bounded curve family, and combine local divisors using literal distinct-prime coprimality.",
+      "impact": "Removes the unproved coefficient-height reduction and closes its entire auxiliary-equation branch, while keeping the quantitative bounded-model global covering problem explicit.",
+      "evidence": [
+        "PaperP1.MultiPrimeSurfaceDeterminant.integer_dvd",
+        "PaperP1.MultiPrimeSurfaceDeterminant.det_zero_of_small",
+        "PaperP1.P3HeightControlledEquation.scalar_of_dvd",
+        "PaperP1.P3HeightControlledEquation.integer_evaluation",
+        "PaperP1.P3HeightControlledEquation.exists_model_or_auxiliary",
+        "PaperP1.P3HomogeneousCoefficientFamily.index_card",
+        "PaperP1.P3HomogeneousCoefficientFamily.coeff_index",
+        "PaperP1.P3HomogeneousCoefficientFamily.coeff_outside",
+        "PaperP1.P3HomogeneousCoefficientFamily.homogeneous",
+        "PaperP1.P3HomogeneousCoefficientFamily.reconstruct",
+        "PaperP1.P3HomogeneousCoefficientFamily.nonzero",
+        "PaperP1.P3HomogeneousCoefficientFamily.evaluation",
+        "PaperP1.P3HomogeneousIntegerInterpolation.index_card_pos",
+        "PaperP1.P3HomogeneousIntegerInterpolation.monomial_bound",
+        "PaperP1.P3HomogeneousIntegerInterpolation.evaluation_minors_zero",
+        "PaperP1.P3HomogeneousIntegerInterpolation.exists_bounded_equation",
+        "PaperP1.P3BoundedModelOrCurveCover.model_or_cover",
+        "PaperP1.P3HypersurfaceAuxiliaryCurves.exists_family",
+        "PaperP1.P3HomogeneousCoefficientFamily.Index",
+        "PaperP1.P3HomogeneousCoefficientFamily.polynomial"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17279 jobs); direct axiom audit passed for 16632 declarations using only propext, Classical.choice and Quot.sound; all 16334 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.25 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

@@ -4307,3 +4307,9 @@ public import PaperP1.Algebra.CoordinateSwapEvaluation
 public import PaperP1.Algebra.LastChartPolynomial
 public import PaperP1.Algebra.NormalizedP3SurfaceDeterminant
 public import PaperP1.Algebra.TernaryMvPolynomialEvaluation
+public import PaperP1.Algebra.MultiPrimeSurfaceDeterminant
+public import PaperP1.Algebra.P3HeightControlledEquation
+public import PaperP1.Algebra.P3HomogeneousCoefficientFamily
+public import PaperP1.Algebra.P3HomogeneousIntegerInterpolation
+public import PaperP1.Geometry.P3BoundedModelOrCurveCover
+public import PaperP1.Geometry.P3HypersurfaceAuxiliaryCurves
