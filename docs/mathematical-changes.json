@@ -35456,6 +35456,33 @@
         "status": "not_integrated"
       },
       "validation_commit": "e0bae2da375c1060d6dfe4ada9707ce1b93219b3"
+    },
+    {
+      "id": "P1-MATH-0773",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The exceptional set must be chosen before all band anchors, and the exact cofactor support must fit within the interval range on which simultaneous partial summation is valid.",
+      "finding": "The same R,N0 and exceptional-set construction now control EVERY actual cofactor polynomial attached to any narrow band H,j satisfying (N+1)*exp(j/H)<=X. For N>=N0, N<=2*X and T>=max(1,ceil(log(2*X)^10)), ONE measurable E of volume<=delta*T precedes ALL H,j, both prime supports and complete real prime-bounded coefficients. At each off-exception frequency the literal cofactor polynomial, on [ceil(X/anchor),ceil(2*X/anchor)), with the original full count denominator and other-band presence, has norm<=epsilon. Both rounded endpoints and their dyadic relation are used.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "One actual common exception controls all narrow rectangle cofactor polynomials. The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.CommonNarrowCofactors.common_cofactors_small"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18113 jobs); direct axiom audit passed for 18479 declarations using only propext, Classical.choice and Quot.sound; all 18648 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.61 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

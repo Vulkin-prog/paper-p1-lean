@@ -4712,3 +4712,4 @@ public import PaperP1.Analysis.NarrowBoundaryMeanValue
 public import PaperP1.Analysis.NarrowRectangleError
 public import PaperP1.Analysis.TwoBandRectangleApproximation
 public import PaperP1.Analysis.CommonAllIntervals
+public import PaperP1.Analysis.CommonNarrowCofactors

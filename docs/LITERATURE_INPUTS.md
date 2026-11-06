@@ -1,6 +1,15 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0772: One common exception controls all
+Current checkpoint P1-MATH-0773: One actual common exception controls
+all narrow rectangle cofactor polynomials. The actual Ramare main-term
+frequency bounds and complete logarithmic short-average concentration
+remain unproved. T19.17 conditional; original T1.7 unconditional.
+Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main
+proved. Sources, false-scope corrections, compiler and axioms unchanged.
+About 52.9 GiB free on Ubuntu. No dependency download or Palomar
+registration.
+
+Historical checkpoint P1-MATH-0772: One common exception controls all
 actual weighted intervals with varying lower endpoints. The actual
 Ramare main-term frequency bounds and complete logarithmic short-average
 concentration remain unproved. T19.17 conditional; original T1.7
@@ -32190,6 +32199,12 @@ For every epsilon,delta>0 one R>=2 and N0>=4 precede N>=N0, B>=N and T>=max(1,ce
 
 The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.
 
+## Internal one actual common exception controls all narrow rectangle cofactor polynomials
+
+The same R,N0 and exceptional-set construction now control EVERY actual cofactor polynomial attached to any narrow band H,j satisfying (N+1)*exp(j/H)<=X. For N>=N0, N<=2*X and T>=max(1,ceil(log(2*X)^10)), ONE measurable E of volume<=delta*T precedes ALL H,j, both prime supports and complete real prime-bounded coefficients. At each off-exception frequency the literal cofactor polynomial, on [ceil(X/anchor),ceil(2*X/anchor)), with the original full count denominator and other-band presence, has norm<=epsilon. Both rounded endpoints and their dyadic relation are used.
+
+The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -35118,3 +35133,14 @@ For every epsilon,delta>0 one R>=2 and N0>=4 precede N>=N0, B>=N and T>=max(1,ce
 The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18111 jobs); direct axiom audit passed for 18478 declarations using only propext, Classical.choice and Quot.sound; all 18647 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.63 GiB.
+
+
+## One actual common exception controls all narrow rectangle cofactor polynomials
+
+Stable ID: p1:internal:common-narrow-cofactors. One actual common exception controls all narrow rectangle cofactor polynomials. The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.
+
+The same R,N0 and exceptional-set construction now control EVERY actual cofactor polynomial attached to any narrow band H,j satisfying (N+1)*exp(j/H)<=X. For N>=N0, N<=2*X and T>=max(1,ceil(log(2*X)^10)), ONE measurable E of volume<=delta*T precedes ALL H,j, both prime supports and complete real prime-bounded coefficients. At each off-exception frequency the literal cofactor polynomial, on [ceil(X/anchor),ceil(2*X/anchor)), with the original full count denominator and other-band presence, has norm<=epsilon. Both rounded endpoints and their dyadic relation are used.
+
+The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18113 jobs); direct axiom audit passed for 18479 declarations using only propext, Classical.choice and Quot.sound; all 18648 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.61 GiB.

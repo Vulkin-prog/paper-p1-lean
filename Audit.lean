@@ -3465,6 +3465,7 @@ import PaperP1
 #print axioms PaperP1.CommonFullEulerBudget.common_budget_small_uniform
 #print axioms PaperP1.CommonIntervalDirichlet.value_as_twisted_sum
 #print axioms PaperP1.CommonIntervalDirichlet.common_interval_small
+#print axioms PaperP1.CommonNarrowCofactors.common_cofactors_small
 #print axioms PaperP1.CommonPresenceWeightedSum.difference_identity
 #print axioms PaperP1.CommonPresenceWeightedSum.common_presence_weighted_small
 #print axioms PaperP1.CommonPrimeFrequencyException.doubled_value_continuous
