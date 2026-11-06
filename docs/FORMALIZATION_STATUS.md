@@ -1,6 +1,13 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0721: Exact early geometric scale sum and
+Current checkpoint P1-MATH-0722: Actual global triple bound by early
+scales and a fixed number of Euler-controlled bands. Final logarithmic
+short-average concentration and original T19.17 remain unfinished.
+Original T1.7 complete. Coverage: 164 proved, 1 conditional, 2
+in_progress /167; all 73 main proved. False scopes/corrections
+unchanged. No Palomar registration.
+
+Historical checkpoint P1-MATH-0721: Exact early geometric scale sum and
 bounded late-band count. Final logarithmic short-average concentration
 and original T19.17 remain unfinished. Original T1.7 complete. Coverage:
 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. False
@@ -1411,7 +1418,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records719 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records720 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -1530,7 +1537,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **18233 audited theorem/lemma declarations**. This
+- The project currently has **18235 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -31746,3 +31753,14 @@ The finite sum splits EXACTLY into these early indices and the shifted late rang
 Final logarithmic short-average concentration and original T19.17 remain unfinished. Original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, sources, pinned Lean and axioms unchanged. About 53.8 GiB is free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18009 jobs); direct axiom audit passed for 18233 declarations using only propext, Classical.choice and Quot.sound; all 18344 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.54 GiB.
+
+
+## Actual global triple bound by early scales and a fixed number of Euler-controlled bands
+
+The actual budget is the literal full-series local-supremum frequencyBudget. It is nonnegative. For one fixed X0 before all X>=X0, complete complex prime-bounded coefficients and ALL m, the literal triple over the canonical retained primes is bounded by C_trivial*X*(4*log(X)/2^m)+m*(C_analytic*X*sqrt(actualBudget)+combinedError(X)).
+
+Exact partition, the actual elementary bound on early bands, the quantitative Euler bound on late bands, and the finite geometric identities prove this inequality internally. Two theorems and one definition preserve the actual band populations and explicit error.
+
+Final logarithmic short-average concentration and original T19.17 remain unfinished. Original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, sources, pinned Lean and axioms unchanged. About 53.8 GiB is free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18011 jobs); direct axiom audit passed for 18235 declarations using only propext, Classical.choice and Quot.sound; all 18347 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.53 GiB.

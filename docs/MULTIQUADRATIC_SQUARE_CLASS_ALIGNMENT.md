@@ -1,6 +1,13 @@
 # Multiquadratic split radicands: exact square-class independence
 
-Current checkpoint P1-MATH-0721: Exact early geometric scale sum and
+Current checkpoint P1-MATH-0722: Actual global triple bound by early
+scales and a fixed number of Euler-controlled bands. Final logarithmic
+short-average concentration and original T19.17 remain unfinished.
+Original T1.7 complete. Coverage: 164 proved, 1 conditional, 2
+in_progress /167; all 73 main proved. False scopes/corrections
+unchanged. No Palomar registration.
+
+Historical checkpoint P1-MATH-0721: Exact early geometric scale sum and
 bounded late-band count. Final logarithmic short-average concentration
 and original T19.17 remain unfinished. Original T1.7 complete. Coverage:
 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. False
@@ -24850,3 +24857,14 @@ The finite sum splits EXACTLY into these early indices and the shifted late rang
 Final logarithmic short-average concentration and original T19.17 remain unfinished. Original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, sources, pinned Lean and axioms unchanged. About 53.8 GiB is free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18009 jobs); direct axiom audit passed for 18233 declarations using only propext, Classical.choice and Quot.sound; all 18344 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.54 GiB.
+
+
+## Actual global triple bound by early scales and a fixed number of Euler-controlled bands
+
+The actual budget is the literal full-series local-supremum frequencyBudget. It is nonnegative. For one fixed X0 before all X>=X0, complete complex prime-bounded coefficients and ALL m, the literal triple over the canonical retained primes is bounded by C_trivial*X*(4*log(X)/2^m)+m*(C_analytic*X*sqrt(actualBudget)+combinedError(X)).
+
+Exact partition, the actual elementary bound on early bands, the quantitative Euler bound on late bands, and the finite geometric identities prove this inequality internally. Two theorems and one definition preserve the actual band populations and explicit error.
+
+Final logarithmic short-average concentration and original T19.17 remain unfinished. Original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, sources, pinned Lean and axioms unchanged. About 53.8 GiB is free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18011 jobs); direct axiom audit passed for 18235 declarations using only propext, Classical.choice and Quot.sound; all 18347 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.53 GiB.

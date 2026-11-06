@@ -33776,6 +33776,35 @@
         "status": "not_integrated"
       },
       "validation_commit": "70454dc7f980f299b0362847bb2688e0a1d32134"
+    },
+    {
+      "id": "P1-MATH-0722",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The preceding analytic components did not yet provide this exact finite partition, uniform global estimate or common-frequency conclusion.",
+      "finding": "The actual budget is the literal full-series local-supremum frequencyBudget. It is nonnegative. For one fixed X0 before all X>=X0, complete complex prime-bounded coefficients and ALL m, the literal triple over the canonical retained primes is bounded by C_trivial*X*(4*log(X)/2^m)+m*(C_analytic*X*sqrt(actualBudget)+combinedError(X)).",
+      "proposed_revision": "Use the proved actual finite/global conclusion with its precise coefficient and cutoff scope; keep the remaining short-average theorem separate.",
+      "impact": "Actual global triple bound by early scales and a fixed number of Euler-controlled bands. Final logarithmic short-average concentration and original T19.17 remain unfinished.",
+      "evidence": [
+        "PaperP1.GlobalTripleBand.budget_nonneg",
+        "PaperP1.GlobalTripleBand.global_triple_bound",
+        "PaperP1.GlobalTripleBand.budget"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18011 jobs); direct axiom audit passed for 18235 declarations using only propext, Classical.choice and Quot.sound; all 18347 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.53 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
