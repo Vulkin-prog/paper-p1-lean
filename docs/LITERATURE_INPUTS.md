@@ -1,6 +1,15 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0939: Actual fixed-power anchors control the
+Current checkpoint P1-MATH-0940: Actual reciprocal prime coefficients
+have an explicit logarithmic energy gain. The triple-large prime
+frequency contribution, the central-frequency mean comparison and
+complete logarithmic short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 52.76 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0939: Actual fixed-power anchors control the
 height, cardinality and logarithms of global frequency samples. The
 triple-large prime frequency contribution, the central-frequency mean
 comparison and complete logarithmic short-average concentration remain
@@ -34712,6 +34721,12 @@ Five theorems prove the actual log comparison log(N)<=(2/a)*log(u), the height c
 
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
 
+## Internal actual reciprocal prime coefficients have an explicit logarithmic energy gain
+
+Three theorems and one definition prove an elementary constant C=42*log(2)>0 and, for EVERY real A>=2 and EVERY finite set of actual primes in [A,2A], cardinality<=C*A/log(A). For arbitrary actual coefficients of norm<=1, their literal reciprocal coefficient energy sum_p norm(f(p)/p)^2 is <=C/(A*log(A)). The proof uses the proved finite Chebyshev count at the actual rounded upper cutoff; no prime-counting asymptotic premise is assumed.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -39477,3 +39492,14 @@ Five theorems prove the actual log comparison log(N)<=(2/a)*log(u), the height c
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.76 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18445 jobs); direct axiom audit passed for 19125 declarations using only propext, Classical.choice and Quot.sound; all 19411 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.75 GiB.
+
+
+## Actual reciprocal prime coefficients have an explicit logarithmic energy gain
+
+Stable ID: p1:internal:dyadic-prime-coefficient-energy. Actual reciprocal prime coefficients have an explicit logarithmic energy gain. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
+
+Three theorems and one definition prove an elementary constant C=42*log(2)>0 and, for EVERY real A>=2 and EVERY finite set of actual primes in [A,2A], cardinality<=C*A/log(A). For arbitrary actual coefficients of norm<=1, their literal reciprocal coefficient energy sum_p norm(f(p)/p)^2 is <=C/(A*log(A)). The proof uses the proved finite Chebyshev count at the actual rounded upper cutoff; no prime-counting asymptotic premise is assumed.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.76 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18447 jobs); direct axiom audit passed for 19128 declarations using only propext, Classical.choice and Quot.sound; all 19415 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.73 GiB.
