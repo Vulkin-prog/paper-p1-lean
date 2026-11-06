@@ -27117,6 +27117,39 @@
         "status": "not_integrated"
       },
       "validation_commit": "edfaf0f8e11b63fd517be427045cd38e1c931848"
+    },
+    {
+      "id": "P1-MATH-0564",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The surface projection ingredients still required externally supplied fraction fields, scalar towers, primitive coordinates and conductor data, with birationality and coordinate fibre separation only available in plane-specific assembled statements.",
+      "finding": "The bounded homogeneous birational hypersurface projection is now constructed entirely from the actual graded source generators and finite injective normalization rank, including the exact primitive equation, nonzero homogeneous derivative conductor, and uniform integer coefficient and height bounds.",
+      "proposed_revision": "State the actual bounded projection construction before using a hypersurface covering result, including its canonical image equation, exact degree, derivative exception divisor and coefficient bound independent of the later height.",
+      "impact": "Removes auxiliary field/primitive/separability hypotheses from the assembled algebraic projection and supplies actual generic good-fibre separation for the remaining source-surface specialization.",
+      "evidence": [
+        "PaperP1.BoundedHomogeneousHypersurfaceProjection.exists_projection",
+        "PaperP1.HypersurfaceImagePointSeparation.evaluations_equal_of_conductor",
+        "PaperP1.HypersurfaceImagePointSeparation.evaluations_equal_of_coordinates",
+        "PaperP1.LinearHypersurfaceImageBirational.baseFractionTower",
+        "PaperP1.LinearHypersurfaceImageBirational.fraction_ring",
+        "PaperP1.LinearHypersurfaceImageBirational.rank_one",
+        "PaperP1.LinearHypersurfaceImageBirational.normalization_rank"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17071 jobs); direct axiom audit passed for 16331 declarations using only propext, Classical.choice and Quot.sound; all 15958 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.26 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

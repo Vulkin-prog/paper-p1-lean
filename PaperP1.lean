@@ -4208,3 +4208,6 @@ public import PaperP1.Algebra.FiniteSurfaceParameterRank
 public import PaperP1.Algebra.NativeSurfacePowerParameters
 public import PaperP1.Algebra.PolynomialEventualCoefficientOrder
 public import PaperP1.Algebra.SourceSurfacePowerParameters
+public import PaperP1.Geometry.BoundedHomogeneousHypersurfaceProjection
+public import PaperP1.Geometry.HypersurfaceImagePointSeparation
+public import PaperP1.Geometry.LinearHypersurfaceImageBirational

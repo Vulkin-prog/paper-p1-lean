@@ -12330,6 +12330,7 @@ import PaperP1
 #print axioms PaperP1.BoundedCurveNoetherNormalization.exists_normalization
 #print axioms PaperP1.BoundedFiniteCurveParameters.finite_of_avoidance
 #print axioms PaperP1.BoundedFiniteCurveParameters.exists_bounded_finite_parameters
+#print axioms PaperP1.BoundedHomogeneousHypersurfaceProjection.exists_projection
 #print axioms PaperP1.BoundedProjectiveSectionAvoidance.exists_coefficients
 #print axioms PaperP1.BoundedProjectiveSectionAvoidance.exists_coefficients_and_height
 #print axioms PaperP1.BoundedProjectiveSectionAvoidance.rational_curve
@@ -12338,6 +12339,8 @@ import PaperP1
 #print axioms PaperP1.FiniteCurvePrimitiveCoordinate.exists_coordinate
 #print axioms PaperP1.GradedVeroneseProj.map_isIso
 #print axioms PaperP1.GradedVeroneseProj.iso_hom
+#print axioms PaperP1.HypersurfaceImagePointSeparation.evaluations_equal_of_conductor
+#print axioms PaperP1.HypersurfaceImagePointSeparation.evaluations_equal_of_coordinates
 #print axioms PaperP1.IntegerCurveProjectionCoordinates.evaluation_coordinates
 #print axioms PaperP1.IntegerCurveProjectionCoordinates.points_equal
 #print axioms PaperP1.IntegerCurveProjectionCount.population
@@ -12355,6 +12358,10 @@ import PaperP1
 #print axioms PaperP1.LinearHypersurfaceImage.toSource_finite
 #print axioms PaperP1.LinearHypersurfaceImage.parameterMap_injective
 #print axioms PaperP1.LinearHypersurfaceImage.primitive_coordinate
+#print axioms PaperP1.LinearHypersurfaceImageBirational.baseFractionTower
+#print axioms PaperP1.LinearHypersurfaceImageBirational.fraction_ring
+#print axioms PaperP1.LinearHypersurfaceImageBirational.rank_one
+#print axioms PaperP1.LinearHypersurfaceImageBirational.normalization_rank
 #print axioms PaperP1.LinearHypersurfaceImageFiber.adjoin_subset_range
 #print axioms PaperP1.LinearHypersurfaceImageFiber.denominator_is_partial
 #print axioms PaperP1.LinearHypersurfaceImageFiber.denominator_homogeneous
