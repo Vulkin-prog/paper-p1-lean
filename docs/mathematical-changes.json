@@ -30649,6 +30649,36 @@
         "status": "not_integrated"
       },
       "validation_commit": "ecff36f7e24312a89a0a0b3f6b3ab28439f41db1"
+    },
+    {
+      "id": "P1-MATH-0642",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The reduced primitive coordinate argument would otherwise assume that the localized source was already a field or that the coordinate already generated it.",
+      "finding": "An actual root of a monic irreducible polynomial whose degree bounds the dimension of a nontrivial finite algebra yields a concrete field-algebra equivalence. Fieldness, generation by the root and exact dimension all follow.",
+      "proposed_revision": "Use this full-degree argument to prove reduced source fieldness and primitiveness from the original irreducible equation and the actual source dimension bound. Keep its source-specific dimension, monic degree and localization hypotheses explicit until established.",
+      "impact": "Discharges the abstract full-degree field and primitive-generation implication without a domain or primitive premise. Application to the original source and the derivative conductor remain unfinished.",
+      "evidence": [
+        "PaperP1.FullDegreePrimitiveAlgebra.exists_equiv",
+        "PaperP1.FullDegreePrimitiveAlgebra.isField",
+        "PaperP1.FullDegreePrimitiveAlgebra.adjoin_eq_top",
+        "PaperP1.FullDegreePrimitiveAlgebra.finrank_eq"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17771 jobs); direct axiom audit passed for 17462 declarations using only propext, Classical.choice and Quot.sound; all 17381 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.02 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

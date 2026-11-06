@@ -1213,6 +1213,10 @@ import PaperP1
 #print axioms PaperP1.FreeApproximationRank.finite_of_span
 #print axioms PaperP1.FreeApproximationRank.finrank_eq
 #print axioms PaperP1.FreeApproximationRank.fraction_finrank_eq
+#print axioms PaperP1.FullDegreePrimitiveAlgebra.exists_equiv
+#print axioms PaperP1.FullDegreePrimitiveAlgebra.isField
+#print axioms PaperP1.FullDegreePrimitiveAlgebra.adjoin_eq_top
+#print axioms PaperP1.FullDegreePrimitiveAlgebra.finrank_eq
 #print axioms PaperP1.GeneratedThreeCoordinatePoints.coordinates_injective
 #print axioms PaperP1.GeneratedThreeCoordinatePoints.points_finite
 #print axioms PaperP1.GeneratedThreeCoordinatePoints.mixed_evaluation

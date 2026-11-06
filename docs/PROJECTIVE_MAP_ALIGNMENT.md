@@ -1,6 +1,17 @@
 # Actual projective scheme map
 
-Current checkpoint P1-MATH-0641: the SAME original projected INTEGER
+Current checkpoint P1-MATH-0642: an actual root of a monic irreducible
+polynomial P in a nontrivial finite K-algebra B with dim(B)<=deg(P)
+produces a concrete equivalence AdjoinRoot(P)~=B. The conclusions
+IsField(B), K[y]=B and dim(B)=deg(P) are internal proofs; neither
+domain nor primitive generation is assumed. The ACTUAL reduced source
+dimension, equation normalization and localization/conductor application
+remain UNPROVED. Canonical T1.7 retains ONLY its prior P3 input in
+degrees>2 at the original families and caps. Coverage stays 163 proved,
+2 conditional, 2 in_progress out of 167; all 73 main results proved.
+No Palomar registration.
+
+Historical checkpoint P1-MATH-0641: the SAME original projected INTEGER
 polynomial is proved to vanish in the common integral source and after
 reduction to EVERY coefficient field. The exact original rational image
 kernel and principal scalar-multiple integer model supply its relation.
@@ -22273,3 +22284,14 @@ Consequently the SAME original integer polynomial vanishes on the actual source 
 Two modules add six theorems and no definitions. This discharges reduction of the actual original projected integer polynomial relation. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families/caps. Coverage remains 163 proved, 2 conditional, 2 in_progress out of 167; all 73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Work stays on Ubuntu with about 55.0 GiB available and no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17769 jobs); direct axiom audit passed for 17458 declarations using only propext, Classical.choice and Quot.sound; all 17377 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.03 GiB.
+
+
+## A full-degree irreducible root forces a finite algebra to be a primitive field
+
+FullDegreePrimitiveAlgebra starts with an arbitrary nontrivial finite-dimensional commutative K-algebra B, without assuming it is a domain or field. Given a monic irreducible P in K[X], an actual root y in B and the dimension bound dim_K(B)<=deg(P), it constructs an actual K-algebra equivalence AdjoinRoot(P)~=B taking the canonical root to y. The root algebra is a field and its map into B is injective; the finite dimension comparison proves surjectivity.
+
+The remaining three theorems derive IsField(B), K[y]=B and the exact equality dim_K(B)=deg(P). Thus neither fieldness nor primitiveness is inserted as an input. Only the actual polynomial relation, its irreducibility and the dimension upper bound are required. This allows the reduced source to be shown a domain by an injective localization map once the original reduced equation and actual power-parameter dimension bound are verified.
+
+One module adds four theorems and no definitions. The abstract full-degree primitive argument is discharged. The actual source dimension bound, retained degree and monic normalization, original-model irreducibility, localization identification, derivative conductor and effective prime budget remain unfinished. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families/caps. Coverage remains 163 proved, 2 conditional, 2 in_progress out of 167; all 73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Work stays on Ubuntu with about 55.0 GiB available and no dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17771 jobs); direct axiom audit passed for 17462 declarations using only propext, Classical.choice and Quot.sound; all 17381 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.02 GiB.
