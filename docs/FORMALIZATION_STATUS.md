@@ -1,6 +1,18 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0971: Actual short and long logarithmic
+Current checkpoint P1-MATH-0972: Actual scaled Gaussian kernels have
+quantitative localization bounds. The actual off-central estimate, the
+ordinary smooth long-interval mean comparison and the uniform Gaussian
+mean-square comparison are proved. Localization of the Gaussian averages
+to the literal logarithmic windows remains unproved, so T19.17 stays
+conditional. The stronger uniform sharp short-average theorem for all
+real completely multiplicative functions is not established. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 52.12 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0971: Actual short and long logarithmic
 Gaussian averages have uniform mean-square comparison. The actual off-
 central estimate, the ordinary smooth long-interval mean comparison and
 the uniform Gaussian mean-square comparison are proved. Localization of
@@ -3683,7 +3695,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records969 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records970 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -3802,7 +3814,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **19246 audited theorem/lemma declarations**. This
+- The project currently has **19252 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -36282,3 +36294,12 @@ Four theorems and one definition construct literal finite Gaussian averages with
 The actual off-central estimate, the ordinary smooth long-interval mean comparison and the uniform Gaussian mean-square comparison are proved. Localization of the Gaussian averages to the literal logarithmic windows remains unproved, so T19.17 stays conditional. The stronger uniform sharp short-average theorem for all real completely multiplicative functions is not established. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.20 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18509 jobs); direct axiom audit passed for 19246 declarations using only propext, Classical.choice and Quot.sound; all 19559 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.13 GiB.
+
+
+## Actual scaled Gaussian kernels have quantitative localization bounds
+
+Six theorems prove the exact scaled prefactor and actual heat-kernel formula at width delta squared, symmetry, the pointwise upper bound prefactor(1)/delta, a fixed positive lower bound within abs(v)<=delta, and the explicit split Gaussian tail after abs(v)>=m. All positive-width and distance conditions are explicit. No localization estimate is assumed.
+
+The actual off-central estimate, the ordinary smooth long-interval mean comparison and the uniform Gaussian mean-square comparison are proved. Localization of the Gaussian averages to the literal logarithmic windows remains unproved, so T19.17 stays conditional. The stronger uniform sharp short-average theorem for all real completely multiplicative functions is not established. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.12 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18511 jobs); direct axiom audit passed for 19252 declarations using only propext, Classical.choice and Quot.sound; all 19565 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.12 GiB.

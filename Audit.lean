@@ -5501,6 +5501,12 @@ import PaperP1
 #print axioms PaperP1.ScaledFirstGoodEnergy.quantitative_bound
 #print axioms PaperP1.ScaledFirstGoodEnergy.rectangle_small_uniform
 #print axioms PaperP1.ScaledFirstGoodEnergy.full_small_uniform
+#print axioms PaperP1.ScaledGaussianKernel.prefactor_scale
+#print axioms PaperP1.ScaledGaussianKernel.heat_scaled
+#print axioms PaperP1.ScaledGaussianKernel.heat_even
+#print axioms PaperP1.ScaledGaussianKernel.heat_upper
+#print axioms PaperP1.ScaledGaussianKernel.heat_lower
+#print axioms PaperP1.ScaledGaussianKernel.heat_tail
 #print axioms PaperP1.ScaledIntermediateEnergy.envelope_bound
 #print axioms PaperP1.ScaledIntermediateEnergy.rectangle_small_uniform
 #print axioms PaperP1.ScaledIntermediateEnergy.full_small_uniform

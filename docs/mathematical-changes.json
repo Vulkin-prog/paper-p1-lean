@@ -41741,6 +41741,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "6b7691ecbd5003deda959ee6be411f1f4f395973"
+    },
+    {
+      "id": "P1-MATH-0972",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "Internal actual physical localization for the Gaussian route to logarithmic windows.",
+      "finding": "Six theorems prove the exact scaled prefactor and actual heat-kernel formula at width delta squared, symmetry, the pointwise upper bound prefactor(1)/delta, a fixed positive lower bound within abs(v)<=delta, and the explicit split Gaussian tail after abs(v)>=m. All positive-width and distance conditions are explicit. No localization estimate is assumed.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Actual scaled Gaussian kernels have quantitative localization bounds. The actual off-central estimate, the ordinary smooth long-interval mean comparison and the uniform Gaussian mean-square comparison are proved. Localization of the Gaussian averages to the literal logarithmic windows remains unproved, so T19.17 stays conditional. The stronger uniform sharp short-average theorem for all real completely multiplicative functions is not established.",
+      "evidence": [
+        "PaperP1.ScaledGaussianKernel.prefactor_scale",
+        "PaperP1.ScaledGaussianKernel.heat_scaled",
+        "PaperP1.ScaledGaussianKernel.heat_even",
+        "PaperP1.ScaledGaussianKernel.heat_upper",
+        "PaperP1.ScaledGaussianKernel.heat_lower",
+        "PaperP1.ScaledGaussianKernel.heat_tail"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18511 jobs); direct axiom audit passed for 19252 declarations using only propext, Classical.choice and Quot.sound; all 19565 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.12 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

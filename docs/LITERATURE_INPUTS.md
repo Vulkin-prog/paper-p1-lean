@@ -1,6 +1,18 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0971: Actual short and long logarithmic
+Current checkpoint P1-MATH-0972: Actual scaled Gaussian kernels have
+quantitative localization bounds. The actual off-central estimate, the
+ordinary smooth long-interval mean comparison and the uniform Gaussian
+mean-square comparison are proved. Localization of the Gaussian averages
+to the literal logarithmic windows remains unproved, so T19.17 stays
+conditional. The stronger uniform sharp short-average theorem for all
+real completely multiplicative functions is not established. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 52.12 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0971: Actual short and long logarithmic
 Gaussian averages have uniform mean-square comparison. The actual off-
 central estimate, the ordinary smooth long-interval mean comparison and
 the uniform Gaussian mean-square comparison are proved. Localization of
@@ -35242,6 +35254,12 @@ Four theorems and one definition construct literal finite Gaussian averages with
 
 The actual off-central estimate, the ordinary smooth long-interval mean comparison and the uniform Gaussian mean-square comparison are proved. Localization of the Gaussian averages to the literal logarithmic windows remains unproved, so T19.17 stays conditional. The stronger uniform sharp short-average theorem for all real completely multiplicative functions is not established.
 
+## Internal actual scaled gaussian kernels have quantitative localization bounds
+
+Six theorems prove the exact scaled prefactor and actual heat-kernel formula at width delta squared, symmetry, the pointwise upper bound prefactor(1)/delta, a fixed positive lower bound within abs(v)<=delta, and the explicit split Gaussian tail after abs(v)>=m. All positive-width and distance conditions are explicit. No localization estimate is assumed.
+
+The actual off-central estimate, the ordinary smooth long-interval mean comparison and the uniform Gaussian mean-square comparison are proved. Localization of the Gaussian averages to the literal logarithmic windows remains unproved, so T19.17 stays conditional. The stronger uniform sharp short-average theorem for all real completely multiplicative functions is not established.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -40359,3 +40377,14 @@ Four theorems and one definition construct literal finite Gaussian averages with
 The actual off-central estimate, the ordinary smooth long-interval mean comparison and the uniform Gaussian mean-square comparison are proved. Localization of the Gaussian averages to the literal logarithmic windows remains unproved, so T19.17 stays conditional. The stronger uniform sharp short-average theorem for all real completely multiplicative functions is not established. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.20 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18509 jobs); direct axiom audit passed for 19246 declarations using only propext, Classical.choice and Quot.sound; all 19559 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.13 GiB.
+
+
+## Actual scaled Gaussian kernels have quantitative localization bounds
+
+Stable ID: p1:internal:scaled-gaussian-kernel. Actual scaled Gaussian kernels have quantitative localization bounds. The actual off-central estimate, the ordinary smooth long-interval mean comparison and the uniform Gaussian mean-square comparison are proved. Localization of the Gaussian averages to the literal logarithmic windows remains unproved, so T19.17 stays conditional. The stronger uniform sharp short-average theorem for all real completely multiplicative functions is not established.
+
+Six theorems prove the exact scaled prefactor and actual heat-kernel formula at width delta squared, symmetry, the pointwise upper bound prefactor(1)/delta, a fixed positive lower bound within abs(v)<=delta, and the explicit split Gaussian tail after abs(v)>=m. All positive-width and distance conditions are explicit. No localization estimate is assumed.
+
+The actual off-central estimate, the ordinary smooth long-interval mean comparison and the uniform Gaussian mean-square comparison are proved. Localization of the Gaussian averages to the literal logarithmic windows remains unproved, so T19.17 stays conditional. The stronger uniform sharp short-average theorem for all real completely multiplicative functions is not established. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.12 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18511 jobs); direct axiom audit passed for 19252 declarations using only propext, Classical.choice and Quot.sound; all 19565 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.12 GiB.
