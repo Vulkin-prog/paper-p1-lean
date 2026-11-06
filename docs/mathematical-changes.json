@@ -26867,6 +26867,36 @@
         "status": "not_integrated"
       },
       "validation_commit": "78e5ce0d50a32f3d93d2aac53a909a44bdb66818"
+    },
+    {
+      "id": "P1-MATH-0558",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "Actual bounded finite injective normalization was available over algebraically closed fields only, while the full source statement permits curves integral over their original field without geometric integrality.",
+      "finding": "The actual bounded avoiding coefficients selected over an auxiliary closure define an actual finite original-field parameter fibre; faithful nilpotence descent supplies original-field finiteness, and the original Hilbert argument proves injection and rank exactly d.",
+      "proposed_revision": "Use the actual original-field bounded rank-d normalization in the generic primitive-coordinate and integer counting argument; retain original integrality without adding geometric integrality to the source statement.",
+      "impact": "Closes the general coefficient-field bounded-normalization obstruction using actual tensor maps and faithful descent, with all parameter coefficients, fibre ideals and ranks preserved.",
+      "evidence": [
+        "PaperP1.ScalarExtendedParameterFiber.finite_fiber",
+        "PaperP1.OriginalFieldCurveNoetherNormalization.exists_normalization",
+        "PaperP1.OriginalFieldFiniteCurveParameters.exists_parameters",
+        "PaperP1.ScalarExtendedRegularParameters.exists_coefficients_powers"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17033 jobs); direct axiom audit passed for 16257 declarations using only propext, Classical.choice and Quot.sound; all 15867 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.40 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

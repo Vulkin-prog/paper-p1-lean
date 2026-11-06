@@ -2121,6 +2121,7 @@ import PaperP1
 #print axioms PaperP1.ScalarExtendedGradedHilbert.regular_multiplication
 #print axioms PaperP1.ScalarExtendedGradedHilbert.nonzero_domain_section_regular
 #print axioms PaperP1.ScalarExtendedGradedHilbert.section_dimension
+#print axioms PaperP1.ScalarExtendedParameterFiber.finite_fiber
 #print axioms PaperP1.ScalarIrreducibilityReflection.unit_reflection
 #print axioms PaperP1.ScalarIrreducibilityReflection.irreducible_of_extension
 #print axioms PaperP1.ScalarIrreducibilityReflection.geometric_rational_irreducible
@@ -12380,6 +12381,8 @@ import PaperP1
 #print axioms PaperP1.OrdinaryRadicalSurface.homogeneous
 #print axioms PaperP1.OrdinaryRadicalSurface.chart_bijective
 #print axioms PaperP1.OrdinarySurfaceCurveData.degree_unique
+#print axioms PaperP1.OriginalFieldCurveNoetherNormalization.exists_normalization
+#print axioms PaperP1.OriginalFieldFiniteCurveParameters.exists_parameters
 #print axioms PaperP1.PlaneImagePointSeparation.evaluations_equal_of_coordinates
 #print axioms PaperP1.ProjAffineFieldEquiv.equiv_chartMap
 #print axioms PaperP1.ProjChartDehomogenizationNaturality.dehomogenization_natural
@@ -12473,6 +12476,7 @@ import PaperP1
 #print axioms PaperP1.RegularProjectiveSectionFiniteSet.card_bound
 #print axioms PaperP1.RegularProjectiveSectionFiniteSet.finite_locus
 #print axioms PaperP1.RegularProjectiveSectionFiniteSet.exists_finset
+#print axioms PaperP1.ScalarExtendedRegularParameters.exists_coefficients_powers
 #print axioms PaperP1.SourceAffineCurveDegreeBound.multiplicity_ge_twoD
 #print axioms PaperP1.SourceCurveAffineRadicalCover.chartEquiv_radicand
 #print axioms PaperP1.SourceCurveAffineRadicalCover.exists_cover

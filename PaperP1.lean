@@ -4189,3 +4189,7 @@ public import PaperP1.Algebra.ScalarExtendedGradedHilbert
 public import PaperP1.Geometry.BoundedRegularSectionAvoidance
 public import PaperP1.Geometry.RegularGradedSectionPoints
 public import PaperP1.Geometry.RegularProjectiveSectionFiniteSet
+public import PaperP1.Algebra.ScalarExtendedParameterFiber
+public import PaperP1.Geometry.OriginalFieldCurveNoetherNormalization
+public import PaperP1.Geometry.OriginalFieldFiniteCurveParameters
+public import PaperP1.Geometry.ScalarExtendedRegularParameters
