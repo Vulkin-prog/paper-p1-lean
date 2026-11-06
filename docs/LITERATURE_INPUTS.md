@@ -1,6 +1,16 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0702: ACTUAL unit frequency maxima
+Current checkpoint P1-MATH-0703: ACTUAL reciprocal frequency
+weights sum to <=5 independently of the number of intervals.
+Attained unit suprema give the literal budget bound <=5*M^2 for
+every bounded continuous function and every cutoff. SMALLNESS of
+the full Euler local-supremum budget and final Halasz/short-average
+assembly remain unfinished. T19.17 conditional; original T1.7
+complete. Coverage: 164 proved, 1 conditional, 2 in_progress /167;
+all 73 main proved. False scopes/corrections unchanged.
+No Palomar registration.
+
+Historical checkpoint P1-MATH-0702: ACTUAL unit frequency maxima
 have a vanishing-density exceptional interval count. Attained
 maximizers and parity splitting give actual separated samples.
 Repulsion holds at EVERY point of EVERY good interval BEFORE ALL
@@ -31162,6 +31172,15 @@ all admissible coefficient functions. The full Euler local-supremum
 budget and final Halasz/short-average assembly remain unfinished.
 T19.17 conditional; original T1.7 unconditional.
 
+## Internal reciprocal frequency weight budget
+
+P1-MATH-0703 proves actual reciprocal-square tails and the universal
+sum of frequency weights <=5. Attained local suprema bound the
+literal frequency budget by 5*M^2 independently of its cutoff.
+Full Euler budget smallness through the common unit exception and
+final Halasz/short-average assembly remain unfinished. T19.17
+conditional; original T1.7 unconditional.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -33258,3 +33277,16 @@ At EVERY point of EVERY good unit interval, real phase repulsion gives D_slow>H(
 This closes the actual unit-maxima common exception and its vanishing-density count. The full Euler local-supremum budget and final Halasz/logarithmic short-average assembly remain unfinished. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original corrections, preserved sources, pinned Lean and allowed axioms unchanged. About 53.9 GiB is free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17971 jobs); direct axiom audit passed for 18103 declarations using only propext, Classical.choice and Quot.sound; all 18185 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.88 GiB.
+
+
+## Uniform actual reciprocal frequency weights and bounded local-supremum budgets
+
+Stable ID: p1:internal:reciprocal-frequency-weight-budget. Actual reciprocal frequency weights sum to <=5 independently of the cutoff. Literal local-supremum budgets are bounded by 5*M^2. Full Euler budget smallness remains unfinished.
+
+ReciprocalFrequencyWeights proves the ACTUAL finite shifted reciprocal-square sum <=2, then its summability and the same infinite-sum bound. The internal translated finite-row argument gives sum_{j in S}1/(1+(j-K)^2)<=5 for EVERY finite natural-index set S and EVERY integer center K. No cardinality or support-size restriction is assumed.
+
+For any actual continuous complex function globally bounded in norm by M, its attained unit square supremum is <=M^2. The literal frequencyBudget therefore is <=5*M^2 for EVERY frequency cutoff K, with the exact same weights used by the analytic prime Cauchy estimate. Six theorems and one definition are added in one module.
+
+This closes the actual reciprocal weight sum and uniform global frequency-budget bound. Smallness of the full Euler local-supremum budget via its common unit exception, and final Halasz/logarithmic short-average assembly, remain unfinished. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original corrections, preserved sources, pinned Lean and allowed axioms unchanged. About 53.9 GiB is free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17973 jobs); direct axiom audit passed for 18109 declarations using only propext, Classical.choice and Quot.sound; all 18192 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.87 GiB.

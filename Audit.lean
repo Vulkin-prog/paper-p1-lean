@@ -4383,6 +4383,12 @@ import PaperP1
 #print axioms PaperP1.RealSeriesTail.constant_tail
 #print axioms PaperP1.RealSmoothEvaluationDeterminant.bound
 #print axioms PaperP1.RealSmoothEvaluationDeterminant.coarse_bound
+#print axioms PaperP1.ReciprocalFrequencyWeights.inverseSquare_finite_bound
+#print axioms PaperP1.ReciprocalFrequencyWeights.inverseSquare_summable
+#print axioms PaperP1.ReciprocalFrequencyWeights.inverseSquare_tsum_bound
+#print axioms PaperP1.ReciprocalFrequencyWeights.finite_weight_bound
+#print axioms PaperP1.ReciprocalFrequencyWeights.local_sup_bound
+#print axioms PaperP1.ReciprocalFrequencyWeights.frequency_budget_bound
 #print axioms PaperP1.ReciprocalLeadingLimits.uniform_normalized_bounds
 #print axioms PaperP1.ReciprocalLeadingLimits.ordinary_limit
 #print axioms PaperP1.ReciprocalLeadingLimits.full_limit

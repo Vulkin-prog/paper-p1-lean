@@ -33104,6 +33104,39 @@
         "status": "not_integrated"
       },
       "validation_commit": "acc91aa2f499fc5719700ee45eca4be85dad4517"
+    },
+    {
+      "id": "P1-MATH-0703",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "A frequency-budget estimate must not grow with the number of unit intervals. The actual reciprocal weights and bounded local suprema required an explicit uniform sum bound.",
+      "finding": "Actual reciprocal-square tails and the finite translated row give a universal weight sum <=5. Attained local suprema then bound the literal frequency budget by 5*M^2 independently of its cutoff.",
+      "proposed_revision": "Use the proved actual weight sum when averaging the common unit exception. Prove smallness of the full Euler budget separately from its global boundedness.",
+      "impact": "Closes actual frequency weights and global local-supremum budget domination. Full Euler budget smallness, final assembly and T19.17 remain unfinished.",
+      "evidence": [
+        "PaperP1.ReciprocalFrequencyWeights.inverseSquare_finite_bound",
+        "PaperP1.ReciprocalFrequencyWeights.inverseSquare_summable",
+        "PaperP1.ReciprocalFrequencyWeights.inverseSquare_tsum_bound",
+        "PaperP1.ReciprocalFrequencyWeights.finite_weight_bound",
+        "PaperP1.ReciprocalFrequencyWeights.local_sup_bound",
+        "PaperP1.ReciprocalFrequencyWeights.frequency_budget_bound",
+        "PaperP1.ReciprocalFrequencyWeights.inverseSquare"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17973 jobs); direct axiom audit passed for 18109 declarations using only propext, Classical.choice and Quot.sound; all 18192 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.87 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
