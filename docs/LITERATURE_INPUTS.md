@@ -1,6 +1,15 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0693: ACTUAL integer logarithmic bins
+Current checkpoint P1-MATH-0694: ACTUAL triple coefficient fibres
+satisfy log(m)^2/log(2), and the finite Dirichlet polynomial factors
+EXACTLY into its prime, prime and integer factors. Repeated primes
+p=q and repeated products are retained. Aggregate finite-Perron
+error assembly, FULL EULER/TRIPLE transfer and final short-average
+assembly remain unfinished. T19.17 conditional; original T1.7 complete.
+Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main
+proved. False scopes/corrections unchanged. No Palomar registration.
+
+Historical checkpoint P1-MATH-0693: ACTUAL integer logarithmic bins
 and Gaussian sums, including log(n)^2 weights and the lattice +1,
 are bounded uniformly with NO upper-support cutoff. Width=1/log(X)^8
 gives ONE threshold before ALL finite positive supports for a
@@ -30972,6 +30981,16 @@ positive supports for negligible normalized error. Triple coefficient
 assembly and full Euler/Perron and short-average transfer remain
 unfinished. T19.17 stays conditional; original T1.7 is unconditional.
 
+## Internal actual triple coefficient fibres
+
+P1-MATH-0694 proves the literal triple coefficient-fibre bound by
+injecting each level fibre into pairs of its prime divisors and
+using the von Mangoldt divisor sum. The actual polynomial factors
+exactly into two prime polynomials and one integer polynomial.
+Repeated primes and repeated products are retained. Aggregate
+Perron error, full Euler transfer and final short-average assembly
+remain unfinished. T19.17 stays conditional; original T1.7 unconditional.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -32929,3 +32948,18 @@ The ACTUAL width(X)=1/log(X)^8 is positive for X>=2 and tends to zero. The norma
 This closes the uniform aggregate integer Gaussian error, with the quadratic logarithmic weight and no upper-support cutoff. Actual triple coefficient-fibre assembly, passage to the full relevant Euler series and the resulting triple main-term estimate remain unfinished. The full Euler frequency budget, final Halasz and logarithmic short-average assembly remain unfinished. Earlier finite Gaussian Perron, total combinatorial triple and analytic band estimates remain proved. T19.17 remains conditional and original complete T1.7 unconditional. Coverage remains 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, source hashes, Lean v4.36.0-rc2 and allowed axioms are unchanged. Ubuntu has about 54.0 GiB free; no dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17953 jobs); direct axiom audit passed for 18023 declarations using only propext, Classical.choice and Quot.sound; all 18085 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.05 GiB.
+
+
+## Actual triple coefficient fibres and exact Dirichlet factorization
+
+Stable ID: p1:internal:actual-triple-coefficient-fibres. Actual triple coefficient fibres and the exact finite prime-prime-integer product are internal. Repeated primes and repeated integer products are retained. Full Euler/Perron transfer remains unfinished.
+
+TripleCoefficientFibre defines the ACTUAL finite triple set (P x Q) x S, the integer level p*q*n and the literal coefficient (log(p)*log(q)/log(X/p))*f(p)*f(q)*f(n). Here f is ANY complex function bounded by one on positive integers; multiplicativity is not assumed for this finite factorization. P and Q consist of actual primes, S of actual positive integers, and 2*p<=X on P supplies log(X/p)>=log(2)>0.
+
+At each integer m the projection of its actual triple fibre to (p,q) is injective: once p and q are fixed, the positive product p*q determines n uniquely. Both primes divide m. The von Mangoldt divisor identity proves sum_{p prime dividing m}log(p)<=log(m). The ACTUAL fibre weight is therefore <=log(m)^2, INCLUDING repeated primes p=q. The literal coefficients satisfy sum_{p*q*n=m}|a(p,q,n)|<=log(m)^2/log(2). No fibre population or coefficient budget is an input to the final actual theorem.
+
+The actual Dirichlet polynomial of these triples factors EXACTLY as the P prime polynomial with coefficient f(p)/log(X/p), times the Q prime polynomial with coefficient f(q), times the S integer polynomial. All real logarithms, phases, denominators, finite sum permutations and repeated products are checked. Seven theorems and four definitions are added in one module.
+
+This closes the actual coefficient-fibre and finite product factorization needed by the internal Perron route. The aggregate Perron error assembly, full relevant Euler-series limit, frequency budget and final short-average assembly remain unfinished. T19.17 remains conditional; original complete T1.7 unconditional. Coverage remains 164 proved, 1 conditional, 2 in_progress /167; all 73 main results proved. Original false scopes/corrections, source hashes, pinned Lean and allowed axioms remain unchanged. Ubuntu has about 54.0 GiB free, with no dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17955 jobs); direct axiom audit passed for 18030 declarations using only propext, Classical.choice and Quot.sound; all 18096 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.03 GiB.

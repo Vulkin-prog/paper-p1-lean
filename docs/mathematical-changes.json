@@ -32761,6 +32761,43 @@
         "status": "not_integrated"
       },
       "validation_commit": "edfcc576ee70bee749174e73cafe93185b073da1"
+    },
+    {
+      "id": "P1-MATH-0694",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "A triple coefficient sum over integer levels could conceal multiplicities, repeated primes or an assumed fibre bound. The prime and integer factors had not yet been connected to the literal finite Perron polynomial.",
+      "finding": "The actual level fibre injects into pairs of prime divisors. The von Mangoldt divisor sum gives its log(m)^2 bound, and the actual polynomial factors exactly, including p=q.",
+      "proposed_revision": "Use the literal coefficient-fibre bound in the aggregate Gaussian Perron error. Retain repeated-prime terms and justify the subsequent full Euler-series limit separately.",
+      "impact": "Closes actual triple coefficient fibres and exact finite Dirichlet factorization. The full analytic triple transfer and T19.17 remain unfinished.",
+      "evidence": [
+        "PaperP1.TripleCoefficientFibre.level_pos",
+        "PaperP1.TripleCoefficientFibre.prime_divisor_log_bound",
+        "PaperP1.TripleCoefficientFibre.fibre_mass_bound",
+        "PaperP1.TripleCoefficientFibre.coefficient_fibre_bound",
+        "PaperP1.TripleCoefficientFibre.coefficient_norm_bound",
+        "PaperP1.TripleCoefficientFibre.actual_coefficient_fibre_bound",
+        "PaperP1.TripleCoefficientFibre.polynomial_factorization",
+        "PaperP1.TripleCoefficientFibre.triples",
+        "PaperP1.TripleCoefficientFibre.level",
+        "PaperP1.TripleCoefficientFibre.primeDivisors",
+        "PaperP1.TripleCoefficientFibre.coefficient"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17955 jobs); direct axiom audit passed for 18030 declarations using only propext, Classical.choice and Quot.sound; all 18096 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.03 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

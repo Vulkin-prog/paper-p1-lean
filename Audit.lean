@@ -4684,6 +4684,13 @@ import PaperP1
 #print axioms PaperP1.TransposedNormalizedGraphPiece.initial_point
 #print axioms PaperP1.TransposedNormalizedGraphPiece.exists_piece
 #print axioms PaperP1.TransposedNormalizedGraphPiece.exists_smooth_piece_with_derivatives
+#print axioms PaperP1.TripleCoefficientFibre.level_pos
+#print axioms PaperP1.TripleCoefficientFibre.prime_divisor_log_bound
+#print axioms PaperP1.TripleCoefficientFibre.fibre_mass_bound
+#print axioms PaperP1.TripleCoefficientFibre.coefficient_fibre_bound
+#print axioms PaperP1.TripleCoefficientFibre.coefficient_norm_bound
+#print axioms PaperP1.TripleCoefficientFibre.actual_coefficient_fibre_bound
+#print axioms PaperP1.TripleCoefficientFibre.polynomial_factorization
 #print axioms PaperP1.TruncatedAffineDegree.budget
 #print axioms PaperP1.TruncatedAffineDegree.prime_scale
 #print axioms PaperP1.UniformBinaryLogBudget.monotone
