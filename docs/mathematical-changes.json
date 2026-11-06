@@ -36825,6 +36825,42 @@
         "status": "not_integrated"
       },
       "validation_commit": "dcc2dad7f90b49ea64333b897666c04f0f5c5aed"
+    },
+    {
+      "id": "P1-MATH-0817",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The earlier N^(1/100) cardinality regime is too narrow for the forthcoming second-band large-value population; the stronger admissible regime requires a new verified exponent calculation.",
+      "finding": "Choose separation N^(1/3), sampling height N^(9/8), and cardinality envelope N^(1/16). The SQUARE of the actual normalized Gram cap is EXACTLY 128*(sqrt(2)*N^(-5/16)+N^(-1/24))*(1+log N). This explicit envelope and its nonnegative square root tend to zero, with one uniform cutoff for every prescribed positive error. Five theorems and five definitions prove the expanded regime using the already proved integer oscillation cap.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "A larger sparse-frequency regime has an explicit vanishing Gram envelope. The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.ExpandedSparseGramEnvelope.square_identity",
+        "PaperP1.ExpandedSparseGramEnvelope.squareEnvelope_tendsto",
+        "PaperP1.ExpandedSparseGramEnvelope.normalizedCap_nonneg",
+        "PaperP1.ExpandedSparseGramEnvelope.normalizedCap_tendsto",
+        "PaperP1.ExpandedSparseGramEnvelope.uniform_small",
+        "PaperP1.ExpandedSparseGramEnvelope.separation",
+        "PaperP1.ExpandedSparseGramEnvelope.height",
+        "PaperP1.ExpandedSparseGramEnvelope.cardEnvelope",
+        "PaperP1.ExpandedSparseGramEnvelope.normalizedCap",
+        "PaperP1.ExpandedSparseGramEnvelope.squareEnvelope"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18201 jobs); direct axiom audit passed for 18638 declarations using only propext, Classical.choice and Quot.sound; all 18838 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.83 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

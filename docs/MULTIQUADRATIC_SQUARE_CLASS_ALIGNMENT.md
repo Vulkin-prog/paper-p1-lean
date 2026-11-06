@@ -1,6 +1,15 @@
 # Multiquadratic split radicands: exact square-class independence
 
-Current checkpoint P1-MATH-0816: The actual final-band narrow rectangle
+Current checkpoint P1-MATH-0817: A larger sparse-frequency regime has an
+explicit vanishing Gram envelope. The joint large-prime frequency
+contribution, the central-frequency mean comparison and complete
+logarithmic short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 51.83 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0816: The actual final-band narrow rectangle
 uniformly approximates the full polynomial. The joint large-prime
 frequency contribution, the central-frequency mean comparison and
 complete logarithmic short-average concentration remain unproved. T19.17
@@ -26541,3 +26550,12 @@ For every fixed B>=32 and epsilon>0, ONE width cutoff H0>=2 and size cutoff N0>=
 The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.89 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18199 jobs); direct axiom audit passed for 18633 declarations using only propext, Classical.choice and Quot.sound; all 18828 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.84 GiB.
+
+
+## A larger sparse-frequency regime has an explicit vanishing Gram envelope
+
+Choose separation N^(1/3), sampling height N^(9/8), and cardinality envelope N^(1/16). The SQUARE of the actual normalized Gram cap is EXACTLY 128*(sqrt(2)*N^(-5/16)+N^(-1/24))*(1+log N). This explicit envelope and its nonnegative square root tend to zero, with one uniform cutoff for every prescribed positive error. Five theorems and five definitions prove the expanded regime using the already proved integer oscillation cap.
+
+The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.83 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18201 jobs); direct axiom audit passed for 18638 declarations using only propext, Classical.choice and Quot.sound; all 18838 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.83 GiB.
