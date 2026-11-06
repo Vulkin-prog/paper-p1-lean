@@ -41057,7 +41057,8 @@
             "PaperP1.HyperellipticOddDegreePointEstimate.uniform_degree_cap"
           ]
         }
-      ]
+      ],
+      "validation_commit": "1a3cc1cdc5c32f1290bf4c2b513cf15af2450b37"
     },
     {
       "label": "p1:arith:dense",
