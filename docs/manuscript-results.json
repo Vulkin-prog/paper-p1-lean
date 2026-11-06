@@ -44636,7 +44636,8 @@
             "PaperP1.IntegerProjectedModelNormalization.bounded_model_certificate"
           ]
         }
-      ]
+      ],
+      "validation_commit": "a37f62c346a27cabb24aba6dbcd76a0c5c0729eb"
     },
     {
       "label": "p1:arith:dense",
