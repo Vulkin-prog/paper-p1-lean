@@ -38132,6 +38132,37 @@
         "status": "not_integrated"
       },
       "validation_commit": "4ce1429ee5737e78a3b962101dd165d8d003e5f2"
+    },
+    {
+      "id": "P1-MATH-0859",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The concrete all-order estimate requires integer shifts whose minimum gap grows, whose count grows, and whose entire n-step span fits the original interval uniformly in frequency.",
+      "finding": "Define the ACTUAL step A=floor(g_n(X,|t|)) and count K=floor(X^(1/(16*n))). For each FIXED n>0, K tends to infinity. Uniformly over X^(3/4)<=|t|<=X^(n+1/4), the ACTUAL product A*K<=X^(1-3/(16*n)). ONE eventual X cutoff precedes ALL such frequencies and guarantees A,K>=1, both exact floor half-bounds, A*K<=X AND n*A*K<=X. Three theorems and two integer parameter definitions prove these actual conditions with the fixed-depth quantifier order retained.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Actual rounded logarithmic shifts have uniform half-bounds and fit the full finite-depth interval. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.RoundedLogarithmicParameters.count_tendsto",
+        "PaperP1.RoundedLogarithmicParameters.product_bound",
+        "PaperP1.RoundedLogarithmicParameters.geometry_eventually",
+        "PaperP1.RoundedLogarithmicParameters.step",
+        "PaperP1.RoundedLogarithmicParameters.count"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18285 jobs); direct axiom audit passed for 18784 declarations using only propext, Classical.choice and Quot.sound; all 19006 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.07 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

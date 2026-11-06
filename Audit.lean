@@ -5037,6 +5037,9 @@ import PaperP1
 #print axioms PaperP1.RoundedAmplificationGeometry.rounded_power_bound
 #print axioms PaperP1.RoundedAmplificationGeometry.product_span_bound
 #print axioms PaperP1.RoundedAmplificationGeometry.bandwidth_bound
+#print axioms PaperP1.RoundedLogarithmicParameters.count_tendsto
+#print axioms PaperP1.RoundedLogarithmicParameters.product_bound
+#print axioms PaperP1.RoundedLogarithmicParameters.geometry_eventually
 #print axioms PaperP1.RoundedScaleSideBudget.rounded_upper
 #print axioms PaperP1.RoundedScaleSideBudget.square_root_bound
 #print axioms PaperP1.RoundedScaleSideBudget.horizontal_cost
