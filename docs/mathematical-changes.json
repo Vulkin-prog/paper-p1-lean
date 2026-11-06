@@ -30712,6 +30712,54 @@
         "status": "not_integrated"
       },
       "validation_commit": "24ecddedb57b59519f3d6005a2c00e06c22b901a"
+    },
+    {
+      "id": "P1-MATH-0644",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The D-squared field-dimension bound had only been proved abstractly and had not been applied to the exact ordered affine power parameters of the chosen projection.",
+      "finding": "The actual parameter variables map injectively to Y^D and X^D. Their concrete fraction map, exhaustive ambient generators and power equations give a finite function-field extension of dimension at most D squared in every characteristic.",
+      "proposed_revision": "Use this actual ordered fraction-field extension for the localized source rank comparison. Keep the quadratic-tower dimension, reduced polynomial normalization and conductor argument explicit until proved.",
+      "impact": "Discharges the actual power-parameter fraction-map and D-squared dimension step with no assumed compatibility or generation. The full quadratic source and original reduced conductor application remain unfinished.",
+      "evidence": [
+        "PaperP1.AffinePowerParameterFractionField.chart_zero",
+        "PaperP1.AffinePowerParameterFractionField.chart_one",
+        "PaperP1.AffinePowerParameterFractionField.powerMap_injective",
+        "PaperP1.AffinePowerParameterFractionField.powerMap_zero",
+        "PaperP1.AffinePowerParameterFractionField.powerMap_one",
+        "PaperP1.AffinePowerParameterFractionField.polynomialMap_injective",
+        "PaperP1.AffinePowerParameterFractionField.fractionMap_base",
+        "PaperP1.AffinePowerParameterFractionField.power_zero",
+        "PaperP1.AffinePowerParameterFractionField.power_one",
+        "PaperP1.AffinePowerParameterFractionField.base_generated",
+        "PaperP1.AffinePowerParameterFractionField.generators",
+        "PaperP1.AffinePowerParameterFractionField.finiteDimensional",
+        "PaperP1.AffinePowerParameterFractionField.dimension_le",
+        "PaperP1.AffinePowerParameterFractionField.Parameters",
+        "PaperP1.AffinePowerParameterFractionField.Base",
+        "PaperP1.AffinePowerParameterFractionField.ParameterField",
+        "PaperP1.AffinePowerParameterFractionField.AmbientField",
+        "PaperP1.AffinePowerParameterFractionField.chart",
+        "PaperP1.AffinePowerParameterFractionField.powerMap",
+        "PaperP1.AffinePowerParameterFractionField.polynomialMap",
+        "PaperP1.AffinePowerParameterFractionField.fractionMap",
+        "PaperP1.AffinePowerParameterFractionField.fractionAlgebra"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17775 jobs); direct axiom audit passed for 17480 declarations using only propext, Classical.choice and Quot.sound; all 17408 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.99 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

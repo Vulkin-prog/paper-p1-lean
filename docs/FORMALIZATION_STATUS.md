@@ -1,6 +1,17 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0643: two actual generators x,y with
+Current checkpoint P1-MATH-0644: the ACTUAL affine parameters Y^D,X^D
+have an injective polynomial map, a scalar-preserving fraction map and
+proved exhaustive ambient coordinate generators. The actual function-field
+extension is FINITE of dimension <=D^2 in EVERY characteristic. No map
+compatibility, generation or dimension premise is assumed. The localized
+quadratic-source dimension, original reduced equation normalization and
+primitive/conductor application remain UNPROVED. Canonical T1.7 retains
+ONLY its prior P3 input in degrees>2 at the original families and caps.
+Coverage stays 163 proved, 2 conditional, 2 in_progress out of 167; all
+73 main results proved. No Palomar registration.
+
+Historical checkpoint P1-MATH-0643: two actual generators x,y with
 x^D,y^D in the base field give a FINITE extension of dimension <=D^2
 for D>0, in EVERY characteristic. Integrality and both simple-extension
 bounds are internal proofs. Actual power-map and generator identification,
@@ -604,7 +615,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records641 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records642 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -723,7 +734,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **17467 audited theorem/lemma declarations**. This
+- The project currently has **17480 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -29931,3 +29942,14 @@ If the two elements generate the whole ambient field, the module dimension is at
 One module adds five theorems and no definitions. The abstract two-power dimension bound is discharged in every characteristic. Identification of the actual power-parameter fraction-field map, its two generators, the localized quadratic-source dimension, reduced equation normalization and conductor application remain unfinished. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families/caps. Coverage remains 163 proved, 2 conditional, 2 in_progress out of 167; all 73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Work stays on Ubuntu with about 55.0 GiB available and no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17773 jobs); direct axiom audit passed for 17467 declarations using only propext, Classical.choice and Quot.sound; all 17386 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.00 GiB.
+
+
+## The actual ordered affine power parameters give a finite function-field extension of dimension at most D squared
+
+AffinePowerParameterFractionField constructs the literal two-variable parameter algebra and its actual map into F[X][Y], sending the parameter variables to Y^D and X^D in the original order. A concrete chart equivalence and polynomial expansion give injectivity. The induced map into the rational function field and its fraction-field extension are actual scalar-preserving algebra maps; their injectivity and exact values on every parameter polynomial are proved.
+
+The two ambient coordinates satisfy their actual power equations over the mapped parameter field. Their algebra-generation identity and their exhaustive intermediate-field generation after taking fractions are proved from the concrete chart and the fraction representation. Applying the two-power theorem then constructs finite dimension of the ACTUAL rational-function field over the ACTUAL power-parameter field and bounds it by D^2 in every characteristic. No field-generator, dimension or parameter-map compatibility premise is assumed.
+
+One module adds thirteen theorems and nine definitions, including four type abbreviations. This discharges identification and dimension of the actual ordered affine power-parameter fraction extension. The localized quadratic-source dimension, reduced projected equation normalization, primitive/conductor application and effective arithmetic assembly remain unfinished. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families/caps. Coverage remains 163 proved, 2 conditional, 2 in_progress out of 167; all 73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Work stays on Ubuntu with about 55.0 GiB available and no dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17775 jobs); direct axiom audit passed for 17480 declarations using only propext, Classical.choice and Quot.sound; all 17408 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.99 GiB.
