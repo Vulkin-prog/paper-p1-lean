@@ -1,6 +1,18 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0638: the COMPLETE source-specific counting
+Current checkpoint P1-MATH-0639: ONE literal integral split-radical source
+has faithful rational specialization and exact reduction kernel (p). Its
+quotient by (p) is the ACTUAL prime-field source, preserving base and
+radical coordinates. Every integral relation detected over Q is zero
+integrally and in every field specialization. This affine source-reduction
+step is DISCHARGED. Chosen projected-coordinate/equation identification,
+reduced primitive/conductor verification and effective prime budgets
+remain UNPROVED. Canonical T1.7 retains ONLY its prior P3 input in
+degrees>2 at the original families and caps. Coverage stays 163 proved,
+2 conditional, 2 in_progress out of 167; all 73 main results proved.
+No Palomar registration.
+
+Historical checkpoint P1-MATH-0638: the COMPLETE source-specific counting
 assembly is proved under explicit STRUCTURAL conductor and polynomial
 data. The actual image count is at most (1+eta)*p^2, with one cutoff
 before all coefficients, branch supports and image data. Source counts,
@@ -547,7 +559,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records636 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records637 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -666,7 +678,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **17423 audited theorem/lemma declarations**. This
+- The project currently has **17437 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -29819,3 +29831,14 @@ The final theorem fixes the number of source equations, a branch-support cap, a 
 One module adds three theorems and no definitions. This completes the internal source-specific finite-field counting assembly, CONDITIONAL ON those exact structural data, not on a point estimate. Original integer projected-model reduction, verification of its reduced structural identities and conductor, and effective uniform prime budgets remain unfinished. This does not discharge the canonical general P3 input. Canonical T1.7 remains UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families/caps. Coverage remains 163 proved, 2 conditional, 2 in_progress out of 167; all 73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Work stays on Ubuntu with about 55.1 GiB available and no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17757 jobs); direct axiom audit passed for 17423 declarations using only propext, Classical.choice and Quot.sound; all 17330 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.09 GiB.
+
+
+## Exact integral split-radical source model and faithful reduction of every integral relation
+
+IntegralSplitRadicalModel constructs ONE literal source algebra over Z[X,Y] from the original integer coefficients and branch offsets. Explicit coefficient maps identify every reduced linear product, scaled radicand and complete equation list with the ACTUAL field-source definitions. The source maps preserve every base polynomial and every radical root. No coefficient-identification or base-change conclusion is assumed.
+
+IntegralSplitRadicalReduction proves these maps injective into every characteristic-zero field, including Q, and surjective onto every prime-field source. Their kernels are computed exactly. The coefficient reduction kernel is (p), and the source reduction kernel is exactly (p) in the literal integral source. An ACTUAL ring equivalence identifies the quotient source/(p) with the field-source algebra, with its value on each quotient representative proved. Hence an integral source element that vanishes in the faithful rational source is already zero integrally and in EVERY field specialization. This proves exact affine source reduction without extra exceptional primes; it does not claim that every reduced source is a domain.
+
+Two modules add fourteen theorems and seven definitions. The affine integral-source reduction and transfer of integral source relations are now DISCHARGED. Explicit identification of the original chosen projected coordinates and integral projected equation is still needed to apply this transfer to that projection. Reduced conductor verification, the full-rank primitive argument and effective uniform prime budgets also remain unfinished. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families/caps. Coverage remains 163 proved, 2 conditional, 2 in_progress out of 167; all 73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Work stays on Ubuntu with about 55.1 GiB available and no dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17761 jobs); direct axiom audit passed for 17437 declarations using only propext, Classical.choice and Quot.sound; all 17351 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.07 GiB.

@@ -4537,3 +4537,5 @@ public import PaperP1.Arithmetic.MonicCriticalPointCount
 public import PaperP1.Algebra.GeneratedThreeCoordinatePoints
 public import PaperP1.Arithmetic.GeneratedMonicCriticalPointCount
 public import PaperP1.Arithmetic.ConductorCriticalPointTransfer
+public import PaperP1.Algebra.IntegralSplitRadicalModel
+public import PaperP1.Algebra.IntegralSplitRadicalReduction

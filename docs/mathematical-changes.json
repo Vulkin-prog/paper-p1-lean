@@ -30521,6 +30521,53 @@
         "status": "not_integrated"
       },
       "validation_commit": "e8f72e5793f0f5582e15fa54fedcb7fefb785947"
+    },
+    {
+      "id": "P1-MATH-0639",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "There was no common integral source whose rational and prime-field specializations were proved identical to the original affine radical systems, so transfer of rationally detected integral relations was unfinished.",
+      "finding": "One literal integer source has faithful rational specialization and exact prime-field reduction kernel (p). Its quotient by (p) is the actual field source, and every integral relation detected over Q holds integrally and after every field specialization.",
+      "proposed_revision": "Use this common integral source and its exact specialization maps for the original projected-coordinate relations. Prove the specific coordinate and equation identities, then retain conductor and arithmetic prime-budget obligations explicitly.",
+      "impact": "Discharges the actual affine source reduction and faithful integral-relation transfer. Applying it to the chosen original projection, reduced conductors, full-rank primitiveness and effective prime budgets remains unfinished; canonical T1.7 is unchanged.",
+      "evidence": [
+        "PaperP1.IntegralSplitRadicalModel.linear_map",
+        "PaperP1.IntegralSplitRadicalModel.radicand_map",
+        "PaperP1.IntegralSplitRadicalModel.equations_map",
+        "PaperP1.IntegralSplitRadicalModel.sourceMap_base",
+        "PaperP1.IntegralSplitRadicalModel.sourceMap_root",
+        "PaperP1.IntegralSplitRadicalReduction.coefficientMap_injective",
+        "PaperP1.IntegralSplitRadicalReduction.sourceMap_injective",
+        "PaperP1.IntegralSplitRadicalReduction.coefficientMap_surjective_zmod",
+        "PaperP1.IntegralSplitRadicalReduction.sourceMap_surjective_zmod",
+        "PaperP1.IntegralSplitRadicalReduction.coefficient_kernel_zmod",
+        "PaperP1.IntegralSplitRadicalReduction.sourceMap_kernel",
+        "PaperP1.IntegralSplitRadicalReduction.sourceMap_kernel_zmod",
+        "PaperP1.IntegralSplitRadicalReduction.reductionEquiv_mk",
+        "PaperP1.IntegralSplitRadicalReduction.relation_reduces",
+        "PaperP1.IntegralSplitRadicalModel.linear",
+        "PaperP1.IntegralSplitRadicalModel.radicand",
+        "PaperP1.IntegralSplitRadicalModel.equations",
+        "PaperP1.IntegralSplitRadicalModel.Source",
+        "PaperP1.IntegralSplitRadicalModel.coefficientMap",
+        "PaperP1.IntegralSplitRadicalModel.sourceMap",
+        "PaperP1.IntegralSplitRadicalReduction.reductionEquiv"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17761 jobs); direct axiom audit passed for 17437 declarations using only propext, Classical.choice and Quot.sound; all 17351 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.07 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
