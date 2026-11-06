@@ -41091,6 +41091,36 @@
         "status": "not_integrated"
       },
       "validation_commit": "a27b779fcb4e427a642b052d3c3cc2f0fc5b6df8"
+    },
+    {
+      "id": "P1-MATH-0952",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The actual short-average route requires a genuine common-cutoff Dirichlet mean-square estimate outside a fixed central band, while preserving the central contribution for mean subtraction.",
+      "finding": "Three theorems and one definition prove measurability, the actual restricted three-region energy reduction and the genuine uniform off-central bound. For EVERY epsilon>0, ONE fixed T0>=8 and ONE integer cutoff precede ALL N, ALL real completely multiplicative f with abs(f(p))<=1 at every prime, and ALL heights 1<=T<=N/log(N). The actual square integral of the literal dyadic Dirichlet polynomial over Ioc(-T,T) intersect {abs(t)>=T0} is <=epsilon. The actual first-small, intermediate and joint off-central estimates are assembled with their exact domains. The retained central contribution is not declared small; the already disproved unrestricted full-L2 decay is never used.",
+      "proposed_revision": "Use the proved uniform off-central estimate in the short-to-long analytic comparison, retaining the central mean contribution. Do not replace it by unrestricted full mean-square decay, already disproved at P1-MATH-0780/0781. Original T19.17 remains conditional until the actual short-average bridge is proved.",
+      "impact": "Actual real completely multiplicative Dirichlet polynomials have uniform off-central mean-square decay. The actual off-central Dirichlet frequency estimate is proved. The central-frequency short-to-long comparison, the analytic short-average bridge and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.UniformRealOffCentralEnergy.region_measurable",
+        "PaperP1.UniformRealOffCentralEnergy.restricted_reduction",
+        "PaperP1.UniformRealOffCentralEnergy.uniform_bound",
+        "PaperP1.UniformRealOffCentralEnergy.region"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18471 jobs); direct axiom audit passed for 19157 declarations using only propext, Classical.choice and Quot.sound; all 19453 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.50 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

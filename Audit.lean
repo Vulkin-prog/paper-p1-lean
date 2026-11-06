@@ -5744,6 +5744,9 @@ import PaperP1
 #print axioms PaperP1.UniformRealEulerBudget.uniform_bound
 #print axioms PaperP1.UniformRealEulerSmallness.fourth_power_bound
 #print axioms PaperP1.UniformRealEulerSmallness.uniform_bound
+#print axioms PaperP1.UniformRealOffCentralEnergy.region_measurable
+#print axioms PaperP1.UniformRealOffCentralEnergy.restricted_reduction
+#print axioms PaperP1.UniformRealOffCentralEnergy.uniform_bound
 #print axioms PaperP1.UniformRealTwistedSum.uniform_bound
 #print axioms PaperP1.UniformRealTwistedSum.normalized_bound
 #print axioms PaperP1.UniformRealTwistedSum.polynomial_band_bound

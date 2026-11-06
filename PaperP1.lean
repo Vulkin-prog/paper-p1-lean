@@ -4891,3 +4891,4 @@ public import PaperP1.Analysis.PrecisionPowerPopulation
 public import PaperP1.Analysis.PrecisionPowerRelativeApproximation
 public import PaperP1.Analysis.PrecisionPowerRectangleApproximation
 public import PaperP1.Analysis.OffCentralJointEnergy
+public import PaperP1.Analysis.UniformRealOffCentralEnergy
