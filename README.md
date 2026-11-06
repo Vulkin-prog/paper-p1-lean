@@ -1,6 +1,19 @@
 # P1 — Lean formalization
 
-Current checkpoint P1-MATH-0609: the actual canonical quadric class count is
+Current checkpoint P1-MATH-0610: actual degree-two good reduction is proved
+with a nonzero INTEGER Hessian minor z satisfying natAbs(z)<=48*A^3. Every
+prime not dividing z preserves geometric irreducibility, including2 when good.
+All d<=2 certificate budgets and COMPLETE original global auxiliary properties
+are now internally proved, including arbitrary coefficients and singular points.
+Canonical T1.7 is `UniformGeometricCountsHigherDegreeInput.companion_T1_7`.
+The two independent geometric input families are required ONLY at actual
+degrees>2 in the same original degree families and size caps. General higher
+degree existence/estimate theorems remain UNPROVED; T1.7 stays conditional.
+All-fields universal forms in degree2 are bypassed, not claimed. Coverage
+stays163 proved,2 conditional,2 in_progress out of167; all73 main results are
+proved. No Palomar registration.
+
+Historical checkpoint P1-MATH-0609: the actual canonical quadric class count is
 internally proved <=p^2+2p at every prime with irreducible reduction. This gives
 the precise uniform finite-field input for ALL d<=2, with no characteristic
 restriction and with the original X3=1 chart and actual smooth classes retained.
@@ -84,7 +97,7 @@ recorded in the linked ledger and [current status](docs/FORMALIZATION_STATUS.md)
 
 Companion T1.10 needs an enlarged alignment exclusion for unequal old/new widths: its literal radius-one version has an unconditional formal counterexample. The corrected coarse4/3 profile is proved under explicit geometric inputs; its sharper31/24 form remains open; see [the scope correction](docs/ASYMMETRIC_ALIGNMENT_SCOPE.md).
 
-The main optimal4/3 quadratic approximation power is now proved under explicit BCN and finite geometric properties, including both bounds, exact actual parameters, nominal-mean bias and eventual probability status. The optimal41/30 third factorial cumulant, full third absolute activity and aligned-channel triple claims are now proved under explicit geometric inputs, withBCN retained for the full connected argument. The actual original count and its retained modification converge in total variation to the actual-mean and nominal-mean Poisson laws without unproved inputs (P1-MATH-0413); quantitative optimal law rates remain separate. Exact fourth-cumulant component identities and unconditional weak, irregular and incompatible pair bounds are proved. In particular, the actual absolute pair activity is asymptotic to half the actual second factorial cumulant, without BCN or a complete pair profile. The contact activity bound at every fixed order now holds unconditionally on every dyadic subground, including irregular starts and zero marginals. The activation probability of the actual principal edge family now has the unconditional exponent -2/3, with any fixed epsilon margin. The planar normal budget T20.4 is now proved with improved constants and an integer-fibre argument. T20.6, the prescribed-plane transverse-product count and its actual affine mass bound, is now proved internally with three motifs and no Pila premise. The project records **607 confirmed mathematical improvements and two statement-scope corrections**. See [current status](docs/FORMALIZATION_STATUS.md), [the activity alignment](docs/FIXED_ABSOLUTE_ACTIVITY_ALIGNMENT.md) and [the mathematical change log](docs/MATHEMATICAL_CHANGELOG.md).
+The main optimal4/3 quadratic approximation power is now proved under explicit BCN and finite geometric properties, including both bounds, exact actual parameters, nominal-mean bias and eventual probability status. The optimal41/30 third factorial cumulant, full third absolute activity and aligned-channel triple claims are now proved under explicit geometric inputs, withBCN retained for the full connected argument. The actual original count and its retained modification converge in total variation to the actual-mean and nominal-mean Poisson laws without unproved inputs (P1-MATH-0413); quantitative optimal law rates remain separate. Exact fourth-cumulant component identities and unconditional weak, irregular and incompatible pair bounds are proved. In particular, the actual absolute pair activity is asymptotic to half the actual second factorial cumulant, without BCN or a complete pair profile. The contact activity bound at every fixed order now holds unconditionally on every dyadic subground, including irregular starts and zero marginals. The activation probability of the actual principal edge family now has the unconditional exponent -2/3, with any fixed epsilon margin. The planar normal budget T20.4 is now proved with improved constants and an integer-fibre argument. T20.6, the prescribed-plane transverse-product count and its actual affine mass bound, is now proved internally with three motifs and no Pila premise. The project records **608 confirmed mathematical improvements and two statement-scope corrections**. See [current status](docs/FORMALIZATION_STATUS.md), [the activity alignment](docs/FIXED_ABSOLUTE_ACTIVITY_ALIGNMENT.md) and [the mathematical change log](docs/MATHEMATICAL_CHANGELOG.md).
 
 Article13.1 now has a complete actual short-basis construction, with
 both physical projections and the common square-class map injective.
@@ -1409,3 +1422,5 @@ P1-MATH-0607 proves the complete uniform global auxiliary construction from an i
 P1-MATH-0608 constructs actual bounded integer good-prime certificates from universal Noether forms. Canonical T1.7 is UniformGeometricCountsNoetherFieldInput.companion_T1_7; only universal-form existence and the independent finite-field point estimate remain unproved in general.
 
 P1-MATH-0609 proves the actual canonical quadric class count <=p^2+2p, hence the precise uniform finite-field estimate for every d<=2. General T1.7 keeps its two explicit geometric input families.
+
+P1-MATH-0610 proves an actual quadric good-reduction certificate z with natAbs(z)<=48*A^3, hence the complete original global auxiliary theorem unconditionally for every d<=2. Canonical T1.7 is UniformGeometricCountsHigherDegreeInput.companion_T1_7 and requires its two independent geometric input families only for actual degrees>2.

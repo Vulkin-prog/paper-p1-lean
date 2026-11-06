@@ -1,6 +1,19 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0609: the actual canonical quadric class count is
+Current checkpoint P1-MATH-0610: actual degree-two good reduction is proved
+with a nonzero INTEGER Hessian minor z satisfying natAbs(z)<=48*A^3. Every
+prime not dividing z preserves geometric irreducibility, including2 when good.
+All d<=2 certificate budgets and COMPLETE original global auxiliary properties
+are now internally proved, including arbitrary coefficients and singular points.
+Canonical T1.7 is `UniformGeometricCountsHigherDegreeInput.companion_T1_7`.
+The two independent geometric input families are required ONLY at actual
+degrees>2 in the same original degree families and size caps. General higher
+degree existence/estimate theorems remain UNPROVED; T1.7 stays conditional.
+All-fields universal forms in degree2 are bypassed, not claimed. Coverage
+stays163 proved,2 conditional,2 in_progress out of167; all73 main results are
+proved. No Palomar registration.
+
+Historical checkpoint P1-MATH-0609: the actual canonical quadric class count is
 internally proved <=p^2+2p at every prime with irreducible reduction. This gives
 the precise uniform finite-field input for ALL d<=2, with no characteristic
 restriction and with the original X3=1 chart and actual smooth classes retained.
@@ -29160,19 +29173,25 @@ is fixed from the ordinary equation-size cap; constants are then chosen before
 all coefficients, auxiliary degrees, heights and actual point populations.
 
 Canonical companionT1.7 is now
-`PaperP1.UniformGeometricCountsNoetherFieldInput.companion_T1_7`.
-The actual bounded integer certificate, global auxiliary equation and exact P3
-cover are internally derived from the two independent remaining input families
-`P1-GEO-P3-UNIVERSAL-NOETHER-FORMS` and
-`P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Their three finite-degree families are
-2^k*p.systemDegree^2,2^k*(K+1)^2 and2^k*(a+1+1)^2 with the original caps.
-Both general theorems remain UNPROVED; both are proved in degree one.
-T1.7 remains conditional. Earlier descriptions retain their historical scopes.
+`PaperP1.UniformGeometricCountsHigherDegreeInput.companion_T1_7`.
+The two independent remaining input families are required ONLY at actual
+degrees>2: `P1-GEO-P3-UNIVERSAL-NOETHER-FORMS` and
+`P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Their degree families are unchanged:
+2^k*p.systemDegree^2,2^k*(K+1)^2 and2^k*(a+1+1)^2 at the original caps.
+Every d<=2 certificate budget and complete original auxiliary property is
+internally proved, with no additional geometric input. Degree2 uses an actual
+nonzero integer Hessian minor of size<=48*A^3, at every prime not dividing it.
+All-fields Noether forms in degree2 are bypassed and are not claimed. Both
+higher-degree input theorems remain UNPROVED. T1.7 remains conditional.
+Earlier descriptions retain their historical scopes.
 
 ## Independent universal integer Noether forms
 
 Stable ID: `P1-GEO-P3-UNIVERSAL-NOETHER-FORMS`. Status: **explicit_hypothesis**.
 Exact Lean property: `PaperP1.P3UniversalNoetherForms.ExistsForms d`.
+Current canonical scope at P1-MATH-0610: only actual degrees strictly greater
+than2 at the original three finite-degree families/caps. All d<=2 needed
+certificate budgets and full auxiliary properties are proved internally.
 It requires one actual finite family of integer polynomials in the actual
 degree-d homogeneous coefficient index. Over every coefficient field, the
 homogeneous polynomial is geometrically irreducible if and only if at least
@@ -29183,6 +29202,9 @@ theorem remains UNPROVED. Four explicit coordinate forms prove degree one.
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
 Exact Lean property: `PaperP1.P3FiniteFieldClassEstimate.UniformEstimate d`.
+Current canonical scope at P1-MATH-0610: only actual degrees strictly greater
+than2 at the original three finite-degree families/caps. All d<=2 needed
+certificate budgets and full auxiliary properties are proved internally.
 For each eta>0 a prime threshold precedes every original homogeneous degree-d
 integer polynomial whose actual reduction is geometrically irreducible.
 Every prime above that threshold has at most (1+eta)*p^2 actual canonical
@@ -29199,6 +29221,19 @@ construction and T1.7 translations then follow internally. These precise
 interfaces are inferred from the separate roles of universal forms and finite
 field estimates in [Salberger2023, Lemmas1.5 and1.8-1.9](https://londmathsoc.onlinelibrary.wiley.com/doi/full/10.1112/plms.12508).
 No literature statement is introduced as a Lean axiom. T1.7 stays conditional.
+
+## Direct proved degree-two good-prime certificate
+
+At P1-MATH-0610, `QuadricHessianGoodReduction.bounded_certificate` constructs
+an actual nonzero INTEGER Hessian minor with natAbs<=48*A^3. Every prime not
+dividing it preserves geometric irreducibility, including characteristic2 when
+that determinant stays nonzero. The proved necessity of Hessian rank>=3 is
+used only over the characteristic-zero algebraic closure. The sufficient
+nonzero-minor irreducibility theorem is proved over EVERY field.
+`P3QuadricFiniteFieldCertificate.uniform_budget` and `uniform_auxiliary`
+therefore prove every d<=2 good-prime budget and complete original auxiliary
+property without independent geometric inputs. Universal Noether forms in
+degree2 are not asserted. T1.7 retains only the higher-degree input obligations.
 
 ## Independent finite-field good-prime certificate budget
 
@@ -29807,3 +29842,26 @@ For each eta>0, an integer K>2/eta is chosen before every P. For every prime p>=
 Thirteen modules add forty-nine theorems and ten definitions. Canonical companionT1.7 remains UniformGeometricCountsNoetherFieldInput.companion_T1_7, conditional on the SAME two independent input families in general. The point-estimate input is discharged for degrees0,1,2 only; universal forms are still proved in degree one only. Coverage remains163 proved,2 conditional,2 in_progress out of167, all73 main results proved. The separate companionT19.17 input and the two literal false original statements retain their previous scopes. One accidentally overwritten existing plane-bound module was restored BYTE FOR BYTE before validation and its existing theorem is reused. Original source hashes, Lean version, allowed axioms and checking options are unchanged. No dependency download or Palomar registration. Git compaction preserved all23540 object IDs and fullfsck passed; Ubuntu free space is about6.00GiB.
 
 Verified under Lean v4.36.0-rc2: full build passed (17467 jobs); direct axiom audit passed for 16886 declarations using only propext, Classical.choice and Quot.sound; all 16654 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.00 GiB.
+
+
+## Explicit cubic quadric good-reduction certificates and unconditional complete auxiliary theorem in degrees at most two
+
+Stable ID: p1:internal:quadric-hessian-good-reduction-certificate. All d<=2 good-prime budgets and complete original global auxiliary properties are internally proved. Canonical T1.7 now needs independent universal-form and finite-field estimate inputs only in actual degrees>2.
+
+QuadricHessianGoodReduction constructs an ACTUAL nonzero integer three-by-three Hessian minor z for every geometrically irreducible homogeneous integer quadric P. If all original coefficient absolute values are bounded by A, the actual certificate satisfies natAbs(z)<=48*A^3. At EVERY prime p not dividing this same z, the actual reduction is geometrically irreducible. This includes the prime2 whenever it does not divide z. No universal Noether-form existence, point-height population, assumed coordinate change or literature axiom is supplied.
+
+HomogeneousQuadraticHessian defines the actual coefficient of each second partial derivative at the origin, proves symmetry, the exact original-coefficient formula, commutation with every coefficient-field map, the actual linear gradient expansion and the exact polynomial/evaluation identity v^T*H*v=2*P(v). QuadricHessianMinorHeight proves every Hessian entry is bounded by2A and every actual three-by-three minor by3!*(2A)^3=48A^3. It also checks the optional doubled-minor bound96A^3, but the final certificate uses the UNDOUBLED minor: excluding2 is not necessary.
+
+QuadraticHessianBilinear proves the exact symmetric bilinear and quadratic-form evaluations. LinearMapPolynomialCoordinates constructs actual polynomial substitutions and equivalences induced by literal linear maps, with exact evaluation and homogeneous-degree transport. QuadraticPolynomialDiagonalization uses the checked Mathlib orthogonal-basis theorem to derive an actual diagonal polynomial through the constructed coordinate equivalence. QuadraticHessianLinearTransport proves the exact matrix congruence and rank invariance of the same substitution. MatrixMinorRankWitness proves that every finite matrix rank lower bound is witnessed by an actual square minor, using literal independent columns and the existing checked evaluation-annihilator theorem.
+
+DiagonalQuadricFactorization constructs explicit nonunit linear factors over an algebraically closed field when a diagonal quadric has at most two nonzero coefficients. DiagonalQuadricHessian computes the actual diagonal Hessian and its rank. Hence GeometricQuadricHessianRank proves that an irreducible quadric over an algebraically closed field of characteristic different from2 has Hessian rank at least3 and an actual nonzero three-by-three minor. Applied over the algebraic closure of Q and transported by exact coefficient maps, this supplies the actual NONZERO INTEGER minor of the original P.
+
+QuadricHessianIrreducibility proves the converse needed for good reduction over EVERY coefficient field, with no characteristic restriction. Two actual linear factors give a Hessian matrix factored through a two-dimensional space, so every three-by-three minor vanishes. Any nontrivial factorization of a homogeneous nonzero quadric is internally proved to have homogeneous degree-one factors. A nonzero three-by-three minor therefore proves irreducibility. This is applied over the ACTUAL algebraic closure of the finite field after exact determinant/reduction transport. A prime not dividing z keeps its determinant nonzero, including characteristic2 when applicable.
+
+P3QuadricFiniteFieldCertificate combines the actual z bound with the independent point estimate already proved at checkpoint609. UniformBudget2 is UNCONDITIONALLY proved with positive T=48,N=3 and a prime threshold depending only on eta. All d<=2 budgets follow. The complete original coefficient-uniform global auxiliary theorem, including all original singular points and all H>=1, is consequently UNCONDITIONALLY proved for ALL d<=2 through the already checked full determinant construction. This does not assert the all-fields universal Noether-form proposition in degree2; the exact bounded good-reduction certificate needed here is proved directly.
+
+UniformGeometricCountsHigherDegreeInput assembles the full aligned companionT1.7 with both independent geometric input families required ONLY when the actual original degree is strictly greater than2. The SAME three degree families and original size caps are retained. Canonical T1.7 becomes UniformGeometricCountsHigherDegreeInput.companion_T1_7. The remaining input IDs stay P1-GEO-P3-UNIVERSAL-NOETHER-FORMS and P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE, now restricted to these higher degrees. Their general theorems remain UNPROVED, and T1.7 stays conditional.
+
+Fourteen modules add fifty-two theorems and ten definitions/hypothesis structures. Coverage stays163 proved,2 conditional,2 in_progress out of167, all73 main results proved. The separate companionT19.17 input and the two literal false original statements retain their previous scopes. Original manuscript hashes, Lean v4.36.0-rc2, permitted axioms and checking options are unchanged. Two existing Mathlib quadratic-isometry source modules were built selectively without downloading dependencies. No Palomar registration. All work remains on Ubuntu; free space is about5.96GiB.
+
+Verified under Lean v4.36.0-rc2: full build passed (17499 jobs); direct axiom audit passed for 16938 declarations using only propext, Classical.choice and Quot.sound; all 16716 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 5.96 GiB.

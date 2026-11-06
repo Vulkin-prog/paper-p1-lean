@@ -4405,3 +4405,17 @@ public import PaperP1.Diophantine.FiniteFieldQuadricFirstChartCount
 public import PaperP1.Diophantine.FiniteFieldQuadricLastChartCount
 public import PaperP1.Diophantine.FiniteFieldQuadricLinearCount
 public import PaperP1.Diophantine.FiniteFieldQuadricNormalCount
+public import PaperP1.Algebra.DiagonalQuadricFactorization
+public import PaperP1.Algebra.DiagonalQuadricHessian
+public import PaperP1.Algebra.GeometricQuadricHessianRank
+public import PaperP1.Algebra.HomogeneousQuadraticHessian
+public import PaperP1.Algebra.LinearMapPolynomialCoordinates
+public import PaperP1.Algebra.MatrixMinorRankWitness
+public import PaperP1.Algebra.QuadraticHessianBilinear
+public import PaperP1.Algebra.QuadraticHessianLinearTransport
+public import PaperP1.Algebra.QuadraticPolynomialDiagonalization
+public import PaperP1.Algebra.QuadricHessianIrreducibility
+public import PaperP1.Arithmetic.P3QuadricFiniteFieldCertificate
+public import PaperP1.Arithmetic.QuadricHessianGoodReduction
+public import PaperP1.Arithmetic.QuadricHessianMinorHeight
+public import PaperP1.Asymptotics.UniformGeometricCountsHigherDegreeInput
