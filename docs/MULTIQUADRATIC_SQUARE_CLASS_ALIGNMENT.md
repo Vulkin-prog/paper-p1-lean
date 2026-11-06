@@ -1,6 +1,14 @@
 # Multiquadratic split radicands: exact square-class independence
 
-Current checkpoint P1-MATH-0760: One common frequency exception controls
+Current checkpoint P1-MATH-0761: Exact finite Abel summation and
+reciprocal norm bound. The actual Ramare main-term frequency bounds and
+complete logarithmic short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 52.9 GiB free on
+Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0760: One common frequency exception controls
 all actual count and presence weighted cutoffs. The actual Ramare main-
 term frequency bounds and complete logarithmic short-average
 concentration remain unproved. T19.17 conditional; original T1.7
@@ -25524,3 +25532,12 @@ For every epsilon,delta>0 one R>=2 and N0>=4 precede all N>=N0, all B>=N and all
 The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18087 jobs); direct axiom audit passed for 18424 declarations using only propext, Classical.choice and Quot.sound; all 18576 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.84 GiB.
+
+
+## Exact finite Abel summation and reciprocal norm bound
+
+The literal finite partial sum has an exact Abel identity with its terminal value and consecutive weight differences. Nonnegative decreasing real weights give the norm bound D*w(0) from the simultaneous bound D on all actual partial sums, including the empty one. The reciprocal weights 1/(N+i), for N>0, give D/N. Five theorems and one definition preserve every endpoint.
+
+The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18089 jobs); direct axiom audit passed for 18429 declarations using only propext, Classical.choice and Quot.sound; all 18582 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.83 GiB.

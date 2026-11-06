@@ -35061,6 +35061,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "4613a7525028498032f8101cc9fea6d65330b63a"
+    },
+    {
+      "id": "P1-MATH-0761",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "A bound for a single final sum is insufficient for partial summation; all initial partial sums and terminal weights must be retained.",
+      "finding": "The literal finite partial sum has an exact Abel identity with its terminal value and consecutive weight differences. Nonnegative decreasing real weights give the norm bound D*w(0) from the simultaneous bound D on all actual partial sums, including the empty one. The reciprocal weights 1/(N+i), for N>0, give D/N. Five theorems and one definition preserve every endpoint.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Exact finite Abel summation and reciprocal norm bound. The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.FiniteAbelNorm.partialSum_succ",
+        "PaperP1.FiniteAbelNorm.finite_identity",
+        "PaperP1.FiniteAbelNorm.telescoping",
+        "PaperP1.FiniteAbelNorm.norm_bound",
+        "PaperP1.FiniteAbelNorm.reciprocal_norm_bound",
+        "PaperP1.FiniteAbelNorm.partialSum"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18089 jobs); direct axiom audit passed for 18429 declarations using only propext, Classical.choice and Quot.sound; all 18582 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.83 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

@@ -3822,6 +3822,11 @@ import PaperP1
 #print axioms PaperP1.FactorialResolvent.correction_abs_bound
 #print axioms PaperP1.FactorialResolvent.summable_abs_correction
 #print axioms PaperP1.FactorialResolvent.correction_l1_bound
+#print axioms PaperP1.FiniteAbelNorm.partialSum_succ
+#print axioms PaperP1.FiniteAbelNorm.finite_identity
+#print axioms PaperP1.FiniteAbelNorm.telescoping
+#print axioms PaperP1.FiniteAbelNorm.norm_bound
+#print axioms PaperP1.FiniteAbelNorm.reciprocal_norm_bound
 #print axioms PaperP1.FiniteCRTTails.positive_power_tail
 #print axioms PaperP1.FiniteCRTTails.positive_product_power_tail
 #print axioms PaperP1.FiniteCRTTails.shifted_cube
