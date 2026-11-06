@@ -39457,6 +39457,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "6efbe4d40ad63fbbbfc3a26ef347c263c546888d"
+    },
+    {
+      "id": "P1-MATH-0901",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "A quantitative finite-mass sieve estimate must reach the actual good populations used by the Ramare approximation.",
+      "finding": "Six theorems prove the actual upper-square identity and its decay for b<1/2, the actual band-cardinality-square decay, the vanishing square-divisibility exception density, and the literal excluded and missing-good density bounds <=2/M+epsilon whenever 0<a<=b<1/2 and 0<M<log(b/a). These are actual FlexiblePrimeBandSieve.good sets with both integer floors retained. Fixed a,b do not give an unproved zero-density assertion.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "The actual fixed-power prime-band sieve has a quantitative missing-good-density bound. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.FixedPowerPrimeBandDensity.upper_square_identity",
+        "PaperP1.FixedPowerPrimeBandDensity.upper_square_tendsto",
+        "PaperP1.FixedPowerPrimeBandDensity.card_square_tendsto",
+        "PaperP1.FixedPowerPrimeBandDensity.square_density_tendsto",
+        "PaperP1.FixedPowerPrimeBandDensity.excluded_eventually_bound",
+        "PaperP1.FixedPowerPrimeBandDensity.missing_good_eventually_bound"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18369 jobs); direct axiom audit passed for 18951 declarations using only propext, Classical.choice and Quot.sound; all 19198 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.45 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

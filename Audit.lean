@@ -4127,6 +4127,12 @@ import PaperP1
 #print axioms PaperP1.FixedPowerPrimeBand.logarithmic_gap
 #print axioms PaperP1.FixedPowerPrimeBand.reciprocal_mass_tendsto
 #print axioms PaperP1.FixedPowerPrimeBand.mass_eventually_lower
+#print axioms PaperP1.FixedPowerPrimeBandDensity.upper_square_identity
+#print axioms PaperP1.FixedPowerPrimeBandDensity.upper_square_tendsto
+#print axioms PaperP1.FixedPowerPrimeBandDensity.card_square_tendsto
+#print axioms PaperP1.FixedPowerPrimeBandDensity.square_density_tendsto
+#print axioms PaperP1.FixedPowerPrimeBandDensity.excluded_eventually_bound
+#print axioms PaperP1.FixedPowerPrimeBandDensity.missing_good_eventually_bound
 #print axioms PaperP1.FlexiblePrimeBandSieve.reciprocal_mass_tendsto
 #print axioms PaperP1.FlexiblePrimeBandSieve.card_bound
 #print axioms PaperP1.FlexiblePrimeBandSieve.normalized_card_square_tendsto
