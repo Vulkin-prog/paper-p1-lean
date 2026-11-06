@@ -4923,6 +4923,8 @@ import PaperP1
 #print axioms PaperP1.ReciprocalSquareTail.finite_bound
 #print axioms PaperP1.ReciprocalSquareTail.product_bound
 #print axioms PaperP1.ReciprocalSquareTail.weighted_product_bound
+#print axioms PaperP1.RecursiveBudgetPower.constant_square
+#print axioms PaperP1.RecursiveBudgetPower.bound
 #print axioms PaperP1.RecursiveChebyshev.normalized_identity
 #print axioms PaperP1.RecursiveChebyshev.normalized_derivative
 #print axioms PaperP1.RecursiveChebyshev.card_lt

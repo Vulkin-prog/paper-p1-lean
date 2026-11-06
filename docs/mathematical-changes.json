@@ -38257,6 +38257,34 @@
         "status": "not_integrated"
       },
       "validation_commit": "8d6e8accab8b29a384ec1050f9004b6bceaa5b54"
+    },
+    {
+      "id": "P1-MATH-0863",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "Qualitative convergence of the differencing budget is insufficient when it must absorb growing sparse-frequency populations; an explicit power gain and all finite-depth losses are needed.",
+      "finding": "For the ACTUAL proved recursion b_0=epsilon, b_(j+1)=sqrt(2/K+2*b_j), prove: if x>=1, beta>=0, C>=4, K>=x^beta/2, 0<=epsilon<=C*x^(-beta), then b_n<=C*x^(-beta/2^n) for EVERY finite n. The same constant C is retained through every stage using C^2>=4+2*C. Two theorems prove the scalar constant inequality and the complete recursive power bound, with integer K and exact real exponents.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "The actual recursive differencing budget has an explicit power-decay bound. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.RecursiveBudgetPower.constant_square",
+        "PaperP1.RecursiveBudgetPower.bound"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18293 jobs); direct axiom audit passed for 18797 declarations using only propext, Classical.choice and Quot.sound; all 19020 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.00 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
