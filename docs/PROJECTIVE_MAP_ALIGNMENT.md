@@ -1,6 +1,15 @@
 # Actual projective scheme map
 
-Current checkpoint P1-MATH-0873: The proved damped series and tail are
+Current checkpoint P1-MATH-0874: Literal finite intervals split exactly
+into truncated dyadic blocks. The triple-large prime frequency
+contribution, the central-frequency mean comparison and complete
+logarithmic short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 53.94 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0873: The proved damped series and tail are
 identified with the actual Riemann zeta function. The triple-large prime
 frequency contribution, the central-frequency mean comparison and
 complete logarithmic short-average concentration remain unproved. T19.17
@@ -26850,3 +26859,12 @@ Six theorems and one definition identify exp(-it log x) with the actual complex 
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.99 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18313 jobs); direct axiom audit passed for 18852 declarations using only propext, Classical.choice and Quot.sound; all 19087 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.96 GiB.
+
+
+## Literal finite intervals split exactly into truncated dyadic blocks
+
+Seven theorems and one definition prove the actual integer dyadic anchors 2^j*N, their monotonicity, exact partition of Ico N M through truncated endpoints, and finite norm bounds from actual block sums. A common block bound D gives norm<=K*D after K blocks, including blocks past M, which are proved empty. This preserves exact endpoints and does not assume the desired long-interval estimate.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.94 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18315 jobs); direct axiom audit passed for 18859 declarations using only propext, Classical.choice and Quot.sound; all 19095 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.94 GiB.

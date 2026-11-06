@@ -3980,6 +3980,13 @@ import PaperP1
 #print axioms PaperP1.FiniteDirichletConvolution.support_bounds
 #print axioms PaperP1.FiniteDirichletConvolution.coefficient_norm_bound
 #print axioms PaperP1.FiniteDirichletConvolution.product_identity
+#print axioms PaperP1.FiniteDyadicAssembly.anchor_zero
+#print axioms PaperP1.FiniteDyadicAssembly.anchor_succ
+#print axioms PaperP1.FiniteDyadicAssembly.anchor_lower
+#print axioms PaperP1.FiniteDyadicAssembly.anchor_mono
+#print axioms PaperP1.FiniteDyadicAssembly.partition
+#print axioms PaperP1.FiniteDyadicAssembly.norm_bound
+#print axioms PaperP1.FiniteDyadicAssembly.constant_norm_bound
 #print axioms PaperP1.FiniteEulerLogBound.factor_ne
 #print axioms PaperP1.FiniteEulerLogBound.point_log_error
 #print axioms PaperP1.FiniteEulerLogBound.product_ne

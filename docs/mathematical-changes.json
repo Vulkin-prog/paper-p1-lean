@@ -38623,6 +38623,40 @@
         "status": "not_integrated"
       },
       "validation_commit": "f9327cd43e6201edfb0a7f7dc5b3008fe5353bdc"
+    },
+    {
+      "id": "P1-MATH-0874",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "Long finite sums require an exact finite decomposition, including the final truncated block and all empty blocks beyond the endpoint.",
+      "finding": "Seven theorems and one definition prove the actual integer dyadic anchors 2^j*N, their monotonicity, exact partition of Ico N M through truncated endpoints, and finite norm bounds from actual block sums. A common block bound D gives norm<=K*D after K blocks, including blocks past M, which are proved empty. This preserves exact endpoints and does not assume the desired long-interval estimate.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Literal finite intervals split exactly into truncated dyadic blocks. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.FiniteDyadicAssembly.anchor_zero",
+        "PaperP1.FiniteDyadicAssembly.anchor_succ",
+        "PaperP1.FiniteDyadicAssembly.anchor_lower",
+        "PaperP1.FiniteDyadicAssembly.anchor_mono",
+        "PaperP1.FiniteDyadicAssembly.partition",
+        "PaperP1.FiniteDyadicAssembly.norm_bound",
+        "PaperP1.FiniteDyadicAssembly.constant_norm_bound",
+        "PaperP1.FiniteDyadicAssembly.anchor"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18315 jobs); direct axiom audit passed for 18859 declarations using only propext, Classical.choice and Quot.sound; all 19095 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.94 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
