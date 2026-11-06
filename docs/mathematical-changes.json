@@ -27069,6 +27069,53 @@
         "status": "not_integrated"
       },
       "validation_commit": "8290e738c15249a1da92e83eeabaa50907208f3a"
+    },
+    {
+      "id": "P1-MATH-0563",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The remaining source-surface projection needed an actual finite injective map from a three-variable polynomial ring, with rank identified from the genuine source degree rather than a supplied abstract degree or a curve-only Hilbert-slope theorem.",
+      "finding": "The actual coordinate powers define the required finite injective source-surface normalization, and its module rank is proved to be exactly 2^k*D^2 by a dimension-independent finite graded Hilbert-coefficient comparison.",
+      "proposed_revision": "Describe the literal three coordinate-power normalization and derive its degree from the source Hilbert polynomial; make the finite graded coefficient comparison explicit when passing from surfaces to a primitive hypersurface image.",
+      "impact": "Discharges the actual source-surface normalization and exact rank prerequisites of the bounded projective-three-space projection without asserting or assuming any surface-cover conclusion.",
+      "evidence": [
+        "PaperP1.FiniteGradedHilbertCoefficient.translations_degree",
+        "PaperP1.FiniteGradedHilbertCoefficient.translations_coefficient",
+        "PaperP1.FiniteGradedHilbertCoefficient.shifted_sum",
+        "PaperP1.FiniteGradedHilbertCoefficient.coefficient_eq",
+        "PaperP1.FiniteSurfaceParameterRank.base_hilbert",
+        "PaperP1.FiniteSurfaceParameterRank.rank_eq_twice_coefficient",
+        "PaperP1.NativeSurfacePowerParameters.map_X",
+        "PaperP1.NativeSurfacePowerParameters.ambient_map",
+        "PaperP1.NativeSurfacePowerParameters.injective",
+        "PaperP1.NativeSurfacePowerParameters.finite",
+        "PaperP1.PolynomialEventualCoefficientOrder.coefficient_le",
+        "PaperP1.PolynomialEventualCoefficientOrder.translation_degree_le",
+        "PaperP1.PolynomialEventualCoefficientOrder.translation_coefficient",
+        "PaperP1.SourceSurfacePowerParameters.parameter_mem",
+        "PaperP1.SourceSurfacePowerParameters.factor",
+        "PaperP1.SourceSurfacePowerParameters.injective",
+        "PaperP1.SourceSurfacePowerParameters.finite",
+        "PaperP1.SourceSurfacePowerParameters.rank",
+        "PaperP1.NativeSurfacePowerParameters.map",
+        "PaperP1.SourceSurfacePowerParameters.parameters",
+        "PaperP1.SourceSurfacePowerParameters.map"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17065 jobs); direct axiom audit passed for 16324 declarations using only propext, Classical.choice and Quot.sound; all 15951 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.28 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

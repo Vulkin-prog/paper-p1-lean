@@ -976,6 +976,10 @@ import PaperP1
 #print axioms PaperP1.Algebra.centered_product_inclusion_exclusion
 #print axioms PaperP1.Algebra.centeredMoment_eq_centeredCoefficient
 #print axioms PaperP1.Algebra.finite_weighted_product_expansion
+#print axioms PaperP1.FiniteGradedHilbertCoefficient.translations_degree
+#print axioms PaperP1.FiniteGradedHilbertCoefficient.translations_coefficient
+#print axioms PaperP1.FiniteGradedHilbertCoefficient.shifted_sum
+#print axioms PaperP1.FiniteGradedHilbertCoefficient.coefficient_eq
 #print axioms PaperP1.FiniteGradedLinearGrowth.shifted_sum
 #print axioms PaperP1.FiniteGradedLinearGrowth.hasSlope
 #print axioms PaperP1.FiniteGradedLinearGrowth.coefficient_eq
@@ -1064,6 +1068,8 @@ import PaperP1
 #print axioms PaperP1.FiniteSupportImageRank.supportUnion_subset
 #print axioms PaperP1.FiniteSupportImageRank.support_subset_of_basis
 #print axioms PaperP1.FiniteSupportImageRank.rank_le_supportUnion
+#print axioms PaperP1.FiniteSurfaceParameterRank.base_hilbert
+#print axioms PaperP1.FiniteSurfaceParameterRank.rank_eq_twice_coefficient
 #print axioms PaperP1.FormalBranchScalarDescent.evaluation_constant
 #print axioms PaperP1.FormalBranchScalarDescent.evaluation_naturality
 #print axioms PaperP1.FormalBranchScalarDescent.components_vanish
@@ -1622,6 +1628,10 @@ import PaperP1
 #print axioms PaperP1.NativePlaneQuotientNormalization.hasParameters
 #print axioms PaperP1.NativePlaneQuotientNormalization.piece_finite
 #print axioms PaperP1.NativePlaneQuotientNormalization.exists_polynomial
+#print axioms PaperP1.NativeSurfacePowerParameters.map_X
+#print axioms PaperP1.NativeSurfacePowerParameters.ambient_map
+#print axioms PaperP1.NativeSurfacePowerParameters.injective
+#print axioms PaperP1.NativeSurfacePowerParameters.finite
 #print axioms PaperP1.NativeVeroneseAffineIdeal.affineMap_apply
 #print axioms PaperP1.NativeVeroneseAffineIdeal.specialization_Z
 #print axioms PaperP1.NativeVeroneseAffineIdeal.affineMap_radicand
@@ -1740,6 +1750,9 @@ import PaperP1
 #print axioms PaperP1.PolynomialDeterminantHeight.unit_mul_height
 #print axioms PaperP1.PolynomialDeterminantHeight.determinant_height
 #print axioms PaperP1.PolynomialDeterminantHeight.determinant_degree
+#print axioms PaperP1.PolynomialEventualCoefficientOrder.coefficient_le
+#print axioms PaperP1.PolynomialEventualCoefficientOrder.translation_degree_le
+#print axioms PaperP1.PolynomialEventualCoefficientOrder.translation_coefficient
 #print axioms PaperP1.PolynomialGradientDegree.pderiv_degree_le_sub_one
 #print axioms PaperP1.PolynomialGradientDegree.exists_nonzero_partial
 #print axioms PaperP1.PolynomialGradientDegree.exists_partial_not_dvd
@@ -2216,6 +2229,11 @@ import PaperP1
 #print axioms PaperP1.SourceCurveRadicalRelations.baseRadicand_mem_two
 #print axioms PaperP1.SourceCurveRadicalRelations.original_square
 #print axioms PaperP1.SourceCurveRadicalRelations.root_square
+#print axioms PaperP1.SourceSurfacePowerParameters.parameter_mem
+#print axioms PaperP1.SourceSurfacePowerParameters.factor
+#print axioms PaperP1.SourceSurfacePowerParameters.injective
+#print axioms PaperP1.SourceSurfacePowerParameters.finite
+#print axioms PaperP1.SourceSurfacePowerParameters.rank
 #print axioms PaperP1.SourceVeroneseAffinePoint.sourceMap_base
 #print axioms PaperP1.SourceVeroneseAffinePoint.curve_image
 #print axioms PaperP1.SourceVeroneseChartBasis.chartBasis_apply

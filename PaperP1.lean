@@ -4203,3 +4203,8 @@ public import PaperP1.Asymptotics.UniformGeometricCountsSurfaceInputs
 public import PaperP1.Geometry.LinearHypersurfaceImage
 public import PaperP1.Geometry.LinearHypersurfaceImageFiber
 public import PaperP1.Geometry.LinearHypersurfaceMinimalEquation
+public import PaperP1.Algebra.FiniteGradedHilbertCoefficient
+public import PaperP1.Algebra.FiniteSurfaceParameterRank
+public import PaperP1.Algebra.NativeSurfacePowerParameters
+public import PaperP1.Algebra.PolynomialEventualCoefficientOrder
+public import PaperP1.Algebra.SourceSurfacePowerParameters
