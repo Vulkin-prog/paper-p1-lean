@@ -4519,6 +4519,11 @@ import PaperP1
 #print axioms PaperP1.LognormalIntegralTails.sqrt_cutoff_bound
 #print axioms PaperP1.LognormalIntegralTails.upper_bound
 #print axioms PaperP1.LognormalIntegralTails.square_cutoff_bound
+#print axioms PaperP1.LognormalLongCancellation.coefficient_pos
+#print axioms PaperP1.LognormalLongCancellation.sum_identity
+#print axioms PaperP1.LognormalLongCancellation.uniform_blockwise_bound
+#print axioms PaperP1.LognormalLongCancellation.uniform_span_bound
+#print axioms PaperP1.LognormalLongCancellation.uniform_bound
 #print axioms PaperP1.LognormalLowerTail.weight_bound
 #print axioms PaperP1.LognormalLowerTail.integer_head_bound
 #print axioms PaperP1.LognormalLowerTail.sqrt_head_bound

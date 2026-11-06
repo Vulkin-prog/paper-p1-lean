@@ -39998,6 +39998,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "86d2098cbf1a94c5eaff9997fbf0886bb728a938"
+    },
+    {
+      "id": "P1-MATH-0918",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The far-frequency smooth kernel requires cancellation on the actual entire truncated interval with the same smoothing scale and a proved logarithmic block count.",
+      "finding": "Five theorems and one definition prove the exact sum order identity and assemble the actual weighted all-prefix cancellation over arbitrarily many finite dyadic blocks. For fixed a>0,b>=0, ONE integer cutoff precedes ALL bases N, endpoints M>=N, ALL frequencies (2*M*N)^a<=|t|<=N^b and ALL positive smoothing parameters A. The actual weighted interval norm is <=C_b*A*(log M/log 2+1)/N^gamma_(a,b). Every block frequency condition and literal endpoint is retained.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Actual lognormal-weighted long integer intervals have uniform power cancellation. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.LognormalLongCancellation.coefficient_pos",
+        "PaperP1.LognormalLongCancellation.sum_identity",
+        "PaperP1.LognormalLongCancellation.uniform_blockwise_bound",
+        "PaperP1.LognormalLongCancellation.uniform_span_bound",
+        "PaperP1.LognormalLongCancellation.uniform_bound",
+        "PaperP1.LognormalLongCancellation.coefficient"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18403 jobs); direct axiom audit passed for 19023 declarations using only propext, Classical.choice and Quot.sound; all 19280 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.14 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

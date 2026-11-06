@@ -4857,3 +4857,4 @@ public import PaperP1.Analysis.LognormalIntegralTails
 public import PaperP1.Analysis.LognormalExactTruncation
 public import PaperP1.Analysis.LognormalMellinError
 public import PaperP1.Analysis.NearLognormalKernel
+public import PaperP1.Analysis.LognormalLongCancellation

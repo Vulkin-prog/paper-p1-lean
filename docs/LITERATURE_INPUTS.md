@@ -1,6 +1,15 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0917: The actual smoothed integer Mellin
+Current checkpoint P1-MATH-0918: Actual lognormal-weighted long integer
+intervals have uniform power cancellation. The triple-large prime
+frequency contribution, the central-frequency mean comparison and
+complete logarithmic short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 53.17 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0917: The actual smoothed integer Mellin
 kernel has an explicit three-quarter-power near-frequency error. The
 triple-large prime frequency contribution, the central-frequency mean
 comparison and complete logarithmic short-average concentration remain
@@ -34380,6 +34389,12 @@ Four theorems and one definition prove C_near>0 and the actual full infinite-ser
 
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
 
+## Internal actual lognormal-weighted long integer intervals have uniform power cancellation
+
+Five theorems and one definition prove the exact sum order identity and assemble the actual weighted all-prefix cancellation over arbitrarily many finite dyadic blocks. For fixed a>0,b>=0, ONE integer cutoff precedes ALL bases N, endpoints M>=N, ALL frequencies (2*M*N)^a<=|t|<=N^b and ALL positive smoothing parameters A. The actual weighted interval norm is <=C_b*A*(log M/log 2+1)/N^gamma_(a,b). Every block frequency condition and literal endpoint is retained.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -38903,3 +38918,14 @@ Four theorems and one definition prove C_near>0 and the actual full infinite-ser
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.17 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18401 jobs); direct axiom audit passed for 19018 declarations using only propext, Classical.choice and Quot.sound; all 19274 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.16 GiB.
+
+
+## Actual lognormal-weighted long integer intervals have uniform power cancellation
+
+Stable ID: p1:internal:lognormal-long-cancellation. Actual lognormal-weighted long integer intervals have uniform power cancellation. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
+
+Five theorems and one definition prove the exact sum order identity and assemble the actual weighted all-prefix cancellation over arbitrarily many finite dyadic blocks. For fixed a>0,b>=0, ONE integer cutoff precedes ALL bases N, endpoints M>=N, ALL frequencies (2*M*N)^a<=|t|<=N^b and ALL positive smoothing parameters A. The actual weighted interval norm is <=C_b*A*(log M/log 2+1)/N^gamma_(a,b). Every block frequency condition and literal endpoint is retained.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.17 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18403 jobs); direct axiom audit passed for 19023 declarations using only propext, Classical.choice and Quot.sound; all 19280 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.14 GiB.
