@@ -5602,6 +5602,16 @@ import PaperP1
 #print axioms PaperP1.WeightedRecurrence.zero_mass_l1_bound
 #print axioms PaperP1.WeightedReducedSourceBarrier.transfer
 #print axioms PaperP1.WeightedReducedSourceBarrier.product_budget
+#print axioms PaperP1.ZetaCutoffGeometry.ceiling_bounds
+#print axioms PaperP1.ZetaCutoffGeometry.lower_bounds
+#print axioms PaperP1.ZetaCutoffGeometry.upper_bounds
+#print axioms PaperP1.ZetaCutoffGeometry.ordered
+#print axioms PaperP1.ZetaCutoffGeometry.product_bound
+#print axioms PaperP1.ZetaCutoffGeometry.lower_frequency
+#print axioms PaperP1.ZetaCutoffGeometry.upper_frequency
+#print axioms PaperP1.ZetaCutoffGeometry.logarithmic_lower
+#print axioms PaperP1.ZetaCutoffGeometry.logarithmic_upper
+#print axioms PaperP1.ZetaCutoffGeometry.lower_eventually
 #print axioms PaperP1.ActiveGroupKernelErasure.dimension_cost
 #print axioms PaperP1.ActiveGroupKernelErasure.two_small_per_block
 #print axioms PaperP1.ActiveGroupKernelErasureAt.two_small
