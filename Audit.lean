@@ -4306,6 +4306,14 @@ import PaperP1
 #print axioms PaperP1.NarrowRamareRectangle.twist_coefficient
 #print axioms PaperP1.NarrowRamareRectangle.band_product_expansion
 #print axioms PaperP1.NarrowRamareRectangle.rectangle_expansion
+#print axioms PaperP1.NarrowRectangleWeight.weight_nonneg
+#print axioms PaperP1.NarrowRectangleWeight.weight_le_full
+#print axioms PaperP1.NarrowRectangleWeight.weight_le_one
+#print axioms PaperP1.NarrowRectangleWeight.test_product_bounds
+#print axioms PaperP1.NarrowRectangleWeight.test_middle
+#print axioms PaperP1.NarrowRectangleWeight.weight_middle
+#print axioms PaperP1.NarrowRectangleWeight.weight_above
+#print axioms PaperP1.NarrowRectangleWeight.weight_outside_boundary
 #print axioms PaperP1.NonsingularMonomialPieces.exists_nonexceptional_piece
 #print axioms PaperP1.NonsingularMonomialPieces.exists_counting_piece
 #print axioms PaperP1.NonstationaryTangentImage.continuousOn_position

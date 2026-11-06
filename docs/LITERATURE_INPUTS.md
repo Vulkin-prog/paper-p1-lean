@@ -1,6 +1,15 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0765: Literal narrow Ramare rectangles factor
+Current checkpoint P1-MATH-0766: Actual narrow rectangle divisor weight
+is bounded and agrees away from two endpoint strips. The actual Ramare
+main-term frequency bounds and complete logarithmic short-average
+concentration remain unproved. T19.17 conditional; original T1.7
+unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167;
+all 73 main proved. Sources, false-scope corrections, compiler and
+axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download
+or Palomar registration.
+
+Historical checkpoint P1-MATH-0765: Literal narrow Ramare rectangles factor
 into actual prime and cofactor Dirichlet polynomials. The actual Ramare
 main-term frequency bounds and complete logarithmic short-average
 concentration remain unproved. T19.17 conditional; original T1.7
@@ -32086,6 +32095,12 @@ The literal rectangle uses the source test X<=m*exp(j/H)<2*X, the actual other-b
 
 The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.
 
+## Internal actual narrow rectangle divisor weight is bounded and agrees away from two endpoint strips
+
+The literal rectangle divisor weight sums its actual source test over prime divisors with the same count(n/p)+1 denominators. It is nonnegative, at most the full Ramare weight, and at most one for prime support. A successful test implies X<=p*m<2*growth*X; every product in [growth*X,2*X) satisfies the test. Consequently the weight equals the actual source indicator times the full Ramare weight outside the TWO literal endpoint strips [X,growth*X) and [2*X,2*growth*X), inside [X,4*X). Eight theorems and three definitions prove this finite support statement, with H>=2 and X>0 explicit.
+
+The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -34937,3 +34952,14 @@ The literal rectangle uses the source test X<=m*exp(j/H)<2*X, the actual other-b
 The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18097 jobs); direct axiom audit passed for 18451 declarations using only propext, Classical.choice and Quot.sound; all 18613 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.76 GiB.
+
+
+## Actual narrow rectangle divisor weight is bounded and agrees away from two endpoint strips
+
+Stable ID: p1:internal:narrow-rectangle-weight. Actual narrow rectangle divisor weight is bounded and agrees away from two endpoint strips. The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.
+
+The literal rectangle divisor weight sums its actual source test over prime divisors with the same count(n/p)+1 denominators. It is nonnegative, at most the full Ramare weight, and at most one for prime support. A successful test implies X<=p*m<2*growth*X; every product in [growth*X,2*X) satisfies the test. Consequently the weight equals the actual source indicator times the full Ramare weight outside the TWO literal endpoint strips [X,growth*X) and [2*X,2*growth*X), inside [X,4*X). Eight theorems and three definitions prove this finite support statement, with H>=2 and X>0 explicit.
+
+The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18099 jobs); direct axiom audit passed for 18459 declarations using only propext, Classical.choice and Quot.sound; all 18624 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.74 GiB.

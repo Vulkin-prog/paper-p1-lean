@@ -4705,3 +4705,4 @@ public import PaperP1.Analysis.DyadicPartialSummation
 public import PaperP1.Analysis.CommonIntervalDirichlet
 public import PaperP1.Analysis.NarrowPrimeBands
 public import PaperP1.Analysis.NarrowRamareRectangle
+public import PaperP1.Analysis.NarrowRectangleWeight
