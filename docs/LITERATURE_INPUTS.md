@@ -1,6 +1,18 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0969: The actual Gaussian-difference
+Current checkpoint P1-MATH-0970: The literal extended Dirichlet
+polynomial has uniformly small Gaussian comparison energy. The actual
+off-central Dirichlet estimate and the ordinary smooth long-interval
+mean comparison are proved. The analytic comparison with logarithmic
+short averages remains unproved, so T19.17 remains conditional. The
+stronger uniform short-average theorem for all real completely
+multiplicative functions is not established. T19.17 conditional;
+original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2
+in_progress /167; all 73 main proved. Sources, false-scope corrections,
+compiler and axioms unchanged. About 52.20 GiB free on Ubuntu. No
+dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0969: The actual Gaussian-difference
 frequency energy is uniformly small on neighboring dyadic blocks. The
 actual off-central Dirichlet estimate and the ordinary smooth long-
 interval mean comparison are proved. The analytic comparison with
@@ -35205,6 +35217,12 @@ Two theorems prove that for every fixed D>0 and epsilon>0, one integer cutoff pr
 
 The actual off-central Dirichlet estimate and the ordinary smooth long-interval mean comparison are proved. The analytic comparison with logarithmic short averages remains unproved, so T19.17 remains conditional. The stronger uniform short-average theorem for all real completely multiplicative functions is not established.
 
+## Internal the literal extended dirichlet polynomial has uniformly small gaussian comparison energy
+
+Three theorems prove the exact split of the literal polynomial on [N,4N) into its two dyadic blocks, a checked whole-real-line weighted energy inequality, and arbitrary-epsilon uniform smallness for the actual Gaussian-difference weight. Both blocks use the same actual widths selected at N; the neighboring-block estimate discharges the second block without silently changing its scale. One integer cutoff precedes all real completely multiplicative prime-unit coefficients.
+
+The actual off-central Dirichlet estimate and the ordinary smooth long-interval mean comparison are proved. The analytic comparison with logarithmic short averages remains unproved, so T19.17 remains conditional. The stronger uniform short-average theorem for all real completely multiplicative functions is not established.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -40300,3 +40318,14 @@ Two theorems prove that for every fixed D>0 and epsilon>0, one integer cutoff pr
 The actual off-central Dirichlet estimate and the ordinary smooth long-interval mean comparison are proved. The analytic comparison with logarithmic short averages remains unproved, so T19.17 remains conditional. The stronger uniform short-average theorem for all real completely multiplicative functions is not established. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.20 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18505 jobs); direct axiom audit passed for 19239 declarations using only propext, Classical.choice and Quot.sound; all 19551 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.17 GiB.
+
+
+## The literal extended Dirichlet polynomial has uniformly small Gaussian comparison energy
+
+Stable ID: p1:internal:gaussian-extended-frequency-energy. The literal extended Dirichlet polynomial has uniformly small Gaussian comparison energy. The actual off-central Dirichlet estimate and the ordinary smooth long-interval mean comparison are proved. The analytic comparison with logarithmic short averages remains unproved, so T19.17 remains conditional. The stronger uniform short-average theorem for all real completely multiplicative functions is not established.
+
+Three theorems prove the exact split of the literal polynomial on [N,4N) into its two dyadic blocks, a checked whole-real-line weighted energy inequality, and arbitrary-epsilon uniform smallness for the actual Gaussian-difference weight. Both blocks use the same actual widths selected at N; the neighboring-block estimate discharges the second block without silently changing its scale. One integer cutoff precedes all real completely multiplicative prime-unit coefficients.
+
+The actual off-central Dirichlet estimate and the ordinary smooth long-interval mean comparison are proved. The analytic comparison with logarithmic short averages remains unproved, so T19.17 remains conditional. The stronger uniform short-average theorem for all real completely multiplicative functions is not established. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.20 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18507 jobs); direct axiom audit passed for 19242 declarations using only propext, Classical.choice and Quot.sound; all 19554 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.15 GiB.

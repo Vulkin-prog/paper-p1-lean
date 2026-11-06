@@ -4255,6 +4255,9 @@ import PaperP1
 #print axioms PaperP1.GaussianExponentialSums.gaussian_cross_integrable
 #print axioms PaperP1.GaussianExponentialSums.gaussian_gram
 #print axioms PaperP1.GaussianExponentialSums.gaussian_mean_square_le
+#print axioms PaperP1.GaussianExtendedFrequencyEnergy.polynomial_split
+#print axioms PaperP1.GaussianExtendedFrequencyEnergy.energy_split
+#print axioms PaperP1.GaussianExtendedFrequencyEnergy.uniform_bound
 #print axioms PaperP1.GaussianFibreError.weighted_fibre_sum_bound
 #print axioms PaperP1.GaussianFibreError.gaussian_fibre_sum_bound
 #print axioms PaperP1.GaussianFibreError.sharp_fibre_sum_bound

@@ -41679,6 +41679,35 @@
         "status": "not_integrated"
       },
       "validation_commit": "b174ee3e37339d8f3769ac4fda1e06fece23546f"
+    },
+    {
+      "id": "P1-MATH-0970",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "Internal actual extended polynomial for intervals near block boundaries; sharp-window localization remains unproved.",
+      "finding": "Three theorems prove the exact split of the literal polynomial on [N,4N) into its two dyadic blocks, a checked whole-real-line weighted energy inequality, and arbitrary-epsilon uniform smallness for the actual Gaussian-difference weight. Both blocks use the same actual widths selected at N; the neighboring-block estimate discharges the second block without silently changing its scale. One integer cutoff precedes all real completely multiplicative prime-unit coefficients.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "The literal extended Dirichlet polynomial has uniformly small Gaussian comparison energy. The actual off-central Dirichlet estimate and the ordinary smooth long-interval mean comparison are proved. The analytic comparison with logarithmic short averages remains unproved, so T19.17 remains conditional. The stronger uniform short-average theorem for all real completely multiplicative functions is not established.",
+      "evidence": [
+        "PaperP1.GaussianExtendedFrequencyEnergy.polynomial_split",
+        "PaperP1.GaussianExtendedFrequencyEnergy.energy_split",
+        "PaperP1.GaussianExtendedFrequencyEnergy.uniform_bound"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18507 jobs); direct axiom audit passed for 19242 declarations using only propext, Classical.choice and Quot.sound; all 19554 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.15 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
