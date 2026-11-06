@@ -1,6 +1,17 @@
 # Multiquadratic split radicands: exact square-class independence
 
-Current checkpoint P1-MATH-0656: the ORIGINAL integer-source
+Current checkpoint P1-MATH-0657: EVERY normalized integer point
+of the ACTUAL source chosen-embedding kernel has literal integer
+affine/radical coordinates satisfying w_i^2=d_i*prod(x+a)*prod(y+b).
+The affine evaluation and coordinate identifications are INTERNAL.
+A nonzero bounded radical square forces each dividing branch shift
+to have |a|<=2*H^2. The actual large-shift SECTION COVER and final
+determinant curve/exception assembly remain UNPROVED. Canonical
+T1.7 retains ONLY its prior P3 input in degrees>2 at the original
+THREE families and caps. Coverage stays 163 proved, 2 conditional,
+2 in_progress out of 167; all 73 main results proved. No Palomar registration.
+
+Historical checkpoint P1-MATH-0656: the ORIGINAL integer-source
 global determinant auxiliary equation is INTERNAL, uniformly before
 all source/model data, at degree exponent 1/sqrt(2^k*D^2)+epsilon,
 under the EXPLICIT branch-shift condition |b|<=2*H^2. The literal
@@ -23357,3 +23368,16 @@ The proof assembles the original height-controlled interpolation equation, the i
 The actual curve/exception cover assembly and removal of the quadratic branch-height condition remain unfinished. The proposed large-shift section argument is not claimed here. This source-specific theorem is not the unrestricted P3 auxiliary theorem for arbitrary surfaces or rational source coefficients. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families/caps. Coverage remains 163 proved, 2 conditional, 2 in_progress out of 167; all 73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Work stays on Ubuntu with about 54.8 GiB available and no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17811 jobs); direct axiom audit passed for 17579 declarations using only propext, Classical.choice and Quot.sound; all 17538 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.79 GiB.
+
+
+## Every normalized integer source point satisfies the literal affine integer radical equations
+
+NormalizedGradedPoint constructs the actual evaluation of a degree-one affine chart from any graded ring evaluation sending its distinguished homogeneous coordinate to 1. It factors the literal quotient by b-1 and proves compatibility with every dehomogenized element. No extension of a point to an unspecified algebraic closure is assumed.
+
+SourceNativeIntegerPoint applies this construction to the actual source Veronese chart and its proved equivalence with the affine split-radical algebra. The chosen normalizer is exactly the Z^D source coordinate. Each literal affine coordinate is the chosen X_j*Z^(D-1) integer embedding coordinate, and each radical is exactly its own chosen integer embedding coordinate. Evaluation on every bivariate base polynomial agrees with evaluation at these recovered literal coordinates. EVERY normalized integer point of the actual chosen-embedding ideal therefore satisfies the rational radical equations; with integer source coefficients it satisfies the literal INTEGER equations w_i^2=d_i*prod(x+a)*prod(y+b). No assumption that the point was originally constructed as a lift is needed. Each actual source radical is also proved nonzero using its affine tower basis.
+
+IntegerBranchShiftHeight proves that if |x|,|w|<=H, H>=1, w!=0 and x+a divides w^2, then |a|<=2*H^2. Equivalently, a larger shift forces w=0. This is an exact integer-divisibility bound. Three modules add thirteen theorems and two definitions.
+
+These point and height facts prepare the missing large-shift section argument. The actual section cover, source-specific determinant curve/exception assembly and unrestricted-in-height integer-source cover are not yet asserted. The already proved source-specific auxiliary equation still states its explicit |b|<=2*H^2 premise. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families/caps. Coverage remains 163 proved, 2 conditional, 2 in_progress out of 167; all 73 main results proved. T19.17 and both false-original scopes are unchanged. Original source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Ubuntu retains about 54.8 GiB and no dependency download was needed; only the one required existing Mathlib rational-homomorphism module was built locally. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17819 jobs); direct axiom audit passed for 17592 declarations using only propext, Classical.choice and Quot.sound; all 17553 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.77 GiB.

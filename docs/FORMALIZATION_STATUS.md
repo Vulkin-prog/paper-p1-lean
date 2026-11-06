@@ -1,6 +1,17 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0656: the ORIGINAL integer-source
+Current checkpoint P1-MATH-0657: EVERY normalized integer point
+of the ACTUAL source chosen-embedding kernel has literal integer
+affine/radical coordinates satisfying w_i^2=d_i*prod(x+a)*prod(y+b).
+The affine evaluation and coordinate identifications are INTERNAL.
+A nonzero bounded radical square forces each dividing branch shift
+to have |a|<=2*H^2. The actual large-shift SECTION COVER and final
+determinant curve/exception assembly remain UNPROVED. Canonical
+T1.7 retains ONLY its prior P3 input in degrees>2 at the original
+THREE families and caps. Coverage stays 163 proved, 2 conditional,
+2 in_progress out of 167; all 73 main results proved. No Palomar registration.
+
+Historical checkpoint P1-MATH-0656: the ORIGINAL integer-source
 global determinant auxiliary equation is INTERNAL, uniformly before
 all source/model data, at degree exponent 1/sqrt(2^k*D^2)+epsilon,
 under the EXPLICIT branch-shift condition |b|<=2*H^2. The literal
@@ -771,7 +782,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records654 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records655 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -890,7 +901,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **17579 audited theorem/lemma declarations**. This
+- The project currently has **17592 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -30253,3 +30264,16 @@ The proof assembles the original height-controlled interpolation equation, the i
 The actual curve/exception cover assembly and removal of the quadratic branch-height condition remain unfinished. The proposed large-shift section argument is not claimed here. This source-specific theorem is not the unrestricted P3 auxiliary theorem for arbitrary surfaces or rational source coefficients. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families/caps. Coverage remains 163 proved, 2 conditional, 2 in_progress out of 167; all 73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Work stays on Ubuntu with about 54.8 GiB available and no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17811 jobs); direct axiom audit passed for 17579 declarations using only propext, Classical.choice and Quot.sound; all 17538 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.79 GiB.
+
+
+## Every normalized integer source point satisfies the literal affine integer radical equations
+
+NormalizedGradedPoint constructs the actual evaluation of a degree-one affine chart from any graded ring evaluation sending its distinguished homogeneous coordinate to 1. It factors the literal quotient by b-1 and proves compatibility with every dehomogenized element. No extension of a point to an unspecified algebraic closure is assumed.
+
+SourceNativeIntegerPoint applies this construction to the actual source Veronese chart and its proved equivalence with the affine split-radical algebra. The chosen normalizer is exactly the Z^D source coordinate. Each literal affine coordinate is the chosen X_j*Z^(D-1) integer embedding coordinate, and each radical is exactly its own chosen integer embedding coordinate. Evaluation on every bivariate base polynomial agrees with evaluation at these recovered literal coordinates. EVERY normalized integer point of the actual chosen-embedding ideal therefore satisfies the rational radical equations; with integer source coefficients it satisfies the literal INTEGER equations w_i^2=d_i*prod(x+a)*prod(y+b). No assumption that the point was originally constructed as a lift is needed. Each actual source radical is also proved nonzero using its affine tower basis.
+
+IntegerBranchShiftHeight proves that if |x|,|w|<=H, H>=1, w!=0 and x+a divides w^2, then |a|<=2*H^2. Equivalently, a larger shift forces w=0. This is an exact integer-divisibility bound. Three modules add thirteen theorems and two definitions.
+
+These point and height facts prepare the missing large-shift section argument. The actual section cover, source-specific determinant curve/exception assembly and unrestricted-in-height integer-source cover are not yet asserted. The already proved source-specific auxiliary equation still states its explicit |b|<=2*H^2 premise. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families/caps. Coverage remains 163 proved, 2 conditional, 2 in_progress out of 167; all 73 main results proved. T19.17 and both false-original scopes are unchanged. Original source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Ubuntu retains about 54.8 GiB and no dependency download was needed; only the one required existing Mathlib rational-homomorphism module was built locally. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17819 jobs); direct axiom audit passed for 17592 declarations using only propext, Classical.choice and Quot.sound; all 17553 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.77 GiB.

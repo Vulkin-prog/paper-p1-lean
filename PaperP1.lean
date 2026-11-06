@@ -4564,3 +4564,6 @@ public import PaperP1.Arithmetic.BranchModelReductionCertificate
 public import PaperP1.Arithmetic.OriginalSourceFiniteFieldBudget
 public import PaperP1.Algebra.OriginalSourceModelHeight
 public import PaperP1.Arithmetic.OriginalSourceUniformAuxiliary
+public import PaperP1.Algebra.NormalizedGradedPoint
+public import PaperP1.Arithmetic.IntegerBranchShiftHeight
+public import PaperP1.Arithmetic.SourceNativeIntegerPoint

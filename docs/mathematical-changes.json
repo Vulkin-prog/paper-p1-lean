@@ -31215,6 +31215,47 @@
         "status": "not_integrated"
       },
       "validation_commit": "1303b01c287f35c65b232c31612e8e8214529ec7"
+    },
+    {
+      "id": "P1-MATH-0657",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The source integer-point interface did not recover the literal affine integer radical equations for arbitrary normalized chosen-embedding points, so the proposed large-shift section argument was not yet justified.",
+      "finding": "Every such point has literal integer affine and radical coordinates satisfying the exact source equations; a nonzero bounded radical square cannot be divisible by an integer branch factor whose shift exceeds 2*H^2.",
+      "proposed_revision": "Use the actual normalized-chart evaluation and integer divisibility bound to prove the large-shift section case, then combine it with the restricted determinant cover. Keep the explicit curve and point transport obligations.",
+      "impact": "Proves exhaustive normalized integer-point recovery and the exact branch-height obstruction. The full integer-source cover and final original-family theorem remain unfinished.",
+      "evidence": [
+        "PaperP1.NormalizedGradedPoint.evaluation_dehomogenization",
+        "PaperP1.IntegerBranchShiftHeight.shift_bound",
+        "PaperP1.IntegerBranchShiftHeight.large_shift_forces_zero",
+        "PaperP1.SourceNativeIntegerPoint.generator_normalizer",
+        "PaperP1.SourceNativeIntegerPoint.evaluation_specialization",
+        "PaperP1.SourceNativeIntegerPoint.native_specialization_variables",
+        "PaperP1.SourceNativeIntegerPoint.specialization_affine_generator",
+        "PaperP1.SourceNativeIntegerPoint.evaluation_affine",
+        "PaperP1.SourceNativeIntegerPoint.evaluation_radical",
+        "PaperP1.SourceNativeIntegerPoint.evaluation_base",
+        "PaperP1.SourceNativeIntegerPoint.rational_root_equation",
+        "PaperP1.SourceNativeIntegerPoint.integer_root_equation",
+        "PaperP1.SourceNativeIntegerPoint.radical_ne_zero",
+        "PaperP1.NormalizedGradedPoint.evaluation",
+        "PaperP1.SourceNativeIntegerPoint.evaluation"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17819 jobs); direct axiom audit passed for 17592 declarations using only propext, Classical.choice and Quot.sound; all 17553 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.77 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

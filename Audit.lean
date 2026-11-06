@@ -2077,6 +2077,7 @@ import PaperP1
 #print axioms PaperP1.NonzeroScalarPolynomial.dvd_scalar_right
 #print axioms PaperP1.NonzeroScalarPolynomial.scalar_dvd
 #print axioms PaperP1.NonzeroScalarPolynomial.irreducible_scalar
+#print axioms PaperP1.NormalizedGradedPoint.evaluation_dehomogenization
 #print axioms PaperP1.NormalizedP3MonomialHeight.degree_split
 #print axioms PaperP1.NormalizedP3MonomialHeight.monomial_bound
 #print axioms PaperP1.NormalizedP3MonomialHeight.determinant_bound
@@ -5945,6 +5946,8 @@ import PaperP1
 #print axioms PaperP1.InitialDyadicSourceBox.normalized_population
 #print axioms PaperP1.InitialDyadicSourceBox.normalized_barrier
 #print axioms PaperP1.InjectivePhysicalRelationRegularization.uniform_subspace
+#print axioms PaperP1.IntegerBranchShiftHeight.shift_bound
+#print axioms PaperP1.IntegerBranchShiftHeight.large_shift_forces_zero
 #print axioms PaperP1.IntegerCurveFieldEquiv.mappedIdeal_eq
 #print axioms PaperP1.IntegerCurveFieldEquiv.denominators_disjoint
 #print axioms PaperP1.IntegerCurveFieldEquiv.equiv_specialize
@@ -7816,6 +7819,16 @@ import PaperP1
 #print axioms PaperP1.SourceLinearFibreBounds.second_coefficient
 #print axioms PaperP1.SourceLinearFibreBounds.weighted_height
 #print axioms PaperP1.SourceLinearFibreBounds.coefficient_product
+#print axioms PaperP1.SourceNativeIntegerPoint.generator_normalizer
+#print axioms PaperP1.SourceNativeIntegerPoint.evaluation_specialization
+#print axioms PaperP1.SourceNativeIntegerPoint.native_specialization_variables
+#print axioms PaperP1.SourceNativeIntegerPoint.specialization_affine_generator
+#print axioms PaperP1.SourceNativeIntegerPoint.evaluation_affine
+#print axioms PaperP1.SourceNativeIntegerPoint.evaluation_radical
+#print axioms PaperP1.SourceNativeIntegerPoint.evaluation_base
+#print axioms PaperP1.SourceNativeIntegerPoint.rational_root_equation
+#print axioms PaperP1.SourceNativeIntegerPoint.integer_root_equation
+#print axioms PaperP1.SourceNativeIntegerPoint.radical_ne_zero
 #print axioms PaperP1.SourceOrdinaryCoverPower.sqrt_degree
 #print axioms PaperP1.SourceOrdinaryCoverPower.height_power
 #print axioms PaperP1.SourcePairKernelComparison.local_rank_identity
