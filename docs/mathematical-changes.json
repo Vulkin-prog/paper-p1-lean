@@ -40606,6 +40606,34 @@
         "status": "not_integrated"
       },
       "validation_commit": "8262a8120929e71553fb4137024503f6f6b31c72"
+    },
+    {
+      "id": "P1-MATH-0936",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The actual final large-frequency set is a union over prime blocks; a per-block moment estimate alone does not bound its cardinality.",
+      "finding": "Two theorems bound the actual number of narrow blocks by (H+1)*log N and the actual union of large samples by (log N)^(200H+2). The conditions are explicit: all primes<=N, fixed H>=4, actual anchors>=H and anchor^H>=N, unit-separated samples at height T<=N, the literal threshold 1/(log N)^100, and a fixed numerical lower bound on log N. The finite union, each filtered frequency sample and every cardinality loss are retained.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "The actual union of fixed-width large prime-block samples has a logarithmic-power cardinality bound. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.FixedWidthLargeFrequencyCardinality.index_card_bound",
+        "PaperP1.FixedWidthLargeFrequencyCardinality.all_blocks_bound"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18439 jobs); direct axiom audit passed for 19113 declarations using only propext, Classical.choice and Quot.sound; all 19398 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.81 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
