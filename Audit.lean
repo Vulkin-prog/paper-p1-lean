@@ -4447,6 +4447,8 @@ import PaperP1
 #print axioms PaperP1.ActivePhysicalPrimeGroups.kernel_le_incident_product
 #print axioms PaperP1.ActivePhysicalPrimeGroups.badPositions_card
 #print axioms PaperP1.ActivePhysicalPrimeGroups.kernel_cap_away_from_bad
+#print axioms PaperP1.ActualAffineProjectionPointCount.cardinality_le
+#print axioms PaperP1.ActualAffineProjectionPointCount.uniform_upper_bound
 #print axioms PaperP1.ActualDyadicInterior.source_parameter_bounds
 #print axioms PaperP1.ActualDyadicInterior.parameter_large
 #print axioms PaperP1.ActualDyadicInterior.ratio_interior

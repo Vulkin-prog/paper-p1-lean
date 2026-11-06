@@ -30912,6 +30912,34 @@
         "status": "not_integrated"
       },
       "validation_commit": "4b9f249eb11460ffdc658e49f34c693617c001af"
+    },
+    {
+      "id": "P1-MATH-0649",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The actual source-specific projected-image estimate still used an explicit derivative-conductor and image-generation premise.",
+      "finding": "The actual image has at most source count plus 2*d^3*p points, with conductor and image generation supplied internally. A cutoff before all primes, coefficients, bounded supports, source elements and polynomials gives the uniform (1+eta)*p squared bound under literal monic full-degree irreducible equation conditions.",
+      "proposed_revision": "Apply this proved actual-image estimate after establishing exact hypersurface-point identification and the original integer model conditions with an effective prime budget. Do not replace the unrestricted P3 surface input by this restricted result.",
+      "impact": "Discharges the actual source-specific affine image point bound with its structural conductor proved. Original integer-model normalization, hypersurface-point alignment and effective original-family cover assembly remain unfinished; canonical T1.7 is unchanged.",
+      "evidence": [
+        "PaperP1.ActualAffineProjectionPointCount.cardinality_le",
+        "PaperP1.ActualAffineProjectionPointCount.uniform_upper_bound"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17785 jobs); direct axiom audit passed for 17513 declarations using only propext, Classical.choice and Quot.sound; all 17453 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.90 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
