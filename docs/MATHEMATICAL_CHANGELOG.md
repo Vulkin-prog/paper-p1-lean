@@ -1,6 +1,15 @@
 # Mathematical corrections and improvements
 
-Current checkpoint P1-MATH-0926: The actual smoothed Selberg kernel is
+Current checkpoint P1-MATH-0927: Actual Gaussian frequency rows have a
+uniform bound for arbitrary unit-separated samples. The triple-large
+prime frequency contribution, the central-frequency mean comparison and
+complete logarithmic short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 52.98 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0926: The actual smoothed Selberg kernel is
 an absolutely convergent series with nonnegative integer weights. The
 triple-large prime frequency contribution, the central-frequency mean
 comparison and complete logarithmic short-average concentration remain
@@ -3103,7 +3112,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**924 mathematical improvements and two statement-scope corrections are confirmed.**
+**925 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -34527,3 +34536,12 @@ Nine theorems and two definitions prove an exact injective positive-multiple rei
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.02 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18419 jobs); direct axiom audit passed for 19066 declarations using only propext, Classical.choice and Quot.sound; all 19338 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.99 GiB.
+
+
+## Actual Gaussian frequency rows have a uniform bound for arbitrary unit-separated samples
+
+Four theorems and one definition prove a positive explicit constant L=1+sqrt(pi/(1/4)), an actual one-sided Gaussian sum bound and a uniform Gaussian row bound for EVERY finite family of real frequencies separated by at least one. The actual norm-weighted double quadratic Gaussian sum is consequently <=L*sum_i norm(a_i)^2. The proof uses injective floor reindexing of each side and the proved Gaussian tail, without assuming ordered indices or a bound on sample cardinality.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.98 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18421 jobs); direct axiom audit passed for 19070 declarations using only propext, Classical.choice and Quot.sound; all 19343 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.98 GiB.

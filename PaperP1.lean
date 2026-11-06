@@ -4866,3 +4866,4 @@ public import PaperP1.Analysis.PrimeSelbergCoefficients
 public import PaperP1.Analysis.DilatedFarLognormalKernel
 public import PaperP1.Analysis.LognormalSelbergKernel
 public import PaperP1.Analysis.PositiveSelbergSeries
+public import PaperP1.Analysis.SeparatedGaussianBudget
