@@ -4701,3 +4701,4 @@ public import PaperP1.Analysis.FrequencyBudgetMonotone
 public import PaperP1.Analysis.CommonUniformTwistedSum
 public import PaperP1.Analysis.CommonUniformWeightedSum
 public import PaperP1.Analysis.FiniteAbelNorm
+public import PaperP1.Analysis.DyadicPartialSummation

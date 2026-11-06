@@ -35094,6 +35094,35 @@
         "status": "not_integrated"
       },
       "validation_commit": "a66f44f2e6d73fd8644105bdb8cc2d59b5892a9a"
+    },
+    {
+      "id": "P1-MATH-0762",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "Ignoring the lower summatory endpoint or proving only a bound for the completed dyadic block does not give the uniform interval estimate needed here.",
+      "finding": "The shifted partial sum equals the difference of the actual summatory functions at N+k-1 and N-1. For every N<=M<=2*N, N>=1, simultaneous summatory bounds ||sum(1..X,a(n))||<=epsilon*X for N-1<=X<=2*N imply ||sum(n in [N,M),a(n)/n)||<=4*epsilon. The exact lower endpoint N-1 and empty interval are included. Three theorems prove this actual interval bound and its full block specialization.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Actual partial summation on every interval inside a dyadic block. The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.DyadicPartialSummation.block_partialSum",
+        "PaperP1.DyadicPartialSummation.weighted_interval_bound",
+        "PaperP1.DyadicPartialSummation.weighted_block_bound"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18091 jobs); direct axiom audit passed for 18432 declarations using only propext, Classical.choice and Quot.sound; all 18585 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.81 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

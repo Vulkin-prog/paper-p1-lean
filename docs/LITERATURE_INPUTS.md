@@ -1,6 +1,14 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0761: Exact finite Abel summation and
+Current checkpoint P1-MATH-0762: Actual partial summation on every
+interval inside a dyadic block. The actual Ramare main-term frequency
+bounds and complete logarithmic short-average concentration remain
+unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164
+proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources,
+false-scope corrections, compiler and axioms unchanged. About 52.9 GiB
+free on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0761: Exact finite Abel summation and
 reciprocal norm bound. The actual Ramare main-term frequency bounds and
 complete logarithmic short-average concentration remain unproved. T19.17
 conditional; original T1.7 unconditional. Coverage: 164 proved, 1
@@ -32027,6 +32035,12 @@ The literal finite partial sum has an exact Abel identity with its terminal valu
 
 The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.
 
+## Internal actual partial summation on every interval inside a dyadic block
+
+The shifted partial sum equals the difference of the actual summatory functions at N+k-1 and N-1. For every N<=M<=2*N, N>=1, simultaneous summatory bounds ||sum(1..X,a(n))||<=epsilon*X for N-1<=X<=2*N imply ||sum(n in [N,M),a(n)/n)||<=4*epsilon. The exact lower endpoint N-1 and empty interval are included. Three theorems prove this actual interval bound and its full block specialization.
+
+The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -34834,3 +34848,14 @@ The literal finite partial sum has an exact Abel identity with its terminal valu
 The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18089 jobs); direct axiom audit passed for 18429 declarations using only propext, Classical.choice and Quot.sound; all 18582 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.83 GiB.
+
+
+## Actual partial summation on every interval inside a dyadic block
+
+Stable ID: p1:internal:dyadic-partial-summation. Actual partial summation on every interval inside a dyadic block. The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.
+
+The shifted partial sum equals the difference of the actual summatory functions at N+k-1 and N-1. For every N<=M<=2*N, N>=1, simultaneous summatory bounds ||sum(1..X,a(n))||<=epsilon*X for N-1<=X<=2*N imply ||sum(n in [N,M),a(n)/n)||<=4*epsilon. The exact lower endpoint N-1 and empty interval are included. Three theorems prove this actual interval bound and its full block specialization.
+
+The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18091 jobs); direct axiom audit passed for 18432 declarations using only propext, Classical.choice and Quot.sound; all 18585 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.81 GiB.

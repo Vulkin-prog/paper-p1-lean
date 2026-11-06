@@ -3712,6 +3712,9 @@ import PaperP1
 #print axioms PaperP1.DyadicParameterBucketCover.cluster_margin
 #print axioms PaperP1.DyadicParameterBucketCover.cluster_distance
 #print axioms PaperP1.DyadicParameterBucketCover.index_card
+#print axioms PaperP1.DyadicPartialSummation.block_partialSum
+#print axioms PaperP1.DyadicPartialSummation.weighted_interval_bound
+#print axioms PaperP1.DyadicPartialSummation.weighted_block_bound
 #print axioms PaperP1.DyadicReciprocalScaleBounds.tendsto_nu_div_height
 #print axioms PaperP1.DyadicReciprocalScaleBounds.clog_bound
 #print axioms PaperP1.DyadicReciprocalScaleBounds.logarithmic_prefactor
