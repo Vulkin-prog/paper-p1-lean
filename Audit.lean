@@ -4252,6 +4252,12 @@ import PaperP1
 #print axioms PaperP1.IteratedGraphDerivative.numerator_quotient_hasDerivAt
 #print axioms PaperP1.IteratedGraphDerivative.iterated_evaluation
 #print axioms PaperP1.IteratedGraphDerivative.positive_order
+#print axioms PaperP1.IteratedLogarithmicIntegral.continuousOn_function
+#print axioms PaperP1.IteratedLogarithmicIntegral.continuousOn_inverse_derivative
+#print axioms PaperP1.IteratedLogarithmicIntegral.continuousOn_amplitudeDeriv
+#print axioms PaperP1.IteratedLogarithmicIntegral.integral_identity
+#print axioms PaperP1.IteratedLogarithmicIntegral.integral_norm_bound
+#print axioms PaperP1.IteratedLogarithmicIntegral.explicit_integral_bound
 #print axioms PaperP1.IteratedLogarithmicPhase.function_norm
 #print axioms PaperP1.IteratedLogarithmicPhase.function_nil
 #print axioms PaperP1.IteratedLogarithmicPhase.function_cons
