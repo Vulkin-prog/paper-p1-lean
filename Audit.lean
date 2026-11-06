@@ -3467,6 +3467,7 @@ import PaperP1
 #print axioms PaperP1.P3CanonicalDivisorLowerBound.exponent_lower_bound
 #print axioms PaperP1.P3CanonicalDivisorLowerBound.log_divisor
 #print axioms PaperP1.P3CanonicalDivisorLowerBound.log_divisor_lower_bound
+#print axioms PaperP1.P3CoefficientLogBudget.gradient_log_bound
 #print axioms PaperP1.P3GlobalDeterminantScaleLimits.sqrt_size_ratio
 #print axioms PaperP1.P3GlobalDeterminantScaleLimits.main_scale_ratio
 #print axioms PaperP1.P3GlobalDeterminantScaleLimits.constant_error_ratio
@@ -3475,6 +3476,9 @@ import PaperP1
 #print axioms PaperP1.P3OptimizedSurfaceDivisor.divisor_ratio
 #print axioms PaperP1.P3OptimizedSurfaceDivisor.weight_divisor_ratio
 #print axioms PaperP1.P3OptimizedSurfaceDivisor.exists_parameters
+#print axioms PaperP1.P3PrimeMassProxy.value_ratio
+#print axioms PaperP1.P3PrimeMassProxy.exists_gap_parameters
+#print axioms PaperP1.P3PrimeMassProxyComparison.value_le_lowerBound
 #print axioms PaperP1.P3SmoothGlobalDivisorEstimate.log_divisor_lower_bound
 #print axioms PaperP1.P3SmoothGlobalDivisorEstimate.coarse_log_divisor_lower_bound
 #print axioms PaperP1.P3StandardFactorialLimits.size_le_cube
@@ -4411,6 +4415,11 @@ import PaperP1
 #print axioms PaperP1.CertificatePairs.pair_data
 #print axioms PaperP1.CertificatePairs.cardinal_bound
 #print axioms PaperP1.CertificatePairs.outgoing_iff_incoming
+#print axioms PaperP1.CertificatePrimeWindow.mem_primes
+#print axioms PaperP1.CertificatePrimeWindow.mass_split
+#print axioms PaperP1.CertificatePrimeWindow.mass_lower_bound
+#print axioms PaperP1.CertificatePrimeWindow.bounded_mass_lower_bound
+#print axioms PaperP1.CertificatePrimeWindow.theta_upper_bound
 #print axioms PaperP1.Channels.fst_injOn_channelCells
 #print axioms PaperP1.Channels.snd_injOn_channelCells
 #print axioms PaperP1.Channels.channelFirstCoordinates_subset_modClass

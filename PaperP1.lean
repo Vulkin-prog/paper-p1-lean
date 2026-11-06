@@ -4373,3 +4373,7 @@ public import PaperP1.Analysis.P3GlobalDeterminantScaleLimits
 public import PaperP1.Analysis.P3StandardFactorialLimits
 public import PaperP1.Analysis.SurfacePrimeMassLimits
 public import PaperP1.Arithmetic.SurfaceDeterminantPrimeWindow
+public import PaperP1.Analysis.P3CoefficientLogBudget
+public import PaperP1.Analysis.P3PrimeMassProxy
+public import PaperP1.Analysis.P3PrimeMassProxyComparison
+public import PaperP1.Arithmetic.CertificatePrimeWindow

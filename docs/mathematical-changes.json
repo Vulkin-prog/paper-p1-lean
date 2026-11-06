@@ -28804,6 +28804,44 @@
         "status": "not_integrated"
       },
       "validation_commit": "9c378a3d7d0947b64966d438a1fd2b0bb1e4d7da"
+    },
+    {
+      "id": "P1-MATH-0605",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The global determinant needs a strict parameter choice before heights and coefficients, while primes dividing a coefficient-controlled exceptional certificate must be removed and paid for explicitly.",
+      "finding": "The literal certificate-filtered window has an explicit logarithmic loss. Under gamma<sqrt(d/D), a fixed prime cutoff and minimal degree give an actual strict factorial/weight comparison; polynomial coefficient and certificate heights make the comparison uniform.",
+      "proposed_revision": "Choose the prime threshold and minimal degree before height and coefficients, retain the actual exceptional certificate and its weighted cost, and use the proved gap with log(H)<=gamma*log(e) when selecting the integer degree.",
+      "impact": "Removes the supplied strict parameter-gap and certificate-window mass assumptions, while leaving the independent geometric certificate and sharp finite-field budget explicitly unresolved.",
+      "evidence": [
+        "PaperP1.P3CoefficientLogBudget.gradient_log_bound",
+        "PaperP1.P3PrimeMassProxy.value_ratio",
+        "PaperP1.P3PrimeMassProxy.exists_gap_parameters",
+        "PaperP1.P3PrimeMassProxyComparison.value_le_lowerBound",
+        "PaperP1.CertificatePrimeWindow.mem_primes",
+        "PaperP1.CertificatePrimeWindow.mass_split",
+        "PaperP1.CertificatePrimeWindow.mass_lower_bound",
+        "PaperP1.CertificatePrimeWindow.bounded_mass_lower_bound",
+        "PaperP1.CertificatePrimeWindow.theta_upper_bound",
+        "PaperP1.P3PrimeMassProxy.value",
+        "PaperP1.CertificatePrimeWindow.primes",
+        "PaperP1.CertificatePrimeWindow.mass"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17409 jobs); direct axiom audit passed for 16800 declarations using only propext, Classical.choice and Quot.sound; all 16543 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.08 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
