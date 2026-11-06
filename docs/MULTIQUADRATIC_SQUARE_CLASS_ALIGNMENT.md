@@ -1,6 +1,15 @@
 # Multiquadratic split radicands: exact square-class independence
 
-Current checkpoint P1-MATH-0716: The actual complex full-series Gaussian
+Current checkpoint P1-MATH-0717: Every actual retained complex prime
+band has the full-budget bound with the same explicit combinedError(X);
+the prime cutoff implies the needed frequency separation. The actual
+geometric band partition, global Halasz assembly and final logarithmic
+short-average theorem remain unfinished. T19.17 conditional; original
+T1.7 complete. Coverage: 164 proved, 1 conditional, 2 in_progress /167;
+all 73 main proved. False scopes/corrections unchanged. No Palomar
+registration.
+
+Historical checkpoint P1-MATH-0716: The actual complex full-series Gaussian
 frequency integral has the same uniform finite-height truncation and
 explicit scaled tail. The actual geometric band partition, global Halasz
 assembly and final logarithmic short-average theorem remain unfinished.
@@ -24756,3 +24765,14 @@ The whole Gaussian integral is <=its actual unweighted integral at height log(X)
 The actual geometric band partition, global Halasz assembly and final logarithmic short-average theorem remain unfinished. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, sources, pinned Lean and axioms unchanged. About 53.8 GiB is free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17999 jobs); direct axiom audit passed for 18195 declarations using only propext, Classical.choice and Quot.sound; all 18299 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.63 GiB.
+
+
+## Actual complex prime-band bound with explicit total error and canonical prime cutoff
+
+The actual complex full-series band integral is controlled by the proved prime-factor Cauchy estimate and its literal full-series local-supremum budget. The quantitative Perron theorem and exact Gaussian truncation give one fixed threshold before all complete complex prime-bounded coefficients and actual prime bands: norm(triple)<=bandConstant/(2*pi)*X*sqrt(fullBudget)+combinedError(X).
+
+The actual condition p>floor(log(X)^20) implies p>=height(X)^2 by the literal natural floor bound. The final retained-band theorem applies to ANY actual subset of the canonical retained primes with U<=log(X/p)<=2U and U>=log(2). Four theorems retain the SAME explicit combined error for every band.
+
+The actual geometric band partition, global Halasz assembly and final logarithmic short-average theorem remain unfinished. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, sources, pinned Lean and axioms unchanged. About 53.8 GiB is free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18001 jobs); direct axiom audit passed for 18199 declarations using only propext, Classical.choice and Quot.sound; all 18303 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.61 GiB.

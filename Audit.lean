@@ -4389,6 +4389,10 @@ import PaperP1
 #print axioms PaperP1.QuadraticRelativeError.beta_at_interval_scale
 #print axioms PaperP1.QuadraticRelativeError.quadratic_center_bound
 #print axioms PaperP1.QuadraticRelativeError.relative_grid_error
+#print axioms PaperP1.QuantitativeEulerBand.band_integral_bound
+#print axioms PaperP1.QuantitativeEulerBand.quantitative_band_bound
+#print axioms PaperP1.QuantitativeEulerBand.height_sq_le_of_cutoff
+#print axioms PaperP1.QuantitativeEulerBand.retained_band_bound
 #print axioms PaperP1.QuantitativeTriplePerron.finite_bound_eventually
 #print axioms PaperP1.QuantitativeTriplePerron.full_series_bound_eventually
 #print axioms PaperP1.QuantitativeTriplePerron.real_full_euler_bound_eventually

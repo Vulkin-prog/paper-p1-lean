@@ -4656,3 +4656,4 @@ public import PaperP1.Analysis.QuantitativeTriplePerron
 public import PaperP1.Analysis.WeightedPerronError
 public import PaperP1.Analysis.ComplexEuler
 public import PaperP1.Analysis.ComplexEulerFrequencyTruncation
+public import PaperP1.Analysis.QuantitativeEulerBand
