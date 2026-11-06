@@ -5223,6 +5223,11 @@ import PaperP1
 #print axioms PaperP1.SmoothSaddleLoss.finite_loss_upper
 #print axioms PaperP1.SmoothSaddleLoss.normalized_majorant_limit
 #print axioms PaperP1.SmoothSaddleLoss.eventual_loss_bound
+#print axioms PaperP1.SpacedShiftDifferencing.shifts_card
+#print axioms PaperP1.SpacedShiftDifferencing.shifts_upper
+#print axioms PaperP1.SpacedShiftDifferencing.distance_lower
+#print axioms PaperP1.SpacedShiftDifferencing.differencing_bound
+#print axioms PaperP1.SpacedShiftDifferencing.short_span_bound
 #print axioms PaperP1.SparseGramEnvelope.sqrt_rpow
 #print axioms PaperP1.SparseGramEnvelope.square_identity
 #print axioms PaperP1.SparseGramEnvelope.decaying_log_power

@@ -37727,6 +37727,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "2dd13cdbfe8ba8bb234f0bbf8206835e47b1da0e"
+    },
+    {
+      "id": "P1-MATH-0847",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "Choosing spaced shifts is useful only if their actual minimum separation, endpoint span, cardinality and diagonal costs are verified.",
+      "finding": "Define the ACTUAL finite shift set {A*j:0<=j<K}. For A>0 it has EXACTLY K elements, every element is below A*K, and distinct shifts have integer distance AT LEAST A. An explicit actual correlation bound for A<=d<A*K therefore gives norm(sum a)^2<=(N+A*K)*(N/K+E), and <=2*N*(N/K+E) when A*K<=N. Five theorems and one shift-set definition prove all counts, gaps and actual differencing bounds. The needed analytic correlation estimate is retained explicitly.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Actual spaced shifts retain their minimum gap and their full differencing cost. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.SpacedShiftDifferencing.shifts_card",
+        "PaperP1.SpacedShiftDifferencing.shifts_upper",
+        "PaperP1.SpacedShiftDifferencing.distance_lower",
+        "PaperP1.SpacedShiftDifferencing.differencing_bound",
+        "PaperP1.SpacedShiftDifferencing.short_span_bound",
+        "PaperP1.SpacedShiftDifferencing.shifts"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18261 jobs); direct axiom audit passed for 18718 declarations using only propext, Classical.choice and Quot.sound; all 18926 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.28 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
