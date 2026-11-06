@@ -1,6 +1,16 @@
 # Mathematical corrections and improvements
 
-Current checkpoint P1-MATH-0933: The actual integer power sieve level
+Current checkpoint P1-MATH-0934: Actual prime Dirichlet polynomials have
+a uniform logarithmic operator gain on polynomial-height logarithmic-
+size samples. The triple-large prime frequency contribution, the
+central-frequency mean comparison and complete logarithmic short-average
+concentration remain unproved. T19.17 conditional; original T1.7
+unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167;
+all 73 main proved. Sources, false-scope corrections, compiler and
+axioms unchanged. About 52.87 GiB free on Ubuntu. No dependency download
+or Palomar registration.
+
+Historical checkpoint P1-MATH-0933: The actual integer power sieve level
 absorbs every fixed logarithmic sample-cardinality loss. The triple-
 large prime frequency contribution, the central-frequency mean
 comparison and complete logarithmic short-average concentration remain
@@ -3167,7 +3177,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**931 mathematical improvements and two statement-scope corrections are confirmed.**
+**932 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -34654,3 +34664,12 @@ Three theorems and two definitions choose the actual fixed eta_B=min(1/32,delta_
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.87 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18433 jobs); direct axiom audit passed for 19103 declarations using only propext, Classical.choice and Quot.sound; all 19385 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.86 GiB.
+
+
+## Actual prime Dirichlet polynomials have a uniform logarithmic operator gain on polynomial-height logarithmic-size samples
+
+Three theorems and one definition prove a positive explicit constant K_B and actual prime synthesis and sampled prime analysis bounds <=K_B*A/log(A) times coefficient energy. For fixed B>0 and fixed real C, ONE scale cutoff precedes ALL A, ALL unit-separated real frequency samples with pairwise differences<=A^B and cardinality<=log(A)^C, ALL finite prime sets contained in [A,2A], and ALL complex coefficients. The auxiliary integer sieve level and p>Z restriction are eliminated by proved rounded geometry. This is an actual weak prime Halasz estimate for the stated logarithmic-cardinality regime, derived from proved integer phase cancellation, exact lognormal Mellin identities and the actual Selberg sieve; no prime large-sieve or zero-free-region estimate is assumed.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.87 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18435 jobs); direct axiom audit passed for 19106 declarations using only propext, Classical.choice and Quot.sound; all 19389 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.85 GiB.

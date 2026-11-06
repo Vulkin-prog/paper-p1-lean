@@ -1,0 +1,7 @@
+# Actual prime Dirichlet polynomials have a uniform logarithmic operator gain on polynomial-height logarithmic-size samples
+
+Source: internal preparatory analytic route for companion T19.17. This is not a completed additional manuscript result.
+
+Three theorems and one definition prove a positive explicit constant K_B and actual prime synthesis and sampled prime analysis bounds <=K_B*A/log(A) times coefficient energy. For fixed B>0 and fixed real C, ONE scale cutoff precedes ALL A, ALL unit-separated real frequency samples with pairwise differences<=A^B and cardinality<=log(A)^C, ALL finite prime sets contained in [A,2A], and ALL complex coefficients. The auxiliary integer sieve level and p>Z restriction are eliminated by proved rounded geometry. This is an actual weak prime Halasz estimate for the stated logarithmic-cardinality regime, derived from proved integer phase cancellation, exact lognormal Mellin identities and the actual Selberg sieve; no prime large-sieve or zero-free-region estimate is assumed.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.87 GiB free on Ubuntu. No dependency download or Palomar registration.

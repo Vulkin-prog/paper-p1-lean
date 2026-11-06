@@ -4923,6 +4923,9 @@ import PaperP1
 #print axioms PaperP1.PrimeFactorCauchy.band_energy_product
 #print axioms PaperP1.PrimeFactorCauchy.bandConstant_pos
 #print axioms PaperP1.PrimeFactorCauchy.band_factor_integral_bound
+#print axioms PaperP1.PrimeHalaszLogarithmicSamples.constant_pos
+#print axioms PaperP1.PrimeHalaszLogarithmicSamples.uniform_synthesis
+#print axioms PaperP1.PrimeHalaszLogarithmicSamples.uniform_analysis
 #print axioms PaperP1.PrimeLogDiameter.constant_pos
 #print axioms PaperP1.PrimeLogDiameter.coefficient_nonneg
 #print axioms PaperP1.PrimeLogDiameter.interval_identity

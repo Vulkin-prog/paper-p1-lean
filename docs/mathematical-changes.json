@@ -40541,6 +40541,36 @@
         "status": "not_integrated"
       },
       "validation_commit": "640a00882c2facecba143927e17599f9f3207aff"
+    },
+    {
+      "id": "P1-MATH-0934",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The remaining triple-large route needs a genuine prime-frequency logarithmic gain, with the scale cutoff preceding all samples and coefficients; a general synthesis implication or an assumed kernel bound does not supply it.",
+      "finding": "Three theorems and one definition prove a positive explicit constant K_B and actual prime synthesis and sampled prime analysis bounds <=K_B*A/log(A) times coefficient energy. For fixed B>0 and fixed real C, ONE scale cutoff precedes ALL A, ALL unit-separated real frequency samples with pairwise differences<=A^B and cardinality<=log(A)^C, ALL finite prime sets contained in [A,2A], and ALL complex coefficients. The auxiliary integer sieve level and p>Z restriction are eliminated by proved rounded geometry. This is an actual weak prime Halasz estimate for the stated logarithmic-cardinality regime, derived from proved integer phase cancellation, exact lognormal Mellin identities and the actual Selberg sieve; no prime large-sieve or zero-free-region estimate is assumed.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Actual prime Dirichlet polynomials have a uniform logarithmic operator gain on polynomial-height logarithmic-size samples. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.PrimeHalaszLogarithmicSamples.constant_pos",
+        "PaperP1.PrimeHalaszLogarithmicSamples.uniform_synthesis",
+        "PaperP1.PrimeHalaszLogarithmicSamples.uniform_analysis",
+        "PaperP1.PrimeHalaszLogarithmicSamples.constant"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18435 jobs); direct axiom audit passed for 19106 declarations using only propext, Classical.choice and Quot.sound; all 19389 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.85 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

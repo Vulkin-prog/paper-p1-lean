@@ -4873,3 +4873,4 @@ public import PaperP1.Analysis.UniformSelbergKernelEnvelope
 public import PaperP1.Analysis.SelbergPrimeOperator
 public import PaperP1.Analysis.PowerSelbergLevel
 public import PaperP1.Analysis.SelbergLogarithmicBudget
+public import PaperP1.Analysis.PrimeHalaszLogarithmicSamples
