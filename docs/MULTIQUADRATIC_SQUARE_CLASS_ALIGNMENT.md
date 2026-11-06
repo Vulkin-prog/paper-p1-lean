@@ -1,6 +1,16 @@
 # Multiquadratic split radicands: exact square-class independence
 
-Current checkpoint P1-MATH-0684: the ACTUAL first prime convolution
+Current checkpoint P1-MATH-0685: the ACTUAL triple prime expansion
+retains real log(X/p), integer quotients and repeated primes.
+Its actual difference has a proved bound by the explicit finite
+reciprocalWeight; real denominator errors are internal.
+The total log-log error and discarded prime ranges, Perron,
+full dyadic and short-average transfers remain UNPROVED.
+T19.17 conditional; original T1.7 complete. Coverage: 164 proved,
+1 conditional, 2 in_progress /167; all 73 main proved. False scopes
+and checked corrections unchanged. No Palomar registration.
+
+Historical checkpoint P1-MATH-0684: the ACTUAL first prime convolution
 is reconstructed with error <=(1+primePowerTotal)*X/log X for
 COMPLETELY multiplicative bounded complex functions. All quotient
 floors and logarithmic/prime-power errors are internal.
@@ -24048,3 +24058,18 @@ Consequently the literal prime reconstruction has error at most (1+primePowerTot
 This closes the first prime-convolution reconstruction for COMPLETELY multiplicative functions, which includes the actual ordinary-smooth indicator. It is not a claim for every merely multiplicative function. Prime truncations, the second/triple convolution, actual Perron estimate, full dyadic Halasz transfer and logarithmic short-average assembly remain unfinished. The full prime-power weighted mean is also not claimed. T19.17 retains its explicit analytic input; original complete T1.7 remains unconditional. Coverage stays 164 proved, 1 conditional, 2 in_progress out of 167; all 73 main results proved. Original false scopes and checked corrections are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and allowed axioms are unchanged. Ubuntu retains about 54.2 GiB; no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17935 jobs); direct axiom audit passed for 17910 declarations using only propext, Classical.choice and Quot.sound; all 17936 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.21 GiB.
+
+
+## Actual triple prime convolution with real quotient denominators
+
+RealTripleConvolution extends the proved logarithmic deficit to EVERY real R>=X>=1: its actual norm with log R is at most R. The proof explicitly bounds X*(log R-log X)<=R-X. It gives the actual prime reconstruction with real denominator log R and error <=(1+primePowerTotal)*R/log R for R>1. No floor-rounding error is suppressed.
+
+For every positive p with 2*p<=X this applies to the ACTUAL integer summatory function at floor(X/p), but the REAL denominator is exactly log((X:Real)/(p:Real)). The actual quotient reconstruction error is <=(1+primePowerTotal)*(X/p)/log(X/p), retaining that exact real quotient and actual integer summation endpoint.
+
+The module defines the literal restricted first convolution, the literal triple convolution and reciprocalWeight(X,P)=sum_{p in P}log(p)/(p*log(X/p)). For ANY finite actual prime set P satisfying 2*p<=X, and any bounded completely multiplicative complex f, it proves the ACTUAL norm of the restricted-minus-triple difference is <=(1+primePowerTotal)*X*reciprocalWeight(X,P). The weight is an explicit finite sum, not an assumed error estimate.
+
+The triple expansion is EXACTLY the actual sum over p in P, actual primes q<=floor(X/p), and positive n<=floor(X/(p*q)), with coefficient log(p)*log(q)/log(X/p) and f(p)*f(q)*f(n). Quotient nesting is eliminated by the proved integer division identity. Repeated primes p=q remain included. One module adds five theorems and three definitions.
+
+This closes the exact second/triple convolution and all real-versus-integer denominator control. A logarithmic-logarithmic bound for the explicit reciprocalWeight, the discarded small/large prime contributions and the resulting total triple approximation still need proof. Perron, full dyadic Halasz and logarithmic short-average assembly remain unfinished. Complete multiplicativity remains explicit; the general merely multiplicative extension is not claimed. T19.17 remains conditional and original complete T1.7 unconditional. Coverage remains 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes and checked corrections, source hashes, Lean v4.36.0-rc2 and allowed axioms are unchanged. Ubuntu has about 54.2 GiB free; no dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17937 jobs); direct axiom audit passed for 17915 declarations using only propext, Classical.choice and Quot.sound; all 17944 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.19 GiB.

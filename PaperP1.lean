@@ -4624,3 +4624,4 @@ public import PaperP1.Analysis.PrimeLogFrequencyRows
 public import PaperP1.Analysis.WeightedGaussianKernel
 public import PaperP1.Analysis.WeightedPrimeMean
 public import PaperP1.Arithmetic.MultiplicativeLogConvolution
+public import PaperP1.Arithmetic.RealTripleConvolution

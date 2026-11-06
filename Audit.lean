@@ -7627,6 +7627,11 @@ import PaperP1
 #print axioms PaperP1.RawWindowExtension.rank_extension
 #print axioms PaperP1.RawWindowExtension.weight_extension
 #print axioms PaperP1.RawWindowExtension.finite_extension
+#print axioms PaperP1.RealTripleConvolution.logarithmic_deficit_real
+#print axioms PaperP1.RealTripleConvolution.real_denominator_reconstruction
+#print axioms PaperP1.RealTripleConvolution.quotient_reconstruction
+#print axioms PaperP1.RealTripleConvolution.triple_error
+#print axioms PaperP1.RealTripleConvolution.triple_expansion
 #print axioms PaperP1.ReceivedPrimeCertificate.primeFactors_product_subset
 #print axioms PaperP1.ReceivedPrimeCertificate.edge_of_received_product
 #print axioms PaperP1.ReciprocalDivisibilitySieve.density_mul

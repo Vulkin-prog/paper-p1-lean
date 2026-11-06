@@ -1,0 +1,13 @@
+# Actual triple prime convolution with real quotient denominators
+
+Source: companion T19.17 and Section 3, equation (3.1), of the cited short Halasz route. This module keeps complete multiplicativity explicit and proves the real quotient denominators and actual finite triple indices. It does not assert the final total error, Perron estimate or short-average theorem.
+
+RealTripleConvolution extends the proved logarithmic deficit to EVERY real R>=X>=1: its actual norm with log R is at most R. The proof explicitly bounds X*(log R-log X)<=R-X. It gives the actual prime reconstruction with real denominator log R and error <=(1+primePowerTotal)*R/log R for R>1. No floor-rounding error is suppressed.
+
+For every positive p with 2*p<=X this applies to the ACTUAL integer summatory function at floor(X/p), but the REAL denominator is exactly log((X:Real)/(p:Real)). The actual quotient reconstruction error is <=(1+primePowerTotal)*(X/p)/log(X/p), retaining that exact real quotient and actual integer summation endpoint.
+
+The module defines the literal restricted first convolution, the literal triple convolution and reciprocalWeight(X,P)=sum_{p in P}log(p)/(p*log(X/p)). For ANY finite actual prime set P satisfying 2*p<=X, and any bounded completely multiplicative complex f, it proves the ACTUAL norm of the restricted-minus-triple difference is <=(1+primePowerTotal)*X*reciprocalWeight(X,P). The weight is an explicit finite sum, not an assumed error estimate.
+
+The triple expansion is EXACTLY the actual sum over p in P, actual primes q<=floor(X/p), and positive n<=floor(X/(p*q)), with coefficient log(p)*log(q)/log(X/p) and f(p)*f(q)*f(n). Quotient nesting is eliminated by the proved integer division identity. Repeated primes p=q remain included. One module adds five theorems and three definitions.
+
+This closes the exact second/triple convolution and all real-versus-integer denominator control. A logarithmic-logarithmic bound for the explicit reciprocalWeight, the discarded small/large prime contributions and the resulting total triple approximation still need proof. Perron, full dyadic Halasz and logarithmic short-average assembly remain unfinished. Complete multiplicativity remains explicit; the general merely multiplicative extension is not claimed. T19.17 remains conditional and original complete T1.7 unconditional. Coverage remains 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes and checked corrections, source hashes, Lean v4.36.0-rc2 and allowed axioms are unchanged. Ubuntu has about 54.2 GiB free; no dependency download or Palomar registration.

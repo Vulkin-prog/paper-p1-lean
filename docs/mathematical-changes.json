@@ -32369,6 +32369,40 @@
         "status": "not_integrated"
       },
       "validation_commit": "0bed31f294aa81e1a3d936ceb5cc630eea700ff1"
+    },
+    {
+      "id": "P1-MATH-0685",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "Replacing the actual integer quotient floor(X/p) by the real quotient inside logarithmic denominators needs a proved error bound. A formal second convolution also needs every nested quotient and repeated prime retained.",
+      "finding": "The real logarithmic deficit and quotient reconstruction are internal. The literal triple expansion and its actual difference are proved, with the explicit finite reciprocalWeight retaining every real denominator and integer endpoint.",
+      "proposed_revision": "Use the exact real-denominator triple formula, then bound its explicit reciprocalWeight and discarded prime ranges before asserting the total triple approximation or applying Perron.",
+      "impact": "Closes real denominator control and the exact triple expansion. The total logarithmic-logarithmic error and Perron/T19.17 assembly remain unfinished.",
+      "evidence": [
+        "PaperP1.RealTripleConvolution.logarithmic_deficit_real",
+        "PaperP1.RealTripleConvolution.real_denominator_reconstruction",
+        "PaperP1.RealTripleConvolution.quotient_reconstruction",
+        "PaperP1.RealTripleConvolution.triple_error",
+        "PaperP1.RealTripleConvolution.triple_expansion",
+        "PaperP1.RealTripleConvolution.restricted",
+        "PaperP1.RealTripleConvolution.triple",
+        "PaperP1.RealTripleConvolution.reciprocalWeight"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17937 jobs); direct axiom audit passed for 17915 declarations using only propext, Classical.choice and Quot.sound; all 17944 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.19 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
