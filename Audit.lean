@@ -3831,6 +3831,7 @@ import PaperP1
 #print axioms PaperP1.ActualSourcePrimitiveReduction.divide_dyadic_bounds
 #print axioms PaperP1.ActualSourcePrimitiveReduction.family_raw_bounds
 #print axioms PaperP1.ActualSourceSurfaceIntegerProjection.exists_projection
+#print axioms PaperP1.ActualSourceSurfaceProjectionExceptionalCurves.exists_projection
 #print axioms PaperP1.ActualSourceTranslations.sourceAt_cast
 #print axioms PaperP1.ActualSourceTranslations.sourceAt_mem
 #print axioms PaperP1.ActualSourceTranslations.sourceAt_injective
@@ -12701,6 +12702,9 @@ import PaperP1
 #print axioms PaperP1.SourceProjectiveCurveGraphExclusion.no_odd_degree
 #print axioms PaperP1.SourceProjectiveCurveGraphExclusion.no_degree_one
 #print axioms PaperP1.SourceProjectiveCurveGraphExclusion.multiplicity_ge_twoD
+#print axioms PaperP1.SourceProjectiveCurveIdealData.sourceIdeal_injective
+#print axioms PaperP1.SourceProjectiveCurveIdealData.hilbert
+#print axioms PaperP1.SourceProjectiveCurveIdealData.one_le_degree
 #print axioms PaperP1.SourceProjectiveCurveLineEvenDegree.degree_even
 #print axioms PaperP1.SourceProjectiveCurveLineSquares.lineRestriction_isSquare_of_odd_degree
 #print axioms PaperP1.SourceProjectiveCurveLineSquares.lineRestriction_isSquare
@@ -12748,6 +12752,9 @@ import PaperP1
 #print axioms PaperP1.SourceSurfaceBoundedProjection.coefficientBound_pos
 #print axioms PaperP1.SourceSurfaceBoundedProjection.heightFactor_pos
 #print axioms PaperP1.SourceSurfaceBoundedProjection.exists_projection
+#print axioms PaperP1.SourceSurfaceComponentDegreeBudget.sum_degree_le
+#print axioms PaperP1.SourceSurfaceComponentDegreeBudget.curve_count_le
+#print axioms PaperP1.SourceSurfaceComponentDegreeBudget.uniform_section_curve_cover
 #print axioms PaperP1.SourceSurfaceGeometricImage.irreducible_after_extension
 #print axioms PaperP1.SourceSurfaceGeometricImage.source_irreducible_after_extension
 #print axioms PaperP1.SourceSurfaceSectionCurveDegree.degree_le

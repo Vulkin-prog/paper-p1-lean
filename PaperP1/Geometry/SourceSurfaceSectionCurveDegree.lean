@@ -66,6 +66,6 @@ theorem bounded_degree_finite_cover :
     hs hc hne hI hJ e f hf hf0
   refine ⟨curves, ?_, hcover⟩
   intro Γ hΓ
-  exact ⟨hcurves Γ hΓ, degree_le s c D I J hs hdeg hD hc hne hI hJ e f hf hf0 Γ (hcurves Γ hΓ)⟩
+  exact ⟨(hcurves Γ hΓ).1, degree_le s c D I J hs hdeg hD hc hne hI hJ e f hf hf0 Γ (hcurves Γ hΓ).1⟩
 
 end PaperP1.SourceSurfaceSectionCurveDegree

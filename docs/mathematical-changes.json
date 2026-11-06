@@ -27411,6 +27411,39 @@
         "status": "not_integrated"
       },
       "validation_commit": "089eef8d1c6714a55c2027af7c1dcd5674d93a9a"
+    },
+    {
+      "id": "P1-MATH-0571",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The actual source section had a finite curve cover with individually bounded genuine degrees, but no uniform count. The actual projection had good-fibre injectivity but no fixed uniformly bounded exceptional curve cover.",
+      "finding": "The genuine component-degree sum bounds the actual number of literal source curves. Applied to the actual derivative conductor it yields a fixed family of at most d*(d-1) curves, each of degree at most d*(d-1), covering all original bad-derivative integer points at every height.",
+      "proposed_revision": "Retain minimal-prime provenance, use positive integral genuine degrees to prove the curve count, and state the actual projection and exceptional curve family before all height quantifiers.",
+      "impact": "Discharges the exceptional-divisor part of the source projection reduction with exact original point populations and explicit degree-dependent count and degree bounds.",
+      "evidence": [
+        "PaperP1.ActualSourceSurfaceProjectionExceptionalCurves.exists_projection",
+        "PaperP1.SourceProjectiveCurveIdealData.sourceIdeal_injective",
+        "PaperP1.SourceProjectiveCurveIdealData.hilbert",
+        "PaperP1.SourceProjectiveCurveIdealData.one_le_degree",
+        "PaperP1.SourceSurfaceComponentDegreeBudget.sum_degree_le",
+        "PaperP1.SourceSurfaceComponentDegreeBudget.curve_count_le",
+        "PaperP1.SourceSurfaceComponentDegreeBudget.uniform_section_curve_cover"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17125 jobs); direct axiom audit passed for 16413 declarations using only propext, Classical.choice and Quot.sound; all 16063 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.12 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

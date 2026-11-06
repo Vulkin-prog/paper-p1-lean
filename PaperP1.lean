@@ -4235,3 +4235,6 @@ public import PaperP1.Algebra.FiniteComponentHilbertBudget
 public import PaperP1.Algebra.GradedQuotientPieceLifts
 public import PaperP1.Algebra.GradedSeparatedComponentPieces
 public import PaperP1.Algebra.HomogeneousPrimeSeparators
+public import PaperP1.Arithmetic.ActualSourceSurfaceProjectionExceptionalCurves
+public import PaperP1.Geometry.SourceProjectiveCurveIdealData
+public import PaperP1.Geometry.SourceSurfaceComponentDegreeBudget

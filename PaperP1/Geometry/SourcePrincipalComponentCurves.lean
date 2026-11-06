@@ -71,7 +71,8 @@ theorem finite_curve_cover
     (hJ : Pairwise fun i j ↦ Disjoint (J i) (J j))
     (e : ℕ) (f : veronese c D I J) (hf : f ∈ sourcePiece c D I J e) (hf0 : f ≠ 0) :
     ∃ curves : Finset (Curve s c D I J hdeg hD),
-      (∀ Γ ∈ curves, f ∈ sourceIdeal s c D I J hdeg hD Γ) ∧
+      (∀ Γ ∈ curves, f ∈ sourceIdeal s c D I J hdeg hD Γ ∧
+        sourceIdeal s c D I J hdeg hD Γ ∈ (Ideal.span {f}).minimalPrimes) ∧
       ∀ (H : ℕ) (v : SourceProjectiveEmbedding.GeneratorIndex ℚ (Fin s.length) D → ℤ)
         (hv : v ∈ SourceIntegerPoints.curvePoints D
           (RingHom.ker (SourceProjectiveEmbedding.evaluation c D I J hdeg hD).toRingHom) H),
@@ -96,8 +97,12 @@ theorem finite_curve_cover
   refine ⟨curves, ?_, ?_⟩
   · intro Γ hΓ
     obtain ⟨P, _hP, rfl⟩ := Finset.mem_image.mp hΓ
-    change f ∈ P.val
-    exact (hcomponents.1 P.val (Finset.mem_filter.mp P.property).1).2.2.2
+    constructor
+    · change f ∈ P.val
+      exact (hcomponents.1 P.val (Finset.mem_filter.mp P.property).1).2.2.2
+    · change P.val ∈ (Ideal.span {f}).minimalPrimes
+      exact (HomogeneousPrincipalComponents.mem_components f P.val).mp
+        (Finset.mem_filter.mp P.property).1
   · intro H v hv hzero
     let φ := SourceIntegerPointEvaluation.evaluation c D I J hdeg hD v
       (SourceIntegerPointEvaluation.valid_of_mem c D I J hdeg hD H v hv)
