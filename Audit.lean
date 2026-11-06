@@ -1020,6 +1020,11 @@ import PaperP1
 #print axioms PaperP1.Algebra.centered_product_inclusion_exclusion
 #print axioms PaperP1.Algebra.centeredMoment_eq_centeredCoefficient
 #print axioms PaperP1.Algebra.finite_weighted_product_expansion
+#print axioms PaperP1.FiniteFieldDerivationFrobenius.card_power_derivative_zero
+#print axioms PaperP1.FiniteFieldDerivationFrobenius.iter_product_card_power
+#print axioms PaperP1.FiniteFieldDerivationFrobenius.evaluation_product_identity
+#print axioms PaperP1.FiniteFieldDerivationFrobenius.evaluation_sum_identity
+#print axioms PaperP1.FiniteFunctionLinearKernel.exists_nonzero_kernel
 #print axioms PaperP1.FiniteGradedHilbertCoefficient.translations_degree
 #print axioms PaperP1.FiniteGradedHilbertCoefficient.translations_coefficient
 #print axioms PaperP1.FiniteGradedHilbertCoefficient.shifted_sum
@@ -1600,6 +1605,14 @@ import PaperP1
 #print axioms PaperP1.HomogenizationIrreducibilityReflection.homogenize_irreducible_iff
 #print axioms PaperP1.HomogenizationIrreducibilityReflection.bihomogenize_irreducible_iff
 #print axioms PaperP1.HomogenizationIrreducibilityReflection.geometric_iff_affine
+#print axioms PaperP1.HyperellipticAuxiliaryConstraints.raw_degree_bound
+#print axioms PaperP1.HyperellipticAuxiliaryConstraints.identities_of_kernel
+#print axioms PaperP1.HyperellipticAuxiliaryConstraints.candidate_degree_bound
+#print axioms PaperP1.HyperellipticAuxiliaryConstraints.candidate_ne_zero
+#print axioms PaperP1.HyperellipticAuxiliaryConstraints.target_cardinality
+#print axioms PaperP1.HyperellipticAuxiliaryConstraints.exists_nonzero_tensor
+#print axioms PaperP1.HyperellipticFiniteCoordinates.zero_of_coefficients
+#print axioms PaperP1.HyperellipticFiniteCoordinates.extract_zero_iff
 #print axioms PaperP1.HyperellipticMonomialIndex.embed_injective
 #print axioms PaperP1.HyperellipticMonomialIndex.weight_le
 #print axioms PaperP1.HyperellipticMonomialIndex.weight_injective
@@ -1651,6 +1664,8 @@ import PaperP1
 #print axioms PaperP1.HyperellipticPureFunctions.lower_real_coefficient
 #print axioms PaperP1.HyperellipticPureFunctions.lower_imaginary_coefficient
 #print axioms PaperP1.HyperellipticPureFunctions.leading_functional
+#print axioms PaperP1.HyperellipticTangentAuxiliary.exists_auxiliary
+#print axioms PaperP1.HyperellipticTangentAuxiliary.point_bound_of_dimension
 #print axioms PaperP1.HyperellipticTangentDegree.derivative_degree_step
 #print axioms PaperP1.HyperellipticTangentDegree.coefficient_two_degree
 #print axioms PaperP1.HyperellipticTangentDegree.tangent_bound

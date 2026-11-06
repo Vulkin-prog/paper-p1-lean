@@ -4510,3 +4510,8 @@ public import PaperP1.Algebra.HyperellipticTangentDegree
 public import PaperP1.Algebra.HyperellipticWeightedMonomials
 public import PaperP1.Algebra.HyperellipticProductIndependence
 public import PaperP1.Algebra.HyperellipticPureFunctions
+public import PaperP1.Algebra.FiniteFieldDerivationFrobenius
+public import PaperP1.Algebra.FiniteFunctionLinearKernel
+public import PaperP1.Algebra.HyperellipticAuxiliaryConstraints
+public import PaperP1.Algebra.HyperellipticFiniteCoordinates
+public import PaperP1.Algebra.HyperellipticTangentAuxiliary

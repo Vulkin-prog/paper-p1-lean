@@ -30101,6 +30101,56 @@
         "status": "not_integrated"
       },
       "validation_commit": "c8a777212a21b5521baed12de83a4882561f63e1"
+    },
+    {
+      "id": "P1-MATH-0628",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "True product independence still needed the actual coefficient constraint map, degree-valid reconstruction, a nonzero finite kernel and literal Frobenius point evaluations.",
+      "finding": "The complete actual auxiliary construction is proved from exact numerical index-cardinality inequalities and A<q. It gives a nonzero function with the required degree and actual tangent vanishings, and the literal curve point estimate follows.",
+      "proposed_revision": "Use the actual finite coefficient map and its proved reconstruction to obtain a nonzero kernel tensor. State the remaining large-prime parameter inequality separately; do not assume the auxiliary or point estimate.",
+      "impact": "Discharges the internal kernel, reconstruction and evaluation construction gaps under explicit numerical conditions. Uniform parameter selection, general cancellation and geometric transfer remain unproved; canonical coverage is unchanged.",
+      "evidence": [
+        "PaperP1.FiniteFieldDerivationFrobenius.card_power_derivative_zero",
+        "PaperP1.FiniteFieldDerivationFrobenius.iter_product_card_power",
+        "PaperP1.FiniteFieldDerivationFrobenius.evaluation_product_identity",
+        "PaperP1.FiniteFieldDerivationFrobenius.evaluation_sum_identity",
+        "PaperP1.FiniteFunctionLinearKernel.exists_nonzero_kernel",
+        "PaperP1.HyperellipticAuxiliaryConstraints.raw_degree_bound",
+        "PaperP1.HyperellipticAuxiliaryConstraints.identities_of_kernel",
+        "PaperP1.HyperellipticAuxiliaryConstraints.candidate_degree_bound",
+        "PaperP1.HyperellipticAuxiliaryConstraints.candidate_ne_zero",
+        "PaperP1.HyperellipticAuxiliaryConstraints.target_cardinality",
+        "PaperP1.HyperellipticAuxiliaryConstraints.exists_nonzero_tensor",
+        "PaperP1.HyperellipticFiniteCoordinates.zero_of_coefficients",
+        "PaperP1.HyperellipticFiniteCoordinates.extract_zero_iff",
+        "PaperP1.HyperellipticTangentAuxiliary.exists_auxiliary",
+        "PaperP1.HyperellipticTangentAuxiliary.point_bound_of_dimension",
+        "PaperP1.HyperellipticAuxiliaryConstraints.PairIndex",
+        "PaperP1.HyperellipticAuxiliaryConstraints.ConstraintIndex",
+        "PaperP1.HyperellipticAuxiliaryConstraints.combination",
+        "PaperP1.HyperellipticAuxiliaryConstraints.rawConstraint",
+        "PaperP1.HyperellipticAuxiliaryConstraints.constraintMap",
+        "PaperP1.HyperellipticAuxiliaryConstraints.candidate",
+        "PaperP1.HyperellipticFiniteCoordinates.coefficient",
+        "PaperP1.HyperellipticFiniteCoordinates.extract",
+        "PaperP1.HyperellipticTangentAuxiliary.evaluationAlgHom"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17713 jobs); direct axiom audit passed for 17348 declarations using only propext, Classical.choice and Quot.sound; all 17231 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.28 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

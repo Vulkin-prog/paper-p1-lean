@@ -1,6 +1,17 @@
 # Actual projective scheme map
 
-Current checkpoint P1-MATH-0627: ACTUAL product functions g_i*h_j^p are
+Current checkpoint P1-MATH-0628: a genuine nonzero tangent auxiliary is
+constructed from the ACTUAL finite coefficient kernel under explicit NUMERICAL
+dimension inequalities and A<q. Coefficient reconstruction, nonzero candidates,
+Frobenius evaluation and actual tangent vanishings are proved internally.
+The literal bound N<=(A+qB)/m+degree(f) follows when0<m<=p in odd prime
+characteristic. Uniform large-prime PARAMETER CHOICE is still UNPROVED,
+as are general character cancellation and projected-P3 transfer. Canonical
+T1.7 retains ONLY its prior finite-field surface input in actual degrees>2
+at the original families/caps. Coverage stays163 proved,2 conditional,
+2 in_progress out of167; all73 main results proved. No Palomar registration.
+
+Historical checkpoint P1-MATH-0627: ACTUAL product functions g_i*h_j^p are
 proved linearly independent when A<p, using literal leading-coordinate
 linear maps. Every nonzero coefficient tensor gives an ACTUAL nonzero
 function. The internal independence gap is discharged; the complete tangent
@@ -21954,3 +21965,18 @@ HyperellipticProductIndependence proves that a family of nonzero pure actual fun
 Two modules add twelve theorems and three definitions. The actual product-linear-independence gap identified in checkpoint626 is now discharged internally. The auxiliary's required nonzero coefficient tensor still has to be obtained from the tangent-constraint kernel, with the complete coefficient reconstruction, dimension inequality and point-evaluation argument. Thus full auxiliary existence, general higher-degree character cancellation and the source-to-projected-P3 transfer remain UNPROVED. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the original three families/caps; the two-plane-input alternative remains conditional. Coverage stays163 proved,2 conditional,2 in_progress out of167; all73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, allowed axioms and checking options are unchanged. All work remains on Ubuntu with about55.3GiB available, without dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17703 jobs); direct axiom audit passed for 17333 declarations using only propext, Classical.choice and Quot.sound; all 17207 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.30 GiB.
+
+
+## Actual tangent auxiliary from the finite coefficient kernel and numerical dimensions
+
+HyperellipticFiniteCoordinates constructs actual F-linear coefficient extraction on the exact bounded monomial index. For a function within the PROVED degree cap, vanishing of those actual coefficients implies the entire quadratic polynomial function is zero. No coefficients beyond the cap are silently discarded: their vanishing follows from the actual degree criterion.
+
+FiniteFunctionLinearKernel proves that a literal linear map between finite coefficient arrays has an actual nonzero kernel vector when the target cardinality is smaller than the domain cardinality. FiniteFieldDerivationFrobenius proves that qth powers, q=cardF, are killed by the actual derivation and have the same value as the original functions at field points. It proves the exact iterated-derivation and finite-sum point-evaluation identities, preserving the scalar coefficients. No Frobenius compatibility is assumed as an input.
+
+HyperellipticAuxiliaryConstraints constructs the ACTUAL coefficient tensor space, finite tangent-constraint target, linear combination, raw derivative constraints, coefficient map and auxiliary candidate. The raw constraints have internally proved degree caps A+B+r*(d-2); a kernel vector therefore gives LITERAL zero polynomial constraint identities by the proved coefficient reconstruction. The candidate has actual norm degree at mostA+qB, and a nonzero tensor gives a nonzero candidate by the internally proved product independence. The target cardinality is the exact finite sum of the actual index sizes, and an actual nonzero kernel tensor is obtained from the explicit NUMERICAL cardinality inequality.
+
+HyperellipticTangentAuxiliary upgrades every literal point evaluation to an actual F-algebra map and assembles a genuine nonzero auxiliary over every finite field when A<q and the explicit dimension inequality holds. Its tangent iterates vanish at all ACTUAL field points, by the proved Frobenius evaluation identity and literal kernel constraints. Thus the full auxiliary construction is proved under purely numerical parameter conditions. Combining it with the already proved multiplicity count yields the actual point bound N<=(A+qB)/m+degree(f) for odd degree, odd prime characteristic,0<m<=p. No desired point estimate or auxiliary existence is a premise.
+
+Five modules add fifteen theorems and nine definitions. The internal tangent-kernel, coordinate-reconstruction and auxiliary-evaluation construction gaps are now discharged under the exact numerical conditions. The required uniform large-prime PARAMETER CHOICE and dimension inequality still need proofs; a general higher-degree character estimate and the source-to-projected-P3 transfer are not claimed. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the original families/caps; its two-plane-input alternative remains conditional. Coverage stays163 proved,2 conditional,2 in_progress out of167; all73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and allowed axioms are unchanged. Work remains on Ubuntu with about55.3GiB available and no dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17713 jobs); direct axiom audit passed for 17348 declarations using only propext, Classical.choice and Quot.sound; all 17231 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.28 GiB.
