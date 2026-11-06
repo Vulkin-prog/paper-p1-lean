@@ -36049,6 +36049,37 @@
         "status": "not_integrated"
       },
       "validation_commit": "d845d76c0341dc161c97521fa993ef2831b8abd5"
+    },
+    {
+      "id": "P1-MATH-0792",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The actual shared-factor kernel must be bounded, rather than left as an input, before prime-power amplification can yield a usable moment estimate.",
+      "finding": "For EVERY k and finite prime support P with reciprocal mass H=sum(1/p)<=1, the ACTUAL lcm kernel on the DISTINCT k-product layer satisfies sum(A,B,1/lcm(A,B))<=16^k*(k+1)*H^k. The proof groups actual pairs by lcm, uses the proved fibre cap 16^k, places each lcm in one of the DISJOINT actual degree layers k,...,2*k, and applies the actual reciprocal layer mass bound. No squarefree restriction is used. Constant kernel weights scale exactly by their square; weights k! therefore give the full bound (k!)^2*16^k*(k+1)*H^k. Five theorems prove this all-order shared-factor estimate internally.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "The actual repeated-prime product least common multiple kernel has an explicit all-order bound. The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.PrimeProductLcmKernel.layers_disjoint",
+        "PaperP1.PrimeProductLcmKernel.union_mass_bound",
+        "PaperP1.PrimeProductLcmKernel.kernel_bound",
+        "PaperP1.PrimeProductLcmKernel.constant_weight_kernel",
+        "PaperP1.PrimeProductLcmKernel.factorial_weight_kernel_bound"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18151 jobs); direct axiom audit passed for 18551 declarations using only propext, Classical.choice and Quot.sound; all 18732 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.28 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
