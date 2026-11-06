@@ -37305,6 +37305,34 @@
         "status": "not_integrated"
       },
       "validation_commit": "5f5fa5b9e0c03b931127d537237d2b9889caf3c4"
+    },
+    {
+      "id": "P1-MATH-0833",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "A bound for one exceptional prime block does not bound their union without paying for every occupied block and every overlap.",
+      "finding": "ONE N0>=1 precedes all large N, every unit coefficient function on the second prime set, every 0<T<=N and every separated sample set. If EACH actual sample has SOME actual second prime block with norm>=its q^(-1/40) threshold, then the ENTIRE sample set has cardinality<=N^(1/18). The proof retains a genuine finite cover by all block filters, the actual band count<=2*(log log N)^6 and its explicit absorption into N^(1/342). Two theorems prove the count factor and full actual union bound.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "The union of every actual second-prime large-value block has at most N to the one eighteenth samples. The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.SecondBadFrequencyCardinality.band_count_factor",
+        "PaperP1.SecondBadFrequencyCardinality.all_blocks_uniform"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18233 jobs); direct axiom audit passed for 18676 declarations using only propext, Classical.choice and Quot.sound; all 18878 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.54 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

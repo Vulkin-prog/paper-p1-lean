@@ -5075,6 +5075,8 @@ import PaperP1
 #print axioms PaperP1.ScaledWronskianTransformation.jetMatrix_expansion
 #print axioms PaperP1.ScaledWronskianTransformation.wronskian_factor
 #print axioms PaperP1.ScaledWronskianTransformation.wronskian_ne_zero
+#print axioms PaperP1.SecondBadFrequencyCardinality.band_count_factor
+#print axioms PaperP1.SecondBadFrequencyCardinality.all_blocks_uniform
 #print axioms PaperP1.SecondPrimeCeilingGeometry.eventual_geometry
 #print axioms PaperP1.SecondPrimeLargeValueCardinality.per_block_uniform
 #print axioms PaperP1.SecondRegularComponentFamilyBound.card_bound_of_comparison

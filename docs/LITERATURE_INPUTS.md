@@ -1,6 +1,15 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0832: Every actual second-prime large-value
+Current checkpoint P1-MATH-0833: The union of every actual second-prime
+large-value block has at most N to the one eighteenth samples. The joint
+large-prime frequency contribution, the central-frequency mean
+comparison and complete logarithmic short-average concentration remain
+unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164
+proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources,
+false-scope corrections, compiler and axioms unchanged. About 51.60 GiB
+free on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0832: Every actual second-prime large-value
 block has at most N to the one nineteenth separated samples. The joint
 large-prime frequency contribution, the central-frequency mean
 comparison and complete logarithmic short-average concentration remain
@@ -33102,6 +33111,12 @@ ONE N0>=1 precedes ALL N>=N0, EVERY occupied actual second prime block, every un
 
 The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
 
+## Internal the union of every actual second-prime large-value block has at most n to the one eighteenth samples
+
+ONE N0>=1 precedes all large N, every unit coefficient function on the second prime set, every 0<T<=N and every separated sample set. If EACH actual sample has SOME actual second prime block with norm>=its q^(-1/40) threshold, then the ENTIRE sample set has cardinality<=N^(1/18). The proof retains a genuine finite cover by all block filters, the actual band count<=2*(log log N)^6 and its explicit absorption into N^(1/342). Two theorems prove the count factor and full actual union bound.
+
+The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -36690,3 +36705,14 @@ ONE N0>=1 precedes ALL N>=N0, EVERY occupied actual second prime block, every un
 The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.60 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18231 jobs); direct axiom audit passed for 18674 declarations using only propext, Classical.choice and Quot.sound; all 18876 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.56 GiB.
+
+
+## The union of every actual second-prime large-value block has at most N to the one eighteenth samples
+
+Stable ID: p1:internal:second-bad-frequency-cardinality. The union of every actual second-prime large-value block has at most N to the one eighteenth samples. The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
+
+ONE N0>=1 precedes all large N, every unit coefficient function on the second prime set, every 0<T<=N and every separated sample set. If EACH actual sample has SOME actual second prime block with norm>=its q^(-1/40) threshold, then the ENTIRE sample set has cardinality<=N^(1/18). The proof retains a genuine finite cover by all block filters, the actual band count<=2*(log log N)^6 and its explicit absorption into N^(1/342). Two theorems prove the count factor and full actual union bound.
+
+The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.60 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18233 jobs); direct axiom audit passed for 18676 declarations using only propext, Classical.choice and Quot.sound; all 18878 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.54 GiB.
