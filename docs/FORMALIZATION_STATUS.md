@@ -1,6 +1,17 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0623: actual iterated derivatives of a^n*b
+Current checkpoint P1-MATH-0624: actual polynomial functions on Y^2=f(X),
+their literal point evaluations and the tangent derivation are constructed.
+Odd degree proves norm(z)!=0 for every nonzero function, with exact norm
+degree formulas. Vanishing tangent iterates at BOTH signs of a nonzero-y
+point force an ACTUAL doubled root-power divisor of the norm, for m<=p.
+These results do not prove auxiliary-function existence, the complete
+higher-degree point count, character cancellation or projected-P3 transfer.
+Canonical T1.7 retains ONLY its prior surface point-estimate input in actual
+degrees>2 at the original families/caps. Coverage stays163 proved,2 conditional,
+2 in_progress out of167; all73 main results proved. No Palomar registration.
+
+Historical checkpoint P1-MATH-0623: actual iterated derivatives of a^n*b
 vanish below ordern at a zero ofa and evaluate EXACTLY to
 n!*epsilon(Da)^n*epsilon(b) at ordern. Factorials are internally proved
 nonzero below the prime characteristic. Vanishing tangent iterates force
@@ -381,7 +392,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records621 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records622 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -500,7 +511,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **17259 audited theorem/lemma declarations**. This
+- The project currently has **17284 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -29472,3 +29483,18 @@ PolynomialDerivationMultiplicity applies these facts to an ACTUAL univariate pol
 Three modules add fifteen theorems and one definition. These are internally proved algebraic foundations for a possible direct multiplicity point-count argument in the higher-degree source route. No auxiliary-function existence, general higher-degree character cancellation, curve point estimate or source-to-projected-surface transfer is claimed proved. Canonical T1.7 remains UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original families/caps. Its two-input plane alternative remains conditional. Coverage stays163 proved,2 conditional,2 in_progress out of167, with all73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and allowed axioms are unchanged. Work remains on Ubuntu with about55.4GiB available, without dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17675 jobs); direct axiom audit passed for 17259 declarations using only propext, Classical.choice and Quot.sound; all 17119 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.38 GiB.
+
+
+## Actual quadratic-curve tangent derivation, nonzero norms and doubled root multiplicities
+
+HyperellipticPolynomialAlgebra constructs the ACTUAL quadratic polynomial algebra A(X)+Y*B(X), Y^2=f(X), and an actual ring evaluation at every point(x,y) satisfying y^2=f(x). It proves evaluation on base polynomials andY, the exact norm A^2-f*B^2, and the two-sign criterion: in characteristic different from2 with y!=0, vanishing at both signs is equivalent to both coordinate values vanishing. A residual with a nonzero coordinate value therefore has nonzero evaluation at at least one actual sign. Base-polynomial power factors act on both coordinates exactly.
+
+HyperellipticTangentDerivation defines and proves the ACTUAL F-linear derivation D(A+YB)=(f'B+2fB')+Y*(2A'). The Leibniz rule is checked on the literal quadratic algebra. On a base polynomialP its point evaluation is2*y*P'(x), and DY=f'. No abstract tangent compatibility is assumed.
+
+HyperellipticOddDegreeNorm proves that odd degree of the original f makes the two possible square-term degrees unequal. Consequently norm(z)=0 EXACTLY whenz=0. Nonzero products remain nonzero, norm degrees add under multiplication, and the exact coordinate formula for norm natDegree is proved, with a zero imaginary coordinate handled separately. These are actual polynomial norms and degrees, without a supplied noncancellation assumption.
+
+PolynomialCommonRootFactor proves a literal common factorization of two polynomials atx, leaving a nonzero residual coordinate value whenever the original pair is not both zero. HyperellipticNormMultiplicity transfers this to the actual quadratic algebra. For m<=p, actual tangent-derivative vanishings through orders r<m at BOTH points(x,+y) and(x,-y), y!=0, force (X-Cx)^(2m) to divide the actual norm. The proof chooses a nonzero residual sign and applies the internally proved exact derivation power evaluation. With odd f and a nonzero function, the actual norm rootMultiplicity is therefore at least2m. Primality, prime characteristic, 2!=0 and the nonzero-y condition are explicit.
+
+Five modules add twenty-five theorems and three definitions. This proves the concrete quadratic-curve multiplicity mechanism and norm nonvanishing needed for the planned direct source count. No auxiliary-function existence, complete higher-degree point bound, general character cancellation or source-to-projected-P3 transfer is claimed. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original families/caps; its two-plane-input alternative remains conditional. Coverage stays163 proved,2 conditional,2 in_progress out of167, with all73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, allowed axioms and checking options are unchanged. Work remains on Ubuntu with about55.4GiB available and no dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17685 jobs); direct axiom audit passed for 17284 declarations using only propext, Classical.choice and Quot.sound; all 17147 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.36 GiB.

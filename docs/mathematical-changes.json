@@ -29905,6 +29905,60 @@
         "status": "not_integrated"
       },
       "validation_commit": "4a1f78c2e1c8359b8ff028b48d5ee8ba789891b7"
+    },
+    {
+      "id": "P1-MATH-0624",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The general derivation identities were not yet attached to actual quadratic-curve functions, their two point signs or a nonzero norm polynomial.",
+      "finding": "The actual tangent derivation and point evaluations are constructed. Odd degree makes the actual norm detect nonzero functions. Vanishing tangent iterates at both nonzero-y point signs forces an actual doubled root-power divisor and norm root-multiplicity bound.",
+      "proposed_revision": "Expose the concrete quadratic algebra, norm and tangent identities. Retain the two-sign and characteristic restrictions explicitly before counting roots of the nonzero norm.",
+      "impact": "Proves the actual quadratic-curve multiplicity mechanism without assuming the desired point count. Auxiliary existence and the later point-count and geometric-transfer steps remain unproved; canonical coverage and dependencies are unchanged.",
+      "evidence": [
+        "PaperP1.HyperellipticNormMultiplicity.exists_common_factor",
+        "PaperP1.HyperellipticNormMultiplicity.norm_power_dvd",
+        "PaperP1.HyperellipticNormMultiplicity.norm_root_multiplicity",
+        "PaperP1.HyperellipticOddDegreeNorm.polynomial_ne_zero",
+        "PaperP1.HyperellipticOddDegreeNorm.unequal_square_degrees",
+        "PaperP1.HyperellipticOddDegreeNorm.norm_eq_zero_iff",
+        "PaperP1.HyperellipticOddDegreeNorm.norm_ne_zero",
+        "PaperP1.HyperellipticOddDegreeNorm.norm_degree_mul",
+        "PaperP1.HyperellipticOddDegreeNorm.norm_natDegree_mul",
+        "PaperP1.HyperellipticOddDegreeNorm.product_ne_zero",
+        "PaperP1.HyperellipticOddDegreeNorm.norm_natDegree",
+        "PaperP1.HyperellipticPolynomialAlgebra.evaluation_base",
+        "PaperP1.HyperellipticPolynomialAlgebra.evaluation_root",
+        "PaperP1.HyperellipticPolynomialAlgebra.opposite_zero_iff",
+        "PaperP1.HyperellipticPolynomialAlgebra.evaluation_apply",
+        "PaperP1.HyperellipticPolynomialAlgebra.zero_iff",
+        "PaperP1.HyperellipticPolynomialAlgebra.base_power_mul_re",
+        "PaperP1.HyperellipticPolynomialAlgebra.base_power_mul_im",
+        "PaperP1.HyperellipticPolynomialAlgebra.norm_formula",
+        "PaperP1.HyperellipticPolynomialAlgebra.exists_nonzero_sign",
+        "PaperP1.HyperellipticTangentDerivation.tangent_re",
+        "PaperP1.HyperellipticTangentDerivation.tangent_im",
+        "PaperP1.HyperellipticTangentDerivation.evaluation_tangent_base",
+        "PaperP1.HyperellipticTangentDerivation.tangent_root",
+        "PaperP1.PolynomialCommonRootFactor.exists_factor",
+        "PaperP1.HyperellipticPolynomialAlgebra.CurveRing",
+        "PaperP1.HyperellipticPolynomialAlgebra.evaluation",
+        "PaperP1.HyperellipticTangentDerivation.tangent"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17685 jobs); direct axiom audit passed for 17284 declarations using only propext, Classical.choice and Quot.sound; all 17147 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.36 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

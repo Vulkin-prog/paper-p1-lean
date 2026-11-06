@@ -4496,3 +4496,8 @@ public import PaperP1.Arithmetic.SplitBranchPrimeCertificate
 public import PaperP1.Algebra.DerivationPowerEvaluation
 public import PaperP1.Algebra.PolynomialDerivationMultiplicity
 public import PaperP1.Algebra.PrimeCharacteristicDerivationOrder
+public import PaperP1.Algebra.HyperellipticNormMultiplicity
+public import PaperP1.Algebra.HyperellipticOddDegreeNorm
+public import PaperP1.Algebra.HyperellipticPolynomialAlgebra
+public import PaperP1.Algebra.HyperellipticTangentDerivation
+public import PaperP1.Algebra.PolynomialCommonRootFactor
