@@ -41063,6 +41063,33 @@
         "status": "not_integrated"
       },
       "validation_commit": "bf63545055d40d73dc17fece4af1b9c87888f9c0"
+    },
+    {
+      "id": "P1-MATH-0951",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The actual fixed-power rectangle estimate must be transferred back to the original full dyadic polynomial with a noncircular choice of exponent, width and precision.",
+      "finding": "One theorem proves that for EVERY epsilon>0, ONE T0>=8 and ONE integer cutoff precede ALL N, ALL real completely multiplicative prime-unit f and ALL heights 1<=T<=N. The literal original dyadic Dirichlet polynomial has square integral<=epsilon on the actual joint first-two-large region outside |t|<T0. The final exponent is chosen from actual approximation precision, then an actual fixed width above every required threshold, then the actual rectangle and restricted transfer are applied. No remaining joint-region energy bound is assumed.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "The original real Dirichlet polynomial has uniformly small joint-region energy outside a fixed central band. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.OffCentralJointEnergy.uniform_bound"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18469 jobs); direct axiom audit passed for 19154 declarations using only propext, Classical.choice and Quot.sound; all 19449 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.52 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

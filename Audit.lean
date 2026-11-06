@@ -4779,6 +4779,7 @@ import PaperP1
 #print axioms PaperP1.NormalizedScaledTangent.secondScale_ne_zero
 #print axioms PaperP1.NormalizedScaledTangent.first_wronskian_ne_zero
 #print axioms PaperP1.NormalizedScaledTangent.second_wronskian_ne_zero
+#print axioms PaperP1.OffCentralJointEnergy.uniform_bound
 #print axioms PaperP1.OrdinaryReciprocalPrimeInput.tendsto_left_endpoint
 #print axioms PaperP1.OrdinaryReciprocalPrimeInput.uniform_square_part_upper
 #print axioms PaperP1.OrdinaryReciprocalPrimeLowerInput.uniform_gap
