@@ -4536,3 +4536,4 @@ public import PaperP1.Arithmetic.FiniteFieldMultivariateZeroBound
 public import PaperP1.Arithmetic.MonicCriticalPointCount
 public import PaperP1.Algebra.GeneratedThreeCoordinatePoints
 public import PaperP1.Arithmetic.GeneratedMonicCriticalPointCount
+public import PaperP1.Arithmetic.ConductorCriticalPointTransfer

@@ -5032,6 +5032,9 @@ import PaperP1
 #print axioms PaperP1.ConditionalWindowRank.coefficient_zero_outside_pool
 #print axioms PaperP1.ConditionalWindowRank.conditionalNullity_le
 #print axioms PaperP1.ConditionalWindowRank.conditionalNullity_eq_zero_of_card_le_one
+#print axioms PaperP1.ConductorCriticalPointTransfer.cardinality_le_source_plus
+#print axioms PaperP1.ConductorCriticalPointTransfer.split_cardinality_le
+#print axioms PaperP1.ConductorCriticalPointTransfer.uniform_upper_bound
 #print axioms PaperP1.ConnectedBlockLists.mem_population
 #print axioms PaperP1.ConnectedBlockLists.covered_of_connected
 #print axioms PaperP1.ConnectedBlockLists.population_subset_covered

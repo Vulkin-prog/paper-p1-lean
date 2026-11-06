@@ -1,6 +1,18 @@
 # Actual projective scheme map
 
-Current checkpoint P1-MATH-0637: actual field points of a three-generated
+Current checkpoint P1-MATH-0638: the COMPLETE source-specific counting
+assembly is proved under explicit STRUCTURAL conductor and polynomial
+data. The actual image count is at most (1+eta)*p^2, with one cutoff
+before all coefficients, branch supports and image data. Source counts,
+exceptional counts, lifting maps and thresholds are internal proofs.
+Verification of the original reduced image identities and conductor,
+original-model reduction and effective prime budgets remains UNPROVED.
+The canonical general P3 input is not discharged. Canonical T1.7 retains
+ONLY that prior input in degrees>2 at the original families and caps.
+Coverage stays 163 proved, 2 conditional, 2 in_progress out of 167; all
+73 main results proved. No Palomar registration.
+
+Historical checkpoint P1-MATH-0637: actual field points of a three-generated
 algebra killing its literal polynomial derivative have the proved bound
 2*d^3*q in characteristic p>d. Coordinate injectivity, point finiteness
 and mixed evaluation are internal proofs. Generation and the literal
@@ -22181,3 +22193,14 @@ GeneratedMonicCriticalPointCount uses these actual maps for an algebra generated
 Two modules add five theorems and one definition. This discharges the generated-algebra derivative-locus counting step under explicit structural generation and polynomial identities. Verification of those identities and of the conductor for the original reduced projection remains unfinished. The original integer projected-model reduction, effective uniform prime budgets and final source-to-image assembly remain unproved. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families and caps. Coverage remains 163 proved, 2 conditional, 2 in_progress out of 167; all 73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Work stays on Ubuntu with about 55.1 GiB available and no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17755 jobs); direct axiom audit passed for 17420 declarations using only propext, Classical.choice and Quot.sound; all 17327 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.11 GiB.
+
+
+## Uniform source-image point estimates assembled from explicit conductor and polynomial data
+
+ConductorCriticalPointTransfer combines the proved unique point extension with the actual generated-algebra derivative-locus estimate. For a literal image subalgebra S of A with an actual derivative conductor, a three-coordinate generating family, its vanishing monic irreducible polynomial P, and the exact derivative identity, the total S-point count is at most the A-point count plus 2*d^3*q in characteristic p>d. The auxiliary finiteness needed for the actual split-radical source is proved from its point equivalence. The canonical source list identity then gives the literal bound by the original source solution count plus 2*d^3*p.
+
+The final theorem fixes the number of source equations, a branch-support cap, a projected polynomial degree cap and eta>0, then chooses ONE prime cutoff BEFORE every prime, coefficient vector, branch family, image subalgebra, conductor and projection polynomial. The internally proved source estimate uses eta/2. An explicit additional threshold absorbs 2*d^3*p into eta*p^2/2. Hence the actual image-algebra point count is at most (1+eta)*p^2. No source count, exceptional count, point-lifting existence, resultant nonvanishing or desired image point bound is a hypothesis. The ACTUAL conductor, generation, monic irreducibility, coefficient degrees, defining equation and derivative identities are explicit STRUCTURAL premises. They must still be proved for the original reduced projection.
+
+One module adds three theorems and no definitions. This completes the internal source-specific finite-field counting assembly, CONDITIONAL ON those exact structural data, not on a point estimate. Original integer projected-model reduction, verification of its reduced structural identities and conductor, and effective uniform prime budgets remain unfinished. This does not discharge the canonical general P3 input. Canonical T1.7 remains UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families/caps. Coverage remains 163 proved, 2 conditional, 2 in_progress out of 167; all 73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Work stays on Ubuntu with about 55.1 GiB available and no dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17757 jobs); direct axiom audit passed for 17423 declarations using only propext, Classical.choice and Quot.sound; all 17330 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.09 GiB.

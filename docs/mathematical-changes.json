@@ -30491,6 +30491,35 @@
         "status": "not_integrated"
       },
       "validation_commit": "7e6b2ec36df566927fb2aa0485375b7260cdc05d"
+    },
+    {
+      "id": "P1-MATH-0638",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The internally proved source count, conductor extension and derivative-locus count had not yet been assembled with one uniform threshold preserving leading coefficient one.",
+      "finding": "The exact count transfer and exceptional-locus theorem yield source count plus 2*d^3*p. A cutoff before all coefficients and projected structural data absorbs that error, proving (1+eta)*p^2 for the actual image algebra under explicit conductor and polynomial identities.",
+      "proposed_revision": "Use this source-specific counting assembly after proving the original reduced image satisfies its explicit structural hypotheses and effective arithmetic budget. Do not replace those hypotheses with a general P3 estimate or declare T1.7 complete prematurely.",
+      "impact": "Closes the internal finite-field counting and threshold-assembly steps for this route. Original reduced-model structural verification and effective prime budgets remain unfinished; canonical T1.7 and numbered coverage do not change.",
+      "evidence": [
+        "PaperP1.ConductorCriticalPointTransfer.cardinality_le_source_plus",
+        "PaperP1.ConductorCriticalPointTransfer.split_cardinality_le",
+        "PaperP1.ConductorCriticalPointTransfer.uniform_upper_bound"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17757 jobs); direct axiom audit passed for 17423 declarations using only propext, Classical.choice and Quot.sound; all 17330 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.09 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
