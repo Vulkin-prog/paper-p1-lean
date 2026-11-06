@@ -1,6 +1,16 @@
 # Actual projective scheme map
 
-Current checkpoint P1-MATH-0893: Actual shifted real Euler frequency
+Current checkpoint P1-MATH-0894: Actual real completely multiplicative
+twisted sums are uniformly small on every fixed polynomial height range.
+The triple-large prime frequency contribution, the central-frequency
+mean comparison and complete logarithmic short-average concentration
+remain unproved. T19.17 conditional; original T1.7 unconditional.
+Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main
+proved. Sources, false-scope corrections, compiler and axioms unchanged.
+About 53.63 GiB free on Ubuntu. No dependency download or Palomar
+registration.
+
+Historical checkpoint P1-MATH-0893: Actual shifted real Euler frequency
 budgets are uniformly small beyond a fixed central threshold. The
 triple-large prime frequency contribution, the central-frequency mean
 comparison and complete logarithmic short-average concentration remain
@@ -27210,3 +27220,12 @@ One theorem proves: for every fixed B>0 and eta>0, ONE T0>=8 and ONE X0 precede 
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.63 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18353 jobs); direct axiom audit passed for 18926 declarations using only propext, Classical.choice and Quot.sound; all 19171 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.59 GiB.
+
+
+## Actual real completely multiplicative twisted sums are uniformly small on every fixed polynomial height range
+
+Three theorems prove uniform cancellation for the literal sum over Icc 1 X of f(n)*exp(-i*tau*log n), for EVERY real completely multiplicative f with all prime coefficients bounded by one. For fixed B>0,epsilon>0, one central threshold T0 and one X0 precede ALL X, ALL f and ALL T0<=|tau|<=X^B. The norm is <=epsilon*X, with its normalized form and the actual polynomial lower-band corollary X^a<=|tau| for ANY fixed a>0. The existing proved Halasz summation theorem is applied to the actual newly proved uniform Euler budget; no frequency exceptional set or summatory smallness input is assumed.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.63 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18355 jobs); direct axiom audit passed for 18929 declarations using only propext, Classical.choice and Quot.sound; all 19174 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.57 GiB.

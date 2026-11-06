@@ -5527,6 +5527,9 @@ import PaperP1
 #print axioms PaperP1.UniformRealEulerBudget.uniform_bound
 #print axioms PaperP1.UniformRealEulerSmallness.fourth_power_bound
 #print axioms PaperP1.UniformRealEulerSmallness.uniform_bound
+#print axioms PaperP1.UniformRealTwistedSum.uniform_bound
+#print axioms PaperP1.UniformRealTwistedSum.normalized_bound
+#print axioms PaperP1.UniformRealTwistedSum.polynomial_band_bound
 #print axioms PaperP1.UniformSaddleVariation.uniform_left_variation
 #print axioms PaperP1.UniformZetaSublogarithmic.uniform_bound
 #print axioms PaperP1.UniformZetaSublogarithmic.normalized_bound
