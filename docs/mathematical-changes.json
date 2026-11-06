@@ -34847,6 +34847,35 @@
         "status": "not_integrated"
       },
       "validation_commit": "00c1f925335dc45149264ad0f8c968fecf0c9278"
+    },
+    {
+      "id": "P1-MATH-0754",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The same exceptional frequency set must work for every other-band presence condition; choosing an exception separately for each coefficient would not justify later parameter integration or uniformity.",
+      "finding": "The ACTUAL count-weighted twisted sum with the prime-presence indicator on Q is exactly the difference of the count-weighted sums of f and damping(Q,0)*f. The proved common count-weighted theorem therefore gives ONE exception E BEFORE ALL admissible self supports P, ALL prime supports Q, ALL complete real prime-bounded f and ALL damping choices implicit in the identity. Its measure is <=delta*T, and outside E the actual presence/count-weighted summatory norm is <=epsilon*X. Two theorems and one definition are proved. No disjointness of P and Q is required for this estimate.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "One actual common frequency exception controls count-weighted prime-presence sums. The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.CommonPresenceWeightedSum.difference_identity",
+        "PaperP1.CommonPresenceWeightedSum.common_presence_weighted_small",
+        "PaperP1.CommonPresenceWeightedSum.weighted"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18075 jobs); direct axiom audit passed for 18406 declarations using only propext, Classical.choice and Quot.sound; all 18554 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.97 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

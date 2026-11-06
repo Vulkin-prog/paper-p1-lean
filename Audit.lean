@@ -3462,6 +3462,8 @@ import PaperP1
 #print axioms PaperP1.CommonDampedSum.twisted_sum_integral
 #print axioms PaperP1.CommonDampedSum.common_weighted_summatory_small
 #print axioms PaperP1.CommonFullEulerBudget.common_budget_small_uniform
+#print axioms PaperP1.CommonPresenceWeightedSum.difference_identity
+#print axioms PaperP1.CommonPresenceWeightedSum.common_presence_weighted_small
 #print axioms PaperP1.CommonPrimeFrequencyException.doubled_value_continuous
 #print axioms PaperP1.CommonPrimeFrequencyException.exceptional_measurable
 #print axioms PaperP1.CommonPrimeFrequencyException.repulsion_off_exception

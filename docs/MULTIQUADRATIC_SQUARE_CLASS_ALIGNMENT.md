@@ -1,6 +1,15 @@
 # Multiquadratic split radicands: exact square-class independence
 
-Current checkpoint P1-MATH-0753: Actual prime presence is a zero-damping
+Current checkpoint P1-MATH-0754: One actual common frequency exception
+controls count-weighted prime-presence sums. The actual Ramare main-term
+frequency bounds and complete logarithmic short-average concentration
+remain unproved. T19.17 conditional; original T1.7 unconditional.
+Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main
+proved. Sources, false-scope corrections, compiler and axioms unchanged.
+About 53.1 GiB free on Ubuntu. No dependency download or Palomar
+registration.
+
+Historical checkpoint P1-MATH-0753: Actual prime presence is a zero-damping
 difference without squarefree assumptions. The actual Ramare main-term
 frequency bounds and complete logarithmic short-average concentration
 remain unproved. T19.17 conditional; original T1.7 unconditional.
@@ -25398,3 +25407,12 @@ The literal prime-presence indicator is bounded between zero and one. On positiv
 The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.1 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18073 jobs); direct axiom audit passed for 18404 declarations using only propext, Classical.choice and Quot.sound; all 18551 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.99 GiB.
+
+
+## One actual common frequency exception controls count-weighted prime-presence sums
+
+The ACTUAL count-weighted twisted sum with the prime-presence indicator on Q is exactly the difference of the count-weighted sums of f and damping(Q,0)*f. The proved common count-weighted theorem therefore gives ONE exception E BEFORE ALL admissible self supports P, ALL prime supports Q, ALL complete real prime-bounded f and ALL damping choices implicit in the identity. Its measure is <=delta*T, and outside E the actual presence/count-weighted summatory norm is <=epsilon*X. Two theorems and one definition are proved. No disjointness of P and Q is required for this estimate.
+
+The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.1 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18075 jobs); direct axiom audit passed for 18406 declarations using only propext, Classical.choice and Quot.sound; all 18554 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.97 GiB.
