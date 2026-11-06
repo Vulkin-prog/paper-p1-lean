@@ -1,6 +1,16 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0685: the ACTUAL triple prime expansion
+Current checkpoint P1-MATH-0686: ACTUAL prime logarithmic masses
+and dyadic covers prove the log-log reciprocalWeight bound.
+ONE cutoff before ALL prime sets and bounded completely
+multiplicative functions makes the actual normalized second-
+convolution error arbitrarily small. Small/large prime truncations,
+total triple/Perron and short-average transfers remain UNPROVED.
+T19.17 conditional; original T1.7 complete. Coverage: 164 proved,
+1 conditional, 2 in_progress /167; all 73 main proved. False scopes
+and checked corrections unchanged. No Palomar registration.
+
+Historical checkpoint P1-MATH-0685: the ACTUAL triple prime expansion
 retains real log(X/p), integer quotients and repeated primes.
 Its actual difference has a proved bound by the explicit finite
 reciprocalWeight; real denominator errors are internal.
@@ -30818,6 +30828,16 @@ total triple approximation and Perron/short-average assembly remain
 unfinished. Complete multiplicativity is explicit. T19.17 stays
 conditional; original T1.7 is unconditional.
 
+## Internal logarithmic prime bands and negligible triple difference
+
+P1-MATH-0686 proves actual prime mass by logarithmic diameter,
+finite dyadic covers and the log-log reciprocalWeight bound.
+Its ratio to log X tends to zero. One threshold works before all
+actual prime sets and bounded completely multiplicative functions
+for the actual normalized triple difference. Discarded prime ranges,
+total triple/Perron and short-average transfers remain unfinished.
+T19.17 stays conditional; original T1.7 is unconditional.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -32649,3 +32669,18 @@ The triple expansion is EXACTLY the actual sum over p in P, actual primes q<=flo
 This closes the exact second/triple convolution and all real-versus-integer denominator control. A logarithmic-logarithmic bound for the explicit reciprocalWeight, the discarded small/large prime contributions and the resulting total triple approximation still need proof. Perron, full dyadic Halasz and logarithmic short-average assembly remain unfinished. Complete multiplicativity remains explicit; the general merely multiplicative extension is not claimed. T19.17 remains conditional and original complete T1.7 unconditional. Coverage remains 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes and checked corrections, source hashes, Lean v4.36.0-rc2 and allowed axioms are unchanged. Ubuntu has about 54.2 GiB free; no dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17937 jobs); direct axiom audit passed for 17915 declarations using only propext, Classical.choice and Quot.sound; all 17944 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.19 GiB.
+
+
+## Actual logarithmic prime bands and uniform negligible triple-convolution error
+
+Stable ID: p1:internal:actual-logarithmic-prime-band-error. Actual logarithmic prime masses, dyadic covers, the log-log error bound and a uniform negligible normalized triple difference are internal. Prime truncations and total Perron/short-average assembly remain unfinished.
+
+PrimeLogDiameter defines actual reciprocal-logarithmic prime mass and an explicit positive constant C from the internally proved prime-power total. The exact finite prime prefix difference and the internal Mertens error prove that any actual finite prime set of logarithmic diameter at most D>=0 has mass <=D+C. Minimum and maximum primes, the included left endpoint and the empty set are checked.
+
+For every real R>0 and U>0, an actual prime set whose log(R/p) lies in [U,2U] has literal convolution reciprocal mass <=1+C/U. A proved dyadic cover retains endpoints and allows overlapping bands; nonnegative sums control the overlap. The exact finite geometric reciprocal sum is <=2. Choosing the actual integer ceiling of log(b/a)/log 2 gives the ACTUAL reciprocal mass bound log(b/a)/log 2+2+2*C/a whenever a<=log(R/p)<=b and 0<a<=b.
+
+For every X>=4 and every finite actual prime set P with 2*p<=X, this proves that the exact reciprocalWeight from the literal triple convolution is <=B(X)=log(log(X)/log 2)/log 2+2+2*C/log 2. All density estimates, real logarithmic intervals, integer ceilings and finite covers are internal. The proved limit B(X)/log X ->0 then gives: for EVERY epsilon>0, ONE integer threshold X0>=4 works BEFORE ALL X>=X0, ALL such prime sets P and ALL bounded completely multiplicative complex functions f, and the ACTUAL norm of (restrictedConvolution-tripleConvolution)/log X is <=epsilon*X. No small-error premise is assumed. One module adds fourteen theorems and four definitions.
+
+This closes the logarithmic-logarithmic bound for the actual reciprocalWeight and the uniform negligible normalized second-convolution error. The small/large prime truncation errors and resulting total triple approximation still need assembly. Perron, full dyadic Halasz and logarithmic short-average transfer remain unfinished. Complete multiplicativity remains explicit; the general merely multiplicative extension and full prime-power weighted mean are not claimed. T19.17 remains conditional and original complete T1.7 unconditional. Coverage remains 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, source hashes, Lean v4.36.0-rc2 and allowed axioms are unchanged. Ubuntu has about 54.2 GiB free; no dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17939 jobs); direct axiom audit passed for 17929 declarations using only propext, Classical.choice and Quot.sound; all 17962 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.17 GiB.

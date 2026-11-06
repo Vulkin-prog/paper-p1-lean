@@ -32404,6 +32404,50 @@
         "status": "not_integrated"
       },
       "validation_commit": "726d114eded9d06528e95e9c5711365286a57410"
+    },
+    {
+      "id": "P1-MATH-0686",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The triple-convolution error contained an actual reciprocalWeight that was still unbounded. Replacing that weight by an assumed logarithmic-logarithmic estimate would leave the analytic gap unchanged.",
+      "finding": "Actual Mertens prime masses and a checked dyadic cover give an explicit log-log bound for reciprocalWeight. Its ratio to log X tends to zero, yielding one uniform threshold before all prime sets and bounded completely multiplicative functions for the actual normalized error.",
+      "proposed_revision": "Use the proved actual band and log-log estimates with their uniform quantifier order. Close the discarded prime ranges and total triple approximation before using Perron or asserting the short-average input.",
+      "impact": "Closes the actual reciprocalWeight and uniform negligible normalized second-convolution error. Prime-edge truncations, total triple/Perron and T19.17 assembly remain unfinished.",
+      "evidence": [
+        "PaperP1.PrimeLogDiameter.constant_pos",
+        "PaperP1.PrimeLogDiameter.coefficient_nonneg",
+        "PaperP1.PrimeLogDiameter.interval_identity",
+        "PaperP1.PrimeLogDiameter.interval_mass_bound",
+        "PaperP1.PrimeLogDiameter.log_reciprocal_le_one",
+        "PaperP1.PrimeLogDiameter.diameter_bound",
+        "PaperP1.PrimeLogDiameter.band_weight_bound",
+        "PaperP1.PrimeLogDiameter.dyadic_cover",
+        "PaperP1.PrimeLogDiameter.geometric_inverse_bound",
+        "PaperP1.PrimeLogDiameter.dyadic_weight_budget",
+        "PaperP1.PrimeLogDiameter.logarithmic_weight_budget",
+        "PaperP1.PrimeLogDiameter.convolution_weight_bound",
+        "PaperP1.PrimeLogDiameter.bound_ratio_tendsto",
+        "PaperP1.PrimeLogDiameter.triple_error_small_uniform",
+        "PaperP1.PrimeLogDiameter.mass",
+        "PaperP1.PrimeLogDiameter.constant",
+        "PaperP1.PrimeLogDiameter.reciprocalMass",
+        "PaperP1.PrimeLogDiameter.bound"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17939 jobs); direct axiom audit passed for 17929 declarations using only propext, Classical.choice and Quot.sound; all 17962 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.17 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
