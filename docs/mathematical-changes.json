@@ -29862,6 +29862,48 @@
         "status": "not_integrated"
       },
       "validation_commit": "7da85fcbf4ca4da15988ad9a9133ae59d291e3f7"
+    },
+    {
+      "id": "P1-MATH-0623",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "A direct higher-degree point-count route still needed a checked implication from vanishing tangent derivatives to actual polynomial zero multiplicity, with characteristic restrictions explicit.",
+      "finding": "Iterated derivatives of an actual a^n*b evaluate to zero below ordern and exactly n!*epsilon(Da)^n*epsilon(b) at ordern. Prime characteristicp makes factorials nonzero belowp, giving actual univariate root-power divisibility from vanishing iterates.",
+      "proposed_revision": "Expose the exact derivation identity and the characteristic threshold in the multiplicity argument. Handle the zero polynomial separately and do not supply the multiplicity conclusion as a premise.",
+      "impact": "Proves the zero-multiplicity mechanism needed in the proposed direct point-count route. Auxiliary existence, general cancellation and projected-surface transfer are still unproved; no canonical input or coverage changes.",
+      "evidence": [
+        "PaperP1.DerivationPowerEvaluation.iter_zero",
+        "PaperP1.DerivationPowerEvaluation.iter_succ_left",
+        "PaperP1.DerivationPowerEvaluation.iter_succ_right",
+        "PaperP1.DerivationPowerEvaluation.derivative_power_succ",
+        "PaperP1.DerivationPowerEvaluation.power_dvd_derivative",
+        "PaperP1.DerivationPowerEvaluation.iter_power_dvd",
+        "PaperP1.DerivationPowerEvaluation.evaluation_vanishes",
+        "PaperP1.DerivationPowerEvaluation.evaluation_exact_order",
+        "PaperP1.DerivationPowerEvaluation.evaluation_ne_zero",
+        "PaperP1.DerivationPowerEvaluation.power_order_lower_bound",
+        "PaperP1.PolynomialDerivationMultiplicity.power_dvd_of_iterates",
+        "PaperP1.PolynomialDerivationMultiplicity.multiplicity_lower_bound",
+        "PaperP1.PrimeCharacteristicDerivationOrder.factorial_ne_zero",
+        "PaperP1.PrimeCharacteristicDerivationOrder.evaluation_ne_zero",
+        "PaperP1.PrimeCharacteristicDerivationOrder.power_order_lower_bound",
+        "PaperP1.DerivationPowerEvaluation.iter"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17675 jobs); direct axiom audit passed for 17259 declarations using only propext, Classical.choice and Quot.sound; all 17119 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.38 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

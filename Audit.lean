@@ -899,6 +899,16 @@ import PaperP1
 #print axioms PaperP1.DegreeScalingHomogeneousMap.map_mk
 #print axioms PaperP1.DegreeScalingHomogeneousMap.map_val
 #print axioms PaperP1.DegreeScalingHomogeneousMap.val_localRingHom
+#print axioms PaperP1.DerivationPowerEvaluation.iter_zero
+#print axioms PaperP1.DerivationPowerEvaluation.iter_succ_left
+#print axioms PaperP1.DerivationPowerEvaluation.iter_succ_right
+#print axioms PaperP1.DerivationPowerEvaluation.derivative_power_succ
+#print axioms PaperP1.DerivationPowerEvaluation.power_dvd_derivative
+#print axioms PaperP1.DerivationPowerEvaluation.iter_power_dvd
+#print axioms PaperP1.DerivationPowerEvaluation.evaluation_vanishes
+#print axioms PaperP1.DerivationPowerEvaluation.evaluation_exact_order
+#print axioms PaperP1.DerivationPowerEvaluation.evaluation_ne_zero
+#print axioms PaperP1.DerivationPowerEvaluation.power_order_lower_bound
 #print axioms PaperP1.DiagonalQuadricFactorization.linear_not_unit
 #print axioms PaperP1.DiagonalQuadricFactorization.binary_not_irreducible
 #print axioms PaperP1.DiagonalQuadricFactorization.at_least_three_nonzero
@@ -2082,6 +2092,8 @@ import PaperP1
 #print axioms PaperP1.PolynomialCoordinateProjectionFinite.quotientEquiv_mk
 #print axioms PaperP1.PolynomialCoordinateProjectionFinite.parameterMap_X
 #print axioms PaperP1.PolynomialCoordinateProjectionFinite.finite
+#print axioms PaperP1.PolynomialDerivationMultiplicity.power_dvd_of_iterates
+#print axioms PaperP1.PolynomialDerivationMultiplicity.multiplicity_lower_bound
 #print axioms PaperP1.PolynomialDeterminantHeight.product_degree
 #print axioms PaperP1.PolynomialDeterminantHeight.product_height
 #print axioms PaperP1.PolynomialDeterminantHeight.unit_mul_height
@@ -2157,6 +2169,9 @@ import PaperP1
 #print axioms PaperP1.PowerSeriesSimpleRoot.exists_root
 #print axioms PaperP1.PowerSeriesSquareGap.not_square
 #print axioms PaperP1.PowerSeriesSquareGap.not_fraction_square
+#print axioms PaperP1.PrimeCharacteristicDerivationOrder.factorial_ne_zero
+#print axioms PaperP1.PrimeCharacteristicDerivationOrder.evaluation_ne_zero
+#print axioms PaperP1.PrimeCharacteristicDerivationOrder.power_order_lower_bound
 #print axioms PaperP1.PrimeClassHeightAuxiliary.exists_auxiliary
 #print axioms PaperP1.PrimeClassStandardMonomialAuxiliary.exists_auxiliary
 #print axioms PaperP1.PrimitiveBirationalFractionRing.closure_eq_top

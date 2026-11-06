@@ -1,6 +1,18 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0622: ONE actual nonzero integer certificate
+Current checkpoint P1-MATH-0623: actual iterated derivatives of a^n*b
+vanish below ordern at a zero ofa and evaluate EXACTLY to
+n!*epsilon(Da)^n*epsilon(b) at ordern. Factorials are internally proved
+nonzero below the prime characteristic. Vanishing tangent iterates force
+an actual univariate polynomial factor (X-Cx)^m when m<=p; the zero
+polynomial is handled separately. These algebraic foundations do not prove
+auxiliary existence, general higher-degree cancellation or projected-surface
+point counts. Canonical T1.7 retains ONLY its prior finite-field surface
+input in actual degrees>2 at the original families/caps. Coverage stays163
+proved,2 conditional,2 in_progress out of167; all73 main results proved.
+No Palomar registration.
+
+Historical checkpoint P1-MATH-0622: ONE actual nonzero integer certificate
 excludes characteristic2 and ALL collisions of the integer branch shifts.
 It controls every subset union simultaneously, with certificate size at most
 2*(2H)^(n*(n-1)) and an ACTUAL exceptional-prime logarithmic budget at most
@@ -29497,6 +29509,15 @@ additional distinctness or cancellation premise. This is a stated structural
 subclass; general higher-degree cancellation and the source-to-projected-P3
 transfer remain unproved. Canonical T1.7 inputs and coverage are unchanged.
 
+## Internally proved derivative-to-multiplicity mechanism
+
+P1-MATH-0623 proves the exact iterated-derivation power evaluation and the
+actual polynomial root-power divisibility implication in prime characteristic.
+The factorial restriction is proved, and the zero polynomial is separate.
+These are preparatory algebraic tools. No auxiliary existence, general
+character cancellation or point-count theorem follows without additional
+work. The canonical finite-field surface input and coverage are unchanged.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -30392,3 +30413,18 @@ SplitBranchPrimeCertificate constructs the actual union of all I/J branch suppor
 Three modules add twenty-one theorems and four definitions. This handles reduction obstructions for the explicit small-branch source subclass; it does not prove general higher-degree character cancellation or transfer source counts to all original projected P3 equations. The general classical plane inputs remain unproved. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families/caps. Coverage stays163 proved,2 conditional,2 in_progress out of167; all73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, allowed axioms and checking options are unchanged. Work remains on Ubuntu with about55.4GiB available and no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17669 jobs); direct axiom audit passed for 17244 declarations using only propext, Classical.choice and Quot.sound; all 17103 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.40 GiB.
+
+
+## Exact iterated-derivation evaluations and actual root multiplicity in prime characteristic
+
+Stable ID: p1:internal:iterated-derivation-multiplicity-order. Actual derivative-to-multiplicity implications are proved with exact characteristic restrictions. No general point estimate is claimed, and canonical T1.7 is unchanged.
+
+DerivationPowerEvaluation defines the ACTUAL iterated linear derivation and proves both recursion directions. The first derivative of a power lowers its divisibility by at most1; after r iterations an original a^n factor leaves an actual a^(n-r) divisor. Evaluation at a zero ofa therefore vanishes whenever r<n. At the exact ordern the evaluation is PROVED to equal n!*epsilon(Da)^n*epsilon(b) for a^n*b. With nonzero factorial, tangent value and residual value this is nonzero, and vanishing through all lower orders forces the actual power order to be at least the number of vanishings. No multiplicity assertion is a premise.
+
+PrimeCharacteristicDerivationOrder proves directly that n! is nonzero in prime characteristicp for n<p, using the checked prime-divides-factorial criterion. It discharges the factorial premise in the actual derivation evaluation and order lower-bound theorems. All characteristic and order restrictions are explicit.
+
+PolynomialDerivationMultiplicity applies these facts to an ACTUAL univariate polynomial and any tangent derivation with (D X)(x)!=0. If its iterates vanish atx for all r<m and m<=p, the actual factor (X-Cx)^m divides the polynomial. For nonzero polynomials this yields the literal rootMultiplicity lower bound. The proof uses the actual polynomial factor at its existing root multiplicity and a residual with nonzero evaluation. The zero polynomial is handled separately, rather than assigning it a false finite root-multiplicity bound.
+
+Three modules add fifteen theorems and one definition. These are internally proved algebraic foundations for a possible direct multiplicity point-count argument in the higher-degree source route. No auxiliary-function existence, general higher-degree character cancellation, curve point estimate or source-to-projected-surface transfer is claimed proved. Canonical T1.7 remains UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original families/caps. Its two-input plane alternative remains conditional. Coverage stays163 proved,2 conditional,2 in_progress out of167, with all73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and allowed axioms are unchanged. Work remains on Ubuntu with about55.4GiB available, without dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17675 jobs); direct axiom audit passed for 17259 declarations using only propext, Classical.choice and Quot.sound; all 17119 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.38 GiB.

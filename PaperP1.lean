@@ -4493,3 +4493,6 @@ public import PaperP1.Arithmetic.SmallSplitBranchPointBound
 public import PaperP1.Arithmetic.BranchShiftCollisionPrimeBudget
 public import PaperP1.Arithmetic.BranchShiftReductionCertificate
 public import PaperP1.Arithmetic.SplitBranchPrimeCertificate
+public import PaperP1.Algebra.DerivationPowerEvaluation
+public import PaperP1.Algebra.PolynomialDerivationMultiplicity
+public import PaperP1.Algebra.PrimeCharacteristicDerivationOrder
