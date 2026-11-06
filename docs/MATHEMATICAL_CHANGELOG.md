@@ -1,6 +1,16 @@
 # Mathematical corrections and improvements
 
-Current checkpoint P1-MATH-0792: The actual repeated-prime product least
+Current checkpoint P1-MATH-0793: Actual amplified prime Dirichlet
+products have explicit all-order continuous and sampled mean bounds. The
+complementary bad-prime frequency contribution, the central-frequency
+mean subtraction and complete logarithmic short-average concentration
+remain unproved. T19.17 conditional; original T1.7 unconditional.
+Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main
+proved. Sources, false-scope corrections, compiler and axioms unchanged.
+About 52.28 GiB free on Ubuntu. No dependency download or Palomar
+registration.
+
+Historical checkpoint P1-MATH-0792: The actual repeated-prime product least
 common multiple kernel has an explicit all-order bound. The
 complementary bad-prime frequency contribution, the central-frequency
 mean subtraction and complete logarithmic short-average concentration
@@ -1887,7 +1897,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**790 mathematical improvements and two statement-scope corrections are confirmed.**
+**791 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -32105,3 +32115,12 @@ For EVERY k and finite prime support P with reciprocal mass H=sum(1/p)<=1, the A
 The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.28 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18151 jobs); direct axiom audit passed for 18551 declarations using only propext, Classical.choice and Quot.sound; all 18732 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.28 GiB.
+
+
+## Actual amplified prime Dirichlet products have explicit all-order continuous and sampled mean bounds
+
+For EVERY order k, finite prime band P in [L,U] of reciprocal mass<=1, actual cofactor support B in [M,K], and unit-bounded prime and cofactor coefficients, BOTH the continuous and unit-separated sampled means of the ACTUAL product (prime Dirichlet polynomial)^k times the ACTUAL cofactor polynomial have explicit bounds. The exact product endpoints are L^k*M and U^k*K. The actual coefficient kernel is bounded by the fully proved budget (k!)^2*16^k*(k+1)*(sum(1/p))^k; its nonnegativity is proved. Three theorems and one budget definition combine the exact power coefficients, convolution identity, actual mean values and proved all-order lcm estimate. No external amplified-moment input is assumed.
+
+The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.28 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18153 jobs); direct axiom audit passed for 18554 declarations using only propext, Classical.choice and Quot.sound; all 18736 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.26 GiB.

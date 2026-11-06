@@ -4732,3 +4732,4 @@ public import PaperP1.Analysis.PrimeProductDegree
 public import PaperP1.Analysis.PrimeProductLcmLayers
 public import PaperP1.Analysis.PrimeProductDivisorCard
 public import PaperP1.Analysis.PrimeProductLcmKernel
+public import PaperP1.Analysis.AmplifiedPrimeProductMean
