@@ -1,6 +1,17 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0672: exact finite Gram synthesis,
+Current checkpoint P1-MATH-0673: ACTUAL logarithmic Gram
+correlations are PROVED, with exact diagonal N and oscillatory
+bound 3N/|t|+|t|. An explicit separated Dirichlet large-value
+cardinality estimate now has NO Gram-cap premise. Its |t| error
+and positive-denominator regime are retained; stronger prime/real
+multiplicative estimates and logarithmic short-average assembly
+remain unfinished. T19.17 conditional; original T1.7 complete.
+Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main
+results proved. False scopes and checked corrections unchanged.
+No Palomar registration.
+
+Historical checkpoint P1-MATH-0672: exact finite Gram synthesis,
 duality and correlation-sensitive large-value cardinality bounds
 are PROVED, retaining every diagonal and coefficient factor.
 Actual Gram row/off-diagonal caps are explicit hypotheses here;
@@ -949,7 +960,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records670 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records671 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -1068,7 +1079,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **17760 audited theorem/lemma declarations**. This
+- The project currently has **17778 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -30649,3 +30660,16 @@ A correlation-sensitive form separates the literal diagonal cap D>=0 and off-dia
 This closes finite Gram duality and the correlation-sensitive large-value inequality itself. The actual logarithmic-phase Gram identity and the required oscillatory/correlation caps for the relevant Dirichlet polynomials remain to be proved. An implication from an explicit Gram cap is not counted as a proof of that cap or of T19.17. The main quotient frequency estimate, real-multiplicative bounds and logarithmic short-average assembly remain unfinished. T19.17 retains its explicit analytic input; original complete T1.7 remains unconditional. Coverage stays 164 proved, 1 conditional, 2 in_progress out of 167; all 73 main results proved. False original scopes and checked corrected replacements are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Ubuntu retains about 54.5 GiB; no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17889 jobs); direct axiom audit passed for 17760 declarations using only propext, Classical.choice and Quot.sound; all 17752 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.44 GiB.
+
+
+## Actual logarithmic exponential correlations and explicit Dirichlet Gram large values
+
+LogarithmicExponentialSum defines the literal phase exp(-i*t*log x), computes its actual derivative on x>0 and proves its unit norm and continuity on positive intervals. The actual derivative norm is |t|/x. A proved local variation bound controls the error on every unit interval. Exact adjacent-interval integration then gives |sum_{N<=n<2N}exp(-i*t*log n)-integral_N^{2N}exp(-i*t*log x)dx|<=|t| for every N>0. The actual primitive x*exp(-i*t*log x)/(1-i*t), its nonzero denominator and its derivative are all proved. The actual integral has norm <=3N/|t| for t nonzero, giving the unconditional oscillatory estimate |sum_{N<=n<2N}exp(-i*t*log n)|<=3N/|t|+|t|. No oscillatory-sum estimate is a premise.
+
+DirichletGramLargeValues proves the exact phase time-difference identity and identifies the ACTUAL finite Gram matrix of logarithmic sample phases with this literal exponential sum at tau_r-tau_s. The diagonal norm is exactly the actual coefficient-support cardinality. On [N,2N) it is exactly N, and the off-diagonal norm is bounded by 3N/|tau_r-tau_s|+|tau_r-tau_s|. These replace the previously unproved Gram-cap placeholders for this concrete setting.
+
+For actual samples in [-T,T], T>0, at pairwise distance >=Delta>0, the actual off-diagonal cap is M=3N/Delta+2T. Combining the checked correlation bound with the internal finite Gram duality gives the actual cardinality estimate |R|<=N*A/(V^2-M*A), where A=sum_{N<=n<2N}|a_n|^2, all sampled values have norm >=V>0, and the necessary denominator condition V^2>M*A is explicit. No Gram-row, diagonal or off-diagonal estimate is supplied as a premise in this concrete theorem. Every coefficient, interval, sample and error term is actual. Two modules add eighteen theorems and two definitions.
+
+This closes an unconditional concrete logarithmic Gram correlation and its elementary separated large-value bound. The displayed |t| error and positive-denominator regime limit its strength; it does not establish the stronger real-multiplicative/prime estimates required for the full logarithmic short-average theorem. The main quotient frequency estimate, coupled-domain handling and short-average assembly remain unfinished. T19.17 retains its explicit analytic input; original complete T1.7 remains unconditional. Coverage stays 164 proved, 1 conditional, 2 in_progress out of 167; all 73 main results proved. False original scopes and checked corrected replacements are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Ubuntu retains about 54.4 GiB; no dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17893 jobs); direct axiom audit passed for 17778 declarations using only propext, Classical.choice and Quot.sound; all 17772 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.42 GiB.

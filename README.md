@@ -1,6 +1,17 @@
 # P1 — Lean formalization
 
-Current checkpoint P1-MATH-0672: exact finite Gram synthesis,
+Current checkpoint P1-MATH-0673: ACTUAL logarithmic Gram
+correlations are PROVED, with exact diagonal N and oscillatory
+bound 3N/|t|+|t|. An explicit separated Dirichlet large-value
+cardinality estimate now has NO Gram-cap premise. Its |t| error
+and positive-denominator regime are retained; stronger prime/real
+multiplicative estimates and logarithmic short-average assembly
+remain unfinished. T19.17 conditional; original T1.7 complete.
+Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main
+results proved. False scopes and checked corrections unchanged.
+No Palomar registration.
+
+Historical checkpoint P1-MATH-0672: exact finite Gram synthesis,
 duality and correlation-sensitive large-value cardinality bounds
 are PROVED, retaining every diagonal and coefficient factor.
 Actual Gram row/off-diagonal caps are explicit hypotheses here;
@@ -829,7 +840,7 @@ recorded in the linked ledger and [current status](docs/FORMALIZATION_STATUS.md)
 
 Companion T1.10 needs an enlarged alignment exclusion for unequal old/new widths: its literal radius-one version has an unconditional formal counterexample. The corrected coarse4/3 profile is proved under explicit geometric inputs; its sharper31/24 form remains open; see [the scope correction](docs/ASYMMETRIC_ALIGNMENT_SCOPE.md).
 
-The main optimal4/3 quadratic approximation power is now proved under explicit BCN and finite geometric properties, including both bounds, exact actual parameters, nominal-mean bias and eventual probability status. The optimal41/30 third factorial cumulant, full third absolute activity and aligned-channel triple claims are now proved under explicit geometric inputs, withBCN retained for the full connected argument. The actual original count and its retained modification converge in total variation to the actual-mean and nominal-mean Poisson laws without unproved inputs (P1-MATH-0413); quantitative optimal law rates remain separate. Exact fourth-cumulant component identities and unconditional weak, irregular and incompatible pair bounds are proved. In particular, the actual absolute pair activity is asymptotic to half the actual second factorial cumulant, without BCN or a complete pair profile. The contact activity bound at every fixed order now holds unconditionally on every dyadic subground, including irregular starts and zero marginals. The activation probability of the actual principal edge family now has the unconditional exponent -2/3, with any fixed epsilon margin. The planar normal budget T20.4 is now proved with improved constants and an integer-fibre argument. T20.6, the prescribed-plane transverse-product count and its actual affine mass bound, is now proved internally with three motifs and no Pila premise. The project records **670 confirmed mathematical improvements and two statement-scope corrections**. See [current status](docs/FORMALIZATION_STATUS.md), [the activity alignment](docs/FIXED_ABSOLUTE_ACTIVITY_ALIGNMENT.md) and [the mathematical change log](docs/MATHEMATICAL_CHANGELOG.md).
+The main optimal4/3 quadratic approximation power is now proved under explicit BCN and finite geometric properties, including both bounds, exact actual parameters, nominal-mean bias and eventual probability status. The optimal41/30 third factorial cumulant, full third absolute activity and aligned-channel triple claims are now proved under explicit geometric inputs, withBCN retained for the full connected argument. The actual original count and its retained modification converge in total variation to the actual-mean and nominal-mean Poisson laws without unproved inputs (P1-MATH-0413); quantitative optimal law rates remain separate. Exact fourth-cumulant component identities and unconditional weak, irregular and incompatible pair bounds are proved. In particular, the actual absolute pair activity is asymptotic to half the actual second factorial cumulant, without BCN or a complete pair profile. The contact activity bound at every fixed order now holds unconditionally on every dyadic subground, including irregular starts and zero marginals. The activation probability of the actual principal edge family now has the unconditional exponent -2/3, with any fixed epsilon margin. The planar normal budget T20.4 is now proved with improved constants and an integer-fibre argument. T20.6, the prescribed-plane transverse-product count and its actual affine mass bound, is now proved internally with three motifs and no Pila premise. The project records **671 confirmed mathematical improvements and two statement-scope corrections**. See [current status](docs/FORMALIZATION_STATUS.md), [the activity alignment](docs/FIXED_ABSOLUTE_ACTIVITY_ALIGNMENT.md) and [the mathematical change log](docs/MATHEMATICAL_CHANGELOG.md).
 
 Article13.1 now has a complete actual short-basis construction, with
 both physical projections and the common square-class map injective.
@@ -2280,3 +2291,5 @@ P1-MATH-0670 proves a full weighted Ramare identity with an actual residual in [
 P1-MATH-0671 proves the exact actual Dirichlet Ramare quotient identity and a uniform negligible L2 difference for all bounded completely multiplicative coefficients and 0<T<=N, retaining the coupled product domain. T19.17 remains conditional.
 
 P1-MATH-0672 proves exact finite Gram duality and correlation-sensitive large-value cardinality bounds, retaining the actual diagonal and explicit correlation-cap hypotheses. Actual logarithmic correlation estimates and T19.17 remain unfinished.
+
+P1-MATH-0673 proves the actual logarithmic correlation <=3N/|t|+|t| and exact diagonal N, then derives a concrete separated Dirichlet large-value cardinality bound without a Gram-cap premise. T19.17 remains conditional.

@@ -4602,3 +4602,5 @@ public import PaperP1.Analysis.SupportedCoefficientSquareBudget
 public import PaperP1.Arithmetic.RamareWeights
 public import PaperP1.Analysis.DirichletRamareApproximation
 public import PaperP1.Analysis.FiniteGramLargeValues
+public import PaperP1.Analysis.DirichletGramLargeValues
+public import PaperP1.Analysis.LogarithmicExponentialSum

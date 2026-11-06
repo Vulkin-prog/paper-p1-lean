@@ -31861,6 +31861,52 @@
         "status": "not_integrated"
       },
       "validation_commit": "56d760cfef9107ce7290400aa769b426687d57b3"
+    },
+    {
+      "id": "P1-MATH-0673",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The finite Gram theorem still required actual logarithmic correlations. Treating the phases as orthogonal or omitting the sum-versus-integral error would assert an unjustified concrete large-value estimate.",
+      "finding": "The actual logarithmic phase sum differs from its computed integral by at most |t|, yielding correlation <=3N/|t|+|t|, the exact diagonal N and a concrete separated Gram cardinality bound with no correlation premise.",
+      "proposed_revision": "Use the actual correlation estimate with its explicit |t| error and denominator regime. Prove stronger frequency/real-multiplicative estimates before extrapolating to the full logarithmic short-average range.",
+      "impact": "Closes the actual logarithmic Gram identity and an unconditional elementary separated large-value bound. Its stated regime does not discharge T19.17.",
+      "evidence": [
+        "PaperP1.DirichletGramLargeValues.phase_time_difference",
+        "PaperP1.DirichletGramLargeValues.gram_identity",
+        "PaperP1.DirichletGramLargeValues.diagonal_norm",
+        "PaperP1.DirichletGramLargeValues.dyadic_correlation",
+        "PaperP1.DirichletGramLargeValues.separated_correlation_cap",
+        "PaperP1.DirichletGramLargeValues.large_values_card",
+        "PaperP1.LogarithmicExponentialSum.function_norm",
+        "PaperP1.LogarithmicExponentialSum.hasDerivAt_function",
+        "PaperP1.LogarithmicExponentialSum.derivative_norm",
+        "PaperP1.LogarithmicExponentialSum.continuousOn_function",
+        "PaperP1.LogarithmicExponentialSum.local_variation",
+        "PaperP1.LogarithmicExponentialSum.unit_integral_error",
+        "PaperP1.LogarithmicExponentialSum.sum_integral_error",
+        "PaperP1.LogarithmicExponentialSum.denominator_ne",
+        "PaperP1.LogarithmicExponentialSum.hasDerivAt_primitive",
+        "PaperP1.LogarithmicExponentialSum.interval_integral",
+        "PaperP1.LogarithmicExponentialSum.interval_integral_norm",
+        "PaperP1.LogarithmicExponentialSum.exponential_sum_bound",
+        "PaperP1.LogarithmicExponentialSum.function",
+        "PaperP1.LogarithmicExponentialSum.primitive"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17893 jobs); direct axiom audit passed for 17778 declarations using only propext, Classical.choice and Quot.sound; all 17772 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.42 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
