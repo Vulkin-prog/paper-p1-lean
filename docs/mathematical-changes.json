@@ -27151,6 +27151,41 @@
         "status": "not_integrated"
       },
       "validation_commit": "f571bf19fd78edadce028f72b9309bfd108c57d6"
+    },
+    {
+      "id": "P1-MATH-0565",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The assembled hypersurface projection still used a Fin-indexed abstract source, and had not been applied to the literal finite monomial/radical coordinates and actual three-power normalization of the chosen source surface.",
+      "finding": "The actual chosen source surface now has a bounded integer birational projection into projective three-space, with exact degree2^k*D^2, a nonzero homogeneous partial-derivative conductor, and explicit coefficient and height constants depending only on k,D.",
+      "proposed_revision": "Use the actual finite-coordinate projection with coefficientBound(k,D) and heightFactor(k,D), and identify the three power parameters as literal original embedding coordinates before transferring normalized integer points.",
+      "impact": "Closes the actual source-model and finite-index specialization of the bounded surface projection, while preserving the remaining point transport and covering obligations explicitly.",
+      "evidence": [
+        "PaperP1.SourceSurfacePowerCoordinates.generator_eq",
+        "PaperP1.FiniteIndexHomogeneousProjection.exists_projection",
+        "PaperP1.SourceSurfaceBoundedProjection.coefficientBound_pos",
+        "PaperP1.SourceSurfaceBoundedProjection.heightFactor_pos",
+        "PaperP1.SourceSurfaceBoundedProjection.exists_projection",
+        "PaperP1.SourceSurfacePowerCoordinates.index",
+        "PaperP1.SourceSurfaceBoundedProjection.coefficientBound",
+        "PaperP1.SourceSurfaceBoundedProjection.heightFactor",
+        "PaperP1.SourceSurfaceBoundedProjection.primitive"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17077 jobs); direct axiom audit passed for 16336 declarations using only propext, Classical.choice and Quot.sound; all 15967 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.24 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

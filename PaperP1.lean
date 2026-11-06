@@ -4211,3 +4211,6 @@ public import PaperP1.Algebra.SourceSurfacePowerParameters
 public import PaperP1.Geometry.BoundedHomogeneousHypersurfaceProjection
 public import PaperP1.Geometry.HypersurfaceImagePointSeparation
 public import PaperP1.Geometry.LinearHypersurfaceImageBirational
+public import PaperP1.Algebra.SourceSurfacePowerCoordinates
+public import PaperP1.Geometry.FiniteIndexHomogeneousProjection
+public import PaperP1.Geometry.SourceSurfaceBoundedProjection

@@ -2229,6 +2229,7 @@ import PaperP1
 #print axioms PaperP1.SourceCurveRadicalRelations.baseRadicand_mem_two
 #print axioms PaperP1.SourceCurveRadicalRelations.original_square
 #print axioms PaperP1.SourceCurveRadicalRelations.root_square
+#print axioms PaperP1.SourceSurfacePowerCoordinates.generator_eq
 #print axioms PaperP1.SourceSurfacePowerParameters.parameter_mem
 #print axioms PaperP1.SourceSurfacePowerParameters.factor
 #print axioms PaperP1.SourceSurfacePowerParameters.injective
@@ -12337,6 +12338,7 @@ import PaperP1
 #print axioms PaperP1.BoundedRegularSectionAvoidance.exists_coefficients
 #print axioms PaperP1.BoundedRegularSectionAvoidance.exists_coefficients_powers
 #print axioms PaperP1.FiniteCurvePrimitiveCoordinate.exists_coordinate
+#print axioms PaperP1.FiniteIndexHomogeneousProjection.exists_projection
 #print axioms PaperP1.GradedVeroneseProj.map_isIso
 #print axioms PaperP1.GradedVeroneseProj.iso_hom
 #print axioms PaperP1.HypersurfaceImagePointSeparation.evaluations_equal_of_conductor
@@ -12677,6 +12679,9 @@ import PaperP1
 #print axioms PaperP1.SourceProjectivePlane.projection_rank
 #print axioms PaperP1.SourceProjectiveRank.map_rank
 #print axioms PaperP1.SourceProjectiveRank.map_surjective
+#print axioms PaperP1.SourceSurfaceBoundedProjection.coefficientBound_pos
+#print axioms PaperP1.SourceSurfaceBoundedProjection.heightFactor_pos
+#print axioms PaperP1.SourceSurfaceBoundedProjection.exists_projection
 #print axioms PaperP1.VeroneseHomogeneousPrime.pointEquiv_apply
 #print axioms PaperP1.VeroneseHomogeneousPrime.comap_inverse
 #print axioms PaperP1.VeroneseHomogeneousPrime.exists_prime_over
