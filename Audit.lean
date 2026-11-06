@@ -4718,6 +4718,12 @@ import PaperP1
 #print axioms PaperP1.RelativePrimeRamare.full_presence_ramare
 #print axioms PaperP1.RelativePrimeRamare.value_weighted_sum
 #print axioms PaperP1.RelativePrimeRamare.twisted_presence_identity
+#print axioms PaperP1.RelativeRamareRemainder.residual_bounds
+#print axioms PaperP1.RelativeRamareRemainder.coefficient_norm_bound
+#print axioms PaperP1.RelativeRamareRemainder.residual_eq_zero
+#print axioms PaperP1.RelativeRamareRemainder.value_relation
+#print axioms PaperP1.RelativeRamareRemainder.difference_identity
+#print axioms PaperP1.RelativeRamareRemainder.quotient_continuous
 #print axioms PaperP1.RoundedScaleSideBudget.rounded_upper
 #print axioms PaperP1.RoundedScaleSideBudget.square_root_bound
 #print axioms PaperP1.RoundedScaleSideBudget.horizontal_cost

@@ -34912,6 +34912,41 @@
         "status": "not_integrated"
       },
       "validation_commit": "749939a68c812c85a74c032598bce962f40e818c"
+    },
+    {
+      "id": "P1-MATH-0756",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The simpler p-independent cofactor restriction needs an actual exact residual identity and norm/support control before replacing the earlier squarefree arithmetic masks.",
+      "finding": "The literal residual is 1-weight(P,n)*presence(Q,n). It lies in [0,1] for prime P and arbitrary Q, so multiplying any unit-bounded complex coefficient preserves its norm bound. It is zero when n has a prime divisor in EACH support and has no square divisor from P. The exact value relation and relative-prime Ramare identity prove that the ACTUAL full dyadic Dirichlet polynomial minus the literal relative quotient equals the Dirichlet polynomial of this residual coefficient. The quotient retains only the other-band presence in its cofactor coefficient, its actual count denominator and the source test p*m in [N,2N). Its continuity is proved. Six theorems and three definitions are added.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Actual relative Ramare quotient has an exact bounded residual coefficient. The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.RelativeRamareRemainder.residual_bounds",
+        "PaperP1.RelativeRamareRemainder.coefficient_norm_bound",
+        "PaperP1.RelativeRamareRemainder.residual_eq_zero",
+        "PaperP1.RelativeRamareRemainder.value_relation",
+        "PaperP1.RelativeRamareRemainder.difference_identity",
+        "PaperP1.RelativeRamareRemainder.quotient_continuous",
+        "PaperP1.RelativeRamareRemainder.residual",
+        "PaperP1.RelativeRamareRemainder.coefficient",
+        "PaperP1.RelativeRamareRemainder.quotient"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18079 jobs); direct axiom audit passed for 18419 declarations using only propext, Classical.choice and Quot.sound; all 18571 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.93 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

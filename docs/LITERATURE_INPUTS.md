@@ -1,6 +1,15 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0755: Exact Ramare identity for coefficients
+Current checkpoint P1-MATH-0756: Actual relative Ramare quotient has an
+exact bounded residual coefficient. The actual Ramare main-term
+frequency bounds and complete logarithmic short-average concentration
+remain unproved. T19.17 conditional; original T1.7 unconditional.
+Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main
+proved. Sources, false-scope corrections, compiler and axioms unchanged.
+About 52.9 GiB free on Ubuntu. No dependency download or Palomar
+registration.
+
+Historical checkpoint P1-MATH-0755: Exact Ramare identity for coefficients
 multiplicative at the extracted primes. The actual Ramare main-term
 frequency bounds and complete logarithmic short-average concentration
 remain unproved. T19.17 conditional; original T1.7 unconditional.
@@ -31938,6 +31947,12 @@ The actual finite weighted Ramare identity is proved under the weaker literal co
 
 The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.
 
+## Internal actual relative ramare quotient has an exact bounded residual coefficient
+
+The literal residual is 1-weight(P,n)*presence(Q,n). It lies in [0,1] for prime P and arbitrary Q, so multiplying any unit-bounded complex coefficient preserves its norm bound. It is zero when n has a prime divisor in EACH support and has no square divisor from P. The exact value relation and relative-prime Ramare identity prove that the ACTUAL full dyadic Dirichlet polynomial minus the literal relative quotient equals the Dirichlet polynomial of this residual coefficient. The quotient retains only the other-band presence in its cofactor coefficient, its actual count denominator and the source test p*m in [N,2N). Its continuity is proved. Six theorems and three definitions are added.
+
+The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -34679,3 +34694,14 @@ The actual finite weighted Ramare identity is proved under the weaker literal co
 The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.1 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18077 jobs); direct axiom audit passed for 18413 declarations using only propext, Classical.choice and Quot.sound; all 18562 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.95 GiB.
+
+
+## Actual relative Ramare quotient has an exact bounded residual coefficient
+
+Stable ID: p1:internal:relative-ramare-remainder. Actual relative Ramare quotient has an exact bounded residual coefficient. The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.
+
+The literal residual is 1-weight(P,n)*presence(Q,n). It lies in [0,1] for prime P and arbitrary Q, so multiplying any unit-bounded complex coefficient preserves its norm bound. It is zero when n has a prime divisor in EACH support and has no square divisor from P. The exact value relation and relative-prime Ramare identity prove that the ACTUAL full dyadic Dirichlet polynomial minus the literal relative quotient equals the Dirichlet polynomial of this residual coefficient. The quotient retains only the other-band presence in its cofactor coefficient, its actual count denominator and the source test p*m in [N,2N). Its continuity is proved. Six theorems and three definitions are added.
+
+The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18079 jobs); direct axiom audit passed for 18419 declarations using only propext, Classical.choice and Quot.sound; all 18571 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.93 GiB.
