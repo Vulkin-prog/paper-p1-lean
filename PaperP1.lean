@@ -4549,3 +4549,4 @@ public import PaperP1.Algebra.AffinePowerParameterFractionField
 public import PaperP1.Algebra.LocalizedAffineQuadraticSource
 public import PaperP1.Algebra.FullDegreeAffineSourceField
 public import PaperP1.Algebra.FullDegreeSourceDerivativeConductor
+public import PaperP1.Algebra.AffinePowerProjectionImage

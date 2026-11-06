@@ -453,6 +453,15 @@ import PaperP1
 #print axioms PaperP1.AffinePowerParameterFractionField.generators
 #print axioms PaperP1.AffinePowerParameterFractionField.finiteDimensional
 #print axioms PaperP1.AffinePowerParameterFractionField.dimension_le
+#print axioms PaperP1.AffinePowerProjectionImage.parameterMap_variables
+#print axioms PaperP1.AffinePowerProjectionImage.parameterMap_evaluation
+#print axioms PaperP1.AffinePowerProjectionImage.sourceScalarTower
+#print axioms PaperP1.AffinePowerProjectionImage.image_eq_parameter_adjoin
+#print axioms PaperP1.AffinePowerProjectionImage.generated_coordinates
+#print axioms PaperP1.AffinePowerProjectionImage.image_generated
+#print axioms PaperP1.AffinePowerProjectionImage.polynomial_value
+#print axioms PaperP1.AffinePowerProjectionImage.equation
+#print axioms PaperP1.AffinePowerProjectionImage.conductor
 #print axioms PaperP1.AffineQuotientChartComparison.chartIdeal_map
 #print axioms PaperP1.AffineQuotientChartComparison.combinedEquiv_mk
 #print axioms PaperP1.AffineQuotientChartComparison.quotientEquiv_mk
