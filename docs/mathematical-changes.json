@@ -41443,6 +41443,35 @@
         "status": "not_integrated"
       },
       "validation_commit": "15e4a0ab50eba73bbb5a3990cc54b5906eb1ebd8"
+    },
+    {
+      "id": "P1-MATH-0963",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "Internal actual Gaussian route to logarithmic short averages; this bound alone does not establish their concentration.",
+      "finding": "Two theorems and one definition prove an unconditional Gaussian weighted mean-square bound for every actual bounded dyadic Dirichlet polynomial: its full weighted energy is at most sqrt(pi/b)/N+4*pi. On every measurable set with abs(t)>=T, the energy with doubled Gaussian damping is at most exp(-b*T^2) times that same budget. Actual logarithmic separation, coefficient energy and all Gaussian integrability conditions are proved. No tail estimate is assumed.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "The actual Gaussian-weighted Dirichlet energy has a uniform quantitative tail. The actual off-central Dirichlet estimate and the ordinary smooth long-interval mean comparison are proved. The analytic comparison with logarithmic short averages remains unproved, so T19.17 remains conditional. The stronger uniform short-average theorem for all real completely multiplicative functions is not established.",
+      "evidence": [
+        "PaperP1.GaussianDirichletTail.gaussian_bound",
+        "PaperP1.GaussianDirichletTail.tail_bound",
+        "PaperP1.GaussianDirichletTail.budget"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18493 jobs); direct axiom audit passed for 19202 declarations using only propext, Classical.choice and Quot.sound; all 19507 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.29 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

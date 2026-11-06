@@ -1,6 +1,18 @@
 # Mathematical corrections and improvements
 
-Current checkpoint P1-MATH-0962: The actual rounded long comparison
+Current checkpoint P1-MATH-0963: The actual Gaussian-weighted Dirichlet
+energy has a uniform quantitative tail. The actual off-central Dirichlet
+estimate and the ordinary smooth long-interval mean comparison are
+proved. The analytic comparison with logarithmic short averages remains
+unproved, so T19.17 remains conditional. The stronger uniform short-
+average theorem for all real completely multiplicative functions is not
+established. T19.17 conditional; original T1.7 unconditional. Coverage:
+164 proved, 1 conditional, 2 in_progress /167; all 73 main proved.
+Sources, false-scope corrections, compiler and axioms unchanged. About
+52.29 GiB free on Ubuntu. No dependency download or Palomar
+registration.
+
+Historical checkpoint P1-MATH-0962: The actual rounded long comparison
 length diverges and is negligible relative to N. The actual off-central
 Dirichlet estimate and the ordinary smooth long-interval mean comparison
 are proved. The analytic comparison with logarithmic short averages
@@ -3452,7 +3464,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**960 mathematical improvements and two statement-scope corrections are confirmed.**
+**961 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -35200,3 +35212,12 @@ Four theorems prove that ceil(N/sqrt(log(N))) is at least sqrt(N) for every N>=2
 The actual off-central Dirichlet estimate and the ordinary smooth long-interval mean comparison are proved. The analytic comparison with logarithmic short averages remains unproved, so T19.17 remains conditional. The stronger uniform short-average theorem for all real completely multiplicative functions is not established. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.33 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18491 jobs); direct axiom audit passed for 19200 declarations using only propext, Classical.choice and Quot.sound; all 19504 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.31 GiB.
+
+
+## The actual Gaussian-weighted Dirichlet energy has a uniform quantitative tail
+
+Two theorems and one definition prove an unconditional Gaussian weighted mean-square bound for every actual bounded dyadic Dirichlet polynomial: its full weighted energy is at most sqrt(pi/b)/N+4*pi. On every measurable set with abs(t)>=T, the energy with doubled Gaussian damping is at most exp(-b*T^2) times that same budget. Actual logarithmic separation, coefficient energy and all Gaussian integrability conditions are proved. No tail estimate is assumed.
+
+The actual off-central Dirichlet estimate and the ordinary smooth long-interval mean comparison are proved. The analytic comparison with logarithmic short averages remains unproved, so T19.17 remains conditional. The stronger uniform short-average theorem for all real completely multiplicative functions is not established. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.29 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18493 jobs); direct axiom audit passed for 19202 declarations using only propext, Classical.choice and Quot.sound; all 19507 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.29 GiB.

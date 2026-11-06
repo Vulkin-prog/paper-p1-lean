@@ -4236,6 +4236,8 @@ import PaperP1
 #print axioms PaperP1.GaussianCutoff.positive_far_error
 #print axioms PaperP1.GaussianCutoff.exp_half_le_two
 #print axioms PaperP1.GaussianCutoff.step_error
+#print axioms PaperP1.GaussianDirichletTail.gaussian_bound
+#print axioms PaperP1.GaussianDirichletTail.tail_bound
 #print axioms PaperP1.GaussianExponentialSums.polynomial_continuous
 #print axioms PaperP1.GaussianExponentialSums.polynomial_norm_bound
 #print axioms PaperP1.GaussianExponentialSums.gaussian_integrable
