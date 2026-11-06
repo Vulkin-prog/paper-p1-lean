@@ -1,6 +1,18 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0655: ONE actual nonzero INTEGER
+Current checkpoint P1-MATH-0656: the ORIGINAL integer-source
+global determinant auxiliary equation is INTERNAL, uniformly before
+all source/model data, at degree exponent 1/sqrt(2^k*D^2)+epsilon,
+under the EXPLICIT branch-shift condition |b|<=2*H^2. The literal
+interpolation coefficient bound absorbs this condition. Actual
+curve/exception assembly and removal of this height restriction
+remain UNPROVED. The unrestricted P3 budget is not discharged.
+Canonical T1.7 retains ONLY its prior P3 input in degrees>2 at the
+original THREE families and caps. Coverage stays 163 proved,
+2 conditional, 2 in_progress out of 167; all 73 main results proved.
+No Palomar registration.
+
+Historical checkpoint P1-MATH-0655: ONE actual nonzero INTEGER
 certificate with |B|<=T*A^N controls the ORIGINAL canonical smooth
 class count <=(1+eta)*p^2 for ALL primes p>=K not dividing B.
 K,T,N precede ALL original source/model data and heights. This
@@ -759,7 +771,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records653 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records654 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -878,7 +890,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **17574 audited theorem/lemma declarations**. This
+- The project currently has **17579 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -30228,3 +30240,16 @@ EVERY prime p>=K not dividing this SAME B satisfies the LITERAL original P3Canon
 Two modules add three theorems and no definitions. This discharges the source-specific polynomial-height finite-field budget under its stated common-height condition. The restricted global determinant/cover assembly and verification of that height condition, integrality and exact caps for the THREE original paper families remain unfinished. This is NOT the unrestricted P3 budget for arbitrary hypersurfaces. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families/caps. Coverage remains 163 proved, 2 conditional, 2 in_progress out of 167; all 73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Work stays on Ubuntu with about 54.8 GiB available and no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17807 jobs); direct axiom audit passed for 17574 declarations using only propext, Classical.choice and Quot.sound; all 17533 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.81 GiB.
+
+
+## Global determinant auxiliary equations for the original integer sources with quadratic branch-height control
+
+OriginalSourceModelHeight proves that every positive projected degree has at least four homogeneous coefficient indices and that the actual interpolation-model height constant(d)*H^exponent(d) dominates BOTH H and 2*H^2 for every H>=1. This is a literal comparison of the existing model coefficient bounds, not an asymptotic assumption.
+
+OriginalSourceUniformAuxiliary proves the original-source global determinant theorem. For fixed source length k, power degree D>0, branch-size cap M and epsilon>0 it chooses ONE real B>0 BEFORE all source lists, integer coefficients, disjoint nonempty branch data, original primitive coefficients, original principal image equations and heights. For the actual geometrically irreducible homogeneous monic image equation q of degree 2^k*D^2 and H>=1, provided every literal integer branch shift has absolute value <=2*H^2, it constructs a homogeneous G of degree e, with q not dividing G, e<=B*H^(1/sqrt(2^k*D^2)+epsilon), vanishing on EVERY literal bounded normalized integer point of q.
+
+The proof assembles the original height-controlled interpolation equation, the internal polynomial-height model/branch certificate, the literal canonical-class finite-field bound and the existing proved determinant theorem. No unrestricted P3 point estimate or generic P3 finite-field budget is assumed. The two interpolation alternatives, including an already independent auxiliary equation, are both handled. Two modules add five theorems and no definitions.
+
+The actual curve/exception cover assembly and removal of the quadratic branch-height condition remain unfinished. The proposed large-shift section argument is not claimed here. This source-specific theorem is not the unrestricted P3 auxiliary theorem for arbitrary surfaces or rational source coefficients. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families/caps. Coverage remains 163 proved, 2 conditional, 2 in_progress out of 167; all 73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Work stays on Ubuntu with about 54.8 GiB available and no dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17811 jobs); direct axiom audit passed for 17579 declarations using only propext, Classical.choice and Quot.sound; all 17538 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.79 GiB.

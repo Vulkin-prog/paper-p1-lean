@@ -4562,3 +4562,5 @@ public import PaperP1.Arithmetic.CanonicalClassesToMonicHypersurface
 public import PaperP1.Arithmetic.OriginalProjectedModelPointEstimate
 public import PaperP1.Arithmetic.BranchModelReductionCertificate
 public import PaperP1.Arithmetic.OriginalSourceFiniteFieldBudget
+public import PaperP1.Algebra.OriginalSourceModelHeight
+public import PaperP1.Arithmetic.OriginalSourceUniformAuxiliary

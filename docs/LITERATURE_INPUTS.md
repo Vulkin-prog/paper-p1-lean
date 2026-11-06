@@ -1,6 +1,18 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0655: ONE actual nonzero INTEGER
+Current checkpoint P1-MATH-0656: the ORIGINAL integer-source
+global determinant auxiliary equation is INTERNAL, uniformly before
+all source/model data, at degree exponent 1/sqrt(2^k*D^2)+epsilon,
+under the EXPLICIT branch-shift condition |b|<=2*H^2. The literal
+interpolation coefficient bound absorbs this condition. Actual
+curve/exception assembly and removal of this height restriction
+remain UNPROVED. The unrestricted P3 budget is not discharged.
+Canonical T1.7 retains ONLY its prior P3 input in degrees>2 at the
+original THREE families and caps. Coverage stays 163 proved,
+2 conditional, 2 in_progress out of 167; all 73 main results proved.
+No Palomar registration.
+
+Historical checkpoint P1-MATH-0655: ONE actual nonzero INTEGER
 certificate with |B|<=T*A^N controls the ORIGINAL canonical smooth
 class count <=(1+eta)*p^2 for ALL primes p>=K not dividing B.
 K,T,N precede ALL original source/model data and heights. This
@@ -30206,6 +30218,15 @@ coefficient/branch shared height condition is explicit. Restricted global
 determinant/cover and exact original three-family application remain
 unfinished. The unrestricted P3 budget is not discharged.
 
+## Internal original-source global auxiliary equations
+
+P1-MATH-0656 assembles the actual interpolation model, polynomial-height
+certificate, original canonical-class count and proved determinant theorem.
+It yields uniform auxiliary equations for actual integer sources with
+branch shifts <=2*H^2. The model height comparison is proved exactly.
+Actual covers and restriction removal remain unfinished; the unrestricted
+P3 budget is not discharged.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -31558,3 +31579,18 @@ EVERY prime p>=K not dividing this SAME B satisfies the LITERAL original P3Canon
 Two modules add three theorems and no definitions. This discharges the source-specific polynomial-height finite-field budget under its stated common-height condition. The restricted global determinant/cover assembly and verification of that height condition, integrality and exact caps for the THREE original paper families remain unfinished. This is NOT the unrestricted P3 budget for arbitrary hypersurfaces. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families/caps. Coverage remains 163 proved, 2 conditional, 2 in_progress out of 167; all 73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Work stays on Ubuntu with about 54.8 GiB available and no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17807 jobs); direct axiom audit passed for 17574 declarations using only propext, Classical.choice and Quot.sound; all 17533 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.81 GiB.
+
+
+## Global determinant auxiliary equations for the original integer sources with quadratic branch-height control
+
+Stable ID: p1:internal:original-source-uniform-global-auxiliary. Original integer-source auxiliary equations are internal under the explicit quadratic branch-height condition; actual curve covers and restriction removal remain unfinished.
+
+OriginalSourceModelHeight proves that every positive projected degree has at least four homogeneous coefficient indices and that the actual interpolation-model height constant(d)*H^exponent(d) dominates BOTH H and 2*H^2 for every H>=1. This is a literal comparison of the existing model coefficient bounds, not an asymptotic assumption.
+
+OriginalSourceUniformAuxiliary proves the original-source global determinant theorem. For fixed source length k, power degree D>0, branch-size cap M and epsilon>0 it chooses ONE real B>0 BEFORE all source lists, integer coefficients, disjoint nonempty branch data, original primitive coefficients, original principal image equations and heights. For the actual geometrically irreducible homogeneous monic image equation q of degree 2^k*D^2 and H>=1, provided every literal integer branch shift has absolute value <=2*H^2, it constructs a homogeneous G of degree e, with q not dividing G, e<=B*H^(1/sqrt(2^k*D^2)+epsilon), vanishing on EVERY literal bounded normalized integer point of q.
+
+The proof assembles the original height-controlled interpolation equation, the internal polynomial-height model/branch certificate, the literal canonical-class finite-field bound and the existing proved determinant theorem. No unrestricted P3 point estimate or generic P3 finite-field budget is assumed. The two interpolation alternatives, including an already independent auxiliary equation, are both handled. Two modules add five theorems and no definitions.
+
+The actual curve/exception cover assembly and removal of the quadratic branch-height condition remain unfinished. The proposed large-shift section argument is not claimed here. This source-specific theorem is not the unrestricted P3 auxiliary theorem for arbitrary surfaces or rational source coefficients. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families/caps. Coverage remains 163 proved, 2 conditional, 2 in_progress out of 167; all 73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Work stays on Ubuntu with about 54.8 GiB available and no dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17811 jobs); direct axiom audit passed for 17579 declarations using only propext, Classical.choice and Quot.sound; all 17538 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.79 GiB.

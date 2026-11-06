@@ -1,6 +1,18 @@
 # P1 — Lean formalization
 
-Current checkpoint P1-MATH-0655: ONE actual nonzero INTEGER
+Current checkpoint P1-MATH-0656: the ORIGINAL integer-source
+global determinant auxiliary equation is INTERNAL, uniformly before
+all source/model data, at degree exponent 1/sqrt(2^k*D^2)+epsilon,
+under the EXPLICIT branch-shift condition |b|<=2*H^2. The literal
+interpolation coefficient bound absorbs this condition. Actual
+curve/exception assembly and removal of this height restriction
+remain UNPROVED. The unrestricted P3 budget is not discharged.
+Canonical T1.7 retains ONLY its prior P3 input in degrees>2 at the
+original THREE families and caps. Coverage stays 163 proved,
+2 conditional, 2 in_progress out of 167; all 73 main results proved.
+No Palomar registration.
+
+Historical checkpoint P1-MATH-0655: ONE actual nonzero INTEGER
 certificate with |B|<=T*A^N controls the ORIGINAL canonical smooth
 class count <=(1+eta)*p^2 for ALL primes p>=K not dividing B.
 K,T,N precede ALL original source/model data and heights. This
@@ -639,7 +651,7 @@ recorded in the linked ledger and [current status](docs/FORMALIZATION_STATUS.md)
 
 Companion T1.10 needs an enlarged alignment exclusion for unequal old/new widths: its literal radius-one version has an unconditional formal counterexample. The corrected coarse4/3 profile is proved under explicit geometric inputs; its sharper31/24 form remains open; see [the scope correction](docs/ASYMMETRIC_ALIGNMENT_SCOPE.md).
 
-The main optimal4/3 quadratic approximation power is now proved under explicit BCN and finite geometric properties, including both bounds, exact actual parameters, nominal-mean bias and eventual probability status. The optimal41/30 third factorial cumulant, full third absolute activity and aligned-channel triple claims are now proved under explicit geometric inputs, withBCN retained for the full connected argument. The actual original count and its retained modification converge in total variation to the actual-mean and nominal-mean Poisson laws without unproved inputs (P1-MATH-0413); quantitative optimal law rates remain separate. Exact fourth-cumulant component identities and unconditional weak, irregular and incompatible pair bounds are proved. In particular, the actual absolute pair activity is asymptotic to half the actual second factorial cumulant, without BCN or a complete pair profile. The contact activity bound at every fixed order now holds unconditionally on every dyadic subground, including irregular starts and zero marginals. The activation probability of the actual principal edge family now has the unconditional exponent -2/3, with any fixed epsilon margin. The planar normal budget T20.4 is now proved with improved constants and an integer-fibre argument. T20.6, the prescribed-plane transverse-product count and its actual affine mass bound, is now proved internally with three motifs and no Pila premise. The project records **653 confirmed mathematical improvements and two statement-scope corrections**. See [current status](docs/FORMALIZATION_STATUS.md), [the activity alignment](docs/FIXED_ABSOLUTE_ACTIVITY_ALIGNMENT.md) and [the mathematical change log](docs/MATHEMATICAL_CHANGELOG.md).
+The main optimal4/3 quadratic approximation power is now proved under explicit BCN and finite geometric properties, including both bounds, exact actual parameters, nominal-mean bias and eventual probability status. The optimal41/30 third factorial cumulant, full third absolute activity and aligned-channel triple claims are now proved under explicit geometric inputs, withBCN retained for the full connected argument. The actual original count and its retained modification converge in total variation to the actual-mean and nominal-mean Poisson laws without unproved inputs (P1-MATH-0413); quantitative optimal law rates remain separate. Exact fourth-cumulant component identities and unconditional weak, irregular and incompatible pair bounds are proved. In particular, the actual absolute pair activity is asymptotic to half the actual second factorial cumulant, without BCN or a complete pair profile. The contact activity bound at every fixed order now holds unconditionally on every dyadic subground, including irregular starts and zero marginals. The activation probability of the actual principal edge family now has the unconditional exponent -2/3, with any fixed epsilon margin. The planar normal budget T20.4 is now proved with improved constants and an integer-fibre argument. T20.6, the prescribed-plane transverse-product count and its actual affine mass bound, is now proved internally with three motifs and no Pila premise. The project records **654 confirmed mathematical improvements and two statement-scope corrections**. See [current status](docs/FORMALIZATION_STATUS.md), [the activity alignment](docs/FIXED_ABSOLUTE_ACTIVITY_ALIGNMENT.md) and [the mathematical change log](docs/MATHEMATICAL_CHANGELOG.md).
 
 Article13.1 now has a complete actual short-basis construction, with
 both physical projections and the common square-class map injective.
@@ -2056,3 +2068,5 @@ P1-MATH-0653 proves that the original normalization scalar is a nonzero integer 
 P1-MATH-0654 proves the exact original normalized source relation and a uniform (1+eta)*p^2 bound for the original canonical smooth classes, with cutoff before all source/model data and internal conductor and point identification. Combined effective prime budgets and original-family determinant/cover assembly remain unfinished.
 
 P1-MATH-0655 proves one nonzero polynomial-height integer certificate for the original canonical smooth-class estimate, uniform before all source/model data, when polynomial coefficients and branch shifts share the stated height bound. The restricted global determinant/cover and original-family height/integrality/cap checks remain unfinished.
+
+P1-MATH-0656 proves uniform global determinant auxiliary equations for the original integer source models at the genuine projected-degree exponent, when branch shifts are <=2*H^2. Actual curve/exception assembly and removal of this explicit restriction remain unfinished.

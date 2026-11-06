@@ -31183,6 +31183,37 @@
         "status": "not_integrated"
       },
       "validation_commit": "d4dc4cf1796bda59f9251f5348af0d8c71252002"
+    },
+    {
+      "id": "P1-MATH-0656",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The proved original finite-field budget had not yet been assembled into a global auxiliary equation, and its shared branch/model height condition had not been compared to the actual interpolation model.",
+      "finding": "The literal interpolation coefficient bound dominates 2*H^2, so every actual source with shifts in that range has a uniform global determinant auxiliary equation at the genuine projected-degree exponent; all finite-field inputs are internal.",
+      "proposed_revision": "Insert this source-specific determinant argument and its explicit quadratic branch-height condition. Complete the actual curve cover and justify removal of this condition before asserting the full integer-source theorem.",
+      "impact": "Proves the restricted actual source global auxiliary theorem without the external P3 budget. Curve/exception assembly and removal of the branch-height restriction remain unfinished; canonical T1.7 is unchanged.",
+      "evidence": [
+        "PaperP1.OriginalSourceModelHeight.index_card_ge_four",
+        "PaperP1.OriginalSourceModelHeight.exponent_pos",
+        "PaperP1.OriginalSourceModelHeight.height_le_model",
+        "PaperP1.OriginalSourceModelHeight.height_squared_le_model",
+        "PaperP1.OriginalSourceUniformAuxiliary.uniform_auxiliary"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17811 jobs); direct axiom audit passed for 17579 declarations using only propext, Classical.choice and Quot.sound; all 17538 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.79 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

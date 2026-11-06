@@ -2113,6 +2113,10 @@ import PaperP1
 #print axioms PaperP1.OriginalNormalizedSourceRelation.normalized_relation
 #print axioms PaperP1.OriginalNormalizedSourceRelation.original_model_relation
 #print axioms PaperP1.OriginalNormalizedSourceRelation.original_good_prime_data
+#print axioms PaperP1.OriginalSourceModelHeight.index_card_ge_four
+#print axioms PaperP1.OriginalSourceModelHeight.exponent_pos
+#print axioms PaperP1.OriginalSourceModelHeight.height_le_model
+#print axioms PaperP1.OriginalSourceModelHeight.height_squared_le_model
 #print axioms PaperP1.P3CoefficientFieldTransport.map_polynomial
 #print axioms PaperP1.P3CoefficientFieldTransport.map_reconstruct
 #print axioms PaperP1.P3CoefficientMultiplication.form_homogeneous
@@ -6635,6 +6639,7 @@ import PaperP1
 #print axioms PaperP1.OriginalProjectedModelPointEstimate.uniform_upper_bound
 #print axioms PaperP1.OriginalProjectedModelPointEstimate.uniform_class_upper_bound
 #print axioms PaperP1.OriginalSourceFiniteFieldBudget.bounded_uniform_class_count
+#print axioms PaperP1.OriginalSourceUniformAuxiliary.uniform_auxiliary
 #print axioms PaperP1.OriginalWindowValueBounds.values_geometry
 #print axioms PaperP1.P3BadReductionPrimeBudget.divides_certificate
 #print axioms PaperP1.P3BadReductionPrimeBudget.subset_prime_factors
