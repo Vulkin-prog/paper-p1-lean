@@ -4721,3 +4721,4 @@ public import PaperP1.Analysis.FirstBandSmallRegion
 public import PaperP1.Analysis.FirstGoodFullPolynomial
 public import PaperP1.Analysis.CentralDirichletLowerBound
 public import PaperP1.Analysis.CentralMeanSquareObstruction
+public import PaperP1.Analysis.GrowingFirstGoodRegion
