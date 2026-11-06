@@ -4915,3 +4915,4 @@ public import PaperP1.Analysis.ScaledGaussianKernel
 public import PaperP1.Analysis.GaussianLocalizationBudget
 public import PaperP1.Analysis.LogarithmicWindowCells
 public import PaperP1.Analysis.LogarithmicCellSquareBudget
+public import PaperP1.Analysis.SmoothGaussianPopulation

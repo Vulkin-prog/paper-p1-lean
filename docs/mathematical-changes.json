@@ -41869,6 +41869,36 @@
         "status": "not_integrated"
       },
       "validation_commit": "ffa04eb2f6a93b5a861a5420745f2bc665d64170"
+    },
+    {
+      "id": "P1-MATH-0976",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "Internal exact actual smooth-population specialization of the proved Gaussian kernel estimates.",
+      "finding": "Three theorems and one definition identify the literal [N,4N) ordinary smooth population, prove positivity of every member and prove that the actual Gaussian average of the exact smooth indicator equals its literal positive population sum with reciprocal weights. Every subpopulation lying within one Gaussian width gives an explicit cardinal lower bound for that actual average, with all centers, widths, finite supports and denominators retained. No smooth density or Gaussian lower bound is assumed.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Literal ordinary smooth Gaussian averages equal their finite smooth population sums. The actual off-central estimate, the ordinary smooth long-interval mean comparison and the uniform Gaussian mean-square comparison are proved. Localization of the Gaussian averages to the literal logarithmic windows remains unproved, so T19.17 stays conditional. The stronger uniform sharp short-average theorem for all real completely multiplicative functions is not established.",
+      "evidence": [
+        "PaperP1.SmoothGaussianPopulation.population_positive",
+        "PaperP1.SmoothGaussianPopulation.smoothed_eq",
+        "PaperP1.SmoothGaussianPopulation.subpopulation_lower",
+        "PaperP1.SmoothGaussianPopulation.population"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18519 jobs); direct axiom audit passed for 19268 declarations using only propext, Classical.choice and Quot.sound; all 19583 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.04 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

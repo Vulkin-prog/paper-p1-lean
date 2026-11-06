@@ -1,6 +1,19 @@
 # Multiquadratic split radicands: exact square-class independence
 
-Current checkpoint P1-MATH-0975: Actual disjoint logarithmic cells
+Current checkpoint P1-MATH-0976: Literal ordinary smooth Gaussian
+averages equal their finite smooth population sums. The actual off-
+central estimate, the ordinary smooth long-interval mean comparison and
+the uniform Gaussian mean-square comparison are proved. Localization of
+the Gaussian averages to the literal logarithmic windows remains
+unproved, so T19.17 stays conditional. The stronger uniform sharp short-
+average theorem for all real completely multiplicative functions is not
+established. T19.17 conditional; original T1.7 unconditional. Coverage:
+164 proved, 1 conditional, 2 in_progress /167; all 73 main proved.
+Sources, false-scope corrections, compiler and axioms unchanged. About
+52.05 GiB free on Ubuntu. No dependency download or Palomar
+registration.
+
+Historical checkpoint P1-MATH-0975: Actual disjoint logarithmic cells
 convert square energy into a finite exceptional-count budget. The actual
 off-central estimate, the ordinary smooth long-interval mean comparison
 and the uniform Gaussian mean-square comparison are proved. Localization
@@ -29473,3 +29486,12 @@ Two theorems prove a literal cell square-integral lower bound from a pointwise a
 The actual off-central estimate, the ordinary smooth long-interval mean comparison and the uniform Gaussian mean-square comparison are proved. Localization of the Gaussian averages to the literal logarithmic windows remains unproved, so T19.17 stays conditional. The stronger uniform sharp short-average theorem for all real completely multiplicative functions is not established. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.08 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18517 jobs); direct axiom audit passed for 19265 declarations using only propext, Classical.choice and Quot.sound; all 19579 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.06 GiB.
+
+
+## Literal ordinary smooth Gaussian averages equal their finite smooth population sums
+
+Three theorems and one definition identify the literal [N,4N) ordinary smooth population, prove positivity of every member and prove that the actual Gaussian average of the exact smooth indicator equals its literal positive population sum with reciprocal weights. Every subpopulation lying within one Gaussian width gives an explicit cardinal lower bound for that actual average, with all centers, widths, finite supports and denominators retained. No smooth density or Gaussian lower bound is assumed.
+
+The actual off-central estimate, the ordinary smooth long-interval mean comparison and the uniform Gaussian mean-square comparison are proved. Localization of the Gaussian averages to the literal logarithmic windows remains unproved, so T19.17 stays conditional. The stronger uniform sharp short-average theorem for all real completely multiplicative functions is not established. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.05 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18519 jobs); direct axiom audit passed for 19268 declarations using only propext, Classical.choice and Quot.sound; all 19583 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.04 GiB.

@@ -5658,6 +5658,9 @@ import PaperP1
 #print axioms PaperP1.DefectCounting.smallPrimesUpTo_subset_Icc
 #print axioms PaperP1.prod_smallPrimesUpTo_one_add_inv_sqrt_le
 #print axioms PaperP1.prod_smallPrimesUpTo_one_add_rpow_neg_one_half_le
+#print axioms PaperP1.SmoothGaussianPopulation.population_positive
+#print axioms PaperP1.SmoothGaussianPopulation.smoothed_eq
+#print axioms PaperP1.SmoothGaussianPopulation.subpopulation_lower
 #print axioms PaperP1.SmoothIntervalProfile.interval_sum
 #print axioms PaperP1.SmoothIntervalProfile.short_profile
 #print axioms PaperP1.SmoothIntervalProfile.dyadic_profile
