@@ -4574,6 +4574,11 @@ import PaperP1
 #print axioms PaperP1.PrimePresence.count_mul_outside
 #print axioms PaperP1.PrimePresence.present_mul_outside
 #print axioms PaperP1.PrimePresence.complex_coefficient_bound
+#print axioms PaperP1.PrimeProductDegree.multiplicity_prod
+#print axioms PaperP1.PrimeProductDegree.supported_of_layer
+#print axioms PaperP1.PrimeProductDegree.degree_of_layer
+#print axioms PaperP1.PrimeProductDegree.layer_of_supported
+#print axioms PaperP1.PrimeProductDegree.layer_iff
 #print axioms PaperP1.PrimeProductReciprocalLower.root_scale_lower
 #print axioms PaperP1.PrimeProductReciprocalLower.exponential_lower
 #print axioms PaperP1.PrimeProductReciprocalSaddleLower.uniform_ordinary_lower
