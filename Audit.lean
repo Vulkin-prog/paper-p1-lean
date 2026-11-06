@@ -3824,6 +3824,8 @@ import PaperP1
 #print axioms PaperP1.ExpandedSparseIntegerMean.budget_bound_uniform
 #print axioms PaperP1.ExpandedSparseIntegerMean.sampled_bound_uniform
 #print axioms PaperP1.ExpandedSparseIntegerMean.dirichlet_unit_uniform
+#print axioms PaperP1.ExpandedSparseSupportedMean.supported_uniform
+#print axioms PaperP1.ExpandedSparseSupportedMean.weighted_supported_uniform
 #print axioms PaperP1.ExplicitSaddleVariation.log_difference_bound
 #print axioms PaperP1.ExplicitSaddleVariation.core_difference_bound
 #print axioms PaperP1.ExplicitSaddleVariation.scale_monotone

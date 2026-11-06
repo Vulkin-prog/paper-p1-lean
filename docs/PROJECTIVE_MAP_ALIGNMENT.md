@@ -1,6 +1,15 @@
 # Actual projective scheme map
 
-Current checkpoint P1-MATH-0818: The actual integer sparse mean bound
+Current checkpoint P1-MATH-0819: The expanded sparse sample bound
+retains arbitrary supports and exact divisor count weights. The joint
+large-prime frequency contribution, the central-frequency mean
+comparison and complete logarithmic short-average concentration remain
+unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164
+proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources,
+false-scope corrections, compiler and axioms unchanged. About 51.83 GiB
+free on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0818: The actual integer sparse mean bound
 allows N^(1/16) sampling points. The joint large-prime frequency
 contribution, the central-frequency mean comparison and complete
 logarithmic short-average concentration remain unproved. T19.17
@@ -25858,3 +25867,12 @@ For ONE N0 before ALL large dyadic lengths N, all unit-separated sampling sets w
 The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.83 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18203 jobs); direct axiom audit passed for 18643 declarations using only propext, Classical.choice and Quot.sound; all 18843 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.81 GiB.
+
+
+## The expanded sparse sample bound retains arbitrary supports and exact divisor count weights
+
+The ACTUAL expanded integer sparse mean bound is transported to every support inside Ico N (2*N), retaining one N0 before all supports, coefficients and unit-separated samples. It also applies to the literal coefficient f(n)/(count_P(n)+1) for ANY prime-index set P, with no replacement of the denominator. Cardinality<=N^(1/16), height<=N^(9/8), and the exact upper bound 10*(1+log N) remain explicit. Two theorems establish both supported and weighted conclusions.
+
+The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.83 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18205 jobs); direct axiom audit passed for 18645 declarations using only propext, Classical.choice and Quot.sound; all 18845 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.79 GiB.
