@@ -4003,6 +4003,7 @@ import PaperP1
 #print axioms PaperP1.FinitePrimeTruncatedSquareMean.normalized_truncated_square_mean_small
 #print axioms PaperP1.FiniteProductPowerMean.product_le_average_power
 #print axioms PaperP1.FiniteProductPowerMean.sum_product_le_moment
+#print axioms PaperP1.FiniteProductSampleBound.bound
 #print axioms PaperP1.FiniteRolleZeros.exists_derivative_zeros
 #print axioms PaperP1.FiniteRolleZeros.card_le_of_derivative_bound
 #print axioms PaperP1.FiniteRolleZeros.card_le_of_iterated_derivative_nonzero

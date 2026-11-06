@@ -4775,3 +4775,4 @@ public import PaperP1.Analysis.SecondPrimeLargeValueCardinality
 public import PaperP1.Analysis.SecondBadFrequencyCardinality
 public import PaperP1.Analysis.JointLargeSparseCofactors
 public import PaperP1.Analysis.FinalNarrowBandGeometry
+public import PaperP1.Analysis.FiniteProductSampleBound

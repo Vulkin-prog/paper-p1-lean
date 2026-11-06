@@ -1,6 +1,15 @@
 # Multiquadratic split radicands: exact square-class independence
 
-Current checkpoint P1-MATH-0835: Actual final narrow anchors fit the
+Current checkpoint P1-MATH-0836: Finite sampled product sums retain the
+square of the actual block count. The joint large-prime frequency
+contribution, the central-frequency mean comparison and complete
+logarithmic short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 51.51 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0835: Actual final narrow anchors fit the
 cofactor regime and have an explicit band count. The joint large-prime
 frequency contribution, the central-frequency mean comparison and
 complete logarithmic short-average concentration remain unproved. T19.17
@@ -26883,3 +26892,12 @@ For every B>=32, N>=1, positive width and occupied ACTUAL final block, prove its
 The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.51 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18237 jobs); direct axiom audit passed for 18680 declarations using only propext, Classical.choice and Quot.sound; all 18882 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.50 GiB.
+
+
+## Finite sampled product sums retain the square of the actual block count
+
+For ANY finite block set J and sample set R, if each prime factor norm is <=V and each cofactor sample square sum is <=C, prove the ACTUAL sample square sum of the full product sum is <=card(J)^2*V^2*C. One theorem performs pointwise finite Cauchy-Schwarz, exchanges the exact finite sums and retains every block-count cost. No continuity or multiplicativity is required.
+
+The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.51 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18239 jobs); direct axiom audit passed for 18681 declarations using only propext, Classical.choice and Quot.sound; all 18883 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.48 GiB.
