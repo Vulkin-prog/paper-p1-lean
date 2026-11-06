@@ -28035,6 +28035,40 @@
         "status": "not_integrated"
       },
       "validation_commit": "2eff002828e84b10b388397479dab2fcf3a4ce99"
+    },
+    {
+      "id": "P1-MATH-0587",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The remaining primary P3 argument needed actual height-one section curves with constructed positive integral Hilbert degrees and a total degree budget, plus a nonzero gradient section and descent of geometric irreducibility to the rational prime ideal.",
+      "finding": "Actual section minimal primes construct a fixed family of genuine projective curves with total Hilbert degree at most e*d, hence curve count and individual degrees at most e*d. Characteristic-zero homogeneity gives an actual nonzero degree-(d-1) gradient section, and geometric irreducibility gives the actual original principal prime.",
+      "proposed_revision": "Construct the curve Hilbert polynomial and positive integral degree from actual finite parameters, use the summed component budget, and prove nonzero partial-derivative and prime-descent facts before separating singular points from the determinant-method covering.",
+      "impact": "Removes assumed curve-degree data and normalization correspondences from the surface-section construction and supplies the exact algebraic inputs for a fixed bounded singular-locus curve family.",
+      "evidence": [
+        "PaperP1.FieldExtensionPolynomialIrreducibility.unit_of_map",
+        "PaperP1.FieldExtensionPolynomialIrreducibility.irreducible_of_map",
+        "PaperP1.FieldExtensionPolynomialIrreducibility.prime_span_of_irreducible_map",
+        "PaperP1.HomogeneousGradientSection.exists_nonzero_partial",
+        "PaperP1.HomogeneousGradientSection.exists_partial_not_mem",
+        "PaperP1.HomogeneousGradientSection.exists_quotient_section",
+        "PaperP1.FiniteSurfaceCurveHilbert.exists_nat_linear_hilbert",
+        "PaperP1.GradedSurfaceSectionCurves.exists_family"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17235 jobs); direct axiom audit passed for 16565 declarations using only propext, Classical.choice and Quot.sound; all 16256 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.16 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

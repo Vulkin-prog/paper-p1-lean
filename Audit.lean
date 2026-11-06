@@ -934,6 +934,9 @@ import PaperP1
 #print axioms PaperP1.FieldEquivScalarTransport.algebraMap_eq
 #print axioms PaperP1.FieldEquivScalarTransport.finrank_eq
 #print axioms PaperP1.FieldEquivScalarTransport.finite
+#print axioms PaperP1.FieldExtensionPolynomialIrreducibility.unit_of_map
+#print axioms PaperP1.FieldExtensionPolynomialIrreducibility.irreducible_of_map
+#print axioms PaperP1.FieldExtensionPolynomialIrreducibility.prime_span_of_irreducible_map
 #print axioms PaperP1.FieldSquareClassMap.doubles_le
 #print axioms PaperP1.FieldSquareClassMap.map_unitClass
 #print axioms PaperP1.FieldSquareClassMap.map_ofNonzero
@@ -1371,6 +1374,9 @@ import PaperP1
 #print axioms PaperP1.HomogeneousFreeApproximation.component_mul_mem_span
 #print axioms PaperP1.HomogeneousFreeApproximation.component_clears
 #print axioms PaperP1.HomogeneousFreeApproximation.exists_homogeneous_free_approximation
+#print axioms PaperP1.HomogeneousGradientSection.exists_nonzero_partial
+#print axioms PaperP1.HomogeneousGradientSection.exists_partial_not_mem
+#print axioms PaperP1.HomogeneousGradientSection.exists_quotient_section
 #print axioms PaperP1.HomogeneousHeightOneEquation.exists_equation
 #print axioms PaperP1.HomogeneousIdealPointScaling.zeros_scale
 #print axioms PaperP1.HomogeneousKernelReduction.exists_homogeneous_relation
@@ -12505,6 +12511,7 @@ import PaperP1
 #print axioms PaperP1.FiniteIndexHomogeneousProjection.exists_projection
 #print axioms PaperP1.FiniteParameterCurveEquation.contracted_height
 #print axioms PaperP1.FiniteParameterCurveEquation.exists_equation
+#print axioms PaperP1.FiniteSurfaceCurveHilbert.exists_nat_linear_hilbert
 #print axioms PaperP1.GeneratedAlgebraPointEvaluation.evaluation_polynomial
 #print axioms PaperP1.GeneratedAlgebraPointEvaluation.evaluation_coordinate
 #print axioms PaperP1.GeneratedAlgebraPointEvaluation.points_equal
@@ -12513,6 +12520,7 @@ import PaperP1
 #print axioms PaperP1.GradedProjectiveCurveData.Curve.ideal_height
 #print axioms PaperP1.GradedProjectiveCurveData.Curve.ideal_hilbert
 #print axioms PaperP1.GradedProjectiveCurveData.Curve.degree_unique
+#print axioms PaperP1.GradedSurfaceSectionCurves.exists_family
 #print axioms PaperP1.GradedVeroneseProj.map_isIso
 #print axioms PaperP1.GradedVeroneseProj.iso_hom
 #print axioms PaperP1.HypersurfaceImagePointSeparation.evaluations_equal_of_conductor

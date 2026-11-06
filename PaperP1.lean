@@ -4287,3 +4287,7 @@ public import PaperP1.Algebra.FiniteSurfaceParameterInjectivity
 public import PaperP1.Algebra.ProjectiveHypersurfaceHilbert
 public import PaperP1.Algebra.QuaternaryPolynomialHilbert
 public import PaperP1.Geometry.ProjectiveHypersurfaceFiniteParameters
+public import PaperP1.Algebra.FieldExtensionPolynomialIrreducibility
+public import PaperP1.Algebra.HomogeneousGradientSection
+public import PaperP1.Geometry.FiniteSurfaceCurveHilbert
+public import PaperP1.Geometry.GradedSurfaceSectionCurves
