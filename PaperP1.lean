@@ -4807,3 +4807,4 @@ public import PaperP1.Analysis.ActualLogarithmicPower
 public import PaperP1.Analysis.PolynomialLogarithmicCancellation
 public import PaperP1.Analysis.PartialLogarithmicPower
 public import PaperP1.Analysis.PolynomialPartialCancellation
+public import PaperP1.Analysis.PolynomialWeightedCancellation

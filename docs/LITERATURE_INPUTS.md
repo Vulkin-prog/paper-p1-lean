@@ -1,6 +1,15 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0867: Every partial logarithmic sum has a
+Current checkpoint P1-MATH-0868: Actual reciprocal Dirichlet sums
+inherit uniform polynomial-frequency cancellation. The triple-large
+prime frequency contribution, the central-frequency mean comparison and
+complete logarithmic short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 54.08 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0867: Every partial logarithmic sum has a
 uniform power gain on fixed polynomial frequency ranges. The triple-
 large prime frequency contribution, the central-frequency mean
 comparison and complete logarithmic short-average concentration remain
@@ -33629,6 +33638,12 @@ For fixed real a,b, ONE X0 precedes every X>=X0, ALL X^a<=|t|<=X^b and ALL L<=X.
 
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
 
+## Internal actual reciprocal dirichlet sums inherit uniform polynomial-frequency cancellation
+
+Three theorems identify the literal Dirichlet value on every Ico X M, X<=M<=2X, with its exact reciprocal-weighted prefix sum, prove norm<=C_b/X^gamma_(a,b) uniformly on every fixed polynomial frequency range, and obtain norm<=epsilon when a>0. ONE cutoff precedes all frequencies and all endpoints M. Finite Abel summation is applied to the actual proved partial sums, without assumed cancellation or replacement coefficients.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -37602,3 +37617,14 @@ For fixed real a,b, ONE X0 precedes every X>=X0, ALL X^a<=|t|<=X^b and ALL L<=X.
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 54.08 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18301 jobs); direct axiom audit passed for 18816 declarations using only propext, Classical.choice and Quot.sound; all 19044 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.06 GiB.
+
+
+## Actual reciprocal Dirichlet sums inherit uniform polynomial-frequency cancellation
+
+Stable ID: p1:internal:polynomial-weighted-cancellation. Actual reciprocal Dirichlet sums inherit uniform polynomial-frequency cancellation. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
+
+Three theorems identify the literal Dirichlet value on every Ico X M, X<=M<=2X, with its exact reciprocal-weighted prefix sum, prove norm<=C_b/X^gamma_(a,b) uniformly on every fixed polynomial frequency range, and obtain norm<=epsilon when a>0. ONE cutoff precedes all frequencies and all endpoints M. Finite Abel summation is applied to the actual proved partial sums, without assumed cancellation or replacement coefficients.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 54.08 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18303 jobs); direct axiom audit passed for 18819 declarations using only propext, Classical.choice and Quot.sound; all 19047 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.04 GiB.

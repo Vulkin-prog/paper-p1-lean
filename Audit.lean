@@ -4675,6 +4675,9 @@ import PaperP1
 #print axioms PaperP1.PolynomialVerticalRootUniqueness.vertical_roots_eq
 #print axioms PaperP1.PolynomialVerticalRootUniqueness.exists_nonzero_box
 #print axioms PaperP1.PolynomialVerticalRootUniqueness.exists_local_vertical_unique
+#print axioms PaperP1.PolynomialWeightedCancellation.value_eq_sum_range
+#print axioms PaperP1.PolynomialWeightedCancellation.uniform_bound
+#print axioms PaperP1.PolynomialWeightedCancellation.small_uniform
 #print axioms PaperP1.PositiveFractionCostNormalization.with_errors
 #print axioms PaperP1.PositiveReciprocalKernel.coefficient_pos
 #print axioms PaperP1.PositiveReciprocalKernel.kernel_nonneg
