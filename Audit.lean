@@ -4388,6 +4388,8 @@ import PaperP1
 #print axioms PaperP1.LocalSquareSampling.local_square_bound
 #print axioms PaperP1.LocalWronskianNonvanishing.exists_nonzero
 #print axioms PaperP1.LocalWronskianNonvanishing.exists_on_subinterval
+#print axioms PaperP1.LocalizedFrequencyBudget.near_sup_bound
+#print axioms PaperP1.LocalizedFrequencyBudget.budget_bound
 #print axioms PaperP1.LogarithmicAbelWindow.weight_nonneg
 #print axioms PaperP1.LogarithmicAbelWindow.weight_continuousOn
 #print axioms PaperP1.LogarithmicAbelWindow.abel_identity

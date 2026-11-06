@@ -1,6 +1,15 @@
 # Actual projective scheme map
 
-Current checkpoint P1-MATH-0891: The literal translated inverse-square
+Current checkpoint P1-MATH-0892: The actual local-square frequency
+budget is controlled uniformly in its length. The triple-large prime
+frequency contribution, the central-frequency mean comparison and
+complete logarithmic short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 53.63 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0891: The literal translated inverse-square
 frequency tail has a vanishing bound. The triple-large prime frequency
 contribution, the central-frequency mean comparison and complete
 logarithmic short-average concentration remain unproved. T19.17
@@ -27174,3 +27183,12 @@ Three theorems prove the actual finite left and right frequency-weight tails, ea
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.63 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18349 jobs); direct axiom audit passed for 18923 declarations using only propext, Classical.choice and Quot.sound; all 19168 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.63 GiB.
+
+
+## The actual local-square frequency budget is controlled uniformly in its length
+
+Two theorems prove an actual local-square supremum bound from a norm bound on |t|<=R+1, and the genuine finite frequency-budget bound <=5*m^2+4*M^2/R for any continuous F globally bounded by M and locally bounded by m. This holds for EVERY integer frequency cutoff K, with the same constants, by exact near/far splitting and the proved translated reciprocal-square tail.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.63 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18351 jobs); direct axiom audit passed for 18925 declarations using only propext, Classical.choice and Quot.sound; all 19170 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.61 GiB.

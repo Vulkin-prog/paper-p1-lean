@@ -39190,6 +39190,34 @@
         "status": "not_integrated"
       },
       "validation_commit": "01e055845440b606850e19710ee710afa9998a18"
+    },
+    {
+      "id": "P1-MATH-0892",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "A pointwise Euler bound alone does not control the shifted weighted budget unless both the unit suprema and all far-frequency weights are retained.",
+      "finding": "Two theorems prove an actual local-square supremum bound from a norm bound on |t|<=R+1, and the genuine finite frequency-budget bound <=5*m^2+4*M^2/R for any continuous F globally bounded by M and locally bounded by m. This holds for EVERY integer frequency cutoff K, with the same constants, by exact near/far splitting and the proved translated reciprocal-square tail.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "The actual local-square frequency budget is controlled uniformly in its length. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.LocalizedFrequencyBudget.near_sup_bound",
+        "PaperP1.LocalizedFrequencyBudget.budget_bound"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18351 jobs); direct axiom audit passed for 18925 declarations using only propext, Classical.choice and Quot.sound; all 19170 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.61 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
