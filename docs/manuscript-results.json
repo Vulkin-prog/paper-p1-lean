@@ -42295,7 +42295,8 @@
             "PaperP1.ConductorCriticalPointTransfer.uniform_upper_bound"
           ]
         }
-      ]
+      ],
+      "validation_commit": "e8f72e5793f0f5582e15fa54fedcb7fefb785947"
     },
     {
       "label": "p1:arith:dense",
