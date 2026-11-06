@@ -4157,6 +4157,8 @@ import PaperP1
 #print axioms PaperP1.FixedPowerPrimeBandDensity.square_density_tendsto
 #print axioms PaperP1.FixedPowerPrimeBandDensity.excluded_eventually_bound
 #print axioms PaperP1.FixedPowerPrimeBandDensity.missing_good_eventually_bound
+#print axioms PaperP1.FixedPowerPrimeSamples.constant_pos
+#print axioms PaperP1.FixedPowerPrimeSamples.uniform_bound
 #print axioms PaperP1.FixedPowerSamplingGeometry.logarithmic_comparison
 #print axioms PaperP1.FixedPowerSamplingGeometry.height_power_bound
 #print axioms PaperP1.FixedPowerSamplingGeometry.cardinality_eventually
