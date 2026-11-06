@@ -1,6 +1,15 @@
 # Actual projective scheme map
 
-Current checkpoint P1-MATH-0928: The actual positive Selberg energy has
+Current checkpoint P1-MATH-0929: Actual prime synthesis is bounded by
+the positive Selberg energy and has a proved finite duality step. The
+triple-large prime frequency contribution, the central-frequency mean
+comparison and complete logarithmic short-average concentration remain
+unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164
+proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources,
+false-scope corrections, compiler and axioms unchanged. About 52.96 GiB
+free on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0928: The actual positive Selberg energy has
 a complete exact infinite Gram identity. The triple-large prime
 frequency contribution, the central-frequency mean comparison and
 complete logarithmic short-average concentration remain unproved. T19.17
@@ -27841,3 +27850,12 @@ Eight theorems and three definitions prove the actual logarithmic polynomial nor
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.96 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18423 jobs); direct axiom audit passed for 19078 declarations using only propext, Classical.choice and Quot.sound; all 19354 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.96 GiB.
+
+
+## Actual prime synthesis is bounded by the positive Selberg energy and has a proved finite duality step
+
+Five theorems prove the exact positive-integer reindexing of finite prime sets into the actual convergent energy, the pointwise majorant from the actual lognormal weight, and sum_p norm(polynomial(p))^2<=exp(2)*actual Selberg energy for arbitrary finite prime sets in [A,2A] with p>Z. A complete finite complex duality theorem also converts a synthesis estimate into its corresponding analysis estimate through actual evaluation and Cauchy-Schwarz. No prime Gram row estimate is postulated.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.96 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18425 jobs); direct axiom audit passed for 19083 declarations using only propext, Classical.choice and Quot.sound; all 19359 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.94 GiB.

@@ -5011,6 +5011,11 @@ import PaperP1
 #print axioms PaperP1.PrimeSelbergCoefficients.lambda_divisor_identity
 #print axioms PaperP1.PrimeSelbergCoefficients.divisor_nonneg
 #print axioms PaperP1.PrimeSelbergCoefficients.prime_value
+#print axioms PaperP1.PrimeSelbergMajorant.positive_index_injective
+#print axioms PaperP1.PrimeSelbergMajorant.finite_energy_bound
+#print axioms PaperP1.PrimeSelbergMajorant.pointwise_prime_bound
+#print axioms PaperP1.PrimeSelbergMajorant.prime_synthesis_bound
+#print axioms PaperP1.PrimeSelbergMajorant.analysis_of_synthesis
 #print axioms PaperP1.PrimeUnitMean.phase_time_add
 #print axioms PaperP1.PrimeUnitMean.value_add
 #print axioms PaperP1.PrimeUnitMean.energy_shifted

@@ -4868,3 +4868,4 @@ public import PaperP1.Analysis.LognormalSelbergKernel
 public import PaperP1.Analysis.PositiveSelbergSeries
 public import PaperP1.Analysis.SeparatedGaussianBudget
 public import PaperP1.Analysis.PositiveSelbergGram
+public import PaperP1.Analysis.PrimeSelbergMajorant
