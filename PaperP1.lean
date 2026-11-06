@@ -4760,3 +4760,4 @@ public import PaperP1.Analysis.ExpandedSparseGramEnvelope
 public import PaperP1.Analysis.ExpandedSparseIntegerMean
 public import PaperP1.Analysis.ExpandedSparseSupportedMean
 public import PaperP1.Analysis.ExpandedCofactorRegime
+public import PaperP1.Analysis.ExpandedCofactorSparseMean

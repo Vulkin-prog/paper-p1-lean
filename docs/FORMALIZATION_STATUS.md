@@ -1,6 +1,15 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0820: Actual narrow cofactor intervals
+Current checkpoint P1-MATH-0821: Actual weighted narrow cofactors allow
+X^(1/18) separated frequency samples. The joint large-prime frequency
+contribution, the central-frequency mean comparison and complete
+logarithmic short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 51.83 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0820: Actual narrow cofactor intervals
 satisfy the expanded sparse-frequency regime. The joint large-prime
 frequency contribution, the central-frequency mean comparison and
 complete logarithmic short-average concentration remain unproved. T19.17
@@ -2269,7 +2278,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records818 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records819 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -2388,7 +2397,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **18647 audited theorem/lemma declarations**. This
+- The project currently has **18648 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -33509,3 +33518,12 @@ For ONE size cutoff before ALL actual anchors u<=X^(1/16), the ACTUAL cofactor s
 The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.83 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18207 jobs); direct axiom audit passed for 18647 declarations using only propext, Classical.choice and Quot.sound; all 18847 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.77 GiB.
+
+
+## Actual weighted narrow cofactors allow X^(1/18) separated frequency samples
+
+For ONE X0 before ALL source sizes X>=X0, widths H, anchors u<=X^(1/16), prime-index sets P,Q and actual narrow cofactor coefficients f(n)*present_Q(n)/(count_P(n)+1), every unit-separated sample set of cardinality<=X^(1/18) and height 1<=T<=X has ACTUAL cofactor sample square sum<=10*(1+log X). Only the unit bound on f over the actual cofactor set is needed. One theorem combines the expanded integer regime, exact ceil support and literal count-weight norm bound.
+
+The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.83 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18209 jobs); direct axiom audit passed for 18648 declarations using only propext, Classical.choice and Quot.sound; all 18848 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.76 GiB.
