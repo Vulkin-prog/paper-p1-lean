@@ -1,6 +1,15 @@
 # Mathematical corrections and improvements
 
-Current checkpoint P1-MATH-0789: Exact prime product layers are
+Current checkpoint P1-MATH-0790: Actual least common multiples of two
+prime product layers remain in degrees k through 2k. The complementary
+bad-prime frequency contribution, the central-frequency mean subtraction
+and complete logarithmic short-average concentration remain unproved.
+T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 52.35 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0789: Exact prime product layers are
 characterized by support and total valuation degree. The complementary
 bad-prime frequency contribution, the central-frequency mean subtraction
 and complete logarithmic short-average concentration remain unproved.
@@ -1859,7 +1868,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**787 mathematical improvements and two statement-scope corrections are confirmed.**
+**788 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -32050,3 +32059,12 @@ For finite prime P the ACTUAL k-product image layer consists exactly of positive
 The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.35 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18145 jobs); direct axiom audit passed for 18538 declarations using only propext, Classical.choice and Quot.sound; all 18719 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.33 GiB.
+
+
+## Actual least common multiples of two prime product layers remain in degrees k through 2k
+
+The total valuation of lcm(a,b) lies between max(degree(a),degree(b)) and degree(a)+degree(b), by the exact coordinatewise maximum of their factorizations. Prime support is preserved. Consequently the ACTUAL least-common-multiple image of two k-product layers lies in the union of the literal layers j=k,...,2*k. Four theorems prove the valuation bounds, support, membership and finite image inclusion, retaining all shared and repeated factors.
+
+The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.35 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18147 jobs); direct axiom audit passed for 18542 declarations using only propext, Classical.choice and Quot.sound; all 18723 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.31 GiB.

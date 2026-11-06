@@ -4579,6 +4579,10 @@ import PaperP1
 #print axioms PaperP1.PrimeProductDegree.degree_of_layer
 #print axioms PaperP1.PrimeProductDegree.layer_of_supported
 #print axioms PaperP1.PrimeProductDegree.layer_iff
+#print axioms PaperP1.PrimeProductLcmLayers.multiplicity_lcm_bounds
+#print axioms PaperP1.PrimeProductLcmLayers.supported_lcm
+#print axioms PaperP1.PrimeProductLcmLayers.lcm_in_layers
+#print axioms PaperP1.PrimeProductLcmLayers.image_subset_layers
 #print axioms PaperP1.PrimeProductReciprocalLower.root_scale_lower
 #print axioms PaperP1.PrimeProductReciprocalLower.exponential_lower
 #print axioms PaperP1.PrimeProductReciprocalSaddleLower.uniform_ordinary_lower
