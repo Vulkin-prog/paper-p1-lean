@@ -34315,6 +34315,36 @@
         "status": "not_integrated"
       },
       "validation_commit": "1ebc2b74b0205dffb83e8dc4269ca9c3e7cdcf60"
+    },
+    {
+      "id": "P1-MATH-0738",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "A uniform worst correlation bound would discard distance weights. The triangular regrouping and finite reciprocal weights must be proved exactly before the analytic application.",
+      "finding": "The actual double sum over natural distances is exactly H*F(0) plus twice the literal triangular sum of positive distances. Applying this identity to the actual finite correlations preserves the diagonal coefficient energy and both conjugate orientations. An explicit bound on the actual correlations by B/d then gives the standard finite differencing bound with the literal reciprocal harmonic sum. Four theorems are proved. The B/d estimate is an EXPLICIT premise of the final application, not an assumed proof of the needed logarithmic oscillatory bound or of short-average concentration.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Exact triangular regrouping of correlations and inverse-distance differencing bound. The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.TriangularDifferencing.reverse_sum",
+        "PaperP1.TriangularDifferencing.distance_sum",
+        "PaperP1.TriangularDifferencing.triangular_bound",
+        "PaperP1.TriangularDifferencing.inverse_correlation_bound"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18043 jobs); direct axiom audit passed for 18322 declarations using only propext, Classical.choice and Quot.sound; all 18455 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.24 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

@@ -4918,6 +4918,10 @@ import PaperP1
 #print axioms PaperP1.TransposedNormalizedGraphPiece.initial_point
 #print axioms PaperP1.TransposedNormalizedGraphPiece.exists_piece
 #print axioms PaperP1.TransposedNormalizedGraphPiece.exists_smooth_piece_with_derivatives
+#print axioms PaperP1.TriangularDifferencing.reverse_sum
+#print axioms PaperP1.TriangularDifferencing.distance_sum
+#print axioms PaperP1.TriangularDifferencing.triangular_bound
+#print axioms PaperP1.TriangularDifferencing.inverse_correlation_bound
 #print axioms PaperP1.TripleCoefficientFibre.level_pos
 #print axioms PaperP1.TripleCoefficientFibre.prime_divisor_log_bound
 #print axioms PaperP1.TripleCoefficientFibre.fibre_mass_bound

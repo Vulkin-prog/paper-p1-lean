@@ -1,6 +1,15 @@
 # Mathematical corrections and improvements
 
-Current checkpoint P1-MATH-0737: Actual shifted correlations and
+Current checkpoint P1-MATH-0738: Exact triangular regrouping of
+correlations and inverse-distance differencing bound. The actual Ramare
+main-term frequency bounds and complete logarithmic short-average
+concentration remain unproved. T19.17 conditional; original T1.7
+unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167;
+all 73 main proved. Sources, false-scope corrections, compiler and
+axioms unchanged. About 53.3 GiB free on Ubuntu. No dependency download
+or Palomar registration.
+
+Historical checkpoint P1-MATH-0737: Actual shifted correlations and
 natural-distance differencing bound. The actual Ramare main-term
 frequency bounds and complete logarithmic short-average concentration
 remain unproved. T19.17 conditional; original T1.7 unconditional.
@@ -1394,7 +1403,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**735 mathematical improvements and two statement-scope corrections are confirmed.**
+**736 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -31117,3 +31126,12 @@ The literal shifted cross sum equals the actual finite correlation at shift h-k 
 The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.3 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18041 jobs); direct axiom audit passed for 18318 declarations using only propext, Classical.choice and Quot.sound; all 18451 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.26 GiB.
+
+
+## Exact triangular regrouping of correlations and inverse-distance differencing bound
+
+The actual double sum over natural distances is exactly H*F(0) plus twice the literal triangular sum of positive distances. Applying this identity to the actual finite correlations preserves the diagonal coefficient energy and both conjugate orientations. An explicit bound on the actual correlations by B/d then gives the standard finite differencing bound with the literal reciprocal harmonic sum. Four theorems are proved. The B/d estimate is an EXPLICIT premise of the final application, not an assumed proof of the needed logarithmic oscillatory bound or of short-average concentration.
+
+The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.3 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18043 jobs); direct axiom audit passed for 18322 declarations using only propext, Classical.choice and Quot.sound; all 18455 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.24 GiB.
