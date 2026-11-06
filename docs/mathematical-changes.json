@@ -40943,6 +40943,35 @@
         "status": "not_integrated"
       },
       "validation_commit": "dd6f350eef44cd7db3861ef044c6c15878d8bd5b"
+    },
+    {
+      "id": "P1-MATH-0947",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The two actual final-frequency cases must cover the whole remaining joint frequency region outside the retained central band.",
+      "finding": "Two theorems and one definition prove measurability of the actual joint first-two-large region outside a fixed central band and arbitrary-epsilon smallness of its actual final fixed-power Ramare rectangle integral. For fixed a>0,b<=1/16,H>=4 with a*H>=2, ONE T0>=8 and ONE integer cutoff precede ALL N, prime families Q, real completely multiplicative prime-unit f and heights 1<=T<=N. The actual final-small and final-large measurable integrals are combined through a proved covering and disjoint integral identity.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "The actual fixed-power Ramare rectangle is small on the joint frequency region outside one fixed central band. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.FixedPowerJointRectangle.region_measurable",
+        "PaperP1.FixedPowerJointRectangle.uniform_bound",
+        "PaperP1.FixedPowerJointRectangle.region"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18461 jobs); direct axiom audit passed for 19145 declarations using only propext, Classical.choice and Quot.sound; all 19439 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.60 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
