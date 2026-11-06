@@ -1,6 +1,17 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0699: the ACTUAL literal triple
+Current checkpoint P1-MATH-0700: the ACTUAL full Euler product
+has norm <=C*log(X), with the exact real-distance refinement.
+Common small-prime repulsion controls the FULL factor outside one
+small measurable frequency set BEFORE ALL admissible real functions.
+Its ordinary normalized frequency mean square is uniformly small.
+The LOCAL-SUPREMUM budget and original integer Dirichlet mean are
+not yet controlled. Final Halasz/short-average assembly remains
+unfinished. T19.17 conditional; original T1.7 complete. Coverage:
+164 proved, 1 conditional, 2 in_progress /167; all 73 main proved.
+False scopes/corrections unchanged. No Palomar registration.
+
+Historical checkpoint P1-MATH-0699: the ACTUAL literal triple
 convolution satisfies the FULL EULER triple Perron bound, with
 error <=epsilon*X after ONE threshold before ALL bounded completely
 multiplicative coefficients and prime bands. Full series, whole
@@ -1223,7 +1234,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records697 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records698 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -1342,7 +1353,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **18074 audited theorem/lemma declarations**. This
+- The project currently has **18089 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -31298,3 +31309,18 @@ The real coefficient case is connected by the explicit complexify monoid homomor
 This closes the full relevant Euler-series/Perron transfer for the literal triple convolution. Control of the resulting full Euler local-supremum frequency budget, the final Halasz estimate and logarithmic short-average assembly remain unfinished. T19.17 remains conditional and original complete T1.7 unconditional. Coverage stays 164 proved, 1 conditional, 2 in_progress /167; all 73 main results proved. Original false scopes/corrections, source hashes, pinned Lean and allowed axioms remain unchanged. About 54.0 GiB is free on Ubuntu; no dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17965 jobs); direct axiom audit passed for 18074 declarations using only propext, Classical.choice and Quot.sound; all 18149 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.94 GiB.
+
+
+## Actual full Euler logarithmic bound and common frequency mean control
+
+FullEulerBound identifies the ACTUAL reciprocal sum over all primes <=X with 1/2 plus the actual prime harmonic window (2,X]. The proved Mertens window estimate at the fixed lower endpoint 2 gives sum_{p<=X}1/p<=log(log(X))+harmonicConstant. All prime reciprocal squares sum to <=1 by the internal reciprocal-square finite bound. Consequently the literal full finite Euler product has norm <=eulerConstant*log(X)*exp(-D_full), for X>=2, with explicit positive eulerConstant=exp(harmonicConstant+1).
+
+The actual real squared pretentious distance is monotone under finite-set inclusion, because each term is nonnegative for real prime coefficients bounded by one. The same full Euler bound therefore holds with the distance over ANY actual prime subset. The original slow prime band is proved to be a subset of all primes <=X for 1<=N<=X, using its literal logarithmic endpoint. In particular the full Euler norm is globally <=eulerConstant*log(X), uniformly in frequency and ALL real functions bounded by one on primes; multiplicativity is not needed in this Euler-product theorem.
+
+The internal common prime-frequency exception gives a distance lower bound BEFORE ALL such real functions. It now yields ONE cutoff and one measurable set E of measure <=epsilon*T, common to EVERY admissible real function, outside which the ACTUAL FULL Euler norm is <=delta*log(X), for T>=log(X). The old restricted small-prime product is not substituted for the full factor: only its actual distance lower bound is used inside the proved full-product estimate.
+
+The literal full Euler norm divided by log(X) is continuous, nonnegative and globally bounded by eulerConstant. The actual exceptional-set square-integral budget therefore proves its uniform mean square is <=eta*T after one threshold, for EVERY admissible real function and EVERY T>=log(X). Fifteen theorems and three definitions are added in one module.
+
+This closes the sharp logarithmic full-Euler bound and its ordinary whole-frequency mean control. It does NOT yet control the local-supremum frequency budget required by the actual triple estimate, nor the original unrestricted integer Dirichlet polynomial. Unit-thickened common exceptions, the final Halasz estimate and logarithmic short-average assembly remain unfinished. T19.17 remains conditional; original complete T1.7 unconditional. Coverage stays 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, source hashes, pinned Lean and allowed axioms remain unchanged. Ubuntu has about 54.0 GiB free; no dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17967 jobs); direct axiom audit passed for 18089 declarations using only propext, Classical.choice and Quot.sound; all 18167 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.92 GiB.

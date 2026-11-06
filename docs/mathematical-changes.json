@@ -32987,6 +32987,50 @@
         "status": "not_integrated"
       },
       "validation_commit": "eb9c1bfd71160cf50015d041f1694830ffc18f26"
+    },
+    {
+      "id": "P1-MATH-0700",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "Control of the normalized small-prime Euler factor did not itself bound the actual full Euler factor at the necessary log(X) scale. An ordinary frequency mean also cannot be silently replaced by a local-supremum budget.",
+      "finding": "The actual harmonic window at 2 gives the sharp log(log(X)) reciprocal-prime upper bound. Nonnegative distance monotonicity transfers the common small-prime repulsion to the full Euler product. Its norm/log(X) is globally bounded and uniformly small in ordinary frequency mean.",
+      "proposed_revision": "Use the literal full-Euler bound and common exception. Prove unit-thickened exception and local-supremum budget control separately before the final Halasz and short-average steps.",
+      "impact": "Closes actual full-Euler logarithmic domination and ordinary frequency mean control. The required local-supremum budget, final Halasz/short-average assembly and T19.17 remain unfinished.",
+      "evidence": [
+        "PaperP1.FullEulerBound.eulerConstant_pos",
+        "PaperP1.FullEulerBound.harmonic_split",
+        "PaperP1.FullEulerBound.harmonic_upper",
+        "PaperP1.FullEulerBound.prime_square_bound",
+        "PaperP1.FullEulerBound.distance_mono",
+        "PaperP1.FullEulerBound.euler_bound",
+        "PaperP1.FullEulerBound.euler_subset_bound",
+        "PaperP1.FullEulerBound.global_bound",
+        "PaperP1.FullEulerBound.slow_subset",
+        "PaperP1.FullEulerBound.small_of_distance",
+        "PaperP1.FullEulerBound.common_off_exception",
+        "PaperP1.FullEulerBound.normalized_continuous",
+        "PaperP1.FullEulerBound.normalized_nonneg",
+        "PaperP1.FullEulerBound.normalized_bound",
+        "PaperP1.FullEulerBound.normalized_square_mean_small",
+        "PaperP1.FullEulerBound.harmonicConstant",
+        "PaperP1.FullEulerBound.eulerConstant",
+        "PaperP1.FullEulerBound.normalized"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17967 jobs); direct axiom audit passed for 18089 declarations using only propext, Classical.choice and Quot.sound; all 18167 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.92 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
