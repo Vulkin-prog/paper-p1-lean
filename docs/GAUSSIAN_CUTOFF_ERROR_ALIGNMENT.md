@@ -1,0 +1,11 @@
+# Actual Gaussian cutoff tails with finite-side normalization error
+
+Source: companion T19.17 and the internal Gaussian smoothing route to the needed integer-to-integral connection. These actual tail and cutoff estimates supplement checkpoint 690; they are not an assertion of the full Perron or short-average theorem.
+
+GaussianCutoff proves that the actual Gaussian prefactor at b>0 is <=twice its value at 2b. Exact whole-Gaussian normalization then bounds the doubled Gaussian mass. For every actual measurable real set S lying at distance at least d>=0 from the centre c, it proves prefactor(b)*integral_S gaussian(b,c,u)<=2*exp(-d^2/(8b)). Absolute distances, restricted integrability and all integral comparisons are internal.
+
+For v<=0 the actual kernel is <=2*exp(b)*exp(-v^2/(8b)), with NO additive normalization constant on that side. Exact complementary positive/negative half-line Gaussian masses sum to one. This proves |kernel(b,v)-1|<=exp(b)-1+2*exp(b)*exp(-(v-2b)^2/(8b)) for v>=2b, and the corresponding denominator 32b in the exponent for v>=4b. The short transition range is handled from the actual global kernel bound and the proved exp(b/2)<=2 when 0<b<=1.
+
+The ACTUAL step is one for v>=0 and zero otherwise. For every real v and 0<b<=1, the final checked bound is |kernel(b,v)-step(v)| <= (if v>=0 then exp(b)-1 else 0)+2*exp(b)*exp(-v^2/(32b)). Thus the additive normalization error appears ONLY on the finite side n<=X when v=log(X/n). On the infinite side n>X, the actual error keeps Gaussian decay; no divergent constant remainder is introduced. One module adds nine theorems and one definition.
+
+This closes the actual Gaussian cutoff approximation, including the transition and both tails. Transfer of the kernel to literal finite integer sums/triple products, a full Perron connection, the relevant full Euler frequency budget, final Halasz and logarithmic short-average assembly remain unfinished. Earlier combinatorial triple and analytic band-factor estimates remain proved. T19.17 remains conditional and original complete T1.7 unconditional. Coverage remains 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, source hashes, Lean v4.36.0-rc2 and allowed axioms are unchanged. Ubuntu has about 54.1 GiB free; no dependency download or Palomar registration.

@@ -32630,6 +32630,42 @@
         "status": "not_integrated"
       },
       "validation_commit": "0f76d7e330e33ff552cdad9211412ca116fbb8b3"
+    },
+    {
+      "id": "P1-MATH-0691",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "A normalized Gaussian kernel does not yet approximate an integer cutoff quantitatively. A constant error applied on the infinite side would fail to give a summable bound after transfer to integer series.",
+      "finding": "Actual Gaussian tails and the transition range give a global cutoff error whose normalization term appears only for v>=0. For v<0 the error has pure Gaussian decay, preserving the needed infinite-side summability.",
+      "proposed_revision": "Use the proved sided error when transferring to literal integer sums. Retain every repeated integer product and prove the actual aggregate Gaussian error and Perron transfer before asserting the analytic conclusion.",
+      "impact": "Closes the actual cutoff error with the correct finite/infinite-side distinction. Integer/Perron transfer, full Euler budget and T19.17 assembly remain unfinished.",
+      "evidence": [
+        "PaperP1.GaussianCutoff.prefactor_double_le",
+        "PaperP1.GaussianCutoff.doubled_mass_bound",
+        "PaperP1.GaussianCutoff.gaussian_tail_bound",
+        "PaperP1.GaussianCutoff.kernel_negative_tail",
+        "PaperP1.GaussianCutoff.gaussian_complement_mass",
+        "PaperP1.GaussianCutoff.kernel_positive_error",
+        "PaperP1.GaussianCutoff.positive_far_error",
+        "PaperP1.GaussianCutoff.exp_half_le_two",
+        "PaperP1.GaussianCutoff.step_error",
+        "PaperP1.GaussianCutoff.step"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17949 jobs); direct axiom audit passed for 17992 declarations using only propext, Classical.choice and Quot.sound; all 18045 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.08 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

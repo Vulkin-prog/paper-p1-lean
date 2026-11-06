@@ -3796,6 +3796,15 @@ import PaperP1
 #print axioms PaperP1.FirstRegularComponentFamilyBound.regular_endpoint_card
 #print axioms PaperP1.FirstRegularComponentFamilyBound.card_bound_of_comparison
 #print axioms PaperP1.FirstRegularComponentFamilyBound.card_bound
+#print axioms PaperP1.GaussianCutoff.prefactor_double_le
+#print axioms PaperP1.GaussianCutoff.doubled_mass_bound
+#print axioms PaperP1.GaussianCutoff.gaussian_tail_bound
+#print axioms PaperP1.GaussianCutoff.kernel_negative_tail
+#print axioms PaperP1.GaussianCutoff.gaussian_complement_mass
+#print axioms PaperP1.GaussianCutoff.kernel_positive_error
+#print axioms PaperP1.GaussianCutoff.positive_far_error
+#print axioms PaperP1.GaussianCutoff.exp_half_le_two
+#print axioms PaperP1.GaussianCutoff.step_error
 #print axioms PaperP1.GaussianExponentialSums.polynomial_continuous
 #print axioms PaperP1.GaussianExponentialSums.polynomial_norm_bound
 #print axioms PaperP1.GaussianExponentialSums.gaussian_integrable

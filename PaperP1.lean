@@ -4630,3 +4630,4 @@ public import PaperP1.Arithmetic.PrimeTruncation
 public import PaperP1.Analysis.PrimeUnitMean
 public import PaperP1.Analysis.PrimeFactorCauchy
 public import PaperP1.Analysis.GaussianLaplaceKernel
+public import PaperP1.Analysis.GaussianCutoff

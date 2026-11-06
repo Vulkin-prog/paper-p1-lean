@@ -1,6 +1,15 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0690: the ACTUAL Gaussian-Laplace
+Current checkpoint P1-MATH-0691: ACTUAL Gaussian tails and the
+complete step error are proved. The additive normalization error
+occurs ONLY on the finite side; the infinite side keeps Gaussian
+decay. Integer/triple kernel transfer, aggregate Gaussian error,
+full PERRON/EULER budget and final short-average assembly remain
+UNPROVED. T19.17 conditional; original T1.7 complete. Coverage:
+164 proved, 1 conditional, 2 in_progress /167; all 73 main proved.
+False scopes/corrections unchanged. No Palomar registration.
+
+Historical checkpoint P1-MATH-0690: the ACTUAL Gaussian-Laplace
 kernel has proved absolute integrability and a checked Fubini
 identity. Its real positive form, exact normalization and bound
 0<=kernel<=exp(b) are internal. Gaussian cutoff errors and the
@@ -1133,7 +1142,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records688 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records689 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -1252,7 +1261,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **17983 audited theorem/lemma declarations**. This
+- The project currently has **17992 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -31087,3 +31096,16 @@ Finally |1+i*t|=sqrt(1+t^2), the vertical denominator is nonzero, and the normal
 This closes the actual absolutely convergent Gaussian-Laplace kernel identity and its positive normalization. Gaussian tail/cutoff error bounds, transfer to the actual integer Dirichlet series or triple sum, and a full Perron estimate remain unfinished. The full relevant Euler frequency budget, final Halasz and logarithmic short-average assembly remain unfinished. The earlier combinatorial triple approximation and analytic band-factor bound remain proved. T19.17 remains conditional and original complete T1.7 unconditional. Coverage remains 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, source hashes, Lean v4.36.0-rc2 and allowed axioms are unchanged. Ubuntu has about 54.1 GiB free. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17947 jobs); direct axiom audit passed for 17983 declarations using only propext, Classical.choice and Quot.sound; all 18035 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.10 GiB.
+
+
+## Actual Gaussian cutoff tails with finite-side normalization error
+
+GaussianCutoff proves that the actual Gaussian prefactor at b>0 is <=twice its value at 2b. Exact whole-Gaussian normalization then bounds the doubled Gaussian mass. For every actual measurable real set S lying at distance at least d>=0 from the centre c, it proves prefactor(b)*integral_S gaussian(b,c,u)<=2*exp(-d^2/(8b)). Absolute distances, restricted integrability and all integral comparisons are internal.
+
+For v<=0 the actual kernel is <=2*exp(b)*exp(-v^2/(8b)), with NO additive normalization constant on that side. Exact complementary positive/negative half-line Gaussian masses sum to one. This proves |kernel(b,v)-1|<=exp(b)-1+2*exp(b)*exp(-(v-2b)^2/(8b)) for v>=2b, and the corresponding denominator 32b in the exponent for v>=4b. The short transition range is handled from the actual global kernel bound and the proved exp(b/2)<=2 when 0<b<=1.
+
+The ACTUAL step is one for v>=0 and zero otherwise. For every real v and 0<b<=1, the final checked bound is |kernel(b,v)-step(v)| <= (if v>=0 then exp(b)-1 else 0)+2*exp(b)*exp(-v^2/(32b)). Thus the additive normalization error appears ONLY on the finite side n<=X when v=log(X/n). On the infinite side n>X, the actual error keeps Gaussian decay; no divergent constant remainder is introduced. One module adds nine theorems and one definition.
+
+This closes the actual Gaussian cutoff approximation, including the transition and both tails. Transfer of the kernel to literal finite integer sums/triple products, a full Perron connection, the relevant full Euler frequency budget, final Halasz and logarithmic short-average assembly remain unfinished. Earlier combinatorial triple and analytic band-factor estimates remain proved. T19.17 remains conditional and original complete T1.7 unconditional. Coverage remains 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, source hashes, Lean v4.36.0-rc2 and allowed axioms are unchanged. Ubuntu has about 54.1 GiB free; no dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17949 jobs); direct axiom audit passed for 17992 declarations using only propext, Classical.choice and Quot.sound; all 18045 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.08 GiB.
