@@ -1,6 +1,15 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0838: Actual unit-cell selections preserve
+Current checkpoint P1-MATH-0839: Every restricted continuous integral is
+bounded by four times its separated sample budget. The joint large-prime
+frequency contribution, the central-frequency mean comparison and
+complete logarithmic short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 51.45 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0838: Actual unit-cell selections preserve
 frequency membership and separated parity classes. The joint large-prime
 frequency contribution, the central-frequency mean comparison and
 complete logarithmic short-average concentration remain unproved. T19.17
@@ -33192,6 +33201,12 @@ Define the ACTUAL closed unit cells [a+i,a+i+1]. Each has real volume 1; a finit
 
 The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
 
+## Internal every restricted continuous integral is bounded by four times its separated sample budget
+
+For EVERY measurable E contained in (-T,T], EVERY continuous everywhere nonnegative g and EVERY B, if ALL finite unit-separated samples selected INSIDE E have sum(g)<=B, then the ACTUAL integral_E(g)<=4*B. One theorem constructs a finite unit-cell cover, selects points inside each nonempty restricted cell, and splits them into two parity classes. It retains the exact selection and cover constants. No density or extra regularity of E is assumed.
+
+The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -36846,3 +36861,14 @@ Define the ACTUAL closed unit cells [a+i,a+i+1]. Each has real volume 1; a finit
 The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.45 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18243 jobs); direct axiom audit passed for 18689 declarations using only propext, Classical.choice and Quot.sound; all 18894 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.45 GiB.
+
+
+## Every restricted continuous integral is bounded by four times its separated sample budget
+
+Stable ID: p1:internal:separated-integral-bound. Every restricted continuous integral is bounded by four times its separated sample budget. The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
+
+For EVERY measurable E contained in (-T,T], EVERY continuous everywhere nonnegative g and EVERY B, if ALL finite unit-separated samples selected INSIDE E have sum(g)<=B, then the ACTUAL integral_E(g)<=4*B. One theorem constructs a finite unit-cell cover, selects points inside each nonempty restricted cell, and splits them into two parity classes. It retains the exact selection and cover constants. No density or extra regularity of E is assumed.
+
+The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.45 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18245 jobs); direct axiom audit passed for 18690 declarations using only propext, Classical.choice and Quot.sound; all 18895 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.43 GiB.
