@@ -4200,3 +4200,6 @@ public import PaperP1.Arithmetic.IntegralAffineCurvePointCount
 public import PaperP1.Analysis.UniformBinaryLogBudget
 public import PaperP1.Arithmetic.UnconditionalNormalizedCurveCount
 public import PaperP1.Asymptotics.UniformGeometricCountsSurfaceInputs
+public import PaperP1.Geometry.LinearHypersurfaceImage
+public import PaperP1.Geometry.LinearHypersurfaceImageFiber
+public import PaperP1.Geometry.LinearHypersurfaceMinimalEquation

@@ -27003,6 +27003,71 @@
         "status": "not_integrated"
       },
       "validation_commit": "75d27668d34cf10c7acfa0bb33d1acee0f828d41"
+    },
+    {
+      "id": "P1-MATH-0562",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The previous actual finite projection, minimal-equation and conductor interfaces were specialized to two parameters and a plane curve, which did not supply the analogous surface projection into projective three-space.",
+      "finding": "The actual homogeneous image quotient, principal irreducible monic equation, exact primitive field degree and nonvanishing conductor fibre injection now hold for any finite number of polynomial parameters, including the three-parameter surface case.",
+      "proposed_revision": "Make the dimension-independent algebraic projection and conductor step explicit before invoking a uniform surface covering theorem; identify the exact image equation and primitive field degree instead of borrowing a curve-only Hilbert comparison.",
+      "impact": "Removes a curve-only restriction from the verified projection machinery and supplies actual hypersurface equations and injective good fibres for the remaining companion surface-cover proof without assuming that cover.",
+      "evidence": [
+        "PaperP1.LinearHypersurfaceImage.coordinates_mem",
+        "PaperP1.LinearHypersurfaceImage.ideal_homogeneous",
+        "PaperP1.LinearHypersurfaceImage.ideal_prime",
+        "PaperP1.LinearHypersurfaceImage.toSource_mk",
+        "PaperP1.LinearHypersurfaceImage.toSource_injective",
+        "PaperP1.LinearHypersurfaceImage.piece_finite",
+        "PaperP1.LinearHypersurfaceImage.toSource_mem",
+        "PaperP1.LinearHypersurfaceImage.parameterMap_X",
+        "PaperP1.LinearHypersurfaceImage.parameter_mem",
+        "PaperP1.LinearHypersurfaceImage.parameterMap_toSource",
+        "PaperP1.LinearHypersurfaceImage.parameterMap_finite",
+        "PaperP1.LinearHypersurfaceImage.toSource_finite",
+        "PaperP1.LinearHypersurfaceImage.parameterMap_injective",
+        "PaperP1.LinearHypersurfaceImage.primitive_coordinate",
+        "PaperP1.LinearHypersurfaceImageFiber.adjoin_subset_range",
+        "PaperP1.LinearHypersurfaceImageFiber.denominator_is_partial",
+        "PaperP1.LinearHypersurfaceImageFiber.denominator_homogeneous",
+        "PaperP1.LinearHypersurfaceImageFiber.conductor",
+        "PaperP1.LinearHypersurfaceImageFiber.denominator_ne_zero",
+        "PaperP1.LinearHypersurfaceImageFiber.evaluations_equal",
+        "PaperP1.LinearHypersurfaceMinimalEquation.equation_monic",
+        "PaperP1.LinearHypersurfaceMinimalEquation.equation_nonzero",
+        "PaperP1.LinearHypersurfaceMinimalEquation.evaluation_factor",
+        "PaperP1.LinearHypersurfaceMinimalEquation.principal",
+        "PaperP1.LinearHypersurfaceMinimalEquation.equation_irreducible",
+        "PaperP1.LinearHypersurfaceMinimalEquation.equation_homogeneous",
+        "PaperP1.LinearHypersurfaceMinimalEquation.equation_totalDegree",
+        "PaperP1.LinearHypersurfaceMinimalEquation.degree_from_fraction_field",
+        "PaperP1.LinearHypersurfaceMinimalEquation.equation_degree_of_primitive",
+        "PaperP1.LinearHypersurfaceMinimalEquation.equation_of_finite_primitive",
+        "PaperP1.LinearHypersurfaceImage.coordinates",
+        "PaperP1.LinearHypersurfaceImage.ideal",
+        "PaperP1.LinearHypersurfaceImage.CoordinateRing",
+        "PaperP1.LinearHypersurfaceImage.toSource",
+        "PaperP1.LinearHypersurfaceImage.piece",
+        "PaperP1.LinearHypersurfaceImage.grading",
+        "PaperP1.LinearHypersurfaceImage.parameterMap",
+        "PaperP1.LinearHypersurfaceImageFiber.denominator",
+        "PaperP1.LinearHypersurfaceMinimalEquation.equation"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17053 jobs); direct axiom audit passed for 16306 declarations using only propext, Classical.choice and Quot.sound; all 15930 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.31 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
