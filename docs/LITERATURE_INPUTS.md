@@ -1,6 +1,12 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0730: Actual Ramare count-weighted sums
+Current checkpoint P1-MATH-0731: Actual finite prime-band sieve with
+flexible analytic cutoffs. Complete short-average concentration remains
+unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164
+proved, 1 conditional, 2 in_progress /167; all 73 main proved. No
+Palomar registration.
+
+Historical checkpoint P1-MATH-0730: Actual Ramare count-weighted sums
 controlled off one common frequency exception. Complete short-average
 concentration remains unproved. T19.17 conditional; original T1.7
 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167;
@@ -31581,6 +31587,12 @@ The ACTUAL count-denominator and valuation-denominator twisted sums differ in no
 
 This actual twisted summatory estimate is not the unrestricted Dirichlet mean-square or short-average theorem.
 
+## Internal actual finite prime-band sieve with flexible analytic cutoffs
+
+The actual finite prime window (floor(L(N)),floor(U(N))] has reciprocal mass tending to infinity whenever L tends to infinity, the real geometry holds eventually, and its literal logarithmic harmonic gap tends to infinity. The actual prime-cardinality square divided by N tends to zero under U(N)^2/N->0. The proved finite prime-avoidance variance bound then gives a zero-density avoiding set. The literal support-prime square exceptions also have zero density. The union is an actual excluded population; its complement in [N,2N) has the exact positive-factor and no-prime-square properties and a zero-density missing population. All analytic growth hypotheses remain explicit and are to be verified for the subsequent concrete bands.
+
+This finite-sieve theorem retains explicit elementary growth hypotheses. It does not assume or establish short-average concentration.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -34047,3 +34059,14 @@ The ACTUAL count-denominator and valuation-denominator twisted sums differ in no
 Complete logarithmic short-average concentration remains unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Source v1.6, false-scope corrections, compiler and permitted axioms unchanged. About 53.4 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18027 jobs); direct axiom audit passed for 18267 declarations using only propext, Classical.choice and Quot.sound; all 18385 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.38 GiB.
+
+
+## Actual finite prime-band sieve with flexible analytic cutoffs
+
+Stable ID: p1:internal:flexible-prime-band-sieve. Actual finite prime-band sieve with flexible analytic cutoffs. Complete short-average concentration remains unproved.
+
+The actual finite prime window (floor(L(N)),floor(U(N))] has reciprocal mass tending to infinity whenever L tends to infinity, the real geometry holds eventually, and its literal logarithmic harmonic gap tends to infinity. The actual prime-cardinality square divided by N tends to zero under U(N)^2/N->0. The proved finite prime-avoidance variance bound then gives a zero-density avoiding set. The literal support-prime square exceptions also have zero density. The union is an actual excluded population; its complement in [N,2N) has the exact positive-factor and no-prime-square properties and a zero-density missing population. All analytic growth hypotheses remain explicit and are to be verified for the subsequent concrete bands.
+
+Complete logarithmic short-average concentration remains unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.4 GiB free on Ubuntu. No download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18029 jobs); direct axiom audit passed for 18275 declarations using only propext, Classical.choice and Quot.sound; all 18396 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.36 GiB.
