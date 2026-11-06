@@ -1,6 +1,15 @@
 # Mathematical corrections and improvements
 
-Current checkpoint P1-MATH-0914: Both actual lognormal integral tails
+Current checkpoint P1-MATH-0915: The actual infinite lognormal series
+and integral have exact truncation identities. The triple-large prime
+frequency contribution, the central-frequency mean comparison and
+complete logarithmic short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 53.20 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0914: Both actual lognormal integral tails
 have explicit reciprocal-scale bounds. The triple-large prime frequency
 contribution, the central-frequency mean comparison and complete
 logarithmic short-average concentration remain unproved. T19.17
@@ -2995,7 +3004,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**912 mathematical improvements and two statement-scope corrections are confirmed.**
+**913 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -34311,3 +34320,12 @@ Four theorems prove the actual lower integral norm<=exp(4)*N^4/(4*A^3), hence <=
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.29 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18395 jobs); direct axiom audit passed for 19008 declarations using only propext, Classical.choice and Quot.sound; all 19262 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.21 GiB.
+
+
+## The actual infinite lognormal series and integral have exact truncation identities
+
+Three theorems prove the exact split of the actual absolutely convergent positive-integer series into its finite Icc head and literal shifted infinite tail, the exact head-plus-Ico-middle identity, and the exact positive-domain integral split into two actual interval integrals and the actual infinite upper integral. Every integer subtraction and endpoint is justified; no series term or integral boundary piece is omitted.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.20 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18397 jobs); direct axiom audit passed for 19011 declarations using only propext, Classical.choice and Quot.sound; all 19265 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.20 GiB.

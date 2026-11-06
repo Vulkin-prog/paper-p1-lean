@@ -1,6 +1,15 @@
 # Actual projective scheme map
 
-Current checkpoint P1-MATH-0914: Both actual lognormal integral tails
+Current checkpoint P1-MATH-0915: The actual infinite lognormal series
+and integral have exact truncation identities. The triple-large prime
+frequency contribution, the central-frequency mean comparison and
+complete logarithmic short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 53.20 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0914: Both actual lognormal integral tails
 have explicit reciprocal-scale bounds. The triple-large prime frequency
 contribution, the central-frequency mean comparison and complete
 logarithmic short-average concentration remain unproved. T19.17
@@ -27589,3 +27598,12 @@ Four theorems prove the actual lower integral norm<=exp(4)*N^4/(4*A^3), hence <=
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.29 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18395 jobs); direct axiom audit passed for 19008 declarations using only propext, Classical.choice and Quot.sound; all 19262 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.21 GiB.
+
+
+## The actual infinite lognormal series and integral have exact truncation identities
+
+Three theorems prove the exact split of the actual absolutely convergent positive-integer series into its finite Icc head and literal shifted infinite tail, the exact head-plus-Ico-middle identity, and the exact positive-domain integral split into two actual interval integrals and the actual infinite upper integral. Every integer subtraction and endpoint is justified; no series term or integral boundary piece is omitted.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.20 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18397 jobs); direct axiom audit passed for 19011 declarations using only propext, Classical.choice and Quot.sound; all 19265 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.20 GiB.

@@ -4510,6 +4510,9 @@ import PaperP1
 #print axioms PaperP1.LogarithmicSquareRootBound.square_bound
 #print axioms PaperP1.LognormalBlockCancellation.phase_prefix_identity
 #print axioms PaperP1.LognormalBlockCancellation.uniform_bound
+#print axioms PaperP1.LognormalExactTruncation.series_split
+#print axioms PaperP1.LognormalExactTruncation.head_interval_split
+#print axioms PaperP1.LognormalExactTruncation.integral_split
 #print axioms PaperP1.LognormalFiniteQuadrature.finite_sum_integral_error
 #print axioms PaperP1.LognormalFiniteQuadrature.sqrt_cutoff_error
 #print axioms PaperP1.LognormalIntegralTails.lower_bound

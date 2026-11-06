@@ -4854,3 +4854,4 @@ public import PaperP1.Analysis.LognormalFiniteQuadrature
 public import PaperP1.Analysis.LognormalLowerTail
 public import PaperP1.Analysis.LognormalUpperTail
 public import PaperP1.Analysis.LognormalIntegralTails
+public import PaperP1.Analysis.LognormalExactTruncation

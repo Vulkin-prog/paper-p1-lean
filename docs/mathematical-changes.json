@@ -39905,6 +39905,35 @@
         "status": "not_integrated"
       },
       "validation_commit": "e1bb15176e948b1326653d264a6bce7b7984e256"
+    },
+    {
+      "id": "P1-MATH-0915",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "Combining quadrature and tail estimates requires exact actual truncation identities for both the infinite series and the full Mellin integral.",
+      "finding": "Three theorems prove the exact split of the actual absolutely convergent positive-integer series into its finite Icc head and literal shifted infinite tail, the exact head-plus-Ico-middle identity, and the exact positive-domain integral split into two actual interval integrals and the actual infinite upper integral. Every integer subtraction and endpoint is justified; no series term or integral boundary piece is omitted.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "The actual infinite lognormal series and integral have exact truncation identities. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.LognormalExactTruncation.series_split",
+        "PaperP1.LognormalExactTruncation.head_interval_split",
+        "PaperP1.LognormalExactTruncation.integral_split"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18397 jobs); direct axiom audit passed for 19011 declarations using only propext, Classical.choice and Quot.sound; all 19265 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.20 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
