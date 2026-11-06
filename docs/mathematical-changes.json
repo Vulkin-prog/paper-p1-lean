@@ -27187,6 +27187,54 @@
         "status": "not_integrated"
       },
       "validation_commit": "0f57b8bb1a3cb3cbed786fbf335eb722f8020e08"
+    },
+    {
+      "id": "P1-MATH-0566",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The actual source-surface projection had been constructed algebraically, but literal normalized integer vectors still needed source-algebra evaluations, exact projected-coordinate compatibility, height preservation and injective good-fibre transport.",
+      "finding": "One bounded source-surface projection now transports every actual normalized integer point at every height to the exact-degree hypersurface at uniform height, preserves the chart normalizer, and separates original integer points whenever the actual projected partial derivative is nonzero.",
+      "proposed_revision": "Make the original integer-vector projection, uniform heightFactor(k,D), last-coordinate normalization and partial-derivative good-fibre injection explicit before transferring hypersurface covering estimates back to the original surface.",
+      "impact": "Closes the actual integer-population and height specialization of the source-surface projection and proves cardinality transfer for good source populations without assuming a surface cover.",
+      "evidence": [
+        "PaperP1.ActualSourceSurfaceIntegerProjection.exists_projection",
+        "PaperP1.SourceIntegerHypersurfaceProjection.primitive_cast",
+        "PaperP1.SourceIntegerHypersurfaceProjection.height",
+        "PaperP1.SourceIntegerHypersurfaceProjection.normalized",
+        "PaperP1.SourceIntegerHypersurfaceProjection.evaluation_coordinates",
+        "PaperP1.SourceIntegerHypersurfaceProjection.evaluation_projected",
+        "PaperP1.SourceIntegerHypersurfaceProjection.on_equation",
+        "PaperP1.SourceIntegerHypersurfaceProjection.derivative_evaluation",
+        "PaperP1.SourceIntegerHypersurfaceProjection.points_equal",
+        "PaperP1.SourceIntegerHypersurfaceProjection.good_card_le",
+        "PaperP1.SourceIntegerPointEvaluation.evaluation_polynomial",
+        "PaperP1.SourceIntegerPointEvaluation.evaluation_coordinate",
+        "PaperP1.SourceIntegerPointEvaluation.points_equal",
+        "PaperP1.SourceIntegerPointEvaluation.valid_of_mem",
+        "PaperP1.GeneratedAlgebraPointEvaluation.evaluation_polynomial",
+        "PaperP1.GeneratedAlgebraPointEvaluation.evaluation_coordinate",
+        "PaperP1.GeneratedAlgebraPointEvaluation.points_equal",
+        "PaperP1.SourceIntegerHypersurfaceProjection.primitiveCoordinate",
+        "PaperP1.SourceIntegerHypersurfaceProjection.projection",
+        "PaperP1.SourceIntegerPointEvaluation.Valid",
+        "PaperP1.SourceIntegerPointEvaluation.evaluation",
+        "PaperP1.GeneratedAlgebraPointEvaluation.evaluation"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17085 jobs); direct axiom audit passed for 16353 declarations using only propext, Classical.choice and Quot.sound; all 15989 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.22 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

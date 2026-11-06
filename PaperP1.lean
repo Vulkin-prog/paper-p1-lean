@@ -4214,3 +4214,7 @@ public import PaperP1.Geometry.LinearHypersurfaceImageBirational
 public import PaperP1.Algebra.SourceSurfacePowerCoordinates
 public import PaperP1.Geometry.FiniteIndexHomogeneousProjection
 public import PaperP1.Geometry.SourceSurfaceBoundedProjection
+public import PaperP1.Arithmetic.ActualSourceSurfaceIntegerProjection
+public import PaperP1.Arithmetic.SourceIntegerHypersurfaceProjection
+public import PaperP1.Arithmetic.SourceIntegerPointEvaluation
+public import PaperP1.Geometry.GeneratedAlgebraPointEvaluation
