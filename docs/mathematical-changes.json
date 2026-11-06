@@ -41180,6 +41180,35 @@
         "status": "not_integrated"
       },
       "validation_commit": "8fad531152953730cce6e6532bfda8231c471b10"
+    },
+    {
+      "id": "P1-MATH-0955",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The scaled mixed-pair estimate must cover the actual intermediate continuous region and transfer to the original polynomial before extending the off-central theorem.",
+      "finding": "Three theorems prove an actual intermediate-rectangle envelope <=(D+1) times the proved decaying mixed envelope, arbitrary-epsilon rectangle smallness and arbitrary-epsilon smallness for the original dyadic polynomial at heights T<=D*N/log N for EVERY fixed D>=0. The actual finite mixed-pair cover, all block counts, the nonnegative envelope and both approximation errors are retained. The eventual condition log N>=D justifies use of the actual rectangle approximation at T<=N.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "The actual intermediate frequency contribution is small at every fixed logarithmic height factor. The actual off-central Dirichlet frequency estimate is proved. The central-frequency short-to-long comparison, the analytic short-average bridge and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.ScaledIntermediateEnergy.envelope_bound",
+        "PaperP1.ScaledIntermediateEnergy.rectangle_small_uniform",
+        "PaperP1.ScaledIntermediateEnergy.full_small_uniform"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18477 jobs); direct axiom audit passed for 19164 declarations using only propext, Classical.choice and Quot.sound; all 19460 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.44 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
