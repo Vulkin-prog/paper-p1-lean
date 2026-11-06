@@ -1,6 +1,15 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0931: Actual separated prime synthesis and
+Current checkpoint P1-MATH-0932: The actual rounded power sieve level
+has the required support geometry and logarithmic denominator. The
+triple-large prime frequency contribution, the central-frequency mean
+comparison and complete logarithmic short-average concentration remain
+unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164
+proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources,
+false-scope corrections, compiler and axioms unchanged. About 52.92 GiB
+free on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0931: Actual separated prime synthesis and
 analysis have a proved Selberg operator bound with explicit remainder.
 The triple-large prime frequency contribution, the central-frequency
 mean comparison and complete logarithmic short-average concentration
@@ -34591,6 +34600,12 @@ Four theorems and one definition prove the nonnegative explicit budget (A*sqrt(p
 
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
 
+## Internal the actual rounded power sieve level has the required support geometry and logarithmic denominator
+
+Seven theorems and one definition prove for the actual integer level Z=floor(A^eta) its positivity, upper bound, Z^2<=sqrt(A) when eta<=1/4, Z<A when A>1 and eta<1, the exact lower denominator bound G>=eta*log(A)/2, the resulting Gaussian main-mass estimate <=(2*sqrt(pi)/eta)*A/log(A), and Z^4<=A^(4*eta). Every rounded-level and logarithm condition is explicit; the level is not replaced by its real asymptotic equivalent.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -39268,3 +39283,14 @@ Four theorems and one definition prove the nonnegative explicit budget (A*sqrt(p
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.92 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18429 jobs); direct axiom audit passed for 19093 declarations using only propext, Classical.choice and Quot.sound; all 19372 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.90 GiB.
+
+
+## The actual rounded power sieve level has the required support geometry and logarithmic denominator
+
+Stable ID: p1:internal:power-selberg-level. The actual rounded power sieve level has the required support geometry and logarithmic denominator. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
+
+Seven theorems and one definition prove for the actual integer level Z=floor(A^eta) its positivity, upper bound, Z^2<=sqrt(A) when eta<=1/4, Z<A when A>1 and eta<1, the exact lower denominator bound G>=eta*log(A)/2, the resulting Gaussian main-mass estimate <=(2*sqrt(pi)/eta)*A/log(A), and Z^4<=A^(4*eta). Every rounded-level and logarithm condition is explicit; the level is not replaced by its real asymptotic equivalent.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.92 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18431 jobs); direct axiom audit passed for 19100 declarations using only propext, Classical.choice and Quot.sound; all 19380 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.88 GiB.

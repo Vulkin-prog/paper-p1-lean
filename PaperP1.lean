@@ -4871,3 +4871,4 @@ public import PaperP1.Analysis.PositiveSelbergGram
 public import PaperP1.Analysis.PrimeSelbergMajorant
 public import PaperP1.Analysis.UniformSelbergKernelEnvelope
 public import PaperP1.Analysis.SelbergPrimeOperator
+public import PaperP1.Analysis.PowerSelbergLevel

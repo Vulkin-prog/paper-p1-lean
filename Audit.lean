@@ -4882,6 +4882,13 @@ import PaperP1
 #print axioms PaperP1.PowerLogPrimeBand.reciprocal_mass_tendsto
 #print axioms PaperP1.PowerLogPrimeBand.excluded_density_tendsto
 #print axioms PaperP1.PowerLogPrimeBand.missing_good_density_tendsto
+#print axioms PaperP1.PowerSelbergLevel.level_pos
+#print axioms PaperP1.PowerSelbergLevel.level_le
+#print axioms PaperP1.PowerSelbergLevel.level_square_bound
+#print axioms PaperP1.PowerSelbergLevel.level_lt_scale
+#print axioms PaperP1.PowerSelbergLevel.denominator_lower
+#print axioms PaperP1.PowerSelbergLevel.main_bound
+#print axioms PaperP1.PowerSelbergLevel.level_fourth_bound
 #print axioms PaperP1.PowerSeriesTail.weight_nonneg
 #print axioms PaperP1.PowerSeriesTail.tailTerm_nonneg
 #print axioms PaperP1.PowerSeriesTail.tailTerm_le_weight

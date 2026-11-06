@@ -40474,6 +40474,40 @@
         "status": "not_integrated"
       },
       "validation_commit": "8717b506084458bb2093db10df8e76f1ca9b6e43"
+    },
+    {
+      "id": "P1-MATH-0932",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The sieve level must be an actual integer, with all floor effects, prime-support conditions and the logarithmic main denominator proved before optimizing the operator bound.",
+      "finding": "Seven theorems and one definition prove for the actual integer level Z=floor(A^eta) its positivity, upper bound, Z^2<=sqrt(A) when eta<=1/4, Z<A when A>1 and eta<1, the exact lower denominator bound G>=eta*log(A)/2, the resulting Gaussian main-mass estimate <=(2*sqrt(pi)/eta)*A/log(A), and Z^4<=A^(4*eta). Every rounded-level and logarithm condition is explicit; the level is not replaced by its real asymptotic equivalent.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "The actual rounded power sieve level has the required support geometry and logarithmic denominator. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.PowerSelbergLevel.level_pos",
+        "PaperP1.PowerSelbergLevel.level_le",
+        "PaperP1.PowerSelbergLevel.level_square_bound",
+        "PaperP1.PowerSelbergLevel.level_lt_scale",
+        "PaperP1.PowerSelbergLevel.denominator_lower",
+        "PaperP1.PowerSelbergLevel.main_bound",
+        "PaperP1.PowerSelbergLevel.level_fourth_bound",
+        "PaperP1.PowerSelbergLevel.level"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18431 jobs); direct axiom audit passed for 19100 declarations using only propext, Classical.choice and Quot.sound; all 19380 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.88 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
