@@ -4787,3 +4787,4 @@ public import PaperP1.Analysis.FinalBadFrequencyCardinality
 public import PaperP1.Analysis.TripleLargeSparseCardinality
 public import PaperP1.Analysis.FiniteShiftDifferencing
 public import PaperP1.Analysis.SpacedShiftDifferencing
+public import PaperP1.Analysis.ReciprocalFiniteDifferences

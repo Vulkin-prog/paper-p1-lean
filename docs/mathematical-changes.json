@@ -37760,6 +37760,40 @@
         "status": "not_integrated"
       },
       "validation_commit": "26dbcbf775a7725a0b48a0ecc0c85f884de26b3b"
+    },
+    {
+      "id": "P1-MATH-0848",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "Higher logarithmic correlations require an actual differentiable kernel with the correct signs and order-dependent coefficients, rather than a presumed higher-derivative estimate.",
+      "finding": "Define the ACTUAL reciprocal finite-difference kernel recursively from 1/x^m by K(h::hs,m,x)=K(hs,m,x)-K(hs,m,x+h), and its exact coefficient recursively. For nonnegative shifts and x>0, prove its ACTUAL derivative is -m*K(hs,m+1,x) and it is continuous on the positive half-line. The coefficient is nonnegative and is EXACTLY m.ascFactorial(length hs)*product(hs). Six theorems and two definitions establish these identities, including the reciprocal-power derivative, with no external oscillation input.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Actual iterated reciprocal differences have exact derivatives and rising-factorial coefficients. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.ReciprocalFiniteDifferences.rpow_negative_integer",
+        "PaperP1.ReciprocalFiniteDifferences.base_hasDerivAt",
+        "PaperP1.ReciprocalFiniteDifferences.hasDerivAt_kernel",
+        "PaperP1.ReciprocalFiniteDifferences.continuousOn_kernel",
+        "PaperP1.ReciprocalFiniteDifferences.coefficient_nonneg",
+        "PaperP1.ReciprocalFiniteDifferences.coefficient_identity",
+        "PaperP1.ReciprocalFiniteDifferences.kernel",
+        "PaperP1.ReciprocalFiniteDifferences.coefficient"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18263 jobs); direct axiom audit passed for 18724 declarations using only propext, Classical.choice and Quot.sound; all 18934 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.27 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
