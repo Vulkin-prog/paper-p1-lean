@@ -1,6 +1,15 @@
 # Mathematical corrections and improvements
 
-Current checkpoint P1-MATH-0770: Actual narrow rectangle approximates
+Current checkpoint P1-MATH-0771: Both actual two-band rectangles
+approximate the original dyadic Dirichlet polynomial uniformly. The
+actual Ramare main-term frequency bounds and complete logarithmic short-
+average concentration remain unproved. T19.17 conditional; original T1.7
+unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167;
+all 73 main proved. Sources, false-scope corrections, compiler and
+axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download
+or Palomar registration.
+
+Historical checkpoint P1-MATH-0770: Actual narrow rectangle approximates
 the coupled Ramare quotient with explicit vanishing mean square error.
 The actual Ramare main-term frequency bounds and complete logarithmic
 short-average concentration remain unproved. T19.17 conditional;
@@ -1684,7 +1693,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**768 mathematical improvements and two statement-scope corrections are confirmed.**
+**769 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -31704,3 +31713,12 @@ For every X>0, H>=2, disjoint finite prime supports P,Q, complete complex f boun
 The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18107 jobs); direct axiom audit passed for 18474 declarations using only propext, Classical.choice and Quot.sound; all 18643 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.67 GiB.
+
+
+## Both actual two-band rectangles approximate the original dyadic Dirichlet polynomial uniformly
+
+For every epsilon>0 one H0>=2 and N0>=1 precede ALL H>=H0, N>=N0, complete complex coefficients bounded on [N,4*N), and 0<T<=N. BOTH actual narrow rectangles, extracting either of the two internally constructed prime bands while retaining presence in the other, approximate the ACTUAL full Dirichlet polynomial on [N,2*N) in mean square <=epsilon. The proof combines the actual relative quotient approximation with the actual quantified rectangle error through a proved continuous mean-square triangle inequality. Rectangle continuity is also established. Three theorems add this simultaneous product approximation, with no main-term bound assumed.
+
+The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18109 jobs); direct axiom audit passed for 18477 declarations using only propext, Classical.choice and Quot.sound; all 18646 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.65 GiB.

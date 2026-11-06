@@ -35398,6 +35398,35 @@
         "status": "not_integrated"
       },
       "validation_commit": "c3e49edb90a04cb95c5b65f18a8f861cc5cf63af"
+    },
+    {
+      "id": "P1-MATH-0771",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The two-band replacement needs the actual rectangle error, continuity and correct quantifier order; a pair of identities alone is not an analytic approximation.",
+      "finding": "For every epsilon>0 one H0>=2 and N0>=1 precede ALL H>=H0, N>=N0, complete complex coefficients bounded on [N,4*N), and 0<T<=N. BOTH actual narrow rectangles, extracting either of the two internally constructed prime bands while retaining presence in the other, approximate the ACTUAL full Dirichlet polynomial on [N,2*N) in mean square <=epsilon. The proof combines the actual relative quotient approximation with the actual quantified rectangle error through a proved continuous mean-square triangle inequality. Rectangle continuity is also established. Three theorems add this simultaneous product approximation, with no main-term bound assumed.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Both actual two-band rectangles approximate the original dyadic Dirichlet polynomial uniformly. The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.TwoBandRectangleApproximation.rectangle_continuous",
+        "PaperP1.TwoBandRectangleApproximation.mean_square_triangle",
+        "PaperP1.TwoBandRectangleApproximation.both_rectangles_small_uniform"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18109 jobs); direct axiom audit passed for 18477 declarations using only propext, Classical.choice and Quot.sound; all 18646 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.65 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

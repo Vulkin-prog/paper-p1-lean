@@ -4710,3 +4710,4 @@ public import PaperP1.Analysis.NarrowRectangleValue
 public import PaperP1.Analysis.NarrowRectangleDifference
 public import PaperP1.Analysis.NarrowBoundaryMeanValue
 public import PaperP1.Analysis.NarrowRectangleError
+public import PaperP1.Analysis.TwoBandRectangleApproximation

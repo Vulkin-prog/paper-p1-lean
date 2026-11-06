@@ -5099,6 +5099,9 @@ import PaperP1
 #print axioms PaperP1.TwoBandDirichletApproximation.first_identity
 #print axioms PaperP1.TwoBandDirichletApproximation.second_identity
 #print axioms PaperP1.TwoBandDirichletApproximation.both_quotients_small_uniform
+#print axioms PaperP1.TwoBandRectangleApproximation.rectangle_continuous
+#print axioms PaperP1.TwoBandRectangleApproximation.mean_square_triangle
+#print axioms PaperP1.TwoBandRectangleApproximation.both_rectangles_small_uniform
 #print axioms PaperP1.TwoBandRelativeApproximation.both_quotients_small_uniform
 #print axioms PaperP1.TwoPrimeBandPopulation.good_subset
 #print axioms PaperP1.TwoPrimeBandPopulation.good_support
