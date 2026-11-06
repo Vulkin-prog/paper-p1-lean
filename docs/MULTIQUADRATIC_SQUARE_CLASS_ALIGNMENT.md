@@ -1,6 +1,16 @@
 # Multiquadratic split radicands: exact square-class independence
 
-Current checkpoint P1-MATH-0678: ACTUAL finite integer polynomials
+Current checkpoint P1-MATH-0679: ACTUAL interval Selberg data
+have proved reciprocal density and error<=1. Actual lambda-square
+counting and full diagonal terms are internal. An EXACT actual
+upper-divisor Moebius inverse realizes any target coefficients.
+Optimized weight bounds, logarithmic denominator and local prime
+density/weighted-prime mean remain UNPROVED. Full short-average
+assembly unfinished. T19.17 conditional; original T1.7 complete.
+Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main
+proved. False scopes/corrections unchanged. No Palomar registration.
+
+Historical checkpoint P1-MATH-0678: ACTUAL finite integer polynomials
 on the selected-prime support have a UNIFORM N^(-1/4) truncation
 error and proved frequency square means. Every repeated prime
 power, finite index and coefficient/frequency quantifier is retained.
@@ -23904,3 +23914,18 @@ FinitePrimeTruncatedSquareMean proves the continuous square-error budget and tra
 This closes actual integer truncation and uniform frequency means for the finite-prime-supported polynomial. Its support is explicitly restricted to integers whose EVERY prime factor lies in P_N; it is NOT the original full dyadic multiplicative polynomial. Transfer to that original sum, the Halasz/mean estimate, exceptional quotient-frequency mass, coupled-domain handling and logarithmic short-average assembly remain unfinished. T19.17 retains its explicit analytic input; original complete T1.7 remains unconditional. Coverage stays 164 proved, 1 conditional, 2 in_progress out of 167; all 73 main results proved. Original false scopes and checked corrections are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Ubuntu retains about 54.3 GiB; no dependency download. For the subsequent local-prime-density stage, Mathlib.NumberTheory.SelbergSieve was built selectively and successfully from existing sources, with disk checks; it is not an unproved input or a completed Brun-type bound. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17913 jobs); direct axiom audit passed for 17845 declarations using only propext, Classical.choice and Quot.sound; all 17854 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.32 GiB.
+
+
+## Actual interval Selberg sieve data and exact upper-divisor inversion
+
+ReciprocalDivisibilitySieve defines the actual arithmetic density nu(d)=1/d, including nu(0)=0, and proves complete multiplicativity and the required arithmetic-function multiplicativity. It instantiates the existing checked Mathlib BoundingSieve on the literal source window values(x,L), whose width is L+1, with actual weights one, total mass L+1 and any actual squarefree prime modulus P. Positivity and nu(p)<1 for primes are proved from actual primality.
+
+The actual multiple sum equals the literal divisibility-hit cardinality, and the actual sifted sum equals the literal coprime-filter cardinality. For x>=2 and every positive d, exact floor counting proves |rem(d)|<=1. Consequently the actual sieve error sum for ANY real upper-sieve coefficient function muPlus is at most sum_{d|P}|muPlus(d)|. Applying the checked lambda-square sieve and its full diagonalization gives the ACTUAL window cardinality bound with its displayed quadratic main term and exact absolute lambda-square error. The sole weight constraint w(1)=1 is explicit; no local-prime-density, error-smallness or sieve conclusion is supplied as a premise.
+
+DivisorUpperTransform proves exact quotient symmetry of sums over literal divisors, and the exact interchange between divisors that are multiples of l and divisors of P/l, retaining P!=0 and l|P. It constructs a lower Moebius inverse with actual divisor-antidiagonal sums and proves its divisor-sum identity using the checked Mathlib inversion theorem. It then defines an actual upper-divisor inverse. For ANY real target coefficient sequence c and every l|P, summing the constructed inverse over actual multiples of l returns EXACTLY c(l).
+
+The upper inverse also has the literal explicit form sum_{d|P,l|d}mu(d/l)*c(d), and its value at one is exactly sum_{d|P}mu(d)*c(d). All quotient identities, nonzero conditions, finite index interchanges and Moebius signs are proved. Thus coefficients chosen for a future diagonal sieve bound can be realized by actual weights without assuming transform invertibility. Two modules add fourteen theorems and four definitions.
+
+This closes the concrete interval sieve data and exact divisor-transform inversion. Optimized weight normalization, support and size bounds, the logarithmic denominator lower bound and the resulting local prime-count estimate remain unfinished. The stronger weighted-prime mean required by the short Halasz proof has NOT been proved. Full dyadic multiplicative mean transfer, exceptional quotient mass and logarithmic short-average assembly remain unfinished. T19.17 retains its explicit analytic input; original complete T1.7 remains unconditional. Coverage stays 164 proved, 1 conditional, 2 in_progress out of 167; all 73 main results proved. Original false scopes and checked corrections are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and allowed axioms are unchanged. Ubuntu retains about 54.3 GiB; no dependency download. Mathlib.NumberTheory.SelbergSieve was selectively rebuilt successfully from existing pinned sources. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17919 jobs); direct axiom audit passed for 17859 declarations using only propext, Classical.choice and Quot.sound; all 17872 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.30 GiB.

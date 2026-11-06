@@ -32125,6 +32125,50 @@
         "status": "not_integrated"
       },
       "validation_commit": "48905bb9cbaad4597f4ba50bb71c60c1fb4b04f0"
+    },
+    {
+      "id": "P1-MATH-0679",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "A local prime-density proof still needed actual interval sieve data and realizable diagonal coefficients. Abstract sieve structures or an assumed inverse transform would not prove the actual counting bound.",
+      "finding": "Literal reciprocal divisibility counts instantiate the checked Selberg framework with error at most one. An actual upper-divisor Moebius inverse realizes every target diagonal coefficient exactly, including its explicit sign formula and value at one.",
+      "proposed_revision": "Use the proved actual interval data and exact divisor inverse to construct and normalize concrete weights. Prove their support/size bounds, the logarithmic denominator and the local prime-count estimate before asserting the stronger weighted-prime mean.",
+      "impact": "Closes actual Selberg interval instantiation and exact inverse construction, without a sieve or invertibility premise. Optimized weights/local prime density and T19.17 remain unfinished.",
+      "evidence": [
+        "PaperP1.DivisorUpperTransform.quotient_sum",
+        "PaperP1.DivisorUpperTransform.multiples_complement_sum",
+        "PaperP1.DivisorUpperTransform.multiples_quotient_sum",
+        "PaperP1.DivisorUpperTransform.lower_inverse_sum",
+        "PaperP1.DivisorUpperTransform.upper_inverse_sum",
+        "PaperP1.DivisorUpperTransform.upper_inverse_explicit",
+        "PaperP1.DivisorUpperTransform.upper_inverse_one",
+        "PaperP1.ReciprocalDivisibilitySieve.density_mul",
+        "PaperP1.ReciprocalDivisibilitySieve.density_multiplicative",
+        "PaperP1.ReciprocalDivisibilitySieve.multSum_eq_hits",
+        "PaperP1.ReciprocalDivisibilitySieve.siftedSum_eq_card",
+        "PaperP1.ReciprocalDivisibilitySieve.rem_abs_le_one",
+        "PaperP1.ReciprocalDivisibilitySieve.error_sum_bound",
+        "PaperP1.ReciprocalDivisibilitySieve.actual_lambda_sieve",
+        "PaperP1.DivisorUpperTransform.lowerInverse",
+        "PaperP1.DivisorUpperTransform.upperInverse",
+        "PaperP1.ReciprocalDivisibilitySieve.density",
+        "PaperP1.ReciprocalDivisibilitySieve.sieve"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17919 jobs); direct axiom audit passed for 17859 declarations using only propext, Classical.choice and Quot.sound; all 17872 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.30 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

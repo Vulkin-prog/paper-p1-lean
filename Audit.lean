@@ -5660,6 +5660,13 @@ import PaperP1
 #print axioms PaperP1.DivisorSubpolynomial.divisor_log_factor_le_scale_eventually
 #print axioms PaperP1.DivisorSubpolynomial.card_divisors_pow_le_polynomial_eventually
 #print axioms PaperP1.DivisorSubpolynomial.card_divisors_le_rpow_eventually
+#print axioms PaperP1.DivisorUpperTransform.quotient_sum
+#print axioms PaperP1.DivisorUpperTransform.multiples_complement_sum
+#print axioms PaperP1.DivisorUpperTransform.multiples_quotient_sum
+#print axioms PaperP1.DivisorUpperTransform.lower_inverse_sum
+#print axioms PaperP1.DivisorUpperTransform.upper_inverse_sum
+#print axioms PaperP1.DivisorUpperTransform.upper_inverse_explicit
+#print axioms PaperP1.DivisorUpperTransform.upper_inverse_one
 #print axioms PaperP1.DyadicAlignedPairMasks.channel_swap
 #print axioms PaperP1.DyadicAlignedPairMasks.channel_subset_macro
 #print axioms PaperP1.DyadicAlignedPairMasks.high_subset_macro
@@ -7584,6 +7591,13 @@ import PaperP1
 #print axioms PaperP1.RawWindowExtension.finite_extension
 #print axioms PaperP1.ReceivedPrimeCertificate.primeFactors_product_subset
 #print axioms PaperP1.ReceivedPrimeCertificate.edge_of_received_product
+#print axioms PaperP1.ReciprocalDivisibilitySieve.density_mul
+#print axioms PaperP1.ReciprocalDivisibilitySieve.density_multiplicative
+#print axioms PaperP1.ReciprocalDivisibilitySieve.multSum_eq_hits
+#print axioms PaperP1.ReciprocalDivisibilitySieve.siftedSum_eq_card
+#print axioms PaperP1.ReciprocalDivisibilitySieve.rem_abs_le_one
+#print axioms PaperP1.ReciprocalDivisibilitySieve.error_sum_bound
+#print axioms PaperP1.ReciprocalDivisibilitySieve.actual_lambda_sieve
 #print axioms PaperP1.ReciprocalOddPivots.pivotSum_nonneg
 #print axioms PaperP1.ReciprocalOddPivots.primeSum_nonneg
 #print axioms PaperP1.ReciprocalOddPivots.primeSum_le_pivotSum
