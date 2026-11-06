@@ -1,6 +1,15 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0857: The actual unshifted logarithmic sum
+Current checkpoint P1-MATH-0858: A fixed-order logarithmic differencing
+scale has exact powers and uniform frequency bounds. The triple-large
+prime frequency contribution, the central-frequency mean comparison and
+complete logarithmic short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 51.09 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0857: The actual unshifted logarithmic sum
 has a concrete all-order differencing bound. The triple-large prime
 frequency contribution, the central-frequency mean comparison and
 complete logarithmic short-average concentration remain unproved. T19.17
@@ -33479,6 +33488,12 @@ Define the EXPLICIT terminal budget e(X,A,K,n,t)=2*3^(n+1)*X^n/(|t|*n!*A^n)+|t|*
 
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
 
+## Internal a fixed-order logarithmic differencing scale has exact powers and uniform frequency bounds
+
+Define beta_n=1/(16*n) and the ACTUAL real scale g=x^(1+1/(2*n))/y^(1/n). For n>0 and x,y>0, prove g^n=x^(n+1/2)/y and y*g^n=x^(n+1/2) EXACTLY. On x>=1 and x^(3/4)<=y<=x^(n+1/4), prove x^(1/(4*n))<=g<=x^(1-1/(4*n)). The actual Nat floor of every u>=2 lies between u/2 and u and is >=1. Five theorems and two definitions retain every real exponent, positive-domain and integer-rounding condition.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -37342,3 +37357,14 @@ Define the EXPLICIT terminal budget e(X,A,K,n,t)=2*3^(n+1)*X^n/(|t|*n!*A^n)+|t|*
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.11 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18281 jobs); direct axiom audit passed for 18776 declarations using only propext, Classical.choice and Quot.sound; all 18994 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.11 GiB.
+
+
+## A fixed-order logarithmic differencing scale has exact powers and uniform frequency bounds
+
+Stable ID: p1:internal:fixed-order-logarithmic-scale. A fixed-order logarithmic differencing scale has exact powers and uniform frequency bounds. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
+
+Define beta_n=1/(16*n) and the ACTUAL real scale g=x^(1+1/(2*n))/y^(1/n). For n>0 and x,y>0, prove g^n=x^(n+1/2)/y and y*g^n=x^(n+1/2) EXACTLY. On x>=1 and x^(3/4)<=y<=x^(n+1/4), prove x^(1/(4*n))<=g<=x^(1-1/(4*n)). The actual Nat floor of every u>=2 lies between u/2 and u and is >=1. Five theorems and two definitions retain every real exponent, positive-domain and integer-rounding condition.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.09 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18283 jobs); direct axiom audit passed for 18781 declarations using only propext, Classical.choice and Quot.sound; all 19001 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.09 GiB.

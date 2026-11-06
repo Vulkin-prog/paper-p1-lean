@@ -1,6 +1,15 @@
 # Mathematical corrections and improvements
 
-Current checkpoint P1-MATH-0857: The actual unshifted logarithmic sum
+Current checkpoint P1-MATH-0858: A fixed-order logarithmic differencing
+scale has exact powers and uniform frequency bounds. The triple-large
+prime frequency contribution, the central-frequency mean comparison and
+complete logarithmic short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 51.09 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0857: The actual unshifted logarithmic sum
 has a concrete all-order differencing bound. The triple-large prime
 frequency contribution, the central-frequency mean comparison and
 complete logarithmic short-average concentration remain unproved. T19.17
@@ -2481,7 +2490,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**855 mathematical improvements and two statement-scope corrections are confirmed.**
+**856 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -33284,3 +33293,12 @@ Define the EXPLICIT terminal budget e(X,A,K,n,t)=2*3^(n+1)*X^n/(|t|*n!*A^n)+|t|*
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.11 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18281 jobs); direct axiom audit passed for 18776 declarations using only propext, Classical.choice and Quot.sound; all 18994 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.11 GiB.
+
+
+## A fixed-order logarithmic differencing scale has exact powers and uniform frequency bounds
+
+Define beta_n=1/(16*n) and the ACTUAL real scale g=x^(1+1/(2*n))/y^(1/n). For n>0 and x,y>0, prove g^n=x^(n+1/2)/y and y*g^n=x^(n+1/2) EXACTLY. On x>=1 and x^(3/4)<=y<=x^(n+1/4), prove x^(1/(4*n))<=g<=x^(1-1/(4*n)). The actual Nat floor of every u>=2 lies between u/2 and u and is >=1. Five theorems and two definitions retain every real exponent, positive-domain and integer-rounding condition.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.09 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18283 jobs); direct axiom audit passed for 18781 declarations using only propext, Classical.choice and Quot.sound; all 19001 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.09 GiB.
