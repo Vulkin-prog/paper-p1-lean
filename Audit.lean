@@ -5522,6 +5522,8 @@ import PaperP1
 #print axioms PaperP1.TwoPrimeBandPopulation.second_below_polynomial_eventually
 #print axioms PaperP1.TwoPrimeBandPopulation.first_ramare_sum
 #print axioms PaperP1.TwoPrimeBandPopulation.second_ramare_sum
+#print axioms PaperP1.UniformActualNarrowCofactor.uniform_bound
+#print axioms PaperP1.UniformActualNarrowCofactor.rectangle_bound
 #print axioms PaperP1.UniformBinaryLogBudget.monotone
 #print axioms PaperP1.UniformBinaryLogBudget.absorption
 #print axioms PaperP1.UniformCountWeightedTwistedSum.multiplicity_uniform_bound
