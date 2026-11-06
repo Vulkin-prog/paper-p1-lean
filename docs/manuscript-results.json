@@ -40016,7 +40016,8 @@
             "PaperP1.SmallSplitBranchPointBound.uniform_upper_bound"
           ]
         }
-      ]
+      ],
+      "validation_commit": "95ce3e431f2f29d85db03b6dae76113a0af4798d"
     },
     {
       "label": "p1:arith:dense",
