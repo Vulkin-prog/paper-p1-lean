@@ -3127,6 +3127,7 @@ import PaperP1
 #print axioms PaperP1.WeightedVeronesePieceIndex.piece_card_all
 #print axioms PaperP1.WeightedVeronesePieceIndex.piece_finite
 #print axioms PaperP1.WeightedVeronesePieceIndex.piece_card
+#print axioms PaperP1.ZModPointEvaluations.ringHom_scalars
 #print axioms PaperP1.ActualDyadicBucketMaps.exists_map
 #print axioms PaperP1.ActualLocalUnitMapGridCount.exists_at_nonexceptional
 #print axioms PaperP1.ActualLocalUnitMapGridCount.exists_control_set_and_maps
@@ -7715,6 +7716,8 @@ import PaperP1
 #print axioms PaperP1.SplitRadicalAlgebraPointCount.cardinality
 #print axioms PaperP1.SplitRadicalAlgebraPointCount.uniform_absolute
 #print axioms PaperP1.SplitRadicalAlgebraPointCount.uniform_upper_bound
+#print axioms PaperP1.SplitRadicalCanonicalPointCount.radicands_entry
+#print axioms PaperP1.SplitRadicalCanonicalPointCount.cardinality
 #print axioms PaperP1.SplitRadicalFiniteFieldPointCount.mem_points_iff
 #print axioms PaperP1.SplitRadicalFiniteFieldPointCount.product_linearValue
 #print axioms PaperP1.SplitRadicalFiniteFieldPointCount.character_sum_union
@@ -7722,6 +7725,11 @@ import PaperP1
 #print axioms PaperP1.SplitRadicalLineObstruction.two_equations
 #print axioms PaperP1.SplitRadicalLineObstruction.family_obstruction
 #print axioms PaperP1.SplitRadicalLineObstruction.vertical_family_obstruction
+#print axioms PaperP1.SplitRadicalNormalizedPointCount.normalized_finite
+#print axioms PaperP1.SplitRadicalNormalizedPointCount.cardinality
+#print axioms PaperP1.SplitRadicalNormalizedPointCount.support_card_le
+#print axioms PaperP1.SplitRadicalNormalizedPointCount.uniform_absolute
+#print axioms PaperP1.SplitRadicalNormalizedPointCount.uniform_upper_bound
 #print axioms PaperP1.SplitRadicalPatternPool.mem_pool
 #print axioms PaperP1.SplitRadicalPatternPool.offset_card_bound
 #print axioms PaperP1.SplitRadicalPatternPool.code_card

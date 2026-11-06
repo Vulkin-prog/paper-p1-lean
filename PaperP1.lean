@@ -4526,3 +4526,7 @@ public import PaperP1.Arithmetic.SplitRadicalUniformPointEstimate
 public import PaperP1.Algebra.ConductorPointExtension
 public import PaperP1.Algebra.BivariateQuadraticTowerPoints
 public import PaperP1.Arithmetic.SplitRadicalAlgebraPointCount
+public import PaperP1.Algebra.NormalizedQuotientPoints
+public import PaperP1.Algebra.ZModPointEvaluations
+public import PaperP1.Arithmetic.SplitRadicalCanonicalPointCount
+public import PaperP1.Arithmetic.SplitRadicalNormalizedPointCount

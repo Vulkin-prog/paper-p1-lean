@@ -1,6 +1,18 @@
 # P1 — Lean formalization
 
-Current checkpoint P1-MATH-0634: ALL actual affine quadratic-tower algebra
+Current checkpoint P1-MATH-0635: the ACTUAL normalized source-Veronese
+points are in exact bijection with the original affine split-radical
+solutions. Their cardinalities coincide; no factor D is introduced.
+The full weak normalized-source count is UNCONDITIONAL at certificate-good
+large primes. One cutoff depends only on the number and degree of equations
+and eta, before all coefficients and branch supports. Original projected
+model reduction, reduced-conductor verification, exceptional-locus bounds
+and effective prime budgets remain UNPROVED. Canonical T1.7 retains ONLY
+its prior P3 input in degrees>2 at the original families and caps. Coverage
+stays 163 proved, 2 conditional, 2 in_progress out of 167; all 73 main
+results proved. No Palomar registration.
+
+Historical checkpoint P1-MATH-0634: ALL actual affine quadratic-tower algebra
 points are identified with the literal simultaneous solutions, recovering
 both base coordinates and every radical root. Their finite cardinalities
 are equal. The full weak affine split-radical source-algebra point estimate
@@ -381,7 +393,7 @@ recorded in the linked ledger and [current status](docs/FORMALIZATION_STATUS.md)
 
 Companion T1.10 needs an enlarged alignment exclusion for unequal old/new widths: its literal radius-one version has an unconditional formal counterexample. The corrected coarse4/3 profile is proved under explicit geometric inputs; its sharper31/24 form remains open; see [the scope correction](docs/ASYMMETRIC_ALIGNMENT_SCOPE.md).
 
-The main optimal4/3 quadratic approximation power is now proved under explicit BCN and finite geometric properties, including both bounds, exact actual parameters, nominal-mean bias and eventual probability status. The optimal41/30 third factorial cumulant, full third absolute activity and aligned-channel triple claims are now proved under explicit geometric inputs, withBCN retained for the full connected argument. The actual original count and its retained modification converge in total variation to the actual-mean and nominal-mean Poisson laws without unproved inputs (P1-MATH-0413); quantitative optimal law rates remain separate. Exact fourth-cumulant component identities and unconditional weak, irregular and incompatible pair bounds are proved. In particular, the actual absolute pair activity is asymptotic to half the actual second factorial cumulant, without BCN or a complete pair profile. The contact activity bound at every fixed order now holds unconditionally on every dyadic subground, including irregular starts and zero marginals. The activation probability of the actual principal edge family now has the unconditional exponent -2/3, with any fixed epsilon margin. The planar normal budget T20.4 is now proved with improved constants and an integer-fibre argument. T20.6, the prescribed-plane transverse-product count and its actual affine mass bound, is now proved internally with three motifs and no Pila premise. The project records **632 confirmed mathematical improvements and two statement-scope corrections**. See [current status](docs/FORMALIZATION_STATUS.md), [the activity alignment](docs/FIXED_ABSOLUTE_ACTIVITY_ALIGNMENT.md) and [the mathematical change log](docs/MATHEMATICAL_CHANGELOG.md).
+The main optimal4/3 quadratic approximation power is now proved under explicit BCN and finite geometric properties, including both bounds, exact actual parameters, nominal-mean bias and eventual probability status. The optimal41/30 third factorial cumulant, full third absolute activity and aligned-channel triple claims are now proved under explicit geometric inputs, withBCN retained for the full connected argument. The actual original count and its retained modification converge in total variation to the actual-mean and nominal-mean Poisson laws without unproved inputs (P1-MATH-0413); quantitative optimal law rates remain separate. Exact fourth-cumulant component identities and unconditional weak, irregular and incompatible pair bounds are proved. In particular, the actual absolute pair activity is asymptotic to half the actual second factorial cumulant, without BCN or a complete pair profile. The contact activity bound at every fixed order now holds unconditionally on every dyadic subground, including irregular starts and zero marginals. The activation probability of the actual principal edge family now has the unconditional exponent -2/3, with any fixed epsilon margin. The planar normal budget T20.4 is now proved with improved constants and an integer-fibre argument. T20.6, the prescribed-plane transverse-product count and its actual affine mass bound, is now proved internally with three motifs and no Pila premise. The project records **633 confirmed mathematical improvements and two statement-scope corrections**. See [current status](docs/FORMALIZATION_STATUS.md), [the activity alignment](docs/FIXED_ABSOLUTE_ACTIVITY_ALIGNMENT.md) and [the mathematical change log](docs/MATHEMATICAL_CHANGELOG.md).
 
 Article13.1 now has a complete actual short-basis construction, with
 both physical projections and the common square-class map injective.
@@ -1756,3 +1768,5 @@ P1-MATH-0632 proves the complete unconditional relative point estimate for every
 P1-MATH-0633 constructs unique point extensions outside an actual conductor and proves the exact good-locus correspondence. Total image-point counts are bounded by source counts plus the actual exceptional-locus count. Model reduction and effective budgets remain unfinished.
 
 P1-MATH-0634 proves an actual equivalence between quadratic-tower algebra points and literal simultaneous solutions, and transports the unconditional uniform estimate to the affine source algebra. Normalized-chart and reduced-projection assembly remain unfinished.
+
+P1-MATH-0635 proves that actual normalized Veronese source points are exactly the affine source solutions, with no factor D in their cardinality. The complete unconditional relative count has a cutoff depending only on the number and degree of equations and eta. Projected-model reduction and exceptional prime budgets remain unfinished.

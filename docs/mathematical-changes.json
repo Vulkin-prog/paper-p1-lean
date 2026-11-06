@@ -30374,6 +30374,48 @@
         "status": "not_integrated"
       },
       "validation_commit": "172eb530b61df0ed389b5ca2a209c4d2eec33086"
+    },
+    {
+      "id": "P1-MATH-0635",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The affine source count had not yet been assembled with the actual normalized Veronese chart, and a spurious extra normalization factor had not been ruled out by a point equivalence.",
+      "finding": "The actual quotient, graded chart and canonical root indices give an exact bijection of normalized Veronese points with the original affine solutions. Their cardinalities coincide, and the degree constraints give the support cap 2*D*k, yielding a complete uniform normalized-source count with no factor D.",
+      "proposed_revision": "Use the exact normalized source-chart point correspondence and its internally proved uniform estimate. Preserve the good-prime certificate and the original projected-model and exceptional-locus obligations until separately proved.",
+      "impact": "Discharges normalized Veronese-chart point assembly and proves the full weak normalized-source count uniformly at bounded numbers and degrees of equations. Original projected-model reduction, exceptional bounds and effective arithmetic budgets still need proofs; canonical T1.7 is unchanged.",
+      "evidence": [
+        "PaperP1.ZModPointEvaluations.ringHom_scalars",
+        "PaperP1.SplitRadicalCanonicalPointCount.radicands_entry",
+        "PaperP1.SplitRadicalCanonicalPointCount.cardinality",
+        "PaperP1.SplitRadicalNormalizedPointCount.normalized_finite",
+        "PaperP1.SplitRadicalNormalizedPointCount.cardinality",
+        "PaperP1.SplitRadicalNormalizedPointCount.support_card_le",
+        "PaperP1.SplitRadicalNormalizedPointCount.uniform_absolute",
+        "PaperP1.SplitRadicalNormalizedPointCount.uniform_upper_bound",
+        "PaperP1.NormalizedQuotientPoints.quotientEquiv",
+        "PaperP1.NormalizedQuotientPoints.ringEquivPoints",
+        "PaperP1.ZModPointEvaluations.ringHomEquiv",
+        "PaperP1.SplitRadicalCanonicalPointCount.branchIndex",
+        "PaperP1.SplitRadicalCanonicalPointCount.concreteEquiv",
+        "PaperP1.SplitRadicalCanonicalPointCount.pointsEquiv",
+        "PaperP1.SplitRadicalNormalizedPointCount.normalizedEquiv",
+        "PaperP1.SplitRadicalNormalizedPointCount.normalizedPointEquiv"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17743 jobs); direct axiom audit passed for 17401 declarations using only propext, Classical.choice and Quot.sound; all 17307 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.15 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

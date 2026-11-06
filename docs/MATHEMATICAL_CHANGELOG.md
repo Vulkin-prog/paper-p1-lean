@@ -1,6 +1,18 @@
 # Mathematical corrections and improvements
 
-Current checkpoint P1-MATH-0634: ALL actual affine quadratic-tower algebra
+Current checkpoint P1-MATH-0635: the ACTUAL normalized source-Veronese
+points are in exact bijection with the original affine split-radical
+solutions. Their cardinalities coincide; no factor D is introduced.
+The full weak normalized-source count is UNCONDITIONAL at certificate-good
+large primes. One cutoff depends only on the number and degree of equations
+and eta, before all coefficients and branch supports. Original projected
+model reduction, reduced-conductor verification, exceptional-locus bounds
+and effective prime budgets remain UNPROVED. Canonical T1.7 retains ONLY
+its prior P3 input in degrees>2 at the original families and caps. Coverage
+stays 163 proved, 2 conditional, 2 in_progress out of 167; all 73 main
+results proved. No Palomar registration.
+
+Historical checkpoint P1-MATH-0634: ALL actual affine quadratic-tower algebra
 points are identified with the literal simultaneous solutions, recovering
 both base coordinates and every radical root. Their finite cardinalities
 are equal. The full weak affine split-radical source-algebra point estimate
@@ -378,7 +390,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**632 mathematical improvements and two statement-scope corrections are confirmed.**
+**633 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -28834,3 +28846,14 @@ SplitRadicalAlgebraPointCount identifies these tuples with the ACTUAL finite sou
 Two modules add twelve theorems and eight definitions. The solution-to-algebra-point identification and full weak affine source-algebra point estimate are now internal proofs. Normalized Veronese-chart point assembly, actual reduction of source/projected models, reduced-conductor verification, exceptional-locus bounds and uniform effective prime budgets still need proofs. No general projected P3 estimate is claimed. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families and caps. Coverage stays 163 proved, 2 conditional, 2 in_progress out of 167, all 73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Work stays on Ubuntu with about 55.2 GiB available and no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17735 jobs); direct axiom audit passed for 17393 declarations using only propext, Classical.choice and Quot.sound; all 17291 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.17 GiB.
+
+
+## Exact normalized Veronese source points and unconditional uniform chart counts
+
+NormalizedQuotientPoints constructs the actual point equivalence between evaluations with b=1 and evaluations of the quotient by b-1, together with transport along a literal ring equivalence. ZModPointEvaluations proves that every ring homomorphism to a nonzero ZMod base fixes all base scalars; the ring-point to algebra-point correspondence needs no extra scalar-compatibility premise. SplitRadicalCanonicalPointCount transports the actual finite root indices of the canonical equation list and proves its exact solution-point equivalence and cardinality.
+
+SplitRadicalNormalizedPointCount assembles the EXISTING all-field graded dehomogenization quotient and actual source affine-chart equivalence with these literal point maps. Evaluations of the actual source Veronese algebra with Z^D=1 are in exact bijection with the ORIGINAL affine split-radical solutions. The full normalized point set is finite and has exactly the same cardinality. In particular, no factor D is introduced by the Veronese normalization. The complete branch support is proved to have at most 2*D*k elements from the actual degree constraints. Hence one cutoff depending only on k, D and eta>0, chosen BEFORE every prime, polynomial list, branch support and coefficient vector, gives |N-p^2|<=eta*p^2 and N<=(1+eta)*p^2 for the actual normalized source at its actual certificate-good large primes. Defining polynomial identities, degree constraints, pairwise disjointness, nonempty components and the literal good-prime certificate remain explicit structural conditions. No point-count, point-equivalence, scalar-fixing or chart-identification conclusion is assumed.
+
+Four modules add eight theorems and eight definitions. The normalized source-chart point-assembly gap is now DISCHARGED, in addition to the full internal source count. The passage from the original integer projected equation to the corresponding reduced source/image rings, verification of the reduced conductor, a bound for its actual exceptional locus, and effective uniform prime budgets remain unproved. No general plane or P3 estimate is claimed. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families and caps. Coverage stays 163 proved, 2 conditional, 2 in_progress out of 167, all 73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Work stays on Ubuntu with about 55.1 GiB available and no dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17743 jobs); direct axiom audit passed for 17401 declarations using only propext, Classical.choice and Quot.sound; all 17307 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.15 GiB.

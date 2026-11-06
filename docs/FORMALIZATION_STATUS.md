@@ -1,6 +1,18 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0634: ALL actual affine quadratic-tower algebra
+Current checkpoint P1-MATH-0635: the ACTUAL normalized source-Veronese
+points are in exact bijection with the original affine split-radical
+solutions. Their cardinalities coincide; no factor D is introduced.
+The full weak normalized-source count is UNCONDITIONAL at certificate-good
+large primes. One cutoff depends only on the number and degree of equations
+and eta, before all coefficients and branch supports. Original projected
+model reduction, reduced-conductor verification, exceptional-locus bounds
+and effective prime budgets remain UNPROVED. Canonical T1.7 retains ONLY
+its prior P3 input in degrees>2 at the original families and caps. Coverage
+stays 163 proved, 2 conditional, 2 in_progress out of 167; all 73 main
+results proved. No Palomar registration.
+
+Historical checkpoint P1-MATH-0634: ALL actual affine quadratic-tower algebra
 points are identified with the literal simultaneous solutions, recovering
 both base coordinates and every radical root. Their finite cardinalities
 are equal. The full weak affine split-radical source-algebra point estimate
@@ -501,7 +513,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records632 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records633 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -620,7 +632,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **17393 audited theorem/lemma declarations**. This
+- The project currently has **17401 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -29727,3 +29739,14 @@ SplitRadicalAlgebraPointCount identifies these tuples with the ACTUAL finite sou
 Two modules add twelve theorems and eight definitions. The solution-to-algebra-point identification and full weak affine source-algebra point estimate are now internal proofs. Normalized Veronese-chart point assembly, actual reduction of source/projected models, reduced-conductor verification, exceptional-locus bounds and uniform effective prime budgets still need proofs. No general projected P3 estimate is claimed. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families and caps. Coverage stays 163 proved, 2 conditional, 2 in_progress out of 167, all 73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Work stays on Ubuntu with about 55.2 GiB available and no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17735 jobs); direct axiom audit passed for 17393 declarations using only propext, Classical.choice and Quot.sound; all 17291 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.17 GiB.
+
+
+## Exact normalized Veronese source points and unconditional uniform chart counts
+
+NormalizedQuotientPoints constructs the actual point equivalence between evaluations with b=1 and evaluations of the quotient by b-1, together with transport along a literal ring equivalence. ZModPointEvaluations proves that every ring homomorphism to a nonzero ZMod base fixes all base scalars; the ring-point to algebra-point correspondence needs no extra scalar-compatibility premise. SplitRadicalCanonicalPointCount transports the actual finite root indices of the canonical equation list and proves its exact solution-point equivalence and cardinality.
+
+SplitRadicalNormalizedPointCount assembles the EXISTING all-field graded dehomogenization quotient and actual source affine-chart equivalence with these literal point maps. Evaluations of the actual source Veronese algebra with Z^D=1 are in exact bijection with the ORIGINAL affine split-radical solutions. The full normalized point set is finite and has exactly the same cardinality. In particular, no factor D is introduced by the Veronese normalization. The complete branch support is proved to have at most 2*D*k elements from the actual degree constraints. Hence one cutoff depending only on k, D and eta>0, chosen BEFORE every prime, polynomial list, branch support and coefficient vector, gives |N-p^2|<=eta*p^2 and N<=(1+eta)*p^2 for the actual normalized source at its actual certificate-good large primes. Defining polynomial identities, degree constraints, pairwise disjointness, nonempty components and the literal good-prime certificate remain explicit structural conditions. No point-count, point-equivalence, scalar-fixing or chart-identification conclusion is assumed.
+
+Four modules add eight theorems and eight definitions. The normalized source-chart point-assembly gap is now DISCHARGED, in addition to the full internal source count. The passage from the original integer projected equation to the corresponding reduced source/image rings, verification of the reduced conductor, a bound for its actual exceptional locus, and effective uniform prime budgets remain unproved. No general plane or P3 estimate is claimed. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families and caps. Coverage stays 163 proved, 2 conditional, 2 in_progress out of 167, all 73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Work stays on Ubuntu with about 55.1 GiB available and no dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17743 jobs); direct axiom audit passed for 17401 declarations using only propext, Classical.choice and Quot.sound; all 17307 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.15 GiB.
