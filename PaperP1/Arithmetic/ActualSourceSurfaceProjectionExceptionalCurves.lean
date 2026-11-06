@@ -29,7 +29,9 @@ theorem exists_projection (s : List (PolynomialRing ℚ)) (c : Fin s.length → 
     (hJ : Pairwise fun i j ↦ Disjoint (J i) (J j)) :
     ∃ (u : GeneratorIndex ℚ (Fin s.length) D → ℕ) (q : MvPolynomial (Fin 4) ℚ)
         (curves : Finset (SourceProjectiveCurveData.Curve s c D I J hdeg hD)),
-      (∀ i, u i ≤ coefficientBound s.length D) ∧ Irreducible q ∧
+      (∀ i, u i ≤ coefficientBound s.length D) ∧
+      LinearHypersurfaceImage.ideal (F := ℚ) (SourceSurfacePowerParameters.parameters s c D hD I J hs)
+        (primitive c D I J u) = Ideal.span {q} ∧ Irreducible q ∧
       Irreducible (map (algebraMap ℚ (AlgebraicClosure ℚ)) q) ∧
       q.IsHomogeneous (2 ^ s.length * D ^ 2) ∧ q.totalDegree = 2 ^ s.length * D ^ 2 ∧
       (finSuccEquiv ℚ 3 q).Monic ∧
@@ -58,7 +60,7 @@ theorem exists_projection (s : List (PolynomialRing ℚ)) (c : Fin s.length → 
   obtain ⟨curves, hcount, hdegrees, hcover⟩ :=
     SourceSurfaceComponentDegreeBudget.uniform_section_curve_cover s c D I J hs hdeg hD hc hne hI hJ
       (2 ^ s.length * D ^ 2 - 1) δ hδmem hδ0
-  refine ⟨u, q, curves, hu, hirr, hgeom, hhom, htotal, hmonic, hcount,
+  refine ⟨u, q, curves, hu, hideal, hirr, hgeom, hhom, htotal, hmonic, hcount,
     (fun Γ hΓ ↦ (hdegrees Γ hΓ).2), ?_⟩
   intro H v hv
   have hvalid := SourceIntegerPointEvaluation.valid_of_mem c D I J hdeg hD H v hv

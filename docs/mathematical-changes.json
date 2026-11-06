@@ -27562,6 +27562,33 @@
         "status": "not_integrated"
       },
       "validation_commit": "be3fb2d91b791a381385f1daa979eca2e17e5285"
+    },
+    {
+      "id": "P1-MATH-0575",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The actual bounded projection, fixed bad curves and finite-family lifts were proved separately, but the full actual covering and exceptional-point transfer with explicit total budgets had not yet been assembled.",
+      "finding": "The actual source cover transfers from the actual projected hypersurface cover with no inflation of the exception count, at most d*(d-1)+|family|*M*d source curves, and genuine source degrees at most max(d*(d-1),M*d), for the same bounded projection before all heights.",
+      "proposed_revision": "Retain the actual principal image ideal equality and assemble the fixed exceptional-divisor cover, good-fibre injection and finite-family lift. State the resulting explicit budgets before absorbing constants into the uniform surface-cover estimates.",
+      "impact": "Completes the geometric and exact integer-point transfer from an actual hypersurface covering family. The determinant-method family existence remains an explicit separate obligation.",
+      "evidence": [
+        "PaperP1.ActualSourceSurfaceCoverReduction.exists_projection_with_cover_transfer"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17149 jobs); direct axiom audit passed for 16441 declarations using only propext, Classical.choice and Quot.sound; all 16100 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.42 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

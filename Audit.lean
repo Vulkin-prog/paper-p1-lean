@@ -3836,6 +3836,7 @@ import PaperP1
 #print axioms PaperP1.ActualSourcePrimitiveReduction.family_raw_bounds
 #print axioms PaperP1.ActualSourceProjectedCurveCover.uniform_curve_cover
 #print axioms PaperP1.ActualSourceProjectedCurveFamilyCover.uniform_family_cover
+#print axioms PaperP1.ActualSourceSurfaceCoverReduction.exists_projection_with_cover_transfer
 #print axioms PaperP1.ActualSourceSurfaceIntegerProjection.exists_projection
 #print axioms PaperP1.ActualSourceSurfaceProjectionExceptionalCurves.exists_projection
 #print axioms PaperP1.ActualSourceTranslations.sourceAt_cast

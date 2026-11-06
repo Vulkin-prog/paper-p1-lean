@@ -4247,3 +4247,4 @@ public import PaperP1.Geometry.SourceSurfaceCurvePullback
 public import PaperP1.Arithmetic.ActualSourceProjectedCurveFamilyCover
 public import PaperP1.Geometry.GradedProjectiveCurveData
 public import PaperP1.Geometry.PresentedProjectiveCurveData
+public import PaperP1.Arithmetic.ActualSourceSurfaceCoverReduction
