@@ -4662,6 +4662,17 @@ import PaperP1
 #print axioms PaperP1.SeparatedPolynomialSampling.derivative_coefficient_budget
 #print axioms PaperP1.SeparatedPolynomialSampling.sampled_mean_square
 #print axioms PaperP1.SeparatedPolynomialSampling.large_values_card
+#print axioms PaperP1.ShiftedExceptionWeight.exceptional_subset
+#print axioms PaperP1.ShiftedExceptionWeight.indicator_integrable
+#print axioms PaperP1.ShiftedExceptionWeight.integral_indicator
+#print axioms PaperP1.ShiftedExceptionWeight.shifted_indicator_interval
+#print axioms PaperP1.ShiftedExceptionWeight.badWeight_measurable
+#print axioms PaperP1.ShiftedExceptionWeight.badWeight_integrable
+#print axioms PaperP1.ShiftedExceptionWeight.integral_badWeight
+#print axioms PaperP1.ShiftedExceptionWeight.largeShifts_measurable
+#print axioms PaperP1.ShiftedExceptionWeight.largeShifts_budget
+#print axioms PaperP1.ShiftedExceptionWeight.largeShifts_measure
+#print axioms PaperP1.ShiftedExceptionWeight.off_largeShifts
 #print axioms PaperP1.ShortBasisCurveScale.extractionExponent_choice
 #print axioms PaperP1.ShortBasisCurveScale.support_budget_eventually
 #print axioms PaperP1.ShortBasisCurveScale.log_succ_le

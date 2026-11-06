@@ -33240,6 +33240,44 @@
         "status": "not_integrated"
       },
       "validation_commit": "24267d15ca552d91d50e6c90d7c9b7b4694e6bc8"
+    },
+    {
+      "id": "P1-MATH-0707",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "Pointwise domination by an exception indicator did not yet justify averaging in the shift or choosing a common measurable level set.",
+      "finding": "The actual shifted exception weight has interval integral <=5 times the exceptional measure, with an explicit measurable Markov level set.",
+      "proposed_revision": "Combine the actual integral and Markov bounds with the proved small bad-unit count to obtain the full Euler frequency-budget theorem.",
+      "impact": "The actual shifted exception weight has interval integral <=5 times the exceptional measure, with an explicit measurable Markov level set. Uniform common smallness of the actual full shifted Euler budget, final Halasz and logarithmic short-average assembly remain unfinished.",
+      "evidence": [
+        "PaperP1.ShiftedExceptionWeight.exceptional_subset",
+        "PaperP1.ShiftedExceptionWeight.indicator_integrable",
+        "PaperP1.ShiftedExceptionWeight.integral_indicator",
+        "PaperP1.ShiftedExceptionWeight.shifted_indicator_interval",
+        "PaperP1.ShiftedExceptionWeight.badWeight_measurable",
+        "PaperP1.ShiftedExceptionWeight.badWeight_integrable",
+        "PaperP1.ShiftedExceptionWeight.integral_badWeight",
+        "PaperP1.ShiftedExceptionWeight.largeShifts_measurable",
+        "PaperP1.ShiftedExceptionWeight.largeShifts_budget",
+        "PaperP1.ShiftedExceptionWeight.largeShifts_measure",
+        "PaperP1.ShiftedExceptionWeight.off_largeShifts",
+        "PaperP1.ShiftedExceptionWeight.largeShifts"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17981 jobs); direct axiom audit passed for 18138 declarations using only propext, Classical.choice and Quot.sound; all 18225 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.79 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

@@ -1,6 +1,14 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0706: The actual shifted full Euler local-
+Current checkpoint P1-MATH-0707: The actual shifted exception weight has
+interval integral <=5 times the exceptional measure, with an explicit
+measurable Markov level set. Uniform common smallness of the actual full
+shifted Euler budget, final Halasz and logarithmic short-average
+assembly remain unfinished. T19.17 conditional; original T1.7 complete.
+Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main
+proved. False scopes/corrections unchanged. No Palomar registration.
+
+Historical checkpoint P1-MATH-0706: The actual shifted full Euler local-
 supremum budget is dominated by one explicit common measurable exception
 weight, with no loss depending on the number of frequencies. Full
 shifted Euler budget smallness in measure, the final Halasz estimate and
@@ -1290,7 +1298,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records704 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records705 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -1409,7 +1417,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **18127 audited theorem/lemma declarations**. This
+- The project currently has **18138 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -31452,3 +31460,14 @@ If |tau|<=T and T+M<=K, the literal shifted full Euler frequencyBudget is <=log(
 Full shifted Euler budget smallness in measure, the final Halasz estimate and logarithmic short-average assembly remain unfinished. T19.17 remains conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, preserved sources, pinned Lean and allowed axioms unchanged. About 53.9 GiB is free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17979 jobs); direct axiom audit passed for 18127 declarations using only propext, Classical.choice and Quot.sound; all 18213 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.81 GiB.
+
+
+## Actual shifted exception-weight integral and Markov measure budget
+
+ShiftedExceptionWeight proves that the ACTUAL thickened exception is contained in a bounded interval. Its literal indicator is integrable and its whole integral equals its actual Lebesgue measure. Translation preserves that integral; the indicator integral over ANY symmetric finite interval is <=the same actual measure.
+
+The literal reciprocal-weighted badWeight is measurable and integrable. Finite integral interchange and the proved sum of reciprocal weights <=5 give its ACTUAL interval integral <=5*measure(exceptional). largeShifts is the actual intersection of [-T,T] with the level set V<=badWeight. It is measurable, and standard Markov gives V*measure(largeShifts)<=5*measure(exceptional), hence measure<=5*measure(exceptional)/V for V>0. Outside this set the actual badWeight is <V. Eleven theorems and one definition are added in one module.
+
+Uniform common smallness of the actual full shifted Euler budget, final Halasz and logarithmic short-average assembly remain unfinished. T19.17 remains conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, preserved sources, pinned Lean and allowed axioms unchanged. About 53.9 GiB is free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17981 jobs); direct axiom audit passed for 18138 declarations using only propext, Classical.choice and Quot.sound; all 18225 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.79 GiB.

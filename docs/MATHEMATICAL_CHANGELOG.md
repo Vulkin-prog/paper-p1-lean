@@ -1,6 +1,14 @@
 # Mathematical corrections and improvements
 
-Current checkpoint P1-MATH-0706: The actual shifted full Euler local-
+Current checkpoint P1-MATH-0707: The actual shifted exception weight has
+interval integral <=5 times the exceptional measure, with an explicit
+measurable Markov level set. Uniform common smallness of the actual full
+shifted Euler budget, final Halasz and logarithmic short-average
+assembly remain unfinished. T19.17 conditional; original T1.7 complete.
+Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main
+proved. False scopes/corrections unchanged. No Palomar registration.
+
+Historical checkpoint P1-MATH-0706: The actual shifted full Euler local-
 supremum budget is dominated by one explicit common measurable exception
 weight, with no loss depending on the number of frequencies. Full
 shifted Euler budget smallness in measure, the final Halasz estimate and
@@ -1167,7 +1175,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**704 mathematical improvements and two statement-scope corrections are confirmed.**
+**705 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -30559,3 +30567,14 @@ If |tau|<=T and T+M<=K, the literal shifted full Euler frequencyBudget is <=log(
 Full shifted Euler budget smallness in measure, the final Halasz estimate and logarithmic short-average assembly remain unfinished. T19.17 remains conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, preserved sources, pinned Lean and allowed axioms unchanged. About 53.9 GiB is free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17979 jobs); direct axiom audit passed for 18127 declarations using only propext, Classical.choice and Quot.sound; all 18213 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.81 GiB.
+
+
+## Actual shifted exception-weight integral and Markov measure budget
+
+ShiftedExceptionWeight proves that the ACTUAL thickened exception is contained in a bounded interval. Its literal indicator is integrable and its whole integral equals its actual Lebesgue measure. Translation preserves that integral; the indicator integral over ANY symmetric finite interval is <=the same actual measure.
+
+The literal reciprocal-weighted badWeight is measurable and integrable. Finite integral interchange and the proved sum of reciprocal weights <=5 give its ACTUAL interval integral <=5*measure(exceptional). largeShifts is the actual intersection of [-T,T] with the level set V<=badWeight. It is measurable, and standard Markov gives V*measure(largeShifts)<=5*measure(exceptional), hence measure<=5*measure(exceptional)/V for V>0. Outside this set the actual badWeight is <V. Eleven theorems and one definition are added in one module.
+
+Uniform common smallness of the actual full shifted Euler budget, final Halasz and logarithmic short-average assembly remain unfinished. T19.17 remains conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, preserved sources, pinned Lean and allowed axioms unchanged. About 53.9 GiB is free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17981 jobs); direct axiom audit passed for 18138 declarations using only propext, Classical.choice and Quot.sound; all 18225 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.79 GiB.
