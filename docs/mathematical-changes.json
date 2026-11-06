@@ -27779,6 +27779,49 @@
         "status": "not_integrated"
       },
       "validation_commit": "9e107bbb1c8edd6f175b333b7a2b862b4632e20d"
+    },
+    {
+      "id": "P1-MATH-0581",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The ordinary surface-cover conversion still needed to construct an actual ordinary image curve, recover the source prime exactly, prove that the image does not collapse to degree zero, and transfer actual height-one data.",
+      "finding": "The actual ordinary image of a source curve meeting the normalized chart is a genuine prime height-one ordinary radical-surface curve at the chosen embedding degree, with constructed positive integral Hilbert degree d and proved bounds d <= E_source <= D*d; its induced source ideal is exactly the original prime.",
+      "proposed_revision": "Define the actual ordinary coordinate evaluation and kernel, state exact source-prime recovery on the normalized chart, and prove both actual Hilbert-degree bounds before using the ordinary image curve. Keep arbitrary auxiliary Veronese-degree invariance separate until proved.",
+      "impact": "Removes assumed prime recovery, noncollapse, ordinary Hilbert-polynomial existence and chosen-degree height transfer from the ordinary curve-image construction.",
+      "evidence": [
+        "PaperP1.OrdinarySourcePolynomialProjection.coordinate_mem",
+        "PaperP1.OrdinarySourcePolynomialProjection.evaluation_value",
+        "PaperP1.OrdinarySourcePolynomialProjection.evaluation_homogeneous",
+        "PaperP1.OrdinarySourcePolynomialProjection.ordinary_relation_zero",
+        "PaperP1.OrdinarySourcePolynomialProjection.coordinate_Z",
+        "PaperP1.OrdinarySourcePolynomialProjection.evaluation_substitution",
+        "PaperP1.SourceCurveOrdinaryImagePrime.evaluation_comp",
+        "PaperP1.SourceCurveOrdinaryImagePrime.prime",
+        "PaperP1.SourceCurveOrdinaryImagePrime.homogeneous",
+        "PaperP1.SourceCurveOrdinaryImagePrime.relations",
+        "PaperP1.SourceCurveOrdinaryImagePrime.chart_not_mem",
+        "PaperP1.SourceCurveOrdinaryImagePrime.sourceIdeal_eq",
+        "PaperP1.SourceProjectiveCurveToOrdinary.exists_curve",
+        "PaperP1.OrdinarySourcePolynomialProjection.coordinate",
+        "PaperP1.OrdinarySourcePolynomialProjection.evaluation",
+        "PaperP1.SourceCurveOrdinaryImagePrime.evaluation",
+        "PaperP1.SourceCurveOrdinaryImagePrime.ideal"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17189 jobs); direct axiom audit passed for 16494 declarations using only propext, Classical.choice and Quot.sound; all 16171 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.29 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

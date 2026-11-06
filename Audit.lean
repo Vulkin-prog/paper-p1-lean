@@ -12578,6 +12578,12 @@ import PaperP1
 #print axioms PaperP1.OrdinaryRadicalSurface.relation_mem
 #print axioms PaperP1.OrdinaryRadicalSurface.homogeneous
 #print axioms PaperP1.OrdinaryRadicalSurface.chart_bijective
+#print axioms PaperP1.OrdinarySourcePolynomialProjection.coordinate_mem
+#print axioms PaperP1.OrdinarySourcePolynomialProjection.evaluation_value
+#print axioms PaperP1.OrdinarySourcePolynomialProjection.evaluation_homogeneous
+#print axioms PaperP1.OrdinarySourcePolynomialProjection.ordinary_relation_zero
+#print axioms PaperP1.OrdinarySourcePolynomialProjection.coordinate_Z
+#print axioms PaperP1.OrdinarySourcePolynomialProjection.evaluation_substitution
 #print axioms PaperP1.OrdinarySurfaceCurveData.degree_unique
 #print axioms PaperP1.OriginalFieldCurveNoetherNormalization.exists_normalization
 #print axioms PaperP1.OriginalFieldFiniteCurveParameters.exists_parameters
@@ -12701,6 +12707,12 @@ import PaperP1
 #print axioms PaperP1.SourceCurveHostChart.coordinate_ne_zero
 #print axioms PaperP1.SourceCurveHostChart.not_infinity
 #print axioms PaperP1.SourceCurveHostChart.affine_point
+#print axioms PaperP1.SourceCurveOrdinaryImagePrime.evaluation_comp
+#print axioms PaperP1.SourceCurveOrdinaryImagePrime.prime
+#print axioms PaperP1.SourceCurveOrdinaryImagePrime.homogeneous
+#print axioms PaperP1.SourceCurveOrdinaryImagePrime.relations
+#print axioms PaperP1.SourceCurveOrdinaryImagePrime.chart_not_mem
+#print axioms PaperP1.SourceCurveOrdinaryImagePrime.sourceIdeal_eq
 #print axioms PaperP1.SourceCurvePlaneEquationDegree.multiplicity
 #print axioms PaperP1.SourceCurvePlaneImageEquation.exists_equation
 #print axioms PaperP1.SourceCurvePlaneImagePrime.ideal_prime
@@ -12780,6 +12792,7 @@ import PaperP1
 #print axioms PaperP1.SourceProjectiveCurveRadicalDescent.radical_isSquare
 #print axioms PaperP1.SourceProjectiveCurveSmallDegree.factors_lt_two
 #print axioms PaperP1.SourceProjectiveCurveSmallDegree.line_and_degree_one
+#print axioms PaperP1.SourceProjectiveCurveToOrdinary.exists_curve
 #print axioms PaperP1.SourceProjectiveCurveVerticalExclusion.no_odd_degree
 #print axioms PaperP1.SourceProjectiveCurveVerticalExclusion.no_degree_one
 #print axioms PaperP1.SourceProjectiveCurveVerticalExclusion.multiplicity_ge_twoD

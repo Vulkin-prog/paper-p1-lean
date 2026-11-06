@@ -4265,3 +4265,6 @@ public import PaperP1.Algebra.TwoParameterIntegralHilbertSlope
 public import PaperP1.Algebra.OrdinaryWeightedProjection
 public import PaperP1.Algebra.OrdinaryWeightedProjectionComposition
 public import PaperP1.Algebra.WeightedHomogeneousEvaluation
+public import PaperP1.Geometry.OrdinarySourcePolynomialProjection
+public import PaperP1.Geometry.SourceCurveOrdinaryImagePrime
+public import PaperP1.Geometry.SourceProjectiveCurveToOrdinary
