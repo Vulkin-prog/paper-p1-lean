@@ -1,6 +1,15 @@
 # Mathematical corrections and improvements
 
-Current checkpoint P1-MATH-0744: Actual square-root Gram cap and
+Current checkpoint P1-MATH-0745: Actual packing and reciprocal weights
+for separated positive frequencies. The actual Ramare main-term
+frequency bounds and complete logarithmic short-average concentration
+remain unproved. T19.17 conditional; original T1.7 unconditional.
+Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main
+proved. Sources, false-scope corrections, compiler and axioms unchanged.
+About 53.1 GiB free on Ubuntu. No dependency download or Palomar
+registration.
+
+Historical checkpoint P1-MATH-0744: Actual square-root Gram cap and
 explicit large-value estimates. The actual Ramare main-term frequency
 bounds and complete logarithmic short-average concentration remain
 unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164
@@ -1455,7 +1464,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**742 mathematical improvements and two statement-scope corrections are confirmed.**
+**743 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -31241,3 +31250,12 @@ The actual logarithmic sum bound implies the explicit cap sqrt(128*(N*sqrt(2*T)+
 The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.3 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18055 jobs); direct axiom audit passed for 18361 declarations using only propext, Classical.choice and Quot.sound; all 18501 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.14 GiB.
+
+
+## Actual packing and reciprocal weights for separated positive frequencies
+
+The literal natural floor map is injective on any finite nonnegative real sequence separated by at least one. If all its values lie in [1,A], its actual image lies in [1,floor(A)], its cardinality is <=A, and the ACTUAL sum of reciprocal values is <=the finite harmonic sum up to floor(A), hence <=1+log(A). Five theorems prove the exact finite packing and weights, including the endpoint convention and actual floor comparisons.
+
+The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.1 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18057 jobs); direct axiom audit passed for 18366 declarations using only propext, Classical.choice and Quot.sound; all 18506 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.12 GiB.

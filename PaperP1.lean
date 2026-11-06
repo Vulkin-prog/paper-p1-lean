@@ -4684,3 +4684,4 @@ public import PaperP1.Analysis.LogarithmicShiftSum
 public import PaperP1.Analysis.LogarithmicDifferencingBound
 public import PaperP1.Analysis.LogarithmicSquareRootBound
 public import PaperP1.Analysis.SquareRootGramBound
+public import PaperP1.Analysis.SeparatedPositiveBudget

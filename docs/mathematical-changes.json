@@ -34554,6 +34554,37 @@
         "status": "not_integrated"
       },
       "validation_commit": "9332818d48e8901b6bad146397de6eb30fd88850"
+    },
+    {
+      "id": "P1-MATH-0745",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "Summing actual nearby Gram correlations requires a proved reciprocal-distance budget for separated real frequencies; counting only the number of points loses the harmonic gain.",
+      "finding": "The literal natural floor map is injective on any finite nonnegative real sequence separated by at least one. If all its values lie in [1,A], its actual image lies in [1,floor(A)], its cardinality is <=A, and the ACTUAL sum of reciprocal values is <=the finite harmonic sum up to floor(A), hence <=1+log(A). Five theorems prove the exact finite packing and weights, including the endpoint convention and actual floor comparisons.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Actual packing and reciprocal weights for separated positive frequencies. The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.SeparatedPositiveBudget.floor_injective",
+        "PaperP1.SeparatedPositiveBudget.floor_image_subset",
+        "PaperP1.SeparatedPositiveBudget.card_bound",
+        "PaperP1.SeparatedPositiveBudget.reciprocal_finite_bound",
+        "PaperP1.SeparatedPositiveBudget.reciprocal_bound"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18057 jobs); direct axiom audit passed for 18366 declarations using only propext, Classical.choice and Quot.sound; all 18506 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.12 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

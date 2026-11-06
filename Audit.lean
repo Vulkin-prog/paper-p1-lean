@@ -4827,6 +4827,11 @@ import PaperP1
 #print axioms PaperP1.SeparatedPolynomialSampling.derivative_coefficient_budget
 #print axioms PaperP1.SeparatedPolynomialSampling.sampled_mean_square
 #print axioms PaperP1.SeparatedPolynomialSampling.large_values_card
+#print axioms PaperP1.SeparatedPositiveBudget.floor_injective
+#print axioms PaperP1.SeparatedPositiveBudget.floor_image_subset
+#print axioms PaperP1.SeparatedPositiveBudget.card_bound
+#print axioms PaperP1.SeparatedPositiveBudget.reciprocal_finite_bound
+#print axioms PaperP1.SeparatedPositiveBudget.reciprocal_bound
 #print axioms PaperP1.ShiftedCorrelations.shifted_correlation
 #print axioms PaperP1.ShiftedCorrelations.shifted_norm_symm
 #print axioms PaperP1.ShiftedCorrelations.shifted_norm_eq
