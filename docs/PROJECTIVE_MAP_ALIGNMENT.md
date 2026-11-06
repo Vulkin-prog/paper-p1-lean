@@ -1,6 +1,15 @@
 # Actual projective scheme map
 
-Current checkpoint P1-MATH-0828: Actual narrow prime large values are
+Current checkpoint P1-MATH-0829: Every actual second prime block has a
+ceiling moment with explicit source-size bounds. The joint large-prime
+frequency contribution, the central-frequency mean comparison and
+complete logarithmic short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 51.67 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0828: Actual narrow prime large values are
 counted at arbitrary moment order. The joint large-prime frequency
 contribution, the central-frequency mean comparison and complete
 logarithmic short-average concentration remain unproved. T19.17
@@ -26038,3 +26047,12 @@ For the ACTUAL narrow prime filter, H>=4, anchor>=H and EVERY integer k, separat
 The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.67 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18223 jobs); direct axiom audit passed for 18666 declarations using only propext, Classical.choice and Quot.sound; all 18868 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.63 GiB.
+
+
+## Every actual second prime block has a ceiling moment with explicit source-size bounds
+
+ONE eventual regime precedes EVERY occupied second prime block at width H=floor((log log N)^3). Write x=log log N, z=log N, q=the ACTUAL anchor and k=ceil(z/log q). Prove H<=q, q>1, x^2/2<=log q<=x^3, k>=1, k<=3*z/x^2, k<=z, k*log q<=z+x^3 and N<=ceil(q)^k. One theorem retains all actual occupied-block conditions, logarithms, integer ceilings and powers.
+
+The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.67 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18225 jobs); direct axiom audit passed for 18667 declarations using only propext, Classical.choice and Quot.sound; all 18869 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.61 GiB.
