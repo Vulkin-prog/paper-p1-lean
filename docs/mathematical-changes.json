@@ -40129,6 +40129,41 @@
         "status": "not_integrated"
       },
       "validation_commit": "c8b6ca3a9fb6eb013c8b028a0f8d1a9bf0564b8d"
+    },
+    {
+      "id": "P1-MATH-0922",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The actual smoothed sum over multiples must be reduced with its exact phase and scale before inserting it into a Selberg sieve.",
+      "finding": "Seven theorems and two definitions prove the literal weight and logarithmic-phase dilation identities, absolute convergence of the actual positive-multiple series, its exact reduction to the full kernel at A/D, and the common-phase Gaussian main term (1/D)*mainValue(A,t). For positive A,D, A/D>=2 and |t|<=(A/D)^(1/4), the actual multiple-series error is <=C_near*(A/D)^(3/4). The phase of the main term is retained exactly; no arithmetic progression approximation is assumed.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Actual lognormal sums over multiples have an exact common-phase dilation and near-frequency error. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.LognormalDilatedKernel.weight_dilation",
+        "PaperP1.LognormalDilatedKernel.phase_dilation",
+        "PaperP1.LognormalDilatedKernel.function_dilation",
+        "PaperP1.LognormalDilatedKernel.summable_terms",
+        "PaperP1.LognormalDilatedKernel.value_dilation",
+        "PaperP1.LognormalDilatedKernel.main_dilation",
+        "PaperP1.LognormalDilatedKernel.near_bound",
+        "PaperP1.LognormalDilatedKernel.multipleValue",
+        "PaperP1.LognormalDilatedKernel.mainValue"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18411 jobs); direct axiom audit passed for 19042 declarations using only propext, Classical.choice and Quot.sound; all 19306 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.07 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

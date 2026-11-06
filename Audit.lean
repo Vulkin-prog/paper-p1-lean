@@ -4513,6 +4513,13 @@ import PaperP1
 #print axioms PaperP1.LogarithmicSquareRootBound.square_bound
 #print axioms PaperP1.LognormalBlockCancellation.phase_prefix_identity
 #print axioms PaperP1.LognormalBlockCancellation.uniform_bound
+#print axioms PaperP1.LognormalDilatedKernel.weight_dilation
+#print axioms PaperP1.LognormalDilatedKernel.phase_dilation
+#print axioms PaperP1.LognormalDilatedKernel.function_dilation
+#print axioms PaperP1.LognormalDilatedKernel.summable_terms
+#print axioms PaperP1.LognormalDilatedKernel.value_dilation
+#print axioms PaperP1.LognormalDilatedKernel.main_dilation
+#print axioms PaperP1.LognormalDilatedKernel.near_bound
 #print axioms PaperP1.LognormalExactTruncation.series_split
 #print axioms PaperP1.LognormalExactTruncation.head_interval_split
 #print axioms PaperP1.LognormalExactTruncation.integral_split
