@@ -3302,6 +3302,7 @@ import PaperP1
 #print axioms PaperP1.ActualTaylorRemainderBound.within_eq_jet
 #print axioms PaperP1.ActualTaylorRemainderBound.factorial_divisor_bound
 #print axioms PaperP1.ActualTaylorRemainderBound.remainder_bound
+#print axioms PaperP1.ActualVariablePrimeLargeValues.sampled_card_bound
 #print axioms PaperP1.AdjacentSquarefreeBudget.odd_term_bound
 #print axioms PaperP1.AdjacentSquarefreeBudget.odd_partial_sum
 #print axioms PaperP1.AdjacentSquarefreeBudget.odd_uniform_sum

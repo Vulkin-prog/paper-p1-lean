@@ -1,6 +1,15 @@
 # Mathematical corrections and improvements
 
-Current checkpoint P1-MATH-0827: Actual prime high-moment samples retain
+Current checkpoint P1-MATH-0828: Actual narrow prime large values are
+counted at arbitrary moment order. The joint large-prime frequency
+contribution, the central-frequency mean comparison and complete
+logarithmic short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 51.67 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0827: Actual prime high-moment samples retain
 every variable-span loss. The joint large-prime frequency contribution,
 the central-frequency mean comparison and complete logarithmic short-
 average concentration remain unproved. T19.17 conditional; original T1.7
@@ -2209,7 +2218,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**825 mathematical improvements and two statement-scope corrections are confirmed.**
+**826 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -32742,3 +32751,12 @@ For arbitrary prime supports, moment orders and powered span U^k<=exp(3*r)*L^k, 
 The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.67 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18221 jobs); direct axiom audit passed for 18665 declarations using only propext, Classical.choice and Quot.sound; all 18867 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.65 GiB.
+
+
+## Actual narrow prime large values are counted at arbitrary moment order
+
+For the ACTUAL narrow prime filter, H>=4, anchor>=H and EVERY integer k, separated samples of height T<=ceil(anchor)^k on which the actual block norm>=V have cardinality<=C*exp(6*k/H)*(2+9*(k/H)^2)*budget(k,actualBlock)/V^(2*k). One theorem instantiates every prime, mass, rounded-support and variable-span condition on the literal block.
+
+The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.67 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18223 jobs); direct axiom audit passed for 18666 declarations using only propext, Classical.choice and Quot.sound; all 18868 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.63 GiB.

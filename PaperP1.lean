@@ -4767,3 +4767,4 @@ public import PaperP1.Analysis.NarrowPrimeLargeValues
 public import PaperP1.Analysis.FinalPrimeOrderGeometry
 public import PaperP1.Analysis.VariableAmplificationSpan
 public import PaperP1.Analysis.VariablePrimePowerLargeValues
+public import PaperP1.Analysis.ActualVariablePrimeLargeValues
