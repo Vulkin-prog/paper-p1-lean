@@ -1,6 +1,15 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0691: ACTUAL Gaussian tails and the
+Current checkpoint P1-MATH-0692: the ACTUAL FINITE Gaussian Perron
+identity and literal sharp-cutoff error are proved. Arbitrary finite
+complex coefficients, positive integer levels, repetitions and the
+equality boundary are retained. Aggregate integer Gaussian/fibre
+bounds, FULL EULER/TRIPLE transfer, final Halasz and short-average
+assembly remain UNPROVED. T19.17 conditional; original T1.7 complete.
+Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main
+proved. False scopes/corrections unchanged. No Palomar registration.
+
+Historical checkpoint P1-MATH-0691: ACTUAL Gaussian tails and the
 complete step error are proved. The additive normalization error
 occurs ONLY on the finite side; the infinite side keeps Gaussian
 decay. Integer/triple kernel transfer, aggregate Gaussian error,
@@ -1142,7 +1151,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records689 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records690 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -1261,7 +1270,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **17992 audited theorem/lemma declarations**. This
+- The project currently has **18002 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -31109,3 +31118,16 @@ The ACTUAL step is one for v>=0 and zero otherwise. For every real v and 0<b<=1,
 This closes the actual Gaussian cutoff approximation, including the transition and both tails. Transfer of the kernel to literal finite integer sums/triple products, a full Perron connection, the relevant full Euler frequency budget, final Halasz and logarithmic short-average assembly remain unfinished. Earlier combinatorial triple and analytic band-factor estimates remain proved. T19.17 remains conditional and original complete T1.7 unconditional. Coverage remains 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, source hashes, Lean v4.36.0-rc2 and allowed axioms are unchanged. Ubuntu has about 54.1 GiB free; no dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17949 jobs); direct axiom audit passed for 17992 declarations using only propext, Classical.choice and Quot.sound; all 18045 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.08 GiB.
+
+
+## Actual finite Gaussian Perron formula with literal cutoff error
+
+FiniteGaussianPerron works with an arbitrary literal finite index set S, arbitrary complex coefficients a(i), and positive natural integer levels n(i). The levels need NOT be injective: repeated integer products and their distinct coefficients remain present. It defines the actual Dirichlet polynomial sum a(i)/n(i)*phase(-log(n(i)),t), its Gaussian vertical integrand, the kernel-smoothed finite sum, and the literal sharp sum retaining exactly n(i)<=X.
+
+The Gaussian integrand expands EXACTLY into the finite sum of the raw Gaussian-Laplace integrands. Actual integrability of each term and of the full integrand is internal. A checked finite integral interchange and the proved kernel formula give the ACTUAL identity smoothed=(X/(2*pi))*integral_R integrand, for b>0 and real X>0. Polynomial continuity, the exact integrand norm exp(-b*t^2)*|polynomial(t)|/sqrt(1+t^2), and the corresponding norm bound for the smoothed sum are also proved.
+
+The module proves that step(log(X/n(i))) is EXACTLY the indicator n(i)<=X, including equality at the cutoff. For 0<b<=1 it then proves the ACTUAL norm of smoothed-minus-sharp is <=(exp(b)-1)*sum_{n(i)<=X}|a(i)|+2*exp(b)*sum_{i in S}|a(i)|*exp(-log(X/n(i))^2/(32*b)). The finite-side normalization term and the full literal Gaussian error are retained separately. Repeated levels are not discarded by a change of variables or an assumed fibre count. One module adds ten theorems and four definitions.
+
+This closes the exact finite Gaussian Perron formula and its literal coefficient-wise cutoff error. A uniform aggregate Gaussian integer bound, actual triple coefficient-fibre control, passage to the full relevant Euler series and the resulting triple main-term estimate remain unfinished. The full Euler frequency budget, final Halasz and logarithmic short-average assembly remain unfinished. Earlier total combinatorial triple and analytic band-factor estimates remain proved. T19.17 remains conditional and original complete T1.7 unconditional. Coverage remains 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, source hashes, Lean v4.36.0-rc2 and allowed axioms are unchanged. Ubuntu has about 54.1 GiB free; no dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17951 jobs); direct axiom audit passed for 18002 declarations using only propext, Classical.choice and Quot.sound; all 18059 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.07 GiB.

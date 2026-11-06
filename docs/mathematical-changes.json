@@ -32667,6 +32667,46 @@
         "status": "not_integrated"
       },
       "validation_commit": "da871c23ac7d335ca7bfbe31f38c907ed3b1bff1"
+    },
+    {
+      "id": "P1-MATH-0692",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The actual Gaussian kernel had not yet been transferred to literal finite integer sums. A transfer that silently identifies repeated integer levels would lose the actual triple-product multiplicities.",
+      "finding": "An exact finite Gaussian Perron identity and explicit sharp-cutoff error hold for arbitrary finite complex coefficients and positive integer levels, without an injectivity assumption. Integrability, norm weights and the equality boundary are internal.",
+      "proposed_revision": "Use this finite formula with the literal triple indices, then prove actual coefficient-fibre and uniform Gaussian integer bounds and the full Euler-series limit before asserting the triple main-term estimate.",
+      "impact": "Closes the actual finite Perron/kernel transfer and its literal coefficient error, preserving repeated levels. Aggregate integer errors, full Euler/triple transfer and T19.17 remain unfinished.",
+      "evidence": [
+        "PaperP1.FiniteGaussianPerron.integrand_expansion",
+        "PaperP1.FiniteGaussianPerron.integrand_integrable",
+        "PaperP1.FiniteGaussianPerron.integral_expansion",
+        "PaperP1.FiniteGaussianPerron.finite_formula",
+        "PaperP1.FiniteGaussianPerron.step_eq_indicator",
+        "PaperP1.FiniteGaussianPerron.sharp_as_step",
+        "PaperP1.FiniteGaussianPerron.cutoff_error",
+        "PaperP1.FiniteGaussianPerron.polynomial_continuous",
+        "PaperP1.FiniteGaussianPerron.integrand_norm",
+        "PaperP1.FiniteGaussianPerron.smoothed_norm_bound",
+        "PaperP1.FiniteGaussianPerron.polynomial",
+        "PaperP1.FiniteGaussianPerron.integrand",
+        "PaperP1.FiniteGaussianPerron.smoothed",
+        "PaperP1.FiniteGaussianPerron.sharp"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17951 jobs); direct axiom audit passed for 18002 declarations using only propext, Classical.choice and Quot.sound; all 18059 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.07 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

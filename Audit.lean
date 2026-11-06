@@ -3745,6 +3745,16 @@ import PaperP1
 #print axioms PaperP1.FiniteExponentialProducts.norm_quadratic_error_le
 #print axioms PaperP1.FiniteFibreSquareBudget.norm_sum_sq_le_card
 #print axioms PaperP1.FiniteFibreSquareBudget.aggregate_square_budget
+#print axioms PaperP1.FiniteGaussianPerron.integrand_expansion
+#print axioms PaperP1.FiniteGaussianPerron.integrand_integrable
+#print axioms PaperP1.FiniteGaussianPerron.integral_expansion
+#print axioms PaperP1.FiniteGaussianPerron.finite_formula
+#print axioms PaperP1.FiniteGaussianPerron.step_eq_indicator
+#print axioms PaperP1.FiniteGaussianPerron.sharp_as_step
+#print axioms PaperP1.FiniteGaussianPerron.cutoff_error
+#print axioms PaperP1.FiniteGaussianPerron.polynomial_continuous
+#print axioms PaperP1.FiniteGaussianPerron.integrand_norm
+#print axioms PaperP1.FiniteGaussianPerron.smoothed_norm_bound
 #print axioms PaperP1.FiniteGramLargeValues.complex_cauchy_square
 #print axioms PaperP1.FiniteGramLargeValues.gram_star
 #print axioms PaperP1.FiniteGramLargeValues.gram_norm_symm

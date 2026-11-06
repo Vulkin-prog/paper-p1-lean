@@ -1,6 +1,15 @@
 # Actual projective scheme map
 
-Current checkpoint P1-MATH-0691: ACTUAL Gaussian tails and the
+Current checkpoint P1-MATH-0692: the ACTUAL FINITE Gaussian Perron
+identity and literal sharp-cutoff error are proved. Arbitrary finite
+complex coefficients, positive integer levels, repetitions and the
+equality boundary are retained. Aggregate integer Gaussian/fibre
+bounds, FULL EULER/TRIPLE transfer, final Halasz and short-average
+assembly remain UNPROVED. T19.17 conditional; original T1.7 complete.
+Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main
+proved. False scopes/corrections unchanged. No Palomar registration.
+
+Historical checkpoint P1-MATH-0691: ACTUAL Gaussian tails and the
 complete step error are proved. The additive normalization error
 occurs ONLY on the finite side; the infinite side keeps Gaussian
 decay. Integer/triple kernel transfer, aggregate Gaussian error,
@@ -23494,3 +23503,16 @@ The ACTUAL step is one for v>=0 and zero otherwise. For every real v and 0<b<=1,
 This closes the actual Gaussian cutoff approximation, including the transition and both tails. Transfer of the kernel to literal finite integer sums/triple products, a full Perron connection, the relevant full Euler frequency budget, final Halasz and logarithmic short-average assembly remain unfinished. Earlier combinatorial triple and analytic band-factor estimates remain proved. T19.17 remains conditional and original complete T1.7 unconditional. Coverage remains 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, source hashes, Lean v4.36.0-rc2 and allowed axioms are unchanged. Ubuntu has about 54.1 GiB free; no dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17949 jobs); direct axiom audit passed for 17992 declarations using only propext, Classical.choice and Quot.sound; all 18045 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.08 GiB.
+
+
+## Actual finite Gaussian Perron formula with literal cutoff error
+
+FiniteGaussianPerron works with an arbitrary literal finite index set S, arbitrary complex coefficients a(i), and positive natural integer levels n(i). The levels need NOT be injective: repeated integer products and their distinct coefficients remain present. It defines the actual Dirichlet polynomial sum a(i)/n(i)*phase(-log(n(i)),t), its Gaussian vertical integrand, the kernel-smoothed finite sum, and the literal sharp sum retaining exactly n(i)<=X.
+
+The Gaussian integrand expands EXACTLY into the finite sum of the raw Gaussian-Laplace integrands. Actual integrability of each term and of the full integrand is internal. A checked finite integral interchange and the proved kernel formula give the ACTUAL identity smoothed=(X/(2*pi))*integral_R integrand, for b>0 and real X>0. Polynomial continuity, the exact integrand norm exp(-b*t^2)*|polynomial(t)|/sqrt(1+t^2), and the corresponding norm bound for the smoothed sum are also proved.
+
+The module proves that step(log(X/n(i))) is EXACTLY the indicator n(i)<=X, including equality at the cutoff. For 0<b<=1 it then proves the ACTUAL norm of smoothed-minus-sharp is <=(exp(b)-1)*sum_{n(i)<=X}|a(i)|+2*exp(b)*sum_{i in S}|a(i)|*exp(-log(X/n(i))^2/(32*b)). The finite-side normalization term and the full literal Gaussian error are retained separately. Repeated levels are not discarded by a change of variables or an assumed fibre count. One module adds ten theorems and four definitions.
+
+This closes the exact finite Gaussian Perron formula and its literal coefficient-wise cutoff error. A uniform aggregate Gaussian integer bound, actual triple coefficient-fibre control, passage to the full relevant Euler series and the resulting triple main-term estimate remain unfinished. The full Euler frequency budget, final Halasz and logarithmic short-average assembly remain unfinished. Earlier total combinatorial triple and analytic band-factor estimates remain proved. T19.17 remains conditional and original complete T1.7 unconditional. Coverage remains 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, source hashes, Lean v4.36.0-rc2 and allowed axioms are unchanged. Ubuntu has about 54.1 GiB free; no dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17951 jobs); direct axiom audit passed for 18002 declarations using only propext, Classical.choice and Quot.sound; all 18059 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.07 GiB.
