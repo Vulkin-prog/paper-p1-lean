@@ -4832,6 +4832,10 @@ import PaperP1
 #print axioms PaperP1.RealUnitTwist.frequencyBudget_twist_eq
 #print axioms PaperP1.RealUnitTwist.summatory_twist
 #print axioms PaperP1.RealUnitTwist.twisted_retained_band_bound
+#print axioms PaperP1.ReciprocalDifferenceBounds.shifts_sum_nonneg
+#print axioms PaperP1.ReciprocalDifferenceBounds.interval_integrable
+#print axioms PaperP1.ReciprocalDifferenceBounds.difference_integral
+#print axioms PaperP1.ReciprocalDifferenceBounds.kernel_bounds
 #print axioms PaperP1.ReciprocalFiniteDifferences.rpow_negative_integer
 #print axioms PaperP1.ReciprocalFiniteDifferences.base_hasDerivAt
 #print axioms PaperP1.ReciprocalFiniteDifferences.hasDerivAt_kernel

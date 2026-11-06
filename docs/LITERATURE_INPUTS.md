@@ -1,6 +1,15 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0848: Actual iterated reciprocal differences
+Current checkpoint P1-MATH-0849: Every actual reciprocal finite-
+difference kernel has explicit upper and lower bounds. The triple-large
+prime frequency contribution, the central-frequency mean comparison and
+complete logarithmic short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 51.25 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0848: Actual iterated reciprocal differences
 have exact derivatives and rising-factorial coefficients. The triple-
 large prime frequency contribution, the central-frequency mean
 comparison and complete logarithmic short-average concentration remain
@@ -33342,6 +33351,12 @@ Define the ACTUAL reciprocal finite-difference kernel recursively from 1/x^m by 
 
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
 
+## Internal every actual reciprocal finite-difference kernel has explicit upper and lower bounds
+
+For arbitrary lists of NONNEGATIVE shifts and x>0, prove coefficient(m,hs)/(x+sum(hs))^(m+length(hs))<=K(hs,m,x)<=coefficient(m,hs)/x^(m+length(hs)). The coefficient is the already proved rising factorial times the exact product of shifts. Four theorems prove shift-sum positivity, actual kernel integrability, the exact difference-as-integral identity, and both bounds by the fundamental theorem of calculus. No higher-order derivative or oscillation estimate is assumed.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -37106,3 +37121,14 @@ Define the ACTUAL reciprocal finite-difference kernel recursively from 1/x^m by 
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.31 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18263 jobs); direct axiom audit passed for 18724 declarations using only propext, Classical.choice and Quot.sound; all 18934 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.27 GiB.
+
+
+## Every actual reciprocal finite-difference kernel has explicit upper and lower bounds
+
+Stable ID: p1:internal:reciprocal-difference-bounds. Every actual reciprocal finite-difference kernel has explicit upper and lower bounds. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
+
+For arbitrary lists of NONNEGATIVE shifts and x>0, prove coefficient(m,hs)/(x+sum(hs))^(m+length(hs))<=K(hs,m,x)<=coefficient(m,hs)/x^(m+length(hs)). The coefficient is the already proved rising factorial times the exact product of shifts. Four theorems prove shift-sum positivity, actual kernel integrability, the exact difference-as-integral identity, and both bounds by the fundamental theorem of calculus. No higher-order derivative or oscillation estimate is assumed.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.25 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18265 jobs); direct axiom audit passed for 18728 declarations using only propext, Classical.choice and Quot.sound; all 18938 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.25 GiB.
