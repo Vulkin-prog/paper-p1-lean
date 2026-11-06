@@ -3686,6 +3686,8 @@ import PaperP1
 #print axioms PaperP1.DirichletPolynomialMeanValue.unit_coefficient_square_budget
 #print axioms PaperP1.DirichletPolynomialMeanValue.bounded_dyadic_mean_square
 #print axioms PaperP1.DirichletPolynomialMeanValue.uniform_mean_value
+#print axioms PaperP1.DirichletProductMeanValue.continuous_mean_bound
+#print axioms PaperP1.DirichletProductMeanValue.sampled_mean_bound
 #print axioms PaperP1.DirichletRamareApproximation.twist_mul
 #print axioms PaperP1.DirichletRamareApproximation.twist_norm
 #print axioms PaperP1.DirichletRamareApproximation.twist_continuous
