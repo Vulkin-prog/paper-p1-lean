@@ -1,6 +1,15 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0802: Actual first and second threshold
+Current checkpoint P1-MATH-0803: Actual floor logarithmic amplification
+order controls the exact rounded product length. The complementary bad-
+prime frequency contribution, the central-frequency mean subtraction and
+complete logarithmic short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 52.12 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0802: Actual first and second threshold
 factors yield a quantitative mixed-frequency decay. The complementary
 bad-prime frequency contribution, the central-frequency mean subtraction
 and complete logarithmic short-average concentration remain unproved.
@@ -32649,6 +32658,12 @@ For x>=2, q>0, 999*log(x)<=log(u) and k*log(u)<=log(q), the literal factor x^(31
 
 The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved.
 
+## Internal actual floor logarithmic amplification order controls the exact rounded product length
+
+The literal order k=floor(log(q)/log(u)), u>1 and q>=1, satisfies k*log(u)<=log(q) and u^k>=q/u, with the floor remainder retained. If log(u)>=1 and log(q)<=x^3 then k<=floor(x^3). The ACTUAL rounded lower product ceil(u)^k*ceil(X/q) is >=X/u. Consequently for u<=log(X) and T<=X/log(X), the actual product lower length is >=T. Five theorems and one order definition prove these geometric and height facts; the integer part is never replaced by an exact real ratio.
+
+The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -35907,3 +35922,14 @@ For x>=2, q>0, 999*log(x)<=log(u) and k*log(u)<=log(q), the literal factor x^(31
 The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.12 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18171 jobs); direct axiom audit passed for 18581 declarations using only propext, Classical.choice and Quot.sound; all 18766 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.10 GiB.
+
+
+## Actual floor logarithmic amplification order controls the exact rounded product length
+
+Stable ID: p1:internal:floor-amplification-order. Actual floor logarithmic amplification order controls the exact rounded product length. The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved.
+
+The literal order k=floor(log(q)/log(u)), u>1 and q>=1, satisfies k*log(u)<=log(q) and u^k>=q/u, with the floor remainder retained. If log(u)>=1 and log(q)<=x^3 then k<=floor(x^3). The ACTUAL rounded lower product ceil(u)^k*ceil(X/q) is >=X/u. Consequently for u<=log(X) and T<=X/log(X), the actual product lower length is >=T. Five theorems and one order definition prove these geometric and height facts; the integer part is never replaced by an exact real ratio.
+
+The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.12 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18173 jobs); direct axiom audit passed for 18586 declarations using only propext, Classical.choice and Quot.sound; all 18772 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.08 GiB.

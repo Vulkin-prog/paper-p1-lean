@@ -3986,6 +3986,11 @@ import PaperP1
 #print axioms PaperP1.FlexiblePrimeBandSieve.excluded_density_tendsto
 #print axioms PaperP1.FlexiblePrimeBandSieve.good_support
 #print axioms PaperP1.FlexiblePrimeBandSieve.missing_good_density_tendsto
+#print axioms PaperP1.FloorAmplificationOrder.logarithmic_upper
+#print axioms PaperP1.FloorAmplificationOrder.power_lower
+#print axioms PaperP1.FloorAmplificationOrder.order_le_floor_cube
+#print axioms PaperP1.FloorAmplificationOrder.rounded_product_lower
+#print axioms PaperP1.FloorAmplificationOrder.short_height_bound
 #print axioms PaperP1.FrequencyBudgetMonotone.frequencyBudget_mono
 #print axioms PaperP1.FrequencyBudgetMonotone.cutoff_mono
 #print axioms PaperP1.FullEulerBound.eulerConstant_pos
