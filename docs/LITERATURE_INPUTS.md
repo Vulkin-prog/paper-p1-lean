@@ -1,6 +1,15 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0875: Uniform power cancellation extends to
+Current checkpoint P1-MATH-0876: Long damped intervals have an explicit
+logarithmic block count and actual cutoff. The triple-large prime
+frequency contribution, the central-frequency mean comparison and
+complete logarithmic short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 53.94 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0875: Uniform power cancellation extends to
 actual long damped Dirichlet intervals. The triple-large prime frequency
 contribution, the central-frequency mean comparison and complete
 logarithmic short-average concentration remain unproved. T19.17
@@ -33749,6 +33758,12 @@ Three theorems identify the literal damped Dirichlet value with the actual integ
 
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
 
+## Internal long damped intervals have an explicit logarithmic block count and actual cutoff
+
+Four theorems and one definition choose the actual integer count ceil(log M/log 2), prove coverage M<=2^count*N for N>=1 and the final anchor<=2*M*N, and obtain the genuine long-sum estimate norm<=C_b*(log M/log 2+1)/N^gamma_(a,b). One cutoff precedes all N<=M, sigma>=0 and frequencies (2*M*N)^a<=|t|<=N^b, for fixed a>0,b>=0. All integer rounding and actual finite summation endpoints are retained.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -37810,3 +37825,14 @@ Three theorems identify the literal damped Dirichlet value with the actual integ
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.94 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18317 jobs); direct axiom audit passed for 18862 declarations using only propext, Classical.choice and Quot.sound; all 19098 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.92 GiB.
+
+
+## Long damped intervals have an explicit logarithmic block count and actual cutoff
+
+Stable ID: p1:internal:dyadic-long-cutoff. Long damped intervals have an explicit logarithmic block count and actual cutoff. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
+
+Four theorems and one definition choose the actual integer count ceil(log M/log 2), prove coverage M<=2^count*N for N>=1 and the final anchor<=2*M*N, and obtain the genuine long-sum estimate norm<=C_b*(log M/log 2+1)/N^gamma_(a,b). One cutoff precedes all N<=M, sigma>=0 and frequencies (2*M*N)^a<=|t|<=N^b, for fixed a>0,b>=0. All integer rounding and actual finite summation endpoints are retained.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.94 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18319 jobs); direct axiom audit passed for 18866 declarations using only propext, Classical.choice and Quot.sound; all 19103 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.90 GiB.

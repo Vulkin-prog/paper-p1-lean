@@ -3790,6 +3790,10 @@ import PaperP1
 #print axioms PaperP1.DyadicLogBands.index_mem
 #print axioms PaperP1.DyadicLogBands.band_disjoint
 #print axioms PaperP1.DyadicLogBands.triple_partition
+#print axioms PaperP1.DyadicLongCutoff.count_bound
+#print axioms PaperP1.DyadicLongCutoff.cover
+#print axioms PaperP1.DyadicLongCutoff.anchor_upper
+#print axioms PaperP1.DyadicLongCutoff.uniform_bound
 #print axioms PaperP1.DyadicParameterBucketCover.mem_cluster
 #print axioms PaperP1.DyadicParameterBucketCover.finite_cover
 #print axioms PaperP1.DyadicParameterBucketCover.cluster_margin

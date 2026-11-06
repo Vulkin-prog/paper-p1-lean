@@ -4815,3 +4815,4 @@ public import PaperP1.Analysis.DampedDirichletTail
 public import PaperP1.Analysis.ActualZetaTail
 public import PaperP1.Analysis.FiniteDyadicAssembly
 public import PaperP1.Analysis.PolynomialLongCancellation
+public import PaperP1.Analysis.DyadicLongCutoff
