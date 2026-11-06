@@ -33454,6 +33454,36 @@
         "status": "not_integrated"
       },
       "validation_commit": "b81246cd6e6e950be066c8656181ffe94d03b7e1"
+    },
+    {
+      "id": "P1-MATH-0713",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "A qualitative epsilon*X error per band cannot by itself be summed over a growing family of bands. The literal smoothing error had to be preserved through the whole-series limit.",
+      "finding": "The actual finite and full triple Perron estimates retain the same explicit error(X), uniform in coefficients, supports and prime bands.",
+      "proposed_revision": "Prove weighted decay of the explicit error and combine it with the quantitative Gaussian tail before summing the actual bands.",
+      "impact": "The actual finite and full triple Perron estimates retain the same explicit error(X), uniform in coefficients, supports and prime bands. Weighted quantitative global band/Halasz assembly and final logarithmic short averages remain unfinished.",
+      "evidence": [
+        "PaperP1.QuantitativeTriplePerron.finite_bound_eventually",
+        "PaperP1.QuantitativeTriplePerron.full_series_bound_eventually",
+        "PaperP1.QuantitativeTriplePerron.real_full_euler_bound_eventually",
+        "PaperP1.QuantitativeTriplePerron.error"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17993 jobs); direct axiom audit passed for 18172 declarations using only propext, Classical.choice and Quot.sound; all 18269 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.69 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

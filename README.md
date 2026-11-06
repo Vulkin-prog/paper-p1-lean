@@ -1,6 +1,14 @@
 # P1 — Lean formalization
 
-Current checkpoint P1-MATH-0712: The literal triple convolution on each
+Current checkpoint P1-MATH-0713: The actual finite and full triple
+Perron estimates retain the same explicit error(X), uniform in
+coefficients, supports and prime bands. Weighted quantitative global
+band/Halasz assembly and final logarithmic short averages remain
+unfinished. T19.17 conditional; original T1.7 complete. Coverage: 164
+proved, 1 conditional, 2 in_progress /167; all 73 main proved. False
+scopes/corrections unchanged. No Palomar registration.
+
+Historical checkpoint P1-MATH-0712: The literal triple convolution on each
 admissible prime band is controlled by the actual full Euler local-
 supremum budget plus one uniform small error. Weighted quantitative
 global band/Halasz assembly and final logarithmic short averages remain
@@ -1220,7 +1228,7 @@ recorded in the linked ledger and [current status](docs/FORMALIZATION_STATUS.md)
 
 Companion T1.10 needs an enlarged alignment exclusion for unequal old/new widths: its literal radius-one version has an unconditional formal counterexample. The corrected coarse4/3 profile is proved under explicit geometric inputs; its sharper31/24 form remains open; see [the scope correction](docs/ASYMMETRIC_ALIGNMENT_SCOPE.md).
 
-The main optimal4/3 quadratic approximation power is now proved under explicit BCN and finite geometric properties, including both bounds, exact actual parameters, nominal-mean bias and eventual probability status. The optimal41/30 third factorial cumulant, full third absolute activity and aligned-channel triple claims are now proved under explicit geometric inputs, withBCN retained for the full connected argument. The actual original count and its retained modification converge in total variation to the actual-mean and nominal-mean Poisson laws without unproved inputs (P1-MATH-0413); quantitative optimal law rates remain separate. Exact fourth-cumulant component identities and unconditional weak, irregular and incompatible pair bounds are proved. In particular, the actual absolute pair activity is asymptotic to half the actual second factorial cumulant, without BCN or a complete pair profile. The contact activity bound at every fixed order now holds unconditionally on every dyadic subground, including irregular starts and zero marginals. The activation probability of the actual principal edge family now has the unconditional exponent -2/3, with any fixed epsilon margin. The planar normal budget T20.4 is now proved with improved constants and an integer-fibre argument. T20.6, the prescribed-plane transverse-product count and its actual affine mass bound, is now proved internally with three motifs and no Pila premise. The project records **710 confirmed mathematical improvements and two statement-scope corrections**. See [current status](docs/FORMALIZATION_STATUS.md), [the activity alignment](docs/FIXED_ABSOLUTE_ACTIVITY_ALIGNMENT.md) and [the mathematical change log](docs/MATHEMATICAL_CHANGELOG.md).
+The main optimal4/3 quadratic approximation power is now proved under explicit BCN and finite geometric properties, including both bounds, exact actual parameters, nominal-mean bias and eventual probability status. The optimal41/30 third factorial cumulant, full third absolute activity and aligned-channel triple claims are now proved under explicit geometric inputs, withBCN retained for the full connected argument. The actual original count and its retained modification converge in total variation to the actual-mean and nominal-mean Poisson laws without unproved inputs (P1-MATH-0413); quantitative optimal law rates remain separate. Exact fourth-cumulant component identities and unconditional weak, irregular and incompatible pair bounds are proved. In particular, the actual absolute pair activity is asymptotic to half the actual second factorial cumulant, without BCN or a complete pair profile. The contact activity bound at every fixed order now holds unconditionally on every dyadic subground, including irregular starts and zero marginals. The activation probability of the actual principal edge family now has the unconditional exponent -2/3, with any fixed epsilon margin. The planar normal budget T20.4 is now proved with improved constants and an integer-fibre argument. T20.6, the prescribed-plane transverse-product count and its actual affine mass bound, is now proved internally with three motifs and no Pila premise. The project records **711 confirmed mathematical improvements and two statement-scope corrections**. See [current status](docs/FORMALIZATION_STATUS.md), [the activity alignment](docs/FIXED_ABSOLUTE_ACTIVITY_ALIGNMENT.md) and [the mathematical change log](docs/MATHEMATICAL_CHANGELOG.md).
 
 Article13.1 now has a complete actual short-basis construction, with
 both physical projections and the common square-class map injective.
@@ -2751,3 +2759,5 @@ P1-MATH-0710: The literal logarithmic width and height give an actual Gaussian t
 P1-MATH-0711: The actual full Euler triple frequency integral is truncated at log(X)^10 with one uniformly negligible absolute error before all admissible coefficients and prime supports. The quantitative global band/Halasz estimate and final logarithmic short-average assembly remain unfinished.
 
 P1-MATH-0712: The literal triple convolution on each admissible prime band is controlled by the actual full Euler local-supremum budget plus one uniform small error. Weighted quantitative global band/Halasz assembly and final logarithmic short averages remain unfinished.
+
+P1-MATH-0713: The actual finite and full triple Perron estimates retain the same explicit error(X), uniform in coefficients, supports and prime bands. Weighted quantitative global band/Halasz assembly and final logarithmic short averages remain unfinished.

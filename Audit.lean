@@ -4374,6 +4374,9 @@ import PaperP1
 #print axioms PaperP1.QuadraticRelativeError.beta_at_interval_scale
 #print axioms PaperP1.QuadraticRelativeError.quadratic_center_bound
 #print axioms PaperP1.QuadraticRelativeError.relative_grid_error
+#print axioms PaperP1.QuantitativeTriplePerron.finite_bound_eventually
+#print axioms PaperP1.QuantitativeTriplePerron.full_series_bound_eventually
+#print axioms PaperP1.QuantitativeTriplePerron.real_full_euler_bound_eventually
 #print axioms PaperP1.RamareRemainderMeanValue.coefficient_norm_le_one
 #print axioms PaperP1.RamareRemainderMeanValue.coefficient_good_zero
 #print axioms PaperP1.RamareRemainderMeanValue.remainder_small_uniform

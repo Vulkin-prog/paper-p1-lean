@@ -1,6 +1,14 @@
 # Actual projective scheme map
 
-Current checkpoint P1-MATH-0712: The literal triple convolution on each
+Current checkpoint P1-MATH-0713: The actual finite and full triple
+Perron estimates retain the same explicit error(X), uniform in
+coefficients, supports and prime bands. Weighted quantitative global
+band/Halasz assembly and final logarithmic short averages remain
+unfinished. T19.17 conditional; original T1.7 complete. Coverage: 164
+proved, 1 conditional, 2 in_progress /167; all 73 main proved. False
+scopes/corrections unchanged. No Palomar registration.
+
+Historical checkpoint P1-MATH-0712: The literal triple convolution on each
 admissible prime band is controlled by the actual full Euler local-
 supremum budget plus one uniform small error. Weighted quantitative
 global band/Halasz assembly and final logarithmic short averages remain
@@ -23959,3 +23967,16 @@ This is an actual per-band estimate. Its qualitative epsilon error must be stren
 Weighted quantitative global band/Halasz assembly and final logarithmic short averages remain unfinished. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original corrections, sources, pinned Lean and axioms unchanged. About 53.9 GiB is free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17991 jobs); direct axiom audit passed for 18169 declarations using only propext, Classical.choice and Quot.sound; all 18265 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.70 GiB.
+
+
+## Actual triple Perron estimate retaining its explicit uniform smoothing error
+
+QuantitativeTriplePerron retains the ACTUAL error(X)=GaussianFibreError.errorBound(1/log(2),X,width(X)) through the finite and full Perron arguments. One fixed X0>=2 ensures width(X)<=1/2. Before ALL bounded complex coefficient functions and finite positive integer supports, the actual sharp triple norm is <=X/(2*pi) times the literal two-prime/integer Gaussian integral plus this SAME explicit error(X).
+
+For bounded completely multiplicative complex coefficients, the exact sharp triple identity and whole-frequency full-series limit preserve the SAME error(X), uniformly in every integer truncation. The resulting full-series triple estimate has one threshold independent of all coefficients and prime bands. For real monoid coefficients, the literal series equals the full Euler product exactly, yielding the actual real full-Euler estimate with the same quantitative error. Three theorems and one definition are added in one module.
+
+This retains the rate required for a growing-band summation. Its logarithmically weighted normalized decay and the final global Halasz estimate are not yet claimed here.
+
+Weighted quantitative global band/Halasz assembly and final logarithmic short averages remain unfinished. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original corrections, sources, pinned Lean and axioms unchanged. About 53.9 GiB is free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17993 jobs); direct axiom audit passed for 18172 declarations using only propext, Classical.choice and Quot.sound; all 18269 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.69 GiB.

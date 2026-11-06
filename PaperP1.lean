@@ -4652,3 +4652,4 @@ public import PaperP1.Analysis.GaussianFrequencyTail
 public import PaperP1.Analysis.LogarithmicGaussianTail
 public import PaperP1.Analysis.EulerFrequencyTruncation
 public import PaperP1.Analysis.ActualEulerBand
+public import PaperP1.Analysis.QuantitativeTriplePerron
