@@ -4545,6 +4545,13 @@ import PaperP1
 #print axioms PaperP1.LognormalPhaseVariation.continuousOn_function
 #print axioms PaperP1.LognormalPhaseVariation.local_variation
 #print axioms PaperP1.LognormalPhaseVariation.unit_integral_error
+#print axioms PaperP1.LognormalPowerBudget.decay_pos
+#print axioms PaperP1.LognormalPowerBudget.decay_le_quarter
+#print axioms PaperP1.LognormalPowerBudget.logarithmic_constant_pos
+#print axioms PaperP1.LognormalPowerBudget.coefficient_pos
+#print axioms PaperP1.LognormalPowerBudget.logarithmic_factor_bound
+#print axioms PaperP1.LognormalPowerBudget.log_ratio_tendsto
+#print axioms PaperP1.LognormalPowerBudget.uniform_bound
 #print axioms PaperP1.LognormalSieveWeight.weight_pos
 #print axioms PaperP1.LognormalSieveWeight.weight_upper
 #print axioms PaperP1.LognormalSieveWeight.gaussian_identity

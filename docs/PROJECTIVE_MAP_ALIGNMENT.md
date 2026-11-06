@@ -1,6 +1,15 @@
 # Actual projective scheme map
 
-Current checkpoint P1-MATH-0919: The actual middle of the lognormal
+Current checkpoint P1-MATH-0920: The actual lognormal middle kernel has
+a strict polynomial saving. The triple-large prime frequency
+contribution, the central-frequency mean comparison and complete
+logarithmic short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 53.11 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0919: The actual middle of the lognormal
 integer kernel has a common polynomial-frequency power bound. The
 triple-large prime frequency contribution, the central-frequency mean
 comparison and complete logarithmic short-average concentration remain
@@ -27679,3 +27688,12 @@ Two theorems and one definition prove a strictly positive exponent e=gamma_(kapp
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.17 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18405 jobs); direct axiom audit passed for 19025 declarations using only propext, Classical.choice and Quot.sound; all 19283 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.13 GiB.
+
+
+## The actual lognormal middle kernel has a strict polynomial saving
+
+Seven theorems and three definitions prove a positive decay delta=gamma_(kappa/4,2B)/4, delta<=1/4, an explicit positive coefficient, a logarithmic-factor estimate and the actual logarithm-over-power limit. For every fixed kappa,B>0, ONE scale cutoff precedes ALL A and ALL A^kappa<=|t|<=A^B, and the actual rounded middle interval has norm<=C_B*A^(1-delta). The finite logarithmic block loss is absorbed using a proved limit; it is not discarded or treated as constant.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.11 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18407 jobs); direct axiom audit passed for 19032 declarations using only propext, Classical.choice and Quot.sound; all 19293 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.11 GiB.
