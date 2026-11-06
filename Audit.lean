@@ -3275,6 +3275,10 @@ import PaperP1
 #print axioms PaperP1.WeightedVeronesePieceIndex.piece_finite
 #print axioms PaperP1.WeightedVeronesePieceIndex.piece_card
 #print axioms PaperP1.ZModPointEvaluations.ringHom_scalars
+#print axioms PaperP1.ActualAnchorOrderGeometry.logarithm_half_lower
+#print axioms PaperP1.ActualAnchorOrderGeometry.first_anchor_bounds
+#print axioms PaperP1.ActualAnchorOrderGeometry.second_anchor_bounds
+#print axioms PaperP1.ActualAnchorOrderGeometry.eventual_order_geometry
 #print axioms PaperP1.ActualDyadicBucketMaps.exists_map
 #print axioms PaperP1.ActualEulerBand.constant_pos
 #print axioms PaperP1.ActualEulerBand.frequency_cover

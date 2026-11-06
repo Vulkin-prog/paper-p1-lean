@@ -4743,3 +4743,4 @@ public import PaperP1.Analysis.ActualNarrowMixedMean
 public import PaperP1.Analysis.AmplificationBudgetBound
 public import PaperP1.Analysis.AmplificationThresholdDecay
 public import PaperP1.Analysis.FloorAmplificationOrder
+public import PaperP1.Analysis.ActualAnchorOrderGeometry

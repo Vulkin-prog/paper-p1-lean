@@ -1,6 +1,16 @@
 # Actual projective scheme map
 
-Current checkpoint P1-MATH-0803: Actual floor logarithmic amplification
+Current checkpoint P1-MATH-0804: Actual occupied first and second
+anchors satisfy all growing amplification order conditions. The
+complementary bad-prime frequency contribution, the central-frequency
+mean subtraction and complete logarithmic short-average concentration
+remain unproved. T19.17 conditional; original T1.7 unconditional.
+Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main
+proved. Sources, false-scope corrections, compiler and axioms unchanged.
+About 52.07 GiB free on Ubuntu. No dependency download or Palomar
+registration.
+
+Historical checkpoint P1-MATH-0803: Actual floor logarithmic amplification
 order controls the exact rounded product length. The complementary bad-
 prime frequency contribution, the central-frequency mean subtraction and
 complete logarithmic short-average concentration remain unproved. T19.17
@@ -25585,3 +25595,12 @@ The literal order k=floor(log(q)/log(u)), u>1 and q>=1, satisfies k*log(u)<=log(
 The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.12 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18173 jobs); direct axiom audit passed for 18586 declarations using only propext, Classical.choice and Quot.sound; all 18772 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.08 GiB.
+
+
+## Actual occupied first and second anchors satisfy all growing amplification order conditions
+
+For the ACTUAL first prime band and every 2<=H<=log(log N)^3, occupied anchors u satisfy (log(log N))^999<=u<=log N, H<=u, log u>=999*log(log(log N)) and log u>=1 once log(log N)>=2. Actual second-band anchors q satisfy exp((log(log N))^2)/2<=q and log q<=(log(log N))^3. With the deterministic H=floor((log(log N))^3), all hypotheses hold simultaneously for EVERY occupied first/second pair eventually, and the ACTUAL integer order floor(log q/log u) is <=H and <=log(log N)^3. Four theorems prove these rounded band facts internally.
+
+The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.07 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18175 jobs); direct axiom audit passed for 18590 declarations using only propext, Classical.choice and Quot.sound; all 18776 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.06 GiB.
