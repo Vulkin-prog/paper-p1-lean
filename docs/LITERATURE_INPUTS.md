@@ -1,6 +1,15 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0878: The actual rounded zeta head and tail
+Current checkpoint P1-MATH-0879: The actual intermediate zeta sum has a
+uniform power-decaying bound. The triple-large prime frequency
+contribution, the central-frequency mean comparison and complete
+logarithmic short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 53.87 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0878: The actual rounded zeta head and tail
 have uniform explicit bounds. The triple-large prime frequency
 contribution, the central-frequency mean comparison and complete
 logarithmic short-average concentration remain unproved. T19.17
@@ -33794,6 +33803,12 @@ Four theorems prove the literal finite-head splitting, norm(head up to N)<=1+log
 
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
 
+## Internal the actual intermediate zeta sum has a uniform power-decaying bound
+
+For every fixed 0<alpha<=1, ONE T0>=8 precedes ALL |t|>=T0 and ALL sigma>=0. The actual sum between ceil(|t|^alpha) and ceil(|t|^2) is <=C_(1/alpha)*((log 2+2 log |t|)/log 2+1)/|t|^(alpha*gamma_(1/4,1/alpha)). This uses only the previously proved all-endpoint power cancellation, the actual logarithmic dyadic count and every rounded frequency inequality; no intermediate sum estimate is assumed.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -37888,3 +37903,14 @@ Four theorems prove the literal finite-head splitting, norm(head up to N)<=1+log
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.87 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18323 jobs); direct axiom audit passed for 18880 declarations using only propext, Classical.choice and Quot.sound; all 19119 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.87 GiB.
+
+
+## The actual intermediate zeta sum has a uniform power-decaying bound
+
+Stable ID: p1:internal:zeta-middle-estimate. The actual intermediate zeta sum has a uniform power-decaying bound. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
+
+For every fixed 0<alpha<=1, ONE T0>=8 precedes ALL |t|>=T0 and ALL sigma>=0. The actual sum between ceil(|t|^alpha) and ceil(|t|^2) is <=C_(1/alpha)*((log 2+2 log |t|)/log 2+1)/|t|^(alpha*gamma_(1/4,1/alpha)). This uses only the previously proved all-endpoint power cancellation, the actual logarithmic dyadic count and every rounded frequency inequality; no intermediate sum estimate is assumed.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.87 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18325 jobs); direct axiom audit passed for 18881 declarations using only propext, Classical.choice and Quot.sound; all 19120 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.85 GiB.
