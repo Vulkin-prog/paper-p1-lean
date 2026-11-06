@@ -39782,6 +39782,34 @@
         "status": "not_integrated"
       },
       "validation_commit": "3a97d6f46915ff69db5b43c7f2c09d88a518c26b"
+    },
+    {
+      "id": "P1-MATH-0911",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The smoothed Selberg kernel needs an endpoint-independent actual discretization error, with the real square-root cutoff rounded exactly.",
+      "finding": "Two theorems prove the actual error between the literal sum over Ico N M and its complex integral: norm<=2*(C_weight+|t|)*A/N for 0<N<=M and A>0, independently of M. For the actual rounded lower endpoint ceil(sqrt A), the bound becomes <=2*(C_weight+|t|)*sqrt A. Actual unit-cell errors and the proved reciprocal-square tail are summed; no discretization input is assumed.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Actual finite lognormal sums have an endpoint-independent quadrature bound. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.LognormalFiniteQuadrature.finite_sum_integral_error",
+        "PaperP1.LognormalFiniteQuadrature.sqrt_cutoff_error"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18389 jobs); direct axiom audit passed for 18996 declarations using only propext, Classical.choice and Quot.sound; all 19249 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.27 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

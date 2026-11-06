@@ -4850,3 +4850,4 @@ public import PaperP1.Analysis.LognormalBlockCancellation
 public import PaperP1.Analysis.LognormalMellinIntegral
 public import PaperP1.Analysis.LognormalSumIntegrability
 public import PaperP1.Analysis.LognormalPhaseVariation
+public import PaperP1.Analysis.LognormalFiniteQuadrature

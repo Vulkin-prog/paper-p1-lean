@@ -1,6 +1,15 @@
 # Actual projective scheme map
 
-Current checkpoint P1-MATH-0910: The actual smoothed logarithmic phase
+Current checkpoint P1-MATH-0911: Actual finite lognormal sums have an
+endpoint-independent quadrature bound. The triple-large prime frequency
+contribution, the central-frequency mean comparison and complete
+logarithmic short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 53.29 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0910: The actual smoothed logarithmic phase
 has proved variation and unit-cell integral error. The triple-large
 prime frequency contribution, the central-frequency mean comparison and
 complete logarithmic short-average concentration remain unproved. T19.17
@@ -27517,3 +27526,12 @@ Seven theorems and two definitions prove the actual complex function w_A(x)*exp(
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.29 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18387 jobs); direct axiom audit passed for 18994 declarations using only propext, Classical.choice and Quot.sound; all 19247 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.28 GiB.
+
+
+## Actual finite lognormal sums have an endpoint-independent quadrature bound
+
+Two theorems prove the actual error between the literal sum over Ico N M and its complex integral: norm<=2*(C_weight+|t|)*A/N for 0<N<=M and A>0, independently of M. For the actual rounded lower endpoint ceil(sqrt A), the bound becomes <=2*(C_weight+|t|)*sqrt A. Actual unit-cell errors and the proved reciprocal-square tail are summed; no discretization input is assumed.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.29 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18389 jobs); direct axiom audit passed for 18996 declarations using only propext, Classical.choice and Quot.sound; all 19249 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.27 GiB.
