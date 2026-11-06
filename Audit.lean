@@ -4081,6 +4081,13 @@ import PaperP1
 #print axioms PaperP1.LogarithmicGaussianSum.scaledBound_tendsto
 #print axioms PaperP1.LogarithmicGaussianSum.integer_gaussian_small_uniform
 #print axioms PaperP1.LogarithmicGaussianSum.width_tendsto
+#print axioms PaperP1.LogarithmicGaussianTail.height_positive
+#print axioms PaperP1.LogarithmicGaussianTail.tail_identity
+#print axioms PaperP1.LogarithmicGaussianTail.exponential_bound
+#print axioms PaperP1.LogarithmicGaussianTail.tailEnvelope_nonneg
+#print axioms PaperP1.LogarithmicGaussianTail.tailEnvelope_bound
+#print axioms PaperP1.LogarithmicGaussianTail.tailEnvelope_tendsto
+#print axioms PaperP1.LogarithmicGaussianTail.tailEnvelope_small
 #print axioms PaperP1.LogarithmicLocalUnitMaps.exists_at_nonexceptional
 #print axioms PaperP1.LogarithmicLocalUnitMaps.exists_control_set_and_maps
 #print axioms PaperP1.LogarithmicPhase.phase_zero

@@ -1,6 +1,14 @@
 # Mathematical corrections and improvements
 
-Current checkpoint P1-MATH-0709: The actual whole Gaussian integral is
+Current checkpoint P1-MATH-0710: The literal logarithmic width and
+height give an actual Gaussian tail envelope bounded by C*log(X)^11/X,
+hence tending to zero. The quantitative global band/Halasz estimate and
+final logarithmic short-average assembly remain unfinished. T19.17
+conditional; original T1.7 complete. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. False
+scopes/corrections unchanged. No Palomar registration.
+
+Historical checkpoint P1-MATH-0709: The actual whole Gaussian integral is
 bounded by its unweighted finite-height integral plus an explicit
 Gaussian tail, with exact endpoints and integrability. The quantitative
 global band/Halasz estimate and final logarithmic short-average assembly
@@ -1192,7 +1200,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**707 mathematical improvements and two statement-scope corrections are confirmed.**
+**708 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -30619,3 +30627,14 @@ For ANY continuous real function with 0<=F<=M, the literal Gaussian product is i
 The quantitative global band/Halasz estimate and final logarithmic short-average assembly remain unfinished. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, preserved sources, pinned Lean and allowed axioms unchanged. About 53.9 GiB is free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17985 jobs); direct axiom audit passed for 18146 declarations using only propext, Classical.choice and Quot.sound; all 18235 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.76 GiB.
+
+
+## Actual logarithmic Gaussian tail envelope tends to zero
+
+LogarithmicGaussianTail defines the ACTUAL height(X)=log(X)^10 and the tail envelope log(X)*(log(X)+log(4)+4)^2*tailBound(width(X)^2,height(X)), where width(X)=1/log(X)^8 is the already checked literal width. For X>=2 the Gaussian tail is EXACTLY exp(-log(X)^4/2)*sqrt(2*pi)*log(X)^8.
+
+When log(X)>=2 the exponential is <=1/X. Once log(X)>=max(2,log(4)+4), the ACTUAL nonnegative envelope is <=4*sqrt(2*pi)*log(X)^11/X. The proved logarithmic-power growth limit therefore gives convergence of the envelope to zero and one threshold for any requested absolute bound. All powers, reciprocal parameters and square-root identities are internal. Seven theorems and three definitions are added in one module.
+
+The quantitative global band/Halasz estimate and final logarithmic short-average assembly remain unfinished. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, preserved sources, pinned Lean and allowed axioms unchanged. About 53.9 GiB is free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17987 jobs); direct axiom audit passed for 18153 declarations using only propext, Classical.choice and Quot.sound; all 18245 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.74 GiB.

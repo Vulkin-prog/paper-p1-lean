@@ -33343,6 +33343,42 @@
         "status": "not_integrated"
       },
       "validation_commit": "f3f6e1ca50c16a18ed206d1a664ea751bd819148"
+    },
+    {
+      "id": "P1-MATH-0710",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "A qualitative Gaussian tail statement did not verify decay after multiplying by the actual logarithmic masses of the prime and Euler factors.",
+      "finding": "The literal logarithmic width and height give an actual Gaussian tail envelope bounded by C*log(X)^11/X, hence tending to zero.",
+      "proposed_revision": "Use the actual tail envelope and the literal factor-mass bounds when truncating the full Euler triple integral.",
+      "impact": "The literal logarithmic width and height give an actual Gaussian tail envelope bounded by C*log(X)^11/X, hence tending to zero. The quantitative global band/Halasz estimate and final logarithmic short-average assembly remain unfinished.",
+      "evidence": [
+        "PaperP1.LogarithmicGaussianTail.height_positive",
+        "PaperP1.LogarithmicGaussianTail.tail_identity",
+        "PaperP1.LogarithmicGaussianTail.exponential_bound",
+        "PaperP1.LogarithmicGaussianTail.tailEnvelope_nonneg",
+        "PaperP1.LogarithmicGaussianTail.tailEnvelope_bound",
+        "PaperP1.LogarithmicGaussianTail.tailEnvelope_tendsto",
+        "PaperP1.LogarithmicGaussianTail.tailEnvelope_small",
+        "PaperP1.LogarithmicGaussianTail.height",
+        "PaperP1.LogarithmicGaussianTail.tailEnvelope",
+        "PaperP1.LogarithmicGaussianTail.constant"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17987 jobs); direct axiom audit passed for 18153 declarations using only propext, Classical.choice and Quot.sound; all 18245 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.74 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
