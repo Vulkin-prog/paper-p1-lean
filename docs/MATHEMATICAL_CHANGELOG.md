@@ -1,6 +1,12 @@
 # Mathematical corrections and improvements
 
-Current checkpoint P1-MATH-0726: Actual ordinary-smooth census reduced
+Current checkpoint P1-MATH-0727: Valuation damping gives actual complete
+coefficients and the Ramare denominator integral. Complete short-average
+concentration remains unproved. T19.17 conditional; original T1.7
+unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167;
+all 73 main proved. No Palomar registration.
+
+Historical checkpoint P1-MATH-0726: Actual ordinary-smooth census reduced
 to complete short-average concentration. Complete short-average
 concentration remains unproved. T19.17 conditional; original T1.7
 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167;
@@ -1321,7 +1327,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**724 mathematical improvements and two statement-scope corrections are confirmed.**
+**725 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -30941,3 +30947,14 @@ The earlier smooth-census bridge required concentration for all merely multiplic
 Complete logarithmic short-average concentration and original T19.17 remain unfinished. Original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Source v1.6, false-scope corrections, compiler and permitted axioms unchanged. About 53.6 GiB free on Ubuntu. No download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18019 jobs); direct axiom audit passed for 18242 declarations using only propext, Classical.choice and Quot.sound; all 18357 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.45 GiB.
+
+
+## Valuation damping gives actual complete coefficients and the Ramare denominator integral
+
+The literal multiplicity is the sum of prime valuations over an arbitrary finite support. It is additive on positive products. On numbers with no support-prime square divisor it equals the actual distinct-prime-divisor count. The function damping(P,z,n) is zero at n=0 and z^multiplicity(P,n) otherwise, and is an actual complete real monoid homomorphism. Multiplication by any real complete f gives actual damped coefficients with prime values bounded by one whenever |z|<=1. Their parameter dependence is continuous. Integrating over z in [0,1] gives exactly f(n)/(multiplicity(P,n)+1), and gives the literal count denominator on the stated squarefree support.
+
+The Ramare count-denominator coefficient is not completely multiplicative. Replacing it by an integral of complete coefficients requires counting valuations and explicitly retaining support-prime square exceptions.
+
+Complete logarithmic short-average concentration remains unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Source v1.6, false-scope corrections, compiler and permitted axioms unchanged. About 53.5 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18021 jobs); direct axiom audit passed for 18256 declarations using only propext, Classical.choice and Quot.sound; all 18374 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.44 GiB.

@@ -33924,6 +33924,49 @@
         "status": "not_integrated"
       },
       "validation_commit": "7cad566b6f578fc690262f6e4b4199a2f87b2cf1"
+    },
+    {
+      "id": "P1-MATH-0727",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The Ramare count-denominator coefficient is not completely multiplicative. Replacing it by an integral of complete coefficients requires counting valuations and explicitly retaining support-prime square exceptions.",
+      "finding": "The literal multiplicity is the sum of prime valuations over an arbitrary finite support. It is additive on positive products. On numbers with no support-prime square divisor it equals the actual distinct-prime-divisor count. The function damping(P,z,n) is zero at n=0 and z^multiplicity(P,n) otherwise, and is an actual complete real monoid homomorphism. Multiplication by any real complete f gives actual damped coefficients with prime values bounded by one whenever |z|<=1. Their parameter dependence is continuous. Integrating over z in [0,1] gives exactly f(n)/(multiplicity(P,n)+1), and gives the literal count denominator on the stated squarefree support.",
+      "proposed_revision": "Retain the literal valuation/count distinction, positive support and square-divisor condition when using the exact damping integral.",
+      "impact": "Valuation damping gives actual complete coefficients and the Ramare denominator integral. The main short-average theorem remains unproved.",
+      "evidence": [
+        "PaperP1.ValuationDamping.multiplicity_one",
+        "PaperP1.ValuationDamping.multiplicity_mul",
+        "PaperP1.ValuationDamping.multiplicity_prime",
+        "PaperP1.ValuationDamping.multiplicity_eq_count",
+        "PaperP1.ValuationDamping.damping_zero",
+        "PaperP1.ValuationDamping.damping_positive",
+        "PaperP1.ValuationDamping.damping_prime",
+        "PaperP1.ValuationDamping.damping_bound",
+        "PaperP1.ValuationDamping.damped_positive",
+        "PaperP1.ValuationDamping.damped_zero",
+        "PaperP1.ValuationDamping.damped_continuous",
+        "PaperP1.ValuationDamping.damped_prime_bound",
+        "PaperP1.ValuationDamping.damped_integral",
+        "PaperP1.ValuationDamping.count_denominator_integral",
+        "PaperP1.ValuationDamping.multiplicity",
+        "PaperP1.ValuationDamping.damping",
+        "PaperP1.ValuationDamping.damped"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18021 jobs); direct axiom audit passed for 18256 declarations using only propext, Classical.choice and Quot.sound; all 18374 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.44 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
