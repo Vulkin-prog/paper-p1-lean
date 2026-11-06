@@ -3639,6 +3639,8 @@ import PaperP1
 #print axioms PaperP1.TransposedNormalizedGraphPiece.exists_smooth_piece_with_derivatives
 #print axioms PaperP1.TruncatedAffineDegree.budget
 #print axioms PaperP1.TruncatedAffineDegree.prime_scale
+#print axioms PaperP1.UniformBinaryLogBudget.monotone
+#print axioms PaperP1.UniformBinaryLogBudget.absorption
 #print axioms PaperP1.UniformSaddleVariation.uniform_left_variation
 #print axioms PaperP1.UnitGraphMonomialPieceCount.exists_scale
 #print axioms PaperP1.UnitGraphMonomialPieceCount.exists_affine_scale
@@ -7357,6 +7359,10 @@ import PaperP1
 #print axioms PaperP1.TwoWitnessTheorem.floor_offset
 #print axioms PaperP1.TwoWitnessTheorem.real_radius
 #print axioms PaperP1.TwoWitnessTheorem.companion_T9_5
+#print axioms PaperP1.UnconditionalNormalizedCurveCount.ambientConstant_pos
+#print axioms PaperP1.UnconditionalNormalizedCurveCount.constant_le_ambient
+#print axioms PaperP1.UnconditionalNormalizedCurveCount.uniform_bound
+#print axioms PaperP1.UnconditionalNormalizedCurveCount.ordinary_bound
 #print axioms PaperP1.UniformAffineCurvePointCount.high_degree_bound
 #print axioms PaperP1.UniformDefectCounts.bound_of_window_comparison
 #print axioms PaperP1.UniformDefectCounts.companion_T1_3
@@ -10875,6 +10881,8 @@ import PaperP1
 #print axioms PaperP1.UnconditionalTripleControlledActivity.uniform_weighted
 #print axioms PaperP1.uniformLittleOOn_zero
 #print axioms PaperP1.UniformGeometricCountsReducedInputs.companion_T1_7
+#print axioms PaperP1.UniformGeometricCountsSurfaceInputs.reduced_hypotheses
+#print axioms PaperP1.UniformGeometricCountsSurfaceInputs.companion_T1_7
 #print axioms PaperP1.UniformGeometricCountsUnderInputs.one_variable
 #print axioms PaperP1.UniformGeometricCountsUnderInputs.companion_T1_7
 #print axioms PaperP1.UniformGeometricSystemsUnderInputs.companion_T1_7_systems

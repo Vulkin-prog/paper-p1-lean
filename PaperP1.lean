@@ -4197,3 +4197,6 @@ public import PaperP1.Arithmetic.IntegralCurveGridCount
 public import PaperP1.Arithmetic.UniformIntegralCurveCount
 public import PaperP1.Arithmetic.FiniteIndexIntegralCurveCount
 public import PaperP1.Arithmetic.IntegralAffineCurvePointCount
+public import PaperP1.Analysis.UniformBinaryLogBudget
+public import PaperP1.Arithmetic.UnconditionalNormalizedCurveCount
+public import PaperP1.Asymptotics.UniformGeometricCountsSurfaceInputs

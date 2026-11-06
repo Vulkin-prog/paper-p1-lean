@@ -1,5 +1,15 @@
 # Formalization status
 
+Current checkpoint P1-MATH-0561: the exact normalized and ordinary curve-count
+properties are proved internally on the actual integer point sets. Canonical
+companionT1.7 is now `UniformGeometricCountsSurfaceInputs.companion_T1_7`:
+only the chosen-source surface cover and two ordinary surface-cover instances
+remain as explicit hypotheses. The normalized-curve input family is discharged;
+neither remaining surface-cover family is asserted. T1.7 remains conditional.
+All73 main results remain proved, and global coverage remains163 proved,
+2 conditional and2 in_progress out of167. No Palomar registration is claimed.
+
+
 Current checkpoint P1-MATH-0560: **all 73 numbered main-article results are proved**.
 Main13.4 is internally proved on the literal affine integer-point set, in the
 genuine homogeneous prime projective-closure ideal formulation with actual
@@ -139,7 +149,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records558 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records559 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -258,7 +268,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **16268 audited theorem/lemma declarations**. This
+- The project currently has **16276 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -28247,3 +28257,20 @@ The remaining literal numbered obligations are companionT1.7, companionT19.17 an
 P1-MATH-0560 adds two modules, six theorems and one definition. The project records 558 improvements and two P1 statement-scope corrections. The external BCN recurrence erratum stays separate. No new axiom, compiler or heartbeat change, dependency download, original source edit or Palomar submission is introduced. Ubuntu free space remains about 6.36 GiB.
 
 Verified under Lean v4.36.0-rc2: full build passed (17041 jobs); direct axiom audit passed for 16268 declarations using only propext, Classical.choice and Quot.sound; all 15881 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.35 GiB.
+
+
+## Unconditional actual normalized curve counts and surface-only remaining inputs for companion T1.7
+
+UniformBinaryLogBudget proves a genuine uniform subpower bound at every positive integer height, not merely an eventual one. The actual binary logarithmic budget is monotone. For every positive delta and every fixed power k, the internally proved eventual logarithmic absorption supplies a threshold; all smaller positive heights are controlled by the actual budget at that threshold. One positive constant therefore bounds logarithmicBudget(H)^k by L(delta,k)*H^delta for every H>=1.
+
+UnconditionalNormalizedCurveCount proves the exact previously explicit UniformNormalizedCurvePointCount.UniformBound nmax M property for every finite coordinate cap nmax and every degree cap M. A finite sum of the already proved dimension-only constants supplies one positive ambient constant before every finite coordinate-index type. The actual positive rational Hilbert degree of the original curve is identified with its internally constructed positive integer degree. The genuine original normalized point finset, prime ideal, Hilbert polynomial, chart coordinate and original height are retained. The internally proved finite-index quadratic count and uniform logarithmic absorption then give the exact H^(1/degree+delta) bound with one positive constant before all original curves and heights.
+
+Thus the normalized curve property is now proved without a Pila, BCN, geometric-integrality, projection or point-count premise. The exact ordinary curve property follows from the already proved literal ordinary/normalized point-set specialization. Both the original source-embedding curve specialization and the ordinary branch can now use these actual internally supplied witnesses at every degree cap.
+
+UniformGeometricCountsSurfaceInputs preserves all original conclusions and quantifier order of companionT1.7 while replacing its three normalized-curve-count hypotheses with their internal proofs. The new actual hypothesis bundle has only three fields: the chosen-source surface cover for general systems, the ordinary surface cover for linear systems, and the ordinary surface cover for fixed-number typed components. The original source/ordinary curve properties are constructed internally for every degree cap and inserted into the already verified reduced assembly. The dense graph, fixed-partner and one-variable clauses retain their internal proofs and no curve-count hypothesis remains.
+
+The normalized-curve input family P1-GEO-NORMALIZED-CURVE-UNIFORM is discharged for companionT1.7. Its canonical statement is now UniformGeometricCountsSurfaceInputs.companion_T1_7. The remaining unformalized families are P1-GEO-CHOSEN-SOURCE-SURFACE-COVER and P1-GEO-ORDINARY-SURFACE-COVER, used in the three displayed instances. No surface-cover theorem is asserted. CompanionT1.7 stays conditional; companionT19.17 and the original false companionT1.10/T5.1 assertions with their checked corrected replacements remain separate.
+
+All73 main numbered results remain proved. Coverage stays163 proved,2 conditional,2 in_progress out of167, with165 completed. P1-MATH-0561 adds three modules, eight theorems and two definitions/structures. The project records559 improvements and two P1 statement-scope corrections. No new axiom, compiler or heartbeat change, dependency download, original source edit or Palomar submission is introduced. Ubuntu free space remains about6.33GiB.
+
+Verified under Lean v4.36.0-rc2: full build passed (17047 jobs); direct axiom audit passed for 16276 declarations using only propext, Classical.choice and Quot.sound; all 15891 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.32 GiB.

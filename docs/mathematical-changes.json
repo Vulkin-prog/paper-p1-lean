@@ -26966,6 +26966,42 @@
         "status": "not_integrated"
       },
       "validation_commit": "9b2687dd1138cea2b20c36eb1c19e8e493cef886"
+    },
+    {
+      "id": "P1-MATH-0561",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "CompanionT1.7 still took three families of normalized curve-count witnesses, in addition to the actual surface covers, even after the general original-field curve theorem had been proved.",
+      "finding": "The exact normalized and ordinary bounded-degree curve properties are internally proved for actual prime/Hilbert point populations. CompanionT1.7 now retains only its three explicit source/ordinary surface-cover instances, with no supplied curve-count input.",
+      "proposed_revision": "Use the internal normalized and ordinary curve-count theorems in the companion's geometric assembly and list only the actual chosen-source and ordinary surface covers as remaining geometric inputs.",
+      "impact": "Discharges the normalized-curve input family and removes all three curve-count premises from canonical companionT1.7 without promoting or assuming the remaining surface-cover conclusions.",
+      "evidence": [
+        "PaperP1.UniformBinaryLogBudget.monotone",
+        "PaperP1.UniformBinaryLogBudget.absorption",
+        "PaperP1.UnconditionalNormalizedCurveCount.ambientConstant_pos",
+        "PaperP1.UnconditionalNormalizedCurveCount.constant_le_ambient",
+        "PaperP1.UnconditionalNormalizedCurveCount.uniform_bound",
+        "PaperP1.UnconditionalNormalizedCurveCount.ordinary_bound",
+        "PaperP1.UniformGeometricCountsSurfaceInputs.reduced_hypotheses",
+        "PaperP1.UniformGeometricCountsSurfaceInputs.companion_T1_7",
+        "PaperP1.UnconditionalNormalizedCurveCount.ambientConstant",
+        "PaperP1.UniformGeometricCountsSurfaceInputs.Hypotheses"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17047 jobs); direct axiom audit passed for 16276 declarations using only propext, Classical.choice and Quot.sound; all 15891 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.32 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
