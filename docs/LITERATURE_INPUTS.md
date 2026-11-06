@@ -1,6 +1,15 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0944: The actual large-frequency fixed-power
+Current checkpoint P1-MATH-0945: Actual fixed-power final-small samples
+have an explicit decaying rectangle envelope. The triple-large prime
+frequency contribution, the central-frequency mean comparison and
+complete logarithmic short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 52.68 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0944: The actual large-frequency fixed-power
 Ramare rectangle integral is small outside a fixed central band. The
 triple-large prime frequency contribution, the central-frequency mean
 comparison and complete logarithmic short-average concentration remain
@@ -34787,6 +34796,12 @@ Three theorems and one definition define the actual measurable final-large frequ
 
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
 
+## Internal actual fixed-power final-small samples have an explicit decaying rectangle envelope
+
+Four theorems and one definition prove an explicit envelope 20*(H+1)^2/log(N)^197 tending to zero for fixed H. Uniformly in all coefficients bounded by one on positive integers, every unit-separated sample inside the actual joint first-two-large frequency region and below the literal 1/log(N)^100 threshold in every actual final prime block has actual rectangle sampled energy below this envelope, and hence below every prescribed positive error beyond one integer cutoff. The actual sparse cofactor mean and actual fixed-width block count are used; no final-small mean estimate is assumed.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -39607,3 +39622,14 @@ Three theorems and one definition define the actual measurable final-large frequ
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.68 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18455 jobs); direct axiom audit passed for 19137 declarations using only propext, Classical.choice and Quot.sound; all 19428 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.66 GiB.
+
+
+## Actual fixed-power final-small samples have an explicit decaying rectangle envelope
+
+Stable ID: p1:internal:fixed-power-small-samples. Actual fixed-power final-small samples have an explicit decaying rectangle envelope. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
+
+Four theorems and one definition prove an explicit envelope 20*(H+1)^2/log(N)^197 tending to zero for fixed H. Uniformly in all coefficients bounded by one on positive integers, every unit-separated sample inside the actual joint first-two-large frequency region and below the literal 1/log(N)^100 threshold in every actual final prime block has actual rectangle sampled energy below this envelope, and hence below every prescribed positive error beyond one integer cutoff. The actual sparse cofactor mean and actual fixed-width block count are used; no final-small mean estimate is assumed.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.68 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18457 jobs); direct axiom audit passed for 19141 declarations using only propext, Classical.choice and Quot.sound; all 19433 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.64 GiB.

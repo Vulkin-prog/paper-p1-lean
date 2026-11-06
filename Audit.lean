@@ -4169,6 +4169,10 @@ import PaperP1
 #print axioms PaperP1.FixedPowerSamplingGeometry.cardinality_eventually
 #print axioms PaperP1.FixedPowerSamplingGeometry.scale_eventually
 #print axioms PaperP1.FixedPowerSamplingGeometry.logarithmic_square_bound
+#print axioms PaperP1.FixedPowerSmallSamples.scalar_bound
+#print axioms PaperP1.FixedPowerSmallSamples.envelope_tendsto
+#print axioms PaperP1.FixedPowerSmallSamples.sampled_bound
+#print axioms PaperP1.FixedPowerSmallSamples.sampled_small_uniform
 #print axioms PaperP1.FixedWidthLargeFrequencyCardinality.index_card_bound
 #print axioms PaperP1.FixedWidthLargeFrequencyCardinality.all_blocks_bound
 #print axioms PaperP1.FlexiblePrimeBandSieve.reciprocal_mass_tendsto
