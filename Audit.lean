@@ -3474,6 +3474,7 @@ import PaperP1
 #print axioms PaperP1.CommonPrimeFrequencyException.slow_band_fraction_bound
 #print axioms PaperP1.CommonPrimeFrequencyException.common_repulsion_uniform
 #print axioms PaperP1.CommonRealTwistedSum.common_twisted_summatory_small
+#print axioms PaperP1.CommonUniformTwistedSum.common_uniform_summatory_small
 #print axioms PaperP1.CommonUnitException.common_continuous
 #print axioms PaperP1.CommonUnitException.maxPoint_mem
 #print axioms PaperP1.CommonUnitException.maxPoint_eq

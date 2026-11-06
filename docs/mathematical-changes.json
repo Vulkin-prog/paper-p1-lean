@@ -35005,6 +35005,33 @@
         "status": "not_integrated"
       },
       "validation_commit": "9e1d206c7657dac249a9e9b21941e7efb31b4e86"
+    },
+    {
+      "id": "P1-MATH-0759",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "Partial summation needs uniform control at all intermediate cutoffs with the SAME exceptional set, rather than separate single-length conclusions.",
+      "finding": "For every epsilon,delta>0 ONE N0>=4 precedes all N>=N0, all B>=N and all T>=1 with ceil(log(B)^10)<=T. ONE measurable E in (-T,T], of measure <=delta*T, is chosen BEFORE EVERY cutoff X in [N,B] and EVERY complete real prime-bounded coefficient f. At EVERY off-exception frequency the literal twisted sum up to X has norm <=epsilon*X. The proof uses the internal Halasz criterion, the common full Euler budget at the single larger frequency cutoff and the actual budget monotonicity. One theorem proves this simultaneous statement; a separate exception for each cutoff is not used.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "One actual common frequency exception controls every summatory cutoff in an interval. The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.CommonUniformTwistedSum.common_uniform_summatory_small"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18085 jobs); direct axiom audit passed for 18423 declarations using only propext, Classical.choice and Quot.sound; all 18575 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.86 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
