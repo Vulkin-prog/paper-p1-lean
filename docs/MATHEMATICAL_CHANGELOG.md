@@ -1,6 +1,15 @@
 # Mathematical corrections and improvements
 
-Current checkpoint P1-MATH-0777: Actual narrow rectangle mean square is
+Current checkpoint P1-MATH-0778: Actual first-band rectangle
+contribution on small prime frequencies tends to zero. The actual Ramare
+main-term frequency bounds and complete logarithmic short-average
+concentration remain unproved. T19.17 conditional; original T1.7
+unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167;
+all 73 main proved. Sources, false-scope corrections, compiler and
+axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download
+or Palomar registration.
+
+Historical checkpoint P1-MATH-0777: Actual narrow rectangle mean square is
 controlled on the small prime polynomial frequency region. The actual
 Ramare main-term frequency bounds and complete logarithmic short-average
 concentration remain unproved. T19.17 conditional; original T1.7
@@ -1746,7 +1755,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**775 mathematical improvements and two statement-scope corrections are confirmed.**
+**776 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -31829,3 +31838,12 @@ A finite product Cauchy estimate on EVERY measurable subset E of (-T,T] proves a
 The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18121 jobs); direct axiom audit passed for 18490 declarations using only propext, Classical.choice and Quot.sound; all 18660 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.55 GiB.
+
+
+## Actual first-band rectangle contribution on small prime frequencies tends to zero
+
+For the ACTUAL first prime band (log(log N))^1000<p<=log N and every fixed positive H, all occupied anchors are <=log N and their count is <=(H+1)*log(log N) eventually. With the actual threshold V(N)=1/(log(log N))^10, the rectangle mean square over its ACTUAL good frequency set is <=2*C0*(H+1)^2/(log(log N))^18 for every 0<T<=N/log N, every other support Q and every original coefficient unit-bounded on [1,2*N]. This explicit envelope tends to zero for FIXED H; one N0 precedes all Q, coefficients and heights. Seven theorems and two definitions prove the parameter facts, threshold limits and actual restricted analytic bound. The complementary frequency set is not bounded.
+
+The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18123 jobs); direct axiom audit passed for 18497 declarations using only propext, Classical.choice and Quot.sound; all 18669 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.53 GiB.

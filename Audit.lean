@@ -3920,6 +3920,13 @@ import PaperP1
 #print axioms PaperP1.FiniteSquareTail.sum_bound
 #print axioms PaperP1.FiniteSquareTail.sum_bound_of_div_tail
 #print axioms PaperP1.FiniteSymmetricKernelBudget.symmetric_bound
+#print axioms PaperP1.FirstBandSmallRegion.threshold_nonneg
+#print axioms PaperP1.FirstBandSmallRegion.threshold_tendsto
+#print axioms PaperP1.FirstBandSmallRegion.envelope_tendsto
+#print axioms PaperP1.FirstBandSmallRegion.first_prime_bounds
+#print axioms PaperP1.FirstBandSmallRegion.indices_geometry
+#print axioms PaperP1.FirstBandSmallRegion.quantitative_bound
+#print axioms PaperP1.FirstBandSmallRegion.small_uniform
 #print axioms PaperP1.FirstRegularComponentFamilyBound.regular_endpoint_card
 #print axioms PaperP1.FirstRegularComponentFamilyBound.card_bound_of_comparison
 #print axioms PaperP1.FirstRegularComponentFamilyBound.card_bound

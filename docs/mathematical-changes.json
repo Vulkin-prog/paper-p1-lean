@@ -35604,6 +35604,41 @@
         "status": "not_integrated"
       },
       "validation_commit": "f5ba9c04997043337eaa386b2d79111d3e7a97f1"
+    },
+    {
+      "id": "P1-MATH-0778",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The actual good frequency contribution must be proved to vanish with its band count and threshold, and H is fixed before the limiting N in this statement.",
+      "finding": "For the ACTUAL first prime band (log(log N))^1000<p<=log N and every fixed positive H, all occupied anchors are <=log N and their count is <=(H+1)*log(log N) eventually. With the actual threshold V(N)=1/(log(log N))^10, the rectangle mean square over its ACTUAL good frequency set is <=2*C0*(H+1)^2/(log(log N))^18 for every 0<T<=N/log N, every other support Q and every original coefficient unit-bounded on [1,2*N]. This explicit envelope tends to zero for FIXED H; one N0 precedes all Q, coefficients and heights. Seven theorems and two definitions prove the parameter facts, threshold limits and actual restricted analytic bound. The complementary frequency set is not bounded.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Actual first-band rectangle contribution on small prime frequencies tends to zero. The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.FirstBandSmallRegion.threshold_nonneg",
+        "PaperP1.FirstBandSmallRegion.threshold_tendsto",
+        "PaperP1.FirstBandSmallRegion.envelope_tendsto",
+        "PaperP1.FirstBandSmallRegion.first_prime_bounds",
+        "PaperP1.FirstBandSmallRegion.indices_geometry",
+        "PaperP1.FirstBandSmallRegion.quantitative_bound",
+        "PaperP1.FirstBandSmallRegion.small_uniform",
+        "PaperP1.FirstBandSmallRegion.threshold",
+        "PaperP1.FirstBandSmallRegion.envelope"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18123 jobs); direct axiom audit passed for 18497 declarations using only propext, Classical.choice and Quot.sound; all 18669 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.53 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
