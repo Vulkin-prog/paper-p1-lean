@@ -3903,6 +3903,8 @@ import PaperP1
 #print axioms PaperP1.FiniteExponentialProducts.norm_quadratic_error_le
 #print axioms PaperP1.FiniteFibreSquareBudget.norm_sum_sq_le_card
 #print axioms PaperP1.FiniteFibreSquareBudget.aggregate_square_budget
+#print axioms PaperP1.FiniteFrequencyCover.cover_bound
+#print axioms PaperP1.FiniteFrequencyCover.finite_sum_cover_bound
 #print axioms PaperP1.FiniteGaussianPerron.integrand_expansion
 #print axioms PaperP1.FiniteGaussianPerron.integrand_integrable
 #print axioms PaperP1.FiniteGaussianPerron.integral_expansion
