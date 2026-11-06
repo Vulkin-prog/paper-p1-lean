@@ -4512,6 +4512,10 @@ import PaperP1
 #print axioms PaperP1.LognormalBlockCancellation.uniform_bound
 #print axioms PaperP1.LognormalFiniteQuadrature.finite_sum_integral_error
 #print axioms PaperP1.LognormalFiniteQuadrature.sqrt_cutoff_error
+#print axioms PaperP1.LognormalIntegralTails.lower_bound
+#print axioms PaperP1.LognormalIntegralTails.sqrt_cutoff_bound
+#print axioms PaperP1.LognormalIntegralTails.upper_bound
+#print axioms PaperP1.LognormalIntegralTails.square_cutoff_bound
 #print axioms PaperP1.LognormalLowerTail.weight_bound
 #print axioms PaperP1.LognormalLowerTail.integer_head_bound
 #print axioms PaperP1.LognormalLowerTail.sqrt_head_bound

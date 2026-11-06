@@ -39874,6 +39874,36 @@
         "status": "not_integrated"
       },
       "validation_commit": "39f19fe922bbee5fdd3004cbf7c258d3c02e37d4"
+    },
+    {
+      "id": "P1-MATH-0914",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The exact Mellin formula is an integral over all positive reals, so both actual integral tails must accompany the finite quadrature comparison.",
+      "finding": "Four theorems prove the actual lower integral norm<=exp(4)*N^4/(4*A^3), hence <=4*exp(4)/A at N=ceil(sqrt A) for A>=1, and the actual upper integral norm<=exp(1)*A^3/(2*M^2), hence <=exp(1)/(2*A) at M=ceil(A^2). Actual positive-domain integrability, norm domination and both rounded endpoints are retained. No missing integral tail is assumed negligible.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Both actual lognormal integral tails have explicit reciprocal-scale bounds. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.LognormalIntegralTails.lower_bound",
+        "PaperP1.LognormalIntegralTails.sqrt_cutoff_bound",
+        "PaperP1.LognormalIntegralTails.upper_bound",
+        "PaperP1.LognormalIntegralTails.square_cutoff_bound"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18395 jobs); direct axiom audit passed for 19008 declarations using only propext, Classical.choice and Quot.sound; all 19262 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.21 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

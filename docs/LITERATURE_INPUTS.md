@@ -1,6 +1,15 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0913: The actual infinite upper lognormal
+Current checkpoint P1-MATH-0914: Both actual lognormal integral tails
+have explicit reciprocal-scale bounds. The triple-large prime frequency
+contribution, the central-frequency mean comparison and complete
+logarithmic short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 53.29 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0913: The actual infinite upper lognormal
 integer tail has a proved reciprocal-scale bound. The triple-large prime
 frequency contribution, the central-frequency mean comparison and
 complete logarithmic short-average concentration remain unproved. T19.17
@@ -34320,6 +34329,12 @@ Five theorems and one definition prove a finite reciprocal-cube tail bound <=8/M
 
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
 
+## Internal both actual lognormal integral tails have explicit reciprocal-scale bounds
+
+Four theorems prove the actual lower integral norm<=exp(4)*N^4/(4*A^3), hence <=4*exp(4)/A at N=ceil(sqrt A) for A>=1, and the actual upper integral norm<=exp(1)*A^3/(2*M^2), hence <=exp(1)/(2*A) at M=ceil(A^2). Actual positive-domain integrability, norm domination and both rounded endpoints are retained. No missing integral tail is assumed negligible.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -38799,3 +38814,14 @@ Five theorems and one definition prove a finite reciprocal-cube tail bound <=8/M
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.29 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18393 jobs); direct axiom audit passed for 19004 declarations using only propext, Classical.choice and Quot.sound; all 19258 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.23 GiB.
+
+
+## Both actual lognormal integral tails have explicit reciprocal-scale bounds
+
+Stable ID: p1:internal:lognormal-integral-tails. Both actual lognormal integral tails have explicit reciprocal-scale bounds. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
+
+Four theorems prove the actual lower integral norm<=exp(4)*N^4/(4*A^3), hence <=4*exp(4)/A at N=ceil(sqrt A) for A>=1, and the actual upper integral norm<=exp(1)*A^3/(2*M^2), hence <=exp(1)/(2*A) at M=ceil(A^2). Actual positive-domain integrability, norm domination and both rounded endpoints are retained. No missing integral tail is assumed negligible.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.29 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18395 jobs); direct axiom audit passed for 19008 declarations using only propext, Classical.choice and Quot.sound; all 19262 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.21 GiB.
