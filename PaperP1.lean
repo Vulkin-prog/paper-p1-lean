@@ -4591,3 +4591,6 @@ public import PaperP1.Arithmetic.PrimeRangeSquareBudget
 public import PaperP1.Analysis.LocalSquareSampling
 public import PaperP1.Analysis.SeparatedIntervalBudget
 public import PaperP1.Analysis.SeparatedPolynomialSampling
+public import PaperP1.Analysis.CenteredLogarithmicSampling
+public import PaperP1.Analysis.DyadicDirichletSampling
+public import PaperP1.Analysis.PrimeBandDiscreteMoments

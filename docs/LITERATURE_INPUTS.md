@@ -1,6 +1,17 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0666: basic well-spaced sampling and
+Current checkpoint P1-MATH-0667: centered dyadic Dirichlet sampling
+and ALL-ORDER discrete prime-band moments/large-value cardinalities
+are PROVED. The exact common phase removes the central logarithm;
+k!, k log 2, product length and reciprocal logarithmic savings are
+explicit, with one cutoff before all coefficients, orders and samples.
+Stronger large values, sieve control and logarithmic short-average
+assembly remain unfinished. T19.17 stays conditional; T1.7 complete.
+Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main
+results proved. Original false scopes and corrected variants unchanged.
+No Palomar registration.
+
+Historical checkpoint P1-MATH-0666: basic well-spaced sampling and
 actual discrete polynomial large-value cardinalities are PROVED.
 Local function/derivative integrals and disjoint half-open intervals
 are internal, with every bandwidth and frequency factor displayed.
@@ -30432,6 +30443,16 @@ Every derivative bandwidth cost is explicit. The stronger large-value
 and logarithmic short-average estimates remain unproved. T19.17 is
 conditional; complete original T1.7 has no new input.
 
+## Internal centered discrete prime-band moments
+
+P1-MATH-0667 proves exact common-phase norm invariance, centered
+Dirichlet sampling and ALL-ORDER discrete prime-band high moments
+and actual large-value cardinalities. The internal PNT supplies a
+single cutoff before all reciprocal coefficients, orders and samples.
+Every factorial, bandwidth and product-length factor is retained.
+Stronger large values, sieve control and logarithmic short-average
+assembly remain unfinished. T19.17 is conditional; T1.7 complete.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -31958,3 +31979,20 @@ SeparatedPolynomialSampling computes the actual derivative of each complex expon
 This is an unconditional basic well-spaced discrete mean-value and large-value theorem. It does not provide the stronger large-value estimate, factor-rich/sieve control or multiplicative logarithmic short-average assembly needed for T19.17. The next Dirichlet/prime-product specialization must remove the irrelevant common logarithmic phase so its derivative cost reflects the bandwidth rather than the central frequency. T19.17 keeps its explicit analytic input. Complete original T1.7 remains unconditional. Coverage stays 164 proved, 1 conditional, 2 in_progress out of 167, with all 73 main results proved. Original false scopes and checked corrected replacements are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and allowed kernel axioms are unchanged. Ubuntu retains about 54.6 GiB; no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17867 jobs); direct axiom audit passed for 17688 declarations using only propext, Classical.choice and Quot.sound; all 17665 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.56 GiB.
+
+
+## Centered Dirichlet sampling and all-order discrete reciprocal prime-band moments
+
+Stable ID: p1:internal:centered-prime-band-discrete-moments. Centered actual Dirichlet and prime-product discrete moments are internal. The exact common phase removes the central logarithm; all k!, k log 2 and product-length costs are retained. Stronger estimates and short-average assembly remain open.
+
+CenteredLogarithmicSampling proves the literal common-phase factorization of a finite exponential polynomial and exact norm invariance under adding the same real frequency to every term. It proves the logarithmic bandwidth inequality and applies the internal sampling theorem to actual integer indices L<=n<=M with L,M>0. The derivative bandwidth factor is 2+(log M-log L)^2, rather than a spurious squared central logarithm. The frequency gap 1/M comes from the internal ordinary logarithmic gap bound.
+
+DyadicDirichletSampling applies this to the actual Dirichlet polynomial value S a t for S subset [N,2N), N>0. For every actual finite sample set R in [-T,T] with pairwise distance at least one, its square sum is at most exp(1)*(sqrt(pi)*(T+1)+4*pi*N)*(2+(log 2)^2)*sum_n|a_n/n|^2. For |a_n|<=1 it proves the absolute bound exp(1)*(sqrt(pi)*(T+1)/N+4*pi)*(2+(log 2)^2). The removal of the central logarithm and every endpoint and coefficient estimate are internal.
+
+PrimeBandDiscreteMoments proves actual discrete high moments of EVERY natural order k for arbitrary complex coefficients on a finite prime band Y<=p<=2Y, Y>0. It keeps the literal product fibres and their repeated-prime multiplicity <=k!, identifies the actual k-th power with the grouped product polynomial and retains the product band Y^k<=m<=(2Y)^k. Exact centering makes its derivative bandwidth k*log 2. The resulting sampled moment is at most exp(1)*(sqrt(pi)*(T+1)+2*pi*(2Y)^k)*(2+(k*log 2)^2)*k!*(sum_p|c_p|^2)^k. The actual cardinality of any well-spaced sample set all of whose values are >=V is bounded by the same expression divided by V^(2k), for every V>0.
+
+One final theorem specializes to the actual reciprocal coefficients a_p/p with |a_p|<=1 and replaces the square sum by the internal PNT budget 4/(Y log Y). It chooses ONE Y0>=2 before the prime set, coefficients, moment order, actual finite sample set and all frequency and value parameters. The sampled moment and actual large-value cardinality estimates are both proved. All factors (2Y)^k, k!, 2+(k log 2)^2, (4/(Y log Y))^k and V^(-2k) are displayed; k=0 and empty sets are included. Three modules add nine theorems and no definitions.
+
+This closes the centered dyadic/prime-product specialization of basic discrete sampling and high moments. It does not prove the stronger large-value bounds, factor-rich/sieve control or logarithmic multiplicative short-average decay needed to discharge T19.17. That result retains its explicit analytic input. Original complete T1.7 remains unconditional. Coverage stays 164 proved, 1 conditional, 2 in_progress out of 167; all 73 main results proved. The two original false scopes and checked corrected replacements are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and allowed axioms are unchanged. Ubuntu retains about 54.6 GiB; no dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17873 jobs); direct axiom audit passed for 17697 declarations using only propext, Classical.choice and Quot.sound; all 17674 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.54 GiB.

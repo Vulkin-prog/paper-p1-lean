@@ -31612,6 +31612,41 @@
         "status": "not_integrated"
       },
       "validation_commit": "9037705c125afd28cfd48cad3b9385960a0ecbf5"
+    },
+    {
+      "id": "P1-MATH-0667",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "Direct sampling of logarithmic phases could pay a growing central-frequency cost, and the all-order prime-product estimates had not been specialized to actual discrete frequencies with a uniform reciprocal-coefficient threshold.",
+      "finding": "An exact common phase removes the central logarithm. Literal prime-product bands have bandwidth k log 2, giving all-order discrete prime-band moment and actual large-value cardinality estimates with explicit factorial and bandwidth costs.",
+      "proposed_revision": "Use the centered formulas and display every growing-order, product-length, logarithmic and threshold cost. Do not infer the stronger large-value or short-average decay estimates from the basic discrete moment bound alone.",
+      "impact": "Closes the actual centered discrete Dirichlet/prime-product moment stage, including reciprocal coefficients with an internal uniform PNT cutoff. T19.17 remains conditional.",
+      "evidence": [
+        "PaperP1.CenteredLogarithmicSampling.shift_polynomial",
+        "PaperP1.CenteredLogarithmicSampling.shift_norm",
+        "PaperP1.CenteredLogarithmicSampling.logarithmic_bandwidth",
+        "PaperP1.CenteredLogarithmicSampling.integer_band_sampled_mean_square",
+        "PaperP1.DyadicDirichletSampling.dyadic_sampled_mean_square",
+        "PaperP1.DyadicDirichletSampling.bounded_dyadic_sampled_mean_square",
+        "PaperP1.PrimeBandDiscreteMoments.sampled_high_moment_bound",
+        "PaperP1.PrimeBandDiscreteMoments.large_values_card",
+        "PaperP1.PrimeBandDiscreteMoments.reciprocal_sampled_estimates_eventually"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17873 jobs); direct axiom audit passed for 17697 declarations using only propext, Classical.choice and Quot.sound; all 17674 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.54 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

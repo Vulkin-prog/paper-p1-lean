@@ -3434,6 +3434,10 @@ import PaperP1
 #print axioms PaperP1.BoxedLocalUnitGraphMaps.exists_through_parameter
 #print axioms PaperP1.BoxedLocalUnitGraphMaps.exists_at_curve_point
 #print axioms PaperP1.BoxedLocalUnitGraphMaps.exists_control_set_and_maps
+#print axioms PaperP1.CenteredLogarithmicSampling.shift_polynomial
+#print axioms PaperP1.CenteredLogarithmicSampling.shift_norm
+#print axioms PaperP1.CenteredLogarithmicSampling.logarithmic_bandwidth
+#print axioms PaperP1.CenteredLogarithmicSampling.integer_band_sampled_mean_square
 #print axioms PaperP1.CleanPairReciprocalLower.factor_identity
 #print axioms PaperP1.CleanPairReciprocalLower.substitute_lower
 #print axioms PaperP1.ClippedPowerSum.clipped_nonneg
@@ -3606,6 +3610,8 @@ import PaperP1
 #print axioms PaperP1.DisjointRecoveryParameters.failure_factor_le_half
 #print axioms PaperP1.DyadicBucketGridCount.cluster_count
 #print axioms PaperP1.DyadicBucketGridCount.trimmed_count
+#print axioms PaperP1.DyadicDirichletSampling.dyadic_sampled_mean_square
+#print axioms PaperP1.DyadicDirichletSampling.bounded_dyadic_sampled_mean_square
 #print axioms PaperP1.DyadicGridMargins.radius_pos
 #print axioms PaperP1.DyadicGridMargins.exists_scale
 #print axioms PaperP1.DyadicGridMargins.sideDistance_abs_sub
@@ -4044,6 +4050,9 @@ import PaperP1
 #print axioms PaperP1.PowerSeriesTail.floor_ge_half
 #print axioms PaperP1.PowerSeriesTail.constant_pos
 #print axioms PaperP1.PowerSeriesTail.tail_le_power
+#print axioms PaperP1.PrimeBandDiscreteMoments.sampled_high_moment_bound
+#print axioms PaperP1.PrimeBandDiscreteMoments.large_values_card
+#print axioms PaperP1.PrimeBandDiscreteMoments.reciprocal_sampled_estimates_eventually
 #print axioms PaperP1.PrimeEulerSaddleScale.exponent_bound
 #print axioms PaperP1.PrimeLogarithmicBands.mass_nonneg
 #print axioms PaperP1.PrimeLogarithmicBands.interval_lower
