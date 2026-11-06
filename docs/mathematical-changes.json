@@ -29568,6 +29568,63 @@
         "status": "not_integrated"
       },
       "validation_commit": "774f2df42b0dbc2d269318dacf21a0373c4ec94e"
+    },
+    {
+      "id": "P1-MATH-0617",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The graph-plane specialization bounds still lacked a literal incidence identity for ORIGINAL points, exclusion of identically zero plane sections and a checked averaging conversion to the actual surface/class count.",
+      "finding": "An actual incidence bijection gives the exact first moment; every section of a geometrically irreducible degree>1 equation is nonzero with the coarse d*q bound. Actual good-section bounds and proved exceptional counts give the literal surface bound q*B+D*d*q, including the original canonical class embedding.",
+      "proposed_revision": "Include the exact original-chart incidence bijection, graph-plane kernel divisibility, nonzero affine chart and bad-section coarse count. Keep geometric good-section existence and irreducible plane-curve point estimates explicit until formalized.",
+      "impact": "Completes the actual averaging/counting conversion for the plane-section route without assuming a surface target bound. The independent classical section/curve steps remain unproved; canonical coverage and input stay unchanged.",
+      "evidence": [
+        "PaperP1.HomogeneousLastChartNonzero.map_chart",
+        "PaperP1.HomogeneousLastChartNonzero.exists_eval_snoc_one",
+        "PaperP1.HomogeneousLastChartNonzero.chart_ne_zero",
+        "PaperP1.HomogeneousLastChartNonzero.chart_degree_le",
+        "PaperP1.P3GraphPlaneKernel.equivalence_rename",
+        "PaperP1.P3GraphPlaneKernel.equivalence_equation",
+        "PaperP1.P3GraphPlaneKernel.section_as_univariate_evaluation",
+        "PaperP1.P3GraphPlaneKernel.zero_iff_dvd",
+        "PaperP1.P3GraphPlaneKernel.equation_irreducible",
+        "PaperP1.P3GraphPlaneKernel.equation_homogeneous",
+        "PaperP1.P3GraphPlaneKernel.section_ne_zero",
+        "PaperP1.GraphPlaneAverageUpperBound.average_bound",
+        "PaperP1.GraphPlaneAverageUpperBound.surface_bound",
+        "PaperP1.GraphPlaneAverageUpperBound.uniform_surface_bound",
+        "PaperP1.GraphPlaneCoarsePointCount.map_section",
+        "PaperP1.GraphPlaneCoarsePointCount.geometric_section_ne_zero",
+        "PaperP1.GraphPlaneCoarsePointCount.section_card_le",
+        "PaperP1.GraphPlaneCoarsePointCount.surface_card_le",
+        "PaperP1.GraphPlaneIncidence.point_zero",
+        "PaperP1.GraphPlaneIncidence.point_one",
+        "PaperP1.GraphPlaneIncidence.point_two",
+        "PaperP1.GraphPlaneIncidence.first_moment",
+        "PaperP1.GraphPlanePointCounts.mem_affineZeros",
+        "PaperP1.GraphPlanePointCounts.slice_zeros",
+        "PaperP1.GraphPlanePointCounts.first_moment",
+        "PaperP1.GraphPlanePointCounts.canonical_zero",
+        "PaperP1.GraphPlanePointCounts.canonical_card_le",
+        "PaperP1.P3GraphPlaneKernel.equation",
+        "PaperP1.GraphPlaneIncidence.slice",
+        "PaperP1.GraphPlaneIncidence.incidenceEquiv",
+        "PaperP1.GraphPlanePointCounts.affineZeros"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17623 jobs); direct axiom audit passed for 17158 declarations using only propext, Classical.choice and Quot.sound; all 17002 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 5.83 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

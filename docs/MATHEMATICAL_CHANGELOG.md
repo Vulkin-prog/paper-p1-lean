@@ -1,6 +1,19 @@
 # Mathematical corrections and improvements
 
-Current checkpoint P1-MATH-0616: actual ORIGINAL graph-plane sections are
+Current checkpoint P1-MATH-0617: an ACTUAL incidence bijection proves
+sum_a card(planeSectionZeros)=card(originalSurfaceZeros)*q^2. Original canonical
+classes inject into those literal points. Every section of a geometrically
+irreducible homogeneous equation of degree>1 is nonzero and has<=d*q points.
+Actual good-section bound B and bad-parameter count<=D*q^2 give the ORIGINAL
+surface bound<=q*B+D*d*q. The incidence, zero-section exclusion and coarse
+bad-section bounds are proved internally.
+General geometric good-section existence and irreducible plane-curve point
+estimates remain UNPROVED and explicit in the preparatory theorem. Canonical
+T1.7 stays `UniformGeometricCountsFieldEstimateInput.companion_T1_7` with its
+SOLE prior point-estimate input in actual degrees>2. Coverage stays163 proved,
+2 conditional,2 in_progress out of167; all73 main results proved. No Palomar.
+
+Historical checkpoint P1-MATH-0616: actual ORIGINAL graph-plane sections are
 constructed, with parameter coefficient degree<=d proved internally. Every
 field specialization reconstructs the actual section, and affine point
 evaluation is exactly that of the original equation. ONE explicit geometric
@@ -170,7 +183,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**614 mathematical improvements and two statement-scope corrections are confirmed.**
+**615 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -28384,3 +28397,22 @@ The single good-section witness remains an EXPLICIT premise. Existence of such a
 Six modules add twenty-seven theorems and eleven definitions. Coverage stays163 proved,2 conditional,2 in_progress out of167, with all73 main results proved. The separate T19.17 input and the two literal false-original scopes retain their exact previous statuses. Manuscript hashes, Lean v4.36.0-rc2, checking options and allowed axioms are unchanged. Work remains on Ubuntu with about5.82GiB free and no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17611 jobs); direct axiom audit passed for 17131 declarations using only propext, Classical.choice and Quot.sound; all 16971 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 5.82 GiB.
+
+
+## Exact original surface-plane incidence identity and actual averaging point bounds
+
+GraphPlaneIncidence constructs an ACTUAL bijection between S times two free field parameters and the actual graph-plane incidences of every finite affine point set S over a finite commutative ring. Its literal first-moment identity proves sum_a card(slice(S,a))=card(S)*q^2. No incidence probability, mean formula or geometric theorem is supplied.
+
+GraphPlanePointCounts defines actual affine zero sets in the original last-coordinate-one chart. The previously proved literal point evaluation identifies graph slices with the actual plane-equation zero sets. Consequently sum_a card(affineZeros(planeSection_a(P)))=card(affineZeros(P))*q^2 for EVERY actual four-coordinate P. It also proves the exact reduced integer evaluation and injects the ORIGINAL canonical smooth residue classes into the actual finite-field affine zero set, retaining the original chart and field coordinates.
+
+P3GraphPlaneKernel proves the actual graph-plane section is univariate evaluation through the literal polynomial equivalence. It identifies its zero kernel: the section vanishes identically if and only if the ACTUAL linear graph-plane equation divides the original polynomial. That equation is proved irreducible and homogeneous of degree1. Thus every section of an actual irreducible homogeneous polynomial of degree>1 is nonzero, without an additional no-contained-plane premise.
+
+HomogeneousLastChartNonzero proves every nonzero homogeneous polynomial over ANY field remains a nonzero polynomial in its actual last affine chart. The proof uses the algebraic closure only to obtain an infinite-field nonvanishing point, with exact chart/field-map compatibility. The affine chart degree is at most the original homogeneous degree. GraphPlaneCoarsePointCount applies this to the actual geometric surface equation: EVERY graph-plane section, including every geometrically bad/reducible section, is nonzero and has at most d*q actual affine zeros when d>1. The actual whole surface affine zero set has the coarse d*q^2 bound as well.
+
+GraphPlaneAverageUpperBound combines the literal incidence identity, the actual good/bad parameter partition and the proved coarse bound. If actual good sections have at most B>=0 points and actual bad parameters number at most D*q^2, then the ORIGINAL surface has at most q*B+D*d*q points. Its uniform theorem chooses N before every base field, witness extension, original P and curve bound; the previously proved single-good-section Noether count supplies D=d*N. No surface point bound or incidence formula is assumed.
+
+The ONE geometric good-section witness and the point bounds for geometrically irreducible plane curves remain EXPLICIT premises of the preparatory averaging theorem. Their general existence/estimate theorems are NOT proved or introduced as global hypotheses. Hence this checkpoint does NOT prove the missing leading-coefficient-one surface point estimate. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE unformalized in actual degrees>2 at the same original three families/caps. No canonical input is added or discharged.
+
+Six modules add twenty-seven theorems and four definitions. Coverage stays163 proved,2 conditional,2 in_progress out of167, including all73 main results proved. The separate T19.17 input and two literal false-original scopes are unchanged. Original manuscript hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. All work remains on Ubuntu. Git compaction preserved all23802 object IDs and passed full integrity checking; about5.83GiB remain. No dependency download and no Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17623 jobs); direct axiom audit passed for 17158 declarations using only propext, Classical.choice and Quot.sound; all 17002 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 5.83 GiB.

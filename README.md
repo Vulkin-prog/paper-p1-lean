@@ -1,6 +1,19 @@
 # P1 — Lean formalization
 
-Current checkpoint P1-MATH-0616: actual ORIGINAL graph-plane sections are
+Current checkpoint P1-MATH-0617: an ACTUAL incidence bijection proves
+sum_a card(planeSectionZeros)=card(originalSurfaceZeros)*q^2. Original canonical
+classes inject into those literal points. Every section of a geometrically
+irreducible homogeneous equation of degree>1 is nonzero and has<=d*q points.
+Actual good-section bound B and bad-parameter count<=D*q^2 give the ORIGINAL
+surface bound<=q*B+D*d*q. The incidence, zero-section exclusion and coarse
+bad-section bounds are proved internally.
+General geometric good-section existence and irreducible plane-curve point
+estimates remain UNPROVED and explicit in the preparatory theorem. Canonical
+T1.7 stays `UniformGeometricCountsFieldEstimateInput.companion_T1_7` with its
+SOLE prior point-estimate input in actual degrees>2. Coverage stays163 proved,
+2 conditional,2 in_progress out of167; all73 main results proved. No Palomar.
+
+Historical checkpoint P1-MATH-0616: actual ORIGINAL graph-plane sections are
 constructed, with parameter coefficient degree<=d proved internally. Every
 field specialization reconstructs the actual section, and affine point
 evaluation is exactly that of the original equation. ONE explicit geometric
@@ -173,7 +186,7 @@ recorded in the linked ledger and [current status](docs/FORMALIZATION_STATUS.md)
 
 Companion T1.10 needs an enlarged alignment exclusion for unequal old/new widths: its literal radius-one version has an unconditional formal counterexample. The corrected coarse4/3 profile is proved under explicit geometric inputs; its sharper31/24 form remains open; see [the scope correction](docs/ASYMMETRIC_ALIGNMENT_SCOPE.md).
 
-The main optimal4/3 quadratic approximation power is now proved under explicit BCN and finite geometric properties, including both bounds, exact actual parameters, nominal-mean bias and eventual probability status. The optimal41/30 third factorial cumulant, full third absolute activity and aligned-channel triple claims are now proved under explicit geometric inputs, withBCN retained for the full connected argument. The actual original count and its retained modification converge in total variation to the actual-mean and nominal-mean Poisson laws without unproved inputs (P1-MATH-0413); quantitative optimal law rates remain separate. Exact fourth-cumulant component identities and unconditional weak, irregular and incompatible pair bounds are proved. In particular, the actual absolute pair activity is asymptotic to half the actual second factorial cumulant, without BCN or a complete pair profile. The contact activity bound at every fixed order now holds unconditionally on every dyadic subground, including irregular starts and zero marginals. The activation probability of the actual principal edge family now has the unconditional exponent -2/3, with any fixed epsilon margin. The planar normal budget T20.4 is now proved with improved constants and an integer-fibre argument. T20.6, the prescribed-plane transverse-product count and its actual affine mass bound, is now proved internally with three motifs and no Pila premise. The project records **614 confirmed mathematical improvements and two statement-scope corrections**. See [current status](docs/FORMALIZATION_STATUS.md), [the activity alignment](docs/FIXED_ABSOLUTE_ACTIVITY_ALIGNMENT.md) and [the mathematical change log](docs/MATHEMATICAL_CHANGELOG.md).
+The main optimal4/3 quadratic approximation power is now proved under explicit BCN and finite geometric properties, including both bounds, exact actual parameters, nominal-mean bias and eventual probability status. The optimal41/30 third factorial cumulant, full third absolute activity and aligned-channel triple claims are now proved under explicit geometric inputs, withBCN retained for the full connected argument. The actual original count and its retained modification converge in total variation to the actual-mean and nominal-mean Poisson laws without unproved inputs (P1-MATH-0413); quantitative optimal law rates remain separate. Exact fourth-cumulant component identities and unconditional weak, irregular and incompatible pair bounds are proved. In particular, the actual absolute pair activity is asymptotic to half the actual second factorial cumulant, without BCN or a complete pair profile. The contact activity bound at every fixed order now holds unconditionally on every dyadic subground, including irregular starts and zero marginals. The activation probability of the actual principal edge family now has the unconditional exponent -2/3, with any fixed epsilon margin. The planar normal budget T20.4 is now proved with improved constants and an integer-fibre argument. T20.6, the prescribed-plane transverse-product count and its actual affine mass bound, is now proved internally with three motifs and no Pila premise. The project records **615 confirmed mathematical improvements and two statement-scope corrections**. See [current status](docs/FORMALIZATION_STATUS.md), [the activity alignment](docs/FIXED_ABSOLUTE_ACTIVITY_ALIGNMENT.md) and [the mathematical change log](docs/MATHEMATICAL_CHANGELOG.md).
 
 Article13.1 now has a complete actual short-basis construction, with
 both physical projections and the common square-class map injective.
@@ -1512,3 +1525,5 @@ P1-MATH-0614 proves unconditional polynomial-height good-reduction certificates,
 P1-MATH-0615 proves all-fields plane-curve Noether forms in every degree and a uniform bound for all reducible parameter values from one explicit good specialization. The surface finite-field point estimate remains unproved.
 
 P1-MATH-0616 constructs actual graph-plane sections, proves their parameter coefficient degree<=d and original affine evaluation, and bounds all actual bad sections from one explicit geometric good-section witness. The remaining surface point estimate stays unproved.
+
+P1-MATH-0617 proves the exact original surface-plane incidence identity, excludes identically zero sections in degree>1 and derives actual surface point bounds from explicit good-section curve estimates and exceptional counts. The classical section-existence and curve estimates remain unproved.

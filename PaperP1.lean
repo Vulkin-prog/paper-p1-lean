@@ -4465,3 +4465,9 @@ public import PaperP1.Algebra.P3GraphPlaneSection
 public import PaperP1.Algebra.P3GraphPlaneSectionCoefficients
 public import PaperP1.Algebra.PlaneHomogeneousReconstruction
 public import PaperP1.Arithmetic.P3GraphPlaneBadSectionCount
+public import PaperP1.Algebra.HomogeneousLastChartNonzero
+public import PaperP1.Algebra.P3GraphPlaneKernel
+public import PaperP1.Diophantine.GraphPlaneAverageUpperBound
+public import PaperP1.Diophantine.GraphPlaneCoarsePointCount
+public import PaperP1.Diophantine.GraphPlaneIncidence
+public import PaperP1.Diophantine.GraphPlanePointCounts
