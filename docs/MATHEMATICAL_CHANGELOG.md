@@ -1,6 +1,15 @@
 # Mathematical corrections and improvements
 
-Current checkpoint P1-MATH-0896: The actual prime-presence count-
+Current checkpoint P1-MATH-0897: Every actual weighted real cofactor
+interval has a genuine uniform Dirichlet bound. The triple-large prime
+frequency contribution, the central-frequency mean comparison and
+complete logarithmic short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 53.56 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0896: The actual prime-presence count-
 weighted sum is uniformly small at every off-central frequency. The
 triple-large prime frequency contribution, the central-frequency mean
 comparison and complete logarithmic short-average concentration remain
@@ -2833,7 +2842,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**894 mathematical improvements and two statement-scope corrections are confirmed.**
+**895 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -33987,3 +33996,12 @@ One theorem proves the actual CommonPresenceWeightedSum.weighted bound <=epsilon
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.56 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18359 jobs); direct axiom audit passed for 18932 declarations using only propext, Classical.choice and Quot.sound; all 19177 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.54 GiB.
+
+
+## Every actual weighted real cofactor interval has a genuine uniform Dirichlet bound
+
+Two theorems identify the literal Dirichlet value with its reciprocal-weighted sum and prove norm<=epsilon uniformly on EVERY Ico N M with N<=M<=2N, using the ACTUAL NarrowRamareRectangle.coefficient including both prime presence and count denominator. For fixed B>0, ONE R,T0,N0 precede ALL P,Q,real complete f,off-central frequencies |tau|<=N^B and endpoints M. Actual prefix estimates use height 2B because N<=J^2 for every J>=N-1 once N>=4; finite Abel summation then supplies the literal interval bound. No interval cancellation is assumed.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.56 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18361 jobs); direct axiom audit passed for 18934 declarations using only propext, Classical.choice and Quot.sound; all 19179 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.52 GiB.

@@ -4836,3 +4836,4 @@ public import PaperP1.Analysis.UniformRealEulerBudget
 public import PaperP1.Analysis.UniformRealTwistedSum
 public import PaperP1.Analysis.UniformCountWeightedTwistedSum
 public import PaperP1.Analysis.UniformPresenceWeightedSum
+public import PaperP1.Analysis.UniformRealWeightedInterval
