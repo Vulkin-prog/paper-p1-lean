@@ -4653,6 +4653,10 @@ import PaperP1
 #print axioms PaperP1.PrimeLogarithmicBands.bands_subset
 #print axioms PaperP1.PrimeLogarithmicBands.bands_mass
 #print axioms PaperP1.PrimeLogarithmicBands.uniform_bands_lower
+#print axioms PaperP1.PrimeMomentExponentialBudget.budget_bound
+#print axioms PaperP1.PrimeMomentExponentialBudget.polynomial_factor_bound
+#print axioms PaperP1.PrimeMomentExponentialBudget.combined_bound
+#print axioms PaperP1.PrimeMomentExponentialBudget.final_exponent_bound
 #print axioms PaperP1.PrimePolynomialMoments.coefficient_square_budget
 #print axioms PaperP1.PrimePolynomialMoments.phase_product
 #print axioms PaperP1.PrimePolynomialMoments.power_expansion

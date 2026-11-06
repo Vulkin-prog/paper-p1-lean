@@ -4769,3 +4769,4 @@ public import PaperP1.Analysis.VariableAmplificationSpan
 public import PaperP1.Analysis.VariablePrimePowerLargeValues
 public import PaperP1.Analysis.ActualVariablePrimeLargeValues
 public import PaperP1.Analysis.SecondPrimeCeilingGeometry
+public import PaperP1.Analysis.PrimeMomentExponentialBudget

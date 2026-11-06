@@ -37217,6 +37217,36 @@
         "status": "not_integrated"
       },
       "validation_commit": "c9f4d3a07c5b71eb58addb2f10da28e583c9b65f"
+    },
+    {
+      "id": "P1-MATH-0830",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The second-prime large-value count requires every growing-moment cost to be absorbed with a strict positive margin; informal o(1) losses are insufficient for the expanded sparse regime.",
+      "finding": "For x=log z>=2, k<=z and prime reciprocal mass<=1, prove the ACTUAL amplification budget<=exp(7*k*x). Retain the full variable-span factor exp(6*k/H)*(2+9*(k/H)^2), and show it is <=exp(12*k) for k,H>=1. Under z>=x^5, k<=3*z/x^2 and C<=exp x, the combined scalar cost is <=exp(40*z/x). Finally for x>=100000 prove 40*z/x+(z+x^3)/20<=z/19. Four theorems retain factorial, lcm, width and source-size losses explicitly.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "All second-prime moment and span costs fit an explicit exponential budget. The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.PrimeMomentExponentialBudget.budget_bound",
+        "PaperP1.PrimeMomentExponentialBudget.polynomial_factor_bound",
+        "PaperP1.PrimeMomentExponentialBudget.combined_bound",
+        "PaperP1.PrimeMomentExponentialBudget.final_exponent_bound"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18227 jobs); direct axiom audit passed for 18671 declarations using only propext, Classical.choice and Quot.sound; all 18873 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.59 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
