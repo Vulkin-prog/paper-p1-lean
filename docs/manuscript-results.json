@@ -39637,7 +39637,8 @@
             "PaperP1.UniformGeometricCountsPlaneInputs.companion_T1_7"
           ]
         }
-      ]
+      ],
+      "validation_commit": "34e28756621c78ae391fefe63bc8ab6293459152"
     },
     {
       "label": "p1:arith:dense",
