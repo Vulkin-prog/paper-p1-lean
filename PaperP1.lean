@@ -4369,3 +4369,7 @@ public import PaperP1.Algebra.P3GlobalAuxiliaryOfPrimeMass
 public import PaperP1.Analysis.ExceptionalSurfaceClassBudget
 public import PaperP1.Analysis.P3BudgetedCanonicalDivisor
 public import PaperP1.Analysis.P3SmoothGlobalDivisorEstimate
+public import PaperP1.Analysis.P3GlobalDeterminantScaleLimits
+public import PaperP1.Analysis.P3StandardFactorialLimits
+public import PaperP1.Analysis.SurfacePrimeMassLimits
+public import PaperP1.Arithmetic.SurfaceDeterminantPrimeWindow

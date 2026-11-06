@@ -28758,6 +28758,51 @@
         "status": "not_integrated"
       },
       "validation_commit": "8bce76ee28a2bbcac4379c97d096fa00bc994718"
+    },
+    {
+      "id": "P1-MATH-0604",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "Quantitative parameter choice in the global determinant comparison needs the actual retained-prime mass, principal square-root scale, exact factorial and elementary prime-sum errors on a common normalization.",
+      "finding": "The actual prime-window mass has unit logarithmic coefficient; the standard-family principal scale has the exact coefficient sqrt(d/D)*d/2; factorial and prime-sum errors vanish on the required cubic/logarithmic normalization.",
+      "proposed_revision": "Use the proved literal prime window and explicit finite Mertens/Chebyshev bounds, retain the exact natural-family factorial and normalize all actual determinant terms before choosing the degree and prime threshold.",
+      "impact": "Removes supplied leading asymptotics and factorial/error assumptions from the quantitative global auxiliary parameter argument.",
+      "evidence": [
+        "PaperP1.P3GlobalDeterminantScaleLimits.sqrt_size_ratio",
+        "PaperP1.P3GlobalDeterminantScaleLimits.main_scale_ratio",
+        "PaperP1.P3GlobalDeterminantScaleLimits.constant_error_ratio",
+        "PaperP1.P3GlobalDeterminantScaleLimits.theta_error_ratio",
+        "PaperP1.P3StandardFactorialLimits.size_le_cube",
+        "PaperP1.P3StandardFactorialLimits.factorial_log_bound",
+        "PaperP1.P3StandardFactorialLimits.factorial_cubic_ratio",
+        "PaperP1.P3StandardFactorialLimits.factorial_logarithmic_ratio",
+        "PaperP1.SurfacePrimeMassLimits.mass_ratio",
+        "PaperP1.SurfaceDeterminantPrimeWindow.mem_primes",
+        "PaperP1.SurfaceDeterminantPrimeWindow.full_mass_eq",
+        "PaperP1.SurfaceDeterminantPrimeWindow.mass_difference",
+        "PaperP1.SurfaceDeterminantPrimeWindow.cost_nonneg",
+        "PaperP1.SurfaceDeterminantPrimeWindow.mass_lower_bound",
+        "PaperP1.SurfaceDeterminantPrimeWindow.mass_upper_bound",
+        "PaperP1.SurfaceDeterminantPrimeWindow.theta_upper_bound",
+        "PaperP1.SurfaceDeterminantPrimeWindow.primes",
+        "PaperP1.SurfaceDeterminantPrimeWindow.mass",
+        "PaperP1.SurfaceDeterminantPrimeWindow.cost"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17401 jobs); direct axiom audit passed for 16791 declarations using only propext, Classical.choice and Quot.sound; all 16531 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.05 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
