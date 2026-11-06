@@ -1,6 +1,15 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0754: One actual common frequency exception
+Current checkpoint P1-MATH-0755: Exact Ramare identity for coefficients
+multiplicative at the extracted primes. The actual Ramare main-term
+frequency bounds and complete logarithmic short-average concentration
+remain unproved. T19.17 conditional; original T1.7 unconditional.
+Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main
+proved. Sources, false-scope corrections, compiler and axioms unchanged.
+About 53.1 GiB free on Ubuntu. No dependency download or Palomar
+registration.
+
+Historical checkpoint P1-MATH-0754: One actual common frequency exception
 controls count-weighted prime-presence sums. The actual Ramare main-term
 frequency bounds and complete logarithmic short-average concentration
 remain unproved. T19.17 conditional; original T1.7 unconditional.
@@ -1666,7 +1675,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records752 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records753 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -1785,7 +1794,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **18406 audited theorem/lemma declarations**. This
+- The project currently has **18413 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -32312,3 +32321,12 @@ The ACTUAL count-weighted twisted sum with the prime-presence indicator on Q is 
 The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.1 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18075 jobs); direct axiom audit passed for 18406 declarations using only propext, Classical.choice and Quot.sound; all 18554 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.97 GiB.
+
+
+## Exact Ramare identity for coefficients multiplicative at the extracted primes
+
+The actual finite weighted Ramare identity is proved under the weaker literal condition b(p*m)=a(p)*b(m) for extracted p in P; full complete multiplicativity of b is unnecessary. The exact full identity retains its actual residual (1-weight(P,n))*b(n). For disjoint prime supports P,Q, the ACTUAL coefficient presence(Q,n)*f(n) satisfies this relative condition when f is complete. The exact Dirichlet identity is proved after the literal logarithmic twist, with the count denominator, source test p*m in S and every finite endpoint retained. Seven theorems and one definition are proved, without dropping the other-band arithmetic restriction.
+
+The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.1 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18077 jobs); direct axiom audit passed for 18413 declarations using only propext, Classical.choice and Quot.sound; all 18562 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.95 GiB.

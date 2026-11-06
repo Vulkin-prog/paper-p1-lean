@@ -34877,6 +34877,40 @@
         "status": "not_integrated"
       },
       "validation_commit": "2297fd0f223eac8b84369409f717c2b05f86e591"
+    },
+    {
+      "id": "P1-MATH-0755",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "Treating the other-band presence coefficient as completely multiplicative would be false. The extraction identity only needs, and must prove, multiplicativity relative to primes outside that other band.",
+      "finding": "The actual finite weighted Ramare identity is proved under the weaker literal condition b(p*m)=a(p)*b(m) for extracted p in P; full complete multiplicativity of b is unnecessary. The exact full identity retains its actual residual (1-weight(P,n))*b(n). For disjoint prime supports P,Q, the ACTUAL coefficient presence(Q,n)*f(n) satisfies this relative condition when f is complete. The exact Dirichlet identity is proved after the literal logarithmic twist, with the count denominator, source test p*m in S and every finite endpoint retained. Seven theorems and one definition are proved, without dropping the other-band arithmetic restriction.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Exact Ramare identity for coefficients multiplicative at the extracted primes. The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.RelativePrimeRamare.weighted_identity",
+        "PaperP1.RelativePrimeRamare.weighted_ramare_sum",
+        "PaperP1.RelativePrimeRamare.full_ramare_with_remainder",
+        "PaperP1.RelativePrimeRamare.presence_relative",
+        "PaperP1.RelativePrimeRamare.full_presence_ramare",
+        "PaperP1.RelativePrimeRamare.value_weighted_sum",
+        "PaperP1.RelativePrimeRamare.twisted_presence_identity",
+        "PaperP1.RelativePrimeRamare.presenceCoefficient"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18077 jobs); direct axiom audit passed for 18413 declarations using only propext, Classical.choice and Quot.sound; all 18562 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.95 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
