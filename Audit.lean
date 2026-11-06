@@ -1186,6 +1186,10 @@ import PaperP1
 #print axioms PaperP1.GradedHilbertTransport.multiplicity_eq
 #print axioms PaperP1.GradedInjectiveChartMap.localization_zero_of_power
 #print axioms PaperP1.GradedInjectiveChartMap.away_map_injective
+#print axioms PaperP1.GradedInjectiveHilbertComparison.pieceMap_injective
+#print axioms PaperP1.GradedInjectiveHilbertComparison.dimension_le
+#print axioms PaperP1.GradedInjectiveHilbertComparison.coefficient_le
+#print axioms PaperP1.GradedInjectiveHilbertComparison.linear_degree_le
 #print axioms PaperP1.GradedIrrelevantMap.map_le
 #print axioms PaperP1.GradedIrrelevantMap.map_eq
 #print axioms PaperP1.GradedLinearHilbertSection.eventual_dimension
@@ -12399,7 +12403,10 @@ import PaperP1
 #print axioms PaperP1.BoundedRegularSectionAvoidance.exists_coefficients
 #print axioms PaperP1.BoundedRegularSectionAvoidance.exists_coefficients_powers
 #print axioms PaperP1.FiniteCurvePrimitiveCoordinate.exists_coordinate
+#print axioms PaperP1.FiniteHypersurfaceCurvePullback.exists_equation
 #print axioms PaperP1.FiniteIndexHomogeneousProjection.exists_projection
+#print axioms PaperP1.FiniteParameterCurveEquation.contracted_height
+#print axioms PaperP1.FiniteParameterCurveEquation.exists_equation
 #print axioms PaperP1.GeneratedAlgebraPointEvaluation.evaluation_polynomial
 #print axioms PaperP1.GeneratedAlgebraPointEvaluation.evaluation_coordinate
 #print axioms PaperP1.GeneratedAlgebraPointEvaluation.points_equal

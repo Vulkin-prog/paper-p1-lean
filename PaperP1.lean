@@ -4238,3 +4238,6 @@ public import PaperP1.Algebra.HomogeneousPrimeSeparators
 public import PaperP1.Arithmetic.ActualSourceSurfaceProjectionExceptionalCurves
 public import PaperP1.Geometry.SourceProjectiveCurveIdealData
 public import PaperP1.Geometry.SourceSurfaceComponentDegreeBudget
+public import PaperP1.Algebra.GradedInjectiveHilbertComparison
+public import PaperP1.Geometry.FiniteHypersurfaceCurvePullback
+public import PaperP1.Geometry.FiniteParameterCurveEquation

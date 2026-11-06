@@ -27445,6 +27445,40 @@
         "status": "not_integrated"
       },
       "validation_commit": "374ab1402bb23f5dfd1ec54b03f7b7d1dec703cd"
+    },
+    {
+      "id": "P1-MATH-0572",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "Lifting target covering curves needed a proved nonzero source equation with uniformly controlled degree. Neither an effective equation generator nor a pullback degree bound was available from the actual image curve data.",
+      "finding": "The actual finite polynomial-parameter projection contracts each homogeneous height-one image curve to one nonzero homogeneous plane equation, and actual quotient-piece injections prove that its degree is at most the genuine curve degree. Its original source evaluation stays nonzero.",
+      "proposed_revision": "Use contraction to the integrally closed three-variable parameter ring, prove height preservation and principal homogeneity, then compare the actual plane and curve Hilbert coefficients. Pull back this single equation before decomposing into source section curves.",
+      "impact": "Supplies an actual degree-controlled nonzero pullback equation without a general effective ideal-generator or regularity estimate and without assuming the desired curve-degree bound.",
+      "evidence": [
+        "PaperP1.GradedInjectiveHilbertComparison.pieceMap_injective",
+        "PaperP1.GradedInjectiveHilbertComparison.dimension_le",
+        "PaperP1.GradedInjectiveHilbertComparison.coefficient_le",
+        "PaperP1.GradedInjectiveHilbertComparison.linear_degree_le",
+        "PaperP1.FiniteHypersurfaceCurvePullback.exists_equation",
+        "PaperP1.FiniteParameterCurveEquation.contracted_height",
+        "PaperP1.FiniteParameterCurveEquation.exists_equation",
+        "PaperP1.GradedInjectiveHilbertComparison.pieceMap"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17135 jobs); direct axiom audit passed for 16420 declarations using only propext, Classical.choice and Quot.sound; all 16071 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.09 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
