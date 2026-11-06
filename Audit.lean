@@ -5994,6 +5994,8 @@ import PaperP1
 #print axioms PaperP1.IntegerOffsetCRT.common_modEq
 #print axioms PaperP1.IntegerOffsetCRT.coordinate_card
 #print axioms PaperP1.IntegerOffsetCRT.box_card
+#print axioms PaperP1.IntegerOrdinarySourceCover.at_system
+#print axioms PaperP1.IntegerOrdinarySourceCover.uniform_cover
 #print axioms PaperP1.IntegerPairFactorCharts.clear_power
 #print axioms PaperP1.IntegerPairFactorCharts.evaluation_sum
 #print axioms PaperP1.IntegerPairFactorCharts.rectangle_evaluation_clearing
@@ -6016,6 +6018,7 @@ import PaperP1
 #print axioms PaperP1.IntegerRealIntervalCount.interval_card
 #print axioms PaperP1.IntegerRealIntervalCount.band_card
 #print axioms PaperP1.IntegerRealIntervalCount.strip_card
+#print axioms PaperP1.IntegerSourceCoverConsequences.system_cover
 #print axioms PaperP1.IntegerSplitProductCharacterEstimate.linear_image_eval
 #print axioms PaperP1.IntegerSplitProductCharacterEstimate.uniform_absolute
 #print axioms PaperP1.IntegralAffineCurvePointCount.mem_points
@@ -11972,6 +11975,8 @@ import PaperP1
 #print axioms PaperP1.UnconditionalDenseTwoTargetMass.article_15_2
 #print axioms PaperP1.UnconditionalTripleControlledActivity.uniform_weighted
 #print axioms PaperP1.uniformLittleOOn_zero
+#print axioms PaperP1.UniformGeometricCounts.surface_hypotheses
+#print axioms PaperP1.UniformGeometricCounts.companion_T1_7
 #print axioms PaperP1.UniformGeometricCountsAuxiliaryInput.p3_hypotheses
 #print axioms PaperP1.UniformGeometricCountsAuxiliaryInput.companion_T1_7
 #print axioms PaperP1.UniformGeometricCountsFieldEstimateInput.certificate_of_higher_estimate

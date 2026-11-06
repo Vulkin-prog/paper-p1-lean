@@ -1,6 +1,18 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0659: the FULL actual INTEGER-source
+Current checkpoint P1-MATH-0660: the COMPLETE original companion
+T1.7 is PROVED with NO external mathematical input. Canonical:
+PaperP1.UniformGeometricCounts.companion_T1_7. ALL FIVE original
+conclusion fields and the SAME THREE original source-family caps
+are retained. The general P3 estimate is BYPASSED for these actual
+integer-source families, not asserted in unrestricted scope.
+Coverage: 164 proved, 1 conditional, 2 in_progress out of 167;
+all 73 main-article results proved. T19.17 retains its almost-all
+short-interval smooth-number gap. Original T1.10 and T5.1 false
+scopes retain their proved corrected variants and in_progress status.
+Original sources and Lean v4.36.0-rc2 are unchanged. No Palomar registration.
+
+Historical checkpoint P1-MATH-0659: the FULL actual INTEGER-source
 genuine-degree cover is UNCONDITIONAL for ALL shifts and ALL H>=1.
 Its constants precede every coefficient, branch shift, height, point
 subset and bounded source size. Genuine-degree curve and exception
@@ -666,7 +678,7 @@ Original integrality over the coefficient field suffices. The formal count
 covers every characteristic-zero field. All projection, fibre, height and
 scalar-extension arguments are internal; no unproved point-count input remains.
 
-Current coverage is **163 proved, 2 conditional and 2 in_progress out of 167**,
+Current coverage is **164 proved, 1 conditional and 2 in_progress out of 167**,
 with **165 completed**: 73 main and 90 companion results are proved. The four
 remaining literal obligations are companionT1.7/T19.17 and the original false
 T1.10/T5.1 statements with their recorded checked corrected replacements.
@@ -30289,11 +30301,21 @@ are internal. The final system/ordinary manuscript-family transfers and
 canonical T1.7 assembly remain unfinished. Arbitrary rational-source and
 unrestricted P3 estimates are not asserted.
 
+## Complete original T1.7 without external inputs
+
+P1-MATH-0660 completes every original T1.7 conclusion via the internal
+integer-source genuine-degree theorem and exact source/ordinary transports.
+The same three families and caps are used. The canonical theorem is
+PaperP1.UniformGeometricCounts.companion_T1_7 with no unformalized input.
+The former general P3 estimate is bypassed for these actual families; its
+unrestricted property is not claimed. T19.17 remains conditional and the
+two original false scopes retain their proved corrected variants.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
 Exact Lean property: `PaperP1.P3FiniteFieldClassEstimate.UniformEstimate d`.
-Current canonical scope at P1-MATH-0610: only actual degrees strictly greater
+Historical canonical scope at P1-MATH-0610: only actual degrees strictly greater
 than2 at the original three finite-degree families/caps. All d<=2 needed
 certificate budgets and full auxiliary properties are proved internally.
 For each eta>0 a prime threshold precedes every original homogeneous degree-d
@@ -30311,7 +30333,10 @@ The actual bounded integer certificate is proved from these two inputs by
 construction and T1.7 translations then follow internally. These precise
 interfaces are inferred from the separate roles of universal forms and finite
 field estimates in [Salberger2023, Lemmas1.5 and1.8-1.9](https://londmathsoc.onlinelibrary.wiley.com/doi/full/10.1112/plms.12508).
-No literature statement is introduced as a Lean axiom. T1.7 stays conditional.
+No literature statement is introduced as a Lean axiom. This was the historical
+conditional route. P1-MATH-0660 proves the FULL original T1.7 instead through
+its actual integer-source families; this unrestricted general proposition
+is no longer a premise of canonical T1.7 and remains unproved outside that route.
 
 ## Direct proved degree-two good-prime certificate
 
@@ -31699,3 +31724,22 @@ The theorem then splits at the exact threshold |a|=2*H^2. The bounded case uses 
 This is an UNCONDITIONAL genuine-degree integer-source covering theorem: no external P3 estimate, auxiliary equation, field count or surface cover remains in its hypotheses. The final conversion to the manuscript system cover, the two ordinary integer-source families, and the exact original three-family T1.7 assembly remain unfinished. Canonical T1.7 therefore stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families/caps. The unrelated unrestricted P3 and arbitrary rational-source properties remain unproved. Coverage remains 163 proved, 2 conditional, 2 in_progress out of 167; all 73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Ubuntu retains about 54.7 GiB; no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17827 jobs); direct axiom audit passed for 17600 declarations using only propext, Classical.choice and Quot.sound; all 17563 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.72 GiB.
+
+
+## Complete original companion T1.7 uniform geometric counts without any external mathematical input
+
+Stable ID: p1:internal:unconditional-complete-uniform-geometric-counts. Original T1.7 is proved without external inputs at its exact original three families/caps. The general P3 estimate is bypassed, not asserted in unrestricted scope. T19.17 and the two false-original corrections remain.
+
+IntegerSourceCoverConsequences supplies the EXACT original UniformSourceSurfaceCover.UniformCover interface from the internal integer-source genuine-degree cover. It weakens only the exponent by the already proved D>=1 comparison, retaining the actual source curves and points. No cover is assumed.
+
+IntegerOrdinarySourceCover transports the proved exact integer-source cover to the literal ordinary points at source height H^E. The finite ordinary curve-family transfer, degree cap, exception injection and height-power cancellation are internal. For every original branch cap K it uses EXACTLY E=K+1, giving one cap and constant before all integer coefficients, shifts, source sizes, heights and auxiliary ordinary degrees. Thus BOTH original ordinary families have unconditional covering theorems, with their original exact power degrees K+1 and (a+1)+1.
+
+UniformGeometricCounts.surface_hypotheses proves ALL THREE original remaining surface-cover fields: the system family at degree 2^k*p.systemDegree^2 for k<=p.systemSize, the linear family at degree 2^k*(K+1)^2 for k<=p.linearSize, and the typed family at degree 2^k*(a+1+1)^2 for k<=p.typedSize. No degree cap is increased, no coefficients are replaced by arbitrary rationals, no finite-field estimate is assumed, and no target host count occurs among the premises.
+
+UniformGeometricCounts.companion_T1_7 proves the COMPLETE original lemma. For the same original fixed parameters and positivity assumptions it chooses the system/dense/linear/typed sizes and degrees and returns ALL FIVE literal Assertions fields: arbitrary integer-coefficient system hosts with N^(1/2+epsilon) and degree-one N^epsilon bounds, dense separated nonaligned graph hosts, typed component graph hosts, fixed-partner counts and both one-variable square-equation clauses. Heterogeneous degree selection, original injective even-selection maps, direct-sum admissibility, coefficient height, graph orientation and all original quantifier orders are preserved by the existing exact statement and already checked reductions.
+
+Three modules add five theorems and no definitions. The canonical T1.7 declaration is now PaperP1.UniformGeometricCounts.companion_T1_7, with NO remaining unformalized input. The former general P3 estimate is BYPASSED for the exact original integer-source families; its unrestricted arbitrary-surface proposition and the older arbitrary-rational-source cover are NOT claimed proved. Earlier conditional reductions remain available and are recorded as historical alternatives. This changes T1.7 from conditional to proved only after the complete target build; the checkpoint is published only after full build, direct axiom/reference audits and source checks.
+
+Coverage becomes 164 proved, 1 conditional and 2 in_progress out of 167; all 73 main results are proved. T19.17 alone retains an unformalized almost-all short-interval smooth-number input. The original radius-one T1.10 and uncapped exact T5.1 display remain disproved original scopes with their already proved corrected variants; they are not relabeled as proved originals. Original manuscript hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Ubuntu retains about 54.7 GiB; no dependency download. No Palomar registration before the remaining project obligations are resolved.
+
+Verified under Lean v4.36.0-rc2: full build passed (17833 jobs); direct axiom audit passed for 17605 declarations using only propext, Classical.choice and Quot.sound; all 17568 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.69 GiB.

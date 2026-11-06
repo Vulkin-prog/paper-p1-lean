@@ -31321,6 +31321,37 @@
         "status": "not_integrated"
       },
       "validation_commit": "99f96e0306d085b485ea549424766af4d75007e6"
+    },
+    {
+      "id": "P1-MATH-0660",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The complete original T1.7 lemma retained one independent higher-degree P3 finite-field estimate at its three original source-family caps, even though the exact integer-source cover was now internally proved.",
+      "finding": "The integer-source system and ordinary curve/height transfers supply ALL THREE exact original families unconditionally. The full original five-field T1.7 statement now has a checked Lean proof with no external mathematical input and no changed degree cap.",
+      "proposed_revision": "Replace the original appeal to general surface estimates by the internal integer-source character/determinant/section argument and the exact source/ordinary transports. Cite the unconditional complete T1.7 declaration. Distinguish this proved original-family result from the still-unproved unrestricted general P3 estimate.",
+      "impact": "Completes the original companion T1.7 and removes its final unformalized input, moving it from conditional to proved. Coverage is 164 proved, 1 conditional and 2 disproved-original scopes in_progress out of 167. The remaining T19.17 gap and corrected original scopes are unchanged.",
+      "evidence": [
+        "PaperP1.IntegerOrdinarySourceCover.at_system",
+        "PaperP1.IntegerOrdinarySourceCover.uniform_cover",
+        "PaperP1.IntegerSourceCoverConsequences.system_cover",
+        "PaperP1.UniformGeometricCounts.surface_hypotheses",
+        "PaperP1.UniformGeometricCounts.companion_T1_7"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17833 jobs); direct axiom audit passed for 17605 declarations using only propext, Classical.choice and Quot.sound; all 17568 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.69 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
