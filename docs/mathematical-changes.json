@@ -41346,6 +41346,36 @@
         "status": "not_integrated"
       },
       "validation_commit": "5472946713f79ff1f3dc59a5311a64a7e786f9a4"
+    },
+    {
+      "id": "P1-MATH-0960",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "Internal specialized smooth route for the remaining long-average comparison; the bound becomes small only for sufficiently long intervals, not at the logarithmic target length.",
+      "finding": "Four theorems express every actual interval sum as the exact difference of two prefix sums, then bound its average against the same truncated reciprocal Möbius profile by 2*roughCard(K)/h. The actual dyadic average obeys the analogous bound. Their difference is at most 2*roughCard(K)/h+2*roughCard(K)/N, with every positive length and endpoint condition explicit. No local mean-stability theorem is assumed.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Actual smooth interval averages share a finite reciprocal profile. The actual off-central Dirichlet frequency estimate is proved. The central-frequency short-to-long comparison, the analytic short-average bridge and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.SmoothIntervalProfile.interval_sum",
+        "PaperP1.SmoothIntervalProfile.short_profile",
+        "PaperP1.SmoothIntervalProfile.dyadic_profile",
+        "PaperP1.SmoothIntervalProfile.short_long_bound"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18487 jobs); direct axiom audit passed for 19190 declarations using only propext, Classical.choice and Quot.sound; all 19492 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.34 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
