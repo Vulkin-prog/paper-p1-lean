@@ -4431,3 +4431,7 @@ public import PaperP1.Geometry.IntegerProjectiveProper
 public import PaperP1.Geometry.P3FactorMultiplicationMap
 public import PaperP1.Geometry.P3FactorMultiplicationProper
 public import PaperP1.Geometry.ProjectiveIntegerClosedEquations
+public import PaperP1.Geometry.IntegerCoefficientProjectivePoint
+public import PaperP1.Geometry.IntegerProjectiveEquationEvaluation
+public import PaperP1.Geometry.P3FactorSegreFieldPoint
+public import PaperP1.Geometry.P3ProjectiveFactorLocus

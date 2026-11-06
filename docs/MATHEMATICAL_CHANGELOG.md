@@ -1,6 +1,18 @@
 # Mathematical corrections and improvements
 
-Current checkpoint P1-MATH-0611: actual universal INTEGER projective
+Current checkpoint P1-MATH-0612: actual all-fields projective coefficient
+points and factor-pair image points are constructed. The finite union over ALL
+positive-degree factor partitions is proved closed and defined by one finite
+positive homogeneous INTEGER equation family with literal field evaluation.
+All equations vanish at the zero vector. The reverse implication from image
+membership to geometric factorization remains UNPROVED, so general Noether-form
+existence is not yet established. Canonical T1.7 stays
+`UniformGeometricCountsHigherDegreeInput.companion_T1_7`, conditional on the SAME
+two independent input families only in actual degrees>2. All d<=2 complete
+certificate/auxiliary properties remain unconditional. Coverage stays163 proved,
+2 conditional,2 in_progress out of167; all73 main results proved. No Palomar.
+
+Historical checkpoint P1-MATH-0611: actual universal INTEGER projective
 factor-multiplication morphisms are constructed with proved rank-one relations,
 radical admissibility and properness. Their actual closed images have finite
 homogeneous integer equations. General Noether-form existence is NOT yet
@@ -106,7 +118,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**609 mathematical improvements and two statement-scope corrections are confirmed.**
+**610 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -28231,3 +28243,20 @@ This does NOT yet prove P3UniversalNoetherForms.ExistsForms d. The remaining wor
 Twelve modules add forty-six theorems and twenty definitions, including the explicit quotient grading. Coverage stays163 proved,2 conditional,2 in_progress out of167, all73 main results proved. The separate companionT19.17 input and two literal false originals retain their previous scopes. Original manuscript hashes, Lean v4.36.0-rc2, checking options and allowed axioms are unchanged. Nine existing Mathlib source modules were built selectively for properness/valuative criteria, without a dependency download. All work remains on Ubuntu, with about5.90GiB free. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17541 jobs); direct axiom audit passed for 16984 declarations using only propext, Classical.choice and Quot.sound; all 16782 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 5.90 GiB.
+
+
+## Actual field-valued projective coefficient points and finite positive equations for all projective factor partitions
+
+IntegerCoefficientProjectivePoint constructs the ACTUAL relevant homogeneous prime of every nonzero coefficient vector over EVERY field, as the kernel of its graded ray map into the one-variable polynomial ring. It proves the exact homogeneous evaluation formula, prime/relevance properties and equivalence between homogeneous ideal membership and literal integer-polynomial evaluation on the coefficients. It also proves invariance of the actual integer projective point under every field embedding and every nonzero scalar, with nonzero-vector hypotheses proved to transport.
+
+IntegerProjectiveEquationEvaluation transforms ANY finite homogeneous defining family into the explicit finite family of products of its equations with every coordinate variable. These new equations all have POSITIVE homogeneous degree, have the same simultaneous vanishing locus on nonzero vectors, and vanish at the zero vector over every commutative ring. Consequently EVERY closed subset of actual integer projective coefficient space has a finite positive homogeneous integer family with the exact all-fields evaluated criterion. This handles the affine origin explicitly without assuming the original equations have positive degree.
+
+P3FactorSegreFieldPoint constructs literal nonzero pure-tensor vectors for pairs of nonzero factors. The actual universal minor ideal is contained in the proved graded ray kernel, so the ray map descends to the ACTUAL Segre quotient and its grading. Its prime kernel defines an actual relevant point of the source projective scheme. The target coefficient vector is proved to be the literal coefficient vector of the original product, nonzero, and its graded ray map is exactly the composite with the universal multiplication map. Thus the actual source point maps to the actual product coefficient point, proving membership in the actual projective factor image over every field.
+
+P3ProjectiveFactorLocus defines the finite type of ALL positive degree partitions and the explicit degree transport of coefficient schemes/vectors. Every transported partition multiplication map is proved proper. Their actual finite union is closed; every nonzero product pair gives a point in that union. Applying the preceding construction yields a SINGLE finite positive homogeneous integer equation family in EACH degree, with exact all-fields equivalence between simultaneous evaluation vanishing and membership of the actual coefficient point in this closed factor locus, and all equations vanish at the zero vector.
+
+The converse from projective factor-image membership to factorization over the original algebraic closure still requires proof. This checkpoint proves coefficient points, the product-to-image direction, the finite partition union and the origin-compatible equation construction; it does NOT yet prove P3UniversalNoetherForms.ExistsForms d. The independent higher-degree finite-field point estimate also remains unproved. Canonical companionT1.7 stays UniformGeometricCountsHigherDegreeInput.companion_T1_7 with the SAME two input IDs required only in actual degrees>2. All complete d<=2 certificate/auxiliary properties stay unconditional. No input is marked discharged.
+
+Four modules add thirty-two theorems and fifteen definitions. Coverage stays163 proved,2 conditional,2 in_progress out of167, including all73 main results proved. The separate T19.17 input and the two literal false-original scopes remain unchanged. Manuscript hashes, Lean v4.36.0-rc2, checking options and allowed axioms are unchanged. All work remains on Ubuntu, with about5.89GiB free, without dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17549 jobs); direct axiom audit passed for 17016 declarations using only propext, Classical.choice and Quot.sound; all 16829 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 5.88 GiB.
