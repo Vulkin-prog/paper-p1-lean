@@ -27236,6 +27236,55 @@
         "status": "not_integrated"
       },
       "validation_commit": "8cae556f63034a8013051984950a1cb02100319a"
+    },
+    {
+      "id": "P1-MATH-0567",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The chosen-source and projected hypersurface had not yet been proved geometrically integral in the literal scalar-extension model, which is required before applying the primary determinant-method covering theorem.",
+      "finding": "The actual weighted source and actual chosen Veronese algebra remain domains after every field extension, and the actual bounded hypersurface equation remains irreducible after extension; the uniform integer projection theorem now includes algebraic-closure irreducibility internally.",
+      "proposed_revision": "State geometric integrality through the genuine coefficient-extended coordinate quotients and actual extended injections, then use the strengthened bounded normalized integer projection theorem with its internally proved algebraic-closure irreducibility.",
+      "impact": "Closes the geometric-integrality obligation for the chosen-source hypersurface projection without adding an external geometric-integrality premise or claiming the still-unproved covering bound.",
+      "evidence": [
+        "PaperP1.HomogeneousSplitRadicalIndexEquiv.base_map",
+        "PaperP1.HomogeneousSplitRadicalIndexEquiv.relation_map",
+        "PaperP1.HomogeneousSplitRadicalIndexEquiv.ideal_map",
+        "PaperP1.HomogeneousSplitRadicalIndexEquiv.domain_fin",
+        "PaperP1.HomogeneousSplitRadicalScalarRelations.linear_map",
+        "PaperP1.HomogeneousSplitRadicalScalarRelations.radicand_map",
+        "PaperP1.HomogeneousSplitRadicalScalarRelations.relation_map",
+        "PaperP1.HomogeneousSplitRadicalScalarRelations.ideal_map",
+        "PaperP1.PolynomialQuotientScalarExtension.polynomial_map",
+        "PaperP1.PolynomialQuotientScalarExtension.ideal_map",
+        "PaperP1.PolynomialQuotientScalarExtension.equiv_tmul_mk",
+        "PaperP1.ScalarExtensionInjectiveAlgebraMap.map_linear",
+        "PaperP1.ScalarExtensionInjectiveAlgebraMap.injective",
+        "PaperP1.ScalarExtensionInjectiveAlgebraMap.isDomain",
+        "PaperP1.SourceSurfaceScalarExtensionDomain.weighted_isDomain",
+        "PaperP1.SourceSurfaceScalarExtensionDomain.veronese_isDomain",
+        "PaperP1.SourceSurfaceGeometricImage.irreducible_after_extension",
+        "PaperP1.SourceSurfaceGeometricImage.source_irreducible_after_extension",
+        "PaperP1.HomogeneousSplitRadicalIndexEquiv.polynomialEquiv",
+        "PaperP1.HomogeneousSplitRadicalIndexEquiv.coordinateEquiv",
+        "PaperP1.PolynomialQuotientScalarExtension.equiv",
+        "PaperP1.ScalarExtensionInjectiveAlgebraMap.map",
+        "PaperP1.SourceSurfaceScalarExtensionDomain.equiv"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17097 jobs); direct axiom audit passed for 16371 declarations using only propext, Classical.choice and Quot.sound; all 16012 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.19 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

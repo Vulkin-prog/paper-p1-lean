@@ -1417,6 +1417,10 @@ import PaperP1
 #print axioms PaperP1.HomogeneousSplitRadicalGrading.radical_variable_component
 #print axioms PaperP1.HomogeneousSplitRadicalGrading.weight_ne_zero
 #print axioms PaperP1.HomogeneousSplitRadicalGrading.piece_zero_iff
+#print axioms PaperP1.HomogeneousSplitRadicalIndexEquiv.base_map
+#print axioms PaperP1.HomogeneousSplitRadicalIndexEquiv.relation_map
+#print axioms PaperP1.HomogeneousSplitRadicalIndexEquiv.ideal_map
+#print axioms PaperP1.HomogeneousSplitRadicalIndexEquiv.domain_fin
 #print axioms PaperP1.HomogeneousSplitRadicalPolynomials.threeEquiv_C
 #print axioms PaperP1.HomogeneousSplitRadicalPolynomials.nativeLinear_left_map
 #print axioms PaperP1.HomogeneousSplitRadicalPolynomials.nativeLinear_right_map
@@ -1444,6 +1448,10 @@ import PaperP1
 #print axioms PaperP1.HomogeneousSplitRadicalRelations.rename_radicand_homogeneous
 #print axioms PaperP1.HomogeneousSplitRadicalRelations.relation_homogeneous
 #print axioms PaperP1.HomogeneousSplitRadicalRelations.relationIdeal_homogeneous
+#print axioms PaperP1.HomogeneousSplitRadicalScalarRelations.linear_map
+#print axioms PaperP1.HomogeneousSplitRadicalScalarRelations.radicand_map
+#print axioms PaperP1.HomogeneousSplitRadicalScalarRelations.relation_map
+#print axioms PaperP1.HomogeneousSplitRadicalScalarRelations.ideal_map
 #print axioms PaperP1.HomogeneousSplitRadicalVeronese.degreeImage_eq_piece
 #print axioms PaperP1.HomogeneousSplitRadicalVeronese.veronese_eq_image
 #print axioms PaperP1.HomogeneousSplitRadicalVeronese.weight_cases
@@ -1782,6 +1790,9 @@ import PaperP1
 #print axioms PaperP1.PolynomialPowerMapFinite.variable_integral
 #print axioms PaperP1.PolynomialPowerMapFinite.generated
 #print axioms PaperP1.PolynomialPowerMapFinite.finite
+#print axioms PaperP1.PolynomialQuotientScalarExtension.polynomial_map
+#print axioms PaperP1.PolynomialQuotientScalarExtension.ideal_map
+#print axioms PaperP1.PolynomialQuotientScalarExtension.equiv_tmul_mk
 #print axioms PaperP1.PolynomialResidueDeterminant.polynomial_evaluation_dvd
 #print axioms PaperP1.PolynomialResidueDeterminant.congruent_polynomial_evaluation_dvd
 #print axioms PaperP1.PolynomialResidueDeterminant.same_residue_evaluation_dvd
@@ -2135,6 +2146,9 @@ import PaperP1
 #print axioms PaperP1.ScalarExtendedGradedHilbert.nonzero_domain_section_regular
 #print axioms PaperP1.ScalarExtendedGradedHilbert.section_dimension
 #print axioms PaperP1.ScalarExtendedParameterFiber.finite_fiber
+#print axioms PaperP1.ScalarExtensionInjectiveAlgebraMap.map_linear
+#print axioms PaperP1.ScalarExtensionInjectiveAlgebraMap.injective
+#print axioms PaperP1.ScalarExtensionInjectiveAlgebraMap.isDomain
 #print axioms PaperP1.ScalarIrreducibilityReflection.unit_reflection
 #print axioms PaperP1.ScalarIrreducibilityReflection.irreducible_of_extension
 #print axioms PaperP1.ScalarIrreducibilityReflection.geometric_rational_irreducible
@@ -2235,6 +2249,8 @@ import PaperP1
 #print axioms PaperP1.SourceSurfacePowerParameters.injective
 #print axioms PaperP1.SourceSurfacePowerParameters.finite
 #print axioms PaperP1.SourceSurfacePowerParameters.rank
+#print axioms PaperP1.SourceSurfaceScalarExtensionDomain.weighted_isDomain
+#print axioms PaperP1.SourceSurfaceScalarExtensionDomain.veronese_isDomain
 #print axioms PaperP1.SourceVeroneseAffinePoint.sourceMap_base
 #print axioms PaperP1.SourceVeroneseAffinePoint.curve_image
 #print axioms PaperP1.SourceVeroneseChartBasis.chartBasis_apply
@@ -12699,6 +12715,8 @@ import PaperP1
 #print axioms PaperP1.SourceSurfaceBoundedProjection.coefficientBound_pos
 #print axioms PaperP1.SourceSurfaceBoundedProjection.heightFactor_pos
 #print axioms PaperP1.SourceSurfaceBoundedProjection.exists_projection
+#print axioms PaperP1.SourceSurfaceGeometricImage.irreducible_after_extension
+#print axioms PaperP1.SourceSurfaceGeometricImage.source_irreducible_after_extension
 #print axioms PaperP1.VeroneseHomogeneousPrime.pointEquiv_apply
 #print axioms PaperP1.VeroneseHomogeneousPrime.comap_inverse
 #print axioms PaperP1.VeroneseHomogeneousPrime.exists_prime_over

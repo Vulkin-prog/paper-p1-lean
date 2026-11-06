@@ -1,8 +1,10 @@
 module
 
 public import PaperP1.Arithmetic.SourceIntegerHypersurfaceProjection
+public import PaperP1.Geometry.SourceSurfaceGeometricImage
+public import Mathlib.FieldTheory.IsAlgClosed.AlgebraicClosure
 
-/-! # The actual chosen-source integer populations project to one exact-degree hypersurface at uniform height -/
+/-! # The actual chosen-source integer populations project to one geometrically integral exact-degree hypersurface at uniform height -/
 
 set_option autoImplicit false
 
@@ -26,6 +28,7 @@ theorem exists_projection (s : List (PolynomialRing ℚ)) (c : Fin s.length → 
     (hJ : Pairwise fun i j ↦ Disjoint (J i) (J j)) :
     ∃ (u : GeneratorIndex ℚ (Fin s.length) D → ℕ) (q : MvPolynomial (Fin 4) ℚ),
       (∀ i, u i ≤ coefficientBound s.length D) ∧ Irreducible q ∧
+      Irreducible (map (algebraMap ℚ (AlgebraicClosure ℚ)) q) ∧
       q.IsHomogeneous (2 ^ s.length * D ^ 2) ∧ q.totalDegree = 2 ^ s.length * D ^ 2 ∧
       (finSuccEquiv ℚ 3 q).Monic ∧
       ∀ (H : ℕ) (v : GeneratorIndex ℚ (Fin s.length) D → ℤ),
@@ -41,7 +44,10 @@ theorem exists_projection (s : List (PolynomialRing ℚ)) (c : Fin s.length → 
   obtain ⟨u, q, δ, hu, hideal, hirr, hhom, htotal, hmonic, _hrank, hpartial,
       _hδmem, _hδ0, hconductor, hheight⟩ :=
     SourceSurfaceBoundedProjection.exists_projection s c D hD I J hs hdeg hc hne hI hJ
-  refine ⟨u, q, hu, hirr, hhom, htotal, hmonic, ?_⟩
+  have hgeom := SourceSurfaceGeometricImage.source_irreducible_after_extension
+    (E := AlgebraicClosure ℚ) s.length D c I J hc hne hI hJ
+    (SourceSurfacePowerParameters.parameters s c D hD I J hs) (primitive c D I J u) q hideal hirr.ne_zero
+  refine ⟨u, q, hu, hirr, hgeom, hhom, htotal, hmonic, ?_⟩
   intro H v hv
   have hvalid := SourceIntegerPointEvaluation.valid_of_mem c D I J hdeg hD H v hv
   have hbox := (SourceIntegerPoints.mem_curvePoints _ _ _ _).mp hv |>.1

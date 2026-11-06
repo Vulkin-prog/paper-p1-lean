@@ -4218,3 +4218,9 @@ public import PaperP1.Arithmetic.ActualSourceSurfaceIntegerProjection
 public import PaperP1.Arithmetic.SourceIntegerHypersurfaceProjection
 public import PaperP1.Arithmetic.SourceIntegerPointEvaluation
 public import PaperP1.Geometry.GeneratedAlgebraPointEvaluation
+public import PaperP1.Algebra.HomogeneousSplitRadicalIndexEquiv
+public import PaperP1.Algebra.HomogeneousSplitRadicalScalarRelations
+public import PaperP1.Algebra.PolynomialQuotientScalarExtension
+public import PaperP1.Algebra.ScalarExtensionInjectiveAlgebraMap
+public import PaperP1.Algebra.SourceSurfaceScalarExtensionDomain
+public import PaperP1.Geometry.SourceSurfaceGeometricImage
