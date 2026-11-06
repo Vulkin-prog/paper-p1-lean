@@ -4252,6 +4252,13 @@ import PaperP1
 #print axioms PaperP1.IteratedGraphDerivative.numerator_quotient_hasDerivAt
 #print axioms PaperP1.IteratedGraphDerivative.iterated_evaluation
 #print axioms PaperP1.IteratedGraphDerivative.positive_order
+#print axioms PaperP1.IteratedLogarithmicPhase.function_norm
+#print axioms PaperP1.IteratedLogarithmicPhase.function_nil
+#print axioms PaperP1.IteratedLogarithmicPhase.function_cons
+#print axioms PaperP1.IteratedLogarithmicPhase.hasDerivAt_logarithm
+#print axioms PaperP1.IteratedLogarithmicPhase.hasDerivAt_function
+#print axioms PaperP1.IteratedLogarithmicPhase.derivative_norm
+#print axioms PaperP1.IteratedLogarithmicPhase.hasDerivAt_logarithm_slope
 #print axioms PaperP1.JointExceptionalComponentGridCount.unitBox_isOpen
 #print axioms PaperP1.JointExceptionalComponentGridCount.openRegion_isOpen
 #print axioms PaperP1.JointExceptionalComponentGridCount.exists_first_component_count
