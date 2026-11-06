@@ -34489,6 +34489,36 @@
         "status": "not_integrated"
       },
       "validation_commit": "6d0fb7bab523a7bae3f8d0ebdcb399efd78f2f01"
+    },
+    {
+      "id": "P1-MATH-0743",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "Choosing a real differencing length without proving its actual integer rounding and the very-large-frequency regime would leave a gap in the explicit estimate.",
+      "finding": "The literal integer choice min(N,ceil(N/sqrt(abs(t)))) has its positivity, upper cutoff and both real comparison bounds proved, including every rounding case. Inserting it into the actual parameter estimate gives norm(sum_{N<=n<2N}n^(-it))^2 <=128*(N*sqrt(abs(t))+N^2/sqrt(abs(t)))*(1+log(N)) for EVERY N>0 and abs(t)>=1. Frequencies beyond N^2 are handled by the actual trivial sum bound. Three theorems and one definition prove this actual frequency bound without an external correlation theorem.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Actual logarithmic exponential sum square bound with explicit square-root frequency dependence. The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.LogarithmicSquareRootBound.choice_bounds",
+        "PaperP1.LogarithmicSquareRootBound.trivial_bound",
+        "PaperP1.LogarithmicSquareRootBound.square_bound",
+        "PaperP1.LogarithmicSquareRootBound.choice"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18053 jobs); direct axiom audit passed for 18355 declarations using only propext, Classical.choice and Quot.sound; all 18494 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.16 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

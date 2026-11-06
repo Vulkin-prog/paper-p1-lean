@@ -1,6 +1,15 @@
 # Multiquadratic split radicands: exact square-class independence
 
-Current checkpoint P1-MATH-0742: Actual logarithmic differencing bound
+Current checkpoint P1-MATH-0743: Actual logarithmic exponential sum
+square bound with explicit square-root frequency dependence. The actual
+Ramare main-term frequency bounds and complete logarithmic short-average
+concentration remain unproved. T19.17 conditional; original T1.7
+unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167;
+all 73 main proved. Sources, false-scope corrections, compiler and
+axioms unchanged. About 53.3 GiB free on Ubuntu. No dependency download
+or Palomar registration.
+
+Historical checkpoint P1-MATH-0742: Actual logarithmic differencing bound
 with a free integer parameter. The actual Ramare main-term frequency
 bounds and complete logarithmic short-average concentration remain
 unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164
@@ -25203,3 +25212,12 @@ The actual shifted logarithmic correlation is bounded by budget(N,H,t)/d for eve
 The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.3 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18051 jobs); direct axiom audit passed for 18352 declarations using only propext, Classical.choice and Quot.sound; all 18490 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.18 GiB.
+
+
+## Actual logarithmic exponential sum square bound with explicit square-root frequency dependence
+
+The literal integer choice min(N,ceil(N/sqrt(abs(t)))) has its positivity, upper cutoff and both real comparison bounds proved, including every rounding case. Inserting it into the actual parameter estimate gives norm(sum_{N<=n<2N}n^(-it))^2 <=128*(N*sqrt(abs(t))+N^2/sqrt(abs(t)))*(1+log(N)) for EVERY N>0 and abs(t)>=1. Frequencies beyond N^2 are handled by the actual trivial sum bound. Three theorems and one definition prove this actual frequency bound without an external correlation theorem.
+
+The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.3 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18053 jobs); direct axiom audit passed for 18355 declarations using only propext, Classical.choice and Quot.sound; all 18494 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.16 GiB.
