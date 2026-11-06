@@ -39520,6 +39520,35 @@
         "status": "not_integrated"
       },
       "validation_commit": "83104df73e2812d662844f7bdf11d8b72ee93119"
+    },
+    {
+      "id": "P1-MATH-0903",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The smooth Selberg majorant requires arbitrary actual finite weight variation, beyond the previously proved monotone reciprocal Abel bound.",
+      "finding": "Three theorems prove the exact finite Abel norm bound for arbitrary complex weights: norm(sum a_i*w_i)<=D*(norm w_L+sum norm(w_k-w_(k+1))) when ALL actual prefix norms are <=D. The real absolute-variation version and the concrete per-step difference bound D*(M+L*V) are proved as well. The necessary nonnegativity of D is derived from the actual empty prefix. No weight monotonicity or hypothetical cancellation is assumed.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Finite Abel summation controls actual complex weights by their discrete variation. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.FiniteAbelVariation.norm_bound",
+        "PaperP1.FiniteAbelVariation.real_norm_bound",
+        "PaperP1.FiniteAbelVariation.difference_bound"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18373 jobs); direct axiom audit passed for 18957 declarations using only propext, Classical.choice and Quot.sound; all 19204 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.41 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

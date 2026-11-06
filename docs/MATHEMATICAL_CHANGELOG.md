@@ -1,6 +1,15 @@
 # Mathematical corrections and improvements
 
-Current checkpoint P1-MATH-0902: Fixed-power final prime bands can be
+Current checkpoint P1-MATH-0903: Finite Abel summation controls actual
+complex weights by their discrete variation. The triple-large prime
+frequency contribution, the central-frequency mean comparison and
+complete logarithmic short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 53.41 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0902: Fixed-power final prime bands can be
 chosen after the desired sieve precision. The triple-large prime
 frequency contribution, the central-frequency mean comparison and
 complete logarithmic short-average concentration remain unproved. T19.17
@@ -2887,7 +2896,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**900 mathematical improvements and two statement-scope corrections are confirmed.**
+**901 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -34095,3 +34104,12 @@ Three theorems choose a=b*exp(-(M+1)) with 0<a<b and M<log(b/a), then show: for 
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.49 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18371 jobs); direct axiom audit passed for 18954 declarations using only propext, Classical.choice and Quot.sound; all 19201 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.43 GiB.
+
+
+## Finite Abel summation controls actual complex weights by their discrete variation
+
+Three theorems prove the exact finite Abel norm bound for arbitrary complex weights: norm(sum a_i*w_i)<=D*(norm w_L+sum norm(w_k-w_(k+1))) when ALL actual prefix norms are <=D. The real absolute-variation version and the concrete per-step difference bound D*(M+L*V) are proved as well. The necessary nonnegativity of D is derived from the actual empty prefix. No weight monotonicity or hypothetical cancellation is assumed.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.41 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18373 jobs); direct axiom audit passed for 18957 declarations using only propext, Classical.choice and Quot.sound; all 19204 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.41 GiB.

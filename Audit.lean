@@ -3976,6 +3976,9 @@ import PaperP1
 #print axioms PaperP1.FiniteAbelNorm.telescoping
 #print axioms PaperP1.FiniteAbelNorm.norm_bound
 #print axioms PaperP1.FiniteAbelNorm.reciprocal_norm_bound
+#print axioms PaperP1.FiniteAbelVariation.norm_bound
+#print axioms PaperP1.FiniteAbelVariation.real_norm_bound
+#print axioms PaperP1.FiniteAbelVariation.difference_bound
 #print axioms PaperP1.FiniteCRTTails.positive_power_tail
 #print axioms PaperP1.FiniteCRTTails.positive_product_power_tail
 #print axioms PaperP1.FiniteCRTTails.shifted_cube
