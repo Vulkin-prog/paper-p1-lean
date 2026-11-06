@@ -1,6 +1,19 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0658: LARGE integer branch shifts
+Current checkpoint P1-MATH-0659: the FULL actual INTEGER-source
+genuine-degree cover is UNCONDITIONAL for ALL shifts and ALL H>=1.
+Its constants precede every coefficient, branch shift, height, point
+subset and bounded source size. Genuine-degree curve and exception
+exponents, actual source curves and Hilbert degrees are retained.
+No external P3 estimate or branch-height condition is assumed.
+Final manuscript system/ordinary integer-family transfers and
+exact THREE-family T1.7 assembly remain UNPROVED. Canonical T1.7
+retains ONLY its prior P3 input at the original degrees and caps.
+No unrestricted rational-source theorem is asserted. Coverage stays
+163 proved, 2 conditional, 2 in_progress out of 167; all 73 main
+results proved. No Palomar registration.
+
+Historical checkpoint P1-MATH-0658: LARGE integer branch shifts
 force ALL actual bounded source points onto one nonzero radical
 section, covered by at most d actual source curves of degree<=d.
 BOUNDED shifts have the INTERNAL projected determinant curve and
@@ -794,7 +807,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records656 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records657 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -913,7 +926,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **17595 audited theorem/lemma declarations**. This
+- The project currently has **17600 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -30300,3 +30313,16 @@ OriginalSourceProjectedCover assembles the internal source-specific global auxil
 Two modules add three theorems and no definitions. Each side of the shift-size case split is now internally covered, at the stated actual-source or actual-image level. The source projection pullback, uniform branch-card bound, combination of these cases and final exact three-family application remain unfinished. This does not assert an unrestricted P3 theorem or a rational-coefficient exact source-cover property. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families/caps. Coverage remains 163 proved, 2 conditional, 2 in_progress out of 167; all 73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Ubuntu retains about 54.8 GiB; no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17823 jobs); direct axiom audit passed for 17595 declarations using only propext, Classical.choice and Quot.sound; all 17556 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.75 GiB.
+
+
+## Unconditional genuine-degree uniform covers for every actual integer-coefficient source at every height
+
+IntegerExactSourceSurfaceCover states the exact genuine-degree covering property for the literal INTEGER source coefficients used by the paper. The actual source curves, chosen embedding kernel, normalized integer point sets, quotient Hilbert degrees and point memberships are retained. It proves monotonicity in the degree cap and real covering constant. This property is distinct from the older arbitrary-RATIONAL-coefficient exact-cover property; no rational-coefficient estimate is asserted.
+
+OriginalIntegerSourceCover proves that the actual union of integer branch supports has cardinality at most k*(2*D), using only the original degree constraints. For bounded shifts it pulls the internal original projected determinant cover through the SAME actual bounded source projection, including its fixed exceptional curves, all actual source curves, degree budgets and fixed height inflation. The cover constants precede ALL integer source coefficients, shifts, projected equations, point heights and point subsets.
+
+The theorem then splits at the exact threshold |a|=2*H^2. The bounded case uses that pulled-back determinant cover; the large case uses the proved actual nonzero radical-section cover with EMPTY exceptional set. This removes EVERY branch-height restriction, for ALL H>=1 and ALL original integer branch shifts. The resulting actual source curve count is O(H^(1/sqrt(2^k*D^2)+delta)) and exceptional count is O(H^(2/sqrt(2^k*D^2)+delta)), with bounded actual source curve degrees. Finite aggregation chooses ONE cap and constant before every source size k<=kmax. The case D=0 is handled without asserting a positive-degree source theorem. Two modules add five theorems and two definitions.
+
+This is an UNCONDITIONAL genuine-degree integer-source covering theorem: no external P3 estimate, auxiliary equation, field count or surface cover remains in its hypotheses. The final conversion to the manuscript system cover, the two ordinary integer-source families, and the exact original three-family T1.7 assembly remain unfinished. Canonical T1.7 therefore stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families/caps. The unrelated unrestricted P3 and arbitrary rational-source properties remain unproved. Coverage remains 163 proved, 2 conditional, 2 in_progress out of 167; all 73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Ubuntu retains about 54.7 GiB; no dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17827 jobs); direct axiom audit passed for 17600 declarations using only propext, Classical.choice and Quot.sound; all 17563 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.72 GiB.

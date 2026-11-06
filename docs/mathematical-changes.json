@@ -31287,6 +31287,39 @@
         "status": "not_integrated"
       },
       "validation_commit": "227638d9bf79deaf6025a320edd95d8ee3ebf80c"
+    },
+    {
+      "id": "P1-MATH-0659",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "Even the original integer-source curve/exception cover still depended on a missing global P3 field estimate, and the explicit branch-height restriction had not been removed.",
+      "finding": "The exact actual support-card bound, bounded projected-cover pullback and nonzero radical-section cover combine to prove the genuine-degree source cover unconditionally for ALL integer coefficients, ALL branch shifts and ALL heights. Its constants are uniform before all these data and all source sizes up to the fixed cap.",
+      "proposed_revision": "Replace the original integer-source appeal to the external P3 estimate by this internal determinant/section proof. Complete the manuscript system and ordinary integer-family transfers with their original exact degree caps before changing the canonical T1.7 status.",
+      "impact": "Discharges the FULL genuine-degree integer-source covering theorem with no extra height or field-estimate input. The final manuscript system/ordinary transfers and canonical three-family assembly remain unfinished.",
+      "evidence": [
+        "PaperP1.IntegerExactSourceSurfaceCover.CoverAtSize.mono",
+        "PaperP1.OriginalIntegerSourceCover.support_card_bound",
+        "PaperP1.OriginalIntegerSourceCover.bounded_shifts_cover",
+        "PaperP1.OriginalIntegerSourceCover.cover_at_size",
+        "PaperP1.OriginalIntegerSourceCover.uniform_cover",
+        "PaperP1.IntegerExactSourceSurfaceCover.CoverAtSize",
+        "PaperP1.IntegerExactSourceSurfaceCover.UniformCover"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17827 jobs); direct axiom audit passed for 17600 declarations using only propext, Classical.choice and Quot.sound; all 17563 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.72 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

@@ -5968,6 +5968,7 @@ import PaperP1
 #print axioms PaperP1.IntegerCurveRationalization.grid_coefficientMap
 #print axioms PaperP1.IntegerCurveRationalization.rational_irreducible
 #print axioms PaperP1.IntegerCurveRationalization.integer_input_of_field_input
+#print axioms PaperP1.IntegerExactSourceSurfaceCover.CoverAtSize.mono
 #print axioms PaperP1.IntegerFactorProjectiveCurve.reconstruction
 #print axioms PaperP1.IntegerFactorProjectiveCurve.coefficients_nonzero
 #print axioms PaperP1.IntegerFactorProjectiveCurve.coefficient_height
@@ -6641,6 +6642,10 @@ import PaperP1
 #print axioms PaperP1.OrdinarySourcePointTransport.source_curve_chart_not_mem
 #print axioms PaperP1.OrdinarySourcePointTransport.ordinary_image_point
 #print axioms PaperP1.OrdinarySourcePointTransport.points_image_card
+#print axioms PaperP1.OriginalIntegerSourceCover.support_card_bound
+#print axioms PaperP1.OriginalIntegerSourceCover.bounded_shifts_cover
+#print axioms PaperP1.OriginalIntegerSourceCover.cover_at_size
+#print axioms PaperP1.OriginalIntegerSourceCover.uniform_cover
 #print axioms PaperP1.OriginalProjectedModelPointEstimate.uniform_upper_bound
 #print axioms PaperP1.OriginalProjectedModelPointEstimate.uniform_class_upper_bound
 #print axioms PaperP1.OriginalSourceFiniteFieldBudget.bounded_uniform_class_count

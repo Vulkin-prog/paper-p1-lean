@@ -4569,3 +4569,5 @@ public import PaperP1.Arithmetic.IntegerBranchShiftHeight
 public import PaperP1.Arithmetic.SourceNativeIntegerPoint
 public import PaperP1.Arithmetic.LargeShiftSourceSectionCover
 public import PaperP1.Arithmetic.OriginalSourceProjectedCover
+public import PaperP1.Arithmetic.IntegerExactSourceSurfaceCover
+public import PaperP1.Arithmetic.OriginalIntegerSourceCover
