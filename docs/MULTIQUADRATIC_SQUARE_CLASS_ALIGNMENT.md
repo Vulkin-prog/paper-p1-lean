@@ -1,6 +1,15 @@
 # Multiquadratic split radicands: exact square-class independence
 
-Current checkpoint P1-MATH-0911: Actual finite lognormal sums have an
+Current checkpoint P1-MATH-0912: The actual lower lognormal integer tail
+has a proved reciprocal-scale bound. The triple-large prime frequency
+contribution, the central-frequency mean comparison and complete
+logarithmic short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 53.29 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0911: Actual finite lognormal sums have an
 endpoint-independent quadrature bound. The triple-large prime frequency
 contribution, the central-frequency mean comparison and complete
 logarithmic short-average concentration remain unproved. T19.17
@@ -28254,3 +28263,12 @@ Two theorems prove the actual error between the literal sum over Ico N M and its
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.29 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18389 jobs); direct axiom audit passed for 18996 declarations using only propext, Classical.choice and Quot.sound; all 19249 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.27 GiB.
+
+
+## The actual lower lognormal integer tail has a proved reciprocal-scale bound
+
+Three theorems prove the actual opposite polynomial tail w_A(x)<=exp(4)*x^3/A^3 for positive A,x, the literal positive-integer head norm<=exp(4)*N^4/A^3, and at the exact lower cutoff ceil(sqrt A)-1 the genuine bound <=exp(4)/A. Every positive integer and ceiling error is retained. No small-index tail is omitted.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.29 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18391 jobs); direct axiom audit passed for 18999 declarations using only propext, Classical.choice and Quot.sound; all 19252 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.25 GiB.

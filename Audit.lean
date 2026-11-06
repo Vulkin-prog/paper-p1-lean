@@ -4512,6 +4512,9 @@ import PaperP1
 #print axioms PaperP1.LognormalBlockCancellation.uniform_bound
 #print axioms PaperP1.LognormalFiniteQuadrature.finite_sum_integral_error
 #print axioms PaperP1.LognormalFiniteQuadrature.sqrt_cutoff_error
+#print axioms PaperP1.LognormalLowerTail.weight_bound
+#print axioms PaperP1.LognormalLowerTail.integer_head_bound
+#print axioms PaperP1.LognormalLowerTail.sqrt_head_bound
 #print axioms PaperP1.LognormalMellinIntegral.phase_neg_swap
 #print axioms PaperP1.LognormalMellinIntegral.kernel_integral
 #print axioms PaperP1.LognormalMellinIntegral.phase_log_identity
