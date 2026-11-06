@@ -27738,6 +27738,46 @@
         "status": "not_integrated"
       },
       "validation_commit": "9fe413c17f299e9148bfd2fad6607871efd7a82b"
+    },
+    {
+      "id": "P1-MATH-0580",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The ordinary image-degree construction needed an actual coordinate map into the chosen weighted source, exact compatibility with the radical equations, and exact homogeneous composition identities to recover the source curve prime.",
+      "finding": "The actual ordinary coordinates Xj*Z^(D-1),Z^D and original radical variables define a homogeneous polynomial projection; both compositions are exact homogeneous Z-power scalings, and each ordinary relation maps to the explicitly proved Z^(D*(t-2)) weighted relation factor.",
+      "proposed_revision": "State the literal coordinate substitutions, their weighted and ordinary homogeneous composition formulas, and the actual radical-equation factor before invoking chart inversion, prime recovery or curve-height transfer.",
+      "impact": "Supplies the exact algebraic coordinate compatibility required for the ordinary image and degree construction, with every degree and relation factor proved.",
+      "evidence": [
+        "PaperP1.OrdinaryWeightedProjection.map_base",
+        "PaperP1.OrdinaryWeightedProjection.map_radical",
+        "PaperP1.OrdinaryWeightedProjection.map_Z",
+        "PaperP1.OrdinaryWeightedProjection.generator_homogeneous",
+        "PaperP1.OrdinaryWeightedProjection.map_homogeneous",
+        "PaperP1.OrdinaryWeightedProjectionComposition.ordinary_composition",
+        "PaperP1.OrdinaryWeightedProjectionComposition.weighted_composition",
+        "PaperP1.OrdinaryWeightedProjectionComposition.ordinary_homogeneous",
+        "PaperP1.OrdinaryWeightedProjectionComposition.weighted_homogeneous",
+        "PaperP1.OrdinaryWeightedProjectionComposition.map_relation",
+        "PaperP1.WeightedHomogeneousEvaluation.aeval_scale",
+        "PaperP1.WeightedHomogeneousEvaluation.aeval_homogeneous_scale",
+        "PaperP1.OrdinaryWeightedProjection.generator",
+        "PaperP1.OrdinaryWeightedProjection.map"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17183 jobs); direct axiom audit passed for 16481 declarations using only propext, Classical.choice and Quot.sound; all 16154 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.32 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

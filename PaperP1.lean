@@ -4262,3 +4262,6 @@ public import PaperP1.Algebra.LinearHilbertParameterDependence
 public import PaperP1.Algebra.TernaryPolynomialHilbert
 public import PaperP1.Algebra.LinearCoordinateCurveImageDegree
 public import PaperP1.Algebra.TwoParameterIntegralHilbertSlope
+public import PaperP1.Algebra.OrdinaryWeightedProjection
+public import PaperP1.Algebra.OrdinaryWeightedProjectionComposition
+public import PaperP1.Algebra.WeightedHomogeneousEvaluation

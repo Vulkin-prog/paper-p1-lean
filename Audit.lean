@@ -1725,6 +1725,16 @@ import PaperP1
 #print axioms PaperP1.OrdinaryWeightedHomogenization.homogeneous_dilation
 #print axioms PaperP1.OrdinaryWeightedHomogenization.map_comp_map
 #print axioms PaperP1.OrdinaryWeightedHomogenization.map_eq_at_one
+#print axioms PaperP1.OrdinaryWeightedProjection.map_base
+#print axioms PaperP1.OrdinaryWeightedProjection.map_radical
+#print axioms PaperP1.OrdinaryWeightedProjection.map_Z
+#print axioms PaperP1.OrdinaryWeightedProjection.generator_homogeneous
+#print axioms PaperP1.OrdinaryWeightedProjection.map_homogeneous
+#print axioms PaperP1.OrdinaryWeightedProjectionComposition.ordinary_composition
+#print axioms PaperP1.OrdinaryWeightedProjectionComposition.weighted_composition
+#print axioms PaperP1.OrdinaryWeightedProjectionComposition.ordinary_homogeneous
+#print axioms PaperP1.OrdinaryWeightedProjectionComposition.weighted_homogeneous
+#print axioms PaperP1.OrdinaryWeightedProjectionComposition.map_relation
 #print axioms PaperP1.PairProductComparison.exact_difference
 #print axioms PaperP1.PairProductComparison.absolute_bound
 #print axioms PaperP1.PairwiseEqualSpan.exists_line
@@ -2604,6 +2614,8 @@ import PaperP1
 #print axioms PaperP1.WeightedEvaluationDeterminant.determinant_injective_expansion
 #print axioms PaperP1.WeightedEvaluationDeterminant.row_weight_bound
 #print axioms PaperP1.WeightedEvaluationDeterminant.weighted_bound
+#print axioms PaperP1.WeightedHomogeneousEvaluation.aeval_scale
+#print axioms PaperP1.WeightedHomogeneousEvaluation.aeval_homogeneous_scale
 #print axioms PaperP1.WeightedOrdinaryAffineIdeal.relation_eq_at_one
 #print axioms PaperP1.WeightedOrdinaryAffineIdeal.substitution_eq_at_one
 #print axioms PaperP1.WeightedOrdinaryAffineIdeal.ideals_sup_chart

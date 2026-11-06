@@ -149,7 +149,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records577 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records578 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -268,7 +268,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **16469 audited theorem/lemma declarations**. This
+- The project currently has **16481 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -28536,3 +28536,18 @@ The natural coefficient can be zero when a coordinate image collapses the curve.
 CompanionT1.7 keeps its exact P3 input and its two ordinary surface-cover inputs and remains conditional. The primary P3 determinant-method theorem is still unproved. All73 main results remain proved; coverage remains163 proved,2 conditional,2 in_progress out of167. Two modules add four theorems and no definitions. Original source hashes, pinned compiler, permitted axioms and heartbeat settings are unchanged; no dependency download or Palomar submission. Ubuntu free space is about6.34GiB.
 
 Verified under Lean v4.36.0-rc2: full build passed (17177 jobs); direct axiom audit passed for 16469 declarations using only propext, Classical.choice and Quot.sound; all 16140 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.33 GiB.
+
+
+## Exact ordinary-to-weighted polynomial projection, homogeneous compositions and actual radical-equation factors
+
+WeightedHomogeneousEvaluation proves the exact scaling law for weighted homogeneous polynomial evaluation in an arbitrary commutative coefficient algebra. Scaling the ith evaluated coordinate by t^(weight i) multiplies a genuine weighted-degree-n polynomial by exactly t^n. The proof expands actual homogeneous monomials and their weighted exponent sums. Its ordinary homogeneous specialization applies to actual algebra evaluations, not only scalar evaluation in the coefficient field.
+
+OrdinaryWeightedProjection constructs the actual polynomial-coordinate substitution from ordinary coordinates to the weighted source: each native coordinate Xj maps to Xj*Z^(D-1), and each radical coordinate maps to the original weighted radical variable. In particular Z maps to exactly Z^D for D>0. Every image generator is genuinely weighted homogeneous of degree D. An ordinary homogeneous polynomial of degree n therefore maps to a genuinely weighted homogeneous polynomial of degree n*D. These are the literal polynomial maps and the actual existing source weights.
+
+OrdinaryWeightedProjectionComposition compares this map with the existing weighted-to-ordinary substitution. Their ordinary composition is exactly the substitution multiplying every ordinary variable by Z^(D-1). Their weighted composition multiplies each weighted variable of weight w by (Z^(D-1))^w. Consequently an ordinary degree-n polynomial and a weighted degree-n polynomial each compose to exactly Z^((D-1)*n) times that original polynomial, in their respective gradings. The power and its degree dependence are conclusions of the actual algebra homomorphism identities.
+
+For a radical equation with t=|I|+|J| and2<=t<=2D, the actual ordinary radical relation maps to exactly Z^(D*(t-2)) times the actual original weighted radical relation. This follows from the previously proved reverse substitution formula, the exact weighted homogeneous composition, the proved exponent identity and cancellation of a nonzero power of the actual polynomial coordinate Z. Thus the intended ordinary equations have a proved actual polynomial pullback into the original weighted relation ideal. The coordinate substitutions, homogeneity and relation factors are not separately supplied correspondences.
+
+These identities are the next input for constructing the actual ordinary curve image, recovering its induced original source prime, proving its degree is positive, and transferring its height-one data. The normalized integer-point transport and the full ordinary covering conversion remain separate. CompanionT1.7 retains its exact P3 input and two ordinary surface-cover hypotheses and remains conditional. The primary P3 theorem itself remains unproved. All73 main results remain proved; coverage remains163 proved,2 conditional,2 in_progress out of167. Three modules add twelve theorems and two definitions. Original manuscript hashes, pinned compiler, permitted axioms and heartbeat settings are unchanged; no dependency download or Palomar submission. Ubuntu free space is about6.32GiB.
+
+Verified under Lean v4.36.0-rc2: full build passed (17183 jobs); direct axiom audit passed for 16481 declarations using only propext, Classical.choice and Quot.sound; all 16154 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.32 GiB.
