@@ -3290,6 +3290,11 @@ import PaperP1
 #print axioms PaperP1.ActualIntermediateFrequencyRegion.rectangle_bound
 #print axioms PaperP1.ActualLocalUnitMapGridCount.exists_at_nonexceptional
 #print axioms PaperP1.ActualLocalUnitMapGridCount.exists_control_set_and_maps
+#print axioms PaperP1.ActualLogarithmicPower.constant_four_le
+#print axioms PaperP1.ActualLogarithmicPower.decay_pos
+#print axioms PaperP1.ActualLogarithmicPower.envelope_bound
+#print axioms PaperP1.ActualLogarithmicPower.uniform_bound
+#print axioms PaperP1.ActualLogarithmicPower.relative_bound
 #print axioms PaperP1.ActualMixedPairDecay.region_measurable
 #print axioms PaperP1.ActualMixedPairDecay.term_continuous
 #print axioms PaperP1.ActualMixedPairDecay.sum_terms
