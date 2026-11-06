@@ -1,6 +1,16 @@
 # Mathematical corrections and improvements
 
-Current checkpoint P1-MATH-0779: Actual full dyadic Dirichlet
+Current checkpoint P1-MATH-0780: Actual constant-coefficient Dirichlet
+polynomial has a uniform central frequency lower bound. The
+complementary bad-prime frequency contribution, the central-frequency
+mean subtraction and complete logarithmic short-average concentration
+remain unproved. T19.17 conditional; original T1.7 unconditional.
+Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main
+proved. Sources, false-scope corrections, compiler and axioms unchanged.
+About 52.9 GiB free on Ubuntu. No dependency download or Palomar
+registration.
+
+Historical checkpoint P1-MATH-0779: Actual full dyadic Dirichlet
 contribution is uniformly small on the first-band good frequency set.
 The actual Ramare main-term frequency bounds and complete logarithmic
 short-average concentration remain unproved. T19.17 conditional;
@@ -1764,7 +1774,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**777 mathematical improvements and two statement-scope corrections are confirmed.**
+**778 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -31865,3 +31875,12 @@ For every epsilon>0 one FIXED H>=2 and N0>=1 precede every N>=N0, every complete
 The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18125 jobs); direct axiom audit passed for 18499 declarations using only propext, Classical.choice and Quot.sound; all 18671 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.51 GiB.
+
+
+## Actual constant-coefficient Dirichlet polynomial has a uniform central frequency lower bound
+
+For EVERY N>0 and |t|<=1/2 the ACTUAL dyadic Dirichlet polynomial with coefficient f(n)=1 has norm>=1/4. Exact centering removes the common logarithmic phase, every remaining phase has cosine>=1/2, and the actual reciprocal mass of [N,2*N) is >=1/2. Three theorems prove the real phase identity, reciprocal lower bound and literal uniform norm obstruction. This is an INTERNAL analytic scope check: unrestricted vanishing L2 of the full polynomial, without excluding central frequencies or subtracting the long mean, cannot be the required target. No error in the source paper is asserted.
+
+The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18127 jobs); direct axiom audit passed for 18502 declarations using only propext, Classical.choice and Quot.sound; all 18674 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.49 GiB.

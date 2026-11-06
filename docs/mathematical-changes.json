@@ -35669,6 +35669,35 @@
         "status": "not_integrated"
       },
       "validation_commit": "92aee0666908c595a18c598343d7333cfb76fced"
+    },
+    {
+      "id": "P1-MATH-0780",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "An attempted internal strengthening to unrestricted vanishing of the full Dirichlet polynomial must be checked against the completely multiplicative constant function f=1.",
+      "finding": "For EVERY N>0 and |t|<=1/2 the ACTUAL dyadic Dirichlet polynomial with coefficient f(n)=1 has norm>=1/4. Exact centering removes the common logarithmic phase, every remaining phase has cosine>=1/2, and the actual reciprocal mass of [N,2*N) is >=1/2. Three theorems prove the real phase identity, reciprocal lower bound and literal uniform norm obstruction. This is an INTERNAL analytic scope check: unrestricted vanishing L2 of the full polynomial, without excluding central frequencies or subtracting the long mean, cannot be the required target. No error in the source paper is asserted.",
+      "proposed_revision": "Retain the actual shortMean-minus-longMean objective. Exclude and separately treat the central frequency band, or carry the long-mean cancellation explicitly. Do not claim that the full uncentered Dirichlet square integral tends to zero.",
+      "impact": "Actual constant-coefficient Dirichlet polynomial has a uniform central frequency lower bound. The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.CentralDirichletLowerBound.phase_re",
+        "PaperP1.CentralDirichletLowerBound.reciprocal_mass_lower",
+        "PaperP1.CentralDirichletLowerBound.central_norm_lower"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18127 jobs); direct axiom audit passed for 18502 declarations using only propext, Classical.choice and Quot.sound; all 18674 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.49 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

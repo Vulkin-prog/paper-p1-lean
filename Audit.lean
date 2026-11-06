@@ -3443,6 +3443,9 @@ import PaperP1
 #print axioms PaperP1.CenteredLogarithmicSampling.shift_norm
 #print axioms PaperP1.CenteredLogarithmicSampling.logarithmic_bandwidth
 #print axioms PaperP1.CenteredLogarithmicSampling.integer_band_sampled_mean_square
+#print axioms PaperP1.CentralDirichletLowerBound.phase_re
+#print axioms PaperP1.CentralDirichletLowerBound.reciprocal_mass_lower
+#print axioms PaperP1.CentralDirichletLowerBound.central_norm_lower
 #print axioms PaperP1.CleanPairReciprocalLower.factor_identity
 #print axioms PaperP1.CleanPairReciprocalLower.substitute_lower
 #print axioms PaperP1.ClippedPowerSum.clipped_nonneg
