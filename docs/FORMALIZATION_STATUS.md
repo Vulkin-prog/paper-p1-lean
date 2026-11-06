@@ -1,6 +1,20 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0649: the ACTUAL projected image has
+Current checkpoint P1-MATH-0650: the ACTUAL image kernel is exactly
+(P), its root-algebra quotient is explicitly equivalent to the image,
+and ALL literal affine hypersurface solutions are in a proved exact
+equivalence with ALL image points. Their cardinalities are equal.
+The literal hypersurface has the internal UNIFORM (1+eta)*p^2 bound
+under the actual monic full-degree equation conditions. Kernel and
+point-lifting properties are not inputs. Verification for the ORIGINAL
+reduced homogeneous integer model, its monic normalization and effective
+prime/cover assembly remain UNPROVED. The unrestricted P3 input is
+unchanged. Canonical T1.7 retains ONLY its prior P3 input in degrees>2
+at the original families and caps. Coverage stays 163 proved,
+2 conditional, 2 in_progress out of 167; all 73 main results proved.
+No Palomar registration.
+
+Historical checkpoint P1-MATH-0649: the ACTUAL projected image has
 N_image<=N_source+2*d^3*p and UNIFORM N_image<=(1+eta)*p^2 at
 good branch primes. The cutoff precedes all primes, source coefficients,
 bounded branch supports, actual source elements and polynomials. The
@@ -676,7 +690,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records647 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records648 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -795,7 +809,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **17513 audited theorem/lemma declarations**. This
+- The project currently has **17524 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -30069,3 +30083,16 @@ The uniform theorem puts the cutoff BEFORE the prime, all source coefficients, b
 One module adds two theorems and no definitions. This discharges the actual source-specific affine image point estimate from literal polynomial conditions. It does NOT discharge the general P3 finite-field estimate for arbitrary surfaces, nor the ORIGINAL source-family cover. Exact hypersurface-kernel/point identification, original reduced integer-model normalization and controlled-prime irreducibility, and effective original-family arithmetic assembly remain unfinished. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families/caps. Coverage remains 163 proved, 2 conditional, 2 in_progress out of 167; all 73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Work stays on Ubuntu with about 54.9 GiB available and no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17785 jobs); direct axiom audit passed for 17513 declarations using only propext, Classical.choice and Quot.sound; all 17453 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.90 GiB.
+
+
+## The literal affine hypersurface and projected image have exactly the same points and uniform bound
+
+AffineProjectionHypersurfacePoints proves that a literal polynomial Q over the actual ordered parameter ring vanishes at the source coordinate y if and only if the actual monic irreducible equation P divides Q. The proof uses exact relation transfer, Gauss divisibility and the generic minimal polynomial; it assumes no kernel identity. Both the source evaluation kernel and the surjective three-coordinate image evaluation kernel are exactly the principal ideal generated by P. A concrete F-algebra equivalence AdjoinRoot(P)~=actual image is constructed with exact formulas on every polynomial, root and coefficient.
+
+Every literal solution (t,w) of P(t,w)=0 yields an actual scalar-preserving image point with those exact coordinate values. The converse comes from literal evaluation. These maps give a concrete equivalence between ALL hypersurface solutions and ALL actual image points, and exact equality of their cardinalities. No point-lifting, kernel, quotient-identification or point-count premise is assumed. The kernel and equivalence require only monic irreducibility and the actual source relation, not a full-degree assumption.
+
+ActualAffineHypersurfacePointCount transfers the already proved source-specific actual-image estimate through this exact equivalence. The literal hypersurface solution count is at most N_source+2*d^3*p and uniformly at most (1+eta)*p^2. Its cutoff precedes all primes, coefficients, bounded branch supports, source elements and polynomials. The uniform bound additionally uses the actual full-degree condition.
+
+Two modules add eleven theorems and five definitions. This discharges exact affine hypersurface-kernel, quotient, exhaustive field-point identification and the actual hypersurface point-bound assembly. Verification for the ORIGINAL reduced homogeneous integer equation, monic normalization, controlled-prime irreducibility and effective original-family cover assembly remain unfinished. The unrestricted P3 input is unchanged. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families/caps. Coverage remains 163 proved, 2 conditional, 2 in_progress out of 167; all 73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Work stays on Ubuntu with about 54.9 GiB available and no dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17789 jobs); direct axiom audit passed for 17524 declarations using only propext, Classical.choice and Quot.sound; all 17469 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.88 GiB.

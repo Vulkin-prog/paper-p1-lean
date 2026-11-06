@@ -4551,3 +4551,5 @@ public import PaperP1.Algebra.FullDegreeAffineSourceField
 public import PaperP1.Algebra.FullDegreeSourceDerivativeConductor
 public import PaperP1.Algebra.AffinePowerProjectionImage
 public import PaperP1.Arithmetic.ActualAffineProjectionPointCount
+public import PaperP1.Algebra.AffineProjectionHypersurfacePoints
+public import PaperP1.Arithmetic.ActualAffineHypersurfacePointCount

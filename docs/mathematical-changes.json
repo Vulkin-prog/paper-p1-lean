@@ -30941,6 +30941,48 @@
         "status": "not_integrated"
       },
       "validation_commit": "a15f18fa4a89c41e4ee0670e46501c5391963724"
+    },
+    {
+      "id": "P1-MATH-0650",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "An estimate for actual projected-image points had not been identified with the complete literal hypersurface solution set; the exact kernel and exhaustive point lifting were still missing.",
+      "finding": "The actual image kernel is exactly (P), its quotient is explicitly equivalent to AdjoinRoot(P), and every literal hypersurface solution lifts to a unique actual image point. Exact cardinality equality transfers the uniform source-specific bound to all affine hypersurface solutions.",
+      "proposed_revision": "Use the proved exact hypersurface/image correspondence. Apply it to the original reduced homogeneous integer equation only after its actual affine monic normalization, irreducibility and full degree are verified with an effective prime budget.",
+      "impact": "Discharges the actual affine hypersurface kernel, quotient and exhaustive point identification, and its uniform point-count assembly. Original homogeneous integer-model reduction conditions and effective original-family cover assembly remain unfinished.",
+      "evidence": [
+        "PaperP1.AffineProjectionHypersurfacePoints.relation_iff_dvd",
+        "PaperP1.AffineProjectionHypersurfacePoints.source_kernel",
+        "PaperP1.AffineProjectionHypersurfacePoints.polynomialMap_surjective",
+        "PaperP1.AffineProjectionHypersurfacePoints.image_kernel",
+        "PaperP1.AffineProjectionHypersurfacePoints.quotientEquiv_mk",
+        "PaperP1.AffineProjectionHypersurfacePoints.quotientEquiv_root",
+        "PaperP1.AffineProjectionHypersurfacePoints.quotientEquiv_coefficient",
+        "PaperP1.AffineProjectionHypersurfacePoints.point_lift",
+        "PaperP1.AffineProjectionHypersurfacePoints.point_cardinality",
+        "PaperP1.ActualAffineHypersurfacePointCount.cardinality_le",
+        "PaperP1.ActualAffineHypersurfacePointCount.uniform_upper_bound",
+        "PaperP1.AffineProjectionHypersurfacePoints.polynomialMap",
+        "PaperP1.AffineProjectionHypersurfacePoints.quotientEquiv",
+        "PaperP1.AffineProjectionHypersurfacePoints.Solution",
+        "PaperP1.AffineProjectionHypersurfacePoints.pointValues",
+        "PaperP1.AffineProjectionHypersurfacePoints.pointsEquiv"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17789 jobs); direct axiom audit passed for 17524 declarations using only propext, Classical.choice and Quot.sound; all 17469 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.88 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
