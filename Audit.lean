@@ -1072,6 +1072,7 @@ import PaperP1
 #print axioms PaperP1.FiniteSupportImageRank.supportUnion_subset
 #print axioms PaperP1.FiniteSupportImageRank.support_subset_of_basis
 #print axioms PaperP1.FiniteSupportImageRank.rank_le_supportUnion
+#print axioms PaperP1.FiniteSurfaceParameterInjectivity.injective
 #print axioms PaperP1.FiniteSurfaceParameterRank.base_hilbert
 #print axioms PaperP1.FiniteSurfaceParameterRank.rank_eq_twice_coefficient
 #print axioms PaperP1.FormalBranchScalarDescent.evaluation_constant
@@ -1931,6 +1932,10 @@ import PaperP1
 #print axioms PaperP1.ProjectiveAvoidanceRadical.zero_locus_subset
 #print axioms PaperP1.ProjectiveAvoidanceRadical.variable_mem_radical
 #print axioms PaperP1.ProjectiveAvoidanceRadical.exists_uniform_power
+#print axioms PaperP1.ProjectiveHypersurfaceHilbert.difference
+#print axioms PaperP1.ProjectiveHypersurfaceHilbert.isHilbertPolynomial
+#print axioms PaperP1.ProjectiveHypersurfaceHilbert.natDegree_le
+#print axioms PaperP1.ProjectiveHypersurfaceHilbert.coeff_two
 #print axioms PaperP1.QuadraticCumulantBound.Data.mono
 #print axioms PaperP1.QuadraticCumulantBound.Data.parameter_bound
 #print axioms PaperP1.QuadraticCumulantBound.Data.moment_bound
@@ -2017,6 +2022,10 @@ import PaperP1
 #print axioms PaperP1.QuadraticUniversalMap.liftRing_omega
 #print axioms PaperP1.QuadraticUniversalMap.hom_ext
 #print axioms PaperP1.QuadraticUniversalMap.liftRing_unique
+#print axioms PaperP1.QuaternaryPolynomialHilbert.cast_choose_three
+#print axioms PaperP1.QuaternaryPolynomialHilbert.isHilbertPolynomial
+#print axioms PaperP1.QuaternaryPolynomialHilbert.natDegree_le
+#print axioms PaperP1.QuaternaryPolynomialHilbert.coeff_three
 #print axioms PaperP1.QuotientFreeBasis.basis_apply
 #print axioms PaperP1.QuotientFreeBasis.transported_apply
 #print axioms PaperP1.QuotientRank.ker_modulo
@@ -12725,6 +12734,7 @@ import PaperP1
 #print axioms PaperP1.ProjectiveHomogeneousSectionPoints.linear_normalized_population
 #print axioms PaperP1.ProjectiveHomogeneousSectionPoints.projective_population
 #print axioms PaperP1.ProjectiveHomogeneousSectionPoints.rational_curve_population
+#print axioms PaperP1.ProjectiveHypersurfaceFiniteParameters.exists_parameters
 #print axioms PaperP1.ProjectiveSectionFiniteSet.rep_injective
 #print axioms PaperP1.ProjectiveSectionFiniteSet.mem_section_mk_iff
 #print axioms PaperP1.ProjectiveSectionFiniteSet.card_bound

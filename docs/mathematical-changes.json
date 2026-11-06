@@ -27996,6 +27996,44 @@
         "status": "not_integrated"
       },
       "validation_commit": "34e248b834daef5b23bea63a1330d9a1287dc2e4"
+    },
+    {
+      "id": "P1-MATH-0586",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The remaining primary P3 covering argument needed genuine hypersurface Hilbert degree and an actual finite independent three-parameter map before constructing its height-one component curves and singular-locus degree bounds.",
+      "finding": "Every actual prime positive-degree hypersurface quotient in four coordinates constructs its exact quadratic Hilbert polynomial and three actual finite independent degree-one parameters over every infinite field; the independence follows from proved Hilbert-polynomial comparison.",
+      "proposed_revision": "Record the exact hypersurface Hilbert polynomial and the internally selected actual finite parameter evaluation before constructing singular-locus components or invoking the determinant method. Keep the unproved primary covering argument explicit.",
+      "impact": "Supplies actual surface degree and normalization data for the primary P3 proof without adding a separate Hilbert-polynomial, degree-label or algebraic-independence premise.",
+      "evidence": [
+        "PaperP1.FiniteSurfaceParameterInjectivity.injective",
+        "PaperP1.ProjectiveHypersurfaceHilbert.difference",
+        "PaperP1.ProjectiveHypersurfaceHilbert.isHilbertPolynomial",
+        "PaperP1.ProjectiveHypersurfaceHilbert.natDegree_le",
+        "PaperP1.ProjectiveHypersurfaceHilbert.coeff_two",
+        "PaperP1.QuaternaryPolynomialHilbert.cast_choose_three",
+        "PaperP1.QuaternaryPolynomialHilbert.isHilbertPolynomial",
+        "PaperP1.QuaternaryPolynomialHilbert.natDegree_le",
+        "PaperP1.QuaternaryPolynomialHilbert.coeff_three",
+        "PaperP1.ProjectiveHypersurfaceFiniteParameters.exists_parameters",
+        "PaperP1.ProjectiveHypersurfaceHilbert.polynomial",
+        "PaperP1.QuaternaryPolynomialHilbert.polynomial"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17227 jobs); direct axiom audit passed for 16557 declarations using only propext, Classical.choice and Quot.sound; all 16248 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.18 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

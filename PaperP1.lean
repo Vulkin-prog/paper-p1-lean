@@ -4283,3 +4283,7 @@ public import PaperP1.Arithmetic.SourceOrdinaryCoverPower
 public import PaperP1.Geometry.SourceCurveOrdinaryImageFamily
 public import PaperP1.Arithmetic.UniformOrdinarySurfaceCoverFromExactSource
 public import PaperP1.Asymptotics.UniformGeometricCountsP3Input
+public import PaperP1.Algebra.FiniteSurfaceParameterInjectivity
+public import PaperP1.Algebra.ProjectiveHypersurfaceHilbert
+public import PaperP1.Algebra.QuaternaryPolynomialHilbert
+public import PaperP1.Geometry.ProjectiveHypersurfaceFiniteParameters
