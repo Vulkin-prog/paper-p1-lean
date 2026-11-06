@@ -3857,6 +3857,11 @@ import PaperP1
 #print axioms PaperP1.FiniteDifferencing.window_energy_bound
 #print axioms PaperP1.FiniteDifferencing.correlation_square_bound
 #print axioms PaperP1.FiniteDifferencing.normalized_correlation_bound
+#print axioms PaperP1.FiniteDirichletConvolution.coefficient_eq_fibre
+#print axioms PaperP1.FiniteDirichletConvolution.support_positive
+#print axioms PaperP1.FiniteDirichletConvolution.support_bounds
+#print axioms PaperP1.FiniteDirichletConvolution.coefficient_norm_bound
+#print axioms PaperP1.FiniteDirichletConvolution.product_identity
 #print axioms PaperP1.FiniteEulerLogBound.factor_ne
 #print axioms PaperP1.FiniteEulerLogBound.point_log_error
 #print axioms PaperP1.FiniteEulerLogBound.product_ne

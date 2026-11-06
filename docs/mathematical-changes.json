@@ -35857,6 +35857,39 @@
         "status": "not_integrated"
       },
       "validation_commit": "4574e8c90cc7911248e09135ec663f3afcd590a5"
+    },
+    {
+      "id": "P1-MATH-0786",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "Multiplying two Dirichlet polynomials changes both coefficients and support. Their exact finite convolution and shared-factor divisor majorant must be established before a mean-value argument.",
+      "finding": "The literal finite convolution coefficient sums a(d)*b(n/d) over d in A with d|n and n/d in B. An exact finite bijection identifies it with the product-map fibre on A times B. The product support is the actual image {d*m}; positivity and all four product interval endpoints are proved. For positive supports the PRODUCT of the TWO actual Dirichlet polynomials equals the actual convolution Dirichlet polynomial on that image. If |a(d)|<=w(d) and |b(m)|<=1, the actual coefficient norm is bounded by the literal divisor sum for A and w. Five theorems and two definitions keep every overlapping factorization.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Exact finite Dirichlet product convolution has a literal divisor majorant and product support. The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.FiniteDirichletConvolution.coefficient_eq_fibre",
+        "PaperP1.FiniteDirichletConvolution.support_positive",
+        "PaperP1.FiniteDirichletConvolution.support_bounds",
+        "PaperP1.FiniteDirichletConvolution.coefficient_norm_bound",
+        "PaperP1.FiniteDirichletConvolution.product_identity",
+        "PaperP1.FiniteDirichletConvolution.support",
+        "PaperP1.FiniteDirichletConvolution.coefficient"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18139 jobs); direct axiom audit passed for 18526 declarations using only propext, Classical.choice and Quot.sound; all 18704 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.38 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

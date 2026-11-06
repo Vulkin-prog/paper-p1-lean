@@ -4725,3 +4725,4 @@ public import PaperP1.Analysis.GrowingFirstGoodRegion
 public import PaperP1.Analysis.GrowingGoodFullPolynomial
 public import PaperP1.Analysis.WeightedDivisorSquare
 public import PaperP1.Analysis.DivisorMajorantMeanValue
+public import PaperP1.Analysis.FiniteDirichletConvolution

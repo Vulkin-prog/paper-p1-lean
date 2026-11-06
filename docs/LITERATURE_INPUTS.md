@@ -1,6 +1,16 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0785: Actual Dirichlet mean values follow
+Current checkpoint P1-MATH-0786: Exact finite Dirichlet product
+convolution has a literal divisor majorant and product support. The
+complementary bad-prime frequency contribution, the central-frequency
+mean subtraction and complete logarithmic short-average concentration
+remain unproved. T19.17 conditional; original T1.7 unconditional.
+Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main
+proved. Sources, false-scope corrections, compiler and axioms unchanged.
+About 52.9 GiB free on Ubuntu. No dependency download or Palomar
+registration.
+
+Historical checkpoint P1-MATH-0785: Actual Dirichlet mean values follow
 from the proved weighted divisor square majorant. The complementary bad-
 prime frequency contribution, the central-frequency mean subtraction and
 complete logarithmic short-average concentration remain unproved. T19.17
@@ -32387,6 +32397,12 @@ For EVERY actual coefficient a supported in [L,M], L>0, and pointwise norm<=the 
 
 The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved.
 
+## Internal exact finite dirichlet product convolution has a literal divisor majorant and product support
+
+The literal finite convolution coefficient sums a(d)*b(n/d) over d in A with d|n and n/d in B. An exact finite bijection identifies it with the product-map fibre on A times B. The product support is the actual image {d*m}; positivity and all four product interval endpoints are proved. For positive supports the PRODUCT of the TWO actual Dirichlet polynomials equals the actual convolution Dirichlet polynomial on that image. If |a(d)|<=w(d) and |b(m)|<=1, the actual coefficient norm is bounded by the literal divisor sum for A and w. Five theorems and two definitions keep every overlapping factorization.
+
+The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -35458,3 +35474,14 @@ For EVERY actual coefficient a supported in [L,M], L>0, and pointwise norm<=the 
 The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18137 jobs); direct axiom audit passed for 18521 declarations using only propext, Classical.choice and Quot.sound; all 18697 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.40 GiB.
+
+
+## Exact finite Dirichlet product convolution has a literal divisor majorant and product support
+
+Stable ID: p1:internal:finite-dirichlet-convolution. Exact finite Dirichlet product convolution has a literal divisor majorant and product support. The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved.
+
+The literal finite convolution coefficient sums a(d)*b(n/d) over d in A with d|n and n/d in B. An exact finite bijection identifies it with the product-map fibre on A times B. The product support is the actual image {d*m}; positivity and all four product interval endpoints are proved. For positive supports the PRODUCT of the TWO actual Dirichlet polynomials equals the actual convolution Dirichlet polynomial on that image. If |a(d)|<=w(d) and |b(m)|<=1, the actual coefficient norm is bounded by the literal divisor sum for A and w. Five theorems and two definitions keep every overlapping factorization.
+
+The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18139 jobs); direct axiom audit passed for 18526 declarations using only propext, Classical.choice and Quot.sound; all 18704 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.38 GiB.
