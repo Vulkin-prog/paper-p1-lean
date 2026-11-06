@@ -35484,6 +35484,35 @@
         "status": "not_integrated"
       },
       "validation_commit": "61f0749bff2c6e47b190b807d5e015f8d88cb2dc"
+    },
+    {
+      "id": "P1-MATH-0774",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "A sparse mean value for floor(X/p) does not automatically apply to the actual cofactor interval determined by an exponential band anchor and two ceilings.",
+      "finding": "A single X0 precedes every X>=X0 and every integer length L with X^(7/8)<=L<=X, giving L above any prescribed cutoff, X<=L^(5/4) and X^(1/200)<=L^(1/100). For EVERY band anchor<=X^(1/16), the ACTUAL rounded length ceil(X/anchor) satisfies these conclusions uniformly. The actual cofactor support [ceil(X/anchor),ceil(2*X/anchor)) lies in its literal dyadic length block. Three theorems prove these length and endpoint facts without identifying the ceiling with an unrounded real quotient.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Actual rounded narrow cofactor lengths satisfy the sparse sampling regime uniformly. The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.NarrowCofactorRegime.length_regime",
+        "PaperP1.NarrowCofactorRegime.cofactor_regime",
+        "PaperP1.NarrowCofactorRegime.cofactor_subset_dyadic"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18115 jobs); direct axiom audit passed for 18482 declarations using only propext, Classical.choice and Quot.sound; all 18651 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.59 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

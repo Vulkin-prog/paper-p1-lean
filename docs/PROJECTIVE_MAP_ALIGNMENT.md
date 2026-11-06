@@ -1,6 +1,15 @@
 # Actual projective scheme map
 
-Current checkpoint P1-MATH-0773: One actual common exception controls
+Current checkpoint P1-MATH-0774: Actual rounded narrow cofactor lengths
+satisfy the sparse sampling regime uniformly. The actual Ramare main-
+term frequency bounds and complete logarithmic short-average
+concentration remain unproved. T19.17 conditional; original T1.7
+unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167;
+all 73 main proved. Sources, false-scope corrections, compiler and
+axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download
+or Palomar registration.
+
+Historical checkpoint P1-MATH-0773: One actual common exception controls
 all narrow rectangle cofactor polynomials. The actual Ramare main-term
 frequency bounds and complete logarithmic short-average concentration
 remain unproved. T19.17 conditional; original T1.7 unconditional.
@@ -25036,3 +25045,12 @@ The same R,N0 and exceptional-set construction now control EVERY actual cofactor
 The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18113 jobs); direct axiom audit passed for 18479 declarations using only propext, Classical.choice and Quot.sound; all 18648 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.61 GiB.
+
+
+## Actual rounded narrow cofactor lengths satisfy the sparse sampling regime uniformly
+
+A single X0 precedes every X>=X0 and every integer length L with X^(7/8)<=L<=X, giving L above any prescribed cutoff, X<=L^(5/4) and X^(1/200)<=L^(1/100). For EVERY band anchor<=X^(1/16), the ACTUAL rounded length ceil(X/anchor) satisfies these conclusions uniformly. The actual cofactor support [ceil(X/anchor),ceil(2*X/anchor)) lies in its literal dyadic length block. Three theorems prove these length and endpoint facts without identifying the ceiling with an unrounded real quotient.
+
+The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18115 jobs); direct axiom audit passed for 18482 declarations using only propext, Classical.choice and Quot.sound; all 18651 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.59 GiB.
