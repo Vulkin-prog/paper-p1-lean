@@ -4782,6 +4782,9 @@ import PaperP1
 #print axioms PaperP1.PowerSeriesTail.floor_ge_half
 #print axioms PaperP1.PowerSeriesTail.constant_pos
 #print axioms PaperP1.PowerSeriesTail.tail_le_power
+#print axioms PaperP1.PrecisionChosenPrimeBand.exponent_choice
+#print axioms PaperP1.PrecisionChosenPrimeBand.small_missing_good
+#print axioms PaperP1.PrecisionChosenPrimeBand.small_final_band
 #print axioms PaperP1.PrimeBandDiscreteMoments.sampled_high_moment_bound
 #print axioms PaperP1.PrimeBandDiscreteMoments.large_values_card
 #print axioms PaperP1.PrimeBandDiscreteMoments.reciprocal_sampled_estimates_eventually
