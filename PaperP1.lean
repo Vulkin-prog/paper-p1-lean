@@ -4699,3 +4699,4 @@ public import PaperP1.Analysis.RelativeRamareRemainder
 public import PaperP1.Analysis.TwoBandRelativeApproximation
 public import PaperP1.Analysis.FrequencyBudgetMonotone
 public import PaperP1.Analysis.CommonUniformTwistedSum
+public import PaperP1.Analysis.CommonUniformWeightedSum

@@ -1,6 +1,15 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0759: One actual common frequency exception
+Current checkpoint P1-MATH-0760: One common frequency exception controls
+all actual count and presence weighted cutoffs. The actual Ramare main-
+term frequency bounds and complete logarithmic short-average
+concentration remain unproved. T19.17 conditional; original T1.7
+unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167;
+all 73 main proved. Sources, false-scope corrections, compiler and
+axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download
+or Palomar registration.
+
+Historical checkpoint P1-MATH-0759: One actual common frequency exception
 controls every summatory cutoff in an interval. The actual Ramare main-
 term frequency bounds and complete logarithmic short-average
 concentration remain unproved. T19.17 conditional; original T1.7
@@ -31998,6 +32007,12 @@ For every epsilon,delta>0 ONE N0>=4 precedes all N>=N0, all B>=N and all T>=1 wi
 
 The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.
 
+## Internal one common frequency exception controls all actual count and presence weighted cutoffs
+
+For every epsilon,delta>0 one R>=2 and N0>=4 precede all N>=N0, all B>=N and all T>=max(1,ceil(log(B)^10)). ONE measurable exceptional E of measure at most delta*T is chosen BEFORE every X in [N,B], every prime support P above R, every prime support Q and every complete real prime-bounded f. The ACTUAL presence(Q,n)/(count(P,n)+1) twisted sum up to X has norm <=epsilon*X at each off-exception frequency. Uniformity for all damping parameters precedes integration; literal count versus valuation error is controlled by the actual prime square census. No disjointness or squarefree support is assumed.
+
+The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -34783,3 +34798,14 @@ For every epsilon,delta>0 ONE N0>=4 precedes all N>=N0, all B>=N and all T>=1 wi
 The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18085 jobs); direct axiom audit passed for 18423 declarations using only propext, Classical.choice and Quot.sound; all 18575 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.86 GiB.
+
+
+## One common frequency exception controls all actual count and presence weighted cutoffs
+
+Stable ID: p1:internal:common-uniform-weighted-sum. One common frequency exception controls all actual count and presence weighted cutoffs. The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.
+
+For every epsilon,delta>0 one R>=2 and N0>=4 precede all N>=N0, all B>=N and all T>=max(1,ceil(log(B)^10)). ONE measurable exceptional E of measure at most delta*T is chosen BEFORE every X in [N,B], every prime support P above R, every prime support Q and every complete real prime-bounded f. The ACTUAL presence(Q,n)/(count(P,n)+1) twisted sum up to X has norm <=epsilon*X at each off-exception frequency. Uniformity for all damping parameters precedes integration; literal count versus valuation error is controlled by the actual prime square census. No disjointness or squarefree support is assumed.
+
+The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18087 jobs); direct axiom audit passed for 18424 declarations using only propext, Classical.choice and Quot.sound; all 18576 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.84 GiB.

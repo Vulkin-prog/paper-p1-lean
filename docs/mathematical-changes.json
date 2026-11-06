@@ -35033,6 +35033,33 @@
         "status": "not_integrated"
       },
       "validation_commit": "0ba3f4a224540635ba99adffd8371ccf1ffe5c60"
+    },
+    {
+      "id": "P1-MATH-0760",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "A different exceptional set at each cutoff or damping parameter does not justify simultaneous integration or partial summation.",
+      "finding": "For every epsilon,delta>0 one R>=2 and N0>=4 precede all N>=N0, all B>=N and all T>=max(1,ceil(log(B)^10)). ONE measurable exceptional E of measure at most delta*T is chosen BEFORE every X in [N,B], every prime support P above R, every prime support Q and every complete real prime-bounded f. The ACTUAL presence(Q,n)/(count(P,n)+1) twisted sum up to X has norm <=epsilon*X at each off-exception frequency. Uniformity for all damping parameters precedes integration; literal count versus valuation error is controlled by the actual prime square census. No disjointness or squarefree support is assumed.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "One common frequency exception controls all actual count and presence weighted cutoffs. The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.CommonUniformWeightedSum.common_uniform_presence_small"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18087 jobs); direct axiom audit passed for 18424 declarations using only propext, Classical.choice and Quot.sound; all 18576 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.84 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
