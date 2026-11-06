@@ -43822,7 +43822,8 @@
             "PaperP1.AffinePowerProjectionImage.conductor"
           ]
         }
-      ]
+      ],
+      "validation_commit": "4b9f249eb11460ffdc658e49f34c693617c001af"
     },
     {
       "label": "p1:arith:dense",
