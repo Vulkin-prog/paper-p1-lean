@@ -33862,6 +33862,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "ef01cf0d68d5bf41a350c4ba4d4ca6cba506ca79"
+    },
+    {
+      "id": "P1-MATH-0725",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The general ArithmeticFunction multiplicativity interface was stronger than the coefficient scope of the newly proved Halasz route. No short-average concentration theorem is assumed implicitly or claimed proved.",
+      "finding": "The uniform mean-square and concentration hypotheses now quantify only complete real monoid homomorphisms with prime values in [-1,1]. The actual finite square-budget theorem proves concentration from this weaker mean-square interface. The ordinary Y-smooth indicator is constructed as an actual complete monoid homomorphism when Y>=1, and its global and prime bounds are proved. Three definitions and three theorems are added.",
+      "proposed_revision": "Use the complete coefficient scope for the actual ordinary-smooth family, retaining the explicit unproved concentration input.",
+      "impact": "Complete short-average concentration interface and actual ordinary-smooth monoid homomorphism. T19.17 remains conditional.",
+      "evidence": [
+        "PaperP1.CompleteShortAverage.concentration_of_mean_square",
+        "PaperP1.CompleteShortAverage.smoothHom_bound",
+        "PaperP1.CompleteShortAverage.smoothHom_prime_bound",
+        "PaperP1.CompleteShortAverage.MeanSquareInput",
+        "PaperP1.CompleteShortAverage.ConcentrationInput",
+        "PaperP1.CompleteShortAverage.smoothHom"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18017 jobs); direct axiom audit passed for 18240 declarations using only propext, Classical.choice and Quot.sound; all 18355 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.47 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

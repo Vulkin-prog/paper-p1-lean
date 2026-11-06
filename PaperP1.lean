@@ -4664,3 +4664,4 @@ public import PaperP1.Analysis.GeometricBandSplit
 public import PaperP1.Analysis.GlobalTripleBand
 public import PaperP1.Analysis.HalaszSmallBudget
 public import PaperP1.Analysis.CommonRealTwistedSum
+public import PaperP1.Analysis.CompleteShortAverage

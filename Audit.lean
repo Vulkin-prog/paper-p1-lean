@@ -3478,6 +3478,9 @@ import PaperP1
 #print axioms PaperP1.CompactCurvePopulationEnds.closure_curve
 #print axioms PaperP1.CompactCurvePopulationEnds.closure_comparison
 #print axioms PaperP1.CompactCurvePopulationEnds.exists_coordinate_minimum
+#print axioms PaperP1.CompleteShortAverage.concentration_of_mean_square
+#print axioms PaperP1.CompleteShortAverage.smoothHom_bound
+#print axioms PaperP1.CompleteShortAverage.smoothHom_prime_bound
 #print axioms PaperP1.ComplexEuler.complex_hom_bound
 #print axioms PaperP1.ComplexEuler.prime_half
 #print axioms PaperP1.ComplexEuler.summable_and_hasSum

@@ -1,6 +1,12 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0724: Actual real twisted summatory sums
+Current checkpoint P1-MATH-0725: Complete short-average concentration
+interface and actual ordinary-smooth monoid homomorphism. Complete
+short-average concentration remains unproved. T19.17 conditional;
+original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2
+in_progress /167; all 73 main proved. No Palomar registration.
+
+Historical checkpoint P1-MATH-0724: Actual real twisted summatory sums
 small off one common frequency exception. Final logarithmic short-
 average concentration and original T19.17 remain unfinished. Original
 T1.7 complete. Coverage: 164 proved, 1 conditional, 2 in_progress /167;
@@ -31509,6 +31515,12 @@ Actual real twisted summatory sums small off one common frequency
 exception. Final logarithmic short-average concentration and original
 T19.17 remain unfinished. Original T1.7 unconditional.
 
+## Internal complete short-average concentration interface and actual ordinary-smooth monoid homomorphism
+
+The uniform mean-square and concentration hypotheses now quantify only complete real monoid homomorphisms with prime values in [-1,1]. The actual finite square-budget theorem proves concentration from this weaker mean-square interface. The ordinary Y-smooth indicator is constructed as an actual complete monoid homomorphism when Y>=1, and its global and prime bounds are proved. Three definitions and three theorems are added.
+
+Theorem 1 and Corollary 6 of the primary source https://annals.math.princeton.edu/2016/183-3/p06 describe the external short-average/smooth-number result being reconstructed. Its logarithmic-window conclusion remains unproved internally.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -33901,3 +33913,16 @@ The proof combines the internal uniform small-budget Halasz criterion, the actua
 Final logarithmic short-average concentration and original T19.17 remain unfinished. Original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, sources, pinned Lean and axioms unchanged. About 53.8 GiB is free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18015 jobs); direct axiom audit passed for 18237 declarations using only propext, Classical.choice and Quot.sound; all 18349 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.49 GiB.
+
+
+## Complete short-average concentration interface and actual ordinary-smooth monoid homomorphism
+
+Stable ID: p1:internal:complete-short-average. Complete short-average concentration interface and actual ordinary-smooth monoid homomorphism. Complete short-average concentration remains unproved.
+
+The uniform mean-square and concentration hypotheses now quantify only complete real monoid homomorphisms with prime values in [-1,1]. The actual finite square-budget theorem proves concentration from this weaker mean-square interface. The ordinary Y-smooth indicator is constructed as an actual complete monoid homomorphism when Y>=1, and its global and prime bounds are proved. Three definitions and three theorems are added.
+
+The general ArithmeticFunction multiplicativity interface was stronger than the coefficient scope of the newly proved Halasz route. No short-average concentration theorem is assumed implicitly or claimed proved.
+
+Complete logarithmic short-average concentration and original T19.17 remain unfinished. Original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Source v1.6, false-scope corrections, compiler and permitted axioms unchanged. About 53.6 GiB free on Ubuntu. No download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18017 jobs); direct axiom audit passed for 18240 declarations using only propext, Classical.choice and Quot.sound; all 18355 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.47 GiB.
