@@ -11,9 +11,13 @@ theorem. It includes Salberger's projective surface covering and its translation
 through bounded finite projection, lifting, degree bounds and the actual source
 prime/Hilbert presentation. The chosen source surface has the already proved
 Hilbert multiplicity 2^k*D^2. The weaker decay 2^(-k/2) below suffices for D>=1.
-The primary surface theorem is Lemma 2 of
-https://arxiv.org/pdf/2311.05561v1 . Its statement is in P3; the projection and
-lifting needed for this chosen higher-dimensional embedding remain unproved.
+The bounded finite projection, its fixed exceptional-curve family, and the
+lifting of each individual actual image curve are proved in
+`ActualSourceSurfaceProjectionExceptionalCurves` and `ActualSourceProjectedCurveCover`.
+The primary surface theorem still required is Lemma 2 of
+https://arxiv.org/pdf/2311.05561v1 . Its statement is in P3; the full uniform covering conclusion below
+remains unproved. The completed projection and individual-curve lifting do not
+by themselves provide the determinant-method covering family.
 This property is distinct from the ordinary-embedding cover property.
 -/
 

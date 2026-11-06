@@ -27480,6 +27480,39 @@
         "status": "not_integrated"
       },
       "validation_commit": "cda67cb2646fcf6354a078f61e20bfaa043c4fc0"
+    },
+    {
+      "id": "P1-MATH-0573",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "A nonzero degree-controlled source pullback equation was available, but the exact original normalized integer points had not yet been lifted into a uniformly bounded family of the literal companion source curves.",
+      "finding": "Each genuine actual image curve of degree at most M now has a fixed lift cover by at most M*d literal source curves of genuine degrees at most M*d, with exact polynomial vanishing and original normalized integer-point membership preserved at every height.",
+      "proposed_revision": "State the actual image-curve polynomial ideal and evaluation equivalence, then apply the actual nonzero source-section cover. Choose the source curve family before all height and point-population quantifiers.",
+      "impact": "Discharges the individual covering-curve lift, its genuine degree and count bounds, and its exact integer-point transport without replacing the original populations or assuming the desired lift.",
+      "evidence": [
+        "PaperP1.ActualSourceProjectedCurveCover.uniform_curve_cover",
+        "PaperP1.SourceImageIntegerPointEvaluation.primitive_mem",
+        "PaperP1.SourceImageIntegerPointEvaluation.imageEvaluation_mk",
+        "PaperP1.SourceImageIntegerPointEvaluation.annihilates_iff",
+        "PaperP1.SourceSurfaceCurvePullback.uniform_curve_cover",
+        "PaperP1.SourceImageIntegerPointEvaluation.imageEvaluation",
+        "PaperP1.SourceImageIntegerPointEvaluation.imageIdeal"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17141 jobs); direct axiom audit passed for 16425 declarations using only propext, Classical.choice and Quot.sound; all 16078 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.06 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

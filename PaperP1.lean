@@ -4241,3 +4241,6 @@ public import PaperP1.Geometry.SourceSurfaceComponentDegreeBudget
 public import PaperP1.Algebra.GradedInjectiveHilbertComparison
 public import PaperP1.Geometry.FiniteHypersurfaceCurvePullback
 public import PaperP1.Geometry.FiniteParameterCurveEquation
+public import PaperP1.Arithmetic.ActualSourceProjectedCurveCover
+public import PaperP1.Arithmetic.SourceImageIntegerPointEvaluation
+public import PaperP1.Geometry.SourceSurfaceCurvePullback

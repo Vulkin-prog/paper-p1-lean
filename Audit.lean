@@ -3834,6 +3834,7 @@ import PaperP1
 #print axioms PaperP1.ActualSourcePrimitiveReduction.family_shift_bounds
 #print axioms PaperP1.ActualSourcePrimitiveReduction.divide_dyadic_bounds
 #print axioms PaperP1.ActualSourcePrimitiveReduction.family_raw_bounds
+#print axioms PaperP1.ActualSourceProjectedCurveCover.uniform_curve_cover
 #print axioms PaperP1.ActualSourceSurfaceIntegerProjection.exists_projection
 #print axioms PaperP1.ActualSourceSurfaceProjectionExceptionalCurves.exists_projection
 #print axioms PaperP1.ActualSourceTranslations.sourceAt_cast
@@ -6860,6 +6861,9 @@ import PaperP1
 #print axioms PaperP1.SmoothSupportBounds.supportProduct_le_primorial
 #print axioms PaperP1.SmoothSupportBounds.supportProduct_le_four_pow
 #print axioms PaperP1.SmoothSupportBounds.four_pow_cutoff_le_polynomial
+#print axioms PaperP1.SourceImageIntegerPointEvaluation.primitive_mem
+#print axioms PaperP1.SourceImageIntegerPointEvaluation.imageEvaluation_mk
+#print axioms PaperP1.SourceImageIntegerPointEvaluation.annihilates_iff
 #print axioms PaperP1.SourceIntegerHypersurfaceProjection.primitive_cast
 #print axioms PaperP1.SourceIntegerHypersurfaceProjection.height
 #print axioms PaperP1.SourceIntegerHypersurfaceProjection.normalized
@@ -12762,6 +12766,7 @@ import PaperP1
 #print axioms PaperP1.SourceSurfaceComponentDegreeBudget.sum_degree_le
 #print axioms PaperP1.SourceSurfaceComponentDegreeBudget.curve_count_le
 #print axioms PaperP1.SourceSurfaceComponentDegreeBudget.uniform_section_curve_cover
+#print axioms PaperP1.SourceSurfaceCurvePullback.uniform_curve_cover
 #print axioms PaperP1.SourceSurfaceGeometricImage.irreducible_after_extension
 #print axioms PaperP1.SourceSurfaceGeometricImage.source_irreducible_after_extension
 #print axioms PaperP1.SourceSurfaceSectionCurveDegree.degree_le
