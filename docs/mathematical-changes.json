@@ -40667,6 +40667,35 @@
         "status": "not_integrated"
       },
       "validation_commit": "a827160a530af7a5f198f69db530b9f372866011"
+    },
+    {
+      "id": "P1-MATH-0938",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "Applying the new actual prime Halasz bound requires an actual logarithmic-power cardinality bound for the remaining large-frequency set, not merely a subpolynomial estimate.",
+      "finding": "Two theorems and one definition prove a positive fixed exponent C_H=200H+2 and, for fixed a>0,b<=1,H>=4 with a*H>=2, ONE integer cutoff before ALL N, ALL prime-unit coefficients, ALL unit-separated samples at height T<=N and ALL samples large in at least one actual narrow block of the actual prime band (N^a,N^b]. Their cardinality is <=log(N)^C_H at the literal threshold 1/log(N)^100. All geometric and fixed-factor conditions are discharged by actual eventual bounds; no frequency cardinality estimate is assumed.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Actual large frequencies for the fixed-power final prime band have uniformly logarithmic-power cardinality. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.FixedPowerLargeFrequencyCardinality.exponent_pos",
+        "PaperP1.FixedPowerLargeFrequencyCardinality.uniform_bound",
+        "PaperP1.FixedPowerLargeFrequencyCardinality.exponent"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18443 jobs); direct axiom audit passed for 19120 declarations using only propext, Classical.choice and Quot.sound; all 19406 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.77 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

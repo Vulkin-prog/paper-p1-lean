@@ -4135,6 +4135,8 @@ import PaperP1
 #print axioms PaperP1.FixedOrderSecondTermDecay.exponent_power
 #print axioms PaperP1.FixedOrderSecondTermDecay.quotient_identity
 #print axioms PaperP1.FixedOrderSecondTermDecay.second_bound
+#print axioms PaperP1.FixedPowerLargeFrequencyCardinality.exponent_pos
+#print axioms PaperP1.FixedPowerLargeFrequencyCardinality.uniform_bound
 #print axioms PaperP1.FixedPowerNarrowGeometry.anchor_bounds
 #print axioms PaperP1.FixedPowerNarrowGeometry.eventual_lower
 #print axioms PaperP1.FixedPowerNarrowGeometry.eventual_geometry
