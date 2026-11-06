@@ -1,6 +1,14 @@
 # Multiquadratic split radicands: exact square-class independence
 
-Current checkpoint P1-MATH-0768: Exact narrow rectangle minus coupled
+Current checkpoint P1-MATH-0769: Actual endpoint census and wide
+supported Dirichlet mean value. The actual Ramare main-term frequency
+bounds and complete logarithmic short-average concentration remain
+unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164
+proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources,
+false-scope corrections, compiler and axioms unchanged. About 52.9 GiB
+free on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0768: Exact narrow rectangle minus coupled
 Ramare quotient has a unit bounded endpoint coefficient. The actual
 Ramare main-term frequency bounds and complete logarithmic short-average
 concentration remain unproved. T19.17 conditional; original T1.7
@@ -25666,3 +25674,12 @@ The actual source weight is the indicator of [X,2*X) times the full Ramare divis
 The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18103 jobs); direct axiom audit passed for 18467 declarations using only propext, Classical.choice and Quot.sound; all 18635 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.70 GiB.
+
+
+## Actual endpoint census and wide supported Dirichlet mean value
+
+The TWO literal endpoint strips have cardinality <=3*(exp(1/H)-1)*X+2, with both ceiling errors retained. For X>0 and H>=2 their density is <=6/H+2/X. Independently, an actual unit-bounded coefficient supported on E inside [N,4*N), zero off E, has Dirichlet mean square over [-T,T] <=C*card(E)/N whenever 0<T<=N, where C=exp(1)*(sqrt(pi)+8*pi). This follows from the internally proved logarithmic mean value with upper endpoint 4*N and the actual coefficient square budget; no abstract input is assumed. Five theorems and one constant definition are added.
+
+The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18105 jobs); direct axiom audit passed for 18472 declarations using only propext, Classical.choice and Quot.sound; all 18641 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.68 GiB.

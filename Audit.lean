@@ -4289,6 +4289,11 @@ import PaperP1
 #print axioms PaperP1.MovingLogarithmicPivotMass.finite_mass
 #print axioms PaperP1.MultiplicativeShortAverage.finite_square_budget
 #print axioms PaperP1.MultiplicativeShortAverage.concentration_of_mean_square
+#print axioms PaperP1.NarrowBoundaryMeanValue.constant_pos
+#print axioms PaperP1.NarrowBoundaryMeanValue.boundary_card
+#print axioms PaperP1.NarrowBoundaryMeanValue.boundary_card_normalized
+#print axioms PaperP1.NarrowBoundaryMeanValue.support_square_budget
+#print axioms PaperP1.NarrowBoundaryMeanValue.supported_uniform_bound
 #print axioms PaperP1.NarrowPrimeBands.anchor_pos
 #print axioms PaperP1.NarrowPrimeBands.anchor_one_le
 #print axioms PaperP1.NarrowPrimeBands.growth_one_le
