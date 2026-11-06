@@ -4385,3 +4385,10 @@ public import PaperP1.Algebra.P3ModelCoefficientGrowth
 public import PaperP1.Arithmetic.UniformP3AuxiliaryFromFiniteFieldCertificate
 public import PaperP1.Arithmetic.UniformP3FiniteFieldCertificate
 public import PaperP1.Asymptotics.UniformGeometricCountsFiniteFieldInput
+public import PaperP1.Algebra.IntegerPolynomialEvaluationMass
+public import PaperP1.Algebra.P3CoefficientFieldTransport
+public import PaperP1.Arithmetic.P3CertificateFromNoetherForms
+public import PaperP1.Arithmetic.P3FiniteFieldClassEstimate
+public import PaperP1.Arithmetic.P3LinearNoetherForms
+public import PaperP1.Arithmetic.P3UniversalNoetherForms
+public import PaperP1.Asymptotics.UniformGeometricCountsNoetherFieldInput

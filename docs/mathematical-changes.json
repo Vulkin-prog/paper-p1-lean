@@ -28924,6 +28924,57 @@
         "status": "not_integrated"
       },
       "validation_commit": "ead8e73ee3f15212e4a7b9be49fcb68d67574903"
+    },
+    {
+      "id": "P1-MATH-0608",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The finite-field certificate boundary supplied existence and polynomial height of the good-prime integer jointly with the point estimate, although the certificate can be explicitly constructed from actual universal Noether forms.",
+      "finding": "The actual nonzero integer certificate and its uniform polynomial height are proved from universal integer Noether forms. The remaining geometric inputs are precisely universal-form existence and the independent finite-field point estimate; both are proved in degree one.",
+      "proposed_revision": "Construct the certificate as an actual evaluation of a universal form, include the proved coefficient-mass bound and exact coefficient-field transport, and state the two remaining independent geometric results explicitly.",
+      "impact": "Internally derives the combined good-prime certificate proposition, verifies the full degree-one base case and sharpens the exact remaining proof boundary without changing conditional coverage.",
+      "evidence": [
+        "PaperP1.IntegerPolynomialEvaluationMass.monomial_bound",
+        "PaperP1.IntegerPolynomialEvaluationMass.evaluation_bound",
+        "PaperP1.IntegerPolynomialEvaluationMass.familyMass_pos",
+        "PaperP1.IntegerPolynomialEvaluationMass.family_bound",
+        "PaperP1.P3CoefficientFieldTransport.map_polynomial",
+        "PaperP1.P3CoefficientFieldTransport.map_reconstruct",
+        "PaperP1.P3CertificateFromNoetherForms.budget_of_valid_forms",
+        "PaperP1.P3CertificateFromNoetherForms.uniform_budget",
+        "PaperP1.P3CertificateFromNoetherForms.uniform_auxiliary",
+        "PaperP1.P3FiniteFieldClassEstimate.of_degree_le_one",
+        "PaperP1.P3LinearNoetherForms.valid",
+        "PaperP1.P3LinearNoetherForms.exists_forms",
+        "PaperP1.P3LinearNoetherForms.card_forms",
+        "PaperP1.P3LinearNoetherForms.uniform_auxiliary_one",
+        "PaperP1.UniformGeometricCountsNoetherFieldInput.certificate_hypotheses",
+        "PaperP1.UniformGeometricCountsNoetherFieldInput.companion_T1_7",
+        "PaperP1.IntegerPolynomialEvaluationMass.coefficientMass",
+        "PaperP1.IntegerPolynomialEvaluationMass.familyMass",
+        "PaperP1.IntegerPolynomialEvaluationMass.familyDegree",
+        "PaperP1.P3FiniteFieldClassEstimate.GeometricReduction",
+        "PaperP1.P3FiniteFieldClassEstimate.UniformEstimate",
+        "PaperP1.P3LinearNoetherForms.forms",
+        "PaperP1.P3UniversalNoetherForms.Valid",
+        "PaperP1.P3UniversalNoetherForms.ExistsForms",
+        "PaperP1.UniformGeometricCountsNoetherFieldInput.Hypotheses"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17441 jobs); direct axiom audit passed for 16837 declarations using only propext, Classical.choice and Quot.sound; all 16595 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.03 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

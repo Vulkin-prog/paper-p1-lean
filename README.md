@@ -1,6 +1,17 @@
 # P1 — Lean formalization
 
-Current checkpoint P1-MATH-0607: canonical companionT1.7 is
+Current checkpoint P1-MATH-0608: canonical companionT1.7 is
+`UniformGeometricCountsNoetherFieldInput.companion_T1_7`. The actual nonzero
+integer good-prime certificate and its polynomial height bound are internally
+constructed from universal integer Noether forms. The independent remaining
+geometric inputs are `P1-GEO-P3-UNIVERSAL-NOETHER-FORMS` and
+`P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`, at the same three original finite-degree
+families. Both general existence/estimate theorems remain UNPROVED. Both inputs
+and the complete global auxiliary property are proved in degree one.
+T1.7 stays conditional; all73 main results are proved and coverage remains
+163 proved,2 conditional,2 in_progress out of167. No Palomar registration.
+
+Historical checkpoint P1-MATH-0607: canonical companionT1.7 is
 `UniformGeometricCountsFiniteFieldInput.companion_T1_7`. The complete uniform
 global auxiliary equation of degree H^(1/sqrt(d)+epsilon) is internally derived
 from the independent finite-field certificate budget, including arbitrary
@@ -63,7 +74,7 @@ recorded in the linked ledger and [current status](docs/FORMALIZATION_STATUS.md)
 
 Companion T1.10 needs an enlarged alignment exclusion for unequal old/new widths: its literal radius-one version has an unconditional formal counterexample. The corrected coarse4/3 profile is proved under explicit geometric inputs; its sharper31/24 form remains open; see [the scope correction](docs/ASYMMETRIC_ALIGNMENT_SCOPE.md).
 
-The main optimal4/3 quadratic approximation power is now proved under explicit BCN and finite geometric properties, including both bounds, exact actual parameters, nominal-mean bias and eventual probability status. The optimal41/30 third factorial cumulant, full third absolute activity and aligned-channel triple claims are now proved under explicit geometric inputs, withBCN retained for the full connected argument. The actual original count and its retained modification converge in total variation to the actual-mean and nominal-mean Poisson laws without unproved inputs (P1-MATH-0413); quantitative optimal law rates remain separate. Exact fourth-cumulant component identities and unconditional weak, irregular and incompatible pair bounds are proved. In particular, the actual absolute pair activity is asymptotic to half the actual second factorial cumulant, without BCN or a complete pair profile. The contact activity bound at every fixed order now holds unconditionally on every dyadic subground, including irregular starts and zero marginals. The activation probability of the actual principal edge family now has the unconditional exponent -2/3, with any fixed epsilon margin. The planar normal budget T20.4 is now proved with improved constants and an integer-fibre argument. T20.6, the prescribed-plane transverse-product count and its actual affine mass bound, is now proved internally with three motifs and no Pila premise. The project records **605 confirmed mathematical improvements and two statement-scope corrections**. See [current status](docs/FORMALIZATION_STATUS.md), [the activity alignment](docs/FIXED_ABSOLUTE_ACTIVITY_ALIGNMENT.md) and [the mathematical change log](docs/MATHEMATICAL_CHANGELOG.md).
+The main optimal4/3 quadratic approximation power is now proved under explicit BCN and finite geometric properties, including both bounds, exact actual parameters, nominal-mean bias and eventual probability status. The optimal41/30 third factorial cumulant, full third absolute activity and aligned-channel triple claims are now proved under explicit geometric inputs, withBCN retained for the full connected argument. The actual original count and its retained modification converge in total variation to the actual-mean and nominal-mean Poisson laws without unproved inputs (P1-MATH-0413); quantitative optimal law rates remain separate. Exact fourth-cumulant component identities and unconditional weak, irregular and incompatible pair bounds are proved. In particular, the actual absolute pair activity is asymptotic to half the actual second factorial cumulant, without BCN or a complete pair profile. The contact activity bound at every fixed order now holds unconditionally on every dyadic subground, including irregular starts and zero marginals. The activation probability of the actual principal edge family now has the unconditional exponent -2/3, with any fixed epsilon margin. The planar normal budget T20.4 is now proved with improved constants and an integer-fibre argument. T20.6, the prescribed-plane transverse-product count and its actual affine mass bound, is now proved internally with three motifs and no Pila premise. The project records **606 confirmed mathematical improvements and two statement-scope corrections**. See [current status](docs/FORMALIZATION_STATUS.md), [the activity alignment](docs/FIXED_ABSOLUTE_ACTIVITY_ALIGNMENT.md) and [the mathematical change log](docs/MATHEMATICAL_CHANGELOG.md).
 
 Article13.1 now has a complete actual short-basis construction, with
 both physical projections and the common square-class map injective.
@@ -1384,3 +1395,5 @@ P1-MATH-0605 constructs the strict global determinant parameter gap for gamma<sq
 P1-MATH-0606 constructs a uniform C*H^beta auxiliary equation for actual integer surfaces with polynomial coefficient/certificate heights and the explicit class budget D*p^2, for beta>sqrt(D/d). Every original singular point is internally included.
 
 P1-MATH-0607 proves the complete uniform global auxiliary construction from an independent finite-field certificate budget. Canonical T1.7 is UniformGeometricCountsFiniteFieldInput.companion_T1_7 and retains only P1-GEO-P3-FINITE-FIELD-CERTIFICATE; its general existence remains unproved.
+
+P1-MATH-0608 constructs actual bounded integer good-prime certificates from universal Noether forms. Canonical T1.7 is UniformGeometricCountsNoetherFieldInput.companion_T1_7; only universal-form existence and the independent finite-field point estimate remain unproved in general.

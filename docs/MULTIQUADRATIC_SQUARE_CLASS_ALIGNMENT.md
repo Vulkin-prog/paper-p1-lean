@@ -1,6 +1,17 @@
 # Multiquadratic split radicands: exact square-class independence
 
-Current checkpoint P1-MATH-0607: canonical companionT1.7 is
+Current checkpoint P1-MATH-0608: canonical companionT1.7 is
+`UniformGeometricCountsNoetherFieldInput.companion_T1_7`. The actual nonzero
+integer good-prime certificate and its polynomial height bound are internally
+constructed from universal integer Noether forms. The independent remaining
+geometric inputs are `P1-GEO-P3-UNIVERSAL-NOETHER-FORMS` and
+`P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`, at the same three original finite-degree
+families. Both general existence/estimate theorems remain UNPROVED. Both inputs
+and the complete global auxiliary property are proved in degree one.
+T1.7 stays conditional; all73 main results are proved and coverage remains
+163 proved,2 conditional,2 in_progress out of167. No Palomar registration.
+
+Historical checkpoint P1-MATH-0607: canonical companionT1.7 is
 `UniformGeometricCountsFiniteFieldInput.companion_T1_7`. The complete uniform
 global auxiliary equation of degree H^(1/sqrt(d)+epsilon) is internally derived
 from the independent finite-field certificate budget, including arbitrary
@@ -22104,3 +22115,22 @@ UniformGeometricCountsFiniteFieldInput proves the full aligned companionT1.7 ass
 Five modules add fourteen theorems and five definitions/hypothesis structures. The entire quantitative global auxiliary construction, original arbitrary coefficient control and all original singular points are now internal under the precise independent finite-field input. The remaining mathematical work is the uniform leading-coefficient-one finite-field estimate and polynomially bounded good-reduction certificate, alongside the separate companionT19.17 input. Coverage stays163 proved,2 conditional,2 in_progress out of167, with all73 main results proved. Literal false T1.10/T5.1 remain distinguished from their checked corrected replacements. Original manuscript hashes, compiler, heartbeat settings and permitted axioms are unchanged. No dependency download and no Palomar submission. All work remains on Ubuntu, with about6.04GiB free.
 
 Verified under Lean v4.36.0-rc2: full build passed (17425 jobs); direct axiom audit passed for 16821 declarations using only propext, Classical.choice and Quot.sound; all 16570 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.03 GiB.
+
+
+## Actual bounded integer certificates from universal Noether forms and independent finite-field estimates
+
+IntegerPolynomialEvaluationMass proves a coefficient-mass bound for the actual evaluation of every integer multivariate polynomial at bounded integer arguments. For an actual finite family of forms it constructs a positive integer T=1+sum(coefficientMass) and a natural N=max(totalDegree), before every argument bound A>=1. Every actual evaluated form then has integer absolute value at most T*A^N. No coefficient-height correspondence is supplied as a hypothesis.
+
+P3UniversalNoetherForms defines the precise independent universal-form proposition: a finite family of integer polynomials in the actual degree-d homogeneous coefficient index detects geometric irreducibility over EVERY coefficient field by the nonvanishing of at least one evaluated form. Its general existence remains UNPROVED. P3CoefficientFieldTransport proves that the actual homogeneous coefficient-family polynomial commutes with field maps and reconstruction.
+
+P3FiniteFieldClassEstimate independently isolates the leading-coefficient-one estimate for the actual canonical smooth classes of a geometrically irreducible reduction over a finite field. For each eta>0 its lower prime threshold precedes every original integer polynomial. This proposition contains no integer good-prime certificate, coefficient-height bound, point-height population, auxiliary polynomial or covering statement. It remains UNPROVED in general, while every d<=1 case is internally proved from the actual coarse class estimate.
+
+P3CertificateFromNoetherForms constructs the actual good-prime integer z by evaluating one actual universal form at the original integer coefficients. The characteristic-zero criterion selects a form whose evaluation is nonzero; exact coefficient/evaluation maps prove z!=0. The coefficient-mass theorem supplies its polynomial height bound. At every prime not dividing z, the same evaluation is nonzero in the actual finite field, so the universal-form criterion proves geometric irreducibility of that reduction. The independent finite-field estimate then proves the actual class-count bound. Thus the entire previous UniformBudget proposition and the complete global auxiliary theorem are INTERNALLY DERIVED from these two earlier independent inputs.
+
+P3LinearNoetherForms constructs the four actual coordinate forms in degree one and proves their validity over every field, including positive characteristic. Their cardinality is exactly four. Together with the internally proved linear finite-field estimate this proves the full degree-one global auxiliary property without either unproved general input.
+
+UniformGeometricCountsNoetherFieldInput assembles the full aligned companionT1.7 from the universal-form and finite-field estimates at the SAME original three finite-degree families and original system,linear,typed caps. Canonical T1.7 becomes UniformGeometricCountsNoetherFieldInput.companion_T1_7. The only remaining independent geometric input IDs are P1-GEO-P3-UNIVERSAL-NOETHER-FORMS and P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE. The previous combined certificate input is an internally derived conclusion under these two propositions; no assertion of their general existence or an unconditional T1.7 theorem is made.
+
+Seven modules add sixteen theorems and nine definitions/hypothesis structures. The certificate is constructed from actual polynomial evaluations with actual uniform height control. Coverage remains163 proved,2 conditional,2 in_progress out of167, with all73 main results proved. The separate companionT19.17 input remains outstanding. Literal false T1.10/T5.1 remain distinguished from their checked corrected replacements. Original manuscript hashes, Lean v4.36.0-rc2, permitted axioms and all checking options are unchanged. One existing Mathlib source module was built selectively, without a dependency download. No Palomar registration. Ubuntu free space is about6.04GiB.
+
+Verified under Lean v4.36.0-rc2: full build passed (17441 jobs); direct axiom audit passed for 16837 declarations using only propext, Classical.choice and Quot.sound; all 16595 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.03 GiB.

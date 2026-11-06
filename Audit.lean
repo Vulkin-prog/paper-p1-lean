@@ -1584,6 +1584,10 @@ import PaperP1
 #print axioms PaperP1.IntegerPlaneShear.point_zero
 #print axioms PaperP1.IntegerPlaneShear.point_box
 #print axioms PaperP1.IntegerPlaneShear.height_budget
+#print axioms PaperP1.IntegerPolynomialEvaluationMass.monomial_bound
+#print axioms PaperP1.IntegerPolynomialEvaluationMass.evaluation_bound
+#print axioms PaperP1.IntegerPolynomialEvaluationMass.familyMass_pos
+#print axioms PaperP1.IntegerPolynomialEvaluationMass.family_bound
 #print axioms PaperP1.IntegerPolynomialGrowth.lower_power_bound
 #print axioms PaperP1.IntegerPolynomialReduction.map_evaluation
 #print axioms PaperP1.IntegerPolynomialReduction.map_dehomogenize
@@ -1800,6 +1804,8 @@ import PaperP1
 #print axioms PaperP1.OrdinaryWeightedProjectionComposition.ordinary_homogeneous
 #print axioms PaperP1.OrdinaryWeightedProjectionComposition.weighted_homogeneous
 #print axioms PaperP1.OrdinaryWeightedProjectionComposition.map_relation
+#print axioms PaperP1.P3CoefficientFieldTransport.map_polynomial
+#print axioms PaperP1.P3CoefficientFieldTransport.map_reconstruct
 #print axioms PaperP1.P3GlobalAuxiliaryFromCanonicalDivisors.exists_auxiliary
 #print axioms PaperP1.P3GlobalAuxiliaryLogCriterion.exists_auxiliary
 #print axioms PaperP1.P3GlobalAuxiliaryOfPrimeMass.exists_auxiliary
@@ -6140,6 +6146,9 @@ import PaperP1
 #print axioms PaperP1.P3CanonicalSurfaceDivisor.total_population
 #print axioms PaperP1.P3CanonicalSurfaceDivisor.integer_dvd
 #print axioms PaperP1.P3CanonicalSurfaceDivisor.det_zero_of_small
+#print axioms PaperP1.P3CertificateFromNoetherForms.budget_of_valid_forms
+#print axioms PaperP1.P3CertificateFromNoetherForms.uniform_budget
+#print axioms PaperP1.P3CertificateFromNoetherForms.uniform_auxiliary
 #print axioms PaperP1.P3CoarseCanonicalClassCount.fieldCoordinates_injective
 #print axioms PaperP1.P3CoarseCanonicalClassCount.reduced_evaluation
 #print axioms PaperP1.P3CoarseCanonicalClassCount.affine_zero
@@ -6147,6 +6156,11 @@ import PaperP1
 #print axioms PaperP1.P3CoarseCanonicalClassCount.card_le_of_reduced_nonzero
 #print axioms PaperP1.P3CoarseCanonicalClassCount.classes_empty_of_reduced_zero
 #print axioms PaperP1.P3CoarseCanonicalClassCount.cardinality_bound
+#print axioms PaperP1.P3FiniteFieldClassEstimate.of_degree_le_one
+#print axioms PaperP1.P3LinearNoetherForms.valid
+#print axioms PaperP1.P3LinearNoetherForms.exists_forms
+#print axioms PaperP1.P3LinearNoetherForms.card_forms
+#print axioms PaperP1.P3LinearNoetherForms.uniform_auxiliary_one
 #print axioms PaperP1.P3SharpSmoothClassAuxiliary.uniform_degree
 #print axioms PaperP1.P3SingleAuxiliaryCurveCover.cover_of_equation
 #print axioms PaperP1.PNTLogPrimePowerLower.weight_nonneg
@@ -11306,6 +11320,8 @@ import PaperP1
 #print axioms PaperP1.UniformGeometricCountsAuxiliaryInput.companion_T1_7
 #print axioms PaperP1.UniformGeometricCountsFiniteFieldInput.auxiliary_hypotheses
 #print axioms PaperP1.UniformGeometricCountsFiniteFieldInput.companion_T1_7
+#print axioms PaperP1.UniformGeometricCountsNoetherFieldInput.certificate_hypotheses
+#print axioms PaperP1.UniformGeometricCountsNoetherFieldInput.companion_T1_7
 #print axioms PaperP1.UniformGeometricCountsP3Input.linear_cover
 #print axioms PaperP1.UniformGeometricCountsP3Input.typed_cover
 #print axioms PaperP1.UniformGeometricCountsP3Input.source_hypotheses
