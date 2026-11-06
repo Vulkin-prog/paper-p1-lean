@@ -1,6 +1,20 @@
 # P1 — Lean formalization
 
-Current checkpoint P1-MATH-0650: the ACTUAL image kernel is exactly
+Current checkpoint P1-MATH-0651: the ACTUAL last-variable
+specialization has exact kernel (Z-1) and the literal graded chart
+is explicitly equivalent to its affine quotient. Homogeneous
+irreducibility survives a nonempty last chart over EVERY field.
+First-variable monicity and positive homogeneous degree prove full
+primitive degree and chart nonemptiness INTERNALLY. No affine
+irreducibility or domain input, or extra transparency/checking flag,
+is used. ORIGINAL integer-model monic normalization, coefficient
+transport and effective prime/cover assembly remain UNPROVED.
+The unrestricted P3 input is unchanged. Canonical T1.7 retains ONLY
+its prior P3 input in degrees>2 at the original families and caps.
+Coverage stays 163 proved, 2 conditional, 2 in_progress out of 167;
+all 73 main results proved. No Palomar registration.
+
+Historical checkpoint P1-MATH-0650: the ACTUAL image kernel is exactly
 (P), its root-algebra quotient is explicitly equivalent to the image,
 and ALL literal affine hypersurface solutions are in a proved exact
 equivalence with ALL image points. Their cardinalities are equal.
@@ -570,7 +584,7 @@ recorded in the linked ledger and [current status](docs/FORMALIZATION_STATUS.md)
 
 Companion T1.10 needs an enlarged alignment exclusion for unequal old/new widths: its literal radius-one version has an unconditional formal counterexample. The corrected coarse4/3 profile is proved under explicit geometric inputs; its sharper31/24 form remains open; see [the scope correction](docs/ASYMMETRIC_ALIGNMENT_SCOPE.md).
 
-The main optimal4/3 quadratic approximation power is now proved under explicit BCN and finite geometric properties, including both bounds, exact actual parameters, nominal-mean bias and eventual probability status. The optimal41/30 third factorial cumulant, full third absolute activity and aligned-channel triple claims are now proved under explicit geometric inputs, withBCN retained for the full connected argument. The actual original count and its retained modification converge in total variation to the actual-mean and nominal-mean Poisson laws without unproved inputs (P1-MATH-0413); quantitative optimal law rates remain separate. Exact fourth-cumulant component identities and unconditional weak, irregular and incompatible pair bounds are proved. In particular, the actual absolute pair activity is asymptotic to half the actual second factorial cumulant, without BCN or a complete pair profile. The contact activity bound at every fixed order now holds unconditionally on every dyadic subground, including irregular starts and zero marginals. The activation probability of the actual principal edge family now has the unconditional exponent -2/3, with any fixed epsilon margin. The planar normal budget T20.4 is now proved with improved constants and an integer-fibre argument. T20.6, the prescribed-plane transverse-product count and its actual affine mass bound, is now proved internally with three motifs and no Pila premise. The project records **648 confirmed mathematical improvements and two statement-scope corrections**. See [current status](docs/FORMALIZATION_STATUS.md), [the activity alignment](docs/FIXED_ABSOLUTE_ACTIVITY_ALIGNMENT.md) and [the mathematical change log](docs/MATHEMATICAL_CHANGELOG.md).
+The main optimal4/3 quadratic approximation power is now proved under explicit BCN and finite geometric properties, including both bounds, exact actual parameters, nominal-mean bias and eventual probability status. The optimal41/30 third factorial cumulant, full third absolute activity and aligned-channel triple claims are now proved under explicit geometric inputs, withBCN retained for the full connected argument. The actual original count and its retained modification converge in total variation to the actual-mean and nominal-mean Poisson laws without unproved inputs (P1-MATH-0413); quantitative optimal law rates remain separate. Exact fourth-cumulant component identities and unconditional weak, irregular and incompatible pair bounds are proved. In particular, the actual absolute pair activity is asymptotic to half the actual second factorial cumulant, without BCN or a complete pair profile. The contact activity bound at every fixed order now holds unconditionally on every dyadic subground, including irregular starts and zero marginals. The activation probability of the actual principal edge family now has the unconditional exponent -2/3, with any fixed epsilon margin. The planar normal budget T20.4 is now proved with improved constants and an integer-fibre argument. T20.6, the prescribed-plane transverse-product count and its actual affine mass bound, is now proved internally with three motifs and no Pila premise. The project records **649 confirmed mathematical improvements and two statement-scope corrections**. See [current status](docs/FORMALIZATION_STATUS.md), [the activity alignment](docs/FIXED_ABSOLUTE_ACTIVITY_ALIGNMENT.md) and [the mathematical change log](docs/MATHEMATICAL_CHANGELOG.md).
 
 Article13.1 now has a complete actual short-basis construction, with
 both physical projections and the common square-class map injective.
@@ -1977,3 +1991,5 @@ P1-MATH-0648 identifies the actual image generated by y,Y^D,X^D with the paramet
 P1-MATH-0649 proves N_image<=N_source+2*d^3*p and a uniform (1+eta)*p^2 bound for the actual affine image, deriving its conductor internally from the literal monic full-degree irreducible equation. Original integer-model and hypersurface-point alignment remain unfinished; the unrestricted P3 input is unchanged.
 
 P1-MATH-0650 proves the exact actual image kernel (P), the root-algebra quotient equivalence and an exhaustive equivalence of all image points with all literal affine hypersurface solutions. Their uniform (1+eta)*p^2 bound is internal. Original homogeneous integer-model normalization and effective cover assembly remain unfinished.
+
+P1-MATH-0651 proves exact last-chart quotients and preservation of homogeneous irreducibility over every field. Monicity and positive degree imply full primitive degree and chart nonemptiness internally. Original integer-model normalization and effective prime/cover assembly remain unfinished.

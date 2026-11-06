@@ -30984,6 +30984,55 @@
         "status": "not_integrated"
       },
       "validation_commit": "3d64650600caf5473e416fa1bd4e9496fcd599c4"
+    },
+    {
+      "id": "P1-MATH-0651",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The actual reduced homogeneous equation had not been connected to an irreducible literal last-chart affine polynomial with retained full primitive degree.",
+      "finding": "The actual last affine chart is an explicit quotient by the last variable minus one. Homogeneous irreducibility survives every nonempty last chart over every field. Monicity in the first variable and positive homogeneous degree internally give full primitive degree and chart nonemptiness.",
+      "proposed_revision": "Use this proved last-chart irreducibility and degree theorem after normalizing the original integer reduction to monic form. Keep the integer coefficient transport and effective exceptional-prime budget explicit until verified.",
+      "impact": "Discharges literal last-chart quotient, irreducibility and full primitive-degree preservation. Original integer-model monic normalization and effective original-family arithmetic assembly remain unfinished.",
+      "evidence": [
+        "PaperP1.HomogeneousLastChartIrreducible.ideal_homogeneous",
+        "PaperP1.HomogeneousLastChartIrreducible.chartCoordinate_mem",
+        "PaperP1.HomogeneousLastChartIrreducible.chartCoordinate_ne_zero",
+        "PaperP1.HomogeneousLastChartIrreducible.chartIdeal_eq",
+        "PaperP1.HomogeneousLastChartIrreducible.affineQuotient_isDomain",
+        "PaperP1.HomogeneousLastChartIrreducible.irreducible",
+        "PaperP1.HomogeneousLastChartIrreducible.outer_degree",
+        "PaperP1.HomogeneousLastChartIrreducible.last_not_mem",
+        "PaperP1.HomogeneousLastChartIrreducible.monic_irreducible",
+        "PaperP1.LastChartQuotient.dehom_section",
+        "PaperP1.LastChartQuotient.surjective",
+        "PaperP1.LastChartQuotient.kernel",
+        "PaperP1.LastChartQuotient.quotientEquiv_mk",
+        "PaperP1.LastChartQuotient.variable_mem",
+        "PaperP1.LastChartQuotient.originalEquiv_dehomogenization",
+        "PaperP1.HomogeneousLastChartIrreducible.CoordinateRing",
+        "PaperP1.HomogeneousLastChartIrreducible.piece",
+        "PaperP1.HomogeneousLastChartIrreducible.grading",
+        "PaperP1.HomogeneousLastChartIrreducible.chartCoordinate",
+        "PaperP1.HomogeneousLastChartIrreducible.equiv",
+        "PaperP1.LastChartQuotient.sectionMap",
+        "PaperP1.LastChartQuotient.quotientEquiv",
+        "PaperP1.LastChartQuotient.originalEquiv"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17793 jobs); direct axiom audit passed for 17539 declarations using only propext, Classical.choice and Quot.sound; all 17492 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.87 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

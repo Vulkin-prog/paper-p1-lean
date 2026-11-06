@@ -1,6 +1,20 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0650: the ACTUAL image kernel is exactly
+Current checkpoint P1-MATH-0651: the ACTUAL last-variable
+specialization has exact kernel (Z-1) and the literal graded chart
+is explicitly equivalent to its affine quotient. Homogeneous
+irreducibility survives a nonempty last chart over EVERY field.
+First-variable monicity and positive homogeneous degree prove full
+primitive degree and chart nonemptiness INTERNALLY. No affine
+irreducibility or domain input, or extra transparency/checking flag,
+is used. ORIGINAL integer-model monic normalization, coefficient
+transport and effective prime/cover assembly remain UNPROVED.
+The unrestricted P3 input is unchanged. Canonical T1.7 retains ONLY
+its prior P3 input in degrees>2 at the original families and caps.
+Coverage stays 163 proved, 2 conditional, 2 in_progress out of 167;
+all 73 main results proved. No Palomar registration.
+
+Historical checkpoint P1-MATH-0650: the ACTUAL image kernel is exactly
 (P), its root-algebra quotient is explicitly equivalent to the image,
 and ALL literal affine hypersurface solutions are in a proved exact
 equivalence with ALL image points. Their cardinalities are equal.
@@ -690,7 +704,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records648 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records649 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -809,7 +823,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **17524 audited theorem/lemma declarations**. This
+- The project currently has **17539 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -30096,3 +30110,16 @@ ActualAffineHypersurfacePointCount transfers the already proved source-specific 
 Two modules add eleven theorems and five definitions. This discharges exact affine hypersurface-kernel, quotient, exhaustive field-point identification and the actual hypersurface point-bound assembly. Verification for the ORIGINAL reduced homogeneous integer equation, monic normalization, controlled-prime irreducibility and effective original-family cover assembly remain unfinished. The unrestricted P3 input is unchanged. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families/caps. Coverage remains 163 proved, 2 conditional, 2 in_progress out of 167; all 73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Work stays on Ubuntu with about 54.9 GiB available and no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17789 jobs); direct axiom audit passed for 17524 declarations using only propext, Classical.choice and Quot.sound; all 17469 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.88 GiB.
+
+
+## Literal last affine charts preserve homogeneous irreducibility and full primitive degree over every field
+
+LastChartQuotient constructs the actual last-variable specialization for an arbitrary finite number of variables over any commutative ring. It proves a concrete polynomial section, surjectivity and the exact kernel generated by the last variable minus one. The resulting quotient equivalence is identified with the actual graded affine chart, with an exact formula on every dehomogenized polynomial.
+
+HomogeneousLastChartIrreducible constructs the actual graded quotient by a homogeneous equation, its last chart and the literal affine equation quotient. Their concrete ring equivalence transfers the domain property of a nonempty chart of an irreducible homogeneous hypersurface to the literal dehomogenized quotient. Hence the actual last-chart polynomial is irreducible over EVERY coefficient field, including finite fields, when the chart variable is not in the principal equation ideal. No affine irreducibility or domain premise is assumed.
+
+For a homogeneous polynomial monic in the first variable, the degree in that variable is proved equal to its homogeneous degree. If this degree is positive and there is at least one other variable, the last variable is proved not to belong to the principal equation ideal, by mapping divisibility into the first-variable polynomial algebra and comparing degrees. Thus monic homogeneous irreducibility gives actual last-chart irreducibility with no chart-nonemptiness premise. No checking option or transparency flag is added.
+
+Two modules add fifteen theorems and eight definitions. This discharges the actual last-chart quotient, irreducibility and full primitive-degree steps. Application to the ORIGINAL reduced integer model still needs monic normalization and its exact scalar/coefficient transport; effective prime budgets and original-family cover assembly remain unfinished. The unrestricted P3 input is unchanged. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families/caps. Coverage remains 163 proved, 2 conditional, 2 in_progress out of 167; all 73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Work stays on Ubuntu with about 54.9 GiB available and no dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17793 jobs); direct axiom audit passed for 17539 declarations using only propext, Classical.choice and Quot.sound; all 17492 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.87 GiB.
