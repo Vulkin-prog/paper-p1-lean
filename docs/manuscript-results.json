@@ -41572,7 +41572,8 @@
             "PaperP1.ConductorPointExtension.goodPointEquiv"
           ]
         }
-      ]
+      ],
+      "validation_commit": "73085d80e6123f481c9fa02bbdde2ae9d326a218"
     },
     {
       "label": "p1:arith:dense",
