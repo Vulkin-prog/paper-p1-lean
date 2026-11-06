@@ -1,6 +1,17 @@
 # Actual projective scheme map
 
-Current checkpoint P1-MATH-0668: actual prime-divisibility pair
+Current checkpoint P1-MATH-0669: the ACTUAL prime band
+log log N<p<=log N has proved divergent reciprocal mass and
+negligible prime-free and square-divisor exceptions. The retained
+dyadic set has density 1-o(1), and its Ramare quotient identity is
+EXACT, including the coupled domain. All are UNCONDITIONAL.
+Omitted-support transport and full analytic short-average assembly
+remain unfinished. T19.17 stays conditional; T1.7 is complete.
+Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main
+results proved. Original false scopes and checked corrections remain.
+No Palomar registration.
+
+Historical checkpoint P1-MATH-0668: actual prime-divisibility pair
 moments and an unconditional finite avoidance sieve are PROVED.
 For H=sum_{p in P}1/p>0, |avoid(P,X)|<=X/H+|P|^2/H^2.
 Floor errors and every diagonal term are internal. Growing-band
@@ -22936,3 +22947,18 @@ Every integer in the literal avoidance set has count_P(n)=0. Positivity and the 
 This closes an elementary finite factor-avoidance sieve needed to control omitted support in the independent multiplicative short-average route. Applying it to actual growing prime bands, propagating the omitted-support budgets and proving stronger large values and logarithmic short-average decay remain unfinished. The finite avoidance estimate alone does not imply smooth-number short-interval concentration. T19.17 retains its explicit analytic input; complete original T1.7 remains unconditional. Coverage stays 164 proved, 1 conditional, 2 in_progress out of 167; all 73 main results proved. The two false original scopes and checked corrected replacements are unchanged. Original source hashes, Lean v4.36.0-rc2, checking options and allowed axioms are unchanged. Ubuntu retains about 54.5 GiB; no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17877 jobs); direct axiom audit passed for 17708 declarations using only propext, Classical.choice and Quot.sound; all 17688 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.52 GiB.
+
+
+## Actual growing prime bands with negligible prime-free and square-divisor support exceptions
+
+SlowPrimeBandSieve defines the literal finite set of primes log log N < p <= log N, with the exact natural-floor endpoints. The lower endpoint tends to infinity, and the endpoints are ordered and >=2 eventually. The already internal finite prime-harmonic window estimate proves that H_N=sum_{p in P_N}1/p tends to infinity. The proof computes the actual log-log gap as u-log u for u=log log log N and proves this divergence, retaining the uniform Mertens error. No mass-growth or prime-distribution proposition is an input.
+
+The actual prime cardinality is at most floor(log N), so |P_N|^2/N tends to zero by the internal logarithm-versus-power estimate. The checked finite avoidance sieve then proves |avoid(P_N,2N)|/N ->0. Separately, the actual reciprocal-square sum on the band is at most 2/(log log N), using the internal finite integer power tail. Exact square-divisibility counts give |squareExceptions(P_N,X)|<=2X/(log log N) for every X once log log N>=2, and hence |squareExceptions(P_N,2N)|/N ->0. Floor endpoints and every square-divisor exception are retained.
+
+The literal union of the prime-free and square-divisor sets therefore has cardinality o(N). The actual good set is [N,2N) minus this union; its actual missing cardinality divided by N tends to zero. Every member is positive, has a prime divisor in the selected band and has no squared divisor from that band. The internal Ramare quotient identity applies exactly to the actual retained set for every completely multiplicative complex function. The literal quotient domain and the condition p*m in good(N) are retained, rather than replaced by an unjustified Cartesian product.
+
+For EVERY fixed a>0, all primes in this actual band are <=floor(N^a) eventually, with a threshold before the varying prime. This verifies compatibility with the polynomial smoothness cutoff used in the independent T19.17 route. One module adds seventeen theorems and five definitions. All support negligibility, reciprocal mass, prime-square errors and retained-set identities are unconditional.
+
+These results close a concrete slowly growing factor-rich support construction. They do not prove multiplicative short-average concentration. Transport of omitted-support errors, stronger large-value estimates, handling the coupled quotient domain and the logarithmic short-average assembly remain unfinished. T19.17 keeps its explicit analytic input. Original T1.7 remains complete and unconditional. Coverage stays 164 proved, 1 conditional, 2 in_progress out of 167; all 73 main results proved. Original false scopes and checked corrected replacements are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and allowed axioms are unchanged. Ubuntu retains about 54.5 GiB; no dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17879 jobs); direct axiom audit passed for 17725 declarations using only propext, Classical.choice and Quot.sound; all 17710 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.51 GiB.

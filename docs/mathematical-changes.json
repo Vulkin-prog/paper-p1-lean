@@ -31689,6 +31689,54 @@
         "status": "not_integrated"
       },
       "validation_commit": "bbe18dfe18b5bc895ba303bf8a85abe14f48f385"
+    },
+    {
+      "id": "P1-MATH-0669",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The finite sieve still needed an actual growing prime range with divergent reciprocal mass, negligible normalized cardinality error and negligible square-divisor exceptions before its retained Ramare support could be used.",
+      "finding": "The actual band log log N<p<=log N has all of these properties internally. Its prime-free and squared-prime exceptions form an actual o(N) set, and the Ramare identity holds exactly on the retained dyadic support.",
+      "proposed_revision": "Use the proved actual slow prime band and its literal retained-set identity. Preserve the coupled quotient condition p*m in good(N), and prove omitted-support transport and the required frequency estimates before asserting short-average concentration.",
+      "impact": "Closes the concrete factor-rich support and square-exception sieve for this slow band without an external sieve or mass-growth input. The full T19.17 short-average input remains unproved.",
+      "evidence": [
+        "PaperP1.SlowPrimeBandSieve.lower_tendsto",
+        "PaperP1.SlowPrimeBandSieve.upper_tendsto",
+        "PaperP1.SlowPrimeBandSieve.geometry_eventually",
+        "PaperP1.SlowPrimeBandSieve.real_sub_log_tendsto",
+        "PaperP1.SlowPrimeBandSieve.harmonic_gap_tendsto",
+        "PaperP1.SlowPrimeBandSieve.reciprocal_mass_tendsto",
+        "PaperP1.SlowPrimeBandSieve.prime_card_bound",
+        "PaperP1.SlowPrimeBandSieve.normalized_card_square_tendsto",
+        "PaperP1.SlowPrimeBandSieve.primes_below_polynomial_cutoff_eventually",
+        "PaperP1.SlowPrimeBandSieve.avoidance_density_tendsto",
+        "PaperP1.SlowPrimeBandSieve.square_tail_bound",
+        "PaperP1.SlowPrimeBandSieve.square_exceptions_card_bound",
+        "PaperP1.SlowPrimeBandSieve.square_exceptions_density_tendsto",
+        "PaperP1.SlowPrimeBandSieve.excluded_density_tendsto",
+        "PaperP1.SlowPrimeBandSieve.good_support",
+        "PaperP1.SlowPrimeBandSieve.missing_good_density_tendsto",
+        "PaperP1.SlowPrimeBandSieve.good_ramare_sum",
+        "PaperP1.SlowPrimeBandSieve.lower",
+        "PaperP1.SlowPrimeBandSieve.upper",
+        "PaperP1.SlowPrimeBandSieve.primes",
+        "PaperP1.SlowPrimeBandSieve.excluded",
+        "PaperP1.SlowPrimeBandSieve.good"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17879 jobs); direct axiom audit passed for 17725 declarations using only propext, Classical.choice and Quot.sound; all 17710 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.51 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
