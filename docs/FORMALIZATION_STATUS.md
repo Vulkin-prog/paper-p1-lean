@@ -171,7 +171,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records597 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records598 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -290,7 +290,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **16736 audited theorem/lemma declarations**. This
+- The project currently has **16744 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -28868,3 +28868,20 @@ P3GlobalAuxiliaryFromCanonicalDivisors constructs the actual height-first standa
 Four modules add fourteen theorems and nine definitions. This closes canonical class construction and the full algebraic passage from the actual global mixed-prime divisor to a global auxiliary polynomial. The quantitative lower bound for that divisor at the sharp degree scale is NOT proved here and remains required before discharging the explicit global auxiliary input in canonical companionT1.7. No numbered result is promoted; coverage stays163 proved,2 conditional,2 in_progress out of167, with all73 main results proved. Original manuscript hashes, compiler, heartbeat settings and permitted axioms are unchanged. No dependency download and no Palomar submission. Ubuntu root has about6.07GiB free.
 
 Verified under Lean v4.36.0-rc2: full build passed (17361 jobs); direct axiom audit passed for 16736 declarations using only propext, Classical.choice and Quot.sound; all 16465 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.07 GiB.
+
+
+## Explicit optimized canonical surface divisor lower bound and logarithmic global auxiliary criterion
+
+CommonCutoffSurfaceBudget proves an explicit real inequality for the literal natural floor L=floor(sqrt(2*A/K)), valid for every A>=0 and K>0. It includes the case L=0. The floor, square, cube and linear error terms are bounded directly and yield L*A-K*L*(L+1)*(L+2)/6 >= (2/3)*A*sqrt(2*A/K)-3*A.
+
+For ANY finite class type and ANY actual natural populations n_c, it chooses the same cutoff L=floor(sqrt(2*s/k)) in every class, with s=sum n_c and k=card(classes). It proves the literal NATURAL exponent sum_c (L*n_c-choose(L+2,3)) has real value at least (2/3)*s*sqrt(2*s/k)-3*s. Empty class types, small populations and all truncated natural subtractions are handled. No convexity, supplied asymptotic population correspondence or determinant-valuation estimate is assumed. This attains the required leading surface scale with an explicit linear error.
+
+PrimePowerLogSeparation proves the exact logarithm of a natural prime-power product and the actual strict integer comparison s!*H^W < product(p^E_p) from log(s!)+W*log(H) < sum E_p*log(p), with H>=1. Every positivity condition and real-to-natural comparison is proved.
+
+P3CanonicalDivisorLowerBound computes the literal smooth population of each prime from checkpoint599's canonical classes and chooses the optimized common cutoff. It proves the resulting actual exponent is bounded below by (2/3)*s_p*sqrt(2*s_p/k_p)-3*s_p, where k_p is the actual finite canonical class count and s_p is the exact number of assigned columns. It proves both the exact logarithm of the actual canonical divisor and its lower bound by the weighted sum of these explicit population expressions.
+
+P3GlobalAuxiliaryLogCriterion connects that primitive numerical inequality to the complete actual global auxiliary construction. For every injective full-size tuple of original points, if some finite prime set makes the explicit weighted population sum exceed log(s(d,e)!)+W(d,e)*log(H), it internally selects the cutoffs, proves integer separation, annihilates every actual full-size minor and constructs a degree-e homogeneous integer polynomial G vanishing on the entire original finite set and not divisible by the original rational equation. No auxiliary equation, point cover or determinant vanishing is an assumed correspondence.
+
+Four modules add eight theorems and four definitions. The common cutoff closes the actual finite-population optimization, including its error term. The remaining sharp global quantitative comparison still requires finite-field class estimates and control of gradient-divisible reductions across primes; it is not proved by this numerical criterion. Canonical companionT1.7 therefore retains its sole explicit UNPROVED global auxiliary input. Coverage stays163 proved,2 conditional,2 in_progress out of167, with all73 main results proved. Original manuscript hashes, compiler, heartbeat settings and permitted axioms are unchanged. No dependency download and no Palomar submission. A lossless repository-history compaction preserves all23290 Git object identifiers exactly; full Git integrity checking passed. All work remains on Ubuntu, with about6.14GiB free.
+
+Verified under Lean v4.36.0-rc2: full build passed (17369 jobs); direct axiom audit passed for 16744 declarations using only propext, Classical.choice and Quot.sound; all 16477 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.14 GiB.

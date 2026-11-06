@@ -1793,6 +1793,7 @@ import PaperP1
 #print axioms PaperP1.OrdinaryWeightedProjectionComposition.weighted_homogeneous
 #print axioms PaperP1.OrdinaryWeightedProjectionComposition.map_relation
 #print axioms PaperP1.P3GlobalAuxiliaryFromCanonicalDivisors.exists_auxiliary
+#print axioms PaperP1.P3GlobalAuxiliaryLogCriterion.exists_auxiliary
 #print axioms PaperP1.P3HeightControlledEquation.scalar_of_dvd
 #print axioms PaperP1.P3HeightControlledEquation.integer_evaluation
 #print axioms PaperP1.P3HeightControlledEquation.exists_model_or_auxiliary
@@ -2974,6 +2975,8 @@ import PaperP1
 #print axioms PaperP1.ClippedPowerSum.finite_tail_le
 #print axioms PaperP1.ClippedPowerSum.finite_tail_le_power
 #print axioms PaperP1.CoarseSaddlePowerErrors.power_negligible
+#print axioms PaperP1.CommonCutoffSurfaceBudget.real_floor_budget
+#print axioms PaperP1.CommonCutoffSurfaceBudget.class_budget
 #print axioms PaperP1.CompactCurvePopulationEnds.closure_box
 #print axioms PaperP1.CompactCurvePopulationEnds.closure_curve
 #print axioms PaperP1.CompactCurvePopulationEnds.closure_comparison
@@ -3448,6 +3451,9 @@ import PaperP1
 #print axioms PaperP1.P3AuxiliaryCoverExponentBudget.power_identity
 #print axioms PaperP1.P3AuxiliaryCoverExponentBudget.family_bound
 #print axioms PaperP1.P3AuxiliaryCoverExponentBudget.exception_bound
+#print axioms PaperP1.P3CanonicalDivisorLowerBound.exponent_lower_bound
+#print axioms PaperP1.P3CanonicalDivisorLowerBound.log_divisor
+#print axioms PaperP1.P3CanonicalDivisorLowerBound.log_divisor_lower_bound
 #print axioms PaperP1.P3OptimizedSurfaceDivisor.cast_divisor_eventually
 #print axioms PaperP1.P3OptimizedSurfaceDivisor.divisor_ratio
 #print axioms PaperP1.P3OptimizedSurfaceDivisor.weight_divisor_ratio
@@ -6389,6 +6395,8 @@ import PaperP1
 #print axioms PaperP1.PrimePowerAllocations.exists_allocation
 #print axioms PaperP1.PrimePowerAllocations.prime_power_receiver
 #print axioms PaperP1.PrimePowerAllocations.exists_allocation_of_dvd_lcm
+#print axioms PaperP1.PrimePowerLogSeparation.log_product
+#print axioms PaperP1.PrimePowerLogSeparation.separation
 #print axioms PaperP1.PrimePowerTail.naturalClip_succ
 #print axioms PaperP1.PrimePowerTail.constant_pos
 #print axioms PaperP1.PrimePowerTail.finite_prime_tail_mul_log_le

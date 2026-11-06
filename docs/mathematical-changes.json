@@ -28603,6 +28603,44 @@
         "status": "not_integrated"
       },
       "validation_commit": "32904ea432dcd783dd77e232e1d4272b66e658bb"
+    },
+    {
+      "id": "P1-MATH-0600",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The global determinant construction requires an explicit sharp lower bound for the sum of the actual class exponents, including natural truncation and the exact count of assigned columns.",
+      "finding": "A common floor cutoff yields the actual exponent lower bound (2/3)*s*sqrt(2*s/k)-3*s for arbitrary class populations. Its weighted prime sum gives a fully internal numerical criterion constructing an independent global auxiliary polynomial.",
+      "proposed_revision": "Use the literal common cutoff floor(sqrt(2*s/k)), retain the explicit linear error and the actual smooth population at each prime, and prove the remaining sharp finite-field and gradient-loss estimates separately.",
+      "impact": "Removes finite-population optimization, floor errors and logarithm-to-integer separation from the unresolved global auxiliary construction. Keeps the required quantitative arithmetic estimates explicit.",
+      "evidence": [
+        "PaperP1.P3GlobalAuxiliaryLogCriterion.exists_auxiliary",
+        "PaperP1.CommonCutoffSurfaceBudget.real_floor_budget",
+        "PaperP1.CommonCutoffSurfaceBudget.class_budget",
+        "PaperP1.P3CanonicalDivisorLowerBound.exponent_lower_bound",
+        "PaperP1.P3CanonicalDivisorLowerBound.log_divisor",
+        "PaperP1.P3CanonicalDivisorLowerBound.log_divisor_lower_bound",
+        "PaperP1.PrimePowerLogSeparation.log_product",
+        "PaperP1.PrimePowerLogSeparation.separation",
+        "PaperP1.CommonCutoffSurfaceBudget.cutoff",
+        "PaperP1.P3CanonicalDivisorLowerBound.smoothPopulation",
+        "PaperP1.P3CanonicalDivisorLowerBound.commonCutoff",
+        "PaperP1.P3CanonicalDivisorLowerBound.lowerBound"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17369 jobs); direct axiom audit passed for 16744 declarations using only propext, Classical.choice and Quot.sound; all 16477 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.14 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

@@ -4353,3 +4353,7 @@ public import PaperP1.Algebra.P3GlobalAuxiliaryFromCanonicalDivisors
 public import PaperP1.Algebra.PolynomialEvaluationCongruence
 public import PaperP1.Arithmetic.P3CanonicalSmoothResidues
 public import PaperP1.Arithmetic.P3CanonicalSurfaceDivisor
+public import PaperP1.Algebra.P3GlobalAuxiliaryLogCriterion
+public import PaperP1.Analysis.CommonCutoffSurfaceBudget
+public import PaperP1.Analysis.P3CanonicalDivisorLowerBound
+public import PaperP1.Arithmetic.PrimePowerLogSeparation
