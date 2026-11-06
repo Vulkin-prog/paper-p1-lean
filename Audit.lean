@@ -3440,6 +3440,10 @@ import PaperP1
 #print axioms PaperP1.BothGraphDerivativeFormulas.first
 #print axioms PaperP1.BothGraphDerivativeFormulas.transpose_trajectory
 #print axioms PaperP1.BothGraphDerivativeFormulas.second
+#print axioms PaperP1.BoundedAmplificationFactor.span_pos
+#print axioms PaperP1.BoundedAmplificationFactor.constant_pos
+#print axioms PaperP1.BoundedAmplificationFactor.real_factor_bound
+#print axioms PaperP1.BoundedAmplificationFactor.sampled_factor_bound
 #print axioms PaperP1.BoxedLocalUnitGraphMaps.exists_bounded_interval
 #print axioms PaperP1.BoxedLocalUnitGraphMaps.exists_through_parameter
 #print axioms PaperP1.BoxedLocalUnitGraphMaps.exists_at_curve_point

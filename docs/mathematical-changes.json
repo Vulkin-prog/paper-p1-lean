@@ -36238,6 +36238,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "95aadef7954207402c7f9bcf3870155dc6ea324a"
+    },
+    {
+      "id": "P1-MATH-0798",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "An amplified mean bound with bounded span still contains its true T/L ratio and sampled bandwidth. These factors must be normalized quantitatively before choosing the amplification order.",
+      "finding": "With span=2*exp(3) and the explicit positive constant C=exp(1)*(sqrt(pi)*span+2*pi*span^2), the ACTUAL mean-value endpoint factor is <=C*(T/L+1)*B whenever M<=span*L and B>=0. The actual sampled factor is <=18*C*((T+1)/L+1)*B when its centered bandwidth lies in [0,4]. Four theorems and two constants prove the algebraic normalization and positivity, without discarding the residual frequency-height to lower-length ratio.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Bounded actual amplification span normalizes continuous and sampled mean factors uniformly. The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.BoundedAmplificationFactor.span_pos",
+        "PaperP1.BoundedAmplificationFactor.constant_pos",
+        "PaperP1.BoundedAmplificationFactor.real_factor_bound",
+        "PaperP1.BoundedAmplificationFactor.sampled_factor_bound",
+        "PaperP1.BoundedAmplificationFactor.span",
+        "PaperP1.BoundedAmplificationFactor.constant"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18163 jobs); direct axiom audit passed for 18575 declarations using only propext, Classical.choice and Quot.sound; all 18760 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.17 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

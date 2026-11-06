@@ -4737,3 +4737,4 @@ public import PaperP1.Analysis.MixedFrequencyAmplification
 public import PaperP1.Analysis.ActualMixedPrimeMean
 public import PaperP1.Analysis.NarrowBandReciprocalMass
 public import PaperP1.Analysis.RoundedAmplificationGeometry
+public import PaperP1.Analysis.BoundedAmplificationFactor
