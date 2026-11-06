@@ -45393,7 +45393,8 @@
             "PaperP1.OriginalSourceProjectedCover.uniform_cover"
           ]
         }
-      ]
+      ],
+      "validation_commit": "227638d9bf79deaf6025a320edd95d8ee3ebf80c"
     },
     {
       "label": "p1:arith:dense",
