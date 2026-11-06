@@ -1709,6 +1709,11 @@ import PaperP1
 #print axioms PaperP1.LinearCoordinateCurveImageDegree.exists_nat_linear_hilbert
 #print axioms PaperP1.LinearFirstCoordinateNormalization.normalize
 #print axioms PaperP1.LinearFirstCoordinateNormalization.exists_nonzero_coefficient
+#print axioms PaperP1.LinearFractionalValueBijection.denominator_ne_zero
+#print axioms PaperP1.LinearFractionalValueBijection.value_ne_one
+#print axioms PaperP1.LinearFractionalValueBijection.inverse_ne_negative
+#print axioms PaperP1.LinearFractionalValueBijection.left_inverse
+#print axioms PaperP1.LinearFractionalValueBijection.right_inverse
 #print axioms PaperP1.LinearHilbertGrowth.unique
 #print axioms PaperP1.LinearHilbertGrowth.polynomial_affine
 #print axioms PaperP1.LinearHilbertGrowth.of_affine_polynomial
@@ -6863,6 +6868,12 @@ import PaperP1
 #print axioms PaperP1.QuadraticCharacterRootCount.cardinality
 #print axioms PaperP1.QuadraticCharacterRootCount.quadratic_character_bounds
 #print axioms PaperP1.QuadraticCharacterRootCount.quadratic_character_abs_le_one
+#print axioms PaperP1.QuadraticCharacterTwoFactorSum.sum_away
+#print axioms PaperP1.QuadraticCharacterTwoFactorSum.product_character
+#print axioms PaperP1.QuadraticCharacterTwoFactorSum.sum_eq_neg_one
+#print axioms PaperP1.QuadraticCharacterTwoFactorSum.scaled_sum
+#print axioms PaperP1.QuadraticCharacterTwoFactorSum.scaled_sum_abs_le_one
+#print axioms PaperP1.QuadraticCharacterTwoFactorSum.two_shift_sum
 #print axioms PaperP1.QuadraticDegreeUniformFieldCount.degree_square_le_profile
 #print axioms PaperP1.QuadraticDegreeUniformFieldCount.rational_geometric_count
 #print axioms PaperP1.QuadraticDegreeUniformFieldCount.rational_count
@@ -7379,6 +7390,10 @@ import PaperP1
 #print axioms PaperP1.SmallPrimeShortBasisBudget.log_floor_power_lower
 #print axioms PaperP1.SmallPrimeShortBasisBudget.constraint_cost
 #print axioms PaperP1.SmallPrimeShortBasisBudget.constraint_cost_le_large_scale
+#print axioms PaperP1.SmallSplitBranchPointBound.union_nonempty_or
+#print axioms PaperP1.SmallSplitBranchPointBound.small_branch_abs_bound
+#print axioms PaperP1.SmallSplitBranchPointBound.error_bound
+#print axioms PaperP1.SmallSplitBranchPointBound.uniform_upper_bound
 #print axioms PaperP1.SmallTransverseHostData.regular_reindex
 #print axioms PaperP1.SmallTransverseHostData.exists_system
 #print axioms PaperP1.SmallTransverseHostData.many_of_cover

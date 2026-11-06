@@ -29767,6 +29767,48 @@
         "status": "not_integrated"
       },
       "validation_commit": "3e8ae1e0343750180d3e72dd9077cb75c8d1814d"
+    },
+    {
+      "id": "P1-MATH-0621",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The exact source character expansion still needed internally proved cancellation beyond a single linear factor, with reduction collisions kept explicit.",
+      "finding": "The two-factor sum equals -1 by an actual fractional-linear bijection. Nonempty branch unions of size at most2 have an unconditional absolute sum bound1 when shifts remain distinct in the finite field, giving an actual source error at most (2^k-1)*q for the stated subclass.",
+      "proposed_revision": "Add the exact two-factor identity and the small-branch source corollary. State distinctness after reduction and retain the higher-degree cancellation and geometric-transfer gaps explicitly.",
+      "impact": "Discharges cancellation for the stated small-branch subclass without a Weil or point-count premise. No general input or numbered-result dependency is discharged.",
+      "evidence": [
+        "PaperP1.LinearFractionalValueBijection.denominator_ne_zero",
+        "PaperP1.LinearFractionalValueBijection.value_ne_one",
+        "PaperP1.LinearFractionalValueBijection.inverse_ne_negative",
+        "PaperP1.LinearFractionalValueBijection.left_inverse",
+        "PaperP1.LinearFractionalValueBijection.right_inverse",
+        "PaperP1.QuadraticCharacterTwoFactorSum.sum_away",
+        "PaperP1.QuadraticCharacterTwoFactorSum.product_character",
+        "PaperP1.QuadraticCharacterTwoFactorSum.sum_eq_neg_one",
+        "PaperP1.QuadraticCharacterTwoFactorSum.scaled_sum",
+        "PaperP1.QuadraticCharacterTwoFactorSum.scaled_sum_abs_le_one",
+        "PaperP1.QuadraticCharacterTwoFactorSum.two_shift_sum",
+        "PaperP1.SmallSplitBranchPointBound.union_nonempty_or",
+        "PaperP1.SmallSplitBranchPointBound.small_branch_abs_bound",
+        "PaperP1.SmallSplitBranchPointBound.error_bound",
+        "PaperP1.SmallSplitBranchPointBound.uniform_upper_bound",
+        "PaperP1.LinearFractionalValueBijection.equivalence"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17663 jobs); direct axiom audit passed for 17223 declarations using only propext, Classical.choice and Quot.sound; all 17078 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.42 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

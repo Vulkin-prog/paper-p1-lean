@@ -4487,3 +4487,6 @@ public import PaperP1.Arithmetic.SeparatedQuadraticPointCount
 public import PaperP1.Arithmetic.SeparatedQuadraticPointError
 public import PaperP1.Arithmetic.SplitRadicalFiniteFieldPointCount
 public import PaperP1.Arithmetic.SplitRadicalPointBoundFromCharacterSums
+public import PaperP1.Algebra.LinearFractionalValueBijection
+public import PaperP1.Arithmetic.QuadraticCharacterTwoFactorSum
+public import PaperP1.Arithmetic.SmallSplitBranchPointBound

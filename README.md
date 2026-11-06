@@ -1,6 +1,18 @@
 # P1 — Lean formalization
 
-Current checkpoint P1-MATH-0620: literal finite-field split-radical source
+Current checkpoint P1-MATH-0621: the two-factor quadratic-character sum is
+EXACTLY -1, proved by an actual fractional-linear bijection over the finite
+field. Nonempty branch unions of size<=2 have absolute character sum<=1 when
+the integer shifts remain distinct AFTER reduction. If each nonempty subset
+has such a union on one side, the literal source error is<=(2^k-1)*q,
+with an unconditional uniform leading-coefficient-one threshold.
+General higher-degree cancellation and transfer to original projected P3
+equations remain UNPROVED. Canonical T1.7 retains ONLY its prior finite-field
+surface point-estimate input in actual degrees>2 at the original families/caps.
+Coverage stays163 proved,2 conditional,2 in_progress out of167; all73 main
+results proved. No Palomar registration.
+
+Historical checkpoint P1-MATH-0620: literal finite-field split-radical source
 counts have an EXACT quadratic-character subset expansion with main term q^2,
 including zero radicands. Cancellation E on one variable of each nonempty subset
 gives the proved error<=(2^k-1)*E*q. Singleton branch unions have exact zero
@@ -224,7 +236,7 @@ recorded in the linked ledger and [current status](docs/FORMALIZATION_STATUS.md)
 
 Companion T1.10 needs an enlarged alignment exclusion for unequal old/new widths: its literal radius-one version has an unconditional formal counterexample. The corrected coarse4/3 profile is proved under explicit geometric inputs; its sharper31/24 form remains open; see [the scope correction](docs/ASYMMETRIC_ALIGNMENT_SCOPE.md).
 
-The main optimal4/3 quadratic approximation power is now proved under explicit BCN and finite geometric properties, including both bounds, exact actual parameters, nominal-mean bias and eventual probability status. The optimal41/30 third factorial cumulant, full third absolute activity and aligned-channel triple claims are now proved under explicit geometric inputs, withBCN retained for the full connected argument. The actual original count and its retained modification converge in total variation to the actual-mean and nominal-mean Poisson laws without unproved inputs (P1-MATH-0413); quantitative optimal law rates remain separate. Exact fourth-cumulant component identities and unconditional weak, irregular and incompatible pair bounds are proved. In particular, the actual absolute pair activity is asymptotic to half the actual second factorial cumulant, without BCN or a complete pair profile. The contact activity bound at every fixed order now holds unconditionally on every dyadic subground, including irregular starts and zero marginals. The activation probability of the actual principal edge family now has the unconditional exponent -2/3, with any fixed epsilon margin. The planar normal budget T20.4 is now proved with improved constants and an integer-fibre argument. T20.6, the prescribed-plane transverse-product count and its actual affine mass bound, is now proved internally with three motifs and no Pila premise. The project records **618 confirmed mathematical improvements and two statement-scope corrections**. See [current status](docs/FORMALIZATION_STATUS.md), [the activity alignment](docs/FIXED_ABSOLUTE_ACTIVITY_ALIGNMENT.md) and [the mathematical change log](docs/MATHEMATICAL_CHANGELOG.md).
+The main optimal4/3 quadratic approximation power is now proved under explicit BCN and finite geometric properties, including both bounds, exact actual parameters, nominal-mean bias and eventual probability status. The optimal41/30 third factorial cumulant, full third absolute activity and aligned-channel triple claims are now proved under explicit geometric inputs, withBCN retained for the full connected argument. The actual original count and its retained modification converge in total variation to the actual-mean and nominal-mean Poisson laws without unproved inputs (P1-MATH-0413); quantitative optimal law rates remain separate. Exact fourth-cumulant component identities and unconditional weak, irregular and incompatible pair bounds are proved. In particular, the actual absolute pair activity is asymptotic to half the actual second factorial cumulant, without BCN or a complete pair profile. The contact activity bound at every fixed order now holds unconditionally on every dyadic subground, including irregular starts and zero marginals. The activation probability of the actual principal edge family now has the unconditional exponent -2/3, with any fixed epsilon margin. The planar normal budget T20.4 is now proved with improved constants and an integer-fibre argument. T20.6, the prescribed-plane transverse-product count and its actual affine mass bound, is now proved internally with three motifs and no Pila premise. The project records **619 confirmed mathematical improvements and two statement-scope corrections**. See [current status](docs/FORMALIZATION_STATUS.md), [the activity alignment](docs/FIXED_ABSOLUTE_ACTIVITY_ALIGNMENT.md) and [the mathematical change log](docs/MATHEMATICAL_CHANGELOG.md).
 
 Article13.1 now has a complete actual short-basis construction, with
 both physical projections and the common square-class map injective.
@@ -1571,3 +1583,5 @@ P1-MATH-0618 proves an alternative complete T1.7 derivation from explicit unprov
 P1-MATH-0619 proves the exact actual Noether parameter certificate criterion, original-surface irreducibility reflection, rational-section thresholds and the exact affine cone count. General certificate existence and plane-curve point estimates remain unproved.
 
 P1-MATH-0620 proves exact finite-field character expansions for the literal split-radical source equations, including zero radicands, exact singleton cancellation and a uniform source bound from explicit one-variable cancellation premises. General surface counts remain unproved.
+
+P1-MATH-0621 proves exact two-factor character sums and unconditional actual source bounds when each nonempty subset has a branch union of size at most2 with distinct reduced shifts. General cancellation and geometric transfer remain unproved.
