@@ -620,6 +620,11 @@ import PaperP1
 #print axioms PaperP1.BivariateLinearShear.substitute_degree
 #print axioms PaperP1.BivariateLinearShear.shear_degree
 #print axioms PaperP1.BivariateLinearShear.shear_evaluation
+#print axioms PaperP1.BivariateMonomialDegreeBudget.mem_monomials
+#print axioms PaperP1.BivariateMonomialDegreeBudget.card_monomials
+#print axioms PaperP1.BivariateMonomialDegreeBudget.count_degree_le
+#print axioms PaperP1.BivariateMonomialDegreeBudget.sum_choose_two
+#print axioms PaperP1.BivariateMonomialDegreeBudget.total_degree_budget
 #print axioms PaperP1.BivariateNilpotentImplicitFunction.local_evaluation_mod
 #print axioms PaperP1.BivariateNilpotentImplicitFunction.local_derivative_mod
 #print axioms PaperP1.BivariateNilpotentImplicitFunction.exists_local_root
@@ -628,6 +633,8 @@ import PaperP1
 #print axioms PaperP1.BivariateNilpotentImplicitFunction.quotient_evaluation_eq
 #print axioms PaperP1.BivariateNilpotentImplicitFunction.unique_fibre_root
 #print axioms PaperP1.BivariateNilpotentImplicitFunction.exists_polynomial_implicit
+#print axioms PaperP1.BivariatePolynomialDeterminantDivisibility.polynomial_dvd
+#print axioms PaperP1.BivariatePolynomialDeterminantDivisibility.congruent_polynomial_dvd
 #print axioms PaperP1.BivariateRationalLines.totalDegree_zero
 #print axioms PaperP1.BivariateRationalLines.exists_coefficient_degree
 #print axioms PaperP1.BivariateRationalLines.exists_linear_form
@@ -824,6 +831,8 @@ import PaperP1
 #print axioms PaperP1.CoordinateRestrictionRank.zeroed_empty
 #print axioms PaperP1.CoordinateRestrictionRank.zeroed_rank_le
 #print axioms PaperP1.CoordinateRestrictionRank.cover_cost
+#print axioms PaperP1.CountingWeightBudget.one_weight
+#print axioms PaperP1.CountingWeightBudget.layer_budget
 #print axioms PaperP1.CurveComponentBarrier.evaluation
 #print axioms PaperP1.CurveComponentBarrier.degree
 #print axioms PaperP1.CurveComponentBarrier.level_degree
@@ -2504,6 +2513,10 @@ import PaperP1
 #print axioms PaperP1.SupportedLinearSection.map_eq_linearCombination
 #print axioms PaperP1.SupportedLinearSection.span_single_images
 #print axioms PaperP1.SupportedLinearSection.exists_supported_section
+#print axioms PaperP1.SurfaceEvaluationDeterminantDivisibility.selected_budget_dvd
+#print axioms PaperP1.SurfaceEvaluationDeterminantDivisibility.bivariate_dvd
+#print axioms PaperP1.SurfaceEvaluationDeterminantDivisibility.monomial_dvd
+#print axioms PaperP1.SurfaceEvaluationDeterminantDivisibility.congruent_monomial_dvd
 #print axioms PaperP1.TernaryPairwiseRigidity.disjoint_sum_zero
 #print axioms PaperP1.TernaryPairwiseRigidity.ternary_missing_zero
 #print axioms PaperP1.TernaryPolynomialHilbert.isHilbertPolynomial

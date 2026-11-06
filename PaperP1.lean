@@ -4293,3 +4293,7 @@ public import PaperP1.Geometry.FiniteSurfaceCurveHilbert
 public import PaperP1.Geometry.GradedSurfaceSectionCurves
 public import PaperP1.Geometry.P3HypersurfaceRationalData
 public import PaperP1.Geometry.P3HypersurfaceSingularCurves
+public import PaperP1.Algebra.BivariateMonomialDegreeBudget
+public import PaperP1.Algebra.BivariatePolynomialDeterminantDivisibility
+public import PaperP1.Algebra.CountingWeightBudget
+public import PaperP1.Algebra.SurfaceEvaluationDeterminantDivisibility

@@ -28104,6 +28104,46 @@
         "status": "not_integrated"
       },
       "validation_commit": "490a25ecb3f4cfc77013a3a0e1ec57a594ebd72d"
+    },
+    {
+      "id": "P1-MATH-0589",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "Extending the proved smooth-curve determinant method to a surface requires two free coordinates, whose distinct monomial exponent pairs can have repeated total degrees and whose actual minimum degree sum is no longer triangular.",
+      "finding": "Distinct actual two-variable monomials have the exact integer lower degree-sum budget E=L*s-choose(L+2,3). This gives a proved p^E divisor for actual two-variable polynomial evaluation determinants and for entrywise congruent matrices over every commutative ring.",
+      "proposed_revision": "Use the literal two-variable exponent-pair count and exact layer budget before optimizing the surface determinant exponent, and derive the divisor from the actual finite polynomial supports rather than assuming distinct total degrees.",
+      "impact": "Supplies the exact algebraic and combinatorial determinant divisor for two free surface parameters, ready for actual smooth residue-class implicit parametrization and prime-power specialization.",
+      "evidence": [
+        "PaperP1.BivariateMonomialDegreeBudget.mem_monomials",
+        "PaperP1.BivariateMonomialDegreeBudget.card_monomials",
+        "PaperP1.BivariateMonomialDegreeBudget.count_degree_le",
+        "PaperP1.BivariateMonomialDegreeBudget.sum_choose_two",
+        "PaperP1.BivariateMonomialDegreeBudget.total_degree_budget",
+        "PaperP1.BivariatePolynomialDeterminantDivisibility.polynomial_dvd",
+        "PaperP1.BivariatePolynomialDeterminantDivisibility.congruent_polynomial_dvd",
+        "PaperP1.CountingWeightBudget.one_weight",
+        "PaperP1.CountingWeightBudget.layer_budget",
+        "PaperP1.SurfaceEvaluationDeterminantDivisibility.selected_budget_dvd",
+        "PaperP1.SurfaceEvaluationDeterminantDivisibility.bivariate_dvd",
+        "PaperP1.SurfaceEvaluationDeterminantDivisibility.monomial_dvd",
+        "PaperP1.SurfaceEvaluationDeterminantDivisibility.congruent_monomial_dvd",
+        "PaperP1.BivariateMonomialDegreeBudget.monomials"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17247 jobs); direct axiom audit passed for 16584 declarations using only propext, Classical.choice and Quot.sound; all 16277 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.13 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
