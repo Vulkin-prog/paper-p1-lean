@@ -4243,6 +4243,8 @@ import PaperP1
 #print axioms PaperP1.JointLargeFrequencyReduction.first_intermediate_disjoint
 #print axioms PaperP1.JointLargeFrequencyReduction.energy_split
 #print axioms PaperP1.JointLargeFrequencyReduction.reduction_small_uniform
+#print axioms PaperP1.JointLargeSparseCofactors.frequency_card_uniform
+#print axioms PaperP1.JointLargeSparseCofactors.cofactor_mean_uniform
 #print axioms PaperP1.JointLocalUnitCountingMaps.exists_at_nonexceptional
 #print axioms PaperP1.JointLocalUnitCountingMaps.exists_control_set_and_counting_maps
 #print axioms PaperP1.LeadingSaddleLogBounds.reciprocal_log_bounds

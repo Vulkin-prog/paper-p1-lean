@@ -4773,3 +4773,4 @@ public import PaperP1.Analysis.PrimeMomentExponentialBudget
 public import PaperP1.Analysis.SecondThresholdCardBudget
 public import PaperP1.Analysis.SecondPrimeLargeValueCardinality
 public import PaperP1.Analysis.SecondBadFrequencyCardinality
+public import PaperP1.Analysis.JointLargeSparseCofactors
