@@ -39160,6 +39160,35 @@
         "status": "not_integrated"
       },
       "validation_commit": "089e016ee4283f1c9ed39108f2d43dae04e0f765"
+    },
+    {
+      "id": "P1-MATH-0891",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "A bound independent of the localization radius cannot close the weighted frequency budget; the actual far-frequency tail must tend to zero with R.",
+      "finding": "Three theorems prove the actual finite left and right frequency-weight tails, each <=2/R, and their complete combination <=4/R for ANY finite set of integer sample indices whose translated distance from the center is >=R>0. The actual reciprocal weights 1/(1+(j-K)^2), exact subtraction indices and zero-center exclusion are retained. There is no additive constant error in the tail bound.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "The literal translated inverse-square frequency tail has a vanishing bound. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.TranslatedFrequencyTail.left_bound",
+        "PaperP1.TranslatedFrequencyTail.right_bound",
+        "PaperP1.TranslatedFrequencyTail.finite_bound"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18349 jobs); direct axiom audit passed for 18923 declarations using only propext, Classical.choice and Quot.sound; all 19168 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.63 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

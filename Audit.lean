@@ -5453,6 +5453,9 @@ import PaperP1
 #print axioms PaperP1.TerminalLogarithmicBudget.budget_nonneg
 #print axioms PaperP1.TerminalLogarithmicBudget.leaf_bound
 #print axioms PaperP1.TerminalLogarithmicBudget.logarithmic_bound
+#print axioms PaperP1.TranslatedFrequencyTail.left_bound
+#print axioms PaperP1.TranslatedFrequencyTail.right_bound
+#print axioms PaperP1.TranslatedFrequencyTail.finite_bound
 #print axioms PaperP1.TransposedGraphGluing.path_eq_left
 #print axioms PaperP1.TransposedGraphGluing.path_eq_right
 #print axioms PaperP1.TransposedGraphGluing.image_union
