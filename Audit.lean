@@ -3667,6 +3667,7 @@ import PaperP1
 #print axioms PaperP1.ElementaryReciprocalPivotUpper.dyadic_logarithmic_upper
 #print axioms PaperP1.ElementaryReciprocalPrimeLower.fixed_order
 #print axioms PaperP1.ElementaryReciprocalPrimeLower.uniform_lower
+#print axioms PaperP1.ExceptionalSquareIntegral.square_integral_budget
 #print axioms PaperP1.ExceptionalSurfaceClassBudget.class_budget
 #print axioms PaperP1.ExplicitSaddleVariation.log_difference_bound
 #print axioms PaperP1.ExplicitSaddleVariation.core_difference_bound
@@ -3762,6 +3763,10 @@ import PaperP1
 #print axioms PaperP1.FiniteNegativeMass.l1_ge_twice_point
 #print axioms PaperP1.FiniteNegativeMass.l1_eq_negative_sum
 #print axioms PaperP1.FiniteNegativeMass.secondDifference_interval_sum
+#print axioms PaperP1.FinitePrimeDirichletSeries.summable_and_hasSum
+#print axioms PaperP1.FinitePrimeDirichletSeries.value_eq_product
+#print axioms PaperP1.FinitePrimeDirichletSeries.normalized_series_bound
+#print axioms PaperP1.FinitePrimeDirichletSeries.normalized_series_square_mean_small
 #print axioms PaperP1.FiniteProductPowerMean.product_le_average_power
 #print axioms PaperP1.FiniteProductPowerMean.sum_product_le_moment
 #print axioms PaperP1.FiniteRolleZeros.exists_derivative_zeros
@@ -4150,6 +4155,7 @@ import PaperP1
 #print axioms PaperP1.RankinComparison.sqrt_div_le_rankin
 #print axioms PaperP1.RankinComparison.cast_sqrt_div_le_rankin
 #print axioms PaperP1.RankinComparison.cast_prod_rpow
+#print axioms PaperP1.RealEulerSquareMean.normalized_square_mean_small
 #print axioms PaperP1.RealPretentiousDistance.point_nonneg
 #print axioms PaperP1.RealPretentiousDistance.point_upper
 #print axioms PaperP1.RealPretentiousDistance.point_repulsion

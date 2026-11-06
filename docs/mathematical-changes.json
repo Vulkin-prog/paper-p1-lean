@@ -32040,6 +32040,40 @@
         "status": "not_integrated"
       },
       "validation_commit": "6dc60a1b1f13cca43dd4bc21f53c5f6b5eb292e9"
+    },
+    {
+      "id": "P1-MATH-0677",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "Uniform smallness of normalized finite Euler products off a small-measure set did not yet give an actual integrated bound or identify the product with an actual absolutely convergent integer Dirichlet series.",
+      "finding": "An exact restricted-measure square budget yields uniform normalized Euler frequency means. The actual multiplicative twist and the checked finite-prime Euler theorem identify the product with the absolutely convergent series over positive integers supported on those primes, which inherits the same bound.",
+      "proposed_revision": "Use the actual finite-prime integer-series interpretation and uniform integrated theorem, retaining the exact support and repeated powers. Prove truncation and transfer to the original full dyadic multiplicative sum separately.",
+      "impact": "Closes normalized Euler frequency integration and actual finite-prime integer-series interpretation. The infinite restricted series is not the original full dyadic sum; Halasz/short-average transfer and T19.17 remain unfinished.",
+      "evidence": [
+        "PaperP1.ExceptionalSquareIntegral.square_integral_budget",
+        "PaperP1.FinitePrimeDirichletSeries.summable_and_hasSum",
+        "PaperP1.FinitePrimeDirichletSeries.value_eq_product",
+        "PaperP1.FinitePrimeDirichletSeries.normalized_series_bound",
+        "PaperP1.FinitePrimeDirichletSeries.normalized_series_square_mean_small",
+        "PaperP1.RealEulerSquareMean.normalized_square_mean_small",
+        "PaperP1.FinitePrimeDirichletSeries.twistHom",
+        "PaperP1.FinitePrimeDirichletSeries.value"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17907 jobs); direct axiom audit passed for 17828 declarations using only propext, Classical.choice and Quot.sound; all 17831 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.35 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

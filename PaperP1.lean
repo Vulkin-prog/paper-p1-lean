@@ -4608,3 +4608,6 @@ public import PaperP1.Analysis.RealPretentiousDistance
 public import PaperP1.Analysis.CommonPrimeFrequencyException
 public import PaperP1.Analysis.FiniteEulerLogBound
 public import PaperP1.Analysis.RealPrimeEulerBound
+public import PaperP1.Analysis.ExceptionalSquareIntegral
+public import PaperP1.Analysis.FinitePrimeDirichletSeries
+public import PaperP1.Analysis.RealEulerSquareMean

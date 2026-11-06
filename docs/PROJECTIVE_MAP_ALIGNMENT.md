@@ -1,6 +1,17 @@
 # Actual projective scheme map
 
-Current checkpoint P1-MATH-0676: ACTUAL finite Euler products
+Current checkpoint P1-MATH-0677: ACTUAL normalized finite Euler
+products have UNIFORM small frequency square means. They equal
+an ACTUAL absolutely convergent integer Dirichlet series on the
+positive integers supported by the selected finite primes, with
+all repeated prime powers retained. The same mean bound holds
+for this exact series. Truncation and transfer to the ORIGINAL
+full dyadic multiplicative sum remain UNPROVED; short-average
+assembly unfinished. T19.17 conditional; T1.7 complete. Coverage:
+164 proved, 1 conditional, 2 in_progress /167; all 73 main proved.
+False scopes/corrections unchanged. No Palomar registration.
+
+Historical checkpoint P1-MATH-0676: ACTUAL finite Euler products
 have proved real-log error <=sum 1/p^2 and normalized norm
 <=exp(sum 1/p^2-D). Every factor, branch issue and error is handled.
 ONE threshold and common measurable exception give arbitrarily
@@ -23134,3 +23145,18 @@ Combining the proved common exceptional-frequency theorem with the actual slow-b
 This closes explicit finite Euler-product logarithmic errors and uniform real pretentious suppression off a common small-measure set. It does NOT identify the finite Euler product with a truncated integer Dirichlet mean or prove the Halasz mean estimate. Integrating the normalized Euler norm, transferring to actual multiplicative partial sums, controlling exceptional quotient-frequency mass, handling the coupled quotient domain and assembling logarithmic short-average decay remain unfinished. T19.17 retains its explicit analytic input; original complete T1.7 remains unconditional. Coverage stays 164 proved, 1 conditional, 2 in_progress out of 167; all 73 main results proved. False original scopes and checked corrections are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Ubuntu retains about 54.4 GiB; no dependency download. The existing selective Mathlib complex-log bounds were already cached. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17901 jobs); direct axiom audit passed for 17822 declarations using only propext, Classical.choice and Quot.sound; all 17823 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.37 GiB.
+
+
+## Uniform Euler square means and actual absolutely convergent finite-prime Dirichlet series
+
+ExceptionalSquareIntegral proves the actual exceptional-set square budget: for a continuous real F>=0 on (-T,T], bounded there by M and bounded by delta outside a measurable E subset (-T,T], its actual [-T,T] square integral is at most 2T*delta^2+M^2*measure(E). Restricted measure finiteness, actual indicator integration, the exact interval volume 2T and both subsets are internal. No integral approximation or exceptional-set inequality is a premise.
+
+RealEulerSquareMean combines the proved common Euler suppression with the global actual bound exp(sum 1/p^2)<=exp(1) on the sufficiently large slow prime band. For EVERY eta>0 it chooses ONE N0>=1 before ALL N>=N0, ALL real T>=log N and EVERY real function bounded by one on the actual band, so that the actual frequency integral of the SQUARE of the normalized Euler norm is <=eta*T. The exceptional set and cutoff are uniform in all real coefficient choices. All continuity, integrability and parameter constants are explicit.
+
+FinitePrimeDirichletSeries constructs the literal completely multiplicative Dirichlet twist as a checked monoid homomorphism for f:Nat->*Real. For real prime values bounded by one at EVERY prime and an actual finite prime set P, the already checked Mathlib finite Euler-product theorem proves norm summability and HasSum for the ACTUAL integer series sum_{n in Nat.factoredNumbers(P)} f(n)/n*exp(-i*t*log n), with value equal to the literal finite Euler product. Nat.factoredNumbers(P) is the actual set of positive integers ALL of whose prime factors lie in P, including arbitrary repeated prime powers. It is not the full set of integers below a cutoff or all polynomially smooth integers. No series convergence or Euler identity is supplied as an assumption.
+
+The exact actual series inherits the normalized bound exp(sum 1/p^2-D). It also inherits the uniform frequency-square-mean theorem: for every eta>0 one N0 works before all N>=N0, all T>=log N and all completely multiplicative real f with bounded prime values, giving integral of the SQUARED normalized norm of the actual finite-prime integer series <=eta*T. Three modules add six theorems and two definitions. Existing selective Mathlib EulerProduct.Basic was already cached; no dependency download.
+
+This closes actual normalized Euler frequency integration and its exact absolutely convergent finite-prime INTEGER-series interpretation. The integer series is infinite on its actual finite-prime support; its truncation and transfer to the original full dyadic multiplicative sum remain unfinished. No identification with that full dyadic sum or Halasz mean theorem is asserted. Tail/truncation control, full multiplicative mean transfer, exceptional quotient-frequency mass and logarithmic short-average assembly remain unfinished. T19.17 retains its explicit analytic input; original complete T1.7 remains unconditional. Coverage stays 164 proved, 1 conditional, 2 in_progress out of 167; all 73 main results proved. Original false scopes and checked corrected replacements are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Ubuntu retains about 54.4 GiB. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17907 jobs); direct axiom audit passed for 17828 declarations using only propext, Classical.choice and Quot.sound; all 17831 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.35 GiB.
