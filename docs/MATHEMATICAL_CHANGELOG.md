@@ -1,6 +1,15 @@
 # Mathematical corrections and improvements
 
-Current checkpoint P1-MATH-0869: Actual damped Dirichlet sums have a
+Current checkpoint P1-MATH-0870: The damped logarithmic integral has an
+exact primitive and an explicit frequency bound. The triple-large prime
+frequency contribution, the central-frequency mean comparison and
+complete logarithmic short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 54.03 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0869: Actual damped Dirichlet sums have a
 uniform power gain for every nonnegative real damping. The triple-large
 prime frequency contribution, the central-frequency mean comparison and
 complete logarithmic short-average concentration remain unproved. T19.17
@@ -2589,7 +2598,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**867 mathematical improvements and two statement-scope corrections are confirmed.**
+**868 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -33500,3 +33509,12 @@ Five theorems and one definition establish the exact real damping coefficient n^
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 54.07 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18305 jobs); direct axiom audit passed for 18824 declarations using only propext, Classical.choice and Quot.sound; all 19053 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.03 GiB.
+
+
+## The damped logarithmic integral has an exact primitive and an explicit frequency bound
+
+Eight theorems and three definitions prove the actual damped phase numerator x^(-sigma)*exp(-it log x), its derivative and the exact primitive for x^(-1-sigma-it). For EVERY sigma>=0, t nonzero and 0<A<=B, the actual integral norm is <=2*A^(-sigma)/|t|. The proof retains both endpoint terms and uses the actual complex denominator -sigma-it, with its norm bounded below by |t|. All continuity and integrability statements are proved; no infinite-series or central-frequency estimate is assumed.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 54.03 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18307 jobs); direct axiom audit passed for 18832 declarations using only propext, Classical.choice and Quot.sound; all 19064 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.01 GiB.

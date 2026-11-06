@@ -3624,6 +3624,14 @@ import PaperP1
 #print axioms PaperP1.DampedDirichletIntegral.weighted_sum_integral
 #print axioms PaperP1.DampedDirichletIntegral.value_integral
 #print axioms PaperP1.DampedDirichletIntegral.squarefree_value_integral
+#print axioms PaperP1.DampedLogarithmicIntegral.denominator_norm_lower
+#print axioms PaperP1.DampedLogarithmicIntegral.denominator_ne
+#print axioms PaperP1.DampedLogarithmicIntegral.numerator_norm
+#print axioms PaperP1.DampedLogarithmicIntegral.hasDerivAt_numerator
+#print axioms PaperP1.DampedLogarithmicIntegral.continuousOn_numerator
+#print axioms PaperP1.DampedLogarithmicIntegral.continuousOn_integrand
+#print axioms PaperP1.DampedLogarithmicIntegral.integral_identity
+#print axioms PaperP1.DampedLogarithmicIntegral.integral_norm_bound
 #print axioms PaperP1.DeterminantBoxScales.coordinate_bounds
 #print axioms PaperP1.DeterminantBoxScales.log_DE_upper
 #print axioms PaperP1.DeterminantBoxScales.uniform_base_logs

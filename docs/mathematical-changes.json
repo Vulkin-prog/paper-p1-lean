@@ -38481,6 +38481,43 @@
         "status": "not_integrated"
       },
       "validation_commit": "71f4a5e90e8fa21ce8252a55d98c67e3021cc5fe"
+    },
+    {
+      "id": "P1-MATH-0870",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "Controlling the infinite tail requires an exact damped primitive, including the nonzero-frequency condition and both endpoints.",
+      "finding": "Eight theorems and three definitions prove the actual damped phase numerator x^(-sigma)*exp(-it log x), its derivative and the exact primitive for x^(-1-sigma-it). For EVERY sigma>=0, t nonzero and 0<A<=B, the actual integral norm is <=2*A^(-sigma)/|t|. The proof retains both endpoint terms and uses the actual complex denominator -sigma-it, with its norm bounded below by |t|. All continuity and integrability statements are proved; no infinite-series or central-frequency estimate is assumed.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "The damped logarithmic integral has an exact primitive and an explicit frequency bound. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.DampedLogarithmicIntegral.denominator_norm_lower",
+        "PaperP1.DampedLogarithmicIntegral.denominator_ne",
+        "PaperP1.DampedLogarithmicIntegral.numerator_norm",
+        "PaperP1.DampedLogarithmicIntegral.hasDerivAt_numerator",
+        "PaperP1.DampedLogarithmicIntegral.continuousOn_numerator",
+        "PaperP1.DampedLogarithmicIntegral.continuousOn_integrand",
+        "PaperP1.DampedLogarithmicIntegral.integral_identity",
+        "PaperP1.DampedLogarithmicIntegral.integral_norm_bound",
+        "PaperP1.DampedLogarithmicIntegral.denominator",
+        "PaperP1.DampedLogarithmicIntegral.numerator",
+        "PaperP1.DampedLogarithmicIntegral.integrand"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18307 jobs); direct axiom audit passed for 18832 declarations using only propext, Classical.choice and Quot.sound; all 19064 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.01 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
