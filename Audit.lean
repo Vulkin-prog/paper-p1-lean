@@ -4096,6 +4096,7 @@ import PaperP1
 #print axioms PaperP1.GrowingFirstGoodRegion.width_geometry
 #print axioms PaperP1.GrowingFirstGoodRegion.first_envelope_bound
 #print axioms PaperP1.GrowingFirstGoodRegion.rectangle_small_uniform
+#print axioms PaperP1.GrowingGoodFullPolynomial.first_good_part_small_uniform
 #print axioms PaperP1.HalaszSmallBudget.summatory_small_of_budget
 #print axioms PaperP1.HardSaddleExplicitScale.tendsto_logCore_atTop
 #print axioms PaperP1.HardSaddleExplicitScale.finite_normalized_gap
