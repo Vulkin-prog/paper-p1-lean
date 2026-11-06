@@ -39764,7 +39764,8 @@
             "PaperP1.P3ConePlanePointCount.cardinality"
           ]
         }
-      ]
+      ],
+      "validation_commit": "c8bb9e75e633d3c56d58d9eb9970661e3160397d"
     },
     {
       "label": "p1:arith:dense",
