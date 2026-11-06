@@ -4342,3 +4342,10 @@ public import PaperP1.Analysis.P3StandardMonomialLimits
 public import PaperP1.Analysis.P3SurfaceDivisorLimits
 public import PaperP1.Analysis.PolynomialNatRatioLimits
 public import PaperP1.Arithmetic.P3SharpSmoothClassAuxiliary
+public import PaperP1.Algebra.ClassifiedBivariateDeterminant
+public import PaperP1.Algebra.ClassifiedNormalizedSurfaceDeterminant
+public import PaperP1.Algebra.ClassifiedSurfaceDeterminantBudget
+public import PaperP1.Algebra.MultiPrimeClassifiedSurfaceDeterminant
+public import PaperP1.Algebra.PartiallyClassifiedBivariateDeterminant
+public import PaperP1.Algebra.PartiallyClassifiedNormalizedSurfaceDeterminant
+public import PaperP1.Algebra.SmoothSurfacePolynomialApproximation

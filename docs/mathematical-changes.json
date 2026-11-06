@@ -28512,6 +28512,46 @@
         "status": "not_integrated"
       },
       "validation_commit": "27ca12a3396da84e64e23513d02eb877053b0e85"
+    },
+    {
+      "id": "P1-MATH-0598",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The global surface determinant argument needs a single determinant containing additive contributions of different smooth residue classes at each prime, while columns with nonsmooth reduction remain present.",
+      "finding": "A labelled monomial expansion proves the sum of the actual fibre contributions. Uniform polynomial substitutions give the original normalized surface determinant; unassigned columns are retained exactly and contribute zero, and the prime-specific divisors multiply.",
+      "proposed_revision": "Record the actual column fibres and their individual cutoffs in the prime exponent. Retain nonsmooth columns by giving them zero contribution, and establish the analytic lower bound for the accumulated divisor separately.",
+      "impact": "Removes the distinct-class algebraic determinant gap without assuming point counts, quantitative valuation estimates or the global auxiliary polynomial.",
+      "evidence": [
+        "PaperP1.ClassifiedBivariateDeterminant.polynomial_dvd",
+        "PaperP1.ClassifiedBivariateDeterminant.congruent_polynomial_dvd",
+        "PaperP1.ClassifiedNormalizedSurfaceDeterminant.integer_dvd",
+        "PaperP1.ClassifiedSurfaceDeterminantBudget.classified_degree_budget",
+        "PaperP1.ClassifiedSurfaceDeterminantBudget.selected_dvd",
+        "PaperP1.ClassifiedSurfaceDeterminantBudget.evaluation_dvd",
+        "PaperP1.MultiPrimeClassifiedSurfaceDeterminant.integer_dvd",
+        "PaperP1.MultiPrimeClassifiedSurfaceDeterminant.det_zero_of_small",
+        "PaperP1.PartiallyClassifiedBivariateDeterminant.congruent_polynomial_dvd",
+        "PaperP1.PartiallyClassifiedNormalizedSurfaceDeterminant.integer_dvd",
+        "PaperP1.SmoothSurfacePolynomialApproximation.ternary_integer",
+        "PaperP1.SmoothSurfacePolynomialApproximation.affine_last",
+        "PaperP1.SmoothSurfacePolynomialApproximation.affine_integer",
+        "PaperP1.SmoothSurfacePolynomialApproximation.normalized_integer"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17353 jobs); direct axiom audit passed for 16722 declarations using only propext, Classical.choice and Quot.sound; all 16442 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.09 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

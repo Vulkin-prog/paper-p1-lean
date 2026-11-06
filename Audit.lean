@@ -753,6 +753,12 @@ import PaperP1
 #print axioms PaperP1.CharlierRoots.quadratic_neg_iff_between
 #print axioms PaperP1.CharlierRoots.indices_bounds
 #print axioms PaperP1.CharlierRoots.quadratic_neg_iff_indices
+#print axioms PaperP1.ClassifiedBivariateDeterminant.polynomial_dvd
+#print axioms PaperP1.ClassifiedBivariateDeterminant.congruent_polynomial_dvd
+#print axioms PaperP1.ClassifiedNormalizedSurfaceDeterminant.integer_dvd
+#print axioms PaperP1.ClassifiedSurfaceDeterminantBudget.classified_degree_budget
+#print axioms PaperP1.ClassifiedSurfaceDeterminantBudget.selected_dvd
+#print axioms PaperP1.ClassifiedSurfaceDeterminantBudget.evaluation_dvd
 #print axioms PaperP1.ColumnDependencies.zero_column
 #print axioms PaperP1.ColumnDependencies.equal_columns
 #print axioms PaperP1.CommonLinearNormalization.form_homogeneous
@@ -1696,6 +1702,8 @@ import PaperP1
 #print axioms PaperP1.MonicPlaneAffineChart.irreducible
 #print axioms PaperP1.MonicPolynomialQuotientFinite.of_monic_mem
 #print axioms PaperP1.MonicPolynomialQuotientFinite.of_unit_leadingCoeff_mem
+#print axioms PaperP1.MultiPrimeClassifiedSurfaceDeterminant.integer_dvd
+#print axioms PaperP1.MultiPrimeClassifiedSurfaceDeterminant.det_zero_of_small
 #print axioms PaperP1.MultiPrimeSurfaceDeterminant.integer_dvd
 #print axioms PaperP1.MultiPrimeSurfaceDeterminant.det_zero_of_small
 #print axioms PaperP1.MvPlaneBezout.common_points_card
@@ -1832,6 +1840,8 @@ import PaperP1
 #print axioms PaperP1.PairProductComparison.absolute_bound
 #print axioms PaperP1.PairwiseEqualSpan.exists_line
 #print axioms PaperP1.PairwiseEqualSpan.finrank_le_one
+#print axioms PaperP1.PartiallyClassifiedBivariateDeterminant.congruent_polynomial_dvd
+#print axioms PaperP1.PartiallyClassifiedNormalizedSurfaceDeterminant.integer_dvd
 #print axioms PaperP1.PlaneCoordinateSwap.index_zero
 #print axioms PaperP1.PlaneCoordinateSwap.index_one
 #print axioms PaperP1.PlaneCoordinateSwap.index_twice
@@ -2367,6 +2377,10 @@ import PaperP1
 #print axioms PaperP1.SmoothSurfaceDeterminant.nilpotent_surface_dvd
 #print axioms PaperP1.SmoothSurfaceDeterminant.smooth_surface_det_zero
 #print axioms PaperP1.SmoothSurfaceDeterminant.integer_smooth_dvd
+#print axioms PaperP1.SmoothSurfacePolynomialApproximation.ternary_integer
+#print axioms PaperP1.SmoothSurfacePolynomialApproximation.affine_last
+#print axioms PaperP1.SmoothSurfacePolynomialApproximation.affine_integer
+#print axioms PaperP1.SmoothSurfacePolynomialApproximation.normalized_integer
 #print axioms PaperP1.SourceAffineChart.affine_radicands
 #print axioms PaperP1.SourceAffineChart.originalEquiv_dehomogenization
 #print axioms PaperP1.SourceAffineChart.veroneseEquiv_dehomogenization

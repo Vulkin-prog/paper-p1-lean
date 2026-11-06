@@ -171,7 +171,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records595 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records596 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -290,7 +290,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **16708 audited theorem/lemma declarations**. This
+- The project currently has **16722 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -28834,3 +28834,22 @@ P3SharpSmoothClassAuxiliary.uniform_degree combines these proofs with the actual
 This is the sharp local product-modulus auxiliary theorem. It does not combine different residue classes in one global determinant, and it does not prove the quantitative global auxiliary existence input in canonical companionT1.7. That global input remains explicit and UNPROVED; no conditional numbered result is promoted. Six modules add sixteen theorems and two definitions. All73 main results remain proved; coverage stays163 proved,2 conditional,2 in_progress out of167. Original manuscript hashes, the pinned compiler, heartbeat settings and permitted axioms are unchanged. No dependency download and no Palomar submission. Ubuntu root has about6.12GiB free.
 
 Verified under Lean v4.36.0-rc2: full build passed (17339 jobs); direct axiom audit passed for 16708 declarations using only propext, Classical.choice and Quot.sound; all 16428 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.12 GiB.
+
+
+## Actual mixed-class surface determinant divisors retain all columns and multiply across primes
+
+ClassifiedSurfaceDeterminantBudget proves the exact additive monomial budget across a finite family of distinct classes. Monomials must be distinct within each class, while equal exponents in different classes are allowed. In the injective determinant expansion, a permutation term either matches each selected row class to the actual column class, or contains an actual zero entry and vanishes. In a matching term the local bivariate budget is applied separately to every actual column fibre and then summed. No general block-determinant or supplied global divisibility correspondence is assumed.
+
+ClassifiedBivariateDeterminant constructs the actual labelled support and coefficient matrix for class-dependent bivariate polynomial rows. For an arbitrary classification b of the original columns and arbitrary cutoffs L_c it proves p^(sum_c max(L_c*s_c-choose(L_c+2,3),0)) divides the single original evaluation determinant, where s_c is the literal cardinality of that column fibre. It also proves the entrywise-congruent version needed for finite-order implicit substitutions.
+
+SmoothSurfacePolynomialApproximation constructs one actual integer polynomial substitution BEFORE all points and all polynomial rows in a smooth prime class. It proves approximation modulo p^N uniformly for every row, first in successive variables, then in any affine derivative orientation, and finally in the original homogeneous P3 chart X3=1. The affine derivative is obtained from the actual nonzero gradient by Euler's identity without any assumption p does not divide d. All coordinate swaps, dehomogenization, implicit polynomial construction and coefficient maps are internal.
+
+ClassifiedNormalizedSurfaceDeterminant combines the actual class substitutions with the labelled-support determinant theorem. Distinct original smooth classes now contribute additively to one determinant of evaluations of the original four-coordinate integer polynomials.
+
+PartiallyClassifiedBivariateDeterminant and PartiallyClassifiedNormalizedSurfaceDeterminant allow every original column to be either assigned a smooth class or left unassigned. Unassigned columns remain inside the original square matrix; internally each is represented by its own exact constant-polynomial column and assigned cutoff zero. Therefore no smoothness claim about the other columns and no deletion of nonsmooth reductions is used. The divisor is exactly the sum of the contributions of the assigned smooth classes.
+
+MultiPrimeClassifiedSurfaceDeterminant multiplies these actual divisors over a finite set of distinct primes. Class types, class assignments, cutoffs and class populations may all depend on the prime. It proves the actual integer product of p to its prime-specific exponent divides the same original determinant, and literal strict comparison forces that determinant to vanish.
+
+Seven modules add fourteen theorems. This closes the algebraic combination of distinct smooth residue classes, including zero contribution from all other original columns. Quantitative lower bounds for the resulting total divisor, canonical finite-field classifications and the final quantitative global auxiliary construction remain required. The sole global auxiliary existence input in canonical companionT1.7 remains explicit and UNPROVED; coverage stays163 proved,2 conditional,2 in_progress out of167, with all73 main results proved. No numbered result is promoted. Original manuscript hashes, compiler, heartbeat settings and permitted axioms are unchanged. No dependency download and no Palomar submission. Ubuntu root has about6.09GiB free.
+
+Verified under Lean v4.36.0-rc2: full build passed (17353 jobs); direct axiom audit passed for 16722 declarations using only propext, Classical.choice and Quot.sound; all 16442 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.09 GiB.
