@@ -4361,3 +4361,7 @@ public import PaperP1.Algebra.IntegerPolynomialReduction
 public import PaperP1.Algebra.LinearPolynomialSubstitutionDegree
 public import PaperP1.Arithmetic.P3CoarseCanonicalClassCount
 public import PaperP1.Diophantine.FiniteFieldSurfaceZeroBound
+public import PaperP1.Algebra.P3HomogeneousDerivativeHeight
+public import PaperP1.Arithmetic.P3CanonicalGradientPrimeLoss
+public import PaperP1.Arithmetic.PrimeDivisorLogBudget
+public import PaperP1.Arithmetic.WeightedExceptionalPrimeFibres

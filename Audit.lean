@@ -1815,6 +1815,9 @@ import PaperP1
 #print axioms PaperP1.P3HomogeneousCoefficientFamily.reconstruct
 #print axioms PaperP1.P3HomogeneousCoefficientFamily.nonzero
 #print axioms PaperP1.P3HomogeneousCoefficientFamily.evaluation
+#print axioms PaperP1.P3HomogeneousDerivativeHeight.evaluation_natAbs_bound
+#print axioms PaperP1.P3HomogeneousDerivativeHeight.derivative_coefficient_bound
+#print axioms PaperP1.P3HomogeneousDerivativeHeight.derivative_value_bound
 #print axioms PaperP1.P3HomogeneousIntegerInterpolation.index_card_pos
 #print axioms PaperP1.P3HomogeneousIntegerInterpolation.monomial_bound
 #print axioms PaperP1.P3HomogeneousIntegerInterpolation.evaluation_minors_zero
@@ -6082,6 +6085,10 @@ import PaperP1
 #print axioms PaperP1.OrdinarySourcePointTransport.ordinary_image_point
 #print axioms PaperP1.OrdinarySourcePointTransport.points_image_card
 #print axioms PaperP1.OriginalWindowValueBounds.values_geometry
+#print axioms PaperP1.P3CanonicalGradientPrimeLoss.weighted_loss
+#print axioms PaperP1.P3CanonicalGradientPrimeLoss.uniform_height_loss
+#print axioms PaperP1.P3CanonicalGradientPrimeLoss.coefficient_height_loss
+#print axioms PaperP1.P3CanonicalGradientPrimeLoss.smooth_points_loss
 #print axioms PaperP1.P3CanonicalSmoothResidues.representative_last
 #print axioms PaperP1.P3CanonicalSmoothResidues.residue_congruence
 #print axioms PaperP1.P3CanonicalSmoothResidues.good_iff
@@ -6344,6 +6351,8 @@ import PaperP1
 #print axioms PaperP1.PrimeCircuitSupports.old_support
 #print axioms PaperP1.PrimeCircuitSupports.inserted_support
 #print axioms PaperP1.PrimeCircuitSupports.throughPool_card
+#print axioms PaperP1.PrimeDivisorLogBudget.log_sum_le
+#print axioms PaperP1.PrimeDivisorLogBudget.weighted_log_sum_le
 #print axioms PaperP1.PrimeFactorBudget.two_pow_card_le
 #print axioms PaperP1.PrimeFactorBudget.card_log_le
 #print axioms PaperP1.PrimeFactorBudget.polynomial_card_log_le
@@ -7795,6 +7804,8 @@ import PaperP1
 #print axioms PaperP1.WeightedDefectCounting.cast_sqrt_div_prod_le
 #print axioms PaperP1.WeightedDefectCounting.card_positiveDefectValues_cast_le_eulerProduct
 #print axioms PaperP1.WeightedDefectCounting.card_positiveHDefectValues_cast_le_eulerProduct
+#print axioms PaperP1.WeightedExceptionalPrimeFibres.weighted_loss
+#print axioms PaperP1.WeightedExceptionalPrimeFibres.uniform_height_loss
 #print axioms PaperP1.WeightedKernelTail.supportTail_nonneg
 #print axioms PaperP1.WeightedKernelTail.reciprocal_three_halves
 #print axioms PaperP1.WeightedKernelTail.fibre_bound

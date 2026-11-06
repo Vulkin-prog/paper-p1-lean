@@ -28682,6 +28682,43 @@
         "status": "not_integrated"
       },
       "validation_commit": "dfc14ec15b95ecb435d716ec844788c17530f6cf"
+    },
+    {
+      "id": "P1-MATH-0602",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The global determinant needs to control the total weighted loss of columns whose reductions become singular, using actual nonzero derivative certificates and the original equation height.",
+      "finding": "Distinct prime divisors of each nonzero integer derivative give a logarithmic budget. Exact homogeneous coefficient and value estimates make the total unassigned-column loss explicit from d, coefficient height and point height, with derivative choices internal.",
+      "proposed_revision": "Retain all columns, record their exact gradient-divisible reductions, and pay their weighted loss using the proved derivative-certificate bound rather than assuming all chosen reductions are smooth.",
+      "impact": "Removes the supplied exceptional-column loss and derivative-height estimates from the global determinant route for original nonsingular points. Keeps the remaining sharp finite-field/global comparison explicit.",
+      "evidence": [
+        "PaperP1.P3HomogeneousDerivativeHeight.evaluation_natAbs_bound",
+        "PaperP1.P3HomogeneousDerivativeHeight.derivative_coefficient_bound",
+        "PaperP1.P3HomogeneousDerivativeHeight.derivative_value_bound",
+        "PaperP1.P3CanonicalGradientPrimeLoss.weighted_loss",
+        "PaperP1.P3CanonicalGradientPrimeLoss.uniform_height_loss",
+        "PaperP1.P3CanonicalGradientPrimeLoss.coefficient_height_loss",
+        "PaperP1.P3CanonicalGradientPrimeLoss.smooth_points_loss",
+        "PaperP1.PrimeDivisorLogBudget.log_sum_le",
+        "PaperP1.PrimeDivisorLogBudget.weighted_log_sum_le",
+        "PaperP1.WeightedExceptionalPrimeFibres.weighted_loss",
+        "PaperP1.WeightedExceptionalPrimeFibres.uniform_height_loss"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17385 jobs); direct axiom audit passed for 16767 declarations using only propext, Classical.choice and Quot.sound; all 16501 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.10 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
