@@ -1,6 +1,16 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0664: prime-product fibres have at most
+Current checkpoint P1-MATH-0665: prime-band reciprocal coefficients
+have the proved square budget 4/(Y log Y). Their ALL-ORDER moments
+and actual large-value measures are UNCONDITIONAL, with one threshold
+before all prime sets, coefficients, orders and frequency parameters.
+Discrete/stronger large values and logarithmic short-average assembly
+remain UNPROVED. T19.17 stays conditional; original T1.7 is complete.
+Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main
+results proved. Original false scopes and corrected variants unchanged.
+No Palomar registration.
+
+Historical checkpoint P1-MATH-0664: prime-product fibres have at most
 k! members, including repeats. ALL-ORDER actual prime-polynomial
 moments and actual large-value Lebesgue measures are UNCONDITIONAL,
 with every k!, Q^k and coefficient-square dependence explicit.
@@ -864,7 +874,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records662 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records663 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -983,7 +993,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **17673 audited theorem/lemma declarations**. This
+- The project currently has **17679 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -30456,3 +30466,16 @@ The actual Lebesgue real measure of {t in (-T,T]: |sum c_p exp(-i*t*log p)|>=V} 
 These are genuine unconditional high-moment and large-value measure estimates. They do not yet count a well-spaced discrete set of frequencies or establish the full multiplicative short-average decay. The remaining prime-range specialization, stronger/discrete large values, factor-rich/sieve and short-average assembly remain unfinished. T19.17 retains its existing explicit analytic input. Complete original T1.7 remains unchanged. Coverage stays 164 proved, 1 conditional, 2 in_progress out of 167; all 73 main results proved. The two original false scopes and their checked corrected variants are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Ubuntu retains about 54.6 GiB; no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17857 jobs); direct axiom audit passed for 17673 declarations using only propext, Classical.choice and Quot.sound; all 17650 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.60 GiB.
+
+
+## Uniform prime-band high moments and reciprocal-coefficient logarithmic savings
+
+PrimeRangeSquareBudget uses the already kernel-checked prime number theorem with error parameter one. It chooses ONE threshold Y0>=2 before the integer Y, the actual finite prime set P, all complex coefficients, the moment order and the frequency interval. For Y>=Y0 and any actual prime set P with Y<=p<=2Y it proves card(P)<=4Y/log Y. The threshold and the prime count are internal; there is no prime-count premise in the eventual theorem.
+
+For arbitrary complex a_p with |a_p|<=1 on P, the literal coefficients a_p/p satisfy sum_{p in P}|a_p/p|^2<=4/(Y log Y). Lower bounds on the actual primes, positivity of Y and log Y, and the passage from cardinality to the reciprocal-square sum are proved explicitly. No distinct-product assumption is made.
+
+PrimeRangeHighMoments specializes the exact all-order prime-product moment bound to the actual Dirichlet polynomial value P a t=sum_{p in P}(a_p/p)*exp(-i*t*log p). For EVERY natural k and EVERY T>0 its actual [-T,T] integral of |value|^(2k) is at most exp(1)*(sqrt(pi)*T+2*pi*(2Y)^k)*k!*(4/(Y log Y))^k. For EVERY V>0 the actual real Lebesgue measure of {t in (-T,T]: |value|>=V} is at most the SAME expression divided by V^(2k). One combined uniform theorem chooses Y0 before ALL P, coefficients, k, T and V. All factorial, power and logarithmic factors are displayed, including k=0. Two modules add six theorems and no definitions.
+
+This closes the prime-band reciprocal-coefficient specialization of the independent short-average route. It supplies genuine unconditional integral and measure bounds, not a count of well-spaced sample frequencies and not the stronger large-value/short-average estimates needed to finish T19.17. Discrete/stronger large values, factor-rich/sieve control and short-average assembly remain unfinished. T19.17 retains its explicit analytic input. The complete original T1.7 has no new inputs. Coverage remains 164 proved, 1 conditional, 2 in_progress out of 167; all 73 main results proved. The two false original scopes and their checked corrected replacements remain unchanged. Source hashes, Lean v4.36.0-rc2, checking options and allowed axioms are unchanged. Ubuntu retains about 54.6 GiB; no dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17861 jobs); direct axiom audit passed for 17679 declarations using only propext, Classical.choice and Quot.sound; all 17656 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.59 GiB.

@@ -1,6 +1,16 @@
 # Multiquadratic split radicands: exact square-class independence
 
-Current checkpoint P1-MATH-0664: prime-product fibres have at most
+Current checkpoint P1-MATH-0665: prime-band reciprocal coefficients
+have the proved square budget 4/(Y log Y). Their ALL-ORDER moments
+and actual large-value measures are UNCONDITIONAL, with one threshold
+before all prime sets, coefficients, orders and frequency parameters.
+Discrete/stronger large values and logarithmic short-average assembly
+remain UNPROVED. T19.17 stays conditional; original T1.7 is complete.
+Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main
+results proved. Original false scopes and corrected variants unchanged.
+No Palomar registration.
+
+Historical checkpoint P1-MATH-0664: prime-product fibres have at most
 k! members, including repeats. ALL-ORDER actual prime-polynomial
 moments and actual large-value Lebesgue measures are UNCONDITIONAL,
 with every k!, Q^k and coefficient-square dependence explicit.
@@ -23560,3 +23570,16 @@ The actual Lebesgue real measure of {t in (-T,T]: |sum c_p exp(-i*t*log p)|>=V} 
 These are genuine unconditional high-moment and large-value measure estimates. They do not yet count a well-spaced discrete set of frequencies or establish the full multiplicative short-average decay. The remaining prime-range specialization, stronger/discrete large values, factor-rich/sieve and short-average assembly remain unfinished. T19.17 retains its existing explicit analytic input. Complete original T1.7 remains unchanged. Coverage stays 164 proved, 1 conditional, 2 in_progress out of 167; all 73 main results proved. The two original false scopes and their checked corrected variants are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Ubuntu retains about 54.6 GiB; no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17857 jobs); direct axiom audit passed for 17673 declarations using only propext, Classical.choice and Quot.sound; all 17650 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.60 GiB.
+
+
+## Uniform prime-band high moments and reciprocal-coefficient logarithmic savings
+
+PrimeRangeSquareBudget uses the already kernel-checked prime number theorem with error parameter one. It chooses ONE threshold Y0>=2 before the integer Y, the actual finite prime set P, all complex coefficients, the moment order and the frequency interval. For Y>=Y0 and any actual prime set P with Y<=p<=2Y it proves card(P)<=4Y/log Y. The threshold and the prime count are internal; there is no prime-count premise in the eventual theorem.
+
+For arbitrary complex a_p with |a_p|<=1 on P, the literal coefficients a_p/p satisfy sum_{p in P}|a_p/p|^2<=4/(Y log Y). Lower bounds on the actual primes, positivity of Y and log Y, and the passage from cardinality to the reciprocal-square sum are proved explicitly. No distinct-product assumption is made.
+
+PrimeRangeHighMoments specializes the exact all-order prime-product moment bound to the actual Dirichlet polynomial value P a t=sum_{p in P}(a_p/p)*exp(-i*t*log p). For EVERY natural k and EVERY T>0 its actual [-T,T] integral of |value|^(2k) is at most exp(1)*(sqrt(pi)*T+2*pi*(2Y)^k)*k!*(4/(Y log Y))^k. For EVERY V>0 the actual real Lebesgue measure of {t in (-T,T]: |value|>=V} is at most the SAME expression divided by V^(2k). One combined uniform theorem chooses Y0 before ALL P, coefficients, k, T and V. All factorial, power and logarithmic factors are displayed, including k=0. Two modules add six theorems and no definitions.
+
+This closes the prime-band reciprocal-coefficient specialization of the independent short-average route. It supplies genuine unconditional integral and measure bounds, not a count of well-spaced sample frequencies and not the stronger large-value/short-average estimates needed to finish T19.17. Discrete/stronger large values, factor-rich/sieve control and short-average assembly remain unfinished. T19.17 retains its explicit analytic input. The complete original T1.7 has no new inputs. Coverage remains 164 proved, 1 conditional, 2 in_progress out of 167; all 73 main results proved. The two false original scopes and their checked corrected replacements remain unchanged. Source hashes, Lean v4.36.0-rc2, checking options and allowed axioms are unchanged. Ubuntu retains about 54.6 GiB; no dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17861 jobs); direct axiom audit passed for 17679 declarations using only propext, Classical.choice and Quot.sound; all 17656 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.59 GiB.

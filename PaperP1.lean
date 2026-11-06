@@ -4586,3 +4586,5 @@ public import PaperP1.Analysis.GaussianFrequencyRowBound
 public import PaperP1.Analysis.FiniteFibreSquareBudget
 public import PaperP1.Analysis.PrimePolynomialMoments
 public import PaperP1.Arithmetic.PrimeProductFibres
+public import PaperP1.Analysis.PrimeRangeHighMoments
+public import PaperP1.Arithmetic.PrimeRangeSquareBudget

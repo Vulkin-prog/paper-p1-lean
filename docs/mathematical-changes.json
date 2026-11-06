@@ -31543,6 +31543,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "7621908101152f0c5e47bff21990c34fd04936b2"
+    },
+    {
+      "id": "P1-MATH-0665",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The all-order prime-polynomial estimates still retained an arbitrary coefficient-square sum; a usable reciprocal prime-band logarithmic saving had not been derived with a threshold uniform in the actual prime set, coefficients and growing moment order.",
+      "finding": "The internal PNT yields a uniform prime-band cardinality cap and the exact reciprocal-square budget 4/(Y log Y). These give all-order moments and actual large-value measures with one threshold before every coefficient choice and moment order.",
+      "proposed_revision": "Use the proved prime-band estimates with the displayed 4/(Y log Y), k!, (2Y)^k and frequency factors. Keep the subsequent discrete/stronger large-value and short-average requirements explicit.",
+      "impact": "Closes the actual prime-band reciprocal-coefficient specialization unconditionally; it does not discharge the remaining logarithmic short-average input of T19.17.",
+      "evidence": [
+        "PaperP1.PrimeRangeHighMoments.high_moment_bound",
+        "PaperP1.PrimeRangeHighMoments.large_values_measure",
+        "PaperP1.PrimeRangeHighMoments.uniform_prime_range_estimates",
+        "PaperP1.PrimeRangeSquareBudget.prime_card_eventually",
+        "PaperP1.PrimeRangeSquareBudget.reciprocal_square_budget",
+        "PaperP1.PrimeRangeSquareBudget.reciprocal_square_budget_eventually"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17861 jobs); direct axiom audit passed for 17679 declarations using only propext, Classical.choice and Quot.sound; all 17656 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.59 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

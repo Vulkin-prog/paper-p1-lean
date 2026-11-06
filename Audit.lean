@@ -4068,6 +4068,9 @@ import PaperP1
 #print axioms PaperP1.PrimeProductReciprocalSaddleLower.ordinary_log_bound
 #print axioms PaperP1.PrimeProductReciprocalSaddleLower.ordinary_normalized_log_limit
 #print axioms PaperP1.PrimeProductSaddleChoice.exists_order
+#print axioms PaperP1.PrimeRangeHighMoments.high_moment_bound
+#print axioms PaperP1.PrimeRangeHighMoments.large_values_measure
+#print axioms PaperP1.PrimeRangeHighMoments.uniform_prime_range_estimates
 #print axioms PaperP1.PrimitiveTailScaling.coefficient_budget
 #print axioms PaperP1.PrimitiveTailScaling.scaled_geometric_bound
 #print axioms PaperP1.PrimitiveTailScaling.scaled_series_bound
@@ -7127,6 +7130,9 @@ import PaperP1
 #print axioms PaperP1.PrimeProductCensus.choose_lower
 #print axioms PaperP1.PrimeProductFibres.tuple_permutation
 #print axioms PaperP1.PrimeProductFibres.fibre_card_le_factorial
+#print axioms PaperP1.PrimeRangeSquareBudget.prime_card_eventually
+#print axioms PaperP1.PrimeRangeSquareBudget.reciprocal_square_budget
+#print axioms PaperP1.PrimeRangeSquareBudget.reciprocal_square_budget_eventually
 #print axioms PaperP1.PrimeRunStarts.mem_starts
 #print axioms PaperP1.PrimeRunStarts.parameters_card
 #print axioms PaperP1.PrimeRunStarts.starts_subset_interval
