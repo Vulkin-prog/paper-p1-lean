@@ -42643,7 +42643,8 @@
             "PaperP1.IntegralSourceProjectionCoordinates.coordinates_compatibility"
           ]
         }
-      ]
+      ],
+      "validation_commit": "73bbe57ee6bf070ab6a858b065916dbe7ed72933"
     },
     {
       "label": "p1:arith:dense",
