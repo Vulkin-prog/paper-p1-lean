@@ -37635,6 +37635,34 @@
         "status": "not_integrated"
       },
       "validation_commit": "2919f9e020657eddf5a180245fa5ebd7045fb36e"
+    },
+    {
+      "id": "P1-MATH-0844",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "A final-prime count for one block must be transported to the actual union with every occupied block and overlap retained.",
+      "finding": "ONE N0 precedes ALL large N, EVERY B>=32, every unit prime coefficient function and every separated sample set at 0<T<=N. If EACH sample has SOME actual final block above the actual logarithmic threshold, the ENTIRE sample set has cardinality<=exp(1001*(log log N)^2). The proof retains a literal cover by all block filters and bounds the complete actual band-count factor by exp((log log N)^2). Two theorems prove the band-count absorption and full union bound.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "The union of all actual final-prime large blocks has an explicit squared-log-log exponential size. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.FinalBadFrequencyCardinality.band_count_factor",
+        "PaperP1.FinalBadFrequencyCardinality.all_blocks_uniform"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18255 jobs); direct axiom audit passed for 18704 declarations using only propext, Classical.choice and Quot.sound; all 18911 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.34 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

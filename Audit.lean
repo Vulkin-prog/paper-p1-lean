@@ -3890,6 +3890,8 @@ import PaperP1
 #print axioms PaperP1.FactorialResolvent.correction_abs_bound
 #print axioms PaperP1.FactorialResolvent.summable_abs_correction
 #print axioms PaperP1.FactorialResolvent.correction_l1_bound
+#print axioms PaperP1.FinalBadFrequencyCardinality.band_count_factor
+#print axioms PaperP1.FinalBadFrequencyCardinality.all_blocks_uniform
 #print axioms PaperP1.FinalNarrowBandGeometry.anchor_upper
 #print axioms PaperP1.FinalNarrowBandGeometry.index_card_bound
 #print axioms PaperP1.FinalPrimeBandGeometry.exponent_lower_tendsto
