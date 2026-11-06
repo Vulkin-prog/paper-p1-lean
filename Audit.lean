@@ -3276,6 +3276,11 @@ import PaperP1
 #print axioms PaperP1.WeightedVeronesePieceIndex.piece_card
 #print axioms PaperP1.ZModPointEvaluations.ringHom_scalars
 #print axioms PaperP1.ActualDyadicBucketMaps.exists_map
+#print axioms PaperP1.ActualEulerBand.constant_pos
+#print axioms PaperP1.ActualEulerBand.frequency_cover
+#print axioms PaperP1.ActualEulerBand.band_primes_le
+#print axioms PaperP1.ActualEulerBand.band_integral_bound
+#print axioms PaperP1.ActualEulerBand.real_band_bound
 #print axioms PaperP1.ActualLocalUnitMapGridCount.exists_at_nonexceptional
 #print axioms PaperP1.ActualLocalUnitMapGridCount.exists_control_set_and_maps
 #print axioms PaperP1.ActualTaylorRemainderBound.jet_self

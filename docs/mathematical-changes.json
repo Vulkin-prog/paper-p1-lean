@@ -33420,6 +33420,39 @@
         "status": "not_integrated"
       },
       "validation_commit": "c1b26ab5fa2215a15b3e8bac4f6bd0ad567b97bf"
+    },
+    {
+      "id": "P1-MATH-0712",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "Whole-frequency Perron transfer and a separate Cauchy estimate did not yet give the actual literal prime-band inequality.",
+      "finding": "The literal triple convolution on each admissible prime band is controlled by the actual full Euler local-supremum budget plus one uniform small error.",
+      "proposed_revision": "Keep the actual full Euler factor and strengthen the per-band error quantitatively before the global growing-band sum.",
+      "impact": "The literal triple convolution on each admissible prime band is controlled by the actual full Euler local-supremum budget plus one uniform small error. Weighted quantitative global band/Halasz assembly and final logarithmic short averages remain unfinished.",
+      "evidence": [
+        "PaperP1.ActualEulerBand.constant_pos",
+        "PaperP1.ActualEulerBand.frequency_cover",
+        "PaperP1.ActualEulerBand.band_primes_le",
+        "PaperP1.ActualEulerBand.band_integral_bound",
+        "PaperP1.ActualEulerBand.real_band_bound",
+        "PaperP1.ActualEulerBand.frequencyCutoff",
+        "PaperP1.ActualEulerBand.constant"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17991 jobs); direct axiom audit passed for 18169 declarations using only propext, Classical.choice and Quot.sound; all 18265 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.70 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
