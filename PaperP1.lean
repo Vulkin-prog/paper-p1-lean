@@ -4748,3 +4748,4 @@ public import PaperP1.Analysis.ActualMixedPairDecay
 public import PaperP1.Analysis.FiniteFrequencyCover
 public import PaperP1.Analysis.ActualIntermediateFrequencyRegion
 public import PaperP1.Analysis.MixedRegionEnvelope
+public import PaperP1.Analysis.MixedEnvelopeLimit
