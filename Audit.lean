@@ -4858,6 +4858,11 @@ import PaperP1
 #print axioms PaperP1.RelativeRamareRemainder.value_relation
 #print axioms PaperP1.RelativeRamareRemainder.difference_identity
 #print axioms PaperP1.RelativeRamareRemainder.quotient_continuous
+#print axioms PaperP1.RoundedAmplificationGeometry.rounded_upper_bound
+#print axioms PaperP1.RoundedAmplificationGeometry.rounded_upper_exp_bound
+#print axioms PaperP1.RoundedAmplificationGeometry.rounded_power_bound
+#print axioms PaperP1.RoundedAmplificationGeometry.product_span_bound
+#print axioms PaperP1.RoundedAmplificationGeometry.bandwidth_bound
 #print axioms PaperP1.RoundedScaleSideBudget.rounded_upper
 #print axioms PaperP1.RoundedScaleSideBudget.square_root_bound
 #print axioms PaperP1.RoundedScaleSideBudget.horizontal_cost
