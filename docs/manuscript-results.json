@@ -45706,7 +45706,8 @@
         "general_P3_estimate_proved": false,
         "integer_coefficients_only": true,
         "original_degree_caps_preserved": true
-      }
+      },
+      "validation_commit": "40570ff641481d1ba232895de5f454dc02ceecca"
     },
     {
       "label": "p1:arith:dense",
