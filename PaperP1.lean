@@ -4392,3 +4392,16 @@ public import PaperP1.Arithmetic.P3FiniteFieldClassEstimate
 public import PaperP1.Arithmetic.P3LinearNoetherForms
 public import PaperP1.Arithmetic.P3UniversalNoetherForms
 public import PaperP1.Asymptotics.UniformGeometricCountsNoetherFieldInput
+public import PaperP1.Algebra.FirstChartCoordinateEquiv
+public import PaperP1.Algebra.FirstCoordinateShear
+public import PaperP1.Algebra.HomogeneousFirstChartTranslation
+public import PaperP1.Algebra.HomogeneousQuadricFirstChart
+public import PaperP1.Algebra.LinearFirstCoordinateNormalization
+public import PaperP1.Algebra.P3FieldChartExchange
+public import PaperP1.Algebra.QuadraticDirectionFibres
+public import PaperP1.Algebra.QuadricNormalHomogenization
+public import PaperP1.Arithmetic.P3QuadricFiniteFieldEstimate
+public import PaperP1.Diophantine.FiniteFieldQuadricFirstChartCount
+public import PaperP1.Diophantine.FiniteFieldQuadricLastChartCount
+public import PaperP1.Diophantine.FiniteFieldQuadricLinearCount
+public import PaperP1.Diophantine.FiniteFieldQuadricNormalCount

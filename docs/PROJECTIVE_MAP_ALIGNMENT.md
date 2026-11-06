@@ -1,6 +1,16 @@
 # Actual projective scheme map
 
-Current checkpoint P1-MATH-0608: canonical companionT1.7 is
+Current checkpoint P1-MATH-0609: the actual canonical quadric class count is
+internally proved <=p^2+2p at every prime with irreducible reduction. This gives
+the precise uniform finite-field input for ALL d<=2, with no characteristic
+restriction and with the original X3=1 chart and actual smooth classes retained.
+Canonical T1.7 remains `UniformGeometricCountsNoetherFieldInput.companion_T1_7`.
+The two general independent input families remain explicit: universal Noether
+forms and higher-degree finite-field estimates. Universal forms in degree two
+are not claimed. Coverage stays163 proved,2 conditional,2 in_progress out of167;
+all73 main results are proved. No Palomar registration.
+
+Historical checkpoint P1-MATH-0608: canonical companionT1.7 is
 `UniformGeometricCountsNoetherFieldInput.companion_T1_7`. The actual nonzero
 integer good-prime certificate and its polynomial height bound are internally
 constructed from universal integer Noether forms. The independent remaining
@@ -21415,3 +21425,20 @@ UniformGeometricCountsNoetherFieldInput assembles the full aligned companionT1.7
 Seven modules add sixteen theorems and nine definitions/hypothesis structures. The certificate is constructed from actual polynomial evaluations with actual uniform height control. Coverage remains163 proved,2 conditional,2 in_progress out of167, with all73 main results proved. The separate companionT19.17 input remains outstanding. Literal false T1.10/T5.1 remain distinguished from their checked corrected replacements. Original manuscript hashes, Lean v4.36.0-rc2, permitted axioms and all checking options are unchanged. One existing Mathlib source module was built selectively, without a dependency download. No Palomar registration. Ubuntu free space is about6.04GiB.
 
 Verified under Lean v4.36.0-rc2: full build passed (17441 jobs); direct axiom audit passed for 16837 declarations using only propext, Classical.choice and Quot.sound; all 16595 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.03 GiB.
+
+
+## Direct leading-coefficient-one finite-field estimate for every original quadric smooth class
+
+P3QuadricFiniteFieldEstimate proves the actual canonical smooth residue-class count is at most p^2+2p at EVERY prime when the actual reduced homogeneous degree-two equation is irreducible. No normal form, coordinate correspondence, root-count estimate, finite-field literature theorem or good-prime certificate is supplied as an additional hypothesis. A geometrically irreducible reduction is in particular irreducible by the previously proved field-extension reflection.
+
+The proof counts all original affine quadric points once one smooth point is selected from a nonempty canonical class set. HomogeneousFirstChartTranslation proves the actual translation evaluation and every free derivative formula. HomogeneousQuadricFirstChart derives the exact original equation L+Q at the smooth origin, with L homogeneous of degree one, Q homogeneous of degree two and L!=0 proved from the actual nonzero derivative. FirstCoordinateShear and LinearFirstCoordinateNormalization construct invertible triangular coordinate changes and normalize one nonzero linear coefficient. FirstChartCoordinateEquiv lifts the SAME literal free-coordinate change to the original homogeneous polynomial, preserving irreducibility.
+
+QuadricNormalHomogenization proves the actual tangent restriction of Q is nonzero: otherwise a literal coordinate variable divides the original homogeneous quadric; irreducibility would force the degree-two polynomial to divide a degree-one variable, contradicting total degree. QuadraticDirectionFibres proves every root outside the tangent plane has a unique normalized direction, giving at most p^2 such points. The actual tangent restriction has degree at most two, so the EXISTING proved finite-field plane zero bound gives at most2p remaining points. No characteristic-two division is used; every field and every prime are included.
+
+FiniteFieldQuadricLinearCount, FirstChartCount and LastChartCount transfer the actual point sets injectively through the constructed changes. P3FieldChartExchange proves the exact original X3=1 to first-chart exchange, transports every partial derivative, and proves the free-gradient assertion by the actual Euler identity without a characteristic restriction. P3QuadricFiniteFieldEstimate proves exact integer evaluation/reduction and derivative compatibility for the original canonical residue representatives. Empty class sets are handled directly; a nonempty set supplies its own actual smooth point. The bound therefore applies to the actual Class p P used throughout the determinant construction, retaining the original chart and every relevant point.
+
+For each eta>0, an integer K>2/eta is chosen before every P. For every prime p>=K, p^2+2p <= (1+eta)*p^2. Consequently P3FiniteFieldClassEstimate.UniformEstimate2 is now proved internally. Combined with the previous degree<=1 proof, P3QuadricFiniteFieldEstimate.of_degree_le_two proves ALL d<=2 cases. The degree-two full global auxiliary theorem is also proved under ONLY universal Noether-form existence; the independent point estimate is no longer required there. This does not prove universal Noether forms in degree two or the general higher-degree finite-field estimate.
+
+Thirteen modules add forty-nine theorems and ten definitions. Canonical companionT1.7 remains UniformGeometricCountsNoetherFieldInput.companion_T1_7, conditional on the SAME two independent input families in general. The point-estimate input is discharged for degrees0,1,2 only; universal forms are still proved in degree one only. Coverage remains163 proved,2 conditional,2 in_progress out of167, all73 main results proved. The separate companionT19.17 input and the two literal false original statements retain their previous scopes. One accidentally overwritten existing plane-bound module was restored BYTE FOR BYTE before validation and its existing theorem is reused. Original source hashes, Lean version, allowed axioms and checking options are unchanged. No dependency download or Palomar registration. Git compaction preserved all23540 object IDs and fullfsck passed; Ubuntu free space is about6.00GiB.
+
+Verified under Lean v4.36.0-rc2: full build passed (17467 jobs); direct axiom audit passed for 16886 declarations using only propext, Classical.choice and Quot.sound; all 16654 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.00 GiB.
