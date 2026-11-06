@@ -43653,7 +43653,8 @@
             "PaperP1.FullDegreeSourceDerivativeConductor.conductor_in_characteristic"
           ]
         }
-      ]
+      ],
+      "validation_commit": "29a2b3902208c047811634d47b812d21e6cb9cce"
     },
     {
       "label": "p1:arith:dense",
