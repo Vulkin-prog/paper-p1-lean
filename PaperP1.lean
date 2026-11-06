@@ -4291,3 +4291,5 @@ public import PaperP1.Algebra.FieldExtensionPolynomialIrreducibility
 public import PaperP1.Algebra.HomogeneousGradientSection
 public import PaperP1.Geometry.FiniteSurfaceCurveHilbert
 public import PaperP1.Geometry.GradedSurfaceSectionCurves
+public import PaperP1.Geometry.P3HypersurfaceRationalData
+public import PaperP1.Geometry.P3HypersurfaceSingularCurves

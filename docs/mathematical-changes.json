@@ -28070,6 +28070,39 @@
         "status": "not_integrated"
       },
       "validation_commit": "2ace5025329a6788afbba47d67c39e567702738b"
+    },
+    {
+      "id": "P1-MATH-0588",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The remaining primary P3 theorem still needed a literal curve family covering its singular normalized integer points, constructed uniformly in height from the actual equation and genuine quotient Hilbert data.",
+      "finding": "The exact P3 input equation constructs one height-independent family of at most d*(d-1) actual projective curves of genuine degree at most d*(d-1), covering all its literal normalized integer points with zero polynomial gradient.",
+      "proposed_revision": "Separate the gradient-zero locus and add this fixed actual derivative-section curve family before applying the global determinant method to the complementary gradient-nonzero points. Retain rational-prime components without assuming geometric integrality for each curve.",
+      "impact": "Closes the complete algebraic singular-point curve-cover step of the primary P3 argument, with explicit coefficient-independent degree and count budgets and exact point-ideal membership.",
+      "evidence": [
+        "PaperP1.P3HypersurfaceRationalData.irreducible",
+        "PaperP1.P3HypersurfaceRationalData.prime",
+        "PaperP1.P3HypersurfaceRationalData.degree_pos",
+        "PaperP1.P3HypersurfaceRationalData.ideal_le_kernel",
+        "PaperP1.P3HypersurfaceRationalData.evaluation_mk",
+        "PaperP1.P3HypersurfaceSingularCurves.exists_family",
+        "PaperP1.P3HypersurfaceRationalData.evaluation"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17239 jobs); direct axiom audit passed for 16571 declarations using only propext, Classical.choice and Quot.sound; all 16263 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.14 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

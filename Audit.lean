@@ -12656,6 +12656,12 @@ import PaperP1
 #print axioms PaperP1.OrdinarySurfaceCurveRegrading.source_curve_at_degree
 #print axioms PaperP1.OriginalFieldCurveNoetherNormalization.exists_normalization
 #print axioms PaperP1.OriginalFieldFiniteCurveParameters.exists_parameters
+#print axioms PaperP1.P3HypersurfaceRationalData.irreducible
+#print axioms PaperP1.P3HypersurfaceRationalData.prime
+#print axioms PaperP1.P3HypersurfaceRationalData.degree_pos
+#print axioms PaperP1.P3HypersurfaceRationalData.ideal_le_kernel
+#print axioms PaperP1.P3HypersurfaceRationalData.evaluation_mk
+#print axioms PaperP1.P3HypersurfaceSingularCurves.exists_family
 #print axioms PaperP1.PlaneImagePointSeparation.evaluations_equal_of_coordinates
 #print axioms PaperP1.PresentedProjectiveCurveData.kernel_eq
 #print axioms PaperP1.PresentedProjectiveCurveData.evaluation_surjective
