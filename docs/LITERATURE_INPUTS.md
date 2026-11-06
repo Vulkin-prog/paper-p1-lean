@@ -1,6 +1,15 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0861: The rounded logarithmic comparison term
+Current checkpoint P1-MATH-0862: Actual logarithmic sums vanish
+uniformly on every fixed-order polynomial frequency band. The triple-
+large prime frequency contribution, the central-frequency mean
+comparison and complete logarithmic short-average concentration remain
+unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164
+proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources,
+false-scope corrections, compiler and axioms unchanged. About 51.05 GiB
+free on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0861: The rounded logarithmic comparison term
 is bounded by factorial times X to minus seven sixteenths. The triple-
 large prime frequency contribution, the central-frequency mean
 comparison and complete logarithmic short-average concentration remain
@@ -33539,6 +33548,12 @@ For every fixed n>0, prove (X^(1/(16*n)))^n=X^(1/16) and the exact quotient redu
 
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
 
+## Internal actual logarithmic sums vanish uniformly on every fixed-order polynomial frequency band
+
+Define the ACTUAL terminal envelope 6^(n+1)/sqrt(X)+n!/X^(7/16). It is nonnegative and tends to zero for each FIXED n. ONE X0 precedes ALL X>=X0 and EVERY frequency X^(3/4)<=|t|<=X^(n+1/4), giving the full actual rounded terminal budget<=this envelope and the ORIGINAL actual dyadic logarithmic sum<=X*b_n(K,envelope). Consequently for EVERY epsilon>0 one cutoff precedes ALL such X and frequencies with norm(actual sum)<=epsilon*X. Six theorems and one envelope definition combine all actual integer geometry, terminal estimates and fixed-depth recursion. This is an actual uniform integer oscillation theorem; no prime-supported Halasz bound or remaining MR energy estimate is claimed.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -37446,3 +37461,14 @@ For every fixed n>0, prove (X^(1/(16*n)))^n=X^(1/16) and the exact quotient redu
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.05 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18289 jobs); direct axiom audit passed for 18789 declarations using only propext, Classical.choice and Quot.sound; all 19011 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.03 GiB.
+
+
+## Actual logarithmic sums vanish uniformly on every fixed-order polynomial frequency band
+
+Stable ID: p1:internal:rounded-terminal-decay. Actual logarithmic sums vanish uniformly on every fixed-order polynomial frequency band. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
+
+Define the ACTUAL terminal envelope 6^(n+1)/sqrt(X)+n!/X^(7/16). It is nonnegative and tends to zero for each FIXED n. ONE X0 precedes ALL X>=X0 and EVERY frequency X^(3/4)<=|t|<=X^(n+1/4), giving the full actual rounded terminal budget<=this envelope and the ORIGINAL actual dyadic logarithmic sum<=X*b_n(K,envelope). Consequently for EVERY epsilon>0 one cutoff precedes ALL such X and frequencies with norm(actual sum)<=epsilon*X. Six theorems and one envelope definition combine all actual integer geometry, terminal estimates and fixed-depth recursion. This is an actual uniform integer oscillation theorem; no prime-supported Halasz bound or remaining MR energy estimate is claimed.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.05 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18291 jobs); direct axiom audit passed for 18795 declarations using only propext, Classical.choice and Quot.sound; all 19018 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.02 GiB.

@@ -1,6 +1,15 @@
 # Mathematical corrections and improvements
 
-Current checkpoint P1-MATH-0861: The rounded logarithmic comparison term
+Current checkpoint P1-MATH-0862: Actual logarithmic sums vanish
+uniformly on every fixed-order polynomial frequency band. The triple-
+large prime frequency contribution, the central-frequency mean
+comparison and complete logarithmic short-average concentration remain
+unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164
+proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources,
+false-scope corrections, compiler and axioms unchanged. About 51.05 GiB
+free on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0861: The rounded logarithmic comparison term
 is bounded by factorial times X to minus seven sixteenths. The triple-
 large prime frequency contribution, the central-frequency mean
 comparison and complete logarithmic short-average concentration remain
@@ -2517,7 +2526,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**859 mathematical improvements and two statement-scope corrections are confirmed.**
+**860 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -33356,3 +33365,12 @@ For every fixed n>0, prove (X^(1/(16*n)))^n=X^(1/16) and the exact quotient redu
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.05 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18289 jobs); direct axiom audit passed for 18789 declarations using only propext, Classical.choice and Quot.sound; all 19011 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.03 GiB.
+
+
+## Actual logarithmic sums vanish uniformly on every fixed-order polynomial frequency band
+
+Define the ACTUAL terminal envelope 6^(n+1)/sqrt(X)+n!/X^(7/16). It is nonnegative and tends to zero for each FIXED n. ONE X0 precedes ALL X>=X0 and EVERY frequency X^(3/4)<=|t|<=X^(n+1/4), giving the full actual rounded terminal budget<=this envelope and the ORIGINAL actual dyadic logarithmic sum<=X*b_n(K,envelope). Consequently for EVERY epsilon>0 one cutoff precedes ALL such X and frequencies with norm(actual sum)<=epsilon*X. Six theorems and one envelope definition combine all actual integer geometry, terminal estimates and fixed-depth recursion. This is an actual uniform integer oscillation theorem; no prime-supported Halasz bound or remaining MR energy estimate is claimed.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.05 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18291 jobs); direct axiom audit passed for 18795 declarations using only propext, Classical.choice and Quot.sound; all 19018 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.02 GiB.

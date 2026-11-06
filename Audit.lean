@@ -5049,6 +5049,12 @@ import PaperP1
 #print axioms PaperP1.RoundedScaleSideBudget.square_root_bound
 #print axioms PaperP1.RoundedScaleSideBudget.horizontal_cost
 #print axioms PaperP1.RoundedScaleSideBudget.vertical_cost
+#print axioms PaperP1.RoundedTerminalDecay.envelope_nonneg
+#print axioms PaperP1.RoundedTerminalDecay.envelope_tendsto
+#print axioms PaperP1.RoundedTerminalDecay.budget_bound
+#print axioms PaperP1.RoundedTerminalDecay.uniform_budget_bound
+#print axioms PaperP1.RoundedTerminalDecay.uniform_logarithmic_bound
+#print axioms PaperP1.RoundedTerminalDecay.small_uniform
 #print axioms PaperP1.RungePowerSeries.coeff_sqrtFactorSeries
 #print axioms PaperP1.RungePowerSeries.coeff_rungeProductSeries
 #print axioms PaperP1.RungePowerSeries.binomialSeries_half_sq
