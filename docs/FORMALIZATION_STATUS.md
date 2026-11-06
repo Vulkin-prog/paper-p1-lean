@@ -171,7 +171,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records592 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records593 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -290,7 +290,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **16644 audited theorem/lemma declarations**. This
+- The project currently has **16658 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -28785,3 +28785,20 @@ The mathematical simplification is complete: the original surface covering trans
 Four modules add six theorems and three explicit proposition/hypothesis definitions. All73 main results remain proved; coverage stays163 proved,2 conditional,2 in_progress out of167. Literal false T1.10/T5.1 and their checked corrected replacements remain distinguished. Original source hashes, compiler, heartbeat settings and permitted kernel axioms are unchanged; no dependency download or Palomar submission. Ubuntu free space is about6.19GiB.
 
 Verified under Lean v4.36.0-rc2: full build passed (17297 jobs); direct axiom audit passed for 16644 declarations using only propext, Classical.choice and Quot.sound; all 16349 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.19 GiB.
+
+
+## Actual standard-monomial auxiliary equations from smooth prime classes and exact row-height separation
+
+StandardMonomialFamily constructs the literal finite coefficient polynomial on any injective family of exponent vectors over every commutative ring. Its selected coefficients, support containment, nonvanishing, homogeneity, actual point evaluation and coefficient-map identities are proved. Over a domain, if no selected monomial is divisible by the actual leading monomial of the original equation for a chosen monomial order, every nonzero combination is proved not divisible by that equation. This uses the actual support of the combination and the exact leading exponent of a product; no quotient-basis independence is supplied.
+
+StandardMonomialAuxiliary applies the proved integral evaluation annihilator to the original finite point population. Vanishing maximal standard-monomial evaluation minors produce one actual integer homogeneous auxiliary polynomial, chosen for all original points, and the preceding leading-monomial proof establishes that its rational coefficient image is not a multiple of the original rational equation. Coefficient lifting is actual and its nonzero rational coefficient vector is verified.
+
+PrimeClassStandardMonomialAuxiliary derives those vanishing minors from the internally proved multi-prime smooth surface divisor and actual integer determinant size separation. It handles the literal transpose between point-row and monomial-row evaluation matrices. Its original integer equation, original normalized points, representative roots modulo each prime, gradient nonvanishing and all congruences remain explicit.
+
+IntegerRowWeightDeterminant proves the exact integer absolute determinant bound s!*product_i W_i for actual natural row weights, transporting the proved real bound back through the actual determinant coefficient map. NormalizedP3MonomialHeight defines the actual free-coordinate weight w(m)=sum_(i<3)m_i and proves w(m)+m_3=degree(m). On original X3=1 integer points of height H, the actual monomial value is at most H^w(m). Thus the original evaluation determinant is bounded by s!*H^(sum_i w(m_i)), retaining the useful individual row weights rather than replacing each by the full homogeneous degree.
+
+PrimeClassHeightAuxiliary combines all constructions. If the actual scalar inequality s!*H^(sum_i w(m_i)) < (product_(p in S)p)^(L*s-choose(L+2,3)) holds for the original smooth prime classes, it constructs a literal degree-e integer auxiliary equation vanishing on the whole original population and not divisible by the original equation over Q. Neither a supplied auxiliary polynomial, a supplied determinant divisor nor assumed quotient independence is used.
+
+This closes the constructive passage from exact standard-monomial height/divisor separation to an actual independent auxiliary equation on one compatible family of smooth prime classes. Choosing the sharp standard families, estimating the resulting weights and combining different residue classes globally remain separate. The global auxiliary theorem in canonical T1.7 remains UNPROVED; canonical UniformGeometricCountsAuxiliaryInput and its sole P1-GEO-P3-GLOBAL-AUXILIARY input are unchanged. All73 main results remain proved; coverage stays163 proved,2 conditional,2 in_progress out of167. Six modules add fourteen theorems and two polynomial/weight definitions. Original source hashes, compiler, heartbeat settings and allowed axioms are unchanged; no dependency download or Palomar submission. Ubuntu free space is about6.17GiB.
+
+Verified under Lean v4.36.0-rc2: full build passed (17309 jobs); direct axiom audit passed for 16658 declarations using only propext, Classical.choice and Quot.sound; all 16365 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.17 GiB.

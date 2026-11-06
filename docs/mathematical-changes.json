@@ -28352,6 +28352,48 @@
         "status": "not_integrated"
       },
       "validation_commit": "1b37f2afc5a5b15a909cd1336b581133057440c9"
+    },
+    {
+      "id": "P1-MATH-0595",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "A determinant-method auxiliary polynomial must be actually constructed from singular original evaluation minors and proved independent of the original equation, while preserving the normalized-chart row weights needed for the sharp degree scale.",
+      "finding": "Actual standard monomial combinations avoid divisibility by the original leading equation. The literal factorial row-height/product-prime-divisor separation now constructs a nonmultiple integer homogeneous equation vanishing on the original smooth-class population.",
+      "proposed_revision": "Specify actual standard exponent vectors and retain their individual free-coordinate weights, then construct the integer auxiliary polynomial from the original evaluation kernel and prove nondivisibility using the actual leading monomial.",
+      "impact": "Closes the algebraic and integer-height construction of independent auxiliary equations from the proved local prime divisors; the sharp monomial-family and global residue analysis remain explicit.",
+      "evidence": [
+        "PaperP1.IntegerRowWeightDeterminant.natAbs_bound",
+        "PaperP1.NormalizedP3MonomialHeight.degree_split",
+        "PaperP1.NormalizedP3MonomialHeight.monomial_bound",
+        "PaperP1.NormalizedP3MonomialHeight.determinant_bound",
+        "PaperP1.PrimeClassHeightAuxiliary.exists_auxiliary",
+        "PaperP1.PrimeClassStandardMonomialAuxiliary.exists_auxiliary",
+        "PaperP1.StandardMonomialAuxiliary.exists_of_minors_zero",
+        "PaperP1.StandardMonomialFamily.coeff_at",
+        "PaperP1.StandardMonomialFamily.support_subset",
+        "PaperP1.StandardMonomialFamily.nonzero",
+        "PaperP1.StandardMonomialFamily.homogeneous",
+        "PaperP1.StandardMonomialFamily.evaluation",
+        "PaperP1.StandardMonomialFamily.map_coefficients",
+        "PaperP1.StandardMonomialFamily.not_dvd",
+        "PaperP1.NormalizedP3MonomialHeight.freeDegree",
+        "PaperP1.StandardMonomialFamily.polynomial"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17309 jobs); direct axiom audit passed for 16658 declarations using only propext, Classical.choice and Quot.sound; all 16365 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.17 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

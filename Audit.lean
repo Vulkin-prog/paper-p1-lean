@@ -1586,6 +1586,7 @@ import PaperP1
 #print axioms PaperP1.integerRoot_natAbs_le_height
 #print axioms PaperP1.integerRoot_natAbs_le_one_add_height
 #print axioms PaperP1.integerRoot_abs_le_one_add_height
+#print axioms PaperP1.IntegerRowWeightDeterminant.natAbs_bound
 #print axioms PaperP1.IntegerSquareGap.abs_le_abs_sq_sub_sq
 #print axioms PaperP1.IntegerSquareGap.natAbs_le_natAbs_sq_sub_sq
 #print axioms PaperP1.IntegerSquareGap.eval_natAbs_le
@@ -1751,6 +1752,9 @@ import PaperP1
 #print axioms PaperP1.NilpotentSimpleRoot.exists_root
 #print axioms PaperP1.NilpotentSimpleRoot.unique_root
 #print axioms PaperP1.NonnegativePowerDifference.bound
+#print axioms PaperP1.NormalizedP3MonomialHeight.degree_split
+#print axioms PaperP1.NormalizedP3MonomialHeight.monomial_bound
+#print axioms PaperP1.NormalizedP3MonomialHeight.determinant_bound
 #print axioms PaperP1.NormalizedP3SurfaceDeterminant.free_partial
 #print axioms PaperP1.NormalizedP3SurfaceDeterminant.integer_dvd
 #print axioms PaperP1.OddDegreeFieldSquares.two_dvd_degree
@@ -1930,6 +1934,8 @@ import PaperP1
 #print axioms PaperP1.PowerSeriesSimpleRoot.exists_root
 #print axioms PaperP1.PowerSeriesSquareGap.not_square
 #print axioms PaperP1.PowerSeriesSquareGap.not_fraction_square
+#print axioms PaperP1.PrimeClassHeightAuxiliary.exists_auxiliary
+#print axioms PaperP1.PrimeClassStandardMonomialAuxiliary.exists_auxiliary
 #print axioms PaperP1.PrimitiveBirationalFractionRing.closure_eq_top
 #print axioms PaperP1.PrimitiveBirationalFractionRing.fraction_ring
 #print axioms PaperP1.PrimitiveBirationalFractionRing.rank_one
@@ -2499,6 +2505,14 @@ import PaperP1
 #print axioms PaperP1.StandardBaseVeronese.degreeImage_id
 #print axioms PaperP1.StandardBaseVeronese.nativeVeronese_eq_adjoin
 #print axioms PaperP1.StandardBaseVeronese.baseAlgebra_eq_map
+#print axioms PaperP1.StandardMonomialAuxiliary.exists_of_minors_zero
+#print axioms PaperP1.StandardMonomialFamily.coeff_at
+#print axioms PaperP1.StandardMonomialFamily.support_subset
+#print axioms PaperP1.StandardMonomialFamily.nonzero
+#print axioms PaperP1.StandardMonomialFamily.homogeneous
+#print axioms PaperP1.StandardMonomialFamily.evaluation
+#print axioms PaperP1.StandardMonomialFamily.map_coefficients
+#print axioms PaperP1.StandardMonomialFamily.not_dvd
 #print axioms PaperP1.StandardVeroneseCoordinates.coordinatePower_val
 #print axioms PaperP1.StandardVeroneseCoordinates.coordinatePower_mem
 #print axioms PaperP1.StandardVeroneseCoordinates.coordinatePower_ne_zero

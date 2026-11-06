@@ -4322,3 +4322,9 @@ public import PaperP1.Analysis.P3AuxiliaryCoverExponentBudget
 public import PaperP1.Arithmetic.UniformP3AuxiliaryHypersurface
 public import PaperP1.Arithmetic.UniformP3CoverFromAuxiliary
 public import PaperP1.Asymptotics.UniformGeometricCountsAuxiliaryInput
+public import PaperP1.Algebra.IntegerRowWeightDeterminant
+public import PaperP1.Algebra.NormalizedP3MonomialHeight
+public import PaperP1.Algebra.PrimeClassHeightAuxiliary
+public import PaperP1.Algebra.PrimeClassStandardMonomialAuxiliary
+public import PaperP1.Algebra.StandardMonomialAuxiliary
+public import PaperP1.Algebra.StandardMonomialFamily
