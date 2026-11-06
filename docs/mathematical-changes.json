@@ -37100,6 +37100,37 @@
         "status": "not_integrated"
       },
       "validation_commit": "a9e7b1162ad0ee80a09181460ec527eca1536bdb"
+    },
+    {
+      "id": "P1-MATH-0826",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The second-band exceptional-set moment can exceed the subdivision width, so the earlier bounded-span argument cannot be applied without a new explicit cost.",
+      "finding": "For EVERY integer k, including k>H, the ACTUAL rounded narrow endpoints satisfy U^k<=exp(3*k/H)*L^k when H>=2 and the anchor exceeds H. The resulting logarithmic bandwidth is bounded by 3*k/H. For an actual sample mean-value factor at height T<=L and span M<=exp(3*r)*L, prove the explicit bound C*exp(6*r)*(2+9*r^2)*B, where C=exp(1)*(2*sqrt(pi)+2*pi). Four theorems and one constant definition retain the full growing-order span loss.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Every moment order retains an explicit powered narrow-span cost. The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.VariableAmplificationSpan.constant_pos",
+        "PaperP1.VariableAmplificationSpan.rounded_power_bound",
+        "PaperP1.VariableAmplificationSpan.bandwidth_bound",
+        "PaperP1.VariableAmplificationSpan.sampled_factor_bound",
+        "PaperP1.VariableAmplificationSpan.constant"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18219 jobs); direct axiom audit passed for 18663 declarations using only propext, Classical.choice and Quot.sound; all 18865 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.67 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

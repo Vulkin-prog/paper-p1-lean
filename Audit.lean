@@ -5336,6 +5336,10 @@ import PaperP1
 #print axioms PaperP1.ValuationDamping.damped_prime_bound
 #print axioms PaperP1.ValuationDamping.damped_integral
 #print axioms PaperP1.ValuationDamping.count_denominator_integral
+#print axioms PaperP1.VariableAmplificationSpan.constant_pos
+#print axioms PaperP1.VariableAmplificationSpan.rounded_power_bound
+#print axioms PaperP1.VariableAmplificationSpan.bandwidth_bound
+#print axioms PaperP1.VariableAmplificationSpan.sampled_factor_bound
 #print axioms PaperP1.VerticalGridLattice.center_identity
 #print axioms PaperP1.VerticalGridLattice.point_box
 #print axioms PaperP1.WeightedDivisorSquare.divisorSum_nonneg
