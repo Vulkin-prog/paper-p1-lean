@@ -26898,6 +26898,39 @@
         "status": "not_integrated"
       },
       "validation_commit": "534f25f62a54e44ab1f5bb03e62e441f0ebb54a2"
+    },
+    {
+      "id": "P1-MATH-0559",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The actual original-field bounded normalization had been proved, but the final quadratic-degree original-source point-count theorem still carried an algebraically closed coefficient-field restriction.",
+      "finding": "Every actual original homogeneous prime curve over any characteristic-zero coefficient field satisfies the dimension-only quadratic-degree integer and real-height counts with the absolute logarithmic exponent 17, without geometric integrality or any supplied projection/counting input.",
+      "proposed_revision": "Use the full original-field count in the literal affine chart and finite coordinate-index source interfaces, then update the main13.4 status only after those identifications and actual validation.",
+      "impact": "Closes the entire original-field all-dimensional point-count argument and its absolute logarithmic exponent; only source-interface identification remains before the numbered-result promotion.",
+      "evidence": [
+        "PaperP1.IntegralCurveGridCount.population_bound",
+        "PaperP1.UniformIntegralCurveCount.constant_pos",
+        "PaperP1.UniformIntegralCurveCount.population_bound",
+        "PaperP1.UniformIntegralCurveCount.realConstant_pos",
+        "PaperP1.UniformIntegralCurveCount.real_population_bound",
+        "PaperP1.UniformIntegralCurveCount.constant",
+        "PaperP1.UniformIntegralCurveCount.realConstant"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17037 jobs); direct axiom audit passed for 16262 declarations using only propext, Classical.choice and Quot.sound; all 15874 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.38 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

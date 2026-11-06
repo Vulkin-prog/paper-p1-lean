@@ -5177,6 +5177,7 @@ import PaperP1
 #print axioms PaperP1.IntegerRealIntervalCount.interval_card
 #print axioms PaperP1.IntegerRealIntervalCount.band_card
 #print axioms PaperP1.IntegerRealIntervalCount.strip_card
+#print axioms PaperP1.IntegralCurveGridCount.population_bound
 #print axioms PaperP1.IntegralGeometricPlanePointInput.exists_integral_presentation
 #print axioms PaperP1.IntegralGeometricPlanePointInput.presentation_properties
 #print axioms PaperP1.IntegralGeometricPlanePointInput.rational_input
@@ -7360,6 +7361,10 @@ import PaperP1
 #print axioms PaperP1.UniformFixedSourceCertificates.certificateTargets_le_power_eventually
 #print axioms PaperP1.UniformFixedSourceCertificates.critical_band_certificateTargets
 #print axioms PaperP1.UniformFixedSourceCertificates.companion_T4_2
+#print axioms PaperP1.UniformIntegralCurveCount.constant_pos
+#print axioms PaperP1.UniformIntegralCurveCount.population_bound
+#print axioms PaperP1.UniformIntegralCurveCount.realConstant_pos
+#print axioms PaperP1.UniformIntegralCurveCount.real_population_bound
 #print axioms PaperP1.UniformNormalizedCurvePointCount.above_degree_bound
 #print axioms PaperP1.UniformNormalizedCurvePointCount.ordinary_points
 #print axioms PaperP1.UniformNormalizedCurvePointCount.ordinary_specialization
