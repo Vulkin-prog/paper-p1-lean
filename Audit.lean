@@ -1883,6 +1883,11 @@ import PaperP1
 #print axioms PaperP1.MonicPlaneAffineChart.irreducible
 #print axioms PaperP1.MonicPolynomialQuotientFinite.of_monic_mem
 #print axioms PaperP1.MonicPolynomialQuotientFinite.of_unit_leadingCoeff_mem
+#print axioms PaperP1.MonicResultantSpecialization.common_base_zero
+#print axioms PaperP1.MonicResultantSpecialization.monic_fibre_card
+#print axioms PaperP1.MonicResultantSpecialization.resultant_nonzero_of_not_dvd
+#print axioms PaperP1.MonicResultantSpecialization.monic_derivative_ne_zero
+#print axioms PaperP1.MonicResultantSpecialization.derivative_resultant_nonzero
 #print axioms PaperP1.MultiPrimeClassifiedSurfaceDeterminant.integer_dvd
 #print axioms PaperP1.MultiPrimeClassifiedSurfaceDeterminant.det_zero_of_small
 #print axioms PaperP1.MultiPrimeSurfaceDeterminant.integer_dvd
@@ -2188,6 +2193,10 @@ import PaperP1
 #print axioms PaperP1.PolynomialAuxiliaryExceptions.divisible_or_nonzero
 #print axioms PaperP1.PolynomialAuxiliaryExceptions.zero_of_divisible
 #print axioms PaperP1.PolynomialAuxiliaryExceptions.restriction_zero_or_nowhere_zero
+#print axioms PaperP1.PolynomialCoefficientResultantDegree.derivative_coefficient_degree
+#print axioms PaperP1.PolynomialCoefficientResultantDegree.sylvester_entry_degree
+#print axioms PaperP1.PolynomialCoefficientResultantDegree.resultant_degree
+#print axioms PaperP1.PolynomialCoefficientResultantDegree.derivative_resultant_degree
 #print axioms PaperP1.PolynomialCommonRootFactor.exists_factor
 #print axioms PaperP1.PolynomialCoordinateDerivative.finSucc_pderiv_zero
 #print axioms PaperP1.PolynomialCoordinateProjectionFinite.quotientEquiv_mk
@@ -5583,6 +5592,7 @@ import PaperP1
 #print axioms PaperP1.FiniteEvenSquareClasses.coefficient_zero
 #print axioms PaperP1.FiniteEvenSquareClasses.combination_injective
 #print axioms PaperP1.FiniteEvenSquareClasses.finrank_space
+#print axioms PaperP1.FiniteFieldMultivariateZeroBound.cardinality
 #print axioms PaperP1.FiniteFieldPolynomialMultiplicityCount.cardinality
 #print axioms PaperP1.FiniteIndexIntegralCurveCount.population_bound
 #print axioms PaperP1.FiniteNormalizationIntegerCount.exists_primitive_count
@@ -6127,6 +6137,10 @@ import PaperP1
 #print axioms PaperP1.ModerateWeightedSeries.finite_weight_identity
 #print axioms PaperP1.ModerateWeightedSeries.weightedTerm_le
 #print axioms PaperP1.ModerateWeightedSeries.weightedTotal_le
+#print axioms PaperP1.MonicCriticalPointCount.common_points_card
+#print axioms PaperP1.MonicCriticalPointCount.critical_points_card_from_resultant
+#print axioms PaperP1.MonicCriticalPointCount.critical_points_card
+#print axioms PaperP1.MonicCriticalPointCount.critical_points_card_degree_cap
 #print axioms PaperP1.MultiAnchorAssignments.card_receiving_le
 #print axioms PaperP1.MultiAnchorAssignments.card_covered_le
 #print axioms PaperP1.MultiAnchorCertificateCount.mem_sourceTuples

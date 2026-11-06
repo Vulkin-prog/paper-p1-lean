@@ -1,6 +1,17 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0635: the ACTUAL normalized source-Veronese
+Current checkpoint P1-MATH-0636: actual monic irreducible polynomial
+critical loci have an UNCONDITIONAL bound 2*d^3*q in characteristic p>d,
+under the stated outer-degree and coefficient-degree caps. Resultant
+nonvanishing, determinant degrees, base zero counts and literal fibre
+counts are internal proofs. Identifying the original reduced projection
+conductor locus with this critical locus, original-model reduction and
+effective prime budgets remain UNPROVED. Canonical T1.7 retains ONLY
+its prior P3 input in degrees>2 at the original families and caps. Coverage
+stays 163 proved, 2 conditional, 2 in_progress out of 167; all 73 main
+results proved. No Palomar registration.
+
+Historical checkpoint P1-MATH-0635: the ACTUAL normalized source-Veronese
 points are in exact bijection with the original affine split-radical
 solutions. Their cardinalities coincide; no factor D is introduced.
 The full weak normalized-source count is UNCONDITIONAL at certificate-good
@@ -513,7 +524,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records633 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records634 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -632,7 +643,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **17401 audited theorem/lemma declarations**. This
+- The project currently has **17415 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -29750,3 +29761,16 @@ SplitRadicalNormalizedPointCount assembles the EXISTING all-field graded dehomog
 Four modules add eight theorems and eight definitions. The normalized source-chart point-assembly gap is now DISCHARGED, in addition to the full internal source count. The passage from the original integer projected equation to the corresponding reduced source/image rings, verification of the reduced conductor, a bound for its actual exceptional locus, and effective uniform prime budgets remain unproved. No general plane or P3 estimate is claimed. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families and caps. Coverage stays 163 proved, 2 conditional, 2 in_progress out of 167, all 73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Work stays on Ubuntu with about 55.1 GiB available and no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17743 jobs); direct axiom audit passed for 17401 declarations using only propext, Classical.choice and Quot.sound; all 17307 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.15 GiB.
+
+
+## Unconditional finite-field monic critical-locus bounds with explicit degree constants
+
+FiniteFieldMultivariateZeroBound proves the actual Schwarz-Zippel cardinality bound in every positive number n of variables: a finite set of zeros of nonzero P has at most degree(P)*q^(n-1) elements. PolynomialCoefficientResultantDegree bounds every actual derivative coefficient, Sylvester entry and Sylvester determinant. If all coefficients of P and Q have multivariate total degree at most D, their actual resultant has degree at most (deg(P)+deg(Q))*D; for Q=P' this is at most 2*deg(P)*D.
+
+MonicResultantSpecialization proves that every literal common root specializes the actual resultant to zero, and that each specialization of a monic P has at most deg(P) roots. Gauss's lemma proves the actual resultant nonzero when monic irreducible P does not divide Q. In characteristic p exceeding the positive outer degree, the monic leading coefficient proves P' is nonzero, so P cannot divide P' and the derivative resultant is nonzero. No resultant nonvanishing conclusion is assumed in the final characteristic theorem.
+
+MonicCriticalPointCount assembles the actual image of a finite set of common zeros, the proved base zero count and the actual finite fibres. For monic irreducible P over F_q[X,Y], positive outer degree at most d, coefficient total degrees at most d and characteristic p>d, every actual finite set of simultaneous zeros of P and P' has at most 2*d^3*q elements. The bound is uniform over all coefficients. Four modules add fourteen theorems and no definitions.
+
+The generic actual monic critical-locus estimate is now DISCHARGED. Identifying the exceptional conductor locus of the original reduced projection with this literal polynomial critical locus remains to be proved. Original integer projected-model reduction, reduced-conductor verification and effective uniform prime budgets also remain unfinished. This does not prove the general P3 input. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families/caps. Coverage remains 163 proved, 2 conditional, 2 in_progress out of 167, all 73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Work stays on Ubuntu with about 55.1 GiB available and no dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17751 jobs); direct axiom audit passed for 17415 declarations using only propext, Classical.choice and Quot.sound; all 17321 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.13 GiB.

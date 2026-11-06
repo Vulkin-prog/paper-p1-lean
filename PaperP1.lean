@@ -4530,3 +4530,7 @@ public import PaperP1.Algebra.NormalizedQuotientPoints
 public import PaperP1.Algebra.ZModPointEvaluations
 public import PaperP1.Arithmetic.SplitRadicalCanonicalPointCount
 public import PaperP1.Arithmetic.SplitRadicalNormalizedPointCount
+public import PaperP1.Algebra.MonicResultantSpecialization
+public import PaperP1.Algebra.PolynomialCoefficientResultantDegree
+public import PaperP1.Arithmetic.FiniteFieldMultivariateZeroBound
+public import PaperP1.Arithmetic.MonicCriticalPointCount
