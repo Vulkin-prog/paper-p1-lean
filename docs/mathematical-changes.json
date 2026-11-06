@@ -33742,6 +33742,39 @@
         "status": "not_integrated"
       },
       "validation_commit": "d4ff95857a0a1205d8941e1f835da17ab30967c1"
+    },
+    {
+      "id": "P1-MATH-0721",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The preceding analytic components did not yet provide this exact finite partition, uniform global estimate or common-frequency conclusion.",
+      "finding": "The actual scale sum is scale(J)-log(2), and the top count scale is <=4*log(X). For EVERY fixed m, the sum of the first count(X)-m scales is <=4*log(X)/2^m, including the case of an empty early part. At most m bands remain.",
+      "proposed_revision": "Use the proved actual finite/global conclusion with its precise coefficient and cutoff scope; keep the remaining short-average theorem separate.",
+      "impact": "Exact early geometric scale sum and bounded late-band count. Final logarithmic short-average concentration and original T19.17 remain unfinished.",
+      "evidence": [
+        "PaperP1.GeometricBandSplit.scale_succ",
+        "PaperP1.GeometricBandSplit.scale_sum",
+        "PaperP1.GeometricBandSplit.scale_sum_le",
+        "PaperP1.GeometricBandSplit.top_scale_upper",
+        "PaperP1.GeometricBandSplit.early_sum_bound",
+        "PaperP1.GeometricBandSplit.late_count",
+        "PaperP1.GeometricBandSplit.range_split"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18009 jobs); direct axiom audit passed for 18233 declarations using only propext, Classical.choice and Quot.sound; all 18344 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.54 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

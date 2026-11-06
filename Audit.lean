@@ -3979,6 +3979,13 @@ import PaperP1
 #print axioms PaperP1.GaussianLaplaceKernel.vertical_norm
 #print axioms PaperP1.GaussianLaplaceKernel.vertical_ne_zero
 #print axioms PaperP1.GaussianLaplaceKernel.kernel_complex_formula
+#print axioms PaperP1.GeometricBandSplit.scale_succ
+#print axioms PaperP1.GeometricBandSplit.scale_sum
+#print axioms PaperP1.GeometricBandSplit.scale_sum_le
+#print axioms PaperP1.GeometricBandSplit.top_scale_upper
+#print axioms PaperP1.GeometricBandSplit.early_sum_bound
+#print axioms PaperP1.GeometricBandSplit.late_count
+#print axioms PaperP1.GeometricBandSplit.range_split
 #print axioms PaperP1.GradientComparisonControl.balance_factorization
 #print axioms PaperP1.GradientComparisonControl.static_sign
 #print axioms PaperP1.GradientComparisonControl.balance_sign

@@ -1,6 +1,12 @@
 # Actual projective scheme map
 
-Current checkpoint P1-MATH-0720: Exact actual geometric prime-band
+Current checkpoint P1-MATH-0721: Exact early geometric scale sum and
+bounded late-band count. Final logarithmic short-average concentration
+and original T19.17 remain unfinished. Original T1.7 complete. Coverage:
+164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. False
+scopes/corrections unchanged. No Palomar registration.
+
+Historical checkpoint P1-MATH-0720: Exact actual geometric prime-band
 partition without endpoint double counting. Final logarithmic short-
 average concentration and original T19.17 remain unfinished. Original
 T1.7 complete. Coverage: 164 proved, 1 conditional, 2 in_progress /167;
@@ -24114,3 +24120,14 @@ The finite band is the actual filter on this index. Bands are subsets of the ori
 Final logarithmic short-average concentration and original T19.17 remain unfinished. Original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, sources, pinned Lean and axioms unchanged. About 53.8 GiB is free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18007 jobs); direct axiom audit passed for 18226 declarations using only propext, Classical.choice and Quot.sound; all 18337 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.56 GiB.
+
+
+## Exact early geometric scale sum and bounded late-band count
+
+The actual scale sum is scale(J)-log(2), and the top count scale is <=4*log(X). For EVERY fixed m, the sum of the first count(X)-m scales is <=4*log(X)/2^m, including the case of an empty early part. At most m bands remain.
+
+The finite sum splits EXACTLY into these early indices and the shifted late range. Seven theorems justify the geometric early/late split without a factor equal to the total growing band count.
+
+Final logarithmic short-average concentration and original T19.17 remain unfinished. Original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, sources, pinned Lean and axioms unchanged. About 53.8 GiB is free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18009 jobs); direct axiom audit passed for 18233 declarations using only propext, Classical.choice and Quot.sound; all 18344 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.54 GiB.
