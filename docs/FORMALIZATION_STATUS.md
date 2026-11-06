@@ -1,6 +1,16 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0799: Actual narrow prime power and weighted
+Current checkpoint P1-MATH-0800: Actual narrow mixed prime and cofactor
+frequency estimates retain all amplification parameters. The
+complementary bad-prime frequency contribution, the central-frequency
+mean subtraction and complete logarithmic short-average concentration
+remain unproved. T19.17 conditional; original T1.7 unconditional.
+Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main
+proved. Sources, false-scope corrections, compiler and axioms unchanged.
+About 52.19 GiB free on Ubuntu. No dependency download or Palomar
+registration.
+
+Historical checkpoint P1-MATH-0799: Actual narrow prime power and weighted
 cofactor means satisfy uniform rounded support bounds. The complementary
 bad-prime frequency contribution, the central-frequency mean subtraction
 and complete logarithmic short-average concentration remain unproved.
@@ -2075,7 +2085,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records797 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records798 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -2194,7 +2204,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **18576 audited theorem/lemma declarations**. This
+- The project currently has **18577 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -33126,3 +33136,12 @@ For the ACTUAL narrow prime band, ACTUAL cofactor interval, original full-suppor
 The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.19 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18165 jobs); direct axiom audit passed for 18576 declarations using only propext, Classical.choice and Quot.sound; all 18761 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.15 GiB.
+
+
+## Actual narrow mixed prime and cofactor frequency estimates retain all amplification parameters
+
+On the ACTUAL mixed set where the first narrow-band Dirichlet polynomial is >=v>0 and the second is <=w>=0, the ACTUAL second-band polynomial times its original presence/count weighted cofactor has restricted mean square <=(w^2/v^(2*k))*C*(T/Ltot+1)*budget. The corresponding actual unit-separated sampled estimate has 18*C*((T+1)/Ltot+1). One theorem proves both conclusions from the literal mixed set, the actual narrow amplified estimates, proved mass condition and bounded rounded span. It holds at every k<=H with H>=4 and first anchor>=H. No asymptotic choice of v,w,k or complementary large-frequency estimate is assumed.
+
+The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.19 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18167 jobs); direct axiom audit passed for 18577 declarations using only propext, Classical.choice and Quot.sound; all 18762 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.14 GiB.

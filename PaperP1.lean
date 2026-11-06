@@ -4739,3 +4739,4 @@ public import PaperP1.Analysis.NarrowBandReciprocalMass
 public import PaperP1.Analysis.RoundedAmplificationGeometry
 public import PaperP1.Analysis.BoundedAmplificationFactor
 public import PaperP1.Analysis.ActualNarrowAmplifiedMean
+public import PaperP1.Analysis.ActualNarrowMixedMean

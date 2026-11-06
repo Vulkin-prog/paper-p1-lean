@@ -3286,6 +3286,7 @@ import PaperP1
 #print axioms PaperP1.ActualMixedPrimeMean.continuous_mixed_bound
 #print axioms PaperP1.ActualMixedPrimeMean.sampled_mixed_bound
 #print axioms PaperP1.ActualNarrowAmplifiedMean.estimates
+#print axioms PaperP1.ActualNarrowMixedMean.estimates
 #print axioms PaperP1.ActualTaylorRemainderBound.jet_self
 #print axioms PaperP1.ActualTaylorRemainderBound.within_eq_jet
 #print axioms PaperP1.ActualTaylorRemainderBound.factorial_divisor_bound
