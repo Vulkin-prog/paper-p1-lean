@@ -4902,6 +4902,10 @@ import PaperP1
 #print axioms PaperP1.RankinComparison.sqrt_div_le_rankin
 #print axioms PaperP1.RankinComparison.cast_sqrt_div_le_rankin
 #print axioms PaperP1.RankinComparison.cast_prod_rpow
+#print axioms PaperP1.RealEulerDamping.constant_pos
+#print axioms PaperP1.RealEulerDamping.damped_coefficient_bound
+#print axioms PaperP1.RealEulerDamping.norm_comparison
+#print axioms PaperP1.RealEulerDamping.logarithmic_norm_comparison
 #print axioms PaperP1.RealEulerSquareMean.normalized_square_mean_small
 #print axioms PaperP1.RealPretentiousDistance.point_nonneg
 #print axioms PaperP1.RealPretentiousDistance.point_upper

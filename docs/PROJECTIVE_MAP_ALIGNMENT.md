@@ -1,6 +1,15 @@
 # Actual projective scheme map
 
-Current checkpoint P1-MATH-0885: The actual prime damping defect has a
+Current checkpoint P1-MATH-0886: The actual real prime Euler product can
+be damped at a uniform proved cost. The triple-large prime frequency
+contribution, the central-frequency mean comparison and complete
+logarithmic short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 53.76 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0885: The actual prime damping defect has a
 uniform constant budget. The triple-large prime frequency contribution,
 the central-frequency mean comparison and complete logarithmic short-
 average concentration remain unproved. T19.17 conditional; original T1.7
@@ -27066,3 +27075,12 @@ Six theorems prove 0<=1-x^(-sigma)<=sigma log x for x>=1,sigma>=0, the actual we
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.76 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18337 jobs); direct axiom audit passed for 18905 declarations using only propext, Classical.choice and Quot.sound; all 19147 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.74 GiB.
+
+
+## The actual real prime Euler product can be damped at a uniform proved cost
+
+Four theorems and two definitions prove the exact damped real prime product and constant D=exp(log 4+7)>0. For EVERY finite prime set P below X and EVERY real prime coefficient bounded by one, 0<=sigma<=1 and sigma log X<=1 imply |F_P(f,t)|<=D*|F_P(f*p^(-sigma),t)|, uniformly in t. The actual damping sigma=1/log X is then specialized whenever log X>=1. The damped coefficients remain bounded by one. Every local term, prime defect and quadratic error is accounted for.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.76 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18339 jobs); direct axiom audit passed for 18909 declarations using only propext, Classical.choice and Quot.sound; all 19153 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.72 GiB.

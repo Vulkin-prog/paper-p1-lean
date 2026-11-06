@@ -39007,6 +39007,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "1eb3ad9a0ffdfdf04a160ad49c7f123b1b4d6e73"
+    },
+    {
+      "id": "P1-MATH-0886",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "Passing from finite products on Re(s)=1 to absolutely convergent Euler products requires an actual common damping cost; no such comparison may be assumed.",
+      "finding": "Four theorems and two definitions prove the exact damped real prime product and constant D=exp(log 4+7)>0. For EVERY finite prime set P below X and EVERY real prime coefficient bounded by one, 0<=sigma<=1 and sigma log X<=1 imply |F_P(f,t)|<=D*|F_P(f*p^(-sigma),t)|, uniformly in t. The actual damping sigma=1/log X is then specialized whenever log X>=1. The damped coefficients remain bounded by one. Every local term, prime defect and quadratic error is accounted for.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "The actual real prime Euler product can be damped at a uniform proved cost. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.RealEulerDamping.constant_pos",
+        "PaperP1.RealEulerDamping.damped_coefficient_bound",
+        "PaperP1.RealEulerDamping.norm_comparison",
+        "PaperP1.RealEulerDamping.logarithmic_norm_comparison",
+        "PaperP1.RealEulerDamping.product",
+        "PaperP1.RealEulerDamping.constant"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18339 jobs); direct axiom audit passed for 18909 declarations using only propext, Classical.choice and Quot.sound; all 19153 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.72 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
