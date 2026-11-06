@@ -40337,6 +40337,43 @@
         "status": "not_integrated"
       },
       "validation_commit": "de228aae91e7e1a350f94cf932ffa659f468dd5a"
+    },
+    {
+      "id": "P1-MATH-0928",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The prime sieve majorant requires the actual nonnegative infinite energy to have an exact finite-frequency Gram expansion, with justified convergence and phase differences.",
+      "finding": "Eight theorems and three definitions prove the actual logarithmic polynomial norm-square expansion, nonnegativity of each integer energy term, its exact complex double expansion and both complex and real convergent sum statements. The actual nonnegative infinite energy equals the literal finite double Gram sum of the actual Selberg kernel at every frequency difference. Every infinite/finite interchange is justified by the already proved actual series convergence; no positive quadratic-form identity is assumed.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "The actual positive Selberg energy has a complete exact infinite Gram identity. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.PositiveSelbergGram.norm_square_expansion",
+        "PaperP1.PositiveSelbergGram.term_nonneg",
+        "PaperP1.PositiveSelbergGram.term_identity",
+        "PaperP1.PositiveSelbergGram.complex_hasSum",
+        "PaperP1.PositiveSelbergGram.real_hasSum",
+        "PaperP1.PositiveSelbergGram.summable_terms",
+        "PaperP1.PositiveSelbergGram.gram_identity",
+        "PaperP1.PositiveSelbergGram.energy_nonneg",
+        "PaperP1.PositiveSelbergGram.polynomial",
+        "PaperP1.PositiveSelbergGram.term",
+        "PaperP1.PositiveSelbergGram.energy"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18423 jobs); direct axiom audit passed for 19078 declarations using only propext, Classical.choice and Quot.sound; all 19354 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.96 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

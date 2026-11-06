@@ -1,6 +1,15 @@
 # Multiquadratic split radicands: exact square-class independence
 
-Current checkpoint P1-MATH-0927: Actual Gaussian frequency rows have a
+Current checkpoint P1-MATH-0928: The actual positive Selberg energy has
+a complete exact infinite Gram identity. The triple-large prime
+frequency contribution, the central-frequency mean comparison and
+complete logarithmic short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 52.96 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0927: Actual Gaussian frequency rows have a
 uniform bound for arbitrary unit-separated samples. The triple-large
 prime frequency contribution, the central-frequency mean comparison and
 complete logarithmic short-average concentration remain unproved. T19.17
@@ -28542,3 +28551,12 @@ Four theorems and one definition prove a positive explicit constant L=1+sqrt(pi/
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.98 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18421 jobs); direct axiom audit passed for 19070 declarations using only propext, Classical.choice and Quot.sound; all 19343 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.98 GiB.
+
+
+## The actual positive Selberg energy has a complete exact infinite Gram identity
+
+Eight theorems and three definitions prove the actual logarithmic polynomial norm-square expansion, nonnegativity of each integer energy term, its exact complex double expansion and both complex and real convergent sum statements. The actual nonnegative infinite energy equals the literal finite double Gram sum of the actual Selberg kernel at every frequency difference. Every infinite/finite interchange is justified by the already proved actual series convergence; no positive quadratic-form identity is assumed.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.96 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18423 jobs); direct axiom audit passed for 19078 declarations using only propext, Classical.choice and Quot.sound; all 19354 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.96 GiB.

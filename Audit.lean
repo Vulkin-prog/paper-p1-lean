@@ -4855,6 +4855,14 @@ import PaperP1
 #print axioms PaperP1.PositiveReciprocalKernel.inverse_first_hasDerivAt
 #print axioms PaperP1.PositiveReciprocalKernel.inverse_derivative_nonneg
 #print axioms PaperP1.PositiveReciprocalKernel.inverse_integral
+#print axioms PaperP1.PositiveSelbergGram.norm_square_expansion
+#print axioms PaperP1.PositiveSelbergGram.term_nonneg
+#print axioms PaperP1.PositiveSelbergGram.term_identity
+#print axioms PaperP1.PositiveSelbergGram.complex_hasSum
+#print axioms PaperP1.PositiveSelbergGram.real_hasSum
+#print axioms PaperP1.PositiveSelbergGram.summable_terms
+#print axioms PaperP1.PositiveSelbergGram.gram_identity
+#print axioms PaperP1.PositiveSelbergGram.energy_nonneg
 #print axioms PaperP1.PositiveSelbergSeries.index_injective
 #print axioms PaperP1.PositiveSelbergSeries.range_iff
 #print axioms PaperP1.PositiveSelbergSeries.multiple_hasSum
