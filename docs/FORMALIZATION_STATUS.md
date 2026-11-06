@@ -149,7 +149,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records567 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records568 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -268,7 +268,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **16392 audited theorem/lemma declarations**. This
+- The project currently has **16406 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -28400,3 +28400,16 @@ The assembled bounded-degree finite-cover theorem gives a literal finite family 
 CompanionT1.7 retains its three explicit surface-cover hypotheses and stays conditional; all73 main results remain proved. Coverage remains163 proved,2 conditional,2 in_progress out of167. Three modules add nine theorems and four definitions. Original sources, pinned compiler, permitted axioms and heartbeat settings are unchanged; no dependency download or Palomar submission. Ubuntu free space is about6.15GiB.
 
 Verified under Lean v4.36.0-rc2: full build passed (17111 jobs); direct axiom audit passed for 16392 declarations using only propext, Classical.choice and Quot.sound; all 16039 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.15 GiB.
+
+
+## Total genuine Hilbert degree budget for finite incomparable homogeneous prime components
+
+HomogeneousPrimeSeparators constructs actual homogeneous separators for every finite family of pairwise incomparable homogeneous prime ideals. For each prime, one homogeneous element avoids that prime and belongs to all the other primes. It is built by choosing homogeneous components of actual ideal witnesses and multiplying the witnesses for the other primes. No degree bound on these auxiliary separators is required.
+
+GradedQuotientPieceLifts constructs linear right inverses of the actual quotient maps on each homogeneous piece over the coefficient field. GradedSeparatedComponentPieces uses those lifts and the actual separators to map the product of shifted component quotient pieces into the actual whole quotient piece. Reduction modulo each component prime kills all the other summands. Primality and the nonvanishing separator prove injectivity. Consequently the sum of the shifted component dimensions is at most the dimension of the whole homogeneous quotient piece. These are actual submodules and quotient algebras, with no separately supplied comparison map or dimension inequality.
+
+FiniteComponentHilbertBudget turns this actual dimension inequality into a sum inequality for the genuine top Hilbert coefficients. It translates each component Hilbert polynomial by the degree of its own separator, proves the eventual inequality at a common threshold, and uses the proved eventual polynomial coefficient order. Translation leaves the relevant top coefficient unchanged. For linear Hilbert polynomials this proves that the sum of the genuine component degrees is at most the genuine whole degree. No Cohen-Macaulay hypothesis, generic multiplicity witness or asserted component budget is assumed.
+
+This supplies the missing generic total-degree argument for the exceptional divisor. Applying it to the literal chart-relevant source-projective curves, and using positivity and integrality of their genuine degrees to bound their number, is the next separate step. Covering-curve pullback and the determinant-method surface-cover theorem also remain separate. CompanionT1.7 retains its explicit surface-cover hypotheses and remains conditional; all73 main results remain proved. Coverage remains163 proved,2 conditional,2 in_progress out of167. Four modules add fourteen theorems and three definitions. Original sources, pinned compiler, permitted axioms and heartbeat settings are unchanged; no dependency download or Palomar submission. Ubuntu free space is about6.13GiB.
+
+Verified under Lean v4.36.0-rc2: full build passed (17119 jobs); direct axiom audit passed for 16406 declarations using only propext, Classical.choice and Quot.sound; all 16056 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.13 GiB.

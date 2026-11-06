@@ -27367,6 +27367,49 @@
         "status": "not_integrated"
       },
       "validation_commit": "43c41aa0f8ed8c52db7d6ccb5afc33d656b91ce3"
+    },
+    {
+      "id": "P1-MATH-0570",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "A finite family of literal divisor curves and individual degree bounds did not yet supply a total genuine degree budget, so no uniform count could be inferred from finiteness.",
+      "finding": "Actual homogeneous separators and actual quotient-piece lifts give an injective map from all shifted component pieces into the whole quotient piece. Their genuine top Hilbert coefficients therefore sum to at most the whole top coefficient.",
+      "proposed_revision": "Prove the total component-degree bound through homogeneous separators and eventual Hilbert polynomial comparison, then derive a uniform component count from positive integral genuine curve degrees.",
+      "impact": "Establishes the generic missing total-degree argument without assuming the desired component budget or adding unnecessary smoothness or Cohen-Macaulay conditions.",
+      "evidence": [
+        "PaperP1.FiniteComponentHilbertBudget.sum_coefficient_le",
+        "PaperP1.FiniteComponentHilbertBudget.sum_linear_degree_le",
+        "PaperP1.GradedQuotientPieceLifts.exists_lift",
+        "PaperP1.GradedQuotientPieceLifts.quotient_lift",
+        "PaperP1.GradedQuotientPieceLifts.lift_quotient_value",
+        "PaperP1.GradedSeparatedComponentPieces.componentMap_value",
+        "PaperP1.GradedSeparatedComponentPieces.componentMap_own",
+        "PaperP1.GradedSeparatedComponentPieces.componentMap_other",
+        "PaperP1.GradedSeparatedComponentPieces.sumMap_projection",
+        "PaperP1.GradedSeparatedComponentPieces.sumMap_injective",
+        "PaperP1.GradedSeparatedComponentPieces.dimension_le",
+        "PaperP1.HomogeneousPrimeSeparators.homogeneous_outside",
+        "PaperP1.HomogeneousPrimeSeparators.one_separator",
+        "PaperP1.HomogeneousPrimeSeparators.finite_family",
+        "PaperP1.GradedQuotientPieceLifts.lift",
+        "PaperP1.GradedSeparatedComponentPieces.componentMap",
+        "PaperP1.GradedSeparatedComponentPieces.sumMap"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17119 jobs); direct axiom audit passed for 16406 declarations using only propext, Classical.choice and Quot.sound; all 16056 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.13 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

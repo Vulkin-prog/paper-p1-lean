@@ -4231,3 +4231,7 @@ public import PaperP1.Algebra.SourceSurfaceSectionHilbert
 public import PaperP1.Algebra.GradedQuotientHilbertMonotonicity
 public import PaperP1.Geometry.SourcePrincipalComponentCurves
 public import PaperP1.Geometry.SourceSurfaceSectionCurveDegree
+public import PaperP1.Algebra.FiniteComponentHilbertBudget
+public import PaperP1.Algebra.GradedQuotientPieceLifts
+public import PaperP1.Algebra.GradedSeparatedComponentPieces
+public import PaperP1.Algebra.HomogeneousPrimeSeparators

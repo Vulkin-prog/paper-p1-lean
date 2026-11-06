@@ -37,7 +37,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**567 mathematical improvements and two statement-scope corrections are confirmed.**
+**568 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -27518,3 +27518,16 @@ The assembled bounded-degree finite-cover theorem gives a literal finite family 
 CompanionT1.7 retains its three explicit surface-cover hypotheses and stays conditional; all73 main results remain proved. Coverage remains163 proved,2 conditional,2 in_progress out of167. Three modules add nine theorems and four definitions. Original sources, pinned compiler, permitted axioms and heartbeat settings are unchanged; no dependency download or Palomar submission. Ubuntu free space is about6.15GiB.
 
 Verified under Lean v4.36.0-rc2: full build passed (17111 jobs); direct axiom audit passed for 16392 declarations using only propext, Classical.choice and Quot.sound; all 16039 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.15 GiB.
+
+
+## Total genuine Hilbert degree budget for finite incomparable homogeneous prime components
+
+HomogeneousPrimeSeparators constructs actual homogeneous separators for every finite family of pairwise incomparable homogeneous prime ideals. For each prime, one homogeneous element avoids that prime and belongs to all the other primes. It is built by choosing homogeneous components of actual ideal witnesses and multiplying the witnesses for the other primes. No degree bound on these auxiliary separators is required.
+
+GradedQuotientPieceLifts constructs linear right inverses of the actual quotient maps on each homogeneous piece over the coefficient field. GradedSeparatedComponentPieces uses those lifts and the actual separators to map the product of shifted component quotient pieces into the actual whole quotient piece. Reduction modulo each component prime kills all the other summands. Primality and the nonvanishing separator prove injectivity. Consequently the sum of the shifted component dimensions is at most the dimension of the whole homogeneous quotient piece. These are actual submodules and quotient algebras, with no separately supplied comparison map or dimension inequality.
+
+FiniteComponentHilbertBudget turns this actual dimension inequality into a sum inequality for the genuine top Hilbert coefficients. It translates each component Hilbert polynomial by the degree of its own separator, proves the eventual inequality at a common threshold, and uses the proved eventual polynomial coefficient order. Translation leaves the relevant top coefficient unchanged. For linear Hilbert polynomials this proves that the sum of the genuine component degrees is at most the genuine whole degree. No Cohen-Macaulay hypothesis, generic multiplicity witness or asserted component budget is assumed.
+
+This supplies the missing generic total-degree argument for the exceptional divisor. Applying it to the literal chart-relevant source-projective curves, and using positivity and integrality of their genuine degrees to bound their number, is the next separate step. Covering-curve pullback and the determinant-method surface-cover theorem also remain separate. CompanionT1.7 retains its explicit surface-cover hypotheses and remains conditional; all73 main results remain proved. Coverage remains163 proved,2 conditional,2 in_progress out of167. Four modules add fourteen theorems and three definitions. Original sources, pinned compiler, permitted axioms and heartbeat settings are unchanged; no dependency download or Palomar submission. Ubuntu free space is about6.13GiB.
+
+Verified under Lean v4.36.0-rc2: full build passed (17119 jobs); direct axiom audit passed for 16406 declarations using only propext, Classical.choice and Quot.sound; all 16056 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.13 GiB.

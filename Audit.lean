@@ -958,6 +958,8 @@ import PaperP1
 #print axioms PaperP1.FiniteBivariateScalarDecomposition.coefficient_support_subset
 #print axioms PaperP1.FiniteBivariateScalarDecomposition.component_zero_of_not_mem
 #print axioms PaperP1.FiniteBivariateScalarDecomposition.reconstruction
+#print axioms PaperP1.FiniteComponentHilbertBudget.sum_coefficient_le
+#print axioms PaperP1.FiniteComponentHilbertBudget.sum_linear_degree_le
 #print axioms PaperP1.FiniteCumulantControl.finite_bound
 #print axioms PaperP1.FiniteCurveParameterIndependence.injective
 #print axioms PaperP1.FiniteCurveParameterRank.base_hilbert
@@ -1221,6 +1223,15 @@ import PaperP1
 #print axioms PaperP1.GradedQuotientModuleGenerators.generators
 #print axioms PaperP1.GradedQuotientModuleGenerators.generator_mem
 #print axioms PaperP1.GradedQuotientModuleGenerators.finrank_le
+#print axioms PaperP1.GradedQuotientPieceLifts.exists_lift
+#print axioms PaperP1.GradedQuotientPieceLifts.quotient_lift
+#print axioms PaperP1.GradedQuotientPieceLifts.lift_quotient_value
+#print axioms PaperP1.GradedSeparatedComponentPieces.componentMap_value
+#print axioms PaperP1.GradedSeparatedComponentPieces.componentMap_own
+#print axioms PaperP1.GradedSeparatedComponentPieces.componentMap_other
+#print axioms PaperP1.GradedSeparatedComponentPieces.sumMap_projection
+#print axioms PaperP1.GradedSeparatedComponentPieces.sumMap_injective
+#print axioms PaperP1.GradedSeparatedComponentPieces.dimension_le
 #print axioms PaperP1.GradedSurjectiveChartMap.away_map_surjective
 #print axioms PaperP1.GradedSurjectiveChartMap.homogeneous_preimage
 #print axioms PaperP1.GradedSurjectivePresentation.toSource_mk
@@ -1363,6 +1374,9 @@ import PaperP1
 #print axioms PaperP1.HomogeneousPolynomialEvaluation.eval_scale
 #print axioms PaperP1.HomogeneousPolynomialEvaluation.homogeneous_zero_eq_C
 #print axioms PaperP1.HomogeneousPolynomialEvaluation.exists_eval_cons_one
+#print axioms PaperP1.HomogeneousPrimeSeparators.homogeneous_outside
+#print axioms PaperP1.HomogeneousPrimeSeparators.one_separator
+#print axioms PaperP1.HomogeneousPrimeSeparators.finite_family
 #print axioms PaperP1.HomogeneousPrincipalComponents.mem_components
 #print axioms PaperP1.HomogeneousPrincipalComponents.principal_homogeneous
 #print axioms PaperP1.HomogeneousPrincipalComponents.minimal_prime_homogeneous
