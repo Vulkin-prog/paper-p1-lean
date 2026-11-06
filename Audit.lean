@@ -4333,6 +4333,12 @@ import PaperP1
 #print axioms PaperP1.MovingLogarithmicPivotMass.finite_mass
 #print axioms PaperP1.MultiplicativeShortAverage.finite_square_budget
 #print axioms PaperP1.MultiplicativeShortAverage.concentration_of_mean_square
+#print axioms PaperP1.NarrowBandReciprocalMass.band_interval_subset
+#print axioms PaperP1.NarrowBandReciprocalMass.card_bound
+#print axioms PaperP1.NarrowBandReciprocalMass.mass_bound
+#print axioms PaperP1.NarrowBandReciprocalMass.mass_bound_precision
+#print axioms PaperP1.NarrowBandReciprocalMass.mass_le_one
+#print axioms PaperP1.NarrowBandReciprocalMass.anchor_lower
 #print axioms PaperP1.NarrowBoundaryMeanValue.constant_pos
 #print axioms PaperP1.NarrowBoundaryMeanValue.boundary_card
 #print axioms PaperP1.NarrowBoundaryMeanValue.boundary_card_normalized

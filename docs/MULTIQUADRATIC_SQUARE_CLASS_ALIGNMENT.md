@@ -1,6 +1,15 @@
 # Multiquadratic split radicands: exact square-class independence
 
-Current checkpoint P1-MATH-0795: Actual mixed prime polynomial frequency
+Current checkpoint P1-MATH-0796: Actual narrow bands have a reciprocal
+mass bound from their exact rounded endpoints. The complementary bad-
+prime frequency contribution, the central-frequency mean subtraction and
+complete logarithmic short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 52.25 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0795: Actual mixed prime polynomial frequency
 means have explicit all-order amplification bounds. The complementary
 bad-prime frequency contribution, the central-frequency mean subtraction
 and complete logarithmic short-average concentration remain unproved.
@@ -26157,3 +26166,12 @@ The actual mixed set is formed from the literal Dirichlet polynomial on P being 
 The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.25 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18157 jobs); direct axiom audit passed for 18560 declarations using only propext, Classical.choice and Quot.sound; all 18743 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.22 GiB.
+
+
+## Actual narrow bands have a reciprocal mass bound from their exact rounded endpoints
+
+Every actual narrow band lies in [ceil(anchor),ceil(growth*anchor)), with cardinality<=(growth-1)*anchor+1. Its ACTUAL reciprocal mass is <=growth-1+1/anchor, and hence <=2/H+1/anchor for H>=2. Therefore H>=4 and anchor>=2 imply reciprocal mass<=1, proving the actual hypothesis of the amplified moment theorem without a prime distribution input. Every occupied anchor is at least half of any lower bound on the original positive support. Six theorems retain the ceiling error and all support conditions.
+
+The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.25 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18159 jobs); direct axiom audit passed for 18566 declarations using only propext, Classical.choice and Quot.sound; all 18749 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.21 GiB.
