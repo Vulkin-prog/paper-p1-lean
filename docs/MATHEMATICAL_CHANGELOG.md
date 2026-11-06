@@ -48,7 +48,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**594 mathematical improvements and two statement-scope corrections are confirmed.**
+**595 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -27926,3 +27926,18 @@ P3StandardHeightAuxiliary constructs that actual standard family for the origina
 This closes the sharp actual monomial selection and its exact coefficient-independent height parameters. Optimizing the scalar separation and combining distinct residue classes in the global determinant remain next. The global auxiliary existence theorem in canonical T1.7 remains UNPROVED; its sole P1-GEO-P3-GLOBAL-AUXILIARY input and conditional status are unchanged. Eight modules add thirty-four theorems and eleven definitions. All73 main results remain proved; coverage stays163 proved,2 conditional,2 in_progress out of167. One missing ordered-product Mathlib module was compiled selectively from the pinned source; there was no dependency download. Original manuscript hashes, compiler, heartbeat settings and permitted axioms are unchanged; no Palomar submission. Ubuntu free space is about6.14GiB.
 
 Verified under Lean v4.36.0-rc2: full build passed (17327 jobs); direct axiom audit passed for 16692 declarations using only propext, Classical.choice and Quot.sound; all 16410 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.14 GiB.
+
+
+## Sharp uniform local surface auxiliary equation from optimized integer determinant separation
+
+PolynomialNatRatioLimits proves the leading-coefficient limits for genuine quadratic and cubic real polynomials on natural arguments. P3StandardMonomialLimits transports the exact rational formulas from checkpoint596 to the real numbers and proves s(d,e)/e^2 -> d/2 and W(d,e)/e^3 -> d/3. All natural parameter identifications refer to the actual standard monomial family already constructed, not to an asymptotic model chosen by the caller.
+
+P3SurfaceDivisorLimits chooses the literal natural cutoff L(d,e)=floor(sqrt(d)*e) and the literal natural exponent E(d,e)=L(d,e)*s(d,e)-choose(L(d,e)+2,3). It proves the exact real formula for the binomial term, L/e -> sqrt(d), the cubic binomial limit and the untruncated real numerator limit d*sqrt(d)/3. P3OptimizedSurfaceDivisor proves that for d>0 this numerator is eventually positive, so the natural subtraction is exact and E is positive. Consequently E/e^3 -> d*sqrt(d)/3 and W/E -> 1/sqrt(d). For every epsilon>0 it chooses e>=d with E>0 and W < (1/sqrt(d)+epsilon)*E.
+
+FactorialHeightDivisorSeparation proves the actual strict integer comparison s!*H^W < Q^E whenever H>=1, E>0, W<=alpha*E and Q >= (s!+1)*H^alpha. It controls the factorial by a fixed constant raised to the positive exponent; no asymptotic determinant separation is assumed.
+
+P3SharpSmoothClassAuxiliary.uniform_degree combines these proofs with the actual standard-monomial determinant construction. Its quantifier order is: for every positive degree d and positive epsilon there exist an integer degree e>=d and a positive constant B BEFORE all primes, coefficients, heights and congruence classes. For every finite set S of distinct primes with product at least B*H^(1/sqrt(d)+epsilon), every nonzero degree-d homogeneous integer equation not divisible by X3 over Q, and every finite set of its normalized height-H integer zeros lying in one compatible smooth residue class at each p in S, it constructs an actual homogeneous degree-e integer polynomial G which vanishes on all those points and is not divisible by the original rational equation. Neither G nor its independence, monomials, divisor, weight estimates or scalar separation are supplied inputs.
+
+This is the sharp local product-modulus auxiliary theorem. It does not combine different residue classes in one global determinant, and it does not prove the quantitative global auxiliary existence input in canonical companionT1.7. That global input remains explicit and UNPROVED; no conditional numbered result is promoted. Six modules add sixteen theorems and two definitions. All73 main results remain proved; coverage stays163 proved,2 conditional,2 in_progress out of167. Original manuscript hashes, the pinned compiler, heartbeat settings and permitted axioms are unchanged. No dependency download and no Palomar submission. Ubuntu root has about6.12GiB free.
+
+Verified under Lean v4.36.0-rc2: full build passed (17339 jobs); direct axiom audit passed for 16708 declarations using only propext, Classical.choice and Quot.sound; all 16428 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.12 GiB.

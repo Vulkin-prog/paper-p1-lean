@@ -28467,6 +28467,50 @@
         "status": "not_integrated"
       },
       "validation_commit": "88ae78221faba0b30ddd49242f2aba441182591e"
+    },
+    {
+      "id": "P1-MATH-0597",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "A sharp product-modulus local auxiliary equation requires the actual natural determinant exponent, the actual standard-monomial weight and a strict integer comparison at the exponent 1/sqrt(d)+epsilon, with the degree and constant chosen before coefficients and height.",
+      "finding": "The literal cutoff floor(sqrt(d)*e) gives W/E -> 1/sqrt(d). A fixed factorial constant supplies the actual strict integer separation and constructs an independent bounded-degree equation on every compatible smooth prime class.",
+      "proposed_revision": "State the local theorem with e and B depending only on d and epsilon, retain the exact natural floor and subtraction in E, and distinguish this proved same-class construction from the still required global combination of distinct classes.",
+      "impact": "Closes sharp scalar optimization and all supplied monomial or separation choices in the local surface auxiliary theorem, while preserving the explicit unproved global auxiliary input.",
+      "evidence": [
+        "PaperP1.FactorialHeightDivisorSeparation.separation",
+        "PaperP1.P3OptimizedSurfaceDivisor.cast_divisor_eventually",
+        "PaperP1.P3OptimizedSurfaceDivisor.divisor_ratio",
+        "PaperP1.P3OptimizedSurfaceDivisor.weight_divisor_ratio",
+        "PaperP1.P3OptimizedSurfaceDivisor.exists_parameters",
+        "PaperP1.P3StandardMonomialLimits.size_real",
+        "PaperP1.P3StandardMonomialLimits.weight_real",
+        "PaperP1.P3StandardMonomialLimits.size_ratio",
+        "PaperP1.P3StandardMonomialLimits.weight_ratio",
+        "PaperP1.P3SurfaceDivisorLimits.cast_choose_shifted",
+        "PaperP1.P3SurfaceDivisorLimits.cutoff_ratio",
+        "PaperP1.P3SurfaceDivisorLimits.choose_ratio",
+        "PaperP1.P3SurfaceDivisorLimits.raw_ratio",
+        "PaperP1.PolynomialNatRatioLimits.quadratic",
+        "PaperP1.PolynomialNatRatioLimits.cubic",
+        "PaperP1.P3SharpSmoothClassAuxiliary.uniform_degree",
+        "PaperP1.P3SurfaceDivisorLimits.cutoff",
+        "PaperP1.P3SurfaceDivisorLimits.divisor"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17339 jobs); direct axiom audit passed for 16708 declarations using only propext, Classical.choice and Quot.sound; all 16428 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.12 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

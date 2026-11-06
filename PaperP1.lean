@@ -4336,3 +4336,9 @@ public import PaperP1.Algebra.P3StandardMonomialParameters
 public import PaperP1.Algebra.P3StandardMonomialWeightBudget
 public import PaperP1.Algebra.P3StandardMonomialWeightPolynomial
 public import PaperP1.Algebra.WeightedMonomialOrder
+public import PaperP1.Analysis.FactorialHeightDivisorSeparation
+public import PaperP1.Analysis.P3OptimizedSurfaceDivisor
+public import PaperP1.Analysis.P3StandardMonomialLimits
+public import PaperP1.Analysis.P3SurfaceDivisorLimits
+public import PaperP1.Analysis.PolynomialNatRatioLimits
+public import PaperP1.Arithmetic.P3SharpSmoothClassAuxiliary

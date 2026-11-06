@@ -3186,6 +3186,7 @@ import PaperP1
 #print axioms PaperP1.ExponentialPrimeBands.exists_band
 #print axioms PaperP1.ExponentialSmoothLower.uniform_lower
 #print axioms PaperP1.ExponentialSmoothLower.uniform_saddle_lower
+#print axioms PaperP1.FactorialHeightDivisorSeparation.separation
 #print axioms PaperP1.FactorialResolvent.hasSum_exponentialCoeff
 #print axioms PaperP1.FactorialResolvent.exponentialCoeff_nonneg
 #print axioms PaperP1.FactorialResolvent.factorial_ratio_bound
@@ -3430,6 +3431,18 @@ import PaperP1
 #print axioms PaperP1.P3AuxiliaryCoverExponentBudget.power_identity
 #print axioms PaperP1.P3AuxiliaryCoverExponentBudget.family_bound
 #print axioms PaperP1.P3AuxiliaryCoverExponentBudget.exception_bound
+#print axioms PaperP1.P3OptimizedSurfaceDivisor.cast_divisor_eventually
+#print axioms PaperP1.P3OptimizedSurfaceDivisor.divisor_ratio
+#print axioms PaperP1.P3OptimizedSurfaceDivisor.weight_divisor_ratio
+#print axioms PaperP1.P3OptimizedSurfaceDivisor.exists_parameters
+#print axioms PaperP1.P3StandardMonomialLimits.size_real
+#print axioms PaperP1.P3StandardMonomialLimits.weight_real
+#print axioms PaperP1.P3StandardMonomialLimits.size_ratio
+#print axioms PaperP1.P3StandardMonomialLimits.weight_ratio
+#print axioms PaperP1.P3SurfaceDivisorLimits.cast_choose_shifted
+#print axioms PaperP1.P3SurfaceDivisorLimits.cutoff_ratio
+#print axioms PaperP1.P3SurfaceDivisorLimits.choose_ratio
+#print axioms PaperP1.P3SurfaceDivisorLimits.raw_ratio
 #print axioms PaperP1.PartialPowerSum.powerSum_nonneg
 #print axioms PaperP1.PartialPowerSum.powerSum_eq_shifted
 #print axioms PaperP1.PartialPowerSum.powerSum_le
@@ -3443,6 +3456,8 @@ import PaperP1
 #print axioms PaperP1.PolynomialEvaluationDerivative.directional_mul
 #print axioms PaperP1.PolynomialEvaluationDerivative.hasDerivAt_eval
 #print axioms PaperP1.PolynomialEvaluationDerivative.contDiffOn_eval
+#print axioms PaperP1.PolynomialNatRatioLimits.quadratic
+#print axioms PaperP1.PolynomialNatRatioLimits.cubic
 #print axioms PaperP1.PolynomialParsevalBounds.circleIntegrable_sq_norm_eval
 #print axioms PaperP1.PolynomialParsevalBounds.coefficient_energy_le_of_pointwise_bound
 #print axioms PaperP1.PolynomialParsevalBounds.l2_le_of_pointwise_bound
@@ -6040,6 +6055,7 @@ import PaperP1
 #print axioms PaperP1.OrdinarySourcePointTransport.ordinary_image_point
 #print axioms PaperP1.OrdinarySourcePointTransport.points_image_card
 #print axioms PaperP1.OriginalWindowValueBounds.values_geometry
+#print axioms PaperP1.P3SharpSmoothClassAuxiliary.uniform_degree
 #print axioms PaperP1.P3SingleAuxiliaryCurveCover.cover_of_equation
 #print axioms PaperP1.PNTLogPrimePowerLower.weight_nonneg
 #print axioms PaperP1.PNTLogPrimePowerLower.weight_antitone
