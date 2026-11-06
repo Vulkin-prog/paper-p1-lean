@@ -1,6 +1,17 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0673: ACTUAL logarithmic Gram
+Current checkpoint P1-MATH-0674: exact finite REAL pretentious
+repulsion E(2t)<=4D(f,t) is PROVED. Here D is the conventional
+SQUARED-distance sum. Every small-distance real bounded coefficient
+choice forces the SAME fixed prime polynomial to be large.
+Smooth-indicator phase identities have one cutoff before all t.
+Exceptional-frequency and full real-multiplicative mean/short-average
+estimates remain unfinished. T19.17 conditional; T1.7 complete.
+Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main
+results proved. False scopes and checked corrections unchanged.
+No Palomar registration.
+
+Historical checkpoint P1-MATH-0673: ACTUAL logarithmic Gram
 correlations are PROVED, with exact diagonal N and oscillatory
 bound 3N/|t|+|t|. An explicit separated Dirichlet large-value
 cardinality estimate now has NO Gram-cap premise. Its |t| error
@@ -960,7 +971,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records671 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records672 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -1079,7 +1090,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **17778 audited theorem/lemma declarations**. This
+- The project currently has **17794 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -30673,3 +30684,18 @@ For actual samples in [-T,T], T>0, at pairwise distance >=Delta>0, the actual of
 This closes an unconditional concrete logarithmic Gram correlation and its elementary separated large-value bound. The displayed |t| error and positive-denominator regime limit its strength; it does not establish the stronger real-multiplicative/prime estimates required for the full logarithmic short-average theorem. The main quotient frequency estimate, coupled-domain handling and short-average assembly remain unfinished. T19.17 retains its explicit analytic input; original complete T1.7 remains unconditional. Coverage stays 164 proved, 1 conditional, 2 in_progress out of 167; all 73 main results proved. False original scopes and checked corrected replacements are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Ubuntu retains about 54.4 GiB; no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17893 jobs); direct axiom audit passed for 17778 declarations using only propext, Classical.choice and Quot.sound; all 17772 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.42 GiB.
+
+
+## Finite real pretentious repulsion and exact smooth-indicator phase identities
+
+RealPretentiousDistance defines the actual finite sum D_P(f,t)=sum_{p in P}(1-f(p)*cos(t log p))/p and the actual phase defect E_P(t)=sum_{p in P}(1-cos(t log p))/p. This D is the quantity conventionally called the SQUARED pretentious distance; no square root is silently taken. For real f with |f(p)|<=1 on the actual finite set, it proves 0<=D<=2*sum 1/p and D(f,-t)=D(f,t). No multiplicativity is needed for these finite real constraints.
+
+The pointwise identity cos(2theta)=2*cos(theta)^2-1 and positivity of (cos(theta)-u)^2, 1-u^2 give 1-cos(2theta)<=4*(1-u*cos(theta)) for every real |u|<=1. Actual positive summation yields E_P(2t)<=4*D_P(f,t), uniformly for all such real f. The real part of the literal exponential phase is computed. The distance sum is identified exactly with reciprocalMass(P)-Re(value P f t), using the actual reciprocal Dirichlet coefficients.
+
+For the fixed prime polynomial with coefficients 1/p, E_P(t)=H-Re(value P 1 t). Therefore H-|value P 1 (2t)|<=4*D_P(f,t). In particular, ANY real bounded coefficient choice with D_P(f,t)<=H/8 forces the SAME fixed prime polynomial at frequency 2t to have norm at least H/2. This provides an exact common prime-large-value exceptional set independent of f; no prime-polynomial smallness or distance-divergence bound is supplied or asserted here.
+
+For the actual ordinary smooth indicator, the value at a prime is exactly 1_{p<=Y}. Its distance sum splits exactly into the phase defect over primes <=Y and the reciprocal mass over primes >Y. For the actual slow band log log N<p<=log N and EVERY fixed a>0, the indicator with cutoff floor(N^a) equals one on the band eventually. ONE threshold is chosen before ALL real frequency t, giving exact equality of its band distance with the phase defect. One module adds sixteen theorems and two definitions.
+
+This closes the finite real-specific phase repulsion and smooth-indicator distance identities. Measuring the common exceptional frequencies, the real-multiplicative Halasz/mean estimate, stronger prime-frequency control, main quotient estimate and logarithmic short-average assembly remain unfinished. These identities alone do not prove distance divergence or short-average concentration. T19.17 retains its explicit analytic input; original complete T1.7 remains unconditional. Coverage stays 164 proved, 1 conditional, 2 in_progress out of 167; all 73 main results proved. Original false scopes and checked corrections are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Ubuntu retains about 54.4 GiB; no dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17895 jobs); direct axiom audit passed for 17794 declarations using only propext, Classical.choice and Quot.sound; all 17790 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.41 GiB.
