@@ -33834,6 +33834,33 @@
         "status": "not_integrated"
       },
       "validation_commit": "285aa6eadadffd3a398c07b432c660e276edc2d9"
+    },
+    {
+      "id": "P1-MATH-0724",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The preceding analytic components did not yet provide this exact finite partition, uniform global estimate or common-frequency conclusion.",
+      "finding": "For EVERY epsilon and delta>0 one X0>=4 works before all X>=X0 and T>=1 with ceil(log(X)^10)<=T. There is ONE measurable E contained in (-T,T], of measure <=delta*T, chosen BEFORE ALL real complete prime-bounded coefficient functions f. At EVERY tau outside E, the ACTUAL finite sum sum_{1<=n<=X}f(n)*phase(-log(n),tau) has norm <=epsilon*X.",
+      "proposed_revision": "Use the proved actual finite/global conclusion with its precise coefficient and cutoff scope; keep the remaining short-average theorem separate.",
+      "impact": "Actual real twisted summatory sums small off one common frequency exception. Final logarithmic short-average concentration and original T19.17 remain unfinished.",
+      "evidence": [
+        "PaperP1.CommonRealTwistedSum.common_twisted_summatory_small"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18015 jobs); direct axiom audit passed for 18237 declarations using only propext, Classical.choice and Quot.sound; all 18349 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.49 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

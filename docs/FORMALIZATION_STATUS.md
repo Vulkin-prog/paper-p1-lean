@@ -1,6 +1,13 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0723: Internal uniform Halasz criterion from
+Current checkpoint P1-MATH-0724: Actual real twisted summatory sums
+small off one common frequency exception. Final logarithmic short-
+average concentration and original T19.17 remain unfinished. Original
+T1.7 complete. Coverage: 164 proved, 1 conditional, 2 in_progress /167;
+all 73 main proved. False scopes/corrections unchanged. No Palomar
+registration.
+
+Historical checkpoint P1-MATH-0723: Internal uniform Halasz criterion from
 the actual full Euler frequency budget. Final logarithmic short-average
 concentration and original T19.17 remain unfinished. Original T1.7
 complete. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all
@@ -1425,7 +1432,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records721 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records722 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -1544,7 +1551,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **18236 audited theorem/lemma declarations**. This
+- The project currently has **18237 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -31782,3 +31789,14 @@ The proof fixes the number of late bands, chooses eta from its analytic coeffici
 Final logarithmic short-average concentration and original T19.17 remain unfinished. Original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, sources, pinned Lean and axioms unchanged. About 53.8 GiB is free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18013 jobs); direct axiom audit passed for 18236 declarations using only propext, Classical.choice and Quot.sound; all 18348 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.51 GiB.
+
+
+## Actual real twisted summatory sums small off one common frequency exception
+
+For EVERY epsilon and delta>0 one X0>=4 works before all X>=X0 and T>=1 with ceil(log(X)^10)<=T. There is ONE measurable E contained in (-T,T], of measure <=delta*T, chosen BEFORE ALL real complete prime-bounded coefficient functions f. At EVERY tau outside E, the ACTUAL finite sum sum_{1<=n<=X}f(n)*phase(-log(n),tau) has norm <=epsilon*X.
+
+The proof combines the internal uniform small-budget Halasz criterion, the actual common FULL Euler local-supremum budget, and exact unit-twist identities. The chosen height also dominates log(X)^3. One theorem is added. This is a common-frequency twisted-summatory bound. It does not yet prove the required unrestricted integer Dirichlet L2=o(1) estimate or logarithmic short-average concentration.
+
+Final logarithmic short-average concentration and original T19.17 remain unfinished. Original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, sources, pinned Lean and axioms unchanged. About 53.8 GiB is free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18015 jobs); direct axiom audit passed for 18237 declarations using only propext, Classical.choice and Quot.sound; all 18349 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.49 GiB.
