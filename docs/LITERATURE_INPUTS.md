@@ -1,6 +1,15 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0819: The expanded sparse sample bound
+Current checkpoint P1-MATH-0820: Actual narrow cofactor intervals
+satisfy the expanded sparse-frequency regime. The joint large-prime
+frequency contribution, the central-frequency mean comparison and
+complete logarithmic short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 51.83 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0819: The expanded sparse sample bound
 retains arbitrary supports and exact divisor count weights. The joint
 large-prime frequency contribution, the central-frequency mean
 comparison and complete logarithmic short-average concentration remain
@@ -32907,6 +32916,12 @@ The ACTUAL expanded integer sparse mean bound is transported to every support in
 
 The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
 
+## Internal actual narrow cofactor intervals satisfy the expanded sparse-frequency regime
+
+For ONE size cutoff before ALL actual anchors u<=X^(1/16), the ACTUAL cofactor start L=ceil(X/u) exceeds every fixed lower cutoff, satisfies X^(15/16)<=L<=X, and accommodates height X<=L^(9/8) and frequency cardinality X^(1/18)<=L^(1/16). Two theorems prove the length and actual-anchor regimes with every rounding operation retained.
+
+The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -36352,3 +36367,14 @@ The ACTUAL expanded integer sparse mean bound is transported to every support in
 The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.83 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18205 jobs); direct axiom audit passed for 18645 declarations using only propext, Classical.choice and Quot.sound; all 18845 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.79 GiB.
+
+
+## Actual narrow cofactor intervals satisfy the expanded sparse-frequency regime
+
+Stable ID: p1:internal:expanded-cofactor-regime. Actual narrow cofactor intervals satisfy the expanded sparse-frequency regime. The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
+
+For ONE size cutoff before ALL actual anchors u<=X^(1/16), the ACTUAL cofactor start L=ceil(X/u) exceeds every fixed lower cutoff, satisfies X^(15/16)<=L<=X, and accommodates height X<=L^(9/8) and frequency cardinality X^(1/18)<=L^(1/16). Two theorems prove the length and actual-anchor regimes with every rounding operation retained.
+
+The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.83 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18207 jobs); direct axiom audit passed for 18647 declarations using only propext, Classical.choice and Quot.sound; all 18847 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.77 GiB.

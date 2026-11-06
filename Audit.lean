@@ -3814,6 +3814,8 @@ import PaperP1
 #print axioms PaperP1.ExpLogPrimeBand.reciprocal_mass_tendsto
 #print axioms PaperP1.ExpLogPrimeBand.excluded_density_tendsto
 #print axioms PaperP1.ExpLogPrimeBand.missing_good_density_tendsto
+#print axioms PaperP1.ExpandedCofactorRegime.length_regime
+#print axioms PaperP1.ExpandedCofactorRegime.cofactor_regime
 #print axioms PaperP1.ExpandedSparseGramEnvelope.square_identity
 #print axioms PaperP1.ExpandedSparseGramEnvelope.squareEnvelope_tendsto
 #print axioms PaperP1.ExpandedSparseGramEnvelope.normalizedCap_nonneg
