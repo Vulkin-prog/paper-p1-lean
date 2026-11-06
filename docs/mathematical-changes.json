@@ -30616,6 +30616,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "73bbe57ee6bf070ab6a858b065916dbe7ed72933"
+    },
+    {
+      "id": "P1-MATH-0641",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The exact original projected integer polynomial relation had not been transferred from the chosen rational projection to the common integral source and all its field reductions.",
+      "finding": "The same original integer polynomial vanishes integrally and over every coefficient field whenever its rational image belongs to the actual chosen projection kernel. The existing principal equation and exact integer scalar-multiple model imply this membership. No extra exceptional prime is required for the vanishing relation itself.",
+      "proposed_revision": "Use the proved literal integer equation reduction when constructing the reduced primitive field and conductor. Keep retained degree, monic normalization, irreducibility, the reduced full-rank argument and the effective arithmetic prime budget explicit until proved.",
+      "impact": "Discharges actual original projected-polynomial vanishing after every field reduction. It does not yet identify the reduced kernel, establish monic normalization, prove the conductor, or discharge canonical T1.7.",
+      "evidence": [
+        "PaperP1.IntegerSourcePolynomialRelations.map_integer_evaluation",
+        "PaperP1.IntegerSourcePolynomialRelations.integer_evaluation_eq_mapped_aeval",
+        "PaperP1.IntegerSourcePolynomialRelations.integer_relation_transfer",
+        "PaperP1.IntegralProjectedEquationReduction.original_equation_integral",
+        "PaperP1.IntegralProjectedEquationReduction.original_equation_reduces",
+        "PaperP1.IntegralProjectedEquationReduction.original_model_reduces"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17769 jobs); direct axiom audit passed for 17458 declarations using only propext, Classical.choice and Quot.sound; all 17377 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.03 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

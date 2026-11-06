@@ -1762,6 +1762,9 @@ import PaperP1
 #print axioms PaperP1.integerRoot_natAbs_le_one_add_height
 #print axioms PaperP1.integerRoot_abs_le_one_add_height
 #print axioms PaperP1.IntegerRowWeightDeterminant.natAbs_bound
+#print axioms PaperP1.IntegerSourcePolynomialRelations.map_integer_evaluation
+#print axioms PaperP1.IntegerSourcePolynomialRelations.integer_evaluation_eq_mapped_aeval
+#print axioms PaperP1.IntegerSourcePolynomialRelations.integer_relation_transfer
 #print axioms PaperP1.IntegerSquareGap.abs_le_abs_sq_sub_sq
 #print axioms PaperP1.IntegerSquareGap.natAbs_le_natAbs_sq_sub_sq
 #print axioms PaperP1.IntegerSquareGap.eval_natAbs_le
@@ -1787,6 +1790,9 @@ import PaperP1
 #print axioms PaperP1.IntegralPrimeHeight.comap_strictMono
 #print axioms PaperP1.IntegralPrimeHeight.height_le
 #print axioms PaperP1.IntegralPrimeHeight.height_eq
+#print axioms PaperP1.IntegralProjectedEquationReduction.original_equation_integral
+#print axioms PaperP1.IntegralProjectedEquationReduction.original_equation_reduces
+#print axioms PaperP1.IntegralProjectedEquationReduction.original_model_reduces
 #print axioms PaperP1.IntegralRationalInterpolation.heightBound_eq
 #print axioms PaperP1.IntegralRationalInterpolation.exists_pair
 #print axioms PaperP1.IntegralRationalInterpolation.denominator_ne_zero

@@ -1,6 +1,18 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0640: EVERY actual chosen projection coordinate
+Current checkpoint P1-MATH-0641: the SAME original projected INTEGER
+polynomial is proved to vanish in the common integral source and after
+reduction to EVERY coefficient field. The exact original rational image
+kernel and principal scalar-multiple integer model supply its relation.
+There is no positive-characteristic vanishing input and no exceptional
+prime for this relation itself. Retained degree, monic normalization,
+irreducibility, the reduced full-rank primitive/conductor argument and
+effective prime budgets remain UNPROVED. Canonical T1.7 retains ONLY
+its prior P3 input in degrees>2 at the original families and caps.
+Coverage stays 163 proved, 2 conditional, 2 in_progress out of 167; all
+73 main results proved. No Palomar registration.
+
+Historical checkpoint P1-MATH-0640: EVERY actual chosen projection coordinate
 has a literal integral lift compatible with EVERY coefficient field.
 This includes base monomials, radical roots, the original primitive
 combination and the exact Y^D,X^D,1 power parameters. Rational index
@@ -571,7 +583,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records638 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records639 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -690,7 +702,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **17452 audited theorem/lemma declarations**. This
+- The project currently has **17458 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -29865,3 +29877,14 @@ The chosen primitive linear combination is lifted with its original bounded NATU
 Two modules add fifteen theorems and five definitions. This discharges explicit integral identification of the chosen projection coordinates. Transfer of the actual integer projected polynomial relation, the full-rank reduced primitive/conductor argument and effective uniform arithmetic prime budgets remain unfinished. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families/caps. Coverage remains 163 proved, 2 conditional, 2 in_progress out of 167; all 73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Work stays on Ubuntu with about 55.1 GiB available and no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17765 jobs); direct axiom audit passed for 17452 declarations using only propext, Classical.choice and Quot.sound; all 17371 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.05 GiB.
+
+
+## The original chosen integer projected equation reduces literally to every coefficient field
+
+IntegerSourcePolynomialRelations proves functoriality of actual integer multivariate evaluation, its exact identification with evaluation of the mapped polynomial over a field, and transfer of every relation from the faithful rational source to every coefficient field. IntegralProjectedEquationReduction then proves that an original integer four-variable projected equation belonging to the ACTUAL original rational image kernel vanishes in the common integral source. It uses the actual chosen projection coordinates and primitive sum, without a positive-characteristic compatibility or vanishing premise.
+
+Consequently the SAME original integer polynomial vanishes on the actual source over EVERY field. The final theorem accepts the original principal image equation q, its actual image-kernel identity and the exact scalar-multiple model map(Q)=C(a)*q. Thus this covers the original height-controlled integer model, including all its original bounded primitive coefficients. The relation itself requires no excluded prime. Monicity, retained degree, irreducibility, the reduced full-rank primitive coordinate and derivative conductor remain separate obligations.
+
+Two modules add six theorems and no definitions. This discharges reduction of the actual original projected integer polynomial relation. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families/caps. Coverage remains 163 proved, 2 conditional, 2 in_progress out of 167; all 73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Work stays on Ubuntu with about 55.0 GiB available and no dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17769 jobs); direct axiom audit passed for 17458 declarations using only propext, Classical.choice and Quot.sound; all 17377 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.03 GiB.
