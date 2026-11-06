@@ -5989,6 +5989,7 @@ import PaperP1
 #print axioms PaperP1.OrdinarySourcePointTransport.ordinary_image_point
 #print axioms PaperP1.OrdinarySourcePointTransport.points_image_card
 #print axioms PaperP1.OriginalWindowValueBounds.values_geometry
+#print axioms PaperP1.P3SingleAuxiliaryCurveCover.cover_of_equation
 #print axioms PaperP1.PNTLogPrimePowerLower.weight_nonneg
 #print axioms PaperP1.PNTLogPrimePowerLower.weight_antitone
 #print axioms PaperP1.PNTLogPrimePowerLower.weight_one_le
@@ -6198,6 +6199,9 @@ import PaperP1
 #print axioms PaperP1.PrescribedPatternDivisors.prescribed_squarefree
 #print axioms PaperP1.PrescribedPatternDivisors.logarithmic_prescribed
 #print axioms PaperP1.PrescribedPatternDivisors.last_kernel_fixed
+#print axioms PaperP1.PresentedCurveDegreeCutoff.cover
+#print axioms PaperP1.PresentedCurveQuadraticCount.population_bound
+#print axioms PaperP1.PresentedCurveQuadraticCount.points_bound
 #print axioms PaperP1.PrimeAssignments.card_codes
 #print axioms PaperP1.PrimeAssignments.groupPrime_prime
 #print axioms PaperP1.PrimeAssignments.groupPrime_pairwise_coprime
@@ -12579,6 +12583,7 @@ import PaperP1
 #print axioms PaperP1.GradedProjectiveCurveData.Curve.ideal_height
 #print axioms PaperP1.GradedProjectiveCurveData.Curve.ideal_hilbert
 #print axioms PaperP1.GradedProjectiveCurveData.Curve.degree_unique
+#print axioms PaperP1.GradedSurfaceSectionCurveBudget.exists_family
 #print axioms PaperP1.GradedSurfaceSectionCurves.exists_family
 #print axioms PaperP1.GradedVeroneseProj.map_isIso
 #print axioms PaperP1.GradedVeroneseProj.iso_hom
@@ -12717,6 +12722,7 @@ import PaperP1
 #print axioms PaperP1.OriginalFieldFiniteCurveParameters.exists_parameters
 #print axioms PaperP1.P3BoundedModelOrCurveCover.model_or_cover
 #print axioms PaperP1.P3HypersurfaceAuxiliaryCurves.exists_family
+#print axioms PaperP1.P3HypersurfaceAuxiliaryDegreeBudget.exists_family
 #print axioms PaperP1.P3HypersurfaceRationalData.irreducible
 #print axioms PaperP1.P3HypersurfaceRationalData.prime
 #print axioms PaperP1.P3HypersurfaceRationalData.degree_pos

@@ -4313,3 +4313,8 @@ public import PaperP1.Algebra.P3HomogeneousCoefficientFamily
 public import PaperP1.Algebra.P3HomogeneousIntegerInterpolation
 public import PaperP1.Geometry.P3BoundedModelOrCurveCover
 public import PaperP1.Geometry.P3HypersurfaceAuxiliaryCurves
+public import PaperP1.Arithmetic.P3SingleAuxiliaryCurveCover
+public import PaperP1.Arithmetic.PresentedCurveDegreeCutoff
+public import PaperP1.Arithmetic.PresentedCurveQuadraticCount
+public import PaperP1.Geometry.GradedSurfaceSectionCurveBudget
+public import PaperP1.Geometry.P3HypersurfaceAuxiliaryDegreeBudget

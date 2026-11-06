@@ -28283,6 +28283,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "85eee55d9a2630b90eab7fb313865fdacd10e422"
+    },
+    {
+      "id": "P1-MATH-0593",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "A primary surface covering proof appears to require a global forest of auxiliary intersections and curve-height controls. The stronger internally proved quadratic degree dependence in main13.4 permits a different transfer, provided the actual total component-degree budget is retained.",
+      "finding": "One actual auxiliary degree-e equation gives at most e*d retained curves of any prescribed bounded degree M and at most C(4)*(e*d)^2*logarithmicBudget(H)^17*H^(1/M) original exceptional integer points. A single global auxiliary equation at the classical degree scale is sufficient for the target covering exponents.",
+      "proposed_revision": "Retain the total section-degree sum, split actual curve components by a fixed degree cutoff, and apply the uniform quadratic-degree affine point bound. This replaces the curve forest and refined component-height estimates in the covering transfer.",
+      "impact": "Proves an explicit simpler actual covering transfer from one auxiliary equation, reducing the remaining global geometric construction to a single quantitative auxiliary-hypersurface theorem.",
+      "evidence": [
+        "PaperP1.P3SingleAuxiliaryCurveCover.cover_of_equation",
+        "PaperP1.PresentedCurveDegreeCutoff.cover",
+        "PaperP1.PresentedCurveQuadraticCount.population_bound",
+        "PaperP1.PresentedCurveQuadraticCount.points_bound",
+        "PaperP1.GradedSurfaceSectionCurveBudget.exists_family",
+        "PaperP1.P3HypersurfaceAuxiliaryDegreeBudget.exists_family"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17289 jobs); direct axiom audit passed for 16638 declarations using only propext, Classical.choice and Quot.sound; all 16340 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.22 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

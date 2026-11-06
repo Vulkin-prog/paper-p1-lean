@@ -1,10 +1,6 @@
 module
 
-public import PaperP1.Geometry.FiniteSurfaceCurveHilbert
-public import PaperP1.Geometry.GradedProjectiveCurveData
-public import PaperP1.Algebra.FiniteComponentHilbertBudget
-public import PaperP1.Algebra.RegularSurfaceHilbertSection
-public import PaperP1.Algebra.HomogeneousPrincipalComponents
+public import PaperP1.Geometry.GradedSurfaceSectionCurveBudget
 
 /-! # Actual surface section components construct one fixed bounded-degree curve family on every normalized chart -/
 
@@ -26,58 +22,8 @@ theorem exists_family {F A : Type*} [Field F] [Infinite F] [CommRing A] [IsDomai
     ∃ family : Finset (GradedProjectiveCurveData.Curve H),
       family.card ≤ e * d ∧ (∀ Γ ∈ family, f ∈ Γ.ideal ∧ Γ.degree ≤ ((e * d : ℕ) : ℚ)) ∧
       ∀ φ : A →ₐ[F] F, φ f = 0 → φ b ≠ 0 → ∃ Γ ∈ family, Γ.ideal ≤ RingHom.ker φ.toRingHom := by
-  classical
-  have hcomponents := HomogeneousPrincipalComponents.finite_cover H hf hf0
-  let T := (HomogeneousPrincipalComponents.components f).filter fun P ↦ b ∉ P
-  have hminimal (P : T) : P.val ∈ (Ideal.span {f}).minimalPrimes :=
-    (HomogeneousPrincipalComponents.mem_components f P.val).mp (Finset.mem_filter.mp P.property).1
-  have hprime (P : T) : P.val.IsPrime := (hcomponents.1 P.val (Finset.mem_filter.mp P.property).1).1
-  have hhom (P : T) : P.val.IsHomogeneous H := (hcomponents.1 P.val (Finset.mem_filter.mp P.property).1).2.1
-  have hheight (P : T) : P.val.height = 1 := (hcomponents.1 P.val (Finset.mem_filter.mp P.property).1).2.2.1
-  have hcurve (P : T) : ∃ (r : ℕ) (β : ℚ), 0 < r ∧ GradedHilbertPolynomial.IsHilbertPolynomial
-      (HomogeneousQuotientGrading.piece H P.val) (C (r : ℚ) * X + C β) := by
-    let := hprime P
-    exact FiniteSurfaceCurveHilbert.exists_nat_linear_hilbert H g hg hfinite hinj P.val (hhom P) (hheight P)
-  choose degree β hdegree hhilbert using hcurve
-  let make (P : T) : GradedProjectiveCurveData.Curve H := {
-    point := {
-      asHomogeneousIdeal := ⟨P.val, hhom P⟩
-      isPrime := hprime P
-      not_irrelevant_le := by
-        intro hle
-        exact (Finset.mem_filter.mp P.property).2
-          (hle (HomogeneousIdeal.mem_irrelevant_of_mem H (by decide : 0 < 1) hb)) }
-    height := hheight P
-    degree := (degree P : ℚ)
-    degree_pos := Nat.cast_pos.mpr (hdegree P)
-    constant := β P
-    hilbert := hhilbert P }
-  have hinc (P Q : T) (hne : Q ≠ P) : ¬ Q.val ≤ P.val := by
-    intro hle
-    have he : P.val = Q.val := le_antisymm ((hminimal P).2 ⟨hprime Q, (hminimal Q).le⟩ hle) hle
-    exact hne (Subtype.ext he.symm)
-  have hsection := RegularSurfaceHilbertSection.linear_hilbert H p hpdeg hp d hcoeff hf
-    (fun a a' he ↦ mul_right_cancel₀ hf0 he)
-  have hsum : (∑ P : T, (degree P : ℚ)) ≤ ((e * d : ℕ) : ℚ) :=
-    FiniteComponentHilbertBudget.sum_linear_degree_le H (Ideal.span {f}) (fun P : T ↦ P.val)
-      hprime hhom hinc (fun P ↦ (hminimal P).le) ((e * d : ℕ) : ℚ)
-      ((e : ℚ) * p.coeff 1 - (e : ℚ) ^ 2 * p.coeff 2) (fun P ↦ (degree P : ℚ)) β hsection hhilbert
-  have hTcard : T.card ≤ e * d := by
-    have hcard : (T.card : ℚ) ≤ ∑ P : T, (degree P : ℚ) := by
-      calc
-        (T.card : ℚ) = ∑ _P : T, (1 : ℚ) := by simp
-        _ ≤ _ := Finset.sum_le_sum (fun P _ ↦ by exact_mod_cast (hdegree P : 1 ≤ degree P))
-    exact_mod_cast hcard.trans hsum
-  have hbound (P : T) : (degree P : ℚ) ≤ ((e * d : ℕ) : ℚ) :=
-    (Finset.single_le_sum (fun Q _ ↦ Nat.cast_nonneg (degree Q)) (Finset.mem_univ P)).trans hsum
-  let family := T.attach.image make
-  refine ⟨family, Finset.card_image_le.trans (by simpa only [Finset.card_attach] using hTcard), ?_, ?_⟩
-  · intro Γ hΓ
-    obtain ⟨P, _hP, rfl⟩ := Finset.mem_image.mp hΓ
-    exact ⟨(hcomponents.1 P.val (Finset.mem_filter.mp P.property).1).2.2.2, hbound P⟩
-  · intro φ hφf hφb
-    obtain ⟨P, hP, hPQ, hbP⟩ := hcomponents.2 φ b hφf hφb
-    have hPT : P ∈ T := Finset.mem_filter.mpr ⟨hP, hbP⟩
-    exact ⟨make ⟨P, hPT⟩, Finset.mem_image.mpr ⟨⟨P, hPT⟩, Finset.mem_attach _ _, rfl⟩, hPQ⟩
+  obtain ⟨family, hcard, hdegrees, _hsum, hcover⟩ := GradedSurfaceSectionCurveBudget.exists_family
+    H g hg hfinite hinj p hpdeg hp d hcoeff e f hf hf0 b hb
+  exact ⟨family, hcard, hdegrees, hcover⟩
 
 end PaperP1.GradedSurfaceSectionCurves
