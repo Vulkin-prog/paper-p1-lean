@@ -29713,6 +29713,59 @@
         "status": "not_integrated"
       },
       "validation_commit": "c8bb9e75e633d3c56d58d9eb9970661e3160397d"
+    },
+    {
+      "id": "P1-MATH-0620",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The finite-field route did not yet expose the exact separated-variable structure of the actual split-radical source equations or track zero radicands through root counting.",
+      "finding": "Actual source point counts have an exact quadratic-character subset expansion with main term q^2. One-variable cancellation on one side of each nonempty subset gives the proved uniform error and threshold. Singleton branch unions give unconditional exact cancellation.",
+      "proposed_revision": "State the exact source character expansion, retain zero radicands, and separate cancellation estimates from the proved combinatorial count. Do not infer a general projected-surface estimate without its remaining geometric transfer.",
+      "impact": "Opens a source-specific finite-field route and proves its literal algebraic counting and error assembly. General cancellation and the source-to-projected-surface transfer are not proved here; canonical inputs and coverage remain unchanged.",
+      "evidence": [
+        "PaperP1.QuadraticCharacterLinearSum.shifted_sum_zero",
+        "PaperP1.QuadraticCharacterLinearSum.singleton_sum_zero",
+        "PaperP1.QuadraticCharacterLinearSum.exact_count_of_singleton_unions",
+        "PaperP1.QuadraticCharacterRootCount.scalar_cardinality",
+        "PaperP1.QuadraticCharacterRootCount.cardinality",
+        "PaperP1.QuadraticCharacterRootCount.quadratic_character_bounds",
+        "PaperP1.QuadraticCharacterRootCount.quadratic_character_abs_le_one",
+        "PaperP1.SeparatedQuadraticPointCount.mem_points",
+        "PaperP1.SeparatedQuadraticPointCount.fiber_cardinality",
+        "PaperP1.SeparatedQuadraticPointCount.subset_factorization",
+        "PaperP1.SeparatedQuadraticPointCount.subset_sum",
+        "PaperP1.SeparatedQuadraticPointCount.character_expansion",
+        "PaperP1.SeparatedQuadraticPointCount.empty_character_sum",
+        "PaperP1.SeparatedQuadraticPointError.character_sum_abs_le_card",
+        "PaperP1.SeparatedQuadraticPointError.error_identity",
+        "PaperP1.SeparatedQuadraticPointError.error_bound",
+        "PaperP1.SplitRadicalFiniteFieldPointCount.mem_points_iff",
+        "PaperP1.SplitRadicalFiniteFieldPointCount.product_linearValue",
+        "PaperP1.SplitRadicalFiniteFieldPointCount.character_sum_union",
+        "PaperP1.SplitRadicalFiniteFieldPointCount.character_expansion",
+        "PaperP1.SplitRadicalPointBoundFromCharacterSums.square_root_error",
+        "PaperP1.SplitRadicalPointBoundFromCharacterSums.uniform_upper_bound",
+        "PaperP1.QuadraticCharacterRootCount.roots",
+        "PaperP1.SeparatedQuadraticPointCount.points",
+        "PaperP1.SeparatedQuadraticPointCount.characterSum",
+        "PaperP1.SplitRadicalFiniteFieldPointCount.linearValue",
+        "PaperP1.SplitRadicalFiniteFieldPointCount.points"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17657 jobs); direct axiom audit passed for 17208 declarations using only propext, Classical.choice and Quot.sound; all 17062 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.44 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

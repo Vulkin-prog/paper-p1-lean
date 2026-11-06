@@ -4481,3 +4481,9 @@ public import PaperP1.Algebra.P3GraphPlaneIrreducibilityCertificate
 public import PaperP1.Arithmetic.P3GraphPlaneFiniteCertificate
 public import PaperP1.Arithmetic.P3GraphPlaneNoetherTests
 public import PaperP1.Diophantine.P3ConePlanePointCount
+public import PaperP1.Arithmetic.QuadraticCharacterLinearSum
+public import PaperP1.Arithmetic.QuadraticCharacterRootCount
+public import PaperP1.Arithmetic.SeparatedQuadraticPointCount
+public import PaperP1.Arithmetic.SeparatedQuadraticPointError
+public import PaperP1.Arithmetic.SplitRadicalFiniteFieldPointCount
+public import PaperP1.Arithmetic.SplitRadicalPointBoundFromCharacterSums

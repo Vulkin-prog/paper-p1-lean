@@ -1,6 +1,18 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0619: actual Noether parameter-test nonvanishing
+Current checkpoint P1-MATH-0620: literal finite-field split-radical source
+counts have an EXACT quadratic-character subset expansion with main term q^2,
+including zero radicands. Cancellation E on one variable of each nonempty subset
+gives the proved error<=(2^k-1)*E*q. Singleton branch unions have exact zero
+cancellation and can give the exact source count q^2. A C*sqrt(q) cancellation
+premise gives a uniform actual source bound with an internally chosen threshold.
+General cancellation estimates and transfer to the original projected P3
+equations remain UNPROVED. Canonical T1.7 is unchanged, with ONLY its prior
+finite-field surface point-estimate input in actual degrees>2 at the original
+three families/caps. Coverage stays163 proved,2 conditional,2 in_progress out
+of167; all73 main results proved. No Palomar registration.
+
+Historical checkpoint P1-MATH-0619: actual Noether parameter-test nonvanishing
 is EXACTLY equivalent to the existence of a good graph-plane section over the
 algebraic closure. A nonzero test certifies original geometric irreducibility
 and gives an actual base-field good section for q>d*degree(test form), with
@@ -332,7 +344,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records617 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records618 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -451,7 +463,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **17186 audited theorem/lemma declarations**. This
+- The project currently has **17208 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -29367,3 +29379,20 @@ P3GraphPlaneCone handles an unconditional subclass in every degree: for an actua
 Five modules add twenty theorems and one definition. Neither the general nonzero-test existence requirement nor the general plane-curve point bound is discharged. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same three original families/caps; the two-input alternative remains conditional. Coverage stays163 proved,2 conditional,2 in_progress out of167, with all73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and allowed axioms are unchanged. All files remain on Ubuntu, now about21.4GiB free following an external increase in available space. No dependency download and no Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17643 jobs); direct axiom audit passed for 17186 declarations using only propext, Classical.choice and Quot.sound; all 17035 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 21.39 GiB.
+
+
+## Exact character expansion and uniform conditional counts for actual separated radical equations
+
+QuadraticCharacterRootCount proves the exact number of all independent square-root assignments over every odd-characteristic finite field: the actual finite root-set cardinality is the product of 1+chi(r_i). Zero radicands remain present and give one root. The actual quadratic character is bounded in absolute value by1; no nonsingularity or nonzero-radicand assumption is silently imposed.
+
+SeparatedQuadraticPointCount defines the literal tuples (x,y,z_i) satisfying z_i^2=c_i*A_i(x)*B_i(y). An actual fibre equivalence proves their exact total count. Expanding the product and using multiplicativity gives an EXACT finite subset formula: each term is chi(product c_i) times the one-variable character sum of product A_i times the analogous sum for B_i. The empty subset contributes precisely q^2.
+
+SeparatedQuadraticPointError proves the literal main-term subtraction identity and the error bound. If every nonempty subset has cancellation at most E on at least ONE variable, the actual source error is at most (2^k-1)*E*q. The other variable is bounded internally byq. The cancellation premise is explicit and UNPROVED in general; the target source count is not supplied as a premise.
+
+SplitRadicalFiniteFieldPointCount identifies these tuples with the paper's ACTUAL scaledPolynomial square equations, using the checked equation_evaluation identity over the finite field. Under the original pairwise-disjoint branch supports, each subset product is exactly the linear product over its actual branch union. Thus the exact formula applies to the literal split-radical equations, rather than an abstract surrogate model.
+
+QuadraticCharacterLinearSum proves exact zero cancellation for a translated single linear factor in every odd finite field. If every nonempty subset has a singleton branch union on one side, the actual complete point count is EXACTLY q^2. SplitRadicalPointBoundFromCharacterSums proves a uniform leading-coefficient-one source bound from the explicit one-variable C*sqrt(q) cancellation premise. Its natural threshold depends only on C,eta and the number of equations and precedes the field, coefficients and branch supports. The threshold is internally constructed; the cancellation estimates themselves remain explicit hypotheses.
+
+Six modules add twenty-two theorems and five definitions. No general character-sum estimate is asserted, and no transfer from these affine source equations to every original projected P3 equation is asserted. This preparatory source-specific route does not discharge the canonical T1.7 finite-field surface input or either classical plane input in the alternative theorem. Canonical T1.7 remains UniformGeometricCountsFieldEstimateInput.companion_T1_7 with the same degrees>2 and original three families/caps. Coverage stays163 proved,2 conditional,2 in_progress out of167; all73 main results proved. T19.17 and the two false-original scopes are unchanged. Original source hashes, Lean v4.36.0-rc2, allowed axioms and checking options are unchanged. Work remains on Ubuntu with about55.4GiB available following an external increase in free space, without dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17657 jobs); direct axiom audit passed for 17208 declarations using only propext, Classical.choice and Quot.sound; all 17062 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.44 GiB.
