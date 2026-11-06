@@ -33524,6 +33524,43 @@
         "status": "not_integrated"
       },
       "validation_commit": "bfe74dc62986343a7b7a144e86f75fc50b42a965"
+    },
+    {
+      "id": "P1-MATH-0715",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The preceding internal analytic components did not yet provide this exact rate, coefficient scope or actual finite-band connection.",
+      "finding": "The actual complex full finite-prime series equals its Euler product and has a uniform sharp C*log(X) norm bound.",
+      "proposed_revision": "Use this proved actual quantitative component with its exact coefficient and cutoff scope in the geometric band assembly.",
+      "impact": "The actual complex full finite-prime series equals its Euler product and has a uniform sharp C*log(X) norm bound. The actual geometric band partition, global Halasz assembly and final logarithmic short-average theorem remain unfinished.",
+      "evidence": [
+        "PaperP1.ComplexEuler.complex_hom_bound",
+        "PaperP1.ComplexEuler.prime_half",
+        "PaperP1.ComplexEuler.summable_and_hasSum",
+        "PaperP1.ComplexEuler.total_eq_product",
+        "PaperP1.ComplexEuler.product_continuous",
+        "PaperP1.ComplexEuler.product_log_bound",
+        "PaperP1.ComplexEuler.product_global_bound",
+        "PaperP1.ComplexEuler.total_global_bound",
+        "PaperP1.ComplexEuler.total_continuous",
+        "PaperP1.ComplexEuler.twistHom",
+        "PaperP1.ComplexEuler.product"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17997 jobs); direct axiom audit passed for 18189 declarations using only propext, Classical.choice and Quot.sound; all 18292 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.65 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

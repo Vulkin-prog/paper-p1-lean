@@ -3477,6 +3477,15 @@ import PaperP1
 #print axioms PaperP1.CompactCurvePopulationEnds.closure_curve
 #print axioms PaperP1.CompactCurvePopulationEnds.closure_comparison
 #print axioms PaperP1.CompactCurvePopulationEnds.exists_coordinate_minimum
+#print axioms PaperP1.ComplexEuler.complex_hom_bound
+#print axioms PaperP1.ComplexEuler.prime_half
+#print axioms PaperP1.ComplexEuler.summable_and_hasSum
+#print axioms PaperP1.ComplexEuler.total_eq_product
+#print axioms PaperP1.ComplexEuler.product_continuous
+#print axioms PaperP1.ComplexEuler.product_log_bound
+#print axioms PaperP1.ComplexEuler.product_global_bound
+#print axioms PaperP1.ComplexEuler.total_global_bound
+#print axioms PaperP1.ComplexEuler.total_continuous
 #print axioms PaperP1.ConnectedBarrierCrossing.crossing
 #print axioms PaperP1.ConnectedBarrierCrossing.common_positive_level
 #print axioms PaperP1.ConnectedGraphReachability.reachable_subset
