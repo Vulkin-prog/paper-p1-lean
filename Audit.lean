@@ -6774,6 +6774,16 @@ import PaperP1
 #print axioms PaperP1.OneTwoChannelParity.unsigned_odd_B
 #print axioms PaperP1.OneTwoChannelParity.unsigned_even_B
 #print axioms PaperP1.OneTwoChannelParity.unsigned_formula
+#print axioms PaperP1.OptimalSelbergWeights.denominator_pos
+#print axioms PaperP1.OptimalSelbergWeights.moebius_sq_real
+#print axioms PaperP1.OptimalSelbergWeights.inner_transform
+#print axioms PaperP1.OptimalSelbergWeights.weight_one
+#print axioms PaperP1.OptimalSelbergWeights.main_sum_exact
+#print axioms PaperP1.OptimalSelbergWeights.moebius_abs_real
+#print axioms PaperP1.OptimalSelbergWeights.target_abs_sum
+#print axioms PaperP1.OptimalSelbergWeights.weight_support
+#print axioms PaperP1.OptimalSelbergWeights.upper_inverse_abs_le_one
+#print axioms PaperP1.OptimalSelbergWeights.weight_abs_bound
 #print axioms PaperP1.OrdinaryCandidateMonotonicity.card_le
 #print axioms PaperP1.OrdinaryCandidateMonotonicity.boundary_lt_two_mul
 #print axioms PaperP1.OrdinaryCandidateMonotonicity.smooth_threshold

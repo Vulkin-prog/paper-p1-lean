@@ -32170,6 +32170,46 @@
         "status": "not_integrated"
       },
       "validation_commit": "04392f278f95a82f627a250be04a592925bef73c"
+    },
+    {
+      "id": "P1-MATH-0680",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "Actual interval sieve data and an inverse transform do not by themselves provide normalized weights with a controlled main sum or support.",
+      "finding": "An explicit upper-divisor inverse realizes the normalized Moebius/selbergTerms targets, with weight(1)=1, exact main term 1/G, support at divisors <=Z and |weight(d)|<=1/nu(d), all proved internally.",
+      "proposed_revision": "Use these constructed weights and their proved identities, then bound the aggregate error and logarithmic denominator before asserting a local prime-density estimate.",
+      "impact": "Closes normalization and the exact quadratic main term for actual weights, including support and size. Aggregate error, logarithmic denominator, local prime density and T19.17 remain unfinished.",
+      "evidence": [
+        "PaperP1.OptimalSelbergWeights.denominator_pos",
+        "PaperP1.OptimalSelbergWeights.moebius_sq_real",
+        "PaperP1.OptimalSelbergWeights.inner_transform",
+        "PaperP1.OptimalSelbergWeights.weight_one",
+        "PaperP1.OptimalSelbergWeights.main_sum_exact",
+        "PaperP1.OptimalSelbergWeights.moebius_abs_real",
+        "PaperP1.OptimalSelbergWeights.target_abs_sum",
+        "PaperP1.OptimalSelbergWeights.weight_support",
+        "PaperP1.OptimalSelbergWeights.upper_inverse_abs_le_one",
+        "PaperP1.OptimalSelbergWeights.weight_abs_bound",
+        "PaperP1.OptimalSelbergWeights.levelSet",
+        "PaperP1.OptimalSelbergWeights.denominator",
+        "PaperP1.OptimalSelbergWeights.target",
+        "PaperP1.OptimalSelbergWeights.weight"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17921 jobs); direct axiom audit passed for 17869 declarations using only propext, Classical.choice and Quot.sound; all 17886 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.28 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

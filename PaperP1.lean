@@ -4616,3 +4616,4 @@ public import PaperP1.Analysis.FinitePrimeReciprocalTail
 public import PaperP1.Analysis.FinitePrimeTruncatedSquareMean
 public import PaperP1.Arithmetic.DivisorUpperTransform
 public import PaperP1.Arithmetic.ReciprocalDivisibilitySieve
+public import PaperP1.Arithmetic.OptimalSelbergWeights
