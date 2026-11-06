@@ -1,6 +1,15 @@
 # Mathematical corrections and improvements
 
-Current checkpoint P1-MATH-0915: The actual infinite lognormal series
+Current checkpoint P1-MATH-0916: The actual infinite lognormal integer
+sum has a complete explicit Mellin error bound. The triple-large prime
+frequency contribution, the central-frequency mean comparison and
+complete logarithmic short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 53.20 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0915: The actual infinite lognormal series
 and integral have exact truncation identities. The triple-large prime
 frequency contribution, the central-frequency mean comparison and
 complete logarithmic short-average concentration remain unproved. T19.17
@@ -3004,7 +3013,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**913 mathematical improvements and two statement-scope corrections are confirmed.**
+**914 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -34329,3 +34338,12 @@ Three theorems prove the exact split of the actual absolutely convergent positiv
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.20 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18397 jobs); direct axiom audit passed for 19011 declarations using only propext, Classical.choice and Quot.sound; all 19265 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.20 GiB.
+
+
+## The actual infinite lognormal integer sum has a complete explicit Mellin error bound
+
+Three theorems and one definition prove K=5*exp(4)+9*exp(1)>0 and, for EVERY A>=2 and real t, norm(actual positive-integer series minus its actual full Mellin integral)<=K/A+2*(C_weight+|t|)*sqrt(A). The actual series norm is consequently bounded by A*sqrt(pi)*exp(-t^2/4) plus this explicit error. All four actual tails and the exact rounded finite quadrature error are assembled through proved truncation identities. No infinite-sum approximation or missing-tail input is assumed.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.20 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18399 jobs); direct axiom audit passed for 19014 declarations using only propext, Classical.choice and Quot.sound; all 19269 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.18 GiB.

@@ -4522,6 +4522,9 @@ import PaperP1
 #print axioms PaperP1.LognormalLowerTail.weight_bound
 #print axioms PaperP1.LognormalLowerTail.integer_head_bound
 #print axioms PaperP1.LognormalLowerTail.sqrt_head_bound
+#print axioms PaperP1.LognormalMellinError.constant_pos
+#print axioms PaperP1.LognormalMellinError.difference_bound
+#print axioms PaperP1.LognormalMellinError.value_norm_bound
 #print axioms PaperP1.LognormalMellinIntegral.phase_neg_swap
 #print axioms PaperP1.LognormalMellinIntegral.kernel_integral
 #print axioms PaperP1.LognormalMellinIntegral.phase_log_identity
