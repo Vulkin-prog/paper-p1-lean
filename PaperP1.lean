@@ -4508,3 +4508,5 @@ public import PaperP1.Algebra.HyperellipticMonomialIndex
 public import PaperP1.Algebra.HyperellipticPoleDegree
 public import PaperP1.Algebra.HyperellipticTangentDegree
 public import PaperP1.Algebra.HyperellipticWeightedMonomials
+public import PaperP1.Algebra.HyperellipticProductIndependence
+public import PaperP1.Algebra.HyperellipticPureFunctions

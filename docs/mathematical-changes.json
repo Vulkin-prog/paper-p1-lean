@@ -30059,6 +30059,47 @@
         "status": "not_integrated"
       },
       "validation_commit": "1b68efd1f4fb28dd2d2bef16d74587f72d251a90"
+    },
+    {
+      "id": "P1-MATH-0627",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "Distinct numerical product weights did not yet establish actual linear independence or guarantee that a nonzero coefficient tensor gives a nonzero auxiliary function.",
+      "finding": "Actual leading-coordinate linear functionals prove true independence of the nonzero pure product functions. Every nonzero coefficient tensor gives an actual nonzero combination when A<p.",
+      "proposed_revision": "Use the constructed leading-coefficient functional to justify actual product independence before the auxiliary kernel argument. Retain the full tangent-kernel existence and evaluation steps explicitly.",
+      "impact": "Discharges the internal product-linear-independence gap without assuming it. The tangent-constraint kernel and auxiliary construction remain unfinished; canonical inputs and coverage are unchanged.",
+      "evidence": [
+        "PaperP1.HyperellipticProductIndependence.linearIndependent_of_pure",
+        "PaperP1.HyperellipticProductIndependence.product_family_linearIndependent",
+        "PaperP1.HyperellipticProductIndependence.nonzero_linear_combination",
+        "PaperP1.HyperellipticPureFunctions.pure_one",
+        "PaperP1.HyperellipticPureFunctions.pure_mul",
+        "PaperP1.HyperellipticPureFunctions.pure_pow",
+        "PaperP1.HyperellipticPureFunctions.vector_pure",
+        "PaperP1.HyperellipticPureFunctions.real_degree",
+        "PaperP1.HyperellipticPureFunctions.imaginary_degree",
+        "PaperP1.HyperellipticPureFunctions.lower_real_coefficient",
+        "PaperP1.HyperellipticPureFunctions.lower_imaginary_coefficient",
+        "PaperP1.HyperellipticPureFunctions.leading_functional",
+        "PaperP1.HyperellipticPureFunctions.Pure",
+        "PaperP1.HyperellipticPureFunctions.realCoefficient",
+        "PaperP1.HyperellipticPureFunctions.imaginaryCoefficient"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17703 jobs); direct axiom audit passed for 17333 declarations using only propext, Classical.choice and Quot.sound; all 17207 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.30 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

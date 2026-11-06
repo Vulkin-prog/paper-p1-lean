@@ -1,6 +1,16 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0626: actual polynomial norm degree gives a
+Current checkpoint P1-MATH-0627: ACTUAL product functions g_i*h_j^p are
+proved linearly independent when A<p, using literal leading-coordinate
+linear maps. Every nonzero coefficient tensor gives an ACTUAL nonzero
+function. The internal independence gap is discharged; the complete tangent
+constraint kernel, auxiliary existence and point evaluations remain UNPROVED,
+as do general character cancellation and projected-P3 transfer. Canonical
+T1.7 retains ONLY its prior finite-field surface input in actual degrees>2
+at the original families/caps. Coverage stays163 proved,2 conditional,
+2 in_progress out of167; all73 main results proved. No Palomar registration.
+
+Historical checkpoint P1-MATH-0626: actual polynomial norm degree gives a
 proved sum/product/scalar filtration. Tangent iterates have degree at most
 L+r*max(d-2,0). Literal X^i and Y*X^j monomials have exact distinct weights.
 Their bounded finite index set has cardinality L+1-g for d=2g+1 and L>=d.
@@ -414,7 +424,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records624 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records625 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -533,7 +543,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **17321 audited theorem/lemma declarations**. This
+- The project currently has **17333 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -29548,3 +29558,14 @@ HyperellipticMonomialIndex constructs the actual finite index set of every monom
 Four modules add twenty-eight theorems and five definitions. These exact degree and dimension foundations do not prove the required nonzero auxiliary-function existence or its complete linear-constraint construction. General higher-degree character cancellation and transfer to original projected P3 equations remain unproved. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the original three families/caps; the two-plane-input alternative remains conditional. Coverage stays163 proved,2 conditional,2 in_progress out of167; all73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and allowed axioms are unchanged. Work remains on Ubuntu with about55.3GiB available and no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17699 jobs); direct axiom audit passed for 17321 declarations using only propext, Classical.choice and Quot.sound; all 17192 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.32 GiB.
+
+
+## Actual product-function linear independence and nonzero tensor combinations
+
+HyperellipticPureFunctions defines an actual pure quadratic polynomial function as one whose real or imaginary coordinate is zero. Products and powers preserve this property, and every literal monomial vector has it. Actual real and imaginary polynomial coefficients are F-linear maps. The exact degree formulas prove that the appropriate leading coefficient of a nonzero pure function is nonzero and vanishes on every pure function of strictly smaller degree. The separating functional is actually constructed; no abstract separation premise is assumed.
+
+HyperellipticProductIndependence proves that a family of nonzero pure actual functions with injective actual degrees is F-linearly independent. For a purported zero combination, it selects a nonzero coefficient of maximal degree and applies the constructed literal coefficient map. All other terms vanish, contradicting the chosen nonzero coefficient. Applying the theorem to the ACTUAL products g_i*h_j^p, and the previously proved exact degrees and finite index weights, proves genuine linear independence whenever A<p. A further corollary proves that EVERY nonzero coefficient tensor gives an ACTUAL nonzero function sum c_ij*g_i*h_j^p. These theorems hold over every field; no Frobenius or point-count statement is assumed for this independence step.
+
+Two modules add twelve theorems and three definitions. The actual product-linear-independence gap identified in checkpoint626 is now discharged internally. The auxiliary's required nonzero coefficient tensor still has to be obtained from the tangent-constraint kernel, with the complete coefficient reconstruction, dimension inequality and point-evaluation argument. Thus full auxiliary existence, general higher-degree character cancellation and the source-to-projected-P3 transfer remain UNPROVED. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the original three families/caps; the two-plane-input alternative remains conditional. Coverage stays163 proved,2 conditional,2 in_progress out of167; all73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, allowed axioms and checking options are unchanged. All work remains on Ubuntu with about55.3GiB available, without dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17703 jobs); direct axiom audit passed for 17333 declarations using only propext, Classical.choice and Quot.sound; all 17207 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.30 GiB.

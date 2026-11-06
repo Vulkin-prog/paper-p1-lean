@@ -1,6 +1,16 @@
 # Multiquadratic split radicands: exact square-class independence
 
-Current checkpoint P1-MATH-0626: actual polynomial norm degree gives a
+Current checkpoint P1-MATH-0627: ACTUAL product functions g_i*h_j^p are
+proved linearly independent when A<p, using literal leading-coordinate
+linear maps. Every nonzero coefficient tensor gives an ACTUAL nonzero
+function. The internal independence gap is discharged; the complete tangent
+constraint kernel, auxiliary existence and point evaluations remain UNPROVED,
+as do general character cancellation and projected-P3 transfer. Canonical
+T1.7 retains ONLY its prior finite-field surface input in actual degrees>2
+at the original families/caps. Coverage stays163 proved,2 conditional,
+2 in_progress out of167; all73 main results proved. No Palomar registration.
+
+Historical checkpoint P1-MATH-0626: actual polynomial norm degree gives a
 proved sum/product/scalar filtration. Tangent iterates have degree at most
 L+r*max(d-2,0). Literal X^i and Y*X^j monomials have exact distinct weights.
 Their bounded finite index set has cardinality L+1-g for d=2g+1 and L>=d.
@@ -22652,3 +22662,14 @@ HyperellipticMonomialIndex constructs the actual finite index set of every monom
 Four modules add twenty-eight theorems and five definitions. These exact degree and dimension foundations do not prove the required nonzero auxiliary-function existence or its complete linear-constraint construction. General higher-degree character cancellation and transfer to original projected P3 equations remain unproved. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the original three families/caps; the two-plane-input alternative remains conditional. Coverage stays163 proved,2 conditional,2 in_progress out of167; all73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and allowed axioms are unchanged. Work remains on Ubuntu with about55.3GiB available and no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17699 jobs); direct axiom audit passed for 17321 declarations using only propext, Classical.choice and Quot.sound; all 17192 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.32 GiB.
+
+
+## Actual product-function linear independence and nonzero tensor combinations
+
+HyperellipticPureFunctions defines an actual pure quadratic polynomial function as one whose real or imaginary coordinate is zero. Products and powers preserve this property, and every literal monomial vector has it. Actual real and imaginary polynomial coefficients are F-linear maps. The exact degree formulas prove that the appropriate leading coefficient of a nonzero pure function is nonzero and vanishes on every pure function of strictly smaller degree. The separating functional is actually constructed; no abstract separation premise is assumed.
+
+HyperellipticProductIndependence proves that a family of nonzero pure actual functions with injective actual degrees is F-linearly independent. For a purported zero combination, it selects a nonzero coefficient of maximal degree and applies the constructed literal coefficient map. All other terms vanish, contradicting the chosen nonzero coefficient. Applying the theorem to the ACTUAL products g_i*h_j^p, and the previously proved exact degrees and finite index weights, proves genuine linear independence whenever A<p. A further corollary proves that EVERY nonzero coefficient tensor gives an ACTUAL nonzero function sum c_ij*g_i*h_j^p. These theorems hold over every field; no Frobenius or point-count statement is assumed for this independence step.
+
+Two modules add twelve theorems and three definitions. The actual product-linear-independence gap identified in checkpoint626 is now discharged internally. The auxiliary's required nonzero coefficient tensor still has to be obtained from the tangent-constraint kernel, with the complete coefficient reconstruction, dimension inequality and point-evaluation argument. Thus full auxiliary existence, general higher-degree character cancellation and the source-to-projected-P3 transfer remain UNPROVED. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the original three families/caps; the two-plane-input alternative remains conditional. Coverage stays163 proved,2 conditional,2 in_progress out of167; all73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, allowed axioms and checking options are unchanged. All work remains on Ubuntu with about55.3GiB available, without dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17703 jobs); direct axiom audit passed for 17333 declarations using only propext, Classical.choice and Quot.sound; all 17207 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.30 GiB.
