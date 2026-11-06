@@ -1,6 +1,15 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0776: Actual narrow cofactor mean square has
+Current checkpoint P1-MATH-0777: Actual narrow rectangle mean square is
+controlled on the small prime polynomial frequency region. The actual
+Ramare main-term frequency bounds and complete logarithmic short-average
+concentration remain unproved. T19.17 conditional; original T1.7
+unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167;
+all 73 main proved. Sources, false-scope corrections, compiler and
+axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download
+or Palomar registration.
+
+Historical checkpoint P1-MATH-0776: Actual narrow cofactor mean square has
 an explicit short height bound. The actual Ramare main-term frequency
 bounds and complete logarithmic short-average concentration remain
 unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164
@@ -32249,6 +32258,12 @@ For X>0, every actual narrow cofactor polynomial with unit-bounded original coef
 
 The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.
 
+## Internal actual narrow rectangle mean square is controlled on the small prime polynomial frequency region
+
+A finite product Cauchy estimate on EVERY measurable subset E of (-T,T] proves an actual restricted mean-square bound card(J)^2*V^2*C when each prime factor is <=V on E and each cofactor has actual full mean square<=C. Applied to the literal narrow rectangle at 0<T<=X/h with every occupied anchor<=h, this gives the explicit bound card(indices)^2*V^2*(2*C0), C0=exp(1)*(sqrt(pi)+4*pi). The ACTUAL good frequency set where every prime-band polynomial is <=V is defined and proved measurable; the same bound holds on it. Four theorems and one definition retain the actual supports, coefficients and restricted integral.
+
+The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -35221,3 +35236,14 @@ For X>0, every actual narrow cofactor polynomial with unit-bounded original coef
 The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18119 jobs); direct axiom audit passed for 18486 declarations using only propext, Classical.choice and Quot.sound; all 18655 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.56 GiB.
+
+
+## Actual narrow rectangle mean square is controlled on the small prime polynomial frequency region
+
+Stable ID: p1:internal:small-prime-region. Actual narrow rectangle mean square is controlled on the small prime polynomial frequency region. The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.
+
+A finite product Cauchy estimate on EVERY measurable subset E of (-T,T] proves an actual restricted mean-square bound card(J)^2*V^2*C when each prime factor is <=V on E and each cofactor has actual full mean square<=C. Applied to the literal narrow rectangle at 0<T<=X/h with every occupied anchor<=h, this gives the explicit bound card(indices)^2*V^2*(2*C0), C0=exp(1)*(sqrt(pi)+4*pi). The ACTUAL good frequency set where every prime-band polynomial is <=V is defined and proved measurable; the same bound holds on it. Four theorems and one definition retain the actual supports, coefficients and restricted integral.
+
+The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18121 jobs); direct axiom audit passed for 18490 declarations using only propext, Classical.choice and Quot.sound; all 18660 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.55 GiB.

@@ -4979,6 +4979,10 @@ import PaperP1
 #print axioms PaperP1.SlowPrimeDiscrete.slow_cubic_moment
 #print axioms PaperP1.SlowPrimeDiscrete.slow_large_values_card
 #print axioms PaperP1.SlowPrimeDiscrete.slow_large_values_small_uniform
+#print axioms PaperP1.SmallPrimeRegion.finite_product_bound
+#print axioms PaperP1.SmallPrimeRegion.rectangle_bound
+#print axioms PaperP1.SmallPrimeRegion.goodSet_measurable
+#print axioms PaperP1.SmallPrimeRegion.goodSet_bound
 #print axioms PaperP1.SmallRecoveryParameter.power_order
 #print axioms PaperP1.SmallRecoveryParameter.exists_small
 #print axioms PaperP1.SmallRecoveryParameter.exists_relative_cost

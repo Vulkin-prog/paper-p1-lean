@@ -4716,3 +4716,4 @@ public import PaperP1.Analysis.CommonNarrowCofactors
 public import PaperP1.Analysis.NarrowCofactorRegime
 public import PaperP1.Analysis.NarrowCofactorSparseMean
 public import PaperP1.Analysis.NarrowCofactorMeanValue
+public import PaperP1.Analysis.SmallPrimeRegion

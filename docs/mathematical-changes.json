@@ -35572,6 +35572,37 @@
         "status": "not_integrated"
       },
       "validation_commit": "16b28dad15d4f4817e719109f3c2c4cc937cc7e7"
+    },
+    {
+      "id": "P1-MATH-0777",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "Pointwise small prime factors must be combined with actual cofactor integrals and the finite band count on the literal good frequency set; its complement is still untreated.",
+      "finding": "A finite product Cauchy estimate on EVERY measurable subset E of (-T,T] proves an actual restricted mean-square bound card(J)^2*V^2*C when each prime factor is <=V on E and each cofactor has actual full mean square<=C. Applied to the literal narrow rectangle at 0<T<=X/h with every occupied anchor<=h, this gives the explicit bound card(indices)^2*V^2*(2*C0), C0=exp(1)*(sqrt(pi)+4*pi). The ACTUAL good frequency set where every prime-band polynomial is <=V is defined and proved measurable; the same bound holds on it. Four theorems and one definition retain the actual supports, coefficients and restricted integral.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Actual narrow rectangle mean square is controlled on the small prime polynomial frequency region. The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.SmallPrimeRegion.finite_product_bound",
+        "PaperP1.SmallPrimeRegion.rectangle_bound",
+        "PaperP1.SmallPrimeRegion.goodSet_measurable",
+        "PaperP1.SmallPrimeRegion.goodSet_bound",
+        "PaperP1.SmallPrimeRegion.goodSet"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18121 jobs); direct axiom audit passed for 18490 declarations using only propext, Classical.choice and Quot.sound; all 18660 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.55 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
