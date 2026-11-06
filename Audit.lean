@@ -5328,6 +5328,11 @@ import PaperP1
 #print axioms PaperP1.TaylorEvaluationData.evaluation_eq
 #print axioms PaperP1.TaylorEvaluationData.coefficient_bound
 #print axioms PaperP1.TaylorEvaluationData.value_bound
+#print axioms PaperP1.TerminalLogarithmicBudget.sum_upper
+#print axioms PaperP1.TerminalLogarithmicBudget.product_bounds
+#print axioms PaperP1.TerminalLogarithmicBudget.budget_nonneg
+#print axioms PaperP1.TerminalLogarithmicBudget.leaf_bound
+#print axioms PaperP1.TerminalLogarithmicBudget.logarithmic_bound
 #print axioms PaperP1.TransposedGraphGluing.path_eq_left
 #print axioms PaperP1.TransposedGraphGluing.path_eq_right
 #print axioms PaperP1.TransposedGraphGluing.image_union

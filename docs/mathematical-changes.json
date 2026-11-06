@@ -38065,6 +38065,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "f555b79591c0694a1c55eb308a215e254857f11b"
+    },
+    {
+      "id": "P1-MATH-0857",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The recursive differencing result must be closed by the actual higher logarithmic phase estimate, with all shift products, endpoint sums, factorials and diagonal costs retained.",
+      "finding": "Define the EXPLICIT terminal budget e(X,A,K,n,t)=2*3^(n+1)*X^n/(|t|*n!*A^n)+|t|*n!*(A*K)^n/X^(n+1). For n shifts in [A,A*K] with n*A*K<=X, the actual sum of EVERY terminal phase on EVERY Ico X (X+L), L<=X, has norm<=X*e. Insert this CONCRETE proved estimate into the actual recursive differencing tree: the ORIGINAL unshifted dyadic logarithmic sum has norm<=X*b_n(K,e), when A,K,X>0, A*K<=X and t!=0. Five theorems and one explicit budget definition prove sum/product shift bounds, budget positivity, the actual terminal estimate and the fully instantiated original-sum bound. No terminal analytic bound is assumed in this conclusion.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "The actual unshifted logarithmic sum has a concrete all-order differencing bound. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.TerminalLogarithmicBudget.sum_upper",
+        "PaperP1.TerminalLogarithmicBudget.product_bounds",
+        "PaperP1.TerminalLogarithmicBudget.budget_nonneg",
+        "PaperP1.TerminalLogarithmicBudget.leaf_bound",
+        "PaperP1.TerminalLogarithmicBudget.logarithmic_bound",
+        "PaperP1.TerminalLogarithmicBudget.budget"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18281 jobs); direct axiom audit passed for 18776 declarations using only propext, Classical.choice and Quot.sound; all 18994 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.11 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

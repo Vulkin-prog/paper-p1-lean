@@ -4796,3 +4796,4 @@ public import PaperP1.Analysis.IteratedLogarithmicIntegral
 public import PaperP1.Analysis.IteratedLogarithmicSum
 public import PaperP1.Analysis.IteratedLogarithmicCorrelation
 public import PaperP1.Analysis.RecursiveLogarithmicDifferencing
+public import PaperP1.Analysis.TerminalLogarithmicBudget
