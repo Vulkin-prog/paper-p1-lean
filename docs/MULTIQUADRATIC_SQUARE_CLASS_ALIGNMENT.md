@@ -1,6 +1,15 @@
 # Multiquadratic split radicands: exact square-class independence
 
-Current checkpoint P1-MATH-0762: Actual partial summation on every
+Current checkpoint P1-MATH-0763: One common frequency exception controls
+all actual weighted interval Dirichlet polynomials. The actual Ramare
+main-term frequency bounds and complete logarithmic short-average
+concentration remain unproved. T19.17 conditional; original T1.7
+unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167;
+all 73 main proved. Sources, false-scope corrections, compiler and
+axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download
+or Palomar registration.
+
+Historical checkpoint P1-MATH-0762: Actual partial summation on every
 interval inside a dyadic block. The actual Ramare main-term frequency
 bounds and complete logarithmic short-average concentration remain
 unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164
@@ -25558,3 +25567,12 @@ The shifted partial sum equals the difference of the actual summatory functions 
 The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18091 jobs); direct axiom audit passed for 18432 declarations using only propext, Classical.choice and Quot.sound; all 18585 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.81 GiB.
+
+
+## One common frequency exception controls all actual weighted interval Dirichlet polynomials
+
+For every epsilon,delta>0 one R>=2 and N0>=5 precede all N>=N0 and all T>=max(1,ceil(log(2*N)^10)). ONE measurable E in (-T,T], with measure <=delta*T, is chosen BEFORE every upper interval endpoint M in [N,2*N], every prime P above R, every prime Q, every complete real prime-bounded f and every off-exception frequency. The ACTUAL Dirichlet polynomial on [N,M) with coefficient f(n)*presence(Q,n)/(count(P,n)+1) then has norm <=epsilon. This uses the common weighted summatory estimate at base N-1 and the proved actual partial summation identity. Two theorems and one coefficient definition are added. A small exceptional measure alone does not prove a vanishing unrestricted Dirichlet mean square.
+
+The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18093 jobs); direct axiom audit passed for 18434 declarations using only propext, Classical.choice and Quot.sound; all 18588 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.79 GiB.

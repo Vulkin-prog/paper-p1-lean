@@ -35124,6 +35124,35 @@
         "status": "not_integrated"
       },
       "validation_commit": "bb0a0b7fdeb80f524f769cbd1b73c9ee01a25d2c"
+    },
+    {
+      "id": "P1-MATH-0763",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The same exception must precede all intermediate cutoffs, supports and coefficients. Pointwise smallness outside a set of relative measure delta is not the missing unrestricted L2=o(1) estimate.",
+      "finding": "For every epsilon,delta>0 one R>=2 and N0>=5 precede all N>=N0 and all T>=max(1,ceil(log(2*N)^10)). ONE measurable E in (-T,T], with measure <=delta*T, is chosen BEFORE every upper interval endpoint M in [N,2*N], every prime P above R, every prime Q, every complete real prime-bounded f and every off-exception frequency. The ACTUAL Dirichlet polynomial on [N,M) with coefficient f(n)*presence(Q,n)/(count(P,n)+1) then has norm <=epsilon. This uses the common weighted summatory estimate at base N-1 and the proved actual partial summation identity. Two theorems and one coefficient definition are added. A small exceptional measure alone does not prove a vanishing unrestricted Dirichlet mean square.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "One common frequency exception controls all actual weighted interval Dirichlet polynomials. The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.CommonIntervalDirichlet.value_as_twisted_sum",
+        "PaperP1.CommonIntervalDirichlet.common_interval_small",
+        "PaperP1.CommonIntervalDirichlet.coefficient"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18093 jobs); direct axiom audit passed for 18434 declarations using only propext, Classical.choice and Quot.sound; all 18588 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.79 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
