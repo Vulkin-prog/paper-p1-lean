@@ -4800,3 +4800,4 @@ public import PaperP1.Analysis.TerminalLogarithmicBudget
 public import PaperP1.Analysis.FixedOrderLogarithmicScale
 public import PaperP1.Analysis.RoundedLogarithmicParameters
 public import PaperP1.Analysis.FixedOrderFirstTermDecay
+public import PaperP1.Analysis.FixedOrderSecondTermDecay

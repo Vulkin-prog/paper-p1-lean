@@ -4061,6 +4061,9 @@ import PaperP1
 #print axioms PaperP1.FixedOrderLogarithmicScale.scale_power_times
 #print axioms PaperP1.FixedOrderLogarithmicScale.scale_bounds
 #print axioms PaperP1.FixedOrderLogarithmicScale.floor_half_bounds
+#print axioms PaperP1.FixedOrderSecondTermDecay.exponent_power
+#print axioms PaperP1.FixedOrderSecondTermDecay.quotient_identity
+#print axioms PaperP1.FixedOrderSecondTermDecay.second_bound
 #print axioms PaperP1.FlexiblePrimeBandSieve.reciprocal_mass_tendsto
 #print axioms PaperP1.FlexiblePrimeBandSieve.card_bound
 #print axioms PaperP1.FlexiblePrimeBandSieve.normalized_card_square_tendsto

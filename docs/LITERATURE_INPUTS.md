@@ -1,6 +1,15 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0860: The rounded logarithmic integral term
+Current checkpoint P1-MATH-0861: The rounded logarithmic comparison term
+is bounded by factorial times X to minus seven sixteenths. The triple-
+large prime frequency contribution, the central-frequency mean
+comparison and complete logarithmic short-average concentration remain
+unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164
+proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources,
+false-scope corrections, compiler and axioms unchanged. About 51.05 GiB
+free on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0860: The rounded logarithmic integral term
 is bounded by six to the order over square root X. The triple-large
 prime frequency contribution, the central-frequency mean comparison and
 complete logarithmic short-average concentration remain unproved. T19.17
@@ -33524,6 +33533,12 @@ Prove the EXACT scalar quotient identity reducing (2*3^(n+1)*X^n)/(X^(n+1/2)/2^n
 
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
 
+## Internal the rounded logarithmic comparison term is bounded by factorial times x to minus seven sixteenths
+
+For every fixed n>0, prove (X^(1/(16*n)))^n=X^(1/16) and the exact quotient reducing X^(n+1/2)*X^(1/16)/X^(n+1) to X^(-7/16). If the ACTUAL step A<=g_n(X,|t|) and count K<=X^(1/(16*n)), the SECOND full terminal term |t|*n!*(A*K)^n/X^(n+1) is <=n!/X^(7/16). Three theorems retain the exact Nat product, real powers and frequency-balancing identity.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -37420,3 +37435,14 @@ Prove the EXACT scalar quotient identity reducing (2*3^(n+1)*X^n)/(X^(n+1/2)/2^n
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.05 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18287 jobs); direct axiom audit passed for 18786 declarations using only propext, Classical.choice and Quot.sound; all 19008 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.05 GiB.
+
+
+## The rounded logarithmic comparison term is bounded by factorial times X to minus seven sixteenths
+
+Stable ID: p1:internal:fixed-order-second-term-decay. The rounded logarithmic comparison term is bounded by factorial times X to minus seven sixteenths. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
+
+For every fixed n>0, prove (X^(1/(16*n)))^n=X^(1/16) and the exact quotient reducing X^(n+1/2)*X^(1/16)/X^(n+1) to X^(-7/16). If the ACTUAL step A<=g_n(X,|t|) and count K<=X^(1/(16*n)), the SECOND full terminal term |t|*n!*(A*K)^n/X^(n+1) is <=n!/X^(7/16). Three theorems retain the exact Nat product, real powers and frequency-balancing identity.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.05 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18289 jobs); direct axiom audit passed for 18789 declarations using only propext, Classical.choice and Quot.sound; all 19011 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.03 GiB.

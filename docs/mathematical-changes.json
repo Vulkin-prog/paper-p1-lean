@@ -38193,6 +38193,35 @@
         "status": "not_integrated"
       },
       "validation_commit": "d2cbd3692593ad0b413eeb4752c268be842623f0"
+    },
+    {
+      "id": "P1-MATH-0861",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The sum-to-integral comparison error grows with the shift product and needs its own verified decay after choosing the actual step and count.",
+      "finding": "For every fixed n>0, prove (X^(1/(16*n)))^n=X^(1/16) and the exact quotient reducing X^(n+1/2)*X^(1/16)/X^(n+1) to X^(-7/16). If the ACTUAL step A<=g_n(X,|t|) and count K<=X^(1/(16*n)), the SECOND full terminal term |t|*n!*(A*K)^n/X^(n+1) is <=n!/X^(7/16). Three theorems retain the exact Nat product, real powers and frequency-balancing identity.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "The rounded logarithmic comparison term is bounded by factorial times X to minus seven sixteenths. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.FixedOrderSecondTermDecay.exponent_power",
+        "PaperP1.FixedOrderSecondTermDecay.quotient_identity",
+        "PaperP1.FixedOrderSecondTermDecay.second_bound"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18289 jobs); direct axiom audit passed for 18789 declarations using only propext, Classical.choice and Quot.sound; all 19011 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.03 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
