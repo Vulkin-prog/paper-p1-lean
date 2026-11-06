@@ -36356,6 +36356,34 @@
         "status": "not_integrated"
       },
       "validation_commit": "e62e07804919b0f2dc36d8f6e69450c7f2e73452"
+    },
+    {
+      "id": "P1-MATH-0802",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The negative second-threshold power must dominate the actual factorial and first-threshold losses, with its precise exponent and growing-order constraints proved.",
+      "finding": "For x>=2, q>0, 999*log(x)<=log(u) and k*log(u)<=log(q), the literal factor x^(31*k) is <=q^(1/25). Combining the actual first-threshold budget bound with the ACTUAL second threshold w=q^(-1/40) proves (w^2/(1/x^10)^(2*k))*budget<=q^(-1/100), whenever k<=x^3 and reciprocal mass<=1. Two theorems rigorously establish the threshold compensation at growing k. The logarithmic geometry conditions are explicit and are not assumed proved for the paper bands here.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Actual first and second threshold factors yield a quantitative mixed-frequency decay. The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.AmplificationThresholdDecay.logarithmic_power_bound",
+        "PaperP1.AmplificationThresholdDecay.mixed_weight_bound"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18171 jobs); direct axiom audit passed for 18581 declarations using only propext, Classical.choice and Quot.sound; all 18766 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.10 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

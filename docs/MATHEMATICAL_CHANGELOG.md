@@ -1,6 +1,15 @@
 # Mathematical corrections and improvements
 
-Current checkpoint P1-MATH-0801: Actual amplification budget and first
+Current checkpoint P1-MATH-0802: Actual first and second threshold
+factors yield a quantitative mixed-frequency decay. The complementary
+bad-prime frequency contribution, the central-frequency mean subtraction
+and complete logarithmic short-average concentration remain unproved.
+T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 52.12 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0801: Actual amplification budget and first
 threshold loss have uniform growing-order power bounds. The
 complementary bad-prime frequency contribution, the central-frequency
 mean subtraction and complete logarithmic short-average concentration
@@ -1972,7 +1981,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**799 mathematical improvements and two statement-scope corrections are confirmed.**
+**800 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -32271,3 +32280,12 @@ For EVERY k and actual support of reciprocal mass<=1, the internally proved ampl
 The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.12 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18169 jobs); direct axiom audit passed for 18579 declarations using only propext, Classical.choice and Quot.sound; all 18764 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.12 GiB.
+
+
+## Actual first and second threshold factors yield a quantitative mixed-frequency decay
+
+For x>=2, q>0, 999*log(x)<=log(u) and k*log(u)<=log(q), the literal factor x^(31*k) is <=q^(1/25). Combining the actual first-threshold budget bound with the ACTUAL second threshold w=q^(-1/40) proves (w^2/(1/x^10)^(2*k))*budget<=q^(-1/100), whenever k<=x^3 and reciprocal mass<=1. Two theorems rigorously establish the threshold compensation at growing k. The logarithmic geometry conditions are explicit and are not assumed proved for the paper bands here.
+
+The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.12 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18171 jobs); direct axiom audit passed for 18581 declarations using only propext, Classical.choice and Quot.sound; all 18766 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.10 GiB.
