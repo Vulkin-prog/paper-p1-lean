@@ -1,6 +1,16 @@
 # Actual projective scheme map
 
-Current checkpoint P1-MATH-0683: an ACTUAL weighted-prime square
+Current checkpoint P1-MATH-0684: the ACTUAL first prime convolution
+is reconstructed with error <=(1+primePowerTotal)*X/log X for
+COMPLETELY multiplicative bounded complex functions. All quotient
+floors and logarithmic/prime-power errors are internal.
+Prime truncations, triple convolution/Perron, full dyadic transfer
+and short-average assembly remain UNPROVED. T19.17 conditional;
+original T1.7 complete. Coverage: 164 proved, 1 conditional,
+2 in_progress /167; all 73 main proved. False scopes/corrections
+unchanged. No Palomar registration.
+
+Historical checkpoint P1-MATH-0683: an ACTUAL weighted-prime square
 mean with SINGLE weight log(p)/p is proved uniformly for ALL
 complex coefficients, T>=1 and actual primes p>=T^2.
 Actual local prime masses and weighted Gaussian rows are internal.
@@ -23304,3 +23314,18 @@ WeightedPrimeMean assembles these facts. Its literal value is sum_{p in P} a(p)*
 The proved estimate is the PRIME-SUPPORTED case needed in the displayed convolution argument of Granville--Harper--Soundararajan. Their full Lemma 1 also states a von-Mangoldt/prime-power version; that more general statement is NOT claimed here. The actual multiplicative convolution, truncated Perron estimate, full dyadic Halasz transfer and logarithmic short-average assembly remain unfinished. T19.17 retains its explicit analytic input; original complete T1.7 remains unconditional. Coverage stays 164 proved, 1 conditional, 2 in_progress out of 167; all 73 main results proved. Original false scopes and checked corrections are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and allowed axioms are unchanged. Ubuntu retains about 54.2 GiB; no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17933 jobs); direct axiom audit passed for 17900 declarations using only propext, Classical.choice and Quot.sound; all 17922 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.23 GiB.
+
+
+## Actual logarithmic prime convolution with a uniform reconstruction error
+
+MultiplicativeLogConvolution defines the literal summatory function over integers 1<=n<=X, its logarithmically weighted sum, the actual von-Mangoldt divisor convolution and the actual prime convolution. The function f is a monoid homomorphism from natural numbers to complex numbers, so its COMPLETE multiplicativity is explicit. The boundedness premise is |f(n)|<=1 for every positive integer; no conclusion about a convolution or mean is assumed.
+
+An exact finite image identity identifies multiples d*m in [1,X] with m in [1,floor(X/d)], with d>0. The exact finite von-Mangoldt divisor identity and complete multiplicativity then prove that the literal logarithmic sum equals the literal Mangoldt convolution, retaining all positive integer endpoints and quotient floors. The actual summatory norm is at most X.
+
+The difference between the Mangoldt and prime convolutions is EXACTLY the actual nonprime Mangoldt contribution. Its norm is <=X*PrimeLogMertens.primePowerTotal. This is the already internally proved finite, nonnegative total of the nonprime Mangoldt reciprocals; the present proof uses its proved summability and finite-sum bound, not an unspecified error constant. Separately, the actual logarithmic deficit has norm at most X, using the checked factorial logarithm inequality. Both estimates hold for every natural X, including zero.
+
+Consequently the literal prime reconstruction has error at most (1+primePowerTotal)*X before normalization. For X>=2, the ACTUAL norm of summatory(f,X)-primeConvolution(f,X)/log X is <=(1+primePowerTotal)*X/log X. All real-to-complex casts, positive logarithmic denominators and finite index changes are checked. One module adds ten theorems and four definitions.
+
+This closes the first prime-convolution reconstruction for COMPLETELY multiplicative functions, which includes the actual ordinary-smooth indicator. It is not a claim for every merely multiplicative function. Prime truncations, the second/triple convolution, actual Perron estimate, full dyadic Halasz transfer and logarithmic short-average assembly remain unfinished. The full prime-power weighted mean is also not claimed. T19.17 retains its explicit analytic input; original complete T1.7 remains unconditional. Coverage stays 164 proved, 1 conditional, 2 in_progress out of 167; all 73 main results proved. Original false scopes and checked corrections are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and allowed axioms are unchanged. Ubuntu retains about 54.2 GiB; no dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17935 jobs); direct axiom audit passed for 17910 declarations using only propext, Classical.choice and Quot.sound; all 17936 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.21 GiB.

@@ -1,6 +1,16 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0683: an ACTUAL weighted-prime square
+Current checkpoint P1-MATH-0684: the ACTUAL first prime convolution
+is reconstructed with error <=(1+primePowerTotal)*X/log X for
+COMPLETELY multiplicative bounded complex functions. All quotient
+floors and logarithmic/prime-power errors are internal.
+Prime truncations, triple convolution/Perron, full dyadic transfer
+and short-average assembly remain UNPROVED. T19.17 conditional;
+original T1.7 complete. Coverage: 164 proved, 1 conditional,
+2 in_progress /167; all 73 main proved. False scopes/corrections
+unchanged. No Palomar registration.
+
+Historical checkpoint P1-MATH-0683: an ACTUAL weighted-prime square
 mean with SINGLE weight log(p)/p is proved uniformly for ALL
 complex coefficients, T>=1 and actual primes p>=T^2.
 Actual local prime masses and weighted Gaussian rows are internal.
@@ -1064,7 +1074,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records681 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records682 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -1183,7 +1193,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **17900 audited theorem/lemma declarations**. This
+- The project currently has **17910 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -30919,3 +30929,18 @@ WeightedPrimeMean assembles these facts. Its literal value is sum_{p in P} a(p)*
 The proved estimate is the PRIME-SUPPORTED case needed in the displayed convolution argument of Granville--Harper--Soundararajan. Their full Lemma 1 also states a von-Mangoldt/prime-power version; that more general statement is NOT claimed here. The actual multiplicative convolution, truncated Perron estimate, full dyadic Halasz transfer and logarithmic short-average assembly remain unfinished. T19.17 retains its explicit analytic input; original complete T1.7 remains unconditional. Coverage stays 164 proved, 1 conditional, 2 in_progress out of 167; all 73 main results proved. Original false scopes and checked corrections are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and allowed axioms are unchanged. Ubuntu retains about 54.2 GiB; no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17933 jobs); direct axiom audit passed for 17900 declarations using only propext, Classical.choice and Quot.sound; all 17922 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.23 GiB.
+
+
+## Actual logarithmic prime convolution with a uniform reconstruction error
+
+MultiplicativeLogConvolution defines the literal summatory function over integers 1<=n<=X, its logarithmically weighted sum, the actual von-Mangoldt divisor convolution and the actual prime convolution. The function f is a monoid homomorphism from natural numbers to complex numbers, so its COMPLETE multiplicativity is explicit. The boundedness premise is |f(n)|<=1 for every positive integer; no conclusion about a convolution or mean is assumed.
+
+An exact finite image identity identifies multiples d*m in [1,X] with m in [1,floor(X/d)], with d>0. The exact finite von-Mangoldt divisor identity and complete multiplicativity then prove that the literal logarithmic sum equals the literal Mangoldt convolution, retaining all positive integer endpoints and quotient floors. The actual summatory norm is at most X.
+
+The difference between the Mangoldt and prime convolutions is EXACTLY the actual nonprime Mangoldt contribution. Its norm is <=X*PrimeLogMertens.primePowerTotal. This is the already internally proved finite, nonnegative total of the nonprime Mangoldt reciprocals; the present proof uses its proved summability and finite-sum bound, not an unspecified error constant. Separately, the actual logarithmic deficit has norm at most X, using the checked factorial logarithm inequality. Both estimates hold for every natural X, including zero.
+
+Consequently the literal prime reconstruction has error at most (1+primePowerTotal)*X before normalization. For X>=2, the ACTUAL norm of summatory(f,X)-primeConvolution(f,X)/log X is <=(1+primePowerTotal)*X/log X. All real-to-complex casts, positive logarithmic denominators and finite index changes are checked. One module adds ten theorems and four definitions.
+
+This closes the first prime-convolution reconstruction for COMPLETELY multiplicative functions, which includes the actual ordinary-smooth indicator. It is not a claim for every merely multiplicative function. Prime truncations, the second/triple convolution, actual Perron estimate, full dyadic Halasz transfer and logarithmic short-average assembly remain unfinished. The full prime-power weighted mean is also not claimed. T19.17 retains its explicit analytic input; original complete T1.7 remains unconditional. Coverage stays 164 proved, 1 conditional, 2 in_progress out of 167; all 73 main results proved. Original false scopes and checked corrections are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and allowed axioms are unchanged. Ubuntu retains about 54.2 GiB; no dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17935 jobs); direct axiom audit passed for 17910 declarations using only propext, Classical.choice and Quot.sound; all 17936 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.21 GiB.

@@ -6558,6 +6558,16 @@ import PaperP1
 #print axioms PaperP1.MultiAnchorWeightedSeries.finite_weight_identity
 #print axioms PaperP1.MultiAnchorWeightedSeries.weightedTerm_le
 #print axioms PaperP1.MultiAnchorWeightedSeries.weightedTotal_le
+#print axioms PaperP1.MultiplicativeLogConvolution.multiples_eq_image
+#print axioms PaperP1.MultiplicativeLogConvolution.multiples_sum
+#print axioms PaperP1.MultiplicativeLogConvolution.log_divisor_sum
+#print axioms PaperP1.MultiplicativeLogConvolution.logarithmic_eq_mangoldt
+#print axioms PaperP1.MultiplicativeLogConvolution.summatory_norm
+#print axioms PaperP1.MultiplicativeLogConvolution.mangoldt_sub_prime
+#print axioms PaperP1.MultiplicativeLogConvolution.prime_power_error
+#print axioms PaperP1.MultiplicativeLogConvolution.logarithmic_deficit
+#print axioms PaperP1.MultiplicativeLogConvolution.prime_reconstruction
+#print axioms PaperP1.MultiplicativeLogConvolution.normalized_prime_reconstruction
 #print axioms PaperP1.NinthDegreeUniformFieldCount.degree_square_le_profile
 #print axioms PaperP1.NinthDegreeUniformFieldCount.rational_geometric_count
 #print axioms PaperP1.NinthDegreeUniformFieldCount.rational_count

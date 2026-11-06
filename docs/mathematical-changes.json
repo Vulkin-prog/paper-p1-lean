@@ -32328,6 +32328,46 @@
         "status": "not_integrated"
       },
       "validation_commit": "d788ac00c27242e3a651624587fa7b463ad8dd0a"
+    },
+    {
+      "id": "P1-MATH-0684",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "A weighted-prime mean alone does not connect the original multiplicative summatory function to the actual prime polynomials. The logarithmic divisor identity, prime-power errors, quotient endpoints and normalization must be proved.",
+      "finding": "For actual completely multiplicative bounded complex functions, the exact Mangoldt convolution and internally controlled nonprime contribution give an actual prime-convolution reconstruction with uniform error <=(1+primePowerTotal)*X/log X.",
+      "proposed_revision": "Use this checked first convolution for the completely multiplicative ordinary-smooth indicator, then prove truncation, the second convolution and Perron transfer. Do not silently extend the statement to merely multiplicative functions.",
+      "impact": "Closes the first actual prime convolution and both its logarithmic and prime-power errors in the explicit completely multiplicative scope. Triple/Perron and T19.17 assembly remain unfinished.",
+      "evidence": [
+        "PaperP1.MultiplicativeLogConvolution.multiples_eq_image",
+        "PaperP1.MultiplicativeLogConvolution.multiples_sum",
+        "PaperP1.MultiplicativeLogConvolution.log_divisor_sum",
+        "PaperP1.MultiplicativeLogConvolution.logarithmic_eq_mangoldt",
+        "PaperP1.MultiplicativeLogConvolution.summatory_norm",
+        "PaperP1.MultiplicativeLogConvolution.mangoldt_sub_prime",
+        "PaperP1.MultiplicativeLogConvolution.prime_power_error",
+        "PaperP1.MultiplicativeLogConvolution.logarithmic_deficit",
+        "PaperP1.MultiplicativeLogConvolution.prime_reconstruction",
+        "PaperP1.MultiplicativeLogConvolution.normalized_prime_reconstruction",
+        "PaperP1.MultiplicativeLogConvolution.summatory",
+        "PaperP1.MultiplicativeLogConvolution.logarithmic",
+        "PaperP1.MultiplicativeLogConvolution.mangoldt",
+        "PaperP1.MultiplicativeLogConvolution.prime"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17935 jobs); direct axiom audit passed for 17910 declarations using only propext, Classical.choice and Quot.sound; all 17936 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.21 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
