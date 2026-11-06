@@ -3636,6 +3636,10 @@ import PaperP1
 #print axioms PaperP1.DampedDirichletTail.finite_tail_bound
 #print axioms PaperP1.DampedDirichletTail.tail_norm_bound
 #print axioms PaperP1.DampedDirichletTail.series_difference_bound
+#print axioms PaperP1.DampedFiniteEulerExtension.product_as_finite
+#print axioms PaperP1.DampedFiniteEulerExtension.unit_product_as_integrand
+#print axioms PaperP1.DampedFiniteEulerExtension.extend_zero
+#print axioms PaperP1.DampedFiniteEulerExtension.enlarged_fourth_power_bound
 #print axioms PaperP1.DampedLogarithmicIntegral.denominator_norm_lower
 #print axioms PaperP1.DampedLogarithmicIntegral.denominator_ne
 #print axioms PaperP1.DampedLogarithmicIntegral.numerator_norm

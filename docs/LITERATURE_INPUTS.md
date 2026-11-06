@@ -1,6 +1,15 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0886: The actual real prime Euler product can
+Current checkpoint P1-MATH-0887: A damped finite real Euler product
+admits comparison with every larger prime product. The triple-large
+prime frequency contribution, the central-frequency mean comparison and
+complete logarithmic short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 53.71 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0886: The actual real prime Euler product can
 be damped at a uniform proved cost. The triple-large prime frequency
 contribution, the central-frequency mean comparison and complete
 logarithmic short-average concentration remain unproved. T19.17
@@ -33914,6 +33923,12 @@ Four theorems and two definitions prove the exact damped real prime product and 
 
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
 
+## Internal a damped finite real euler product admits comparison with every larger prime product
+
+Four theorems and one definition identify the actual damped local weights p^(-sigma)/p, identify the unit product with the literal Dirichlet integrand, prove exact extension by zero coefficients, and establish |F_P(f,sigma,t)|^4<=exp(8)*|F_Q(1,sigma,0)|^3*|F_Q(1,sigma,2t)| for ANY finite prime sets P subset Q, sigma>=0 and real coefficients bounded by one on P. The explicit quadratic budget is <=1 for every Q, so the constant is independent of the enlargement. No infinite Euler-product comparison or tail bound is assumed.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -38096,3 +38111,14 @@ Four theorems and two definitions prove the exact damped real prime product and 
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.76 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18339 jobs); direct axiom audit passed for 18909 declarations using only propext, Classical.choice and Quot.sound; all 19153 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.72 GiB.
+
+
+## A damped finite real Euler product admits comparison with every larger prime product
+
+Stable ID: p1:internal:damped-finite-euler-extension. A damped finite real Euler product admits comparison with every larger prime product. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
+
+Four theorems and one definition identify the actual damped local weights p^(-sigma)/p, identify the unit product with the literal Dirichlet integrand, prove exact extension by zero coefficients, and establish |F_P(f,sigma,t)|^4<=exp(8)*|F_Q(1,sigma,0)|^3*|F_Q(1,sigma,2t)| for ANY finite prime sets P subset Q, sigma>=0 and real coefficients bounded by one on P. The explicit quadratic budget is <=1 for every Q, so the constant is independent of the enlargement. No infinite Euler-product comparison or tail bound is assumed.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.71 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18341 jobs); direct axiom audit passed for 18913 declarations using only propext, Classical.choice and Quot.sound; all 19158 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.70 GiB.
