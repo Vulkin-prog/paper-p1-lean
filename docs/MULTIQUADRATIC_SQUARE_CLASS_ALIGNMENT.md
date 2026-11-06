@@ -1,6 +1,15 @@
 # Multiquadratic split radicands: exact square-class independence
 
-Current checkpoint P1-MATH-0756: Actual relative Ramare quotient has an
+Current checkpoint P1-MATH-0757: Both actual relative Ramare quotients
+have a uniform negligible dyadic Dirichlet difference. The actual Ramare
+main-term frequency bounds and complete logarithmic short-average
+concentration remain unproved. T19.17 conditional; original T1.7
+unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167;
+all 73 main proved. Sources, false-scope corrections, compiler and
+axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download
+or Palomar registration.
+
+Historical checkpoint P1-MATH-0756: Actual relative Ramare quotient has an
 exact bounded residual coefficient. The actual Ramare main-term
 frequency bounds and complete logarithmic short-average concentration
 remain unproved. T19.17 conditional; original T1.7 unconditional.
@@ -25452,3 +25461,12 @@ The literal residual is 1-weight(P,n)*presence(Q,n). It lies in [0,1] for prime 
 The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18079 jobs); direct axiom audit passed for 18419 declarations using only propext, Classical.choice and Quot.sound; all 18571 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.93 GiB.
+
+
+## Both actual relative Ramare quotients have a uniform negligible dyadic Dirichlet difference
+
+For EVERY epsilon>0 one N0 precedes all N>=N0, all complete complex coefficient functions bounded on [N,2N), and every 0<T<=N. BOTH actual relative Ramare quotient differences, extracting either of the two proved prime bands and retaining the presence of the other band, have actual Dirichlet L2 error <=epsilon. The literal residual vanishes on the SAME actual two-band good population and is bounded by one, so the internally proved missing-density and support-square theorem apply. The actual band disjointness is established before either exact identity is used. One theorem proves the simultaneous approximation; the quotient main terms remain unbounded.
+
+The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18081 jobs); direct axiom audit passed for 18420 declarations using only propext, Classical.choice and Quot.sound; all 18572 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.91 GiB.

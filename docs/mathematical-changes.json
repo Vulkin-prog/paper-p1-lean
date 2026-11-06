@@ -34948,6 +34948,33 @@
         "status": "not_integrated"
       },
       "validation_commit": "4f76ace61df00d76a7f2d30d141f97a8a5fb8755"
+    },
+    {
+      "id": "P1-MATH-0757",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The exact simpler relative quotient must be shown to approximate the actual full dyadic polynomial, with one threshold and the same source population for BOTH extracted bands.",
+      "finding": "For EVERY epsilon>0 one N0 precedes all N>=N0, all complete complex coefficient functions bounded on [N,2N), and every 0<T<=N. BOTH actual relative Ramare quotient differences, extracting either of the two proved prime bands and retaining the presence of the other band, have actual Dirichlet L2 error <=epsilon. The literal residual vanishes on the SAME actual two-band good population and is bounded by one, so the internally proved missing-density and support-square theorem apply. The actual band disjointness is established before either exact identity is used. One theorem proves the simultaneous approximation; the quotient main terms remain unbounded.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Both actual relative Ramare quotients have a uniform negligible dyadic Dirichlet difference. The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.TwoBandRelativeApproximation.both_quotients_small_uniform"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18081 jobs); direct axiom audit passed for 18420 declarations using only propext, Classical.choice and Quot.sound; all 18572 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.91 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

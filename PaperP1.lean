@@ -4696,3 +4696,4 @@ public import PaperP1.Analysis.PrimePresence
 public import PaperP1.Analysis.CommonPresenceWeightedSum
 public import PaperP1.Analysis.RelativePrimeRamare
 public import PaperP1.Analysis.RelativeRamareRemainder
+public import PaperP1.Analysis.TwoBandRelativeApproximation

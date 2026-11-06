@@ -5045,6 +5045,7 @@ import PaperP1
 #print axioms PaperP1.TwoBandDirichletApproximation.first_identity
 #print axioms PaperP1.TwoBandDirichletApproximation.second_identity
 #print axioms PaperP1.TwoBandDirichletApproximation.both_quotients_small_uniform
+#print axioms PaperP1.TwoBandRelativeApproximation.both_quotients_small_uniform
 #print axioms PaperP1.TwoPrimeBandPopulation.good_subset
 #print axioms PaperP1.TwoPrimeBandPopulation.good_support
 #print axioms PaperP1.TwoPrimeBandPopulation.missing_good_density_tendsto
