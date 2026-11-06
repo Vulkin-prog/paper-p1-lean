@@ -4597,3 +4597,6 @@ public import PaperP1.Analysis.PrimeBandDiscreteMoments
 public import PaperP1.Arithmetic.PrimeAvoidanceSieve
 public import PaperP1.Arithmetic.PrimeDivisibilityMoments
 public import PaperP1.Asymptotics.SlowPrimeBandSieve
+public import PaperP1.Analysis.RamareRemainderMeanValue
+public import PaperP1.Analysis.SupportedCoefficientSquareBudget
+public import PaperP1.Arithmetic.RamareWeights

@@ -31738,6 +31738,53 @@
         "status": "not_integrated"
       },
       "validation_commit": "74dd2144c13966851f4e647e3765260a39c81841"
+    },
+    {
+      "id": "P1-MATH-0670",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The exact retained-support identity still needed a full-support decomposition accounting for prime-free and squared-prime cases, and actual negligible exception cardinalities had not yet been transported to a uniform frequency L2 residual.",
+      "finding": "The actual quotient weight lies in [0,1], equals one on good support and gives an exact full-support remainder identity. Exact support-square budgets and the internal mean-value theorem make that residual uniformly negligible for all bounded coefficients and 0<T<=N.",
+      "proposed_revision": "Use the full weighted identity and its proved residual bound. Keep the literal coupled quotient condition and establish the subsequent twisted-polynomial identity and analytic factorization/short-average estimates separately.",
+      "impact": "Proves the full weighted Ramare decomposition and actual uniform negligible residual Dirichlet mean square. It does not prove the coupled-domain frequency estimate or discharge T19.17.",
+      "evidence": [
+        "PaperP1.RamareRemainderMeanValue.coefficient_norm_le_one",
+        "PaperP1.RamareRemainderMeanValue.coefficient_good_zero",
+        "PaperP1.RamareRemainderMeanValue.remainder_small_uniform",
+        "PaperP1.SupportedCoefficientSquareBudget.constant_pos",
+        "PaperP1.SupportedCoefficientSquareBudget.term_bound",
+        "PaperP1.SupportedCoefficientSquareBudget.support_square_budget",
+        "PaperP1.SupportedCoefficientSquareBudget.supported_mean_square",
+        "PaperP1.SupportedCoefficientSquareBudget.supported_uniform_bound",
+        "PaperP1.RamareWeights.weight_nonneg",
+        "PaperP1.RamareWeights.quotient_count_ge",
+        "PaperP1.RamareWeights.weight_le_one",
+        "PaperP1.RamareWeights.weight_eq_one",
+        "PaperP1.RamareWeights.weighted_identity",
+        "PaperP1.RamareWeights.weighted_ramare_sum",
+        "PaperP1.RamareWeights.full_ramare_with_remainder",
+        "PaperP1.RamareWeights.residual_nonneg",
+        "PaperP1.RamareWeights.residual_le_one",
+        "PaperP1.RamareWeights.residual_good_zero",
+        "PaperP1.RamareRemainderMeanValue.coefficient",
+        "PaperP1.SupportedCoefficientSquareBudget.constant",
+        "PaperP1.RamareWeights.weight"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17885 jobs); direct axiom audit passed for 17743 declarations using only propext, Classical.choice and Quot.sound; all 17731 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.48 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

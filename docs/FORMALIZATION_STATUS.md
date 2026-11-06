@@ -1,6 +1,17 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0669: the ACTUAL prime band
+Current checkpoint P1-MATH-0670: the FULL weighted Ramare identity
+is EXACT on arbitrary actual finite positive support. Its residual
+lies in [0,1] and vanishes on the proved good dyadic set. Actual
+support-square budgets prove a UNIFORM negligible Dirichlet L2
+residual for all bounded coefficients and 0<T<=N. Coupled-domain
+frequency control and logarithmic short-average assembly remain
+unfinished. T19.17 stays conditional; original T1.7 is complete.
+Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main
+results proved. False scopes and checked corrections unchanged.
+No Palomar registration.
+
+Historical checkpoint P1-MATH-0669: the ACTUAL prime band
 log log N<p<=log N has proved divergent reciprocal mass and
 negligible prime-free and square-divisor exceptions. The retained
 dyadic set has density 1-o(1), and its Ramare quotient identity is
@@ -916,7 +927,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records667 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records668 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -1035,7 +1046,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **17725 audited theorem/lemma declarations**. This
+- The project currently has **17743 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -30577,3 +30588,16 @@ For EVERY fixed a>0, all primes in this actual band are <=floor(N^a) eventually,
 These results close a concrete slowly growing factor-rich support construction. They do not prove multiplicative short-average concentration. Transport of omitted-support errors, stronger large-value estimates, handling the coupled quotient domain and the logarithmic short-average assembly remain unfinished. T19.17 keeps its explicit analytic input. Original T1.7 remains complete and unconditional. Coverage stays 164 proved, 1 conditional, 2 in_progress out of 167; all 73 main results proved. Original false scopes and checked corrected replacements are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and allowed axioms are unchanged. Ubuntu retains about 54.5 GiB; no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17879 jobs); direct axiom audit passed for 17725 declarations using only propext, Classical.choice and Quot.sound; all 17710 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.51 GiB.
+
+
+## Full weighted Ramare decomposition and a uniform negligible Dirichlet remainder
+
+RamareWeights defines the literal weight w_P(n)=sum_{p in P,p|n}1/(1+count_P(n/p)). For EVERY finite prime set and EVERY natural n it proves 0<=w_P(n)<=1, including prime-free and squared-prime cases. The actual count on a quotient plus one is at least the original count. On positive-count squarefree support the weight equals one. For every completely multiplicative complex f, the exact weighted factorization and exact finite quotient summation are proved. The full sum over any actual finite positive support S<=X equals the literal quotient sum plus sum_{n in S}(1-w_P(n))*f(n). The quotient condition p*m in S is preserved. No squarefree assumption is used in this full identity.
+
+The actual residual 1-w lies in [0,1] and vanishes on the concrete good dyadic set from P1-MATH-0669. SupportedCoefficientSquareBudget proves a general exact-support coefficient estimate: for bounded complex coefficients on S subset [N,2N), vanishing outside actual E subset S, sum|a_n/n|^2<=|E|/N^2. The already internal Dirichlet mean-value theorem gives the corresponding actual frequency integral. In the range 0<T<=N this is at most C*|E|/N for the explicit positive constant C=exp(1)*(sqrt(pi)+4*pi).
+
+RamareRemainderMeanValue defines the actual residual complex coefficient (1-w_P(n))*a_n, proves its norm is at most one for |a_n|<=1 and proves it vanishes on the actual good set. The already proved missing-support density zero then gives: for EVERY epsilon>0 there is ONE N0>=1 before all N>=N0, all complex coefficient functions bounded on [N,2N), and all 0<T<=N, such that the actual [-T,T] square integral of the Dirichlet polynomial with these residual coefficients is <=epsilon. All support, coefficient and frequency estimates are internal; no residual-smallness, sieve or mean-value proposition is supplied as a premise. Three modules add eighteen theorems and three definitions.
+
+This closes the full weighted Ramare identity and uniform Dirichlet mean-square control of the actual slow-band residual. It does not yet factor the coupled quotient domain or establish logarithmic multiplicative short-average decay. Identifying the literal twisted quotient polynomial with the full Dirichlet difference, stronger large values, quotient-domain handling and short-average assembly remain unfinished. T19.17 retains its explicit analytic input. Complete original T1.7 remains unconditional. Coverage stays 164 proved, 1 conditional, 2 in_progress out of 167; all 73 main results proved. Original false scopes and checked corrected replacements are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Ubuntu retains about 54.5 GiB; no dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17885 jobs); direct axiom audit passed for 17743 declarations using only propext, Classical.choice and Quot.sound; all 17731 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.48 GiB.
