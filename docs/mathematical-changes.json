@@ -41608,6 +41608,47 @@
         "status": "not_integrated"
       },
       "validation_commit": "08f472f05c77c9e0abf8fec6064773bb8166e8c2"
+    },
+    {
+      "id": "P1-MATH-0968",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "Internal scale choices for the actual Gaussian comparison; no concentration input is postulated.",
+      "finding": "Eleven theorems and four definitions choose short width (log(N)/(D*N))^2, long width (ceil(N/sqrt(log(N)))/N)^2 and height D*sqrt(L)*N/log(N). Both widths are positive after N>=2 and tend to zero, with eventual short<=long order. The actual Gaussian budget simplifies to sqrt(pi)*D/log(N)+4*pi and has a uniform bound after log(N)>=D. The exact damping-height product is L, the height tends to infinity and the actual central error tends to zero. Every rounding, scale and quantifier is retained.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Actual logarithmic Gaussian scales have proved limits order and quantitative budgets. The actual off-central Dirichlet estimate and the ordinary smooth long-interval mean comparison are proved. The analytic comparison with logarithmic short averages remains unproved, so T19.17 remains conditional. The stronger uniform short-average theorem for all real completely multiplicative functions is not established.",
+      "evidence": [
+        "PaperP1.GaussianLogarithmicScales.shortWidth_pos",
+        "PaperP1.GaussianLogarithmicScales.longWidth_pos",
+        "PaperP1.GaussianLogarithmicScales.logarithmic_ratio_tendsto",
+        "PaperP1.GaussianLogarithmicScales.shortWidth_tendsto",
+        "PaperP1.GaussianLogarithmicScales.longWidth_tendsto",
+        "PaperP1.GaussianLogarithmicScales.eventual_order",
+        "PaperP1.GaussianLogarithmicScales.budget_identity",
+        "PaperP1.GaussianLogarithmicScales.budget_bound",
+        "PaperP1.GaussianLogarithmicScales.height_product",
+        "PaperP1.GaussianLogarithmicScales.height_tendsto",
+        "PaperP1.GaussianLogarithmicScales.central_error_tendsto",
+        "PaperP1.GaussianLogarithmicScales.shortWidth",
+        "PaperP1.GaussianLogarithmicScales.longWidth",
+        "PaperP1.GaussianLogarithmicScales.height",
+        "PaperP1.GaussianLogarithmicScales.uniformBudget"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18503 jobs); direct axiom audit passed for 19237 declarations using only propext, Classical.choice and Quot.sound; all 19549 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.19 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

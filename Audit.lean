@@ -4300,6 +4300,17 @@ import PaperP1
 #print axioms PaperP1.GaussianLaplaceKernel.vertical_norm
 #print axioms PaperP1.GaussianLaplaceKernel.vertical_ne_zero
 #print axioms PaperP1.GaussianLaplaceKernel.kernel_complex_formula
+#print axioms PaperP1.GaussianLogarithmicScales.shortWidth_pos
+#print axioms PaperP1.GaussianLogarithmicScales.longWidth_pos
+#print axioms PaperP1.GaussianLogarithmicScales.logarithmic_ratio_tendsto
+#print axioms PaperP1.GaussianLogarithmicScales.shortWidth_tendsto
+#print axioms PaperP1.GaussianLogarithmicScales.longWidth_tendsto
+#print axioms PaperP1.GaussianLogarithmicScales.eventual_order
+#print axioms PaperP1.GaussianLogarithmicScales.budget_identity
+#print axioms PaperP1.GaussianLogarithmicScales.budget_bound
+#print axioms PaperP1.GaussianLogarithmicScales.height_product
+#print axioms PaperP1.GaussianLogarithmicScales.height_tendsto
+#print axioms PaperP1.GaussianLogarithmicScales.central_error_tendsto
 #print axioms PaperP1.GaussianOverlap.heat_nonneg
 #print axioms PaperP1.GaussianOverlap.heat_integrable
 #print axioms PaperP1.GaussianOverlap.heat_mass

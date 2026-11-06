@@ -1,6 +1,18 @@
 # Multiquadratic split radicands: exact square-class independence
 
-Current checkpoint P1-MATH-0967: Actual Gaussian comparison energy
+Current checkpoint P1-MATH-0968: Actual logarithmic Gaussian scales have
+proved limits order and quantitative budgets. The actual off-central
+Dirichlet estimate and the ordinary smooth long-interval mean comparison
+are proved. The analytic comparison with logarithmic short averages
+remains unproved, so T19.17 remains conditional. The stronger uniform
+short-average theorem for all real completely multiplicative functions
+is not established. T19.17 conditional; original T1.7 unconditional.
+Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main
+proved. Sources, false-scope corrections, compiler and axioms unchanged.
+About 52.20 GiB free on Ubuntu. No dependency download or Palomar
+registration.
+
+Historical checkpoint P1-MATH-0967: Actual Gaussian comparison energy
 reduces to proved central off-central and tail terms. The actual off-
 central Dirichlet estimate and the ordinary smooth long-interval mean
 comparison are proved. The analytic comparison with logarithmic short
@@ -29301,3 +29313,12 @@ One theorem proves that the whole actual dyadic Gaussian-difference energy is at
 The actual off-central Dirichlet estimate and the ordinary smooth long-interval mean comparison are proved. The analytic comparison with logarithmic short averages remains unproved, so T19.17 remains conditional. The stronger uniform short-average theorem for all real completely multiplicative functions is not established. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.24 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18501 jobs); direct axiom audit passed for 19226 declarations using only propext, Classical.choice and Quot.sound; all 19534 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.21 GiB.
+
+
+## Actual logarithmic Gaussian scales have proved limits order and quantitative budgets
+
+Eleven theorems and four definitions choose short width (log(N)/(D*N))^2, long width (ceil(N/sqrt(log(N)))/N)^2 and height D*sqrt(L)*N/log(N). Both widths are positive after N>=2 and tend to zero, with eventual short<=long order. The actual Gaussian budget simplifies to sqrt(pi)*D/log(N)+4*pi and has a uniform bound after log(N)>=D. The exact damping-height product is L, the height tends to infinity and the actual central error tends to zero. Every rounding, scale and quantifier is retained.
+
+The actual off-central Dirichlet estimate and the ordinary smooth long-interval mean comparison are proved. The analytic comparison with logarithmic short averages remains unproved, so T19.17 remains conditional. The stronger uniform short-average theorem for all real completely multiplicative functions is not established. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.20 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18503 jobs); direct axiom audit passed for 19237 declarations using only propext, Classical.choice and Quot.sound; all 19549 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.19 GiB.
