@@ -30569,6 +30569,52 @@
         "status": "not_integrated"
       },
       "validation_commit": "18883109b6c8d1547d0c6f248f5fa8262db539b4"
+    },
+    {
+      "id": "P1-MATH-0640",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The common integral source had not yet been identified with the exact chosen Veronese projection coordinates and its rational-to-prime-field generator transport.",
+      "finding": "Every original monomial, radical, primitive combination and power parameter has an explicit integral lift. Their actual field images equal all four original projection coordinates, with exact index transport and unchanged rational coefficients.",
+      "proposed_revision": "Use these proved integral coordinate lifts when reducing the original projected polynomial. Keep the actual polynomial relation, reduced full-rank conductor argument and effective prime budget as separate explicit obligations until proved.",
+      "impact": "Discharges the exact chosen projection-coordinate identification in every field. The projected polynomial relation and reduced primitive/conductor verification remain unfinished; canonical T1.7 is unchanged.",
+      "evidence": [
+        "PaperP1.IntegralSourceProjectionCoordinates.fieldIndex_self",
+        "PaperP1.IntegralSourceProjectionCoordinates.fieldIndex_generator",
+        "PaperP1.IntegralSourceProjectionCoordinates.integralGenerator_base",
+        "PaperP1.IntegralSourceProjectionCoordinates.integralGenerator_radical",
+        "PaperP1.IntegralSourceProjectionCoordinates.coefficientMap_X",
+        "PaperP1.IntegralSourceProjectionCoordinates.coefficientMap_C_X",
+        "PaperP1.IntegralSourceProjectionCoordinates.generator_compatibility",
+        "PaperP1.IntegralSourceProjectionCoordinates.primitive_expansion",
+        "PaperP1.IntegralSourceProjectionCoordinates.primitive_compatibility",
+        "PaperP1.IntegralSourceProjectionCoordinates.parameter_compatibility",
+        "PaperP1.IntegralSourceProjectionCoordinates.coordinates_compatibility",
+        "PaperP1.NativeAffineMonomialCoordinates.specialization_X0",
+        "PaperP1.NativeAffineMonomialCoordinates.specialization_X1",
+        "PaperP1.NativeAffineMonomialCoordinates.specialization_monomial",
+        "PaperP1.NativeAffineMonomialCoordinates.specialization_X",
+        "PaperP1.IntegralSourceProjectionCoordinates.fieldIndex",
+        "PaperP1.IntegralSourceProjectionCoordinates.integralGenerator",
+        "PaperP1.IntegralSourceProjectionCoordinates.integralPrimitive",
+        "PaperP1.IntegralSourceProjectionCoordinates.integralParameters",
+        "PaperP1.IntegralSourceProjectionCoordinates.integralCoordinates"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17765 jobs); direct axiom audit passed for 17452 declarations using only propext, Classical.choice and Quot.sound; all 17371 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.05 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

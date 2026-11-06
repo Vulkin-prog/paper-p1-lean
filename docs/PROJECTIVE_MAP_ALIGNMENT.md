@@ -1,6 +1,18 @@
 # Actual projective scheme map
 
-Current checkpoint P1-MATH-0639: ONE literal integral split-radical source
+Current checkpoint P1-MATH-0640: EVERY actual chosen projection coordinate
+has a literal integral lift compatible with EVERY coefficient field.
+This includes base monomials, radical roots, the original primitive
+combination and the exact Y^D,X^D,1 power parameters. Rational index
+self-transport is the identity. The chosen coordinate-identification step
+is DISCHARGED. Transfer of the projected polynomial relation, reduced
+full-rank primitive/conductor verification and effective prime budgets
+remain UNPROVED. Canonical T1.7 retains ONLY its prior P3 input in
+degrees>2 at the original families and caps. Coverage stays 163 proved,
+2 conditional, 2 in_progress out of 167; all 73 main results proved.
+No Palomar registration.
+
+Historical checkpoint P1-MATH-0639: ONE literal integral split-radical source
 has faithful rational specialization and exact reduction kernel (p). Its
 quotient by (p) is the ACTUAL prime-field source, preserving base and
 radical coordinates. Every integral relation detected over Q is zero
@@ -22227,3 +22239,14 @@ IntegralSplitRadicalReduction proves these maps injective into every characteris
 Two modules add fourteen theorems and seven definitions. The affine integral-source reduction and transfer of integral source relations are now DISCHARGED. Explicit identification of the original chosen projected coordinates and integral projected equation is still needed to apply this transfer to that projection. Reduced conductor verification, the full-rank primitive argument and effective uniform prime budgets also remain unfinished. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families/caps. Coverage remains 163 proved, 2 conditional, 2 in_progress out of 167; all 73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Work stays on Ubuntu with about 55.1 GiB available and no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17761 jobs); direct axiom audit passed for 17437 declarations using only propext, Classical.choice and Quot.sound; all 17351 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.07 GiB.
+
+
+## Literal integral lifts of every chosen projection coordinate compatible with all fields
+
+NativeAffineMonomialCoordinates proves the actual native chart sends the original variables to Y, X and 1 in their correct order, and sends every original base monomial to the exact corresponding affine monomial. IntegralSourceProjectionCoordinates constructs the actual equivalence between rational and arbitrary-field generator indices, and proves that rational self-transport is the identity. Every literal chosen source generator is lifted to the common integral source by an explicit base monomial or radical root. The image of each lift in EVERY coefficient field is exactly its actual native-chart generator.
+
+The chosen primitive linear combination is lifted with its original bounded NATURAL INTEGER coefficients. Expanding the actual primitive definition and transporting the finite sum along the actual index equivalence proves exact primitive compatibility over every field. The power parameters are lifted in their original order as Y^D, X^D and 1. The complete four-coordinate projection is then lifted integrally and proved compatible with the ACTUAL original source power parameters and primitive coordinate over every field. There is no assumed generator, primitive, parameter or projection-coordinate compatibility premise. The equation-list identity remains the literal homogeneous source definition.
+
+Two modules add fifteen theorems and five definitions. This discharges explicit integral identification of the chosen projection coordinates. Transfer of the actual integer projected polynomial relation, the full-rank reduced primitive/conductor argument and effective uniform arithmetic prime budgets remain unfinished. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families/caps. Coverage remains 163 proved, 2 conditional, 2 in_progress out of 167; all 73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Work stays on Ubuntu with about 55.1 GiB available and no dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17765 jobs); direct axiom audit passed for 17452 declarations using only propext, Classical.choice and Quot.sound; all 17371 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.05 GiB.
