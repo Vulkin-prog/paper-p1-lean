@@ -3873,6 +3873,13 @@ import PaperP1
 #print axioms PaperP1.FinalPrimeBandGeometry.upper_tendsto
 #print axioms PaperP1.FinalPrimeBandGeometry.geometry_eventually
 #print axioms PaperP1.FinalPrimeBandGeometry.harmonic_gap_tendsto
+#print axioms PaperP1.FinalPrimeBandSieve.upper_rpow
+#print axioms PaperP1.FinalPrimeBandSieve.upper_square_identity
+#print axioms PaperP1.FinalPrimeBandSieve.upper_square_tendsto
+#print axioms PaperP1.FinalPrimeBandSieve.reciprocal_mass_tendsto
+#print axioms PaperP1.FinalPrimeBandSieve.missing_good_density_tendsto
+#print axioms PaperP1.FinalPrimeBandSieve.second_separation_eventually
+#print axioms PaperP1.FinalPrimeBandSieve.disjoint_second_eventually
 #print axioms PaperP1.FiniteAbelNorm.partialSum_succ
 #print axioms PaperP1.FiniteAbelNorm.finite_identity
 #print axioms PaperP1.FiniteAbelNorm.telescoping

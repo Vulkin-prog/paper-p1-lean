@@ -1,6 +1,15 @@
 # Multiquadratic split radicands: exact square-class independence
 
-Current checkpoint P1-MATH-0812: A final prime band has divergent
+Current checkpoint P1-MATH-0813: The actual final prime band has
+vanishing sieve loss and is separated from the second band. The joint
+large-prime frequency contribution, the central-frequency mean
+comparison and complete logarithmic short-average concentration remain
+unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164
+proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources,
+false-scope corrections, compiler and axioms unchanged. About 51.92 GiB
+free on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0812: A final prime band has divergent
 endpoints and a divergent harmonic gap. The joint large-prime frequency
 contribution, the central-frequency mean comparison and complete
 logarithmic short-average concentration remain unproved. T19.17
@@ -26469,3 +26478,12 @@ Define the ACTUAL final prime band by exp(log N/log(log N)) < p <= exp(log N/B).
 The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.92 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18191 jobs); direct axiom audit passed for 18619 declarations using only propext, Classical.choice and Quot.sound; all 18813 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.92 GiB.
+
+
+## The actual final prime band has vanishing sieve loss and is separated from the second band
+
+For every fixed integer B>=32, the ACTUAL final upper endpoint is N^(1/B), its square divided by N is EXACTLY 1/N^(1-2/B) and tends to zero. The actual final prime reciprocal mass tends to infinity, and integers in the dyadic interval failing its prime-divisor and square-exclusion conditions have density tending to zero. The final lower endpoint is eventually strictly ABOVE the entire second prime band, so the ACTUAL second and final prime sets are eventually disjoint. Seven theorems prove the sieve and separation statements. No prime Halasz bound or jointly-large frequency estimate is assumed or claimed.
+
+The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.92 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18193 jobs); direct axiom audit passed for 18626 declarations using only propext, Classical.choice and Quot.sound; all 18820 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.90 GiB.
