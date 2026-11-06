@@ -4471,3 +4471,8 @@ public import PaperP1.Diophantine.GraphPlaneAverageUpperBound
 public import PaperP1.Diophantine.GraphPlaneCoarsePointCount
 public import PaperP1.Diophantine.GraphPlaneIncidence
 public import PaperP1.Diophantine.GraphPlanePointCounts
+public import PaperP1.Algebra.AlgClosedPolynomialIrreducibility
+public import PaperP1.Analysis.SquareRootPointErrorThreshold
+public import PaperP1.Arithmetic.P3ClassicalPlanePointInputs
+public import PaperP1.Arithmetic.P3PointEstimateFromPlaneInputs
+public import PaperP1.Asymptotics.UniformGeometricCountsPlaneInputs

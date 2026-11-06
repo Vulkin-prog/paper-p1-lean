@@ -447,6 +447,7 @@ import PaperP1
 #print axioms PaperP1.AffineSurfaceDeterminant.nilpotent_dvd
 #print axioms PaperP1.AffineSurfaceDeterminant.integer_dvd_last
 #print axioms PaperP1.AffineSurfaceDeterminant.integer_dvd
+#print axioms PaperP1.AlgClosedPolynomialIrreducibility.map_irreducible_iff
 #print axioms PaperP1.AllPairPolynomialExpansion.complement_generator
 #print axioms PaperP1.AllPairPolynomialExpansion.source_expansion
 #print axioms PaperP1.AllPairPolynomialExpansion.all_pair_expansion
@@ -4095,6 +4096,7 @@ import PaperP1
 #print axioms PaperP1.SmoothSaddleLoss.finite_loss_upper
 #print axioms PaperP1.SmoothSaddleLoss.normalized_majorant_limit
 #print axioms PaperP1.SmoothSaddleLoss.eventual_loss_bound
+#print axioms PaperP1.SquareRootPointErrorThreshold.exists_threshold
 #print axioms PaperP1.SquareRootReciprocalUpper.exp_half_le_two
 #print axioms PaperP1.SquareRootReciprocalUpper.linear_prefactor
 #print axioms PaperP1.SquareRootReciprocalUpper.small_pivot_bound
@@ -6348,6 +6350,9 @@ import PaperP1
 #print axioms PaperP1.P3LinearNoetherForms.exists_forms
 #print axioms PaperP1.P3LinearNoetherForms.card_forms
 #print axioms PaperP1.P3LinearNoetherForms.uniform_auxiliary_one
+#print axioms PaperP1.P3PointEstimateFromPlaneInputs.error_constants
+#print axioms PaperP1.P3PointEstimateFromPlaneInputs.uniform_estimate
+#print axioms PaperP1.P3PointEstimateFromPlaneInputs.uniform_auxiliary
 #print axioms PaperP1.P3QuadricFiniteFieldCertificate.uniform_budget
 #print axioms PaperP1.P3QuadricFiniteFieldCertificate.of_degree_le_two
 #print axioms PaperP1.P3QuadricFiniteFieldCertificate.uniform_auxiliary
@@ -11554,6 +11559,9 @@ import PaperP1
 #print axioms PaperP1.UniformGeometricCountsP3SourceInput.source_cover
 #print axioms PaperP1.UniformGeometricCountsP3SourceInput.surface_hypotheses
 #print axioms PaperP1.UniformGeometricCountsP3SourceInput.companion_T1_7
+#print axioms PaperP1.UniformGeometricCountsPlaneInputs.estimate_of_inputs
+#print axioms PaperP1.UniformGeometricCountsPlaneInputs.field_hypotheses
+#print axioms PaperP1.UniformGeometricCountsPlaneInputs.companion_T1_7
 #print axioms PaperP1.UniformGeometricCountsReducedInputs.companion_T1_7
 #print axioms PaperP1.UniformGeometricCountsSurfaceInputs.reduced_hypotheses
 #print axioms PaperP1.UniformGeometricCountsSurfaceInputs.companion_T1_7

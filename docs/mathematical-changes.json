@@ -29626,6 +29626,44 @@
         "status": "not_integrated"
       },
       "validation_commit": "3be2305689410c6ca4ffcf0682e6905f71c2169e"
+    },
+    {
+      "id": "P1-MATH-0618",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The actual plane-section averaging theorem still needed a literal derivation of the full uniform prime-field estimate, its threshold order and the complete original T1.7 assembly from independent lower-dimensional classical statements.",
+      "finding": "The exact surface estimate, full original global auxiliary theorem and an alternative complete T1.7 statement are proved from two explicit unproved classical propositions: a plane-curve p+O_d(sqrt(p)) bound and one geometric good-section existence theorem. All thresholds and degree-family caps are retained.",
+      "proposed_revision": "Expose the two classical plane ingredients separately, then use the proved Noether exceptional-count, actual incidence, bad-section coarse bound and explicit error threshold. State the alternative dependency boundary separately; do not call either classical ingredient proved.",
+      "impact": "Completes the full checked reduction of the remaining surface-count input to precise classical curve and section statements. Both remain unproved, and the canonical one-input T1.7 boundary and coverage stay unchanged.",
+      "evidence": [
+        "PaperP1.AlgClosedPolynomialIrreducibility.map_irreducible_iff",
+        "PaperP1.SquareRootPointErrorThreshold.exists_threshold",
+        "PaperP1.P3PointEstimateFromPlaneInputs.error_constants",
+        "PaperP1.P3PointEstimateFromPlaneInputs.uniform_estimate",
+        "PaperP1.P3PointEstimateFromPlaneInputs.uniform_auxiliary",
+        "PaperP1.UniformGeometricCountsPlaneInputs.estimate_of_inputs",
+        "PaperP1.UniformGeometricCountsPlaneInputs.field_hypotheses",
+        "PaperP1.UniformGeometricCountsPlaneInputs.companion_T1_7",
+        "PaperP1.AlgClosedPolynomialIrreducibility.closureEquiv",
+        "PaperP1.P3ClassicalPlanePointInputs.PlaneCurveUpperBound",
+        "PaperP1.P3ClassicalPlanePointInputs.GoodGraphSection",
+        "PaperP1.UniformGeometricCountsPlaneInputs.Hypotheses"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17633 jobs); direct axiom audit passed for 17166 declarations using only propext, Classical.choice and Quot.sound; all 17014 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 5.80 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

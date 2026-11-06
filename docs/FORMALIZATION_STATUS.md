@@ -1,6 +1,18 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0617: an ACTUAL incidence bijection proves
+Current checkpoint P1-MATH-0618: the full actual uniform surface point
+estimate and an ALTERNATIVE complete T1.7 theorem are proved from TWO explicit
+UNPROVED classical plane inputs: p+O_d(sqrt(p)) for actual irreducible plane
+curves, and ONE geometric good graph-plane section of every original surface.
+The error constants/thresholds and all original degree families/caps are exact.
+Neither classical proposition is asserted or treated as proved.
+Canonical T1.7 remains `UniformGeometricCountsFieldEstimateInput.companion_T1_7`
+with ONLY its prior surface point-estimate input in actual degrees>2. The
+alternative two-input boundary is recorded SEPARATELY; no input is discharged.
+Coverage stays163 proved,2 conditional,2 in_progress out of167; all73 main
+results proved. No Palomar registration.
+
+Historical checkpoint P1-MATH-0617: an ACTUAL incidence bijection proves
 sum_a card(planeSectionZeros)=card(originalSurfaceZeros)*q^2. Original canonical
 classes inject into those literal points. Every section of a geometrically
 irreducible homogeneous equation of degree>1 is nonzero and has<=d*q points.
@@ -306,7 +318,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records615 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records616 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -425,7 +437,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **17158 audited theorem/lemma declarations**. This
+- The project currently has **17166 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -29309,3 +29321,20 @@ The ONE geometric good-section witness and the point bounds for geometrically ir
 Six modules add twenty-seven theorems and four definitions. Coverage stays163 proved,2 conditional,2 in_progress out of167, including all73 main results proved. The separate T19.17 input and two literal false-original scopes are unchanged. Original manuscript hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. All work remains on Ubuntu. Git compaction preserved all23802 object IDs and passed full integrity checking; about5.83GiB remain. No dependency download and no Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17623 jobs); direct axiom audit passed for 17158 declarations using only propext, Classical.choice and Quot.sound; all 17002 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 5.83 GiB.
+
+
+## Exact alternative T1.7 derivation from explicit plane-curve and geometric-section inputs
+
+AlgClosedPolynomialIrreducibility constructs the actual ring equivalence from an algebraically closed field to its canonical algebraic closure, using the checked algebraic-integral bijectivity theorem. It proves exact polynomial irreducibility equivalence under that canonical coefficient map. This converts a literal irreducible plane section over the algebraic closure to the precise geometric criterion, without an extra absolute-irreducibility hypothesis.
+
+SquareRootPointErrorThreshold proves an actual natural threshold from C>=0,E>=0 and eta>0. Every p above it satisfies C*p*sqrt(p)+E*p<=eta*p^2. The construction uses the explicit ceiling of 1+(2*C/eta)^2+2*E/eta; no asymptotic error premise or prime threshold is assumed.
+
+P3ClassicalPlanePointInputs defines TWO EXPLICIT UNPROVED classical propositions. PlaneCurveUpperBound d chooses C>=0 and a prime threshold BEFORE every prime and every actual homogeneous plane equation, giving at most p+C*sqrt(p) actual affine zeros for a geometrically irreducible degree-d curve. GoodGraphSection d chooses a threshold BEFORE every prime and every actual geometrically irreducible original surface, giving ONE literal irreducible graph-plane section over the canonical algebraic closure. Neither proposition contains an integer height certificate, original surface point bound, auxiliary equation or geometric cover. Neither is asserted globally or introduced as an axiom.
+
+P3PointEstimateFromPlaneInputs proves the FULL actual surface point estimate from precisely these two independent premises. The previously proved all-fields Noether specialization count chooses the actual bad-section constant before all fields and original polynomials. Literal incidence, nonzero bad sections and coarse bounds give p^2+C*p*sqrt(p)+E*p with C,E and the prime cutoff preceding every original surface. The proved error threshold and ORIGINAL canonical-class injection then yield EXACTLY P3FiniteFieldClassEstimate.UniformEstimate d for d>1. The complete original global auxiliary theorem follows by the already proved unconditional Noether/good-reduction and determinant construction. No original surface-count target is supplied as a premise.
+
+UniformGeometricCountsPlaneInputs assembles an ALTERNATIVE complete companionT1.7 derivation from these explicit curve and good-section propositions only in actual degrees>2. It retains EXACTLY the original three finite-degree families and their system/linear/typed caps. This alternative theorem is conditional because BOTH classical propositions remain UNPROVED. It does not replace or promote the canonical one-input theorem. Canonical T1.7 remains UniformGeometricCountsFieldEstimateInput.companion_T1_7, with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in remaining_unformalized_inputs. The alternative dependency boundary is recorded separately. No input is marked discharged.
+
+Five modules add eight theorems and four definitions, including the two raw hypothesis definitions and alternative hypothesis structure. Coverage stays163 proved,2 conditional,2 in_progress out of167, with all73 main results proved. The separate T19.17 analytic input and the two literal false-original scopes are unchanged. Manuscript hashes, Lean v4.36.0-rc2, checking options and allowed axioms are unchanged. Work remains on Ubuntu with about5.80GiB free, without dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17633 jobs); direct axiom audit passed for 17166 declarations using only propext, Classical.choice and Quot.sound; all 17014 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 5.80 GiB.
