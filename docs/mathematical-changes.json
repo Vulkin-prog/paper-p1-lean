@@ -32575,6 +32575,60 @@
         "status": "not_integrated"
       },
       "validation_commit": "81fe83e252bd39b4f594afc2a3e0b993b95f3d4a"
+    },
+    {
+      "id": "P1-MATH-0690",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The actual analytic band integral was not yet connected to integer cutoffs. A Perron-like kernel needs a proved Laplace identity, joint absolute integrability, justified integral interchange and exact Gaussian normalization.",
+      "finding": "An actual Gaussian-Laplace kernel has an internal Fubini identity, a real positive expression, exact Gaussian normalization and the bound 0<=kernel<=exp(b). Its vertical denominator has the exact norm sqrt(1+t^2) and is nonzero.",
+      "proposed_revision": "Use this actual convergent kernel to prove explicit Gaussian cutoff errors and transfer to the literal integer series/triple sum. Do not count the kernel identity as a completed Perron or short-average theorem.",
+      "impact": "Closes the actual normalized Gaussian-Laplace kernel, including convergence and both integral orders. Cutoff errors, integer/Perron transfer and T19.17 assembly remain unfinished.",
+      "evidence": [
+        "PaperP1.GaussianLaplaceKernel.laplace_eq_exp",
+        "PaperP1.GaussianLaplaceKernel.laplace_integrable",
+        "PaperP1.GaussianLaplaceKernel.laplace_integral",
+        "PaperP1.GaussianLaplaceKernel.joint_integrable",
+        "PaperP1.GaussianLaplaceKernel.joint_integral_right",
+        "PaperP1.GaussianLaplaceKernel.joint_integral_left",
+        "PaperP1.GaussianLaplaceKernel.raw_eq_real",
+        "PaperP1.GaussianLaplaceKernel.realKernel_nonneg",
+        "PaperP1.GaussianLaplaceKernel.raw_norm_eq_real",
+        "PaperP1.GaussianLaplaceKernel.gaussian_integrable",
+        "PaperP1.GaussianLaplaceKernel.gaussian_integral_real",
+        "PaperP1.GaussianLaplaceKernel.prefactor_pos",
+        "PaperP1.GaussianLaplaceKernel.gaussian_normalized",
+        "PaperP1.GaussianLaplaceKernel.kernel_completed_square",
+        "PaperP1.GaussianLaplaceKernel.kernel_nonneg",
+        "PaperP1.GaussianLaplaceKernel.kernel_le_exp",
+        "PaperP1.GaussianLaplaceKernel.raw_integrable",
+        "PaperP1.GaussianLaplaceKernel.vertical_norm",
+        "PaperP1.GaussianLaplaceKernel.vertical_ne_zero",
+        "PaperP1.GaussianLaplaceKernel.kernel_complex_formula",
+        "PaperP1.GaussianLaplaceKernel.vertical",
+        "PaperP1.GaussianLaplaceKernel.laplace",
+        "PaperP1.GaussianLaplaceKernel.joint",
+        "PaperP1.GaussianLaplaceKernel.rawKernel",
+        "PaperP1.GaussianLaplaceKernel.realKernel",
+        "PaperP1.GaussianLaplaceKernel.gaussian",
+        "PaperP1.GaussianLaplaceKernel.prefactor",
+        "PaperP1.GaussianLaplaceKernel.kernel"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17947 jobs); direct axiom audit passed for 17983 declarations using only propext, Classical.choice and Quot.sound; all 18035 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.10 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

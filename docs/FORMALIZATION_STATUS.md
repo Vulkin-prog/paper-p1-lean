@@ -1,6 +1,16 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0689: ACTUAL Cauchy-Schwarz and prime
+Current checkpoint P1-MATH-0690: the ACTUAL Gaussian-Laplace
+kernel has proved absolute integrability and a checked Fubini
+identity. Its real positive form, exact normalization and bound
+0<=kernel<=exp(b) are internal. Gaussian cutoff errors and the
+INTEGER/PERRON transfer, full Euler budget, final Halasz and
+short-average assembly remain UNPROVED. T19.17 conditional;
+original T1.7 complete. Coverage: 164 proved, 1 conditional,
+2 in_progress /167; all 73 main proved. False scopes/corrections
+unchanged. No Palomar registration.
+
+Historical checkpoint P1-MATH-0689: ACTUAL Cauchy-Schwarz and prime
 means bound the analytic prime-factor integral. Actual complementary
 band energies have a universal product bound, independent of the
 band. The triple-sum connection via PERRON, full EULER BUDGET,
@@ -1123,7 +1133,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records687 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records688 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -1242,7 +1252,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **17963 audited theorem/lemma declarations**. This
+- The project currently has **17983 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -31062,3 +31072,18 @@ Consequently the ACTUAL weighted factor integral on every such band is <=Cband*s
 This closes the analytic Cauchy-Schwarz factor integral and its uniform band energies. It does NOT yet connect that integral to the actual triple sum: the actual Perron estimate still needs proof. The relevant full Euler frequency budget, final Halasz estimate and logarithmic short-average assembly remain unfinished. The total combinatorial triple approximation remains proved. Complete multiplicativity is required only at its already explicit combinatorial stage; no merely multiplicative extension or full prime-power weighted mean is claimed. T19.17 remains conditional and original complete T1.7 unconditional. Coverage remains 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, source hashes, Lean v4.36.0-rc2 and allowed axioms are unchanged. Ubuntu has about 54.1 GiB free; no dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17945 jobs); direct axiom audit passed for 17963 declarations using only propext, Classical.choice and Quot.sound; all 18007 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.12 GiB.
+
+
+## Actual Gaussian-Laplace kernel with checked Fubini and positive normalization
+
+GaussianLaplaceKernel defines the ACTUAL vertical denominator 1+i*t, its Laplace integrand exp(-u)*phase(-u,t), and the joint Gaussian-Laplace integrand on real frequency times the positive half-line. The Laplace integrand is integrable and its ACTUAL integral is 1/(1+i*t). Joint absolute integrability is proved by domination with the literal product exp(-b*t^2)*exp(-u), for b>0. No Fubini or convergence premise is supplied.
+
+It computes both actual iterated integrals: integrating over the half-line gives the Gaussian frequency integrand divided by 1+i*t; integrating over frequency gives the checked Gaussian transform. Fubini consequently proves that the ACTUAL complex rawKernel equals the realKernel=sqrt(pi/b)*integral_{u>0}exp(-u)*exp(-(v-u)^2/(4b)). This real quantity is nonnegative, and equals the actual complex norm. Integrability of the original raw frequency integrand is also proved from the joint integral.
+
+The module defines the literal translated Gaussian exp(-(u-c)^2/(4b)), its prefactor sqrt(pi/b)/(2*pi), and the normalized kernel exp(v)/(2*pi)*realKernel. The translated Gaussian is integrable for b>0 and its whole integral has the exact checked value. The prefactor times that whole integral is exactly one. Completing the square proves kernel(b,v)=exp(b)*prefactor(b)*integral_{u>0}gaussian(b,v-2b,u), and thus 0<=kernel(b,v)<=exp(b), for every real v and b>0.
+
+Finally |1+i*t|=sqrt(1+t^2), the vertical denominator is nonzero, and the normalized real kernel has the exact complex raw-integral formula. Every real/complex cast, nonzero denominator, Gaussian normalization, translation and product measure is checked. One module adds twenty theorems and eight definitions, using existing pinned Mathlib sources and no dependency download.
+
+This closes the actual absolutely convergent Gaussian-Laplace kernel identity and its positive normalization. Gaussian tail/cutoff error bounds, transfer to the actual integer Dirichlet series or triple sum, and a full Perron estimate remain unfinished. The full relevant Euler frequency budget, final Halasz and logarithmic short-average assembly remain unfinished. The earlier combinatorial triple approximation and analytic band-factor bound remain proved. T19.17 remains conditional and original complete T1.7 unconditional. Coverage remains 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, source hashes, Lean v4.36.0-rc2 and allowed axioms are unchanged. Ubuntu has about 54.1 GiB free. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17947 jobs); direct axiom audit passed for 17983 declarations using only propext, Classical.choice and Quot.sound; all 18035 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.10 GiB.

@@ -4629,3 +4629,4 @@ public import PaperP1.Analysis.PrimeLogDiameter
 public import PaperP1.Arithmetic.PrimeTruncation
 public import PaperP1.Analysis.PrimeUnitMean
 public import PaperP1.Analysis.PrimeFactorCauchy
+public import PaperP1.Analysis.GaussianLaplaceKernel
