@@ -4832,3 +4832,4 @@ public import PaperP1.Analysis.PositiveZetaBound
 public import PaperP1.Analysis.UniformRealEulerSmallness
 public import PaperP1.Analysis.TranslatedFrequencyTail
 public import PaperP1.Analysis.LocalizedFrequencyBudget
+public import PaperP1.Analysis.UniformRealEulerBudget

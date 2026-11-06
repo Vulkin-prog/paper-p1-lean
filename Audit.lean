@@ -5524,6 +5524,7 @@ import PaperP1
 #print axioms PaperP1.TwoPrimeBandPopulation.second_ramare_sum
 #print axioms PaperP1.UniformBinaryLogBudget.monotone
 #print axioms PaperP1.UniformBinaryLogBudget.absorption
+#print axioms PaperP1.UniformRealEulerBudget.uniform_bound
 #print axioms PaperP1.UniformRealEulerSmallness.fourth_power_bound
 #print axioms PaperP1.UniformRealEulerSmallness.uniform_bound
 #print axioms PaperP1.UniformSaddleVariation.uniform_left_variation
