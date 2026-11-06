@@ -1611,6 +1611,7 @@ import PaperP1
 #print axioms PaperP1.HyperellipticAuxiliaryConstraints.candidate_ne_zero
 #print axioms PaperP1.HyperellipticAuxiliaryConstraints.target_cardinality
 #print axioms PaperP1.HyperellipticAuxiliaryConstraints.exists_nonzero_tensor
+#print axioms PaperP1.HyperellipticAuxiliaryDimensionGap.dimension_gap
 #print axioms PaperP1.HyperellipticFiniteCoordinates.zero_of_coefficients
 #print axioms PaperP1.HyperellipticFiniteCoordinates.extract_zero_iff
 #print axioms PaperP1.HyperellipticMonomialIndex.embed_injective
@@ -3589,6 +3590,8 @@ import PaperP1
 #print axioms PaperP1.HardSaddleReciprocalBounds.log_deficit_bounds
 #print axioms PaperP1.HardSaddleReciprocalBounds.uniform_normalized_bounds
 #print axioms PaperP1.HardSaddleReciprocalUpper.uniform_upper
+#print axioms PaperP1.HyperellipticAuxiliaryParameters.exists_parameters
+#print axioms PaperP1.HyperellipticAuxiliaryParameters.point_upper_arithmetic
 #print axioms PaperP1.InitialDeterminantShape.uniform_exp_comparison
 #print axioms PaperP1.InitialDeterminantShape.uniform_cost_comparison
 #print axioms PaperP1.IntegerProductTail.pairTerm_nonneg
@@ -5740,6 +5743,8 @@ import PaperP1
 #print axioms PaperP1.HyperellipticFiniteFieldPoints.cardinality_decomposition
 #print axioms PaperP1.HyperellipticFiniteFieldPoints.branch_card_le
 #print axioms PaperP1.HyperellipticFiniteFieldPoints.good_root
+#print axioms PaperP1.HyperellipticOddDegreePointEstimate.uniform_upper_bound
+#print axioms PaperP1.HyperellipticOddDegreePointEstimate.uniform_degree_cap
 #print axioms PaperP1.HyperellipticStepanovPointBound.good_cardinality_bound
 #print axioms PaperP1.HyperellipticStepanovPointBound.multiplicative_bound
 #print axioms PaperP1.HyperellipticStepanovPointBound.upper_bound

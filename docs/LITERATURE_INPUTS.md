@@ -1,6 +1,18 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0628: a genuine nonzero tangent auxiliary is
+Current checkpoint P1-MATH-0629: an UNCONDITIONAL actual point bound is
+proved for EVERY odd-degree quadratic equation y^2=f(x). For eta>0 a cutoff
+chosen BEFORE all primes and coefficient polynomials gives N<=(1+eta)*p.
+One cutoff covers every odd degree up to a fixed cap. Actual auxiliaries,
+dimension inequalities, tangent vanishings, multiplicities and thresholds
+are internal proofs; no general point-count or Riemann-Roch input is used.
+This does NOT prove a general plane-curve or P3 surface estimate. Absolute
+character cancellation, even split products and projected-P3 transfer still
+need proofs. Canonical T1.7 retains ONLY its prior P3 input in degrees>2
+at the original families/caps. Coverage stays163 proved,2 conditional,
+2 in_progress out of167; all73 main results proved. No Palomar registration.
+
+Historical checkpoint P1-MATH-0628: a genuine nonzero tangent auxiliary is
 constructed from the ACTUAL finite coefficient kernel under explicit NUMERICAL
 dimension inequalities and A<q. Coefficient reconstruction, nonzero candidates,
 Frobenius evaluation and actual tangent vanishings are proved internally.
@@ -29620,6 +29632,17 @@ without an auxiliary or point-count premise. Uniform large-prime parameter
 selection remains unproved, as do general cancellation and projected-P3
 transfer. Canonical input and coverage are unchanged.
 
+## Unconditional weak odd-degree quadratic-curve point estimate
+
+P1-MATH-0629 proves a literal uniform bound N<=(1+eta)*p for ALL odd-degree
+quadratic equations y^2=f(x), with one threshold before all primes and all
+coefficients for every bounded odd degree. Actual auxiliary existence,
+numerical dimensions and thresholds are internal proofs. No Weil, Lang-Weil
+or Riemann-Roch input is supplied. This is a weak relative-error estimate
+for the stated subclass. It does not discharge the general plane-curve or
+P3 input. Absolute character cancellation, even split products and
+source-to-projected-P3 transfer remain to be proved.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -30609,3 +30632,18 @@ HyperellipticTangentAuxiliary upgrades every literal point evaluation to an actu
 Five modules add fifteen theorems and nine definitions. The internal tangent-kernel, coordinate-reconstruction and auxiliary-evaluation construction gaps are now discharged under the exact numerical conditions. The required uniform large-prime PARAMETER CHOICE and dimension inequality still need proofs; a general higher-degree character estimate and the source-to-projected-P3 transfer are not claimed. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the original families/caps; its two-plane-input alternative remains conditional. Coverage stays163 proved,2 conditional,2 in_progress out of167; all73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and allowed axioms are unchanged. Work remains on Ubuntu with about55.3GiB available and no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17713 jobs); direct axiom audit passed for 17348 declarations using only propext, Classical.choice and Quot.sound; all 17231 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.28 GiB.
+
+
+## Unconditional uniform prime-field point bounds for every bounded odd-degree quadratic curve
+
+Stable ID: p1:internal:unconditional-odd-degree-quadratic-curve-point-estimate. Actual bounded odd-degree quadratic-curve point counts are now unconditional. This does not discharge the general plane or P3 inputs; canonical T1.7 is unchanged.
+
+HyperellipticAuxiliaryDimensionGap proves the ACTUAL numerical dimension inequality for A=p-1 andB=m+g, d=2g+1. The sufficient threshold is p>=g+m*(m+g)+m*(m-1)*(d-2)+1, together with m>=g+1 andp>=2g+2. The proof uses the exact bounded monomial counts and a proved upper bound for the complete tangent target; no dimension-gap premise remains at these parameters.
+
+HyperellipticAuxiliaryParameters chooses the multiplicitym and a natural prime cutoffK BEFORE every prime and every original polynomial, depending only ong andeta>0. The choice enforces all natural dimension, characteristic and multiplicity conditions, as well as (g+1)<=eta*m/2 andd<=eta*p/2 for EVERY p>=K. The explicit real arithmetic then proves ((p-1)+p*(m+g))/m+d<=(1+eta)*p.
+
+HyperellipticOddDegreePointEstimate assembles the complete UNCONDITIONAL bound for the ACTUAL affine points satisfying y^2=f(x). For every odd exact degree2g+1 and everyeta>0, a cutoff is chosen BEFORE all primes and all actual coefficient polynomials overF_p; every such equation above the cutoff has at most(1+eta)*p literal field points. A second theorem chooses one cutoff for ALL odd degrees up to a fixed capD. No squarefreeness premise is needed. The nonzero tangent auxiliary, its degree, its actual point vanishings, norm multiplicities, branch points and parameter choices are all proved internally. No Weil, Lang-Weil, Riemann-Roch, generic curve point estimate, auxiliary-existence or desired point-count conclusion is supplied as a hypothesis.
+
+Three modules add five theorems and no definitions. The internal uniform large-prime parameter and odd-degree quadratic-curve point-count gaps are now discharged. This is a WEAK relative-error estimate for actual odd-degree quadratic equations, not a square-root error theorem for all plane curves. Absolute character cancellation via twists, even-degree split products and the source-to-projected-P3 transfer still require proofs. Thus neither classical plane input of the alternative T1.7 route nor the canonical general P3 point input is discharged. Canonical T1.7 remains UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the original three families/caps. Coverage stays163 proved,2 conditional,2 in_progress out of167; all73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and allowed axioms are unchanged. All work remains on Ubuntu with about55.3GiB available and no dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17719 jobs); direct axiom audit passed for 17353 declarations using only propext, Classical.choice and Quot.sound; all 17236 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.26 GiB.

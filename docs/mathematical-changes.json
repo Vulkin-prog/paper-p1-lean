@@ -30152,6 +30152,37 @@
         "status": "not_integrated"
       },
       "validation_commit": "e6e1292544d2b47c942e630e04f18f2f8c82447d"
+    },
+    {
+      "id": "P1-MATH-0629",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The actual auxiliary construction still had numerical dimension premises, and no uniform prime cutoff had yet been proved before arbitrary odd-degree coefficient polynomials.",
+      "finding": "The parameter choice and dimension inequality are proved internally, yielding an unconditional actual bound N<=(1+eta)*p for every odd-degree quadratic curve, uniformly over all odd degrees up to a fixed cap and all coefficients.",
+      "proposed_revision": "Use the internally proved weak relative-error estimate for this quadratic-curve subclass where sufficient. Preserve its exact scope, and do not describe it as a general square-root Weil bound or a complete surface estimate.",
+      "impact": "Closes the internal odd-degree quadratic-curve point-count gap without external point-count inputs. Absolute character cancellation, even-degree split products and projected-surface transfer remain unfinished; canonical T1.7 inputs and coverage do not change.",
+      "evidence": [
+        "PaperP1.HyperellipticAuxiliaryDimensionGap.dimension_gap",
+        "PaperP1.HyperellipticAuxiliaryParameters.exists_parameters",
+        "PaperP1.HyperellipticAuxiliaryParameters.point_upper_arithmetic",
+        "PaperP1.HyperellipticOddDegreePointEstimate.uniform_upper_bound",
+        "PaperP1.HyperellipticOddDegreePointEstimate.uniform_degree_cap"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17719 jobs); direct axiom audit passed for 17353 declarations using only propext, Classical.choice and Quot.sound; all 17236 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.26 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

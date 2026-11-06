@@ -4515,3 +4515,6 @@ public import PaperP1.Algebra.FiniteFunctionLinearKernel
 public import PaperP1.Algebra.HyperellipticAuxiliaryConstraints
 public import PaperP1.Algebra.HyperellipticFiniteCoordinates
 public import PaperP1.Algebra.HyperellipticTangentAuxiliary
+public import PaperP1.Algebra.HyperellipticAuxiliaryDimensionGap
+public import PaperP1.Analysis.HyperellipticAuxiliaryParameters
+public import PaperP1.Arithmetic.HyperellipticOddDegreePointEstimate

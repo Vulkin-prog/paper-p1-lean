@@ -1,6 +1,18 @@
 # P1 — Lean formalization
 
-Current checkpoint P1-MATH-0628: a genuine nonzero tangent auxiliary is
+Current checkpoint P1-MATH-0629: an UNCONDITIONAL actual point bound is
+proved for EVERY odd-degree quadratic equation y^2=f(x). For eta>0 a cutoff
+chosen BEFORE all primes and coefficient polynomials gives N<=(1+eta)*p.
+One cutoff covers every odd degree up to a fixed cap. Actual auxiliaries,
+dimension inequalities, tangent vanishings, multiplicities and thresholds
+are internal proofs; no general point-count or Riemann-Roch input is used.
+This does NOT prove a general plane-curve or P3 surface estimate. Absolute
+character cancellation, even split products and projected-P3 transfer still
+need proofs. Canonical T1.7 retains ONLY its prior P3 input in degrees>2
+at the original families/caps. Coverage stays163 proved,2 conditional,
+2 in_progress out of167; all73 main results proved. No Palomar registration.
+
+Historical checkpoint P1-MATH-0628: a genuine nonzero tangent auxiliary is
 constructed from the ACTUAL finite coefficient kernel under explicit NUMERICAL
 dimension inequalities and A<q. Coefficient reconstruction, nonzero candidates,
 Frobenius evaluation and actual tangent vanishings are proved internally.
@@ -315,7 +327,7 @@ recorded in the linked ledger and [current status](docs/FORMALIZATION_STATUS.md)
 
 Companion T1.10 needs an enlarged alignment exclusion for unequal old/new widths: its literal radius-one version has an unconditional formal counterexample. The corrected coarse4/3 profile is proved under explicit geometric inputs; its sharper31/24 form remains open; see [the scope correction](docs/ASYMMETRIC_ALIGNMENT_SCOPE.md).
 
-The main optimal4/3 quadratic approximation power is now proved under explicit BCN and finite geometric properties, including both bounds, exact actual parameters, nominal-mean bias and eventual probability status. The optimal41/30 third factorial cumulant, full third absolute activity and aligned-channel triple claims are now proved under explicit geometric inputs, withBCN retained for the full connected argument. The actual original count and its retained modification converge in total variation to the actual-mean and nominal-mean Poisson laws without unproved inputs (P1-MATH-0413); quantitative optimal law rates remain separate. Exact fourth-cumulant component identities and unconditional weak, irregular and incompatible pair bounds are proved. In particular, the actual absolute pair activity is asymptotic to half the actual second factorial cumulant, without BCN or a complete pair profile. The contact activity bound at every fixed order now holds unconditionally on every dyadic subground, including irregular starts and zero marginals. The activation probability of the actual principal edge family now has the unconditional exponent -2/3, with any fixed epsilon margin. The planar normal budget T20.4 is now proved with improved constants and an integer-fibre argument. T20.6, the prescribed-plane transverse-product count and its actual affine mass bound, is now proved internally with three motifs and no Pila premise. The project records **626 confirmed mathematical improvements and two statement-scope corrections**. See [current status](docs/FORMALIZATION_STATUS.md), [the activity alignment](docs/FIXED_ABSOLUTE_ACTIVITY_ALIGNMENT.md) and [the mathematical change log](docs/MATHEMATICAL_CHANGELOG.md).
+The main optimal4/3 quadratic approximation power is now proved under explicit BCN and finite geometric properties, including both bounds, exact actual parameters, nominal-mean bias and eventual probability status. The optimal41/30 third factorial cumulant, full third absolute activity and aligned-channel triple claims are now proved under explicit geometric inputs, withBCN retained for the full connected argument. The actual original count and its retained modification converge in total variation to the actual-mean and nominal-mean Poisson laws without unproved inputs (P1-MATH-0413); quantitative optimal law rates remain separate. Exact fourth-cumulant component identities and unconditional weak, irregular and incompatible pair bounds are proved. In particular, the actual absolute pair activity is asymptotic to half the actual second factorial cumulant, without BCN or a complete pair profile. The contact activity bound at every fixed order now holds unconditionally on every dyadic subground, including irregular starts and zero marginals. The activation probability of the actual principal edge family now has the unconditional exponent -2/3, with any fixed epsilon margin. The planar normal budget T20.4 is now proved with improved constants and an integer-fibre argument. T20.6, the prescribed-plane transverse-product count and its actual affine mass bound, is now proved internally with three motifs and no Pila premise. The project records **627 confirmed mathematical improvements and two statement-scope corrections**. See [current status](docs/FORMALIZATION_STATUS.md), [the activity alignment](docs/FIXED_ABSOLUTE_ACTIVITY_ALIGNMENT.md) and [the mathematical change log](docs/MATHEMATICAL_CHANGELOG.md).
 
 Article13.1 now has a complete actual short-basis construction, with
 both physical projections and the common square-class map injective.
@@ -1678,3 +1690,5 @@ P1-MATH-0626 proves actual norm-degree bounds, tangent iterate growth, exact fin
 P1-MATH-0627 proves true linear independence of the actual product functions and guarantees a nonzero function for every nonzero tensor when A<p. The tangent-constraint kernel and full auxiliary construction remain unproved.
 
 P1-MATH-0628 constructs a genuine nonzero tangent auxiliary from actual finite linear constraints under exact numerical dimensions, and derives the literal curve point bound. Uniform large-prime parameter choice and general cancellation remain unproved.
+
+P1-MATH-0629 proves an unconditional uniform (1+eta)*p count for all actual odd-degree quadratic equations, with one cutoff over every bounded odd degree and all coefficients. General plane/surface counts and projected-P3 transfer remain unproved.
