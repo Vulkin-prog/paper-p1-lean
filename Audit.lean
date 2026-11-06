@@ -5526,6 +5526,7 @@ import PaperP1
 #print axioms PaperP1.UniformBinaryLogBudget.absorption
 #print axioms PaperP1.UniformCountWeightedTwistedSum.multiplicity_uniform_bound
 #print axioms PaperP1.UniformCountWeightedTwistedSum.count_uniform_bound
+#print axioms PaperP1.UniformPresenceWeightedSum.uniform_bound
 #print axioms PaperP1.UniformRealEulerBudget.uniform_bound
 #print axioms PaperP1.UniformRealEulerSmallness.fourth_power_bound
 #print axioms PaperP1.UniformRealEulerSmallness.uniform_bound

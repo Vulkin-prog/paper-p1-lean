@@ -39306,6 +39306,33 @@
         "status": "not_integrated"
       },
       "validation_commit": "49c30ad6fc1982f8b434621ef1fc39ae714010b3"
+    },
+    {
+      "id": "P1-MATH-0896",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "Both presence and count factors in the Ramare cofactor must be retained in a genuine common pointwise estimate.",
+      "finding": "One theorem proves the actual CommonPresenceWeightedSum.weighted bound <=epsilon*X for every fixed polynomial frequency height, beyond ONE fixed central threshold and ONE integer cutoff. ONE R precedes ALL prime count sets P above R, ALL prime presence sets Q, ALL real completely multiplicative f and ALL allowed frequencies. The literal presence factor is the exact difference of two actual count-weighted sums, one with its real complete damping at zero. No frequency exceptional set is assumed.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "The actual prime-presence count-weighted sum is uniformly small at every off-central frequency. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.UniformPresenceWeightedSum.uniform_bound"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18359 jobs); direct axiom audit passed for 18932 declarations using only propext, Classical.choice and Quot.sound; all 19177 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.54 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

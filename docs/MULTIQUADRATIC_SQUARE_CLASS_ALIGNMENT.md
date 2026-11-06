@@ -1,6 +1,15 @@
 # Multiquadratic split radicands: exact square-class independence
 
-Current checkpoint P1-MATH-0895: Actual multiplicity and count weighted
+Current checkpoint P1-MATH-0896: The actual prime-presence count-
+weighted sum is uniformly small at every off-central frequency. The
+triple-large prime frequency contribution, the central-frequency mean
+comparison and complete logarithmic short-average concentration remain
+unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164
+proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources,
+false-scope corrections, compiler and axioms unchanged. About 53.56 GiB
+free on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0895: Actual multiplicity and count weighted
 twisted sums satisfy genuine uniform pointwise bounds. The triple-large
 prime frequency contribution, the central-frequency mean comparison and
 complete logarithmic short-average concentration remain unproved. T19.17
@@ -27966,3 +27975,12 @@ Two theorems transfer the actual proved real twisted-summatory bound to the valu
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.56 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18357 jobs); direct axiom audit passed for 18931 declarations using only propext, Classical.choice and Quot.sound; all 19176 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.56 GiB.
+
+
+## The actual prime-presence count-weighted sum is uniformly small at every off-central frequency
+
+One theorem proves the actual CommonPresenceWeightedSum.weighted bound <=epsilon*X for every fixed polynomial frequency height, beyond ONE fixed central threshold and ONE integer cutoff. ONE R precedes ALL prime count sets P above R, ALL prime presence sets Q, ALL real completely multiplicative f and ALL allowed frequencies. The literal presence factor is the exact difference of two actual count-weighted sums, one with its real complete damping at zero. No frequency exceptional set is assumed.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.56 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18359 jobs); direct axiom audit passed for 18932 declarations using only propext, Classical.choice and Quot.sound; all 19177 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.54 GiB.
