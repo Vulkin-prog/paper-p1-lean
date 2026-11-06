@@ -43373,7 +43373,8 @@
             "PaperP1.LocalizedAffineQuadraticSource.parameter_compatibility"
           ]
         }
-      ]
+      ],
+      "validation_commit": "096d470da7f934036a9e8055f6589310cc69f1ce"
     },
     {
       "label": "p1:arith:dense",
