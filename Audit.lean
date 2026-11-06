@@ -5661,6 +5661,7 @@ import PaperP1
 #print axioms PaperP1.SmoothGaussianPopulation.population_positive
 #print axioms PaperP1.SmoothGaussianPopulation.smoothed_eq
 #print axioms PaperP1.SmoothGaussianPopulation.subpopulation_lower
+#print axioms PaperP1.SmoothGaussianWindowUpper.window_bound
 #print axioms PaperP1.SmoothIntervalProfile.interval_sum
 #print axioms PaperP1.SmoothIntervalProfile.short_profile
 #print axioms PaperP1.SmoothIntervalProfile.dyadic_profile

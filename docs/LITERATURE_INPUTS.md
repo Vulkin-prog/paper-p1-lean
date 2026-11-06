@@ -1,6 +1,19 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0977: Actual long Gaussian averages of
+Current checkpoint P1-MATH-0978: Actual windows with at most one smooth
+integer have an explicit short Gaussian upper bound. The actual off-
+central estimate, the ordinary smooth long-interval mean comparison and
+the uniform Gaussian mean-square comparison are proved. Localization of
+the Gaussian averages to the literal logarithmic windows remains
+unproved, so T19.17 stays conditional. The stronger uniform sharp short-
+average theorem for all real completely multiplicative functions is not
+established. T19.17 conditional; original T1.7 unconditional. Coverage:
+164 proved, 1 conditional, 2 in_progress /167; all 73 main proved.
+Sources, false-scope corrections, compiler and axioms unchanged. About
+52.01 GiB free on Ubuntu. No dependency download or Palomar
+registration.
+
+Historical checkpoint P1-MATH-0977: Actual long Gaussian averages of
 ordinary smooth integers are uniformly positive. The actual off-central
 estimate, the ordinary smooth long-interval mean comparison and the
 uniform Gaussian mean-square comparison are proved. Localization of the
@@ -35355,6 +35368,12 @@ One theorem proves that for every a>0, an actual kappa>0 and one integer cutoff 
 
 The actual off-central estimate, the ordinary smooth long-interval mean comparison and the uniform Gaussian mean-square comparison are proved. Localization of the Gaussian averages to the literal logarithmic windows remains unproved, so T19.17 stays conditional. The stronger uniform sharp short-average theorem for all real completely multiplicative functions is not established.
 
+## Internal actual windows with at most one smooth integer have an explicit short gaussian upper bound
+
+One theorem proves an explicit upper bound for the actual ordinary smooth Gaussian average at every real center in the middle unit cell of an actual integer window containing at most one smooth integer. It keeps the literal [N,4N) smooth population, arbitrary cutoff Y, reciprocal coefficients, exact window count, the actual logarithmic gap h/(12N), and the full Gaussian tail factor. All N>=2, 6<=h<=N, j in [N,2N), and positive widths at most one are explicit. No smooth-window estimate is assumed.
+
+The actual off-central estimate, the ordinary smooth long-interval mean comparison and the uniform Gaussian mean-square comparison are proved. Localization of the Gaussian averages to the literal logarithmic windows remains unproved, so T19.17 stays conditional. The stronger uniform sharp short-average theorem for all real completely multiplicative functions is not established.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -40538,3 +40557,14 @@ One theorem proves that for every a>0, an actual kappa>0 and one integer cutoff 
 The actual off-central estimate, the ordinary smooth long-interval mean comparison and the uniform Gaussian mean-square comparison are proved. Localization of the Gaussian averages to the literal logarithmic windows remains unproved, so T19.17 stays conditional. The stronger uniform sharp short-average theorem for all real completely multiplicative functions is not established. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.05 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18521 jobs); direct axiom audit passed for 19269 declarations using only propext, Classical.choice and Quot.sound; all 19584 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.02 GiB.
+
+
+## Actual windows with at most one smooth integer have an explicit short Gaussian upper bound
+
+Stable ID: p1:internal:smooth-gaussian-window-upper. Actual windows with at most one smooth integer have an explicit short Gaussian upper bound. The actual off-central estimate, the ordinary smooth long-interval mean comparison and the uniform Gaussian mean-square comparison are proved. Localization of the Gaussian averages to the literal logarithmic windows remains unproved, so T19.17 stays conditional. The stronger uniform sharp short-average theorem for all real completely multiplicative functions is not established.
+
+One theorem proves an explicit upper bound for the actual ordinary smooth Gaussian average at every real center in the middle unit cell of an actual integer window containing at most one smooth integer. It keeps the literal [N,4N) smooth population, arbitrary cutoff Y, reciprocal coefficients, exact window count, the actual logarithmic gap h/(12N), and the full Gaussian tail factor. All N>=2, 6<=h<=N, j in [N,2N), and positive widths at most one are explicit. No smooth-window estimate is assumed.
+
+The actual off-central estimate, the ordinary smooth long-interval mean comparison and the uniform Gaussian mean-square comparison are proved. Localization of the Gaussian averages to the literal logarithmic windows remains unproved, so T19.17 stays conditional. The stronger uniform sharp short-average theorem for all real completely multiplicative functions is not established. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.01 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18523 jobs); direct axiom audit passed for 19270 declarations using only propext, Classical.choice and Quot.sound; all 19585 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.00 GiB.

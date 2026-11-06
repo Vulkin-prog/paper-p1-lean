@@ -41928,6 +41928,33 @@
         "status": "not_integrated"
       },
       "validation_commit": "0f8b6f35e45be30881ae0de3af6e415802d8a73a"
+    },
+    {
+      "id": "P1-MATH-0978",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "Internal actual bad-window Gaussian upper bound, still requiring the fixed logarithmic-width parameter choice and exceptional-count assembly.",
+      "finding": "One theorem proves an explicit upper bound for the actual ordinary smooth Gaussian average at every real center in the middle unit cell of an actual integer window containing at most one smooth integer. It keeps the literal [N,4N) smooth population, arbitrary cutoff Y, reciprocal coefficients, exact window count, the actual logarithmic gap h/(12N), and the full Gaussian tail factor. All N>=2, 6<=h<=N, j in [N,2N), and positive widths at most one are explicit. No smooth-window estimate is assumed.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Actual windows with at most one smooth integer have an explicit short Gaussian upper bound. The actual off-central estimate, the ordinary smooth long-interval mean comparison and the uniform Gaussian mean-square comparison are proved. Localization of the Gaussian averages to the literal logarithmic windows remains unproved, so T19.17 stays conditional. The stronger uniform sharp short-average theorem for all real completely multiplicative functions is not established.",
+      "evidence": [
+        "PaperP1.SmoothGaussianWindowUpper.window_bound"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18523 jobs); direct axiom audit passed for 19270 declarations using only propext, Classical.choice and Quot.sound; all 19585 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.00 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
