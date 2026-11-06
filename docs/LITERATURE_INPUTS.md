@@ -1,6 +1,18 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0964: Actual normalized Gaussian kernels have
+Current checkpoint P1-MATH-0965: Finite actual Gaussian smoothings
+satisfy an exact square-energy Parseval identity. The actual off-central
+Dirichlet estimate and the ordinary smooth long-interval mean comparison
+are proved. The analytic comparison with logarithmic short averages
+remains unproved, so T19.17 remains conditional. The stronger uniform
+short-average theorem for all real completely multiplicative functions
+is not established. T19.17 conditional; original T1.7 unconditional.
+Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main
+proved. Sources, false-scope corrections, compiler and axioms unchanged.
+About 52.29 GiB free on Ubuntu. No dependency download or Palomar
+registration.
+
+Historical checkpoint P1-MATH-0964: Actual normalized Gaussian kernels have
 an exact overlap identity. The actual off-central Dirichlet estimate and
 the ordinary smooth long-interval mean comparison are proved. The
 analytic comparison with logarithmic short averages remains unproved, so
@@ -35115,6 +35127,12 @@ Eight theorems and one definition construct the normalized real heat kernel from
 
 The actual off-central Dirichlet estimate and the ordinary smooth long-interval mean comparison are proved. The analytic comparison with logarithmic short averages remains unproved, so T19.17 remains conditional. The stronger uniform short-average theorem for all real completely multiplicative functions is not established.
 
+## Internal finite actual gaussian smoothings satisfy an exact square-energy parseval identity
+
+Seven theorems and one definition prove the actual finite smoothing cross expansion, all product and difference integrability, the literal overlap sum, and its exact equality to Gaussian-weighted Dirichlet frequency energy divided by 2*pi. The squared difference of any two positive-width real Gaussian smoothings equals the full frequency integral with weight (exp(-b*t^2)-exp(-c*t^2))^2 divided by 2*pi. All finite sums and all integrals are actual expressions, with Fubini and subtraction justified. No short-average theorem or Parseval premise is assumed.
+
+The actual off-central Dirichlet estimate and the ordinary smooth long-interval mean comparison are proved. The analytic comparison with logarithmic short averages remains unproved, so T19.17 remains conditional. The stronger uniform short-average theorem for all real completely multiplicative functions is not established.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -40155,3 +40173,14 @@ Eight theorems and one definition construct the normalized real heat kernel from
 The actual off-central Dirichlet estimate and the ordinary smooth long-interval mean comparison are proved. The analytic comparison with logarithmic short averages remains unproved, so T19.17 remains conditional. The stronger uniform short-average theorem for all real completely multiplicative functions is not established. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.29 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18495 jobs); direct axiom audit passed for 19210 declarations using only propext, Classical.choice and Quot.sound; all 19516 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.27 GiB.
+
+
+## Finite actual Gaussian smoothings satisfy an exact square-energy Parseval identity
+
+Stable ID: p1:internal:gaussian-smoothed-energy. Finite actual Gaussian smoothings satisfy an exact square-energy Parseval identity. The actual off-central Dirichlet estimate and the ordinary smooth long-interval mean comparison are proved. The analytic comparison with logarithmic short averages remains unproved, so T19.17 remains conditional. The stronger uniform short-average theorem for all real completely multiplicative functions is not established.
+
+Seven theorems and one definition prove the actual finite smoothing cross expansion, all product and difference integrability, the literal overlap sum, and its exact equality to Gaussian-weighted Dirichlet frequency energy divided by 2*pi. The squared difference of any two positive-width real Gaussian smoothings equals the full frequency integral with weight (exp(-b*t^2)-exp(-c*t^2))^2 divided by 2*pi. All finite sums and all integrals are actual expressions, with Fubini and subtraction justified. No short-average theorem or Parseval premise is assumed.
+
+The actual off-central Dirichlet estimate and the ordinary smooth long-interval mean comparison are proved. The analytic comparison with logarithmic short averages remains unproved, so T19.17 remains conditional. The stronger uniform short-average theorem for all real completely multiplicative functions is not established. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.29 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18497 jobs); direct axiom audit passed for 19217 declarations using only propext, Classical.choice and Quot.sound; all 19524 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.25 GiB.

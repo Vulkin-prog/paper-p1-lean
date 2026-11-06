@@ -4304,6 +4304,13 @@ import PaperP1
 #print axioms PaperP1.GaussianSlopeDecay.absolute_decay_bound
 #print axioms PaperP1.GaussianSlopeDecay.slope_decay_bound
 #print axioms PaperP1.GaussianSlopeDecay.slope_uniform_bound
+#print axioms PaperP1.GaussianSmoothedEnergy.cross_expansion
+#print axioms PaperP1.GaussianSmoothedEnergy.cross_integrable
+#print axioms PaperP1.GaussianSmoothedEnergy.cross_integral
+#print axioms PaperP1.GaussianSmoothedEnergy.heat_complex
+#print axioms PaperP1.GaussianSmoothedEnergy.cross_parseval
+#print axioms PaperP1.GaussianSmoothedEnergy.difference_integrable
+#print axioms PaperP1.GaussianSmoothedEnergy.difference_parseval
 #print axioms PaperP1.GeometricBandSplit.scale_succ
 #print axioms PaperP1.GeometricBandSplit.scale_sum
 #print axioms PaperP1.GeometricBandSplit.scale_sum_le

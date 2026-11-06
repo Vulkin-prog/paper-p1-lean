@@ -4904,3 +4904,4 @@ public import PaperP1.Analysis.SmoothLongMeanStability
 public import PaperP1.Analysis.SmoothLongLengthGeometry
 public import PaperP1.Analysis.GaussianDirichletTail
 public import PaperP1.Analysis.GaussianOverlap
+public import PaperP1.Analysis.GaussianSmoothedEnergy
