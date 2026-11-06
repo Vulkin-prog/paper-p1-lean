@@ -4510,6 +4510,12 @@ import PaperP1
 #print axioms PaperP1.LogarithmicSquareRootBound.square_bound
 #print axioms PaperP1.LognormalBlockCancellation.phase_prefix_identity
 #print axioms PaperP1.LognormalBlockCancellation.uniform_bound
+#print axioms PaperP1.LognormalMellinIntegral.phase_neg_swap
+#print axioms PaperP1.LognormalMellinIntegral.kernel_integral
+#print axioms PaperP1.LognormalMellinIntegral.phase_log_identity
+#print axioms PaperP1.LognormalMellinIntegral.integrand_identity
+#print axioms PaperP1.LognormalMellinIntegral.integral_identity
+#print axioms PaperP1.LognormalMellinIntegral.integral_norm
 #print axioms PaperP1.LognormalSieveWeight.weight_pos
 #print axioms PaperP1.LognormalSieveWeight.weight_upper
 #print axioms PaperP1.LognormalSieveWeight.gaussian_identity

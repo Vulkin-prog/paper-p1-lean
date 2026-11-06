@@ -4847,3 +4847,4 @@ public import PaperP1.Analysis.LognormalSieveWeight
 public import PaperP1.Analysis.GaussianSlopeDecay
 public import PaperP1.Analysis.LognormalWeightVariation
 public import PaperP1.Analysis.LognormalBlockCancellation
+public import PaperP1.Analysis.LognormalMellinIntegral
