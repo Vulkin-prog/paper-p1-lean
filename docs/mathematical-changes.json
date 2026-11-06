@@ -31451,6 +31451,58 @@
         "status": "not_integrated"
       },
       "validation_commit": "fac3756a0f7ad5c41a5c4f4fdad2d2cda4952bcc"
+    },
+    {
+      "id": "P1-MATH-0663",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The actual Dirichlet-polynomial integral mean-value theorem needed by the short-average method had no internal proof; Gaussian Gram and frequency-row control had not been assembled into a coefficient-uniform analytic estimate.",
+      "finding": "The exact Gaussian Gram identity, finite symmetric row bound, summable Gaussian tails and literal logarithmic spacing prove the full basic mean-value estimate with one explicit absolute constant before all coefficients, index supports and heights.",
+      "proposed_revision": "Use the internally proved Gaussian mean-value theorem for the actual Dirichlet polynomials in the short-average argument. Prove the remaining high-moment, large-value, factor-rich and short-average estimates separately; this basic L2 theorem alone does not imply logarithmic short-average decay.",
+      "impact": "Discharges the basic Dirichlet-polynomial mean-value estimate with explicit uniform constants. The multiplicative short-average theorem and full T19.17 remain unproved without the original analytic input.",
+      "evidence": [
+        "PaperP1.DirichletPolynomialMeanValue.separated_interval_bound",
+        "PaperP1.DirichletPolynomialMeanValue.logarithmic_interval_bound",
+        "PaperP1.DirichletPolynomialMeanValue.dyadic_mean_square",
+        "PaperP1.DirichletPolynomialMeanValue.unit_coefficient_square_budget",
+        "PaperP1.DirichletPolynomialMeanValue.bounded_dyadic_mean_square",
+        "PaperP1.DirichletPolynomialMeanValue.uniform_mean_value",
+        "PaperP1.GaussianExponentialSums.polynomial_continuous",
+        "PaperP1.GaussianExponentialSums.polynomial_norm_bound",
+        "PaperP1.GaussianExponentialSums.gaussian_integrable",
+        "PaperP1.GaussianExponentialSums.interval_le_gaussian",
+        "PaperP1.GaussianExponentialSums.norm_square_expansion",
+        "PaperP1.GaussianExponentialSums.gaussian_cross_integrable",
+        "PaperP1.GaussianExponentialSums.gaussian_gram",
+        "PaperP1.GaussianExponentialSums.gaussian_mean_square_le",
+        "PaperP1.GaussianFrequencyRowBound.gaussian_antitone",
+        "PaperP1.GaussianFrequencyRowBound.gaussian_tail_summable",
+        "PaperP1.GaussianFrequencyRowBound.gaussian_tail_bound",
+        "PaperP1.GaussianFrequencyRowBound.translated_sequence_bound",
+        "PaperP1.GaussianFrequencyRowBound.integer_row_bound",
+        "PaperP1.GaussianFrequencyRowBound.separated_row_bound",
+        "PaperP1.GaussianFrequencyRowBound.ordered_log_gap",
+        "PaperP1.GaussianFrequencyRowBound.absolute_log_gap",
+        "PaperP1.GaussianFrequencyRowBound.integer_log_gap",
+        "PaperP1.GaussianFrequencyRowBound.logarithmic_row_bound",
+        "PaperP1.DirichletPolynomialMeanValue.value",
+        "PaperP1.GaussianExponentialSums.polynomial"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17851 jobs); direct axiom audit passed for 17662 declarations using only propext, Classical.choice and Quot.sound; all 17638 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.62 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

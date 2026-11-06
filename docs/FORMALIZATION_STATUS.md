@@ -1,6 +1,17 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0662: exact Ramare quotient sums,
+Current checkpoint P1-MATH-0663: the ACTUAL basic Dirichlet-
+polynomial mean-value estimate is UNCONDITIONAL: integral|F|^2
+<=C*(T/N+1), with ONE explicit absolute C before every coefficient,
+finite support and T>0. Exact Gaussian Gram identities, integrability,
+frequency rows and logarithmic spacing are internal. The stronger
+short-minus-long-average DECAY remains UNPROVED. T19.17 stays
+conditional; original T1.7 remains complete without external inputs.
+Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main
+results proved. Original false scopes and corrected variants unchanged.
+No Palomar registration.
+
+Historical checkpoint P1-MATH-0662: exact Ramare quotient sums,
 actual square-divisor exceptions, logarithmic/Gaussian oscillatory
 integrals and the finite symmetric kernel budget are INTERNAL.
 They are foundations for the missing multiplicative short-average
@@ -842,7 +853,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records660 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records661 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -961,7 +972,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **17638 audited theorem/lemma declarations**. This
+- The project currently has **17662 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -30406,3 +30417,16 @@ FiniteSymmetricKernelBudget proves that the actual quadratic sum of any finite s
 These are structural arithmetic and analytic foundations for the genuine mean-square work. The logarithmic short-average estimate and the full 1-o(1) T19.17 conclusion remain UNPROVED without the existing explicit analytic input. Neither the quotient identity, a finite kernel bound nor the proved alternative census reduction is counted as that estimate. The original T19.17 conditional declarations remain unchanged. Complete T1.7 remains proved without external inputs. Coverage stays 164 proved, 1 conditional, 2 in_progress out of 167; all 73 main results proved. The two disproved-original corrected scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Ubuntu retains about 54.7 GiB and no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17845 jobs); direct axiom audit passed for 17638 declarations using only propext, Classical.choice and Quot.sound; all 17612 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.65 GiB.
+
+
+## Unconditional Gaussian proof of the universal Dirichlet-polynomial mean-value estimate
+
+GaussianExponentialSums constructs the literal finite complex exponential sum. It proves continuity, its exact coefficient norm bound, integrability of its Gaussian-weighted squared norm, and the passage from an actual bounded interval to the global Gaussian integral. Its exact Gaussian Gram identity retains EVERY cross term and the real positive sqrt(pi/b) factor. The internally proved finite symmetric kernel budget gives a genuine weighted mean-square bound from the actual Gaussian row sums; no mean-value theorem is assumed.
+
+GaussianFrequencyRowBound proves the one-sided Gaussian series comparison with its real half-line integral, including summability. It bounds a finite translated natural sequence using injective left/right offset maps, pays its center exactly once, and derives the literal Gaussian row bound from a specified positive frequency separation. The logarithmic separation |log(j)-log(i)|>=|j-i|/M for positive integer indices <=M is proved from the elementary logarithm inequality. Thus all Gaussian row sums needed for actual Dirichlet frequencies are bounded internally.
+
+DirichletPolynomialMeanValue proves an UNCONDITIONAL actual interval estimate for every finite exponential sum with frequencies separated by delta times its integer-index gap: its squared-norm integral over [-T,T] is at most exp(1)*(sqrt(pi)*T+2*pi/delta)*sum|a_i|^2. It specializes to the literal Dirichlet polynomial F(t)=sum_{n in S} (a_n/n)*exp(-i*t*log(n)), with S any actual subset of [N,2N), N>0. For EVERY complex coefficient sequence with |a_n|<=1 and EVERY real T>0, the actual integral of |F(t)|^2 is <=exp(1)*(sqrt(pi)*T/N+4*pi), hence <=C*(T/N+1) for ONE explicit absolute C=exp(1)*(sqrt(pi)+4*pi), chosen before all N,S,a,T. The finite reciprocal-square coefficient budget is proved from the original index range.
+
+Three modules add twenty-four theorems and two definitions. This supplies the genuine basic Dirichlet-polynomial mean-value estimate required by the multiplicative short-average method, via a Gaussian proof with explicit constants and no assumed Hilbert inequality. It is NOT the decay of short-minus-long averages: the remaining large-value, factor-range, sieve and short-average assembly still require proof. Neither MeanSquareInput nor ConcentrationInput is declared proved. T19.17 therefore remains conditional on its original explicit analytic input. Complete original T1.7 and its exact three families remain unchanged. Coverage stays 164 proved, 1 conditional, 2 in_progress out of 167; all 73 main results proved. The two original false scopes and their checked corrections are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Ubuntu retains about 54.6 GiB; no dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17851 jobs); direct axiom audit passed for 17662 declarations using only propext, Classical.choice and Quot.sound; all 17638 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.62 GiB.

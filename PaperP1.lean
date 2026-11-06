@@ -4580,3 +4580,6 @@ public import PaperP1.Asymptotics.SmoothCensusFromShortAverages
 public import PaperP1.Analysis.FiniteSymmetricKernelBudget
 public import PaperP1.Analysis.LogarithmicPhase
 public import PaperP1.Arithmetic.PrimeDivisorWeights
+public import PaperP1.Analysis.DirichletPolynomialMeanValue
+public import PaperP1.Analysis.GaussianExponentialSums
+public import PaperP1.Analysis.GaussianFrequencyRowBound
