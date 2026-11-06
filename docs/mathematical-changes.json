@@ -39841,6 +39841,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "49021e0530d4ff19f5b3b4969a7a8fd8537b4a2f"
+    },
+    {
+      "id": "P1-MATH-0913",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The actual infinite integer tail must be controlled by proved convergence and quantitative reciprocal-power bounds, rather than discarded after a finite computation.",
+      "finding": "Five theorems and one definition prove a finite reciprocal-cube tail bound <=8/M^2, the literal finite smoothed tail bound, absolute summability of the actual shifted positive-integer terms, and the infinite tail norm<=8*exp(1)*A^3/M^2. At the actual upper cutoff ceil(A^2), A>=2, this is <=8*exp(1)/A. All infinite limits and positive-integer indexing are justified.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "The actual infinite upper lognormal integer tail has a proved reciprocal-scale bound. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.LognormalUpperTail.reciprocal_cube_tail",
+        "PaperP1.LognormalUpperTail.finite_norm_bound",
+        "PaperP1.LognormalUpperTail.summable_terms",
+        "PaperP1.LognormalUpperTail.norm_bound",
+        "PaperP1.LognormalUpperTail.square_cutoff_bound",
+        "PaperP1.LognormalUpperTail.tail"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18393 jobs); direct axiom audit passed for 19004 declarations using only propext, Classical.choice and Quot.sound; all 19258 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.23 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

@@ -4852,3 +4852,4 @@ public import PaperP1.Analysis.LognormalSumIntegrability
 public import PaperP1.Analysis.LognormalPhaseVariation
 public import PaperP1.Analysis.LognormalFiniteQuadrature
 public import PaperP1.Analysis.LognormalLowerTail
+public import PaperP1.Analysis.LognormalUpperTail

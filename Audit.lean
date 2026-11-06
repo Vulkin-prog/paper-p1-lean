@@ -4540,6 +4540,11 @@ import PaperP1
 #print axioms PaperP1.LognormalSumIntegrability.summable_terms
 #print axioms PaperP1.LognormalSumIntegrability.head_identity
 #print axioms PaperP1.LognormalSumIntegrability.head_tendsto
+#print axioms PaperP1.LognormalUpperTail.reciprocal_cube_tail
+#print axioms PaperP1.LognormalUpperTail.finite_norm_bound
+#print axioms PaperP1.LognormalUpperTail.summable_terms
+#print axioms PaperP1.LognormalUpperTail.norm_bound
+#print axioms PaperP1.LognormalUpperTail.square_cutoff_bound
 #print axioms PaperP1.LognormalWeightVariation.constant_pos
 #print axioms PaperP1.LognormalWeightVariation.weight_le_ratio
 #print axioms PaperP1.LognormalWeightVariation.derivative_abs_bound
