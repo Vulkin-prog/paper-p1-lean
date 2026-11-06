@@ -5630,6 +5630,12 @@ import PaperP1
 #print axioms PaperP1.SmoothReciprocalLeadingLower.uniform_full_lower
 #print axioms PaperP1.SmoothReciprocalLeadingLower.uniform_dyadic_lower
 #print axioms PaperP1.SmoothReciprocalLeadingLower.uniform_original_lower
+#print axioms PaperP1.SmoothRoughPopulation.exponent_pos
+#print axioms PaperP1.SmoothRoughPopulation.roughSet_mono
+#print axioms PaperP1.SmoothRoughPopulation.sieve_bound
+#print axioms PaperP1.SmoothRoughPopulation.power_bound
+#print axioms PaperP1.SmoothRoughPopulation.constant_pos
+#print axioms PaperP1.SmoothRoughPopulation.eventual_bound
 #print axioms PaperP1.SmoothSaddleLoss.finite_loss_upper
 #print axioms PaperP1.SmoothSaddleLoss.normalized_majorant_limit
 #print axioms PaperP1.SmoothSaddleLoss.eventual_loss_bound
