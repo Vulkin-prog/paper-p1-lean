@@ -4244,3 +4244,6 @@ public import PaperP1.Geometry.FiniteParameterCurveEquation
 public import PaperP1.Arithmetic.ActualSourceProjectedCurveCover
 public import PaperP1.Arithmetic.SourceImageIntegerPointEvaluation
 public import PaperP1.Geometry.SourceSurfaceCurvePullback
+public import PaperP1.Arithmetic.ActualSourceProjectedCurveFamilyCover
+public import PaperP1.Geometry.GradedProjectiveCurveData
+public import PaperP1.Geometry.PresentedProjectiveCurveData

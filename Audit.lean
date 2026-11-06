@@ -3835,6 +3835,7 @@ import PaperP1
 #print axioms PaperP1.ActualSourcePrimitiveReduction.divide_dyadic_bounds
 #print axioms PaperP1.ActualSourcePrimitiveReduction.family_raw_bounds
 #print axioms PaperP1.ActualSourceProjectedCurveCover.uniform_curve_cover
+#print axioms PaperP1.ActualSourceProjectedCurveFamilyCover.uniform_family_cover
 #print axioms PaperP1.ActualSourceSurfaceIntegerProjection.exists_projection
 #print axioms PaperP1.ActualSourceSurfaceProjectionExceptionalCurves.exists_projection
 #print axioms PaperP1.ActualSourceTranslations.sourceAt_cast
@@ -12414,6 +12415,11 @@ import PaperP1
 #print axioms PaperP1.GeneratedAlgebraPointEvaluation.evaluation_polynomial
 #print axioms PaperP1.GeneratedAlgebraPointEvaluation.evaluation_coordinate
 #print axioms PaperP1.GeneratedAlgebraPointEvaluation.points_equal
+#print axioms PaperP1.GradedProjectiveCurveData.Curve.ideal_prime
+#print axioms PaperP1.GradedProjectiveCurveData.Curve.ideal_homogeneous
+#print axioms PaperP1.GradedProjectiveCurveData.Curve.ideal_height
+#print axioms PaperP1.GradedProjectiveCurveData.Curve.ideal_hilbert
+#print axioms PaperP1.GradedProjectiveCurveData.Curve.degree_unique
 #print axioms PaperP1.GradedVeroneseProj.map_isIso
 #print axioms PaperP1.GradedVeroneseProj.iso_hom
 #print axioms PaperP1.HypersurfaceImagePointSeparation.evaluations_equal_of_conductor
@@ -12535,6 +12541,15 @@ import PaperP1
 #print axioms PaperP1.OriginalFieldCurveNoetherNormalization.exists_normalization
 #print axioms PaperP1.OriginalFieldFiniteCurveParameters.exists_parameters
 #print axioms PaperP1.PlaneImagePointSeparation.evaluations_equal_of_coordinates
+#print axioms PaperP1.PresentedProjectiveCurveData.kernel_eq
+#print axioms PaperP1.PresentedProjectiveCurveData.evaluation_surjective
+#print axioms PaperP1.PresentedProjectiveCurveData.evaluation_commutes
+#print axioms PaperP1.PresentedProjectiveCurveData.coordinateIdeal_prime
+#print axioms PaperP1.PresentedProjectiveCurveData.coordinateIdeal_homogeneous
+#print axioms PaperP1.PresentedProjectiveCurveData.piece_finrank
+#print axioms PaperP1.PresentedProjectiveCurveData.coordinate_hilbert
+#print axioms PaperP1.PresentedProjectiveCurveData.toCurve_ideal
+#print axioms PaperP1.PresentedProjectiveCurveData.toCurve_degree
 #print axioms PaperP1.ProjAffineFieldEquiv.equiv_chartMap
 #print axioms PaperP1.ProjChartDehomogenizationNaturality.dehomogenization_natural
 #print axioms PaperP1.ProjChartDehomogenizationNaturality.chart_dehomogenization_congr

@@ -27514,6 +27514,53 @@
         "status": "not_integrated"
       },
       "validation_commit": "69b3fd35a377f3332ddeb7a6f96da6fd94d314f6"
+    },
+    {
+      "id": "P1-MATH-0574",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "Individual curve lifts were proved, but a finite image family had not yet been lifted with one height-independent union and an explicit total count. The equality of the image quotient Hilbert degree and its ordinary projective coordinate degree also needed a formal presentation comparison.",
+      "finding": "Actual projective image curves retain exactly their genuine degree under polynomial presentation, and every finite bounded-degree image family has one fixed exact source lift cover with count at most its cardinality times M*d and all genuine source degrees at most M*d.",
+      "proposed_revision": "Use actual projective spectrum curve points with their actual quotient Hilbert polynomials, identify their coordinate degrees by graded presentation, and take the actual finite union of the individually proved source lifts before all heights.",
+      "impact": "Closes finite-family aggregation and degree identification in the source projection reduction, with explicit counts and exact original integer-point coverage.",
+      "evidence": [
+        "PaperP1.ActualSourceProjectedCurveFamilyCover.uniform_family_cover",
+        "PaperP1.GradedProjectiveCurveData.Curve.ideal_prime",
+        "PaperP1.GradedProjectiveCurveData.Curve.ideal_homogeneous",
+        "PaperP1.GradedProjectiveCurveData.Curve.ideal_height",
+        "PaperP1.GradedProjectiveCurveData.Curve.ideal_hilbert",
+        "PaperP1.GradedProjectiveCurveData.Curve.degree_unique",
+        "PaperP1.PresentedProjectiveCurveData.kernel_eq",
+        "PaperP1.PresentedProjectiveCurveData.evaluation_surjective",
+        "PaperP1.PresentedProjectiveCurveData.evaluation_commutes",
+        "PaperP1.PresentedProjectiveCurveData.coordinateIdeal_prime",
+        "PaperP1.PresentedProjectiveCurveData.coordinateIdeal_homogeneous",
+        "PaperP1.PresentedProjectiveCurveData.piece_finrank",
+        "PaperP1.PresentedProjectiveCurveData.coordinate_hilbert",
+        "PaperP1.PresentedProjectiveCurveData.toCurve_ideal",
+        "PaperP1.PresentedProjectiveCurveData.toCurve_degree",
+        "PaperP1.ActualSourceProjectedCurveFamilyCover.imageGrading",
+        "PaperP1.GradedProjectiveCurveData.Curve",
+        "PaperP1.GradedProjectiveCurveData.Curve.ideal",
+        "PaperP1.PresentedProjectiveCurveData.coordinateIdeal",
+        "PaperP1.PresentedProjectiveCurveData.evaluation",
+        "PaperP1.PresentedProjectiveCurveData.toCurve"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17147 jobs); direct axiom audit passed for 16440 declarations using only propext, Classical.choice and Quot.sound; all 16099 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.04 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
