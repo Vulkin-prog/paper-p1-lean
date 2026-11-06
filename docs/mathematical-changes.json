@@ -29665,6 +29665,53 @@
         "status": "not_integrated"
       },
       "validation_commit": "34e28756621c78ae391fefe63bc8ab6293459152"
+    },
+    {
+      "id": "P1-MATH-0619",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The plane-section route still had an abstract existence premise. Its exact algebraic certificate, reflection implication and finite-field rationalization threshold needed an internally checked formulation.",
+      "finding": "A good geometric section exists exactly when an actual Noether parameter test is nonzero. The test has an explicit degree bound, gives an actual rational good section over sufficiently large finite fields and certifies original geometric irreducibility. Literal cones have all sections good and an exact point-count identity.",
+      "proposed_revision": "Separate general section existence from the explicit polynomial certificate. State the certificate criterion, degree threshold, reflection and the unconditional cone subclass; do not infer general certificate existence from irreducibility alone.",
+      "impact": "Makes the remaining Bertini existence problem a precise nonvanishing requirement and proves its concrete finite-field consequences. The general existence and curve point estimates remain unproved; numbered-result coverage and canonical dependencies do not change.",
+      "evidence": [
+        "PaperP1.P3GraphPlaneCone.section_rename",
+        "PaperP1.P3GraphPlaneCone.geometric_rename_iff",
+        "PaperP1.P3GraphPlaneCone.all_sections_good",
+        "PaperP1.P3GraphPlaneCone.bad_sections_empty",
+        "PaperP1.P3GraphPlaneIrreducibilityCertificate.unit_of_homogeneous_section_unit",
+        "PaperP1.P3GraphPlaneIrreducibilityCertificate.irreducible_of_section",
+        "PaperP1.P3GraphPlaneIrreducibilityCertificate.geometric_irreducible_of_section",
+        "PaperP1.P3GraphPlaneIrreducibilityCertificate.geometric_irreducible_of_geometric_section",
+        "PaperP1.P3GraphPlaneFiniteCertificate.bad_sections_bound",
+        "PaperP1.P3GraphPlaneFiniteCertificate.exists_rational_section",
+        "PaperP1.P3GraphPlaneFiniteCertificate.original_geometric_irreducible",
+        "PaperP1.P3GraphPlaneFiniteCertificate.uniform_rational_section_iff",
+        "PaperP1.P3GraphPlaneNoetherTests.degree_bound",
+        "PaperP1.P3GraphPlaneNoetherTests.evaluation",
+        "PaperP1.P3GraphPlaneNoetherTests.geometric_section_iff",
+        "PaperP1.P3GraphPlaneNoetherTests.exists_nonzero_test_of_section",
+        "PaperP1.P3GraphPlaneNoetherTests.exists_section_of_nonzero_test",
+        "PaperP1.P3GraphPlaneNoetherTests.exists_closure_section_iff",
+        "PaperP1.P3ConePlanePointCount.cardinality",
+        "PaperP1.P3ConePlanePointCount.upper_bound",
+        "PaperP1.P3GraphPlaneNoetherTests.test"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17643 jobs); direct axiom audit passed for 17186 declarations using only propext, Classical.choice and Quot.sound; all 17035 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 21.39 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

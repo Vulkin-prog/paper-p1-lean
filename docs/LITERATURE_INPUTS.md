@@ -1,6 +1,20 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0618: the full actual uniform surface point
+Current checkpoint P1-MATH-0619: actual Noether parameter-test nonvanishing
+is EXACTLY equivalent to the existence of a good graph-plane section over the
+algebraic closure. A nonzero test certifies original geometric irreducibility
+and gives an actual base-field good section for q>d*degree(test form), with
+at most d*degree(test form)*q^2 bad parameters. Every section of a literal
+cone is the original plane curve, with the EXACT affine count q*card(curve).
+General test nonvanishing for every geometrically irreducible original surface
+and the plane-curve point estimate remain UNPROVED. Canonical T1.7 stays
+`UniformGeometricCountsFieldEstimateInput.companion_T1_7` with ONLY its prior
+finite-field point-estimate input in actual degrees>2 at the original families
+and caps. The alternative two classical inputs remain explicit. Coverage
+stays163 proved,2 conditional,2 in_progress out of167; all73 main results proved.
+No Palomar registration.
+
+Historical checkpoint P1-MATH-0618: the full actual uniform surface point
 estimate and an ALTERNATIVE complete T1.7 theorem are proved from TWO explicit
 UNPROVED classical plane inputs: p+O_d(sqrt(p)) for actual irreducible plane
 curves, and ONE geometric good graph-plane section of every original surface.
@@ -29404,6 +29418,17 @@ internal proofs. No surface target bound is an input to this derivation.
 The curve shape agrees with the classical estimate quoted as (1.3) in
 [Slavov2023](https://doi.org/10.4153/S0008439522000625); its proof is not imported.
 
+## Actual graph-plane section certificate criterion
+
+P1-MATH-0619 proves the exact equivalence between a good algebraic-closure
+section and nonvanishing of one actual substituted universal integer Noether
+form. This is a checked algebraic criterion, including its degree bound and
+finite-field rationalization. It is not a proof of nonvanishing for every
+geometrically irreducible original surface. Both raw classical inputs of the
+alternative reduction remain unproved. For literal cones the section existence
+part is unconditional in every degree, and their affine count is exactly q
+times that of the actual plane curve. No curve point estimate is claimed.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -30233,3 +30258,20 @@ UniformGeometricCountsPlaneInputs assembles an ALTERNATIVE complete companionT1.
 Five modules add eight theorems and four definitions, including the two raw hypothesis definitions and alternative hypothesis structure. Coverage stays163 proved,2 conditional,2 in_progress out of167, with all73 main results proved. The separate T19.17 analytic input and the two literal false-original scopes are unchanged. Manuscript hashes, Lean v4.36.0-rc2, checking options and allowed axioms are unchanged. Work remains on Ubuntu with about5.80GiB free, without dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17633 jobs); direct axiom audit passed for 17166 declarations using only propext, Classical.choice and Quot.sound; all 17014 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 5.80 GiB.
+
+
+## Actual Noether parameter certificates, section reflection and exact cone point counts
+
+Stable ID: p1:internal:actual-graph-plane-section-certificates. Actual plane-section certificates and all their finite-field consequences are proved; general certificate existence remains explicit and unproved. Canonical T1.7 is unchanged.
+
+P3GraphPlaneIrreducibilityCertificate proves that a unit homogeneous graph-plane specialization forces the original homogeneous factor to be a unit. Factor homogeneity then proves that ONE literal irreducible plane section implies irreducibility of the original homogeneous surface. Both actual algebraic-closure and geometric base-field section versions are checked. This is reflection only: it does not prove that an irreducible original surface possesses such a section.
+
+P3GraphPlaneNoetherTests constructs the ACTUAL parameter polynomial obtained by substituting the original universal section coefficients into a universal integer plane Noether form. Its total degree is at most d times the form degree. Evaluation under every field map reconstructs the literal original section coefficients. The exact all-fields Noether criterion gives geometric section irreducibility if and only if some evaluated test is nonzero. A good section over ANY extension gives a nonzero test; conversely one nonzero test gives an actual good section over EVERY infinite extension. In particular, existence of a literal irreducible section over the canonical algebraic closure is EXACTLY equivalent to existence of a nonzero actual parameter test. No claim that this nonzero condition holds for every original surface is made.
+
+P3GraphPlaneFiniteCertificate proves the concrete finite-field exceptional bound from an individual nonzero test Phi: actual bad sections are at most d*degree(Phi)*q^2. Thus q>d*degree(Phi) produces an actual geometrically irreducible section over the BASE field. The chosen forms and the uniform family-degree threshold precede all finite fields and original equations. Above that threshold, existence of a base-field geometric section is exactly equivalent to nonvanishing of some parameter test. A nonzero test also certifies geometric irreducibility of the original surface, by the reflection theorem.
+
+P3GraphPlaneCone handles an unconditional subclass in every degree: for an actual cone rename Fin.succ Q, EVERY graph-plane section is literally Q. Geometric irreducibility is exactly that of Q; there are no bad sections. P3ConePlanePointCount proves the EXACT count card(cone affine zeros)=q*card(Q affine zeros) from the literal incidence identity, and transfers any supplied plane-curve bound without a Bertini premise. No plane-curve estimate is assumed proved.
+
+Five modules add twenty theorems and one definition. Neither the general nonzero-test existence requirement nor the general plane-curve point bound is discharged. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same three original families/caps; the two-input alternative remains conditional. Coverage stays163 proved,2 conditional,2 in_progress out of167, with all73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and allowed axioms are unchanged. All files remain on Ubuntu, now about21.4GiB free following an external increase in available space. No dependency download and no Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17643 jobs); direct axiom audit passed for 17186 declarations using only propext, Classical.choice and Quot.sound; all 17035 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 21.39 GiB.

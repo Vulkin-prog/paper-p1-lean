@@ -4476,3 +4476,8 @@ public import PaperP1.Analysis.SquareRootPointErrorThreshold
 public import PaperP1.Arithmetic.P3ClassicalPlanePointInputs
 public import PaperP1.Arithmetic.P3PointEstimateFromPlaneInputs
 public import PaperP1.Asymptotics.UniformGeometricCountsPlaneInputs
+public import PaperP1.Algebra.P3GraphPlaneCone
+public import PaperP1.Algebra.P3GraphPlaneIrreducibilityCertificate
+public import PaperP1.Arithmetic.P3GraphPlaneFiniteCertificate
+public import PaperP1.Arithmetic.P3GraphPlaneNoetherTests
+public import PaperP1.Diophantine.P3ConePlanePointCount

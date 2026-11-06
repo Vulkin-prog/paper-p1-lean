@@ -1,6 +1,20 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0618: the full actual uniform surface point
+Current checkpoint P1-MATH-0619: actual Noether parameter-test nonvanishing
+is EXACTLY equivalent to the existence of a good graph-plane section over the
+algebraic closure. A nonzero test certifies original geometric irreducibility
+and gives an actual base-field good section for q>d*degree(test form), with
+at most d*degree(test form)*q^2 bad parameters. Every section of a literal
+cone is the original plane curve, with the EXACT affine count q*card(curve).
+General test nonvanishing for every geometrically irreducible original surface
+and the plane-curve point estimate remain UNPROVED. Canonical T1.7 stays
+`UniformGeometricCountsFieldEstimateInput.companion_T1_7` with ONLY its prior
+finite-field point-estimate input in actual degrees>2 at the original families
+and caps. The alternative two classical inputs remain explicit. Coverage
+stays163 proved,2 conditional,2 in_progress out of167; all73 main results proved.
+No Palomar registration.
+
+Historical checkpoint P1-MATH-0618: the full actual uniform surface point
 estimate and an ALTERNATIVE complete T1.7 theorem are proved from TWO explicit
 UNPROVED classical plane inputs: p+O_d(sqrt(p)) for actual irreducible plane
 curves, and ONE geometric good graph-plane section of every original surface.
@@ -318,7 +332,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records616 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records617 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -437,7 +451,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **17166 audited theorem/lemma declarations**. This
+- The project currently has **17186 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -29338,3 +29352,18 @@ UniformGeometricCountsPlaneInputs assembles an ALTERNATIVE complete companionT1.
 Five modules add eight theorems and four definitions, including the two raw hypothesis definitions and alternative hypothesis structure. Coverage stays163 proved,2 conditional,2 in_progress out of167, with all73 main results proved. The separate T19.17 analytic input and the two literal false-original scopes are unchanged. Manuscript hashes, Lean v4.36.0-rc2, checking options and allowed axioms are unchanged. Work remains on Ubuntu with about5.80GiB free, without dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17633 jobs); direct axiom audit passed for 17166 declarations using only propext, Classical.choice and Quot.sound; all 17014 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 5.80 GiB.
+
+
+## Actual Noether parameter certificates, section reflection and exact cone point counts
+
+P3GraphPlaneIrreducibilityCertificate proves that a unit homogeneous graph-plane specialization forces the original homogeneous factor to be a unit. Factor homogeneity then proves that ONE literal irreducible plane section implies irreducibility of the original homogeneous surface. Both actual algebraic-closure and geometric base-field section versions are checked. This is reflection only: it does not prove that an irreducible original surface possesses such a section.
+
+P3GraphPlaneNoetherTests constructs the ACTUAL parameter polynomial obtained by substituting the original universal section coefficients into a universal integer plane Noether form. Its total degree is at most d times the form degree. Evaluation under every field map reconstructs the literal original section coefficients. The exact all-fields Noether criterion gives geometric section irreducibility if and only if some evaluated test is nonzero. A good section over ANY extension gives a nonzero test; conversely one nonzero test gives an actual good section over EVERY infinite extension. In particular, existence of a literal irreducible section over the canonical algebraic closure is EXACTLY equivalent to existence of a nonzero actual parameter test. No claim that this nonzero condition holds for every original surface is made.
+
+P3GraphPlaneFiniteCertificate proves the concrete finite-field exceptional bound from an individual nonzero test Phi: actual bad sections are at most d*degree(Phi)*q^2. Thus q>d*degree(Phi) produces an actual geometrically irreducible section over the BASE field. The chosen forms and the uniform family-degree threshold precede all finite fields and original equations. Above that threshold, existence of a base-field geometric section is exactly equivalent to nonvanishing of some parameter test. A nonzero test also certifies geometric irreducibility of the original surface, by the reflection theorem.
+
+P3GraphPlaneCone handles an unconditional subclass in every degree: for an actual cone rename Fin.succ Q, EVERY graph-plane section is literally Q. Geometric irreducibility is exactly that of Q; there are no bad sections. P3ConePlanePointCount proves the EXACT count card(cone affine zeros)=q*card(Q affine zeros) from the literal incidence identity, and transfers any supplied plane-curve bound without a Bertini premise. No plane-curve estimate is assumed proved.
+
+Five modules add twenty theorems and one definition. Neither the general nonzero-test existence requirement nor the general plane-curve point bound is discharged. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same three original families/caps; the two-input alternative remains conditional. Coverage stays163 proved,2 conditional,2 in_progress out of167, with all73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and allowed axioms are unchanged. All files remain on Ubuntu, now about21.4GiB free following an external increase in available space. No dependency download and no Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17643 jobs); direct axiom audit passed for 17186 declarations using only propext, Classical.choice and Quot.sound; all 17035 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 21.39 GiB.
