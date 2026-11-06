@@ -39072,6 +39072,34 @@
         "status": "not_integrated"
       },
       "validation_commit": "c13ef1930d61c7c6d1fa6a330e11ec94aaf4939c"
+    },
+    {
+      "id": "P1-MATH-0888",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The finite corrected comparison must pass to the actual complete Euler products, with the original finite product unchanged and sigma>0 explicit.",
+      "finding": "Two theorems prove convergence of the actual unit damped products over primesBelow Y to Mathlib riemannZeta(1+sigma+it), and pass the proved finite enlargement comparison to this actual limit. For EVERY sigma>0 and t, |F_P(f,sigma,t)|^4<=exp(8)*|zeta(1+sigma)|^3*|zeta(1+sigma+2it)|, for every finite prime set P and all real coefficients bounded by one. The original product stays exactly finite through zero extension. No prime-tail estimate, hypothetical Euler limit or unproved comparison is supplied.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "The actual damped finite real Euler product is bounded by complete Riemann zeta values. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.DampedEulerZetaComparison.unit_product_tendsto",
+        "PaperP1.DampedEulerZetaComparison.fourth_power_bound"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18343 jobs); direct axiom audit passed for 18915 declarations using only propext, Classical.choice and Quot.sound; all 19160 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.68 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

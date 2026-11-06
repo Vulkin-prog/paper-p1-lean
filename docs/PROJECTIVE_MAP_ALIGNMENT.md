@@ -1,6 +1,15 @@
 # Actual projective scheme map
 
-Current checkpoint P1-MATH-0887: A damped finite real Euler product
+Current checkpoint P1-MATH-0888: The actual damped finite real Euler
+product is bounded by complete Riemann zeta values. The triple-large
+prime frequency contribution, the central-frequency mean comparison and
+complete logarithmic short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 53.71 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0887: A damped finite real Euler product
 admits comparison with every larger prime product. The triple-large
 prime frequency contribution, the central-frequency mean comparison and
 complete logarithmic short-average concentration remain unproved. T19.17
@@ -27102,3 +27111,12 @@ Four theorems and one definition identify the actual damped local weights p^(-si
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.71 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18341 jobs); direct axiom audit passed for 18913 declarations using only propext, Classical.choice and Quot.sound; all 19158 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.70 GiB.
+
+
+## The actual damped finite real Euler product is bounded by complete Riemann zeta values
+
+Two theorems prove convergence of the actual unit damped products over primesBelow Y to Mathlib riemannZeta(1+sigma+it), and pass the proved finite enlargement comparison to this actual limit. For EVERY sigma>0 and t, |F_P(f,sigma,t)|^4<=exp(8)*|zeta(1+sigma)|^3*|zeta(1+sigma+2it)|, for every finite prime set P and all real coefficients bounded by one. The original product stays exactly finite through zero extension. No prime-tail estimate, hypothetical Euler limit or unproved comparison is supplied.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.71 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18343 jobs); direct axiom audit passed for 18915 declarations using only propext, Classical.choice and Quot.sound; all 19160 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.68 GiB.
