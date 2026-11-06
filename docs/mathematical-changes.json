@@ -30836,6 +30836,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "192222a3a4f8e98c96a5c48ff359f082609bee24"
+    },
+    {
+      "id": "P1-MATH-0647",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The actual reduced source conductor had not been derived from the literal monic full-degree irreducible projected equation; a conductor premise still separated source counts from image counts.",
+      "finding": "An actual monic irreducible source equation of full degree and degree below the characteristic gives its literal derivative conductor for every source element. All generic field, domain, primitive fraction, dimension and separability facts are proved internally.",
+      "proposed_revision": "Use this proved derivative conductor in the actual three-coordinate image count. Keep the original reduced integer equation normalization and effective exceptional-prime budget explicit until established.",
+      "impact": "Discharges the actual derivative-conductor implication without a conductor or primitive premise. Applying it to the original reduced integer equation and assembling the original uniform families remain unfinished.",
+      "evidence": [
+        "PaperP1.FullDegreeSourceDerivativeConductor.fraction_irreducible",
+        "PaperP1.FullDegreeSourceDerivativeConductor.fraction_degree",
+        "PaperP1.FullDegreeSourceDerivativeConductor.generic_relation",
+        "PaperP1.FullDegreeSourceDerivativeConductor.separable_of_degree",
+        "PaperP1.FullDegreeSourceDerivativeConductor.conductor",
+        "PaperP1.FullDegreeSourceDerivativeConductor.conductor_in_characteristic"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17781 jobs); direct axiom audit passed for 17502 declarations using only propext, Classical.choice and Quot.sound; all 17435 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.94 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

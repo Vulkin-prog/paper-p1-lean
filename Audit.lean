@@ -1238,6 +1238,12 @@ import PaperP1
 #print axioms PaperP1.FullDegreePrimitiveAlgebra.isField
 #print axioms PaperP1.FullDegreePrimitiveAlgebra.adjoin_eq_top
 #print axioms PaperP1.FullDegreePrimitiveAlgebra.finrank_eq
+#print axioms PaperP1.FullDegreeSourceDerivativeConductor.fraction_irreducible
+#print axioms PaperP1.FullDegreeSourceDerivativeConductor.fraction_degree
+#print axioms PaperP1.FullDegreeSourceDerivativeConductor.generic_relation
+#print axioms PaperP1.FullDegreeSourceDerivativeConductor.separable_of_degree
+#print axioms PaperP1.FullDegreeSourceDerivativeConductor.conductor
+#print axioms PaperP1.FullDegreeSourceDerivativeConductor.conductor_in_characteristic
 #print axioms PaperP1.GeneratedThreeCoordinatePoints.coordinates_injective
 #print axioms PaperP1.GeneratedThreeCoordinatePoints.points_finite
 #print axioms PaperP1.GeneratedThreeCoordinatePoints.mixed_evaluation
