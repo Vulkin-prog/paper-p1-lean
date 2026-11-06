@@ -5197,6 +5197,11 @@ import PaperP1
 #print axioms PaperP1.ValuationDamping.count_denominator_integral
 #print axioms PaperP1.VerticalGridLattice.center_identity
 #print axioms PaperP1.VerticalGridLattice.point_box
+#print axioms PaperP1.WeightedDivisorSquare.divisorSum_nonneg
+#print axioms PaperP1.WeightedDivisorSquare.kernel_nonneg
+#print axioms PaperP1.WeightedDivisorSquare.square_expansion
+#print axioms PaperP1.WeightedDivisorSquare.square_sum_identity
+#print axioms PaperP1.WeightedDivisorSquare.square_sum_bound
 #print axioms PaperP1.WeightedGaussianKernel.weighted_symmetric_bound
 #print axioms PaperP1.WeightedGaussianKernel.gaussian_weighted_mean
 #print axioms PaperP1.WeightedGeometricTail.weighted_hasSum

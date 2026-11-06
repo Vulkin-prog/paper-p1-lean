@@ -35793,6 +35793,39 @@
         "status": "not_integrated"
       },
       "validation_commit": "4b636507cdf15067adc06a7fd4362ac2646fc29b"
+    },
+    {
+      "id": "P1-MATH-0784",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "Prime-power convolution energies contain shared-factor cross terms. The actual least-common-multiple kernel, not only diagonal or squarefree terms, is required.",
+      "finding": "For any finite family of positive integer moduli d and nonnegative real weights w, the literal divisor sum D(n)=sum(d|n,w(d)) has exact square expansion over pairs with lcm(d,e)|n. Its ACTUAL sum on 1<=n<=X is exactly sum(d,e,floor(X/lcm(d,e))*w(d)*w(e)), and hence <=X*K with K=sum(d,e,w(d)*w(e)/lcm(d,e)). Nonnegativity of D and K is proved. Five theorems and two definitions preserve every repeated or overlapping divisor term; no independence approximation or unidentified external moment input is used.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Exact weighted divisor square mean retains every least common multiple cross term. The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.WeightedDivisorSquare.divisorSum_nonneg",
+        "PaperP1.WeightedDivisorSquare.kernel_nonneg",
+        "PaperP1.WeightedDivisorSquare.square_expansion",
+        "PaperP1.WeightedDivisorSquare.square_sum_identity",
+        "PaperP1.WeightedDivisorSquare.square_sum_bound",
+        "PaperP1.WeightedDivisorSquare.divisorSum",
+        "PaperP1.WeightedDivisorSquare.kernel"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18135 jobs); direct axiom audit passed for 18518 declarations using only propext, Classical.choice and Quot.sound; all 18694 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.42 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
