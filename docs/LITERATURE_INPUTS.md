@@ -1,6 +1,15 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0821: Actual weighted narrow cofactors allow
+Current checkpoint P1-MATH-0822: Actual high prime moments bound the
+cardinality of separated large values. The joint large-prime frequency
+contribution, the central-frequency mean comparison and complete
+logarithmic short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 51.76 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0821: Actual weighted narrow cofactors allow
 X^(1/18) separated frequency samples. The joint large-prime frequency
 contribution, the central-frequency mean comparison and complete
 logarithmic short-average concentration remain unproved. T19.17
@@ -32937,6 +32946,12 @@ For ONE X0 before ALL source sizes X>=X0, widths H, anchors u<=X^(1/16), prime-i
 
 The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
 
+## Internal actual high prime moments bound the cardinality of separated large values
+
+For arbitrary actual prime supports in Icc L U with reciprocal mass<=1, every integer moment order k, unit prime coefficients and separated samples at height T<=L^k, a bounded powered support span U^k<=2*exp(3)*L^k gives ACTUAL sample moment sum<=54*C*budget(k,P). Consequently every actual sample satisfying norm(P)>=V has cardinality<=54*C*budget(k,P)/V^(2*k). The proof uses the actual all-order prime polynomial identity and literal divisor-lcm budget, with a singleton cofactor evaluated exactly. Three theorems retain all prime multiplicities and coefficient weights.
+
+The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -36404,3 +36419,14 @@ For ONE X0 before ALL source sizes X>=X0, widths H, anchors u<=X^(1/16), prime-i
 The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.83 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18209 jobs); direct axiom audit passed for 18648 declarations using only propext, Classical.choice and Quot.sound; all 18848 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.76 GiB.
+
+
+## Actual high prime moments bound the cardinality of separated large values
+
+Stable ID: p1:internal:prime-power-large-values. Actual high prime moments bound the cardinality of separated large values. The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
+
+For arbitrary actual prime supports in Icc L U with reciprocal mass<=1, every integer moment order k, unit prime coefficients and separated samples at height T<=L^k, a bounded powered support span U^k<=2*exp(3)*L^k gives ACTUAL sample moment sum<=54*C*budget(k,P). Consequently every actual sample satisfying norm(P)>=V has cardinality<=54*C*budget(k,P)/V^(2*k). The proof uses the actual all-order prime polynomial identity and literal divisor-lcm budget, with a singleton cofactor evaluated exactly. Three theorems retain all prime multiplicities and coefficient weights.
+
+The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.76 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18211 jobs); direct axiom audit passed for 18651 declarations using only propext, Classical.choice and Quot.sound; all 18851 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.74 GiB.

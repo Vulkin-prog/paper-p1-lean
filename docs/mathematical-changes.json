@@ -36980,6 +36980,35 @@
         "status": "not_integrated"
       },
       "validation_commit": "115e8586c12681c45f2fdb1b15312eaed4f91d11"
+    },
+    {
+      "id": "P1-MATH-0822",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "An exceptional frequency count requires an actual high moment sample estimate for the prime polynomial, followed by a proved threshold inequality; an assumed rare-set size is not enough.",
+      "finding": "For arbitrary actual prime supports in Icc L U with reciprocal mass<=1, every integer moment order k, unit prime coefficients and separated samples at height T<=L^k, a bounded powered support span U^k<=2*exp(3)*L^k gives ACTUAL sample moment sum<=54*C*budget(k,P). Consequently every actual sample satisfying norm(P)>=V has cardinality<=54*C*budget(k,P)/V^(2*k). The proof uses the actual all-order prime polynomial identity and literal divisor-lcm budget, with a singleton cofactor evaluated exactly. Three theorems retain all prime multiplicities and coefficient weights.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Actual high prime moments bound the cardinality of separated large values. The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.PrimePowerLargeValues.value_singleton",
+        "PaperP1.PrimePowerLargeValues.sampled_moment_bound",
+        "PaperP1.PrimePowerLargeValues.sampled_large_values_card"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18211 jobs); direct axiom audit passed for 18651 declarations using only propext, Classical.choice and Quot.sound; all 18851 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.74 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

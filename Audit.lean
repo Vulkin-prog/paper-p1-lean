@@ -4651,6 +4651,9 @@ import PaperP1
 #print axioms PaperP1.PrimePolynomialMoments.high_moment_bound
 #print axioms PaperP1.PrimePolynomialMoments.large_values_budget
 #print axioms PaperP1.PrimePolynomialMoments.large_values_measure
+#print axioms PaperP1.PrimePowerLargeValues.value_singleton
+#print axioms PaperP1.PrimePowerLargeValues.sampled_moment_bound
+#print axioms PaperP1.PrimePowerLargeValues.sampled_large_values_card
 #print axioms PaperP1.PrimePowerPolynomial.layer_positive
 #print axioms PaperP1.PrimePowerPolynomial.layer_bounds
 #print axioms PaperP1.PrimePowerPolynomial.coefficient_norm_bound
