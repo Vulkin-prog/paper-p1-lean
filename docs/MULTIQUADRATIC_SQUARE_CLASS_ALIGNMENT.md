@@ -1,6 +1,15 @@
 # Multiquadratic split radicands: exact square-class independence
 
-Current checkpoint P1-MATH-0839: Every restricted continuous integral is
+Current checkpoint P1-MATH-0840: The actual small-final-prime region has
+vanishing rectangle and original Dirichlet integrals. The joint large-
+prime frequency contribution, the central-frequency mean comparison and
+complete logarithmic short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 51.45 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0839: Every restricted continuous integral is
 bounded by four times its separated sample budget. The joint large-prime
 frequency contribution, the central-frequency mean comparison and
 complete logarithmic short-average concentration remain unproved. T19.17
@@ -26955,3 +26964,12 @@ For EVERY measurable E contained in (-T,T], EVERY continuous everywhere nonnegat
 The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.45 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18245 jobs); direct axiom audit passed for 18690 declarations using only propext, Classical.choice and Quot.sound; all 18895 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.43 GiB.
+
+
+## The actual small-final-prime region has vanishing rectangle and original Dirichlet integrals
+
+Define the ACTUAL measurable region as the previously retained jointly-large region intersected with the condition that EVERY actual final prime block is <=1/(log N)^100. For every fixed B>=32, ONE N0 precedes all positive-unit coefficients and every 1<=T<=N; its ACTUAL final rectangle integral is <=4*(80/(log N)^191) and tends uniformly to zero. For completely multiplicative coefficients, the ACTUAL ORIGINAL full dyadic Dirichlet polynomial has integral over this entire region<=epsilon after one uniform cutoff, via the proved final rectangle approximation. Four theorems and one region definition prove measurability, the explicit integral bound and both uniform vanishing statements. The remaining large-final-prime and central mean comparison contributions remain retained.
+
+The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.45 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18247 jobs); direct axiom audit passed for 18694 declarations using only propext, Classical.choice and Quot.sound; all 18900 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.41 GiB.

@@ -1,0 +1,7 @@
+# The actual small-final-prime region has vanishing rectangle and original Dirichlet integrals
+
+Source: internal preparatory analytic route for companion T19.17. This is not a completed additional manuscript result.
+
+Define the ACTUAL measurable region as the previously retained jointly-large region intersected with the condition that EVERY actual final prime block is <=1/(log N)^100. For every fixed B>=32, ONE N0 precedes all positive-unit coefficients and every 1<=T<=N; its ACTUAL final rectangle integral is <=4*(80/(log N)^191) and tends uniformly to zero. For completely multiplicative coefficients, the ACTUAL ORIGINAL full dyadic Dirichlet polynomial has integral over this entire region<=epsilon after one uniform cutoff, via the proved final rectangle approximation. Four theorems and one region definition prove measurability, the explicit integral bound and both uniform vanishing statements. The remaining large-final-prime and central mean comparison contributions remain retained.
+
+The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.45 GiB free on Ubuntu. No dependency download or Palomar registration.

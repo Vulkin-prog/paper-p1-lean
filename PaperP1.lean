@@ -4779,3 +4779,4 @@ public import PaperP1.Analysis.FiniteProductSampleBound
 public import PaperP1.Analysis.FinalSmallPrimeSamples
 public import PaperP1.Analysis.UnitIntervalSampleSelection
 public import PaperP1.Analysis.SeparatedIntegralBound
+public import PaperP1.Analysis.FinalSmallPrimeIntegral
