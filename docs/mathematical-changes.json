@@ -34000,6 +34000,34 @@
         "status": "not_integrated"
       },
       "validation_commit": "febbf3f6e3fed44603eca66f651ee50c42d4bf80"
+    },
+    {
+      "id": "P1-MATH-0729",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The actual integral-weighted coefficients must use the SAME exceptional set for every support P, every complete f and every damping parameter. A separate exceptional set for each parameter would not suffice.",
+      "finding": "For every epsilon,delta>0 one threshold precedes all X and admissible frequency heights T. One measurable E in (-T,T], of measure <=delta*T, is chosen BEFORE every finite support P, every complete real prime-bounded coefficient f, and every damping parameter. Outside E the ACTUAL twisted sum of f(n)/(multiplicity(P,n)+1) over 1<=n<=X has norm <=epsilon*X. The exact parameter integral and the common real twisted-summatory theorem prove this by the actual norm integral bound. Two theorems are added. This concerns valuation weights; the count denominator still requires the explicit square-divisor condition or remainder estimate.",
+      "proposed_revision": "Use the common-frequency quantifier order for the literal valuation-weighted summatory function. Retain count/valuation and mean-square distinctions.",
+      "impact": "One common frequency exception controls all actual valuation-weighted twisted sums. Complete short-average concentration remains unproved.",
+      "evidence": [
+        "PaperP1.CommonDampedSum.twisted_sum_integral",
+        "PaperP1.CommonDampedSum.common_weighted_summatory_small"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18025 jobs); direct axiom audit passed for 18263 declarations using only propext, Classical.choice and Quot.sound; all 18381 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.40 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
