@@ -1585,6 +1585,8 @@ import PaperP1
 #print axioms PaperP1.IntegerPlaneShear.point_box
 #print axioms PaperP1.IntegerPlaneShear.height_budget
 #print axioms PaperP1.IntegerPolynomialGrowth.lower_power_bound
+#print axioms PaperP1.IntegerPolynomialReduction.map_evaluation
+#print axioms PaperP1.IntegerPolynomialReduction.map_dehomogenize
 #print axioms PaperP1.integerPolynomialHeight_zero
 #print axioms PaperP1.coeff_natAbs_le_integerPolynomialHeight
 #print axioms PaperP1.nnnorm_intCast_real
@@ -1670,6 +1672,8 @@ import PaperP1
 #print axioms PaperP1.LinearPolynomialHeightTransport.expansion
 #print axioms PaperP1.LinearPolynomialHeightTransport.linear_height
 #print axioms PaperP1.LinearPolynomialHeightTransport.finite_family_height
+#print axioms PaperP1.LinearPolynomialSubstitutionDegree.monomial_bound
+#print axioms PaperP1.LinearPolynomialSubstitutionDegree.substitution_bound
 #print axioms PaperP1.LinearRationalGraph.exists_parameters
 #print axioms PaperP1.LocalizationIrreducibleLift.exists_associated
 #print axioms PaperP1.LocalizationPrimeHeightEquiv.height_comap
@@ -6089,6 +6093,13 @@ import PaperP1
 #print axioms PaperP1.P3CanonicalSurfaceDivisor.total_population
 #print axioms PaperP1.P3CanonicalSurfaceDivisor.integer_dvd
 #print axioms PaperP1.P3CanonicalSurfaceDivisor.det_zero_of_small
+#print axioms PaperP1.P3CoarseCanonicalClassCount.fieldCoordinates_injective
+#print axioms PaperP1.P3CoarseCanonicalClassCount.reduced_evaluation
+#print axioms PaperP1.P3CoarseCanonicalClassCount.affine_zero
+#print axioms PaperP1.P3CoarseCanonicalClassCount.reduced_degree_le
+#print axioms PaperP1.P3CoarseCanonicalClassCount.card_le_of_reduced_nonzero
+#print axioms PaperP1.P3CoarseCanonicalClassCount.classes_empty_of_reduced_zero
+#print axioms PaperP1.P3CoarseCanonicalClassCount.cardinality_bound
 #print axioms PaperP1.P3SharpSmoothClassAuxiliary.uniform_degree
 #print axioms PaperP1.P3SingleAuxiliaryCurveCover.cover_of_equation
 #print axioms PaperP1.PNTLogPrimePowerLower.weight_nonneg
@@ -12278,6 +12289,7 @@ import PaperP1
 #print axioms PaperP1.FiniteFieldPlaneZeroBound.plane_card
 #print axioms PaperP1.FiniteFieldPlaneZeroBound.coefficient_map_degree_le
 #print axioms PaperP1.FiniteFieldPlaneZeroBound.smooth_integer_classes_card
+#print axioms PaperP1.FiniteFieldSurfaceZeroBound.multivariate_card
 #print axioms PaperP1.FinitePrimeAffineCount.bounded_count
 #print axioms PaperP1.FinitePrimeBiformCount.bounded_count
 #print axioms PaperP1.FinitePrimeBiformCount.unrestricted_second_pair_count

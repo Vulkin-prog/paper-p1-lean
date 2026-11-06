@@ -4357,3 +4357,7 @@ public import PaperP1.Algebra.P3GlobalAuxiliaryLogCriterion
 public import PaperP1.Analysis.CommonCutoffSurfaceBudget
 public import PaperP1.Analysis.P3CanonicalDivisorLowerBound
 public import PaperP1.Arithmetic.PrimePowerLogSeparation
+public import PaperP1.Algebra.IntegerPolynomialReduction
+public import PaperP1.Algebra.LinearPolynomialSubstitutionDegree
+public import PaperP1.Arithmetic.P3CoarseCanonicalClassCount
+public import PaperP1.Diophantine.FiniteFieldSurfaceZeroBound

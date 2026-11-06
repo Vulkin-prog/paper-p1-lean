@@ -28642,6 +28642,45 @@
         "status": "not_integrated"
       },
       "validation_commit": "2c9f88387a92590a402b0df4f8de298f4b7819fa"
+    },
+    {
+      "id": "P1-MATH-0601",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "An actual surface determinant needs a finite-field budget for its canonical smooth classes which remains valid at all primes, including reductions whose affine equation vanishes identically.",
+      "finding": "Actual canonical classes inject into the affine finite-field zero set. A proved degree-preserving linear substitution and Schwartz-Zippel give at most d*p^2 classes; identically zero reductions have no smooth classes by Euler and derivative compatibility.",
+      "proposed_revision": "State the unconditional coarse d*p^2 budget separately from the sharper leading-coefficient-one finite-field estimate. Explicitly include the zero-reduction case and avoid a hidden p does not divide d restriction.",
+      "impact": "Closes actual finite-field transport and the coarse class count at every prime without a good-reduction premise. Precisely preserves the stronger finite-field estimate still required for the sharp global auxiliary bound.",
+      "evidence": [
+        "PaperP1.IntegerPolynomialReduction.map_evaluation",
+        "PaperP1.IntegerPolynomialReduction.map_dehomogenize",
+        "PaperP1.LinearPolynomialSubstitutionDegree.monomial_bound",
+        "PaperP1.LinearPolynomialSubstitutionDegree.substitution_bound",
+        "PaperP1.P3CoarseCanonicalClassCount.fieldCoordinates_injective",
+        "PaperP1.P3CoarseCanonicalClassCount.reduced_evaluation",
+        "PaperP1.P3CoarseCanonicalClassCount.affine_zero",
+        "PaperP1.P3CoarseCanonicalClassCount.reduced_degree_le",
+        "PaperP1.P3CoarseCanonicalClassCount.card_le_of_reduced_nonzero",
+        "PaperP1.P3CoarseCanonicalClassCount.classes_empty_of_reduced_zero",
+        "PaperP1.P3CoarseCanonicalClassCount.cardinality_bound",
+        "PaperP1.FiniteFieldSurfaceZeroBound.multivariate_card",
+        "PaperP1.P3CoarseCanonicalClassCount.fieldCoordinates"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17377 jobs); direct axiom audit passed for 16756 declarations using only propext, Classical.choice and Quot.sound; all 16490 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.12 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
