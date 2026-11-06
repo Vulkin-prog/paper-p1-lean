@@ -4175,6 +4175,8 @@ import PaperP1
 #print axioms PaperP1.IntegerProductTail.logarithmic_budget
 #print axioms PaperP1.IntegerProductTail.productTail_bound
 #print axioms PaperP1.IntegerProductTail.companion_T20_2
+#print axioms PaperP1.IntermediateContributionSmall.rectangle_small_uniform
+#print axioms PaperP1.IntermediateContributionSmall.full_small_uniform
 #print axioms PaperP1.InverseSqrtTail.step
 #print axioms PaperP1.InverseSqrtTail.interval_bound
 #print axioms PaperP1.InverseSqrtTail.tail_bound

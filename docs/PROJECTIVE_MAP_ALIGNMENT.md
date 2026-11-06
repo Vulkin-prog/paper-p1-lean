@@ -1,6 +1,16 @@
 # Actual projective scheme map
 
-Current checkpoint P1-MATH-0809: The explicit actual mixed region
+Current checkpoint P1-MATH-0810: The actual whole intermediate region
+has uniformly vanishing rectangle and full Dirichlet contributions. The
+complementary bad-prime frequency contribution, the central-frequency
+mean subtraction and complete logarithmic short-average concentration
+remain unproved. T19.17 conditional; original T1.7 unconditional.
+Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main
+proved. Sources, false-scope corrections, compiler and axioms unchanged.
+About 52.00 GiB free on Ubuntu. No dependency download or Palomar
+registration.
+
+Historical checkpoint P1-MATH-0809: The explicit actual mixed region
 Gaussian envelope tends to zero. The complementary bad-prime frequency
 contribution, the central-frequency mean subtraction and complete
 logarithmic short-average concentration remain unproved. T19.17
@@ -25695,3 +25705,12 @@ The literal envelope 32*C*(log(log N))^16*exp(-(log(log N))^2/100) is nonnegativ
 The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.00 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18185 jobs); direct axiom audit passed for 18607 declarations using only propext, Classical.choice and Quot.sound; all 18797 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.97 GiB.
+
+
+## The actual whole intermediate region has uniformly vanishing rectangle and full Dirichlet contributions
+
+For EVERY epsilon>0 one N0 precedes all N>=N0, all complex coefficients unit-bounded on positive integers and all 0<T<=N/log N. On the ACTUAL intermediate region where some first block is large and every second block is small, the ACTUAL full second rectangle square integral is <=epsilon. For complete complex coefficients the same uniform conclusion holds for the ACTUAL original dyadic Dirichlet polynomial, by the proved second-rectangle approximation and restricted transfer. Two theorems combine the actual region cover, all growing band counts, exact moment bounds and vanishing Gaussian envelope. Frequencies where both families contain a large block and the central-frequency mean comparison remain unresolved.
+
+The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.00 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18187 jobs); direct axiom audit passed for 18609 declarations using only propext, Classical.choice and Quot.sound; all 18799 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.96 GiB.

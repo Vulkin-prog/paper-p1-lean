@@ -36605,6 +36605,34 @@
         "status": "not_integrated"
       },
       "validation_commit": "800d4258dcb426493f3cf0432243ff8c8f840764"
+    },
+    {
+      "id": "P1-MATH-0810",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The actual total intermediate region must be shown negligible after summing every pair and transferred to the original full polynomial. A completed intermediate-region estimate is not the complete short-average theorem.",
+      "finding": "For EVERY epsilon>0 one N0 precedes all N>=N0, all complex coefficients unit-bounded on positive integers and all 0<T<=N/log N. On the ACTUAL intermediate region where some first block is large and every second block is small, the ACTUAL full second rectangle square integral is <=epsilon. For complete complex coefficients the same uniform conclusion holds for the ACTUAL original dyadic Dirichlet polynomial, by the proved second-rectangle approximation and restricted transfer. Two theorems combine the actual region cover, all growing band counts, exact moment bounds and vanishing Gaussian envelope. Frequencies where both families contain a large block and the central-frequency mean comparison remain unresolved.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "The actual whole intermediate region has uniformly vanishing rectangle and full Dirichlet contributions. The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.IntermediateContributionSmall.rectangle_small_uniform",
+        "PaperP1.IntermediateContributionSmall.full_small_uniform"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18187 jobs); direct axiom audit passed for 18609 declarations using only propext, Classical.choice and Quot.sound; all 18799 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.96 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
