@@ -3708,6 +3708,8 @@ import PaperP1
 #print axioms PaperP1.FiniteExponentialProducts.norm_quadraticCorrection_le
 #print axioms PaperP1.FiniteExponentialProducts.norm_first_order_le
 #print axioms PaperP1.FiniteExponentialProducts.norm_quadratic_error_le
+#print axioms PaperP1.FiniteFibreSquareBudget.norm_sum_sq_le_card
+#print axioms PaperP1.FiniteFibreSquareBudget.aggregate_square_budget
 #print axioms PaperP1.FiniteLogarithmicPivotMass.band_cost
 #print axioms PaperP1.FiniteLogarithmicPivotMass.finite_mass
 #print axioms PaperP1.FiniteNegativeMass.extended_nat
@@ -4050,6 +4052,13 @@ import PaperP1
 #print axioms PaperP1.PrimeLogarithmicBands.bands_subset
 #print axioms PaperP1.PrimeLogarithmicBands.bands_mass
 #print axioms PaperP1.PrimeLogarithmicBands.uniform_bands_lower
+#print axioms PaperP1.PrimePolynomialMoments.coefficient_square_budget
+#print axioms PaperP1.PrimePolynomialMoments.phase_product
+#print axioms PaperP1.PrimePolynomialMoments.power_expansion
+#print axioms PaperP1.PrimePolynomialMoments.aggregate_polynomial
+#print axioms PaperP1.PrimePolynomialMoments.high_moment_bound
+#print axioms PaperP1.PrimePolynomialMoments.large_values_budget
+#print axioms PaperP1.PrimePolynomialMoments.large_values_measure
 #print axioms PaperP1.PrimeProductReciprocalLower.root_scale_lower
 #print axioms PaperP1.PrimeProductReciprocalLower.exponential_lower
 #print axioms PaperP1.PrimeProductReciprocalSaddleLower.uniform_ordinary_lower
@@ -7116,6 +7125,8 @@ import PaperP1
 #print axioms PaperP1.PrimeProductCensus.product_properties
 #print axioms PaperP1.PrimeProductCensus.ordinary_reciprocal_lower
 #print axioms PaperP1.PrimeProductCensus.choose_lower
+#print axioms PaperP1.PrimeProductFibres.tuple_permutation
+#print axioms PaperP1.PrimeProductFibres.fibre_card_le_factorial
 #print axioms PaperP1.PrimeRunStarts.mem_starts
 #print axioms PaperP1.PrimeRunStarts.parameters_card
 #print axioms PaperP1.PrimeRunStarts.starts_subset_interval

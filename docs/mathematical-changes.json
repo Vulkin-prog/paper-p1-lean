@@ -31504,6 +31504,44 @@
         "status": "not_integrated"
       },
       "validation_commit": "992b9d03e9ec699e6893bf54412d5800f661f8b0"
+    },
+    {
+      "id": "P1-MATH-0664",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The mean-value theorem did not yet provide high-order prime-polynomial estimates, and collapsing repeated prime products could lose the true factorization multiplicity or assert an unjustified product injection.",
+      "finding": "Actual prime-product fibres have at most k! members, including repeats. Exact coefficient aggregation, the finite-power identity and the internal mean-value theorem give all-order moment bounds and actual measurable large-value bounds with every k dependence explicit.",
+      "proposed_revision": "Use the exact factorial multiplicity, actual aggregate coefficients and proved all-order prime-polynomial integral bound. Pay the displayed k!, Q^k and coefficient-square factors for any growing moment choice. Prove the needed discrete/stronger large-value and short-average stages separately.",
+      "impact": "Proves unconditional all-order prime-polynomial moments and genuine Lebesgue large-value measure bounds. It does not complete the logarithmic short-average theorem or T19.17.",
+      "evidence": [
+        "PaperP1.FiniteFibreSquareBudget.norm_sum_sq_le_card",
+        "PaperP1.FiniteFibreSquareBudget.aggregate_square_budget",
+        "PaperP1.PrimePolynomialMoments.coefficient_square_budget",
+        "PaperP1.PrimePolynomialMoments.phase_product",
+        "PaperP1.PrimePolynomialMoments.power_expansion",
+        "PaperP1.PrimePolynomialMoments.aggregate_polynomial",
+        "PaperP1.PrimePolynomialMoments.high_moment_bound",
+        "PaperP1.PrimePolynomialMoments.large_values_budget",
+        "PaperP1.PrimePolynomialMoments.large_values_measure",
+        "PaperP1.PrimeProductFibres.tuple_permutation",
+        "PaperP1.PrimeProductFibres.fibre_card_le_factorial",
+        "PaperP1.FiniteFibreSquareBudget.aggregate"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17857 jobs); direct axiom audit passed for 17673 declarations using only propext, Classical.choice and Quot.sound; all 17650 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.60 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

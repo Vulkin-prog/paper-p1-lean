@@ -4583,3 +4583,6 @@ public import PaperP1.Arithmetic.PrimeDivisorWeights
 public import PaperP1.Analysis.DirichletPolynomialMeanValue
 public import PaperP1.Analysis.GaussianExponentialSums
 public import PaperP1.Analysis.GaussianFrequencyRowBound
+public import PaperP1.Analysis.FiniteFibreSquareBudget
+public import PaperP1.Analysis.PrimePolynomialMoments
+public import PaperP1.Arithmetic.PrimeProductFibres

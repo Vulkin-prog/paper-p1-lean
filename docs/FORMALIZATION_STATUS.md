@@ -1,6 +1,17 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0663: the ACTUAL basic Dirichlet-
+Current checkpoint P1-MATH-0664: prime-product fibres have at most
+k! members, including repeats. ALL-ORDER actual prime-polynomial
+moments and actual large-value Lebesgue measures are UNCONDITIONAL,
+with every k!, Q^k and coefficient-square dependence explicit.
+Discrete/stronger large values and the multiplicative logarithmic
+short-average assembly remain UNPROVED. T19.17 stays conditional;
+original T1.7 remains complete without external inputs. Coverage:
+164 proved, 1 conditional, 2 in_progress /167; all 73 main results
+proved. Original false scopes and corrected variants unchanged.
+No Palomar registration.
+
+Historical checkpoint P1-MATH-0663: the ACTUAL basic Dirichlet-
 polynomial mean-value estimate is UNCONDITIONAL: integral|F|^2
 <=C*(T/N+1), with ONE explicit absolute C before every coefficient,
 finite support and T>0. Exact Gaussian Gram identities, integrability,
@@ -853,7 +864,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records661 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records662 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -972,7 +983,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **17662 audited theorem/lemma declarations**. This
+- The project currently has **17673 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -30430,3 +30441,18 @@ DirichletPolynomialMeanValue proves an UNCONDITIONAL actual interval estimate fo
 Three modules add twenty-four theorems and two definitions. This supplies the genuine basic Dirichlet-polynomial mean-value estimate required by the multiplicative short-average method, via a Gaussian proof with explicit constants and no assumed Hilbert inequality. It is NOT the decay of short-minus-long averages: the remaining large-value, factor-range, sieve and short-average assembly still require proof. Neither MeanSquareInput nor ConcentrationInput is declared proved. T19.17 therefore remains conditional on its original explicit analytic input. Complete original T1.7 and its exact three families remain unchanged. Coverage stays 164 proved, 1 conditional, 2 in_progress out of 167; all 73 main results proved. The two original false scopes and their checked corrections are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Ubuntu retains about 54.6 GiB; no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17851 jobs); direct axiom audit passed for 17662 declarations using only propext, Classical.choice and Quot.sound; all 17638 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.62 GiB.
+
+
+## All-order prime-polynomial moments with exact factorial multiplicity and actual large-value measures
+
+PrimeProductFibres proves that two actual ordered k-tuples of prime numbers with equal products give permutation-equivalent lists. The actual finite product fibre therefore injects into the list of permutations of one representative, yielding card<=k! even when prime factors repeat. Empty fibres and k=0 are included; no unjustified distinctness or injectivity assumption is used.
+
+FiniteFibreSquareBudget defines the literal sum of complex coefficients over each actual finite fibre. It proves the norm-square Cauchy bound for an arbitrary finite coefficient sum and the aggregate L2 inequality: a fibre-card cap B multiplies the original exact sum of squared norms. Every fibre, image and coefficient sum remains actual finite data.
+
+PrimePolynomialMoments proves the exact finite-power expansion and product-phase identity, groups coefficients by the literal product and retains all repeated-prime contributions. For arbitrary complex prime coefficients c_p it derives the exact coefficient-square budget k!*(sum|c_p|^2)^k. The internal logarithmic mean-value theorem then yields, for EVERY natural k, every actual finite prime set P with p<=Q, Q>0 and T>0, the actual integral over [-T,T] of |sum_{p in P} c_p*exp(-i*t*log p)|^(2k) <=exp(1)*(sqrt(pi)*T+2*pi*Q^k)*k!*(sum_{p in P}|c_p|^2)^k. There is no hidden k-dependent constant: all order dependence is displayed.
+
+The actual Lebesgue real measure of {t in (-T,T]: |sum c_p exp(-i*t*log p)|>=V} is bounded by the SAME expression divided by V^(2k), for every V>0. Continuity, integrability, measurable level sets, finite restricted measure, the Markov inequality and interval endpoints are proved explicitly. No large-value estimate or high-moment bound is supplied as a premise. Three modules add eleven theorems and one definition.
+
+These are genuine unconditional high-moment and large-value measure estimates. They do not yet count a well-spaced discrete set of frequencies or establish the full multiplicative short-average decay. The remaining prime-range specialization, stronger/discrete large values, factor-rich/sieve and short-average assembly remain unfinished. T19.17 retains its existing explicit analytic input. Complete original T1.7 remains unchanged. Coverage stays 164 proved, 1 conditional, 2 in_progress out of 167; all 73 main results proved. The two original false scopes and their checked corrected variants are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Ubuntu retains about 54.6 GiB; no dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17857 jobs); direct axiom audit passed for 17673 declarations using only propext, Classical.choice and Quot.sound; all 17650 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.60 GiB.
