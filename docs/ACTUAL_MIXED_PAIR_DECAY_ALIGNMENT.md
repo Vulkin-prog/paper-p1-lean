@@ -1,0 +1,7 @@
+# Actual first large second small band pairs have a uniform quantitative vanishing contribution
+
+Source: internal preparatory analytic route for companion T19.17. This is not a completed additional manuscript result.
+
+One N0 precedes EVERY N>=N0, EVERY occupied first/second band pair, EVERY complex coefficient unit-bounded on positive integers, and EVERY 0<T<=N/log N. On the ACTUAL mixed set with first prime polynomial >=1/(log(log N))^10 and second <=q^(-1/40), the ACTUAL second prime polynomial times its presence/count weighted cofactor has square integral <=2*C*q^(-1/100). Every actual unit-separated sample set in this region has square sum<=54*C*q^(-1/100). The order is the actual floor(log q/log u), its rounded lower product length is >=T, and all threshold and moment bounds are proved. The literal term, region, measurability, continuity and exact sum-to-rectangle identity are included. Four theorems and two definitions establish this actual pair decay.
+
+The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.07 GiB free on Ubuntu. No dependency download or Palomar registration.

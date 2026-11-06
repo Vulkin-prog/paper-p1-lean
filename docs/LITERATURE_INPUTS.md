@@ -1,6 +1,16 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0804: Actual occupied first and second
+Current checkpoint P1-MATH-0805: Actual first large second small band
+pairs have a uniform quantitative vanishing contribution. The
+complementary bad-prime frequency contribution, the central-frequency
+mean subtraction and complete logarithmic short-average concentration
+remain unproved. T19.17 conditional; original T1.7 unconditional.
+Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main
+proved. Sources, false-scope corrections, compiler and axioms unchanged.
+About 52.07 GiB free on Ubuntu. No dependency download or Palomar
+registration.
+
+Historical checkpoint P1-MATH-0804: Actual occupied first and second
 anchors satisfy all growing amplification order conditions. The
 complementary bad-prime frequency contribution, the central-frequency
 mean subtraction and complete logarithmic short-average concentration
@@ -32680,6 +32690,12 @@ For the ACTUAL first prime band and every 2<=H<=log(log N)^3, occupied anchors u
 
 The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved.
 
+## Internal actual first large second small band pairs have a uniform quantitative vanishing contribution
+
+One N0 precedes EVERY N>=N0, EVERY occupied first/second band pair, EVERY complex coefficient unit-bounded on positive integers, and EVERY 0<T<=N/log N. On the ACTUAL mixed set with first prime polynomial >=1/(log(log N))^10 and second <=q^(-1/40), the ACTUAL second prime polynomial times its presence/count weighted cofactor has square integral <=2*C*q^(-1/100). Every actual unit-separated sample set in this region has square sum<=54*C*q^(-1/100). The order is the actual floor(log q/log u), its rounded lower product length is >=T, and all threshold and moment bounds are proved. The literal term, region, measurability, continuity and exact sum-to-rectangle identity are included. Four theorems and two definitions establish this actual pair decay.
+
+The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -35960,3 +35976,14 @@ For the ACTUAL first prime band and every 2<=H<=log(log N)^3, occupied anchors u
 The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.07 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18175 jobs); direct axiom audit passed for 18590 declarations using only propext, Classical.choice and Quot.sound; all 18776 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.06 GiB.
+
+
+## Actual first large second small band pairs have a uniform quantitative vanishing contribution
+
+Stable ID: p1:internal:actual-mixed-pair-decay. Actual first large second small band pairs have a uniform quantitative vanishing contribution. The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved.
+
+One N0 precedes EVERY N>=N0, EVERY occupied first/second band pair, EVERY complex coefficient unit-bounded on positive integers, and EVERY 0<T<=N/log N. On the ACTUAL mixed set with first prime polynomial >=1/(log(log N))^10 and second <=q^(-1/40), the ACTUAL second prime polynomial times its presence/count weighted cofactor has square integral <=2*C*q^(-1/100). Every actual unit-separated sample set in this region has square sum<=54*C*q^(-1/100). The order is the actual floor(log q/log u), its rounded lower product length is >=T, and all threshold and moment bounds are proved. The literal term, region, measurability, continuity and exact sum-to-rectangle identity are included. Four theorems and two definitions establish this actual pair decay.
+
+The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.07 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18177 jobs); direct axiom audit passed for 18594 declarations using only propext, Classical.choice and Quot.sound; all 18782 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.04 GiB.

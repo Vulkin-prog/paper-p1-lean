@@ -36449,6 +36449,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "2551a7890486799d2707b1ead12cfd84ad7cca77"
+    },
+    {
+      "id": "P1-MATH-0805",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "A generic mixed-moment inequality alone does not establish a vanishing contribution for the paper bands: the actual order, endpoint length, thresholds and uniform anchor conditions must all be proved.",
+      "finding": "One N0 precedes EVERY N>=N0, EVERY occupied first/second band pair, EVERY complex coefficient unit-bounded on positive integers, and EVERY 0<T<=N/log N. On the ACTUAL mixed set with first prime polynomial >=1/(log(log N))^10 and second <=q^(-1/40), the ACTUAL second prime polynomial times its presence/count weighted cofactor has square integral <=2*C*q^(-1/100). Every actual unit-separated sample set in this region has square sum<=54*C*q^(-1/100). The order is the actual floor(log q/log u), its rounded lower product length is >=T, and all threshold and moment bounds are proved. The literal term, region, measurability, continuity and exact sum-to-rectangle identity are included. Four theorems and two definitions establish this actual pair decay.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Actual first large second small band pairs have a uniform quantitative vanishing contribution. The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.ActualMixedPairDecay.region_measurable",
+        "PaperP1.ActualMixedPairDecay.term_continuous",
+        "PaperP1.ActualMixedPairDecay.sum_terms",
+        "PaperP1.ActualMixedPairDecay.estimates",
+        "PaperP1.ActualMixedPairDecay.region",
+        "PaperP1.ActualMixedPairDecay.term"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18177 jobs); direct axiom audit passed for 18594 declarations using only propext, Classical.choice and Quot.sound; all 18782 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.04 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

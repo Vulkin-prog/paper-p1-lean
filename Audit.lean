@@ -3287,6 +3287,10 @@ import PaperP1
 #print axioms PaperP1.ActualEulerBand.real_band_bound
 #print axioms PaperP1.ActualLocalUnitMapGridCount.exists_at_nonexceptional
 #print axioms PaperP1.ActualLocalUnitMapGridCount.exists_control_set_and_maps
+#print axioms PaperP1.ActualMixedPairDecay.region_measurable
+#print axioms PaperP1.ActualMixedPairDecay.term_continuous
+#print axioms PaperP1.ActualMixedPairDecay.sum_terms
+#print axioms PaperP1.ActualMixedPairDecay.estimates
 #print axioms PaperP1.ActualMixedPrimeMean.continuous_mixed_bound
 #print axioms PaperP1.ActualMixedPrimeMean.sampled_mixed_bound
 #print axioms PaperP1.ActualNarrowAmplifiedMean.estimates
