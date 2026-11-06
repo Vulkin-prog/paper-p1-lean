@@ -4328,3 +4328,11 @@ public import PaperP1.Algebra.PrimeClassHeightAuxiliary
 public import PaperP1.Algebra.PrimeClassStandardMonomialAuxiliary
 public import PaperP1.Algebra.StandardMonomialAuxiliary
 public import PaperP1.Algebra.StandardMonomialFamily
+public import PaperP1.Algebra.P3HeightLeadingMonomial
+public import PaperP1.Algebra.P3HomogeneousMonomialWeights
+public import PaperP1.Algebra.P3StandardHeightAuxiliary
+public import PaperP1.Algebra.P3StandardMonomialCount
+public import PaperP1.Algebra.P3StandardMonomialParameters
+public import PaperP1.Algebra.P3StandardMonomialWeightBudget
+public import PaperP1.Algebra.P3StandardMonomialWeightPolynomial
+public import PaperP1.Algebra.WeightedMonomialOrder
