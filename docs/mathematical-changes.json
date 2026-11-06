@@ -27880,6 +27880,55 @@
         "status": "not_integrated"
       },
       "validation_commit": "3a3c549fe9911ce1d9d52d24d3a2f8e29e2b4e41"
+    },
+    {
+      "id": "P1-MATH-0583",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The ordinary covering conversion still needed a literal injective integer lift with coefficient-uniform height, actual source-equation evaluation, chart relevance and exact curve-point membership transport.",
+      "finding": "The literal normalized integer lift is injective on all coordinates, maps height H to exactly H^D, satisfies the actual global source equations, and transports membership in actual source curve ideals to the literal ordinary image ideal at the original height H.",
+      "proposed_revision": "Record the explicit inverse on normalized points, the exact monomial/radical height bound and actual polynomial-evaluation compositions before transferring finite exceptional sets and covering families.",
+      "impact": "Removes assumed point and height correspondences, proves that discarded chart-irrelevant source curves contain no covered normalized points, and supplies exact population cardinality for the ordinary covering conversion.",
+      "evidence": [
+        "PaperP1.NormalizedOrdinarySourceEvaluation.weightedIdeal_le_kernel",
+        "PaperP1.NormalizedOrdinarySourceEvaluation.quotientEvaluation_mk",
+        "PaperP1.NormalizedOrdinarySourceEvaluation.sourceGenerator_value",
+        "PaperP1.NormalizedOrdinarySourceEvaluation.lift_evaluation_comp",
+        "PaperP1.NormalizedOrdinarySourceEvaluation.sourceZ_value",
+        "PaperP1.NormalizedOrdinarySourceEvaluation.projection_value",
+        "PaperP1.NormalizedOrdinarySourceEvaluation.source_projection_value",
+        "PaperP1.NormalizedOrdinarySourceEvaluation.containment_iff",
+        "PaperP1.NormalizedOrdinarySourceEvaluation.source_chart_not_mem",
+        "PaperP1.NormalizedOrdinarySourceEvaluation.ordinary_image_containment",
+        "PaperP1.OrdinarySourceIntegerLift.ordinary_reconstruct",
+        "PaperP1.OrdinarySourceIntegerLift.recover_point",
+        "PaperP1.OrdinarySourceIntegerLift.point_injOn",
+        "PaperP1.OrdinarySourceIntegerLift.coordinates_height",
+        "PaperP1.OrdinarySourceIntegerLift.point_mem_box",
+        "PaperP1.OrdinarySourcePointTransport.point_mem_global",
+        "PaperP1.OrdinarySourcePointTransport.source_curve_chart_not_mem",
+        "PaperP1.OrdinarySourcePointTransport.ordinary_image_point",
+        "PaperP1.OrdinarySourcePointTransport.points_image_card",
+        "PaperP1.NormalizedOrdinarySourceEvaluation.quotientEvaluation",
+        "PaperP1.NormalizedOrdinarySourceEvaluation.sourceEvaluation",
+        "PaperP1.OrdinarySourceIntegerLift.point",
+        "PaperP1.OrdinarySourceIntegerLift.recover"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17207 jobs); direct axiom audit passed for 16536 declarations using only propext, Classical.choice and Quot.sound; all 16224 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.25 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

@@ -4274,3 +4274,6 @@ public import PaperP1.Algebra.GradedVeroneseDilationChart
 public import PaperP1.Algebra.HomogeneousDilation
 public import PaperP1.Geometry.OrdinaryCurveVeroneseHeight
 public import PaperP1.Geometry.OrdinarySurfaceCurveRegrading
+public import PaperP1.Arithmetic.NormalizedOrdinarySourceEvaluation
+public import PaperP1.Arithmetic.OrdinarySourceIntegerLift
+public import PaperP1.Arithmetic.OrdinarySourcePointTransport
