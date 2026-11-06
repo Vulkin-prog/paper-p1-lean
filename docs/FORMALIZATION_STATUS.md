@@ -1,6 +1,17 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0696: ACTUAL finite-prime integer
+Current checkpoint P1-MATH-0697: the ACTUAL sharp triple sum
+equals the literal triple convolution EXACTLY. Positive integer
+filters give the quotient endpoints, and the completed q prime
+band covers every required prime; extra primes contribute zero.
+Repeated primes and products are retained. Whole Euler/Perron
+integral transfer, full frequency budget and final short-average
+assembly remain unfinished. T19.17 conditional; original T1.7
+complete. Coverage: 164 proved, 1 conditional, 2 in_progress /167;
+all 73 main proved. False scopes/corrections unchanged.
+No Palomar registration.
+
+Historical checkpoint P1-MATH-0696: ACTUAL finite-prime integer
 supports contain the required sharp interval. Full series
 truncation is uniform before ALL coefficients and frequencies
 for each FIXED prime set. An actual reciprocal majorant bounds
@@ -1191,7 +1202,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records694 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records695 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -1310,7 +1321,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **18051 audited theorem/lemma declarations**. This
+- The project currently has **18058 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -31227,3 +31238,16 @@ The actual reciprocal majorant(P)=sum_{n factored over P}1/n is nonnegative and 
 This supplies the actual supports, full-series uniform truncation and domination needed for the next Euler/Perron transfer. The literal sharp triple identity, passage through the whole frequency integral, full Euler frequency budget and final short-average assembly remain unfinished. T19.17 remains conditional and original complete T1.7 unconditional. Coverage remains 164 proved, 1 conditional, 2 in_progress /167; all 73 main results proved. Original false scopes/corrections, source hashes, pinned Lean and allowed axioms remain unchanged. Ubuntu has about 54.0 GiB free; no dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17959 jobs); direct axiom audit passed for 18051 declarations using only propext, Classical.choice and Quot.sound; all 18122 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.99 GiB.
+
+
+## Exact actual sharp triple identity with prime band completion
+
+TripleSharpIdentity proves the literal finite-set identity S intersect {n:d*n<=X} = [1,floor(X/d)] for any positive d, whenever S contains every integer from 1 to X and contains only positive integers. Both membership directions, positivity and the integer quotient endpoint are internal.
+
+Expanding the ACTUAL sharp triple Perron sum over (P x Q) x S therefore gives the literal three nested sums with n<=X/(p*q). If Q contains every prime <=X/p for every actual p in P, the sharp sum equals RealTripleConvolution.triple EXACTLY. Extra primes in Q contribute zero because their integer quotient is zero. No analytic estimate or asymptotic identity is used.
+
+The ACTUAL bandPrimes(X,U) consists of all primes q<=X with log(q)<=2*U. Whenever log(X/p)<=2*U, this set contains every prime q<=floor(X/p). Its primality and logarithmic bound are proved directly. Thus the exact sharp identity holds with the same completed prime band required by the checked analytic band estimate. Repeated primes p=q and all integer product multiplicities are retained. Seven theorems and one definition are added in one module.
+
+This closes the literal sharp-triple identification, including the natural quotient boundary and completion of the q prime band. Passage of the full Euler series through the whole frequency integral, the full Euler frequency budget and final short-average assembly remain unfinished. T19.17 remains conditional, original complete T1.7 unconditional. Coverage remains 164 proved, 1 conditional, 2 in_progress /167; all 73 main results proved. Original false scopes/corrections, preserved sources, pinned Lean and allowed axioms remain unchanged. Ubuntu has about 54.0 GiB free; no dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17961 jobs); direct axiom audit passed for 18058 declarations using only propext, Classical.choice and Quot.sound; all 18130 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.97 GiB.

@@ -1,6 +1,17 @@
 # Mathematical corrections and improvements
 
-Current checkpoint P1-MATH-0696: ACTUAL finite-prime integer
+Current checkpoint P1-MATH-0697: the ACTUAL sharp triple sum
+equals the literal triple convolution EXACTLY. Positive integer
+filters give the quotient endpoints, and the completed q prime
+band covers every required prime; extra primes contribute zero.
+Repeated primes and products are retained. Whole Euler/Perron
+integral transfer, full frequency budget and final short-average
+assembly remain unfinished. T19.17 conditional; original T1.7
+complete. Coverage: 164 proved, 1 conditional, 2 in_progress /167;
+all 73 main proved. False scopes/corrections unchanged.
+No Palomar registration.
+
+Historical checkpoint P1-MATH-0696: ACTUAL finite-prime integer
 supports contain the required sharp interval. Full series
 truncation is uniform before ALL coefficients and frequencies
 for each FIXED prime set. An actual reciprocal majorant bounds
@@ -1068,7 +1079,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**694 mathematical improvements and two statement-scope corrections are confirmed.**
+**695 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -30334,3 +30345,16 @@ The actual reciprocal majorant(P)=sum_{n factored over P}1/n is nonnegative and 
 This supplies the actual supports, full-series uniform truncation and domination needed for the next Euler/Perron transfer. The literal sharp triple identity, passage through the whole frequency integral, full Euler frequency budget and final short-average assembly remain unfinished. T19.17 remains conditional and original complete T1.7 unconditional. Coverage remains 164 proved, 1 conditional, 2 in_progress /167; all 73 main results proved. Original false scopes/corrections, source hashes, pinned Lean and allowed axioms remain unchanged. Ubuntu has about 54.0 GiB free; no dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17959 jobs); direct axiom audit passed for 18051 declarations using only propext, Classical.choice and Quot.sound; all 18122 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.99 GiB.
+
+
+## Exact actual sharp triple identity with prime band completion
+
+TripleSharpIdentity proves the literal finite-set identity S intersect {n:d*n<=X} = [1,floor(X/d)] for any positive d, whenever S contains every integer from 1 to X and contains only positive integers. Both membership directions, positivity and the integer quotient endpoint are internal.
+
+Expanding the ACTUAL sharp triple Perron sum over (P x Q) x S therefore gives the literal three nested sums with n<=X/(p*q). If Q contains every prime <=X/p for every actual p in P, the sharp sum equals RealTripleConvolution.triple EXACTLY. Extra primes in Q contribute zero because their integer quotient is zero. No analytic estimate or asymptotic identity is used.
+
+The ACTUAL bandPrimes(X,U) consists of all primes q<=X with log(q)<=2*U. Whenever log(X/p)<=2*U, this set contains every prime q<=floor(X/p). Its primality and logarithmic bound are proved directly. Thus the exact sharp identity holds with the same completed prime band required by the checked analytic band estimate. Repeated primes p=q and all integer product multiplicities are retained. Seven theorems and one definition are added in one module.
+
+This closes the literal sharp-triple identification, including the natural quotient boundary and completion of the q prime band. Passage of the full Euler series through the whole frequency integral, the full Euler frequency budget and final short-average assembly remain unfinished. T19.17 remains conditional, original complete T1.7 unconditional. Coverage remains 164 proved, 1 conditional, 2 in_progress /167; all 73 main results proved. Original false scopes/corrections, preserved sources, pinned Lean and allowed axioms remain unchanged. Ubuntu has about 54.0 GiB free; no dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17961 jobs); direct axiom audit passed for 18058 declarations using only propext, Classical.choice and Quot.sound; all 18130 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.97 GiB.
