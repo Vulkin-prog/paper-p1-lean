@@ -1,6 +1,15 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0826: Every moment order retains an explicit
+Current checkpoint P1-MATH-0827: Actual prime high-moment samples retain
+every variable-span loss. The joint large-prime frequency contribution,
+the central-frequency mean comparison and complete logarithmic short-
+average concentration remain unproved. T19.17 conditional; original T1.7
+unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167;
+all 73 main proved. Sources, false-scope corrections, compiler and
+axioms unchanged. About 51.67 GiB free on Ubuntu. No dependency download
+or Palomar registration.
+
+Historical checkpoint P1-MATH-0826: Every moment order retains an explicit
 powered narrow-span cost. The joint large-prime frequency contribution,
 the central-frequency mean comparison and complete logarithmic short-
 average concentration remain unproved. T19.17 conditional; original T1.7
@@ -33012,6 +33021,12 @@ For EVERY integer k, including k>H, the ACTUAL rounded narrow endpoints satisfy 
 
 The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
 
+## Internal actual prime high-moment samples retain every variable-span loss
+
+For arbitrary prime supports, moment orders and powered span U^k<=exp(3*r)*L^k, the ACTUAL separated sample moment and large-value cardinality are bounded by the literal factor C*exp(6*r)*(2+9*r^2)*budget(k,P), with the cardinality additionally divided by V^(2*k). Two theorems prove these actual statements at height T<=L^k. No k<=H restriction or bounded-width approximation is imposed.
+
+The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -36534,3 +36549,14 @@ For EVERY integer k, including k>H, the ACTUAL rounded narrow endpoints satisfy 
 The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.67 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18219 jobs); direct axiom audit passed for 18663 declarations using only propext, Classical.choice and Quot.sound; all 18865 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.67 GiB.
+
+
+## Actual prime high-moment samples retain every variable-span loss
+
+Stable ID: p1:internal:variable-prime-power-large-values. Actual prime high-moment samples retain every variable-span loss. The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
+
+For arbitrary prime supports, moment orders and powered span U^k<=exp(3*r)*L^k, the ACTUAL separated sample moment and large-value cardinality are bounded by the literal factor C*exp(6*r)*(2+9*r^2)*budget(k,P), with the cardinality additionally divided by V^(2*k). Two theorems prove these actual statements at height T<=L^k. No k<=H restriction or bounded-width approximation is imposed.
+
+The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.67 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18221 jobs); direct axiom audit passed for 18665 declarations using only propext, Classical.choice and Quot.sound; all 18867 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.65 GiB.

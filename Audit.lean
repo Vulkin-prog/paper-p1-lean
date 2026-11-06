@@ -5340,6 +5340,8 @@ import PaperP1
 #print axioms PaperP1.VariableAmplificationSpan.rounded_power_bound
 #print axioms PaperP1.VariableAmplificationSpan.bandwidth_bound
 #print axioms PaperP1.VariableAmplificationSpan.sampled_factor_bound
+#print axioms PaperP1.VariablePrimePowerLargeValues.sampled_moment_bound
+#print axioms PaperP1.VariablePrimePowerLargeValues.sampled_large_values_card
 #print axioms PaperP1.VerticalGridLattice.center_identity
 #print axioms PaperP1.VerticalGridLattice.point_box
 #print axioms PaperP1.WeightedDivisorSquare.divisorSum_nonneg
