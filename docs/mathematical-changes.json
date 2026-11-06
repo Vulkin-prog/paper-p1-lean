@@ -41806,6 +41806,39 @@
         "status": "not_integrated"
       },
       "validation_commit": "762603e23e3f7c79c5b73d704f9fd702e90937d6"
+    },
+    {
+      "id": "P1-MATH-0974",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "Internal exact geometry for transferring actual Gaussian square energy to the count of literal bad windows.",
+      "finding": "Six theorems and one definition prove upper and lower logarithmic ratio bounds with all endpoint conditions, the explicit distance gap outside an integer window for every center in its middle unit cell, measurability of the negative-logarithmic cells, their exact lower real measure 1/M under the actual endpoint bound, and pairwise disjointness for distinct integer indices. All integers, half-open endpoints and real centers are literal.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Actual logarithmic window cells have exact gap disjointness and volume controls. The actual off-central estimate, the ordinary smooth long-interval mean comparison and the uniform Gaussian mean-square comparison are proved. Localization of the Gaussian averages to the literal logarithmic windows remains unproved, so T19.17 stays conditional. The stronger uniform sharp short-average theorem for all real completely multiplicative functions is not established.",
+      "evidence": [
+        "PaperP1.LogarithmicWindowCells.log_ratio_upper",
+        "PaperP1.LogarithmicWindowCells.log_ratio_lower",
+        "PaperP1.LogarithmicWindowCells.outside_window_gap",
+        "PaperP1.LogarithmicWindowCells.cell_measurable",
+        "PaperP1.LogarithmicWindowCells.cell_measure_lower",
+        "PaperP1.LogarithmicWindowCells.cells_disjoint",
+        "PaperP1.LogarithmicWindowCells.cell"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18515 jobs); direct axiom audit passed for 19263 declarations using only propext, Classical.choice and Quot.sound; all 19577 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.08 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

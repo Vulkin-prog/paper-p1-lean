@@ -1,6 +1,19 @@
 # Mathematical corrections and improvements
 
-Current checkpoint P1-MATH-0973: Actual finite logarithmic Gaussian
+Current checkpoint P1-MATH-0974: Actual logarithmic window cells have
+exact gap disjointness and volume controls. The actual off-central
+estimate, the ordinary smooth long-interval mean comparison and the
+uniform Gaussian mean-square comparison are proved. Localization of the
+Gaussian averages to the literal logarithmic windows remains unproved,
+so T19.17 stays conditional. The stronger uniform sharp short-average
+theorem for all real completely multiplicative functions is not
+established. T19.17 conditional; original T1.7 unconditional. Coverage:
+164 proved, 1 conditional, 2 in_progress /167; all 73 main proved.
+Sources, false-scope corrections, compiler and axioms unchanged. About
+52.08 GiB free on Ubuntu. No dependency download or Palomar
+registration.
+
+Historical checkpoint P1-MATH-0973: Actual finite logarithmic Gaussian
 averages have a proved one-candidate localization budget. The actual
 off-central estimate, the ordinary smooth long-interval mean comparison
 and the uniform Gaussian mean-square comparison are proved. Localization
@@ -3585,7 +3598,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**971 mathematical improvements and two statement-scope corrections are confirmed.**
+**972 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -35432,3 +35445,12 @@ Five theorems prove the actual Gaussian exponential comparison and weighted fini
 The actual off-central estimate, the ordinary smooth long-interval mean comparison and the uniform Gaussian mean-square comparison are proved. Localization of the Gaussian averages to the literal logarithmic windows remains unproved, so T19.17 stays conditional. The stronger uniform sharp short-average theorem for all real completely multiplicative functions is not established. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.12 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18513 jobs); direct axiom audit passed for 19257 declarations using only propext, Classical.choice and Quot.sound; all 19570 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.10 GiB.
+
+
+## Actual logarithmic window cells have exact gap disjointness and volume controls
+
+Six theorems and one definition prove upper and lower logarithmic ratio bounds with all endpoint conditions, the explicit distance gap outside an integer window for every center in its middle unit cell, measurability of the negative-logarithmic cells, their exact lower real measure 1/M under the actual endpoint bound, and pairwise disjointness for distinct integer indices. All integers, half-open endpoints and real centers are literal.
+
+The actual off-central estimate, the ordinary smooth long-interval mean comparison and the uniform Gaussian mean-square comparison are proved. Localization of the Gaussian averages to the literal logarithmic windows remains unproved, so T19.17 stays conditional. The stronger uniform sharp short-average theorem for all real completely multiplicative functions is not established. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.08 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18515 jobs); direct axiom audit passed for 19263 declarations using only propext, Classical.choice and Quot.sound; all 19577 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.08 GiB.

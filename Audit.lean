@@ -4600,6 +4600,12 @@ import PaperP1
 #print axioms PaperP1.LogarithmicSquareRootBound.choice_bounds
 #print axioms PaperP1.LogarithmicSquareRootBound.trivial_bound
 #print axioms PaperP1.LogarithmicSquareRootBound.square_bound
+#print axioms PaperP1.LogarithmicWindowCells.log_ratio_upper
+#print axioms PaperP1.LogarithmicWindowCells.log_ratio_lower
+#print axioms PaperP1.LogarithmicWindowCells.outside_window_gap
+#print axioms PaperP1.LogarithmicWindowCells.cell_measurable
+#print axioms PaperP1.LogarithmicWindowCells.cell_measure_lower
+#print axioms PaperP1.LogarithmicWindowCells.cells_disjoint
 #print axioms PaperP1.LognormalBlockCancellation.phase_prefix_identity
 #print axioms PaperP1.LognormalBlockCancellation.uniform_bound
 #print axioms PaperP1.LognormalDilatedKernel.weight_dilation

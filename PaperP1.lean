@@ -4913,3 +4913,4 @@ public import PaperP1.Analysis.GaussianExtendedFrequencyEnergy
 public import PaperP1.Analysis.ActualGaussianMeanComparison
 public import PaperP1.Analysis.ScaledGaussianKernel
 public import PaperP1.Analysis.GaussianLocalizationBudget
+public import PaperP1.Analysis.LogarithmicWindowCells
