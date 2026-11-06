@@ -4246,6 +4246,11 @@ import PaperP1
 #print axioms PaperP1.GaussianLaplaceKernel.vertical_norm
 #print axioms PaperP1.GaussianLaplaceKernel.vertical_ne_zero
 #print axioms PaperP1.GaussianLaplaceKernel.kernel_complex_formula
+#print axioms PaperP1.GaussianSlopeDecay.quadratic_bound
+#print axioms PaperP1.GaussianSlopeDecay.gaussian_le_one
+#print axioms PaperP1.GaussianSlopeDecay.absolute_decay_bound
+#print axioms PaperP1.GaussianSlopeDecay.slope_decay_bound
+#print axioms PaperP1.GaussianSlopeDecay.slope_uniform_bound
 #print axioms PaperP1.GeometricBandSplit.scale_succ
 #print axioms PaperP1.GeometricBandSplit.scale_sum
 #print axioms PaperP1.GeometricBandSplit.scale_sum_le

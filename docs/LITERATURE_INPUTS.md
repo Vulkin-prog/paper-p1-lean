@@ -1,6 +1,15 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0904: The actual lognormal sieve weight has a
+Current checkpoint P1-MATH-0905: Actual Gaussian slope factors have
+proved uniform and exponential decay bounds. The triple-large prime
+frequency contribution, the central-frequency mean comparison and
+complete logarithmic short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 53.41 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0904: The actual lognormal sieve weight has a
 proved majorant and derivative. The triple-large prime frequency
 contribution, the central-frequency mean comparison and complete
 logarithmic short-average concentration remain unproved. T19.17
@@ -34185,6 +34194,12 @@ Six theorems and one definition construct the ACTUAL positive weight w_A(x)=exp(
 
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
 
+## Internal actual gaussian slope factors have proved uniform and exponential decay bounds
+
+Five theorems prove the complete-square Gaussian bound for every real parameter, the bound exp(-x^2)<=1, the absolute exponential decay, and the actual slope bounds (1+2|x|)*exp(-x^2)<=2*exp(2)*exp(-2|x|)<=2*exp(2). These are exact real inequalities used to control the constructed lognormal weight and its derivative.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -38565,3 +38580,14 @@ Six theorems and one definition construct the ACTUAL positive weight w_A(x)=exp(
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.41 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18375 jobs); direct axiom audit passed for 18963 declarations using only propext, Classical.choice and Quot.sound; all 19211 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.39 GiB.
+
+
+## Actual Gaussian slope factors have proved uniform and exponential decay bounds
+
+Stable ID: p1:internal:gaussian-slope-decay. Actual Gaussian slope factors have proved uniform and exponential decay bounds. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
+
+Five theorems prove the complete-square Gaussian bound for every real parameter, the bound exp(-x^2)<=1, the absolute exponential decay, and the actual slope bounds (1+2|x|)*exp(-x^2)<=2*exp(2)*exp(-2|x|)<=2*exp(2). These are exact real inequalities used to control the constructed lognormal weight and its derivative.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.41 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18377 jobs); direct axiom audit passed for 18968 declarations using only propext, Classical.choice and Quot.sound; all 19216 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.37 GiB.

@@ -4844,3 +4844,4 @@ public import PaperP1.Analysis.FixedPowerPrimeBandDensity
 public import PaperP1.Analysis.PrecisionChosenPrimeBand
 public import PaperP1.Analysis.FiniteAbelVariation
 public import PaperP1.Analysis.LognormalSieveWeight
+public import PaperP1.Analysis.GaussianSlopeDecay
