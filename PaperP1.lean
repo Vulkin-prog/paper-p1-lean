@@ -4617,3 +4617,5 @@ public import PaperP1.Analysis.FinitePrimeTruncatedSquareMean
 public import PaperP1.Arithmetic.DivisorUpperTransform
 public import PaperP1.Arithmetic.ReciprocalDivisibilitySieve
 public import PaperP1.Arithmetic.OptimalSelbergWeights
+public import PaperP1.Arithmetic.SelbergLambdaError
+public import PaperP1.Arithmetic.SquarefreeHarmonicLower

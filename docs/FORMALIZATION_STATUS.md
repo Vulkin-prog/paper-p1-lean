@@ -1,6 +1,16 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0680: ACTUAL normalized Selberg weights
+Current checkpoint P1-MATH-0681: the ACTUAL finite interval sieve
+is proved with G>=log(Z+1)/2 and aggregate error<=Z^4.
+The literal primorial coprime count is <=2*(L+1)/log(Z+1)+Z^4.
+Actual prime-count conversion and width optimization remain to be
+assembled. Stronger weighted-prime mean, full dyadic transfer and
+short-average assembly remain UNPROVED. T19.17 conditional;
+original T1.7 complete. Coverage: 164 proved, 1 conditional,
+2 in_progress /167; all 73 main proved. False scopes/corrections
+unchanged. No Palomar registration.
+
+Historical checkpoint P1-MATH-0680: ACTUAL normalized Selberg weights
 have weight(1)=1, exact main sum 1/G and proved positive G.
 Actual support d<=Z and |weight(d)|<=1/nu(d) are internal.
 Aggregate error, logarithmic denominator, local prime density and
@@ -1034,7 +1044,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records678 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records679 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -1153,7 +1163,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **17869 audited theorem/lemma declarations**. This
+- The project currently has **17882 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -30848,3 +30858,16 @@ The actual weight vanishes for every divisor d|P above Z. The inverse transform 
 This closes the concrete normalization, exact main term, finite support and individual weight bounds. The aggregate lambda-square error bound, a logarithmic lower bound for G and the resulting actual local prime-count bound remain unfinished. The stronger weighted-prime mean required in the short Halasz proof has NOT been proved. Full dyadic multiplicative mean transfer and logarithmic short-average assembly remain unfinished. T19.17 retains its explicit analytic input; original complete T1.7 remains unconditional. Coverage stays 164 proved, 1 conditional, 2 in_progress out of 167; all 73 main results proved. Original false scopes and checked corrections are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and allowed axioms are unchanged. Ubuntu retains about 54.3 GiB; no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17921 jobs); direct axiom audit passed for 17869 declarations using only propext, Classical.choice and Quot.sound; all 17886 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.28 GiB.
+
+
+## Actual finite Selberg sieve with logarithmic denominator and controlled error
+
+SquarefreeHarmonicLower defines the ACTUAL squarefree integers in [1,Z] and their literal reciprocal sum. Every positive integer n<=Z is covered by an actual pair (b,a), with n=b^2*a, b,a>=1, b,a<=Z and a squarefree. The finite image cover and nonnegative reciprocal sums give H_Z<=2*sum_{a<=Z,squarefree}1/a, using the internally proved reciprocal-square bound. Thus the squarefree harmonic sum is at least log(Z+1)/2, with no assumed squarefree density or unproved counting asymptotic.
+
+For EVERY actual BoundingSieve, selbergTerms(d)>=nu(d) on divisors d|P is proved from its positive prime densities below one. Every squarefree d<=Z divides the actual primorial(Z). These facts prove that the literal denominator G for the reciprocal interval sieve with that modulus is at least log(Z+1)/2. All index containments and nonnegativity for the extended finite sums are checked.
+
+SelbergLambdaError proves the actual divisor/lcm interchange and the universal absolute lambda-square bound sum_{d|P}|lambdaSquared(w)(d)| <= (sum_{d|P}|w(d)|)^2 for any nonzero P. For the constructed reciprocal-density weights it proves |w(d)|<=d, sum|w(d)|<=Z^2 and the aggregate error <=Z^4. The ACTUAL coprime-filter cardinality in the literal source window is consequently at most (L+1)/G+Z^4, for every x>=2, squarefree P and Z>=1. For P=primorial(Z) this becomes the unconditional explicit bound 2*(L+1)/log(Z+1)+Z^4. Neither a logarithmic denominator nor an aggregate error bound is a premise. Two modules add thirteen theorems and two definitions.
+
+This closes the finite optimized interval sieve including its logarithmic denominator and all errors. Its conversion to the original actual prime count and optimization in the interval width remain to be assembled. The stronger weighted-prime mean, full dyadic Halasz transfer and logarithmic short-average assembly remain unfinished. T19.17 retains its explicit analytic input; original complete T1.7 remains unconditional. Coverage stays 164 proved, 1 conditional, 2 in_progress out of 167; all 73 main results proved. Original false scopes and checked corrections are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and allowed axioms are unchanged. Ubuntu retains about 54.3 GiB; no dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17925 jobs); direct axiom audit passed for 17882 declarations using only propext, Classical.choice and Quot.sound; all 17901 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.26 GiB.

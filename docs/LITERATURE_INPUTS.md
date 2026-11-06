@@ -1,6 +1,16 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0680: ACTUAL normalized Selberg weights
+Current checkpoint P1-MATH-0681: the ACTUAL finite interval sieve
+is proved with G>=log(Z+1)/2 and aggregate error<=Z^4.
+The literal primorial coprime count is <=2*(L+1)/log(Z+1)+Z^4.
+Actual prime-count conversion and width optimization remain to be
+assembled. Stronger weighted-prime mean, full dyadic transfer and
+short-average assembly remain UNPROVED. T19.17 conditional;
+original T1.7 complete. Coverage: 164 proved, 1 conditional,
+2 in_progress /167; all 73 main proved. False scopes/corrections
+unchanged. No Palomar registration.
+
+Historical checkpoint P1-MATH-0680: ACTUAL normalized Selberg weights
 have weight(1)=1, exact main sum 1/G and proved positive G.
 Actual support d<=Z and |weight(d)|<=1/nu(d) are internal.
 Aggregate error, logarithmic denominator, local prime density and
@@ -30718,6 +30728,15 @@ proof before a local prime-density estimate follows. No stronger
 weighted-prime mean or T19.17 completion is claimed. Original T1.7
 remains unconditional.
 
+## Internal finite logarithmic Selberg interval sieve
+
+P1-MATH-0681 proves an actual squarefree harmonic lower bound and
+G>=log(Z+1)/2, plus the complete aggregate lambda-square error<=Z^4.
+The actual coprime interval count is <=2*(L+1)/log(Z+1)+Z^4.
+Prime-count conversion and level optimization remain to be assembled;
+the stronger weighted-prime mean and full short-average assembly
+remain unproved. Original T1.7 is unconditional; T19.17 is conditional.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -32468,3 +32487,18 @@ The actual weight vanishes for every divisor d|P above Z. The inverse transform 
 This closes the concrete normalization, exact main term, finite support and individual weight bounds. The aggregate lambda-square error bound, a logarithmic lower bound for G and the resulting actual local prime-count bound remain unfinished. The stronger weighted-prime mean required in the short Halasz proof has NOT been proved. Full dyadic multiplicative mean transfer and logarithmic short-average assembly remain unfinished. T19.17 retains its explicit analytic input; original complete T1.7 remains unconditional. Coverage stays 164 proved, 1 conditional, 2 in_progress out of 167; all 73 main results proved. Original false scopes and checked corrections are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and allowed axioms are unchanged. Ubuntu retains about 54.3 GiB; no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17921 jobs); direct axiom audit passed for 17869 declarations using only propext, Classical.choice and Quot.sound; all 17886 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.28 GiB.
+
+
+## Actual finite Selberg sieve with logarithmic denominator and controlled error
+
+Stable ID: p1:internal:actual-finite-logarithmic-selberg-sieve. The actual finite Selberg bound, logarithmic denominator and aggregate lambda-square error are internal. Prime-count conversion and width optimization remain to be assembled.
+
+SquarefreeHarmonicLower defines the ACTUAL squarefree integers in [1,Z] and their literal reciprocal sum. Every positive integer n<=Z is covered by an actual pair (b,a), with n=b^2*a, b,a>=1, b,a<=Z and a squarefree. The finite image cover and nonnegative reciprocal sums give H_Z<=2*sum_{a<=Z,squarefree}1/a, using the internally proved reciprocal-square bound. Thus the squarefree harmonic sum is at least log(Z+1)/2, with no assumed squarefree density or unproved counting asymptotic.
+
+For EVERY actual BoundingSieve, selbergTerms(d)>=nu(d) on divisors d|P is proved from its positive prime densities below one. Every squarefree d<=Z divides the actual primorial(Z). These facts prove that the literal denominator G for the reciprocal interval sieve with that modulus is at least log(Z+1)/2. All index containments and nonnegativity for the extended finite sums are checked.
+
+SelbergLambdaError proves the actual divisor/lcm interchange and the universal absolute lambda-square bound sum_{d|P}|lambdaSquared(w)(d)| <= (sum_{d|P}|w(d)|)^2 for any nonzero P. For the constructed reciprocal-density weights it proves |w(d)|<=d, sum|w(d)|<=Z^2 and the aggregate error <=Z^4. The ACTUAL coprime-filter cardinality in the literal source window is consequently at most (L+1)/G+Z^4, for every x>=2, squarefree P and Z>=1. For P=primorial(Z) this becomes the unconditional explicit bound 2*(L+1)/log(Z+1)+Z^4. Neither a logarithmic denominator nor an aggregate error bound is a premise. Two modules add thirteen theorems and two definitions.
+
+This closes the finite optimized interval sieve including its logarithmic denominator and all errors. Its conversion to the original actual prime count and optimization in the interval width remain to be assembled. The stronger weighted-prime mean, full dyadic Halasz transfer and logarithmic short-average assembly remain unfinished. T19.17 retains its explicit analytic input; original complete T1.7 remains unconditional. Coverage stays 164 proved, 1 conditional, 2 in_progress out of 167; all 73 main results proved. Original false scopes and checked corrections are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and allowed axioms are unchanged. Ubuntu retains about 54.3 GiB; no dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17925 jobs); direct axiom audit passed for 17882 declarations using only propext, Classical.choice and Quot.sound; all 17901 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.26 GiB.

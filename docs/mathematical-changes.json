@@ -32211,6 +32211,47 @@
         "status": "not_integrated"
       },
       "validation_commit": "aa73bda3d22f92c8170f0fe485e7d0ec09632b73"
+    },
+    {
+      "id": "P1-MATH-0681",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The constructed Selberg weights still needed an aggregate error bound and a proved logarithmic denominator. Individual weight control alone does not establish either estimate.",
+      "finding": "A literal square/squarefree finite cover proves a squarefree harmonic lower bound. It gives G>=log(Z+1)/2, while divisor/lcm sums give aggregate error <=Z^4. The actual coprime interval count is therefore <=2*(L+1)/log(Z+1)+Z^4.",
+      "proposed_revision": "Use the explicit finite sieve with its proved logarithmic denominator and aggregate error, then convert it to the actual prime count and optimize the integer level before applying a local prime-density theorem.",
+      "impact": "Closes the unconditional finite interval sieve, including the logarithmic denominator and full error. Prime-count conversion/optimization, weighted-prime mean and T19.17 remain unfinished.",
+      "evidence": [
+        "PaperP1.SelbergLambdaError.divisor_lcm_extension",
+        "PaperP1.SelbergLambdaError.lambda_abs_point",
+        "PaperP1.SelbergLambdaError.lambda_abs_sum",
+        "PaperP1.SelbergLambdaError.reciprocal_weight_abs",
+        "PaperP1.SelbergLambdaError.reciprocal_weight_sum",
+        "PaperP1.SelbergLambdaError.reciprocal_error_bound",
+        "PaperP1.SelbergLambdaError.actual_optimized_sieve",
+        "PaperP1.SelbergLambdaError.actual_primorial_sieve",
+        "PaperP1.SquarefreeHarmonicLower.harmonic_le_twice_squarefree",
+        "PaperP1.SquarefreeHarmonicLower.logarithmic_lower",
+        "PaperP1.SquarefreeHarmonicLower.selberg_term_ge_density",
+        "PaperP1.SquarefreeHarmonicLower.squarefree_divides_primorial",
+        "PaperP1.SquarefreeHarmonicLower.denominator_log_lower",
+        "PaperP1.SquarefreeHarmonicLower.squarefreeSet",
+        "PaperP1.SquarefreeHarmonicLower.squarefreeHarmonic"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17925 jobs); direct axiom audit passed for 17882 declarations using only propext, Classical.choice and Quot.sound; all 17901 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.26 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

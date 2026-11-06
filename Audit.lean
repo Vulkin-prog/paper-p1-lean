@@ -7730,6 +7730,14 @@ import PaperP1
 #print axioms PaperP1.ScaledTargetValues.new_card
 #print axioms PaperP1.ScaledTargetValues.intersection_card
 #print axioms PaperP1.ScaledTargetValues.all_card_le
+#print axioms PaperP1.SelbergLambdaError.divisor_lcm_extension
+#print axioms PaperP1.SelbergLambdaError.lambda_abs_point
+#print axioms PaperP1.SelbergLambdaError.lambda_abs_sum
+#print axioms PaperP1.SelbergLambdaError.reciprocal_weight_abs
+#print axioms PaperP1.SelbergLambdaError.reciprocal_weight_sum
+#print axioms PaperP1.SelbergLambdaError.reciprocal_error_bound
+#print axioms PaperP1.SelbergLambdaError.actual_optimized_sieve
+#print axioms PaperP1.SelbergLambdaError.actual_primorial_sieve
 #print axioms PaperP1.SelectedAnchorRelation.coordinate_alternative
 #print axioms PaperP1.SelectedKernelSourceFamilies.square_parity_relation
 #print axioms PaperP1.SelectedKernelSourceFamilies.selection_sum
@@ -8215,6 +8223,11 @@ import PaperP1
 #print axioms PaperP1.SquarePoolLower.naturalValues_card_ge_sqrt
 #print axioms PaperP1.SquarePoolLower.sqrt_le_twice_nat_sqrt
 #print axioms PaperP1.SquarePoolLower.poolValues_card_lower
+#print axioms PaperP1.SquarefreeHarmonicLower.harmonic_le_twice_squarefree
+#print axioms PaperP1.SquarefreeHarmonicLower.logarithmic_lower
+#print axioms PaperP1.SquarefreeHarmonicLower.selberg_term_ge_density
+#print axioms PaperP1.SquarefreeHarmonicLower.squarefree_divides_primorial
+#print axioms PaperP1.SquarefreeHarmonicLower.denominator_log_lower
 #print axioms PaperP1.SquarefreeKernelProducts.mem_support_iff
 #print axioms PaperP1.SquarefreeKernelProducts.support_mul
 #print axioms PaperP1.SquarefreeKernelProducts.support_square
