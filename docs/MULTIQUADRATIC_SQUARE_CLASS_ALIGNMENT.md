@@ -1,6 +1,15 @@
 # Multiquadratic split radicands: exact square-class independence
 
-Current checkpoint P1-MATH-0866: The actual power gain holds uniformly
+Current checkpoint P1-MATH-0867: Every partial logarithmic sum has a
+uniform power gain on fixed polynomial frequency ranges. The triple-
+large prime frequency contribution, the central-frequency mean
+comparison and complete logarithmic short-average concentration remain
+unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164
+proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources,
+false-scope corrections, compiler and axioms unchanged. About 54.08 GiB
+free on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0866: The actual power gain holds uniformly
 for every partial logarithmic sum. The triple-large prime frequency
 contribution, the central-frequency mean comparison and complete
 logarithmic short-average concentration remain unproved. T19.17
@@ -27443,3 +27452,12 @@ For each fixed n>0, ONE X0 precedes all X>=X0, all frequencies X^(3/4)<=|t|<=X^(
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 54.08 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18299 jobs); direct axiom audit passed for 18812 declarations using only propext, Classical.choice and Quot.sound; all 19040 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.08 GiB.
+
+
+## Every partial logarithmic sum has a uniform power gain on fixed polynomial frequency ranges
+
+For fixed real a,b, ONE X0 precedes every X>=X0, ALL X^a<=|t|<=X^b and ALL L<=X. The ACTUAL partial logarithmic sum is bounded by C_b*X^(1-gamma_(a,b)), with the same strictly positive gamma when a>0. Four theorems establish the elementary partial estimate 4*X/|t|+|t|, the uniform bound, its normalized form and the positive-power package. The cutoff precedes both frequency and partial length.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 54.08 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18301 jobs); direct axiom audit passed for 18816 declarations using only propext, Classical.choice and Quot.sound; all 19044 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.06 GiB.

@@ -4651,6 +4651,10 @@ import PaperP1
 #print axioms PaperP1.PolynomialParsevalBounds.circleIntegrable_sq_norm_eval
 #print axioms PaperP1.PolynomialParsevalBounds.coefficient_energy_le_of_pointwise_bound
 #print axioms PaperP1.PolynomialParsevalBounds.l2_le_of_pointwise_bound
+#print axioms PaperP1.PolynomialPartialCancellation.elementary_bound
+#print axioms PaperP1.PolynomialPartialCancellation.uniform_bound
+#print axioms PaperP1.PolynomialPartialCancellation.relative_bound
+#print axioms PaperP1.PolynomialPartialCancellation.power_gain
 #print axioms PaperP1.PolynomialQuotientControl.quotient_continuous
 #print axioms PaperP1.PolynomialQuotientControl.zero_or_nowhere_zero
 #print axioms PaperP1.PolynomialQuotientControl.sign_constant
