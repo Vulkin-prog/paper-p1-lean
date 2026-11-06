@@ -33968,6 +33968,37 @@
         "status": "not_integrated"
       },
       "validation_commit": "76f2f8deba86ae1f5e3579832ed3099779e43c7f"
+    },
+    {
+      "id": "P1-MATH-0728",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The damping identity must be carried through the actual finite complex polynomial, with positive support, integrability and all square-divisor exceptions explicit.",
+      "finding": "The literal complex damped coefficient integrates to f(n)/(multiplicity(P,n)+1) at every positive integer. Finite weighted sums depend continuously on the damping parameter and commute with its actual integral. In particular the actual finite Dirichlet polynomial of valuation-weighted coefficients is exactly the parameter integral of actual complete damped Dirichlet polynomials. On finite supports with no support-prime square divisor this is the literal Ramare distinct-prime count denominator. No target estimate is an input.",
+      "proposed_revision": "Retain the literal valuation/count distinction, positive support and square-divisor condition when using the exact damping integral.",
+      "impact": "Exact parameter integral for actual valuation-weighted Dirichlet polynomials. The main short-average theorem remains unproved.",
+      "evidence": [
+        "PaperP1.DampedDirichletIntegral.coefficient_integral",
+        "PaperP1.DampedDirichletIntegral.weighted_sum_continuous",
+        "PaperP1.DampedDirichletIntegral.weighted_sum_integral",
+        "PaperP1.DampedDirichletIntegral.value_integral",
+        "PaperP1.DampedDirichletIntegral.squarefree_value_integral"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18023 jobs); direct axiom audit passed for 18261 declarations using only propext, Classical.choice and Quot.sound; all 18379 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.42 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

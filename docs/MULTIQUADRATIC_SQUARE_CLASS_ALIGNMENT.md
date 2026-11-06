@@ -1,6 +1,12 @@
 # Multiquadratic split radicands: exact square-class independence
 
-Current checkpoint P1-MATH-0727: Valuation damping gives actual complete
+Current checkpoint P1-MATH-0728: Exact parameter integral for actual
+valuation-weighted Dirichlet polynomials. Complete short-average
+concentration remains unproved. T19.17 conditional; original T1.7
+unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167;
+all 73 main proved. No Palomar registration.
+
+Historical checkpoint P1-MATH-0727: Valuation damping gives actual complete
 coefficients and the Ramare denominator integral. Complete short-average
 concentration remains unproved. T19.17 conditional; original T1.7
 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167;
@@ -24955,3 +24961,14 @@ The Ramare count-denominator coefficient is not completely multiplicative. Repla
 Complete logarithmic short-average concentration remains unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Source v1.6, false-scope corrections, compiler and permitted axioms unchanged. About 53.5 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18021 jobs); direct axiom audit passed for 18256 declarations using only propext, Classical.choice and Quot.sound; all 18374 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.44 GiB.
+
+
+## Exact parameter integral for actual valuation-weighted Dirichlet polynomials
+
+The literal complex damped coefficient integrates to f(n)/(multiplicity(P,n)+1) at every positive integer. Finite weighted sums depend continuously on the damping parameter and commute with its actual integral. In particular the actual finite Dirichlet polynomial of valuation-weighted coefficients is exactly the parameter integral of actual complete damped Dirichlet polynomials. On finite supports with no support-prime square divisor this is the literal Ramare distinct-prime count denominator. No target estimate is an input.
+
+The damping identity must be carried through the actual finite complex polynomial, with positive support, integrability and all square-divisor exceptions explicit.
+
+Complete logarithmic short-average concentration remains unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Source v1.6, false-scope corrections, compiler and permitted axioms unchanged. About 53.5 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18023 jobs); direct axiom audit passed for 18261 declarations using only propext, Classical.choice and Quot.sound; all 18379 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.42 GiB.

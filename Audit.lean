@@ -3554,6 +3554,11 @@ import PaperP1
 #print axioms PaperP1.CurvePolynomialWronskianNonvanishing.restrictions_independent
 #print axioms PaperP1.CurvePolynomialWronskianNonvanishing.wronskian_not_dvd
 #print axioms PaperP1.CurvePolynomialWronskianNonvanishing.exceptional_card
+#print axioms PaperP1.DampedDirichletIntegral.coefficient_integral
+#print axioms PaperP1.DampedDirichletIntegral.weighted_sum_continuous
+#print axioms PaperP1.DampedDirichletIntegral.weighted_sum_integral
+#print axioms PaperP1.DampedDirichletIntegral.value_integral
+#print axioms PaperP1.DampedDirichletIntegral.squarefree_value_integral
 #print axioms PaperP1.DeterminantBoxScales.coordinate_bounds
 #print axioms PaperP1.DeterminantBoxScales.log_DE_upper
 #print axioms PaperP1.DeterminantBoxScales.uniform_base_logs

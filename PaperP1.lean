@@ -4667,3 +4667,4 @@ public import PaperP1.Analysis.CommonRealTwistedSum
 public import PaperP1.Analysis.CompleteShortAverage
 public import PaperP1.Analysis.CompleteSmoothCensusFromShortAverages
 public import PaperP1.Analysis.ValuationDamping
+public import PaperP1.Analysis.DampedDirichletIntegral
