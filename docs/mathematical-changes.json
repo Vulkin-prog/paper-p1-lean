@@ -43167,6 +43167,39 @@
       },
       "validation_source_commit": "bd9fcea3f0b0abf147a33bbe543338dcc982e791",
       "validation_record": "docs/validation/checkpoint-1000/validation.json"
+    },
+    {
+      "id": "P1-MATH-1001",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.8 working draft",
+        "document": "companion",
+        "label": "p1:uniform:replicas",
+        "source": "companion_sections/uniform_appendix.tex",
+        "line": 351,
+        "statement_sha256": "cee349c607e43eada20a10105ca13a96aba5dbd24c8c491a6857a75064ff04d9"
+      },
+      "original_assumption": "The existing directly named infinite-run nominal endpoint assumes regular windows and uses the effective relative kernel. The printed nominal formula is naturally stated using the kernel of the colored valuation on the distinct formal occurrence coordinates. A general finite raw-kernel formula and the infinite conditional transfer already exist separately.",
+      "finding": "Compose the exact finite nominal affine mass with the actual infinite conditional expectation transfer, preserving the full formal row-relation kernel. The resulting p^r*eta*2^dim(K_raw) identity applies to irregular windows and repeated centers without a regularity premise. A separate actual-run identity uses the product of the true heterogeneous marginals and the effective relative nullity. Both retain affine incompatibility exactly.",
+      "evidence": [
+        "PaperP1.NominalRunReplicaFormula.conditional_nominal_formula",
+        "PaperP1.NominalRunReplicaFormula.run_formula",
+        "PaperP1.NominalRunReplicaFormula.heterogeneous_run_formula",
+        "PaperP1.NominalRunReplicaFormula.companion_T22_7"
+      ],
+      "proposed_revision": "Define K_pi explicitly as the kernel of the actual colored formal row-relation map when writing the nominal p^r formula. If using the effective relative kernel instead, retain the product of actual marginals. These agree with the usual nominal/effective formula on regular windows. Keep the two meanings distinct in the proof index and future editorial clarification.",
+      "impact": "Exact public scope interfaces for the unchanged replica statement; no new numbered claim, independence assumption, arithmetic estimate or registry selection. Formal coordinates remain distinct even when natural-valued centers repeat. The original regular endpoint and all frozen manuscript bytes remain preserved. This is not a claim that the original formula is false under its raw-kernel interpretation.",
+      "validation": {
+        "status": "pending_full_project_replay",
+        "prototype_actual_exit_code": 0,
+        "toolchain": "leanprover/lean4:v4.36.0-rc2"
+      },
+      "manuscript_integration": {
+        "target_version": "P1 V1.8 correspondence supplement and optional later source clarification",
+        "status": "pending_validation",
+        "reason": "Keep the delivered v1.8 source/PDF snapshot unchanged; clarify raw versus effective kernels through exact proof interfaces."
+      }
     }
   ]
 }

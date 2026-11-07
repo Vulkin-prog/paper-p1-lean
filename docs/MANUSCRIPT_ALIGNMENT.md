@@ -1,6 +1,17 @@
 # Manuscript-to-Lean correspondence
 
-Current checkpoint P1-MATH-1000: For every fixed exponent a<2 and weight
+Current checkpoint P1-MATH-1001: The nominal replica identity is exposed
+for the actual infinite-prime run events at arbitrary, possibly repeated
+occurrence centers. The factor p^r uses the kernel of the full colored
+formal row-relation map, including internal local relations. The separate
+effective-relative-kernel identity retains every actual heterogeneous
+marginal. No regularity assumption is imposed on either new general
+interface. The four prototypes compiled with actual exit zero; the
+complete project replay is pending. The 167 numbered statements and
+frozen v1.8 TeX/PDF bytes are preserved. Palomar remains on hold at the
+user's request.
+
+Historical checkpoint P1-MATH-1000: For every fixed exponent a<2 and weight
 v>0, one size cutoff and one scale threshold give the pure N^-a tail
 bound for both original families and an arbitrary fixed bounded-width
 compressed block. The size cutoff therefore precedes every epsilon in
