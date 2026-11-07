@@ -288,7 +288,10 @@ and individual joint rates $q_e$.
 The field $Z_x=U_x+\sum_{e\in E:x\in e}V_e$ has exactly the
 completed positional target law.  A finite product of Poisson measures
 constructs these arrivals, and every independent realization has the
-same original-grid probabilities.
+same original-grid probabilities.  Each reference coordinate has exactly
+law $\operatorname{Pois}(p)$.  For every $j\in\mathbb N$, its falling-factorial
+test is integrable and $\mathbb E[(Z_x)_j]=p^j$.  The finite marginal
+statement also holds for arbitrary finite packets.
 For each fixed degree $j$ and $\varepsilon>0$, one threshold precedes
 the critical lengths, probability spaces and arrival variables.  The series
 \[
@@ -299,9 +302,10 @@ is summable and at most $N^{-4/5+\varepsilon}$.
 This is the independent-arrival form of main Lemma~20.1, with its
 original grid, rates and exponent.  The declarations
 \texttt{main\_20\_1} and \texttt{main\_20\_1\_canonical} are in
-\texttt{IndependentPositionalApproximation}.
-The finite field law is \texttt{hasLaw\_single\_pair\_field} in
-\texttt{PositionalPoissonRealization}.
+\texttt{Independent\allowbreak{}Positional\allowbreak{}Approximation}.
+The exact field law is identified in \texttt{Positional\allowbreak{}Poisson\allowbreak{}Realization},
+and the marginal laws and factorial moments in
+\texttt{Positional\allowbreak{}Arrival\allowbreak{}Marginals}.
 
 \paragraph{Scope and reproducibility.}
 The smooth-window proof above specializes the physical localization to the

@@ -153,3 +153,22 @@ companion grows from 101 to 102 pages. All 167 current PDF pages were rendered:
 changed/new companion pages (2,99,100,101,102) passed full visual inspection at
 110dpi. All 48 authored source hashes, both PDF hashes, source provenance and
 unchanged numbered statement identities were checked.
+
+
+Checkpoint P1-MATH-0993 proves exact Poisson marginals for every site of the
+compensated reference arrival field, in every independent realization and the
+canonical product law. Arbitrary finite packets and ambient index types are
+allowed without a countable-configuration hypothesis. Every natural-order
+factorial test is integrable with expectation p_x^j. These are reference-field
+identities; the arithmetic approximation retains its original exponent and
+fixed-degree scope. The full replay passed 18,591 build jobs, 19,655 theorem
+axiom checks and 19,796 distinct references, with all three actual exits zero.
+
+The unnumbered companion appendix includes the exact marginal and factorial
+moment statements, explicitly quantified over natural orders. Both PDFs were
+rebuilt with stable cross-references, no unresolved references and no overfull
+boxes. Long Lean identifiers have normal optional line breaks. All 167 pages
+were rendered: 165 are pixel-identical to the prior reviewed version, and both
+changed companion pages (99,100) passed full inspection at 110dpi. Page counts
+remain 65 and 102. All 48 source hashes, provenance, both PDF hashes and all
+167 numbered statement identities were checked.

@@ -41,7 +41,6 @@ and `coordinate_factorial_moment`. The generic finite-sum and law-transfer
 lemmas are included in the complete audit. The earlier completed-law and
 weighted-grid formulations remain available unchanged.
 
-All twelve new theorems and the observed-cell definition passed direct Lean
-v4.36.0-rc2 compilation and exact axiom audit, with proof warnings as errors.
-Only `propext`, `Classical.choice` and `Quot.sound` occur. Whole-project replay
-and integration of this clarification into the version 1.7 appendix are pending.
+Full Lean v4.36.0-rc2 replay passed at source 2d09439656cc0f923203a465582324237b5bb4cb: 18,591 build jobs, 19,655 source-discovered theorem axiom checks and 19,796 distinct declaration-reference checks, all actual process exits 0. Proof warnings are errors; only propext, Classical.choice and Quot.sound occur.
+
+The full replay and compressed original logs are preserved in [the validation record](validation/checkpoint-0993/validation.json). The clarification is integrated in the unnumbered version 1.7 companion appendix, under Realize the positional target by independent arrivals. Both PDFs were rebuilt and reviewed: 65 article pages and 102 companion pages. All 167 numbered statement blocks are preserved. See [the manuscript validation](manuscript-v1.7-validation.json).

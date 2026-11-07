@@ -7,9 +7,9 @@ with arbitrary finite packets and no countability hypothesis on the
 ambient configuration space. Every factorial test is integrable and its
 order-j expectation is p_x^j. These are exact reference-field identities;
 the original arithmetic field, exponent 4/5 and fixed-degree asymptotic
-regime are preserved. Twelve theorems and one definition passed direct
-Lean and exact permitted-axiom checks. Full project replay and manuscript
-integration of this clarification are pending. All 167 revised numbered
+regime are preserved. The full replay passed 18,591 build jobs, 19,655 theorem axiom checks and
+19,796 distinct references, all actual exits 0. The clarification is integrated in the revised
+companion appendix, with all 167 PDF pages rebuilt and reviewed. All 167 revised numbered
 statements remain proved. Sixteen registry families with 64 selections
 remain locally qualified; no registration is claimed.
 

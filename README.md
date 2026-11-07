@@ -90,7 +90,7 @@ Standalone registry Challenges have only the deliberate selected statement
 holes and are never imported by the proof development or its audit.
 
 The latest complete project replay with all sixteen candidate families passed
-**18,589 build jobs** and **19,643 theorem axiom checks**. Each mathematical
+**18,591 build jobs** and **19,655 theorem axiom checks**. Each mathematical
 checkpoint and registry replay records its own exact source commit and scope.
 The [evidence checker](scripts/check_registry_evidence.py) validates every
 preserved receipt against its historical inventory and current proof imports.
@@ -171,6 +171,4 @@ The [exact reference-arrival marginals](docs/POSITIONAL_ARRIVAL_MARGINALS.md)
 identify each site with Poisson(p_x), for arbitrary finite packets and every
 independent realization, without an ambient configuration countability input.
 Every factorial test is integrable with expectation p_x^j. The original
-arithmetic approximation retains its exponent and fixed-degree scope. All
-thirteen new declarations passed direct compilation and axiom checks;
-whole-project replay and manuscript integration are pending.
+arithmetic approximation retains its exponent and fixed-degree scope. Its complete replay passed; [the source-bound logs](docs/validation/checkpoint-0993/validation.json) preserve all three checks. The clarification is integrated in the revised companion appendix.

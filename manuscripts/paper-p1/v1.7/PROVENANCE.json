@@ -103,7 +103,7 @@
     },
     {
       "path": "formalization.tex",
-      "sha256": "f6b8786a0573fb40bd60c418451ff7acbbeb5147de5d52b24c3e916bb63deb91"
+      "sha256": "60257c796f8e0898745c01a680d037c4b79db7023763cd3714fa52e411bde875"
     },
     {
       "path": "main.tex",
@@ -238,6 +238,11 @@
       "checkpoint": "P1-MATH-0992",
       "proof_commit": "e6feba8adcf77e204dce8517622ea731da0dacc4",
       "scope": "Unnumbered companion appendix: exact independent single/pair Poisson realization, explicit finite product law, literal coordinate formula and convergent original weighted grid comparison for every independent realization. All 167 numbered statement blocks are preserved."
+    },
+    {
+      "checkpoint": "P1-MATH-0993",
+      "proof_commit": "2d09439656cc0f923203a465582324237b5bb4cb",
+      "scope": "Unnumbered companion appendix: exact Poisson marginal at every reference site, integrable factorial tests of every natural order with expectation p_x^j, and arbitrary finite-packet generality. The arithmetic exponent, fixed-degree comparison and all 167 numbered statement blocks are preserved."
     }
   ]
 }
