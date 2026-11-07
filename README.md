@@ -64,6 +64,13 @@ dispositions. It remains 64/101 pages. Twenty-one existing propositions were
 actually extracted and independently read. The exact diff, visual review,
 result map and eight integrity controls are included; no new theorem is counted.
 
+Three [further proof-reuse proposals](docs/editorial-proposals/2026-11-07/further-proof-reuse/README.md)
+would remove another 49 source lines from T22.1, T2.6 and 16.1 without changing
+any statement or label. Eleven existing proposition types were actually
+extracted and independently read. These proposals remain **not applied**:
+the user requested session finalization before a new source/PDF pass.
+The unified preview above remains the latest delivered copy.
+
 The separate review instance has now directly compared all 167 numbered-result
 labels across its frozen source snapshots; the [complete review index](docs/MANUSCRIPT_ENDPOINTS_V1_8.md)
 records every clause and inherited premise.

@@ -1,0 +1,860 @@
+{
+  "schema_version": 1,
+  "status": "complete_frozen",
+  "review_stage": "propositions_non_integrees_apres_FS01_FS03",
+  "title": "Trois simplifications supplémentaires des preuves de P1",
+  "date": "2026-11-07",
+  "language": "fr",
+  "reviewer_role": "instance_independante_sans_delegation",
+  "documentary_base_commit": "50bdbf1c62b8047b84686218c604fefa7ca49e27",
+  "proof_source_commit": "d342b507332315c67b1463009061c03f14b5be9b",
+  "manuscript_source_root": "manuscripts/paper-p1/editorial-unified-preview-2026-11-07/sources",
+  "summary": {
+    "mathematical_gaps_confirmed": 0,
+    "necessary_corrections_to_published_statements": 0,
+    "concrete_proposals": 3,
+    "immediately_recommended": [
+      "NEXT01",
+      "NEXT03"
+    ],
+    "optional_modest_readability_cut": [
+      "NEXT02"
+    ],
+    "numbered_results_changed": 0,
+    "new_mathematical_results_claimed": 0,
+    "measured_net_source_lines_removed_in_virtual_draft": 49,
+    "page_gain": "non mesuré; aucun nombre de pages économisées n’est annoncé",
+    "overall_verdict": "Deux coupes de preuve franches et une mutualisation plus modeste sont justifiées. Aucun résultat utile, domaine, contre-exemple, marge ou branche positionnelle/croissante n’est supprimé."
+  },
+  "scope": {
+    "focused_branches": [
+      "T22.1 et ses entrées de queue/support effectifs",
+      "T1.11/T2.6 : calcul pointwise des correspondances",
+      "15.10/16.1 : activité incompatible fixe et identité quartique"
+    ],
+    "not_a_new_full_167_result_audit": true,
+    "prior_13_SIM_5_SCI_3_FS_preserved": true,
+    "initial_candidate_risks_sent_to_parent_before_freeze": true,
+    "excluded": "Pas de quatrième candidat recherché après accord du parent; les branches T14–T17, T19 positionnel et les autres ordres croissants restent intactes."
+  },
+  "verification": {
+    "reviewer_executed_lean_lake_pdf_or_palomar": false,
+    "proof_source_difference_between_proof_and_documentary_base": [],
+    "all_48_tex_read_for_fingerprints_and_baseline_identity": true,
+    "parent_scope_execution_observed_from_files_only": {
+      "actual_exit_code": 0,
+      "compiled_types": 11,
+      "propositions_audited": 11,
+      "permitted_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "all_propositions_standard_axioms_only": true,
+      "inventory_sha256": "22b46a124c39ea78c22900317e03dbfce0b21897f540d0cc7042cc0018551785",
+      "diagnostic_module_sha256": "43d8a9072a6b589e63465977b7a3068637c712b23711fb38b857acf374534fd5",
+      "compiled_types_sha256": "887d0e31bf766a9b59b286891fc9a3b392f7978abb9f4393189692efd8f6f16a",
+      "log_sha256": "f2768afde0bfce6af5893b8fe8581d6df9802ae62a063f367068e9ef7473f36b"
+    },
+    "independent_checks": [
+      "Les11 types extraits ont été lus, ainsi que les corps source et les prédicats pertinents.",
+      "Les48 fichiers TeX locaux ont été comparés octet par octet au commit documentaire50bdbf1c via git show.",
+      "Les fichiers Lean des11 déclarations sont octet-identiques à la source de preuve d342b507.",
+      "Les trois remplacements proposés ont été appliqués uniquement en mémoire pour compter les lignes et contrôler les labels.",
+      "Les six fermetures d’imports ont été recalculées et les1818 empreintes voisines du parent vérifiées. Les corps restent la preuve principale du raccord sémantique."
+    ],
+    "virtual_proposal_checks": {
+      "source_files_changed": 3,
+      "numbered_result_blocks_before": 167,
+      "numbered_result_blocks_after": 167,
+      "all_numbered_result_blocks_byte_identical": true,
+      "tex_labels_before": 548,
+      "tex_labels_after": 548,
+      "labels_byte_multiset_identical": true,
+      "duplicate_labels": 0,
+      "new_references_resolve_in_baseline": true,
+      "net_source_lines_removed": 49,
+      "no_sources_or_old_reports_written": true
+    }
+  },
+  "compiled_scope": {
+    "path": "p1-next-simplification/scope",
+    "compiled_types_path": "p1-next-simplification/scope/compiled-types.json",
+    "sha256": "887d0e31bf766a9b59b286891fc9a3b392f7978abb9f4393189692efd8f6f16a",
+    "validation_path": "p1-next-simplification/scope/compiled-types-validation.json",
+    "validation_sha256": "c5dedffd8a480c47e6719ff67682835b084b9fdab444b1d41e4999f10c71af19",
+    "exit_path": "p1-next-simplification/scope/compiled-types.exit",
+    "exit_content": "0",
+    "compiled_entries_read": 11,
+    "propositions_read": 11,
+    "execution_attribution": "Extraction et audit exécutés par le parent; lecture indépendante des sorties et sources ici, sans nouveau replay."
+  },
+  "compiled_entries_read": [
+    {
+      "declaration": "PaperP1.FixedCutoffIndependentTail.uniform_tail",
+      "file": "PaperP1/Asymptotics/FixedCutoffIndependentTail.lean",
+      "line": 24,
+      "source_sha256": "002207437089e92859bffdc67d1a0dbf4fb4f0440863169ffe4af72adbec5c4e",
+      "compiled_type": "∀ (D Q : ℕ),\n  1 ≤ D →\n    2 ≤ Q →\n      ∀ (C v a : ℝ),\n        0 < v →\n          a < 2 →\n            ∃ s,\n              3 ≤ s ∧\n                ∃ N₀,\n                  10 ≤ N₀ ∧\n                    ∀ N ≥ N₀,\n                      ∀ (L : ℕ),\n                        |↑L - Real.log ↑N / Real.log 2| ≤ C →\n                          PaperP1.IndependentFullSupportTail.mass (PaperP1.Model.dyadicBlock N) L s v ≤ ↑N ^ (-a) ∧\n                            ∀ (U : ℕ → Finset ℕ),\n                              (∀ x ∈ Finset.Ico 2 (Q * N + 2),\n                                  U x ⊆ PaperP1.NormalizedWindowSets.values x (D * (L + 1))) →\n                                PaperP1.BoundedBlockIndependentTail.mass Q N L (s - 1) v U ≤ ↑N ^ (-a)",
+      "is_proposition": true,
+      "role": "NEXT01 : seuil uniforme des grandes tailles, première branche avec D=1, Q=2, v=u, a=1.",
+      "body_comparison": "Le corps applique IndependentTailTheorem.article_15_8 à (a+2)/2 et (2-a)/4, puis compare les puissances. Les arguments supposés sont seulement les bornes de largeur/range fixes, v>0 et a<2. Il existe s et N0 avant tout choix ultérieur d'une marge η. La première branche porte sur IndependentFullSupportTail.mass du dyadicBlock entier avec les vraies marginales; elle n'exige ni primitivité, ni compatibilité, ni séparation, ni régularité. La seconde branche avec un bloc arbitraire est lue mais n'est pas nécessaire à NEXT01.",
+      "verdict": "raccord_confirme_en_lecture",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.BlockSupportCount.critical_interval_count",
+      "file": "PaperP1/Asymptotics/BlockSupportCount.lean",
+      "line": 117,
+      "source_sha256": "10a8e09cc2a4c9da7fa3d1cacdd27b8b5fcaf2ffb645a396b3afb896d094b6bb",
+      "compiled_type": "∀ (r s C : ℕ),\n  0 < s →\n    1 ≤ C →\n      ∀ (a b D Cband ε : ℝ),\n        0 < a →\n          0 ≤ D →\n            0 < ε →\n              ∃ N₀,\n                ∀ N ≥ N₀,\n                  ∀ (L M : ℕ) (G : Finset ℕ) (blocks : Fin r → ℕ → Finset ℕ),\n                    |↑L - Real.log ↑N / Real.log 2| ≤ Cband →\n                      G ⊆ Finset.Ico M (M + C * N) →\n                        (∀ (i : Fin r), ∀ x ∈ G, ∀ v ∈ blocks i x, a * ↑N ≤ ↑v ∧ ↑v ≤ b * ↑N) →\n                          (∀ (i : Fin r), ∀ x ∈ G, ∀ v ∈ blocks i x, ↑(↑v - ↑x).natAbs ≤ D * ↑(L + 1)) →\n                            ↑(PaperP1.BlockSupportProjection.population G blocks s).card ≤ ↑N ^ (↑r - ↑s / 2 + ε)",
+      "is_proposition": true,
+      "role": "NEXT01 : r=s fixé, pour les petites couches à support complet.",
+      "body_comparison": "Le corps spécialise interval_count avec le majorant logarithmique de la largeur fourni par CriticalBandScale. Le prédicat population impose l'injectivité des centres et l'existence d'une relation dont au moins s projections sont non nulles dans les images effectives. Il n'impose pas l'injectivité des applications locales de sélections. Pour s=r et les vrais blocs values x L, les listes de T22.1 sont une sous-population, de cardinal ≤N^(r/2+η). Tous r,s,C,a,b,D,Cband,η précèdent N0; aucune constante d'ordre fixe n'est appliquée à r croissant.",
+      "verdict": "raccord_confirme_en_lecture",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.FullSupportOrderedLists.ordered_mass_eq",
+      "file": "PaperP1/Model/FullSupportOrderedLists.lean",
+      "line": 83,
+      "source_sha256": "451b9fca28e4e5b730ac25ac37118542a4e5003f9d0b9b32703f4c8c6b84773d",
+      "compiled_type": "∀ (G : Finset ℕ) (L s : ℕ) (a : ℝ),\n  PaperP1.FullSupportOrderedLists.orderedMass G L s a =\n    ∑ I ∈ PaperP1.IndependentFullSupportTail.families G L s, a ^ I.card",
+      "is_proposition": true,
+      "role": "NEXT01 : identification exacte listes/ensembles.",
+      "body_comparison": "Le corps utilise layer_weight, le comptage factoriel des énumérations injectives et la sommation par cardinal. L'égalité vaut pour tout G,L,s et tout poids scalaire réel a. Le r! est une identité de fibres, pas une domination de constantes arithmétiques. FullSupport est l'existence d'une même relation à projections toutes non nulles, sans minimalité.",
+      "verdict": "raccord_confirme_en_lecture",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.FullSupportOrderedLists.nominal_weight_formula",
+      "file": "PaperP1/Model/FullSupportOrderedLists.lean",
+      "line": 112,
+      "source_sha256": "451b9fca28e4e5b730ac25ac37118542a4e5003f9d0b9b32703f4c8c6b84773d",
+      "compiled_type": "∀ (G : Finset ℕ) (L s : ℕ) (u : ℝ),\n  PaperP1.FullSupportOrderedLists.orderedMass G L s (u * (2 ^ L)⁻¹) =\n    ∑ r ∈ Finset.Icc s G.card,\n      u ^ r / ↑r.factorial * (↑(PaperP1.FullSupportOrderedLists.lists G L r).card * (2 ^ L)⁻¹ ^ r)",
+      "is_proposition": true,
+      "role": "NEXT01 : lecture exacte de la somme nominale imprimée.",
+      "body_comparison": "Le corps réécrit (u*2^(-L))^r par mul_pow et ring, couche par couche. Avec ordered_mass_eq, cette identité donne la somme u^r/r! fois le nombre de listes injectives et p^r. Le poids nominal ne devient une vraie marginale que sur les fenêtres régulières de G, ce que la rédaction proposée dit explicitement.",
+      "verdict": "raccord_confirme_en_lecture",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.FullSupportWeightedCount.full_list_bound",
+      "file": "PaperP1/Asymptotics/FullSupportWeightedCount.lean",
+      "line": 39,
+      "source_sha256": "0f689db5e409c449e1834a189943aa28ebd3186b4309f28fd64e25f73e19ef34",
+      "compiled_type": "∀ (s : ℕ),\n  2 ≤ s →\n    ∀ (C u ε : ℝ),\n      0 < u →\n        0 < ε →\n          ∃ N₀,\n            10 ≤ N₀ ∧\n              ∀ N ≥ N₀,\n                ∀ (L : ℕ),\n                  |↑L - Real.log ↑N / Real.log 2| ≤ C →\n                    ∀ G ⊆ PaperP1.Model.dyadicBlock N,\n                      ∑ r ∈ Finset.Icc s G.card,\n                          u ^ r / ↑r.factorial * (↑(PaperP1.FullSupportOrderedLists.lists G L r).card * (2 ^ L)⁻¹ ^ r) ≤\n                        ↑N ^ (-2 * ↑s / (2 * ↑s + 1) + ε)",
+      "is_proposition": true,
+      "role": "NEXT01 : endpoint complet de l'ancien taux pour une population encore plus large.",
+      "body_comparison": "Le corps part de uniform_ordered_mass et affaiblit -1 à -2s/(2s+1) pour s≥2. lists n'impose ni la régularité ni une séparation des centres; ces deux restrictions ne sont donc pas des prémisses cachées de cette déclaration. La proposition imprimée est couverte en prenant une sous-famille. Aucun majorant final n'est supposé dans les arguments.",
+      "verdict": "raccord_confirme_en_lecture",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.FullSupportWeightedCount.uniform_ordered_mass",
+      "file": "PaperP1/Asymptotics/FullSupportWeightedCount.lean",
+      "line": 16,
+      "source_sha256": "0f689db5e409c449e1834a189943aa28ebd3186b4309f28fd64e25f73e19ef34",
+      "compiled_type": "∀ (C u ε : ℝ),\n  0 < u →\n    0 < ε →\n      ∃ N₀,\n        10 ≤ N₀ ∧\n          ∀ N ≥ N₀,\n            ∀ (L : ℕ),\n              |↑L - Real.log ↑N / Real.log 2| ≤ C →\n                ∀ G ⊆ PaperP1.Model.dyadicBlock N,\n                  ∀ (s : ℕ), 2 ≤ s → PaperP1.FullSupportOrderedLists.orderedMass G L s (u * (2 ^ L)⁻¹) ≤ ↑N ^ (-1 + ε)",
+      "is_proposition": true,
+      "role": "NEXT01 : endpoint plus général, conservé comme information de portée et non ajouté au texte.",
+      "body_comparison": "Le corps pose M=u*2^C, prouve u*2^(-L)≤M/N, applique OriginalParticipatingMass.uniform_mass aux familles à support complet, puis ordered_mass_eq. OriginalParticipatingMass est un résultat inconditionnel à poids positifs plafonnés par M/N, dont le corps a également été lu. N0 précède ici tout G⊆dyadicBlock N et tout s≥2. Le taux -1+ε est donc réellement uniforme en s; aucun renforcement de l'énoncé imprimé n'est proposé.",
+      "verdict": "raccord_confirme_en_lecture",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.AlignedTargetSourceTheorem.uniform_source_bounds",
+      "file": "PaperP1/Asymptotics/AlignedTargetSourceTheorem.lean",
+      "line": 62,
+      "source_sha256": "d311b6d58de7aa33e69e766c664047a3b91f1f66d6598ed5f7d640451f054909",
+      "compiled_type": "∀ (C ε : ℝ),\n  0 < ε →\n    ∀ {a b : ℕ},\n      0 < a →\n        3 ≤ b →\n          a.Coprime b →\n            a < b →\n              ∀ (D : ℕ),\n                ∃ N₀,\n                  ∀ N ≥ N₀,\n                    ∀ (L : ℕ),\n                      |↑L - Real.log ↑N / Real.log 2| ≤ C →\n                        PaperP1.AlignedTargetSourceTheorem.SourceConclusion D N a b L ε",
+      "is_proposition": true,
+      "role": "NEXT02 : objet général pointwise, sans compatibilité affine.",
+      "body_comparison": "Le corps appelle AlignedTargetRank.uniform_core, construit le paramètre t à partir d'une unité et traite les deux orientations, avec commutation de deficiency. SourceConclusion a été ouvert : ensemble symétrique de sources d'endpoint de cardinal ≤(12(a+b)+4)B^7, pool de cibles de cardinal ≤6a B^15 et perte deficiency≤(γ(a,b)+ε)L pour chaque cible séparée d'au moins L de chaque source, hors endpoints, pour tout Q⊆primeFactors(ab). Il n'y a aucune prémisse de positivité d'une masse affine. Les données C,ε,a,b,D sont fixées avant N0; sources, L, cibles et Q sont ensuite uniformes.",
+      "verdict": "raccord_confirme_en_lecture",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.AlignedTargetSourceTheorem.companion_T1_11",
+      "file": "PaperP1/Asymptotics/AlignedTargetSourceTheorem.lean",
+      "line": 134,
+      "source_sha256": "d311b6d58de7aa33e69e766c664047a3b91f1f66d6598ed5f7d640451f054909",
+      "compiled_type": "PaperP1.FixedChannelGamma.gammaReal 2 3 = 1 / 3 ∧\n  PaperP1.FixedChannelGamma.gammaReal 3 4 = 1 / 2 ∧\n    ∀ (C ε : ℝ),\n      0 < ε →\n        ∀ (D : ℕ),\n          ∃ N₀,\n            ∀ N ≥ N₀,\n              ∀ (L : ℕ),\n                |↑L - Real.log ↑N / Real.log 2| ≤ C →\n                  PaperP1.AlignedTargetSourceTheorem.SourceConclusion D N 2 3 L ε ∧\n                    PaperP1.AlignedTargetSourceTheorem.SourceConclusion D N 3 4 L ε",
+      "is_proposition": true,
+      "role": "NEXT02 : conservation autonome des deux cas pointwise précoces.",
+      "body_comparison": "Le corps obtient les valeurs exactes γ(2,3)=1/3 et γ(3,4)=1/2 puis deux appels indépendants à uniform_source_bounds, en prenant le maximum des seuils. Le texte de T1.11 et sa preuve entière sont conservés dans la proposition. NEXT02 ne prétend pas déduire une borne pointwise d'une masse moyenne et ne remplace pas ce résultat par T1.12 ou T4.4.",
+      "verdict": "raccord_confirme_en_lecture",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.AlignedTargetSourceTheorem.companion_T2_6",
+      "file": "PaperP1/Asymptotics/AlignedTargetSourceTheorem.lean",
+      "line": 127,
+      "source_sha256": "d311b6d58de7aa33e69e766c664047a3b91f1f66d6598ed5f7d640451f054909",
+      "compiled_type": "∀ {a b : ℕ},\n  0 < a →\n    3 ≤ b →\n      a.Coprime b →\n        a < b →\n          PaperP1.FixedChannelGamma.gammaReal a b ≤ 2 / 3 ∧\n            ∀ (C ε : ℝ),\n              0 < ε →\n                ∀ (D : ℕ),\n                  ∃ N₀,\n                    ∀ N ≥ N₀,\n                      ∀ (L : ℕ),\n                        |↑L - Real.log ↑N / Real.log 2| ≤ C →\n                          PaperP1.AlignedTargetSourceTheorem.SourceConclusion D N a b L ε ∧\n                            PaperP1.AlignedTargetSourceTheorem.CompatibleConclusion D N a b L ε",
+      "is_proposition": true,
+      "role": "NEXT02 : endpoint général et variante compatible, permettant de mutualiser le calcul.",
+      "body_comparison": "La première composante est le majorant numérique γ≤2/3. Le corps de la seconde appelle uniform_both, qui construit d'abord SourceConclusion sans compatibilité puis CompatibleConclusion via compatible_pair_separated. Les hypothèses 0<a<b, b≥3 et gcd(a,b)=1 sont explicites; le domaine imprimé b/2<a<b est un sous-domaine. Le prédicat deficiency, sa formule de quotient et les vraies valeurs normalisées ont été lus. Le corps de ce théorème ne dépend pas de companion_T1_11 : les deux corollaires ont un noyau général commun, ce qui autorise la direction éditoriale antérieure→ultérieure retenue.",
+      "verdict": "raccord_confirme_en_lecture",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.ConnectedReductionToTriples.article_15_10",
+      "file": "PaperP1/Asymptotics/ConnectedReductionToTriples.lean",
+      "line": 65,
+      "source_sha256": "2a3acdf1c9974d8e1082b1e56e4512dd973f198dc6f1e7f585f5af5700a53d06",
+      "compiled_type": "∀ (r : ℕ),\n  4 ≤ r →\n    ∀ (C ε : ℝ),\n      0 < ε →\n        ∃ N₀,\n          10 ≤ N₀ ∧\n            ∀ N ≥ N₀,\n              ∀ (L : ℕ),\n                |↑L - Real.log ↑N / Real.log 2| ≤ C →\n                  ∀ G ⊆ PaperP1.Model.dyadicBlock N,\n                    PaperP1.CompatibleActivitySplit.absolute L\n                          (PaperP1.ConnectedWindowFamilies.connectedFamilies G L r) ≤\n                        ↑N ^ ε * PaperP1.CompatibleActivitySplit.absolute L (Finset.powersetCard 3 G) +\n                          ↑N ^ (-4 / 3 + ε) ∧\n                      PaperP1.CompatibleActivitySplit.incompatibleAbsolute L\n                          (PaperP1.ConnectedWindowFamilies.connectedFamilies G L r) ≤\n                        ↑N ^ (-3 / 2 + ε)",
+      "is_proposition": true,
+      "role": "NEXT03 : clause incompatible au seul ordre fixe r=4.",
+      "body_comparison": "Le corps appelle séparément SharpCompatibleActivity.uniform_range et SharpIncompatibleActivity.uniform_range, filtre les masses nulles et les masses positives, puis absorbe les facteurs numériques. La seconde conclusion majore incompatibleAbsolute L (connectedFamilies G L r), c'est-à-dire la somme des valeurs absolues des vrais coefficients centrés sur q(I)=0, pour tout G⊆dyadicBlock N, sans régularité, séparation ou positivité des marginales. En prenant r=4 et G=dyadicBlock N, le domaine est exactement celui de K4 et K4+ dans 16.1. La clause incompatible n'a aucune prémisse portant sur A3 : A3 apparaît seulement dans la première conclusion.",
+      "verdict": "raccord_confirme_en_lecture",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.FourthCumulantIdentities.article_16_1",
+      "file": "PaperP1/Asymptotics/FourthCumulantIdentities.lean",
+      "line": 18,
+      "source_sha256": "659f85fb9f07081630f1b53b3cec8967de29115f2e2fd99f291ad400bd8914cc",
+      "compiled_type": "∀ (C ε : ℝ),\n  0 < ε →\n    ∃ N₀,\n      2 ≤ N₀ ∧\n        ∀ N ≥ N₀,\n          ∀ (L : ℕ),\n            |↑L - Real.log ↑N / Real.log 2| ≤ C →\n              have F := PaperP1.ConnectedWindowFamilies.connectedFamilies (PaperP1.Model.dyadicBlock N) L 4;\n              have κ₄ := PaperP1.FourthRunFactorialCumulant.fourthFactorialCumulant (PaperP1.Model.dyadicBlock N) L;\n              have α := PaperP1.RegularCumulantTransfer.secondFactorialCumulant (PaperP1.Model.dyadicBlock N) L;\n              0 ≤ PaperP1.CompatibleActivitySplit.positive L F ∧\n                |κ₄ - 24 * PaperP1.CompatibleActivitySplit.signed L F| ≤ ↑N ^ (-5 / 3 + ε) ∧\n                  |PaperP1.CompatibleActivitySplit.signed L F - PaperP1.CompatibleActivitySplit.positive L F| ≤\n                      ↑N ^ (-3 / 2 + ε) ∧\n                    |κ₄ + 3 * α ^ 2 - (3 * α ^ 2 + 24 * PaperP1.CompatibleActivitySplit.positive L F)| ≤\n                      ↑N ^ (-3 / 2 + ε)",
+      "is_proposition": true,
+      "role": "NEXT03 : contrôle de l'identité finale et de ses deux taux distincts.",
+      "body_comparison": "Le corps emploie déjà SharpIncompatibleActivity.uniform_range à R=4 pour le même ensemble F, puis CompatibleActivitySplit.signed_error. La première estimation κ4−24K4 vient séparément de FourthConnectedCumulant.uniform_bound au taux -5/3; elle est conservée dans la coupe. La seconde estimation K4−K4+ a le taux -3/2. La dernière combine les deux par l'inégalité triangulaire et absorbe un facteur25 avec ε/2. Aucun passage par une approximation de loi ni par le théorème de borne inférieure n'intervient dans ces corps.",
+      "verdict": "raccord_confirme_en_lecture",
+      "necessary_corrections": []
+    }
+  ],
+  "proposals": [
+    {
+      "id": "NEXT01",
+      "file": "companion_sections/uniform_appendix.tex",
+      "result_label": "p1:uniform:full-support",
+      "result_number_in_baseline_ledger": "T22.1",
+      "before_proof_lines": [
+        31,
+        67
+      ],
+      "before_proof_tex": "\\begin{proof}\nA full-support relation selects at least two true\nvalues in every window, since selections are even\nand nonzero. Consequently the moderate certificates\nand the saturation graph of\nSection~\\ref{p14:cert:section} apply to these families,\nwithout any primitivity assumption.\n\nUse the parameters in\n\\eqref{p1:core:primitive-parameters}.\nThe total independent weight of moderate\ncertificates is \\(N^{-2\\beta+4/A_0+o(1)}\n=N^{-91/50+o(1)}\\), by\nLemma~\\ref{p1:core:moderate}.\nIf a family has no moderate certificate, every\nunmarked vertex has a neighbour in the saturation\ngraph. The tilted generating function of\nLemma~\\ref{p1:core:generator}, now with no factor\nfor rank loss, bounds its weight beyond size \\(s_0\\)\nby \\(O_u(N^{-s_0\\delta/2})\\).\nChoose a fixed \\(s_0>\\max(s,5000)\\).\nBoth large-size contributions are smaller than\n\\(N^{-1+\\varepsilon}\\).\n\nFor each of the finitely many \\(s\\le r<s_0\\),\nProposition~\\ref{p1:arith:fixed-support} gives\n\\[\n |\\mathcal H_{r,N}|\n       \\ll_{r,C,\\varepsilon}\n             N^{r-2r/(2r+1)+\\varepsilon}.\n \\]\nMultiplying by \\((up)^r/r!\\), and using\n\\(2r/(2r+1)\\ge2s/(2s+1)\\), completes the proof.\nThe factor \\(1/r!\\) counts unordered sets; it is\nnot a bound for the growth of an arithmetic\nconstant in \\(r\\).\n\\end{proof}",
+      "proposed_proof_tex": "\\begin{proof}\nApply Lemma~\\ref{p13:transfer:independent-tail} with \\(v=u\\) and \\(a=1\\),\nand increase its fixed cutoff to \\(s_0\\ge s\\) if necessary.\nOn \\(G\\) the exact marginals equal \\(p\\). Each set of \\(r\\) distinct\nstarts has exactly \\(r!\\) orderings, so the factor \\(1/r!\\) cancels\nexactly. The contribution with \\(r\\ge s_0\\) is therefore bounded by\nthe unordered tail of that lemma, \\(O(N^{-1+\\eta})\\).\nFor the finitely many \\(s\\le r<s_0\\), apply\nProposition~\\ref{p1:arith:fixed-support} with all \\(r\\) projections nonzero.\nIt gives \\(|\\mathcal H_{r,N}|\\ll N^{r/2+\\eta}\\), hence a weighted\ncontribution \\(O_{r,u,C,\\eta}(N^{-r/2+\\eta})\\).\nSince \\(r/2\\ge1>2s/(2s+1)\\), choosing \\(\\eta>0\\) inside the requested\nmargin and summing these finitely many layers proves the result.\n\\end{proof}",
+      "replaced_before_lines": [
+        31,
+        67
+      ],
+      "replaced_before_tex": "\\begin{proof}\nA full-support relation selects at least two true\nvalues in every window, since selections are even\nand nonzero. Consequently the moderate certificates\nand the saturation graph of\nSection~\\ref{p14:cert:section} apply to these families,\nwithout any primitivity assumption.\n\nUse the parameters in\n\\eqref{p1:core:primitive-parameters}.\nThe total independent weight of moderate\ncertificates is \\(N^{-2\\beta+4/A_0+o(1)}\n=N^{-91/50+o(1)}\\), by\nLemma~\\ref{p1:core:moderate}.\nIf a family has no moderate certificate, every\nunmarked vertex has a neighbour in the saturation\ngraph. The tilted generating function of\nLemma~\\ref{p1:core:generator}, now with no factor\nfor rank loss, bounds its weight beyond size \\(s_0\\)\nby \\(O_u(N^{-s_0\\delta/2})\\).\nChoose a fixed \\(s_0>\\max(s,5000)\\).\nBoth large-size contributions are smaller than\n\\(N^{-1+\\varepsilon}\\).\n\nFor each of the finitely many \\(s\\le r<s_0\\),\nProposition~\\ref{p1:arith:fixed-support} gives\n\\[\n |\\mathcal H_{r,N}|\n       \\ll_{r,C,\\varepsilon}\n             N^{r-2r/(2r+1)+\\varepsilon}.\n \\]\nMultiplying by \\((up)^r/r!\\), and using\n\\(2r/(2r+1)\\ge2s/(2s+1)\\), completes the proof.\nThe factor \\(1/r!\\) counts unordered sets; it is\nnot a bound for the growth of an arithmetic\nconstant in \\(r\\).\n\\end{proof}",
+      "replacement_tex": "\\begin{proof}\nApply Lemma~\\ref{p13:transfer:independent-tail} with \\(v=u\\) and \\(a=1\\),\nand increase its fixed cutoff to \\(s_0\\ge s\\) if necessary.\nOn \\(G\\) the exact marginals equal \\(p\\). Each set of \\(r\\) distinct\nstarts has exactly \\(r!\\) orderings, so the factor \\(1/r!\\) cancels\nexactly. The contribution with \\(r\\ge s_0\\) is therefore bounded by\nthe unordered tail of that lemma, \\(O(N^{-1+\\eta})\\).\nFor the finitely many \\(s\\le r<s_0\\), apply\nProposition~\\ref{p1:arith:fixed-support} with all \\(r\\) projections nonzero.\nIt gives \\(|\\mathcal H_{r,N}|\\ll N^{r/2+\\eta}\\), hence a weighted\ncontribution \\(O_{r,u,C,\\eta}(N^{-r/2+\\eta})\\).\nSince \\(r/2\\ge1>2s/(2s+1)\\), choosing \\(\\eta>0\\) inside the requested\nmargin and summing these finitely many layers proves the result.\n\\end{proof}",
+      "retained_statement": {
+        "lines": [
+          21,
+          29
+        ],
+        "tex": "\\begin{proposition}[A weighted count of every full support]\n\\label{p1:uniform:full-support}\nFor fixed \\(s\\ge2\\), \\(u>0\\), and \\(\\varepsilon>0\\),\n\\[\n \\sum_{r=s}^{|G|}\\frac{u^r}{r!}\n     \\sum_{\\boldsymbol x\\in\\mathcal H_{r,N}}p^r\n       \\ll_{s,u,C,\\varepsilon}N^{-2s/(2s+1)+\\varepsilon}.\n\\]\n\\end{proposition}",
+        "sha256": "c3b68f1c23695e421ff747f0e2abb1756be8b2bf1b82764750ace5cba5bbf8f1"
+      },
+      "line_measurement": {
+        "method": "splitlines; proof delimiters and blank lines included, at unchanged line wrapping outside the explicit proposed text",
+        "before_proof": 37,
+        "after_proof": 14,
+        "net_source_lines_removed": 23
+      },
+      "source_before_sha256": "894672842e0892daed0f5e97ec522ebaff6a809e0f7f5f01c64c73f4eaf934a5",
+      "virtual_source_after_sha256": "7e1441a5fdbe0d06c753e36cea21da287dd5050c680906c933780dc3d138aeea",
+      "necessary_corrections_to_published_text": [],
+      "title": "T22.1 : réutiliser la queue indépendante et le compte fixe renforcé",
+      "category": "coupe_effective_de_preuve",
+      "priority": 1,
+      "verdict": "applicable_avec_raccord_explicite",
+      "confidence": "élevée",
+      "finding": "La preuve refait les certificats modérés et le générateur des grandes tailles, puis utilise encore la puissance plus faible de T1.14. Le lemme15.8, avec cutoff fixé avant la marge, et T1.14 dans sa version renforcée fournissent une preuve courte de l’énoncé inchangé.",
+      "objects_and_quantifiers": [
+        "s≥2, u>0 et C sont fixés avant N. Choisir a=1, v=u, D=1, Q=2 dans uniform_tail; prendre s0=max(s,s_tail), avec sa monotonie positive. s0 précède le choix final η.",
+        "IndependentFullSupportTail.FullSupport exige une unique relation de somme nulle à projections toutes non nulles dans les espaces effectifs S_x. Il ne faut pas le remplacer par une condition de primitivité.",
+        "La queue est initialement pondérée par les vraies marginales p_x. Sa restriction aux fenêtres régulières G donne exactement p_x=p. Les familles de la proposition sont une sous-famille positive de la queue du dyadicBlock entier.",
+        "Chaque ensemble de r centres distincts a r! énumérations; la division par r! est donc exacte. Aucun majorant d’une constante fixe en fonction d’un ordre croissant n’est utilisé.",
+        "Seuls les s≤r<s0, donc un nombre fini d’ordres fixés avant N, utilisent critical_interval_count à s=r. Le compte est N^(r/2+η), le poids est O_{r,u,C}(N^-r), et r/2≥1>2s/(2s+1). Une marge η<ε/2 et le maximum fini des seuils suffisent."
+      ],
+      "exact_lean_entries": [
+        "PaperP1.FixedCutoffIndependentTail.uniform_tail",
+        "PaperP1.BlockSupportCount.critical_interval_count",
+        "PaperP1.FullSupportOrderedLists.ordered_mass_eq",
+        "PaperP1.FullSupportOrderedLists.nominal_weight_formula",
+        "PaperP1.FullSupportWeightedCount.full_list_bound",
+        "PaperP1.FullSupportWeightedCount.uniform_ordered_mass"
+      ],
+      "printed_dependencies": [
+        {
+          "file": "main_sections/exact_transfer.tex",
+          "label": "p13:transfer:independent-tail",
+          "lines": [
+            436,
+            498
+          ],
+          "role": "queue uniforme15.8, cutoff fixé avant ε"
+        },
+        {
+          "file": "companion_sections/arithmetic_appendix.tex",
+          "label": "p1:arith:fixed-support",
+          "lines": [
+            1096,
+            1126
+          ],
+          "role": "T1.14 renforcé, supports effectifs"
+        },
+        {
+          "file": "main_sections/arithmetic.tex",
+          "lines": [
+            78,
+            79
+          ],
+          "role": "convention historique de séparation strictement supérieure à L"
+        }
+      ],
+      "separation_boundary": {
+        "baseline_convention": "For separated windows, $|x-y|>L$",
+        "current_location": "main_sections/arithmetic.tex:78",
+        "v1_6_location": "manuscripts/paper-p1/v1.6/sources/main_sections/arithmetic.tex:78",
+        "conclusion": "Le canonique companion_T22_1 utilise manuscriptLists, qui impose strict>L, conformément au contexte historique explicite. Aucun défaut de l’ancien énoncé ou endpoint n’est constaté. uniform_ordered_mass et full_list_bound portent sur toutes les listes injectives sans séparation et couvrent aussi exactement L; cette portée plus large ne nécessite aucune nouvelle convention imprimée."
+      },
+      "acyclicity": "15.8 utilise les certificats uniformes de la section7 et leur version indépendante; T1.14 utilise le demi-compte10.1. Les fermetures locales de FixedCutoffIndependentTail et BlockSupportCount ne contiennent pas FullSupportWeightedCount. Aucun raisonnement de T22.1 n’est requis pour les deux entrées citées.",
+      "must_preserve": [
+        "L’énoncé et le label de T22.1.",
+        "Le champ hétérogène et la version à bloc comprimé de15.8, même si NEXT01 n’en emploie que la première branche.",
+        "La définition effective du support complet et la factorielle exacte.",
+        "Les branches positionnelles et les résultats d’ordres croissants des autres sections."
+      ],
+      "not_proposed": "Le taux plus fort N^(-1+ε) existe dans uniform_ordered_mass, mais il n’est pas intégré à l’énoncé. Une extension en min(s/2,a) n’est pas nécessaire à la coupe et n’est pas revendiquée comme nouveau terminal nommé.",
+      "integration_checks": [
+        "Citer le nouveau raccord15.8/T1.14, plutôt que les seuls anciens lemmes de certificats.",
+        "Conserver comme point d’entrée général full_list_bound ou uniform_ordered_mass si l’index décrit les listes sans restriction stricte>L.",
+        "Vérifier les renvois et la mise en page dans la future copie; aucun PDF n’a été construit ici."
+      ]
+    },
+    {
+      "id": "NEXT02",
+      "file": "companion_sections/supplemental_arithmetic.tex",
+      "result_label": "p1:arith:fixed-channel-rank",
+      "result_number_in_baseline_ledger": "T2.6",
+      "before_proof_lines": [
+        225,
+        277
+      ],
+      "before_proof_tex": "\\begin{proof}\nWrite \\(x=at-i_0\\), \\(y=bt-j_0\\), choosing the lower orientation.\nAs in Lemma~\\ref{p1:arith:palmrank}, the normalized old values lie in\na fixed-width interval about \\(abt\\).  An aligned target has the form\n\\(z=(ct+h)/d\\), with \\((c,d)=1\\), numerator, denominator and offsets\nof polynomial size in \\(B\\).\nThe dyadic positions require\n\\(b/2\\leq c/d\\leq2a\\), up to \\(B^{O(1)}/N\\).\nSeparation of rational fractions excludes strict violations of this\ninterval once \\(N\\) is large.\nEither equality forces \\(at=N+B^{O(1)}\\) or \\(bt=2N+B^{O(1)}\\);\nthese give the stated exceptional sources.\n\nFor the interior fractions, a new offset \\(k\\) matched to a true old\nvalue satisfies one of\n\\[\n h+dk\\equiv0\\pmod{c/(c,a)},\\qquad\n h+dk\\equiv0\\pmod{c/(c,b)}.\n\\]\nTheir intersection has modulus \\(c\\).\nThe union contains at most\n\\[\n B\\,\\frac{(c,a)+(c,b)-1}{c}+O(1)\n\\]\nnew positions.  The same residual argument as in\nLemma~\\ref{p1:arith:palmrank} leaves only \\(o(L)\\) further dimensions.\nMatching to a value in an enclosing interval but absent from the true\nold set contributes no new freedom.\n\nSuppose \\(c\\nmid a\\) and \\(c\\nmid b\\), and put \\(g=(c,a)\\), \\(h_1=(c,b)\\).\nThese numbers are coprime and \\(gh_1\\mid c\\).\nIf one equals one, the other is a proper divisor of \\(c\\), giving\ndensity at most \\(1/2\\).\nOtherwise \\(g,h_1\\geq2\\) and\n\\[\n \\frac{g+h_1-1}{c}\n \\leq\\frac1g+\\frac1{h_1}-\\frac1{gh_1}\\leq\\frac23.\n\\]\nThe last maximum occurs at the smallest coprime pair \\(\\{2,3\\}\\).\nWhen \\(c>b(a+b-1)\\), the density is less than \\(1/b\\).\nAll other nonphysical fractions are included in\n\\eqref{p1:arith:gamma-fixed-channel}.\n\nIf \\(c\\mid a\\), a proper divisor has \\(c\\leq a/2<b/2\\), which is\nimpossible here; thus \\(c=a,d=1\\).\nSimilarly \\(c\\mid b\\) leaves only \\(c=b,d=1\\).\nThese are the physical fractions reproducing one old family.\nCompatibility gives distance at least \\(L\\) from that source, so the\ntwo true windows share at most one value.\nMatches to the other old family have steps \\(a,b\\) in intervals of\nwidth \\(B\\), and number at most \\(B/b+O(1)\\).\nThis proves the rank bound in these cases as well.\n\\end{proof}",
+      "proposed_proof_tex": "\\begin{proof}\nThe matching calculation before the two channel specializations in\nthe proof of Lemma~\\ref{p1:arith:palmrank} applies to any fixed coprime\n\\(b/2<a<b\\). Write \\(x=at-i_0\\), \\(y=bt-j_0\\), and an aligned target as\n\\(z=(ct+h)/d\\), with \\((c,d)=1\\) and polynomially bounded data.\nAway from the stated \\(B^{O(1)}\\) endpoint sources, dyadic positions\nand rational separation give \\(b/2<c/d<2a\\).\nIts residual estimate and \\eqref{p1:arith:matchdensity} bound the loss\nby the displayed matching count plus \\(o(L)\\), also after exposing\nthe prime bits of \\(a,b\\). Only matches to true old values are counted.\n\nSuppose \\(c\\nmid a\\) and \\(c\\nmid b\\), and put \\(g=(c,a)\\), \\(h_1=(c,b)\\).\nThese numbers are coprime and \\(gh_1\\mid c\\).\nIf one equals one, the other is a proper divisor of \\(c\\), giving\ndensity at most \\(1/2\\).\nOtherwise \\(g,h_1\\geq2\\) and\n\\[\n \\frac{g+h_1-1}{c}\n \\leq\\frac1g+\\frac1{h_1}-\\frac1{gh_1}\\leq\\frac23.\n\\]\nThe last maximum occurs at the smallest coprime pair \\(\\{2,3\\}\\).\nWhen \\(c>b(a+b-1)\\), the density is less than \\(1/b\\).\nAll other nonphysical fractions are included in\n\\eqref{p1:arith:gamma-fixed-channel}.\n\nIf \\(c\\mid a\\), a proper divisor has \\(c\\leq a/2<b/2\\), which is\nimpossible here; thus \\(c=a,d=1\\).\nSimilarly \\(c\\mid b\\) leaves only \\(c=b,d=1\\).\nThese are the physical fractions reproducing one old family.\nCompatibility gives distance at least \\(L\\) from that source, so the\ntwo true windows share at most one value.\nMatches to the other old family have steps \\(a,b\\) in intervals of\nwidth \\(B\\), and number at most \\(B/b+O(1)\\).\nThis proves the rank bound in these cases as well.\n\\end{proof}",
+      "replaced_before_lines": [
+        225,
+        253
+      ],
+      "replaced_before_tex": "\\begin{proof}\nWrite \\(x=at-i_0\\), \\(y=bt-j_0\\), choosing the lower orientation.\nAs in Lemma~\\ref{p1:arith:palmrank}, the normalized old values lie in\na fixed-width interval about \\(abt\\).  An aligned target has the form\n\\(z=(ct+h)/d\\), with \\((c,d)=1\\), numerator, denominator and offsets\nof polynomial size in \\(B\\).\nThe dyadic positions require\n\\(b/2\\leq c/d\\leq2a\\), up to \\(B^{O(1)}/N\\).\nSeparation of rational fractions excludes strict violations of this\ninterval once \\(N\\) is large.\nEither equality forces \\(at=N+B^{O(1)}\\) or \\(bt=2N+B^{O(1)}\\);\nthese give the stated exceptional sources.\n\nFor the interior fractions, a new offset \\(k\\) matched to a true old\nvalue satisfies one of\n\\[\n h+dk\\equiv0\\pmod{c/(c,a)},\\qquad\n h+dk\\equiv0\\pmod{c/(c,b)}.\n\\]\nTheir intersection has modulus \\(c\\).\nThe union contains at most\n\\[\n B\\,\\frac{(c,a)+(c,b)-1}{c}+O(1)\n\\]\nnew positions.  The same residual argument as in\nLemma~\\ref{p1:arith:palmrank} leaves only \\(o(L)\\) further dimensions.\nMatching to a value in an enclosing interval but absent from the true\nold set contributes no new freedom.\n\n",
+      "replacement_tex": "\\begin{proof}\nThe matching calculation before the two channel specializations in\nthe proof of Lemma~\\ref{p1:arith:palmrank} applies to any fixed coprime\n\\(b/2<a<b\\). Write \\(x=at-i_0\\), \\(y=bt-j_0\\), and an aligned target as\n\\(z=(ct+h)/d\\), with \\((c,d)=1\\) and polynomially bounded data.\nAway from the stated \\(B^{O(1)}\\) endpoint sources, dyadic positions\nand rational separation give \\(b/2<c/d<2a\\).\nIts residual estimate and \\eqref{p1:arith:matchdensity} bound the loss\nby the displayed matching count plus \\(o(L)\\), also after exposing\nthe prime bits of \\(a,b\\). Only matches to true old values are counted.\n\n",
+      "retained_statement": {
+        "lines": [
+          209,
+          223
+        ],
+        "tex": "\\begin{lemma}[Additional rank in a fixed channel]\n\\label{p1:arith:fixed-channel-rank}\nOne has \\(\\gamma_{a:b}\\leq2/3\\).\nApart from \\(B^{O_{a,b}(1)}\\) source pairs at the dyadic endpoints,\nevery aligned target \\(z\\ne x,y\\) compatible with a source\n\\((x,y)\\in\\mathcal G_{a:b}\\) satisfies\n\\[\n \\delta_{x,y}(z):=\n L-\\dim\\frac{S_x+S_y+S_z}{S_x+S_y}\n \\leq\\gamma_{a:b}L+o_{a,b,C}(L).\n\\]\nThis definition includes any internal rank deficiency of the new window.\nThe bound remains true when the prime signs of \\(a,b\\) are included in\nthe old information.\n\\end{lemma}",
+        "sha256": "8dd614c19e50df20ed1eb9f3ab37c07386f1ce3665c3499e26d83211ceab60b9"
+      },
+      "line_measurement": {
+        "method": "splitlines; proof delimiters and blank lines included, at unchanged line wrapping outside the explicit proposed text",
+        "before_proof": 53,
+        "after_proof": 35,
+        "net_source_lines_removed": 18
+      },
+      "source_before_sha256": "e00b3138b8b97c6cc26d3c52672b26bc1bb6d4828598120702439e77b182a829",
+      "virtual_source_after_sha256": "0dd1bcbe1e2293928482b56adfcb3ce7b846ed5694b82f32b12c4c9a142a6a65",
+      "necessary_corrections_to_published_text": [],
+      "title": "T2.6 : citer une seule fois le calcul commun de correspondances de T1.11",
+      "category": "mutualisation_de_lisibilite_avec_gain_modeste",
+      "priority": 3,
+      "verdict": "applicable_optionnelle_gain_modeste",
+      "confidence": "élevée_sur_le_raccord_modérée_sur_le_bénéfice_éditorial",
+      "finding": "Le début de T2.6 reconstruit le paramètre de source, les congruences des deux familles, leur intersection et la densité déjà démontrés dans le préfixe général de T1.11. Ce préfixe ne dépend pas des évaluations numériques propres à2:3 et3:4. Le remplacer par un renvoi explicite économise18 lignes tout en conservant T1.11 intégralement.",
+      "objects_and_quantifiers": [
+        "Le canal est fixé : entiers copremiers b/2<a<b, b≥3; la largeur normalisée, le rayon d’alignement et les coordonnées premières de ab sont fixes avant N.",
+        "La source conserve le domaine géométrique de la famille G_{a:b} : vraie normalisation, unités exactes et condition de primes privées. L’argument ne prend pas pour prémisse la compatibilité affine de la source.",
+        "Le calcul général a pour cible z=(ct+h)/d, gcd(c,d)=1, données de hauteur polynomiale en B, perte relative réelle δ et vrai support ancien. Le résidu o(L) comprend l’éventuel défaut interne de la cible.",
+        "SourceConclusion prouve la version séparée ≥L sans positivité affine; CompatibleConclusion ajoute les hypothèses de masse positive puis en déduit cette séparation. La rédaction conserve la compatibilité imprimée là où elle est utilisée pour les fractions physiques.",
+        "La preuve propre à γ≤2/3, la coupure c>b(a+b−1), les fractions physiques c=a,d=1 ou c=b,d=1, les sources d’endpoints et les fenêtres vraies sont conservées verbatim après le préfixe proposé."
+      ],
+      "exact_lean_entries": [
+        "PaperP1.AlignedTargetSourceTheorem.uniform_source_bounds",
+        "PaperP1.AlignedTargetSourceTheorem.companion_T1_11",
+        "PaperP1.AlignedTargetSourceTheorem.companion_T2_6"
+      ],
+      "printed_dependencies": [
+        {
+          "file": "companion_sections/arithmetic_appendix.tex",
+          "label": "p1:arith:palmrank",
+          "lines": [
+            901,
+            959
+          ],
+          "role": "T1.11 et preuve entière conservés"
+        },
+        {
+          "file": "companion_sections/arithmetic_appendix.tex",
+          "label": "p1:arith:matchdensity",
+          "lines": [
+            932,
+            934
+          ],
+          "role": "même formule générale des correspondances, avant les spécialisations"
+        },
+        {
+          "file": "companion_sections/supplemental_arithmetic.tex",
+          "label": "p1:arith:gamma-fixed-channel",
+          "lines": [
+            197,
+            206
+          ],
+          "role": "maximum fini γ conservé"
+        },
+        {
+          "file": "companion_sections/supplemental_arithmetic.tex",
+          "lines": [
+            252,
+            277
+          ],
+          "role": "arithmétique générale et cas physiques conservés"
+        }
+      ],
+      "acyclicity": "Le renvoi conserve la direction T1.11→T2.6, déjà présente dans le texte, et ne crée aucun renvoi anticipé. T1.11 ne renvoie ni à T2.6, ni à T1.12, ni aux moments. Côté Lean, les deux companion_T1_11 et companion_T2_6 dérivent du noyau général uniform_source_bounds; ils ne se prouvent pas l’un par l’autre.",
+      "must_preserve": [
+        "Le texte et la preuve pointwise entiers de T1.11, avec ses exclusions de sources et son label de densité.",
+        "La définition des vrais ensembles normalisés et le pincement des valeurs absentes du vrai support.",
+        "Les évaluations γ(2,3)=1/3 et γ(3,4)=1/2 dans T1.11.",
+        "Tous les cas physiques et les dépendances aux paramètres fixes de T2.6."
+      ],
+      "not_proposed": "Pas de remplacement de T1.11 par une masse moyenne de triples, pas de déplacement du lemme général vers l’amont, pas de suppression du calcul des endpoints. Si un lecteur cible doit pouvoir ouvrir T2.6 sans revenir à T1.11, le gain de18 lignes peut être jugé insuffisant et ce candidat peut être écarté.",
+      "integration_checks": [
+        "Garder la phrase «before the two channel specializations», qui identifie la partie générale effectivement réutilisée.",
+        "Garder explicitement la référence à matchdensity et au résidu o(L), plutôt qu’une mention vague «same argument».",
+        "Ne modifier aucun label ou énoncé de résultat."
+      ]
+    },
+    {
+      "id": "NEXT03",
+      "file": "main_sections/quartic_lower.tex",
+      "result_label": "p13:lower:quartic",
+      "result_number_in_baseline_ledger": "16.1",
+      "before_proof_lines": [
+        44,
+        117
+      ],
+      "before_proof_tex": "\\begin{proof}\nExpanding the first four factorial moments with the individual $p_i$\ngives the exact identity\n\\begin{align}\n \\kappa_4={}&24\\sum_{|I|=4}c(I)-12(C_2^{\\mathrm s})^2\n -24\\sum_{|T|=3}\\Bigl(\\sum_{i\\in T}p_i\\Bigr)c(T)\\notag\\\\\n &+24\\sum_{e=\\{i,j\\}}(p_i^2+p_ip_j+p_j^2)c(e)\n -6\\sum_i p_i^4.\n \\label{p13:lower:exact-cumulant}\n\\end{align}\nFor example, first write\n\\[\n \\E(1+t)^Z=\\prod_i(1+p_it)\n \\left[1+\\sum_{2\\leq|I|\\leq4}\n       \\frac{c(I)t^{|I|}}{\\prod_{i\\in I}(1+p_it)}+O(t^5)\\right],\n\\]\nthen take $24$ times the coefficient of $t^4$ in its formal logarithm.\nThis is a finite coefficient calculation; no analytic logarithm of the\ntrue generating function is required.\n\nCanonical direct decomposition gives\n$\\sum_{|I|=4}c(I)=K_4+D_{22}$, where $D_{22}$ sums\n$c(e)c(f)$ over unordered disjoint pairs of edges whose spaces are direct.\nIn $(C_2^{\\mathrm s})^2/2-D_{22}$ only repeated edges, edges sharing a\nvertex, and disjoint edges with a nonzero intersection remain.\nThe positive propagation estimate, together with the product of the\nmarginals, implies\n\\[\n \\sum_{y\\ne x}|c(x,y)|\\ll_{C,\\eta}p_xN^\\eta.\n\\]\nRepeated edges and shared vertices consequently have total absolute\nweight $O(p_*A_2N^\\eta)=O(N^{-5/3+2\\eta})$.\n\nApply the pair partition of Lemma~\\ref{p13:activity:pair-partition} with\na small fixed parameter $\\eta$. A product involving a weak or exceptional\nedge has total weight at most\n$A_2(A_{\\mathrm w}+A_{\\mathrm s})\n\\ll N^{-5/3+O(\\eta)}$.\nFor two good edges from the remaining finite family of channels, fix the\nfirst edge and the offset pattern of the second compression. There are\n$NB^{O(1)}$ choices for the first edge. A nonzero intersection imposes\nan exceptional target of fixed width, giving $N^{1/2+o(1)}$ choices for\nthe second compressed center by the elementary exceptional-target count\nin Proposition~\\ref{p1:arith:fixed-branching}. The proof of that count\nuses only a fixed width and applies to this compression as well.\nEach product has weight at most $N^{-10/3+o(1)}$. Hence this last cost is\n$N^{-11/6+o(1)}$, and\n\\[\n D_{22}=(C_2^{\\mathrm s})^2/2+O(N^{-5/3+\\varepsilon}).\n\\]\nThe remaining terms of \\eqref{p13:lower:exact-cumulant} are bounded by\n$O(p_*A_3+p_*^2A_2+p_*^3\\mu)$.\nThe triple estimate in Corollary~\\ref{p13:third:activity} gives\n$A_3\\ll N^{-41/30+\\eta}$, so each is smaller than the stated error.\nThis proves the first identity.\n\nFor an incompatible connected quadruple the centered expansion is\n\\[\n c(I)=-\\prod_{i\\in I}p_i\n       -\\sum_{\\substack{J\\subsetneq I\\\\2\\leq|J|\\leq3}}\n             c(J)\\prod_{i\\in I\\setminus J}p_i.\n\\]\nThe independent term sums to $O(N^{-2+\\eta})$ by the connected-host\ncount of Corollary~\\ref{p13:half:connected}. The terms with $|J|=2$ are\nbounded by the fixed extension deficit\nof Lemma~\\ref{p13:transfer:fixed-deficit}, hence by\n$O(N^{-3/2+\\eta})$. For $|J|=3$, connectedness requires a non-direct\nextension of its total space. The uniform independent deficit\nof Lemma~\\ref{p13:transfer:independent-deficit} costs $N^{-1/2+\\eta}$,\nand its product with $A_3$ is smaller still. Thus the total absolute\nactivity of incompatible connected quadruples is $O(N^{-3/2+\\varepsilon})$.\nCompatible coefficients are nonnegative, which proves the second identity\nand then \\eqref{p13:lower:positive-quartic}.\n\\end{proof}",
+      "proposed_proof_tex": "\\begin{proof}\nExpanding the first four factorial moments with the individual $p_i$\ngives the exact identity\n\\begin{align}\n \\kappa_4={}&24\\sum_{|I|=4}c(I)-12(C_2^{\\mathrm s})^2\n -24\\sum_{|T|=3}\\Bigl(\\sum_{i\\in T}p_i\\Bigr)c(T)\\notag\\\\\n &+24\\sum_{e=\\{i,j\\}}(p_i^2+p_ip_j+p_j^2)c(e)\n -6\\sum_i p_i^4.\n \\label{p13:lower:exact-cumulant}\n\\end{align}\nFor example, first write\n\\[\n \\E(1+t)^Z=\\prod_i(1+p_it)\n \\left[1+\\sum_{2\\leq|I|\\leq4}\n       \\frac{c(I)t^{|I|}}{\\prod_{i\\in I}(1+p_it)}+O(t^5)\\right],\n\\]\nthen take $24$ times the coefficient of $t^4$ in its formal logarithm.\nThis is a finite coefficient calculation; no analytic logarithm of the\ntrue generating function is required.\n\nCanonical direct decomposition gives\n$\\sum_{|I|=4}c(I)=K_4+D_{22}$, where $D_{22}$ sums\n$c(e)c(f)$ over unordered disjoint pairs of edges whose spaces are direct.\nIn $(C_2^{\\mathrm s})^2/2-D_{22}$ only repeated edges, edges sharing a\nvertex, and disjoint edges with a nonzero intersection remain.\nThe positive propagation estimate, together with the product of the\nmarginals, implies\n\\[\n \\sum_{y\\ne x}|c(x,y)|\\ll_{C,\\eta}p_xN^\\eta.\n\\]\nRepeated edges and shared vertices consequently have total absolute\nweight $O(p_*A_2N^\\eta)=O(N^{-5/3+2\\eta})$.\n\nApply the pair partition of Lemma~\\ref{p13:activity:pair-partition} with\na small fixed parameter $\\eta$. A product involving a weak or exceptional\nedge has total weight at most\n$A_2(A_{\\mathrm w}+A_{\\mathrm s})\n\\ll N^{-5/3+O(\\eta)}$.\nFor two good edges from the remaining finite family of channels, fix the\nfirst edge and the offset pattern of the second compression. There are\n$NB^{O(1)}$ choices for the first edge. A nonzero intersection imposes\nan exceptional target of fixed width, giving $N^{1/2+o(1)}$ choices for\nthe second compressed center by the elementary exceptional-target count\nin Proposition~\\ref{p1:arith:fixed-branching}. The proof of that count\nuses only a fixed width and applies to this compression as well.\nEach product has weight at most $N^{-10/3+o(1)}$. Hence this last cost is\n$N^{-11/6+o(1)}$, and\n\\[\n D_{22}=(C_2^{\\mathrm s})^2/2+O(N^{-5/3+\\varepsilon}).\n\\]\nThe remaining terms of \\eqref{p13:lower:exact-cumulant} are bounded by\n$O(p_*A_3+p_*^2A_2+p_*^3\\mu)$.\nThe triple estimate in Corollary~\\ref{p13:third:activity} gives\n$A_3\\ll N^{-41/30+\\eta}$, so each is smaller than the stated error.\nThis proves the first identity.\n\nThe incompatible part of Proposition~\\ref{p13:transfer:fixed-activities}\nat the fixed order \\(r=4\\) gives\n\\[\n |K_4-K_4^+|\n \\le\\sum_{\\substack{|I|=4,\\ I\\text{ connected}\\\\q(I)=0}}|c(I)|\n \\ll_{C,\\varepsilon}N^{-3/2+\\varepsilon}.\n\\]\nCompatible coefficients are nonnegative. This proves the second identity\nand then \\eqref{p13:lower:positive-quartic}.\n\\end{proof}",
+      "replaced_before_lines": [
+        100,
+        116
+      ],
+      "replaced_before_tex": "For an incompatible connected quadruple the centered expansion is\n\\[\n c(I)=-\\prod_{i\\in I}p_i\n       -\\sum_{\\substack{J\\subsetneq I\\\\2\\leq|J|\\leq3}}\n             c(J)\\prod_{i\\in I\\setminus J}p_i.\n\\]\nThe independent term sums to $O(N^{-2+\\eta})$ by the connected-host\ncount of Corollary~\\ref{p13:half:connected}. The terms with $|J|=2$ are\nbounded by the fixed extension deficit\nof Lemma~\\ref{p13:transfer:fixed-deficit}, hence by\n$O(N^{-3/2+\\eta})$. For $|J|=3$, connectedness requires a non-direct\nextension of its total space. The uniform independent deficit\nof Lemma~\\ref{p13:transfer:independent-deficit} costs $N^{-1/2+\\eta}$,\nand its product with $A_3$ is smaller still. Thus the total absolute\nactivity of incompatible connected quadruples is $O(N^{-3/2+\\varepsilon})$.\nCompatible coefficients are nonnegative, which proves the second identity\nand then \\eqref{p13:lower:positive-quartic}.\n",
+      "replacement_tex": "The incompatible part of Proposition~\\ref{p13:transfer:fixed-activities}\nat the fixed order \\(r=4\\) gives\n\\[\n |K_4-K_4^+|\n \\le\\sum_{\\substack{|I|=4,\\ I\\text{ connected}\\\\q(I)=0}}|c(I)|\n \\ll_{C,\\varepsilon}N^{-3/2+\\varepsilon}.\n\\]\nCompatible coefficients are nonnegative. This proves the second identity\nand then \\eqref{p13:lower:positive-quartic}.\n",
+      "retained_statement": {
+        "lines": [
+          28,
+          42
+        ],
+        "tex": "\\begin{lemma}[The fourth factorial cumulant]\n\\label{p13:lower:quartic}\nFor every fixed critical band and every $\\varepsilon>0$,\n\\begin{equation}\n \\kappa_4=24K_4+O_{C,\\varepsilon}(N^{-5/3+\\varepsilon}),\\qquad\n K_4=K_4^++O_{C,\\varepsilon}(N^{-3/2+\\varepsilon}).\n \\label{p13:lower:quartic-identities}\n\\end{equation}\nConsequently\n\\begin{equation}\n \\kappa_4+3\\alpha^2\n =3\\alpha^2+24K_4^++O_{C,\\varepsilon}(N^{-3/2+\\varepsilon}).\n \\label{p13:lower:positive-quartic}\n\\end{equation}\n\\end{lemma}",
+        "sha256": "345a16ff574b370197f3327bbebd0fcb7740c01fb2af27ef6849b214e25389f1"
+      },
+      "line_measurement": {
+        "method": "splitlines; proof delimiters and blank lines included, at unchanged line wrapping outside the explicit proposed text",
+        "before_proof": 74,
+        "after_proof": 66,
+        "net_source_lines_removed": 8
+      },
+      "source_before_sha256": "f994e541a70c7b177d9d52290b23a5a0e67322a8cc71cc38836e27576a6906ad",
+      "virtual_source_after_sha256": "431d488641a43309694c02366d82003135fa96d402988f4f2b6b201a561bbd7e",
+      "necessary_corrections_to_published_text": [],
+      "title": "16.1 : réutiliser la clause incompatible déjà prouvée en15.10",
+      "category": "coupe_effective_de_preuve",
+      "priority": 2,
+      "verdict": "applicable_avec_raccord_explicite",
+      "confidence": "élevée",
+      "finding": "La dernière partie de la preuve16.1 redémontre, sur17 lignes, la borne absolue des quadruples connexes incompatibles. La seconde clause de15.10 donne exactement cette borne au même ordre fixe et pour l’ensemble admissible complet. La remplacer par l’inégalité de9 lignes proposée conserve la séparation entre les deux erreurs quartiques.",
+      "objects_and_quantifiers": [
+        "Fixer r=4 avant N et prendre G=dyadicBlock N dans article_15_10. Cette spécialisation n’impose aucune régularité, séparation ou positivité des marginales individuelles.",
+        "K4 est la somme signée de infiniteCenteredCoefficient sur connectedFamilies G L 4. K4+ est la somme des mêmes coefficients sur q(I)>0; incompatibleAbsolute est la somme des valeurs absolues sur q(I)=0.",
+        "La positivité des probabilités implique K4−K4+ égal à la somme signée sur q(I)=0, donc son module est au plus incompatibleAbsolute. La compatibilité donne également c(I)≥0 dans K4+.",
+        "Conserver κ4−24K4=O(N^(-5/3+ε)) séparément. Le renvoi ne remplace que K4−K4+=O(N^(-3/2+ε)); la combinaison finale reste O(N^(-3/2+ε)), avec une petite marge interne pour les facteurs constants."
+      ],
+      "exact_lean_entries": [
+        "PaperP1.ConnectedReductionToTriples.article_15_10",
+        "PaperP1.FourthCumulantIdentities.article_16_1"
+      ],
+      "supplementary_source_declarations_read": [
+        "PaperP1.SharpIncompatibleActivity.uniform_range",
+        "PaperP1.CompatibleActivitySplit.signed_error",
+        "PaperP1.CompatibleActivitySplit.positive_nonneg"
+      ],
+      "printed_dependencies": [
+        {
+          "file": "main_sections/exact_transfer.tex",
+          "label": "p13:transfer:fixed-activities",
+          "lines": [
+            544,
+            680
+          ],
+          "role": "proposition15.10 et clause incompatible antérieure"
+        },
+        {
+          "file": "main_sections/quartic_lower.tex",
+          "lines": [
+            44,
+            99
+          ],
+          "role": "première partie de la preuve quartique conservée verbatim"
+        },
+        {
+          "file": "main_sections/quartic_lower.tex",
+          "lines": [
+            101,
+            117
+          ],
+          "role": "redémonstration incompatible remplacée"
+        }
+      ],
+      "acyclicity": "La preuve imprimée de15.10 conclut explicitement sans approximation de loi ni borne inférieure; elle est antérieure à16.1. Le corps de16.1 utilise déjà SharpIncompatibleActivity.uniform_range, comme15.10. La fermeture d’imports de ConnectedReductionToTriples ne contient ni FourthCumulantIdentities ni FourthConnectedCumulant; les corps sources confirment cette indépendance.",
+      "must_preserve": [
+        "Toute la première identité quartique et sa preuve, y compris les termes de répétition et le coût des deux bonnes arêtes.",
+        "Les deux puissances distinctes -5/3 et -3/2.",
+        "La positivité de K4+ et le raisonnement de test de Charlier qui suit dans le théorème16.2.",
+        "Le cadre des vraies marginales hétérogènes sur tout l’ensemble admissible."
+      ],
+      "not_proposed": "La coupe n’affirme pas une amélioration de la seconde erreur à -5/3. Elle ne déduit aucune borne positive d’un cumulant signé et ne fait pas intervenir le théorème principal.",
+      "integration_checks": [
+        "Utiliser le label p13:transfer:fixed-activities (15.10), et non celui du budget multi-ancres15.11.",
+        "Conserver la clause incompatible dans l’énoncé et la preuve autonome de15.10.",
+        "Vérifier que les deux identités de16.1 gardent leurs exposants propres lors de la mise en page."
+      ]
+    }
+  ],
+  "line_balance": {
+    "method": "Remplacements exacts ci-dessus appliqués à la source50bdbf1c uniquement en mémoire; comptage splitlines, blancs et délimiteurs de preuve inclus.",
+    "per_proposal": [
+      {
+        "id": "NEXT01",
+        "file": "companion_sections/uniform_appendix.tex",
+        "line_measurement": {
+          "method": "splitlines; proof delimiters and blank lines included, at unchanged line wrapping outside the explicit proposed text",
+          "before_proof": 37,
+          "after_proof": 14,
+          "net_source_lines_removed": 23
+        }
+      },
+      {
+        "id": "NEXT02",
+        "file": "companion_sections/supplemental_arithmetic.tex",
+        "line_measurement": {
+          "method": "splitlines; proof delimiters and blank lines included, at unchanged line wrapping outside the explicit proposed text",
+          "before_proof": 53,
+          "after_proof": 35,
+          "net_source_lines_removed": 18
+        }
+      },
+      {
+        "id": "NEXT03",
+        "file": "main_sections/quartic_lower.tex",
+        "line_measurement": {
+          "method": "splitlines; proof delimiters and blank lines included, at unchanged line wrapping outside the explicit proposed text",
+          "before_proof": 74,
+          "after_proof": 66,
+          "net_source_lines_removed": 8
+        }
+      }
+    ],
+    "net_source_lines_removed": 49,
+    "pdf_compiled": false,
+    "interpretation": "Le total mesure la source proposée, pas une page du PDF. NEXT02 est principalement une mutualisation de lecture et peut être écarté sans perte scientifique."
+  },
+  "suggested_integration_order": [
+    "NEXT01",
+    "NEXT03",
+    "NEXT02 si le renvoi supplémentaire convient au parcours de lecture"
+  ],
+  "dependencies_and_imports": {
+    "parent_evidence_path": "p1-next-simplification/import-evidence.json",
+    "parent_evidence_sha256": "9d0057647360cc61b63760c58255eed9a883b207bb11c0b03e4843e05e3dd4f0",
+    "parent_fingerprints_verified": 1818,
+    "independently_recomputed_roots": [
+      {
+        "root": "PaperP1.Asymptotics.FullSupportWeightedCount",
+        "local_import_ancestors_excluding_root": 483,
+        "selected_absences": [
+          "PaperP1.Asymptotics.FourthCumulantIdentities",
+          "PaperP1.Asymptotics.FourthConnectedCumulant",
+          "PaperP1.Asymptotics.CompleteFixedMoments"
+        ],
+        "note": "Fermeture recalculée indépendamment en lecture. Une absence d’import n’est pas prise, seule, pour une analyse des hypothèses des corps."
+      },
+      {
+        "root": "PaperP1.Asymptotics.FixedCutoffIndependentTail",
+        "local_import_ancestors_excluding_root": 1076,
+        "selected_absences": [
+          "PaperP1.Asymptotics.FullSupportWeightedCount",
+          "PaperP1.Asymptotics.FourthCumulantIdentities",
+          "PaperP1.Asymptotics.FourthConnectedCumulant",
+          "PaperP1.Asymptotics.CompleteFixedMoments"
+        ],
+        "note": "Fermeture recalculée indépendamment en lecture. Une absence d’import n’est pas prise, seule, pour une analyse des hypothèses des corps."
+      },
+      {
+        "root": "PaperP1.Asymptotics.BlockSupportCount",
+        "local_import_ancestors_excluding_root": 270,
+        "selected_absences": [
+          "PaperP1.Asymptotics.FullSupportWeightedCount",
+          "PaperP1.Asymptotics.FourthCumulantIdentities",
+          "PaperP1.Asymptotics.FourthConnectedCumulant",
+          "PaperP1.Asymptotics.CompleteFixedMoments"
+        ],
+        "note": "Fermeture recalculée indépendamment en lecture. Une absence d’import n’est pas prise, seule, pour une analyse des hypothèses des corps."
+      },
+      {
+        "root": "PaperP1.Asymptotics.AlignedTargetSourceTheorem",
+        "local_import_ancestors_excluding_root": 223,
+        "selected_absences": [
+          "PaperP1.Asymptotics.FullSupportWeightedCount",
+          "PaperP1.Asymptotics.FourthCumulantIdentities",
+          "PaperP1.Asymptotics.FourthConnectedCumulant",
+          "PaperP1.Asymptotics.CompleteFixedMoments"
+        ],
+        "note": "Fermeture recalculée indépendamment en lecture. Une absence d’import n’est pas prise, seule, pour une analyse des hypothèses des corps."
+      },
+      {
+        "root": "PaperP1.Asymptotics.ConnectedReductionToTriples",
+        "local_import_ancestors_excluding_root": 1701,
+        "selected_absences": [
+          "PaperP1.Asymptotics.FullSupportWeightedCount",
+          "PaperP1.Asymptotics.FourthCumulantIdentities",
+          "PaperP1.Asymptotics.FourthConnectedCumulant",
+          "PaperP1.Asymptotics.CompleteFixedMoments"
+        ],
+        "note": "Fermeture recalculée indépendamment en lecture. Une absence d’import n’est pas prise, seule, pour une analyse des hypothèses des corps."
+      },
+      {
+        "root": "PaperP1.Asymptotics.FourthCumulantIdentities",
+        "local_import_ancestors_excluding_root": 1708,
+        "selected_absences": [
+          "PaperP1.Asymptotics.FullSupportWeightedCount",
+          "PaperP1.Asymptotics.CompleteFixedMoments"
+        ],
+        "note": "Fermeture recalculée indépendamment en lecture. Une absence d’import n’est pas prise, seule, pour une analyse des hypothèses des corps."
+      }
+    ],
+    "printed_dependency_order": [
+      "Section7 certificats +10.1 demi-compte →15.8 et T1.14 →T22.1.",
+      "Préfixe général et preuve entière deT1.11 → preuve deT2.6; aucun renvoi inverse ajouté.",
+      "Déficits et activités fixes →15.10 clause incompatible →16.1 seconde identité →16.2 borne inférieure."
+    ]
+  },
+  "definitions_and_predicates_opened": [
+    {
+      "file": "PaperP1/Model/IndependentFullSupportTail.lean",
+      "sha256": "a1198d5907c7ce881f716f7c0ce9eeb895af3b73e6e424365e0fdc8dc0eec082",
+      "locations": [
+        {
+          "declaration": "def FullSupport",
+          "line": 15
+        },
+        {
+          "declaration": "def families",
+          "line": 18
+        },
+        {
+          "declaration": "def mass",
+          "line": 22
+        }
+      ]
+    },
+    {
+      "file": "PaperP1/Model/FullSupportOrderedLists.lean",
+      "sha256": "451b9fca28e4e5b730ac25ac37118542a4e5003f9d0b9b32703f4c8c6b84773d",
+      "locations": [
+        {
+          "declaration": "def lists",
+          "line": 20
+        },
+        {
+          "declaration": "def manuscriptLists",
+          "line": 28
+        }
+      ]
+    },
+    {
+      "file": "PaperP1/Arithmetic/BlockSupportProjection.lean",
+      "sha256": "6fad88eecd06da9ed5659588ac566a492a2053255c184183afaef00dc9c36036",
+      "locations": [
+        {
+          "declaration": "def Relation",
+          "line": 15
+        },
+        {
+          "declaration": "def population",
+          "line": 20
+        }
+      ]
+    },
+    {
+      "file": "PaperP1/Asymptotics/AlignedTargetSourceTheorem.lean",
+      "sha256": "d311b6d58de7aa33e69e766c664047a3b91f1f66d6598ed5f7d640451f054909",
+      "locations": [
+        {
+          "declaration": "def SourceConclusion",
+          "line": 27
+        },
+        {
+          "declaration": "def CompatibleConclusion",
+          "line": 37
+        }
+      ]
+    },
+    {
+      "file": "PaperP1/Arithmetic/TargetWindowRank.lean",
+      "sha256": "ebc40a5f27fce580d65086b403eb071e7a57a50bc1302d5ec0075fc23f08e92f",
+      "locations": [
+        {
+          "declaration": "def oldSpace",
+          "line": 20
+        },
+        {
+          "declaration": "def deficiency",
+          "line": 27
+        }
+      ]
+    },
+    {
+      "file": "PaperP1/Arithmetic/ScaledTargetValues.lean",
+      "sha256": "b309038b56fe0c0aff159bf2768a105de278c325f739de6e152bdf13302a27f4",
+      "locations": [
+        {
+          "declaration": "theorem old_space",
+          "line": 37
+        },
+        {
+          "declaration": "theorem new_space",
+          "line": 43
+        }
+      ]
+    },
+    {
+      "file": "PaperP1/Arithmetic/FixedChannelGamma.lean",
+      "sha256": "3ab3ac0b447bfd83e4898e3aac9125771c7627594c802acde940dd68d4cc6e16",
+      "locations": [
+        {
+          "declaration": "def candidates",
+          "line": 22
+        },
+        {
+          "declaration": "def gamma",
+          "line": 28
+        },
+        {
+          "declaration": "theorem gammaReal_two_three",
+          "line": 163
+        },
+        {
+          "declaration": "theorem gammaReal_three_four",
+          "line": 167
+        }
+      ]
+    },
+    {
+      "file": "PaperP1/Model/ConnectedWindowFamilies.lean",
+      "sha256": "71280346388c93b8ed170ce81236fc79a72a493c0daf11a17467cf485429d66d",
+      "locations": [
+        {
+          "declaration": "def Connected",
+          "line": 23
+        },
+        {
+          "declaration": "def connectedFamilies",
+          "line": 30
+        }
+      ]
+    },
+    {
+      "file": "PaperP1/Model/CompatibleActivitySplit.lean",
+      "sha256": "af8f78dfadf37e59ba400bbd2550ef12cb568e3fec9be24fc948be61b2f39386",
+      "locations": [
+        {
+          "declaration": "def signed",
+          "line": 19
+        },
+        {
+          "declaration": "def positive",
+          "line": 21
+        },
+        {
+          "declaration": "def incompatibleAbsolute",
+          "line": 24
+        },
+        {
+          "declaration": "theorem signed_error",
+          "line": 67
+        }
+      ]
+    }
+  ],
+  "source_fingerprints": {
+    "tex_baseline": {
+      "assistance.tex": "5459338ba44d2a9d4370198f051db42c76d0a4a241d38a523d821127f47d47be",
+      "bibliography.tex": "49ff08f6732d8928302ad4aff31bab8c69e753b1e030ad280a552d1576685edb",
+      "companion.tex": "e4d21cf8c3ab2b1b6461a05673668af9c860669f7e09290bd7673bc3c768e251",
+      "companion_sections/arithmetic.tex": "3b16c88f219ea6fcc7c0cd329058067757a737a8cf7110a81b75b7dfc8dcaa9a",
+      "companion_sections/arithmetic_appendix.tex": "897f871a5f36e4b1e8fd59472dc6805305b5e0f078219956725e895458c48e71",
+      "companion_sections/arithmetic_consequences.tex": "6b65c0b35a1077bef327644732aacc239f9a6ad50af40a1136b22d00d4f08a46",
+      "companion_sections/closure.tex": "c4e522fa1b996c1e7a83b3e47e81e1abac99623a1ff408d74b7a30c643a29268",
+      "companion_sections/confinement.tex": "474b3ca1ae3c0400495204bbd083ed355ffe80faaff413f9522d411e56ef8bf0",
+      "companion_sections/cores.tex": "d9961c099e8e70d3a260fd7ec43443d0fd9e222aa759e991c3dae9b30ab17b73",
+      "companion_sections/discussion.tex": "049daf41799e840d6e3a71a33463f91f345120b1bd0902f7cb668374e7949135",
+      "companion_sections/exact_transfer.tex": "e206bbb8c7a5fd270d07a9e4e20a33b450ad02a6f59a4dfe57647c9fa80b0e19",
+      "companion_sections/fixed_moments.tex": "90d5f2dafccb74afc39a55425058adee305864b81a994b169a5b21dc254913ac",
+      "companion_sections/guide.tex": "5172e1a25ee29c12657b068f870581761e2a835ec4b61de9a4629ddd2f53fabc",
+      "companion_sections/half_counts.tex": "f27be44ea2689b57455cfa6cd59f7f0104e9a78b376d690a397dc4fbdcac57de",
+      "companion_sections/limits_appendix.tex": "4c774549734a145a06e5e4786bc22eef45af607da92389e75b7c7775fcae08c4",
+      "companion_sections/moment_obstruction.tex": "68d14a0fefd9caabc9960b5fe26088a3cbe139374f31a6fb5a1152ecac39f7ed",
+      "companion_sections/offset_geometry.tex": "b4b12b1fe8471ace075b882cadfe84e207f9b7d5303d22f64dfbc93391cfc2ef",
+      "companion_sections/pair_rigidity.tex": "049b7ca4c2618648c4734c7fc9f4352ab4f4e347d519d573a7d37713810f484b",
+      "companion_sections/short_supports.tex": "7b096de013726a20c738635657990b89ba89d287444ac175fd5f5dbba1763f8e",
+      "companion_sections/stopped.tex": "f2d257e4a39239c707e12154984e1aada147518814a7ab5bc1838e2f5ce17a0c",
+      "companion_sections/supplemental_arithmetic.tex": "e00b3138b8b97c6cc26d3c52672b26bc1bb6d4828598120702439e77b182a829",
+      "companion_sections/third_cumulant.tex": "f6ada4e998c540a7598f7b199fa5badf7024f92191668e7ac20f1eebdfb2a6a7",
+      "companion_sections/triple_activities.tex": "5de2149a4a93690f08b9696a278fad7d23a04ff7f30b01dd83d7447686ad2979",
+      "companion_sections/uniform_appendix.tex": "894672842e0892daed0f5e97ec522ebaff6a809e0f7f5f01c64c73f4eaf934a5",
+      "formalization.tex": "22f43b5c343a96c22c8b0a6037842c4edae8d910d0c2979a7ed3a1edf3e69206",
+      "main.tex": "9f0737d94748168bdb75d29b3707a3a0deeb19106d3bff50f163c321c0c35e86",
+      "main_sections/abstract.tex": "866ef4bc3e4dbb2fedea1a4bc067aaa349789f61d290db86fc582cc56c340494",
+      "main_sections/affine_algebra.tex": "34fea577c41c259edbef9b04b52bd501324c30c284cb979a06cbc53fb30e4bcb",
+      "main_sections/arithmetic.tex": "fc8195cec22f71fa22cb7874066dd83bf60bd40f9c73233cb218adb5d96e9b40",
+      "main_sections/channel_hierarchy.tex": "bdca79979d65457ea356da0f75f9233a993e7a2e08e54abdbfd892b4a431cbb4",
+      "main_sections/closure.tex": "88068742282067a54f0b49c106ce57db811285f109f75dfa821ed7260cf8e299",
+      "main_sections/confinement.tex": "e7ea205606d76cad7c2f5837e97c2353d3ec17c0af7a12fd856fcdca4c479767",
+      "main_sections/cores.tex": "f00e26006c6cb5ecda5f007d26c068c12fbb3baba8919f4e708f4bb23fe11d6b",
+      "main_sections/discussion.tex": "4525701ce6bf0b2cb83abdc4bbbfa560efa0cb02879d7371a0b1317af77e5a24",
+      "main_sections/exact_setup.tex": "74fe4e07938ff4f091629028299779e6bb2cf38f7325ed613180e6d2fbd58602",
+      "main_sections/exact_transfer.tex": "072d858b3c237889d370cf190a0ccba579209acc50e97f178348902b22d94e6f",
+      "main_sections/fixed_moments.tex": "aeb2bbd50f3034310f7944271aeb5221f86d99726a4edcdbe5bf4b3f2cbcbe49",
+      "main_sections/half_counts.tex": "c0617cd80434a68255f0668a41a31fa13c0f7b7759bd1219912dd7ce43808d33",
+      "main_sections/introduction.tex": "0f99240335f710a4bc919836a9d717b062abfd3266ae1bcd76c008525e09ada9",
+      "main_sections/limits_appendix.tex": "9b517cf38874aa3240cc6f6121a34ebd6f9a368563473b8840152dc419bdbfb0",
+      "main_sections/optimal_closure.tex": "3dd21ec1294dd1d0a1baa7b9325c6afa8623517986e419a06e7aa9ef8531a3db",
+      "main_sections/pair_rigidity.tex": "ac8b5be6b83c3f9b9615396bc386b2f2388a9f2e5fdbd96ea12d5e35afffaabb",
+      "main_sections/quartic_lower.tex": "f994e541a70c7b177d9d52290b23a5a0e67322a8cc71cc38836e27576a6906ad",
+      "main_sections/short_supports.tex": "377fceab74eb1d6473f2635f8f9f9290e12fcac97ca1dfa99149bf0fdaf22d0f",
+      "main_sections/stopped.tex": "86d9baeed211a18303210d80b98481c15b6a0e16a9c6d2c569f2977de62879e6",
+      "main_sections/third_cumulant.tex": "95154600c27253c8adb8c658ee6277d4f74119220fe9b5a31acdb1cb365bd7cd",
+      "main_sections/triple_activities.tex": "c693ef06624425be0be3928a4e11261ded3f53d96f62fa1cc273d9eb61a15d82",
+      "preamble.tex": "5feda0819703be5f72319db56873fa7a15101a8d2f100b0c4dca8d30ff09b1e3"
+    },
+    "proposed_changed_files_only": {
+      "companion_sections/uniform_appendix.tex": "7e1441a5fdbe0d06c753e36cea21da287dd5050c680906c933780dc3d138aeea",
+      "companion_sections/supplemental_arithmetic.tex": "0dd1bcbe1e2293928482b56adfcb3ce7b846ed5694b82f32b12c4c9a142a6a65",
+      "main_sections/quartic_lower.tex": "431d488641a43309694c02366d82003135fa96d402988f4f2b6b201a561bbd7e"
+    }
+  },
+  "integration_limits": [
+    "Les propositions ne sont pas appliquées au dépôt ni à une copie de sources sur disque.",
+    "Aucun nouveau PDF n’est produit ou relu ici. Les numéros réellement compilés, les renvois et la mise en page appartiennent à une éventuelle étape d’intégration parent.",
+    "Aucune nouvelle couverture formelle, aucun nouveau checkpoint et aucune nouvelle preuve Lean ne sont revendiqués.",
+    "Aucun ancien résultat n’est qualifié de faux du seul fait qu’une estimation plus forte est disponible.",
+    "Les rapports indépendants antérieurs sont figés et inchangés."
+  ]
+}

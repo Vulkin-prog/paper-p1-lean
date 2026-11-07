@@ -1,5 +1,18 @@
 # Formalization status
 
+Three further independently reviewed proof-reuse proposals are preserved
+without application after the user requested session finalization at about
+5 percent remaining quota. They would remove 49 source lines in T22.1,
+T2.6 and 16.1, with all 167 statements and 548 labels unchanged in the virtual
+comparison. Eleven existing proposition types were actually extracted and
+audited, exit 0, and their bodies/types independently read. T1.11 stays entire;
+the strict>L convention of T22.1 is coherent with its existing endpoint.
+The two quartic error exponents remain distinct. No new theorem, ledger
+entry or PDF is created. The current delivered copy stays the unified
+64/101-page preview. See further-proof-reuse/README.md under the dated
+editorial-proposals directory. All prior sources/reports remain preserved;
+the six registry scopes are unchanged and Palomar remains on hold.
+
 A fifth separate review copy applies FS01-FS03: one positive homogeneous
 interaction mass now supports the shorter T1.17, T3.1 and one-target T4.4
 proofs. T1.12(2) states 41/30 in both raw good channels, and (3) the pure

@@ -1,0 +1,131 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "scripts/check_sources.py"
+      ],
+      "actual_exit_code": 0,
+      "log": "check-01.log",
+      "log_sha256": "e69e3256f47b82162fa687c1b0ef1b478e5594a5ddf2b41a709725a8e04d70ac"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check_revised_sources.py",
+        "--require-proved"
+      ],
+      "actual_exit_code": 0,
+      "log": "check-02.log",
+      "log_sha256": "b7d6de15d0462cd0a25a24425bffc1a297f442e2a43106c8706cba29d1134506"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check_manuscript_endpoints.py"
+      ],
+      "actual_exit_code": 0,
+      "log": "check-03.log",
+      "log_sha256": "ccfe30ea76f40e41be8d01fdb9b1d9694e37ee11bd27ea490e55f0b16dc0d316"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check_editorial_previews.py"
+      ],
+      "actual_exit_code": 0,
+      "log": "check-04.log",
+      "log_sha256": "f9cea14a7bbc5aae48caeac4296991e75920da3c5e021ee463e7ecce9970b807"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check_scientific_preview.py"
+      ],
+      "actual_exit_code": 0,
+      "log": "check-05.log",
+      "log_sha256": "4c314d5ae4504f9e97456b258c28a2cbec6b639f3467ed5a2ddd2ae776bbda25"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check_unified_preview.py"
+      ],
+      "actual_exit_code": 0,
+      "log": "check-06.log",
+      "log_sha256": "ea4be43c25b54ba02dad32a4b2295077f446147c514eb68445a5b7166d98f7e0"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/update_audit.py",
+        "--check"
+      ],
+      "actual_exit_code": 0,
+      "log": "check-07.log",
+      "log_sha256": "9ccb4ccba3b29df361de9ca9ba217528a3809b7aaa89fe02005bb842be06f258"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check_registry_candidates.py"
+      ],
+      "actual_exit_code": 0,
+      "log": "check-08.log",
+      "log_sha256": "64ffd3b7c8a94be6dae68505d61c2c0155c84a32a0fe66308a11f15e2ab567c5"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check_registry_consolidation.py"
+      ],
+      "actual_exit_code": 0,
+      "log": "check-09.log",
+      "log_sha256": "f0c54db28562ca3cb39c482015bb78324d0be3d582e6e230fbbdda416583169c"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check_palomar_sources.py"
+      ],
+      "actual_exit_code": 0,
+      "log": "check-10.log",
+      "log_sha256": "7e0bc7b5ace319bb0150594218becea134954ee2cfc49d86c42448983fae791d"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check_registry_evidence.py",
+        "--require-all"
+      ],
+      "actual_exit_code": 0,
+      "log": "check-11.log",
+      "log_sha256": "0f13c089a0f10733c2a1602b7e88ad10b39a697e66ae217901229d04025d4297"
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests"
+      ],
+      "actual_exit_code": 0,
+      "log": "check-12.log",
+      "log_sha256": "6f7b7109fcec266e8578f1af285a755b263cd664dd8eb697a9545363e5b6ac1f"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check_disk.py"
+      ],
+      "actual_exit_code": 0,
+      "log": "check-13.log",
+      "log_sha256": "431b3374666d66aa8dbae578920b12b55d3e035c4e8dfe0119061bb59fdcb5a4"
+    }
+  ],
+  "new_full_lean_replay_claimed": false,
+  "palomar_status": "on_hold_at_user_request"
+}

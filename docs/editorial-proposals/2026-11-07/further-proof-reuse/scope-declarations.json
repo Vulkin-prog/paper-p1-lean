@@ -1,0 +1,13 @@
+[
+  "PaperP1.FixedCutoffIndependentTail.uniform_tail",
+  "PaperP1.BlockSupportCount.critical_interval_count",
+  "PaperP1.FullSupportOrderedLists.ordered_mass_eq",
+  "PaperP1.FullSupportOrderedLists.nominal_weight_formula",
+  "PaperP1.FullSupportWeightedCount.full_list_bound",
+  "PaperP1.FullSupportWeightedCount.uniform_ordered_mass",
+  "PaperP1.AlignedTargetSourceTheorem.uniform_source_bounds",
+  "PaperP1.AlignedTargetSourceTheorem.companion_T1_11",
+  "PaperP1.AlignedTargetSourceTheorem.companion_T2_6",
+  "PaperP1.ConnectedReductionToTriples.article_15_10",
+  "PaperP1.FourthCumulantIdentities.article_16_1"
+]

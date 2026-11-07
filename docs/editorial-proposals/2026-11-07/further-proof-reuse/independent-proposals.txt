@@ -1,0 +1,118 @@
+Trois simplifications supplémentaires de P1 — rapport indépendant figé
+
+Base documentaire : 50bdbf1c62b8047b84686218c604fefa7ca49e27. Preuves : d342b507332315c67b1463009061c03f14b5be9b.
+Copie : manuscripts/paper-p1/editorial-unified-preview-2026-11-07/sources.
+
+Verdict : trois propositions non appliquées, aucune lacune mathématique confirmée, aucune correction nécessaire d’un énoncé publié. Deux coupes sont recommandées immédiatement; la troisième est une mutualisation de lisibilité plus modeste. Bilan exact des rédactions proposées :49 lignes source retirées. Aucun gain en pages n’est annoncé.
+
+J’ai lu les11 signatures compilées et les corps/predicats correspondants. L’extraction et l’audit d’axiomes sont ceux exécutés par le parent : sortie0,11 propositions, axiomes standards. Je n’ai exécuté ni Lean/Lake, ni construction ou lecture PDF, ni Palomar. Le dépôt et les anciens rapports sont inchangés.
+
+1. NEXT01 — T22.1 :37→14 lignes de preuve, gain23.
+
+Remplacer la seconde présentation des certificats modérés/générateur par15.8 à a=1, puis traiter seulement les tailles s≤r<s0 par T1.14 renforcé à r=s. Les objets coïncident : support complet dans les images effectives, sans primitivité; surG les marginales originales sont p. Le cutoff s0 est choisi avant la marge η. Les r! énumérations de chaque ensemble expliquent exactement le passage listes/ensembles. Les constantes fixes ne sont utilisées qu’à un nombre fini d’ordres.
+
+Le terme «separated» de T22.1 hérite de main_sections/arithmetic.tex:78 :|x-y|>L, déjà explicite en v1.6. manuscriptLists et companion_T22_1 sont cohérents avec cette convention; aucun défaut historique n’est relevé. full_list_bound/uniform_ordered_mass ont une portée plus large, sans aucune condition de séparation. Le taux imprimé reste inchangé.
+
+Texte proposé pour toute la preuve, companion_sections/uniform_appendix.tex:31–67 :
+
+\begin{proof}
+Apply Lemma~\ref{p13:transfer:independent-tail} with \(v=u\) and \(a=1\),
+and increase its fixed cutoff to \(s_0\ge s\) if necessary.
+On \(G\) the exact marginals equal \(p\). Each set of \(r\) distinct
+starts has exactly \(r!\) orderings, so the factor \(1/r!\) cancels
+exactly. The contribution with \(r\ge s_0\) is therefore bounded by
+the unordered tail of that lemma, \(O(N^{-1+\eta})\).
+For the finitely many \(s\le r<s_0\), apply
+Proposition~\ref{p1:arith:fixed-support} with all \(r\) projections nonzero.
+It gives \(|\mathcal H_{r,N}|\ll N^{r/2+\eta}\), hence a weighted
+contribution \(O_{r,u,C,\eta}(N^{-r/2+\eta})\).
+Since \(r/2\ge1>2s/(2s+1)\), choosing \(\eta>0\) inside the requested
+margin and summing these finitely many layers proves the result.
+\end{proof}
+
+Dépendances : FixedCutoffIndependentTail.uniform_tail; BlockSupportCount.critical_interval_count; FullSupportOrderedLists.ordered_mass_eq/nominal_weight_formula; FullSupportWeightedCount.full_list_bound et uniform_ordered_mass. Les deux premières racines ne dépendent pas de FullSupportWeightedCount. Conserver les autres branches de15.8, dont le bloc comprimé, ainsi que tous les résultats d’ordres croissants.
+
+2. NEXT02 — T2.6 :53→35 lignes de preuve, gain18; option de lisibilité.
+
+T1.11 reste entier et autonome. Son calcul avant les deux spécialisations numériques traite déjà deux familles vraies, les classes de congruence, leur union et le résidu. Réutiliser ce calcul dans T2.6 évite de le reconstruire. La preuve spécifique de γ≤2/3, la borne sur les numérateurs, les fractions physiques et leurs supports véritables restent présentes. Aucun renvoi anticipé n’est créé.
+
+Texte proposé pour toute la preuve, companion_sections/supplemental_arithmetic.tex:225–277 :
+
+\begin{proof}
+The matching calculation before the two channel specializations in
+the proof of Lemma~\ref{p1:arith:palmrank} applies to any fixed coprime
+\(b/2<a<b\). Write \(x=at-i_0\), \(y=bt-j_0\), and an aligned target as
+\(z=(ct+h)/d\), with \((c,d)=1\) and polynomially bounded data.
+Away from the stated \(B^{O(1)}\) endpoint sources, dyadic positions
+and rational separation give \(b/2<c/d<2a\).
+Its residual estimate and \eqref{p1:arith:matchdensity} bound the loss
+by the displayed matching count plus \(o(L)\), also after exposing
+the prime bits of \(a,b\). Only matches to true old values are counted.
+
+Suppose \(c\nmid a\) and \(c\nmid b\), and put \(g=(c,a)\), \(h_1=(c,b)\).
+These numbers are coprime and \(gh_1\mid c\).
+If one equals one, the other is a proper divisor of \(c\), giving
+density at most \(1/2\).
+Otherwise \(g,h_1\geq2\) and
+\[
+ \frac{g+h_1-1}{c}
+ \leq\frac1g+\frac1{h_1}-\frac1{gh_1}\leq\frac23.
+\]
+The last maximum occurs at the smallest coprime pair \(\{2,3\}\).
+When \(c>b(a+b-1)\), the density is less than \(1/b\).
+All other nonphysical fractions are included in
+\eqref{p1:arith:gamma-fixed-channel}.
+
+If \(c\mid a\), a proper divisor has \(c\leq a/2<b/2\), which is
+impossible here; thus \(c=a,d=1\).
+Similarly \(c\mid b\) leaves only \(c=b,d=1\).
+These are the physical fractions reproducing one old family.
+Compatibility gives distance at least \(L\) from that source, so the
+two true windows share at most one value.
+Matches to the other old family have steps \(a,b\) in intervals of
+width \(B\), and number at most \(B/b+O(1)\).
+This proves the rank bound in these cases as well.
+\end{proof}
+
+Entrées exactes : AlignedTargetSourceTheorem.uniform_source_bounds, companion_T1_11, companion_T2_6. SourceConclusion a été ouvert : sources d’endpoint B^7, cibles B^15, perte réelle de quotient pour chaque cible séparée≥L, exposition éventuelle des primes de ab, sans prémisse de positivité affine. CompatibleConclusion en est déduit par séparation des événements compatibles. Tous les paramètres de canal et de rayon précèdent N0. Une masse moyenne ne remplace pas ce résultat pointwise.
+
+Cette coupe n’économise que18 lignes et ajoute un retour de lecture versT1.11. Elle peut être écartée si l’on préfère une lecture locale autonome deT2.6; cela ne compromet ni les deux autres coupes ni l’intérêt scientifique.
+
+3. NEXT03 —16.1 :74→66 lignes de preuve, gain8.
+
+Le dernier argument de17 lignes redémontre la clause incompatible déjà obtenue en15.10, au même ordre fixe4, sur le même ensemble admissible complet. Le remplacement est exact pour les vraies marginales hétérogènes, y compris les contacts et les marginales nulles. Conserver toute la première partie de la preuve et son erreurN^(-5/3+ε); le renvoi ne donne que l’erreurN^(-3/2+ε) de K4−K4+.
+
+Remplacer main_sections/quartic_lower.tex:101–116 par :
+
+The incompatible part of Proposition~\ref{p13:transfer:fixed-activities}
+at the fixed order \(r=4\) gives
+\[
+ |K_4-K_4^+|
+ \le\sum_{\substack{|I|=4,\ I\text{ connected}\\q(I)=0}}|c(I)|
+ \ll_{C,\varepsilon}N^{-3/2+\varepsilon}.
+\]
+Compatible coefficients are nonnegative. This proves the second identity
+and then \eqref{p13:lower:positive-quartic}.
+
+Entrées exactes : ConnectedReductionToTriples.article_15_10 àr=4,G=dyadicBlockN, puis FourthCumulantIdentities.article_16_1. Les définitions de signed, positive et incompatibleAbsolute ont été comparées : elles somment les mêmes coefficients, avec q(I)>0 ou q(I)=0. La seconde clause de15.10 ne suppose aucune estimation deA3. Le corps de16.1 emploie déjà le même SharpIncompatibleActivity.uniform_range; la fermeture de15.10 ne contient ni FourthCumulantIdentities ni FourthConnectedCumulant. Aucun cycle avec la borne inférieure ou l’approximation de loi.
+
+Contrôles de la proposition en mémoire :48 TeX comparés au commit annoncé; trois remplacements seulement;167 blocs de résultats byte-identiques;548 labels inchangés et uniques; nouveaux renvois résolus. Toutes les sources Lean des11 lectures sont byte-identiques àd342b507. Les1818 empreintes d’imports voisines du parent ont été vérifiées et les six fermetures recalculées, sans assimiler un import à une hypothèse de théorème.
+
+Ordre conseillé :NEXT01, NEXT03, puis NEXT02 si le parcours de lecture convient. Une future copie et sa mise en page devront être contrôlées par le parent. Les13 SIM, cinq SCI et trois FS déjà appliqués, les hypothèses, contre-exemples, marges, branches positionnelles et ordres croissants sont préservés.
+
+11 lectures compilées (types intégraux et localisateurs dans le JSON) :
+- PaperP1.FixedCutoffIndependentTail.uniform_tail — PaperP1/Asymptotics/FixedCutoffIndependentTail.lean:24
+- PaperP1.BlockSupportCount.critical_interval_count — PaperP1/Asymptotics/BlockSupportCount.lean:117
+- PaperP1.FullSupportOrderedLists.ordered_mass_eq — PaperP1/Model/FullSupportOrderedLists.lean:83
+- PaperP1.FullSupportOrderedLists.nominal_weight_formula — PaperP1/Model/FullSupportOrderedLists.lean:112
+- PaperP1.FullSupportWeightedCount.full_list_bound — PaperP1/Asymptotics/FullSupportWeightedCount.lean:39
+- PaperP1.FullSupportWeightedCount.uniform_ordered_mass — PaperP1/Asymptotics/FullSupportWeightedCount.lean:16
+- PaperP1.AlignedTargetSourceTheorem.uniform_source_bounds — PaperP1/Asymptotics/AlignedTargetSourceTheorem.lean:62
+- PaperP1.AlignedTargetSourceTheorem.companion_T1_11 — PaperP1/Asymptotics/AlignedTargetSourceTheorem.lean:134
+- PaperP1.AlignedTargetSourceTheorem.companion_T2_6 — PaperP1/Asymptotics/AlignedTargetSourceTheorem.lean:127
+- PaperP1.ConnectedReductionToTriples.article_15_10 — PaperP1/Asymptotics/ConnectedReductionToTriples.lean:65
+- PaperP1.FourthCumulantIdentities.article_16_1 — PaperP1/Asymptotics/FourthCumulantIdentities.lean:18
+
+Scope :p1-next-simplification/scope/compiled-types.json, SHA256 887d0e31bf766a9b59b286891fc9a3b392f7978abb9f4393189692efd8f6f16a.
+Validation :SHA256 c5dedffd8a480c47e6719ff67682835b084b9fdab444b1d41e4999f10c71af19.
+Rapport de lecture et de propositions uniquement; aucune nouvelle preuve, aucun checkpoint et aucune extension de couverture revendiqués.

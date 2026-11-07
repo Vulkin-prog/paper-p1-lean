@@ -1,0 +1,12 @@
+'PaperP1.FixedCutoffIndependentTail.uniform_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.BlockSupportCount.critical_interval_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.FullSupportOrderedLists.ordered_mass_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.FullSupportOrderedLists.nominal_weight_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.FullSupportWeightedCount.full_list_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.FullSupportWeightedCount.uniform_ordered_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.AlignedTargetSourceTheorem.uniform_source_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.AlignedTargetSourceTheorem.companion_T1_11' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.AlignedTargetSourceTheorem.companion_T2_6' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.ConnectedReductionToTriples.article_15_10' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.FourthCumulantIdentities.article_16_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+Exported compiled scope types for 11 declarations

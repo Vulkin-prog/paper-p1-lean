@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "status": "verified_proposals_not_applied",
+  "documentary_base_commit": "50bdbf1c62b8047b84686218c604fefa7ca49e27",
+  "proof_source_commit": "d342b507332315c67b1463009061c03f14b5be9b",
+  "source_package": "manuscripts/paper-p1/editorial-unified-preview-2026-11-07",
+  "independent_review": {
+    "path": "docs/editorial-proposals/2026-11-07/further-proof-reuse/independent-proposals.json",
+    "sha256": "301bf594ac0ca6a9b0fb06a14eb0e847b1f7b895fa153804c9ea1cf6f639935a"
+  },
+  "actual_compiled_types": 11,
+  "actual_proposition_axiom_checks": 11,
+  "actual_extraction_exit_code": 0,
+  "compiled_types_sha256": "887d0e31bf766a9b59b286891fc9a3b392f7978abb9f4393189692efd8f6f16a",
+  "compiled_validation_sha256": "c5dedffd8a480c47e6719ff67682835b084b9fdab444b1d41e4999f10c71af19",
+  "all_current_sources_match_review": true,
+  "virtual_source_files_changed": 3,
+  "virtual_numbered_blocks_unchanged": 167,
+  "virtual_labels_preserved": 548,
+  "virtual_source_lines_saved": 49,
+  "source_files_actually_modified": 0,
+  "new_pdfs_created": 0,
+  "new_lean_theorems": 0,
+  "new_mathematical_ledger_entries": 0,
+  "proposals": [
+    {
+      "id": "NEXT01",
+      "result": "T22.1",
+      "status": "not_applied",
+      "source_lines_proposed_to_remove": 23
+    },
+    {
+      "id": "NEXT02",
+      "result": "T2.6",
+      "status": "not_applied",
+      "source_lines_proposed_to_remove": 18
+    },
+    {
+      "id": "NEXT03",
+      "result": "16.1",
+      "status": "not_applied",
+      "source_lines_proposed_to_remove": 8
+    }
+  ],
+  "session_finish": "User explicitly requested finalization at approximately 5 percent remaining; integration deferred rather than launching a new manuscript/PDF stage.",
+  "palomar_status": "on_hold_at_user_request",
+  "scope": "Read-only verification and frozen proposal archive. In-memory comparison is distinct from applied source changes, PDF compilation, semantic review and a new full Lean replay."
+}

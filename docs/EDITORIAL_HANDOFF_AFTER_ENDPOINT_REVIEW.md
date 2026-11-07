@@ -37,6 +37,17 @@ Les deux corrections nécessaires de l’original restent T1.10 et T5.1.
 Palomar reste en attente ; les six dossiers restent exhaustifs pour les
 17 familles et 68 sélections prévues, avec le nom et l’ORCID de l’auteur.
 
+Trois [propositions supplémentaires relues](editorial-proposals/2026-11-07/further-proof-reuse/README.md)
+restent non appliquées à la clôture demandée par l’utilisateur : NEXT01
+raccourcit T22.1 via 15.8 et T1.14 ; NEXT02 réutilise le calcul général de
+T1.11 dans T2.6 tout en conservant T1.11 entier ; NEXT03 cite la clause
+incompatible de 15.10 dans 16.1. Leurs textes exacts économiseraient 49 lignes,
+avec les 167 blocs et 548 labels identiques. Onze types existants ont été
+réellement compilés et audités, puis relus avec leurs corps. Aucun gain
+PDF n’est annoncé. Partir d’une nouvelle copie, produire le diff exact,
+le faire relire, puis compiler et inspecter les deux PDF avant livraison.
+L’aperçu unifié reste donc le dernier document effectivement vérifié.
+
 Cette note conserve la justification des propositions initiales, en complément
 de la [relecture initiale](reviews/2026-11-07/RAPPORT_FR.txt) et de la
 [révision 1.8](MANUSCRIPT_REVISION_V1_8.md). Les formulations anglaises ci-dessous
