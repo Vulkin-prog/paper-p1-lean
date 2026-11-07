@@ -56,7 +56,7 @@ and total exponential-moment lower bounds. Its full replay passed; the [source-b
 
 The [supported prime-cylinder refinement](docs/SUPPORTED_PRIME_CYLINDER.md) reduces the probability charge to primeCount(2*q*floor(N/q)). Its complete replay passed; the [source-bound logs](docs/validation/checkpoint-0987/validation.json) preserve all three checks. The refinement is integrated in the revised companion appendix.
 
-The [exact valuation refinement](docs/VALUATION_PRIME_CYLINDER.md) retains all positive multipliers with even q-adic valuation, including additional forced starts. Its 15 direct proofs and axiom audit passed; full replay and manuscript integration are pending.
+The [exact valuation refinement](docs/VALUATION_PRIME_CYLINDER.md) retains all positive multipliers with even q-adic valuation, including additional forced starts. Its complete replay passed; [the source-bound logs](docs/validation/checkpoint-0988/validation.json) preserve all three checks. Manuscript integration is pending.
 
 ## Build and verification
 
@@ -81,15 +81,15 @@ then invokes Lean's own axiom report for each declaration. Only `propext`,
 Standalone registry Challenges have only the deliberate selected statement
 holes and are never imported by the proof development or its audit.
 
-The latest complete project replay with all thirteen candidate families passed
-**18,567 build jobs** and **19,485 theorem axiom checks**. Each mathematical
+The latest complete project replay with all fourteen candidate families passed
+**18,571 build jobs** and **19,513 theorem axiom checks**. Each mathematical
 checkpoint and registry replay records its own exact source commit and scope.
 The [evidence checker](scripts/check_registry_evidence.py) validates every
 preserved receipt against its historical inventory and current proof imports.
 
 ## Palomar preparation
 
-Thirteen selected families have passed local statement comparison and both Lean and
+Fourteen selected families have passed local statement comparison and both Lean and
 NanoDa, with bubblewrap isolation enabled:
 
 | Family | Selected declarations | Local evidence |
@@ -107,8 +107,9 @@ NanoDa, with bubblewrap isolation enabled:
 | Degree-uniform integer points on integral curves | 3 | [Receipt](palomar/v1/integral_curve_count/qualification.json) |
 | Exact finite affine spectra and canonical factorization | 4 | [Receipt](palomar/v1/affine_spectra/qualification.json) |
 | Actual exponential-moment divergence for multiplicative starts | 4 | [Receipt](palomar/v1/exponential_divergence/qualification.json) |
+| Uniform local arithmetic rigidity and relative-sign independence | 5 | [Receipt](palomar/v1/local_rigidity/qualification.json) |
 
-All 52 selected declarations also passed supplementary replays with verified
+All 57 selected declarations also passed supplementary replays with verified
 con-ron, Lean and NanoDa. The [source-bound reports](palomar/v1/supplementary/README.md)
 preserve the actual logs, binary identities and positive/ill-typed controls.
 
@@ -116,7 +117,7 @@ The finite-affine family also passed [all six available local checkers](palomar/
 
 The exponential-moment family has four literal-model statements with explicit integrability, prime thresholds, a nontrivial odd-prime liminf and simultaneous divergence at nominal mean one. Its [standalone six-checker report](palomar/v1/supplementary/exponential-divergence-draft-checks.json) retains its exact earlier proof base; root qualification and the con-ron replay have their own immutable source.
 
-A further [local-rigidity candidate](palomar/v1/local_rigidity/formalization.yaml) has five explicit statements and complete proofs, with all six checkers passing on standalone exports. Frozen-root qualification is pending.
+The local-rigidity family now has its source-bound root qualification and con-ron replay. Its separately scoped [standalone six-checker report](palomar/v1/supplementary/local-rigidity-draft-checks.json) preserves all five statements, 13 audited theorem/bridge declarations and the earlier proof base.
 
 The [candidate interfaces](palomar/v1/README.md) link each standalone Mathlib-only
 Challenge, complete Solution, Comparator configuration, metadata and preserved

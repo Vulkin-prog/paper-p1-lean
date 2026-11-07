@@ -1,0 +1,80 @@
+{
+  "base_proof_commit": "68164c4abb37b8679c9c3f1f4e78dc52667a285b",
+  "stage": "draft compile/export and direct audit",
+  "imported_project_proof_sources_unchanged": true,
+  "module_exports": [
+    {
+      "module": "ChallengeP1LocalRigidity",
+      "source_sha256": "b7428d5823809ca878a3b8574bb27d813add67fc822a1839f40b33338649ca6c",
+      "export_sha256": "18df3944bc0a7702828043d18c3e741cdbc4eae850f7ee8528c15fdc3ba2cfd7",
+      "export_bytes": 150723946,
+      "compilation_exit": 0,
+      "export_exit": 0
+    },
+    {
+      "module": "SolutionP1LocalRigidity",
+      "source_sha256": "6d87c9e049ad59747b47268fe16dde8accd159a602068aa1dd8c599ed66c32cd",
+      "export_sha256": "5e057f4493b2c7b289fc31546b49a7c26ff07580390c2af5949451c3e978a86e",
+      "export_bytes": 711804343,
+      "compilation_exit": 0,
+      "export_exit": 0
+    }
+  ],
+  "selected_declarations": [
+    "PaperP1Registry.LocalRigidity.split_product_bound",
+    "PaperP1Registry.LocalRigidity.uniform_quadratic_count",
+    "PaperP1Registry.LocalRigidity.finite_relative_griesmer",
+    "PaperP1Registry.LocalRigidity.logarithmic_rank_regimes",
+    "PaperP1Registry.LocalRigidity.subcritical_relative_signs"
+  ],
+  "palomar_full_workflow_passed": false,
+  "audited_draft_theorems": 13,
+  "manual_export_comparison_passed": true,
+  "all_six_kernels_accepted": true,
+  "kernels": [
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda",
+    "Lean default"
+  ],
+  "comparison_process_exit": 0,
+  "comparison_log_sha256": "3f910ffab9c78acb7b785135ec7c644e53b812fb415b22215bd62662ccee56ca",
+  "scope": "Standalone draft compiler/export comparison, 13-theorem direct axiom audit and six-checker replay at the stated project proof base. Frozen-root qualification and the complete Palomar workflow remain separate. The standalone module sources are byte-identical to the later root qualification sources; the six-checker run remains attributed to its actual earlier proof base.",
+  "log_path": "palomar/v1/supplementary/local_rigidity-draft-six-kernels.log.gz",
+  "compressed_log_sha256": "05d05db93c5769c8111040653b4b31c1893db312382df43b8fedb6b55ad9e58c",
+  "root_qualification_source_commit": "57835da7813e314367f689312af436f9ae62e869",
+  "tool_binary_sha256": {
+    "lake": "42678ccbc2605e2f892540dc7236e009fdd1224e823d104dfd72725d2f1a52d2",
+    "leanexport": "8298d4412a1f8986b5dbfd1d9925211778d8d320fc47b72040c8fdfdd5b603d5",
+    "leanchecker": "2b2ff08805ace61c935b023f8114ac3f7f1d3bc79cb4e8c47ef7801a5af58798",
+    "leanchecker-paranoid": "4508d26d3e22463a9566a6155d7a1600c7bfc42b6cd2548be73e3d19d159d6c5",
+    "lean4lean": "baaec030a70c78562ced2c75866ab0d2410e81ce680b835179ed16570ad5ef97",
+    "nanoda_bin": "8241c5e6baa29490aa118d382f97961b208ae730fdb96545c2abed74c9ece5a8",
+    "con-leche": "a6380d68b4fb364189821dd4692569c11536de0a1e3aaefea06028c0d67bb193",
+    "con-ron": "4e5616d94374cae37324dad2594f6230c2bb2297240249fc78ff508f3bc5acef"
+  },
+  "kernel_commands": {
+    "Lean paranoid": [
+      "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/leanchecker-paranoid",
+      "--silent",
+      "--from-export"
+    ],
+    "lean4lean": [
+      "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/lean4lean",
+      "--import"
+    ],
+    "nanoda": [
+      "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/nanoda_bin"
+    ],
+    "con-leche": [
+      "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/con-leche"
+    ],
+    "con-ron": [
+      "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/con-ron",
+      "--verified",
+      "--jobs=2"
+    ]
+  }
+}

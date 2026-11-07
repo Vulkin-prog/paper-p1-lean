@@ -20659,7 +20659,9 @@
         {
           "checkpoint": "P1-MATH-0988",
           "description": "For a positive multiplier u in the one-negative-prime sample, the positive run-start condition at q*u+1 with length at least q-1 is equivalent to an even q-adic valuation of u. The earlier q not dividing u condition is only sufficient. Retaining every multiplier with even valuation in the same parameter interval enlarges the forced start set. The same supported cutoff M=2*q*floor(N/q), exact cylinder probability and actual expectation monotonicity give the stronger cardinality-based lower bounds for both full moments. The earlier explicit real lower count N/q-N/q^2-3 remains valid. At N=18, q=3 the start 28 is added, because u=9 has valuation two. The retained cardinality and corresponding exponential lower bound are strictly larger for every t>0. The original prime-scale t>2 asymptotic theorem and coefficient are preserved.",
-          "validation": "All 15 new theorems passed direct Lean v4.36.0-rc2 verification and the exact axiom audit with proof warnings as errors. Only propext, Classical.choice and Quot.sound occur. The full project and declaration-reference replay are pending."
+          "validation": "Full Lean v4.36.0-rc2 replay passed at source 57835da7813e314367f689312af436f9ae62e869: 18,571 build jobs, 19,513 source-discovered theorem axiom checks and 19,660 distinct declaration-reference checks, all actual process exits 0. Proof warnings are errors; only propext, Classical.choice and Quot.sound occur.",
+          "validation_source_commit": "57835da7813e314367f689312af436f9ae62e869",
+          "validation_record": "docs/validation/checkpoint-0988/validation.json"
         }
       ]
     },

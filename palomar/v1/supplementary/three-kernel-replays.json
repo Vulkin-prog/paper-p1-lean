@@ -231,6 +231,25 @@
       "log_path": "palomar/v1/supplementary/exponential_divergence-three-kernels.log.gz",
       "log_sha256": "911c3f5ff7a0def55b84a06e76ab0f52ffc96ffd7563b965859b88029c0a5a73",
       "compressed_log_sha256": "f4d7959d538111dc744f33fc93eeefe5aae1702cb0e7079408f32f4dd486655e"
+    },
+    {
+      "family": "local_rigidity",
+      "source_commit": "57835da7813e314367f689312af436f9ae62e869",
+      "selected_declarations": [
+        "PaperP1Registry.LocalRigidity.split_product_bound",
+        "PaperP1Registry.LocalRigidity.uniform_quadratic_count",
+        "PaperP1Registry.LocalRigidity.finite_relative_griesmer",
+        "PaperP1Registry.LocalRigidity.logarithmic_rank_regimes",
+        "PaperP1Registry.LocalRigidity.subcritical_relative_signs"
+      ],
+      "submission_configuration_sha256": "2b523f3c84dcb9acd6b2b7153ff8ffe8027415eabba35163c9d43b15de0245c8",
+      "derived_configuration_sha256": "461915c57b5b0edc30b36a276d4ff9f50b9e0a6a36be85b95cf768f47b2f2f76",
+      "actual_comparator_exit": 0,
+      "all_three_kernels_accepted": true,
+      "con_ron_accepted_declarations": 84734,
+      "log_path": "palomar/v1/supplementary/local_rigidity-three-kernels.log.gz",
+      "log_sha256": "1c6c59065d140c0a31e28fddd659e5922c93209780696e2cd292d1da3b9347c4",
+      "compressed_log_sha256": "3980dcd26d5f9ce43a0fa3b212e3a1acd8e91fa07f903facedc375d70084b08a"
     }
   ],
   "updated_at": "2026-11-07T03:20:01.237558+00:00",

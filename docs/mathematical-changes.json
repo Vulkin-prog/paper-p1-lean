@@ -42376,12 +42376,14 @@
         "PaperP1.ValuationPrimeCylinder.retainedParameters",
         "PaperP1.ValuationPrimeCylinder.starts"
       ],
-      "validation": "All 15 new theorems passed direct Lean v4.36.0-rc2 verification and the exact axiom audit with proof warnings as errors. Only propext, Classical.choice and Quot.sound occur. The full project and declaration-reference replay are pending.",
+      "validation": "Full Lean v4.36.0-rc2 replay passed at source 57835da7813e314367f689312af436f9ae62e869: 18,571 build jobs, 19,513 source-discovered theorem axiom checks and 19,660 distinct declaration-reference checks, all actual process exits 0. Proof warnings are errors; only propext, Classical.choice and Quot.sound occur.",
       "integration": {
         "target": "P1 V1.7 draft",
         "status": "not_integrated",
         "numbered_statements_changed": false
-      }
+      },
+      "validation_source_commit": "57835da7813e314367f689312af436f9ae62e869",
+      "validation_record": "docs/validation/checkpoint-0988/validation.json"
     }
   ]
 }

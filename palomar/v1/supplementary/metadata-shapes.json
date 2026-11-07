@@ -1,5 +1,5 @@
 {
-  "source_commit": "a7d822328e553ce2b4e91cd2c636e20533404ba5",
+  "source_commit": "57835da7813e314367f689312af436f9ae62e869",
   "validator_commit": "14aa8d6b3c2f14a8540605e37144560b9a00e7e7",
   "community_schema_sha256": "25ff6b25ca4511635aff4443cf20480c15e59dddf19591c730950b442ea54fce",
   "files": [
@@ -49,6 +49,13 @@
       "family": "integral_curve_count",
       "path": "palomar/v1/integral_curve_count/formalization.yaml",
       "sha256": "b1961a3d9867ab07a01a9e139ada2e4aff378ea5a7310ed2d334acc82c038b2e",
+      "community_v04_schema_passed": true,
+      "palomar_metadata_minimum_passed": true
+    },
+    {
+      "family": "local_rigidity",
+      "path": "palomar/v1/local_rigidity/formalization.yaml",
+      "sha256": "ee7f1eb9341e058f268512b257e57d5354e0fef5ac95d9466959829aaf25eaa1",
       "community_v04_schema_passed": true,
       "palomar_metadata_minimum_passed": true
     },

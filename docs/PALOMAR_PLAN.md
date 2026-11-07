@@ -8,15 +8,15 @@ statements are proved. Both revised PDFs and their visual checks are preserved.
 
 ## Completed local qualification
 
-[Thirteen selected families](../palomar/v1/README.md), with **52 declarations**,
+[Fourteen selected families](../palomar/v1/README.md), with **57 declarations**,
 have passed actual statement comparison, Lean and bundled NanoDa, with the
 bubblewrap boundary enabled. Every family has its own immutable source commit,
 configuration, standalone Mathlib-only Challenge, complete Solution, metadata,
 qualification receipt and compressed original logs. The latest complete build
-passed **18,567 jobs** and the direct source-discovered audit checked **19,485
+passed **18,571 jobs** and the direct source-discovered audit checked **19,513
 theorems**, allowing only `propext`, `Classical.choice` and `Quot.sound`.
 
-All thirteen families also passed supplementary verified con-ron, Lean and NanoDa
+All fourteen families also passed supplementary verified con-ron, Lean and NanoDa
 replays. Their [source-bound records](../palomar/v1/supplementary/README.md)
 preserve binary identities, original logs, six positive/ill-typed controls,
 metadata shape checks and a historical source-layout scan. These local checks
@@ -44,9 +44,9 @@ and complete proofs. Its standalone exports passed six checkers at the stated
 proof base, and its frozen root passed Lean/NanoDa and the supplementary
 verified con-ron replay. The original t>2 scope is preserved.
 
-The local-rigidity candidate adds five statements covering companion T1.1,
-T1.2 and all clauses of main lemma 2.1. Its standalone exports passed six
-checkers; frozen-root qualification is pending.
+The local-rigidity family has five selected statements covering companion T1.1,
+T1.2 and all clauses of main lemma 2.1. Its root qualification and verified
+con-ron replay passed, with the standalone six-checker proof base scoped separately.
 
 Run the local preparation checks with:
 

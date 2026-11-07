@@ -1,12 +1,12 @@
 # P1 candidate registration interfaces
 
-Of fourteen prepared families below, thirteen have passed local statement
+All fourteen independently meaningful families below have passed local statement
 comparison and both Lean and NanoDa with bubblewrap isolation enabled. They
-select **52 declarations**, separately from the complete **167-result revised
+select **57 declarations**, separately from the complete **167-result revised
 manuscript correspondence**. Their immutable local receipts and original
 compressed logs preserve exactly what was checked.
 
-All thirteen also passed supplementary con-ron, NanoDa and Lean replays. Their
+All fourteen also passed supplementary con-ron, NanoDa and Lean replays. Their
 [separate reports and controls](supplementary/README.md) preserve each exact
 source and original log without changing the standard submission configurations.
 
@@ -28,14 +28,14 @@ Two larger representative families also passed the three optional checkers.
 | Degree-uniform integer points on integral curves | 3 | [configuration](../../comparator/p1_integral_curve_count.json) | [metadata](integral_curve_count/formalization.yaml), [passed local comparison and both kernels](integral_curve_count/qualification.json) |
 | Exact finite affine spectra and canonical factorization | 4 | [configuration](../../comparator/p1_affine_spectra.json) | [metadata](affine_spectra/formalization.yaml), [passed local comparison and both kernels](affine_spectra/qualification.json) |
 | Actual exponential-moment divergence for multiplicative starts | 4 | [configuration](../../comparator/p1_exponential_divergence.json) | [metadata](exponential_divergence/formalization.yaml), [passed local comparison and both kernels](exponential_divergence/qualification.json) |
-| Uniform local arithmetic rigidity and relative-sign independence | 5 | [configuration](../../comparator/p1_local_rigidity.json) | [metadata](local_rigidity/formalization.yaml); frozen-root qualification pending |
+| Uniform local arithmetic rigidity and relative-sign independence | 5 | [configuration](../../comparator/p1_local_rigidity.json) | [metadata](local_rigidity/formalization.yaml), [passed local comparison and both kernels](local_rigidity/qualification.json) |
 
 Each configuration names its standalone Mathlib-only Challenge and complete
 Solution. Only the exact selected Challenge statements have deliberate proof
 holes. No substantive proof, Solution or axiom audit imports a Challenge. The
 current community v0.4 metadata schema is checked separately.
 
-The latest whole-project replay passed **18,567 build jobs** and **19,485 theorem
+The latest whole-project replay passed **18,571 build jobs** and **19,513 theorem
 axiom checks**. Earlier receipts retain their own historical source inventories.
 The local [evidence checker](../../scripts/check_registry_evidence.py) validates
 their hashes, exact source files, imported project proofs, actual export and
