@@ -51,8 +51,6 @@ The canonical new declarations are
 `IndependentPositionalApproximation.main_20_1` and `main_20_1_canonical`.
 The earlier coefficient and grid formulations remain available unchanged.
 
-All 20 new theorems and four definitions passed a direct Lean v4.36.0-rc2
-replay and exact axiom audit with warnings treated as errors. Only
-`propext`, `Classical.choice` and `Quot.sound` occur. Whole-project replay
-and integration of this clarification into the unnumbered version 1.7
-appendix are pending.
+Full Lean v4.36.0-rc2 replay passed at source e6feba8adcf77e204dce8517622ea731da0dacc4: 18,587 build jobs, 19,631 source-discovered theorem axiom checks and 19,783 distinct declaration-reference checks, all actual process exits 0. Proof warnings are errors; only propext, Classical.choice and Quot.sound occur.
+
+The full replay and compressed original logs are preserved in [the validation record](validation/checkpoint-0992/validation.json). The clarification is integrated in the unnumbered version 1.7 companion appendix, under Realize the positional target by independent arrivals. Both PDFs were rebuilt and reviewed: 65 article pages and 102 companion pages. All 167 numbered statement blocks are preserved. See [the manuscript validation](manuscript-v1.7-validation.json).

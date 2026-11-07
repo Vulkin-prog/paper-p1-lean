@@ -103,7 +103,7 @@
     },
     {
       "path": "formalization.tex",
-      "sha256": "93918bdde86f35ad4c50dd13d10b95f22cabb56cc537f403a964063b1ee3c85f"
+      "sha256": "f6b8786a0573fb40bd60c418451ff7acbbeb5147de5d52b24c3e916bb63deb91"
     },
     {
       "path": "main.tex",
@@ -233,6 +233,11 @@
       "checkpoint": "P1-MATH-0991",
       "proof_commit": "7a5acb2182ebfaa9e2b1ae59b070cb225362a371",
       "scope": "Unnumbered companion appendix: exact mass of the actual compatible affine forcing event, effective-rank exponential cost, unused-prime kernel criterion and the nonempty five-start factor-two numerical gain. All 167 numbered statement blocks are preserved."
+    },
+    {
+      "checkpoint": "P1-MATH-0992",
+      "proof_commit": "e6feba8adcf77e204dce8517622ea731da0dacc4",
+      "scope": "Unnumbered companion appendix: exact independent single/pair Poisson realization, explicit finite product law, literal coordinate formula and convergent original weighted grid comparison for every independent realization. All 167 numbered statement blocks are preserved."
     }
   ]
 }

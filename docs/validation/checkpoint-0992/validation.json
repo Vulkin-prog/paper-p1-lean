@@ -1,0 +1,36 @@
+{
+  "checkpoint": "P1-MATH-0992",
+  "source_commit": "e6feba8adcf77e204dce8517622ea731da0dacc4",
+  "status": "passed",
+  "full_build_jobs": 18587,
+  "audited_theorems": 19631,
+  "distinct_checked_references": 19783,
+  "actual_process_exit_codes": {
+    "build": 0,
+    "audit": 0,
+    "references": 0
+  },
+  "permitted_kernel_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "logs": [
+    {
+      "kind": "build",
+      "path": "docs/validation/checkpoint-0992/build.log.gz",
+      "sha256_gzip": "afd8f2bbca124f873bb395f698eb5a18ffa3b631660c9afe9582af816420d6cb"
+    },
+    {
+      "kind": "audit",
+      "path": "docs/validation/checkpoint-0992/audit.log.gz",
+      "sha256_gzip": "a51f85b2be5e3defa2cdb9628596b29a4c1e43ed1ac842d7c90fc437390bb4ea"
+    },
+    {
+      "kind": "references",
+      "path": "docs/validation/checkpoint-0992/references.log.gz",
+      "sha256_gzip": "7584fce5b0d8bb0fab2acf46b9925ce15a21c74be37db6d5eec5f9e4cb5e9554"
+    }
+  ],
+  "scope": "Whole-project replay including exact independent Poisson arrival laws, a concrete product realization, coordinate and grid identities, and the convergent original weighted comparison for every independent realization. All fifteen registry Solutions and all original and revised numbered statements are preserved."
+}

@@ -6,9 +6,10 @@ finite product law supplies the arrivals, and each coordinate is its own
 arrival plus the incident edge arrivals. Every independent realization
 has the original weighted grid comparison, with a summable error series
 and bound N^(-4/5+epsilon). Each fixed degree precedes one threshold before
-all probability spaces and variables. All 20 new theorems and four
-definitions passed direct Lean and exact permitted-axiom checks. The full
-project replay and this clarification's manuscript integration are pending.
+all probability spaces and variables. The full replay passed 18,587 build jobs, 19,631 theorem axiom checks
+and 19,783 distinct references, all actual exits 0. The clarification is
+integrated in the revised companion appendix, with all 167 PDF pages
+rebuilt and reviewed.
 The original arithmetic rates, exponent and all 167 numbered statements
 are preserved. Fifteen registry families with 61 selections remain
 locally qualified; no registration is claimed.

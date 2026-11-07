@@ -278,6 +278,31 @@ The canonical declarations are
 \texttt{RankChargedPrimeCylinder.retained\_forcing\_mass},
 \texttt{positive\_explicit\_example} and \texttt{total\_explicit\_example}.
 
+\paragraph{Realize the positional target by independent arrivals.}
+For the original ground $I_N$ and good-edge family $E$, put
+$\iota_x=\sum_{e\in E:x\in e}q_e$.
+Take mutually independent variables
+$U_x\sim\operatorname{Pois}(p-\iota_x)$ and
+$V_e\sim\operatorname{Pois}(q_e)$, with the original $p=2^{-L}$
+and individual joint rates $q_e$.
+The field $Z_x=U_x+\sum_{e\in E:x\in e}V_e$ has exactly the
+completed positional target law.  A finite product of Poisson measures
+constructs these arrivals, and every independent realization has the
+same original-grid probabilities.
+For each fixed degree $j$ and $\varepsilon>0$, one threshold precedes
+the critical lengths, probability spaces and arrival variables.  The series
+\[
+ \sum_{z\in\mathbb N^{I_N}}(1+\textstyle\sum_x z_x)^j
+ \bigl|\Pr(\text{actual unsigned field}=z)-\Pr(Z=z)\bigr|
+\]
+is summable and at most $N^{-4/5+\varepsilon}$.
+This is the independent-arrival form of main Lemma~20.1, with its
+original grid, rates and exponent.  The declarations
+\texttt{main\_20\_1} and \texttt{main\_20\_1\_canonical} are in
+\texttt{IndependentPositionalApproximation}.
+The finite field law is \texttt{hasLaw\_single\_pair\_field} in
+\texttt{PositionalPoissonRealization}.
+
 \paragraph{Scope and reproducibility.}
 The smooth-window proof above specializes the physical localization to the
 ordinary smooth indicator.  A general sharp short-average theorem for

@@ -64,7 +64,7 @@ The [effective retained-start density](docs/VALUATION_DENSITY_BOUNDS.md) chooses
 
 The [rank-charged forcing event](docs/RANK_CHARGED_PRIME_CYLINDER.md) replaces a full prime assignment by the actual compatible affine fiber. Both full moments inherit the effective-rank cost; the five-start example N=18,q=3 proves a factor-two gain. Its complete replay passed; [the source-bound logs](docs/validation/checkpoint-0991/validation.json) preserve all three checks. The refinement is integrated in the revised companion appendix.
 
-The [independent positional realization](docs/INDEPENDENT_POSITIONAL_REALIZATION.md) constructs the literal single/pair Poisson arrivals and proves their exact target law. Every independent realization, including the concrete product law, has the original convergent weighted grid comparison. Its 20 new theorems and four definitions passed direct Lean and axiom checks; whole-project replay and manuscript integration are pending.
+The [independent positional realization](docs/INDEPENDENT_POSITIONAL_REALIZATION.md) constructs the literal single/pair Poisson arrivals and proves their exact target law. Every independent realization, including the concrete product law, has the original convergent weighted grid comparison. Its complete replay passed; [the source-bound logs](docs/validation/checkpoint-0992/validation.json) preserve all three checks. The clarification is integrated in the revised companion appendix.
 
 ## Build and verification
 
@@ -90,7 +90,7 @@ Standalone registry Challenges have only the deliberate selected statement
 holes and are never imported by the proof development or its audit.
 
 The latest complete project replay with all fifteen candidate families passed
-**18,579 build jobs** and **19,611 theorem axiom checks**. Each mathematical
+**18,587 build jobs** and **19,631 theorem axiom checks**. Each mathematical
 checkpoint and registry replay records its own exact source commit and scope.
 The [evidence checker](scripts/check_registry_evidence.py) validates every
 preserved receipt against its historical inventory and current proof imports.

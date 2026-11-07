@@ -135,3 +135,21 @@ reviewed version, and companion page 99 passed full visual inspection
 at 110dpi. There are no overfull boxes or unresolved references. The 48
 authored source hashes, PDF hashes, provenance and 167 numbered statement
 identities were checked.
+
+
+Checkpoint P1-MATH-0992 identifies the positional target with literal mutually
+independent Poisson arrivals, constructs a concrete finite product realization,
+and proves the original weighted grid comparison for every realization, with
+explicit summability and one threshold before the probability space and all
+variables. The original grid, arithmetic individual rates, exponent 4/5 and
+all 167 numbered statement blocks are preserved. The full source replay passed
+18,587 build jobs, 19,631 theorem axiom checks and 19,783 distinct references.
+
+The unnumbered companion appendix now explains this exact independent-arrival
+interpretation. Both PDFs were rebuilt with stable cross-references and no
+overfull boxes or unresolved references. The article retains 65 pages; the
+companion grows from 101 to 102 pages. All 167 current PDF pages were rendered:
+162 are pixel-identical at 55dpi to the previous reviewed version, and all five
+changed/new companion pages (2,99,100,101,102) passed full visual inspection at
+110dpi. All 48 authored source hashes, both PDF hashes, source provenance and
+unchanged numbered statement identities were checked.
