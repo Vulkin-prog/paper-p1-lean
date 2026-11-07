@@ -1,0 +1,83 @@
+version: v0.4
+project:
+  name: Exact Poisson scales and quantized mean bias for multiplicative runs
+  description: The literal independent prime-sign law and both-sign run count are explicit.
+    At critical word lengths, both Poisson total variations have the same positive moving
+    residue-dependent equivalent, with the exact coefficient and nominal Poisson mean. Their
+    expansions retain the actual second factorial cumulant and distinct N^(-4/3+epsilon) and
+    N^(-1+epsilon) remainders. The mean gap is an integer multiple of 2^(-L). Replacing only
+    the mean of the quadratic reference has an error comparable to every nonzero actual mean
+    gap. All cutoffs precede all scales and critical word lengths. No infinitude of biased
+    scales and no unformalized mathematical input are assumed.
+  authors:
+  - Brice Pouly
+  author_identifiers:
+  - name: Brice Pouly
+    github: Vulkin-prog
+    orcid: 0009-0008-8491-2467
+  responsible_maintainers:
+  - Brice Pouly
+  license: Apache-2.0
+repository:
+  role: substantive-development
+classification:
+  arxiv:
+  - math.NT
+  - math.PR
+sources:
+- title: Sharp Poisson approximation and second-order correction for long multiplicative runs,
+    version 1.7 draft
+  authors:
+  - Brice Pouly
+  id: https://github.com/Vulkin-prog/paper-p1-lean
+  type: paper
+  relationship: formalizes
+  location: Main theorem 1.2, exact residue-dependent scale 14.2 and quantized nominal-mean
+    obstruction 17.3; version 1.7 draft, with separate 167-statement alignment.
+  note: The source model counts both run signs and includes the preceding opposite-sign boundary.
+    The actual mean and factorial cumulant are used without replacing heterogeneous marginals
+    by their nominal approximation. This is a working manuscript, with no publication identifier
+    asserted.
+related_formalizations:
+- id: https://github.com/Vulkin-prog/paper-c-lean
+  relationship: adapts
+  note: Selected finite and infinite prime-sign model foundations were ported from b9fa9ba490f201b408a302a86f1594ee620b228b,
+    under Apache-2.0, and rebuilt under Lean v4.36.0-rc2. Exact file identities, statement
+    scope and adaptations are recorded in docs/PAPER_C_REUSE.md and source headers. The P1
+    optimal quadratic estimates are proved in this substantive development.
+automation:
+  methods:
+  - method: agent
+    framework: Codex
+    models:
+    - OpenAI Codex agents
+    prompting_notes: Retain actual source masses, exact mean, cumulant, half-l1 total variation,
+      literal second Poisson finite difference and exact residue coefficient. Use one cutoff
+      before all N and critical L. Restrict the nominal quadratic lower comparison to nonzero
+      mean gaps.
+    tool_setup: Lean proof construction, explicit Mathlib-only source definitions, exact bridges
+      to the substantive proof and full axiom audits.
+  notes: Agent assistance is not independent human peer review.
+review:
+  status: agent-reviewed
+  notes: The five selected statements and complete Solution compile with explicit source-definition
+    bridges. The Mathlib-only Challenge has exactly five deliberate theorem holes. Statement
+    comparison, independent kernel replay and complete Palomar preflight are recorded separately
+    after actual success.
+status:
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms:
+  - propext
+  - Quot.sound
+  - Classical.choice
+  scope: 'Five selected declarations: source probability and finite moments, both Poisson
+    expansions, common moving residue equivalent, exact integer mean-bias quantization, and
+    conditional comparison of nominal quadratic error to each nonzero mean gap. Deliberate
+    holes occur only in the standalone Challenge. No registry entry, editorial decision or
+    certification is claimed.'
+fidelity:
+  divergences: Poisson total variation is one half of singleton l1 distance. The nominal quadratic
+    error uses ordinary l1. The exact factorial cumulant is fixed when changing the reference
+    mean. The moving equivalent uses the nominal mean and residue L mod 3 with its literal
+    coefficient. No positive density or infinitude of nonzero mean bias is asserted.
