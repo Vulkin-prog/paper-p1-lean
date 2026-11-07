@@ -36,6 +36,9 @@ The latest marked review copy has 64 article pages and 101 companion pages,
 four fewer than frozen v1.8. All 167 result identities and numbers are retained.
 The [integration index](docs/editorial-proposals/2026-11-07/integration-status.json)
 distinguishes all thirteen applied proposals from the preserved proof-development ledger.
+The [editorial integrity gate](docs/validation/editorial-preview-integrity/README.md)
+checks the exact reviewed patch chain, delivered artifacts and complete result
+bundles in CI, with 29 in-memory controls.
 
 
 

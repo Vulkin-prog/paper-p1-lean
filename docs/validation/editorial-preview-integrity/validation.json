@@ -1,0 +1,158 @@
+{
+  "status": "passed",
+  "date": "2026-11-07",
+  "documentary_base_commit": "54815298608a0be3c5e9af1aa8361385b460ad0c",
+  "historical_proof_source_commit": "7bfc953cd6092eebfbae5f24aeb72b7180693537",
+  "checker": {
+    "path": "scripts/check_editorial_previews.py",
+    "sha256": "e6e5888bd4a7e751ec487199d675f5aea0b2d88f9c2fdeb9ce6c09fa42ac0178"
+  },
+  "controls": {
+    "path": "tests/test_editorial_previews.py",
+    "sha256": "f46ffc610d0973543cc5fe409524e6f8ad9964112fa997bfa413257573fdd8f6",
+    "actual_tests_passed": 29,
+    "positive_cases": [
+      "test_current_three_previews_pass",
+      "test_historical_scopes_do_not_become_a_new_proof_replay",
+      "test_rebound_unmodified_scope_passes"
+    ],
+    "rejected_invalid_cases": [
+      "test_actual_exit_file_must_also_report_success",
+      "test_autonomous_compressed_proof_cannot_disappear_after_review",
+      "test_distinct_window_convention_cannot_be_dropped",
+      "test_enlarged_cutoff_cannot_be_silently_broadened",
+      "test_fuzzy_patch_context_is_not_accepted",
+      "test_hunk_counts_must_match_actual_content",
+      "test_hunks_cannot_skip_to_unrelated_text",
+      "test_missing_compiled_declaration_is_rejected_after_rebinding",
+      "test_missing_numbered_result_is_rejected",
+      "test_missing_source_is_rejected",
+      "test_omitting_one_simplification_is_rejected",
+      "test_patch_cannot_target_a_file_outside_the_scientific_copy",
+      "test_pdf_bytes_remain_the_inspected_bytes",
+      "test_preamble_changes_are_not_arbitrary_presentation_edits",
+      "test_published_receipts_are_immutable",
+      "test_rebound_axiom_log_cannot_introduce_sorryAx",
+      "test_rebound_axiom_log_must_cover_every_proposition",
+      "test_rebound_definition_cannot_be_called_a_theorem",
+      "test_rebound_failed_extraction_cannot_be_counted_as_success",
+      "test_rebound_type_requires_the_independent_type_read",
+      "test_receipt_cannot_inflate_the_compiled_count",
+      "test_replica_formula_cannot_replace_propagation_and_moments",
+      "test_result_number_cannot_be_reassigned",
+      "test_result_source_locator_cannot_drift",
+      "test_reviewed_lean_body_cannot_change_behind_the_same_type",
+      "test_sim13_cannot_be_reported_as_an_earlier_uncoupled_cut"
+    ],
+    "negative_cases": 26,
+    "mutations": "in_memory_only"
+  },
+  "workflow": {
+    "path": ".github/workflows/lean.yml",
+    "sha256": "d57e76fb8709f8cfba6126a86147ab03175319020f5c88eeda04739d8d89e477",
+    "new_commands": [
+      "python3 scripts/check_editorial_previews.py",
+      "python3 -m unittest discover -s tests -p test_editorial_previews.py"
+    ]
+  },
+  "actual_checks": [
+    {
+      "name": "manuscript_endpoints",
+      "command": "python3 scripts/check_manuscript_endpoints.py > ../p1-editorial-integrity/manuscript-endpoints.log 2>&1",
+      "actual_exit_code": 0,
+      "stdout": ""
+    },
+    {
+      "name": "editorial_previews",
+      "command": "python3 scripts/check_editorial_previews.py --json > ../p1-editorial-integrity/editorial-previews.json 2>&1",
+      "actual_exit_code": 0,
+      "stdout": ""
+    },
+    {
+      "name": "controls",
+      "command": "python3 -m unittest discover -s tests -p test_editorial_previews.py -v > ../p1-editorial-integrity/controls.log 2>&1",
+      "actual_exit_code": 0,
+      "stdout": ""
+    },
+    {
+      "name": "audit_inventory",
+      "command": "python3 scripts/update_audit.py --check > ../p1-editorial-integrity/audit-inventory.log 2>&1",
+      "actual_exit_code": 0,
+      "stdout": ""
+    },
+    {
+      "name": "disk",
+      "command": "python3 scripts/check_disk.py",
+      "actual_exit_code": 0,
+      "stdout": "Available: 48.33 GiB; repository on Ubuntu root device: True\n"
+    },
+    {
+      "name": "whitespace",
+      "command": "git diff --check",
+      "actual_exit_code": 0,
+      "stdout": ""
+    }
+  ],
+  "editorial_preview_report": {
+    "status": "passed",
+    "previews": [
+      {
+        "stage": "simplification",
+        "receipt": "docs/editorial-proposals/2026-11-07/simplification/final-validation.json",
+        "sha256": "32839c4a2f951d98169b661a69077de451f8436bf09f461b2b81d0df9464169c",
+        "pages": 168,
+        "labels": 552,
+        "source_lines_saved": 120
+      },
+      {
+        "stage": "structural-simplification",
+        "receipt": "docs/editorial-proposals/2026-11-07/structural-simplification/final-validation.json",
+        "sha256": "051d53700d6f9655a7b657cde271fe50bdeafa80e08ff808fdbbbb563644b783",
+        "pages": 166,
+        "labels": 552,
+        "source_lines_saved": 25
+      },
+      {
+        "stage": "proof-simplification",
+        "receipt": "docs/editorial-proposals/2026-11-07/proof-simplification/final-validation.json",
+        "sha256": "dd4b8ae602a0b67b2aa70c6cfade2f4dfaf73a9417c4f769a30d6c87b109c038",
+        "pages": 165,
+        "labels": 548,
+        "source_lines_saved": 132
+      }
+    ],
+    "numbered_results_each": 167,
+    "scientific_sources_each": 48,
+    "targeted_compiled_snapshot_records": 35,
+    "audited_proposition_records": 34,
+    "separate_definition_records": 1,
+    "historical_compiled_snapshot_proof_source": "7bfc953cd6092eebfbae5f24aeb72b7180693537",
+    "total_source_lines_saved_after_clarifications": 277,
+    "latest_total_pages": 165,
+    "scope": "Exact source/review/evidence integrity; semantic assessment is recorded separately. No new build or registration."
+  },
+  "preservation": {
+    "baseline_archive_sha256": "6f465add58b78aba689b5d05cb59d86db783bf877f0231878a216148cd0700e4",
+    "previous_tracked_files_compared_byte_for_byte": 6788,
+    "allowed_documentary_changes": [
+      ".github/workflows/lean.yml",
+      "README.md",
+      "docs/FORMALIZATION_STATUS.md",
+      "docs/LITERATURE_INPUTS.md",
+      "docs/MANUSCRIPT_ALIGNMENT.md",
+      "docs/MATHEMATICAL_CHANGELOG.md"
+    ],
+    "all_lean_manuscript_pdf_and_frozen_review_bytes_preserved": true,
+    "historical_math_ledger_entries": 1004
+  },
+  "logs": {
+    "manuscript-endpoints.log": "ccfe30ea76f40e41be8d01fdb9b1d9694e37ee11bd27ea490e55f0b16dc0d316",
+    "editorial-previews.json": "d4b897b8ea1a901940d053ae1082f2a58f573c98e7f6bada186b2f6ad655ae13",
+    "controls.log": "883c6fb1f99ece62179cf6dcfb528e226c85bca3a1c2d8e9e7c64966cf717e55",
+    "audit-inventory.log": "f7af93cce0842433a876c9f4ff8cc379e91e4544a1fc0cf0c895ab24752a1b69"
+  },
+  "new_lean_proofs": 0,
+  "fresh_lean_build_claimed": false,
+  "palomar_status": "on_hold_at_user_request",
+  "scope": "Actual successful source/compiled-snapshot integrity checks and 29 in-memory controls. The snapshots remain historical at their recorded proof source; this addition is not a new Lean replay or mathematical certification."
+}

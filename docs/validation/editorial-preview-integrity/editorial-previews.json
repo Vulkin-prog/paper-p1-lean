@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "previews": [
+    {
+      "stage": "simplification",
+      "receipt": "docs/editorial-proposals/2026-11-07/simplification/final-validation.json",
+      "sha256": "32839c4a2f951d98169b661a69077de451f8436bf09f461b2b81d0df9464169c",
+      "pages": 168,
+      "labels": 552,
+      "source_lines_saved": 120
+    },
+    {
+      "stage": "structural-simplification",
+      "receipt": "docs/editorial-proposals/2026-11-07/structural-simplification/final-validation.json",
+      "sha256": "051d53700d6f9655a7b657cde271fe50bdeafa80e08ff808fdbbbb563644b783",
+      "pages": 166,
+      "labels": 552,
+      "source_lines_saved": 25
+    },
+    {
+      "stage": "proof-simplification",
+      "receipt": "docs/editorial-proposals/2026-11-07/proof-simplification/final-validation.json",
+      "sha256": "dd4b8ae602a0b67b2aa70c6cfade2f4dfaf73a9417c4f769a30d6c87b109c038",
+      "pages": 165,
+      "labels": 548,
+      "source_lines_saved": 132
+    }
+  ],
+  "numbered_results_each": 167,
+  "scientific_sources_each": 48,
+  "targeted_compiled_snapshot_records": 35,
+  "audited_proposition_records": 34,
+  "separate_definition_records": 1,
+  "historical_compiled_snapshot_proof_source": "7bfc953cd6092eebfbae5f24aeb72b7180693537",
+  "total_source_lines_saved_after_clarifications": 277,
+  "latest_total_pages": 165,
+  "scope": "Exact source/review/evidence integrity; semantic assessment is recorded separately. No new build or registration."
+}

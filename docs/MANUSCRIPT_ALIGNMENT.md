@@ -68,6 +68,14 @@ was added. The last full proof replay is still checkpoint 1004.
 See docs/editorial-proposals/2026-11-07/proof-simplification/README.md.
 All previous versions and previews remain preserved; Palomar stays on hold.
 
+The preserved editorial previews now have an additional read-only
+integrity gate in CI. It reconstructs the exact patch chain, checks the
+167-result source map, preserves all proof clauses and binds the old
+compiled snapshots to their own source and standard-axiom logs. Twenty-nine
+in-memory controls distinguish three valid cases from 26 invalid ones.
+This adds no mathematical result or ledger entry. See
+validation/editorial-preview-integrity/README.md for scope and actual checks.
+
 Historical checkpoint P1-MATH-1003: Two concrete irregular-window examples
 separate the formal row kernel, effective relative nullity and true
 homogeneous probability. The start x=18,L=10 has rank nine, actual
