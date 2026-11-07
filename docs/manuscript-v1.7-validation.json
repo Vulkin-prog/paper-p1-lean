@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "version": "P1 V1.7 draft, 7 November 2026",
+  "source_manifest": "manuscripts/paper-p1/v1.7/sources/MANIFEST_SHA256.txt",
+  "tex": {
+    "status": "passed",
+    "shell_escape": false,
+    "stable_cross_references": true,
+    "rounds": 3,
+    "undefined_references": 0,
+    "overfull_boxes": 0
+  },
+  "pdfs": [
+    {
+      "document": "main",
+      "path": "manuscripts/paper-p1/v1.7/pdf/P1_V1_7_Main_Article_2026-11-07_EN.pdf",
+      "pages": 65,
+      "sha256": "945985ce42670b0105f3cb8e30623645905b44f8013c26602aab922b60e8c24e"
+    },
+    {
+      "document": "companion",
+      "path": "manuscripts/paper-p1/v1.7/pdf/P1_V1_7_Technical_Companion_2026-11-07_EN.pdf",
+      "pages": 100,
+      "sha256": "4bce22c3e97c21cc16670d5c5e2b8a76997c98744dca0faa5a40698d1e313d44"
+    }
+  ],
+  "visual_review": {
+    "contact_sheet_pages_reviewed": 165,
+    "contact_sheet_dpi": 55,
+    "detail_dpi": 110,
+    "detail_pages_reviewed": {
+      "main": [
+        62
+      ],
+      "companion": [
+        14,
+        15,
+        32,
+        82,
+        83,
+        96,
+        97,
+        98
+      ]
+    },
+    "complete": true,
+    "findings": "All 165 pages reviewed in contact sheets. All nine listed detail pages inspected at higher resolution. No clipped text, overlapping content, missing glyphs, or unresolved references observed."
+  },
+  "revised_proof_validation": {
+    "status": "pending_checkpoint_984",
+    "proved": 165,
+    "pending_validation": 2
+  },
+  "palomar_registration": null
+}

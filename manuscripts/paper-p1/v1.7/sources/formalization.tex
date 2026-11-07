@@ -1,0 +1,190 @@
+\clearpage
+\section*{Formalization and the version 1.7 revision}
+\addcontentsline{toc}{section}{Formalization and the version 1.7 revision}
+
+The associated repository
+\url{https://github.com/Vulkin-prog/paper-p1-lean}
+contains a Lean formalization of the article and its technical companion, checked
+with Lean~4.36.0-rc2 and the pinned Mathlib revision
+\texttt{9d581dfff2e41de989072ea63abf3daf69311520}.
+The original version~1.6 sources are preserved byte for byte.
+This version incorporates two statement corrections identified by the
+formalization, together with the completed proof of the ordinary
+smooth-number census used in Proposition~\ref{p1:limits:all-anchors}.
+
+The original inventory contains 167 numbered results.  Of these,
+165 original statements have checked proofs without an unformalized
+mathematical input.  The other two original statements require the
+explicit corrections below; both corrected versions have checked
+proofs as well.  The original and revised statement inventories are
+kept separately, so that a corrected theorem is distinguished from
+its false original formulation.  Checkpoint P1-MATH-0983 records the
+completed deterministic and randomized anchor obstructions.
+This working revision has no Palomar registration identifier.
+
+\paragraph{The asymmetric alignment radius.}
+In Lemma~\ref{p1:arith:asymmetric}, the exclusion radius now follows the
+old enclosing interval: radius $DB$ is used for an old subset of
+$X+[-DB,DB]$.  The exact proved domain has
+$N\leq X<N+QN$ and $z\in I_N$, with fixed $Q\geq1$;
+the choice $Q=1$ gives both centres in the original dyadic block.
+The cutoff interval is explicitly
+$(2D+1)B\leq H\leq D_{\rm cut}B$.
+The full weight $2^{\delta^*}-1$ and exponent $31/24+\varepsilon$
+are retained.  Compressed-source applications use the same enlarged
+radius in their complementary aligned sector.
+
+The radius qualification is necessary.  In the version~1.6 radius-one
+convention, a checked family with $L=3k$, $B=3k+1$,
+$X=2t$, $z=3t+3B$, and $U_X=[X,X+3B]\cap\Z$ has
+$\delta^*\geq k-1$ above every cutoff $H\geq3$.
+For $t>5B^4$ it is nonaligned at radius one but aligned at radius two.
+A dyadic subfamily has weighted mass at least a fixed multiple of
+$N^{4/3}$, contradicting the claimed radius-one
+$N^{31/24+\varepsilon}$ bound for sufficiently small fixed
+$\varepsilon>0$.
+The corrected full estimates are checked by
+\texttt{SharpAsymmetricProfile.uniform\_profile} and
+\texttt{SharpExpandedAsymmetricProfile.uniform\_profile}.
+
+\paragraph{The exact quadratic exponent.}
+Lemma~\ref{p13:short:quadratic} uses the capped exponent
+\[
+ c_2(\beta,\delta)=
+ \min\{1,\beta-\delta,\max(\beta/2-\delta,1-\beta/2)\}.
+\]
+The exact affine inequality in its statement is now valid for every
+$\beta,\delta$.  The extra entry comes from the trivial count $O(N)$;
+the two arithmetic estimates and their uncapped minimum remain valid.
+The uncapped exact affine comparison requires
+$\beta-2\delta\leq2$, or an explicit exponent margin.
+
+This distinction occurs on admissible data at arbitrarily large sizes:
+for squarefree consecutive $N,N+1$, take $h=e=1$, $n=N$, and
+$\beta=\log(N(N+1))/\log N>2$.  Then $\delta=0$ and the uncapped
+minimum is $\beta/2>1/2+\beta/4$.
+The actual capped and affine counting conclusions are checked by
+\texttt{PrescribedQuadraticKernelTheorem.actual\_exponent\_counts};
+the exact capped comparison is
+\texttt{QuadraticKernelExponents.capped\_le\_affine}.
+
+\ifdefined\PoneTechnicalCompanion
+\paragraph{The sufficient ordinary smooth-window census.}
+For fixed $a>0$ put $Y=\lfloor N^a\rfloor$ and
+$h_N=\lfloor\log N/(4\log2)\rfloor$.
+The precise internally proved statement is
+\[
+ \#\left\{j\in I_N:
+   \#\{n\in[j,j+h_N)\cap\Z:P^+(n)\leq Y\}\leq1\right\}
+   =o_a(N).
+\]
+Here $P^+(1)=1$.  Equivalently, for every $\tau>0$, one cutoff
+precedes all $N$ for which the displayed exceptional cardinality
+is at most $\tau N$.  The canonical declarations are:
+\begin{quote}\small\ttfamily
+SmoothLogarithmicWindowDensity.uniform\_bound\\
+UnconditionalOrdinarySourceCensus.ordinary\_census.
+\end{quote}
+Only this sufficient statement is needed for
+Proposition~\ref{p1:limits:all-anchors}.
+
+We describe the proof and its exact analytic scope.
+Write $\chi_Y$ for the ordinary smooth indicator and
+$g_Y(d)=\mu(d)\ind_{\gcd(d,\prod_{p\leq Y}p)=1}$.
+The exact identity $\chi_Y=1*g_Y$ gives, for
+$S_Y(x)=\sum_{n\leq x}\chi_Y(n)$,
+\[
+ S_Y(x)=\sum_{d\leq x}g_Y(d)\lfloor x/d\rfloor .
+\]
+For a common cutoff $K\geq x,z>0$,
+\[
+ \left|\frac{S_Y(x)}x-\frac{S_Y(z)}z\right|
+ \leq R_Y(K)\left(\frac1x+\frac1z\right),
+ \quad
+ R_Y(K)=\#\{d\leq K:\gcd(d,\prod_{p\leq Y}p)=1\}.
+\]
+The actual primorial Selberg sieve with exponent
+$\min(a,1/8)$ gives $R_Y(4N)\ll_a N/\log N$.
+Together with the positive dyadic ordinary smooth density, this proves
+uniform positivity of averages on intervals of length
+$H_N=\lceil N/\sqrt{\log N}\rceil$.
+The explicit difference from the dyadic mean is
+$O_a((\log N)^{-1/2})$.
+
+For $b>0$ let
+\[
+ \gamma_b(v)=\frac1{\sqrt{4\pi b}}e^{-v^2/(4b)},\qquad
+ G_b(u)=\sum_{N\leq n<4N}\frac{\chi_Y(n)}n
+                  \gamma_b(u+\log n),
+\]
+and put
+$F(t)=\sum_{N\leq n<4N}\chi_Y(n)n^{-1-it}$.
+The exact finite Gaussian identity is
+\[
+ \int_{\mathbb R}|G_b-G_c|^2\,du
+ =\frac1{2\pi}\int_{\mathbb R}|F(t)|^2
+                 (e^{-bt^2}-e^{-ct^2})^2\,dt .
+\]
+All integrability and finite-sum interchanges are included in the
+formal proof.
+Choose $b=(\log N/(DN))^2$ for fixed $D>0$, and
+$c=(H_N/N)^2$.
+The actual off-central Dirichlet estimate, applied to the two dyadic
+blocks, makes the frequency integral small away from a fixed central
+band.  On that band the difference of the Gaussian weights tends to
+zero.  The remaining tail is bounded by the unconditional Gaussian
+mean-value estimate
+$\sqrt{\pi/b}/N+4\pi$ and its exponential tail factor.
+Consequently $\int|G_b-G_c|^2=o_D(1)$, uniformly in the real
+completely multiplicative coefficients allowed in that comparison.
+The canonical analytic conclusion is
+\texttt{ActualGaussianMeanComparison.uniform\_bound}.
+
+The long smooth averages give $G_c(-\log X)\geq\kappa_a>0$
+for $N\leq X$ and $X+1\leq2N$.
+If a window $[j,j+h_N)$ has at most one smooth integer, then for
+$j+h_N/2\leq X\leq j+h_N/2+1$ its short Gaussian average is at most
+$O_D(1/\log N)+O(e^{-c_0D^2})$ for a fixed $c_0>0$.
+The first term bounds the possible single interior integer; the
+second bounds all exterior integers using their actual logarithmic
+distance.  First choose $D$ so this is at most $\kappa_a/2$, then
+choose the common integer cutoff.
+
+The middle unit cells of distinct integer windows have disjoint
+negative-logarithmic images, each of measure at least $1/(4N)$.
+Thus the number of interior bad windows is at most
+$16N\int|G_b-G_c|^2/\kappa_a^2=o_a(N)$.
+The omitted endpoint windows number at most $h_N=o(N)$.
+This proves the sufficient census.
+The exact original deterministic coefficient and the randomized
+factor one half are then supplied by
+\texttt{UnconditionalPrintedAnchorObstruction.companion\_T19\_17}
+and
+\texttt{UnconditionalPrintedAnchorObstruction.companion\_T19\_17\_randomized}.
+
+\paragraph{Scope and reproducibility.}
+The proof just described specializes the physical localization to the
+ordinary smooth indicator.  A general sharp short-average theorem for
+all real completely multiplicative functions, and the full Dickman
+relative-density asymptotic, are outside its claimed scope.
+The exact integer-source geometric estimates used in
+Lemma~\ref{p1:arith:geometric} are also proved internally; the unrestricted
+general surface estimate is not required for those source families.
+The repository records each correction, strengthened estimate,
+quantifier clarification and intermediate improvement in its
+machine-readable mathematical change ledger, with the corresponding
+Lean declarations and validation commits.
+The final audits use only the kernel axioms
+\texttt{propext}, \texttt{Classical.choice}, and \texttt{Quot.sound}.
+\else
+\paragraph{The proof of the anchor obstruction.}
+The companion's formalization appendix gives the internally proved
+two-smooth-integer census at logarithmic length, its exact Gaussian
+comparison and localization, and the resulting complete deterministic
+and randomized obstructions with their original coefficients.
+The stronger general sharp short-average theorem and a Dickman
+relative-density asymptotic are outside that sufficient proof's scope.
+The repository provides the full statement correspondence, exact
+compiler and dependency pins, proof audits, and mathematical change
+ledger for both documents.
+\fi

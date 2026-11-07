@@ -1,0 +1,69 @@
+\section{The unsigned positional comparison}
+\label{p14:positions:section}
+
+The scalar approximation sums over the locations of the starts. A version
+of the same stopped expansion keeps their unsigned positions on the
+original integer grid. Its reference consists of single Poisson arrivals
+at sites and double arrivals along good arithmetic pairs. The statement
+below retains the $4/5$ error established by this vector expansion; the
+optimal scalar $4/3$ estimate does not by itself improve that rate.
+
+Put $G=G_N$ and $p=2^{-L}$. The good edges are those of
+Section~\ref{p1:arith:section} with both endpoints in $G$. For
+$\boldsymbol z\in\N^{I_N}$, write $|\boldsymbol z|=\sum_xz_x$.
+
+Let $E_N$ be the good-edge set on $G$,
+$q_e=\P(J_x=J_y=1)$ for $e=\{x,y\}$,
+$\beta=\beta_N=\sum_e q_e$, and define
+\begin{equation}
+ \begin{gathered}
+ \iota_x=\sum_{e\ni x}q_e,\qquad \nu_x=p-\iota_x,\\
+ U_x\sim\Pois(\nu_x),\qquad V_e\sim\Pois(q_e),\qquad
+ H_x=U_x+\sum_{e\ni x}V_e,
+ \end{gathered}
+ \label{p1:limits:field-definition}
+\end{equation}
+with all the $U_x,V_e$ independent.  Here and below $\iota_x=0$
+outside $G$, and $U_x$ is also defined at those starts.
+The good-edge degree bound and the bound for $q_e$ imply
+$\iota_x/p\ll Bp2^{L/3}=o(1)$, so the intensities $\nu_x$ are
+positive for large $N$.  Write $\mathsf H_N=\Law((H_x)_{x\in I_N})$
+and $\mathsf U_N=\bigotimes_{x\in I_N}\Pois(\nu_x)$.
+Their total-count laws are respectively
+\begin{equation}
+ \begin{gathered}
+ H_{\lambda,\theta}
+   :=\Law\bigl(\Pois(\lambda-\theta)
+                     +2\Pois(\theta/2)\bigr),\qquad
+ \Pois(\lambda-\theta),\\
+ \theta=2\beta,\qquad\lambda=Np.
+ \end{gathered}
+ \label{p1:limits:compound-target}
+\end{equation}
+where the two Poisson variables in the first law are independent.
+
+\begin{lemma}[Unsigned positional compound-Poisson comparison]
+\label{p1:limits:vector-reference}
+For every fixed $j\ge0$ and $\varepsilon>0$,
+\begin{equation}
+ \sum_{\boldsymbol z\in\mathbb N^{I_N}}
+ (1+|\boldsymbol z|)^j
+ \big|\P((J_x)_x=\boldsymbol z)-\mathsf H_N\{\boldsymbol z\}\big|
+       \ll_{C,j,\varepsilon}N^{-4/5+\varepsilon},
+ \qquad |\boldsymbol z|=\sum_xz_x.
+ \label{p1:limits:vector-weighted}
+\end{equation}
+\end{lemma}
+
+The proof is in Section~\ref{p14:comp:positional-proof}. It retains the
+coordinates in the finite convolution expansion, bounds the same positive
+boundary and independent deficits, and uses the independently established
+fixed moments to justify the polynomial weights.
+
+This field keeps the integer locations of both endpoints of each pair.
+It does not record run signs or exact excess lengths. The individual
+weights $q_e$ specify the target: the scalar second factorial cumulant
+alone does not determine their spatial arrangement. The companion also
+uses this comparison to justify pair deletion and to calculate the
+remaining covariance and signed Palm terms. Those conclusions do not
+assert an exponential-moment bound for the original count.

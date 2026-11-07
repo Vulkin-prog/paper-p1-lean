@@ -1,0 +1,241 @@
+\section{Polynomial confinement and dense arithmetic profiles}
+\label{p14:comp:confinement}
+
+We use the block and alignment conventions of
+Section~\ref{p13:conf:section}.  The group argument first treats
+primitive triples and nonaligned pairs, then proves the two triple
+interfaces stated there.
+
+\begin{lemma}[Polynomial confinement of common divisors]
+\label{p13:conf:groups}
+Fix \(\tau>0\), \(0<\delta<1/2\), and \(C_0>0\).
+Let \(x,y\asymp N\), and let pairwise coprime integers
+\(g_a>N^\tau\) satisfy
+\[
+ g_a\mid x+i_a,\quad g_a\mid y+j_a,\qquad
+ |i_a|,|j_a|\le C_0B.
+\]
+Suppose no line through \((-x,-y)\) contains two
+distinct points among the \((i_a,j_a)\).
+Then their number, with multiplicity, is
+\(O_{\tau,\delta,C_0}(B^{1/2+\delta})=o(B)\).
+The same estimate holds after points on exact alignments
+have been removed.
+\end{lemma}
+
+\begin{proof}
+Choose a fixed degree \(d\) such that, for
+\(M=(d+1)(d+2)/2\), \((M-1)\tau>d\).
+Let \(v_d(s,t)\) list the \(M\) monomials of total degree
+at most \(d\), including \(1\).
+If \(M\) of the vectors \(v_d(i_a,j_a)\) form a basis,
+replace each row of that basis in turn by \(v_d(-x,-y)\).
+Subtracting the new row from the other rows shows that
+the resulting determinant is divisible by the product
+of their \(M-1\) pairwise coprime divisors.
+Its absolute value is at most
+\[
+ C_dN^dB^{d(M-1)}<N^{(M-1)\tau}.
+\]
+All the determinants vanish.
+The vector \(v_d(-x,-y)\) would then belong to the
+intersection of the \(M\) coordinate hyperplanes of
+this basis, which is \(\{0\}\). Its constant coordinate
+is one, a contradiction.
+
+Thus a nonzero polynomial \(F(S,T)\) of degree at most
+\(d\) vanishes on all the offset points.
+For a geometrically integral component of degree at least
+two, Pila's uniform estimate
+\cite[Theorem~A]{pila1995} gives
+\(O_d(B^{1/2+\delta})\) integer points of height \(O(B)\).
+A rationally irreducible component that is not geometrically
+integral has only \(O_d(1)\) rational points, by intersecting
+two conjugate components.
+
+A line through at least two distinct grid points has a
+primitive equation \(aS+bT=c\) with
+\(|a|,|b|\ll B\), \(|c|\ll B^2\).
+Every group on it divides \(ax+by+c\).
+This integer is nonzero by the hypothesis, and has size
+\(O(NB)\). Coprimality bounds the number of these groups
+by \(O_\tau(1)\). A line through only one grid point
+needs no separate point count.
+Finally, all groups at one point divide its true value
+\(x+i_a=O(N)\); their multiplicity is \(O_\tau(1)\).
+There are at most \(d\) components. These observations
+prove the bound.
+\end{proof}
+
+The groups in this lemma can be composite. Only divisibility
+and coprimality are used, and the auxiliary curve is not
+enumerated. Its degree is chosen after \(\tau\) and before
+\(N\).
+
+\begin{theorem}[Dense primitive triples]
+\label{p13:conf:dense-primitive}
+For fixed \(\eta,\varepsilon>0\), primitive triples of
+true windows with \(\rho_{\mathrm{rel}}(T)\ge\eta B\)
+have \(O_{\eta,C,\varepsilon}(N^\varepsilon)\) hosts.
+Their homogeneous mass is \(O(N^{-2+\varepsilon})\).
+The total absolute centered activity of all primitive
+triples is \(O(N^{-3/2+\varepsilon})\).
+\end{theorem}
+
+\begin{proof}
+Realize the relation space \(R\) linearly on complements
+to the local kernels. Its projection into each of the
+three blocks is injective, by primitivity.
+Apply Lemma~\ref{p1:fixed:recovery} with \(d=2\),
+choosing a fixed \(t\) large enough that the loss is at
+most \(\eta B/4\). On the resulting space \(R'\),
+each nonzero coordinate label has multiplicity at most
+\(K=t-1\), and a label has at most \(2t\)
+representations by two distinct nonzero labels.
+
+A prime above \(H\) occurs oddly at most once per block.
+On the active coordinates of \(R'\), its row has either
+two equal nonzero labels or three distinct labels
+summing to zero; it cannot have weight one.
+Group the primes by their active physical support \(A\),
+and let \(G_A\) be their product.
+The groups are pairwise coprime and divide all true
+values at their support positions.
+Every active coordinate belongs to at most
+\[
+ C_t=K+2tK^2
+\]
+groups. This grouping uses supports after restriction;
+a former ternary row that has become binary is included
+as a binary group.
+
+Assign each group to a pair of blocks it meets.
+For a primitive triple no such pair has two exact units:
+the corresponding even selections would give equal
+nonzero square classes in the two blocks.
+Their nonzeroness follows from
+Lemma~\ref{p1:arith:runge} applied to two distinct values.
+Lemma~\ref{p13:conf:groups} therefore shows that only
+\(o(B)\) groups exceed \(N^\tau\).
+Set every position incident to one of these groups
+equal to zero. This loses at most three times their
+number of dimensions.
+The surviving space has dimension at least \(\eta B/2\)
+for large \(N\), and its projections remain injective.
+
+Every still-active position belonged only to original
+groups of size at most \(N^\tau\). All its odd primes
+above \(H\) were in such groups; hence
+\(K_H(n)\le N^{C_t\tau}\).
+Each block has at least two active positions, because
+its projection contains a nonzero even vector.
+Its centre lies in \(\mathcal X_{2C_t\tau}\).
+Lemma~\ref{p13:half:small-kernels} bounds the number
+of triples by \(N^{6C_t\tau+3\varepsilon'}\).
+Choose \(t\) after \(\eta\), and then \(\tau,\varepsilon'\)
+after the final margin.
+
+For a primitive triple \(\rho_{\mathrm{rel}}\le L\),
+so its homogeneous weight is \(O(N^{-2})\).
+For the total activity split at \(\rho_{\mathrm{rel}}=\eta L\).
+Below that threshold,
+Corollary~\ref{p13:half:connected} gives
+\(N^{-3/2+\eta+\varepsilon'}\); above it use the just
+proved bound. A primitive coefficient has magnitude
+at most its homogeneous weight, whether compatible
+or incompatible. Choose \(\eta\) within the final margin.
+\end{proof}
+
+\begin{corollary}[Dense nonaligned pairs]
+\label{p13:conf:dense-pairs}
+For fixed \(\eta,\varepsilon>0\), nonaligned pairs
+with \(d_{xy}\ge\eta B\) have \(O(N^\varepsilon)\)
+hosts.
+\end{corollary}
+
+\begin{proof}
+Realize their effective relation space with injective
+projections. Regularize with
+Lemma~\ref{p1:fixed:recovery}, now with \(d=1\),
+losing at most \(\eta B/4\).
+Every active prime row has two equal labels.
+A coordinate belongs to at most \(K=t-1\) active supports.
+Confinement bounds the groups above \(N^\tau\) by \(o(B)\).
+Kill both endpoints of every such group.
+The remaining positive-dimensional space has two active
+positions in each block, with kernels at most \(N^{K\tau}\).
+The centres lie in \(\mathcal X_{2K\tau}\).
+Their count is at most \(N^{4K\tau+2\varepsilon'}\);
+choose \(\tau,\varepsilon'\) sufficiently small.
+\end{proof}
+
+
+\subsection{Proof of Proposition~\ref{p13:conf:near-primitive}}
+\label{p14:comp:confinement:near}
+
+\begin{proof}
+The kernel of each projection of the relation space
+has dimension at most \(\theta B\).
+Intersect three complements to these kernels.
+The resulting subspace loses at most \(3\theta B\)
+dimensions and has all projections injective.
+
+In a given pair, two exact units impose a reduced rational
+alignment of height \(O(B)\). Two distinct such alignments
+would bound the centres by \(O(B^3)\), which is impossible
+at the present scale. The alignment is therefore unique.
+If it has \(u\) units, their even-selection space has
+dimension \(u-1\); its image loses at most one more
+dimension by Lemma~\ref{p1:limits:local-rigidity}.
+Thus \(u\le d_{xy}+2\le\theta B+2\).
+Kill all the positions of these units in the three pairs,
+at a cost of at most \(6\theta B+12\) dimensions.
+The remaining space still has macroscopic dimension
+and injective projections.
+
+Regularize with a further loss at most \(\eta B/8\).
+No pair of surviving offsets lies on an exact alignment,
+so the confinement argument in
+Theorem~\ref{p13:conf:dense-primitive} applies.
+After all positions incident to large groups have been
+killed, the centres again belong to
+\(\mathcal X_{2C_t\tau}\).
+The same count gives \(N^\varepsilon\) hosts.
+We never enumerate the chosen subspaces or deletion sets.
+
+Finally,
+\(\rho_{\mathrm{rel}}(T)\le d_z+d_{xy}\le L+\theta B\).
+The homogeneous weight is at most
+\(N^{-2+\theta+o(1)}\), proving the mass estimate.
+\end{proof}
+
+\subsection{Proof of Proposition~\ref{p13:conf:strong-profile}}
+\label{p14:comp:confinement:strong}
+
+\begin{proof}
+Choose the strong pair \(e=\{x,y\}\). Put
+\(\delta_z=\dim(S_z\cap(S_x+S_y))
+ =\rho_{\mathrm{rel}}(T)-d_{xy}\).
+Connectedness gives \(\delta_z>0\), and compatibility gives
+\(q(T)=q(e)p_z2^{\delta_z}\).
+
+For \(0<\delta_z<\eta'L\), the conditional count
+in Theorem~\ref{p13:half:conditional} gives
+\(N^{1/2+\varepsilon'}\) targets of weight at most
+\(N^{-1+\eta'+o(1)}\).
+Lemma~\ref{p1:arith:dense}, together with
+Corollary~\ref{p13:half:pairs} for the independent
+part, bounds the total joint mass of strong nonaligned
+pairs by \(N^{-1+\varepsilon'}\).
+This branch costs \(N^{-3/2+\eta'+O(\varepsilon')}\).
+
+For \(\delta_z\ge\eta'L\), the effective-space form of
+Proposition~\ref{p1:fixed:targets}, explained after
+\eqref{p13:exact:kappa3}, gives \(N^{\varepsilon'}\)
+targets after the fixed pair.
+Corollary~\ref{p13:conf:dense-pairs} also gives
+\(N^{\varepsilon'}\) source pairs.
+Each triple has \(q(T)\ll N^{-3+\sigma+o(1)}\).
+Choose \(\eta'\) and the internal margins after
+\(\varepsilon\).
+\end{proof}

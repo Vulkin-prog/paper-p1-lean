@@ -1,0 +1,77 @@
+\section{Fixed moments do not give a polynomial rate}
+\label{p1:moment-obstruction}
+
+This example isolates the logical role of the growing-order
+estimate. It is a family of probability laws, with no claimed
+multiplicative realization.
+
+\begin{proposition}[A perturbation invisible at each fixed order]
+\label{p1:obstruction:fixed}
+For \(0\le a\le1\) put
+\[
+ Q_a=\Pi_1+\frac a2\Pi_1*\Delta^{*2}.
+\]
+For every integer \(m\ge3\), define
+\[
+ \epsilon_{m,a}=\frac{(1-a/2)e^{-1}}{2m!},
+ \qquad
+ P_{m,a}=Q_a+\epsilon_{m,a}\Delta^{*m}.
+\]
+Then \(P_{m,a}\) is a probability measure satisfying
+\(\frac12Q_a\le P_{m,a}\le\frac32Q_a\) pointwise.
+Its factorial moments agree exactly with those of \(Q_a\)
+at every order other than \(m\), and
+\[
+ \TV(P_{m,a},Q_a)
+       =\frac{(1-a/2)2^{m-2}}{e\,m!}.
+\]
+For every fixed \(t\ge0\), its exponential moment
+\(\E_{P_{m,a}}e^{tX}\) is bounded uniformly in \(m,a\).
+\end{proposition}
+
+\begin{proof}
+The second Charlier polynomial at mean one is
+\(k^2-3k+1\), whose minimum on \(\N\) is \(-1\).
+Thus
+\[
+ Q_a\{k\}\ge(1-a/2)e^{-1}/k!.
+\]
+For \(0\le k\le m\),
+\[
+ \frac{\epsilon_{m,a}\binom mk}{Q_a\{k\}}
+       \le\frac1{2(m-k)!}\le\frac12 .
+\]
+Outside this range the perturbation is zero. Positivity
+and the two pointwise bounds follow. The perturbation
+has total mass zero, so \(P_{m,a}\) has mass one.
+
+The probability generating function of \(\Delta^{*m}\)
+is \((z-1)^m\). Its derivatives at \(z=1\) vanish at
+every order other than \(m\), where the derivative is
+\(m!\). This proves the factorial-moment statement.
+Its \(\ell^1\) norm is \(2^m\), yielding the exact
+total variation distance. Finally,
+\[
+ \E_{P_{m,a}}e^{tX}
+ \le\frac32
+       \exp(e^t-1)\left(1+\frac12(e^t-1)^2\right),
+\]
+which is independent of \(m,a\).
+\end{proof}
+
+Take \(m_N=\lfloor\sqrt{\log N}\rfloor\) and
+\(a_N^\circ=(\log N)N^{-2/3}\), for \(N\) sufficiently
+large. At every fixed order \(r\), the factorial
+moments of \(P_{m_N,a_N^\circ}\) eventually equal
+\(1+\binom r2a_N^\circ\) exactly. Nevertheless,
+Stirling's formula gives
+\[
+ \log\TV(P_{m_N,a_N^\circ},Q_{a_N^\circ})
+   =-\tfrac12\sqrt{\log N}\log\log N
+                   +O(\sqrt{\log N}).
+\]
+This distance exceeds \(N^{-\gamma}\) for every fixed
+\(\gamma>0\), eventually. Fixed-order information,
+even with the displayed exponential-moment control,
+therefore cannot replace the uniform estimate on the
+boundary of the stopped expansion.
