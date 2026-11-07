@@ -30,6 +30,13 @@ A [second structural pass](docs/editorial-proposals/2026-11-07/structural-simpli
 applies three more proposals, yielding 64 article pages and 102 companion pages:
 three fewer pages than frozen v1.8, with all 167 numbered blocks and 552 labels
 preserved from the first condensed stage. Both prior previews remain available.
+The [third proof-simplification pass](docs/editorial-proposals/2026-11-07/proof-simplification/README.md)
+applies the two remaining proposals together with two inherited-scope precisions.
+The latest marked review copy has 64 article pages and 101 companion pages,
+four fewer than frozen v1.8. All 167 result identities and numbers are retained.
+The [integration index](docs/editorial-proposals/2026-11-07/integration-status.json)
+distinguishes all thirteen applied proposals from the preserved proof-development ledger.
+
 
 
 The separate review instance has now directly compared all 167 numbered-result
@@ -38,6 +45,8 @@ records every clause and inherited premise.
 
 | Manuscript | PDF | Editable source |
 |---|---|---|
+| Article, latest simplified editorial preview | [PDF](manuscripts/paper-p1/editorial-simplified-preview-2026-11-07/pdf/P1_Simplified_Editorial_Preview_Main_2026-11-07_EN.pdf) | [TeX](manuscripts/paper-p1/editorial-simplified-preview-2026-11-07/sources/main.tex) |
+| Companion, latest simplified editorial preview | [PDF](manuscripts/paper-p1/editorial-simplified-preview-2026-11-07/pdf/P1_Simplified_Editorial_Preview_Companion_2026-11-07_EN.pdf) | [TeX](manuscripts/paper-p1/editorial-simplified-preview-2026-11-07/sources/companion.tex) |
 | Article, separate structural editorial preview | [PDF](manuscripts/paper-p1/editorial-structural-preview-2026-11-07/pdf/P1_Structural_Editorial_Preview_Main_2026-11-07_EN.pdf) | [TeX](manuscripts/paper-p1/editorial-structural-preview-2026-11-07/sources/main.tex) |
 | Companion, separate structural editorial preview | [PDF](manuscripts/paper-p1/editorial-structural-preview-2026-11-07/pdf/P1_Structural_Editorial_Preview_Companion_2026-11-07_EN.pdf) | [TeX](manuscripts/paper-p1/editorial-structural-preview-2026-11-07/sources/companion.tex) |
 | Article, separate condensed editorial preview | [PDF](manuscripts/paper-p1/editorial-condensed-preview-2026-11-07/pdf/P1_Condensed_Editorial_Preview_Main_2026-11-07_EN.pdf) | [TeX](manuscripts/paper-p1/editorial-condensed-preview-2026-11-07/sources/main.tex) |

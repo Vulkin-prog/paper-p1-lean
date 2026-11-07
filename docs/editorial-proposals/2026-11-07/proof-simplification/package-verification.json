@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "source_hashes": 48,
+  "pdf_hashes": 2,
+  "numbered_blocks": 167,
+  "label_occurrences": 548,
+  "inherited_scope_clarifications": 2,
+  "local_links": "passed",
+  "protected_prior_files_byte_identical": 369,
+  "math_ledger_entries": 1004,
+  "result_source_map_entries": 167,
+  "applied_proposals": 13,
+  "existing_compiled_declarations": 30,
+  "actually_audited_propositions": 29,
+  "unchanged_historical_ledger": true
+}

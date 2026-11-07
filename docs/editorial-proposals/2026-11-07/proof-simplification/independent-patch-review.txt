@@ -1,0 +1,42 @@
+RELECTURE INDÉPENDANTE DU TROISIÈME DIFF — RAPPORT FIGÉ
+Statut : complete_frozen ; 7 novembre2026.
+Base documentaire : bc9517fc5a685135722fe4a4231c16f6bf67e796
+Source de preuve : 7bfc953cd6092eebfbae5f24aeb72b7180693537
+Patch examiné : f698ccd69bd0917105ff31c73c55e42ae71d3bf4d604b6d4f04f933fcf399718
+
+Verdict : acceptable dans le périmètre relu. Aucune lacune mathématique confirmée et aucune correction nécessaire.
+Aucune nouvelle preuve ni couverture revendiquée ; aucun Lean/Lake, replay, build, contrôle PDF ou Palomar exécuté.
+
+1. SIM12 — T1.14
+La convention de projection effective est explicite (arithmetic_appendix.tex1080–1081). La nouvelle preuve1096–1113 choisit s blocs avec projections non nulles, fixe les r−s autres, puis utilise10.1 dans leur espace plein de valeurs.
+Les projections peuvent être nulles modulo cet espace ancien :10.1 l’autorise. Le compte plus fort N^{r−s/2+ε′} implique l’exposant imprimé pour s≥2. Les motifs et dilations restent fixés avantN. Preuve26→18 lignes ; énoncé inchangé.
+
+2. SIM13 — T4.3 ET T4.4 COUPLÉS
+T4.3 (fixed_moments.tex198–207) : sur le domaine régulier déjà adopté, p_x=p. La masse15.5 est exactement la masse homogène concernée ; les tuples coûtent r! et la séparation restreint la somme. Le taux N^{−r/2+ε′} implique N^{−4/5+ε}, r≥3 fixé.
+La route de15.5 passe par le paragraphe Dense primitive hosts and their exact weights deT8, la régularisation/récupération et le témoin ancré, puis le demi-compte pour le secteur bas. Elle ne passe pas par le théorème de moments ou les reconstructions.
+T4.4 (fixed_moments.tex232–277) est désormais autonome. Le vrai bloc normalisé a imageW=S_x+S_y ; l’unité du motif garantit cette identification. Le centrebx est distinct des cibles et détermine la source à motif fixé.10.1 compte t+1 centres, t=r−1.
+Le poids source est q0(e), homogène, même pour une source affine-incompatible. Il est majoré par N^{−κ_b+ε′} ; aucune borne de rang à perteO(1) n’est désormais nécessaire.
+Pourt≥3, demi-compte etρ≤L donnent N^{−κ_b+(3−t)/2+2ε′}. Pourt=2 etρ≤L/4, ils donnent N^{−κ_b−1/4+2ε′}.
+Pourt=2 etρ≥L/4, primitivité donneW∩S_y=W∩S_z=S_y∩S_z=0. La branche petite intersection de15.2 s’applique, sans directité interne de la paire source ; les cibles régulières ont marginales homogènesp.
+La somme conditionnelle coûte N^{−1+ε′} et la masse source totale N^{1−κ_b+2ε′}, d’où N^{−κ_b+3ε′}. Les marges/motifs sont absorbés avantN. Cela est plus fort que la conclusion conservée.
+Le cas à une seule cible conserve VERBATIM l’argumentT1.12/Palm et les taux4/3 et5/4. Il ne découle pas du raisonnement àt≥2. Tous les taux numérotés et la domination affine sont conservés.
+Les anciennes preuvesT4.3+T4.4 totalisaient192 lignes ; elles en ont maintenant56(10+46). Le gain136 provient de la coupeT4.3 ; la preuve comprimée reçoit le raccord autonome indispensable.
+
+3. CONVENTIONS ET GUIDE
+7.2 (cores.tex65–81) : distinct est déjà Function.Injective z dans HasCertificate/sourceTuples. La correction explicite le domaine réel des listes et du facteurr!, sans nouvelle hypothèse de fond.
+T1.9 (arithmetic_appendix.tex770–779) : la clause uniforme est inchangée. Pour la clause fixe, radius=3bB, donc l’hypothèse du prédicatFixedConclusion est exactement6bB≤H≤DB, avecD≥6b. Le théorèmecompanion_T1_9 prouve ce prédicat ; la définition seule n’est pas présentée comme preuve.
+Guide66–72 : les nouveaux parcours vers10.1,15.2 et15.5 sont exacts et expliquent les dépendances en avant. Les conventions13.4/T22.7 sont inchangées et hors du diff.
+
+4. CONTRÔLES MATÉRIELS
+Application exacte EN MÉMOIRE aux48 fichiers de la base documentaire, puis comparaison des48 empreintes au manifeste. Quatre fichiers changés ;132 lignes physiques nettes retirées.
+167 blocs de résultats comparés :165 identiques, seulement7.2 etT1.9 explicitent les conventions annoncées.167 labels de résultats conservés ;552→548 labels TeX.
+Quatre labels internes retirés sans réaffectation : p1:fixed:group-tail, p1:fixed:component-kernel, p1:fixed:high-hosts, p1:fixed:very-high-hosts. Toutes leurs occurrences anciennes étaient internes à la preuve supprimée ; zéro occurrence et zéro renvoi restant dans les sources proposées.
+Les refs/eqrefs/pagerefs de la copie désignent tous un label conservé. La fin de la preuve comprimée, cas à deux blocs compris, est identique octet par octet ; son empreinteincluant end{proof} est26333e655088f47488cd41f7402c207c654530303db743e57969d8763bb1f572.
+
+5. TYPES ET LIMITES
+Les30 types du scope-complete ont été lus :29 propositions et1 définition(FixedConclusion), distinguées explicitement. Le JSON contient les types exacts, localisateurs, empreintes des sources et comparaison des corps pour les30 entrées.
+Les sources de ces déclarations sont byte-identiques au commit de preuve7bfc953c. Les objets/predicats vérifiés comprennent les listes effectives, le support des relations, le centrebx, l’union normalisée, le cutoff et les certificats injectifs.
+L’extraction compilée et l’audit standardaxioms sont ceux du parent ; ils ne sont pas revendiqués comme exécutés par cette instance. La QA des numéros effectivement imprimés et desPDF reste au parent. Aucun gain de pages annoncé.
+Les anciens rapports conditionnel,1004, des deux passes précédentes et leurs empreintes contrôlées sont préservés. Seuls ceTXT et leJSON voisin ont été créés.
+
+Conclusion de travail : aucune correction demandée avant intégration du difff698ccd6… . Conserver les raccords explicites, toute la preuve autonomeT4.4 et son cas distinct à une cible.

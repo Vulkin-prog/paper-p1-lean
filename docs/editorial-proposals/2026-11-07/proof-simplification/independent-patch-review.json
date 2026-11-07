@@ -1,0 +1,955 @@
+{
+  "schema_version": 1,
+  "status": "complete_frozen",
+  "date": "2026-11-07",
+  "title": "Relecture indépendante du troisième diff : SIM12, SIM13 couplé et conventions héritées",
+  "author_role": "Instance indépendante de la mission de relecture, sans délégation.",
+  "documentary_base_commit": "bc9517fc5a685135722fe4a4231c16f6bf67e796",
+  "proof_source_commit": "7bfc953cd6092eebfbae5f24aeb72b7180693537",
+  "inputs": [
+    {
+      "path": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-editorial-final-cuts/proposal/last-proof-cuts.patch",
+      "sha256": "f698ccd69bd0917105ff31c73c55e42ae71d3bf4d604b6d4f04f933fcf399718"
+    },
+    {
+      "path": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-editorial-final-cuts/proposal/patch-validation.json",
+      "sha256": "2f849fec7d5c07358e5af1ec6ed96e63d433addecd68ee9dbcd51d00f71862b7"
+    },
+    {
+      "path": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-editorial-final-cuts/scientific-sources-manifest.json",
+      "sha256": "484855fe987fe859e5586a022e832909196b639401e6c1fb33b8fb395ceea938"
+    },
+    {
+      "path": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-editorial-final-cuts/scope-complete/compiled-types.json",
+      "sha256": "ed70e602ba4750d5af5d28d05d50053bf9e0b93c40a2bfe6adfcc0339cae4441"
+    },
+    {
+      "path": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-editorial-final-cuts/scope-complete/compiled-types-validation.json",
+      "sha256": "987d4641125c5807ea5826d3a633862aa559f2fcd664a110c10b427c738abfaf"
+    }
+  ],
+  "proposed_sources_root": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-editorial-final-cuts/patched-scientific-sources",
+  "summary": {
+    "verdict": "acceptable_sur_le_plan_mathematique_et_editorial_dans_le_perimetre_relu",
+    "mathematical_gaps_confirmed": 0,
+    "necessary_corrections": 0,
+    "new_proofs_or_new_coverage_claimed": 0,
+    "applies_only_to_patch_sha256": "f698ccd69bd0917105ff31c73c55e42ae71d3bf4d604b6d4f04f933fcf399718",
+    "scientific_scope": "Raccourcis d’arguments existants et explicitation de deux conventions ; aucun changement des taux numérotés ni du domaine asymptotique.",
+    "main_condition_satisfied": "T4.4 est autonome avant suppression de la longue géométrieT4.3 ; son cas à une cible reste distinct."
+  },
+  "mechanical_checks": {
+    "method": "Lecture des48 sources de base par git show, application exacte de tous les hunks en mémoire puis comparaison octet par octet aux copies proposées. Aucun outil de mutation du dépôt utilisé.",
+    "all_48_manifest_entries_checked": true,
+    "changed_files": [
+      {
+        "path": "companion_sections/arithmetic_appendix.tex",
+        "before_sha256": "abfb7b1ab318465e097108e99d1796cb375b64654f660c3615a09b09cbd46bc1",
+        "after_sha256": "bf683bb91f2464795389ebc1ba9eba825081db75516d764bb921c12ab6e2d3ae",
+        "net_physical_source_lines_saved": 4
+      },
+      {
+        "path": "companion_sections/guide.tex",
+        "before_sha256": "7cb9f0acc3d24532f75787eab9c6708e7f80ff167461057cc3dbc5a943daa55e",
+        "after_sha256": "1d648da26e2aa336004abfc7ab1db34280252321df518d67df0c558bf1b02135",
+        "net_physical_source_lines_saved": -8
+      },
+      {
+        "path": "companion_sections/fixed_moments.tex",
+        "before_sha256": "28033cc5b4dcbb227534bbfc7218e5227a92f09308fcc52af86a92d1497abd4e",
+        "after_sha256": "2ee710747ec022702017c8468abc8c390f97e3bf8354b85ae1c29cf604197e30",
+        "net_physical_source_lines_saved": 136
+      },
+      {
+        "path": "main_sections/cores.tex",
+        "before_sha256": "75984c73ac613cf017c08106dd703c374251714c8f4e29cf081095d6b2396348",
+        "after_sha256": "f00e26006c6cb5ecda5f007d26c068c12fbb3baba8919f4e708f4bb23fe11d6b",
+        "net_physical_source_lines_saved": 0
+      }
+    ],
+    "patch_applied_exactly_in_memory": true,
+    "numbered_result_blocks_compared": 167,
+    "unchanged_numbered_blocks": 165,
+    "changed_numbered_blocks": [
+      {
+        "label": "p1:arith:alignedrank",
+        "before_sha256": "7de9608ecc780ef5a448579b04b2ebeabe5e1157579ce3025b0303a047157acc",
+        "after_sha256": "02c520a72c1a2ea92dbc7f81046f202c0476fa9880ed15b0f19fae26de02d9ed"
+      },
+      {
+        "label": "p1:core:moderate",
+        "before_sha256": "9594d0ca09a407ca09f83dbf5e3e3a35c779690b9000a1041eb967ba1042956a",
+        "after_sha256": "332b6ebdcfcf8ee2140648c83de6cd70c4463590155821bc5b3bfd468432f2c2"
+      }
+    ],
+    "numbered_result_labels_preserved": 167,
+    "numbered_result_labels_removed": 0,
+    "tex_labels_before": 552,
+    "tex_labels_after": 548,
+    "all_tex_refs_eqrefs_pagerefs_resolve_to_remaining_labels": true,
+    "removed_labels": [
+      {
+        "label": "p1:fixed:group-tail",
+        "old_file": "companion_sections/fixed_moments.tex",
+        "old_definition_line": 250,
+        "old_role": "Compte du secteur de grands groupes, N^{r−9/5+ε}.",
+        "old_external_references": 0,
+        "remaining_occurrences_in_proposed_sources": 0,
+        "reassigned": false
+      },
+      {
+        "label": "p1:fixed:component-kernel",
+        "old_file": "companion_sections/fixed_moments.tex",
+        "old_definition_line": 261,
+        "old_role": "Borne du noyau d’une composante sélectionnable après effacement des grands groupes.",
+        "old_external_references": 0,
+        "remaining_occurrences_in_proposed_sources": 0,
+        "reassigned": false
+      },
+      {
+        "label": "p1:fixed:high-hosts",
+        "old_file": "companion_sections/fixed_moments.tex",
+        "old_definition_line": 297,
+        "old_role": "Compte intermédiaire des hôtes de nullité≥ηL, N^{r−3/2+ε}.",
+        "old_external_references": 0,
+        "remaining_occurrences_in_proposed_sources": 0,
+        "reassigned": false
+      },
+      {
+        "label": "p1:fixed:very-high-hosts",
+        "old_file": "companion_sections/fixed_moments.tex",
+        "old_definition_line": 323,
+        "old_role": "Compte intermédiaire des hôtes de très haute nullité, N^{r−9/5+ε}.",
+        "old_external_references": 0,
+        "remaining_occurrences_in_proposed_sources": 0,
+        "reassigned": false
+      }
+    ],
+    "two_block_compressed_tail": {
+      "preserved_verbatim": true,
+      "one_occurrence_in_proposed_copy": true,
+      "hash_boundary": "Du début de la phrase The two-block case jusqu’à la fin de end{proof}, incluse.",
+      "sha256": "26333e655088f47488cd41f7402c207c654530303db743e57969d8763bb1f572"
+    },
+    "net_physical_source_lines_saved": 132,
+    "proof_line_counts": {
+      "T1.14": {
+        "before": 26,
+        "after": 18
+      },
+      "T4.3": {
+        "before": 146,
+        "after": 10
+      },
+      "T4.4": {
+        "before": 46,
+        "after": 46
+      }
+    },
+    "combined_T4_3_T4_4_proof_lines": {
+      "before": 192,
+      "after": 56,
+      "saved": 136
+    },
+    "page_gain_measured_by_reviewer": false,
+    "actual_pdf_numbers_or_pagination_verified_by_reviewer": false
+  },
+  "findings": [
+    {
+      "id": "SIM12",
+      "result": "T1.14",
+      "label": "p1:arith:fixed-support",
+      "verdict": "applicable_avec_raccord_explicitement_integre",
+      "importance": "raccourci_modeste_sur_preuve_reellement_plus_forte",
+      "locations": [
+        {
+          "file": "companion_sections/arithmetic_appendix.tex",
+          "proposed_copy": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-editorial-final-cuts/patched-scientific-sources/companion_sections/arithmetic_appendix.tex",
+          "lines": [
+            1080,
+            1113
+          ]
+        }
+      ],
+      "preserved": [
+        "Énoncé, exposant imprimé, régime r≥s≥2 et label de résultat inchangés.",
+        "Extension aux sous-ensembles de largeur fixe et motifs en nombre B^{O_r(1)} conservée."
+      ],
+      "mathematical_comparison": [
+        "Les projections sont explicitement effectives, non de simples coordonnées formelles. Fixer r−s centres fait entrer leurs valeurs dans l'ancien espace PLEIN de10.1.",
+        "Les s vecteurs choisis sont non nuls dans leurs propres images ; ils peuvent devenir nuls modulo l'ancien espace. C'est exactement le prédicat EffectiveWindowLists, sans hypothèse d'indépendance des sources.",
+        "10.1 compte N^{s/2+ε′} choix, d'où N^{r−s/2+ε′} après sommation ; s/2≥2s/(2s+1) donne l'exposant affiché. Les constantes fixes et motifs sont absorbés avant N."
+      ],
+      "compiled_entries": [
+        "PaperP1.ValueHeightHalfCount.article_10_1",
+        "PaperP1.BlockSupportCount.critical_interval_count",
+        "PaperP1.BlockSupportParameters.critical_count",
+        "PaperP1.BlockSupportCount.companion_T1_14",
+        "PaperP1.BlockSupportParameters.companion_T1_14",
+        "PaperP1.SeveralWindowProjectionCount.companion_T1_14"
+      ],
+      "dependency_route": [
+        "10.1 et son itération arithmétique",
+        "choix du support et exposition des autres centres",
+        "T1.14"
+      ],
+      "circularity": "Aucun retour à T1.14 dans la preuve géométrique de10.1. Le résultat plus fort déjà prouvé remplace la vieille optimisation Rankin/CRT ; on ne suppose pas le compte recherché.",
+      "necessary_corrections": []
+    },
+    {
+      "id": "SIM13_original",
+      "result": "T4.3",
+      "label": "p1:fixed:primitive",
+      "verdict": "applicable_sur_le_domaine_regulier_imprime",
+      "importance": "coupe_principale",
+      "locations": [
+        {
+          "file": "companion_sections/fixed_moments.tex",
+          "proposed_copy": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-editorial-final-cuts/patched-scientific-sources/companion_sections/fixed_moments.tex",
+          "lines": [
+            170,
+            211
+          ]
+        },
+        {
+          "file": "main_sections/exact_transfer.tex",
+          "proposed_copy": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-editorial-final-cuts/patched-scientific-sources/main_sections/exact_transfer.tex",
+          "lines": [
+            228,
+            269
+          ]
+        },
+        {
+          "file": "companion_sections/confinement.tex",
+          "proposed_copy": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-editorial-final-cuts/patched-scientific-sources/companion_sections/confinement.tex",
+          "lines": [
+            148,
+            189
+          ]
+        }
+      ],
+      "preserved": [
+        "Poids homogène p^r2^ρ, tuples distincts séparés, r fixé≥3, majorant N^{-4/5+ε} et domination affine.",
+        "Aucune affirmation en degré r croissant."
+      ],
+      "mathematical_comparison": [
+        "Le contexte deT4 est régulier. Donc p_x=p et le poids homogène égale le poids de15.5 sur cette sous-population ; regular_weight est le raccord formel exact.",
+        "15.5 fournit N^{-r/2+ε′} aux ensembles non ordonnés ; ordered_sum justifie le facteur r!. La séparation restreint une somme positive.",
+        "r/2≥3/2>4/5, donc le résultat imprimé suit après fixation des marges et absorption de r!. La preuve plus forte valable sur tous les vrais événements homogènes existe aussi, sans être nécessaire à cette application régulière."
+      ],
+      "compiled_entries": [
+        "PaperP1.SharpPrimitiveMass.uniform_rank_mass",
+        "PaperP1.FixedArityHomogeneousMass.uniform_mass",
+        "PaperP1.SharpPrimitiveNominalMass.uniform_mass",
+        "PaperP1.HomogeneousRunMass.regular_weight",
+        "PaperP1.PrimitiveNominalMass.ordered_sum",
+        "PaperP1.PrimitiveOrderedBound.companion_T4_3"
+      ],
+      "dependency_route": [
+        "15.5 : paragraphe Dense primitive hosts and their exact weights de T8",
+        "sections linéaires, régularisation de récupération et témoin ancré",
+        "10.1/10.2 pour le secteur bas",
+        "facteur r! et restriction à G_N pour T4.3"
+      ],
+      "circularity": "La preuve15.5 renvoie à la construction géométrique de confinement, pas au théorème de moments ni aux reconstructions. La récupération utilisée est un lemme de sous-espaces. Les modules de demi-compte et de masses fortes ne dépendent ni de PrimitiveOrderedBound ni de FixedCompressedPrimitiveTheorem.",
+      "lost_intermediate_material": "Les comptes d’hôtes de la vieille preuve sont remplacés sur le domaine original par le compte dense N^ε déjà détaillé enT8 ; aucun énoncé numéroté ne disparaît. La validité du cas comprimé dépend de la nouvelle preuve autonome ci-dessous, pas d’une assertion de transfert de cette ancienne géométrie.",
+      "necessary_corrections": []
+    },
+    {
+      "id": "SIM13_compressed",
+      "result": "T4.4",
+      "label": "p1:fixed:compressed",
+      "verdict": "applicable_preuve_autonome_complete",
+      "importance": "raccord_necessaire_a_la_coupe_couplee",
+      "locations": [
+        {
+          "file": "companion_sections/fixed_moments.tex",
+          "proposed_copy": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-editorial-final-cuts/patched-scientific-sources/companion_sections/fixed_moments.tex",
+          "lines": [
+            213,
+            277
+          ]
+        },
+        {
+          "file": "main_sections/half_counts.tex",
+          "proposed_copy": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-editorial-final-cuts/patched-scientific-sources/main_sections/half_counts.tex",
+          "lines": [
+            11,
+            40
+          ]
+        },
+        {
+          "file": "main_sections/exact_transfer.tex",
+          "proposed_copy": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-editorial-final-cuts/patched-scientific-sources/main_sections/exact_transfer.tex",
+          "lines": [
+            137,
+            162
+          ]
+        }
+      ],
+      "preserved": [
+        "Canaux2:3 et3:4, r fixé≥3, κ_b=2−1/b et borne affichée N^{-κ_b+1/5+ε}.",
+        "Clause séparée d’une seule cible : N^{-4/3+ε} et N^{-5/4+ε}, avec son argument positif conservé verbatim.",
+        "Domination des masses affines positives, y compris cas où une source est affine-incompatible."
+      ],
+      "mathematical_comparison": [
+        "Le bloc comprimé est l'image effective des valeurs normalisées fusionnées. space_eq utilise l'unité exacte du motif pour identifier cette image à W=S_x+S_y, sans ajouter une dimension d'union formelle.",
+        "Pour un motif fixé, bx détermine la paire source, est >2N car b≥3, et demeure de hauteur comparable àN ; ses valeurs ont largeur O(B). L'injection dans les listes de10.1 compte donc t+1 centres, non t+2.",
+        "La borne q0(e)≪N^{-κ_b+ε′} porte sur la vraie masse HOMOGÈNE, indépendamment du joint affine. La preuve n'utilise plus le point intermédiaire de rang à perteO(1), et ne prétend pas qu'il était faux.",
+        "L'identité exacte q0(e)p^t2^ρ est utilisée sur les cibles régulières ; ρ≤L par primitivité. Pourt≥3, le compte N^{(t+1)/2+ε′} donne N^{-κ_b+(3−t)/2+2ε′}≤N^{-κ_b+2ε′}.",
+        "Pourt=2 etρ≤L/4, l'exposant est −κ_b−1/4+2ε′. Pourρ≥L/4, la primitivité assure W∩S_y=W∩S_z=S_y∩S_z=0. Le dernier fait satisfait la branche petite intersection de15.2, même si les cibles sont alignées.",
+        "15.2 s'applique avec DEUX fenêtres sources originales et W égal à leur somme entière ; il ne requiert ni leur directité ni leur compatibilité. Les cibles régulières ont marginales homogènesp ; la somme conditionnelle coûte N^{-1+ε′}.",
+        "La somme source vaut au plus NB^{O(1)}N^{-κ_b+ε′}≪N^{1−κ_b+2ε′}. Le produit dense est N^{-κ_b+3ε′}. Tous les ε′ sont fixés avantN, puis réduits pour absorber motifs, constantes et sommation des secteurs.",
+        "La nouvelle preuve donne en fait N^{-κ_b+ε} pourt≥2, déjà disponible formellement ; le résultat numéroté conserve volontairement le taux plus faible existant. Le cas à une cible ne provient pas de cette étape et reste séparé."
+      ],
+      "compiled_entries": [
+        "PaperP1.EffectiveCompressedPrimitiveCount.uniform_count",
+        "PaperP1.EffectiveCompressedPrimitiveElementaryMass.uniform_point",
+        "PaperP1.EffectiveCompressedPrimitiveElementaryMass.uniform_sector",
+        "PaperP1.EffectiveCompressedPrimitiveElementaryMass.from_four",
+        "PaperP1.PairCompressedTwoTargetData.primitive_data",
+        "PaperP1.HomogeneousCompressedEffectiveFactor.factor",
+        "PaperP1.HomogeneousCompressedEffectiveFactor.two_target_factor",
+        "PaperP1.UnconditionalDenseTwoTargetMass.article_15_2",
+        "PaperP1.EffectiveCompressedDenseExtensions.uniform_extensions",
+        "PaperP1.HomogeneousChannelWeights.uniform_pair",
+        "PaperP1.HomogeneousFullChannelMass.uniform_bound",
+        "PaperP1.EffectiveCompressedDenseMass.uniform_bound",
+        "PaperP1.EffectiveCompressedPrimitiveMass.three_blocks",
+        "PaperP1.EffectiveCompressedPrimitiveMass.uniform_mass",
+        "PaperP1.FixedCompressedPrimitiveTheorem.companion_T4_4"
+      ],
+      "dependency_route": [
+        "T1.9 pour q0(source)",
+        "10.1 pour les centres effectifs normalisés",
+        "15.2 pour les deux cibles denses, avecη=1/4 fixé",
+        "T1.12 pour la clause indépendante à deux blocs"
+      ],
+      "circularity": "Aucun emploi deT4.3, du théorème de moments ou des reconstructions. Les étapes dense et bas sont démontrées à partir des interfaces géométriques ; le bloc source est traité comme une seule image effective, sans supposer les sources initiales directes.",
+      "necessary_corrections": []
+    },
+    {
+      "id": "GUIDE",
+      "result": "Parcours de lecture",
+      "verdict": "raccord_editorial_correct_et_utile",
+      "locations": [
+        {
+          "file": "companion_sections/guide.tex",
+          "proposed_copy": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-editorial-final-cuts/patched-scientific-sources/companion_sections/guide.tex",
+          "lines": [
+            66,
+            72
+          ]
+        }
+      ],
+      "mathematical_comparison": [
+        "Les renvois nomment10.1 pourT1.14 etT4.4,15.2 pourT4.4 et15.5 pourT4.3. Ils expliquent les dépendances en avant sans faire entrer les reconstructions dans les preuves géométriques.",
+        "Le guide ne prétend pas que ces entrées apparaissent plus tôt dans l'ordre linéaire du compagnon ; il donne un parcours logique."
+      ],
+      "necessary_corrections": []
+    },
+    {
+      "id": "CONV_7_2",
+      "result": "7.2",
+      "label": "p1:core:moderate",
+      "verdict": "precision_heritee_conforme",
+      "locations": [
+        {
+          "file": "main_sections/cores.tex",
+          "proposed_copy": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-editorial-final-cuts/patched-scientific-sources/main_sections/cores.tex",
+          "lines": [
+            65,
+            81
+          ]
+        }
+      ],
+      "mathematical_comparison": [
+        "L'ajout de distinct est exactement Function.Injective z dans ModerateCertificateCount.HasCertificate, puis dans sourceTuples. Le corps du théorème7.2 et la justification du facteur r! travaillaient déjà sur ce domaine.",
+        "Le théorème main_7_2 fixe C,A,β,u,ε avantN0 ; il conserve ensuite tous les ordresr≥1 et tousY≥B,T≥1, plus la série de tous les ordres positifs. L'ajout n'est ni une nouvelle hypothèse mathématique dissimulée ni une nouvelle conclusion."
+      ],
+      "compiled_entries": [
+        "PaperP1.ModerateCertificateAsymptotic.main_7_2"
+      ],
+      "necessary_corrections": []
+    },
+    {
+      "id": "CONV_T1_9",
+      "result": "T1.9",
+      "label": "p1:arith:alignedrank",
+      "verdict": "cutoff_explicitement_conforme_au_predicat_prouve",
+      "locations": [
+        {
+          "file": "companion_sections/arithmetic_appendix.tex",
+          "proposed_copy": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-editorial-final-cuts/patched-scientific-sources/companion_sections/arithmetic_appendix.tex",
+          "lines": [
+            770,
+            779
+          ]
+        }
+      ],
+      "mathematical_comparison": [
+        "La borne uniforme o(B) sur tous les canaux de hauteur≤B³ n'est pas changée.",
+        "La seconde clause fixe la hauteur etD avantN ; le prédicat FixedConclusion requiert2*radius(max a b,L)≤H≤DB. radius=3b(L+1), donc la condition est exactement6bB≤H≤DB.",
+        "D≥6b rend ce domaine non vide. Le coefficient deO(B/logB) peut être pris uniforme pour coefficients≤Q fixés, après quoiN0 dépend deC ; l'écritureO_{C,b,D} est plus permissive.",
+        "FixedConclusion est une définition lue et dépliée ; la preuve est la seconde branche de companion_T1_9, pas le simple type de cette définition.",
+        "Les usages consultés deT1.9 dans la copie ne forcent pas un cutoff incompatible avec6bB ; le nouveau raccordT4.4 utilise la première branche, pas le noyau résiduel au cutoff fixé."
+      ],
+      "compiled_entries": [
+        "PaperP1.EnlargedAlignedPairTheorem.companion_T1_9",
+        "PaperP1.EnlargedAlignedPairTheorem.FixedConclusion"
+      ],
+      "necessary_corrections": []
+    }
+  ],
+  "compiled_scope_read": {
+    "path": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-editorial-final-cuts/scope-complete/compiled-types.json",
+    "sha256": "ed70e602ba4750d5af5d28d05d50053bf9e0b93c40a2bfe6adfcc0339cae4441",
+    "types_read": 30,
+    "propositions": 29,
+    "definitions": 1,
+    "parent_validation_report_read": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-editorial-final-cuts/scope-complete/compiled-types-validation.json",
+    "parent_extraction_exit_reported_and_log_file_read": 0,
+    "axiom_scope": "La validation fournie par le parent indique uniquement Classical.choice, Quot.sound, propext pour les29 propositions. Je n’ai pas exécuté cette extraction ni un replay.",
+    "all_declaration_source_files_read_equal_proof_commit": true
+  },
+  "compiled_entries_read": [
+    {
+      "declaration": "PaperP1.ModerateCertificateAsymptotic.main_7_2",
+      "file": "PaperP1/Asymptotics/ModerateCertificateAsymptotic.lean",
+      "line": 126,
+      "source_sha256": "29033882e3e1be2539759182390a5abe5f6eee3b5b7c2641fcd5fa8522830ef7",
+      "source_byte_identical_to_proof_commit": true,
+      "kind": "theorem",
+      "is_proposition": true,
+      "compiled_type": "∀ (C A β u ε : ℝ),\n  1 < A →\n    0 < β →\n      β < 1 →\n        0 < u →\n          0 < ε →\n            ∃ N₀,\n              ∀ N ≥ N₀,\n                ∀ (L : ℕ),\n                  |↑L - Real.log ↑N / Real.log 2| ≤ C →\n                    (∀ (r : ℕ),\n                        1 ≤ r →\n                          ∀ (Y T : ℝ),\n                            ↑(L + 1) ≤ Y →\n                              1 ≤ T →\n                                ↑(PaperP1.ModerateCertificateCount.sourceTuples r (L + 1) N Y T).card ≤\n                                  36 * ↑r * (↑L + 1) ^ 4 * 2 ^ (r - 1) * ↑N ^ r / T ^ 2 *\n                                    ↑(r * (L + 1)) ^ PaperP1.PrimeProductBudget.assignmentExponent N Y) ∧\n                      ∑' (r : ℕ),\n                          PaperP1.ModerateWeightedSeries.weightedTerm (L + 1) N (PaperP1.ModerateOrder.cutoff A N)\n                            (↑N ^ β) (u * (2 ^ L)⁻¹) (r + 1) ≤\n                        ↑N ^ (-2 * β + 4 / A + ε)",
+      "compiled_scope": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-editorial-final-cuts/scope-complete/compiled-types.json",
+      "body_comparison": "Réunit ModerateCertificateCount.main_7_2_finite_criticalBand et weighted_criticalBand, puis utilise weightedTotal_eq_positiveOrders. Les ordres strictement positifs sont indexés par r+1. La distinction des centres est incluse dans HasCertificate, et non ajoutée comme borne supposée.",
+      "verdict": "conforme_au_role_utilise",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.EnlargedAlignedPairTheorem.companion_T1_9",
+      "file": "PaperP1/Asymptotics/EnlargedAlignedPairTheorem.lean",
+      "line": 112,
+      "source_sha256": "99a880d0e3f127b73ddff3e661662bc0a672cd9ec4ea2e1c4a763c2c3114c833",
+      "source_byte_identical_to_proof_commit": true,
+      "kind": "theorem",
+      "is_proposition": true,
+      "compiled_type": "(∀ (C ε : ℝ), 0 < ε → ∃ N₀, PaperP1.EnlargedAlignedPairTheorem.UniformConclusion C ε N₀) ∧\n  ∀ (Q : ℕ),\n    1 ≤ Q →\n      ∀ (D : ℝ), 0 ≤ D → ∃ K, 0 < K ∧ ∀ (C : ℝ), ∃ N₀, PaperP1.EnlargedAlignedPairTheorem.FixedConclusion Q D K C N₀",
+      "compiled_scope": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-editorial-final-cuts/scope-complete/compiled-types.json",
+      "body_comparison": "Corps égal au couple uniform_bounds, fixed_height_residual. La première branche prouve les trois bornes par permutation des coefficients ; la seconde appelle le taux de noyau résiduel EnlargedFixedHeightResidual.large_kernel_rate.",
+      "verdict": "conforme_au_role_utilise",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.EnlargedAlignedPairTheorem.FixedConclusion",
+      "file": "PaperP1/Asymptotics/EnlargedAlignedPairTheorem.lean",
+      "line": 27,
+      "source_sha256": "99a880d0e3f127b73ddff3e661662bc0a672cd9ec4ea2e1c4a763c2c3114c833",
+      "source_byte_identical_to_proof_commit": true,
+      "kind": "definition",
+      "is_proposition": false,
+      "compiled_type": "ℕ → ℝ → ℝ → ℝ → ℕ → Prop",
+      "compiled_scope": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-editorial-final-cuts/scope-complete/compiled-types.json",
+      "body_comparison": "Définition ouverte, pas un théorème : après Q,D,K,C,N0, quantifie N,L,a,b,x,y,H et impose 2*radius(max a b,L)≤H≤D*(L+1), géométrie et hauteur max a b≤Q. Le théorème companion_T1_9 fournit cette propriété ; son seul type de fonction vers Prop ne serait pas une preuve.",
+      "verdict": "conforme_definition_ouverte",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.ValueHeightHalfCount.article_10_1",
+      "file": "PaperP1/Asymptotics/ValueHeightHalfCount.lean",
+      "line": 21,
+      "source_sha256": "68be3cbe475cfcb7ad2755d146a6c610128872d623298870eb6673018f26e8ca",
+      "source_byte_identical_to_proof_commit": true,
+      "kind": "theorem",
+      "is_proposition": true,
+      "compiled_type": "∀ (r s : ℕ) (a b D Cband ε : ℝ),\n  0 < a →\n    0 ≤ D →\n      0 < ε →\n        ∃ N₀,\n          ∀ N ≥ N₀,\n            ∀ (L : ℕ) (old : Fin s → ℕ) (G : Finset ℕ) (blocks : Fin r → ℕ → Finset ℕ) (oldBlocks : Fin s → Finset ℕ),\n              |↑L - Real.log ↑N / Real.log 2| ≤ Cband →\n                (∀ (i : Fin r), ∀ x ∈ G, ∀ v ∈ blocks i x, a * ↑N ≤ ↑v ∧ ↑v ≤ b * ↑N) →\n                  (∀ (k : Fin s), ∀ v ∈ oldBlocks k, a * ↑N ≤ ↑v ∧ ↑v ≤ b * ↑N) →\n                    (∀ (i : Fin r), ∀ x ∈ G, ∀ v ∈ blocks i x, ↑(↑v - ↑x).natAbs ≤ D * ↑(L + 1)) →\n                      (∀ (k : Fin s), ∀ v ∈ oldBlocks k, ↑(↑v - ↑(old k)).natAbs ≤ D * ↑(L + 1)) →\n                        ↑(PaperP1.EffectiveWindowLists.lists G blocks (Finset.univ.biUnion oldBlocks)).card ≤\n                          ↑N ^ (↑r / 2 + ε)",
+      "compiled_scope": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-editorial-final-cuts/scope-complete/compiled-types.json",
+      "body_comparison": "Transpose les bornes de hauteur et de largeur vers les listes de sélections effectives et la demi-puissance existante. EffectiveWindowLists.lists exige u_i non nul dans chaque image effective, avec somme dans l'ancien espace plein ; aucune non-nullité modulo cet espace n'est supposée.",
+      "verdict": "conforme_au_role_utilise",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.BlockSupportCount.companion_T1_14",
+      "file": "PaperP1/Asymptotics/BlockSupportCount.lean",
+      "line": 134,
+      "source_sha256": "10a8e09cc2a4c9da7fa3d1cacdd27b8b5fcaf2ffb645a396b3afb896d094b6bb",
+      "source_byte_identical_to_proof_commit": true,
+      "kind": "theorem",
+      "is_proposition": true,
+      "compiled_type": "∀ (r s C : ℕ),\n  2 ≤ s →\n    1 ≤ C →\n      ∀ (a b D Cband ε : ℝ),\n        0 < a →\n          0 ≤ D →\n            0 < ε →\n              ∃ N₀,\n                ∀ N ≥ N₀,\n                  ∀ (L M : ℕ) (G : Finset ℕ) (blocks : Fin r → ℕ → Finset ℕ),\n                    |↑L - Real.log ↑N / Real.log 2| ≤ Cband →\n                      G ⊆ Finset.Ico M (M + C * N) →\n                        (∀ (i : Fin r), ∀ x ∈ G, ∀ v ∈ blocks i x, a * ↑N ≤ ↑v ∧ ↑v ≤ b * ↑N) →\n                          (∀ (i : Fin r), ∀ x ∈ G, ∀ v ∈ blocks i x, ↑(↑v - ↑x).natAbs ≤ D * ↑(L + 1)) →\n                            ↑(PaperP1.BlockSupportProjection.population G blocks s).card ≤\n                              ↑N ^ (↑r - 2 * ↑s / (2 * ↑s + 1) + ε)",
+      "compiled_scope": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-editorial-final-cuts/scope-complete/compiled-types.json",
+      "body_comparison": "Applique critical_interval_count, puis affaiblit r−s/2 en r−2s/(2s+1). L'ordre des seuils et la population de BlockSupportProjection sont conservés.",
+      "verdict": "conforme_au_role_utilise",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.BlockSupportParameters.companion_T1_14",
+      "file": "PaperP1/Asymptotics/BlockSupportParameters.lean",
+      "line": 126,
+      "source_sha256": "bf574d5e7dbc63467e9f605ed5f6a7a79bf66a7562fb7b146187e12c803d29ef",
+      "source_byte_identical_to_proof_commit": true,
+      "kind": "theorem",
+      "is_proposition": true,
+      "compiled_type": "∀ (r s C d h D : ℕ),\n  2 ≤ s →\n    1 ≤ C →\n      ∀ (a b E F Cband ε : ℝ),\n        0 < a →\n          0 ≤ E →\n            0 ≤ F →\n              0 < ε →\n                ∃ N₀,\n                  ∀ N ≥ N₀,\n                    ∀ (L V M : ℕ) (G : Finset ℕ)\n                      (blocks : PaperP1.BlockSupportParameters.ShapeCode V d h D → Fin r → ℕ → Finset ℕ),\n                      |↑L - Real.log ↑N / Real.log 2| ≤ Cband →\n                        ↑V ≤ F * ↑(L + 1) →\n                          G ⊆ Finset.Ico M (M + C * N) →\n                            (∀ (q : PaperP1.BlockSupportParameters.ShapeCode V d h D) (i : Fin r),\n                                ∀ x ∈ G, ∀ v ∈ blocks q i x, a * ↑N ≤ ↑v ∧ ↑v ≤ b * ↑N) →\n                              (∀ (q : PaperP1.BlockSupportParameters.ShapeCode V d h D) (i : Fin r),\n                                  ∀ x ∈ G, ∀ v ∈ blocks q i x, ↑(↑v - ↑x).natAbs ≤ E * ↑(L + 1)) →\n                                ↑(PaperP1.BlockSupportParameters.population G blocks s).card ≤\n                                    ↑N ^ (↑r - 2 * ↑s / (2 * ↑s + 1) + ε) ∧\n                                  ↑(PaperP1.BlockSupportParameters.records G blocks s).card ≤\n                                    ↑N ^ (↑r - 2 * ↑s / (2 * ↑s + 1) + ε)",
+      "compiled_scope": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-editorial-final-cuts/scope-complete/compiled-types.json",
+      "body_comparison": "Applique critical_count pour les motifs ShapeCode ; affaiblit l'exposant dans les deux comptes, population et enregistrements. Tous les paramètres de forme sont fixés avant N.",
+      "verdict": "conforme_au_role_utilise",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.SeveralWindowProjectionCount.companion_T1_14",
+      "file": "PaperP1/Asymptotics/SeveralWindowProjectionCount.lean",
+      "line": 22,
+      "source_sha256": "8ab4ca6fb2e7b8f1c09df0c6328847fdb5fc2be9ffa504a6b8f282d8eb24f4a7",
+      "source_byte_identical_to_proof_commit": true,
+      "kind": "theorem",
+      "is_proposition": true,
+      "compiled_type": "∀ (r s : ℕ),\n  2 ≤ s →\n    ∀ (Cband ε : ℝ),\n      0 < ε →\n        ∃ N₀,\n          ∀ N ≥ N₀,\n            ∀ (L : ℕ) (G : Finset ℕ),\n              |↑L - Real.log ↑N / Real.log 2| ≤ Cband →\n                G ⊆ PaperP1.Model.dyadicBlock N →\n                  ↑(PaperP1.SeveralWindowProjections.tuples G L r s).card ≤ ↑N ^ (↑r - ↑s / 2 + ε) ∧\n                    ↑(PaperP1.SeveralWindowProjections.tuples G L r s).card ≤ ↑N ^ (↑r - 2 * ↑s / (2 * ↑s + 1) + ε)",
+      "compiled_scope": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-editorial-final-cuts/scope-complete/compiled-types.json",
+      "body_comparison": "Spécialise les blocs aux fenêtres originales et fournit les deux exposants, le fort et l'imprimé ; le témoin de relation porte sur les espaces effectifs.",
+      "verdict": "conforme_au_role_utilise",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.FixedArityHomogeneousMass.uniform_mass",
+      "file": "PaperP1/Asymptotics/FixedArityHomogeneousMass.lean",
+      "line": 94,
+      "source_sha256": "4aeffaf8b11410291c94f6386051604cef7baa5a5407c768979a37b83be274e9",
+      "source_byte_identical_to_proof_commit": true,
+      "kind": "theorem",
+      "is_proposition": true,
+      "compiled_type": "∀ (r : ℕ),\n  3 ≤ r →\n    ∀ (C ε : ℝ),\n      0 < ε →\n        ∃ N₀,\n          3 ≤ N₀ ∧\n            ∀ N ≥ N₀,\n              ∀ (L : ℕ),\n                |↑L - Real.log ↑N / Real.log 2| ≤ C →\n                  ∀ (F : Finset (Finset ℕ)),\n                    (∀ I ∈ F,\n                        I ⊆ PaperP1.Model.dyadicBlock N ∧ I.card = r ∧ PaperP1.ConnectedWindowFamilies.Primitive L I) →\n                      ∑ I ∈ F, PaperP1.HomogeneousRunMass.probability L I ≤ ↑N ^ (-↑r / 2 + ε)",
+      "compiled_scope": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-editorial-final-cuts/scope-complete/compiled-types.json",
+      "body_comparison": "Appelle SharpPrimitiveNominalMass.uniform_mass avec ε/2, prouve le cap local homogène 2p, domine la somme homogène par 2^r fois la masse nominale et absorbe cette constante. Aucun événement affine compatible ni aucune marginale originale positive n'est supposé.",
+      "verdict": "conforme_au_role_utilise",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.SharpPrimitiveNominalMass.uniform_mass",
+      "file": "PaperP1/Asymptotics/SharpPrimitiveNominalMass.lean",
+      "line": 20,
+      "source_sha256": "403115f974c9c591e298ced5424857d23556f41178145aaf43eadc56b1fcadea",
+      "source_byte_identical_to_proof_commit": true,
+      "kind": "theorem",
+      "is_proposition": true,
+      "compiled_type": "∀ (r : ℕ),\n  3 ≤ r →\n    ∀ (C ε : ℝ),\n      0 < ε →\n        ∃ N₀,\n          3 ≤ N₀ ∧\n            ∀ N ≥ N₀,\n              ∀ (L : ℕ),\n                |↑L - Real.log ↑N / Real.log 2| ≤ C →\n                  ∀ (F : Finset (Finset ℕ)),\n                    (∀ I ∈ F,\n                        I ⊆ PaperP1.Model.dyadicBlock N ∧ I.card = r ∧ PaperP1.ConnectedWindowFamilies.Primitive L I) →\n                      PaperP1.PrimitiveNominalMass.mass F L ≤ ↑N ^ (-↑r / 2 + ε)",
+      "compiled_scope": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-editorial-final-cuts/scope-complete/compiled-types.json",
+      "body_comparison": "Choisit un seuil de densité fixe à partir de ε, sépare les filtres dense et bas, appelle DensePrimitiveNominalMass et LowPrimitiveNominalMass, puis absorbe le facteur2. La borne finale n'est pas une hypothèse.",
+      "verdict": "conforme_au_role_utilise",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.PrimitiveOrderedBound.companion_T4_3",
+      "file": "PaperP1/Asymptotics/PrimitiveOrderedBound.lean",
+      "line": 40,
+      "source_sha256": "89c76eee8a4ce9341eac1f4a3c3bf358f2009d6d3bfc22fa1cdac30c4d201e81",
+      "source_byte_identical_to_proof_commit": true,
+      "kind": "theorem",
+      "is_proposition": true,
+      "compiled_type": "∀ (r : ℕ),\n  3 ≤ r →\n    ∀ (C ε : ℝ),\n      0 < ε →\n        ∃ N₀,\n          3 ≤ N₀ ∧\n            ∀ N ≥ N₀,\n              ∀ (L : ℕ),\n                |↑L - Real.log ↑N / Real.log 2| ≤ C → PaperP1.PrimitiveOrderedMass.mass N L r ≤ ↑N ^ (-4 / 5 + ε)",
+      "compiled_scope": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-editorial-final-cuts/scope-complete/compiled-types.json",
+      "body_comparison": "Affaiblit uniform_strong, qui ferme le poids ordonné par PrimitiveOrderedMass.finite_bound, le facteur r! et une masse primitive déjà prouvée. Le texte raccourci utilise la route plus forte par 15.5, regular_weight et ordered_sum ; le seul endpoint historique ne prétend pas coder mot à mot cette nouvelle preuve.",
+      "verdict": "conforme_au_role_utilise",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.FixedCompressedPrimitiveTheorem.companion_T4_4",
+      "file": "PaperP1/Asymptotics/FixedCompressedPrimitiveTheorem.lean",
+      "line": 24,
+      "source_sha256": "afc40fa5af9dc312814cbed94c9d59b20efc0339c17c8647136b1ad72b2053d6",
+      "source_byte_identical_to_proof_commit": true,
+      "kind": "theorem",
+      "is_proposition": true,
+      "compiled_type": "∀ (t : ℕ),\n  2 ≤ t →\n    ∀ (C ε : ℝ),\n      0 < ε →\n        ∃ N₀,\n          4 ≤ N₀ ∧\n            ∀ N ≥ N₀,\n              ∀ (L : ℕ),\n                |↑L - Real.log ↑N / Real.log 2| ≤ C →\n                  ∀ (H : ℕ),\n                    PaperP1.EffectiveCompressedPrimitivePopulation.mass N 2 3 L t ≤ ↑N ^ (-5 / 3 + ε) ∧\n                      PaperP1.EffectiveCompressedPrimitivePopulation.mass N 3 4 L t ≤ ↑N ^ (-7 / 4 + ε) ∧\n                        ∑ q ∈ PaperP1.EffectiveCompressedPrimitivePopulation.points N 2 3 L t,\n                              PaperP1.Model.InfiniteStarts.infiniteJointMoment L\n                                (PaperP1.PairCompressedPrimitiveFamilies.family q.1 q.2) ≤\n                            ↑N ^ (-5 / 3 + ε) ∧\n                          ∑ q ∈ PaperP1.EffectiveCompressedPrimitivePopulation.points N 3 4 L t,\n                                PaperP1.Model.InfiniteStarts.infiniteJointMoment L\n                                  (PaperP1.PairCompressedPrimitiveFamilies.family q.1 q.2) ≤\n                              ↑N ^ (-7 / 4 + ε) ∧\n                            PaperP1.HomogeneousEffectiveGoodPairExtensions.mass N H 2 3 L ≤ ↑N ^ (-4 / 3 + ε) ∧\n                              PaperP1.HomogeneousEffectiveGoodPairExtensions.mass N H 3 4 L ≤ ↑N ^ (-5 / 4 + ε) ∧\n                                ∑ p ∈ PaperP1.HomogeneousEffectiveGoodPairExtensions.points N H 2 3 L,\n                                      PaperP1.Model.InfiniteStarts.infiniteJointMoment L\n                                        (PaperP1.SingletonExtensionWeights.join p) ≤\n                                    ↑N ^ (-4 / 3 + ε) ∧\n                                  ∑ p ∈ PaperP1.HomogeneousEffectiveGoodPairExtensions.points N H 3 4 L,\n                                      PaperP1.Model.InfiniteStarts.infiniteJointMoment L\n                                        (PaperP1.SingletonExtensionWeights.join p) ≤\n                                    ↑N ^ (-5 / 4 + ε)",
+      "compiled_scope": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-editorial-final-cuts/scope-complete/compiled-types.json",
+      "body_comparison": "Joint les quatre clauses de full_effective_principal_channels et les deux bornes HomogeneousEffectiveGoodPairExtensions pour tout H ; domine ensuite les joints affines par les probabilités homogènes. Le seuil unique précède H et les configurations.",
+      "verdict": "conforme_au_role_utilise",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.EffectiveCompressedPrimitiveMass.uniform_mass",
+      "file": "PaperP1/Asymptotics/EffectiveCompressedPrimitiveMass.lean",
+      "line": 58,
+      "source_sha256": "218dac889c9c7b8d94a188ff24b0796111ee50f2e98f3eafcb50ebb4fbdfb02e",
+      "source_byte_identical_to_proof_commit": true,
+      "kind": "theorem",
+      "is_proposition": true,
+      "compiled_type": "∀ (t a b : ℕ),\n  2 ≤ t →\n    0 < a →\n      a < b →\n        a.Coprime b →\n          3 ≤ b →\n            b ≤ 4 →\n              ∀ (C ε : ℝ),\n                0 < ε →\n                  ∃ N₀,\n                    3 ≤ N₀ ∧\n                      ∀ N ≥ N₀,\n                        ∀ (L : ℕ),\n                          |↑L - Real.log ↑N / Real.log 2| ≤ C →\n                            PaperP1.EffectiveCompressedPrimitivePopulation.mass N a b L t ≤ ↑N ^ (-2 + 1 / ↑b + ε)",
+      "compiled_scope": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-editorial-final-cuts/scope-complete/compiled-types.json",
+      "body_comparison": "Distingue t=2, traité par three_blocks, de t≥3, traité par from_four. Les cibles sont effectives et aucun filtrage de compatibilité de la source n'est ajouté.",
+      "verdict": "conforme_au_role_utilise",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.EffectiveCompressedPrimitiveMass.three_blocks",
+      "file": "PaperP1/Asymptotics/EffectiveCompressedPrimitiveMass.lean",
+      "line": 24,
+      "source_sha256": "218dac889c9c7b8d94a188ff24b0796111ee50f2e98f3eafcb50ebb4fbdfb02e",
+      "source_byte_identical_to_proof_commit": true,
+      "kind": "theorem",
+      "is_proposition": true,
+      "compiled_type": "∀ (a b : ℕ),\n  0 < a →\n    a < b →\n      a.Coprime b →\n        3 ≤ b →\n          b ≤ 4 →\n            ∀ (C ε : ℝ),\n              0 < ε →\n                ∃ N₀,\n                  3 ≤ N₀ ∧\n                    ∀ N ≥ N₀,\n                      ∀ (L : ℕ),\n                        |↑L - Real.log ↑N / Real.log 2| ≤ C →\n                          PaperP1.EffectiveCompressedPrimitivePopulation.mass N a b L 2 ≤ ↑N ^ (-2 + 1 / ↑b + ε)",
+      "compiled_scope": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-editorial-final-cuts/scope-complete/compiled-types.json",
+      "body_comparison": "Sépare la population au seuil fixe L/4 ; utilise uniform_sector pour le secteur bas et EffectiveCompressedDenseMass.uniform_bound pour le secteur haut, puis absorbe la somme des deux bornes.",
+      "verdict": "conforme_au_role_utilise",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.UnconditionalDenseTwoTargetMass.article_15_2",
+      "file": "PaperP1/Asymptotics/UnconditionalDenseTwoTargetMass.lean",
+      "line": 207,
+      "source_sha256": "36198ee66714205a1e3c2b2a865bc46afe1006b730402a62990cddaa8e8d7e87",
+      "source_byte_identical_to_proof_commit": true,
+      "kind": "theorem",
+      "is_proposition": true,
+      "compiled_type": "∀ (s : ℕ) (C η ε : ℝ),\n  0 < η →\n    0 < ε →\n      ∃ θ,\n        0 < θ ∧\n          ∃ N₀,\n            3 ≤ N₀ ∧\n              ∀ N ≥ N₀,\n                ∀ (L : ℕ),\n                  |↑L - Real.log ↑N / Real.log 2| ≤ C →\n                    ∀ (x : Fin s → ℕ),\n                      (∀ (i : Fin s), x i ∈ PaperP1.Model.dyadicBlock N) →\n                        ∀ W ≤ ⨆ i, PaperP1.Arithmetic.squareClassSpace (x i) L,\n                          ∀ (F : Finset (ℕ × ℕ)),\n                            (∀ p ∈ F, p.1 ∈ PaperP1.Model.dyadicBlock N ∧ p.2 ∈ PaperP1.Model.dyadicBlock N) →\n                              (∀ p ∈ F,\n                                  ¬PaperP1.CompressedTargetAlignment.Aligned 1 p.1 p.2 L ∨\n                                    ↑(Module.finrank PaperP1.Arithmetic.F₂\n                                          ↥(PaperP1.Arithmetic.squareClassSpace p.1 L ⊓\n                                              PaperP1.Arithmetic.squareClassSpace p.2 L)) ≤\n                                      θ * ↑L) →\n                                (∀ p ∈ F,\n                                    Disjoint W (PaperP1.Arithmetic.squareClassSpace p.1 L) ∧\n                                      Disjoint W (PaperP1.Arithmetic.squareClassSpace p.2 L) ∧\n                                        η * ↑L ≤\n                                          ↑(Module.finrank PaperP1.Arithmetic.F₂\n                                              ↥(PaperP1.TwoTargetWindowSections.Kernel p.1 p.2 L W))) →\n                                  ∑ p ∈ F,\n                                        PaperP1.Model.InfiniteStarts.infiniteMarginal p.1 L *\n                                            PaperP1.Model.InfiniteStarts.infiniteMarginal p.2 L *\n                                          2 ^\n                                            Module.finrank PaperP1.Arithmetic.F₂\n                                              ↥(PaperP1.TwoTargetWindowSections.Kernel p.1 p.2 L W) ≤\n                                      ↑N ^ (-1 + ε) ∧\n                                    ∑ p ∈ F,\n                                          PaperP1.HomogeneousRunMass.probability L {p.1} *\n                                              PaperP1.HomogeneousRunMass.probability L {p.2} *\n                                            2 ^\n                                              Module.finrank PaperP1.Arithmetic.F₂\n                                                ↥(PaperP1.TwoTargetWindowSections.Kernel p.1 p.2 L W) ≤\n                                        ↑N ^ (-1 + ε) ∧\n                                      ∑ p ∈ F,\n                                          (2 ^ L)⁻¹ ^ 2 *\n                                            2 ^\n                                              Module.finrank PaperP1.Arithmetic.F₂\n                                                ↥(PaperP1.TwoTargetWindowSections.Kernel p.1 p.2 L W) ≤\n                                        ↑N ^ (-1 + ε)",
+      "compiled_scope": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-editorial-final-cuts/scope-complete/compiled-types.json",
+      "body_comparison": "Joint trois estimations déjà prouvées, avec θ=η/64 et un seuil commun : marginales originales, marginales homogènes et poids nominal. La condition nonaligné OU petite intersection est explicite ; le cas direct la satisfait par intersection nulle.",
+      "verdict": "conforme_au_role_utilise",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.SharpPrimitiveMass.uniform_rank_mass",
+      "file": "PaperP1/Asymptotics/SharpPrimitiveMass.lean",
+      "line": 21,
+      "source_sha256": "e3c2a3905431ea24a78a74e51dbfd30701bd32b79bb96c2370287e73b37b3ff6",
+      "source_byte_identical_to_proof_commit": true,
+      "kind": "theorem",
+      "is_proposition": true,
+      "compiled_type": "∀ (r : ℕ),\n  3 ≤ r →\n    ∀ (C ε : ℝ),\n      0 < ε →\n        ∃ N₀,\n          3 ≤ N₀ ∧\n            ∀ N ≥ N₀,\n              ∀ (L : ℕ),\n                |↑L - Real.log ↑N / Real.log 2| ≤ C →\n                  ∀ (F : Finset (Finset ℕ)),\n                    (∀ I ∈ F,\n                        I ⊆ PaperP1.Model.dyadicBlock N ∧ I.card = r ∧ PaperP1.ConnectedWindowFamilies.Primitive L I) →\n                      PaperP1.PrimitiveWindowMass.mass F L ≤ ↑N ^ (-↑r / 2 + ε)",
+      "compiled_scope": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-editorial-final-cuts/scope-complete/compiled-types.json",
+      "body_comparison": "Ferme la somme des poids à marginales exactes par les secteurs bas et dense. La population est toute sous-famille déterministe de r fenêtres primitives, sans hypothèse de borne finale.",
+      "verdict": "conforme_au_role_utilise",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.EffectiveCompressedPrimitiveCount.uniform_count",
+      "file": "PaperP1/Asymptotics/EffectiveCompressedPrimitiveCount.lean",
+      "line": 135,
+      "source_sha256": "fa5f84b84ce818361bb0b17d94e61ce18b43b08e051b9701b089ad6ef37dd8b7",
+      "source_byte_identical_to_proof_commit": true,
+      "kind": "theorem",
+      "is_proposition": true,
+      "compiled_type": "∀ (t a b : ℕ),\n  0 < a →\n    a ≤ b →\n      3 ≤ b →\n        b ≤ 4 →\n          ∀ (C ε : ℝ),\n            0 < ε →\n              ∃ N₀,\n                2 ≤ N₀ ∧\n                  ∀ N ≥ N₀,\n                    ∀ (L : ℕ),\n                      |↑L - Real.log ↑N / Real.log 2| ≤ C →\n                        ↑(PaperP1.EffectiveCompressedPrimitivePopulation.points N a b L t).card ≤\n                          ↑N ^ ((↑t + 1) / 2 + ε)",
+      "compiled_scope": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-editorial-final-cuts/scope-complete/compiled-types.json",
+      "body_comparison": "encode_mem injecte chaque population à offsets fixés dans les listes de 10.1. Le centre source est b*x, distinct des cibles car b≥3 ; space_eq identifie exactement l'image effective et l'union normalisée. fixed_offsets applique 10.1 avec r=t+1, zéro ancienne source, hauteurs[1/2,12]N, largeur8B ; la somme des B² motifs est absorbée.",
+      "verdict": "conforme_au_role_utilise",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.EffectiveCompressedPrimitiveElementaryMass.uniform_point",
+      "file": "PaperP1/Asymptotics/EffectiveCompressedPrimitiveElementaryMass.lean",
+      "line": 19,
+      "source_sha256": "207f1ae7840ad08b1d9fc224e83fc2c014bb1f7a3596d123bac3333b74da9722",
+      "source_byte_identical_to_proof_commit": true,
+      "kind": "theorem",
+      "is_proposition": true,
+      "compiled_type": "∀ (t a b : ℕ),\n  0 < a →\n    a < b →\n      a.Coprime b →\n        ∀ (C η ε : ℝ),\n          0 ≤ η →\n            0 < ε →\n              ∃ N₀,\n                2 ≤ N₀ ∧\n                  ∀ N ≥ N₀,\n                    ∀ (L : ℕ),\n                      |↑L - Real.log ↑N / Real.log 2| ≤ C →\n                        ∀ p ∈ PaperP1.EffectiveCompressedPrimitivePopulation.points N a b L t,\n                          ↑(PaperP1.PairCompressedPrimitiveFamilies.nullity p.1 L p.2) ≤ η * ↑L →\n                            PaperP1.HomogeneousRunMass.probability L\n                                (PaperP1.PairCompressedPrimitiveFamilies.family p.1 p.2) ≤\n                              ↑N ^ (-2 + 1 / ↑b - ↑t + η + ε)",
+      "compiled_scope": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-editorial-final-cuts/scope-complete/compiled-types.json",
+      "body_comparison": "Combine la vraie masse homogène de la source, le cap local homogène pour chaque cible, factor et la borne de nullité ηL ; les facteurs fixes sont absorbés. La compatibilité affine n'intervient jamais.",
+      "verdict": "conforme_au_role_utilise",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.EffectiveCompressedPrimitiveElementaryMass.uniform_sector",
+      "file": "PaperP1/Asymptotics/EffectiveCompressedPrimitiveElementaryMass.lean",
+      "line": 66,
+      "source_sha256": "207f1ae7840ad08b1d9fc224e83fc2c014bb1f7a3596d123bac3333b74da9722",
+      "source_byte_identical_to_proof_commit": true,
+      "kind": "theorem",
+      "is_proposition": true,
+      "compiled_type": "∀ (t a b : ℕ),\n  0 < a →\n    a < b →\n      a.Coprime b →\n        3 ≤ b →\n          b ≤ 4 →\n            ∀ (C η ε : ℝ),\n              0 ≤ η →\n                0 < ε →\n                  ∃ N₀,\n                    2 ≤ N₀ ∧\n                      ∀ N ≥ N₀,\n                        ∀ (L : ℕ),\n                          |↑L - Real.log ↑N / Real.log 2| ≤ C →\n                            ∀ F ⊆ PaperP1.EffectiveCompressedPrimitivePopulation.points N a b L t,\n                              (∀ p ∈ F, ↑(PaperP1.PairCompressedPrimitiveFamilies.nullity p.1 L p.2) ≤ η * ↑L) →\n                                ∑ p ∈ F,\n                                    PaperP1.HomogeneousRunMass.probability L\n                                      (PaperP1.PairCompressedPrimitiveFamilies.family p.1 p.2) ≤\n                                  ↑N ^ (-3 / 2 + 1 / ↑b - ↑t / 2 + η + ε)",
+      "compiled_scope": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-editorial-final-cuts/scope-complete/compiled-types.json",
+      "body_comparison": "Multiplie uniform_count par uniform_point sur toute sous-famille de la population dont la nullité est majorée par ηL. Les deux marges ε/2 sont explicites dans le corps.",
+      "verdict": "conforme_au_role_utilise",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.EffectiveCompressedPrimitiveElementaryMass.from_four",
+      "file": "PaperP1/Asymptotics/EffectiveCompressedPrimitiveElementaryMass.lean",
+      "line": 93,
+      "source_sha256": "207f1ae7840ad08b1d9fc224e83fc2c014bb1f7a3596d123bac3333b74da9722",
+      "source_byte_identical_to_proof_commit": true,
+      "kind": "theorem",
+      "is_proposition": true,
+      "compiled_type": "∀ (t a b : ℕ),\n  3 ≤ t →\n    0 < a →\n      a < b →\n        a.Coprime b →\n          3 ≤ b →\n            b ≤ 4 →\n              ∀ (C ε : ℝ),\n                0 < ε →\n                  ∃ N₀,\n                    2 ≤ N₀ ∧\n                      ∀ N ≥ N₀,\n                        ∀ (L : ℕ),\n                          |↑L - Real.log ↑N / Real.log 2| ≤ C →\n                            PaperP1.EffectiveCompressedPrimitivePopulation.mass N a b L t ≤ ↑N ^ (-2 + 1 / ↑b + ε)",
+      "compiled_scope": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-editorial-final-cuts/scope-complete/compiled-types.json",
+      "body_comparison": "Primitivité implique nullity≤L ; applique uniform_sector avec η=1, puis utilise t≥3 pour obtenir l'exposant −2+1/b. Pas de géométrie de l'ancienne preuve T4.3 utilisée.",
+      "verdict": "conforme_au_role_utilise",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.EffectiveCompressedDenseExtensions.uniform_extensions",
+      "file": "PaperP1/Asymptotics/EffectiveCompressedDenseExtensions.lean",
+      "line": 29,
+      "source_sha256": "88c105d0fdc8fa83a38394b9244b5a4d9bfb7720417c0eb99f6a85d8351260c9",
+      "source_byte_identical_to_proof_commit": true,
+      "kind": "theorem",
+      "is_proposition": true,
+      "compiled_type": "∀ (C η ε : ℝ),\n  0 < η →\n    0 < ε →\n      ∃ N₀,\n        3 ≤ N₀ ∧\n          ∀ N ≥ N₀,\n            ∀ (L : ℕ),\n              |↑L - Real.log ↑N / Real.log 2| ≤ C →\n                ∀ (xy : ℕ × ℕ),\n                  xy.1 ∈ PaperP1.Model.dyadicBlock N →\n                    xy.2 ∈ PaperP1.Model.dyadicBlock N →\n                      ∀ (F : Finset (Fin 2 → ℕ)),\n                        (∀ z ∈ F,\n                            (∀ (i : Fin 2), z i ∈ PaperP1.Model.dyadicBlock N) ∧\n                              PaperP1.PairCompressedPrimitiveFamilies.Primitive xy L z ∧\n                                η * ↑L ≤ ↑(PaperP1.PairCompressedPrimitiveFamilies.nullity xy L z)) →\n                          ∑ z ∈ F,\n                              PaperP1.HomogeneousRunMass.probability L\n                                (PaperP1.PairCompressedPrimitiveFamilies.family xy z) ≤\n                            PaperP1.HomogeneousRunMass.probability L {xy.1, xy.2} * ↑N ^ (-1 + ε)",
+      "compiled_scope": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-editorial-final-cuts/scope-complete/compiled-types.json",
+      "body_comparison": "Obtient les disjonctions et l'identité de déficit par primitive_data ; appelle la branche homogène dense à deux cibles avec la source entière W=S_x+S_y. La petite-intersection est prouvée par directité des cibles. Factorise exactement par q0(source), sans supposer S_x et S_y directs.",
+      "verdict": "conforme_au_role_utilise",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.EffectiveCompressedDenseMass.uniform_bound",
+      "file": "PaperP1/Asymptotics/EffectiveCompressedDenseMass.lean",
+      "line": 18,
+      "source_sha256": "f6ae2579033aecf7f86bb4b18a86885ae2e911a9619a292fff33797da7a08c2d",
+      "source_byte_identical_to_proof_commit": true,
+      "kind": "theorem",
+      "is_proposition": true,
+      "compiled_type": "∀ (a b : ℕ),\n  0 < a →\n    a < b →\n      a.Coprime b →\n        ∀ (C η ε : ℝ),\n          0 < η →\n            0 < ε →\n              ∃ N₀,\n                3 ≤ N₀ ∧\n                  ∀ N ≥ N₀,\n                    ∀ (L : ℕ),\n                      |↑L - Real.log ↑N / Real.log 2| ≤ C →\n                        ∀ F ⊆ PaperP1.EffectiveCompressedPrimitivePopulation.points N a b L 2,\n                          (∀ q ∈ F, η * ↑L ≤ ↑(PaperP1.PairCompressedPrimitiveFamilies.nullity q.1 L q.2)) →\n                            ∑ q ∈ F,\n                                PaperP1.HomogeneousRunMass.probability L\n                                  (PaperP1.PairCompressedPrimitiveFamilies.family q.1 q.2) ≤\n                              ↑N ^ (-2 + 1 / ↑b + ε)",
+      "compiled_scope": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-editorial-final-cuts/scope-complete/compiled-types.json",
+      "body_comparison": "Somme uniform_extensions sur les fibres des sources ; HomogeneousFullChannelMass fournit la masse source totale. Les marges ε/2 se multiplient en l'exposant final −2+1/b+ε.",
+      "verdict": "conforme_au_role_utilise",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.PrimitiveNominalMass.ordered_sum",
+      "file": "PaperP1/Model/PrimitiveNominalMass.lean",
+      "line": 42,
+      "source_sha256": "89873252276e3b48c8d87187358a3bfa974d5acde4cf86dcef2cd8d0318643b1",
+      "source_byte_identical_to_proof_commit": true,
+      "kind": "theorem",
+      "is_proposition": true,
+      "compiled_type": "∀ (G : Finset ℕ) (L r : ℕ),\n  ∀ F ⊆ Finset.powersetCard r G,\n    ∑ t ∈ PaperP1.OrderedSubsetWeights.population G r F,\n        (2 ^ L)⁻¹ ^ r *\n          2 ^\n            PaperP1.Affine.relativeNullityOn (fun x => PaperP1.Arithmetic.squareClassSpace x L)\n              (PaperP1.Probability.tupleValues t) =\n      ↑r.factorial * PaperP1.PrimitiveNominalMass.mass F L",
+      "compiled_scope": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-editorial-final-cuts/scope-complete/compiled-types.json",
+      "body_comparison": "Identité finie du passage d'ensembles à tuples injectifs : chaque ensemble de cardinal r a r! énumérations. Elle n'est pas une estimation asymptotique et ne suppose pas une masse bornée.",
+      "verdict": "conforme_au_role_utilise",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.HomogeneousRunMass.regular_weight",
+      "file": "PaperP1/Model/HomogeneousRunMass.lean",
+      "line": 107,
+      "source_sha256": "30b2917962aab5acc20ceb7f058e29ba59e1c99ce177e7797f987cadc83eba59",
+      "source_byte_identical_to_proof_commit": true,
+      "kind": "theorem",
+      "is_proposition": true,
+      "compiled_type": "∀ {N L : ℕ} {I : Finset ℕ},\n  I ⊆ PaperP1.RegularStarts.regularStarts N L →\n    PaperP1.HomogeneousRunMass.probability L I = PaperP1.PrimitiveNominalMass.weight L I",
+      "compiled_scope": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-editorial-final-cuts/scope-complete/compiled-types.json",
+      "body_comparison": "Identifie la probabilité homogène au poids nominal uniquement sous I⊆regularStarts. C'est le raccord exact employé pour T4.3 et les cibles originales régulières de T4.4 ; aucune extension à toutes les marginales originales n'est faite.",
+      "verdict": "conforme_au_role_utilise",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.PairCompressedTwoTargetData.primitive_data",
+      "file": "PaperP1/Model/PairCompressedTwoTargetData.lean",
+      "line": 32,
+      "source_sha256": "c8cc3acafa6895e01361b2c246a8ae36b1d84059c8d57bae8d503b54694614f8",
+      "source_byte_identical_to_proof_commit": true,
+      "kind": "theorem",
+      "is_proposition": true,
+      "compiled_type": "∀ {L : ℕ} (xy : ℕ × ℕ) (z : Fin 2 → ℕ),\n  PaperP1.PairCompressedPrimitiveFamilies.Primitive xy L z →\n    Disjoint (PaperP1.Arithmetic.squareClassSpace xy.1 L ⊔ PaperP1.Arithmetic.squareClassSpace xy.2 L)\n        (PaperP1.Arithmetic.squareClassSpace (z 0) L) ∧\n      Disjoint (PaperP1.Arithmetic.squareClassSpace xy.1 L ⊔ PaperP1.Arithmetic.squareClassSpace xy.2 L)\n          (PaperP1.Arithmetic.squareClassSpace (z 1) L) ∧\n        Disjoint (PaperP1.Arithmetic.squareClassSpace (z 0) L) (PaperP1.Arithmetic.squareClassSpace (z 1) L) ∧\n          PaperP1.PairCompressedPrimitiveFamilies.nullity xy L z =\n            Module.finrank PaperP1.Arithmetic.F₂\n              ↥(PaperP1.TwoTargetWindowSections.Kernel (z 0) (z 1) L\n                  (PaperP1.Arithmetic.squareClassSpace xy.1 L ⊔ PaperP1.Arithmetic.squareClassSpace xy.2 L))",
+      "compiled_scope": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-editorial-final-cuts/scope-complete/compiled-types.json",
+      "body_comparison": "Applique la coupe primitive à trois blocs, le bloc source étant déjà S_x+S_y, puis identifie le déficit au noyau effectif à deux cibles. Ni directité interne de la paire source ni compatibilité affine ne sont requises.",
+      "verdict": "conforme_au_role_utilise",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.HomogeneousCompressedEffectiveFactor.factor",
+      "file": "PaperP1/Model/HomogeneousCompressedEffectiveFactor.lean",
+      "line": 31,
+      "source_sha256": "0f760fde3375087360216dd614e52ac0b9d76097740f4525675d816a8123e920",
+      "source_byte_identical_to_proof_commit": true,
+      "kind": "theorem",
+      "is_proposition": true,
+      "compiled_type": "∀ {t L : ℕ} (xy : ℕ × ℕ) (z : Fin t → ℕ),\n  PaperP1.HomogeneousRunMass.probability L (PaperP1.PairCompressedPrimitiveFamilies.family xy z) =\n    (PaperP1.HomogeneousRunMass.probability L {xy.1, xy.2} * ∏ i, PaperP1.HomogeneousRunMass.probability L {z i}) *\n      2 ^ PaperP1.PairCompressedPrimitiveFamilies.nullity xy L z",
+      "compiled_scope": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-editorial-final-cuts/scope-complete/compiled-types.json",
+      "body_comparison": "Conséquence exacte de rank_add_nullity. Le produit contient les vraies marginales HOMOGÈNES de chaque cible ; aucune substitution nominale générale n'est faite.",
+      "verdict": "conforme_au_role_utilise",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.HomogeneousCompressedEffectiveFactor.two_target_factor",
+      "file": "PaperP1/Model/HomogeneousCompressedEffectiveFactor.lean",
+      "line": 91,
+      "source_sha256": "0f760fde3375087360216dd614e52ac0b9d76097740f4525675d816a8123e920",
+      "source_byte_identical_to_proof_commit": true,
+      "kind": "theorem",
+      "is_proposition": true,
+      "compiled_type": "∀ {L : ℕ} (xy : ℕ × ℕ) (z : Fin 2 → ℕ),\n  PaperP1.PairCompressedPrimitiveFamilies.Primitive xy L z →\n    PaperP1.HomogeneousRunMass.probability L (PaperP1.PairCompressedPrimitiveFamilies.family xy z) =\n      PaperP1.HomogeneousRunMass.probability L {xy.1, xy.2} *\n        (PaperP1.HomogeneousRunMass.probability L {z 0} * PaperP1.HomogeneousRunMass.probability L {z 1} *\n          2 ^\n            Module.finrank PaperP1.Arithmetic.F₂\n              ↥(PaperP1.TwoTargetWindowSections.Kernel (z 0) (z 1) L\n                  (PaperP1.Arithmetic.squareClassSpace xy.1 L ⊔ PaperP1.Arithmetic.squareClassSpace xy.2 L)))",
+      "compiled_scope": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-editorial-final-cuts/scope-complete/compiled-types.json",
+      "body_comparison": "Spécialise factor et remplace la nullité par le noyau au-dessus de W à l'aide de primitive_data. Les marginales homogènes restent présentes.",
+      "verdict": "conforme_au_role_utilise",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.HomogeneousChannelWeights.uniform_pair",
+      "file": "PaperP1/Asymptotics/HomogeneousChannelWeights.lean",
+      "line": 22,
+      "source_sha256": "7a52faa0bbde1c0546ca72685276fe90d451279fc000227948710799af324cdd",
+      "source_byte_identical_to_proof_commit": true,
+      "kind": "theorem",
+      "is_proposition": true,
+      "compiled_type": "∀ (C ε : ℝ) (a b : ℕ),\n  0 < a →\n    a < b →\n      a.Coprime b →\n        0 < ε →\n          ∃ N₀,\n            2 ≤ N₀ ∧\n              ∀ N ≥ N₀,\n                ∀ (L : ℕ),\n                  |↑L - Real.log ↑N / Real.log 2| ≤ C →\n                    ∀ xy ∈ PaperP1.FixedChannelSourceGeometry.unitSources N a b L,\n                      PaperP1.HomogeneousRunMass.probability L {xy.1, xy.2} ≤ ↑N ^ (-2 + 1 / ↑b + ε)",
+      "compiled_scope": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-editorial-final-cuts/scope-complete/compiled-types.json",
+      "body_comparison": "Prend la formule exacte homogène du couple, la borne de perte de rang alignée et la borne sur le nombre d'unités ; convertit les puissances binaires dans la bande critique et absorbe les constantes. Tous les couples unitSources, y compris non privés/incompatibles, sont permis.",
+      "verdict": "conforme_au_role_utilise",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.HomogeneousFullChannelMass.uniform_bound",
+      "file": "PaperP1/Asymptotics/HomogeneousFullChannelMass.lean",
+      "line": 16,
+      "source_sha256": "8709b74d7622625fddb969d4e796750ba7a0b604c62b884bafe41ebd3e8c96d6",
+      "source_byte_identical_to_proof_commit": true,
+      "kind": "theorem",
+      "is_proposition": true,
+      "compiled_type": "∀ (C ε : ℝ) (a b : ℕ),\n  0 < a →\n    a < b →\n      a.Coprime b →\n        0 < ε →\n          ∃ N₀,\n            2 ≤ N₀ ∧\n              ∀ N ≥ N₀,\n                ∀ (L : ℕ),\n                  |↑L - Real.log ↑N / Real.log 2| ≤ C →\n                    ∑ xy ∈ PaperP1.FixedChannelSourceGeometry.unitSources N a b L,\n                        PaperP1.HomogeneousRunMass.probability L {xy.1, xy.2} ≤\n                      ↑N ^ (-1 + 1 / ↑b + ε)",
+      "compiled_scope": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-editorial-final-cuts/scope-complete/compiled-types.json",
+      "body_comparison": "Le nombre de sources unitaires est au plus B²N ; multiplie uniform_pair et absorbe B². Le compte et le poids sont prouvés séparément, pas postulés.",
+      "verdict": "conforme_au_role_utilise",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.BlockSupportCount.critical_interval_count",
+      "file": "PaperP1/Asymptotics/BlockSupportCount.lean",
+      "line": 117,
+      "source_sha256": "10a8e09cc2a4c9da7fa3d1cacdd27b8b5fcaf2ffb645a396b3afb896d094b6bb",
+      "source_byte_identical_to_proof_commit": true,
+      "kind": "theorem",
+      "is_proposition": true,
+      "compiled_type": "∀ (r s C : ℕ),\n  0 < s →\n    1 ≤ C →\n      ∀ (a b D Cband ε : ℝ),\n        0 < a →\n          0 ≤ D →\n            0 < ε →\n              ∃ N₀,\n                ∀ N ≥ N₀,\n                  ∀ (L M : ℕ) (G : Finset ℕ) (blocks : Fin r → ℕ → Finset ℕ),\n                    |↑L - Real.log ↑N / Real.log 2| ≤ Cband →\n                      G ⊆ Finset.Ico M (M + C * N) →\n                        (∀ (i : Fin r), ∀ x ∈ G, ∀ v ∈ blocks i x, a * ↑N ≤ ↑v ∧ ↑v ≤ b * ↑N) →\n                          (∀ (i : Fin r), ∀ x ∈ G, ∀ v ∈ blocks i x, ↑(↑v - ↑x).natAbs ≤ D * ↑(L + 1)) →\n                            ↑(PaperP1.BlockSupportProjection.population G blocks s).card ≤ ↑N ^ (↑r - ↑s / 2 + ε)",
+      "compiled_scope": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-editorial-final-cuts/scope-complete/compiled-types.json",
+      "body_comparison": "Ouvre la bande critique pour transformer DB en largeur logarithmique, puis applique interval_count. En amont, la partition par support effectif et les fibres conditionnelles donnent N^{r−s/2+ε}.",
+      "verdict": "conforme_au_role_utilise",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.BlockSupportParameters.critical_count",
+      "file": "PaperP1/Asymptotics/BlockSupportParameters.lean",
+      "line": 103,
+      "source_sha256": "bf574d5e7dbc63467e9f605ed5f6a7a79bf66a7562fb7b146187e12c803d29ef",
+      "source_byte_identical_to_proof_commit": true,
+      "kind": "theorem",
+      "is_proposition": true,
+      "compiled_type": "∀ (r s C d h D : ℕ),\n  0 < s →\n    1 ≤ C →\n      ∀ (a b E F Cband ε : ℝ),\n        0 < a →\n          0 ≤ E →\n            0 ≤ F →\n              0 < ε →\n                ∃ N₀,\n                  ∀ N ≥ N₀,\n                    ∀ (L V M : ℕ) (G : Finset ℕ)\n                      (blocks : PaperP1.BlockSupportParameters.ShapeCode V d h D → Fin r → ℕ → Finset ℕ),\n                      |↑L - Real.log ↑N / Real.log 2| ≤ Cband →\n                        ↑V ≤ F * ↑(L + 1) →\n                          G ⊆ Finset.Ico M (M + C * N) →\n                            (∀ (q : PaperP1.BlockSupportParameters.ShapeCode V d h D) (i : Fin r),\n                                ∀ x ∈ G, ∀ v ∈ blocks q i x, a * ↑N ≤ ↑v ∧ ↑v ≤ b * ↑N) →\n                              (∀ (q : PaperP1.BlockSupportParameters.ShapeCode V d h D) (i : Fin r),\n                                  ∀ x ∈ G, ∀ v ∈ blocks q i x, ↑(↑v - ↑x).natAbs ≤ E * ↑(L + 1)) →\n                                ↑(PaperP1.BlockSupportParameters.population G blocks s).card ≤ ↑N ^ (↑r - ↑s / 2 + ε) ∧\n                                  ↑(PaperP1.BlockSupportParameters.records G blocks s).card ≤ ↑N ^ (↑r - ↑s / 2 + ε)",
+      "compiled_scope": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-editorial-final-cuts/scope-complete/compiled-types.json",
+      "body_comparison": "Absorbe les choix de ShapeCode, dont V≤F(L+1), après le compte à demi-puissance. Les populations et les enregistrements sont tous deux bornés uniformément.",
+      "verdict": "conforme_au_role_utilise",
+      "necessary_corrections": []
+    }
+  ],
+  "definitions_and_identifications_read": [
+    {
+      "file": "PaperP1/Arithmetic/EffectiveWindowLists.lean",
+      "lines": [
+        16,
+        28
+      ],
+      "source_sha256": "4d280ddb6e4b5b68d559b23968224d086290e81fc8d7e888756f0e1972c6c54b",
+      "meaning": "Prédicat de liste : projections effectives non nulles et somme dans l'ancien espace plein.",
+      "source_byte_identical_to_proof_commit": true
+    },
+    {
+      "file": "PaperP1/Arithmetic/BlockSupportProjection.lean",
+      "lines": [
+        15,
+        22
+      ],
+      "source_sha256": "6fad88eecd06da9ed5659588ac566a492a2053255c184183afaef00dc9c36036",
+      "meaning": "Prédicat de relation : au moins s projections effectives non nulles et centres distincts.",
+      "source_byte_identical_to_proof_commit": true
+    },
+    {
+      "file": "PaperP1/Arithmetic/WindowPairCentreBlocks.lean",
+      "lines": [
+        24,
+        56
+      ],
+      "source_sha256": "202052a85a2a0f8a03b15eaa2c947e925a53c45d93925e80df8b4073eebfe090",
+      "meaning": "Centre normalisé, injection et identité exacte de l’espace comprimé ; unité du motif utilisée.",
+      "source_byte_identical_to_proof_commit": true
+    },
+    {
+      "file": "PaperP1/Arithmetic/WindowPairCentreBlocks.lean",
+      "lines": [
+        72,
+        98
+      ],
+      "source_sha256": "202052a85a2a0f8a03b15eaa2c947e925a53c45d93925e80df8b4073eebfe090",
+      "meaning": "Largeur et cardinal de la vraie union normalisée.",
+      "source_byte_identical_to_proof_commit": true
+    },
+    {
+      "file": "PaperP1/Arithmetic/EnlargedPairGeometry.lean",
+      "lines": [
+        15,
+        18
+      ],
+      "source_sha256": "370b6755fd4afe5c02b73d199d182e86b6bc64ae1a6dcff7467c34609454831d",
+      "meaning": "Alignement géométrique et radius=3bB.",
+      "source_byte_identical_to_proof_commit": true
+    },
+    {
+      "file": "PaperP1/Arithmetic/ModerateCertificateCount.lean",
+      "lines": [
+        20,
+        30
+      ],
+      "source_sha256": "2293a212e070e933bd910c898d1d33f2de0369437a61e89104a09ddaa8a3d550",
+      "meaning": "Injection des centres dans le prédicat de certificat.",
+      "source_byte_identical_to_proof_commit": true
+    },
+    {
+      "file": "PaperP1/Asymptotics/EnlargedAlignedPairTheorem.lean",
+      "lines": [
+        27,
+        33
+      ],
+      "source_sha256": "99a880d0e3f127b73ddff3e661662bc0a672cd9ec4ea2e1c4a763c2c3114c833",
+      "meaning": "Dépliage complet de FixedConclusion.",
+      "source_byte_identical_to_proof_commit": true
+    }
+  ],
+  "dependency_assessment": {
+    "SIM12": "10.1 → relation à s projections effectives → T1.14.",
+    "SIM13_original": "Construction ancrée/récupération/confinement et demi-compte →15.5 →T4.3 sur domaine régulier.",
+    "SIM13_compressed": "T1.9+10.1+15.2 → preuve autonomeT4.4 ; T1.12 séparément pour une cible.",
+    "cycles_confirmed": 0,
+    "note": "Un nom de module contenant moment ne suffit pas à établir un cycle. Les dépendances des corps et des arguments TeX ont été suivies ; aucun emploi du théorème de moments à prouver ni d’une reconstruction dans ces routes."
+  },
+  "unchanged_outside_this_diff": [
+    "Les conventions13.4 etT22.7 ne sont pas modifiées par ce patch ; pas de nouvelle conclusion sur elles dans ce rapport.",
+    "Les anciens rapports de167 correspondances et de1004 restent figés."
+  ],
+  "prior_reports_preserved_checked": [
+    {
+      "path": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-editorial-structural/conditional-followup.json",
+      "sha256": "3fc30f1964c5cf0eede9220dd4548029488e956af1b63d024d99a95dbdaf095a"
+    },
+    {
+      "path": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-editorial-structural/conditional-followup.txt",
+      "sha256": "98f11ec2ca3590e4eae3421b50de96f12d40c13bc37a581b7f899fb5fefb73ce"
+    },
+    {
+      "path": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-primitive-common-bound/independent-review.json",
+      "sha256": "befad71bf99a8b443efa6997eb7c8d55b521429320737b4e3a43dc28fd8ef078"
+    },
+    {
+      "path": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-editorial-condensed/independent-patch-review.json",
+      "sha256": "c081d0fb6d639cdfc2bddd89a0023a3cbfc3c149e8d6d57ce7096ae643319173"
+    },
+    {
+      "path": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-editorial-structural/independent-patch-review.json",
+      "sha256": "44f551ea11a2d3e6b261243c90f4e3f1470e9680afc75c4aea280d997dc67731"
+    }
+  ],
+  "limits": [
+    "Relecture sémantique et contrôles de sources seulement ; aucun Lean/Lake, replay, build, PDF ni Palomar exécuté.",
+    "Les30 types ont été lus avec les définitions et corps pertinents ; leur compilation et leur audit d’axiomes proviennent des fichiers du parent, pas d’une exécution indépendante.",
+    "Aucun fichier de dépôt, ancienne source proposée, PDF, ancien rapport ou module de preuve modifié. Seuls les deux présents fichiers sont créés.",
+    "La conservation des numéros effectivement imprimés et des renvois en PDF doit être constatée par la compilation/QA du parent ; ici les167 identités et l’ordre des environnements de résultats sont conservés.",
+    "Aucun gain en pages n’est déduit des132 lignes source retirées."
+  ],
+  "necessary_corrections": [],
+  "recommendations": [
+    "Conserver les phrases de domaine régulier et de projections effectives ; elles empêchent précisément les mauvaises substitutions de masse ou de support.",
+    "Conserver la nouvelle preuveT4.4 entière, y compris centre normalisé, somme source et cas à une cible ; ne pas la réduire à un simple renvoi versT4.3.",
+    "Lors de l’intégration, prendre ce hashf698ccd6… et non l’un des brouillons antérieurs. Aucun changement mathématique supplémentaire n’est demandé."
+  ]
+}

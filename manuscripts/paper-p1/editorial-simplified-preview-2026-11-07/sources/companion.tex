@@ -1,0 +1,70 @@
+\documentclass[11pt,a4paper]{article}
+\input{preamble}
+\newcommand{\PoneTechnicalCompanion}{}
+\externaldocument[][nocite]{build/main}[P1_Simplified_Editorial_Preview_Main_2026-11-07_EN.pdf]
+\makeatletter
+\patchcmd{\l@section}{1.5em}{2.3em}{}{\PackageError{p1}{Could not widen companion contents numbers}{}}
+\makeatother
+\renewcommand{\thesection}{T\arabic{section}}
+\renewcommand{\theHsection}{T.\arabic{section}}
+\fancyhead[L]{\small Long multiplicative runs: technical companion}
+\hypersetup{pdftitle={Sharp Poisson approximation for long multiplicative runs: Technical companion (simplified editorial preview)},pdfsubject={Technical proofs, arithmetic estimates, tails and positional comparison}}
+\title{\bfseries Sharp Poisson approximation\\and second-order correction\\for long multiplicative runs\\[9pt]\large Technical companion}
+\author{Brice Pouly\\[5pt]
+ \small With mathematical and editorial assistance from ChatGPT (GPT-6 Astra)}
+\date{\small Simplified editorial preview of working draft 1.8 --- 7 November 2026\\[3pt]Technical companion}
+\begin{document}
+\maketitle
+\thispagestyle{plain}
+\begin{abstract}
+This technical companion accompanies the article \emph{Sharp Poisson
+approximation and second-order correction for long multiplicative runs}.
+Together the two documents give the proof of the optimal quadratic
+Poisson--Charlier error power \(4/3\), the third factorial cumulant
+power \(41/30\), and the hierarchy of explicit rational-channel
+approximations for critical runs of a completely multiplicative
+random sign function.
+
+The companion contains the detailed arithmetic counts, fixed-source
+estimates, short-selection moment bounds, algebraic constructions,
+and conditional estimates used by the article. It also retains the
+regular-set reconstruction needed for unsigned positional comparison,
+and the further results on offsets, local blocks, effective tails,
+Palm identities, and deletion. Fixed-order and growing-range
+estimates have separate hypotheses throughout. The article states
+the technical interfaces and retains the main reconstruction and
+optimality arguments; the complete proof uses both documents.
+\end{abstract}
+\clearpage
+\begingroup
+\small
+\setlength{\parskip}{0pt}
+\tableofcontents
+\endgroup
+\clearpage
+\input{companion_sections/guide}
+\input{companion_sections/arithmetic_appendix}
+\input{companion_sections/supplemental_arithmetic}
+\input{companion_sections/arithmetic}
+\input{companion_sections/fixed_moments}
+\input{companion_sections/short_supports}
+\input{companion_sections/half_counts}
+\input{companion_sections/triple_activities}
+\input{companion_sections/confinement}
+\input{companion_sections/pair_rigidity}
+\input{companion_sections/third_cumulant}
+\input{companion_sections/exact_transfer}
+\input{companion_sections/stopped}
+\input{companion_sections/cores}
+\input{companion_sections/closure}
+\input{companion_sections/discussion}
+\input{companion_sections/limits_appendix}
+\input{companion_sections/offset_geometry}
+\input{companion_sections/arithmetic_consequences}
+\input{companion_sections/uniform_appendix}
+\input{companion_sections/moment_obstruction}
+\input{formalization}
+\input{assistance}
+\clearpage
+\input{bibliography}
+\end{document}

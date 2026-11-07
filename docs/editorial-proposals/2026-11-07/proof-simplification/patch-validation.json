@@ -1,0 +1,92 @@
+{
+  "status": "applied_pending_independent_diff_and_pdf_review",
+  "documentary_base_commit": "bc9517fc5a685135722fe4a4231c16f6bf67e796",
+  "proof_source_commit": "7bfc953cd6092eebfbae5f24aeb72b7180693537",
+  "base_package": "manuscripts/paper-p1/editorial-structural-preview-2026-11-07",
+  "proposals_applied_this_pass": [
+    "SIM12",
+    "SIM13_coupled_original_and_compressed"
+  ],
+  "conventions_clarified": [
+    "7.2 distinct original windows",
+    "T1.9 explicit enlarged cutoff"
+  ],
+  "conventions_already_present_without_duplicate_addition": [
+    "13.4 projective/Hilbert representation in endpoint index",
+    "T22.7 raw versus effective kernel in first clarification preview"
+  ],
+  "patch_sha256": "f698ccd69bd0917105ff31c73c55e42ae71d3bf4d604b6d4f04f933fcf399718",
+  "patch_apply_check_actual_exit": 0,
+  "patch_apply_actual_exit": 0,
+  "source_files": 48,
+  "numbered_result_identities_preserved": 167,
+  "numbered_blocks_byte_identical": 165,
+  "changed_numbered_blocks": [
+    {
+      "label": "p1:arith:alignedrank",
+      "before_sha256": "7de9608ecc780ef5a448579b04b2ebeabe5e1157579ce3025b0303a047157acc",
+      "after_sha256": "02c520a72c1a2ea92dbc7f81046f202c0476fa9880ed15b0f19fae26de02d9ed"
+    },
+    {
+      "label": "p1:core:moderate",
+      "before_sha256": "9594d0ca09a407ca09f83dbf5e3e3a35c779690b9000a1041eb967ba1042956a",
+      "after_sha256": "332b6ebdcfcf8ee2140648c83de6cd70c4463590155821bc5b3bfd468432f2c2"
+    }
+  ],
+  "tex_labels_before": 552,
+  "tex_labels_after": 548,
+  "removed_unreferenced_internal_equation_labels": [
+    "p1:fixed:group-tail",
+    "p1:fixed:component-kernel",
+    "p1:fixed:high-hosts",
+    "p1:fixed:very-high-hosts"
+  ],
+  "removed_labels_reassigned": false,
+  "references_remaining_to_removed_labels": 0,
+  "numbered_result_labels_removed": 0,
+  "net_physical_source_lines_saved": 132,
+  "proof_line_counts": {
+    "T1.14": {
+      "before": 26,
+      "after": 18
+    },
+    "T4.3": {
+      "before": 146,
+      "after": 10
+    },
+    "T4.4": {
+      "before": 46,
+      "after": 46
+    }
+  },
+  "two_block_compressed_proof_tail_preserved_verbatim_sha256": "26333e655088f47488cd41f7402c207c654530303db743e57969d8763bb1f572",
+  "files": [
+    {
+      "path": "companion_sections/arithmetic_appendix.tex",
+      "before_sha256": "abfb7b1ab318465e097108e99d1796cb375b64654f660c3615a09b09cbd46bc1",
+      "after_sha256": "bf683bb91f2464795389ebc1ba9eba825081db75516d764bb921c12ab6e2d3ae",
+      "net_physical_source_lines_saved": 4
+    },
+    {
+      "path": "companion_sections/guide.tex",
+      "before_sha256": "7cb9f0acc3d24532f75787eab9c6708e7f80ff167461057cc3dbc5a943daa55e",
+      "after_sha256": "1d648da26e2aa336004abfc7ab1db34280252321df518d67df0c558bf1b02135",
+      "net_physical_source_lines_saved": -8
+    },
+    {
+      "path": "companion_sections/fixed_moments.tex",
+      "before_sha256": "28033cc5b4dcbb227534bbfc7218e5227a92f09308fcc52af86a92d1497abd4e",
+      "after_sha256": "2ee710747ec022702017c8468abc8c390f97e3bf8354b85ae1c29cf604197e30",
+      "net_physical_source_lines_saved": 136
+    },
+    {
+      "path": "main_sections/cores.tex",
+      "before_sha256": "75984c73ac613cf017c08106dd703c374251714c8f4e29cf081095d6b2396348",
+      "after_sha256": "f00e26006c6cb5ecda5f007d26c068c12fbb3baba8919f4e708f4bb23fe11d6b",
+      "net_physical_source_lines_saved": 0
+    }
+  ],
+  "new_lean_theorems": 0,
+  "page_gain_measured": false,
+  "scope": "A separate review copy. SIM12 counts nonzero effective projections by the existing half-count theorem. SIM13 is a coupled proof replacement, preserving an autonomous compressed argument including incompatible homogeneous sources, normalized-centre injectivity and the separate two-block clause. The four removed equation labels occurred only inside the removed original proof; they are not result labels and are not reused. Two numbered blocks receive explicit inherited conventions; the other165 blocks are unchanged. Existing index and replica clarifications are not duplicated. No new exponent is claimed in a numbered statement, and all previous packages remain preserved. Palomar remains on hold."
+}

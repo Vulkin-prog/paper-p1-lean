@@ -167,5 +167,16 @@
     "frozen_sources_changed": false,
     "new_lean_theorems": 0,
     "existing_compiled_interfaces_rechecked": 5
+  },
+  "simplified_editorial_preview": {
+    "path": "docs/editorial-proposals/2026-11-07/proof-simplification/final-validation.json",
+    "sha256": "dd4b8ae602a0b67b2aa70c6cfade2f4dfaf73a9417c4f769a30d6c87b109c038",
+    "applied_proposals": 13,
+    "numbered_result_identities_preserved": 167,
+    "numbered_scope_clarifications_this_pass": 2,
+    "pages_saved_from_frozen_v18": 4,
+    "frozen_sources_changed": false,
+    "new_lean_theorems": 0,
+    "existing_compiled_declarations_rechecked": 30
   }
 }

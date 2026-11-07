@@ -1,0 +1,213 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-07",
+  "status": "thirteen_identified_simplifications_applied_in_separate_review_copy",
+  "frozen_proposal_review": {
+    "path": "docs/reviews/2026-11-07/simplification-review.json",
+    "sha256": "51be61c5e7b1e6d6e8444d5a7aefb2364897ee4976b6410ec29b316c2f11d1dc"
+  },
+  "latest_package": "manuscripts/paper-p1/editorial-simplified-preview-2026-11-07",
+  "proposal_count": 13,
+  "applied_count": 13,
+  "proposals": [
+    {
+      "id": "SIM01",
+      "title_from_frozen_review": "Renvoyer la construction ancrée de 15.5 à son exposé complet en T8",
+      "status": "applied_in_marked_review_copy",
+      "stage": "simplification",
+      "validation": {
+        "path": "docs/editorial-proposals/2026-11-07/simplification/final-validation.json",
+        "sha256": "32839c4a2f951d98169b661a69077de451f8436bf09f461b2b81d0df9464169c"
+      },
+      "condition_disposition": "See the stage's source-bound exact diff and review."
+    },
+    {
+      "id": "SIM02",
+      "title_from_frozen_review": "Déduire T9.1 du Runge uniforme T1.1",
+      "status": "applied_in_marked_review_copy",
+      "stage": "simplification",
+      "validation": {
+        "path": "docs/editorial-proposals/2026-11-07/simplification/final-validation.json",
+        "sha256": "32839c4a2f951d98169b661a69077de451f8436bf09f461b2b81d0df9464169c"
+      },
+      "condition_disposition": "See the stage's source-bound exact diff and review."
+    },
+    {
+      "id": "SIM03",
+      "title_from_frozen_review": "Spécialiser T1.3 pour T9.2 et préserver Chebyshev pour Mertens",
+      "status": "applied_in_marked_review_copy",
+      "stage": "simplification",
+      "validation": {
+        "path": "docs/editorial-proposals/2026-11-07/simplification/final-validation.json",
+        "sha256": "32839c4a2f951d98169b661a69077de451f8436bf09f461b2b81d0df9464169c"
+      },
+      "condition_disposition": "See the stage's source-bound exact diff and review."
+    },
+    {
+      "id": "SIM04",
+      "title_from_frozen_review": "Faire de T8.2 une spécialisation du paragraphe générique précédent",
+      "status": "applied_in_marked_review_copy",
+      "stage": "simplification",
+      "validation": {
+        "path": "docs/editorial-proposals/2026-11-07/simplification/final-validation.json",
+        "sha256": "32839c4a2f951d98169b661a69077de451f8436bf09f461b2b81d0df9464169c"
+      },
+      "condition_disposition": "See the stage's source-bound exact diff and review."
+    },
+    {
+      "id": "SIM05",
+      "title_from_frozen_review": "Renvoyer le second volet de 15.4 à T6.1",
+      "status": "applied_in_marked_review_copy",
+      "stage": "simplification",
+      "validation": {
+        "path": "docs/editorial-proposals/2026-11-07/simplification/final-validation.json",
+        "sha256": "32839c4a2f951d98169b661a69077de451f8436bf09f461b2b81d0df9464169c"
+      },
+      "condition_disposition": "See the stage's source-bound exact diff and review."
+    },
+    {
+      "id": "SIM06",
+      "title_from_frozen_review": "Annoncer les deux autres puissances sans recopier leurs définitions",
+      "status": "applied_in_marked_review_copy",
+      "stage": "simplification",
+      "validation": {
+        "path": "docs/editorial-proposals/2026-11-07/simplification/final-validation.json",
+        "sha256": "32839c4a2f951d98169b661a69077de451f8436bf09f461b2b81d0df9464169c"
+      },
+      "condition_disposition": "See the stage's source-bound exact diff and review."
+    },
+    {
+      "id": "SIM07",
+      "title_from_frozen_review": "Resserrer la deuxième carte des dernières sections du compagnon",
+      "status": "applied_in_marked_review_copy",
+      "stage": "simplification",
+      "validation": {
+        "path": "docs/editorial-proposals/2026-11-07/simplification/final-validation.json",
+        "sha256": "32839c4a2f951d98169b661a69077de451f8436bf09f461b2b81d0df9464169c"
+      },
+      "condition_disposition": "See the stage's source-bound exact diff and review."
+    },
+    {
+      "id": "SIM08",
+      "title_from_frozen_review": "Calculer la norme à μ=1 une seule fois",
+      "status": "applied_in_marked_review_copy",
+      "stage": "simplification",
+      "validation": {
+        "path": "docs/editorial-proposals/2026-11-07/simplification/final-validation.json",
+        "sha256": "32839c4a2f951d98169b661a69077de451f8436bf09f461b2b81d0df9464169c"
+      },
+      "condition_disposition": "See the stage's source-bound exact diff and review."
+    },
+    {
+      "id": "SIM09",
+      "title_from_frozen_review": "Mutualiser T17.4 avec la conversion 15.1, en explicitant les coefficients arbitraires",
+      "status": "applied_in_marked_review_copy",
+      "stage": "structural-simplification",
+      "validation": {
+        "path": "docs/editorial-proposals/2026-11-07/structural-simplification/final-validation.json",
+        "sha256": "051d53700d6f9655a7b657cde271fe50bdeafa80e08ff808fdbbbb563644b783"
+      },
+      "condition_disposition": "See the stage's source-bound exact diff and review."
+    },
+    {
+      "id": "SIM10",
+      "title_from_frozen_review": "Déplacer les contre-exemples près des corrections et alléger le bilan partagé",
+      "status": "applied_in_marked_review_copy",
+      "stage": "structural-simplification",
+      "validation": {
+        "path": "docs/editorial-proposals/2026-11-07/structural-simplification/final-validation.json",
+        "sha256": "051d53700d6f9655a7b657cde271fe50bdeafa80e08ff808fdbbbb563644b783"
+      },
+      "condition_disposition": "See the stage's source-bound exact diff and review."
+    },
+    {
+      "id": "SIM11",
+      "title_from_frozen_review": "Déplacer la table des marges à la fermeture de la preuve",
+      "status": "applied_in_marked_review_copy",
+      "stage": "structural-simplification",
+      "validation": {
+        "path": "docs/editorial-proposals/2026-11-07/structural-simplification/final-validation.json",
+        "sha256": "051d53700d6f9655a7b657cde271fe50bdeafa80e08ff808fdbbbb563644b783"
+      },
+      "condition_disposition": "See the stage's source-bound exact diff and review."
+    },
+    {
+      "id": "SIM12",
+      "title_from_frozen_review": "Option T1.14 : remplacer le partage de noyaux par le demi-compte plus fort",
+      "status": "applied_in_marked_review_copy",
+      "stage": "proof-simplification",
+      "validation": {
+        "path": "docs/editorial-proposals/2026-11-07/proof-simplification/final-validation.json",
+        "sha256": "dd4b8ae602a0b67b2aa70c6cfade2f4dfaf73a9417c4f769a30d6c87b109c038"
+      },
+      "condition_disposition": "Nonzero effective projections made explicit; existing stronger half count used as a proof step."
+    },
+    {
+      "id": "SIM13",
+      "title_from_frozen_review": "Option T4.3 : le résultat fixe plus fort ne suffit pas à supprimer la preuve commune au cas comprimé",
+      "status": "applied_in_marked_review_copy",
+      "stage": "proof-simplification",
+      "validation": {
+        "path": "docs/editorial-proposals/2026-11-07/proof-simplification/final-validation.json",
+        "sha256": "dd4b8ae602a0b67b2aa70c6cfade2f4dfaf73a9417c4f769a30d6c87b109c038"
+      },
+      "condition_disposition": "Coupled T4.3 shortcut and autonomous T4.4 replacement; four unused internal equation labels removed without reassignment."
+    }
+  ],
+  "prior_five_clarifications": {
+    "patch": "docs/editorial-proposals/2026-11-07/clarifications-and-finite-examples.patch",
+    "preserved_frozen_v18_changed": false,
+    "included_in_all_three_simplification_previews": true
+  },
+  "additional_convention_dispositions": [
+    {
+      "result": "7.2",
+      "status": "explicit_in_latest_preview",
+      "detail": "Ordered lists of distinct original windows."
+    },
+    {
+      "result": "13.4",
+      "status": "already_explicit_in_existing_endpoint_index",
+      "detail": "Homogeneous prime projective ideal and linear Hilbert polynomial; no extra TeX added."
+    },
+    {
+      "result": "T1.9",
+      "status": "explicit_in_latest_preview",
+      "detail": "Fixed height and 6bB<=H<=DB; only the final branch is clarified."
+    },
+    {
+      "result": "T22.7",
+      "status": "already_explicit_in_prior_clarified_preview",
+      "detail": "Formal row kernel versus effective relative kernel; propagation and moment clauses retained."
+    }
+  ],
+  "comparison": {
+    "frozen_v18_pages": {
+      "main": 65,
+      "companion": 104
+    },
+    "latest_pages": {
+      "main": 64,
+      "companion": 101
+    },
+    "pages_saved": 4,
+    "physical_source_lines_saved_after_prior_clarifications": 277,
+    "numbered_result_identities_preserved": 167,
+    "latest_label_occurrences": 548,
+    "removed_labels_are_four_unreferenced_internal_equations": true
+  },
+  "historical_math_ledger": {
+    "entries": 1004,
+    "changed_by_editorial_reuse": false,
+    "guide": "docs/editorial-proposals/2026-11-07/HISTORICAL_CHANGE_GUIDE.md"
+  },
+  "proof_source_commit": "7bfc953cd6092eebfbae5f24aeb72b7180693537",
+  "palomar_status": "on_hold_at_user_request",
+  "registry_scopes": {
+    "dossiers": 6,
+    "original_families": 17,
+    "selections": 68,
+    "changed": false
+  },
+  "scope": "Integration status for the thirteen proposals identified in this review; not an assertion that no further editorial improvement is possible. All earlier source/PDF snapshots and frozen reports are preserved. The latest copy remains for author review, not an adopted new version."
+}

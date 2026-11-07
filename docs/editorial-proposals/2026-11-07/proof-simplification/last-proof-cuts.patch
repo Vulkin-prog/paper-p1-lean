@@ -1,0 +1,330 @@
+--- a/companion_sections/arithmetic_appendix.tex
++++ b/companion_sections/arithmetic_appendix.tex
+@@ -773,8 +773,9 @@
+ \[
+  \rho(x,y)\leq(u-1)_++o(B)\leq L/b+o(B),
+ \]
+-uniformly over the channels.  For fixed channel height and a fixed enlarged
+-prime threshold proportional to $B$, the residual is $O(B/\log B)$.
++uniformly over the channels. For fixed channel height $b$ and fixed
++$D\ge6b$, an enlarged prime cutoff $6bB\le H\le DB$ leaves
++residual $O_{C,b,D}(B/\log B)$.
+ \end{lemma}
+ 
+ \begin{proof}
+@@ -1076,6 +1077,9 @@
+ and all changes of offset count are powers of $B$.
+ \end{proof}
+ 
++Here a projection is an element of the effective even-selection image
++in the square-class space, rather than a formal coordinate vector.
++
+ \begin{proposition}[A relative relation meeting several blocks]
+ \label{p1:arith:fixed-support}
+ Fix integers $r\geq s\geq2$.  For $r$ separated logarithmic windows,
+@@ -1090,30 +1094,22 @@
+ \end{proposition}
+ 
+ \begin{proof}
+-Put $T=N^{\beta_s}$ with $\beta_s=(2s-1)/(2s+1)>7/12$.
+-If every selected kernel is at most $T$, each of the $s$ nonzero even
+-projections selects at least two distinct values.  By
+-Lemma~\ref{p1:arith:small-kernels}, the number of hosts is
+-\[
+- N^{r-s}N^{s\beta_s+\varepsilon'}
+-   =N^{r-2s/(2s+1)+\varepsilon'}.
+-\]
+-Otherwise anchor a selected value of kernel $K>T$.
+-Assign every prime of $K$ to one of the other $(r-1)O(B)$ offsets where
+-it must reappear.  For a fixed assignment let $K_j$ be the product
+-assigned to block $j$.  These products are pairwise coprime, at most
+-$K\ll N$, and their CRT cost is
+-$O_r(N^{r-1}/\prod_jK_j)=O_r(N^{r-1}/K)$.
+-The Rankin calculation from Lemma~\ref{p1:arith:anchor}, with
+-$(r-1)O(B)$ in place of $B$, gives
+-\[
+- N^{r-1/2+o(1)}T^{-1/2+\tau}
+- =N^{r-2s/(2s+1)+\beta_s\tau+o(1)}.
+-\]
+-Choose $\tau$ and all internal margins after $\varepsilon$.
+-The argument uses actual distinct values in each selected set; enlarging
+-its containing interval only increases the count.  Injectivity ensures
+-that a nonzero compressed projection still gives a nonempty even selection.
++Choose $s$ blocks on which a witnessing relation has nonzero effective
++projection, and fix the other $r-s$ centres. Their values generate the
++old space in Theorem~\ref{p13:half:conditional}. The selected $s$
++nonzero projections sum into that old space; they need not remain
++nonzero modulo it. The theorem therefore gives
++$O(N^{s/2+\varepsilon'})$ choices for the selected centres.
++Summing the $O_r(1)$ choices of blocks and $O(N^{r-s})$ other centres
++gives the stronger bound $O(N^{r-s/2+\varepsilon'})$.
++For $s\ge2$, $s/2\ge2s/(2s+1)$, so this implies the displayed bound.
++
++The same theorem permits the effective images of all fixed-width blocks
++in its stated height range. Fixed dilations preserve that range, and
++the $B^{O_r(1)}$ offset and motif choices are absorbed by reducing
++$\varepsilon'$. The injectivity in the statement identifies the
++nonzero projections with nonempty even selections; no count for
++formal vectors with zero effective image is used.
+ \end{proof}
+ 
+ \begin{proposition}[A fixed number of exposed source windows]
+--- a/companion_sections/fixed_moments.tex
++++ b/companion_sections/fixed_moments.tex
+@@ -196,150 +196,14 @@
+ \end{proposition}
+ 
+ \begin{proof}
+-We give the rank stratification, including the order of
+-the parameter choices. Fix a small \(\eta>0\), and first
+-consider \(\rho\ge\eta L\). With \(H=D_0B\), regularize
+-the relation space using Lemma~\ref{p1:fixed:recovery},
+-\(d=r-1\), and codimension at most \(\eta L/4\).
+-For each prime \(q>H\), pair equal active labels in its
+-row. The remaining distinct labels sum to zero; partition
+-them into minimal circuits. Each circuit has between
+-three and \(r\) coordinates in distinct blocks.
+-
+-The graph of the binary pairs has components of size
+-at most \(K=t-1\). A component contained in a single
+-block is a singleton, because its edges always join
+-distinct blocks. For each physical circuit support \(u\),
+-let \(G_u\) be the product of primes assigned to it.
+-The number of such supports through a coordinate is at
+-most
+-\[
+- D=\sum_{j=2}^{r-1}j!t^{j-1}K^j .
+-\]
+-A prime can belong to several groups, but its selected
+-circuit supports are disjoint.
+-
+-Put \(M=\binom r3\), and let \(G_{(1)},\ldots\) be the
+-groups in decreasing order. If the product of the
+-\(k\) largest groups exceeds \(N^M\), assign each support
+-to one triple of its blocks. One triple receives groups
+-of product greater than \(N\). Those groups are coprime:
+-two disjoint supports for the same prime cannot both
+-meet the same three blocks. Fuse groups with the same
+-triple of offsets. The ternary budget
+-of Proposition~\ref{p1:arith:ternary-budget} counts the three
+-centres by \(N^{6/5+\varepsilon}\).
+-For completeness, the cases with only one or two fused groups have an
+-even smaller count.  Write $Q>N$ for their product.  With one group,
+-$Q\ll N$ because it divides one value in each of the three blocks.
+-With two groups, $Q\ll NB$ by the product bound at the start of the
+-proof of Proposition~\ref{p1:arith:ternary-budget}; a vanishing determinant
+-would give the pair relation excluded by primitivity.  For fixed offsets
+-and a fixed factorization of $Q$, the coprime groups impose one residue
+-class modulo $Q$ on each center.  Since $Q>N$, CRT leaves $O(1)$
+-choices for each center in its interval.  Summing over
+-$N<Q\ll NB$, their factorizations into at most two factors, and the
+-$B^{O(1)}$ offsets gives $N^{1+o(1)}$ hosts, below the required
+-$N^{6/5+\varepsilon}$.  Fixed dilations and compressed blocks only
+-change the fixed constants in these bounds; their direct-sum condition
+-excludes the same zero determinant.
+-The remaining centres are free. Thus this sector has
+-\begin{equation}
+- O_{r,k,C,\varepsilon}(N^{r-9/5+\varepsilon})
+- \quad\hbox{hosts}.
+- \label{p1:fixed:group-tail}
+-\end{equation}
+-
+-In the complementary sector, omit from selection all
+-binary components meeting those \(k\) groups. At most
+-\(rk\) components are omitted, and the subspace is not
+-restricted again. Every remaining group is at most
+-\(N^{M/k}\). For each selectable binary component \(A\),
+-\begin{equation}
+- K_H\!\left(\prod_{v\in A}n_v\right)\le N^\theta,
+-       \qquad \theta=\frac{MKD}{k}.
+- \label{p1:fixed:component-kernel}
+-\end{equation}
+-Every prime occurring oddly in this product must belong
+-to a circuit group incident to \(A\); binary edges have
+-both endpoints in the component. There are at most \(KD\)
+-incident groups. The squarefree coefficient of the
+-product consequently has \(N^{\theta+o(1)}\) possibilities
+-for fixed positions.
+-
+-Every block meets at least \(\dim R'\) binary components,
+-because its projection of \(R'\) is injective. Their
+-types \((a_1,\ldots,a_r)\), with \(\sum a_i\le K\), form
+-a fixed finite list. If one transverse type occurs
+-sufficiently many times, choose a fixed number of its
+-components. Fix all but two of their centres and apply
+-the two-parameter square-equation estimate
+-of Lemma~\ref{p1:arith:geometric}. Primitivity excludes
+-the pair relations needed to remove the small curves.
+-This gives \(N^{r-3/2+\varepsilon}\) hosts.
+-The number of equations is chosen for the increased
+-coefficient height after the other centres are fixed.
+-Then \(k\) is chosen large enough to absorb all costs
+-from \(\theta\) and the offsets.
+-
+-If no transverse type occurs sufficiently often, only
+-boundedly many transverse components remain. Select
+-one singleton in each block. The one-value small-kernel
+-bound of Lemma~\ref{p1:arith:small-kernels} gives
+-\[
+- N^{r/2+r\theta/2+o(1)}
+-       \ll N^{r-3/2+\varepsilon},\qquad r\ge3.
+-\]
+-Together with \eqref{p1:fixed:group-tail}, this proves
+-\begin{equation}
+- \#\{\hbox{primitive hosts}:\rho\ge\eta L\}
+-       \ll N^{r-3/2+\varepsilon}.
+- \label{p1:fixed:high-hosts}
+-\end{equation}
+-
+-If \(\rho>(1/2+\delta)L\), regularize instead with
+-loss at most \(\delta L/4\).
+-A sufficiently repeated transverse type with a
+-singleton in one of its blocks is counted by the
+-stronger, degree-one case of
+-Lemma~\ref{p1:arith:geometric}, giving
+-\(N^{r-2+\varepsilon}\) hosts.
+-Otherwise, let \(d_i\) be the number of selectable
+-singleton components in block \(i\). All other
+-components use at least two of its \(B\) coordinates,
+-apart from boundedly many exceptions. Hence
+-\[
+- \dim R'-rk\le d_i+\frac{B-d_i}{2}+O(1),
+- \qquad d_i\ge\frac{3\delta L}{2}-O(1).
+-\]
+-Choose two singleton components in each block.
+-The uniform two-value Pell estimate gives
+-\(N^{2r\theta+o(1)}\ll N^{r-2+\varepsilon}\)
+-hosts. Restoring the group tail proves
+-\begin{equation}
+- \#\{\hbox{primitive hosts}:
+-                   \rho>(1/2+\delta)L\}
+-       \ll N^{r-9/5+\varepsilon}.
+- \label{p1:fixed:very-high-hosts}
+-\end{equation}
+-
+-It remains to multiply these counts by their joint
+-weights. For \(0<\rho<\eta L\), the support estimate
+-of Proposition~\ref{p1:arith:fixed-support} gives mass
+-\[
+- N^{r-2r/(2r+1)+\varepsilon}
+-             N^{-r+\eta}
+-       =N^{-2r/(2r+1)+\eta+\varepsilon}.
+-\]
+-For \(\eta L\le\rho\le(1/2+\delta)L\),
+-\eqref{p1:fixed:high-hosts} gives
+-\(N^{-1+\delta+\varepsilon}\).
+-For the remaining sector, \(\rho\le L\) and
+-\eqref{p1:fixed:very-high-hosts} give
+-\(N^{-4/5+\varepsilon}\).
+-Choose \(\eta<2/35\), \(\delta<1/5\), and reduce all
+-intermediate error margins. This proves
++On the regular set used in this section, $p_x=p$, so
++Proposition~\ref{p13:transfer:primitive} bounds the unordered homogeneous
++mass by $O_{r,C,\varepsilon}(N^{-r/2+\varepsilon})$.
++Passing to ordered tuples costs at most $r!$, and separation only
++restricts the sum. Since $r\ge3$, this implies
+ \eqref{p1:fixed:primitive-bound}.
++This uses the fixed-arity geometric proof of that proposition,
++before either reconstruction of the law or the moment theorem.
+ \end{proof}
+ 
+ The proof is homogeneous throughout. It therefore bounds
+@@ -366,38 +230,38 @@
+ \end{proposition}
+ 
+ \begin{proof}
+-For a fixed compression motif, the compressed block is
+-the even-selection space on a genuine set of at most
+-\(2B\) values in an interval of width \(O(B)\).
+-Its rank \(r_e\) satisfies
+-\(r_e\ge\kappa_bL-O(1)\). There are \(B^{O(1)}\) motifs.
+-Primitivity after compression makes projection to
+-every remaining original block injective, so its
+-additional nullity is still at most \(L\).
+-Its homogeneous weight is
+-\[
+- 2^{-r_e-(r-1)L+\rho}
+-       \ll_C N^{-\kappa_b-r+1+\rho/L}.
+-\]
+-
+-The group argument and the high-nullity count in the
+-preceding proof use only fixed numbers of true values,
+-width \(O(B)\), and pairwise direct relative spaces.
+-They therefore apply to the compressed blocks.
+-In the very-high-nullity case, the singleton budget
+-is used only on the \(r-1\) original blocks; the
+-compressed centre is left free. The Pell count becomes
+-\[
+- N^{1+2(r-1)\theta+o(1)}
+-       \ll N^{r-2+\varepsilon},\qquad r\ge3.
+-\]
+-The three nullity sectors have masses
+-\[
+- N^{-\kappa_b+1/(2r+1)+\eta+\varepsilon},\quad
+- N^{-\kappa_b+\delta+\varepsilon},\quad
+- N^{-\kappa_b+1/5+\varepsilon}.
+-\]
+-Choose \(\eta,\delta\) small and sum the motifs.
++Put $t=r-1\ge2$ and fix a compression motif. The compressed block
++is the even-selection image of a genuine set of $O(B)$ values of
++width $O(B)$; write $r_e$ for its rank.
++Use its normalized centre $bx$; it lies above the original target
++range and determines the source pair once the motif is fixed.
++There are $B^{O(1)}$ motifs and $NB^{O(1)}$ source pairs.
++For its homogeneous mass, Lemma~\ref{p1:arith:alignedrank} gives
++$q_0(e)=2^{-r_e}\ll N^{-\kappa_b+\varepsilon'}$, including
++affine-incompatible sources. Primitivity gives $\rho\le L$ and
++the exact homogeneous weight $q_0(e)p^t2^\rho$.
++
++Every primitive family has a nonzero effective projection in each
++of its $t+1$ blocks. Theorem~\ref{p13:half:conditional}, with no old
++sources, counts at most $N^{(t+1)/2+\varepsilon'}$ hosts,
++including the compressed centre. For $t\ge3$, their total mass is
++\[
++ N^{(t+1)/2+\varepsilon'}N^{-\kappa_b-t+1+\varepsilon'}
++   =N^{-\kappa_b+(3-t)/2+2\varepsilon'}
++   \le N^{-\kappa_b+2\varepsilon'}.
++\]
++For $t=2$, the same count on $\rho\le L/4$ gives
++$N^{-\kappa_b-1/4+2\varepsilon'}$.
++On $\rho\ge L/4$, fix the compressed source image $W$.
++Every proper subfamily is direct, so each target is disjoint from
++$W$ and the two targets are direct. Lemma~\ref{p13:transfer:dense-targets}
++therefore gives conditional homogeneous target mass
++$O(N^{-1+\varepsilon'})$; the original targets are regular, so their
++homogeneous marginals are exactly $p$.
++The source sum is $\sum_e q_0(e)\ll N^{1-\kappa_b+2\varepsilon'}$,
++giving total $O(N^{-\kappa_b+3\varepsilon'})$.
++Reduce the margins and absorb the motif choices. This proves a
++stronger bound than \eqref{p1:fixed:compressed-bound}.
+ 
+ The two-block case is the positive extension estimate
+ in Proposition~\ref{p1:arith:fixed-homogeneous-seeds}.
+--- a/companion_sections/guide.tex
++++ b/companion_sections/guide.tex
+@@ -62,6 +62,14 @@
+ The article states the required hypotheses at each interface
+ and retains the reconstruction, its separately uniform tail,
+ and the quartic lower-bound argument.
++
++The short proofs of Proposition~\ref{p1:arith:fixed-support} and
++Proposition~\ref{p1:fixed:compressed} return to
++Theorem~\ref{p13:half:conditional}. The latter also uses
++Lemma~\ref{p13:transfer:dense-targets}, whereas
++Proposition~\ref{p1:fixed:primitive} uses
++Proposition~\ref{p13:transfer:primitive}. These geometric inputs
++are proved independently of the moment theorem and either law reconstruction.
+ 
+ \paragraph{Entering a proof and returning to the article.}
+ The following local routes lead to the complete proof subsection,
+--- a/main_sections/cores.tex
++++ b/main_sections/cores.tex
+@@ -64,7 +64,7 @@
+ 
+ \begin{lemma}[Counting moderate certificates]
+ \label{p1:core:moderate}
+-Let $\mathcal U_r$ be the ordered lists of $r$ original windows having
++Let $\mathcal U_r$ be the ordered lists of $r$ distinct original windows having
+ such a certificate, and set
+ $m=\lceil 2\log(3N)/\log Y\rceil$. Then
+ \begin{equation}

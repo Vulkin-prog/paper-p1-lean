@@ -1,0 +1,44 @@
+{
+  "status": "passed",
+  "pages_rendered_and_contact_sheet_reviewed": 165,
+  "contact_sheets_actually_inspected": 11,
+  "full_detail_pages_actually_inspected": 26,
+  "detail_pages": {
+    "main": [
+      1,
+      2,
+      22,
+      23,
+      24,
+      61,
+      62,
+      63,
+      64
+    ],
+    "companion": [
+      1,
+      2,
+      3,
+      4,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      28,
+      29,
+      30,
+      98,
+      99,
+      100,
+      101
+    ]
+  },
+  "observed_clipping_overlap_or_missing_glyph_defects": 0,
+  "pdf_sha256": {
+    "main": "b0213f4ff6e8c21c46a6cb0dfd53349f5f6701b7f7e9fe2009e98938efb4c32b",
+    "companion": "47d9b137e6df5e9e46f56f0414dd35803408e3d739bf5be284dd6cfb6f8ac4db"
+  },
+  "scope": "The parent actually inspected all eleven contact sheets and all 26 whole detail pages of these final rendered PDFs. This is visual quality review, separate from the independent mathematical diff comparison. No human certification or Palomar registration."
+}

@@ -1,5 +1,10 @@
 # Proposition de compléments éditoriaux
 
+Les cinq propositions ci-dessous sont désormais intégrées aux aperçus séparés.
+Le [dernier dossier de relecture](proof-simplification/README.md) y ajoute les
+treize simplifications vérifiées. Ce document conserve l’historique du premier
+patch ; son reçu initial et ses rapports ne sont pas réécrits.
+
 Le [diff TeX](clarifications-and-finite-examples.patch) rend concrètes cinq
 propositions issues de l'examen des interfaces et des exemples vérifiés :
 
@@ -16,10 +21,10 @@ contexte. Les autres ajouts sont dans l'exposition ou les preuves.
 La [validation](validation.json) lie chaque proposition aux théorèmes
 audités, aux empreintes des fichiers d'origine et aux fichiers proposés.
 
-Les sources et PDF actuels n'ont pas été modifiés. Aucun PDF de cette
-proposition n'a été construit ni inspecté ; une intégration ultérieure
-dans une nouvelle version devra effectuer cette vérification et mettre
-à jour les correspondances de sources. Ce document complète la
+Au contrôle initial, les sources et PDF v1.8 n’avaient pas été modifiés et
+aucun PDF de cette proposition n’avait été construit. Les aperçus ultérieurs
+ont depuis été compilés, reliés à leurs preuves et inspectés ; les versions
+archivées demeurent préservées. Ce document complète la
 [note de reprise](../../EDITORIAL_HANDOFF_AFTER_ENDPOINT_REVIEW.md).
 
 Pour examiner le patch, utiliser une copie complète des sources v1.8.

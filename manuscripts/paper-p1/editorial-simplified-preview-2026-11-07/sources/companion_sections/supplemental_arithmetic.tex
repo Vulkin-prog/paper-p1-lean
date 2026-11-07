@@ -1,0 +1,391 @@
+\section{Coefficient budgets, coordinate restrictions, and fixed channels}
+\label{p1:arith:supplement}
+
+The first two tools below do not depend on the critical-window scaling.
+They control, respectively, the small-prime coefficients of selected
+values and the repetition of coordinate forms in a binary relation space.
+We then give the extension estimates for any fixed rational channel.
+In that part, the channel and every finite family of channels are fixed
+before \(N\) tends to infinity.
+
+\subsection{A deterministic budget for the small-prime part}
+
+For a positive integer \(n\), write
+\[
+ u_B(n)=\frac{\sf(n)}{K_B(n)}
+       =\prod_{\substack{\ell\leq B\ {\rm prime}\\v_\ell(n)\ {\rm odd}}}\ell.
+\]
+
+\begin{lemma}[A small-prime coefficient budget]
+\label{p1:arith:smallpart-budget}
+Let \(V\) be any interval of \(B\geq2\) consecutive positive integers.
+Then
+\[
+ \sum_{n\in V}\log u_B(n)\leq B\log B+O(B),
+\]
+with an absolute constant independent of the position of \(V\).
+For every fixed \(A>0\), at most
+\[
+ \bigl(A^{-1}+O_A(1/\log B)\bigr)B
+\]
+of its values satisfy \(u_B(n)>B^A\).
+\end{lemma}
+
+\begin{proof}
+Dropping the parity condition gives
+\[
+ \sum_{n\in V}\log u_B(n)
+ \leq\sum_{\ell\leq B}
+       \left(\left\lfloor\frac B\ell\right\rfloor+1\right)\log\ell
+ \leq\log(B!)+\sum_{\ell\leq B}\log\ell.
+\]
+Here the sums are over primes.  Legendre's formula gives the second
+inequality, and the elementary Chebyshev bound makes the last sum
+\(O(B)\).  Finally \(\log(B!)\leq B\log B\).
+Each value counted in the last assertion contributes more than
+\(A\log B\) to the nonnegative sum.
+\end{proof}
+
+\subsection{Regularising coordinate forms by independent restrictions}
+
+\begin{lemma}[Coordinate regularisation]
+\label{p1:arith:coordinate-regularisation}
+Let \(R\subset\F_2^V\) have dimension \(r\), put \(n=|V|\), and let
+\(\ell_v\in R^*\) be the coordinate forms.  Suppose that \(s\) distinct
+nonzero forms occur among them.  For integers \(K,d\geq1\), there is
+\(D\subset V\) such that
+\[
+ R'=\{x\in R:x_v=0\text{ for every }v\in D\},\qquad
+ \operatorname{codim}_R R'=|D|
+ \leq\frac{n}{K+1}+\frac{s-r}{d+1},
+\]
+and the restricted coordinate forms have the following properties:
+\begin{enumerate}
+ \item every nonzero form has multiplicity at most \(K\);
+ \item every nonzero form \(\ell\) has at most \(d\) unordered
+ decompositions \(\ell=a+b\), where \(a,b\) are distinct nonzero
+ coordinate forms present on \(R'\).
+\end{enumerate}
+Coordinates whose restricted forms vanish may then be removed without
+any additional loss of dimension.
+\end{lemma}
+
+\begin{proof}
+The coordinate forms span \(R^*\), and their restrictions continue to
+span the dual of every subspace encountered below.
+At an intermediate stage let \(S\) be the set of distinct nonzero forms
+and let \(r_0\) be their rank.  Setting a present nonzero form \(\ell\)
+equal to zero reduces the dimension by one and replaces the forms by
+their images modulo \(\langle\ell\rangle\).
+The form \(\ell\) disappears.  All other collisions are exactly the
+disjoint unordered pairs \(\{a,a+\ell\}\subset S\).
+If there are \(t(\ell)\) such pairs, then
+\[
+ |S_{\rm new}|=|S|-1-t(\ell),\qquad
+ (|S|-r_0)_{\rm new}=|S|-r_0-t(\ell).
+\]
+Thus the nonnegative potential \(|S|-r_0\) never increases.
+
+If a form has multiplicity greater than \(K\), set it equal to zero.
+This permanently kills at least \(K+1\) previously nonzero coordinates.
+There are at most \(n/(K+1)\) such steps, since these sets of killed
+coordinates are disjoint.
+When the multiplicity condition holds but a form has more than \(d\)
+decompositions, set that form equal to zero instead.
+Such a step decreases the potential by at least \(d+1\), so there are
+at most \((s-r)/(d+1)\) of these steps.
+Each step decreases the dimension, and the procedure therefore ends
+with both required properties.
+
+At every step select one coordinate carrying the form just killed.
+Its restriction was nonzero before that step, so its original coordinate
+form is independent of the previously selected forms.
+The selected coordinates constitute \(D\), and consequently
+\(\operatorname{codim}_R R'=|D|\).
+\end{proof}
+
+\begin{corollary}[Constraints meeting three blocks]
+\label{p1:arith:ternary-degree}
+Suppose \(V\) is partitioned into three blocks and each row of a family
+of binary constraints annihilating \(R\) has at most one occurrence in
+each block.  Apply Lemma~\ref{p1:arith:coordinate-regularisation} and
+delete the coordinates whose forms on \(R'\) are zero.
+Every remaining row has weight zero, two, or three.
+A row of weight two joins equal nonzero forms.
+A row of weight three has three distinct nonzero forms \(a,b,c\) with
+\(a+b+c=0\).
+
+The connected components formed by the rows of weight two have at most
+\(K\) vertices.  After repeated rows with the same support are identified,
+the number of ternary rows incident to any vertex is at most \(2dK^2\).
+\end{corollary}
+
+\begin{proof}
+The sum of the forms on a row is zero, since that row annihilates \(R'\).
+A row of weight one is therefore impossible.  At weight two its forms
+are equal.  At weight three a repeated form would force the third form
+to be zero, which has already been excluded.
+Binary components stay inside a class of equal forms, of size at most
+\(K\).  At a vertex of form \(\ell\), a ternary row chooses one of at
+most \(d\) decompositions \(\ell=a+b\), then the other two coordinates
+from classes of size at most \(K\).  Allowing their two assignments to
+the remaining blocks gives the asserted \(2dK^2\) bound.
+\end{proof}
+
+\begin{remark}[Order of restrictions]
+If some coordinates must first be killed for an arithmetic reason, do
+this before applying the regularisation lemma.  A further restriction
+after regularisation can identify previously distinct forms and destroy
+both bounds.  The lemma is an existence statement about a subspace;
+its proof does not enumerate possible relation spaces or histories of
+restrictions.
+\end{remark}
+
+\subsection{A finite rank bound for every fixed channel}
+
+Fix coprime integers \(a,b\) with
+\[
+ b\geq3,\qquad b/2<a<b.
+\]
+Let \(\mathcal G_{a:b}\) be the symmetric family of ordered separated
+pairs in this channel with at least two exact units and with a private
+prime coordinate on every distinct normalized value in
+\(bV_x\cup aV_y\), above a fixed threshold \(H_{a,b}=C_{a,b}B\).
+Choose the constant large enough for the fixed normalized widths.
+For \(\alpha=(x,y)\) put
+\[
+ q_\alpha=\P(J_x=J_y=1),\qquad
+ M_{a:b}=\sum_{\alpha\in\mathcal G_{a:b}}q_\alpha.
+\]
+Pairs of probability zero remain in the family and are omitted from
+conditional expressions.  The private-prime condition makes the
+relative kernel exactly the canonical even-selection kernel.
+
+\begin{lemma}[Mass of a fixed channel]
+\label{p1:arith:fixed-channel-mass}
+With \(S_{a,b}(L)\) as defined before
+\eqref{p1:arith:channelidentity}, and
+\(w_{a,b}=2(2a-b)/(ab)\), one has
+\[
+ M_{a:b}=p^2Nw_{a,b}S_{a,b}(L)
+          +O_{a,b,C,\varepsilon}(N^{-1+\varepsilon}).
+\]
+In particular \(M_{a:b}\asymp_{a,b,C}L N^{-1+1/b}\).
+\end{lemma}
+
+\begin{proof}
+In either orientation the canonical parameter satisfies
+\(N/a\leq t<2N/b\), up to fixed multiples of \(B\) at the endpoints.
+The two orientations therefore supply \(Nw_{a,b}\) translations per
+choice of the within-window placements.
+The diameter and sign calculation giving
+\eqref{p1:arith:channelidentity} applies for this fixed \(a,b\).
+
+Removing the normalized defective pairs costs
+\(N^{-3/2+1/b+o(1)}\): there are \(N^{1/2+o(1)}\) such hosts,
+their nullity is at most \(L/b+o(L)\), and their weights include \(p^2\).
+Endpoint errors are smaller.
+On the retained dependent pairs the signed kernel contribution is
+\(q_\alpha-p^2\).  Adding back \(p^2\) costs \(O_{a,b}(p^2NB)\),
+because each start has \(O_{a,b}(B)\) possible partners.
+This proves the displayed formula.
+Its leading term is positive and of order \(L N^{-1+1/b}\), by the
+finite identity, uniformly in the critical band.
+\end{proof}
+
+Define the finite, explicitly computable number
+\begin{equation}\label{p1:arith:gamma-fixed-channel}
+ \gamma_{a:b}=
+ \max\left(
+ \left\{\frac1b\right\}\cup
+ \left\{\frac{(c,a)+(c,b)-1}{c}:
+ \begin{array}{l}
+ 1\leq c\leq b(a+b-1),\ d\geq1,\ (c,d)=1,\\
+ b/2<c/d<2a,\quad c\nmid a,\quad c\nmid b
+ \end{array}\right\}\right).
+\end{equation}
+All variables in the second set are integers.
+
+\begin{lemma}[Additional rank in a fixed channel]
+\label{p1:arith:fixed-channel-rank}
+One has \(\gamma_{a:b}\leq2/3\).
+Apart from \(B^{O_{a,b}(1)}\) source pairs at the dyadic endpoints,
+every aligned target \(z\ne x,y\) compatible with a source
+\((x,y)\in\mathcal G_{a:b}\) satisfies
+\[
+ \delta_{x,y}(z):=
+ L-\dim\frac{S_x+S_y+S_z}{S_x+S_y}
+ \leq\gamma_{a:b}L+o_{a,b,C}(L).
+\]
+This definition includes any internal rank deficiency of the new window.
+The bound remains true when the prime signs of \(a,b\) are included in
+the old information.
+\end{lemma}
+
+\begin{proof}
+Write \(x=at-i_0\), \(y=bt-j_0\), choosing the lower orientation.
+As in Lemma~\ref{p1:arith:palmrank}, the normalized old values lie in
+a fixed-width interval about \(abt\).  An aligned target has the form
+\(z=(ct+h)/d\), with \((c,d)=1\), numerator, denominator and offsets
+of polynomial size in \(B\).
+The dyadic positions require
+\(b/2\leq c/d\leq2a\), up to \(B^{O(1)}/N\).
+Separation of rational fractions excludes strict violations of this
+interval once \(N\) is large.
+Either equality forces \(at=N+B^{O(1)}\) or \(bt=2N+B^{O(1)}\);
+these give the stated exceptional sources.
+
+For the interior fractions, a new offset \(k\) matched to a true old
+value satisfies one of
+\[
+ h+dk\equiv0\pmod{c/(c,a)},\qquad
+ h+dk\equiv0\pmod{c/(c,b)}.
+\]
+Their intersection has modulus \(c\).
+The union contains at most
+\[
+ B\,\frac{(c,a)+(c,b)-1}{c}+O(1)
+\]
+new positions.  The same residual argument as in
+Lemma~\ref{p1:arith:palmrank} leaves only \(o(L)\) further dimensions.
+Matching to a value in an enclosing interval but absent from the true
+old set contributes no new freedom.
+
+Suppose \(c\nmid a\) and \(c\nmid b\), and put \(g=(c,a)\), \(h_1=(c,b)\).
+These numbers are coprime and \(gh_1\mid c\).
+If one equals one, the other is a proper divisor of \(c\), giving
+density at most \(1/2\).
+Otherwise \(g,h_1\geq2\) and
+\[
+ \frac{g+h_1-1}{c}
+ \leq\frac1g+\frac1{h_1}-\frac1{gh_1}\leq\frac23.
+\]
+The last maximum occurs at the smallest coprime pair \(\{2,3\}\).
+When \(c>b(a+b-1)\), the density is less than \(1/b\).
+All other nonphysical fractions are included in
+\eqref{p1:arith:gamma-fixed-channel}.
+
+If \(c\mid a\), a proper divisor has \(c\leq a/2<b/2\), which is
+impossible here; thus \(c=a,d=1\).
+Similarly \(c\mid b\) leaves only \(c=b,d=1\).
+These are the physical fractions reproducing one old family.
+Compatibility gives distance at least \(L\) from that source, so the
+two true windows share at most one value.
+Matches to the other old family have steps \(a,b\) in intervals of
+width \(B\), and number at most \(B/b+O(1)\).
+This proves the rank bound in these cases as well.
+\end{proof}
+
+\begin{proposition}[Palm mean for a fixed channel]
+\label{p1:arith:fixed-channel-palm}
+Put
+\[
+ \eta_{a:b}=\min\{17/24,1-\gamma_{a:b}\}\geq1/3.
+\]
+Then, with the sum over \(z\in I_N\setminus\{x,y\}\),
+\[
+ R_{a:b}:=
+ \frac1{M_{a:b}}\sum_{\alpha=(x,y)\in\mathcal G_{a:b}}q_\alpha
+ \sum_z\bigl(\P(J_z=1\mid J_x=J_y=1)-p\bigr)_+
+ \ll_{a,b,C,\varepsilon}N^{-\eta_{a:b}+\varepsilon}.
+\]
+Moreover
+\[
+ \frac1{M_{a:b}}\sum_{\alpha=(x,y)\in\mathcal G_{a:b}}q_\alpha
+ \E[Z_N-2\mid J_x=J_y=1]
+ =\lambda+
+ O_{a,b,C,\varepsilon}
+ \bigl(N^{-\min(\eta_{a:b},1/2)+\varepsilon}\bigr).
+\]
+These bounds are not asserted to be optimal, or uniform in growing
+channel height.
+\end{proposition}
+
+\begin{proof}
+The source probability is \(O_{a,b,C}(p^2 2^{L/b})\).
+For the compressed old interval choose a fixed enclosing radius \(DB\).
+Use this same radius in the alignment test and the complementary
+aligned-target sector; the large-prime cutoff is chosen accordingly.
+The nonaligned asymmetric estimate
+in Lemma~\ref{p1:arith:asymmetric}, with the fixed larger widths and
+\(B^{O_{a,b}(1)}\) patterns, bounds the total positive excess by
+\[
+ p^3 2^{L/b}N^{31/24+\varepsilon'}.
+\]
+Division by \(M_{a:b}\asymp NLp^2 2^{L/b}\) gives
+\(N^{-17/24+\varepsilon}\).
+
+Each source has \(B^{O_{a,b}(1)}\) aligned targets.
+Lemma~\ref{p1:arith:fixed-channel-rank} bounds their positive conditional
+excess by \(pN^{\gamma_{a:b}+o(1)}\) per target.
+The exceptional endpoint sources have total weight
+\(B^{O(1)}p^2 2^{L/b}\).
+Even bounding every conditional probability by one, their aligned
+contribution after division by \(M_{a:b}\) is \(N^{-1+o(1)}\).
+This proves the first assertion, including all new windows.
+
+For the mean, Proposition~\ref{p1:arith:fixed-branching} with two
+exposed source windows leaves at most \(N^{1/2+o(1)}\) exceptional
+targets for each source.
+Outside them the new relative vector is uniform and independent of
+the old values, so its conditional probability is exactly \(p\).
+The total negative deviation is therefore at most \(pN^{1/2+o(1)}\).
+Combining it with the positive estimate and the removal of the two
+sources, which costs \(2p\), proves the assertion.
+\end{proof}
+
+\subsection{The ternary mass generated by a finite family of pairs}
+
+\begin{corollary}[Triples containing a good pair]
+\label{p1:arith:finite-family-triples}
+Let \(\mathcal F\) be a nonempty finite fixed family of admissible
+channels, and set
+\[
+ M_{\mathcal F}=\sum_{a:b\in\mathcal F}M_{a:b},\qquad
+ \nu_{\mathcal F}=
+ \min\{1/2,\min_{a:b\in\mathcal F}\eta_{a:b}\}.
+\]
+The sum of \(q(\{x,y,z\})\) over all ordered triples of distinct starts
+containing at least one good pair from this family is
+\[
+ 3\lambda M_{\mathcal F}
+ +O_{\mathcal F,C,\varepsilon}
+    (M_{\mathcal F}N^{-\nu_{\mathcal F}+\varepsilon}).
+\]
+In particular, for fixed \(Q\geq5\), the triples containing a good
+pair of height \(5\leq b\leq Q\) have total mass
+\(O_{Q,C,\varepsilon}(N^{-4/5+\varepsilon})\).
+\end{corollary}
+
+\begin{proof}
+Choose which two positions of an ordered triple form the designated
+pair.  For each of the three choices,
+Proposition~\ref{p1:arith:fixed-channel-palm} gives
+\(\lambda M_{\mathcal F}
+ +O(M_{\mathcal F}N^{-\nu_{\mathcal F}+\varepsilon})\).
+The pair orientations are already included in \(M_{\mathcal F}\).
+
+This designated-pair sum counts a triple once for each good pair that
+it contains.  If the third window is independent of all old values
+of the designated pair, it cannot form a dependent good pair with
+either source.
+Every overcount therefore has its third start in the exceptional set
+of Proposition~\ref{p1:arith:fixed-branching}.
+For each designated source, the conditional mass of this set is at most
+\[
+ pN^{1/2+o(1)}
+ +\sum_z\bigl(\P(J_z=1\mid J_x=J_y=1)-p\bigr)_+.
+\]
+Its weighted average is
+\(O_{\mathcal F,C,\varepsilon}(N^{-\nu_{\mathcal F}+\varepsilon})\).
+This bounds the entire overcount, since a triple has at most three pairs.
+The finite channel families are disjoint for large \(N\), by the separation
+of distinct reduced slopes.
+Finally, Lemma~\ref{p1:arith:fixed-channel-mass} gives
+\(M_{\mathcal F}\ll_{Q,C}L N^{-4/5}\) for heights between five and \(Q\).
+\end{proof}
+
+The last corollary concerns the part of the third moment containing a
+good pair.  It makes no assertion about the primitive remainder or about
+a family whose heights grow with \(N\).
+

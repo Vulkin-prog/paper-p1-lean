@@ -1,0 +1,55 @@
+P1 ET COMPAGNON — TREIZE SIMPLIFICATIONS INTÉGRÉES POUR RELECTURE
+7 novembre 2026
+
+L’aperçu simplifié compte 64 pages pour l’article et 101 pour le compagnon :
+165 pages au total, contre 169 pour la version 1.8. Les treize propositions
+identifiées par la revue indépendante sont maintenant appliquées, après les
+cinq clarifications antérieures. Le gain cumulé est de 277 lignes source
+par rapport au stade clarifié, sans suppression d’un résultat numéroté.
+
+Les dernières coupes remplacent la preuve de T1.14 par le demi-compte effectif
+et la longue preuve de T4.3 par une application de la borne fixe plus forte.
+Le cas comprimé T4.4 reçoit simultanément une preuve autonome ; la clause à
+une seule cible est conservée intégralement. Les poids homogènes sont gardés
+même en cas d’incompatibilité affine, et le parcours de lecture est explicite.
+
+Les 167 résultats et leurs numéros sont conservés. Deux blocs rendent visibles
+des conventions déjà utilisées : fenêtres distinctes dans 7.2 et seuil premier
+agrandi dans T1.9. Les 165 autres blocs restent identiques à l’aperçu structurel.
+Quatre équations auxiliaires de la preuve retirée, sans renvoi extérieur,
+disparaissent avec leurs labels ; elles ne sont pas réaffectées. Il reste
+548 occurrences de labels. Tous les renvois conservés sont résolus.
+
+Les huit premières coupes réduisent les doubles preuves et les répétitions.
+La deuxième passe mutualise la conversion analytique, rapproche les deux
+contre-exemples de leurs corrections et déplace la table complète des marges.
+Tous ces contenus scientifiques et la déclaration d’assistance par IA demeurent.
+La branche T14–T17, les résultats positionnels et les ordres croissants restent.
+
+L’autre instance a relu le dernier diff exact et les corps/types pertinents,
+sans lacune confirmée ni correction mathématique nécessaire. Trente déclarations
+Lean existantes ont été réextraites : 29 propositions auditées et une définition,
+avec les seuls axiomes standards. Les deux PDF ont été compilés et leurs
+165 pages examinées en planches, avec 26 pages entières contrôlées en détail,
+sans défaut de présentation observé. La relecture assistée par IA ne constitue
+pas une certification humaine.
+
+Aucune nouvelle preuve Lean n’est ajoutée par cette passe : elle réemploie des
+résultats déjà établis. Le dernier replay complet reste celui du checkpoint 1004,
+sous Lean 4.36.0-rc2 : 18 629 étapes, 19 991 contrôles d’axiomes et 19 914 références.
+Le registre historique des 1004 étapes n’est pas augmenté pour ces réécritures.
+
+Les versions 1.6, 1.7, 1.8 et tous les aperçus antérieurs sont conservés.
+Ce document est une copie de relecture, pas une nouvelle version adoptée.
+Les six dossiers Palomar gardent les 17 familles et 68 sélections prévues,
+avec Brice Pouly et ORCID 0009-0008-8491-2467. Aucune soumission n’est lancée.
+
+Dépôt : https://github.com/Vulkin-prog/paper-p1-lean
+
+RECONSTRUCTION DES PDF
+Depuis sources/, créer build/, puis exécuter alternativement trois fois :
+pdflatex -no-shell-escape -interaction=nonstopmode -halt-on-error -output-directory=build main.tex
+pdflatex -no-shell-escape -interaction=nonstopmode -halt-on-error -output-directory=build companion.tex
+Conserver les deux PDF dans le même dossier pour leurs liens croisés.
+Le script de construction v1.8 mentionné dans le guide cible la version v1.8
+archivée ; utiliser les commandes ci-dessus pour cet aperçu distinct.

@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "date": "2026-11-07",
+  "scope": "Actual local read-only source, frozen-version proof-entry, six-scope consolidation, disk and tracked-diff checks. The mathematical diff review, compiled extraction and visual review have separate records. No official Palomar workflow was run.",
+  "checks": [
+    {
+      "name": "manuscript_endpoints",
+      "command": "python3 scripts/check_manuscript_endpoints.py",
+      "actual_exit_code": 0,
+      "stdout": "Verified 138 manifest entries and 167 numbered results.\nScope: source integrity and inventory only, not mathematical proof certification.\nVerified 48 revised TeX source hashes and 167 revised statements.\nExactly two original statements corrected; revised proofs: 167/167.\nOriginal v1.6 identities and false-original statuses remain preserved.\nVerified 48 v1.8 source hashes and all 167 numbered results.\nExplicit comparisons: 7 strengthened/reworded statements; 167/167 proved.\nAll 18 unnumbered scientific claims have source-bound compiled proof correspondence.\nBoth earlier manuscript versions and the two false-original statuses are preserved.\nScope: source identity and recorded correspondence; hashes alone are not a semantic proof.\nVerified all 167 source-bound proof-entry bundles: 73 article and 94 companion results.\nActual compiled interfaces: 261 theorems; 3 separate mathematical definitions.\nDirect independent comparison records cover 167 labels across the reports' stated source snapshots.\nScope: source/type identity and recorded AI-assisted clause review; not a machine proof of TeX-to-Lean translation, human review or Palomar registration.\n"
+    },
+    {
+      "name": "registry_consolidation",
+      "command": "python3 scripts/check_registry_consolidation.py",
+      "actual_exit_code": 0,
+      "stdout": "arithmetic_geometry: exact models, statements, complete proof bodies and source mapping preserved.\nprofiles_smooth: exact models, statements, complete proof bodies and source mapping preserved.\naffine_conditioning: exact models, statements, complete proof bodies and source mapping preserved.\ncumulants_obstructions: exact models, statements, complete proof bodies and source mapping preserved.\npoisson_fields: exact models, statements, complete proof bodies and source mapping preserved.\nexponential_cylinders: exact models, statements, complete proof bodies and source mapping preserved.\nAll 68 selections from 17 original components are preserved in exactly six registrations.\n"
+    },
+    {
+      "name": "disk",
+      "command": "python3 scripts/check_disk.py",
+      "actual_exit_code": 0,
+      "stdout": "Available: 48.42 GiB; repository on Ubuntu root device: True\n"
+    },
+    {
+      "name": "tracked_whitespace",
+      "command": "git diff --check",
+      "actual_exit_code": 0,
+      "stdout": ""
+    }
+  ]
+}

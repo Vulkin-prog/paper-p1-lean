@@ -1,0 +1,170 @@
+\section*{Scope and reading guide}
+\addcontentsline{toc}{section}{Scope and reading guide}
+\label{p14:comp:guide}
+
+This companion and the associated article, \emph{Sharp Poisson
+approximation and second-order correction for long multiplicative runs},
+form a single mathematical work. They share the model, notation,
+version number, and date. The article follows the exact-marginal
+proof of the optimal quadratic approximation. This companion gives
+the detailed proofs of the technical inputs and retains the further
+results on arithmetic geometry, tails, and deletion.
+
+References beginning with T belong to this companion. Other
+numbered references belong to the article. The two PDFs have
+cross-document links when kept together under their supplied
+filenames. Each cited statement also has a stable printed number,
+so the proof can be checked without those links.
+
+\paragraph{Common model and conventions.}
+The completely multiplicative function \(f\) has independent fair
+signs at primes. Both signs of a constant run are counted. With
+\[
+ I_N=[N,2N)\cap\Z,\quad |L-\log_2N|\le C,\quad
+ B=L+1,\quad p=2^{-L},\quad \lambda_N=Np,
+\]
+the event at \(x\in I_N\) and its count are
+\[
+ J_x=\ind_{\{f(x-1)=-f(x),\ f(x)=\cdots=f(x+L-1)\}},
+ \qquad Z_N=\sum_{x\in I_N}J_x.
+\]
+We write \(p_x=\E J_x\), \(\mu_N=\E Z_N\),
+\(\alpha_N=\Var Z_N-\mu_N\), \(\Pi_\mu=\Pois(\mu)\),
+and \(\Delta=\delta_1-\delta_0\). Products of measures
+are convolutions, \(\|\nu\|_1=\sum_k|\nu\{k\}|\),
+and total variation for probabilities is half this norm.
+All unmarked logarithms are natural. Constants may depend on
+the fixed critical-band width \(C\) and on parameters explicitly
+declared fixed.
+
+The space \(S_x\) is the image, under prime valuations modulo two,
+of the even selections in \(V_x=\{x-1,\ldots,x+L-1\}\).
+The exact formulation uses all \(x\) with \(p_x>0\), dimensions
+\(d_x=\dim S_x\), and the relative nullity
+\(\sum_{x\in I}d_x-\dim\sum_{x\in I}S_x\).
+The regular-set argument restricts to \(G_N\), where \(d_x=L\)
+and \(p_x=p\). Its homogeneous notation and its restricted count
+are always identified when that argument is used. The raw arithmetic
+nullity \(\rho(I)=|I|L-\dim\sum_{x\in I}S_x\) includes local
+kernels; it agrees with the effective nullity on \(G_N\).
+Section~\ref{p13:transfer:section} explicitly uses \(\rho\)
+as a local abbreviation for the effective nullity.
+
+\paragraph{Technical inputs for the optimal scalar theorem.}
+The arithmetic estimates in Sections~\ref{p1:arith:appendix}
+and~\ref{p1:arith:supplement} supply the split-product bounds,
+variable-coefficient counts, and channel budgets. The proofs
+associated with Sections~\ref{p1:fixed:section},
+\ref{p13:short:section}, and~\ref{p13:half:section} establish
+fixed-source propagation and conditional half counts. The
+rigidity and triple-counting proofs then supply the inputs to
+Sections~\ref{p13:rig:section} and~\ref{p13:third:section}.
+The article states the required hypotheses at each interface
+and retains the reconstruction, its separately uniform tail,
+and the quartic lower-bound argument.
+
+The short proofs of Proposition~\ref{p1:arith:fixed-support} and
+Proposition~\ref{p1:fixed:compressed} return to
+Theorem~\ref{p13:half:conditional}. The latter also uses
+Lemma~\ref{p13:transfer:dense-targets}, whereas
+Proposition~\ref{p1:fixed:primitive} uses
+Proposition~\ref{p13:transfer:primitive}. These geometric inputs
+are proved independently of the moment theorem and either law reconstruction.
+
+\paragraph{Entering a proof and returning to the article.}
+The following local routes lead to the complete proof subsection,
+then to the next use in the article. A subsection and a lemma can
+have the same printed number; the middle column names the
+subsection and links to its heading.
+
+\begin{center}
+\small
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{0.23\textwidth}>{\raggedright\arraybackslash}p{0.40\textwidth}>{\raggedright\arraybackslash}X@{}}
+\toprule
+Entry in the article & Proof in this companion & Return to the article\\
+\midrule
+Proposition~\ref{p13:short:moments}
+& Subsection~\ref{p14:comp:short:moments}: uniform moments, using
+the prescribed-divisor estimates above it
+& Corollary~\ref{p13:short:old-space}: short projections into the old space\\[4pt]
+Theorem~\ref{p13:half:conditional}
+& Subsection~\ref{p14:comp:half:iteration}: threshold iteration,
+using the certificate count of Lemma~\ref{p13:half:saturation}
+& Corollary~\ref{p13:half:connected}: connected hosts at fixed order\\[4pt]
+Theorem~\ref{p13:rig:common-curve}
+& Subsection~\ref{p14:comp:rigidity:common-curve}: one curve for
+the whole relation space
+& Proposition~\ref{p13:rig:grid-fibres}: integer fibres, followed
+by the degree-uniform point count\\[4pt]
+Proposition~\ref{p13:third:aligned-family}
+& Subsection~\ref{p14:comp:third:aligned-family}: all triples above
+the fixed channels, including exceptional pairs
+& Corollary~\ref{p13:third:aligned}: strong aligned pairs\\[4pt]
+Lemma~\ref{p13:transfer:dense-targets}
+& Subsection~\ref{p14:comp:transfer-dense-targets}: two dense targets
+over prescribed sources
+& Lemma~\ref{p13:transfer:compressed-target}, then the primitive-mass estimates\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\paragraph{The regular-set reconstruction and positional results.}
+The complete earlier reconstruction is retained in
+Sections~\ref{p1:core:section}--\ref{p1:close:section} and
+the associated stopping proofs. Its weighted primitive and
+compressed-pair estimates support the unsigned positional
+comparison and the deletion arguments in
+Section~\ref{p1:limits:positions}. This branch is needed for
+those results; the scalar optimal proof is assembled directly
+from its stated exact-marginal inputs. Any proof below that
+invokes Theorem~\ref{p1:thm:main} is a consequence of that
+theorem, not an input to it.
+
+\paragraph{The selected version 1.8 strengthenings.}
+Section~\ref{p14:comp:confinement} now gives the fixed-arity anchored
+small-kernel witness, constructs its hypotheses for primitive families,
+and proves the dense-host and mass estimates used in
+Proposition~\ref{p13:transfer:primitive}. It also completes the
+quasi-linear bounds of Proposition~\ref{p1:arith:hosts}. The earlier
+elementary pair-profile calculation still uses its independent
+$6/5$ estimate; the later strengthening is not fed back into that proof.
+The graph generator uses disjoint stars and nonnegative weights.
+The power-threshold tail and the ordinary smooth-window census remain
+in Section~\ref{p1:limits:section}, where they serve the supplementary
+tail and forcing conclusions. Neither is an input to the optimal
+scalar reconstruction. The exact identities of the reference arrivals
+are placed with the positional proof and are distinguished from the
+arithmetic indicators.
+
+\paragraph{Further consequences and limitations.}
+Sections~\ref{p1:offset:section}, \ref{p1:consequences:section},
+and~\ref{p1:uniform:appendix} give refinements of the offset
+geometry, interval dependence, and uniform counting estimates.
+Section~\ref{p1:limits:section} treats exact local blocks,
+effective tails, modified counts, Palm identities, and the cost
+of positive forcing. Section~\ref{p1:moment-obstruction}
+explains why fixed moments alone cannot imply a polynomial
+rate for a complete law. These statements retain their own
+quantifiers; none enlarges a fixed-order estimate to a growing
+range without a separate proof.
+
+\paragraph{The role of the final sections.}
+The proof map in Section~\ref{p1:intro:dependencies} records
+the inputs to the scalar theorem.
+The positional argument in Section~\ref{p1:limits:positions}
+proves Lemma~\ref{p1:limits:vector-reference} and uses the
+regular-set weighted reconstruction in Sections~\ref{p1:core:section}--\ref{p1:close:section}.
+The remaining late sections give further consequences with their own
+assumptions; they do not enter the optimal scalar reconstruction.
+This is a statement about logical dependence, not separate papers.
+In particular, Proposition~\ref{p13:optimal:nominal} derives its
+quantized mean identity directly from the exact marginals,
+without the supplementary local-block asymptotics.
+
+The preserved version~1.6 source archive provides
+\texttt{python3 check\_all.py} for its historical builds and finite
+diagnostics. The version~1.8 working draft is rebuilt from the repository with
+\texttt{python3 scripts/build\_manuscript\_v18.py}.
+Source integrity and statement correspondence are checked by
+\texttt{scripts/check\_revised\_sources\_v18.py}; finite diagnostics
+do not test the uniform asymptotic estimates.

@@ -1,0 +1,358 @@
+P1 — SUITES CONDITIONNELLES SIM12–SIM13
+Statut : complete_frozen
+Preuves : 7bfc953cd6092eebfbae5f24aeb72b7180693537
+
+SIM12 : applicable avec raccord explicite.
+SIM13 : applicable avec raccord explicite, seulement en couplantT4.3 etT4.4.
+SIM12 est une petite coupe sûre sous la convention effective. SIM13 est une coupe importante possible à partir de preuves existantes, maisT4.4 doit devenir autonome avant de supprimer la géométrie deT4.3. Aucun nouveau texte n’est approuvé avant relecture du futur diff.
+Aucune nouvelle construction de preuve ou affirmation de couverture ; aucun Lean/Lake, replay,PDF,Palomar ni mutation de source/rapport antérieur.
+
+SIM12 — applicable_avec_raccord_explicite
+
+exact_cut:
+- Remplacer seulement cette preuve de26 lignes ; conserverT1.14, son labelp1:arith:fixed-support et l’exposant imprimé.
+
+existing_route:
+- Le prédicatBlockSupportProjection.Relation porte sur les images EFFECTIVES des sélections paires :Σu_i=0 avec au moins s composantesu_i≠0. La population exige aussi des centres distincts.
+- BlockSupportCount expose le support effectif exactJ,|J|=k≥s.10.1 sans sources compte lesk blocs parN^{k/2+ε′} ; lesr−k autres centres coûtentN^{r−k}. Somme sur un nombre fixé de supports :N^{r−s/2+ε}.
+- L’inégalité s/2≥2s/(2s+1),s≥2, donne la conclusion imprimée. Les variantesBlockSupportParameters etSeveralWindowProjectionCount traitent déjà les motifs logarithmiques et les vrais blocs normalisés.
+
+retain:
+- T1.13 et les estimations de deux noyaux individuellement petits : le compte d’un produit n’en remplace pas les autres usages.
+- Preuves de10.1, défauts locaux et branchement. Aucun résultat arithmétique numéroté ne devient supprimable par ce seul raccourci.
+
+Projections : Une sélection formelle non vide peut avoir image locale nulle ;10.1 exige une image NON NULLE. Ne pas étendre silencieusement ce sens.
+Limite : Aucune extension à de simples projections formelles non vides mais d’image nulle n’est construite ici.
+Dépendances : 10.1 est fermé indépendamment deT1.14 et des moments asymptotiques deZ. Le renvoi tardif doit être annoncé dans la carte de lecture ; les moments fixes restent indépendants de toute approximation de loi.
+
+Gain : {"current_lines": 26, "estimated_replacement_lines": [13, 17], "estimated_saved_lines": [9, 13], "reasoning": "Un seul demi-compte remplace la séparation petit/gros noyau, au prix d’un renvoi technique ultérieur.", "measured_pdf_gain": false}
+
+
+SIM13 — applicable_avec_raccord_explicite
+
+exact_cut:
+- Remplacer les146 lignes de preuveT4.3, en conservant l’énoncé etp1:fixed:primitive-bound.
+- DansT4.4, conserver les données de normalisation, la factorisation/rang effectif, la clause à une cible et la domination affine. Remplacer383–400 et tout renvoi à la preuve supprimée par les trois cas autonomes ci-dessus, déjà présents dansLean.
+- Le point sourceN^{-κ_b+ε}, exact dansHomogeneousChannelWeights.uniform_pair, suffit ; aucune borne de rang plus forteO(1) n’est nécessaire pour ce raccourci.
+
+T4_3_shortcut:
+- Le contexteT4 est régulier :p_x=p, donc le poids exact de15.5 est déjàp^{|I|}2^{ρrel(I)}. Une application directe de15.5 suffit ; aucun nouveau théorème homogène n’est nécessaire dans le manuscrit.
+- Passer des ensembles aux tuples ordonnés coûte le facteurr! fixe ; la séparation ne fait que restreindre une somme non négative. r/2≥3/2>4/5 pourr≥3, ce qui donne l’énoncé conservé.
+- L’enveloppe homogène1004 reste une justification existante plus générale et permet d’identifierq0 ; elle n’autorise pas à remplacer la paire comprimée par une fenêtre originale.
+
+written_connections_required:
+- t=r−1,κ_b=2−1/b et canaux2:3/3:4 fixes ; seuilL/4 pourt=2.
+- Régularité du domaineT4,p_x=p et nullité RELATIVE EFFECTIVE ; garderq0(e) pour la paire source.
+- Centre source normalisé unique, encodage injectif et motifs en nombreB^{O(1)}.
+- Trois disjonctions de primitivité nécessaires à15.2 ; les deux fenêtres de la source ne sont PAS supposées directes.
+- Masse des sourcesN^{1−κ_b+ε} issue du compte à un paramètre et du point source, non d’une loi approchée.
+- Carte d’entrée mise à jour vers10.1,15.2 et15.5 ; les moments deZ restent indépendants de l’approximation de loi.
+
+retain:
+- Énoncés et clauses completsT4.3/T4.4.
+- T4.1/T4.2 et leurs entrées arithmétiques ; la coupe deT4.3 n’autorise pas à supprimer leur géométrie.
+- Preuves de10.1,15.2,15.5/confinement et les seeds à une cible.
+- BrancheT14–T17, poids de cardinalité croissante, positions et suppression.
+
+Cycle : 15.5→paragraphe Dense primitive hosts and their exact weights deT8→témoin ancré/récupération/confinement etT6.1 ; secteur faible→10.2→10.1.
+Aucun appel au théorème des momentsT6.4, àT4.3 ou à une approximation de loi dans ces arguments. La récupérationp1:fixed:recovery est un lemme structurel, pas le théorème de moments. Le renvoi tardif est acyclique.
+
+Route comprimée existante :
+objets et hôtes — EffectiveCompressedPrimitiveCount
+Posert=r−1. Pour chaque motif de canal fixé, la paire comprimée possède UN centre normalisé ; les t cibles formentt autres blocs vrais. L’encodage est injectif et10.1 donneN^{(t+1)/2+ε} hôtes, motifsB^{O(1)} compris. Compter deux centres sources libres perdrait ce gain.
+
+t≥3 — EffectiveCompressedPrimitiveElementaryMass.uniform_sector/from_four
+Le corps utilise la factorisationq0(e∪z)=q0(e)∏q0({z_i})2^ρ, le point sourceq0(e)≤N^{-κ_b+ε}, les marginales cibles≤2p etρ≤L. Il obtientN^{-κ_b+(1−t)/2+η+ε} sousρ≤ηL ;η=1 donneN^{-κ_b+ε} pourt≥3.
+
+t=2,ρ≤L/4 — EffectiveCompressedPrimitiveMass.three_blocks
+Le même compte élémentaire donneN^{-κ_b−1/4+ε}. Le seuilL/4 est fixé avantN ; aucune limite d’ordre croissant.
+
+t=2,ρ≥L/4 — EffectiveCompressedDenseExtensions etEffectiveCompressedDenseMass
+W=S_x+S_y est l’espace source entier. La primitivité comprimée impliqueW∩S_z=W∩S_w=S_z∩S_w=0 et identifieρ au noyau de15.2. L’intersection cible nulle satisfait la branche faible, quelle que soit l’alignement. Sur le domaine régulier imprimé, les marginales homogènes cibles valentp :15.2 a exactement le poids conditionnel voulu. La ligne vaut≤q0(e)N^{-1+ε} ; la somme des sources≤N^{1−κ_b+ε} conclutN^{-κ_b+ε}.
+
+une seule cible et affine — FixedCompressedPrimitiveTheorem.companion_T4_4 etT1.12
+La clauset=1 reste distincte avec puissances4/3 et5/4 ; conserver le renvoi aux seeds/Palm et sa preuve. Les joints affines sont≤q0, y compris quand la source est incompatible. Ne jamais remplacerq0(e) par le joint affine nul.
+
+Les calculs décrits sont ceux des corps existants. Le terminal déjà compiléFixedCompressedPrimitiveTheorem.companion_T4_4 ferme toutes les clauses et donne mêmeN^{-κ_b+ε}. On conserve l’énoncé imprimé plus faibleN^{-κ_b+1/5+ε}. Aucun nouveau théorème ou état de couverture n’est proposé.
+
+Le parent précise que552 était un contrôle d’identité des passes précédentes. Dans une troisième copie, ces quatre labels internes peuvent disparaître avec leur preuve si leurs anciens rôles et l’absence de références externes/restantes sont tracés. Ne pas les réaffecter. Les167 labels de résultats et leurs numéros restent protégés.
+
+p1:fixed:group-tail — CompteN^{r−9/5+ε} dans le secteur où le produit des grands groupes dépasseN^M.
+Références hors preuve remplacée :0. Aucune réaffectation.
+
+p1:fixed:component-kernel — BorneK_H(∏n_v)≤N^θ pour une composante après omission des grands groupes ;θ=MKD/k.
+Références hors preuve remplacée :0. Aucune réaffectation.
+
+p1:fixed:high-hosts — CompteN^{r−3/2+ε} des hôtes de nullité≥ηL.
+Références hors preuve remplacée :0. Aucune réaffectation.
+
+p1:fixed:very-high-hosts — CompteN^{r−9/5+ε} des hôtes de nullité>(1/2+δ)L.
+Références hors preuve remplacée :0. Aucune réaffectation.
+
+Gain : {"current_T4_3_lines": 146, "current_T4_4_lines": 46, "current_combined_lines": 192, "estimated_combined_replacement_lines": [55, 80], "estimated_net_saved_lines": [112, 137], "measurement_status": "Les192 lignes actuelles sont comptées ; le remplacement est estimé, sans diff niPDF nouveau.", "reasoning_gain": "Remplace la longue stratification géométrique répétée par des bornes fixes déjà démontrées et rend la preuve comprimée autonome.", "readability_cost": "Davantage de renvois techniques tardifs ; la route de lecture doit être explicite. Une preuve strictement dans l’ordre imprimé peut justifier de conserver l’ancienne version.", "fallback": "Déplacer toute la géométrie deT4.3 dansT4.4 ne procure que peu ou pas de gain ; ce n’est pas l’option recommandée."}
+
+
+NOMS EXACTS SUPPLÉMENTAIRES À EXTRAIRE
+PaperP1.BlockSupportCount.critical_interval_count (PaperP1/Asymptotics/BlockSupportCount.lean:117)
+Compte uniforme plus fortN^{r−s/2+ε} pour les projections effectives.
+Déjà extrait individuellement dans les rapports consultés : False
+Extraire le type nommé et son audit si nécessaire pour le futur diff ; aucune nouvelle preuve à écrire.
+
+PaperP1.BlockSupportParameters.critical_count (PaperP1/Asymptotics/BlockSupportParameters.lean:103)
+Même compte avecB^{O_r(1)} motifs fixés, population et enregistrements.
+Déjà extrait individuellement dans les rapports consultés : False
+Extraire le type nommé et son audit si nécessaire pour le futur diff ; aucune nouvelle preuve à écrire.
+
+PaperP1.PrimitiveNominalMass.ordered_sum (PaperP1/Model/PrimitiveNominalMass.lean:42)
+Identité exacte du facteurr! pour les tuples ordonnés.
+Déjà extrait individuellement dans les rapports consultés : False
+Extraire le type nommé et son audit si nécessaire pour le futur diff ; aucune nouvelle preuve à écrire.
+
+PaperP1.HomogeneousRunMass.regular_weight (PaperP1/Model/HomogeneousRunMass.lean:107)
+SurG_N,q0(I)=p^{|I|}2^{ρrel(I)}.
+Déjà extrait individuellement dans les rapports consultés : False
+Extraire le type nommé et son audit si nécessaire pour le futur diff ; aucune nouvelle preuve à écrire.
+
+PaperP1.EffectiveCompressedPrimitiveCount.uniform_count (PaperP1/Asymptotics/EffectiveCompressedPrimitiveCount.lean:135)
+Hôtes comprimés :N^{(t+1)/2+ε}, centre source normalisé unique et motifs sommés.
+Déjà extrait individuellement dans les rapports consultés : False
+Extraire le type nommé et son audit si nécessaire pour le futur diff ; aucune nouvelle preuve à écrire.
+
+PaperP1.EffectiveCompressedPrimitiveElementaryMass.uniform_point (PaperP1/Asymptotics/EffectiveCompressedPrimitiveElementaryMass.lean:19)
+Sousρ≤ηL :q0≤N^{-κ_b−t+η+ε}.
+Déjà extrait individuellement dans les rapports consultés : False
+Extraire le type nommé et son audit si nécessaire pour le futur diff ; aucune nouvelle preuve à écrire.
+
+PaperP1.EffectiveCompressedPrimitiveElementaryMass.uniform_sector (PaperP1/Asymptotics/EffectiveCompressedPrimitiveElementaryMass.lean:66)
+Sousρ≤ηL :masse≤N^{-κ_b+(1−t)/2+η+ε}.
+Déjà extrait individuellement dans les rapports consultés : False
+Extraire le type nommé et son audit si nécessaire pour le futur diff ; aucune nouvelle preuve à écrire.
+
+PaperP1.EffectiveCompressedPrimitiveElementaryMass.from_four (PaperP1/Asymptotics/EffectiveCompressedPrimitiveElementaryMass.lean:93)
+Pourt≥3,ρ≤L donne la masseN^{-κ_b+ε}.
+Déjà extrait individuellement dans les rapports consultés : False
+Extraire le type nommé et son audit si nécessaire pour le futur diff ; aucune nouvelle preuve à écrire.
+
+PaperP1.EffectiveCompressedDenseExtensions.uniform_extensions (PaperP1/Asymptotics/EffectiveCompressedDenseExtensions.lean:29)
+Deux cibles denses primitives au-dessus deW :somme≤q0(source)N^{-1+ε}.
+Déjà extrait individuellement dans les rapports consultés : False
+Extraire le type nommé et son audit si nécessaire pour le futur diff ; aucune nouvelle preuve à écrire.
+
+PaperP1.EffectiveCompressedDenseMass.uniform_bound (PaperP1/Asymptotics/EffectiveCompressedDenseMass.lean:18)
+Après somme des sources de canal :masse dense≤N^{-κ_b+ε}.
+Déjà extrait individuellement dans les rapports consultés : False
+Extraire le type nommé et son audit si nécessaire pour le futur diff ; aucune nouvelle preuve à écrire.
+
+PaperP1.EffectiveCompressedPrimitiveMass.three_blocks (PaperP1/Asymptotics/EffectiveCompressedPrimitiveMass.lean:24)
+t=2 :séparation au seuil fixeL/4, puis masseN^{-κ_b+ε}.
+Déjà extrait individuellement dans les rapports consultés : False
+Extraire le type nommé et son audit si nécessaire pour le futur diff ; aucune nouvelle preuve à écrire.
+
+PaperP1.EffectiveCompressedPrimitiveMass.uniform_mass (PaperP1/Asymptotics/EffectiveCompressedPrimitiveMass.lean:58)
+Synthèse pour toutt≥2 fixé,3≤b≤4.
+Déjà extrait individuellement dans les rapports consultés : False
+Extraire le type nommé et son audit si nécessaire pour le futur diff ; aucune nouvelle preuve à écrire.
+
+PaperP1.PairCompressedTwoTargetData.primitive_data (PaperP1/Model/PairCompressedTwoTargetData.lean:32)
+Primitivité ⇒W∩S_z=W∩S_w=S_z∩S_w=0 et identité du déficit/noyau.
+Déjà extrait individuellement dans les rapports consultés : False
+Extraire le type nommé et son audit si nécessaire pour le futur diff ; aucune nouvelle preuve à écrire.
+
+PaperP1.PairCompressedTwoTargetData.weight_factor (PaperP1/Model/PairCompressedTwoTargetData.lean:65)
+Sur les cibles régulières :q0(e∪{z,w})=q0(e)p_zp_w2^d, même si le joint affine de la source est nul.
+Déjà extrait individuellement dans les rapports consultés : False
+Extraire le type nommé et son audit si nécessaire pour le futur diff ; aucune nouvelle preuve à écrire.
+
+PaperP1.HomogeneousCompressedEffectiveFactor.factor (PaperP1/Model/HomogeneousCompressedEffectiveFactor.lean:31)
+Factorisation homogène exacte pour tout nombre fixé de cibles effectives.
+Déjà extrait individuellement dans les rapports consultés : False
+Extraire le type nommé et son audit si nécessaire pour le futur diff ; aucune nouvelle preuve à écrire.
+
+PaperP1.HomogeneousCompressedEffectiveFactor.two_target_factor (PaperP1/Model/HomogeneousCompressedEffectiveFactor.lean:91)
+Version à deux cibles avec le noyau au-dessus deW.
+Déjà extrait individuellement dans les rapports consultés : False
+Extraire le type nommé et son audit si nécessaire pour le futur diff ; aucune nouvelle preuve à écrire.
+
+PaperP1.HomogeneousChannelWeights.uniform_pair (PaperP1/Asymptotics/HomogeneousChannelWeights.lean:22)
+Vraie masse homogène d’une source de canal≤N^{-κ_b+ε}.
+Déjà extrait individuellement dans les rapports consultés : False
+Extraire le type nommé et son audit si nécessaire pour le futur diff ; aucune nouvelle preuve à écrire.
+
+PaperP1.HomogeneousFullChannelMass.uniform_bound (PaperP1/Asymptotics/HomogeneousFullChannelMass.lean:16)
+Masse homogène de toutes les sources≤N^{1−κ_b+ε}.
+Déjà extrait individuellement dans les rapports consultés : False
+Extraire le type nommé et son audit si nécessaire pour le futur diff ; aucune nouvelle preuve à écrire.
+
+TERMINAUX COMPILÉS LUS
+PaperP1.ValueHeightHalfCount.article_10_1 (PaperP1/Asymptotics/ValueHeightHalfCount.lean:21)
+Type compilé exact :
+∀ (r s : ℕ) (a b D Cband ε : ℝ),
+  0 < a →
+    0 ≤ D →
+      0 < ε →
+        ∃ N₀,
+          ∀ N ≥ N₀,
+            ∀ (L : ℕ) (old : Fin s → ℕ) (G : Finset ℕ) (blocks : Fin r → ℕ → Finset ℕ) (oldBlocks : Fin s → Finset ℕ),
+              |↑L - Real.log ↑N / Real.log 2| ≤ Cband →
+                (∀ (i : Fin r), ∀ x ∈ G, ∀ v ∈ blocks i x, a * ↑N ≤ ↑v ∧ ↑v ≤ b * ↑N) →
+                  (∀ (k : Fin s), ∀ v ∈ oldBlocks k, a * ↑N ≤ ↑v ∧ ↑v ≤ b * ↑N) →
+                    (∀ (i : Fin r), ∀ x ∈ G, ∀ v ∈ blocks i x, ↑(↑v - ↑x).natAbs ≤ D * ↑(L + 1)) →
+                      (∀ (k : Fin s), ∀ v ∈ oldBlocks k, ↑(↑v - ↑(old k)).natAbs ≤ D * ↑(L + 1)) →
+                        ↑(PaperP1.EffectiveWindowLists.lists G blocks (Finset.univ.biUnion oldBlocks)).card ≤
+                          ↑N ^ (↑r / 2 + ε)
+
+
+PaperP1.BlockSupportCount.companion_T1_14 (PaperP1/Asymptotics/BlockSupportCount.lean:134)
+Type compilé exact :
+∀ (r s C : ℕ),
+  2 ≤ s →
+    1 ≤ C →
+      ∀ (a b D Cband ε : ℝ),
+        0 < a →
+          0 ≤ D →
+            0 < ε →
+              ∃ N₀,
+                ∀ N ≥ N₀,
+                  ∀ (L M : ℕ) (G : Finset ℕ) (blocks : Fin r → ℕ → Finset ℕ),
+                    |↑L - Real.log ↑N / Real.log 2| ≤ Cband →
+                      G ⊆ Finset.Ico M (M + C * N) →
+                        (∀ (i : Fin r), ∀ x ∈ G, ∀ v ∈ blocks i x, a * ↑N ≤ ↑v ∧ ↑v ≤ b * ↑N) →
+                          (∀ (i : Fin r), ∀ x ∈ G, ∀ v ∈ blocks i x, ↑(↑v - ↑x).natAbs ≤ D * ↑(L + 1)) →
+                            ↑(PaperP1.BlockSupportProjection.population G blocks s).card ≤
+                              ↑N ^ (↑r - 2 * ↑s / (2 * ↑s + 1) + ε)
+
+
+PaperP1.BlockSupportParameters.companion_T1_14 (PaperP1/Asymptotics/BlockSupportParameters.lean:126)
+Type compilé exact :
+∀ (r s C d h D : ℕ),
+  2 ≤ s →
+    1 ≤ C →
+      ∀ (a b E F Cband ε : ℝ),
+        0 < a →
+          0 ≤ E →
+            0 ≤ F →
+              0 < ε →
+                ∃ N₀,
+                  ∀ N ≥ N₀,
+                    ∀ (L V M : ℕ) (G : Finset ℕ)
+                      (blocks : PaperP1.BlockSupportParameters.ShapeCode V d h D → Fin r → ℕ → Finset ℕ),
+                      |↑L - Real.log ↑N / Real.log 2| ≤ Cband →
+                        ↑V ≤ F * ↑(L + 1) →
+                          G ⊆ Finset.Ico M (M + C * N) →
+                            (∀ (q : PaperP1.BlockSupportParameters.ShapeCode V d h D) (i : Fin r),
+                                ∀ x ∈ G, ∀ v ∈ blocks q i x, a * ↑N ≤ ↑v ∧ ↑v ≤ b * ↑N) →
+                              (∀ (q : PaperP1.BlockSupportParameters.ShapeCode V d h D) (i : Fin r),
+                                  ∀ x ∈ G, ∀ v ∈ blocks q i x, ↑(↑v - ↑x).natAbs ≤ E * ↑(L + 1)) →
+                                ↑(PaperP1.BlockSupportParameters.population G blocks s).card ≤
+                                    ↑N ^ (↑r - 2 * ↑s / (2 * ↑s + 1) + ε) ∧
+                                  ↑(PaperP1.BlockSupportParameters.records G blocks s).card ≤
+                                    ↑N ^ (↑r - 2 * ↑s / (2 * ↑s + 1) + ε)
+
+
+PaperP1.SeveralWindowProjectionCount.companion_T1_14 (PaperP1/Asymptotics/SeveralWindowProjectionCount.lean:22)
+Type compilé exact :
+∀ (r s : ℕ),
+  2 ≤ s →
+    ∀ (Cband ε : ℝ),
+      0 < ε →
+        ∃ N₀,
+          ∀ N ≥ N₀,
+            ∀ (L : ℕ) (G : Finset ℕ),
+              |↑L - Real.log ↑N / Real.log 2| ≤ Cband →
+                G ⊆ PaperP1.Model.dyadicBlock N →
+                  ↑(PaperP1.SeveralWindowProjections.tuples G L r s).card ≤ ↑N ^ (↑r - ↑s / 2 + ε) ∧
+                    ↑(PaperP1.SeveralWindowProjections.tuples G L r s).card ≤ ↑N ^ (↑r - 2 * ↑s / (2 * ↑s + 1) + ε)
+
+
+PaperP1.SharpPrimitiveMass.uniform_rank_mass (PaperP1/Asymptotics/SharpPrimitiveMass.lean:21)
+Type compilé exact :
+∀ (r : ℕ),
+  3 ≤ r →
+    ∀ (C ε : ℝ),
+      0 < ε →
+        ∃ N₀,
+          3 ≤ N₀ ∧
+            ∀ N ≥ N₀,
+              ∀ (L : ℕ),
+                |↑L - Real.log ↑N / Real.log 2| ≤ C →
+                  ∀ (F : Finset (Finset ℕ)),
+                    (∀ I ∈ F,
+                        I ⊆ PaperP1.Model.dyadicBlock N ∧ I.card = r ∧ PaperP1.ConnectedWindowFamilies.Primitive L I) →
+                      PaperP1.PrimitiveWindowMass.mass F L ≤ ↑N ^ (-↑r / 2 + ε)
+
+
+PaperP1.FixedArityHomogeneousMass.uniform_mass (PaperP1/Asymptotics/FixedArityHomogeneousMass.lean:94)
+Type compilé exact :
+∀ (r : ℕ),
+  3 ≤ r →
+    ∀ (C ε : ℝ),
+      0 < ε →
+        ∃ N₀,
+          3 ≤ N₀ ∧
+            ∀ N ≥ N₀,
+              ∀ (L : ℕ),
+                |↑L - Real.log ↑N / Real.log 2| ≤ C →
+                  ∀ (F : Finset (Finset ℕ)),
+                    (∀ I ∈ F,
+                        I ⊆ PaperP1.Model.dyadicBlock N ∧ I.card = r ∧ PaperP1.ConnectedWindowFamilies.Primitive L I) →
+                      ∑ I ∈ F, PaperP1.HomogeneousRunMass.probability L I ≤ ↑N ^ (-↑r / 2 + ε)
+
+
+PaperP1.PrimitiveOrderedBound.companion_T4_3 (PaperP1/Asymptotics/PrimitiveOrderedBound.lean:40)
+Type compilé exact :
+∀ (r : ℕ),
+  3 ≤ r →
+    ∀ (C ε : ℝ),
+      0 < ε →
+        ∃ N₀,
+          3 ≤ N₀ ∧
+            ∀ N ≥ N₀,
+              ∀ (L : ℕ),
+                |↑L - Real.log ↑N / Real.log 2| ≤ C → PaperP1.PrimitiveOrderedMass.mass N L r ≤ ↑N ^ (-4 / 5 + ε)
+
+
+PaperP1.FixedCompressedPrimitiveTheorem.companion_T4_4 (PaperP1/Asymptotics/FixedCompressedPrimitiveTheorem.lean:24)
+Type compilé exact :
+∀ (t : ℕ),
+  2 ≤ t →
+    ∀ (C ε : ℝ),
+      0 < ε →
+        ∃ N₀,
+          4 ≤ N₀ ∧
+            ∀ N ≥ N₀,
+              ∀ (L : ℕ),
+                |↑L - Real.log ↑N / Real.log 2| ≤ C →
+                  ∀ (H : ℕ),
+                    PaperP1.EffectiveCompressedPrimitivePopulation.mass N 2 3 L t ≤ ↑N ^ (-5 / 3 + ε) ∧
+                      PaperP1.EffectiveCompressedPrimitivePopulation.mass N 3 4 L t ≤ ↑N ^ (-7 / 4 + ε) ∧
+                        ∑ q ∈ PaperP1.EffectiveCompressedPrimitivePopulation.points N 2 3 L t,
+                              PaperP1.Model.InfiniteStarts.infiniteJointMoment L
+                                (PaperP1.PairCompressedPrimitiveFamilies.family q.1 q.2) ≤
+                            ↑N ^ (-5 / 3 + ε) ∧
+                          ∑ q ∈ PaperP1.EffectiveCompressedPrimitivePopulation.points N 3 4 L t,
+                                PaperP1.Model.InfiniteStarts.infiniteJointMoment L
+                                  (PaperP1.PairCompressedPrimitiveFamilies.family q.1 q.2) ≤
+                              ↑N ^ (-7 / 4 + ε) ∧
+                            PaperP1.HomogeneousEffectiveGoodPairExtensions.mass N H 2 3 L ≤ ↑N ^ (-4 / 3 + ε) ∧
+                              PaperP1.HomogeneousEffectiveGoodPairExtensions.mass N H 3 4 L ≤ ↑N ^ (-5 / 4 + ε) ∧
+                                ∑ p ∈ PaperP1.HomogeneousEffectiveGoodPairExtensions.points N H 2 3 L,
+                                      PaperP1.Model.InfiniteStarts.infiniteJointMoment L
+                                        (PaperP1.SingletonExtensionWeights.join p) ≤
+                                    ↑N ^ (-4 / 3 + ε) ∧
+                                  ∑ p ∈ PaperP1.HomogeneousEffectiveGoodPairExtensions.points N H 3 4 L,
+                                      PaperP1.Model.InfiniteStarts.infiniteJointMoment L
+                                        (PaperP1.SingletonExtensionWeights.join p) ≤
+                                    ↑N ^ (-5 / 4 + ε)
+
+
+LIMITES
+- Aucun Lean/Lake, replay,build,PDF ou Palomar exécuté ; aucune source, preuve ou rapport antérieur modifié.
+- Les types compilés existants sont lus ; les helpers sans extraction individuelle sont signalés et proposés au parent pour extraction, sans prétendre l’avoir exécutée.
+- Le rapport présente des options de réécriture fondées sur des preuves existantes. Aucun nouveau diff n’est encore approuvé.
+- Le gain est donné en lignes source estimées, jamais en pages.
+
+ÉTAPES SUIVANTES
+- Préparer une troisième copie distincte ;SIM12 peut y être traité seul.
+- PourSIM13, rédiger d’abordT4.4 autonome puis supprimer la géométrie désormais remplacée.
+- Tracer les quatre labels retirés et vérifier zéro référence restante, les167 résultats et leurs numéros.
+- Relire le diff concret et les raccords/types supplémentaires extraits ; compilation etQA desPDF restent au parent.

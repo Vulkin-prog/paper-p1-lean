@@ -1,13 +1,22 @@
 # Reprise éditoriale après vérification des interfaces
 
-Cette note complète la [relecture initiale](reviews/2026-11-07/RAPPORT_FR.txt)
-et les améliorations déjà intégrées à la [version 1.8](MANUSCRIPT_REVISION_V1_8.md).
-Elle porte sur les précisions apparues pendant l'examen des 167 faisceaux
-de preuves, complétées par les exemples vérifiés à la source Lean
-`3df7615af2aa6a2a2bc6856bd4203c401d0434de`.
-Les sources et PDF v1.8 sont conservés. Les textes anglais ci-dessous sont
-des propositions pour une révision ultérieure ; ils ne sont pas annoncés
-comme déjà intégrés aux PDF.
+La copie de relecture la plus récente est l’[aperçu simplifié de 165 pages](editorial-proposals/2026-11-07/proof-simplification/README.md)
+(article : 64 ; compagnon : 101). Elle applique les cinq précisions initiales
+et les treize simplifications désormais relues, avec leurs sources et preuves
+existantes. L’[index d’intégration](editorial-proposals/2026-11-07/integration-status.json)
+distingue chaque proposition de l’historique des 1004 étapes de formalisation.
+Les 167 résultats et leurs numéros sont conservés ; trois blocs explicitent
+un contexte hérité par rapport à la version 1.8 archivée. Quatre labels
+d’équations internes sans usage extérieur ont été supprimés avec leur preuve,
+sans réaffectation ; les autres renvois sont reconstruits.
+
+Cette note conserve la justification des propositions initiales, en complément
+de la [relecture initiale](reviews/2026-11-07/RAPPORT_FR.txt) et de la
+[révision 1.8](MANUSCRIPT_REVISION_V1_8.md). Les formulations anglaises ci-dessous
+sont des propositions historiques désormais intégrées aux aperçus séparés,
+à adopter ou adapter par l’auteur dans une future version. Les sources et PDF
+v1.8 restent préservés. La dernière source de preuve entièrement rejouée est
+`7bfc953cd6092eebfbae5f24aeb72b7180693537`, sous Lean 4.36.0-rc2.
 
 Les deux corrections nécessaires de la version originale restent T1.10
 (rayon d'alignement) et T5.1 (plafond trivial de l'exposant). Elles sont déjà
@@ -127,7 +136,8 @@ La version 1.8 imprime la borne valide rang<=10. La preuve ultérieure donne
 rang=10, exactement deux affectations compatibles et probabilité 2^(-10).
 On peut remplacer la majoration par cette égalité dans une future version,
 en reprenant le [certificat et son explication](EXACT_RANK_EXAMPLE.md).
-Cette précision n'ajoute aucune sélection Palomar.
+Cette égalité est maintenant intégrée aux aperçus séparés, sans modification
+du texte v1.8 archivé ni nouvelle sélection Palomar.
 
 ## 8. 3.1 et 15.13 : conserver les implications imprimées
 
@@ -163,13 +173,32 @@ uniquement à une copie jetable et conservant les 167 labels.
 Une [relecture indépendante du diff](editorial-proposals/2026-11-07/independent-review.json)
 a confirmé les cinq thèmes et les quatre empreintes proposées. La précision
 sur le second membre nul des événements homogènes y est intégrée ; aucun
-PDF de cette proposition n'a encore été construit ou inspecté.
+PDF n’avait été construit à cette étape initiale. Depuis, les cinq précisions
+ont été intégrées et les aperçus compilés et inspectés. Les rapports initiaux
+restent figés ; les validations finales décrivent les contrôles postérieurs.
+
+## Simplification et élagage appliqués
+
+Les [treize propositions](editorial-proposals/2026-11-07/integration-status.json)
+sont intégrées dans la dernière copie de relecture : 277 lignes source retirées
+par rapport au stade clarifié et quatre pages de moins que les PDF v1.8.
+Les dernières coupes réemploient le demi-compte de 10.1 pour T1.14 et le résultat
+fixe plus fort de 15.5 pour T4.3 ; T4.4 reçoit simultanément une preuve autonome.
+Les projections effectives, les sources homogènes incompatibles, le centre
+normalisé et la clause à une cible sont explicites. La nouvelle carte de lecture
+explique les dépendances en avant, sans cycle avec les reconstructions ou les moments.
+Trente déclarations existantes ont été réextraites ; la relecture du diff
+et le contrôle visuel des 165 pages sont consignés dans le
+[dernier dossier](editorial-proposals/2026-11-07/proof-simplification/README.md).
+Les règles à ordre croissant et toute la branche T14–T17 sont conservées.
 
 ## Documents à transmettre à une nouvelle instance
 
-Commencer par les deux PDF v1.8 et leurs sources, puis cette note et le
-[rapport de révision v1.8](MANUSCRIPT_REVISION_V1_8.md), afin de distinguer
-ce qui est déjà intégré des propositions restantes. L'
+Commencer par les deux PDF et les sources de l’[aperçu simplifié](editorial-proposals/2026-11-07/proof-simplification/README.md),
+puis cette note, l’index d’intégration et le
+[rapport de révision v1.8](MANUSCRIPT_REVISION_V1_8.md). Comparer ensuite aux
+versions et aperçus préservés pour distinguer le fond scientifique des coupes.
+L’
 [index des 167 résultats](MANUSCRIPT_ENDPOINTS_V1_8.md) fournit les
 faisceaux exacts, localisateurs, hypothèses et rapports de relecture.
 Les journaux de compilation et leurs périmètres sont sous

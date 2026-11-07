@@ -43,6 +43,31 @@ See docs/editorial-proposals/2026-11-07/structural-simplification/README.md.
 SIM12/SIM13 remain conditional; all previous versions and previews stay
 preserved. The six registry scopes are unchanged; Palomar stays on hold.
 
+The third preserved editorial preview applies the two remaining
+simplification proposals, SIM12 and the coupled SIM13. T1.14 now uses
+the effective full-support half count; T4.3 uses the stronger fixed-size
+mass, while T4.4 receives an autonomous compressed proof with homogeneous
+source weights, normalized-centre encoding and a separate one-target
+clause. The reading guide makes these acyclic dependencies explicit.
+The source point uses the already-proved subpower loss; no unnecessary
+constant-loss rank claim is needed. Thirty existing declarations were
+actually re-extracted, with 29 propositions using only standard axioms.
+The separate instance read the exact diff, definitions and proof bodies.
+All 13 proposals are now applied in this review copy. It has 64 article
+and 101 companion pages, four fewer than frozen v1.8, after 277 physical
+source lines were saved across the three simplification passes.
+All 167 result identities and printed result numbers remain. This pass
+changes two blocks only to clarify distinctness in 7.2 and the enlarged
+cutoff in T1.9; the other 165 blocks are byte-identical to the preceding
+preview. Four unused internal equation labels are removed, not reassigned;
+548 label occurrences remain, with no unresolved references. The earlier
+geometric-index and replica-kernel precisions are already present.
+All 165 pages and 26 full detail pages were visually examined without
+observed defects. No Lean theorem, ledger entry or registry selection
+was added. The last full proof replay is still checkpoint 1004.
+See docs/editorial-proposals/2026-11-07/proof-simplification/README.md.
+All previous versions and previews remain preserved; Palomar stays on hold.
+
 Historical checkpoint P1-MATH-1003: Two concrete irregular-window examples
 separate the formal row kernel, effective relative nullity and true
 homogeneous probability. The start x=18,L=10 has rank nine, actual

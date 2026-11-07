@@ -1,0 +1,40 @@
+'PaperP1.ModerateCertificateAsymptotic.main_7_2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.EnlargedAlignedPairTheorem.companion_T1_9' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.ValueHeightHalfCount.article_10_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.BlockSupportCount.companion_T1_14' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.BlockSupportParameters.companion_T1_14' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.SeveralWindowProjectionCount.companion_T1_14' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.FixedArityHomogeneousMass.uniform_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.SharpPrimitiveNominalMass.uniform_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.PrimitiveOrderedBound.companion_T4_3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.FixedCompressedPrimitiveTheorem.companion_T4_4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.EffectiveCompressedPrimitiveMass.uniform_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.EffectiveCompressedPrimitiveMass.three_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.UnconditionalDenseTwoTargetMass.article_15_2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.SharpPrimitiveMass.uniform_rank_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.EffectiveCompressedPrimitiveCount.uniform_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.EffectiveCompressedPrimitiveElementaryMass.uniform_point' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.EffectiveCompressedPrimitiveElementaryMass.uniform_sector' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.EffectiveCompressedPrimitiveElementaryMass.from_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.EffectiveCompressedDenseExtensions.uniform_extensions' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.EffectiveCompressedDenseMass.uniform_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.PrimitiveNominalMass.ordered_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.HomogeneousRunMass.regular_weight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.PairCompressedTwoTargetData.primitive_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.HomogeneousCompressedEffectiveFactor.factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.HomogeneousCompressedEffectiveFactor.two_target_factor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.HomogeneousChannelWeights.uniform_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.HomogeneousFullChannelMass.uniform_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.BlockSupportCount.critical_interval_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.BlockSupportParameters.critical_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+Exported compiled scope types for 30 declarations
