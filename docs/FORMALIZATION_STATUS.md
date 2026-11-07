@@ -1,6 +1,18 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0989: The explicit finite-depth budget
+Current checkpoint P1-MATH-0990: The complete even-valuation retained
+set has an exact finite layer cover at depth k=(Nat.clog q N+1)/2.
+Its count C lies between (N-1)/(q+1)-3*k and N/(q+1)+2*k. Both actual
+full exponential moments inherit the explicit lower budget. For a fixed
+prime q, C/N tends to 1/(q+1), and the absolute normalized error is bounded
+uniformly over primes q<=N by (3*k(N,2)+1)/N, tending to zero. All 27 new
+proofs and the exact direct axiom audit passed. The whole-project replay
+and this refinement's manuscript integration are pending. All 167 revised
+numbered statements and the original t>2 theorem are preserved. Fourteen
+registry families (57 selections) remain locally qualified; no registration
+is claimed.
+
+Historical checkpoint P1-MATH-0989: The explicit finite-depth budget
 B_k=N/(q+1)*(1-q^(-2*k))-3*k bounds the actual retained positive starts.
 Both full exponential moments have lower bound exp(t*B_k-pi(M)*log(2))
 at the same supported cylinder cutoff M=2*q*floor(N/q). Depth one is the

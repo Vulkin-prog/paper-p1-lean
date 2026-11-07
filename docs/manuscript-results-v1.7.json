@@ -20701,6 +20701,11 @@
           "validation": "Full Lean v4.36.0-rc2 replay passed at source f55fe63b9538863bd0ec8bdf8b3deacb70f49e4d: 18,573 build jobs, 19,540 source-discovered theorem axiom checks and 19,692 distinct declaration-reference checks, all actual process exits 0. Proof warnings are errors; only propext, Classical.choice and Quot.sound occur.",
           "validation_source_commit": "f55fe63b9538863bd0ec8bdf8b3deacb70f49e4d",
           "validation_record": "docs/validation/checkpoint-0989/validation.json"
+        },
+        {
+          "checkpoint": "P1-MATH-0990",
+          "description": "For every prime q<=N, put k=(Nat.clog q N+1)/2 and let C be the cardinality of the actual retained even-valuation starts. The disjoint layers of depths j<k cover the entire retained parameter set, rather than only a subset. The exact finite count satisfies (N-1)/(q+1)-3*k<=C<=N/(q+1)+2*k. Both full actual exponential moments inherit exp(t*((N-1)/(q+1)-3*k)-primeCount(2*q*floor(N/q))*log(2)) for t>=0. For every fixed prime q, C/N tends to 1/(q+1). Uniformly over every prime q<=N, the absolute normalized error is at most (3*k(N,2)+1)/N, which tends to zero with a threshold independent of q. This is a deterministic forced-subset density, not the expected count or an improved exponential-moment threshold; the original t>2 theorem and all numbered statement blocks are preserved.",
+          "validation": "All 27 new theorems and their exact direct axiom audit passed under Lean v4.36.0-rc2, with proof warnings as errors and only propext, Classical.choice and Quot.sound. Whole-project replay and manuscript integration are pending."
         }
       ]
     },

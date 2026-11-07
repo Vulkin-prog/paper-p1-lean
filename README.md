@@ -3,7 +3,7 @@
 *Sharp Poisson approximation and second-order correction for long multiplicative
 runs*, and its technical companion, by [Brice Pouly](https://orcid.org/0009-0008-8491-2467).
 
-Current checkpoint P1-MATH-0989: all **167 revised numbered statements** have
+Current checkpoint P1-MATH-0990: all **167 revised numbered statements** have
 checked proofs, using **Lean v4.36.0-rc2**, with no unformalized mathematical
 input. This comprises all 73 main-article and all 94 revised companion results.
 The separate version 1.7 manuscript draft integrates the two necessary statement
@@ -35,7 +35,7 @@ bytes and checked counterexamples are preserved. Their corrected replacements
 are proved and integrated in version 1.7. T19.17 is proved with both original
 coefficients and without an external smooth-number premise.
 
-The ledger records **987 confirmed mathematical improvements and two statement-scope corrections**.
+The ledger records **988 confirmed mathematical improvements and two statement-scope corrections**.
 Proof substitutions, exact parameter ranges and the scope of stronger
 unasserted analytic or geometric results are documented in the source revision.
 
@@ -59,6 +59,8 @@ The [supported prime-cylinder refinement](docs/SUPPORTED_PRIME_CYLINDER.md) redu
 The [exact valuation refinement](docs/VALUATION_PRIME_CYLINDER.md) retains all positive multipliers with even q-adic valuation, including additional forced starts. Its complete replay passed; [the source-bound logs](docs/validation/checkpoint-0988/validation.json) preserve all three checks. The refinement is integrated in the revised companion appendix.
 
 The [finite-depth valuation bounds](docs/VALUATION_LAYER_BOUNDS.md) give the explicit budget N/(q+1)*(1-q^(-2*k))-3*k for every finite depth. Its complete replay passed; [the source-bound logs](docs/validation/checkpoint-0989/validation.json) preserve all three checks. The refinement is integrated in the revised companion appendix.
+
+The [effective retained-start density](docs/VALUATION_DENSITY_BOUNDS.md) chooses a complete logarithmic layer depth, proves a two-sided finite count and identifies its leading density 1/(q+1), with an error tending to zero uniformly over primes q<=N. Its 27 direct proofs and axiom audit passed; full replay and manuscript integration are pending.
 
 ## Build and verification
 

@@ -10,7 +10,8 @@ permissions:
 
 concurrency:
   group: lean-${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
+  # Preserve a running cold proof build while the newest update waits its turn.
+  cancel-in-progress: false
 
 jobs:
   verify:

@@ -42451,6 +42451,63 @@
       },
       "validation_source_commit": "f55fe63b9538863bd0ec8bdf8b3deacb70f49e4d",
       "validation_record": "docs/validation/checkpoint-0989/validation.json"
+    },
+    {
+      "id": "P1-MATH-0990",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:cylinder",
+        "number": "T19.7",
+        "page": 71,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 385,
+        "statement_sha256": "c4dfa742ae68556d196927fdaaae789b2734586e0e9820cdff17c2218e8639be"
+      },
+      "original_assumption": "The finite-depth lower estimate left the layer depth free and did not identify the exact leading density of the complete retained set.",
+      "finding": "For every prime q<=N, put k=(Nat.clog q N+1)/2 and let C be the cardinality of the actual retained even-valuation starts. The disjoint layers of depths j<k cover the entire retained parameter set, rather than only a subset. The exact finite count satisfies (N-1)/(q+1)-3*k<=C<=N/(q+1)+2*k. Both full actual exponential moments inherit exp(t*((N-1)/(q+1)-3*k)-primeCount(2*q*floor(N/q))*log(2)) for t>=0. For every fixed prime q, C/N tends to 1/(q+1). Uniformly over every prime q<=N, the absolute normalized error is at most (3*k(N,2)+1)/N, which tends to zero with a threshold independent of q. This is a deterministic forced-subset density, not the expected count or an improved exponential-moment threshold; the original t>2 theorem and all numbered statement blocks are preserved.",
+      "proposed_revision": "Give the explicit logarithmic depth, its complete layer cover, two-sided count and actual exponential bounds. State the fixed-prime density and the uniform absolute normalized error with a threshold before the prime quantifier.",
+      "impact": "Identifies the exact leading retained-start count and makes the finite lower estimate parameter-free, with a proved uniform logarithmic endpoint error. No count, density or moment bound is assumed as input.",
+      "evidence": [
+        "PaperP1.ValuationDensityBounds.depth",
+        "PaperP1.ValuationDensityBounds.lowerBudget",
+        "PaperP1.ValuationDensityBounds.uniformError",
+        "PaperP1.ValuationDensityBounds.clog_le_twice_depth",
+        "PaperP1.ValuationDensityBounds.cutoff_power",
+        "PaperP1.ValuationDensityBounds.parameters_positive",
+        "PaperP1.ValuationDensityBounds.parameters_lt_size",
+        "PaperP1.ValuationDensityBounds.factorization_lt_depth",
+        "PaperP1.ValuationDensityBounds.retained_parameters_eq_layers",
+        "PaperP1.ValuationDensityBounds.starts_card_eq_layer_sum",
+        "PaperP1.ValuationDensityBounds.inverse_power_tail",
+        "PaperP1.ValuationDensityBounds.budget_le_chosen_depth",
+        "PaperP1.ValuationDensityBounds.starts_card_lower",
+        "PaperP1.ValuationDensityBounds.card_layer_real_upper",
+        "PaperP1.ValuationDensityBounds.parameter_layer_real_upper",
+        "PaperP1.ValuationDensityBounds.starts_card_upper",
+        "PaperP1.ValuationDensityBounds.effective_count_bounds",
+        "PaperP1.ValuationDensityBounds.count_error_bound",
+        "PaperP1.ValuationDensityBounds.normalized_error_bound",
+        "PaperP1.ValuationDensityBounds.positive_exponential_lower",
+        "PaperP1.ValuationDensityBounds.total_exponential_lower",
+        "PaperP1.ValuationDensityBounds.depth_le_clog",
+        "PaperP1.ValuationDensityBounds.depth_real_upper",
+        "PaperP1.ValuationDensityBounds.depth_div_tendsto_zero",
+        "PaperP1.ValuationDensityBounds.normalized_error_tendsto_zero",
+        "PaperP1.ValuationDensityBounds.retained_start_density",
+        "PaperP1.ValuationDensityBounds.depth_anti_base",
+        "PaperP1.ValuationDensityBounds.normalized_error_uniform_bound",
+        "PaperP1.ValuationDensityBounds.uniform_error_tendsto_zero",
+        "PaperP1.ValuationDensityBounds.uniform_density_approximation"
+      ],
+      "validation": "All 27 new theorems and their exact direct axiom audit passed under Lean v4.36.0-rc2, with proof warnings as errors and only propext, Classical.choice and Quot.sound. Whole-project replay and manuscript integration are pending.",
+      "integration": {
+        "target": "P1 V1.7 draft",
+        "status": "not_integrated",
+        "numbered_statements_changed": false
+      }
     }
   ]
 }

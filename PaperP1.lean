@@ -4929,3 +4929,4 @@ public import PaperP1.Model.OneSidedPrimeCylinder
 public import PaperP1.Model.SupportedPrimeCylinder
 public import PaperP1.Model.ValuationPrimeCylinder
 public import PaperP1.Model.ValuationLayerCounts
+public import PaperP1.Model.ValuationDensityBounds
