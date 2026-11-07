@@ -53606,7 +53606,24 @@
         "PaperP1.SupportedPrimeCylinder.strict_charge_reduction_on_original_scale",
         "PaperP1.SupportedPrimeCylinder.exact_prime_charges_on_original_scale",
         "PaperP1.SupportedPrimeCylinder.exponential_bound_gain_on_original_scale",
-        "PaperP1.SupportedPrimeCylinder.cutoff"
+        "PaperP1.SupportedPrimeCylinder.cutoff",
+        "PaperP1.ValuationPrimeCylinder.mem_starts",
+        "PaperP1.ValuationPrimeCylinder.parity_condition_iff_even",
+        "PaperP1.ValuationPrimeCylinder.positive_start_iff",
+        "PaperP1.ValuationPrimeCylinder.positive_start_iff_even_factorization",
+        "PaperP1.ValuationPrimeCylinder.original_starts_subset",
+        "PaperP1.ValuationPrimeCylinder.retained_starts_cutoff",
+        "PaperP1.ValuationPrimeCylinder.starts_subset_interval",
+        "PaperP1.ValuationPrimeCylinder.positive_count_on_sample",
+        "PaperP1.ValuationPrimeCylinder.positive_exponential_card_lower",
+        "PaperP1.ValuationPrimeCylinder.total_exponential_card_lower",
+        "PaperP1.ValuationPrimeCylinder.starts_card_lower",
+        "PaperP1.ValuationPrimeCylinder.new_start_example",
+        "PaperP1.ValuationPrimeCylinder.excluded_by_previous_example",
+        "PaperP1.ValuationPrimeCylinder.strictly_more_starts_example",
+        "PaperP1.ValuationPrimeCylinder.strictly_stronger_card_bound_example",
+        "PaperP1.ValuationPrimeCylinder.retainedParameters",
+        "PaperP1.ValuationPrimeCylinder.starts"
       ],
       "literature_inputs": [
         "P1-ARITH-PNT",
@@ -53614,9 +53631,10 @@
       ],
       "mathematical_changes": [
         "P1-MATH-0986",
-        "P1-MATH-0987"
+        "P1-MATH-0987",
+        "P1-MATH-0988"
       ],
-      "notes": "The deliberately retained starts q*u+1, with floor(N/q)+1<=u<2*floor(N/q), use no integer beyond M=2*q*floor(N/q). Their actual positive count is a finite-cylinder observable at this smaller cutoff. Integrability and monotonicity of actual exponential moments transfer its atom lower bound to the full count. Thus both full positive and total exponential moments are at least exp(t*(N/q-N/q^2-3)-primeCount(M)*log(2)) for every prime q<=N and t>=0. Since M<=2*N, the corresponding primeCount(2*N) bound follows too. At the original scale q=7, N=64, the new, dyadic and earlier sufficient cutoffs charge 30, 31 and 32 primes respectively, giving a proved factor-four gain over the earlier finite bound with the same count contribution. The original t>2 prime-scale liminf statement and its coefficient are preserved.\n\nIn the one-negative-prime sample, starts q*u+1 of length at least q-1 require only q not dividing u. The condition q not dividing u+1 enforces the next opposite sign and is unnecessary for the actual run-start observable. Keeping the larger one-sided parameter set proves the finite lower bound N/q-N/q^2-3, improves the previous valid N/q-2N/q^2-4 bound, and strengthens the actual positive and total exponential-moment lower bounds. The original odd-prime scale, t>2 range and (t-2)log(2) liminf coefficient are preserved.\n\nComplete positive and total exponential-moment lower bound under the original infinite prime-sign measure, with N_q=2^(q-1), L_q=q-1, and every fixed t>2. A concrete finite cylinder has exact probability 2^-pi(M); elementary divisibility forces positive exact runs and gives at least N/q-2N/q^2-4 starts. Finite-cylinder expectation transfer proves the original moment and logarithmic lower bounds. The already formalized sharp PNT gives the cost limit 2 log 2; the start contribution tends to log 2. The odd-prime filter is proved nontrivial. The literal extended-real liminf, explicit epsilon thresholds, positive constant and actual moment divergence above every level are proved. The cutoff is the sufficient existing dyadic cutoff 2N+q-1 rather than the source 2N+q; this one-unit change has the same proved limit. No target probability, start count, PNT or asymptotic bound is assumed. No threshold optimality or later large-component theorem is claimed. See PRIME_CYLINDER_ALIGNMENT.md.",
+      "notes": "For a positive multiplier u in the one-negative-prime sample, the positive run-start condition at q*u+1 with length at least q-1 is equivalent to an even q-adic valuation of u. The earlier q not dividing u condition is only sufficient. Retaining every multiplier with even valuation in the same parameter interval enlarges the forced start set. The same supported cutoff M=2*q*floor(N/q), exact cylinder probability and actual expectation monotonicity give the stronger cardinality-based lower bounds for both full moments. The earlier explicit real lower count N/q-N/q^2-3 remains valid. At N=18, q=3 the start 28 is added, because u=9 has valuation two. The retained cardinality and corresponding exponential lower bound are strictly larger for every t>0. The original prime-scale t>2 asymptotic theorem and coefficient are preserved.\n\nThe deliberately retained starts q*u+1, with floor(N/q)+1<=u<2*floor(N/q), use no integer beyond M=2*q*floor(N/q). Their actual positive count is a finite-cylinder observable at this smaller cutoff. Integrability and monotonicity of actual exponential moments transfer its atom lower bound to the full count. Thus both full positive and total exponential moments are at least exp(t*(N/q-N/q^2-3)-primeCount(M)*log(2)) for every prime q<=N and t>=0. Since M<=2*N, the corresponding primeCount(2*N) bound follows too. At the original scale q=7, N=64, the new, dyadic and earlier sufficient cutoffs charge 30, 31 and 32 primes respectively, giving a proved factor-four gain over the earlier finite bound with the same count contribution. The original t>2 prime-scale liminf statement and its coefficient are preserved.\n\nIn the one-negative-prime sample, starts q*u+1 of length at least q-1 require only q not dividing u. The condition q not dividing u+1 enforces the next opposite sign and is unnecessary for the actual run-start observable. Keeping the larger one-sided parameter set proves the finite lower bound N/q-N/q^2-3, improves the previous valid N/q-2N/q^2-4 bound, and strengthens the actual positive and total exponential-moment lower bounds. The original odd-prime scale, t>2 range and (t-2)log(2) liminf coefficient are preserved.\n\nComplete positive and total exponential-moment lower bound under the original infinite prime-sign measure, with N_q=2^(q-1), L_q=q-1, and every fixed t>2. A concrete finite cylinder has exact probability 2^-pi(M); elementary divisibility forces positive exact runs and gives at least N/q-2N/q^2-4 starts. Finite-cylinder expectation transfer proves the original moment and logarithmic lower bounds. The already formalized sharp PNT gives the cost limit 2 log 2; the start contribution tends to log 2. The odd-prime filter is proved nontrivial. The literal extended-real liminf, explicit epsilon thresholds, positive constant and actual moment divergence above every level are proved. The cutoff is the sufficient existing dyadic cutoff 2N+q-1 rather than the source 2N+q; this one-unit change has the same proved limit. No target probability, start count, PNT or asymptotic bound is assumed. No threshold optimality or later large-component theorem is claimed. See PRIME_CYLINDER_ALIGNMENT.md.",
       "strengthening_validation": [
         {
           "checkpoint": "P1-MATH-0986",
@@ -53631,6 +53649,11 @@
           "validation": "Full Lean v4.36.0-rc2 replay passed at source 68164c4abb37b8679c9c3f1f4e78dc52667a285b: 18,567 build jobs, 19,485 source-discovered theorem axiom checks and 19,643 distinct declaration-reference checks, all actual process exits 0. Proof warnings are errors; only propext, Classical.choice and Quot.sound occur.",
           "validation_source_commit": "68164c4abb37b8679c9c3f1f4e78dc52667a285b",
           "validation_record": "docs/validation/checkpoint-0987/validation.json"
+        },
+        {
+          "checkpoint": "P1-MATH-0988",
+          "scope": "Exact even-valuation start criterion and larger supported finite cylinder count; the original theorem proof remains validated.",
+          "validation": "All 15 new theorems passed direct Lean v4.36.0-rc2 verification and the exact axiom audit with proof warnings as errors. Only propext, Classical.choice and Quot.sound occur. The full project and declaration-reference replay are pending."
         }
       ]
     },

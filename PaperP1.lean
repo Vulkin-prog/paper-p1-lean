@@ -4927,3 +4927,4 @@ public import PaperP1.Analysis.RevisedCompanionStatements
 public import PaperP1.Analysis.QuadraticComparisonRange
 public import PaperP1.Model.OneSidedPrimeCylinder
 public import PaperP1.Model.SupportedPrimeCylinder
+public import PaperP1.Model.ValuationPrimeCylinder

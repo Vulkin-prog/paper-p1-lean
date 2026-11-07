@@ -2,7 +2,7 @@
 
 The mathematical correspondence is complete for the separate version 1.7 draft:
 **167 proved statements**, comprising all 73 article and all 94 companion
-results. Current mathematical checkpoint: P1-MATH-0987. The original version
+results. Current mathematical checkpoint: P1-MATH-0988. The original version
 1.6 retains its exact bytes and its two false-original statuses; its 165 other
 statements are proved. Both revised PDFs and their visual checks are preserved.
 
@@ -44,6 +44,10 @@ and complete proofs. Its standalone exports passed six checkers at the stated
 proof base, and its frozen root passed Lean/NanoDa and the supplementary
 verified con-ron replay. The original t>2 scope is preserved.
 
+The local-rigidity candidate adds five statements covering companion T1.1,
+T1.2 and all clauses of main lemma 2.1. Its standalone exports passed six
+checkers; frozen-root qualification is pending.
+
 Run the local preparation checks with:
 
 ```sh
@@ -83,7 +87,7 @@ inventory. The full project snapshot stays below the 500 MiB source limit.
 The [original workflow caller](../.github/workflows/palomar-preflight.yml) selects
 exactly seven families; the [additional caller](../.github/workflows/palomar-preflight-additional.yml)
 selects factorial cumulants, the moment obstruction, dependent expansions and
-integral-curve counts, finite affine spectra and exponential-moment divergence. Both are prepared.
+integral-curve counts, finite affine spectra, exponential-moment divergence and local rigidity. Both are prepared.
 Both its `uses` revision and `pipeline_commit` are fixed to the exact same
 PalomarSubmission SHA above. It uses `mode: full`, the required external
 `palomar-standard-v1` profile, read-only repository permissions and one family

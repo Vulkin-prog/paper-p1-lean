@@ -3,7 +3,7 @@
 *Sharp Poisson approximation and second-order correction for long multiplicative
 runs*, and its technical companion, by [Brice Pouly](https://orcid.org/0009-0008-8491-2467).
 
-Current checkpoint P1-MATH-0987: all **167 revised numbered statements** have
+Current checkpoint P1-MATH-0988: all **167 revised numbered statements** have
 checked proofs, using **Lean v4.36.0-rc2**, with no unformalized mathematical
 input. This comprises all 73 main-article and all 94 revised companion results.
 The separate version 1.7 manuscript draft integrates the two necessary statement
@@ -35,7 +35,7 @@ bytes and checked counterexamples are preserved. Their corrected replacements
 are proved and integrated in version 1.7. T19.17 is proved with both original
 coefficients and without an external smooth-number premise.
 
-The ledger records **985 confirmed mathematical improvements and two statement-scope corrections**.
+The ledger records **986 confirmed mathematical improvements and two statement-scope corrections**.
 Proof substitutions, exact parameter ranges and the scope of stronger
 unasserted analytic or geometric results are documented in the source revision.
 
@@ -55,6 +55,8 @@ proves the sharper finite start count N/q-N/q^2-3 and corresponding positive
 and total exponential-moment lower bounds. Its full replay passed; the [source-bound evidence](docs/validation/checkpoint-0986/validation.json) preserves all three checks. No numbered statement changes.
 
 The [supported prime-cylinder refinement](docs/SUPPORTED_PRIME_CYLINDER.md) reduces the probability charge to primeCount(2*q*floor(N/q)). Its complete replay passed; the [source-bound logs](docs/validation/checkpoint-0987/validation.json) preserve all three checks. The refinement is integrated in the revised companion appendix.
+
+The [exact valuation refinement](docs/VALUATION_PRIME_CYLINDER.md) retains all positive multipliers with even q-adic valuation, including additional forced starts. Its 15 direct proofs and axiom audit passed; full replay and manuscript integration are pending.
 
 ## Build and verification
 
@@ -113,6 +115,8 @@ preserve the actual logs, binary identities and positive/ill-typed controls.
 The finite-affine family also passed [all six available local checkers](palomar/v1/supplementary/affine-spectra-six-kernels.json). Two larger representative families passed the additional optional checkers as well; each report identifies its exact source.
 
 The exponential-moment family has four literal-model statements with explicit integrability, prime thresholds, a nontrivial odd-prime liminf and simultaneous divergence at nominal mean one. Its [standalone six-checker report](palomar/v1/supplementary/exponential-divergence-draft-checks.json) retains its exact earlier proof base; root qualification and the con-ron replay have their own immutable source.
+
+A further [local-rigidity candidate](palomar/v1/local_rigidity/formalization.yaml) has five explicit statements and complete proofs, with all six checkers passing on standalone exports. Frozen-root qualification is pending.
 
 The [candidate interfaces](palomar/v1/README.md) link each standalone Mathlib-only
 Challenge, complete Solution, Comparator configuration, metadata and preserved

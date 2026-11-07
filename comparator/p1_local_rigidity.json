@@ -1,0 +1,17 @@
+{
+  "challenge_module": "ChallengeP1LocalRigidity",
+  "solution_module": "SolutionP1LocalRigidity",
+  "theorem_names": [
+    "PaperP1Registry.LocalRigidity.split_product_bound",
+    "PaperP1Registry.LocalRigidity.uniform_quadratic_count",
+    "PaperP1Registry.LocalRigidity.finite_relative_griesmer",
+    "PaperP1Registry.LocalRigidity.logarithmic_rank_regimes",
+    "PaperP1Registry.LocalRigidity.subcritical_relative_signs"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "enable_nanoda": true
+}

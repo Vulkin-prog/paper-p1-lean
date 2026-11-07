@@ -20619,7 +20619,24 @@
         "PaperP1.SupportedPrimeCylinder.strict_charge_reduction_on_original_scale",
         "PaperP1.SupportedPrimeCylinder.exact_prime_charges_on_original_scale",
         "PaperP1.SupportedPrimeCylinder.exponential_bound_gain_on_original_scale",
-        "PaperP1.SupportedPrimeCylinder.cutoff"
+        "PaperP1.SupportedPrimeCylinder.cutoff",
+        "PaperP1.ValuationPrimeCylinder.mem_starts",
+        "PaperP1.ValuationPrimeCylinder.parity_condition_iff_even",
+        "PaperP1.ValuationPrimeCylinder.positive_start_iff",
+        "PaperP1.ValuationPrimeCylinder.positive_start_iff_even_factorization",
+        "PaperP1.ValuationPrimeCylinder.original_starts_subset",
+        "PaperP1.ValuationPrimeCylinder.retained_starts_cutoff",
+        "PaperP1.ValuationPrimeCylinder.starts_subset_interval",
+        "PaperP1.ValuationPrimeCylinder.positive_count_on_sample",
+        "PaperP1.ValuationPrimeCylinder.positive_exponential_card_lower",
+        "PaperP1.ValuationPrimeCylinder.total_exponential_card_lower",
+        "PaperP1.ValuationPrimeCylinder.starts_card_lower",
+        "PaperP1.ValuationPrimeCylinder.new_start_example",
+        "PaperP1.ValuationPrimeCylinder.excluded_by_previous_example",
+        "PaperP1.ValuationPrimeCylinder.strictly_more_starts_example",
+        "PaperP1.ValuationPrimeCylinder.strictly_stronger_card_bound_example",
+        "PaperP1.ValuationPrimeCylinder.retainedParameters",
+        "PaperP1.ValuationPrimeCylinder.starts"
       ],
       "remaining_unformalized_inputs": [],
       "validation": "Included in the complete checkpoint P1-MATH-0983 replay.",
@@ -20638,6 +20655,11 @@
           "validation": "Full Lean v4.36.0-rc2 replay passed at source 68164c4abb37b8679c9c3f1f4e78dc52667a285b: 18,567 build jobs, 19,485 source-discovered theorem axiom checks and 19,643 distinct declaration-reference checks, all actual process exits 0. Proof warnings are errors; only propext, Classical.choice and Quot.sound occur.",
           "validation_source_commit": "68164c4abb37b8679c9c3f1f4e78dc52667a285b",
           "validation_record": "docs/validation/checkpoint-0987/validation.json"
+        },
+        {
+          "checkpoint": "P1-MATH-0988",
+          "description": "For a positive multiplier u in the one-negative-prime sample, the positive run-start condition at q*u+1 with length at least q-1 is equivalent to an even q-adic valuation of u. The earlier q not dividing u condition is only sufficient. Retaining every multiplier with even valuation in the same parameter interval enlarges the forced start set. The same supported cutoff M=2*q*floor(N/q), exact cylinder probability and actual expectation monotonicity give the stronger cardinality-based lower bounds for both full moments. The earlier explicit real lower count N/q-N/q^2-3 remains valid. At N=18, q=3 the start 28 is added, because u=9 has valuation two. The retained cardinality and corresponding exponential lower bound are strictly larger for every t>0. The original prime-scale t>2 asymptotic theorem and coefficient are preserved.",
+          "validation": "All 15 new theorems passed direct Lean v4.36.0-rc2 verification and the exact axiom audit with proof warnings as errors. Only propext, Classical.choice and Quot.sound occur. The full project and declaration-reference replay are pending."
         }
       ]
     },

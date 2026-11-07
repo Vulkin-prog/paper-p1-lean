@@ -1,0 +1,92 @@
+version: v0.4
+project:
+  name: Uniform local arithmetic rigidity and exact relative-sign independence
+  description: The split-product square bound is uniform in every even degree, with original constant
+    64 and real radius. The positive quadratic equation count is uniform in all positive coefficients
+    and nonzero right sides of fixed polynomial height. The literal even square-relation code of a consecutive
+    integer window, its dimension and exact logarithmic distance are defined using actual prime-factor
+    parity vectors. Its real Griesmer sum, both original logarithmic rank regimes and exact subcritical
+    relative-sign law are proved without target count or independence assumptions. The full relative-bit
+    vector has the fair product law under the literal independent prime-sign measure, and its actual integer-valued
+    relative signs are independent.
+  authors:
+  - Brice Pouly
+  author_identifiers:
+  - name: Brice Pouly
+    github: Vulkin-prog
+    orcid: 0009-0008-8491-2467
+  responsible_maintainers:
+  - Brice Pouly
+  license: Apache-2.0
+repository:
+  role: substantive-development
+classification:
+  arxiv:
+  - math.NT
+  - math.PR
+sources:
+- title: Sharp Poisson approximation and second-order correction for long multiplicative runs, version
+    1.7 draft
+  authors:
+  - Brice Pouly
+  id: https://github.com/Vulkin-prog/paper-p1-lean
+  type: paper
+  relationship: formalizes
+  location: Companion lemmas T1.1 and T1.2; all clauses of main lemma 2.1, including the finite untruncated
+    Griesmer sum, critical logarithmic rank at most one, general logarithmic rank thresholds and exact
+    subcritical relative-sign independence.
+  note: Five explicit interfaces retain degree uniformity, coefficient uniformity and threshold order.
+    The binary relation code is the intersection of the kernels of actual prime-parity and evenness maps.
+    The entire relative-bit vector has its actual fair product law; independence is a conclusion. The
+    reference vertex is U+1, and the other B-1 vertices are U and U+2 through U+B-1.
+related_formalizations:
+- id: https://github.com/Vulkin-prog/paper-c-lean
+  relationship: adapts
+  note: Prime-sign measure/parity foundations and exact Pell equation/height predicates were adapted through
+    P1 from Paper C commit b9fa9ba490f201b408a302a86f1594ee620b228b, Apache-2.0, with attribution in source
+    headers and docs/PAPER_C_REUSE.md. All were rebuilt with Lean v4.36.0-rc2. Uniform split-product and
+    quadratic counts, the actual window code and full logarithmic rigidity consequences are proved in
+    the substantive P1 development.
+automation:
+  methods:
+  - method: agent
+    framework: Codex
+    models:
+    - OpenAI Codex agents
+    prompting_notes: Define the full window even square-relation code using literal factorization parities
+      and normalized independent prime signs. Preserve every even degree in Runge, both square and nonsquare
+      quadratic cases, nonzero signed right sides, real height floors and thresholds before coefficients.
+      State the real Griesmer sum without natural subtraction truncation. Include critical and general
+      logarithmic regimes and prove the actual joint relative-bit product law, then integer relative-sign
+      independence.
+    tool_setup: Lean proof construction, explicit Mathlib-only arithmetic/probability definitions, exact
+      bridges to the substantive P1 proofs, compiler/export comparison and source-discovered axiom audits.
+  notes: Agent assistance is not independent human peer review.
+review:
+  status: agent-reviewed
+  notes: 'All five explicit statements and the complete standalone Solution compile with proof warnings
+    as errors. All 13 theorem and bridge declarations passed a direct axiom audit, allowing only the three
+    standard kernel axioms. Both exact modules have been compiled and exported. Independent export comparison,
+    frozen-root qualification and the complete Palomar workflow are recorded separately after actual success.
+    Only the five selected Challenge theorem statements have deliberate holes. Manual exports passed exact
+    statement comparison and all six checkers: Lean default, Lean paranoid, lean4lean, NanoDa, verified
+    con-leche and verified con-ron with two jobs, with isolation enabled.'
+status:
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms:
+  - propext
+  - Quot.sound
+  - Classical.choice
+  scope: 'Five selected declarations: degree-uniform split-product square bound; coefficient-uniform positive
+    quadratic count; actual finite Griesmer inequality; both original logarithmic rank regimes; actual
+    joint relative-bit product law and relative-sign independence in every subcritical window. No target
+    bound or independence premise is assumed. No registration is claimed.'
+fidelity:
+  divergences: The split-product interface allows a real radius and an integral base, with all original
+    even degrees. Real heights in the literal positive quadratic count use the exactly equivalent natural
+    floor box. The Griesmer sum is real-valued with ordinary subtraction. Both logarithmic length hypotheses
+    retain their original little-o or asymptotic-equivalence meaning. Relative bits and integer signs
+    use the reference vertex U+1; all other window vertices are included exactly once. The case B=1 has
+    the correctly empty family. The uniform lower base condition is a*N<=U, with no unnecessary upper
+    base restriction.

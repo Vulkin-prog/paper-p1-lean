@@ -1,6 +1,19 @@
 # Mathematical corrections and improvements
 
-Current checkpoint P1-MATH-0987: The retained one-sided starts use only
+Current checkpoint P1-MATH-0988: In the one-negative-prime sample, a
+positive multiplier produces the retained positive start exactly when
+its q-adic valuation is even. This enlarges the earlier coprime multiplier
+set at the same supported cutoff M=2*q*floor(N/q). At N=18, q=3, the
+new start 28 gives a checked strict cardinality and exponential-bound gain.
+All 15 direct proofs and their exact axiom audit passed; the full replay
+is pending. The original t>2 prime-scale theorem is preserved. All 167
+revised statements remain proved; original coverage stays 165 proved and
+two false-original scopes. Thirteen registry families (52 selections)
+remain locally qualified; a fourteenth local-rigidity candidate with five
+statements passed six checkers on standalone exports. Its frozen-root
+qualification remains pending. No Palomar registration is claimed.
+
+Historical checkpoint P1-MATH-0987: The retained one-sided starts use only
 prime signs up to M=2*q*floor(N/q)<=2*N. Their finite-cylinder probability
 charge is reduced accordingly, and both actual full exponential moments
 retain the lower start budget N/q-N/q^2-3. At q=7, N=64, the exact charges
@@ -3756,7 +3769,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**985 mathematical improvements and two statement-scope corrections are confirmed.**
+**986 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -35756,3 +35769,10 @@ uses monotonicity for t>=0 to bound the full positive and total moments.
 No full-count cutoff hypothesis is assumed. The new module is
 PaperP1.Model.SupportedPrimeCylinder. The separate registry receipts keep
 their original selected statements and imported proof closures unchanged.
+
+
+## P1-MATH-0988 — Exact valuation criterion in the prime cylinder
+
+For a positive multiplier u in the one-negative-prime sample, the positive run-start condition at q*u+1 with length at least q-1 is equivalent to an even q-adic valuation of u. The earlier q not dividing u condition is only sufficient. Retaining every multiplier with even valuation in the same parameter interval enlarges the forced start set. The same supported cutoff M=2*q*floor(N/q), exact cylinder probability and actual expectation monotonicity give the stronger cardinality-based lower bounds for both full moments. The earlier explicit real lower count N/q-N/q^2-3 remains valid. At N=18, q=3 the start 28 is added, because u=9 has valuation two. The retained cardinality and corresponding exponential lower bound are strictly larger for every t>0. The original prime-scale t>2 asymptotic theorem and coefficient are preserved.
+
+All 15 new theorems passed direct Lean v4.36.0-rc2 verification and the exact axiom audit with proof warnings as errors. Only propext, Classical.choice and Quot.sound occur. The full project and declaration-reference replay are pending.
