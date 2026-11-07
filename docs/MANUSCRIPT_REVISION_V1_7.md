@@ -4,7 +4,11 @@ Version 1.7 is a separate draft derived from the preserved version 1.6
 package after completion of the original valid statements through
 P1-MATH-0983. It retains all 167 labels. The baseline ledger remains
 165 proved, 0 conditional and 2 false-original scopes in progress.
-The revised ledger tracks the two corrected statements separately.
+The revised ledger tracks the two corrected statements separately and records all
+167 revised statements as proved after full checkpoint P1-MATH-0984.
+The replay passed 18,535 build jobs, 19,288 theorem axiom checks and
+19,607 distinct declaration-reference checks. Its proof commit is
+27bc1758cb8ed6b2a95add0f70f90dfe450c2de7.
 
 | Result | Source revision | Checked mathematical basis |
 |---|---|---|

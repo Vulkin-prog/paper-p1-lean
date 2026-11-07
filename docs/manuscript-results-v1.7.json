@@ -15531,11 +15531,12 @@
       ],
       "remaining_unformalized_inputs": [],
       "revision_reason": "Match the nonalignment radius to the actual old enclosing interval.",
-      "validation": "Revised source alias target checked; full checkpoint P1-MATH-0984 replay pending.",
+      "validation": "Full checkpoint P1-MATH-0984 passed: 18535 build jobs, 19288 axiom-audited theorems and 19607 distinct checked references. Only propext, Classical.choice and Quot.sound.",
       "canonical_statement": "PaperP1.RevisedCompanionStatements.companion_T1_10",
       "canonical_additional_statements": [
         "PaperP1.RevisedCompanionStatements.small_prime_bits_unchanged"
-      ]
+      ],
+      "validation_commit": "27bc1758cb8ed6b2a95add0f70f90dfe450c2de7"
     },
     {
       "label": "p1:arith:palmrank",
@@ -17739,11 +17740,12 @@
       ],
       "remaining_unformalized_inputs": [],
       "revision_reason": "Cap the exponent minimum by the trivial exponent 1 before the exact affine comparison.",
-      "validation": "Revised source alias target checked; full checkpoint P1-MATH-0984 replay pending.",
+      "validation": "Full checkpoint P1-MATH-0984 passed: 18535 build jobs, 19288 axiom-audited theorems and 19607 distinct checked references. Only propext, Classical.choice and Quot.sound.",
       "canonical_statement": "PaperP1.RevisedCompanionStatements.companion_T5_1",
       "canonical_additional_statements": [
         "PaperP1.RevisedCompanionStatements.companion_T5_1_exact_comparison"
-      ]
+      ],
+      "validation_commit": "27bc1758cb8ed6b2a95add0f70f90dfe450c2de7"
     },
     {
       "label": "p13:short:split",
@@ -26626,5 +26628,35 @@
       "validation": "Included in the complete checkpoint P1-MATH-0983 replay.",
       "baseline_validation_commit": null
     }
-  ]
+  ],
+  "full_checkpoint_validation": {
+    "checkpoint": "P1-MATH-0984",
+    "proof_commit": "27bc1758cb8ed6b2a95add0f70f90dfe450c2de7",
+    "validation_metadata_commit": "6e245330fb500ad7f2f8a01385a46c75bde84bef",
+    "toolchain": "leanprover/lean4:v4.36.0-rc2",
+    "mathlib_commit": "9d581dfff2e41de989072ea63abf3daf69311520",
+    "full_build_jobs": 18535,
+    "audited_theorems": 19288,
+    "distinct_checked_references": 19607,
+    "permitted_kernel_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "all_three_exit_codes": 0,
+    "logs": [
+      {
+        "kind": "build",
+        "sha256_gzip": "4e3ce7260e2a8b481a74ae6286f11d0e8d606bf41c14c5c5484c5529a54ba252"
+      },
+      {
+        "kind": "audit",
+        "sha256_gzip": "c18dbff307384909ee75eaa7eebae57666dc0f63dc5fbb9e75c90c02e98a94ac"
+      },
+      {
+        "kind": "references",
+        "sha256_gzip": "07f40ae57bbb7cdcd4195fe60d71c8152fc474ceace2e3e172b6673a09806979"
+      }
+    ]
+  }
 }
