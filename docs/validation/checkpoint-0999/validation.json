@@ -1,0 +1,41 @@
+{
+  "checkpoint": "P1-MATH-0999",
+  "source_commit": "abef59777a1ba21ecf38270f1aa7596cae1acf6c",
+  "status": "passed",
+  "full_build_jobs": 18619,
+  "audited_theorems": 19965,
+  "substantive_theorems": 19537,
+  "preserved_component_solution_theorems": 214,
+  "consolidated_solution_theorems": 214,
+  "distinct_checked_references": 19888,
+  "actual_process_exit_codes": {
+    "build": 0,
+    "audit": 0,
+    "references": 0
+  },
+  "toolchain": "leanprover/lean4:v4.36.0-rc2",
+  "mathlib_commit": "9d581dfff2e41de989072ea63abf3daf69311520",
+  "permitted_kernel_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "logs": [
+    {
+      "kind": "build",
+      "path": "docs/validation/checkpoint-0999/build.log.gz",
+      "sha256_gzip": "c5698d2f1013c2f505bc412d7dba52ac1a536db59635392cd19122069f405a7c"
+    },
+    {
+      "kind": "audit",
+      "path": "docs/validation/checkpoint-0999/audit.log.gz",
+      "sha256_gzip": "49782ead3b433fb98483938d3e5c7760f8ba4136df6f60f32d8ac9923e7a8d67"
+    },
+    {
+      "kind": "references",
+      "path": "docs/validation/checkpoint-0999/references.log.gz",
+      "sha256_gzip": "65a401834f10d04ac6855487a492b41983daf1038511b4177995143c11f64651"
+    }
+  ],
+  "scope": "Exact finite N=18,q=3 retained-forcing rank 10, kernel dimension one, two compatible solutions and mass 2^-10. Eight new audited theorems. Existing 167 numbered results and all six registration interfaces retain their types. No new asymptotic threshold or general-rank formula; the frozen v1.8 manuscripts remain unchanged."
+}

@@ -1,10 +1,10 @@
 {
-  "validated_source_commit": "c07b036aed5a9310d4f79f816969e45a20628138",
+  "validated_source_commit": "abef59777a1ba21ecf38270f1aa7596cae1acf6c",
   "scope": "All PaperP1 modules, root Lean files (including all Solutions and Audit), compiler and dependency pins. Temporary diagnostic modules are not imported by any proof.",
   "files": [
     {
       "path": "Audit.lean",
-      "sha256": "c05a19097ece0273eb0343c2b4a405032e055f6bf350c53591494a7523a517c1"
+      "sha256": "e3247c480de8a63615b61cc5f81e894167fc83f8b926cd408926bb920ea47945"
     },
     {
       "path": "ChallengeP1AffineSpectra.lean",
@@ -100,7 +100,7 @@
     },
     {
       "path": "PaperP1.lean",
-      "sha256": "3977fc3b2cf827cb3943f228ebdbb168a68fcfbf598350dde893a774129c0d5a"
+      "sha256": "daa526a45c2eb84798657951cfc415530435e4d0831b3945be8758f619d1d478"
     },
     {
       "path": "PaperP1/Affine/BinaryMassLattice.lean",
@@ -16693,6 +16693,10 @@
     {
       "path": "PaperP1/Model/ExactContactEdges.lean",
       "sha256": "9e2ae2efb65856ba13b76c7059eb416a06c0094d2c5249275249e11821effff3"
+    },
+    {
+      "path": "PaperP1/Model/ExactRankPrimeCylinderExample.lean",
+      "sha256": "e269336932fee8c09b6a1d203350545424be988cefa29649d8ea027393687c09"
     },
     {
       "path": "PaperP1/Model/ExtensionJointFactor.lean",

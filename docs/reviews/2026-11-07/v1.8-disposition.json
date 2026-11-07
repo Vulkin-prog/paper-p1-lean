@@ -4,77 +4,77 @@
   "items": [
     {
       "id": "C01",
-      "title": "Mettre en coh\u00e9rence la d\u00e9claration d\u2019assistance et les sources de la version 1.7",
+      "title": "Mettre en cohérence la déclaration d’assistance et les sources de la version 1.7",
       "status": "integrated_in_v1.8",
       "validation_record": "docs/manuscript-v1.8-validation.json",
       "note": "The original report remains bound to c1db11fe29e94f6afd87636d51beeb908a346af9; this disposition records subsequent integration."
     },
     {
       "id": "S01",
-      "title": "Renforcer les deux profils de paires de 6/5 \u00e0 1",
+      "title": "Renforcer les deux profils de paires de 6/5 à 1",
       "status": "integrated_in_v1.8",
       "validation_record": "docs/manuscript-v1.8-validation.json",
       "note": "The original report remains bound to c1db11fe29e94f6afd87636d51beeb908a346af9; this disposition records subsequent integration."
     },
     {
       "id": "S02",
-      "title": "Remplacer le traitement des primitives fixes par les bornes r/2 et r\u22121",
+      "title": "Remplacer le traitement des primitives fixes par les bornes r/2 et r−1",
       "status": "integrated_in_v1.8",
       "validation_record": "docs/manuscript-v1.8-validation.json",
       "note": "The original report remains bound to c1db11fe29e94f6afd87636d51beeb908a346af9; this disposition records subsequent integration."
     },
     {
       "id": "S03",
-      "title": "Donner la tr\u00e8s petite queue par le branchement \u00e0 ordre log\u00b2N",
+      "title": "Donner la très petite queue par le branchement à ordre log²N",
       "status": "integrated_in_v1.8",
       "validation_record": "docs/manuscript-v1.8-validation.json",
       "note": "The original report remains bound to c1db11fe29e94f6afd87636d51beeb908a346af9; this disposition records subsequent integration."
     },
     {
       "id": "S04",
-      "title": "Remplacer les arbres enracin\u00e9s du g\u00e9n\u00e9rateur par des \u00e9toiles disjointes",
+      "title": "Remplacer les arbres enracinés du générateur par des étoiles disjointes",
       "status": "integrated_in_v1.8",
       "validation_record": "docs/manuscript-v1.8-validation.json",
       "note": "The original report remains bound to c1db11fe29e94f6afd87636d51beeb908a346af9; this disposition records subsequent integration."
     },
     {
       "id": "S05",
-      "title": "Permettre un majorant de degr\u00e9 qui ne cro\u00eet pas plus vite que logB",
+      "title": "Permettre un majorant de degré qui ne croît pas plus vite que logB",
       "status": "integrated_in_v1.8",
       "validation_record": "docs/manuscript-v1.8-validation.json",
       "note": "The original report remains bound to c1db11fe29e94f6afd87636d51beeb908a346af9; this disposition records subsequent integration."
     },
     {
       "id": "S06",
-      "title": "Deux petites am\u00e9liorations s\u00fbres des constantes et erreurs",
+      "title": "Deux petites améliorations sûres des constantes et erreurs",
       "status": "integrated_in_v1.8",
       "validation_record": "docs/manuscript-v1.8-validation.json",
       "note": "The original report remains bound to c1db11fe29e94f6afd87636d51beeb908a346af9; this disposition records subsequent integration."
     },
     {
       "id": "S07",
-      "title": "Rendre exact le petit exemple de rang, sans d\u00e9velopper une nouvelle th\u00e9orie",
-      "status": "optional_not_integrated",
-      "validation_record": "docs/manuscript-v1.8-validation.json",
-      "note": "The manuscript retains rank<=10; the exact-rank calculation is not promoted to a new Lean claim."
+      "title": "Rendre exact le petit exemple de rang, sans développer une nouvelle théorie",
+      "status": "proved_ready_for_optional_integration",
+      "validation_record": "docs/validation/checkpoint-0999/validation.json",
+      "note": "A direct Lean elimination certificate now proves exact rank 10, two compatible forcing samples and mass 2^-10. The frozen v1.8 manuscript retains its valid rank<=10 text; optional replacement prose is provided in docs/EXACT_RANK_EXAMPLE.md."
     },
     {
       "id": "E01",
-      "title": "S\u00e9parer les nouveaux r\u00e9sultats math\u00e9matiques du bilan de formalisation",
+      "title": "Séparer les nouveaux résultats mathématiques du bilan de formalisation",
       "status": "integrated_in_v1.8",
       "validation_record": "docs/manuscript-v1.8-validation.json",
       "note": "The original report remains bound to c1db11fe29e94f6afd87636d51beeb908a346af9; this disposition records subsequent integration."
     },
     {
       "id": "E02",
-      "title": "Unifier les notations du champ et son hypoth\u00e8se de compensation",
+      "title": "Unifier les notations du champ et son hypothèse de compensation",
       "status": "integrated_in_v1.8",
       "validation_record": "docs/manuscript-v1.8-validation.json",
       "note": "The original report remains bound to c1db11fe29e94f6afd87636d51beeb908a346af9; this disposition records subsequent integration."
     },
     {
       "id": "E03",
-      "title": "Garder une r\u00e9vision s\u00e9lective du r\u00e9cit, au lieu d\u2019int\u00e9grer les 997 \u00e9tapes",
+      "title": "Garder une révision sélective du récit, au lieu d’intégrer les 997 étapes",
       "status": "integrated_in_v1.8",
       "validation_record": "docs/manuscript-v1.8-validation.json",
       "note": "The original report remains bound to c1db11fe29e94f6afd87636d51beeb908a346af9; this disposition records subsequent integration."

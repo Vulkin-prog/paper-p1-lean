@@ -2,7 +2,7 @@
   "schema_version": 1,
   "version": "P1 V1.8 working draft",
   "baseline_commit": "2553ce56f7cc6bdc10194801c3d926b72b587dd1",
-  "proof_source_commit": "c07b036aed5a9310d4f79f816969e45a20628138",
+  "proof_source_commit": "abef59777a1ba21ecf38270f1aa7596cae1acf6c",
   "numbered_statement_changes": [
     {
       "label": "p1:arith:hosts",
@@ -520,7 +520,7 @@
   },
   "proof_source_manifest": {
     "path": "docs/validation/manuscript-v1.8/proof-source-manifest.json",
-    "sha256": "5831f23e89d5c5753840645b33940f08bc9fe9ba3fad6f88156c9058f9b15d8d"
+    "sha256": "892a00bbc6ed4eedd2f840f24a2c2f8e87148474dc986d9d2fb010393ef90b13"
   },
   "source_preservation": {
     "v1.6": true,
@@ -530,5 +530,13 @@
   "typeset_result_numbers_verified": 167,
   "visual_review_status": "passed",
   "scope": "Source-bound AI-assisted semantic comparison of seven numbered changes and 18 auxiliary claims with actual compiled endpoint types. Not a human external review or Palomar registration.",
-  "visual_validation_record": "docs/manuscript-v1.8-validation.json"
+  "visual_validation_record": "docs/manuscript-v1.8-validation.json",
+  "proof_replay_history": [
+    {
+      "previous_proof_source_commit": "c07b036aed5a9310d4f79f816969e45a20628138",
+      "previous_proof_manifest_sha256": "5831f23e89d5c5753840645b33940f08bc9fe9ba3fad6f88156c9058f9b15d8d",
+      "new_proof_source_commit": "abef59777a1ba21ecf38270f1aa7596cae1acf6c",
+      "record": "docs/validation/checkpoint-0999/manuscript-replay.json"
+    }
+  ]
 }

@@ -5,7 +5,7 @@ Palomar submission while both manuscripts receive independent mathematical and
 editorial review. No full workflow, intake or registration has been launched.
 Keep the six prepared dossiers; do not dispatch them until the user resumes.
 
-The version 1.7 draft has 167 proved numbered statements: 73 in the article and 94 in the companion. The separate version 1.8 draft retains all 167 labels and has checked stronger statements at mathematical checkpoint P1-MATH-0998. The six selected registration configurations retain their existing exact types and qualification sources; the new witness endpoint is not an additional selection. The original version 1.6 and the two documented false-original scopes remain preserved.
+The version 1.7 draft has 167 proved numbered statements: 73 in the article and 94 in the companion. The separate version 1.8 draft retains all 167 labels and has checked stronger statements at mathematical checkpoint P1-MATH-0998. The six selected registration configurations retain their existing exact types and qualification sources; the new witness endpoint is not an additional selection. The original version 1.6 and the two documented false-original scopes remain preserved. The optional exact-rank certificate at checkpoint0999 is a finite-example precision, not a new selection. Its full proof replay passed; all six selected closures remain unchanged.
 
 ## Six registrations, strictly successive
 

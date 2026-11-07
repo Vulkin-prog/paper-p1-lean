@@ -1,0 +1,13 @@
+'PaperP1.ExactRankPrimeCylinderExample.prime_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.ExactRankPrimeCylinderExample.square_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.ExactRankPrimeCylinderExample.starts_example' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.ExactRankPrimeCylinderExample.kernel_forced_bits' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.ExactRankPrimeCylinderExample.kernel_dimension' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.ExactRankPrimeCylinderExample.exact_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.ExactRankPrimeCylinderExample.exact_forcing_probability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.ExactRankPrimeCylinderExample.forcing_solution_count' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Exported compiled scope types for 8 declarations

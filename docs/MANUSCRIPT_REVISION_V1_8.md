@@ -29,7 +29,9 @@ reference marginals, covariance, block independence and the bivariate mass
 formula accompany the positional comparison. The formalization appendix is
 limited to revision scope and reproducibility. The exact-rank refinement S07
 remains optional and is not asserted: the example retains the checked bound
-rank<=10. The Gaussian census exposition summarizes the existing internal
+rank<=10. A subsequent [Lean certificate](EXACT_RANK_EXAMPLE.md) at
+checkpoint0999 proves exact rank 10, two forcing samples and mass 2^-10;
+this remains an optional source edit and does not change the frozen draft. The Gaussian census exposition summarizes the existing internal
 analytic chain; this revision does not claim a new general short-average theorem.
 
 Eighteen unnumbered scientific claims have their own source-bound proof

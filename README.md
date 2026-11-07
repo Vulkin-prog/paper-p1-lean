@@ -3,12 +3,15 @@
 *Sharp Poisson approximation and second-order correction for long multiplicative
 runs*, and its technical companion, by [Brice Pouly](https://orcid.org/0009-0008-8491-2467).
 
-Current checkpoint P1-MATH-0998: all **167 revised numbered statements** have
+Current checkpoint P1-MATH-0999: all **167 revised numbered statements** have
 checked proofs, using **Lean v4.36.0-rc2**, with no unformalized mathematical
 input. This comprises all 73 main-article and all 94 revised companion results.
 The separate version 1.8 working draft integrates the two necessary statement
 corrections, selected stronger estimates and the internally proved logarithmic
 smooth-window census. Versions 1.6 and 1.7 remain preserved.
+The [optional finite-rank certificate](docs/EXACT_RANK_EXAMPLE.md) proves
+rank exactly 10, two forcing samples and mass 2^-10 at N=18,q=3. It
+preserves the already delivered v1.8 sources and PDFs.
 
 | Manuscript | PDF | Editable source |
 |---|---|---|
@@ -38,7 +41,7 @@ bytes and checked counterexamples are preserved. Their corrected replacements
 are proved and integrated in version 1.7. T19.17 is proved with both original
 coefficients and without an external smooth-number premise.
 
-The ledger records **996 confirmed mathematical improvements and two statement-scope corrections**.
+The ledger records **997 confirmed mathematical improvements and two statement-scope corrections**.
 Proof substitutions, exact parameter ranges and the scope of stronger
 unasserted analytic or geometric results are documented in the source revision.
 
