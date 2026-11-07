@@ -1,0 +1,85 @@
+version: v0.4
+project:
+  name: 'P1: Poisson approximation, scales and positional reference fields'
+  description: One consolidated registration with 16 exact statements from quadratic_approximation, poisson_scales,
+    positional_field, poisson_reference. Each literal mathematical model, hypothesis and quantifier order
+    is preserved. The complete original proof bodies and model definitions are relocated coherently into
+    distinct namespaces. All original component evidence remains separately available.
+  authors:
+  - name: Brice Pouly
+    github: Vulkin-prog
+    orcid: 0009-0008-8491-2467
+  responsible_maintainers:
+  - name: Brice Pouly
+    github: Vulkin-prog
+    orcid: 0009-0008-8491-2467
+  license: Apache-2.0
+repository:
+  role: substantive-development
+classification:
+  arxiv:
+  - math.NT
+  - math.PR
+sources:
+- title: Sharp Poisson approximation and second-order correction for long multiplicative runs (article
+    and technical companion), version 1.7 draft
+  authors:
+  - name: Brice Pouly
+    github: Vulkin-prog
+    orcid: 0009-0008-8491-2467
+  id: https://github.com/Vulkin-prog/paper-p1-lean
+  type: paper
+  relationship: formalizes
+  location: 'Article: manuscripts/paper-p1/v1.7/sources/main.tex; technical companion: manuscripts/paper-p1/v1.7/sources/companion.tex.
+    Consolidated registration group 5: Poisson approximation, scales and positional reference fields.
+    Exact original labels and source scopes are recorded in palomar/REGISTRATION_PLAN.json and the component
+    metadata under palomar/v1.'
+  note: The same 68 selected mathematical statements are regrouped into six planned registrations in total.
+    The declaration mapping records a bijection to the original selections. Each Challenge gives the full
+    explicit theorem type with Mathlib-only model definitions, and each Solution preserves the complete
+    original proofs under the same namespace relocation. This packaging introduces no mathematical change
+    to the 167-result revised ledger.
+related_formalizations:
+- id: https://github.com/Vulkin-prog/paper-c-lean
+  relationship: adapts
+  note: Selected finite and infinite prime-sign model foundations were ported from b9fa9ba490f201b408a302a86f1594ee620b228b,
+    under Apache-2.0, and rebuilt under Lean v4.36.0-rc2. Exact file identities, statement scope and adaptations
+    are recorded in docs/PAPER_C_REUSE.md and source headers. The P1 optimal quadratic estimates are proved
+    in this substantive development.
+automation:
+  methods:
+  - method: agent
+    framework: Codex
+    models:
+    - OpenAI Codex agents
+    prompting_notes: Consolidate the original locally qualified component statements into one coherent
+      registration without changing any literal model, hypotheses, universes or quantifier order. Preserve
+      proof and source provenance through an explicit bijective declaration map. Recheck exact Challenge/Solution
+      types and permitted axioms with independent kernels.
+    tool_setup: Lean proof construction, explicit Mathlib-only source definitions, exact bridges to the
+      substantive proof and full axiom audits.
+  notes: Agent assistance is not independent human peer review.
+review:
+  status: agent-reviewed
+  notes: Standalone compilation, exact statement comparison and all six local checkers passed for these
+    16 selections. The direct draft audit covers every theorem and bridge in the complete Solution. The
+    separately scoped source hashes and checker logs are preserved in palomar/v2/supplementary. The original
+    component proofs retain their unchanged checked sources and receipts. Frozen-root qualification, the
+    full Palomar workflow, intake and the human editorial decision remain distinct stages. One complete
+    submission cycle must finish or close before the next. No submission or personal relationship declaration
+    has been made.
+status:
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms:
+  - propext
+  - Quot.sound
+  - Classical.choice
+  scope: 16 selected declarations forming one of six planned registrations. The complete component proofs
+    are reused without proof holes. Only the selected Challenge theorem proofs have deliberate holes.
+    Frozen-source qualification and the complete Palomar workflow are separate stages.
+fidelity:
+  divergences: A grouping and renaming of the original statements, with a bijective proof-origin map and
+    unchanged mathematical types. All original component hypotheses and scope restrictions are retained.
+    The regrouping introduces no mathematical correction or improvement. The entire revised paper and
+    companion retain 167 proved numbered results.

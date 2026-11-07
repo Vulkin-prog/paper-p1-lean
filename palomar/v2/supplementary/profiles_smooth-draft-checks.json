@@ -1,0 +1,127 @@
+{
+  "bundle": "profiles_smooth",
+  "base_proof_commit": "3e5a5c0e563bbcfc1ab92472411f86dc1b44d74b",
+  "selected_declarations": [
+    "PaperP1Registry.Registration.ProfilesSmooth.asymmetric_profiles_expanded_profile",
+    "PaperP1Registry.Registration.ProfilesSmooth.asymmetric_profiles_small_prime_invariance",
+    "PaperP1Registry.Registration.ProfilesSmooth.asymmetric_profiles_radius_one_obstruction",
+    "PaperP1Registry.Registration.ProfilesSmooth.smooth_windows_almost_all_two_smooth",
+    "PaperP1Registry.Registration.ProfilesSmooth.smooth_windows_uniform_off_central",
+    "PaperP1Registry.Registration.ProfilesSmooth.smooth_windows_gaussian_mean_comparison"
+  ],
+  "original_declaration_mapping": [
+    {
+      "declaration": "PaperP1Registry.Registration.ProfilesSmooth.asymmetric_profiles_expanded_profile",
+      "original_declaration": "PaperP1Registry.AsymmetricProfiles.expanded_profile",
+      "component": "asymmetric_profiles"
+    },
+    {
+      "declaration": "PaperP1Registry.Registration.ProfilesSmooth.asymmetric_profiles_small_prime_invariance",
+      "original_declaration": "PaperP1Registry.AsymmetricProfiles.small_prime_invariance",
+      "component": "asymmetric_profiles"
+    },
+    {
+      "declaration": "PaperP1Registry.Registration.ProfilesSmooth.asymmetric_profiles_radius_one_obstruction",
+      "original_declaration": "PaperP1Registry.AsymmetricProfiles.radius_one_obstruction",
+      "component": "asymmetric_profiles"
+    },
+    {
+      "declaration": "PaperP1Registry.Registration.ProfilesSmooth.smooth_windows_almost_all_two_smooth",
+      "original_declaration": "PaperP1Registry.SmoothWindows.almost_all_two_smooth",
+      "component": "smooth_windows"
+    },
+    {
+      "declaration": "PaperP1Registry.Registration.ProfilesSmooth.smooth_windows_uniform_off_central",
+      "original_declaration": "PaperP1Registry.SmoothWindows.uniform_off_central",
+      "component": "smooth_windows"
+    },
+    {
+      "declaration": "PaperP1Registry.Registration.ProfilesSmooth.smooth_windows_gaussian_mean_comparison",
+      "original_declaration": "PaperP1Registry.SmoothWindows.gaussian_mean_comparison",
+      "component": "smooth_windows"
+    }
+  ],
+  "module_exports": [
+    {
+      "module": "ChallengeP1RegistrationProfilesSmooth",
+      "source_sha256": "3360407f3dff705a306f3b326b61e7ee751ae2f2f6901bf04c4a69a89665675b",
+      "export_sha256": "1c23a6c54e2bc5e312ff20da10c5945e19ea29cc2f51f8ed0bedc70c1e9e3ac3",
+      "export_bytes": 175355238,
+      "compilation_exit": 0,
+      "export_exit": 0,
+      "compressed_export_sha256": "7e21cfabb78c8f7bc21b1501e880801d37eebc16dc7dbc838e79c6fd9916075f",
+      "compressed_export_bytes": 26871644,
+      "compression_verified_lossless": true
+    },
+    {
+      "module": "SolutionP1RegistrationProfilesSmooth",
+      "source_sha256": "0cdd4488f4e2438e71b4db125e90fd79ff2cc5644b4385b57203f043d3c10c2f",
+      "export_sha256": "350896109f3f0673bfb5f14e00b79a30bca1ef042c2973d5820ab0624f59b678",
+      "export_bytes": 906088930,
+      "compilation_exit": 0,
+      "export_exit": 0,
+      "compressed_export_sha256": "32890463cfe0e6a379a83131de291f111a3cd16f80a45f226fc6601b462ea578",
+      "compressed_export_bytes": 137067584,
+      "compression_verified_lossless": true
+    }
+  ],
+  "palomar_full_workflow_passed": false,
+  "scope": "Standalone consolidated statement comparison and checker replay only; no submission or relationship declaration.",
+  "audited_draft_theorems": 6,
+  "six_checker_replay": {
+    "actual_comparator_exit": 0,
+    "kernels_accepted": [
+      "Lean paranoid",
+      "con-leche",
+      "con-ron",
+      "lean4lean",
+      "nanoda",
+      "Lean default"
+    ],
+    "bubblewrap_enabled": true,
+    "con_ron_verified": true,
+    "con_ron_jobs": 2,
+    "con_leche_accepted_declarations": 95253,
+    "con_ron_accepted_declarations": 95253,
+    "lean4lean_checked_declarations": 95254,
+    "log_sha256": "5d2b8608d48051441d6fb730ff56a5a81477901d2d43c263636999238eb2b769"
+  },
+  "kernel_commands": {
+    "Lean paranoid": [
+      "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/leanchecker-paranoid",
+      "--silent",
+      "--from-export"
+    ],
+    "lean4lean": [
+      "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/lean4lean",
+      "--import"
+    ],
+    "nanoda": [
+      "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/nanoda_bin"
+    ],
+    "con-leche": [
+      "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/con-leche"
+    ],
+    "con-ron": [
+      "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/con-ron",
+      "--verified",
+      "--jobs=2"
+    ]
+  },
+  "tool_binary_sha256": {
+    "lake": "42678ccbc2605e2f892540dc7236e009fdd1224e823d104dfd72725d2f1a52d2",
+    "leanexport": "8298d4412a1f8986b5dbfd1d9925211778d8d320fc47b72040c8fdfdd5b603d5",
+    "leanchecker": "2b2ff08805ace61c935b023f8114ac3f7f1d3bc79cb4e8c47ef7801a5af58798",
+    "leanchecker-paranoid": "4508d26d3e22463a9566a6155d7a1600c7bfc42b6cd2548be73e3d19d159d6c5",
+    "lean4lean": "baaec030a70c78562ced2c75866ab0d2410e81ce680b835179ed16570ad5ef97",
+    "nanoda_bin": "8241c5e6baa29490aa118d382f97961b208ae730fdb96545c2abed74c9ece5a8",
+    "con-leche": "a6380d68b4fb364189821dd4692569c11536de0a1e3aaefea06028c0d67bb193",
+    "con-ron": "4e5616d94374cae37324dad2594f6230c2bb2297240249fc78ff508f3bc5acef"
+  },
+  "completed_at": "2026-11-07T09:20:57.462512+00:00",
+  "preserved_log": {
+    "path": "palomar/v2/supplementary/profiles_smooth-six-kernels.log.gz",
+    "sha256": "c0a633f541c11199afc168be54ffe7c37c44f2fbb5b175a25e4f3b16f5ec87f7",
+    "uncompressed_sha256": "5d2b8608d48051441d6fb730ff56a5a81477901d2d43c263636999238eb2b769"
+  }
+}

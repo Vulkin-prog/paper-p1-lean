@@ -103,55 +103,29 @@ preserved receipt against its historical inventory and current proof imports.
 
 ## Palomar preparation
 
-Seventeen selected families have passed local statement comparison and both Lean and
-NanoDa, with bubblewrap isolation enabled:
+The target is **six registrations in total**, with **one entire submission cycle at a time**. They preserve all **68 selected statements** from the seventeen locally qualified component families; the complete manuscript correspondence remains **167 proved numbered results**.
 
-| Family | Selected declarations | Local evidence |
-|---|---:|---|
-| Ordinary smooth integers in logarithmic intervals | 3 | [Receipt](palomar/v1/smooth_windows/qualification.json) |
-| Prescribed squarefree kernels of shifted split products | 4 | [Receipt](palomar/v1/quadratic_kernels/qualification.json) |
-| Asymmetric parity-space profiles | 3 | [Receipt](palomar/v1/asymmetric_profiles/qualification.json) |
-| Optimal quadratic Poisson–Charlier approximation | 4 | [Receipt](palomar/v1/quadratic_approximation/qualification.json) |
-| Exact Poisson scales and quantized mean bias | 5 | [Receipt](palomar/v1/poisson_scales/qualification.json) |
-| Universal arithmetic anchor obstructions | 4 | [Receipt](palomar/v1/private_obstruction/qualification.json) |
-| Actual conditioning and colored replica target sums | 4 | [Receipt](palomar/v1/conditioning/qualification.json) |
-| Actual factorial cumulants and the optimal third-cumulant power | 5 | [Receipt](palomar/v1/factorial_cumulants/qualification.json) |
-| Fixed-order moment obstruction to a polynomial approximation rate | 5 | [Receipt](palomar/v1/moment_obstruction/qualification.json) |
-| Exact expansions for dependent indicator counts | 4 | [Receipt](palomar/v1/dependent_expansion/qualification.json) |
-| Degree-uniform integer points on integral curves | 3 | [Receipt](palomar/v1/integral_curve_count/qualification.json) |
-| Exact finite affine spectra and canonical factorization | 4 | [Receipt](palomar/v1/affine_spectra/qualification.json) |
-| Actual exponential-moment divergence for multiplicative starts | 4 | [Receipt](palomar/v1/exponential_divergence/qualification.json) |
-| Uniform local arithmetic rigidity and relative-sign independence | 5 | [Receipt](palomar/v1/local_rigidity/qualification.json) |
-| Effective valuation cylinders and affine-rank moment bounds | 4 | [Receipt](palomar/v1/prime_cylinders/qualification.json) |
-| Convergent original-grid positional Poisson field | 3 | [Receipt](palomar/v1/positional_field/qualification.json) |
-| Exact finite-product Poisson reference structure | 4 | [Receipt](palomar/v1/poisson_reference/qualification.json) |
+| Order | Registration | Selected declarations | Configuration and metadata |
+|---:|---|---:|---|
+| 1 | Arithmetic and geometry | 12 | [configuration](comparator/registrations/p1_arithmetic_geometry.json), [metadata](palomar/v2/arithmetic_geometry/formalization.yaml) |
+| 2 | Arithmetic profiles and smooth logarithmic windows | 6 | [configuration](comparator/registrations/p1_profiles_smooth.json), [metadata](palomar/v2/profiles_smooth/formalization.yaml) |
+| 3 | Finite affine structure, conditioning and dependent expansions | 12 | [configuration](comparator/registrations/p1_affine_conditioning.json), [metadata](palomar/v2/affine_conditioning/formalization.yaml) |
+| 4 | Factorial cumulants, moments and private obstructions | 14 | [configuration](comparator/registrations/p1_cumulants_obstructions.json), [metadata](palomar/v2/cumulants_obstructions/formalization.yaml) |
+| 5 | Poisson approximation, scales and positional reference fields | 16 | [configuration](comparator/registrations/p1_poisson_fields.json), [metadata](palomar/v2/poisson_fields/formalization.yaml) |
+| 6 | Exponential moments and prime cylinders | 8 | [configuration](comparator/registrations/p1_exponential_cylinders.json), [metadata](palomar/v2/exponential_cylinders/formalization.yaml) |
 
-All 68 selected declarations also passed supplementary replays with verified
-con-ron, Lean and NanoDa. The [source-bound reports](palomar/v1/supplementary/README.md)
-preserve the actual logs, binary identities and positive/ill-typed controls.
+The [explicit plan](palomar/REGISTRATION_PLAN.json) records every original-to-consolidated declaration, all component source hashes and the strict serial policy. The original [seventeen component interfaces and receipts](palomar/v1/README.md) remain separate proof evidence; they are not seventeen planned submissions. The [six-registration overview](palomar/v2/README.md) records the consolidated checks.
 
-The finite-affine family also passed [all six available local checkers](palomar/v1/supplementary/affine-spectra-six-kernels.json). Two larger representative families passed the additional optional checkers as well; each report identifies its exact source.
+All six metadata files associate **[Brice Pouly](https://orcid.org/0009-0008-8491-2467)** with GitHub `Vulkin-prog` and **ORCID `0009-0008-8491-2467`** in structured author, maintainer and paper-source records accepted by the pinned official Palomar parser.
 
-The exponential-moment family has four literal-model statements with explicit integrability, prime thresholds, a nontrivial odd-prime liminf and simultaneous divergence at nominal mean one. Its [standalone six-checker report](palomar/v1/supplementary/exponential-divergence-draft-checks.json) retains its exact earlier proof base; root qualification and the con-ron replay have their own immutable source.
+The [single workflow caller](.github/workflows/palomar-preflight.yml) selects exactly one registration and uses the exact pinned full Palomar pipeline and standard profile. The previous multi-family callers are preserved as [historical source material](palomar/v1/historical-workflows/). The workflow mutex covers its execution; the operator must also finish intake, private editorial review, the human decision, and registration or documented closure before starting the next dossier.
 
-The local-rigidity family now has its source-bound root qualification and con-ron replay. Its separately scoped [standalone six-checker report](palomar/v1/supplementary/local-rigidity-draft-checks.json) preserves all five statements, 13 audited theorem/bridge declarations and the earlier proof base.
+The earlier request concerning fifteen configurations at source `0a9d3e68a8af39b6ea1ce725027f72ca5f10e8c4` is superseded by this six-registration scope. No personal relationship attestation, full workflow dispatch, intake, editorial decision or permanent registry entry is claimed. The [procedure](docs/PALOMAR_PLAN.md) states the remaining stages.
 
-The finite valuation-cylinder family has four literal-model statements, its frozen-root Lean/NanoDa qualification and a verified con-ron replay. Its separately scoped [standalone six-checker report](palomar/v1/supplementary/prime-cylinders-draft-checks.json) preserves thirteen direct theorem/bridge audits and the exact earlier proof base.
-
-The [candidate interfaces](palomar/v1/README.md) link each standalone Mathlib-only
-Challenge, complete Solution, Comparator configuration, metadata and preserved
-logs. Selected declaration counts describe registration candidates, separately
-from the complete 167-result manuscript correspondence. The exact-pinned
-[complete reusable workflow](.github/workflows/palomar-preflight.yml) is ready
-for the original seven families, and an [additional caller](.github/workflows/palomar-preflight-additional.yml)
-selects the additional families. Both run one family at a time. Their personal
-authorization declaration must be confirmed before dispatch. No registry
-submission, editorial decision or permanent registration is claimed.
-
-For an individual local comparison, the pinned toolchain supplies all checkers:
+For one individual local comparison:
 
 ```sh
-lake env lake comparator --config comparator/p1_smooth_windows.json
+lake env lake comparator --config comparator/registrations/p1_profiles_smooth.json
 ```
 
 ## Licence and assistance
@@ -170,8 +144,8 @@ independent Poisson realization, and its canonical product realization. Its
 and verified con-ron replay passed. The separately scoped
 [standalone six-checker report](palomar/v1/supplementary/positional-field-draft-checks.json)
 preserves twelve direct proof audits and the exact earlier proof base. The
-original two workflow callers are preserved; a separate caller selects this
-family. The original exponent 4/5 and all 167 numbered statements are unchanged.
+original component sources and receipts remain preserved; this family is
+included in the consolidated Poisson-fields registration. The original exponent 4/5 and all 167 numbered statements are unchanged.
 
 
 The [exact reference-arrival marginals](docs/POSITIONAL_ARRIVAL_MARGINALS.md)
@@ -188,6 +162,6 @@ for disjoint blocks. Its [frozen-root qualification](palomar/v1/poisson_referenc
 and verified con-ron replay passed. The [standalone six-checker report](palomar/v1/supplementary/poisson-reference-draft-checks.json)
 preserves the exact earlier proof base and byte-identical source files.
 This packages checkpoints 993--996 without a new mathematical-change entry.
-The two earlier workflow callers and the pending human-relationship question
-for fifteen configurations at source 0a9d3e68a8af39b6ea1ce725027f72ca5f10e8c4
-retain their exact scope; the third caller selects two reference families.
+The consolidated Poisson-fields registration contains this family and the
+positional comparison, quadratic approximation and Poisson scales. The overall
+target remains six registrations, submitted through complete successive cycles.

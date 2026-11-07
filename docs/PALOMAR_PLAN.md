@@ -1,54 +1,18 @@
 # Palomar preparation
 
-The mathematical correspondence is complete for the separate version 1.7 draft:
-**167 proved statements**, comprising all 73 article and all 94 companion
-results. Current mathematical checkpoint: P1-MATH-0996. The original version
-1.6 retains its exact bytes and its two false-original statuses; its 165 other
-statements are proved. Both revised PDFs and their visual checks are preserved.
+The version 1.7 draft has 167 proved numbered statements: 73 in the article and 94 in the companion. Mathematical checkpoint P1-MATH-0996 is unchanged by this packaging. The original version 1.6 and the two documented false-original scopes remain preserved.
 
-## Completed local qualification
+## Six registrations, strictly successive
 
-[Seventeen selected families](../palomar/v1/README.md), with **68 declarations**,
-have passed actual statement comparison, Lean and bundled NanoDa, with the
-bubblewrap boundary enabled. Every family has its own immutable source commit,
-configuration, standalone Mathlib-only Challenge, complete Solution, metadata,
-qualification receipt and compressed original logs. The latest complete build
-passed **18,599 jobs** and the direct source-discovered audit checked **19,721
-theorems**, allowing only `propext`, `Classical.choice` and `Quot.sound`.
+The user requested fewer than ten registrations, with five or six a good target. The chosen plan has **exactly six in total**, containing the same **68 selected declarations** from the **seventeen original components**. The [plan](../palomar/REGISTRATION_PLAN.json) records the ordering, source hashes and a bijective declaration map. The [overview](../palomar/v2/README.md) links all six configurations and metadata files. The preserved component interfaces and receipts under palomar/v1 are not additional submissions.
 
-All seventeen families also passed supplementary verified con-ron, Lean and NanoDa
-replays. Their [source-bound records](../palomar/v1/supplementary/README.md)
-preserve binary identities, original logs, six positive/ill-typed controls,
-metadata shape checks and a historical source-layout scan. These local checks
-do not replace the complete workflow. The additional interfaces introduce no
-new mathematical-change entry.
+Run only one full cycle at a time: full workflow, intake, mechanical verification, private editorial review, the human decision, then actual registration or documented closure. The workflow has one global concurrency group and accepts one bundle, with no matrix and no all-bundles choice. Its mutex ends with the workflow; it does not represent a closed intake or editorial cycle. The operator must check the actual portal state and the recorded outcome before beginning the next bundle.
 
-The [numbered scope index](NUMBERED_SCOPE_REVIEW.md) provides
-printed source identities and actual compiled types for all 167 revised results.
+## Mathematical and local-check evidence
 
-The [evidence checker](../scripts/check_registry_evidence.py) verifies every
-receipt against its original commit and inventory, its preserved log hashes,
-actual successful exports and kernels, and the unchanged current statement,
-Solution, imported project proofs, compiler and dependency pins. Historical
-receipts do not silently acquire the later audit's larger selection. Missing
-output, repeated declarations, forbidden axioms and changed imported proofs
-are rejected. The original first receipt's build/audit counts were added from
-its unchanged preserved logs and checked source inventory.
+The original seventeen component source pairs and their receipts retain their exact bytes and historic source commits. The consolidated pairs preserve complete model definitions, theorem types and proof bodies through a coherent namespace relocation. Each Challenge imports only Mathlib and has deliberate holes only for its explicit selected theorems. No Solution, substantive proof or axiom audit imports a Challenge. The permitted axioms remain propext, Classical.choice and Quot.sound.
 
-The finite-affine family has four standalone statements accepted at its frozen
-root source by all six local checkers. The original
-seven-family caller remains unchanged.
-
-The exponential-moment family has four explicit literal-model statements
-and complete proofs. Its standalone exports passed six checkers at the stated
-proof base, and its frozen root passed Lean/NanoDa and the supplementary
-verified con-ron replay. The original t>2 scope is preserved.
-
-The local-rigidity family has five selected statements covering companion T1.1,
-T1.2 and all clauses of main lemma 2.1. Its root qualification and verified
-con-ron replay passed, with the standalone six-checker proof base scoped separately.
-
-Run the local preparation checks with:
+The [consolidation checker](../scripts/check_registry_consolidation.py) reconstructs every new module from its original components and rejects other edits. The [candidate checker](../scripts/check_registry_candidates.py) checks all seventeen components and six registrations. The [evidence checker](../scripts/check_registry_evidence.py) checks preserved logs, exact snapshots, inventories, configuration and current transitive proof imports, including imports between Solution modules. Historical receipts retain their own original audit counts.
 
 ```sh
 python3 scripts/check_disk.py
@@ -56,92 +20,23 @@ python3 scripts/check_sources.py
 python3 scripts/check_revised_sources.py --require-proved
 python3 scripts/update_audit.py --check
 python3 scripts/check_registry_candidates.py
+python3 scripts/check_registry_consolidation.py
 python3 scripts/check_palomar_sources.py
 python3 scripts/check_registry_evidence.py --require-all
 ```
 
-These checks establish their stated local scope. They do not replace the
-complete reusable Palomar workflow or its canonical Challenge provenance audit.
+These local checks do not replace the full reusable Palomar workflow or editorial review. All proof and temporary files stay on the Ubuntu partition. Disk is checked before and after builds, downloads and large exports; available space below 10 GiB is reported, and large downloads stop below 5 GiB.
 
-## Exact compiler and verifier
+## Author and ORCID
 
-Lean is fixed to **v4.36.0-rc2**, and Mathlib to
-9d581dfff2e41de989072ea63abf3daf69311520. Comparator, exporter and kernels are
-those supplied by that toolchain. The Paper C Lean 4.34 binaries are not used.
-The invocation is `lake env lake comparator --config <configuration>` so the
-matching bundled NanoDa is on the executable search path.
+Each active metadata file uses a structured person record with **Brice Pouly**, GitHub **Vulkin-prog**, and **ORCID 0009-0008-8491-2467**, together in project.authors, project.responsible_maintainers and the self-paper source authors. This follows the [official pinned person-record contract](https://github.com/PalomarRegistry/PalomarSubmission/blob/14aa8d6b3c2f14a8540605e37144560b9a00e7e7/README.md) and the [recent paper-c-lean example](https://github.com/Vulkin-prog/paper-c-lean/blob/main/palomar/v3prel/palm/formalization.yaml). It avoids a free-text name suffix or an unrecognized ORCID sidecar.
 
-Official tooling was checked on 7 November 2026 at:
+The official parser validates each actual metadata file and normalizes its author association. A separate receipt records the checksum and a bounded live lookup of the current ORCID record. That lookup is not personal authentication or a submitter-role declaration. The community v0.4 schema predates structured people; its check is explicitly limited to a name-only projection.
 
-- [PalomarSubmission 14aa8d6b3c2f14a8540605e37144560b9a00e7e7](https://github.com/PalomarRegistry/PalomarSubmission/tree/14aa8d6b3c2f14a8540605e37144560b9a00e7e7).
-- [PalomarPolicy 28bd48b9b71bbb2a82c718ce761d5a4220ef8e60](https://github.com/PalomarRegistry/PalomarPolicy/tree/28bd48b9b71bbb2a82c718ce761d5a4220ef8e60).
-- [Current intake protocol](https://submit.palomar-registry.org/llms.txt).
+## Full workflow, intake and human decisions
 
-Every committed Lean file has a module header and at most 10,000 lines. Each
-Challenge has at most 1,000 lines and 100 KiB and imports only canonical
-Mathlib surfaces. The audit uses a compact Lean command over its separate JSON
-inventory. The full project snapshot stays below the 500 MiB source limit.
+The [single active caller](../.github/workflows/palomar-preflight.yml) pins both uses and pipeline_commit to PalomarSubmission **14aa8d6b3c2f14a8540605e37144560b9a00e7e7**, with mode full, execution_profile palomar-standard-v1 and read-only repository permissions. It selects one configuration under comparator/registrations and the matching palomar/v2 metadata. The previous three callers are preserved outside .github/workflows as historical evidence. The old fifteen-configuration request at source 0a9d3e68a8af39b6ea1ce725027f72ca5f10e8c4 is superseded by the six-registration scope.
 
-## Complete reusable workflow
+Before dispatch, obtain the protocol-required truthful human relationship declaration. Before intake, present the exact repository, immutable 40-character source SHA, the single configuration and that relationship for human agreement. The full report must actually say status pass for that source and target. Do not weaken isolation, pins, source checks or standard limits to obtain a pass.
 
-The [original workflow caller](../.github/workflows/palomar-preflight.yml) selects
-exactly seven families; the [additional caller](../.github/workflows/palomar-preflight-additional.yml)
-selects factorial cumulants, the moment obstruction, dependent expansions and
-integral-curve counts, finite affine spectra, exponential-moment divergence and local rigidity. Both are prepared.
-Both its `uses` revision and `pipeline_commit` are fixed to the exact same
-PalomarSubmission SHA above. It uses `mode: full`, the required external
-`palomar-standard-v1` profile, read-only repository permissions and one family
-at a time. Each family has a 12-character lowercase alphanumeric request id
-and its explicit configuration and metadata paths. No Palomar state or
-credential is supplied to this predictive preflight.
-
-Dispatch requires a full immutable source commit and the confirmed supported
-human relationship. The full workflow has not yet been run. Its report must
-actually say `status: pass` for each exact target before intake. Preparation
-errors should be corrected in the indicated inputs, rather than misreported
-as mathematical failures. Authenticated capacity failures need their actual
-reported resolution; local sandbox settings must not be weakened.
-
-## Intake and registration
-
-Registrations follow the completed formalization, as the user requested. No
-submission, editorial decision or permanent identifier is currently asserted.
-The protocol requires confirmation of the human relationship before dispatch.
-Before ordinary HTTPS intake, present the exact repository, 40-character source
-SHA, configuration paths and relationship declaration for human agreement.
-The authenticated GitHub CLI path may then prove repository write access using
-the prescribed temporary tag and secret gist, deleting both afterwards. Never
-automate the Palomar browser sign-in or recovery flow.
-
-Intake, mechanical verification, editorial review and registration remain
-distinct. Before permanent registration, show the actual private review to the
-user and obtain their decision about publishing that exact review. Preserve
-its digest and record a registry identifier only after actual issuance. Do not
-invent a DOI or publication identifier for the working manuscript.
-
-The additional finite valuation-cylinder candidate has four selected literal-model
-statements for the finite layers, effective density, actual affine forcing mass
-and five-start numerical gain. Thirteen direct theorem/bridge audits and all
-six checkers passed on standalone exports. Its frozen-root qualification and
-verified con-ron replay passed, with their exact source recorded separately.
-
-
-The positional-field family is locally qualified at its frozen source, with
-three selections, twelve direct theorem/bridge audits and the supplementary
-verified con-ron replay. Its earlier standalone exports passed all six local
-checkers. The dedicated positional-field caller uses the same immutable full
-pipeline and standard profile, preserving the existing two callers. Actual
-human relationship confirmation and the subsequent Palomar stages remain
-separate from these local checks.
-
-
-The Poisson-reference family is locally qualified with four selections,
-twelve direct proof audits, all six standalone checkers, and the additional
-verified con-ron replay at its frozen root. Seventeen families now retain
-68 selected declarations and their own immutable receipts. The pending
-human-relationship request concerns exactly the fifteen configurations
-at source 0a9d3e68a8af39b6ea1ce725027f72ca5f10e8c4; this preparation does
-not widen that request or declare a relationship. The two earlier callers
-are unchanged. The third caller selects two reference families with the
-same pinned full pipeline and standard profile. Subsequent Palomar stages
-remain separate.
+Use the [current intake protocol](https://submit.palomar-registry.org/llms.txt). The authenticated GitHub CLI route may prove repository write access with its prescribed temporary tag and secret gist, deleting both afterwards. Do not automate browser sign-in or recovery. Before permanent registration, show the actual private editorial review to the user and obtain their decision about publishing that exact review. Preserve the digest and record a registry identifier only after actual issuance. Finish or explicitly close this entire cycle before opening the next one. No workflow dispatch, intake, editorial decision, registration identifier or publication DOI is currently claimed.

@@ -25,8 +25,9 @@ jobs:
           python3 - <<'PY'
           import json, re, subprocess
           from pathlib import Path
-          sources = {json.loads(path.read_text())['source_commit']
-                     for path in Path('palomar/v1').glob('*/qualification.json')}
+          receipts = [*Path('palomar/v1').glob('*/qualification.json'),
+                      *Path('palomar/v2').glob('*/qualification.json')]
+          sources = {json.loads(path.read_text())['source_commit'] for path in receipts}
           for source in sorted(sources):
               if not re.fullmatch('[0-9a-f]{40}', source):
                   raise SystemExit('Invalid evidence source commit')
@@ -45,8 +46,9 @@ jobs:
           python3 scripts/check_revised_sources.py --require-proved
           python3 scripts/update_audit.py --check
           python3 scripts/check_registry_candidates.py
+          python3 scripts/check_registry_consolidation.py
           python3 scripts/check_palomar_sources.py
-          python3 scripts/check_registry_evidence.py
+          python3 scripts/check_registry_evidence.py --require-all
       - name: Install elan from its official repository
         run: |
           curl -sSfL https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -o "$RUNNER_TEMP/elan-init.sh"

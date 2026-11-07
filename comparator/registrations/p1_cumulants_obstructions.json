@@ -1,0 +1,26 @@
+{
+  "challenge_module": "ChallengeP1RegistrationCumulantsObstructions",
+  "solution_module": "SolutionP1RegistrationCumulantsObstructions",
+  "theorem_names": [
+    "PaperP1Registry.Registration.CumulantsObstructions.factorial_cumulants_factorial_source",
+    "PaperP1Registry.Registration.CumulantsObstructions.factorial_cumulants_third_exact_identity",
+    "PaperP1Registry.Registration.CumulantsObstructions.factorial_cumulants_fourth_exact_identity",
+    "PaperP1Registry.Registration.CumulantsObstructions.factorial_cumulants_principal_second_equivalent",
+    "PaperP1Registry.Registration.CumulantsObstructions.factorial_cumulants_optimal_third_cumulant",
+    "PaperP1Registry.Registration.CumulantsObstructions.moment_obstruction_normalized_probabilities",
+    "PaperP1Registry.Registration.CumulantsObstructions.moment_obstruction_all_factorial_series",
+    "PaperP1Registry.Registration.CumulantsObstructions.moment_obstruction_distance_and_exponential",
+    "PaperP1Registry.Registration.CumulantsObstructions.moment_obstruction_fixed_order_matching",
+    "PaperP1Registry.Registration.CumulantsObstructions.moment_obstruction_uniform_subpolynomial",
+    "PaperP1Registry.Registration.CumulantsObstructions.private_obstruction_admissible_fields",
+    "PaperP1Registry.Registration.CumulantsObstructions.private_obstruction_conditional_forcing",
+    "PaperP1Registry.Registration.CumulantsObstructions.private_obstruction_deterministic_obstruction",
+    "PaperP1Registry.Registration.CumulantsObstructions.private_obstruction_randomized_obstruction"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "enable_nanoda": true
+}

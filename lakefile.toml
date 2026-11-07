@@ -135,3 +135,45 @@ moreLeanArgs = ["-DwarningAsError=false"]
 
 [[lean_lib]]
 name = "SolutionP1PoissonReference"
+
+[[lean_lib]]
+name = "ChallengeP1RegistrationArithmeticGeometry"
+moreLeanArgs = ["-DwarningAsError=false"]
+
+[[lean_lib]]
+name = "SolutionP1RegistrationArithmeticGeometry"
+
+[[lean_lib]]
+name = "ChallengeP1RegistrationProfilesSmooth"
+moreLeanArgs = ["-DwarningAsError=false"]
+
+[[lean_lib]]
+name = "SolutionP1RegistrationProfilesSmooth"
+
+[[lean_lib]]
+name = "ChallengeP1RegistrationAffineConditioning"
+moreLeanArgs = ["-DwarningAsError=false"]
+
+[[lean_lib]]
+name = "SolutionP1RegistrationAffineConditioning"
+
+[[lean_lib]]
+name = "ChallengeP1RegistrationCumulantsObstructions"
+moreLeanArgs = ["-DwarningAsError=false"]
+
+[[lean_lib]]
+name = "SolutionP1RegistrationCumulantsObstructions"
+
+[[lean_lib]]
+name = "ChallengeP1RegistrationPoissonFields"
+moreLeanArgs = ["-DwarningAsError=false"]
+
+[[lean_lib]]
+name = "SolutionP1RegistrationPoissonFields"
+
+[[lean_lib]]
+name = "ChallengeP1RegistrationExponentialCylinders"
+moreLeanArgs = ["-DwarningAsError=false"]
+
+[[lean_lib]]
+name = "SolutionP1RegistrationExponentialCylinders"

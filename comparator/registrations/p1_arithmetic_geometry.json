@@ -1,0 +1,24 @@
+{
+  "challenge_module": "ChallengeP1RegistrationArithmeticGeometry",
+  "solution_module": "SolutionP1RegistrationArithmeticGeometry",
+  "theorem_names": [
+    "PaperP1Registry.Registration.ArithmeticGeometry.quadratic_kernels_uniform_count",
+    "PaperP1Registry.Registration.ArithmeticGeometry.quadratic_kernels_capped_comparison",
+    "PaperP1Registry.Registration.ArithmeticGeometry.quadratic_kernels_uncapped_comparison_iff",
+    "PaperP1Registry.Registration.ArithmeticGeometry.quadratic_kernels_actual_uncapped_counterexamples",
+    "PaperP1Registry.Registration.ArithmeticGeometry.integral_curve_count_all_dimensional_count",
+    "PaperP1Registry.Registration.ArithmeticGeometry.integral_curve_count_plane_count",
+    "PaperP1Registry.Registration.ArithmeticGeometry.integral_curve_count_growing_degree_sublinear",
+    "PaperP1Registry.Registration.ArithmeticGeometry.local_rigidity_split_product_bound",
+    "PaperP1Registry.Registration.ArithmeticGeometry.local_rigidity_uniform_quadratic_count",
+    "PaperP1Registry.Registration.ArithmeticGeometry.local_rigidity_finite_relative_griesmer",
+    "PaperP1Registry.Registration.ArithmeticGeometry.local_rigidity_logarithmic_rank_regimes",
+    "PaperP1Registry.Registration.ArithmeticGeometry.local_rigidity_subcritical_relative_signs"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "enable_nanoda": true
+}

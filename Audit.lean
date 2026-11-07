@@ -17,6 +17,12 @@ import SolutionP1PrimeCylinders
 import SolutionP1PrivateObstruction
 import SolutionP1QuadraticApproximation
 import SolutionP1QuadraticKernels
+import SolutionP1RegistrationAffineConditioning
+import SolutionP1RegistrationArithmeticGeometry
+import SolutionP1RegistrationCumulantsObstructions
+import SolutionP1RegistrationExponentialCylinders
+import SolutionP1RegistrationPoissonFields
+import SolutionP1RegistrationProfilesSmooth
 import SolutionP1SmoothWindows
 import Lean.Elab.Print
 
@@ -28,7 +34,7 @@ invokes Lean's own `#print axioms` once for each declaration. Keeping the names
 as data avoids a generated Lean source longer than Palomar's 10,000-line limit.
 -/
 
--- Inventory SHA-256: 417305fe602e2bd777e75ef0a01598e3185d4f134b9e2d05a48b783ce7761483
+-- Inventory SHA-256: ea4256996971688c3f76cc0ff6dc5e3b919b9d7dbde9da4971527ae0cf05c17c
 
 open Lean Elab Command in
 run_cmd do

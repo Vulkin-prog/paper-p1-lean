@@ -1,17 +1,8 @@
-# P1 candidate registration interfaces
+# P1 preserved component evidence
 
-All seventeen independently meaningful families below have passed local statement
-comparison and both Lean and NanoDa with bubblewrap isolation enabled. They
-select **68 declarations**, separately from the complete **167-result revised
-manuscript correspondence**. Their immutable local receipts and original
-compressed logs preserve exactly what was checked.
+The seventeen component families below retain their original Challenge/Solution sources, metadata and immutable local qualification receipts. They are **proof evidence**, not seventeen planned submissions. The current target is [six consolidated registrations](../v2/README.md), preserving the same 68 selected statements through the [explicit mapping](../REGISTRATION_PLAN.json).
 
-All seventeen also passed supplementary con-ron, NanoDa and Lean replays. Their
-[separate reports and controls](supplementary/README.md) preserve each exact
-source and original log without changing the standard submission configurations.
-
-The finite-affine family passed all six local checkers at its frozen source.
-Two larger representative families also passed the three optional checkers.
+All seventeen components passed local exact statement comparison, Lean and NanoDa with bubblewrap isolation, and supplementary verified con-ron replays. Their historical inventories and source commits remain unchanged. The [supplementary records](supplementary/README.md) retain their separately scoped optional-kernel checks and controls.
 
 | Family | Selected declarations | Comparator configuration | Metadata and local evidence |
 |---|---:|---|---|
@@ -33,52 +24,8 @@ Two larger representative families also passed the three optional checkers.
 | Convergent original-grid positional Poisson field | 3 | [configuration](../../comparator/p1_positional_field.json) | [metadata](positional_field/formalization.yaml), [passed local comparison and both kernels](positional_field/qualification.json) |
 | Exact finite-product Poisson reference structure | 4 | [configuration](../../comparator/p1_poisson_reference.json) | [metadata](poisson_reference/formalization.yaml), [passed local comparison and both kernels](poisson_reference/qualification.json) |
 
-Each configuration names its standalone Mathlib-only Challenge and complete
-Solution. Only the exact selected Challenge statements have deliberate proof
-holes. No substantive proof, Solution or axiom audit imports a Challenge. The
-current community v0.4 metadata schema is checked separately.
+Each component Challenge imports only Mathlib and leaves holes only in its selected theorem proofs. Each Solution contains complete proofs; Challenges are excluded from substantive proof imports and the axiom audit. The component metadata passed the community v0.4 schema at its recorded source. Active consolidated metadata uses Palomar's structured author/ORCID extension and is validated separately.
 
-The latest whole-project replay passed **18,599 build jobs** and **19,721 theorem
-axiom checks**. Earlier receipts retain their own historical source inventories.
-The local [evidence checker](../../scripts/check_registry_evidence.py) validates
-their hashes, exact source files, imported project proofs, actual export and
-kernel success markers, full-build counts and complete audit selections. It
-rejects incomplete, duplicate and forbidden-axiom audits.
+The original three workflow callers are preserved in [historical-workflows](historical-workflows/), copied byte for byte from source `3e5a5c0e563bbcfc1ab92472411f86dc1b44d74b`. They are no longer active GitHub Actions workflows. The single active caller accepts one of the six consolidated registrations. Earlier fifteen-configuration authorization requests are superseded in scope; no human relationship was asserted and no submission was made.
 
-The [pinned full reusable workflow](../../.github/workflows/palomar-preflight.yml)
-is prepared at PalomarSubmission commit
-14aa8d6b3c2f14a8540605e37144560b9a00e7e7, using `mode: full` and
-`execution_profile: palomar-standard-v1`. It requires an immutable source
-commit and the confirmed human relationship, runs one family at a time and
-preserves one mechanical report per family. It has not yet been dispatched.
-Local qualification, full mechanical preflight, editorial review and permanent
-registration are separate stages. No submission or registry entry is claimed.
-
-The separate [additional-family workflow](../../.github/workflows/palomar-preflight-additional.yml)
-selects factorial cumulants, the moment obstruction, dependent expansions and
-integral-curve counts, finite affine spectra, exponential-moment divergence, local rigidity and finite valuation cylinders. The original
-caller continues to select exactly its seven original families. Both require
-an exact source commit and the confirmed supported human relationship.
-
-The Paper C workflow reference is commit
-b9fa9ba490f201b408a302a86f1594ee620b228b. Its Lean 4.34 tools are not reused.
-Model ports retain their precise licence and source attribution. See the
-[preparation plan](../../docs/PALOMAR_PLAN.md) for the current procedure.
-
-The finite valuation-cylinder family preserves four literal statements and thirteen audited theorem/bridge proofs. Its frozen-root qualification and verified con-ron replay passed. The [standalone six-checker report](supplementary/prime-cylinders-draft-checks.json) retains its actual earlier proof base and byte-identical module sources.
-
-
-The positional-field family has three literal original-grid statements and
-twelve audited theorem/bridge proofs. Its frozen-root qualification and verified
-con-ron replay passed. The [standalone six-checker report](supplementary/positional-field-draft-checks.json)
-retains its earlier proof base and byte-identical module sources. Its dedicated
-workflow caller preserves the two earlier callers and their fifteen-family scope.
-
-
-The Poisson-reference family has four canonical finite-product statements,
-twelve audited proofs, a passed frozen-root qualification and verified
-con-ron replay. Its separately scoped [standalone six-checker report](supplementary/poisson-reference-draft-checks.json)
-retains the earlier exact proof base and byte-identical module sources.
-The original seven-family and additional eight-family callers are unchanged;
-the third caller selects the positional field and exact reference structure.
-No complete Palomar workflow or registration is claimed.
+Local checks do not establish completion of the full Palomar workflow, editorial review or registration.

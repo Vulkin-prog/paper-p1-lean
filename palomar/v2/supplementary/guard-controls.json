@@ -1,0 +1,77 @@
+{
+  "scope": "Local positive and negative controls for the six-registration preparation guards; no workflow dispatch or submission.",
+  "outcomes": [
+    {
+      "control": "six bundles preserve all original component bodies",
+      "passed": true
+    },
+    {
+      "control": "seventh registration rejected",
+      "passed": true
+    },
+    {
+      "control": "two simultaneous submissions rejected",
+      "passed": true
+    },
+    {
+      "control": "workflow-only serialization rejected",
+      "passed": true
+    },
+    {
+      "control": "missing human editorial stage rejected",
+      "passed": true
+    },
+    {
+      "control": "lost declaration mapping rejected",
+      "passed": true
+    },
+    {
+      "control": "incorrect author ORCID rejected",
+      "passed": true
+    },
+    {
+      "control": "wrong declaration component rejected",
+      "passed": true
+    },
+    {
+      "control": "escaping configuration path rejected",
+      "passed": true
+    },
+    {
+      "control": "ignored ORCID sidecar rejected",
+      "passed": true
+    },
+    {
+      "control": "name and GitHub mismatch rejected",
+      "passed": true
+    },
+    {
+      "control": "edited consolidated proof body rejected",
+      "passed": true
+    },
+    {
+      "control": "changed original proof hash rejected",
+      "passed": true
+    },
+    {
+      "control": "single-namespace audit inventory",
+      "passed": true
+    },
+    {
+      "control": "multiple model namespaces and explicit root proofs audited",
+      "passed": true
+    },
+    {
+      "control": "mixed ambiguous audit names rejected",
+      "passed": true
+    },
+    {
+      "control": "unchanged transitive proof imports accepted",
+      "passed": true
+    },
+    {
+      "control": "changed transitive Solution helper rejected",
+      "passed": true
+    }
+  ]
+}

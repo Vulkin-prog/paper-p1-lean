@@ -66,20 +66,25 @@ def lean_code(source):
     return "".join(result)
 
 
+def declaration_names(source):
+    text = lean_code(source.read_text())
+    namespaces = re.findall(r"^namespace ([A-Za-z0-9_.]+)$", text, re.M)
+    declarations = re.findall(
+        r"^(?:@\[[^\n]*\][ \t]*)*(?:theorem|lemma) ([A-Za-z0-9_.']+)(?=\s|\[|\{)",
+        text, re.M,
+    )
+    if declarations and all(name.startswith("_root_.") for name in declarations):
+        return [name.removeprefix("_root_.") for name in declarations]
+    if len(namespaces) != 1 or any(name.startswith("_root_.") for name in declarations):
+        raise ValueError(f"Audit requires one namespace or fully explicit root theorem names: {source}")
+    return [f"{namespaces[0]}.{name}" for name in declarations]
+
+
 def discover_names():
     names = []
     sources = sorted((ROOT / "PaperP1").rglob("*.lean")) + sorted(ROOT.glob("SolutionP1*.lean"))
     for source in sources:
-        text = lean_code(source.read_text())
-        namespaces = re.findall(r"^namespace ([A-Za-z0-9_.]+)$", text, re.M)
-        if len(namespaces) != 1:
-            raise ValueError(f"Audit discovery requires one namespace per module: {source}")
-        declarations = re.findall(
-            r"^(?:@\[[^\n]*\][ \t]*)*(?:theorem|lemma) ([A-Za-z0-9_.']+)(?=\s|\[|\{)",
-            text,
-            re.M,
-        )
-        names.extend(f"{namespaces[0]}.{name}" for name in declarations)
+        names.extend(declaration_names(source))
     if not names or len(names) != len(set(names)):
         raise ValueError("Empty or duplicate theorem inventory")
     return names

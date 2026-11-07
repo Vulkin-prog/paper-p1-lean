@@ -1,0 +1,163 @@
+{
+  "bundle": "arithmetic_geometry",
+  "base_proof_commit": "3e5a5c0e563bbcfc1ab92472411f86dc1b44d74b",
+  "selected_declarations": [
+    "PaperP1Registry.Registration.ArithmeticGeometry.quadratic_kernels_uniform_count",
+    "PaperP1Registry.Registration.ArithmeticGeometry.quadratic_kernels_capped_comparison",
+    "PaperP1Registry.Registration.ArithmeticGeometry.quadratic_kernels_uncapped_comparison_iff",
+    "PaperP1Registry.Registration.ArithmeticGeometry.quadratic_kernels_actual_uncapped_counterexamples",
+    "PaperP1Registry.Registration.ArithmeticGeometry.integral_curve_count_all_dimensional_count",
+    "PaperP1Registry.Registration.ArithmeticGeometry.integral_curve_count_plane_count",
+    "PaperP1Registry.Registration.ArithmeticGeometry.integral_curve_count_growing_degree_sublinear",
+    "PaperP1Registry.Registration.ArithmeticGeometry.local_rigidity_split_product_bound",
+    "PaperP1Registry.Registration.ArithmeticGeometry.local_rigidity_uniform_quadratic_count",
+    "PaperP1Registry.Registration.ArithmeticGeometry.local_rigidity_finite_relative_griesmer",
+    "PaperP1Registry.Registration.ArithmeticGeometry.local_rigidity_logarithmic_rank_regimes",
+    "PaperP1Registry.Registration.ArithmeticGeometry.local_rigidity_subcritical_relative_signs"
+  ],
+  "original_declaration_mapping": [
+    {
+      "declaration": "PaperP1Registry.Registration.ArithmeticGeometry.quadratic_kernels_uniform_count",
+      "original_declaration": "PaperP1Registry.QuadraticKernels.uniform_count",
+      "component": "quadratic_kernels"
+    },
+    {
+      "declaration": "PaperP1Registry.Registration.ArithmeticGeometry.quadratic_kernels_capped_comparison",
+      "original_declaration": "PaperP1Registry.QuadraticKernels.capped_comparison",
+      "component": "quadratic_kernels"
+    },
+    {
+      "declaration": "PaperP1Registry.Registration.ArithmeticGeometry.quadratic_kernels_uncapped_comparison_iff",
+      "original_declaration": "PaperP1Registry.QuadraticKernels.uncapped_comparison_iff",
+      "component": "quadratic_kernels"
+    },
+    {
+      "declaration": "PaperP1Registry.Registration.ArithmeticGeometry.quadratic_kernels_actual_uncapped_counterexamples",
+      "original_declaration": "PaperP1Registry.QuadraticKernels.actual_uncapped_counterexamples",
+      "component": "quadratic_kernels"
+    },
+    {
+      "declaration": "PaperP1Registry.Registration.ArithmeticGeometry.integral_curve_count_all_dimensional_count",
+      "original_declaration": "PaperP1Registry.IntegralCurveCount.all_dimensional_count",
+      "component": "integral_curve_count"
+    },
+    {
+      "declaration": "PaperP1Registry.Registration.ArithmeticGeometry.integral_curve_count_plane_count",
+      "original_declaration": "PaperP1Registry.IntegralCurveCount.plane_count",
+      "component": "integral_curve_count"
+    },
+    {
+      "declaration": "PaperP1Registry.Registration.ArithmeticGeometry.integral_curve_count_growing_degree_sublinear",
+      "original_declaration": "PaperP1Registry.IntegralCurveCount.growing_degree_sublinear",
+      "component": "integral_curve_count"
+    },
+    {
+      "declaration": "PaperP1Registry.Registration.ArithmeticGeometry.local_rigidity_split_product_bound",
+      "original_declaration": "PaperP1Registry.LocalRigidity.split_product_bound",
+      "component": "local_rigidity"
+    },
+    {
+      "declaration": "PaperP1Registry.Registration.ArithmeticGeometry.local_rigidity_uniform_quadratic_count",
+      "original_declaration": "PaperP1Registry.LocalRigidity.uniform_quadratic_count",
+      "component": "local_rigidity"
+    },
+    {
+      "declaration": "PaperP1Registry.Registration.ArithmeticGeometry.local_rigidity_finite_relative_griesmer",
+      "original_declaration": "PaperP1Registry.LocalRigidity.finite_relative_griesmer",
+      "component": "local_rigidity"
+    },
+    {
+      "declaration": "PaperP1Registry.Registration.ArithmeticGeometry.local_rigidity_logarithmic_rank_regimes",
+      "original_declaration": "PaperP1Registry.LocalRigidity.logarithmic_rank_regimes",
+      "component": "local_rigidity"
+    },
+    {
+      "declaration": "PaperP1Registry.Registration.ArithmeticGeometry.local_rigidity_subcritical_relative_signs",
+      "original_declaration": "PaperP1Registry.LocalRigidity.subcritical_relative_signs",
+      "component": "local_rigidity"
+    }
+  ],
+  "module_exports": [
+    {
+      "module": "ChallengeP1RegistrationArithmeticGeometry",
+      "source_sha256": "eb6b40c28ed59ac02f68478640a022969c550f7b245ae8dc5e63545905c3c61f",
+      "export_sha256": "da5b7cef5bfb0625fe6d7033f2403274fce2c87c2d6fe417acf0ac425d4db5e9",
+      "export_bytes": 159938211,
+      "compilation_exit": 0,
+      "export_exit": 0,
+      "compressed_export_sha256": "a727179a980f87e40e387db37d6bdc880c3ab22c6dd9ce0ab57485b542d536aa",
+      "compressed_export_bytes": 24556037,
+      "compression_verified_lossless": true
+    },
+    {
+      "module": "SolutionP1RegistrationArithmeticGeometry",
+      "source_sha256": "c52c134016c6b17fb095829fe1844fc594ac073c473e71aa3e06fe9baa8ac2a8",
+      "export_sha256": "973f13d4d4338fc60cc55d5bef162e067e3a1bebb04fc115128a9eaafacdf0f3",
+      "export_bytes": 837061227,
+      "compilation_exit": 0,
+      "export_exit": 0,
+      "compressed_export_sha256": "aaf439008773f83275554e90bea021cb8dc0b1cf5215404d687858b64a86e243",
+      "compressed_export_bytes": 126824658,
+      "compression_verified_lossless": true
+    }
+  ],
+  "palomar_full_workflow_passed": false,
+  "scope": "Standalone consolidated statement comparison and checker replay only; no submission or relationship declaration.",
+  "audited_draft_theorems": 26,
+  "six_checker_replay": {
+    "actual_comparator_exit": 0,
+    "kernels_accepted": [
+      "Lean paranoid",
+      "con-leche",
+      "con-ron",
+      "lean4lean",
+      "nanoda",
+      "Lean default"
+    ],
+    "bubblewrap_enabled": true,
+    "con_ron_verified": true,
+    "con_ron_jobs": 2,
+    "con_leche_accepted_declarations": 93017,
+    "con_ron_accepted_declarations": 93017,
+    "lean4lean_checked_declarations": 93018,
+    "log_sha256": "4c9a0277bdeb1610294c1f0390c48c2cb939521487d68f55a06e199df0516d8f"
+  },
+  "kernel_commands": {
+    "Lean paranoid": [
+      "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/leanchecker-paranoid",
+      "--silent",
+      "--from-export"
+    ],
+    "lean4lean": [
+      "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/lean4lean",
+      "--import"
+    ],
+    "nanoda": [
+      "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/nanoda_bin"
+    ],
+    "con-leche": [
+      "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/con-leche"
+    ],
+    "con-ron": [
+      "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/con-ron",
+      "--verified",
+      "--jobs=2"
+    ]
+  },
+  "tool_binary_sha256": {
+    "lake": "42678ccbc2605e2f892540dc7236e009fdd1224e823d104dfd72725d2f1a52d2",
+    "leanexport": "8298d4412a1f8986b5dbfd1d9925211778d8d320fc47b72040c8fdfdd5b603d5",
+    "leanchecker": "2b2ff08805ace61c935b023f8114ac3f7f1d3bc79cb4e8c47ef7801a5af58798",
+    "leanchecker-paranoid": "4508d26d3e22463a9566a6155d7a1600c7bfc42b6cd2548be73e3d19d159d6c5",
+    "lean4lean": "baaec030a70c78562ced2c75866ab0d2410e81ce680b835179ed16570ad5ef97",
+    "nanoda_bin": "8241c5e6baa29490aa118d382f97961b208ae730fdb96545c2abed74c9ece5a8",
+    "con-leche": "a6380d68b4fb364189821dd4692569c11536de0a1e3aaefea06028c0d67bb193",
+    "con-ron": "4e5616d94374cae37324dad2594f6230c2bb2297240249fc78ff508f3bc5acef"
+  },
+  "completed_at": "2026-11-07T09:25:55.687298+00:00",
+  "preserved_log": {
+    "path": "palomar/v2/supplementary/arithmetic_geometry-six-kernels.log.gz",
+    "sha256": "fb02e69b91f72e26abfc32bf010bd3ff58002ba7e4a208113cc92c39df6e3cc1",
+    "uncompressed_sha256": "4c9a0277bdeb1610294c1f0390c48c2cb939521487d68f55a06e199df0516d8f"
+  }
+}

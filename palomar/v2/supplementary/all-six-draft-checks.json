@@ -1,0 +1,45 @@
+{
+  "preparation_base_commit": "3e5a5c0e563bbcfc1ab92472411f86dc1b44d74b",
+  "construction": "Explicit statements and complete proof bodies, with bijective model-namespace relocation and declaration renaming.",
+  "selected_count": 68,
+  "audited_complete_draft_theorems": 214,
+  "bundles": [
+    {
+      "bundle": "arithmetic_geometry",
+      "selected": 12,
+      "audited_draft_theorems": 26,
+      "report_sha256": "6b6beef7c7fbabbf89a16f5b3bb52fac6f3d9bb6d614e9cdef7cca47be7387c7"
+    },
+    {
+      "bundle": "profiles_smooth",
+      "selected": 6,
+      "audited_draft_theorems": 6,
+      "report_sha256": "4561ed18a94a52b5575d91ba011d57b6319abcf157663d43c7b1e0af305686ac"
+    },
+    {
+      "bundle": "affine_conditioning",
+      "selected": 12,
+      "audited_draft_theorems": 42,
+      "report_sha256": "6cd01aed08e94b02367369efa5ce0acacc7e236d220c54c2dca04ae3c255f4b2"
+    },
+    {
+      "bundle": "cumulants_obstructions",
+      "selected": 14,
+      "audited_draft_theorems": 48,
+      "report_sha256": "41390b897c4a723ac30aec55d4952933f7036adf68118d15a1e1651b44d21882"
+    },
+    {
+      "bundle": "poisson_fields",
+      "selected": 16,
+      "audited_draft_theorems": 63,
+      "report_sha256": "dea7471a5a1e8faa0dd4f8d2f3ad9e03090203d9d92ecd1e8a55327b7dc39ab3"
+    },
+    {
+      "bundle": "exponential_cylinders",
+      "selected": 8,
+      "audited_draft_theorems": 29,
+      "report_sha256": "82aacf51a4643d0f87b63dbf0337d72096c692065f7eaf1847657bf1f87bce19"
+    }
+  ],
+  "scope": "Six standalone pairs and their exact file hashes; this is not a claim that these new modules belonged to the base Git commit. Frozen-root qualification is separate. No Palomar submission."
+}

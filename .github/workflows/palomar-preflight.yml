@@ -1,5 +1,5 @@
-name: Complete pinned Palomar mechanical preflight
-run-name: Palomar full preflight — ${{ inputs.family }} at ${{ inputs.source_commit }}
+name: P1 single-registration Palomar mechanical preflight
+run-name: P1 registration preflight — ${{ inputs.bundle }} at ${{ inputs.source_commit }}
 
 on:
   workflow_dispatch:
@@ -8,20 +8,17 @@ on:
         description: Full immutable source commit (40 lowercase hexadecimal characters)
         required: true
         type: string
-      family:
-        description: Candidate family, or all families at the same source commit
+      bundle:
+        description: One registration only; finish its entire submission cycle before the next
         required: true
-        default: all
         type: choice
         options:
-          - all
-          - smooth_windows
-          - quadratic_kernels
-          - asymmetric_profiles
-          - quadratic_approximation
-          - poisson_scales
-          - private_obstruction
-          - conditioning
+          - arithmetic_geometry
+          - profiles_smooth
+          - affine_conditioning
+          - cumulants_obstructions
+          - poisson_fields
+          - exponential_cylinders
       authorization_relationship:
         description: Confirmed human relationship to the substantive formalization
         required: true
@@ -33,23 +30,28 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  group: p1-palomar-registration
+  cancel-in-progress: false
+
 jobs:
   select:
     runs-on: ubuntu-24.04
     outputs:
-      matrix: ${{ steps.selection.outputs.matrix }}
+      request_id: ${{ steps.selection.outputs.request_id }}
+      options: ${{ steps.selection.outputs.options }}
     steps:
-      - name: Validate exact source, confirmed relationship and family selection
+      - name: Validate one exact source, confirmed relationship and registration
         id: selection
         env:
           P1_SOURCE: ${{ inputs.source_commit }}
-          P1_FAMILY: ${{ inputs.family }}
+          P1_BUNDLE: ${{ inputs.bundle }}
           P1_RELATIONSHIP: ${{ inputs.authorization_relationship }}
         run: |
           python3 - <<'PY'
           import hashlib, json, os, re
           source = os.environ['P1_SOURCE']
-          family = os.environ['P1_FAMILY']
+          bundle = os.environ['P1_BUNDLE']
           relationship = os.environ['P1_RELATIONSHIP']
           if not re.fullmatch('[0-9a-f]{40}', source):
               raise SystemExit('source_commit must be a full lowercase commit SHA')
@@ -58,41 +60,30 @@ jobs:
               'I have approval from a responsible author or maintainer',
           }:
               raise SystemExit('An explicit supported human relationship is required')
-          families = [
-              'smooth_windows', 'quadratic_kernels', 'asymmetric_profiles',
-              'quadratic_approximation', 'poisson_scales', 'private_obstruction',
-              'conditioning',
-          ]
-          if family != 'all' and family not in families:
-              raise SystemExit('Unknown candidate family')
-          selected = families if family == 'all' else [family]
-          matrix = {'include': []}
-          for slug in selected:
-              identity = hashlib.sha256((source + ':' + slug).encode()).hexdigest()[:10]
-              matrix['include'].append({
-                  'family': slug,
-                  'request_id': 'p1' + identity,
-                  'options': {
-                      'comparator_config_path': 'comparator/p1_' + slug + '.json',
-                      'formalization_metadata_path': 'palomar/v1/' + slug + '/formalization.yaml',
-                      'authorization_relationship': relationship,
-                  },
-              })
+          bundles = {
+              'arithmetic_geometry', 'profiles_smooth', 'affine_conditioning',
+              'cumulants_obstructions', 'poisson_fields', 'exponential_cylinders',
+          }
+          if bundle not in bundles:
+              raise SystemExit('Choose exactly one of the six registrations')
+          identity = hashlib.sha256((source + ':' + bundle).encode()).hexdigest()[:10]
+          options = {
+              'comparator_config_path': 'comparator/registrations/p1_' + bundle + '.json',
+              'formalization_metadata_path': 'palomar/v2/' + bundle + '/formalization.yaml',
+              'authorization_relationship': relationship,
+          }
           with open(os.environ['GITHUB_OUTPUT'], 'a') as output:
-              output.write('matrix=' + json.dumps(matrix, separators=(',', ':')) + '\n')
+              output.write('request_id=r6' + identity + '\n')
+              output.write('options=' + json.dumps(options, separators=(',', ':')) + '\n')
           PY
   verify:
     needs: select
-    strategy:
-      fail-fast: false
-      max-parallel: 1
-      matrix: ${{ fromJSON(needs.select.outputs.matrix) }}
     uses: PalomarRegistry/PalomarSubmission/.github/workflows/submission.yml@14aa8d6b3c2f14a8540605e37144560b9a00e7e7
     with:
       repository: ${{ github.repository }}
       commit: ${{ inputs.source_commit }}
       pipeline_commit: 14aa8d6b3c2f14a8540605e37144560b9a00e7e7
-      request_id: ${{ matrix.request_id }}
+      request_id: ${{ needs.select.outputs.request_id }}
       mode: full
       execution_profile: palomar-standard-v1
-      options: ${{ toJSON(matrix.options) }}
+      options: ${{ needs.select.outputs.options }}

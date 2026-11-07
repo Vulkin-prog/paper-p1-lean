@@ -12,7 +12,7 @@ statements are preserved. The full replay passed 18,597 build jobs, 19,709 theor
 companion appendix, with all 167 PDF pages rebuilt and reviewed. Seventeen registry
 families with 68 selections are locally qualified; their project extension
 passed 18,599 build jobs and 19,721 theorem axiom checks at source 07894e254afa070ceef1cb62470f917d68615408.
-No registration is claimed.
+The current submission plan consolidates these into exactly six registrations, preserving all 68 selections. All six active metadata files associate Brice Pouly with ORCID 0009-0008-8491-2467 in supported structured person records. Only one complete submission cycle may be open at a time. No registration is claimed.
 
 Historical checkpoint P1-MATH-0995: Two actual reference coordinates are
 independent exactly when their shared Poisson intensity is zero. For pairs,

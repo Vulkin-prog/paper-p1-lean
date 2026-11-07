@@ -1,0 +1,20 @@
+{
+  "challenge_module": "ChallengeP1RegistrationExponentialCylinders",
+  "solution_module": "SolutionP1RegistrationExponentialCylinders",
+  "theorem_names": [
+    "PaperP1Registry.Registration.ExponentialCylinders.exponential_divergence_finite_cylinder_lower",
+    "PaperP1Registry.Registration.ExponentialCylinders.exponential_divergence_prime_threshold_bounds",
+    "PaperP1Registry.Registration.ExponentialCylinders.exponential_divergence_odd_prime_liminf",
+    "PaperP1Registry.Registration.ExponentialCylinders.exponential_divergence_logarithms_and_moments_diverge",
+    "PaperP1Registry.Registration.ExponentialCylinders.prime_cylinders_finite_valuation_cylinders",
+    "PaperP1Registry.Registration.ExponentialCylinders.prime_cylinders_effective_retained_density",
+    "PaperP1Registry.Registration.ExponentialCylinders.prime_cylinders_rank_charged_moments",
+    "PaperP1Registry.Registration.ExponentialCylinders.prime_cylinders_five_start_gain"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "enable_nanoda": true
+}

@@ -1,0 +1,163 @@
+{
+  "bundle": "affine_conditioning",
+  "base_proof_commit": "3e5a5c0e563bbcfc1ab92472411f86dc1b44d74b",
+  "selected_declarations": [
+    "PaperP1Registry.Registration.AffineConditioning.affine_spectra_uniform_affine_mass",
+    "PaperP1Registry.Registration.AffineConditioning.affine_spectra_centered_fourier_formula",
+    "PaperP1Registry.Registration.AffineConditioning.affine_spectra_sharp_relative_nullity_bound",
+    "PaperP1Registry.Registration.AffineConditioning.affine_spectra_canonical_factorization",
+    "PaperP1Registry.Registration.AffineConditioning.conditioning_conditional_target_sum",
+    "PaperP1Registry.Registration.AffineConditioning.conditioning_colored_target_sum",
+    "PaperP1Registry.Registration.AffineConditioning.conditioning_negative_deviation",
+    "PaperP1Registry.Registration.AffineConditioning.conditioning_conditional_mean_lower",
+    "PaperP1Registry.Registration.AffineConditioning.dependent_expansion_polynomial_expansion",
+    "PaperP1Registry.Registration.AffineConditioning.dependent_expansion_centered_identity",
+    "PaperP1Registry.Registration.AffineConditioning.dependent_expansion_positive_stopped_kernel",
+    "PaperP1Registry.Registration.AffineConditioning.dependent_expansion_stopped_l1_bound"
+  ],
+  "original_declaration_mapping": [
+    {
+      "declaration": "PaperP1Registry.Registration.AffineConditioning.affine_spectra_uniform_affine_mass",
+      "original_declaration": "PaperP1Registry.AffineSpectra.uniform_affine_mass",
+      "component": "affine_spectra"
+    },
+    {
+      "declaration": "PaperP1Registry.Registration.AffineConditioning.affine_spectra_centered_fourier_formula",
+      "original_declaration": "PaperP1Registry.AffineSpectra.centered_fourier_formula",
+      "component": "affine_spectra"
+    },
+    {
+      "declaration": "PaperP1Registry.Registration.AffineConditioning.affine_spectra_sharp_relative_nullity_bound",
+      "original_declaration": "PaperP1Registry.AffineSpectra.sharp_relative_nullity_bound",
+      "component": "affine_spectra"
+    },
+    {
+      "declaration": "PaperP1Registry.Registration.AffineConditioning.affine_spectra_canonical_factorization",
+      "original_declaration": "PaperP1Registry.AffineSpectra.canonical_factorization",
+      "component": "affine_spectra"
+    },
+    {
+      "declaration": "PaperP1Registry.Registration.AffineConditioning.conditioning_conditional_target_sum",
+      "original_declaration": "PaperP1Registry.Conditioning.conditional_target_sum",
+      "component": "conditioning"
+    },
+    {
+      "declaration": "PaperP1Registry.Registration.AffineConditioning.conditioning_colored_target_sum",
+      "original_declaration": "PaperP1Registry.Conditioning.colored_target_sum",
+      "component": "conditioning"
+    },
+    {
+      "declaration": "PaperP1Registry.Registration.AffineConditioning.conditioning_negative_deviation",
+      "original_declaration": "PaperP1Registry.Conditioning.negative_deviation",
+      "component": "conditioning"
+    },
+    {
+      "declaration": "PaperP1Registry.Registration.AffineConditioning.conditioning_conditional_mean_lower",
+      "original_declaration": "PaperP1Registry.Conditioning.conditional_mean_lower",
+      "component": "conditioning"
+    },
+    {
+      "declaration": "PaperP1Registry.Registration.AffineConditioning.dependent_expansion_polynomial_expansion",
+      "original_declaration": "PaperP1Registry.DependentExpansion.polynomial_expansion",
+      "component": "dependent_expansion"
+    },
+    {
+      "declaration": "PaperP1Registry.Registration.AffineConditioning.dependent_expansion_centered_identity",
+      "original_declaration": "PaperP1Registry.DependentExpansion.centered_identity",
+      "component": "dependent_expansion"
+    },
+    {
+      "declaration": "PaperP1Registry.Registration.AffineConditioning.dependent_expansion_positive_stopped_kernel",
+      "original_declaration": "PaperP1Registry.DependentExpansion.positive_stopped_kernel",
+      "component": "dependent_expansion"
+    },
+    {
+      "declaration": "PaperP1Registry.Registration.AffineConditioning.dependent_expansion_stopped_l1_bound",
+      "original_declaration": "PaperP1Registry.DependentExpansion.stopped_l1_bound",
+      "component": "dependent_expansion"
+    }
+  ],
+  "module_exports": [
+    {
+      "module": "ChallengeP1RegistrationAffineConditioning",
+      "source_sha256": "e909b99d96da79224516b6ac813ba30e5766280a15367111cc7e8a692f340445",
+      "export_sha256": "245832cd7c2b96f2cb0842d9e838828d15bec32f676617a4681ccbbd71fc971e",
+      "export_bytes": 155090446,
+      "compilation_exit": 0,
+      "export_exit": 0,
+      "compressed_export_sha256": "8d68040562e21c4cd2ed094bed2d4eb71e644a1102d2fe802aec17d54e8eaf6b",
+      "compressed_export_bytes": 23832089,
+      "compression_verified_lossless": true
+    },
+    {
+      "module": "SolutionP1RegistrationAffineConditioning",
+      "source_sha256": "7ff34096a3e67ee628c643861b94bff29a9c7ff21785720c9371d3e36ab3a37a",
+      "export_sha256": "7c4ee80921003a90fbe36b67d46e567e2ccf179a54a98697ce14ffeba7289004",
+      "export_bytes": 746811254,
+      "compilation_exit": 0,
+      "export_exit": 0,
+      "compressed_export_sha256": "b7eff056edd080fe92e1140cde01ce725a9f5860fa50d508ae2ca33cfbf5ffd0",
+      "compressed_export_bytes": 113310508,
+      "compression_verified_lossless": true
+    }
+  ],
+  "palomar_full_workflow_passed": false,
+  "scope": "Standalone consolidated statement comparison and checker replay only; no submission or relationship declaration.",
+  "audited_draft_theorems": 42,
+  "six_checker_replay": {
+    "actual_comparator_exit": 0,
+    "kernels_accepted": [
+      "Lean paranoid",
+      "con-leche",
+      "con-ron",
+      "lean4lean",
+      "nanoda",
+      "Lean default"
+    ],
+    "bubblewrap_enabled": true,
+    "con_ron_verified": true,
+    "con_ron_jobs": 2,
+    "con_leche_accepted_declarations": 86915,
+    "con_ron_accepted_declarations": 86915,
+    "lean4lean_checked_declarations": 86916,
+    "log_sha256": "b6796f9d6de6ddcf67a3bc9c9a459f4abfe9c1042e3a863d8b504c10600ef164"
+  },
+  "kernel_commands": {
+    "Lean paranoid": [
+      "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/leanchecker-paranoid",
+      "--silent",
+      "--from-export"
+    ],
+    "lean4lean": [
+      "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/lean4lean",
+      "--import"
+    ],
+    "nanoda": [
+      "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/nanoda_bin"
+    ],
+    "con-leche": [
+      "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/con-leche"
+    ],
+    "con-ron": [
+      "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/con-ron",
+      "--verified",
+      "--jobs=2"
+    ]
+  },
+  "tool_binary_sha256": {
+    "lake": "42678ccbc2605e2f892540dc7236e009fdd1224e823d104dfd72725d2f1a52d2",
+    "leanexport": "8298d4412a1f8986b5dbfd1d9925211778d8d320fc47b72040c8fdfdd5b603d5",
+    "leanchecker": "2b2ff08805ace61c935b023f8114ac3f7f1d3bc79cb4e8c47ef7801a5af58798",
+    "leanchecker-paranoid": "4508d26d3e22463a9566a6155d7a1600c7bfc42b6cd2548be73e3d19d159d6c5",
+    "lean4lean": "baaec030a70c78562ced2c75866ab0d2410e81ce680b835179ed16570ad5ef97",
+    "nanoda_bin": "8241c5e6baa29490aa118d382f97961b208ae730fdb96545c2abed74c9ece5a8",
+    "con-leche": "a6380d68b4fb364189821dd4692569c11536de0a1e3aaefea06028c0d67bb193",
+    "con-ron": "4e5616d94374cae37324dad2594f6230c2bb2297240249fc78ff508f3bc5acef"
+  },
+  "completed_at": "2026-11-07T09:34:00.268569+00:00",
+  "preserved_log": {
+    "path": "palomar/v2/supplementary/affine_conditioning-six-kernels.log.gz",
+    "sha256": "4ceb62caa0e639f6a3171c1f97e79f04ff45e108dc581808e07c38c206d03cd0",
+    "uncompressed_sha256": "b6796f9d6de6ddcf67a3bc9c9a459f4abfe9c1042e3a863d8b504c10600ef164"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "challenge_module": "ChallengeP1RegistrationProfilesSmooth",
+  "solution_module": "SolutionP1RegistrationProfilesSmooth",
+  "theorem_names": [
+    "PaperP1Registry.Registration.ProfilesSmooth.asymmetric_profiles_expanded_profile",
+    "PaperP1Registry.Registration.ProfilesSmooth.asymmetric_profiles_small_prime_invariance",
+    "PaperP1Registry.Registration.ProfilesSmooth.asymmetric_profiles_radius_one_obstruction",
+    "PaperP1Registry.Registration.ProfilesSmooth.smooth_windows_almost_all_two_smooth",
+    "PaperP1Registry.Registration.ProfilesSmooth.smooth_windows_uniform_off_central",
+    "PaperP1Registry.Registration.ProfilesSmooth.smooth_windows_gaussian_mean_comparison"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "enable_nanoda": true
+}

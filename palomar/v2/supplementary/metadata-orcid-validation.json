@@ -1,0 +1,244 @@
+{
+  "validator_commit": "14aa8d6b3c2f14a8540605e37144560b9a00e7e7",
+  "validator_files_sha256": {
+    "scripts/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "scripts/orcid_validation.py": "66d738b99848644e594e46b7cd39593766db21489e11811f7c3982d43c07bce8",
+    "scripts/submission_contract.py": "1403b961c11c655a08726e7606b11215a012cd1e3dd2c4a76e5fd95b5f534006",
+    "scripts/verification_errors.py": "6509e9bbaa534f1eba2be098e38633d3a817c33afb4ff86d0da86e1e4666f325",
+    "scripts/workflow_inputs.py": "49adb9bb594de653678ba9ba894b17a6f4489afee1efb70df5398ffd17cc3a0f"
+  },
+  "reference_example": {
+    "url": "https://github.com/Vulkin-prog/paper-c-lean/blob/main/palomar/v3prel/palm/formalization.yaml",
+    "github_blob_sha": "06f56ef01dad7ecc0f60d8803d8bcb0cf7da90b3"
+  },
+  "community_schema_sha256": "25ff6b25ca4511635aff4443cf20480c15e59dddf19591c730950b442ea54fce",
+  "author": {
+    "name": "Brice Pouly",
+    "github": "Vulkin-prog",
+    "orcid": "0009-0008-8491-2467"
+  },
+  "files": [
+    {
+      "bundle": "arithmetic_geometry",
+      "path": "palomar/v2/arithmetic_geometry/formalization.yaml",
+      "sha256": "b921cffe88197051cbe8132e01e992fa3d5808798f0441d69e31144e51f754f4",
+      "palomar_actual_metadata_minimum_passed": true,
+      "normalized_authors": [
+        {
+          "name": "Brice Pouly",
+          "github": "Vulkin-prog",
+          "orcid": "0009-0008-8491-2467"
+        }
+      ],
+      "normalized_responsible_maintainers": [
+        {
+          "name": "Brice Pouly",
+          "github": "Vulkin-prog",
+          "orcid": "0009-0008-8491-2467"
+        }
+      ],
+      "normalized_paper_source_authors": [
+        [
+          {
+            "name": "Brice Pouly",
+            "github": "Vulkin-prog",
+            "orcid": "0009-0008-8491-2467"
+          }
+        ]
+      ],
+      "recognized_declared_orcids": [
+        "0009-0008-8491-2467"
+      ],
+      "community_v04_name_only_projection_passed": true,
+      "community_v04_actual_file_validation_claimed": false
+    },
+    {
+      "bundle": "profiles_smooth",
+      "path": "palomar/v2/profiles_smooth/formalization.yaml",
+      "sha256": "585a65152325d21290ac4c142ae899ab7a78b2bf972dbdda5b50725f003897ff",
+      "palomar_actual_metadata_minimum_passed": true,
+      "normalized_authors": [
+        {
+          "name": "Brice Pouly",
+          "github": "Vulkin-prog",
+          "orcid": "0009-0008-8491-2467"
+        }
+      ],
+      "normalized_responsible_maintainers": [
+        {
+          "name": "Brice Pouly",
+          "github": "Vulkin-prog",
+          "orcid": "0009-0008-8491-2467"
+        }
+      ],
+      "normalized_paper_source_authors": [
+        [
+          {
+            "name": "Brice Pouly",
+            "github": "Vulkin-prog",
+            "orcid": "0009-0008-8491-2467"
+          }
+        ]
+      ],
+      "recognized_declared_orcids": [
+        "0009-0008-8491-2467"
+      ],
+      "community_v04_name_only_projection_passed": true,
+      "community_v04_actual_file_validation_claimed": false
+    },
+    {
+      "bundle": "affine_conditioning",
+      "path": "palomar/v2/affine_conditioning/formalization.yaml",
+      "sha256": "7ee5e9a7f24d3796681e1b380e7c6cb1de8acc0187c704a4e4cdf5ba451e1056",
+      "palomar_actual_metadata_minimum_passed": true,
+      "normalized_authors": [
+        {
+          "name": "Brice Pouly",
+          "github": "Vulkin-prog",
+          "orcid": "0009-0008-8491-2467"
+        }
+      ],
+      "normalized_responsible_maintainers": [
+        {
+          "name": "Brice Pouly",
+          "github": "Vulkin-prog",
+          "orcid": "0009-0008-8491-2467"
+        }
+      ],
+      "normalized_paper_source_authors": [
+        [
+          {
+            "name": "Brice Pouly",
+            "github": "Vulkin-prog",
+            "orcid": "0009-0008-8491-2467"
+          }
+        ]
+      ],
+      "recognized_declared_orcids": [
+        "0009-0008-8491-2467"
+      ],
+      "community_v04_name_only_projection_passed": true,
+      "community_v04_actual_file_validation_claimed": false
+    },
+    {
+      "bundle": "cumulants_obstructions",
+      "path": "palomar/v2/cumulants_obstructions/formalization.yaml",
+      "sha256": "b26cecffc25c83479fb19602bcd24b7ff9f178d6156343e1a8f62d008fa3ea03",
+      "palomar_actual_metadata_minimum_passed": true,
+      "normalized_authors": [
+        {
+          "name": "Brice Pouly",
+          "github": "Vulkin-prog",
+          "orcid": "0009-0008-8491-2467"
+        }
+      ],
+      "normalized_responsible_maintainers": [
+        {
+          "name": "Brice Pouly",
+          "github": "Vulkin-prog",
+          "orcid": "0009-0008-8491-2467"
+        }
+      ],
+      "normalized_paper_source_authors": [
+        [
+          {
+            "name": "Brice Pouly",
+            "github": "Vulkin-prog",
+            "orcid": "0009-0008-8491-2467"
+          }
+        ]
+      ],
+      "recognized_declared_orcids": [
+        "0009-0008-8491-2467"
+      ],
+      "community_v04_name_only_projection_passed": true,
+      "community_v04_actual_file_validation_claimed": false
+    },
+    {
+      "bundle": "poisson_fields",
+      "path": "palomar/v2/poisson_fields/formalization.yaml",
+      "sha256": "5317f4ca805ab23a796717ab2539edba1765ec66fdc4a333ddac17ca3ba0fd6b",
+      "palomar_actual_metadata_minimum_passed": true,
+      "normalized_authors": [
+        {
+          "name": "Brice Pouly",
+          "github": "Vulkin-prog",
+          "orcid": "0009-0008-8491-2467"
+        }
+      ],
+      "normalized_responsible_maintainers": [
+        {
+          "name": "Brice Pouly",
+          "github": "Vulkin-prog",
+          "orcid": "0009-0008-8491-2467"
+        }
+      ],
+      "normalized_paper_source_authors": [
+        [
+          {
+            "name": "Brice Pouly",
+            "github": "Vulkin-prog",
+            "orcid": "0009-0008-8491-2467"
+          }
+        ]
+      ],
+      "recognized_declared_orcids": [
+        "0009-0008-8491-2467"
+      ],
+      "community_v04_name_only_projection_passed": true,
+      "community_v04_actual_file_validation_claimed": false
+    },
+    {
+      "bundle": "exponential_cylinders",
+      "path": "palomar/v2/exponential_cylinders/formalization.yaml",
+      "sha256": "9d27b36b8ec94306efa4d6abb51db793a34d4140c7b7cee9c1d4b92511aa9649",
+      "palomar_actual_metadata_minimum_passed": true,
+      "normalized_authors": [
+        {
+          "name": "Brice Pouly",
+          "github": "Vulkin-prog",
+          "orcid": "0009-0008-8491-2467"
+        }
+      ],
+      "normalized_responsible_maintainers": [
+        {
+          "name": "Brice Pouly",
+          "github": "Vulkin-prog",
+          "orcid": "0009-0008-8491-2467"
+        }
+      ],
+      "normalized_paper_source_authors": [
+        [
+          {
+            "name": "Brice Pouly",
+            "github": "Vulkin-prog",
+            "orcid": "0009-0008-8491-2467"
+          }
+        ]
+      ],
+      "recognized_declared_orcids": [
+        "0009-0008-8491-2467"
+      ],
+      "community_v04_name_only_projection_passed": true,
+      "community_v04_actual_file_validation_claimed": false
+    }
+  ],
+  "scope": "Metadata parsing, normalized name/ORCID association and live current-record lookup only; no identity authentication, human relationship attestation or submission.",
+  "negative_controls": {
+    "invalid_orcid_checksum_rejected": true,
+    "orcid_embedded_in_name_rejected": true,
+    "unsupported_sidecar_not_recognized_as_orcid": true
+  },
+  "live_orcid_receipt": {
+    "schema_version": 1,
+    "checked_at": "2026-11-07T10:10:48Z",
+    "registry": "https://orcid.org",
+    "records": [
+      {
+        "orcid": "0009-0008-8491-2467",
+        "record_url": "https://orcid.org/0009-0008-8491-2467"
+      }
+    ]
+  },
+  "checked_at": "2026-11-07T10:10:48.198393+00:00"
+}

@@ -1,0 +1,175 @@
+{
+  "bundle": "cumulants_obstructions",
+  "base_proof_commit": "3e5a5c0e563bbcfc1ab92472411f86dc1b44d74b",
+  "selected_declarations": [
+    "PaperP1Registry.Registration.CumulantsObstructions.factorial_cumulants_factorial_source",
+    "PaperP1Registry.Registration.CumulantsObstructions.factorial_cumulants_third_exact_identity",
+    "PaperP1Registry.Registration.CumulantsObstructions.factorial_cumulants_fourth_exact_identity",
+    "PaperP1Registry.Registration.CumulantsObstructions.factorial_cumulants_principal_second_equivalent",
+    "PaperP1Registry.Registration.CumulantsObstructions.factorial_cumulants_optimal_third_cumulant",
+    "PaperP1Registry.Registration.CumulantsObstructions.moment_obstruction_normalized_probabilities",
+    "PaperP1Registry.Registration.CumulantsObstructions.moment_obstruction_all_factorial_series",
+    "PaperP1Registry.Registration.CumulantsObstructions.moment_obstruction_distance_and_exponential",
+    "PaperP1Registry.Registration.CumulantsObstructions.moment_obstruction_fixed_order_matching",
+    "PaperP1Registry.Registration.CumulantsObstructions.moment_obstruction_uniform_subpolynomial",
+    "PaperP1Registry.Registration.CumulantsObstructions.private_obstruction_admissible_fields",
+    "PaperP1Registry.Registration.CumulantsObstructions.private_obstruction_conditional_forcing",
+    "PaperP1Registry.Registration.CumulantsObstructions.private_obstruction_deterministic_obstruction",
+    "PaperP1Registry.Registration.CumulantsObstructions.private_obstruction_randomized_obstruction"
+  ],
+  "original_declaration_mapping": [
+    {
+      "declaration": "PaperP1Registry.Registration.CumulantsObstructions.factorial_cumulants_factorial_source",
+      "original_declaration": "PaperP1Registry.FactorialCumulants.factorial_source",
+      "component": "factorial_cumulants"
+    },
+    {
+      "declaration": "PaperP1Registry.Registration.CumulantsObstructions.factorial_cumulants_third_exact_identity",
+      "original_declaration": "PaperP1Registry.FactorialCumulants.third_exact_identity",
+      "component": "factorial_cumulants"
+    },
+    {
+      "declaration": "PaperP1Registry.Registration.CumulantsObstructions.factorial_cumulants_fourth_exact_identity",
+      "original_declaration": "PaperP1Registry.FactorialCumulants.fourth_exact_identity",
+      "component": "factorial_cumulants"
+    },
+    {
+      "declaration": "PaperP1Registry.Registration.CumulantsObstructions.factorial_cumulants_principal_second_equivalent",
+      "original_declaration": "PaperP1Registry.FactorialCumulants.principal_second_equivalent",
+      "component": "factorial_cumulants"
+    },
+    {
+      "declaration": "PaperP1Registry.Registration.CumulantsObstructions.factorial_cumulants_optimal_third_cumulant",
+      "original_declaration": "PaperP1Registry.FactorialCumulants.optimal_third_cumulant",
+      "component": "factorial_cumulants"
+    },
+    {
+      "declaration": "PaperP1Registry.Registration.CumulantsObstructions.moment_obstruction_normalized_probabilities",
+      "original_declaration": "PaperP1Registry.MomentObstruction.normalized_probabilities",
+      "component": "moment_obstruction"
+    },
+    {
+      "declaration": "PaperP1Registry.Registration.CumulantsObstructions.moment_obstruction_all_factorial_series",
+      "original_declaration": "PaperP1Registry.MomentObstruction.all_factorial_series",
+      "component": "moment_obstruction"
+    },
+    {
+      "declaration": "PaperP1Registry.Registration.CumulantsObstructions.moment_obstruction_distance_and_exponential",
+      "original_declaration": "PaperP1Registry.MomentObstruction.distance_and_exponential",
+      "component": "moment_obstruction"
+    },
+    {
+      "declaration": "PaperP1Registry.Registration.CumulantsObstructions.moment_obstruction_fixed_order_matching",
+      "original_declaration": "PaperP1Registry.MomentObstruction.fixed_order_matching",
+      "component": "moment_obstruction"
+    },
+    {
+      "declaration": "PaperP1Registry.Registration.CumulantsObstructions.moment_obstruction_uniform_subpolynomial",
+      "original_declaration": "PaperP1Registry.MomentObstruction.uniform_subpolynomial",
+      "component": "moment_obstruction"
+    },
+    {
+      "declaration": "PaperP1Registry.Registration.CumulantsObstructions.private_obstruction_admissible_fields",
+      "original_declaration": "PaperP1Registry.PrivateObstruction.admissible_fields",
+      "component": "private_obstruction"
+    },
+    {
+      "declaration": "PaperP1Registry.Registration.CumulantsObstructions.private_obstruction_conditional_forcing",
+      "original_declaration": "PaperP1Registry.PrivateObstruction.conditional_forcing",
+      "component": "private_obstruction"
+    },
+    {
+      "declaration": "PaperP1Registry.Registration.CumulantsObstructions.private_obstruction_deterministic_obstruction",
+      "original_declaration": "PaperP1Registry.PrivateObstruction.deterministic_obstruction",
+      "component": "private_obstruction"
+    },
+    {
+      "declaration": "PaperP1Registry.Registration.CumulantsObstructions.private_obstruction_randomized_obstruction",
+      "original_declaration": "PaperP1Registry.PrivateObstruction.randomized_obstruction",
+      "component": "private_obstruction"
+    }
+  ],
+  "module_exports": [
+    {
+      "module": "ChallengeP1RegistrationCumulantsObstructions",
+      "source_sha256": "357f56b5d8c1ae24e27c0d779349e82c9f68432bcc2c0655c29e635102022237",
+      "export_sha256": "b780c0f569e664b849121ad084439592bc246ca39a2ecab5d608d0799c3b7ac5",
+      "export_bytes": 152313476,
+      "compilation_exit": 0,
+      "export_exit": 0,
+      "compressed_export_sha256": "b99b7da2a14ed7231595d1764682621512c54094ee96646df4c5a1416abcd0d1",
+      "compressed_export_bytes": 23418081,
+      "compression_verified_lossless": true
+    },
+    {
+      "module": "SolutionP1RegistrationCumulantsObstructions",
+      "source_sha256": "cfdc3ec13778142c8034b26762157d02f2a24d21343e3ec25faaef91a22748fe",
+      "export_sha256": "b1a8efb4ed58f5bb06a915dee4e22706859822499853da03f8691fb9963953cd",
+      "export_bytes": 1053032145,
+      "compilation_exit": 0,
+      "export_exit": 0,
+      "compressed_export_sha256": "d78d536436c11064c25871b945da90b5c2a567c20ab0ce0535d74ad3a06f7aa4",
+      "compressed_export_bytes": 158997525,
+      "compression_verified_lossless": true
+    }
+  ],
+  "palomar_full_workflow_passed": false,
+  "scope": "Standalone consolidated statement comparison and checker replay only; no submission or relationship declaration.",
+  "audited_draft_theorems": 48,
+  "six_checker_replay": {
+    "actual_comparator_exit": 0,
+    "kernels_accepted": [
+      "Lean paranoid",
+      "con-leche",
+      "con-ron",
+      "lean4lean",
+      "nanoda",
+      "Lean default"
+    ],
+    "bubblewrap_enabled": true,
+    "con_ron_verified": true,
+    "con_ron_jobs": 2,
+    "con_leche_accepted_declarations": 104181,
+    "con_ron_accepted_declarations": 104181,
+    "lean4lean_checked_declarations": 104182,
+    "log_sha256": "6b322f8314a111ba884e6e9b654ba122ba390ac358b24360f55d0da0a280ae0f"
+  },
+  "kernel_commands": {
+    "Lean paranoid": [
+      "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/leanchecker-paranoid",
+      "--silent",
+      "--from-export"
+    ],
+    "lean4lean": [
+      "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/lean4lean",
+      "--import"
+    ],
+    "nanoda": [
+      "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/nanoda_bin"
+    ],
+    "con-leche": [
+      "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/con-leche"
+    ],
+    "con-ron": [
+      "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/con-ron",
+      "--verified",
+      "--jobs=2"
+    ]
+  },
+  "tool_binary_sha256": {
+    "lake": "42678ccbc2605e2f892540dc7236e009fdd1224e823d104dfd72725d2f1a52d2",
+    "leanexport": "8298d4412a1f8986b5dbfd1d9925211778d8d320fc47b72040c8fdfdd5b603d5",
+    "leanchecker": "2b2ff08805ace61c935b023f8114ac3f7f1d3bc79cb4e8c47ef7801a5af58798",
+    "leanchecker-paranoid": "4508d26d3e22463a9566a6155d7a1600c7bfc42b6cd2548be73e3d19d159d6c5",
+    "lean4lean": "baaec030a70c78562ced2c75866ab0d2410e81ce680b835179ed16570ad5ef97",
+    "nanoda_bin": "8241c5e6baa29490aa118d382f97961b208ae730fdb96545c2abed74c9ece5a8",
+    "con-leche": "a6380d68b4fb364189821dd4692569c11536de0a1e3aaefea06028c0d67bb193",
+    "con-ron": "4e5616d94374cae37324dad2594f6230c2bb2297240249fc78ff508f3bc5acef"
+  },
+  "completed_at": "2026-11-07T09:46:59.553983+00:00",
+  "preserved_log": {
+    "path": "palomar/v2/supplementary/cumulants_obstructions-six-kernels.log.gz",
+    "sha256": "a7c34cec2b640e3c2770b268906da2a7e89092047d22b933969092f24f0cbfdd",
+    "uncompressed_sha256": "6b322f8314a111ba884e6e9b654ba122ba390ac358b24360f55d0da0a280ae0f"
+  }
+}

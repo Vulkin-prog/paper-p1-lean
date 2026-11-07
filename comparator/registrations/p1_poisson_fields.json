@@ -1,0 +1,28 @@
+{
+  "challenge_module": "ChallengeP1RegistrationPoissonFields",
+  "solution_module": "SolutionP1RegistrationPoissonFields",
+  "theorem_names": [
+    "PaperP1Registry.Registration.PoissonFields.quadratic_approximation_source_probability",
+    "PaperP1Registry.Registration.PoissonFields.quadratic_approximation_reference_series",
+    "PaperP1Registry.Registration.PoissonFields.quadratic_approximation_optimal_quadratic",
+    "PaperP1Registry.Registration.PoissonFields.quadratic_approximation_probability_criterion",
+    "PaperP1Registry.Registration.PoissonFields.poisson_scales_source_probability",
+    "PaperP1Registry.Registration.PoissonFields.poisson_scales_poisson_expansion",
+    "PaperP1Registry.Registration.PoissonFields.poisson_scales_moving_residue_equivalent",
+    "PaperP1Registry.Registration.PoissonFields.poisson_scales_mean_bias_quantized",
+    "PaperP1Registry.Registration.PoissonFields.poisson_scales_nominal_quadratic_comparison",
+    "PaperP1Registry.Registration.PoissonFields.positional_field_positive_single_rates",
+    "PaperP1Registry.Registration.PoissonFields.positional_field_weighted_original_grid",
+    "PaperP1Registry.Registration.PoissonFields.positional_field_canonical_weighted_grid",
+    "PaperP1Registry.Registration.PoissonFields.poisson_reference_exact_marginals",
+    "PaperP1Registry.Registration.PoissonFields.poisson_reference_covariance_matrix",
+    "PaperP1Registry.Registration.PoissonFields.poisson_reference_pair_independence",
+    "PaperP1Registry.Registration.PoissonFields.poisson_reference_block_dependency"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "enable_nanoda": true
+}

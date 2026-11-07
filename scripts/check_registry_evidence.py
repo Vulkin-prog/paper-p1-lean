@@ -15,6 +15,7 @@ import re
 import subprocess
 
 from update_audit import lean_code
+from registry_plan import all_entries, load_plan, receipt_paths
 
 ROOT = Path(__file__).resolve().parents[1]
 ALLOWED = {'propext', 'Classical.choice', 'Quot.sound'}
@@ -51,7 +52,8 @@ def source_blob(commit, relative):
 @lru_cache(maxsize=None)
 def changed_sources(commit):
     return set(subprocess.check_output(
-        ['git', 'diff', '--name-only', commit, '--', 'PaperP1', 'PaperP1.lean'],
+        ['git', 'diff', '--name-only', commit, '--', 'PaperP1', 'PaperP1.lean',
+         ':(glob)SolutionP1*.lean'],
         cwd=ROOT, text=True,
     ).splitlines())
 
@@ -69,7 +71,8 @@ def check_current_proof_closure(commit, module):
         require(relative not in changed_sources(commit),
                 f'Imported proof source differs from local evidence: {relative}')
         code = lean_code((ROOT / relative).read_text())
-        imports = re.findall(r'^(?:(?:public|private)\s+)?import\s+(PaperP1(?:\.[A-Za-z0-9_]+)*)\s*$',
+        imports = re.findall(r'^(?:(?:public|private)\s+)?import\s+'
+                            r'(PaperP1(?:\.[A-Za-z0-9_]+)*|SolutionP1[A-Za-z0-9_]+)\s*$',
                              code, re.M)
         pending.extend(imports)
 
@@ -137,19 +140,29 @@ def main():
     parser.add_argument('--require-all', action='store_true', help='Require a receipt for every candidate')
     args = parser.parse_args()
     total = 0
-    receipts = sorted((ROOT / 'palomar/v1').glob('*/qualification.json'))
+    receipts = receipt_paths()
     for path in receipts:
         count = check_receipt(path)
         total += count
         print(f'{path.parent.name}: source identities, preserved logs and {count} selections verified.')
-    candidates = sorted((ROOT / 'comparator').glob('p1_*.json'))
+    entries = all_entries()
+    candidates = [entry['configuration'] for entry in entries]
     if args.require_all:
         expected = {json.loads(p.read_text())['solution_module'] for p in candidates}
         actual = {json.loads(source_blob(json.loads(p.read_text())['source_commit'],
                                        json.loads(p.read_text())['configuration']))['solution_module']
                   for p in receipts}
         require(actual == expected, 'Not every candidate has complete local qualification evidence')
-    print(f'Verified {len(receipts)}/{len(candidates)} local family receipts and {total} selected declarations.')
+    if load_plan() is not None:
+        for kind in ['registration', 'component']:
+            expected = {str(entry['metadata'].with_name('qualification.json'))
+                        for entry in entries if entry['kind'] == kind}
+            found = [path for path in receipts if str(path) in expected]
+            declarations = sum(len(json.loads(path.read_text())['declarations']) for path in found)
+            print(f'Verified {len(found)}/{len(expected)} local {kind} receipts and {declarations} selected declarations.')
+        print('Only the six consolidated registrations are planned for submission; the seventeen component receipts remain proof evidence.')
+    else:
+        print(f'Verified {len(receipts)}/{len(candidates)} local component receipts and {total} selected declarations.')
     print('Scope: local evidence integrity; complete Palomar workflow and registration remain separate.')
 
 

@@ -1,0 +1,187 @@
+{
+  "bundle": "poisson_fields",
+  "base_proof_commit": "3e5a5c0e563bbcfc1ab92472411f86dc1b44d74b",
+  "selected_declarations": [
+    "PaperP1Registry.Registration.PoissonFields.quadratic_approximation_source_probability",
+    "PaperP1Registry.Registration.PoissonFields.quadratic_approximation_reference_series",
+    "PaperP1Registry.Registration.PoissonFields.quadratic_approximation_optimal_quadratic",
+    "PaperP1Registry.Registration.PoissonFields.quadratic_approximation_probability_criterion",
+    "PaperP1Registry.Registration.PoissonFields.poisson_scales_source_probability",
+    "PaperP1Registry.Registration.PoissonFields.poisson_scales_poisson_expansion",
+    "PaperP1Registry.Registration.PoissonFields.poisson_scales_moving_residue_equivalent",
+    "PaperP1Registry.Registration.PoissonFields.poisson_scales_mean_bias_quantized",
+    "PaperP1Registry.Registration.PoissonFields.poisson_scales_nominal_quadratic_comparison",
+    "PaperP1Registry.Registration.PoissonFields.positional_field_positive_single_rates",
+    "PaperP1Registry.Registration.PoissonFields.positional_field_weighted_original_grid",
+    "PaperP1Registry.Registration.PoissonFields.positional_field_canonical_weighted_grid",
+    "PaperP1Registry.Registration.PoissonFields.poisson_reference_exact_marginals",
+    "PaperP1Registry.Registration.PoissonFields.poisson_reference_covariance_matrix",
+    "PaperP1Registry.Registration.PoissonFields.poisson_reference_pair_independence",
+    "PaperP1Registry.Registration.PoissonFields.poisson_reference_block_dependency"
+  ],
+  "original_declaration_mapping": [
+    {
+      "declaration": "PaperP1Registry.Registration.PoissonFields.quadratic_approximation_source_probability",
+      "original_declaration": "PaperP1Registry.QuadraticApproximation.source_probability",
+      "component": "quadratic_approximation"
+    },
+    {
+      "declaration": "PaperP1Registry.Registration.PoissonFields.quadratic_approximation_reference_series",
+      "original_declaration": "PaperP1Registry.QuadraticApproximation.reference_series",
+      "component": "quadratic_approximation"
+    },
+    {
+      "declaration": "PaperP1Registry.Registration.PoissonFields.quadratic_approximation_optimal_quadratic",
+      "original_declaration": "PaperP1Registry.QuadraticApproximation.optimal_quadratic",
+      "component": "quadratic_approximation"
+    },
+    {
+      "declaration": "PaperP1Registry.Registration.PoissonFields.quadratic_approximation_probability_criterion",
+      "original_declaration": "PaperP1Registry.QuadraticApproximation.probability_criterion",
+      "component": "quadratic_approximation"
+    },
+    {
+      "declaration": "PaperP1Registry.Registration.PoissonFields.poisson_scales_source_probability",
+      "original_declaration": "PaperP1Registry.PoissonScales.source_probability",
+      "component": "poisson_scales"
+    },
+    {
+      "declaration": "PaperP1Registry.Registration.PoissonFields.poisson_scales_poisson_expansion",
+      "original_declaration": "PaperP1Registry.PoissonScales.poisson_expansion",
+      "component": "poisson_scales"
+    },
+    {
+      "declaration": "PaperP1Registry.Registration.PoissonFields.poisson_scales_moving_residue_equivalent",
+      "original_declaration": "PaperP1Registry.PoissonScales.moving_residue_equivalent",
+      "component": "poisson_scales"
+    },
+    {
+      "declaration": "PaperP1Registry.Registration.PoissonFields.poisson_scales_mean_bias_quantized",
+      "original_declaration": "PaperP1Registry.PoissonScales.mean_bias_quantized",
+      "component": "poisson_scales"
+    },
+    {
+      "declaration": "PaperP1Registry.Registration.PoissonFields.poisson_scales_nominal_quadratic_comparison",
+      "original_declaration": "PaperP1Registry.PoissonScales.nominal_quadratic_comparison",
+      "component": "poisson_scales"
+    },
+    {
+      "declaration": "PaperP1Registry.Registration.PoissonFields.positional_field_positive_single_rates",
+      "original_declaration": "PaperP1Registry.PositionalField.positive_single_rates",
+      "component": "positional_field"
+    },
+    {
+      "declaration": "PaperP1Registry.Registration.PoissonFields.positional_field_weighted_original_grid",
+      "original_declaration": "PaperP1Registry.PositionalField.weighted_original_grid",
+      "component": "positional_field"
+    },
+    {
+      "declaration": "PaperP1Registry.Registration.PoissonFields.positional_field_canonical_weighted_grid",
+      "original_declaration": "PaperP1Registry.PositionalField.canonical_weighted_grid",
+      "component": "positional_field"
+    },
+    {
+      "declaration": "PaperP1Registry.Registration.PoissonFields.poisson_reference_exact_marginals",
+      "original_declaration": "PaperP1Registry.PoissonReference.exact_marginals",
+      "component": "poisson_reference"
+    },
+    {
+      "declaration": "PaperP1Registry.Registration.PoissonFields.poisson_reference_covariance_matrix",
+      "original_declaration": "PaperP1Registry.PoissonReference.covariance_matrix",
+      "component": "poisson_reference"
+    },
+    {
+      "declaration": "PaperP1Registry.Registration.PoissonFields.poisson_reference_pair_independence",
+      "original_declaration": "PaperP1Registry.PoissonReference.pair_independence",
+      "component": "poisson_reference"
+    },
+    {
+      "declaration": "PaperP1Registry.Registration.PoissonFields.poisson_reference_block_dependency",
+      "original_declaration": "PaperP1Registry.PoissonReference.block_dependency",
+      "component": "poisson_reference"
+    }
+  ],
+  "module_exports": [
+    {
+      "module": "ChallengeP1RegistrationPoissonFields",
+      "source_sha256": "2e5cc7380de5a7a70ed93766ae7e416aa470f8e10fb06862695fb9a38639b336",
+      "export_sha256": "558264f6ee3abc0456769c5819502d0fc6269b3b720de3c92d6b8870646bd080",
+      "export_bytes": 150598165,
+      "compilation_exit": 0,
+      "export_exit": 0,
+      "compressed_export_sha256": "0ce780e02fabc6fefcde01aa824f505dba8632fd3cfbfcf36233f827b52006ab",
+      "compressed_export_bytes": 23188312,
+      "compression_verified_lossless": true
+    },
+    {
+      "module": "SolutionP1RegistrationPoissonFields",
+      "source_sha256": "876f6b3a809e7fe28fa80c8cb340990ad713fe19efdede5e0228c620125af374",
+      "export_sha256": "55be1accc166bf0a1d969d49303bb81003dc8a3dad8756a4a4da5801bae8339d",
+      "export_bytes": 1090895702,
+      "compilation_exit": 0,
+      "export_exit": 0,
+      "compressed_export_sha256": "59db1caa3d922f11dfba2177710113f22429646ba7e9aecac35af76bb758f9e9",
+      "compressed_export_bytes": 164708051,
+      "compression_verified_lossless": true
+    }
+  ],
+  "palomar_full_workflow_passed": false,
+  "scope": "Standalone consolidated statement comparison and checker replay only; no submission or relationship declaration.",
+  "audited_draft_theorems": 63,
+  "six_checker_replay": {
+    "actual_comparator_exit": 0,
+    "kernels_accepted": [
+      "Lean paranoid",
+      "con-leche",
+      "con-ron",
+      "lean4lean",
+      "nanoda",
+      "Lean default"
+    ],
+    "bubblewrap_enabled": true,
+    "con_ron_verified": true,
+    "con_ron_jobs": 2,
+    "con_leche_accepted_declarations": 106219,
+    "con_ron_accepted_declarations": 106219,
+    "lean4lean_checked_declarations": 106220,
+    "log_sha256": "3e714afac4c2d5bec951549ad4ebc17b82c365f56f0e0d56d5b44b715218cb23"
+  },
+  "kernel_commands": {
+    "Lean paranoid": [
+      "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/leanchecker-paranoid",
+      "--silent",
+      "--from-export"
+    ],
+    "lean4lean": [
+      "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/lean4lean",
+      "--import"
+    ],
+    "nanoda": [
+      "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/nanoda_bin"
+    ],
+    "con-leche": [
+      "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/con-leche"
+    ],
+    "con-ron": [
+      "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/con-ron",
+      "--verified",
+      "--jobs=2"
+    ]
+  },
+  "tool_binary_sha256": {
+    "lake": "42678ccbc2605e2f892540dc7236e009fdd1224e823d104dfd72725d2f1a52d2",
+    "leanexport": "8298d4412a1f8986b5dbfd1d9925211778d8d320fc47b72040c8fdfdd5b603d5",
+    "leanchecker": "2b2ff08805ace61c935b023f8114ac3f7f1d3bc79cb4e8c47ef7801a5af58798",
+    "leanchecker-paranoid": "4508d26d3e22463a9566a6155d7a1600c7bfc42b6cd2548be73e3d19d159d6c5",
+    "lean4lean": "baaec030a70c78562ced2c75866ab0d2410e81ce680b835179ed16570ad5ef97",
+    "nanoda_bin": "8241c5e6baa29490aa118d382f97961b208ae730fdb96545c2abed74c9ece5a8",
+    "con-leche": "a6380d68b4fb364189821dd4692569c11536de0a1e3aaefea06028c0d67bb193",
+    "con-ron": "4e5616d94374cae37324dad2594f6230c2bb2297240249fc78ff508f3bc5acef"
+  },
+  "completed_at": "2026-11-07T10:00:56.711625+00:00",
+  "preserved_log": {
+    "path": "palomar/v2/supplementary/poisson_fields-six-kernels.log.gz",
+    "sha256": "1a29057187f3d38502022b6897efb150fc64f9ac91b3b9f908aa1c5c1095be4a",
+    "uncompressed_sha256": "3e714afac4c2d5bec951549ad4ebc17b82c365f56f0e0d56d5b44b715218cb23"
+  }
+}

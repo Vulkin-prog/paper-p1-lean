@@ -1,0 +1,742 @@
+{
+  "schema_version": 1,
+  "target_registration_count": 6,
+  "scope": "Six planned Palomar registrations preserve all 68 selected mathematical statements and their original proof bodies. Model namespaces are relocated coherently in each Challenge/Solution pair; the seventeen original component sources and receipts remain unchanged.",
+  "preparation_base_commit": "3e5a5c0e563bbcfc1ab92472411f86dc1b44d74b",
+  "submission_policy": {
+    "maximum_active_submissions": 1,
+    "dispatch_one_bundle_only": true,
+    "complete_or_close_entire_cycle_before_next": true,
+    "cycle_includes": [
+      "full_workflow",
+      "intake",
+      "mechanical_verification",
+      "editorial_review",
+      "human_decision",
+      "registration_or_documented_closure"
+    ]
+  },
+  "component_evidence_directory": "palomar/v1",
+  "metadata_directory": "palomar/v2",
+  "superseded_request": {
+    "source_commit": "0a9d3e68a8af39b6ea1ce725027f72ca5f10e8c4",
+    "component_count": 15,
+    "status": "superseded_by_six_bundle_plan",
+    "human_relationship_confirmed": false
+  },
+  "bundles": [
+    {
+      "order": 1,
+      "slug": "arithmetic_geometry",
+      "title": "Arithmetic and geometry",
+      "configuration": "comparator/registrations/p1_arithmetic_geometry.json",
+      "metadata": "palomar/v2/arithmetic_geometry/formalization.yaml",
+      "challenge_module": "ChallengeP1RegistrationArithmeticGeometry",
+      "solution_module": "SolutionP1RegistrationArithmeticGeometry",
+      "namespace": "PaperP1Registry.Registration.ArithmeticGeometry",
+      "selected_count": 12,
+      "declaration_mapping": [
+        {
+          "declaration": "PaperP1Registry.Registration.ArithmeticGeometry.quadratic_kernels_uniform_count",
+          "original_declaration": "PaperP1Registry.QuadraticKernels.uniform_count",
+          "component": "quadratic_kernels"
+        },
+        {
+          "declaration": "PaperP1Registry.Registration.ArithmeticGeometry.quadratic_kernels_capped_comparison",
+          "original_declaration": "PaperP1Registry.QuadraticKernels.capped_comparison",
+          "component": "quadratic_kernels"
+        },
+        {
+          "declaration": "PaperP1Registry.Registration.ArithmeticGeometry.quadratic_kernels_uncapped_comparison_iff",
+          "original_declaration": "PaperP1Registry.QuadraticKernels.uncapped_comparison_iff",
+          "component": "quadratic_kernels"
+        },
+        {
+          "declaration": "PaperP1Registry.Registration.ArithmeticGeometry.quadratic_kernels_actual_uncapped_counterexamples",
+          "original_declaration": "PaperP1Registry.QuadraticKernels.actual_uncapped_counterexamples",
+          "component": "quadratic_kernels"
+        },
+        {
+          "declaration": "PaperP1Registry.Registration.ArithmeticGeometry.integral_curve_count_all_dimensional_count",
+          "original_declaration": "PaperP1Registry.IntegralCurveCount.all_dimensional_count",
+          "component": "integral_curve_count"
+        },
+        {
+          "declaration": "PaperP1Registry.Registration.ArithmeticGeometry.integral_curve_count_plane_count",
+          "original_declaration": "PaperP1Registry.IntegralCurveCount.plane_count",
+          "component": "integral_curve_count"
+        },
+        {
+          "declaration": "PaperP1Registry.Registration.ArithmeticGeometry.integral_curve_count_growing_degree_sublinear",
+          "original_declaration": "PaperP1Registry.IntegralCurveCount.growing_degree_sublinear",
+          "component": "integral_curve_count"
+        },
+        {
+          "declaration": "PaperP1Registry.Registration.ArithmeticGeometry.local_rigidity_split_product_bound",
+          "original_declaration": "PaperP1Registry.LocalRigidity.split_product_bound",
+          "component": "local_rigidity"
+        },
+        {
+          "declaration": "PaperP1Registry.Registration.ArithmeticGeometry.local_rigidity_uniform_quadratic_count",
+          "original_declaration": "PaperP1Registry.LocalRigidity.uniform_quadratic_count",
+          "component": "local_rigidity"
+        },
+        {
+          "declaration": "PaperP1Registry.Registration.ArithmeticGeometry.local_rigidity_finite_relative_griesmer",
+          "original_declaration": "PaperP1Registry.LocalRigidity.finite_relative_griesmer",
+          "component": "local_rigidity"
+        },
+        {
+          "declaration": "PaperP1Registry.Registration.ArithmeticGeometry.local_rigidity_logarithmic_rank_regimes",
+          "original_declaration": "PaperP1Registry.LocalRigidity.logarithmic_rank_regimes",
+          "component": "local_rigidity"
+        },
+        {
+          "declaration": "PaperP1Registry.Registration.ArithmeticGeometry.local_rigidity_subcritical_relative_signs",
+          "original_declaration": "PaperP1Registry.LocalRigidity.subcritical_relative_signs",
+          "component": "local_rigidity"
+        }
+      ],
+      "components": [
+        {
+          "family": "quadratic_kernels",
+          "configuration": "comparator/p1_quadratic_kernels.json",
+          "challenge_module": "ChallengeP1QuadraticKernels",
+          "solution_module": "SolutionP1QuadraticKernels",
+          "challenge_sha256": "c17c24e74a63df8698762496c47d480fe19913b417aa5dee6be0097da72ba6bb",
+          "solution_sha256": "d4fcd1e84f738e4582c6c71e925017988d47aa1ca6c6590387f31d9c5591c594",
+          "declarations": [
+            "PaperP1Registry.QuadraticKernels.uniform_count",
+            "PaperP1Registry.QuadraticKernels.capped_comparison",
+            "PaperP1Registry.QuadraticKernels.uncapped_comparison_iff",
+            "PaperP1Registry.QuadraticKernels.actual_uncapped_counterexamples"
+          ],
+          "original_namespace": "PaperP1Registry.QuadraticKernels",
+          "relocated_namespace": "PaperP1Registry.RegistrationModels.ArithmeticGeometry.QuadraticKernels"
+        },
+        {
+          "family": "integral_curve_count",
+          "configuration": "comparator/p1_integral_curve_count.json",
+          "challenge_module": "ChallengeP1IntegralCurveCount",
+          "solution_module": "SolutionP1IntegralCurveCount",
+          "challenge_sha256": "d16f840295f0d6f6cc2f29b95410f829ffc431c6f5dcae17fc7affd11a1651ca",
+          "solution_sha256": "3d5f8d8ae72b7fe6b1835cb3a6efc6bcb07cce8dfe94b5b17a543d68ff6e4182",
+          "declarations": [
+            "PaperP1Registry.IntegralCurveCount.all_dimensional_count",
+            "PaperP1Registry.IntegralCurveCount.plane_count",
+            "PaperP1Registry.IntegralCurveCount.growing_degree_sublinear"
+          ],
+          "original_namespace": "PaperP1Registry.IntegralCurveCount",
+          "relocated_namespace": "PaperP1Registry.RegistrationModels.ArithmeticGeometry.IntegralCurveCount"
+        },
+        {
+          "family": "local_rigidity",
+          "configuration": "comparator/p1_local_rigidity.json",
+          "challenge_module": "ChallengeP1LocalRigidity",
+          "solution_module": "SolutionP1LocalRigidity",
+          "challenge_sha256": "b7428d5823809ca878a3b8574bb27d813add67fc822a1839f40b33338649ca6c",
+          "solution_sha256": "6d87c9e049ad59747b47268fe16dde8accd159a602068aa1dd8c599ed66c32cd",
+          "declarations": [
+            "PaperP1Registry.LocalRigidity.split_product_bound",
+            "PaperP1Registry.LocalRigidity.uniform_quadratic_count",
+            "PaperP1Registry.LocalRigidity.finite_relative_griesmer",
+            "PaperP1Registry.LocalRigidity.logarithmic_rank_regimes",
+            "PaperP1Registry.LocalRigidity.subcritical_relative_signs"
+          ],
+          "original_namespace": "PaperP1Registry.LocalRigidity",
+          "relocated_namespace": "PaperP1Registry.RegistrationModels.ArithmeticGeometry.LocalRigidity"
+        }
+      ]
+    },
+    {
+      "order": 2,
+      "slug": "profiles_smooth",
+      "title": "Arithmetic profiles and smooth logarithmic windows",
+      "configuration": "comparator/registrations/p1_profiles_smooth.json",
+      "metadata": "palomar/v2/profiles_smooth/formalization.yaml",
+      "challenge_module": "ChallengeP1RegistrationProfilesSmooth",
+      "solution_module": "SolutionP1RegistrationProfilesSmooth",
+      "namespace": "PaperP1Registry.Registration.ProfilesSmooth",
+      "selected_count": 6,
+      "declaration_mapping": [
+        {
+          "declaration": "PaperP1Registry.Registration.ProfilesSmooth.asymmetric_profiles_expanded_profile",
+          "original_declaration": "PaperP1Registry.AsymmetricProfiles.expanded_profile",
+          "component": "asymmetric_profiles"
+        },
+        {
+          "declaration": "PaperP1Registry.Registration.ProfilesSmooth.asymmetric_profiles_small_prime_invariance",
+          "original_declaration": "PaperP1Registry.AsymmetricProfiles.small_prime_invariance",
+          "component": "asymmetric_profiles"
+        },
+        {
+          "declaration": "PaperP1Registry.Registration.ProfilesSmooth.asymmetric_profiles_radius_one_obstruction",
+          "original_declaration": "PaperP1Registry.AsymmetricProfiles.radius_one_obstruction",
+          "component": "asymmetric_profiles"
+        },
+        {
+          "declaration": "PaperP1Registry.Registration.ProfilesSmooth.smooth_windows_almost_all_two_smooth",
+          "original_declaration": "PaperP1Registry.SmoothWindows.almost_all_two_smooth",
+          "component": "smooth_windows"
+        },
+        {
+          "declaration": "PaperP1Registry.Registration.ProfilesSmooth.smooth_windows_uniform_off_central",
+          "original_declaration": "PaperP1Registry.SmoothWindows.uniform_off_central",
+          "component": "smooth_windows"
+        },
+        {
+          "declaration": "PaperP1Registry.Registration.ProfilesSmooth.smooth_windows_gaussian_mean_comparison",
+          "original_declaration": "PaperP1Registry.SmoothWindows.gaussian_mean_comparison",
+          "component": "smooth_windows"
+        }
+      ],
+      "components": [
+        {
+          "family": "asymmetric_profiles",
+          "configuration": "comparator/p1_asymmetric_profiles.json",
+          "challenge_module": "ChallengeP1AsymmetricProfiles",
+          "solution_module": "SolutionP1AsymmetricProfiles",
+          "challenge_sha256": "1fe1a334cae40baeacde3569e546a89691c1362a7c7c02eb615312f341a54a4e",
+          "solution_sha256": "2d607b5726fe964ce777477d2875c7d9163f5451b3342e33755dbf6188ef1700",
+          "declarations": [
+            "PaperP1Registry.AsymmetricProfiles.expanded_profile",
+            "PaperP1Registry.AsymmetricProfiles.small_prime_invariance",
+            "PaperP1Registry.AsymmetricProfiles.radius_one_obstruction"
+          ],
+          "original_namespace": "PaperP1Registry.AsymmetricProfiles",
+          "relocated_namespace": "PaperP1Registry.RegistrationModels.ProfilesSmooth.AsymmetricProfiles"
+        },
+        {
+          "family": "smooth_windows",
+          "configuration": "comparator/p1_smooth_windows.json",
+          "challenge_module": "ChallengeP1SmoothWindows",
+          "solution_module": "SolutionP1SmoothWindows",
+          "challenge_sha256": "558542657ca2963b319f4cb5986908f36833976225ec305b3ab8d262c499e2d2",
+          "solution_sha256": "a99623cbc0cfc94ce3297dd1b50c896a1ba4f9d874dbf223547302c56eab9421",
+          "declarations": [
+            "PaperP1Registry.SmoothWindows.almost_all_two_smooth",
+            "PaperP1Registry.SmoothWindows.uniform_off_central",
+            "PaperP1Registry.SmoothWindows.gaussian_mean_comparison"
+          ],
+          "original_namespace": "PaperP1Registry.SmoothWindows",
+          "relocated_namespace": "PaperP1Registry.RegistrationModels.ProfilesSmooth.SmoothWindows"
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "slug": "affine_conditioning",
+      "title": "Finite affine structure, conditioning and dependent expansions",
+      "configuration": "comparator/registrations/p1_affine_conditioning.json",
+      "metadata": "palomar/v2/affine_conditioning/formalization.yaml",
+      "challenge_module": "ChallengeP1RegistrationAffineConditioning",
+      "solution_module": "SolutionP1RegistrationAffineConditioning",
+      "namespace": "PaperP1Registry.Registration.AffineConditioning",
+      "selected_count": 12,
+      "declaration_mapping": [
+        {
+          "declaration": "PaperP1Registry.Registration.AffineConditioning.affine_spectra_uniform_affine_mass",
+          "original_declaration": "PaperP1Registry.AffineSpectra.uniform_affine_mass",
+          "component": "affine_spectra"
+        },
+        {
+          "declaration": "PaperP1Registry.Registration.AffineConditioning.affine_spectra_centered_fourier_formula",
+          "original_declaration": "PaperP1Registry.AffineSpectra.centered_fourier_formula",
+          "component": "affine_spectra"
+        },
+        {
+          "declaration": "PaperP1Registry.Registration.AffineConditioning.affine_spectra_sharp_relative_nullity_bound",
+          "original_declaration": "PaperP1Registry.AffineSpectra.sharp_relative_nullity_bound",
+          "component": "affine_spectra"
+        },
+        {
+          "declaration": "PaperP1Registry.Registration.AffineConditioning.affine_spectra_canonical_factorization",
+          "original_declaration": "PaperP1Registry.AffineSpectra.canonical_factorization",
+          "component": "affine_spectra"
+        },
+        {
+          "declaration": "PaperP1Registry.Registration.AffineConditioning.conditioning_conditional_target_sum",
+          "original_declaration": "PaperP1Registry.Conditioning.conditional_target_sum",
+          "component": "conditioning"
+        },
+        {
+          "declaration": "PaperP1Registry.Registration.AffineConditioning.conditioning_colored_target_sum",
+          "original_declaration": "PaperP1Registry.Conditioning.colored_target_sum",
+          "component": "conditioning"
+        },
+        {
+          "declaration": "PaperP1Registry.Registration.AffineConditioning.conditioning_negative_deviation",
+          "original_declaration": "PaperP1Registry.Conditioning.negative_deviation",
+          "component": "conditioning"
+        },
+        {
+          "declaration": "PaperP1Registry.Registration.AffineConditioning.conditioning_conditional_mean_lower",
+          "original_declaration": "PaperP1Registry.Conditioning.conditional_mean_lower",
+          "component": "conditioning"
+        },
+        {
+          "declaration": "PaperP1Registry.Registration.AffineConditioning.dependent_expansion_polynomial_expansion",
+          "original_declaration": "PaperP1Registry.DependentExpansion.polynomial_expansion",
+          "component": "dependent_expansion"
+        },
+        {
+          "declaration": "PaperP1Registry.Registration.AffineConditioning.dependent_expansion_centered_identity",
+          "original_declaration": "PaperP1Registry.DependentExpansion.centered_identity",
+          "component": "dependent_expansion"
+        },
+        {
+          "declaration": "PaperP1Registry.Registration.AffineConditioning.dependent_expansion_positive_stopped_kernel",
+          "original_declaration": "PaperP1Registry.DependentExpansion.positive_stopped_kernel",
+          "component": "dependent_expansion"
+        },
+        {
+          "declaration": "PaperP1Registry.Registration.AffineConditioning.dependent_expansion_stopped_l1_bound",
+          "original_declaration": "PaperP1Registry.DependentExpansion.stopped_l1_bound",
+          "component": "dependent_expansion"
+        }
+      ],
+      "components": [
+        {
+          "family": "affine_spectra",
+          "configuration": "comparator/p1_affine_spectra.json",
+          "challenge_module": "ChallengeP1AffineSpectra",
+          "solution_module": "SolutionP1AffineSpectra",
+          "challenge_sha256": "9754798e16d944530eebcfeb147ee73718aeeaa5d8e4cd8e9e29a33c452cdbe4",
+          "solution_sha256": "61b20df5355bf51d2587dc79d7b8584472c06ed5c9ae508447e822dedd8e7b4a",
+          "declarations": [
+            "PaperP1Registry.AffineSpectra.uniform_affine_mass",
+            "PaperP1Registry.AffineSpectra.centered_fourier_formula",
+            "PaperP1Registry.AffineSpectra.sharp_relative_nullity_bound",
+            "PaperP1Registry.AffineSpectra.canonical_factorization"
+          ],
+          "original_namespace": "PaperP1Registry.AffineSpectra",
+          "relocated_namespace": "PaperP1Registry.RegistrationModels.AffineConditioning.AffineSpectra"
+        },
+        {
+          "family": "conditioning",
+          "configuration": "comparator/p1_conditioning.json",
+          "challenge_module": "ChallengeP1Conditioning",
+          "solution_module": "SolutionP1Conditioning",
+          "challenge_sha256": "f9e8c995755f0cc503832ffde23694d104219538c8136af0fad11635a3e6198d",
+          "solution_sha256": "5bbc85db68e09eafda01ece3dbfa2c19dc3fcaeee3979e2aaf82e45eb5f44bf8",
+          "declarations": [
+            "PaperP1Registry.Conditioning.conditional_target_sum",
+            "PaperP1Registry.Conditioning.colored_target_sum",
+            "PaperP1Registry.Conditioning.negative_deviation",
+            "PaperP1Registry.Conditioning.conditional_mean_lower"
+          ],
+          "original_namespace": "PaperP1Registry.Conditioning",
+          "relocated_namespace": "PaperP1Registry.RegistrationModels.AffineConditioning.Conditioning"
+        },
+        {
+          "family": "dependent_expansion",
+          "configuration": "comparator/p1_dependent_expansion.json",
+          "challenge_module": "ChallengeP1DependentExpansion",
+          "solution_module": "SolutionP1DependentExpansion",
+          "challenge_sha256": "c150c5bb6997750499eb1453d1c5f7706ddacea56e84c69127f5d729eff7bc53",
+          "solution_sha256": "e6a95e189b21a9c15763e9de8a3340688880a2960bc0b014b03a73f0f7a8f8d2",
+          "declarations": [
+            "PaperP1Registry.DependentExpansion.polynomial_expansion",
+            "PaperP1Registry.DependentExpansion.centered_identity",
+            "PaperP1Registry.DependentExpansion.positive_stopped_kernel",
+            "PaperP1Registry.DependentExpansion.stopped_l1_bound"
+          ],
+          "original_namespace": "PaperP1Registry.DependentExpansion",
+          "relocated_namespace": "PaperP1Registry.RegistrationModels.AffineConditioning.DependentExpansion"
+        }
+      ]
+    },
+    {
+      "order": 4,
+      "slug": "cumulants_obstructions",
+      "title": "Factorial cumulants, moments and private obstructions",
+      "configuration": "comparator/registrations/p1_cumulants_obstructions.json",
+      "metadata": "palomar/v2/cumulants_obstructions/formalization.yaml",
+      "challenge_module": "ChallengeP1RegistrationCumulantsObstructions",
+      "solution_module": "SolutionP1RegistrationCumulantsObstructions",
+      "namespace": "PaperP1Registry.Registration.CumulantsObstructions",
+      "selected_count": 14,
+      "declaration_mapping": [
+        {
+          "declaration": "PaperP1Registry.Registration.CumulantsObstructions.factorial_cumulants_factorial_source",
+          "original_declaration": "PaperP1Registry.FactorialCumulants.factorial_source",
+          "component": "factorial_cumulants"
+        },
+        {
+          "declaration": "PaperP1Registry.Registration.CumulantsObstructions.factorial_cumulants_third_exact_identity",
+          "original_declaration": "PaperP1Registry.FactorialCumulants.third_exact_identity",
+          "component": "factorial_cumulants"
+        },
+        {
+          "declaration": "PaperP1Registry.Registration.CumulantsObstructions.factorial_cumulants_fourth_exact_identity",
+          "original_declaration": "PaperP1Registry.FactorialCumulants.fourth_exact_identity",
+          "component": "factorial_cumulants"
+        },
+        {
+          "declaration": "PaperP1Registry.Registration.CumulantsObstructions.factorial_cumulants_principal_second_equivalent",
+          "original_declaration": "PaperP1Registry.FactorialCumulants.principal_second_equivalent",
+          "component": "factorial_cumulants"
+        },
+        {
+          "declaration": "PaperP1Registry.Registration.CumulantsObstructions.factorial_cumulants_optimal_third_cumulant",
+          "original_declaration": "PaperP1Registry.FactorialCumulants.optimal_third_cumulant",
+          "component": "factorial_cumulants"
+        },
+        {
+          "declaration": "PaperP1Registry.Registration.CumulantsObstructions.moment_obstruction_normalized_probabilities",
+          "original_declaration": "PaperP1Registry.MomentObstruction.normalized_probabilities",
+          "component": "moment_obstruction"
+        },
+        {
+          "declaration": "PaperP1Registry.Registration.CumulantsObstructions.moment_obstruction_all_factorial_series",
+          "original_declaration": "PaperP1Registry.MomentObstruction.all_factorial_series",
+          "component": "moment_obstruction"
+        },
+        {
+          "declaration": "PaperP1Registry.Registration.CumulantsObstructions.moment_obstruction_distance_and_exponential",
+          "original_declaration": "PaperP1Registry.MomentObstruction.distance_and_exponential",
+          "component": "moment_obstruction"
+        },
+        {
+          "declaration": "PaperP1Registry.Registration.CumulantsObstructions.moment_obstruction_fixed_order_matching",
+          "original_declaration": "PaperP1Registry.MomentObstruction.fixed_order_matching",
+          "component": "moment_obstruction"
+        },
+        {
+          "declaration": "PaperP1Registry.Registration.CumulantsObstructions.moment_obstruction_uniform_subpolynomial",
+          "original_declaration": "PaperP1Registry.MomentObstruction.uniform_subpolynomial",
+          "component": "moment_obstruction"
+        },
+        {
+          "declaration": "PaperP1Registry.Registration.CumulantsObstructions.private_obstruction_admissible_fields",
+          "original_declaration": "PaperP1Registry.PrivateObstruction.admissible_fields",
+          "component": "private_obstruction"
+        },
+        {
+          "declaration": "PaperP1Registry.Registration.CumulantsObstructions.private_obstruction_conditional_forcing",
+          "original_declaration": "PaperP1Registry.PrivateObstruction.conditional_forcing",
+          "component": "private_obstruction"
+        },
+        {
+          "declaration": "PaperP1Registry.Registration.CumulantsObstructions.private_obstruction_deterministic_obstruction",
+          "original_declaration": "PaperP1Registry.PrivateObstruction.deterministic_obstruction",
+          "component": "private_obstruction"
+        },
+        {
+          "declaration": "PaperP1Registry.Registration.CumulantsObstructions.private_obstruction_randomized_obstruction",
+          "original_declaration": "PaperP1Registry.PrivateObstruction.randomized_obstruction",
+          "component": "private_obstruction"
+        }
+      ],
+      "components": [
+        {
+          "family": "factorial_cumulants",
+          "configuration": "comparator/p1_factorial_cumulants.json",
+          "challenge_module": "ChallengeP1FactorialCumulants",
+          "solution_module": "SolutionP1FactorialCumulants",
+          "challenge_sha256": "5724ebd6c7a5042f9586da8089efa4f51766f50a627b8d1aef9285863db8cc0b",
+          "solution_sha256": "637708f08dd238b9a44e555e9c52c57a929775335dc097b512c4ff51d78b2dff",
+          "declarations": [
+            "PaperP1Registry.FactorialCumulants.factorial_source",
+            "PaperP1Registry.FactorialCumulants.third_exact_identity",
+            "PaperP1Registry.FactorialCumulants.fourth_exact_identity",
+            "PaperP1Registry.FactorialCumulants.principal_second_equivalent",
+            "PaperP1Registry.FactorialCumulants.optimal_third_cumulant"
+          ],
+          "original_namespace": "PaperP1Registry.FactorialCumulants",
+          "relocated_namespace": "PaperP1Registry.RegistrationModels.CumulantsObstructions.FactorialCumulants"
+        },
+        {
+          "family": "moment_obstruction",
+          "configuration": "comparator/p1_moment_obstruction.json",
+          "challenge_module": "ChallengeP1MomentObstruction",
+          "solution_module": "SolutionP1MomentObstruction",
+          "challenge_sha256": "a956300789d7d3dd2866a32a5b2e679439d665140c39395cfe06ee06bdd60ffb",
+          "solution_sha256": "7cc153a8091a66935cb81812b8c85a7c72577575f7071d1deec31ee54019bd3e",
+          "declarations": [
+            "PaperP1Registry.MomentObstruction.normalized_probabilities",
+            "PaperP1Registry.MomentObstruction.all_factorial_series",
+            "PaperP1Registry.MomentObstruction.distance_and_exponential",
+            "PaperP1Registry.MomentObstruction.fixed_order_matching",
+            "PaperP1Registry.MomentObstruction.uniform_subpolynomial"
+          ],
+          "original_namespace": "PaperP1Registry.MomentObstruction",
+          "relocated_namespace": "PaperP1Registry.RegistrationModels.CumulantsObstructions.MomentObstruction"
+        },
+        {
+          "family": "private_obstruction",
+          "configuration": "comparator/p1_private_obstruction.json",
+          "challenge_module": "ChallengeP1PrivateObstruction",
+          "solution_module": "SolutionP1PrivateObstruction",
+          "challenge_sha256": "11593d3db6b21ff3eade855a32190e369a44b56b2164bba3f253e56340cb4e5f",
+          "solution_sha256": "92323accdba963129058c32c0a0e850621240b9aa48df0f8ea3b05e094c0aaf2",
+          "declarations": [
+            "PaperP1Registry.PrivateObstruction.admissible_fields",
+            "PaperP1Registry.PrivateObstruction.conditional_forcing",
+            "PaperP1Registry.PrivateObstruction.deterministic_obstruction",
+            "PaperP1Registry.PrivateObstruction.randomized_obstruction"
+          ],
+          "original_namespace": "PaperP1Registry.PrivateObstruction",
+          "relocated_namespace": "PaperP1Registry.RegistrationModels.CumulantsObstructions.PrivateObstruction"
+        }
+      ]
+    },
+    {
+      "order": 5,
+      "slug": "poisson_fields",
+      "title": "Poisson approximation, scales and positional reference fields",
+      "configuration": "comparator/registrations/p1_poisson_fields.json",
+      "metadata": "palomar/v2/poisson_fields/formalization.yaml",
+      "challenge_module": "ChallengeP1RegistrationPoissonFields",
+      "solution_module": "SolutionP1RegistrationPoissonFields",
+      "namespace": "PaperP1Registry.Registration.PoissonFields",
+      "selected_count": 16,
+      "declaration_mapping": [
+        {
+          "declaration": "PaperP1Registry.Registration.PoissonFields.quadratic_approximation_source_probability",
+          "original_declaration": "PaperP1Registry.QuadraticApproximation.source_probability",
+          "component": "quadratic_approximation"
+        },
+        {
+          "declaration": "PaperP1Registry.Registration.PoissonFields.quadratic_approximation_reference_series",
+          "original_declaration": "PaperP1Registry.QuadraticApproximation.reference_series",
+          "component": "quadratic_approximation"
+        },
+        {
+          "declaration": "PaperP1Registry.Registration.PoissonFields.quadratic_approximation_optimal_quadratic",
+          "original_declaration": "PaperP1Registry.QuadraticApproximation.optimal_quadratic",
+          "component": "quadratic_approximation"
+        },
+        {
+          "declaration": "PaperP1Registry.Registration.PoissonFields.quadratic_approximation_probability_criterion",
+          "original_declaration": "PaperP1Registry.QuadraticApproximation.probability_criterion",
+          "component": "quadratic_approximation"
+        },
+        {
+          "declaration": "PaperP1Registry.Registration.PoissonFields.poisson_scales_source_probability",
+          "original_declaration": "PaperP1Registry.PoissonScales.source_probability",
+          "component": "poisson_scales"
+        },
+        {
+          "declaration": "PaperP1Registry.Registration.PoissonFields.poisson_scales_poisson_expansion",
+          "original_declaration": "PaperP1Registry.PoissonScales.poisson_expansion",
+          "component": "poisson_scales"
+        },
+        {
+          "declaration": "PaperP1Registry.Registration.PoissonFields.poisson_scales_moving_residue_equivalent",
+          "original_declaration": "PaperP1Registry.PoissonScales.moving_residue_equivalent",
+          "component": "poisson_scales"
+        },
+        {
+          "declaration": "PaperP1Registry.Registration.PoissonFields.poisson_scales_mean_bias_quantized",
+          "original_declaration": "PaperP1Registry.PoissonScales.mean_bias_quantized",
+          "component": "poisson_scales"
+        },
+        {
+          "declaration": "PaperP1Registry.Registration.PoissonFields.poisson_scales_nominal_quadratic_comparison",
+          "original_declaration": "PaperP1Registry.PoissonScales.nominal_quadratic_comparison",
+          "component": "poisson_scales"
+        },
+        {
+          "declaration": "PaperP1Registry.Registration.PoissonFields.positional_field_positive_single_rates",
+          "original_declaration": "PaperP1Registry.PositionalField.positive_single_rates",
+          "component": "positional_field"
+        },
+        {
+          "declaration": "PaperP1Registry.Registration.PoissonFields.positional_field_weighted_original_grid",
+          "original_declaration": "PaperP1Registry.PositionalField.weighted_original_grid",
+          "component": "positional_field"
+        },
+        {
+          "declaration": "PaperP1Registry.Registration.PoissonFields.positional_field_canonical_weighted_grid",
+          "original_declaration": "PaperP1Registry.PositionalField.canonical_weighted_grid",
+          "component": "positional_field"
+        },
+        {
+          "declaration": "PaperP1Registry.Registration.PoissonFields.poisson_reference_exact_marginals",
+          "original_declaration": "PaperP1Registry.PoissonReference.exact_marginals",
+          "component": "poisson_reference"
+        },
+        {
+          "declaration": "PaperP1Registry.Registration.PoissonFields.poisson_reference_covariance_matrix",
+          "original_declaration": "PaperP1Registry.PoissonReference.covariance_matrix",
+          "component": "poisson_reference"
+        },
+        {
+          "declaration": "PaperP1Registry.Registration.PoissonFields.poisson_reference_pair_independence",
+          "original_declaration": "PaperP1Registry.PoissonReference.pair_independence",
+          "component": "poisson_reference"
+        },
+        {
+          "declaration": "PaperP1Registry.Registration.PoissonFields.poisson_reference_block_dependency",
+          "original_declaration": "PaperP1Registry.PoissonReference.block_dependency",
+          "component": "poisson_reference"
+        }
+      ],
+      "components": [
+        {
+          "family": "quadratic_approximation",
+          "configuration": "comparator/p1_quadratic_approximation.json",
+          "challenge_module": "ChallengeP1QuadraticApproximation",
+          "solution_module": "SolutionP1QuadraticApproximation",
+          "challenge_sha256": "3d2c5813bd98bf0a96c9f513d0ac27d311fbc35eb7d1e1787a591269c6a7f9a0",
+          "solution_sha256": "a6bbe07d18ff2036a7e11a997fe5a3c773591b2aa5dd5e3f8733da1dbdd20570",
+          "declarations": [
+            "PaperP1Registry.QuadraticApproximation.source_probability",
+            "PaperP1Registry.QuadraticApproximation.reference_series",
+            "PaperP1Registry.QuadraticApproximation.optimal_quadratic",
+            "PaperP1Registry.QuadraticApproximation.probability_criterion"
+          ],
+          "original_namespace": "PaperP1Registry.QuadraticApproximation",
+          "relocated_namespace": "PaperP1Registry.RegistrationModels.PoissonFields.QuadraticApproximation"
+        },
+        {
+          "family": "poisson_scales",
+          "configuration": "comparator/p1_poisson_scales.json",
+          "challenge_module": "ChallengeP1PoissonScales",
+          "solution_module": "SolutionP1PoissonScales",
+          "challenge_sha256": "e22ecfde926cb57332055bb2ff4f1c1e6f9a68818eccc56d53cb346e61403d9d",
+          "solution_sha256": "639e8da6b31ce74c9240c509bba6ef9ca63220d16fb2bae930a7eb37e2febb45",
+          "declarations": [
+            "PaperP1Registry.PoissonScales.source_probability",
+            "PaperP1Registry.PoissonScales.poisson_expansion",
+            "PaperP1Registry.PoissonScales.moving_residue_equivalent",
+            "PaperP1Registry.PoissonScales.mean_bias_quantized",
+            "PaperP1Registry.PoissonScales.nominal_quadratic_comparison"
+          ],
+          "original_namespace": "PaperP1Registry.PoissonScales",
+          "relocated_namespace": "PaperP1Registry.RegistrationModels.PoissonFields.PoissonScales"
+        },
+        {
+          "family": "positional_field",
+          "configuration": "comparator/p1_positional_field.json",
+          "challenge_module": "ChallengeP1PositionalField",
+          "solution_module": "SolutionP1PositionalField",
+          "challenge_sha256": "3d2e21215fd0a22dd0b20d45497ea192060561468ee31f517091c15afc906eef",
+          "solution_sha256": "a10cd249078f0a62139169075becf2c703f480e8eff9274edb9e8d88c416f15b",
+          "declarations": [
+            "PaperP1Registry.PositionalField.positive_single_rates",
+            "PaperP1Registry.PositionalField.weighted_original_grid",
+            "PaperP1Registry.PositionalField.canonical_weighted_grid"
+          ],
+          "original_namespace": "PaperP1Registry.PositionalField",
+          "relocated_namespace": "PaperP1Registry.RegistrationModels.PoissonFields.PositionalField"
+        },
+        {
+          "family": "poisson_reference",
+          "configuration": "comparator/p1_poisson_reference.json",
+          "challenge_module": "ChallengeP1PoissonReference",
+          "solution_module": "SolutionP1PoissonReference",
+          "challenge_sha256": "f9c1e9b455000b3d478553997366a6dc17b2bc30f187f45188ba79e4709db187",
+          "solution_sha256": "1e7d44dfb2a1542544125e8b9d831a971fa7d7e87e6b057d821c719be5779517",
+          "declarations": [
+            "PaperP1Registry.PoissonReference.exact_marginals",
+            "PaperP1Registry.PoissonReference.covariance_matrix",
+            "PaperP1Registry.PoissonReference.pair_independence",
+            "PaperP1Registry.PoissonReference.block_dependency"
+          ],
+          "original_namespace": "PaperP1Registry.PoissonReference",
+          "relocated_namespace": "PaperP1Registry.RegistrationModels.PoissonFields.PoissonReference"
+        }
+      ]
+    },
+    {
+      "order": 6,
+      "slug": "exponential_cylinders",
+      "title": "Exponential moments and prime cylinders",
+      "configuration": "comparator/registrations/p1_exponential_cylinders.json",
+      "metadata": "palomar/v2/exponential_cylinders/formalization.yaml",
+      "challenge_module": "ChallengeP1RegistrationExponentialCylinders",
+      "solution_module": "SolutionP1RegistrationExponentialCylinders",
+      "namespace": "PaperP1Registry.Registration.ExponentialCylinders",
+      "selected_count": 8,
+      "declaration_mapping": [
+        {
+          "declaration": "PaperP1Registry.Registration.ExponentialCylinders.exponential_divergence_finite_cylinder_lower",
+          "original_declaration": "PaperP1Registry.ExponentialDivergence.finite_cylinder_lower",
+          "component": "exponential_divergence"
+        },
+        {
+          "declaration": "PaperP1Registry.Registration.ExponentialCylinders.exponential_divergence_prime_threshold_bounds",
+          "original_declaration": "PaperP1Registry.ExponentialDivergence.prime_threshold_bounds",
+          "component": "exponential_divergence"
+        },
+        {
+          "declaration": "PaperP1Registry.Registration.ExponentialCylinders.exponential_divergence_odd_prime_liminf",
+          "original_declaration": "PaperP1Registry.ExponentialDivergence.odd_prime_liminf",
+          "component": "exponential_divergence"
+        },
+        {
+          "declaration": "PaperP1Registry.Registration.ExponentialCylinders.exponential_divergence_logarithms_and_moments_diverge",
+          "original_declaration": "PaperP1Registry.ExponentialDivergence.logarithms_and_moments_diverge",
+          "component": "exponential_divergence"
+        },
+        {
+          "declaration": "PaperP1Registry.Registration.ExponentialCylinders.prime_cylinders_finite_valuation_cylinders",
+          "original_declaration": "PaperP1Registry.PrimeCylinders.finite_valuation_cylinders",
+          "component": "prime_cylinders"
+        },
+        {
+          "declaration": "PaperP1Registry.Registration.ExponentialCylinders.prime_cylinders_effective_retained_density",
+          "original_declaration": "PaperP1Registry.PrimeCylinders.effective_retained_density",
+          "component": "prime_cylinders"
+        },
+        {
+          "declaration": "PaperP1Registry.Registration.ExponentialCylinders.prime_cylinders_rank_charged_moments",
+          "original_declaration": "PaperP1Registry.PrimeCylinders.rank_charged_moments",
+          "component": "prime_cylinders"
+        },
+        {
+          "declaration": "PaperP1Registry.Registration.ExponentialCylinders.prime_cylinders_five_start_gain",
+          "original_declaration": "PaperP1Registry.PrimeCylinders.five_start_gain",
+          "component": "prime_cylinders"
+        }
+      ],
+      "components": [
+        {
+          "family": "exponential_divergence",
+          "configuration": "comparator/p1_exponential_divergence.json",
+          "challenge_module": "ChallengeP1ExponentialDivergence",
+          "solution_module": "SolutionP1ExponentialDivergence",
+          "challenge_sha256": "af65f33efcd379a89d8a207b4fbf2bab6bf6bb8d2c6a3db0ee764d0966c06afd",
+          "solution_sha256": "05e71b00f6f72e2be00ffb5f9ab17d1871e397b0c2352c58712ccae59fb1c048",
+          "declarations": [
+            "PaperP1Registry.ExponentialDivergence.finite_cylinder_lower",
+            "PaperP1Registry.ExponentialDivergence.prime_threshold_bounds",
+            "PaperP1Registry.ExponentialDivergence.odd_prime_liminf",
+            "PaperP1Registry.ExponentialDivergence.logarithms_and_moments_diverge"
+          ],
+          "original_namespace": "PaperP1Registry.ExponentialDivergence",
+          "relocated_namespace": "PaperP1Registry.RegistrationModels.ExponentialCylinders.ExponentialDivergence"
+        },
+        {
+          "family": "prime_cylinders",
+          "configuration": "comparator/p1_prime_cylinders.json",
+          "challenge_module": "ChallengeP1PrimeCylinders",
+          "solution_module": "SolutionP1PrimeCylinders",
+          "challenge_sha256": "6af8dcc7e5f5393fe15deea6656567603d0440c9c419d545844b91bde4407e86",
+          "solution_sha256": "e5c467018ea0080fe9321748aeadf51eab7ee23d365a3260ecd8b229684458ef",
+          "declarations": [
+            "PaperP1Registry.PrimeCylinders.finite_valuation_cylinders",
+            "PaperP1Registry.PrimeCylinders.effective_retained_density",
+            "PaperP1Registry.PrimeCylinders.rank_charged_moments",
+            "PaperP1Registry.PrimeCylinders.five_start_gain"
+          ],
+          "original_namespace": "PaperP1Registry.PrimeCylinders",
+          "relocated_namespace": "PaperP1Registry.RegistrationModels.ExponentialCylinders.PrimeCylinders"
+        }
+      ]
+    }
+  ],
+  "author": {
+    "name": "Brice Pouly",
+    "github": "Vulkin-prog",
+    "orcid": "0009-0008-8491-2467"
+  },
+  "author_identifier_provenance": {
+    "paper_c_example": "https://github.com/Vulkin-prog/paper-c-lean/blob/main/palomar/v3prel/palm/formalization.yaml",
+    "palomar_contract": "https://github.com/PalomarRegistry/PalomarSubmission/blob/14aa8d6b3c2f14a8540605e37144560b9a00e7e7/scripts/submission_contract.py",
+    "representation": "Structured author object; separate name, GitHub login and canonical bare ORCID."
+  },
+  "construction": "Explicit statements and complete proof bodies, with bijective model-namespace relocation and declaration renaming."
+}
