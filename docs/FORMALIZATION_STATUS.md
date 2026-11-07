@@ -1,6 +1,19 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0993: Every site of the compensated Poisson
+Current checkpoint P1-MATH-0994: The exact covariance of the compensated
+Poisson reference field is proved for arbitrary finite packets and every
+independent realization. Its coordinates are square integrable. For pair
+packets the full covariance matrix has diagonal p_x, retained pair entries
+q_{x,y}, and zero elsewhere off the diagonal. The concrete product law has
+the same matrix. These are reference-field identities; all original
+arithmetic rates, the exponent 4/5 and fixed-degree comparison are preserved.
+Eighteen theorems and one definition passed direct Lean and exact
+permitted-axiom checks. Full project replay and manuscript integration of
+this clarification are pending. All 167 revised numbered statements remain
+proved. Sixteen registry families with 64 selections remain locally
+qualified; no registration is claimed.
+
+Historical checkpoint P1-MATH-0993: Every site of the compensated Poisson
 reference field has exactly the original Poisson parameter p_x. This is
 proved for every independent realization and the concrete product law,
 with arbitrary finite packets and no countability hypothesis on the

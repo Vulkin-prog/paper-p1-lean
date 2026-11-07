@@ -4934,3 +4934,4 @@ public import PaperP1.Model.RankChargedPrimeCylinder
 public import PaperP1.Probability.PositionalPoissonRealization
 public import PaperP1.Asymptotics.IndependentPositionalApproximation
 public import PaperP1.Probability.PositionalArrivalMarginals
+public import PaperP1.Probability.PositionalArrivalCovariance

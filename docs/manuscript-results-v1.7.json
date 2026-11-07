@@ -8972,7 +8972,26 @@
         "PaperP1.PositionalArrivalMarginals.observedCells",
         "PaperP1.PositionalArrivalMarginals.poisson_zero",
         "PaperP1.PositionalArrivalMarginals.rate_sum_observed",
-        "PaperP1.PositionalArrivalMarginals.sum_observed"
+        "PaperP1.PositionalArrivalMarginals.sum_observed",
+        "PaperP1.PositionalArrivalCovariance.coordinate",
+        "PaperP1.PositionalArrivalCovariance.coordinate_eq_sum",
+        "PaperP1.PositionalArrivalCovariance.covariance_canonical",
+        "PaperP1.PositionalArrivalCovariance.covariance_canonical_pairs",
+        "PaperP1.PositionalArrivalCovariance.covariance_cells",
+        "PaperP1.PositionalArrivalCovariance.covariance_coordinates",
+        "PaperP1.PositionalArrivalCovariance.covariance_pair_matrix",
+        "PaperP1.PositionalArrivalCovariance.covariance_pairs",
+        "PaperP1.PositionalArrivalCovariance.covariance_selected_sums",
+        "PaperP1.PositionalArrivalCovariance.mean_coordinate",
+        "PaperP1.PositionalArrivalCovariance.mean_of_hasLaw",
+        "PaperP1.PositionalArrivalCovariance.memLp_coordinate",
+        "PaperP1.PositionalArrivalCovariance.memLp_two_of_hasLaw",
+        "PaperP1.PositionalArrivalCovariance.pair_eq_of_card_two",
+        "PaperP1.PositionalArrivalCovariance.second_moment_of_hasLaw",
+        "PaperP1.PositionalArrivalCovariance.square_eq_factorial_two",
+        "PaperP1.PositionalArrivalCovariance.sum_observed_inter",
+        "PaperP1.PositionalArrivalCovariance.variance_coordinate",
+        "PaperP1.PositionalArrivalCovariance.variance_of_hasLaw"
       ],
       "remaining_unformalized_inputs": [],
       "canonical_statement": "PaperP1.PositionalGridApproximation.main_20_1",
@@ -9007,6 +9026,14 @@
           "scope": "For any finite ground and arbitrary finite packet family with nonnegative compensated single rates and packet rates, each original site of every independent Poisson arrival realization has exactly a Poisson marginal of parameter p_x. The sum of the actual observed arrival rates is proved equal to p_x, and the canonical product realization has the same marginal. No countability or measurable-space hypothesis on the ambient configuration space is required. For every natural order j, the actual factorial test is integrable and its expectation is exactly p_x^j. These identities concern the reference arrival field. The original arithmetic indicators, their approximation exponent 4/5 and the fixed-degree order of the asymptotic comparison are preserved.",
           "validation_source_commit": "2d09439656cc0f923203a465582324237b5bb4cb",
           "validation_record": "docs/validation/checkpoint-0993/validation.json"
+        },
+        {
+          "checkpoint": "P1-MATH-0994",
+          "kind": "exact_reference_arrival_covariance",
+          "canonical_statement": "PaperP1.PositionalArrivalCovariance.covariance_coordinates",
+          "canonical_additional_statement": "PaperP1.PositionalArrivalCovariance.covariance_pair_matrix",
+          "validation": "Eighteen theorems and one coordinate definition passed direct Lean v4.36.0-rc2 compilation with proof warnings as errors and exact permitted-axiom checks. Whole-project replay and manuscript integration are pending.",
+          "scope": "For any finite ground and arbitrary finite packet family, every independent Poisson arrival realization has square-integrable actual coordinates. Their exact covariance is the compensated single rate on the diagonal plus the sum of all packet rates shared by the two sites. For pair packets the complete matrix has diagonal p_x, retained off-diagonal pair rate q_{x,y}, and zero for every other off-diagonal entry. Both formulas hold also for the explicit finite product realization. The means and variances equal p_x. These are reference-field identities; the original arithmetic indicators, exponent 4/5 and fixed-degree asymptotic comparison are preserved. No countability or measurable-space assumption on the ambient configuration space is used."
         }
       ]
     },
