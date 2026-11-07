@@ -1,0 +1,90 @@
+{
+  "base_proof_commit": "73924953090c012f93cd6fd454b79cd5c83cc718",
+  "stage": "draft compile/export and direct audit",
+  "imported_project_proof_sources_unchanged": true,
+  "module_exports": [
+    {
+      "module": "ChallengeP1PrimeCylinders",
+      "source_sha256": "6af8dcc7e5f5393fe15deea6656567603d0440c9c419d545844b91bde4407e86",
+      "export_sha256": "e4240a3622179938724fb5d71ba087dcf055dc466cab9001a247c7e93890db42",
+      "export_bytes": 151652537,
+      "compilation_exit": 0,
+      "export_exit": 0,
+      "compressed_export_sha256": "d606cb01104185670e89a36ed42891420f868cc1f9ae9f38a3a6c4215b04d7b5",
+      "compressed_export_bytes": 23316459,
+      "compression_verified_lossless": true
+    },
+    {
+      "module": "SolutionP1PrimeCylinders",
+      "source_sha256": "e5c467018ea0080fe9321748aeadf51eab7ee23d365a3260ecd8b229684458ef",
+      "export_sha256": "88130728969ac75f837048ac72e5f796d441f6f830230c5c6993be48c72dbb23",
+      "export_bytes": 246138425,
+      "compilation_exit": 0,
+      "export_exit": 0,
+      "compressed_export_sha256": "a04dcffccb3c7abc4dca42f64edc81700121df68974a30747ddfc7816d6a0deb",
+      "compressed_export_bytes": 37543734,
+      "compression_verified_lossless": true
+    }
+  ],
+  "selected_declarations": [
+    "PaperP1Registry.PrimeCylinders.finite_valuation_cylinders",
+    "PaperP1Registry.PrimeCylinders.effective_retained_density",
+    "PaperP1Registry.PrimeCylinders.rank_charged_moments",
+    "PaperP1Registry.PrimeCylinders.five_start_gain"
+  ],
+  "palomar_full_workflow_passed": false,
+  "audited_draft_theorems": 13,
+  "six_checker_replay": {
+    "actual_comparator_exit": 0,
+    "kernels_accepted": [
+      "Lean paranoid",
+      "con-leche",
+      "con-ron",
+      "lean4lean",
+      "nanoda",
+      "Lean default"
+    ],
+    "bubblewrap_enabled": true,
+    "con_ron_verified": true,
+    "con_ron_jobs": 2,
+    "con_leche_accepted_declarations": 40183,
+    "con_ron_accepted_declarations": 40183,
+    "lean4lean_checked_declarations": 40184,
+    "log_sha256": "b46912bc25c07c63385b59943a0b57645a9fdb8e0cf0028da1324cb90f82497a"
+  },
+  "tool_binary_sha256": {
+    "lake": "42678ccbc2605e2f892540dc7236e009fdd1224e823d104dfd72725d2f1a52d2",
+    "leanexport": "8298d4412a1f8986b5dbfd1d9925211778d8d320fc47b72040c8fdfdd5b603d5",
+    "leanchecker": "2b2ff08805ace61c935b023f8114ac3f7f1d3bc79cb4e8c47ef7801a5af58798",
+    "leanchecker-paranoid": "4508d26d3e22463a9566a6155d7a1600c7bfc42b6cd2548be73e3d19d159d6c5",
+    "lean4lean": "baaec030a70c78562ced2c75866ab0d2410e81ce680b835179ed16570ad5ef97",
+    "nanoda_bin": "8241c5e6baa29490aa118d382f97961b208ae730fdb96545c2abed74c9ece5a8",
+    "con-leche": "a6380d68b4fb364189821dd4692569c11536de0a1e3aaefea06028c0d67bb193",
+    "con-ron": "4e5616d94374cae37324dad2594f6230c2bb2297240249fc78ff508f3bc5acef"
+  },
+  "kernel_commands": {
+    "Lean paranoid": [
+      "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/leanchecker-paranoid",
+      "--silent",
+      "--from-export"
+    ],
+    "lean4lean": [
+      "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/lean4lean",
+      "--import"
+    ],
+    "nanoda": [
+      "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/nanoda_bin"
+    ],
+    "con-leche": [
+      "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/con-leche"
+    ],
+    "con-ron": [
+      "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/con-ron",
+      "--verified",
+      "--jobs=2"
+    ]
+  },
+  "log_path": "palomar/v1/supplementary/prime_cylinders-draft-six-kernels.log.gz",
+  "compressed_log_sha256": "9ee02fc940099bc257f309465386e64aed676df0b9c1d88fc8b41db114996cc6",
+  "scope": "Standalone immutable exports and six-checker replay at the stated earlier proof base. Module bytes match the prepared root candidate. Frozen-root qualification, full Palomar workflow, editorial review and registration remain separate."
+}

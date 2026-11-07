@@ -11,6 +11,7 @@ import SolutionP1IntegralCurveCount
 import SolutionP1LocalRigidity
 import SolutionP1MomentObstruction
 import SolutionP1PoissonScales
+import SolutionP1PrimeCylinders
 import SolutionP1PrivateObstruction
 import SolutionP1QuadraticApproximation
 import SolutionP1QuadraticKernels
@@ -25,7 +26,7 @@ invokes Lean's own `#print axioms` once for each declaration. Keeping the names
 as data avoids a generated Lean source longer than Palomar's 10,000-line limit.
 -/
 
--- Inventory SHA-256: e1832ad7f6422cd9f386e226e93aec11b642cbe03d4dfd51ad58c85648328af2
+-- Inventory SHA-256: ab02b66bef71bbdd2d7ec904bd06639c7fce3d8301caa09b325964404660b70b
 
 open Lean Elab Command in
 run_cmd do

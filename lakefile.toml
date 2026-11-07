@@ -109,6 +109,13 @@ moreLeanArgs = ["-DwarningAsError=false"]
 [[lean_lib]]
 name = "SolutionP1LocalRigidity"
 
+[[lean_lib]]
+name = "ChallengeP1PrimeCylinders"
+moreLeanArgs = ["-DwarningAsError=false"]
+
+[[lean_lib]]
+name = "SolutionP1PrimeCylinders"
+
 [[require]]
 name = "mathlib"
 git = "https://github.com/leanprover-community/mathlib4.git"

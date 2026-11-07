@@ -148,3 +148,5 @@ its exact source attribution and was rebuilt with the new compiler. Manuscript
 provenance and authorship remain in the manuscript packages. Agent assistance
 and review are disclosed in the manuscript and candidate metadata; they do not
 constitute independent human peer review.
+
+The [finite valuation-cylinder candidate](palomar/v1/prime_cylinders/formalization.yaml) adds four literal-model statements and thirteen audited theorem/bridge proofs. Its standalone exports passed all six installed checkers at the preserved earlier proof base; frozen-root qualification is pending.

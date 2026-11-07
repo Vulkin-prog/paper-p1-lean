@@ -118,3 +118,8 @@ distinct. Before permanent registration, show the actual private review to the
 user and obtain their decision about publishing that exact review. Preserve
 its digest and record a registry identifier only after actual issuance. Do not
 invent a DOI or publication identifier for the working manuscript.
+
+The additional finite valuation-cylinder candidate has four selected literal-model
+statements for the finite layers, effective density, actual affine forcing mass
+and five-start numerical gain. Thirteen direct theorem/bridge audits and all
+six checkers passed on standalone exports. Frozen-root qualification is pending.

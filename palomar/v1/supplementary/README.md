@@ -39,3 +39,5 @@ counts of manuscript results. Revised manuscript coverage remains 167/167.
 - [Exponential-moment draft checks](exponential-divergence-draft-checks.json): 16 direct theorem audits and six checkers on the standalone exports, with its actual earlier proof base and module hashes preserved. Its later root qualification and three-kernel replay are recorded separately.
 
 - [Local-rigidity draft checks](local-rigidity-draft-checks.json): 13 direct theorem audits and six checkers on the standalone exports, with its actual earlier proof base and module hashes preserved. Its later root qualification and three-kernel replay are recorded separately.
+
+- [Finite valuation-cylinder draft checks](prime-cylinders-draft-checks.json): thirteen direct theorem audits and six checkers on the standalone exports, retaining the actual earlier proof base and exact module hashes. Frozen-root qualification is separate.

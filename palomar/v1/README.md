@@ -61,3 +61,5 @@ The Paper C workflow reference is commit
 b9fa9ba490f201b408a302a86f1594ee620b228b. Its Lean 4.34 tools are not reused.
 Model ports retain their precise licence and source attribution. See the
 [preparation plan](../../docs/PALOMAR_PLAN.md) for the current procedure.
+
+A fifteenth [finite valuation-cylinder candidate](prime_cylinders/formalization.yaml) has four explicit statements and thirteen audited theorem/bridge proofs. The standalone exports passed all six checkers at the stated earlier proof base. Its [source and checker report](supplementary/prime-cylinders-draft-checks.json) is preserved; frozen-root qualification remains pending.

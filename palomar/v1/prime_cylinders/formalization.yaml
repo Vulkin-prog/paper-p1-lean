@@ -1,0 +1,87 @@
+version: v0.4
+project:
+  name: Effective valuation cylinders and affine-rank moment bounds
+  description: Literal independent fair prime-sign values and full positive/total run counts are explicit.
+    The complete retained set consists of multipliers with even q-adic valuation. Every finite depth gives
+    the exact geometric lower budget with endpoint error 3*k. An explicit logarithmic depth yields a two-sided
+    count, fixed-prime density 1/(q+1), and a uniform absolute normalized error with a threshold independent
+    of the prime. The actual finite forcing event is a compatible affine fiber with normalized cardinality
+    exactly 2^(-rank). Both actual full exponential moments inherit the effective-rank cost, at most the
+    supported prime-count cost. The five-start N=18,q=3 example leaves prime 19 free and proves the numerical
+    bound exp(5*t)/1024 for both moments, at least twice the previous same-count atom bound.
+  authors:
+  - Brice Pouly
+  author_identifiers:
+  - name: Brice Pouly
+    github: Vulkin-prog
+    orcid: 0009-0008-8491-2467
+  responsible_maintainers:
+  - Brice Pouly
+  license: Apache-2.0
+repository:
+  role: substantive-development
+classification:
+  arxiv:
+  - math.PR
+  - math.NT
+sources:
+- title: Sharp Poisson approximation and second-order correction for long multiplicative runs, version
+    1.7 draft
+  authors:
+  - Brice Pouly
+  id: https://github.com/Vulkin-prog/paper-p1-lean
+  type: paper
+  relationship: formalizes
+  location: 'Companion proposition T19.7 and its unnumbered version 1.7 formalization appendix: checked
+    refinements P1-MATH-0988 through P1-MATH-0991.'
+  note: The actual retained sets, finite prime-bit vectors, affine forcing equations and normalized event
+    cardinality are Mathlib-only definitions. Compatibility and every count, density and moment bound
+    are proved from the arithmetic model. The original t>2 asymptotic theorem and all numbered statement
+    blocks are preserved. Uniformity concerns absolute normalized error; no growing-prime relative error
+    or general exact rank formula is asserted.
+related_formalizations:
+- id: https://github.com/Vulkin-prog/paper-c-lean
+  relationship: adapts
+  note: Prime-sign, parity and run-start foundations are adapted through P1 from Paper C commit b9fa9ba490f201b408a302a86f1594ee620b228b,
+    Apache-2.0, rebuilt under Lean v4.36.0-rc2. The even-valuation counts, effective density and affine
+    forcing event refinements are new substantive P1 proofs. Source headers and docs/PAPER_C_REUSE.md
+    preserve attribution.
+automation:
+  methods:
+  - method: agent
+    framework: Codex
+    models:
+    - OpenAI Codex agents
+    prompting_notes: Expose actual infinite prime-sign expectations, the complete even-valuation retained
+      set, its finite affine forcing map and normalized fiber cardinality in literal Mathlib-only definitions.
+      Prove exact bridges before transporting the finite-depth count, uniform density and rank-charged
+      moment theorems. Keep a threshold before the prime quantifier and preserve the original asymptotic
+      scope. Verify the nonempty five-start numerical example.
+    tool_setup: Lean proof construction, native literal-model bridges, source-bound compilation and exact
+      axiom audit, standalone immutable exports and isolated independent checking.
+  notes: Agent assistance is not independent human peer review.
+review:
+  status: agent-reviewed
+  notes: 'Four explicit standalone statements and their complete Solution compile under Lean v4.36.0-rc2
+    with proof warnings as errors. All thirteen bridge and theorem axioms pass the exact direct audit,
+    allowing only the three standard kernel axioms. Standalone exports passed exact statement comparison
+    and all six installed checkers: Lean default, Lean paranoid, lean4lean, NanoDa, verified con-leche
+    and verified con-ron with two jobs, with isolation enabled. The original source hashes, immutable
+    earlier proof base, binary hashes and logs are preserved. Frozen-root qualification and the complete
+    Palomar workflow are separate stages. Only the four selected Challenge statements have deliberate
+    holes.'
+status:
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms:
+  - propext
+  - Quot.sound
+  - Classical.choice
+  scope: 'Four selected declarations: finite-depth retained counts and both actual moments; effective
+    finite count and fixed-prime/uniform density; exact actual affine forcing mass and rank-charged full
+    moments; the numerical five-start probability gain. No registration is claimed.'
+fidelity:
+  divergences: These are finite refinements of companion T19.7. The complete even-valuation set replaces
+    its sufficient coprime subfamily; the supported cutoff uses only required integers; the full forcing
+    fiber replaces one prime-sign atom. No improved t threshold, general explicit exact rank, expected-count
+    density or uniformly relative growing-prime error is asserted. All numbered statements are preserved.
