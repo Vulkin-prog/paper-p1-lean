@@ -1,0 +1,36 @@
+{
+  "checkpoint": "P1-MATH-0990",
+  "source_commit": "d5bc5deb5056c55be7c72404ed0e0fef4e6f147d",
+  "status": "passed",
+  "full_build_jobs": 18575,
+  "audited_theorems": 19567,
+  "distinct_checked_references": 19722,
+  "actual_process_exit_codes": {
+    "build": 0,
+    "audit": 0,
+    "references": 0
+  },
+  "permitted_kernel_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "logs": [
+    {
+      "kind": "build",
+      "path": "docs/validation/checkpoint-0990/build.log.gz",
+      "sha256_gzip": "edc0ea7c170bf1bdaa1c4e169105de32aa691c4f8d6fb9d89236fcffd2965618"
+    },
+    {
+      "kind": "audit",
+      "path": "docs/validation/checkpoint-0990/audit.log.gz",
+      "sha256_gzip": "f00f7bf44898eff2bd881e4894fe38f9340b346660fd427e16caf068d4842e7e"
+    },
+    {
+      "kind": "references",
+      "path": "docs/validation/checkpoint-0990/references.log.gz",
+      "sha256_gzip": "468c59502271cda1b70519cfe9047dce88ef96e550f0888fe1262d84c34b2b1d"
+    }
+  ],
+  "scope": "Whole-project replay including the complete valuation-layer cover, effective two-sided count, actual moment bounds, fixed-prime density and uniform absolute normalized error. All fourteen registry Solutions and all original and revised numbered statement blocks are preserved."
+}

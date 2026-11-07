@@ -5,9 +5,11 @@ set has an exact finite layer cover at depth k=(Nat.clog q N+1)/2.
 Its count C lies between (N-1)/(q+1)-3*k and N/(q+1)+2*k. Both actual
 full exponential moments inherit the explicit lower budget. For a fixed
 prime q, C/N tends to 1/(q+1), and the absolute normalized error is bounded
-uniformly over primes q<=N by (3*k(N,2)+1)/N, tending to zero. All 27 new
-proofs and the exact direct axiom audit passed. The whole-project replay
-and this refinement's manuscript integration are pending. All 167 revised
+uniformly over primes q<=N by (3*k(N,2)+1)/N, tending to zero. The full replay passed
+18,575 build jobs, 19,567 theorem axiom checks and 19,722 distinct
+declaration-reference checks, all with actual exit 0. The refinement is
+integrated in the revised companion appendix, with all 166 PDF pages
+rebuilt and reviewed. All 167 revised
 numbered statements and the original t>2 theorem are preserved. Fourteen
 registry families (57 selections) remain locally qualified; no registration
 is claimed.

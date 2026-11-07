@@ -103,7 +103,7 @@
     },
     {
       "path": "formalization.tex",
-      "sha256": "410a4c5ea2ebf9833aa0a2d029419bcdd320fbfa721020d64200cfb7e008f7f9"
+      "sha256": "737597c3162be68abc8fa22bb1f06b3a3a985542184f61255f8e1fbec8847b8a"
     },
     {
       "path": "main.tex",
@@ -223,6 +223,11 @@
       "checkpoint": "P1-MATH-0989",
       "proof_commit": "f55fe63b9538863bd0ec8bdf8b3deacb70f49e4d",
       "scope": "Unnumbered companion appendix: general finite-depth geometric start budget and both actual exponential-moment bounds, recovery of depth one and strict depth-two gain on the original q=17 critical scale. All 167 numbered statement blocks are preserved."
+    },
+    {
+      "checkpoint": "P1-MATH-0990",
+      "proof_commit": "d5bc5deb5056c55be7c72404ed0e0fef4e6f147d",
+      "scope": "Unnumbered companion appendix: complete finite valuation-layer cover at an explicit logarithmic depth, two-sided retained-start count, actual exponential bounds, fixed-prime density and uniform absolute normalized error. All 167 numbered statement blocks are preserved."
     }
   ]
 }

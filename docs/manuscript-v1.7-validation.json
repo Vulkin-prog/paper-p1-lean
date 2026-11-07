@@ -15,13 +15,13 @@
       "document": "main",
       "path": "manuscripts/paper-p1/v1.7/pdf/P1_V1_7_Main_Article_2026-11-07_EN.pdf",
       "pages": 65,
-      "sha256": "8b17ff051eda0f60abcf29f965c527378fb5b178fe0e6b43986c41720a804a74"
+      "sha256": "25516080679b005fd9913c8f9c0b29a6fd3fc67083a5578168e773e9eb870f26"
     },
     {
       "document": "companion",
       "path": "manuscripts/paper-p1/v1.7/pdf/P1_V1_7_Technical_Companion_2026-11-07_EN.pdf",
       "pages": 101,
-      "sha256": "38bf8acc004d9020b9615dc88a2817fd1a62b4e97a02c6998e53847b30cff86b"
+      "sha256": "92d795a507dfa6df9f8b572ae7d755f9df67836f8ec73e4a5746d00cf1d8ee61"
     }
   ],
   "visual_review": {
@@ -31,25 +31,35 @@
     "detail_pages_reviewed": {
       "main": [],
       "companion": [
-        2,
         98,
-        99,
-        100,
-        101
+        99
       ]
     },
     "complete": true,
-    "findings": "All 166 current pages rendered. The 65 main pages and 96 unchanged companion pages are pixel-identical at 55dpi to the previously reviewed version. All five changed or new companion pages were inspected at 110dpi: contents, extended formalization, assistance statement and both reference pages. No clipping, overlaps, missing glyphs or unresolved references observed.",
+    "findings": "All 166 current pages rendered. The 65 article pages and 99 unchanged companion pages are pixel-identical at 55dpi to the previously reviewed version. Both changed companion pages were inspected in full at 110dpi: finite cylinder and valuation bounds, effective density, scope and assistance statement. No clipping, overlaps, missing glyphs or unresolved references observed.",
     "latest_revision": {
-      "checkpoint": "P1-MATH-0989",
-      "included_checkpoints": [
-        "P1-MATH-0988",
-        "P1-MATH-0989"
-      ],
+      "checkpoint": "P1-MATH-0990",
       "all_current_pages_rendered": true,
       "rendered_pages": 166,
-      "unchanged_pages_pixel_identical_at_55_dpi": 161,
+      "unchanged_pages_pixel_identical_at_55_dpi": 164,
       "changed_or_new_pages": {
+        "main": [],
+        "companion": [
+          98,
+          99
+        ]
+      },
+      "all_changed_pages_inspected_at_110_dpi": true,
+      "page_count_change": {
+        "main": 0,
+        "companion": 0
+      }
+    },
+    "prior_review": {
+      "rendered_pages_reviewed": 166,
+      "comparison_dpi": 55,
+      "detail_dpi": 110,
+      "detail_pages_reviewed": {
         "main": [],
         "companion": [
           2,
@@ -59,51 +69,73 @@
           101
         ]
       },
-      "all_changed_pages_inspected_at_110_dpi": true,
-      "page_count_change": {
-        "main": 0,
-        "companion": 1
-      }
-    },
-    "prior_review": {
-      "contact_sheet_pages_reviewed": 165,
-      "contact_sheet_dpi": 55,
-      "detail_dpi": 110,
-      "detail_pages_reviewed": {
-        "main": [],
-        "companion": [
-          98
-        ]
-      },
       "complete": true,
-      "findings": "All 165 final pages rendered. The 65 main pages and 99 unchanged companion pages are pixel-identical at 55dpi to the previously inspected version. The changed companion page 98 was inspected at 110dpi. No clipping, overlaps, missing glyphs or unresolved references observed.",
-      "prior_detail_pages_reviewed": {
-        "main": [
-          62
-        ],
-        "companion": [
-          14,
-          15,
-          32,
-          82,
-          83,
-          96,
-          97,
-          98
-        ]
-      },
+      "findings": "All 166 current pages rendered. The 65 main pages and 96 unchanged companion pages are pixel-identical at 55dpi to the previously reviewed version. All five changed or new companion pages were inspected at 110dpi: contents, extended formalization, assistance statement and both reference pages. No clipping, overlaps, missing glyphs or unresolved references observed.",
       "latest_revision": {
-        "checkpoint": "P1-MATH-0987",
-        "all_165_pages_rendered": true,
-        "unchanged_pages_pixel_identical_at_55_dpi": 164,
-        "changed_pages": {
+        "checkpoint": "P1-MATH-0989",
+        "included_checkpoints": [
+          "P1-MATH-0988",
+          "P1-MATH-0989"
+        ],
+        "all_current_pages_rendered": true,
+        "rendered_pages": 166,
+        "unchanged_pages_pixel_identical_at_55_dpi": 161,
+        "changed_or_new_pages": {
+          "main": [],
+          "companion": [
+            2,
+            98,
+            99,
+            100,
+            101
+          ]
+        },
+        "all_changed_pages_inspected_at_110_dpi": true,
+        "page_count_change": {
+          "main": 0,
+          "companion": 1
+        }
+      },
+      "prior_review": {
+        "contact_sheet_pages_reviewed": 165,
+        "contact_sheet_dpi": 55,
+        "detail_dpi": 110,
+        "detail_pages_reviewed": {
           "main": [],
           "companion": [
             98
           ]
         },
-        "all_changed_pages_inspected_at_110_dpi": true,
-        "pages_added_or_removed": 0
+        "complete": true,
+        "findings": "All 165 final pages rendered. The 65 main pages and 99 unchanged companion pages are pixel-identical at 55dpi to the previously inspected version. The changed companion page 98 was inspected at 110dpi. No clipping, overlaps, missing glyphs or unresolved references observed.",
+        "prior_detail_pages_reviewed": {
+          "main": [
+            62
+          ],
+          "companion": [
+            14,
+            15,
+            32,
+            82,
+            83,
+            96,
+            97,
+            98
+          ]
+        },
+        "latest_revision": {
+          "checkpoint": "P1-MATH-0987",
+          "all_165_pages_rendered": true,
+          "unchanged_pages_pixel_identical_at_55_dpi": 164,
+          "changed_pages": {
+            "main": [],
+            "companion": [
+              98
+            ]
+          },
+          "all_changed_pages_inspected_at_110_dpi": true,
+          "pages_added_or_removed": 0
+        }
       }
     }
   },
@@ -198,5 +230,17 @@
     "validation_record": "docs/validation/checkpoint-0989/validation.json",
     "source": "manuscripts/paper-p1/v1.7/sources/formalization.tex",
     "source_sha256": "410a4c5ea2ebf9833aa0a2d029419bcdd320fbfa721020d64200cfb7e008f7f9"
+  },
+  "appendix_effective_valuation_density": {
+    "checkpoint": "P1-MATH-0990",
+    "proof_commit": "d5bc5deb5056c55be7c72404ed0e0fef4e6f147d",
+    "numbered_statement_blocks_changed": false,
+    "all_167_revised_statement_proofs_preserved": true,
+    "full_build_jobs": 18575,
+    "audited_theorems": 19567,
+    "distinct_checked_references": 19722,
+    "validation_record": "docs/validation/checkpoint-0990/validation.json",
+    "source": "manuscripts/paper-p1/v1.7/sources/formalization.tex",
+    "source_sha256": "737597c3162be68abc8fa22bb1f06b3a3a985542184f61255f8e1fbec8847b8a"
   }
 }

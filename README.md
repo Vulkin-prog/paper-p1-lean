@@ -60,7 +60,7 @@ The [exact valuation refinement](docs/VALUATION_PRIME_CYLINDER.md) retains all p
 
 The [finite-depth valuation bounds](docs/VALUATION_LAYER_BOUNDS.md) give the explicit budget N/(q+1)*(1-q^(-2*k))-3*k for every finite depth. Its complete replay passed; [the source-bound logs](docs/validation/checkpoint-0989/validation.json) preserve all three checks. The refinement is integrated in the revised companion appendix.
 
-The [effective retained-start density](docs/VALUATION_DENSITY_BOUNDS.md) chooses a complete logarithmic layer depth, proves a two-sided finite count and identifies its leading density 1/(q+1), with an error tending to zero uniformly over primes q<=N. Its 27 direct proofs and axiom audit passed; full replay and manuscript integration are pending.
+The [effective retained-start density](docs/VALUATION_DENSITY_BOUNDS.md) chooses a complete logarithmic layer depth, proves a two-sided finite count and identifies its leading density 1/(q+1), with an error tending to zero uniformly over primes q<=N. Its complete replay passed; [the source-bound logs](docs/validation/checkpoint-0990/validation.json) preserve all three checks. The refinement is integrated in the revised companion appendix.
 
 ## Build and verification
 
@@ -86,7 +86,7 @@ Standalone registry Challenges have only the deliberate selected statement
 holes and are never imported by the proof development or its audit.
 
 The latest complete project replay with all fourteen candidate families passed
-**18,573 build jobs** and **19,540 theorem axiom checks**. Each mathematical
+**18,575 build jobs** and **19,567 theorem axiom checks**. Each mathematical
 checkpoint and registry replay records its own exact source commit and scope.
 The [evidence checker](scripts/check_registry_evidence.py) validates every
 preserved receipt against its historical inventory and current proof imports.

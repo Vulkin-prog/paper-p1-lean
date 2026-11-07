@@ -228,6 +228,33 @@ The canonical declarations are
 and \texttt{ValuationLayerCounts.finite\_geometric\_lower}, with both
 actual moment bounds in the latter module.
 
+\paragraph{Effective density of the retained starts.}
+Let $C(N,q)$ denote the complete retained start count above, and put
+$\kappa(N,q)=\lceil\tfrac12\lceil\log_q N\rceil\rceil$.
+Every retained multiplier satisfies $0<u<N\leq q^{2\kappa(N,q)}$.
+Its even valuation is therefore $2j$ for exactly one
+$0\leq j<\kappa(N,q)$, so these finitely many disjoint layers cover
+the complete retained set.  Their exact multiple counts give
+\[
+ \frac{N-1}{q+1}-3\kappa(N,q)\leq C(N,q)
+ \leq\frac{N}{q+1}+2\kappa(N,q).
+\]
+Both full exponential moments consequently have the lower bound
+$\exp\{t[(N-1)/(q+1)-3\kappa(N,q)]-\pi(M)\log2\}$ for $t\geq0$.
+This depth gives a complete cover; it need not maximize $B_k$.
+For each fixed prime $q$, the ratio $C(N,q)/N$ tends to $1/(q+1)$.
+Moreover, simultaneously for all primes $q\leq N$,
+\[
+ \left|\frac{C(N,q)}N-\frac1{q+1}\right|
+ \leq\frac{3\kappa(N,2)+1}{N}\longrightarrow0.
+\]
+The approximation threshold depends only on the requested absolute
+normalized error.  This is the density of the deterministic forced
+subset, with the original $t>2$ threshold preserved.
+The canonical declarations are
+\texttt{ValuationDensityBounds.effective\_count\_bounds} and
+\texttt{ValuationDensityBounds.uniform\_density\_approximation}.
+
 \paragraph{Scope and reproducibility.}
 The smooth-window proof above specializes the physical localization to the
 ordinary smooth indicator.  A general sharp short-average theorem for

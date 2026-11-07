@@ -50,7 +50,6 @@ effective_count_bounds, positive_exponential_lower, total_exponential_lower,
 retained_start_density and uniform_density_approximation in
 PaperP1.ValuationDensityBounds.
 
-All 27 new theorems and their exact direct axiom audit passed under Lean
-v4.36.0-rc2, with proof warnings as errors. Only propext, Classical.choice
-and Quot.sound occur. Whole-project replay and manuscript integration are
-pending.
+Full Lean v4.36.0-rc2 replay passed at source d5bc5deb5056c55be7c72404ed0e0fef4e6f147d: 18,575 build jobs, 19,567 source-discovered theorem axiom checks and 19,722 distinct declaration-reference checks, all actual process exits 0. Proof warnings are errors; only propext, Classical.choice and Quot.sound occur.
+
+The full replay and original compressed logs are preserved in [the validation record](validation/checkpoint-0990/validation.json). The refinement is integrated in the unnumbered version 1.7 companion appendix, under Effective density of the retained starts. Both PDFs were rebuilt and reviewed; the 65 article and 101 companion pages and all 167 numbered statement blocks are preserved. See [the manuscript validation](manuscript-v1.7-validation.json).

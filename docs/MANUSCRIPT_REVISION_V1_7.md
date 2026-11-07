@@ -102,3 +102,19 @@ companion pages (2,98,99,100,101) passed detailed visual inspection.
 The companion gains one page; the original v1.6 package and all 167
 numbered statement identities remain preserved. Exact proof commits,
 source and PDF hashes, and original replay logs are recorded separately.
+
+
+Checkpoint P1-MATH-0990 adds the complete valuation-layer cover, explicit
+logarithmic depth, two-sided count, actual exponential bounds, fixed-prime
+retained-start density and uniform absolute normalized error. The approximation
+threshold is independent of the prime. This concerns the deterministic
+retained forced subset; the original t>2 moment theorem is preserved.
+The full source replay passed 18,575 build jobs, 19,567 theorem axiom checks
+and 19,722 distinct references, with original logs and immutable proof commit.
+
+Both PDFs were rebuilt with stable cross-references and their page counts
+remain 65 and 101. All 166 pages were rendered: 164 are pixel-identical to
+the reviewed version, and the two changed companion pages (98,99) passed
+full visual inspection at 110dpi. No overflow or unresolved references were
+found. All 48 authored source hashes, both PDF hashes, provenance and
+the unchanged 167 numbered statement identities were checked.
