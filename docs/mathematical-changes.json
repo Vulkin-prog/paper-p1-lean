@@ -42384,6 +42384,65 @@
       },
       "validation_source_commit": "57835da7813e314367f689312af436f9ae62e869",
       "validation_record": "docs/validation/checkpoint-0988/validation.json"
+    },
+    {
+      "id": "P1-MATH-0989",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:cylinder",
+        "number": "T19.7",
+        "page": 71,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 385,
+        "statement_sha256": "c4dfa742ae68556d196927fdaaae789b2734586e0e9820cdff17c2218e8639be"
+      },
+      "original_assumption": "The earlier explicit real budget retains the zero-valuation layer. The complete even-valuation retained set was already proved to be larger, without a general explicit numerical budget for its extra layers.",
+      "finding": "For every integer depth k>=0 and prime q<=N, the actual even-valuation retained start count is at least B_k=N/(q+1)*(1-(1/q)^(2*k))-3*k. The proof uses exact translated-interval multiple counts, pairwise disjoint even valuation layers, their inclusion in the actual retained parameter set, and the exact finite geometric sum. For prime q and t>=0, both actual full exponential moments are at least exp(t*B_k-primeCount(2*q*floor(N/q))*log(2)). Depth one is exactly the earlier N/q-N/q^2-3 budget. Depth two strictly improves it at the original critical scale q=17, N=2^(q-1)=65536, hence gives a strictly larger exponential lower bound for every t>0 at the same cylinder cost. The explicit budget need not increase with depth because the error term grows. The original t>2 asymptotic statement and coefficient are preserved; no sharp density or new threshold is asserted.",
+      "proposed_revision": "State the general finite-depth lower budget and its actual supported-cylinder exponential bounds. Keep k=1 as the earlier simple corollary and give the checked critical-scale depth-two gain. Distinguish layer depth from moment order.",
+      "impact": "Provides an effective closed-form family of finite lower bounds for the actual arithmetic model, with uniform explicit endpoint error 3*k. No target count, probability estimate or infinite-density premise is assumed.",
+      "evidence": [
+        "PaperP1.ValuationLayerCounts.card_positive_multiples",
+        "PaperP1.ValuationLayerCounts.translated_multiples_eq_sdiff",
+        "PaperP1.ValuationLayerCounts.card_translated_multiples",
+        "PaperP1.ValuationLayerCounts.real_div_floor_lower",
+        "PaperP1.ValuationLayerCounts.card_translated_multiples_real_bounds",
+        "PaperP1.ValuationLayerCounts.next_power_multiples_subset",
+        "PaperP1.ValuationLayerCounts.layer_eq_sdiff",
+        "PaperP1.ValuationLayerCounts.card_layer",
+        "PaperP1.ValuationLayerCounts.layer_parity_zero",
+        "PaperP1.ValuationLayerCounts.card_layer_real_lower",
+        "PaperP1.ValuationLayerCounts.coefficient_nonneg",
+        "PaperP1.ValuationLayerCounts.coefficient_le_half",
+        "PaperP1.ValuationLayerCounts.coefficient_telescopes",
+        "PaperP1.ValuationLayerCounts.sum_coefficients",
+        "PaperP1.ValuationLayerCounts.layers_disjoint",
+        "PaperP1.ValuationLayerCounts.parameterLayer_subset",
+        "PaperP1.ValuationLayerCounts.sum_layer_card_le",
+        "PaperP1.ValuationLayerCounts.valuation_starts_card",
+        "PaperP1.ValuationLayerCounts.parameterLayer_zero",
+        "PaperP1.ValuationLayerCounts.parameter_layer_real_lower",
+        "PaperP1.ValuationLayerCounts.partial_layers_real_lower",
+        "PaperP1.ValuationLayerCounts.finite_geometric_lower",
+        "PaperP1.ValuationLayerCounts.budget_one",
+        "PaperP1.ValuationLayerCounts.positive_exponential_lower",
+        "PaperP1.ValuationLayerCounts.total_exponential_lower",
+        "PaperP1.ValuationLayerCounts.strict_budget_gain_on_original_scale",
+        "PaperP1.ValuationLayerCounts.strict_exponential_gain_on_original_scale",
+        "PaperP1.ValuationLayerCounts.multiples",
+        "PaperP1.ValuationLayerCounts.layer",
+        "PaperP1.ValuationLayerCounts.coefficient",
+        "PaperP1.ValuationLayerCounts.parameterLayer",
+        "PaperP1.ValuationLayerCounts.budget"
+      ],
+      "validation": "All 27 theorems and their exact direct axiom audit passed under Lean v4.36.0-rc2 with proof warnings as errors. Only propext, Classical.choice and Quot.sound occur. Full project compilation and declaration-reference replay are pending.",
+      "integration": {
+        "target": "P1 V1.7 draft",
+        "status": "not_integrated",
+        "numbered_statements_changed": false
+      }
     }
   ]
 }

@@ -2,7 +2,7 @@
 
 The mathematical correspondence is complete for the separate version 1.7 draft:
 **167 proved statements**, comprising all 73 article and all 94 companion
-results. Current mathematical checkpoint: P1-MATH-0988. The original version
+results. Current mathematical checkpoint: P1-MATH-0989. The original version
 1.6 retains its exact bytes and its two false-original statuses; its 165 other
 statements are proved. Both revised PDFs and their visual checks are preserved.
 
