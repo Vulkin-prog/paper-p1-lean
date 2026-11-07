@@ -72,3 +72,16 @@ Before a submission:
    decisions. Record actual registration identifiers only after issuance.
 
 Do not invent publication identifiers for the supplied working manuscript.
+
+The third and fourth families, asymmetric parity-space profiles and optimal
+quadratic Poisson–Charlier approximation, passed the isolated statement
+comparison and both kernels at source commit
+3b777fec1dc58fb209b48c4e8e15d0de1fcd51c3. Their 3 and 4 selections bring the
+local total to 14 in four families. The full build passed 18,545 jobs and
+19,317 source-discovered theorem axiom checks. Exact receipts and compressed
+logs are committed beside each family. The probability model, both-sign run
+starts, actual mean and cumulant, sharp upper and lower powers, quadratic
+normalization and exact probability criterion are explicit in the standalone
+optimal-quadratic interface. The asymmetric interface retains the corrected
+matching radius, full exponential loss, old-bit invariance and checked
+counterexample to the radius-one printed version.
