@@ -1,0 +1,73 @@
+REVUE INDÉPENDANTE — DEUX EXEMPLES DE FENÊTRES IRRÉGULIÈRES
+
+Source : 3df7615af2aa6a2a2bc6856bd4203c401d0434de
+Racine : /home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/paper-p1-lean
+
+Conclusion : aucune lacune confirmée dans les neuf théorèmes ni dans leur interprétation documentaire.
+
+Lecture complète des neuf corps de théorèmes, de leurs types compilés et des définitions des événements, rangs, relationMap et probabilités homogènes. Aucun Lean/Lake, build, replay ou acte Palomar exécuté par cette instance.
+
+Distinctions vérifiées :
+- x=18,L=10 : rang 9, marginale 1/512, noyau des relations formelles de dimension1 et nullité effective relative du singleton 0.
+- x=3,L=7 : marginale originale 0, probabilité de l’événement homogène strictement positive.
+
+Le noyau de startSystem porte sur les bits premiers ; celui de relationMap sur les coefficients formels des lignes ; runRelativeNullity porte sur la famille des images effectives. Ces trois objets ne sont pas interchangeables.
+
+PaperP1.IrregularWindowExamples.kernel_eq_bot — PaperP1/Model/IrregularWindowExamples.lean:37
+(PaperP1.Affine.startSystem 28 18 10).ker = ⊥
+M=28,x=18,L=10 ; aucune hypothèse supplémentaire.
+Le noyau de startSystem agit sur les neuf bits premiers≤28. Le corps force successivement les bits de 2,3,5,7,11,13,17,19,23 à zéro à partir des dix équations homogènes. Ce noyau nul est celui des échantillons premiers, distinct du noyau des relations entre lignes.
+Verdict : conforme ; aucune correction nécessaire.
+
+PaperP1.IrregularWindowExamples.exact_rank — PaperP1/Model/IrregularWindowExamples.lean:113
+PaperP1.Model.startRank 28 18 10 = 9
+Paramètres numériques fermés ; les neuf premiers sont ceux de l’intervalle≤28.
+Le rang9 est déduit du noyau nul et du cardinal exactement9 du domaine PrimeUpTo 28. Il ne désigne ni la dimension du noyau formel ni la nullité effective relative.
+Verdict : conforme ; aucune correction nécessaire.
+
+PaperP1.IrregularWindowExamples.compatible — PaperP1/Model/IrregularWindowExamples.lean:119
+PaperP1.Affine.Compatible (PaperP1.Affine.startSystem 28 18 10) (PaperP1.Affine.startRhs 10)
+Système fini à cutoff 28, prescription originale startRhs 10 (bord 1, intérieur 0).
+Le témoin est le véritable échantillon dont seul le premier17 a un bit1. Il donne un start positif à 18 de longueur16, puis la restriction à longueur 10 satisfait startRhs 10. La compatibilité n’est donc pas une prémisse présupposée.
+Verdict : conforme ; aucune correction nécessaire.
+
+PaperP1.IrregularWindowExamples.exact_marginal — PaperP1/Model/IrregularWindowExamples.lean:126
+PaperP1.Model.InfiniteStarts.infiniteMarginal 18 10 = 512⁻¹
+Vraie marginale originale, sans régularité locale ni remplacement par2^(−L).
+Le transfert du cylindre à la vraie marginale infinie est appliqué àx+L≤28. Compatibilité et rang9 sont les théorèmes précédents ; la masse est exactement2^(−9)=1/512.
+Verdict : conforme ; aucune correction nécessaire.
+
+PaperP1.IrregularWindowExamples.raw_relation_dimension — PaperP1/Model/IrregularWindowExamples.lean:131
+Module.finrank PaperP1.Arithmetic.F₂ ↥(PaperP1.Affine.relationMap (PaperP1.Affine.startSystem 28 18 10)).ker = 1
+M=28,x=18,L=10 ; relationMap a pour domaine les coefficients des dix lignes.
+Le noyau est ici ker(relationMap(startSystem)), donc le noyau sur les dix coordonnées formelles des lignes. La formule affine nominale et la masse1/512 donnent dimension1. Le type ne confond pas ce noyau avec celui, nul, de startSystem sur les bits premiers.
+Verdict : conforme ; aucune correction nécessaire.
+
+PaperP1.IrregularWindowExamples.effective_kernel_nominal_fails — PaperP1/Model/IrregularWindowExamples.lean:148
+PaperP1.Model.InfiniteStarts.infiniteMarginal 18 10 ≠
+  (2 ^ 10)⁻¹ * 2 ^ PaperP1.Model.InfiniteStarts.runRelativeNullity 10 {18}
+runRelativeNullity 10 {18}, et non noyau formel de dimension1.
+La nullité relative effective d’une famille singleton est nulle par nullity_singleton. Le membre droit vaut donc1/1024, différent de1/512. Le contre-exemple réfute exactement la substitution du noyau effectif dans une formule gardant le facteur nominal, sans réfuter la formule brute correcte de T22.7.
+Verdict : conforme ; aucune correction nécessaire.
+
+PaperP1.IrregularWindowExamples.short_window_impossible — PaperP1/Model/IrregularWindowExamples.lean:155
+∀ {M : ℕ} (σ : PaperP1.Model.SampleSpace M), ¬PaperP1.Model.StartEvent (PaperP1.Model.valueBit σ) 3 7
+∀M,∀σ:SampleSpace M ; événement original StartEvent3,7.
+Pour tout cutoffM et tout échantillon, le carré4 force le bit commun des valeurs3,…,9 à zéro. La valeur6=2×3 force alors le bit2 à zéro. Le bord entre 2 et 3 devrait avoir bit1 : contradiction. Le type est universel en M et σ.
+Verdict : conforme ; aucune correction nécessaire.
+
+PaperP1.IrregularWindowExamples.zero_marginal — PaperP1/Model/IrregularWindowExamples.lean:170
+PaperP1.Model.InfiniteStarts.infiniteMarginal 3 7 = 0
+x=3,L=7,cutoff10=x+L ; vraie infiniteMarginal.
+L’impossibilité précédente élimine la compatibilité de startSystem10,3,7 avec startRhs7. Le transfert fini/infini donne la vraie marginale originale nulle. La nullité ne résulte pas d’un poids défini artificiellement à zéro.
+Verdict : conforme ; aucune correction nécessaire.
+
+PaperP1.IrregularWindowExamples.homogeneous_positive_original_zero — PaperP1/Model/IrregularWindowExamples.lean:177
+0 < PaperP1.HomogeneousRunMass.probability 7 {3} ∧ PaperP1.Model.InfiniteStarts.infiniteMarginal 3 7 = 0
+HomogeneousRunMass.probability 7 {3} ; aucune compatibilité, régularité ou positivité des marginales originales en prémisse.
+Le premier membre est la probabilité réelle de infiniteStartBits=0, dont la positivité est prouvée par probability_rank dans HomogeneousRunMass. Le second est la marginale affine originale nulle établie plus haut. L’événement homogène demande que le bord et l’intérieur aient le même signe ; il diffère du start original.
+Verdict : conforme ; aucune correction nécessaire.
+
+Les exemples restent finis et explicatifs. Ils ne prouvent pas que ces petites valeurs dépassent un seuil asymptotique, ne modifient aucun résultat numéroté et ne créent pas une troisième erreur originale.
+
+Les neuf types et rapports d’axiomes ont été lus dans les sorties du parent. Je n’ai pas exécuté le replay. Les rapports des 79 et des 88 résultats antérieurs restent inchangés.

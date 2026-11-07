@@ -1,5 +1,5 @@
 {
-  "proof_source_commit": "08f019df4d33a817377e5c937356fe4d87ae08e1",
+  "proof_source_commit": "3df7615af2aa6a2a2bc6856bd4203c401d0434de",
   "status": "passed",
   "numbered_results": 167,
   "main_results": 73,
@@ -8,37 +8,59 @@
     "types": 264,
     "theorems": 261,
     "separate_objects": 3,
-    "actual_exit_code": 0
+    "actual_exit_code": 0,
+    "latest_replay": {
+      "path": "docs/validation/checkpoint-1003/endpoint-replay.json",
+      "sha256": "64fba47a640c6f150ecf8234c2f21d4d2b8ed4a756dfdd5d433bf4f697701000"
+    }
   },
-  "review_partition": {
+  "initial_review_partition": {
     "independent_canonical": 79,
     "independent_dense": 9,
     "parent": 79
   },
+  "independently_compared_result_labels": 167,
+  "additional_independent_review": {
+    "path": "docs/reviews/2026-11-07/endpoint-remaining79.json",
+    "sha256": "5b9648add0ad83d38c92c39a6e3c0dd0228775b4ebce50377077a0568fb68038",
+    "covered_results": 79,
+    "distinct_interfaces": 118,
+    "reviewed_documentary_snapshot": "bd7c818e51161bab34607fd433d3348bef1aa2bb",
+    "scope": "Completes direct independent comparisons of the 79 formerly parent-only labels; combined with the frozen79+9 reports, all167 labels have been compared across their stated source snapshots. Not a new independent reconstruction of all transitive proofs."
+  },
+  "supplemental_example_review": {
+    "path": "docs/reviews/2026-11-07/irregular-examples.json",
+    "sha256": "540583bd07281e490950043307f667ec0232f4c232bb6e1a53f5438a3fe31e69"
+  },
+  "supplemental_example_theorems": 9,
   "index": {
     "path": "docs/manuscript-endpoints-v1.8.json",
-    "sha256": "5ffca4d673633f45bb802e36c7a66b44b94e74277afc252f1d7ce1e47e93e602"
+    "sha256": "eb16d7631945340250b8ea5206a07e757e3a1da5bbb5f158da771eed4b6b81da"
   },
   "checker": {
     "path": "scripts/check_manuscript_endpoints.py",
-    "sha256": "a44d3ee1637bc0919ecd173c625c0bb6f1e293232fb4c4f9f13d633e0b0045e6"
+    "sha256": "631b313c12c2a0b0efa8ad90edf7afa3bb63a27e541425c5991378de16955438"
   },
   "static_checks": {
     "path": "docs/validation/manuscript-endpoints-v1.8/static-checks.json",
-    "sha256": "0fdb3a22877f9bcaf32e46e3c9cb51025962e5be188d184424a4a91a2f7933e9"
+    "sha256": "a298d463e1df902f0ad12134b23d4eb313989b71bcbea5df307476c96b79bb30"
   },
   "controls": {
     "path": "docs/validation/manuscript-endpoints-v1.8/controls.json",
-    "sha256": "c96ae5a8ad4f0b53707f989968de09a3b9858b67575a82278a8aff92b35deac0"
+    "sha256": "0ade40fe10d6b6e8bdf9d3d1228b8c71fb2781b52aea946a15159bdeb47e01f6"
   },
   "complete_project_replay": {
-    "path": "docs/validation/checkpoint-1002/validation.json",
-    "sha256": "036ded27008d426ef1e96ba8fb1c13ac418d88f148c4119c195516cd18587e8e"
+    "path": "docs/validation/checkpoint-1003/validation.json",
+    "sha256": "43b07bed0db4c5a199d1c140800242d4a7a91f02de285eb5fa1211a14391f7ed"
   },
   "compiled_scope": {
     "path": "docs/validation/manuscript-endpoints-v1.8/compiled/compiled-types.json",
     "sha256": "6ac3e4eb3a3bc5519edb3903cdf7770e19b01fee2f16faf3dceba8fb4b023c77",
-    "validation": "docs/validation/manuscript-endpoints-v1.8/compiled/compiled-types-validation.json"
+    "validation": "docs/validation/manuscript-endpoints-v1.8/compiled/compiled-types-validation.json",
+    "latest_replay": {
+      "path": "docs/validation/checkpoint-1003/endpoint-replay.json",
+      "sha256": "64fba47a640c6f150ecf8234c2f21d4d2b8ed4a756dfdd5d433bf4f697701000"
+    }
   },
   "frozen_review_records": [
     {
@@ -56,12 +78,43 @@
     {
       "path": "docs/reviews/2026-11-07/endpoint-parent.json",
       "sha256": "c91ec9c7a2b374e7cbb6bef965b047c05d80ba689ab06885e79e7bd13d3e1c81"
+    },
+    {
+      "path": "docs/reviews/2026-11-07/endpoint-remaining79.json",
+      "sha256": "5b9648add0ad83d38c92c39a6e3c0dd0228775b4ebce50377077a0568fb68038"
+    },
+    {
+      "path": "docs/reviews/2026-11-07/irregular-examples.json",
+      "sha256": "540583bd07281e490950043307f667ec0232f4c232bb6e1a53f5438a3fe31e69"
     }
   ],
+  "proof_manifest_includes_lake_build_configuration": true,
+  "proof_source_manifest_entries": 4738,
   "previous_manuscript_types_replayed": {
     "count": 528,
     "unchanged": true,
-    "record": "docs/validation/checkpoint-1002/manuscript-replay.json"
+    "record": "docs/validation/checkpoint-1003/manuscript-replay.json"
+  },
+  "source_preservation": {
+    "path": "docs/validation/checkpoint-1003/prior-proof-preservation.json",
+    "sha256": "49b4d083300277de07a30aee0ec1cad11e5dbdabd85506a5492f225a7abff324"
+  },
+  "editorial_proposal": {
+    "validation": {
+      "path": "docs/editorial-proposals/2026-11-07/validation.json",
+      "sha256": "8601227071fd9e9bc455c40f22cdebb8aa87c51741e16c7e572510df6faef6f4"
+    },
+    "independent_read": {
+      "path": "docs/editorial-proposals/2026-11-07/independent-review.json",
+      "sha256": "93d176ad66dd8b1073858e67585a3dd32c7298ee1cda38e60f924991906bc82f"
+    },
+    "numbered_labels_preserved": 167,
+    "live_sources_changed": false,
+    "pdf_layout_reviewed": false
+  },
+  "previous_index_records": {
+    "path": "docs/validation/checkpoint-1002/endpoint-index-records-at-bd7c818e.json",
+    "sha256": "803843b64d2a0a39a5180e538d4aa011c5619b55c26a3efc4ec991456167761d"
   },
   "palomar": {
     "registrations_planned": 6,
@@ -72,5 +125,5 @@
     "intake_launched": false,
     "registry_id": null
   },
-  "scope": "Actual compiled types and source/review identity checks, with an AI-assisted comparison of meanings. Not a machine proof of TeX semantic equivalence, independent human certification or Palomar registration."
+  "scope": "Actual compiled types, complete project replay and source/review identity checks, with direct independent AI-assisted comparisons of all167 labels across the stated review snapshots. Not a machine proof of TeX semantic equivalence, an independent reconstruction of all transitive proofs, human certification or Palomar registration."
 }

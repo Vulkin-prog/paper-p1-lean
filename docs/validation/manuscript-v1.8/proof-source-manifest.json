@@ -1,10 +1,10 @@
 {
-  "validated_source_commit": "08f019df4d33a817377e5c937356fe4d87ae08e1",
-  "scope": "All PaperP1 modules, root Lean files (including all Solutions and Audit), compiler and dependency pins. Temporary diagnostic modules are not imported by any proof.",
+  "validated_source_commit": "3df7615af2aa6a2a2bc6856bd4203c401d0434de",
+  "scope": "All substantive/root Lean sources, compiler/dependency pins and Lake build configuration at the complete replay source.",
   "files": [
     {
       "path": "Audit.lean",
-      "sha256": "f5d48025596f15ad7a1bfa731e27f9fcb65df204571751f1f236e1a64b151d0e"
+      "sha256": "ee1805b6ba0d29b7d5ffc2fa8669308cdf1d5cf8a3904d47c6f04f57409b7db9"
     },
     {
       "path": "ChallengeP1AffineSpectra.lean",
@@ -100,7 +100,7 @@
     },
     {
       "path": "PaperP1.lean",
-      "sha256": "18d8b1de02571eb554c7778bd02a2cc1be149cc69a07a8767d749ff343278071"
+      "sha256": "677cf70d7598c1ab2dab95d21aafebd4001b81030b651d9b8b2e45d0511d2739"
     },
     {
       "path": "PaperP1/Affine/BinaryMassLattice.lean",
@@ -16971,6 +16971,10 @@
       "sha256": "c0c9c0f31c65bcbc32486eb08e175dc1f96b7be18e85d1ffb753ac0b6a0a44d7"
     },
     {
+      "path": "PaperP1/Model/IrregularWindowExamples.lean",
+      "sha256": "bf336335dfe0b1379565c3fac239eed75384c9bcd310287f3717d82a6c7fc167"
+    },
+    {
       "path": "PaperP1/Model/JointBlockCovariance.lean",
       "sha256": "cc86419cec30d6aa6e03a3be7cf9afbfa228f63f507d034db5e5c1eadecf7bc3"
     },
@@ -18941,6 +18945,10 @@
     {
       "path": "lake-manifest.json",
       "sha256": "e55097e7af1499ee442569b78349960413c5ff020700fff97fcf59ab95b338ad"
+    },
+    {
+      "path": "lakefile.toml",
+      "sha256": "aee03d96ffa2e72f893318f25c81aa9f76c2c17be9694f4a6d69db567cda5948"
     },
     {
       "path": "lean-toolchain",

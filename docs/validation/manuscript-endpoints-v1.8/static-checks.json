@@ -1,5 +1,5 @@
 {
-  "proof_source_commit": "08f019df4d33a817377e5c937356fe4d87ae08e1",
+  "proof_source_commit": "3df7615af2aa6a2a2bc6856bd4203c401d0434de",
   "status": "passed",
   "checks": [
     {
@@ -9,7 +9,7 @@
         "scripts/check_manuscript_endpoints.py"
       ],
       "actual_exit_code": 0,
-      "output": "Verified 138 manifest entries and 167 numbered results.\nScope: source integrity and inventory only, not mathematical proof certification.\nVerified 48 revised TeX source hashes and 167 revised statements.\nExactly two original statements corrected; revised proofs: 167/167.\nOriginal v1.6 identities and false-original statuses remain preserved.\nVerified 48 v1.8 source hashes and all 167 numbered results.\nExplicit comparisons: 7 strengthened/reworded statements; 167/167 proved.\nAll 18 unnumbered scientific claims have source-bound compiled proof correspondence.\nBoth earlier manuscript versions and the two false-original statuses are preserved.\nScope: source identity and recorded correspondence; hashes alone are not a semantic proof.\nVerified all 167 source-bound proof-entry bundles: 73 article and 94 companion results.\nActual compiled interfaces: 261 theorems; 3 separate mathematical definitions.\nScope: source/type identity and recorded AI-assisted clause review; not a machine proof of TeX-to-Lean translation, human review or Palomar registration.\n"
+      "output": "Verified 138 manifest entries and 167 numbered results.\nScope: source integrity and inventory only, not mathematical proof certification.\nVerified 48 revised TeX source hashes and 167 revised statements.\nExactly two original statements corrected; revised proofs: 167/167.\nOriginal v1.6 identities and false-original statuses remain preserved.\nVerified 48 v1.8 source hashes and all 167 numbered results.\nExplicit comparisons: 7 strengthened/reworded statements; 167/167 proved.\nAll 18 unnumbered scientific claims have source-bound compiled proof correspondence.\nBoth earlier manuscript versions and the two false-original statuses are preserved.\nScope: source identity and recorded correspondence; hashes alone are not a semantic proof.\nVerified all 167 source-bound proof-entry bundles: 73 article and 94 companion results.\nActual compiled interfaces: 261 theorems; 3 separate mathematical definitions.\nDirect independent comparison records cover 167 labels across the reports' stated source snapshots.\nScope: source/type identity and recorded AI-assisted clause review; not a machine proof of TeX-to-Lean translation, human review or Palomar registration.\n"
     },
     {
       "name": "source_rules",
@@ -28,7 +28,7 @@
         "--check"
       ],
       "actual_exit_code": 0,
-      "output": "Axiom audit covers all 19975 project theorems and lemmas.\n"
+      "output": "Axiom audit covers all 19984 project theorems and lemmas.\n"
     },
     {
       "name": "palomar_source_limits",
@@ -37,7 +37,7 @@
         "scripts/check_palomar_sources.py"
       ],
       "actual_exit_code": 0,
-      "output": "Local Palomar source scan passed for 4735 Lean files.\nLongest source: PaperP1.lean (4946 lines).\nScope: source regularity, module headers and line limits; full Palomar preflight remains separate.\n"
+      "output": "Local Palomar source scan passed for 4736 Lean files.\nLongest source: PaperP1.lean (4947 lines).\nScope: source regularity, module headers and line limits; full Palomar preflight remains separate.\n"
     },
     {
       "name": "registry_candidates",
@@ -85,8 +85,20 @@
         "scripts/check_disk.py"
       ],
       "actual_exit_code": 0,
-      "output": "Available: 49.08 GiB; repository on Ubuntu root device: True\n"
+      "output": "Available: 48.98 GiB; repository on Ubuntu root device: True\n"
     }
   ],
-  "scope": "Actual local binding, source, inventory and preserved-evidence checks. The complete Lean build and axiom replay have their own checkpoint1002 record. No Palomar workflow, intake or registration was launched."
+  "actual_compiler": {
+    "command": [
+      "bash",
+      "../run-p1.sh",
+      "lake",
+      "env",
+      "lean",
+      "--version"
+    ],
+    "actual_exit_code": 0,
+    "output": "Lean (version 4.36.0-rc2, x86_64-unknown-linux-gnu, commit b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a, Release)\n"
+  },
+  "scope": "Actual local source/type/review binding, inventory and preserved-evidence checks. The complete Lean replay is recorded separately at checkpoint1003. All167 labels have direct independent comparison records across the frozen review snapshots. No Palomar workflow, intake or registration was launched."
 }

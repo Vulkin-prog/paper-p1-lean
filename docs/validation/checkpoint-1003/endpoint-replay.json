@@ -1,0 +1,23 @@
+{
+  "source_commit": "3df7615af2aa6a2a2bc6856bd4203c401d0434de",
+  "actual_exit_code": 0,
+  "compiled_types_replayed": 264,
+  "compiled_propositions_reaudited": 261,
+  "all_prior_compiled_type_bytes_identical": true,
+  "replay_validation": {
+    "actual_exit_code": 0,
+    "compiled_types": 264,
+    "propositions_audited": 261,
+    "permitted_axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "all_propositions_standard_axioms_only": true,
+    "inventory_sha256": "0dd5af18aa2c2d6fd29b0cc429c251103a71a517080ad11fe8251e9e5dc444ee",
+    "diagnostic_module_sha256": "43d8a9072a6b589e63465977b7a3068637c712b23711fb38b857acf374534fd5",
+    "compiled_types_sha256": "6ac3e4eb3a3bc5519edb3903cdf7770e19b01fee2f16faf3dceba8fb4b023c77",
+    "log_sha256": "72ef52a95a5db59abd6035901c8796ef6a819bbce9db77ce0ea6a48821c76b92"
+  },
+  "base_compiled_types": "docs/validation/manuscript-endpoints-v1.8/compiled/compiled-types.json"
+}

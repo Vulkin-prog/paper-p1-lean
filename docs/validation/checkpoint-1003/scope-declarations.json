@@ -1,0 +1,11 @@
+[
+  "PaperP1.IrregularWindowExamples.kernel_eq_bot",
+  "PaperP1.IrregularWindowExamples.exact_rank",
+  "PaperP1.IrregularWindowExamples.compatible",
+  "PaperP1.IrregularWindowExamples.exact_marginal",
+  "PaperP1.IrregularWindowExamples.raw_relation_dimension",
+  "PaperP1.IrregularWindowExamples.effective_kernel_nominal_fails",
+  "PaperP1.IrregularWindowExamples.short_window_impossible",
+  "PaperP1.IrregularWindowExamples.zero_marginal",
+  "PaperP1.IrregularWindowExamples.homogeneous_positive_original_zero"
+]

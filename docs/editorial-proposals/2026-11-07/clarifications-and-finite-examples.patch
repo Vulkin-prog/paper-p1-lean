@@ -1,0 +1,98 @@
+--- a/companion_sections/confinement.tex
++++ b/companion_sections/confinement.tex
+@@ -215,6 +215,16 @@
+ $2^3$, not in a growing rank error.
+ \end{proof}
+ 
++Here homogeneous mass is the sum of the probabilities of the
++homogeneous events, with zero right-hand side in place of the affine
++start prescription.
++It must be distinguished from a weight using the original marginals
++$p_x$, which can vanish. For instance, a start at $x=3$ of length
++$L=7$ is impossible: the square $4$ forces the common bit on
++$3,\ldots,9$ to be zero, and $6=2\cdot3$ then forces the bit at $2$
++to be zero, contradicting the left-boundary equation. The corresponding
++homogeneous event is compatible and has positive probability.
++
+ \begin{corollary}[Dense nonaligned pairs]
+ \label{p13:conf:dense-pairs}
+ For fixed \(\eta,\varepsilon>0\), nonaligned pairs
+--- a/companion_sections/limits_appendix.tex
++++ b/companion_sections/limits_appendix.tex
+@@ -514,7 +514,11 @@
+ For $N=18$, $q=3$, the retained multipliers are exactly $7,8,9,10,11$,
+ giving five starts.  Their observed integers lie between $21$ and $35$.
+ The supported cutoff $36$ contains eleven primes, but the prime $19$
+-is unused.  Thus $r\leq10$, and both full moments are at least
++is unused. In the homogeneous system the observed values
++$27,32,30,28,22,26,34,23,29,31$ successively determine all ten other
++prime bits. Hence the rank is exactly $r=10$, and the compatible
++forcing event consists of exactly two prime-sign samples, with
++probability $2^{-10}$. Both full moments are therefore at least
+ $\exp(5t)/1024$, compared with $\exp(5t)/2048$ from the same-count
+ single-atom bound.  This gives at least a factor-two gain, with no
+ assertion of a new asymptotic threshold or an exact general rank formula.
+--- a/companion_sections/uniform_appendix.tex
++++ b/companion_sections/uniform_appendix.tex
+@@ -345,8 +345,14 @@
+ at primes \(\ell>Y\). Occurrences may have repeated
+ centres; their formal coordinates remain distinct.
+ For the resulting valuation map let \(K_\pi\)
+-be its relative kernel and let
++be its kernel on all formal occurrence coordinates, before quotienting
++by the internal relations of individual windows. Thus internal local
++relations are included in \(K_\pi\). Let
+ \(\eta_\pi\in\{0,1\}\) denote affine compatibility.
++If instead each local block is first replaced by its effective image,
++the relative-kernel formula uses the product of the actual marginals
++\(\prod_i p_{x_i}\) in place of the nominal factor \(p^r\).
++Repeated centres retain distinct formal occurrence coordinates.
+ 
+ \begin{proposition}[The replica formula and positive propagation]
+ \label{p1:uniform:replicas}
+@@ -413,6 +419,18 @@
+ \(\log N\) proves \eqref{p1:uniform:replica-moment}.
+ \end{proof}
+ 
++\paragraph{A local-kernel example.}
++For a single start at \(x=18\) of length \(L=10\), the ten affine
++rows have rank nine. At prime cutoff \(28\), the unique compatible
++assignment makes prime \(17\) negative and all other prime signs
++positive, so \(p_{18}=2^{-9}\). The formal relation kernel has
++dimension one, giving \(2^{-10}2^1=2^{-9}\) in the nominal formula.
++The effective relative nullity of a singleton is zero; its formula
++therefore retains \(p_{18}\). The internal even square relation is
++visible in \(18\cdot24\cdot25\cdot27=540^2\).
++This is a finite algebraic illustration, not an assertion that these
++parameters lie beyond an asymptotic threshold.
++
+ The same reasoning permits measurable gates in
+ positive estimates. For example, suppose
+ \(\E R\ll_\delta N^{-\eta+\delta}\) for every
+--- a/main_sections/exact_transfer.tex
++++ b/main_sections/exact_transfer.tex
+@@ -208,7 +208,8 @@
+  \ll N^{\max(1-1/A,(1+u)/2)+\varepsilon}.
+  \label{p13:transfer:small-kernels-bound}
+ \end{equation}
+-Also, the set $\mathcal X_q$ of windows containing distinct $n_1,n_2$
++Also, with the previously fixed cutoff $H=C_DB$, the set
++$\mathcal X_q$ of windows containing distinct $n_1,n_2$
+ with $K_H(n_1)K_H(n_2)\leq N^q$ has cardinality
+ $O(N^{q+\varepsilon})$, for fixed $q\geq0$.
+ \end{lemma}
+@@ -499,6 +500,14 @@
+ changes only constant factors and $B^{O(1)}$ offset choices. Its two
+ anchors, receiving congruences, and degree bounds obey the same estimates.
+ Thus the same parameter choices prove the compressed assertion.
++
++The size cutoff can be chosen before any final $\varepsilon$.
++Indeed, fix $a<2$, put $a'=(a+2)/2$ and
++$\varepsilon'=(2-a)/4$, and apply the established estimate with
++these fixed parameters. Since $-a'+\varepsilon'<-a$, it yields the
++pure bound $N^{-a}$ above a suitable threshold, for both versions
++with the same fixed cutoff. This argument retains $a<2$ and a fixed
++bound on the compressed block width.
+ \end{proof}
+ 
+ For $e=\{x,y\}$ put $E_e(u)=E_{S_e}(u)$ and

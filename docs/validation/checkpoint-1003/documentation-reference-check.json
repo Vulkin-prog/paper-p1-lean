@@ -1,0 +1,111 @@
+{
+  "proof_source_commit": "3df7615af2aa6a2a2bc6856bd4203c401d0434de",
+  "scope": "Qualified backticked project declaration names in eight current review documents; not a scan of all prose or a semantic statement comparison.",
+  "references_checked": 17,
+  "unresolved_or_ambiguous": [],
+  "references": [
+    {
+      "file": "docs/REPLICA_AND_HOMOGENEOUS_INTERFACES.md",
+      "line": 23,
+      "written": "NominalRunReplicaFormula.companion_T22_7",
+      "resolved": "PaperP1.NominalRunReplicaFormula.companion_T22_7"
+    },
+    {
+      "file": "docs/REPLICA_AND_HOMOGENEOUS_INTERFACES.md",
+      "line": 45,
+      "written": "DensePrimitiveHomogeneousMass.companion_T8_2",
+      "resolved": "PaperP1.DensePrimitiveHomogeneousMass.companion_T8_2"
+    },
+    {
+      "file": "docs/EDITORIAL_HANDOFF_AFTER_ENDPOINT_REVIEW.md",
+      "line": 35,
+      "written": "NominalRunReplicaFormula.companion_T22_7",
+      "resolved": "PaperP1.NominalRunReplicaFormula.companion_T22_7"
+    },
+    {
+      "file": "docs/EDITORIAL_HANDOFF_AFTER_ENDPOINT_REVIEW.md",
+      "line": 36,
+      "written": "NominalRunReplicaFormula.heterogeneous_run_formula",
+      "resolved": "PaperP1.NominalRunReplicaFormula.heterogeneous_run_formula"
+    },
+    {
+      "file": "docs/EDITORIAL_HANDOFF_AFTER_ENDPOINT_REVIEW.md",
+      "line": 59,
+      "written": "DensePrimitiveHomogeneousMass.companion_T8_2",
+      "resolved": "PaperP1.DensePrimitiveHomogeneousMass.companion_T8_2"
+    },
+    {
+      "file": "docs/EDITORIAL_HANDOFF_AFTER_ENDPOINT_REVIEW.md",
+      "line": 81,
+      "written": "FixedCutoffIndependentTail.article_15_8_fixed_cutoff",
+      "resolved": "PaperP1.FixedCutoffIndependentTail.article_15_8_fixed_cutoff"
+    },
+    {
+      "file": "docs/EDITORIAL_HANDOFF_AFTER_ENDPOINT_REVIEW.md",
+      "line": 95,
+      "written": "SmallKernelWindows.critical_two_count",
+      "resolved": "PaperP1.SmallKernelWindows.critical_two_count"
+    },
+    {
+      "file": "docs/EDITORIAL_HANDOFF_AFTER_ENDPOINT_REVIEW.md",
+      "line": 106,
+      "written": "MultiAnchorModerateMass.uniform_bound",
+      "resolved": "PaperP1.MultiAnchorModerateMass.uniform_bound"
+    },
+    {
+      "file": "docs/EDITORIAL_HANDOFF_AFTER_ENDPOINT_REVIEW.md",
+      "line": 107,
+      "written": "MultiAnchorBudgets.article_15_11",
+      "resolved": "PaperP1.MultiAnchorBudgets.article_15_11"
+    },
+    {
+      "file": "docs/FIXED_CUTOFF_INDEPENDENT_TAIL.md",
+      "line": 36,
+      "written": "PaperP1.FixedCutoffIndependentTail.uniform_tail",
+      "resolved": "PaperP1.FixedCutoffIndependentTail.uniform_tail"
+    },
+    {
+      "file": "docs/FIXED_CUTOFF_INDEPENDENT_TAIL.md",
+      "line": 37,
+      "written": "PaperP1.FixedCutoffIndependentTail.article_15_8_fixed_cutoff",
+      "resolved": "PaperP1.FixedCutoffIndependentTail.article_15_8_fixed_cutoff"
+    },
+    {
+      "file": "docs/EXACT_RANK_EXAMPLE.md",
+      "line": 39,
+      "written": "PaperP1.ExactRankPrimeCylinderExample.kernel_dimension",
+      "resolved": "PaperP1.ExactRankPrimeCylinderExample.kernel_dimension"
+    },
+    {
+      "file": "docs/EXACT_RANK_EXAMPLE.md",
+      "line": 40,
+      "written": "PaperP1.ExactRankPrimeCylinderExample.exact_rank",
+      "resolved": "PaperP1.ExactRankPrimeCylinderExample.exact_rank"
+    },
+    {
+      "file": "docs/EXACT_RANK_EXAMPLE.md",
+      "line": 41,
+      "written": "PaperP1.ExactRankPrimeCylinderExample.forcing_solution_count",
+      "resolved": "PaperP1.ExactRankPrimeCylinderExample.forcing_solution_count"
+    },
+    {
+      "file": "docs/EXACT_RANK_EXAMPLE.md",
+      "line": 42,
+      "written": "PaperP1.ExactRankPrimeCylinderExample.exact_forcing_probability",
+      "resolved": "PaperP1.ExactRankPrimeCylinderExample.exact_forcing_probability"
+    },
+    {
+      "file": "docs/IRREGULAR_WINDOW_EXAMPLES.md",
+      "line": 31,
+      "written": "IrregularWindowExamples.effective_kernel_nominal_fails",
+      "resolved": "PaperP1.IrregularWindowExamples.effective_kernel_nominal_fails"
+    },
+    {
+      "file": "docs/IRREGULAR_WINDOW_EXAMPLES.md",
+      "line": 49,
+      "written": "IrregularWindowExamples.homogeneous_positive_original_zero",
+      "resolved": "PaperP1.IrregularWindowExamples.homogeneous_positive_original_zero"
+    }
+  ],
+  "correction": "The draft reference FixedCutoffIndependentTail.article_15_8 was corrected to the existing article_15_8_fixed_cutoff."
+}

@@ -1,0 +1,14 @@
+'PaperP1.IrregularWindowExamples.kernel_eq_bot' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.IrregularWindowExamples.exact_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.IrregularWindowExamples.compatible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.IrregularWindowExamples.exact_marginal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.IrregularWindowExamples.raw_relation_dimension' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.IrregularWindowExamples.effective_kernel_nominal_fails' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.IrregularWindowExamples.short_window_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.IrregularWindowExamples.zero_marginal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.IrregularWindowExamples.homogeneous_positive_original_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Exported compiled scope types for 9 declarations

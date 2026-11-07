@@ -1,0 +1,68 @@
+{
+  "status": "draft_source_patch_checked_on_copy",
+  "base_manuscript_version": "P1 V1.8",
+  "base_published_commit": "bd7c818e51161bab34607fd433d3348bef1aa2bb",
+  "proof_source_commit": "3df7615af2aa6a2a2bc6856bd4203c401d0434de",
+  "patch": {
+    "path": "docs/editorial-proposals/2026-11-07/clarifications-and-finite-examples.patch",
+    "sha256": "f2115a6ebec875486979c36ee8c228c63a8637e9ff04dae683153b125d2d101d"
+  },
+  "files": [
+    {
+      "path": "manuscripts/paper-p1/v1.8/sources/companion_sections/confinement.tex",
+      "base_sha256": "e4c4fa80f11650be05c8cbba215593a57e1f7411d41d60ccad10291704f0d632",
+      "proposed_sha256": "dc8e6728fb0bd7ab30c07b2ce5402ac3625eddf0b835cf8eac98b2f070270c40"
+    },
+    {
+      "path": "manuscripts/paper-p1/v1.8/sources/companion_sections/limits_appendix.tex",
+      "base_sha256": "c2da5516c96395fe8d2797f944aeea583ee0e60f5c5c8eed7453c3abdb8ade2e",
+      "proposed_sha256": "4c774549734a145a06e5e4786bc22eef45af607da92389e75b7c7775fcae08c4"
+    },
+    {
+      "path": "manuscripts/paper-p1/v1.8/sources/companion_sections/uniform_appendix.tex",
+      "base_sha256": "bcc1726be86026b091d6da87e75a442c7d8651128818cba36b9bc33b355a8acb",
+      "proposed_sha256": "894672842e0892daed0f5e97ec522ebaff6a809e0f7f5f01c64c73f4eaf934a5"
+    },
+    {
+      "path": "manuscripts/paper-p1/v1.8/sources/main_sections/exact_transfer.tex",
+      "base_sha256": "17d5b26150b9d298f38d513495e493b9fd9847b02b297044bcd1a026623a329e",
+      "proposed_sha256": "966467e8ec52ccda0a0d80206ed00387155e53ce154bd27179a65c7dec9b9985"
+    }
+  ],
+  "proof_interfaces": {
+    "formal_and_effective_kernel": [
+      "PaperP1.NominalRunReplicaFormula.companion_T22_7",
+      "PaperP1.NominalRunReplicaFormula.heterogeneous_run_formula",
+      "PaperP1.IrregularWindowExamples.exact_marginal",
+      "PaperP1.IrregularWindowExamples.raw_relation_dimension",
+      "PaperP1.IrregularWindowExamples.effective_kernel_nominal_fails"
+    ],
+    "homogeneous_mass": [
+      "PaperP1.DensePrimitiveHomogeneousMass.companion_T8_2",
+      "PaperP1.IrregularWindowExamples.homogeneous_positive_original_zero"
+    ],
+    "inherited_cutoff": [
+      "PaperP1.SmallKernelWindows.critical_two_count"
+    ],
+    "epsilon_independent_cutoff": [
+      "PaperP1.FixedCutoffIndependentTail.uniform_tail",
+      "PaperP1.FixedCutoffIndependentTail.article_15_8_fixed_cutoff"
+    ],
+    "exact_rank_example": [
+      "PaperP1.ExactRankPrimeCylinderExample.exact_rank",
+      "PaperP1.ExactRankPrimeCylinderExample.forcing_solution_count",
+      "PaperP1.ExactRankPrimeCylinderExample.exact_forcing_probability"
+    ]
+  },
+  "dry_run_actual_exit_code": 0,
+  "apply_to_disposable_copy_actual_exit_code": 0,
+  "numbered_labels_preserved": 167,
+  "changed_numbered_blocks": [
+    "p13:transfer:small-kernels"
+  ],
+  "change_to_numbered_block": "Explicit reminder of the inherited H=C_D B premise in15.4; no new bound, label or removed case under the existing context.",
+  "live_manuscript_sources_changed": false,
+  "live_pdfs_changed": false,
+  "pdf_rebuild_of_proposal_executed": false,
+  "scope": "Concrete English/TeX editorial proposal, applied only to a disposable copy with source/label checks. Not an integrated manuscript revision or PDF layout validation. Existing source versions remain unchanged; Palomar remains on hold."
+}

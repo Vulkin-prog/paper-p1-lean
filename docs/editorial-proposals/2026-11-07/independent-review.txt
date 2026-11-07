@@ -1,0 +1,40 @@
+REVUE INDÉPENDANTE DU PATCH ÉDITORIAL
+
+Verdict : les cinq thèmes sont mathématiquement justifiés ; aucune correction nécessaire restante.
+Patch SHA256 : f2115a6ebec875486979c36ee8c228c63a8637e9ff04dae683153b125d2d101d
+
+La formulation homogène révisée parle de second membre nul remplaçant la prescription affine. Elle ne suggère plus que l’on obtient le start affine par ajout d’une condition à l’événement homogène.
+
+Contrôle mécanique indépendant : application exacte en mémoire, empreintes des quatre fichiers conformes à validation.json, 167 labels numérotés conservés. Seul le bloc 15.4 change. Aucun fichier source/PDF ni ancien rapport modifié.
+
+P01 — Noyaux formel et effectif ; exemple 18/10
+manuscripts/paper-p1/v1.8/sources/companion_sections/uniform_appendix.tex:348 (ligne proposée ; diff:42)
+La formule nominale emploie ker(relationMap(jointSystem)), sur les rL lignes formelles : les relations internes et répétitions restent incluses. La formule des images effectives conserve le produit des vraies marginales. Pour 18/10, le système sur neuf bits premiers a rang 9 et un unique témoin affine au cutoff 28, seul 17 négatif ; la masse infinie est 1/512 et le noyau formel a dimension 1. La nullité relative effective du singleton est 0. Le produit 18×24×25×27=540² est exact. Aucune régularité ni positivité initiale n’est ajoutée.
+L’unicité porte sur le cylindre fini au cutoff 28 ; elle ne dit pas que tous les signes premiers de la réalisation infinie sont déterminés. La dernière phrase maintient explicitement le caractère fini de l’exemple.
+Appuis : PaperP1.NominalRunReplicaFormula.companion_T22_7; PaperP1.NominalRunReplicaFormula.heterogeneous_run_formula; PaperP1.IrregularWindowExamples.exact_marginal; PaperP1.IrregularWindowExamples.raw_relation_dimension; PaperP1.IrregularWindowExamples.effective_kernel_nominal_fails
+
+P02 — Masse homogène ; exemple 3/7
+manuscripts/paper-p1/v1.8/sources/companion_sections/confinement.tex:218 (ligne proposée ; diff:7)
+Le second membre nul définit la vraie probabilité infiniteStartBits=0 ; il remplace la prescription affine originale, il ne s’y ajoute pas. Le carré 4 impose bit3=0, puis 6=2×3 impose bit2=0, contradictoire avec le bord affine de StartEvent 3,7. Le système homogène admet le témoin tout nul et sa probabilité est strictement positive. La phrase révisée évite toute affirmation d’inclusion des événements.
+Le changement suggéré pendant cette lecture a été intégré au diff examiné : « with zero right-hand side in place of the affine start prescription ». Aucun raccord restant nécessaire.
+Appuis : PaperP1.DensePrimitiveHomogeneousMass.companion_T8_2; PaperP1.IrregularWindowExamples.homogeneous_positive_original_zero
+
+P03 — Seuil H hérité dans 15.4
+manuscripts/paper-p1/v1.8/sources/main_sections/exact_transfer.tex:211 (ligne proposée ; diff:79)
+La borne à deux petits noyaux exige H≤D(L+1) avec D fixé avant le seuil, dans SmallKernelWindows.critical_two_count. Le rappel H=C_D B, B=L+1, spécialise exactement cette portée. Le choix H=C_D B dominant les diamètres est déjà imprimé dans main_sections/half_counts.tex:42 et est repris pour la compression dans exact_transfer.tex:181. Il ne faut pas lire la borne comme uniforme en un seuil H arbitrairement grand.
+Seul bloc numéroté modifié ; rappel d’une condition de contexte, sans nouveau compte ni suppression d’un cas auparavant couvert sous ce contexte. q≥0 est une restriction permise puisque le type conclut même pour tout q réel.
+Appuis : PaperP1.SmallKernelWindows.critical_two_count
+
+P04 — Cutoff de taille fixé avant epsilon
+manuscripts/paper-p1/v1.8/sources/main_sections/exact_transfer.tex:504 (ligne proposée ; diff:89)
+Pour a<2, a′=(a+2)/2<2 et ε′=(2−a)/4>0 sont fixés. Leur exposant vaut −a−(2−a)/4<−a. Le seuil absorbe donc aussi toute constante implicite et donne N^(−a). D,Q,C,v,a précèdent le choix commun de s et N₀ dans uniform_tail ; article_15_8_fixed_cutoff place explicitement ∃s avant ∀ε>0. Les poids sont les vraies marginales hétérogènes ; le bloc comprimé garde son seul poids nominal vp.
+Le même cutoff est un cutoff de taille TOTALE : s fenêtres ordinaires ou un bloc comprimé et au moins s−1 fenêtres. La largeur comprimée D et le domaine de centres O(N) sont fixes. Aucun endpoint a=2 ni type de largeur croissante n’est affirmé.
+Appuis : PaperP1.FixedCutoffIndependentTail.uniform_tail; PaperP1.FixedCutoffIndependentTail.article_15_8_fixed_cutoff
+
+P05 — Rang exact dix du cylindre N=18,q=3
+manuscripts/paper-p1/v1.8/sources/companion_sections/limits_appendix.tex:517 (ligne proposée ; diff:27)
+Les valeurs 27,32,30,28,22,26,34,23,29,31 forcent successivement les bits 3,2,5,7,11,13,17,23,29,31 du noyau homogène. Le seul bit libre est 19, donc dimension du noyau1 et rang 10 sur onze bits. La compatibilité affine est prouvée ; forcing_solution_count donne deux échantillons et exact_forcing_probability leur masse 1/1024. Les cinq starts forcés conduisent uniquement à la minoration exp(5t)/1024 des deux moments complets, pour t≥0 hérité du paragraphe précédent.
+La probabilité exacte concerne l’événement de forçage, pas la loi complète du compte ni ses moments. Le patch garde « at least » et n’annonce aucun rang général ni seuil asymptotique nouveau.
+Appuis : PaperP1.ExactRankPrimeCylinderExample.exact_rank; PaperP1.ExactRankPrimeCylinderExample.forcing_solution_count; PaperP1.ExactRankPrimeCylinderExample.exact_forcing_probability
+
+Aucun Lean/Lake, build, replay ou acte Palomar exécuté par cette instance. Les types et validations compilés sont des sorties antérieures du parent. Pas de contrôle de PDF ou de mise en page de ce patch.

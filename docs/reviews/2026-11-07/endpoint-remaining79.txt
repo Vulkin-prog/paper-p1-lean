@@ -1,0 +1,800 @@
+REVUE INDÉPENDANTE — 79 RÉSULTATS RESTANTS DE L’INDEX V1.8
+
+Snapshot documentaire examiné : bd7c818e51161bab34607fd433d3348bef1aa2bb
+Source des preuves : 08f019df4d33a817377e5c937356fe4d87ae08e1
+Racine des localisateurs : /home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/paper-p1-lean
+
+Conclusion : aucune nouvelle lacune mathématique confirmée parmi ces 79 résultats. Les 118 types pertinents couvrent leurs clauses après ouverture des prédicats et héritage explicite des hypothèses du contexte. Aucun nouveau type à extraire n’a été nécessaire.
+
+Méthode et limites :
+- Comparaison de chaque bloc TeX, des types compilés pertinents et des prédicats/certificats définissant leurs objets.
+- Lecture des corps des interfaces et de raccords internes ciblés ; pas une reconstruction indépendante de tous les milliers de lemmes transitifs.
+- Le replay et les audits d’axiomes mentionnés par le parent sont des validations externes à cette lecture ; je ne les ai pas exécutés.
+- Les 88 résultats des deux rapports antérieurs restent figés à leurs propres versions ; union des labels=167, sans prétendre avoir relu tous les endpoints ajoutés depuis à un unique commit.
+- Aucune exécution de Lean/Lake, aucun build, aucune action Palomar et aucune écriture dans le dépôt.
+- L’archive contient 264 types dont 261 propositions ; les 118 types utilisés ici sont effectivement présents et identiques aux types cités.
+- Les empreintes des fichiers TeX et Lean cités correspondent au snapshot de départ. Les évolutions documentaires parallèles ne changent pas cette lecture.
+- Les 79 labels sont disjoints des 88 labels antérieurement examinés ; union des labels=167. Les rapports antérieurs ne sont pas réécrits.
+
+Raccords éditoriaux proposés (aucun nouvel énoncé mathématique requis) :
+- 7.2, manuscripts/paper-p1/v1.8/sources/main_sections/cores.tex:65 — Expliciter « ordered lists of r distinct original windows » si la convention d’injectivité n’est pas rappelée près de 7.2. Le type compilé exclut les répétitions ; l’application aux familles suffit.
+- 13.4, manuscripts/paper-p1/v1.8/sources/main_sections/pair_rigidity.tex:214 — Dans l’index, décrire la représentation via clôture projective et polynôme de Hilbert, pour ne pas présenter le type comme portant littéralement sur une variable « affine curve ».
+- T1.9, manuscripts/paper-p1/v1.8/sources/companion_sections/arithmetic_appendix.tex:770 — Expliciter que le seuil agrandi domine deux fois le rayon de l’union normalisée : « fixed H/B above the normalized-width threshold ». FixedConclusion impose 2 radius(max(a,b),L)≤H≤DB. Le contexte prévoit un seuil agrandi ; cela précise sa portée, sans nouvelle erreur mathématique confirmée.
+- T22.7, manuscripts/paper-p1/v1.8/sources/companion_sections/uniform_appendix.tex:351 — Préciser près de uniform_appendix.tex:347–348 : ‘the kernel on the rL formal occurrence coordinates, before quotienting internal row relations’. Le noyau relatif effectif utilise le produit des vraies marginales ; p^r se retrouve alors dans le cas régulier. C’est un raccord terminologique : l’endpoint brut ferme la formule imprimée interprétée sur la valuation formelle.
+
+Remarque sur les implications et les estimations : les prémisses imprimées sont conservées. Le transfert de 3.1 hérite des moments bornés ; T2.3 hérite de la régularisation ; T19.8 suppose la compatibilité ; T19.11 hérite du premier moment fini. Les estimations de comptes et masses dans les autres interfaces sont conclues, non acceptées comme certificats finaux. Les régimes à degré fixé restent distincts des sommes sur tous les ordres de 7.2 et T22.1.
+
+CONSTAT PAR RÉSULTAT (exactement 79 labels)
+
+01. main 2.1 — p1:limits:local-rigidity
+Verdict : aligned. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/main_sections/exact_setup.tex:27
+Hypothèses/objets : B=cardinal de V,code des sélections paires dont le produit est carré ;rungeDistance est exactementceil(logU/log(64B)). Le seuil commun couvreU≥aN etB≤DlogN, donc2B≤U. Les signes comparés sontB−1 signes relatifs.
+Comparaison : Les cinq points couvrent l’inégalité finie réelle et les trois régimes asymptotiques ; c et les suitesB(N) sont fixés avant le seuil, qui est ensuite uniforme enU. Pas de borne finale de rang supposée. Le casB≤(1−ε)logN est uniforme enB, pas seulement le long d’une suite.
+Type lu : PaperP1.WindowRelationCode.window_relation_griesmer_real — PaperP1/Coding/WindowRelationCode.lean:199
+Type lu : PaperP1.UniformLocalRigidity.finite_griesmer_eventually — PaperP1/Coding/UniformLocalRigidity.lean:105
+Type lu : PaperP1.LocalRigidityRegimes.relation_rank_lt_of_length_asymptotic — PaperP1/Coding/LocalRigidityRegimes.lean:113
+Type lu : PaperP1.LocalRigidityRegimes.critical_relation_rank_le_one_of_error — PaperP1/Coding/LocalRigidityRegimes.lean:90
+Type lu : PaperP1.RelativeSignIndependence.subcritical_window_relative_signs_independent — PaperP1/Model/RelativeSignIndependence.lean:164
+Définitions ouvertes : PaperP1/Coding/LocalRigidityCode.lean:56; PaperP1/Coding/WindowRelationCode.lean:30
+Clauses complémentaires déjà couvertes : PaperP1.UniformLocalRigidity.finite_griesmer_eventually; PaperP1.LocalRigidityRegimes.relation_rank_lt_of_length_asymptotic; PaperP1.LocalRigidityRegimes.critical_relation_rank_le_one_of_error; PaperP1.RelativeSignIndependence.subcritical_window_relative_signs_independent
+Correction nécessaire : aucune confirmée.
+
+02. main 3.1 — p1:arith:core
+Verdict : aligned_mixed_conditional_clauses. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/main_sections/arithmetic.tex:49
+Hypothèses/objets : G_N=regularStarts etI_N\G_N=irregularStarts ;b_x affines arbitraires après le seuil. BoundedCountMomentsOn signifie POUR CHAQUE q fixé un cap M_q et un seuil, uniformes dans la bande etallowed.
+Comparaison : Les trois premières estimations sont fermées, y compris les targets affines variables et les moyennes. Les transferts de moments/cumulants supposent exactement la borne des moments IMPRIMÉE ; prendreallowed=True pour toute la bande. Ne pas transformer ces deux clauses en estimations sans prémisse, même si les moments sont prouvés plus loin.
+Type lu : PaperP1.RegularSetAsymptotic.irregular_count_critical — PaperP1/Model/RegularSetAsymptotic.lean:59
+Type lu : PaperP1.RegularSetAsymptotic.regular_set_transfer — PaperP1/Model/RegularSetAsymptotic.lean:96
+Type lu : PaperP1.RegularSetAsymptotic.affine_marginal_sum_critical — PaperP1/Model/RegularSetAsymptotic.lean:69
+Type lu : PaperP1.RegularMomentTransfer.regular_moment_transfer_on — PaperP1/Model/RegularMomentTransfer.lean:53
+Type lu : PaperP1.RegularCumulantTransfer.regular_second_factorial_cumulant_transfer_on — PaperP1/Model/RegularCumulantTransfer.lean:59
+Définitions ouvertes : PaperP1/Model/RegularMomentTransfer.lean:45
+Clauses complémentaires déjà couvertes : PaperP1.RegularSetAsymptotic.regular_set_transfer; PaperP1.RegularSetAsymptotic.affine_marginal_sum_critical; PaperP1.RegularMomentTransfer.regular_moment_transfer_on; PaperP1.RegularCumulantTransfer.regular_second_factorial_cumulant_transfer_on
+Correction nécessaire : aucune confirmée.
+
+03. main 3.5 — p1:arith:compression
+Verdict : aligned_after_unfolding. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/main_sections/arithmetic.tex:236
+Hypothèses/objets : GoodEdgeCompression.Conclusion a été ouvert : injection,image exacte,rang=|U|−1,capinférieur,motifs≤B² et translation d’un motif de rayon≤bL. Le pointmain_3_5 vise les deux canaux principaux2:3,3:4 deE_N ;finite_compression est la version àcanal réduit général.
+Comparaison : Le paquetConclusion contient toutes les clauses et n’est pas une hypothèse. Les valeurs répétées sont fusionnées dans union de Finsets, conformément au texte. Pas de local rank supposé plein : l’injectivité est dérivée de la privacité de l’arête bonne.
+Type lu : PaperP1.GoodEdgeCompression.main_3_5 — PaperP1/Arithmetic/GoodEdgeCompression.lean:78
+Définitions ouvertes : PaperP1/Arithmetic/GoodEdgeCompression.lean:39; PaperP1/Arithmetic/GoodEdgeCompression.lean:27
+Correction nécessaire : aucune confirmée.
+
+04. main 4.1 — p1:alg:centred
+Verdict : aligned. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/main_sections/affine_algebra.tex:26
+Hypothèses/objets : Famille finie de Bernoulli mesurables sur une probabilité arbitraire ;c(I) centré aux vraies marges. observedCountLaw_realizes identifie la loi algébrique à la pushforward du compte.
+Comparaison : La conjonction contient l’identité, la constantec(∅)=1, les singletons nuls et la probabilité de chaque produit complémentaire. Le terme de taille2 se lit en restreignant la même somme ; pas de caractère indépendant des Bernoulli originaux supposé.
+Type lu : PaperP1.Probability.centered_bernoulli_expansion — PaperP1/Probability/CenteredMeasureExpansion.lean:189
+Type lu : PaperP1.Probability.observedCountLaw_realizes — PaperP1/Probability/CenteredMeasureExpansion.lean:107
+Définitions ouvertes : PaperP1/Probability/CenteredMeasureExpansion.lean:189
+Clauses complémentaires déjà couvertes : PaperP1.Probability.observedCountLaw_realizes
+Correction nécessaire : aucune confirmée.
+
+05. main 4.2 — p1:alg:fourier
+Verdict : aligned_after_unfolding. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/main_sections/affine_algebra.tex:60
+Hypothèses/objets : I non vide dansl’ensemble admissiblep_x>0, L>0 ;S_x image EFFECTIVE. SquareClassFourierConclusion contient témoins affines, formule signée exacte,les deux caps et la relation de support complet.
+Comparaison : Le paquet a été ouvert : les témoins existent par compatibilité locale, pas par une hypothèse de l’identité à prouver. Les trois types sont uniformes en la famille et couvrent la formule et les conséquences. Préserverp_x>0, déjà imprimé viaI⊆𝓘_N.
+Type lu : PaperP1.Model.InfiniteStarts.dyadic_squareClass_fourier — PaperP1/Model/SquareClassFourier.lean:144
+Type lu : PaperP1.Model.InfiniteStarts.squareClass_centered_moment_bound — PaperP1/Model/SquareClassFourier.lean:70
+Type lu : PaperP1.Model.InfiniteStarts.squareClass_full_relation_of_ne_zero — PaperP1/Model/SquareClassFourier.lean:86
+Définitions ouvertes : PaperP1/Model/SquareClassFourier.lean:113
+Correction nécessaire : aucune confirmée.
+
+06. main 4.3 — p1:alg:compatible
+Verdict : aligned. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/main_sections/affine_algebra.tex:101
+Hypothèses/objets : ρ_*=runCompatibleNullity est le supremum des nullités des SOUS-familles compatibles, pas le rang du noyau d’un système joint incompatible. Toutes les marges locales sont strictement positives sur𝓘_N ; aucune compatibilité deI entier n’est supposée.
+Comparaison : Les trois points donnent le majorant à2^|I|,ρ_*≤ρ_rel et l’égalité quandq(I)>0. Le vide est autorisé. L’hypothèsep_x>0 est contextuelle et ne doit pas être supprimée si l’on change le domaine.
+Type lu : PaperP1.Model.InfiniteStarts.infinite_centered_compatible_nullity_bound — PaperP1/Model/CompatibleNullityBound.lean:64
+Type lu : PaperP1.Model.InfiniteStarts.runCompatibleNullity_le_relative — PaperP1/Model/CompatibleNullityBound.lean:47
+Type lu : PaperP1.Model.InfiniteStarts.runCompatibleNullity_eq_of_positive_joint — PaperP1/Model/CompatibleNullityBound.lean:51
+Définitions ouvertes : PaperP1/Model/CompatibleNullityBound.lean:64
+Clauses complémentaires déjà couvertes : PaperP1.Model.InfiniteStarts.runCompatibleNullity_le_relative; PaperP1.Model.InfiniteStarts.runCompatibleNullity_eq_of_positive_joint
+Correction nécessaire : aucune confirmée.
+
+07. main 4.4 — p1:alg:components
+Verdict : aligned_after_unfolding. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/main_sections/affine_algebra.tex:134
+Hypothèses/objets : Famille finie I de centres, longueur L>0 ; aucune prémisse p_x>0. La partition directe porte sur les images effectives squareClassSpace, et non sur les copies physiques.
+Comparaison : existsUnique_finest_directPartition assure unicité et finesse. Le paquet CanonicalRunPartitionConclusion contient les trois égalités ; les trois autres endpoints les donnent pour toute partition directe convenable. Le corps UnrestrictedRunComponents traite les marginales nulles en annulant le facteur correspondant, donc « Every finite family » est effectivement conservé.
+Type lu : PaperP1.Affine.existsUnique_finest_directPartition — PaperP1/Affine/DirectPartitions.lean:117
+Type lu : PaperP1.UnrestrictedRunComponents.canonical_run_components — PaperP1/Model/UnrestrictedRunComponents.lean:90
+Type lu : PaperP1.UnrestrictedRunComponents.joint_partition — PaperP1/Model/UnrestrictedRunComponents.lean:21
+Type lu : PaperP1.UnrestrictedRunComponents.centered_partition — PaperP1/Model/UnrestrictedRunComponents.lean:49
+Type lu : PaperP1.UnrestrictedRunComponents.nullity_partition — PaperP1/Model/UnrestrictedRunComponents.lean:77
+Définitions ouvertes : PaperP1/Model/CanonicalRunComponents.lean:82; PaperP1/Model/UnrestrictedRunComponents.lean:21
+Clauses complémentaires déjà couvertes : PaperP1.UnrestrictedRunComponents.canonical_run_components
+Correction nécessaire : aucune confirmée.
+
+08. main 5.1 — p1:stop:polynomial
+Verdict : aligned. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/main_sections/stopped.tex:40
+Hypothèses/objets : G fini totalement ordonné ; D héréditaire et D(∅), explicitement hérités de stopped.tex:25–30. CommSemiring R suffit ; aucune propriété probabiliste.
+Comparaison : Le type est l’identité pour tous u et t. orderedBoundary_iff_erase_max et orderedSuffix_eq_filter_max raccordent exactement la première frontière ordonnée et y>max I imprimés. Pour la lecture comme identité de polynômes, spécialiser R à l’algèbre de polynômes ; aucune hypothèse d’indépendance.
+Type lu : PaperP1.Algebra.stopped_expansion — PaperP1/Algebra/StoppedExpansion.lean:213
+Type lu : PaperP1.Algebra.orderedBoundary_iff_erase_max — PaperP1/Algebra/StoppedExpansion.lean:105
+Type lu : PaperP1.Algebra.orderedSuffix_eq_filter_max — PaperP1/Algebra/StoppedExpansion.lean:110
+Définitions ouvertes : PaperP1/Algebra/StoppedExpansion.lean:105
+Clauses complémentaires déjà couvertes : PaperP1.Algebra.orderedBoundary_iff_erase_max; PaperP1.Algebra.orderedSuffix_eq_filter_max
+Correction nécessaire : aucune confirmée.
+
+09. main 5.2 — p1:stop:measure
+Verdict : aligned. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/main_sections/stopped.tex:97
+Hypothèses/objets : Même classe héréditaire contenant ∅ ; indicatrices mesurables sur un espace de probabilité.
+Comparaison : positive_stopped_remainder contient simultanément l’égalité de lois, positivité coefficient par coefficient, masse totale q(I), et norme l1. measureBoundaryKernel_coeff identifie la masse en k à E[produit J_x × 1_{somme suffixe=k}] ; measureJointMoment_eq_probability identifie q(I) à la vraie probabilité. Fintype de l’univers se réalise par le sous-type du G fini.
+Type lu : PaperP1.Probability.positive_stopped_remainder — PaperP1/Probability/StoppedMeasureLaw.lean:140
+Type lu : PaperP1.Probability.measureBoundaryKernel_coeff — PaperP1/Probability/StoppedMeasureLaw.lean:88
+Type lu : PaperP1.Probability.measureJointMoment_eq_probability — PaperP1/Probability/StoppedMeasureLaw.lean:45
+Définitions ouvertes : PaperP1/Probability/StoppedMeasureLaw.lean:45; PaperP1/Probability/StoppedMeasureLaw.lean:88
+Clauses complémentaires déjà couvertes : PaperP1.Probability.measureBoundaryKernel_coeff; PaperP1.Probability.measureJointMoment_eq_probability
+Correction nécessaire : aucune confirmée.
+
+10. main 6.1 — p1:fixed:recovery
+Verdict : aligned_after_unfolding. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/main_sections/fixed_moments.tex:30
+Hypothèses/objets : R⊆F₂^V fini, d≥1,t≥2 ; M est un sous-espace de R, soit R′ du texte.
+Comparaison : RecoveryConclusion réunit codimension, NoDisjointRecovery, multiplicité ≤t−1 et nombre de représentations j! t^(j−1). Le paramètre vaut exactement t^(−1/d). Les représentations comptées utilisent j étiquettes distinctes linéairement indépendantes, conformément au texte, sans supposer le résultat de régularisation.
+Type lu : PaperP1.DisjointRecoveryTheorem.main_6_1 — PaperP1/Coding/DisjointRecoveryTheorem.lean:55
+Définitions ouvertes : PaperP1/Coding/DisjointRecoveryTheorem.lean:27; PaperP1/Coding/DisjointRecoverySubspace.lean:40; PaperP1/Analysis/DisjointRecoveryParameters.lean:18
+Correction nécessaire : aucune confirmée.
+
+11. main 6.2 — p1:fixed:targets
+Verdict : aligned_after_unfolding. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/main_sections/fixed_moments.tex:89
+Hypothèses/objets : s fixé≥1, C fixé, η>0, ε>0 avant N₀ ; puis tous L dans la bande critique et tous x:Fin s→[N,2N).
+Comparaison : freshTargets retire les valeurs de la liste source. Son prédicat est exactement ηL≤nullité relative de la famille augmentée moins nullité relative de la famille source. L’estimation est N^ε sans constante, donc plus forte ; aucune séparation, régularité, compatibilité ou même injectivité des sources n’est requise.
+Type lu : PaperP1.DenseTargetCount.main_6_2 — PaperP1/Asymptotics/DenseTargetCount.lean:86
+Définitions ouvertes : PaperP1/Asymptotics/DenseTargetCount.lean:65; PaperP1/Arithmetic/DenseTargetRegularization.lean:32
+Correction nécessaire : aucune confirmée.
+
+12. main 6.3 — p1:fixed:propagation
+Verdict : aligned_composed_clauses. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/main_sections/fixed_moments.tex:105
+Hypothèses/objets : s≥1,k≥0,C,ε>0 fixés ; r=s+k. La clause conditionnelle exige la vraie masse source >0 ; les prescriptions b et c sont arbitraires, donc le cas homogène est inclus.
+Comparaison : L’endpoint conjoint ferme les trois clauses : somme conditionnelle fraîche, propagation de toute famille F de tuples par distinctMore, puis masse des badFamilies pour les vrais événements startRhs. K,N₀ précèdent les sources et prescriptions. La dernière clause ne prétend pas compter des contacts incompatibles avec une probabilité positive : badFamilies est l’union défaut/contact et les événements de masse nulle restent nuls.
+Type lu : PaperP1.FixedSourcePropagationTheorem.main_6_3 — PaperP1/Asymptotics/FixedSourcePropagationTheorem.lean:21
+Définitions ouvertes : PaperP1/Asymptotics/FixedSourcePropagationTheorem.lean:21; PaperP1/Asymptotics/FixedExceptionalMass.lean:63
+Correction nécessaire : aucune confirmée.
+
+13. main 7.1 — p1:core:rankin
+Verdict : aligned_after_unfolding. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/main_sections/cores.tex:24
+Hypothèses/objets : σ∈(1/2,1), C₁>0 fixés ; N naturel,Y≥0,T≥1 variables. Les entiers comptés sont positifs (1≤v≤C₁N), convention implicite du produit de noyau.
+Comparaison : values est le filtre du véritable truncatedKernel Y ; mem_values traduit le rayon réel par son plancher. ∃Cσ avant C₁, puis ∃A avant N,Y,T reproduit l’uniformité requise et la dépendance des constantes.
+Type lu : PaperP1.RankinSmallKernel.main_7_1 — PaperP1/Arithmetic/RankinSmallKernel.lean:104
+Définitions ouvertes : PaperP1/Arithmetic/RankinSmallKernel.lean:16; PaperP1/Arithmetic/RankinSmallKernel.lean:19
+Correction nécessaire : aucune confirmée.
+
+14. main 7.2 — p1:core:moderate
+Verdict : aligned_with_editorial_scope_note. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/main_sections/cores.tex:65
+Hypothèses/objets : C,A=A₀>1,β∈(0,1),u>0,ε>0 fixés avant N₀. B=L+1 ; Y=(log N)^A ; T=N^β pour la série. Les listes sourceTuples sont injectives.
+Comparaison : La première conjonction est uniforme en tout ordre r≥1 et tous Y≥B,T≥1, avec exactement 36rB^4 2^(r−1) N^r T^−2(rB)^m. La série sur r+1 est la somme imprimée r≥1 ; le prédicat HasCertificate encode l’ancre non marquée, les deux positions distinctes et l’assignation de toutes les primes avec D_j≤6NB, sans supposer un compte final.
+Type lu : PaperP1.ModerateCertificateAsymptotic.main_7_2 — PaperP1/Asymptotics/ModerateCertificateAsymptotic.lean:126
+Définitions ouvertes : PaperP1/Arithmetic/ModerateCertificateCount.lean:19; PaperP1/Arithmetic/ModerateCertificateCount.lean:22
+Proposition éditoriale : Expliciter « ordered lists of r distinct original windows » si la convention d’injectivité n’est pas rappelée près de 7.2. Le type compilé exclut les répétitions ; l’application aux familles suffit.
+Correction nécessaire : aucune confirmée.
+
+15. main 7.3 — p1:core:degrees
+Verdict : aligned_after_unfolding. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/main_sections/cores.tex:92
+Hypothèses/objets : C,A=A₀>1,ε>0 fixés avant N₀ ; tous centres dyadiques et tous L critiques.
+Comparaison : outgoing/incoming filtrent Edge avec deux valeurs distinctes, un diviseur D>6NB de leur produit de noyaux et une occurrence dans le récepteur pour chaque premier de D. Aucune condition de somme directe n’est insérée. Les trois degrés, y compris maxDegree du graphe simple sous-jacent, sont réunis au même seuil.
+Type lu : PaperP1.SaturationDegrees.main_7_3 — PaperP1/Asymptotics/SaturationDegrees.lean:41
+Définitions ouvertes : PaperP1/Arithmetic/SaturationPrimes.lean:29; PaperP1/Asymptotics/SaturationDegrees.lean:41
+Correction nécessaire : aucune confirmée.
+
+16. main 8.1 — p1:close:positivity
+Verdict : aligned_composed_clauses. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/main_sections/closure.tex:39
+Hypothèses/objets : μ>0,α réel quelconque ; k naturel.
+Comparaison : main_8_1 porte sur la vraie loi signée reference et donne l’intervalle nécessaire et suffisant. reference_singleton est nécessaire pour la clause explicite des masses, absente de la seule équivalence de positivité. Les deux types ensemble couvrent la proposition.
+Type lu : PaperP1.QuadraticPoisson.main_8_1 — PaperP1/Probability/QuadraticPoisson.lean:96
+Type lu : PaperP1.QuadraticPoisson.reference_singleton — PaperP1/Probability/QuadraticPoisson.lean:87
+Définitions ouvertes : PaperP1/Probability/QuadraticPoisson.lean:87; PaperP1/Probability/QuadraticPoisson.lean:96
+Clauses complémentaires déjà couvertes : PaperP1.QuadraticPoisson.reference_singleton
+Correction nécessaire : aucune confirmée.
+
+17. main 9.1 — p13:short:moments
+Verdict : aligned. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/main_sections/short_supports.tex:27
+Hypothèses/objets : v pair fixé≥2, a>0 et b fixent la hauteur/longueur comparable ; c,D,A₀,ε fixés avant N₀. A est un ensemble de racines distinctes, de cardinal pair≥2 et ≤c log log N ; W≤D(log N)^A₀.
+Comparaison : Le type conclut à la fois la positivité du vrai produit ∏(n+a), son égalité au produit naturel utilisé dans l’intégrale et le moment absolu. mainExponent est v/2+c[v(v−1)+2]log2. Choisir c assez petit après v,ε donne la norme L^v annoncée ; aucune borne de moment n’est une prémisse.
+Type lu : PaperP1.ShortSplitMoments.article_9_1 — PaperP1/Asymptotics/ShortSplitMoments.lean:85
+Définitions ouvertes : PaperP1/Asymptotics/ProfileTupleCount.lean:17; PaperP1/Asymptotics/ShortSplitMoments.lean:85
+Correction nécessaire : aucune confirmée.
+
+18. main 9.2 — p13:short:old-space
+Verdict : aligned. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/main_sections/short_supports.tex:49
+Hypothèses/objets : ι et κ finis de tailles r et s ; Dold≥0,ε>0 avant le choix c>0 ; puis constantes de comparaison, C et N₀. Toutes les nouvelles sélections sont non vides, paires, courtes ; leur somme de classes appartient au oldSpace de l’union des blocs.
+Comparaison : Les blocs anciens n’ont ici qu’une borne de cardinalité, donc le type est plus général que les blocs de diamètre O(B) imprimés. Le seuil est uniforme sur ces blocs et tous T de listes satisfaisant le prédicat ; il ne présuppose pas |T|. Les valeurs positives et la traduction des produits sont aussi conclues.
+Type lu : PaperP1.ShortOldSpaceProjection.article_9_2 — PaperP1/Asymptotics/ShortOldSpaceProjection.lean:72
+Définitions ouvertes : PaperP1/Asymptotics/ShortOldSpaceProjection.lean:72
+Correction nécessaire : aucune confirmée.
+
+19. main 10.1 — p13:half:conditional
+Verdict : aligned_after_unfolding. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/main_sections/half_counts.tex:21
+Hypothèses/objets : r,s,D,C,ε et bornes de hauteur fixés avant N₀ ; blocs et sources arbitraires après N₀. blocks et oldBlocks ont leurs valeurs comparables à N et à distance ≤D(L+1) des centres, héritage explicite de half_counts.tex:11–18.
+Comparaison : EffectiveWindowLists.lists exige des centres nouveaux distincts et u_i≠0 dans l’image des sélections paires de chaque vrai bloc, avec somme dans l’espace de toutes valeurs anciennes. Il ne requiert ni u_i non nul modulo oldSpace ni indépendance/séparation des sources. L’endpoint n’assume aucune estimation sur la population.
+Type lu : PaperP1.ValueHeightHalfCount.article_10_1 — PaperP1/Asymptotics/ValueHeightHalfCount.lean:21
+Définitions ouvertes : PaperP1/Arithmetic/EffectiveWindowLists.lean:19; PaperP1/Asymptotics/ValueHeightHalfCount.lean:21
+Correction nécessaire : aucune confirmée.
+
+20. main 10.2 — p13:half:connected
+Verdict : aligned_after_unfolding. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/main_sections/half_counts.tex:68
+Hypothèses/objets : r≥2 fixé ; ε>0,C avant N₀ ; toutes sous-populations G⊆dyadicBlock N.
+Comparaison : Connected est la partition canonique égale à la partition totale ; Primitive est nullité positive et nullité nulle sur tout sous-ensemble propre. Les quatre clauses donnent les nombres de familles et les deux masses indépendantes. independentMass conserve exactement les marginales hétérogènes infiniteMarginal, pas le poids nominal p^r.
+Type lu : PaperP1.OriginalWindowFamilyMass.article_10_2 — PaperP1/Asymptotics/OriginalWindowFamilyMass.lean:38
+Définitions ouvertes : PaperP1/Model/ConnectedWindowFamilies.lean:23; PaperP1/Model/FamilyIndependentMass.lean:17
+Correction nécessaire : aucune confirmée.
+
+21. main 10.3 — p13:half:pairs
+Verdict : aligned_after_unfolding. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/main_sections/half_counts.tex:100
+Hypothèses/objets : Bornes fixes de hauteur et de largeur des blocs ; ε>0 avant N₀.
+Comparaison : DependentBlockPairs.Dependent est l’existence d’un même u≠0 dans les deux images effectives paires ; pairs comprend aussi les centres égaux. Le type est uniforme pour toutes les applications de blocs convenables, donc inclut les normalisations fixes après reparamétrage du centre. Il ne confond pas une relation locale interne et une intersection effective.
+Type lu : PaperP1.DependentBlockPairsCount.article_10_3 — PaperP1/Asymptotics/DependentBlockPairsCount.lean:16
+Définitions ouvertes : PaperP1/Arithmetic/DependentBlockPairs.lean:19; PaperP1/Arithmetic/DependentBlockPairs.lean:24
+Correction nécessaire : aucune confirmée.
+
+22. main 13.1 — p13:rig:short-basis
+Verdict : aligned_after_unfolding. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/main_sections/pair_rigidity.tex:88
+Hypothèses/objets : a∈(0,1) imprimé ; le type permet aussi a=1. C fixé et x,y dyadiques, sans compatibilité ni nonalignement.
+Comparaison : Certificate est un sous-espace du completeRelationCode dont les trois projections sont injectives ; ses champs first_injective,second_injective,common_injective sont partie du type. Les inégalités portent sur sa dimension et le support physique de chaque vecteur de base ; la conclusion explicite ferme ensuite les non-vides, parités et classe commune non nulle. KD,KS précèdent C, ce qui est plus uniforme que O_{a,C}.
+Type lu : PaperP1.ShortBasisTheorem.article_13_1 — PaperP1/Arithmetic/ShortBasisTheorem.lean:119
+Définitions ouvertes : PaperP1/Arithmetic/ShortBasisActualSpace.lean:40; PaperP1/Arithmetic/ShortBasisTheorem.lean:119
+Correction nécessaire : aucune confirmée.
+
+23. main 13.2 — p13:rig:common-curve
+Verdict : aligned_after_unfolding. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/main_sections/pair_rigidity.tex:127
+Hypothèses/objets : V de dimension t≥2 avec base de vrais mots pairs, supports dans [−B,B] et taille≤2q. q≥1,q≤B ; x,y∈[N,2N] ; carrés des valeurs de chaque mot de base ; seuil (B+1)^(1000000q²)<N.
+Comparaison : L’existence porte sur Certificate V, dont les champs donnent irréductibilité, primitivité entière, degrés X,Y positifs et rang de l’image ≤1 dans la classe du corps de fonctions. Les trois inégalités explicites sont ensuite conclues. Aucun certificat de rang final n’est supposé ; le choix c=1000000 est indépendant de t.
+Type lu : PaperP1.CommonCurveTheorem.article_13_2 — PaperP1/Arithmetic/CommonCurveTheorem.lean:96
+Définitions ouvertes : PaperP1/Arithmetic/CommonCurveTheorem.lean:20; PaperP1/Arithmetic/CommonCurveTheorem.lean:96
+Correction nécessaire : aucune confirmée.
+
+24. main 13.3 — p13:rig:grid-fibres
+Verdict : aligned_composed_clauses. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/main_sections/pair_rigidity.tex:166
+Hypothèses/objets : Hypothèses de13.2 plus injectivité des deux projections physiques. Le certificat est un vrai certificat de courbe commune, avec supports bornés.
+Comparaison : article_13_3 construit une courbe satisfaisant à la fois13.2 et le compte de grille ; certificate_grid_bound s’applique à tout Certificate admissible et élimine une éventuelle ambiguïté sur le C₀ choisi. Le terme naturel t−1−6D² tronque à zéro ; l’endpoint donne aussi explicitement la version réelle non tronquée. integerGrid encode C₀(−u,−v)=0 avec les bons signes.
+Type lu : PaperP1.IntegerGridTheorem.article_13_3 — PaperP1/Arithmetic/IntegerGridTheorem.lean:106
+Type lu : PaperP1.IntegerGridTheorem.certificate_grid_bound — PaperP1/Arithmetic/IntegerGridTheorem.lean:48
+Définitions ouvertes : PaperP1/Arithmetic/IntegerGridTheorem.lean:36; PaperP1/Arithmetic/IntegerGridTheorem.lean:48
+Clauses complémentaires déjà couvertes : PaperP1.IntegerGridTheorem.certificate_grid_bound
+Correction nécessaire : aucune confirmée.
+
+25. main 13.4 — p13:rig:bcn
+Verdict : aligned_with_representation_bridge. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/main_sections/pair_rigidity.tex:214
+Hypothèses/objets : Idéal homogène premier I sur un corps de caractéristique0 ; polynôme de Hilbert dX+b₀, d>0 ; H>2. La courbe affine imprimée se représente par sa clôture projective intégrale dans ces coordonnées.
+Comparaison : points est l’ensemble effectif des w∈Z^n, |w_i|≤floor H, tels que tous les P∈I s’annulent en (1,w). Le type donne ∃κ=17 avant n, puis ∃c(n) avant le corps,I,d,H, donc aucune dépendance cachée aux coefficients ou au degré. La traduction d’une courbe affine au premier idéal homogène de sa clôture est le raccord géométrique usuel ; le type ne prend pas une borne de points comme prémisse.
+Type lu : PaperP1.IntegralAffineCurvePointCount.article_13_4 — PaperP1/Arithmetic/IntegralAffineCurvePointCount.lean:107
+Définitions ouvertes : PaperP1/Arithmetic/IntegralAffineCurvePointCount.lean:19; PaperP1/Arithmetic/IntegralAffineCurvePointCount.lean:107; PaperP1/Arithmetic/UniformIntegralCurveCount.lean:28
+Proposition éditoriale : Dans l’index, décrire la représentation via clôture projective et polynôme de Hilbert, pour ne pas présenter le type comme portant littéralement sur une variable « affine curve ».
+Correction nécessaire : aucune confirmée.
+
+26. main 13.7 — p13:rig:aligned
+Verdict : aligned_after_unfolding. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/main_sections/pair_rigidity.tex:339
+Hypothèses/objets : Alignement géométrique, a,b>0 premiers entre eux, max(a,b)≤B³ ; tous centres dyadiques. Les deux conséquences ajoutent x≠y et vraie masse jointe >0 ; première borne sans compatibilité.
+Comparaison : QuantitativeConclusion borne à la fois pairLoss et la vraie intersection d_xy par B/max(a,b)+(2/3)B log(1/τ), donc même sans le reste positif imprimé. HalfConclusion et HeightOneConclusion ont ε fixé avant N₀ et donnent exactement B/2+o(B), respectivement o(B). Ne pas lire ces deux dernières clauses sans la prémisse de compatibilité.
+Type lu : PaperP1.KnownAlignmentRank.main_13_7 — PaperP1/Asymptotics/KnownAlignmentRank.lean:124
+Définitions ouvertes : PaperP1/Asymptotics/KnownAlignmentRank.lean:23; PaperP1/Asymptotics/KnownAlignmentRank.lean:36; PaperP1/Asymptotics/KnownAlignmentRank.lean:46
+Correction nécessaire : aucune confirmée.
+
+27. main 14.2 — p13:third:rational-rank
+Verdict : aligned_composed_clauses. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/main_sections/third_cumulant.tex:79
+Hypothèses/objets : u<v<w<2u entiers et gcd(gcd(u,v),w)=1. La positivité suit de ces inégalités.
+Comparaison : density est gcd(u,v)/v+[gcd(u,w)+gcd(v,w)−1]/w, le D de la géométrie canonique. article_14_2 donne l’inégalité et extremal_value est nécessaire pour la clause d’égalité au triplet(10,12,15). Aucun rang arithmétique supplémentaire n’est conclu.
+Type lu : PaperP1.RationalTripleIntegers.article_14_2 — PaperP1/Arithmetic/RationalTripleIntegers.lean:69
+Type lu : PaperP1.RationalTripleIntegers.extremal_value — PaperP1/Arithmetic/RationalTripleIntegers.lean:49
+Définitions ouvertes : PaperP1/Arithmetic/RationalTripleIntegers.lean:16; PaperP1/Arithmetic/RationalTripleIntegers.lean:49
+Clauses complémentaires déjà couvertes : PaperP1.RationalTripleIntegers.extremal_value
+Correction nécessaire : aucune confirmée.
+
+28. main 19.2 — p1:discussion:charlier-norm
+Verdict : aligned_composed_clauses. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/main_sections/discussion.tex:116
+Hypothèses/objets : μ>0, puis tout r naturel ; différences signées de Poisson.
+Comparaison : main_19_2 réunit la formule de norme exacte au second ordre, les deux bornes générales et les deux valeurs à μ=2. Les indices sont définis à partir des racines du Charlier quadratique ; extended met les masses négatives à zéro. Norme l1, et coefficient de correction=C(μ)=un quart de cette norme, ne sont pas confondus avec la distance totale variation.
+Type lu : PaperP1.PoissonSecondDifferenceNorm.main_19_2 — PaperP1/Probability/PoissonSecondDifferenceNorm.lean:87
+Définitions ouvertes : PaperP1/Probability/PoissonSecondDifferenceNorm.lean:87; PaperP1/Algebra/CharlierRoots.lean:1
+Correction nécessaire : aucune confirmée.
+
+29. companion T1.1 — p1:arith:runge
+Verdict : aligned. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/companion_sections/arithmetic_appendix.tex:19
+Hypothèses/objets : k≥1,R≥1 réels,U entier avec U≥2R ; racines γ_i entières distinctes et |γ_i|≤R.
+Comparaison : Le témoin entier a pour le carré de ∏(U+γ_i) est universel dans le type ; la conclusion est exactement U≤(64R)^(2k). Aucun degré fixé ni constante dépendant du degré n’est introduit.
+Type lu : PaperP1.SplitProductBound.uniform_split_product_real_radius — PaperP1/Arithmetic/SplitProductBound.lean:125
+Définitions ouvertes : PaperP1/Arithmetic/SplitProductBound.lean:125
+Correction nécessaire : aucune confirmée.
+
+30. companion T1.2 — p1:arith:pell
+Verdict : aligned_composed_clauses. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/companion_sections/arithmetic_appendix.tex:62
+Hypothèses/objets : A₀>0,ε>0 fixés avant N₀ ; puis A,C naturels positifs,e entier non nul, tous bornés par N^A₀.
+Comparaison : positiveQuadraticSolutions compte les véritables couples d’entiers positifs satisfaisant A u²−C v²=e et les deux hauteurs ; mem_positiveQuadraticSolutions_real_height raccorde le plancher de N^A₀ aux bornes réelles imprimées. N₀ précède coefficients et e ; le cas factorisable n’est pas exclu.
+Type lu : PaperP1.UniformQuadraticCount.uniform_quadratic_equation_count — PaperP1/Diophantine/UniformQuadraticCount.lean:132
+Type lu : PaperP1.UniformQuadraticCount.mem_positiveQuadraticSolutions_real_height — PaperP1/Diophantine/UniformQuadraticCount.lean:105
+Définitions ouvertes : PaperP1/Diophantine/UniformQuadraticCount.lean:105
+Clauses complémentaires déjà couvertes : PaperP1.UniformQuadraticCount.mem_positiveQuadraticSolutions_real_height
+Correction nécessaire : aucune confirmée.
+
+31. companion T1.3 — p1:arith:defects
+Verdict : aligned_composed_clauses. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/companion_sections/arithmetic_appendix.tex:90
+Hypothèses/objets : Constantes de comparaison de B à logN et de H,diamètre à B fixées ; H n’a besoin que d’une borne supérieure. Le second endpoint fixe a>0 et une translation réelle avant K et N₀.
+Comparaison : Le paquet contient localement K B/logB, globalement N^(1/2+ε), et les vrais dyadicTwoDefectWindows≤N^ε. affineIntervalDefects est l’ensemble des points entiers positifs dans [aU+shift,a(U+R)+shift] ; affineDyadicTwoDefectWindows conserve les fenêtres [y−a,y−a+aL]. Il s’agit de dilater les intervalles, pas d’affirmer l’invariance arithmétique des noyaux. Toutes les clauses sont uniformes après le choix des transformations fixes.
+Type lu : PaperP1.UniformDefectCounts.companion_T1_3 — PaperP1/Arithmetic/UniformDefectCounts.lean:30
+Type lu : PaperP1.UniformDefectCounts.companion_T1_3_fixed_affine — PaperP1/Arithmetic/UniformDefectCounts.lean:74
+Définitions ouvertes : PaperP1/Arithmetic/DefectAffineIntervals.lean:25; PaperP1/Arithmetic/DefectAffineWindows.lean:19; PaperP1/Arithmetic/UniformDefectCounts.lean:30
+Clauses complémentaires déjà couvertes : PaperP1.UniformDefectCounts.companion_T1_3_fixed_affine
+Correction nécessaire : aucune confirmée.
+
+32. companion T1.6 — p1:arith:anchor
+Verdict : aligned_after_unfolding. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/companion_sections/arithmetic_appendix.tex:416
+Hypothèses/objets : C,τ∈(0,1/2),ε>0 fixés avant N₀ ; tous L critiques et T∈[1,3N].
+Comparaison : HasLargeSelection exige un vrai MixedSquare entre sélections non vides des deux fenêtres et un sommet effectivement sélectionné dont le B-noyau dépasse T. separatedPairs impose la séparation dans l’une ou l’autre orientation. Le second filtre smallWindows compte les vrais sommets de noyau≤T ; les deux exposants sont ceux imprimés.
+Type lu : PaperP1.LargeSelectedKernelTheorem.companion_T1_6 — PaperP1/Asymptotics/LargeSelectedKernelTheorem.lean:35
+Définitions ouvertes : PaperP1/Arithmetic/SelectedKernelSourceFamilies.lean:22; PaperP1/Arithmetic/SelectedKernelSourceFamilies.lean:26; PaperP1/Arithmetic/SelectedKernelSourceFamilies.lean:31
+Correction nécessaire : aucune confirmée.
+
+33. companion T1.9 — p1:arith:alignedrank
+Verdict : aligned_after_unfolding. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/companion_sections/arithmetic_appendix.tex:770
+Hypothèses/objets : C,ε avant N₀ ; canaux premiers entre eux de hauteur≤B³ variables après ce seuil. Pour la dernière clause Q et D fixés, H≥2 radius(Q,L) et H≤DB ; ce H agrandi doit dominer le diamètre normalisé.
+Comparaison : UniformConclusion contient pairLoss≤(u−1)_++εB et ≤L/max(a,b)+εB, avec les deux orientations des coefficients. pairLoss inclut les défauts locaux, donc est suffisamment fort pour ρ relatif. FixedConclusion borne le vrai largeKernel de l’union normalisée par K B/logB ; ce résidu est bien celui après l’agrandissement du seuil. Le niveau inférieur de H est hérité du sens de « enlarged prime threshold » et mérite d’être explicité dans un index compact.
+Type lu : PaperP1.EnlargedAlignedPairTheorem.companion_T1_9 — PaperP1/Asymptotics/EnlargedAlignedPairTheorem.lean:112
+Définitions ouvertes : PaperP1/Asymptotics/EnlargedAlignedPairTheorem.lean:18; PaperP1/Asymptotics/EnlargedAlignedPairTheorem.lean:29
+Proposition éditoriale : Expliciter que le seuil agrandi domine deux fois le rayon de l’union normalisée : « fixed H/B above the normalized-width threshold ». FixedConclusion impose 2 radius(max(a,b),L)≤H≤DB. Le contexte prévoit un seuil agrandi ; cela précise sa portée, sans nouvelle erreur mathématique confirmée.
+Correction nécessaire : aucune confirmée.
+
+34. companion T1.11 — p1:arith:palmrank
+Verdict : aligned_after_unfolding. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/companion_sections/arithmetic_appendix.tex:886
+Hypothèses/objets : Canaux2:3 ou3:4 ; sources dyadiques possédant des unités exactes dans l’une des orientations. D fixant la notion d’alignement est choisi avant N₀ ; ε>0 fixé.
+Comparaison : SourceConclusion borne les sources d’endpoint par (12(a+b)+4)B^7, puis pour chaque source choisit un t réellement représenté et borne les targets alignés par6aB^15. Chaque cible séparée et hors des sources exceptionnelles a deficiency≤(γ+ε)L, pour tout Q⊆primeFactors(ab). deficiency=L−dim((oldSpace+S_z)/oldSpace) inclut le déficit interne de z ; l’ancien espace autorise les bits premiers de ab. Les constantes γ sont explicitement1/3 et1/2 ; aucune compatibilité source n’est une prémisse.
+Type lu : PaperP1.AlignedTargetSourceTheorem.companion_T1_11 — PaperP1/Asymptotics/AlignedTargetSourceTheorem.lean:134
+Définitions ouvertes : PaperP1/Asymptotics/AlignedTargetSourceTheorem.lean:27; PaperP1/Arithmetic/TargetWindowRank.lean:20; PaperP1/Asymptotics/AlignedTargetRank.lean:18
+Correction nécessaire : aucune confirmée.
+
+35. companion T1.14 — p1:arith:fixed-support
+Verdict : aligned_composed_clauses. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/companion_sections/arithmetic_appendix.tex:1065
+Hypothèses/objets : r,s≥2 fixés ; tous blocs de valeurs de hauteur comparable àN, distance logarithmique au centre et domaine de centres de longueurO(N). ShapeCode admet un nombre fixé d’offsets dans[−V,V],V=O(B), et un nombre fixé de facteurs de dilation bornés indépendamment deN.
+Comparaison : BlockSupportProjection.Relation exige une somme effective nulle avec au moins s composantes non nulles ; population exige aussi des centres distincts. BlockSupportCount traite tous ces blocs, sans même exiger leur injection, donc couvre la version imprimée. BlockSupportParameters traite la réunion de motifs et compte aussi les enregistrements avec le motif ; SeveralWindowProjectionCount donne le cas des vraies fenêtres et une borne plus forte N^(r−s/2+ε), puis la borne imprimée. Les N₀ précèdent centres, blocs et motifs, sans présupposer leur nombre final.
+Type lu : PaperP1.BlockSupportCount.companion_T1_14 — PaperP1/Asymptotics/BlockSupportCount.lean:134
+Type lu : PaperP1.BlockSupportParameters.companion_T1_14 — PaperP1/Asymptotics/BlockSupportParameters.lean:126
+Type lu : PaperP1.SeveralWindowProjectionCount.companion_T1_14 — PaperP1/Asymptotics/SeveralWindowProjectionCount.lean:22
+Définitions ouvertes : PaperP1/Arithmetic/BlockSupportProjection.lean:16; PaperP1/Asymptotics/BlockSupportParameters.lean:16
+Clauses complémentaires déjà couvertes : PaperP1.BlockSupportParameters.companion_T1_14; PaperP1.SeveralWindowProjectionCount.companion_T1_14
+Correction nécessaire : aucune confirmée.
+
+36. companion T2.1 — p1:arith:smallpart-budget
+Verdict : aligned_after_unfolding. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/companion_sections/supplemental_arithmetic.tex:19
+Hypothèses/objets : B≥2,U naturel ; le texte positif se spécialise àU≥1. A>0 choisi ensuite.
+Comparaison : smallOddPart est le produit des premiers≤B de valuation impaire, le u_B imprimé. Le type contient les deux clauses, avec constantes explicites log4 et log4/A. Le filtre largeSmallPartValues est exactement smallOddPart>B^A ; la position de l’intervalle est uniforme.
+Type lu : PaperP1.SmallPrimeBudget.companion_T2_1 — PaperP1/Arithmetic/SmallPrimeBudget.lean:198
+Définitions ouvertes : PaperP1/Arithmetic/SmallPrimeBudget.lean:24; PaperP1/Arithmetic/SmallPrimeBudget.lean:167
+Correction nécessaire : aucune confirmée.
+
+37. companion T2.2 — p1:arith:coordinate-regularisation
+Verdict : aligned_after_unfolding. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/companion_sections/supplemental_arithmetic.tex:51
+Hypothèses/objets : R sous-espace binaire fini ; K,d naturels (le type inclut0). s est le cardinal réel de originalForms, constitué des formes distinctes non nulles.
+Comparaison : L’endpoint construit D ; il ne le suppose pas. ambientRestriction est exactement R avec les coordonnéesD nulles ; codimension=|D| et le budget est n/(K+1)+(s−r)/(d+1). Regular rassemble multiplicité≤K et décompositions non ordonnées distinctes≤d. Le rang de activeEncoding égal au rang du sous-espace conclut l’effacement des coordonnées nulles sans perte.
+Type lu : PaperP1.CoordinateForms.companion_T2_2 — PaperP1/Coding/CoordinateRegularisation.lean:124
+Définitions ouvertes : PaperP1/Coding/CoordinateRegularisation.lean:28; PaperP1/Coding/CoordinateRegularisation.lean:124
+Correction nécessaire : aucune confirmée.
+
+38. companion T2.3 — p1:arith:ternary-degree
+Verdict : aligned_conditional_on_printed_regularisation. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/companion_sections/supplemental_arithmetic.tex:107
+Hypothèses/objets : Regular après restriction de T2.2 est une prémisse, comme le « Apply Lemma » imprimé. rows est un ensemble fini de supports, donc les supports répétés sont fusionnés ; color:V→Fin3 est injectif sur chaque support et chaque somme de formes annihileR.
+Comparaison : Conclusion contient les poids0,2,3, l’égalité des étiquettes pour une arête binaire, l’injectivité des trois étiquettes d’une ligne ternaire, puis taille des composantes binaires≤K et degré ternaire≤2dK². Les lignes sont effectivement restreintes et les étiquettes nulles enlevées par finalRows. T2.2 fournit la prémisse et l’endpoint n’en fait pas une estimation finale supposée.
+Type lu : PaperP1.TernaryConstraints.companion_T2_3 — PaperP1/Coding/TernaryConstraints.lean:80
+Définitions ouvertes : PaperP1/Coding/TernaryConstraints.lean:25; PaperP1/Coding/TernaryConstraints.lean:56
+Correction nécessaire : aucune confirmée.
+
+39. companion T2.5 — p1:arith:fixed-channel-mass
+Verdict : aligned_after_unfolding. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/companion_sections/supplemental_arithmetic.tex:164
+Hypothèses/objets : a,b fixes premiers entre eux,b/2<a<b ; seuil privé réelH=DB avecD≥2b. Ce seuil domine les largeurs normalisées, conformément au paragraphe de contexte.
+Comparaison : Conclusion contient l’erreur expliciteO(B²/N), sa conséquenceN^(−1+ε), puis les deux constantes positives de comparaison à L N^(−1+1/b). separatedChannelMass somme les vrais q({x,y}) sur le canal symétrique ordonné séparé, y compris les termes nuls ; mainTerm est p² N × coefficient(a,b) × signed(L,a,b), soit w et S imprimés. Rien n’est pris comme certificat de masse.
+Type lu : PaperP1.FixedChannelMassTheorem.companion_T2_5 — PaperP1/Asymptotics/FixedChannelMassTheorem.lean:93
+Définitions ouvertes : PaperP1/Asymptotics/FixedChannelMassTheorem.lean:77; PaperP1/Model/RealPrivateChannelSources.lean:19; PaperP1/Asymptotics/ChannelMainTermBounds.lean:18
+Correction nécessaire : aucune confirmée.
+
+40. companion T2.6 — p1:arith:fixed-channel-rank
+Verdict : aligned_after_unfolding. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/companion_sections/supplemental_arithmetic.tex:209
+Hypothèses/objets : a,b fixes du contexte,b≥3, premiers entre eux,a<b ; C,ε,D avant N₀. Les sources appartiennent au canal géométrique ; la version cible compatible impose la vraie masse jointe>0 et z≠x,y.
+Comparaison : Le type donne γ≤2/3 et les deux conclusions SourceConclusion et CompatibleConclusion. Cette seconde transforme compatibilité en séparation, sans la supposer cachée. Le défaut est L moins le gain de rang, donc inclut la non-régularité éventuelle de la cible. Le Q universel⊆primeFactors(ab) autorise l’information première supplémentaire imprimée ; l’exception endpoint est explicitement polynomiale en B.
+Type lu : PaperP1.AlignedTargetSourceTheorem.companion_T2_6 — PaperP1/Asymptotics/AlignedTargetSourceTheorem.lean:127
+Définitions ouvertes : PaperP1/Asymptotics/AlignedTargetSourceTheorem.lean:39; PaperP1/Arithmetic/TargetWindowRank.lean:27
+Correction nécessaire : aucune confirmée.
+
+41. companion T4.1 — p1:fixed:curve
+Verdict : aligned_stronger_than_printed. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/companion_sections/fixed_moments.tex:16
+Hypothèses/objets : Hauteur comparable positiveaN≤z≤bN ; K,D₀,C,ε fixés. Deux listes de racines non vides, distinctes dans chaque liste et disjointes entre listes ; coefficients entiersD_i≠0.
+Comparaison : L’existence j précède N₀ et les données ; le type choisit j=2. solutions demande exactement les carrés entiers D_i∏(z+u). Aucune borne N^A sur D_i n’est nécessaire dans le type, ce qui renforce la version imprimée ; les offsets logarithmiques et degrés fixes sont conservés.
+Type lu : PaperP1.DisjointSquareTheorem.companion_T4_1 — PaperP1/Asymptotics/DisjointSquareTheorem.lean:74
+Définitions ouvertes : PaperP1/Asymptotics/DisjointSquareTheorem.lean:17; PaperP1/Asymptotics/DisjointSquareTheorem.lean:74
+Correction nécessaire : aucune confirmée.
+
+42. companion T4.2 — p1:fixed:CRT
+Verdict : aligned_after_unfolding. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/companion_sections/fixed_moments.tex:68
+Hypothèses/objets : s,k≥1,C,ε fixés avant N₀ ; sources arbitraires après le seuil.
+Comparaison : HasStrictCertificate demande G_i>1, sources et positions propres à chaque i, coprimalité paire, produit>N et positions réceptrices. HasIntegerCertificate est équivalent dans le domaine positif et replace Fin(L+1) par les offsets−1,…,L−1. sourceTargets compte les centres, sans compter plusieurs fois les certificats ; aucune séparation/injection des sources n’est exigée.
+Type lu : PaperP1.UniformFixedSourceCertificates.companion_T4_2 — PaperP1/Arithmetic/UniformFixedSourceCertificates.lean:81
+Définitions ouvertes : PaperP1/Arithmetic/FixedSourceCertificate.lean:24; PaperP1/Arithmetic/FixedSourceCertificate.lean:32; PaperP1/Arithmetic/FixedSourceCertificate.lean:107
+Correction nécessaire : aucune confirmée.
+
+43. companion T5.2 — p13:short:split
+Verdict : aligned_composed_clauses. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/companion_sections/short_supports.tex:70
+Hypothèses/objets : c,D,A₀,ε et comparaison des hauteurs fixés avant N₀ ; degré pair entre2 etc loglogN, racines distinctes bornées parW=polylogN.
+Comparaison : values utilise le vrai squarefreeKernel du produit naturel, avecN^β≤q<2N^β et e|q. baseExponent est1/2+β/(2d)−δ/d. L’endpoint comparable étend le même compte et la fibre à toute hauteur/longueur comparable ; e,q,β et le motif viennent aprèsN₀. Les hypothèses e carré libre sont inutiles dans ces types, donc aucune restriction supplémentaire.
+Type lu : PaperP1.PrescribedSplitProductCount.companion_T5_2 — PaperP1/Asymptotics/PrescribedSplitProductCount.lean:210
+Type lu : PaperP1.ComparableSplitProductCount.companion_T5_2 — PaperP1/Asymptotics/ComparableSplitProductCount.lean:271
+Définitions ouvertes : PaperP1/Arithmetic/SplitOffsetProducts.lean:21; PaperP1/Asymptotics/PrescribedSplitProductCount.lean:20; PaperP1/Asymptotics/ComparableSplitProductCount.lean:271
+Clauses complémentaires déjà couvertes : PaperP1.ComparableSplitProductCount.companion_T5_2
+Correction nécessaire : aucune confirmée.
+
+44. companion T6.1 — p13:half:small-kernels
+Verdict : aligned_after_unfolding. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/companion_sections/half_counts.tex:20
+Hypothèses/objets : H=O(logN),largeurW polylogN,centres de hauteur comparable ; constantes etε avant N₀, même q variable aprèsN₀.
+Comparaison : HasPair exige deux offsets distincts avec produit des vrais H-kernels≤N^q. Le type conclut aussi leur positivité et l’identité n+u avant le compte N^(q+ε). Les blocs imprimés de largeurO(B) et q>0 sont des spécialisations plus étroites.
+Type lu : PaperP1.TwoSmallKernelCount.companion_T6_1 — PaperP1/Asymptotics/TwoSmallKernelCount.lean:165
+Définitions ouvertes : PaperP1/Asymptotics/TwoSmallKernelCount.lean:19
+Correction nécessaire : aucune confirmée.
+
+45. companion T6.2 — p13:half:smooth
+Verdict : aligned_after_unfolding. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/companion_sections/half_counts.tex:50
+Hypothèses/objets : A≥2,t,c>0 etε fixés avant le choix déterministeM etN₀ ; valeurs en diamètreO(B).
+Comparaison : L’absence de X_{1/2} devient exactement la borne >N^(1/2) sur chaque paire de kernels. La condition de moins det grands Y-kernels et la taille>c loglogN sont des prémisses arithmétiques, pas le compte cherché. M est choisi avantL,H,S et a cardinal≤N^(1−1/A+ε), puis contient tous les centres satisfaisant ces conditions.
+Type lu : PaperP1.LargeSmoothExceptionalSet.companion_T6_2 — PaperP1/Asymptotics/LargeSmoothExceptionalSet.lean:91
+Définitions ouvertes : PaperP1/Asymptotics/LargeSmoothExceptionalSet.lean:18; PaperP1/Asymptotics/LargeSmoothExceptionalSet.lean:91
+Correction nécessaire : aucune confirmée.
+
+46. companion T6.3 — p13:half:saturation
+Verdict : aligned_after_unfolding. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/companion_sections/half_counts.tex:109
+Hypothèses/objets : ν indexe les r−1 autres blocs nouveaux,κ les s anciens ; cardν+cardκ<t/5 est exactementtb>r+s−1. A>1 dans le type, donc inclut A≥2 d’usage ; constants fixes avantK,N₀.
+Comparaison : ProjectedControl ne suppose pas le certificat : il déduit un récepteur ancien ou nouveau d’une vraie sélection avec≥t kernels>N^(1/5) et d’une somme dans oldSpace. Le seuil du graphe est2KN×nombreoffsets et≥2KNB, donc une vraie constante×NB. Le même endpoint conclut degrés entrants/sortants≤N^(1/A+ε), uniformes en toutes données après N₀.
+Type lu : PaperP1.AnchorRelationCertificates.companion_T6_3 — PaperP1/Asymptotics/AnchorRelationCertificates.lean:176
+Définitions ouvertes : PaperP1/Asymptotics/AnchorRelationCertificates.lean:80; PaperP1/Arithmetic/AnchorCertificateGraph.lean:18; PaperP1/Arithmetic/AnchorCertificateGraph.lean:26
+Correction nécessaire : aucune confirmée.
+
+47. companion T9.1 — p13:rig:local-square
+Verdict : aligned. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/companion_sections/pair_rigidity.tex:17
+Hypothèses/objets : B entier≥2,x naturel positif suffisamment grand ; I de cardinal pair positif dans[−B,B].
+Comparaison : Le type est littéralement la non-existence d’un carré entier pour le produit∏(x+a) au seuil(B+1)^(12|I|)<x. Aucune compatibilité ni choix préalable de racines positives n’est ajouté ; la grande taille assure les signes nécessaires.
+Type lu : PaperP1.LocalSquareThreshold.companion_T9_1 — PaperP1/Arithmetic/LocalSquareThreshold.lean:73
+Définitions ouvertes : PaperP1/Arithmetic/LocalSquareThreshold.lean:73
+Correction nécessaire : aucune confirmée.
+
+48. companion T9.2 — p13:rig:defective
+Verdict : aligned_after_unfolding. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/companion_sections/pair_rigidity.tex:62
+Hypothèses/objets : C fixé avantK,N₀ ; tous L critiques et tous centres dyadiques.
+Comparaison : criticalDefectivePositions filtre les valeurs de la vraie fenêtre pour lesquels le noyau au-dessus de10(L+1) vaut1. Les valeurs de chaque fenêtre sont distinctes. La borne est K B/logB, uniformément au centre ; aucun résultat asymptotique local n’est une prémisse.
+Type lu : PaperP1.CriticalDefectPositions.companion_T9_2 — PaperP1/Arithmetic/CriticalDefectPositions.lean:66
+Définitions ouvertes : PaperP1/Arithmetic/CriticalDefectPositions.lean:66
+Correction nécessaire : aucune confirmée.
+
+49. companion T9.3 — p13:rig:components
+Verdict : aligned_composed_clauses. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/companion_sections/pair_rigidity.tex:129
+Hypothèses/objets : C et seuil critique hérités ; x,y positifs pour les faits finis de composantes. Les composantes libres sont les composantes non triviales non épinglées du vrai graphe de grands premiers.
+Comparaison : companion_T9_3 donne seulement |c−d_xy|≤K B/logB ; les deux faits additionnels sont donc nécessaires aux deux phrases restantes. component_selected_or_omitted s’applique à toute solution réelle largePrimeSolution et impose0 ou1 sur toute la composante ; free_nontrivial_component_meets_both_blocks donne un sommet dans chaque bloc. Ensemble, les trois types ferment tout l’énoncé.
+Type lu : PaperP1.FreeComponentRank.companion_T9_3 — PaperP1/Model/FreeComponentRank.lean:61
+Type lu : PaperP1.LargePrimeComponentArithmetic.component_selected_or_omitted — PaperP1/Combinatorics/LargePrimeComponentArithmetic.lean:125
+Type lu : PaperP1.LargePrimeComponentArithmetic.free_nontrivial_component_meets_both_blocks — PaperP1/Combinatorics/LargePrimeComponentArithmetic.lean:208
+Définitions ouvertes : PaperP1/Combinatorics/LargePrimeComponentArithmetic.lean:125; PaperP1/Combinatorics/LargePrimeComponentArithmetic.lean:208
+Clauses complémentaires déjà couvertes : PaperP1.LargePrimeComponentArithmetic.component_selected_or_omitted; PaperP1.LargePrimeComponentArithmetic.free_nontrivial_component_meets_both_blocks
+Correction nécessaire : aucune confirmée.
+
+50. companion T9.4 — p13:rig:factor-height
+Verdict : aligned_by_symmetric_specialization. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/companion_sections/pair_rigidity.tex:251
+Hypothèses/objets : P=Q R non nul dansZ[X,Y]. La primitivité deQ n’est pas requise par le type.
+Comparaison : L’endpoint donneH(Q)≤2^(dX+dY)||P||₂ et la seconde borne parH(P). Pour le quotientR, appliquer le même théorème àR,Q et commuter le produit ; aucune hypothèse manquante. Le facteur racine est exactementsqrt((dX+1)(dY+1)).
+Type lu : PaperP1.BivariateFactorHeight.companion_T9_4 — PaperP1/Algebra/BivariateFactorHeight.lean:83
+Définitions ouvertes : PaperP1/Algebra/BivariateFactorHeight.lean:83
+Correction nécessaire : aucune confirmée.
+
+51. companion T9.5 — p13:rig:two-witnesses
+Verdict : aligned_after_unfolding. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/companion_sections/pair_rigidity.tex:277
+Hypothèses/objets : Les trois tailles pouru,v,u+v sont encodées par r,s:Fin3→N, et symmDiff est l’addition des mots formels. B,q réels,1≤q≤B ; supports bornés,indépendance des deux vrais mots ; carrés en(x,y) de hauteurN.
+Comparaison : L’endpoint choisit c=1200, construit les quatre coefficientsQ, établit que tout diviseur commun est une unité, puisR=normPolynomial. Il contient non-nullité,annulation,les deux degrés partiels≤12floorq,degré total≤24floorq et hauteur≤(B+1)^(1200q). WordNormCertificate est aussi conclu ; aucun polynôme final n’est supposé.
+Type lu : PaperP1.TwoWitnessTheorem.companion_T9_5 — PaperP1/Arithmetic/TwoWitnessTheorem.lean:92
+Définitions ouvertes : PaperP1/Arithmetic/TwoWitnessTheorem.lean:92
+Correction nécessaire : aucune confirmée.
+
+52. companion T12.1 — p1:stop:class
+Verdict : aligned_with_inherited_regular_domain. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/companion_sections/stopped.tex:58
+Hypothèses/objets : C est fixé avant N₀ ; H est arbitraire après le seuil. La frontière est prise dans G=regularStarts N L, comme dans le contexte imprimé ; cette régularité est nécessaire au budget de nullité.
+Comparaison : Retained est le prédicat SourceRetained sur les vrais squareClassSpace et goodEdges. Le type donne l’hérédité, l’unicité de la paire dépendante et l’égalité de nullité pour les membres non directs. Pour I⊆regularStarts sur la frontière, il conclut 0<ρ≤4L/3+1<3L/2. La restriction régulière est une prémisse explicite de cette dernière clause.
+Type lu : PaperP1.RetainedClassTheorem.companion_T12_1 — PaperP1/Asymptotics/RetainedClassTheorem.lean:16
+Définitions ouvertes : PaperP1/Model/RetainedGoodEdges.lean:21; PaperP1/Asymptotics/RetainedClassTheorem.lean:16
+Correction nécessaire : aucune confirmée.
+
+53. companion T12.2 — p1:stop:tail
+Verdict : aligned_after_unfolding. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/companion_sections/stopped.tex:120
+Hypothèses/objets : C est fixé ; N₀ précède L et H. K_N est BoundaryCutoff.cutoff(2^C) N. La masse porte sur la frontière ordonnée des sous-ensembles des centres réguliers.
+Comparaison : LargeBoundaryMass.mass est exactement la somme 2^|I|q(I) pour |I|>K_N. Le cutoff est le plus petit entier satisfaisant la condition logarithmique imprimée ; il n’est pas choisi après la famille. L’endpoint donne la constante explicite 2^(3C/2) devant N^(−3/2), sans supposer une estimation de queue.
+Type lu : PaperP1.LargeBoundaryTail.companion_T12_2 — PaperP1/Asymptotics/LargeBoundaryTail.lean:93
+Définitions ouvertes : PaperP1/Model/LargeBoundaryMass.lean:20; PaperP1/Asymptotics/BoundaryCutoff.lean:17; PaperP1/Asymptotics/BoundaryCutoff.lean:44
+Correction nécessaire : aucune confirmée.
+
+54. companion T17.1 — p1:close:deficit-bounds
+Verdict : aligned_after_unfolding. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/companion_sections/closure.tex:44
+Hypothèses/objets : C et ε>0 sont fixés avant N₀ ; H vient après ce seuil. F et G sont les sommes pondérées par 2^r des vrais coefficients de déficit définis par cardinalités.
+Comparaison : firstCoefficient est p^r fois binomial(n,r) moins le nombre des sous-familles directes. secondCoefficient somme q_e p^(r−2) fois le déficit d’extensions comprimées. Les soustractions naturelles correspondent à des inclusions prouvées. Les deux bornes N^(−4/5+ε)+B/N et N^(−1+ε) sont conjointement conclues, pour les mêmes objets que dans T17.2.
+Type lu : PaperP1.RetainedIndependentDeficitRates.companion_T17_1 — PaperP1/Asymptotics/RetainedIndependentDeficitRates.lean:88
+Définitions ouvertes : PaperP1/Model/RetainedCardinalityDeficits.lean:35; PaperP1/Asymptotics/RetainedIndependentDeficitRates.lean:88
+Correction nécessaire : aucune confirmée.
+
+55. companion T17.2 — p1:close:retained-reference
+Verdict : aligned_after_unfolding. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/companion_sections/closure.tex:151
+Hypothèses/objets : N≥2, L>0 et H réel ; le domaine est la classe des centres réguliers.
+Comparaison : L’endpoint donne l’égalité du vrai polynôme retenu et de binomialReference moins la somme des coefficients F_r+G_r multipliant Δ^r, puis la norme l1≤Ftotal+Gtotal. Les sommes s’arrêtent à n parce que les coefficients supérieurs sont nuls ; Ftotal_eq_tsum et Gtotal_eq_tsum font aussi ce raccord dans le fichier. L’interprétation en mesures signées suit de l’injection des lois finies ; elle ne requiert pas d’estimation asymptotique supplémentaire.
+Type lu : PaperP1.RetainedReferenceCardinalityTheorem.companion_T17_2 — PaperP1/Model/RetainedReferenceCardinalityTheorem.lean:57
+Définitions ouvertes : PaperP1/Model/RetainedReferenceCardinalityTheorem.lean:18; PaperP1/Model/RetainedReferenceCardinalityTheorem.lean:57
+Correction nécessaire : aucune confirmée.
+
+56. companion T19.1 — p1:limits:lattice
+Verdict : aligned. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/companion_sections/limits_appendix.tex:17
+Hypothèses/objets : N≥2, L≥1 et j≥1 quelconque.
+Comparaison : Le support est borné point par point par ceil(N/L), et le moment factoriel est de la forme j!p^j m avec m naturel. Le corps construit, pour toute sous-famille, le système complet à au plus |I|L équations et sa masse multiple entière de p^|I|, avant la somme par sous-ensembles. Les défauts locaux sont conservés dans le noyau formel ; la preuve n’emploie pas des marginales nominales avec la seule nullité effective relative.
+Type lu : PaperP1.RunCountLattice.companion_T19_1 — PaperP1/Model/RunCountLattice.lean:95
+Définitions ouvertes : PaperP1/Model/RunCountLattice.lean:26; PaperP1/Model/RunCountLattice.lean:95
+Correction nécessaire : aucune confirmée.
+
+57. companion T19.2 — p1:limits:local-blocks
+Verdict : aligned_after_unfolding. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/companion_sections/limits_appendix.tex:63
+Hypothèses/objets : C est fixé avant N₀ ; toutes les longueurs critiques sont ensuite permises. S, B_S, e_S et d_S sont les relations, blocs, extrémités et diamètres arithmétiques de LocalRelationBlocks.
+Comparaison : Conclusion contient chaque clause imprimée : blocs non vides et intervalles, disjonction, couverture exacte des starts irréguliers, marginales 0 ou 2p et marginale p hors blocs, loi Bernoulli du nombre local, les deux sommes globales, contribution d’un bloc plein, puis au plus deux blocs tronqués avec erreur≤2Lp. L’endpoint ne suppose pas le rang local≤1 : son corps l’établit uniformément avant finite_conclusion.
+Type lu : PaperP1.LocalBlocksTheorem.companion_T19_2 — PaperP1/Asymptotics/LocalBlocksTheorem.lean:76
+Définitions ouvertes : PaperP1/Asymptotics/LocalBlocksTheorem.lean:21; PaperP1/Asymptotics/LocalBlocksTheorem.lean:31
+Correction nécessaire : aucune confirmée.
+
+58. companion T19.5 — p1:limits:effective-tail
+Verdict : aligned_after_unfolding. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/companion_sections/limits_appendix.tex:255
+Hypothèses/objets : D>0, r et C sont fixés avant K et N₀ ; viennent ensuite toutes les longueurs critiques. La queue de moment utilise le vrai nombre de starts et le seuil strict Z>A.
+Comparaison : EffectiveTailScale.threshold est ceil(sqrt(N) exp(K log(N)/(log log(N))^(2/3))). L’endpoint donne à la fois la queue≤N^(−D) à ce seuil et, pour tout η>0 fixé avant son seuil, celle à N^(1/2+η). Il couvre r=0. Aucune borne de moments à ordre croissant ne subsiste comme prémisse.
+Type lu : PaperP1.EffectiveSupport.companion_T19_5 — PaperP1/Asymptotics/EffectiveSupport.lean:137
+Définitions ouvertes : PaperP1/Asymptotics/EffectiveTailScale.lean:18; PaperP1/Asymptotics/EffectiveTailScale.lean:24; PaperP1/Asymptotics/EffectiveSupport.lean:137
+Correction nécessaire : aucune confirmée.
+
+59. companion T19.7 — p1:limits:cylinder
+Verdict : aligned_after_unfolding. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/companion_sections/limits_appendix.tex:392
+Hypothèses/objets : t>2 est fixé, puis ε>0 et q₀ ; tous les nombres premiers q≥q₀ sont concernés. size(q)=2^(q−1), L=q−1 ; positiveRate et totalRate contiennent le facteur log(N)/N.
+Comparaison : Le type donne la positivité de (t−2)log(2) et les deux minorations par (t−2)log(2)−ε. C’est exactement le sens quantifié des deux liminf imprimées. positiveRate utilise les seules suites positives et totalRate tous les starts. Aucune limite du moment exponentiel n’est supposée.
+Type lu : PaperP1.PrimeCylinderDivergence.companion_T19_7 — PaperP1/Asymptotics/PrimeCylinderDivergence.lean:84
+Définitions ouvertes : PaperP1/Asymptotics/PrimeCylinderDivergence.lean:18; PaperP1/Asymptotics/PrimeCylinderDivergence.lean:25
+Correction nécessaire : aucune confirmée.
+
+60. companion T19.8 — p1:limits:peeling
+Verdict : aligned_after_unfolding. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/companion_sections/limits_appendix.tex:533
+Hypothèses/objets : A est une famille finie de vrais événements affines sur un espace binaire uniforme, compatible avec un témoin b ; dim(S_i)=L et 1≤t≤L.
+Comparaison : L’endpoint construit B⊆A, avec taille≥m−R/t, rang≤R et tous rangs privés<t. ComponentMassConclusion porte sur toutes les composantes canoniques de B et contient les deux minorations centrées imprimées. DenseConclusion est conditionnel exactement à m−R/t>0 ; il donne densité≤D, taille≥L/D et nullité≥L²/D−L. Tout ensemble fini de contraintes du modèle possède la représentation binaire finie utilisée ici.
+Type lu : PaperP1.PrivateRankPeelingTheorem.companion_T19_8 — PaperP1/Probability/PrivateRankPeelingTheorem.lean:19
+Définitions ouvertes : PaperP1/Affine/PrivateCoreMoments.lean:26; PaperP1/Affine/PrivateRankCore.lean:20
+Correction nécessaire : aucune confirmée.
+
+61. companion T19.9 — p1:limits:large-component
+Verdict : aligned_after_unfolding. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/companion_sections/limits_appendix.tex:580
+Hypothèses/objets : La famille C(q) et les coefficients de taille/nullité sont choisis avant toute tolérance asymptotique ; le filtre porte sur les nombres premiers impairs.
+Comparaison : Les deux coefficients convergent vers κ=6log(2)/17. Le même C(q) est non vide, connexe, contenu dans regularStarts et compatible ; il satisfait ρ*=ρ, les deux minorations de taille/nullité, q(C)>0 et c(C)≥(1−2/sqrt(L))q(C)>0. Le quantificateur sur tout H et toute bonne paire interdit e⊆C. L’erreur O(L^(−1/2)) est donc explicite.
+Type lu : PaperP1.QuadraticComponent.companion_T19_9 — PaperP1/Asymptotics/QuadraticComponent.lean:84
+Définitions ouvertes : PaperP1/Asymptotics/QuadraticComponent.lean:21; PaperP1/Asymptotics/QuadraticComponent.lean:27; PaperP1/Asymptotics/QuadraticComponent.lean:84
+Correction nécessaire : aucune confirmée.
+
+62. companion T19.11 — p1:limits:stein
+Verdict : aligned_with_inherited_moment_assumption. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/companion_sections/limits_appendix.tex:1047
+Hypothèses/objets : P est une probabilité sur N avec premier moment fini, hypothèse imprimée dans le paragraphe précédant T19.11. 0≤θ<min(μ,1/2) ; pour la deuxième clause, m>0 et κ appartient à la même plage.
+Comparaison : La première partie donne le critère pour la vraie référence Hermite. La seconde donne l’identité de taille biaisée pour tout κ admissible, donc en particulier pour Var(X)−E(X) lorsque ce paramètre est défini et admissible. Aucune estimation de variance ou de cumulant n’est une prémisse cachée du critère. Le type est plus général que l’identité spécialisée imprimée.
+Type lu : PaperP1.ScalarRecurrenceTheorem.companion_T19_11 — PaperP1/Probability/ScalarRecurrenceTheorem.lean:63
+Définitions ouvertes : PaperP1/Probability/ScalarRecurrenceTheorem.lean:21; PaperP1/Probability/ScalarRecurrenceTheorem.lean:63
+Correction nécessaire : aucune confirmée.
+
+63. companion T19.12 — p1:limits:signed-palm
+Verdict : aligned_after_unfolding. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/companion_sections/limits_appendix.tex:1110
+Hypothèses/objets : La famille finie d’indicatrices mesurables peut être arbitrairement dépendante ; θ est un réel quelconque. Les sources de marginale nulle sont explicitement omises dans conditionalPalm.
+Comparaison : observedPalm est la somme des vraies lois conditionnelles du compte effacé moins leurs lois non conditionnelles, pondérée par les vraies p_x. observedRecurrenceNorm_eq_tsum identifie la norme à R(P;m,θ). Le paquet contient la borne 2∑p_x², le coefficient exact dans la base (z−1)^j et la spécialisation homogène (j+1)B_(j+1)−p(n−j)B_j. Les signes et le facteur 2 sont conservés.
+Type lu : PaperP1.MeasureSignedPalm.companion_T19_12 — PaperP1/Probability/MeasureSignedPalm.lean:169
+Définitions ouvertes : PaperP1/Probability/ConditionalPalm.lean:69; PaperP1/Probability/MeasureSignedPalm.lean:30; PaperP1/Probability/MeasureSignedPalm.lean:65
+Correction nécessaire : aucune confirmée.
+
+64. companion T19.13 — p1:limits:weighted-residual
+Verdict : aligned_composed_clauses. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/companion_sections/limits_appendix.tex:1213
+Hypothèses/objets : P et Q sont des probabilités sur N ; μ>0 pour l’équivalence, et μ,ν∈(0,M] pour la stabilité imprimée.
+Comparaison : companion_T19_13 donne seulement les deux bornes d’équivalence. weightedNorm_stability_bounded est nécessaire pour la seconde formule ; il ne demande que 0≤μ≤M et permet tout ν, donc couvre la plage imprimée. La norme pondérée est définie de manière sommable pour toute probabilité ; aucun premier moment fini n’est exigé.
+Type lu : PaperP1.WeightedPoissonNorm.companion_T19_13 — PaperP1/Probability/WeightedPoissonNorm.lean:129
+Type lu : PaperP1.WeightedPoissonNorm.weightedNorm_stability_bounded — PaperP1/Probability/WeightedPoissonNorm.lean:120
+Définitions ouvertes : PaperP1/Probability/WeightedPoissonNorm.lean:120; PaperP1/Probability/WeightedPoissonNorm.lean:129
+Clauses complémentaires déjà couvertes : PaperP1.WeightedPoissonNorm.weightedNorm_stability_bounded
+Correction nécessaire : aucune confirmée.
+
+65. companion T20.1 — p1:offset:line-product
+Verdict : aligned_after_unfolding. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/companion_sections/offset_geometry.tex:25
+Hypothèses/objets : Trois fenêtres régulières, deux à deux directes, sont dans le domaine dyadique ; H=C₀B avec C₀>1 est fixé dans le contexte de T20. line est une droite collinéaire et Y≥H.
+Comparaison : FiniteConclusion donne le produit≤3N pour au plus un offset ; pour au moins deux, elle fournit une direction primitive d avec ||d||∞≤B et produit≤6N||d||∞. Sa troisième clause borne le nombre d’offsets par sourceMajorant=1+log(6NB)/log(Y). L’endpoint donne ensuite O(B/log B) et ≤εB, uniformément. Les objets sont les vrais premiers partagés, pas une population supposée déjà bornée.
+Type lu : PaperP1.OffsetLineTheorem.companion_T20_1 — PaperP1/Asymptotics/OffsetLineTheorem.lean:85
+Définitions ouvertes : PaperP1/Asymptotics/OffsetLineTheorem.lean:17; PaperP1/Asymptotics/OffsetLineTheorem.lean:26; PaperP1/Arithmetic/OffsetLineCount.lean:16
+Correction nécessaire : aucune confirmée.
+
+66. companion T20.2 — p1:offset:integer-tail
+Verdict : aligned_after_unfolding. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/companion_sections/offset_geometry.tex:70
+Hypothèses/objets : s>1 est fixé ; tous les seuils réels T≥1 sont permis.
+Comparaison : productTail est la vraie série double sur les entiers positifs (a+1,b+1), avec condition stricte ab>T et poids (ab)^(−s). Le décalage des indices naturels ne change pas les objets. Le fichier établit la sommabilité avant l’endpoint ; aucune série divergente ne reçoit artificiellement la valeur zéro.
+Type lu : PaperP1.IntegerProductTail.companion_T20_2 — PaperP1/Analysis/IntegerProductTail.lean:185
+Définitions ouvertes : PaperP1/Analysis/IntegerProductTail.lean:20; PaperP1/Analysis/IntegerProductTail.lean:26
+Correction nécessaire : aucune confirmée.
+
+67. companion T20.3 — p1:offset:forced-plane
+Verdict : aligned_after_unfolding. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/companion_sections/offset_geometry.tex:96
+Hypothèses/objets : Le contexte de T20 impose trois fenêtres régulières de hauteur comparable, deux à deux directes. C et ε sont fixés avant N₀ ; les nombres premiers et offsets viennent après.
+Comparaison : GeometryConclusion contient le produit de deux premiers≤6NB, puis le plan forcé pour trois premiers de produit>18NB². ForcedConclusion donne un normal à trois composantes non nulles, l’appartenance à P_B et A·u=−h pour chaque premier ultérieur>12B³. primitiveMass somme les vraies probabilités jointes des triples primitifs dans doubleCenters, avec la borne N^(−1+ε). Les codes généraux de premiers/offsets couvrent la population partagée ; l’alias shared n’ajoute aucune hypothèse.
+Type lu : PaperP1.OffsetPlaneTheorem.companion_T20_3 — PaperP1/Asymptotics/OffsetPlaneTheorem.lean:96
+Définitions ouvertes : PaperP1/Asymptotics/OffsetPlaneTheorem.lean:19; PaperP1/Asymptotics/OffsetPlaneTheorem.lean:26; PaperP1/Arithmetic/OffsetPlaneMass.lean:23
+Correction nécessaire : aucune confirmée.
+
+68. companion T20.4 — p1:offset:normal-budget
+Verdict : aligned_stronger_than_printed. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/companion_sections/offset_geometry.tex:145
+Hypothèses/objets : δ>0 est fixé avant K et N₀ ; le normal A est primitif, donc non nul. Le type permet Y≥B, plus large que Y≥H ; le contexte régulier/direct de T20 est maintenu.
+Comparaison : supports compte les offsets distincts du plan ; le minimum de couverture est le vrai minimum combinatoire. Le type donne M_Y+4B²/||A||∞, puis 16B/δ et 48B²/δ : ces constantes impliquent les 6,24,72 imprimées. La famille de plans possède au plus (2K+1)^4B^5 éléments, avec K dépendant de δ seul. La petitesse du normal est une conclusion.
+Type lu : PaperP1.OffsetPlaneNormalBudget.companion_T20_4 — PaperP1/Asymptotics/OffsetPlaneNormalBudget.lean:19
+Définitions ouvertes : PaperP1/Asymptotics/OffsetPlaneNormalBudget.lean:19
+Correction nécessaire : aucune confirmée.
+
+69. companion T20.5 — p1:offset:root-separation
+Verdict : aligned_after_unfolding. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/companion_sections/offset_geometry.tex:192
+Hypothèses/objets : x,y≥2, rangs locaux L, espaces effectifs directs, α rationnel non nul et y=αx+β. Les supports physiques S_i sont deux à deux disjoints, avec des offsets distincts dans chaque bloc.
+Comparaison : Conclusion donne au plus une racine commune, puis construit D⊆I, |D|≤2, pour que les polynômes restants soient carrés libres et aient des racines deux à deux disjointes. polynomial est le produit substitué des facteurs X+i et αX+β+j ; les racines sont bien −i et −(β+j)/α. Le résultat ne s’étend pas silencieusement aux fenêtres irrégulières.
+Type lu : PaperP1.OffsetRootPolynomials.companion_T20_5 — PaperP1/Arithmetic/OffsetRootPolynomials.lean:86
+Définitions ouvertes : PaperP1/Arithmetic/OffsetRootPolynomials.lean:25; PaperP1/Arithmetic/OffsetRootPolynomials.lean:58
+Correction nécessaire : aucune confirmée.
+
+70. companion T20.6 — p1:offset:planar-components
+Verdict : aligned_after_unfolding. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/companion_sections/offset_geometry.tex:212
+Hypothèses/objets : η,K,C,C₀,ε sont fixés avant N₀ ; la famille F de plans et la population S de triples viennent ensuite. RegularDirect explicite le contexte régulier et deux à deux direct de T20. Le compte est même valable sans minimalité primitive.
+Comparaison : Many exige au moins ηB supports physiques deux à deux disjoints, transverses aux trois blocs et SquareOutside H. Le type accepte toute famille de≤B^K plans à coefficients entiers≤B^K et conclut |S|≤N^(1+ε), mass≤N^(−1+ε), puis primitiveMass≤N^(−1+ε). Il utilise les vraies masses affines. Aucune estimation finale de compte ou de masse n’est supposée.
+Type lu : PaperP1.ManyPlanarSquareProducts.companion_T20_6 — PaperP1/Asymptotics/ManyPlanarSquareProducts.lean:115
+Définitions ouvertes : PaperP1/Asymptotics/ManyPlanarSquareProducts.lean:25; PaperP1/Asymptotics/ManyPlanarSquareProducts.lean:31
+Correction nécessaire : aucune confirmée.
+
+71. companion T20.7 — p1:offset:cover-rank
+Verdict : aligned_after_unfolding. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/companion_sections/offset_geometry.tex:271
+Hypothèses/objets : C₀≥1 est fixé ; le type emploie H=floor(C₀B). Les trois fenêtres sont régulières et deux à deux directes. D couvre les hyperarêtes des premiers partagés.
+Comparaison : relativeSpace est le vrai espace de relations et zeroed son sous-espace aux coordonnées D nulles. Les conclusions sont dim(R)≤|D|+dim(R_D) et dim(R_D)≤fullCount+KB/log(B), uniformément en D. fullCount compte les composantes non épinglées rencontrant les trois blocs. Chaque composante libre a son support premier impair parmi les petits premiers et une vraie décomposition n=s a². Les équations en graphe sont construites par rows, graph et pins.
+Type lu : PaperP1.TripleCoverRank.companion_T20_7 — PaperP1/Arithmetic/TripleCoverRank.lean:126
+Définitions ouvertes : PaperP1/Arithmetic/TripleCoverRank.lean:25; PaperP1/Arithmetic/TripleCoverRank.lean:49; PaperP1/Arithmetic/TripleCoverRank.lean:126
+Correction nécessaire : aucune confirmée.
+
+72. companion T21.1 — p1:consequences:macro
+Verdict : aligned_after_unfolding. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/companion_sections/arithmetic_consequences.tex:26
+Hypothèses/objets : C est fixé ; δ∈(0,1), puis η ou ε, sont fixés avant leurs seuils. Les profils gardent les domaines ordonnés imprimés et leur véritable définition arithmétique.
+Comparaison : Conclusion contient les sept clauses : équivalents dyadiques et différence d’exposant 5/4, équivalents macroscopiques et différence d’exposant 4/3, formule signée avec M−2M^δ, formule finie de S_12 et équivalent signé. La référence dyadique vaut par définition (3+r)NB2^k/18 ; les deux endpoints reference_eval explicitent les références macroscopiques. rational est défini sur toutes les paires séparées via RationalUnitCode avant de prouver son support aligné. positive et signed sont les profils arithmétiques complets ; aucun profil déjà estimé n’est une prémisse.
+Type lu : PaperP1.CompanionT21Profiles.companion_T21_1 — PaperP1/Asymptotics/CompanionT21Profiles.lean:89
+Type lu : PaperP1.CompanionT21Profiles.macroscopic_positive_reference_eval — PaperP1/Asymptotics/CompanionT21Profiles.lean:20
+Type lu : PaperP1.CompanionT21Profiles.macroscopic_signed_reference_eval — PaperP1/Asymptotics/CompanionT21Profiles.lean:27
+Définitions ouvertes : PaperP1/Asymptotics/CompanionT21Profiles.lean:50; PaperP1/Asymptotics/DyadicPositiveEquivalents.lean:16; PaperP1/Asymptotics/DyadicPositiveProfiles.lean:24; PaperP1/Asymptotics/MacroscopicRationalProfile.lean:27
+Clauses complémentaires déjà couvertes : PaperP1.CompanionT21Profiles.macroscopic_positive_reference_eval; PaperP1.CompanionT21Profiles.macroscopic_signed_reference_eval
+Correction nécessaire : aucune confirmée.
+
+73. companion T21.2 — p1:consequences:conditional-rank
+Verdict : aligned_after_unfolding. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/companion_sections/arithmetic_consequences.tex:139
+Hypothèses/objets : A est un ensemble d’anciens starts dans I_N avec |A|≤j fixé ; on conditionne les rawValues par un vrai vecteur de bits premiers. C et j sont fixés, δ∈(0,1) et ε>0 sont fixés avant N₀ ; les réalisations anciennes viennent après le seuil.
+Comparaison : FiniteConclusion donne ρ_x≤(t_x−1)_+, la probabilité 0 ou p2^ρ, et p si t_x≤1, puis le budget pour chaque T≥1. term est exactement p2^(T−1)B fois card(poolValues), le S(P) imprimé ; contactStarts est O et largeStarts est D_T. La clause finale contrôle ce terme par N^(1/2−δ±ε) pour T=floor((1−δ)L). Elle ne dit pas que l’espérance conditionnelle elle-même possède cette échelle. Les anciens signes sont bien réalisables.
+Type lu : PaperP1.ConditionalRankTheorem.companion_T21_2 — PaperP1/Asymptotics/ConditionalRankTheorem.lean:106
+Définitions ouvertes : PaperP1/Asymptotics/ConditionalRankTheorem.lean:20; PaperP1/Asymptotics/ConditionalPoolTerm.lean:17
+Correction nécessaire : aucune confirmée.
+
+74. companion T21.3 — p1:consequences:rankin-patterns
+Verdict : aligned_after_unfolding. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/companion_sections/arithmetic_consequences.tex:208
+Hypothèses/objets : c,D₀>0 sont fixés, d∈{2,3}, B≥2 et X≥1 ; ζ∈(0,1) est fixé avant la constante de la seconde borne.
+Comparaison : roughWeightedCount compte les Q positifs carrés libres dont tous les premiers dépassent B^c. integerWeightedCount compte les ensembles finis d’entiers distincts>B^c de produit≤X. Les poids sont exactement (D₀B)^(dω(Q)) et (D₀B)^(d|A|). exponent(c,d,ζ)=1+(d−1+ζ)/c et les constantes sont uniformes en B,X. Les deux populations restent distinctes.
+Type lu : PaperP1.OffsetPatternRankin.companion_T21_3 — PaperP1/Arithmetic/OffsetPatternRankin.lean:157
+Définitions ouvertes : PaperP1/Arithmetic/OffsetFactorSupports.lean:22; PaperP1/Arithmetic/OffsetFactorSupports.lean:30; PaperP1/Arithmetic/OffsetPatternRankin.lean:157
+Correction nécessaire : aucune confirmée.
+
+75. companion T22.1 — p1:uniform:full-support
+Verdict : aligned_after_unfolding. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/companion_sections/uniform_appendix.tex:21
+Hypothèses/objets : s≥2,u>0,C,ε>0 sont fixés avant N₀ ; G⊆dyadicBlock N et tous les ordres r≤|G| viennent après le seuil.
+Comparaison : manuscriptLists est le filtre exact : tuples injectifs, rang local L, séparation stricte L<dist, et relation effective non nulle sur tous les blocs ; ni minimalité ni compatibilité. Le poids p^r est nominal sur ces fenêtres régulières. Le théorème contrôle la somme entière en r ; il ne fixe pas r avant N. La population plus large lists est un majorant prouvé, pas un compte final supposé.
+Type lu : PaperP1.FullSupportWeightedCount.companion_T22_1 — PaperP1/Asymptotics/FullSupportWeightedCount.lean:56
+Définitions ouvertes : PaperP1/Model/FullSupportOrderedLists.lean:24; PaperP1/Model/FullSupportOrderedLists.lean:32
+Correction nécessaire : aucune confirmée.
+
+76. companion T22.2 — p1:uniform:missing-block
+Verdict : aligned_composed_clauses. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/companion_sections/uniform_appendix.tex:69
+Hypothèses/objets : I⊆regularStarts, N≥2 et L>0 ; on suppose exactement l’absence de IsFullSupportRelation. OrderedTuple est une injection ; pour l’endpoint terminal cité, G est l’ensemble régulier G_N.
+Comparaison : regular_joint_missing_block_bound donne l’inégalité ponctuelle p∑q(I privé de x). companion_T22_2_sum donne la somme de toute sous-famille de (r+1)-tuples, soit (r+1)Np E(Z_G)_r ; le réindexage est exact. Pour G⊆regularStarts quelconque, sum_missing_block_tuples_card donne même le facteur |G|p. Aucun de ces types ne suppose une borne préalable du moment factoriel.
+Type lu : PaperP1.MissingBlockProbabilities.regular_joint_missing_block_bound — PaperP1/Model/MissingBlockProbabilities.lean:96
+Type lu : PaperP1.MissingBlockTupleSum.companion_T22_2_sum — PaperP1/Model/MissingBlockTupleSum.lean:82
+Définitions ouvertes : PaperP1/Model/MissingBlockProbabilities.lean:96; PaperP1/Model/MissingBlockTupleSum.lean:59; PaperP1/Model/MissingBlockTupleSum.lean:82; PaperP1/Model/MissingBlockTupleSum.lean:59
+Clauses complémentaires déjà couvertes : PaperP1.MissingBlockTupleSum.companion_T22_2_sum
+Correction nécessaire : aucune confirmée.
+
+77. companion T22.3 — p1:uniform:prime-budget
+Verdict : aligned_after_unfolding. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/companion_sections/uniform_appendix.tex:116
+Hypothèses/objets : P est un ensemble fini de nombres premiers ; X≥0 pour la première borne, et X≥1,Y≥3,σ∈[3/5,3/4] pour la seconde.
+Comparaison : values est l’ensemble des entiers positifs≤X dont le support premier impair est inclus dans P, soit A(X;P). PowerSeriesTail.total(2σ) est ∑(n+1)^(−2σ)=ζ(2σ), sans facteur manquant. Le produit d’Euler vaut ∏(1+p^(−σ)). La constante logarithmique précède P,X,Y,σ ; le budget ∑log(p)≤Y est la prémisse arithmétique imprimée, pas une estimation supposée de A.
+Type lu : PaperP1.PrimeBudgetRankin.companion_T22_3 — PaperP1/Arithmetic/PrimeBudgetRankin.lean:56
+Définitions ouvertes : PaperP1/Arithmetic/SmoothSquarefreeCount.lean:19; PaperP1/Arithmetic/SmoothSquarefreeCount.lean:24; PaperP1/Arithmetic/PrimeBudgetRankin.lean:56
+Correction nécessaire : aucune confirmée.
+
+78. companion T22.7 — p1:uniform:replicas
+Verdict : aligned_composed_clauses_with_kernel_gloss_needed. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/companion_sections/uniform_appendix.tex:351
+Hypothèses/objets : r occurrences formelles, avec répétitions éventuelles des centres ; L>0 et centres dyadiques. Pour la propagation, s≥1 est fixé avant N₀, les sources compatibles ont une vraie masse positive ; Y et les couleurs sont ensuite arbitraires. Pour les moments, r,q,C,D,A₀,ε sont fixés.
+Comparaison : NominalRunReplicaFormula ferme p^rη2^dim(K) avec le noyau brut ker(relationMap(jointSystem)), sur les coordonnées ι×Fin(L) : les répétitions restent distinctes. heterogeneous_run_formula emploie au contraire les images effectives et le produit des vraies marginales. RegularReplicaFormula est la spécialisation régulière avec p^r. InfiniteColoredConditionalSum borne la somme des cibles dans l’espace répliqué en réintégrant les petits premiers. ReplicaRunMoment couvre les poids non négatifs≤D(log N)^A₀ et toute sous-famille A, avec seuil uniforme en Y et dans les couleurs. Ces trois clauses nécessitent plusieurs points d’entrée.
+Type lu : PaperP1.NominalRunReplicaFormula.companion_T22_7 — PaperP1/Model/NominalRunReplicaFormula.lean:83
+Type lu : PaperP1.NominalRunReplicaFormula.heterogeneous_run_formula — PaperP1/Model/NominalRunReplicaFormula.lean:58
+Type lu : PaperP1.InfiniteColoredConditionalSum.companion_T22_7 — PaperP1/Asymptotics/InfiniteColoredConditionalSum.lean:18
+Type lu : PaperP1.ReplicaRunMoment.companion_T22_7 — PaperP1/Asymptotics/ReplicaRunMoment.lean:19
+Type lu : PaperP1.RegularReplicaFormula.companion_T22_7 — PaperP1/Model/RegularReplicaFormula.lean:20
+Définitions ouvertes : PaperP1/Model/NominalRunReplicaFormula.lean:25; PaperP1/Model/ColoredReplicaMass.lean:60; PaperP1/Model/ColoredRelativeFormula.lean:23; PaperP1/Model/RunReplicaSums.lean:28
+Clauses complémentaires déjà couvertes : PaperP1.InfiniteColoredConditionalSum.companion_T22_7; PaperP1.ReplicaRunMoment.companion_T22_7
+Proposition éditoriale : Préciser près de uniform_appendix.tex:347–348 : ‘the kernel on the rL formal occurrence coordinates, before quotienting internal row relations’. Le noyau relatif effectif utilise le produit des vraies marginales ; p^r se retrouve alors dans le cas régulier. C’est un raccord terminologique : l’endpoint brut ferme la formule imprimée interprétée sur la valuation formelle.
+Correction nécessaire : aucune confirmée.
+
+79. companion T23.1 — p1:obstruction:fixed
+Verdict : aligned_after_unfolding. Certitude élevée pour cette comparaison de portée.
+TeX : manuscripts/paper-p1/v1.8/sources/companion_sections/moment_obstruction.tex:8
+Hypothèses/objets : m≥3 et 0≤a≤1 dans le texte ; le type permet 0≤a≤2. qLaw et pLaw sont de vraies ProbabilityMeasure construites à partir des masses, pas des certificats de positivité supposés.
+Comparaison : qMass=quadraticMass(1,a), epsilon=(1−a/2)e^(−1)/(2m!) et pMass=qMass+epsilon Δ^m. L’endpoint donne les dominations ponctuelles 1/2 et 3/2, les moments factoriels inchangés pour tout j≠m et la distance totale variation exacte. Pour chaque t réel, il conclut l’intégrabilité exponentielle et le majorant (3/2)exp(e^t−1)[1+(e^t−1)²], indépendant de m,a. La propriété de probabilité est portée par les objets construits ; les identités de mesures signées sont prouvées dans MomentObstructionMass.
+Type lu : PaperP1.MomentObstruction.companion_T23_1_extended — PaperP1/Probability/MomentObstruction.lean:84
+Définitions ouvertes : PaperP1/Probability/MomentObstructionMass.lean:24; PaperP1/Probability/MomentObstructionMass.lean:30; PaperP1/Probability/MomentObstructionMass.lean:108
+Correction nécessaire : aucune confirmée.

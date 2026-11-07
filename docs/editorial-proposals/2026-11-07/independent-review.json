@@ -1,0 +1,225 @@
+{
+  "status": "complete_frozen",
+  "review_completed_at": "2026-11-07",
+  "repository_head_read": "3df7615af2aa6a2a2bc6856bd4203c401d0434de",
+  "patch_path": "docs/editorial-proposals/2026-11-07/clarifications-and-finite-examples.patch",
+  "patch_sha256": "f2115a6ebec875486979c36ee8c228c63a8637e9ff04dae683153b125d2d101d",
+  "patch_readme_sha256": "9f99efbf8d48506dc08170a9571660a7963572da88be4b66e58879bc5fb84dbb",
+  "parent_validation_sha256": "8601227071fd9e9bc455c40f22cdebb8aa87c51741e16c7e572510df6faef6f4",
+  "overall_verdict": "No mathematical gap or unjustified hypothesis/conclusion confirmed in the final revised patch.",
+  "necessary_corrections": [],
+  "independent_mechanical_checks": {
+    "application": "In-memory exact-context application, no disposable or live source files written by this reviewer.",
+    "all_file_hashes_match_parent_validation": true,
+    "files": [
+      {
+        "path": "manuscripts/paper-p1/v1.8/sources/companion_sections/confinement.tex",
+        "base_sha256": "e4c4fa80f11650be05c8cbba215593a57e1f7411d41d60ccad10291704f0d632",
+        "proposed_sha256": "dc8e6728fb0bd7ab30c07b2ce5402ac3625eddf0b835cf8eac98b2f070270c40",
+        "matches_independent_memory_application": true
+      },
+      {
+        "path": "manuscripts/paper-p1/v1.8/sources/companion_sections/limits_appendix.tex",
+        "base_sha256": "c2da5516c96395fe8d2797f944aeea583ee0e60f5c5c8eed7453c3abdb8ade2e",
+        "proposed_sha256": "4c774549734a145a06e5e4786bc22eef45af607da92389e75b7c7775fcae08c4",
+        "matches_independent_memory_application": true
+      },
+      {
+        "path": "manuscripts/paper-p1/v1.8/sources/companion_sections/uniform_appendix.tex",
+        "base_sha256": "bcc1726be86026b091d6da87e75a442c7d8651128818cba36b9bc33b355a8acb",
+        "proposed_sha256": "894672842e0892daed0f5e97ec522ebaff6a809e0f7f5f01c64c73f4eaf934a5",
+        "matches_independent_memory_application": true
+      },
+      {
+        "path": "manuscripts/paper-p1/v1.8/sources/main_sections/exact_transfer.tex",
+        "base_sha256": "17d5b26150b9d298f38d513495e493b9fd9847b02b297044bcd1a026623a329e",
+        "proposed_sha256": "966467e8ec52ccda0a0d80206ed00387155e53ce154bd27179a65c7dec9b9985",
+        "matches_independent_memory_application": true
+      }
+    ],
+    "numbered_labels_preserved": 167,
+    "changed_numbered_blocks": [
+      "p13:transfer:small-kernels"
+    ]
+  },
+  "method": {
+    "read_only_repository": true,
+    "lean_lake_build_replay_executed_by_reviewer": false,
+    "palomar_action": false,
+    "old_reports_changed": false,
+    "pdf_layout_reviewed": false,
+    "description": "Lecture des cinq ajouts, du contexte TeX, des vrais objets et des corps Lean ; comparaison avec les types déjà compilés des checkpoints0999/1000/1003 et des archives de validation. La validation de mise en page reste à faire après intégration dans une nouvelle version."
+  },
+  "themes": [
+    {
+      "id": "P01",
+      "theme": "Noyaux formel et effectif ; exemple 18/10",
+      "locator": {
+        "source": "manuscripts/paper-p1/v1.8/sources/companion_sections/uniform_appendix.tex",
+        "proposed_line": 348,
+        "patch_line": 42
+      },
+      "additional_locator": {
+        "source": "manuscripts/paper-p1/v1.8/sources/companion_sections/uniform_appendix.tex",
+        "proposed_line": 423,
+        "patch_line": 58
+      },
+      "verdict": "supported",
+      "comparison": "La formule nominale emploie ker(relationMap(jointSystem)), sur les rL lignes formelles : les relations internes et répétitions restent incluses. La formule des images effectives conserve le produit des vraies marginales. Pour 18/10, le système sur neuf bits premiers a rang 9 et un unique témoin affine au cutoff 28, seul 17 négatif ; la masse infinie est 1/512 et le noyau formel a dimension 1. La nullité relative effective du singleton est 0. Le produit 18×24×25×27=540² est exact. Aucune régularité ni positivité initiale n’est ajoutée.",
+      "scope": "L’unicité porte sur le cylindre fini au cutoff 28 ; elle ne dit pas que tous les signes premiers de la réalisation infinie sont déterminés. La dernière phrase maintient explicitement le caractère fini de l’exemple.",
+      "necessary_corrections": [],
+      "proof_interfaces": [
+        {
+          "declaration": "PaperP1.NominalRunReplicaFormula.companion_T22_7",
+          "archive": "docs/validation/manuscript-endpoints-v1.8/compiled/compiled-types.json",
+          "type": "∀ {ι : Type u_1} {κ : Type u_2} [inst : Fintype ι] [inst_1 : Fintype κ] (N Y L : ℕ),\n  0 < L →\n    ∀ (x : ι → ℕ),\n      (∀ (i : ι), x i ∈ PaperP1.Model.dyadicBlock N) →\n        ∀ (color : ι → κ),\n          ∫ (ω : PaperP1.Model.InfiniteRademacher.InfiniteSample),\n              ∏ k,\n                PaperP1.RunReplicaSums.block Y L x color k\n                  ω ∂PaperP1.Model.InfiniteRademacher.infiniteRademacherMeasure =\n            ((2 ^ L)⁻¹ ^ Fintype.card ι *\n                if\n                    PaperP1.Affine.Compatible\n                      (PaperP1.ColoredReplicaMass.jointSystem (Max.max Y (2 * N + L)) Y L x color)\n                      (PaperP1.ColoredReplicaMass.jointRhs fun x => PaperP1.Affine.startRhs L) then\n                  1\n                else 0) *\n              2 ^ PaperP1.NominalRunReplicaFormula.rawKernelDimension (Max.max Y (2 * N + L)) Y L x color",
+          "is_proposition": true
+        },
+        {
+          "declaration": "PaperP1.NominalRunReplicaFormula.heterogeneous_run_formula",
+          "archive": "docs/validation/manuscript-endpoints-v1.8/compiled/compiled-types.json",
+          "type": "∀ {ι : Type u_1} {κ : Type u_2} [inst : Fintype ι] [inst_1 : Fintype κ] {M Y L : ℕ},\n  Y ≤ M →\n    0 < L →\n      ∀ (x : ι → ℕ) (color : ι → κ),\n        (∀ (i : ι), x i + L ≤ M) →\n          ∫ (ω : PaperP1.Model.InfiniteRademacher.InfiniteSample),\n              ∏ k,\n                PaperP1.RunReplicaSums.block Y L x color k\n                  ω ∂PaperP1.Model.InfiniteRademacher.infiniteRademacherMeasure =\n            ((if\n                    PaperP1.Affine.Compatible (PaperP1.ColoredReplicaMass.jointSystem M Y L x color)\n                      (PaperP1.ColoredReplicaMass.jointRhs fun x => PaperP1.Affine.startRhs L) then\n                  1\n                else 0) *\n                ∏ i, PaperP1.Model.InfiniteStarts.infiniteMarginal (x i) L) *\n              2 ^ PaperP1.Affine.relativeNullity (PaperP1.ColoredRelativeFormula.rows M Y L x color)",
+          "is_proposition": true
+        },
+        {
+          "declaration": "PaperP1.IrregularWindowExamples.exact_marginal",
+          "archive": "docs/validation/checkpoint-1003/scope/compiled-types.json",
+          "type": "PaperP1.Model.InfiniteStarts.infiniteMarginal 18 10 = 512⁻¹",
+          "is_proposition": true
+        },
+        {
+          "declaration": "PaperP1.IrregularWindowExamples.raw_relation_dimension",
+          "archive": "docs/validation/checkpoint-1003/scope/compiled-types.json",
+          "type": "Module.finrank PaperP1.Arithmetic.F₂ ↥(PaperP1.Affine.relationMap (PaperP1.Affine.startSystem 28 18 10)).ker = 1",
+          "is_proposition": true
+        },
+        {
+          "declaration": "PaperP1.IrregularWindowExamples.effective_kernel_nominal_fails",
+          "archive": "docs/validation/checkpoint-1003/scope/compiled-types.json",
+          "type": "PaperP1.Model.InfiniteStarts.infiniteMarginal 18 10 ≠\n  (2 ^ 10)⁻¹ * 2 ^ PaperP1.Model.InfiniteStarts.runRelativeNullity 10 {18}",
+          "is_proposition": true
+        },
+        {
+          "declaration": "PaperP1.IrregularWindowExamples.kernel_eq_bot",
+          "archive": "docs/validation/checkpoint-1003/scope/compiled-types.json",
+          "type": "(PaperP1.Affine.startSystem 28 18 10).ker = ⊥",
+          "is_proposition": true
+        },
+        {
+          "declaration": "PaperP1.IrregularWindowExamples.compatible",
+          "archive": "docs/validation/checkpoint-1003/scope/compiled-types.json",
+          "type": "PaperP1.Affine.Compatible (PaperP1.Affine.startSystem 28 18 10) (PaperP1.Affine.startRhs 10)",
+          "is_proposition": true
+        }
+      ]
+    },
+    {
+      "id": "P02",
+      "theme": "Masse homogène ; exemple 3/7",
+      "locator": {
+        "source": "manuscripts/paper-p1/v1.8/sources/companion_sections/confinement.tex",
+        "proposed_line": 218,
+        "patch_line": 7
+      },
+      "verdict": "supported_after_terminology_clarification",
+      "comparison": "Le second membre nul définit la vraie probabilité infiniteStartBits=0 ; il remplace la prescription affine originale, il ne s’y ajoute pas. Le carré 4 impose bit3=0, puis 6=2×3 impose bit2=0, contradictoire avec le bord affine de StartEvent 3,7. Le système homogène admet le témoin tout nul et sa probabilité est strictement positive. La phrase révisée évite toute affirmation d’inclusion des événements.",
+      "scope": "Le changement suggéré pendant cette lecture a été intégré au diff examiné : « with zero right-hand side in place of the affine start prescription ». Aucun raccord restant nécessaire.",
+      "necessary_corrections": [],
+      "proof_interfaces": [
+        {
+          "declaration": "PaperP1.DensePrimitiveHomogeneousMass.companion_T8_2",
+          "archive": "docs/validation/manuscript-endpoints-v1.8/compiled/compiled-types.json",
+          "type": "∀ (C η ε : ℝ),\n  0 < η →\n    0 < ε →\n      ∃ N₀,\n        3 ≤ N₀ ∧\n          ∀ N ≥ N₀,\n            ∀ (L : ℕ),\n              |↑L - Real.log ↑N / Real.log 2| ≤ C →\n                (∀ (F : Finset (Finset ℕ)),\n                    (∀ I ∈ F,\n                        I ⊆ PaperP1.Model.dyadicBlock N ∧\n                          I.card = 3 ∧\n                            PaperP1.ConnectedWindowFamilies.Primitive L I ∧\n                              η * ↑(L + 1) ≤ ↑(PaperP1.Model.InfiniteStarts.runRelativeNullity L I)) →\n                      ↑F.card ≤ ↑N ^ ε ∧ PaperP1.DensePrimitiveHomogeneousMass.mass F L ≤ ↑N ^ (-2 + ε)) ∧\n                  ∀ (F : Finset (Finset ℕ)),\n                    (∀ I ∈ F,\n                        I ⊆ PaperP1.Model.dyadicBlock N ∧ I.card = 3 ∧ PaperP1.ConnectedWindowFamilies.Primitive L I) →\n                      ∑ I ∈ F, |PaperP1.Model.InfiniteStarts.infiniteCenteredCoefficient L I| ≤ ↑N ^ (-3 / 2 + ε)",
+          "is_proposition": true
+        },
+        {
+          "declaration": "PaperP1.IrregularWindowExamples.homogeneous_positive_original_zero",
+          "archive": "docs/validation/checkpoint-1003/scope/compiled-types.json",
+          "type": "0 < PaperP1.HomogeneousRunMass.probability 7 {3} ∧ PaperP1.Model.InfiniteStarts.infiniteMarginal 3 7 = 0",
+          "is_proposition": true
+        }
+      ]
+    },
+    {
+      "id": "P03",
+      "theme": "Seuil H hérité dans 15.4",
+      "locator": {
+        "source": "manuscripts/paper-p1/v1.8/sources/main_sections/exact_transfer.tex",
+        "proposed_line": 211,
+        "patch_line": 79
+      },
+      "verdict": "supported_inherited_context",
+      "comparison": "La borne à deux petits noyaux exige H≤D(L+1) avec D fixé avant le seuil, dans SmallKernelWindows.critical_two_count. Le rappel H=C_D B, B=L+1, spécialise exactement cette portée. Le choix H=C_D B dominant les diamètres est déjà imprimé dans main_sections/half_counts.tex:42 et est repris pour la compression dans exact_transfer.tex:181. Il ne faut pas lire la borne comme uniforme en un seuil H arbitrairement grand.",
+      "scope": "Seul bloc numéroté modifié ; rappel d’une condition de contexte, sans nouveau compte ni suppression d’un cas auparavant couvert sous ce contexte. q≥0 est une restriction permise puisque le type conclut même pour tout q réel.",
+      "necessary_corrections": [],
+      "proof_interfaces": [
+        {
+          "declaration": "PaperP1.SmallKernelWindows.critical_two_count",
+          "archive": "docs/validation/manuscript-v1.8/compiled-types.json",
+          "type": "∀ (D C ε : ℝ),\n  0 ≤ D →\n    0 < ε →\n      ∃ N₀,\n        ∀ N ≥ N₀,\n          ∀ (L H : ℕ) (q : ℝ),\n            |↑L - Real.log ↑N / Real.log 2| ≤ C →\n              ↑H ≤ D * ↑(L + 1) → ↑(PaperP1.SmallKernelWindowSets.twoWindows N L H q).card ≤ ↑N ^ (q + ε)",
+          "is_proposition": true
+        }
+      ]
+    },
+    {
+      "id": "P04",
+      "theme": "Cutoff de taille fixé avant epsilon",
+      "locator": {
+        "source": "manuscripts/paper-p1/v1.8/sources/main_sections/exact_transfer.tex",
+        "proposed_line": 504,
+        "patch_line": 89
+      },
+      "verdict": "supported_quantifier_strengthening_already_proved",
+      "comparison": "Pour a<2, a′=(a+2)/2<2 et ε′=(2−a)/4>0 sont fixés. Leur exposant vaut −a−(2−a)/4<−a. Le seuil absorbe donc aussi toute constante implicite et donne N^(−a). D,Q,C,v,a précèdent le choix commun de s et N₀ dans uniform_tail ; article_15_8_fixed_cutoff place explicitement ∃s avant ∀ε>0. Les poids sont les vraies marginales hétérogènes ; le bloc comprimé garde son seul poids nominal vp.",
+      "scope": "Le même cutoff est un cutoff de taille TOTALE : s fenêtres ordinaires ou un bloc comprimé et au moins s−1 fenêtres. La largeur comprimée D et le domaine de centres O(N) sont fixes. Aucun endpoint a=2 ni type de largeur croissante n’est affirmé.",
+      "necessary_corrections": [],
+      "proof_interfaces": [
+        {
+          "declaration": "PaperP1.FixedCutoffIndependentTail.uniform_tail",
+          "archive": "docs/validation/checkpoint-1000/scope/compiled-types.json",
+          "type": "∀ (D Q : ℕ),\n  1 ≤ D →\n    2 ≤ Q →\n      ∀ (C v a : ℝ),\n        0 < v →\n          a < 2 →\n            ∃ s,\n              3 ≤ s ∧\n                ∃ N₀,\n                  10 ≤ N₀ ∧\n                    ∀ N ≥ N₀,\n                      ∀ (L : ℕ),\n                        |↑L - Real.log ↑N / Real.log 2| ≤ C →\n                          PaperP1.IndependentFullSupportTail.mass (PaperP1.Model.dyadicBlock N) L s v ≤ ↑N ^ (-a) ∧\n                            ∀ (U : ℕ → Finset ℕ),\n                              (∀ x ∈ Finset.Ico 2 (Q * N + 2),\n                                  U x ⊆ PaperP1.NormalizedWindowSets.values x (D * (L + 1))) →\n                                PaperP1.BoundedBlockIndependentTail.mass Q N L (s - 1) v U ≤ ↑N ^ (-a)",
+          "is_proposition": true
+        },
+        {
+          "declaration": "PaperP1.FixedCutoffIndependentTail.article_15_8_fixed_cutoff",
+          "archive": "docs/validation/checkpoint-1000/scope/compiled-types.json",
+          "type": "∀ (D Q : ℕ),\n  1 ≤ D →\n    2 ≤ Q →\n      ∀ (C v a : ℝ),\n        0 < v →\n          a < 2 →\n            ∃ s,\n              3 ≤ s ∧\n                ∀ (ε : ℝ),\n                  0 < ε →\n                    ∃ N₀,\n                      10 ≤ N₀ ∧\n                        ∀ N ≥ N₀,\n                          ∀ (L : ℕ),\n                            |↑L - Real.log ↑N / Real.log 2| ≤ C →\n                              PaperP1.IndependentFullSupportTail.mass (PaperP1.Model.dyadicBlock N) L s v ≤\n                                  ↑N ^ (-a + ε) ∧\n                                ∀ (U : ℕ → Finset ℕ),\n                                  (∀ x ∈ Finset.Ico 2 (Q * N + 2),\n                                      U x ⊆ PaperP1.NormalizedWindowSets.values x (D * (L + 1))) →\n                                    PaperP1.BoundedBlockIndependentTail.mass Q N L (s - 1) v U ≤ ↑N ^ (-a + ε)",
+          "is_proposition": true
+        }
+      ]
+    },
+    {
+      "id": "P05",
+      "theme": "Rang exact dix du cylindre N=18,q=3",
+      "locator": {
+        "source": "manuscripts/paper-p1/v1.8/sources/companion_sections/limits_appendix.tex",
+        "proposed_line": 517,
+        "patch_line": 27
+      },
+      "verdict": "supported_exact_event_probability_only",
+      "comparison": "Les valeurs 27,32,30,28,22,26,34,23,29,31 forcent successivement les bits 3,2,5,7,11,13,17,23,29,31 du noyau homogène. Le seul bit libre est 19, donc dimension du noyau1 et rang 10 sur onze bits. La compatibilité affine est prouvée ; forcing_solution_count donne deux échantillons et exact_forcing_probability leur masse 1/1024. Les cinq starts forcés conduisent uniquement à la minoration exp(5t)/1024 des deux moments complets, pour t≥0 hérité du paragraphe précédent.",
+      "scope": "La probabilité exacte concerne l’événement de forçage, pas la loi complète du compte ni ses moments. Le patch garde « at least » et n’annonce aucun rang général ni seuil asymptotique nouveau.",
+      "necessary_corrections": [],
+      "proof_interfaces": [
+        {
+          "declaration": "PaperP1.ExactRankPrimeCylinderExample.exact_rank",
+          "archive": "docs/validation/checkpoint-0999/scope/compiled-types.json",
+          "type": "PaperP1.RankChargedPrimeCylinder.retainedRank 18 3 = 10",
+          "is_proposition": true
+        },
+        {
+          "declaration": "PaperP1.ExactRankPrimeCylinderExample.forcing_solution_count",
+          "archive": "docs/validation/checkpoint-0999/scope/compiled-types.json",
+          "type": "Nat.card\n    (PaperP1.Affine.Solution (PaperP1.RankChargedPrimeCylinder.system 36 (PaperP1.ValuationPrimeCylinder.starts 18 3) 2)\n      (PaperP1.RankChargedPrimeCylinder.rhs (PaperP1.ValuationPrimeCylinder.starts 18 3) 2)) =\n  2",
+          "is_proposition": true
+        },
+        {
+          "declaration": "PaperP1.ExactRankPrimeCylinderExample.exact_forcing_probability",
+          "archive": "docs/validation/checkpoint-0999/scope/compiled-types.json",
+          "type": "PaperP1.Affine.uniformSolutionMass\n    (PaperP1.RankChargedPrimeCylinder.system 36 (PaperP1.ValuationPrimeCylinder.starts 18 3) 2)\n    (PaperP1.RankChargedPrimeCylinder.rhs (PaperP1.ValuationPrimeCylinder.starts 18 3) 2) =\n  1024⁻¹",
+          "is_proposition": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,241 @@
+{
+  "documentary_snapshot": "bd7c818e51161bab34607fd433d3348bef1aa2bb",
+  "scope": "Historical index checks as published at this snapshot; paths and hashes inside these records refer to that snapshot, not the later mutable index files.",
+  "records": {
+    "controls.json": {
+      "checked_at_utc": "2026-11-07T13:15:53.864984+00:00",
+      "proof_source_commit": "08f019df4d33a817377e5c937356fe4d87ae08e1",
+      "checker_sha256": "a44d3ee1637bc0919ecd173c625c0bb6f1e293232fb4c4f9f13d633e0b0045e6",
+      "index_sha256": "5ffca4d673633f45bb802e36c7a66b44b94e74277afc252f1d7ce1e47e93e602",
+      "positive_control": {
+        "actual": "accepted",
+        "results": 167,
+        "main": 73,
+        "companion": 94,
+        "distinct_proof_interfaces": 261,
+        "objects_not_proof_evidence": 3
+      },
+      "negative_controls": [
+        {
+          "case": "omit_one_numbered_result",
+          "expected": "reject",
+          "actual": "rejected",
+          "reason": "The proof-entry index must cover every one of the 167 labels once",
+          "real_repository_modified": false
+        },
+        {
+          "case": "drop_unrestricted_moderate_clause_15_11",
+          "expected": "reject",
+          "actual": "rejected",
+          "reason": "A reviewed dense-result clause or inherited premise was dropped: p13:transfer:anchor-budgets",
+          "real_repository_modified": false
+        },
+        {
+          "case": "erase_fixed_D_window_context_15_4",
+          "expected": "reject",
+          "actual": "rejected",
+          "reason": "A reviewed dense-result clause or inherited premise was dropped: p13:transfer:small-kernels",
+          "real_repository_modified": false
+        },
+        {
+          "case": "erase_printed_conditional_premise_15_13",
+          "expected": "reject",
+          "actual": "rejected",
+          "reason": "A printed conditional premise was relabelled: p13:transfer:finite",
+          "real_repository_modified": false
+        },
+        {
+          "case": "corrupt_compiled_type_digest",
+          "expected": "reject",
+          "actual": "rejected",
+          "reason": "Compiled theorem type changed: PaperP1.OptimalQuadratic.article_1_1",
+          "real_repository_modified": false
+        },
+        {
+          "case": "substitute_mathematical_object_for_proof",
+          "expected": "reject",
+          "actual": "rejected",
+          "reason": "A reviewed canonical clause or inherited premise was dropped: p1:thm:main",
+          "real_repository_modified": false
+        },
+        {
+          "case": "compiled_entry_is_not_a_theorem",
+          "expected": "reject",
+          "actual": "rejected",
+          "reason": "Entry is not a source-audited compiled theorem: PaperP1.OptimalQuadratic.article_1_1",
+          "real_repository_modified": false
+        }
+      ],
+      "status": "passed",
+      "scope": "Identity and recorded scope-binding controls on altered in-memory copies; not semantic TeX parsing or mathematical certification."
+    },
+    "static-checks.json": {
+      "proof_source_commit": "08f019df4d33a817377e5c937356fe4d87ae08e1",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "endpoint_scope",
+          "command": [
+            "python3",
+            "scripts/check_manuscript_endpoints.py"
+          ],
+          "actual_exit_code": 0,
+          "output": "Verified 138 manifest entries and 167 numbered results.\nScope: source integrity and inventory only, not mathematical proof certification.\nVerified 48 revised TeX source hashes and 167 revised statements.\nExactly two original statements corrected; revised proofs: 167/167.\nOriginal v1.6 identities and false-original statuses remain preserved.\nVerified 48 v1.8 source hashes and all 167 numbered results.\nExplicit comparisons: 7 strengthened/reworded statements; 167/167 proved.\nAll 18 unnumbered scientific claims have source-bound compiled proof correspondence.\nBoth earlier manuscript versions and the two false-original statuses are preserved.\nScope: source identity and recorded correspondence; hashes alone are not a semantic proof.\nVerified all 167 source-bound proof-entry bundles: 73 article and 94 companion results.\nActual compiled interfaces: 261 theorems; 3 separate mathematical definitions.\nScope: source/type identity and recorded AI-assisted clause review; not a machine proof of TeX-to-Lean translation, human review or Palomar registration.\n"
+        },
+        {
+          "name": "source_rules",
+          "command": [
+            "python3",
+            "scripts/check_sources.py"
+          ],
+          "actual_exit_code": 0,
+          "output": "Verified 138 manifest entries and 167 numbered results.\nScope: source integrity and inventory only, not mathematical proof certification.\n"
+        },
+        {
+          "name": "audit_inventory",
+          "command": [
+            "python3",
+            "scripts/update_audit.py",
+            "--check"
+          ],
+          "actual_exit_code": 0,
+          "output": "Axiom audit covers all 19975 project theorems and lemmas.\n"
+        },
+        {
+          "name": "palomar_source_limits",
+          "command": [
+            "python3",
+            "scripts/check_palomar_sources.py"
+          ],
+          "actual_exit_code": 0,
+          "output": "Local Palomar source scan passed for 4735 Lean files.\nLongest source: PaperP1.lean (4946 lines).\nScope: source regularity, module headers and line limits; full Palomar preflight remains separate.\n"
+        },
+        {
+          "name": "registry_candidates",
+          "command": [
+            "python3",
+            "scripts/check_registry_candidates.py"
+          ],
+          "actual_exit_code": 0,
+          "output": "component comparator/p1_affine_spectra.json: 4 explicit statement holes, complete Solution, Mathlib-only Challenge.\ncomponent comparator/p1_asymmetric_profiles.json: 3 explicit statement holes, complete Solution, Mathlib-only Challenge.\ncomponent comparator/p1_conditioning.json: 4 explicit statement holes, complete Solution, Mathlib-only Challenge.\ncomponent comparator/p1_dependent_expansion.json: 4 explicit statement holes, complete Solution, Mathlib-only Challenge.\ncomponent comparator/p1_exponential_divergence.json: 4 explicit statement holes, complete Solution, Mathlib-only Challenge.\ncomponent comparator/p1_factorial_cumulants.json: 5 explicit statement holes, complete Solution, Mathlib-only Challenge.\ncomponent comparator/p1_integral_curve_count.json: 3 explicit statement holes, complete Solution, Mathlib-only Challenge.\ncomponent comparator/p1_local_rigidity.json: 5 explicit statement holes, complete Solution, Mathlib-only Challenge.\ncomponent comparator/p1_moment_obstruction.json: 5 explicit statement holes, complete Solution, Mathlib-only Challenge.\ncomponent comparator/p1_poisson_reference.json: 4 explicit statement holes, complete Solution, Mathlib-only Challenge.\ncomponent comparator/p1_poisson_scales.json: 5 explicit statement holes, complete Solution, Mathlib-only Challenge.\ncomponent comparator/p1_positional_field.json: 3 explicit statement holes, complete Solution, Mathlib-only Challenge.\ncomponent comparator/p1_prime_cylinders.json: 4 explicit statement holes, complete Solution, Mathlib-only Challenge.\ncomponent comparator/p1_private_obstruction.json: 4 explicit statement holes, complete Solution, Mathlib-only Challenge.\ncomponent comparator/p1_quadratic_approximation.json: 4 explicit statement holes, complete Solution, Mathlib-only Challenge.\ncomponent comparator/p1_quadratic_kernels.json: 4 explicit statement holes, complete Solution, Mathlib-only Challenge.\ncomponent comparator/p1_smooth_windows.json: 3 explicit statement holes, complete Solution, Mathlib-only Challenge.\nregistration comparator/registrations/p1_arithmetic_geometry.json: 12 explicit statement holes, complete Solution, Mathlib-only Challenge.\nregistration comparator/registrations/p1_profiles_smooth.json: 6 explicit statement holes, complete Solution, Mathlib-only Challenge.\nregistration comparator/registrations/p1_affine_conditioning.json: 12 explicit statement holes, complete Solution, Mathlib-only Challenge.\nregistration comparator/registrations/p1_cumulants_obstructions.json: 14 explicit statement holes, complete Solution, Mathlib-only Challenge.\nregistration comparator/registrations/p1_poisson_fields.json: 16 explicit statement holes, complete Solution, Mathlib-only Challenge.\nregistration comparator/registrations/p1_exponential_cylinders.json: 8 explicit statement holes, complete Solution, Mathlib-only Challenge.\nPrepared 6 planned registrations and 68 selected declarations.\nPreserved 17 separately verified components and their 68 original selections.\nSubmission policy: one complete registration cycle at a time.\nScope: preparation checks; no Comparator or Palomar verification is inferred.\n"
+        },
+        {
+          "name": "six_registration_bijection",
+          "command": [
+            "python3",
+            "scripts/check_registry_consolidation.py",
+            "--strict"
+          ],
+          "actual_exit_code": 0,
+          "output": "arithmetic_geometry: exact models, statements, complete proof bodies and source mapping preserved.\nprofiles_smooth: exact models, statements, complete proof bodies and source mapping preserved.\naffine_conditioning: exact models, statements, complete proof bodies and source mapping preserved.\ncumulants_obstructions: exact models, statements, complete proof bodies and source mapping preserved.\npoisson_fields: exact models, statements, complete proof bodies and source mapping preserved.\nexponential_cylinders: exact models, statements, complete proof bodies and source mapping preserved.\nAll 68 selections from 17 original components are preserved in exactly six registrations.\n"
+        },
+        {
+          "name": "historical_receipts",
+          "command": [
+            "python3",
+            "scripts/check_registry_evidence.py",
+            "--require-all"
+          ],
+          "actual_exit_code": 0,
+          "output": "affine_spectra: source identities, preserved logs and 4 selections verified.\nasymmetric_profiles: source identities, preserved logs and 3 selections verified.\nconditioning: source identities, preserved logs and 4 selections verified.\ndependent_expansion: source identities, preserved logs and 4 selections verified.\nexponential_divergence: source identities, preserved logs and 4 selections verified.\nfactorial_cumulants: source identities, preserved logs and 5 selections verified.\nintegral_curve_count: source identities, preserved logs and 3 selections verified.\nlocal_rigidity: source identities, preserved logs and 5 selections verified.\nmoment_obstruction: source identities, preserved logs and 5 selections verified.\npoisson_reference: source identities, preserved logs and 4 selections verified.\npoisson_scales: source identities, preserved logs and 5 selections verified.\npositional_field: source identities, preserved logs and 3 selections verified.\nprime_cylinders: source identities, preserved logs and 4 selections verified.\nprivate_obstruction: source identities, preserved logs and 4 selections verified.\nquadratic_approximation: source identities, preserved logs and 4 selections verified.\nquadratic_kernels: source identities, preserved logs and 4 selections verified.\nsmooth_windows: source identities, preserved logs and 3 selections verified.\naffine_conditioning: source identities, preserved logs and 12 selections verified.\narithmetic_geometry: source identities, preserved logs and 12 selections verified.\ncumulants_obstructions: source identities, preserved logs and 14 selections verified.\nexponential_cylinders: source identities, preserved logs and 8 selections verified.\npoisson_fields: source identities, preserved logs and 16 selections verified.\nprofiles_smooth: source identities, preserved logs and 6 selections verified.\nVerified 6/6 local registration receipts and 68 selected declarations.\nVerified 17/17 local component receipts and 68 selected declarations.\nOnly the six consolidated registrations are planned for submission; the seventeen component receipts remain proof evidence.\nScope: local evidence integrity; complete Palomar workflow and registration remain separate.\n"
+        },
+        {
+          "name": "whitespace",
+          "command": [
+            "git",
+            "diff",
+            "--check"
+          ],
+          "actual_exit_code": 0,
+          "output": ""
+        },
+        {
+          "name": "ubuntu_disk",
+          "command": [
+            "python3",
+            "scripts/check_disk.py"
+          ],
+          "actual_exit_code": 0,
+          "output": "Available: 49.08 GiB; repository on Ubuntu root device: True\n"
+        }
+      ],
+      "scope": "Actual local binding, source, inventory and preserved-evidence checks. The complete Lean build and axiom replay have their own checkpoint1002 record. No Palomar workflow, intake or registration was launched."
+    },
+    "validation.json": {
+      "proof_source_commit": "08f019df4d33a817377e5c937356fe4d87ae08e1",
+      "status": "passed",
+      "numbered_results": 167,
+      "main_results": 73,
+      "companion_results": 94,
+      "compiled_interfaces": {
+        "types": 264,
+        "theorems": 261,
+        "separate_objects": 3,
+        "actual_exit_code": 0
+      },
+      "review_partition": {
+        "independent_canonical": 79,
+        "independent_dense": 9,
+        "parent": 79
+      },
+      "index": {
+        "path": "docs/manuscript-endpoints-v1.8.json",
+        "sha256": "5ffca4d673633f45bb802e36c7a66b44b94e74277afc252f1d7ce1e47e93e602"
+      },
+      "checker": {
+        "path": "scripts/check_manuscript_endpoints.py",
+        "sha256": "a44d3ee1637bc0919ecd173c625c0bb6f1e293232fb4c4f9f13d633e0b0045e6"
+      },
+      "static_checks": {
+        "path": "docs/validation/manuscript-endpoints-v1.8/static-checks.json",
+        "sha256": "0fdb3a22877f9bcaf32e46e3c9cb51025962e5be188d184424a4a91a2f7933e9"
+      },
+      "controls": {
+        "path": "docs/validation/manuscript-endpoints-v1.8/controls.json",
+        "sha256": "c96ae5a8ad4f0b53707f989968de09a3b9858b67575a82278a8aff92b35deac0"
+      },
+      "complete_project_replay": {
+        "path": "docs/validation/checkpoint-1002/validation.json",
+        "sha256": "036ded27008d426ef1e96ba8fb1c13ac418d88f148c4119c195516cd18587e8e"
+      },
+      "compiled_scope": {
+        "path": "docs/validation/manuscript-endpoints-v1.8/compiled/compiled-types.json",
+        "sha256": "6ac3e4eb3a3bc5519edb3903cdf7770e19b01fee2f16faf3dceba8fb4b023c77",
+        "validation": "docs/validation/manuscript-endpoints-v1.8/compiled/compiled-types-validation.json"
+      },
+      "frozen_review_records": [
+        {
+          "path": "docs/reviews/2026-11-07/endpoint-canonical.json",
+          "sha256": "9357b542baff154af31c5909b149306281228a5055a590701b76b5e4a6ac7086"
+        },
+        {
+          "path": "docs/reviews/2026-11-07/endpoint-dense.json",
+          "sha256": "07c268b0ac3ad1541a156b4f2aedde3858c40674131f4ce16355b72533f78bbf"
+        },
+        {
+          "path": "docs/reviews/2026-11-07/post-interface.json",
+          "sha256": "0704261f117c4bbad319b541bb878b5363a8bd5901df762c48ece5b141df8a00"
+        },
+        {
+          "path": "docs/reviews/2026-11-07/endpoint-parent.json",
+          "sha256": "c91ec9c7a2b374e7cbb6bef965b047c05d80ba689ab06885e79e7bd13d3e1c81"
+        }
+      ],
+      "previous_manuscript_types_replayed": {
+        "count": 528,
+        "unchanged": true,
+        "record": "docs/validation/checkpoint-1002/manuscript-replay.json"
+      },
+      "palomar": {
+        "registrations_planned": 6,
+        "original_families": 17,
+        "original_selections": 68,
+        "submission_status": "on_hold_at_user_request",
+        "full_workflow_launched": false,
+        "intake_launched": false,
+        "registry_id": null
+      },
+      "scope": "Actual compiled types and source/review identity checks, with an AI-assisted comparison of meanings. Not a machine proof of TeX semantic equivalence, independent human certification or Palomar registration."
+    }
+  }
+}

@@ -5,20 +5,27 @@ separate the formal row kernel, effective relative nullity and true
 homogeneous probability. The start x=18,L=10 has rank nine, actual
 marginal 2^-9 and raw relation dimension one, while its singleton
 effective relative nullity is zero. The start x=3,L=7 has zero original
-marginal and positive homogeneous mass. The nine theorem prototypes
-compiled without warnings; the complete project replay is pending.
+marginal and positive homogeneous mass. The complete pinned replay passed 18,627 build jobs,
+19,984 theorem axiom checks and 19,907 distinct references, all actual
+exits zero. All 528 prior manuscript types and all 264 proof-entry/object
+types were replayed byte-identically. The proof-source manifest also
+binds the unchanged Lake build configuration. The nine example types
+and proof bodies were also read by the separate review instance.
 These are explanatory certificates, not new false-original statements
 or new registration selections. All frozen TeX/PDF versions remain
 preserved. Palomar submissions remain on hold at the user's request.
 
-The complete v1.8 proof-entry supplement now maps all 167 numbered
+The complete v1.8 proof-entry supplement maps all 167 numbered
 statements to 261 compiled theorem interfaces and three separate
-mathematical definitions. A separate instance reviewed 79 existing
-canonical interfaces and nine dense/counting results; the parent reviewed
-the other 79. Required clauses, signs, finite identities and inherited
-hypotheses are explicit. The two new modules, containing eight theorems in total, were
-also read by the separate instance after compilation. This is an AI-assisted scope
-review, not human certification or a Palomar registration.
+mathematical definitions. The separate review instance has now directly
+compared all 167 labels: the original 79 canonical and nine dense/counting
+comparisons, followed by the remaining 79 results and their 118 distinct
+interfaces. All reports remain frozen at their stated source snapshots;
+their selected source files and compiled types are still unchanged.
+Required clauses, signs, finite identities and inherited hypotheses are
+explicit. The two replica/homogeneous modules, containing eight theorems,
+were also read separately after compilation. This is an AI-assisted
+scope review, not human certification or a Palomar registration.
 
 Historical checkpoint P1-MATH-1002: The complete dense-primitive-triple
 statement now has a single exact interface for its homogeneous mass,

@@ -1,0 +1,164 @@
+{
+  "status": "complete_frozen",
+  "review_completed_at": "2026-11-07",
+  "source_commit": "3df7615af2aa6a2a2bc6856bd4203c401d0434de",
+  "repository_root": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/paper-p1-lean",
+  "review_method": "Lecture complète des neuf corps de théorèmes, de leurs types compilés et des définitions des événements, rangs, relationMap et probabilités homogènes. Aucun Lean/Lake, build, replay ou acte Palomar exécuté par cette instance.",
+  "source_sha256": "bf336335dfe0b1379565c3fac239eed75384c9bcd310287f3717d82a6c7fc167",
+  "compiled_scope": {
+    "path": "docs/validation/checkpoint-1003/scope/compiled-types.json",
+    "sha256": "5b92a35388bcb546ca467f378dcbef5e77c0b26d24303618b59209e74121b80a",
+    "records": 9,
+    "actual_exit_in_parent_validation": 0,
+    "all_propositions_standard_axioms_only_in_parent_validation": true,
+    "reviewer_executed_validation": false
+  },
+  "summary": {
+    "mathematical_gaps_confirmed": 0,
+    "numbered_manuscript_results_changed": 0,
+    "conclusion": "Les deux exemples sont fidèles au modèle réel et aux distinctions déjà identifiées. Ils ne constituent ni une troisième erreur originale, ni une nouvelle assertion asymptotique.",
+    "interpretation": [
+      "x=18,L=10 : rang 9, marginale 1/512, noyau des relations formelles de dimension1 et nullité effective relative du singleton 0.",
+      "x=3,L=7 : marginale originale 0, probabilité de l’événement homogène strictement positive."
+    ]
+  },
+  "editorial_raccords": [
+    {
+      "importance": "terminology_only",
+      "file": "docs/IRREGULAR_WINDOW_EXAMPLES.md",
+      "line": 15,
+      "proposal": "Conserver les domaines dans les désignations : noyau de startSystem sur les bits premiers, noyau de relationMap sur les lignes formelles, puis nullité relative de la famille des images effectives. Le texte actuel les distingue correctement."
+    },
+    {
+      "importance": "optional_illustration",
+      "proposal": "Ces exemples peuvent accompagner le glossaire brut/effectif de T22.7 et le distinguo masse homogène/affine de T8.2, avec les paramètres numériques explicites et sans prétention à un domaine asymptotique."
+    }
+  ],
+  "definitions_opened": [
+    "PaperP1/Model/FiniteRademacher.lean:89",
+    "PaperP1/Affine/StartSystem.lean:48",
+    "PaperP1/Affine/StartSystem.lean:53",
+    "PaperP1/Model/StartProbability.lean:21",
+    "PaperP1/Affine/Fourier.lean:169",
+    "PaperP1/Model/HomogeneousRunMass.lean:26",
+    "PaperP1/Model/HomogeneousRunMass.lean:29",
+    "PaperP1/Model/HomogeneousRunMass.lean:92",
+    "PaperP1/Model/OneNegativePrime.lean:17",
+    "PaperP1/Model/OneNegativePrime.lean:42"
+  ],
+  "results": [
+    {
+      "declaration": "PaperP1.IrregularWindowExamples.kernel_eq_bot",
+      "file": "PaperP1/Model/IrregularWindowExamples.lean",
+      "line": 37,
+      "compiled_type": "(PaperP1.Affine.startSystem 28 18 10).ker = ⊥",
+      "is_proposition": true,
+      "verdict": "aligned_no_gap_confirmed",
+      "certainty": "high",
+      "objects_and_quantifiers": "M=28,x=18,L=10 ; aucune hypothèse supplémentaire.",
+      "body_comparison": "Le noyau de startSystem agit sur les neuf bits premiers≤28. Le corps force successivement les bits de 2,3,5,7,11,13,17,19,23 à zéro à partir des dix équations homogènes. Ce noyau nul est celui des échantillons premiers, distinct du noyau des relations entre lignes.",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.IrregularWindowExamples.exact_rank",
+      "file": "PaperP1/Model/IrregularWindowExamples.lean",
+      "line": 113,
+      "compiled_type": "PaperP1.Model.startRank 28 18 10 = 9",
+      "is_proposition": true,
+      "verdict": "aligned_no_gap_confirmed",
+      "certainty": "high",
+      "objects_and_quantifiers": "Paramètres numériques fermés ; les neuf premiers sont ceux de l’intervalle≤28.",
+      "body_comparison": "Le rang9 est déduit du noyau nul et du cardinal exactement9 du domaine PrimeUpTo 28. Il ne désigne ni la dimension du noyau formel ni la nullité effective relative.",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.IrregularWindowExamples.compatible",
+      "file": "PaperP1/Model/IrregularWindowExamples.lean",
+      "line": 119,
+      "compiled_type": "PaperP1.Affine.Compatible (PaperP1.Affine.startSystem 28 18 10) (PaperP1.Affine.startRhs 10)",
+      "is_proposition": true,
+      "verdict": "aligned_no_gap_confirmed",
+      "certainty": "high",
+      "objects_and_quantifiers": "Système fini à cutoff 28, prescription originale startRhs 10 (bord 1, intérieur 0).",
+      "body_comparison": "Le témoin est le véritable échantillon dont seul le premier17 a un bit1. Il donne un start positif à 18 de longueur16, puis la restriction à longueur 10 satisfait startRhs 10. La compatibilité n’est donc pas une prémisse présupposée.",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.IrregularWindowExamples.exact_marginal",
+      "file": "PaperP1/Model/IrregularWindowExamples.lean",
+      "line": 126,
+      "compiled_type": "PaperP1.Model.InfiniteStarts.infiniteMarginal 18 10 = 512⁻¹",
+      "is_proposition": true,
+      "verdict": "aligned_no_gap_confirmed",
+      "certainty": "high",
+      "objects_and_quantifiers": "Vraie marginale originale, sans régularité locale ni remplacement par2^(−L).",
+      "body_comparison": "Le transfert du cylindre à la vraie marginale infinie est appliqué àx+L≤28. Compatibilité et rang9 sont les théorèmes précédents ; la masse est exactement2^(−9)=1/512.",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.IrregularWindowExamples.raw_relation_dimension",
+      "file": "PaperP1/Model/IrregularWindowExamples.lean",
+      "line": 131,
+      "compiled_type": "Module.finrank PaperP1.Arithmetic.F₂ ↥(PaperP1.Affine.relationMap (PaperP1.Affine.startSystem 28 18 10)).ker = 1",
+      "is_proposition": true,
+      "verdict": "aligned_no_gap_confirmed",
+      "certainty": "high",
+      "objects_and_quantifiers": "M=28,x=18,L=10 ; relationMap a pour domaine les coefficients des dix lignes.",
+      "body_comparison": "Le noyau est ici ker(relationMap(startSystem)), donc le noyau sur les dix coordonnées formelles des lignes. La formule affine nominale et la masse1/512 donnent dimension1. Le type ne confond pas ce noyau avec celui, nul, de startSystem sur les bits premiers.",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.IrregularWindowExamples.effective_kernel_nominal_fails",
+      "file": "PaperP1/Model/IrregularWindowExamples.lean",
+      "line": 148,
+      "compiled_type": "PaperP1.Model.InfiniteStarts.infiniteMarginal 18 10 ≠\n  (2 ^ 10)⁻¹ * 2 ^ PaperP1.Model.InfiniteStarts.runRelativeNullity 10 {18}",
+      "is_proposition": true,
+      "verdict": "aligned_no_gap_confirmed",
+      "certainty": "high",
+      "objects_and_quantifiers": "runRelativeNullity 10 {18}, et non noyau formel de dimension1.",
+      "body_comparison": "La nullité relative effective d’une famille singleton est nulle par nullity_singleton. Le membre droit vaut donc1/1024, différent de1/512. Le contre-exemple réfute exactement la substitution du noyau effectif dans une formule gardant le facteur nominal, sans réfuter la formule brute correcte de T22.7.",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.IrregularWindowExamples.short_window_impossible",
+      "file": "PaperP1/Model/IrregularWindowExamples.lean",
+      "line": 155,
+      "compiled_type": "∀ {M : ℕ} (σ : PaperP1.Model.SampleSpace M), ¬PaperP1.Model.StartEvent (PaperP1.Model.valueBit σ) 3 7",
+      "is_proposition": true,
+      "verdict": "aligned_no_gap_confirmed",
+      "certainty": "high",
+      "objects_and_quantifiers": "∀M,∀σ:SampleSpace M ; événement original StartEvent3,7.",
+      "body_comparison": "Pour tout cutoffM et tout échantillon, le carré4 force le bit commun des valeurs3,…,9 à zéro. La valeur6=2×3 force alors le bit2 à zéro. Le bord entre 2 et 3 devrait avoir bit1 : contradiction. Le type est universel en M et σ.",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.IrregularWindowExamples.zero_marginal",
+      "file": "PaperP1/Model/IrregularWindowExamples.lean",
+      "line": 170,
+      "compiled_type": "PaperP1.Model.InfiniteStarts.infiniteMarginal 3 7 = 0",
+      "is_proposition": true,
+      "verdict": "aligned_no_gap_confirmed",
+      "certainty": "high",
+      "objects_and_quantifiers": "x=3,L=7,cutoff10=x+L ; vraie infiniteMarginal.",
+      "body_comparison": "L’impossibilité précédente élimine la compatibilité de startSystem10,3,7 avec startRhs7. Le transfert fini/infini donne la vraie marginale originale nulle. La nullité ne résulte pas d’un poids défini artificiellement à zéro.",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.IrregularWindowExamples.homogeneous_positive_original_zero",
+      "file": "PaperP1/Model/IrregularWindowExamples.lean",
+      "line": 177,
+      "compiled_type": "0 < PaperP1.HomogeneousRunMass.probability 7 {3} ∧ PaperP1.Model.InfiniteStarts.infiniteMarginal 3 7 = 0",
+      "is_proposition": true,
+      "verdict": "aligned_no_gap_confirmed",
+      "certainty": "high",
+      "objects_and_quantifiers": "HomogeneousRunMass.probability 7 {3} ; aucune compatibilité, régularité ou positivité des marginales originales en prémisse.",
+      "body_comparison": "Le premier membre est la probabilité réelle de infiniteStartBits=0, dont la positivité est prouvée par probability_rank dans HomogeneousRunMass. Le second est la marginale affine originale nulle établie plus haut. L’événement homogène demande que le bord et l’intérieur aient le même signe ; il diffère du start original.",
+      "necessary_corrections": []
+    }
+  ],
+  "limits": [
+    "Comparaison des types et des corps des neuf théorèmes ; pas de nouveau replay exécuté.",
+    "Le calcul arithmétique 18×24×25×27=540² de la note est exact ; il n’est pas présenté comme un dixième théorème nommé du module.",
+    "Le rapport des 79 et les rapports antérieurs restent inchangés."
+  ]
+}

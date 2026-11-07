@@ -202,8 +202,8 @@
   "scope": "Selective integration of existing stronger results and a newly exposed individual anchored-witness interface. The 167 labels and actual typeset numbers are preserved. The two necessary v1.7 corrections are distinguished from v1.8 strengthenings.",
   "palomar_submission_status": "on_hold_at_user_request",
   "latest_proof_replay": {
-    "source_commit": "08f019df4d33a817377e5c937356fe4d87ae08e1",
-    "validation_record": "docs/validation/checkpoint-1002/validation.json",
+    "source_commit": "3df7615af2aa6a2a2bc6856bd4203c401d0434de",
+    "actual_exit_code": 0,
     "compiled_types_replayed": 528,
     "compiled_propositions_reaudited": 485,
     "all_prior_compiled_type_bytes_identical": true,
@@ -222,6 +222,7 @@
       "compiled_types_sha256": "3320385e4f340b28fc10a8e9253e45c8aba8246034f779b0d9608d243d8c3aeb",
       "log_sha256": "c84f0beb7071cb9aaff0ef3dbdfe88662575b663ac7b2c1aa8989b9063bc4ea7"
     },
+    "validation_record": "docs/validation/checkpoint-1003/validation.json",
     "manuscript_sources_and_pdfs_unchanged": true
   }
 }

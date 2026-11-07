@@ -3,7 +3,8 @@
 Cette note complète la [relecture initiale](reviews/2026-11-07/RAPPORT_FR.txt)
 et les améliorations déjà intégrées à la [version 1.8](MANUSCRIPT_REVISION_V1_8.md).
 Elle porte sur les précisions apparues pendant l'examen des 167 faisceaux
-de preuves, jusqu'à la source Lean `08f019df4d33a817377e5c937356fe4d87ae08e1`.
+de preuves, complétées par les exemples vérifiés à la source Lean
+`3df7615af2aa6a2a2bc6856bd4203c401d0434de`.
 Les sources et PDF v1.8 sont conservés. Les textes anglais ci-dessous sont
 des propositions pour une révision ultérieure ; ils ne sont pas annoncés
 comme déjà intégrés aux PDF.
@@ -37,6 +38,10 @@ ferme la formule seule. Conserver les preuves distinctes de propagation
 positive et de moments dans l'index ; ne pas attribuer toute T22.7 à cet
 alias de formule.
 
+L'[exemple exact x=18,L=10](IRREGULAR_WINDOW_EXAMPLES.md) peut illustrer
+ce choix de notation : sa probabilité réelle vaut 2^(-9), son noyau formel
+a dimension un et sa nullité relative effective de singleton vaut zéro.
+
 ## 2. T8.2 : séparer les deux masses
 
 Pour les [triplets primitifs denses](../manuscripts/paper-p1/v1.8/sources/companion_sections/confinement.tex#L191),
@@ -54,6 +59,10 @@ Proposition de texte pour la preuve :
 `DensePrimitiveHomogeneousMass.companion_T8_2` ferme maintenant les trois
 clauses imprimées sous un seuil commun. Le théorème précédent sur le poids
 affine reste un résultat distinct et valide.
+
+Le même [dossier d'exemples](IRREGULAR_WINDOW_EXAMPLES.md) prouve qu'à
+x=3,L=7 la marginale originale est nulle tandis que la probabilité
+homogène est positive. Il rend concrète la distinction entre ces objets.
 
 ## 3. 15.8 : rendre visibles les quantificateurs
 
@@ -128,6 +137,33 @@ est un transfert à partir des 254 ordres fixés 3<=r<=256, pour beta fixé
 dans 1<beta<=4/3. Sa preuve est une implication complète ; il ne faut pas
 la reformuler comme une estimation sans sa prémisse d'activités connexes.
 La formalisation conserve exactement cette distinction.
+
+## Compléments de la dernière relecture indépendante
+
+Le [rapport des 79 derniers résultats](reviews/2026-11-07/endpoint-remaining79.json)
+complète l'examen direct des 167 labels, sans nouvelle lacune mathématique
+confirmée. Il propose aussi de rendre trois conventions plus visibles :
+
+- **7.2** : les listes ordonnées comptées sont injectives. La formulation
+  « ordered lists of r distinct original windows » explicite cette convention.
+- **13.4** : l'interface représente une courbe affine par l'idéal homogène
+  premier de sa clôture projective, avec polynôme de Hilbert de degré un.
+  Décrire ce raccord dans l'index évite de donner une lecture trop littérale
+  du nom de la variable Lean.
+- **T1.9** : le seuil premier agrandi domine le diamètre normalisé. Dans la
+  dernière clause, les paramètres de canal et de largeur sont fixés et
+  le cutoff vérifie 2 radius(max(a,b),L)<=H<=DB. Le terme « enlarged »
+  doit conserver ce sens lors d'une réécriture.
+
+Ces points explicitent les objets et hypothèses hérités déjà examinés ;
+ils ne sont pas classés comme de nouveaux énoncés originaux faux.
+Le [patch de cinq propositions](editorial-proposals/2026-11-07/README.md)
+donne une première modification concrète de quatre fichiers TeX, appliquée
+uniquement à une copie jetable et conservant les 167 labels.
+Une [relecture indépendante du diff](editorial-proposals/2026-11-07/independent-review.json)
+a confirmé les cinq thèmes et les quatre empreintes proposées. La précision
+sur le second membre nul des événements homogènes y est intégrée ; aucun
+PDF de cette proposition n'a encore été construit ou inspecté.
 
 ## Documents à transmettre à une nouvelle instance
 

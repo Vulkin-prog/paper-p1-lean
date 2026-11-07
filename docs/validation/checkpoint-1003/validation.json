@@ -1,0 +1,50 @@
+{
+  "checkpoint": "P1-MATH-1003",
+  "source_commit": "3df7615af2aa6a2a2bc6856bd4203c401d0434de",
+  "status": "passed",
+  "full_build_jobs": 18627,
+  "audited_theorems": 19984,
+  "substantive_theorems": 19556,
+  "preserved_component_solution_theorems": 214,
+  "consolidated_solution_theorems": 214,
+  "distinct_checked_references": 19907,
+  "actual_process_exit_codes": {
+    "build": 0,
+    "audit": 0,
+    "references": 0
+  },
+  "toolchain": "leanprover/lean4:v4.36.0-rc2",
+  "mathlib_commit": "9d581dfff2e41de989072ea63abf3daf69311520",
+  "permitted_kernel_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "logs": [
+    {
+      "kind": "build",
+      "path": "docs/validation/checkpoint-1003/build.log.gz",
+      "sha256_gzip": "ece2d00db926831019eeccc32b35b1b35f5233727b2ad54a648cbae7916d5469"
+    },
+    {
+      "kind": "audit",
+      "path": "docs/validation/checkpoint-1003/audit.log.gz",
+      "sha256_gzip": "18deb0cb0a6416c2967a794e479a3e8160b56f283ba0988f43568bf108304414"
+    },
+    {
+      "kind": "references",
+      "path": "docs/validation/checkpoint-1003/references.log.gz",
+      "sha256_gzip": "4f92ee16bfd1e6bfa954ec2ccfc3c12392f1d537c24db57986c0eb9a2ad048b6"
+    }
+  ],
+  "compiled_scope": {
+    "path": "docs/validation/checkpoint-1003/scope/compiled-types.json",
+    "actual_exit_code": 0,
+    "replay_source_commit": "3df7615af2aa6a2a2bc6856bd4203c401d0434de"
+  },
+  "scope": "Nine concrete irregular-window certificates: exact rank9, actual marginal2^-9 and raw relation dimension1 at x18,L10, failure of nominal weight with singleton effective relative nullity, and original zero versus positive homogeneous mass at x3,L7. All frozen manuscripts, 167 result identities and six registry selections remain preserved. No new false-original statement or asymptotic scope is asserted.",
+  "independent_scope_read": {
+    "path": "docs/reviews/2026-11-07/irregular-examples.json",
+    "sha256": "540583bd07281e490950043307f667ec0232f4c232bb6e1a53f5438a3fe31e69"
+  }
+}

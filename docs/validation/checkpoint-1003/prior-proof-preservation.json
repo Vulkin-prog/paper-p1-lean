@@ -1,0 +1,13 @@
+{
+  "base_published_snapshot": "bd7c818e51161bab34607fd433d3348bef1aa2bb",
+  "current_proof_source": "3df7615af2aa6a2a2bc6856bd4203c401d0434de",
+  "previous_manifest_entries": 4736,
+  "prior_entries_unchanged": 4734,
+  "intentionally_changed_roots": [
+    "Audit.lean",
+    "PaperP1.lean"
+  ],
+  "reason": "PaperP1 imports the new nine-theorem module; Audit inventory covers it. All prior proof modules and pins remain byte-identical. The new manifest also captures the unchanged lakefile.toml.",
+  "all_prior_manuscript_versions_sources_and_pdfs_unchanged": true,
+  "v18_latest_replay_metadata_updated": true
+}

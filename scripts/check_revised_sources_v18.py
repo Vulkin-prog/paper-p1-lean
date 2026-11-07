@@ -120,7 +120,7 @@ def main():
         raise ValueError("Proof-source manifest checksum mismatch")
     proof_sources = json.loads(proof_path.read_text())["files"]
     actual_proofs = set((ROOT / "PaperP1").rglob("*.lean")) | set(ROOT.glob("*.lean"))
-    actual_proofs.update(ROOT / p for p in ["lean-toolchain", "lake-manifest.json"])
+    actual_proofs.update(ROOT / p for p in ["lean-toolchain", "lake-manifest.json", "lakefile.toml"])
     expected_proofs = {str(p.relative_to(ROOT)): sha(p) for p in actual_proofs}
     if proof_sources != [{"path": p, "sha256": expected_proofs[p]}
                          for p in sorted(expected_proofs)]:

@@ -1,13 +1,14 @@
 {
-  "checked_at_utc": "2026-11-07T13:15:53.864984+00:00",
-  "proof_source_commit": "08f019df4d33a817377e5c937356fe4d87ae08e1",
-  "checker_sha256": "a44d3ee1637bc0919ecd173c625c0bb6f1e293232fb4c4f9f13d633e0b0045e6",
-  "index_sha256": "5ffca4d673633f45bb802e36c7a66b44b94e74277afc252f1d7ce1e47e93e602",
+  "checked_at_utc": "2026-11-07T13:41:14.392002+00:00",
+  "proof_source_commit": "3df7615af2aa6a2a2bc6856bd4203c401d0434de",
+  "checker_sha256": "631b313c12c2a0b0efa8ad90edf7afa3bb63a27e541425c5991378de16955438",
+  "index_sha256": "eb16d7631945340250b8ea5206a07e757e3a1da5bbb5f158da771eed4b6b81da",
   "positive_control": {
     "actual": "accepted",
     "results": 167,
     "main": 73,
     "companion": 94,
+    "independently_compared_result_labels": 167,
     "distinct_proof_interfaces": 261,
     "objects_not_proof_evidence": 3
   },
@@ -59,6 +60,34 @@
       "expected": "reject",
       "actual": "rejected",
       "reason": "Entry is not a source-audited compiled theorem: PaperP1.OptimalQuadratic.article_1_1",
+      "real_repository_modified": false
+    },
+    {
+      "case": "corrupt_current_scope_replay_digest",
+      "expected": "reject",
+      "actual": "rejected",
+      "reason": "The latest proof-entry scope replay record changed",
+      "real_repository_modified": false
+    },
+    {
+      "case": "truncate_completed_independent_coverage_count",
+      "expected": "reject",
+      "actual": "rejected",
+      "reason": "The supplementary independent review does not complete the 167-label coverage",
+      "real_repository_modified": false
+    },
+    {
+      "case": "omit_nine_example_review_record",
+      "expected": "reject",
+      "actual": "rejected",
+      "reason": "'supplemental_example_review'",
+      "real_repository_modified": false
+    },
+    {
+      "case": "change_independently_reviewed_ordered_list_domain_7_2",
+      "expected": "reject",
+      "actual": "rejected",
+      "reason": "Additional independent source/scope record changed: p1:core:moderate",
       "real_repository_modified": false
     }
   ],

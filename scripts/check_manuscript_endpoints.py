@@ -86,6 +86,17 @@ def verify(index, *, compiled=None, locations=None):
         raise ValueError("The index and manuscript comparison use different proof snapshots")
     if index["proof_source_commit"] != revision["proof_source_commit"]:
         raise ValueError("The index proof-source commit is stale")
+    current_scope = index["compiled_scope"]["latest_replay"]
+    current_scope_path = local_file(current_scope["path"])
+    if sha(current_scope_path) != current_scope["sha256"]:
+        raise ValueError("The latest proof-entry scope replay record changed")
+    scope_replay = json.loads(current_scope_path.read_text())
+    if (scope_replay["source_commit"] != index["proof_source_commit"]
+            or scope_replay["actual_exit_code"] != 0
+            or scope_replay["all_prior_compiled_type_bytes_identical"] is not True
+            or scope_replay["replay_validation"]["compiled_types_sha256"] != sha(type_path)
+            or scope_replay["replay_validation"]["propositions_audited"] != validation["propositions_audited"]):
+        raise ValueError("The compiled proof-entry types were not replayed at the current proof source")
     replay = json.loads(local_file(index["proof_validation"]).read_text())
     if (replay["source_commit"] != index["proof_source_commit"]
             or replay["status"] != "passed"
@@ -96,6 +107,36 @@ def verify(index, *, compiled=None, locations=None):
     for log in replay["logs"]:
         if sha(local_file(log["path"])) != log["sha256_gzip"]:
             raise ValueError(f"Complete proof replay log changed: {log['kind']}")
+    example_record = index["supplemental_example_review"]
+    if example_record != replay["independent_scope_read"]:
+        raise ValueError("The example review and full replay records disagree")
+    example_path = local_file(example_record["path"])
+    if sha(example_path) != example_record["sha256"]:
+        raise ValueError("The frozen nine-example review changed")
+    example_review = json.loads(example_path.read_text())
+    example_types_path = local_file(replay["compiled_scope"]["path"])
+    example_types = {r["name"]: r for r in json.loads(example_types_path.read_text())}
+    if (example_review["status"] != "complete_frozen"
+            or example_review["source_commit"] != index["proof_source_commit"]
+            or example_review["compiled_scope"]["sha256"] != sha(example_types_path)
+            or len(example_review["results"]) != 9
+            or {r["declaration"] for r in example_review["results"]} != set(example_types)
+            or example_review["summary"]["mathematical_gaps_confirmed"] != 0):
+        raise ValueError("The nine-example review does not match its compiled scope")
+    for reviewed in example_review["results"]:
+        name = reviewed["declaration"]
+        location = locations.get(name, {})
+        if (reviewed["compiled_type"] != example_types[name]["type"]
+                or reviewed["is_proposition"] is not True
+                or example_types[name]["kind"] != "theorem"
+                or example_types[name]["is_proposition"] is not True
+                or name not in audit
+                or not reviewed["verdict"].startswith("aligned")
+                or reviewed["necessary_corrections"]
+                or reviewed["file"] != location.get("source")
+                or reviewed["line"] != location.get("line")
+                or example_review["source_sha256"] != location.get("source_sha256")):
+            raise ValueError(f"A reviewed example type/source binding changed: {name}")
     for record in index["review_records"]:
         if sha(local_file(record["path"])) != record["sha256"]:
             raise ValueError(f"Frozen review record changed: {record['path']}")
@@ -113,6 +154,53 @@ def verify(index, *, compiled=None, locations=None):
             or actual_partition != {"independent-canonical": 79, "independent-dense": 9,
                                     "parent-source-type-definition-comparison": 79}):
         raise ValueError("The recorded 79/9/79 review partition changed")
+    extra_record = index["additional_independent_review"]
+    extra_path = local_file(extra_record["path"])
+    if sha(extra_path) != extra_record["sha256"]:
+        raise ValueError("The additional independent 79-result review changed")
+    extra = json.loads(extra_path.read_text())
+    extra_rows = extra["results"]
+    expected_extra = {r["label"] for r in rows
+                      if r["scope_review"]["source"] == "parent-source-type-definition-comparison"}
+    if (extra["status"] != "complete_frozen" or len(extra_rows) != 79
+            or {r["label"] for r in extra_rows} != expected_extra
+            or extra_record["covered_results"] != 79
+            or extra_record["reviewed_documentary_snapshot"] != extra["repository_head_reviewed"]
+            or extra["method"]["compiled_archive_sha256"] != sha(type_path)
+            or extra["summary"]["mathematical_gaps_confirmed"] != 0):
+        raise ValueError("The supplementary independent review does not complete the 167-label coverage")
+    by_label = {r["label"]: r for r in rows}
+    extra_names = set()
+    for reviewed in extra_rows:
+        original = by_label[reviewed["label"]]
+        if (reviewed["source"] != original["source"]
+                or reviewed["number"] != original["number"]
+                or not reviewed["verdict"].startswith("aligned")
+                or not reviewed["hypotheses_and_objects"]
+                or not reviewed["quantifier_and_clause_analysis"]
+                or original["scope_review"]["inherited_hypotheses"] != reviewed["hypotheses_and_objects"]
+                or original["scope_review"]["subsequent_independent_review"] != {
+                    "verdict": reviewed["verdict"],
+                    "analysis": reviewed["quantifier_and_clause_analysis"],
+                    "editorial_notes": reviewed["editorial_notes"]}):
+            raise ValueError(f"Additional independent source/scope record changed: {reviewed['label']}")
+        entries = reviewed["entry_points_reviewed"]
+        selected = {e["name"] for e in original["entry_points"]}
+        if ({e["declaration"] for e in entries} != selected
+                or not {e["declaration"] for e in reviewed["required_complements"]} <= selected):
+            raise ValueError(f"A directly reviewed interface or clause was dropped: {reviewed['label']}")
+        for entry in entries:
+            name = entry["declaration"]
+            info, location = compiled.get(name, {}), locations.get(name, {})
+            if (entry["compiled_type"] != info.get("type")
+                    or entry["is_proposition"] is not True
+                    or entry["file"] != location.get("source")
+                    or entry["line"] != location.get("line")
+                    or entry["source_sha256"] != location.get("source_sha256")):
+                raise ValueError(f"Additional independent theorem type/source binding changed: {name}")
+            extra_names.add(name)
+    if len(extra_names) != extra_record["distinct_interfaces"] or len(extra_names) != 118:
+        raise ValueError("The additional 118-interface review inventory changed")
     changes = json.loads((ROOT / "docs/mathematical-changes.json").read_text())["findings"]
     extensions = {}
     for change in changes:
@@ -197,6 +285,7 @@ def verify(index, *, compiled=None, locations=None):
     if distinct != {n for n, r in compiled.items() if r["kind"] == "theorem"}:
         raise ValueError("The compiled theorem inventory differs from the indexed entry points")
     return {"results": len(rows), "main": 73, "companion": 94,
+            "independently_compared_result_labels": len(canonical) + len(dense) + len(extra_rows),
             "distinct_proof_interfaces": len(distinct), "objects_not_proof_evidence": len(objects)}
 
 
@@ -208,6 +297,8 @@ def main():
           f"{result['main']} article and {result['companion']} companion results.")
     print(f"Actual compiled interfaces: {result['distinct_proof_interfaces']} theorems; "
           f"{result['objects_not_proof_evidence']} separate mathematical definitions.")
+    print(f"Direct independent comparison records cover {result['independently_compared_result_labels']} labels "
+          "across the reports' stated source snapshots.")
     print("Scope: source/type identity and recorded AI-assisted clause review; "
           "not a machine proof of TeX-to-Lean translation, human review or Palomar registration.")
 
