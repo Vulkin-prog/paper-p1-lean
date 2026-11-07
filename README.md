@@ -3,7 +3,7 @@
 *Sharp Poisson approximation and second-order correction for long multiplicative
 runs*, and its technical companion, by [Brice Pouly](https://orcid.org/0009-0008-8491-2467).
 
-Current checkpoint P1-MATH-0986: all **167 revised numbered statements** have
+Current checkpoint P1-MATH-0987: all **167 revised numbered statements** have
 checked proofs, using **Lean v4.36.0-rc2**, with no unformalized mathematical
 input. This comprises all 73 main-article and all 94 revised companion results.
 The separate version 1.7 manuscript draft integrates the two necessary statement
@@ -35,7 +35,7 @@ bytes and checked counterexamples are preserved. Their corrected replacements
 are proved and integrated in version 1.7. T19.17 is proved with both original
 coefficients and without an external smooth-number premise.
 
-The ledger records **984 confirmed mathematical improvements and two statement-scope corrections**.
+The ledger records **985 confirmed mathematical improvements and two statement-scope corrections**.
 Proof substitutions, exact parameter ranges and the scope of stronger
 unasserted analytic or geometric results are documented in the source revision.
 
@@ -53,6 +53,8 @@ unasserted analytic or geometric results are documented in the source revision.
 The [one-sided prime-cylinder strengthening](docs/ONE_SIDED_PRIME_CYLINDER.md)
 proves the sharper finite start count N/q-N/q^2-3 and corresponding positive
 and total exponential-moment lower bounds. Its full replay passed; the [source-bound evidence](docs/validation/checkpoint-0986/validation.json) preserves all three checks. No numbered statement changes.
+
+The [supported prime-cylinder refinement](docs/SUPPORTED_PRIME_CYLINDER.md) reduces the probability charge to primeCount(2*q*floor(N/q)). Its 17 direct proofs and axiom audit passed; the complete checkpoint replay and manuscript integration are pending.
 
 ## Build and verification
 

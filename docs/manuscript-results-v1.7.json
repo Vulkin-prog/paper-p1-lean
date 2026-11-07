@@ -20601,7 +20601,25 @@
         "PaperP1.OneSidedPrimeCylinder.positive_exponential_lower",
         "PaperP1.OneSidedPrimeCylinder.total_exponential_lower",
         "PaperP1.OneSidedPrimeCylinder.retainedParameters",
-        "PaperP1.OneSidedPrimeCylinder.starts"
+        "PaperP1.OneSidedPrimeCylinder.starts",
+        "PaperP1.SupportedPrimeCylinder.cutoff_le_two_mul",
+        "PaperP1.SupportedPrimeCylinder.cylinder_integrable",
+        "PaperP1.SupportedPrimeCylinder.positive_integrable",
+        "PaperP1.SupportedPrimeCylinder.positive_moment_mono",
+        "PaperP1.SupportedPrimeCylinder.positive_moment_eq_finite",
+        "PaperP1.SupportedPrimeCylinder.retained_starts_cutoff",
+        "PaperP1.SupportedPrimeCylinder.positive_count_on_retained_sample",
+        "PaperP1.SupportedPrimeCylinder.positive_exponential_card_lower",
+        "PaperP1.SupportedPrimeCylinder.positive_exponential_lower",
+        "PaperP1.SupportedPrimeCylinder.total_exponential_lower",
+        "PaperP1.SupportedPrimeCylinder.prime_charge_le_two_mul",
+        "PaperP1.SupportedPrimeCylinder.prime_charge_never_larger",
+        "PaperP1.SupportedPrimeCylinder.dyadic_positive_exponential_lower",
+        "PaperP1.SupportedPrimeCylinder.dyadic_total_exponential_lower",
+        "PaperP1.SupportedPrimeCylinder.strict_charge_reduction_on_original_scale",
+        "PaperP1.SupportedPrimeCylinder.exact_prime_charges_on_original_scale",
+        "PaperP1.SupportedPrimeCylinder.exponential_bound_gain_on_original_scale",
+        "PaperP1.SupportedPrimeCylinder.cutoff"
       ],
       "remaining_unformalized_inputs": [],
       "validation": "Included in the complete checkpoint P1-MATH-0983 replay.",
@@ -20613,6 +20631,11 @@
           "validation": "Full Lean v4.36.0-rc2 replay passed at source 1f25a899d04ff2bac781747b2e7fe5cef42e6c7c: 18,563 build jobs, 19,452 source-discovered theorem axiom checks and 19,625 distinct declaration-reference checks, all actual process exits 0. Proof warnings are errors; only propext, Classical.choice and Quot.sound occur.",
           "validation_source_commit": "1f25a899d04ff2bac781747b2e7fe5cef42e6c7c",
           "validation_record": "docs/validation/checkpoint-0986/validation.json"
+        },
+        {
+          "checkpoint": "P1-MATH-0987",
+          "description": "The deliberately retained starts q*u+1, with floor(N/q)+1<=u<2*floor(N/q), use no integer beyond M=2*q*floor(N/q). Their actual positive count is a finite-cylinder observable at this smaller cutoff. Integrability and monotonicity of actual exponential moments transfer its atom lower bound to the full count. Thus both full positive and total exponential moments are at least exp(t*(N/q-N/q^2-3)-primeCount(M)*log(2)) for every prime q<=N and t>=0. Since M<=2*N, the corresponding primeCount(2*N) bound follows too. At the original scale q=7, N=64, the new, dyadic and earlier sufficient cutoffs charge 30, 31 and 32 primes respectively, giving a proved factor-four gain over the earlier finite bound with the same count contribution. The original t>2 prime-scale liminf statement and its coefficient are preserved.",
+          "validation": "Direct Lean v4.36.0-rc2 verification and exact 17-theorem axiom audit passed, with proof warnings as errors and only propext, Classical.choice and Quot.sound. The prime-count example uses kernel computation. Whole-project build and declaration-reference replay are pending."
         }
       ]
     },

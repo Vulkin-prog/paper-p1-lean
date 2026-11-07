@@ -1,6 +1,18 @@
 # Mathematical corrections and improvements
 
-Current checkpoint P1-MATH-0986: The actual one-negative-prime cylinder
+Current checkpoint P1-MATH-0987: The retained one-sided starts use only
+prime signs up to M=2*q*floor(N/q)<=2*N. Their finite-cylinder probability
+charge is reduced accordingly, and both actual full exponential moments
+retain the lower start budget N/q-N/q^2-3. At q=7, N=64, the exact charges
+30 versus 32 give a checked factor-four gain with the same count contribution.
+The original t>2 range, prime scale and liminf coefficient are preserved.
+All 167 revised statements remain proved; original coverage stays 165 proved
+and two false-original scopes. The 17 new direct proofs and their axiom audit
+passed; the full checkpoint replay is pending. Thirteen registry families
+(52 selections) have completed local qualification, including their source-bound
+verified con-ron replays. No Palomar registration is claimed.
+
+Historical checkpoint P1-MATH-0986: The actual one-negative-prime cylinder
 retains all starts requiring only the preceding negative sign. Its finite
 count is at least N/q-N/q^2-3, strengthening both original positive and
 total exponential-moment lower bounds. The printed T19.7 prime scales,
@@ -3744,7 +3756,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**984 mathematical improvements and two statement-scope corrections are confirmed.**
+**985 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -35730,3 +35742,17 @@ is a lower bound for each actual positive and total run-start exponential moment
 The positive start needs a preceding negative sign and the next q-1 positive signs. Removing the extra right-end restriction keeps every original forced start. A single residue-class exclusion gives the sharper cardinality budget, including all floor and endpoint errors. The finite lower bound strictly improves the previous algebraic bound. The threshold t>2 and its asymptotic coefficient are unchanged; sharpness of that threshold is not asserted.
 
 Full Lean v4.36.0-rc2 replay passed at source 1f25a899d04ff2bac781747b2e7fe5cef42e6c7c: 18,563 build jobs, 19,452 source-discovered theorem axiom checks and 19,625 distinct declaration-reference checks, all actual process exits 0. Proof warnings are errors; only propext, Classical.choice and Quot.sound occur.
+
+
+## P1-MATH-0987 — Charge only the retained starts' prime support
+
+The deliberately retained starts q*u+1, with floor(N/q)+1<=u<2*floor(N/q), use no integer beyond M=2*q*floor(N/q). Their actual positive count is a finite-cylinder observable at this smaller cutoff. Integrability and monotonicity of actual exponential moments transfer its atom lower bound to the full count. Thus both full positive and total exponential moments are at least exp(t*(N/q-N/q^2-3)-primeCount(M)*log(2)) for every prime q<=N and t>=0. Since M<=2*N, the corresponding primeCount(2*N) bound follows too. At the original scale q=7, N=64, the new, dyadic and earlier sufficient cutoffs charge 30, 31 and 32 primes respectively, giving a proved factor-four gain over the earlier finite bound with the same count contribution. The original t>2 prime-scale liminf statement and its coefficient are preserved.
+
+Direct Lean v4.36.0-rc2 verification and exact 17-theorem axiom audit passed, with proof warnings as errors and only propext, Classical.choice and Quot.sound. The prime-count example uses kernel computation. Whole-project build and declaration-reference replay are pending.
+
+The complete original count can still depend on later prime signs. The proof
+first integrates the retained subcount on its actual smaller cylinder, then
+uses monotonicity for t>=0 to bound the full positive and total moments.
+No full-count cutoff hypothesis is assumed. The new module is
+PaperP1.Model.SupportedPrimeCylinder. The separate registry receipts keep
+their original selected statements and imported proof closures unchanged.
