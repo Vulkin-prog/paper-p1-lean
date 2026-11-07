@@ -1,0 +1,39 @@
+RELECTURE INDÉPENDANTE — DIFF SCIENTIFIQUE EXACT, RAPPORT FIGÉ
+Statut : complete_frozen ; 7 novembre2026.
+Base : 2e8aff1f1140589d1b86e534dd86b6ec108a077a
+Preuve : 7bfc953cd6092eebfbae5f24aeb72b7180693537
+Patch : bee3ca103fad25e2bfbd4f11f8f14ef9ec787f7df8afa314d745ef6d4558d180
+
+Verdict : accepté dans le périmètre relu. Aucune lacune mathématique confirmée ; aucune correction nécessaire. Les cinq améliorations sont des acquis déjà prouvés et ne rendent pas les anciens énoncés faux.
+
+1. T9.1 (companion_sections/pair_rigidity.tex17–32)
+Le seuil5m correspond exactement àlocal_square_threshold_power_five. B entier est la convention réelle du paramètre de fenêtre ; m est positif et pair, sans régime d’ordre fixé. La preuve contradictoire x≤(64B)^m≤(B+1)^(5m) est complète.
+
+2. T1.14 (companion_sections/arithmetic_appendix.tex1080–1113)
+Le tauxr−s/2 est celui decritical_interval_count/critical_count, ce dernier couvrant aussi les enregistrements de motifs. Les centres restent distincts ; la sélection locale peut avoir un noyau. Les projections doivent être non nulles dans leur propre image effective, même si elles deviennent nulles modulo l’ancien espace. Les mots formels d’image nulle sont explicitement exclus.
+Le compte par10.1 et complément fixé est exact ; toutes largeurs, dilations et dimensions de motifs restent fixées avant le seuil. Aucun argument de moments ou de reconstruction.
+
+3. T4.4 ÀPLUSIEURS CIBLES (fixed_moments.tex213–265)
+La borne−κ_b est déjà donnée par les interfaces inconditionnelles actuelles, soit5/3 et7/4. Le texte expliciteG_N, la distinction et la séparation. La preuve compte le vrai bloc normalisé, conserveq0(source) même en cas d’incompatibilité affine, et absorbe les pertes2ε′/3ε′. Les anciensUnderInputs ne servent pas d’endpoints.
+
+4. T4.4 ÀUNE CIBLE (fixed_moments.tex227–230,267–275 ; third_cumulant.tex156–177)
+Le nouveau41/30 est justifié parHomogeneousEffectiveGoodPairExtensions.uniform_mass, sur la source géométrique bonne brute et une cible séparée avec croisement positif. La perte relative est bien l’ACCROISSEMENT au-dessus de la source, dim(S_z∩(S_x+S_y)).
+Le raccord imprimé est désormais présent : remarque homogène restreinte aux triples connexes séparés deG_N contenant une paire deA_raw. q0 est une vraie probabilité de rang, avec marginale ciblep exacte. Les cas nonaligné, coefficients distincts/répétés et endpoints sont repris positivement. La séparation remplace la compatibilité pour les intervalles répétés ; les contacts exactementL restent permis.
+Bonne source dépendante + croisement positif rendent le triple connexe. Au plus3 choix de source marquée par triple donnent la masse complète. Aucun majorant positif n’est déduit d’un cumulant signé.
+La domination affineactual_joint_le s’applique pourL>0, automatiquement àgrande échelle critique ; elle conserve les configurations dont le joint affine est nul.
+Point d’index :FixedCompressedPrimitiveTheorem affaiblit encore la clause àune cible vers4/3 et5/4. Le nouvel énoncé41/30 nécessite aussi l’entréeuniform_mass deHomogeneousEffectiveGoodPairExtensions et la domination affine. Ne pas prétendre qu’un seul théorème couvre tout le bloc composé.
+Conseil facultatif accepté comme non bloquant : ajouter additional dans positive relative rank loss. Le crossing est déjà explicite dans la preuve et le parent a choisi de garder le diff courant.
+
+5. κ=17 ET APPLICATIONS
+main_sections/pair_rigidity.tex228–230 : la phrase est hors du théorèmeBCN et attribue17 au développementLean. grid_bound/finite_population donnent les vrais points affines entiers sous les hypothèses géométriques d’idéal homogène premier et de degréHilbert. La constante positive dépend seulement de la dimension ; aucun compte cible supposé.
+cores.tex222–237,472–483 : les exponents−κ_b et le maximum5/3 pourh≥3 sont cohérents. Les références àT1.12 pour une cible gardent des bornes plus faibles, toujours vraies. Le guide66–75 explique le nouveau renvoi vers les triples.
+Les taux finaux4/3,41/30,4/5 et le régime de degré fixé sont préservés.
+
+6. CONTRÔLES EFFECTIFS DE CETTE REVUE
+Les7 hunks de fichiers ont été appliqués EXACTEMENT EN MÉMOIRE àla base2e8aff1f. Les48 copies correspondent au manifeste et aux empreintes avant/après.167 blocs numérotés comparés :164 identiques ; seulsT9.1,T1.14,T4.4 changent.548 labels uniques conservés, zéro renvoi manquant. Le diff ajoute28 lignes physiques nettes ; aucune conclusion de pagination.
+Les12 types initiaux et leurs corps pertinents sont confirmés. Trois types compilés complémentaires sont lus séparément :probability_rank, actual_joint_le etHomogeneousEffectiveConnectedChannel.uniform_mass. Leur extractionbridge-scope a un fichier.exit=0 et un rapport d’axiomes standards fourni par le parent.
+Scope12 SHA :5ab14198b8f5c5937835c2296a654890d2a6711e96924db3e4163aa7980c417e.
+Bridge3 SHA :e045540f002e4df3c782daf11a071870fedbb967cb3aa1d18939b45fde799779.
+La fermeture des imports et ses1487 empreintes ont été recalculées/recomparées : absence des théorèmes de moments6.4, des reconstructions et du théorème final du cumulant. Aucun cycle confirmé. Les modules algébriques contenant moment ne sont pas ces résultats àprouver.
+
+Limites : aucun Lean/Lake, replay, build, extraction, audit,PDF ou Palomar exécuté par cette instance. Rendu et numéros imprimés restent laQA du parent. Aucun dépôt, copie proposée ou ancien rapport modifié. Le préliminaire reste byte-identique. Ce rapport porte exclusivement sur le patchbee3ca10… actuel.

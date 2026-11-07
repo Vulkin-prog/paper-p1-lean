@@ -1,0 +1,46 @@
+RENFORCEMENTS SCIENTIFIQUES EXISTANTS — REVUE PRÉLIMINAIRE FIGÉE
+7 novembre2026 ; étape antérieure au diff exact.
+Base documentaire : 2e8aff1f1140589d1b86e534dd86b6ec108a077a
+Preuve inchangée : 7bfc953cd6092eebfbae5f24aeb72b7180693537
+
+Avis : les quatre renforcements sont justifiés sur leurs domaines exacts. Les anciennes bornes restent vraies. Aucun nouveau résultatLean ni nouvel état de couverture n’est revendiqué.
+L’option41/30 à une cible est disponible sans cycle avec les moments, mais nécessite le raccord homogène écrit détaillé ci-dessous. Le futur diff reste à relire.
+
+1. T9.1 — seuil5m (P1-MATH-0005)
+companion_sections/pair_rigidity.tex:17–32. Le type local_square_threshold_power_five conserveB≥2, un vrai ensemble fini d’offsets entiers distincts, de cardinal positif pairm, et donne l’exclusion sousx>(B+1)^(5m). Le cardinalm n’est pas fixé. Le seuil encore plus fort(64B)^m est prouvé aussi.
+La preuve imprimée contient déjà x≤(64B)^m≤(B+1)^(5m). Remplacer12m par5m et conclure directement. Aucun taux global ou optimalité du seuil n’en découle.
+
+2. T1.14 — exposantr−s/2 et images effectives (P1-MATH-0066)
+companion_sections/arithmetic_appendix.tex:1080–1113. La preuve courte obtient déjà N^(r−s/2+ε). critical_interval_count et critical_count prouvent ce compte, le second pour la population ET les enregistrements de motifs.
+Supprimer l’exigence d’injectivité du morphisme de sélection vers les classes carrées ; conserver la distinction des centres. Les projections doivent être des vecteurs non nuls des IMAGES effectives, pas des mots formels d’image nulle. Les relations locales sont donc permises sans fournir de faux témoins.
+Les valeurs restent comparables àN, à distanceO(B) de leur centre ; largeur, bornes de dilations et dimensions des motifs sont fixées avantN0. La séparation physique peut être conservée comme sous-classe minimale ; les types n’en ont pas besoin au-delà de centres distincts.
+Retirer l’affaiblissement à l’ancien exposant et la phrase finale invoquant l’injection. Existence d’un représentant pair non vide suffit. Les usages de uniform_appendix:55–63 et fixed_moments:313–321 peuvent garder leurs anciennes bornes comme affaiblissements explicites. Aucun saut vers un degré croissant.
+
+3. T4.4 À PLUSIEURS CIBLES — exposant−κ_b (P1-MATH-0176)
+companion_sections/fixed_moments.tex:213–264. Pourt=r−1≥2 fixé, EffectiveCompressedPrimitiveMass.uniform_mass donneN^(−2+1/b+ε), soit5/3 en2:3 et7/4 en3:4. FixedCompressedPrimitiveTheorem conserve aussi les joints affines correspondants.
+Les interfaces actuelles sont inconditionnelles ; les anciens UnderInputs du journal sont historiques. La preuve imprimée compte déjà le centre normalisébx, utiliseq0(e) même si le joint affine est nul, et donne les pertes2ε′/3ε′ à absorber. Changer la conclusion et supprimer seulement stronger bound than.
+Les applications cores:229 et475 peuvent rester plus faibles. Si elles sont actualisées, largest…−22/15 àcores:232 doit devenir−5/3 ; sinon présenter les formules anciennes comme affaiblissements. Le cas à une cible reste séparé.
+
+4. 13.4 — κ=17 (P1-MATH-0560)
+main_sections/pair_rigidity.tex:208–258. grid_bound et finite_population bornent les vrais points affines entiers de hauteurH>2. Le champ est de caractéristique0 ; l’idéal homogène premier a polynôme deHilbert d*t+b0,d>0. Ce sont les hypothèses géométriques, sans compte supposé.
+L’exposant17 est absolu avant la dimension ; pour chaquen, la constante positive précède champ, courbe, degré et hauteur. Le profil plane indépendant, les budgets de projection et la conversion verslogH gardent17.
+Choix conseillé et retenu par le parent : UNE PHRASE HORS du théorème attribué àBCN, attribuant17 à la preuve indépendante du développement accompagnant le papier. Ne pas attribuer17 à la sourceBCN non réexaminée ici. Leκ symbolique du corollaire peut rester ; les conclusionso(B) sont inchangées.
+
+5. OPTION SÉPARÉE — T4.4 À UNE CIBLE AU TAUX41/30
+HomogeneousEffectiveGoodPairExtensions.uniform_mass est un théorème de masse homogène POSITIVE pour une bonne paire brute marquée et un nouveau centre séparé de croisement positif. Il fixea,b,C,ε avantN0, puis est uniforme enN,L,H. Les deux canaux satisfont0<a<b<2a etgcd(a,b)=1.
+Le théorème canoniqueFixedCompressedPrimitiveTheorem ne suffit pas seul au nouveau taux : il affaiblit41/30 vers4/3 et5/4. La nouvelle entréeuniform_mass doit être indexée pour cette clause, avec la domination affine point par point.
+Le support imprimé est la proposition14.3(p13:third:aligned-family) et sa preuve dans companion_sections/third_cumulant.tex:13–152. Son énoncé actuel est limité aux triples compatiblesq(T)>0 ; il ne majorerait pas à lui seul la masseq0 d’une configuration incompatible. Le cumulant signé14.1 ouA3 n’est pas le bon raccord.
+Ajouter après cette preuve une remarque sur les triples distincts séparés deG_N, connexes, contenant une paire deA_raw en2:3 ou3:4, selon le choix plus restreint du parent. Alorsq0(z)=p exactement.
+Le nonaligné utiliseq0(e)≤N^(−κ_b+o(1)),q0(T)=q0(e)p2^δ et le même profil. Le secteur aligné est une estimation de rang après fusion. Pour les coefficients physiques répétés, remplacer l’usage de compatibilité aux lignes138–149 par la séparation imposée|x−y|≥L ; les contacts à distance exactementL restent inclus. Aux endpoints,q0(T)≤q0(e).
+Une bonne source est dépendante ; un croisement positif rend le triple connexe. Chaque triple a au plus3 choix de couple source marqué. La remarque homogène fournit donc41/30 pour la somme deT4.4 dans les deux canaux. Aucune optimalité par canal revendiquée.
+Le raccord doit apparaître dans le guide comme renvoi en avant vers14.3. T1.12 garde ses anciennes bornes et sa preuve comme autre route ; il ne doit pas être présenté comme preuve directe du nouveau41/30.
+
+6. DÉPENDANCES ET VALIDATION LUE
+Fermeture des imports calculée indépendamment :1486 ancêtres locaux de la racine homogène à une cible. Les1487 empreintes, racine incluse, correspondent exactement à l’inventaire du parent.
+Absents : CompleteFixedMoments, FixedMomentInputs, BoundedFixedMoments, FixedCompressedPrimitiveTheorem, PrimitiveOrderedBound, OptimalThirdCumulant et les reconstructions de loi contrôlées. Les faits algébriques MomentReconstruction, PoissonFactorialMoments et les estimations ShortSplitMoments ne sont pas le théorème de moments6.4.
+Route imprimée :14.2 et les géométriesT1.9/T1.10 corrigé → preuve14.3 → remarque homogène → optionT4.4. Aucun cycle confirmé.
+Les12 types compilés actuels ont été lus avec leurs corps pertinents. ScopeSHA :5ab14198b8f5c5937835c2296a654890d2a6711e96924db3e4163aa7980c417e ; validationSHA :521cb6ee6c702694b7d73cb5ea1af7d6cf7e8624a0d31d54822136e640b00673. Le parent rapporte sortie0 et axiomes standards ; cette instance n’a rien exécuté avecLean.
+LeJSON donne les types exacts, les propositionsTeX anglaises, les localisateurs, les empreintes et les helpers utiles à une extraction plus fine du raccord positif.
+
+Ordre proposé : T1.14/T4.4 multicibles, T9.1, remarqueκ=17, puis option41/30 et son raccord imprimé. Conserver167 labels de résultats et les taux finaux4/3,41/30,4/5 sans réoptimisation automatique.
+Lecture seule : aucun Lean/Lake/PDF/Palomar, aucune délégation, aucune mutation du dépôt ou des rapports antérieurs. Ce préliminaire ne préjuge pas du futur diff exact.

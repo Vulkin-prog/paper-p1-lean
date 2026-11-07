@@ -32,13 +32,21 @@ three fewer pages than frozen v1.8, with all 167 numbered blocks and 552 labels
 preserved from the first condensed stage. Both prior previews remain available.
 The [third proof-simplification pass](docs/editorial-proposals/2026-11-07/proof-simplification/README.md)
 applies the two remaining proposals together with two inherited-scope precisions.
-The latest marked review copy has 64 article pages and 101 companion pages,
+That third marked review copy has 64 article pages and 101 companion pages,
 four fewer than frozen v1.8. All 167 result identities and numbers are retained.
 The [integration index](docs/editorial-proposals/2026-11-07/integration-status.json)
 distinguishes all thirteen applied proposals from the preserved proof-development ledger.
 The [editorial integrity gate](docs/validation/editorial-preview-integrity/README.md)
 checks the exact reviewed patch chain, delivered artifacts and complete result
 bundles in CI, with 29 in-memory controls.
+
+The [latest strengthened review copy](docs/editorial-proposals/2026-11-07/scientific-strengthening/README.md)
+also exposes existing sharper bounds in T9.1, T1.14 and T4.4, with an explicit
+positive homogeneous one-target argument and a separate logarithmic-exponent note.
+It retains all thirteen simplifications and remains 64/101 pages. Fifteen
+existing proposition types were actually extracted; an exact independent diff
+review and twelve integrity controls accompany the copy. No new theorem or
+ledger entry is counted, and all earlier sources/PDFs/reports remain preserved.
 
 
 
@@ -48,8 +56,10 @@ records every clause and inherited premise.
 
 | Manuscript | PDF | Editable source |
 |---|---|---|
-| Article, latest simplified editorial preview | [PDF](manuscripts/paper-p1/editorial-simplified-preview-2026-11-07/pdf/P1_Simplified_Editorial_Preview_Main_2026-11-07_EN.pdf) | [TeX](manuscripts/paper-p1/editorial-simplified-preview-2026-11-07/sources/main.tex) |
-| Companion, latest simplified editorial preview | [PDF](manuscripts/paper-p1/editorial-simplified-preview-2026-11-07/pdf/P1_Simplified_Editorial_Preview_Companion_2026-11-07_EN.pdf) | [TeX](manuscripts/paper-p1/editorial-simplified-preview-2026-11-07/sources/companion.tex) |
+| Article, latest strengthened editorial preview | [PDF](manuscripts/paper-p1/editorial-strengthened-preview-2026-11-07/pdf/P1_Strengthened_Editorial_Preview_Main_2026-11-07_EN.pdf) | [TeX](manuscripts/paper-p1/editorial-strengthened-preview-2026-11-07/sources/main.tex) |
+| Companion, latest strengthened editorial preview | [PDF](manuscripts/paper-p1/editorial-strengthened-preview-2026-11-07/pdf/P1_Strengthened_Editorial_Preview_Companion_2026-11-07_EN.pdf) | [TeX](manuscripts/paper-p1/editorial-strengthened-preview-2026-11-07/sources/companion.tex) |
+| Article, preserved simplified editorial preview | [PDF](manuscripts/paper-p1/editorial-simplified-preview-2026-11-07/pdf/P1_Simplified_Editorial_Preview_Main_2026-11-07_EN.pdf) | [TeX](manuscripts/paper-p1/editorial-simplified-preview-2026-11-07/sources/main.tex) |
+| Companion, preserved simplified editorial preview | [PDF](manuscripts/paper-p1/editorial-simplified-preview-2026-11-07/pdf/P1_Simplified_Editorial_Preview_Companion_2026-11-07_EN.pdf) | [TeX](manuscripts/paper-p1/editorial-simplified-preview-2026-11-07/sources/companion.tex) |
 | Article, separate structural editorial preview | [PDF](manuscripts/paper-p1/editorial-structural-preview-2026-11-07/pdf/P1_Structural_Editorial_Preview_Main_2026-11-07_EN.pdf) | [TeX](manuscripts/paper-p1/editorial-structural-preview-2026-11-07/sources/main.tex) |
 | Companion, separate structural editorial preview | [PDF](manuscripts/paper-p1/editorial-structural-preview-2026-11-07/pdf/P1_Structural_Editorial_Preview_Companion_2026-11-07_EN.pdf) | [TeX](manuscripts/paper-p1/editorial-structural-preview-2026-11-07/sources/companion.tex) |
 | Article, separate condensed editorial preview | [PDF](manuscripts/paper-p1/editorial-condensed-preview-2026-11-07/pdf/P1_Condensed_Editorial_Preview_Main_2026-11-07_EN.pdf) | [TeX](manuscripts/paper-p1/editorial-condensed-preview-2026-11-07/sources/main.tex) |

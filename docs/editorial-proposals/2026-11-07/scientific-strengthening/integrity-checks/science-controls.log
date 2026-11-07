@@ -1,0 +1,17 @@
+test_current_review_and_all_prior_capsules_pass (test_scientific_preview.ScientificPreviewControls.test_current_review_and_all_prior_capsules_pass) ... ok
+test_frozen_receipt_cannot_inflate_proof_count (test_scientific_preview.ScientificPreviewControls.test_frozen_receipt_cannot_inflate_proof_count) ... ok
+test_independent_bridge_read_cannot_omit_a_proposition (test_scientific_preview.ScientificPreviewControls.test_independent_bridge_read_cannot_omit_a_proposition) ... ok
+test_nonzero_actual_extraction_exit_is_rejected (test_scientific_preview.ScientificPreviewControls.test_nonzero_actual_extraction_exit_is_rejected) ... ok
+test_rebound_axiom_log_cannot_hide_sorryAx (test_scientific_preview.ScientificPreviewControls.test_rebound_axiom_log_cannot_hide_sorryAx) ... ok
+test_rebound_changed_type_requires_the_independent_type_read (test_scientific_preview.ScientificPreviewControls.test_rebound_changed_type_requires_the_independent_type_read) ... ok
+test_rebound_definition_cannot_count_as_a_theorem (test_scientific_preview.ScientificPreviewControls.test_rebound_definition_cannot_count_as_a_theorem) ... ok
+test_regular_domain_cannot_be_silently_dropped (test_scientific_preview.ScientificPreviewControls.test_regular_domain_cannot_be_silently_dropped) ... ok
+test_separation_cannot_be_replaced_by_affine_compatibility (test_scientific_preview.ScientificPreviewControls.test_separation_cannot_be_replaced_by_affine_compatibility) ... ok
+test_unmodified_bridge_with_rebound_digests_passes (test_scientific_preview.ScientificPreviewControls.test_unmodified_bridge_with_rebound_digests_passes) ... ok
+test_weak_alias_alone_does_not_cover_the_sharp_one_target_clause (test_scientific_preview.ScientificPreviewControls.test_weak_alias_alone_does_not_cover_the_sharp_one_target_clause) ... ok
+test_wrong_logarithmic_note_source_is_rejected (test_scientific_preview.ScientificPreviewControls.test_wrong_logarithmic_note_source_is_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 1.402s
+
+OK

@@ -1,0 +1,89 @@
+[
+  {
+    "name": "science",
+    "command": [
+      "python3",
+      "scripts/check_scientific_preview.py",
+      "--json"
+    ],
+    "actual_exit_code": 0,
+    "log_file": "science.log",
+    "log_sha256": "d17aa8ba13094a1df32ac3aca1d933bf6d4f9262e8e546ac454436e8298cdd9c"
+  },
+  {
+    "name": "science-controls",
+    "command": [
+      "python3",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_scientific_preview.py",
+      "-v"
+    ],
+    "actual_exit_code": 0,
+    "log_file": "science-controls.log",
+    "log_sha256": "c8a34eb401f5e49a6290aa392b7b97d86d3e33146ff1b84fd01c4d456f6f407c"
+  },
+  {
+    "name": "previous-controls",
+    "command": [
+      "python3",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_editorial_previews.py",
+      "-v"
+    ],
+    "actual_exit_code": 0,
+    "log_file": "previous-controls.log",
+    "log_sha256": "9ae8b21cef22d09afc98aa2eded3b358f77cbaa91eacb9acbc1da181545a9520"
+  },
+  {
+    "name": "sources",
+    "command": [
+      "python3",
+      "scripts/check_sources.py"
+    ],
+    "actual_exit_code": 0,
+    "log_file": "sources.log",
+    "log_sha256": "e69e3256f47b82162fa687c1b0ef1b478e5594a5ddf2b41a709725a8e04d70ac"
+  },
+  {
+    "name": "revised-sources",
+    "command": [
+      "python3",
+      "scripts/check_revised_sources.py",
+      "--require-proved"
+    ],
+    "actual_exit_code": 0,
+    "log_file": "revised-sources.log",
+    "log_sha256": "b7d6de15d0462cd0a25a24425bffc1a297f442e2a43106c8706cba29d1134506"
+  },
+  {
+    "name": "endpoints",
+    "command": [
+      "python3",
+      "scripts/check_manuscript_endpoints.py"
+    ],
+    "actual_exit_code": 0,
+    "log_file": "endpoints.log",
+    "log_sha256": "ccfe30ea76f40e41be8d01fdb9b1d9694e37ee11bd27ea490e55f0b16dc0d316"
+  },
+  {
+    "name": "audit-inventory",
+    "command": [
+      "python3",
+      "scripts/update_audit.py",
+      "--check"
+    ],
+    "actual_exit_code": 0,
+    "log_file": "audit-inventory.log",
+    "log_sha256": "f7af93cce0842433a876c9f4ff8cc379e91e4544a1fc0cf0c895ab24752a1b69"
+  }
+]

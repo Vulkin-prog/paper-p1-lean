@@ -1,0 +1,198 @@
+--- a/companion_sections/arithmetic_appendix.tex
++++ b/companion_sections/arithmetic_appendix.tex
+@@ -1086,9 +1086,9 @@
+ the number of tuples having a relative square relation whose projection
+ is nonzero in at least $s$ blocks is
+ \[
+- O_{C,r,\varepsilon}\left(N^{r-2s/(2s+1)+\varepsilon}\right).
+-\]
+-The same assertion holds for injective even-selection spaces on subsets
++ O_{C,r,\varepsilon}\left(N^{r-s/2+\varepsilon}\right).
++\]
++The same assertion holds for effective even-selection images on subsets
+ of fixed-width logarithmic intervals, including the compressed good edges,
+ with only $B^{O_r(1)}$ choices of fixed offsets and fixed dilation factors.
+ \end{proposition}
+@@ -1101,15 +1101,15 @@
+ nonzero modulo it. The theorem therefore gives
+ $O(N^{s/2+\varepsilon'})$ choices for the selected centres.
+ Summing the $O_r(1)$ choices of blocks and $O(N^{r-s})$ other centres
+-gives the stronger bound $O(N^{r-s/2+\varepsilon'})$.
+-For $s\ge2$, $s/2\ge2s/(2s+1)$, so this implies the displayed bound.
++gives $O(N^{r-s/2+\varepsilon'})$.
+ 
+ The same theorem permits the effective images of all fixed-width blocks
+ in its stated height range. Fixed dilations preserve that range, and
+ the $B^{O_r(1)}$ offset and motif choices are absorbed by reducing
+-$\varepsilon'$. The injectivity in the statement identifies the
+-nonzero projections with nonempty even selections; no count for
+-formal vectors with zero effective image is used.
++$\varepsilon'$. Injectivity of the local selection maps is unnecessary:
++the projections must be nonzero in their own effective images, even when
++they vanish modulo the old space. Formal vectors with zero local image
++are not counted.
+ \end{proof}
+ 
+ \begin{proposition}[A fixed number of exposed source windows]
+--- a/companion_sections/cores.tex
++++ b/companion_sections/cores.tex
+@@ -226,10 +226,11 @@
+ $O_\varepsilon(N^{-5/4+\varepsilon})$ for channel $3:4$.
+ For $h\ge3$, Proposition~\ref{p1:fixed:compressed} gives
+ \[
+- O_{h,\varepsilon}(N^{-\kappa_b+1/5+\varepsilon}),
++ O_{h,\varepsilon}(N^{-\kappa_b+\varepsilon}),
+  \qquad \kappa_b=2-1/b,\quad b\in\{3,4\}.
+ \]
+-The largest of these bounds is $O(N^{-22/15+\varepsilon})$.
++For $h\ge3$, the larger of the two channel bounds is
++$O(N^{-5/3+\varepsilon})$.
+ Propagation is applied after replacing the compressed seed by its original
+ windows. The number of seeds and placements in a family of fixed size is
+ bounded in terms of $r$. These cases prove the separated estimate by
+@@ -472,7 +473,7 @@
+ It remains to treat finitely many $2\le r<5000$. For separated
+ configurations with fixed $r\ge3$,
+ Proposition~\ref{p1:fixed:compressed} bounds their homogeneous mass by
+-$O_{r,\varepsilon}(N^{-\kappa_b+1/5+\varepsilon})$.
++$O_{r,\varepsilon}(N^{-\kappa_b+\varepsilon})$.
+ This bounds both $q$ and $|\widehat c|$, since the latter is at most
+ the homogeneous mass even when the full affine configuration is
+ incompatible. For $r=2$, the pair-and-target estimate of
+--- a/companion_sections/fixed_moments.tex
++++ b/companion_sections/fixed_moments.tex
+@@ -213,19 +213,20 @@
+ \begin{proposition}[Fixed primitive mass after pair compression]
+ \label{p1:fixed:compressed}
+ Fix a channel \(a:b\in\{2:3,3:4\}\), and put
+-\(\kappa_b=2-1/b\). For every fixed \(r\ge3\), the total
++\(\kappa_b=2-1/b\). All original starts lie in \(G_N\) and are
++distinct and pairwise separated. For every fixed \(r\ge3\) and
++\(\varepsilon>0\), the total
+ homogeneous mass of primitive families consisting of
+ one exactly compressed pair in this channel and
+ \(r-1\) further original windows is
+ \begin{equation}
+  O_{r,C,\varepsilon}
+-       (N^{-\kappa_b+1/5+\varepsilon}).
++       (N^{-\kappa_b+\varepsilon}).
+  \label{p1:fixed:compressed-bound}
+ \end{equation}
+-For a compressed pair and just one further original
+-window the corresponding masses are, respectively,
+-\(O_\varepsilon(N^{-4/3+\varepsilon})\) and
+-\(O_\varepsilon(N^{-5/4+\varepsilon})\).
++For a compressed geometric good pair and just one further original
++window with positive relative rank loss, the mass is
++\(O_{C,\varepsilon}(N^{-41/30+\varepsilon})\) in either channel.
+ The affine positive masses satisfy the same bounds.
+ \end{proposition}
+ 
+@@ -260,20 +261,16 @@
+ homogeneous marginals are exactly $p$.
+ The source sum is $\sum_e q_0(e)\ll N^{1-\kappa_b+2\varepsilon'}$,
+ giving total $O(N^{-\kappa_b+3\varepsilon'})$.
+-Reduce the margins and absorb the motif choices. This proves a
+-stronger bound than \eqref{p1:fixed:compressed-bound}.
+-
+-The two-block case is the positive extension estimate
+-in Proposition~\ref{p1:arith:fixed-homogeneous-seeds}.
+-For affine compatible extensions it also follows
+-directly from the positive Palm bounds:
+-if the additional rank loss is an integer \(d\ge1\),
+-\[
+- p2^d\le2(p2^d-p)_+.
+-\]
+-The ordered pair mass times its mean positive Palm
+-excess is \(O(N^{-4/3+\varepsilon})\) in \(2:3\)
+-and \(O(N^{-5/4+\varepsilon})\) in \(3:4\).
++Reduce the margins and absorb the motif choices to obtain
++\eqref{p1:fixed:compressed-bound}.
++
++For one target, a geometric good source has a nonzero pair relation.
++Positive crossing with the target therefore makes the original triple
++connected. Apply the separated homogeneous version proved in
++Section~\ref{p14:comp:third:aligned-family}. A triple has at most three
++choices of its marked source pair, so this bounds the full extension
++mass by $O_{C,\varepsilon}(N^{-41/30+\varepsilon})$.
++This argument uses neither affine compatibility nor a signed cumulant.
+ \end{proof}
+ 
+ \subsection{Proof of Theorem~\ref{p1:fixed:moments}}
+--- a/companion_sections/guide.tex
++++ b/companion_sections/guide.tex
+@@ -70,6 +70,9 @@
+ Proposition~\ref{p1:fixed:primitive} uses
+ Proposition~\ref{p13:transfer:primitive}. These geometric inputs
+ are proved independently of the moment theorem and either law reconstruction.
++The one-target clause of Proposition~\ref{p1:fixed:compressed} instead
++uses the separated homogeneous triple argument in
++Section~\ref{p14:comp:third:aligned-family}.
+ 
+ \paragraph{Entering a proof and returning to the article.}
+ The following local routes lead to the complete proof subsection,
+--- a/companion_sections/pair_rigidity.tex
++++ b/companion_sections/pair_rigidity.tex
+@@ -16,9 +16,9 @@
+ 
+ \begin{lemma}[A local square threshold]
+ \label{p13:rig:local-square}
+-Let $B\ge2$, let $I\subset[-B,B]\cap\Z$ have positive even
++Let $B\ge2$ be an integer, let $I\subset[-B,B]\cap\Z$ have positive even
+ cardinality $m$, and let $x$ be a positive integer.  If
+-$x>(B+1)^{12m}$, then $\prod_{a\in I}(x+a)$ is not an integer
++$x>(B+1)^{5m}$, then $\prod_{a\in I}(x+a)$ is not an integer
+ square.
+ \end{lemma}
+ 
+@@ -27,7 +27,7 @@
+ If the product were a square, Lemma~\ref{p1:arith:runge},
+ with $R=B$ and $d=m$, would give $x\le(64B)^m$.
+ For $B\ge2$, we have $64B\le(B+1)^5$.
+-Thus $x\le(B+1)^{5m}\le(B+1)^{12m}$,
++Thus $x\le(B+1)^{5m}$,
+ contrary to the hypothesis.
+ \end{proof}
+ 
+--- a/companion_sections/third_cumulant.tex
++++ b/companion_sections/third_cumulant.tex
+@@ -151,3 +151,27 @@
+ The least of the exponents obtained is $41/30$.  Sum over the fixed
+ finite family $\mathcal F$ to conclude.
+ \end{proof}
++
++
++\paragraph{Homogeneous variant for separated triples.}
++The same $O_{C,\mathcal F,\varepsilon}(N^{-41/30+\varepsilon})$ bound
++holds for the sum of
++$q_0(T)=2^{-\dim\sum_{x\in T}S_x}$ over connected triples
++$T\subset G_N$ with distinct, pairwise separated starts and containing
++a source pair in $\mathcal A_{\rm raw}$ in one of the fixed channels.
++Here $q_0$ is the homogeneous probability, even when the original affine
++prescriptions are incompatible.
++
++To see this, repeat the proof above with $q_0$ in place of $q$.
++The source estimate \eqref{p13:third:source-weight} is a rank estimate
++and holds for $q_0(e)$; the target marginal is exactly $p$ on $G_N$.
++The nonaligned identity is
++$q_0(T)=q_0(e)p2^\delta$, giving the same $N^{-11/8+\varepsilon}$ bound.
++In the aligned sector all residual-kernel and merging estimates are
++phase-free. When two physical coefficients coincide, the imposed
++separation makes the corresponding interval interiors disjoint, so
++the $N^{-3/2+\varepsilon}$ estimate still holds without compatibility.
++The distinct-coefficient estimate is $N^{-41/30+\varepsilon}$, and the
++endpoint estimate follows from $q_0(T)\le q_0(e)$ as before.
++Exact contacts at distance $L$ remain allowed. This proves the stated
++homogeneous variant independently of the moment and reconstruction theorems.
+--- a/main_sections/pair_rigidity.tex
++++ b/main_sections/pair_rigidity.tex
+@@ -225,6 +225,9 @@
+ and degree.  Integrality over $K$ is sufficient.
+ \end{theorem}
+ 
++The proof in the Lean development gives the admissible value
++$\kappa=17$. This logarithmic power need not be optimized here.
++
+ \begin{corollary}[Sublinear counts in the offset box]
+ \label{p13:rig:sublinear-grid}
+ Fix $0\le a<1/2$ and $c_0>0$. Let $D_{\max}=D_{\max}(B)$

@@ -1,0 +1,104 @@
+{
+  "raw_diff_check_exit": 2,
+  "exact_review_data_and_inherited_whitespace_only": true,
+  "classified_existing_issues": [
+    {
+      "path": "docs/editorial-proposals/2026-11-07/scientific-strengthening/scientific-strengthenings.patch",
+      "line": 23,
+      "kind": "trailing whitespace",
+      "reason": "Required unified-diff context prefix on an empty context line; the exact reviewed patch applies."
+    },
+    {
+      "path": "docs/editorial-proposals/2026-11-07/scientific-strengthening/scientific-strengthenings.patch",
+      "line": 35,
+      "kind": "trailing whitespace",
+      "reason": "Required unified-diff context prefix on an empty context line; the exact reviewed patch applies."
+    },
+    {
+      "path": "docs/editorial-proposals/2026-11-07/scientific-strengthening/scientific-strengthenings.patch",
+      "line": 90,
+      "kind": "trailing whitespace",
+      "reason": "Required unified-diff context prefix on an empty context line; the exact reviewed patch applies."
+    },
+    {
+      "path": "docs/editorial-proposals/2026-11-07/scientific-strengthening/scientific-strengthenings.patch",
+      "line": 120,
+      "kind": "trailing whitespace",
+      "reason": "Required unified-diff context prefix on an empty context line; the exact reviewed patch applies."
+    },
+    {
+      "path": "docs/editorial-proposals/2026-11-07/scientific-strengthening/scientific-strengthenings.patch",
+      "line": 131,
+      "kind": "trailing whitespace",
+      "reason": "Required unified-diff context prefix on an empty context line; the exact reviewed patch applies."
+    },
+    {
+      "path": "docs/editorial-proposals/2026-11-07/scientific-strengthening/scientific-strengthenings.patch",
+      "line": 137,
+      "kind": "trailing whitespace",
+      "reason": "Required unified-diff context prefix on an empty context line; the exact reviewed patch applies."
+    },
+    {
+      "path": "docs/editorial-proposals/2026-11-07/scientific-strengthening/scientific-strengthenings.patch",
+      "line": 147,
+      "kind": "trailing whitespace",
+      "reason": "Required unified-diff context prefix on an empty context line; the exact reviewed patch applies."
+    },
+    {
+      "path": "docs/editorial-proposals/2026-11-07/scientific-strengthening/scientific-strengthenings.patch",
+      "line": 156,
+      "kind": "trailing whitespace",
+      "reason": "Required unified-diff context prefix on an empty context line; the exact reviewed patch applies."
+    },
+    {
+      "path": "docs/editorial-proposals/2026-11-07/scientific-strengthening/scientific-strengthenings.patch",
+      "line": 192,
+      "kind": "trailing whitespace",
+      "reason": "Required unified-diff context prefix on an empty context line; the exact reviewed patch applies."
+    },
+    {
+      "path": "manuscripts/paper-p1/editorial-strengthened-preview-2026-11-07/sources/companion_sections/arithmetic_appendix.tex",
+      "line": 1328,
+      "kind": "new blank line at EOF",
+      "reason": "Unmodified whitespace inherited verbatim from the preserved source copy; no normalization of reviewed mathematical source."
+    },
+    {
+      "path": "manuscripts/paper-p1/editorial-strengthened-preview-2026-11-07/sources/companion_sections/limits_appendix.tex",
+      "line": 1690,
+      "kind": "new blank line at EOF",
+      "reason": "Unmodified whitespace inherited verbatim from the preserved source copy; no normalization of reviewed mathematical source."
+    },
+    {
+      "path": "manuscripts/paper-p1/editorial-strengthened-preview-2026-11-07/sources/companion_sections/supplemental_arithmetic.tex",
+      "line": 391,
+      "kind": "new blank line at EOF",
+      "reason": "Unmodified whitespace inherited verbatim from the preserved source copy; no normalization of reviewed mathematical source."
+    },
+    {
+      "path": "manuscripts/paper-p1/editorial-strengthened-preview-2026-11-07/sources/main_sections/introduction.tex",
+      "line": 45,
+      "kind": "trailing whitespace",
+      "reason": "Unmodified whitespace inherited verbatim from the preserved source copy; no normalization of reviewed mathematical source."
+    },
+    {
+      "path": "manuscripts/paper-p1/editorial-strengthened-preview-2026-11-07/sources/main_sections/introduction.tex",
+      "line": 764,
+      "kind": "new blank line at EOF",
+      "reason": "Unmodified whitespace inherited verbatim from the preserved source copy; no normalization of reviewed mathematical source."
+    },
+    {
+      "path": "manuscripts/paper-p1/editorial-strengthened-preview-2026-11-07/sources/main_sections/pair_rigidity.tex",
+      "line": 274,
+      "kind": "trailing whitespace",
+      "reason": "Unmodified whitespace inherited verbatim from the preserved source copy; no normalization of reviewed mathematical source."
+    },
+    {
+      "path": "manuscripts/paper-p1/editorial-strengthened-preview-2026-11-07/sources/main_sections/stopped.tex",
+      "line": 31,
+      "kind": "trailing whitespace",
+      "reason": "Unmodified whitespace inherited verbatim from the preserved source copy; no normalization of reviewed mathematical source."
+    }
+  ],
+  "fresh_code_and_documentation_diff_check_exit": 0,
+  "scope": "No frozen source or exact patch byte changed to normalize inherited or unified-diff data whitespace."
+}

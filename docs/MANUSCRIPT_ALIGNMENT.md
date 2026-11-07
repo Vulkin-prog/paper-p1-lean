@@ -76,6 +76,34 @@ in-memory controls distinguish three valid cases from 26 invalid ones.
 This adds no mathematical result or ledger entry. See
 validation/editorial-preview-integrity/README.md for scope and actual checks.
 
+A fourth, separately preserved review copy now integrates five scientific
+dispositions already justified by the existing development. T9.1 uses
+the threshold (B+1)^(5m); T1.14 states N^(r-s/2+epsilon) without local
+injectivity, retaining nonzero effective projections; T4.4 states the
+multi-target exponent -kappa_b and the one-target exponent -41/30 in
+both raw geometric good-pair channels. The one-target proof is an
+explicit positive homogeneous argument for connected separated triples
+in G_N, with source-pair multiplicity at most three, not a signed
+cumulant argument. A note outside the unchanged attributed theorem 13.4
+records the internally proved logarithmic exponent 17.
+Fifteen existing proposition types were actually extracted and axiom
+audited in two scopes, actual exits zero; their bodies and the exact
+diff were read by the separate instance, with no necessary correction.
+Three numbered blocks change, 164 remain byte-identical to the prior
+simplified copy, and all 167 result identities/numbers and 548 labels
+persist. The article and companion remain 64/101 pages. All 165 pages
+and 29 full detail pages were actually viewed without observed defects.
+The added scientific explanations cost 28 source lines; the earlier
+277-line saving is historical, not the current net source saving.
+No new Lean theorem or historical ledger entry is added. This exposes
+existing stronger bounds; it does not make the old weaker statements
+false or change the final approximation exponents. The last complete
+proof replay remains checkpoint 1004. A separate CI integrity check
+has 12 passing controls, including ten intentional invalid cases.
+See editorial-proposals/2026-11-07/scientific-strengthening/README.md.
+All prior manuscripts, previews and frozen reports remain preserved;
+the six registry dossiers/scopes are unchanged and Palomar stays on hold.
+
 Historical checkpoint P1-MATH-1003: Two concrete irregular-window examples
 separate the formal row kernel, effective relative nullity and true
 homogeneous probability. The start x=18,L=10 has rank nine, actual

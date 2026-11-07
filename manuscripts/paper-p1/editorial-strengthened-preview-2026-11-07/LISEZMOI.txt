@@ -1,0 +1,68 @@
+P1 ET COMPAGNON — SIMPLIFICATIONS ET BORNES RENFORCÉES
+7 novembre 2026
+
+La copie la plus récente conserve les treize simplifications relues et compte
+64 pages pour l’article, 101 pour le compagnon : quatre pages de moins que la
+version 1.8. Aucun résultat numéroté n’a été supprimé. Les versions antérieures,
+leurs aperçus et leurs rapports restent préservés. Cette copie est soumise à
+la relecture de l’auteur ; elle n’est pas une nouvelle version adoptée.
+
+Les renforcements, déjà démontrés dans le développement Lean, sont intégrés :
+- T9.1 : seuil (B+1)^(5m), au lieu de (B+1)^(12m), pour B entier≥2.
+- T1.14 : compte N^(r−s/2+ε), avec projections effectives non nulles, sans
+  injectivité locale. Les paramètres de forme restent fixés avant N.
+- T4.4, plusieurs cibles : exposant −κ_b, au lieu de −κ_b+1/5.
+- T4.4, une cible : exposant 41/30 dans les deux canaux géométriques bons,
+  avec une preuve homogène positive limitée aux triples connexes séparés de G_N.
+  La séparation, le croisement positif et le facteur de multiplicité≤3 sont
+  écrits. Les probabilités affines sont dominées point par point.
+- Après 13.4 : remarque sur le témoin logarithmique κ=17 fourni par la preuve
+  interne, hors du théorème attribué à BCN, laissé inchangé.
+
+Les anciennes bornes faibles restent vraies. Ces cinq dispositions correspondent
+à trois énoncés modifiés et une remarque non numérotée ; elles ne constituent
+ni cinq nouvelles corrections d’énoncés faux, ni cinq nouvelles preuves Lean.
+Le journal historique reste à 1004 étapes. Les deux corrections originales
+nécessaires restent T1.10 et T5.1. Les taux finaux du papier sont conservés.
+
+La seconde instance a relu le diff exact, les corps et les 15 types compilés,
+sans lacune mathématique confirmée ni correction nécessaire. Les extractions
+ont effectivement terminé avec sortie 0 et les seuls axiomes standards.
+L’ancien alias plus faible de T9.1 n’est pas utilisé seul pour justifier 5m,
+ni celui de T4.4 pour justifier 41/30. Le nouveau plan de 167 résultats donne
+les entrées renforcées séparément des anciens faisceaux de preuves.
+
+Les 167 résultats et leurs numéros, ainsi que les 548 labels restants, sont
+conservés. 164 blocs numérotés sont identiques à l’aperçu simplifié précédent.
+Les contre-exemples, la table complète des marges, la déclaration d’assistance
+par IA, les résultats positionnels et les ordres croissants demeurent.
+Les explications scientifiques ajoutent 28 lignes, sans augmenter les pages.
+Le gain historique de 277 lignes des trois passes de simplification se rapporte
+au stade précédent ; il ne faut pas le présenter comme le gain net actuel.
+
+Les deux PDF ont été compilés en six exécutions réussies. Leurs 165 pages ont
+été vues en 11 planches, avec 29 pages entières réellement inspectées : aucun
+défaut de présentation observé. Les 63 rendus détaillés disponibles ne sont
+pas tous présentés comme inspectés. Un nouveau contrôle automatique relie
+les sources au diff relu et aux types compilés ; 12 cas de vérification passent,
+dont dix altérations intentionnelles refusées. Revue assistée par IA, contrôle
+du noyau Lean et certification humaine restent des notions distinctes.
+
+Le dernier replay complet est toujours celui du checkpoint 1004, sous Lean
+4.36.0-rc2 : 18 629 étapes, 19 991 contrôles d’axiomes et 19 914 références,
+tous réussis. Cette passe ne prétend pas avoir rejoué tout le développement.
+
+Entrée du dépôt : docs/editorial-proposals/2026-11-07/scientific-strengthening/.
+Sources/PDF : manuscripts/paper-p1/editorial-strengthened-preview-2026-11-07/.
+Les six dossiers Palomar couvrent toujours les 17 familles et 68 sélections,
+avec Brice Pouly et ORCID 0009-0008-8491-2467. Aucune soumission n’est lancée.
+
+Dépôt : https://github.com/Vulkin-prog/paper-p1-lean
+
+RECONSTRUCTION DES PDF
+Depuis sources/, créer build/, puis exécuter alternativement trois fois :
+pdflatex -no-shell-escape -interaction=nonstopmode -halt-on-error -output-directory=build main.tex
+pdflatex -no-shell-escape -interaction=nonstopmode -halt-on-error -output-directory=build companion.tex
+Conserver les deux PDF dans le même dossier pour leurs liens croisés.
+Le constructeur v1.8 mentionné dans le guide vise les sources v1.8 archivées ;
+utiliser les commandes ci-dessus pour cette copie distincte.

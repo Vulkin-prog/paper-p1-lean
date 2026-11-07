@@ -1,14 +1,27 @@
 # Reprise éditoriale après vérification des interfaces
 
-La copie de relecture la plus récente est l’[aperçu simplifié de 165 pages](editorial-proposals/2026-11-07/proof-simplification/README.md)
-(article : 64 ; compagnon : 101). Elle applique les cinq précisions initiales
-et les treize simplifications désormais relues, avec leurs sources et preuves
-existantes. L’[index d’intégration](editorial-proposals/2026-11-07/integration-status.json)
-distingue chaque proposition de l’historique des 1004 étapes de formalisation.
-Les 167 résultats et leurs numéros sont conservés ; trois blocs explicitent
-un contexte hérité par rapport à la version 1.8 archivée. Quatre labels
-d’équations internes sans usage extérieur ont été supprimés avec leur preuve,
-sans réaffectation ; les autres renvois sont reconstruits.
+La copie de relecture la plus récente est l’[aperçu renforcé de 165 pages](editorial-proposals/2026-11-07/scientific-strengthening/README.md)
+(article : 64 ; compagnon : 101). Elle conserve les cinq précisions initiales
+et les treize simplifications, puis intègre des bornes déjà prouvées plus fortes
+dans T9.1, T1.14 et T4.4. La clause à une cible reçoit son raccord homogène
+positif explicite, et une remarque précise le témoin logarithmique 17 de 13.4,
+hors du théorème attribué. Les [cinq dispositions scientifiques](editorial-proposals/2026-11-07/scientific-strengthening/amendments.json)
+renvoient au journal existant et à 15 types réellement compilés, relus séparément.
+
+Les 167 résultats et leurs numéros restent présents. Par rapport à 1.8, trois
+blocs antérieurs précisaient déjà un contexte hérité ; les trois énoncés
+renforcés s’y ajoutent. Les 161 autres blocs restent identiques. Les 548 labels
+restants sont conservés ; les quatre anciens labels d’équations retirés avec
+leur preuve restent sans réaffectation. Les nouvelles explications ajoutent 28
+lignes à l’aperçu simplifié, sans augmenter son nombre de pages. Le gain de 277
+lignes documenté pour les treize coupes se rapporte à ce stade précédent.
+
+Les [trois aperçus de simplification](editorial-proposals/2026-11-07/integration-status.json)
+et leurs reçus restent figés. Leur index décrit cette chaîne historique,
+pas l’état ultérieur de la copie scientifique renforcée. Cette dernière possède
+son propre reçu, sa revue du diff et son contrôle automatique. Aucune de ces
+passes ne constitue une nouvelle version adoptée ni un nouvel énoncé original
+déclaré faux. Les deux corrections nécessaires restent celles rappelées ci-dessous.
 
 Cette note conserve la justification des propositions initiales, en complément
 de la [relecture initiale](reviews/2026-11-07/RAPPORT_FR.txt) et de la

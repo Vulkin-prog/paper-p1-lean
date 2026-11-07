@@ -1,0 +1,364 @@
+{
+  "schema_version": 1,
+  "status": "verified_separate_strengthened_preview",
+  "date": "2026-11-07",
+  "documentary_base_commit": "2e8aff1f1140589d1b86e534dd86b6ec108a077a",
+  "proof_source_commit": "7bfc953cd6092eebfbae5f24aeb72b7180693537",
+  "package": "manuscripts/paper-p1/editorial-strengthened-preview-2026-11-07",
+  "base_package": "manuscripts/paper-p1/editorial-simplified-preview-2026-11-07",
+  "preserved_versions_and_prior_previews_changed": false,
+  "new_lean_theorems": 0,
+  "new_ledger_entries": 0,
+  "historical_mathematical_ledger_entries": 1004,
+  "scientific_amendment_count": 5,
+  "independent_concrete_diff_review": {
+    "path": "docs/editorial-proposals/2026-11-07/scientific-strengthening/independent-patch-review.json",
+    "sha256": "a59d5218f755fe983a169845852437abd1d3816a53f9dc7320ecffacffe0bbc7",
+    "mathematical_gaps_confirmed": 0
+  },
+  "preliminary_review": {
+    "path": "docs/editorial-proposals/2026-11-07/scientific-strengthening/preliminary-review.json",
+    "sha256": "692fe8fb06e4ae1d68feb925ca3d468c7a652787f4031ce61abd228e8a13a046"
+  },
+  "patch": {
+    "path": "docs/editorial-proposals/2026-11-07/scientific-strengthening/scientific-strengthenings.patch",
+    "sha256": "bee3ca103fad25e2bfbd4f11f8f14ef9ec787f7df8afa314d745ef6d4558d180"
+  },
+  "frozen_initial_patch_validation": {
+    "path": "docs/editorial-proposals/2026-11-07/scientific-strengthening/patch-validation.json",
+    "sha256": "b01d14b6b3029215e573a80140e0f5ecf19103dc2d8ff96f76aac95c38adab7d"
+  },
+  "compiled_scope": {
+    "path": "docs/editorial-proposals/2026-11-07/scientific-strengthening/scope/compiled-types.json",
+    "sha256": "5ab14198b8f5c5937835c2296a654890d2a6711e96924db3e4163aa7980c417e",
+    "validation_path": "docs/editorial-proposals/2026-11-07/scientific-strengthening/scope/compiled-types-validation.json",
+    "validation_sha256": "521cb6ee6c702694b7d73cb5ea1af7d6cf7e8624a0d31d54822136e640b00673",
+    "inventory_path": "docs/editorial-proposals/2026-11-07/scientific-strengthening/scope-declarations.json",
+    "actual_exit_code": 0,
+    "existing_declarations": 12,
+    "propositions_audited": 12,
+    "standard_axioms_only": true
+  },
+  "bridge_compiled_scope": {
+    "path": "docs/editorial-proposals/2026-11-07/scientific-strengthening/bridge-scope/compiled-types.json",
+    "sha256": "e045540f002e4df3c782daf11a071870fedbb967cb3aa1d18939b45fde799779",
+    "validation_path": "docs/editorial-proposals/2026-11-07/scientific-strengthening/bridge-scope/compiled-types-validation.json",
+    "validation_sha256": "01b9a95ee788d6d8b5fd5b3e0c9894538ab88ace1ec5bd52d2eb20a22518f6c2",
+    "inventory_path": "docs/editorial-proposals/2026-11-07/scientific-strengthening/bridge-scope-declarations.json",
+    "actual_exit_code": 0,
+    "existing_declarations": 3,
+    "propositions_audited": 3,
+    "standard_axioms_only": true
+  },
+  "source_files": 48,
+  "scientific_source_sha256": {
+    "assistance.tex": "5459338ba44d2a9d4370198f051db42c76d0a4a241d38a523d821127f47d47be",
+    "bibliography.tex": "49ff08f6732d8928302ad4aff31bab8c69e753b1e030ad280a552d1576685edb",
+    "companion.tex": "7cc3a79f70c1515f74689fe65975d065647ec7844c55ae6b9d62baa4276af671",
+    "companion_sections/arithmetic.tex": "944fb581259756096535c49dada0d3f31d1652bc1010aacbffe3174de5ed0d43",
+    "companion_sections/arithmetic_appendix.tex": "41878897337c3b5c3d1119591c98cc2c450e54524c231c90b90b64b1f45a3355",
+    "companion_sections/arithmetic_consequences.tex": "6b65c0b35a1077bef327644732aacc239f9a6ad50af40a1136b22d00d4f08a46",
+    "companion_sections/closure.tex": "c4e522fa1b996c1e7a83b3e47e81e1abac99623a1ff408d74b7a30c643a29268",
+    "companion_sections/confinement.tex": "474b3ca1ae3c0400495204bbd083ed355ffe80faaff413f9522d411e56ef8bf0",
+    "companion_sections/cores.tex": "d9961c099e8e70d3a260fd7ec43443d0fd9e222aa759e991c3dae9b30ab17b73",
+    "companion_sections/discussion.tex": "049daf41799e840d6e3a71a33463f91f345120b1bd0902f7cb668374e7949135",
+    "companion_sections/exact_transfer.tex": "e206bbb8c7a5fd270d07a9e4e20a33b450ad02a6f59a4dfe57647c9fa80b0e19",
+    "companion_sections/fixed_moments.tex": "f1a485e16cfacee3bb0d16acb17bc1d1513ff554528de0e735602386fd0292d4",
+    "companion_sections/guide.tex": "d577335e0bf99b67f7e1e859c2e27593f7db1893feb58d9e0eca20476cb463d1",
+    "companion_sections/half_counts.tex": "f27be44ea2689b57455cfa6cd59f7f0104e9a78b376d690a397dc4fbdcac57de",
+    "companion_sections/limits_appendix.tex": "4c774549734a145a06e5e4786bc22eef45af607da92389e75b7c7775fcae08c4",
+    "companion_sections/moment_obstruction.tex": "68d14a0fefd9caabc9960b5fe26088a3cbe139374f31a6fb5a1152ecac39f7ed",
+    "companion_sections/offset_geometry.tex": "b4b12b1fe8471ace075b882cadfe84e207f9b7d5303d22f64dfbc93391cfc2ef",
+    "companion_sections/pair_rigidity.tex": "049b7ca4c2618648c4734c7fc9f4352ab4f4e347d519d573a7d37713810f484b",
+    "companion_sections/short_supports.tex": "7b096de013726a20c738635657990b89ba89d287444ac175fd5f5dbba1763f8e",
+    "companion_sections/stopped.tex": "f2d257e4a39239c707e12154984e1aada147518814a7ab5bc1838e2f5ce17a0c",
+    "companion_sections/supplemental_arithmetic.tex": "e00b3138b8b97c6cc26d3c52672b26bc1bb6d4828598120702439e77b182a829",
+    "companion_sections/third_cumulant.tex": "f6ada4e998c540a7598f7b199fa5badf7024f92191668e7ac20f1eebdfb2a6a7",
+    "companion_sections/triple_activities.tex": "5de2149a4a93690f08b9696a278fad7d23a04ff7f30b01dd83d7447686ad2979",
+    "companion_sections/uniform_appendix.tex": "894672842e0892daed0f5e97ec522ebaff6a809e0f7f5f01c64c73f4eaf934a5",
+    "formalization.tex": "22f43b5c343a96c22c8b0a6037842c4edae8d910d0c2979a7ed3a1edf3e69206",
+    "main.tex": "56ea8c409804141cc3df7803e26be191ecfaebb5746a5713a6206fa4679e3348",
+    "main_sections/abstract.tex": "866ef4bc3e4dbb2fedea1a4bc067aaa349789f61d290db86fc582cc56c340494",
+    "main_sections/affine_algebra.tex": "34fea577c41c259edbef9b04b52bd501324c30c284cb979a06cbc53fb30e4bcb",
+    "main_sections/arithmetic.tex": "fc8195cec22f71fa22cb7874066dd83bf60bd40f9c73233cb218adb5d96e9b40",
+    "main_sections/channel_hierarchy.tex": "bdca79979d65457ea356da0f75f9233a993e7a2e08e54abdbfd892b4a431cbb4",
+    "main_sections/closure.tex": "88068742282067a54f0b49c106ce57db811285f109f75dfa821ed7260cf8e299",
+    "main_sections/confinement.tex": "e7ea205606d76cad7c2f5837e97c2353d3ec17c0af7a12fd856fcdca4c479767",
+    "main_sections/cores.tex": "f00e26006c6cb5ecda5f007d26c068c12fbb3baba8919f4e708f4bb23fe11d6b",
+    "main_sections/discussion.tex": "4525701ce6bf0b2cb83abdc4bbbfa560efa0cb02879d7371a0b1317af77e5a24",
+    "main_sections/exact_setup.tex": "74fe4e07938ff4f091629028299779e6bb2cf38f7325ed613180e6d2fbd58602",
+    "main_sections/exact_transfer.tex": "072d858b3c237889d370cf190a0ccba579209acc50e97f178348902b22d94e6f",
+    "main_sections/fixed_moments.tex": "aeb2bbd50f3034310f7944271aeb5221f86d99726a4edcdbe5bf4b3f2cbcbe49",
+    "main_sections/half_counts.tex": "c0617cd80434a68255f0668a41a31fa13c0f7b7759bd1219912dd7ce43808d33",
+    "main_sections/introduction.tex": "0f99240335f710a4bc919836a9d717b062abfd3266ae1bcd76c008525e09ada9",
+    "main_sections/limits_appendix.tex": "9b517cf38874aa3240cc6f6121a34ebd6f9a368563473b8840152dc419bdbfb0",
+    "main_sections/optimal_closure.tex": "3dd21ec1294dd1d0a1baa7b9325c6afa8623517986e419a06e7aa9ef8531a3db",
+    "main_sections/pair_rigidity.tex": "ac8b5be6b83c3f9b9615396bc386b2f2388a9f2e5fdbd96ea12d5e35afffaabb",
+    "main_sections/quartic_lower.tex": "f994e541a70c7b177d9d52290b23a5a0e67322a8cc71cc38836e27576a6906ad",
+    "main_sections/short_supports.tex": "377fceab74eb1d6473f2635f8f9f9290e12fcac97ca1dfa99149bf0fdaf22d0f",
+    "main_sections/stopped.tex": "86d9baeed211a18303210d80b98481c15b6a0e16a9c6d2c569f2977de62879e6",
+    "main_sections/third_cumulant.tex": "95154600c27253c8adb8c658ee6277d4f74119220fe9b5a31acdb1cb365bd7cd",
+    "main_sections/triple_activities.tex": "c693ef06624425be0be3928a4e11261ded3f53d96f62fa1cc273d9eb61a15d82",
+    "preamble.tex": "dcd4983caca692dadf98e47e9bc21e2774943fab32123e35615955edee331f99"
+  },
+  "delivered_source_sha256": {
+    "assistance.tex": "5459338ba44d2a9d4370198f051db42c76d0a4a241d38a523d821127f47d47be",
+    "bibliography.tex": "49ff08f6732d8928302ad4aff31bab8c69e753b1e030ad280a552d1576685edb",
+    "companion.tex": "f0eb8fc23030f08348ae27eb72929146786a4b06b4d8279385999097c10ae5f0",
+    "companion_sections/arithmetic.tex": "944fb581259756096535c49dada0d3f31d1652bc1010aacbffe3174de5ed0d43",
+    "companion_sections/arithmetic_appendix.tex": "41878897337c3b5c3d1119591c98cc2c450e54524c231c90b90b64b1f45a3355",
+    "companion_sections/arithmetic_consequences.tex": "6b65c0b35a1077bef327644732aacc239f9a6ad50af40a1136b22d00d4f08a46",
+    "companion_sections/closure.tex": "c4e522fa1b996c1e7a83b3e47e81e1abac99623a1ff408d74b7a30c643a29268",
+    "companion_sections/confinement.tex": "474b3ca1ae3c0400495204bbd083ed355ffe80faaff413f9522d411e56ef8bf0",
+    "companion_sections/cores.tex": "d9961c099e8e70d3a260fd7ec43443d0fd9e222aa759e991c3dae9b30ab17b73",
+    "companion_sections/discussion.tex": "049daf41799e840d6e3a71a33463f91f345120b1bd0902f7cb668374e7949135",
+    "companion_sections/exact_transfer.tex": "e206bbb8c7a5fd270d07a9e4e20a33b450ad02a6f59a4dfe57647c9fa80b0e19",
+    "companion_sections/fixed_moments.tex": "f1a485e16cfacee3bb0d16acb17bc1d1513ff554528de0e735602386fd0292d4",
+    "companion_sections/guide.tex": "d577335e0bf99b67f7e1e859c2e27593f7db1893feb58d9e0eca20476cb463d1",
+    "companion_sections/half_counts.tex": "f27be44ea2689b57455cfa6cd59f7f0104e9a78b376d690a397dc4fbdcac57de",
+    "companion_sections/limits_appendix.tex": "4c774549734a145a06e5e4786bc22eef45af607da92389e75b7c7775fcae08c4",
+    "companion_sections/moment_obstruction.tex": "68d14a0fefd9caabc9960b5fe26088a3cbe139374f31a6fb5a1152ecac39f7ed",
+    "companion_sections/offset_geometry.tex": "b4b12b1fe8471ace075b882cadfe84e207f9b7d5303d22f64dfbc93391cfc2ef",
+    "companion_sections/pair_rigidity.tex": "049b7ca4c2618648c4734c7fc9f4352ab4f4e347d519d573a7d37713810f484b",
+    "companion_sections/short_supports.tex": "7b096de013726a20c738635657990b89ba89d287444ac175fd5f5dbba1763f8e",
+    "companion_sections/stopped.tex": "f2d257e4a39239c707e12154984e1aada147518814a7ab5bc1838e2f5ce17a0c",
+    "companion_sections/supplemental_arithmetic.tex": "e00b3138b8b97c6cc26d3c52672b26bc1bb6d4828598120702439e77b182a829",
+    "companion_sections/third_cumulant.tex": "f6ada4e998c540a7598f7b199fa5badf7024f92191668e7ac20f1eebdfb2a6a7",
+    "companion_sections/triple_activities.tex": "5de2149a4a93690f08b9696a278fad7d23a04ff7f30b01dd83d7447686ad2979",
+    "companion_sections/uniform_appendix.tex": "894672842e0892daed0f5e97ec522ebaff6a809e0f7f5f01c64c73f4eaf934a5",
+    "formalization.tex": "22f43b5c343a96c22c8b0a6037842c4edae8d910d0c2979a7ed3a1edf3e69206",
+    "main.tex": "b43bfcb8578f5e4005059c2944d173a7227962fd3d68ae9483f2b26929c75a25",
+    "main_sections/abstract.tex": "866ef4bc3e4dbb2fedea1a4bc067aaa349789f61d290db86fc582cc56c340494",
+    "main_sections/affine_algebra.tex": "34fea577c41c259edbef9b04b52bd501324c30c284cb979a06cbc53fb30e4bcb",
+    "main_sections/arithmetic.tex": "fc8195cec22f71fa22cb7874066dd83bf60bd40f9c73233cb218adb5d96e9b40",
+    "main_sections/channel_hierarchy.tex": "bdca79979d65457ea356da0f75f9233a993e7a2e08e54abdbfd892b4a431cbb4",
+    "main_sections/closure.tex": "88068742282067a54f0b49c106ce57db811285f109f75dfa821ed7260cf8e299",
+    "main_sections/confinement.tex": "e7ea205606d76cad7c2f5837e97c2353d3ec17c0af7a12fd856fcdca4c479767",
+    "main_sections/cores.tex": "f00e26006c6cb5ecda5f007d26c068c12fbb3baba8919f4e708f4bb23fe11d6b",
+    "main_sections/discussion.tex": "4525701ce6bf0b2cb83abdc4bbbfa560efa0cb02879d7371a0b1317af77e5a24",
+    "main_sections/exact_setup.tex": "74fe4e07938ff4f091629028299779e6bb2cf38f7325ed613180e6d2fbd58602",
+    "main_sections/exact_transfer.tex": "072d858b3c237889d370cf190a0ccba579209acc50e97f178348902b22d94e6f",
+    "main_sections/fixed_moments.tex": "aeb2bbd50f3034310f7944271aeb5221f86d99726a4edcdbe5bf4b3f2cbcbe49",
+    "main_sections/half_counts.tex": "c0617cd80434a68255f0668a41a31fa13c0f7b7759bd1219912dd7ce43808d33",
+    "main_sections/introduction.tex": "0f99240335f710a4bc919836a9d717b062abfd3266ae1bcd76c008525e09ada9",
+    "main_sections/limits_appendix.tex": "9b517cf38874aa3240cc6f6121a34ebd6f9a368563473b8840152dc419bdbfb0",
+    "main_sections/optimal_closure.tex": "3dd21ec1294dd1d0a1baa7b9325c6afa8623517986e419a06e7aa9ef8531a3db",
+    "main_sections/pair_rigidity.tex": "ac8b5be6b83c3f9b9615396bc386b2f2388a9f2e5fdbd96ea12d5e35afffaabb",
+    "main_sections/quartic_lower.tex": "f994e541a70c7b177d9d52290b23a5a0e67322a8cc71cc38836e27576a6906ad",
+    "main_sections/short_supports.tex": "377fceab74eb1d6473f2635f8f9f9290e12fcac97ca1dfa99149bf0fdaf22d0f",
+    "main_sections/stopped.tex": "86d9baeed211a18303210d80b98481c15b6a0e16a9c6d2c569f2977de62879e6",
+    "main_sections/third_cumulant.tex": "95154600c27253c8adb8c658ee6277d4f74119220fe9b5a31acdb1cb365bd7cd",
+    "main_sections/triple_activities.tex": "c693ef06624425be0be3928a4e11261ded3f53d96f62fa1cc273d9eb61a15d82",
+    "preamble.tex": "f234f1393967c03696ea47571c8b809304b2b983226eb67a200a68d67b5543a4"
+  },
+  "numbered_result_identities_preserved": 167,
+  "numbered_blocks_identical_to_simplified_stage": 164,
+  "numbered_blocks_strengthened_this_pass": [
+    "p1:arith:fixed-support",
+    "p1:fixed:compressed",
+    "p13:rig:local-square"
+  ],
+  "frozen_v18_numbered_blocks_unchanged": 161,
+  "actual_typeset_result_numbers_preserved": 167,
+  "tex_label_occurrences": 548,
+  "compilation": {
+    "actual_latex_executions": 6,
+    "overfull_boxes": 0,
+    "unresolved_references": 0,
+    "missing_glyphs": 0,
+    "logs": {
+      "main": {
+        "path": "manuscripts/paper-p1/editorial-strengthened-preview-2026-11-07/validation/main.log.gz",
+        "gzip_sha256": "76db86d369aad4b205e2de26983a70e09d437a0aaa9e857a79696b1ceca34b9d",
+        "uncompressed_sha256": "03725ed18ccffadb922636c00a6566cc2455817786a4109a9cc3e3cb225a7bcf"
+      },
+      "companion": {
+        "path": "manuscripts/paper-p1/editorial-strengthened-preview-2026-11-07/validation/companion.log.gz",
+        "gzip_sha256": "17392356be91ebaf05199f8a6d30dfefe55aca0c46fdb792a61c99cde8622058",
+        "uncompressed_sha256": "282c521fec5b629730a33bfcec6037161669cb1912e3af756736fb18413d9470"
+      }
+    }
+  },
+  "visual_review": {
+    "status": "passed",
+    "reviewer": "primary Codex instance; AI-assisted visual review",
+    "pages_rendered_and_contact_sheet_reviewed": 165,
+    "contact_sheets_actually_inspected": 11,
+    "detail_pages_rendered": 63,
+    "full_detail_pages_actually_inspected": 29,
+    "detail_pages_actually_inspected": [
+      {
+        "document": "main",
+        "page": 1,
+        "image_sha256": "83f363d0f8cf61fddbfca1e20c0d9a8f9c40e1b29a346de241420e1cffbdea79"
+      },
+      {
+        "document": "main",
+        "page": 2,
+        "image_sha256": "5fa3d3b07dbd5990ce2169919a12c331749bbb048bcf312361cf5e65c034019c"
+      },
+      {
+        "document": "main",
+        "page": 30,
+        "image_sha256": "bf530d4016f3d6848f68fb5006098f40c353ad48d01aa3f82fe61603ecf8e08f"
+      },
+      {
+        "document": "main",
+        "page": 31,
+        "image_sha256": "2af30af78820b03992b3b28aaeb49e78d33158aad86946ee0ab23cedc72c1096"
+      },
+      {
+        "document": "main",
+        "page": 32,
+        "image_sha256": "b097912e5110e6500ae9b9755e8b0f46b7bb907dac720b54df266b3dce496d06"
+      },
+      {
+        "document": "main",
+        "page": 64,
+        "image_sha256": "2737fb3752f72e718d6aef6ded0b3e4a5e2a5ff019153286ea8bff4d12ca5be0"
+      },
+      {
+        "document": "companion",
+        "page": 1,
+        "image_sha256": "1ae6d6f0b18c3553443796f5b5ab82957d83f4e90e3fee0bddffc67f551ba895"
+      },
+      {
+        "document": "companion",
+        "page": 2,
+        "image_sha256": "dc3cad4bb82d1451d0f78926ad392df9aefcc539bf81f1c42eae8843ffcbbf90"
+      },
+      {
+        "document": "companion",
+        "page": 3,
+        "image_sha256": "817684c105a3d236d816dd47c1b18b85a8c22afce2ee3794f0d739ae923c2838"
+      },
+      {
+        "document": "companion",
+        "page": 4,
+        "image_sha256": "1302d59430a5d569896146ba8ec8885673b6d898b086d70dd8cfc1182aea6606"
+      },
+      {
+        "document": "companion",
+        "page": 16,
+        "image_sha256": "4e5d372bad5f5894f95081636ec42b0ff037d39c19ec1521d5f976733fa03f70"
+      },
+      {
+        "document": "companion",
+        "page": 17,
+        "image_sha256": "1a80fc5ce18ff0b0b60e12983f1f7b30df26906904d2417f6f6c51e622e422e1"
+      },
+      {
+        "document": "companion",
+        "page": 18,
+        "image_sha256": "c2c172a570cd6e40dbe88df53a134c61ba8736d93750a4ba5334c70017b214d5"
+      },
+      {
+        "document": "companion",
+        "page": 28,
+        "image_sha256": "86ee6d09e6f658b86227c2ed61d24fe4ad68387e0ddd8965dff4052c5520cb88"
+      },
+      {
+        "document": "companion",
+        "page": 29,
+        "image_sha256": "20a8a3827cbdd48597c30ba9b14b644195da637037939d508ca09ff07b832791"
+      },
+      {
+        "document": "companion",
+        "page": 30,
+        "image_sha256": "824aa34e61dd762b9557bbe87dcc5e0f7c6461336e07c8ce134b4636f331f952"
+      },
+      {
+        "document": "companion",
+        "page": 39,
+        "image_sha256": "e2e92c991ea62de90ee32f592582499a5e3f2d190b6ead22c1d38c11c3c8492a"
+      },
+      {
+        "document": "companion",
+        "page": 40,
+        "image_sha256": "a6ef5d630ebc8a2c9b9af8ae1c866689abec8824612be719b84e2c1f0dea1f17"
+      },
+      {
+        "document": "companion",
+        "page": 41,
+        "image_sha256": "d5c89a297015572e18b4916e88c0dce8650c37991076e5e1570d5dcd11ff770b"
+      },
+      {
+        "document": "companion",
+        "page": 45,
+        "image_sha256": "9589332777b07c092b5c5b3805a6922c35e4a82e8117e8b16224f9f0fb1c6646"
+      },
+      {
+        "document": "companion",
+        "page": 46,
+        "image_sha256": "922a138d3f3b5878dadc43b7de48a482b1be89c287cdfdfb4ab9263cf45cddc3"
+      },
+      {
+        "document": "companion",
+        "page": 47,
+        "image_sha256": "07b1ea6706f8d03a9b83841e6ef63428fbf2ae06c881480f5fdcf475f2931bd3"
+      },
+      {
+        "document": "companion",
+        "page": 48,
+        "image_sha256": "28dbaba3b076428a97442f46f5d4f0ff9ecff1bc9977c640a66f00e493b53de7"
+      },
+      {
+        "document": "companion",
+        "page": 54,
+        "image_sha256": "65c48b01baecef682051a086ffe7904f04658ce433f52972c6ff0819dec8876f"
+      },
+      {
+        "document": "companion",
+        "page": 55,
+        "image_sha256": "db85369a058d23885e43fdafbad4955de8a5f76297e7f353b61a0e638bf70d57"
+      },
+      {
+        "document": "companion",
+        "page": 56,
+        "image_sha256": "6d072ba0c591da7a6259ef7f43d10f0a9ad9fb602f5b01737f00b2974ac39651"
+      },
+      {
+        "document": "companion",
+        "page": 57,
+        "image_sha256": "9968f81390989690d3492e02dffdd886672600e23e815142d5b6adfcbe6bfec8"
+      },
+      {
+        "document": "companion",
+        "page": 58,
+        "image_sha256": "e36477182683f17235af50369d849d039e1c7459f6adc32d5d0188e171547d02"
+      },
+      {
+        "document": "companion",
+        "page": 101,
+        "image_sha256": "94df19610211d1cd603487183b563235f14a7cd450a81543fdbb583f6e73768f"
+      }
+    ],
+    "observed_clipping_overlap_or_missing_glyph_defects": 0,
+    "pdf_sha256": {
+      "main": "ab3dea70e741cf125f8364b74a3e13b162b4f80c2aa8533b509659cbd31f121b",
+      "companion": "af51b28f5ffe1b79a6f0f9a86ccbe3e5e519edd34bcd74092868244bd5ac6038"
+    },
+    "scope": "All 165 pages viewed in eleven contact sheets, with 29 full-size pages actually inspected. Sixty-three detail renders were available; only the listed29 are claimed as inspected. First attempt had one2.76pt title overflow, fixed by shortening the paragraph heading before this final build; no remaining overflow in final logs."
+  },
+  "pdfs": {
+    "main": {
+      "filename": "P1_Strengthened_Editorial_Preview_Main_2026-11-07_EN.pdf",
+      "sha256": "ab3dea70e741cf125f8364b74a3e13b162b4f80c2aa8533b509659cbd31f121b",
+      "pages": 64,
+      "preserved_v18_pages": 65,
+      "actual_pages_saved": 1
+    },
+    "companion": {
+      "filename": "P1_Strengthened_Editorial_Preview_Companion_2026-11-07_EN.pdf",
+      "sha256": "af51b28f5ffe1b79a6f0f9a86ccbe3e5e519edd34bcd74092868244bd5ac6038",
+      "pages": 101,
+      "preserved_v18_pages": 104,
+      "actual_pages_saved": 3
+    }
+  },
+  "actual_total_pages_saved_from_v18": 4,
+  "prior_simplifications": "All thirteen applied proposals retained. Their historical277-line saving is not claimed as the new source-line saving after added scientific explanations.",
+  "palomar_status": "on_hold_at_user_request",
+  "registry_scopes_changed": false,
+  "scope": "Already-proved stronger bounds integrated into a separate review copy, with a positive homogeneous geometric argument. Fifteen existing declarations actually extracted; no new full proof replay. Independent AI-assisted review is distinct from kernel checking and human certification."
+}

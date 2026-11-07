@@ -1,0 +1,4 @@
+'PaperP1.HomogeneousRunMass.probability_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.HomogeneousRunMass.actual_joint_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.HomogeneousEffectiveConnectedChannel.uniform_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+Exported compiled scope types for 3 declarations

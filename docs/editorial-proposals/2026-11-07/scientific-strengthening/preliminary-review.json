@@ -1,0 +1,677 @@
+{
+  "schema_version": 1,
+  "status": "complete_frozen",
+  "review_stage": "preliminary_before_exact_diff",
+  "date": "2026-11-07",
+  "title": "Quatre renforcements existants et option homogène à une cible : portée scientifique et raccords",
+  "documentary_commit": "2e8aff1f1140589d1b86e534dd86b6ec108a077a",
+  "proof_source_commit": "7bfc953cd6092eebfbae5f24aeb72b7180693537",
+  "source_package": "manuscripts/paper-p1/editorial-simplified-preview-2026-11-07/sources",
+  "constraints": "Lecture seule du dépôt ; aucune délégation, exécutionLean/Lake,PDF,Palomar ou modification d’un rapport figé.",
+  "summary": {
+    "mathematical_gaps_confirmed_in_existing_preview": 0,
+    "old_results_declared_false": 0,
+    "new_proofs_or_new_coverage_claimed": 0,
+    "recommendation": "Intégrer les quatre acquis avec leurs domaines exacts ; garder l’option41/30 séparée jusqu’à la relecture du raccord homogène du diff.",
+    "four_strengthenings": [
+      "T9.1 :5m, seuil uniforme fini.",
+      "T1.14 :r−s/2, images effectives, centres toujours distincts.",
+      "T4.4 àt≥2 :−κ_b, interface actuelle inconditionnelle.",
+      "13.4 :κ=17 dans une phrase extérieure au théorème attribué àBCN."
+    ],
+    "one_target_option": "41/30 est prouvé sans dépendance aux moments ; une remarque homogène positive restreinte doit relier la preuve14.3 au domaine deT4.4.",
+    "final_rates_preserved": [
+      "4/3",
+      "41/30",
+      "4/5"
+    ]
+  },
+  "proposals": [
+    {
+      "id": "STR01",
+      "journal_id": "P1-MATH-0005",
+      "result": "T9.1",
+      "label": "p13:rig:local-square",
+      "verdict": "applicable_immediatement_sur_le_domaine_imprime",
+      "priority": 3,
+      "scientific_utility": "Renforcement fini propre, qui élimine une perte de constante déjà absente de la preuve. Pas de nouveau taux asymptotique global ni d’optimalité du seuil revendiqués.",
+      "locations": [
+        {
+          "file": "companion_sections/pair_rigidity.tex",
+          "lines": [
+            17,
+            32
+          ],
+          "source_commit": "2e8aff1f1140589d1b86e534dd86b6ec108a077a",
+          "absolute_path": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/paper-p1-lean/manuscripts/paper-p1/editorial-simplified-preview-2026-11-07/sources/companion_sections/pair_rigidity.tex"
+        }
+      ],
+      "current_statement": "x>(B+1)^(12m), B≥2, I fini d’offsets entiers distincts, m=|I|>0 pair.",
+      "proposed_statement": "Même conclusion sous x>(B+1)^(5m) ; le seuil plus fort encore x>(64B)^m est aussi prouvé.",
+      "exact_scope_and_quantifiers": [
+        "B,x sont des naturels dans le type ; B=L+1 est déjà entier dans le manuscrit.",
+        "Le cardinal m n’est pas supposé fixé : le théorème split-product est uniforme en degré. I est un Finset, donc les offsets sont distincts.",
+        "m>0 et pair, |a|≤B pour touta∈I. Le seuil suffit à donnerx≥2B ; aucune prémisse supplémentaire n’est à ajouter."
+      ],
+      "entry_points": [
+        "PaperP1.LocalSquareThreshold.local_square_threshold_power_five",
+        "PaperP1.LocalSquareThreshold.local_square_threshold_sharp"
+      ],
+      "historical_weaker_entry": "PaperP1.LocalSquareThreshold.companion_T9_1",
+      "proof_changes": [
+        "Dans la preuve imprimée, conserver les lignes26–29 et conclure directement par contradiction à5m. La dernière comparaison à12m devient inutile.",
+        "La preuve source passe par SplitProductBound.uniform_split_product, déjà fermée par Runge intégral et séparation de carrés ; aucun résultat de littérature non prouvé n’est supposé."
+      ],
+      "reference_implications": [
+        "Label et numéroT9.1 à conserver. Aucun nouveau renvoi nécessaire.",
+        "Les autres usages deT1.1 et la distance minimale à dénominateurlog(64B) ne sont pas à réoptimiser automatiquement."
+      ],
+      "proposed_tex": "Let $B\\ge2$ be the integer window parameter, let\n$I\\subset[-B,B]\\cap\\mathbb Z$ have positive even cardinality $m$,\nand let $x$ be a positive integer. If $x>(B+1)^{5m}$, then\n$\\prod_{a\\in I}(x+a)$ is not an integer square.",
+      "proposed_proof_tex": "The threshold implies $x\\ge2B$. If the product were a square,\nLemma~\\ref{p1:arith:runge}, with $R=B$ and $d=m$, would give\n$x\\le(64B)^m\\le(B+1)^{5m}$, a contradiction.",
+      "necessary_corrections_to_existing_preview": []
+    },
+    {
+      "id": "STR02",
+      "journal_id": "P1-MATH-0066",
+      "result": "T1.14",
+      "label": "p1:arith:fixed-support",
+      "verdict": "applicable_avec_precisions_effectives_et_parametres_fixes",
+      "priority": 1,
+      "scientific_utility": "Gain de demi-puissance par bloc effectivement actif et suppression d’une injection inutile de la sélection. Unifie les vrais blocs comprimés et les blocs à relations locales, sans compter leurs noyaux formels comme témoins.",
+      "locations": [
+        {
+          "file": "companion_sections/arithmetic_appendix.tex",
+          "lines": [
+            1080,
+            1113
+          ],
+          "source_commit": "2e8aff1f1140589d1b86e534dd86b6ec108a077a",
+          "absolute_path": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/paper-p1-lean/manuscripts/paper-p1/editorial-simplified-preview-2026-11-07/sources/companion_sections/arithmetic_appendix.tex"
+        },
+        {
+          "file": "main_sections/half_counts.tex",
+          "lines": [
+            11,
+            40
+          ],
+          "source_commit": "2e8aff1f1140589d1b86e534dd86b6ec108a077a",
+          "absolute_path": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/paper-p1-lean/manuscripts/paper-p1/editorial-simplified-preview-2026-11-07/sources/main_sections/half_counts.tex"
+        }
+      ],
+      "current_statement": "O(N^(r−2s/(2s+1)+ε)), r≥s≥2 ; extension qualifiée d’injective.",
+      "proposed_statement": "O(N^(r−s/2+ε)) pour centres distincts et images effectives ; aucune injectivité du morphisme de sélection.",
+      "exact_scope_and_quantifiers": [
+        "L’injectivité des centres du tuple reste nécessaire dans la population. Elle est distincte de l’injectivité supprimée de la sélection vers les classes carrées.",
+        "Une projection doit être un vecteur NON NUL de l’image effective S_i. Un mot formel non nul d’image nulle n’est pas un témoin admissible.",
+        "Les types généraux fixentr,s, borne de longueur du domaine des centres, constantes de hauteur et de largeur, bande critique etε avantN0. Ils quantifient ensuiteN≥N0,L,M,G et les vraies applications de blocs.",
+        "Les valeurs des blocs sont dans[aN,bN], a>0, et à distance≤D(L+1) du centre ; G est contenu dans un intervalle de longueurC_cnt*N. Aucun besoin de séparation physique au-delà de centres distincts.",
+        "La variante paramétrée fixe les dimensions deShapeCode et les bornes de coefficients avantN0, puis autoriseV≤F(L+1) et donne à la fois le compte de la population et celui des enregistrements.",
+        "On peut conserver la sous-classe séparée pour une intégration minimale ; la formulation plus générale à centres distincts correspond aussi aux types lus."
+      ],
+      "entry_points": [
+        "PaperP1.BlockSupportCount.critical_interval_count",
+        "PaperP1.BlockSupportParameters.critical_count",
+        "PaperP1.SeveralWindowProjectionCount.companion_T1_14"
+      ],
+      "proof_changes": [
+        "La preuve raccourcie imprimée obtient déjàr−s/2. Supprimer seulement la ligne d’affaiblissement1105 et remplacer la dernière phrase invoquant l’injectivité par l’existence d’un représentant de sélection paire pour tout vecteur effectif non nul.",
+        "Le complément fixé engendre l’ancien espace PLEIN de10.1. Les projections choisies peuvent être nulles modulo cet espace ; aucune hypothèse cachée de directité des sources.",
+        "Choisir les marges deε après les paramètres de largeur/dilation et avantN ; absorber lesB^O(1) motifs."
+      ],
+      "dependency_and_cycle": "10.1 → support effectif et fibres →T1.14 ; pas de recours aux moments, aux reconstructions ou à un compte supposé.",
+      "reference_implications": [
+        "Le renvoi du guide reste valide et ne change pas de numéro.",
+        "uniform_appendix.tex:55–63 et fixed_moments.tex:313–321 peuvent garder les anciens exposants comme affaiblissements explicites. Il ne faut pas en déduire automatiquement une meilleure borne de degré croissant : les certificats et le seuil uniforme restent séparés.",
+        "Conserver les autres usages de la borne à deux petits noyaux ; le raccourci deT1.14 ne les rend pas inutiles."
+      ],
+      "proposed_tex": "Fix integers $r\\ge s\\ge2$. For $r$ logarithmic blocks with\ndistinct centres in the height and width regime of\nTheorem~\\ref{p13:half:conditional}, the number of tuples admitting\na relation whose effective projection is nonzero in at least $s$\nblocks is\n\\[\n O_{r,C,D,\\varepsilon}\\bigl(N^{r-s/2+\\varepsilon}\\bigr).\n\\]\nHere each block space is the image of its even selections in the\nsquare-class space; the selection map need not be injective.\nThe same estimate allows $B^{O_r(1)}$ offset and motif choices with\nfixed width and dilation bounds. All these parameters are fixed\nbefore the scale threshold.",
+      "proposed_proof_tex": "Choose $s$ nonzero effective projections and fix the other\n$r-s$ centres. The chosen projections sum into the full value span\nof these fixed blocks, so Theorem~\\ref{p13:half:conditional} gives\n$O(N^{s/2+\\varepsilon'})$ choices. Summing over the complement and\nthe finitely many choices of blocks gives\n$O(N^{r-s/2+\\varepsilon'})$. Reduce $\\varepsilon'$ to absorb the\npolynomial number of offset and motif choices. Every nonzero\neffective vector has a nonempty even-selection representative;\nno injectivity of the selection map is required.",
+      "necessary_corrections_to_existing_preview": []
+    },
+    {
+      "id": "STR03",
+      "journal_id": "P1-MATH-0176",
+      "result": "T4.4, au moins deux cibles originales",
+      "label": "p1:fixed:compressed",
+      "verdict": "applicable_immediatement_preuve_deja_presente",
+      "priority": 2,
+      "scientific_utility": "Retire une perte fixe1/5 dans le coût d’une compression primitive ; donne5/3 et7/4 sur les deux canaux. La preuve imprimée contient déjà les puissances fortes.",
+      "locations": [
+        {
+          "file": "companion_sections/fixed_moments.tex",
+          "lines": [
+            213,
+            264
+          ],
+          "source_commit": "2e8aff1f1140589d1b86e534dd86b6ec108a077a",
+          "absolute_path": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/paper-p1-lean/manuscripts/paper-p1/editorial-simplified-preview-2026-11-07/sources/companion_sections/fixed_moments.tex"
+        }
+      ],
+      "current_statement": "O(N^(−κ_b+1/5+ε)), r≥3 fixé, t=r−1≥2.",
+      "proposed_statement": "O(N^(−κ_b+ε)), soitN^(−5/3+ε) en2:3 etN^(−7/4+ε) en3:4.",
+      "exact_scope_and_quantifiers": [
+        "Le paramètret≥2 est fixé avantC,ε etN0 ; les canaux sont(a,b)=(2,3) ou(3,4), copremiers, positifs.",
+        "EffectiveCompressedPrimitiveMass.uniform_mass requiert3≤b≤4 et contrôle toute la population à cibles effectives, sans hypothèse de régularité ni de compatibilité des événements originaux.",
+        "Le domaine scientifique imprimé régulier est une sous-population de ce théorème ; q0(e) est toujours la vraie masse homogène du bloc source, même si le joint affine est nul.",
+        "Les cibles sont distinctes, la source a une unité exacte et un vrai bloc normalisé ; le centrebx identifie la source à motif fixé.",
+        "Le cas d’une seule cible n’est pas couvert par cette étape et reste une option séparée."
+      ],
+      "entry_points": [
+        "PaperP1.EffectiveCompressedPrimitiveMass.uniform_mass",
+        "PaperP1.FixedCompressedPrimitiveTheorem.companion_T4_4"
+      ],
+      "current_unconditional_dependencies": [
+        "PaperP1.EffectiveCompressedPrimitiveMass.three_blocks",
+        "PaperP1.EffectiveCompressedPrimitiveElementaryMass.from_four",
+        "PaperP1.EffectiveCompressedDenseMass.uniform_bound",
+        "PaperP1.EffectiveCompressedDenseExtensions.uniform_extensions",
+        "PaperP1.UnconditionalDenseTwoTargetMass.article_15_2"
+      ],
+      "historical_interfaces_not_terminal_evidence": "Les noms UnderInputs deP1-MATH-0176 documentent un état ancien ; ils ne sont pas utilisés pour qualifier le résultat actuel d’inconditionnel.",
+      "proof_changes": [
+        "La preuve232–264 donne déjàN^(−κ_b+2ε′) pourt≥3, le secteur basN^(−κ_b−1/4+2ε′) et le secteur denseN^(−κ_b+3ε′) pourt=2. Réduire les marges et remplacer stronger bound than par la conclusion de la nouvelle borne.",
+        "Conserver la factorisation homogène, le centre normalisé, les trois disjonctions nécessaires à15.2 et la somme des sources. Aucun retour à l’ancienne géométrie supprimée deT4.3."
+      ],
+      "dependency_and_cycle": "T1.9+10.1+15.2 →T4.4 àt≥2 ; pas de moments/reconstruction ni de nouvelle preuve.",
+      "reference_implications": [
+        "Si cores.tex:229 et475 sont conservés avec+1/5, les identifier comme affaiblissements valables du nouveauT4.4.",
+        "Si ces formules aval sont renforcées, changer aussi cores.tex:232 de largest…N^(−22/15+ε) àN^(−5/3+ε).",
+        "fixed_moments.tex:306–307 reste exact : chaque exposant dépasse4/5. Les taux finaux4/3,41/30 et4/5 ne sont pas réannoncés plus forts.",
+        "La déclaration canoniqueFixedCompressedPrimitiveTheorem porte déjà les deux puissances fortes et les joints affines correspondants."
+      ],
+      "proposed_tex": "For every fixed $r\\ge3$ and every $\\varepsilon>0$, the total\nhomogeneous mass of the primitive families under consideration is\n\\[\n O_{r,C,\\varepsilon}\\bigl(N^{-\\kappa_b+\\varepsilon}\\bigr),\n \\qquad \\kappa_b=2-\\frac1b.\n\\]\nThe affine positive masses satisfy the same bound.",
+      "necessary_corrections_to_existing_preview": []
+    },
+    {
+      "id": "STR04",
+      "journal_id": "P1-MATH-0560",
+      "result": "13.4",
+      "label": "p13:rig:bcn",
+      "verdict": "precision_admissible_en_remarque_attribuee_a_la_preuve_independante",
+      "priority": 4,
+      "scientific_utility": "Rend explicite une constante logarithmique et l’ordre de son uniformité. Ne change ni la puissanceD², niH^(1/D), ni le régime de degré croissant des applications ; aucune optimalité de17.",
+      "locations": [
+        {
+          "file": "main_sections/pair_rigidity.tex",
+          "lines": [
+            208,
+            258
+          ],
+          "source_commit": "2e8aff1f1140589d1b86e534dd86b6ec108a077a",
+          "absolute_path": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/paper-p1-lean/manuscripts/paper-p1/editorial-simplified-preview-2026-11-07/sources/main_sections/pair_rigidity.tex"
+        },
+        {
+          "file": "bibliography.tex",
+          "lines": [
+            62,
+            73
+          ],
+          "source_commit": "2e8aff1f1140589d1b86e534dd86b6ec108a077a",
+          "absolute_path": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/paper-p1-lean/manuscripts/paper-p1/editorial-simplified-preview-2026-11-07/sources/bibliography.tex"
+        }
+      ],
+      "current_statement": "Existence d’unκ absolu dans une forme attribuée àBCN.",
+      "proposed_statement": "Ajouter hors du théorème attribué queκ=17 est admissible dans la preuve indépendante accompagnant le papier.",
+      "exact_scope_and_quantifiers": [
+        "κ=17 est fixé avant toute dimension. Pour chaque dimensionn, une constante positive c(n) précède le champ, l’idéal de la courbe, son degré etH.",
+        "Le type porte sur tout champ de caractéristique0, un idéal homogène premier en n+1 coordonnées, et un polynôme deHilbert d*t+b0 avecd>0. Ce sont des hypothèses géométriques de vraie courbe, pas une prémisse de compte.",
+        "points n I floor(H) est exactement la population des vecteurs entiersw de hauteur≤H satisfaisant tous les polynômes deI en(1,w). L’identification est prouvée par mem_real_points.",
+        "Le domaine impriméK⊂C,n>1 est une sous-classe ; inutile de l’élargir lors de cette seule précision.",
+        "H>2 est conservé, sans seuil asymptotique supplémentaire. La positivité de la constante vient de realConstant_pos."
+      ],
+      "entry_points": [
+        "PaperP1.IntegralAffineCurvePointCount.grid_bound",
+        "PaperP1.IntegralAffineCurvePointCount.finite_population",
+        "PaperP1.UniformIntegralCurveCount.realConstant_pos"
+      ],
+      "proof_changes": [
+        "Aucune preuve deBCN n’est remplacée implicitement. Le corps du théorème source injecte la population affine dans(1,w), puis applique la borne uniforme de courbe normalisée.",
+        "La puissance17 existe dans le profil plane indépendant. CurveProjectionHeightBudget montre que la projection et son coût en hauteur ne changent cette puissance que par un facteur dépendant de la dimension ; les degrés dépassant le budget de boîte sont traités séparément. La conversion de budget logarithmique binaire àlogH garde17.",
+        "Une phrase hors du théorème, telle que proposée, suffit au choix éditorial annoncé par le parent ; l’index doit renvoyer au type exact avecκ=17."
+      ],
+      "attribution": "La version externeBCN n’a pas été réexaminée dans cette passe sansPDF. Je ne lui attribue pas la valeur17 et ne conclus pas qu’elle la contient ou l’omet. La source justifiant17 ici est le développement indépendant lu.",
+      "reference_implications": [
+        "Conserver le renvoi bibliographique existant pour la forme générale de l’estimation.",
+        "Laisserκ symbolique dans le corollaire13.5 est cohérent après cette remarque ; prendre17 donne toujourso(B) poura<1/2.",
+        "Ne pas transformer cette précision en amélioration annoncée du taux final ni en nouvel erratum deBCN."
+      ],
+      "proposed_tex": "The separate proof in the accompanying formal development yields\nthe admissible value $\\kappa=17$ in\nTheorem~\\ref{p13:rig:bcn}, with the same uniformity in the coefficient\nfield, the curve, its degree and the height.",
+      "necessary_corrections_to_existing_preview": []
+    }
+  ],
+  "separate_option": {
+    "id": "OPT01",
+    "result": "T4.4, une cible originale",
+    "verdict": "applicable_avec_raccord_homogene_imprime_a_revoir_sur_le_diff_exact",
+    "priority": "option_separee_apres_les_quatre_renforcements",
+    "scientific_utility": "Unifie les deux canaux au taux41/30 grâce à la géométrie réelle des triples ; gain1/30 sur4/3 et7/60 sur5/4. Aucune optimalité propre à chaque canal n’est affirmée.",
+    "current_statement": "Une cible :4/3 en2:3 et5/4 en3:4.",
+    "proposed_statement": "Sur le même domaine séparé de bonnes sources brutes et de cibles régulières, O(N^(−41/30+ε)) dans les deux canaux.",
+    "locations": [
+      {
+        "file": "companion_sections/fixed_moments.tex",
+        "lines": [
+          225,
+          277
+        ],
+        "source_commit": "2e8aff1f1140589d1b86e534dd86b6ec108a077a",
+        "absolute_path": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/paper-p1-lean/manuscripts/paper-p1/editorial-simplified-preview-2026-11-07/sources/companion_sections/fixed_moments.tex"
+      },
+      {
+        "file": "companion_sections/arithmetic_appendix.tex",
+        "lines": [
+          961,
+          1014
+        ],
+        "source_commit": "2e8aff1f1140589d1b86e534dd86b6ec108a077a",
+        "absolute_path": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/paper-p1-lean/manuscripts/paper-p1/editorial-simplified-preview-2026-11-07/sources/companion_sections/arithmetic_appendix.tex"
+      },
+      {
+        "file": "main_sections/third_cumulant.tex",
+        "lines": [
+          145,
+          168
+        ],
+        "source_commit": "2e8aff1f1140589d1b86e534dd86b6ec108a077a",
+        "absolute_path": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/paper-p1-lean/manuscripts/paper-p1/editorial-simplified-preview-2026-11-07/sources/main_sections/third_cumulant.tex"
+      },
+      {
+        "file": "companion_sections/third_cumulant.tex",
+        "lines": [
+          13,
+          152
+        ],
+        "source_commit": "2e8aff1f1140589d1b86e534dd86b6ec108a077a",
+        "absolute_path": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/paper-p1-lean/manuscripts/paper-p1/editorial-simplified-preview-2026-11-07/sources/companion_sections/third_cumulant.tex"
+      }
+    ],
+    "preferred_editorial_scope_from_parent_update": "Limiter la remarque aux triples distincts séparés deG_N, connexes, contenant une paire deA_raw dans2:3 ou3:4. Alors la marginale homogène de la cible est exactementp ; pas d’ajout de portée sur tous les irréguliers dans le texte.",
+    "exact_formal_scope": [
+      "a>0,a<b<2a etgcd(a,b)=1 fixés avantC,ε etN0 ; seuil ensuite uniforme enN,L etH. Les deux canaux satisfont ces hypothèses.",
+      "points est une paire marquée(e,z) avec e∈PrivateChannelActivity.pairs, z dyadique frais, starts séparés et rang de croisement strictement positif.",
+      "goodSources signifie au moins deux unités exactes etPrivateAbove du bloc normalisé ; il ne demande pas la compatibilité affine. Les événements originaux de marginale nulle sont permis formellement.",
+      "Le type majorant emploie les vraies probabilités HOMOGÈNES de join(e,z). SurG_N elles sont les poidsW ; le joint affine original est≤q0 même s’il est nul.",
+      "La portée générale formelle n’est pas utilisée pour ajouter des objets au domaine imprimé restreint."
+    ],
+    "entry_point": "PaperP1.HomogeneousEffectiveGoodPairExtensions.uniform_mass",
+    "important_endpoint_distinction": "FixedCompressedPrimitiveTheorem.companion_T4_4 affaiblit explicitement41/30 vers4/3 et5/4 dans sa clause à une cible. Il ne suffit donc pas, seul, pour l’index d’un futur énoncé à41/30 ; ajouter l’entréeuniform_mass ci-dessus et la domination affine.",
+    "actual_positive_mass_argument": [
+      "Une bonne paire brute est dépendante et un croisement positif de la cible avec sa somme effective rend le triple connexe. Cette implication est prouvée par DependentPairCrossingConnected.connected.",
+      "Le triplet appartient au secteur fini de canaux contenant la source. Le facteur de marquage est au plus3, puisqu’un ensemble de trois starts a trois sous-paires ; l’orientation éventuelle ne coûte qu’un facteur fixe.",
+      "HomogeneousEffectiveConnectedChannel couvre les cibles non alignées par la masse homogène inconditionnelle non alignée, et les cibles alignées par HomogeneousEnlargedTripleMass.compressed_uniform_mass. Le pire exposant est41/30.",
+      "Le nonaligné a même la borneN^(−κ_b+ε), donc est plus petit ; la constante3 et la somme des secteurs sont absorbées dans une marge fixe avantN."
+    ],
+    "printed_support_that_must_be_explicit": {
+      "block": "Proposition14.3, labelp13:third:aligned-family, et sa preuve dans companion_sections/third_cumulant.tex.",
+      "why_original_printed_statement_alone_is_insufficient": "La somme de14.3 est limitée parq(T)>0 et son q est le joint affine. Une configuration incompatible peut avoirq=0 tout en ayantq0>0. Une majoration du cumulant signé ou d’A3 ne domine pas cette masse homogène.",
+      "small_required_bridge": [
+        "Ajouter après cette preuve une remarque homogène restreinte comme le parent l’a précisé.",
+        "Dans le secteur non aligné, remplacerq(e),q(T),p_z parq0(e),q0(T),p ; l’identitéq0(T)=q0(e)p2^δ est exacte, et la borne de source provient du rang aligné.",
+        "Dans le secteur de coefficients physiques distincts, la fusion et le noyau résiduel sont des estimations de rang, indépendantes de la prescription affine.",
+        "Dans le secteur répété, remplacer l’argument compatibility makes the interiors disjoint aux lignes138–144 par la séparation imposée|x−y|≥L. Aux lignes148–149, les contacts stricts sont exclus par ce domaine de séparation ; ceux à distance exactementL restent inclus.",
+        "L’endpoint peut toujours être borné parq0(T)≤q0(e).",
+        "DansT4.4, renvoyer à cette remarque et expliquer la connexité et la multiplicité3, au lieu de citerT1.12 comme preuve du nouveau41/30. GarderT1.12 comme route indépendante aux anciennes bornes est possible."
+      ]
+    },
+    "cycle_check": {
+      "method": "Calcul indépendant de la fermeture conservative des imports locaux, comparaison à l’inventaire du parent et vérification des1487 empreintes, racine incluse. Lecture des corps de la racine, de la masse connexe et de ses deux branches géométriques.",
+      "local_import_ancestors_excluding_root": 1486,
+      "parent_inventory_matches_independent_closure": true,
+      "all_parent_inventory_source_hashes_verified": true,
+      "absent_modules_or_families": [
+        "CompleteFixedMoments",
+        "FixedMomentInputs",
+        "BoundedFixedMoments",
+        "FixedCompressedPrimitiveTheorem",
+        "PrimitiveOrderedBound",
+        "OptimalThirdCumulant",
+        "RetainedClassTheorem",
+        "SharpRetainedConversion",
+        "UniversalHeterogeneousConversion",
+        "FixedQuadraticFactorialMoments",
+        "FixedHigherCumulants"
+      ],
+      "printed_dependency_route": [
+        "14.2 : inégalité rationnelle de fusion",
+        "T1.9 : rang source/résidu",
+        "T1.10 corrigé : cibles non alignées à rayon agrandi",
+        "preuve14.3 : normalisation, cas de coefficients et endpoints",
+        "remarque homogène séparée",
+        "T4.4 à une cible"
+      ],
+      "circularity_confirmed": false,
+      "qualification": "Algebra.MomentReconstruction, PoissonFactorialMoments et ShortSplitMoments dans la fermeture sont des faits algébriques ou des estimations de sommes courtes, pas le théorème de moments6.4 ni une reconstruction de loi. La preuve imprimée14.3 n’utilise pas14.1,6.4,T4.3 ouT4.4.",
+      "editorial_cost": "Nouveau renvoi en avant vers14.3, à signaler dans le guide. Le gain se paie d’une dépendance géométrique plus tardive, même sans cycle mathématique."
+    },
+    "proposed_bridge_tex": "The argument also bounds separated homogeneous triples in the\nregular set $G_N$ which are connected and contain a pair in the\nraw geometric good-edge family, in either channel $2:3$ or $3:4$.\nWriting $q_0(T)=2^{-\\dim(\\sum_{x\\in T}S_x)}$, one has\n\\[\n \\sum_T q_0(T)\\ll_{C,\\varepsilon}N^{-41/30+\\varepsilon}.\n\\]\nIndeed, use $q_0(e)\\le N^{-\\kappa_b+o(1)}$ and the exact marginal\n$q_0(\\{z\\})=p$ in the nonaligned sector. The aligned-sector argument\nis a rank estimate on the merged true values. When two physical\ncoefficients agree, the imposed separation $|x-y|\\ge L$ replaces\nthe use of affine compatibility; equality at $L$ remains allowed.\nThus incompatible affine prescriptions are included in this\nhomogeneous sum.",
+    "proposed_T4_4_proof_tex": "For one target, a raw good pair has nonzero relative dependence,\nand a positive crossing with the target makes their union a\nconnected triple. Apply the homogeneous estimate following the\nproof of Proposition~\\ref{p13:third:aligned-family}. Each triple\nhas at most three choices of its marked source pair, so the total\nmass is $O(N^{-41/30+\\varepsilon})$ in either channel. Original\naffine joint probabilities are bounded by the same homogeneous\nprobabilities.",
+    "conditions_for_exact_diff_review": [
+      "Relire le domaineA_raw/G_N et les starts séparés dans la copie exacte.",
+      "Vérifier queq0 n’est jamais remplacé parq sur les configurations incompatibles.",
+      "Garder au plus3 choix de source par triple et distinguer un ensemble d’un couple marqué.",
+      "Les anciennes bornesT1.12 et applications aval restent valables ; ne pas les annoncer comme erronées."
+    ],
+    "necessary_corrections_to_existing_preview": []
+  },
+  "current_compiled_evidence": {
+    "compiled_scope": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-scientific-strengthening/scope/compiled-types.json",
+    "compiled_scope_sha256": "5ab14198b8f5c5937835c2296a654890d2a6711e96924db3e4163aa7980c417e",
+    "validation_path": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-scientific-strengthening/scope/compiled-types-validation.json",
+    "validation_sha256": "521cb6ee6c702694b7d73cb5ea1af7d6cf7e8624a0d31d54822136e640b00673",
+    "types_read": 12,
+    "propositions": 12,
+    "reported_actual_exit": 0,
+    "permitted_axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "executed_by_this_reviewer": false,
+    "compiled_entries": [
+      {
+        "declaration": "PaperP1.LocalSquareThreshold.local_square_threshold_sharp",
+        "file": "PaperP1/Arithmetic/LocalSquareThreshold.lean",
+        "line": 43,
+        "source_sha256": "f5185459065796b602f638443f456aea2bc137cd0cc3f43201850c9154c5f87f",
+        "source_commit": "7bfc953cd6092eebfbae5f24aeb72b7180693537",
+        "source_byte_identical_to_proof_commit": true,
+        "compiled_type": "∀ {B x : ℕ},\n  1 ≤ B →\n    ∀ (I : Finset ℤ),\n      0 < I.card → Even I.card → (∀ a ∈ I, |a| ≤ ↑B) → (64 * B) ^ I.card < x → ¬IsSquare (∏ a ∈ I, (↑x + a))",
+        "is_proposition": true,
+        "body_comparison": "Le seuil implique x≥2B ; une énumération injective du véritable Finset d’offsets permet d’appliquer SplitProductBound.uniform_split_product. Le module amont prouve lui-même la borne par troncature deRunge et séparation des carrés entiers.",
+        "verdict": "conforme_au_role_propose"
+      },
+      {
+        "declaration": "PaperP1.LocalSquareThreshold.local_square_threshold_power_five",
+        "file": "PaperP1/Arithmetic/LocalSquareThreshold.lean",
+        "line": 62,
+        "source_sha256": "f5185459065796b602f638443f456aea2bc137cd0cc3f43201850c9154c5f87f",
+        "source_commit": "7bfc953cd6092eebfbae5f24aeb72b7180693537",
+        "source_byte_identical_to_proof_commit": true,
+        "compiled_type": "∀ {B x : ℕ},\n  2 ≤ B →\n    ∀ (I : Finset ℤ),\n      0 < I.card → Even I.card → (∀ a ∈ I, |a| ≤ ↑B) → (B + 1) ^ (5 * I.card) < x → ¬IsSquare (∏ a ∈ I, (↑x + a))",
+        "is_proposition": true,
+        "body_comparison": "Applique le théorème sharp après 64B≤(B+1)^5 pourB≥2. Aucun ordre fixé ni seuil asymptotique supplémentaire.",
+        "verdict": "conforme_au_role_propose"
+      },
+      {
+        "declaration": "PaperP1.LocalSquareThreshold.companion_T9_1",
+        "file": "PaperP1/Arithmetic/LocalSquareThreshold.lean",
+        "line": 73,
+        "source_sha256": "f5185459065796b602f638443f456aea2bc137cd0cc3f43201850c9154c5f87f",
+        "source_commit": "7bfc953cd6092eebfbae5f24aeb72b7180693537",
+        "source_byte_identical_to_proof_commit": true,
+        "compiled_type": "∀ {B x : ℕ},\n  2 ≤ B →\n    ∀ (I : Finset ℤ),\n      0 < I.card → Even I.card → I ⊆ Finset.Icc (-↑B) ↑B → (B + 1) ^ (12 * I.card) < x → ¬IsSquare (∏ a ∈ I, (↑x + a))",
+        "is_proposition": true,
+        "body_comparison": "Conserve le seuil historique12m comme corollaire du5m ; il ne faut pas le citer seul comme énoncé équivalent du renforcement.",
+        "verdict": "conforme_au_role_propose"
+      },
+      {
+        "declaration": "PaperP1.IntegralAffineCurvePointCount.grid_bound",
+        "file": "PaperP1/Arithmetic/IntegralAffineCurvePointCount.lean",
+        "line": 91,
+        "source_sha256": "2ef0d46038a5ac0bed345523de139825af1a85cd60b4b6ced42d9f379fffe2ae",
+        "source_commit": "7bfc953cd6092eebfbae5f24aeb72b7180693537",
+        "source_byte_identical_to_proof_commit": true,
+        "compiled_type": "∀ {F : Type u} [inst : Field F] [CharZero F] (n : ℕ) (I : Ideal (MvPolynomial (Fin (n + 1)) F)),\n  Ideal.IsHomogeneous (MvPolynomial.homogeneousSubmodule (Fin (n + 1)) F) I →\n    I.IsPrime →\n      ∀ (d : ℕ),\n        0 < d →\n          ∀ (b₀ : ℚ),\n            PaperP1.GradedHilbertPolynomial.IsHilbertPolynomial\n                (PaperP1.HomogeneousQuotientGrading.piece (MvPolynomial.homogeneousSubmodule (Fin (n + 1)) F) I)\n                (Polynomial.C ↑d * Polynomial.X + Polynomial.C b₀) →\n              ∀ (H : ℝ),\n                2 < H →\n                  ↑(PaperP1.IntegralAffineCurvePointCount.points n I ⌊H⌋₊).card ≤\n                    PaperP1.UniformIntegralCurveCount.realConstant (n + 1) * ↑d ^ 2 * H ^ (1 / ↑d) * Real.log H ^ 17",
+        "is_proposition": true,
+        "body_comparison": "Applique finite_population à points, puis déplie mem_points et mem_real_points pour identifier la boîte entière réelle de hauteurH avec le cutoff entier floor(H). Aucun compte de points n’est supposé.",
+        "verdict": "conforme_au_role_propose"
+      },
+      {
+        "declaration": "PaperP1.IntegralAffineCurvePointCount.finite_population",
+        "file": "PaperP1/Arithmetic/IntegralAffineCurvePointCount.lean",
+        "line": 45,
+        "source_sha256": "2ef0d46038a5ac0bed345523de139825af1a85cd60b4b6ced42d9f379fffe2ae",
+        "source_commit": "7bfc953cd6092eebfbae5f24aeb72b7180693537",
+        "source_byte_identical_to_proof_commit": true,
+        "compiled_type": "∀ {F : Type u} [inst : Field F] [CharZero F] (n : ℕ) (I : Ideal (MvPolynomial (Fin (n + 1)) F)),\n  Ideal.IsHomogeneous (MvPolynomial.homogeneousSubmodule (Fin (n + 1)) F) I →\n    I.IsPrime →\n      ∀ (d : ℕ),\n        0 < d →\n          ∀ (b₀ : ℚ),\n            PaperP1.GradedHilbertPolynomial.IsHilbertPolynomial\n                (PaperP1.HomogeneousQuotientGrading.piece (MvPolynomial.homogeneousSubmodule (Fin (n + 1)) F) I)\n                (Polynomial.C ↑d * Polynomial.X + Polynomial.C b₀) →\n              ∀ (H : ℝ),\n                2 < H →\n                  ∀ (S : Finset (Fin n → ℤ)),\n                    (∀ w ∈ S, ∀ P ∈ I, (MvPolynomial.eval (Fin.cons 1 fun i => ↑(w i))) P = 0) →\n                      (∀ w ∈ S, ∀ (i : Fin n), |↑(w i)| ≤ H) →\n                        ↑S.card ≤\n                          PaperP1.UniformIntegralCurveCount.realConstant (n + 1) * ↑d ^ 2 * H ^ (1 / ↑d) *\n                            Real.log H ^ 17",
+        "is_proposition": true,
+        "body_comparison": "Injecte w dans(1,w), applique UniformIntegralCurveCount.real_population_bound à cette population normalisée et préserve exactement le cardinal. Le degré est celui du polynôme deHilbert d’un idéal homogène premier.",
+        "verdict": "conforme_au_role_propose"
+      },
+      {
+        "declaration": "PaperP1.UniformIntegralCurveCount.realConstant_pos",
+        "file": "PaperP1/Arithmetic/UniformIntegralCurveCount.lean",
+        "line": 70,
+        "source_sha256": "ee11b9f54a765db6cbaed6433a5901cf687145d92c6aadfa0588aa191e4ba2a3",
+        "source_commit": "7bfc953cd6092eebfbae5f24aeb72b7180693537",
+        "source_byte_identical_to_proof_commit": true,
+        "compiled_type": "∀ (n : ℕ), 0 < PaperP1.UniformIntegralCurveCount.realConstant n",
+        "is_proposition": true,
+        "body_comparison": "Déplie realConstant=constant(n)*(2/log2)^17 ; la constante plane prouvée et les facteurs dimensionnels sont positifs.",
+        "verdict": "conforme_au_role_propose"
+      },
+      {
+        "declaration": "PaperP1.BlockSupportCount.critical_interval_count",
+        "file": "PaperP1/Asymptotics/BlockSupportCount.lean",
+        "line": 117,
+        "source_sha256": "10a8e09cc2a4c9da7fa3d1cacdd27b8b5fcaf2ffb645a396b3afb896d094b6bb",
+        "source_commit": "7bfc953cd6092eebfbae5f24aeb72b7180693537",
+        "source_byte_identical_to_proof_commit": true,
+        "compiled_type": "∀ (r s C : ℕ),\n  0 < s →\n    1 ≤ C →\n      ∀ (a b D Cband ε : ℝ),\n        0 < a →\n          0 ≤ D →\n            0 < ε →\n              ∃ N₀,\n                ∀ N ≥ N₀,\n                  ∀ (L M : ℕ) (G : Finset ℕ) (blocks : Fin r → ℕ → Finset ℕ),\n                    |↑L - Real.log ↑N / Real.log 2| ≤ Cband →\n                      G ⊆ Finset.Ico M (M + C * N) →\n                        (∀ (i : Fin r), ∀ x ∈ G, ∀ v ∈ blocks i x, a * ↑N ≤ ↑v ∧ ↑v ≤ b * ↑N) →\n                          (∀ (i : Fin r), ∀ x ∈ G, ∀ v ∈ blocks i x, ↑(↑v - ↑x).natAbs ≤ D * ↑(L + 1)) →\n                            ↑(PaperP1.BlockSupportProjection.population G blocks s).card ≤ ↑N ^ (↑r - ↑s / 2 + ε)",
+        "is_proposition": true,
+        "body_comparison": "Transforme la largeurD(L+1) en largeur logarithmique dans la bande critique et applique interval_count. Le prédicat compte une relation à au moins s projections effectives non nulles et des centres distincts, sans injection du morphisme de sélection.",
+        "verdict": "conforme_au_role_propose"
+      },
+      {
+        "declaration": "PaperP1.BlockSupportParameters.critical_count",
+        "file": "PaperP1/Asymptotics/BlockSupportParameters.lean",
+        "line": 103,
+        "source_sha256": "bf574d5e7dbc63467e9f605ed5f6a7a79bf66a7562fb7b146187e12c803d29ef",
+        "source_commit": "7bfc953cd6092eebfbae5f24aeb72b7180693537",
+        "source_byte_identical_to_proof_commit": true,
+        "compiled_type": "∀ (r s C d h D : ℕ),\n  0 < s →\n    1 ≤ C →\n      ∀ (a b E F Cband ε : ℝ),\n        0 < a →\n          0 ≤ E →\n            0 ≤ F →\n              0 < ε →\n                ∃ N₀,\n                  ∀ N ≥ N₀,\n                    ∀ (L V M : ℕ) (G : Finset ℕ)\n                      (blocks : PaperP1.BlockSupportParameters.ShapeCode V d h D → Fin r → ℕ → Finset ℕ),\n                      |↑L - Real.log ↑N / Real.log 2| ≤ Cband →\n                        ↑V ≤ F * ↑(L + 1) →\n                          G ⊆ Finset.Ico M (M + C * N) →\n                            (∀ (q : PaperP1.BlockSupportParameters.ShapeCode V d h D) (i : Fin r),\n                                ∀ x ∈ G, ∀ v ∈ blocks q i x, a * ↑N ≤ ↑v ∧ ↑v ≤ b * ↑N) →\n                              (∀ (q : PaperP1.BlockSupportParameters.ShapeCode V d h D) (i : Fin r),\n                                  ∀ x ∈ G, ∀ v ∈ blocks q i x, ↑(↑v - ↑x).natAbs ≤ E * ↑(L + 1)) →\n                                ↑(PaperP1.BlockSupportParameters.population G blocks s).card ≤ ↑N ^ (↑r - ↑s / 2 + ε) ∧\n                                  ↑(PaperP1.BlockSupportParameters.records G blocks s).card ≤ ↑N ^ (↑r - ↑s / 2 + ε)",
+        "is_proposition": true,
+        "body_comparison": "Le nombre de paramètres ShapeCode est absorbé par la borne logarithmique ; les deux sorties, population et enregistrements, gardent r−s/2. Les dimensions et bornes de coefficients sont fixées avantN0 ; V peut ensuite varier sousV≤F(L+1).",
+        "verdict": "conforme_au_role_propose"
+      },
+      {
+        "declaration": "PaperP1.SeveralWindowProjectionCount.companion_T1_14",
+        "file": "PaperP1/Asymptotics/SeveralWindowProjectionCount.lean",
+        "line": 22,
+        "source_sha256": "8ab4ca6fb2e7b8f1c09df0c6328847fdb5fc2be9ffa504a6b8f282d8eb24f4a7",
+        "source_commit": "7bfc953cd6092eebfbae5f24aeb72b7180693537",
+        "source_byte_identical_to_proof_commit": true,
+        "compiled_type": "∀ (r s : ℕ),\n  2 ≤ s →\n    ∀ (Cband ε : ℝ),\n      0 < ε →\n        ∃ N₀,\n          ∀ N ≥ N₀,\n            ∀ (L : ℕ) (G : Finset ℕ),\n              |↑L - Real.log ↑N / Real.log 2| ≤ Cband →\n                G ⊆ PaperP1.Model.dyadicBlock N →\n                  ↑(PaperP1.SeveralWindowProjections.tuples G L r s).card ≤ ↑N ^ (↑r - ↑s / 2 + ε) ∧\n                    ↑(PaperP1.SeveralWindowProjections.tuples G L r s).card ≤ ↑N ^ (↑r - 2 * ↑s / (2 * ↑s + 1) + ε)",
+        "is_proposition": true,
+        "body_comparison": "Spécialise les blocs aux valeurs de vraies fenêtres, déduit leurs bornes de hauteur/largeur et donne à la fois r−s/2 et l’ancien exposant par affaiblissement. La séparation physique n’est pas une prémisse ; la distinction des centres reste exigée.",
+        "verdict": "conforme_au_role_propose"
+      },
+      {
+        "declaration": "PaperP1.EffectiveCompressedPrimitiveMass.uniform_mass",
+        "file": "PaperP1/Asymptotics/EffectiveCompressedPrimitiveMass.lean",
+        "line": 58,
+        "source_sha256": "218dac889c9c7b8d94a188ff24b0796111ee50f2e98f3eafcb50ebb4fbdfb02e",
+        "source_commit": "7bfc953cd6092eebfbae5f24aeb72b7180693537",
+        "source_byte_identical_to_proof_commit": true,
+        "compiled_type": "∀ (t a b : ℕ),\n  2 ≤ t →\n    0 < a →\n      a < b →\n        a.Coprime b →\n          3 ≤ b →\n            b ≤ 4 →\n              ∀ (C ε : ℝ),\n                0 < ε →\n                  ∃ N₀,\n                    3 ≤ N₀ ∧\n                      ∀ N ≥ N₀,\n                        ∀ (L : ℕ),\n                          |↑L - Real.log ↑N / Real.log 2| ≤ C →\n                            PaperP1.EffectiveCompressedPrimitivePopulation.mass N a b L t ≤ ↑N ^ (-2 + 1 / ↑b + ε)",
+        "is_proposition": true,
+        "body_comparison": "Traite t=2 par three_blocks et t≥3 par EffectiveCompressedPrimitiveElementaryMass.from_four. La branche dense de three_blocks passe par EffectiveCompressedDenseMass et l’estimation homogène inconditionnelle à deux cibles ; aucun ancien UnderInputs n’est employé pour fermer le résultat.",
+        "verdict": "conforme_au_role_propose"
+      },
+      {
+        "declaration": "PaperP1.FixedCompressedPrimitiveTheorem.companion_T4_4",
+        "file": "PaperP1/Asymptotics/FixedCompressedPrimitiveTheorem.lean",
+        "line": 24,
+        "source_sha256": "afc40fa5af9dc312814cbed94c9d59b20efc0339c17c8647136b1ad72b2053d6",
+        "source_commit": "7bfc953cd6092eebfbae5f24aeb72b7180693537",
+        "source_byte_identical_to_proof_commit": true,
+        "compiled_type": "∀ (t : ℕ),\n  2 ≤ t →\n    ∀ (C ε : ℝ),\n      0 < ε →\n        ∃ N₀,\n          4 ≤ N₀ ∧\n            ∀ N ≥ N₀,\n              ∀ (L : ℕ),\n                |↑L - Real.log ↑N / Real.log 2| ≤ C →\n                  ∀ (H : ℕ),\n                    PaperP1.EffectiveCompressedPrimitivePopulation.mass N 2 3 L t ≤ ↑N ^ (-5 / 3 + ε) ∧\n                      PaperP1.EffectiveCompressedPrimitivePopulation.mass N 3 4 L t ≤ ↑N ^ (-7 / 4 + ε) ∧\n                        ∑ q ∈ PaperP1.EffectiveCompressedPrimitivePopulation.points N 2 3 L t,\n                              PaperP1.Model.InfiniteStarts.infiniteJointMoment L\n                                (PaperP1.PairCompressedPrimitiveFamilies.family q.1 q.2) ≤\n                            ↑N ^ (-5 / 3 + ε) ∧\n                          ∑ q ∈ PaperP1.EffectiveCompressedPrimitivePopulation.points N 3 4 L t,\n                                PaperP1.Model.InfiniteStarts.infiniteJointMoment L\n                                  (PaperP1.PairCompressedPrimitiveFamilies.family q.1 q.2) ≤\n                              ↑N ^ (-7 / 4 + ε) ∧\n                            PaperP1.HomogeneousEffectiveGoodPairExtensions.mass N H 2 3 L ≤ ↑N ^ (-4 / 3 + ε) ∧\n                              PaperP1.HomogeneousEffectiveGoodPairExtensions.mass N H 3 4 L ≤ ↑N ^ (-5 / 4 + ε) ∧\n                                ∑ p ∈ PaperP1.HomogeneousEffectiveGoodPairExtensions.points N H 2 3 L,\n                                      PaperP1.Model.InfiniteStarts.infiniteJointMoment L\n                                        (PaperP1.SingletonExtensionWeights.join p) ≤\n                                    ↑N ^ (-4 / 3 + ε) ∧\n                                  ∑ p ∈ PaperP1.HomogeneousEffectiveGoodPairExtensions.points N H 3 4 L,\n                                      PaperP1.Model.InfiniteStarts.infiniteJointMoment L\n                                        (PaperP1.SingletonExtensionWeights.join p) ≤\n                                    ↑N ^ (-5 / 4 + ε)",
+        "is_proposition": true,
+        "body_comparison": "Assemble full_effective_principal_channels et les extensions homogènes à une cible. La première partie conserve les puissances fortes5/3 et7/4 ; la seconde affaiblit déjà41/30 en4/3 et5/4. Les joints affines sont dominés par les probabilités homogènes point par point.",
+        "verdict": "conforme_au_role_propose"
+      },
+      {
+        "declaration": "PaperP1.HomogeneousEffectiveGoodPairExtensions.uniform_mass",
+        "file": "PaperP1/Asymptotics/HomogeneousEffectiveGoodPairExtensions.lean",
+        "line": 57,
+        "source_sha256": "e96085272fd4919831aa9f4f05c6fa9d4548219d6d7af6b06aab75378c72cfc9",
+        "source_commit": "7bfc953cd6092eebfbae5f24aeb72b7180693537",
+        "source_byte_identical_to_proof_commit": true,
+        "compiled_type": "∀ (a b : ℕ),\n  0 < a →\n    a < b →\n      b < 2 * a →\n        a.Coprime b →\n          ∀ (C ε : ℝ),\n            0 < ε →\n              ∃ N₀,\n                4 ≤ N₀ ∧\n                  ∀ N ≥ N₀,\n                    ∀ (L H : ℕ),\n                      |↑L - Real.log ↑N / Real.log 2| ≤ C →\n                        PaperP1.HomogeneousEffectiveGoodPairExtensions.mass N H a b L ≤ ↑N ^ (-41 / 30 + ε)",
+        "is_proposition": true,
+        "body_comparison": "Appelle HomogeneousEffectiveConnectedChannel.uniform_mass avecε/2, puis finite_mass≤3*mass_conn ; le facteur3 est absorbé. finite_mass vient du passage(e,z)↦e∪{z}, de connected et du cardinal3. Ce sont des masses homogènes positives, jamais un cumulant signé.",
+        "verdict": "conforme_au_role_propose"
+      }
+    ]
+  },
+  "additional_source_read_for_option": [
+    {
+      "declaration": "PaperP1.HomogeneousEffectiveGoodPairExtensions.finite_mass",
+      "file": "PaperP1/Asymptotics/HomogeneousEffectiveGoodPairExtensions.lean",
+      "line": 45,
+      "source_sha256": "e96085272fd4919831aa9f4f05c6fa9d4548219d6d7af6b06aab75378c72cfc9",
+      "role": "La majoration finie par3 fois la masse connexe.",
+      "body_read": true,
+      "individually_present_in_current_12_type_extraction": false,
+      "requested_if_parent_wants_finer_positive_mass_trace": "Extraction complémentaire utile pour le futur raccord écrit ; aucune nouvelle preuve nécessaire et aucune compilation indépendante revendiquée ici."
+    },
+    {
+      "declaration": "PaperP1.HomogeneousEffectiveGoodPairExtensions.union_mem_hosts",
+      "file": "PaperP1/Asymptotics/HomogeneousEffectiveGoodPairExtensions.lean",
+      "line": 26,
+      "source_sha256": "e96085272fd4919831aa9f4f05c6fa9d4548219d6d7af6b06aab75378c72cfc9",
+      "role": "Transport de la source marquée vers le triple connexe séparé.",
+      "body_read": true,
+      "individually_present_in_current_12_type_extraction": false,
+      "requested_if_parent_wants_finer_positive_mass_trace": "Extraction complémentaire utile pour le futur raccord écrit ; aucune nouvelle preuve nécessaire et aucune compilation indépendante revendiquée ici."
+    },
+    {
+      "declaration": "PaperP1.DependentPairCrossingConnected.connected",
+      "file": "PaperP1/Model/DependentPairCrossingConnected.lean",
+      "line": 34,
+      "source_sha256": "25548a884598a4c6562b6be35d6a3786fb2fb010139a00e80d2ed335f0311b41",
+      "role": "Dépendance de la source et croisement positif impliquent connexité.",
+      "body_read": true,
+      "individually_present_in_current_12_type_extraction": false,
+      "requested_if_parent_wants_finer_positive_mass_trace": "Extraction complémentaire utile pour le futur raccord écrit ; aucune nouvelle preuve nécessaire et aucune compilation indépendante revendiquée ici."
+    },
+    {
+      "declaration": "PaperP1.HomogeneousEffectiveConnectedChannel.uniform_mass",
+      "file": "PaperP1/Asymptotics/HomogeneousEffectiveConnectedChannel.lean",
+      "line": 56,
+      "source_sha256": "7856ec3046603a7c2f8edab321ae71e4005bdb84e06b1b028e497663017f0210",
+      "role": "Masse positive connexe41/30, indépendante du cumulant.",
+      "body_read": true,
+      "individually_present_in_current_12_type_extraction": false,
+      "requested_if_parent_wants_finer_positive_mass_trace": "Extraction complémentaire utile pour le futur raccord écrit ; aucune nouvelle preuve nécessaire et aucune compilation indépendante revendiquée ici."
+    },
+    {
+      "declaration": "PaperP1.HomogeneousEnlargedTripleMass.compressed_uniform_mass",
+      "file": "PaperP1/Asymptotics/HomogeneousEnlargedTripleMass.lean",
+      "line": 159,
+      "source_sha256": "9d8ea19a9b98ce3580491c33354e998355abd368cacf24ebbea4965dae23a90d",
+      "role": "Branche des cibles alignées et fusion des valeurs.",
+      "body_read": true,
+      "individually_present_in_current_12_type_extraction": false,
+      "requested_if_parent_wants_finer_positive_mass_trace": "Extraction complémentaire utile pour le futur raccord écrit ; aucune nouvelle preuve nécessaire et aucune compilation indépendante revendiquée ici."
+    },
+    {
+      "declaration": "PaperP1.HomogeneousEffectiveNonalignedMass.uniform_bound",
+      "file": "PaperP1/Asymptotics/HomogeneousEffectiveNonalignedMass.lean",
+      "line": 51,
+      "source_sha256": "2839eb95a0d5c771e5fe97e212941c1e2904fac2676ea54a6ff6067959e3683a",
+      "role": "Branche des cibles non alignées.",
+      "body_read": true,
+      "individually_present_in_current_12_type_extraction": false,
+      "requested_if_parent_wants_finer_positive_mass_trace": "Extraction complémentaire utile pour le futur raccord écrit ; aucune nouvelle preuve nécessaire et aucune compilation indépendante revendiquée ici."
+    },
+    {
+      "declaration": "PaperP1.HomogeneousRunMass.actual_joint_le",
+      "file": "PaperP1/Model/HomogeneousRunMass.lean",
+      "line": 120,
+      "source_sha256": "30b2917962aab5acc20ceb7f058e29ba59e1c99ce177e7797f987cadc83eba59",
+      "role": "Domination point par point des joints affines parq0.",
+      "body_read": true,
+      "individually_present_in_current_12_type_extraction": false,
+      "requested_if_parent_wants_finer_positive_mass_trace": "Extraction complémentaire utile pour le futur raccord écrit ; aucune nouvelle preuve nécessaire et aucune compilation indépendante revendiquée ici."
+    }
+  ],
+  "import_evidence": {
+    "path": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-scientific-strengthening/one-target-import-evidence.json",
+    "sha256": "8495ba85d6bbeaaea98e7a1f81aa7c5ad2c86727a77a3ebc827f6c19ff57c968",
+    "independent_closure_and_hash_comparison_passed": true
+  },
+  "source_fingerprints": [
+    {
+      "file": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/paper-p1-lean/manuscripts/paper-p1/editorial-simplified-preview-2026-11-07/sources/companion_sections/pair_rigidity.tex",
+      "repository_relative": "manuscripts/paper-p1/editorial-simplified-preview-2026-11-07/sources/companion_sections/pair_rigidity.tex",
+      "sha256": "ce79bf4e820468bebbcfd81a5d5ee5547b780f19d4af0ccb1797e253da5cb76a",
+      "byte_identical_to_documentary_commit": true
+    },
+    {
+      "file": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/paper-p1-lean/manuscripts/paper-p1/editorial-simplified-preview-2026-11-07/sources/companion_sections/arithmetic_appendix.tex",
+      "repository_relative": "manuscripts/paper-p1/editorial-simplified-preview-2026-11-07/sources/companion_sections/arithmetic_appendix.tex",
+      "sha256": "bf683bb91f2464795389ebc1ba9eba825081db75516d764bb921c12ab6e2d3ae",
+      "byte_identical_to_documentary_commit": true
+    },
+    {
+      "file": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/paper-p1-lean/manuscripts/paper-p1/editorial-simplified-preview-2026-11-07/sources/companion_sections/fixed_moments.tex",
+      "repository_relative": "manuscripts/paper-p1/editorial-simplified-preview-2026-11-07/sources/companion_sections/fixed_moments.tex",
+      "sha256": "2ee710747ec022702017c8468abc8c390f97e3bf8354b85ae1c29cf604197e30",
+      "byte_identical_to_documentary_commit": true
+    },
+    {
+      "file": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/paper-p1-lean/manuscripts/paper-p1/editorial-simplified-preview-2026-11-07/sources/main_sections/pair_rigidity.tex",
+      "repository_relative": "manuscripts/paper-p1/editorial-simplified-preview-2026-11-07/sources/main_sections/pair_rigidity.tex",
+      "sha256": "fca41f8052ab319c3d3f2a5aa5d749c238da4a997e07c610c301ab2b4ccaaf51",
+      "byte_identical_to_documentary_commit": true
+    },
+    {
+      "file": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/paper-p1-lean/manuscripts/paper-p1/editorial-simplified-preview-2026-11-07/sources/main_sections/third_cumulant.tex",
+      "repository_relative": "manuscripts/paper-p1/editorial-simplified-preview-2026-11-07/sources/main_sections/third_cumulant.tex",
+      "sha256": "95154600c27253c8adb8c658ee6277d4f74119220fe9b5a31acdb1cb365bd7cd",
+      "byte_identical_to_documentary_commit": true
+    },
+    {
+      "file": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/paper-p1-lean/manuscripts/paper-p1/editorial-simplified-preview-2026-11-07/sources/companion_sections/third_cumulant.tex",
+      "repository_relative": "manuscripts/paper-p1/editorial-simplified-preview-2026-11-07/sources/companion_sections/third_cumulant.tex",
+      "sha256": "1480128e8c66d9bf0649b64c0e3eea92dfc1f68d8a5935f19ad02b30b7404f62",
+      "byte_identical_to_documentary_commit": true
+    },
+    {
+      "file": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/paper-p1-lean/manuscripts/paper-p1/editorial-simplified-preview-2026-11-07/sources/companion_sections/cores.tex",
+      "repository_relative": "manuscripts/paper-p1/editorial-simplified-preview-2026-11-07/sources/companion_sections/cores.tex",
+      "sha256": "2266cb5c9decb84da3ebcf068dde47f07ccf266feebf30e3baf78d9652e6e433",
+      "byte_identical_to_documentary_commit": true
+    },
+    {
+      "file": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/paper-p1-lean/manuscripts/paper-p1/editorial-simplified-preview-2026-11-07/sources/companion_sections/uniform_appendix.tex",
+      "repository_relative": "manuscripts/paper-p1/editorial-simplified-preview-2026-11-07/sources/companion_sections/uniform_appendix.tex",
+      "sha256": "894672842e0892daed0f5e97ec522ebaff6a809e0f7f5f01c64c73f4eaf934a5",
+      "byte_identical_to_documentary_commit": true
+    },
+    {
+      "file": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/paper-p1-lean/manuscripts/paper-p1/editorial-simplified-preview-2026-11-07/sources/main_sections/half_counts.tex",
+      "repository_relative": "manuscripts/paper-p1/editorial-simplified-preview-2026-11-07/sources/main_sections/half_counts.tex",
+      "sha256": "c0617cd80434a68255f0668a41a31fa13c0f7b7759bd1219912dd7ce43808d33",
+      "byte_identical_to_documentary_commit": true
+    },
+    {
+      "file": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/paper-p1-lean/manuscripts/paper-p1/editorial-simplified-preview-2026-11-07/sources/companion_sections/guide.tex",
+      "repository_relative": "manuscripts/paper-p1/editorial-simplified-preview-2026-11-07/sources/companion_sections/guide.tex",
+      "sha256": "1d648da26e2aa336004abfc7ab1db34280252321df518d67df0c558bf1b02135",
+      "byte_identical_to_documentary_commit": true
+    },
+    {
+      "file": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/paper-p1-lean/manuscripts/paper-p1/editorial-simplified-preview-2026-11-07/sources/bibliography.tex",
+      "repository_relative": "manuscripts/paper-p1/editorial-simplified-preview-2026-11-07/sources/bibliography.tex",
+      "sha256": "49ff08f6732d8928302ad4aff31bab8c69e753b1e030ad280a552d1576685edb",
+      "byte_identical_to_documentary_commit": true
+    }
+  ],
+  "revision_order": [
+    "T1.14 etT4.4 à plusieurs cibles : faire coïncider les énoncés avec leurs preuves fortes déjà imprimées.",
+    "T9.1 : retirer la dernière perte12m.",
+    "κ=17 : phrase d’attribution indépendante hors du théorème.",
+    "Option41/30 : remarque homogène près de la preuve14.3, puis référence/multiplicité dansT4.4 et parcours du guide.",
+    "Relire le futur diff et l’index des points d’entrée ; conserver167 labels de résultats et les taux finaux sans réoptimisation globale."
+  ],
+  "limits": [
+    "Ce rapport préliminaire ne constitue pas l’approbation d’un futur diff non encore lu.",
+    "Les12 types compilés et la validation sont ceux fournis par le parent. Les corps pertinents ont été lus ; aucun replay, extraction ou auditLean n’a été exécuté par cette instance.",
+    "Les helpers de la branche positive à une cible sont identifiés séparément lorsque leur type individuel ne figure pas parmi les12 actuels ; leurs corps ne sont pas transformés en prétendue extraction compilée.",
+    "La bibliographie externeBCN n’a pas été réexaminée ; la valeur17 n’est attribuée qu’à la preuve indépendante disponible.",
+    "Aucune pagination ou estimation de pages. Aucune ancienne borne n’est considérée fausse du seul fait de ces renforcements.",
+    "Seuls les deux présents rapports sont créés ; les sources publiées et les rapports antérieurs sont préservés."
+  ]
+}

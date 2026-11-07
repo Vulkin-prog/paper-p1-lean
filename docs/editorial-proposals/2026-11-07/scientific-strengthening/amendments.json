@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "amendments": [
+    {
+      "id": "SCI01",
+      "result": "T9.1",
+      "label": "p13:rig:local-square",
+      "ledger_ids": [
+        "P1-MATH-0005"
+      ],
+      "change": "Threshold (B+1)^(12m) becomes (B+1)^(5m); integral B>=2 and positive even m retained.",
+      "declarations": [
+        "PaperP1.LocalSquareThreshold.local_square_threshold_power_five"
+      ]
+    },
+    {
+      "id": "SCI02",
+      "result": "T1.14",
+      "label": "p1:arith:fixed-support",
+      "ledger_ids": [
+        "P1-MATH-0066"
+      ],
+      "change": "Count N^(r-s/2+epsilon); no injectivity requirement, but nonzero effective images in their own blocks are mandatory. All shape parameters are fixed before N.",
+      "declarations": [
+        "PaperP1.SeveralWindowProjectionCount.companion_T1_14",
+        "PaperP1.BlockSupportCount.critical_interval_count",
+        "PaperP1.BlockSupportParameters.critical_count"
+      ]
+    },
+    {
+      "id": "SCI03",
+      "result": "T4.4 multi-target",
+      "label": "p1:fixed:compressed",
+      "ledger_ids": [
+        "P1-MATH-0176"
+      ],
+      "change": "For fixed r>=3, replace -kappa_b+1/5 by -kappa_b, uniformly over source motifs. Original windows remain regular and separated.",
+      "declarations": [
+        "PaperP1.EffectiveCompressedPrimitiveMass.uniform_mass",
+        "PaperP1.FixedCompressedPrimitiveTheorem.companion_T4_4"
+      ]
+    },
+    {
+      "id": "SCI04",
+      "result": "T4.4 one target",
+      "label": "p1:fixed:compressed",
+      "ledger_ids": [
+        "P1-MATH-0178",
+        "P1-MATH-0448"
+      ],
+      "change": "Both raw geometric good-pair channels have positive homogeneous extension mass N^(-41/30+epsilon). The printed argument explicitly restricts to connected separated triples in G_N; source-pair marking costs at most3. Affine joint mass is dominated pointwise.",
+      "declarations": [
+        "PaperP1.HomogeneousEffectiveGoodPairExtensions.uniform_mass",
+        "PaperP1.HomogeneousEffectiveConnectedChannel.uniform_mass",
+        "PaperP1.HomogeneousRunMass.actual_joint_le",
+        "PaperP1.HomogeneousRunMass.probability_rank"
+      ]
+    },
+    {
+      "id": "SCI05",
+      "result": "13.4 unnumbered note",
+      "label": "p13:rig:bcn",
+      "ledger_ids": [
+        "P1-MATH-0560"
+      ],
+      "change": "The internal proof permits the absolute logarithmic exponent17. This note is outside the unchanged attributed BCN theorem and does not attribute17 to an unchecked literature passage.",
+      "declarations": [
+        "PaperP1.IntegralAffineCurvePointCount.grid_bound",
+        "PaperP1.IntegralAffineCurvePointCount.finite_population",
+        "PaperP1.UniformIntegralCurveCount.realConstant_pos"
+      ]
+    }
+  ],
+  "new_ledger_entries": 0,
+  "new_lean_theorems": 0
+}

@@ -1,0 +1,210 @@
+\section{Conditional dense targets and small-kernel counts}
+\label{p14:comp:transfer}
+
+These are the two geometric proofs used in
+Section~\ref{p13:transfer:section}. Their source counts, widths, and rank
+thresholds are fixed before $N$ tends to infinity. They do not use the
+finite-transfer theorem or the law approximation.
+
+\subsection{Proof of Lemma~\ref{p13:transfer:dense-targets}}
+\label{p14:comp:transfer-dense-targets}
+
+\begin{proof}
+We first count target pairs, keeping the number of binary components in
+\emph{each} target explicit. All component counts below include isolated
+active coordinates.
+
+\paragraph{The two injective projections.}
+Put
+\[
+ R=\ker\bigl(W\oplus S_y\oplus S_z\longrightarrow W+S_y+S_z\bigr),
+ \qquad \dim R=d.
+\]
+If an element of $R$ has zero $y$-projection, its other two entries
+belong to $W\cap S_z=0$. Hence the projection $R\to S_y$ is
+injective; the other projection is injective by $W\cap S_y=0$.
+In particular $d\leq\min(\dim S_y,\dim S_z)\leq L$.
+Represent $W$ by a linear section in the physical source coordinates,
+and each target space by a section in its formal even-selection space.
+These sections preserve both injective target projections and all actual
+prime-valuation equations, including on an irregular window.
+
+Fix $0<\delta<1/2$, to be chosen inside the final exponent margin,
+and choose fixed positive $\xi,\theta$ with
+\[
+ \xi\leq\tfrac14\min(\eta,\delta),\qquad
+ \theta\leq\tfrac18\min(\eta,\delta).
+\]
+Apply Lemma~\ref{p1:fixed:recovery} to obtain $R'\subseteq R$ with
+$d':=\dim R'\geq d-\xi L$. Choose its recovery parameter large
+enough to give this loss and to control circuits in the $s+2$ physical
+blocks. Every nonzero coordinate label on $R'$ then has a fixed
+bounded multiplicity $K$.
+
+For each prime $\ell>H\asymp B$, pair equal active labels in its
+row. All edges of the resulting binary graph join equal nonzero
+labels, so every component lies within one label class and has at
+most $K$ vertices. The coordinate labels in either target span
+$(R')^*$, since its projection is injective. A component contributes
+only one label to this span, even if it meets that target several times.
+Consequently each target meets at least $d'$ binary components.
+This is a separate lower bound for each target, not just for their union.
+
+\paragraph{Enumerating coefficients from the fixed sources.}
+After the equal labels have been paired, the remaining distinct labels
+in a prime row split into minimal circuits. Each such circuit uses at
+least three physical blocks: $\ell>H$ has at most one occurrence in
+any block. Since only two blocks are free, every circuit contains a
+source occurrence. The product of primes assigned to a circuit support
+therefore divides a fixed source value.
+The recovery bound gives a fixed bound on the number of circuit supports
+incident to any selected coordinate. For a fixed number of selected
+binary components, enumerate their positions, these circuit supports,
+one source occurrence on each support, and divisors of the corresponding
+source values. The cost is
+$B^{O(1)}N^{o(1)}=N^{o(1)}$. Small-prime parities cost
+$2^{O(\pi(H))}=N^{o(1)}$ as well. Thus the squarefree coefficients
+of their component equations have $N^{o(1)}$ choices and height
+$N^{A_0}$ for a fixed $A_0$. The height bound per component is fixed
+once $s$, the recovery parameters and the width multiplier are fixed;
+it does not increase when more disjoint component equations are selected.
+The number of equations required by Lemma~\ref{p1:arith:geometric}
+is chosen afterwards. No subspace or full deletion pattern is enumerated.
+
+\paragraph{Removing the small aligned curves.}
+Two exact units between the targets determine a reduced alignment of
+height $O(B)$. Two distinct alignments of this height would force
+$y,z=O(B^3)$, impossible in the critical range. If there are fewer than
+two exact units, no removal is needed. Otherwise let $u\geq2$ be the
+number of units on the unique alignment. Their even selections have dimension
+$u-1$ before passage to square classes, and a target has at most one
+local rank defect. Their common image therefore gives
+\[
+ u-2\leq\dim(S_y\cap S_z)\leq\theta L
+\]
+in the weak aligned case. Keep at most one of these units and exclude
+from selection every binary component meeting an endpoint of another
+unit. At most $2(u-1)\leq2\theta L+2$ components are excluded.
+This deletes components from the selectable collection; it does not
+restrict $R'$ again. The surviving positions contain no two exact units
+on an alignment, which excludes the small-curve alternatives in the
+proof of Lemma~\ref{p1:arith:geometric}. No removal is needed for a
+nonaligned pair.
+
+For $t=y,z$, write $m_t$ for the number of selectable components
+meeting target $t$. The separate projection bounds now give
+\begin{equation*}
+ m_t\geq d'-2\theta L-2
+      \geq d-(\xi+2\theta)L-2.
+\end{equation*}
+Thus $m_t\geq\eta L/3$ for large $N$ whenever $d\geq\eta L$;
+if $d>(1/2+\delta)L$, then
+$m_t>(1/2+\delta/3)L$ for both targets.
+
+\paragraph{The first stratum: a positive rank proportion.}
+A component type records its number of coordinates in each physical
+block. There are finitely many types, because the component size is at
+most $K$. If a type meeting both targets occurs sufficiently often,
+select the fixed number of its components required by the two-variable
+geometric count. With the small curves excluded above and coefficients
+of height $N^{A_0}$, the proof of Lemma~\ref{p1:arith:geometric}
+gives $N^{1/2+\varepsilon'}$ target pairs, including the
+$N^{o(1)}$ pattern and coefficient choices.
+
+Otherwise only a bounded number of components meet both targets.
+Each target still has a positive proportion of $L$ components avoiding
+the other target. In each target choose a univariate type occurring with
+positive frequency, and then the fixed number of its components needed
+by the one-variable part of Lemma~\ref{p1:arith:geometric}, taking
+at least two. Their component equations form a one-variable system
+with fixed coefficients and at least two distinct selected offsets;
+different components have disjoint vertices. In the degree-one case,
+these are precisely the two linear factors for
+Lemma~\ref{p1:arith:pell}. The one-variable count gives
+$N^{\varepsilon'}$ target pairs after allocating the margin between
+the two centers and the coefficient choices. Every selected set has fixed size, so its even-selection
+square-class map is injective for large $N$ by
+Lemma~\ref{p1:arith:runge}; irregularity of the entire window is
+irrelevant to this local use. We have proved
+\[
+ \#\{(y,z):d\geq\eta L\}\ll N^{1/2+\varepsilon'}.
+\]
+Both counts here and below impose the pair restriction in the lemma.
+
+\paragraph{The second stratum: rank greater than half a window.}
+Suppose $d>(1/2+\delta)L$. Let $n_{1,t}$ be the number of selectable
+components using exactly one coordinate in target $t$. Every other
+component meeting that target uses at least two of its $B=L+1$
+coordinates. Hence, separately for $t=y,z$,
+\[
+ B\geq n_{1,t}+2(m_t-n_{1,t}),\qquad
+ n_{1,t}\geq2m_t-B>\frac{2\delta}{3}L-1.
+\]
+If a mixed type with one coordinate in either target occurs sufficiently
+often, the degree-one case of the geometric count gives
+$N^{\varepsilon'}$ pairs directly. Otherwise only boundedly many of
+the $n_{1,t}$ components are mixed. The displayed inequality then
+provides two components for each target, each using one coordinate of
+that target and no coordinate of the other. The resulting two distinct
+linear factors give the uniform two-value Pell count for each center.
+Thus
+\[
+ \#\{(y,z):d>(1/2+\delta)L\}\ll N^{\varepsilon'}.
+\]
+This explains the threshold $L/2$: above it, the coordinate budget
+forces singleton occurrences in each target.
+
+Finally $p_y,p_z\ll N^{-1}$ and $2^L\asymp_C N$.
+The stratum $\eta L\leq d\leq(1/2+\delta)L$ has weighted cost
+$N^{1/2+\varepsilon'}N^{-2+1/2+\delta}$, and the stratum above it
+has cost $N^{\varepsilon'}N^{-2+1}$. Choose $\delta>0$ and then
+$\varepsilon'>0$ so that $\delta+\varepsilon'<\varepsilon$;
+all preceding choices are fixed before $N$. This proves
+\eqref{p13:transfer:dense-target-bound}.
+In a primitive family, each target is direct from the prescribed
+$r-2$ sources separately, as well as from the other target; the full
+nullity is at most $L$. Multiplication by the $r-2$ source marginals
+and summation over the prescribed source collection gives
+\eqref{p13:transfer:restricted-dense}, after dividing the final exponent
+margin between the source count and the conditional estimate.
+\end{proof}
+
+\subsection{Proof of Lemma~\ref{p13:transfer:small-kernels}}
+\label{p14:comp:transfer-small-kernels}
+
+\begin{proof}
+For the first assertion fix the $m$ offsets, at a polylogarithmic cost,
+and write $d_i=n_i/K_Y(n_i)=s_i a_i^2$. Since
+$d_i\gg N^{1-b}$ and $\gcd(d_i,d_j)\ll B$,
+\[
+ \operatorname{lcm}(d_1,\ldots,d_m)
+ \geq\frac{\prod_i d_i}{\prod_{i<j}\gcd(d_i,d_j)}
+ \geq N^{m(1-b)-o(1)}>N.
+\]
+The $a_i$ are pairwise coprime. If $\prod_i a_i^2>N$, multiply the
+square factors in a fixed order until their product first exceeds $N$.
+The resulting square $D$ lies between $N$ and $N^{1+u}$, so it has
+at most $N^{(1+u)/2}$ possible roots. Assign its complete prime powers
+to the $m$ offsets; the number of assignments is
+$m^{\omega(D)}=N^{o(1)}$. The CRT leaves at most one center modulo
+$D>N$ in the interval.
+
+If $\prod_i a_i^2\leq N$, start with this product and add the small
+prime factors from the least common multiple until the first crossing
+of $N$. Now $N<D\leq NY$ and $D=sa^2$ with $s$ $Y$-smooth.
+For fixed $\sigma>\max(1/2,1-1/A)$, the number of such modules is at most
+\[
+ (NY)^\sigma\sum_{a\geq1}a^{-2\sigma}
+       \prod_{\ell\leq Y}(1-\ell^{-\sigma})^{-1}
+       =N^{\sigma+o(1)}.
+\]
+Choose $\sigma$ just above $1-1/A$. Assigning the complete prime powers
+again costs $N^{o(1)}$ and the CRT gives at most one center. This proves
+\eqref{p13:transfer:small-kernels-bound}.
+
+For the second assertion, use $H=C_DB$ as in
+Lemma~\ref{p13:half:small-kernels}.
+That lemma gives the result for $q>0$.
+For $q=0$, use $\mathcal X_0\subseteq\mathcal X_{\varepsilon/2}$
+and apply the lemma with error margin $\varepsilon/2$.
+\end{proof}

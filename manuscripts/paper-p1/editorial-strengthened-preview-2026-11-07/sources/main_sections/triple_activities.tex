@@ -1,0 +1,99 @@
+\section{Separating compatible triples from cancellations}
+\label{p13:activity:section}
+
+A count of hosts does not by itself control their probabilities:
+compatibility multiplies an independent weight by
+\(2^{\rho_{\mathrm{rel}}}\). For incompatible triples,
+however, an exact centered identity removes this multiplier.
+The remaining cost is a pair coefficient followed by a
+dependent target. We estimate that cost before using signs.
+
+\begin{proposition}[The independent cost of one target after a pair]
+\label{p13:activity:deficit}
+Define
+\[
+ D_{2,1}=
+ \sum_{\substack{e=\{x,y\}\subseteq\mathcal I_N\\d_{xy}>0}}
+ |c(e)|
+ \sum_{\substack{z\in\mathcal I_N\setminus e\\
+            S_z\cap(S_x+S_y)\ne\{0\}}}p_z.
+\]
+Then \(D_{2,1}\ll_{C,\varepsilon}N^{-3/2+\varepsilon}\).
+\end{proposition}
+
+The proof in Section~\ref{p14:comp:activity:deficit} partitions pairs
+into finitely many fixed rational channels, weak pairs, and an
+exceptional class.  A fixed-source half-count handles the last two
+classes.  For a good channel, exact compression turns the pair and its
+target into two logarithmic blocks; their total host count is
+$N^{1+\varepsilon}$ and their individual weights give an even smaller
+$N^{-5/3+\varepsilon}$ contribution.  This bound uses independent
+weight only for the new target, while preserving the pair activity.
+
+\begin{theorem}[Absolute activity of incompatible triples]
+\label{p13:activity:incompatible}
+For every \(\varepsilon>0\),
+\[
+ \sum_{\substack{T\subseteq\mathcal I_N,\ |T|=3\\q(T)=0}}
+           |c(T)|\ll_{C,\varepsilon}N^{-3/2+\varepsilon}.
+\]
+Both signs of the centered coefficient are included.
+\end{theorem}
+
+\begin{proof}
+A decomposable triple has a singleton component, hence
+centered coefficient zero. For a connected incompatible
+triple, expansion of its product gives exactly
+\[
+ c(T)=-\prod_{i\in T}p_i
+       -\sum_{\substack{e\subset T\\|e|=2}}
+                  c(e)\prod_{i\in T\setminus e}p_i.
+\]
+The first terms have total magnitude
+\(O(N^{-3/2+\varepsilon'})\) by
+Corollary~\ref{p13:half:connected}.
+A direct pair has \(c(e)=0\); for any other pair in a
+connected triple the remaining space meets its sum
+nontrivially. The pair terms are therefore bounded by
+three copies of \(D_{2,1}\).
+Proposition~\ref{p13:activity:deficit} concludes.
+\end{proof}
+
+\begin{proposition}[The third cumulant and the positive activity]
+\label{p13:activity:kappa3}
+Every compatible triple has \(c(T)\ge0\), and
+\begin{equation}
+ \kappa_{3,N}=6K_3^++O_{C,\varepsilon}(N^{-3/2+\varepsilon}),
+ \qquad
+ A_3=K_3^++O_{C,\varepsilon}(N^{-3/2+\varepsilon}).
+ \label{p13:activity:kappa-comparison}
+\end{equation}
+In the second equality the difference \(A_3-K_3^+\)
+is nonnegative.
+\end{proposition}
+
+\begin{proof}
+Order the pair ranks of a compatible triple as
+\(a\ge b\ge c\). Their relation spaces show
+\(\rho_{\mathrm{rel}}(T)\ge a+b\), so
+\[
+ \frac{c(T)}{\prod_{x\in T}p_x}
+  =2^{\rho_{\mathrm{rel}}(T)}-2^a-2^b-2^c+2\ge0.
+\]
+If \(b=0\), this is immediate. Otherwise use
+\((2^a-1)(2^b-1)\ge2^c-1\).
+The same formula includes the primitive case \(a=b=c=0\).
+Decomposable triples again have zero coefficient.
+
+In \eqref{p13:exact:kappa3}, the repeated-index terms
+are bounded by \(O(p_*A_2+p_*^2\mu_N)
+=O(N^{-5/3+\varepsilon'})\).
+Apply Theorem~\ref{p13:activity:incompatible} to the
+other triples. This proves both formulas.
+\end{proof}
+
+For example, three mutually exclusive events have
+\(c(T)=2p_xp_yp_z>0\) despite being incompatible.
+Thus it is the absolute estimate for incompatible
+triples, rather than an assumption on their sign,
+that permits the reduction to \(K_3^+\).

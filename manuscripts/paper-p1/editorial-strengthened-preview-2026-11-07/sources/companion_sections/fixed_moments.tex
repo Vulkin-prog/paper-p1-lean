@@ -1,0 +1,360 @@
+\section{Fixed-source geometry and the independent moment proof}
+\label{p14:comp:fixed}
+
+The statements of the fixed-source estimates and the fixed-moment theorem
+are in Section~\ref{p1:fixed:section}. This section supplies the geometric
+count and the positive classification used in their proofs. The original
+window estimates below use the regular-set convention $p=2^{-L}$;
+Section~\ref{p13:exact:section} gives their extension to effective spaces.
+The moment proof is independent of either reconstruction of the law.
+
+\subsection{Uniformly few targets of large rank loss}
+
+We first record the one-parameter geometric estimate in the
+precise form needed here.
+
+\begin{lemma}[Several disjoint square equations]
+\label{p1:fixed:curve}
+Fix \(K,A,D_0>0\) and \(\varepsilon>0\).
+There is a fixed integer \(j\) such that the following holds.
+Let \(P_1,\ldots,P_j\) be nonconstant products of distinct
+linear factors \(Z+u\), of degrees at most \(K\), with
+\(|u|\le D_0B\). Suppose their root lists are pairwise disjoint,
+and let \(0<|D_\nu|\le N^A\) be integers. Then
+\[
+ \#\{z\asymp N:
+       w_\nu^2=D_\nu P_\nu(z)\ (1\le\nu\le j)
+       \text{ for some integers }w_\nu\}
+       \ll_{K,A,D_0,\varepsilon}N^\varepsilon .
+\]
+The constants are uniform in the displayed coefficients and
+offsets.
+\end{lemma}
+
+\begin{proof}
+The square classes of the functions \(D_\nu P_\nu(Z)\) are
+geometrically independent: a root of \(P_\nu\) has odd
+valuation in that class and even valuation in every other
+class. Thus the resulting curve is geometrically integral
+and has degree \(2^j\) over the \(Z\)-line.
+
+Choose an integer \(D\ge(K+A)/2\). Give \(T,S\) degree one
+and each \(W_\nu\) degree \(D\), and use the equations
+\[
+ W_\nu^2
+   =D_\nu S^{2D-\deg P_\nu}
+       \prod_{u\in P_\nu}(T+uS).
+\]
+The graded ring is free of rank \(2^j\) over \(\mathbb Q[T,S]\);
+its generic localization is a field. Its \(D\)-th Veronese
+ring is generated in degree one by the monomials in \(T,S\)
+of degree \(D\) and the \(W_\nu\). The corresponding
+projective curve has degree \(D2^j\), since its hyperplane
+bundle is the pullback of \(\mathcal O_{\mathbb P^1}(D)\).
+On \(S=1\), the coordinates are integral and have height
+\(O_{K,D}(N^D)\).
+
+Pila's uniform curve estimate
+\cite[Theorem~A]{pila1995} bounds their number by
+\[
+ O_{K,A,j,\varepsilon'}
+ \bigl((N^D)^{1/(D2^j)+\varepsilon'}\bigr)
+       =O(N^{2^{-j}+D\varepsilon'}).
+\]
+Choose \(j\) and then \(\varepsilon'\) to put this exponent
+below \(\varepsilon\). Both choices precede \(N\).
+\end{proof}
+
+\begin{lemma}[A product certificate with fixed sources]
+\label{p1:fixed:CRT}
+Fix \(s,k\ge1\). Uniformly over sources
+\(x_1,\ldots,x_s\in I_N\), the number of centres \(z\in I_N\)
+for which there are pairwise coprime \(G_1,\ldots,G_k>1\)
+satisfying
+\[
+ G_i\mid x_{a_i}+u_i,\qquad G_i\mid z+w_i,\qquad
+ \prod_iG_i>N,
+ \quad u_i,w_i\in\{-1,\ldots,L-1\},
+\]
+is \(O_{s,k,C,\varepsilon}(N^\varepsilon)\) for every
+\(\varepsilon>0\).
+\end{lemma}
+
+\begin{proof}
+There are \((sB)^kB^k=N^{o(1)}\) choices of positions.
+For fixed positions, the product \(Q=\prod_iG_i\) divides
+\(\prod_i(x_{a_i}+u_i)\le(3N)^k\). Its divisors and their
+ordered factorizations into \(k\) factors have
+\(N^{o(1)}\) possibilities. Coprimality fixes one residue
+class for \(z\) modulo \(Q>N\), hence at most one centre
+in \(I_N\). This counts the certificate without requiring
+the groups to be fixed in advance.
+\end{proof}
+
+\subsection{Proof of Proposition~\ref{p1:fixed:targets}}
+\label{p14:comp:fixed-targets}
+
+\begin{proof}
+Take \(H=D_0B\), with fixed \(D_0>1\). A prime exceeding
+\(H\) has at most one occurrence of odd valuation in each
+window. Apply Lemma~\ref{p1:fixed:recovery} to
+\(R(\boldsymbol x,z)\), with \(d=s\), choosing \(t\) so that
+the loss of dimension is at most \(\eta L/4\).
+The surviving target projection has dimension at least
+\(3\eta L/4\). Nonzero labels have multiplicity at most
+\(K=t-1\).
+
+For each prime \(q>H\) incident to an active target coordinate
+whose label has odd multiplicity in the \(q\)-row, choose a
+minimal circuit of distinct labels containing this label.
+Such a circuit exists: a minimal zero-sum subset containing
+the label cannot contain a proper zero-sum subset, because
+it could be removed. Choose incident coordinates for its
+other labels. They all belong to sources, because \(q\)
+has only one target occurrence. Group primes according to
+the selected physical support. These groups are pairwise
+coprime. The number of supports through a fixed target
+coordinate is at most
+\[
+ D=\max\left(1,\sum_{j=2}^{s}j!t^{j-1}K^j\right).
+\]
+
+Choose the integer \(j\) in Lemma~\ref{p1:fixed:curve}
+for degree at most \(K\) and coefficient height
+\(N^{A_0+2K+2}\), where
+\(\prod_{q\le H}q\le N^{A_0}\).
+Choose \(k\) large enough that
+\(\theta=KD/k\le1\) and \(j\theta<\varepsilon/4\).
+If the product of the \(k\) largest nontrivial groups
+exceeds \(N\), Lemma~\ref{p1:fixed:CRT} applies. It remains
+to count the complementary case.
+
+Discard from selection the label classes meeting the target
+positions of these \(k\) groups. At most \(k\) classes are
+discarded; no further restriction of the relation space is
+made. Every group incident to a remaining target class
+has size at most \(N^{1/k}\).
+For such a class \(A\), write
+\[
+ M_A=\prod_{v\in A\ {\rm at\ sources}} n_v,\qquad
+ P_A(Z)=\prod_{v\in A\ {\rm at\ target}}(Z+w_v).
+\]
+Its squarefree product \(d_A=\sf(M_AP_A(z))\) can be
+factored as
+\[
+ d_A=d_{0,A}d_{1,A}e_A,\qquad
+ d_{0,A}\mid\prod_{q\le H}q,\quad
+ d_{1,A}\mid M_A,\quad 1\le e_A\le N^\theta .
+\]
+Indeed, every remaining prime with odd multiplicity and
+not dividing \(M_A\) lies in one of at most \(KD\) incident
+groups. The choices of \(d_{0,A}\) and \(d_{1,A}\) are
+\(N^{o(1)}\), uniformly for fixed source positions.
+
+There are at least \(3\eta L/4-k\) available classes
+meeting the target. Select \(j\) of them. Their target
+polynomials have simple disjoint roots. After choosing
+their positions and coefficients, the equations
+\[
+ w_\nu^2=d_{A_\nu}M_{A_\nu}P_{A_\nu}(z)
+\]
+are counted by Lemma~\ref{p1:fixed:curve}.
+The positions cost \(B^{O(1)}\), and the coefficients cost
+\(N^{j\theta+o(1)}\). The stated choices, with the error
+margin split between these factors, give
+\eqref{p1:fixed:targets-bound}.
+Only the selected positions and coefficients have been
+enumerated, not the possible relation spaces or their
+regularizations.
+\end{proof}
+\subsection{Primitive families at a fixed order}
+
+A family is \emph{primitive} if it has a nonzero relative
+relation and every proper subfamily has none. Its relation
+space projects injectively to each block. For original
+windows its nullity is consequently at most \(L\).
+For the homogeneous prescription define
+\[
+ W(I)=p^{|I|}2^{\rho(I)}.
+\]
+This is an actual joint probability, regardless of the
+compatibility of the run-start prescriptions. Those have
+joint probability either \(W(I)\) or zero.
+
+\begin{proposition}[Fixed primitive mass]
+\label{p1:fixed:primitive}
+For every fixed \(r\ge3\) and \(\varepsilon>0\),
+\begin{equation}
+ \sum_{\substack{(x_1,\ldots,x_r)\ {\rm primitive}\\
+                  {\rm distinct,\ separated}}}
+          p^r2^{\rho(x_1,\ldots,x_r)}
+        \ll_{r,C,\varepsilon}N^{-4/5+\varepsilon}.
+ \label{p1:fixed:primitive-bound}
+\end{equation}
+In particular the same estimate holds for the affine
+joint probabilities of the original events.
+\end{proposition}
+
+\begin{proof}
+On the regular set used in this section, $p_x=p$, so
+Proposition~\ref{p13:transfer:primitive} bounds the unordered homogeneous
+mass by $O_{r,C,\varepsilon}(N^{-r/2+\varepsilon})$.
+Passing to ordered tuples costs at most $r!$, and separation only
+restricts the sum. Since $r\ge3$, this implies
+\eqref{p1:fixed:primitive-bound}.
+This uses the fixed-arity geometric proof of that proposition,
+before either reconstruction of the law or the moment theorem.
+\end{proof}
+
+The proof is homogeneous throughout. It therefore bounds
+incompatible configurations as well as compatible ones.
+This feature will be needed for centered Fourier coefficients.
+
+\begin{proposition}[Fixed primitive mass after pair compression]
+\label{p1:fixed:compressed}
+Fix a channel \(a:b\in\{2:3,3:4\}\), and put
+\(\kappa_b=2-1/b\). All original starts lie in \(G_N\) and are
+distinct and pairwise separated. For every fixed \(r\ge3\) and
+\(\varepsilon>0\), the total
+homogeneous mass of primitive families consisting of
+one exactly compressed pair in this channel and
+\(r-1\) further original windows is
+\begin{equation}
+ O_{r,C,\varepsilon}
+       (N^{-\kappa_b+\varepsilon}).
+ \label{p1:fixed:compressed-bound}
+\end{equation}
+For a compressed geometric good pair and just one further original
+window with positive relative rank loss, the mass is
+\(O_{C,\varepsilon}(N^{-41/30+\varepsilon})\) in either channel.
+The affine positive masses satisfy the same bounds.
+\end{proposition}
+
+\begin{proof}
+Put $t=r-1\ge2$ and fix a compression motif. The compressed block
+is the even-selection image of a genuine set of $O(B)$ values of
+width $O(B)$; write $r_e$ for its rank.
+Use its normalized centre $bx$; it lies above the original target
+range and determines the source pair once the motif is fixed.
+There are $B^{O(1)}$ motifs and $NB^{O(1)}$ source pairs.
+For its homogeneous mass, Lemma~\ref{p1:arith:alignedrank} gives
+$q_0(e)=2^{-r_e}\ll N^{-\kappa_b+\varepsilon'}$, including
+affine-incompatible sources. Primitivity gives $\rho\le L$ and
+the exact homogeneous weight $q_0(e)p^t2^\rho$.
+
+Every primitive family has a nonzero effective projection in each
+of its $t+1$ blocks. Theorem~\ref{p13:half:conditional}, with no old
+sources, counts at most $N^{(t+1)/2+\varepsilon'}$ hosts,
+including the compressed centre. For $t\ge3$, their total mass is
+\[
+ N^{(t+1)/2+\varepsilon'}N^{-\kappa_b-t+1+\varepsilon'}
+   =N^{-\kappa_b+(3-t)/2+2\varepsilon'}
+   \le N^{-\kappa_b+2\varepsilon'}.
+\]
+For $t=2$, the same count on $\rho\le L/4$ gives
+$N^{-\kappa_b-1/4+2\varepsilon'}$.
+On $\rho\ge L/4$, fix the compressed source image $W$.
+Every proper subfamily is direct, so each target is disjoint from
+$W$ and the two targets are direct. Lemma~\ref{p13:transfer:dense-targets}
+therefore gives conditional homogeneous target mass
+$O(N^{-1+\varepsilon'})$; the original targets are regular, so their
+homogeneous marginals are exactly $p$.
+The source sum is $\sum_e q_0(e)\ll N^{1-\kappa_b+2\varepsilon'}$,
+giving total $O(N^{-\kappa_b+3\varepsilon'})$.
+Reduce the margins and absorb the motif choices to obtain
+\eqref{p1:fixed:compressed-bound}.
+
+For one target, a geometric good source has a nonzero pair relation.
+Positive crossing with the target therefore makes the original triple
+connected. Apply the separated homogeneous version proved in
+Section~\ref{p14:comp:third:aligned-family}. A triple has at most three
+choices of its marked source pair, so this bounds the full extension
+mass by $O_{C,\varepsilon}(N^{-41/30+\varepsilon})$.
+This argument uses neither affine compatibility nor a signed cumulant.
+\end{proof}
+
+\subsection{Proof of Theorem~\ref{p1:fixed:moments}}
+\label{p14:comp:fixed-moments}
+
+\begin{proof}
+Expand \(\E(Z_N)_r\) over ordered distinct centres.
+We describe all configurations removed before evaluating
+the two principal classes.
+
+Local defects and contacts have mass \(N^{-1+\varepsilon}\)
+after propagation. A dependent separated pair outside
+the two retained channels has mass
+\(N^{-4/5+\varepsilon}\), also after propagation.
+Tuples containing a primitive original subfamily of
+size at least three have that same bound, by
+Proposition~\ref{p1:fixed:primitive}.
+The positive mass of two good pairs is
+\(O(N^{-5/4+\varepsilon}+a_N^2)\), including pairs sharing
+a vertex, by
+Proposition~\ref{p1:arith:fixed-homogeneous-seeds};
+propagation again preserves the required precision.
+
+There remains the case of one good pair with an
+additional relation. Compress this pair exactly.
+A minimal dependent subfamily of the compressed
+system has at least two blocks and contains the
+compressed block, unless an original primitive family
+has already been removed. Apply
+Proposition~\ref{p1:fixed:compressed} to this seed and
+then propagate. Each of its exponents exceeds \(4/5\).
+This exhausts the dependent residual configurations:
+after their removal the spaces are either all direct,
+or one good pair is direct from all remaining
+singletons.
+
+The support estimate
+of Proposition~\ref{p1:arith:fixed-support}, together with
+the \(O_r(N^{r-1}B)\) contact tuples, shows that the
+number of full-rank tuples is
+\[
+ N^r+O_{r,C,\varepsilon}(N^{r-4/5+\varepsilon}).
+\]
+Their joint probability is exactly \(p^r\), and their
+contribution is \(\lambda_N^r+O(N^{-4/5+\varepsilon})\).
+
+Let \(A_N\) be the ordered positive mass of good pairs.
+The pair calculation gives
+\[
+ A_N=a_N+O_{C,\varepsilon}(N^{-4/5+\varepsilon}).
+\]
+Fix one such pair. After any fixed number of already
+chosen windows, at most \(N^{1/2+o(1)}\) target centres
+are dependent on their relative space, by
+Proposition~\ref{p1:arith:fixed-branching}. Thus the number of
+ordered direct extensions by \(r-2\) windows is
+\[
+ N^{r-2}\bigl(1+O_{r,C}(N^{-1/2+o(1)})\bigr),
+\]
+uniformly in the pair. Their joint weight is
+\(q(e)p^{r-2}\). Placing the ordered pair in two of
+the \(r\) positions gives contribution
+\[
+ \binom r2\lambda_N^{r-2}A_N
+       +O_{r,C}(A_NN^{-1/2+o(1)}).
+\]
+Since \(A_N=O_C(LN^{-2/3})\), the last error is
+smaller than the stated remainder. The two principal
+classes give the formula with \((\lambda_N,a_N)\).
+The mean transfer
+\(\mu_N-\lambda_N=O(N^{-1+\varepsilon})\) and
+\(\alpha_N-a_N=O(N^{-1+\varepsilon})\) give
+\eqref{p1:fixed:moment-expansion}.
+
+The Stirling-number identity
+\(Z^r=\sum_{j=0}^r\left\{\begin{smallmatrix}r\\j\end{smallmatrix}\right\}(Z)_j\)
+proves \eqref{p1:fixed:ordinary} and boundedness.
+Finally, to any fixed formal order, the factorial
+generating function equals
+\[
+ e^{\mu_N t}\left(1+\frac{\alpha_Nt^2}{2}\right)
+       +O_{\rm coeff}(N^{-4/5+\varepsilon}).
+\]
+Taking its formal logarithm is legitimate at that
+fixed order. Terms quadratic in \(\alpha_N\) are
+\(O(N^{-4/3+o(1)})\), which proves the cumulant claim.
+\end{proof}

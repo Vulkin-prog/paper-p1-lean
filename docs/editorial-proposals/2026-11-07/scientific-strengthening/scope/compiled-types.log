@@ -1,0 +1,15 @@
+'PaperP1.LocalSquareThreshold.local_square_threshold_sharp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.LocalSquareThreshold.local_square_threshold_power_five' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.LocalSquareThreshold.companion_T9_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.IntegralAffineCurvePointCount.grid_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.IntegralAffineCurvePointCount.finite_population' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.UniformIntegralCurveCount.realConstant_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.BlockSupportCount.critical_interval_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.BlockSupportParameters.critical_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.SeveralWindowProjectionCount.companion_T1_14' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.EffectiveCompressedPrimitiveMass.uniform_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.FixedCompressedPrimitiveTheorem.companion_T4_4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.HomogeneousEffectiveGoodPairExtensions.uniform_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+Exported compiled scope types for 12 declarations

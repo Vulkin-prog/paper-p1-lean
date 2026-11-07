@@ -1,0 +1,457 @@
+\section{Further uniform consequences of the arithmetic estimates}
+\label{p1:uniform:appendix}
+
+The following consequences record uniformities useful when the
+counting argument is applied to selected subfamilies or to
+conditional prime-sign systems. Their parameters and the
+quantities being summed are kept explicit.
+
+\subsection{Full-support relations at all cardinalities}
+
+For \(r\ge2\), let \(\mathcal H_{r,N}\) be the ordered
+lists of distinct, mutually separated regular windows for
+which
+\[
+ s_i\in S_{x_i}\setminus\{0\},\qquad
+                     s_1+\cdots+s_r=0
+\]
+has a solution. Minimality and affine compatibility are
+not required.
+
+\begin{proposition}[A weighted count of every full support]
+\label{p1:uniform:full-support}
+For fixed \(s\ge2\), \(u>0\), and \(\varepsilon>0\),
+\[
+ \sum_{r=s}^{|G|}\frac{u^r}{r!}
+     \sum_{\boldsymbol x\in\mathcal H_{r,N}}p^r
+       \ll_{s,u,C,\varepsilon}N^{-2s/(2s+1)+\varepsilon}.
+\]
+\end{proposition}
+
+\begin{proof}
+A full-support relation selects at least two true
+values in every window, since selections are even
+and nonzero. Consequently the moderate certificates
+and the saturation graph of
+Section~\ref{p14:cert:section} apply to these families,
+without any primitivity assumption.
+
+Use the parameters in
+\eqref{p1:core:primitive-parameters}.
+The total independent weight of moderate
+certificates is \(N^{-2\beta+4/A_0+o(1)}
+=N^{-91/50+o(1)}\), by
+Lemma~\ref{p1:core:moderate}.
+If a family has no moderate certificate, every
+unmarked vertex has a neighbour in the saturation
+graph. The tilted generating function of
+Lemma~\ref{p1:core:generator}, now with no factor
+for rank loss, bounds its weight beyond size \(s_0\)
+by \(O_u(N^{-s_0\delta/2})\).
+Choose a fixed \(s_0>\max(s,5000)\).
+Both large-size contributions are smaller than
+\(N^{-1+\varepsilon}\).
+
+For each of the finitely many \(s\le r<s_0\),
+Proposition~\ref{p1:arith:fixed-support} gives
+\[
+ |\mathcal H_{r,N}|
+       \ll_{r,C,\varepsilon}
+             N^{r-2r/(2r+1)+\varepsilon}.
+ \]
+Multiplying by \((up)^r/r!\), and using
+\(2r/(2r+1)\ge2s/(2s+1)\), completes the proof.
+The factor \(1/r!\) counts unordered sets; it is
+not a bound for the growth of an arithmetic
+constant in \(r\).
+\end{proof}
+
+\begin{lemma}[When no relation uses every block]
+\label{p1:uniform:missing-block}
+If a family \(I\) of \(r\) regular windows has no
+relative relation meeting every block, then
+\[
+ q(I)\le p\sum_{x\in I}q(I\setminus\{x\}).
+\]
+Summed over any subfamily of ordered distinct
+\(r\)-tuples, the resulting upper bound is at most
+\(rNp\,\E(Z_G)_{r-1}\).
+\end{lemma}
+
+\begin{proof}
+The relation space is covered by the kernels of
+its \(r\) coordinate-block projections.
+Hence \(2^{\rho(I)}\le\sum_x2^{\rho(I\setminus\{x\})}\).
+If the full affine event is compatible, every
+subevent is compatible and multiplication by
+\(p^r\) proves the claim. If it is incompatible,
+the left side is zero. Summing over the omitted
+centre gives at most \(N\) choices, for each of
+the \(r\) omitted positions.
+\end{proof}
+
+An elementary companion to such support bounds is the
+following weighted triangle inequality. If
+\((w_{xy})\) is a finite symmetric matrix of
+nonnegative integers and \(W=\sum_{x,y}w_{xy}\), then
+\[
+ \sum_{x,y,z}\min(w_{xy},w_{xz},w_{yz})\le W^{3/2}.
+\]
+Indeed, for each integer \(h\ge1\), let \(A_h\) be the
+symmetric zero-one matrix of entries at least \(h\),
+and \(M_h\) its number of ones. Its triangle sum is
+\(\operatorname{tr}(A_h^3)\le
+(\operatorname{tr}(A_h^2))^{3/2}=M_h^{3/2}\).
+Sum in \(h\) and use
+\(\sum_hM_h^{3/2}\le(\sum_hM_h)^{3/2}\).
+
+\subsection{Old square classes and a growing number of sources}
+
+Let \(\mathcal P\) be a finite set of primes, and
+\[
+ A(X;\mathcal P)
+   =\#\{n\le X:\sf(n)\text{ is supported on }\mathcal P\}.
+\]
+
+\begin{lemma}[Rankin under a logarithmic prime budget]
+\label{p1:uniform:prime-budget}
+For \(1/2<\sigma<1\),
+\[
+ A(X;\mathcal P)\le
+ X^\sigma\zeta(2\sigma)
+                  \prod_{\ell\in\mathcal P}(1+\ell^{-\sigma}).
+\]
+Uniformly for \(3/5\le\sigma\le3/4\), \(Y\ge3\), and
+\(\sum_{\ell\in\mathcal P}\log\ell\le Y\),
+\[
+ \log A(X;\mathcal P)
+       \le \sigma\log X+
+              O\left(1+\frac{Y^{1-\sigma}}{\log Y}\right).
+\]
+\end{lemma}
+
+\begin{proof}
+Write \(n=du^2\), where \(d\) is squarefree and
+supported on \(\mathcal P\), and sum
+\((X/(du^2))^\sigma\).
+For the second assertion, the prime-counting
+upper bound and partial summation give
+\(\sum_{\ell\le Y}\ell^{-\sigma}
+\ll Y^{1-\sigma}/\log Y\) uniformly in the stated
+compact interval. There are at most \(Y/\log Y\)
+members of \(\mathcal P\) exceeding \(Y\);
+their contribution satisfies the same bound.
+Finally \(\zeta(2\sigma)\) is uniformly bounded.
+\end{proof}
+
+\begin{proposition}[Independent extensions at the critical order]
+\label{p1:uniform:branching}
+Put \(H=\log N\), \(h=\log H\), and fix \(K>0\).
+For every \(j\le KH/h\) source windows, there is
+an exceptional set of new centres of size at most
+\(D_N^*\), where
+\begin{equation}
+ \log D_N^*
+ \le\frac23H-\frac{H\log h}{9h}+O_{K,C}(H/h),
+ \label{p1:uniform:branching-rate}
+\end{equation}
+such that outside it the \(L\) new relative bits
+are exactly uniform and independent of all
+previously exposed values.
+\end{proposition}
+
+\begin{proof}
+Include in \(\mathcal P\) all primes at most \(B\)
+and all primes dividing one of the \(jB\) old
+values. Then
+\[
+ \sum_{\ell\in\mathcal P}\log\ell
+       \ll_C B+jB\log(3N)\ll_{K,C}H^3/h.
+\]
+Take \(Y=C_{K,C}H^3/h\) and
+\(\sigma=1-h/\log Y\). Eventually
+\(\sigma\in[3/5,3/4]\) and \(Y^{1-\sigma}=H\).
+Lemma~\ref{p1:uniform:prime-budget} gives
+\[
+ \log A(3N;\mathcal P)
+ \le H-\frac{Hh}{\log Y}
+                       +O_{K,C}(H/\log Y).
+\]
+Since \(\log Y=3h-\log h+O_{K,C}(1)\), the
+right side equals the bound in
+\eqref{p1:uniform:branching-rate}.
+
+Exclude centres whose windows overlap an old window,
+or contain a value whose square class is supported
+on \(\mathcal P\). This costs at most
+\(j(2L+1)+BA(3N;\mathcal P)\), with the additional
+polylogarithmic factors absorbed in the error term.
+Every value in a remaining window has an odd prime
+outside \(\mathcal P\). Such a prime exceeds the
+diameter and occurs nowhere else in the window.
+These private coordinates form an identity minor
+in the new valuation matrix and are independent
+of all old values. This proves the exact
+independence assertion.
+\end{proof}
+
+\begin{corollary}[A single pair at all critical orders]
+\label{p1:uniform:one-pair}
+Let \(A_N=2\sum_{e\in E_N}q_e\).
+Construct ordered \(r\)-tuples by choosing the
+two positions of a good pair and then adding
+windows in position order, always outside the
+exceptional set of
+Proposition~\ref{p1:uniform:branching}.
+Their total positive mass \(B_{r,N}\) satisfies,
+uniformly for \(2\le r\le m\le KH/h\),
+\[
+ B_{r,N}=\binom r2\lambda_N^{r-2}A_N
+                       \{1+O_{K,C}(rD_N^*/N)\}.
+\]
+Furthermore,
+\[
+ \sum_{r=2}^{m}\frac{2^{r-1}}{r!}
+   \left|B_{r,N}-\binom r2\mu_N^{r-2}\alpha_N\right|
+       =o_C(a_N).
+\]
+\end{corollary}
+
+\begin{proof}
+For a fixed pair each added window contributes
+exactly \(p\). The number of extensions is
+between \((N-D_N^*)^{r-2}\) and \(N^{r-2}\);
+\(mD_N^*/N\to0\). The pair is the unique
+dependent pair in the resulting tuple, so its
+choice of positions is unique. This proves the
+first formula.
+The weighted branching error sums to
+\[
+ O_{K,C}\left(A_N\frac{D_N^*}{N}
+       \sum_{r\ge2}\frac{2^{r-1}}{r!}
+                r\binom r2\Lambda^{r-2}\right)=o(a_N),
+\]
+where \(\Lambda\) bounds the means.
+The pair and mean estimates replace \(A_N\)
+by \(\alpha_N\), and \(\lambda_N\) by \(\mu_N\),
+at the same aggregate precision.
+\end{proof}
+
+This corollary controls a selected positive family.
+Its independence guarantee is uniform at growing
+orders, but it does not by itself estimate the full
+factorial moments at those orders.
+
+\subsection{Exact moments of the modified count}
+
+Let \(E'_N\) be the event in Lemma~\ref{p1:core:exceptional},
+let \(A=\{x\in G:J_x=1\}\), and put
+\(\widetilde Z=Z_G\ind_{(E'_N)^c}\).
+For \(r\ge1\), define
+\[
+ D_r(A)=\#\{I\subseteq A:|I|=r,\ I\text{ direct}\},
+ \qquad L'_r=\E[D_r(A);E'_N].
+\]
+For \(r\ge2\), also put
+\[
+ P_r(A)=\sum_{e\in E_N}J_e
+       \#\{U\subseteq A\setminus e:U\in\Gamma_e(r-2)\},
+ \qquad H_r=\E[P_r(A);E'_N],
+\]
+and set \(H_1=0\).
+Here \(\Gamma_e\), the independent deficits \(F_r,G_r\),
+and \(\beta_N=\sum_eq_e\) are those used in the
+stopped expansion.
+
+\begin{proposition}[Moment decomposition and pair leakage]
+\label{p1:uniform:modified-moments}
+For every integer \(r\ge1\),
+\begin{equation}
+ \E\binom{\widetilde Z}{r}
+   =\binom nrp^r-F_r-L'_r
+     +\beta_N\binom{n-2}{r-2}p^{r-2}-G_r-H_r,
+ \label{p1:uniform:modified-identity}
+\end{equation}
+where the last three terms are zero for \(r=1\).
+All four deficits \(F_r,G_r,L'_r,H_r\) are
+nonnegative. Moreover,
+\[
+ \sum_{r\ge2}2^rG_r
+       \ll_\varepsilon N^{-1+\varepsilon},
+ \qquad
+ \sum_{r\ge2}2^rH_r=o(a_N).
+\]
+\end{proposition}
+
+\begin{proof}
+Outside \(E'_N\), an active family is either direct
+or contains the unique active good pair and is
+direct after its compression. Thus
+\[
+ \binom{Z_G}{r}=D_r(A)+P_r(A)
+              \qquad\text{on }(E'_N)^c.
+\]
+The expectations without restriction to this event
+are, respectively,
+\[
+ \E D_r(A)=\binom nrp^r-F_r,\qquad
+ \E P_r(A)
+     =\beta_N\binom{n-2}{r-2}p^{r-2}-G_r.
+\]
+Subtract the two contributions on \(E'_N\) to
+obtain \eqref{p1:uniform:modified-identity}.
+The bound for \(G_r\) was proved in
+Lemma~\ref{p1:close:deficit-bounds}.
+
+For each fixed \(r\), \(P_r(A)\le C_rZ_G^r\).
+H\"older's inequality and the fixed moments give
+\[
+ H_r\le C_r(\E Z_G^{8r})^{1/8}
+                  \P(E'_N)^{7/8}
+       \ll_{r,\varepsilon}N^{-7/10+7\varepsilon/8}
+       =o(a_N)
+\]
+when the margin is sufficiently small.
+To sum all \(r\), use directness before taking
+expectations:
+\[
+ \sum_{r\ge2}4^rH_r
+ \le\sum_{r\ge2}4^r\E P_r(A)
+ \le16\beta_N(1+4p)^{n-2}
+       \ll_C a_N.
+\]
+For any fixed \(K\), the terms \(2\le r\le K\)
+are \(o(a_N)\), and the remaining \(2^r\)-weighted
+sum is \(O_C(2^{-K}a_N)\).
+Take first \(N\to\infty\), then \(K\to\infty\).
+This proves the asserted small \(o\), without
+giving it an additional polynomial rate.
+\end{proof}
+
+The direct leakage \(L'_r\) and the deterministic
+deficit \(F_r\) are different quantities.
+The small probability of \(E'_N\) gives a bound
+for \(L'_r\) at each fixed order, but does not
+on its own control their exponentially weighted
+sum. The stopped expansion avoids paying that
+whole sum: it keeps the suffix inside a
+positive kernel at the first excluded prefix.
+
+\subsection{Replicas with common small-prime signs}
+
+Fix a threshold \(Y\). Keep the signs at primes
+\(\ell\le Y\) common, and give each member of a
+partition \(\pi\) an independent copy of the signs
+at primes \(\ell>Y\). Occurrences may have repeated
+centres; their formal coordinates remain distinct.
+For the resulting valuation map let \(K_\pi\)
+be its kernel on all formal occurrence coordinates, before quotienting
+by the internal relations of individual windows. Thus internal local
+relations are included in \(K_\pi\). Let
+\(\eta_\pi\in\{0,1\}\) denote affine compatibility.
+If instead each local block is first replaced by its effective image,
+the relative-kernel formula uses the product of the actual marginals
+\(\prod_i p_{x_i}\) in place of the nominal factor \(p^r\).
+Repeated centres retain distinct formal occurrence coordinates.
+
+\begin{proposition}[The replica formula and positive propagation]
+\label{p1:uniform:replicas}
+For \(r\) prescribed occurrences,
+\begin{equation}
+ \E\prod_{A\in\pi}
+     \P(J_{x_i}=1\ (i\in A)\mid\mathcal F_Y)
+       =p^r\eta_\pi2^{\dim K_\pi}.
+ \label{p1:uniform:replica-formula}
+\end{equation}
+After any fixed number of compatible colored
+sources, the sum of the conditional probabilities
+of targets is \(O_\varepsilon(N^\varepsilon)\),
+uniformly in \(Y\) and the coloring.
+Here conditioning means prescribing these source events
+in the replicated space; the common small-prime signs
+are still averaged. Thus a positive random sum
+\[
+ R=\sum_{\boldsymbol x\in\mathcal A}w_{\boldsymbol x}
+       \prod_{A\in\pi}
+          \P(J_{x_i}=1\ (i\in A)\mid\mathcal F_Y),
+\]
+with fixed tuple length, fixed partition \(\pi\), and
+nonnegative deterministic weights bounded by a fixed
+power of \(\log N\),
+satisfies for every fixed integer \(q\ge1\)
+\begin{equation}
+ \E R^q\ll_\varepsilon N^\varepsilon\E R,
+ \label{p1:uniform:replica-moment}
+\end{equation}
+when its index set is a subfamily of all ordered
+tuples of the stated fixed length.
+\end{proposition}
+
+\begin{proof}
+Conditionally on the common small-prime signs,
+the independent large-prime copies realize the
+product of conditional probabilities on the left
+of \eqref{p1:uniform:replica-formula}.
+Fourier inversion in this larger binary space
+gives its right side, with its compatibility
+factor retained.
+
+Merging colors adds prime-parity equations
+together, so a relation in the colored system
+is also a relation in the merged one. The
+projection of its kernel to the target block
+is contained in the corresponding merged
+projection. Consequently the target's colored
+rank loss is no larger than its uncolored rank
+loss. Proposition~\ref{p1:fixed:targets} and the
+proof of \eqref{p1:fixed:conditional} apply.
+Targets whose centre repeats a source account
+for only a fixed number of choices and have
+probability at most one.
+
+Expand \(R^q\) positively, retain the first
+replica product as a seed, and sum all further
+occurrences successively. Each step has the
+conditional bound just proved. Repeated centres
+are treated as above. There are only a fixed
+number of steps; splitting \(\varepsilon\)
+among them and absorbing the fixed powers of
+\(\log N\) proves \eqref{p1:uniform:replica-moment}.
+\end{proof}
+
+\paragraph{A local-kernel example.}
+For a single start at \(x=18\) of length \(L=10\), the ten affine
+rows have rank nine. At prime cutoff \(28\), the unique compatible
+assignment makes prime \(17\) negative and all other prime signs
+positive, so \(p_{18}=2^{-9}\). The formal relation kernel has
+dimension one, giving \(2^{-10}2^1=2^{-9}\) in the nominal formula.
+The effective relative nullity of a singleton is zero; its formula
+therefore retains \(p_{18}\). The internal even square relation is
+visible in \(18\cdot24\cdot25\cdot27=540^2\).
+This is a finite algebraic illustration, not an assertion that these
+parameters lie beyond an asymptotic threshold.
+
+The same reasoning permits measurable gates in
+positive estimates. For example, suppose
+\(\E R\ll_\delta N^{-\eta+\delta}\) for every
+\(\delta>0\), and let \(\mathcal A\in\mathcal F_Y\).
+For an integer \(k\ge1\), interpolation gives
+\[
+ \E R^{1+1/k}\le(\E R)^{1-1/k}(\E R^2)^{1/k}
+       \ll_\delta N^\delta\E R.
+\]
+H\"older's inequality with conjugate exponents
+\(1+1/k\) and \(k+1\), followed by the fixed
+moment of order \(d(k+1)\), gives
+\(\E[RZ_G^d]\ll_\delta
+ N^{-\eta k/(k+1)+O(\delta)}\).
+Choose \(k\) after the desired error margin.
+Since the gate is at most one, for fixed \(d\) this yields
+\[
+ \E[R\,Z_G^d\,\ind_{\mathcal A}]
+       \ll_\varepsilon N^{-\eta+\varepsilon}.
+\]
+Here \eqref{p1:uniform:replica-moment} supplies the
+second moment of \(R\). The estimate is an
+unconditional weighted expectation; it makes
+no division by \(\P(\mathcal A)\).
