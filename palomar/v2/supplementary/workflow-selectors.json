@@ -1,0 +1,38 @@
+{
+  "phase": "frozen_source_selector",
+  "source_commit": "aed23a21dea8eb62e73df3e281db9583716fe106",
+  "preparation_base_commit": "3e5a5c0e563bbcfc1ab92472411f86dc1b44d74b",
+  "workflow_sha256": "6da5771e291d06119e5a2b41e73dc75d27f85a04b30f1569ea9e178b086e01af",
+  "pipeline_commit": "14aa8d6b3c2f14a8540605e37144560b9a00e7e7",
+  "one_bundle_only": true,
+  "global_workflow_mutex": true,
+  "whole_portal_cycle_requires_operator_check": true,
+  "outcomes": [
+    {
+      "bundle": "arithmetic_geometry",
+      "both_supported_test_roles_passed": true
+    },
+    {
+      "bundle": "profiles_smooth",
+      "both_supported_test_roles_passed": true
+    },
+    {
+      "bundle": "affine_conditioning",
+      "both_supported_test_roles_passed": true
+    },
+    {
+      "bundle": "cumulants_obstructions",
+      "both_supported_test_roles_passed": true
+    },
+    {
+      "bundle": "poisson_fields",
+      "both_supported_test_roles_passed": true
+    },
+    {
+      "bundle": "exponential_cylinders",
+      "both_supported_test_roles_passed": true
+    }
+  ],
+  "invalid_input_controls_passed": 6,
+  "scope": "Local selector tests only. Role strings are synthetic test inputs, not a personal relationship attestation. No workflow dispatch or intake."
+}

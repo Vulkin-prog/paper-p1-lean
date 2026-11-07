@@ -95,8 +95,10 @@ then invokes Lean's own axiom report for each declaration. Only `propext`,
 Standalone registry Challenges have only the deliberate selected statement
 holes and are never imported by the proof development or its audit.
 
-The latest complete project replay with all seventeen candidate families passed
-**18,599 build jobs** and **19,721 theorem axiom checks**. Each mathematical
+The latest complete project replay with all six consolidated registrations and
+seventeen preserved components passed **18,611 build jobs** and **19,935 theorem axiom checks**.
+The substantive mathematical inventory remains **19,507 theorems**; the remaining
+428 are complete component and consolidated Solution wrappers. Each mathematical
 checkpoint and registry replay records its own exact source commit and scope.
 The [evidence checker](scripts/check_registry_evidence.py) validates every
 preserved receipt against its historical inventory and current proof imports.
@@ -114,7 +116,9 @@ The target is **six registrations in total**, with **one entire submission cycle
 | 5 | Poisson approximation, scales and positional reference fields | 16 | [configuration](comparator/registrations/p1_poisson_fields.json), [metadata](palomar/v2/poisson_fields/formalization.yaml) |
 | 6 | Exponential moments and prime cylinders | 8 | [configuration](comparator/registrations/p1_exponential_cylinders.json), [metadata](palomar/v2/exponential_cylinders/formalization.yaml) |
 
-The [explicit plan](palomar/REGISTRATION_PLAN.json) records every original-to-consolidated declaration, all component source hashes and the strict serial policy. The original [seventeen component interfaces and receipts](palomar/v1/README.md) remain separate proof evidence; they are not seventeen planned submissions. The [six-registration overview](palomar/v2/README.md) records the consolidated checks.
+The [explicit plan](palomar/REGISTRATION_PLAN.json) records every original-to-consolidated declaration, all component source hashes and the strict serial policy. The original [seventeen component interfaces and receipts](palomar/v1/README.md) remain separate proof evidence; they are not seventeen planned submissions. All six consolidated pairs passed standalone comparison and all six local checkers,
+then frozen-root Lean/NanoDa qualification. The [six-registration overview](palomar/v2/README.md)
+links their receipts and the complete source-bound project replay.
 
 All six metadata files associate **[Brice Pouly](https://orcid.org/0009-0008-8491-2467)** with GitHub `Vulkin-prog` and **ORCID `0009-0008-8491-2467`** in structured author, maintainer and paper-source records accepted by the pinned official Palomar parser.
 

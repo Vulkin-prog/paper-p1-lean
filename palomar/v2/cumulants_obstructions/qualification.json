@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "status": "local_dual_kernel_passed",
+  "source_commit": "aed23a21dea8eb62e73df3e281db9583716fe106",
+  "toolchain": "leanprover/lean4:v4.36.0-rc2",
+  "mathlib_commit": "9d581dfff2e41de989072ea63abf3daf69311520",
+  "configuration": "comparator/registrations/p1_cumulants_obstructions.json",
+  "declarations": [
+    "PaperP1Registry.Registration.CumulantsObstructions.factorial_cumulants_factorial_source",
+    "PaperP1Registry.Registration.CumulantsObstructions.factorial_cumulants_third_exact_identity",
+    "PaperP1Registry.Registration.CumulantsObstructions.factorial_cumulants_fourth_exact_identity",
+    "PaperP1Registry.Registration.CumulantsObstructions.factorial_cumulants_principal_second_equivalent",
+    "PaperP1Registry.Registration.CumulantsObstructions.factorial_cumulants_optimal_third_cumulant",
+    "PaperP1Registry.Registration.CumulantsObstructions.moment_obstruction_normalized_probabilities",
+    "PaperP1Registry.Registration.CumulantsObstructions.moment_obstruction_all_factorial_series",
+    "PaperP1Registry.Registration.CumulantsObstructions.moment_obstruction_distance_and_exponential",
+    "PaperP1Registry.Registration.CumulantsObstructions.moment_obstruction_fixed_order_matching",
+    "PaperP1Registry.Registration.CumulantsObstructions.moment_obstruction_uniform_subpolynomial",
+    "PaperP1Registry.Registration.CumulantsObstructions.private_obstruction_admissible_fields",
+    "PaperP1Registry.Registration.CumulantsObstructions.private_obstruction_conditional_forcing",
+    "PaperP1Registry.Registration.CumulantsObstructions.private_obstruction_deterministic_obstruction",
+    "PaperP1Registry.Registration.CumulantsObstructions.private_obstruction_randomized_obstruction"
+  ],
+  "checks": {
+    "challenge_build": true,
+    "solution_build": true,
+    "statement_comparison": true,
+    "permitted_axioms_only": true,
+    "lean_default_kernel": true,
+    "nanoda_kernel": true,
+    "bubblewrap_enabled": true,
+    "actual_process_exit_code": 0
+  },
+  "full_build_jobs": 18611,
+  "all_audited_theorems": 19935,
+  "command": [
+    "lake",
+    "env",
+    "lake",
+    "comparator",
+    "--config",
+    "comparator/registrations/p1_cumulants_obstructions.json"
+  ],
+  "files": {
+    "lean-toolchain": "11c697aebe5b539d74f5069e497a588e7dfab1c4eeb74313f28357e351c55ca3",
+    "lakefile.toml": "aee03d96ffa2e72f893318f25c81aa9f76c2c17be9694f4a6d69db567cda5948",
+    "lake-manifest.json": "e55097e7af1499ee442569b78349960413c5ff020700fff97fcf59ab95b338ad",
+    "ChallengeP1RegistrationCumulantsObstructions.lean": "357f56b5d8c1ae24e27c0d779349e82c9f68432bcc2c0655c29e635102022237",
+    "SolutionP1RegistrationCumulantsObstructions.lean": "cfdc3ec13778142c8034b26762157d02f2a24d21343e3ec25faaef91a22748fe",
+    "comparator/registrations/p1_cumulants_obstructions.json": "7ed8cf3d3271f01e71475d77ef801c04454ad656d1cf46e7cf140faeb0fbc890",
+    "palomar/v2/cumulants_obstructions/formalization.yaml": "b26cecffc25c83479fb19602bcd24b7ff9f178d6156343e1a8f62d008fa3ea03",
+    "palomar/REGISTRATION_PLAN.json": "7f21e5915fae59589ac1fe76d632a1e07e796e7b96a2d5be47e35de1657308e5"
+  },
+  "tool_binary_sha256": {
+    "lake": "42678ccbc2605e2f892540dc7236e009fdd1224e823d104dfd72725d2f1a52d2",
+    "leanexport": "8298d4412a1f8986b5dbfd1d9925211778d8d320fc47b72040c8fdfdd5b603d5",
+    "leanchecker": "2b2ff08805ace61c935b023f8114ac3f7f1d3bc79cb4e8c47ef7801a5af58798",
+    "nanoda_bin": "8241c5e6baa29490aa118d382f97961b208ae730fdb96545c2abed74c9ece5a8"
+  },
+  "logs": [
+    {
+      "kind": "comparator",
+      "path": "palomar/v2/evidence/cumulants_obstructions-comparator.log.gz",
+      "sha256": "343ec52271051ba522a32b3dada51c060e82ab37c14d198e823843b5b2453e7e"
+    },
+    {
+      "kind": "full_build",
+      "path": "palomar/v2/evidence/cumulants_obstructions-full-build.log.gz",
+      "sha256": "c34f7b72534c4483109297383feb69ec3a9c4631d28149024cbe79c5980e7779"
+    },
+    {
+      "kind": "axiom_audit",
+      "path": "palomar/v2/evidence/cumulants_obstructions-axiom-audit.log.gz",
+      "sha256": "08241bcaabd65b4cd621f9ae01ea256db6d9d222fe8b9fcc066aad644e5dc1fd"
+    }
+  ],
+  "palomar_complete_reusable_workflow_passed": false,
+  "editorial_review": null,
+  "registration": null,
+  "scope": "Frozen-root local statement comparison and Lean/NanoDa replay, separate from the six-checker standalone report. Not the complete Palomar workflow, intake, editorial review or registration."
+}

@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "status": "local_dual_kernel_passed",
+  "source_commit": "aed23a21dea8eb62e73df3e281db9583716fe106",
+  "toolchain": "leanprover/lean4:v4.36.0-rc2",
+  "mathlib_commit": "9d581dfff2e41de989072ea63abf3daf69311520",
+  "configuration": "comparator/registrations/p1_exponential_cylinders.json",
+  "declarations": [
+    "PaperP1Registry.Registration.ExponentialCylinders.exponential_divergence_finite_cylinder_lower",
+    "PaperP1Registry.Registration.ExponentialCylinders.exponential_divergence_prime_threshold_bounds",
+    "PaperP1Registry.Registration.ExponentialCylinders.exponential_divergence_odd_prime_liminf",
+    "PaperP1Registry.Registration.ExponentialCylinders.exponential_divergence_logarithms_and_moments_diverge",
+    "PaperP1Registry.Registration.ExponentialCylinders.prime_cylinders_finite_valuation_cylinders",
+    "PaperP1Registry.Registration.ExponentialCylinders.prime_cylinders_effective_retained_density",
+    "PaperP1Registry.Registration.ExponentialCylinders.prime_cylinders_rank_charged_moments",
+    "PaperP1Registry.Registration.ExponentialCylinders.prime_cylinders_five_start_gain"
+  ],
+  "checks": {
+    "challenge_build": true,
+    "solution_build": true,
+    "statement_comparison": true,
+    "permitted_axioms_only": true,
+    "lean_default_kernel": true,
+    "nanoda_kernel": true,
+    "bubblewrap_enabled": true,
+    "actual_process_exit_code": 0
+  },
+  "full_build_jobs": 18611,
+  "all_audited_theorems": 19935,
+  "command": [
+    "lake",
+    "env",
+    "lake",
+    "comparator",
+    "--config",
+    "comparator/registrations/p1_exponential_cylinders.json"
+  ],
+  "files": {
+    "lean-toolchain": "11c697aebe5b539d74f5069e497a588e7dfab1c4eeb74313f28357e351c55ca3",
+    "lakefile.toml": "aee03d96ffa2e72f893318f25c81aa9f76c2c17be9694f4a6d69db567cda5948",
+    "lake-manifest.json": "e55097e7af1499ee442569b78349960413c5ff020700fff97fcf59ab95b338ad",
+    "ChallengeP1RegistrationExponentialCylinders.lean": "db81933f38a65afd248d42ddba15eae41e9d87a814900bfe1123cbd4fc1a4cd7",
+    "SolutionP1RegistrationExponentialCylinders.lean": "3afb04f38bfd07cf8cc0e217a98af0acc673dcdd246ce70bc60cf855b1107439",
+    "comparator/registrations/p1_exponential_cylinders.json": "29797cf7f7c866d744b249e7b12cfc4fe0bc82959092717dc347acfb63bec16a",
+    "palomar/v2/exponential_cylinders/formalization.yaml": "9d27b36b8ec94306efa4d6abb51db793a34d4140c7b7cee9c1d4b92511aa9649",
+    "palomar/REGISTRATION_PLAN.json": "7f21e5915fae59589ac1fe76d632a1e07e796e7b96a2d5be47e35de1657308e5"
+  },
+  "tool_binary_sha256": {
+    "lake": "42678ccbc2605e2f892540dc7236e009fdd1224e823d104dfd72725d2f1a52d2",
+    "leanexport": "8298d4412a1f8986b5dbfd1d9925211778d8d320fc47b72040c8fdfdd5b603d5",
+    "leanchecker": "2b2ff08805ace61c935b023f8114ac3f7f1d3bc79cb4e8c47ef7801a5af58798",
+    "nanoda_bin": "8241c5e6baa29490aa118d382f97961b208ae730fdb96545c2abed74c9ece5a8"
+  },
+  "logs": [
+    {
+      "kind": "comparator",
+      "path": "palomar/v2/evidence/exponential_cylinders-comparator.log.gz",
+      "sha256": "3f4c46f0ff3a53a67969589c2ada195a75b0bc82426e63abda3ee20f42713e3e"
+    },
+    {
+      "kind": "full_build",
+      "path": "palomar/v2/evidence/exponential_cylinders-full-build.log.gz",
+      "sha256": "c34f7b72534c4483109297383feb69ec3a9c4631d28149024cbe79c5980e7779"
+    },
+    {
+      "kind": "axiom_audit",
+      "path": "palomar/v2/evidence/exponential_cylinders-axiom-audit.log.gz",
+      "sha256": "08241bcaabd65b4cd621f9ae01ea256db6d9d222fe8b9fcc066aad644e5dc1fd"
+    }
+  ],
+  "palomar_complete_reusable_workflow_passed": false,
+  "editorial_review": null,
+  "registration": null,
+  "scope": "Frozen-root local statement comparison and Lean/NanoDa replay, separate from the six-checker standalone report. Not the complete Palomar workflow, intake, editorial review or registration."
+}

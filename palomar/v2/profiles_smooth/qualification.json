@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "status": "local_dual_kernel_passed",
+  "source_commit": "aed23a21dea8eb62e73df3e281db9583716fe106",
+  "toolchain": "leanprover/lean4:v4.36.0-rc2",
+  "mathlib_commit": "9d581dfff2e41de989072ea63abf3daf69311520",
+  "configuration": "comparator/registrations/p1_profiles_smooth.json",
+  "declarations": [
+    "PaperP1Registry.Registration.ProfilesSmooth.asymmetric_profiles_expanded_profile",
+    "PaperP1Registry.Registration.ProfilesSmooth.asymmetric_profiles_small_prime_invariance",
+    "PaperP1Registry.Registration.ProfilesSmooth.asymmetric_profiles_radius_one_obstruction",
+    "PaperP1Registry.Registration.ProfilesSmooth.smooth_windows_almost_all_two_smooth",
+    "PaperP1Registry.Registration.ProfilesSmooth.smooth_windows_uniform_off_central",
+    "PaperP1Registry.Registration.ProfilesSmooth.smooth_windows_gaussian_mean_comparison"
+  ],
+  "checks": {
+    "challenge_build": true,
+    "solution_build": true,
+    "statement_comparison": true,
+    "permitted_axioms_only": true,
+    "lean_default_kernel": true,
+    "nanoda_kernel": true,
+    "bubblewrap_enabled": true,
+    "actual_process_exit_code": 0
+  },
+  "full_build_jobs": 18611,
+  "all_audited_theorems": 19935,
+  "command": [
+    "lake",
+    "env",
+    "lake",
+    "comparator",
+    "--config",
+    "comparator/registrations/p1_profiles_smooth.json"
+  ],
+  "files": {
+    "lean-toolchain": "11c697aebe5b539d74f5069e497a588e7dfab1c4eeb74313f28357e351c55ca3",
+    "lakefile.toml": "aee03d96ffa2e72f893318f25c81aa9f76c2c17be9694f4a6d69db567cda5948",
+    "lake-manifest.json": "e55097e7af1499ee442569b78349960413c5ff020700fff97fcf59ab95b338ad",
+    "ChallengeP1RegistrationProfilesSmooth.lean": "3360407f3dff705a306f3b326b61e7ee751ae2f2f6901bf04c4a69a89665675b",
+    "SolutionP1RegistrationProfilesSmooth.lean": "0cdd4488f4e2438e71b4db125e90fd79ff2cc5644b4385b57203f043d3c10c2f",
+    "comparator/registrations/p1_profiles_smooth.json": "fe72c5109acd54c71b0d1ab493524181bf5e3b09055773b51ab1d12fe0abc95a",
+    "palomar/v2/profiles_smooth/formalization.yaml": "585a65152325d21290ac4c142ae899ab7a78b2bf972dbdda5b50725f003897ff",
+    "palomar/REGISTRATION_PLAN.json": "7f21e5915fae59589ac1fe76d632a1e07e796e7b96a2d5be47e35de1657308e5"
+  },
+  "tool_binary_sha256": {
+    "lake": "42678ccbc2605e2f892540dc7236e009fdd1224e823d104dfd72725d2f1a52d2",
+    "leanexport": "8298d4412a1f8986b5dbfd1d9925211778d8d320fc47b72040c8fdfdd5b603d5",
+    "leanchecker": "2b2ff08805ace61c935b023f8114ac3f7f1d3bc79cb4e8c47ef7801a5af58798",
+    "nanoda_bin": "8241c5e6baa29490aa118d382f97961b208ae730fdb96545c2abed74c9ece5a8"
+  },
+  "logs": [
+    {
+      "kind": "comparator",
+      "path": "palomar/v2/evidence/profiles_smooth-comparator.log.gz",
+      "sha256": "ab9aa4ce76cf22b3efb726e0a342384c0f44509212d34a4a9c438a6c6d4d8538"
+    },
+    {
+      "kind": "full_build",
+      "path": "palomar/v2/evidence/profiles_smooth-full-build.log.gz",
+      "sha256": "c34f7b72534c4483109297383feb69ec3a9c4631d28149024cbe79c5980e7779"
+    },
+    {
+      "kind": "axiom_audit",
+      "path": "palomar/v2/evidence/profiles_smooth-axiom-audit.log.gz",
+      "sha256": "08241bcaabd65b4cd621f9ae01ea256db6d9d222fe8b9fcc066aad644e5dc1fd"
+    }
+  ],
+  "palomar_complete_reusable_workflow_passed": false,
+  "editorial_review": null,
+  "registration": null,
+  "scope": "Frozen-root local statement comparison and Lean/NanoDa replay, separate from the six-checker standalone report. Not the complete Palomar workflow, intake, editorial review or registration."
+}

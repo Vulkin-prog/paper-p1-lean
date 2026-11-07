@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "status": "local_dual_kernel_passed",
+  "source_commit": "aed23a21dea8eb62e73df3e281db9583716fe106",
+  "toolchain": "leanprover/lean4:v4.36.0-rc2",
+  "mathlib_commit": "9d581dfff2e41de989072ea63abf3daf69311520",
+  "configuration": "comparator/registrations/p1_affine_conditioning.json",
+  "declarations": [
+    "PaperP1Registry.Registration.AffineConditioning.affine_spectra_uniform_affine_mass",
+    "PaperP1Registry.Registration.AffineConditioning.affine_spectra_centered_fourier_formula",
+    "PaperP1Registry.Registration.AffineConditioning.affine_spectra_sharp_relative_nullity_bound",
+    "PaperP1Registry.Registration.AffineConditioning.affine_spectra_canonical_factorization",
+    "PaperP1Registry.Registration.AffineConditioning.conditioning_conditional_target_sum",
+    "PaperP1Registry.Registration.AffineConditioning.conditioning_colored_target_sum",
+    "PaperP1Registry.Registration.AffineConditioning.conditioning_negative_deviation",
+    "PaperP1Registry.Registration.AffineConditioning.conditioning_conditional_mean_lower",
+    "PaperP1Registry.Registration.AffineConditioning.dependent_expansion_polynomial_expansion",
+    "PaperP1Registry.Registration.AffineConditioning.dependent_expansion_centered_identity",
+    "PaperP1Registry.Registration.AffineConditioning.dependent_expansion_positive_stopped_kernel",
+    "PaperP1Registry.Registration.AffineConditioning.dependent_expansion_stopped_l1_bound"
+  ],
+  "checks": {
+    "challenge_build": true,
+    "solution_build": true,
+    "statement_comparison": true,
+    "permitted_axioms_only": true,
+    "lean_default_kernel": true,
+    "nanoda_kernel": true,
+    "bubblewrap_enabled": true,
+    "actual_process_exit_code": 0
+  },
+  "full_build_jobs": 18611,
+  "all_audited_theorems": 19935,
+  "command": [
+    "lake",
+    "env",
+    "lake",
+    "comparator",
+    "--config",
+    "comparator/registrations/p1_affine_conditioning.json"
+  ],
+  "files": {
+    "lean-toolchain": "11c697aebe5b539d74f5069e497a588e7dfab1c4eeb74313f28357e351c55ca3",
+    "lakefile.toml": "aee03d96ffa2e72f893318f25c81aa9f76c2c17be9694f4a6d69db567cda5948",
+    "lake-manifest.json": "e55097e7af1499ee442569b78349960413c5ff020700fff97fcf59ab95b338ad",
+    "ChallengeP1RegistrationAffineConditioning.lean": "e909b99d96da79224516b6ac813ba30e5766280a15367111cc7e8a692f340445",
+    "SolutionP1RegistrationAffineConditioning.lean": "7ff34096a3e67ee628c643861b94bff29a9c7ff21785720c9371d3e36ab3a37a",
+    "comparator/registrations/p1_affine_conditioning.json": "6aac029e849e6c92c1570884619b122e80b68762dc4fb58165f048c7d5ad5238",
+    "palomar/v2/affine_conditioning/formalization.yaml": "7ee5e9a7f24d3796681e1b380e7c6cb1de8acc0187c704a4e4cdf5ba451e1056",
+    "palomar/REGISTRATION_PLAN.json": "7f21e5915fae59589ac1fe76d632a1e07e796e7b96a2d5be47e35de1657308e5"
+  },
+  "tool_binary_sha256": {
+    "lake": "42678ccbc2605e2f892540dc7236e009fdd1224e823d104dfd72725d2f1a52d2",
+    "leanexport": "8298d4412a1f8986b5dbfd1d9925211778d8d320fc47b72040c8fdfdd5b603d5",
+    "leanchecker": "2b2ff08805ace61c935b023f8114ac3f7f1d3bc79cb4e8c47ef7801a5af58798",
+    "nanoda_bin": "8241c5e6baa29490aa118d382f97961b208ae730fdb96545c2abed74c9ece5a8"
+  },
+  "logs": [
+    {
+      "kind": "comparator",
+      "path": "palomar/v2/evidence/affine_conditioning-comparator.log.gz",
+      "sha256": "8925962f3199cf7d00fc4609cb17746581cfc405623a84b1523b0a770a8e7a64"
+    },
+    {
+      "kind": "full_build",
+      "path": "palomar/v2/evidence/affine_conditioning-full-build.log.gz",
+      "sha256": "c34f7b72534c4483109297383feb69ec3a9c4631d28149024cbe79c5980e7779"
+    },
+    {
+      "kind": "axiom_audit",
+      "path": "palomar/v2/evidence/affine_conditioning-axiom-audit.log.gz",
+      "sha256": "08241bcaabd65b4cd621f9ae01ea256db6d9d222fe8b9fcc066aad644e5dc1fd"
+    }
+  ],
+  "palomar_complete_reusable_workflow_passed": false,
+  "editorial_review": null,
+  "registration": null,
+  "scope": "Frozen-root local statement comparison and Lean/NanoDa replay, separate from the six-checker standalone report. Not the complete Palomar workflow, intake, editorial review or registration."
+}

@@ -1,0 +1,38 @@
+{
+  "stage": "six consolidated registrations and seventeen preserved components: full-project replay",
+  "source_commit": "aed23a21dea8eb62e73df3e281db9583716fe106",
+  "status": "passed",
+  "mathematical_checkpoint_unchanged": 996,
+  "planned_registrations": 6,
+  "preserved_components": 17,
+  "selected_declarations": 68,
+  "full_build_jobs": 18611,
+  "audited_theorems": 19935,
+  "substantive_theorems": 19507,
+  "preserved_component_solution_theorems": 214,
+  "consolidated_solution_theorems": 214,
+  "distinct_checked_references": 19854,
+  "actual_process_exit_codes": {
+    "build": 0,
+    "audit": 0,
+    "references": 0
+  },
+  "logs": [
+    {
+      "kind": "build",
+      "path": "docs/validation/registry-six-registrations/build.log.gz",
+      "sha256_gzip": "c34f7b72534c4483109297383feb69ec3a9c4631d28149024cbe79c5980e7779"
+    },
+    {
+      "kind": "audit",
+      "path": "docs/validation/registry-six-registrations/audit.log.gz",
+      "sha256_gzip": "08241bcaabd65b4cd621f9ae01ea256db6d9d222fe8b9fcc066aad644e5dc1fd"
+    },
+    {
+      "kind": "references",
+      "path": "docs/validation/registry-six-registrations/references.log.gz",
+      "sha256_gzip": "0c567dd891090dcfecb710c20a9d4e6cf84baa0e05d58bc5d804bb8d3d194983"
+    }
+  ],
+  "scope": "Full frozen-source project replay and six local root qualifications. All original component sources, their proof closures, manuscript ledgers and checkpoint-996 PDFs are preserved. Consolidation adds no mathematical-change entry. No complete Palomar workflow, intake, editorial review or registration."
+}
