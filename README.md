@@ -1,6 +1,16 @@
 # P1 — Lean formalization
 
-Current checkpoint P1-MATH-0983: COMPLETE original companion T19.17 is
+Current checkpoint P1-MATH-0984: The separate version 1.7 draft
+integrates the two necessary statement corrections. All 167 revised
+statements have checked proofs, with exact source hashes and canonical
+aliases for T1.10 and T5.1. The original v1.6 ledger remains 165 proved,
+0 conditional and 2 false-original scopes in_progress. T19.17 is
+unconditional. Both PDFs have been compiled and visually reviewed. Lean
+v4.36.0-rc2 and the original source bytes remain unchanged. Full
+checkpoint validation is recorded below. Palomar compatibility and
+family preparation remain; no registration is claimed.
+
+Historical checkpoint P1-MATH-0983: COMPLETE original companion T19.17 is
 PROVED with NO unformalized mathematical input. Canonical:
 UnconditionalPrintedAnchorObstruction.companion_T19_17 and
 companion_T19_17_randomized. Both exact printed coefficients and all
@@ -3714,7 +3724,7 @@ recorded in the linked ledger and [current status](docs/FORMALIZATION_STATUS.md)
 
 Companion T1.10 needs an enlarged alignment exclusion for unequal old/new widths: its literal radius-one version has an unconditional formal counterexample. The corrected coarse4/3 profile is proved under explicit geometric inputs; its sharper31/24 form remains open; see [the scope correction](docs/ASYMMETRIC_ALIGNMENT_SCOPE.md).
 
-The main optimal4/3 quadratic approximation power is now proved under explicit BCN and finite geometric properties, including both bounds, exact actual parameters, nominal-mean bias and eventual probability status. The optimal41/30 third factorial cumulant, full third absolute activity and aligned-channel triple claims are now proved under explicit geometric inputs, withBCN retained for the full connected argument. The actual original count and its retained modification converge in total variation to the actual-mean and nominal-mean Poisson laws without unproved inputs (P1-MATH-0413); quantitative optimal law rates remain separate. Exact fourth-cumulant component identities and unconditional weak, irregular and incompatible pair bounds are proved. In particular, the actual absolute pair activity is asymptotic to half the actual second factorial cumulant, without BCN or a complete pair profile. The contact activity bound at every fixed order now holds unconditionally on every dyadic subground, including irregular starts and zero marginals. The activation probability of the actual principal edge family now has the unconditional exponent -2/3, with any fixed epsilon margin. The planar normal budget T20.4 is now proved with improved constants and an integer-fibre argument. T20.6, the prescribed-plane transverse-product count and its actual affine mass bound, is now proved internally with three motifs and no Pila premise. The project records **981 confirmed mathematical improvements and two statement-scope corrections**. See [current status](docs/FORMALIZATION_STATUS.md), [the activity alignment](docs/FIXED_ABSOLUTE_ACTIVITY_ALIGNMENT.md) and [the mathematical change log](docs/MATHEMATICAL_CHANGELOG.md).
+The main optimal4/3 quadratic approximation power is now proved under explicit BCN and finite geometric properties, including both bounds, exact actual parameters, nominal-mean bias and eventual probability status. The optimal41/30 third factorial cumulant, full third absolute activity and aligned-channel triple claims are now proved under explicit geometric inputs, withBCN retained for the full connected argument. The actual original count and its retained modification converge in total variation to the actual-mean and nominal-mean Poisson laws without unproved inputs (P1-MATH-0413); quantitative optimal law rates remain separate. Exact fourth-cumulant component identities and unconditional weak, irregular and incompatible pair bounds are proved. In particular, the actual absolute pair activity is asymptotic to half the actual second factorial cumulant, without BCN or a complete pair profile. The contact activity bound at every fixed order now holds unconditionally on every dyadic subground, including irregular starts and zero marginals. The activation probability of the actual principal edge family now has the unconditional exponent -2/3, with any fixed epsilon margin. The planar normal budget T20.4 is now proved with improved constants and an integer-fibre argument. T20.6, the prescribed-plane transverse-product count and its actual affine mass bound, is now proved internally with three motifs and no Pila premise. The project records **982 confirmed mathematical improvements and two statement-scope corrections**. See [current status](docs/FORMALIZATION_STATUS.md), [the activity alignment](docs/FIXED_ABSOLUTE_ACTIVITY_ALIGNMENT.md) and [the mathematical change log](docs/MATHEMATICAL_CHANGELOG.md).
 
 Article13.1 now has a complete actual short-basis construction, with
 both physical projections and the common square-class map injective.
@@ -5787,3 +5797,5 @@ P1-MATH-0981: Almost every actual logarithmic window contains two ordinary N-to-
 P1-MATH-0982: The exact original ordinary source census holds unconditionally. The actual ordinary smooth logarithmic-window census and exact original source census interface are proved. Unconditional assembly of the printed deterministic and randomized T19.17 obstructions remains to be checked. The stronger uniform sharp short-average theorem for all real completely multiplicative functions is not established.
 
 P1-MATH-0983 completes original companion T19.17 unconditionally, including the deterministic coefficient and exact randomized one-half factor. Coverage: 165 proved, 0 conditional, 2 in_progress /167; all 73 main and 92 companion original results proved. The two false originals retain checked corrected replacements and still need manuscript revision.
+
+P1-MATH-0984: all 167 revised P1 V1.7 statements have checked proofs, including the two corrected replacements. The original v1.6 sources and its two false-original statuses remain preserved. The separate revised PDFs are compiled and visually reviewed. Palomar compatibility and family preparation remain.

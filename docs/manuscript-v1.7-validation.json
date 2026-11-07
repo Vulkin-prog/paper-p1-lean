@@ -47,9 +47,11 @@
     "findings": "All 165 pages reviewed in contact sheets. All nine listed detail pages inspected at higher resolution. No clipped text, overlapping content, missing glyphs, or unresolved references observed."
   },
   "revised_proof_validation": {
-    "status": "pending_checkpoint_984",
-    "proved": 165,
-    "pending_validation": 2
+    "status": "target_checked_full_replay_pending",
+    "checkpoint": "P1-MATH-0984",
+    "proved": 167,
+    "pending_validation": 0,
+    "full_replay_complete": false
   },
   "palomar_registration": null
 }

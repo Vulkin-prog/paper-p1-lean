@@ -5405,6 +5405,10 @@ import PaperP1
 #print axioms PaperP1.RelativeRamareRemainder.value_relation
 #print axioms PaperP1.RelativeRamareRemainder.difference_identity
 #print axioms PaperP1.RelativeRamareRemainder.quotient_continuous
+#print axioms PaperP1.RevisedCompanionStatements.companion_T1_10
+#print axioms PaperP1.RevisedCompanionStatements.small_prime_bits_unchanged
+#print axioms PaperP1.RevisedCompanionStatements.companion_T5_1
+#print axioms PaperP1.RevisedCompanionStatements.companion_T5_1_exact_comparison
 #print axioms PaperP1.RoundedAmplificationGeometry.rounded_upper_bound
 #print axioms PaperP1.RoundedAmplificationGeometry.rounded_upper_exp_bound
 #print axioms PaperP1.RoundedAmplificationGeometry.rounded_power_bound

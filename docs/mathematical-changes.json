@@ -11075,8 +11075,23 @@
       "impact": "First confirmed correction to a literal manuscript statement, distinct from161 hypothesis/proof improvements. Companion T1.10 stays in progress; no corrected31/24 estimate is claimed and no main-article conclusion is refuted. Original manuscript bytes are unchanged.",
       "validation": "Verified under Lean v4.36.0-rc2: full build passed (14233 jobs); direct axiom audit passed for 11618 declarations using only propext, Classical.choice and Quot.sound; all 10179 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 11.17 GiB.",
       "integration": {
-        "target": "new manuscript version after formalization",
-        "status": "not_integrated"
+        "target": "P1 V1.7 draft",
+        "status": "integrated_in_draft",
+        "checkpoint": "P1-MATH-0984",
+        "revision_report": "docs/MANUSCRIPT_REVISION_V1_7.md",
+        "source_statements": {
+          "version": "P1 V1.7 draft",
+          "source": "companion_sections/arithmetic_appendix.tex",
+          "line": 811,
+          "statement_sha256": "6cf4300eb36b857dce202f230b8940bad0a7a559aab87f5d595386a9af1bd650",
+          "original_statement_sha256": "e176fe0574fc119242f3c523853be4fdc4ff53b0366327c5f6387f1af29c802a",
+          "canonical_statement": "PaperP1.RevisedCompanionStatements.companion_T1_10",
+          "additional_statements": [
+            "PaperP1.RevisedCompanionStatements.small_prime_bits_unchanged"
+          ],
+          "checkpoint": "P1-MATH-0984",
+          "original_false_scope_preserved": true
+        }
       },
       "validation_commit": "7924d36564bfedd3a6e3e9da926ddf07bcd7ff20"
     },
@@ -17802,8 +17817,23 @@
       ],
       "validation": "Verified under Lean v4.36.0-rc2: full build passed (15517 jobs); direct axiom audit passed for 14082 declarations using only propext, Classical.choice and Quot.sound; all 13336 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.67 GiB.",
       "integration": {
-        "target": "new manuscript version after formalization",
-        "status": "not_integrated"
+        "target": "P1 V1.7 draft",
+        "status": "integrated_in_draft",
+        "checkpoint": "P1-MATH-0984",
+        "revision_report": "docs/MANUSCRIPT_REVISION_V1_7.md",
+        "source_statements": {
+          "version": "P1 V1.7 draft",
+          "source": "companion_sections/short_supports.tex",
+          "line": 9,
+          "statement_sha256": "4e595575963acaea8e9c5bbf23aa4a0d11c97d2dbdc02b0fe4b6db891f6a2794",
+          "original_statement_sha256": "98eb59430167ea84a4dd75c36b107f990646c6c2f47783b8292f95e2659899bb",
+          "canonical_statement": "PaperP1.RevisedCompanionStatements.companion_T5_1",
+          "additional_statements": [
+            "PaperP1.RevisedCompanionStatements.companion_T5_1_exact_comparison"
+          ],
+          "checkpoint": "P1-MATH-0984",
+          "original_false_scope_preserved": true
+        }
       },
       "validation_commit": "d7fab3c478c5ad8daac225063cc8354fbfb77759"
     },
@@ -42105,10 +42135,78 @@
       ],
       "validation": "Verified under Lean v4.36.0-rc2: full build passed (18533 jobs); direct axiom audit passed for 19284 declarations using only propext, Classical.choice and Quot.sound; all 19603 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.91 GiB.",
       "integration": {
-        "target": "new manuscript version after formalization",
-        "status": "not_integrated"
+        "target": "P1 V1.7 draft",
+        "status": "integrated_in_draft",
+        "checkpoint": "P1-MATH-0984",
+        "revision_report": "docs/MANUSCRIPT_REVISION_V1_7.md",
+        "source_statements": {
+          "source": "companion_sections/limits_appendix.tex",
+          "statement_changed": false,
+          "proof_appendix": "formalization.tex",
+          "sufficient_census_proved_internally": true
+        }
       },
       "validation_commit": "220f3ee8a142ccace526eba7a62fad7cf7ead826"
+    },
+    {
+      "id": "P1-MATH-0984",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:asymmetric",
+        "number": "T1.10",
+        "page": 14,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 811,
+        "statement_sha256": "e176fe0574fc119242f3c523853be4fdc4ff53b0366327c5f6387f1af29c802a"
+      },
+      "original_assumption": "The two false original statement scopes had checked corrected variants but no revised source inventory and no exact source-facing aliases.",
+      "finding": "The two corrected statements and small-prime invariance have exact source-facing Lean declarations; the separate revised 167-statement inventory preserves the original baseline identities.",
+      "proposed_revision": "Use the separate P1 V1.7 draft and its revised proof ledger. Preserve the false original statement statuses and counterexamples in the v1.6 ledger.",
+      "impact": "Completes proof correspondence for all 167 revised numbered statements without unformalized mathematical inputs; Palomar compatibility and family preparation remain.",
+      "evidence": [
+        "PaperP1.RevisedCompanionStatements.companion_T1_10",
+        "PaperP1.RevisedCompanionStatements.small_prime_bits_unchanged",
+        "PaperP1.RevisedCompanionStatements.companion_T5_1",
+        "PaperP1.RevisedCompanionStatements.companion_T5_1_exact_comparison"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18535 jobs); direct axiom audit passed for 19288 declarations using only propext, Classical.choice and Quot.sound; all 19607 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.83 GiB.",
+      "integration": {
+        "target": "P1 V1.7 draft",
+        "status": "integrated_in_draft",
+        "checkpoint": "P1-MATH-0984",
+        "revision_report": "docs/MANUSCRIPT_REVISION_V1_7.md",
+        "source_statements": {
+          "T1.10": {
+            "version": "P1 V1.7 draft",
+            "source": "companion_sections/arithmetic_appendix.tex",
+            "line": 811,
+            "statement_sha256": "6cf4300eb36b857dce202f230b8940bad0a7a559aab87f5d595386a9af1bd650",
+            "original_statement_sha256": "e176fe0574fc119242f3c523853be4fdc4ff53b0366327c5f6387f1af29c802a",
+            "canonical_statement": "PaperP1.RevisedCompanionStatements.companion_T1_10",
+            "additional_statements": [
+              "PaperP1.RevisedCompanionStatements.small_prime_bits_unchanged"
+            ],
+            "checkpoint": "P1-MATH-0984",
+            "original_false_scope_preserved": true
+          },
+          "T5.1": {
+            "version": "P1 V1.7 draft",
+            "source": "companion_sections/short_supports.tex",
+            "line": 9,
+            "statement_sha256": "4e595575963acaea8e9c5bbf23aa4a0d11c97d2dbdc02b0fe4b6db891f6a2794",
+            "original_statement_sha256": "98eb59430167ea84a4dd75c36b107f990646c6c2f47783b8292f95e2659899bb",
+            "canonical_statement": "PaperP1.RevisedCompanionStatements.companion_T5_1",
+            "additional_statements": [
+              "PaperP1.RevisedCompanionStatements.companion_T5_1_exact_comparison"
+            ],
+            "checkpoint": "P1-MATH-0984",
+            "original_false_scope_preserved": true
+          }
+        }
+      }
     }
   ]
 }

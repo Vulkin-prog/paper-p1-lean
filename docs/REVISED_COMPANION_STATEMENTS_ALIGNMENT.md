@@ -1,0 +1,11 @@
+# Align the corrected companion statements with the separate P1 v1.7 sources
+
+Source: P1 V1.7 draft T1.10 and T5.1, with separate source manifest and revised proof ledger. Original v1.6 source hashes and false-scope statuses are preserved.
+
+The separate P1 V1.7 draft retains all 167 original labels. Exactly the two false original statements are corrected: T1.10 matches its nonalignment radius to the actual old enclosing interval, and T5.1 caps the exponent minimum by the trivial exponent 1 before the exact affine comparison. The 165 other statement blocks retain their original hashes. The original v1.6 source package and original false-scope ledger statuses are unchanged.
+
+RevisedCompanionStatements.companion_T1_10 gives the complete corrected asymmetric estimate, with every fixed old radius D>=1, expanded old-centre parameter Q>=1, cutoff interval (2D+1)(L+1)<=H<=Dcut(L+1), all actual old subsets, and one threshold before all source data. The full weight and exponent 31/24+epsilon are retained. The accompanying small_prime_bits_unchanged theorem proves that adjoining arbitrary prime coordinates at most H to the old information leaves the actual even-selection loss unchanged.
+
+RevisedCompanionStatements.companion_T5_1 gives all three actual counting conclusions uniformly over positive polylogarithmic shifts, positive prescribed divisors and every real beta. Its exact capped comparison is stated for every real beta and delta. These declarations directly match the corrected source statements; no target counting or profile estimate appears among their hypotheses.
+
+The revised proof ledger records 167 proved statements: all 73 main and all 94 companion statements, including the two corrected replacements. The original ledger stays at 165 proved, 0 conditional and 2 false-original scopes in_progress. The draft proof of T19.17 uses the internally proved sufficient logarithmic-window census and preserves both original coefficients. Both revised PDFs have stable cross-references, no overfull boxes, complete contact-sheet review and detailed inspection of the changed pages. The stronger general sharp short-average theorem, Dickman relative-density asymptotic and unrestricted P3 estimate are not claimed. Palomar compatibility and independently meaningful family preparation remain; no submission or registry identifier is claimed.
