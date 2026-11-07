@@ -10976,6 +10976,7 @@
   "PaperP1.DenseAdmissiblePairSeedsUnderInputs.uniform_bound",
   "PaperP1.DenseAdmissibleSeedFamiliesUnderInputs.uniform_seeds",
   "PaperP1.DenseAdmissibleSeedFamiliesUnderInputs.uniform_centered_extensions",
+  "PaperP1.DenseAnchoredIndividualWitness.uniform_individual_witness",
   "PaperP1.DenseAnchoredKernelWitness.uniform_witness",
   "PaperP1.DenseComponentHostCount.uniform_rank_comparison",
   "PaperP1.DenseComponentHostCount.uniform_dense_rank",

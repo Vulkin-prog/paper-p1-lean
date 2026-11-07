@@ -1,6 +1,17 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0997: The exact joint law of two reference
+Current checkpoint P1-MATH-0998: The fixed-arity anchored witness now
+exposes two individual bounds for distinct actual natural values in the
+true anchor window. One threshold precedes every physical relation space,
+window centre and cutoff H>=L+1; active nonalignment, recovery exclusion
+and the injective anchor projection are retained. This extracts the
+already constructed bounds before their product. The prototype passed
+under Lean v4.36.0-rc2; the complete replay is pending. The version 1.8
+manuscript revision and its full correspondence/visual checks are in progress.
+All 167 numbered-result identities and the six prepared registrations
+remain preserved. Palomar submissions remain on hold at the user's request.
+
+Historical checkpoint P1-MATH-0997: The exact joint law of two reference
 coordinates is represented by three independent Poisson arrivals with
 parameters p_x-r, p_y-r and r, where r is their shared covariance and
 0 <= r <= min(p_x,p_y). Pair packets give the exact retained-edge rate,

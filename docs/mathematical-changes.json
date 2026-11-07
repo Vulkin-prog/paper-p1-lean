@@ -42894,6 +42894,34 @@
       },
       "validation_source_commit": "292eaafce35fba0e57d28fe49b6682e4c5b21064",
       "validation_record": "docs/validation/checkpoint-0997/validation.json"
+    },
+    {
+      "id": "P1-MATH-0998",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.8 working draft",
+        "document": "companion",
+        "source": "companion_sections/confinement.tex",
+        "label": "p18:conf:anchored",
+        "line": 75
+      },
+      "original_assumption": "The public anchored-witness interface states a product bound. The two individual kernel estimates are constructed internally before multiplication, while the revised written proof states them separately.",
+      "finding": "Expose one threshold uniform in all true windows, physical relation spaces and cutoffs H>=L+1, giving two distinct actual natural window values whose large odd kernels are each at most N^(tau*D). Retain active nonalignment, disjoint-recovery exclusion, injective anchor projection and fixed r,t,eta,tau. The proof is the existing group-erasure construction before multiplying its two bounds.",
+      "evidence": [
+        "PaperP1.DenseAnchoredIndividualWitness.uniform_individual_witness"
+      ],
+      "proposed_revision": "Use the exact individual-bound endpoint for the unnumbered fixed-arity physical witness in the version 1.8 companion. This exposes an existing proof step; it is not an additional scientific strengthening of the earlier dense-primitive result.",
+      "impact": "Exact manuscript-to-Lean interface for the two separate caps; all 167 numbered results, original arithmetic rates and six registration selections are preserved. No new geometric input, parameter growth regime or registry target.",
+      "validation": {
+        "status": "pending_full_replay",
+        "toolchain": "leanprover/lean4:v4.36.0-rc2",
+        "prototype_actual_exit_code": 0
+      },
+      "integration": {
+        "target": "manuscripts/paper-p1/v1.8/sources/companion_sections/confinement.tex",
+        "status": "pending_validation"
+      }
     }
   ]
 }

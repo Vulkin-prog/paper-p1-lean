@@ -4939,3 +4939,4 @@ public import PaperP1.Probability.PositionalArrivalIndependence
 public import PaperP1.Probability.PositionalBlockIndependence
 public import PaperP1.Probability.PositionalBivariateLaw
 public import PaperP1.Probability.PositionalBivariateMass
+public import PaperP1.Asymptotics.DenseAnchoredIndividualWitness
