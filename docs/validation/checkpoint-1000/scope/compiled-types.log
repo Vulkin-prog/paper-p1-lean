@@ -1,0 +1,5 @@
+'PaperP1.FixedCutoffIndependentTail.uniform_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.FixedCutoffIndependentTail.article_15_8_fixed_cutoff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Exported compiled scope types for 2 declarations

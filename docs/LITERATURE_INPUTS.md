@@ -5,8 +5,10 @@ v>0, one size cutoff and one scale threshold give the pure N^-a tail
 bound for both original families and an arbitrary fixed bounded-width
 compressed block. The size cutoff therefore precedes every epsilon in
 the printed version of article15.8. The proof spends a fixed exponent
-margin in the previously proved tail estimate. The prototype compiled
-with actual exit zero; the complete project replay is pending. No new
+margin in the previously proved tail estimate. The complete pinned replay passed
+18,621 build jobs, 19,967 theorem axiom checks and 19,890 distinct
+reference checks, with all three actual exits zero. All 528 previously
+compared manuscript types were replayed and remain byte-identical. No new
 arithmetic assumption, endpoint a=2 or growing block type is asserted.
 All 167 numbered statements and the frozen v1.8 TeX/PDF bytes are preserved;
 Palomar remains on hold at the user's request.

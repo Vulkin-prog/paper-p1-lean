@@ -43120,15 +43120,53 @@
       "proposed_revision": "Use the new exact quantifier interface when indexing article15.8. The already delivered TeX statement need not change. Keep a<2 fixed and all normalized block range/width constants fixed before N.",
       "impact": "Quantifier clarification by an existing exponent margin. No new arithmetic input, general compressed-block growth regime, endpoint a=2, numbered result or registry selection. The old theorem and manuscript source bytes remain preserved.",
       "validation": {
-        "status": "pending_full_project_replay",
-        "prototype_actual_exit_code": 0,
-        "toolchain": "leanprover/lean4:v4.36.0-rc2"
+        "checkpoint": "P1-MATH-1000",
+        "source_commit": "bd9fcea3f0b0abf147a33bbe543338dcc982e791",
+        "status": "passed",
+        "full_build_jobs": 18621,
+        "audited_theorems": 19967,
+        "substantive_theorems": 19539,
+        "preserved_component_solution_theorems": 214,
+        "consolidated_solution_theorems": 214,
+        "distinct_checked_references": 19890,
+        "actual_process_exit_codes": {
+          "build": 0,
+          "audit": 0,
+          "references": 0
+        },
+        "toolchain": "leanprover/lean4:v4.36.0-rc2",
+        "mathlib_commit": "9d581dfff2e41de989072ea63abf3daf69311520",
+        "permitted_kernel_axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "logs": [
+          {
+            "kind": "build",
+            "path": "docs/validation/checkpoint-1000/build.log.gz",
+            "sha256_gzip": "d75d5f17759252417d6669a508b7a2bb955ddf75a50b8c11e96e62f9d82287c3"
+          },
+          {
+            "kind": "audit",
+            "path": "docs/validation/checkpoint-1000/audit.log.gz",
+            "sha256_gzip": "141f2a27c91d4d79304aabbaae9ae56588a1099826f432fb20eadb7400e12a7a"
+          },
+          {
+            "kind": "references",
+            "path": "docs/validation/checkpoint-1000/references.log.gz",
+            "sha256_gzip": "62c4da7e794cca86d3e6d31b5123fdfe56e21c2ea72358285db8e621e5d6261d"
+          }
+        ],
+        "scope": "Two exact public interfaces fix the independent full-support size cutoff before epsilon, for both original heterogeneous families and one arbitrary fixed bounded-width block. A fixed exponent margin yields the pure N^(-a) bound for every fixed a<2. No new arithmetic hypothesis, endpoint a=2 or growing block type. The 167 numbered results, frozen v1.8 sources/PDFs and six registration scopes are preserved."
       },
       "manuscript_integration": {
         "target_version": "P1 V1.8 proof correspondence supplement",
-        "status": "pending_validation",
-        "reason": "The source statement is unchanged; the supplement will expose the size cutoff before epsilon as a directly compiled theorem."
-      }
+        "status": "proved_interface_available",
+        "reason": "The frozen v1.8 statement is unchanged. A direct theorem now exposes the size cutoff before every epsilon; see docs/FIXED_CUTOFF_INDEPENDENT_TAIL.md."
+      },
+      "validation_source_commit": "bd9fcea3f0b0abf147a33bbe543338dcc982e791",
+      "validation_record": "docs/validation/checkpoint-1000/validation.json"
     }
   ]
 }
