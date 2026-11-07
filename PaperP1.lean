@@ -4925,3 +4925,4 @@ public import PaperP1.Analysis.UnconditionalOrdinarySourceCensus
 public import PaperP1.Analysis.UnconditionalPrintedAnchorObstruction
 public import PaperP1.Analysis.RevisedCompanionStatements
 public import PaperP1.Analysis.QuadraticComparisonRange
+public import PaperP1.Model.OneSidedPrimeCylinder

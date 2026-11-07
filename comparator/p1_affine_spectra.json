@@ -1,0 +1,16 @@
+{
+  "challenge_module": "ChallengeP1AffineSpectra",
+  "solution_module": "SolutionP1AffineSpectra",
+  "theorem_names": [
+    "PaperP1Registry.AffineSpectra.uniform_affine_mass",
+    "PaperP1Registry.AffineSpectra.centered_fourier_formula",
+    "PaperP1Registry.AffineSpectra.sharp_relative_nullity_bound",
+    "PaperP1Registry.AffineSpectra.canonical_factorization"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "enable_nanoda": true
+}

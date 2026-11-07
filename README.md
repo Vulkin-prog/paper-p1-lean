@@ -3,7 +3,7 @@
 *Sharp Poisson approximation and second-order correction for long multiplicative
 runs*, and its technical companion, by [Brice Pouly](https://orcid.org/0009-0008-8491-2467).
 
-Current checkpoint P1-MATH-0985: all **167 revised numbered statements** have
+Current checkpoint P1-MATH-0986: all **167 revised numbered statements** have
 checked proofs, using **Lean v4.36.0-rc2**, with no unformalized mathematical
 input. This comprises all 73 main-article and all 94 revised companion results.
 The separate version 1.7 manuscript draft integrates the two necessary statement
@@ -35,7 +35,7 @@ bytes and checked counterexamples are preserved. Their corrected replacements
 are proved and integrated in version 1.7. T19.17 is proved with both original
 coefficients and without an external smooth-number premise.
 
-The ledger records **983 confirmed mathematical improvements and two statement-scope corrections**.
+The ledger records **984 confirmed mathematical improvements and two statement-scope corrections**.
 Proof substitutions, exact parameter ranges and the scope of stronger
 unasserted analytic or geometric results are documented in the source revision.
 
@@ -49,6 +49,11 @@ unasserted analytic or geometric results are documented in the source revision.
 | Printed statements, compiled types and explicit hypotheses | [Scope index](docs/NUMBERED_SCOPE_REVIEW.md) |
 | Exact Paper C ports and licence attribution | [Reuse record](docs/PAPER_C_REUSE.md) |
 | Earlier project progress | [Preserved checkpoint history](docs/README_CHECKPOINT_HISTORY.md) |
+
+The [one-sided prime-cylinder strengthening](docs/ONE_SIDED_PRIME_CYLINDER.md)
+proves the sharper finite start count N/q-N/q^2-3 and corresponding positive
+and total exponential-moment lower bounds. Its direct proofs are checked;
+the full checkpoint replay is pending. No numbered statement changes.
 
 ## Build and verification
 
@@ -101,6 +106,10 @@ NanoDa, with bubblewrap isolation enabled:
 All 44 selected declarations also passed supplementary replays with verified
 con-ron, Lean and NanoDa. The [source-bound reports](palomar/v1/supplementary/README.md)
 preserve the actual logs, binary identities and positive/ill-typed controls.
+
+A further [finite-affine candidate](palomar/v1/affine_spectra/formalization.yaml)
+has four explicit statements and complete proofs, with standalone exports
+accepted by six checkers. Its frozen-root qualification is pending.
 
 The [candidate interfaces](palomar/v1/README.md) link each standalone Mathlib-only
 Challenge, complete Solution, Comparator configuration, metadata and preserved

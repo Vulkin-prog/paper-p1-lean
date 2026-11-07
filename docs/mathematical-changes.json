@@ -42242,6 +42242,47 @@
         "numbered_statements_changed": false
       },
       "validation_commit": "e47386f8f9dfa65d8c2d7a00d80cba45c2950451"
+    },
+    {
+      "id": "P1-MATH-0986",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:cylinder",
+        "number": "T19.7",
+        "page": 71,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 385,
+        "statement_sha256": "c4dfa742ae68556d196927fdaaae789b2734586e0e9820cdff17c2218e8639be"
+      },
+      "original_assumption": "The earlier finite cylinder lower bound retained parameters satisfying both q not dividing u and q not dividing u+1, forcing an exact right boundary in addition to the required start.",
+      "finding": "In the one-negative-prime sample, starts q*u+1 of length at least q-1 require only q not dividing u. The condition q not dividing u+1 enforces the next opposite sign and is unnecessary for the actual run-start observable. Keeping the larger one-sided parameter set proves the finite lower bound N/q-N/q^2-3, improves the previous valid N/q-2N/q^2-4 bound, and strengthens the actual positive and total exponential-moment lower bounds. The original odd-prime scale, t>2 range and (t-2)log(2) liminf coefficient are preserved.",
+      "proposed_revision": "State the stronger finite forced-start count and exponential-moment bound using only the necessary preceding-boundary condition. Preserve the printed asymptotic statement and explain the observable as a run start of length at least q-1.",
+      "impact": "Replaces the finite count error 2N/q^2+4 by N/q^2+3, without changing any numbered statement or creating a further false-original scope.",
+      "evidence": [
+        "PaperP1.OneSidedPrimeCylinder.mem_starts",
+        "PaperP1.OneSidedPrimeCylinder.original_starts_subset",
+        "PaperP1.OneSidedPrimeCylinder.positive_start",
+        "PaperP1.OneSidedPrimeCylinder.starts_subset_interval",
+        "PaperP1.OneSidedPrimeCylinder.retainedParameters_card_lower",
+        "PaperP1.OneSidedPrimeCylinder.starts_card",
+        "PaperP1.OneSidedPrimeCylinder.starts_card_lower",
+        "PaperP1.OneSidedPrimeCylinder.finite_lower_bound_strictly_improves",
+        "PaperP1.OneSidedPrimeCylinder.positive_count_on_sample",
+        "PaperP1.OneSidedPrimeCylinder.positive_exponential_card_lower",
+        "PaperP1.OneSidedPrimeCylinder.positive_exponential_lower",
+        "PaperP1.OneSidedPrimeCylinder.total_exponential_lower",
+        "PaperP1.OneSidedPrimeCylinder.retainedParameters",
+        "PaperP1.OneSidedPrimeCylinder.starts"
+      ],
+      "validation": "Direct Lean v4.36.0-rc2 verification passed for all 12 new theorems with proof warnings as errors. Full project build, source-discovered axiom audit and declaration-reference replay are pending at this source checkpoint.",
+      "integration": {
+        "target": "P1 V1.7 draft",
+        "status": "not_integrated",
+        "numbered_statements_changed": false
+      }
     }
   ]
 }

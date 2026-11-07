@@ -1,0 +1,85 @@
+version: v0.4
+project:
+  name: Exact finite affine spectra and canonical moment factorization
+  description: Normalized uniform probabilities of arbitrary finite affine systems are zero exactly for
+    incompatible prescriptions and otherwise equal the inverse power of two of the effective image rank.
+    Actual effective-block indicators have their individual exact marginal rates. Their centered moment
+    is the signed full-support character sum, with every affine sign and heterogeneous dimension retained.
+    The relative nullity is the actual addition-kernel dimension and exact dimension deficit, giving the
+    sharper factor 2^rho-1. A unique finest relation-respecting partition factors both ordinary and centered
+    moments and adds the relative nullities. No independence, nominal-rank replacement or unformalized
+    estimate is assumed.
+  authors:
+  - Brice Pouly
+  author_identifiers:
+  - name: Brice Pouly
+    github: Vulkin-prog
+    orcid: 0009-0008-8491-2467
+  responsible_maintainers:
+  - Brice Pouly
+  license: Apache-2.0
+repository:
+  role: substantive-development
+classification:
+  arxiv:
+  - math.PR
+  - math.CO
+sources:
+- title: Sharp Poisson approximation and second-order correction for long multiplicative runs, version
+    1.7 draft
+  authors:
+  - Brice Pouly
+  id: https://github.com/Vulkin-prog/paper-p1-lean
+  type: paper
+  relationship: formalizes
+  location: Finite effective-affine core of main proposition 4.2 and proposition 4.4, with the exact affine
+    probabilities, full-support character sum, sharp relative-nullity bound and unique finest canonical
+    decomposition; version 1.7 draft.
+  note: The four selected interfaces concern actual finite affine spaces and their real uniform averages.
+    Identifications with the infinite prime-sign run model are proved separately in the substantive P1
+    development. Each block has its own effective dimension and marginal probability.
+related_formalizations:
+- id: https://github.com/Vulkin-prog/paper-c-lean
+  relationship: adapts
+  note: Foundational finite affine-system counting and binary-character calculations were ported through
+    P1 from Paper C commit b9fa9ba490f201b408a302a86f1594ee620b228b, under Apache-2.0, and rebuilt with
+    Lean v4.36.0-rc2. Source headers and docs/PAPER_C_REUSE.md preserve exact attribution. Effective-block
+    Fourier and canonical partition refinements are in the substantive P1 development.
+automation:
+  methods:
+  - method: agent
+    framework: Codex
+    models:
+    - OpenAI Codex agents
+    prompting_notes: Define normalized averages, affine events, local effective rates, character signs,
+      relation addition, its kernel and relation-respecting partitions explicitly in Mathlib. Retain incompatible
+      zero masses and each heterogeneous marginal. Require nonempty block families for the 2^rho-1 centered
+      bound. Expose ordinary and centered factorization and exact nullity additivity.
+    tool_setup: Lean proof construction, explicit Mathlib-only source definitions, exact bridges to the
+      substantive proof and full axiom audits.
+  notes: Agent assistance is not independent human peer review.
+review:
+  status: agent-reviewed
+  notes: 'The four explicit statements and complete Solution compile with proof warnings as errors. All
+    16 new theorem and bridge axioms pass a direct audit. Manual exports passed exact statement comparison
+    and all six available checkers: Lean default, Lean paranoid, lean4lean, NanoDa, verified con-leche
+    and verified con-ron. Frozen-root qualification and the complete Palomar workflow are recorded separately
+    after actual success. Only the four selected Challenge theorem statements have deliberate holes.'
+status:
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms:
+  - propext
+  - Quot.sound
+  - Classical.choice
+  scope: 'Four selected declarations: exact finite affine masses including incompatibility; actual marginal
+    rates and full-support centered Fourier identity; sharp relative-nullity bound and full-support witness;
+    unique finest canonical factorization of both moments and nullity. These finite interfaces contain
+    no unformalized estimate. No registration or certification is claimed.'
+fidelity:
+  divergences: Every block is its actual effective dual subspace with its own inverse-cardinality marginal,
+    also identified with its effective rank. The affine prescription is locally compatible in each effective
+    block; joint incompatibility is retained by the signed full-support sum. The sharp 2^rho-1 bound explicitly
+    requires a nonempty index family. The unique finest partition is defined by restriction of every actual
+    zero-sum relation. No direct identification with the infinite arithmetic run law is asserted by these
+    finite interfaces.

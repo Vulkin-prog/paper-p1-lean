@@ -20587,11 +20587,32 @@
         "PaperP1.PrimeRunCylinder.total_log_lower",
         "PaperP1.PrimeCylinderScale.primeCharge_tendsto",
         "PaperP1.PrimeCylinderDivergence.startLower_tendsto",
-        "PaperP1.PrimeCylinderDivergence.lowerRate_tendsto"
+        "PaperP1.PrimeCylinderDivergence.lowerRate_tendsto",
+        "PaperP1.OneSidedPrimeCylinder.mem_starts",
+        "PaperP1.OneSidedPrimeCylinder.original_starts_subset",
+        "PaperP1.OneSidedPrimeCylinder.positive_start",
+        "PaperP1.OneSidedPrimeCylinder.starts_subset_interval",
+        "PaperP1.OneSidedPrimeCylinder.retainedParameters_card_lower",
+        "PaperP1.OneSidedPrimeCylinder.starts_card",
+        "PaperP1.OneSidedPrimeCylinder.starts_card_lower",
+        "PaperP1.OneSidedPrimeCylinder.finite_lower_bound_strictly_improves",
+        "PaperP1.OneSidedPrimeCylinder.positive_count_on_sample",
+        "PaperP1.OneSidedPrimeCylinder.positive_exponential_card_lower",
+        "PaperP1.OneSidedPrimeCylinder.positive_exponential_lower",
+        "PaperP1.OneSidedPrimeCylinder.total_exponential_lower",
+        "PaperP1.OneSidedPrimeCylinder.retainedParameters",
+        "PaperP1.OneSidedPrimeCylinder.starts"
       ],
       "remaining_unformalized_inputs": [],
       "validation": "Included in the complete checkpoint P1-MATH-0983 replay.",
-      "baseline_validation_commit": null
+      "baseline_validation_commit": null,
+      "strengthenings": [
+        {
+          "checkpoint": "P1-MATH-0986",
+          "description": "In the one-negative-prime sample, starts q*u+1 of length at least q-1 require only q not dividing u. The condition q not dividing u+1 enforces the next opposite sign and is unnecessary for the actual run-start observable. Keeping the larger one-sided parameter set proves the finite lower bound N/q-N/q^2-3, improves the previous valid N/q-2N/q^2-4 bound, and strengthens the actual positive and total exponential-moment lower bounds. The original odd-prime scale, t>2 range and (t-2)log(2) liminf coefficient are preserved.",
+          "validation": "Direct Lean v4.36.0-rc2 verification passed for all 12 new theorems with proof warnings as errors. Full project build, source-discovered axiom audit and declaration-reference replay are pending at this source checkpoint."
+        }
+      ]
     },
     {
       "label": "p1:limits:peeling",

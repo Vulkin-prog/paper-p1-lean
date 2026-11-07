@@ -1,6 +1,18 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0985: The exact uncapped quadratic-exponent
+Current checkpoint P1-MATH-0986: The actual one-negative-prime cylinder
+retains all starts requiring only the preceding negative sign. Its finite
+count is at least N/q-N/q^2-3, strengthening both original positive and
+total exponential-moment lower bounds. The printed T19.7 prime scales,
+t>2 range and (t-2)log(2) coefficient are preserved. All 167 revised
+statements remain proved; original coverage stays 165 proved and two
+false-original scopes. The 12 new direct Lean proofs passed; the full
+checkpoint replay is pending. Eleven registry families (44 selections)
+retain their completed local qualification. A further finite-affine
+candidate passed six checkers on its standalone exports; root qualification
+remains pending. No Palomar registration is claimed.
+
+Historical checkpoint P1-MATH-0985: The exact uncapped quadratic-exponent
 comparison is characterized for every nonnegative delta, including all
 actual positive prescribed divisors. The range is sufficient for
 arbitrary real parameters, while necessity requires the sign
@@ -40797,3 +40809,22 @@ The sign hypothesis matters for necessity on the entire real plane: at beta=delt
 This is a parameter-scope clarification for the revised discussion, not a third false original numbered statement. Revised coverage remains 167/167 proved; the original v1.6 ledger remains 165 proved, 0 conditional and 2 false-original scopes in_progress. The original source bytes and compiler pin are preserved. The first analytic registry family has already passed local Comparator and Lean/NanoDa replay; further families and the complete pinned Palomar workflow remain. No registration is claimed.
 
 Verified under Lean v4.36.0-rc2: full build passed (18539 jobs); direct axiom audit passed for 19295 declarations using only propext, Classical.choice and Quot.sound; all 19611 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.80 GiB.
+
+
+## Strengthen the finite one-negative-prime cylinder count
+
+Stable ID: internal-one-sided-prime-cylinder.
+
+In the one-negative-prime sample, starts q*u+1 of length at least q-1 require only q not dividing u. The condition q not dividing u+1 enforces the next opposite sign and is unnecessary for the actual run-start observable. Keeping the larger one-sided parameter set proves the finite lower bound N/q-N/q^2-3, improves the previous valid N/q-2N/q^2-4 bound, and strengthens the actual positive and total exponential-moment lower bounds. The original odd-prime scale, t>2 range and (t-2)log(2) liminf coefficient are preserved.
+
+For every prime q<=N and real t>=0, the exponential of
+
+```text
+t * (N/q - N/q^2 - 3) - primeCount(2*N+q-1) * log(2)
+```
+
+is a lower bound for each actual positive and total run-start exponential moment at length q-1. The probability law is the original independent fair prime-sign law. The finite sample event has the same exact probability as in the earlier construction. Only the retained start set grows.
+
+The positive start needs a preceding negative sign and the next q-1 positive signs. Removing the extra right-end restriction keeps every original forced start. A single residue-class exclusion gives the sharper cardinality budget, including all floor and endpoint errors. The finite lower bound strictly improves the previous algebraic bound. The threshold t>2 and its asymptotic coefficient are unchanged; sharpness of that threshold is not asserted.
+
+Direct Lean v4.36.0-rc2 verification passed for all 12 new theorems with proof warnings as errors. Full project build, source-discovered axiom audit and declaration-reference replay are pending at this source checkpoint.

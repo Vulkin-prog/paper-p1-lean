@@ -10,6 +10,9 @@ All eleven also passed supplementary con-ron, NanoDa and Lean replays. Their
 [separate reports and controls](supplementary/README.md) preserve each exact
 source and original log without changing the standard submission configurations.
 
+The finite-affine spectra candidate adds four prepared declarations. Its
+standalone exports passed six checkers; frozen-root qualification is pending.
+
 | Family | Selected declarations | Comparator configuration | Metadata and local evidence |
 |---|---:|---|---|
 | Ordinary smooth integers in logarithmic intervals | 3 | [configuration](../../comparator/p1_smooth_windows.json) | [metadata](smooth_windows/formalization.yaml), [passed local comparison and both kernels](smooth_windows/qualification.json) |
@@ -23,6 +26,7 @@ source and original log without changing the standard submission configurations.
 | Fixed-order moment obstruction to a polynomial approximation rate | 5 | [configuration](../../comparator/p1_moment_obstruction.json) | [metadata](moment_obstruction/formalization.yaml), [passed local comparison and both kernels](moment_obstruction/qualification.json) |
 | Exact expansions for dependent indicator counts | 4 | [configuration](../../comparator/p1_dependent_expansion.json) | [metadata](dependent_expansion/formalization.yaml), [passed local comparison and both kernels](dependent_expansion/qualification.json) |
 | Degree-uniform integer points on integral curves | 3 | [configuration](../../comparator/p1_integral_curve_count.json) | [metadata](integral_curve_count/formalization.yaml), [passed local comparison and both kernels](integral_curve_count/qualification.json) |
+| Exact finite affine spectra and canonical factorization | 4 | [configuration](../../comparator/p1_affine_spectra.json) | [metadata](affine_spectra/formalization.yaml); root qualification pending |
 
 Each configuration names its standalone Mathlib-only Challenge and complete
 Solution. Only the exact selected Challenge statements have deliberate proof
@@ -47,7 +51,7 @@ registration are separate stages. No submission or registry entry is claimed.
 
 The separate [additional-family workflow](../../.github/workflows/palomar-preflight-additional.yml)
 selects factorial cumulants, the moment obstruction, dependent expansions and
-integral-curve counts. The original
+integral-curve counts and finite affine spectra. The original
 caller continues to select exactly its seven original families. Both require
 an exact source commit and the confirmed supported human relationship.
 

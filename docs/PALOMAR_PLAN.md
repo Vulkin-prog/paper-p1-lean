@@ -2,7 +2,7 @@
 
 The mathematical correspondence is complete for the separate version 1.7 draft:
 **167 proved statements**, comprising all 73 article and all 94 companion
-results. Current mathematical checkpoint: P1-MATH-0985. The original version
+results. Current mathematical checkpoint: P1-MATH-0986. The original version
 1.6 retains its exact bytes and its two false-original statuses; its 165 other
 statements are proved. Both revised PDFs and their visual checks are preserved.
 
@@ -34,6 +34,10 @@ receipts do not silently acquire the later audit's larger selection. Missing
 output, repeated declarations, forbidden axioms and changed imported proofs
 are rejected. The original first receipt's build/audit counts were added from
 its unchanged preserved logs and checked source inventory.
+
+The finite-affine spectra candidate has four standalone statements accepted
+by six checkers; its frozen-root qualification remains pending. The original
+seven-family caller remains unchanged.
 
 Run the local preparation checks with:
 
@@ -74,7 +78,7 @@ inventory. The full project snapshot stays below the 500 MiB source limit.
 The [original workflow caller](../.github/workflows/palomar-preflight.yml) selects
 exactly seven families; the [additional caller](../.github/workflows/palomar-preflight-additional.yml)
 selects factorial cumulants, the moment obstruction, dependent expansions and
-integral-curve counts. Both are prepared.
+integral-curve counts and finite affine spectra. Both are prepared.
 Both its `uses` revision and `pipeline_commit` are fixed to the exact same
 PalomarSubmission SHA above. It uses `mode: full`, the required external
 `palomar-standard-v1` profile, read-only repository permissions and one family
