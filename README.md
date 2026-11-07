@@ -3,14 +3,17 @@
 *Sharp Poisson approximation and second-order correction for long multiplicative
 runs*, and its technical companion, by [Brice Pouly](https://orcid.org/0009-0008-8491-2467).
 
-Current checkpoint P1-MATH-0997: all **167 revised numbered statements** have
+Current checkpoint P1-MATH-0998: all **167 revised numbered statements** have
 checked proofs, using **Lean v4.36.0-rc2**, with no unformalized mathematical
 input. This comprises all 73 main-article and all 94 revised companion results.
-The separate version 1.7 manuscript draft integrates the two necessary statement
-corrections and the internally proved logarithmic smooth-window census.
+The separate version 1.8 working draft integrates the two necessary statement
+corrections, selected stronger estimates and the internally proved logarithmic
+smooth-window census. Versions 1.6 and 1.7 remain preserved.
 
 | Manuscript | PDF | Editable source |
 |---|---|---|
+| Article, version 1.8 working draft | [PDF](manuscripts/paper-p1/v1.8/pdf/P1_V1_8_Main_Article_2026-11-07_EN.pdf) | [TeX](manuscripts/paper-p1/v1.8/sources/main.tex) |
+| Technical companion, version 1.8 working draft | [PDF](manuscripts/paper-p1/v1.8/pdf/P1_V1_8_Technical_Companion_2026-11-07_EN.pdf) | [TeX](manuscripts/paper-p1/v1.8/sources/companion.tex) |
 | Article, version 1.7 draft | [PDF](manuscripts/paper-p1/v1.7/pdf/P1_V1_7_Main_Article_2026-11-07_EN.pdf) | [TeX](manuscripts/paper-p1/v1.7/sources/main.tex) |
 | Technical companion, version 1.7 draft | [PDF](manuscripts/paper-p1/v1.7/pdf/P1_V1_7_Technical_Companion_2026-11-07_EN.pdf) | [TeX](manuscripts/paper-p1/v1.7/sources/companion.tex) |
 | Preserved original version 1.6 | [Original package](manuscripts/paper-p1/v1.6/) | [Provenance](manuscripts/paper-p1/v1.6/PROVENANCE.json) |
@@ -35,12 +38,13 @@ bytes and checked counterexamples are preserved. Their corrected replacements
 are proved and integrated in version 1.7. T19.17 is proved with both original
 coefficients and without an external smooth-number premise.
 
-The ledger records **995 confirmed mathematical improvements and two statement-scope corrections**.
+The ledger records **996 confirmed mathematical improvements and two statement-scope corrections**.
 Proof substitutions, exact parameter ranges and the scope of stronger
 unasserted analytic or geometric results are documented in the source revision.
 
 | Review material | Record |
 |---|---|
+| Version 1.8 strengthened statements and editorial integration | [Revision report](docs/MANUSCRIPT_REVISION_V1_8.md), [167-result ledger](docs/manuscript-results-v1.8.json), [validation](docs/manuscript-v1.8-validation.json) |
 | Revised 167-statement correspondence | [Revised ledger](docs/manuscript-results-v1.7.json) |
 | Original statement identities and proof correspondence | [Baseline alignment](docs/MANUSCRIPT_ALIGNMENT.md), [baseline ledger](docs/manuscript-results.json) |
 | Source corrections and revised PDF checks | [Revision report](docs/MANUSCRIPT_REVISION_V1_7.md), [validation record](docs/manuscript-v1.7-validation.json) |

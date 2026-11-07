@@ -1,0 +1,1318 @@
+\section{Uniform arithmetic estimates}
+\label{p1:arith:appendix}
+
+This section supplies the uniformity needed when the window length grows.
+The degree parameters in the determinant arguments are fixed before $N$
+tends to infinity.  Dependence on such fixed parameters is permitted;
+dependence on a squarefree coefficient of size $N^{O(1)}$ is not.
+
+\subsection{Split products, defects, and the regular set}
+
+Products in short intervals have a long history; see
+Erd\H{o}s and Turk~\cite{erdosturk1984}.  The polynomial square-root
+argument for a fixed even number of distinct factors appears in the
+proof of Munsch, Shparlinski, Sun, and Xiao~\cite[Lemma~3.3]{munsch2026}.
+We record an explicit bound uniform in the degree, as required when the
+number of selected factors grows.  No constant depending implicitly on
+that degree is used in the following lemma.
+
+\begin{lemma}[A split-product bound uniform in the degree]\label{p1:arith:runge}
+Let $d=2k\geq2$ and let $\gamma_1,\ldots,\gamma_d$ be distinct integers
+with $|\gamma_i|\leq R$, $R\geq1$.  If $U\geq2R$ is an integer and
+$\prod_i(U+\gamma_i)$ is a square, then
+\[
+ U\leq(64R)^d.
+\]
+\end{lemma}
+
+\begin{proof}
+Write $G(T)=\prod_i(T+\gamma_i)$ and
+\[
+ \phi(z)=\prod_i(1+\gamma_i z)^{1/2}=\sum_{j\geq0}c_jz^j,
+ \qquad P(T)=\sum_{j=0}^k c_jT^{k-j}.
+\]
+The branches equal one at the origin.  Cauchy's bound on $|z|=(2R)^{-1}$
+gives $|c_j|\leq(3/2)^{d/2}(2R)^j$ and, for $j\leq k$,
+$|c_j|\leq2^dR^j$.  Comparing coefficients in $\phi^2$ inductively gives
+$2^{2j-1}c_j\in\mathbb Z$ for $j\geq1$, so $2^dP\in\mathbb Z[T]$.
+For $U>4R$ the tail satisfies
+\[
+ |\sqrt{G(U)}-P(U)|\leq4\,3^{d/2}R^{k+1}/U.
+\]
+If this difference is nonzero, it is at least $2^{-d}$, whence
+$U\leq(8R)^d$.  If it vanishes, the nonzero integer polynomial
+$Q=2^{2d}(P^2-G)$ has root $U$.  It is nonzero because $G$ has simple roots.
+Keeping the homogeneous powers of $R$ in the coefficient products gives
+\[
+ |[T^{d-j}](P^2-G)|\leq(d+2)4^dR^j\leq8^dR^j,
+ \qquad H(Q)\leq(32R)^d.
+\]
+The integral-root bound gives $U\leq1+H(Q)\leq(64R)^d$.
+The range $2R\leq U\leq4R$ already satisfies the conclusion.
+\end{proof}
+
+The following coefficient-uniform count is classical; see
+Cilleruelo and Garaev~\cite[Section~3, Lemma~4 and Proposition~1]{cilleruelogaraev2011}
+and the directly comparable formulation of
+Tao~\cite[Lemma~2.10]{tao2026anatomy}.  When $ab$ is not a square,
+the substitution $(au)^2-abv^2=ah$ reduces it to the former lemma;
+the square case is a divisor count.  We include a proof to keep the
+polynomial coefficient range explicit.
+
+\begin{lemma}[Uniform quadratic equation count]\label{p1:arith:pell}
+Fix $A_0>0$.  Uniformly for positive integers $a,b$ and nonzero integers $h$
+with $a,b,|h|\leq N^{A_0}$, the number of positive solutions to
+\[
+ au^2-bv^2=h,\qquad u,v\leq N^{A_0},
+\]
+is $N^{o_{A_0}(1)}$.
+\end{lemma}
+
+\begin{proof}
+If $ab$ is a square, multiply the equation by $a$ and factor the resulting
+difference of squares; the divisor bound suffices.  Otherwise write
+$ab=Ds^2$ with $D$ squarefree and nonsquare.  Each solution gives the
+algebraic integer
+$\xi=au+sv\sqrt D$ of norm $ah$ in the maximal order of
+$\mathbb Q(\sqrt D)$.  Its principal ideal has norm $|ah|$.
+The number of ideals of this norm is at most $\tau(|ah|)$: at a split prime
+there are at most $e+1$ ideals of norm $\ell^e$, and at an inert or ramified
+prime there are no more.  Elements generating the same ideal differ by a
+unit.  A real quadratic unit greater than one is at least
+$(1+\sqrt5)/2$, as follows from its integral trace and norm $\pm1$.
+The positive values of $\xi$ arising here lie in $[1,N^{O(A_0)}]$;
+there are therefore $O_{A_0}(\log N)$ possibilities in each ideal class
+of generators.  Finally $\tau(|ah|)=N^{o_{A_0}(1)}$.  This argument makes
+the coefficient uniformity explicit and requires no bound for a fundamental
+unit or a class number.
+\end{proof}
+
+\begin{lemma}[Local and global defect counts]\label{p1:arith:defects}
+Suppose $B\asymp\log N$ and $H\asymp B$, with fixed comparison constants.
+Any interval of diameter $O(B)$ in $[cN,CN]$ contains
+$O(B/\log B)$ $H$-defective integers.  Moreover
+\begin{align}
+ \#\{n\leq CN:K_H(n)=1\}&\leq N^{1/2+o(1)},\label{p1:arith:onedfect}\\
+ \#\{x\in I_N:V_x\text{ contains two }H\text{-defective integers}\}
+   &\leq N^{o(1)}.\label{p1:arith:twodefect}
+\end{align}
+All statements remain valid after fixed dilations and translations of the
+intervals.
+\end{lemma}
+
+\begin{proof}
+For $D$ defective integers in a short interval, form the binary matrix with
+their small-prime valuation columns and an additional parity row.  Its
+kernel has redundancy at most $\pi(H)+1$.  A nonzero word selects an even
+square product, so Lemma~\ref{p1:arith:runge} gives minimum distance
+$\delta\gg\log N/\log B$.  Choose
+$t\asymp\log N/\log B$ with $2t<\delta$.  The Hamming bound gives
+\[
+ \sum_{j=0}^t\binom Dj\leq2^{\pi(H)+1}.
+\]
+If $D\geq2t$, use $\binom Dt\geq(D/t)^t$.  Since
+$(\pi(H)+1)/t=O(1)$, this proves $D=O(B/\log B)$; the other case is
+immediate.
+
+Write a defective integer uniquely as $n=a^2c$, where $c$ is squarefree
+and $H$-smooth.  Then
+\[
+ \#\{n\leq CN:K_H(n)=1\}
+ \leq\sqrt{CN}\prod_{\ell\leq H}(1+\ell^{-1/2})
+ \leq\sqrt{CN}\exp(O(\sqrt H)).
+\]
+For two distinct defective values in one window, write
+$x+i=c_1a^2$, $x+j=c_2b^2$.  The offsets and the squarefree smooth parts
+have $B^2 4^{\pi(H)}=N^{o(1)}$ choices.  All their heights are polynomial
+in $N$, and $c_1a^2-c_2b^2=i-j\ne0$.
+Lemma~\ref{p1:arith:pell} supplies $N^{o(1)}$ possibilities.  This proves
+\eqref{p1:arith:twodefect} and the stated uniform versions.
+\end{proof}
+
+\subsection{Two small kernels with their smooth coefficients retained}
+
+The following form of the approximate determinant method is needed because
+the small-prime parts are fixed separately and may be polynomially large.
+It is an extension of the proof of \cite[Sections~2.1--2.3]{reuss2014},
+rather than an application of its fixed-coefficient statement.
+
+\begin{lemma}[Uniform determinant estimate]\label{p1:arith:reuss}
+Fix $A_0,\delta,\varepsilon>0$.  Suppose $1\leq c_1,c_2\leq3N$,
+$0<|h|\leq(\log N)^{A_0}$, and
+\[
+ c_1D^2U\asymp c_2E^2V\asymp N,\quad
+ D,E\ll\sqrt N,\quad c_1c_2(DE)^2\geq N,
+ \quad\log(DE),\log(UV)\geq\delta\log N.
+\]
+The comparison constants are fixed.  The number of positive solutions
+$d\asymp D,e\asymp E,u\asymp U,v\asymp V$ to
+$c_2e^2v-c_1d^2u=h$ is
+\begin{equation}\label{p1:arith:reussbound}
+ \ll_{A_0,\delta,\varepsilon}N^\varepsilon
+ \min\{(DE\mathcal M)^{1/2}+D+E,
+          (UV\mathcal M)^{1/2}+U+V\},
+ \qquad
+ \log\mathcal M=\frac98\frac{\log(DE)\log(UV)}{\log N}.
+\end{equation}
+Fixed or polylogarithmic factors in the lower bound for $c_1c_2(DE)^2$
+can be absorbed by decreasing the error margin.
+\end{lemma}
+
+\paragraph{Parameters in the determinant argument.}
+Here and in the proof, height of a polynomial means the maximum absolute
+value of its integer coefficients.  The ledger below distinguishes the
+fixed auxiliary degrees from the coefficients that vary with $N$.
+The symbols $A,B_0,\kappa,L_1,T_1$ are specified in Steps~2--3.
+\begin{center}
+\small
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{.23\textwidth}>{\raggedright\arraybackslash}p{.19\textwidth}>{\raggedright\arraybackslash}p{.22\textwidth}>{\raggedright\arraybackslash}X@{}}
+\toprule
+Object and dimension & Degree & Point or box scale & Coefficient height\\
+\midrule
+Input hypersurface in $\mathbb A^4$, dimension $3$
+& Total degree $3$
+& $(D,E,U,V)$, each $O(N)$
+& $c_1,c_2\leq3N$; $|h|\leq(\log N)^{A_0}$\\
+Auxiliary curve in $\mathbb P^1\!\times\!\mathbb P^1$, dimension $1$
+& Bidegree $(a,b)\leq(A,B_0)$, fixed
+& Primitive pairs of heights $L_1,T_1\leq N^C$
+& $\|G\|\leq N^\kappa$ after the lattice changes\\
+Eliminant curve in $\mathbb A^2$, when $a=1$ or $b=1$
+& Bounded in terms of $A,B_0$
+& The same primitive boxes
+& Resultants and nonzero right-hand sides $N^{O(\kappa)}$\\
+\bottomrule
+\end{tabularx}
+\end{center}
+All displayed height exponents, including $C$, are fixed, uniformly over
+the input boxes.
+The relative chart has errors $\alpha=O(M^{-1})$ and
+$\beta=O(|h|/N)$, with $M=N^\zeta\mathcal M$; no coefficient ratio
+is charged to the latter error.  Choose the final $\varepsilon$ first,
+then a sufficiently small $\zeta$, then $A,B_0$ and $\kappa$, and finally
+the curve-count exponent $\epsilon'$ so that
+$(C+\kappa)\epsilon'\leq\zeta$.  Only after these choices does $N$
+tend to infinity.  In particular, the factor $\|G\|^{\epsilon'}$
+in Heath-Brown's bound is explicitly included in this budget.
+The coefficient uniformity in this ledger is established below;
+Reuss's stated theorem allows its constant to depend on the fixed shift
+$h$ and does not itself assert this extension.
+
+\begin{proof}
+The proof has four steps.  They identify separately the determinant
+scale, the uniform count on each auxiliary curve, and the two lattice
+summations.  Only the last step sums over the short intervals.
+
+\medskip\noindent
+\textbf{Step 1: primitive pairs and relative normalization.}
+If $g=\gcd(d,e)$ and $q=\gcd(u,v)$, then $g^2q\mid h$.
+Divide by $g^2q$ and replace the four dyadic scales accordingly.
+Both pairs are now primitive.  The effective size $N/(g^2q)$ and the
+hypotheses on the scales change only by polylogarithmic factors;
+in particular the lower bound for $c_1c_2(DE)^2$ has the permitted
+polylogarithmic loss.  There are only polylogarithmically many reductions,
+which will be summed at the end.  We keep the notation $N,D,E,U,V,h$
+for a reduced box.
+
+Set $s=d/e$, $t=v/u$.  The exact curve approximation is
+\[
+ t=(c_1/c_2)s^2+h/(c_2e^2u).
+\]
+On a relative interval of length $M^{-1}$ write
+\[
+ s=s_0(1+\alpha),\qquad
+ t=t_0(1+2\alpha+\alpha^2+\beta),\qquad
+ t_0=(c_1/c_2)s_0^2\asymp V/U.
+\]
+Then $|\alpha|\ll M^{-1}$ and $|\beta|\ll|h|/N$, uniformly in
+$c_1,c_2$.  The relevant vertical error is relative to $t_0$;
+its bound therefore contains no additional factor $c_1/c_2$.
+
+\medskip\noindent
+\textbf{Step 2: the determinant with variable coefficients.}
+For the auxiliary monomials $s^at^b$, $0\leq a\leq A$,
+$0\leq b\leq B_0$, the row denominator is $e^Au^{B_0}$.
+Extracting $s_0^at_0^b$ from the columns leaves the same logarithmic
+denominator cost as in the normalized calculation:
+\[
+ A\log E+B_0\log U+\frac A2\log(D/E)+\frac{B_0}2\log(V/U)
+ =\frac A2\log(DE)+\frac{B_0}2\log(UV).
+\]
+Take $M=N^\zeta\mathcal M$, with a small fixed $\zeta>0$, and use
+$N/|h|$ for the vertical approximation scale.  The strict determinant
+inequality in \cite[Section~2.1, Lemma~7]{reuss2014} then holds, with
+degrees fixed in terms of $\zeta,\delta$.  The resulting integer
+polynomial has coefficient height $N^{\kappa(\zeta,\delta)}$.
+The exponent is uniform in $c_1,c_2$: their sizes, and the rational
+column scalings, are polynomial in $N$, while the degrees are fixed.
+
+To check the allowed scale, put $z=\log(DE)/\log N$ and
+$w=1-\log(c_1c_2)/(2\log N)$.  Then
+\[
+ \frac{\log(UV)}{\log N}=2w-2z+O(1/\log N),\qquad
+ \frac{\log\mathcal M}{\log N}=\frac94z(w-z)+o(1)
+                    \leq\frac9{16}+o(1).
+\]
+Thus $M\leq N/|h|$ for sufficiently small $\zeta$.
+The two logarithmic size ratios stay in a compact subset of the positive
+quadrant, so the degree choices are uniform over all boxes.
+The parameter order is: choose $\zeta$ from the final error margin,
+then the auxiliary degrees and the height exponent $\kappa$, and only
+then the internal exponent in the curve count below.
+
+\medskip\noindent
+\textbf{Step 3: fibres and the count on one auxiliary curve.}
+Apply the two unimodular lattice changes of
+\cite[Section~2.2]{reuss2014} to $(d,e)$ and $(v,u)$.
+Write the resulting primitive pairs as $\lambda=(\lambda_1,\lambda_2)$
+and $\tau=(\tau_1,\tau_2)$, in boxes of side lengths
+$L_1\geq L_2$ and $T_1\geq T_2$, respectively.  The changes of
+coordinates have polynomial height; enlarging $\kappa$ absorbs their
+contribution to the heights of the original and auxiliary equations.
+The original equation still has bidegree $(2,1)$.
+
+An auxiliary factor of degree zero in $(d,e)$ fixes only boundedly
+many primitive $(u,v)$; Lemma~\ref{p1:arith:pell} counts the remaining
+quadratic equation uniformly.  For degree zero in $(u,v)$, fix $(d,e)$
+and set $g_f=\gcd(c_1d^2,c_2e^2)$.  Solvability requires $g_f\mid h$.
+The step of the resulting one-dimensional lattice in $u$ is
+$c_2e^2/g_f$; the step in $v$ is $c_1d^2/g_f$.  Its intersection
+with the box has at most
+\[
+ O\left(1+\frac{Ng_f}{c_1c_2(DE)^2}\right)
+ \leq O\left(1+\frac{N|h|}{c_1c_2(DE)^2}\right)
+\]
+points.  This is polylogarithmic by the stated lower bound.
+
+For an absolutely irreducible factor of bidegree $(a,b)$,
+$a,b\geq1$, \cite[Lemma~2]{heathbrown2012} bounds primitive solutions by
+$O_{a,b,\epsilon'}(X^{2/b+\epsilon'}\|G\|^{\epsilon'})$ when the
+first pair has height at most $X$; the second pair has no height
+restriction.  Thus $b\geq2$ gives the required bound in $L_1$, and
+$a\geq2$ gives the bound in $T_1$ after exchanging the pairs.
+Choose $\epsilon'$ after $\kappa$ so that the coefficient-height
+factor costs at most the chosen power $N^{O(\zeta)}$.
+
+The missing bound when one bidegree is one follows directly by
+elimination.  In bidegree $(1,b)$ write
+$\lambda_1F_1(\tau)+\lambda_2F_2(\tau)=0$.
+Primitivity gives
+$q\lambda_1=F_2(\tau)$, $q\lambda_2=-F_1(\tau)$ for a nonzero integer
+$q$.  The two dehomogenizations of the coprime forms $F_1,F_2$ give
+nonzero resultants $R,R'$ of height $N^{O(\kappa)}$ and
+\[
+ q\mid R\tau_1^m,\qquad q\mid R'\tau_2^{m'}.
+\]
+Since $(\tau_1,\tau_2)=1$, prime by prime $q$ divides $RR'$.
+There are $N^{o(1)}$ possibilities, uniformly in the coefficients.
+Substitution into the original equation gives
+$F_3(\tau_1,\tau_2)=hq^2$, where $F_3$ is homogeneous of fixed degree
+$2b+1$.  If $F_3$ is zero there is no solution.  Otherwise
+$F_3-hq^2$ is a nonzero polynomial.  Fixing the first coordinate leaves
+boundedly many second coordinates, except for boundedly many full
+fibres, each of length $O(T_2)$.  As $T_2\ll T_1$, the count is
+$O(T_1)$.  This includes powers of a linear form and needs no uniform
+height-free bound for a Thue equation.  Exchanging the pairs handles
+bidegree $(a,1)$ with count $O(L_1)$ and right-hand side $hq$.
+
+These cases prove, with arbitrarily small internal losses, the local
+bound of \cite[Lemma~8]{reuss2014} in both orientations.  Reducible
+auxiliary polynomials have boundedly many factors.  Rational points on
+an irreducible factor that is not geometrically integral lie in its
+bounded-degree conjugate intersections.  The resulting local count is
+therefore uniform in all the variable coefficients.
+
+\medskip\noindent
+\textbf{Step 4: the two short-vector summations.}
+We give the scale check behind \cite[Section~2.3]{reuss2014}.
+For the first lattice, use intervals with
+$s_0=(D/E)x_3/M$, $x_3\asymp M$.  A shortest primitive vector
+$(x_1,x_2)$ in a box with $L<L_1\leq2L$ satisfies
+\[
+ x_2x_3=(ME/D)x_1+O(E/L),\qquad
+ |x_1|\ll D/L,\quad |x_2|\ll E/L,
+ \quad L\gg(DE/M)^{1/2}.
+\]
+If $x_1x_2\ne0$, the integer product $x_2x_3$ has $O(E/L)$
+choices for each of $O(D/L)$ choices of $x_1$.  The divisor bound gives
+$N^{o(1)}DE/L^2$ intervals.  Their local contributions sum to
+$N^{O(\zeta)}DE/L$; summing the dyadic $L$ gives
+$N^{O(\zeta)}(DE M)^{1/2}$.  The primitive axis vectors have one
+coordinate equal to $\pm1$ and give the additional costs $D+E$.
+
+For the other lattice choose $U=N/(c_1D^2)$ and $V=N/(c_2E^2)$
+within the dyadic comparison constants.  Then
+\[
+ t_0=(c_1/c_2)(D/E)^2(x_3/M)^2
+     =(V/U)(x_3/M)^2.
+\]
+Replace this by the grid point $(V/U)x_4/M$, where
+$x_4=\lfloor x_3^2/M\rfloor$.  The change is within the allowed
+interval width.  Since $x_3\asymp M$, this discretization has bounded
+multiplicity and $x_4\asymp M$.  In particular no factor $c_1/c_2$
+remains.  The same divisor summation gives
+$N^{O(\zeta)}\{(UV M)^{1/2}+U+V\}$.
+Finally take $\zeta$ and the internal margins sufficiently small,
+replace $M$ by $N^\zeta\mathcal M$, and sum the primitive reductions.
+This proves \eqref{p1:arith:reussbound}.
+\end{proof}
+
+\begin{lemma}[Two small odd kernels]\label{p1:arith:twokernel}
+Uniformly for $B\asymp\log N$, fixed $0<\beta<1$, and $\varepsilon>0$,
+\[
+ G_2(N,N^\beta):=
+ \#\{x\in I_N:\#\{n\in V_x:K_B(n)\leq N^\beta\}\geq2\}
+ \ll_{\beta,C,\varepsilon}N^{\max(\beta,7/12)+\varepsilon}.
+\]
+For $7/12\leq\beta<1$ this exponent is sharp in the sense
+$G_2(N,N^\beta)=N^{\beta+o(1)}$.
+\end{lemma}
+
+\begin{proof}
+Two selected integers have the unique forms
+$n=c_1d^2u$ and $n+h=c_2e^2v$, where $1\leq h<B$,
+$u,v\leq T=N^\beta$, and $c_1,c_2$ are squarefree and $B$-smooth.
+There are $N^{o(1)}$ choices for $c_1,c_2,h$.
+Fix them and dyadically subdivide $d,e$.  With $D,E$ fixed,
+$U\asymp N/(c_1D^2)$ and $V\asymp N/(c_2E^2)$.
+The elementary congruence count, for fixed $d,e$, gives in this box
+\begin{equation}\label{p1:arith:elementarybox}
+ \ll\frac{N|h|}{c_1c_2DE}+DE
+ \ll (\log N)^{O(1)}T+DE.
+\end{equation}
+Indeed the common divisor of the two moduli divides $h$, and
+$DE\gg N/(\sqrt{c_1c_2}T)$.
+If $c_1c_2(DE)^2<N$, then $DE<\sqrt N$ and
+\eqref{p1:arith:elementarybox} suffices.  It also suffices for
+$DE\leq N^\delta$, with a small fixed $\delta$.
+For $UV\leq N^\delta$ fix $u,v$ and apply
+Lemma~\ref{p1:arith:pell}.  These edge regimes cost
+$N^{\max(\beta,1/2)+O(\delta)}$.
+
+In the other boxes apply Lemma~\ref{p1:arith:reuss}.  In its notation the
+main exponents are
+\[
+ f_1(z,w)=z/2+\tfrac98z(w-z),\qquad
+ f_2(z,w)=w-z+\tfrac98z(w-z).
+\]
+They meet at $z=2w/3$; $f_1$ is increasing to the left of that point and
+$f_2$ decreasing to its right.  Since $0\leq w\leq1+o(1)$,
+\[
+ \min(f_1,f_2)\leq w/3+w^2/4\leq7/12+o(1).
+\]
+The remaining terms satisfy $D+E\ll N^{1/2}$ and $U+V\ll T$.
+Sum the polylogarithmic boxes and reduce the internal margins.
+
+For the lower bound let $D\asymp\sqrt{N/T}$ with a fixed sufficiently
+large comparison constant, and take coprime $d,e\in[D,2D]$.
+The conditions $n\equiv0\pmod{d^2}$, $n+1\equiv0\pmod{e^2}$ have
+$\gg N/D^4$ solutions in a fixed interior subinterval of $[N,2N)$,
+because $\beta>1/2$.  Both remaining cofactors are at most $T$.
+The total number of incidences is $\gg D^2N/D^4\asymp T$.
+A fixed $n$ is counted at most $\tau(n)\tau(n+1)=N^{o(1)}$ times.
+The two neighboring integers lie in a common window, proving the claim.
+\end{proof}
+
+\begin{lemma}[A large selected kernel]\label{p1:arith:anchor}
+For any fixed $0<\tau<1/2$ and $1\leq T\leq3N$, the number of separated
+pairs possessing a mixed square relation with a selected vertex whose
+$B$-kernel exceeds $T$ is at most
+\[
+ N^{3/2+o(1)}T^{-1/2+\tau}.
+\]
+Also the number of windows containing one vertex with kernel at most $T$
+is at most $N^{1/2+o(1)}T^{1/2}$.
+\end{lemma}
+
+\begin{proof}
+Write $n=a^2cr$, with $c$ squarefree and $B$-smooth and $r=K_B(n)$.
+The one-kernel assertion follows from
+\[
+ \sum_{\substack{n\leq3N\\K_B(n)\leq T}}1
+ \leq\sqrt{3N}\prod_{\ell\leq B}(1+\ell^{-1/2})
+                       \sum_{r\leq T}r^{-1/2}
+ \leq N^{1/2+o(1)}T^{1/2},
+\]
+with a factor $B$ for its placements.
+For the first assertion anchor a selected value $n=x+i$ with $K_B(n)>T$.
+Every prime of its kernel must occur at one of the $B$ offsets of the other
+window.  There are at most $B^{\omega(r)}$ assignments; each specifies a
+residue class modulo $r$.  Since $r\leq3N$, there are $O(N/r)$ possible
+other starts, including $r>N$.  Summation over anchors is bounded by
+\[
+ B N^{3/2}\prod_{\ell\leq B}(1+\ell^{-1/2})
+       \sum_{\substack{r>T\ {\rm squarefree}\\\ell\mid r\Rightarrow\ell>B}}
+           B^{\omega(r)}r^{-3/2}.
+\]
+Rankin's inequality bounds the last sum by
+\[
+ T^{-1/2+\tau}\prod_{\ell>B}(1+B\ell^{-1-\tau})
+ =T^{-1/2+\tau}\exp(O_\tau(B^{1-\tau})).
+\]
+Both products and the placement factor are $N^{o(1)}$.
+\end{proof}
+
+\subsection{Multiquadratic surfaces and the curves that can survive}
+
+We use two uniform determinant estimates.  A geometrically integral affine
+surface of degree $d$ in $\mathbb A^3$ has, outside
+$O_{d,\varepsilon}(H^{2/\sqrt d+\varepsilon})$ integral points of height
+at most $H$, a covering by
+$O_{d,\varepsilon}(H^{1/\sqrt d+\varepsilon})$ curves of bounded degree
+\cite[Lemma~2]{salberger2023}.  An integral curve of degree $e$ in fixed
+affine space has $O_{e,n,\varepsilon}(H^{1/e+\varepsilon})$ integral
+points in the same box \cite[Theorem~A]{pila1995}.  These constants do
+not depend on the defining coefficients.  For a curve irreducible over
+$\mathbb Q$ but not geometrically integral, its rational points lie in the
+intersection of distinct conjugate components and have bounded cardinality.
+
+Consider equations
+\begin{equation}\label{p1:arith:surfaceequations}
+ w_\nu^2=d_\nu P_\nu(X)Q_\nu(Y),\quad
+ P_\nu(X)=\prod_{i\in I_\nu}(X+i),\quad
+ Q_\nu(Y)=\prod_{j\in J_\nu}(Y+j),\quad1\leq\nu\leq k,
+\end{equation}
+where $I_\nu,J_\nu$ are nonempty, disjoint within each list, and
+$|I_\nu|+|J_\nu|\leq K$.  The offsets are $O(B)$ and the nonzero
+coefficients $d_\nu$ are squarefree and $O(B)$-smooth.  Constants $k,K$
+are fixed.
+
+\begin{lemma}[The uniform geometric counts]\label{p1:arith:geometric}
+Fix $A_0,K,\varepsilon>0$.  For sufficiently large fixed $k$, a system
+of the form \eqref{p1:arith:surfaceequations}, with arbitrary nonzero integer
+coefficients $|d_\nu|\leq N^{A_0}$, has
+$O_{A_0,K,\varepsilon}(N^{1/2+\varepsilon})$ integral hosts
+$X,Y\asymp N$ at which the even-selection square-class maps on the
+two actual sets of selected values are injective and their images are
+in direct sum.  If every $Q_\nu$ has degree one, the bound is
+$O_{A_0,K,\varepsilon}(N^\varepsilon)$.  If the degrees of the $P_\nu$
+vary, select sufficiently many equations of one of their finitely many
+possible degrees before applying the assertion.
+These estimates are uniform in the coefficients and do not require their
+smoothness; any enumeration of such coefficients is a separate cost.
+They remain valid after other fixed centers have been specialized into
+the $d_\nu$.
+
+For one variable, a bounded-degree system of split-product square equations
+with polynomial-height coefficients has $N^{o(1)}$ possible integer values
+as soon as its disjoint root sets include at least two distinct selected
+offsets.  This includes either one equation of degree at least two or
+two equations with disjoint nonempty root sets.
+
+The following graph consequences hold, with the number of component
+equations chosen sufficiently large after the stated fixed parameters.
+\begin{enumerate}
+\item For any $\eta,\varepsilon>0$, pairs of separated nonaligned
+logarithmic windows with at least $\eta B$ nontrivial unpinned components
+number $O_{\eta,C,\varepsilon}(N^{1/2+\varepsilon})$.
+\item For every fixed integer $a\geq1$ and $\varepsilon>0$, there is
+$k_a$ such that $k_a$ components having $a$ vertices in one window and
+one in the other have $O_{a,C,\varepsilon}(N^\varepsilon)$ dyadic hosts.
+For $a=1$ aligned hosts are excluded; for $a\geq2$ no such exclusion
+is required.
+\item After one start is fixed, a component with at least two vertices
+in the other window has $N^{o(1)}$ possible partners, uniformly for a
+fixed bound on the component size and polynomial coefficient heights.
+\end{enumerate}
+\end{lemma}
+
+\paragraph{Parameters in the geometric counts.}
+The external estimates are applied in the following embeddings.  Write
+$m=\binom{D+2}{2}+k-1$ for the ambient dimension of the affine Veronese chart,
+and $q=(a+1+A_0)/2$ in the degree-$(a,1)$ case.
+\begin{center}
+\small
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{.23\textwidth}>{\raggedright\arraybackslash}p{.23\textwidth}>{\raggedright\arraybackslash}p{.15\textwidth}>{\raggedright\arraybackslash}X@{}}
+\toprule
+External count & Dimension and degree & Point height & Coefficient height\\
+\midrule
+Surface covering, Steps~1--4
+& Surface in $\mathbb A^3$; $2^k\leq d_{\rm im}$,
+$d_{\rm im}=O_{k,K}(1)$
+& $H\ll N^D$
+& Polynomial in $N$; no coefficient-height dependence in the covering constant\\
+Lifted curves, Steps~2--4
+& Curves in $\mathbb A^m$; $2D\leq e=O_{D,k,K}(1)$
+& $H\ll N^D$
+& No bound on the coefficients of the covering curves is required\\
+Degree-$(a,1)$ surface covering, Steps~5--6
+& Surface in $\mathbb A^3$; $2^k\leq d_{\rm im}$,
+$d_{\rm im}=O_{k,a}(1)$
+& $H\ll N^q$
+& Polynomial in $N$; the same coefficient-uniform covering estimate\\
+Degree-$(a,1)$ lifted curves, Steps~5--6
+& Curves in $\mathbb A^{k+2}$; $E+1\leq e=O_{k,a}(1)$
+& $H\ll N^q$
+& No coefficient-height bound is required by the curve estimate\\
+\bottomrule
+\end{tabularx}
+\end{center}
+The curve rows concern components that can contain the hosts being counted;
+Steps~3 and~5--6 exclude the lower degrees.  The input coefficients satisfy
+$|d_\nu|\leq N^{A_0}$, and the offsets are $O(\log N)$.
+Thus the defining equations and the projected surface equations have
+polynomial height with fixed exponents, while the external constants depend
+only on the fixed dimensions, degrees and internal error margins.
+For the first bound choose $A_0,K,\varepsilon$, then
+$D\geq(K+A_0)/2$, then $k$, and finally the internal margin in the
+surface and curve counts.  For the degree-$(a,1)$ bound choose $q$, then
+$E$ with $q/(E+1)<\varepsilon/8$, then $k$ satisfying the two conditions
+in Step~6, and finally that internal margin.  All these choices precede
+$N\to\infty$.  The count for one system is uniform over arbitrary
+coefficients in the stated height range; the $N^{o(1)}$ enumeration in
+the graph application uses smoothness separately.
+
+\begin{proof}
+We first count one fixed system, keeping the coefficient height visible;
+only afterwards do we sum the patterns arising from the graph.
+We will retain a sufficiently large fixed number \(k\) of equations,
+chosen after the height parameter \(D\) below.  All degrees and
+ambient dimensions below depend on that number and on the fixed parameters,
+not on the values of the coefficients.
+
+\medskip\noindent
+\textbf{Step 1: geometric integrality and the finite affine projection.}
+Over an algebraically closed field of characteristic zero, the square classes on the
+right of \eqref{p1:arith:surfaceequations} are independent: the valuation
+along a factor $X+i$ detects exactly its own equation.  The coordinate
+ring is free of rank $2^k$ over the polynomial ring in $X,Y$, and its
+generic localization is a field.  It is therefore integral.
+
+The affine projection $(X,Y,w)\mapsto(X,Y,\sum_\nu w_\nu)$ is finite
+and birational onto its image.  Finiteness follows from integrality over
+$\mathbb Q[X,Y]$.  Birationality follows because no nontrivial sign change
+fixes the sum: the individual radicals are independent basis elements of
+the multiquadratic extension.  The image surface in $\mathbb A^3$ has
+degree at least $2^k$ and degree bounded in terms of $k,K$.
+The projection need not extend across the projective boundary; only its
+affine finiteness is used when curves are lifted.
+
+\medskip\noindent
+\textbf{Step 2: projective degrees and the height of integral points.}
+Choose an integer $D\geq(K+A_0)/2$ before choosing $k$, and homogenize
+in the weighted ring
+\[
+ \mathbb Q[X,Y,Z,W_1,\ldots,W_k]/
+ \left(W_\nu^2-d_\nu Z^{2D-|I_\nu|-|J_\nu|}
+       \prod_{i\in I_\nu}(X+iZ)\prod_{j\in J_\nu}(Y+jZ)\right),
+\]
+with $\deg X=\deg Y=\deg Z=1$, $\deg W_\nu=D$.
+Its $D$th Veronese ring is generated in degree one by the degree-$D$
+monomials in $X,Y,Z$ and the $W_\nu$.  This embeds an integral projective
+surface finite of degree $2^k$ over $\mathbb P^2$.  The hyperplane bundle
+is the pullback of $\mathcal O_{\mathbb P^2}(D)$, so its degree is
+$2^kD^2$ and every integral curve $C$ satisfies
+\begin{equation}\label{p1:arith:curvedegree}
+ \deg C=D\deg\sigma(C)\,[\mathbb Q(C):\mathbb Q(\sigma(C))].
+\end{equation}
+
+Here $\sigma$ is the finite map to $\mathbb P^2$.
+At an integral point in the dyadic region,
+$|w_\nu|\ll N^{(K+A_0)/2}$.  In the chart $Z=1$, the Veronese
+coordinates are integers of height $H\ll N^D$, including the $W_\nu$.
+The same bound holds for the affine projection in Step~1.  Thus both
+applications of the determinant estimates use one common height bound.
+
+\medskip\noindent
+\textbf{Step 3: excluding the curves of smallest possible degree.}
+A curve of degree $D$ maps with degree one to a line.  A vertical or
+horizontal line meeting the positive region is impossible: a nonconstant
+product of distinct linear factors in the other variable would have to be
+a rational square.  On an oblique line, square products force every root
+on one side to match exactly one root on the other.  Two component
+equations give two distinct exact units, hence a positive rational
+alignment of height $O(B)$.  Thus a nonaligned point is on no curve of
+degree $D$; by \eqref{p1:arith:curvedegree}, its curves have degree at least
+$2D$.
+
+In the direct-sum formulation the
+exceptional degree-$D$ curves are excluded for a more intrinsic reason:
+their two exact units give nonempty even selections, two values on each
+side, with equal square classes.  Injectivity makes both classes nonzero,
+contradicting the direct sum.  Thus the argument does not require absence
+of geometric alignment when the actual spaces are already in direct sum.
+
+\medskip\noindent
+\textbf{Step 4: the surface covering and the first graph consequence.}
+Apply the surface covering, lift its curves by the finite affine map, and
+take their closures in this embedding.  Their numbers of components and
+degrees are bounded in terms of the fixed parameters by B\'ezout.
+Pila's estimate and the degree lower bound $2D$ give, per pattern,
+\[
+ O\big(N^{2D2^{-k/2}+\varepsilon'}
+        +N^{1/2+D2^{-k/2}+\varepsilon'}\big).
+\]
+Choose $k$ large enough after $D,\varepsilon$ and reduce the internal
+margin $\varepsilon'$.  This proves the per-system bound.
+
+For the graph consequence, smoothness gives $|d_\nu|\leq N^{A_0}$ for a
+fixed $A_0$.  At least half the components in a population $c\geq\eta B$ have size
+at most $K=\lceil4/\eta\rceil$.  Select $k$ of them.
+The offsets and smooth coefficients have
+$B^{O_K(k)}2^{k\pi(O(B))}=N^{o(1)}$ patterns.  Choosing $k$ large after
+$D,\varepsilon$, and summing these patterns, proves the first assertion.
+
+\medskip\noindent
+\textbf{Step 5: reduced fibres for equations of type $(a,1)$.}
+For the stronger degree-one assertion we exclude all curves of a fixed
+degree at most $E$, before making $k$ large.  For this part use the
+ordinary affine embedding with coordinates $X,Y,w_1,\ldots,w_k$.
+Write the equations as
+$w_\nu^2=d_\nu P_\nu(X)(Y+j_\nu)$ with $\deg P_\nu=a$.
+On the normalization of an integral curve of degree $e\leq E$,
+the coordinate functions $X,Y$ have degrees $m_X,m_Y\leq e$ and the
+genus is at most $(e-1)(e-2)/2$.  Neither function can be constant:
+otherwise the many distinct roots in the other variable would all be
+branch values, contradicting Riemann--Hurwitz.
+Discard equations having a branch value among their selected roots, or a
+finite fibre meeting the pole divisor of the other coordinate.
+At most
+\[
+ (2g-2+2m_X)+(2g-2+2m_Y)+m_X+m_Y\leq2e^2
+\]
+equations are lost.  For each remaining equation all finite fibres are
+reduced and avoid the poles.  Parity of divisors gives
+\[
+ F_Y(-j_\nu)=\sum_{i\in I_\nu}F_X(-i),\qquad m_Y=am_X.
+\]
+In fact
+\[
+ \operatorname{div}\!\left(\frac{P_\nu(X)}{Y+j_\nu}\right)
+       =F_Y(\infty)-aF_X(\infty),
+\]
+independently of $\nu$.  For two good equations the quotients therefore
+differ by a nonzero constant.  Eliminating this common quotient gives
+$Y=R(X)$ with $\deg R\leq a$.  Since
+$m_Y=(\deg R)m_X=am_X$, the degree is exactly $a$.
+
+\medskip\noindent
+\textbf{Step 6: interpolation on the offsets and exclusion of low-degree curves.}  If
+$k\geq4(E+1)^2$, there are at least three good equations.
+Their $3a$ distinct grid points $(-i,-j_\nu)$ lie on the graph of $R$:
+the reduced-fibre identity shows that $R$ is finite and equals $-j_\nu$
+at each selected $-i$.  These grid points determine $R$.
+Choose $2a+1$ of them.  Rational interpolation, using maximal minors of
+the integer evaluation matrix, gives coprime integer polynomials
+$P,Q$ of degrees at most $a$, coefficients $B^{O_a(1)}$, and $R=P/Q$.
+The kernel of this interpolation system is one-dimensional: two solutions
+would have cross-product of degree at most $2a$ vanishing at $2a+1$
+distinct abscissae.  Since the reduced rational function has degree exactly
+$a$, no nonconstant polynomial multiple of its coprime numerator and
+denominator still has both degrees at most $a$.
+This makes the coefficient uniformity explicit: the interpolation data
+are the offsets, so their height bound is independent of the $d_\nu$.
+
+If $Q$ is nonconstant, the nonzero integer resultant
+$\operatorname{Res}(P,Q)$ has size $B^{O_a(1)}$ and $Q(X)$ divides it
+at an integral point.  Thus $|X|\leq B^{O_a(1)}$.  If $Q$ is constant
+and $a\geq2$, then $|Y|\gg |X|^a/B^{O_a(1)}$, impossible for
+$X,Y\asymp N$.  If $a=1$ and $Q$ is constant, the graph is a rational
+line; its grid points give an exact positive alignment.  Thus every
+remaining dyadic nonaligned point lies on a curve of degree greater than
+$E$.
+
+In the ordinary affine embedding the height is $H\ll N^q$ for a fixed
+$q=(a+1+A_0)/2$.  Choose $E$ so that $q/(E+1)<\varepsilon/8$, then
+$k\geq4(E+1)^2$ so that $2q2^{-k/2}<\varepsilon/8$.
+The same finite projection, surface covering and curve estimate now give
+$N^\varepsilon$ per fixed coefficient pattern.  For $a=1$, its exceptional
+line is also excluded under the direct-sum hypothesis: two grid matches
+give the forbidden even selections on the two actual blocks.  Hence the
+degree-one per-system estimate is proved with arbitrary polynomial-height
+coefficients.  In the graph application one sums the $N^{o(1)}$ smooth
+patterns, proving the second graph assertion, including $a=1$.
+
+\medskip\noindent
+\textbf{Step 7: fixing one center and reducing to a quadratic equation.}
+For the last assertion fix the first start and the component data.  The
+other start satisfies $\prod_{j\in J}(Y+j)=ev^2$, with fixed squarefree
+$e\leq N^{O(1)}$ and $|J|\geq2$.  Outside primes dividing
+$e\prod_{i\ne j}(i-j)$, every selected factor has even valuation.
+Fixing the squarefree parts of two factors costs
+$2^{O(\omega(e\prod_{i\ne j}(i-j)))}=N^{o(1)}$ for fixed $|J|$.
+Their difference is a nonzero fixed offset, so
+Lemma~\ref{p1:arith:pell} gives $N^{o(1)}$ starts.  This is a
+bounded-height argument; no height-free theorem for all integral points
+is being invoked.
+The one-variable assertion with two separate equations follows in exactly
+the same localization: take one selected factor from each equation and
+put the prime divisors of both coefficients and both within-equation
+discriminants into the exceptional prime set.  Outside it each chosen
+factor has even valuation.  The two distinct offsets again give one
+quadratic equation counted by Lemma~\ref{p1:arith:pell}.
+\end{proof}
+
+\begin{lemma}[The dense weighted sector]\label{p1:arith:dense}
+For every fixed $\eta,\varepsilon>0$,
+\[
+ \sum_{\substack{x,y\in I_N,\ |x-y|>L\\
+        (x,y)\ {\rm nonaligned},\ c(x,y)\geq\eta B}}
+       (2^{\rho(x,y)}-1)
+ \ll_{C,\eta,\varepsilon}N^{1+\varepsilon}.
+\]
+The same bound holds for the full value kernel, without block-parity rows.
+\end{lemma}
+
+\begin{proof}
+Let $t_2,t_3$ count nontrivial unpinned components with two and three
+vertices.  If either exceeds a sufficiently large fixed threshold,
+Lemma~\ref{p1:arith:geometric}(2), in both orientations for size three,
+gives $N^\varepsilon$ hosts.  Their weight is at most
+$2^{B+o(B)}=N^{1+o(1)}$, since each other component needs two vertices
+and the number of defective vertices is $o(B)$.
+Otherwise $t_2,t_3=O(1)$ and the vertex budget gives
+$4c-2t_2-t_3\leq2B$, hence $c\leq B/2+O(1)$.
+Lemma~\ref{p1:arith:geometric}(1) gives $N^{1/2+\varepsilon}$ hosts,
+each of weight at most $2^{B/2+o(B)}=N^{1/2+o(1)}$.
+Reduce the internal margins in both estimates.
+\end{proof}
+
+\begin{lemma}[Uniform residual rank on an aligned pair]\label{p1:arith:alignedrank}
+For separated aligned windows with reduced height
+$b=\max(a,b)\leq B^3$, let $u$ be the number of exact units.  Then
+\[
+ \rho(x,y)\leq(u-1)_++o(B)\leq L/b+o(B),
+\]
+uniformly over the channels.  For fixed channel height and a fixed enlarged
+prime threshold proportional to $B$, the residual is $O(B/\log B)$.
+\end{lemma}
+
+\begin{proof}
+Normalize the two windows to $bV_x$ and $aV_y$, and merge equal values.
+All remaining distinct integers lie in an interval of diameter $O(B^4)$
+centered at an integer at least $N$.  Remove prime rows $\ell\leq B$
+and rows with $\ell\mid ab$.  Every other prime row meets at most two
+distinct normalized vertices, since it occurred at most once in each
+original window.  Its equations again leave one variable per unpinned
+component.  Let $c_K$ count these components of size at most a fixed $K$.
+
+For these components, the removed prime rows and one total-parity row
+form a binary matrix of redundancy at most
+$s=\pi(B)+\omega(ab)+1=O(B/\log B)$.  A nonzero kernel word gives
+an even square product of distinct normalized integers.  By
+Lemma~\ref{p1:arith:runge}, it uses at least
+$\delta\gg\log N/\log B$ vertices, and hence at least $\delta/K$
+components.  The Hamming argument in Lemma~\ref{p1:arith:defects} yields
+$c_K=O_{C,K}(B/\log B)$.  Components larger than $K$ number at most
+$2B/K$.  Since $K$ can be chosen arbitrarily large before $N$, the
+dimension of the value kernel on the distinct normalized set is $o(B)$.
+
+The kernel of the merging map on the original relative selections is
+exactly the even-selection space of the $u$ exact units, of dimension
+$(u-1)_+$.  Its image lies in the value kernel just bounded, proving
+the first assertion.  For fixed height the normalized interval has
+diameter $O(B)$.  Private primes above a sufficiently large fixed multiple
+of $B$ leave only $O(B/\log B)$ defective normalized vertices, directly
+by Lemma~\ref{p1:arith:defects}; this gives the last assertion.
+\end{proof}
+
+\subsection{Asymmetric extensions and homogeneous seeds}
+
+\begin{lemma}[An asymmetric pair profile]\label{p1:arith:asymmetric}
+Fix integers $D,Q\geq1$ and $D_{\rm cut}\geq2D+1$.
+Let $B=L+1$ and $|L-\log N/\log2|\leq C$.
+For each $N\leq X<N+QN$, let $U_X$ be any subset of
+$X+[-DB,DB]$, and let $V_z$ be a new window with $z\in I_N$.
+Choose an integer cutoff
+$(2D+1)B\leq H\leq D_{\rm cut}B$.
+For this asymmetric comparison call $(X,z)$ aligned at radius $D$ if
+there are coprime positive integers $r,s\leq B^3$ such that
+$|rz-sX|\leq D(r+s)B$; use its complement in the sum below.
+Let $\delta^*(X,z)$ be the dimension of the even selections
+of $V_z$ whose prime valuations above $H$ belong to the value space of
+$U_X$.  Then
+\[
+ \sum_{\substack{N\leq X<N+QN,\ z\in I_N\\
+                 (X,z)\ {\rm nonaligned\ at\ radius}\ D}}
+       (2^{\delta^*(X,z)}-1)
+ \ll_{C,D,D_{\rm cut},Q,\varepsilon}N^{31/24+\varepsilon}.
+\]
+The choice $Q=1$ gives the two-dyadic-window version.
+Adding prime coordinates at most $H$ to the old data leaves
+$\delta^*$ unchanged.
+\end{lemma}
+
+\begin{proof}
+All alignments in this proof use the radius $DB$ of the old enclosing
+interval.  The cutoff lower bound is larger than both interval diameters,
+so a prime above $H$ occurs at most once in each block.
+The fixed expanded old-centre range changes only constants in the
+biform support estimates and the bounded-degree graph counts.
+For the graph above $H$, let $D_z$ be the number of new defective vertices
+and let $c$ count nontrivial unpinned components.  Projection to the new
+block gives $\delta^*\leq\min(L,D_z+c)$, with $D_z=o(B)$.
+A nonzero even selection uses at least two new vertices.  If it uses no
+old vertex, the new window has two defects and contributes $N^{1+o(1)}$
+hosts after the old parameter is chosen.  Otherwise it uses at least one
+old and two new vertices.  Set $T=N^{5/12}$.
+If all their kernels are at most $T$, Lemmas~\ref{p1:arith:twokernel}
+and~\ref{p1:arith:anchor} give
+\[
+ N^{7/12+\varepsilon'}N^{1/2+5/24+o(1)}=N^{31/24+\varepsilon'+o(1)}.
+\]
+If one kernel exceeds $T$, the same CRT anchor proof gives
+$N^{3/2+o(1)}T^{-1/2+\tau}=N^{31/24+(5/12)\tau+o(1)}$.
+All these arguments concern the large-prime valuations only, so they do
+not impose parity on the old selection.  They are unchanged at the
+fixed enlarged threshold $H$.
+
+For $c<\eta B$, the weight is at most $2^{\eta B+o(B)}$, and the support
+bound suffices.  For $c\geq\eta B$, the proof of
+Lemma~\ref{p1:arith:geometric}(1) applies to the unequal fixed widths and
+gives $N^{1/2+\varepsilon'}$ hosts.  Fix a large integer $K$.  Components
+with one new vertex and more than $K$ old vertices number $O_D(B/K)$.
+A sufficiently large fixed population of any other type $(a,1)$,
+$1\leq a\leq K$, has only $N^{\varepsilon'}$ hosts by
+Lemma~\ref{p1:arith:geometric}(2).  On this exceptional set use
+$2^{\delta^*}\leq2^L\ll N$.  Else the number $c_1$ of one-new-vertex
+components is $O_D(B/K)+O_K(1)$, and $2c-c_1\leq B$.  Thus
+$\delta^*\leq B/2+O_D(B/K)+o(B)$ and the remaining dense mass is
+$N^{1+O_D(1/K)+\varepsilon'}$.
+Choose $K$, then $\eta,\tau,\varepsilon'$ after the required margin.
+Finally shrinking the old set only decreases $\delta^*$, and prime bits
+at most $H$ have already been forgotten.
+\end{proof}
+
+\paragraph{Alignment convention for asymmetric applications.}
+The enlarged radius in this lemma follows the actual old interval.
+Original pairs of equal windows retain the alignment convention in
+the main article.  Whenever a source is compressed or an enclosing
+interval is enlarged below, its aligned sector is enlarged at the
+same time; that sector still has $NB^{O(1)}$ hosts and is treated by
+the separate aligned-rank estimates.  The radius-one assertion with
+arbitrary $D$ in version~1.6 is false, as witnessed by the checked
+family recorded in the formalization notes.
+
+\begin{lemma}[Aligned loss above a rational pair]\label{p1:arith:palmrank}
+Fix a geometrically good pair in channel $a:b=2:3$ or $3:4$, regardless
+of its affine compatibility.  Among targets $z$ with
+$|z-x|,|z-y|\geq L$ and distinct from the two sources, there are
+$B^{O(1)}$ aligned targets per source.  Except for $B^{O(1)}$ source
+pairs at dyadic endpoints, their additional relative rank loss modulo
+the old value space is at most
+\[
+ L/3+o(L)\quad(a:b=2:3),\qquad
+ L/2+o(L)\quad(a:b=3:4).
+\]
+The result allows the prime bits of $a,b$ in the old information.
+\end{lemma}
+
+\begin{proof}
+Represent the source by $x=at-i_0$, $y=bt-j_0$ and put $X=abt$.
+The true old normalized values form a subset of
+$X+[-bB,bB]$.  Applying the residual argument of
+Lemma~\ref{p1:arith:alignedrank} to a fixed-width enclosing interval and
+the new interval leaves $o(B)$ dimensions after exact units are removed.
+If an exact unit of the enlarged graph uses an old value absent from the
+true set, its new nondefective vertex is pinned in the true graph.
+Consequently the remaining loss is at most the number of new vertices
+matched to actual old values, plus $o(B)$.
+
+Write an aligned target as $z=(ct+h)/d$, with $c,d$ positive coprime,
+$c,d\leq B^{O(1)}$ and $h/d=O(B)$.  A match to the first old family
+requires
+$h+dk\equiv0\pmod{c/(c,a)}$; the second family requires the same
+condition modulo $c/(c,b)$.  Their intersection is the class modulo $c$,
+because $(a,b)=1$.  Thus the union has at most
+\begin{equation}\label{p1:arith:matchdensity}
+ B\frac{(c,a)+(c,b)-1}{c}+O(1)
+\end{equation}
+new offsets.  Conditions on the true intervals can only reduce this count.
+
+For $2:3$, the source range is
+$N/2-O(B)\leq t\leq2N/3+O(B)$, so $3/2\leq c/d\leq4$ apart
+from endpoint errors of order $B/N$.  A distinct rational of polynomial
+height cannot cross either endpoint by such a small amount.
+For $c\geq7$ the density in \eqref{p1:arith:matchdensity} is at most
+$1/3$ (check $7\leq c\leq12$, then bound the numerator by four).
+For $c=5$ it is $1/5$.  The cases $c/d=2,3$ physically reproduce one
+old family.  Their supports intersect the new support in at most one
+integer, because the starts are at distance at least $L$.  The other
+family supplies at most $B/3+O(1)$ units, counted in its actual window
+of width $B$.  The only remaining possibilities with $c\leq6$ are
+$c/d=4,3/2$; these force $t=N/2+O(B)$ or $t=2N/3+O(B)$.
+They account for only $B^{O(1)}$ source pairs.
+
+For $3:4$, one has $N/3-O(B)\leq t\leq N/2+O(B)$ and
+$2\leq c/d\leq6$.  The density is at most $1/2$ for $c\geq9$
+(check $9\leq c\leq12$, then use numerator at most six), and also
+for $c=5,7,8$.  The physical cases $c/d=3,4$ leave at most one unit
+in one old family and $B/4+O(1)$ in the other.  The remaining fractions
+$2,6$ force $t=N/2+O(B)$ or $N/3+O(B)$ and are endpoint sources.
+Finally the canonical slopes and displacements have polynomially many
+choices in $B$, proving the target count.
+\end{proof}
+
+\begin{proposition}[Homogeneous seeds for fixed extensions]
+\label{p1:arith:fixed-homogeneous-seeds}
+Let $\mathcal A_{\rm raw}$ be the geometric good-edge family obtained by
+omitting the compatibility condition in the definition of $\mathcal E_N$.
+For a finite set $I\subset G_N$ put
+\[
+ W(I)=p^{|I|}2^{\rho(I)}.
+\]
+All configurations in the following sums have distinct, pairwise separated
+starts.  For every $\varepsilon>0$:
+\begin{enumerate}
+\item The sum of $W(\{x,y\})$ over dependent pairs outside
+$\mathcal A_{\rm raw}$ is $O_{C,\varepsilon}(N^{-4/5+\varepsilon})$.
+Moreover $\sum_{e\in\mathcal A_{\rm raw}}W(e)\ll_C LN^{-2/3}$.
+\item For a source $e$ in channel $a:b$, sum over targets $z$ for which
+$S_z\cap\sum_{x\in e}S_x\ne\{0\}$.  Then
+\[
+ \sum_{e,z}W(e\cup\{z\})
+ \ll_{C,\varepsilon}
+ \begin{cases}N^{-4/3+\varepsilon},&a:b=2:3,\\
+               N^{-5/4+\varepsilon},&a:b=3:4.
+ \end{cases}
+\]
+\item For two distinct geometric good edges, whose union has three or
+four starts,
+\[
+ \sum_{e\ne f}W(e\cup f)
+ \ll_{C,\varepsilon}N^{-5/4+\varepsilon}+(LN^{-2/3})^2.
+\]
+\end{enumerate}
+These are rank bounds without any affine compatibility restriction.
+\end{proposition}
+
+\begin{proof}
+The homogeneous indicators
+$H_x=\ind_{\{f(x-1)=\cdots=f(x+L-1)\}}$ have zero affine target and
+therefore $\E\prod_{x\in I}H_x=W(I)$ exactly.
+The first assertion follows from the positive profile and the same
+exceptional-channel estimates used in Theorem~\ref{p1:arith:pairs}.
+On a dependent pair $2^\rho\leq2(2^\rho-1)$, so the support contribution
+is already controlled by that profile.
+
+For a dependent extension let $\delta=\dim(S_z\cap\sum_{x\in e}S_x)>0$.
+Then $W(e\cup\{z\})=W(e)p2^\delta$, with
+$2^\delta\leq2(2^\delta-1)$.
+For the compressed old interval, test alignment at its fixed enclosing
+radius $DB$ and use the same radius in the aligned-target estimate.
+Lemma~\ref{p1:arith:asymmetric} gives
+the nonaligned mass
+$N^{-3+1/b+31/24+\varepsilon}\leq N^{-11/8+\varepsilon}$.
+Lemma~\ref{p1:arith:palmrank} and $NB^{O(1)}$ aligned hosts give
+$N^{-4/3+\varepsilon}$ or $N^{-5/4+\varepsilon}$.
+Endpoint sources cost at most $N^{-5/3+o(1)}$.  No contact was dropped
+on a compatibility argument: all starts in this proposition are separated.
+
+Two edges sharing a vertex have $NB^{O(1)}$ hosts.  The same three-window
+rank bound gives their mass $N^{-5/4+\varepsilon}$.
+For disjoint edges first treat nonaligned compressed blocks, using
+a fixed radius enclosing both true value sets in the alignment test.
+Its complementary enlarged aligned sector is retained below.  Write
+$r_f=|U_f|-1\geq5L/3-O(1)$ and let $\delta^*$ be the loss of the
+even-selection rank on $U_f$ after the old normalized values and small
+primes have been exposed.  The excess above $W(e)W(f)$ is at most
+$W(e)W(f)(2^{\delta^*}-1)$.
+The weak-component support proof of Lemma~\ref{p1:arith:asymmetric}
+still applies to two subsets of fixed-width logarithmic intervals:
+it needs two selected new values and one selected old value.
+It gives $N^{31/24+\varepsilon}$ hosts.  In this sector
+$W(e)W(f)\leq N^{-10/3+o(1)}$, so its mass is
+$N^{-49/24+\varepsilon}$.
+
+In the dense sector, the multiquadratic argument gives
+$N^{1/2+\varepsilon}$ hosts.  A fixed large population of components
+with one new vertex and boundedly many old vertices has only
+$N^\varepsilon$ hosts, by Lemma~\ref{p1:arith:geometric}(2).
+On that exceptional population use $W(f)2^{\delta^*}\leq1$ and
+$W(e)\leq N^{-5/3+o(1)}$.  Otherwise all but
+$O(B/K)+O_K(1)$ components use two new vertices.  Hence
+\[
+ \delta^*\leq|U_f|/2+O(B/K)+o(B),\qquad
+ W(f)2^{\delta^*}\leq N^{-5/6+O(1/K)+o(1)}.
+\]
+The remaining dense mass is $N^{-2+\varepsilon}$.
+The entire nonaligned excess is therefore $N^{-5/3+\varepsilon}$.
+
+Aligned compressed pairs, including overlapping envelopes, have
+$NB^{O(1)}$ hosts.  Away from endpoint sources their first three original
+windows have nullity at most $3L/4+o(L)$, by
+Lemma~\ref{p1:arith:palmrank}.  Adding the fourth loses at most $L$
+further ranks.  Their mass is at most
+$N\,N^{-4+7/4+o(1)}=N^{-5/4+o(1)}$.
+The endpoint source contribution is again $N^{-5/3+o(1)}$.
+Finally the sum of all baseline products is bounded by
+$(\sum_{e\in\mathcal A_{\rm raw}}W(e))^2$.
+All estimates were made with homogeneous ranks, proving the assertion
+independently of the original phases.
+\end{proof}
+
+\subsection{Support and branching at a fixed number of blocks}
+
+\begin{lemma}[Small-kernel counts for fixed-width blocks]
+\label{p1:arith:small-kernels}
+Let $U_X\subset X+[-DB,DB]$ with $D$ fixed and $X\asymp N$, and let
+$H\asymp B$ exceed the diameter.  Uniformly for $1\leq T\leq CN$,
+the number of translations containing one value with $K_H(n)\leq T$
+is at most $N^{1/2+o(1)}T^{1/2}$.  For fixed $0<\theta<1$, the number
+containing two such distinct values with $T=N^\theta$ is
+$O_{C,D,\theta,\varepsilon}(N^{\max(\theta,7/12)+\varepsilon})$.
+In particular it is $O(N^{\theta+\varepsilon})$ for $\theta\geq7/12$.
+\end{lemma}
+
+\begin{proof}
+Enlarge the selected set to its interval.  The proofs of
+Lemmas~\ref{p1:arith:anchor} and~\ref{p1:arith:twokernel} use only a
+fixed logarithmic width and a prime threshold of that order.  In particular
+$2^{\pi(H)}=N^{o(1)}$, the smooth parts have fixed polynomial height,
+and all changes of offset count are powers of $B$.
+\end{proof}
+
+\begin{proposition}[A relative relation meeting several blocks]
+\label{p1:arith:fixed-support}
+Fix integers $r\geq s\geq2$.  For $r$ separated logarithmic windows,
+the number of tuples having a relative square relation whose projection
+is nonzero in at least $s$ blocks is
+\[
+ O_{C,r,\varepsilon}\left(N^{r-2s/(2s+1)+\varepsilon}\right).
+\]
+The same assertion holds for injective even-selection spaces on subsets
+of fixed-width logarithmic intervals, including the compressed good edges,
+with only $B^{O_r(1)}$ choices of fixed offsets and fixed dilation factors.
+\end{proposition}
+
+\begin{proof}
+Put $T=N^{\beta_s}$ with $\beta_s=(2s-1)/(2s+1)>7/12$.
+If every selected kernel is at most $T$, each of the $s$ nonzero even
+projections selects at least two distinct values.  By
+Lemma~\ref{p1:arith:small-kernels}, the number of hosts is
+\[
+ N^{r-s}N^{s\beta_s+\varepsilon'}
+   =N^{r-2s/(2s+1)+\varepsilon'}.
+\]
+Otherwise anchor a selected value of kernel $K>T$.
+Assign every prime of $K$ to one of the other $(r-1)O(B)$ offsets where
+it must reappear.  For a fixed assignment let $K_j$ be the product
+assigned to block $j$.  These products are pairwise coprime, at most
+$K\ll N$, and their CRT cost is
+$O_r(N^{r-1}/\prod_jK_j)=O_r(N^{r-1}/K)$.
+The Rankin calculation from Lemma~\ref{p1:arith:anchor}, with
+$(r-1)O(B)$ in place of $B$, gives
+\[
+ N^{r-1/2+o(1)}T^{-1/2+\tau}
+ =N^{r-2s/(2s+1)+\beta_s\tau+o(1)}.
+\]
+Choose $\tau$ and all internal margins after $\varepsilon$.
+The argument uses actual distinct values in each selected set; enlarging
+its containing interval only increases the count.  Injectivity ensures
+that a nonzero compressed projection still gives a nonempty even selection.
+\end{proof}
+
+\begin{proposition}[A fixed number of exposed source windows]
+\label{p1:arith:fixed-branching}
+Fix $j\geq1$ and source starts $x_1,\ldots,x_j\in I_N$.
+Outside a deterministic set of $N^{1/2+o_{C,j}(1)}$ possible starts,
+the new relative vector is uniform and independent of every value in
+the old windows.  An explicit bound for the exceptional set is
+\[
+ j(2L+1)+B\sqrt{3N}\exp(2\sqrt{m_{j,N}}),\qquad
+ m_{j,N}=\left\lceil\pi(B)+\frac{jB\log(3N)}{\log B}\right\rceil.
+\]
+Fixed dilations, subsets, and fixed enlarged logarithmic windows satisfy
+the same $N^{1/2+o(1)}$ conclusion.
+\end{proposition}
+
+\begin{proof}
+Let $\mathcal P$ contain all primes at most $B$ and all primes dividing
+an old value.  It has at most $m_{j,N}$ members.
+The number of integers at most $3N$ whose squarefree part is supported
+on $\mathcal P$ is at most
+\[
+ \sqrt{3N}\prod_{\ell\in\mathcal P}(1+\ell^{-1/2})
+ \leq\sqrt{3N}\exp(2\sqrt{|\mathcal P|}),
+\]
+because the $i$th distinct prime is at least $i$.
+Discard overlapping starts and windows containing two such values;
+the stated estimate follows even by charging each such window to one
+of its values and multiplying by $B$.
+If a nonzero new relative combination belonged to the old value space,
+its even selection would contain at least two integers.  Every large
+odd prime of each selected integer is private inside the new window,
+so it would have to divide an old value.  Both selected integers would
+have squarefree part supported on $\mathcal P$, contrary to the retained
+set.  The new rank therefore increases by exactly $L$ over the old
+value space, which proves the asserted conditional uniformity.
+For fixed $j$, $m_{j,N}=O_{C,j}((\log N)^2/\log\log N)$.
+\end{proof}
+
+\subsection{Products grouped by their ternary support}
+
+\begin{proposition}[A ternary group budget]\label{p1:arith:ternary-budget}
+Let $U_i\subset X_i+[-DB,DB]$, $X_i\asymp N$, be three sets with
+injective even-selection square-class maps whose images are pairwise
+in direct sum.  The width constant and the number of offset patterns
+are fixed.  Choose $H$ greater than the three diameters.  For an offset
+triple $u=(u_1,u_2,u_3)$ let
+\[
+ G_u=\prod_{\substack{\ell>H\ {\rm prime}\\
+       v_\ell(X_i+u_i)\ {\rm odd}\ (i=1,2,3)}}\ell.
+\]
+Retain the groups greater than one and write their decreasing values
+$G_{(1)}>G_{(2)}>\cdots$.  Put
+$\mathcal G_k=\prod_{i=1}^kG_{(i)}$, or zero if fewer than $k$ exist.
+For every fixed $k\geq3$, $\varepsilon>0$, and $1\leq T\leq N$,
+\begin{equation}\label{p1:arith:ternarycount}
+ \#\{\text{tuples}:\mathcal G_k>T\}
+ \ll_{C,D,k,\varepsilon}N^\varepsilon
+      (N^3/T^2+N^{6/5}).
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+A prime larger than $H$ has only one occurrence in each block, so the
+groups are pairwise coprime and
+$G_u\mid\gcd(X_1+u_1,X_2+u_2,X_3+u_3)$.
+Two groups satisfy $G_uG_v\ll NB$.
+If they share an occurrence this follows from divisibility of that
+integer.  Otherwise choose two blocks in which the offsets differ.
+Their product divides a determinant $nm'-n'm$ of size $O(NB)$.
+Its vanishing would give a nonzero relative relation on those two
+blocks, contrary to their direct sum.
+
+Three groups with product greater than a sufficiently large constant
+times $NB^2$ force their three value vectors to have zero determinant.
+The corresponding offset triples cannot be collinear.  Indeed, writing
+$u_j=u_1+t_jd$, with $d$ a primitive integer vector and $t_j$ integers,
+in the collinear case, all three coprime groups divide
+$d\times(X+u_1)$.  If this vector is nonzero, its size $O(NB)$ gives a
+contradiction.  If it is zero, two positive value vectors are proportional
+with distinct coordinates in every block, again giving a forbidden pair
+relation.  Thus the centers lie on a genuine plane
+\[
+ ((u_2-u_1)\times(u_3-u_1))\cdot X
+ =-((u_2-u_1)\times(u_3-u_1))\cdot u_1.
+\]
+There are only $B^{O(1)}$ such planes, determined by the offsets alone.
+
+For fixed $k$ group first by the squarefree product $Q=\mathcal G_k$.
+The ordered factorizations cost $d_k(Q)\ll_{k,\varepsilon'}Q^{\varepsilon'}$,
+and the supports cost $B^{3k}$.  CRT fixes one residue class modulo $Q$
+for each center.  Summing $O((N/Q+1)^3)$ gives, for
+$1\leq T\leq N\leq R\leq N^{O(1)}$,
+\begin{equation}\label{p1:arith:groupcrt}
+ \#\{T<\mathcal G_k\leq R\}
+ \ll_{k,\varepsilon}N^\varepsilon(N^3/T^2+R).
+\end{equation}
+For $\mathcal G_3>R\gg NB^2$, use its forced plane.  The two largest
+groups have product $P>R^{2/3}$ and $P\ll NB$.  Two free coordinates
+are fixed by CRT modulo $P$; the plane determines the third.
+Summing over the two positive group sizes and their offsets gives
+\begin{equation}\label{p1:arith:planecrt}
+ \#\{\mathcal G_3>R\}
+ \ll_\varepsilon N^\varepsilon(N^2R^{-2/3}+N).
+\end{equation}
+Here one uses
+$\sum_{ab>A}(ab)^{-2}\ll\log(2A)/A$,
+$\sum_{ab\leq U}(ab)^{-1}\ll\log^2(2U)$, and
+$\#\{ab\leq U\}\ll U\log(2U)$.
+The third numerical group is not enumerated again: it certifies the
+plane and the lower bound for $P$.
+
+For $k=3$, take $R=N^{6/5}$ in
+\eqref{p1:arith:groupcrt}--\eqref{p1:arith:planecrt}.
+For induction on fixed $k$, the region
+$T<\mathcal G_k\leq N^{6/5}$ is already covered by
+\eqref{p1:arith:groupcrt}.  Beyond it,
+$\mathcal G_{k-1}>N^{6(k-1)/(5k)}$.
+At $k=4$ the preceding $N^3/T^2$ term is $N^{6/5}$; at $k=5$
+it is smaller; for $k\geq6$ the threshold is at least $N$ and the
+preceding tail at $N$ suffices.  Only a fixed number of induction steps
+is taken.  This proves \eqref{p1:arith:ternarycount}.
+\end{proof}
+
+\subsection{The probability of two active good edges}
+
+\begin{lemma}[A positive second moment for good edges]
+\label{p1:arith:twogoodpositive}
+Let $\Xi_N=\sum_{e\in\mathcal E_N}\prod_{x\in e}J_x$.
+Then
+\[
+ \E(\Xi_N)_2=\beta_N^2+o_C(\beta_N^2)
+ \ll_C L^2N^{-4/3}.
+\]
+In particular
+$0\leq\beta_N-\P(\Xi_N\geq1)\leq\tfrac12\E(\Xi_N)_2$.
+\end{lemma}
+
+\begin{proof}
+We only need a strict gap below $2L/3$ for the nullity of three aligned
+windows containing a good source.  Here is a direct bound that avoids
+a complete classification of the optimal three-window configuration.
+Keep the target parametrization and congruences from
+Lemma~\ref{p1:arith:palmrank}.  If its fraction $c/d$ is physical,
+two of the three parameter intervals have the same coefficient and
+disjoint interiors, up to one endpoint.  Their intersections with the
+third interval have total length at most that third interval.  Thus
+the full three-window nullity is at most $L/2+o(L)$ for $2:3$, and
+$L/3+o(L)$ for $3:4$.  This bound includes the original source nullity.
+The residual on this fixed-width normalized union is $o(L)$ by the
+private-prime defect estimate, just as in the fixed-height case of
+Lemma~\ref{p1:arith:alignedrank}.
+
+For a nonphysical target above $2:3$, the additional rank loss is at
+most $3L/10+o(L)$.  Indeed the density
+$((c,2)+(c,3)-1)/c$ already suffices except for $c=9,12$ and the
+physical or endpoint fractions.  For $c\geq14$ it is at most $2/7$;
+$c=5,7,8,10,11,13$ also satisfy the desired bound directly.
+For $c=9$, the allowed reduced denominators are $4,5$.
+Count the new class modulo nine everywhere, and the remainder of
+the class modulo three inside the true three-family parameter
+interval of length $3B/d$.  This gives
+\[
+ B/9+(3B/d)(1/3-1/9)+O(1)
+ =B/9+2B/(3d)+O(1)\leq5B/18+O(1)<3B/10+O(1).
+\]
+Counting only the three-family units would miss possible matches
+outside that actual interval; the union count retains them.
+For $c=12$ the possible denominators are $5,7$.
+At $d=7$ the two true old intervals supply at most $2B/7+O(1)$ units.
+At $d=5$ count the entire new class modulo six and the part of the
+class modulo four outside it.  The latter lies in a true parameter
+interval of length $4B/5$, giving
+\[
+ B/6+(4B/5)(1/4-1/12)+O(1)=3B/10+O(1).
+\]
+The full nullity is therefore at most $(1/3+3/10)L+o(L)=19L/30+o(L)$.
+
+Above $3:4$, the cruder additional bound $2L/5+o(L)$ is enough.
+The density test proves it for $c\geq15$ and for
+$c=5,7,9,10,11,13,14$.  The only other nonphysical interior
+fractions are $8/3$ and $12/5$.
+For $8/3$, count the class modulo eight everywhere and the remainder
+of the class modulo two inside the true four-family parameter
+interval of length $2B/3$.  The bound is
+\[
+ B/8+(2B/3)(1/2-1/8)+O(1)=3B/8+O(1).
+\]
+For $12/5$, each true old family supplies at most $B/5+O(1)$ units.
+Thus the full nullity is at most $(1/4+2/5)L+o(L)=13L/20+o(L)$.
+The finitely many endpoint fractions concern only $B^{O(1)}$ sources,
+as before.  Since $19/30<13/20<2/3$, the bound $13L/20+o(L)$
+works for both channels outside this exception.
+
+For two distinct good edges, configurations sharing a vertex and
+aligned configurations with four vertices have $NB^{O(1)}$ hosts.
+In the four-vertex case adding the last window loses at most $L$
+ranks.  The joint probabilities in both cases therefore total at most
+$N^{-27/20+o(1)}$.  Endpoint sources cost $N^{-5/3+o(1)}$.
+Nonaligned compressed edges have total absolute covariance
+$O_{C,\varepsilon}(N^{-5/3+\varepsilon})$ by the two-block argument in
+Proposition~\ref{p1:arith:fixed-homogeneous-seeds}; that argument also
+applies to compatible affine sources.
+Cross-contacts at distance less than $L$ have zero joint probability.
+Their baseline products, those of adjacent edges, and the diagonal
+$\sum_e q_e^2$ have total $N^{-7/3+o(1)}$, since the geometric edge
+degree is $O(B)$.  Contacts at distance exactly $L$ were included in
+the physical bounds above.  Consequently
+\[
+ \E(\Xi_N)_2=\beta_N^2+O_{C,\varepsilon}(N^{-27/20+\varepsilon}).
+\]
+Take $\varepsilon<1/60$ and use
+$\beta_N\asymp LN^{-2/3}$.  The final inequality is the elementary
+pointwise bound $(m-1)_+\leq m(m-1)/2$ for integers $m\geq0$.
+\end{proof}
+

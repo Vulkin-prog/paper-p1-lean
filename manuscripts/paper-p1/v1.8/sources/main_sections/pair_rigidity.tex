@@ -1,0 +1,425 @@
+\section{Short square relations and the rank of a pair}
+\label{p13:rig:section}
+
+A large intersection of the square-class spaces of two windows
+contains many relations, but those relations need not initially have
+short support.  We first extract a large subspace with a short basis.
+Two independent basis vectors then produce an algebraic curve through
+the two window centres.  A resultant argument puts the whole subspace
+on one curve, while the relations force many integer points in the
+small grid of offsets.  A point count uniform in the degree rules out
+this configuration unless the centres lie on a rational alignment.
+The distinction between a fixed degree and a growing degree is
+essential: the basis supports grow with $L$ throughout the argument.
+
+All estimates in this section are uniform in
+$x,y\in I_N$, $|L-\log_2N|\le C$, for fixed $C$, and we put
+$B=L+1$.  A logarithm without a subscript is natural.
+The conclusion used in the probability argument is
+Corollary~\ref{p13:rig:triple}.
+
+\subsection{Square classes on all windows}
+\label{p13:rig:notation}
+
+We use the true window
+$V_x=\{x-1,x,\ldots,x+L-1\}$, including its left endpoint.
+Let $E_x$ be the space of even selections from $V_x$, and let
+\[
+ \phi_x:E_x\longrightarrow
+ \mathbb Q_{>0}^{\times}/\mathbb Q_{>0}^{\times2},
+ \qquad I\longmapsto\left[\prod_{n\in I}n\right]
+\]
+be the square-class map.  Its image is the space $S_x$ already used
+above.  Put $d_{xy}=\dim(S_x\cap S_y)$ and, for any finite set of
+centres $T$, define the \emph{relative nullity}
+\begin{equation}
+ \rho_{\rm rel}(T)=\sum_{x\in T}\dim S_x-
+                         \dim\left(\sum_{x\in T}S_x\right).
+ \label{p13:rig:relative-nullity}
+\end{equation}
+On the regular set, where every $S_x$ has dimension $L$, this is
+the earlier nullity $\rho(T)$.  Formula
+\eqref{p13:rig:relative-nullity} also applies to the remaining
+windows and separates their local rank defects from dependence
+between distinct windows.
+
+A \emph{complete relation} of a pair is a pair of even selections
+with the same square class.  We represent its selections by offsets
+$I,J\subset\{-1,0,\ldots,L-1\}$ and attach the polynomial
+\begin{equation}
+ F_w(X,Y)=\prod_{u\in I}(X+u)\prod_{v\in J}(Y+v),
+ \qquad w=(I,J).
+ \label{p13:rig:word-polynomial}
+\end{equation}
+Thus $F_w(x,y)$ is an integer square.  The word $w$ is a vector
+over $\F_2$; addition means symmetric difference in each block.
+The two blocks remain disjoint formal copies even when the actual
+windows overlap.  Consequently, independent words give independent
+classes of their polynomials in
+$\mathbb Q(X,Y)^\times/\mathbb Q(X,Y)^{\times2}$: the factors
+$X+u$ and $Y+v$ are distinct irreducible polynomials.
+
+We call $x,y$ \emph{aligned} if there are coprime positive integers
+$a,b\le B^3$ such that
+\begin{equation}
+                   |bx-ay|\le(a+b)B.
+ \label{p13:rig:alignment}
+\end{equation}
+This definition includes nearby centres.  Otherwise they are
+nonaligned.  Alignment is a property of the centres; compatibility
+of their run events is a separate condition.
+
+
+\subsection{Extracting short relations}
+
+Primes larger than $10B$ meet each physical block at most once.  Their
+parity equations therefore join positions into components; a component
+meeting a prime only once is forced to zero.  Local square-product
+separation shows that there are only $O_C(B/\log B)$ defective
+positions.  Thus the number of free components meeting both blocks is
+$d_{xy}+O_C(B/\log B)$; see
+Lemmas~\ref{p13:rig:defective} and~\ref{p13:rig:components}.
+
+For medium primes, columns of weight two can be kept as edges of a
+graph.  Its short cycles cancel their equations.  Discarding only
+columns of weight at least three costs one third of their total
+weight, explaining the factor $2/3$ in the following extraction.
+
+\begin{theorem}[A short basis with a controlled loss of dimension]
+\label{p13:rig:short-basis}
+For every fixed $a\in(0,1)$ there is a subspace $\mathcal K_a$
+of complete relations of the pair, with injective projections
+onto each physical block and onto the common square class,
+such that
+\begin{equation}
+ \dim\mathcal K_a\ge d_{xy}-\frac23B\log(1/a)
+                    -O_{a,C}\!\left(\frac B{\sqrt{\log B}}\right).
+ \label{p13:rig:short-dimension}
+\end{equation}
+It has a basis whose vectors have total physical support at most
+\begin{equation}
+                    O_{a,C}\!\left(
+                         \frac{B^a\log B}{\log\log B}\right).
+ \label{p13:rig:short-support}
+\end{equation}
+Every nonzero vector selects a nonempty even set in each block
+and has nonzero common square class.  Neither compatibility nor
+nonalignment is assumed.
+\end{theorem}
+
+The full extraction proof, including the final small-prime equations
+and projection injectivity, is in
+Section~\ref{p14:comp:rigidity:short-basis}.
+
+\subsection{One curve for a whole relation space}
+
+Two independent short words first yield a nonzero polynomial through
+the window centres.  Proposition~\ref{p13:rig:two-witnesses} constructs
+it as the norm of a biquadratic auxiliary function, with degree and
+logarithmic height linear in the support size.  Polynomial gcd removal
+is performed before specialization, so vanishing at the integer point
+does not destroy the norm argument.
+
+The simultaneous step below is stronger than constructing a separate
+curve for each word.  Pairwise resultants have quadratic height cost
+in the support, independent of the number of basis vectors.
+
+\begin{theorem}[A common curve]
+\label{p13:rig:common-curve}
+There is an absolute constant $c>0$ with the following property.
+Let $V$ be a space of even formal words of dimension $t\ge2$,
+with a basis $w_1,\ldots,w_t$ satisfying
+$|I_{w_i}|,|J_{w_i}|\le2q_0$, where $1\le q_0\le B$.
+Suppose all $F_{w_i}(x,y)$ are integer squares and
+$x,y\in[N,2N)$.  If $N>(B+1)^{cq_0^2}$, there is a
+primitive irreducible polynomial $C_0\in\Z[X,Y]$, depending
+on both variables, such that
+\begin{equation}
+ C_0(x,y)=0,\qquad \deg C_0\le48q_0,
+ \qquad H(C_0)\le(B+1)^{cq_0}.
+ \label{p13:rig:common-degree-height}
+\end{equation}
+In the function field $K_0=\mathbb Q(C_0=0)$, the image of
+\[
+               V\longrightarrow K_0^\times/K_0^{\times2},
+                  \qquad w\longmapsto[F_w]
+\]
+has dimension at most one.  The constant is independent of $t$.
+\end{theorem}
+
+The proof is given in Section~\ref{p14:comp:rigidity:common-curve}.
+Its key point is that every norm polynomial must share the same
+irreducible factor through $(x,y)$: otherwise a resultant would give
+a nonzero polynomial of height $(B+1)^{O(q_0^2)}$ with integer root
+$x\ge N$.  Primitivity of the auxiliary coefficients then forces the
+functional square-class image to have dimension at most one.
+
+\subsection{Functional squares force integer fibres}
+
+The centres have size $N$, but the next step counts points
+in a box of side $O(B)$.  The bridge is that a square
+function has even valuation at every point of the normalized
+curve.  A simple zero belonging to a selected first-block
+offset must therefore be matched by a selected second-block
+offset.
+
+\begin{proposition}[Integer fibres in the offset grid]
+\label{p13:rig:grid-fibres}
+Under the hypotheses of Theorem~\ref{p13:rig:common-curve},
+assume both physical projections of $V$ are injective.
+Put $D=\deg C_0$, $d_X=\deg_XC_0$, $d_Y=\deg_YC_0$.
+For an absolute constant $c$,
+\begin{equation}
+ \#\{(u,v)\in[-B,B]^2\cap\Z^2:C_0(-u,-v)=0\}
+       \ge\max(d_X,d_Y)(t-1-cD^2).
+ \label{p13:rig:grid-count}
+\end{equation}
+A negative right side may be replaced by zero.
+\end{proposition}
+
+\begin{proof}
+The kernel $V_0$ of the map to functional square classes
+has dimension at least $t-1$.  The leading coefficients
+and discriminants of $C_0$ in each variable are nonzero
+polynomials, of total degree $O(D^2)$ in the remaining
+variable.  Exclude the offsets at which one of these
+polynomials vanishes.  Requiring the corresponding
+coordinates of a word to be zero leaves a subspace $V_1$
+of dimension at least $t-1-cD^2$.
+
+Let $\mathcal U_X$ be the union of first-block offsets used
+by $V_1$.  Projection injectivity gives
+$|\mathcal U_X|\ge\dim V_1$.
+For $u\in\mathcal U_X$, select a word containing $X+u$.
+The noncritical fibre $X=-u$ has exactly $d_Y$ distinct
+affine roots on the geometric normalization.  At each,
+$X+u$ has a simple zero and no other first-block factor
+vanishes.  The product for the selected word is a square
+function, so a selected factor $Y+v$ must vanish there.
+Every root is thus an integer $-v$ in the offset interval.
+Distinct $u$ give disjoint fibres, proving at least
+$d_Y\dim V_1$ grid points.  Interchanging $X,Y$ proves
+the bound with $d_X$ as well.
+The argument may be performed after extension to
+$\mathbb C$ and normalization of the components; geometric
+integrality is not required.
+\end{proof}
+
+\subsection{The point count at growing degree}
+
+We use the integer-point part of Binyamini--Cluckers--Novikov
+\cite[Theorem~2, equation~(27), in the specified author
+version]{binyaminicluckersnovikov2024}.
+
+\begin{theorem}[Binyamini--Cluckers--Novikov]
+\label{p13:rig:bcn}
+For an integral algebraic curve $\mathcal C\subset\mathbb A^n_K$
+of degree $D$, where $n>1$ and $K\subset\mathbb C$, there are
+a constant $c(n)$ and an absolute constant $\kappa$ such that
+\[
+ \#\{z\in\mathcal C\cap\Z^n:\max_i|z_i|\le H\}
+       \le c(n)D^2H^{1/D}(\log H)^\kappa,
+       \qquad H>2.
+\]
+The constants are independent of the curve's coefficients
+and degree.  Integrality over $K$ is sufficient.
+\end{theorem}
+
+\begin{corollary}[Sublinear counts in the offset box]
+\label{p13:rig:sublinear-grid}
+Fix $0\le a<1/2$ and $c_0>0$. Let $D_{\max}=D_{\max}(B)$
+be any fixed degree envelope such that, for every $\delta>0$,
+$D_{\max}(B)\le B^{a+\delta}$ for all sufficiently large $B$.
+Uniformly for integral plane curves of degree $2\le D\le D_{\max}(B)$,
+\[
+ \#(\mathcal C\cap[-c_0B,c_0B]^2\cap\Z^2)
+ \ll_{c_0}(B^{1/2}+D_{\max}^2)(\log B)^\kappa=o(B).
+\]
+\end{corollary}
+
+\begin{proof}
+Set $H=\max(3,c_0B)$.  The logarithmic derivative of
+$u^2H^{1/u}$ is $(2u-\log H)/u^2$, so its maximum on
+$[2,M]$, $M\ge2$, is attained at an endpoint.
+Put $M'=\max(M,\log H)$. Applying this observation on $[2,M']$,
+and using $H^{1/M'}\le e$, gives, for every $2\le D\le M$,
+\[
+ D^2H^{1/D}
+ \le 4H^{1/2}+e(M')^2
+ \le4H^{1/2}+e\{M^2+(\log H)^2\}.
+\]
+The last logarithmic square is absorbed into $B^{1/2}$.
+Apply Theorem~\ref{p13:rig:bcn} with $n=2$ and $M=D_{\max}(B)$.
+Choose a fixed $\delta>0$ with $2(a+\delta)<1$. Both
+$B^{1/2}(\log B)^\kappa$ and
+$B^{2(a+\delta)}(\log B)^\kappa$ are $o(B)$.
+The threshold is chosen after $c_0,a$, the envelope and the requested
+error, and before the curve and its coefficients. No lower growth of
+$D_{\max}$ is needed; bounded and polylogarithmic envelopes are included.
+\end{proof}
+
+This application uses the theorem's degree-uniform constant.
+A bound with an unspecified constant depending on $D$ would
+not give the conclusion of Corollary~\ref{p13:rig:sublinear-grid}.
+
+\subsection{Nonaligned pairs have rank less than half a window}
+
+\begin{theorem}[A uniform nonaligned rank bound]
+\label{p13:rig:nonaligned}
+For every fixed critical band,
+\begin{equation}
+ \limsup_{N\to\infty}\ 
+ \sup_{\substack{x,y\in I_N\\x,y\ {\rm nonaligned}}}
+             \frac{d_{xy}}B
+       \le\frac23\log2<\frac12.
+ \label{p13:rig:nonaligned-bound}
+\end{equation}
+Compatibility of the two events is not needed.
+\end{theorem}
+
+\begin{proof}
+Suppose along a sequence that
+$d_{xy}\ge((2/3)\log2+\delta)B$ for some fixed
+$\delta>0$.  Choose a fixed $a<1/2$, sufficiently close to
+$1/2$, that
+$(2/3)\log(1/a)<(2/3)\log2+\delta/2$.
+Theorem~\ref{p13:rig:short-basis} gives a space $V$
+of dimension at least $\delta B/2-o(B)$ with injective
+physical projections and a basis whose half-cardinalities
+are at most $q_0=B^{a+o(1)}$.  The quantitative bridge to
+the common-curve theorem is
+\begin{equation}
+              q_0^2\log(B+1)=B^{2a+o(1)}=o(B)=o(\log N).
+ \label{p13:rig:threshold-bridge}
+\end{equation}
+Thus Theorem~\ref{p13:rig:common-curve} supplies an
+irreducible $C_0$ through $(x,y)$ of degree
+$D\le B^{a+o(1)}$ and logarithmic height $o(B)$, with
+functional image of dimension at most one.
+
+If $D\ge2$, Proposition~\ref{p13:rig:grid-fibres} gives
+at least $\delta B/2-o(B)$ integer points in the offset
+box, because $D^2=o(B)$.  Corollary~\ref{p13:rig:sublinear-grid}
+gives $o(B)$ points, a contradiction.
+
+If $D=1$, write $C_0=\alpha X+\beta Y+\gamma$.
+Both $\alpha,\beta$ are nonzero.  Since
+$H(C_0)=\exp(o(B))=N^{o(1)}$ and $x,y\ge N$, they have
+opposite signs; otherwise $\gamma$ could not cancel the
+two terms.  The line therefore has the form
+$X=\lambda Y+\nu$ with $\lambda>0$.
+The kernel of the functional-class map has positive
+dimension.  Choose a nonzero word in it.  Each selection
+is nonempty and even by projection injectivity.  On the
+line, the distinct simple roots from the two blocks must
+pair, each pairing giving $\nu+u=\lambda v$.
+There are at least two pairings, hence
+\[
+ \lambda=\frac{u_1-u_2}{v_1-v_2}=\frac pq,
+ \qquad (p,q)=1,\qquad 1\le p,q\le2B.
+\]
+Evaluating one pairing at the centres gives
+$qx-py=pv-qu$, of absolute value at most $(p+q)B$.
+This is an alignment as in \eqref{p13:rig:alignment},
+contrary to the assumption.  Both degree cases are
+impossible, and $\delta$ was arbitrary.
+\end{proof}
+
+The number $(2/3)\log2$ is a sufficient upper threshold
+arising from the extraction and degree bounds.  No matching
+rank construction is asserted for this constant.
+
+
+\subsection{Aligned pairs and the exact contact distance}
+
+For an aligned pair the line is already known.  Substitution into it
+costs a height linear in the support, so the extraction exponent may
+approach one without the quadratic resultant threshold.
+
+\begin{proposition}[Rank on a known alignment]
+\label{p13:rig:aligned}
+Suppose $bx-ay=h$, where $(a,b)=1$, $1\le a,b\le B^3$,
+and $|h|\le(a+b)B$.  For every fixed $\tau\in(0,1)$,
+\begin{equation}
+ d_{xy}\le\frac B{\max(a,b)}+\frac23B\log(1/\tau)
+                    +O_{\tau,C}(B/\sqrt{\log B}).
+ \label{p13:rig:aligned-quantitative}
+\end{equation}
+For distinct compatible centres this implies, uniformly
+over aligned pairs,
+$d_{xy}\le B/2+o_C(B)$.  If such a pair has an alignment
+with $a=b=1$, then $d_{xy}=o_C(B)$.
+\end{proposition}
+
+The proof in Section~\ref{p14:comp:rigidity:aligned} counts the matched
+linear factors on that line.  At height one, compatibility imposes
+$|x-y|\ge L$; distance exactly $L=B-1$ leaves only one shared true
+position.  A nonzero even relation needs at least two matches, so this
+contact contributes no macroscopic intersection rank.  Thus the bound
+includes the minimum compatible separation exactly.
+
+\subsection{Uniform triple nullity and its probabilistic cost}
+
+\begin{corollary}[Triple rank and maximum joint probability]
+\label{p13:rig:triple}
+Every compatible triple $T$ of distinct centres in the
+fixed critical band satisfies
+\begin{equation}
+                 \rho_{\rm rel}(T)\le\frac32L+o_C(L).
+ \label{p13:rig:triple-nullity}
+\end{equation}
+If any of its pairs is nonaligned, the stronger bound
+$\rho_{\rm rel}(T)\le(1+(2/3)\log2)L+o_C(L)$ holds.
+In particular, with $q(T)=\E\prod_{x\in T}J_x$,
+\begin{equation}
+                  \max_{\substack{T\subset I_N\\|T|=3}}q(T)
+                            \le N^{-3/2+o_C(1)}.
+ \label{p13:rig:max-triple}
+\end{equation}
+\end{corollary}
+
+\begin{proof}
+For three spaces of dimensions at most $L$, the dimension
+identity and the intersection bound give
+\[
+ \begin{split}
+ \rho_{\rm rel}(T)
+ &=\dim(S_1\cap S_2)+\dim((S_1+S_2)\cap S_3)\\
+ &\le L+\dim(S_1\cap S_2).
+ \end{split}
+\]
+Permuting the indices gives
+$\rho_{\rm rel}(T)\le L+\min_{i<j}d_{ij}$.
+Every pair in a compatible triple is compatible.
+Theorem~\ref{p13:rig:nonaligned} and
+Proposition~\ref{p13:rig:aligned}, with $B=L+1$, prove
+the stated nullity bounds.
+
+For clarity, the passage to probabilities uses exact
+affine constraints.  The prime signs induce a uniform
+character on each finite square-class space.  The
+constraints for $J_x=1$ have classes
+$\{x-1,x\}$ and $\{x,x+j\}$, $1\le j<L$, with prescribed
+values $-1$ and $+1$ respectively.  These selections span
+$E_x$.  Thus an admissible window has
+$p_x:=\E J_x=2^{-\dim S_x}$, and a compatible family has
+\begin{equation}
+ q(T)=2^{-\dim\sum_{x\in T}S_x}
+                  =2^{\rho_{\rm rel}(T)}\prod_{x\in T}p_x.
+ \label{p13:rig:exact-probability}
+\end{equation}
+Every local relation is supported on defective positions,
+so Lemma~\ref{p13:rig:defective} implies
+$L-O_C(B/\log B)\le\dim S_x\le L$.
+Consequently $p_x=2^{-L+o_C(L)}$ for admissible windows;
+inadmissible windows contribute zero.  Substitution in
+\eqref{p13:rig:exact-probability} gives
+$q(T)\le2^{-3L/2+o_C(L)}=N^{-3/2+o_C(1)}$ uniformly,
+which is \eqref{p13:rig:max-triple}.
+\end{proof}
+
+The estimate \eqref{p13:rig:max-triple} is the arithmetic
+input needed by the reconstruction from three-window
+activities.  Its proof uses the true windows and exact
+marginals, so no removal of locally exceptional windows
+is required at this stage.

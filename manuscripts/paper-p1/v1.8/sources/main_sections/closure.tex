@@ -1,0 +1,105 @@
+\section{The quadratic Poisson reference}
+\label{p14:reference:section}
+
+The reconstruction is carried out in the algebra of signed measures.
+For the parameters of the model its final reference is a probability.
+The following positivity and continuity facts are elementary and do not
+depend on the law approximation. The deduction of
+Corollary~\ref{p1:cor:tv} from the final theorem is given in
+Section~\ref{p14:comp:tv}.
+
+\subsection{Continuity of the reference}
+
+For nonnegative $\mu,\mu'$,
+\begin{equation}
+ \|\Pi_\mu-\Pi_{\mu'}\|_1\le2|\mu-\mu'|.
+ \label{p1:close:poisson-lipschitz}
+\end{equation}
+For example, if $\mu'=\mu+h$, couple by adding an independent
+Poisson variable of mean $h$.  Its probability of being nonzero
+is $1-e^{-h}\le h$, proving the inequality.
+It follows that
+\begin{equation}
+ \|Q_{\mu,\alpha}-Q_{\mu',\alpha'}\|_1
+ \le2(1+2|\alpha|)|\mu-\mu'|+2|\alpha-\alpha'|.
+ \label{p1:close:reference-lipschitz}
+\end{equation}
+Here we have expanded the difference with coefficient $\alpha$
+on $\Pi_\mu-\Pi_{\mu'}$ and used
+$\|\Pi_{\mu'}*\Delta^{*2}\|_1\le4$.
+
+\subsection{Positivity and the coefficient of total variation}
+\label{p1:close:positivity-section}
+
+The signed representation of the reference is useful in the
+proof, but for the parameters of the theorem it is eventually
+a probability.  The following exact criterion also specifies
+its domain for general parameters.
+
+\begin{lemma}[Positivity of the quadratic Poisson correction]
+\label{p1:close:positivity}
+Let $\mu>0$, $\alpha\in\mathbb R$, and
+$\theta=\mu-\lfloor\mu\rfloor$.  Then $Q_{\mu,\alpha}$ is a
+probability measure if and only if
+\begin{equation}
+ 0\le\alpha\le
+       \frac{2\mu^2}{\mu+\theta(1-\theta)}.
+ \label{p1:close:positivity-range}
+\end{equation}
+Its masses are
+\begin{equation}
+ Q_{\mu,\alpha}\{k\}
+ =e^{-\mu}\frac{\mu^k}{k!}
+   \left[1+\frac{\alpha}{2\mu^2}
+                    \bigl((k-\mu)^2-k\bigr)\right],
+ \qquad k\ge0.
+ \label{p1:close:charlier-masses}
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+Formula \eqref{p1:close:charlier-masses} follows by expressing
+the Poisson masses at $k-1$ and $k-2$ relative to the mass
+at $k$; negative-index masses are taken to be zero.
+The total mass is one because $\Delta^{*2}$ has total mass
+zero.
+
+If $\alpha<0$, the bracket is negative for all sufficiently
+large $k$, so positivity is impossible.
+For $\alpha\ge0$, minimize the quadratic
+$f(k)=(k-\mu)^2-k$ over nonnegative integers.
+Its successive difference is $f(k+1)-f(k)=2(k-\mu)$.
+If $\mu$ is not an integer, the minimum is attained at
+$k=\lceil\mu\rceil$; if $\mu$ is an integer, it is attained
+at both $k=\mu$ and $k=\mu+1$.  In either case its value is
+$-\mu-\theta(1-\theta)$.  Nonnegativity of the bracket
+is therefore exactly \eqref{p1:close:positivity-range}.
+\end{proof}
+
+In the theorem, $\alpha_N>0$ for large $N$ and $\alpha_N\to0$,
+while $\mu_N$ and $\lambda_N$ stay in a compact subinterval
+of $(0,\infty)$.  Both corrected references are therefore
+probabilities for all sufficiently large $N$.
+The norm estimate simultaneously controls all their masses;
+it is not only a pointwise assertion at each fixed count.
+
+Define, for $\lambda>0$,
+\begin{equation}
+ \mathcal C(\lambda)
+   =\frac14\|\Pi_\lambda*\Delta^{*2}\|_1
+   =\frac14\E\left|
+       1-\frac{2P_\lambda}{\lambda}
+          +\frac{P_\lambda(P_\lambda-1)}{\lambda^2}
+                   \right|,
+ \qquad P_\lambda\sim\operatorname{Pois}(\lambda).
+ \label{p1:close:charlier-constant}
+\end{equation}
+The coefficient is explicit even when $\lambda_N$ does not
+converge. A summable signed sequence of total mass zero has
+$\ell^1$ norm at least twice any positive coefficient. The mass
+$e^{-\lambda}$ at zero of $\Pi_\lambda*\Delta^{*2}$ and its
+convolution norm therefore give
+\begin{equation}
+ \frac{e^{-\lambda}}2\le\mathcal C(\lambda)\le1.
+ \label{p1:close:constant-bounds}
+\end{equation}

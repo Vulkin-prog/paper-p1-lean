@@ -1,0 +1,26 @@
+[
+  {
+    "name": "existing v1.7 167-statement inventory",
+    "accepted": true
+  },
+  {
+    "name": "numbered result concealed in shared input",
+    "rejected": true,
+    "reason": "Uninventoried numbered statement in shared TeX: /home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-v18-editorial/v18-source-guards-4u85yenj/sources/bibliography.tex"
+  },
+  {
+    "name": "unreachable numbered statements",
+    "rejected": true,
+    "reason": "Numbered result is not included in main: /home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-v18-editorial/v18-source-guards-4u85yenj/sources/main_sections/arithmetic.tex"
+  },
+  {
+    "name": "duplicate numbered-result label",
+    "rejected": true,
+    "reason": "Missing or duplicate numbered-result label: /home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-v18-editorial/v18-source-guards-4u85yenj/sources/main_sections/introduction.tex"
+  },
+  {
+    "name": "TeX input escapes source tree",
+    "rejected": true,
+    "reason": "TeX input escapes the source directory: /home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-v18-editorial/v18-source-guards-4u85yenj/sources/../outside.tex"
+  }
+]

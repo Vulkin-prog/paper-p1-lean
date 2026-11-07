@@ -1,0 +1,1025 @@
+\section{Reconstructing the law with every marginal retained}
+\label{p13:transfer:section}
+
+At a precision finer than $N^{-1}$, removing the exceptional windows is
+too expensive. We retain their exact marginals instead. This also keeps
+the repeated occurrence of a single Bernoulli variable inside the
+reference law, where it can be evaluated exactly. The remaining task is
+to control interactions between distinct windows and to sum the expansion
+without applying a fixed-order estimate at an order growing with $N$.
+
+We use the full admissible set $\mathcal I_N=\{x\in I_N:p_x>0\}$,
+the exact marginals $p_x=\E J_x$, the centered coefficients
+$c(I)=\E\prod_{x\in I}(J_x-p_x)$, and the relative nullity defined in
+Section~\ref{p13:exact:section}. Throughout this section we abbreviate
+$\rho_{\mathrm{rel}}(I)$ to $\rho(I)$; this convention uses the effective
+local ranks and does not add the local rank defects again. Put
+\[
+ A_2=\sum_{|e|=2}|c(e)|,\qquad
+ A_3=\sum_{\substack{|T|=3\\T\text{ connected}}}|c(T)|,
+ \qquad p_* =\max_{x\in\mathcal I_N}p_x.
+\]
+The marginal and pair estimates give
+$p_*\leq2p\ll_C N^{-1}$, $\mu=\sum_xp_x=O_C(1)$, and
+$A_2\ll_{C,\varepsilon}N^{-2/3+\varepsilon}$.
+The connection between the arithmetic estimates and the distribution is
+the following bound:
+\begin{equation}
+ \|\Law(Z_N)-Q_{\mu_N,\alpha_N}\|_1
+ \ll_{C,\varepsilon}N^\varepsilon A_3+N^{-4/3+\varepsilon}.
+ \label{p13:transfer:announced-bound}
+\end{equation}
+We prove it in Theorem~\ref{p13:transfer:reconstruction}. The two terms
+have different origins: the first records a genuinely connected
+three-window interaction, while the second permits two pair interactions.
+
+\paragraph{Three errors in the reconstruction.}
+The retained class \(\mathscr D_2\) consists of direct families and
+families \(e\cup U\) with a dependent pair \(e\) for which
+\(S_e\) and the spaces \((S_z)_{z\in U}\) form a direct sum.
+The dependent pair is then unique. Write
+\(T_{\mathscr D_2}=\sum_{I\in\mathscr D_2}q(I)\Delta^{*|I|}\).
+With the covariance-corrected Bernoulli measure \(B_2\) defined in
+\eqref{p13:transfer:B2}, the proof separates
+\[
+ \begin{aligned}
+ \|\Law(Z_N)-Q_{\mu_N,\alpha_N}\|_1
+ &\le \|\Law(Z_N)-T_{\mathscr D_2}\|_1
+       +\|T_{\mathscr D_2}-B_2\|_1\\
+ &\qquad +\|B_2-Q_{\mu_N,\alpha_N}\|_1.
+ \end{aligned}
+\]
+The first term is the stopping boundary, with the unexpanded suffix
+kept in a positive conditional measure. The second consists of the
+independent and pair deficits in
+\eqref{p13:transfer:retained-difference}; the covariance signs are
+retained before taking norms. In particular, an incompatible pair
+is allowed in \(\mathscr D_2\): its joint probability is zero,
+but its covariance is still present in \(B_2\).
+The last term costs \(O(N^{-5/3+\varepsilon})\) by
+Lemma~\ref{p13:transfer:conversion}; that rate concerns the full
+measure \(B_2\), including every covariance.
+Theorem~\ref{p13:transfer:finite} assembles the three estimates,
+using fixed orders and the separately uniform tail of
+Proposition~\ref{p13:transfer:uniform-tail} for the boundary.
+
+\subsection{The exact Bernoulli reference and its conversion}
+
+For any finite family of Bernoulli variables, without an independence
+assumption, define $b_i=\delta_0+p_i\Delta$ and
+\begin{equation}
+ B_2=\mathop{*}_{i\in\mathcal I_N}b_i
+       +\sum_{|e|=2}c(e)\Delta^{*2}*
+                     \mathop{*}_{i\notin e}b_i.
+ \label{p13:transfer:B2}
+\end{equation}
+This is a signed measure. Its first term is the law of a sum of
+independent Bernoulli variables with the exact individual marginals;
+its second term restores every covariance once.
+
+\begin{lemma}[Conversion with heterogeneous marginals]
+\label{p13:transfer:conversion}
+Let $s_j=\sum_i p_i^j$, $C_2=\sum_{|e|=2}c(e)$, and
+$\alpha=2C_2-s_2$. If $\mu\leq M$ and $p_*\leq1/4$, then
+\begin{equation}
+ \|B_2-Q_{\mu,\alpha}\|_1
+ \leq C_M\{s_3+s_2^2+A_2(s_2+p_*)\}.
+ \label{p13:transfer:conversion-bound}
+\end{equation}
+For the present model this is $O_{C,\varepsilon}(N^{-5/3+\varepsilon})$.
+\end{lemma}
+
+\begin{proof}
+In the convolution algebra of finite signed measures, the series for
+$\log_*(\delta_0+p_i\Delta)$ converges absolutely, since
+$\|p_i\Delta\|_1=2p_i\leq1/2$. Summing it gives
+\[
+ \log_*\left(\mathop{*}_ib_i\right)
+   =\mu\Delta-\frac{s_2}{2}\Delta^{*2}+E,
+ \qquad \|E\|_1\leq\sum_{j\geq3}\frac{2^js_j}{j}
+                   \leq\frac{16}{3}s_3.
+\]
+Exponentiation and $\exp_*(\mu\Delta)=\Pi_\mu$ imply
+\[
+ \left\|\mathop{*}_ib_i-\Pi_\mu
+              +\frac{s_2}{2}\Pi_\mu*\Delta^{*2}\right\|_1
+ \leq C_M(s_3+s_2^2).
+\]
+The product omitting a pair $e=\{i,j\}$ differs from
+$\Pi_{\mu-p_i-p_j}$ by $O_M(s_2)$ in norm, and
+\[
+ \|\Pi_{\mu-p_i-p_j}-\Pi_\mu\|_1\leq2(p_i+p_j).
+\]
+Replacing each such product in \eqref{p13:transfer:B2} by $\Pi_\mu$
+therefore costs $O_M(A_2(s_2+p_*))$. The exact identity
+$\Var Z-\E Z=2C_2-s_2$ proves the lemma.
+Here $s_2\leq p_*\mu=O_C(N^{-1})$ and
+$s_3\leq p_*^2\mu=O_C(N^{-2})$, giving the stated application.
+\end{proof}
+
+\subsection{Two dense targets above a prescribed space}
+
+The independent counts do not control a large rank gain: a family of
+nullity $d$ carries an additional factor $2^d$. We now isolate the
+conditional geometric estimate that pays for this factor. Only two
+centers remain free. Every prime circuit meeting at least three
+physical blocks must then meet one of the fixed sources, which makes
+its coefficient enumerable by a divisor bound.
+
+\begin{lemma}[Conditional dense pair estimate]
+\label{p13:transfer:dense-targets}
+Fix a number $s$ of source windows and an effective subspace $W$ of
+their value space. Suppose $S_y\cap W=S_z\cap W=0$, and write
+\[
+ d=\dim W+\dim S_y+\dim S_z-\dim(W+S_y+S_z).
+\]
+For every fixed $\eta,\varepsilon>0$ there exists a fixed $\theta>0$
+such that, uniformly in the sources and $W$,
+\begin{equation}
+ \sum_{\substack{y\ne z,\ y,z\text{ outside the sources}\\
+             d\geq\eta L\\
+             (y,z)\text{ nonaligned or }\dim(S_y\cap S_z)\leq\theta L}}
+         p_yp_z2^d\ll_{s,C,\eta,\varepsilon}N^{-1+\varepsilon}.
+ \label{p13:transfer:dense-target-bound}
+\end{equation}
+In particular the hypothesis on the pair is satisfied when $S_y,S_z$
+are direct. For a primitive family of fixed size $r\geq3$, with a
+prescribed collection of $r-2$ sources having at most $N^{a+\varepsilon}$
+possibilities, its dense homogeneous mass is at most
+\begin{equation}
+ \sum_{\rho\geq\eta L}\Bigl(\prod_{i\in I}p_i\Bigr)2^{\rho(I)}
+          \ll N^{-(r-1)+a+\varepsilon}.
+ \label{p13:transfer:restricted-dense}
+\end{equation}
+\end{lemma}
+
+The kernel defining $d$ projects injectively onto each target, so its
+coordinate labels force many binary components in each target separately.
+After regularization and removal of the weak aligned components, let
+$m_t$ count the remaining components meeting target $t$, and let $n_{1,t}$
+count those using exactly one of its $B=L+1$ coordinates. Then
+$n_{1,t}\geq2m_t-B$. Above $d=(1/2+\delta)L$, this forces a positive
+proportion of singleton occurrences in both targets, allowing the stronger
+Pell or degree-one curve count. The resulting bounds are
+$N^{1/2+\varepsilon'}$ target pairs in the lower stratum and
+$N^{\varepsilon'}$ in the upper stratum; multiplying by $p_yp_z2^d$
+gives $N^{-1+\varepsilon}$ after choosing the internal margins.
+Section~\ref{p14:comp:transfer-dense-targets} supplies the separate
+component counts, the coefficient enumeration from fixed sources, and
+the removal of small aligned curves, including effective local sections.
+
+
+\begin{lemma}[A dense compressed target]
+\label{p13:transfer:compressed-target}
+For fixed sources and a fixed channel of good pairs, the number of
+compressed centers $X$ for which
+$\dim(S(U_X)\cap W)\geq\eta L$ is $O_{s,C,\eta,\varepsilon}(N^\varepsilon)$.
+\end{lemma}
+
+\begin{proof}
+The compression has fixed width $O(B)$ and an injective even-selection
+map. In Proposition~\ref{p1:fixed:targets}, take $H$ larger than this
+width. Its regularization loses a fixed small fraction of $\eta L$.
+A prime above $H$ has at most one target occurrence, so all other
+occurrences in its circuit are source occurrences. The circuit products
+are divisors of fixed source values, and the fixed-source CRT and
+split-product steps in that proposition are unchanged. The proof uses
+the width bound and the target projection rank, not a target space of
+dimension exactly $L$. The finitely many channel dilations and
+$B^{O(1)}$ offset patterns are absorbed in the margins.
+\end{proof}
+
+\subsection{The exact weights of primitive families}
+
+We use a small-kernel count to make a dense primitive rare before applying
+the conditional estimate. For $Y\geq H$, put
+\[
+ K_Y(n)=\prod_{\substack{\ell>Y\\v_\ell(n)\ \mathrm{odd}}}\ell,\qquad
+ a_Y(n)=\prod_{\ell>Y}\ell^{\lfloor v_\ell(n)/2\rfloor}.
+\]
+Then $n=s_Y(n)a_Y(n)^2K_Y(n)$, where $s_Y(n)$ is $Y$-smooth.
+
+\begin{lemma}[Several small kernels in one window]
+\label{p13:transfer:small-kernels}
+Fix $A>2$, $0<b,u<1$, and an integer $m$ with $m(1-b)>1$.
+For $Y=(\log N)^A$, the number of windows containing $m$ distinct
+values with $K_Y(n)\leq N^b$ and $a_Y(n)^2\leq N^u$ is
+\begin{equation}
+ \ll N^{\max(1-1/A,(1+u)/2)+\varepsilon}.
+ \label{p13:transfer:small-kernels-bound}
+\end{equation}
+Also, the set $\mathcal X_q$ of windows containing distinct $n_1,n_2$
+with $K_H(n_1)K_H(n_2)\leq N^q$ has cardinality
+$O(N^{q+\varepsilon})$, for fixed $q\geq0$.
+\end{lemma}
+
+\noindent The complete proof is given in Section~\ref{p14:comp:transfer-small-kernels}.
+
+
+\begin{proposition}[Primitive mass at every fixed size]
+\label{p13:transfer:primitive}
+For every fixed integer $r\ge3$ and every $\varepsilon>0$,
+\begin{equation}
+ \sum_{\substack{I\subseteq\mathcal I_N,\ |I|=r\\I\ \mathrm{primitive}}}
+         \Bigl(\prod_{x\in I}p_x\Bigr)2^{\rho(I)}
+       \ll_{r,C,\varepsilon}N^{-r/2+\varepsilon}.
+ \label{p13:transfer:primitive-bound}
+\end{equation}
+For each fixed $\eta>0$, primitive families with $\rho(I)\ge\eta L$
+have $O_{r,C,\eta,\varepsilon}(N^\varepsilon)$ hosts and total
+weight $O_{r,C,\eta,\varepsilon}(N^{1-r+\varepsilon})$.
+These statements hold with exact heterogeneous marginals, including
+irregular windows. The thresholds are chosen after the fixed parameters
+and before $N,L$ and any deterministic subfamily being summed.
+\end{proposition}
+
+\begin{proof}
+We first explain the dense estimate. The fixed-arity anchored argument
+in Section~\ref{p14:comp:confinement} lifts effective relations to
+physical even selections, regularizes their coordinate labels with
+Lemma~\ref{p1:fixed:recovery}, and groups large primes by minimal
+supports through one designated window. With $r$ fixed, each anchor
+position belongs to at most a fixed number $D=D(r,\eta)$ of supports.
+Primitivity excludes two exact units between any pair of windows.
+Polynomial confinement therefore leaves only $o(B)$ groups larger
+than $N^\tau$ for any fixed $\tau>0$. Erasing their anchor positions
+costs $o(B)$ dimensions and leaves two values whose $B$-kernels have
+product at most $N^{2D\tau}$.
+
+Apply this construction separately at every window of the family.
+All $r$ centres lie in the same deterministic set
+$\mathcal X_{2D\tau}$, of size
+$O(N^{2D\tau+\varepsilon'})$ by
+Lemma~\ref{p13:half:small-kernels}.
+Choose $\tau,\varepsilon'>0$ after $r,\eta,\varepsilon$ so that
+$2rD\tau+r\varepsilon'<\varepsilon$.
+This proves the asserted host count. The companion gives the
+minimal-support construction, its incidence bound and the erasure
+argument in detail; it does not assume the final host estimate.
+
+The relation-space projection into each primitive block is injective,
+so $\rho(I)\le\min_{x\in I}d_x\le L$. Since $p_x\le2p\ll_C N^{-1}$
+and $2^L\ll_C N$, every weight is $O_{r,C}(N^{1-r})$.
+Multiplying by the dense host count proves the second mass estimate.
+For the complete sum, choose a new fixed $\xi>0$ within the final
+margin and split at $\rho(I)=\xi L$.
+Below that threshold, the independent-mass assertion of
+Corollary~\ref{p13:half:connected} gives
+$O(N^{-r/2+\xi+\varepsilon'})$.
+Above it use $O(N^{1-r+\varepsilon'})$, with density parameter $\xi$.
+As $r\ge3$, $1-r<-r/2$. Choose $\xi,\varepsilon'$ sufficiently small
+to obtain \eqref{p13:transfer:primitive-bound}.
+
+For a primitive family,
+$c(I)=q(I)-\prod_{x\in I}p_x$ and
+$q(I)$ is either zero or $2^{\rho(I)}\prod_{x\in I}p_x$.
+Thus $q(I)+|c(I)|$ is at most twice the same weight, so the
+corresponding actual joint and absolute centered sums have the same
+powers. All orders and density parameters in this argument are fixed;
+the all-cardinality estimates below still require their separate
+certificate budgets.
+\end{proof}
+
+There is also an exact finite expansion:
+\begin{equation}
+ \Law\left(\sum_iJ_i\right)
+   =\sum_{I\subseteq\mathcal I_N}c(I)\Delta^{*|I|}*
+                                \mathop{*}_{i\notin I}b_i.
+ \label{p13:transfer:exact-expansion}
+\end{equation}
+Indeed $\delta_{J_i}=b_i+(J_i-p_i)\Delta$; multiply these identities
+by convolution and take expectations. The terms of cardinality one
+vanish. The approximation $B_2$ retains exactly cardinalities zero and
+two. We will not bound the absolute value of every remaining term
+globally: the stopping identity retains a positive suffix and reduces
+the required rank range.
+
+\subsection{An independent extension estimate at all cardinalities}
+
+For a fixed number $s$ of source windows and an effective subspace $W$
+of their value space, let
+\[
+ E_W(u)=\sum_{\substack{U\subset\mathcal I_N\setminus\{\text{sources}\}\\
+                      W,(S_x)_{x\in U}\text{ not direct}}}
+                 u^{|U|}\prod_{x\in U}p_x,
+ \qquad u>0.
+\]
+The weights here are products of marginal probabilities. They are not
+conditional probabilities of dependent extensions.
+
+\begin{lemma}[Uniform independent deficit]
+\label{p13:transfer:independent-deficit}
+For fixed $s,u,C$ and every $\varepsilon>0$,
+\begin{equation}
+ E_W(u)\ll_{s,u,C,\varepsilon}N^{-1/2+\varepsilon},
+ \label{p13:transfer:independent-bound}
+\end{equation}
+uniformly in the sources and $W$. The sum includes all cardinalities.
+\end{lemma}
+
+\begin{proof}
+Set $Y=B^2$ and
+\[
+ a(n)=\prod_{\substack{\ell>Y\\\ell\mid n}}(1+\ell^{-1/2}),\qquad
+ A_x=\prod_{\substack{\ell>Y\\\ell\mid n\text{ for some }n\in V_x}}
+                                    (1+\ell^{-1/2}).
+\]
+H\"older applied to the $B$ positions in a window gives
+\[
+ \sum_{N\leq x<2N}A_x
+ \leq\prod_{i=-1}^{L-1}
+          \left(\sum_{N\leq x<2N}a(x+i)^B\right)^{1/B}.
+\]
+Write $a(n)^B=\sum_{d\mid n}h_B(d)$, where $h_B$ is multiplicative,
+supported on squarefree integers with primes exceeding $Y$, and
+$h_B(\ell)=(1+\ell^{-1/2})^B-1\ll B\ell^{-1/2}$.
+The coefficients are nonnegative, so
+\[
+ \sum_{n\leq3N}a(n)^B
+ \leq3N\prod_{Y<\ell\leq3N}\left(1+\frac{h_B(\ell)}\ell\right)
+ \leq3N\exp\left(O\left(B\sum_{m>Y}m^{-3/2}\right)\right)
+ \ll N.
+\]
+Thus $\sum_xA_x\ll N$, with a constant independent of $B$.
+The small-prime contribution satisfies
+\[
+ A_{\leq Y}=\prod_{\ell\leq Y}(1+\ell^{-1/2})
+       \leq\exp(O(B/\log B))=N^{o(1)}.
+\]
+Chebyshev's bound and partial summation suffice for this estimate.
+
+Let $P_0$ contain the small primes and the prime factors of the fixed
+sources. Their total logarithmic size is $O_s(B\log N)$.
+Using the same $Y=B^2$, we have
+\[
+ \sum_{\substack{\ell\in P_0\\\ell>Y}}\ell^{-1/2}
+ \leq\frac{\sum_{\ell\in P_0}\log\ell}{\sqrt Y\log Y}
+       =O_s(B/\log B).
+\]
+The primes up to $Y$ have the same bound by partial summation.
+Consequently $A_0=\prod_{\ell\in P_0}(1+\ell^{-1/2})
+=\exp(O_s(B/\log B))=N^{o(1)}$.
+If $P_k$ also includes the primes of an
+arbitrary list $x_1,\ldots,x_k$, then
+\[
+ \prod_{\ell\in P_k}(1+\ell^{-1/2})
+       \leq A_0A_{\leq Y}\prod_{j=1}^k A_{x_j}.
+\]
+The elementary proof of the exceptional-target estimate
+in Proposition~\ref{p1:arith:fixed-branching}, before restricting the
+number of sources, gives
+\begin{equation}
+ D(x_1,\ldots,x_k)
+ \ll B(s+k)+B\sqrt N\prod_{\ell\in P_k}(1+\ell^{-1/2}).
+ \label{p13:transfer:explicit-exception}
+\end{equation}
+Contacts account for the first term. Outside them, a selected target
+value whose odd prime factors all belong to $P_k$ has the form $a v^2$,
+with $a$ squarefree and supported on $P_k$. Summing
+$\sqrt{N/a}$ over these $a$ gives the second term, with $B$ possible
+placements. This upper bound also includes local defects.
+
+Put $w_x=up_x$, $w_*\ll N^{-1}$,
+$M_0=\sum_xw_x=O_{u,C}(1)$, and
+$M_1=\sum_xw_xA_x=O_{u,C}(1)$.
+Every non-direct extension of size $h$ has an exceptional exposure
+in each of its $h!$ orders. Sum over the possible first exceptional
+position, allowing repeated centers for an upper bound. The first term
+of \eqref{p13:transfer:explicit-exception} contributes at most
+\[
+ O(Bw_*)\sum_{h\geq1}\frac1{h!}
+              \sum_{i=1}^h(s+i-1)M_0^{h-1}=O(B/N).
+\]
+The second contributes at most
+\[
+ O(B\sqrt Nw_*A_0A_{\leq Y})
+ \sum_{h\geq1}\frac1{h!}\sum_{i=1}^h M_1^{i-1}M_0^{h-i}
+       =N^{-1/2+o(1)}.
+\]
+The double sum is bounded by $e^{\max(1,M_0,M_1)}$.
+The varying number of sources has therefore been averaged explicitly;
+no constant from a fixed-order theorem has been used at a growing order.
+\end{proof}
+
+\begin{lemma}[A fixed number of extensions of a pair]
+\label{p13:transfer:fixed-deficit}
+For every fixed $k\geq1$,
+\begin{equation}
+ \sum_{|e|=2}|c(e)|
+ \sum_{\substack{U\cap e=\varnothing,\ |U|=k\\
+                  S_e,(S_z)_{z\in U}\text{ not direct}}}
+                  \prod_{z\in U}p_z
+ \ll_{k,C,\varepsilon}N^{-3/2+\varepsilon},
+ \qquad S_e=\sum_{i\in e}S_i.
+ \label{p13:transfer:fixed-pair-bound}
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+If the new windows are not direct among themselves, choose a primitive
+subfamily. A primitive of fixed size $h\geq2$ has independent mass
+$O(N^{-h/2+\eta})$ by Theorem~\ref{p13:half:conditional} with no
+prescribed sources. The largest such cost is $N^{-1+\eta}$.
+After multiplication by $A_2$ and summation of the remaining independent
+windows this is $N^{-5/3+O(\eta)}$.
+
+Otherwise choose a minimal nonempty $A\subseteq U$ with
+$S_e\cap\sum_{a\in A}S_a\ne0$.
+If $|A|=1$, the total cost is the one-target deficit
+of Proposition~\ref{p13:activity:deficit}.
+If $h=|A|\geq2$, a relation meeting $S_e$ has a nonzero projection in
+each of the $h$ target spaces, by minimality. Conditional on $e$,
+Theorem~\ref{p13:half:conditional} gives $N^{h/2+\eta}$ possibilities.
+The product of the $h$ target marginals costs $O_h(N^{-h})$; summing
+the pair weights therefore gives $N^{-2/3-h/2+O(\eta)}$.
+The remaining $k-h$ independent weights have bounded sum. There are
+only finitely many choices of $h$ and roles because $k$ is fixed.
+\end{proof}
+
+\subsection{Uniform certificate tails and the deficit of all pairs}
+
+We record the part of the prime-certificate argument that is uniform in
+the number of blocks. A block may be an original window or one of a
+fixed finite collection of geometric compressions of width $O(B)$.
+Its center ranges over $O(N)$ values and its independent weight is
+bounded by a fixed multiple of $p$. A relation of full support selects
+a nonzero even vector in every block.
+
+\begin{lemma}[Independent full-support tails]
+\label{p13:transfer:independent-tail}
+For every fixed weight $v>0$ and $a<2$, there is a fixed integer $s$
+such that
+\begin{equation}
+ \sum_{\substack{|F|\geq s\\F\text{ has a full-support relation}}}
+                  \prod_{x\in F}(vp_x)
+ \ll N^{-a+\varepsilon}.
+ \label{p13:transfer:tail-independent}
+\end{equation}
+The same conclusion holds with one block of any of the fixed compressed
+types, weighted by $vp$. For this version the remaining factors are
+$vp_x$.
+\end{lemma}
+
+\begin{proof}
+Here are the parameter calculations in the certificate argument of
+Lemmas~\ref{p1:core:moderate}--\ref{p1:core:generator}.
+Choose $Y=(\log N)^{A_0}$ and a kernel threshold $T=N^b$, with
+$A_0>1$ and $0<b<1$. A block containing a value whose odd kernel above
+$Y$ is at most $T$ is marked. If
+$1/2<\sigma<1$ and $A_0(1-\sigma)<1$, the Rankin count gives
+$N^{1-\delta+o(1)}$ marked centers, where
+$\delta=(1-b)(1-\sigma)>0$.
+Every unmarked block in a full-support relation has two selected
+values of kernel exceeding $T$. Their kernels are coprime, since
+$Y$ exceeds the fixed block diameter.
+
+For a certificate in which every receiving modulus is at most $O(NB)$,
+the CRT and the exponential sum over cardinalities give independent
+mass
+\[
+ N^{-2b+4/A_0+o(1)}.
+\]
+Here $m=\lceil2\log(O(N))/\log Y\rceil$ and
+\[
+ \log(B^m(m+1)!)=(4/A_0+o(1))\log N.
+\]
+If no such certificate exists, each unmarked block has a saturated
+neighbor. Its directed degree is $N^{2/A_0+o(1)}$ in both directions,
+by Lemma~\ref{p1:core:degrees}.
+When $2/A_0+\delta<1$, the component generator of
+Lemma~\ref{p1:core:generator}, tilted by $N^{\delta/2}$, stays bounded.
+The mass at cardinality at least $s$ is consequently
+$N^{-s\delta/2+o(1)}$.
+Choose $A_0$ large and then $b$ close enough to one that
+$2b-4/A_0>a$; choose an allowed $\sigma$ and then $s$ with
+$s\delta/2>a$. All these choices are made before $N$.
+
+The proof uses the actual prime divisors of selected values and a fixed
+bound on the block width. Changing one block to a fixed geometric type
+changes only constant factors and $B^{O(1)}$ offset choices. Its two
+anchors, receiving congruences, and degree bounds obey the same estimates.
+Thus the same parameter choices prove the compressed assertion.
+\end{proof}
+
+For $e=\{x,y\}$ put $E_e(u)=E_{S_e}(u)$ and
+$D_2(u)=\sum_{|e|=2}|c(e)|E_e(u)$.
+
+\begin{proposition}[The pair deficit over all cardinalities]
+\label{p13:transfer:pair-deficit}
+For fixed $u>0$ and every $\varepsilon>0$,
+\begin{equation}
+ D_2(u)\ll_{u,C,\varepsilon}N^{-3/2+\varepsilon}.
+ \label{p13:transfer:pair-deficit-bound}
+\end{equation}
+In particular it is smaller than the $N^{-4/3}$ scale required below.
+\end{proposition}
+
+\begin{proof}
+First consider extensions with an internal primitive family of new
+windows. At each fixed size their independent mass is $O(N^{-1+\eta})$
+by the half-exponent count; at all larger sizes apply
+Lemma~\ref{p13:transfer:independent-tail} with any $a>1$.
+Summing free complements costs at most $e^{u\mu}$. Their contribution
+to $D_2$ is $O(A_2N^{-1+\eta})=O(N^{-5/3+2\eta})$.
+
+For a direct extension, choose its minimal subfamily $A$ crossing $S_e$.
+Use Lemma~\ref{p13:activity:pair-partition}. Weak and exceptional pairs
+have total activity $O(N^{-1+\eta})$ and $O(N^{-1+\eta})$,
+respectively; Lemma~\ref{p13:transfer:independent-deficit} bounds their
+complete contribution by $N^{-3/2+O(\eta)}$.
+There remain good pairs in a finite set of fixed channels. The cases
+$|A|<s$ are covered by Lemma~\ref{p13:transfer:fixed-deficit}.
+For $|A|\geq s$, compress the good pair geometrically. Minimality and
+directness of $A$ give a full-support relation on the compressed block
+and all blocks of $A$. The independent weight assigned to the
+compressed center in Lemma~\ref{p13:transfer:independent-tail} is $p$,
+whereas the required pair weight is at most $N^{-\kappa_b+o(1)}$,
+$\kappa_b=2-1/b\geq5/3$. The ratio is at most
+$N^{1-\kappa_b+o(1)}$. Choosing $a=1$ in that lemma bounds this tail
+by $N^{-\kappa_b+o(1)}\leq N^{-5/3+o(1)}$.
+Each good pair is represented by a fixed-width pattern and one center;
+the $B^{O(1)}$ patterns are absorbed in the margins. Free complements
+again cost a constant. Choose the finitely many internal margins after
+$\varepsilon$ to conclude.
+\end{proof}
+
+\subsection{Every fixed connected order reduces to triples}
+
+\begin{proposition}[Reduction of connected activities]
+\label{p13:transfer:fixed-activities}
+For every fixed $r\geq4$ and every $\varepsilon>0$,
+\begin{equation}
+ \sum_{\substack{|I|=r\\I\text{ connected}}}|c(I)|
+ \ll_{r,C,\varepsilon}N^\varepsilon A_3+N^{-4/3+\varepsilon}.
+ \label{p13:transfer:fixed-activity-bound}
+\end{equation}
+The incompatible part, for every fixed $r\geq4$, is
+$O_{r,C,\varepsilon}(N^{-3/2+\varepsilon})$.
+\end{proposition}
+
+\begin{proof}
+We first bound compatible families by their positive probabilities.
+Let $T_3^+$ denote the sum of $q(T)$ over connected compatible triples.
+For a primitive triple, $q(T)\leq2c(T)$. For a nonprimitive compatible
+triple,
+\[
+ q(T)=c(T)+\sum_{e\subset T,\ |e|=2}c(e)p_{T\setminus e}
+                         +\prod_{i\in T}p_i.
+\]
+The pair terms sum to the one-target deficit, and the independent term
+has mass $O(N^{-3/2+\eta})$ by the half-exponent count. Therefore
+\begin{equation}
+ T_3^+\leq2A_3+O(N^{-3/2+\eta}).
+ \label{p13:transfer:positive-triples}
+\end{equation}
+Families containing such a triple have mass $N^\eta T_3^+$ after
+positive propagation~\eqref{p13:exact:propagation}.
+Families containing a primitive of size at least four have mass
+$N^{-4/3+\eta}$, by Proposition~\ref{p13:transfer:primitive} and the
+same propagation. All seed sizes here are bounded by the fixed $r$.
+
+Consider a remaining compatible connected family. It contains a
+dependent pair $e$; otherwise a minimal dependent subfamily would be
+one of the seeds just treated. Put $U=S_e$ and choose a nonempty
+$A\subset I\setminus e$ minimal with
+$U\cap\sum_{a\in A}S_a\ne0$. A single target gives a connected triple,
+so $h=|A|\geq2$. If $A$ contains a proper primitive $P$, then
+$U\cap\sum_{i\in P}S_i=0$ by minimality. Thus
+$q(e\cup P)=q(e)q(P)$. Only $|P|=2$ remains, since larger primitives
+were already treated. Compatible dependent pairs satisfy $q(e)\leq2c(e)$,
+so the total seed mass is at most $4A_2^2$.
+Propagate it to $I$.
+
+Suppose next that $A$ is direct. The nullity $d$ of the compressed
+family $U,(S_a)_{a\in A}$ is at most $L$, and
+\[
+ q(e\cup A)=q(e)\Bigl(\prod_{a\in A}p_a\Bigr)2^d.
+\]
+For $d<\eta L$, the conditional half-exponent count of the $h$ targets
+gives a cost at most $A_2N^{-h/2+O(\eta)}$, hence
+$N^{-5/3+O(\eta)}$. For $d\geq\eta L$, fix $h-2$ members of $A$.
+The last two targets are each direct from the sum of $U$ and these
+fixed targets, and are direct from one another. Otherwise there would
+be an internal dependence in $A$ or an earlier crossing of $U$.
+Lemma~\ref{p13:transfer:dense-targets} gives conditional weighted cost
+$N^{-1+\eta}$. The independent weights of the $h-2$ additional sources
+sum to a constant; multiplication by the pair mass gives
+$N^{-5/3+O(\eta)}$ again. If $A$ is itself primitive of size at least
+three, it was already one of the excluded seeds.
+
+It remains that $A=f=\{y,z\}$ is a dependent pair. By minimality,
+$U\cap S_y=U\cap S_z=0$. Put
+\[
+ d_e=\dim(S_x\cap S_{x'}),\quad d_f=\dim(S_y\cap S_z),\quad
+ \delta=\dim(U\cap S_f),\qquad e=\{x,x'\}.
+\]
+If $\delta<\eta L$, then
+$q(e\cup f)=q(e)q(f)2^\delta$, and the total is
+$O(N^\eta A_2^2)$.
+For $\delta\geq\eta L$, choose $\theta$ from the dense-target lemma.
+If $f$ is nonaligned or $d_f\leq\theta L$, that lemma gives
+$N^{-5/3+O(\eta)}$ after summing $e$.
+If $f$ is a good pair of a fixed channel, fix $e$ and use
+Lemma~\ref{p13:transfer:compressed-target}; there are only
+$N^\eta$ choices for the compressed center of $f$. Linear algebra gives
+\begin{equation}
+ d_f+\delta\leq L,
+ \qquad q(e\cup f)\leq p_*q(e).
+ \label{p13:transfer:two-pair-rank}
+\end{equation}
+Indeed the projection of $U\cap(S_y+S_z)$ modulo $S_y$ is injective,
+and its image has dimension at most $\dim S_z-d_f$.
+This case also costs $N^{-5/3+O(\eta)}$.
+
+Every aligned pair with rank greater than $\theta L$ has bounded
+channel height, by Lemma~\ref{p1:arith:alignedrank}. Outside the good
+pairs at those finitely many heights, the normalization estimates in
+Theorem~\ref{p1:arith:pairs} and
+ Lemma~\ref{p1:arith:fixed-channel-mass} give at most
+$N^{1/2+\eta}$ exceptional aligned pairs. The endpoint pairs of height
+two and the pairs meeting an irregular window satisfy the same bound;
+height one has rank $o(L)$ when compatible.
+Call this exceptional collection $\mathcal B$.
+If only $f$ belongs to $\mathcal B$, exchange $e$ and $f$ and use one
+of the preceding cases. This exchange is valid because a target in
+$e$ intersecting $S_f$ would form a connected triple, already removed.
+If both belong to $\mathcal B$, there are at most $N^{1+2\eta}$ hosts.
+The symmetric forms of \eqref{p13:transfer:two-pair-rank} give
+\[
+ d_e+d_f+\delta\leq L+\min(d_e,d_f)\leq\tfrac32L+o(L),
+\]
+where the final inequality uses
+Theorems~\ref{p13:rig:nonaligned} and~\ref{p13:rig:aligned}.
+The joint probability is at most $N^{-5/2+o(1)}$, so this contribution
+is $N^{-3/2+O(\eta)}$. These cases exhaust the possible minimal sets
+$A$. Positive propagation adds the remaining windows, proving the
+compatible part of \eqref{p13:transfer:fixed-activity-bound}.
+
+For incompatible families we use induction on $r$, starting with the
+triple estimate. The exact identity is
+\begin{equation}
+ c(I)=-\prod_{i\in I}p_i-
+          \sum_{\substack{J\subsetneq I\\|J|\geq2}}
+                     c(J)\prod_{i\in I\setminus J}p_i.
+ \label{p13:transfer:incompatible-expansion}
+\end{equation}
+The independent term over connected $r$-tuples is
+$O(N^{-r/2+\eta})$. The pair terms cost $O(N^{-3/2+\eta})$ by
+Lemma~\ref{p13:transfer:fixed-deficit}.
+For a fixed proper $J$ of size at least three, connectedness of $I$
+requires a non-direct extension of its total space; its independent
+cost is $N^{-1/2+\eta}$ by
+Lemma~\ref{p13:transfer:independent-deficit}.
+Canonical factorization of $c(J)$ has no singleton factors.
+By induction a factor of size at least three costs
+$N^\eta A_3+N^{-4/3+\eta}$; a decomposition consisting only of pairs
+has at least two of them and costs $O(A_2^2)$.
+There are finitely many partitions at each fixed size. Multiplying by
+the independent extension cost proves
+\eqref{p13:transfer:fixed-activity-bound} at order $r$.
+Inserting the arithmetic bound $A_3\ll N^{-41/30+\eta}$ from
+Corollary~\ref{p13:third:activity} into the same induction gives the
+stated $N^{-3/2+\varepsilon}$ incompatible activity. No law
+approximation or lower bound has been used in this induction.
+\end{proof}
+
+\subsection{A uniform tail after 256 blocks}
+
+The preceding proposition has constants depending on its fixed order.
+We now use the certificate generator to handle all larger orders in
+the stopped expansion. The number $256$ is a sufficient fixed cutoff,
+not an optimal threshold.
+
+\begin{lemma}[Certificate budgets with several anchors]
+\label{p13:transfer:anchor-budgets}
+Choose an even integer $t\geq2$, $A_0>1$, $0<b<1$, and
+$1/2<\sigma<1$ with $A_0(1-\sigma)<1$. Put
+\[
+ \delta=(1-b)(1-\sigma),\qquad \theta=t/A_0.
+\]
+Suppose each unmarked block in a family has a relation selecting at
+least $t$ values in that block; the relation may depend on the block.
+Mark a block when some value has odd kernel above
+$Y=(\log N)^{A_0}$ at most $N^b$.
+Under any fixed independent weight per block, the moderate certificates
+have total mass
+\begin{equation}
+ N^{-tb+2t/A_0+o(1)}.
+ \label{p13:transfer:moderate-budget}
+\end{equation}
+If $\theta+\delta<1$, the saturated families of size at least $s$
+have total independent mass
+\begin{equation}
+ N^{-s\delta/2+o(1)}.
+ \label{p13:transfer:saturated-budget}
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+This is the calculation in Lemma~\ref{p13:transfer:independent-tail}
+with $t$ anchors. Their pairwise coprime kernels have product exceeding
+$N^{tb}$ and at most
+$m_t=\lceil t\log(O(N))/\log Y\rceil$ prime factors.
+The CRT bound and exponential cardinality sum have combinatorial cost
+$B^{m_t}(m_t+1)!=N^{2t/A_0+o(1)}$, proving
+\eqref{p13:transfer:moderate-budget}.
+The saturated graph has degree $N^{\theta+o(1)}$ in both directions;
+the number of marked vertices is $N^{1-\delta+o(1)}$.
+After tilting by $N^{\delta/2}$, the three terms of the component
+generator of Lemma~\ref{p1:core:generator} are
+\[
+ N^{-\delta/2+o(1)},\quad
+ N^{-1+\theta+\delta/2+o(1)},\quad
+ N^{-1+\theta+\delta+o(1)}.
+\]
+They remain bounded, and in fact tend to zero, under the stated
+condition. Removing the tilt proves
+\eqref{p13:transfer:saturated-budget}. The inequality $p_x\leq2p$
+is absorbed by doubling the fixed weight. The arguments concern true
+prime factors and permit contacts and irregular source windows.
+\end{proof}
+
+For a family $D$, let $\mathcal K(D)$ be the kernel of the sum map
+$\bigoplus_{x\in D}S_x\to\sum_{x\in D}S_x$, and set
+\[
+ d_x(D)=\dim\operatorname{proj}_{S_x}\mathcal K(D)
+       =\rho(D)-\rho(D\setminus\{x\}).
+\]
+Call $D$ a $10$-core when each $d_x(D)\geq9$.
+The effective projection admits a linear section in the formal even
+coordinates. Setting nine pivot coordinates to one gives a word of
+weight at least nine; even parity makes its weight at least ten.
+Thus the preceding budgets apply with $t=10$.
+For a compatible family Fourier expansion gives exactly
+\begin{equation}
+ \frac{c(D)}{q(D)}
+ =\P_{v\ \mathrm{uniform\ in}\ \mathcal K(D)}
+       (\operatorname{proj}_{S_x}v\ne0\text{ for every }x\in D)
+ \geq1-|D|2^{-9}.
+ \label{p13:transfer:core-ratio}
+\end{equation}
+In particular $q(D)\leq2c(D)$ for $|D|<256$.
+
+\begin{proposition}[Uniform connected and primitive tails]
+\label{p13:transfer:uniform-tail}
+For fixed $w>0$, every $\varepsilon>0$, and every $K_N=o(L)$,
+\begin{align}
+ \sum_{\substack{I\text{ connected},\ 256<|I|\leq K_N\\
+                         \rho^*(I)\leq2L}}
+              w^{|I|}|c(I)|&\ll N^{-4/3+\varepsilon},
+                    \label{p13:transfer:connected-tail}\\
+ \sum_{\substack{P\text{ primitive}\\|P|>256}}
+              w^{|P|}|c(P)|&\ll N^{-4/3+\varepsilon}.
+                    \label{p13:transfer:primitive-tail}
+\end{align}
+The second sum includes all cardinalities. Here
+$\rho^*(I)=\max\{\rho(A):A\subseteq I,\ q(A)>0\}$.
+\end{proposition}
+
+\begin{proof}
+For compatible $10$-cores of nullity at most $2L$, choose
+\[
+ t=10,\quad A_0=12,\quad b=31/60,\quad
+ \sigma=23/25,\quad\delta=29/750,\quad\theta=5/6.
+\]
+The condition $\theta+\delta<1$ is strict. Multiplying the independent
+budgets by $2^{2L}=O_C(N^2)$ gives, at sizes at least $256$,
+\begin{equation}
+ \sum_D w^{|D|}q(D)
+ \ll N^{-3/2+o(1)}+N^{-1106/375+o(1)}.
+ \label{p13:transfer:large-core}
+\end{equation}
+Indeed $2-10(31/60)+20/12=-3/2$ and
+$2-256(29/1500)=-1106/375$.
+
+If $\rho^*(I)\leq L/60$, the centered expansion gives
+\[
+ |c(I)|\leq2^{|I|}\Bigl(\prod_{x\in I}p_x\Bigr)2^{L/60}.
+\]
+A nonzero centered coefficient has a full-support Fourier relation,
+so two anchors are available in every block. Use
+\[
+ t=2,\quad A_0=12,\quad b=17/20,\quad
+ \sigma=23/25,\quad\delta=3/250,\quad\theta=1/6.
+\]
+Starting at cardinality $256$, the two costs after the rank factor are
+\begin{equation}
+ N^{-27/20+o(1)}+N^{-2279/1500+o(1)}.
+ \label{p13:transfer:low-rank-tail}
+\end{equation}
+The four costs in \eqref{p13:transfer:large-core} and
+\eqref{p13:transfer:low-rank-tail} leave the exact margins
+\[
+ \begin{aligned}
+ \frac32-\frac43&=\frac16,&
+ \frac{1106}{375}-\frac43&=\frac{202}{125},\\
+ \frac{27}{20}-\frac43&=\frac1{60},&
+ \frac{2279}{1500}-\frac43&=\frac{93}{500}.
+ \end{aligned}
+\]
+Thus the smallest margin is $1/60$. For the fixed certificate parameters
+and fixed weight $w$, every displayed $o(1)$ loss is less than $1/120$
+for sufficiently large $N$; no certificate parameter is allowed to vary
+with $N$.
+
+For the remaining connected $I$, choose deterministically a compatible
+$A\subseteq I$ attaining $\rho^*(I)>L/60$. Delete blocks of projection
+dimension at most eight until a $10$-core $D$ remains. Since
+$8K_N=o(L)$, its nullity exceeds $L/120$ for large $N$, so $|D|\geq2$.
+With $r=|I|$ and $h=|D|$, the centered expansion and maximality of
+$\rho^*(I)$ imply
+\begin{equation}
+ |c(I)|\leq2^r2^{8(r-h)}
+               \Bigl(\prod_{x\in I\setminus D}p_x\Bigr)q(D).
+ \label{p13:transfer:peeling}
+\end{equation}
+The elements outside $A$ are already in this product; there is no
+enumeration of deletion orders. All fixed powers of two can be absorbed
+in the independent weight of the complements.
+
+If $h\geq256$, sum the complements freely and apply
+\eqref{p13:transfer:large-core}. If $3\leq h<256$, then
+$q(D)\leq2c(D)$ by \eqref{p13:transfer:core-ratio}.
+Proposition~\ref{p13:transfer:fixed-activities}, the arithmetic triple
+bound, and canonical factorization show that the sum of $|c(D)|$ at
+each such fixed size is $O(N^{-1+\eta})$. Because $D$ is proper in
+the connected $I$, its complement is a non-direct independent extension.
+Lemma~\ref{p13:transfer:independent-deficit} adds $N^{-1/2+\eta}$.
+If $h=2$, then $D=e$ is a compatible dependent pair and $q(e)\leq2c(e)$;
+the complement is exactly the pair deficit of
+Proposition~\ref{p13:transfer:pair-deficit}. These bounds prove
+\eqref{p13:transfer:connected-tail}.
+
+A primitive family has nullity at most $L$. If it is incompatible,
+$|c(P)|=\prod_Pp_x$ and the independent two-anchor budgets suffice.
+If it is compatible with nullity at most $L/60$, use
+\eqref{p13:transfer:low-rank-tail}. Otherwise each projection has
+dimension $\rho(P)>L/60$, so it is itself a $10$-core for large $N$.
+Apply \eqref{p13:transfer:large-core} directly, without an upper
+cardinality cutoff. This proves \eqref{p13:transfer:primitive-tail}.
+\end{proof}
+
+\subsection{The stopped expansion and its finite input}
+
+Let $\mathscr D_2$ consist of the direct families and the families
+$e\cup U$ for which $e$ is any dependent pair and $S_e,(S_z)_{z\in U}$
+are direct. Affine incompatibility of $e$ is allowed. This class is
+hereditary; every non-direct member contains exactly one dependent pair.
+For a fixed ordering of $\mathcal I_N$, its boundary contains the first
+excluded prefixes. A boundary family has relative nullity at most $2L$:
+its retained predecessor has at most $L$, and adding one block adds
+at most $L$. In particular every subfamily of a boundary family has
+compatible nullity at most $2L$.
+
+\begin{theorem}[Finite transfer to the complete law]
+\label{p13:transfer:finite}
+Fix $1<\beta\leq4/3$. Suppose that, for each of the fixed integers
+$3\leq r\leq256$ and every $\varepsilon>0$,
+\begin{equation}
+ \sum_{\substack{|I|=r,\ I\text{ connected}\\\rho^*(I)\leq2L}}
+                   |c(I)|\ll_{r,C,\varepsilon}N^{-\beta+\varepsilon}.
+ \label{p13:transfer:finite-hypothesis}
+\end{equation}
+Then
+\begin{equation}
+ \|\Law(Z_N)-Q_{\mu_N,\alpha_N}\|_1
+                  \ll_{C,\varepsilon}N^{-\beta+\varepsilon}.
+ \label{p13:transfer:finite-conclusion}
+\end{equation}
+Only these $254$ fixed orders are assumed in
+\eqref{p13:transfer:finite-hypothesis}; the larger orders are supplied
+by Proposition~\ref{p13:transfer:uniform-tail}.
+\end{theorem}
+
+\begin{proof}
+Fix a weight $w>0$. The hypothesis at sizes at most $256$ and
+\eqref{p13:transfer:connected-tail} give, for $K_N=o(L)$,
+\begin{equation}
+ T:=\sum_{\substack{I\text{ connected},\ 3\leq|I|\leq K_N\\
+                             \rho^*(I)\leq2L}}
+                  w^{|I|}|c(I)|\ll N^{-\beta+\eta}.
+ \label{p13:transfer:connected-range}
+\end{equation}
+The finitely many factors $w^r$ at $r\leq256$ only change constants.
+For a primitive $P$, $\rho(P)\leq L$ and
+$\prod_{x\in P}p_x\leq|c(P)|$, because
+$c(P)=q(P)-\prod_Pp_x$ and $q(P)$ is either zero or at least twice
+the independent product. Together with
+\eqref{p13:transfer:primitive-tail}, this gives
+\begin{equation}
+ \sum_{\substack{P\text{ primitive}\\|P|\geq3}}
+                     w^{|P|}|c(P)|\ll N^{-\beta+\eta}
+ \label{p13:transfer:all-primitives}
+\end{equation}
+over all cardinalities.
+
+Put $T_{\mathscr D_2}=\sum_{I\in\mathscr D_2}q(I)\Delta^{*|I|}$.
+The finite expansion of $B_2$ yields the identity
+\begin{equation}
+ T_{\mathscr D_2}-B_2
+ =-\sum_{I\notin\mathscr D_2}\Delta^{*|I|}
+       \left[\prod_{i\in I}p_i+
+          \sum_{\substack{e\subset I\\|e|=2}}
+                   c(e)\prod_{i\in I\setminus e}p_i\right].
+ \label{p13:transfer:retained-difference}
+\end{equation}
+For the independent term, choose a primitive subfamily of a discarded
+family. If it has at least three members, use
+\eqref{p13:transfer:all-primitives}; if it is a pair $e$, the complement
+must be a non-direct extension of $S_e$, and
+$\prod_{i\in e}p_i\leq|c(e)|$.
+The pair terms in \eqref{p13:transfer:retained-difference} are bounded
+by the same all-cardinality pair deficit. Free complements have total
+weight at most $e^{2\mu}$. Consequently
+\begin{equation}
+ \|T_{\mathscr D_2}-B_2\|_1\ll N^{-\beta+\eta}.
+ \label{p13:transfer:retained-error}
+\end{equation}
+
+Take $K_N=(5+o(1))\log N/\log\log N$.
+The exact stopping identity from Section~\ref{p1:stop:section} gives
+\[
+ \|\Law(Z_N)-T_{\mathscr D_2}\|_1
+       \leq\sum_{I\in\partial\mathscr D_2}2^{|I|}q(I).
+\]
+For $|I|\leq K_N$, expand $q(I)$ in centered coefficients. The terms
+of size zero and two are the independent and pair deficits already
+bounded. Every remaining nonzero centered term has either a connected
+component of size at least three or at least two pair components.
+Canonical factorization, \eqref{p13:transfer:connected-range}, and
+the free independent complements bound their sum by a constant times
+\[
+ e^{4A_2+T}-1-4A_2=O(T+A_2^2).
+\]
+Here $T=o(1)$ and $A_2^2\ll N^{-4/3+\eta}$; the centered coefficient
+of a singleton is zero. This is where the linear contribution of one
+pair is subtracted before taking an absolute bound.
+
+On the larger boundary, $q(I)\leq2^{2L}\prod_Ip_x$, so
+\[
+ \sum_{\substack{I\in\partial\mathscr D_2\\|I|>K_N}}2^{|I|}q(I)
+ \ll_C N^2\sum_{r>K_N}\frac{(2\mu)^r}{r!}=N^{-3+o(1)}.
+\]
+Combining these bounds, \eqref{p13:transfer:retained-error}, and
+Lemma~\ref{p13:transfer:conversion} proves
+\eqref{p13:transfer:finite-conclusion}. All internal margins are chosen
+after the final $\varepsilon$; none is made to vary with $N$.
+\end{proof}
+
+\begin{theorem}[Reconstruction from triple activity]
+\label{p13:transfer:reconstruction}
+With the exact mean and second factorial cumulant,
+\begin{equation}
+ \|\Law(Z_N)-Q_{\mu_N,\alpha_N}\|_1
+       \ll_{C,\varepsilon}N^\varepsilon A_3+N^{-4/3+\varepsilon}.
+ \label{p13:transfer:reconstruction-bound}
+\end{equation}
+In particular the arithmetic triple estimate gives the upper bound
+$O_{C,\varepsilon}(N^{-4/3+\varepsilon})$ for the full model.
+\end{theorem}
+
+\begin{proof}
+In the proof of Theorem~\ref{p13:transfer:finite}, replace the finite
+activity input by Proposition~\ref{p13:transfer:fixed-activities}.
+At sizes $3,\ldots,256$ its total cost is
+$N^{\varepsilon'}A_3+N^{-4/3+\varepsilon'}$; the larger sizes have the
+second cost by Proposition~\ref{p13:transfer:uniform-tail}.
+The primitive deficits, pair deficits, and boundary expansion obey
+the same bounds. In the component generator,
+\[
+ T\ll N^{\varepsilon'}A_3+N^{-4/3+\varepsilon'},\qquad
+ e^{4A_2+T}-1-4A_2=O(T+A_2^2).
+\]
+The established arithmetic estimate makes $T=o(1)$, so this passage
+loses no new fixed power of $N$. The large boundary costs $N^{-3+o(1)}$
+and conversion costs $N^{-5/3+\varepsilon'}$.
+To make the choices explicit, denote the requested final margin by
+$\varepsilon_{\mathrm{out}}=\varepsilon$ and choose
+$0<\tau<\min(\varepsilon_{\mathrm{out}}/4,1/960)$.
+Invoke each completed fixed-order estimate with sufficiently small fixed
+input margins that its total displayed loss is at most $\tau$.
+For example, use the pair estimate with loss $\tau/2$ before squaring
+$A_2$. Only the fixed orders $3,\ldots,256$ occur in this choice;
+the larger orders use the uniform certificate bounds, not constants
+from a fixed-order theorem. With $\varepsilon'=\tau$ the preceding
+argument proves \eqref{p13:transfer:reconstruction-bound}, since
+$\tau<\varepsilon_{\mathrm{out}}$.
+
+Finally invoke Corollary~\ref{p13:third:activity} with loss $\tau$.
+The triple term is then at most $N^{-41/30+2\tau}$, and
+\[
+ \frac{41}{30}-2\tau-\frac43=\frac1{30}-2\tau>0.
+\]
+The conversion and large-boundary exponents exceed $4/3$ by $1/3$
+and $5/3$, respectively. These comparisons give the announced upper
+bound. All accuracy choices, source counts and fixed activity orders used here
+are fixed before $N$; the growing cardinality cutoff $K_N$ is controlled
+separately.
+\end{proof}
+
+The method retains three separate forms of control. Exact Bernoulli
+marginals handle repetitions of one event; arithmetic counts bound
+interactions among a fixed number of distinct windows; the certificate
+generator and the positive stopped suffix sum the growing part of the
+expansion. Neither bounded fixed moments alone nor a finite list of
+cumulants replaces the third step.

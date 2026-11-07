@@ -2,8 +2,10 @@
 
 Checkpoint P1-MATH-0998 adds an exact public interface for the two individual
 anchor-kernel bounds used in the separate version 1.8 revision. The existing
-167-result baseline below is preserved; the new draft's correspondence is
-being checked separately. Full replay and visual validation are pending.
+167-result baseline below is preserved; the new draft has its own
+167-result ledger and seven explicit changed-statement comparisons. The full replay passed 18,617 build jobs, 19,957 axiom checks and
+19,880 references, with all three actual exits zero. Version 1.8 visual
+validation passed for 169 rendered/contact-sheet pages and 27 detail pages.
 
 Baseline: P1 V1.6, 31 October 2026. This table covers both associated documents.
 The JSON ledger records source hashes, source lines, declarations, external inputs

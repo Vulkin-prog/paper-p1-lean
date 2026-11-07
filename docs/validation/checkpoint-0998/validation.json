@@ -1,0 +1,41 @@
+{
+  "checkpoint": "P1-MATH-0998",
+  "source_commit": "c07b036aed5a9310d4f79f816969e45a20628138",
+  "status": "passed",
+  "full_build_jobs": 18617,
+  "audited_theorems": 19957,
+  "substantive_theorems": 19529,
+  "preserved_component_solution_theorems": 214,
+  "consolidated_solution_theorems": 214,
+  "distinct_checked_references": 19880,
+  "actual_process_exit_codes": {
+    "build": 0,
+    "audit": 0,
+    "references": 0
+  },
+  "toolchain": "leanprover/lean4:v4.36.0-rc2",
+  "mathlib_commit": "9d581dfff2e41de989072ea63abf3daf69311520",
+  "permitted_kernel_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "logs": [
+    {
+      "kind": "build",
+      "path": "docs/validation/checkpoint-0998/build.log.gz",
+      "sha256_gzip": "d78d81f34675675942a064a301195cf2674c194a42c441d08e6fb031a5de4976"
+    },
+    {
+      "kind": "audit",
+      "path": "docs/validation/checkpoint-0998/audit.log.gz",
+      "sha256_gzip": "9a8c8955902b2f30b3957aa230d6b046adfa0185afc3f71eec44ab8843d16ea2"
+    },
+    {
+      "kind": "references",
+      "path": "docs/validation/checkpoint-0998/references.log.gz",
+      "sha256_gzip": "b7bbb0c97bdaacdfcb9a5c7b2ea739f3de6c7d18ec488a89dab9143cd8bcd5ec"
+    }
+  ],
+  "scope": "Expose the two separate large-odd-kernel bounds for distinct actual natural values at a physical anchor, with the same fixed-arity, active-nonalignment, recovery-exclusion and injectivity assumptions. This extracts an existing internal proof step. All prior numbered-result proofs and all six registration interfaces are preserved. The v1.8 manuscript and visual review are recorded separately."
+}

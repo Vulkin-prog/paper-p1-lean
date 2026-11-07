@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "proof_source_commit": "c07b036aed5a9310d4f79f816969e45a20628138",
+  "frozen_editorial_delivery_preserved": true,
+  "source_correspondence": "docs/manuscript-v1.8-revision.json",
+  "validation_record": "docs/manuscript-v1.8-validation.json",
+  "individual_anchored_witness": "PaperP1.DenseAnchoredIndividualWitness.uniform_individual_witness",
+  "note": "The parent added the exact uniform individual-bound interface, verified seven changed numbered blocks and 18 auxiliary claims against compiled types, replayed the full proof project and inspected the rendered PDFs. No scientific source edits after the frozen editorial delivery.",
+  "palomar_actions": false
+}

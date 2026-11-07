@@ -1,0 +1,3 @@
+# TeX control spaces at line ends and authored paragraph endings are intentional.
+# Preserve the exact manuscript bytes bound by the source/proof correspondence.
+manuscripts/paper-p1/v1.8/sources/**/*.tex whitespace=-blank-at-eol,-blank-at-eof

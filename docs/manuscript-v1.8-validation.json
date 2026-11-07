@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "version": "P1 V1.8 working draft, 7 November 2026",
+  "source_manifest": "manuscripts/paper-p1/v1.8/sources/MANIFEST_SHA256.txt",
+  "proof_validation": "docs/validation/checkpoint-0998/validation.json",
+  "source_correspondence": "docs/manuscript-v1.8-revision.json",
+  "revised_numbered_results": 167,
+  "numbered_results_proved": 167,
+  "changed_numbered_statements_from_v17": 7,
+  "unnumbered_scientific_claims_compared": 18,
+  "tex": {
+    "actual_build_exit_code": 0,
+    "rounds": 3,
+    "stable_cross_references": true,
+    "shell_escape": false,
+    "all_167_typeset_numbers_preserved": true,
+    "overfull_boxes": 0,
+    "undefined_references": 0,
+    "missing_characters": 0
+  },
+  "pdfs": [
+    {
+      "document": "main",
+      "path": "manuscripts/paper-p1/v1.8/pdf/P1_V1_8_Main_Article_2026-11-07_EN.pdf",
+      "pages": 65,
+      "sha256": "deef2bbeacb712b6cba7843aee3220588d12db932955a84254b11fd201c1bc21"
+    },
+    {
+      "document": "companion",
+      "path": "manuscripts/paper-p1/v1.8/pdf/P1_V1_8_Technical_Companion_2026-11-07_EN.pdf",
+      "pages": 104,
+      "sha256": "c9c38697b544fbb7d6ad49c65fce10448c0651df19c89af97ee6ebe4071363e9"
+    }
+  ],
+  "visual_review": {
+    "status": "passed",
+    "rendered_pages": 169,
+    "contact_sheets_inspected": 12,
+    "contact_pages_inspected": 169,
+    "detail_dpi": 110,
+    "detail_pages_inspected": {
+      "main": [
+        15,
+        24,
+        25,
+        32,
+        41,
+        42,
+        51,
+        60,
+        61,
+        62,
+        63,
+        64
+      ],
+      "companion": [
+        38,
+        39,
+        40,
+        41,
+        54,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        86,
+        87,
+        101,
+        102
+      ]
+    },
+    "detail_pages_inspected_count": 27,
+    "comparison_record": "docs/validation/manuscript-v1.8/pdf-comparison.json",
+    "scope": "All-page contact-sheet layout review plus 27 complete selected mathematical/editorial pages at higher resolution; not a claim that every changed page was read at detail resolution."
+  },
+  "compiled_type_extraction": {
+    "actual_exit_code": 0,
+    "compiled_types": 528,
+    "propositions_audited": 485,
+    "permitted_axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "all_propositions_standard_axioms_only": true,
+    "inventory_sha256": "74231413a8324ee7cc29a4e1b3548ca0b73d97019fe71ca2667e311af3cf4dc4",
+    "diagnostic_module_sha256": "43d8a9072a6b589e63465977b7a3068637c712b23711fb38b857acf374534fd5",
+    "compiled_types_sha256": "3320385e4f340b28fc10a8e9253e45c8aba8246034f779b0d9608d243d8c3aeb",
+    "log_sha256": "c84f0beb7071cb9aaff0ef3dbdfe88662575b663ac7b2c1aa8989b9063bc4ea7"
+  },
+  "versions_preserved": [
+    "v1.6",
+    "v1.7"
+  ],
+  "necessary_original_statement_corrections": 2,
+  "new_optional_strengthenings_or_clarifications": 7,
+  "palomar_registration": null,
+  "palomar_submission_status": "on_hold_at_user_request"
+}

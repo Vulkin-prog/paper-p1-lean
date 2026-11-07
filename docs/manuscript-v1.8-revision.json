@@ -1,0 +1,534 @@
+{
+  "schema_version": 1,
+  "version": "P1 V1.8 working draft",
+  "baseline_commit": "2553ce56f7cc6bdc10194801c3d926b72b587dd1",
+  "proof_source_commit": "c07b036aed5a9310d4f79f816969e45a20628138",
+  "numbered_statement_changes": [
+    {
+      "label": "p1:arith:hosts",
+      "number": "3.2",
+      "document": "main",
+      "classification": "renforcement_facultatif_v1.8",
+      "previous_sha256": "65da7e8acfacc0a5bc2c351934c0e44e09d3fc6068a8862c300b6eeaeee8c5fe",
+      "sha256": "28ce5499b11b99fd7d36ad901b6aef7ac6f1f25b6272120d207cdf268878065a",
+      "reason": "pairLoss vaut exactement 2L−dim(S_x+S_y), donc le ρ arithmétique brut du §3, avec défauts locaux inclus. separatedHosts ajoute x+L<y ou y+L<x, équivalent à |x−y|>L. separatedNonalignedPairs garde le même intervalle I_N et le même non-alignement de rayon 1. uniform_weighted_hosts s’applique même à tout sous-ensemble de paires dyadiques non alignées ; aucune hypothèse de régularité ou compatibilité n’est ajoutée.",
+      "existing_change_ids": [
+        "P1-MATH-0068",
+        "P1-MATH-0113",
+        "P1-MATH-0409"
+      ],
+      "proof_endpoints": [
+        "PaperP1.NonalignedSourceResidual.uniform_source_bounds"
+      ],
+      "proof_type_sha256": {
+        "PaperP1.NonalignedSourceResidual.uniform_source_bounds": "f12c0fc323e3617def330cb8be4ab07a1ee8aea272273a2c09ee11e93854521f"
+      },
+      "semantic_alignment": {
+        "status": "passed",
+        "reviewer": "Parent source/type comparison after separate editorial drafting",
+        "objects": "Ordered separated dyadic hosts with positive full pairLoss, and the radius-one nonaligned weighted sum. Raw nullity retains local deficiencies and affine incompatibility.",
+        "hypotheses": "C,ε fixés avant un seuil ; vrais centres deI_N, paires ordonnées séparées |x−y|>L et non-alignement de rayon1 ; ρ brut=2L−dim(Sx+Sy) avec défauts locaux.",
+        "quantifiers": "C and epsilon precede one cutoff; N,L and all ordered deterministic pair subfamilies follow it."
+      }
+    },
+    {
+      "label": "p1:core:generator",
+      "number": "7.4",
+      "document": "main",
+      "classification": "renforcement_facultatif_v1.8",
+      "previous_sha256": "156f5d4177e2fa6660c40fe7ba33639bf2880208535ce72dc4cfe7494cd9eb61",
+      "sha256": "4a6c263023a581df3d290aad1570567deea84c00e8b95e3b4cd3feee2364a051",
+      "reason": "L’ensemble admissible est exactement celui dont les sommets isolés induits sont marqués. Il se partitionne en singletons marqués et étoiles non triviales. En oubliant les contraintes entre ces blocs et en sommant leurs poids, on obtient directement l’exponentielle. Le lemme ne dépend d’aucune arithmétique du modèle.",
+      "existing_change_ids": [
+        "P1-MATH-0022"
+      ],
+      "proof_endpoints": [
+        "PaperP1.MarkedGraphGenerator.polynomial_star_bound",
+        "PaperP1.GraphStarWeights.heterogeneous_generating_bound"
+      ],
+      "proof_type_sha256": {
+        "PaperP1.MarkedGraphGenerator.polynomial_star_bound": "06210d2996207c62240f03c9871eec453afb95cec833285b3ec6c6d862f4f7d2",
+        "PaperP1.GraphStarWeights.heterogeneous_generating_bound": "3bbdef4e8a1144a6fec4996c47b81fddbeaf354c0376d3bd735b3324d1370a22"
+      },
+      "semantic_alignment": {
+        "status": "passed",
+        "reviewer": "Parent source/type comparison after separate editorial drafting",
+        "objects": "Finite simple graph and vertex sets whose induced isolates are all marked. Both the homogeneous sum and every nonnegative vertex-weight sum.",
+        "hypotheses": "Graphe simple fini ; famille exacte des parties dont tous les sommets isolés induits sont marqués ; z≥0 ou poids tous non négatifs ; pas de petite activité.",
+        "quantifiers": "Finite nonasymptotic bound for every graph, marked subset and all nonnegative vertex weights; no small-activity premise."
+      }
+    },
+    {
+      "label": "p13:rig:sublinear-grid",
+      "number": "13.5",
+      "document": "main",
+      "classification": "renforcement_facultatif_v1.8",
+      "previous_sha256": "ef4c221ed67d6eba27c4ceeeb16591c98447e85f2c53b4e4c6e0a2e6441f46fa",
+      "sha256": "5da6f8accb52e114dc5968320af9b1953bb608c2e6a4fd364b9c22be335c5a14",
+      "reason": "Pour H≥1 et 2≤D≤M, le profil D²H^(1/D) est au plus 4√H+e(M²+(logH)²), sans condition M≥logH. L’excédent logarithmique s’absorbe dans √B. source_uniform_bound est uniforme avant M et avant le corps et le polynôme ; le type final utilise un polynôme irréductible sur un corps de caractéristique zéro plongé dans C.",
+      "existing_change_ids": [
+        "P1-MATH-0079"
+      ],
+      "proof_endpoints": [
+        "PaperP1.QuadraticGrowingDegreePlaneCount.article_13_5"
+      ],
+      "proof_type_sha256": {
+        "PaperP1.QuadraticGrowingDegreePlaneCount.article_13_5": "a9841feb8f207cca3f02b4021f82f840d3afe9f2087220d9268a3122342850ff"
+      },
+      "semantic_alignment": {
+        "status": "passed",
+        "reviewer": "Parent source/type comparison after separate editorial drafting",
+        "objects": "Integer grid points on integral plane curves over a characteristic-zero field embedded in C. No geometric integrality requirement. The compiled exponent 17 supplies an absolute logarithmic kappa.",
+        "hypotheses": "a∈[0,1/2), c0>0 et fonction plafond fixés ; ∀δ>0, plafond≤B^(a+δ) éventuellement ; seuil avant les courbes, degrés et coefficients.",
+        "quantifiers": "Fixed c0, a in [0,1/2) and upper-power-envelope function precede the cutoff; curve coefficients and degree follow it. No lower envelope growth."
+      }
+    },
+    {
+      "label": "p13:transfer:primitive",
+      "number": "15.5",
+      "document": "main",
+      "classification": "renforcement_facultatif_v1.8",
+      "previous_sha256": "f34d841b32f24438f362f3a452f5ab40a3261869bf738d6d5eea3c1ff5c53817",
+      "sha256": "f11b347aa7b6a48d544589bd9db7055efa65a56f2211b2f54485bf8e79e30dac",
+      "reason": "Primitive signifie exactement nullité relative positive et nullité nulle de toute sous-famille propre. runRelativeNullity est cette nullité effective. weight est exactement (produit des vraies marginales p_x)·2^ρ_rel, donc le poids de 15.5, où le texte abrège ρ_rel en ρ. Le théorème Lean porte sur toutes les parties primitives de I_N et leurs sous-familles déterministes ; la restriction à l’ensemble admissible imprimé est immédiate. Il ne requiert ni régularité, ni compatibilité affine, ni séparation supplémentaire. Le cas nul des marginales rend certains poids nuls ; il ne restreint pas le dénombrement des hôtes denses.",
+      "existing_change_ids": [
+        "P1-MATH-0073",
+        "P1-MATH-0427"
+      ],
+      "proof_endpoints": [
+        "PaperP1.SharpPrimitiveMass.uniform_rank_mass",
+        "PaperP1.DensePrimitiveRankMass.uniform_rank_mass",
+        "PaperP1.DensePrimitiveHosts.uniform_hosts"
+      ],
+      "proof_type_sha256": {
+        "PaperP1.SharpPrimitiveMass.uniform_rank_mass": "34a1bda0d842cab960ad5f455cb98a2b9e7de50bdb16c44e57f1cf7d8f5c8b86",
+        "PaperP1.DensePrimitiveRankMass.uniform_rank_mass": "2d6046dece65fa60d070648d865aa410e5680a2383eb1f2b2d13672e843c4701",
+        "PaperP1.DensePrimitiveHosts.uniform_hosts": "3fe09067d080aa3ec345c8b7e97223acaaf01d7cc7d227e747531194dc91f5ee"
+      },
+      "semantic_alignment": {
+        "status": "passed",
+        "reviewer": "Parent source/type comparison after separate editorial drafting",
+        "objects": "Unordered primitive true-window families with exact heterogeneous weights product(p_x)*2^rho_rel. The printed active-site population is a subset of the compiled full dyadic population.",
+        "hypotheses": "r naturel fixé≥3 ; η>0 fixé pour le secteur dense ; C,ε fixés avant N0 ; poids exacts∏p_x2^ρ_rel, toutes parties primitives de l’ensemble admissible. Aucune régularité, compatibilité ou séparation ajoutée ; aucune uniformité en r(N) ou η(N).",
+        "quantifiers": "r>=3 is fixed; eta>0 is fixed only for the dense sector. C,epsilon and these parameters precede the cutoff, then N,L and every deterministic family. No r(N) or eta(N)."
+      }
+    },
+    {
+      "label": "p13:lower:quartic",
+      "number": "16.1",
+      "document": "main",
+      "classification": "renforcement_facultatif_v1.8",
+      "previous_sha256": "2bd4adbc6f85cc75b2c8c0910ab4f30c43f939e40c365eee2d5fb2aae71a4fda",
+      "sha256": "345a16ff574b370197f3327bbebd0fcb7740c01fb2af27ef6849b214e25389f1",
+      "reason": "Une suite sommable de masse totale nulle a une norme l1 au moins égale à deux fois sa masse positive en zéro. La première identité de FourthCumulantIdentities.article_16_1 distingue explicitement l’erreur de cumulant −5/3 et l’erreur d’incompatibilité −3/2.",
+      "existing_change_ids": [
+        "P1-MATH-0436"
+      ],
+      "proof_endpoints": [
+        "PaperP1.FourthCumulantIdentities.article_16_1"
+      ],
+      "proof_type_sha256": {
+        "PaperP1.FourthCumulantIdentities.article_16_1": "b65290f3a74d13cc1df036b076dedb0d3333b57b521438f23c9c56f868746663"
+      },
+      "semantic_alignment": {
+        "status": "passed",
+        "reviewer": "Parent source/type comparison after separate editorial drafting",
+        "objects": "Fourth factorial cumulant, signed connected K4, positive compatible K4 and repeated-index contributions. The two errors remain distinct.",
+        "hypotheses": "C,ε fixés avant N,L ; première erreur κ4−24K4 améliorée à−5/3, erreur incompatible inchangée−3/2 ; aucun changement du goulot4/3.",
+        "quantifiers": "Fixed C,epsilon precede one cutoff and all critical N,L; first error -5/3, signed-to-positive error -3/2."
+      }
+    },
+    {
+      "label": "p1:limits:vector-reference",
+      "number": "20.1",
+      "document": "main",
+      "classification": "clarification_v1.8",
+      "previous_sha256": "fd15ebe1159f165a714eb5337648229bacb982d63e0d76c87f983cdeaf06f6a4",
+      "sha256": "73baac3bdf72239bcf4e7a04faf36f29eed4b83c6135d3d103696208057b39fe",
+      "reason": "Les types Lean sont corrects : hp impose p_x−incidence≥0, hq impose q_e≥0, et hInd l’indépendance mutuelle de toutes les cellules. Le texte initial de 20.1 établit bien cette positivité pour N grand. C’est la formulation générale et le changement de notation qui risquent de faire perdre cette hypothèse. Les identités exactes ne sont pas celles des indicateurs arithmétiques : pour une bonne paire régulière Cov(J_x,J_y)=q_e−p², tandis que Cov(H_x,H_y)=q_e ; les variances valent respectivement p(1−p) et p.",
+      "existing_change_ids": [
+        "P1-MATH-0992"
+      ],
+      "proof_endpoints": [
+        "PaperP1.IndependentPositionalApproximation.main_20_1",
+        "PaperP1.IndependentPositionalApproximation.main_20_1_canonical",
+        "PaperP1.PositionalGridApproximation.main_20_1"
+      ],
+      "proof_type_sha256": {
+        "PaperP1.IndependentPositionalApproximation.main_20_1": "f4e82cc99cc14c8540f9428fcf39d3e0c19fbab85ff8f5657c04d82e67c520bd",
+        "PaperP1.IndependentPositionalApproximation.main_20_1_canonical": "0417a7dd5878c0f182e3c6d9afdc890317c99765e6e3fd4401803308a3c357f1",
+        "PaperP1.PositionalGridApproximation.main_20_1": "b3831bdd0aa65a18b3ed8072384b3e2f89212f8f130164ed715ec86176a4e6d4"
+      },
+      "semantic_alignment": {
+        "status": "passed",
+        "reviewer": "Parent source/type comparison after separate editorial drafting",
+        "objects": "Original unsigned arithmetic field on the complete grid, and the law of independent single/pair reference arrivals at the actual prescribed rates. Polynomially weighted L1 series is summable.",
+        "hypotheses": "j naturel fixé et C,ε>0 avant le seuil ; mêmes grille et taux ; sommabilité et uniforme avant espaces et arrivées. Identités propres à H, pas aux indicateurs J.",
+        "quantifiers": "Fixed j,C,epsilon precede the cutoff, then critical lengths, probability spaces and all independent arrivals. The generic reference identities are distinct from the arithmetic approximation."
+      }
+    },
+    {
+      "label": "p1:limits:colored-tail",
+      "number": "T19.6",
+      "document": "companion",
+      "classification": "renforcement_facultatif_v1.8",
+      "previous_sha256": "377d9659754253d1c87b71aea548e2b6f20b12f7ff691912355db547ce493e9b",
+      "sha256": "96d9f7302c7b6c8cb69d1fda6b3eee89f30b6c4c1d7c5981afec97d7003acd76",
+      "reason": "probability et moment sont définis avec le compte original infiniteStartCount sur I_N, pas avec le compte modifié. QuadraticOrderMoments prouve F_k≤(2N^(3/4+ε))^k uniformément pour k≤K log²N. Avec ε=1/20 et k=ceil(128log²N), Markov donne exp(−2log³N) au seuil N^(9/10). Le facteur N^r donne le moment tronqué pour tous les entiers 0≤r≤log N. NearLinearThreshold conserve exactement ceil(ceil(N/L)e^(−c√(logN loglogN))), qui dépasse N^(9/10) pour chaque c fixé.",
+      "existing_change_ids": [
+        "P1-MATH-0033"
+      ],
+      "proof_endpoints": [
+        "PaperP1.VerySmallTail.power_threshold",
+        "PaperP1.NearLinearThreshold.threshold_ge_power"
+      ],
+      "proof_type_sha256": {
+        "PaperP1.VerySmallTail.power_threshold": "bdecfebc5e9fe0f893c1495c3967642e6a508d3d6f171964b205e034c1313726",
+        "PaperP1.NearLinearThreshold.threshold_ge_power": "5ae628a7626a565e22f60c40a7e2a0683debb1edf04bdba3de7d017d0cff5705"
+      },
+      "semantic_alignment": {
+        "status": "passed",
+        "reviewer": "Parent source/type comparison after separate editorial drafting",
+        "objects": "Probability and truncated moments of the original full count. The exact rounded near-linear threshold exceeds the power threshold for every fixed positive c.",
+        "hypotheses": "Compte original complet ; C fixé, seuil avant tous b≥N^.9, L critique et r entiers0≤r≤logN ; c>0 fixé avant un seuil pouvant dépendre de c pourA_N,c. Pas de c(N).",
+        "quantifiers": "One cutoff precedes every b>=N^(9/10) and all integer 0<=r<=log N. Each c>0 is fixed before its own cutoff; power_threshold and threshold_ge_power together prove the stronger near-linear probability exponent."
+      }
+    }
+  ],
+  "unnumbered_statement_correspondence": [
+    {
+      "id": "anchored_physical_witness",
+      "source": "companion_sections/confinement.tex",
+      "line": 76,
+      "source_sha256": "e4c4fa80f11650be05c8cbba215593a57e1f7411d41d60ccad10291704f0d632",
+      "claim": "Deux noyaux individuels K_H(n_i)≤N^(Dτ), D=Σ_{j=1}^{r−1}j!(t−1)^(j−1)2^{j(t−1)}.",
+      "hypotheses_and_quantifiers": "r≥2,t≥2,η,τ>0,C fixés. M est un espace physique de sélections paires par bloc et de carré total ; dimM≥ηL ; projection ancre injective ; NoDisjointRecovery(d=r−1,t) ; NoExactFrom sur offsets actifs entre ancre et chaque autre bloc ; H≥B variable après N0. Aucun non-alignement ou injectivité source/source.",
+      "proof_endpoints": [
+        "PaperP1.DenseAnchoredIndividualWitness.uniform_individual_witness"
+      ],
+      "proof_type_sha256": {
+        "PaperP1.DenseAnchoredIndividualWitness.uniform_individual_witness": "8cef747496de5f110cf95dd8655c2703962d76108a20a3c396ec9460fa7f079d"
+      },
+      "semantic_alignment_status": "passed",
+      "note": "Exact uniform endpoint for two distinct actual natural values and both individual caps, replacing the composed internal-step correspondence in the frozen editorial delivery."
+    },
+    {
+      "id": "primitive_physical_regularization",
+      "source": "companion_sections/confinement.tex",
+      "line": 149,
+      "source_sha256": "e4c4fa80f11650be05c8cbba215593a57e1f7411d41d60ccad10291704f0d632",
+      "claim": "Relèvement effectif sans noyau local ajouté ; exclusion de récupération avec perte≤ηL/4 et projections injectives conservées.",
+      "hypotheses_and_quantifiers": "r≥3,η>0 fixés ; toutes projections du noyau effectif injectives par primitivité ; d=r−1 ; t≥2 choisi avant centres et relèvements.",
+      "proof_endpoints": [
+        "PaperP1.FixedArityPhysicalRelationRegularization.uniform_subspace"
+      ],
+      "proof_type_sha256": {
+        "PaperP1.FixedArityPhysicalRelationRegularization.uniform_subspace": "03ef9102025aad0d8ba23394bd89b989f9174696c5a80d78ac8544a711255933"
+      },
+      "semantic_alignment_status": "passed",
+      "note": "point_entree_existant_ou_specialisation"
+    },
+    {
+      "id": "dense_primitive_hosts",
+      "source": "companion_sections/confinement.tex",
+      "line": 148,
+      "source_sha256": "e4c4fa80f11650be05c8cbba215593a57e1f7411d41d60ccad10291704f0d632",
+      "claim": "N^ε hôtes pour chaque famille primitive dense de taille r fixée ; tous centres dansX_(2Dτ), sans énumération des sous-espaces.",
+      "hypotheses_and_quantifiers": "r≥3,η,ε>0,C fixés avantN0 ; I⊆I_N, |I|=r, primitif effectif, ρ_rel≥ηL. Aucune extension à tous les systèmes géométriques à coefficients libres.",
+      "proof_endpoints": [
+        "PaperP1.DensePrimitiveHosts.uniform_hosts"
+      ],
+      "proof_type_sha256": {
+        "PaperP1.DensePrimitiveHosts.uniform_hosts": "3fe09067d080aa3ec345c8b7e97223acaaf01d7cc7d227e747531194dc91f5ee"
+      },
+      "semantic_alignment_status": "passed",
+      "note": "point_entree_existant_ou_specialisation"
+    },
+    {
+      "id": "primitive_exact_and_homogeneous_weights",
+      "source": "companion_sections/confinement.tex",
+      "line": 175,
+      "source_sha256": "e4c4fa80f11650be05c8cbba215593a57e1f7411d41d60ccad10291704f0d632",
+      "claim": "Masse exacte dense N^(1−r+ε), totale fixe N^(−r/2+ε) ; même puissance dense pour prescriptions homogènes.",
+      "hypotheses_and_quantifiers": "Poids exacts∏p_x2^ρ_rel ; ρ_rel≤L ; p_x≤2p. Cible homogène : marginales2^(−d_x)≤2p ; domination par2^r fois le poids nominal. Paramètres fixés avantN0.",
+      "proof_endpoints": [
+        "PaperP1.DensePrimitiveRankMass.uniform_rank_mass",
+        "PaperP1.SharpPrimitiveMass.uniform_rank_mass"
+      ],
+      "proof_type_sha256": {
+        "PaperP1.DensePrimitiveRankMass.uniform_rank_mass": "2d6046dece65fa60d070648d865aa410e5680a2383eb1f2b2d13672e843c4701",
+        "PaperP1.SharpPrimitiveMass.uniform_rank_mass": "34a1bda0d842cab960ad5f455cb98a2b9e7de50bdb16c44e57f1cf7d8f5c8b86"
+      },
+      "semantic_alignment_status": "passed",
+      "note": "point_entree_existant_ou_specialisation"
+    },
+    {
+      "id": "late_pair_completion",
+      "source": "companion_sections/confinement.tex",
+      "line": 243,
+      "source_sha256": "e4c4fa80f11650be05c8cbba215593a57e1f7411d41d60ccad10291704f0d632",
+      "claim": "Support brut et profil pondéré non aligné quasi linéaires ; preuve tardive sans réutiliser la proposition forte comme entrée.",
+      "hypotheses_and_quantifiers": "C,ε fixés avant un seuil ; vrais centres deI_N, paires ordonnées séparées |x−y|>L et non-alignement de rayon1 ; ρ brut=2L−dim(Sx+Sy) avec défauts locaux.",
+      "proof_endpoints": [
+        "PaperP1.NonalignedSourceResidual.uniform_source_bounds"
+      ],
+      "proof_type_sha256": {
+        "PaperP1.NonalignedSourceResidual.uniform_source_bounds": "f12c0fc323e3617def330cb8be4ab07a1ee8aea272273a2c09ee11e93854521f"
+      },
+      "semantic_alignment_status": "passed",
+      "note": "point_entree_existant_ou_specialisation"
+    },
+    {
+      "id": "star_rational_corollary",
+      "source": "companion_sections/cores.tex",
+      "line": 120,
+      "source_sha256": "2266cb5c9decb84da3ebcf068dde47f07ccf266feebf30e3baf78d9652e6e433",
+      "claim": "Majorant exp(Mz+2nΔz²/(2−Δz)) pourΔz<2.",
+      "hypotheses_and_quantifiers": "Graphe fini, z≥0 etΔz<2 ; conséquence de la borne par étoiles.",
+      "proof_endpoints": [
+        "PaperP1.MarkedGraphGenerator.rational_star_bound"
+      ],
+      "proof_type_sha256": {
+        "PaperP1.MarkedGraphGenerator.rational_star_bound": "e476ed48db120a81e53d31cf6a4b7ad7262ec53cd1dbdd0b22268b197f35f338"
+      },
+      "semantic_alignment_status": "passed",
+      "note": "point_entree_existant_ou_specialisation"
+    },
+    {
+      "id": "cap_growth_free_endpoint",
+      "source": "main_sections/pair_rigidity.tex",
+      "line": 244,
+      "source_sha256": "fca41f8052ab319c3d3f2a5aa5d749c238da4a997e07c610c301ab2b4ccaaf51",
+      "claim": "D²H^(1/D)≤4√H+e(M²+(logH)²), sans croissance inférieure du plafond.",
+      "hypotheses_and_quantifiers": "H≥3,2≤D≤M ; le type Lean vaut mêmeH≥1.",
+      "proof_endpoints": [
+        "PaperP1.CurveDegreeProfile.degree_uniform_bound_without_cap_growth"
+      ],
+      "proof_type_sha256": {
+        "PaperP1.CurveDegreeProfile.degree_uniform_bound_without_cap_growth": "e0d86422b947b077cb170d8278052c7c2057fb581b3ed59fa9f9cf1d298996af"
+      },
+      "semantic_alignment_status": "passed",
+      "note": "point_entree_existant_ou_specialisation"
+    },
+    {
+      "id": "poisson_difference_constant",
+      "source": "main_sections/closure.tex",
+      "line": 104,
+      "source_sha256": "88068742282067a54f0b49c106ce57db811285f109f75dfa821ed7260cf8e299",
+      "claim": "C(λ)≥e^(−λ)/2, contre e^(−λ)/4.",
+      "hypotheses_and_quantifiers": "λ>0 ; le type Lean admet aussiλ=0 pour la différence signée.",
+      "proof_endpoints": [
+        "PaperP1.PoissonSecondDifferenceNorm.coefficient_lower_bound"
+      ],
+      "proof_type_sha256": {
+        "PaperP1.PoissonSecondDifferenceNorm.coefficient_lower_bound": "fadecedc5855c6dae621714441146677c22c14e4da2fe6d98101290e1d917490"
+      },
+      "semantic_alignment_status": "passed",
+      "note": "point_entree_existant_ou_specialisation"
+    },
+    {
+      "id": "quadratic_order_factorial_bound",
+      "source": "companion_sections/limits_appendix.tex",
+      "line": 297,
+      "source_sha256": "c2da5516c96395fe8d2797f944aeea583ee0e60f5c5c8eed7453c3abdb8ade2e",
+      "claim": "F_k≤(2N^(3/4+ξ))^k jusqu’àKlog²N, depuisF0=1 ; budget log^4N et Rankin écrits.",
+      "hypotheses_and_quantifiers": "K≥0,ξ>0,C fixés avant N0 ; seuil avant toutes anciennes fenêtres et tous ordres autorisés ; compte original.",
+      "proof_endpoints": [
+        "PaperP1.QuadraticOrderMoments.factorial_bound"
+      ],
+      "proof_type_sha256": {
+        "PaperP1.QuadraticOrderMoments.factorial_bound": "15fb266d8de98f06d9837747bc123ffff507cdeacbbe167a6b86c06ef9aecc9c"
+      },
+      "semantic_alignment_status": "passed",
+      "note": "point_entree_existant_ou_specialisation"
+    },
+    {
+      "id": "near_linear_tail_any_fixed_c",
+      "source": "companion_sections/limits_appendix.tex",
+      "line": 357,
+      "source_sha256": "c2da5516c96395fe8d2797f944aeea583ee0e60f5c5c8eed7453c3abdb8ade2e",
+      "claim": "Très petite queue au seuilA_N,c pour chaque c>0 fixé, avec probabilité exp(−2log³N).",
+      "hypotheses_and_quantifiers": "Compte original complet ; C fixé, seuil avant tous b≥N^.9, L critique et r entiers0≤r≤logN ; c>0 fixé avant un seuil pouvant dépendre de c pourA_N,c. Pas de c(N).",
+      "proof_endpoints": [
+        "PaperP1.VerySmallTail.power_threshold",
+        "PaperP1.NearLinearThreshold.threshold_ge_power"
+      ],
+      "proof_type_sha256": {
+        "PaperP1.VerySmallTail.power_threshold": "bdecfebc5e9fe0f893c1495c3967642e6a508d3d6f171964b205e034c1313726",
+        "PaperP1.NearLinearThreshold.threshold_ge_power": "5ae628a7626a565e22f60c40a7e2a0683debb1edf04bdba3de7d017d0cff5705"
+      },
+      "semantic_alignment_status": "passed",
+      "note": "consequence_par_monotonie_de_deux_endpoints"
+    },
+    {
+      "id": "supported_prime_cylinder",
+      "source": "companion_sections/limits_appendix.tex",
+      "line": 423,
+      "source_sha256": "c2da5516c96395fe8d2797f944aeea583ee0e60f5c5c8eed7453c3abdb8ade2e",
+      "claim": "Au moinsN/q−N/q²−3 départs sous un cylindre jusqu’àM=2q floor(N/q) ; deux bornes de moments, exempleq7,N64.",
+      "hypotheses_and_quantifiers": "q premier≤N ; L=q−1 ; multipliers floor(N/q)+1≤u<2floor(N/q), q∤u ; t≥0.",
+      "proof_endpoints": [
+        "PaperP1.SupportedPrimeCylinder.positive_exponential_lower",
+        "PaperP1.SupportedPrimeCylinder.total_exponential_lower"
+      ],
+      "proof_type_sha256": {
+        "PaperP1.SupportedPrimeCylinder.positive_exponential_lower": "749e052a6ce3066639837cd39e950807ddca2a1d7a3dcf191629ac03725b23d9",
+        "PaperP1.SupportedPrimeCylinder.total_exponential_lower": "008fd14b95fff99f50f2a767d40d298ba76e925867107fca9ca1b1d7aa6cdab1"
+      },
+      "semantic_alignment_status": "passed",
+      "note": "contenu_v1.7_deplace"
+    },
+    {
+      "id": "valuation_layers",
+      "source": "companion_sections/limits_appendix.tex",
+      "line": 454,
+      "source_sha256": "c2da5516c96395fe8d2797f944aeea583ee0e60f5c5c8eed7453c3abdb8ade2e",
+      "claim": "Critère exactν_q(u) pair et budgetB_k=N/(q+1)(1−q^(−2k))−3k.",
+      "hypotheses_and_quantifiers": "q premier≤N ; k naturel quelconque ; t≥0 ; aucun gain asymptotique de seuil ou monotonie générale en k.",
+      "proof_endpoints": [
+        "PaperP1.ValuationPrimeCylinder.positive_start_iff_even_factorization",
+        "PaperP1.ValuationLayerCounts.finite_geometric_lower"
+      ],
+      "proof_type_sha256": {
+        "PaperP1.ValuationPrimeCylinder.positive_start_iff_even_factorization": "c580dbd5811ce442342e7af998054fbe49b08a34adc5bc7be9f90159de8a2c7c",
+        "PaperP1.ValuationLayerCounts.finite_geometric_lower": "9a2c7b58ff05d653e54f47487b3671e2a6de11d5ea937491a1194f0eea576c61"
+      },
+      "semantic_alignment_status": "passed",
+      "note": "contenu_v1.7_deplace"
+    },
+    {
+      "id": "valuation_density",
+      "source": "companion_sections/limits_appendix.tex",
+      "line": 478,
+      "source_sha256": "c2da5516c96395fe8d2797f944aeea583ee0e60f5c5c8eed7453c3abdb8ade2e",
+      "claim": "Couverture complète, bornes bilatérales et densité1/(q+1), erreur absolue normalisée uniforme.",
+      "hypotheses_and_quantifiers": "q premier≤N ; profondeurceil(ceil(log_qN)/2) ; seuil uniforme pour erreur absolue demandée, pas relative.",
+      "proof_endpoints": [
+        "PaperP1.ValuationDensityBounds.effective_count_bounds",
+        "PaperP1.ValuationDensityBounds.uniform_density_approximation"
+      ],
+      "proof_type_sha256": {
+        "PaperP1.ValuationDensityBounds.effective_count_bounds": "c9daa3027ff05528bd08ce3006dc5bfd6ea80fec4dbcb977e435b4015b246e4e",
+        "PaperP1.ValuationDensityBounds.uniform_density_approximation": "3ac546ea3cdae3fbd538ebf0478fff61110242f78b82759479cf6ca75fb2d8ae"
+      },
+      "semantic_alignment_status": "passed",
+      "note": "contenu_v1.7_deplace"
+    },
+    {
+      "id": "rank_charged_forcing",
+      "source": "companion_sections/limits_appendix.tex",
+      "line": 502,
+      "source_sha256": "c2da5516c96395fe8d2797f944aeea583ee0e60f5c5c8eed7453c3abdb8ade2e",
+      "claim": "Fibre affine compatible de masse2^(−rang) et deux moments ; exempleN18q3 garde rang≤10.",
+      "hypotheses_and_quantifiers": "Même set retenu, bits prédécesseurs1 et q−1 suivants0 ; q premier≤N,t≥0 ; aucune revendication de rang exactement10.",
+      "proof_endpoints": [
+        "PaperP1.RankChargedPrimeCylinder.retained_forcing_mass"
+      ],
+      "proof_type_sha256": {
+        "PaperP1.RankChargedPrimeCylinder.retained_forcing_mass": "c7435352a1700c612a96cf20fbf0a1f635b8576a4b922b8500f16a82f24331f2"
+      },
+      "semantic_alignment_status": "passed",
+      "note": "contenu_v1.7_deplace"
+    },
+    {
+      "id": "ordinary_smooth_census",
+      "source": "companion_sections/limits_appendix.tex",
+      "line": 1514,
+      "source_sha256": "c2da5516c96395fe8d2797f944aeea583ee0e60f5c5c8eed7453c3abdb8ade2e",
+      "claim": "o_a(N) fenêtres de longueur floor(logN/(4log2)) avec au plus un entier ordinairement floor(N^a)-friable ; preuve gaussienne rapprochée deT19.17.",
+      "hypotheses_and_quantifiers": "a>0 puisτ>0 fixés avant N0 ; aucun théorème général de courte moyenne ni Dickman relatif ajouté.",
+      "proof_endpoints": [
+        "PaperP1.SmoothLogarithmicWindowDensity.uniform_bound"
+      ],
+      "proof_type_sha256": {
+        "PaperP1.SmoothLogarithmicWindowDensity.uniform_bound": "6e56ad714a2ab701bce46968f5011ef595b865bb0e81f6b4be90e96e92e73f13"
+      },
+      "semantic_alignment_status": "passed",
+      "note": "contenu_v1.7_deplace"
+    },
+    {
+      "id": "reference_realization_and_marginals",
+      "source": "companion_sections/limits_appendix.tex",
+      "line": 653,
+      "source_sha256": "c2da5516c96395fe8d2797f944aeea583ee0e60f5c5c8eed7453c3abdb8ade2e",
+      "claim": "Réalisation produit fini, marginalesPois(p_x^ref), factorielles intégrables de tout ordre et L2.",
+      "hypotheses_and_quantifiers": "F etE finis ; e⊆F ; q_e≥0 etp_x^ref≥Σincidentq ; cellules mutuellement indépendantes à leurs taux. p_x^ref distinct du vrai p_x.",
+      "proof_endpoints": [
+        "PaperP1.PositionalArrivalMarginals.hasLaw_coordinate",
+        "PaperP1.PositionalArrivalMarginals.coordinate_factorial_moment"
+      ],
+      "proof_type_sha256": {
+        "PaperP1.PositionalArrivalMarginals.hasLaw_coordinate": "4a81c65cb02c102ba09eae463017fa1117f1b0f6efc1028ff6b998b608b60f3c",
+        "PaperP1.PositionalArrivalMarginals.coordinate_factorial_moment": "0b041ad075dcafee85652557d5387229816ab0ca0bf16bfc5082ae5c1e8dff37"
+      },
+      "semantic_alignment_status": "passed",
+      "note": "point_entree_existant_ou_specialisation"
+    },
+    {
+      "id": "reference_covariance_and_blocks",
+      "source": "companion_sections/limits_appendix.tex",
+      "line": 680,
+      "source_sha256": "c2da5516c96395fe8d2797f944aeea583ee0e60f5c5c8eed7453c3abdb8ade2e",
+      "claim": "Covariance diagonaleν_x plus taux partagés ; indépendance des vecteurs de blocs iff covariances croisées nulles ; absence d’arête positive traversante pourpaires.",
+      "hypotheses_and_quantifiers": "Construction admissible ; blocs finis éventuellement chevauchants ; disjonction et cardinal2 des paquets pour le graphe ; cellules partagées nulles retirées presque sûrement.",
+      "proof_endpoints": [
+        "PaperP1.PositionalArrivalCovariance.covariance_coordinates",
+        "PaperP1.PositionalBlockIndependence.independent_blocks_iff_cross_covariance_zero"
+      ],
+      "proof_type_sha256": {
+        "PaperP1.PositionalArrivalCovariance.covariance_coordinates": "7ed915a29abc0af135daa5d2a551e99457c64a428ba396170e9f259c565fbdbd",
+        "PaperP1.PositionalBlockIndependence.independent_blocks_iff_cross_covariance_zero": "204b3530dadf0fd0dc6c96816c59e64245b3992681a9dfbd8ce2054c26e82e78"
+      },
+      "semantic_alignment_status": "passed",
+      "note": "point_entree_existant_ou_specialisation"
+    },
+    {
+      "id": "reference_bivariate_mass",
+      "source": "companion_sections/limits_appendix.tex",
+      "line": 713,
+      "source_sha256": "c2da5516c96395fe8d2797f944aeea583ee0e60f5c5c8eed7453c3abdb8ade2e",
+      "claim": "Couple naturel égal en loi à(A+C,B+C) de trois Poisson indépendantes ; paramètres admissibles et masses finies exactes.",
+      "hypotheses_and_quantifiers": "Même construction ;0≤r_xy≤min(p_x^ref,p_y^ref) ; x=y possible, taux nuls, m,n naturels,0^0=1.",
+      "proof_endpoints": [
+        "PaperP1.PositionalBivariateLaw.field_joint_law",
+        "PaperP1.PositionalBivariateMass.real_singleton"
+      ],
+      "proof_type_sha256": {
+        "PaperP1.PositionalBivariateLaw.field_joint_law": "279f5ba25c702df41ac3fc7877d71f691dc9f0e8039affa6b36a8ae92592d08f",
+        "PaperP1.PositionalBivariateMass.real_singleton": "a33b6a97bac47d9af8d0ee491ef2d2dd026f94b22916263bfdce961a36f74214"
+      },
+      "semantic_alignment_status": "passed",
+      "note": "point_entree_existant_ou_specialisation"
+    }
+  ],
+  "compiled_types": {
+    "path": "docs/validation/manuscript-v1.8/compiled-types.json",
+    "sha256": "3320385e4f340b28fc10a8e9253e45c8aba8246034f779b0d9608d243d8c3aeb",
+    "actual_exit_code": 0,
+    "compiled_types": 528,
+    "propositions_audited": 485,
+    "permitted_axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "all_propositions_standard_axioms_only": true,
+    "inventory_sha256": "74231413a8324ee7cc29a4e1b3548ca0b73d97019fe71ca2667e311af3cf4dc4",
+    "diagnostic_module_sha256": "43d8a9072a6b589e63465977b7a3068637c712b23711fb38b857acf374534fd5",
+    "compiled_types_sha256": "3320385e4f340b28fc10a8e9253e45c8aba8246034f779b0d9608d243d8c3aeb",
+    "log_sha256": "c84f0beb7071cb9aaff0ef3dbdfe88662575b663ac7b2c1aa8989b9063bc4ea7"
+  },
+  "proof_source_manifest": {
+    "path": "docs/validation/manuscript-v1.8/proof-source-manifest.json",
+    "sha256": "5831f23e89d5c5753840645b33940f08bc9fe9ba3fad6f88156c9058f9b15d8d"
+  },
+  "source_preservation": {
+    "v1.6": true,
+    "v1.7": true
+  },
+  "numbered_results": 167,
+  "typeset_result_numbers_verified": 167,
+  "visual_review_status": "passed",
+  "scope": "Source-bound AI-assisted semantic comparison of seven numbered changes and 18 auxiliary claims with actual compiled endpoint types. Not a human external review or Palomar registration.",
+  "visual_validation_record": "docs/manuscript-v1.8-validation.json"
+}

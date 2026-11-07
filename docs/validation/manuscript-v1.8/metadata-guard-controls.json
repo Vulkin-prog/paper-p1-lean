@@ -1,0 +1,31 @@
+[
+  {
+    "name": "actual v1.8 source/type/167-result/18-auxiliary correspondence",
+    "accepted": true
+  },
+  {
+    "name": "pending semantic comparison",
+    "rejected": true,
+    "reason": "Semantic comparison is not complete: p1:arith:hosts"
+  },
+  {
+    "name": "corrupt proof source fingerprint",
+    "rejected": true,
+    "reason": "Proof-source manifest checksum mismatch"
+  },
+  {
+    "name": "omitted unnumbered scientific claim",
+    "rejected": true,
+    "reason": "Every unnumbered scientific claim must have its own correspondence"
+  },
+  {
+    "name": "changed compiled endpoint type",
+    "rejected": true,
+    "reason": "Compiled endpoint type differs from its comparison: PaperP1.NonalignedSourceResidual.uniform_source_bounds"
+  },
+  {
+    "name": "kernel axiom substituted for a project theorem",
+    "rejected": true,
+    "reason": "Endpoint is not an audited compiled theorem: Classical.choice"
+  }
+]

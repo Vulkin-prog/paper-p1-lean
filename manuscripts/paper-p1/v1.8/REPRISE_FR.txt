@@ -1,0 +1,62 @@
+P1 ET COMPAGNON — VERSION 1.8 DE TRAVAIL, 7 NOVEMBRE 2026
+
+La reprise indépendante a été intégrée de manière sélective dans les deux textes.
+Article : 65 pages. Compagnon : 104 pages. Les 167 étiquettes et numéros de
+résultats sont conservés ; les versions 1.6 et 1.7 restent inchangées.
+
+Sept blocs ont été renforcés ou précisés :
+- 3.2 : les deux profils de paires passent de N^(6/5+epsilon) à N^(1+epsilon).
+- 7.4 : générateur par étoiles, pour toute activité positive et poids hétérogènes.
+- 13.5 : enveloppe supérieure du degré, y compris a=0, sans croissance inférieure.
+- 15.5 : masse primitive fixe N^(-r/2+epsilon), r>=3 fixé ; secteur dense
+  à N^epsilon hôtes et masse N^(1-r+epsilon), eta fixé.
+- 16.1 : première erreur quartique N^(-5/3+epsilon), autre erreur conservée.
+- 20.1 : champ de référence H et taux admissibles explicités, même comparaison
+  arithmétique sur la grille originale au taux 4/5 à degré fixé.
+- T19.6 : très petite queue dès N^(9/10), puis tout c>0 fixé au seuil près de N.
+La borne inférieure du coefficient de correction est aussi doublée.
+
+Le compagnon contient maintenant la preuve du confinement ancré à arité fixée,
+les raffinements du cylindre près de leur usage, les identités exactes du champ
+près de la comparaison positionnelle, et le recensement lisse près de T19.17.
+L’annexe de formalisation présente la portée, les deux corrections nécessaires
+historiques et la reproduction. Le corps du texte a été repris sans ajouter
+un énoncé numéroté pour chaque étape interne.
+
+Un lemme Lean public a été extrait pour les deux plafonds individuels des noyaux
+ancrés. Il donne deux entiers naturels distincts de la vraie fenêtre, avec le
+même seuil uniforme sur centres, sous-espaces et coupures. Il rend directement
+vérifiable une étape de preuve déjà construite ; ce n’est pas un nouveau gain
+scientifique ajouté à l’article.
+
+Validation complète au commit de preuve c07b036aed5a9310d4f79f816969e45a20628138 :
+18 617 tâches de compilation, 19 957 contrôles d’axiomes et 19 880 références,
+trois codes de sortie nuls. Les seuls axiomes sont propext, Classical.choice
+et Quot.sound. Une extraction distincte a vérifié 528 types compilés et les
+axiomes de leurs 485 propositions. Sept comparaisons d’énoncés modifiés et
+18 correspondances auxiliaires sont enregistrées avec leurs hypothèses,
+quantificateurs et empreintes. Onze contrôles de sources/métadonnées valident
+les cas conformes et rejettent des états incomplets ou falsifiés.
+
+Les deux PDF compilent avec références stables en trois passes. Les 167 numéros
+imprimés ont été vérifiés dans les fichiers produits. Les 169 pages ont été
+rendues et inspectées en vues d’ensemble ; 27 pages complètes importantes ont
+été inspectées à plus grande résolution. Aucun débordement, chevauchement,
+caractère manquant ou renvoi non résolu n’a été observé.
+
+Les deux corrections nécessaires de v1.7 (T1.10 et T5.1) restent distinguées
+des renforcements facultatifs v1.8. La précision de rang exact de l’exemple
+N=18,q=3 reste optionnelle : le texte garde la borne formellement vérifiée r<=10.
+L’exposé du recensement gaussien résume la chaîne analytique interne ; cette
+version ne prétend pas être une nouvelle preuve d’un théorème général de
+moyennes courtes. Les revues sont assistées par IA et les contrôles du noyau
+restent distincts d’une expertise mathématique humaine indépendante.
+
+PALOMAR
+Les soumissions restent en attente à la demande de Brice Pouly. Aucun cycle
+Palomar n’a été lancé. Les six dossiers conservent les 17 familles et les
+68 sélections d’origine ; aucun dossier supplémentaire n’est créé par cette
+révision. Les métadonnées conservent Brice Pouly et ORCID 0009-0008-8491-2467.
+
+Dépôt : https://github.com/Vulkin-prog/paper-p1-lean
+La révision exacte archivée figure dans SNAPSHOT.json du dossier livré.

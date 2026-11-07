@@ -801,10 +801,17 @@
       "impact": "Improves the exponent and removes the small-activity restriction for the exponential star bounds; retains the full degree profile and permits nonidentical nonnegative vertex weights. All partitions and sums concern the actual graph. No asymptotic approximation, tree-enumeration input or independence assumption is used. No optimality or manuscript-error claim is made.",
       "validation": "Full Lean v4.36.0-rc2 build (8905 jobs) and actual axiom audit of all 2207 theorem/lemma declarations; only propext, Classical.choice and Quot.sound. All evidence declarations are included in the audit. All 393 distinct coverage/finding declaration names were also checked directly by Lean.",
       "manuscript_integration": {
+        "target_version": "P1 V1.8 working draft",
+        "status": "integrated",
+        "source": "manuscripts/paper-p1/v1.8/sources/main_sections/cores.tex",
+        "label": "p1:core:generator",
+        "validation_record": "docs/manuscript-v1.8-validation.json"
+      },
+      "validation_commit": "91f0b85e7a22f8527792bfbaf209f8d6f11a4bc4",
+      "previous_integration_record": {
         "target_version": "next version after formalization",
         "status": "not_integrated"
-      },
-      "validation_commit": "91f0b85e7a22f8527792bfbaf209f8d6f11a4bc4"
+      }
     },
     {
       "id": "P1-MATH-0023",
@@ -833,10 +840,17 @@
       "impact": "Improves only the explicit lower constant by a factor of two; the asymptotic exponents and normalization of total variation are unchanged. The original weaker estimate is true, so no manuscript error is asserted. The unnumbered inequality does not add a numbered coverage item.",
       "validation": "Full Lean v4.36.0-rc2 build (8919 jobs) and actual axiom audit of all 2257 theorem/lemma declarations; only propext, Classical.choice and Quot.sound. All evidence declarations are included in the audit. All 415 distinct coverage/finding declaration names were also checked directly by Lean.",
       "manuscript_integration": {
+        "target_version": "P1 V1.8 working draft",
+        "status": "integrated",
+        "source": "manuscripts/paper-p1/v1.8/sources/main_sections/closure.tex",
+        "label": "p1:close:constant-bounds",
+        "validation_record": "docs/manuscript-v1.8-validation.json"
+      },
+      "validation_commit": "c3ae67f0b8622f142f16dce9eb4bb22fd541a2c5",
+      "previous_integration_record": {
         "target_version": "next version after formalization",
         "status": "not_integrated"
-      },
-      "validation_commit": "c3ae67f0b8622f142f16dce9eb4bb22fd541a2c5"
+      }
     },
     {
       "id": "P1-MATH-0024",
@@ -1182,10 +1196,17 @@
       "impact": "A strictly smaller threshold, a stronger probability exponent and no smooth-pair literature input. One N threshold controls all critical lengths and all moment orders through log N. This does not supply bounded low-order moments or the main Poisson approximation.",
       "validation": "Full Lean v4.36.0-rc2 build (9157 jobs) and actual axiom audit of all 2969 theorem/lemma declarations; only propext, Classical.choice and Quot.sound. All evidence declarations are included in the audit. All 730 distinct coverage/finding declaration names were checked directly by Lean.",
       "manuscript_integration": {
+        "target_version": "P1 V1.8 working draft",
+        "status": "integrated",
+        "source": "manuscripts/paper-p1/v1.8/sources/companion_sections/limits_appendix.tex",
+        "label": "p1:limits:colored-tail",
+        "validation_record": "docs/manuscript-v1.8-validation.json"
+      },
+      "validation_commit": "79e4e6d814ac0dc941544b2beb92437e45657a39",
+      "previous_integration_record": {
         "target_version": "next version after formalization",
         "status": "not_integrated"
-      },
-      "validation_commit": "79e4e6d814ac0dc941544b2beb92437e45657a39"
+      }
     },
     {
       "id": "P1-MATH-0034",
@@ -3874,10 +3895,17 @@
       "impact": "The unweighted support count and its independent mass improve. No improvement of the weighted 2^rho-1 residual, positive joint mass, covariance sum, bounded second moment or complete pair profile is asserted. The actual second factorial moment is separately proved <=N^epsilon for every fixed epsilon, which does not yet close T19.4. Main 3.2 stays in progress; numbered coverage remains 68/167.",
       "validation": "Lean v4.36.0-rc2 full build passed (9915 jobs); actual axiom audit passed for all 4729 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2444 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.69 GiB. The stronger full-loss host count and exact heterogeneous independent mass are proved; main 3.2 remains in progress for its weighted nonaligned residual. The actual F_2<=N^epsilon bound does not close T19.4. Coverage stays 68/167; confirmed improvements are 68. No target host count, external assumption, Paper C port, manuscript-byte change or Palomar registration.",
       "manuscript_integration": {
+        "target_version": "P1 V1.8 working draft",
+        "status": "integrated",
+        "source": "manuscripts/paper-p1/v1.8/sources/main_sections/arithmetic.tex",
+        "label": "p1:arith:hosts",
+        "validation_record": "docs/manuscript-v1.8-validation.json"
+      },
+      "validation_commit": "e36d5982ab5f4949e0a5620b194b1ba69f7ce883",
+      "previous_integration_record": {
         "target_version": "next version after formalization",
         "status": "not_integrated"
-      },
-      "validation_commit": "e36d5982ab5f4949e0a5620b194b1ba69f7ce883"
+      }
     },
     {
       "id": "P1-MATH-0069",
@@ -4133,7 +4161,12 @@
           "validation_commit": "7fa74e37b9349c321f37f0795e93147c6fe7fe5d"
         }
       ],
-      "validation_commit": "2c1fea4bd20c70a04e89b790299059aac54a5121"
+      "validation_commit": "2c1fea4bd20c70a04e89b790299059aac54a5121",
+      "v1.8_editorial_disposition": {
+        "status": "not_inserted_as_a_separate_result",
+        "reason": "Historical intermediate step; the printed stronger unconditional result is integrated through P1-MATH-0427 or P1-MATH-0409.",
+        "validation_record": "docs/manuscript-v1.8-validation.json"
+      }
     },
     {
       "id": "P1-MATH-0074",
@@ -4650,10 +4683,17 @@
       "impact": "Weakens the cap hypothesis and adds the subpolynomial endpointa=0 to the conditional point-count consequence. The analytic estimate and all its limit steps are proved without BCN; actual curve counts retain BCN as an ordinary explicit argument because its Lean proof is still open. This is not a correction to the original conclusion, a proof of BCN, a varying-degree-constant estimate or extra completed coverage. Coverage76/167; confirmed findings79.",
       "validation": "Lean v4.36.0-rc2 full build passed (10525 jobs); actual axiom audit passed for all 5900 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3616 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 15.93 GiB. Actual finite plane-polynomial integer grids, exact real floor boxes and a negation bijection to the previously used offset grid are proved. Convex logarithmic degree profiles prove the endpoint maximum and the cap-growth-free bound4sqrt(H)+e*(M^2+(log H)^2). All real-logarithmic weights and uniform little-o limits are internally proved. The actual source big-O and uniform o(B) grid-count conclusions retain PlaneCurvePointCount.UniformBound c kappa as an ordinary explicit argument. The external BCN proof and geometric plane-polynomial specialization remain open; no global axiom or completed proof of13.4 is introduced. Article13.5 is conditional and adds no proved coverage. P1-MATH-0079 records that only an upper degree cap and0<=a<1/2 are needed. Coverage76/167 (main28/73, companion48/94); confirmed findings79. The exact primary author version arXiv2302.04209v2, Theorem2 equation(27), page7 was checked. No extra Paper C source, dependency download, manuscript-byte change or Palomar registration.",
       "manuscript_integration": {
+        "target_version": "P1 V1.8 working draft",
+        "status": "integrated",
+        "source": "manuscripts/paper-p1/v1.8/sources/main_sections/pair_rigidity.tex",
+        "label": "p13:rig:sublinear-grid",
+        "validation_record": "docs/manuscript-v1.8-validation.json"
+      },
+      "validation_commit": "0f51b89b05a7d43e077f2c1e20c64e27567226cc",
+      "previous_integration_record": {
         "target_version": "next version after formalization",
         "status": "not_integrated"
-      },
-      "validation_commit": "0f51b89b05a7d43e077f2c1e20c64e27567226cc"
+      }
     },
     {
       "id": "P1-MATH-0080",
@@ -9106,7 +9146,12 @@
         "target_version": "next version after formalization",
         "status": "not_integrated"
       },
-      "validation_commit": "245615d36411dab87ddf9eb0c3fc3c945b75edb4"
+      "validation_commit": "245615d36411dab87ddf9eb0c3fc3c945b75edb4",
+      "v1.8_editorial_disposition": {
+        "status": "not_inserted_as_a_separate_result",
+        "reason": "Historical intermediate step; the printed stronger unconditional result is integrated through P1-MATH-0427 or P1-MATH-0409.",
+        "validation_record": "docs/manuscript-v1.8-validation.json"
+      }
     },
     {
       "id": "P1-MATH-0114",
@@ -21014,10 +21059,17 @@
       ],
       "validation": "Verified under Lean v4.36.0-rc2: full build passed (15779 jobs); direct axiom audit passed for 14637 declarations using only propext, Classical.choice and Quot.sound; all 13980 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.06 GiB.",
       "integration": {
+        "target_version": "P1 V1.8 working draft",
+        "status": "integrated",
+        "source": "manuscripts/paper-p1/v1.8/sources/main_sections/arithmetic.tex",
+        "label": "p1:arith:hosts",
+        "validation_record": "docs/manuscript-v1.8-validation.json"
+      },
+      "validation_commit": "085a0a4b647d37f74d7c09851ff0cac345d2b5c6",
+      "previous_integration_record": {
         "target": "new manuscript version after formalization",
         "status": "not_integrated"
-      },
-      "validation_commit": "085a0a4b647d37f74d7c09851ff0cac345d2b5c6"
+      }
     },
     {
       "id": "P1-MATH-0410",
@@ -21669,10 +21721,17 @@
       ],
       "validation": "Verified under Lean v4.36.0-rc2: full build passed (15915 jobs); direct axiom audit passed for 14793 declarations using only propext, Classical.choice and Quot.sound; all 14149 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.56 GiB.",
       "integration": {
+        "target_version": "P1 V1.8 working draft",
+        "status": "integrated",
+        "source": "manuscripts/paper-p1/v1.8/sources/main_sections/exact_transfer.tex",
+        "label": "p13:transfer:primitive",
+        "validation_record": "docs/manuscript-v1.8-validation.json"
+      },
+      "validation_commit": "3616851e6b36ee29c76e78e4597671fd5caa83f4",
+      "previous_integration_record": {
         "target": "new manuscript version after formalization",
         "status": "not_integrated"
-      },
-      "validation_commit": "3616851e6b36ee29c76e78e4597671fd5caa83f4"
+      }
     },
     {
       "id": "P1-MATH-0428",
@@ -42914,11 +42973,56 @@
       "proposed_revision": "Use the exact individual-bound endpoint for the unnumbered fixed-arity physical witness in the version 1.8 companion. This exposes an existing proof step; it is not an additional scientific strengthening of the earlier dense-primitive result.",
       "impact": "Exact manuscript-to-Lean interface for the two separate caps; all 167 numbered results, original arithmetic rates and six registration selections are preserved. No new geometric input, parameter growth regime or registry target.",
       "validation": {
-        "status": "pending_full_replay",
+        "checkpoint": "P1-MATH-0998",
+        "source_commit": "c07b036aed5a9310d4f79f816969e45a20628138",
+        "status": "passed",
+        "full_build_jobs": 18617,
+        "audited_theorems": 19957,
+        "substantive_theorems": 19529,
+        "preserved_component_solution_theorems": 214,
+        "consolidated_solution_theorems": 214,
+        "distinct_checked_references": 19880,
+        "actual_process_exit_codes": {
+          "build": 0,
+          "audit": 0,
+          "references": 0
+        },
         "toolchain": "leanprover/lean4:v4.36.0-rc2",
-        "prototype_actual_exit_code": 0
+        "mathlib_commit": "9d581dfff2e41de989072ea63abf3daf69311520",
+        "permitted_kernel_axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "logs": [
+          {
+            "kind": "build",
+            "path": "docs/validation/checkpoint-0998/build.log.gz",
+            "sha256_gzip": "d78d81f34675675942a064a301195cf2674c194a42c441d08e6fb031a5de4976"
+          },
+          {
+            "kind": "audit",
+            "path": "docs/validation/checkpoint-0998/audit.log.gz",
+            "sha256_gzip": "9a8c8955902b2f30b3957aa230d6b046adfa0185afc3f71eec44ab8843d16ea2"
+          },
+          {
+            "kind": "references",
+            "path": "docs/validation/checkpoint-0998/references.log.gz",
+            "sha256_gzip": "b7bbb0c97bdaacdfcb9a5c7b2ea739f3de6c7d18ec488a89dab9143cd8bcd5ec"
+          }
+        ],
+        "scope": "Expose the two separate large-odd-kernel bounds for distinct actual natural values at a physical anchor, with the same fixed-arity, active-nonalignment, recovery-exclusion and injectivity assumptions. This extracts an existing internal proof step. All prior numbered-result proofs and all six registration interfaces are preserved. The v1.8 manuscript and visual review are recorded separately."
       },
       "integration": {
+        "target_version": "P1 V1.8 working draft",
+        "status": "integrated",
+        "source": "manuscripts/paper-p1/v1.8/sources/companion_sections/confinement.tex",
+        "label": "p18:conf:anchored",
+        "validation_record": "docs/manuscript-v1.8-validation.json"
+      },
+      "validation_source_commit": "c07b036aed5a9310d4f79f816969e45a20628138",
+      "validation_record": "docs/validation/checkpoint-0998/validation.json",
+      "previous_integration_record": {
         "target": "manuscripts/paper-p1/v1.8/sources/companion_sections/confinement.tex",
         "status": "pending_validation"
       }

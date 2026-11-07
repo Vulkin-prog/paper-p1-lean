@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "purpose": "Distinguish the original declaration kind from exported module signatures without accepting genuine axioms as manuscript proof endpoints.",
+  "observations": [
+    {
+      "name": "PaperP1.DenseAnchoredIndividualWitness.uniform_individual_witness",
+      "original_kind": "theorem",
+      "exported_kind": "axiom_signature"
+    },
+    {
+      "name": "PaperP1.SharpPrimitiveMass.uniform_rank_mass",
+      "original_kind": "theorem",
+      "exported_kind": "axiom_signature"
+    },
+    {
+      "name": "propext",
+      "original_kind": "axiom",
+      "exported_kind": "axiom_signature"
+    }
+  ],
+  "actual_extraction_exit_code": 0,
+  "pinned_api": "Lean.getOriginalConstKind? in Lean v4.36.0-rc2",
+  "documentation": "https://lean-lang.org/doc/api/Lean/OriginalConstKind.html"
+}

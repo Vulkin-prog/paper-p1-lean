@@ -1,0 +1,193 @@
+\section{Fixed sources, primitive families, and fixed moments}
+\label{p1:fixed:section}
+
+The boundary estimate will use large families, but its finitely
+many small sizes require stronger arithmetic input. We establish
+that input first. All numbers of sources and all moment orders
+in this section are fixed before \(N\) tends to infinity.
+
+For a family \(I\) of windows, let \(R(I)\) be the kernel
+of the sum map on the effective spaces and put \(\rho_{\mathrm{rel}}(I)=\dim R(I)\).
+For \(s\) fixed sources \(\boldsymbol x=(x_1,\ldots,x_s)\) and a
+new centre \(z\), write
+\begin{equation}
+ \delta_z=\dim R(\boldsymbol x,z)-\dim R(\boldsymbol x)
+          =\dim\operatorname{pr}_z R(\boldsymbol x,z).
+ \label{p1:fixed:delta}
+\end{equation}
+If the prescribed affine events at the sources and target are
+jointly compatible, their conditional probability is
+\(p_z2^{\delta_z}\); it is zero otherwise. The same formula applies
+to homogeneous prescriptions. The proofs on regular windows and their
+effective-space extension in Section~\ref{p13:exact:section} establish
+the following inputs without using a distributional approximation.
+
+\subsection{Regularizing the coordinate labels}
+
+The following linear-algebra lemma gives control of every short
+circuit of coordinate labels, including repeated labels.
+
+\begin{lemma}[Disjoint recovery]
+\label{p1:fixed:recovery}
+Let \(R\subseteq\F_2^V\), \(n=|V|\), and let
+\(\ell_v\in R^*\) be its coordinate forms. For fixed integers
+\(d\ge1\) and \(t\ge2\), there is a subspace \(R'\subseteq R\)
+with
+\begin{equation}
+ \codim_R R'\le 2n t^{-1/d}
+ \label{p1:fixed:recovery-cost}
+\end{equation}
+such that no nonzero \(a\in(R')^*\) has \(t\) representations
+\[
+ a=\sum_{v\in A_i}\ell_v|_{R'},\qquad
+ 1\le |A_i|\le d,
+\]
+by pairwise disjoint subsets \(A_1,\ldots,A_t\) of \(V\).
+Each nonzero coordinate label occurs at most \(K=t-1\) times.
+For \(1\le j\le d\), a nonzero label has at most
+\(j!t^{j-1}\) representations as a sum of \(j\) distinct
+linearly independent labels.
+\end{lemma}
+
+\begin{proof}
+Start with \(W=0\subset R^*\). Whenever \(R^*/W\) has a
+nonzero class with \(t\) such disjoint recovery sets, record
+those sets and adjoin one representative \(\alpha_i\) of the
+class to \(W\). Each step increases \(\dim W\) by one. Fix the
+entire resulting sequence of \(m\) steps.
+
+Select each coordinate independently with probability
+\(u\in(0,1)\), obtaining \(A\subseteq V\). At step \(i\),
+declare success if one of its recorded recovery sets is
+contained in \(A\). On success,
+\(\alpha_i\in\langle\ell_v:v\in A\rangle+W_{i-1}\).
+The failure probability is at most \((1-u^d)^t\), since the
+recorded sets at that step are disjoint. For each realization,
+\[
+ m\le |A|+\#\{\hbox{failed steps}\}.
+\]
+Taking expectations and choosing \(u=t^{-1/d}\) gives
+\[
+ m\le \frac{nu}{1-(1-u^d)^t}\le2nt^{-1/d}.
+\]
+The annihilator \(R'=W^\perp\) has the stated codimension
+and satisfies the stopping condition.
+
+The multiplicity bound follows by using singleton recovery sets.
+To count independent \(j\)-term representations of a nonzero
+\(a\), take a maximal disjoint family of their label supports.
+It has fewer than \(t\) members. Its union has at most
+\(j(t-1)\) labels and meets every representation. Removing
+one of these labels reduces to a \((j-1)\)-term independent
+representation of a nonzero vector: the removed label cannot
+equal \(a\), because the remaining independent labels would
+then sum to zero. Induction from \(j=1\) proves the last bound.
+\end{proof}
+
+\subsection{Uniformly few targets of large rank loss}
+
+\begin{proposition}[Large rank loss after fixed sources]
+\label{p1:fixed:targets}
+For every fixed \(s\ge1\) and \(\eta,\varepsilon>0\),
+\begin{equation}
+ \sup_{x_1,\ldots,x_s\ {\rm distinct}}
+ \#\{z\in I_N\setminus\{x_1,\ldots,x_s\}:
+                   \delta_z\ge\eta L\}
+       \ll_{s,C,\eta,\varepsilon}N^\varepsilon .
+ \label{p1:fixed:targets-bound}
+\end{equation}
+The sources may be dependent or overlapping.
+\end{proposition}
+
+\noindent The complete proof is given in Section~\ref{p14:comp:fixed-targets}.
+
+
+\begin{proposition}[Conditional sums and propagation]
+\label{p1:fixed:propagation}
+For every fixed \(s\ge1\) and \(\varepsilon>0\), uniformly
+over compatible prescribed affine events at \(s\) distinct
+sources,
+\begin{equation}
+ \sum_{z\notin\{x_1,\ldots,x_s\}}
+ \P(J_z=1\mid J_{x_1}=\cdots=J_{x_s}=1)
+       \ll_{s,C,\varepsilon}N^\varepsilon .
+ \label{p1:fixed:conditional}
+\end{equation}
+This assertion also holds when the affine prescriptions
+are replaced by homogeneous ones. If a family of ordered
+\(s\)-tuples has total positive joint mass \(W_{s,N}\),
+the mass of its extensions to ordered distinct \(r\)-tuples,
+for fixed \(r\ge s\), is
+\begin{equation}
+ W_{s\to r,N}\ll_{r,C,\varepsilon}N^\varepsilon W_{s,N}.
+ \label{p1:fixed:propagate}
+\end{equation}
+In particular, the mass of fixed \(r\)-tuples containing
+a local defect or a compatible contact is
+\(O_{r,C,\varepsilon}(N^{-1+\varepsilon})\).
+\end{proposition}
+
+\begin{proof}
+For \(\delta_z<\eta L\), the conditional sum is at most
+\(2Np2^{\eta L}\ll_C N^\eta\). For
+\(\delta_z\ge\eta L\), Proposition~\ref{p1:fixed:targets}
+counts \(O(N^{\varepsilon/2})\) targets, each of conditional
+probability at most one. Take \(\eta=\varepsilon/2\).
+The proof uses only the rank loss and compatibility, so
+it applies unchanged to homogeneous prescriptions.
+Iterating with margin \(\varepsilon/(r-s)\) proves
+\eqref{p1:fixed:propagate}. Allowing a seed at any positions
+in the ordered tuple multiplies the estimate by a constant
+depending on \(r\).
+
+The local and contact seeds have positive masses
+\(N^{-1+o(1)}\), by the regular-core estimates in
+Section~\ref{p1:arith:section}. Contacts at distance
+strictly less than \(L\) have zero joint probability.
+Propagate the remaining seeds to obtain the last claim.
+\end{proof}
+
+\subsection{The correction to every fixed moment}
+
+\begin{theorem}[Fixed factorial moments]
+\label{p1:fixed:moments}
+For every fixed integer \(r\ge2\) and every
+\(\varepsilon>0\),
+\begin{equation}
+ \E(Z_N)_r
+   =\mu_N^r+\binom r2\mu_N^{r-2}\alpha_N
+       +O_{r,C,\varepsilon}(N^{-4/5+\varepsilon}).
+ \label{p1:fixed:moment-expansion}
+\end{equation}
+Equivalently, one may use \(\lambda_N\) and
+\(a_N=\E(Z_N)_2-\lambda_N^2\).
+All fixed ordinary moments are bounded. More precisely,
+with \(T_r(u)=\E[\Pois(u)^r]\),
+\begin{equation}
+ \E Z_N^r
+    =T_r(\mu_N)+\frac{\alpha_N}{2}T_r''(\mu_N)
+       +O_{r,C,\varepsilon}(N^{-4/5+\varepsilon}).
+ \label{p1:fixed:ordinary}
+\end{equation}
+For every fixed \(r\ge3\), the \(r\)-th factorial
+cumulant is \(O_{r,C,\varepsilon}(N^{-4/5+\varepsilon})\).
+\end{theorem}
+
+This first estimate is proved independently of the law approximation.
+Its bounded-moment conclusion is used below in the sharp lower bound.
+After that reconstruction, Corollary~\ref{p13:optimal:weighted}
+improves the scalar moment remainders to
+\(O_{r,C,\varepsilon}(N^{-4/3+\varepsilon})\) when the exact
+parameters are retained.
+
+\noindent The complete proof is given in Section~\ref{p14:comp:fixed-moments}.
+
+
+For \(r\ge2\), the first discrepancy in
+\eqref{p1:fixed:moment-expansion} has the exact scale
+\(L N^{-2/3}\), by \eqref{p1:eq:alpha-leading}.
+The theorem fixes \(r\) first. Its proof does not
+allow \(r\) to grow like \(\log N/\log\log N\).
+The uniform certificate tools in Section~\ref{p14:cert:section} and the
+large-order reconstruction in Section~\ref{p13:transfer:section}
+supply that separate input.

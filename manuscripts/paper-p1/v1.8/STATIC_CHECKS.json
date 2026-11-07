@@ -1,0 +1,64 @@
+{
+  "baseline": "2553ce56f7cc6bdc10194801c3d926b72b587dd1",
+  "static_only": true,
+  "source_files": 48,
+  "ledger_results_preserved": 167,
+  "modified_source_files": 20,
+  "numbered_before": 170,
+  "numbered_after": 170,
+  "per_file_numbered_environment_and_label_order_preserved": true,
+  "changed_numbered": [
+    [
+      "p1:limits:colored-tail",
+      "companion_sections/limits_appendix.tex"
+    ],
+    [
+      "p1:arith:hosts",
+      "main_sections/arithmetic.tex"
+    ],
+    [
+      "p1:core:generator",
+      "main_sections/cores.tex"
+    ],
+    [
+      "p13:transfer:primitive",
+      "main_sections/exact_transfer.tex"
+    ],
+    [
+      "p1:limits:vector-reference",
+      "main_sections/limits_appendix.tex"
+    ],
+    [
+      "p13:rig:sublinear-grid",
+      "main_sections/pair_rigidity.tex"
+    ],
+    [
+      "p13:lower:quartic",
+      "main_sections/quartic_lower.tex"
+    ]
+  ],
+  "lost_numbered_labels": [],
+  "added_numbered_labels": [],
+  "removed_auxiliary_labels": [
+    "p1:limits:two-small-pivots"
+  ],
+  "new_auxiliary_labels": [
+    "p18:conf:anchored",
+    "p18:conf:fixed-primitive",
+    "p18:conf:pair-profile",
+    "p18:limits:bivariate-reference",
+    "p18:limits:quadratic-order",
+    "p18:limits:reference-identities",
+    "p18:limits:smooth-census"
+  ],
+  "duplicate_labels": [],
+  "static_errors": [],
+  "unresolved_labels": [],
+  "missing_bibliography_keys": [],
+  "unused_bibliography_keys": [],
+  "change_map_hash_and_line_counts_valid": true,
+  "no_build_run": true,
+  "limitations": [
+    "Static checks do not establish TeX rendering or mathematical truth. Parent handles compilation, produced result numbers and PDF inspection."
+  ]
+}

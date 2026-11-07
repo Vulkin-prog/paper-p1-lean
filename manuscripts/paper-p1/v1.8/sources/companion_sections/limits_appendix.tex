@@ -1,0 +1,1686 @@
+\section{Tails, deletion, and limits of positive comparison methods}
+\label{p1:limits:section}
+
+The stopped expansion controls a distribution without imposing an
+exponential moment bound on the original count.  This distinction is
+necessary in the present model.  We first record the exact support and
+local structure, then give a nearby count with factorial tails.  A real
+arithmetic cylinder shows why these tails cannot simply be transferred
+back.  The final parts examine deletion of active pairs and the positive
+cost of forcing private prime signs.
+
+\subsection{Exact support and the local rank-one structure}
+
+Write $Z=Z_N$, $p=2^{-L}$ and $R_N=\lceil N/L\rceil$.
+For $j\ge1$, $(z)_j=z(z-1)\cdots(z-j+1)$.
+
+\begin{proposition}[Support and factorial lattice]
+\label{p1:limits:lattice}
+For every $N\ge2$ and $L\ge1$,
+\begin{equation}
+ 0\le Z\le R_N,\qquad
+ \E(Z)_j\in j!p^j\mathbb Z_{\ge0}\quad(j\ge1).
+ \label{p1:limits:lattice-eq}
+\end{equation}
+\end{proposition}
+\begin{proof}
+Two starts at distance less than $L$ cannot both be active: the
+predecessor of the later start lies inside the earlier constant run.
+Thus the active starts in an interval of $N$ integers are $L$-separated,
+which gives the support bound.  For $j$ distinct starts, their $jL$
+relative sign prescriptions form an affine binary system.  Its joint
+probability is either zero or $2^{-r}$ for an integer $r\le jL$.
+It is therefore an integer multiple of $p^j$.  Finally,
+$(Z)_j=j!\sum_{|I|=j}\prod_{x\in I}J_x$.
+\end{proof}
+
+The local exceptional windows have an exact description. We use the
+rank-one conclusion of Lemma~\ref{p1:limits:local-rigidity}; a bound $o(L)$
+for the local nullity would not suffice for what follows.
+
+
+
+The proof of Lemma~\ref{p1:limits:local-rigidity} also gives raw-value nullity at most two at critical length,
+because the even relation code has codimension at most one in the
+full relation code.  It also gives exact $k$-wise independence of the star coordinates
+$Y_i=f(U)f(U+i)$, $1\le i<B$, whenever
+$(k+1)\log(64B)<\log U$: every nonempty product of at most $k$
+relative signs selects at most $k+1$ values, and Runge excludes a
+square product.  These are sufficient bounds.  They do not establish
+that critical windows with a nonzero relation actually exist.
+
+Let $\mathcal R$ be the collection of nonempty even sets $S$ of integers
+whose product is a square and which are contained in at least one
+$V_x$, $x\in I_N$.  Write
+\[
+ \begin{gathered}
+ a_S=\min S,\qquad b_S=\max S,\qquad d_S=b_S-a_S,\\
+ B_S=\{b_S-L+1,\ldots,a_S+1\}\cap I_N,\qquad
+ e_S=\ind_{\{a_S+1\in I_N\}}.
+ \end{gathered}
+\]
+
+\begin{proposition}[Exact local blocks]
+\label{p1:limits:local-blocks}
+For sufficiently large $N$ in a fixed critical band, the intervals
+$B_S$, $S\in\mathcal R$, are nonempty and pairwise disjoint.
+They partition the locally deficient starts.  On such a block,
+\begin{equation}
+ \P(J_x=1)=
+ \begin{cases}0,&x=a_S+1,\\2p,&x\in B_S\setminus\{a_S+1\},\end{cases}
+ \qquad
+ \sum_{x\in B_S}J_x\sim\mathrm{Bernoulli}\bigl(2p(|B_S|-e_S)\bigr).
+ \label{p1:limits:block-law}
+\end{equation}
+Outside these blocks the marginal is $p$.  In particular,
+\begin{align}
+ \E Z-Np&=p\sum_{S\in\mathcal R}(|B_S|-2e_S),
+       \label{p1:limits:block-mean}\\
+ \sum_{x\in I_N}|\P(J_x=1)-p|
+       &=p\sum_{S\in\mathcal R}|B_S|.
+       \label{p1:limits:block-absolute}
+\end{align}
+A full block contributes $p(L-d_S-1)$ to the mean discrepancy.
+There are at most two blocks truncated by the endpoints of $I_N$,
+whose total boundary correction is at most $2Lp$ in absolute value.
+\end{proposition}
+\begin{proof}
+The condition $S\subseteq V_x$ is exactly
+$b_S-L+1\le x\le a_S+1$.  If two distinct such sets belonged
+to the same window, they would give two independent nonzero
+relative relations, contrary to Lemma~\ref{p1:limits:local-rigidity}.
+Thus their intervals are disjoint and every deficient window lies
+in exactly one.  Its unique nonzero relation has affine phase
+$(-1)^{\ind_{\{x-1\in S\}}}$, so Fourier inversion gives
+$p(1+(-1)^{\ind_{\{x-1\in S\}}})$.  Since $x-1\le a_S$,
+the predecessor belongs to $S$ exactly when $x=a_S+1$.
+This proves the marginal formulas.  The diameter of $B_S$ is at
+most $L-1$; consequently at most one of its starts is active.
+Its count is Bernoulli with mean the sum of the displayed
+marginals.  Summation proves \eqref{p1:limits:block-mean} and
+\eqref{p1:limits:block-absolute}.  A full interval has
+$L-d_S+1$ starts.  Disjoint intervals allow at most one truncation
+at each endpoint, and each full interval has at most $L$ starts.
+\end{proof}
+
+No independence between the Bernoulli block counts is asserted.
+For the complete relative sign vector $Y_x\in\{\pm1\}^L$ one
+also has the exact identity
+\[
+ \TV(\Law Y_x,\mathrm{Unif}\{\pm1\}^L)=1-2^{-r_x},
+ \qquad r_x=L-\dim S_x.
+\]
+Indeed $Y_x$ is uniform on a binary image of size $2^{L-r_x}$.
+Thus this local distance is either zero or $1/2$ at critical
+length.  A nonzero $S$ must have diameter at least
+$(1-o(1))\log N$, by the subcritical part of Lemma~\ref{p1:limits:local-rigidity};
+its full block has length at most
+$(1/\log2-1+o(1))\log N$.
+
+\subsection{A nearby count with factorial tails at every order}
+
+Let $G=G_N$, $n=|G|$, $\mu=np$, and let $E'_N$ be the exceptional
+event of Lemma~\ref{p1:core:exceptional}.  It contains the
+occurrence of a primitive family of size at least three, an active
+contact, an active bad dependent pair, two good active pairs, and
+an additional dependence after compressing the unique good pair.
+Its probability $\delta_N$ is $O_\varepsilon(N^{-4/5+\varepsilon})$.
+Outside it, the active original spaces are a direct sum of single
+windows and at most one good pair.  Deleting one endpoint of that
+pair, if present, therefore gives a direct family.
+
+\begin{theorem}[A modified count with all factorial tails]
+\label{p1:limits:modified}
+On the original probability space define
+$\widetilde Z_N=Z_N^\circ\ind_{(E'_N)^c}$.
+Then
+\begin{equation}
+ \TV(\Law Z_N,\Law\widetilde Z_N)
+       \ll_\varepsilon N^{-4/5+\varepsilon}.
+ \label{p1:limits:modified-tv}
+\end{equation}
+Uniformly for every integer $k\ge1$, every real $s\ge1$, and
+every integer $r\ge1$,
+\begin{align}
+ \P(Z_N^\circ\ge k)&\le\frac{\mu^{k-1}}{(k-1)!}+\delta_N,
+       \label{p1:limits:real-tail}\\
+ \P(\widetilde Z_N\ge k)&\le\frac{\mu^{k-1}}{(k-1)!},
+       \label{p1:limits:modified-tail}\\
+ \E s^{\widetilde Z_N}&\le s(1+p(s-1))^n
+                         \le s e^{(s-1)\mu},
+       \label{p1:limits:modified-exponential}\\
+ \E(\widetilde Z_N)_r&\le\mu^r+r\mu^{r-1}.
+       \label{p1:limits:modified-moments}
+\end{align}
+\end{theorem}
+\begin{proof}
+Let $R$ be the maximum cardinality of a direct active subfamily of
+$G$.  Directness makes the prescribed events exactly independent.
+A union bound gives
+\[
+ \P(R\ge k)\le\sum_{\substack{|I|=k\\I\ \text{direct}}}q(I)
+       \le\binom nkp^k\le\frac{\mu^k}{k!}.
+\]
+Choose one maximizing direct family in each realization.  Its
+$\binom Rr$ subsets of size $r$ are all direct and active, whence
+\[
+ \E\binom Rr\le\binom nrp^r\quad(r\ge0).
+\]
+Outside $E'_N$ we have $Z_N^\circ\le R+1$, and everywhere
+$\widetilde Z_N\le R+1$.  The two tail bounds follow.
+Expanding $s^R=(1+(s-1))^R$ with nonnegative coefficients gives
+$\E s^R\le(1+p(s-1))^n$.  Finally
+$\binom{R+1}{r}=\binom Rr+\binom R{r-1}$ proves the factorial
+moment bound.  The coupling error is at most $\delta_N$ on $G$;
+Proposition~\ref{p1:arith:core} restores the deleted starts.
+\end{proof}
+
+These inequalities concern the modified variable.  The event defining
+it depends on the whole active configuration, so its indicators no
+longer have the original affine marginals or centred factorization.
+In particular, \eqref{p1:limits:modified-tv} does not bound
+$\E[s^{Z_N};E'_N]$.
+
+\subsection{Effective tails of the original count}
+
+A different argument gives a quantitative tail bound for $Z_N$ itself,
+at a larger threshold.  It tracks the moment order explicitly.
+Put $H=\log N$ and $h=\log H$.
+
+\begin{lemma}[Branching with an explicit order dependence]
+\label{p1:limits:branching}
+For any $j$ old starts, let $\mathcal F_{\rm old}$ contain all
+their raw sign values.  There is a deterministic exceptional set of
+new starts of size at most
+\[
+ D_{j,N}=j(2L+1)+B\sqrt{3N}
+       \exp\left(C\sqrt{m_{j,N}/\log(m_{j,N}+2)}\right),
+ \qquad
+ m_{j,N}=\left\lceil\pi(B)+\frac{jB\log(3N)}{\log B}\right\rceil,
+\]
+outside which the $L$ new relative signs are uniform and independent
+of $\mathcal F_{\rm old}$.  In particular, uniformly for $1\le j\le H$,
+\begin{equation}
+ \log(\lambda_N+D_{j,N})
+       \le\frac H2+C_C\left(h+\frac{\sqrt j\,H}{h}\right).
+ \label{p1:limits:branching-uniform}
+\end{equation}
+If $F_k=\E(Z_N)_k$, then
+\begin{equation}
+ F_k\le C_C\exp\left\{
+   \frac{k-2}{2}H+C_C\left(kh+\frac{k^{3/2}H}{h}\right)
+                     \right\}\quad(2\le k\le H).
+ \label{p1:limits:growing-moments}
+\end{equation}
+\end{lemma}
+\begin{proof}
+Let $\mathcal P$ consist of the primes at most $B$ and the primes
+larger than $B$ dividing one of the old values.  It has at most
+$m_{j,N}$ members.  The number of integers at most $3N$ whose
+squarefree part is supported on $\mathcal P$ is at most
+\[
+ \sqrt{3N}\prod_{\ell\in\mathcal P}(1+\ell^{-1/2}).
+\]
+For a set of $m$ primes, the estimate
+$\ell_i\gg i\log(i+1)$ for its $i$th member implies
+\[
+ \log\prod_{\ell\in\mathcal P}(1+\ell^{-1/2})
+       \le C\sqrt{m/\log(m+2)}.
+\]
+Delete starts whose new window overlaps an old one or contains
+at least two integers with squarefree part supported on
+$\mathcal P$.  Counting each such integer in at most $B$ windows
+gives the displayed bound for $D_{j,N}$.
+
+If a nontrivial combination of the new relative rows belonged
+to the old raw-value span, it would select an even nonempty set
+of new values.  A prime larger than $B$ in such a value is private
+in the new window, so must also divide an old value.  Every
+selected value would consequently have squarefree part supported
+on $\mathcal P$.  At least two are selected, contradicting the
+deletion rule.  Thus the rank increases by exactly $L$ even after
+conditioning on all old raw values, which proves independence.
+
+For $j\le H$, $m_{j,N}=O_C(jH^2/h)$ and
+$\log(m_{j,N}+2)\gg h$.  This proves
+\eqref{p1:limits:branching-uniform}.  Summing the conditional
+probabilities of the next start, using the bound one on the
+exceptional set, yields the finite recurrence
+$F_{j+1}\le(\lambda_N+D_{j,N})F_j$.
+The pair estimate gives $F_2=O_C(1)$.  Multiplying from $j=2$
+to $k-1$ and summing $\sqrt j$ proves
+\eqref{p1:limits:growing-moments}.
+\end{proof}
+
+\begin{proposition}[A quantified effective support]
+\label{p1:limits:effective-tail}
+For each fixed $D>0$ and integer $r\ge0$, there is a constant
+$K=K(C,D,r)$ such that
+\begin{equation}
+ \E[Z_N^r;Z_N>A_N]\le N^{-D},\qquad
+ A_N=\left\lceil\sqrt N\exp\left(\frac{K\log N}
+                                    {(\log\log N)^{2/3}}\right)\right\rceil
+ \label{p1:limits:effective-threshold}
+\end{equation}
+for sufficiently large $N$.  Hence, for every fixed
+$\eta,D>0$ and integer $r\ge0$,
+$\E[Z_N^r;Z_N>N^{1/2+\eta}]=O(N^{-D})$.
+\end{proposition}
+\begin{proof}
+Take $k=\lceil h^{2/3}\rceil$.  Eventually $k>r$ and
+$A_N\ge2k$.  On $Z_N>A_N$,
+$Z_N^r\le2^kA_N^{r-k}(Z_N)_k$.
+The logarithm of the resulting bound from
+\eqref{p1:limits:growing-moments} is at most
+\[
+ \frac{r-2}{2}H+C_C\left(kh+\frac{k^{3/2}H}{h}\right)
+        -(k-r)\frac{KH}{h^{2/3}}+k\log2+O_C(1).
+\]
+Here $kh=o(H)$, $k^{3/2}/h=1+o(1)$ and
+$(k-r)/h^{2/3}=1+o(1)$.  A sufficiently large fixed $K$
+makes this at most $-DH$.  The last assertion follows by
+comparison of thresholds.
+\end{proof}
+
+The all-fixed-order bounds of Theorem~\ref{p1:fixed:moments}
+also imply $\E[Z_N^r;Z_N>N^\eta]=O(N^{-D})$ for fixed
+$\eta,D,r$, by choosing one sufficiently large fixed moment.
+The value of \eqref{p1:limits:effective-threshold} is its explicit
+control of a growing order, without extrapolating fixed-order
+constants.
+
+A larger threshold admits a much smaller exceptional probability.
+The distinction is useful when the moment order itself increases
+as fast as $\log N$.
+
+\paragraph{Branching through a quadratic logarithmic order.}
+\label{p18:limits:quadratic-order}
+For every fixed $K\ge0$ and $\xi>0$, one threshold, depending on
+$C,K,\xi$, precedes all critical lengths and all integers
+$0\le k\le K(\log N)^2$ for which
+\[
+                  F_k\le\bigl(2N^{3/4+\xi}\bigr)^k.
+\]
+This estimate is obtained from $F_0=1$, independently of any
+fixed-order moment bound or law approximation.
+
+To prove it, let $\mathcal P$ contain the primes at most $B$ and
+all prime divisors of the raw values in at most $j\le K(\log N)^2$
+old windows. Their logarithmic budget satisfies
+\[
+ \sum_{\ell\in\mathcal P}\log\ell
+ \le \sum_{\ell\le B}\log\ell+jB\log(3N)
+ \le A_{C,K}(\log N)^4=:Y .
+\]
+For any finite prime set with this budget, splitting at $Y$ and
+using the elementary prime upper bound gives
+\[
+ \sum_{\ell\in\mathcal P}\ell^{-3/4}
+ \ll\frac{Y^{1/4}}{\log Y}.
+\]
+Indeed the primes at most $Y$ have this bound by partial summation;
+for the others use
+$\ell^{-3/4}\le Y^{-3/4}\log\ell/\log Y$ and sum the budget.
+Every positive integer with squarefree part supported on $\mathcal P$
+has a unique form $a^2m$, with $m$ squarefree on that set.
+Rankin's inequality at $3/4$ therefore bounds their number up to $3N$ by
+\[
+ (3N)^{3/4}\zeta(3/2)
+       \prod_{\ell\in\mathcal P}(1+\ell^{-3/4})
+ \le N^{3/4}\exp\{O_{C,K}(\log N/\log\log N)\}.
+\]
+This is uniform in the actual old windows.
+
+Delete only new windows containing at least two such supported
+values. The number deleted is at most $B$ times the displayed
+population, hence at most $N^{3/4+\xi}$ after reducing the input
+margin. Outside this set the same parity-row argument as in
+Lemma~\ref{p1:limits:branching} makes the whole new relative vector
+fair and independent of every old raw value: a nonzero relative
+relation would select at least two supported values.
+This argument also excludes an old start itself, so the recurrence
+for distinct ordered tuples is valid. It yields
+$F_{j+1}\le(\lambda_N+N^{3/4+\xi})F_j$.
+Since $\lambda_N\le2^C$, increasing the common threshold and
+iterating from $F_0=1$ proves the claim.
+
+\begin{proposition}[A very small tail from a power threshold]
+\label{p1:limits:colored-tail}
+For all sufficiently large $N$ in a fixed critical band, uniformly
+for every real $b\ge N^{9/10}$,
+\begin{equation}
+ \P(Z_N>b)\le e^{-2(\log N)^3},\qquad
+ \E[Z_N^r;Z_N>b]\le e^{-(\log N)^3/2}
+       \quad(r\in\mathbb N,\ 0\le r\le\log N).
+ \label{p1:limits:colored-tail-bound}
+\end{equation}
+In particular, with $S=\sqrt{\log N\log\log N}$, the same conclusions
+hold at $A_{N,c}=\lceil R_Ne^{-cS}\rceil$ for every fixed $c>0$.
+The threshold may depend on $c$; no assertion is made for varying
+$c=c(N)$.
+\end{proposition}
+\begin{proof}
+Use the preceding bound with $K=129$, $\xi=1/20$, and
+$k=\lceil128(\log N)^2\rceil$. Eventually
+$k\le129(\log N)^2$ and $2k\le N^{9/10}$.
+On $Z_N>b$ the falling factorial satisfies
+$(Z_N)_k\ge(b/2)^k$. Thus
+\[
+ \P(Z_N>b)
+ \le\left(\frac{4N^{3/4+1/20}}b\right)^k
+ \le\bigl(4N^{-1/10}\bigr)^k
+ \le\exp\{-k\log N/20\}
+ \le e^{-2(\log N)^3}.
+\]
+Here $4\le N^{1/20}$ is included in the common cutoff.
+Since $Z_N\le N$, multiplying this probability by $N^r$ gives
+the stated truncated-moment bound simultaneously for $r\le\log N$.
+Finally, in a fixed critical band,
+\[
+ \log(R_Ne^{-cS})
+   =\log N-O_C(\log\log N)-c\sqrt{\log N\log\log N}
+   \ge\tfrac9{10}\log N
+\]
+eventually for each fixed $c$. This proves the last assertion.
+Neither a two-smooth-pivot estimate nor a coloring argument is needed.
+The result concerns the original count, not the modified count, and
+does not give a uniform bound for its real exponential moments.
+\end{proof}
+
+\subsection{An arithmetic cylinder with large exponential moments}
+
+\begin{proposition}[Divergence of the real exponential moment]
+\label{p1:limits:cylinder}
+Along odd primes $q\to\infty$, put $N_q=2^{q-1}$ and
+$L_q=q-1$.  For every fixed $t>2$,
+\begin{equation}
+ \liminf_{q\to\infty}\frac{\log N_q}{N_q}
+        \log\E e^{tZ_{N_q,L_q}}\ge(t-2)\log2>0.
+ \label{p1:limits:exponential-divergence}
+\end{equation}
+The same bound holds for the count of positive runs alone.
+\end{proposition}
+\begin{proof}
+Let $M=2N_q+q$ and prescribe the prime-sign cylinder
+\[
+ E_q=\{f(q)=-1,\ f(\ell)=1
+             \text{ for every prime }\ell\le M,\ \ell\ne q\}.
+\]
+It has probability $2^{-\pi(M)}$.  On this event,
+$f(n)=(-1)^{v_q(n)}$ for all integers used by the windows.
+Every start $x=uq+1\in I_{N_q}$ with $q\nmid u(u+1)$ has a
+negative predecessor, then exactly $q-1$ positive values, and
+a negative next value.  Their number is
+\[
+ K_q=(1-2/q)N_q/q+O(1)=(1-o(1))N_q/q.
+\]
+Therefore
+$\log\E e^{tZ}\ge tK_q-\pi(2N_q+q)\log2$.
+Since $q=\log N_q/\log2+1$, the prime number theorem gives
+\eqref{p1:limits:exponential-divergence}.
+\end{proof}
+
+\paragraph{A stronger finite prime-cylinder bound.}
+The construction in Proposition~\ref{p1:limits:cylinder} also gives a
+stronger finite estimate.  Let $q\leq N$ be prime, put $L=q-1$ and
+$M=2q\lfloor N/q\rfloor\leq2N$, and prescribe $f(q)=-1$ and all other prime signs up to
+$M$ to be positive.  Retain the starts $x=qu+1$ with
+\[
+ \lfloor N/q\rfloor+1\leq u<2\lfloor N/q\rfloor,
+ \qquad q\nmid u.
+\]
+Each has a negative predecessor and at least $q-1$ positive values,
+all at integers at most $M$.  The signs above $M$ remain free, so this
+cylinder has probability $2^{-\pi(M)}$.
+The extra condition $q\nmid(u+1)$ would force a negative right endpoint;
+it is unnecessary for a start of length at least $q-1$.
+Counting the single excluded residue class, including the floor and
+endpoint errors, gives at least $N/q-N/q^2-3$ retained starts.
+Their restricted count is bounded by the full positive count;
+integrability and monotonicity give, for every real $t\geq0$,
+\[
+ \E e^{tZ_{N,q-1}}\ \geq\ \E e^{tZ^+_{N,q-1}}
+ \ \geq\
+ \exp\!\left\{t\left(\frac Nq-\frac N{q^2}-3\right)
+                    -\pi(M)\log2\right\},
+\]
+where $Z^+$ counts positive starts only.  The odd-prime-scale consequence remains the one stated in
+Proposition~\ref{p1:limits:cylinder}.
+At the original scale $q=7$, $N=64$, the new cutoff $126$ charges
+30 primes, whereas the earlier sufficient cutoff $134$ charges 32.
+With the same retained-count contribution, the finite exponential lower
+bound therefore gains a factor four; this exact example is also checked.
+
+\paragraph{Exact valuations and finite layers.}
+Within the displayed multiplier interval, a positive start occurs
+precisely when $\nu_q(u)$ is even: its predecessor has valuation
+$1+\nu_q(u)$, and its following $q-1$ values are positive.
+The coprime multipliers form the layer $\nu_q(u)=0$.
+For example, $N=18$, $q=3$ also admits $u=9$, adding the start $28$.
+All these additional starts use the same supported cylinder.
+
+For every integer depth $k\geq0$, retaining the disjoint layers
+$\nu_q(u)=2j$, $0\leq j<k$, gives the explicit lower count
+\[
+ B_k(N,q)=\frac{N}{q+1}\bigl(1-q^{-2k}\bigr)-3k.
+\]
+Exact counts of multiples in translated intervals give the endpoint
+error $3k$; the geometric sum is evaluated exactly.  For every $t\geq0$,
+both full exponential moments are therefore at least
+$\exp\{tB_k(N,q)-\pi(M)\log2\}$.
+The choice $k=1$ recovers $N/q-N/q^2-3$.
+At the original critical scale $q=17$, $N=2^{16}$, the budget for
+$k=2$ is strictly greater, giving a strictly stronger exponential
+lower bound for every $t>0$ at the same cost.
+Larger depth need not improve this explicit estimate because its
+endpoint error grows.  Here $k$ is the number of retained valuation layers.
+
+\paragraph{Effective density of the retained starts.}
+Let $C(N,q)$ denote the complete retained start count above, and put
+$\kappa(N,q)=\lceil\tfrac12\lceil\log_q N\rceil\rceil$.
+Every retained multiplier satisfies $0<u<N\leq q^{2\kappa(N,q)}$.
+Its even valuation is therefore $2j$ for exactly one
+$0\leq j<\kappa(N,q)$, so these finitely many disjoint layers cover
+the complete retained set.  Their exact multiple counts give
+\[
+ \frac{N-1}{q+1}-3\kappa(N,q)\leq C(N,q)
+ \leq\frac{N}{q+1}+2\kappa(N,q).
+\]
+Both full exponential moments consequently have the lower bound
+$\exp\{t[(N-1)/(q+1)-3\kappa(N,q)]-\pi(M)\log2\}$ for $t\geq0$.
+This depth gives a complete cover; it need not maximize $B_k$.
+For each fixed prime $q$, the ratio $C(N,q)/N$ tends to $1/(q+1)$.
+Moreover, simultaneously for all primes $q\leq N$,
+\[
+ \left|\frac{C(N,q)}N-\frac1{q+1}\right|
+ \leq\frac{3\kappa(N,2)+1}{N}\longrightarrow0.
+\]
+The approximation threshold depends only on the requested absolute
+normalized error.  This is the density of the deterministic forced
+subset.
+
+\paragraph{Charge the rank of the forcing event.}
+Let $G$ be the complete retained start set.  On the actual prime-bit
+space up to $M$, write $f(n)=(-1)^{Y_n}$ and impose the linear equations
+$Y_{x-1}=1$ and $Y_{x+j}=0$ for $x\in G$, $0\leq j<q-1$.
+The one-negative-prime sample proves that this affine system is
+compatible.  If its effective rank is $r$, its exact mass is $2^{-r}$,
+and rank--nullity gives $r\leq\pi(M)$.  Both full exponential moments
+are therefore at least $\exp\{tC(N,q)-r\log2\}$ for $t\geq0$.
+Either earlier lower count budget may replace $C(N,q)$ in this bound.
+
+A prime dividing none of the observed integers supplies a nonzero
+homogeneous kernel vector by flipping just its bit, so $r<\pi(M)$.
+For $N=18$, $q=3$, the retained multipliers are exactly $7,8,9,10,11$,
+giving five starts.  Their observed integers lie between $21$ and $35$.
+The supported cutoff $36$ contains eleven primes, but the prime $19$
+is unused.  Thus $r\leq10$, and both full moments are at least
+$\exp(5t)/1024$, compared with $\exp(5t)/2048$ from the same-count
+single-atom bound.  This gives at least a factor-two gain, with no
+assertion of a new asymptotic threshold or an exact general rank formula.
+
+The number $2$ is a sufficient threshold in this construction;
+its optimality is not asserted.  For every fixed $r$, the same
+cylinder contributes at most $R_{N_q}^r2^{-\pi(M)}=o(1)$ to
+the $r$th moment.  It is thus compatible with all fixed-moment
+estimates and with the total-variation approximation.
+
+The cylinder also produces connected families that lie far beyond
+the bounded-nullity boundary used in the proof.  The next elementary
+rank argument extracts one such family with a positive centred
+coefficient.
+
+\begin{lemma}[Deleting large private ranks]
+\label{p1:limits:peeling}
+Let $A$ be a compatible family of $m$ affine events, each with
+constraint-space dimension $L$, and put
+$R=\dim\sum_{x\in A}S_x$ and $p=2^{-L}$.
+For an integer $1\le t\le L$, repeatedly remove a member whose
+current private rank is at least $t$.  The final family $A'$ satisfies
+\[
+ |A'|\ge m-R/t,\qquad
+ \dim\sum_{x\in A'}S_x\le R,\qquad
+ r_x(A')<t\quad(x\in A'),
+\]
+where $r_x(I)=\dim\sum_{y\in I}S_y-
+\dim\sum_{y\in I\setminus\{x\}}S_y$.
+Each direct component $C$ of $A'$ satisfies
+\begin{equation}
+ c(C)\ge(1-|C|p2^t)q(C)\ge(1-mp2^t)q(C).
+ \label{p1:limits:positive-core}
+\end{equation}
+If $m-R/t>0$ and $D=R/(m-R/t)$, some such component obeys
+\begin{equation}
+ \frac{\dim\sum_{x\in C}S_x}{|C|}\le D,\qquad
+ |C|\ge L/D,\qquad \rho(C)\ge L^2/D-L.
+ \label{p1:limits:rank-density}
+\end{equation}
+\end{lemma}
+\begin{proof}
+Each deletion reduces the current rank by at least $t$, so at
+most $R/t$ deletions occur.  For a compatible family, all Fourier
+phases of its relations are positive.  The centred Fourier formula is
+\[
+ c(C)=p^{|C|}\#\{(s_x)\in\ker(\bigoplus_{x\in C}S_x
+                        \longrightarrow\sum_{x\in C}S_x):
+                                      s_x\ne0\ (x\in C)\}.
+\]
+The image of the projection of this kernel on $S_x$ has dimension
+$L-r_x(C)\ge L-t+1$.  In the uniform kernel, the probability
+that $s_x=0$ is consequently at most $p2^t$.
+A union bound and $q(C)=p^{|C|}2^{\rho(C)}$ prove
+\eqref{p1:limits:positive-core}.  The size-weighted average of
+the rank-to-size ratios of the components is at most $D$.
+Choose a component no larger than that average.  Its rank is
+at least $L$, proving $|C|\ge L/D$.  If $D<L$, use
+$\rho(C)\ge|C|(L-D)$; if $D\ge L$, the stated lower bound
+for nullity is nonpositive.
+\end{proof}
+
+\begin{proposition}[A real component of quadratic nullity]
+\label{p1:limits:large-component}
+Along the subsequence of Proposition~\ref{p1:limits:cylinder},
+there are compatible connected families $C_q\subset G_{N_q}$
+containing no good pair and satisfying
+\begin{equation}
+ \begin{gathered}
+ |C_q|\ge(\kappa-o(1))L_q,\qquad
+ \rho_*(C_q)=\rho(C_q)\ge(\kappa-o(1))L_q^2,\\
+ c(C_q)\ge(1-O(L_q^{-1/2}))q(C_q)>0,\qquad
+ \kappa=\frac{6\log2}{17}.
+ \end{gathered}
+ \label{p1:limits:quadratic-nullity}
+\end{equation}
+\end{proposition}
+\begin{proof}
+Restrict the starts in the cylinder to
+\[
+ T_q=\{x=uq+1:3N_q/2+4q\le x<2N_q,\quad q\nmid u(u+1)\},
+ \qquad A_q=T_q\cap G_{N_q}.
+\]
+The regular-set estimate gives
+$m=|A_q|\sim N_q/(2q)$; the cylinder witnesses compatibility.
+For a good edge $x<y$ in channel $a:b$, its exact unit gives
+$y=(b/a)x+(b/a)i-j$, with $-1\le i,j\le L_q-1$ and
+$b/a\in\{4/3,3/2\}$.  The lower bound
+$y\ge(b/a)x-(1+b/a)q$ exceeds $2N_q$ in this interval.
+Thus $A_q$ has no good edge.
+
+All prime coordinates used by these windows belong to the union
+\[
+ [1,2N_q/3+O(q)],\quad
+ [3N_q/4-O(q),N_q+O(q)],\quad
+ [3N_q/2-O(q),2N_q+O(q)].
+\]
+Indeed the multiplier of a prime in a used value is respectively
+at least three, two, or one.  The prime number theorem bounds
+their number by $(17/12+o(1))N_q/\log N_q$.
+Hence the total rank $R$ satisfies
+$R/m\le17/(6\log2)+o(1)$.
+Apply Lemma~\ref{p1:limits:peeling} with
+$t=\lfloor\frac12\log_2L_q\rfloor$.  Then $R/t=o(m)$,
+$D\le17/(6\log2)+o(1)$ and $mp2^t=O(L_q^{-1/2})$.
+Equations \eqref{p1:limits:positive-core}--\eqref{p1:limits:rank-density}
+give the required component.  Every subfamily is compatible,
+and nullity is nondecreasing under inclusion, so its compatible
+nullity equals its full nullity.
+\end{proof}
+
+This is a statement about which arithmetic terms exist.  The
+probability of the witnessing cylinder is not identified with
+$q(C_q)$, and the proposition gives no lower bound for the total
+variation error or for a sum of absolute component activities.
+
+\subsection{Keeping positions while justifying pair deletion}
+\label{p1:limits:positions}
+\label{p14:comp:positional-proof}
+
+Deleting an active pair is a transformation of the whole field.
+The scalar approximation alone does not justify this operation.
+We retain coordinates in the same finite expansion, using the
+boundary and deficit estimates already proved.
+Lemma~\ref{p1:limits:vector-reference} compares the unsigned
+field \((J_x)_{x\in I_N}\) with independent Poisson single
+arrivals and arrivals along good arithmetic pairs, with an
+\(O_{C,j,\varepsilon}(N^{-4/5+\varepsilon})\) error for
+every fixed polynomial weight of degree \(j\) in the total count.
+The field retains integer positions, without run signs or exact
+excess lengths; the target is on the same grid, not a diffuse
+spatial process. We first work on the regular set \(G=G_N\)
+and then restore the excluded starts.
+
+\paragraph{The finite reference law and its exact identities.}
+\label{p18:limits:reference-identities}
+The following construction also covers heterogeneous rates and packets
+of any finite size. Let $F$ be a finite ground, $E$ a finite family of
+subsets of $F$, and suppose
+\[
+ q_e\ge0,\qquad
+ p_x^{\mathrm{ref}}\ge\iota_x:=\sum_{e\in E:x\in e}q_e
+ \quad(x\in F).
+\]
+Take mutually independent Poisson variables $U_x$ of parameters
+$\nu_x=p_x^{\mathrm{ref}}-\iota_x$ and $V_e$ of parameters $q_e$,
+and put $H_x=U_x+\sum_{e\ni x}V_e$. The superscript distinguishes
+these reference intensities from the actual arithmetic marginals
+$p_x=\E J_x$. A finite product probability space constructs the
+variables; every independent realization has the same field law.
+
+Each $H_x$ is exactly $\Pois(p_x^{\mathrm{ref}})$. In particular,
+its falling-factorial test is integrable for every $j\in\mathbb N$
+and $\E(H_x)_j=(p_x^{\mathrm{ref}})^j$. The coordinates are square
+integrable and
+\[
+ \Cov(H_x,H_y)
+  =\ind_{\{x=y\}}\nu_x+\sum_{e\in E:x,y\in e}q_e.
+\]
+The variance is $p_x^{\mathrm{ref}}$. For pairs, the distinct-site
+covariance is the retained pair rate, or zero when that pair is absent.
+
+Two finite blocks of coordinates, even possibly overlapping, are
+independent as complete natural-valued vectors if and only if all
+their cross covariances vanish. For disjoint blocks and pair packets,
+this says exactly that no retained edge of positive rate crosses
+between them. Thus the positive-rate graph is a dependency graph for
+the full reference field; zero-rate edges create no dependence, and
+measurable events on independent blocks have product probabilities.
+
+\begin{proof}
+Represent a coordinate by the finite set of cells it observes: its
+own $U_x$ and the incident $V_e$. The sum of their parameters is
+$\nu_x+\iota_x=p_x^{\mathrm{ref}}$, proving the marginal law.
+Poisson factorial moments give the stated integrability and moment
+formula; their first two orders also give square integrability.
+Bilinearity of covariance leaves precisely the cells observed in
+both coordinates, since distinct cells are independent and a Poisson
+cell has variance equal to its parameter. This proves the formula,
+including its diagonal.
+
+For two blocks, every cell observed on both sides contributes its
+nonnegative rate to at least one cross covariance. If all those
+covariances vanish, every shared cell has rate zero and vanishes
+almost surely. Remove these cells simultaneously from the finite
+block vectors. Each remaining vector is a measurable function of a
+disjoint subfamily of independent cells, so the whole vectors are
+independent. Conversely, independent square-integrable block vectors
+have zero cross covariance. If the blocks overlap, this also requires
+zero variance at each common site, as the criterion correctly records.
+This proves the block assertion and its specialization to crossing
+pair rates. Event factorization follows from independence.
+\end{proof}
+
+\paragraph{The bivariate mass formula.}
+\label{p18:limits:bivariate-reference}
+Put $r_{xy}=\Cov(H_x,H_y)$ and write
+\[
+ a=p_x^{\mathrm{ref}}-r_{xy},\qquad
+ b=p_y^{\mathrm{ref}}-r_{xy},\qquad c=r_{xy}.
+\]
+All three rates are nonnegative:
+$0\le r_{xy}\le\min(p_x^{\mathrm{ref}},p_y^{\mathrm{ref}})$.
+The couple $(H_x,H_y)$ has the law of $(A+C,B+C)$ with independent
+$\Pois(a),\Pois(b),\Pois(c)$ variables. Consequently
+\[
+ \P(H_x=m,H_y=n)
+ =e^{-(a+b+c)}\sum_{k=0}^{\min(m,n)}
+       \frac{a^{m-k}b^{n-k}c^k}{(m-k)!(n-k)!k!}
+ \qquad(m,n\in\mathbb N).
+\]
+Indeed partition the observed cells into those seen only at $x$,
+only at $y$, and at both sites. Their independent sums have the
+three displayed parameters. For the point probability, the common
+sum is $k$ and the two other sums are $m-k,n-k$; these are exactly
+the finitely many possibilities in the display. The formula includes
+coincident sites and zero rates with $0^0=1$. If $x=y$, then
+$a=b=0$ and only the diagonal Poisson mass remains.
+
+In the application $F=I_N$, $E=E_N$ and
+$p_x^{\mathrm{ref}}=p$ even outside the regular set; $E_N$ has no
+incident edge there. Admissibility is the uniform positivity of
+$p-\iota_x$ established in Section~\ref{p14:positions:section}.
+These reference identities do not identify the arithmetic covariance:
+for a good regular pair it is $q_e-p^2$ for $(J_x,J_y)$, whereas it
+is $q_e$ for $(H_x,H_y)$. The covariance matrix alone also does not
+give an independence criterion for a general arithmetic field.
+
+On $\mathbb N^G$, let $\boldsymbol e_x$ denote the coordinate
+unit vector and set
+\[
+ \Delta_x=\delta_{\boldsymbol e_x}-\delta_{\boldsymbol0},
+ \qquad b_x=\delta_{\boldsymbol0}+p\Delta_x,
+ \qquad \Delta_I=\mathop{*}_{x\in I}\Delta_x.
+\]
+For a hereditary class $\mathscr D$, the same partition by first
+excluded prefix gives the exact identity
+\begin{equation}
+ \Law((J_x)_{x\in G})-
+       \sum_{I\in\mathscr D}q(I)\Delta_I
+ =\sum_{I\in\partial\mathscr D}\Delta_I*\boldsymbol\nu_I,
+ \quad
+ \boldsymbol\nu_I=
+ \E\left[J_I\delta_{\sum_{y>\max I}J_y\boldsymbol e_y}\right].
+ \label{p1:limits:vector-stop}
+\end{equation}
+One can obtain it directly by expanding
+$\prod_x(1+u_x)$ with $u_x=J_x\Delta_x$ in the convolution
+algebra.  The proof of Lemma~\ref{p1:stop:polynomial} permits
+a different algebra element at every site.  Each
+$\boldsymbol\nu_I$ is positive of mass $q(I)$, and
+$\|\Delta_I\|_1=2^{|I|}$.  Thus the boundary estimate is
+unchanged.
+
+Use the field laws $\mathsf H_N$ and $\mathsf U_N$ and the intensities
+$q_e,\iota_x,\nu_x$ defined in Section~\ref{p14:positions:section}. In
+particular, $\beta=\sum_e q_e$, $\theta=2\beta$, $\lambda=Np$, and
+$\iota_x=0$ outside $G$. The total-count laws are given by
+\eqref{p1:limits:compound-target}.
+
+\begin{proof}[Proof of Lemma~\ref{p1:limits:vector-reference}]
+First work on $G$ in the unweighted norm.  The retained reference
+is now
+\[
+ \mathsf B_\beta=\mathop{*}_{x\in G}b_x+
+       \sum_{e=\{x,y\}\in E_N}q_e\Delta_x*\Delta_y*
+                                      \mathop{*}_{z\in G\setminus e}b_z.
+\]
+The exact retained identity subtracts the missing direct
+families, with coefficient $p^{|I|}$, and the missing compressed
+extensions, with coefficient $q_ep^{|U|}$.  Taking norms of
+these subtractions costs at most $F+\mathfrak G$, with exactly
+the deficits of \eqref{p1:close:total-deficits}.  There is no
+scalar cancellation in that estimate.  The vector version of
+the first-boundary remainder is bounded by the same positive
+sum as \eqref{p1:stop:norm}.  Hence
+\[
+ \|\Law((J_x)_{x\in G})-\mathsf B_\beta\|_1
+       \ll_\varepsilon N^{-4/5+\varepsilon}.
+\]
+
+Put $\mathsf P=\exp_*\{p\sum_{x\in G}\Delta_x\}$.
+Replacing the product of Bernoulli laws by $\mathsf P$ costs
+$O(np^2)$.  In each edge term, replacing the product outside
+$e$ by $\mathsf P$ costs $O(np^2+p)$ before multiplication
+by $4q_e$.  Thus
+\[
+ \mathsf B_\beta=
+ \mathsf P*\left(\delta_{\boldsymbol0}
+                     +\sum_{e=\{x,y\}}q_e\Delta_x*\Delta_y\right)
+              +O_{\ell^1}(np^2+\beta np^2+\beta p).
+\]
+The exponential remainder has norm at most
+$e^{4\beta}-1-4\beta=O(\beta^2)$.  Moreover
+\[
+ p\sum_x\Delta_x+\sum_{e=\{x,y\}}q_e\Delta_x*\Delta_y
+ =\sum_x(p-\iota_x)\Delta_x+
+       \sum_{e=\{x,y\}}q_e
+                    (\delta_{\boldsymbol e_x+\boldsymbol e_y}
+                                      -\delta_{\boldsymbol0}),
+\]
+so this convolution exponential is exactly the positive law
+$\mathsf H_N$ on $G$.  The errors $np^2$ and $\beta^2$ are
+$O_\varepsilon(N^{-1+\varepsilon})$.  Restoring the deleted
+starts in both laws costs $N^{-1+o(1)}$.
+
+It remains to justify the weights; total variation alone is
+insufficient.  Both total counts have every fixed moment
+uniformly bounded: for the real count this is
+Theorem~\ref{p1:fixed:moments}, and for the compound target
+it follows from \eqref{p1:limits:compound-target} with bounded
+parameters.  For their signed difference $\sigma$ and any fixed
+integer $s>j$, H\"older's inequality gives
+\[
+ \sum(1+|\boldsymbol z|)^j|\sigma\{\boldsymbol z\}|
+ \le\|\sigma\|_1^{1-j/s}
+       \left(\sum(1+|\boldsymbol z|)^s
+                         |\sigma\{\boldsymbol z\}|\right)^{j/s}.
+\]
+Choose $s$ sufficiently large after $\varepsilon$, and use the
+unweighted estimate with a smaller error margin.  This proves
+\eqref{p1:limits:vector-weighted} for each fixed $j$.
+\end{proof}
+
+The weights in this lemma have fixed polynomial degree.  They
+are not exponential weights and do not contradict
+Proposition~\ref{p1:limits:cylinder}.
+
+Let $\Xi=\sum_{e\in E_N}J_e$, $C_N=\{\Xi\ge1\}$ and
+$r_N=\P(C_N)$.  On $C_N$, choose one active good edge uniformly
+and delete its two endpoints, obtaining a binary field $J^\flat$.
+Off $C_N$ keep the field unchanged.  Also let $\widehat J$ be
+the field obtained by deleting every vertex incident to an active
+good edge.  Their counts are
+\[
+ W=\sum_xJ_x^\flat=Z-2\ind_{C_N},\qquad
+ \widehat W=\sum_x\widehat J_x.
+\]
+The auxiliary random choice affects the field $J^\flat$ but
+not $W$.
+
+\begin{proposition}[Deletion, isolation, and remaining covariances]
+\label{p1:limits:erasure}
+Uniformly in the critical band, for every $\varepsilon>0$,
+\begin{align}
+ \TV(\Law J^\flat,\mathsf U_N)
+       +\TV(\Law\widehat J,\mathsf U_N)
+       &\ll_\varepsilon N^{-4/5+\varepsilon},
+       \label{p1:limits:erasure-tv}\\
+ \sum_x\big|\E J_x^\flat-(p-\iota_x)\big|
+       +\sum_x\big|\E\widehat J_x-(p-\iota_x)\big|
+       &\ll_\varepsilon N^{-1+\varepsilon}.
+       \label{p1:limits:erasure-intensity}
+\end{align}
+For a counting field $X$ put
+$K_{xy}(X)=\Cov(X_x,X_y)-\ind_{\{x=y\}}\E X_x$.
+Then
+\begin{equation}
+ \sum_{x,y}|K_{xy}(J^\flat)|+
+ \sum_{x,y}|K_{xy}(\widehat J)|
+       \ll_\varepsilon N^{-4/5+\varepsilon}.
+ \label{p1:limits:erasure-covariance}
+\end{equation}
+In particular, the absolute second factorial cumulants of
+$W$ and $\widehat W$ have this bound.  On the natural coupling,
+\begin{align}
+ 0\le\beta-r_N&\le\tfrac12\E(\Xi)_2=O(a_N^2),
+       \label{p1:limits:edge-occurrence}\\
+ \TV(\Law W,\Law\widehat W)&\le\tfrac12\E(\Xi)_2=O(a_N^2),
+       \label{p1:limits:one-all-tv}\\
+ W_1(\Law W,\Law\widehat W)&\le\E(\Xi)_2=O(a_N^2).
+       \label{p1:limits:one-all-wasserstein}
+\end{align}
+Here $a_N\asymp L N^{-2/3}$ as in the main theorem.
+\end{proposition}
+\begin{proof}
+Extend the one-edge deletion kernel to $\mathbb N^{I_N}$ by
+choosing uniformly an edge whose two endpoint counts are positive
+and subtracting one at each endpoint; if no such edge exists,
+leave the configuration unchanged.  It agrees with the binary
+deletion kernel.  Apply it to the real and compound fields.  The unweighted comparison error cannot increase.
+In the target representation, $T=\sum_eV_e\sim\Pois(\beta)$.
+If $T=0$, deletion leaves $U$ unchanged unless two occupied
+single sites form an edge.  This event has probability at most
+$|E_N|p^2=O(B/N)$.  If $T=1$, let $e$ be its edge.
+Deleting $e$ recovers $U$ exactly.  A different edge can be
+active only if its endpoints are occupied singles, or if it
+shares one endpoint with $e$ and its other endpoint is a
+single.  The corresponding bounds are $|E_N|p^2$ and
+$O(Bp)$, uniformly in $e$.  Finally $\P(T\ge2)=O(\beta^2)$.
+This couples the once-deleted target to $U$ with error
+$O(B/N+\beta^2)$.  For isolation, set all coordinates incident
+to an active edge to zero; the same argument also excludes
+singles at the two endpoints of $e$, at cost $2p$ when
+$T=1$.  This proves \eqref{p1:limits:erasure-tv}.
+
+Every deleted count is bounded by its original total count.
+The weighted argument at the end of
+Lemma~\ref{p1:limits:vector-reference} therefore applies also
+to the two deleted laws and $\mathsf U_N$.  With weight
+$(1+|\boldsymbol z|)^2$ it controls, in the sum of absolute
+entries, their first and second factorial moment measures.
+The total intensities are bounded, so it controls the tensor
+squares of their means as well.  The independent Poisson field
+has zero factorial covariance matrix.  This proves
+\eqref{p1:limits:erasure-covariance}.
+
+For the finer intensity assertion, let $B=J-J^\flat$.
+Nonnegativity gives the exact identity
+\[
+ \sum_x(\iota_x-\E B_x)=2(\beta-r_N),\qquad
+ 0\le\E B_x\le \iota_x.
+\]
+For isolation, put $D_x=\sum_{y:\{x,y\}\in E_N}J_y$.
+Then
+\[
+ \E\widehat J_x=\E J_x-\iota_x+
+       \E[J_x(D_x-1)_+],\qquad
+ \sum_x\E[J_x(D_x-1)_+]\le2(\beta-r_N).
+\]
+The last inequality holds realization by realization: if there
+are active edges, at least two vertices are incident to them,
+whereas the sum of their active degrees is $2\Xi$.
+Now use $\sum_x|\E J_x-p|=N^{-1+o(1)}$ and the positive
+two-edge bound in Lemma~\ref{p1:arith:twogoodpositive}.
+
+Finally $0\le k-\ind_{\{k\ge1\}}\le(k)_2/2$ for integers
+$k\ge0$.  Also $W=\widehat W$ when $\Xi\le1$, and
+\[
+ 0\le W-\widehat W\le2(\Xi-\ind_{C_N})\le(\Xi)_2.
+\]
+These inequalities prove
+\eqref{p1:limits:edge-occurrence}--\eqref{p1:limits:one-all-wasserstein}.
+\end{proof}
+
+The same covariance conclusion applies to the positive cubic
+count used to approximate isolation.  With the active degrees
+$D_x$ from the proof, put
+\[
+ Y_x^{[3]}=J_x\left(1-D_x+\binom{D_x}{2}\right),\qquad
+ Y^{[3]}=\sum_xY_x^{[3]},\qquad
+ \Sigma=\sum_xJ_x\binom{D_x}{2}.
+\]
+For an integer $d\ge1$, $1-d+\binom d2=\binom{d-1}{2}\ge0$,
+whereas its value at zero is one.  Thus
+$0\le\widehat J_x\le Y_x^{[3]}$, and the fields agree when
+$\Xi\le1$.  More precisely, if
+$O=\sum_xJ_x(D_x-1)_+$, then
+\[
+ Y^{[3]}-\widehat W=\Sigma-O\ge0,\qquad
+ \Sigma\le\tfrac12(\Xi)_2,\qquad
+ \E Y^{[3]}=m-2\beta+\E\Sigma.
+\]
+The inequality for $\Sigma$ counts pairs of distinct good
+edges sharing a distinguished endpoint; in a simple graph
+each unordered pair can share at most one endpoint.
+It follows that both the total-variation and the
+$W_1$ distances from $Y^{[3]}$ to $\widehat W$ are
+$O(a_N^2)$.  Since the deterministic degree is $O(B)$,
+$Y^{[3]}\ll B^2Z$.  The fixed moments of $Z$, H\"older's
+inequality on $\{\Xi\ge2\}$, and
+Lemma~\ref{p1:arith:twogoodpositive} give, for every fixed
+polynomial weight, a difference
+$O_\varepsilon(N^{-4/3+\varepsilon})$ between the two laws.
+In particular,
+\begin{equation}
+ |\Var(Y^{[3]})-\E Y^{[3]}|
+       \ll_\varepsilon N^{-4/5+\varepsilon}.
+ \label{p1:limits:cubic-cumulant}
+\end{equation}
+This deduction needs no asymptotic for the rarer configurations
+where the cubic and isolated counts differ.
+
+Let $P_0=\Law(Z\mid C_N^c)$, $\mu_0=\E[Z\mid C_N^c]$,
+and $m=\E Z$.  The preceding proof also gives, for every fixed
+polynomial weight, a comparison of $P_0$ with
+$\Pois(\lambda-\theta)$ at order $N^{-4/5+\varepsilon}$.
+Indeed absence of an observed edge in the compound field forces
+$T=0$; the remaining conditional law is $U$ conditioned on
+having no accidental edge.  Removing this conditioning costs
+$O(B/N)$, and $\P(C_N^c)=1-o(1)$ permits conditioning the
+comparison in Lemma~\ref{p1:limits:vector-reference}.
+Consequently
+\begin{equation}
+ 2r_N=\theta+O(a_N^2),\qquad
+ \E W=m-2r_N=\lambda-\theta+O_\varepsilon(N^{-1+\varepsilon}),\qquad
+ \mu_0=\lambda-\theta+O_\varepsilon(N^{-4/5+\varepsilon}).
+ \label{p1:limits:background-means}
+\end{equation}
+The identity for the mean of $W$ is exact before its last
+estimate.  One may replace $\theta$ by the two-channel expression
+of Theorem~\ref{p1:arith:pairs}, or by the actual second
+factorial cumulant, at cost $O_\varepsilon(N^{-4/5+\varepsilon})$.
+
+For clarity, the corresponding localization statements are
+\begin{align}
+ &\big|\TV(\Law Z,H_{\lambda,\theta})
+       -(1-r_N)\TV(P_0,\Pois(\mu_0))\big|
+       \ll_\varepsilon N^{-4/5+\varepsilon},
+       \label{p1:limits:background-localization}\\
+ &\big|\TV(\Law Z,H_{\lambda,\theta})
+       -\TV(\Law W,\Pois(\E W))\big|
+       \ll_\varepsilon N^{-4/5+\varepsilon},
+       \label{p1:limits:erased-localization}\\
+ &\big|\TV(\Law((J_x)_x),\mathsf H_N)
+       -\TV(\Law J^\flat,\mathsf U_N)\big|
+       \ll_\varepsilon N^{-4/5+\varepsilon}.
+       \label{p1:limits:spatial-localization}
+\end{align}
+They follow by the triangle inequality from the comparisons just
+proved; the changes of Poisson means cost at most their absolute
+differences.  Thus the full stopped expansion supplies, in
+particular, the first-order reduction to the background.
+Small second cumulants alone would not supply any of these
+distributional comparisons.
+
+\subsection{Signed Palm identities and weighted recurrence errors}
+
+It is useful to state precisely which information a scalar
+Stein comparison retains.  For a probability $P$ on
+$\mathbb N$ with finite first moment, put $P_k=P\{k\}$ and
+$P_k=0$ for $k<0$, and define
+\begin{equation}
+ r_k(P;\mu,\theta)
+       =kP_k-(\mu-\theta)P_{k-1}-\theta P_{k-2},\qquad
+ \mathcal R(P;\mu,\theta)=\sum_{k\ge0}|r_k(P;\mu,\theta)|.
+ \label{p1:limits:raw-residual}
+\end{equation}
+
+\begin{lemma}[A scalar recurrence criterion]
+\label{p1:limits:stein}
+If $0\le\theta<\min(\mu,1/2)$, then
+\begin{equation}
+ \TV(P,H_{\mu,\theta})
+       \le\frac{\mathcal R(P;\mu,\theta)}{1-2\theta}.
+ \label{p1:limits:stein-bound}
+\end{equation}
+If $m=\E X>0$, $\kappa=\Var X-\E X$ and
+$0\le\kappa<\min(m,1/2)$, the size-biased variable $X^s$
+satisfies the exact identity
+\begin{equation}
+ \mathcal R(\Law X;m,\kappa)
+ =2m\TV\left(\Law X^s,
+       (1-\kappa/m)\Law(X+1)+(\kappa/m)\Law(X+2)\right).
+ \label{p1:limits:size-bias}
+\end{equation}
+\end{lemma}
+\begin{proof}
+For an indicator test $h$, a Poisson Stein solution satisfies
+$\mu f(k+1)-kf(k)=h(k)-\Pi_\mu h$ and may be chosen with
+$\|f\|_\infty\le1$, $\|\Delta f\|_\infty\le1$.
+One proof uses the immigration--death process at time $t$,
+whose law from $k$ is
+$\mathrm{Bin}(k,e^{-t})+\Pois(\mu(1-e^{-t}))$.
+One extra initial individual survives with probability $e^{-t}$,
+and two survive with probability $e^{-2t}$.  Integrating these
+couplings in the Poisson equation gives respectively the bounds
+$\int_0^\infty e^{-t}dt=1$ and
+$\int_0^\infty2e^{-2t}dt=1$; set $f(0)=f(1)$.
+
+The operator
+$A_\theta f(k)=\mu f(k+1)+\theta\Delta f(k+1)-kf(k)$
+has mean zero under $H_{\mu,\theta}$, by applying the elementary
+Poisson identity separately to its single and double counts.
+Changing indices gives
+$P A_\theta f=-\sum_kr_kf(k)$.
+The difference of the expectations of $\Delta f(k+1)$ under
+$P$ and $H_{\mu,\theta}$ is at most
+$2\TV(P,H_{\mu,\theta})$.  Taking the supremum over $h$
+and absorbing this perturbation proves
+\eqref{p1:limits:stein-bound}.  The two measures in
+\eqref{p1:limits:size-bias} differ at $k$ by
+$r_k(\Law X;m,\kappa)/m$; total variation is half their
+$\ell^1$ distance.
+\end{proof}
+
+The constant in \eqref{p1:limits:stein-bound} is not claimed
+optimal.  The criterion is sufficient, and the raw norm is not
+bounded by total variation alone.  Parameter changes satisfy
+the elementary bound
+\begin{equation}
+ |\mathcal R(P;\mu,\theta)-\mathcal R(P;\mu',\theta')|
+       \le|\mu-\mu'|+2|\theta-\theta'|.
+ \label{p1:limits:residual-parameters}
+\end{equation}
+When the first three moments exist and $\mu=m$, $\theta=\kappa$,
+the signed residual has
+$\sum_kr_k=\sum_kkr_k=0$ and
+$\sum_kk^2r_k=\kappa_3^{(F)}(X)$.
+The last identity tests it by an unbounded function and is not
+an estimate for its norm.
+
+\begin{proposition}[The signed Palm measure]
+\label{p1:limits:signed-palm}
+For any finite family of indicators, let $Z=\sum_xJ_x$,
+$p_x=\E J_x$, $m=\E Z$, $P=\Law Z$, and $T_x=Z-J_x$.
+Omit sources with $p_x=0$, and define
+\[
+ \mathcal D=\sum_xp_x
+       \{\Law(T_x\mid J_x=1)-\Law(T_x)\}.
+\]
+Then
+\begin{equation}
+ \big|\mathcal R(P;m,\theta)
+       -\|\mathcal D-\theta\Delta*P\|_1\big|
+       \le2\sum_xp_x^2.
+ \label{p1:limits:signed-palm-bound}
+\end{equation}
+Writing $q_A=\E\prod_{x\in A}J_x$, the coefficient of
+$(z-1)^j$ in its generating polynomial is exactly
+\begin{equation}
+ d_j=\sum_{|A|=j}\sum_{x\notin A}(q_{A\cup\{x\}}-p_xq_A).
+ \label{p1:limits:signed-palm-coefficients}
+\end{equation}
+If all $n$ marginals equal $p$ and
+$B_j=\E\binom Zj$, this becomes
+$d_j=(j+1)B_{j+1}-p(n-j)B_j$.
+\end{proposition}
+\begin{proof}
+Let $SP$ translate a measure by one and let $(KP)_k=kP_k$.
+The size-bias identity is
+$KP=S\sum_xp_x\Law(T_x\mid J_x=1)$.
+Consequently the residual in \eqref{p1:limits:raw-residual}
+is the translate of
+\[
+ \mathcal D+\mathcal B-\theta\Delta*P,\qquad
+ \mathcal B=\sum_xp_x\{\Law(T_x)-P\}.
+\]
+In the natural coupling, $T_x$ and $Z$ differ only when
+$J_x=1$, so $\|\mathcal B\|_1\le2\sum_xp_x^2$.
+Translation preserves $\ell^1$ norm, and the reverse triangle
+inequality proves \eqref{p1:limits:signed-palm-bound}.
+Expanding $\prod_{y\ne x}(1+(z-1)J_y)$ before summing over
+$x$ gives \eqref{p1:limits:signed-palm-coefficients}.
+\end{proof}
+
+The order of summation matters: both the sum over intersections
+of a fixed size and the sum over sources occur before the norm.
+In this model $p_x\le2p$ for large $N$, so the diagonal error is
+$O(N^{-1})$.  Taking absolute values separately for each
+forced coordinate would remove cancellations present in
+$\mathcal D$.
+
+For reference, two sufficient uncorrected criteria follow without
+any affine assumption.  If
+\[
+ v_x=\TV(\Law T_x,\Law(T_x\mid J_x=1)),\qquad
+ w_x=W_1(\Law T_x,\Law(T_x\mid J_x=1)),
+\]
+then
+\begin{equation}
+ \mathcal R(P;m,0)\le2\sum_xp_x(p_x+v_x),\qquad
+ \TV(P,\Pois(m))\le\sum_xp_x(p_x+w_x).
+ \label{p1:limits:palm-sufficient}
+\end{equation}
+The first follows from the preceding proposition.  For the
+second, couple the two scalar $T_x$ laws optimally and lift
+that coupling to the original joint law using conditional
+distributions given $T_x$.  The extra difference from $Z$ to
+$T_x$ has mean $p_x$.  The Poisson Stein equation with
+$\|\Delta f\|_\infty\le1$ gives the displayed bound.
+
+The polynomially weighted comparison already proved also makes
+the scalar recurrence comparisons legitimate after deletion.
+In particular, with
+$\mathcal R_0(P;\mu)=\mathcal R(P;\mu,0)$,
+\begin{align}
+ &\big|\mathcal R(\Law Z;\lambda,\theta)
+       -(1-r_N)\mathcal R_0(P_0;\mu_0)\big|
+       \ll_\varepsilon N^{-4/5+\varepsilon},
+       \label{p1:limits:background-residual}\\
+ &\big|\mathcal R(\Law Z;\lambda,\theta)
+       -\mathcal R_0(\Law W;\E W)\big|
+       \ll_\varepsilon N^{-4/5+\varepsilon}.
+       \label{p1:limits:erased-residual}
+\end{align}
+Indeed the operator in \eqref{p1:limits:raw-residual} is bounded
+from the norm $\sum_k(1+k)|\sigma_k|$ to $\ell^1$, uniformly
+for the present parameters; its value on the compound target
+is zero.  The analogous statement holds for the Poisson
+background.  Lemma~\ref{p1:limits:vector-reference}, the deletion
+comparison, and \eqref{p1:limits:residual-parameters} prove
+both formulas.  This argument uses fixed moments as well as
+the distributional approximation.
+
+\subsection{Removing the remaining active pair dependencies}
+
+The recurrence norm weighted by $1/k$ has a useful stability
+property under small changes of a law.  For any probability
+$P$ on $\mathbb N$ and $\mu>0$ define
+\[
+ \mathcal V(P;\mu)=\sum_{k\ge1}\frac{|kP_k-\mu P_{k-1}|}{k}.
+\]
+It is always finite, even without a first-moment assumption.
+
+\begin{lemma}[A recurrence norm equivalent to total variation]
+\label{p1:limits:weighted-residual}
+For every $P$ and $\mu>0$,
+\begin{equation}
+ e^{-\mu}\TV(P,\Pi_\mu)\le\mathcal V(P;\mu)
+       \le2(1+\mu)\TV(P,\Pi_\mu).
+ \label{p1:limits:weighted-equivalence}
+\end{equation}
+Moreover, if $0<\mu,\nu\le M$, then
+\begin{equation}
+ |\mathcal V(P;\mu)-\mathcal V(Q;\nu)|
+       \le2(1+M)\TV(P,Q)+|\mu-\nu|.
+ \label{p1:limits:weighted-stability}
+\end{equation}
+\end{lemma}
+\begin{proof}
+Write $a_k=P_k-\Pi_\mu\{k\}$ and
+$b_k=a_k-(\mu/k)a_{k-1}$ for $k\ge1$.
+The upper bound follows by summing absolute values.
+The forward recurrence gives
+\[
+ a_k=\frac{\mu^k}{k!}a_0+
+           \sum_{j=1}^k\frac{\mu^{k-j}j!}{k!}b_j.
+\]
+The sum over $k\ge j$ of the coefficient of $b_j$ is at most
+$e^\mu$.  Since $\sum_ka_k=0$, it follows first that
+$|a_0|\le\sum_j|b_j|$ and then that
+$\sum_k|a_k|\le2e^\mu\sum_j|b_j|$.
+All series are absolutely convergent by the same coefficient
+bound.  This proves the lower estimate.  Applying the upper
+operator bound to $P-Q$ and bounding
+$\sum_{k\ge1}Q_{k-1}/k\le1$ proves stability.
+\end{proof}
+
+Let $E_N^{\rm all}$ be the graph on $G$ containing contacts
+at distance exactly $L$ and all separated pairs with nonzero
+joint relative kernel.  It contains $E_N$.  Define
+\[
+ \Xi^{\rm bad}=\sum_{e\in E_N^{\rm all}\setminus E_N}J_e,\qquad
+ \Lambda^{\rm loc}=\sum_{x\notin G}J_x,\qquad
+ \widetilde J_x=J_x\ind_{\{x\in G\}}
+       \ind_{\{\sum_{y:\{x,y\}\in E_N^{\rm all}}J_y=0\}},\qquad
+ \widetilde W=\sum_x\widetilde J_x.
+\]
+There is no degree bound imposed on $E_N^{\rm all}$.
+
+\begin{proposition}[All active pair dependencies can be removed]
+\label{p1:limits:all-pairs}
+For every $\varepsilon>0$,
+\begin{align}
+ \tau_N:=\E\Xi^{\rm bad}+\E\Lambda^{\rm loc}
+       &\ll_\varepsilon N^{-4/5+\varepsilon},
+       \label{p1:limits:bad-mass}\\
+ \TV(\Law\widetilde W,\Law\widehat W)&\le\tau_N,\qquad
+ 0\le\E\widehat W-\E\widetilde W\le2\tau_N.
+       \label{p1:limits:all-pairs-cost}
+\end{align}
+In every realization, distinct retained original spaces are
+pairwise direct and their starts are strictly separated.
+The values of $\mathcal V$ at the respective actual means differ
+by $O_\varepsilon(N^{-4/5+\varepsilon})$.  Thus, for a fixed
+$0<\varepsilon<2/15$, the condition
+\[
+ \mathcal V(\Law\widetilde W;\E\widetilde W)=o(a_N)
+\]
+is equivalent to the Poisson approximation of the erased
+background, and hence to
+$\TV(\Law Z,H_{\lambda,\theta})=o(a_N)$.
+\end{proposition}
+\begin{proof}
+A compatible separated dependent pair in $G$ has
+$q_e=p^22^{\rho(e)}\ge2p^2$, whence
+$q_e\le2|q_e-p^2|$.  The absolute bad-pair estimate therefore
+bounds their positive event mass.  Contacts have mass
+$N^{-1+o(1)}$ and locally deficient windows have total marginal
+mass $N^{-1+o(1)}$.  This proves \eqref{p1:limits:bad-mass}.
+Pointwise,
+\[
+ 0\le\widehat W-\widetilde W
+       \le2\Xi^{\rm bad}+\Lambda^{\rm loc},\qquad
+ \{\widehat W\ne\widetilde W\}
+       \subseteq\{\Xi^{\rm bad}+\Lambda^{\rm loc}>0\}.
+\]
+Markov's inequality gives \eqref{p1:limits:all-pairs-cost}.
+Two retained starts cannot be closer than $L$ by incompatibility,
+cannot be at distance $L$ by the filter, and cannot have a
+nonzero pair kernel by its definition.  The means stay in a
+fixed compact subset of $(0,\infty)$, so
+Lemma~\ref{p1:limits:weighted-residual} transfers the criterion.
+Use \eqref{p1:limits:one-all-tv} and
+\eqref{p1:limits:erased-localization} for the final equivalence.
+\end{proof}
+
+Pairwise directness here is a property of the retained original
+constraint spaces in a given realization.  The filtered
+indicators themselves depend on the absence of all neighboring
+events.  It does not make these indicators independent, or
+exclude primitive dependencies among three or more original
+spaces.  The stopped expansion supplies the further information
+needed for their distribution.
+
+\subsection{The cost of forcing private prime signs}
+
+A small distance between distributions need not be visible in
+the positive cost of a particular conditional coupling.  Here
+this distinction can be quantified within the arithmetic model.
+We use $\kappa(n)=P^+(\sf(n))$, $P^+(1)=1$.
+
+To state its precise logarithmic scale, let $H_X=\log X$ and
+use the following definitions from \cite[Proposition~4.2 and
+Appendix~F.3]{pouly2026c}.  For $v\ge e$, let $u(v)\ge1$ solve
+$e^{u(v)}/u(v)=v$ and put
+\[
+ D(v)=vu(v)-\operatorname{Ei}(u(v)),\qquad
+ V_X=D(H_X/V_X),\qquad \nu_X=H_X/V_X.
+\]
+The indicated positive solution is unique for large $X$.
+At the precision used below,
+\begin{equation}
+ 2V_X=\sqrt{2H_X(\log H_X+\log\log H_X-\log2-2)}
+          +o(\nu_X),\qquad
+ \log\log X=o(\nu_X).
+ \label{p1:limits:pivot-scale}
+\end{equation}
+
+\begin{lemma}[Reciprocal odd-prime pivots]
+\label{p1:limits:reciprocal}
+As $X\to\infty$,
+\begin{equation}
+ \sum_{n\le X}\frac1{\kappa(n)}
+       =X\exp\{-2V_X+o(\nu_X)\}.
+ \label{p1:limits:reciprocal-sum}
+\end{equation}
+The sum over $N\le n<2N$ is
+$N\exp\{-2V_N+o(\nu_N)\}$.
+\end{lemma}
+\begin{proof}
+The asymptotic of Erd\H{o}s--Ivi\'c--Pomerance
+\cite[Theorem~1 and equation~(1.3)]{erdosivicpomerance1986}
+gives this logarithmic formula for
+$S^+(X)=\sum_{n\le X}1/P^+(n)$.
+Its first correction is the explicit square root in
+\eqref{p1:limits:pivot-scale}; the later terms are
+$O(\sqrt{H_X\log H_X}(\log\log H_X)^2/(\log H_X)^2)=o(\nu_X)$.
+Since $\kappa(n)\le P^+(n)$, this proves the lower bound.
+
+For the upper bound, write uniquely $n=a^2v$ with $v$
+squarefree and use positivity to obtain
+\[
+ \sum_{n\le X}\frac1{\kappa(n)}
+       \le\sum_{a\le\sqrt X}S^+(X/a^2).
+\]
+The terms $a>e^{3V_X}$ are $O(Xe^{-3V_X})$.
+On the remaining range $\log(X/a^2)=H_X-O(V_X)$ and
+$\nu_{X/a^2}\sim\nu_X$.  The explicit function
+$G(H)=\sqrt{2H(\log H+\log\log H-\log2-2)}$ has
+$G'(H)=o(1)$ uniformly there.  The stated classical remainder,
+without differentiation, is uniformly $o(\nu_X)$.
+Thus
+\[
+ S^+(X/a^2)\le
+ X\exp\{-2V_X+o(\nu_X)\}a^{-2+o(1)}.
+\]
+These weights have bounded sum.  This also explains the
+square-part reduction following Proposition~F.5 in
+\cite{pouly2026c}.
+
+For a dyadic lower bound, send each $n\le N$ with
+$\kappa(n)>2$ to the unique $2^jn\in[N,2N)$.
+The pivot is unchanged, and each image has $O(\log N)$
+preimages.  The omitted integers have squarefree part $1$ or
+$2$, so number $O(\sqrt N)$.  The factor $\log N$ is absorbed
+in $\exp\{o(\nu_N)\}$.  The upper bound follows from the sum
+up to $2N$, whose scales agree at this precision.
+\end{proof}
+
+Consider a specific forcing for the signed exact-run field.
+Let
+$E=\lceil3V_N/\log2\rceil$, $B_*=L+E+2$, and
+$Y=2B_*$.  Retain starts whose maximal support
+$\{x-1,\ldots,x+L+E\}$ has every pivot larger than $Y$.
+Let $W_{x,e,\sigma}$ be the indicator of the exact word
+\[
+ (-\sigma,\underbrace{\sigma,\ldots,\sigma}_{L+e},-\sigma),
+ \qquad 0\le e\le E,\quad \sigma\in\{-1,1\}.
+\]
+Its mean is $\lambda_{x,e,\sigma}=p2^{-e-2}$.
+For a source $a=(x,e,\sigma)$, fix every nonpivot prime sign
+and set each private pivot of its actual word to make that
+word occur.  The resulting full field $W^a$ has exactly
+$\Law(W\mid W_a=1)$: conditional on the nonpivots, its raw
+word bits were independent and fair and its prescribed
+probability was constant.  This is the private-pivot
+conditional coupling of \cite[Proposition~F.7]{pouly2026c}.
+Its nonnegative coordinate cost is
+\[
+ \mathcal E_N
+       =\sum_a\lambda_a
+               \E\|W-(W^a-\boldsymbol e_a)\|_1.
+\]
+
+\begin{proposition}[Exact logarithmic cost of this forcing]
+\label{p1:limits:private-exact}
+For this specified signed forcing,
+\begin{equation}
+ \mathcal E_N=\exp\{-2V_N+o(\nu_N)\}.
+ \label{p1:limits:private-exact-eq}
+\end{equation}
+Consequently this positive coordinate-by-coordinate cost is
+not $O(N^{-\alpha})$ for any fixed $\alpha>0$.
+\end{proposition}
+\begin{proof}
+A target can change only if it contains a multiple of a
+source pivot.  Summing multiples, then reciprocals, bounds
+the number of directed source--target possibilities by
+$O(NB_*^2\sum_{n\le3N}1/\kappa(n)+NB_*^2)$.
+The finite Palm ledger
+\cite[Lemma~F.2 and equation~(F.6)]{pouly2026c} therefore gives
+\[
+ \mathcal E_N\ll Np^2+
+ p^2\left\{NB_*+
+       NB_*^2\sum_{n\le3N}\frac1{\kappa(n)}
+       +R^{\rm val}_2(N,B_*)\right\}.
+\]
+Here $R^{\rm val}_2$ is the sum of $2^{\rho^{\rm val}}-1$
+over separated maximal supports.  The full-value estimate
+\cite[Proposition~3.24]{pouly2026c} gives
+$R^{\rm val}_2(N,B_*)\le N^{5/3+o(1)}$, since
+$B_*=\log_2N+o(\log N)$.  The type weights sum to at most
+one after the common factor $p$ has been removed.
+Lemma~\ref{p1:limits:reciprocal} proves the upper bound.
+
+For a lower bound use only the type $e=0,\sigma=1$, of
+mean $p_0=p/4$, and restrict both maximal supports to pivots
+larger than $Y_0=(\log N)^5$.  Rankin's inequality with
+$s=9/10$ gives
+\[
+ \#\{n\le3N:\kappa(n)\le Y_0\}
+ \le(3N)^{9/10}\zeta(9/5)
+                    \prod_{\ell\le Y_0}(1+\ell^{-9/10})
+       =N^{9/10+o(1)}.
+\]
+Thus only $N^{9/10+o(1)}$ starts are excluded.
+For each source choose $q=\kappa(x-1)\le e^{3V_N}$
+and count targets with $q\mid y-1$.
+The dyadic reciprocal estimate shows that these pairs number
+$N^2\exp\{-2V_N+o(\nu_N)\}$.
+
+Deleting excluded sources or targets costs at most
+$N^{19/10+o(1)}$ pairs; the tail $q>e^{3V_N}$ costs
+$O(N^2e^{-3V_N})$, and nearby pairs cost $O(NB_*)$.
+The condition $q^2\mid y-1$ removes at most a proportion
+$Y_0^{-1}$ of the main count plus $O(N)$.
+For any other source pivot $q'$ and target offset, the
+Chinese remainder theorem counts at most $N/(qq')+1$
+targets.  All these extra intersections cost at most
+$O(B_*^2/Y_0)$ times the main count plus $O(NB_*^2)$.
+Finally the full-value host estimate
+\cite[Proposition~3.7]{pouly2026c} excludes at most
+$N^{3/2+o(1)}$ pairs with a nonzero raw relation.
+Every removed term is negligible.
+
+For each remaining pair the two raw word vectors $U,V$
+are independent and uniform, while the forcing changes
+only the first target bit, by the fair bit $U_0+b_0$.
+The prescribed target word and its first-bit translate
+are disjoint, each of probability $p_0$.  Therefore
+$\E|W_{y,0,+}-W^a_{y,0,+}|=p_0$ exactly.
+Multiplication by the source weight $p_0$ and summation
+over the surviving pairs prove the lower bound in
+\eqref{p1:limits:private-exact-eq}.
+\end{proof}
+
+The two original words in each lower-bound pair are
+independent.  Their positive contribution is caused by
+the chosen forcing.  It is therefore not a lower bound
+for their dependence, for total variation, or for the
+scalar cost after summing all changed coordinates with
+their signs.
+
+There is also an obstruction that does not depend on the
+choice of an arithmetic anchor.  Let the maximal support
+have length $B_*=O_C(\log N)$, and retain starts with at
+most one pivot at most $Y=2B_*$.  For $\iota\in\{0,1\}$,
+use the unsigned word of length $B_\iota=L+1+\iota$:
+the start event when $\iota=0$, and exact excess zero
+when $\iota=1$.  Its mean on this retained set is
+$q_\iota=p2^{-\iota}$.  Choose an anchor as any deterministic
+function of the integer arguments and their factorizations;
+if there is a pivot at most $Y$ in the actual word, it must
+be the anchor.  Preserve its value and force the other
+private pivots to impose the word up to a global sign.
+All other prime signs are left fixed.  Let
+\[
+ \mathcal E_{\iota,N}
+ =\sum_xq_\iota\sum_{y\ne x}
+       \E|W_{y,\iota}-W^{x,\iota}_{y,\iota}|
+\]
+be the same-type, off-site part of its coordinate cost.
+
+\paragraph{A sufficient ordinary smooth-window census.}
+\label{p18:limits:smooth-census}
+For fixed $a>0$ put $Y=\lfloor N^a\rfloor$ and
+$h_N=\lfloor\log N/(4\log2)\rfloor$.
+The precise internally proved statement is
+\[
+ \#\left\{j\in I_N:
+   \#\{n\in[j,j+h_N)\cap\Z:P^+(n)\leq Y\}\leq1\right\}
+   =o_a(N).
+\]
+Here $P^+(1)=1$.  Equivalently, for every $\tau>0$, one cutoff
+precedes all $N$ for which the displayed exceptional cardinality
+is at most $\tau N$.
+Only this sufficient statement is needed for
+Proposition~\ref{p1:limits:all-anchors}.
+
+\begin{proof}
+Write $\chi_Y$ for the ordinary smooth indicator and
+$g_Y(d)=\mu(d)\ind_{\gcd(d,\prod_{p\leq Y}p)=1}$.
+The exact identity $\chi_Y=1*g_Y$ gives, for
+$S_Y(x)=\sum_{n\leq x}\chi_Y(n)$,
+\[
+ S_Y(x)=\sum_{d\leq x}g_Y(d)\lfloor x/d\rfloor .
+\]
+For a common cutoff $K\geq x,z>0$,
+\[
+ \left|\frac{S_Y(x)}x-\frac{S_Y(z)}z\right|
+ \leq R_Y(K)\left(\frac1x+\frac1z\right),
+ \quad
+ R_Y(K)=\#\{d\leq K:\gcd(d,\prod_{p\leq Y}p)=1\}.
+\]
+A primorial Selberg upper-bound sieve with fixed exponent
+$\min(a,1/8)$ gives $R_Y(4N)\ll_a N/\log N$.
+Together with the positive dyadic ordinary smooth density, this proves
+uniform positivity of averages on intervals of length
+$H_N=\lceil N/\sqrt{\log N}\rceil$.
+The explicit difference from the dyadic mean is
+$O_a((\log N)^{-1/2})$.
+
+For $b>0$ let
+\[
+ \gamma_b(v)=\frac1{\sqrt{4\pi b}}e^{-v^2/(4b)},\qquad
+ G_b(u)=\sum_{N\leq n<4N}\frac{\chi_Y(n)}n
+                  \gamma_b(u+\log n),
+\]
+and put
+$F(t)=\sum_{N\leq n<4N}\chi_Y(n)n^{-1-it}$.
+The exact finite Gaussian identity is
+\[
+ \int_{\mathbb R}|G_b-G_c|^2\,du
+ =\frac1{2\pi}\int_{\mathbb R}|F(t)|^2
+                 (e^{-bt^2}-e^{-ct^2})^2\,dt .
+\]
+The finite sums are integrable, so the Gaussian Fourier identity
+can be applied term by term.
+Choose $b=(\log N/(DN))^2$ for fixed $D>0$, and
+$c=(H_N/N)^2$.
+The off-central Dirichlet estimate, applied to the two dyadic
+blocks, makes the frequency integral small away from a fixed central
+band.  On that band the difference of the Gaussian weights tends to
+zero.  The remaining tail is bounded by the unconditional Gaussian
+mean-value estimate
+$\sqrt{\pi/b}/N+4\pi$ and its exponential tail factor.
+Consequently $\int|G_b-G_c|^2=o_D(1)$ for the ordinary smooth
+indicator used here.
+
+The long smooth averages give $G_c(-\log X)\geq\kappa_a>0$
+for $N\leq X$ and $X+1\leq2N$.
+If a window $[j,j+h_N)$ has at most one smooth integer, then for
+$j+h_N/2\leq X\leq j+h_N/2+1$ its short Gaussian average is at most
+$O_D(1/\log N)+O(e^{-c_0D^2})$ for a fixed $c_0>0$.
+The first term bounds the possible single interior integer; the
+second bounds all exterior integers using their actual logarithmic
+distance.  First choose $D$ so the exterior term is at most $\kappa_a/4$;
+then choose the common integer cutoff so the interior term is at most
+$\kappa_a/4$.
+
+The middle unit cells of distinct integer windows have disjoint
+negative-logarithmic images, each of measure at least $1/(4N)$.
+Thus the number of interior bad windows is at most
+$16N\int|G_b-G_c|^2/\kappa_a^2=o_a(N)$.
+The omitted endpoint windows number at most $h_N=o(N)$.
+This proves the sufficient census.
+\end{proof}
+This argument proves only the two-candidate census at the displayed
+logarithmic length. It does not claim a Dickman relative-density
+asymptotic or a general sharp short-average theorem. The census is
+used in the forcing obstruction below and is not an input to the
+scalar reconstruction.
+
+\begin{proposition}[An obstruction for every such anchor]
+\label{p1:limits:all-anchors}
+For every fixed $0<a<1/10$, uniformly over these arithmetic
+anchor rules,
+\begin{equation}
+ \mathcal E_{\iota,N}\ge
+       (1-o_{C,a}(1))\,2^{-2\iota}\lambda_N^2N^{-a}.
+ \label{p1:limits:anchor-lower}
+\end{equation}
+The same assertion with an additional factor $1/2$ holds
+if, instead, the orientation is any fair randomized
+function of the source word alone and only its private
+pivots are changed.
+\end{proposition}
+\begin{proof}
+Use the sufficient logarithmic-window census proved just above.  For every fixed $a>0$, with
+$h_N=\lfloor\log N/(4\log2)\rfloor$, all but $o_a(N)$ integers
+$j\in I_N$ have at least two ordinary $N^a$-smooth integers in
+$[j,j+h_N)$.  On the critical band, this interval is contained
+in each actual word under consideration; translating the initial
+boundary contributes at most one further source.
+Thus the actual word contains the required two candidates for all
+but $o_a(N)$ sources.  This argument uses only the two-candidate
+census, which is proved internally by Gaussian comparison and
+localization.  The stronger Dickman relative-density asymptotic
+of Matom\"aki--Radziwi{\l}{\l}
+\cite[Corollary~6]{matomakiradziwill2016} gives another route to
+the same sufficient conclusion.
+
+Restrict again to maximal supports whose every pivot
+exceeds $Y_0=(\log N)^5$.  The preceding Rankin bound
+loses only $N^{9/10+o(1)}$ starts.  At most one of the
+two small pivots can be the anchor, so at each of the
+remaining $(1-o_a(1))N$ sources choose a forced pivot
+$Y_0<q_x\le N^a$.  There are at least
+$(1-o_a(1))N^{2-a}$ pairs with $q_x\mid y-1$.
+The clean-pair deletions from the preceding proof apply:
+excluded targets cost $N^{19/10+o(1)}=o(N^{2-a})$;
+nearby targets, valuations at least two, and other forced
+pivots cost $o(N^{2-a})$ as well.  Full raw dependence
+has at most $N^{3/2+o(1)}$ hosts.
+
+For a surviving pair, $U,V$ are independent uniform
+vectors in $\mathbb F_2^{B_\iota}$.  If the selected
+source index is $i$ and the anchor is $j\ne i$, the flip
+is $U_i+U_j+b_i+b_j$, a fair bit independent of $V$.
+The allowed relative word is the two-point coset
+$\{b,b+\boldsymbol1\}$, disjoint from its translate by
+the first coordinate vector.  The expected target
+indicator change is therefore exactly $q_\iota$.
+Weighting by the source mean gives
+$q_\iota^2(1-o(1))N^{2-a}$, proving
+\eqref{p1:limits:anchor-lower}.
+
+For the final assertion, write the prescribed source as
+$b+g_x(U,\xi)\boldsymbol1$, where $\xi$ is independent
+auxiliary randomness and $g_x$ is fair for uniform $U$.
+This guarantees the exact conditional source law even
+after all nonpivot bits are fixed.  For two distinct
+small-pivot indices $i,j$, the flips satisfy
+\[
+ \delta_i+\delta_j=U_i+U_j+b_i+b_j.
+\]
+The right side is fair, so
+$\P(\delta_i=1)+\P(\delta_j=1)\ge1/2$.
+Choose, before drawing signs, an index with flip
+probability at least $1/4$.  Repeat the clean-pair count,
+now excluding every other source pivot from the target.
+Since $V$ is independent of $(U,\xi)$, each target
+change has expectation at least $2q_\iota/4$.
+This gives the additional factor $1/2$.
+\end{proof}
+
+For any proposed power $\alpha>0$, choose a fixed
+$a<\min(\alpha,1/10)$ in
+\eqref{p1:limits:anchor-lower}; then
+$N^\alpha\mathcal E_{\iota,N}\to\infty$.
+The quantifier fixes $a$ before $N$ and invokes no
+uniform short-interval smoothness estimate with a growing
+parameter.  The result concerns only forcings that change
+the indicated private pivots.  An orientation using the
+outside environment, a different full conditional coupling,
+or a signed scalar comparison is not covered.
+

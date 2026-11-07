@@ -5,9 +5,12 @@ exposes two individual bounds for distinct actual natural values in the
 true anchor window. One threshold precedes every physical relation space,
 window centre and cutoff H>=L+1; active nonalignment, recovery exclusion
 and the injective anchor projection are retained. This extracts the
-already constructed bounds before their product. The prototype passed
-under Lean v4.36.0-rc2; the complete replay is pending. The version 1.8
-manuscript revision and its full correspondence/visual checks are in progress.
+already constructed bounds before their product. The complete Lean v4.36.0-rc2 replay passed 18,617 build jobs,
+19,957 theorem axiom checks and 19,880 distinct references, all actual exits zero. The separate version 1.8 revision is integrated and validated:
+167 numbered results, seven changed blocks and 18 auxiliary claims have
+source-bound correspondence with actual compiled types. All 169 PDF pages
+were reviewed in contact sheets, with 27 complete detail pages at 110 dpi.
+Both earlier source versions are preserved.
 All 167 numbered-result identities and the six prepared registrations
 remain preserved. Palomar submissions remain on hold at the user's request.
 
