@@ -42208,6 +42208,36 @@
         }
       },
       "validation_commit": "27bc1758cb8ed6b2a95add0f70f90dfe450c2de7"
+    },
+    {
+      "id": "P1-MATH-0985",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p13:short:quadratic",
+        "number": "T5.1",
+        "page": 31,
+        "source": "companion_sections/short_supports.tex",
+        "line": 9,
+        "statement_sha256": "98eb59430167ea84a4dd75c36b107f990646c6c2f47783b8292f95e2659899bb"
+      },
+      "original_assumption": "The discussion of the uncapped affine comparison did not distinguish a globally sufficient real-parameter range from necessity under the actual nonnegative divisor exponent.",
+      "finding": "For delta>=0, the uncapped comparison is equivalent to beta-2*delta<=2; actual positive prescribed divisors have delta>=0. Without the sign condition the range remains sufficient but is not necessary.",
+      "proposed_revision": "Describe the range as sufficient for arbitrary real parameters and exact for the actual nonnegative divisor exponent. Retain the universally valid capped comparison and all original counting bounds.",
+      "impact": "Clarifies the exact parameter boundary of the corrected T5.1 discussion without changing manuscript coverage or creating another false-original scope.",
+      "evidence": [
+        "PaperP1.QuadraticComparisonRange.exponent_le_affine_iff_of_nonneg_delta",
+        "PaperP1.QuadraticComparisonRange.range_not_necessary_without_nonnegative_delta",
+        "PaperP1.QuadraticComparisonRange.actual_delta_nonneg",
+        "PaperP1.QuadraticComparisonRange.actual_comparison_iff"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18539 jobs); direct axiom audit passed for 19295 declarations using only propext, Classical.choice and Quot.sound; all 19611 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.80 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

@@ -1,6 +1,17 @@
 # Actual projective scheme map
 
-Current checkpoint P1-MATH-0984: The separate version 1.7 draft
+Current checkpoint P1-MATH-0985: The exact uncapped quadratic-exponent
+comparison is characterized for every nonnegative delta, including all
+actual positive prescribed divisors. The range is sufficient for
+arbitrary real parameters, while necessity requires the sign
+qualification. All167 revised numbered statements remain proved;
+original coverage remains165/0/2 with the two false scopes preserved.
+The first analytic registration candidate passed local statement
+comparison and both kernels. Further family preparation and complete
+Palomar preflight remain. Lean v4.36.0-rc2 and original source bytes are
+unchanged. No registration is claimed.
+
+Historical checkpoint P1-MATH-0984: The separate version 1.7 draft
 integrates the two necessary statement corrections. All 167 revised
 statements have checked proofs, with exact source hashes and canonical
 aliases for T1.10 and T5.1. The original v1.6 ledger remains 165 proved,
@@ -28953,3 +28964,16 @@ RevisedCompanionStatements.companion_T5_1 gives all three actual counting conclu
 The revised proof ledger records 167 proved statements: all 73 main and all 94 companion statements, including the two corrected replacements. The original ledger stays at 165 proved, 0 conditional and 2 false-original scopes in_progress. The draft proof of T19.17 uses the internally proved sufficient logarithmic-window census and preserves both original coefficients. Both revised PDFs have stable cross-references, no overfull boxes, complete contact-sheet review and detailed inspection of the changed pages. The stronger general sharp short-average theorem, Dickman relative-density asymptotic and unrestricted P3 estimate are not claimed. Palomar compatibility and independently meaningful family preparation remain; no submission or registry identifier is claimed.
 
 Verified under Lean v4.36.0-rc2: full build passed (18535 jobs); direct axiom audit passed for 19288 declarations using only propext, Classical.choice and Quot.sound; all 19607 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.83 GiB.
+
+
+## Make the exact quadratic-exponent comparison range explicit
+
+The corrected capped quadratic-kernel comparison is valid for every real beta and delta. The uncapped comparison is valid whenever beta-2*delta<=2. QuadraticComparisonRange.exponent_le_affine_iff_of_nonneg_delta now proves that, for nonnegative delta, this condition is also necessary. The proof treats the exact min/max exponent and affine expression, without a limiting exponent margin.
+
+QuadraticComparisonRange.actual_delta_nonneg proves the required sign for every actual positive prescribed divisor e at scale N>=2. Consequently actual_comparison_iff identifies the exact criterion for the original actual parameter delta=log(e)/log(N), uniformly in every real beta. This makes the distinction between a real-parameter algebraic statement and the admissible arithmetic parameters explicit.
+
+The sign hypothesis matters for necessity on the entire real plane: at beta=delta=-4, the uncapped exponent is zero and is at most the affine value 3/2, although beta-2*delta=4>2. This is not an admissible positive-divisor counterexample and does not refute either counting estimate. The earlier actual admissible delta=0 counterexample to the unrestricted original display remains unchanged.
+
+This is a parameter-scope clarification for the revised discussion, not a third false original numbered statement. Revised coverage remains 167/167 proved; the original v1.6 ledger remains 165 proved, 0 conditional and 2 false-original scopes in_progress. The original source bytes and compiler pin are preserved. The first analytic registry family has already passed local Comparator and Lean/NanoDa replay; further families and the complete pinned Palomar workflow remain. No registration is claimed.
+
+Verified under Lean v4.36.0-rc2: full build passed (18539 jobs); direct axiom audit passed for 19295 declarations using only propext, Classical.choice and Quot.sound; all 19611 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.80 GiB.

@@ -1,6 +1,17 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0984: The separate version 1.7 draft
+Current checkpoint P1-MATH-0985: The exact uncapped quadratic-exponent
+comparison is characterized for every nonnegative delta, including all
+actual positive prescribed divisors. The range is sufficient for
+arbitrary real parameters, while necessity requires the sign
+qualification. All167 revised numbered statements remain proved;
+original coverage remains165/0/2 with the two false scopes preserved.
+The first analytic registration candidate passed local statement
+comparison and both kernels. Further family preparation and complete
+Palomar preflight remain. Lean v4.36.0-rc2 and original source bytes are
+unchanged. No registration is claimed.
+
+Historical checkpoint P1-MATH-0984: The separate version 1.7 draft
 integrates the two necessary statement corrections. All 167 revised
 statements have checked proofs, with exact source hashes and canonical
 aliases for T1.10 and T5.1. The original v1.6 ledger remains 165 proved,
@@ -3848,7 +3859,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records982 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records983 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -3967,7 +3978,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **19288 audited theorem/lemma declarations**. This
+- The project currently has **19295 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -36572,3 +36583,16 @@ RevisedCompanionStatements.companion_T5_1 gives all three actual counting conclu
 The revised proof ledger records 167 proved statements: all 73 main and all 94 companion statements, including the two corrected replacements. The original ledger stays at 165 proved, 0 conditional and 2 false-original scopes in_progress. The draft proof of T19.17 uses the internally proved sufficient logarithmic-window census and preserves both original coefficients. Both revised PDFs have stable cross-references, no overfull boxes, complete contact-sheet review and detailed inspection of the changed pages. The stronger general sharp short-average theorem, Dickman relative-density asymptotic and unrestricted P3 estimate are not claimed. Palomar compatibility and independently meaningful family preparation remain; no submission or registry identifier is claimed.
 
 Verified under Lean v4.36.0-rc2: full build passed (18535 jobs); direct axiom audit passed for 19288 declarations using only propext, Classical.choice and Quot.sound; all 19607 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.83 GiB.
+
+
+## Make the exact quadratic-exponent comparison range explicit
+
+The corrected capped quadratic-kernel comparison is valid for every real beta and delta. The uncapped comparison is valid whenever beta-2*delta<=2. QuadraticComparisonRange.exponent_le_affine_iff_of_nonneg_delta now proves that, for nonnegative delta, this condition is also necessary. The proof treats the exact min/max exponent and affine expression, without a limiting exponent margin.
+
+QuadraticComparisonRange.actual_delta_nonneg proves the required sign for every actual positive prescribed divisor e at scale N>=2. Consequently actual_comparison_iff identifies the exact criterion for the original actual parameter delta=log(e)/log(N), uniformly in every real beta. This makes the distinction between a real-parameter algebraic statement and the admissible arithmetic parameters explicit.
+
+The sign hypothesis matters for necessity on the entire real plane: at beta=delta=-4, the uncapped exponent is zero and is at most the affine value 3/2, although beta-2*delta=4>2. This is not an admissible positive-divisor counterexample and does not refute either counting estimate. The earlier actual admissible delta=0 counterexample to the unrestricted original display remains unchanged.
+
+This is a parameter-scope clarification for the revised discussion, not a third false original numbered statement. Revised coverage remains 167/167 proved; the original v1.6 ledger remains 165 proved, 0 conditional and 2 false-original scopes in_progress. The original source bytes and compiler pin are preserved. The first analytic registry family has already passed local Comparator and Lean/NanoDa replay; further families and the complete pinned Palomar workflow remain. No registration is claimed.
+
+Verified under Lean v4.36.0-rc2: full build passed (18539 jobs); direct axiom audit passed for 19295 declarations using only propext, Classical.choice and Quot.sound; all 19611 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.80 GiB.

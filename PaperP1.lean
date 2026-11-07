@@ -4924,3 +4924,4 @@ public import PaperP1.Analysis.SmoothLogarithmicWindowDensity
 public import PaperP1.Analysis.UnconditionalOrdinarySourceCensus
 public import PaperP1.Analysis.UnconditionalPrintedAnchorObstruction
 public import PaperP1.Analysis.RevisedCompanionStatements
+public import PaperP1.Analysis.QuadraticComparisonRange
