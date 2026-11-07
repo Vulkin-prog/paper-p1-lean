@@ -1,0 +1,36 @@
+{
+  "checkpoint": "P1-MATH-0989",
+  "source_commit": "f55fe63b9538863bd0ec8bdf8b3deacb70f49e4d",
+  "status": "passed",
+  "full_build_jobs": 18573,
+  "audited_theorems": 19540,
+  "distinct_checked_references": 19692,
+  "actual_process_exit_codes": {
+    "build": 0,
+    "audit": 0,
+    "references": 0
+  },
+  "permitted_kernel_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "logs": [
+    {
+      "kind": "build",
+      "path": "docs/validation/checkpoint-0989/build.log.gz",
+      "sha256_gzip": "972dd5fa9087a53e6328d0a087ff41ad286b327cb24e6a6186261485d598f324"
+    },
+    {
+      "kind": "audit",
+      "path": "docs/validation/checkpoint-0989/audit.log.gz",
+      "sha256_gzip": "fe528c81f078d409e1ffc696254988c5af8485d1c1c4c3113e6f0db4d8a5380a"
+    },
+    {
+      "kind": "references",
+      "path": "docs/validation/checkpoint-0989/references.log.gz",
+      "sha256_gzip": "6cd4cb460ebbbab035c39675a4aecc197c8ccf3e5c076a72619ed13a23a66176"
+    }
+  ],
+  "scope": "Whole project replay including the effective finite-depth valuation-layer bounds and all fourteen registry Solutions. All original and revised numbered statement blocks are preserved."
+}

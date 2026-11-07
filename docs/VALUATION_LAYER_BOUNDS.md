@@ -39,4 +39,8 @@ Canonical declarations: finite_geometric_lower, positive_exponential_lower,
 total_exponential_lower and strict_budget_gain_on_original_scale in
 PaperP1.ValuationLayerCounts.
 
-All 27 theorems and their exact direct axiom audit passed under Lean v4.36.0-rc2 with proof warnings as errors. Only propext, Classical.choice and Quot.sound occur. Full project compilation and declaration-reference replay are pending.
+Full Lean v4.36.0-rc2 replay passed at source f55fe63b9538863bd0ec8bdf8b3deacb70f49e4d: 18,573 build jobs, 19,540 source-discovered theorem axiom checks and 19,692 distinct declaration-reference checks, all actual process exits 0. Proof warnings are errors; only propext, Classical.choice and Quot.sound occur.
+
+The full replay and original compressed logs are preserved in [the validation record](validation/checkpoint-0989/validation.json).
+
+This refinement is integrated in the unnumbered version 1.7 companion appendix, under Exact valuations and finite layers. The 65-page article and 101-page companion were rebuilt and reviewed; all 167 numbered statement blocks are preserved. See [the manuscript validation](manuscript-v1.7-validation.json).

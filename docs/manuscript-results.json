@@ -53693,7 +53693,9 @@
         {
           "checkpoint": "P1-MATH-0989",
           "scope": "Effective finite-depth valuation count and supported actual moment bounds; original theorem proof remains validated.",
-          "validation": "All 27 theorems and their exact direct axiom audit passed under Lean v4.36.0-rc2 with proof warnings as errors. Only propext, Classical.choice and Quot.sound occur. Full project compilation and declaration-reference replay are pending."
+          "validation": "Full Lean v4.36.0-rc2 replay passed at source f55fe63b9538863bd0ec8bdf8b3deacb70f49e4d: 18,573 build jobs, 19,540 source-discovered theorem axiom checks and 19,692 distinct declaration-reference checks, all actual process exits 0. Proof warnings are errors; only propext, Classical.choice and Quot.sound occur.",
+          "validation_source_commit": "f55fe63b9538863bd0ec8bdf8b3deacb70f49e4d",
+          "validation_record": "docs/validation/checkpoint-0989/validation.json"
         }
       ]
     },

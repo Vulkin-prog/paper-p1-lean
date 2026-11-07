@@ -33,3 +33,5 @@ strictly_stronger_card_bound_example in PaperP1.ValuationPrimeCylinder.
 Full Lean v4.36.0-rc2 replay passed at source 57835da7813e314367f689312af436f9ae62e869: 18,571 build jobs, 19,513 source-discovered theorem axiom checks and 19,660 distinct declaration-reference checks, all actual process exits 0. Proof warnings are errors; only propext, Classical.choice and Quot.sound occur.
 
 The full replay and original compressed logs are preserved in [the validation record](validation/checkpoint-0988/validation.json).
+
+This refinement is integrated in the unnumbered version 1.7 companion appendix, under Exact valuations and finite layers. The 65-page article and 101-page companion were rebuilt and reviewed; all 167 numbered statement blocks are preserved. See [the manuscript validation](manuscript-v1.7-validation.json).

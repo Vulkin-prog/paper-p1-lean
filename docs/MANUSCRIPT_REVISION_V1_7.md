@@ -82,3 +82,23 @@ statement block. Both PDFs were rebuilt with stable references. Of their
 165 pages, 164 are pixel-identical to the reviewed version and the changed
 companion page 98 passed detailed visual review. Exact proof and log hashes
 are preserved in [the validation record](validation/checkpoint-0987/validation.json).
+
+
+Checkpoints P1-MATH-0988 and P1-MATH-0989 are integrated together in the
+unnumbered companion appendix. The exact even-valuation start criterion
+adds the checked N=18,q=3 example. Every finite depth k has explicit
+budget N/(q+1)*(1-q^(-2*k))-3*k and both actual exponential-moment bounds
+at the same supported cylinder cost. Depth one recovers the previous
+budget; depth two strictly improves it at q=17,N=2^16. Larger depth need
+not improve the explicit budget because its endpoint error grows. The
+original t>2 theorem and every numbered statement block are preserved.
+The source replays passed 18,571/19,513/19,660 and 18,573/19,540/19,692
+build jobs, theorem axiom checks and distinct references respectively.
+
+Both PDFs were rebuilt with stable references: 65 article pages and 101
+companion pages. All 166 pages were rendered. The 161 unchanged pages are
+pixel-identical to the reviewed version, and the five changed or new
+companion pages (2,98,99,100,101) passed detailed visual inspection.
+The companion gains one page; the original v1.6 package and all 167
+numbered statement identities remain preserved. Exact proof commits,
+source and PDF hashes, and original replay logs are recorded separately.

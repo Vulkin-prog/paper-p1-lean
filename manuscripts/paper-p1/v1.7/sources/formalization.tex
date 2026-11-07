@@ -199,6 +199,35 @@ At the original scale $q=7$, $N=64$, the new cutoff $126$ charges
 With the same retained-count contribution, the finite exponential lower
 bound therefore gains a factor four; this exact example is also checked.
 
+\paragraph{Exact valuations and finite layers.}
+Within the displayed multiplier interval, a positive start occurs
+precisely when $\nu_q(u)$ is even: its predecessor has valuation
+$1+\nu_q(u)$, and its following $q-1$ values are positive.
+The coprime multipliers form the layer $\nu_q(u)=0$.
+For example, $N=18$, $q=3$ also admits $u=9$, adding the start $28$.
+All these additional starts use the same supported cylinder.
+
+For every integer depth $k\geq0$, retaining the disjoint layers
+$\nu_q(u)=2j$, $0\leq j<k$, gives the explicit lower count
+\[
+ B_k(N,q)=\frac{N}{q+1}\bigl(1-q^{-2k}\bigr)-3k.
+\]
+Exact counts of multiples in translated intervals give the endpoint
+error $3k$; the geometric sum is evaluated exactly.  For every $t\geq0$,
+both full exponential moments are therefore at least
+$\exp\{tB_k(N,q)-\pi(M)\log2\}$.
+The choice $k=1$ recovers $N/q-N/q^2-3$.
+At the original critical scale $q=17$, $N=2^{16}$, the budget for
+$k=2$ is strictly greater, giving a strictly stronger exponential
+lower bound for every $t>0$ at the same cost.
+Larger depth need not improve this explicit estimate because its
+endpoint error grows.  Here $k$ is the number of retained valuation layers.
+The original $t>2$ domain and limiting coefficient remain unchanged.
+The canonical declarations are
+\texttt{ValuationPrimeCylinder.positive\_start\_iff\_even\_factorization}
+and \texttt{ValuationLayerCounts.finite\_geometric\_lower}, with both
+actual moment bounds in the latter module.
+
 \paragraph{Scope and reproducibility.}
 The smooth-window proof above specializes the physical localization to the
 ordinary smooth indicator.  A general sharp short-average theorem for

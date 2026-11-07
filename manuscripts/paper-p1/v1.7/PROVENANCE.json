@@ -103,7 +103,7 @@
     },
     {
       "path": "formalization.tex",
-      "sha256": "60ce80bb80ed90813b8ac530ba1e6ac350946d527779bbf2d2e169a786a74e06"
+      "sha256": "410a4c5ea2ebf9833aa0a2d029419bcdd320fbfa721020d64200cfb7e008f7f9"
     },
     {
       "path": "main.tex",
@@ -213,6 +213,16 @@
       "checkpoint": "P1-MATH-0987",
       "proof_commit": "68164c4abb37b8679c9c3f1f4e78dc52667a285b",
       "scope": "Unnumbered companion appendix: the retained-start cylinder fixes prime signs only through M=2*q*floor(N/q)<=2*N. Both full exponential moments inherit its stronger exact charge by integrability and monotonicity; the exact q=7 example gives a factor-four lower-bound gain. All 167 numbered statement blocks are preserved."
+    },
+    {
+      "checkpoint": "P1-MATH-0988",
+      "proof_commit": "57835da7813e314367f689312af436f9ae62e869",
+      "scope": "Unnumbered companion appendix: exact even-valuation criterion for the supported positive starts and the strict N=18,q=3 example. All 167 numbered statement blocks are preserved."
+    },
+    {
+      "checkpoint": "P1-MATH-0989",
+      "proof_commit": "f55fe63b9538863bd0ec8bdf8b3deacb70f49e4d",
+      "scope": "Unnumbered companion appendix: general finite-depth geometric start budget and both actual exponential-moment bounds, recovery of depth one and strict depth-two gain on the original q=17 critical scale. All 167 numbered statement blocks are preserved."
     }
   ]
 }

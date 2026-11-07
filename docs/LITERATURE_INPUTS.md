@@ -1,14 +1,18 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0989: Every finite depth k gives the explicit
-actual retained-start lower count N/(q+1)*(1-q^(-2*k))-3*k and corresponding
-positive and total exponential-moment bounds at the supported cylinder cost.
-Depth one recovers the earlier budget, while depth two strictly improves it
-at q=17, N=2^16. The 27 direct proofs and exact axiom audit passed; the
-whole-project replay is pending. The original t>2 asymptotic theorem is
-preserved. All 167 revised numbered statements remain proved; original
+Current checkpoint P1-MATH-0989: The explicit finite-depth budget
+B_k=N/(q+1)*(1-q^(-2*k))-3*k bounds the actual retained positive starts.
+Both full exponential moments have lower bound exp(t*B_k-pi(M)*log(2))
+at the same supported cylinder cutoff M=2*q*floor(N/q). Depth one is the
+previous budget; depth two strictly improves it at q=17, N=2^16.
+The full replay passed 18,573 build jobs, 19,540 theorem axiom checks
+and 19,692 distinct declaration-reference checks at source
+f55fe63b9538863bd0ec8bdf8b3deacb70f49e4d. The original t>2 prime-scale
+liminf and all 167 revised numbered statements are preserved. Original
 coverage stays 165 proved and two false-original scopes. Fourteen registry
-families with 57 selections remain locally qualified. No registration is claimed.
+families with 57 selections remain locally qualified. Both valuation
+refinements are integrated in the revised companion appendix, with all
+167 numbered statement blocks preserved. No registration is claimed.
 
 Historical checkpoint P1-MATH-0988: The exact even-valuation criterion
 retains more positive starts at the same supported prime-cylinder cost.
@@ -40889,4 +40893,4 @@ Full Lean v4.36.0-rc2 replay passed at source 57835da7813e314367f689312af436f9ae
 
 For every integer depth k>=0 and prime q<=N, the actual even-valuation retained start count is at least B_k=N/(q+1)*(1-(1/q)^(2*k))-3*k. The proof uses exact translated-interval multiple counts, pairwise disjoint even valuation layers, their inclusion in the actual retained parameter set, and the exact finite geometric sum. For prime q and t>=0, both actual full exponential moments are at least exp(t*B_k-primeCount(2*q*floor(N/q))*log(2)). Depth one is exactly the earlier N/q-N/q^2-3 budget. Depth two strictly improves it at the original critical scale q=17, N=2^(q-1)=65536, hence gives a strictly larger exponential lower bound for every t>0 at the same cylinder cost. The explicit budget need not increase with depth because the error term grows. The original t>2 asymptotic statement and coefficient are preserved; no sharp density or new threshold is asserted.
 
-All 27 theorems and their exact direct axiom audit passed under Lean v4.36.0-rc2 with proof warnings as errors. Only propext, Classical.choice and Quot.sound occur. Full project compilation and declaration-reference replay are pending.
+Full Lean v4.36.0-rc2 replay passed at source f55fe63b9538863bd0ec8bdf8b3deacb70f49e4d: 18,573 build jobs, 19,540 source-discovered theorem axiom checks and 19,692 distinct declaration-reference checks, all actual process exits 0. Proof warnings are errors; only propext, Classical.choice and Quot.sound occur.
