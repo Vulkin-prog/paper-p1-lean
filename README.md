@@ -93,6 +93,11 @@ NanoDa, with bubblewrap isolation enabled:
 | Universal arithmetic anchor obstructions | 4 | [Receipt](palomar/v1/private_obstruction/qualification.json) |
 | Actual conditioning and colored replica target sums | 4 | [Receipt](palomar/v1/conditioning/qualification.json) |
 
+Two further families are prepared, covering the exact actual factorial
+cumulants and the fixed-order moment obstruction. Their ten selected statements
+and proofs have passed standalone comparisons and three kernels; qualification
+against the frozen root project remains pending.
+
 The [candidate interfaces](palomar/v1/README.md) link each standalone Mathlib-only
 Challenge, complete Solution, Comparator configuration, metadata and preserved
 logs. Selected declaration counts describe registration candidates, separately

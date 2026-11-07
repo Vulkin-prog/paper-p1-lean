@@ -1,0 +1,81 @@
+version: v0.4
+project:
+  name: Fixed-order factorial moments do not imply a polynomial approximation rate
+  description: Explicit nonnegative normalized probability masses perturb the unit-mean quadratic
+    Poisson reference by a literal finite difference. In the original coefficient interval
+    [0,1], exactly one factorial order changes, while every factorial moment has an unconditionally
+    convergent mass sum. The total variation is exact, and all real exponential moments have
+    the original uniform bound. At the moving order floor(sqrt(log N)) and coefficient log(N)N^(-2/3),
+    each fixed factorial order eventually agrees exactly with the reference, while the total
+    variation exceeds every fixed inverse power of N. Its logarithmic error has an explicit
+    uniform 3 sqrt(log N) bound. These are constructed probability models, not an identification
+    with the multiplicative-run count law. No unformalized input is assumed.
+  authors:
+  - Brice Pouly
+  author_identifiers:
+  - name: Brice Pouly
+    github: Vulkin-prog
+    orcid: 0009-0008-8491-2467
+  responsible_maintainers:
+  - Brice Pouly
+  license: Apache-2.0
+repository:
+  role: substantive-development
+classification:
+  arxiv:
+  - math.NT
+  - math.PR
+sources:
+- title: Sharp Poisson approximation and second-order correction for long multiplicative runs,
+    version 1.7 draft
+  authors:
+  - Brice Pouly
+  id: https://github.com/Vulkin-prog/paper-p1-lean
+  type: paper
+  relationship: formalizes
+  location: Companion proposition T23.1, including its exact moment and total-variation calculation,
+    original exponential bound and moving subpolynomial obstruction sequence; version 1.7
+    draft.
+  note: The source coefficient interval is [0,1]. Positivity extends to [0,2], but the perturbation
+    vanishes at 2 and the unique-changed-order iff is restricted to the original interval.
+    Each fixed moment order precedes its eventual threshold. This is a working manuscript
+    with no publication identifier asserted.
+automation:
+  methods:
+  - method: agent
+    framework: Codex
+    models:
+    - OpenAI Codex agents
+    prompting_notes: Use explicit Poisson masses, binomial finite-difference coefficients,
+      perturbation magnitude and half-l1 distance. Make nonnegativity, normalization and weighted-series
+      summability explicit. Preserve the a=2 endpoint distinction and the fixed-order-before-threshold
+      quantifier. Do not identify the constructed models with the arithmetic run law.
+    tool_setup: Lean proof construction, explicit Mathlib-only source definitions, exact bridges
+      to the substantive proof and full axiom audits.
+  notes: Agent assistance is not independent human peer review.
+review:
+  status: agent-reviewed
+  notes: All five selected statements and complete Solution proofs compile. Their explicit
+    manually compiled exports passed statement comparison, Lean, NanoDa and verified con-ron,
+    and all new theorem axioms were audited. The root-library build, frozen standard Comparator
+    qualification and complete Palomar workflow are recorded separately after actual success.
+    The standalone Challenge has exactly five deliberate theorem holes.
+status:
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms:
+  - propext
+  - Quot.sound
+  - Classical.choice
+  scope: 'Five selected declarations: normalized nonnegative masses, all exact factorial series
+    with the unique changed order, exact total variation and uniform exponential bound, eventual
+    matching at every fixed factorial order, and uniform subpolynomial distance with explicit
+    logarithmic error. Only the Challenge has deliberate holes. No registration or certification
+    is claimed.'
+fidelity:
+  divergences: The construction uses the quadratic Poisson reference at mean one. For each
+    fixed factorial order there is a threshold; one threshold for all unbounded orders is
+    not asserted. At coefficient 2 the perturbation is zero, so the exact equality iff order
+    differs from m is asserted only for [0,1]. The moving parameter is exactly log(N)N^(-2/3),
+    and the order is the exact natural floor of sqrt(log N). The counterexample concerns inference
+    from fixed moment information and is not claimed to be the actual multiplicative-run law.

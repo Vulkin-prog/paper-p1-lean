@@ -1,0 +1,17 @@
+{
+  "challenge_module": "ChallengeP1FactorialCumulants",
+  "solution_module": "SolutionP1FactorialCumulants",
+  "theorem_names": [
+    "PaperP1Registry.FactorialCumulants.factorial_source",
+    "PaperP1Registry.FactorialCumulants.third_exact_identity",
+    "PaperP1Registry.FactorialCumulants.fourth_exact_identity",
+    "PaperP1Registry.FactorialCumulants.principal_second_equivalent",
+    "PaperP1Registry.FactorialCumulants.optimal_third_cumulant"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "enable_nanoda": true
+}

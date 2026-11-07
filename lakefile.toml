@@ -60,6 +60,20 @@ moreLeanArgs = ["-DwarningAsError=false"]
 [[lean_lib]]
 name = "SolutionP1Conditioning"
 
+[[lean_lib]]
+name = "ChallengeP1FactorialCumulants"
+moreLeanArgs = ["-DwarningAsError=false"]
+
+[[lean_lib]]
+name = "SolutionP1FactorialCumulants"
+
+[[lean_lib]]
+name = "ChallengeP1MomentObstruction"
+moreLeanArgs = ["-DwarningAsError=false"]
+
+[[lean_lib]]
+name = "SolutionP1MomentObstruction"
+
 [[require]]
 name = "mathlib"
 git = "https://github.com/leanprover-community/mathlib4.git"

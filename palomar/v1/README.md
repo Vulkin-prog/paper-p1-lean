@@ -6,6 +6,12 @@ select **27 declarations**, separately from the complete **167-result revised
 manuscript correspondence**. Their immutable local receipts and original
 compressed logs preserve exactly what was checked.
 
+Two additional families, with five selected declarations each, are being
+qualified in the root project. Their standalone statements, complete proofs,
+manual export comparisons and three-kernel replays have passed; their frozen
+root Comparator receipts are still pending. They are separate from the seven
+families selected by the original full-workflow caller.
+
 | Family | Selected declarations | Comparator configuration | Metadata and local evidence |
 |---|---:|---|---|
 | Ordinary smooth integers in logarithmic intervals | 3 | [configuration](../../comparator/p1_smooth_windows.json) | [metadata](smooth_windows/formalization.yaml), [passed local comparison and both kernels](smooth_windows/qualification.json) |
@@ -15,6 +21,8 @@ compressed logs preserve exactly what was checked.
 | Exact Poisson scales and quantized mean bias | 5 | [configuration](../../comparator/p1_poisson_scales.json) | [metadata](poisson_scales/formalization.yaml), [passed local comparison and both kernels](poisson_scales/qualification.json) |
 | Universal arithmetic anchor obstructions | 4 | [configuration](../../comparator/p1_private_obstruction.json) | [metadata](private_obstruction/formalization.yaml), [passed local comparison and both kernels](private_obstruction/qualification.json) |
 | Actual conditioning and colored replica target sums | 4 | [configuration](../../comparator/p1_conditioning.json) | [metadata](conditioning/formalization.yaml), [passed local comparison and both kernels](conditioning/qualification.json) |
+| Actual factorial cumulants and the optimal third-cumulant power | 5 | [configuration](../../comparator/p1_factorial_cumulants.json) | [metadata](factorial_cumulants/formalization.yaml); root qualification pending |
+| Fixed-order moment obstruction to a polynomial approximation rate | 5 | [configuration](../../comparator/p1_moment_obstruction.json) | [metadata](moment_obstruction/formalization.yaml); root qualification pending |
 
 Each configuration names its standalone Mathlib-only Challenge and complete
 Solution. Only the exact selected Challenge statements have deliberate proof
@@ -36,6 +44,11 @@ commit and the confirmed human relationship, runs one family at a time and
 preserves one mechanical report per family. It has not yet been dispatched.
 Local qualification, full mechanical preflight, editorial review and permanent
 registration are separate stages. No submission or registry entry is claimed.
+
+The separate [additional-family workflow](../../.github/workflows/palomar-preflight-additional.yml)
+selects only factorial cumulants and the moment obstruction. The original
+caller continues to select exactly its seven original families. Both require
+an exact source commit and the confirmed supported human relationship.
 
 The Paper C workflow reference is commit
 b9fa9ba490f201b408a302a86f1594ee620b228b. Its Lean 4.34 tools are not reused.

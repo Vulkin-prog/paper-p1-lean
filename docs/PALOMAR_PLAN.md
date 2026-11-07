@@ -16,6 +16,13 @@ qualification receipt and compressed original logs. The latest complete build
 passed **18,551 jobs** and the direct source-discovered audit checked **19,373
 theorems**, allowing only `propext`, `Classical.choice` and `Quot.sound`.
 
+Two additional five-declaration families are in root qualification: exact
+actual factorial cumulants, including the optimal positive third-cumulant
+power, and the explicit fixed-order moment obstruction to polynomial rates.
+Their manual exports passed all three available kernels. They remain pending
+until their standard frozen-root Comparator, full build and audit receipts
+are recorded. These interfaces introduce no new mathematical-change entry.
+
 The [evidence checker](../scripts/check_registry_evidence.py) verifies every
 receipt against its original commit and inventory, its preserved log hashes,
 actual successful exports and kernels, and the unchanged current statement,

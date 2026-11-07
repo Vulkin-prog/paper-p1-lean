@@ -1,0 +1,17 @@
+{
+  "challenge_module": "ChallengeP1MomentObstruction",
+  "solution_module": "SolutionP1MomentObstruction",
+  "theorem_names": [
+    "PaperP1Registry.MomentObstruction.normalized_probabilities",
+    "PaperP1Registry.MomentObstruction.all_factorial_series",
+    "PaperP1Registry.MomentObstruction.distance_and_exponential",
+    "PaperP1Registry.MomentObstruction.fixed_order_matching",
+    "PaperP1Registry.MomentObstruction.uniform_subpolynomial"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "enable_nanoda": true
+}

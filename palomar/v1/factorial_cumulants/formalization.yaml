@@ -1,0 +1,87 @@
+version: v0.4
+project:
+  name: Actual factorial cumulants and the optimal third-cumulant power for multiplicative
+    runs
+  description: In the literal independent prime-sign model, the complete multiplicative-run
+    count has a third factorial cumulant of optimal positive power N^(-41/30). Its positive
+    lower constant depends only on the critical band, before the upper epsilon margin. The
+    actual second cumulant has its exact moving residue-dependent equivalent, with the literal
+    coefficient and nominal mean. All falling-factorial observables are integrable and have
+    the exact subset expansion in actual joint start probabilities. Complete third- and fourth-cumulant
+    identities retain heterogeneous window means, pair-square, triple, pair and diagonal repeated-index
+    terms. No nominal marginal replacement, compatibility omission or unformalized mathematical
+    input is assumed.
+  authors:
+  - Brice Pouly
+  author_identifiers:
+  - name: Brice Pouly
+    github: Vulkin-prog
+    orcid: 0009-0008-8491-2467
+  responsible_maintainers:
+  - Brice Pouly
+  license: Apache-2.0
+repository:
+  role: substantive-development
+classification:
+  arxiv:
+  - math.NT
+  - math.PR
+sources:
+- title: Sharp Poisson approximation and second-order correction for long multiplicative runs,
+    version 1.7 draft
+  authors:
+  - Brice Pouly
+  id: https://github.com/Vulkin-prog/paper-p1-lean
+  type: paper
+  relationship: formalizes
+  location: Main theorem 14.1, the second-cumulant phase equivalent from theorem 3.3, and
+    the exact factorial and heterogeneous cumulant identities underlying main 11.3 and 16.1;
+    version 1.7 draft.
+  note: The full count includes both signs and its preceding opposite-sign boundary. The leading
+    lower constant for the third cumulant is independent of the upper exponent margin. This
+    is a working manuscript without an asserted publication identifier.
+related_formalizations:
+- id: https://github.com/Vulkin-prog/paper-c-lean
+  relationship: adapts
+  note: Selected finite and infinite prime-sign model foundations were ported from b9fa9ba490f201b408a302a86f1594ee620b228b,
+    under Apache-2.0, and rebuilt under Lean v4.36.0-rc2. Exact file identities, statement
+    scope and adaptations are recorded in docs/PAPER_C_REUSE.md and source headers. The P1
+    optimal quadratic estimates are proved in this substantive development.
+automation:
+  methods:
+  - method: agent
+    framework: Codex
+    models:
+    - OpenAI Codex agents
+    prompting_notes: Keep literal counts and factorial moments, all heterogeneous marginals
+      and repeated-index terms. Expose source integrability. Place the positive third-cumulant
+      lower constant before every epsilon margin and the common threshold before every scale
+      and critical length.
+    tool_setup: Lean proof construction, explicit Mathlib-only source definitions, exact bridges
+      to the substantive proof and full axiom audits.
+  notes: Agent assistance is not independent human peer review.
+review:
+  status: agent-reviewed
+  notes: All five selected statements and complete Solution proofs compile. Their explicit
+    manually compiled exports passed statement comparison, Lean, NanoDa and verified con-ron,
+    and all new theorem axioms were audited. The root-library build, frozen standard Comparator
+    qualification and complete Palomar workflow are recorded separately after actual success.
+    The standalone Challenge has exactly five deliberate theorem holes.
+status:
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms:
+  - propext
+  - Quot.sound
+  - Classical.choice
+  scope: 'Five selected declarations: source factorial integrability and subset expansion,
+    exact third identity, exact fourth identity, actual moving second-cumulant equivalent
+    and the optimal positive third-cumulant power. Only the standalone Challenge has deliberate
+    holes. No registry entry or certification is claimed.'
+fidelity:
+  divergences: The third-cumulant lower bound is c_C N^(-41/30), without a negative epsilon
+    margin; the upper bound retains every positive epsilon. The second-cumulant equivalent
+    retains the moving residue L mod 3 and nominal mean. Every actual heterogeneous window
+    mean and all repeated-index terms are present. The exact finite identities hold at all
+    finite N and L. Higher-order probability data are not replaced by a nominal independent
+    model.
