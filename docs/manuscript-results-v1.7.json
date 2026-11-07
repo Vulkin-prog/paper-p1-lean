@@ -9030,7 +9030,32 @@
         "PaperP1.PositionalBlockIndependence.independent_pair_blocks_of_no_edges",
         "PaperP1.PositionalBlockIndependence.independent_canonical_pair_blocks_iff",
         "PaperP1.PositionalBlockIndependence.independent_pair_block_events",
-        "PaperP1.PositionalBlockIndependence.independent_pair_blocks_iff_no_positive_crossing"
+        "PaperP1.PositionalBlockIndependence.independent_pair_blocks_iff_no_positive_crossing",
+        "PaperP1.PositionalBivariateLaw.addCommon",
+        "PaperP1.PositionalBivariateLaw.measurable_addCommon",
+        "PaperP1.PositionalBivariateLaw.law",
+        "PaperP1.PositionalBivariateLaw.hasLaw_addCommon",
+        "PaperP1.PositionalBivariateLaw.law_isProbability",
+        "PaperP1.PositionalBivariateLaw.sum_partition",
+        "PaperP1.PositionalBivariateLaw.sum_union_filter_left",
+        "PaperP1.PositionalBivariateLaw.independent_sum_pair",
+        "PaperP1.PositionalBivariateLaw.hasLaw_pair_sums",
+        "PaperP1.PositionalBivariateLaw.count",
+        "PaperP1.PositionalBivariateLaw.count_eq_sum",
+        "PaperP1.PositionalBivariateLaw.field_bivariate_parameters",
+        "PaperP1.PositionalBivariateLaw.field_covariance_bounds",
+        "PaperP1.PositionalBivariateLaw.field_joint_law",
+        "PaperP1.PositionalBivariateLaw.pair_matrix_joint_law",
+        "PaperP1.PositionalBivariateLaw.canonical_pair_joint_law",
+        "PaperP1.PositionalBivariateMass.fiber",
+        "PaperP1.PositionalBivariateMass.fiber_coe",
+        "PaperP1.PositionalBivariateMass.fiber_image_injective",
+        "PaperP1.PositionalBivariateMass.real_singleton_product",
+        "PaperP1.PositionalBivariateMass.exp_three",
+        "PaperP1.PositionalBivariateMass.real_singleton",
+        "PaperP1.PositionalBivariateMass.real_zero_zero",
+        "PaperP1.PositionalBivariateMass.probability_of_hasLaw",
+        "PaperP1.PositionalBivariateMass.probability_pair_sums"
       ],
       "remaining_unformalized_inputs": [],
       "canonical_statement": "PaperP1.PositionalGridApproximation.main_20_1",
@@ -9095,6 +9120,14 @@
           "scope": "Two complete finite blocks of actual Poisson reference counts are independent if and only if every cross covariance vanishes, for arbitrary finite packets and even overlapping blocks with possible zero rates. The proof constructs each whole vector as a measurable function of its finite arrival tuple, removes all shared zero-rate cells almost everywhere, and proves independence of the remaining tuples. For disjoint blocks in a pair family, independence is equivalent to every retained crossing pair rate being zero, or equivalently to absence of a crossing positive-rate retained edge. Thus the positive-rate pair graph satisfies the full dependency-graph condition. The canonical product realization and factorization of all measurable block-event probabilities are covered. No ambient countability or measurable-configuration hypothesis is used. These properties concern the reference field; no independence of arithmetic blocks or new arithmetic approximation rate is asserted.",
           "validation_source_commit": "2233c22bcc68c0a827b806934eacdd109518913e",
           "validation_record": "docs/validation/checkpoint-0996/validation.json"
+        },
+        {
+          "checkpoint": "P1-MATH-0997",
+          "kind": "exact_reference_bivariate_law_and_point_probabilities",
+          "canonical_statement": "PaperP1.PositionalBivariateLaw.pair_matrix_joint_law",
+          "canonical_additional_statement": "PaperP1.PositionalBivariateMass.probability_pair_sums",
+          "validation": "Twenty-one theorems and four definitions passed strict Lean v4.36.0-rc2 prototype compilation; exact direct axiom checks of all twenty-one theorems permit only propext, Classical.choice and Quot.sound. Root replay and manuscript integration are pending.",
+          "scope": "For arbitrary finite packets and every independent Poisson realization, the joint law of two reference counts is the image of three independent Poisson variables under (U,V,W) -> (U+W,V+W). Their parameters are p_x-r, p_y-r and r, where r is the actual shared-arrival covariance and 0 <= r <= min(p_x,p_y). For pair packets, r equals p_x on the diagonal, the retained pair rate off the diagonal when the pair is retained, and zero otherwise. The canonical finite product realization is covered explicitly. Every point probability has the exact finite convolution indexed by 0 <= k <= min(m,n), including zero intensities. No countability of the ambient site type is needed. These statements concern the constructed reference field; the original arithmetic comparison and its fixed-degree rate retain their scope."
         }
       ]
     },

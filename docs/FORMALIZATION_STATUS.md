@@ -1,6 +1,17 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0996: Complete finite reference-coordinate
+Current checkpoint P1-MATH-0997: The exact joint law of two reference
+coordinates is represented by three independent Poisson arrivals with
+parameters p_x-r, p_y-r and r, where r is their shared covariance and
+0 <= r <= min(p_x,p_y). Pair packets give the exact retained-edge rate,
+with diagonal and zero-rate cases included. The finite point-probability
+formula and canonical product realization are proved. Twenty-one theorems
+and four definitions passed strict prototype compilation and all twenty-one
+theorem axiom checks. Root replay and manuscript integration are pending.
+All 167 revised numbered statements retain their scope; the six planned
+registrations and their 68 selections remain locally qualified.
+
+Historical checkpoint P1-MATH-0996: Complete finite reference-coordinate
 blocks are independent exactly when all cross covariances vanish. For
 disjoint blocks in a pair family this is equivalent to absence of a
 crossing positive-rate retained edge, proving the full dependency-graph

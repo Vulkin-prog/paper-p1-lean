@@ -1,6 +1,6 @@
 # Palomar preparation
 
-The version 1.7 draft has 167 proved numbered statements: 73 in the article and 94 in the companion. Mathematical checkpoint P1-MATH-0996 is unchanged by this packaging. The original version 1.6 and the two documented false-original scopes remain preserved.
+The version 1.7 draft has 167 proved numbered statements: 73 in the article and 94 in the companion. Mathematical checkpoint P1-MATH-0997 is unchanged by this packaging. The original version 1.6 and the two documented false-original scopes remain preserved.
 
 ## Six registrations, strictly successive
 
