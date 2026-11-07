@@ -1,0 +1,16 @@
+{
+  "challenge_module": "ChallengeP1DependentExpansion",
+  "solution_module": "SolutionP1DependentExpansion",
+  "theorem_names": [
+    "PaperP1Registry.DependentExpansion.polynomial_expansion",
+    "PaperP1Registry.DependentExpansion.centered_identity",
+    "PaperP1Registry.DependentExpansion.positive_stopped_kernel",
+    "PaperP1Registry.DependentExpansion.stopped_l1_bound"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "enable_nanoda": true
+}

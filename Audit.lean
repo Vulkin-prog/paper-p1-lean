@@ -3,7 +3,9 @@ module
 import PaperP1
 import SolutionP1AsymmetricProfiles
 import SolutionP1Conditioning
+import SolutionP1DependentExpansion
 import SolutionP1FactorialCumulants
+import SolutionP1IntegralCurveCount
 import SolutionP1MomentObstruction
 import SolutionP1PoissonScales
 import SolutionP1PrivateObstruction
@@ -20,7 +22,7 @@ invokes Lean's own `#print axioms` once for each declaration. Keeping the names
 as data avoids a generated Lean source longer than Palomar's 10,000-line limit.
 -/
 
--- Inventory SHA-256: 1913b88efb11ec9dc9df4d198f7495d132860829842d3df23af533276a6f1deb
+-- Inventory SHA-256: 69fe7ed77eb825744ef46359a9362d7db7270909db426e395df4ba3acfea61f3
 
 open Lean Elab Command in
 run_cmd do

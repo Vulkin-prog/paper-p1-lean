@@ -1,0 +1,15 @@
+{
+  "challenge_module": "ChallengeP1IntegralCurveCount",
+  "solution_module": "SolutionP1IntegralCurveCount",
+  "theorem_names": [
+    "PaperP1Registry.IntegralCurveCount.all_dimensional_count",
+    "PaperP1Registry.IntegralCurveCount.plane_count",
+    "PaperP1Registry.IntegralCurveCount.growing_degree_sublinear"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "enable_nanoda": true
+}

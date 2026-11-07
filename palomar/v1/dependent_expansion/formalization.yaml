@@ -1,0 +1,82 @@
+version: v0.4
+project:
+  name: Exact centered and stopped expansions for dependent indicator counts
+  description: For arbitrary dependent measurable Boolean indicators on any probability space, the literal
+    finite count law has its exact expansion with every heterogeneous marginal retained. An arbitrary
+    hereditary retained class gives the first-excluded-prefix identity over a commutative semiring. Its
+    remainder is a sum of convolutions with genuinely positive kernels whose coefficients are actual prefix/suffix
+    joint expectations. Each kernel has both mass and ordinary unweighted l1 norm equal to the prefix
+    activation probability. The resulting error bound has no suffix-size factor and assumes no independence
+    or unformalized estimate.
+  authors:
+  - Brice Pouly
+  author_identifiers:
+  - name: Brice Pouly
+    github: Vulkin-prog
+    orcid: 0009-0008-8491-2467
+  responsible_maintainers:
+  - Brice Pouly
+  license: Apache-2.0
+repository:
+  role: substantive-development
+classification:
+  arxiv:
+  - math.PR
+  - math.CO
+sources:
+- title: Sharp Poisson approximation and second-order correction for long multiplicative runs, version
+    1.7 draft
+  authors:
+  - Brice Pouly
+  id: https://github.com/Vulkin-prog/paper-p1-lean
+  type: paper
+  relationship: formalizes
+  location: Main proposition 4.1, lemma 5.1 and proposition 5.2, including exact original count probabilities,
+    retained-reference mass, positive dependent-suffix kernels and ordinary l1 remainder bound; version
+    1.7 draft.
+  note: The displayed first-excluded-prefix identity is a specialization of the abstract lace expansion.
+    Exact heterogeneous marginals and actual dependent suffix probabilities are retained.
+- title: The abstract lace expansion
+  authors:
+  - Doron Zeilberger
+  id: https://doi.org/10.1006/aama.1997.0552
+  type: paper
+  relationship: adapts
+  location: Author version, formula (*), page 1.
+  note: 'The hereditary first-excluded-prefix map specializes the general lace identity. No claim to formalize
+    all lace-map or sieve results is made. Author version: https://sites.math.rutgers.edu/~zeilberg/mamarim/mamarimPDF/lace.pdf'
+automation:
+  methods:
+  - method: agent
+    framework: Codex
+    models:
+    - OpenAI Codex agents
+    prompting_notes: Use literal finite count probabilities and actual Bochner joint/centered moments.
+      Retain heterogeneous marginals and all dependence. Define the ordinary singleton l1 norm explicitly;
+      show each positive remainder kernel coefficient and its exact mass. Keep only the first excluded
+      prefix and leave the suffix unexpanded.
+    tool_setup: Lean proof construction, explicit Mathlib-only source definitions, exact bridges to the
+      substantive proof and full axiom audits.
+  notes: Agent assistance is not independent human peer review.
+review:
+  status: agent-reviewed
+  notes: All four explicit statements and their complete Solution compile. Manual exports passed statement
+    comparison and Lean, NanoDa and verified con-ron; all 13 new theorem axioms were audited. Frozen-root
+    build, standard Comparator qualification and the complete Palomar workflow are recorded separately
+    after actual success. Only the four selected Challenge theorem statements have deliberate holes.
+status:
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms:
+  - propext
+  - Quot.sound
+  - Classical.choice
+  scope: 'Four selected declarations: general stopped polynomial expansion; exact centered count law with
+    actual coefficients and probability status; positive stopped kernels with exact coefficients, mass
+    and norm; ordinary l1 error bound. Complete Solution without proof holes; no registry entry or certification
+    is claimed.'
+fidelity:
+  divergences: The finite polynomial identity is proved already over a commutative semiring. The probability
+    identities apply to arbitrary dependence on an arbitrary probability space with a finite index carrier.
+    The retained reference has total mass one but may have negative coefficients. Every kernel retains
+    its actual dependent suffix; the norm is ordinary unweighted l1.

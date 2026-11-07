@@ -17,6 +17,8 @@ on:
           - all
           - factorial_cumulants
           - moment_obstruction
+          - dependent_expansion
+          - integral_curve_count
       authorization_relationship:
         description: Confirmed human relationship to the substantive formalization
         required: true
@@ -53,7 +55,7 @@ jobs:
               'I have approval from a responsible author or maintainer',
           }:
               raise SystemExit('An explicit supported human relationship is required')
-          families = ['factorial_cumulants', 'moment_obstruction']
+          families = ['factorial_cumulants', 'moment_obstruction', 'dependent_expansion', 'integral_curve_count']
           if family != 'all' and family not in families:
               raise SystemExit('Unknown candidate family')
           selected = families if family == 'all' else [family]

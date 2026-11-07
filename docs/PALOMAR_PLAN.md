@@ -23,6 +23,13 @@ metadata shape checks and a historical source-layout scan. These local checks
 do not replace the complete workflow. The additional interfaces introduce no
 new mathematical-change entry.
 
+Two further independently meaningful families are in root qualification:
+the complete centered/stopped expansion for arbitrary dependent indicators
+and the degree-uniform integral-curve count with its growing-degree consequence.
+Their seven standalone statements passed all three kernels; full-root receipts
+remain pending. The [numbered scope index](NUMBERED_SCOPE_REVIEW.md) provides
+printed source identities and actual compiled types for all 167 revised results.
+
 The [evidence checker](../scripts/check_registry_evidence.py) verifies every
 receipt against its original commit and inventory, its preserved log hashes,
 actual successful exports and kernels, and the unchanged current statement,
@@ -70,7 +77,8 @@ inventory. The full project snapshot stays below the 500 MiB source limit.
 
 The [original workflow caller](../.github/workflows/palomar-preflight.yml) selects
 exactly seven families; the [additional caller](../.github/workflows/palomar-preflight-additional.yml)
-selects factorial cumulants and the moment obstruction. Both are prepared.
+selects factorial cumulants, the moment obstruction, dependent expansions and
+integral-curve counts. Both are prepared.
 Both its `uses` revision and `pipeline_commit` are fixed to the exact same
 PalomarSubmission SHA above. It uses `mode: full`, the required external
 `palomar-standard-v1` profile, read-only repository permissions and one family

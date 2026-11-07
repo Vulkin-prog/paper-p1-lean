@@ -74,6 +74,20 @@ moreLeanArgs = ["-DwarningAsError=false"]
 [[lean_lib]]
 name = "SolutionP1MomentObstruction"
 
+[[lean_lib]]
+name = "ChallengeP1DependentExpansion"
+moreLeanArgs = ["-DwarningAsError=false"]
+
+[[lean_lib]]
+name = "SolutionP1DependentExpansion"
+
+[[lean_lib]]
+name = "ChallengeP1IntegralCurveCount"
+moreLeanArgs = ["-DwarningAsError=false"]
+
+[[lean_lib]]
+name = "SolutionP1IntegralCurveCount"
+
 [[require]]
 name = "mathlib"
 git = "https://github.com/leanprover-community/mathlib4.git"

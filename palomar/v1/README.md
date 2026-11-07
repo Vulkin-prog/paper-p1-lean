@@ -10,6 +10,10 @@ All nine also passed supplementary con-ron, NanoDa and Lean replays. Their
 [separate reports and controls](supplementary/README.md) preserve each exact
 source and original log without changing the standard submission configurations.
 
+Two further families are prepared with seven selected declarations. Their
+standalone compile/export comparisons and all three kernels have passed;
+frozen-root qualification remains pending.
+
 | Family | Selected declarations | Comparator configuration | Metadata and local evidence |
 |---|---:|---|---|
 | Ordinary smooth integers in logarithmic intervals | 3 | [configuration](../../comparator/p1_smooth_windows.json) | [metadata](smooth_windows/formalization.yaml), [passed local comparison and both kernels](smooth_windows/qualification.json) |
@@ -21,6 +25,8 @@ source and original log without changing the standard submission configurations.
 | Actual conditioning and colored replica target sums | 4 | [configuration](../../comparator/p1_conditioning.json) | [metadata](conditioning/formalization.yaml), [passed local comparison and both kernels](conditioning/qualification.json) |
 | Actual factorial cumulants and the optimal third-cumulant power | 5 | [configuration](../../comparator/p1_factorial_cumulants.json) | [metadata](factorial_cumulants/formalization.yaml), [passed local comparison and both kernels](factorial_cumulants/qualification.json) |
 | Fixed-order moment obstruction to a polynomial approximation rate | 5 | [configuration](../../comparator/p1_moment_obstruction.json) | [metadata](moment_obstruction/formalization.yaml), [passed local comparison and both kernels](moment_obstruction/qualification.json) |
+| Exact expansions for dependent indicator counts | 4 | [configuration](../../comparator/p1_dependent_expansion.json) | [metadata](dependent_expansion/formalization.yaml); root qualification pending |
+| Degree-uniform integer points on integral curves | 3 | [configuration](../../comparator/p1_integral_curve_count.json) | [metadata](integral_curve_count/formalization.yaml); root qualification pending |
 
 Each configuration names its standalone Mathlib-only Challenge and complete
 Solution. Only the exact selected Challenge statements have deliberate proof
@@ -44,7 +50,8 @@ Local qualification, full mechanical preflight, editorial review and permanent
 registration are separate stages. No submission or registry entry is claimed.
 
 The separate [additional-family workflow](../../.github/workflows/palomar-preflight-additional.yml)
-selects only factorial cumulants and the moment obstruction. The original
+selects factorial cumulants, the moment obstruction, dependent expansions and
+integral-curve counts. The original
 caller continues to select exactly its seven original families. Both require
 an exact source commit and the confirmed supported human relationship.
 

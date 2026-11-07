@@ -46,6 +46,7 @@ unasserted analytic or geometric results are documented in the source revision.
 | Source corrections and revised PDF checks | [Revision report](docs/MANUSCRIPT_REVISION_V1_7.md), [validation record](docs/manuscript-v1.7-validation.json) |
 | Every mathematical correction and improvement | [Change ledger](docs/mathematical-changes.json), [narrative record](docs/MATHEMATICAL_CHANGELOG.md) |
 | Current proof status and input scope | [Status](docs/FORMALIZATION_STATUS.md), [inputs](docs/LITERATURE_INPUTS.md) |
+| Printed statements, compiled types and explicit hypotheses | [Scope index](docs/NUMBERED_SCOPE_REVIEW.md) |
 | Exact Paper C ports and licence attribution | [Reuse record](docs/PAPER_C_REUSE.md) |
 | Earlier project progress | [Preserved checkpoint history](docs/README_CHECKPOINT_HISTORY.md) |
 
@@ -99,13 +100,19 @@ All 37 selected declarations also passed supplementary replays with verified
 con-ron, Lean and NanoDa. The [source-bound reports](palomar/v1/supplementary/README.md)
 preserve the actual logs, binary identities and positive/ill-typed controls.
 
+Two additional families are undergoing root qualification: exact centered and
+stopped expansions for dependent counts (four declarations), and degree-uniform
+integer-point counts on integral curves (three declarations). Their standalone
+exports have passed all three kernels; root build and Comparator receipts remain
+pending.
+
 The [candidate interfaces](palomar/v1/README.md) link each standalone Mathlib-only
 Challenge, complete Solution, Comparator configuration, metadata and preserved
 logs. Selected declaration counts describe registration candidates, separately
 from the complete 167-result manuscript correspondence. The exact-pinned
 [complete reusable workflow](.github/workflows/palomar-preflight.yml) is ready
 for the original seven families, and an [additional caller](.github/workflows/palomar-preflight-additional.yml)
-selects the two further families. Both run one family at a time. Their personal
+selects the additional families. Both run one family at a time. Their personal
 authorization declaration must be confirmed before dispatch. No registry
 submission, editorial decision or permanent registration is claimed.
 

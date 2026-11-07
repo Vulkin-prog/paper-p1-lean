@@ -1,0 +1,86 @@
+version: v0.4
+project:
+  name: Degree-uniform integer-point counts on integral algebraic curves
+  description: The actual affine integer grid on a homogeneous prime curve with an explicitly linear eventual
+    Hilbert function has the degree-uniform bound c(n)d^2 H^(1/d)(log H)^17 over every characteristic-zero
+    coefficient field. The constant precedes every curve, field, degree and height. Literal bivariate
+    polynomial grids have an absolute uniform plane bound, and all growing degree caps of upper power
+    a<1/2 give the complete quadratic endpoint budget and uniform o(B) conclusion on the exact floor boxes.
+    No point-count estimate is assumed as an input.
+  authors:
+  - Brice Pouly
+  author_identifiers:
+  - name: Brice Pouly
+    github: Vulkin-prog
+    orcid: 0009-0008-8491-2467
+  responsible_maintainers:
+  - Brice Pouly
+  license: Apache-2.0
+repository:
+  role: substantive-development
+classification:
+  arxiv:
+  - math.NT
+  - math.AG
+sources:
+- title: Sharp Poisson approximation and second-order correction for long multiplicative runs, version
+    1.7 draft
+  authors:
+  - Brice Pouly
+  id: https://github.com/Vulkin-prog/paper-p1-lean
+  type: paper
+  relationship: formalizes
+  location: Main theorem 13.4, integer-point clause of the cited Binyamini-Cluckers-Novikov theorem, and
+    main corollary 13.5, including coefficient/degree uniformity and complete growing upper-power-cap
+    conclusion; version 1.7 draft.
+  note: Curve integrality and degree are represented by a homogeneous prime ideal and the literal eventual
+    linear Hilbert function of its quotient pieces. The grid includes every integer zero in the stated
+    box.
+- title: Bounds for rational points on algebraic curves, optimal in the degree, and dimension growth
+  authors:
+  - Gal Binyamini
+  - Raf Cluckers
+  - Dmitry Novikov
+  id: https://arxiv.org/abs/2302.04209v2
+  type: paper
+  relationship: formalizes
+  location: 'Version 2, 20 September 2023; theorem 2, equation (27), page 7: integer-point clause.'
+  note: Only the integer-point clause and its P1 growing-degree application are selected. The formal development
+    gives logarithmic exponent 17 and a characteristic-zero field formulation. Rational-point counting
+    and the dimension-growth theorems are outside this candidate.
+automation:
+  methods:
+  - method: agent
+    framework: Codex
+    models:
+    - OpenAI Codex agents
+    prompting_notes: Expose the actual homogeneous quotient pieces, their dimensions, prime and homogeneous
+      ideal hypotheses, actual integer grids and bivariate degree. Place each uniform constant before
+      all fields, curves and degrees. Preserve the exact upper-power-cap quantifier, a<1/2 and floor boxes.
+      Do not replace a uniform count by an assumed geometric interface.
+    tool_setup: Lean proof construction, explicit Mathlib-only source definitions, exact bridges to the
+      substantive proof and full axiom audits.
+  notes: Agent assistance is not independent human peer review.
+review:
+  status: agent-reviewed
+  notes: The three explicit statements and complete Solution compile. All nine new theorem axioms pass
+    a direct audit. Manual exports passed statement comparison and Lean, NanoDa and verified con-ron.
+    Frozen-root build, standard Comparator qualification and the complete Palomar workflow are recorded
+    separately after actual success. Only the three selected Challenge statements have deliberate holes.
+status:
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms:
+  - propext
+  - Quot.sound
+  - Classical.choice
+  scope: 'Three selected declarations: dimension-uniform actual affine curve count with quadratic degree
+    dependence; absolute plane bound; complete quadratic endpoint and uniform sublinear conclusion for
+    growing upper power caps. No point-count hypothesis is assumed. No registration or certification is
+    claimed.'
+fidelity:
+  divergences: The integer-point bound is formulated using homogeneous prime ideals and the actual linear
+    Hilbert function, with explicit logarithmic exponent 17 and no chosen field embedding in the all-dimensional
+    clause. The plane/growing-cap clauses retain the paper subfield-of-complex setup. No claim is made
+    about rational-point counts or higher-dimensional varieties. The cap needs only the stated upper growth
+    condition.
