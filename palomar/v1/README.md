@@ -9,7 +9,7 @@ families; a selected declaration count is not the manuscript coverage count.
 | Ordinary smooth integers in logarithmic intervals | 3 | [configuration](../../comparator/p1_smooth_windows.json) | [metadata](smooth_windows/formalization.yaml), [passed local comparison and both kernels](smooth_windows/qualification.json) |
 | Prescribed squarefree kernels of shifted split products | 4 | [configuration](../../comparator/p1_quadratic_kernels.json) | [metadata](quadratic_kernels/formalization.yaml), [passed local comparison and both kernels](quadratic_kernels/qualification.json) |
 | Asymmetric parity-space profiles | 3 | [configuration](../../comparator/p1_asymmetric_profiles.json) | [metadata](asymmetric_profiles/formalization.yaml), [passed local comparison and both kernels](asymmetric_profiles/qualification.json) |
-| Exact Poisson scales and quantized mean bias | 5 | [configuration](../../comparator/p1_poisson_scales.json) | [metadata](poisson_scales/formalization.yaml); local comparison pending |
+| Exact Poisson scales and quantized mean bias | 5 | [configuration](../../comparator/p1_poisson_scales.json) | [metadata](poisson_scales/formalization.yaml), [passed local comparison and both kernels](poisson_scales/qualification.json) |
 | Optimal quadratic Poisson--Charlier approximation | 4 | [configuration](../../comparator/p1_quadratic_approximation.json) | [metadata](quadratic_approximation/formalization.yaml), [passed local comparison and both kernels](quadratic_approximation/qualification.json) |
 
 Each standalone Challenge imports only Mathlib. Its deliberate statement holes
@@ -51,3 +51,11 @@ statement comparison and both kernels at source commit
 statements. Their complete build passed 18,545 jobs and the extended source
 audit checked 19,317 theorems. All four metadata files pass the community v0.4
 schema. The reusable workflow and registration remain separate pending stages.
+
+The exact Poisson-scale family passed the isolated comparison and both kernels
+at 03f27990 (see its receipt for the full immutable source SHA). Its five
+selections bring the locally checked total to 19 in five families. The full
+build passed 18,547 jobs and the extended audit checked 19,341 theorems. Its
+conditional nominal-mean lower comparison asserts no infinitude of biased
+scales. The literal moving residue coefficient and both Poisson means are
+retained.

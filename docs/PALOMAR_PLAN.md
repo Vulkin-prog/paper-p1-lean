@@ -85,3 +85,13 @@ normalization and exact probability criterion are explicit in the standalone
 optimal-quadratic interface. The asymmetric interface retains the corrected
 matching radius, full exponential loss, old-bit invariance and checked
 counterexample to the radius-one printed version.
+
+The fifth family, exact Poisson scales and quantized mean bias, passed the
+isolated comparison, Lean and NanoDa at the source SHA recorded in
+palomar/v1/poisson_scales/qualification.json. Its five selections bring the
+local total to 19. The complete build passed 18,547 jobs and its source audit
+checked 19,341 theorems. The actual and nominal Poisson expansions retain
+their different error exponents, both total variations have the same literal
+moving residue-dependent equivalent, and the nominal quadratic lower bound
+is conditional on the actual mean gap being nonzero. No infinitude of such
+scales is claimed.
