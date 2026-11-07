@@ -1,0 +1,129 @@
+\section{Uniform certificate tools}
+\label{p14:cert:section}
+
+Fixed-order estimates leave a separate problem: summing orders that grow
+with $N$. The arithmetic certificates below solve it by counting
+congruences and graph components with explicit cardinality weights.
+Their definitions concern the actual values in the windows and apply
+before any affine prescription is imposed. In particular, the geometric
+counts also permit irregular windows; replacing $p$ by $p_x\le2p$ only
+changes a fixed weight. The final parameter choices for the optimal
+reconstruction are made in Section~\ref{p13:transfer:section}.
+The complete elementary proofs are collected in
+Section~\ref{p14:comp:certificate-tools}.
+
+\subsection{Small kernels and moderate congruence certificates}
+
+For $Y\ge B$, write
+\[
+ K_Y(v)=\prod_{\substack{\ell>Y\ \mathrm{prime}\\v_\ell(v)\ \mathrm{odd}}}\ell.
+\]
+The following elementary form of the Rankin argument will be used with
+its exponent fixed.
+
+\begin{lemma}[Counting a small truncated squarefree kernel]
+\label{p1:core:rankin}
+For fixed $1/2<\sigma<1$, fixed $C_1>0$, and $T\ge1$,
+\begin{equation}
+ \#\{v\le C_1N:K_Y(v)\le T\}
+ \ll_{\sigma,C_1}N^\sigma T^{1-\sigma}
+       \exp(C_\sigma Y^{1-\sigma}).
+ \label{p1:core:rankin-bound}
+\end{equation}
+\end{lemma}
+\noindent The complete proof is given in Section~\ref{p14:comp:certificate-rankin}.
+
+
+Fix
+\begin{equation}
+ A_0>1,\quad 0<\beta<1,\quad \tfrac12<\sigma<1,
+ \quad A_0(1-\sigma)<1,
+ \label{p1:core:parameter-conditions}
+\end{equation}
+and put $H=\log N$, $Y=H^{A_0}$, $T=N^\beta$ and
+$\delta=(1-\sigma)(1-\beta)>0$. Mark a window if one of its values
+has $K_Y(v)\le T$. Each value lies in at most $B$ windows, so the
+number $M$ of marked centres satisfies
+\begin{equation}
+ M\le N^{1-\delta+o(1)}.
+ \label{p1:core:marks}
+\end{equation}
+Here and below the $o(1)$ depends on the fixed parameters, but not on
+the size of a family subsequently summed over.
+
+Choose two distinct values in an unmarked anchor window. Their kernels
+are coprime, because a prime exceeding $Y\ge B$ cannot divide their
+nonzero difference. Thus their product $Q$ is squarefree and
+$T^2<Q\le9N^2$. If a relation selects these values, each prime of $Q$
+occurs to odd order in at least one other window. Assign it to one such
+occurrence. For each receiving block $j$, let $D_j$ be the product of
+the assigned primes. The $D_j$ are coprime and $\prod_jD_j=Q$.
+Call the resulting certificate \emph{moderate} when every $D_j\le6NB$.
+After specifying a certificate we may discard the relation itself:
+the congruences alone bound the possible centres.
+
+\begin{lemma}[Counting moderate certificates]
+\label{p1:core:moderate}
+Let $\mathcal U_r$ be the ordered lists of $r$ original windows having
+such a certificate, and set
+$m=\lceil 2\log(3N)/\log Y\rceil$. Then
+\begin{equation}
+ |\mathcal U_r|
+ \le36rB^4 2^{r-1}N^rT^{-2}(rB)^m.
+ \label{p1:core:moderate-count}
+\end{equation}
+For every fixed $u>0$,
+\begin{equation}
+ \sum_{r\ge1}\frac{(up)^r}{r!}|\mathcal U_r|
+ \le N^{-2\beta+4/A_0+o(1)}.
+ \label{p1:core:moderate-baseline}
+\end{equation}
+\end{lemma}
+\noindent The complete proof is given in Section~\ref{p14:comp:certificate-moderate}.
+
+
+\subsection{Saturation has small degree in both directions}
+
+Put a directed edge $x\to y$ when two values in window $x$ have a
+kernel product possessing a divisor $D>6NB$ all of whose primes divide
+values in window $y$. We impose no direct-sum condition on $S_x,S_y$.
+Let $\Gamma$ be the underlying simple undirected graph.
+
+\begin{lemma}[Incoming and outgoing saturation degrees]
+\label{p1:core:degrees}
+Uniformly in the fixed vertex,
+\begin{equation}
+ \deg^+(x),\deg^-(x)\le N^{2/A_0+o(1)},
+ \qquad \Delta(\Gamma)\le N^{2/A_0+o(1)}.
+ \label{p1:core:degree-bound}
+\end{equation}
+\end{lemma}
+\noindent The complete proof is given in Section~\ref{p14:comp:certificate-degrees}.
+
+
+If a primitive family has no moderate certificate, every unmarked
+vertex has a neighbour in its induced saturation graph. To see this,
+choose a nonzero relation, select two of its values at that vertex and
+assign the primes to exterior occurrences. Some receiver must have
+$D_j>6NB$. The choices made at different vertices need not agree.
+Their existence in one deterministic graph is sufficient.
+
+\begin{lemma}[A generating function with marked isolated vertices]
+\label{p1:core:generator}
+Let a simple graph have $n$ vertices, maximum degree $\Delta$ and
+$M$ marked vertices. If $\mathcal F$ consists of the vertex sets
+whose induced isolated vertices are all marked, then, for $z\ge0$,
+\begin{equation}
+ \sum_{D\in\mathcal F}z^{|D|}
+ \le\exp\left\{Mz+nz\bigl((1+z)^\Delta-1\bigr)\right\}.
+ \label{p1:core:generator-bound}
+\end{equation}
+More generally, for nonnegative vertex weights $w_v$ and marked set
+$\mathcal M$,
+\[
+ \sum_{D\in\mathcal F}\prod_{v\in D}w_v
+ \le \exp\left\{\sum_{v\in\mathcal M}w_v+
+ \sum_vw_v\left(\prod_{u\sim v}(1+w_u)-1\right)\right\}.
+\]
+\end{lemma}
+\noindent The complete proof is given in Section~\ref{p14:comp:certificate-generator}.

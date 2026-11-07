@@ -1,0 +1,1154 @@
+{
+  "schema_version": 1,
+  "status": "complete_frozen",
+  "title": "Relecture indépendante : simplification et élagage sélectifs des deux textesP1",
+  "date": "2026-11-07",
+  "language": "fr",
+  "reviewer_role": "Instance indépendante /root/p1_independent_review ; aucune délégation.",
+  "source_commit": "8fd105a8468445100b7286bd6b51fb7cd9aa7b21",
+  "source_state": "HEAD exact et arbre propre constatés au début de la lecture. Le parent a ensuite ajouté le module1004 sans changer les TeX.",
+  "pages_reported_by_parent": {
+    "article": 65,
+    "companion": 104
+  },
+  "scope": "Propositions, sans mutation du dépôt ni des rapports antérieurs. Aucun nouveau résultat numéroté requis.",
+  "verification": {
+    "performed": [
+      "Lecture des blocsTeX des deux textes et des références entrantes pertinentes.",
+      "Lecture des déclarations/corpsLean cités, des définitions de poids, des projections et domaines.",
+      "Vérification de l’ordre des quantificateurs et distinction arité fixée/grossissante.",
+      "Lecture source du graphe de267 imports deValueHeightHalfCount pour la pisteT1.14.",
+      "Les17 empreintes de sourcesTeX citées ont été comparées aux octets du commit8fd105 ; elles correspondent exactement."
+    ],
+    "not_performed": [
+      "Aucun Lean/Lake, build ou replay.",
+      "Aucune recompilationPDF et aucune mesure de pages après réécriture.",
+      "Aucune modification du dépôt, desPDF, du patch éditorial ou des anciens rapports.",
+      "Aucune actionPalomar."
+    ],
+    "depth_limits": "Audit ciblé de simplification appuyé sur la relecture sémantique antérieure des167 résultats. Ne refait pas toutes les preuves arithmétiques depuis les fondements ni les validations du parent. Plages originales localisées exactement ; gains estimés en lignes source, sensibles aux retours à la ligne."
+  },
+  "summary": {
+    "findings_count": 13,
+    "immediate_ids": [
+      "SIM01",
+      "SIM02",
+      "SIM03",
+      "SIM04",
+      "SIM05",
+      "SIM06",
+      "SIM07",
+      "SIM08"
+    ],
+    "shared_algebra_after_explicit_scope": [
+      "SIM09"
+    ],
+    "relocations": [
+      "SIM10",
+      "SIM11"
+    ],
+    "conditional_not_first_pass": [
+      "SIM12",
+      "SIM13"
+    ],
+    "recommended_scale": "Réécriture légère et sélective : garder le squelette scientifique et les167 résultats, supprimer les doubles démonstrations et resserrer les cartes de lecture. Aucune réécriture générale n’est nécessaire pour ces gains.",
+    "mathematical_gaps_confirmed": 0,
+    "scope_of_no_gap_statement": "Aucune nouvelle lacune confirmée dans les coupes immédiatement proposées ; cela ne supprime pas les raccords explicites à préserver.",
+    "estimated_first_pass_saving": "Environ110–130 lignes source pourSIM01–SIM08, selon rédaction finale ; aucun nombre de pages prédit, déplacements et pistes conditionnelles exclus.",
+    "preserved_interest": "Mécanismes arithmétiques, constantes, témoin10:12:15, non-annulation quartique, régimes uniformes et branche positionnelle conservés."
+  },
+  "findings": [
+    {
+      "id": "SIM01",
+      "title": "Renvoyer la construction ancrée de 15.5 à son exposé complet en T8",
+      "priority": 1,
+      "recommendation": "applicable_au_snapshot",
+      "blocks": [
+        {
+          "file": "manuscripts/paper-p1/v1.8/sources/main_sections/exact_transfer.tex",
+          "line_start": 236,
+          "line_end": 281,
+          "purpose": "Preuve de 15.5 à raccourcir"
+        },
+        {
+          "file": "manuscripts/paper-p1/v1.8/sources/companion_sections/confinement.tex",
+          "line_start": 75,
+          "line_end": 146,
+          "purpose": "Témoin ancré complet à conserver"
+        },
+        {
+          "file": "manuscripts/paper-p1/v1.8/sources/companion_sections/confinement.tex",
+          "line_start": 148,
+          "line_end": 190,
+          "purpose": "Construction des hypothèses et estimation générique à conserver"
+        }
+      ],
+      "retained_results_and_content": [
+        "15.5 : masse exacte N^{-r/2+ε}, hôtes denses N^ε, masse dense N^{1-r+ε}.",
+        "r et η fixés ; seuil avant N,L et toute sous-famille déterministe.",
+        "Vrais joints et coefficients centrés, y compris les marginales originales nulles."
+      ],
+      "justification": "Les lignes 237–258 refont la régularisation, les supports minimaux, le confinement, l’effacement et le compte des deux petits noyaux déjà écrits plus précisément en T8. Garder dans l’article le raccord au domaine exact et le calcul des poids.",
+      "dependencies": [
+        {
+          "declaration": "PaperP1.DensePrimitiveHosts.uniform_hosts",
+          "file": "PaperP1/Asymptotics/DensePrimitiveHosts.lean",
+          "line": 40,
+          "scope": "r≥3 fixé ; C,η,ε réels avec η,ε>0 ; ∃N0 avant N,L,F ; I⊆dyadicBlock N, card I=r, Primitive L I et ρrel≥ηL ; card F≤N^ε.",
+          "verification": "Déclaration et corps lus ; aucun Lean/Lake exécuté dans cette revue."
+        },
+        {
+          "declaration": "PaperP1.DensePrimitiveRankMass.uniform_rank_mass",
+          "file": "PaperP1/Asymptotics/DensePrimitiveRankMass.lean",
+          "line": 19,
+          "scope": "Même domaine dense ; PrimitiveWindowMass.mass F L≤N^{1-r+ε}, avec vraies marginales.",
+          "verification": "Déclaration et corps lus ; aucun Lean/Lake exécuté dans cette revue."
+        },
+        {
+          "declaration": "PaperP1.SharpPrimitiveMass.uniform_rank_mass",
+          "file": "PaperP1/Asymptotics/SharpPrimitiveMass.lean",
+          "line": 21,
+          "scope": "Même domaine sans densité ; masse≤N^{-r/2+ε}.",
+          "verification": "Déclaration et corps lus ; aucun Lean/Lake exécuté dans cette revue."
+        },
+        {
+          "tex_inputs": [
+            "p18:conf:anchored",
+            "p18:conf:fixed-primitive",
+            "p13:half:connected",
+            "p13:half:small-kernels"
+          ]
+        }
+      ],
+      "circularity_and_domain_check": "Le paragraphe T8 construit les hypothèses du témoin à partir de la primitivité et utilise récupération, confinement et T6.1 ; il ne suppose pas 15.5. Le renvoi 15.5→T8 est acyclique.",
+      "risks_and_conditions": [
+        "Conserver intégralement le témoin ancré et la construction de ses hypothèses en T8.",
+        "Ne pas remplacer les marginales homogènes 2^{-d_x} par p_x : elles peuvent être positives quand p_x=0.",
+        "Ne pas sommer la borne à r fixé sur r croissant ; garder les budgets uniformes de grandes cardinalités."
+      ],
+      "line_gain": {
+        "original_lines": 46,
+        "estimated_replacement_lines": [
+          23,
+          29
+        ],
+        "estimated_saved_lines": [
+          17,
+          23
+        ],
+        "unit": "lignes source ; aucun gain PDF mesuré"
+      },
+      "proposed_english_tex": "\\begin{proof}\nThe fixed-arity construction in the paragraph\n\\emph{Dense primitive hosts and their exact weights} of\nSection~\\ref{p14:comp:confinement} proves the dense host count,\nuniformly over all true windows and deterministic subfamilies.\nIts parameters are fixed before $N$.\nFor a primitive family, projection injectivity gives\n$\\rho(I)\\le\\min_{x\\in I}d_x\\le L$. Since $p_x\\le2p\\ll_C N^{-1}$\nand $2^L\\ll_C N$, each exact weight is $O_{r,C}(N^{1-r})$.\nThe dense host count therefore gives the stated dense mass.\n\nFor the full sum, fix a small $\\xi>0$ and split at $\\rho=\\xi L$.\nBelow the threshold, Corollary~\\ref{p13:half:connected} bounds\nthe independent mass by $O(N^{-r/2+\\varepsilon'})$;\nthe additional rank factor is $O_C(N^\\xi)$.\nAbove it, the dense bound with parameter $\\xi$ gives\n$O(N^{1-r+\\varepsilon'})$. As $r\\ge3$, $1-r<-r/2$.\nChoose $\\xi,\\varepsilon'$ within the requested final margin.\nFinally, for a primitive family,\n$c(I)=q(I)-\\prod_{x\\in I}p_x$ and $q(I)$ is either zero or\n$2^{\\rho(I)}\\prod_{x\\in I}p_x$. Hence the actual joint and\nabsolute centered sums have the same powers.\nAll arities in this argument are fixed; the separate\nall-cardinality certificate estimates are still required.\n\\end{proof}"
+    },
+    {
+      "id": "SIM02",
+      "title": "Déduire T9.1 du Runge uniforme T1.1",
+      "priority": 1,
+      "recommendation": "applicable_au_snapshot",
+      "blocks": [
+        {
+          "file": "manuscripts/paper-p1/v1.8/sources/companion_sections/pair_rigidity.tex",
+          "line_start": 25,
+          "line_end": 60,
+          "purpose": "Seconde preuve de racine carrée polynomiale à remplacer"
+        },
+        {
+          "file": "manuscripts/paper-p1/v1.8/sources/companion_sections/arithmetic_appendix.tex",
+          "line_start": 19,
+          "line_end": 52,
+          "purpose": "T1.1 et preuve de référence à conserver"
+        }
+      ],
+      "retained_results_and_content": [
+        "T9.1, son label et le seuil imprimé (B+1)^{12m}.",
+        "La borne plus forte (64B)^m reste une étape de preuve, sans résultat numéroté supplémentaire."
+      ],
+      "justification": "T1.1 couvre les décalages entiers distincts, la cardinalité paire positive et la hauteur uniforme dans le degré. Pour B≥2, 64B≤(B+1)^5 ; le seuil 12m est immédiat. Le Lean actuel suit déjà cette route.",
+      "dependencies": [
+        {
+          "declaration": "PaperP1.LocalSquareThreshold.split_product_finset_bound",
+          "file": "PaperP1/Arithmetic/LocalSquareThreshold.lean",
+          "line": 20,
+          "scope": "B≥1, Finset d’offsets dans [-B,B], cardinalité paire positive, x≥2B ; un carré impose x≤(64B)^card I.",
+          "verification": "Déclaration et corps lus ; aucun Lean/Lake exécuté dans cette revue."
+        },
+        {
+          "declaration": "PaperP1.LocalSquareThreshold.sixtyfour_mul_le_fifth_power",
+          "file": "PaperP1/Arithmetic/LocalSquareThreshold.lean",
+          "line": 54,
+          "scope": "B≥2 ⇒64B≤(B+1)^5.",
+          "verification": "Déclaration et corps lus ; aucun Lean/Lake exécuté dans cette revue."
+        },
+        {
+          "declaration": "PaperP1.LocalSquareThreshold.companion_T9_1",
+          "file": "PaperP1/Arithmetic/LocalSquareThreshold.lean",
+          "line": 73,
+          "scope": "Énoncé littéral au seuil 12 card I.",
+          "verification": "Déclaration et corps lus ; aucun Lean/Lake exécuté dans cette revue."
+        }
+      ],
+      "circularity_and_domain_check": "T1.1 précède T9.1 et ne dépend ni de la rigidité ni de ses décomptes. LocalSquareThreshold importe SplitProductBound et utilise sa preuve fermée.",
+      "risks_and_conditions": [
+        "Justifier x≥2B avant T1.1 ; le seuil donné l’implique.",
+        "Conserver l’énoncé 12m pour éviter une révision inutile des usages."
+      ],
+      "line_gain": {
+        "original_lines": 36,
+        "estimated_replacement_lines": [
+          7,
+          9
+        ],
+        "estimated_saved_lines": [
+          27,
+          29
+        ],
+        "unit": "lignes source"
+      },
+      "proposed_english_tex": "\\begin{proof}\nThe assumed threshold implies $x\\ge2B$.\nIf the product were a square, Lemma~\\ref{p1:arith:runge},\nwith $R=B$ and $d=m$, would give $x\\le(64B)^m$.\nFor $B\\ge2$, we have $64B\\le(B+1)^5$.\nThus $x\\le(B+1)^{5m}\\le(B+1)^{12m}$,\ncontrary to the hypothesis.\n\\end{proof}"
+    },
+    {
+      "id": "SIM03",
+      "title": "Spécialiser T1.3 pour T9.2 et préserver Chebyshev pour Mertens",
+      "priority": 1,
+      "recommendation": "applicable_au_snapshot",
+      "blocks": [
+        {
+          "file": "manuscripts/paper-p1/v1.8/sources/companion_sections/pair_rigidity.tex",
+          "line_start": 71,
+          "line_end": 95,
+          "purpose": "Deuxième argument de Hamming à remplacer"
+        },
+        {
+          "file": "manuscripts/paper-p1/v1.8/sources/companion_sections/pair_rigidity.tex",
+          "line_start": 97,
+          "line_end": 117,
+          "purpose": "Dérivation harmonique à conserver ; raccord « above » à corriger"
+        },
+        {
+          "file": "manuscripts/paper-p1/v1.8/sources/companion_sections/arithmetic_appendix.tex",
+          "line_start": 90,
+          "line_end": 130,
+          "purpose": "T1.3, versions locale et globale à conserver"
+        }
+      ],
+      "retained_results_and_content": [
+        "T9.2 uniforme sur toutes les fenêtres critiques sans admissibilité.",
+        "p13:rig:mertens et son erreur O_a(1/log B)."
+      ],
+      "justification": "La partie locale de T1.3 donne exactement O(B/log B) entiers H-défectueux dans un intervalle de largeur O(B), à hauteur comparable à N, pour H comparable à B. Prendre H=10B et V_x. Le second calcul de distance minimale et de sous-ensembles n’est plus nécessaire.",
+      "dependencies": [
+        {
+          "declaration": "PaperP1.CriticalDefectPositions.companion_T9_2",
+          "file": "PaperP1/Arithmetic/CriticalDefectPositions.lean",
+          "line": 66,
+          "scope": "∀C ∃K>0,N0 ∀N≥N0,L critiques,x∈dyadicBlock N : card criticalDefectivePositions≤K(L+1)/log(L+1).",
+          "verification": "Déclaration et corps lus ; aucun Lean/Lake exécuté dans cette revue."
+        },
+        {
+          "tex_inputs": [
+            "p1:arith:defects",
+            "p13:rig:mertens"
+          ]
+        }
+      ],
+      "circularity_and_domain_check": "T1.3 utilise T1.1, Hamming et Pell, pas T9.2. Les comparabilités de hauteur sont uniformes dans les fenêtres critiques pour N assez grand.",
+      "risks_and_conditions": [
+        "Les lignes 72–76 prouvent Chebyshev, ensuite invoqué par « Chebyshev’s bound above ». Déplacer cette courte preuve avant Mertens ; ne pas laisser un renvoi orphelin.",
+        "Ne pas ajouter de régularité à T9.2."
+      ],
+      "line_gain": {
+        "original_lines": 25,
+        "estimated_replacement_lines": [
+          5,
+          7
+        ],
+        "relocated_Chebyshev_lines": [
+          4,
+          5
+        ],
+        "estimated_saved_lines": [
+          13,
+          16
+        ],
+        "unit": "lignes source, Chebyshev conservé"
+      },
+      "proposed_english_tex": "\\begin{proof}\nApply the local assertion of Lemma~\\ref{p1:arith:defects}\nwith $H=10B$ to $V_x$.\nIn the critical band its diameter is $O(B)$ and its values\nlie in $[N/2,3N]$ for all sufficiently large $N$.\nThe comparison constants are uniform in $x$.\n\\end{proof}",
+      "additional_english_tex": "For the elementary prime estimates used next, the product of primes\nin $(u,2u]$ divides $\\binom{2u}{u}\\le4^u$.\nDyadic summation gives $\\vartheta(t)\\ll t$, hence\n$\\psi(t)\\ll t$. The factorial identity below now applies."
+    },
+    {
+      "id": "SIM04",
+      "title": "Faire de T8.2 une spécialisation du paragraphe générique précédent",
+      "priority": 1,
+      "recommendation": "applicable_au_snapshot",
+      "blocks": [
+        {
+          "file": "manuscripts/paper-p1/v1.8/sources/companion_sections/confinement.tex",
+          "line_start": 148,
+          "line_end": 190,
+          "purpose": "Preuve générique à conserver"
+        },
+        {
+          "file": "manuscripts/paper-p1/v1.8/sources/companion_sections/confinement.tex",
+          "line_start": 201,
+          "line_end": 216,
+          "purpose": "Preuve spéciale à raccourcir"
+        }
+      ],
+      "retained_results_and_content": [
+        "Les trois clauses : hôtes denses, masse réellement homogène, activité centrée globale.",
+        "Seuil de densité imprimé ηB."
+      ],
+      "justification": "La séparation à ξL des lignes 207–214 répète les lignes 183–189. Le cas r=3 donne la borne globale du poids exact. La masse homogène dense doit garder une ligne montrant les vraies marginales 2^{-d_x}≤2p.",
+      "dependencies": [
+        {
+          "declaration": "PaperP1.DensePrimitiveHomogeneousMass.companion_T8_2",
+          "file": "PaperP1/Asymptotics/DensePrimitiveHomogeneousMass.lean",
+          "line": 113,
+          "scope": "C,η,ε fixés, η,ε>0 ; seuil avant N,L,F ; clauses denses à η(L+1) et clause centrée globale ; aucune positivité originale.",
+          "verification": "Déclaration et corps lus ; aucun Lean/Lake exécuté dans cette revue."
+        },
+        {
+          "declaration": "PaperP1.HomogeneousEffectiveWeights.factor",
+          "file": "PaperP1/Model/HomogeneousEffectiveWeights.lean",
+          "line": 31,
+          "scope": "q0(I)=2^{ρrel}∏q0({x}), avec ρrel EFFECTIVE.",
+          "verification": "Déclaration et corps lus ; aucun Lean/Lake exécuté dans cette revue."
+        }
+      ],
+      "circularity_and_domain_check": "Le paragraphe précédent est la preuve générale, sans supposer T8.2. La deuxième clause porte sur les événements homogènes réels, la troisième sur les coefficients originaux.",
+      "risks_and_conditions": [
+        "Ne pas écrire q0(I)=2^{ρrel}∏p_x sur les fenêtres irrégulières.",
+        "La formule c(I)=q(I)−∏p_x utilisée ici est celle des familles primitives, pas d’une famille arbitraire."
+      ],
+      "line_gain": {
+        "original_lines": 16,
+        "estimated_replacement_lines": [
+          9,
+          11
+        ],
+        "estimated_saved_lines": [
+          5,
+          7
+        ],
+        "unit": "lignes source"
+      },
+      "proposed_english_tex": "\\begin{proof}\nUse the preceding fixed-arity argument with $r=3$.\nSince $\\eta B\\ge\\eta L$, it gives the dense host count.\nFor each such triple the homogeneous probability is\n$2^{\\rho_{\\rm rel}}\\prod_x2^{-d_x}\\le(2p)^3\\,2^L\\ll_C N^{-2}$.\nThis gives the dense homogeneous mass.\nThe complete fixed-size weight bound is $O(N^{-3/2+\\varepsilon})$.\nFor a primitive family, $c(I)=q(I)-\\prod_Ip_x$ and\n$|c(I)|\\le2^{\\rho_{\\rm rel}(I)}\\prod_Ip_x$, even when $q(I)=0$.\nSumming proves the final assertion.\n\\end{proof}"
+    },
+    {
+      "id": "SIM05",
+      "title": "Renvoyer le second volet de 15.4 à T6.1",
+      "priority": 2,
+      "recommendation": "applicable_au_snapshot",
+      "blocks": [
+        {
+          "file": "manuscripts/paper-p1/v1.8/sources/companion_sections/exact_transfer.tex",
+          "line_start": 205,
+          "line_end": 212,
+          "purpose": "PREUVE dans le compagnon : second volet de15.4 à raccourcir"
+        },
+        {
+          "file": "manuscripts/paper-p1/v1.8/sources/companion_sections/half_counts.tex",
+          "line_start": 12,
+          "line_end": 40,
+          "purpose": "Coupure H=C_DB et T6.1 conservés"
+        },
+        {
+          "file": "manuscripts/paper-p1/v1.8/sources/main_sections/exact_transfer.tex",
+          "line_start": 202,
+          "line_end": 214,
+          "purpose": "ÉNONCÉ dans l’article :15.4, dont la coupure doit être précisée"
+        }
+      ],
+      "retained_results_and_content": [
+        "Les deux clauses de 15.4, y compris q=0.",
+        "La preuve T6.1 par Pell."
+      ],
+      "justification": "À la même coupure H=C_DB, le second volet est T6.1. La différence q≥0 contre q>0 se résout par monotonie : pour q=0, utiliser q′=ε/2 puis la marge ε/2.",
+      "dependencies": [
+        {
+          "declaration": "PaperP1.SmallKernelWindows.critical_two_count",
+          "file": "PaperP1/Asymptotics/SmallKernelWindows.lean",
+          "line": 76,
+          "scope": "Compte critique de deux noyaux à coupure logarithmique ; repose sur TwoSmallKernelCount.critical_block_count.",
+          "verification": "Déclaration et corps lus ; aucun Lean/Lake exécuté dans cette revue."
+        },
+        {
+          "tex_inputs": [
+            "p13:half:small-kernels"
+          ]
+        }
+      ],
+      "circularity_and_domain_check": "T6.1 dépend du découpage lisse et de Pell, pas de 15.4.",
+      "risks_and_conditions": [
+        "Rappeler H=C_DB à constante fixée dépassant le diamètre du bloc. C’est déjà prévu dans le patch éditorial relu, non appliqué aux sources figées.",
+        "Un produit de noyaux≤N^q diffère de deux noyaux individuellement≤N^q."
+      ],
+      "line_gain": {
+        "original_lines": 8,
+        "estimated_replacement_lines": [
+          5,
+          6
+        ],
+        "estimated_saved_lines": [
+          2,
+          3
+        ],
+        "unit": "lignes source ; économie faible"
+      },
+      "proposed_english_tex": "For the second assertion, use $H=C_DB$ as in\nLemma~\\ref{p13:half:small-kernels}.\nThat lemma gives the result for $q>0$.\nFor $q=0$, use $\\mathcal X_0\\subseteq\\mathcal X_{\\varepsilon/2}$\nand apply the lemma with error margin $\\varepsilon/2$."
+    },
+    {
+      "id": "SIM06",
+      "title": "Annoncer les deux autres puissances sans recopier leurs définitions",
+      "priority": 1,
+      "recommendation": "applicable_au_snapshot",
+      "blocks": [
+        {
+          "file": "manuscripts/paper-p1/v1.8/sources/main_sections/introduction.tex",
+          "line_start": 253,
+          "line_end": 285,
+          "purpose": "Annonce à resserrer"
+        },
+        {
+          "file": "manuscripts/paper-p1/v1.8/sources/main_sections/introduction.tex",
+          "line_start": 286,
+          "line_end": 327,
+          "purpose": "Table comparative à conserver"
+        },
+        {
+          "file": "manuscripts/paper-p1/v1.8/sources/main_sections/channel_hierarchy.tex",
+          "line_start": 1,
+          "line_end": 100,
+          "purpose": "Définition technique des canaux"
+        },
+        {
+          "file": "manuscripts/paper-p1/v1.8/sources/main_sections/third_cumulant.tex",
+          "line_start": 1,
+          "line_end": 46,
+          "purpose": "Définition technique du cumulant"
+        }
+      ],
+      "retained_results_and_content": [
+        "4/3, 41/30 et h/(h+1), avec h fixé avant N.",
+        "Références explicites finies distinctes des paramètres exacts.",
+        "Témoin compatible 10:12:15 ; pas de constante asymptotique complète pour κ3."
+      ],
+      "justification": "L’introduction peut dire ce que changent les résultats et laisser les sommes de canaux et la formule de κ3 dans leurs sections. La table suivante conserve une comparaison complète.",
+      "dependencies": [
+        {
+          "tex_inputs": [
+            "p13:channels:hierarchy",
+            "p13:third:main",
+            "p16:tab:references"
+          ]
+        }
+      ],
+      "circularity_and_domain_check": "Aucune preuve n’est retirée ; simple annonce des deux théorèmes exacts.",
+      "risks_and_conditions": [
+        "Ne pas laisser h croître avec N.",
+        "Ne pas annoncer un équivalent complet pour κ3.",
+        "Conserver la table comparative et l’explication du mécanisme paire/quartique."
+      ],
+      "line_gain": {
+        "original_lines": 33,
+        "estimated_replacement_lines": [
+          13,
+          17
+        ],
+        "estimated_saved_lines": [
+          16,
+          20
+        ],
+        "unit": "lignes source"
+      },
+      "proposed_english_tex": "\\paragraph{Two further optimal powers.}\nFor every fixed channel height $h\\ge3$,\nTheorem~\\ref{p13:channels:hierarchy} gives the error of the\nexplicit quadratic reference retaining all channels through height $h$:\nthe first omitted height $h+1$ contributes order\n$LN^{-h/(h+1)}$, with an explicit moving coefficient.\nThese finite-reference powers differ from the optimal power $4/3$\nfor exact cumulants; $h$ is fixed before $N$.\n\nTheorem~\\ref{p13:third:main} identifies the optimal power $41/30$\nof the third factorial cumulant. Its positive lower bound comes\nfrom genuine compatible triples of type $10:12:15$,\nand its upper bound includes all triples.\nNo full asymptotic constant for that cumulant is claimed."
+    },
+    {
+      "id": "SIM07",
+      "title": "Resserrer la deuxième carte des dernières sections du compagnon",
+      "priority": 1,
+      "recommendation": "applicable_au_snapshot",
+      "blocks": [
+        {
+          "file": "manuscripts/paper-p1/v1.8/sources/companion_sections/guide.tex",
+          "line_start": 143,
+          "line_end": 178,
+          "purpose": "Deuxième tableau de rôles à remplacer"
+        },
+        {
+          "file": "manuscripts/paper-p1/v1.8/sources/companion_sections/guide.tex",
+          "line_start": 66,
+          "line_end": 113,
+          "purpose": "Routes vers les preuves et branche régulière conservées"
+        },
+        {
+          "file": "manuscripts/paper-p1/v1.8/sources/companion_sections/guide.tex",
+          "line_start": 131,
+          "line_end": 141,
+          "purpose": "Présentation des conséquences conservée"
+        },
+        {
+          "file": "manuscripts/paper-p1/v1.8/sources/main_sections/introduction.tex",
+          "line_start": 610,
+          "line_end": 698,
+          "purpose": "Carte principale conservée"
+        }
+      ],
+      "retained_results_and_content": [
+        "Entrées article→preuve→article.",
+        "Nécessité de T14–T17 pour les positions et la suppression.",
+        "Hypothèses propres des dernières sections et indépendance de l’identité de biais de la moyenne."
+      ],
+      "justification": "Le tableau répète la branche régulière de 103–113 et la liste de 131–141. Un renvoi bref, plus deux distinctions logiques précises, conserve toute l’information.",
+      "dependencies": [
+        {
+          "tex_inputs": [
+            "p1:intro:dependencies",
+            "p1:limits:positions",
+            "p1:limits:vector-reference",
+            "p13:optimal:nominal"
+          ]
+        }
+      ],
+      "circularity_and_domain_check": "Le remplacement maintient explicitement la nécessité de la branche régulière. Aucun résultat n’est jugé inutile à partir de son nombre de citations.",
+      "risks_and_conditions": [
+        "Ne supprimer aucune section T14–T17.",
+        "« Conséquence supplémentaire » ne signifie pas « autre papier »."
+      ],
+      "line_gain": {
+        "original_lines": 36,
+        "estimated_replacement_lines": [
+          10,
+          13
+        ],
+        "estimated_saved_lines": [
+          23,
+          26
+        ],
+        "unit": "lignes source"
+      },
+      "proposed_english_tex": "\\paragraph{The role of the final sections.}\nThe proof map in Section~\\ref{p1:intro:dependencies} records\nthe inputs to the scalar theorem.\nThe positional argument in Section~\\ref{p1:limits:positions}\nproves Lemma~\\ref{p1:limits:vector-reference} and uses the\nregular-set weighted reconstruction in Sections~\\ref{p1:core:section}--\\ref{p1:close:section}.\nThe remaining late sections give further consequences with their own\nassumptions; they do not enter the optimal scalar reconstruction.\nThis is a statement about logical dependence, not separate papers.\nIn particular, Proposition~\\ref{p13:optimal:nominal} derives its\nquantized mean identity directly from the exact marginals,\nwithout the supplementary local-block asymptotics."
+    },
+    {
+      "id": "SIM08",
+      "title": "Calculer la norme à μ=1 une seule fois",
+      "priority": 2,
+      "recommendation": "applicable_au_snapshot",
+      "blocks": [
+        {
+          "file": "manuscripts/paper-p1/v1.8/sources/companion_sections/closure.tex",
+          "line_start": 494,
+          "line_end": 510,
+          "purpose": "Calcul particulier à remplacer"
+        },
+        {
+          "file": "manuscripts/paper-p1/v1.8/sources/companion_sections/discussion.tex",
+          "line_start": 8,
+          "line_end": 32,
+          "purpose": "Calcul général à conserver"
+        },
+        {
+          "file": "manuscripts/paper-p1/v1.8/sources/main_sections/discussion.tex",
+          "line_start": 116,
+          "line_end": 146,
+          "purpose": "Énoncé de norme conservé"
+        }
+      ],
+      "retained_results_and_content": [
+        "p1:close:dyadic-example et constante 1/(12e).",
+        "Norme 3/e et C(1)=3/(4e).",
+        "TV=normeℓ1/2."
+      ],
+      "justification": "Le même calcul des masses négatives figure dans la preuve générale des normes de différences de Poisson. Un seul calcul suffit ; l’exemple arithmétique explicite reste dans la fermeture.",
+      "dependencies": [
+        {
+          "tex_inputs": [
+            "p1:discussion:charlier-norm",
+            "p1:close:dyadic-example"
+          ]
+        }
+      ],
+      "circularity_and_domain_check": "L’identité Poisson de la norme est indépendante de l’approximation arithmétique. Le renvoi illustratif inverse de discussion.tex à l’exemple peut être ôté pour rendre cette direction manifeste.",
+      "risks_and_conditions": [
+        "Conserver label et constantes.",
+        "Ne pas confondre C(1)=3/(4e) et 1/(12e), qui comprend le coefficient arithmétique."
+      ],
+      "line_gain": {
+        "original_lines": 17,
+        "estimated_replacement_lines": [
+          10,
+          12
+        ],
+        "estimated_saved_lines": [
+          5,
+          7
+        ],
+        "unit": "lignes source"
+      },
+      "proposed_english_tex": "Proposition~\\ref{p1:discussion:charlier-norm} gives\n$\\|\\Pi_1*\\Delta^{*2}\\|_1=3/e$, hence $\\mathcal C(1)=3/(4e)$.\nAlong $N=2^L$ with $3\\mid L$, the pair coefficient therefore gives\n\\begin{equation}\n \\TV(\\Law Z_N,\\Pi_1)\n       \\sim \\frac1{12e}\\,L N^{-2/3}.\n \\label{p1:close:dyadic-example}\n\\end{equation}\nThis is the coefficient in the example announced in the introduction."
+    },
+    {
+      "id": "SIM09",
+      "title": "Mutualiser T17.4 avec la conversion 15.1, en explicitant les coefficients arbitraires",
+      "priority": 2,
+      "recommendation": "apres_raccord_algebrique_non_numerote",
+      "blocks": [
+        {
+          "file": "manuscripts/paper-p1/v1.8/sources/main_sections/exact_transfer.tex",
+          "line_start": 68,
+          "line_end": 118,
+          "purpose": "15.1 : conserver la preuve et ajouter sa portée algébrique"
+        },
+        {
+          "file": "manuscripts/paper-p1/v1.8/sources/companion_sections/closure.tex",
+          "line_start": 334,
+          "line_end": 369,
+          "purpose": "Seconde expansion logarithmique à raccourcir"
+        }
+      ],
+      "retained_results_and_content": [
+        "T17.4 et son erreur O_C(N^{-2}+a_N/N), avec 4|β−C2|.",
+        "15.1 et son application aux covariances originales.",
+        "Le paramètre régulier αG exact."
+      ],
+      "justification": "La preuve de 15.1 est algébrique avant l’identification finale à la variance. Elle reste vraie pour des coefficients réels arbitraires sur des paires. En concentrant C2 sur une paire, la masse absolue devient |C2| et la référence est b^{*n}+C2Δ²*b^{*(n−2)}. Cette généralité est déjà prouvée par l’interface Lean universelle.",
+      "dependencies": [
+        {
+          "declaration": "PaperP1.UniversalHeterogeneousConversion.actual_signed_measure_conversion",
+          "file": "PaperP1/Probability/UniversalHeterogeneousConversion.lean",
+          "line": 115,
+          "scope": "G fini, E de paires de G ; p_i∈[0,1], p_i≤P,P≥0 ; c(e) réel arbitraire. Erreur en Σ|c(e)|, aucune hypothèse de covariance.",
+          "verification": "Déclaration et corps lus ; aucune exécution Lean/Lake dans cette revue."
+        },
+        {
+          "declaration": "PaperP1.SharpRetainedConversion.companion_T17_4",
+          "file": "PaperP1/Asymptotics/SharpRetainedConversion.lean",
+          "line": 17,
+          "scope": "C fixé ; ∃K>0,N0 avant N,L,H ; référence binomiale réelle, moments réguliers exacts, erreur 4|β−covariance|+K(N^{-2}+a_N/N).",
+          "verification": "Déclaration et corps lus ; aucune exécution Lean/Lake dans cette revue."
+        },
+        {
+          "tex_inputs": [
+            "p13:transfer:conversion",
+            "p1:close:variance",
+            "p1:close:conversion"
+          ]
+        }
+      ],
+      "circularity_and_domain_check": "La conversion analytique générale ne suppose ni T17.4 ni une reconstruction. C2=O_C(a_N) reste fourni par le calcul de covariance, pas par la conclusion à établir.",
+      "risks_and_conditions": [
+        "Ne pas invoquer 15.1 en remplaçant simplement A2 par |C2| : Σ|c(e)| peut excéder |Σc(e)|.",
+        "Énoncer la portée pour des coefficients arbitraires ; pour n≥2, placer C2 sur une seule paire donne exactement A2=|C2|.",
+        "Le label p1:close:binomial-expansion n’a pas d’usage externe trouvé dans le snapshot. Si tous les labels d’équations doivent être préservés, conserver sa formule comme spécialisation, ce qui réduit l’économie."
+      ],
+      "line_gain": {
+        "original_lines": 36,
+        "estimated_replacement_lines": [
+          13,
+          17
+        ],
+        "additional_general_scope_lines": [
+          3,
+          4
+        ],
+        "estimated_saved_lines": [
+          15,
+          20
+        ],
+        "unit": "lignes source, raccord compris ; avant éventuelle conservation de l’équation interne"
+      },
+      "proposed_english_tex": "\\begin{proof}\nThe algebraic form of Lemma~\\ref{p13:transfer:conversion}\nalso allows arbitrary real pair coefficients.\nApply it with common marginal $p$ and a coefficient $C_2$\non one fixed pair, all other pair coefficients being zero.\nThe reference is $b^{*n}+C_2\\Delta^{*2}*b^{*(n-2)}$,\nand its absolute pair mass is $|C_2|$.\nIt differs from $Q_{\\mu,\\alpha_G}$ by\n$O_C(np^3+(np^2)^2+|C_2|(np^2+p))$.\nReplacing $C_2$ by $\\beta_N$ costs at most\n$4|\\beta_N-C_2|$, since $b^{*(n-2)}$ has norm one.\nNow $n=O(N)$, $p=O_C(N^{-1})$ and $C_2=O_C(a_N)$.\nThese bounds give the stated error.\n\\end{proof}",
+      "additional_english_tex": "The same algebraic bound holds for arbitrary real coefficients $c(e)$\non pairs, with $A_2=\\sum_e|c(e)|$ and\n$\\alpha=2\\sum_e c(e)-s_2$.\nTheir interpretation as covariances is needed only to identify\n$\\alpha$ with the second factorial cumulant."
+    },
+    {
+      "id": "SIM10",
+      "title": "Déplacer les contre-exemples près des corrections et alléger le bilan partagé",
+      "priority": 2,
+      "recommendation": "choix_structurel_sans_suppression_scientifique",
+      "blocks": [
+        {
+          "file": "manuscripts/paper-p1/v1.8/sources/formalization.tex",
+          "line_start": 1,
+          "line_end": 73,
+          "purpose": "Bilan commun imprimé dans les deux documents"
+        },
+        {
+          "file": "manuscripts/paper-p1/v1.8/sources/formalization.tex",
+          "line_start": 22,
+          "line_end": 33,
+          "purpose": "Contre-exemple du rayon à déplacer près de T1.10"
+        },
+        {
+          "file": "manuscripts/paper-p1/v1.8/sources/formalization.tex",
+          "line_start": 35,
+          "line_end": 46,
+          "purpose": "Contre-exemple du plafond à déplacer près de T5.1"
+        },
+        {
+          "file": "manuscripts/paper-p1/v1.8/sources/companion_sections/arithmetic_appendix.tex",
+          "line_start": 877,
+          "line_end": 887,
+          "purpose": "Raccord scientifique de T1.10"
+        },
+        {
+          "file": "manuscripts/paper-p1/v1.8/sources/companion_sections/short_supports.tex",
+          "line_start": 10,
+          "line_end": 68,
+          "purpose": "Énoncé et preuve de T5.1"
+        }
+      ],
+      "retained_results_and_content": [
+        "Les deux formulations originales fausses, les corrections et leurs contre-exemples.",
+        "Distinction corrections v1.7 / renforcements facultatifs v1.8.",
+        "167 résultats, traçabilité, compilateur et Mathlib épinglés, limites de portée, déclaration d’assistance existante.",
+        "Absence d’identifiant Palomar."
+      ],
+      "justification": "Le bilan de 73 lignes apparaît dans les deux PDF. Les exemples sont utiles mais éloignés des hypothèses qu’ils justifient. Les placer une fois près de T1.10 et T5.1 permet un bilan court dans l’article avec renvoi au compagnon et au dépôt.",
+      "dependencies": [
+        {
+          "tex_inputs": [
+            "p1:arith:asymmetric",
+            "p13:short:quadratic"
+          ]
+        },
+        {
+          "scope": "Ne supprimer aucun contre-exemple ni correction ; ne pas convertir les1003 entrées historiques en1003 contributions scientifiques."
+        }
+      ],
+      "circularity_and_domain_check": "Aucune nouvelle dépendance : les exemples expliquent la nécessité des formulations corrigées. Ne pas présenter leur validité comme simple conséquence de la présence d’un nom dans le registre.",
+      "risks_and_conditions": [
+        "Prévoir une variante courte par document ou des blocs conditionnels ; ne pas recréer un deuxième exemplaire des exemples.",
+        "Déplacer intégralement les paramètres des contre-exemples avant toute abréviation.",
+        "Aucune suppression de bibliographie ni nouvelle reprise de l’assistance n’est proposée."
+      ],
+      "line_gain": {
+        "article_current_shared_note_lines": 73,
+        "estimated_article_short_note_lines": [
+          19,
+          24
+        ],
+        "estimated_article_note_reduction": [
+          49,
+          54
+        ],
+        "global_net_saved_lines": null,
+        "reason": "Les exemples sont déplacés dans le compagnon ; lignes physiques partagées et lignes imprimées dans deuxPDF ne s’additionnent pas simplement. Aucun gain de page mesuré.",
+        "unit": "lignes source équivalentes par document"
+      },
+      "proposed_english_tex": "\\section*{Formalization and statement correspondence}\nThe repository \\url{https://github.com/Vulkin-prog/paper-p1-lean}\ncontains the Lean development for both texts, checked with\nLean~4.36.0-rc2 and the pinned Mathlib revision.\nIt records the exact statements, their proof entries, and the\nvalidation sources; the version~1.6 archive is preserved.\n\nVersion~1.7 corrected two false original formulations:\nthe enclosing-interval radius in Lemma~\\ref{p1:arith:asymmetric}\nand the capped exponent in Lemma~\\ref{p13:short:quadratic}.\nTheir counterexamples and corrected scopes are discussed beside\nthose results in the companion. Version~1.8 selectively integrates\nstronger estimates and shorter proofs; it retains all 167\nnumbered-result labels and their numbering.\nIntermediate proof constructions in the change ledger are not\nall separate scientific contributions.\n\nKernel checking and finite diagnostics do not replace checking\nthe correspondence between the formal and printed statements.\nThe audited proofs use only the standard kernel axioms recorded\nin the repository. This working draft has no Palomar identifier."
+    },
+    {
+      "id": "SIM11",
+      "title": "Déplacer la table des marges à la fermeture de la preuve",
+      "priority": 3,
+      "recommendation": "option_editoriale",
+      "blocks": [
+        {
+          "file": "manuscripts/paper-p1/v1.8/sources/main_sections/introduction.tex",
+          "line_start": 700,
+          "line_end": 740,
+          "purpose": "Table et recette de marges à déplacer"
+        },
+        {
+          "file": "manuscripts/paper-p1/v1.8/sources/main_sections/exact_transfer.tex",
+          "line_start": 981,
+          "line_end": 1025,
+          "purpose": "Destination après la reconstruction, avant la transition au quartique"
+        }
+      ],
+      "retained_results_and_content": [
+        "Différences exactes 1/120,2/15,1/30,1/60,1/6.",
+        "Recette des marges fixes, ordres jusqu’à256, grands ordres séparés.",
+        "Le terme de deux paires reste au niveau4/3 ; il n’a pas de marge stricte à dépenser."
+      ],
+      "justification": "La table aide à vérifier les puissances, mais surcharge l’introduction après une longue carte des dépendances. Sa place après15 rapproche les comparaisons des estimations et de la recette996–1006.",
+      "dependencies": [
+        {
+          "tex_inputs": [
+            "p13:transfer:reconstruction",
+            "p13:lower:positive-quartic",
+            "p13:third:unaligned-target-cost"
+          ]
+        }
+      ],
+      "circularity_and_domain_check": "Déplacement documentaire. La ligne quartique reste un renvoi à une preuve séparée, pas une hypothèse pour l’upper bound.",
+      "risks_and_conditions": [
+        "Garder un renvoi dans l’introduction.",
+        "Ne pas absorber A2² dans un reste de puissance strictement meilleure que4/3."
+      ],
+      "line_gain": {
+        "estimated_net_saved_lines": 0,
+        "estimated_frontmatter_lines_relocated": [
+          35,
+          39
+        ],
+        "unit": "lignes source ; aucun raccourcissement global garanti"
+      },
+      "proposed_english_tex": "The completed proof records the exact power margins in\nSection~\\ref{p13:transfer:section}.\nThe fixed-order inputs and the separately controlled large-cardinality\ntail are kept distinct throughout."
+    },
+    {
+      "id": "SIM12",
+      "title": "Option T1.14 : remplacer le partage de noyaux par le demi-compte plus fort",
+      "priority": 3,
+      "recommendation": "ne_pas_integrer_dans_la_premiere_passe",
+      "blocks": [
+        {
+          "file": "manuscripts/paper-p1/v1.8/sources/companion_sections/arithmetic_appendix.tex",
+          "line_start": 1065,
+          "line_end": 1103,
+          "purpose": "T1.14 et sa preuve"
+        },
+        {
+          "file": "manuscripts/paper-p1/v1.8/sources/main_sections/half_counts.tex",
+          "line_start": 21,
+          "line_end": 40,
+          "purpose": "Demi-compte 10.1"
+        },
+        {
+          "file": "manuscripts/paper-p1/v1.8/sources/companion_sections/fixed_moments.tex",
+          "line_start": 326,
+          "line_end": 332,
+          "purpose": "Usage précoce dans T4.3"
+        },
+        {
+          "file": "manuscripts/paper-p1/v1.8/sources/companion_sections/fixed_moments.tex",
+          "line_start": 449,
+          "line_end": 455,
+          "purpose": "Usage dans les moments indépendants"
+        }
+      ],
+      "retained_results_and_content": [
+        "T1.14 avec son exposant imprimé r−2s/(2s+1).",
+        "Portée aux fenêtres originales et aux espaces injectifs comprimés.",
+        "Moments de Z indépendants des approximations de loi."
+      ],
+      "justification": "BlockSupportCount donne déjà N^{r−s/2+ε} pour les relations EFFECTIVES à au moins s projections non nulles. Pour s≥2, s/2≥2s/(2s+1). Le partage petit/gros noyau peut être évité dans ce domaine, mais cela crée une dépendance tardive et exige un raccord si « projection » a un sens formel plutôt qu’effectif.",
+      "dependencies": [
+        {
+          "declaration": "PaperP1.BlockSupportCount.uniform_count",
+          "file": "PaperP1/Asymptotics/BlockSupportCount.lean",
+          "line": 20,
+          "scope": "r,s,C entiers ; s>0,C≥1 ; valeurs entre aN,bN avec a>0 ; largeur≤ElogN ; au plusCN centres ; centres injectifs ; au moins s images effectives non nulles.",
+          "verification": "Déclaration et corps lus ; aucune exécution Lean/Lake dans cette revue."
+        },
+        {
+          "declaration": "PaperP1.BlockSupportCount.critical_interval_count",
+          "file": "PaperP1/Asymptotics/BlockSupportCount.lean",
+          "line": 117,
+          "scope": "Même compte pour les largeursD(L+1), paramètres fixés avantN0.",
+          "verification": "Déclaration et corps lus ; aucune exécution Lean/Lake dans cette revue."
+        },
+        {
+          "declaration": "PaperP1.BlockSupportCount.source_exponent",
+          "file": "PaperP1/Asymptotics/BlockSupportCount.lean",
+          "line": 95,
+          "scope": "s≥2 ⇒r−s/2≤r−2s/(2s+1).",
+          "verification": "Déclaration et corps lus ; aucune exécution Lean/Lake dans cette revue."
+        },
+        {
+          "definition": "PaperP1.BlockSupportProjection.Relation",
+          "file": "PaperP1/Arithmetic/BlockSupportProjection.lean",
+          "lines": [
+            15,
+            22
+          ],
+          "meaning": "u_i dans les images effectives des sélections paires, somme0 et au moins s u_i NON NULS dans ces images."
+        },
+        {
+          "source_import_evidence": "work/p1-editorial-followup/simplification-import-evidence.json"
+        }
+      ],
+      "circularity_and_domain_check": "L’import source de ValueHeightHalfCount a267 ancêtres, sans BlockSupportCount, modules de moments fixes de Z ni reconstruction régulière. La preuve10.1 ne cite pas T1.14. Pas de cycle formel repéré, mais le chemin des moments fixes devient moins précoce ; la carte d’exposition doit le dire.",
+      "risks_and_conditions": [
+        "Une sélection physique non vide peut avoir image locale nulle. Si le domaine deT1.14 inclut ce sens formel, séparer l blocs à image nulle : chacun a N^{o(1)} centres par les défauts locaux. Pour k≥2 images effectives non nulles, appliquer10.1, puis compter les autres centres librement : N^{r−l−k/2+ε}≤N^{r−s/2+ε} si l+k≥s. k=1 est impossible ; k=0 est direct.",
+        "Le seul alias BlockSupportCount.companion_T1_14 n’établit pas automatiquement cette extension formelle ; son prédicat est effectif.",
+        "Pour les espaces injectifs, le raccord est automatique. Absorber les B^{O_r(1)} motifs et dilatations après r fixé.",
+        "Gain faible comparé au coût d’exposition. Garder la preuve actuelle est défendable."
+      ],
+      "line_gain": {
+        "original_lines": 26,
+        "conditional_estimated_saved_lines": [
+          6,
+          12
+        ],
+        "unit": "lignes source, raccord local compris"
+      },
+      "proposed_english_tex": null
+    },
+    {
+      "id": "SIM13",
+      "title": "Option T4.3 : le résultat fixe plus fort ne suffit pas à supprimer la preuve commune au cas comprimé",
+      "priority": 3,
+      "recommendation": "pas_de_coupe_immediate",
+      "blocks": [
+        {
+          "file": "manuscripts/paper-p1/v1.8/sources/companion_sections/fixed_moments.tex",
+          "line_start": 4,
+          "line_end": 9,
+          "purpose": "Convention de domaine régulier"
+        },
+        {
+          "file": "manuscripts/paper-p1/v1.8/sources/companion_sections/fixed_moments.tex",
+          "line_start": 172,
+          "line_end": 182,
+          "purpose": "Poids homogène nominal sur le domaine régulier"
+        },
+        {
+          "file": "manuscripts/paper-p1/v1.8/sources/companion_sections/fixed_moments.tex",
+          "line_start": 198,
+          "line_end": 343,
+          "purpose": "Longue preuveT4.3"
+        },
+        {
+          "file": "manuscripts/paper-p1/v1.8/sources/companion_sections/fixed_moments.tex",
+          "line_start": 368,
+          "line_end": 413,
+          "purpose": "PreuveT4.4"
+        },
+        {
+          "file": "manuscripts/paper-p1/v1.8/sources/companion_sections/fixed_moments.tex",
+          "line_start": 383,
+          "line_end": 400,
+          "purpose": "Réemploi explicite de la preuve précédente"
+        }
+      ],
+      "retained_results_and_content": [
+        "T4.3 et son effetN^{-4/5+ε}, y compris les incompatibles affines.",
+        "T4.4 : bloc comprimé de dimension κ_bL, r−1 fenêtres originales, massesN^{-κ_b+1/5+ε}, cas à deux blocs.",
+        "Usages dans les cœurs pondérés, les moments et les positions."
+      ],
+      "justification": "Sur le domaine régulier, q0(I)=p^r2^{ρrel} est le poids nominal. SharpPrimitiveNominalMass.uniform_mass donneN^{-r/2+ε}, doncT4.3 suit pour r≥3, avec facteur r! fixe pour les tuples ordonnés. MaisT4.4 réemploie explicitement le group argument et les comptes de rang élevé. Supprimer tout le grand bloc laisserait ce cas sans preuve écrite.",
+      "dependencies": [
+        {
+          "declaration": "PaperP1.SharpPrimitiveNominalMass.uniform_mass",
+          "file": "PaperP1/Asymptotics/SharpPrimitiveNominalMass.lean",
+          "line": 20,
+          "scope": "r≥3 fixé ; C,ε,ε>0 ; ∃N0 avantN,L,F ; poids nominal p^r2^{nullité relative effective}, masse≤N^{-r/2+ε}.",
+          "verification": "Déclaration et corps lus ; aucune exécution Lean/Lake dans cette revue."
+        },
+        {
+          "supporting_identity": "PaperP1.HomogeneousEffectiveWeights.factor"
+        },
+        {
+          "tex_inputs": [
+            "p1:fixed:compressed",
+            "p1:fixed:primitive",
+            "p1:arith:geometric",
+            "p1:arith:ternary-budget"
+          ]
+        }
+      ],
+      "circularity_and_domain_check": "Le résultat nominal plus fort utilise confinement et demi-compte, pas le théorème des moments deZ ni une approximation de loi. Son emploi crée toutefois un renvoi tardif. Une famille de fenêtres originales ne couvre pas automatiquement un bloc comprimé de rang κ_bL.",
+      "risks_and_conditions": [
+        "Ne pas annoncer146 lignes gagnées : la géométrie utile peut devoir être déplacée intégralement dansT4.4.",
+        "Deux options : garder la preuve commune ; ou extraire l’argument géométrique utile en lemme scientifique autonome qui traite les blocs comprimés.",
+        "Le nouveau module homogène commun du parent ne traite que les fenêtres originales et ne remplace pasT4.4.",
+        "Une interface qui suppose une estimation cible n’est pas une preuve de remplacement."
+      ],
+      "line_gain": {
+        "original_proof_lines": 146,
+        "estimated_net_saved_lines": null,
+        "reason": "Réemploi parT4.4 à préserver ; gain non acquis avant une preuve autonome.",
+        "unit": "lignes source"
+      },
+      "proposed_english_tex": null
+    }
+  ],
+  "common_homogeneous_envelope_followup": {
+    "status": "addendum_distinct_du_snapshot",
+    "source_commit_reported_by_parent": "7bfc953cd6092eebfbae5f24aeb72b7180693537",
+    "module": "PaperP1/Asymptotics/FixedArityHomogeneousMass.lean",
+    "independent_review": "work/p1-primitive-common-bound/independent-review.json",
+    "source_read_conclusion": "Les sept corps du prototype ont été lus. q0(I)=2^{ρrel}∏2^{-d_x}≤2^r poids nominal ; cap2p construit en régime critique ; mêmes puissances pour les quatre sommes. Aucune régularité/compatibilité/positivité originale requise. Quantificateurs fixés avant le seuil.",
+    "recommended_location": "manuscripts/paper-p1/v1.8/sources/companion_sections/confinement.tex:175–190",
+    "use": "Clarifier une fois les probabilités homogènes puis citer cette enveloppe dans15.5/T8.2. N’apporte pas le cas compriméT4.4 ; gains non ajoutés au total.",
+    "proposed_english_tex": "Write $q_0(I)$ for the probability of the homogeneous events,\nwith zero right-hand side in place of the affine start prescription.\nExact factorization gives\n\\[\n q_0(I)=2^{\\rho_{\\rm rel}(I)}\\prod_{x\\in I}2^{-d_x}\n       \\le 2^r p^r2^{\\rho_{\\rm rel}(I)},\\qquad |I|=r,\n\\]\nbecause local rigidity gives $d_x\\ge L-1$.\nThe nominal fixed-size estimates therefore imply the same powers\nfor the true homogeneous mass: $N^{-r/2+\\varepsilon}$ in general\nand $N^{1-r+\\varepsilon}$ when $\\rho_{\\rm rel}\\ge\\eta L$.\nHere $r$ and $\\eta>0$ are fixed before $N$; the factor $2^r$\nis absorbed using a smaller fixed error margin.\nThe original exact rank weights, actual joint probabilities,\nand absolute centered coefficients are each bounded by $q_0(I)$.\nThus one homogeneous envelope controls all four sums, even when\nan original affine system is incompatible or has a zero marginal."
+  },
+  "protected_material": [
+    {
+      "id": "KEEP01",
+      "content": "BrancheT14–T17 et preuve positionnelle",
+      "locations": [
+        {
+          "file": "manuscripts/paper-p1/v1.8/sources/companion_sections/limits_appendix.tex",
+          "line_start": 778,
+          "line_end": 840,
+          "purpose": "Déficits positifs, bord et comparaison vectorielle"
+        },
+        {
+          "file": "manuscripts/paper-p1/v1.8/sources/companion_sections/limits_appendix.tex",
+          "line_start": 846,
+          "line_end": 875,
+          "purpose": "Suppression des arêtes"
+        }
+      ],
+      "reason": "La preuve vectorielle utilise les sommes positives de déficits et le suffixe arrêté. Un TV scalaire deZ ne contrôle pas un champ. Les bornes fixes r/2 ne remplacent pas les budgets de cardinalité croissante."
+    },
+    {
+      "id": "KEEP02",
+      "content": "Deux noyaux individuellement petits et Reuss uniforme",
+      "reason": "K1,K2≤N^θ donne seulementK1K2≤N^{2θ}. T6.1 donne alorsN^{2θ+ε}, pasN^{max(θ,7/12)+ε}. Ne pas supprimerT1.5/T1.13 sur la base d’une similarité de noms."
+    },
+    {
+      "id": "KEEP03",
+      "content": "Rang point par point des paires nonalignées",
+      "reason": "N^ε hôtes denses n’est pas une exclusion pointwise au-delà du rangL/2. Ne pas remplacer13.6 par le seul compte d’exceptions."
+    },
+    {
+      "id": "KEEP04",
+      "content": "Deux erreurs quartiques et positivitéK4+",
+      "reason": "Les erreursN^{-5/3+ε} etN^{-3/2+ε} portent sur des objets distincts. L’expansion formelle deHermite ne prouve pas la vraie non-annulation. Garder le test deCharlier et les moments fixes choisis après la marge finale."
+    },
+    {
+      "id": "KEEP05",
+      "content": "T19.4/T19.5 et ordres croissants",
+      "reason": "Markov avec un moment fixe peut redonner une queue à puissance fixée, pas remplacer le régimeh~(logN)^{2/3} deT19.4. La preuveT19.5 est déjà courte ; aucune suppression de sa branche d’entrée n’est justifiée."
+    },
+    {
+      "id": "KEEP06",
+      "content": "RéférencePoisson par sites, paquets, blocs et loi bivariée",
+      "reason": "Le rôle scientifique ne se réduit pas au nombre de citations. Garderν_x≥0, H_x distinct deJ_x et les effets de recouvrement. Les arrivées de référence indépendantes ne sont pas des indicateurs arithmétiques indépendants."
+    },
+    {
+      "id": "KEEP07",
+      "content": "Raccourcis déjà intégrés dansv1.8",
+      "reason": "Étoiles admissibles7.4, endpointa=0 de13.5 et moments d’ordrelog²N deT19.6 : déjà réécrits. Ne pas compter leur état actuel comme une nouvelle économie."
+    },
+    {
+      "id": "KEEP08",
+      "content": "Bibliographie et uniformité des entrées externes",
+      "reason": "Ne pas supprimer une référence ou une estimation à cause d’un faible nombre de citations. Garder coefficient-uniformity, degrés fixés et hauteurs polynomiales au point d’usage."
+    }
+  ],
+  "suggested_revision_order": [
+    {
+      "step": 1,
+      "ids": [
+        "SIM02",
+        "SIM03"
+      ],
+      "action": "RaccourcirT9 ; déplacer Chebyshev avant Mertens ; conserver énoncés et labels."
+    },
+    {
+      "step": 2,
+      "ids": [
+        "SIM01",
+        "SIM04",
+        "SIM05"
+      ],
+      "action": "Centraliser la construction ancrée enT8, resserrer15.5/T8.2 et préciserH=C_DB dans15.4. Le module homogène commun peut soutenir un paragraphe non numéroté de raccord, sans remplacer la preuve ancrée."
+    },
+    {
+      "step": 3,
+      "ids": [
+        "SIM06",
+        "SIM07",
+        "SIM08"
+      ],
+      "action": "Resserrer introduction, guide et norme particulière ; garder les tables comparatives et constantes utiles."
+    },
+    {
+      "step": 4,
+      "ids": [
+        "SIM09"
+      ],
+      "action": "Énoncer la généralité des coefficients réels puis mutualiserT17.4 ; vérifierΣ|c| contre|Σc|."
+    },
+    {
+      "step": 5,
+      "ids": [
+        "SIM10",
+        "SIM11"
+      ],
+      "action": "Déplacer contre-exemples et table de marges, sans nouveau doublon."
+    },
+    {
+      "step": 6,
+      "ids": [
+        "SIM12",
+        "SIM13"
+      ],
+      "action": "Réserver ces options à une passe structurelle, après raccords écrits complets et vraie preuve autonome du cas comprimé."
+    }
+  ],
+  "integration_checks_for_parent": [
+    "Garder les167 labels de résultats et leur numérotation.",
+    "Préserver les équations encore citées ; décider explicitement du label internep1:close:binomial-expansion.",
+    "Vérifier les références croisées et le raccordChebyshev/Mertens après toute coupe.",
+    "Conserver4/3,41/30,4/5 et leurs régimes ; ne pas propager une borne àr fixé aux grandes cardinalités.",
+    "Mesurer lesPDF seulement après les modifications réellement retenues ; aucune économie de page n’est revendiquée ici.",
+    "Archiver séparément l’addendum1004 ; distinguer lectures de cette instance et exécutions du parent."
+  ],
+  "source_import_evidence": "work/p1-editorial-followup/simplification-import-evidence.json",
+  "source_fingerprints": [
+    {
+      "file": "manuscripts/paper-p1/v1.8/sources/companion_sections/arithmetic_appendix.tex",
+      "sha256": "0509263ffdaf001f4015385e25420e6a5af584db9c3c54087c96dab22b4bad51"
+    },
+    {
+      "file": "manuscripts/paper-p1/v1.8/sources/companion_sections/closure.tex",
+      "sha256": "0da38b581952f72ce6e7ef518345b69e6118dc8a85048cd9cd85d24ea8e9b9f9"
+    },
+    {
+      "file": "manuscripts/paper-p1/v1.8/sources/companion_sections/confinement.tex",
+      "sha256": "e4c4fa80f11650be05c8cbba215593a57e1f7411d41d60ccad10291704f0d632"
+    },
+    {
+      "file": "manuscripts/paper-p1/v1.8/sources/companion_sections/discussion.tex",
+      "sha256": "049daf41799e840d6e3a71a33463f91f345120b1bd0902f7cb668374e7949135"
+    },
+    {
+      "file": "manuscripts/paper-p1/v1.8/sources/companion_sections/exact_transfer.tex",
+      "sha256": "430433247a93dd9317cdb435c5ecfd5475b29d639ce446c3d00d99dd769d3ad9"
+    },
+    {
+      "file": "manuscripts/paper-p1/v1.8/sources/companion_sections/fixed_moments.tex",
+      "sha256": "28033cc5b4dcbb227534bbfc7218e5227a92f09308fcc52af86a92d1497abd4e"
+    },
+    {
+      "file": "manuscripts/paper-p1/v1.8/sources/companion_sections/guide.tex",
+      "sha256": "6542739ab0ce206e83572fff947d8b42b81c17a56ca6f67a9de9678a1fc3e030"
+    },
+    {
+      "file": "manuscripts/paper-p1/v1.8/sources/companion_sections/half_counts.tex",
+      "sha256": "f27be44ea2689b57455cfa6cd59f7f0104e9a78b376d690a397dc4fbdcac57de"
+    },
+    {
+      "file": "manuscripts/paper-p1/v1.8/sources/companion_sections/pair_rigidity.tex",
+      "sha256": "5d694892973d4e55dc66d78f72864ffafd28305ad924dbedb3270fbedc23461d"
+    },
+    {
+      "file": "manuscripts/paper-p1/v1.8/sources/companion_sections/short_supports.tex",
+      "sha256": "4055767ce142e78dac6780a288b3c0f10687286588e081a7c08fb84ecb504fe9"
+    },
+    {
+      "file": "manuscripts/paper-p1/v1.8/sources/formalization.tex",
+      "sha256": "37d7ea903380a0c81f60a4d93c0d2f8b80118fd556539fa305afbaa8b3cc7a3f"
+    },
+    {
+      "file": "manuscripts/paper-p1/v1.8/sources/main_sections/channel_hierarchy.tex",
+      "sha256": "bdca79979d65457ea356da0f75f9233a993e7a2e08e54abdbfd892b4a431cbb4"
+    },
+    {
+      "file": "manuscripts/paper-p1/v1.8/sources/main_sections/discussion.tex",
+      "sha256": "4525701ce6bf0b2cb83abdc4bbbfa560efa0cb02879d7371a0b1317af77e5a24"
+    },
+    {
+      "file": "manuscripts/paper-p1/v1.8/sources/main_sections/exact_transfer.tex",
+      "sha256": "17d5b26150b9d298f38d513495e493b9fd9847b02b297044bcd1a026623a329e"
+    },
+    {
+      "file": "manuscripts/paper-p1/v1.8/sources/main_sections/half_counts.tex",
+      "sha256": "c0617cd80434a68255f0668a41a31fa13c0f7b7759bd1219912dd7ce43808d33"
+    },
+    {
+      "file": "manuscripts/paper-p1/v1.8/sources/main_sections/introduction.tex",
+      "sha256": "26cc8a42bd9c828941d1ff260c7e637165654602a79bc7fe98c05d9e925db5a9"
+    },
+    {
+      "file": "manuscripts/paper-p1/v1.8/sources/main_sections/third_cumulant.tex",
+      "sha256": "95154600c27253c8adb8c658ee6277d4f74119220fe9b5a31acdb1cb365bd7cd"
+    }
+  ],
+  "frozen_earlier_reports": "Rapports79 canoniques,9 denses,79 restants, interfaces, exemples irréguliers et patch laissés inchangés."
+}

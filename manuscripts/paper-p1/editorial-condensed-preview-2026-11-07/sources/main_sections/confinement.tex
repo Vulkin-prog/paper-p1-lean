@@ -1,0 +1,84 @@
+\section{Confining large common divisors}
+\label{p13:conf:section}
+
+At small relative rank, the host count already controls
+triple probabilities. At macroscopic rank, many large
+prime factors must be shared between the windows.
+An interpolation argument confines the offsets of these
+common divisors to a fixed-degree curve. Unless the pair
+has an exact rational alignment, that curve contains too
+few offsets to sustain many large groups.
+
+Fix \(H=C_1B\) larger than the diameters and use the odd
+kernel \(K_H\) from Section~\ref{p13:half:section}.
+For this section, a pair is called aligned if two distinct
+offset pairs give the same ratio of true values.
+Equivalently, two points \((i,j)\) lie on a line through
+\((-x,-y)\). Reducing the ratio bounds its height by
+\(O(B)\); the enlarged height-\(B^3\) convention used
+elsewhere in the paper includes these alignments.
+
+
+The confinement lemma, proved in Section~\ref{p14:comp:confinement},
+starts from pairwise coprime groups $g_a>N^\tau$ dividing
+$x+i_a$ and $y+j_a$.  Determinants of bounded-degree monomials force
+their offset points onto an algebraic curve.  Nonlinear components
+have $o(B)$ grid points, while a line containing many groups must be
+an exact alignment.  After removing these few groups, the surviving
+coordinates have small odd kernels and the half-count machinery makes
+their centres rare.  The argument never enumerates the auxiliary curve
+or a chosen relation subspace.
+
+For each fixed arity, the companion also uses an anchored version:
+after coordinate regularization, each active anchor value meets only
+a fixed number of minimal prime supports. Confinement removes the
+large supports at a cost of $o(B)$ anchor coordinates. Two remaining
+small kernels make that centre rare. On a primitive family this
+works at every window, giving $N^\varepsilon$ dense hosts and the
+fixed-size weights in Proposition~\ref{p13:transfer:primitive}.
+The arity and density proportion are fixed before $N$.
+The same section completes the stronger pair profile of
+Proposition~\ref{p1:arith:hosts} without using that profile as an input.
+
+The two forms needed to partition compatible triples are as follows.
+The companion also proves the primitive-triple and dense-pair versions,
+Theorem~\ref{p13:conf:dense-primitive} and
+Corollary~\ref{p13:conf:dense-pairs}.
+
+\begin{proposition}[Dense triples with weak proper intersections]
+\label{p13:conf:near-primitive}
+Fix \(\eta>0\) and \(0<\theta<\eta/100\).
+Admissible triples satisfying
+\[
+ \rho_{\mathrm{rel}}(T)\ge\eta B,\qquad
+ d_{xy}\le\theta B\quad\text{for every pair}
+\]
+have \(O_{\eta,\theta,C,\varepsilon}(N^\varepsilon)\)
+hosts and total homogeneous mass
+\(O(N^{-2+\theta+\varepsilon})\).
+\end{proposition}
+
+Its proof is given in Section~\ref{p14:comp:confinement:near}.
+
+\begin{proposition}[A strong nonaligned pair in a triple]
+\label{p13:conf:strong-profile}
+Fix \(\theta,\sigma,\varepsilon>0\).
+Compatible connected triples with a nonaligned pair
+of rank at least \(\theta L\), and
+\(\rho_{\mathrm{rel}}(T)\le\sigma L\), have total
+joint mass
+\[
+ O_{\theta,\sigma,C,\varepsilon}
+       \bigl(N^{-\min\{3/2,\,3-\sigma\}+\varepsilon}\bigr).
+\]
+\end{proposition}
+
+Its proof is given in Section~\ref{p14:comp:confinement:strong}.
+
+
+
+The last proposition preserves the actual conditional
+probabilities. Replacing them by independent weights
+would lose the large-rank case. What remains is a
+pointwise bound on the possible pair ranks and a separate
+calculation for rationally aligned triples.

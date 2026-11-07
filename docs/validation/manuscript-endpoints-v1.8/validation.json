@@ -149,5 +149,13 @@
     "path": "docs/editorial-proposals/2026-11-07/historical-change-index.json",
     "sha256": "3f81a29b6276c720b9600d58feb2f6a3dc65db3006bce0f82072c5a24583298c",
     "scope": "Mechanical location grouping of1004 historical proof-development entries; not1002 scientific manuscript amendments."
+  },
+  "condensed_editorial_preview": {
+    "path": "docs/editorial-proposals/2026-11-07/simplification/final-validation.json",
+    "sha256": "32839c4a2f951d98169b661a69077de451f8436bf09f461b2b81d0df9464169c",
+    "source_lines_saved": 120,
+    "numbered_blocks_preserved_after_clarification_stage": 167,
+    "pages_saved": 1,
+    "frozen_sources_changed": false
   }
 }

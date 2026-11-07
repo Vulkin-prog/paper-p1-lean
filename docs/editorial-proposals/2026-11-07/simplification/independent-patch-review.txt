@@ -1,0 +1,101 @@
+P1 — REVUE INDÉPENDANTE DU PATCH DES HUIT COUPES
+Statut : complete_frozen
+
+Patch : docs/editorial-proposals/2026-11-07/simplification/concise-proofs.patch
+SHA256 : dc001c20d5fc8a63fbc676ae32cdf580f88f1ced5e7bd1b9fdd42864ddaf543f
+Source documentaire : 389332f3113fbdfcbdc58223d1c4f3227d9840ae
+Preuves : 7bfc953cd6092eebfbae5f24aeb72b7180693537
+
+Avis : patch mathématiquement acceptable ; aucune correction nécessaire, aucune lacune confirmée.
+120 lignes source retirées. Les167 blocs numérotés et552 occurrences de labels sont conservés.
+Les7 couples d’empreintes avant/après et les48 empreintes du manifeste concordent.
+Chebyshev reste verbatim ; tous les nouveaux renvois existent.
+
+Aucun Lean/Lake, replay, PDF ou Palomar exécuté dans cette revue. Les sources, le dépôt et les anciens rapports restent inchangés.
+
+SIM01 — main_sections/exact_transfer.tex:237–261
+Verdict : adequate
+Le renvoi vise le paragraphe ancré complet enT8, resté intact(75–190). Ce paragraphe construit les hypothèses physiques, établit le compte d’hôtes sans supposer15.5, puis donne les poids exacts. La nouvelle preuve conserveρ≤min d_x≤L, p_x≤2p, la séparation àξL, les marges fixées et le passage aux joints/centrés originaux. Les grands ordres sont expressément exclus de ce raccourci.
+Corrections nécessaires : aucune.
+
+SIM02 — companion_sections/pair_rigidity.tex:25–32
+Verdict : adequate
+T1.1 s’applique aux m offsets distincts de cardinalité paire positive, avecR=B≥2 etx≥2B. La borne64B≤(B+1)^5 transforme x≤(64B)^m en contradiction avecx>(B+1)^{12m}. Seuil imprimé inchangé ; aucune hypothèse supplémentaire.
+Corrections nécessaires : aucune.
+
+SIM03 — companion_sections/pair_rigidity.tex:43–77
+Verdict : adequate
+La partie locale deT1.3 couvreV_x, H=10B, B comparable àlogN et valeurs dans[N/2,3N] pourN assez grand. Aucun filtrage régulier n’est ajouté. Le paragraphe Chebyshev est conservé verbatim(51–55) avant la dérivation deMertens(63–77) ; « above » garde un antécédent correct.
+Corrections nécessaires : aucune.
+
+SIM04 — companion_sections/confinement.tex:201–221
+Verdict : adequate
+ηB≥ηL raccorde exactement le seuil dense imprimé au compte générique. La masse homogène réelle est calculée avec2^{ρrel}∏2^{-d_x}, puis≤(2p)^3 2^L≪N^{-2}, sans utiliser les marginales originales éventuellement nulles. La clause centrée globale utilise le poids exact primitif et la borne complète àr=3, non une restriction dense. La clarification homogène/affine antérieure(213–221) reste intacte.
+Corrections nécessaires : aucune.
+
+SIM05 — companion_sections/exact_transfer.tex:205–210
+Verdict : adequate
+Le rappel H=C_DB de l’énoncé clarifié est présent. T6.1 compteX_q au seuil positifq. Pourq=0, X0⊆X_{ε/2} et une erreurε/2 donnent N^{ε/2+ε/2}=N^ε. Tous ces paramètres sont fixes avantN ; le cas limite n’est pas supprimé.
+Corrections nécessaires : aucune.
+
+SIM06 — main_sections/introduction.tex:253–266
+Verdict : adequate
+Le texte conserve h fixé, la première hauteur omiseh+1, l’ordreLN^{-h/(h+1)}, la distinction avec4/3 exact, le pouvoir41/30 et le témoin compatible10:12:15. Les définitions et les théorèmes cités restent dans les sections techniques, et la table comparative(267–308) est préservée. Aucune conclusion supplémentaire ni perte de résultat.
+Corrections nécessaires : aucune.
+
+SIM07 — companion_sections/guide.tex:143–154
+Verdict : adequate
+Le guide abrégé nomme les positions, leur lemme d’arrivée et leur dépendance à la reconstruction régulière des sectionsT14–T17. Le paragraphe103–113 conserve aussi suppression et estimations pondérées. La distinction conséquence/entrée du théorème scalaire et le caractère direct de l’identité de moyenne sont maintenus.
+Corrections nécessaires : aucune.
+
+SIM08 — companion_sections/closure.tex:494–502
+Verdict : adequate
+La proposition19.2 et son calcul indépendant dans discussion.tex donnent la norme3/e ; C(1)=norme/4=3/(4e). Dans la formule de paire, λ=1 etL≡0 mod3 donnent(r_N+2)/18=1/9 ; le produit est1/(12e). Le label de l’exemple et l’équivalence restent. Le renvoi inverse depuis discussion.tex vers l’exemple est illustratif, sans circularité de preuve.
+Corrections nécessaires : aucune.
+
+PRÉCISIONS ÉDITORIALES FACULTATIVES
+companion_sections/confinement.tex:207 — « complete fixed-size weight bound » est raccordé correctement par le contexte ; « complete fixed-size exact-weight bound » rendrait le poids original encore plus explicite.
+The complete fixed-size exact-weight bound is $O(N^{-3/2+\varepsilon})$.
+
+main_sections/introduction.tex:254 — Le théorème cité fixe bien un entier h. Réinsérer « integer » dans l’annonce rend ce domaine entièrement explicite après la suppression de sa définition.
+For every fixed integer channel height $h\ge3$,
+
+EMPREINTES DES SEPT FICHIERS
+companion_sections/exact_transfer.tex
+Clarifié : 430433247a93dd9317cdb435c5ecfd5475b29d639ce446c3d00d99dd769d3ad9
+Proposé : e206bbb8c7a5fd270d07a9e4e20a33b450ad02a6f59a4dfe57647c9fa80b0e19
+Gain : 3 lignes.
+
+companion_sections/closure.tex
+Clarifié : 0da38b581952f72ce6e7ef518345b69e6118dc8a85048cd9cd85d24ea8e9b9f9
+Proposé : 6e037bed0465effec4d0e9b8a0ee85952097da211302519344bfcbbe7f952658
+Gain : 8 lignes.
+
+companion_sections/pair_rigidity.tex
+Clarifié : 5d694892973d4e55dc66d78f72864ffafd28305ad924dbedb3270fbedc23461d
+Proposé : ce79bf4e820468bebbcfd81a5d5ee5547b780f19d4af0ccb1797e253da5cb76a
+Gain : 40 lignes.
+
+companion_sections/confinement.tex
+Clarifié : dc8e6728fb0bd7ab30c07b2ce5402ac3625eddf0b835cf8eac98b2f070270c40
+Proposé : 474b3ca1ae3c0400495204bbd083ed355ffe80faaff413f9522d411e56ef8bf0
+Gain : 5 lignes.
+
+companion_sections/guide.tex
+Clarifié : 6542739ab0ce206e83572fff947d8b42b81c17a56ca6f67a9de9678a1fc3e030
+Proposé : 7cb9f0acc3d24532f75787eab9c6708e7f80ff167461057cc3dbc5a943daa55e
+Gain : 24 lignes.
+
+main_sections/exact_transfer.tex
+Clarifié : 966467e8ec52ccda0a0d80206ed00387155e53ce154bd27179a65c7dec9b9985
+Proposé : 53f2fd71ec705c29336f62bcc18a16e7a3ab8fa3fb40198332de24383dfb3770
+Gain : 21 lignes.
+
+main_sections/introduction.tex
+Clarifié : 26cc8a42bd9c828941d1ff260c7e637165654602a79bc7fe98c05d9e925db5a9
+Proposé : 62807c66e81d826c97803b48ffe62b253d2cd9ccea0dba110af95c1a86e52ac5
+Gain : 19 lignes.
+
+LIMITE
+Ce rapport porte sur le patch dc001c20 et les48 sources du manifeste indiqué, après les clarifications antérieures ; il ne remplace ni une compilation, ni une relecture de tout le manuscrit au-delà des raccords affectés.
+La QA de mise en page des deuxPDF est effectuée séparément par le parent.

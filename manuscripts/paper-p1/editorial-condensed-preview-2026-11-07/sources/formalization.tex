@@ -1,0 +1,73 @@
+\clearpage
+\section*{Formalization and the version 1.8 revision}
+\addcontentsline{toc}{section}{Formalization and the version 1.8 revision}
+
+The associated repository
+\url{https://github.com/Vulkin-prog/paper-p1-lean}
+contains the Lean development for the article and its companion,
+checked with Lean~4.36.0-rc2 and the pinned Mathlib revision
+\texttt{9d581dfff2e41de989072ea63abf3daf69311520}.
+Version~1.8 is a working draft integrating selected strengthened
+estimates and shorter proofs already present in that development.
+It preserves the 167 numbered-result labels and their numbering.
+The original version~1.6 sources remain preserved byte for byte.
+
+\paragraph{The two statement corrections introduced in version 1.7.}
+The original inventory has 165 valid statements with checked proofs
+and two false original formulations. Their corrected replacements
+are kept separate from those originals. These corrections are retained
+here; the further strengthenings in version~1.8 are not additional
+claims that the original statements were false.
+
+In Lemma~\ref{p1:arith:asymmetric}, the alignment radius follows the
+old enclosing interval $X+[-DB,DB]$: the exclusion is
+$|rz-sX|\le D(r+s)B$. The centres satisfy
+$N\le X<N+QN$, $z\in I_N$, with fixed $Q\ge1$, and the cutoff satisfies
+$(2D+1)B\le H\le D_{\rm cut}B$. The weight $2^{\delta^*}-1$ and the
+power $31/24$ are unchanged. A shifted $2:3$ family with
+$L=3k$, $B=3k+1$, $X=2t$, $z=3t+3B$ and
+$U_X=[X,X+3B]\cap\Z$ has $\delta^*\ge k-1$. It is nonaligned at
+radius one for $t>5B^4$ but aligned at radius two; its dyadic mass
+of order $N^{4/3}$ refutes the original radius-one formulation.
+Compressed-source applications use the same enlarged radius on both
+sides of the alignment partition.
+
+In Lemma~\ref{p13:short:quadratic}, the counting exponent is capped:
+\[
+ c_2(\beta,\delta)
+   =\min\{1,\beta-\delta,\max(\beta/2-\delta,1-\beta/2)\}.
+\]
+Its affine upper bound is then valid for every real $\beta,\delta$.
+The uncapped expression still gives a valid counting estimate, but
+its exact affine comparison requires $\beta-2\delta\le2$ when
+$\delta\ge0$. This restriction is necessary on actual positive-divisor
+data: squarefree consecutive $N,N+1$ with $h=e=1$ give
+$\beta=\log(N(N+1))/\log N>2$ and $\delta=0$.
+The extra entry $1$ is supplied by the trivial $O(N)$ count.
+
+\paragraph{Scientific content and proof scope.}
+The fixed-arity anchored confinement and primitive weights are proved
+in Section~\ref{p14:comp:confinement} and
+Proposition~\ref{p13:transfer:primitive}. The ordinary smooth-window
+census is stated and proved near Proposition~\ref{p1:limits:all-anchors};
+the finite cylinder refinements follow
+Proposition~\ref{p1:limits:cylinder}; the exact reference-field
+identities accompany Lemma~\ref{p1:limits:vector-reference}.
+Their proofs retain the distinction between actual arithmetic
+indicators and independent reference arrivals, and between fixed
+orders and separately controlled growing ranges. The general sharp
+short-average theorem, the Dickman relative-density asymptotic and
+an unrestricted general surface estimate are not additional claims
+of this revision.
+
+\paragraph{Reproducibility.}
+The repository records the original, corrected and strengthened
+statements, their precise Lean declarations and validation sources.
+The audited proofs use only the kernel axioms
+\texttt{propext}, \texttt{Classical.choice} and \texttt{Quot.sound}.
+Finite diagnostic computations and kernel checking have distinct
+roles; neither replaces checking that a formal statement represents
+the printed mathematical claim. The mathematical change ledger
+also retains intermediate proof constructions, which are not all
+separate scientific contributions.
+This working draft has no Palomar registration identifier.

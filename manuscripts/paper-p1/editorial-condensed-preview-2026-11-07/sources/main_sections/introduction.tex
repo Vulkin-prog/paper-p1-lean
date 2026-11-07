@@ -1,0 +1,802 @@
+\section{Introduction}
+\label{p1:intro}
+
+A long constant run in a sequence of independent fair signs starts
+with probability \(2^{-L}\). There are \(N\) possible starts in a
+dyadic interval, so the scale \(L=\log_2 N+O(1)\) produces a bounded
+expected count. Complete multiplicativity preserves this scale but
+creates relations between distant windows. For example, the signs
+at \(2u\) and \(3u\) inherit the same sign at \(u\). The question
+addressed here is how these arithmetic relations first alter the
+Poisson law of the total number of runs.
+
+The leading deviation comes from a sparse family of pairs and has
+size \(L N^{-2/3}\). Once the exact pair correction is retained,
+the error has optimal power \(N^{-4/3}\). Its obstruction is the
+product of two pair interactions. Triple interactions are smaller:
+the third factorial cumulant has optimal power \(N^{-41/30}\).
+Identifying a rational pair coefficient is a two-window calculation.
+Controlling the complete law also requires estimates uniform in
+the number of windows, and arithmetic restrictions on how much
+information three windows can share.
+
+\subsection{Model and main results}
+\label{p1:intro:model}
+
+Choose independent random variables \(f(\ell)\), indexed by primes
+\(\ell\), with
+\[
+ \P(f(\ell)=1)=\P(f(\ell)=-1)=\tfrac12,
+ \qquad
+ f(n)=\prod_{\ell}\! f(\ell)^{v_\ell(n)}\quad(n\ge1).
+\]
+Thus \(f\) is completely multiplicative and \(f(n^2)=1\).
+Fix \(C>0\). Throughout the paper \(N\ge2\) and \(L\ge1\) are integers,
+\begin{equation}
+ I_N=[N,2N)\cap\Z,\qquad
+ |L-\log_2 N|\le C,\qquad B=L+1,\qquad
+ p=2^{-L},\qquad \lambda_N=Np.
+ \label{p1:eq:critical}
+\end{equation}
+All logarithms without a subscript are natural. In particular,
+\(\lambda_N\) stays in a compact subinterval of \((0,\infty)\);
+it need not converge. Define
+\begin{equation}
+ J_x=\ind_{\{f(x-1)=-f(x),\ 
+             f(x)=f(x+1)=\cdots=f(x+L-1)\}},
+ \qquad Z_N=\sum_{x\in I_N}J_x .
+ \label{p1:eq:model}
+\end{equation}
+The left boundary condition ensures that a run is counted once,
+at its start. Both signs of the run are included.
+The individual probabilities \(\E J_x\) are not assumed equal to \(p\).
+
+For a finite signed measure \(\nu\) on \(\N=\{0,1,2,\ldots\}\), set
+\(\|\nu\|_1=\sum_{k\ge0}|\nu\{k\}|\).
+Our total variation convention for probabilities is
+\(\TV(P,Q)=\frac12\|P-Q\|_1\).
+Write
+\[
+ \Pi_\mu=\Pois(\mu),\qquad
+ \Delta=\delta_1-\delta_0,\qquad
+ \mu_N=\E Z_N,\qquad
+ \alpha_N=\Var(Z_N)-\mu_N .
+\]
+Products of measures are convolutions, and
+\(\Delta^{*0}=\delta_0\). For \(r\ge1\), the falling factorial is
+\((z)_r=z(z-1)\cdots(z-r+1)\), with \((z)_0=1\).
+The second-order reference is
+\begin{equation}
+ Q_{\mu,\alpha}
+    =\Pi_\mu+\frac{\alpha}{2}\Pi_\mu*\Delta^{*2}.
+ \label{p1:eq:Q}
+\end{equation}
+Its total mass is one. Its positivity in the range needed below
+will follow from an exact criterion.
+
+\begin{theorem}[Optimal quadratic Poisson--Charlier approximation]
+\label{p1:thm:main}
+Fix \(C>0\). For every \(\varepsilon>0\), there are
+positive constants \(c_{C,\varepsilon}\), \(C_{C,\varepsilon}\)
+such that, for all sufficiently large \(N\), uniformly over
+\((N,L)\) satisfying \eqref{p1:eq:critical},
+\begin{equation}
+ c_{C,\varepsilon}N^{-4/3-\varepsilon}
+ \le \left\|\Law(Z_N)-Q_{\mu_N,\alpha_N}\right\|_1
+ \le C_{C,\varepsilon}N^{-4/3+\varepsilon}.
+ \label{p1:eq:main}
+\end{equation}
+The proof is unconditional.
+Moreover, \(\mu_N-\lambda_N=O_{C,\varepsilon}(N^{-1+\varepsilon})\).
+The reference \(Q_{\mu_N,\alpha_N}\) is a probability measure for
+all sufficiently large \(N\).
+\end{theorem}
+
+The exponent \(4/3\) is optimal with an arbitrary fixed power
+margin. The theorem does not determine a logarithmic factor or
+a leading constant for this remainder. Its parameters are the
+exact mean and second factorial cumulant. Replacing \(\mu_N\)
+by \(\lambda_N\) costs \(O(N^{-1+\varepsilon})\), so this
+replacement gives a different precision.
+
+The arithmetic calculation in Theorem~\ref{p1:arith:pairs} gives
+the first two finite channel contributions to \(\alpha_N\),
+with error \(O(N^{-4/5+\varepsilon})\).
+Section~\ref{p13:channels:section} extends this calculation
+to every fixed height. In particular, if \(r\) denotes the residue
+of \(L\) modulo \(3\), then
+\begin{equation}
+ \alpha_N\sim
+  \frac{r+2}{18\,2^{r/3}}\lambda_N^{5/3}L N^{-2/3}.
+ \label{p1:eq:alpha-leading}
+\end{equation}
+The ratio in this equivalent tends to one along the full critical
+band, with the displayed moving parameters retained.
+
+\begin{corollary}[Exact total variation scale]
+\label{p1:cor:tv}
+Under the same assumptions,
+\begin{equation}
+ \TV(\Law(Z_N),\Pi_{\lambda_N})
+   =\frac{\alpha_N}{4}
+       \|\Pi_{\lambda_N}*\Delta^{*2}\|_1
+       +O_{C,\varepsilon}(N^{-1+\varepsilon}).
+ \label{p1:eq:tv-main}
+\end{equation}
+Consequently,
+\begin{equation}
+ \TV(\Law(Z_N),\Pi_{\lambda_N})
+ \sim
+ \frac{r+2}{72\,2^{r/3}}\,
+ \lambda_N^{5/3}
+ \|\Pi_{\lambda_N}*\Delta^{*2}\|_1\,
+ L N^{-2/3}.
+ \label{p1:eq:tv-equiv}
+\end{equation}
+With \(\Pi_{\mu_N}\) as the uncorrected reference, the
+first formula holds with \(\mu_N\) in the difference norm
+and error \(O_{C,\varepsilon}(N^{-4/3+\varepsilon})\);
+the equivalent \eqref{p1:eq:tv-equiv} is unchanged.
+\end{corollary}
+
+Here the exponent \(2/3\), the factor \(L\), and the leading
+coefficient are exact for the scalar total variation distance
+to either of the two displayed Poisson references.
+These statements compare with the two specified Poisson means.
+They do not minimize total variation over all possible means.
+
+\begin{example}[A numerical coefficient without a moving phase]
+\label{p1:ex:unit}
+Take \(N=2^{3k}\) and \(L=3k\). Then \(\lambda_N=1\) and
+\(r=0\). Since
+\[
+ \|\Pi_1*\Delta^{*2}\|_1=\frac3e,
+\]
+Corollary~\ref{p1:cor:tv} becomes
+\begin{equation}
+ \TV(\Law(Z_N),\Pi_1)
+       \sim \frac{1}{12e}\,L N^{-2/3}.
+ \label{p1:eq:unit-example}
+\end{equation}
+The factor \(1/12e\) combines an arithmetic coefficient \(1/9\)
+with the second-difference norm \(3/e\) and the factor \(1/4\)
+from the cumulant and total variation conventions.
+\end{example}
+
+An entirely explicit reference has a different optimal rate.
+Retain the complete \(2:3\) and \(3:4\) channel sums, and set
+\begin{equation}
+ \begin{aligned}
+ \widehat\alpha_N
+   &=\frac{\lambda_N^2}{3N}\{S_{2,3}(L)+S_{3,4}(L)\},\\
+ S_{a,b}(L)
+   &=\sum_{d=1}^{\lfloor L/b\rfloor}A_d(L-1-ad)(L-1-bd).
+ \end{aligned}
+ \label{p1:eq:alpha-explicit}
+\end{equation}
+where \(A_1=1\) and \(A_d=2^{d-2}\) for \(d\ge2\); an empty
+sum is zero. The closed formulas
+\eqref{p1:arith:S23}--\eqref{p1:arith:S34} evaluate these sums.
+
+\begin{corollary}[An explicit probability reference]
+\label{p1:cor:explicit}
+For every \(\varepsilon>0\), uniformly in the critical band,
+\begin{equation}
+ \left\|\Law(Z_N)-\Pi_{\lambda_N}
+       -\frac{\widehat\alpha_N}{2}
+          \Pi_{\lambda_N}*\Delta^{*2}\right\|_1
+       \ll_{C,\varepsilon}N^{-4/5+\varepsilon}.
+ \label{p1:eq:explicit-law}
+\end{equation}
+For all sufficiently large \(N\), the reference
+\(Q_{\lambda_N,\widehat\alpha_N}\) is a probability measure.
+Its mass at \(k\ge0\) is
+\begin{equation}
+ e^{-\lambda_N}\frac{\lambda_N^k}{k!}
+ \left[
+  1+\frac{\widehat\alpha_N}{2}
+       \left\{\frac{k(k-1)}{\lambda_N^2}
+                    -\frac{2k}{\lambda_N}+1\right\}
+ \right].
+ \label{p1:eq:explicit-masses}
+\end{equation}
+All parameters in this reference are determined by \(N,L\).
+\end{corollary}
+
+\begin{proof}
+Theorem~\ref{p1:arith:pairs} gives
+\(\alpha_N-\widehat\alpha_N=O_{C,\varepsilon}(N^{-4/5+\varepsilon})\).
+Since \(\|\Pi_{\lambda_N}*\Delta^{*2}\|_1\le4\), replacing the
+coefficient costs at most \(2|\alpha_N-\widehat\alpha_N|\).
+Apply Theorem~\ref{p1:thm:main}.
+The replacement of \(\mu_N\) by \(\lambda_N\) costs
+\(O(N^{-1+\varepsilon})\), which is absorbed here.
+The finite formulas give
+\(\widehat\alpha_N\sim\alpha_N>0\) and
+\(\widehat\alpha_N\to0\), uniformly in the band.
+The positivity criterion in Lemma~\ref{p1:close:positivity}
+therefore applies, since \(\lambda_N\) remains in a compact
+subinterval of \((0,\infty)\).
+\end{proof}
+
+The exponent \(4/5\) in \eqref{p1:eq:explicit-law} is optimal
+for this two-channel reference. Its leading error is half the
+height-five contribution times
+\(\|\Pi_{\lambda_N}*\Delta^{*2}\|_1\), as proved in
+Corollary~\ref{p13:channels:height-five}.
+The explicit parameters do not supply a numerical value of
+the constant in the remainder or a numerical threshold for \(N\).
+The same two-channel coefficient also gives a positive Hermite
+reference; see Corollary~\ref{p1:cor:compound}.
+
+\paragraph{The probability of no retained start.}
+Evaluating \eqref{p1:eq:explicit-law} at zero gives the immediate
+consequence
+\begin{equation}
+ \P(Z_N=0)=e^{-\lambda_N}
+       \left(1+\frac{\widehat\alpha_N}{2}\right)
+       +O_{C,\varepsilon}(N^{-4/5+\varepsilon}),
+ \label{p1:eq:no-start}
+\end{equation}
+because \((\Pi_{\lambda_N}*\Delta^{*2})\{0\}=e^{-\lambda_N}\).
+The positive correction shows an effect of the arithmetic pairs
+that is absent from the mean alone. Here \(Z_N=0\) means that
+no retained run start lies in \(I_N\). A run starting before
+\(N\) may still intersect the interval, and a run starting in
+\(I_N\) may continue beyond \(2N\).
+With exact parameters, the more precise form is
+\[
+ \P(Z_N=0)=e^{-\mu_N}(1+\alpha_N/2)
+                  +O_{C,\varepsilon}(N^{-4/3+\varepsilon}).
+\]
+
+\paragraph{Two further optimal powers.}
+For every fixed channel height $h\ge3$,
+Theorem~\ref{p13:channels:hierarchy} gives the error of the
+explicit quadratic reference retaining all channels through height $h$:
+the first omitted height $h+1$ contributes order
+$LN^{-h/(h+1)}$, with an explicit moving coefficient.
+These finite-reference powers differ from the optimal power $4/3$
+for exact cumulants; $h$ is fixed before $N$.
+
+Theorem~\ref{p13:third:main} identifies the optimal power $41/30$
+of the third factorial cumulant. Its positive lower bound comes
+from genuine compatible triples of type $10:12:15$,
+and its upper bound includes all triples.
+No full asymptotic constant for that cumulant is claimed.
+\begin{table}[!htb]
+\centering
+\small
+\caption{References and established precision in the critical band.
+Power bounds allow an arbitrary fixed \(\varepsilon>0\).}
+\label{p16:tab:references}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{0.25\textwidth}>{\raggedright\arraybackslash}p{0.20\textwidth}>{\raggedright\arraybackslash}X@{}}
+\toprule
+Reference or observation & Parameters & Established precision\\
+\midrule
+Uncorrected Poisson
+& \(\lambda_N\) or \(\mu_N\)
+& Explicit equivalent of order \(LN^{-2/3}\)
+(Corollary~\ref{p1:cor:tv}).\\[4pt]
+Exact quadratic \(Q\)
+& \(\mu_N,\alpha_N\)
+& Optimal power \(4/3\); no full remainder equivalent
+(Theorem~\ref{p1:thm:main}).\\[4pt]
+Nominal-mean quadratic \(Q\)
+& \(\lambda_N,\alpha_N\)
+& Upper bound \(O(N^{-1+\varepsilon})\); comparable to
+\(|\mu_N-\lambda_N|\) when this bias is nonzero
+(Proposition~\ref{p13:optimal:nominal}).\\[4pt]
+Quadratic with channels through height \(h\)
+& \(\lambda_N,\widehat\alpha_N^{(\le h)}\)
+& Equivalent of order \(LN^{-h/(h+1)}\) from the first
+omitted height, for each fixed \(h\ge3\)
+(Theorem~\ref{p13:channels:hierarchy}).\\[4pt]
+Exact Hermite
+& \(\mu_N,\alpha_N\)
+& Upper bound \(O(N^{-4/3+\varepsilon})\); no matching
+optimal lower bound established here
+(Corollary~\ref{p1:cor:compound}).\\[4pt]
+Unsigned positional field
+& Individual site and edge intensities
+& Upper bound \(O(N^{-4/5+\varepsilon})\) for each fixed
+polynomial weight in the total count; signs and excess lengths are not retained
+(Lemma~\ref{p1:limits:vector-reference}).\\
+\bottomrule
+\end{tabularx}
+\end{table}
+\FloatBarrier
+
+\subsection{Why a pair has the leading size}
+\label{p1:intro:mechanism}
+
+The dyadic geometry selects the first interior channel.
+If \(x\in[N,2N)\), then \(2x\notin[N,2N)\), so the
+ratio \(1:2\) has no macroscopic family of interior placements;
+offsets of size \(O(L)\) leave only a boundary contribution.
+The first interior channel is \(2:3\), as the general interval
+calculation in Proposition~\ref{p1:consequences:macro} confirms.
+
+Consider \(L=3m\), and centres \(x=2t\), \(y=3t\) in \(I_N\).
+For \(0\le j\le m-1\), the values \(2(t+j)\) and \(3(t+j)\)
+belong to their respective windows. For \(j\ne k\),
+\[
+ f(2(t+j))f(2(t+k))
+       =f(3(t+j))f(3(t+k)).
+\]
+There are \(m-1\) independent relations of this form. When these
+are the only relations of the pair, its joint probability is
+\[
+ \P(J_{2t}=J_{3t}=1)=2^{-2L+m-1},
+\]
+rather than \(2^{-2L}\). The preceding signs do not occur in these
+relations, so the two run-start prescriptions are compatible.
+The arithmetic section proves that additional relations form a
+smaller exceptional family.
+
+Allowing the offset \(2y-3x\) to range over its admissible interval
+of length \(O(L)\) produces \(O(NL)\) pairs. A typical joint weight
+on this channel is \(N^{-5/3}\). Their total weight is therefore
+of order \(L N^{-2/3}\). The analogous \(3:4\) channel has joint
+weight \(N^{-7/4}\) and total weight \(L N^{-3/4}\).
+Summing the exact endpoint and parity conditions yields
+\eqref{p1:eq:alpha-leading} and the finite coefficient in
+Theorem~\ref{p1:arith:pairs}.
+
+The full finite contribution of \(2:3\) matters even at the precision
+of Corollary~\ref{p1:cor:explicit}: its next term, of order \(N^{-2/3}\),
+is larger than the leading \(3:4\) term. Thus the second channel
+is isolated by subtracting the entire \(2:3\) expression.
+The two finite expressions have a combined phase modulo \(12\);
+only the leading equivalent has phase modulo \(3\).
+
+\paragraph{The ternary witness and the residual quadratic error.}
+For the centres \(10t,12t,15t\), multiplication by \(6,5,4\),
+respectively, gives the common centre \(60t\) and offset steps
+\(6,5,4\). Their rational nullity is
+\[
+ \rho_L=\left\lfloor\frac{L-1}{6}\right\rfloor
+       +\left\lfloor\frac{L-1}{3}\right\rfloor
+       +\left\lfloor\frac{L-1}{5}\right\rfloor
+       -\left\lfloor\frac{L-1}{15}\right\rfloor
+       =\frac{19}{30}L+O(1).
+\]
+Thus a compatible triple with no additional relations has weight
+of order \(N^{-3+19/30}=N^{-71/30}\); a family of order \(N\)
+translations explains the power \(41/30\).
+Proposition~\ref{p13:third:lower} makes this witness rigorous by
+checking private coordinates, predecessor signs, positivity of the
+centered coefficient, and exceptional hosts. The upper estimate for
+all triples is a separate part of Section~\ref{p13:third:section}.
+In particular, the coefficient \(1/120\) obtained when \(N=2^L\)
+and \(30\mid L\) describes the sum of centered coefficients over
+the selected translation subfamily, not the whole cumulant.
+
+Two pair interactions have the larger scale
+\(\alpha_N^2\asymp L^2N^{-4/3}\). To see where their fourth-order
+term enters, compare the quadratic reference with the Hermite law
+\[
+ H_{\mu,\alpha}=\Pi_\mu*\exp_*(\alpha\Delta^{*2}/2)
+  =Q_{\mu,\alpha}
+   +\frac{\alpha^2}{8}\Pi_\mu*\Delta^{*4}
+   +O_{\ell^1}(\alpha^3).
+\]
+This expansion locates a possible obstruction but does not prove
+that it survives in the true law. Section~\ref{p13:lower:section}
+establishes the noncancellation identity
+\[
+ \kappa_{4,N}+3\alpha_N^2
+   =24K_4^++3\alpha_N^2+O(N^{-3/2+\varepsilon}),
+ \qquad K_4^+\ge0,
+\]
+where \(K_4^+\) sums the centered coefficients over compatible
+connected quadruples. Independently bounded fixed moments turn this
+unbounded Charlier test into the lower norm bound.
+The resulting conclusion is the optimal power \(4/3\),
+with an arbitrary fixed exponent margin, rather than an
+equivalent for the quadratic remainder.
+
+\subsection{From arithmetic counts to a distance between laws}
+\label{p1:intro:strategy}
+
+The proof begins with the exact marginal probabilities
+\(p_x=\E J_x\) on all admissible windows. Local rigidity gives
+\(p_x\in\{p,2p\}\); an impossible event is omitted without
+changing \(Z_N\). An occurrence is an affine condition on the
+prime signs over \(\F_2\). Dependencies are measured between
+the resulting effective spaces, so local relations are not
+counted twice. Independent Bernoulli variables with these
+marginals supply the reference; repeated uses of the same
+event are thereby retained exactly.
+
+The reconstruction has three operations: retain families with a
+calculable joint probability, stop at the first window that leaves
+this class, and count the first excluded configurations.
+Compression treats a dependent pair as one affine block.
+The retained families form a hereditary class. Developing
+\(\delta_{J_x}=\delta_0+J_x\Delta\) only until the first
+excluded prefix gives the exact remainder
+\[
+ \sum_{I\in\partial\mathscr D}\Delta^{*|I|}*\nu_I,
+ \qquad \nu_I\ge0,\qquad \|\nu_I\|_1=q(I).
+\]
+All indicators after that prefix stay inside the positive
+measure \(\nu_I\), with their dependence on the prefix intact.
+Example~\ref{p1:stop:example} makes this point explicit.
+Signed pair terms are subtracted before absolute values are taken.
+
+Theorem~\ref{p13:transfer:reconstruction} proves
+\[
+ \|\Law Z_N-Q_{\mu_N,\alpha_N}\|_1
+ \ll_{C,\varepsilon}N^\varepsilon A_3+N^{-4/3+\varepsilon},
+ \qquad
+ A_3=\sum_{|T|=3}\left|\E\prod_{x\in T}(J_x-p_x)\right|.
+\]
+Its finite-order estimates and its uniform tail are proved
+separately. Small primitive configurations are reduced to
+triples. For large configurations, moderate divisibility
+certificates are counted by congruences; oversized certificates
+have small incoming and outgoing degrees. A component-generating
+function then sums the tail. A bound for each fixed order alone
+would not justify this step.
+
+The arithmetic problem is now to bound \(A_3\) strictly below
+power \(4/3\). The conditional half-power count in
+Theorem~\ref{p13:half:conditional} makes incompatible triple
+activity \(O(N^{-3/2+\varepsilon})\). Compatible triple
+coefficients are nonnegative. Their partition by pair ranks
+reduces the estimate to rational alignments and rare pairs
+without such an alignment.
+
+A nonaligned pair cannot share half of a window's constraints.
+Short relations extracted from its prime-factor equations force
+a common algebraic curve through the two centres. The relations
+also force many integer points in the much smaller offset box.
+The degree-uniform bound of Binyamini, Cluckers, and Novikov
+\cite[Theorem~2, (27)]{binyaminicluckersnovikov2024} gives
+\[
+ \dim(S_x\cap S_y)\le
+       \left(\tfrac23\log2+o(1)\right)L<\tfrac12L.
+\]
+Rational triple geometry then yields
+\(A_3\ll N^{-41/30+\varepsilon}\).
+The gain \(41/30-4/3=1/30\) closes the upper bound after
+choosing a sufficiently small fixed error margin.
+The compatible \(10:12:15\) family proves that \(41/30\)
+is itself the optimal power of the third factorial cumulant;
+this lower bound is a separate conclusion, not an input to
+the upper approximation theorem.
+
+Finally, a fourth Charlier polynomial tests the residual law
+and detects \(3\alpha_N^2\), up to a smaller error and a
+nonnegative compatible contribution. Since
+\(\alpha_N^2=N^{-4/3+o(1)}\), interpolation with independently
+bounded fixed moments proves the lower power in
+Theorem~\ref{p1:thm:main}. Both bounds concern the same
+reference with exact parameters.
+
+The stopping identity applies to any finite family of indicators.
+Its use in another model requires a retained class with a
+calculable reference and a small boundary, together with
+uniform estimates for that boundary. Here these estimates
+come from the arithmetic geometry of the windows.
+
+\subsection{Context and contribution}
+
+The preceding work on this multiplicative model proves a Poisson
+approximation for the entire sign-resolved run field
+\cite[Theorem~1.1]{pouly2026c}. We study the scalar count
+\eqref{p1:eq:model} at a finer scale. Summing the two signs removes
+the leading one-value square bias; the first surviving correction
+comes from relative relations between pairs of windows.
+The sharp coefficient in \eqref{p1:eq:tv-equiv} concerns the
+scalar count. Lemma~\ref{p1:limits:vector-reference} also compares
+the unsigned field \((J_x)_{x\in I_N}\) on its integer grid with
+independent Poisson single arrivals and arrivals along good
+arithmetic pairs. Its error is
+\(O_{C,j,\varepsilon}(N^{-4/5+\varepsilon})\) in \(\ell^1\)
+weighted by \((1+\text{total count})^j\), for every fixed
+\(j\ge0\). This comparison retains positions and justifies
+deletion of doublets; it does not retain run signs or exact
+excess lengths. The target uses individual edge weights
+\(q_e=\P(J_x=J_y=1)\), \(e=\{x,y\}\), which carry information beyond the
+scalar coefficient \(\widehat\alpha_N\).
+No corresponding sharp distance equivalent is asserted for the
+sign-resolved field or for a diffuse spatial point process.
+
+The interaction \(2:3\) already occurs in the lower-bound
+argument of that work \cite[Section~3.6, equation~(3.22)]{pouly2026c}.
+Here we compute its complete contribution after summing the
+offsets and affine signs, retain the secondary channel \(3:4\),
+and control the remaining law below the size of the leading
+correction. Detecting a correlated pair is only the first part
+of that calculation.
+
+For independent sequences, long runs and rare patterns have a
+classical Poisson theory; see Arratia, Gordon, and Waterman
+\cite{agw1990} and Godbole \cite{godbole1991}. Counting starts
+separates occurrences that belong to one long run. In the present
+model, multiplicative relations also couple separated windows.
+Najnudel \cite[Lemma~3.1 and Proposition~6.3]{najnudel2020}
+describes consecutive values through valuation relations and
+proves almost-sure frequencies of fixed words for random
+completely multiplicative functions with root-of-unity values
+at primes. The fixed-length frequency statement does not
+provide the uniform rare-event estimates used here when
+\(L\asymp\log N\). In the binary model, independence of coordinates
+also has to be distinguished from fairness of every coordinate:
+values at squares are deterministic.
+
+A related arithmetic Poisson phenomenon is studied by Basak,
+Nath, and Zaharescu \cite[Theorem~1]{basaknathzaharescu2024}.
+They count blocks of consecutive quadratic non-residues modulo
+a prime, and obtain Poisson frequencies under translation for
+almost all primes in suitable intervals. Their blocks lie in
+an initial polylogarithmic range, with a length tending to
+infinity no faster than four iterated logarithms of the prime
+scale. Their source of averaging and their block count differ
+from the prime-sign probability space and run-start count
+\eqref{p1:eq:model}. In another direction, de la Bret\`eche,
+Wang, and Xu \cite{bretwngxu2026} prove central limit theorems
+for sums of random multiplicative functions on polynomial
+values by counting square products. Their completely
+multiplicative binary model is called extended Rademacher;
+the squarefree-supported Rademacher convention is a different
+model. The shared square-relation tools serve different
+observables in those central limit theorems and in the
+run-counting problem.
+
+Poisson approximation for dependent indicators has a general
+Chen--Stein framework \cite{agg1989}. Refinements of Poisson
+limits include Barbour's asymptotic expansions
+\cite{barbour1987} and the expansions for dissociated variables
+of Barbour and Eagleson \cite{barboureagleson1987}.
+The Poisson--Charlier form and its organization by factorial
+cumulants are classical; see Barbour, Kowalski, and Nikeghbali
+\cite[Sections~5 and~8.1]{bkn2014}, in the author version
+specified in the bibliography. The difference norms used below
+are recorded by Zacharovas and Hwang
+\cite[equation~(2.13) and Remark~4.4]{zacharovashwang2010},
+and the single- and double-jump reference is the Hermite law
+of Kemp and Kemp \cite{kempkemp1965}.
+
+\v{C}ekanavi\v{c}ius and Vellaisamy
+\cite[Theorems~3.1--3.2]{cekanaviciusvellaisamy2015} compare
+quadratic and exponential corrections for locally dependent sums;
+their remainder estimates exhibit the cost of truncating the
+second-cumulant exponential. Their local-dependence hypotheses
+do not cover the arithmetic interactions between separated windows
+used here. Chhaibi, Delbaen, M\'eliot, and Nikeghbali
+\cite[Theorem~3.11]{chhaibietal2020} obtain distance equivalents
+for discrete approximations in a mod-\(\phi\) framework. That
+theorem assumes a parameter tending to infinity and a regularity
+condition on the Fourier residues. Here the Poisson means remain in a compact
+subset of \((0,\infty)\), and the error is controlled by direct
+arithmetic estimates.
+
+Our contribution is the determination of the leading arithmetic
+deviation from Poisson approximation for the scalar run-start
+count, the optimal quadratic remainder power, and the
+hierarchy of errors for explicit channel truncations.
+The third-cumulant exponent and the pair rigidity estimate
+identify which configurations can contribute at those scales.
+The finite stopping identity is a specialization of the abstract
+lace expansion \cite{zeilberger1997}, as detailed in
+Section~\ref{p1:stop:section}.
+Its role here depends on a retained class adapted to the pair
+geometry and on uniform estimates for the boundary of that class.
+Those estimates, together with the arithmetic coefficient, are
+the model-specific work.
+
+\subsection{Proof dependencies and ranges of uniformity}
+\label{p1:intro:dependencies}
+
+This article and its \emph{Technical companion} form one work.
+Numbered references beginning with T refer to the companion;
+other references refer to this article. The companion supplies
+full technical proofs of the inputs stated here and the further
+results on tails, deletion, and conditional geometry. Both
+documents are needed to check the complete proof. The article
+follows the exact-marginal argument directly.
+
+Throughout, the critical-band constant \(C\) and every requested
+error margin \(\varepsilon_0>0\) are fixed before \(N\to\infty\).
+The following map separates the inputs to the upper and lower bounds.
+Each arrow denotes the use of the entries in its own row.
+
+\begin{center}
+\small
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{0.41\textwidth}>{\centering\arraybackslash}p{0.035\textwidth}>{\raggedright\arraybackslash}X@{}}
+\toprule
+Inputs & & Conclusion and uniformity\\
+\midrule
+Fixed-source arithmetic and propagation
+(Sections~\ref{p1:arith:appendix}, \ref{p14:comp:fixed})
+& \(\longrightarrow\)
+& Fixed moments, Theorem~\ref{p1:fixed:moments}.
+The order is fixed; the proof precedes every law approximation.\\[5pt]
+Short-selection moments, conditional half counts, pair rigidity
+(Sections~\ref{p13:short:section}--\ref{p13:rig:section})
+& \(\longrightarrow\)
+& \(A_3\ll N^{-41/30+\eta}\),
+Corollary~\ref{p13:third:activity}.
+All admissible triples are included.\\[5pt]
+Triple activity; fixed connected orders through \(256\);
+separate certificate tails
+(Section~\ref{p13:transfer:section})
+& \(\longrightarrow\)
+& Full-law reconstruction,
+Theorem~\ref{p13:transfer:reconstruction}, and the upper bound
+in Theorem~\ref{p1:thm:main}.\\[5pt]
+Pair profile and fixed-source counts, triple activity,
+conditional extension deficits
+(Lemmas~\ref{p13:transfer:independent-deficit}
+and~\ref{p13:transfer:fixed-deficit})
+& \(\longrightarrow\)
+& The noncancelling quartic identity,
+Lemma~\ref{p13:lower:quartic}.
+It uses these counting estimates, not the reconstruction conclusion.\\[5pt]
+Quartic identity and the independently bounded fixed moments
+& \(\longrightarrow\)
+& The lower bound, Theorem~\ref{p13:lower:optimal}.
+The interpolation order is chosen after \(\varepsilon_0\)
+and remains fixed.\\[5pt]
+Main theorem and the same fixed moments
+& \(\longrightarrow\)
+& Polynomially weighted scalar errors,
+Corollary~\ref{p13:optimal:weighted}; these are consequences.\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+The moments of short selections in Section~\ref{p13:short:section}
+concern multiplicative functions on selected polynomial values.
+Their degree may reach \(c\log\log N\). They are distinct from the
+fixed moments of \(Z_N\) in Theorem~\ref{p1:fixed:moments}.
+The curve degree in Section~\ref{p13:rig:section} has its own
+controlled growing range. Neither estimate is obtained by allowing
+the order in a fixed-moment theorem to grow.
+
+A separate branch retains the regular-set reconstruction in
+Sections~\ref{p14:comp:stopped}--\ref{p1:close:section} of the
+companion. Its weighted estimates give the unsigned positional
+comparison in Section~\ref{p1:limits:positions} and
+Lemma~\ref{p1:limits:vector-reference}, with power \(4/5\).
+The channel hierarchy in Section~\ref{p13:channels:section}
+also keeps its own quantifier: the height \(h\) is fixed.
+
+The quasi-linear pair bound in Proposition~\ref{p1:arith:hosts} is
+proved only after the conditional half-count and confinement; its
+earlier elementary $6/5$ version suffices for the pair-profile branch.
+The fixed-arity anchored argument also gives the stronger primitive
+weights in Proposition~\ref{p13:transfer:primitive}. Its parameters
+$r$ and, in the dense sector, $\eta$ are fixed. These improvements
+do not replace the separate all-cardinality tail or remove the
+two-pair term at the $4/3$ scale.
+
+The cutoff \(256\) is sufficient; no optimality is claimed for it.
+The arithmetic inputs in Sections~\ref{p1:arith:appendix}
+and~\ref{p1:arith:supplement} are part of both reconstruction branches.
+
+\paragraph{Power margins.}
+The strict power savings used in the last stages are recorded below.
+Each margin compares complete contributions, after coefficient choices,
+propagation and rank factors have been included.
+\begin{center}
+\small
+\begin{tabularx}{\textwidth}{@{}Xcl@{}}
+\toprule
+Comparison & Exact margin & Location\\
+\midrule
+Nonaligned target above a rational pair versus dominant triples
+& $11/8-41/30=1/120$
+& \eqref{p13:third:unaligned-target-cost}\\[4pt]
+Incompatible triples versus the third factorial cumulant
+& $3/2-41/30=2/15$
+& \eqref{p13:activity:kappa-comparison}\\[4pt]
+Third activity versus the quadratic remainder
+& $41/30-4/3=1/30$
+& \eqref{p13:transfer:reconstruction-bound}\\[4pt]
+Low-nullity uniform tail versus the quadratic remainder
+& $27/20-4/3=1/60$
+& \eqref{p13:transfer:low-rank-tail}\\[4pt]
+Quartic signed error versus $\alpha_N^2$
+& $3/2-4/3=1/6$
+& \eqref{p13:lower:positive-quartic}\\
+\bottomrule
+\end{tabularx}
+\end{center}
+The smallest displayed margin is $1/120$. In contrast, two pair
+activities have size $A_2^2\ll N^{-4/3+\eta}$ and are retained at
+the target scale. They have no strict power saving to spend.
+For a prescribed final accuracy $\varepsilon_0>0$, one may choose
+$0<\tau<\min(\varepsilon_0/4,1/960)$ and invoke completed auxiliary
+estimates with total loss at most $\tau$ each. Their own input margins
+are chosen smaller as needed; in a product, divide the allotted loss
+between the factors. Thus the same symbol $\varepsilon$ in successive
+statements never requires the same numerical value at every stage.
+Rank thresholds and fixed geometric degrees have separate roles.
+The fixed connected-activity estimates in reconstruction are used only
+through order $256$; larger cardinalities have the uniform certificate estimate and a factorial
+boundary bound.
+
+\subsection{Notation guide}
+\label{p1:intro:notation}
+
+The following guide distinguishes the sets of integer arguments
+from their spaces of square classes. The full definitions and
+the compatibility conditions are given where each object is used.
+
+\begin{center}
+\small
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{0.29\textwidth}>{\raggedright\arraybackslash}X@{}}
+\toprule
+Notation & Meaning\\
+\midrule
+\(\lambda_N,\mu_N,\alpha_N\)
+& \(N2^{-L}\), \(\E Z_N\), and
+\(\Var(Z_N)-\mu_N\), respectively.\\[3pt]
+\(\widehat\alpha_N\)
+& The explicit two-channel coefficient in
+\eqref{p1:eq:alpha-explicit}, whose first omitted height
+is five.\\[3pt]
+\(\beta_N=\sum_{e\in E_N}q_e\)
+& The positive mass of good pairs in the regular-set branch.
+Its conversion to half
+the factorial cumulant uses the covariance and Bernoulli
+diagonal corrections in Section~\ref{p1:close:section}.\\[3pt]
+\((z)_r\)
+& The falling factorial, with \((z)_0=1\).\\[3pt]
+\(\rho_{\mathrm{rel}}(I),p_x\)
+& The effective relative rank
+\(\sum_{x\in I}\dim S_x-\dim\sum_{x\in I}S_x\)
+and the exact marginal \(\E J_x\).
+They are used from the outset; on the regular set they
+reduce to the homogeneous quantities.\\[3pt]
+\(V_x\), also \(\mathcal V_x\)
+& The set \(\{x-1,\ldots,x+L-1\}\) of integer
+arguments in a window.\\[3pt]
+\(E_x,S_x\)
+& The space of even selections of \(V_x\), and its image
+under prime valuations modulo \(2\).
+On \(G_N\), \(\dim S_x=L\).\\[3pt]
+\(\rho(I)\), \(\rho_*(I)\)
+& In the pair arithmetic, \(\rho(I)=|I|L-\dim\sum_{x\in I}S_x\),
+including local kernels. It equals \(\rho_{\mathrm{rel}}\) on \(G_N\).
+The compatible nullity \(\rho_*\) is the maximum effective nullity
+of a compatible subfamily. Section~\ref{p13:transfer:section}
+explicitly abbreviates \(\rho_{\mathrm{rel}}\) to \(\rho\).\\[3pt]
+\(q(I)\), \(w(I)\), \(W(I)\)
+& \(q(I)=\eta(I)w(I)\), where \(\eta(I)\in\{0,1\}\)
+indicates compatibility and
+\(w(I)=2^{\rho_{\mathrm{rel}}(I)}\prod_{x\in I}p_x\).
+The regular-set companion uses \(W(I)=p^{|I|}2^{\rho(I)}\).\\[3pt]
+\(c(I)\)
+& \(\E\prod_{x\in I}(J_x-p_x)\); on \(G_N\),
+all \(p_x=p\).\\[3pt]
+\(U_e,V_e\)
+& For a pair \(e=\{x,y\}\) in channel \(a:b\),
+\(U_e=b\mathcal V_x\cup a\mathcal V_y\) is a set
+of integer values; \(V_e=S_x+S_y\) is a vector space.\\[3pt]
+\(\mathscr D,\partial\mathscr D\)
+& The retained hereditary class and its boundary of
+first excluded prefixes for the chosen ordering.\\[3pt]
+\(n,\mu\)
+& In the regular-set argument, \(n=|G_N|\) and
+\(\mu=np\); this \(\mu\) is distinct from \(\mu_N\).\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\paragraph{Reading routes.}
+For the statements and their mechanism, read this introduction,
+the complete pair profile in Theorem~\ref{p1:arith:pairs},
+the reconstruction and lower-bound theorems in
+Sections~\ref{p13:transfer:section} and~\ref{p13:lower:section},
+and the consequences in Sections~\ref{p13:optimal:section}
+and~\ref{p13:channels:section}.
+For the proof, follow the article in order and use each explicitly
+identified companion proof when its technical input is needed.
+The companion's opening guide separates those inputs from the
+regular-set reconstruction and the further consequences.
+

@@ -1,0 +1,153 @@
+\section{All triples above finitely many rational pair channels}
+\label{p14:comp:third}
+
+The canonical overlap inequality and the positive $10:12:15$ witness
+are proved in Section~\ref{p13:third:section}.  The remaining technical
+input is uniformity of the upper bound across every triple above a
+fixed finite set of aligned channels, including arithmetically
+exceptional source pairs.  We prove that input here.
+
+\subsection{Proof of Proposition~\ref{p13:third:aligned-family}}
+\label{p14:comp:third:aligned-family}
+
+\begin{proof}
+Fix one channel $a:b$ and orient the source pair $e=\{x,y\}$.
+Choosing $B^{O_{a,b}(1)}$ offsets, write
+$x=at-i_0$, $y=bt-j_0$ and $X=abt$.
+Merge repeated values in $bV_x\cup aV_y$ to obtain
+$U_X\subset X+[-D B,D B]$, where $D$ depends only on the fixed channel.
+Use radius $DB$ for alignment with this compressed source, and choose
+the large-prime cutoff above $(2D+1)B$.  The old centre lies in a fixed
+expanded interval starting at $N$, while the new centre remains in $I_N$,
+as required by the expanded version of Lemma~\ref{p1:arith:asymmetric}.
+Multiplying an even selection by a constant does not change its square
+class, so
+\begin{equation}
+ S_x+S_y\subseteq
+       \operatorname{span}\{v(n):n\in U_X\}.
+ \label{p13:third:true-compression}
+\end{equation}
+This inclusion holds regardless of injectivity on $U_X$.
+The uniform aligned rank bound of
+Lemma~\ref{p1:arith:alignedrank} gives
+\begin{equation}
+ q(e)\leq N^{-\kappa_b+o(1)},\qquad
+                   \kappa_b=2-\frac1b\geq\frac53.
+ \label{p13:third:source-weight}
+\end{equation}
+For fixed height the residual defect is uniform, so the same bound
+includes admissible local rank defects.
+
+\paragraph{Targets not aligned with the compressed source.}
+For $z\notin e$, put
+$\delta=\dim(S_z\cap(S_x+S_y))$.
+Connectedness of $T=e\cup\{z\}$ implies $\delta>0$.
+The inclusion \eqref{p13:third:true-compression} bounds $\delta$ by
+the asymmetric rank loss $\delta^*(X,z)$ of
+Lemma~\ref{p1:arith:asymmetric}.  That lemma permits an arbitrary true
+set $U_X$ of this fixed logarithmic width; it does not require injectivity.
+It gives
+\[
+ \sum_{X,z\ {\rm nonaligned}}(2^{\delta^*(X,z)}-1)
+                         \ll N^{31/24+\varepsilon'}.
+\]
+Since $q(T)=q(e)p_z2^\delta$, $p_z\leq2p$, and
+$2^\delta\leq2(2^{\delta^*}-1)$, these targets have total mass at most
+\begin{equation}
+ N^{-\kappa_b-1+31/24+\varepsilon'+o(1)}
+                     \ll N^{-11/8+\varepsilon}.
+ \label{p13:third:unaligned-target-cost}
+\end{equation}
+The number of source-offset patterns is polynomial in $B$ and is
+absorbed into the exponent margin.
+
+\paragraph{The residual kernel for an aligned target.}
+This sector includes every target aligned at the same enlarged radius
+$DB$.  Enlarging that fixed radius changes only the constants in the
+polynomial offset and height bounds below.
+Write an aligned target as
+$z=(ct+h)/d$, with $(c,d)=1$ and
+$c,d,|h|\leq B^{O_{a,b}(1)}$, as in the proof of
+Lemma~\ref{p1:arith:fixed-channel-rank}.
+Before this final normalization, $U_X$ and $V_z$ each have fixed
+logarithmic width.  Choose $H>C_D B$ larger than both diameters and
+remove the prime rows at most $H$ and those dividing the normalization
+multipliers.  Each remaining prime row meets at most one distinct old
+value and at most one new value.  This uses the fact that repeated
+old values were merged before the target was added.
+
+After the common normalization, merge equal values once more.
+There are at most $3B$ distinct integers, all at height at least a
+constant multiple of $N$ and in an interval of diameter
+$B^{O_{a,b}(1)}$.  The remaining prime rows have weight at most two,
+and leave one variable per unpinned component.  We give the uniform
+residual estimate, since the coefficients $c,d$ need not be fixed.
+
+For a fixed integer $K$, restrict to components of at most $K$ vertices.
+The removed prime rows and a total-parity row form a code on these
+components of redundancy
+\[
+ s\leq\pi(H)+O_{a,b}(\log B)+1=O_{a,b}(B/\log B).
+\]
+A nonzero word in its kernel gives an even square product of distinct
+normalized integers.  Lemma~\ref{p1:arith:runge}, applied with the
+polynomial-in-$B$ diameter just specified, forces it to contain
+$\gg_{a,b}\log N/\log B$ physical vertices and hence
+$\gg_{a,b,K}\log N/\log B$ components.
+If $c_K$ is the number of these components, the Hamming inequality with
+$t\asymp_{a,b,K}\log N/\log B$ gives
+\[
+ \sum_{j=0}^{t}\binom{c_K}{j}\leq2^s,
+ \qquad c_K=O_{a,b,K}(B/\log B).
+\]
+Here $t$ is chosen below half the component minimum distance.
+Components larger than $K$ number at most $3B/K$.
+Choosing $K$ arbitrarily large before $N$ therefore bounds the entire
+value kernel on the distinct normalized set by $o_{a,b}(L)$,
+uniformly over $c,d,h$.
+
+The relevant map factors as
+\[
+ \bigoplus_{v\in T}E_v
+   \longrightarrow\{\text{merged normalized coordinates}\}
+   \longrightarrow\{\text{square classes}\}.
+\]
+Its nullity is at most the nullity of merging plus the residual $o(L)$
+just proved.  Internal defects of the old windows are included in this
+composition and do not require any assumption of good normalization.
+
+\paragraph{Counting the exact coincidences.}
+In the common parameter the physical coefficients are $ad,bd,c$.
+Suppose first that they are distinct.  Divide by their common gcd
+and order them as $u<v<w$.  Unless the parameter belongs to a
+$B^{O_{a,b}(1)}$ endpoint population, dyadic geometry gives $w<2u$.
+Indeed a rational ratio of polynomial height cannot cross two by
+$B^{O(1)}/N$, and equality forces the extreme windows to the two
+dyadic endpoints.
+The lattice calculation \eqref{p13:third:density} and
+Lemma~\ref{p13:third:rational-rank} show that merging loses at most
+$19L/30+O(1)$ dimensions.  The residual estimate therefore gives
+\[
+ \dim(S_x+S_y+S_z)\geq\frac{71}{30}L-o(L),\qquad
+ q(T)\leq N^{-71/30+o(1)}.
+\]
+There are $NB^{O_{a,b}(1)}$ aligned triples of this form, including the
+choices of offsets and rational coefficients.  Their total mass is
+$O(N^{-41/30+\varepsilon})$.
+
+If two physical coefficients are equal, compatibility makes the
+interiors of the corresponding parameter intervals disjoint, since
+distinct compatible starts have separation at least $L$.
+Their combined coincidences with the third lattice are bounded by the
+length of that third interval: at most $L/a+O(1)$ or $L/b+O(1)$ units.
+As $a\geq2$, the total merging nullity is at most $L/2+O(1)$.
+Including the residual, this gives mass $O(N^{-3/2+\varepsilon})$.
+Endpoint populations have only $B^{O_{a,b}(1)}$ source and target
+choices; the bound $q(T)\leq q(e)$ from
+\eqref{p13:third:source-weight} gives $O(N^{-5/3+\varepsilon})$.
+These estimates include exact contacts.  Strict contacts are incompatible
+and do not enter the sum.
+
+The least of the exponents obtained is $41/30$.  Sum over the fixed
+finite family $\mathcal F$ to conclude.
+\end{proof}

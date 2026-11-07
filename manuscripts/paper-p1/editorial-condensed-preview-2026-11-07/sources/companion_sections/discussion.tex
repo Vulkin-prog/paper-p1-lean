@@ -1,0 +1,61 @@
+\section{Norms of Poisson differences}
+\label{p14:comp:poisson-differences}
+
+The following calculation proves Proposition~\ref{p1:discussion:charlier-norm}.
+It fixes both the signed-difference convention and the factor of two between
+$\ell^1$ distance and total variation.
+
+\begin{proof}[Proof of Proposition~\ref{p1:discussion:charlier-norm}]
+Write $v_k=(\Pi_\mu*\Delta^{*2})\{k\}$.  Direct calculation gives
+\[
+ v_k=\pi_\mu(k)-2\pi_\mu(k-1)+\pi_\mu(k-2)
+     =\frac{\pi_\mu(k)}{\mu^2}\bigl((k-\mu)^2-k\bigr).
+\]
+The quadratic has roots $u_-,u_+$ and is strictly negative
+exactly at the integers $a,\ldots,b$.  These form a nonempty
+interval; integer roots contribute zero and are excluded by
+the definitions of $a,b$.  Since $\sum_kv_k=0$,
+\[
+ \begin{aligned}
+ \sum_k|v_k|
+   &=-2\sum_{k=a}^b v_k\\
+   &=2\bigl\{\pi_\mu(a-1)-\pi_\mu(a-2)
+                 +\pi_\mu(b-1)-\pi_\mu(b)\bigr\},
+ \end{aligned}
+\]
+by telescoping.  This proves \eqref{p1:discussion:finite-norm}.
+For $\mu=2$, the quadratic is $(k-1)(k-4)$: the negative
+masses are $v_2=-e^{-2}$ and $v_3=-2e^{-2}/3$.
+Their sum, multiplied by $-2$, gives
+\eqref{p1:discussion:lambda-two}.  The same calculation at
+$\mu=1$ gives the value $3/e$ used in
+\eqref{p1:close:dyadic-example}.
+
+For the general bound, define the normalized Charlier polynomials
+\[
+ C_r(k;\mu)=\sum_{j=0}^r
+       \binom rj(-1)^{r-j}\frac{(k)_j}{\mu^j}.
+\]
+Then $(\Pi_\mu*\Delta^{*r})\{k\}=\pi_\mu(k)C_r(k;\mu)$.
+Their exponential generating function is
+\[
+ \sum_{r\ge0}C_r(k;\mu)\frac{t^r}{r!}
+       =e^{-t}(1+t/\mu)^k.
+\]
+For $P\sim\Pois(\mu)$, the expectation of the product of
+the generating functions with variables $s,t$ is
+\[
+ \E\!\left[e^{-s-t}(1+s/\mu)^P(1+t/\mu)^P\right]
+       =e^{st/\mu}.
+\]
+Coefficient comparison, justified in a neighborhood of
+$(s,t)=(0,0)$ by the Poisson exponential moments, yields
+\[
+ \E[C_r(P;\mu)C_\ell(P;\mu)]
+       =\ind_{\{r=\ell\}}\,\frac{r!}{\mu^r}.
+\]
+Cauchy--Schwarz now gives the second bound in
+\eqref{p1:discussion:general-norm}.  The first follows from
+$\|\Pi_\mu\|_1=1$, $\|\Delta\|_1=2$, and submultiplicativity
+of the convolution norm.
+\end{proof}

@@ -1,0 +1,52 @@
+P1 — SIMPLIFICATION ET ÉLAGAGE : PREMIÈRE PASSE VÉRIFIÉE
+7 novembre 2026
+
+Treize propositions de simplification sont disponibles. Huit sont concrètement
+appliquées dans un aperçu séparé : 120 lignes source retirées, 167 énoncés
+numérotés et 552 occurrences de labels conservés. Les sources restent en anglais.
+
+L’article compte toujours 65 pages ; le compagnon passe de 104 à 103 pages.
+Le gain mesuré est donc d’une page sur les deux documents, à présentation
+comparable. Les coupes retirent surtout des doubles preuves et des répétitions.
+
+Les huit coupes concernent 15.5 (construction ancrée), T9.1 (application de T1.1),
+T9.2 (application de T1.3, Chebyshev conservé), T8.2 (spécialisation de l’argument
+général), la seconde clause de 15.4, l’annonce introductive des deux puissances,
+le guide du compagnon et le calcul particulier de norme à μ=1.
+
+L’autre instance a relu le diff exact et ses raccords : aucune correction
+mathématique nécessaire ni lacune confirmée. Le parent a compilé les deux PDF,
+contrôlé les 167 numéros, puis examiné les 168 pages en planches et 44 pages
+entières en détail, sans défaut visuel observé.
+
+L’aperçu inclut aussi les cinq clarifications relues auparavant, dont le rappel
+de H=C_DB dans 15.4, les deux noyaux de T22.7 et les exemples finis. Les huit coupes
+ne modifient aucun énoncé numéroté du stade déjà clarifié.
+
+Cinq propositions restent séparées : mutualiser la conversion analytique
+après avoir explicité les coefficients réels arbitraires ; rapprocher les
+contre-exemples des deux corrections ; déplacer la table des marges ; étudier
+le raccourci de T1.14 ; réorganiser T4.3 en conservant une preuve du cas comprimé.
+Les deux dernières options demandent encore des raccords scientifiques.
+La branche T14–T17 et tous les résultats positionnels sont conservés.
+
+Le développement Lean contient maintenant une enveloppe homogène commune,
+avec sept interfaces relues séparément et un replay complet réussi sous
+Lean 4.36.0-rc2 : 18 629 étapes, 19 991 contrôles d’axiomes, 19 914 références.
+Les anciennes interfaces ont été rejouées sans changement. Le registre des
+1004 étapes historiques est regroupé pour éviter de le confondre avec
+1002 modifications scientifiques à apporter au papier.
+
+Cet aperçu n’est pas une nouvelle version adoptée. Les versions 1.6, 1.7 et 1.8
+archivées sont conservées. Les six dossiers Palomar restent exhaustifs pour
+les 17 familles et 68 sélections initiales, avec Brice Pouly et son ORCID
+0009-0008-8491-2467. Les soumissions demeurent en attente à votre demande.
+
+Le dossier complet et les propositions sont conservés dans le dépôt :
+https://github.com/Vulkin-prog/paper-p1-lean
+
+RECONSTRUCTION DES PDF
+Depuis sources/, créer build/, puis exécuter alternativement trois fois :
+pdflatex -no-shell-escape -interaction=nonstopmode -halt-on-error -output-directory=build main.tex
+pdflatex -no-shell-escape -interaction=nonstopmode -halt-on-error -output-directory=build companion.tex
+Conserver les deux PDF livrés dans le même dossier pour leurs liens croisés.

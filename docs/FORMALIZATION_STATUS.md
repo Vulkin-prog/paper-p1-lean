@@ -17,6 +17,15 @@ This supports a common short argument in the manuscript, not a new
 exponent, growing-order result or additional Palomar selection.
 All frozen manuscript versions remain preserved. Palomar stays on hold.
 
+The independent editorial review records 13 simplification proposals.
+Eight local cuts are applied in a separate marked preview, preserving
+all 167 numbered blocks and 552 labels after the prior clarification
+stage. They remove 120 source lines; the article remains 65 pages and
+the companion falls from 104 to 103. The concrete diff was separately
+read, then all 168 pages and 44 detail pages were visually reviewed.
+See docs/editorial-proposals/2026-11-07/simplification/README.md.
+The preserved v1.8 sources/PDFs and registry scopes are unchanged.
+
 Historical checkpoint P1-MATH-1003: Two concrete irregular-window examples
 separate the formal row kernel, effective relative nullity and true
 homogeneous probability. The start x=18,L=10 has rank nine, actual

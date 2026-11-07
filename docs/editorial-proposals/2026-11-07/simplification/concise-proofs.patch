@@ -1,0 +1,356 @@
+--- a/companion_sections/closure.tex
++++ b/companion_sections/closure.tex
+@@ -491,23 +491,15 @@
+ \eqref{p1:close:tv-exact-parameter}, which uses the exact
+ second factorial cumulant.
+ 
+-For the representative case $\lambda=1$, the only negative
+-masses of $\Pi_1*\Delta^{*2}$ occur at $k=1$ and $k=2$.
+-They are $-e^{-1}$ and $-e^{-1}/2$, respectively.
+-The total mass is zero, so
+-\[
+- \|\Pi_1*\Delta^{*2}\|_1=\frac3e,
+- \qquad
+- \mathcal C(1)=\frac3{4e}.
+-\]
+-Along $N=2^L$ with $L$ divisible by three,
++Proposition~\ref{p1:discussion:charlier-norm} gives
++$\|\Pi_1*\Delta^{*2}\|_1=3/e$, hence $\mathcal C(1)=3/(4e)$.
++Along $N=2^L$ with $3\mid L$, the pair coefficient therefore gives
+ \begin{equation}
+  \TV(\Law Z_N,\Pi_1)
+        \sim \frac1{12e}\,L N^{-2/3}.
+  \label{p1:close:dyadic-example}
+ \end{equation}
+-This computes the coefficient in the example announced in
+-the introduction.
++This is the coefficient in the example announced in the introduction.
+ 
+ The total-variation asymptotic uses the exact-marginal reconstruction
+ and the explicit pair coefficient. The independent positivity and
+--- a/companion_sections/confinement.tex
++++ b/companion_sections/confinement.tex
+@@ -199,20 +199,15 @@
+ \end{theorem}
+ 
+ \begin{proof}
+-Apply the preceding fixed-arity argument with $r=3$. The hypothesis
+-$\rho_{\mathrm{rel}}\ge\eta B$ implies the required $\eta L$ bound.
+-It gives $N^\varepsilon$ hosts, and $\rho_{\mathrm{rel}}\le L$ with
+-one-window homogeneous masses at most $2p$ gives
+-$N^{-2+\varepsilon}$ homogeneous mass.
+-For the complete primitive activity, split at $\xi L$ with a new
+-small fixed $\xi>0$. The low sector costs
+-$N^{-3/2+\xi+\varepsilon'}$ by
+-Corollary~\ref{p13:half:connected}; the dense sector has the bound
+-just obtained. For a primitive family $c(I)=q(I)-\prod_Ip_x$, so its
+-absolute coefficient is at most its exact rank weight, including
+-affine incompatibility. Choose $\xi,\varepsilon'$ within the final
+-margin. All local kernel losses are absorbed in the fixed factors
+-$2^3$, not in a growing rank error.
++Use the preceding fixed-arity argument with $r=3$.
++Since $\eta B\ge\eta L$, it gives the dense host count.
++For each such triple the homogeneous probability is
++$2^{\rho_{\rm rel}}\prod_x2^{-d_x}\le(2p)^3\,2^L\ll_C N^{-2}$.
++This gives the dense homogeneous mass.
++The complete fixed-size weight bound is $O(N^{-3/2+\varepsilon})$.
++For a primitive family, $c(I)=q(I)-\prod_Ip_x$ and
++$|c(I)|\le2^{\rho_{\rm rel}(I)}\prod_Ip_x$, even when $q(I)=0$.
++Summing proves the final assertion.
+ \end{proof}
+ 
+ Here homogeneous mass is the sum of the probabilities of the
+--- a/companion_sections/exact_transfer.tex
++++ b/companion_sections/exact_transfer.tex
+@@ -202,12 +202,9 @@
+ again costs $N^{o(1)}$ and the CRT gives at most one center. This proves
+ \eqref{p13:transfer:small-kernels-bound}.
+ 
+-For the second assertion, write $n_1=c_1d^2v$ and $n_2=c_2e^2w$,
+-where $c_1,c_2$ are squarefree and $H$-smooth and $v,w$ are the odd
+-kernels above $H$. The kernels are coprime because their common prime
+-would divide a nonzero difference of size less than $H$.
+-The product $vw\leq N^q$, its division into $v,w$, the two smooth
+-parts, and the offsets have $N^{q+o(1)}$ choices. For these choices,
+-$c_2we^2-c_1vd^2=n_2-n_1\ne0$ has $N^{o(1)}$ solutions by
+-Lemma~\ref{p1:arith:pell}, uniformly in the effective polynomial heights.
++For the second assertion, use $H=C_DB$ as in
++Lemma~\ref{p13:half:small-kernels}.
++That lemma gives the result for $q>0$.
++For $q=0$, use $\mathcal X_0\subseteq\mathcal X_{\varepsilon/2}$
++and apply the lemma with error margin $\varepsilon/2$.
+ \end{proof}
+--- a/companion_sections/guide.tex
++++ b/companion_sections/guide.tex
+@@ -140,42 +140,18 @@
+ quantifiers; none enlarges a fixed-order estimate to a growing
+ range without a separate proof.
+ 
+-\paragraph{Which final sections enter an article result?}
+-The dependency map in Section~\ref{p1:intro:dependencies} identifies
+-the independent fixed-moment proof, the triple bound, the
+-reconstruction, and the quartic lower bound. Within the final five
+-sections of this companion, the roles are as follows.
+-
+-\begin{center}
+-\small
+-\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{0.32\textwidth}>{\raggedright\arraybackslash}X@{}}
+-\toprule
+-Part of the companion & Role in the associated work\\
+-\midrule
+-Positional comparison in
+-Section~\ref{p1:limits:positions}
+-& Supplies the proof of Lemma~\ref{p1:limits:vector-reference}
+-in the article. It uses the regular-set weighted reconstruction;
+-the scalar optimal theorem does not use it.\\[4pt]
+-Other parts of Section~\ref{p1:limits:section}
+-& Local-block, tail, deletion, Palm, and forcing results.
+-They are additional conclusions with their own assumptions;
+-they are not inputs to the scalar optimal theorem.\\[4pt]
+-Sections~\ref{p1:offset:section},
+-\ref{p1:consequences:section}, \ref{p1:uniform:appendix},
+-and~\ref{p1:moment-obstruction}
+-& Further geometry, interval dependence, counting refinements,
+-and a moment obstruction. The article cites selected statements
+-to explain scope; its scalar reconstruction does not depend on them.\\
+-\bottomrule
+-\end{tabularx}
+-\end{center}
+-
+-Here ``additional'' refers to the logical role of a result, not
+-to an assertion that it forms a separate paper. The quantized
+-mean identity in Proposition~\ref{p13:optimal:nominal} is proved
+-directly from the exact marginals; it does not require the
+-supplementary local-block asymptotics.
++\paragraph{The role of the final sections.}
++The proof map in Section~\ref{p1:intro:dependencies} records
++the inputs to the scalar theorem.
++The positional argument in Section~\ref{p1:limits:positions}
++proves Lemma~\ref{p1:limits:vector-reference} and uses the
++regular-set weighted reconstruction in Sections~\ref{p1:core:section}--\ref{p1:close:section}.
++The remaining late sections give further consequences with their own
++assumptions; they do not enter the optimal scalar reconstruction.
++This is a statement about logical dependence, not separate papers.
++In particular, Proposition~\ref{p13:optimal:nominal} derives its
++quantized mean identity directly from the exact marginals,
++without the supplementary local-block asymptotics.
+ 
+ The preserved version~1.6 source archive provides
+ \texttt{python3 check\_all.py} for its historical builds and finite
+--- a/companion_sections/pair_rigidity.tex
++++ b/companion_sections/pair_rigidity.tex
+@@ -23,40 +23,12 @@
+ \end{lemma}
+ 
+ \begin{proof}
+-Write $m=2n$ and
+-\[
+- P(T)=\prod_{a\in I}(T+a),\qquad
+- \sqrt{P(T)}=T^n\Psi(T^{-1}),\qquad
+- \Psi(z)=\prod_{a\in I}(1+az)^{1/2}
+-                  =\sum_{j\ge0}q_jz^j.
+-\]
+-The binomial branches have constant term one.  Their coefficients
+-give $q_j\in4^{-j}\Z$.  With $R=2(B+1)$, Cauchy's estimate on
+-$|z|=R^{-1}$ gives $|q_j|\le2^mR^j$.  The polynomial part
+-$Q(T)=\sum_{j=0}^nq_jT^{n-j}$ has denominator dividing $M=4^n$,
+-and, for $x\ge2R$,
+-\[
+- |\sqrt{P(x)}-Q(x)|\le\frac{2^{m+1}R^{n+1}}x.
+-\]
+-The assumed threshold makes this less than $1/M$, since
+-\[
+- 2^{m+1}R^{n+1}M
+- =2^{5n+2}(B+1)^{n+1}
+- \le(B+1)^{6n+3}\le(B+1)^{9n}.
+-\]
+-If $\sqrt{P(x)}$ were an integer, it would therefore equal $Q(x)$.
+-
+-However, $E=M^2(P-Q^2)$ is a nonzero integer polynomial: the
+-distinct linear factors make $P$ squarefree.  Its coefficient
+-height satisfies
+-\[
+- \|P\|_1\le(B+1)^{2n},\qquad
+- \|Q\|_1\le2^{3n+1}(B+1)^n\le(B+1)^{5n},
+- \qquad H(E)\le(B+1)^{15n}.
+-\]
+-Cauchy's root bound for the integer polynomial $E$ would give
+-$x\le1+H(E)\le(B+1)^{16n}$, contrary to
+-$x>(B+1)^{24n}$.
++The assumed threshold implies $x\ge2B$.
++If the product were a square, Lemma~\ref{p1:arith:runge},
++with $R=B$ and $d=m$, would give $x\le(64B)^m$.
++For $B\ge2$, we have $64B\le(B+1)^5$.
++Thus $x\le(B+1)^{5m}\le(B+1)^{12m}$,
++contrary to the hypothesis.
+ \end{proof}
+ 
+ \begin{lemma}[Few defective positions in every critical window]
+@@ -69,30 +41,18 @@
+ \end{lemma}
+ 
+ \begin{proof}
++Apply the local assertion of Lemma~\ref{p1:arith:defects}
++with $H=10B$ to $V_x$.
++In the critical band its diameter is $O(B)$ and its values
++lie in $[N/2,3N]$ for all sufficiently large $N$.
++The comparison constants are uniform in $x$.
++\end{proof}
++
+ We use the elementary bound $\pi(t)\ll t/\log t$.  For
+ completeness, the product of the primes in $(u,2u]$ divides
+ $\binom{2u}{u}\le4^u$ for integer $u$; dyadic summation gives
+ $\vartheta(t)=\sum_{p\le t}\log p\ll t$.  Splitting at
+ $\sqrt t$ gives the stated bound for $\pi(t)$.
+-
+-Let $D$ be the number of defective positions and
+-$s=\pi(10B)$.  Their square classes lie in an $s$-dimensional
+-space.  Set
+-\[
+-              k=\left\lfloor
+-                    \frac{\log N}{48\log(B+1)}\right\rfloor.
+-\]
+-For sufficiently large $N$, $k\asymp_C B/\log B$ and $k\ge1$.
+-Lemma~\ref{p13:rig:local-square} forbids a nonempty even local
+-relation of size at most $2k$, because
+-$24k\log(B+1)\le\frac12\log N<\log x$.
+-Two distinct $k$-subsets of the defective positions therefore
+-have distinct square classes: their symmetric difference would
+-be such a relation.  If $D\ge k$, this gives
+-$\binom Dk\le2^s$.  When $D\ge2k$, the inequality
+-$\binom Dk\ge(D/k)^k$ implies $D\le k2^{s/k}=O_C(k)$;
+-the case $D<2k$ has the same bound.
+-\end{proof}
+ 
+ We will also need the elementary prime harmonic estimate
+ \begin{equation}
+--- a/main_sections/exact_transfer.tex
++++ b/main_sections/exact_transfer.tex
+@@ -235,50 +235,29 @@
+ \end{proposition}
+ 
+ \begin{proof}
+-We first explain the dense estimate. The fixed-arity anchored argument
+-in Section~\ref{p14:comp:confinement} lifts effective relations to
+-physical even selections, regularizes their coordinate labels with
+-Lemma~\ref{p1:fixed:recovery}, and groups large primes by minimal
+-supports through one designated window. With $r$ fixed, each anchor
+-position belongs to at most a fixed number $D=D(r,\eta)$ of supports.
+-Primitivity excludes two exact units between any pair of windows.
+-Polynomial confinement therefore leaves only $o(B)$ groups larger
+-than $N^\tau$ for any fixed $\tau>0$. Erasing their anchor positions
+-costs $o(B)$ dimensions and leaves two values whose $B$-kernels have
+-product at most $N^{2D\tau}$.
+-
+-Apply this construction separately at every window of the family.
+-All $r$ centres lie in the same deterministic set
+-$\mathcal X_{2D\tau}$, of size
+-$O(N^{2D\tau+\varepsilon'})$ by
+-Lemma~\ref{p13:half:small-kernels}.
+-Choose $\tau,\varepsilon'>0$ after $r,\eta,\varepsilon$ so that
+-$2rD\tau+r\varepsilon'<\varepsilon$.
+-This proves the asserted host count. The companion gives the
+-minimal-support construction, its incidence bound and the erasure
+-argument in detail; it does not assume the final host estimate.
+-
+-The relation-space projection into each primitive block is injective,
+-so $\rho(I)\le\min_{x\in I}d_x\le L$. Since $p_x\le2p\ll_C N^{-1}$
+-and $2^L\ll_C N$, every weight is $O_{r,C}(N^{1-r})$.
+-Multiplying by the dense host count proves the second mass estimate.
+-For the complete sum, choose a new fixed $\xi>0$ within the final
+-margin and split at $\rho(I)=\xi L$.
+-Below that threshold, the independent-mass assertion of
+-Corollary~\ref{p13:half:connected} gives
+-$O(N^{-r/2+\xi+\varepsilon'})$.
+-Above it use $O(N^{1-r+\varepsilon'})$, with density parameter $\xi$.
+-As $r\ge3$, $1-r<-r/2$. Choose $\xi,\varepsilon'$ sufficiently small
+-to obtain \eqref{p13:transfer:primitive-bound}.
+-
+-For a primitive family,
+-$c(I)=q(I)-\prod_{x\in I}p_x$ and
+-$q(I)$ is either zero or $2^{\rho(I)}\prod_{x\in I}p_x$.
+-Thus $q(I)+|c(I)|$ is at most twice the same weight, so the
+-corresponding actual joint and absolute centered sums have the same
+-powers. All orders and density parameters in this argument are fixed;
+-the all-cardinality estimates below still require their separate
+-certificate budgets.
++The fixed-arity construction in the paragraph
++\emph{Dense primitive hosts and their exact weights} of
++Section~\ref{p14:comp:confinement} proves the dense host count,
++uniformly over all true windows and deterministic subfamilies.
++Its parameters are fixed before $N$.
++For a primitive family, projection injectivity gives
++$\rho(I)\le\min_{x\in I}d_x\le L$. Since $p_x\le2p\ll_C N^{-1}$
++and $2^L\ll_C N$, each exact weight is $O_{r,C}(N^{1-r})$.
++The dense host count therefore gives the stated dense mass.
++
++For the full sum, fix a small $\xi>0$ and split at $\rho=\xi L$.
++Below the threshold, Corollary~\ref{p13:half:connected} bounds
++the independent mass by $O(N^{-r/2+\varepsilon'})$;
++the additional rank factor is $O_C(N^\xi)$.
++Above it, the dense bound with parameter $\xi$ gives
++$O(N^{1-r+\varepsilon'})$. As $r\ge3$, $1-r<-r/2$.
++Choose $\xi,\varepsilon'$ within the requested final margin.
++Finally, for a primitive family,
++$c(I)=q(I)-\prod_{x\in I}p_x$ and $q(I)$ is either zero or
++$2^{\rho(I)}\prod_{x\in I}p_x$. Hence the actual joint and
++absolute centered sums have the same powers.
++All arities in this argument are fixed; the separate
++all-cardinality certificate estimates are still required.
+ \end{proof}
+ 
+ There is also an exact finite expansion:
+--- a/main_sections/introduction.tex
++++ b/main_sections/introduction.tex
+@@ -251,38 +251,19 @@
+ \]
+ 
+ \paragraph{Two further optimal powers.}
+-For a fixed integer \(h\ge3\), retain every reduced interior
+-channel \(a:b\) with \(b\le h\), and write
+-\[
+- \widehat\alpha_N^{(\le h)}
+-   =\frac{\lambda_N^2}{N}
+-      \sum_{b=3}^{h}
+-      \sum_{\substack{b/2<a<b\\(a,b)=1}}
+-                  \frac{2(2a-b)}{ab}S_{a,b}(L).
+-\]
+-Theorem~\ref{p13:channels:hierarchy} gives an equivalent for
+-\(\|\Law(Z_N)-Q_{\lambda_N,\widehat\alpha_N^{(\le h)}}\|_1\)
+-from the first omitted height \(h+1\), of order
+-\(LN^{-h/(h+1)}\) with an explicit moving coefficient.
+-Thus the powers \(3/4,4/5,5/6,\ldots\) distinguish finite
+-explicit references, while \(4/3\) concerns exact cumulants.
+-The height \(h\) is fixed, not a function of \(N\).
+-
+-For the third factorial cumulant
+-\[
+- \kappa_{3,N}=\E(Z_N)_3-3\mu_N\E(Z_N)_2+2\mu_N^3,
+-\]
+-Theorem~\ref{p13:third:main} proves
+-\[
+- c_C N^{-41/30}\le\kappa_{3,N}
+-                  \ll_{C,\varepsilon}N^{-41/30+\varepsilon}.
+-\]
+-The lower bound comes from genuine compatible triples in
+-the rational configuration \(10:12:15\). The upper bound
+-includes all triples, without a conjecture on radicals or
+-smooth numbers. It does not identify a full asymptotic
+-constant for this cumulant.
+-
++For every fixed channel height $h\ge3$,
++Theorem~\ref{p13:channels:hierarchy} gives the error of the
++explicit quadratic reference retaining all channels through height $h$:
++the first omitted height $h+1$ contributes order
++$LN^{-h/(h+1)}$, with an explicit moving coefficient.
++These finite-reference powers differ from the optimal power $4/3$
++for exact cumulants; $h$ is fixed before $N$.
++
++Theorem~\ref{p13:third:main} identifies the optimal power $41/30$
++of the third factorial cumulant. Its positive lower bound comes
++from genuine compatible triples of type $10:12:15$,
++and its upper bound includes all triples.
++No full asymptotic constant for that cumulant is claimed.
+ \begin{table}[!htb]
+ \centering
+ \small

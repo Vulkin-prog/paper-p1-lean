@@ -3,3 +3,5 @@
 manuscripts/paper-p1/v1.8/sources/**/*.tex whitespace=-blank-at-eol,-blank-at-eof
 # A unified diff marks an empty context line with one space; preserve its bytes.
 docs/editorial-proposals/2026-11-07/clarifications-and-finite-examples.patch whitespace=-blank-at-eol
+docs/editorial-proposals/2026-11-07/simplification/concise-proofs.patch whitespace=-blank-at-eol
+manuscripts/paper-p1/editorial-condensed-preview-2026-11-07/sources/**/*.tex whitespace=-blank-at-eol,-blank-at-eof

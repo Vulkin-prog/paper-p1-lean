@@ -1,0 +1,275 @@
+{
+  "schema_version": 1,
+  "status": "complete_frozen",
+  "date": "2026-11-07",
+  "title": "Relecture indépendante du patch concret des huit coupes",
+  "documentary_commit_at_read": "389332f3113fbdfcbdc58223d1c4f3227d9840ae",
+  "proof_source_commit": "7bfc953cd6092eebfbae5f24aeb72b7180693537",
+  "frozen_manuscript_base": "8fd105a8468445100b7286bd6b51fb7cd9aa7b21",
+  "application_order": [
+    "clarifications-and-finite-examples.patch",
+    "simplification/concise-proofs.patch"
+  ],
+  "patch": {
+    "path": "docs/editorial-proposals/2026-11-07/simplification/concise-proofs.patch",
+    "sha256": "dc001c20d5fc8a63fbc676ae32cdf580f88f1ced5e7bd1b9fdd42864ddaf543f"
+  },
+  "patch_validation": {
+    "path": "docs/editorial-proposals/2026-11-07/simplification/patch-validation.json",
+    "sha256": "edfdf0c628064cf5ab5a927384cf85a7ebe0e0d6fb7b0324eb7aa438a39a1279"
+  },
+  "prior_clarification_patch": {
+    "path": "docs/editorial-proposals/2026-11-07/clarifications-and-finite-examples.patch",
+    "sha256": "f2115a6ebec875486979c36ee8c228c63a8637e9ff04dae683153b125d2d101d"
+  },
+  "source_copy": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-editorial-condensed/patched-scientific-sources",
+  "scientific_manifest": {
+    "path": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-editorial-condensed/scientific-sources-manifest.json",
+    "sha256": "2f7d0b14540096fd3b141a6e62a1b0a7af6ffe624ebf32b1ebfbabd55157d695",
+    "files": 48
+  },
+  "file_checks": [
+    {
+      "file": "companion_sections/exact_transfer.tex",
+      "clarified_sha256_reconstructed": "430433247a93dd9317cdb435c5ecfd5475b29d639ce446c3d00d99dd769d3ad9",
+      "proposed_sha256_read": "e206bbb8c7a5fd270d07a9e4e20a33b450ad02a6f59a4dfe57647c9fa80b0e19",
+      "both_validation_hashes_match": true,
+      "manifest_hash_matches": true,
+      "exact_patch_hunks": 1,
+      "net_lines_saved": 3
+    },
+    {
+      "file": "companion_sections/closure.tex",
+      "clarified_sha256_reconstructed": "0da38b581952f72ce6e7ef518345b69e6118dc8a85048cd9cd85d24ea8e9b9f9",
+      "proposed_sha256_read": "6e037bed0465effec4d0e9b8a0ee85952097da211302519344bfcbbe7f952658",
+      "both_validation_hashes_match": true,
+      "manifest_hash_matches": true,
+      "exact_patch_hunks": 1,
+      "net_lines_saved": 8
+    },
+    {
+      "file": "companion_sections/pair_rigidity.tex",
+      "clarified_sha256_reconstructed": "5d694892973d4e55dc66d78f72864ffafd28305ad924dbedb3270fbedc23461d",
+      "proposed_sha256_read": "ce79bf4e820468bebbcfd81a5d5ee5547b780f19d4af0ccb1797e253da5cb76a",
+      "both_validation_hashes_match": true,
+      "manifest_hash_matches": true,
+      "exact_patch_hunks": 2,
+      "net_lines_saved": 40
+    },
+    {
+      "file": "companion_sections/confinement.tex",
+      "clarified_sha256_reconstructed": "dc8e6728fb0bd7ab30c07b2ce5402ac3625eddf0b835cf8eac98b2f070270c40",
+      "proposed_sha256_read": "474b3ca1ae3c0400495204bbd083ed355ffe80faaff413f9522d411e56ef8bf0",
+      "both_validation_hashes_match": true,
+      "manifest_hash_matches": true,
+      "exact_patch_hunks": 1,
+      "net_lines_saved": 5
+    },
+    {
+      "file": "companion_sections/guide.tex",
+      "clarified_sha256_reconstructed": "6542739ab0ce206e83572fff947d8b42b81c17a56ca6f67a9de9678a1fc3e030",
+      "proposed_sha256_read": "7cb9f0acc3d24532f75787eab9c6708e7f80ff167461057cc3dbc5a943daa55e",
+      "both_validation_hashes_match": true,
+      "manifest_hash_matches": true,
+      "exact_patch_hunks": 1,
+      "net_lines_saved": 24
+    },
+    {
+      "file": "main_sections/exact_transfer.tex",
+      "clarified_sha256_reconstructed": "966467e8ec52ccda0a0d80206ed00387155e53ce154bd27179a65c7dec9b9985",
+      "proposed_sha256_read": "53f2fd71ec705c29336f62bcc18a16e7a3ab8fa3fb40198332de24383dfb3770",
+      "both_validation_hashes_match": true,
+      "manifest_hash_matches": true,
+      "exact_patch_hunks": 1,
+      "net_lines_saved": 21
+    },
+    {
+      "file": "main_sections/introduction.tex",
+      "clarified_sha256_reconstructed": "26cc8a42bd9c828941d1ff260c7e637165654602a79bc7fe98c05d9e925db5a9",
+      "proposed_sha256_read": "62807c66e81d826c97803b48ffe62b253d2cd9ccea0dba110af95c1a86e52ac5",
+      "both_validation_hashes_match": true,
+      "manifest_hash_matches": true,
+      "exact_patch_hunks": 1,
+      "net_lines_saved": 19
+    }
+  ],
+  "verification": {
+    "all_seven_before_after_hash_pairs_match": true,
+    "all_48_manifest_hashes_match": true,
+    "reverse_patch_applied_in_memory_with_exact_contexts": true,
+    "numbered_statement_blocks_byte_identical_to_clarified_stage": 167,
+    "all_tex_label_multisets_preserved": true,
+    "tex_label_occurrences": 552,
+    "Chebyshev_verbatim_preserved": true,
+    "actual_net_source_lines_saved": 120,
+    "added_references": [
+      "p13:channels:hierarchy",
+      "p13:half:connected",
+      "p13:half:small-kernels",
+      "p13:optimal:nominal",
+      "p13:third:main",
+      "p14:comp:confinement",
+      "p1:arith:defects",
+      "p1:arith:runge",
+      "p1:close:section",
+      "p1:core:section",
+      "p1:discussion:charlier-norm",
+      "p1:intro:dependencies",
+      "p1:limits:positions",
+      "p1:limits:vector-reference"
+    ],
+    "all_added_references_exist": true,
+    "source_and_meaning_review": "Lecture du diff exact et des contextes complets ; comparaison des raccords avec les types et preuves déjà relus. La conservation des blocs/labels n’est pas utilisée comme substitut à la comparaison des significations.",
+    "not_performed": [
+      "Aucun Lean/Lake ou replay.",
+      "Aucune compilation ni inspection des nouveauxPDF dans cette tranche.",
+      "Aucune modification du dépôt, des sources proposées ou des anciens rapports.",
+      "Aucune actionPalomar."
+    ]
+  },
+  "results": [
+    {
+      "id": "SIM01",
+      "file": "main_sections/exact_transfer.tex",
+      "proposed_lines": [
+        237,
+        261
+      ],
+      "verdict": "adequate",
+      "body_comparison": "Le renvoi vise le paragraphe ancré complet enT8, resté intact(75–190). Ce paragraphe construit les hypothèses physiques, établit le compte d’hôtes sans supposer15.5, puis donne les poids exacts. La nouvelle preuve conserveρ≤min d_x≤L, p_x≤2p, la séparation àξL, les marges fixées et le passage aux joints/centrés originaux. Les grands ordres sont expressément exclus de ce raccourci.",
+      "proof_entries": [
+        "PaperP1.DensePrimitiveHosts.uniform_hosts",
+        "PaperP1.DensePrimitiveRankMass.uniform_rank_mass",
+        "PaperP1.SharpPrimitiveMass.uniform_rank_mass"
+      ],
+      "necessary_corrections": []
+    },
+    {
+      "id": "SIM02",
+      "file": "companion_sections/pair_rigidity.tex",
+      "proposed_lines": [
+        25,
+        32
+      ],
+      "verdict": "adequate",
+      "body_comparison": "T1.1 s’applique aux m offsets distincts de cardinalité paire positive, avecR=B≥2 etx≥2B. La borne64B≤(B+1)^5 transforme x≤(64B)^m en contradiction avecx>(B+1)^{12m}. Seuil imprimé inchangé ; aucune hypothèse supplémentaire.",
+      "proof_entries": [
+        "PaperP1.LocalSquareThreshold.split_product_finset_bound",
+        "PaperP1.LocalSquareThreshold.sixtyfour_mul_le_fifth_power",
+        "PaperP1.LocalSquareThreshold.companion_T9_1"
+      ],
+      "necessary_corrections": []
+    },
+    {
+      "id": "SIM03",
+      "file": "companion_sections/pair_rigidity.tex",
+      "proposed_lines": [
+        43,
+        77
+      ],
+      "verdict": "adequate",
+      "body_comparison": "La partie locale deT1.3 couvreV_x, H=10B, B comparable àlogN et valeurs dans[N/2,3N] pourN assez grand. Aucun filtrage régulier n’est ajouté. Le paragraphe Chebyshev est conservé verbatim(51–55) avant la dérivation deMertens(63–77) ; « above » garde un antécédent correct.",
+      "proof_entries": [
+        "PaperP1.CriticalDefectPositions.companion_T9_2"
+      ],
+      "necessary_corrections": []
+    },
+    {
+      "id": "SIM04",
+      "file": "companion_sections/confinement.tex",
+      "proposed_lines": [
+        201,
+        221
+      ],
+      "verdict": "adequate",
+      "body_comparison": "ηB≥ηL raccorde exactement le seuil dense imprimé au compte générique. La masse homogène réelle est calculée avec2^{ρrel}∏2^{-d_x}, puis≤(2p)^3 2^L≪N^{-2}, sans utiliser les marginales originales éventuellement nulles. La clause centrée globale utilise le poids exact primitif et la borne complète àr=3, non une restriction dense. La clarification homogène/affine antérieure(213–221) reste intacte.",
+      "proof_entries": [
+        "PaperP1.DensePrimitiveHomogeneousMass.companion_T8_2",
+        "PaperP1.HomogeneousEffectiveWeights.factor"
+      ],
+      "necessary_corrections": []
+    },
+    {
+      "id": "SIM05",
+      "file": "companion_sections/exact_transfer.tex",
+      "proposed_lines": [
+        205,
+        210
+      ],
+      "related_statement": {
+        "file": "main_sections/exact_transfer.tex",
+        "lines": [
+          202,
+          215
+        ]
+      },
+      "verdict": "adequate",
+      "body_comparison": "Le rappel H=C_DB de l’énoncé clarifié est présent. T6.1 compteX_q au seuil positifq. Pourq=0, X0⊆X_{ε/2} et une erreurε/2 donnent N^{ε/2+ε/2}=N^ε. Tous ces paramètres sont fixes avantN ; le cas limite n’est pas supprimé.",
+      "proof_entries": [
+        "PaperP1.SmallKernelWindows.critical_two_count"
+      ],
+      "necessary_corrections": []
+    },
+    {
+      "id": "SIM06",
+      "file": "main_sections/introduction.tex",
+      "proposed_lines": [
+        253,
+        266
+      ],
+      "verdict": "adequate",
+      "body_comparison": "Le texte conserve h fixé, la première hauteur omiseh+1, l’ordreLN^{-h/(h+1)}, la distinction avec4/3 exact, le pouvoir41/30 et le témoin compatible10:12:15. Les définitions et les théorèmes cités restent dans les sections techniques, et la table comparative(267–308) est préservée. Aucune conclusion supplémentaire ni perte de résultat.",
+      "proof_entries": [],
+      "necessary_corrections": []
+    },
+    {
+      "id": "SIM07",
+      "file": "companion_sections/guide.tex",
+      "proposed_lines": [
+        143,
+        154
+      ],
+      "verdict": "adequate",
+      "body_comparison": "Le guide abrégé nomme les positions, leur lemme d’arrivée et leur dépendance à la reconstruction régulière des sectionsT14–T17. Le paragraphe103–113 conserve aussi suppression et estimations pondérées. La distinction conséquence/entrée du théorème scalaire et le caractère direct de l’identité de moyenne sont maintenus.",
+      "proof_entries": [],
+      "necessary_corrections": []
+    },
+    {
+      "id": "SIM08",
+      "file": "companion_sections/closure.tex",
+      "proposed_lines": [
+        494,
+        502
+      ],
+      "verdict": "adequate",
+      "body_comparison": "La proposition19.2 et son calcul indépendant dans discussion.tex donnent la norme3/e ; C(1)=norme/4=3/(4e). Dans la formule de paire, λ=1 etL≡0 mod3 donnent(r_N+2)/18=1/9 ; le produit est1/(12e). Le label de l’exemple et l’équivalence restent. Le renvoi inverse depuis discussion.tex vers l’exemple est illustratif, sans circularité de preuve.",
+      "proof_entries": [],
+      "necessary_corrections": []
+    }
+  ],
+  "necessary_corrections": [],
+  "optional_editorial_precisions": [
+    {
+      "severity": "non_bloquant",
+      "file": "companion_sections/confinement.tex",
+      "line": 207,
+      "finding": "« complete fixed-size weight bound » est raccordé correctement par le contexte ; « complete fixed-size exact-weight bound » rendrait le poids original encore plus explicite.",
+      "proposed_text": "The complete fixed-size exact-weight bound is $O(N^{-3/2+\\varepsilon})$."
+    },
+    {
+      "severity": "non_bloquant",
+      "file": "main_sections/introduction.tex",
+      "line": 254,
+      "finding": "Le théorème cité fixe bien un entier h. Réinsérer « integer » dans l’annonce rend ce domaine entièrement explicite après la suppression de sa définition.",
+      "proposed_text": "For every fixed integer channel height $h\\ge3$,"
+    }
+  ],
+  "summary": {
+    "patch_acceptable_mathematically": true,
+    "mathematical_gaps_confirmed": 0,
+    "loss_of_numbered_results": 0,
+    "unjustified_new_hypotheses_or_conclusions": 0,
+    "conclusion": "Les huit coupes sont fidèles aux preuves et conservent les régimes requis. Aucune correction mathématique nécessaire.120 lignes source effectivement retirées, sans estimation de pages. L’acceptation de la mise en page relève de la QA des deuxPDF par le parent.",
+    "scope_limit": "Ce rapport porte sur le patch dc001c20 et les48 sources du manifeste indiqué, après les clarifications antérieures ; il ne remplace ni une compilation, ni une relecture de tout le manuscrit au-delà des raccords affectés."
+  }
+}

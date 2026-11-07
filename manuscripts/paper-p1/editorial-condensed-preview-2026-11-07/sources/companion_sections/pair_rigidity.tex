@@ -1,0 +1,491 @@
+\section{The short-basis and common-curve constructions}
+\label{p14:comp:rigidity}
+
+The notation is that of Section~\ref{p13:rig:section}.  This section
+supplies the complete local estimates, basis extraction, and algebraic
+construction used by the main rank argument.  The final
+degree-uniform point count and the nonaligned contradiction are proved
+in that section of the article.
+
+\subsection{Local square relations and defective positions}
+
+For primes larger than the window length, a local square relation
+can use only positions having no odd valuation at any such prime.
+The next elementary argument bounds those positions without an
+admissibility assumption.
+
+\begin{lemma}[A local square threshold]
+\label{p13:rig:local-square}
+Let $B\ge2$, let $I\subset[-B,B]\cap\Z$ have positive even
+cardinality $m$, and let $x$ be a positive integer.  If
+$x>(B+1)^{12m}$, then $\prod_{a\in I}(x+a)$ is not an integer
+square.
+\end{lemma}
+
+\begin{proof}
+The assumed threshold implies $x\ge2B$.
+If the product were a square, Lemma~\ref{p1:arith:runge},
+with $R=B$ and $d=m$, would give $x\le(64B)^m$.
+For $B\ge2$, we have $64B\le(B+1)^5$.
+Thus $x\le(B+1)^{5m}\le(B+1)^{12m}$,
+contrary to the hypothesis.
+\end{proof}
+
+\begin{lemma}[Few defective positions in every critical window]
+\label{p13:rig:defective}
+The number of $n\in V_x$ for which
+\[
+             \prod_{\substack{p>10B\\v_p(n)\ {\rm odd}}}p=1
+\]
+is $O_C(B/\log B)$, uniformly over all critical windows.
+\end{lemma}
+
+\begin{proof}
+Apply the local assertion of Lemma~\ref{p1:arith:defects}
+with $H=10B$ to $V_x$.
+In the critical band its diameter is $O(B)$ and its values
+lie in $[N/2,3N]$ for all sufficiently large $N$.
+The comparison constants are uniform in $x$.
+\end{proof}
+
+We use the elementary bound $\pi(t)\ll t/\log t$.  For
+completeness, the product of the primes in $(u,2u]$ divides
+$\binom{2u}{u}\le4^u$ for integer $u$; dyadic summation gives
+$\vartheta(t)=\sum_{p\le t}\log p\ll t$.  Splitting at
+$\sqrt t$ gives the stated bound for $\pi(t)$.
+
+We will also need the elementary prime harmonic estimate
+\begin{equation}
+ \sum_{B^a<p\le10B}\frac1p
+       =\log(1/a)+O_a(1/\log B),\qquad 0<a<1\text{ fixed}.
+ \label{p13:rig:mertens}
+\end{equation}
+Here is a derivation recording its error term.  Chebyshev's bound
+above implies $\psi(t)=\sum_{p^j\le t}\log p\ll t$.
+The identity
+$\log(n!)=\sum_{d\le n}\Lambda(d)\lfloor n/d\rfloor$
+then gives $\sum_{d\le t}\Lambda(d)/d=\log t+O(1)$.
+The contribution of prime powers with exponent at least two is
+bounded, so $A(t)=\sum_{p\le t}(\log p)/p=\log t+O(1)$.
+Partial summation yields
+\[
+ \sum_{p\le t}\frac1p
+ =\frac{A(t)}{\log t}+\int_2^t\frac{A(u)}{u(\log u)^2}\,du
+ =\log\log t+c_0+O(1/\log t).
+\]
+The difference at $10B$ and $B^a$ proves
+\eqref{p13:rig:mertens}.
+
+\subsection{Large primes turn intersections into components}
+
+Construct a graph on the disjoint formal copies of $V_x,V_y$.
+A prime $p>10B$ has at most one occurrence of odd valuation
+in either block.  If it has two occurrences, join their vertices;
+if it has only one, mark that vertex as forced to zero.
+The corresponding binary equation says that the endpoints of
+an edge have equal coordinates, or that a marked coordinate is
+zero.  A component is free when it contains no marked vertex.
+
+\begin{lemma}[Free components]
+\label{p13:rig:components}
+Let $c$ be the number of free components containing an edge.
+Then
+\[
+                         c=d_{xy}+O_C(B/\log B).
+\]
+Each such component meets both blocks and is selected in its
+entirety or omitted in any solution to the large-prime equations.
+\end{lemma}
+
+\begin{proof}
+The isolated unmarked vertices are precisely the defective
+positions.  Their total number $D_0$ is $O_C(B/\log B)$ by
+Lemma~\ref{p13:rig:defective}.  The kernel of the large-prime
+equations has dimension $c+D_0$.  Imposing the remaining
+prime equations and the two block parities costs at most
+$\pi(10B)+2$ dimensions.  If $\mathcal R$ is the space of
+complete relations and $k_x=\dim\ker\phi_x$, then the map
+taking a relation to its common class gives an exact sequence
+with kernel $\ker\phi_x\oplus\ker\phi_y$.  Hence
+\[
+ c+D_0-\pi(10B)-2\le\dim\mathcal R=k_x+k_y+d_{xy}
+                                      \le c+D_0.
+\]
+A local relation can use only defective positions, so
+$k_x+k_y\le D_0$.  These inequalities prove the assertion.
+\end{proof}
+
+
+\subsection{Proof of Theorem~\ref{p13:rig:short-basis}}
+\label{p14:comp:rigidity:short-basis}
+
+\begin{proof}
+\emph{A graph estimate.}
+A multigraph with $n$ vertices and $e/n\to\infty$ has a cycle
+of length $O(1+\log(n+1)/\log(e/n))$.  Loops and parallel
+edges give cycles of length one and two.  Otherwise delete
+vertices of degree less than $t=\lfloor e/(2n)\rfloor$.
+Not all vertices can disappear, since fewer than $nt\le e/2$
+edges would then be deleted.  The remaining graph has minimum
+degree at least $t$.  If its girth exceeds $2r+1$, a breadth
+first search contains at least
+$1+t\sum_{j<r}(t-1)^j$ vertices.  This bounds $r$ and proves
+the estimate.
+
+Consequently, when $n\ll B/\log B$ and $e\le B$, the binary
+cycle space contains at least $e-O(B/\sqrt{\log B})$
+independent cycles of length $O(\log B/\log\log B)$.
+Indeed, while at least $B/\sqrt{\log B}$ edges remain,
+record a short cycle and delete just one of its edges.
+The recorded cycles are independent: the first deleted edge
+belongs to no later cycle, and the same argument applies
+successively to all deleted edges.
+
+\emph{Medium-prime columns.}
+Start with the free nontrivial components of
+Lemma~\ref{p13:rig:components}, and discard those with more
+than $M=\lfloor\log B\rfloor$ vertices.  This loses at most
+$2B/(M+1)$ components.  The remaining number is
+$d_{xy}+O_C(B/\log B)$.  Put $z=B^a$.  To each retained
+component attach its parity column on the primes $z<p\le10B$,
+and let $w_j$ be that column's Hamming weight.  Each nonzero
+entry consumes a divisible position, whence
+\[
+ \sum_j w_j
+ \le\sum_{z<p\le10B}\#\{n\in V_x\sqcup V_y:p\mid n\}
+ \le2B\sum_{z<p\le10B}\frac1p+2\pi(10B)
+ \le2B\log(1/a)+O_a(B/\log B).
+\]
+Discard only columns of weight at least three.  Their number
+is at most one third of this sum, so at least
+\[
+                 e\ge d_{xy}-\frac23B\log(1/a)
+                                   -O_{a,C}(B/\log B)
+\]
+columns remain.  There is no factor $M$ in this count: it
+bounds the number of discarded columns, not their physical size.
+
+Use the primes $z<p\le10B$ and one extra vertex $\infty$
+as vertices of a multigraph.  A column of weight two joins its
+two primes; a column of weight one joins its prime to $\infty$;
+a zero column is a loop at $\infty$.  Its binary incidence
+matrix has the same kernel as the parity matrix, because the
+row at $\infty$ is the sum of the other rows.  The graph has
+$n\le\pi(10B)+1\ll B/\log B$ vertices and $e\le B$ edges.
+The preceding graph argument therefore supplies a space
+$\mathcal U$ of dimension at least
+$e-O(B/\sqrt{\log B})$ with a basis of short cycles.
+Each basis vector uses
+$O(\log^2 B/\log\log B)$ physical positions.
+
+\emph{Small primes and parity.}
+All large and medium primes already cancel on $\mathcal U$.
+The primes at most $z$ and the two block parities impose at
+most $s=\pi(z)+2\ll_a B^a/\log B+2$ further equations on its
+cycle coordinates.  Their kernel is $\mathcal K_a$; since
+$s=o(B/\sqrt{\log B})$, it has the dimension in
+\eqref{p13:rig:short-dimension}.  A fundamental kernel basis
+for a matrix with at most $s$ rows uses at most $s+1$ columns
+per vector: express each nonpivot column in terms of pivot
+columns.  Thus each resulting vector uses at most $s+1$
+short cycles, giving \eqref{p13:rig:short-support}.
+
+Finally, the original free nontrivial components are disjoint
+and meet both blocks.  Every nonzero selection of them contains
+a component carrying a large prime which occurs once in each
+block and in no other component.  Its common square class is
+therefore nonzero.  This also proves injectivity of both physical
+projections and of the common-class map.  The imposed parity
+equations complete the proof.
+\end{proof}
+
+\subsection{Two relations produce a polynomial of controlled height}
+
+The short basis will have support $B^{a+o(1)}$.  We therefore
+need an auxiliary polynomial whose degree and logarithmic
+height grow linearly with the support, and a simultaneous
+construction whose threshold is quadratic in that support.
+The following elementary factor bound will keep the height
+under control when common polynomial factors are removed.
+
+\begin{lemma}[Height of a bivariate factor]
+\label{p13:rig:factor-height}
+Let $P\in\Z[X,Y]\setminus\{0\}$, with partial degrees
+$d_X,d_Y$.  Every primitive integer factor $Q$ of $P$, and
+the corresponding integer quotient, satisfy
+\[
+ H(Q)\le2^{d_X+d_Y}\|P\|_2
+       \le2^{d_X+d_Y}\sqrt{(d_X+1)(d_Y+1)}\,H(P).
+\]
+\end{lemma}
+
+\begin{proof}
+The multivariate Mahler measure $M(P)$ is multiplicative,
+at most $\|P\|_2$, and at least one for a nonzero integer
+polynomial.  Jensen's formula in one variable, followed by
+the leading coefficient in that variable, proves the last
+assertion by iteration.  The one-variable coefficient bound
+also iterates: integrating first in $X$ and then in $Y$ gives
+\[
+ |[X^iY^j]P|\le\binom{d_X}{i}\binom{d_Y}{j}M(P).
+\]
+Thus $H(Q)\le2^{\deg_XQ+\deg_YQ}M(Q)$; multiplicativity
+and $M(P/Q)\ge1$ prove the result.  The quotient has the same
+bound, with the integer content handled separately.
+\end{proof}
+
+\begin{proposition}[Two complete witnesses]
+\label{p13:rig:two-witnesses}
+There is an absolute constant $c>0$ with the following property.
+Let $u,v$ be independent formal words, even in each block,
+with offsets in $[-B,B]$.  For $w=u,v,u+v$, write
+$|I_w|=2r_w$, $|J_w|=2s_w$, and assume
+$\max(r_w,s_w)\le q$, where $1\le q\le B$.
+Suppose that $F_u(x,y)$ and $F_v(x,y)$ are integer squares,
+with $x,y\in[N,2N)$.  If $N>(B+1)^{cq}$, there is a
+nonzero $R\in\Z[X,Y]$ such that
+\begin{equation}
+ R(x,y)=0,\qquad
+ \deg_XR,\deg_YR\le12q,\qquad \deg R\le24q,
+ \qquad H(R)\le(B+1)^{cq}.
+ \label{p13:rig:two-polynomial}
+\end{equation}
+Moreover, $R$ is the norm of a biquadratic auxiliary function
+whose four polynomial coefficients have no common nonconstant
+factor.
+\end{proposition}
+
+\begin{proof}
+Set $F_1=F_u$, $F_2=F_v$, $G=\gcd(F_1,F_2)$, with monic
+gcd, and $F_3=F_{u+v}=F_1F_2/G^2$.
+Formal independence makes
+\[
+ K=\mathbb Q(X,Y)(W_1,W_2),\qquad W_i^2=F_i,
+\]
+a degree-four extension.  With $W_0=1$ and
+$W_3=W_1W_2/G$, the four $W_\chi$ form a basis.  At the
+given integer point use positive square roots.  Then all
+$W_\chi(x,y)$ are integers: $F_3(x,y)$ is an integer which
+is a rational square, hence an integer square, and
+$W_3(x,y)=\sqrt{F_1(x,y)}\sqrt{F_2(x,y)}/G(x,y)$.
+
+\emph{The linear system at infinity.}
+Put $r_0=s_0=0$, $k=3q$, and consider
+\[
+ \mathcal A=\sum_{\chi=0}^3A_\chi(X,Y)W_\chi,
+ \qquad \deg_XA_\chi\le k-r_\chi,
+ \quad \deg_YA_\chi\le k-s_\chi.
+\]
+There are
+\[
+ n=\sum_{\chi=0}^3(k-r_\chi+1)(k-s_\chi+1)
+   \ge21q^2+18q+4
+\]
+unknown coefficients, and $n\le4(3q+1)^2$.
+Writing $\xi=1/X$, $\eta=1/Y$, the positive formal branches
+are
+\[
+ W_\chi=X^{r_\chi}Y^{s_\chi}
+ \prod_{u\in I_\chi}(1+u\xi)^{1/2}
+ \prod_{v\in J_\chi}(1+v\eta)^{1/2}.
+\]
+Thus $f(\xi,\eta)=\xi^k\eta^k\mathcal A$ is a formal
+power series.  Require its coefficients of total degree at
+most $2k$ to vanish.  This gives at most
+\[
+ t=\frac{(2k+1)(2k+2)}2=18q^2+9q+1,
+ \qquad n-t\ge3q^2+9q+3,\qquad \frac t{n-t}<6
+\]
+homogeneous linear equations.
+
+All coefficients required from the binomial series have
+denominator dividing $4^{2k}$.  Cauchy's estimate on circles
+of radius $(2B)^{-1}$ bounds their numerators, after this
+common denominator is cleared, by $(B+1)^{c_0q}$ for an
+absolute $c_0$.  An elementary pigeonhole form of Siegel's
+lemma yields a nonzero integer solution of height
+$(B+1)^{c_1q}$.  Indeed, if the integer matrix has height $A$,
+the images of $\{0,\ldots,M\}^n$ take at most
+$(2nAM+1)^t$ values.  Choosing
+$M=\lceil(3nA)^7\rceil$ makes two images equal, because
+$t/(n-t)<6$.  Their difference is a nonzero kernel vector;
+$\log n=O(\log B)$ is absorbed in the stated height.
+
+\emph{Primitive coefficients.}
+Let $D$ be the primitive polynomial gcd of the four
+$A_\chi$, omitting zero coefficients, and write
+$A_\chi=DA'_\chi$.  The factor bound
+of Lemma~\ref{p13:rig:factor-height} keeps
+$H(A'_\chi)\le(B+1)^{O(q)}$.  Write
+$a=\deg_XD$, $b=\deg_YD$, $e=\deg D$.  Then
+\[
+ f=\widetilde D f',\qquad
+ \widetilde D=\xi^a\eta^bD(\xi^{-1},\eta^{-1}),\qquad
+ f'=\xi^{k-a}\eta^{k-b}\sum_\chi A'_\chi W_\chi.
+\]
+These are power series, and
+$\operatorname{ord}\widetilde D=a+b-e$ for total order.
+Since order is additive in the power-series domain,
+\begin{equation}
+ \operatorname{ord}f'\ge2k+1-a-b+e
+                          =(k-a)+(k-b)+e+1.
+ \label{p13:rig:primitive-order}
+\end{equation}
+Thus removing $D$ preserves vanishing beyond the remaining
+pole weight.  This is a formal division, never a division
+by the possibly zero value $D(x,y)$.  Replace the auxiliary
+by its primitive version from now on.
+
+\emph{Integer separation and the norm.}
+On the bidisc $|\xi|,|\eta|\le(4B)^{-1}$, the analytic
+numerator is bounded by $(B+1)^{O(q)}$.  Cauchy's estimate
+and the order of vanishing give, in the comparable range
+$x,y\in[N,2N)$,
+\begin{equation}
+                  |\mathcal A(x,y)|\le
+                                   \frac{(B+1)^{c_2q}}N.
+ \label{p13:rig:integer-gap}
+\end{equation}
+To see the power of $N$ explicitly before removing $D$, the
+tail of the numerator is bounded by its coefficient bound
+times
+\[
+ \sum_{\ell\ge2k+1}(\ell+1)(4B/N)^\ell
+       \ll(k+1)(4B/N)^{2k+1}.
+\]
+Multiplication by $x^ky^k\le(2N)^{2k}$ gives
+\eqref{p13:rig:integer-gap}.  After removing $D$, both pole
+weights decrease, and \eqref{p13:rig:primitive-order} gives
+the same estimate with the new height bound.
+
+The specialization $\mathcal A(x,y)$ is an integer, so it
+vanishes for the stated threshold.  The auxiliary is nonzero
+in $K$ by independence of the four characters.  Its norm is
+therefore nonzero.  An explicit polynomial expression is
+\[
+ \begin{split}
+ U&=A_0^2+A_1^2F_1-A_2^2F_2-A_3^2F_3,\\
+ V&=A_0A_1-A_2A_3(F_2/G),\\
+ R&=U^2-4F_1V^2.
+ \end{split}
+\]
+Here $F_2/G$ is a polynomial.  The partial degrees of $U$
+are at most $2k$, and those of $V$ are at most
+$2k-r_1$, $2k-s_1$.  For the second term in $V$, use
+$r_3=r_1+r_2-\deg_XG$ and its $Y$ analogue.
+It follows that the partial degrees of $R$ are at most
+$4k=12q$.  The coefficient $\ell^1$ norms of all factors
+in this formula are $(B+1)^{O(q)}$, which proves the height
+bound and completes \eqref{p13:rig:two-polynomial}.
+\end{proof}
+
+
+\subsection{Proof of Theorem~\ref{p13:rig:common-curve}}
+\label{p14:comp:rigidity:common-curve}
+
+\begin{proof}
+For $i<j$, the half-cardinalities of $w_i,w_j,w_i+w_j$
+are at most $q=\min(2q_0,B)$, since an even subset of
+$[-B,B]\cap\Z$ has size at most $2B$.
+Proposition~\ref{p13:rig:two-witnesses} gives a nonzero
+polynomial $R_{ij}$ of degree at most $48q_0$ and height
+$(B+1)^{O(q_0)}$, vanishing at $(x,y)$ and arising from
+an auxiliary with primitive coefficients.
+Choose an irreducible primitive factor $C_0$ of $R_{12}$
+which vanishes at this point.  The factor-height lemma
+preserves its height bound.  If $C_0$ depended on only one
+variable, its integer root of size at least $N$ would
+contradict Cauchy's root bound.  Thus it depends on both.
+
+If $C_0$ failed to divide some $R_{ij}$, the resultant
+$\operatorname{Res}_Y(C_0,R_{ij})$ would be a nonzero integer
+polynomial vanishing at $x$.  Its height is
+$(B+1)^{O(q_0^2)}$: its Sylvester matrix has size $O(q_0)$,
+entries of coefficient norm $(B+1)^{O(q_0)}$, and
+$O(q_0)!$ determinant terms.  This again contradicts the
+root bound under the stated threshold.  Hence $C_0$ divides
+every $R_{ij}$.
+
+No factor $X+u$ or $Y+v$ vanishes identically on this curve,
+since $C_0(x,y)=0$ with both coordinates larger than $B$.
+The displayed square classes are therefore defined in
+$K_0$.  If the classes of $F_{w_i},F_{w_j}$ were independent
+there, they would still generate a degree-four field
+extension.  Specializing the polynomial norm formula gives
+zero, since $C_0\mid R_{ij}$; in a field this forces the
+auxiliary to vanish.  Independence of its four characters
+would force all four coefficient polynomials to be divisible
+by $C_0$, contrary to their primitivity.  Thus the images
+of every pair of basis vectors are dependent.  Over $\F_2$
+this means that all nonzero images are equal, so the image
+has dimension at most one.
+\end{proof}
+
+\subsection{Proof of Proposition~\ref{p13:rig:aligned}}
+\label{p14:comp:rigidity:aligned}
+
+\begin{proof}
+Fix $\tau<1$.  Theorem~\ref{p13:rig:short-basis} gives a
+space $V=\mathcal K_\tau$ of dimension
+\[
+ t\ge d_{xy}-\frac23B\log(1/\tau)
+                     -O_{\tau,C}(B/\sqrt{\log B}),
+\]
+with a basis of half-cardinalities at most
+$q_0=B^{\tau+o(1)}$.  The case $t<2$ is covered by
+the displayed error term.  For $t\ge2$, apply
+Proposition~\ref{p13:rig:two-witnesses} to each pair of
+basis vectors.  Its threshold holds because
+$q_0\log(B+1)=o(B)=o(\log N)$.
+
+Put $\ell(X,Y)=bX-aY-h$.  Every resulting norm polynomial
+$R_{ij}$ is divisible by $\ell$.  Otherwise, with
+$d_Y=\deg_YR_{ij}$, the nonzero integer polynomial
+\[
+           a^{d_Y}R_{ij}\left(X,\frac{bX-h}{a}\right)
+\]
+would vanish at $x$.  Its height is $(B+1)^{O(q_0)}$
+since $\max(a,b,|h|)\le2B^4$, contradicting the
+integer root bound for $x\ge N$.
+The primitive-norm argument in
+Theorem~\ref{p13:rig:common-curve} now applies to this
+line and shows that the image of $V$ in
+$\mathbb Q(\ell=0)^\times/\mathbb Q(\ell=0)^{\times2}$
+has dimension at most one.
+
+Let $V_0$ be its kernel, of dimension at least $t-1$.
+On the line, $X+u$ and $Y+v$ have the same root precisely when
+\begin{equation}
+                            h+bu=av.
+ \label{p13:rig:line-matching}
+\end{equation}
+Every word of $V_0$ must pair all its first-block roots
+with second-block roots.  The integer solutions of
+\eqref{p13:rig:line-matching} advance by $(a,b)$ in two
+intervals of $B$ consecutive offsets, so their number $r$
+satisfies
+\[
+                        r\le1+\frac{B-1}{\max(a,b)}.
+\]
+Injectivity of the physical projection gives
+$t-1\le\dim V_0\le r$, proving
+\eqref{p13:rig:aligned-quantitative} after absorbing the
+bounded terms.
+
+For compatible distinct centres with $\max(a,b)\ge2$,
+this gives $d_{xy}\le B/2+(2/3)B\log(1/\tau)+o_{\tau,C}(B)$.
+Choose $\tau$ sufficiently close to one after fixing a
+desired error margin, then let $N$ tend to infinity.
+This order of choices proves the uniform $B/2+o_C(B)$ bound.
+
+For $a=b=1$, compatibility implies $|x-y|\ge L$:
+if $x<y<x+L$, the first run makes $f(y-1)=f(y)$,
+whereas the second requires their signs to be opposite.
+At distance exactly $L=B-1$, the true windows share one
+position; at larger distance they are disjoint.  Thus
+\eqref{p13:rig:line-matching} has at most one solution.
+A nonzero word in $V_0$ would need at least two pairings,
+because its selections are nonempty and even.  Consequently
+$V_0=0$, $t\le1$, and the dimension estimate followed by
+$\tau\uparrow1$ gives $d_{xy}=o_C(B)$.
+\end{proof}

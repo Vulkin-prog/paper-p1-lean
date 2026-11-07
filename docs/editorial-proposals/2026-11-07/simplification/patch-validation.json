@@ -1,0 +1,173 @@
+{
+  "status": "patch_applied_pending_independent_diff_and_pdf_review",
+  "frozen_manuscript_base": "v1.8 sources, unchanged since8fd105a8468445100b7286bd6b51fb7cd9aa7b21",
+  "proof_source_commit": "7bfc953cd6092eebfbae5f24aeb72b7180693537",
+  "independent_proposal_review": {
+    "path": "docs/reviews/2026-11-07/simplification-review.json",
+    "sha256": "51be61c5e7b1e6d6e8444d5a7aefb2364897ee4976b6410ec29b316c2f11d1dc"
+  },
+  "prior_clarification_patch": {
+    "path": "docs/editorial-proposals/2026-11-07/clarifications-and-finite-examples.patch",
+    "sha256": "f2115a6ebec875486979c36ee8c228c63a8637e9ff04dae683153b125d2d101d"
+  },
+  "application_order": [
+    "clarifications-and-finite-examples.patch",
+    "simplification/concise-proofs.patch"
+  ],
+  "patch": {
+    "path": "docs/editorial-proposals/2026-11-07/simplification/concise-proofs.patch",
+    "sha256": "dc001c20d5fc8a63fbc676ae32cdf580f88f1ced5e7bd1b9fdd42864ddaf543f"
+  },
+  "applied_proposals": [
+    {
+      "id": "SIM01",
+      "file": "main_sections/exact_transfer.tex",
+      "original_lines": [
+        236,
+        281
+      ],
+      "original_block_sha256": "3e77ea4db64f0511eede4b1d7d7517e0d881054e796d89641b9ab982b05dbe6c",
+      "replacement_block_sha256": "d912c051cad5a4dd3daaec214bf7216727c9256e3dab44bae7702caab49845fa",
+      "original_source_lines": 46,
+      "replacement_source_lines": 25
+    },
+    {
+      "id": "SIM02",
+      "file": "companion_sections/pair_rigidity.tex",
+      "original_lines": [
+        25,
+        60
+      ],
+      "original_block_sha256": "66a4d15c1e815c71ef2fdd757e3adfbbd9718f51a07fe11dd0bc84d9c716369c",
+      "replacement_block_sha256": "f82ec9577841021e71f8673e983ec4a398de04b96be050552186b907169eeb44",
+      "original_source_lines": 36,
+      "replacement_source_lines": 8
+    },
+    {
+      "id": "SIM03",
+      "file": "companion_sections/pair_rigidity.tex",
+      "original_lines": [
+        71,
+        95
+      ],
+      "original_block_sha256": "3f472938c068c03cdab01bae782e4f367f8d21c30402ab9b91967176936a74de",
+      "replacement_block_sha256": "c7132a06d06c171ea1e6d121ead1adae4d484657cfbe6ef73dee2e0c579bda21",
+      "original_source_lines": 25,
+      "replacement_source_lines": 7
+    },
+    {
+      "id": "SIM04",
+      "file": "companion_sections/confinement.tex",
+      "original_lines": [
+        201,
+        216
+      ],
+      "original_block_sha256": "21cc174a4177e3e71d3be871c012ab428c2600bd71d4b859005216b88179c2e8",
+      "replacement_block_sha256": "615bc304d3f9f11ea98c49f436a60edc0c7c6e361596da8bf7ee3308499dbb3d",
+      "original_source_lines": 16,
+      "replacement_source_lines": 11
+    },
+    {
+      "id": "SIM05",
+      "file": "companion_sections/exact_transfer.tex",
+      "original_lines": [
+        205,
+        212
+      ],
+      "original_block_sha256": "b1d75bcf9dcb27a123d3b1594265392d17d75c561cd8d04037a0abb3e833e23c",
+      "replacement_block_sha256": "2cf8ee77b74967721b300c51e530f0d52684dd3d5e4facefd8dc1e513b5bf18d",
+      "original_source_lines": 8,
+      "replacement_source_lines": 5
+    },
+    {
+      "id": "SIM06",
+      "file": "main_sections/introduction.tex",
+      "original_lines": [
+        253,
+        285
+      ],
+      "original_block_sha256": "1e7d63046f2dbd45b0f5caecc3af0e66f591a2d48ece0025288ac6dd104ddbc2",
+      "replacement_block_sha256": "e1916e93a6392550a7bb86b53f6bcaf94ec2017daab51d1d2368cd25d50fb78d",
+      "original_source_lines": 33,
+      "replacement_source_lines": 14
+    },
+    {
+      "id": "SIM07",
+      "file": "companion_sections/guide.tex",
+      "original_lines": [
+        143,
+        178
+      ],
+      "original_block_sha256": "f30ae790498c5b07b5c212879f613a17c495f381742e94204c38b5db9fc940d4",
+      "replacement_block_sha256": "587f51f26ea6d2589739fb419db0998928de5ba87578a242d6252d3eeca7c954",
+      "original_source_lines": 36,
+      "replacement_source_lines": 12
+    },
+    {
+      "id": "SIM08",
+      "file": "companion_sections/closure.tex",
+      "original_lines": [
+        494,
+        510
+      ],
+      "original_block_sha256": "21778796530cf8d4a12955078313d9a5b71e6cdea64481de14591a6c1cc7d532",
+      "replacement_block_sha256": "2e247b750ce39ed00b27160270795563f9a6519c953a05338a3c456fc24ef6d1",
+      "original_source_lines": 17,
+      "replacement_source_lines": 9
+    }
+  ],
+  "conditional_proposals_applied": [],
+  "chebyshev_paragraph_relocated_verbatim": true,
+  "chebyshev_source_lines_retained": 5,
+  "changed_scientific_files_in_simplification_stage": 7,
+  "actual_net_source_lines_saved_in_simplification_stage": 120,
+  "numbered_statement_blocks_byte_identical_to_clarification_stage": 167,
+  "all_tex_label_multisets_preserved": true,
+  "tex_labels": 552,
+  "original_v18_source_files_unchanged": true,
+  "files": [
+    {
+      "path": "companion_sections/exact_transfer.tex",
+      "clarified_sha256": "430433247a93dd9317cdb435c5ecfd5475b29d639ce446c3d00d99dd769d3ad9",
+      "proposed_sha256": "e206bbb8c7a5fd270d07a9e4e20a33b450ad02a6f59a4dfe57647c9fa80b0e19",
+      "net_source_lines_saved": 3
+    },
+    {
+      "path": "companion_sections/closure.tex",
+      "clarified_sha256": "0da38b581952f72ce6e7ef518345b69e6118dc8a85048cd9cd85d24ea8e9b9f9",
+      "proposed_sha256": "6e037bed0465effec4d0e9b8a0ee85952097da211302519344bfcbbe7f952658",
+      "net_source_lines_saved": 8
+    },
+    {
+      "path": "companion_sections/pair_rigidity.tex",
+      "clarified_sha256": "5d694892973d4e55dc66d78f72864ffafd28305ad924dbedb3270fbedc23461d",
+      "proposed_sha256": "ce79bf4e820468bebbcfd81a5d5ee5547b780f19d4af0ccb1797e253da5cb76a",
+      "net_source_lines_saved": 40
+    },
+    {
+      "path": "companion_sections/confinement.tex",
+      "clarified_sha256": "dc8e6728fb0bd7ab30c07b2ce5402ac3625eddf0b835cf8eac98b2f070270c40",
+      "proposed_sha256": "474b3ca1ae3c0400495204bbd083ed355ffe80faaff413f9522d411e56ef8bf0",
+      "net_source_lines_saved": 5
+    },
+    {
+      "path": "companion_sections/guide.tex",
+      "clarified_sha256": "6542739ab0ce206e83572fff947d8b42b81c17a56ca6f67a9de9678a1fc3e030",
+      "proposed_sha256": "7cb9f0acc3d24532f75787eab9c6708e7f80ff167461057cc3dbc5a943daa55e",
+      "net_source_lines_saved": 24
+    },
+    {
+      "path": "main_sections/exact_transfer.tex",
+      "clarified_sha256": "966467e8ec52ccda0a0d80206ed00387155e53ce154bd27179a65c7dec9b9985",
+      "proposed_sha256": "53f2fd71ec705c29336f62bcc18a16e7a3ab8fa3fb40198332de24383dfb3770",
+      "net_source_lines_saved": 21
+    },
+    {
+      "path": "main_sections/introduction.tex",
+      "clarified_sha256": "26cc8a42bd9c828941d1ff260c7e637165654602a79bc7fe98c05d9e925db5a9",
+      "proposed_sha256": "62807c66e81d826c97803b48ffe62b253d2cd9ccea0dba110af95c1a86e52ac5",
+      "net_source_lines_saved": 19
+    }
+  ],
+  "scope": "Concrete first-pass proposal. Eight proof/exposition cuts only; all167 numbered blocks and every TeX label remain identical after the prior clarification stage. Preserved v1.8 sources/PDFs are untouched; no Palomar action. Page gains and visual quality have not yet been measured."
+}

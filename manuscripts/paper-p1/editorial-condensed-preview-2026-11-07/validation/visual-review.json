@@ -1,0 +1,68 @@
+{
+  "status": "passed",
+  "pages_rendered_and_contact_sheet_reviewed": 168,
+  "contact_sheets_actually_inspected": 12,
+  "full_detail_pages_actually_inspected": 44,
+  "detail_pages": {
+    "main": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      22,
+      23,
+      24,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      62,
+      63,
+      64,
+      65
+    ],
+    "companion": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      38,
+      39,
+      40,
+      41,
+      42,
+      50,
+      51,
+      52,
+      66,
+      67,
+      68,
+      74,
+      75,
+      76,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103
+    ]
+  },
+  "observed_clipping_overlap_or_missing_glyph_defects": 0,
+  "automated_out_of_page_characters": 0,
+  "missing_preview_markers": 0,
+  "cross_pdf_file_targets": {
+    "main": [
+      "P1_Condensed_Editorial_Preview_Companion_2026-11-07_EN.pdf"
+    ],
+    "companion": [
+      "P1_Condensed_Editorial_Preview_Main_2026-11-07_EN.pdf"
+    ]
+  },
+  "scope": "Parent visual inspection of the latest rendered PDFs, separate from the independent mathematical diff review. No human certification or Palomar registration."
+}
