@@ -738,5 +738,14 @@
     "palomar_contract": "https://github.com/PalomarRegistry/PalomarSubmission/blob/14aa8d6b3c2f14a8540605e37144560b9a00e7e7/scripts/submission_contract.py",
     "representation": "Structured author object; separate name, GitHub login and canonical bare ORCID."
   },
-  "construction": "Explicit statements and complete proof bodies, with bijective model-namespace relocation and declaration renaming."
+  "construction": "Explicit statements and complete proof bodies, with bijective model-namespace relocation and declaration renaming.",
+  "submission_status": {
+    "status": "on_hold_at_user_request",
+    "since": "2026-11-07",
+    "reason": "Independent mathematical and editorial review of the article and technical companion before submission.",
+    "resume_requires": "An explicit user request to resume Palomar work; the protocol-required personal declarations and source-specific agreement remain outstanding.",
+    "full_workflow_launched": false,
+    "intake_started": false,
+    "registry_identifiers": []
+  }
 }

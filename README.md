@@ -46,6 +46,7 @@ unasserted analytic or geometric results are documented in the source revision.
 | Source corrections and revised PDF checks | [Revision report](docs/MANUSCRIPT_REVISION_V1_7.md), [validation record](docs/manuscript-v1.7-validation.json) |
 | Every mathematical correction and improvement | [Change ledger](docs/mathematical-changes.json), [narrative record](docs/MATHEMATICAL_CHANGELOG.md) |
 | Current proof status and input scope | [Status](docs/FORMALIZATION_STATUS.md), [inputs](docs/LITERATURE_INPUTS.md) |
+| Independent mathematical and editorial review | [French report](docs/reviews/2026-11-07/RAPPORT_FR.txt), [exact signatures and proposals](docs/reviews/2026-11-07/review.json), [subsequent corrections](docs/reviews/2026-11-07/disposition.json) |
 | Printed statements, compiled types and explicit hypotheses | [Scope index](docs/NUMBERED_SCOPE_REVIEW.md) |
 | Exact Paper C ports and licence attribution | [Reuse record](docs/PAPER_C_REUSE.md) |
 | Earlier project progress | [Preserved checkpoint history](docs/README_CHECKPOINT_HISTORY.md) |
@@ -108,6 +109,10 @@ preserved receipt against its historical inventory and current proof imports.
 ## Palomar preparation
 
 The target is **six registrations in total**, with **one entire submission cycle at a time**. They preserve all **68 selected statements** from the seventeen locally qualified component families; the complete manuscript correspondence remains **167 proved numbered results**.
+
+**Submissions are on hold at the user's request (7 November 2026)** while the
+article and companion receive independent mathematical and editorial review.
+No full Palomar workflow, intake or registration has been launched.
 
 | Order | Registration | Selected declarations | Configuration and metadata |
 |---:|---|---:|---|

@@ -1,0 +1,1127 @@
+{
+  "schema_version": 1,
+  "language": "fr",
+  "review_kind": "relecture critique indépendante, lecture seule ; aucune délégation supplémentaire",
+  "reviewed_repository": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/paper-p1-lean",
+  "reviewed_commit": "c1db11fe29e94f6afd87636d51beeb908a346af9",
+  "date": "2026-11-07",
+  "repository_mutations_during_review": false,
+  "build_or_lake_command_during_review": false,
+  "palomar_action": false,
+  "overall_assessment": {
+    "new_mathematical_errors_confirmed": 0,
+    "necessary_documentary_correction": "C01 : déclaration de sources/assistance obsolète ou ambiguë sur v1.6 et v1.7.",
+    "mathematical_assessment": "Sur les interfaces centrales et les identités de référence examinées, aucune hypothèse supplémentaire cachée, circularité de type « supposons la borne finale », ni erreur de facteur ou de quantificateur n’a été identifiée. Cela ne certifie pas une relecture humaine intégrale des 167 résultats.",
+    "strongest_revision_opportunities": [
+      "S02 : primitives fixes N^(−r/2+ε), denses N^(1−r+ε) et N^ε hôtes",
+      "S03 : très petite queue dès N^(9/10), c>0 fixé sans borne supérieure",
+      "S01 : deux profils quasi linéaires de paires",
+      "S04 : générateur par étoiles sans petite activité"
+    ],
+    "recommended_rewrite": "Révision légère à moyenne de l’article, avec remplacement local de la preuve de 15.5 ; révision plus marquée mais localisée de T19 et de l’appendice du compagnon. Pas de réécriture complète du cœur scientifique ni de changement revendiqué des puissances 4/3, 41/30 ou de la comparaison vectorielle 4/5.",
+    "reason": "Les points d’entrée exacts du cœur sont déjà cohérents. Le travail le plus rentable est d’aligner la présentation sur quelques résultats plus forts réellement fermés, de déplacer les mathématiques hors du bilan de formalisation, et de supprimer les descriptions devenues historiques."
+  },
+  "scope_and_limits": {
+    "read": "AGENTS.md ; débuts actuels et sections ciblées des fichiers de statut/correspondance/changements/inputs ; inventaires JSON ; revue des signatures compilées ; nombreuses sections centrales de l’article et du compagnon ; preuves et définitions Lean des points d’entrée recensés ci-dessous ; dépendances directes et quelques étapes intermédiaires des renforcements.",
+    "documents": "Article 65 pages et compagnon 102 pages ; texte intégral extrait pour les localisateurs, sans prétendre avoir relu ligne à ligne les deux documents.",
+    "visual_review": "Huit pages ciblées ont été rendues ; inspection visuelle détaillée de l’article p.63 et du compagnon pp.99–100. Aucun problème de débordement ou de clipping détecté sur ces pages ; ce n’est pas une validation visuelle de toutes les pages.",
+    "formal_depth": "16 contrôles sémantiques d’interfaces consignés, avec signatures exactes de sources et exemples centraux également présents dans l’inventaire compilé. Les preuves d’assemblage et les définitions d’objets ont été lues ; les quelque 20 000 déclarations et toute l’analytique du recensement friable n’ont pas été ré-auditées une par une.",
+    "validation": "Les trois empreintes gzip des journaux 0997 ont été recalculées et correspondent ; la fin du journal de build indique le succès ; les déclarations centrales et renforcées recherchées apparaissent dans l’audit avec seulement propext, Classical.choice, Quot.sound. Aucun fichier PaperP1, Audit.lean, lockfile ou toolchain n’a changé entre le commit source 292eaafc… des journaux et c1db11f… lors du contrôle. Aucun build ni extraction Lean nouvelle n’a été lancé.",
+    "bibliography": "Contrôle direct d’une source primaire cruciale : BCN arXiv v2, Theorem 2, (27). Pas de contrôle externe exhaustif de la bibliographie.",
+    "independence": "Relecture par une autre instance du modèle, indépendante de l’agent qui assemble les modifications. Ce n’est ni une expertise humaine externe ni une nouvelle certification Palomar."
+  },
+  "object_correspondence": {
+    "dyadicBlock": "Finset.Ico N (2*N), donc exactement [N,2N)∩Z pour N≥2.",
+    "originalLaw": "Loi du compte de startIndicator sous cylinderProbability(cutoff), avec égalité de masses au infiniteStartCount prouvée dans RetainedModifiedLaw.realMass_originalLaw.",
+    "countMoment": "Intégrale de (infiniteStartCount G L)^j sous infiniteRademacherMeasure ; j=1 est le vrai μ.",
+    "pairLoss": "2*L−finrank(squareClassSpace x L ⊔ squareClassSpace y L), la perte brute incluant les défauts locaux.",
+    "runRelativeNullity": "relativeNullityOn des véritables squareClassSpace ; la nullité effective utilisée dans 15.5.",
+    "Primitive": "Nullité effective positive ; chaque sous-famille propre a nullité zéro. Ce n’est ni la simple connexité ni la seule présence d’une relation à support total.",
+    "PrimitiveWindowMass.weight": "Produit des vraies infiniteMarginal x L multiplié par 2^relativeNullityOn ; aucune probabilité de conditionnement de rang n’est prise comme hypothèse.",
+    "signed_distance": "Somme des valeurs absolues des différences de masses, exactement le l1 du manuscrit ; TV est la moitié pour les probabilités."
+  },
+  "findings": [
+    {
+      "id": "C01",
+      "category": "correction_necessaire",
+      "title": "Mettre en cohérence la déclaration d’assistance et les sources de la version 1.7",
+      "importance": "élevée pour la fiabilité éditoriale",
+      "certainty": "certaine",
+      "locations": [
+        {
+          "file": "manuscripts/paper-p1/v1.7/sources/assistance.tex",
+          "line_start": 4,
+          "line_end": 22,
+          "pdf": "manuscripts/paper-p1/v1.7/pdf/P1_V1_7_Main_Article_2026-11-07_EN.pdf",
+          "pdf_pages": [
+            63
+          ]
+        },
+        {
+          "file": "manuscripts/paper-p1/v1.7/sources/formalization.tex",
+          "line_start": 5,
+          "line_end": 23,
+          "pdf": "manuscripts/paper-p1/v1.7/pdf/P1_V1_7_Main_Article_2026-11-07_EN.pdf",
+          "pdf_pages": [
+            62
+          ]
+        },
+        {
+          "file": "manuscripts/paper-p1/v1.7/sources/companion_sections/guide.tex",
+          "line_start": 164,
+          "line_end": 169,
+          "pdf": "manuscripts/paper-p1/v1.7/pdf/P1_V1_7_Technical_Companion_2026-11-07_EN.pdf",
+          "pdf_pages": [
+            4
+          ]
+        }
+      ],
+      "observation": "La fin de l’article affirme encore « No proof-assistant development is included » et présente les archives v1.6 comme les archives à consulter. La page précédente annonce un développement Lean et 167 énoncés révisés prouvés. La branche contenant cette phrase est exclue du compagnon. Le guide conserve aussi une description de commande destinée à l’ancienne archive.",
+      "justification": "Strictement rapportée à l’archive historique v1.6, l’absence de développement Lean peut être vraie. Dans le document v1.7 livré, l’absence de cette qualification temporelle et l’absence de destination actuelle rendent la description trompeuse. Ce constat ne met pas en défaut une preuve mathématique.",
+      "proposed_revision": "Remplacer le paragraphe par une description séparant l’archive historique et le dépôt de formalisation actuel ; conserver la responsabilité de l’auteur et la distinction entre contrôle du noyau et revue humaine. Vérifier les destinations réellement livrées avant de nommer une nouvelle archive.",
+      "proposed_english_text": "The finite diagnostic scripts in the preserved version 1.6 archive check selected identities. Version 1.7 is additionally accompanied by the Lean development, statement correspondence and kernel-axiom audits described in the preceding appendix and available in the associated repository. AI-assisted review and machine checking are distinct from independent human verification. The author remains responsible for the mathematical claims and their correspondence with the formal statements.",
+      "effect_on_mathematics": "Aucun ; correction documentaire certaine."
+    },
+    {
+      "id": "S01",
+      "category": "amelioration_scientifique_facultative",
+      "title": "Renforcer les deux profils de paires de 6/5 à 1",
+      "importance": "haute",
+      "certainty": "élevée : signatures, objets et preuve d’assemblage lus",
+      "locations": [
+        {
+          "file": "manuscripts/paper-p1/v1.7/sources/main_sections/arithmetic.tex",
+          "line_start": 98,
+          "line_end": 111,
+          "pdf": "manuscripts/paper-p1/v1.7/pdf/P1_V1_7_Main_Article_2026-11-07_EN.pdf",
+          "pdf_pages": [
+            15
+          ]
+        },
+        {
+          "file": "PaperP1/Asymptotics/NonalignedSourceResidual.lean",
+          "line_start": 23,
+          "line_end": 41
+        },
+        {
+          "file": "PaperP1/Asymptotics/NonalignedSourceResidual.lean",
+          "line_start": 124,
+          "line_end": 155
+        },
+        {
+          "file": "PaperP1/Arithmetic/NormalizedPairRankLoss.lean",
+          "line_start": 22
+        },
+        {
+          "file": "PaperP1/Arithmetic/PairHostCover.lean",
+          "line_start": 22,
+          "line_end": 23
+        }
+      ],
+      "observation": "La proposition 3.2 imprime N^(6/5+ε) pour le nombre d’hôtes séparés et pour le profil pondéré non aligné. uniform_source_bounds prouve simultanément N^(1+ε) pour ces deux objets.",
+      "justification": "pairLoss vaut exactement 2L−dim(S_x+S_y), donc le ρ arithmétique brut du §3, avec défauts locaux inclus. separatedHosts ajoute x+L<y ou y+L<x, équivalent à |x−y|>L. separatedNonalignedPairs garde le même intervalle I_N et le même non-alignement de rayon 1. uniform_weighted_hosts s’applique même à tout sous-ensemble de paires dyadiques non alignées ; aucune hypothèse de régularité ou compatibilité n’est ajoutée.",
+      "proposed_revision": "Garder la version élémentaire précoce si nécessaire à l’ordre de preuve, puis annoncer explicitement le renforcement après les comptes conditionnels et le confinement. Une version ultérieure peut remplacer l’énoncé initial par la version forte avec renvoi vers la preuve tardive. Ne pas prétendre qu’il est obtenu par la seule preuve élémentaire actuellement imprimée.",
+      "lean_evidence": [
+        {
+          "declaration": "PaperP1.NonalignedSourceResidual.uniform_source_bounds",
+          "file": "PaperP1/Asymptotics/NonalignedSourceResidual.lean",
+          "line_start": 124,
+          "line_end": 129,
+          "source_signature_exact": "theorem uniform_source_bounds (C ε : ℝ) (hε : 0 < ε) :\n    ∃ N₀ : ℕ, 2 ≤ N₀ ∧ ∀ N ≥ N₀, ∀ L : ℕ,\n      |(L : ℝ) - Real.log N / Real.log 2| ≤ C →\n      ((OriginalPairHosts.separatedHosts N L).card : ℝ) ≤ (N : ℝ) ^ (1 + ε) ∧\n      (∑ p ∈ separatedNonalignedPairs N L, ((2 ^ pairLoss p.1 p.2 L : ℝ) - 1)) ≤\n        (N : ℝ) ^ (1 + ε)"
+        },
+        {
+          "declaration": "PaperP1.NonalignedSourceResidual.uniform_weighted_hosts",
+          "file": "PaperP1/Asymptotics/NonalignedSourceResidual.lean",
+          "line_start": 28,
+          "line_end": 33,
+          "source_signature_exact": "theorem uniform_weighted_hosts (C ε : ℝ) (hε : 0 < ε) :\n    ∃ N₀ : ℕ, 2 ≤ N₀ ∧ ∀ N ≥ N₀, ∀ L : ℕ,\n      |(L : ℝ) - Real.log N / Real.log 2| ≤ C → ∀ F : Finset (ℕ × ℕ),\n      (∀ p ∈ F, p.1 ∈ dyadicBlock N ∧ p.2 ∈ dyadicBlock N) →\n      (∀ p ∈ F, ¬CompressedTargetAlignment.Aligned 1 p.1 p.2 L) →\n      (∑ p ∈ F, ((2 ^ pairLoss p.1 p.2 L : ℝ) - 1)) ≤ (N : ℝ) ^ (1 + ε)"
+        }
+      ],
+      "closed_internal_dependencies": [
+        "OriginalPairHosts.uniform_count : compte effectif via DependentBlockPairsCount.article_10_3, puis couverture des défauts locaux par RegularSetAsymptotic",
+        "DenseNonalignedPairs.uniform_kernel_hosts : régularisation physique à deux cibles, témoin à deux petits noyaux, SmallKernelWindows.critical_two_count",
+        "CriticalPairLossComparison.uniform_bound : raccord entre perte brute et intersection effective ; absorption des constantes avant N"
+      ],
+      "proposed_tex": "For every fixed $C>0$ and $\\varepsilon>0$, there is $N_0(C,\\varepsilon)$ such that, for all $N\\ge N_0$ and all critical $L$, both estimates in Proposition~\\ref{p1:arith:hosts} hold with $N^{1+\\varepsilon}$ in place of $N^{6/5+\\varepsilon}$. The nullity here is the full arithmetic nullity, including local kernels. The threshold is uniform over the ordered pairs and their deterministic subfamilies.",
+      "regime": "C et ε fixés avant un seuil commun ; N,L puis toutes les paires. Aucun ordre croissant.",
+      "mathematical_effect": "Le secteur non aligné p² fois ce profil peut être chargé à N^(−1+ε). Le premier canal rationnel omis reste le goulot de la référence explicite ; aucun nouveau taux scalaire optimal n’en découle automatiquement.",
+      "existing_change_ledger_ids": [
+        "P1-MATH-0068",
+        "P1-MATH-0113",
+        "P1-MATH-0409"
+      ],
+      "novelty_note": "Tri critique et priorisation d’acquis déjà présents dans le développement ; aucun nouveau checkpoint mathématique annoncé.",
+      "coefficient_scope": "Ce renforcement concerne les véritables fenêtres arithmétiques de I_N, sans coefficients libres dans l’énoncé. Les coefficients éventuels des modèles géométriques intermédiaires sont construits à partir de ces fenêtres et traités par les dépendances internes ; aucune hypothèse de hauteur nouvelle n’est demandée aux paires de 3.2."
+    },
+    {
+      "id": "S02",
+      "category": "amelioration_scientifique_facultative",
+      "title": "Remplacer le traitement des primitives fixes par les bornes r/2 et r−1",
+      "importance": "très haute",
+      "certainty": "élevée sur les interfaces et le raccord des objets ; pas de relecture exhaustive des modules géométriques de base",
+      "locations": [
+        {
+          "file": "manuscripts/paper-p1/v1.7/sources/main_sections/exact_transfer.tex",
+          "line_start": 192,
+          "line_end": 294,
+          "pdf": "manuscripts/paper-p1/v1.7/pdf/P1_V1_7_Main_Article_2026-11-07_EN.pdf",
+          "pdf_pages": [
+            41
+          ]
+        },
+        {
+          "file": "PaperP1/Asymptotics/SharpPrimitiveMass.lean",
+          "line_start": 21,
+          "line_end": 120
+        },
+        {
+          "file": "PaperP1/Asymptotics/DensePrimitiveRankMass.lean",
+          "line_start": 19,
+          "line_end": 59
+        },
+        {
+          "file": "PaperP1/Asymptotics/DensePrimitiveHosts.lean",
+          "line_start": 42,
+          "line_end": 131
+        },
+        {
+          "file": "PaperP1/Model/PrimitiveWindowMass.lean",
+          "line_start": 20,
+          "line_end": 23
+        },
+        {
+          "file": "PaperP1/Model/ConnectedWindowFamilies.lean",
+          "line_start": 26,
+          "line_end": 36
+        }
+      ],
+      "observation": "La proposition 15.5 ne conserve que N^(−4/3+ε) et, dans le secteur dense, N^(−2r/(r+2)+ε). Les points d’entrée actuels donnent, pour tout r fixé ≥3, une masse totale N^(−r/2+ε), et pour ρ_rel≥ηL une masse N^(1−r+ε) ; les hôtes primitifs denses sont eux-mêmes au nombre de N^ε.",
+      "justification": "Primitive signifie exactement nullité relative positive et nullité nulle de toute sous-famille propre. runRelativeNullity est cette nullité effective. weight est exactement (produit des vraies marginales p_x)·2^ρ_rel, donc le poids de 15.5, où le texte abrège ρ_rel en ρ. Le théorème Lean porte sur toutes les parties primitives de I_N et leurs sous-familles déterministes ; la restriction à l’ensemble admissible imprimé est immédiate. Il ne requiert ni régularité, ni compatibilité affine, ni séparation supplémentaire. Le cas nul des marginales rend certains poids nuls ; il ne restreint pas le dénombrement des hôtes denses.",
+      "proposed_revision": "Présenter une proposition forte à deux niveaux : toutes primitives fixes, puis primitives denses avec η fixé. Donner le lemme de confinement ancré qui fournit N^ε hôtes, puis la preuve de masse par ρ≤L. La preuve de 15.5 imprimée peut être raccourcie ou conservée en archive. Ne pas appeler ces familles simplement « connected » : la primitivité est essentielle.",
+      "lean_evidence": [
+        {
+          "declaration": "PaperP1.SharpPrimitiveMass.uniform_rank_mass",
+          "file": "PaperP1/Asymptotics/SharpPrimitiveMass.lean",
+          "line_start": 21,
+          "line_end": 26,
+          "source_signature_exact": "theorem uniform_rank_mass\n    (r : ℕ) (hr : 3 ≤ r) (C ε : ℝ) (hε : 0 < ε) :\n    ∃ N₀ : ℕ, 3 ≤ N₀ ∧ ∀ N ≥ N₀, ∀ L : ℕ,\n      |(L : ℝ) - Real.log N / Real.log 2| ≤ C → ∀ F : Finset (Finset ℕ),\n      (∀ I ∈ F, I ⊆ dyadicBlock N ∧ I.card = r ∧ Primitive L I) →\n        mass F L ≤ (N : ℝ) ^ (-(r : ℝ) / 2 + ε)"
+        },
+        {
+          "declaration": "PaperP1.SharpPrimitiveMass.uniform_actual_activity",
+          "file": "PaperP1/Asymptotics/SharpPrimitiveMass.lean",
+          "line_start": 69,
+          "line_end": 75,
+          "source_signature_exact": "theorem uniform_actual_activity\n    (r : ℕ) (hr : 3 ≤ r) (C ε : ℝ) (hε : 0 < ε) :\n    ∃ N₀ : ℕ, 3 ≤ N₀ ∧ ∀ N ≥ N₀, ∀ L : ℕ,\n      |(L : ℝ) - Real.log N / Real.log 2| ≤ C → ∀ F : Finset (Finset ℕ),\n      (∀ I ∈ F, I ⊆ dyadicBlock N ∧ I.card = r ∧ Primitive L I) →\n      (∑ I ∈ F, (infiniteJointMoment L I + |infiniteCenteredCoefficient L I|)) ≤\n        (N : ℝ) ^ (-(r : ℝ) / 2 + ε)"
+        },
+        {
+          "declaration": "PaperP1.DensePrimitiveRankMass.uniform_rank_mass",
+          "file": "PaperP1/Asymptotics/DensePrimitiveRankMass.lean",
+          "line_start": 19,
+          "line_end": 24,
+          "source_signature_exact": "theorem uniform_rank_mass\n    (r : ℕ) (hr : 3 ≤ r) (C η ε : ℝ) (hη : 0 < η) (hε : 0 < ε) :\n    ∃ N₀ : ℕ, 3 ≤ N₀ ∧ ∀ N ≥ N₀, ∀ L : ℕ,\n      |(L : ℝ) - Real.log N / Real.log 2| ≤ C → ∀ F : Finset (Finset ℕ),\n      (∀ I ∈ F, I.card = r ∧ I ⊆ dyadicBlock N ∧ Primitive L I ∧\n        η * L ≤ (runRelativeNullity L I : ℝ)) → mass F L ≤ (N : ℝ) ^ (1 - (r : ℝ) + ε)"
+        },
+        {
+          "declaration": "PaperP1.DensePrimitiveHosts.uniform_hosts",
+          "file": "PaperP1/Asymptotics/DensePrimitiveHosts.lean",
+          "line_start": 40,
+          "line_end": 47,
+          "source_signature_exact": "theorem uniform_hosts\n    (r : ℕ) (hr : 3 ≤ r) (C η ε : ℝ) (hη : 0 < η) (hε : 0 < ε) :\n    ∃ N₀ : ℕ, 3 ≤ N₀ ∧ ∀ N ≥ N₀, ∀ L : ℕ,\n      |(L : ℝ) - Real.log N / Real.log 2| ≤ C →\n      ∀ F : Finset (Finset ℕ),\n      (∀ I ∈ F, I.card = r ∧ I ⊆ dyadicBlock N ∧ Primitive L I ∧\n        η * L ≤ (runRelativeNullity L I : ℝ)) →\n        (F.card : ℝ) ≤ (N : ℝ) ^ ε"
+        }
+      ],
+      "closed_internal_dependencies": [
+        "DensePrimitiveHosts.uniform_hosts : FixedArityPhysicalRelationRegularization.uniform_subspace ; DenseAnchoredKernelWitness.uniform_witness ; relation primitive injective sur chaque bloc ; absence d’unité exacte entre les véritables fenêtres primitives ; SmallKernelWindows.critical_two_count",
+        "DenseAnchoredKernelWitness : contrôle des groupes physiques ancrés, pas d’hypothèse externe de compte d’hôtes dans son type final ; les hypothèses auxiliaires sont construites par la régularisation",
+        "DensePrimitiveRankMass : hôtes N^ε, vrais p_x≤K_C/N, nullité primitive≤L et 2^L≤2^C N",
+        "LowPrimitiveRankMass : compte indépendant de Cor. 10.2 et seuil de nullité L/b avec b fixé après ε ; SharpPrimitiveMass assemble les deux secteurs"
+      ],
+      "proposed_tex": "Fix an integer $r\\ge3$, $C>0$ and $\\varepsilon>0$. Uniformly in the critical band,\n\\[\n \\sum_{\\substack{I\\subseteq\\mathcal I_N,\\ |I|=r\\\\I\\ \\mathrm{primitive}}}\n  2^{\\rho_{\\rm rel}(I)}\\prod_{x\\in I}p_x\n \\ll_{r,C,\\varepsilon}N^{-r/2+\\varepsilon}.\n\\]\nFor each fixed $\\eta>0$, the subfamily with $\\rho_{\\rm rel}(I)\\ge\\eta L$ has $O_{r,C,\\eta,\\varepsilon}(N^\\varepsilon)$ hosts and total weight $O_{r,C,\\eta,\\varepsilon}(N^{1-r+\\varepsilon})$. In each assertion one threshold is chosen after the fixed parameters and before $N,L$ and the family being summed.",
+      "regime": "r fixé ≥3 ; η>0 fixé pour le seul secteur dense ; ε et C fixés ; seuil dépendant de ces paramètres. Aucune uniformité en r(N) ou η(N).",
+      "mathematical_effect": "Pour r=4, la masse passe de N^(−4/3+ε) à N^(−2+ε) et le secteur dense de N^(−4/3+ε) à N^(−3+ε). Cela simplifie les comptes fixes, sans supprimer l’obstruction de deux paires disjointes ni les estimations séparées à grands ordres.",
+      "existing_change_ledger_ids": [
+        "P1-MATH-0073",
+        "P1-MATH-0427"
+      ],
+      "novelty_note": "Tri critique et priorisation d’acquis déjà présents dans le développement ; aucun nouveau checkpoint mathématique annoncé.",
+      "coefficient_scope": "Le compte N^ε vise les familles primitives de véritables fenêtres x−1,…,x+L−1. Il ne prétend pas améliorer à N^ε le compte de tous les systèmes géométriques de T1.7 à coefficients arbitraires. Tous les centres sont dans le même I_N, et r, η et ε précèdent le seuil."
+    },
+    {
+      "id": "S03",
+      "category": "amelioration_scientifique_facultative",
+      "title": "Donner la très petite queue par le branchement à ordre log²N",
+      "importance": "haute",
+      "certainty": "élevée : même observable original et seuils contrôlés",
+      "locations": [
+        {
+          "file": "manuscripts/paper-p1/v1.7/sources/companion_sections/limits_appendix.tex",
+          "line_start": 296,
+          "line_end": 381,
+          "pdf": "manuscripts/paper-p1/v1.7/pdf/P1_V1_7_Technical_Companion_2026-11-07_EN.pdf",
+          "pdf_pages": [
+            71,
+            72
+          ]
+        },
+        {
+          "file": "PaperP1/Asymptotics/VerySmallTail.lean",
+          "line_start": 38,
+          "line_end": 72
+        },
+        {
+          "file": "PaperP1/Asymptotics/QuadraticTailScale.lean",
+          "line_start": 17,
+          "line_end": 19
+        },
+        {
+          "file": "PaperP1/Asymptotics/QuadraticOrderMoments.lean",
+          "line_start": 27,
+          "line_end": 49
+        },
+        {
+          "file": "PaperP1/Model/CountTailBounds.lean",
+          "line_start": 21,
+          "line_end": 26
+        }
+      ],
+      "observation": "T19.6 impose c<√13/4, avec une variante c<2/√5, et donne une longue preuve par petits pivots et coloration. Le développement actuel prouve une borne plus forte pour tout seuil b≥N^(9/10), puis le T19.6 imprimé pour chaque c>0 fixé.",
+      "justification": "probability et moment sont définis avec le compte original infiniteStartCount sur I_N, pas avec le compte modifié. QuadraticOrderMoments prouve F_k≤(2N^(3/4+ε))^k uniformément pour k≤K log²N. Avec ε=1/20 et k=ceil(128log²N), Markov donne exp(−2log³N) au seuil N^(9/10). Le facteur N^r donne le moment tronqué pour tous les entiers 0≤r≤log N. NearLinearThreshold conserve exactement ceil(ceil(N/L)e^(−c√(logN loglogN))), qui dépasse N^(9/10) pour chaque c fixé.",
+      "proposed_revision": "Remplacer la preuve de T19.6 par la branche croissance des moments–Markov et élargir c à tout réel positif fixé. Les anciens résultats de friabilité peuvent rester comme contexte s’ils sont utilisés ailleurs ; ils ne doivent plus être présentés comme des entrées nécessaires à ce résultat.",
+      "lean_evidence": [
+        {
+          "declaration": "PaperP1.VerySmallTail.power_threshold",
+          "file": "PaperP1/Asymptotics/VerySmallTail.lean",
+          "line_start": 38,
+          "line_end": 44,
+          "source_signature_exact": "theorem power_threshold (C : ℝ) :\n    ∃ N₀ : ℕ, 3 ≤ N₀ ∧ ∀ N ≥ N₀, ∀ L : ℕ,\n      |(L : ℝ) - Real.log N / Real.log 2| ≤ C → ∀ b : ℝ,\n      QuadraticTailScale.threshold N ≤ b →\n      CountTailBounds.probability N L b ≤ Real.exp (-2 * (Real.log N) ^ 3) ∧\n        ∀ r : ℕ, (r : ℝ) ≤ Real.log N →\n          CountTailBounds.moment N L b r ≤ Real.exp (-(Real.log N) ^ 3 / 2)"
+        },
+        {
+          "declaration": "PaperP1.VerySmallTail.companion_T19_6",
+          "file": "PaperP1/Asymptotics/VerySmallTail.lean",
+          "line_start": 56,
+          "line_end": 63,
+          "source_signature_exact": "theorem companion_T19_6 (C c : ℝ) (hc : 0 < c) :\n    ∃ N₀ : ℕ, 3 ≤ N₀ ∧ ∀ N ≥ N₀, ∀ L : ℕ,\n      |(L : ℝ) - Real.log N / Real.log 2| ≤ C →\n      CountTailBounds.probability N L (NearLinearThreshold.threshold N L c : ℝ) ≤\n          Real.exp (-(Real.log N) ^ 3) ∧\n        ∀ r : ℕ, 1 ≤ r → (r : ℝ) ≤ Real.log N →\n          CountTailBounds.moment N L (NearLinearThreshold.threshold N L c : ℝ) r ≤\n            Real.exp (-(Real.log N) ^ 3 / 2)"
+        },
+        {
+          "declaration": "PaperP1.QuadraticOrderMoments.factorial_bound",
+          "file": "PaperP1/Asymptotics/QuadraticOrderMoments.lean",
+          "line_start": 27,
+          "line_end": 30,
+          "source_signature_exact": "theorem factorial_bound (C K ε : ℝ) (hK : 0 ≤ K) (hε : 0 < ε) :\n    ∃ N₀ : ℕ, 3 ≤ N₀ ∧ ∀ N ≥ N₀, ∀ L : ℕ,\n      |(L : ℝ) - Real.log N / Real.log 2| ≤ C → ∀ k : ℕ, (k : ℝ) ≤ K * (Real.log N) ^ 2 →\n      factorialCountMoment (dyadicBlock N) L k ≤ (2 * (N : ℝ) ^ (3 / 4 + ε)) ^ k"
+        }
+      ],
+      "closed_internal_dependencies": [
+        "QuarticLogPrimePool.actual_pool_count_critical → QuadraticOrderBranching.badStarts_card_critical et retained_independent",
+        "FactorialBranching.factorial_le_power, initialisé à F_0=1 ; pas de recours aux moments fixes de la loi reconstruite",
+        "QuadraticTailScale.probability_bound → VerySmallTail.moment_bound ; NearLinearThreshold.threshold_ge_power fournit le seuil imprimé"
+      ],
+      "proposed_tex": "For each fixed critical band, there is $N_0(C)$ such that, uniformly for critical $L$, every $b\\ge N^{9/10}$ satisfies\n\\[\n \\Pr(Z_N>b)\\le e^{-2(\\log N)^3},\\qquad\n \\mathbb E[Z_N^r;Z_N>b]\\le e^{-(\\log N)^3/2}\n \\quad(0\\le r\\le\\log N,\\ r\\in\\mathbb N).\n\\]\nConsequently the assertions of Proposition~\\ref{p1:limits:colored-tail} hold for every fixed $c>0$, with a threshold that may depend on $c$.",
+      "regime": "C fixé ; seuil avant L, b et tous les r≤logN. Pour le seuil près de N, c fixé avant N ; pas d’uniformité en c(N).",
+      "mathematical_effect": "Amélioration de domaine et suppression d’un gros détour analytique. Aucune borne uniforme de moment exponentiel réel du compte original n’en résulte : T19.7 conserve son rôle.",
+      "existing_change_ledger_ids": [
+        "P1-MATH-0033"
+      ],
+      "novelty_note": "Tri critique et priorisation d’acquis déjà présents dans le développement ; aucun nouveau checkpoint mathématique annoncé."
+    },
+    {
+      "id": "S04",
+      "category": "amelioration_scientifique_facultative",
+      "title": "Remplacer les arbres enracinés du générateur par des étoiles disjointes",
+      "importance": "moyenne à haute pour la preuve",
+      "certainty": "élevée",
+      "locations": [
+        {
+          "file": "manuscripts/paper-p1/v1.7/sources/main_sections/cores.tex",
+          "line_start": 111,
+          "line_end": 122,
+          "pdf": "manuscripts/paper-p1/v1.7/pdf/P1_V1_7_Main_Article_2026-11-07_EN.pdf",
+          "pdf_pages": [
+            24
+          ]
+        },
+        {
+          "file": "manuscripts/paper-p1/v1.7/sources/companion_sections/cores.tex",
+          "line_start": 93,
+          "line_end": 110,
+          "pdf": "manuscripts/paper-p1/v1.7/pdf/P1_V1_7_Technical_Companion_2026-11-07_EN.pdf",
+          "pdf_pages": [
+            53
+          ]
+        },
+        {
+          "file": "PaperP1/Combinatorics/MarkedGraphGenerator.lean",
+          "line_start": 19,
+          "line_end": 83
+        },
+        {
+          "file": "PaperP1/Combinatorics/GraphStarWeights.lean",
+          "line_start": 95,
+          "line_end": 119
+        }
+      ],
+      "observation": "Le texte donne exp(Mz+4nΔz²/(1−4Δz)) sous 4Δz<1. Une borne plus forte, sans condition de petitesse, est déjà prouvée : exp(Mz+nz((1+z)^Δ−1)), ainsi que sa version hétérogène.",
+      "justification": "L’ensemble admissible est exactement celui dont les sommets isolés induits sont marqués. Il se partitionne en singletons marqués et étoiles non triviales. En oubliant les contraintes entre ces blocs et en sommant leurs poids, on obtient directement l’exponentielle. Le lemme ne dépend d’aucune arithmétique du modèle.",
+      "proposed_revision": "Privilégier la version à poids hétérogènes, puis donner le corollaire homogène. Une preuve par couverture minimale d’arêtes explique pourquoi les composantes des blocs retenus sont des étoiles. La variante rationnelle vaut exp(Mz+2nΔz²/(2−Δz)) pour Δz<2. Ne pas multiplier les énoncés si la version polynomiale suffit.",
+      "lean_evidence": [
+        {
+          "declaration": "PaperP1.MarkedGraphGenerator.polynomial_star_bound",
+          "file": "PaperP1/Combinatorics/MarkedGraphGenerator.lean",
+          "line_start": 26,
+          "line_end": 28,
+          "source_signature_exact": "theorem polynomial_star_bound (marks : Finset V) (z : ℝ) (hz : 0 ≤ z) :\n    total G marks z ≤ Real.exp ((marks.card : ℝ) * z +\n      (Fintype.card V : ℝ) * z * ((1 + z) ^ G.maxDegree - 1))"
+        },
+        {
+          "declaration": "PaperP1.MarkedGraphGenerator.rational_star_bound",
+          "file": "PaperP1/Combinatorics/MarkedGraphGenerator.lean",
+          "line_start": 63,
+          "line_end": 67,
+          "source_signature_exact": "theorem rational_star_bound (marks : Finset V) (z : ℝ) (hz : 0 ≤ z)\n    (hsmall : (G.maxDegree : ℝ) * z < 2) :\n    total G marks z ≤ Real.exp ((marks.card : ℝ) * z +\n      2 * (Fintype.card V : ℝ) * (G.maxDegree : ℝ) * z ^ 2 /\n        (2 - (G.maxDegree : ℝ) * z))"
+        },
+        {
+          "declaration": "PaperP1.GraphStarWeights.heterogeneous_generating_bound",
+          "file": "PaperP1/Combinatorics/GraphStarWeights.lean",
+          "line_start": 110,
+          "line_end": 112,
+          "source_signature_exact": "theorem heterogeneous_generating_bound (marks : Finset V) (w : V → ℝ) (hw : ∀ v, 0 ≤ w v) :\n    generating w (families G marks) ≤ Real.exp ((∑ v ∈ marks, w v) +\n      ∑ c, w c * ((∏ v ∈ G.neighborFinset c, (1 + w v)) - 1))"
+        }
+      ],
+      "closed_internal_dependencies": [
+        "MinimalFiniteCover.exists_private_cover → GraphStarPartition.exists_partition → FinitePolymerBound.generating_le_exp ; somme exacte des feuilles de chaque étoile"
+      ],
+      "proposed_tex": "For every $z\\ge0$,\n\\[\n \\sum_{D\\in\\mathcal F}z^{|D|}\n \\le\\exp\\{Mz+nz((1+z)^\\Delta-1)\\}.\n\\]\nMore generally the exponent is bounded by\n$\\sum_{v\\in\\mathcal M}w_v+\\sum_v w_v(\\prod_{u\\sim v}(1+w_u)-1)$ for nonnegative vertex weights, where $\\mathcal M$ is the marked vertex set and $M=|\\mathcal M|$.",
+      "regime": "Graphe simple fini, poids non négatifs ; pas d’asymptotique, pas de petite activité.",
+      "mathematical_effect": "Preuve plus courte et adaptée aux marginales hétérogènes. Les applications présentes ont déjà Δz→0 : pas d’amélioration automatique d’un exposant arithmétique.",
+      "existing_change_ledger_ids": [
+        "P1-MATH-0022"
+      ],
+      "novelty_note": "Tri critique et priorisation d’acquis déjà présents dans le développement ; aucun nouveau checkpoint mathématique annoncé."
+    },
+    {
+      "id": "S05",
+      "category": "amelioration_scientifique_facultative",
+      "title": "Permettre un majorant de degré qui ne croît pas plus vite que logB",
+      "importance": "moyenne",
+      "certainty": "élevée",
+      "locations": [
+        {
+          "file": "manuscripts/paper-p1/v1.7/sources/main_sections/pair_rigidity.tex",
+          "line_start": 228,
+          "line_end": 255,
+          "pdf": "manuscripts/paper-p1/v1.7/pdf/P1_V1_7_Main_Article_2026-11-07_EN.pdf",
+          "pdf_pages": [
+            32
+          ]
+        },
+        {
+          "file": "PaperP1/Asymptotics/QuadraticGrowingDegreePlaneCount.lean",
+          "line_start": 15,
+          "line_end": 45
+        },
+        {
+          "file": "PaperP1/Analysis/CurveDegreeProfile.lean",
+          "line_start": 88,
+          "line_end": 98
+        }
+      ],
+      "observation": "La preuve imprimée de 13.5 utilise D_max=B^(a+o(1)) avec 0<a<1/2 et sa croissance plus rapide que logB. Le théorème Lean couvre un simple majorant de puissance supérieure, permet a=0, et inclut donc les plafonds bornés ou polylogarithmiques.",
+      "justification": "Pour H≥1 et 2≤D≤M, le profil D²H^(1/D) est au plus 4√H+e(M²+(logH)²), sans condition M≥logH. L’excédent logarithmique s’absorbe dans √B. source_uniform_bound est uniforme avant M et avant le corps et le polynôme ; le type final utilise un polynôme irréductible sur un corps de caractéristique zéro plongé dans C.",
+      "proposed_revision": "Formuler la corollaire avec D_max≤B^(a+o(1)), 0≤a<1/2 ; garder la même conclusion o(B). Rendre explicite que les constantes du compte de points sont indépendantes de la courbe et du degré.",
+      "lean_evidence": [
+        {
+          "declaration": "PaperP1.QuadraticGrowingDegreePlaneCount.article_13_5",
+          "file": "PaperP1/Asymptotics/QuadraticGrowingDegreePlaneCount.lean",
+          "line_start": 33,
+          "line_end": 43,
+          "source_signature_exact": "theorem article_13_5 (c₀ a : ℝ) (hc₀ : 0 < c₀) (ha : 0 ≤ a) (ha₁ : a < 1 / 2)\n    (cap : ℕ → ℝ) (hcap : UpperPowerCap a cap) :\n    (∃ A : ℝ, 0 < A ∧ ∃ B₀ : ℕ, 2 ≤ B₀ ∧ ∀ B ≥ B₀,\n      ∀ (K : Type) [Field K] [CharZero K] [Algebra K ℂ], ∀ P : K[X][X], Irreducible P →\n      2 ≤ PlaneCurvePointCount.degree P → (PlaneCurvePointCount.degree P : ℝ) ≤ cap B →\n        ((grid P ⌊c₀ * B⌋₊).card : ℝ) ≤\n          A * ((B : ℝ) ^ (1 / 2 : ℝ) + cap B ^ 2) * Real.log B ^ (17 : ℝ)) ∧\n    (∀ ε : ℝ, 0 < ε → ∃ B₀ : ℕ, 2 ≤ B₀ ∧ ∀ B ≥ B₀,\n      ∀ (K : Type) [Field K] [CharZero K] [Algebra K ℂ], ∀ P : K[X][X], Irreducible P →\n      2 ≤ PlaneCurvePointCount.degree P → (PlaneCurvePointCount.degree P : ℝ) ≤ cap B →\n        ((grid P ⌊c₀ * B⌋₊).card : ℝ) ≤ ε * B)"
+        },
+        {
+          "declaration": "PaperP1.CurveDegreeProfile.degree_uniform_bound_without_cap_growth",
+          "file": "PaperP1/Analysis/CurveDegreeProfile.lean",
+          "line_start": 88,
+          "line_end": 90,
+          "source_signature_exact": "theorem degree_uniform_bound_without_cap_growth (H D M : ℝ) (hH : 1 ≤ H)\n    (hD : 2 ≤ D) (hDM : D ≤ M) :\n    profile H D ≤ 4 * H ^ (1 / 2 : ℝ) + Real.exp 1 * (M ^ 2 + Real.log H ^ 2)"
+        }
+      ],
+      "closed_internal_dependencies": [
+        "QuadraticPlaneUniformBound.uniform_bound fournit le compte de points avec puissance logarithmique 17 ; CurveDegreeProfile et PlaneCurvePointCount assemblent le régime variable"
+      ],
+      "proposed_tex": "Fix $0\\le a<1/2$ and $c_0>0$. Let $D_{\\max}(B)$ satisfy, for every $\\delta>0$, $D_{\\max}(B)\\le B^{a+\\delta}$ eventually. Uniformly for integral plane curves with $2\\le D\\le D_{\\max}(B)$, the bound in Corollary~\\ref{p13:rig:sublinear-grid} holds and is $o(B)$.",
+      "regime": "a, c0 et fonction plafond fixés avant le seuil ; degré et coefficients variables après le seuil. Aucun plafond effectif uniforme pour tous a<1/2 à la fois.",
+      "existing_change_ledger_ids": [
+        "P1-MATH-0079"
+      ],
+      "novelty_note": "Tri critique et priorisation d’acquis déjà présents dans le développement ; aucun nouveau checkpoint mathématique annoncé."
+    },
+    {
+      "id": "S06",
+      "category": "amelioration_scientifique_facultative",
+      "title": "Deux petites améliorations sûres des constantes et erreurs",
+      "importance": "basse",
+      "certainty": "élevée",
+      "locations": [
+        {
+          "file": "manuscripts/paper-p1/v1.7/sources/main_sections/closure.tex",
+          "line_start": 86,
+          "line_end": 102,
+          "pdf": "manuscripts/paper-p1/v1.7/pdf/P1_V1_7_Main_Article_2026-11-07_EN.pdf",
+          "pdf_pages": [
+            25
+          ]
+        },
+        {
+          "file": "manuscripts/paper-p1/v1.7/sources/main_sections/quartic_lower.tex",
+          "line_start": 28,
+          "line_end": 41,
+          "pdf": "manuscripts/paper-p1/v1.7/pdf/P1_V1_7_Main_Article_2026-11-07_EN.pdf",
+          "pdf_pages": [
+            50
+          ]
+        },
+        {
+          "file": "PaperP1/Probability/PoissonSecondDifferenceNorm.lean",
+          "line_start": 46,
+          "line_end": 57
+        },
+        {
+          "file": "PaperP1/Asymptotics/FourthCumulantIdentities.lean",
+          "line_start": 18,
+          "line_end": 33
+        }
+      ],
+      "observation": "La constante C(λ)≥e^(−λ)/4 peut être doublée en e^(−λ)/2. La première erreur de l’identité κ4=24K4+erreur vaut N^(−5/3+ε) dans le point d’entrée Lean, au lieu de N^(−3/2+ε) imprimé.",
+      "justification": "Une suite sommable de masse totale nulle a une norme l1 au moins égale à deux fois sa masse positive en zéro. La première identité de FourthCumulantIdentities.article_16_1 distingue explicitement l’erreur de cumulant −5/3 et l’erreur d’incompatibilité −3/2.",
+      "proposed_revision": "Corriger le facteur deux dans la borne de C sans ajouter un nouveau lemme. Si l’identité quartique est révisée, préserver les deux erreurs séparées ; la borne finale signée reste −3/2.",
+      "lean_evidence": [
+        {
+          "declaration": "PaperP1.PoissonSecondDifferenceNorm.coefficient_lower_bound",
+          "file": "PaperP1/Probability/PoissonSecondDifferenceNorm.lean",
+          "line_start": 53,
+          "line_end": 54,
+          "source_signature_exact": "theorem coefficient_lower_bound (μ : ℝ) (hμ : 0 ≤ μ) :\n    Real.exp (-μ) / 2 ≤ correctionCoefficient μ"
+        },
+        {
+          "declaration": "PaperP1.FourthCumulantIdentities.article_16_1",
+          "file": "PaperP1/Asymptotics/FourthCumulantIdentities.lean",
+          "line_start": 18,
+          "line_end": 29,
+          "source_signature_exact": "theorem article_16_1 (C ε : ℝ) (hε : 0 < ε) :\n    ∃ N₀ : ℕ, 2 ≤ N₀ ∧ ∀ N ≥ N₀, ∀ L : ℕ,\n      |(L : ℝ) - Real.log N / Real.log 2| ≤ C →\n      let F := connectedFamilies (dyadicBlock N) L 4\n      let κ₄ := fourthFactorialCumulant (dyadicBlock N) L\n      let α := RegularCumulantTransfer.secondFactorialCumulant (dyadicBlock N) L\n      0 ≤ CompatibleActivitySplit.positive L F ∧\n      |κ₄ - 24 * CompatibleActivitySplit.signed L F| ≤ (N : ℝ) ^ (-5 / 3 + ε) ∧\n      |CompatibleActivitySplit.signed L F - CompatibleActivitySplit.positive L F| ≤\n        (N : ℝ) ^ (-3 / 2 + ε) ∧\n      |κ₄ + 3 * α ^ 2 - (3 * α ^ 2 + 24 * CompatibleActivitySplit.positive L F)| ≤\n        (N : ℝ) ^ (-3 / 2 + ε)"
+        }
+      ],
+      "proposed_tex": "$e^{-\\lambda}/2\\le\\mathcal C(\\lambda)\\le1$. Also $\\kappa_4=24K_4+O_{C,\\varepsilon}(N^{-5/3+\\varepsilon})$, while $K_4-K_4^+=O_{C,\\varepsilon}(N^{-3/2+\\varepsilon})$.",
+      "mathematical_effect": "Aucun changement de l’exposant optimal 4/3 ; l’erreur d’incompatibilité limite encore la conclusion quartique.",
+      "existing_change_ledger_ids": [
+        "P1-MATH-0023"
+      ],
+      "novelty_note": "Tri critique et priorisation d’acquis déjà présents dans le développement ; aucun nouveau checkpoint mathématique annoncé."
+    },
+    {
+      "id": "S07",
+      "category": "amelioration_scientifique_facultative",
+      "title": "Rendre exact le petit exemple de rang, sans développer une nouvelle théorie",
+      "importance": "basse",
+      "certainty": "certaine par calcul fini indépendant ; pas encore un nouveau théorème Lean de cette revue",
+      "locations": [
+        {
+          "file": "manuscripts/paper-p1/v1.7/sources/formalization.tex",
+          "line_start": 258,
+          "line_end": 279,
+          "pdf": "manuscripts/paper-p1/v1.7/pdf/P1_V1_7_Technical_Companion_2026-11-07_EN.pdf",
+          "pdf_pages": [
+            99
+          ]
+        },
+        {
+          "file": "PaperP1/Model/RankChargedPrimeCylinder.lean",
+          "line_start": 306,
+          "line_end": 347
+        }
+      ],
+      "observation": "Pour N=18 et q=3, le texte et Lean ne donnent que r≤10. Le rang est exactement 10 et la fibre de forçage comporte exactement deux des 2048 échantillons de signes premiers.",
+      "justification": "Les quinze entiers observés sont exactement 21,…,35. Les lignes de parité des valeurs 27,32,30,28,22,26,34,23,29,31 engendrent successivement les dix coordonnées 3,2,5,7,11,13,17,23,29,31. La coordonnée 19 est libre. L’énumération entière indépendante confirme deux solutions, f négatif seulement en 3, ou seulement en 3 et 19 ; le compte positif et le compte total valent cinq dans ces deux solutions.",
+      "proposed_revision": "Si cet exemple est conservé, remplacer « r≤10 » par « r=10 » après ajout d’un petit certificat de rang. Cela rend l’exemple autonome. Ne pas en déduire une formule de rang général ou une amélioration du seuil t>2.",
+      "proposed_tex": "In this example the rank is exactly $10$: the observed values $27,32,30,28,22,26,34,23,29,31$ successively determine every prime bit except that of $19$. Thus the forcing event has exactly probability $2^{-10}$.",
+      "independent_check": "finite-rank-check.json",
+      "mathematical_effect": "Précision d’un exemple seulement ; gain exactement deux pour le coût de cette fibre par rapport au cylindre atomique, sans assertion d’optimalité de la borne globale de moment."
+    },
+    {
+      "id": "E01",
+      "category": "reprise_editoriale",
+      "title": "Séparer les nouveaux résultats mathématiques du bilan de formalisation",
+      "importance": "haute",
+      "certainty": "élevée",
+      "locations": [
+        {
+          "file": "manuscripts/paper-p1/v1.7/sources/formalization.tex",
+          "line_start": 72,
+          "line_end": 164,
+          "pdf": "manuscripts/paper-p1/v1.7/pdf/P1_V1_7_Technical_Companion_2026-11-07_EN.pdf",
+          "pdf_pages": [
+            96,
+            97
+          ]
+        },
+        {
+          "file": "manuscripts/paper-p1/v1.7/sources/formalization.tex",
+          "line_start": 167,
+          "line_end": 279,
+          "pdf": "manuscripts/paper-p1/v1.7/pdf/P1_V1_7_Technical_Companion_2026-11-07_EN.pdf",
+          "pdf_pages": [
+            98,
+            99
+          ]
+        },
+        {
+          "file": "manuscripts/paper-p1/v1.7/sources/formalization.tex",
+          "line_start": 281,
+          "line_end": 378,
+          "pdf": "manuscripts/paper-p1/v1.7/pdf/P1_V1_7_Technical_Companion_2026-11-07_EN.pdf",
+          "pdf_pages": [
+            99,
+            100
+          ]
+        },
+        {
+          "file": "manuscripts/paper-p1/v1.7/sources/main_sections/limits_appendix.tex",
+          "line_start": 11,
+          "line_end": 69,
+          "pdf": "manuscripts/paper-p1/v1.7/pdf/P1_V1_7_Main_Article_2026-11-07_EN.pdf",
+          "pdf_pages": [
+            60,
+            61
+          ]
+        }
+      ],
+      "observation": "L’appendice de formalisation héberge aujourd’hui un véritable argument analytique nécessaire à T19.17, trois raffinements de cylindre et les identités exactes du champ de référence. Ces contenus scientifiques sont placés après le récit de révision et accompagnés de nombreux noms de modules.",
+      "justification": "Le recensement de nombres friables est utilisé en T19.17 et mérite une place de lemme technique à proximité de son application. Les identités Poisson sont des propriétés du modèle de référence défini dans 20.1 ; elles restent utiles même au lecteur qui ne consulte pas Lean. Le bilan de formalisation gagnerait à garder uniquement le périmètre, les deux corrections, les pointeurs stables et la procédure de reproduction.",
+      "proposed_revision": "Déplacer le recensement suffisant et sa preuve dans une sous-section technique de T19 ; réunir les renforcements du cylindre après T19.7 ; placer une courte proposition sur le champ à côté du lemme 20.1 et sa preuve dans T19. Garder la version d’article de l’appendice de formalisation en une page environ. Les numéros existants peuvent rester stables par sous-sections ou noms de propositions nouveaux.",
+      "proposed_revision_order": [
+        "Contenu scientifique : énoncé, hypothèses et preuve dans la section concernée",
+        "Bilan : portée des 167 résultats révisés, deux originaux faux et signatures de référence",
+        "Dépôt : détails de noyau, étapes de preuve et journaux dans les fichiers techniques"
+      ],
+      "risk": "Il ne faut pas supprimer la preuve du recensement avant d’avoir déplacé son unique point d’entrée utilisé par T19.17."
+    },
+    {
+      "id": "E02",
+      "category": "reprise_editoriale",
+      "title": "Unifier les notations du champ et son hypothèse de compensation",
+      "importance": "moyenne",
+      "certainty": "élevée",
+      "locations": [
+        {
+          "file": "manuscripts/paper-p1/v1.7/sources/main_sections/limits_appendix.tex",
+          "line_start": 15,
+          "line_end": 43,
+          "pdf": "manuscripts/paper-p1/v1.7/pdf/P1_V1_7_Main_Article_2026-11-07_EN.pdf",
+          "pdf_pages": [
+            60
+          ]
+        },
+        {
+          "file": "manuscripts/paper-p1/v1.7/sources/formalization.tex",
+          "line_start": 281,
+          "line_end": 344,
+          "pdf": "manuscripts/paper-p1/v1.7/pdf/P1_V1_7_Technical_Companion_2026-11-07_EN.pdf",
+          "pdf_pages": [
+            99,
+            100
+          ]
+        },
+        {
+          "file": "PaperP1/Probability/PositionalArrivalMarginals.lean",
+          "line_start": 120,
+          "line_end": 143
+        },
+        {
+          "file": "PaperP1/Probability/PositionalBivariateLaw.lean",
+          "line_start": 179,
+          "line_end": 239
+        }
+      ],
+      "observation": "Le champ est noté H_x dans l’article et Z_x dans l’appendice. Le paragraphe bivarié réemploie p_x,p_y pour les intensités de référence, alors que p_x est partout ailleurs la vraie marginale arithmétique, qui peut différer de p. Les généralisations à des paquets finis ne rappellent pas explicitement leur admissibilité ν_x≥0.",
+      "justification": "Les types Lean sont corrects : hp impose p_x−incidence≥0, hq impose q_e≥0, et hInd l’indépendance mutuelle de toutes les cellules. Le texte initial de 20.1 établit bien cette positivité pour N grand. C’est la formulation générale et le changement de notation qui risquent de faire perdre cette hypothèse. Les identités exactes ne sont pas celles des indicateurs arithmétiques : pour une bonne paire régulière Cov(J_x,J_y)=q_e−p², tandis que Cov(H_x,H_y)=q_e ; les variances valent respectivement p(1−p) et p.",
+      "proposed_revision": "Employer H_x partout pour la référence et des intensités p_x^ref dans l’extension hétérogène. Introduire la proposition générale par « let q_e≥0 and p_x^ref≥Σ_{e∋x}q_e ». Rappeler x,y distincts pour la somme de taux partagés sans terme diagonal. Les blocs éventuellement chevauchants restent couverts : une coordonnée commune doit alors avoir intensité nulle pour que les blocs soient indépendants.",
+      "proposed_tex": "Let $E$ be a finite family of packets, $q_e\\ge0$, and $p_x^{\\rm ref}\\ge\\sum_{e\\ni x}q_e$. Define $H_x$ from mutually independent Poisson cells as above. All marginal, covariance and independence identities below concern this reference field. In the arithmetic application $p_x^{\\rm ref}=p$ on the full grid.",
+      "exposition_only_pgf": "For pair packets, the single identity\n\\[\n \\mathbb E\\prod_x s_x^{H_x}\n =\\exp\\!\\left\\{\\sum_xp_x^{\\rm ref}(s_x-1)\n       +\\sum_{\\{x,y\\}\\in E}q_{\\{x,y\\}}(s_x-1)(s_y-1)\\right\\}\n\\]\nprovides a compact way to present the already established reference identities. It is an exposition suggestion, not a request for a new formal proof or a new arithmetic approximation.",
+      "mathematical_effect": "Aucune erreur trouvée dans les formules actuelles ; la clarification empêche de transporter à tort le graphe de dépendance de H vers les indicateurs J."
+    },
+    {
+      "id": "E03",
+      "category": "reprise_editoriale",
+      "title": "Garder une révision sélective du récit, au lieu d’intégrer les 997 étapes",
+      "importance": "haute",
+      "certainty": "élevée",
+      "locations": [
+        {
+          "file": "manuscripts/paper-p1/v1.7/sources/main_sections/introduction.tex",
+          "line_start": 610,
+          "line_end": 731,
+          "pdf": "manuscripts/paper-p1/v1.7/pdf/P1_V1_7_Main_Article_2026-11-07_EN.pdf",
+          "pdf_pages": [
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "file": "manuscripts/paper-p1/v1.7/sources/main_sections/exact_transfer.tex",
+          "line_start": 887,
+          "line_end": 1038,
+          "pdf": "manuscripts/paper-p1/v1.7/pdf/P1_V1_7_Main_Article_2026-11-07_EN.pdf",
+          "pdf_pages": [
+            48,
+            49
+          ]
+        },
+        {
+          "file": "manuscripts/paper-p1/v1.7/sources/main_sections/discussion.tex",
+          "line_start": 226,
+          "line_end": 262,
+          "pdf": "manuscripts/paper-p1/v1.7/pdf/P1_V1_7_Main_Article_2026-11-07_EN.pdf",
+          "pdf_pages": [
+            59
+          ]
+        },
+        {
+          "file": "docs/mathematical-changes.json",
+          "line_start": 1
+        }
+      ],
+      "observation": "Le dossier de 997 changements mélange corrections d’énoncés, gains véritables et étapes internes de construction. L’article distingue déjà utilement les régimes, les références exactes/explicites et les trois branches de preuve ; la refonte intégrale n’est pas justifiée par les contrôles effectués ici.",
+      "justification": "Le plus fort gain de clarté vient de trois remplacements locaux (primitives, queues, générateur) et de deux compléments (profil quasi linéaire, degré-plafond). Le théorème principal, ses paramètres exacts, l’obstruction quartique et les restrictions d’uniformité ne nécessitent pas de nouvelle narration globale.",
+      "proposed_revision": "Réécriture légère à moyenne de l’article, plus substantielle et localisée du compagnon T19 et de la preuve de 15.5. Garder la carte de dépendances mais la mettre à jour après les déplacements. Une revue future des nouvelles interfaces doit précéder toute affirmation d’un taux Hermite amélioré, d’une limite de degré croissante plus large, ou d’un abaissement du cutoff 256.",
+      "do_not_integrate": [
+        "Les généralisations semiring/abelian-group qui n’aident pas les usages scientifiques",
+        "La liste des sous-lemmes de transport et des audits individuels",
+        "Les numéros de checkpoints répétés comme substitut à une hypothèse mathématique",
+        "Des gains de taux déduits seulement de bornes fixes en r ou de la covariance du champ de référence"
+      ],
+      "proposed_bibliographic_action": "Conserver les attributions des résultats classiques même lorsqu’un analogue est prouvé dans Lean ; distinguer « résultat utilisé dans la preuve imprimée », « contexte » et « variante devenue inutile ». Le renvoi BCN v2 Theorem 2/(27) a été vérifié directement et son domaine est correct. La bibliographie entière, notamment les références datées de 2026, n’a pas fait l’objet d’un contrôle externe exhaustif."
+    }
+  ],
+  "central_signature_audit": [
+    {
+      "id": "A01",
+      "printed_location": {
+        "file": "manuscripts/paper-p1/v1.7/sources/main_sections/introduction.tex",
+        "line_start": 77,
+        "line_end": 93,
+        "pdf": "manuscripts/paper-p1/v1.7/pdf/P1_V1_7_Main_Article_2026-11-07_EN.pdf",
+        "pdf_pages": [
+          3
+        ]
+      },
+      "lean": {
+        "declaration": "PaperP1.OptimalQuadratic.article_1_1",
+        "file": "PaperP1/Asymptotics/OptimalQuadratic.lean",
+        "line_start": 27,
+        "line_end": 32,
+        "source_signature_exact": "theorem article_1_1 (C ε : ℝ) (hε : 0 < ε) :\n    ∃ a : ℝ, 0 < a ∧ ∃ N₀ : ℕ, 10 ≤ N₀ ∧ ∀ N ≥ N₀, ∀ L : ℕ,\n      |(L : ℝ) - Real.log N / Real.log 2| ≤ C →\n      a * (N : ℝ) ^ (-4 / 3 - ε) ≤ error N L ∧ error N L ≤ (N : ℝ) ^ (-4 / 3 + ε) ∧\n      |countMoment (dyadicBlock N) L 1 - (N : ℝ) * (2 ^ L : ℝ)⁻¹| ≤\n        (2 : ℝ) ^ C * (N : ℝ) ^ (-1 + ε) ∧ AtomicSignedLaw.IsProbability (reference N L)"
+      },
+      "verdict": "Accord contrôlé sur le point d’entrée : loi originale, vrais μ et α, deux côtés, biais de moyenne et positivité éventuelle. Aucun argument supposant la borne finale n’est exposé dans le type.",
+      "hypotheses_and_quantifiers": "C, ε réels ; ε>0 ; ∃a>0 puis ∃N0≥10 puis ∀N≥N0 et ∀L naturels dans la bande. C>0 imprimé est plus restrictif que le type qui accepte tout C. La constante supérieure unitaire est plus forte que le grand O imprimé et obtenue par absorption dans ε. Le défaut L≥1 est automatiquement imposé pour N grand dans une bande fixe.",
+      "dependency_check": [
+        "FourThirdsQuadraticUpper.uniform_exact (SharpThirdActivity + reconstruction), QuadraticLawLowerBound.article_16_2_lower, CriticalActualMean.uniform_nominal_bias, ActualReferenceProbability.uniform_quadratic_probability sont obtenus séparément dans la preuve.",
+        "SignedAtomicDistance.distance est la somme l1, sans facteur 1/2 ; originalLaw est le vrai compte en cylindre avec transport exact à la mesure infinie."
+      ]
+    },
+    {
+      "id": "A02",
+      "printed_location": {
+        "file": "manuscripts/paper-p1/v1.7/sources/main_sections/introduction.tex",
+        "line_start": 116,
+        "line_end": 140,
+        "pdf": "manuscripts/paper-p1/v1.7/pdf/P1_V1_7_Main_Article_2026-11-07_EN.pdf",
+        "pdf_pages": [
+          4
+        ]
+      },
+      "lean": {
+        "declaration": "PaperP1.ExactPoissonScale.article_1_2",
+        "file": "PaperP1/Asymptotics/ExactPoissonScale.lean",
+        "line_start": 43,
+        "line_end": 54,
+        "source_signature_exact": "theorem article_1_2\n    (C ε : ℝ) (hε : 0 < ε) :\n    (∃ N₀ : ℕ, 10 ≤ N₀ ∧ ∀ N ≥ N₀, ∀ L : ℕ,\n        |(L : ℝ) - Real.log N / Real.log 2| ≤ C →\n        |actualTV N L - RegularCumulantTransfer.secondFactorialCumulant (dyadicBlock N) L / 4 *\n          norm (countMoment (dyadicBlock N) L 1) 2| ≤ (N : ℝ) ^ (-4 / 3 + ε) ∧\n        |nominalTV N L - RegularCumulantTransfer.secondFactorialCumulant (dyadicBlock N) L / 4 *\n          norm (nominalMean N L) 2| ≤ (N : ℝ) ^ (-1 + ε)) ∧\n      (∀ τ : ℝ, 0 < τ → ∃ N₁ : ℕ, 10 ≤ N₁ ∧ ∀ N ≥ N₁, ∀ L : ℕ,\n        |(L : ℝ) - Real.log N / Real.log 2| ≤ C →\n        0 < phaseScale N L ∧ |nominalTV N L / phaseScale N L - 1| ≤ τ ∧\n          |actualTV N L / phaseScale N L - 1| ≤ τ)"
+      },
+      "verdict": "Le type distingue bien les deux moyennes et leurs deux erreurs ; l’équivalent utilise les paramètres mobiles et le résidu L mod 3.",
+      "hypotheses_and_quantifiers": "C, ε>0 fixés pour les erreurs ; chaque τ>0 précède un second seuil commun ; les deux équivalents sont uniformes sur tous N,L de la bande. Aucune convergence de λ_N n’est ajoutée."
+    },
+    {
+      "id": "A03",
+      "printed_location": {
+        "file": "manuscripts/paper-p1/v1.7/sources/main_sections/third_cumulant.tex",
+        "line_start": 32,
+        "line_end": 46,
+        "pdf": "manuscripts/paper-p1/v1.7/pdf/P1_V1_7_Main_Article_2026-11-07_EN.pdf",
+        "pdf_pages": [
+          34
+        ]
+      },
+      "lean": {
+        "declaration": "PaperP1.OptimalThirdCumulant.article_14_1",
+        "file": "PaperP1/Asymptotics/OptimalThirdCumulant.lean",
+        "line_start": 25,
+        "line_end": 29,
+        "source_signature_exact": "theorem article_14_1 (C ε : ℝ) (hε : 0 < ε) :\n    ∃ N₀ : ℕ, 4 ≤ N₀ ∧ ∀ N ≥ N₀, ∀ L : ℕ,\n      |(L : ℝ) - Real.log N / Real.log 2| ≤ C →\n      lowerConstant C * (N : ℝ) ^ (-41 / 30 : ℝ) ≤ thirdFactorialCumulant (dyadicBlock N) L ∧\n        thirdFactorialCumulant (dyadicBlock N) L ≤ (N : ℝ) ^ (-41 / 30 + ε)"
+      },
+      "verdict": "Accord du signe et du pouvoir 41/30, sur le cumulant factoriel du vrai compte. La constante inférieure lowerConstant C est fixée avant ε, comme dans le texte.",
+      "hypotheses_and_quantifiers": "C et ε>0 ; un seuil pour tous N,L ; borne inférieure positive c_C·N^(−41/30), borne supérieure N^(−41/30+ε). La preuve assemble SharpThirdCumulantLower et SharpThirdActivity, sans hypothèse de cumulant cachée."
+    },
+    {
+      "id": "A04",
+      "printed_location": {
+        "file": "manuscripts/paper-p1/v1.7/sources/main_sections/exact_transfer.tex",
+        "line_start": 887,
+        "line_end": 905,
+        "pdf": "manuscripts/paper-p1/v1.7/pdf/P1_V1_7_Main_Article_2026-11-07_EN.pdf",
+        "pdf_pages": [
+          48
+        ]
+      },
+      "lean": {
+        "declaration": "PaperP1.FiniteCompleteLawTransfer.article_15_13",
+        "file": "PaperP1/Asymptotics/FiniteCompleteLawTransfer.lean",
+        "line_start": 151,
+        "line_end": 157,
+        "source_signature_exact": "theorem article_15_13 (C β ε : ℝ) (hβ : 1 < β) (hβcap : β ≤ 4 / 3) (hε : 0 < ε) :\n    FiniteConnectedActivity254.Hypothesis C β →\n      ∃ N₀ : ℕ, 10 ≤ N₀ ∧ ∀ N ≥ N₀, ∀ L : ℕ,\n        |(L : ℝ) - Real.log N / Real.log 2| ≤ C →\n        SignedAtomicDistance.distance (RetainedModifiedLaw.originalLaw (dyadicBlock N) L : Measure ℕ).toSignedMeasure\n          (QuadraticPoisson.reference (countMoment (dyadicBlock N) L 1)\n            (RegularCumulantTransfer.secondFactorialCumulant (dyadicBlock N) L)) ≤ (N : ℝ) ^ (-β + ε)"
+      },
+      "verdict": "Le résultat est exactement une implication conditionnelle telle qu’imprimée, et ne doit pas être présenté isolément comme la preuve inconditionnelle du théorème principal.",
+      "hypotheses_and_quantifiers": "1<β≤4/3 et ε>0 ; le type garde FiniteConnectedActivity254.Hypothesis C β. Cette hypothèse quantifie r=3,…,256, puis chaque ε>0, puis une constante et un seuil avant tous N,L. Elle porte sur la nullité compatible≤2L. Ce n’est pas une hypothèse de la borne finale de loi."
+    },
+    {
+      "id": "A05",
+      "printed_location": {
+        "file": "manuscripts/paper-p1/v1.7/sources/main_sections/exact_transfer.tex",
+        "line_start": 982,
+        "line_end": 1031,
+        "pdf": "manuscripts/paper-p1/v1.7/pdf/P1_V1_7_Main_Article_2026-11-07_EN.pdf",
+        "pdf_pages": [
+          49
+        ]
+      },
+      "lean": {
+        "declaration": "PaperP1.OptimalTripleReconstruction.article_15_14",
+        "file": "PaperP1/Asymptotics/OptimalTripleReconstruction.lean",
+        "line_start": 19,
+        "line_end": 27,
+        "source_signature_exact": "theorem article_15_14 (C ε : ℝ) (hε : 0 < ε) :\n    ∃ N₀ : ℕ, 10 ≤ N₀ ∧ ∀ N ≥ N₀, ∀ L : ℕ,\n      |(L : ℝ) - Real.log N / Real.log 2| ≤ C →\n      let E := SignedAtomicDistance.distance\n        (RetainedModifiedLaw.originalLaw (dyadicBlock N) L : Measure ℕ).toSignedMeasure\n        (QuadraticPoisson.reference (countMoment (dyadicBlock N) L 1)\n          (RegularCumulantTransfer.secondFactorialCumulant (dyadicBlock N) L))\n      E ≤ (N : ℝ) ^ ε * CompatibleActivitySplit.absolute L ((dyadicBlock N).powersetCard 3) +\n        (N : ℝ) ^ (-4 / 3 + ε) ∧ E ≤ (N : ℝ) ^ (-4 / 3 + ε)"
+      },
+      "verdict": "Le point d’entrée ferme le résultat symbolique et la borne numérique pour la même loi et le même seuil. Pas de prémisse externe de reconstruction dans la signature.",
+      "hypotheses_and_quantifiers": "C, ε>0, puis seuil commun avant N,L. Le type additionne N^ε A3 et N^(−4/3+ε), puis donne séparément la borne complète N^(−4/3+ε). A3 est défini par les vrais coefficients centrés, marginales nulles comprises puis éliminées exactement."
+    },
+    {
+      "id": "A06",
+      "printed_location": {
+        "file": "manuscripts/paper-p1/v1.7/sources/main_sections/quartic_lower.tex",
+        "line_start": 28,
+        "line_end": 41,
+        "pdf": "manuscripts/paper-p1/v1.7/pdf/P1_V1_7_Main_Article_2026-11-07_EN.pdf",
+        "pdf_pages": [
+          50
+        ]
+      },
+      "lean": {
+        "declaration": "PaperP1.FourthCumulantIdentities.article_16_1",
+        "file": "PaperP1/Asymptotics/FourthCumulantIdentities.lean",
+        "line_start": 18,
+        "line_end": 29,
+        "source_signature_exact": "theorem article_16_1 (C ε : ℝ) (hε : 0 < ε) :\n    ∃ N₀ : ℕ, 2 ≤ N₀ ∧ ∀ N ≥ N₀, ∀ L : ℕ,\n      |(L : ℝ) - Real.log N / Real.log 2| ≤ C →\n      let F := connectedFamilies (dyadicBlock N) L 4\n      let κ₄ := fourthFactorialCumulant (dyadicBlock N) L\n      let α := RegularCumulantTransfer.secondFactorialCumulant (dyadicBlock N) L\n      0 ≤ CompatibleActivitySplit.positive L F ∧\n      |κ₄ - 24 * CompatibleActivitySplit.signed L F| ≤ (N : ℝ) ^ (-5 / 3 + ε) ∧\n      |CompatibleActivitySplit.signed L F - CompatibleActivitySplit.positive L F| ≤\n        (N : ℝ) ^ (-3 / 2 + ε) ∧\n      |κ₄ + 3 * α ^ 2 - (3 * α ^ 2 + 24 * CompatibleActivitySplit.positive L F)| ≤\n        (N : ℝ) ^ (-3 / 2 + ε)"
+      },
+      "verdict": "Accord de la nonnégativité compatible et du signe de la contribution 3α² ; première erreur plus forte que le texte. L’objet est le cumulant factoriel, avec termes d’indices répétés déjà présents.",
+      "hypotheses_and_quantifiers": "C, ε>0 fixés ; seuil avant N,L. Le type ne suppose ni positivité de κ4 ni la borne inférieure de distance. Voir S06 pour le gain −5/3."
+    },
+    {
+      "id": "A07",
+      "printed_location": {
+        "file": "manuscripts/paper-p1/v1.7/sources/companion_sections/arithmetic_appendix.tex",
+        "line_start": 811,
+        "line_end": 833,
+        "pdf": "manuscripts/paper-p1/v1.7/pdf/P1_V1_7_Technical_Companion_2026-11-07_EN.pdf",
+        "pdf_pages": [
+          14
+        ]
+      },
+      "lean": {
+        "declaration": "PaperP1.RevisedCompanionStatements.companion_T1_10",
+        "file": "PaperP1/Analysis/RevisedCompanionStatements.lean",
+        "line_start": 13,
+        "line_end": 21,
+        "source_signature_exact": "theorem companion_T1_10 (Q : ℕ) (hQ : 1 ≤ Q) (C ε : ℝ) (D Dcut : ℕ)\n    (hD : 1 ≤ D) (hε : 0 < ε) :\n    ∃ N₀ : ℕ, 4 ≤ N₀ ∧ ∀ N ≥ N₀, ∀ L H : ℕ,\n      |(L : ℝ)-Real.log N/Real.log 2| ≤ C →\n      (2*D+1)*(L+1) ≤ H → H ≤ Dcut*(L+1) →\n      ∀ old : ℕ → Finset ℕ,\n      (∀ x ∈ ExpandedAsymmetricSupportEnvelope.block N Q, ∀ n ∈ old x,\n        |(n : ℤ)-x| ≤ ((D*(L+1) : ℕ) : ℤ)) →\n      ExpandedAsymmetricCoarseProfile.profile N Q L H D old ≤ (N : ℝ)^(31/24+ε)"
+      },
+      "verdict": "La correction de rayon est visible dans le type : même D pour la largeur de l’ancien bloc et le profil non aligné ; Q est fixé avant le seuil. Aucune nouvelle correction nécessaire trouvée.",
+      "hypotheses_and_quantifiers": "Q≥1 naturel, D≥1 naturel, ε>0 ; (2D+1)(L+1)≤H≤Dcut(L+1). Tous les anciens ensembles sont quantifiés après le seuil et contraints à |n−X|≤D(L+1). La famille de centres est [N,N+QN). Dcut≥2D+1 n’est pas une hypothèse supplémentaire dans le type : un intervalle admissible H la force si non vide."
+    },
+    {
+      "id": "A08",
+      "printed_location": {
+        "file": "manuscripts/paper-p1/v1.7/sources/companion_sections/short_supports.tex",
+        "line_start": 9,
+        "line_end": 27,
+        "pdf": "manuscripts/paper-p1/v1.7/pdf/P1_V1_7_Technical_Companion_2026-11-07_EN.pdf",
+        "pdf_pages": [
+          32
+        ]
+      },
+      "lean": {
+        "declaration": "PaperP1.RevisedCompanionStatements.companion_T5_1",
+        "file": "PaperP1/Analysis/RevisedCompanionStatements.lean",
+        "line_start": 43,
+        "line_end": 51,
+        "source_signature_exact": "theorem companion_T5_1 (D A ε : ℝ) (hε : 0 < ε) :\n    ∃ N₀ : ℕ, ∀ N ≥ N₀, ∀ h e : ℕ, ∀ β : ℝ,\n      0 < h → 0 < e → (h : ℝ) ≤ D*(Real.log N)^A →\n      ((PrescribedQuadraticKernelTheorem.values N h e β).card : ℝ) ≤\n        (N : ℝ)^(QuadraticKernelExponents.exponent β (Real.log e/Real.log N)+ε) ∧\n      ((PrescribedQuadraticKernelTheorem.values N h e β).card : ℝ) ≤\n        (N : ℝ)^(QuadraticKernelExponents.capped β (Real.log e/Real.log N)+ε) ∧\n      ((PrescribedQuadraticKernelTheorem.values N h e β).card : ℝ) ≤\n        (N : ℝ)^(QuadraticKernelExponents.affine β (Real.log e/Real.log N)+ε)"
+      },
+      "verdict": "Les trois conclusions de comptage (non capée, capée, affine) sont séparément prouvées. L’inégalité algébrique exacte imprimée a son propre point d’entrée companion_T5_1_exact_comparison, qui doit être gardé dans le raccord sémantique.",
+      "hypotheses_and_quantifiers": "ε>0 avant le seuil ; h,e naturels strictement positifs ; β réel variable après le seuil ; h≤D(logN)^A (plus large que h≤2DB). Le sens de values impose la vraie binade de sf(n(n+h)) et e divisant le noyau. Le type n’exige pas de restriction β−2δ≤2 pour la version capée."
+    },
+    {
+      "id": "A09",
+      "printed_location": {
+        "file": "manuscripts/paper-p1/v1.7/sources/main_sections/limits_appendix.tex",
+        "line_start": 45,
+        "line_end": 56,
+        "pdf": "manuscripts/paper-p1/v1.7/pdf/P1_V1_7_Main_Article_2026-11-07_EN.pdf",
+        "pdf_pages": [
+          60
+        ]
+      },
+      "lean": {
+        "declaration": "PaperP1.IndependentPositionalApproximation.main_20_1",
+        "file": "PaperP1/Asymptotics/IndependentPositionalApproximation.lean",
+        "line_start": 29,
+        "line_end": 46,
+        "source_signature_exact": "theorem main_20_1 (C ε : ℝ) (hε : 0 < ε) :\n    ∀ j : ℕ, ∃ N₀ : ℕ, 10 ≤ N₀ ∧ ∀ N ≥ N₀, ∀ L : ℕ,\n      |(L : ℝ) - Real.log N / Real.log 2| ≤ C →\n      let G := dyadicBlock N\n      let E := GoodEdgeCompression.goodEdges (8 * (L + 1) : ℕ) N L\n      let p : ℕ → ℝ := fun _ ↦ (2 ^ L : ℝ)⁻¹\n      let q := infiniteJointMoment L\n      ∃ hp : ∀ x ∈ G, 0 ≤ p x - PositionalCompoundPoisson.incidence E q x,\n      ∀ (Ω : Type*) [MeasurableSpace Ω] (P : Measure Ω) [IsProbabilityMeasure P]\n        (X : (↥G ⊕ ↥E) → Ω → ℕ),\n        (∀ a, HasLaw (X a)\n          (poissonMeasure (channelRate G E p q hp (fun e _ ↦ infiniteJointMoment_nonneg L e) a)) P) →\n        iIndepFun X P →\n        let error := fun z : G → ℕ ↦ (1 + ∑ x : G, (z x : ℝ)) ^ j *\n          |infiniteRademacherMeasure.real\n              {ω | ∀ x : G, (infiniteStartIndicator x.val L ω).toNat = z x} -\n            P.real {ω | ∀ x : G, (∑ a : ↥G ⊕ ↥E, X a ω • channelJump G E a) x.val = z x}|\n        Summable error ∧ (∑' z : G → ℕ, error z) ≤ (N : ℝ) ^ (-4 / 5 + ε)"
+      },
+      "verdict": "Le vrai champ arithmétique et sa référence indépendante vivent sur la grille originale ; la sommabilité est explicite. Le seuil précède bien l’espace de probabilité et toutes les arrivées.",
+      "hypotheses_and_quantifiers": "C, ε>0, puis j naturel fixé, puis ∃N0, ∀N,L dans la bande ; existence des intensités individuelles non négatives ; ensuite tous Ω, P probabilité, cellules X à loi Poisson et mutuellement indépendantes. La comparaison vaut N^(−4/5+ε). La réalisation canonique évite un théorème vide sur des arrivées supposées exister."
+    },
+    {
+      "id": "A10",
+      "printed_location": {
+        "file": "manuscripts/paper-p1/v1.7/sources/formalization.tex",
+        "line_start": 281,
+        "line_end": 294,
+        "pdf": "manuscripts/paper-p1/v1.7/pdf/P1_V1_7_Technical_Companion_2026-11-07_EN.pdf",
+        "pdf_pages": [
+          99
+        ]
+      },
+      "lean": {
+        "declaration": "PaperP1.PositionalArrivalMarginals.hasLaw_coordinate",
+        "file": "PaperP1/Probability/PositionalArrivalMarginals.lean",
+        "line_start": 120,
+        "line_end": 131,
+        "source_signature_exact": "theorem hasLaw_coordinate {ι Ω : Type*} [MeasurableSpace Ω]\n    (G : Finset ι) (E : Finset (Finset ι)) (p : ι → ℝ) (q : Finset ι → ℝ)\n    (hp : ∀ x∈G,0≤p x-PaperP1.PositionalCompoundPoisson.incidence E q x)\n    (hq : ∀ e∈E,0≤q e) (P : Measure Ω) [IsProbabilityMeasure P]\n    (X : (↥G ⊕ ↥E) → Ω → ℕ)\n    (hX : ∀ a,HasLaw (X a)\n      (poissonMeasure (PaperP1.PositionalPoissonRealization.channelRate G E p q hp hq a)) P)\n    (hInd : iIndepFun X P) (x : G) :\n    ∃ r : ℝ≥0,(r : ℝ)=p x.val ∧\n      HasLaw (fun ω ↦ (∑ a : ↥G ⊕ ↥E,\n          X a ω • PaperP1.PositionalPoissonRealization.channelJump G E a) x.val)\n        (poissonMeasure r) P"
+      },
+      "verdict": "Loi marginale exactement Poisson de paramètre p_x^ref. L’intégrabilité de chaque factorielle et la valeur (p_x^ref)^j sont prouvées dans coordinate_factorial_moment.",
+      "hypotheses_and_quantifiers": "G et E finis sur un type ambiant arbitraire ; hp : p_x^ref−incidence≥0, hq : q_e≥0 ; toutes les cellules ont leurs lois et sont mutuellement indépendantes. x∈G. Aucun caractère dénombrable de la configuration ambiante n’est nécessaire à cet énoncé local."
+    },
+    {
+      "id": "A11",
+      "printed_location": {
+        "file": "manuscripts/paper-p1/v1.7/sources/formalization.tex",
+        "line_start": 294,
+        "line_end": 307,
+        "pdf": "manuscripts/paper-p1/v1.7/pdf/P1_V1_7_Technical_Companion_2026-11-07_EN.pdf",
+        "pdf_pages": [
+          99
+        ]
+      },
+      "lean": {
+        "declaration": "PaperP1.PositionalArrivalCovariance.covariance_coordinates",
+        "file": "PaperP1/Probability/PositionalArrivalCovariance.lean",
+        "line_start": 142,
+        "line_end": 152,
+        "source_signature_exact": "theorem covariance_coordinates {ι Ω : Type*} [MeasurableSpace Ω]\n    (G : Finset ι) (E : Finset (Finset ι)) (p : ι → ℝ) (q : Finset ι → ℝ)\n    (hp : ∀ x∈G,0≤p x-PaperP1.PositionalCompoundPoisson.incidence E q x)\n    (hq : ∀ e∈E,0≤q e) (P : Measure Ω) [IsProbabilityMeasure P]\n    (X : (↥G ⊕ ↥E) → Ω → ℕ)\n    (hX : ∀ a,HasLaw (X a)\n      (poissonMeasure (PaperP1.PositionalPoissonRealization.channelRate G E p q hp hq a)) P)\n    (hInd : iIndepFun X P) (x y : G) :\n    cov[coordinate G E X x,coordinate G E X y;P] =\n      (if x=y then p x.val-PaperP1.PositionalCompoundPoisson.incidence E q x.val else 0)+\n        ∑ e∈E,if x.val∈e ∧ y.val∈e then q e else 0"
+      },
+      "verdict": "La formule avec terme diagonal plus somme des paquets communs est exacte et le cas x=y redonne p_x^ref. MemLp(...,2) est prouvé séparément ; les covariances existent.",
+      "hypotheses_and_quantifiers": "Même hp, hq, hX, hInd. Les paquets peuvent avoir une cardinalité arbitraire. Le passage aux seules paires demande hE : chaque paquet a cardinal 2 ; la matrice complète inclut diagonale p et hors-diagonale q ou zéro."
+    },
+    {
+      "id": "A12",
+      "printed_location": {
+        "file": "manuscripts/paper-p1/v1.7/sources/formalization.tex",
+        "line_start": 303,
+        "line_end": 307,
+        "pdf": "manuscripts/paper-p1/v1.7/pdf/P1_V1_7_Technical_Companion_2026-11-07_EN.pdf",
+        "pdf_pages": [
+          99
+        ]
+      },
+      "lean": {
+        "declaration": "PaperP1.PositionalArrivalIndependence.independent_count_coordinates_iff",
+        "file": "PaperP1/Probability/PositionalArrivalIndependence.lean",
+        "line_start": 214,
+        "line_end": 228,
+        "source_signature_exact": "theorem independent_count_coordinates_iff {ι Ω : Type*} [MeasurableSpace Ω]\n    (G : Finset ι) (E : Finset (Finset ι)) (p : ι → ℝ) (q : Finset ι → ℝ)\n    (hp : ∀ x∈G,0≤p x-PaperP1.PositionalCompoundPoisson.incidence E q x)\n    (hq : ∀ e∈E,0≤q e) (P : Measure Ω) [IsProbabilityMeasure P]\n    (X : (↥G ⊕ ↥E) → Ω → ℕ)\n    (hX : ∀ a,HasLaw (X a)\n      (poissonMeasure (PaperP1.PositionalPoissonRealization.channelRate G E p q hp hq a)) P)\n    (hInd : iIndepFun X P) (x y : G) :\n    IndepFun\n      (fun ω ↦ (∑ a : ↥G ⊕ ↥E,\n        X a ω • PaperP1.PositionalPoissonRealization.channelJump G E a) x.val)\n      (fun ω ↦ (∑ a : ↥G ⊕ ↥E,\n        X a ω • PaperP1.PositionalPoissonRealization.channelJump G E a) y.val) P ↔\n      IndepFun (PositionalArrivalCovariance.coordinate G E X x)\n        (PositionalArrivalCovariance.coordinate G E X y) P"
+      },
+      "verdict": "Le critère porte sur les comptes naturels littéraux ; les cellules de taux nul sont éliminées presque sûrement. Le sens covariance nulle ⇒ indépendance utilise la structure Poisson commune, pas une implication générale fausse.",
+      "hypotheses_and_quantifiers": "Même construction et hypothèses d’admissibilité. Le cas diagonal est également traité par l’intensité nulle ; pour deux sites distincts, le terme partagé est seulement la somme des taux des paquets communs."
+    },
+    {
+      "id": "A13",
+      "printed_location": {
+        "file": "manuscripts/paper-p1/v1.7/sources/formalization.tex",
+        "line_start": 309,
+        "line_end": 314,
+        "pdf": "manuscripts/paper-p1/v1.7/pdf/P1_V1_7_Technical_Companion_2026-11-07_EN.pdf",
+        "pdf_pages": [
+          99
+        ]
+      },
+      "lean": {
+        "declaration": "PaperP1.PositionalBlockIndependence.independent_blocks_iff_cross_covariance_zero",
+        "file": "PaperP1/Probability/PositionalBlockIndependence.lean",
+        "line_start": 187,
+        "line_end": 197,
+        "source_signature_exact": "theorem independent_blocks_iff_cross_covariance_zero {ι Ω : Type*} [MeasurableSpace Ω]\n    (G : Finset ι) (E : Finset (Finset ι)) (p : ι → ℝ) (q : Finset ι → ℝ)\n    (hp : ∀ x∈G,0≤p x-PaperP1.PositionalCompoundPoisson.incidence E q x)\n    (hq : ∀ e∈E,0≤q e) (P : Measure Ω) [IsProbabilityMeasure P]\n    (X : (↥G ⊕ ↥E) → Ω → ℕ)\n    (hX : ∀ a,HasLaw (X a)\n      (poissonMeasure (PaperP1.PositionalPoissonRealization.channelRate G E p q hp hq a)) P)\n    (hInd : iIndepFun X P) (A B : Finset G) :\n    IndepFun (block G E X A) (block G E X B) P ↔\n      ∀ x∈A,∀ y∈B,cov[PositionalArrivalCovariance.coordinate G E X x,\n        PositionalArrivalCovariance.coordinate G E X y;P]=0"
+      },
+      "verdict": "L’équivalence concerne les vecteurs entiers complets de chaque bloc, pas seulement l’indépendance deux à deux. Les blocs sont finis et peuvent se chevaucher dans le théorème général.",
+      "hypotheses_and_quantifiers": "Même hp, hq, hX, hInd ; A,B parties finies de G. Pour traduire en absence d’arête traversante, le théorème spécialisé impose Disjoint A B et cardinal 2 de chaque paquet. Les taux nuls restent autorisés. independent_pair_block_events donne ensuite la factorisation d’événements mesurables."
+    },
+    {
+      "id": "A14",
+      "printed_location": {
+        "file": "manuscripts/paper-p1/v1.7/sources/formalization.tex",
+        "line_start": 317,
+        "line_end": 332,
+        "pdf": "manuscripts/paper-p1/v1.7/pdf/P1_V1_7_Technical_Companion_2026-11-07_EN.pdf",
+        "pdf_pages": [
+          100
+        ]
+      },
+      "lean": {
+        "declaration": "PaperP1.PositionalBivariateLaw.field_joint_law",
+        "file": "PaperP1/Probability/PositionalBivariateLaw.lean",
+        "line_start": 201,
+        "line_end": 212,
+        "source_signature_exact": "theorem field_joint_law {ι Ω : Type*} [MeasurableSpace Ω]\n    (G : Finset ι) (E : Finset (Finset ι)) (p : ι → ℝ) (q : Finset ι → ℝ)\n    (hp : ∀ x∈G,0≤p x-PaperP1.PositionalCompoundPoisson.incidence E q x)\n    (hq : ∀ e∈E,0≤q e) (P : Measure Ω) [IsProbabilityMeasure P]\n    (X : (↥G ⊕ ↥E) → Ω → ℕ)\n    (hX : ∀ a,HasLaw (X a)\n      (poissonMeasure (PaperP1.PositionalPoissonRealization.channelRate G E p q hp hq a)) P)\n    (hInd : iIndepFun X P) (x y : G) :\n    let r := (cov[PositionalArrivalCovariance.coordinate G E X x,\n      PositionalArrivalCovariance.coordinate G E X y;P]).toNNReal\n    HasLaw (fun ω ↦ (count G E X x ω,count G E X y ω))\n      (law ((p x.val).toNNReal-r) ((p y.val).toNNReal-r) r) P"
+      },
+      "verdict": "Les paramètres sont réellement construits par les trois familles disjointes de cellules, avant l’écriture p_x−r,p_y−r,r. Le lemme field_covariance_bounds prouve 0≤r≤min(p_x,p_y), donc les troncatures NNReal ne masquent pas des paramètres négatifs.",
+      "hypotheses_and_quantifiers": "Même construction admissible ; x,y quelconques, y compris x=y. Le type de sortie est HasLaw du couple naturel, pas seulement une égalité de transformées ou de moments. pair_matrix_joint_law et canonical_pair_joint_law assurent les spécialisations annoncées."
+    },
+    {
+      "id": "A15",
+      "printed_location": {
+        "file": "manuscripts/paper-p1/v1.7/sources/formalization.tex",
+        "line_start": 323,
+        "line_end": 332,
+        "pdf": "manuscripts/paper-p1/v1.7/pdf/P1_V1_7_Technical_Companion_2026-11-07_EN.pdf",
+        "pdf_pages": [
+          100
+        ]
+      },
+      "lean": {
+        "declaration": "PaperP1.PositionalBivariateMass.real_singleton",
+        "file": "PaperP1/Probability/PositionalBivariateMass.lean",
+        "line_start": 77,
+        "line_end": 82,
+        "source_signature_exact": "theorem real_singleton (a b c : ℝ≥0) (m n : ℕ) :\n    (PositionalBivariateLaw.law a b c).real {(m,n)} =\n      Real.exp (-((a : ℝ)+(b : ℝ)+(c : ℝ))) *\n        ∑ k∈Finset.range (min m n+1),\n          (a : ℝ)^(m-k)*(b : ℝ)^(n-k)*(c : ℝ)^k /\n            ((Nat.factorial (m-k) : ℝ)*(Nat.factorial (n-k) : ℝ)*(Nat.factorial k : ℝ))"
+      },
+      "verdict": "Le facteur exponentiel, les trois factorielles et la borne min(m,n) correspondent exactement à la formule imprimée. Le préimage de l’application (a,b,c)↦(a+c,b+c) est une fibre finie explicite. Les cas nuls et coincidents sont inclus.",
+      "hypotheses_and_quantifiers": "a,b,c dans R≥0, m,n naturels arbitraires ; pas d’hypothèse de positivité stricte. À r=0 la somme se réduit au produit de deux masses Poisson ; à x=y, a=b=0 et le couple est diagonal avec une seule masse Poisson. Convention 0^0=1 cohérente avec les puissances naturelles."
+    },
+    {
+      "id": "A16",
+      "printed_location": {
+        "file": "manuscripts/paper-p1/v1.7/sources/formalization.tex",
+        "line_start": 73,
+        "line_end": 90,
+        "pdf": "manuscripts/paper-p1/v1.7/pdf/P1_V1_7_Technical_Companion_2026-11-07_EN.pdf",
+        "pdf_pages": [
+          96,
+          97
+        ]
+      },
+      "lean": {
+        "declaration": "PaperP1.SmoothLogarithmicWindowDensity.uniform_bound",
+        "file": "PaperP1/Analysis/SmoothLogarithmicWindowDensity.lean",
+        "line_start": 34,
+        "line_end": 36,
+        "source_signature_exact": "theorem uniform_bound (a : ℝ) (ha : 0 < a) (τ : ℝ) (hτ : 0 < τ) :\n    ∃ N₀ : ℕ, 2 ≤ N₀ ∧ ∀ N ≥ N₀,\n      ((badWindows N ⌊(N : ℝ)^a⌋₊).card : ℝ) ≤ τ*(N : ℝ)"
+      },
+      "verdict": "Le recensement suffisant est un résultat sur la cardinalité littérale des fenêtres ayant au plus un entier ordinairement friable. Le taux o_a(N) est explicitement quantifié.",
+      "hypotheses_and_quantifiers": "a>0 fixé, τ>0 fixé, puis seuil N0 avant tous N≥N0. Le cutoff est floor(N^a). Le module assemble la borne gaussienne longue, la borne courte d’une mauvaise fenêtre, l’énergie de comparaison et les extrémités. Cette revue n’a pas relu toute la preuve analytique en amont."
+    }
+  ],
+  "bibliographic_check": {
+    "source_url": "https://arxiv.org/html/2302.04209v2#S5",
+    "source_version": "arXiv:2302.04209v2 (20 septembre 2023)",
+    "checked_location": "Theorem 2, equation (27)",
+    "result": "Le compte des points entiers est bien c(n)D²H^(1/D)(logH)^κ pour une courbe intègre sur un sous-corps de C ; constantes indépendantes de la courbe et de son degré. Le texte du théorème 13.4 conserve cette portée. Aucun changement bibliographique nécessaire sur ce renvoi.",
+    "manuscript_location": {
+      "file": "manuscripts/paper-p1/v1.7/sources/main_sections/pair_rigidity.tex",
+      "line_start": 210,
+      "line_end": 226,
+      "pdf": "manuscripts/paper-p1/v1.7/pdf/P1_V1_7_Main_Article_2026-11-07_EN.pdf",
+      "pdf_pages": [
+        32
+      ]
+    }
+  },
+  "revision_order": [
+    {
+      "step": 1,
+      "ids": [
+        "C01"
+      ],
+      "action": "Corriger l’assistance et les destinations de sources ; garder tout autre énoncé figé pendant cette correction documentaire."
+    },
+    {
+      "step": 2,
+      "ids": [
+        "S02",
+        "S01"
+      ],
+      "action": "Décider les nouveaux énoncés primitifs et profils ; établir les renvois de preuve et l’ordre sans circularité avant modification des textes."
+    },
+    {
+      "step": 3,
+      "ids": [
+        "S03",
+        "S04",
+        "S05"
+      ],
+      "action": "Remplacer localement les preuves de queues et du générateur ; étendre le majorant de degré avec ses quantificateurs."
+    },
+    {
+      "step": 4,
+      "ids": [
+        "E01",
+        "E02"
+      ],
+      "action": "Déplacer les nouveaux résultats scientifiques au voisinage de leurs usages ; réunir le champ de référence dans une proposition unique, admissible et distincte du champ arithmétique."
+    },
+    {
+      "step": 5,
+      "ids": [
+        "S06",
+        "S07"
+      ],
+      "action": "Intégrer les petites améliorations uniquement si leur coût éditorial reste minime ; ne pas augmenter le nombre d’énoncés pour chaque étape interne."
+    },
+    {
+      "step": 6,
+      "ids": [
+        "E03"
+      ],
+      "action": "Mettre à jour cartes de dépendances, bibliographie effectivement utilisée, correspondance imprimée/Lean ; reconstruire les PDF et vérifier visuellement les pages changées. Aucune soumission Palomar pendant la temporisation."
+    }
+  ],
+  "non_inferences": [
+    "La covariance nulle n’implique ici l’indépendance que pour les sommes de cellules Poisson indépendantes ; aucun graphe de dépendance exact du champ J n’est obtenu.",
+    "Un taux fixe en r ou en η ne fournit pas une uniformité à r croissant ou η décroissant.",
+    "Le meilleur contrôle primitif ne fait pas disparaître le terme de deux paires indépendantes qui limite la référence quadratique.",
+    "Le contrôle de très petites probabilités au-dessus d’un grand seuil ne donne pas une borne de moment exponentiel réel uniforme du compte original.",
+    "Les bornes supplémentaires et les simplifications proposées sont des propositions de révision : aucun fichier TeX/Lean ni PDF du dépôt n’a été changé par cette revue."
+  ],
+  "supporting_files": [
+    "finite-rank-check.json",
+    "validation-log-check.json"
+  ],
+  "post_review_parent_update": {
+    "scope": "Information du parent reçue après la relecture ; les constats et localisateurs ci-dessus restent rapportés au commit c1db11fe29e94f6afd87636d51beeb908a346af9.",
+    "C01_status": "Le parent indique avoir déjà corrigé assistance.tex et reconstruit les deux PDF ; article p.63 et compagnon p.100 seuls modifiés. Cette revue n’a pas modifié le dépôt.",
+    "other_findings_status": "Renforcements et reprises de structure proposés, non intégrés pendant cette revue.",
+    "palomar": "Toutes les soumissions restent temporisées par instruction explicite de l’utilisateur.",
+    "guide_source_status": "Le parent prévoit également de préciser dans companion_sections/guide.tex que check_all.py appartient à l’archive historique v1.6 et d’indiquer les commandes actuelles v1.7. Les localisateurs du constat C01 restent attachés au commit c1db examiné.",
+    "report_typography_final_check": "Échappement erroné de S02 remplacé par I suivi de mathrm{primitive} ; toutes les neuf propositions/formules TeX ont été contrôlées pour les caractères de contrôle, les commandes et les délimiteurs. Dans S04, le nombre M et l’ensemble marqué mathcal M sont désormais distingués."
+  },
+  "report_state": "figé après correction typographique et contrôle des échappements ; aucun changement des conclusions mathématiques ni des localisateurs"
+}

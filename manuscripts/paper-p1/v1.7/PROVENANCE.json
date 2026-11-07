@@ -7,7 +7,7 @@
   "files": [
     {
       "path": "assistance.tex",
-      "sha256": "f983b380e0796411b90c27524b63563cfd0ebbb872725ea72ed4ded2707ab573"
+      "sha256": "cfe236b0ad76324a09f13b828b95f72813ed500017bf84096967de7699386f5c"
     },
     {
       "path": "bibliography.tex",
@@ -55,7 +55,7 @@
     },
     {
       "path": "companion_sections/guide.tex",
-      "sha256": "299593202a0d223990007bd97dc760cf60860b967c41679b475ba94ce7c86517"
+      "sha256": "1316ae68e47776dccd2e22fd82a6a7fd2469ee9102fdb71600c86068e5fc8521"
     },
     {
       "path": "companion_sections/half_counts.tex",
@@ -263,6 +263,13 @@
       "checkpoint": "P1-MATH-0997",
       "proof_commit": "292eaafce35fba0e57d28fe49b6682e4c5b21064",
       "scope": "Unnumbered companion appendix: exact three-arrival bivariate reference law, admissible shared covariance, and finite point probabilities, including coincident sites and zero intensities. All original arithmetic rates, exponent, fixed-degree regime and 167 numbered statement blocks are preserved."
+    }
+  ],
+  "editorial_revisions": [
+    {
+      "date": "2026-11-07",
+      "reviewed_source": "c1db11fe29e94f6afd87636d51beeb908a346af9",
+      "scope": "AI-assistance statement: explicitly distinguish the preserved v1.6 diagnostic archives from the current v1.7 Lean development; remove the obsolete claim that no proof-assistant development is included; acknowledge AI assistance with Lean and statement alignment in both manuscripts. No numbered statements or proof files change. Companion guide: identify check_all.py as historical v1.6 tooling and provide the actual v1.7 builder and source-correspondence checker."
     }
   ]
 }

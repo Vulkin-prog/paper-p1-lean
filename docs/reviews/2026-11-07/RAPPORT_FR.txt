@@ -1,0 +1,275 @@
+P1 ET COMPAGNON — RELECTURE INDÉPENDANTE ET DOSSIER DE REPRISE
+7 novembre 2026
+Auteur : Brice Pouly — ORCID 0009-0008-8491-2467
+Dépôt : https://github.com/Vulkin-prog/paper-p1-lean
+Source examinée : c1db11fe29e94f6afd87636d51beeb908a346af9
+
+RÉSULTAT DE LA RELECTURE
+Sur les interfaces centrales et les identités de référence examinées, aucune hypothèse supplémentaire cachée, circularité de type « supposons la borne finale », ni erreur de facteur ou de quantificateur n’a été identifiée. Cela ne certifie pas une relecture humaine intégrale des 167 résultats.
+Révision légère à moyenne de l’article, avec remplacement local de la preuve de 15.5 ; révision plus marquée mais localisée de T19 et de l’appendice du compagnon. Pas de réécriture complète du cœur scientifique ni de changement revendiqué des puissances 4/3, 41/30 ou de la comparaison vectorielle 4/5.
+Les points d’entrée exacts du cœur sont déjà cohérents. Le travail le plus rentable est d’aligner la présentation sur quelques résultats plus forts réellement fermés, de déplacer les mathématiques hors du bilan de formalisation, et de supprimer les descriptions devenues historiques.
+
+PÉRIMÈTRE DES SIX DOSSIERS PALOMAR
+La mise en attente demandée par l’auteur est inscrite dans le dépôt. Aucune soumission n’a été lancée.
+Les six dossiers reprennent exactement les 17 familles et les 68 sélections du plan antérieur. Aucun énoncé perdu ou dupliqué ; 85 fichiers originaux vérifiés inchangés.
+1. Arithmetic and geometry : 12 énoncés ; familles : quadratic_kernels, integral_curve_count, local_rigidity
+2. Arithmetic profiles and smooth logarithmic windows : 6 énoncés ; familles : asymmetric_profiles, smooth_windows
+3. Finite affine structure, conditioning and dependent expansions : 12 énoncés ; familles : affine_spectra, conditioning, dependent_expansion
+4. Factorial cumulants, moments and private obstructions : 14 énoncés ; familles : factorial_cumulants, moment_obstruction, private_obstruction
+5. Poisson approximation, scales and positional reference fields : 16 énoncés ; familles : quadratic_approximation, poisson_scales, positional_field, poisson_reference
+6. Exponential moments and prime cylinders : 8 énoncés ; familles : exponential_divergence, prime_cylinders
+
+L’exhaustivité concerne les sélections prévues pour Palomar, pas 167 sélections distinctes. Les 167 énoncés numérotés révisés ont leurs preuves et leur correspondance séparées dans le dépôt. Les 21 théorèmes de référence ajoutés au checkpoint 0997 ne sont pas des sélections supplémentaires des six configurations.
+
+CORRECTION DÉJÀ APPLIQUÉE APRÈS LA RELECTURE
+C01 : déclaration d’assistance et guide des sources mis à jour. Les archives et commandes v1.6 sont présentées comme historiques ; la formalisation Lean et les commandes v1.7 sont explicites. Les deux PDF ont été reconstruits : 65 + 102 pages. Sur 167 pages rendues, 164 sont identiques ; article p.63 et compagnon pp.4,100 ont été inspectées visuellement. Aucun énoncé numéroté ni fichier Lean modifié. Les autres points restent des propositions à intégrer.
+
+CONSTATS DÉTAILLÉS
+
+C01 — Mettre en cohérence la déclaration d’assistance et les sources de la version 1.7
+Catégorie : correction_necessaire ; importance : élevée pour la fiabilité éditoriale ; certitude : certaine
+La fin de l’article affirme encore « No proof-assistant development is included » et présente les archives v1.6 comme les archives à consulter. La page précédente annonce un développement Lean et 167 énoncés révisés prouvés. La branche contenant cette phrase est exclue du compagnon. Le guide conserve aussi une description de commande destinée à l’ancienne archive.
+Justification : Strictement rapportée à l’archive historique v1.6, l’absence de développement Lean peut être vraie. Dans le document v1.7 livré, l’absence de cette qualification temporelle et l’absence de destination actuelle rendent la description trompeuse. Ce constat ne met pas en défaut une preuve mathématique.
+Révision proposée : Remplacer le paragraphe par une description séparant l’archive historique et le dépôt de formalisation actuel ; conserver la responsabilité de l’auteur et la distinction entre contrôle du noyau et revue humaine. Vérifier les destinations réellement livrées avant de nommer une nouvelle archive.
+Localisateurs (source examinée ci-dessus) :
+  manuscripts/paper-p1/v1.7/sources/assistance.tex:4–22 ; PDF p.63
+  manuscripts/paper-p1/v1.7/sources/formalization.tex:5–23 ; PDF p.62
+  manuscripts/paper-p1/v1.7/sources/companion_sections/guide.tex:164–169 ; PDF p.4
+
+S01 — Renforcer les deux profils de paires de 6/5 à 1
+Catégorie : amelioration_scientifique_facultative ; importance : haute ; certitude : élevée : signatures, objets et preuve d’assemblage lus
+La proposition 3.2 imprime N^(6/5+ε) pour le nombre d’hôtes séparés et pour le profil pondéré non aligné. uniform_source_bounds prouve simultanément N^(1+ε) pour ces deux objets.
+Justification : pairLoss vaut exactement 2L−dim(S_x+S_y), donc le ρ arithmétique brut du §3, avec défauts locaux inclus. separatedHosts ajoute x+L<y ou y+L<x, équivalent à |x−y|>L. separatedNonalignedPairs garde le même intervalle I_N et le même non-alignement de rayon 1. uniform_weighted_hosts s’applique même à tout sous-ensemble de paires dyadiques non alignées ; aucune hypothèse de régularité ou compatibilité n’est ajoutée.
+Révision proposée : Garder la version élémentaire précoce si nécessaire à l’ordre de preuve, puis annoncer explicitement le renforcement après les comptes conditionnels et le confinement. Une version ultérieure peut remplacer l’énoncé initial par la version forte avec renvoi vers la preuve tardive. Ne pas prétendre qu’il est obtenu par la seule preuve élémentaire actuellement imprimée.
+Localisateurs (source examinée ci-dessus) :
+  manuscripts/paper-p1/v1.7/sources/main_sections/arithmetic.tex:98–111 ; PDF p.15
+  PaperP1/Asymptotics/NonalignedSourceResidual.lean:23–41
+  PaperP1/Asymptotics/NonalignedSourceResidual.lean:124–155
+  PaperP1/Arithmetic/NormalizedPairRankLoss.lean:22
+  PaperP1/Arithmetic/PairHostCover.lean:22–23
+Acquis déjà tracés : P1-MATH-0068, P1-MATH-0113, P1-MATH-0409
+Formulation anglaise/TeX proposée :
+For every fixed $C>0$ and $\varepsilon>0$, there is $N_0(C,\varepsilon)$ such that, for all $N\ge N_0$ and all critical $L$, both estimates in Proposition~\ref{p1:arith:hosts} hold with $N^{1+\varepsilon}$ in place of $N^{6/5+\varepsilon}$. The nullity here is the full arithmetic nullity, including local kernels. The threshold is uniform over the ordered pairs and their deterministic subfamilies.
+Domaine et quantificateurs : C et ε fixés avant un seuil commun ; N,L puis toutes les paires. Aucun ordre croissant.
+Statut : Tri critique et priorisation d’acquis déjà présents dans le développement ; aucun nouveau checkpoint mathématique annoncé.
+
+S02 — Remplacer le traitement des primitives fixes par les bornes r/2 et r−1
+Catégorie : amelioration_scientifique_facultative ; importance : très haute ; certitude : élevée sur les interfaces et le raccord des objets ; pas de relecture exhaustive des modules géométriques de base
+La proposition 15.5 ne conserve que N^(−4/3+ε) et, dans le secteur dense, N^(−2r/(r+2)+ε). Les points d’entrée actuels donnent, pour tout r fixé ≥3, une masse totale N^(−r/2+ε), et pour ρ_rel≥ηL une masse N^(1−r+ε) ; les hôtes primitifs denses sont eux-mêmes au nombre de N^ε.
+Justification : Primitive signifie exactement nullité relative positive et nullité nulle de toute sous-famille propre. runRelativeNullity est cette nullité effective. weight est exactement (produit des vraies marginales p_x)·2^ρ_rel, donc le poids de 15.5, où le texte abrège ρ_rel en ρ. Le théorème Lean porte sur toutes les parties primitives de I_N et leurs sous-familles déterministes ; la restriction à l’ensemble admissible imprimé est immédiate. Il ne requiert ni régularité, ni compatibilité affine, ni séparation supplémentaire. Le cas nul des marginales rend certains poids nuls ; il ne restreint pas le dénombrement des hôtes denses.
+Révision proposée : Présenter une proposition forte à deux niveaux : toutes primitives fixes, puis primitives denses avec η fixé. Donner le lemme de confinement ancré qui fournit N^ε hôtes, puis la preuve de masse par ρ≤L. La preuve de 15.5 imprimée peut être raccourcie ou conservée en archive. Ne pas appeler ces familles simplement « connected » : la primitivité est essentielle.
+Localisateurs (source examinée ci-dessus) :
+  manuscripts/paper-p1/v1.7/sources/main_sections/exact_transfer.tex:192–294 ; PDF p.41
+  PaperP1/Asymptotics/SharpPrimitiveMass.lean:21–120
+  PaperP1/Asymptotics/DensePrimitiveRankMass.lean:19–59
+  PaperP1/Asymptotics/DensePrimitiveHosts.lean:42–131
+  PaperP1/Model/PrimitiveWindowMass.lean:20–23
+  PaperP1/Model/ConnectedWindowFamilies.lean:26–36
+Acquis déjà tracés : P1-MATH-0073, P1-MATH-0427
+Formulation anglaise/TeX proposée :
+Fix an integer $r\ge3$, $C>0$ and $\varepsilon>0$. Uniformly in the critical band,
+\[
+ \sum_{\substack{I\subseteq\mathcal I_N,\ |I|=r\\I\ \mathrm{primitive}}}
+  2^{\rho_{\rm rel}(I)}\prod_{x\in I}p_x
+ \ll_{r,C,\varepsilon}N^{-r/2+\varepsilon}.
+\]
+For each fixed $\eta>0$, the subfamily with $\rho_{\rm rel}(I)\ge\eta L$ has $O_{r,C,\eta,\varepsilon}(N^\varepsilon)$ hosts and total weight $O_{r,C,\eta,\varepsilon}(N^{1-r+\varepsilon})$. In each assertion one threshold is chosen after the fixed parameters and before $N,L$ and the family being summed.
+Domaine et quantificateurs : r fixé ≥3 ; η>0 fixé pour le seul secteur dense ; ε et C fixés ; seuil dépendant de ces paramètres. Aucune uniformité en r(N) ou η(N).
+Statut : Tri critique et priorisation d’acquis déjà présents dans le développement ; aucun nouveau checkpoint mathématique annoncé.
+
+S03 — Donner la très petite queue par le branchement à ordre log²N
+Catégorie : amelioration_scientifique_facultative ; importance : haute ; certitude : élevée : même observable original et seuils contrôlés
+T19.6 impose c<√13/4, avec une variante c<2/√5, et donne une longue preuve par petits pivots et coloration. Le développement actuel prouve une borne plus forte pour tout seuil b≥N^(9/10), puis le T19.6 imprimé pour chaque c>0 fixé.
+Justification : probability et moment sont définis avec le compte original infiniteStartCount sur I_N, pas avec le compte modifié. QuadraticOrderMoments prouve F_k≤(2N^(3/4+ε))^k uniformément pour k≤K log²N. Avec ε=1/20 et k=ceil(128log²N), Markov donne exp(−2log³N) au seuil N^(9/10). Le facteur N^r donne le moment tronqué pour tous les entiers 0≤r≤log N. NearLinearThreshold conserve exactement ceil(ceil(N/L)e^(−c√(logN loglogN))), qui dépasse N^(9/10) pour chaque c fixé.
+Révision proposée : Remplacer la preuve de T19.6 par la branche croissance des moments–Markov et élargir c à tout réel positif fixé. Les anciens résultats de friabilité peuvent rester comme contexte s’ils sont utilisés ailleurs ; ils ne doivent plus être présentés comme des entrées nécessaires à ce résultat.
+Localisateurs (source examinée ci-dessus) :
+  manuscripts/paper-p1/v1.7/sources/companion_sections/limits_appendix.tex:296–381 ; PDF p.71,72
+  PaperP1/Asymptotics/VerySmallTail.lean:38–72
+  PaperP1/Asymptotics/QuadraticTailScale.lean:17–19
+  PaperP1/Asymptotics/QuadraticOrderMoments.lean:27–49
+  PaperP1/Model/CountTailBounds.lean:21–26
+Acquis déjà tracés : P1-MATH-0033
+Formulation anglaise/TeX proposée :
+For each fixed critical band, there is $N_0(C)$ such that, uniformly for critical $L$, every $b\ge N^{9/10}$ satisfies
+\[
+ \Pr(Z_N>b)\le e^{-2(\log N)^3},\qquad
+ \mathbb E[Z_N^r;Z_N>b]\le e^{-(\log N)^3/2}
+ \quad(0\le r\le\log N,\ r\in\mathbb N).
+\]
+Consequently the assertions of Proposition~\ref{p1:limits:colored-tail} hold for every fixed $c>0$, with a threshold that may depend on $c$.
+Domaine et quantificateurs : C fixé ; seuil avant L, b et tous les r≤logN. Pour le seuil près de N, c fixé avant N ; pas d’uniformité en c(N).
+Statut : Tri critique et priorisation d’acquis déjà présents dans le développement ; aucun nouveau checkpoint mathématique annoncé.
+
+S04 — Remplacer les arbres enracinés du générateur par des étoiles disjointes
+Catégorie : amelioration_scientifique_facultative ; importance : moyenne à haute pour la preuve ; certitude : élevée
+Le texte donne exp(Mz+4nΔz²/(1−4Δz)) sous 4Δz<1. Une borne plus forte, sans condition de petitesse, est déjà prouvée : exp(Mz+nz((1+z)^Δ−1)), ainsi que sa version hétérogène.
+Justification : L’ensemble admissible est exactement celui dont les sommets isolés induits sont marqués. Il se partitionne en singletons marqués et étoiles non triviales. En oubliant les contraintes entre ces blocs et en sommant leurs poids, on obtient directement l’exponentielle. Le lemme ne dépend d’aucune arithmétique du modèle.
+Révision proposée : Privilégier la version à poids hétérogènes, puis donner le corollaire homogène. Une preuve par couverture minimale d’arêtes explique pourquoi les composantes des blocs retenus sont des étoiles. La variante rationnelle vaut exp(Mz+2nΔz²/(2−Δz)) pour Δz<2. Ne pas multiplier les énoncés si la version polynomiale suffit.
+Localisateurs (source examinée ci-dessus) :
+  manuscripts/paper-p1/v1.7/sources/main_sections/cores.tex:111–122 ; PDF p.24
+  manuscripts/paper-p1/v1.7/sources/companion_sections/cores.tex:93–110 ; PDF p.53
+  PaperP1/Combinatorics/MarkedGraphGenerator.lean:19–83
+  PaperP1/Combinatorics/GraphStarWeights.lean:95–119
+Acquis déjà tracés : P1-MATH-0022
+Formulation anglaise/TeX proposée :
+For every $z\ge0$,
+\[
+ \sum_{D\in\mathcal F}z^{|D|}
+ \le\exp\{Mz+nz((1+z)^\Delta-1)\}.
+\]
+More generally the exponent is bounded by
+$\sum_{v\in\mathcal M}w_v+\sum_v w_v(\prod_{u\sim v}(1+w_u)-1)$ for nonnegative vertex weights, where $\mathcal M$ is the marked vertex set and $M=|\mathcal M|$.
+Domaine et quantificateurs : Graphe simple fini, poids non négatifs ; pas d’asymptotique, pas de petite activité.
+Statut : Tri critique et priorisation d’acquis déjà présents dans le développement ; aucun nouveau checkpoint mathématique annoncé.
+
+S05 — Permettre un majorant de degré qui ne croît pas plus vite que logB
+Catégorie : amelioration_scientifique_facultative ; importance : moyenne ; certitude : élevée
+La preuve imprimée de 13.5 utilise D_max=B^(a+o(1)) avec 0<a<1/2 et sa croissance plus rapide que logB. Le théorème Lean couvre un simple majorant de puissance supérieure, permet a=0, et inclut donc les plafonds bornés ou polylogarithmiques.
+Justification : Pour H≥1 et 2≤D≤M, le profil D²H^(1/D) est au plus 4√H+e(M²+(logH)²), sans condition M≥logH. L’excédent logarithmique s’absorbe dans √B. source_uniform_bound est uniforme avant M et avant le corps et le polynôme ; le type final utilise un polynôme irréductible sur un corps de caractéristique zéro plongé dans C.
+Révision proposée : Formuler la corollaire avec D_max≤B^(a+o(1)), 0≤a<1/2 ; garder la même conclusion o(B). Rendre explicite que les constantes du compte de points sont indépendantes de la courbe et du degré.
+Localisateurs (source examinée ci-dessus) :
+  manuscripts/paper-p1/v1.7/sources/main_sections/pair_rigidity.tex:228–255 ; PDF p.32
+  PaperP1/Asymptotics/QuadraticGrowingDegreePlaneCount.lean:15–45
+  PaperP1/Analysis/CurveDegreeProfile.lean:88–98
+Acquis déjà tracés : P1-MATH-0079
+Formulation anglaise/TeX proposée :
+Fix $0\le a<1/2$ and $c_0>0$. Let $D_{\max}(B)$ satisfy, for every $\delta>0$, $D_{\max}(B)\le B^{a+\delta}$ eventually. Uniformly for integral plane curves with $2\le D\le D_{\max}(B)$, the bound in Corollary~\ref{p13:rig:sublinear-grid} holds and is $o(B)$.
+Domaine et quantificateurs : a, c0 et fonction plafond fixés avant le seuil ; degré et coefficients variables après le seuil. Aucun plafond effectif uniforme pour tous a<1/2 à la fois.
+Statut : Tri critique et priorisation d’acquis déjà présents dans le développement ; aucun nouveau checkpoint mathématique annoncé.
+
+S06 — Deux petites améliorations sûres des constantes et erreurs
+Catégorie : amelioration_scientifique_facultative ; importance : basse ; certitude : élevée
+La constante C(λ)≥e^(−λ)/4 peut être doublée en e^(−λ)/2. La première erreur de l’identité κ4=24K4+erreur vaut N^(−5/3+ε) dans le point d’entrée Lean, au lieu de N^(−3/2+ε) imprimé.
+Justification : Une suite sommable de masse totale nulle a une norme l1 au moins égale à deux fois sa masse positive en zéro. La première identité de FourthCumulantIdentities.article_16_1 distingue explicitement l’erreur de cumulant −5/3 et l’erreur d’incompatibilité −3/2.
+Révision proposée : Corriger le facteur deux dans la borne de C sans ajouter un nouveau lemme. Si l’identité quartique est révisée, préserver les deux erreurs séparées ; la borne finale signée reste −3/2.
+Localisateurs (source examinée ci-dessus) :
+  manuscripts/paper-p1/v1.7/sources/main_sections/closure.tex:86–102 ; PDF p.25
+  manuscripts/paper-p1/v1.7/sources/main_sections/quartic_lower.tex:28–41 ; PDF p.50
+  PaperP1/Probability/PoissonSecondDifferenceNorm.lean:46–57
+  PaperP1/Asymptotics/FourthCumulantIdentities.lean:18–33
+Acquis déjà tracés : P1-MATH-0023
+Formulation anglaise/TeX proposée :
+$e^{-\lambda}/2\le\mathcal C(\lambda)\le1$. Also $\kappa_4=24K_4+O_{C,\varepsilon}(N^{-5/3+\varepsilon})$, while $K_4-K_4^+=O_{C,\varepsilon}(N^{-3/2+\varepsilon})$.
+Statut : Tri critique et priorisation d’acquis déjà présents dans le développement ; aucun nouveau checkpoint mathématique annoncé.
+
+S07 — Rendre exact le petit exemple de rang, sans développer une nouvelle théorie
+Catégorie : amelioration_scientifique_facultative ; importance : basse ; certitude : certaine par calcul fini indépendant ; pas encore un nouveau théorème Lean de cette revue
+Pour N=18 et q=3, le texte et Lean ne donnent que r≤10. Le rang est exactement 10 et la fibre de forçage comporte exactement deux des 2048 échantillons de signes premiers.
+Justification : Les quinze entiers observés sont exactement 21,…,35. Les lignes de parité des valeurs 27,32,30,28,22,26,34,23,29,31 engendrent successivement les dix coordonnées 3,2,5,7,11,13,17,23,29,31. La coordonnée 19 est libre. L’énumération entière indépendante confirme deux solutions, f négatif seulement en 3, ou seulement en 3 et 19 ; le compte positif et le compte total valent cinq dans ces deux solutions.
+Révision proposée : Si cet exemple est conservé, remplacer « r≤10 » par « r=10 » après ajout d’un petit certificat de rang. Cela rend l’exemple autonome. Ne pas en déduire une formule de rang général ou une amélioration du seuil t>2.
+Localisateurs (source examinée ci-dessus) :
+  manuscripts/paper-p1/v1.7/sources/formalization.tex:258–279 ; PDF p.99
+  PaperP1/Model/RankChargedPrimeCylinder.lean:306–347
+Formulation anglaise/TeX proposée :
+In this example the rank is exactly $10$: the observed values $27,32,30,28,22,26,34,23,29,31$ successively determine every prime bit except that of $19$. Thus the forcing event has exactly probability $2^{-10}$.
+
+E01 — Séparer les nouveaux résultats mathématiques du bilan de formalisation
+Catégorie : reprise_editoriale ; importance : haute ; certitude : élevée
+L’appendice de formalisation héberge aujourd’hui un véritable argument analytique nécessaire à T19.17, trois raffinements de cylindre et les identités exactes du champ de référence. Ces contenus scientifiques sont placés après le récit de révision et accompagnés de nombreux noms de modules.
+Justification : Le recensement de nombres friables est utilisé en T19.17 et mérite une place de lemme technique à proximité de son application. Les identités Poisson sont des propriétés du modèle de référence défini dans 20.1 ; elles restent utiles même au lecteur qui ne consulte pas Lean. Le bilan de formalisation gagnerait à garder uniquement le périmètre, les deux corrections, les pointeurs stables et la procédure de reproduction.
+Révision proposée : Déplacer le recensement suffisant et sa preuve dans une sous-section technique de T19 ; réunir les renforcements du cylindre après T19.7 ; placer une courte proposition sur le champ à côté du lemme 20.1 et sa preuve dans T19. Garder la version d’article de l’appendice de formalisation en une page environ. Les numéros existants peuvent rester stables par sous-sections ou noms de propositions nouveaux.
+Localisateurs (source examinée ci-dessus) :
+  manuscripts/paper-p1/v1.7/sources/formalization.tex:72–164 ; PDF p.96,97
+  manuscripts/paper-p1/v1.7/sources/formalization.tex:167–279 ; PDF p.98,99
+  manuscripts/paper-p1/v1.7/sources/formalization.tex:281–378 ; PDF p.99,100
+  manuscripts/paper-p1/v1.7/sources/main_sections/limits_appendix.tex:11–69 ; PDF p.60,61
+
+E02 — Unifier les notations du champ et son hypothèse de compensation
+Catégorie : reprise_editoriale ; importance : moyenne ; certitude : élevée
+Le champ est noté H_x dans l’article et Z_x dans l’appendice. Le paragraphe bivarié réemploie p_x,p_y pour les intensités de référence, alors que p_x est partout ailleurs la vraie marginale arithmétique, qui peut différer de p. Les généralisations à des paquets finis ne rappellent pas explicitement leur admissibilité ν_x≥0.
+Justification : Les types Lean sont corrects : hp impose p_x−incidence≥0, hq impose q_e≥0, et hInd l’indépendance mutuelle de toutes les cellules. Le texte initial de 20.1 établit bien cette positivité pour N grand. C’est la formulation générale et le changement de notation qui risquent de faire perdre cette hypothèse. Les identités exactes ne sont pas celles des indicateurs arithmétiques : pour une bonne paire régulière Cov(J_x,J_y)=q_e−p², tandis que Cov(H_x,H_y)=q_e ; les variances valent respectivement p(1−p) et p.
+Révision proposée : Employer H_x partout pour la référence et des intensités p_x^ref dans l’extension hétérogène. Introduire la proposition générale par « let q_e≥0 and p_x^ref≥Σ_{e∋x}q_e ». Rappeler x,y distincts pour la somme de taux partagés sans terme diagonal. Les blocs éventuellement chevauchants restent couverts : une coordonnée commune doit alors avoir intensité nulle pour que les blocs soient indépendants.
+Localisateurs (source examinée ci-dessus) :
+  manuscripts/paper-p1/v1.7/sources/main_sections/limits_appendix.tex:15–43 ; PDF p.60
+  manuscripts/paper-p1/v1.7/sources/formalization.tex:281–344 ; PDF p.99,100
+  PaperP1/Probability/PositionalArrivalMarginals.lean:120–143
+  PaperP1/Probability/PositionalBivariateLaw.lean:179–239
+Formulation anglaise/TeX proposée :
+Let $E$ be a finite family of packets, $q_e\ge0$, and $p_x^{\rm ref}\ge\sum_{e\ni x}q_e$. Define $H_x$ from mutually independent Poisson cells as above. All marginal, covariance and independence identities below concern this reference field. In the arithmetic application $p_x^{\rm ref}=p$ on the full grid.
+
+E03 — Garder une révision sélective du récit, au lieu d’intégrer les 997 étapes
+Catégorie : reprise_editoriale ; importance : haute ; certitude : élevée
+Le dossier de 997 changements mélange corrections d’énoncés, gains véritables et étapes internes de construction. L’article distingue déjà utilement les régimes, les références exactes/explicites et les trois branches de preuve ; la refonte intégrale n’est pas justifiée par les contrôles effectués ici.
+Justification : Le plus fort gain de clarté vient de trois remplacements locaux (primitives, queues, générateur) et de deux compléments (profil quasi linéaire, degré-plafond). Le théorème principal, ses paramètres exacts, l’obstruction quartique et les restrictions d’uniformité ne nécessitent pas de nouvelle narration globale.
+Révision proposée : Réécriture légère à moyenne de l’article, plus substantielle et localisée du compagnon T19 et de la preuve de 15.5. Garder la carte de dépendances mais la mettre à jour après les déplacements. Une revue future des nouvelles interfaces doit précéder toute affirmation d’un taux Hermite amélioré, d’une limite de degré croissante plus large, ou d’un abaissement du cutoff 256.
+Localisateurs (source examinée ci-dessus) :
+  manuscripts/paper-p1/v1.7/sources/main_sections/introduction.tex:610–731 ; PDF p.10,11,12
+  manuscripts/paper-p1/v1.7/sources/main_sections/exact_transfer.tex:887–1038 ; PDF p.48,49
+  manuscripts/paper-p1/v1.7/sources/main_sections/discussion.tex:226–262 ; PDF p.59
+  docs/mathematical-changes.json:1
+
+INTERFACES CENTRALES EXAMINÉES
+A01 — PaperP1.OptimalQuadratic.article_1_1
+PaperP1/Asymptotics/OptimalQuadratic.lean:27
+Accord contrôlé sur le point d’entrée : loi originale, vrais μ et α, deux côtés, biais de moyenne et positivité éventuelle. Aucun argument supposant la borne finale n’est exposé dans le type.
+A02 — PaperP1.ExactPoissonScale.article_1_2
+PaperP1/Asymptotics/ExactPoissonScale.lean:43
+Le type distingue bien les deux moyennes et leurs deux erreurs ; l’équivalent utilise les paramètres mobiles et le résidu L mod 3.
+A03 — PaperP1.OptimalThirdCumulant.article_14_1
+PaperP1/Asymptotics/OptimalThirdCumulant.lean:25
+Accord du signe et du pouvoir 41/30, sur le cumulant factoriel du vrai compte. La constante inférieure lowerConstant C est fixée avant ε, comme dans le texte.
+A04 — PaperP1.FiniteCompleteLawTransfer.article_15_13
+PaperP1/Asymptotics/FiniteCompleteLawTransfer.lean:151
+Le résultat est exactement une implication conditionnelle telle qu’imprimée, et ne doit pas être présenté isolément comme la preuve inconditionnelle du théorème principal.
+A05 — PaperP1.OptimalTripleReconstruction.article_15_14
+PaperP1/Asymptotics/OptimalTripleReconstruction.lean:19
+Le point d’entrée ferme le résultat symbolique et la borne numérique pour la même loi et le même seuil. Pas de prémisse externe de reconstruction dans la signature.
+A06 — PaperP1.FourthCumulantIdentities.article_16_1
+PaperP1/Asymptotics/FourthCumulantIdentities.lean:18
+Accord de la nonnégativité compatible et du signe de la contribution 3α² ; première erreur plus forte que le texte. L’objet est le cumulant factoriel, avec termes d’indices répétés déjà présents.
+A07 — PaperP1.RevisedCompanionStatements.companion_T1_10
+PaperP1/Analysis/RevisedCompanionStatements.lean:13
+La correction de rayon est visible dans le type : même D pour la largeur de l’ancien bloc et le profil non aligné ; Q est fixé avant le seuil. Aucune nouvelle correction nécessaire trouvée.
+A08 — PaperP1.RevisedCompanionStatements.companion_T5_1
+PaperP1/Analysis/RevisedCompanionStatements.lean:43
+Les trois conclusions de comptage (non capée, capée, affine) sont séparément prouvées. L’inégalité algébrique exacte imprimée a son propre point d’entrée companion_T5_1_exact_comparison, qui doit être gardé dans le raccord sémantique.
+A09 — PaperP1.IndependentPositionalApproximation.main_20_1
+PaperP1/Asymptotics/IndependentPositionalApproximation.lean:29
+Le vrai champ arithmétique et sa référence indépendante vivent sur la grille originale ; la sommabilité est explicite. Le seuil précède bien l’espace de probabilité et toutes les arrivées.
+A10 — PaperP1.PositionalArrivalMarginals.hasLaw_coordinate
+PaperP1/Probability/PositionalArrivalMarginals.lean:120
+Loi marginale exactement Poisson de paramètre p_x^ref. L’intégrabilité de chaque factorielle et la valeur (p_x^ref)^j sont prouvées dans coordinate_factorial_moment.
+A11 — PaperP1.PositionalArrivalCovariance.covariance_coordinates
+PaperP1/Probability/PositionalArrivalCovariance.lean:142
+La formule avec terme diagonal plus somme des paquets communs est exacte et le cas x=y redonne p_x^ref. MemLp(...,2) est prouvé séparément ; les covariances existent.
+A12 — PaperP1.PositionalArrivalIndependence.independent_count_coordinates_iff
+PaperP1/Probability/PositionalArrivalIndependence.lean:214
+Le critère porte sur les comptes naturels littéraux ; les cellules de taux nul sont éliminées presque sûrement. Le sens covariance nulle ⇒ indépendance utilise la structure Poisson commune, pas une implication générale fausse.
+A13 — PaperP1.PositionalBlockIndependence.independent_blocks_iff_cross_covariance_zero
+PaperP1/Probability/PositionalBlockIndependence.lean:187
+L’équivalence concerne les vecteurs entiers complets de chaque bloc, pas seulement l’indépendance deux à deux. Les blocs sont finis et peuvent se chevaucher dans le théorème général.
+A14 — PaperP1.PositionalBivariateLaw.field_joint_law
+PaperP1/Probability/PositionalBivariateLaw.lean:201
+Les paramètres sont réellement construits par les trois familles disjointes de cellules, avant l’écriture p_x−r,p_y−r,r. Le lemme field_covariance_bounds prouve 0≤r≤min(p_x,p_y), donc les troncatures NNReal ne masquent pas des paramètres négatifs.
+A15 — PaperP1.PositionalBivariateMass.real_singleton
+PaperP1/Probability/PositionalBivariateMass.lean:77
+Le facteur exponentiel, les trois factorielles et la borne min(m,n) correspondent exactement à la formule imprimée. Le préimage de l’application (a,b,c)↦(a+c,b+c) est une fibre finie explicite. Les cas nuls et coincidents sont inclus.
+A16 — PaperP1.SmoothLogarithmicWindowDensity.uniform_bound
+PaperP1/Analysis/SmoothLogarithmicWindowDensity.lean:34
+Le recensement suffisant est un résultat sur la cardinalité littérale des fenêtres ayant au plus un entier ordinairement friable. Le taux o_a(N) est explicitement quantifié.
+
+ORDRE DE REPRISE RECOMMANDÉ
+1. C01 : Corriger l’assistance et les destinations de sources ; garder tout autre énoncé figé pendant cette correction documentaire.
+2. S02,S01 : Décider les nouveaux énoncés primitifs et profils ; établir les renvois de preuve et l’ordre sans circularité avant modification des textes.
+3. S03,S04,S05 : Remplacer localement les preuves de queues et du générateur ; étendre le majorant de degré avec ses quantificateurs.
+4. E01,E02 : Déplacer les nouveaux résultats scientifiques au voisinage de leurs usages ; réunir le champ de référence dans une proposition unique, admissible et distincte du champ arithmétique.
+5. S06,S07 : Intégrer les petites améliorations uniquement si leur coût éditorial reste minime ; ne pas augmenter le nombre d’énoncés pour chaque étape interne.
+6. E03 : Mettre à jour cartes de dépendances, bibliographie effectivement utilisée, correspondance imprimée/Lean ; reconstruire les PDF et vérifier visuellement les pages changées. Aucune soumission Palomar pendant la temporisation.
+
+PORTÉE ET LIMITES DE LA RELECTURE
+read : AGENTS.md ; débuts actuels et sections ciblées des fichiers de statut/correspondance/changements/inputs ; inventaires JSON ; revue des signatures compilées ; nombreuses sections centrales de l’article et du compagnon ; preuves et définitions Lean des points d’entrée recensés ci-dessous ; dépendances directes et quelques étapes intermédiaires des renforcements.
+documents : Article 65 pages et compagnon 102 pages ; texte intégral extrait pour les localisateurs, sans prétendre avoir relu ligne à ligne les deux documents.
+visual_review : Huit pages ciblées ont été rendues ; inspection visuelle détaillée de l’article p.63 et du compagnon pp.99–100. Aucun problème de débordement ou de clipping détecté sur ces pages ; ce n’est pas une validation visuelle de toutes les pages.
+formal_depth : 16 contrôles sémantiques d’interfaces consignés, avec signatures exactes de sources et exemples centraux également présents dans l’inventaire compilé. Les preuves d’assemblage et les définitions d’objets ont été lues ; les quelque 20 000 déclarations et toute l’analytique du recensement friable n’ont pas été ré-auditées une par une.
+validation : Les trois empreintes gzip des journaux 0997 ont été recalculées et correspondent ; la fin du journal de build indique le succès ; les déclarations centrales et renforcées recherchées apparaissent dans l’audit avec seulement propext, Classical.choice, Quot.sound. Aucun fichier PaperP1, Audit.lean, lockfile ou toolchain n’a changé entre le commit source 292eaafc… des journaux et c1db11f… lors du contrôle. Aucun build ni extraction Lean nouvelle n’a été lancé.
+bibliography : Contrôle direct d’une source primaire cruciale : BCN arXiv v2, Theorem 2, (27). Pas de contrôle externe exhaustif de la bibliographie.
+independence : Relecture par une autre instance du modèle, indépendante de l’agent qui assemble les modifications. Ce n’est ni une expertise humaine externe ni une nouvelle certification Palomar.
+
+CONCLUSIONS À NE PAS TIRER
+- La covariance nulle n’implique ici l’indépendance que pour les sommes de cellules Poisson indépendantes ; aucun graphe de dépendance exact du champ J n’est obtenu.
+- Un taux fixe en r ou en η ne fournit pas une uniformité à r croissant ou η décroissant.
+- Le meilleur contrôle primitif ne fait pas disparaître le terme de deux paires indépendantes qui limite la référence quadratique.
+- Le contrôle de très petites probabilités au-dessus d’un grand seuil ne donne pas une borne de moment exponentiel réel uniforme du compte original.
+- Les bornes supplémentaires et les simplifications proposées sont des propositions de révision : aucun fichier TeX/Lean ni PDF du dépôt n’a été changé par cette revue.
+
+Le rapport JSON conserve les signatures exactes, hypothèses, dépendances fermées et propositions TeX. Le fichier disposition.json précise les corrections effectuées après la source examinée. Les améliorations de résultats n’ont pas été intégrées silencieusement dans les énoncés.

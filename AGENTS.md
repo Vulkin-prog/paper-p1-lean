@@ -39,3 +39,7 @@ future manuscript version and preparing Palomar registrations after completion.
   Only `propext`, `Classical.choice`, `Quot.sound` are permitted kernel axioms.
 - Palomar is a later milestone: no submission, certification claim or registry
   identifier before completed coverage, statement alignment and actual checks.
+- On 7 November 2026 the user explicitly put Palomar submissions on hold while
+  the article and companion undergo independent mathematical/editorial review.
+  Do not launch the full Palomar workflow, intake or registration until the user
+  resumes that work. Local proof checks and manuscript review may continue.

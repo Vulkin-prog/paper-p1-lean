@@ -1,0 +1,16 @@
+Available: 49.44 GiB; repository on Ubuntu root device: True
+Available: 49.44 GiB; repository on Ubuntu root device: True
+main: round 1 passed
+Available: 49.44 GiB; repository on Ubuntu root device: True
+Available: 49.44 GiB; repository on Ubuntu root device: True
+companion: round 1 passed
+Available: 49.44 GiB; repository on Ubuntu root device: True
+Available: 49.44 GiB; repository on Ubuntu root device: True
+main: round 2 passed
+Available: 49.44 GiB; repository on Ubuntu root device: True
+Available: 49.44 GiB; repository on Ubuntu root device: True
+companion: round 2 passed
+Both auxiliary files and contents tables are stable.
+Available: 49.44 GiB; repository on Ubuntu root device: True
+Available: 49.44 GiB; repository on Ubuntu root device: True
+Built both v1.7 draft PDFs with stable cross-references.

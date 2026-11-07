@@ -267,3 +267,26 @@ its admissibility and degenerate cases, original comparison, module
 pointers and scope text fit without clipping or overlaps. Counts remain
 65 and 102 pages. All 48 TeX hashes, provenance, PDF hashes and
 numbered-statement identities are checked.
+
+
+Independent review, 7 November 2026, identified an obsolete sentence in the
+article assistance statement claiming that no proof-assistant development
+was included. The common assistance source now acknowledges the version 1.7
+Lean proof development and statement comparison; the original version 1.6
+archives are explicitly historical. AI-assisted review and machine checking
+are distinguished from independent human verification. No numbered statement
+or Lean proof file changes. Both PDFs rebuilt successfully with stable
+cross-references, no undefined references and no overfull boxes. All 167
+pages were rendered; 164 match the previous reviewed version pixel for pixel
+at 55 dpi. Changed article page 63 and companion pages 4 and 100 were inspected
+in full at 110 dpi. The companion guide now identifies check_all.py as historical
+v1.6 tooling and points to the actual v1.7 builder and correspondence checker. Page counts remain 65 and 102. The original checkpoint-0997
+proof evidence and its mathematical scope remain unchanged.
+
+The independent review and its exact signatures, proposed revisions and limits
+are preserved in [the review dossier](reviews/2026-11-07/review.json). It found
+no new confirmed mathematical error in the examined scope and recommends a
+selective article revision, with more substantial local work in companion T19.
+The stronger pair profiles, primitive bounds, tails and star generator remain
+proposals for editorial integration; no extra numbered theorem change is
+implied by this report. Palomar submissions are on hold at the user's request.

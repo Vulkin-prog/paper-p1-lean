@@ -1,0 +1,87 @@
+{
+  "date": "2026-11-07",
+  "reviewed_source": "c1db11fe29e94f6afd87636d51beeb908a346af9",
+  "review_sha256": "3bcfa89655a496c21b68aeb223d087a8ad3437ffe83731f10ce235373bbd75c0",
+  "reviewer_is_separate_ai_instance": true,
+  "necessary_correction": {
+    "id": "C01",
+    "status": "implemented_and_pdf_verified",
+    "files": [
+      "manuscripts/paper-p1/v1.7/sources/assistance.tex",
+      "manuscripts/paper-p1/v1.7/sources/companion_sections/guide.tex"
+    ]
+  },
+  "other_findings": [
+    {
+      "id": "S01",
+      "status": "proposed_for_editorial_revision",
+      "category": "amelioration_scientifique_facultative"
+    },
+    {
+      "id": "S02",
+      "status": "proposed_for_editorial_revision",
+      "category": "amelioration_scientifique_facultative"
+    },
+    {
+      "id": "S03",
+      "status": "proposed_for_editorial_revision",
+      "category": "amelioration_scientifique_facultative"
+    },
+    {
+      "id": "S04",
+      "status": "proposed_for_editorial_revision",
+      "category": "amelioration_scientifique_facultative"
+    },
+    {
+      "id": "S05",
+      "status": "proposed_for_editorial_revision",
+      "category": "amelioration_scientifique_facultative"
+    },
+    {
+      "id": "S06",
+      "status": "proposed_for_editorial_revision",
+      "category": "amelioration_scientifique_facultative"
+    },
+    {
+      "id": "S07",
+      "status": "proposed_for_editorial_revision",
+      "category": "amelioration_scientifique_facultative"
+    },
+    {
+      "id": "E01",
+      "status": "proposed_for_editorial_revision",
+      "category": "reprise_editoriale"
+    },
+    {
+      "id": "E02",
+      "status": "proposed_for_editorial_revision",
+      "category": "reprise_editoriale"
+    },
+    {
+      "id": "E03",
+      "status": "proposed_for_editorial_revision",
+      "category": "reprise_editoriale"
+    }
+  ],
+  "numbered_statements_modified": false,
+  "lean_proofs_modified": false,
+  "mathematical_checkpoint_preserved": "P1-MATH-0997",
+  "new_lean_kernel_replay": false,
+  "palomar_submission_status": "on_hold_at_user_request",
+  "source_and_qualification_checks": "passed",
+  "pdfs": {
+    "main": 65,
+    "companion": 102,
+    "rendered": 167,
+    "pixel_identical": 164,
+    "changed_pages": {
+      "main": [
+        63
+      ],
+      "companion": [
+        4,
+        100
+      ]
+    }
+  }
+}

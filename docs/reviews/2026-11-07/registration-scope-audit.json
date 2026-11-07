@@ -1,0 +1,519 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-11-07T10:57:16.530125+00:00",
+  "original_plan_source": "3e5a5c0e563bbcfc1ab92472411f86dc1b44d74b",
+  "reviewed_source": "c1db11fe29e94f6afd87636d51beeb908a346af9",
+  "original_component_count": 17,
+  "original_selected_count": 68,
+  "consolidated_count": 6,
+  "consolidated_selected_count": 68,
+  "bijection": true,
+  "missing_original_declarations": [],
+  "duplicated_original_declarations": [],
+  "all_preserved_files_byte_identical": true,
+  "bundles": [
+    {
+      "order": 1,
+      "slug": "arithmetic_geometry",
+      "title": "Arithmetic and geometry",
+      "original_families": [
+        "quadratic_kernels",
+        "integral_curve_count",
+        "local_rigidity"
+      ],
+      "selected": 12
+    },
+    {
+      "order": 2,
+      "slug": "profiles_smooth",
+      "title": "Arithmetic profiles and smooth logarithmic windows",
+      "original_families": [
+        "asymmetric_profiles",
+        "smooth_windows"
+      ],
+      "selected": 6
+    },
+    {
+      "order": 3,
+      "slug": "affine_conditioning",
+      "title": "Finite affine structure, conditioning and dependent expansions",
+      "original_families": [
+        "affine_spectra",
+        "conditioning",
+        "dependent_expansion"
+      ],
+      "selected": 12
+    },
+    {
+      "order": 4,
+      "slug": "cumulants_obstructions",
+      "title": "Factorial cumulants, moments and private obstructions",
+      "original_families": [
+        "factorial_cumulants",
+        "moment_obstruction",
+        "private_obstruction"
+      ],
+      "selected": 14
+    },
+    {
+      "order": 5,
+      "slug": "poisson_fields",
+      "title": "Poisson approximation, scales and positional reference fields",
+      "original_families": [
+        "quadratic_approximation",
+        "poisson_scales",
+        "positional_field",
+        "poisson_reference"
+      ],
+      "selected": 16
+    },
+    {
+      "order": 6,
+      "slug": "exponential_cylinders",
+      "title": "Exponential moments and prime cylinders",
+      "original_families": [
+        "exponential_divergence",
+        "prime_cylinders"
+      ],
+      "selected": 8
+    }
+  ],
+  "preserved_files": [
+    {
+      "path": "comparator/p1_quadratic_kernels.json",
+      "sha256": "0a502cf94a331a8dffbe6ab5a779201130c6246c7db727e1de9da66253a9f118",
+      "byte_identical": true
+    },
+    {
+      "path": "ChallengeP1QuadraticKernels.lean",
+      "sha256": "c17c24e74a63df8698762496c47d480fe19913b417aa5dee6be0097da72ba6bb",
+      "byte_identical": true
+    },
+    {
+      "path": "SolutionP1QuadraticKernels.lean",
+      "sha256": "d4fcd1e84f738e4582c6c71e925017988d47aa1ca6c6590387f31d9c5591c594",
+      "byte_identical": true
+    },
+    {
+      "path": "palomar/v1/quadratic_kernels/formalization.yaml",
+      "sha256": "021f145ac87e1e62df5ddb688d07b2bca283803f01c24b98d46c094a2d0d54b3",
+      "byte_identical": true
+    },
+    {
+      "path": "palomar/v1/quadratic_kernels/qualification.json",
+      "sha256": "adc9401588ee116fe33a37d2f811f5ee6cb35ec133a5e3a985f2142d06935b74",
+      "byte_identical": true
+    },
+    {
+      "path": "comparator/p1_integral_curve_count.json",
+      "sha256": "6a54f4408527abc5ab7fd5ce2d73079f2b04d979f94b719ae807a8ef233fb845",
+      "byte_identical": true
+    },
+    {
+      "path": "ChallengeP1IntegralCurveCount.lean",
+      "sha256": "d16f840295f0d6f6cc2f29b95410f829ffc431c6f5dcae17fc7affd11a1651ca",
+      "byte_identical": true
+    },
+    {
+      "path": "SolutionP1IntegralCurveCount.lean",
+      "sha256": "3d5f8d8ae72b7fe6b1835cb3a6efc6bcb07cce8dfe94b5b17a543d68ff6e4182",
+      "byte_identical": true
+    },
+    {
+      "path": "palomar/v1/integral_curve_count/formalization.yaml",
+      "sha256": "b1961a3d9867ab07a01a9e139ada2e4aff378ea5a7310ed2d334acc82c038b2e",
+      "byte_identical": true
+    },
+    {
+      "path": "palomar/v1/integral_curve_count/qualification.json",
+      "sha256": "2941b5d1c37db9f5c9b26a70fb4f9e2eff83296bef1d0daf8a9062c97765bb42",
+      "byte_identical": true
+    },
+    {
+      "path": "comparator/p1_local_rigidity.json",
+      "sha256": "2b523f3c84dcb9acd6b2b7153ff8ffe8027415eabba35163c9d43b15de0245c8",
+      "byte_identical": true
+    },
+    {
+      "path": "ChallengeP1LocalRigidity.lean",
+      "sha256": "b7428d5823809ca878a3b8574bb27d813add67fc822a1839f40b33338649ca6c",
+      "byte_identical": true
+    },
+    {
+      "path": "SolutionP1LocalRigidity.lean",
+      "sha256": "6d87c9e049ad59747b47268fe16dde8accd159a602068aa1dd8c599ed66c32cd",
+      "byte_identical": true
+    },
+    {
+      "path": "palomar/v1/local_rigidity/formalization.yaml",
+      "sha256": "ee7f1eb9341e058f268512b257e57d5354e0fef5ac95d9466959829aaf25eaa1",
+      "byte_identical": true
+    },
+    {
+      "path": "palomar/v1/local_rigidity/qualification.json",
+      "sha256": "f9d1a6f538bcc583a6b97535fd06d86eef7a8c88c7ad12d835deff3584323034",
+      "byte_identical": true
+    },
+    {
+      "path": "comparator/p1_asymmetric_profiles.json",
+      "sha256": "486373f8ace3e5a806f972ae7be49c66eaedf95ea1ac8741138d144ea3c3ac24",
+      "byte_identical": true
+    },
+    {
+      "path": "ChallengeP1AsymmetricProfiles.lean",
+      "sha256": "1fe1a334cae40baeacde3569e546a89691c1362a7c7c02eb615312f341a54a4e",
+      "byte_identical": true
+    },
+    {
+      "path": "SolutionP1AsymmetricProfiles.lean",
+      "sha256": "2d607b5726fe964ce777477d2875c7d9163f5451b3342e33755dbf6188ef1700",
+      "byte_identical": true
+    },
+    {
+      "path": "palomar/v1/asymmetric_profiles/formalization.yaml",
+      "sha256": "5c5a3ab7f589e8ea87e5e9574bd4f7abbbdca76a248dfec5770ac24be4f9fd4d",
+      "byte_identical": true
+    },
+    {
+      "path": "palomar/v1/asymmetric_profiles/qualification.json",
+      "sha256": "f77897f6d7f782b112093cf66b8bfc71166e966550543966d2a6d630f3ea8b26",
+      "byte_identical": true
+    },
+    {
+      "path": "comparator/p1_smooth_windows.json",
+      "sha256": "de42fa39b674032111f32e4e5e2073c8c8ba62b2164209a857cb244979fb5831",
+      "byte_identical": true
+    },
+    {
+      "path": "ChallengeP1SmoothWindows.lean",
+      "sha256": "558542657ca2963b319f4cb5986908f36833976225ec305b3ab8d262c499e2d2",
+      "byte_identical": true
+    },
+    {
+      "path": "SolutionP1SmoothWindows.lean",
+      "sha256": "a99623cbc0cfc94ce3297dd1b50c896a1ba4f9d874dbf223547302c56eab9421",
+      "byte_identical": true
+    },
+    {
+      "path": "palomar/v1/smooth_windows/formalization.yaml",
+      "sha256": "d87cc32f585801a31994eb82df25d9b396e58c9e7d0cbc77b1e4d638f22fe19f",
+      "byte_identical": true
+    },
+    {
+      "path": "palomar/v1/smooth_windows/qualification.json",
+      "sha256": "5ea3917b4dc06a9735df518714056a58b78052d658949a38e2a3a28430731252",
+      "byte_identical": true
+    },
+    {
+      "path": "comparator/p1_affine_spectra.json",
+      "sha256": "455344fc70f839f4850e7beb890e4f01887512f0f572e58f49707979f5f48e2a",
+      "byte_identical": true
+    },
+    {
+      "path": "ChallengeP1AffineSpectra.lean",
+      "sha256": "9754798e16d944530eebcfeb147ee73718aeeaa5d8e4cd8e9e29a33c452cdbe4",
+      "byte_identical": true
+    },
+    {
+      "path": "SolutionP1AffineSpectra.lean",
+      "sha256": "61b20df5355bf51d2587dc79d7b8584472c06ed5c9ae508447e822dedd8e7b4a",
+      "byte_identical": true
+    },
+    {
+      "path": "palomar/v1/affine_spectra/formalization.yaml",
+      "sha256": "da858adaa9d8b502a834c0a32fbe8b305fb8b2fcb0e06e22f9a740ebd96886ea",
+      "byte_identical": true
+    },
+    {
+      "path": "palomar/v1/affine_spectra/qualification.json",
+      "sha256": "8912e52d00053e8f2608c96c391f33691e9e2d0fb877b52bc12bd030e9739230",
+      "byte_identical": true
+    },
+    {
+      "path": "comparator/p1_conditioning.json",
+      "sha256": "05dfe639f86993dd8f7440dedb064cb3879e2bf44c165cfca30a488ebfbc8a10",
+      "byte_identical": true
+    },
+    {
+      "path": "ChallengeP1Conditioning.lean",
+      "sha256": "f9e8c995755f0cc503832ffde23694d104219538c8136af0fad11635a3e6198d",
+      "byte_identical": true
+    },
+    {
+      "path": "SolutionP1Conditioning.lean",
+      "sha256": "5bbc85db68e09eafda01ece3dbfa2c19dc3fcaeee3979e2aaf82e45eb5f44bf8",
+      "byte_identical": true
+    },
+    {
+      "path": "palomar/v1/conditioning/formalization.yaml",
+      "sha256": "20cc5660d509c216600f9761f9ef931c5f17541b2fb3c605d20bbb9e13ff076d",
+      "byte_identical": true
+    },
+    {
+      "path": "palomar/v1/conditioning/qualification.json",
+      "sha256": "99788b47f516c68ed725d8f92496f87f967a05a2eafab142fe2f56734aa331b7",
+      "byte_identical": true
+    },
+    {
+      "path": "comparator/p1_dependent_expansion.json",
+      "sha256": "e672627836047ce72b7416ef025fa1089f88756e559c512d1bb18b8478d96de1",
+      "byte_identical": true
+    },
+    {
+      "path": "ChallengeP1DependentExpansion.lean",
+      "sha256": "c150c5bb6997750499eb1453d1c5f7706ddacea56e84c69127f5d729eff7bc53",
+      "byte_identical": true
+    },
+    {
+      "path": "SolutionP1DependentExpansion.lean",
+      "sha256": "e6a95e189b21a9c15763e9de8a3340688880a2960bc0b014b03a73f0f7a8f8d2",
+      "byte_identical": true
+    },
+    {
+      "path": "palomar/v1/dependent_expansion/formalization.yaml",
+      "sha256": "135cccb96d3914bdf7b451b99f3c8878eed8b44fba41c3783e8505605a5993d0",
+      "byte_identical": true
+    },
+    {
+      "path": "palomar/v1/dependent_expansion/qualification.json",
+      "sha256": "3420e9ecf33407c3037505ad6d3d53f9c1e0dde07682fecf00b8292d075eb4a8",
+      "byte_identical": true
+    },
+    {
+      "path": "comparator/p1_factorial_cumulants.json",
+      "sha256": "f95b65e293c5ee0580dd2f10fd3521616a58b919e508caa04f82cb950178408f",
+      "byte_identical": true
+    },
+    {
+      "path": "ChallengeP1FactorialCumulants.lean",
+      "sha256": "5724ebd6c7a5042f9586da8089efa4f51766f50a627b8d1aef9285863db8cc0b",
+      "byte_identical": true
+    },
+    {
+      "path": "SolutionP1FactorialCumulants.lean",
+      "sha256": "637708f08dd238b9a44e555e9c52c57a929775335dc097b512c4ff51d78b2dff",
+      "byte_identical": true
+    },
+    {
+      "path": "palomar/v1/factorial_cumulants/formalization.yaml",
+      "sha256": "0842ebc70a8f826f12405648f894875a1f507d47c377cb1a9c25939d3a3e3e28",
+      "byte_identical": true
+    },
+    {
+      "path": "palomar/v1/factorial_cumulants/qualification.json",
+      "sha256": "a69260c87d730829fda42873b532a31e42eba8f69defaec480bca6d07a22a52a",
+      "byte_identical": true
+    },
+    {
+      "path": "comparator/p1_moment_obstruction.json",
+      "sha256": "9cadb096bc30727d133f5669f570305c0812d834137e0cd5e37a9b1ad786b629",
+      "byte_identical": true
+    },
+    {
+      "path": "ChallengeP1MomentObstruction.lean",
+      "sha256": "a956300789d7d3dd2866a32a5b2e679439d665140c39395cfe06ee06bdd60ffb",
+      "byte_identical": true
+    },
+    {
+      "path": "SolutionP1MomentObstruction.lean",
+      "sha256": "7cc153a8091a66935cb81812b8c85a7c72577575f7071d1deec31ee54019bd3e",
+      "byte_identical": true
+    },
+    {
+      "path": "palomar/v1/moment_obstruction/formalization.yaml",
+      "sha256": "65fae7ff6c22cbe19b40726ed8880dff13f7c5c07fb808d0062df3692661abaf",
+      "byte_identical": true
+    },
+    {
+      "path": "palomar/v1/moment_obstruction/qualification.json",
+      "sha256": "bf2a5e8e1966b4b548cadd762593b809543b7ec45aa5f90d6ac8b2b7a4570883",
+      "byte_identical": true
+    },
+    {
+      "path": "comparator/p1_private_obstruction.json",
+      "sha256": "9d251b4cf276f9b1384cc964ffd1bbd56f58d08d7eef115fb75c64619ba24ea2",
+      "byte_identical": true
+    },
+    {
+      "path": "ChallengeP1PrivateObstruction.lean",
+      "sha256": "11593d3db6b21ff3eade855a32190e369a44b56b2164bba3f253e56340cb4e5f",
+      "byte_identical": true
+    },
+    {
+      "path": "SolutionP1PrivateObstruction.lean",
+      "sha256": "92323accdba963129058c32c0a0e850621240b9aa48df0f8ea3b05e094c0aaf2",
+      "byte_identical": true
+    },
+    {
+      "path": "palomar/v1/private_obstruction/formalization.yaml",
+      "sha256": "4390c3c3855d44f5b82cf7a9ef99e6d0ce7d7a413995cc6856d0440170b1f1df",
+      "byte_identical": true
+    },
+    {
+      "path": "palomar/v1/private_obstruction/qualification.json",
+      "sha256": "15aec9595bcd0818c0e27d0b5863ce12575d29c63337e85a64c3bfab9a127773",
+      "byte_identical": true
+    },
+    {
+      "path": "comparator/p1_quadratic_approximation.json",
+      "sha256": "011d7670c8aef2804bea6af4704a72eb67f297d092cd21ac41cd868fe1d2a672",
+      "byte_identical": true
+    },
+    {
+      "path": "ChallengeP1QuadraticApproximation.lean",
+      "sha256": "3d2c5813bd98bf0a96c9f513d0ac27d311fbc35eb7d1e1787a591269c6a7f9a0",
+      "byte_identical": true
+    },
+    {
+      "path": "SolutionP1QuadraticApproximation.lean",
+      "sha256": "a6bbe07d18ff2036a7e11a997fe5a3c773591b2aa5dd5e3f8733da1dbdd20570",
+      "byte_identical": true
+    },
+    {
+      "path": "palomar/v1/quadratic_approximation/formalization.yaml",
+      "sha256": "d9131e096ed30e4540ed307293963182c5f7a2de47e8c763903c1e3cc9d2c34c",
+      "byte_identical": true
+    },
+    {
+      "path": "palomar/v1/quadratic_approximation/qualification.json",
+      "sha256": "6f88df65fd1d21ebb60ae74e273bb0e394cc1c84f1d83ceb741747313033d3d0",
+      "byte_identical": true
+    },
+    {
+      "path": "comparator/p1_poisson_scales.json",
+      "sha256": "e7f0e8856f7de0f97f74ea0155ad8537e00bec41070e77fddf4e7cf8e3f91154",
+      "byte_identical": true
+    },
+    {
+      "path": "ChallengeP1PoissonScales.lean",
+      "sha256": "e22ecfde926cb57332055bb2ff4f1c1e6f9a68818eccc56d53cb346e61403d9d",
+      "byte_identical": true
+    },
+    {
+      "path": "SolutionP1PoissonScales.lean",
+      "sha256": "639e8da6b31ce74c9240c509bba6ef9ca63220d16fb2bae930a7eb37e2febb45",
+      "byte_identical": true
+    },
+    {
+      "path": "palomar/v1/poisson_scales/formalization.yaml",
+      "sha256": "745e004c13a94c61e4c2dd38efc7bf2167ba2a056c684227636fb76eb5e4b3a2",
+      "byte_identical": true
+    },
+    {
+      "path": "palomar/v1/poisson_scales/qualification.json",
+      "sha256": "72eb3cf777895c766fec577f44581977ec8173b02d07a9992c252b1f2ebc1bbb",
+      "byte_identical": true
+    },
+    {
+      "path": "comparator/p1_positional_field.json",
+      "sha256": "aca61f5cf6967ec584171d08cd6a1299c6dcca50729ce92b7c49b2365d49cddc",
+      "byte_identical": true
+    },
+    {
+      "path": "ChallengeP1PositionalField.lean",
+      "sha256": "3d2e21215fd0a22dd0b20d45497ea192060561468ee31f517091c15afc906eef",
+      "byte_identical": true
+    },
+    {
+      "path": "SolutionP1PositionalField.lean",
+      "sha256": "a10cd249078f0a62139169075becf2c703f480e8eff9274edb9e8d88c416f15b",
+      "byte_identical": true
+    },
+    {
+      "path": "palomar/v1/positional_field/formalization.yaml",
+      "sha256": "b95a724771ea5a6237115e79ceeabea4542e3475b69d681a2b0fd5279765f3e5",
+      "byte_identical": true
+    },
+    {
+      "path": "palomar/v1/positional_field/qualification.json",
+      "sha256": "fbc410477d91b1e6ae9f043ef1d1e1d78e218fa6a739c39ef40068c619ce286b",
+      "byte_identical": true
+    },
+    {
+      "path": "comparator/p1_poisson_reference.json",
+      "sha256": "15666cb723fad4a9431e598a6da88dca6b13393fa3925ae2c9129f7434ec0377",
+      "byte_identical": true
+    },
+    {
+      "path": "ChallengeP1PoissonReference.lean",
+      "sha256": "f9c1e9b455000b3d478553997366a6dc17b2bc30f187f45188ba79e4709db187",
+      "byte_identical": true
+    },
+    {
+      "path": "SolutionP1PoissonReference.lean",
+      "sha256": "1e7d44dfb2a1542544125e8b9d831a971fa7d7e87e6b057d821c719be5779517",
+      "byte_identical": true
+    },
+    {
+      "path": "palomar/v1/poisson_reference/formalization.yaml",
+      "sha256": "31572a0e88357f0ec9b7fe46d3d0d83f890dbd9bd3b0eee2d88999a849696f16",
+      "byte_identical": true
+    },
+    {
+      "path": "palomar/v1/poisson_reference/qualification.json",
+      "sha256": "7dee682faff294bdfaa58e23d5014acda5347f66c3922642ef4bab601b0d2794",
+      "byte_identical": true
+    },
+    {
+      "path": "comparator/p1_exponential_divergence.json",
+      "sha256": "79bd19f9cef061f1d1675437843cbd526460fec0342ce2edbf92c6c6eafe2b67",
+      "byte_identical": true
+    },
+    {
+      "path": "ChallengeP1ExponentialDivergence.lean",
+      "sha256": "af65f33efcd379a89d8a207b4fbf2bab6bf6bb8d2c6a3db0ee764d0966c06afd",
+      "byte_identical": true
+    },
+    {
+      "path": "SolutionP1ExponentialDivergence.lean",
+      "sha256": "05e71b00f6f72e2be00ffb5f9ab17d1871e397b0c2352c58712ccae59fb1c048",
+      "byte_identical": true
+    },
+    {
+      "path": "palomar/v1/exponential_divergence/formalization.yaml",
+      "sha256": "9935de9ec1e06a58c495eb3362429d63e4048cbf9185ee5401014a92c7d3612e",
+      "byte_identical": true
+    },
+    {
+      "path": "palomar/v1/exponential_divergence/qualification.json",
+      "sha256": "c9c38243664092d86cb59f3612c8f957640ce3a59fda7c89bb3ea7a8679ba607",
+      "byte_identical": true
+    },
+    {
+      "path": "comparator/p1_prime_cylinders.json",
+      "sha256": "79ab2452d5b6ce924a42a657d42fab946b411597ce6538975a22386e80ebb9cf",
+      "byte_identical": true
+    },
+    {
+      "path": "ChallengeP1PrimeCylinders.lean",
+      "sha256": "6af8dcc7e5f5393fe15deea6656567603d0440c9c419d545844b91bde4407e86",
+      "byte_identical": true
+    },
+    {
+      "path": "SolutionP1PrimeCylinders.lean",
+      "sha256": "e5c467018ea0080fe9321748aeadf51eab7ee23d365a3260ecd8b229684458ef",
+      "byte_identical": true
+    },
+    {
+      "path": "palomar/v1/prime_cylinders/formalization.yaml",
+      "sha256": "e099537af68ecaae43099757e0ec34e653f8be0c6f4e06d96d6dc76140ca9e58",
+      "byte_identical": true
+    },
+    {
+      "path": "palomar/v1/prime_cylinders/qualification.json",
+      "sha256": "514311c74ad0092e29eab868abe6f503395b6248e577a860c325030b43540e80",
+      "byte_identical": true
+    }
+  ],
+  "scope_notes": [
+    "Exhaustive relative to all 17 original planned component families and their 68 selected declarations, not an assertion of 167 separately selected registration declarations.",
+    "All 167 revised numbered manuscript results have separate Lean correspondence and proof records.",
+    "Checkpoint P1-MATH-0997 adds 21 reference-field theorems after consolidation; they are present in the development and companion but are not additional selected declarations in the current six configurations."
+  ],
+  "submission_state": {
+    "status": "on_hold_at_user_request",
+    "full_workflow_launched": false,
+    "intake_started": false,
+    "registry_identifiers": []
+  }
+}

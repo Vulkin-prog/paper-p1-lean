@@ -1,0 +1,30 @@
+{
+  "status": "frozen",
+  "reviewed_commit": "c1db11fe29e94f6afd87636d51beeb908a346af9",
+  "tex_fields_checked": 9,
+  "checks": [
+    "no unintended control characters",
+    "no command split across lines",
+    "expected TeX commands including double-backslash row separators",
+    "balanced braces",
+    "paired math delimiters"
+  ],
+  "repository_edits_by_review": false,
+  "files": [
+    {
+      "file": "review.json",
+      "sha256": "3bcfa89655a496c21b68aeb223d087a8ad3437ffe83731f10ce235373bbd75c0",
+      "bytes": 86469
+    },
+    {
+      "file": "finite-rank-check.json",
+      "sha256": "3c7146b365dd1e987956b234ba239b11d69cf4e92a4dbaf8529ce1b9953a5c6b",
+      "bytes": 1075
+    },
+    {
+      "file": "validation-log-check.json",
+      "sha256": "d986e4b89e6fe6a4bf6ce1aa211877bb5767c1d70ecfffefaadc1f82f13f38bb",
+      "bytes": 3309
+    }
+  ]
+}

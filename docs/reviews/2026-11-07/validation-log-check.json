@@ -1,0 +1,74 @@
+{
+  "checkpoint_metadata": {
+    "checkpoint": "P1-MATH-0997",
+    "source_commit": "292eaafce35fba0e57d28fe49b6682e4c5b21064",
+    "status": "passed",
+    "full_build_jobs": 18615,
+    "audited_theorems": 19956,
+    "substantive_theorems": 19528,
+    "preserved_component_solution_theorems": 214,
+    "consolidated_solution_theorems": 214,
+    "distinct_checked_references": 19879,
+    "actual_process_exit_codes": {
+      "build": 0,
+      "audit": 0,
+      "references": 0
+    },
+    "permitted_kernel_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "logs": [
+      {
+        "kind": "build",
+        "path": "docs/validation/checkpoint-0997/build.log.gz",
+        "sha256_gzip": "456059204598d22733c1595705091db84bf89bd266dfd22b4396fa1d8cc9af00"
+      },
+      {
+        "kind": "audit",
+        "path": "docs/validation/checkpoint-0997/audit.log.gz",
+        "sha256_gzip": "49fc0ce9da080e70e883a71f5b7a0ec6a28cc9c6a225991c301798c15611e53e"
+      },
+      {
+        "kind": "references",
+        "path": "docs/validation/checkpoint-0997/references.log.gz",
+        "sha256_gzip": "d82aef0da75e89f989f188a554f45de19b6e172ff18ac8a2236ee694a7434374"
+      }
+    ],
+    "scope": "Whole-project replay including the exact bivariate laws of independent Poisson reference arrivals, admissible shared covariance, pair-rate and canonical realizations, the finite point-probability convolution and joint-zero mass. All seventeen preserved component Solutions, six consolidated registration Solutions and all numbered statement scopes are preserved. These reference identities do not change the original arithmetic approximation."
+  },
+  "checks": [
+    {
+      "kind": "build",
+      "sha256_match": true,
+      "last_lines": [
+        "info: Audit.lean:40:0: 'PaperP1Registry.SmoothWindows.almost_all_two_smooth' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "info: Audit.lean:40:0: 'PaperP1Registry.SmoothWindows.uniform_off_central' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "info: Audit.lean:40:0: 'PaperP1Registry.SmoothWindows.gaussian_mean_comparison' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "Build completed successfully (18615 jobs)."
+      ]
+    },
+    {
+      "kind": "audit",
+      "sha256_match": true,
+      "last_lines": [
+        " Quot.sound]",
+        "'PaperP1Registry.SmoothWindows.almost_all_two_smooth' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'PaperP1Registry.SmoothWindows.uniform_off_central' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'PaperP1Registry.SmoothWindows.gaussian_mean_comparison' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "kind": "references",
+      "sha256_match": true,
+      "last_lines": [
+        "      (ProbabilityTheory.poissonMeasure a).real {m - k} * (ProbabilityTheory.poissonMeasure b).real {n - k} *",
+        "        (ProbabilityTheory.poissonMeasure c).real {k}",
+        "PaperP1.PositionalBivariateMass.real_zero_zero (a b c : NNReal) :",
+        "  (PaperP1.PositionalBivariateLaw.law a b c).real {(0, 0)} = Real.exp (-(↑a + ↑b + ↑c))"
+      ]
+    }
+  ],
+  "scope": "integrity and excerpts only; no kernel replay during this review"
+}

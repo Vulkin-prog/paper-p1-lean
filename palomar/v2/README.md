@@ -1,5 +1,9 @@
 # P1 six-registration preparation
 
+**On hold at the user's request, 7 November 2026.** Both manuscripts are being
+reviewed independently before any submission. No full Palomar workflow, intake
+or registration has started. Resume only when the user asks to do so.
+
 Exactly six registrations are planned, with one complete cycle open at a time. All 68 component selections are preserved; the seventeen old component receipts remain separate evidence.
 
 | Order | Registration | Selected declarations | Configuration and metadata |

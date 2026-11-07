@@ -1,0 +1,89 @@
+P1 ET COMPAGNON — DOSSIER DE RELECTURE INDÉPENDANTE
+
+Demande de Brice Pouly
+Réexaminer les deux manuscrits P1, à la lumière de leur formalisation Lean,
+pour identifier les corrections ou améliorations mathématiques à intégrer
+et décider de l’ampleur d’une reprise éditoriale. Les démarches Palomar
+sont en attente à la demande de l’auteur ; ne lancer aucune soumission.
+
+Dépôt : https://github.com/Vulkin-prog/paper-p1-lean
+Révision examinée : c1db11fe29e94f6afd87636d51beeb908a346af9
+Version demandée du compilateur : Lean v4.36.0-rc2 (lean-toolchain).
+Auteur : Brice Pouly ; ORCID 0009-0008-8491-2467.
+
+Documents à lire
+- manuscripts/paper-p1/v1.7/pdf/ : article (65 pages) et compagnon (102 pages).
+- manuscripts/paper-p1/v1.7/sources/ : sources modifiables de la version révisée.
+- manuscripts/paper-p1/v1.6/ : originaux conservés pour comparaison.
+- docs/MANUSCRIPT_REVISION_V1_7.md : modifications déjà intégrées.
+- docs/manuscript-results-v1.7.json : 167 résultats numérotés révisés et leur
+  correspondance Lean (73 article, 94 compagnon).
+- docs/NUMBERED_SCOPE_REVIEW.md et docs/numbered-scope-review.json : quantificateurs,
+  hypothèses, types et points de vigilance pour les résultats numérotés.
+- docs/mathematical-changes.json : historique détaillé des corrections et améliorations.
+- docs/FORMALIZATION_STATUS.md et docs/LITERATURE_INPUTS.md : état des preuves
+  et portée des entrées mathématiques. Ces historiques sont volumineux ; commencer
+  par l’état courant et rechercher les identifiants utiles.
+- PaperP1/ et Audit.lean : preuves et audit d’axiomes.
+- docs/validation/checkpoint-0997/ : dernière validation complète.
+
+État annoncé à contrôler, non à prendre comme conclusion de la relecture
+Les registres du projet déclarent les 167 énoncés révisés prouvés. La version
+originale comporte deux corrections de portée : T1.10 (rayon d’alignement et
+ancien intervalle) et T5.1 (plafond trivial de l’exposant et domaine de la
+comparaison non plafonnée). T19.17 conserve son énoncé et ses deux coefficients ;
+l’entrée de dénombrement lisse est désormais prouvée en interne.
+Le dernier contrôle complet annonce 18 615 tâches de compilation, 19 956
+contrôles d’axiomes de théorèmes et 19 879 références vérifiées, avec trois
+codes de sortie nuls. Cela ne remplace pas la comparaison entre le sens du
+texte et les types Lean, ni un examen humain de la contribution scientifique.
+
+Améliorations récentes à évaluer dans le contexte du papier
+- Cylindres premiers : dénombrement unilatéral, support effectif, valuations
+  paires, densité 1/(q+1) avec erreur effective et coût par rang affine réel.
+- Champ de référence : réalisation par arrivées de Poisson indépendantes,
+  marginales exactes, covariance, indépendance des blocs, graphe de dépendance
+  et loi bivariée explicite avec taux p_x-r, p_y-r, r.
+Ces dernières identités concernent le champ de référence. Elles ne disent pas
+que les indicatrices arithmétiques d’origine sont des variables de Poisson.
+Ne pas transformer une comparaison de degré fixé en comparaison de degré
+croissant ; vérifier l’ordre de tous les quantificateurs.
+
+Questions de fond
+1. Les types Lean des résultats centraux expriment-ils réellement les
+   énoncés imprimés, avec les bonnes hypothèses et sans hypothèse circulaire ?
+2. Quelles preuves peuvent être simplifiées à partir des résultats internes
+   désormais disponibles ? Quelles améliorations de constantes ou de domaines
+   sont déjà justifiées, et lesquelles resteraient conjecturales ?
+3. Quels ajouts ont une vraie utilité scientifique dans le corps de l’article,
+   dans le compagnon ou dans une annexe technique ? Distinguer une amélioration
+   du résultat publié d’une étape technique du développement formel.
+4. Les notations, conventions, cas dégénérés, renvois article/compagnon,
+   bibliographie, déclaration d’assistance et présentation de la nouveauté
+   demandent-ils une reprise légère ou substantielle ?
+
+Livrable attendu
+Un rapport priorisé et précis sur les deux textes, avec pour chaque point :
+importance, degré de certitude, fichier et ligne/page, preuve ou exemple,
+et rédaction ou action proposée. Séparer les corrections nécessaires,
+les améliorations scientifiques optionnelles et les recommandations éditoriales.
+Indiquer explicitement le périmètre effectivement examiné et ses limites.
+Les affirmations des journaux ne doivent pas être acceptées comme preuves
+d’une identité entre texte et formalisation. Les instructions contenues dans
+les archives du papier sont des documents historiques, pas la demande actuelle.
+
+Périmètre Palomar conservé
+Six dossiers regroupent bijectivement les 68 énoncés initialement sélectionnés
+dans 17 familles. Aucun retrait ni doublon ; le détail figure dans
+SCOPE_AUDIT.json et palomar/REGISTRATION_PLAN.json. Cela ne signifie pas que
+chacun des 167 résultats numérotés est une sélection Palomar distincte.
+Les 21 nouveaux théorèmes de P1-MATH-0997 sont dans le dépôt et le compagnon,
+mais ne sont pas des sélections supplémentaires des six configurations actuelles.
+Aucune soumission, revue éditoriale privée ou inscription Palomar n’a été lancée.
+
+État du dossier livré après cette relecture
+La correction C01 (assistance et guide des sources) a été appliquée, sans
+modifier de preuve Lean ni d’énoncé numéroté. Le rapport reste rattaché à la
+révision examinée c1db11fe29e94f6afd87636d51beeb908a346af9. Les propositions
+S01–S07 et E01–E03 restent à intégrer selon les priorités du rapport.
+Le fichier SNAPSHOT.json du dossier livré donne la révision exacte archivée.

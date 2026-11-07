@@ -1,10 +1,23 @@
 # Palomar preparation
 
+**Submission hold, 7 November 2026.** The user has requested a pause before any
+Palomar submission while both manuscripts receive independent mathematical and
+editorial review. No full workflow, intake or registration has been launched.
+Keep the six prepared dossiers; do not dispatch them until the user resumes.
+
 The version 1.7 draft has 167 proved numbered statements: 73 in the article and 94 in the companion. Mathematical checkpoint P1-MATH-0997 is unchanged by this packaging. The original version 1.6 and the two documented false-original scopes remain preserved.
 
 ## Six registrations, strictly successive
 
 The user requested fewer than ten registrations, with five or six a good target. The chosen plan has **exactly six in total**, containing the same **68 selected declarations** from the **seventeen original components**. The [plan](../palomar/REGISTRATION_PLAN.json) records the ordering, source hashes and a bijective declaration map. The [overview](../palomar/v2/README.md) links all six configurations and metadata files. The preserved component interfaces and receipts under palomar/v1 are not additional submissions.
+
+The [independent scope comparison](reviews/2026-11-07/registration-scope-audit.json)
+checks the pre-consolidation source 3e5a5c0e563bbcfc1ab92472411f86dc1b44d74b:
+all 68 selections occur once, all 17 families are present, and 85 original
+interface, configuration, metadata and receipt files are byte-identical.
+This exhaustivity concerns the original selection, rather than 167 separate
+registration targets. The 21 new reference-field theorems at checkpoint 0997
+are in the development and companion but are not additional selected targets.
 
 Run only one full cycle at a time: full workflow, intake, mechanical verification, private editorial review, the human decision, then actual registration or documented closure. The workflow has one global concurrency group and accepts one bundle, with no matrix and no all-bundles choice. Its mutex ends with the workflow; it does not represent a closed intake or editorial cycle. The operator must check the actual portal state and the recorded outcome before beginning the next bundle.
 
