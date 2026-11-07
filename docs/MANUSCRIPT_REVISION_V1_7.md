@@ -244,3 +244,26 @@ pages (99,100) passed full inspection at 110dpi. The complete module-pointer
 paragraph stays on one page. Counts remain 65 and 102 pages. All 48 TeX
 hashes, provenance, both PDF hashes and all numbered statement identities
 were checked.
+
+
+Checkpoint P1-MATH-0997 identifies the full bivariate distribution of the
+Poisson reference counts. For marginal intensities p_x,p_y and their
+shared covariance r, it is the law of (U+W,V+W) with independent Poisson
+parameters p_x-r,p_y-r,r, and 0<=r<=min(p_x,p_y). The exact finite
+point-probability convolution, the canonical product realization, coincident
+sites and zero rates are covered. The proof uses a finite preimage of the
+addition map. It preserves the original arithmetic comparison and its
+fixed-degree rate. Twenty-one theorems and four definitions were added.
+The full replay passed 18,615 build jobs, 19,956 theorem axiom checks and
+19,879 distinct references, all actual exits zero. All six consolidated
+registration receipts and seventeen original component receipts retain
+their exact original source and proof closures.
+
+Both PDFs were rebuilt with stable cross-references and no unresolved
+references or overfull boxes. All 167 pages were rendered: 166 are
+pixel-identical to the prior reviewed version, and the complete changed
+companion page 100 was inspected at 110 dpi. The bivariate formula,
+its admissibility and degenerate cases, original comparison, module
+pointers and scope text fit without clipping or overlaps. Counts remain
+65 and 102 pages. All 48 TeX hashes, provenance, PDF hashes and
+numbered-statement identities are checked.

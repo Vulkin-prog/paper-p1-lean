@@ -314,6 +314,25 @@ dependency-graph property, and probabilities of measurable events on
 independent blocks factor.
 
 \begin{samepage}
+The bivariate reference law is also explicit.  Write $p_x,p_y$ for the
+marginal intensities (both are $p$ in the construction above) and put
+$r=\operatorname{Cov}(Z_x,Z_y)$.  Then $0\leq r\leq\min(p_x,p_y)$,
+and $(Z_x,Z_y)$ has the law of $(A+C,B+C)$, where $A,B,C$ are mutually
+independent Poisson variables with parameters
+$\alpha=p_x-r$, $\beta=p_y-r$ and $\gamma=r$, respectively.
+Consequently, for all $m,n\in\mathbb N$,
+\[
+ \Pr(Z_x=m,Z_y=n)
+ =e^{-(\alpha+\beta+\gamma)}
+   \sum_{k=0}^{\min(m,n)}
+   \frac{\alpha^{m-k}\beta^{n-k}\gamma^k}{(m-k)!(n-k)!k!}.
+\]
+This finite formula includes coincident sites and zero intensities, with
+the usual convention $0^0=1$.  It concerns the reference construction;
+the arithmetic comparison retains its original fixed-degree rate.\par
+\end{samepage}
+
+\begin{samepage}
 For each fixed degree $j$ and $\varepsilon>0$, one threshold precedes
 the critical lengths, probability spaces and arrival variables.  The series
 \[
@@ -337,7 +356,10 @@ covariance matrix in
 independence criterion in
 \texttt{Positional\allowbreak{}Arrival\allowbreak{}Independence}.
 The full block criterion is in
-\texttt{Positional\allowbreak{}Block\allowbreak{}Independence}.\par
+\texttt{Positional\allowbreak{}Block\allowbreak{}Independence}.
+The bivariate law and finite point probabilities are in
+\texttt{Positional\allowbreak{}Bivariate\allowbreak{}Law} and
+\texttt{Positional\allowbreak{}Bivariate\allowbreak{}Mass}.\par
 \end{samepage}
 
 \paragraph{Scope and reproducibility.}

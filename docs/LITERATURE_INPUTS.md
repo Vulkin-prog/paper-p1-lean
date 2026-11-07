@@ -5,9 +5,8 @@ coordinates is represented by three independent Poisson arrivals with
 parameters p_x-r, p_y-r and r, where r is their shared covariance and
 0 <= r <= min(p_x,p_y). Pair packets give the exact retained-edge rate,
 with diagonal and zero-rate cases included. The finite point-probability
-formula and canonical product realization are proved. Twenty-one theorems
-and four definitions passed strict prototype compilation and all twenty-one
-theorem axiom checks. Root replay and manuscript integration are pending.
+formula and canonical product realization are proved. The full replay passed 18,615 build jobs, 19,956 theorem axiom checks
+and 19,879 references, all actual exits zero. The clarification is integrated in the revised companion appendix, with all 167 PDF pages rebuilt and reviewed.
 All 167 revised numbered statements retain their scope; the six planned
 registrations and their 68 selections remain locally qualified.
 

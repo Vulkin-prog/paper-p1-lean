@@ -29,4 +29,6 @@ interchange of infinite sums is needed. Zero intensities use the usual
 natural-power convention, including 0^0=1. In particular the joint zero
 probability is exp(-(a+b+c)).
 
-Twenty-one theorems and four definitions passed strict Lean v4.36.0-rc2 prototype compilation; exact direct axiom checks of all twenty-one theorems permit only propext, Classical.choice and Quot.sound. Root replay and manuscript integration are pending.
+Full Lean v4.36.0-rc2 replay passed at source 292eaafce35fba0e57d28fe49b6682e4c5b21064: 18,615 build jobs, 19,956 source-discovered theorem axiom checks and 19,879 distinct declaration-reference checks, all actual process exits 0. Proof warnings are errors; only propext, Classical.choice and Quot.sound occur.
+
+The [full replay and logs](validation/checkpoint-0997/validation.json) preserve the exact source. The clarification is integrated in the unnumbered version 1.7 companion appendix, under Realize the positional target by independent arrivals. Both PDFs were rebuilt and reviewed: 65 article pages and 102 companion pages. All 167 numbered statement blocks are preserved. See [the manuscript validation](manuscript-v1.7-validation.json).

@@ -72,7 +72,7 @@ The [exact reference independence criterion](docs/POSITIONAL_ARRIVAL_INDEPENDENC
 
 The [full reference block independence](docs/POSITIONAL_BLOCK_INDEPENDENCE.md) proves independence of complete finite coordinate vectors exactly when every cross covariance vanishes. For pairs it establishes the full dependency-graph property of positive-rate retained edges and measurable block-event factorization. Its complete replay passed; [the source-bound logs](docs/validation/checkpoint-0996/validation.json) preserve all three checks. The clarification is integrated in the revised companion appendix.
 
-The [exact bivariate reference law](docs/POSITIONAL_BIVARIATE_LAW.md) gives the three-arrival representation, admissible shared covariance and finite point probabilities, including diagonal and zero-rate cases. Prototype compilation and exact axiom checks passed; full replay and manuscript integration are pending.
+The [exact bivariate reference law](docs/POSITIONAL_BIVARIATE_LAW.md) gives the three-arrival representation, admissible shared covariance and finite point probabilities, including diagonal and zero-rate cases. Its complete replay passed; the [source-bound logs](docs/validation/checkpoint-0997/validation.json) preserve all three checks. The clarification is integrated in the revised companion appendix.
 
 ## Build and verification
 
@@ -98,8 +98,8 @@ Standalone registry Challenges have only the deliberate selected statement
 holes and are never imported by the proof development or its audit.
 
 The latest complete project replay with all six consolidated registrations and
-seventeen preserved components passed **18,611 build jobs** and **19,935 theorem axiom checks**.
-The substantive mathematical inventory remains **19,507 theorems**; the remaining
+seventeen preserved components passed **18,615 build jobs** and **19,956 theorem axiom checks**.
+The substantive mathematical inventory contains **19,528 theorems**; the remaining
 428 are complete component and consolidated Solution wrappers. Each mathematical
 checkpoint and registry replay records its own exact source commit and scope.
 The [evidence checker](scripts/check_registry_evidence.py) validates every
