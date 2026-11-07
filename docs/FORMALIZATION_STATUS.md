@@ -7,8 +7,8 @@ retain the lower start budget N/q-N/q^2-3. At q=7, N=64, the exact charges
 30 versus 32 give a checked factor-four gain with the same count contribution.
 The original t>2 range, prime scale and liminf coefficient are preserved.
 All 167 revised statements remain proved; original coverage stays 165 proved
-and two false-original scopes. The 17 new direct proofs and their axiom audit
-passed; the full checkpoint replay is pending. Thirteen registry families
+and two false-original scopes. The full replay passed 18,567 build jobs,
+19,485 theorem axiom checks and 19,643 distinct declaration-reference checks. Thirteen registry families
 (52 selections) have completed local qualification, including their source-bound
 verified con-ron replays. No Palomar registration is claimed.
 
@@ -36651,7 +36651,7 @@ Full Lean v4.36.0-rc2 replay passed at source 1f25a899d04ff2bac781747b2e7fe5cef4
 
 The deliberately retained starts q*u+1, with floor(N/q)+1<=u<2*floor(N/q), use no integer beyond M=2*q*floor(N/q). Their actual positive count is a finite-cylinder observable at this smaller cutoff. Integrability and monotonicity of actual exponential moments transfer its atom lower bound to the full count. Thus both full positive and total exponential moments are at least exp(t*(N/q-N/q^2-3)-primeCount(M)*log(2)) for every prime q<=N and t>=0. Since M<=2*N, the corresponding primeCount(2*N) bound follows too. At the original scale q=7, N=64, the new, dyadic and earlier sufficient cutoffs charge 30, 31 and 32 primes respectively, giving a proved factor-four gain over the earlier finite bound with the same count contribution. The original t>2 prime-scale liminf statement and its coefficient are preserved.
 
-Direct Lean v4.36.0-rc2 verification and exact 17-theorem axiom audit passed, with proof warnings as errors and only propext, Classical.choice and Quot.sound. The prime-count example uses kernel computation. Whole-project build and declaration-reference replay are pending.
+Full Lean v4.36.0-rc2 replay passed at source 68164c4abb37b8679c9c3f1f4e78dc52667a285b: 18,567 build jobs, 19,485 source-discovered theorem axiom checks and 19,643 distinct declaration-reference checks, all actual process exits 0. Proof warnings are errors; only propext, Classical.choice and Quot.sound occur.
 
 The complete original count can still depend on later prime signs. The proof
 first integrates the retained subcount on its actual smaller cylinder, then

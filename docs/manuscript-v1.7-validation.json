@@ -15,13 +15,13 @@
       "document": "main",
       "path": "manuscripts/paper-p1/v1.7/pdf/P1_V1_7_Main_Article_2026-11-07_EN.pdf",
       "pages": 65,
-      "sha256": "3a4bf1758460e5cdb0be44acb48c04cf0302404e346790099e0c4ca652afef9f"
+      "sha256": "fd0edbb579e415c8eae844a5d05b09c5404e58175680cc260df90283d0dd9216"
     },
     {
       "document": "companion",
       "path": "manuscripts/paper-p1/v1.7/pdf/P1_V1_7_Technical_Companion_2026-11-07_EN.pdf",
       "pages": 100,
-      "sha256": "60c75b1e23fab2f67182eb7369204b55a2cf89b955fac3981d638a542145aa48"
+      "sha256": "9351725e616ac40eca5f4bddae3867fda9405c39000ab3cb3bf8d5e8f18b3d67"
     }
   ],
   "visual_review": {
@@ -31,12 +31,11 @@
     "detail_pages_reviewed": {
       "main": [],
       "companion": [
-        97,
         98
       ]
     },
     "complete": true,
-    "findings": "All 165 final pages rendered. The 65 main pages and 98 unchanged companion pages are pixel-identical at 55dpi to the previously inspected version. Both changed companion appendix pages were inspected at 110dpi; the new cylinder paragraph starts on one page. No clipping, overlaps, missing glyphs or unresolved references observed.",
+    "findings": "All 165 final pages rendered. The 65 main pages and 99 unchanged companion pages are pixel-identical at 55dpi to the previously inspected version. The changed companion page 98 was inspected at 110dpi. No clipping, overlaps, missing glyphs or unresolved references observed.",
     "prior_detail_pages_reviewed": {
       "main": [
         62
@@ -53,13 +52,12 @@
       ]
     },
     "latest_revision": {
-      "checkpoint": "P1-MATH-0986",
+      "checkpoint": "P1-MATH-0987",
       "all_165_pages_rendered": true,
-      "unchanged_pages_pixel_identical_at_55_dpi": 163,
+      "unchanged_pages_pixel_identical_at_55_dpi": 164,
       "changed_pages": {
         "main": [],
         "companion": [
-          97,
           98
         ]
       },
@@ -122,5 +120,17 @@
     "validation_record": "docs/validation/checkpoint-0986/validation.json",
     "source": "manuscripts/paper-p1/v1.7/sources/formalization.tex",
     "source_sha256": "baa0a79f059b3846e010fd784fc8f2772e3795aba91af4b29c7134c1c43d927c"
+  },
+  "appendix_supported_cylinder_refinement": {
+    "checkpoint": "P1-MATH-0987",
+    "proof_commit": "68164c4abb37b8679c9c3f1f4e78dc52667a285b",
+    "numbered_statement_blocks_changed": false,
+    "all_167_revised_statement_proofs_preserved": true,
+    "full_build_jobs": 18567,
+    "audited_theorems": 19485,
+    "distinct_checked_references": 19643,
+    "validation_record": "docs/validation/checkpoint-0987/validation.json",
+    "source": "manuscripts/paper-p1/v1.7/sources/formalization.tex",
+    "source_sha256": "60ce80bb80ed90813b8ac530ba1e6ac350946d527779bbf2d2e169a786a74e06"
   }
 }

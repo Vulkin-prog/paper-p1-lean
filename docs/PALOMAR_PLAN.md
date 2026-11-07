@@ -13,7 +13,7 @@ have passed actual statement comparison, Lean and bundled NanoDa, with the
 bubblewrap boundary enabled. Every family has its own immutable source commit,
 configuration, standalone Mathlib-only Challenge, complete Solution, metadata,
 qualification receipt and compressed original logs. The latest complete build
-passed **18,565 jobs** and the direct source-discovered audit checked **19,468
+passed **18,567 jobs** and the direct source-discovered audit checked **19,485
 theorems**, allowing only `propext`, `Classical.choice` and `Quot.sound`.
 
 All thirteen families also passed supplementary verified con-ron, Lean and NanoDa

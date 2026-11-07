@@ -103,7 +103,7 @@
     },
     {
       "path": "formalization.tex",
-      "sha256": "baa0a79f059b3846e010fd784fc8f2772e3795aba91af4b29c7134c1c43d927c"
+      "sha256": "60ce80bb80ed90813b8ac530ba1e6ac350946d527779bbf2d2e169a786a74e06"
     },
     {
       "path": "main.tex",
@@ -208,6 +208,11 @@
       "checkpoint": "P1-MATH-0986",
       "proof_commit": "1f25a899d04ff2bac781747b2e7fe5cef42e6c7c",
       "scope": "Unnumbered companion formalization appendix: one-sided retained prime-cylinder starts, stronger finite count N/q-N/q^2-3, and both actual exponential-moment lower bounds. Original t>2 prime-scale theorem and all 167 numbered statement blocks unchanged."
+    },
+    {
+      "checkpoint": "P1-MATH-0987",
+      "proof_commit": "68164c4abb37b8679c9c3f1f4e78dc52667a285b",
+      "scope": "Unnumbered companion appendix: the retained-start cylinder fixes prime signs only through M=2*q*floor(N/q)<=2*N. Both full exponential moments inherit its stronger exact charge by integrability and monotonicity; the exact q=7 example gives a factor-four lower-bound gain. All 167 numbered statement blocks are preserved."
     }
   ]
 }

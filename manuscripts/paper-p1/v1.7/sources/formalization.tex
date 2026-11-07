@@ -167,30 +167,37 @@ and
 \paragraph{A stronger finite prime-cylinder bound.}
 The construction in Proposition~\ref{p1:limits:cylinder} also gives a
 stronger finite estimate.  Let $q\leq N$ be prime, put $L=q-1$ and
-$M=2N+q-1$, and prescribe $f(q)=-1$ and all other prime signs up to
+$M=2q\lfloor N/q\rfloor\leq2N$, and prescribe $f(q)=-1$ and all other prime signs up to
 $M$ to be positive.  Retain the starts $x=qu+1$ with
 \[
  \lfloor N/q\rfloor+1\leq u<2\lfloor N/q\rfloor,
  \qquad q\nmid u.
 \]
-Each has a negative predecessor and at least $q-1$ positive values.
+Each has a negative predecessor and at least $q-1$ positive values,
+all at integers at most $M$.  The signs above $M$ remain free, so this
+cylinder has probability $2^{-\pi(M)}$.
 The extra condition $q\nmid(u+1)$ would force a negative right endpoint;
 it is unnecessary for a start of length at least $q-1$.
 Counting the single excluded residue class, including the floor and
 endpoint errors, gives at least $N/q-N/q^2-3$ retained starts.
-Consequently, for every real $t\geq0$,
+Their restricted count is bounded by the full positive count;
+integrability and monotonicity give, for every real $t\geq0$,
 \[
  \E e^{tZ_{N,q-1}}\ \geq\ \E e^{tZ^+_{N,q-1}}
  \ \geq\
  \exp\!\left\{t\left(\frac Nq-\frac N{q^2}-3\right)
-                    -\pi(2N+q-1)\log2\right\},
+                    -\pi(M)\log2\right\},
 \]
 where $Z^+$ counts positive starts only.  This improves the earlier
 finite lower count $N/q-2N/q^2-4$; the printed odd-prime scale,
 $t>2$ domain and $(t-2)\log2$ limiting coefficient are preserved.
 The canonical checked bounds are
-\texttt{OneSidedPrimeCylinder.positive\_exponential\_lower} and
-\texttt{OneSidedPrimeCylinder.total\_exponential\_lower}.
+\texttt{SupportedPrimeCylinder.positive\_exponential\_lower} and
+\texttt{SupportedPrimeCylinder.total\_exponential\_lower}.
+At the original scale $q=7$, $N=64$, the new cutoff $126$ charges
+30 primes, whereas the earlier sufficient cutoff $134$ charges 32.
+With the same retained-count contribution, the finite exponential lower
+bound therefore gains a factor four; this exact example is also checked.
 
 \paragraph{Scope and reproducibility.}
 The smooth-window proof above specializes the physical localization to the

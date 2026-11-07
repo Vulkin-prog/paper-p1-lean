@@ -1,74 +1,99 @@
 {
   "status": "passed",
-  "source_commit": "a7d822328e553ce2b4e91cd2c636e20533404ba5",
+  "source_commit": "68164c4abb37b8679c9c3f1f4e78dc52667a285b",
   "toolchain": "leanprover/lean4:v4.36.0-rc2",
-  "full_build_jobs": 18565,
-  "audited_theorems": 19468,
-  "substantive_theorems": 19304,
+  "full_build_jobs": 18567,
+  "audited_theorems": 19485,
+  "substantive_theorems": 19321,
   "registry_solution_theorems": 164,
   "challenge_imported": false,
   "inventory": "docs/axiom-audit-declarations.json",
-  "inventory_sha256": "798fd3bcef852afa3f943cab174f5da70dfb310770d9042c87f605ca1316938f",
-  "scope": "Complete actual source-discovered audit at this immutable source, including thirteen Solutions. Only the three standard kernel axioms are permitted. This is not the complete Palomar workflow.",
+  "inventory_sha256": "1ff6f19620bb28f1d89469f6dd4aad9bef232c54e268e21500edf4b1b64fe588",
+  "scope": "Complete actual source-discovered audit at the immutable checkpoint-987 source, including all thirteen Solutions. Only the three standard kernel axioms are permitted. This is not the complete Palomar workflow.",
   "logs": [
     {
-      "kind": "full_build",
-      "path": "palomar/v1/evidence/exponential_divergence-full-build.log.gz",
-      "sha256": "848ccb324a0c6967461e160eab73f4089aa0d40345fc9b9a4abed9667620e1ee"
+      "kind": "build",
+      "path": "docs/validation/checkpoint-0987/build.log.gz",
+      "sha256_gzip": "5562784c3783a155ea55da3ca6de41dcd6223fe27c93196398257c1aecf6a7fd"
     },
     {
-      "kind": "axiom_audit",
-      "path": "palomar/v1/evidence/exponential_divergence-axiom-audit.log.gz",
-      "sha256": "69714a12e865bdece40926aacb1e9599a783f9efda6f40bb5b23fdd3dcf4304e"
+      "kind": "audit",
+      "path": "docs/validation/checkpoint-0987/audit.log.gz",
+      "sha256_gzip": "71b3cf01cd4b366b2b6ee59e40cb356ef1098d93707e7f06f20a8ac9308d09ab"
     }
   ],
   "previous_audit": {
     "status": "passed",
-    "source_commit": "eb3039966bdeeb0b4e5e895bc3bbecfe4222342a",
+    "source_commit": "a7d822328e553ce2b4e91cd2c636e20533404ba5",
     "toolchain": "leanprover/lean4:v4.36.0-rc2",
-    "full_build_jobs": 18537,
-    "audited_theorems": 19291,
-    "substantive_theorems": 19288,
-    "registry_solution_theorems": 3,
+    "full_build_jobs": 18565,
+    "audited_theorems": 19468,
+    "substantive_theorems": 19304,
+    "registry_solution_theorems": 164,
     "challenge_imported": false,
     "inventory": "docs/axiom-audit-declarations.json",
+    "inventory_sha256": "798fd3bcef852afa3f943cab174f5da70dfb310770d9042c87f605ca1316938f",
+    "scope": "Complete actual source-discovered audit at this immutable source, including thirteen Solutions. Only the three standard kernel axioms are permitted. This is not the complete Palomar workflow.",
     "logs": [
       {
         "kind": "full_build",
-        "path": "palomar/v1/evidence/initial-full-build.log.gz",
-        "sha256": "886d328ecae7d26e8c6cdca7b931fafbf21397e8f0fcb1ba6e1d9a7cb65ccee0"
+        "path": "palomar/v1/evidence/exponential_divergence-full-build.log.gz",
+        "sha256": "848ccb324a0c6967461e160eab73f4089aa0d40345fc9b9a4abed9667620e1ee"
       },
       {
         "kind": "axiom_audit",
-        "path": "palomar/v1/evidence/initial-axiom-audit.log.gz",
-        "sha256": "60da604938a79a4a5ac1ba1201a36cde901958c50f406b19ee2b51655f17781f"
+        "path": "palomar/v1/evidence/exponential_divergence-axiom-audit.log.gz",
+        "sha256": "69714a12e865bdece40926aacb1e9599a783f9efda6f40bb5b23fdd3dcf4304e"
       }
     ],
     "previous_audit": {
       "status": "passed",
+      "source_commit": "eb3039966bdeeb0b4e5e895bc3bbecfe4222342a",
       "toolchain": "leanprover/lean4:v4.36.0-rc2",
-      "full_build_jobs": 18535,
-      "audited_theorems": 19288,
-      "same_selection_as_checkpoint_984": true,
-      "original_checkpoint_output_accepted": true,
-      "negative_checks": {
-        "incomplete_output_rejected": true,
-        "forbidden_axiom_rejected": true
-      },
+      "full_build_jobs": 18537,
+      "audited_theorems": 19291,
+      "substantive_theorems": 19288,
+      "registry_solution_theorems": 3,
+      "challenge_imported": false,
       "inventory": "docs/axiom-audit-declarations.json",
-      "audit_source_lines": 26,
       "logs": [
         {
-          "kind": "build",
-          "sha256_gzip": "aff436f3c692583885cb074bc40ef4f3ffbd51c9301eead1041227f025b966a9"
+          "kind": "full_build",
+          "path": "palomar/v1/evidence/initial-full-build.log.gz",
+          "sha256": "886d328ecae7d26e8c6cdca7b931fafbf21397e8f0fcb1ba6e1d9a7cb65ccee0"
         },
         {
-          "kind": "audit",
-          "sha256_gzip": "bad400094342d47d9cce75194c4c3ec102c71a3ecada12c100a142428ba5718a"
+          "kind": "axiom_audit",
+          "path": "palomar/v1/evidence/initial-axiom-audit.log.gz",
+          "sha256": "60da604938a79a4a5ac1ba1201a36cde901958c50f406b19ee2b51655f17781f"
         }
       ],
-      "source_commit": "13be90ed3fbda9b69ead06d32800d2a8fc2d17d5",
-      "scope": "Original 19288-theorem audit before adding standalone registration Solution wrappers; the original checkpoint-984 selection is preserved at this source commit."
+      "previous_audit": {
+        "status": "passed",
+        "toolchain": "leanprover/lean4:v4.36.0-rc2",
+        "full_build_jobs": 18535,
+        "audited_theorems": 19288,
+        "same_selection_as_checkpoint_984": true,
+        "original_checkpoint_output_accepted": true,
+        "negative_checks": {
+          "incomplete_output_rejected": true,
+          "forbidden_axiom_rejected": true
+        },
+        "inventory": "docs/axiom-audit-declarations.json",
+        "audit_source_lines": 26,
+        "logs": [
+          {
+            "kind": "build",
+            "sha256_gzip": "aff436f3c692583885cb074bc40ef4f3ffbd51c9301eead1041227f025b966a9"
+          },
+          {
+            "kind": "audit",
+            "sha256_gzip": "bad400094342d47d9cce75194c4c3ec102c71a3ecada12c100a142428ba5718a"
+          }
+        ],
+        "source_commit": "13be90ed3fbda9b69ead06d32800d2a8fc2d17d5",
+        "scope": "Original 19288-theorem audit before adding standalone registration Solution wrappers; the original checkpoint-984 selection is preserved at this source commit."
+      }
     }
   }
 }

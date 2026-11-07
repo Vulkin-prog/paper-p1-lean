@@ -1,0 +1,36 @@
+{
+  "checkpoint": "P1-MATH-0987",
+  "source_commit": "68164c4abb37b8679c9c3f1f4e78dc52667a285b",
+  "status": "passed",
+  "full_build_jobs": 18567,
+  "audited_theorems": 19485,
+  "distinct_checked_references": 19643,
+  "actual_process_exit_codes": {
+    "build": 0,
+    "audit": 0,
+    "references": 0
+  },
+  "permitted_kernel_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "logs": [
+    {
+      "kind": "build",
+      "path": "docs/validation/checkpoint-0987/build.log.gz",
+      "sha256_gzip": "5562784c3783a155ea55da3ca6de41dcd6223fe27c93196398257c1aecf6a7fd"
+    },
+    {
+      "kind": "audit",
+      "path": "docs/validation/checkpoint-0987/audit.log.gz",
+      "sha256_gzip": "71b3cf01cd4b366b2b6ee59e40cb356ef1098d93707e7f06f20a8ac9308d09ab"
+    },
+    {
+      "kind": "references",
+      "path": "docs/validation/checkpoint-0987/references.log.gz",
+      "sha256_gzip": "669de3d7d8c287de4e8c70261e18365005f2ae07e358fdfa6c33e189b7d09b0b"
+    }
+  ],
+  "scope": "Whole project replay including the supported prime-cylinder refinement and all thirteen registry Solutions. All original and revised numbered statement blocks are preserved."
+}

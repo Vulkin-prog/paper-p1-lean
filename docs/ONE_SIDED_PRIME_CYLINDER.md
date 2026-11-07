@@ -19,3 +19,5 @@ Full Lean v4.36.0-rc2 replay passed at source 1f25a899d04ff2bac781747b2e7fe5cef4
 The complete replay and original compressed logs are preserved in [the validation record](validation/checkpoint-0986/validation.json).
 
 The stronger finite bound is integrated in the unnumbered version 1.7 companion formalization appendix. Both revised PDFs were rebuilt and reviewed; all 167 numbered statement blocks are unchanged. See [the manuscript validation](manuscript-v1.7-validation.json).
+
+The later [supported-cylinder refinement](SUPPORTED_PRIME_CYLINDER.md) retains this count and reduces its probability charge to the prime signs actually used by these starts.

@@ -36,4 +36,8 @@ Canonical bounds: SupportedPrimeCylinder.positive_exponential_lower and
 SupportedPrimeCylinder.total_exponential_lower. The optional dyadic-cutoff
 corollaries and exact-gain example are in the same module.
 
-Direct Lean v4.36.0-rc2 verification and exact 17-theorem axiom audit passed, with proof warnings as errors and only propext, Classical.choice and Quot.sound. The prime-count example uses kernel computation. Whole-project build and declaration-reference replay are pending.
+Full Lean v4.36.0-rc2 replay passed at source 68164c4abb37b8679c9c3f1f4e78dc52667a285b: 18,567 build jobs, 19,485 source-discovered theorem axiom checks and 19,643 distinct declaration-reference checks, all actual process exits 0. Proof warnings are errors; only propext, Classical.choice and Quot.sound occur.
+
+The full replay and original compressed logs are preserved in [the validation record](validation/checkpoint-0987/validation.json).
+
+The refinement and exact gain example are integrated in the unnumbered version 1.7 companion appendix. Both PDFs were rebuilt and reviewed; all 167 numbered statement blocks are unchanged. See [the manuscript validation](manuscript-v1.7-validation.json).

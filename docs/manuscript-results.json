@@ -53628,7 +53628,9 @@
         {
           "checkpoint": "P1-MATH-0987",
           "scope": "Smaller finite cylinder for retained starts; the original theorem proof remains validated.",
-          "validation": "Direct Lean v4.36.0-rc2 verification and exact 17-theorem axiom audit passed, with proof warnings as errors and only propext, Classical.choice and Quot.sound. The prime-count example uses kernel computation. Whole-project build and declaration-reference replay are pending."
+          "validation": "Full Lean v4.36.0-rc2 replay passed at source 68164c4abb37b8679c9c3f1f4e78dc52667a285b: 18,567 build jobs, 19,485 source-discovered theorem axiom checks and 19,643 distinct declaration-reference checks, all actual process exits 0. Proof warnings are errors; only propext, Classical.choice and Quot.sound occur.",
+          "validation_source_commit": "68164c4abb37b8679c9c3f1f4e78dc52667a285b",
+          "validation_record": "docs/validation/checkpoint-0987/validation.json"
         }
       ]
     },

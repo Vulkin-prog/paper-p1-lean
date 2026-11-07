@@ -54,7 +54,7 @@ The [one-sided prime-cylinder strengthening](docs/ONE_SIDED_PRIME_CYLINDER.md)
 proves the sharper finite start count N/q-N/q^2-3 and corresponding positive
 and total exponential-moment lower bounds. Its full replay passed; the [source-bound evidence](docs/validation/checkpoint-0986/validation.json) preserves all three checks. No numbered statement changes.
 
-The [supported prime-cylinder refinement](docs/SUPPORTED_PRIME_CYLINDER.md) reduces the probability charge to primeCount(2*q*floor(N/q)). Its 17 direct proofs and axiom audit passed; the complete checkpoint replay and manuscript integration are pending.
+The [supported prime-cylinder refinement](docs/SUPPORTED_PRIME_CYLINDER.md) reduces the probability charge to primeCount(2*q*floor(N/q)). Its complete replay passed; the [source-bound logs](docs/validation/checkpoint-0987/validation.json) preserve all three checks. The refinement is integrated in the revised companion appendix.
 
 ## Build and verification
 
@@ -80,7 +80,7 @@ Standalone registry Challenges have only the deliberate selected statement
 holes and are never imported by the proof development or its audit.
 
 The latest complete project replay with all thirteen candidate families passed
-**18,565 build jobs** and **19,468 theorem axiom checks**. Each mathematical
+**18,567 build jobs** and **19,485 theorem axiom checks**. Each mathematical
 checkpoint and registry replay records its own exact source commit and scope.
 The [evidence checker](scripts/check_registry_evidence.py) validates every
 preserved receipt against its historical inventory and current proof imports.

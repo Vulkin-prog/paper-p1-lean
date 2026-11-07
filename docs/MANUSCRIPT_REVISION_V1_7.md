@@ -67,3 +67,18 @@ references: 65 main and 100 companion pages; 163 pages are pixel-identical
 to the reviewed version and the two changed companion pages passed detailed
 visual inspection. The exact proof commit and original logs are preserved
 in [the validation record](validation/checkpoint-0986/validation.json).
+
+
+Checkpoint P1-MATH-0987 further restricts the cylinder to the prime signs
+actually used by the retained starts, through M=2*q*floor(N/q)<=2*N.
+The full count can use later signs; the proof integrates the retained
+subcount first and compares both actual full moments monotonically for
+t>=0. Its original prime scale and t>2 limit are preserved. The q=7,
+N=64 example certifies exact prime charges 30, 31 and 32 and a factor-four
+lower-bound gain at equal count contribution. The full replay passed
+18,567 build jobs, 19,485 theorem axiom checks and 19,643 distinct references.
+The appendix integrates this refinement without changing any numbered
+statement block. Both PDFs were rebuilt with stable references. Of their
+165 pages, 164 are pixel-identical to the reviewed version and the changed
+companion page 98 passed detailed visual review. Exact proof and log hashes
+are preserved in [the validation record](validation/checkpoint-0987/validation.json).
