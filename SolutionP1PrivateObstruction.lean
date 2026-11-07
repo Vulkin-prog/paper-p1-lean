@@ -1,6 +1,7 @@
 module
 
 public import Mathlib.Algebra.Field.ZMod
+public import Mathlib.Analysis.InnerProductSpace.Basic
 public import Mathlib.Data.Nat.Factorization.Basic
 public import Mathlib.Data.Finset.Interval
 public import Mathlib.Data.Fintype.Pi
