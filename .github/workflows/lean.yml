@@ -19,6 +19,7 @@ jobs:
         run: |
           python3 scripts/check_disk.py
           python3 scripts/check_sources.py
+          python3 scripts/check_revised_sources.py --require-proved
           python3 scripts/update_audit.py --check
       - name: Install elan from its official repository
         run: |

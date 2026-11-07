@@ -5,9 +5,16 @@ from pathlib import Path
 import re
 import sys
 
+from update_audit import discover_names, inventory_content, render
+
 ALLOWED = {"propext", "Classical.choice", "Quot.sound"}
 ROOT = Path(__file__).resolve().parents[1]
-EXPECTED = set(re.findall(r"^#print axioms (\S+)$", (ROOT / "Audit.lean").read_text(), re.M))
+names = discover_names()
+if (ROOT / "Audit.lean").read_text() != render(names):
+    raise SystemExit("The audit command does not match its generated source inventory")
+if (ROOT / "docs/axiom-audit-declarations.json").read_text() != inventory_content(names):
+    raise SystemExit("The audit inventory does not match the project theorem sources")
+EXPECTED = set(names)
 if not EXPECTED:
     raise SystemExit("The axiom-audit selection is empty")
 

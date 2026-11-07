@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "toolchain": "leanprover/lean4:v4.36.0-rc2",
+  "full_build_jobs": 18535,
+  "audited_theorems": 19288,
+  "same_selection_as_checkpoint_984": true,
+  "original_checkpoint_output_accepted": true,
+  "negative_checks": {
+    "incomplete_output_rejected": true,
+    "forbidden_axiom_rejected": true
+  },
+  "inventory": "docs/axiom-audit-declarations.json",
+  "audit_source_lines": 26,
+  "logs": [
+    {
+      "kind": "build",
+      "sha256_gzip": "aff436f3c692583885cb074bc40ef4f3ffbd51c9301eead1041227f025b966a9"
+    },
+    {
+      "kind": "audit",
+      "sha256_gzip": "bad400094342d47d9cce75194c4c3ec102c71a3ecada12c100a142428ba5718a"
+    }
+  ]
+}
