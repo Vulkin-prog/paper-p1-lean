@@ -7,6 +7,7 @@ families; a selected declaration count is not the manuscript coverage count.
 | Family | Selected declarations | Comparator configuration | Metadata and local evidence |
 |---|---:|---|---|
 | Ordinary smooth integers in logarithmic intervals | 3 | [configuration](../../comparator/p1_smooth_windows.json) | [metadata](smooth_windows/formalization.yaml), [passed local comparison and both kernels](smooth_windows/qualification.json) |
+| Prescribed squarefree kernels of shifted split products | 4 | [configuration](../../comparator/p1_quadratic_kernels.json) | [metadata](quadratic_kernels/formalization.yaml); local comparison pending |
 
 The standalone Challenge imports only Mathlib. Its three deliberate statement
 holes are the exact declarations selected by Comparator. The matched Solution

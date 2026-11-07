@@ -1,0 +1,12 @@
+{
+  "challenge_module": "ChallengeP1QuadraticKernels",
+  "solution_module": "SolutionP1QuadraticKernels",
+  "theorem_names": [
+    "PaperP1Registry.QuadraticKernels.uniform_count",
+    "PaperP1Registry.QuadraticKernels.capped_comparison",
+    "PaperP1Registry.QuadraticKernels.uncapped_comparison_iff",
+    "PaperP1Registry.QuadraticKernels.actual_uncapped_counterexamples"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"],
+  "enable_nanoda": true
+}

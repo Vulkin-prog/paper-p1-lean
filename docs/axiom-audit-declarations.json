@@ -19291,6 +19291,10 @@
   "PaperP1.FiniteComponentRepresentatives.disjoint_of_ne",
   "PaperP1.FiniteComponentRepresentatives.disjoint_of_not_mem",
   "PaperP1.FiniteComponentRepresentatives.exists_representatives",
+  "PaperP1Registry.QuadraticKernels.uniform_count",
+  "PaperP1Registry.QuadraticKernels.capped_comparison",
+  "PaperP1Registry.QuadraticKernels.uncapped_comparison_iff",
+  "PaperP1Registry.QuadraticKernels.actual_uncapped_counterexamples",
   "PaperP1Registry.SmoothWindows.almost_all_two_smooth",
   "PaperP1Registry.SmoothWindows.uniform_off_central",
   "PaperP1Registry.SmoothWindows.gaussian_mean_comparison"

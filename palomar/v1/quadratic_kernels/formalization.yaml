@@ -1,0 +1,88 @@
+version: v0.4
+project:
+  name: Prescribed squarefree kernels of shifted split products
+  description: >-
+    Count integers n in [N,2N] whose squarefree kernel of n(n+h) lies in
+    [N^beta,2N^beta) and is divisible by a prescribed positive integer e.
+    Uniformly over positive polylogarithmic shifts h, the counting exponent
+    is the minimum of 1, beta-delta, and max(beta/2-delta,1-beta/2), with
+    delta=log(e)/log(N) and an arbitrary fixed positive exponent margin.
+    The threshold precedes all shifts, divisors and real beta. The capped
+    exponent has an exact universal affine upper bound. For nonnegative
+    delta, the uncapped comparison holds exactly when beta-2delta<=2.
+    Arbitrarily large actual data with h=e=1 and consecutive squarefree
+    N,N+1 refute the unqualified uncapped comparison, while all counting
+    estimates remain valid. No unformalized mathematical input is assumed.
+  authors: [Brice Pouly]
+  author_identifiers:
+    - name: Brice Pouly
+      github: Vulkin-prog
+      orcid: 0009-0008-8491-2467
+  responsible_maintainers: [Brice Pouly]
+  license: Apache-2.0
+repository:
+  role: substantive-development
+classification:
+  arxiv: [math.NT]
+sources:
+  - title: Sharp Poisson approximation and second-order correction for long multiplicative runs, technical companion, version 1.7 draft
+    authors: [Brice Pouly]
+    id: https://github.com/Vulkin-prog/paper-p1-lean
+    type: paper
+    relationship: formalizes
+    location: >-
+      Corrected lemma T5.1, companion_sections/short_supports.tex, and the
+      formalization appendix. P1-MATH-0315 records the actual counterexample;
+      P1-MATH-0985 records the exact comparison criterion.
+    note: >-
+      The original version 1.6 statement is preserved with its counterexample.
+      The counting bounds remain valid. The separate version 1.7 statement
+      adds the trivial exponent cap to the exact displayed comparison.
+      This is a working manuscript; no publication identifier is asserted.
+related_formalizations:
+  - id: https://github.com/Vulkin-prog/paper-c-lean
+    relationship: adapts
+    note: >-
+      Selected foundations were ported from exact commit
+      b9fa9ba490f201b408a302a86f1594ee620b228b, under Apache-2.0, and rebuilt
+      under Lean v4.36.0-rc2. File identities, statement scope and adaptations
+      are recorded in docs/PAPER_C_REUSE.md and source headers.
+automation:
+  methods:
+    - method: agent
+      framework: Codex
+      models: [OpenAI Codex agents]
+      prompting_notes: >-
+        Preserve literal kernel and integer bins, heterogeneous parameter
+        ranges, quantifier order and the distinction between counts and
+        the exact comparison of their displayed exponents.
+      tool_setup: >-
+        Lean proof construction, standalone statement extraction, exact
+        source-to-interface bridges and explicit counterexample review.
+  notes: Agent assistance is not independent human peer review.
+review:
+  status: agent-reviewed
+  notes: >-
+    All four Solution proofs compile without placeholders or warnings under
+    Lean v4.36.0-rc2. The standalone Mathlib-only Challenge has four deliberate
+    selected theorem holes. Statement comparison and kernel replays are
+    recorded separately when they succeed; compilation alone is not claimed
+    as Palomar qualification.
+status:
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms: [propext, Quot.sound, Classical.choice]
+  scope: >-
+    Four selected declarations for the actual prescribed-kernel count,
+    capped comparison, exact nonnegative-parameter criterion and actual
+    arbitrarily large counterexamples to the unqualified comparison.
+    Deliberate holes occur only in the standalone Challenge. No registry
+    entry, editorial decision or certification is claimed.
+fidelity:
+  divergences: >-
+    The shift bound is generalized to every fixed polylogarithmic budget.
+    Both counting branches and their uncapped minimum remain valid.
+    Adding the trivial exponent one repairs the universal exact comparison.
+    Necessity of the uncapped range is restricted to nonnegative delta,
+    as required by actual positive divisors at N>=2. The counterexample
+    refutes the exact comparison rather than the counting estimates.

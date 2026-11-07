@@ -12,7 +12,8 @@ project:
     mathematical input is assumed. This is a sufficient census for the
     P1 private-forcing obstruction, not a full Dickman asymptotic or a
     general sharp short-interval mean-square theorem.
-  authors:
+  authors: [Brice Pouly]
+  author_identifiers:
     - name: Brice Pouly
       github: Vulkin-prog
       orcid: 0009-0008-8491-2467
@@ -25,10 +26,7 @@ classification:
   arxiv: [math.NT]
 sources:
   - title: Sharp Poisson approximation and second-order correction for long multiplicative runs, technical companion, version 1.7 draft
-    authors:
-      - name: Brice Pouly
-        github: Vulkin-prog
-        orcid: 0009-0008-8491-2467
+    authors: [Brice Pouly]
     id: https://github.com/Vulkin-prog/paper-p1-lean
     type: paper
     relationship: formalizes
@@ -54,7 +52,14 @@ sources:
       relative-density statement. The selected sufficient census is proved
       internally by the off-central estimate, exact Gaussian identity,
       ordinary smooth long-mean comparison and physical localization.
-related_formalizations: []
+related_formalizations:
+  - id: https://github.com/Vulkin-prog/paper-c-lean
+    relationship: adapts
+    note: >-
+      Selected foundations were ported from exact commit
+      b9fa9ba490f201b408a302a86f1594ee620b228b, under Apache-2.0, and rebuilt
+      under Lean v4.36.0-rc2. File identities, statement scope and adaptations
+      are recorded in docs/PAPER_C_REUSE.md and source headers.
 automation:
   methods:
     - method: agent
