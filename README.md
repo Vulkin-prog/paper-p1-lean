@@ -72,15 +72,15 @@ then invokes Lean's own axiom report for each declaration. Only `propext`,
 Standalone registry Challenges have only the deliberate selected statement
 holes and are never imported by the proof development or its audit.
 
-The latest complete project replay with all seven candidate families passed
-**18,551 build jobs** and **19,373 theorem axiom checks**. Each mathematical
+The latest complete project replay with all nine candidate families passed
+**18,555 build jobs** and **19,402 theorem axiom checks**. Each mathematical
 checkpoint and registry replay records its own exact source commit and scope.
 The [evidence checker](scripts/check_registry_evidence.py) validates every
 preserved receipt against its historical inventory and current proof imports.
 
 ## Palomar preparation
 
-Seven selected families have passed local statement comparison and both Lean and
+Nine selected families have passed local statement comparison and both Lean and
 NanoDa, with bubblewrap isolation enabled:
 
 | Family | Selected declarations | Local evidence |
@@ -92,18 +92,20 @@ NanoDa, with bubblewrap isolation enabled:
 | Exact Poisson scales and quantized mean bias | 5 | [Receipt](palomar/v1/poisson_scales/qualification.json) |
 | Universal arithmetic anchor obstructions | 4 | [Receipt](palomar/v1/private_obstruction/qualification.json) |
 | Actual conditioning and colored replica target sums | 4 | [Receipt](palomar/v1/conditioning/qualification.json) |
+| Actual factorial cumulants and the optimal third-cumulant power | 5 | [Receipt](palomar/v1/factorial_cumulants/qualification.json) |
+| Fixed-order moment obstruction to a polynomial approximation rate | 5 | [Receipt](palomar/v1/moment_obstruction/qualification.json) |
 
-Two further families are prepared, covering the exact actual factorial
-cumulants and the fixed-order moment obstruction. Their ten selected statements
-and proofs have passed standalone comparisons and three kernels; qualification
-against the frozen root project remains pending.
+All 37 selected declarations also passed supplementary replays with verified
+con-ron, Lean and NanoDa. The [source-bound reports](palomar/v1/supplementary/README.md)
+preserve the actual logs, binary identities and positive/ill-typed controls.
 
 The [candidate interfaces](palomar/v1/README.md) link each standalone Mathlib-only
 Challenge, complete Solution, Comparator configuration, metadata and preserved
 logs. Selected declaration counts describe registration candidates, separately
 from the complete 167-result manuscript correspondence. The exact-pinned
 [complete reusable workflow](.github/workflows/palomar-preflight.yml) is ready
-for the next mechanical stage, with one family at a time. Its personal
+for the original seven families, and an [additional caller](.github/workflows/palomar-preflight-additional.yml)
+selects the two further families. Both run one family at a time. Their personal
 authorization declaration must be confirmed before dispatch. No registry
 submission, editorial decision or permanent registration is claimed.
 

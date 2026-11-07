@@ -1,0 +1,71 @@
+{
+  "source_commit": "08fd135021794dcb5a8b902ddbea109dfbd47c5d",
+  "validator_commit": "14aa8d6b3c2f14a8540605e37144560b9a00e7e7",
+  "community_schema_sha256": "25ff6b25ca4511635aff4443cf20480c15e59dddf19591c730950b442ea54fce",
+  "files": [
+    {
+      "family": "asymmetric_profiles",
+      "path": "palomar/v1/asymmetric_profiles/formalization.yaml",
+      "sha256": "5c5a3ab7f589e8ea87e5e9574bd4f7abbbdca76a248dfec5770ac24be4f9fd4d",
+      "community_v04_schema_passed": true,
+      "palomar_metadata_minimum_passed": true
+    },
+    {
+      "family": "conditioning",
+      "path": "palomar/v1/conditioning/formalization.yaml",
+      "sha256": "20cc5660d509c216600f9761f9ef931c5f17541b2fb3c605d20bbb9e13ff076d",
+      "community_v04_schema_passed": true,
+      "palomar_metadata_minimum_passed": true
+    },
+    {
+      "family": "factorial_cumulants",
+      "path": "palomar/v1/factorial_cumulants/formalization.yaml",
+      "sha256": "0842ebc70a8f826f12405648f894875a1f507d47c377cb1a9c25939d3a3e3e28",
+      "community_v04_schema_passed": true,
+      "palomar_metadata_minimum_passed": true
+    },
+    {
+      "family": "moment_obstruction",
+      "path": "palomar/v1/moment_obstruction/formalization.yaml",
+      "sha256": "65fae7ff6c22cbe19b40726ed8880dff13f7c5c07fb808d0062df3692661abaf",
+      "community_v04_schema_passed": true,
+      "palomar_metadata_minimum_passed": true
+    },
+    {
+      "family": "poisson_scales",
+      "path": "palomar/v1/poisson_scales/formalization.yaml",
+      "sha256": "745e004c13a94c61e4c2dd38efc7bf2167ba2a056c684227636fb76eb5e4b3a2",
+      "community_v04_schema_passed": true,
+      "palomar_metadata_minimum_passed": true
+    },
+    {
+      "family": "private_obstruction",
+      "path": "palomar/v1/private_obstruction/formalization.yaml",
+      "sha256": "4390c3c3855d44f5b82cf7a9ef99e6d0ce7d7a413995cc6856d0440170b1f1df",
+      "community_v04_schema_passed": true,
+      "palomar_metadata_minimum_passed": true
+    },
+    {
+      "family": "quadratic_approximation",
+      "path": "palomar/v1/quadratic_approximation/formalization.yaml",
+      "sha256": "d9131e096ed30e4540ed307293963182c5f7a2de47e8c763903c1e3cc9d2c34c",
+      "community_v04_schema_passed": true,
+      "palomar_metadata_minimum_passed": true
+    },
+    {
+      "family": "quadratic_kernels",
+      "path": "palomar/v1/quadratic_kernels/formalization.yaml",
+      "sha256": "021f145ac87e1e62df5ddb688d07b2bca283803f01c24b98d46c094a2d0d54b3",
+      "community_v04_schema_passed": true,
+      "palomar_metadata_minimum_passed": true
+    },
+    {
+      "family": "smooth_windows",
+      "path": "palomar/v1/smooth_windows/formalization.yaml",
+      "sha256": "d87cc32f585801a31994eb82df25d9b396e58c9e7d0cbc77b1e4d638f22fe19f",
+      "community_v04_schema_passed": true,
+      "palomar_metadata_minimum_passed": true
+    }
+  ],
+  "scope": "Offline metadata shape, taxonomy and provenance-field validation only. No personal relationship declaration, complete Palomar workflow, licensee classification, intake or registration."
+}

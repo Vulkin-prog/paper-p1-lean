@@ -1,0 +1,76 @@
+{
+  "source_commit": "ce8d14d39944266a5b2f5b73929625a0236be86d",
+  "toolchain": "leanprover/lean4:v4.36.0-rc2",
+  "method_source": "PalomarRegistry/PalomarSubmission@14aa8d6b3c2f14a8540605e37144560b9a00e7e7",
+  "controls": [
+    {
+      "kernel": "con-ron",
+      "control": "positive",
+      "expected_verdict_observed": true,
+      "comparator_exit_code": 0,
+      "log_path": "palomar/v1/supplementary/control-con-ron-positive.log.gz",
+      "compressed_log_sha256": "ed8eef426cf20d7338f6bcf904f42734e65f086eb2a69f55c4f494e34caac85d",
+      "original_log_sha256": "6f28460f5192ac8a04742c067ae9edfd09b764accde9abddfd01ecd9311cceb5"
+    },
+    {
+      "kernel": "con-ron",
+      "control": "ill-typed",
+      "expected_verdict_observed": true,
+      "comparator_exit_code": 1,
+      "log_path": "palomar/v1/supplementary/control-con-ron-ill-typed.log.gz",
+      "compressed_log_sha256": "c9da873f8d20dfba5b46ec73ead5fb270b9517f89b6ae4693dde550d06eb664a",
+      "original_log_sha256": "d89b02cc54b448d1d355116c308f06870e118d5020e8d2af46453bd2eb99fb64"
+    },
+    {
+      "kernel": "nanoda",
+      "control": "positive",
+      "expected_verdict_observed": true,
+      "comparator_exit_code": 0,
+      "log_path": "palomar/v1/supplementary/control-nanoda-positive.log.gz",
+      "compressed_log_sha256": "027ab488af7852f6b72fd21a853d0a7f753ad87cd0c14dd72e4e424aa192d469",
+      "original_log_sha256": "5b304adfe00c8107856812ee5184f11fcb2582fe7931ce1f2038375a4cce8171"
+    },
+    {
+      "kernel": "nanoda",
+      "control": "ill-typed",
+      "expected_verdict_observed": true,
+      "comparator_exit_code": 1,
+      "log_path": "palomar/v1/supplementary/control-nanoda-ill-typed.log.gz",
+      "compressed_log_sha256": "6ba48b3ade0811658183b5f0b713a82d7f6ef17210775c0629b8364a655fb696",
+      "original_log_sha256": "9446c8c2ddd9870ef25aa19f632b34621b0592e876a6a6a86b34f574b1d083c3"
+    },
+    {
+      "kernel": "Lean default",
+      "control": "positive",
+      "expected_verdict_observed": true,
+      "comparator_exit_code": 0,
+      "log_path": "palomar/v1/supplementary/control-Lean-default-positive.log.gz",
+      "compressed_log_sha256": "661013eaf1ea6936d791bc468a2a9eeb3fae1b49ffae040c0aa8b83eab7c5b62",
+      "original_log_sha256": "2c8a1285153d2ac838ff12abeacdc41d7b18f822402289094c4e69a428118001"
+    },
+    {
+      "kernel": "Lean default",
+      "control": "ill-typed",
+      "expected_verdict_observed": true,
+      "comparator_exit_code": 1,
+      "log_path": "palomar/v1/supplementary/control-Lean-default-ill-typed.log.gz",
+      "compressed_log_sha256": "fa8523e7c9546631a3e2a94658ef31433717b65abc8e21be5506d8a0f90934a7",
+      "original_log_sha256": "1f2f9d95345344c73f5a801f438d1ac57ba9334ff7bfc81bef49399947d25b05"
+    }
+  ],
+  "positive_export_sha256": "5935d3b03da9765193d453a0dddde3e4b66546a7315b85888a87ea40a822b4c1",
+  "ill_typed_export_sha256": "847673ae77116ea78d715ab240290e7643a4f05a76367aafec655cebd270fc72",
+  "complete_palomar_workflow_passed": false,
+  "scope": "Local Comparator controls, each under isolation, with the same positive export and a deliberately ill-typed export. Recorded exit codes are Comparator process codes, not native kernel process codes. This is separate from the complete Palomar workflow.",
+  "tool_binary_sha256": {
+    "lake": "42678ccbc2605e2f892540dc7236e009fdd1224e823d104dfd72725d2f1a52d2",
+    "leanexport": "8298d4412a1f8986b5dbfd1d9925211778d8d320fc47b72040c8fdfdd5b603d5",
+    "leanchecker": "2b2ff08805ace61c935b023f8114ac3f7f1d3bc79cb4e8c47ef7801a5af58798",
+    "nanoda_bin": "8241c5e6baa29490aa118d382f97961b208ae730fdb96545c2abed74c9ece5a8",
+    "con-ron": "4e5616d94374cae37324dad2594f6230c2bb2297240249fc78ff508f3bc5acef"
+  },
+  "standalone_control_source": {
+    "path": "palomar/v1/supplementary/control-P1KernelControl.lean",
+    "sha256": "18cfeb228d17501705a12262736e74a7f38e2a76096c218d4ef317ea2dd873ff"
+  }
+}

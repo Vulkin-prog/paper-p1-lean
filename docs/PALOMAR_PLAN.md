@@ -8,20 +8,20 @@ statements are proved. Both revised PDFs and their visual checks are preserved.
 
 ## Completed local qualification
 
-[Seven selected families](../palomar/v1/README.md), with **27 declarations**,
+[Nine selected families](../palomar/v1/README.md), with **37 declarations**,
 have passed actual statement comparison, Lean and bundled NanoDa, with the
 bubblewrap boundary enabled. Every family has its own immutable source commit,
 configuration, standalone Mathlib-only Challenge, complete Solution, metadata,
 qualification receipt and compressed original logs. The latest complete build
-passed **18,551 jobs** and the direct source-discovered audit checked **19,373
+passed **18,555 jobs** and the direct source-discovered audit checked **19,402
 theorems**, allowing only `propext`, `Classical.choice` and `Quot.sound`.
 
-Two additional five-declaration families are in root qualification: exact
-actual factorial cumulants, including the optimal positive third-cumulant
-power, and the explicit fixed-order moment obstruction to polynomial rates.
-Their manual exports passed all three available kernels. They remain pending
-until their standard frozen-root Comparator, full build and audit receipts
-are recorded. These interfaces introduce no new mathematical-change entry.
+All nine families also passed supplementary verified con-ron, Lean and NanoDa
+replays. Their [source-bound records](../palomar/v1/supplementary/README.md)
+preserve binary identities, original logs, six positive/ill-typed controls,
+metadata shape checks and a historical source-layout scan. These local checks
+do not replace the complete workflow. The additional interfaces introduce no
+new mathematical-change entry.
 
 The [evidence checker](../scripts/check_registry_evidence.py) verifies every
 receipt against its original commit and inventory, its preserved log hashes,
@@ -68,7 +68,9 @@ inventory. The full project snapshot stays below the 500 MiB source limit.
 
 ## Complete reusable workflow
 
-The [workflow caller](../.github/workflows/palomar-preflight.yml) is prepared.
+The [original workflow caller](../.github/workflows/palomar-preflight.yml) selects
+exactly seven families; the [additional caller](../.github/workflows/palomar-preflight-additional.yml)
+selects factorial cumulants and the moment obstruction. Both are prepared.
 Both its `uses` revision and `pipeline_commit` are fixed to the exact same
 PalomarSubmission SHA above. It uses `mode: full`, the required external
 `palomar-standard-v1` profile, read-only repository permissions and one family

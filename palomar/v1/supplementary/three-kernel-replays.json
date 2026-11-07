@@ -1,0 +1,175 @@
+{
+  "toolchain": "leanprover/lean4:v4.36.0-rc2",
+  "complete_palomar_workflow_passed": false,
+  "scope": "Supplementary local con-ron compatibility, with original local two-kernel receipts unchanged. No personal authorization, workflow dispatch or registry intake.",
+  "tool_binary_sha256": {
+    "lake": "42678ccbc2605e2f892540dc7236e009fdd1224e823d104dfd72725d2f1a52d2",
+    "leanexport": "8298d4412a1f8986b5dbfd1d9925211778d8d320fc47b72040c8fdfdd5b603d5",
+    "leanchecker": "2b2ff08805ace61c935b023f8114ac3f7f1d3bc79cb4e8c47ef7801a5af58798",
+    "nanoda_bin": "8241c5e6baa29490aa118d382f97961b208ae730fdb96545c2abed74c9ece5a8",
+    "con-ron": "4e5616d94374cae37324dad2594f6230c2bb2297240249fc78ff508f3bc5acef"
+  },
+  "families": [
+    {
+      "family": "quadratic_approximation",
+      "selected_declarations": [
+        "PaperP1Registry.QuadraticApproximation.source_probability",
+        "PaperP1Registry.QuadraticApproximation.reference_series",
+        "PaperP1Registry.QuadraticApproximation.optimal_quadratic",
+        "PaperP1Registry.QuadraticApproximation.probability_criterion"
+      ],
+      "submission_configuration_sha256": "011d7670c8aef2804bea6af4704a72eb67f297d092cd21ac41cd868fe1d2a672",
+      "actual_comparator_exit": 0,
+      "all_three_kernels_accepted": true,
+      "con_ron_accepted_declarations": 103856,
+      "log_path": "palomar/v1/supplementary/quadratic_approximation-three-kernels.log.gz",
+      "log_sha256": "7a940a8df8ea81f251cc96b627e55d10bc0120ecc542728a0843d3c6a742da96",
+      "source_commit": "ce8d14d39944266a5b2f5b73929625a0236be86d",
+      "compressed_log_sha256": "f4d6c234169f91b2aaea4c4c21bcadb58ab66bcd25b759a59482dfa061701a13"
+    },
+    {
+      "family": "smooth_windows",
+      "selected_declarations": [
+        "PaperP1Registry.SmoothWindows.almost_all_two_smooth",
+        "PaperP1Registry.SmoothWindows.uniform_off_central",
+        "PaperP1Registry.SmoothWindows.gaussian_mean_comparison"
+      ],
+      "submission_configuration_sha256": "de42fa39b674032111f32e4e5e2073c8c8ba62b2164209a857cb244979fb5831",
+      "actual_comparator_exit": 0,
+      "all_three_kernels_accepted": true,
+      "con_ron_accepted_declarations": 74977,
+      "log_path": "palomar/v1/supplementary/smooth_windows-three-kernels.log.gz",
+      "log_sha256": "c57d96f25840014991d328fc62838616dc42c2f29c9d372e2fcad9f7a6c813e6",
+      "source_commit": "ce8d14d39944266a5b2f5b73929625a0236be86d",
+      "compressed_log_sha256": "37b44be8b88405abb57c243f72559a26ffd2bfe16dca2aca66ffab88beaecf7c"
+    },
+    {
+      "family": "private_obstruction",
+      "selected_declarations": [
+        "PaperP1Registry.PrivateObstruction.admissible_fields",
+        "PaperP1Registry.PrivateObstruction.conditional_forcing",
+        "PaperP1Registry.PrivateObstruction.deterministic_obstruction",
+        "PaperP1Registry.PrivateObstruction.randomized_obstruction"
+      ],
+      "submission_configuration_sha256": "9d251b4cf276f9b1384cc964ffd1bbd56f58d08d7eef115fb75c64619ba24ea2",
+      "actual_comparator_exit": 0,
+      "all_three_kernels_accepted": true,
+      "con_ron_accepted_declarations": 76101,
+      "log_path": "palomar/v1/supplementary/private_obstruction-three-kernels.log.gz",
+      "log_sha256": "cc35f14617f267bcb1779b83e01e14afb5d1bab7afcff6095fbee82ccaf2c200",
+      "source_commit": "ce8d14d39944266a5b2f5b73929625a0236be86d",
+      "compressed_log_sha256": "044ec519bc363f2a338957ea3246cdca74a0d482b713a58f797853ea1c6e778f"
+    },
+    {
+      "family": "conditioning",
+      "selected_declarations": [
+        "PaperP1Registry.Conditioning.conditional_target_sum",
+        "PaperP1Registry.Conditioning.colored_target_sum",
+        "PaperP1Registry.Conditioning.negative_deviation",
+        "PaperP1Registry.Conditioning.conditional_mean_lower"
+      ],
+      "submission_configuration_sha256": "05dfe639f86993dd8f7440dedb064cb3879e2bf44c165cfca30a488ebfbc8a10",
+      "actual_comparator_exit": 0,
+      "all_three_kernels_accepted": true,
+      "con_ron_accepted_declarations": 86501,
+      "log_path": "palomar/v1/supplementary/conditioning-three-kernels.log.gz",
+      "log_sha256": "b1b6093c57e425a2c9dd85395d22cfcfbbcdf2a4e805c43ccbe12a351533aaa2",
+      "source_commit": "ce8d14d39944266a5b2f5b73929625a0236be86d",
+      "compressed_log_sha256": "abbb85041ed43a3de2eceeeec0900b66ffacb27e3e60ca7323fdf98d5f05e3ec"
+    },
+    {
+      "family": "quadratic_kernels",
+      "selected_declarations": [
+        "PaperP1Registry.QuadraticKernels.uniform_count",
+        "PaperP1Registry.QuadraticKernels.capped_comparison",
+        "PaperP1Registry.QuadraticKernels.uncapped_comparison_iff",
+        "PaperP1Registry.QuadraticKernels.actual_uncapped_counterexamples"
+      ],
+      "submission_configuration_sha256": "0a502cf94a331a8dffbe6ab5a779201130c6246c7db727e1de9da66253a9f118",
+      "actual_comparator_exit": 0,
+      "all_three_kernels_accepted": true,
+      "con_ron_accepted_declarations": 45356,
+      "log_path": "palomar/v1/supplementary/quadratic_kernels-three-kernels.log.gz",
+      "log_sha256": "a8a5c8fdec5cdbfd7c3123ddbd7b3ad58cf700a643541e6e2fd2c9f6142babf0",
+      "source_commit": "ce8d14d39944266a5b2f5b73929625a0236be86d",
+      "compressed_log_sha256": "e5a0b7018d22dc53e6c1042c1e028e1d51d53c1e06cb3e8a5c769b38a251e9c0"
+    },
+    {
+      "family": "asymmetric_profiles",
+      "selected_declarations": [
+        "PaperP1Registry.AsymmetricProfiles.expanded_profile",
+        "PaperP1Registry.AsymmetricProfiles.small_prime_invariance",
+        "PaperP1Registry.AsymmetricProfiles.radius_one_obstruction"
+      ],
+      "submission_configuration_sha256": "486373f8ace3e5a806f972ae7be49c66eaedf95ea1ac8741138d144ea3c3ac24",
+      "actual_comparator_exit": 0,
+      "all_three_kernels_accepted": true,
+      "con_ron_accepted_declarations": 91989,
+      "log_path": "palomar/v1/supplementary/asymmetric_profiles-three-kernels.log.gz",
+      "log_sha256": "823cb0670d7f9ea55e20cb93d8d1e81ceaf4bdc47f9a20d92d5b065b54a29946",
+      "source_commit": "ce8d14d39944266a5b2f5b73929625a0236be86d",
+      "compressed_log_sha256": "02da012659f024d1683607c0d5a10ba53de3b6239b1ec7b267c6ee12438fefe0"
+    },
+    {
+      "family": "poisson_scales",
+      "selected_declarations": [
+        "PaperP1Registry.PoissonScales.source_probability",
+        "PaperP1Registry.PoissonScales.poisson_expansion",
+        "PaperP1Registry.PoissonScales.moving_residue_equivalent",
+        "PaperP1Registry.PoissonScales.mean_bias_quantized",
+        "PaperP1Registry.PoissonScales.nominal_quadratic_comparison"
+      ],
+      "submission_configuration_sha256": "e7f0e8856f7de0f97f74ea0155ad8537e00bec41070e77fddf4e7cf8e3f91154",
+      "actual_comparator_exit": 0,
+      "all_three_kernels_accepted": true,
+      "con_ron_accepted_declarations": 104091,
+      "log_path": "palomar/v1/supplementary/poisson_scales-three-kernels.log.gz",
+      "log_sha256": "aadc0027f5779a74c208459b0e74bb32a4aa3a219a1b33683c38041f364f2815",
+      "source_commit": "ce8d14d39944266a5b2f5b73929625a0236be86d",
+      "compressed_log_sha256": "0266706c3df045f08cd534c586b3bf86bd9c7dae6585965d4e46cb95d58cc27f"
+    },
+    {
+      "family": "factorial_cumulants",
+      "selected_declarations": [
+        "PaperP1Registry.FactorialCumulants.factorial_source",
+        "PaperP1Registry.FactorialCumulants.third_exact_identity",
+        "PaperP1Registry.FactorialCumulants.fourth_exact_identity",
+        "PaperP1Registry.FactorialCumulants.principal_second_equivalent",
+        "PaperP1Registry.FactorialCumulants.optimal_third_cumulant"
+      ],
+      "submission_configuration_sha256": "f95b65e293c5ee0580dd2f10fd3521616a58b919e508caa04f82cb950178408f",
+      "actual_comparator_exit": 0,
+      "all_three_kernels_accepted": true,
+      "con_ron_accepted_declarations": 100200,
+      "log_path": "palomar/v1/supplementary/factorial_cumulants-three-kernels.log.gz",
+      "log_sha256": "23378499b4979bf94f147b737fa311a98354ba8c6b0a998a24b780994f6f0e58",
+      "source_commit": "08fd135021794dcb5a8b902ddbea109dfbd47c5d",
+      "compressed_log_sha256": "1b41ae01bfde2b5a2825f2a22bd8209e9bd1319c60af390722c410097a1d6c59"
+    },
+    {
+      "family": "moment_obstruction",
+      "selected_declarations": [
+        "PaperP1Registry.MomentObstruction.normalized_probabilities",
+        "PaperP1Registry.MomentObstruction.all_factorial_series",
+        "PaperP1Registry.MomentObstruction.distance_and_exponential",
+        "PaperP1Registry.MomentObstruction.fixed_order_matching",
+        "PaperP1Registry.MomentObstruction.uniform_subpolynomial"
+      ],
+      "submission_configuration_sha256": "9cadb096bc30727d133f5669f570305c0812d834137e0cd5e37a9b1ad786b629",
+      "actual_comparator_exit": 0,
+      "all_three_kernels_accepted": true,
+      "con_ron_accepted_declarations": 41338,
+      "log_path": "palomar/v1/supplementary/moment_obstruction-three-kernels.log.gz",
+      "log_sha256": "f87f79197061f745a0c2825dedb6be441ba2e42fbd7d4cc59a632e5355a7d6e0",
+      "source_commit": "08fd135021794dcb5a8b902ddbea109dfbd47c5d",
+      "compressed_log_sha256": "880a36accfbc55304a118a3333d6b01dccb26132defdc3ce7defb223b3312f58"
+    }
+  ],
+  "updated_at": "2026-11-07T02:56:53.008572+00:00",
+  "schema_version": 1,
+  "source_commits": [
+    "08fd135021794dcb5a8b902ddbea109dfbd47c5d",
+    "ce8d14d39944266a5b2f5b73929625a0236be86d"
+  ],
+  "baseline_source_commit": "ce8d14d39944266a5b2f5b73929625a0236be86d"
+}
