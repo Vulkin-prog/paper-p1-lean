@@ -70,7 +70,7 @@ The [exact reference covariance](docs/POSITIONAL_ARRIVAL_COVARIANCE.md) identifi
 
 The [exact reference independence criterion](docs/POSITIONAL_ARRIVAL_INDEPENDENCE.md) proves that two reference coordinates are independent exactly when their shared arrival intensity vanishes. For pairs, the positive-rate retained edges give precisely the dependence graph, including natural counts and zero-rate cases. Its complete replay passed; [the source-bound logs](docs/validation/checkpoint-0995/validation.json) preserve all three checks. The clarification is integrated in the revised companion appendix.
 
-The [full reference block independence](docs/POSITIONAL_BLOCK_INDEPENDENCE.md) proves independence of complete finite coordinate vectors exactly when every cross covariance vanishes. For pairs it establishes the full dependency-graph property of positive-rate retained edges and measurable block-event factorization. All twenty-one new declarations passed direct compilation and axiom checks; whole-project replay and manuscript integration are pending.
+The [full reference block independence](docs/POSITIONAL_BLOCK_INDEPENDENCE.md) proves independence of complete finite coordinate vectors exactly when every cross covariance vanishes. For pairs it establishes the full dependency-graph property of positive-rate retained edges and measurable block-event factorization. Its complete replay passed; [the source-bound logs](docs/validation/checkpoint-0996/validation.json) preserve all three checks. The clarification is integrated in the revised companion appendix.
 
 ## Build and verification
 
@@ -96,7 +96,7 @@ Standalone registry Challenges have only the deliberate selected statement
 holes and are never imported by the proof development or its audit.
 
 The latest complete project replay with all sixteen candidate families passed
-**18,595 build jobs** and **19,691 theorem axiom checks**. Each mathematical
+**18,597 build jobs** and **19,709 theorem axiom checks**. Each mathematical
 checkpoint and registry replay records its own exact source commit and scope.
 The [evidence checker](scripts/check_registry_evidence.py) validates every
 preserved receipt against its historical inventory and current proof imports.

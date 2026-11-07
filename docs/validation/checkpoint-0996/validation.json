@@ -1,0 +1,36 @@
+{
+  "checkpoint": "P1-MATH-0996",
+  "source_commit": "2233c22bcc68c0a827b806934eacdd109518913e",
+  "status": "passed",
+  "full_build_jobs": 18597,
+  "audited_theorems": 19709,
+  "distinct_checked_references": 19854,
+  "actual_process_exit_codes": {
+    "build": 0,
+    "audit": 0,
+    "references": 0
+  },
+  "permitted_kernel_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "logs": [
+    {
+      "kind": "build",
+      "path": "docs/validation/checkpoint-0996/build.log.gz",
+      "sha256_gzip": "32287de5051a323f484675041898738fb5ec90c0c95135bebfdbbbb770463da7"
+    },
+    {
+      "kind": "audit",
+      "path": "docs/validation/checkpoint-0996/audit.log.gz",
+      "sha256_gzip": "6dae876ed6f6c8596345a5ae22e3fb9f8ed33b5e3863ac47defef1e2abbb1451"
+    },
+    {
+      "kind": "references",
+      "path": "docs/validation/checkpoint-0996/references.log.gz",
+      "sha256_gzip": "41d89cd6c2a028f5793cdfc88d9b3e486c52d3bf5efcb09fb638a49ed7d067ad"
+    }
+  ],
+  "scope": "Whole-project replay including exact independence of complete natural-valued reference coordinate blocks, the cross-covariance criterion for arbitrary finite packets, shared zero-rate tuple removal, the full positive-rate dependency-graph property, canonical product realizations and measurable block-event factorization. All sixteen registry Solutions and all numbered statements are preserved."
+}

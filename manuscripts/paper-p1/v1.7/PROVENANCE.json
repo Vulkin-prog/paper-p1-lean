@@ -103,7 +103,7 @@
     },
     {
       "path": "formalization.tex",
-      "sha256": "dc40638faec49450565b630c1f9b39858383222d9e4fec76f094a18b5dda5005"
+      "sha256": "77bf1e4bf888cbaf362d7c8d8d813454ed945c6489fb69141386f2c2d048b50b"
     },
     {
       "path": "main.tex",
@@ -253,6 +253,11 @@
       "checkpoint": "P1-MATH-0995",
       "proof_commit": "5d76e8c2ea7f8b3b4eb810c56db23330b3f0499b",
       "scope": "Unnumbered companion appendix: sharp independence of distinct reference coordinates if and only if their shared packet intensity is zero, exact positive-rate pair dependence, zero-rate degeneracies, natural counts and real versions. All original arithmetic rates, exponent, fixed-degree regime and 167 numbered statement blocks are preserved."
+    },
+    {
+      "checkpoint": "P1-MATH-0996",
+      "proof_commit": "2233c22bcc68c0a827b806934eacdd109518913e",
+      "scope": "Unnumbered companion appendix: independence of complete finite reference-coordinate blocks exactly when all cross covariances vanish; the full dependency-graph condition of positive-rate retained pair edges; and factorization of measurable block-event probabilities. All original arithmetic rates, exponent, fixed-degree regime and 167 numbered statement blocks are preserved."
     }
   ]
 }

@@ -7,9 +7,9 @@ crossing positive-rate retained edge, proving the full dependency-graph
 property. Actual natural-valued block vectors, arbitrary finite packets,
 zero rates, the canonical product law and measurable event factorization
 are covered. The original arithmetic comparison and all 167 numbered
-statements are preserved. Eighteen theorems and three definitions passed
-direct Lean and exact permitted-axiom checks. Full project replay and
-manuscript integration of this clarification are pending. Sixteen registry
+statements are preserved. The full replay passed 18,597 build jobs, 19,709 theorem axiom checks and
+19,854 distinct references, all actual exits 0. The clarification is integrated in the revised
+companion appendix, with all 167 PDF pages rebuilt and reviewed. Sixteen registry
 families with 64 selections remain locally qualified; no registration is
 claimed.
 

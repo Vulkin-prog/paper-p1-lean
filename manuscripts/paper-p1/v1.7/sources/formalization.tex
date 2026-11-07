@@ -305,6 +305,15 @@ independent if and only if $\sum_{e\in E:x,y\in e}q_e=0$. For pairs,
 they are dependent exactly on retained edges with $q_e>0$; zero-rate
 edges create no dependence. This criterion covers the natural-valued
 counts and their real versions in every independent realization.
+
+More generally, two finite coordinate blocks carry independent full random
+vectors if and only if every cross covariance is zero. In a pair family,
+disjoint blocks are independent exactly when no retained edge of positive
+rate crosses between them. Thus the positive-rate graph has the full
+dependency-graph property, and probabilities of measurable events on
+independent blocks factor.
+
+\begin{samepage}
 For each fixed degree $j$ and $\varepsilon>0$, one threshold precedes
 the critical lengths, probability spaces and arrival variables.  The series
 \[
@@ -313,7 +322,8 @@ the critical lengths, probability spaces and arrival variables.  The series
 \]
 is summable and at most $N^{-4/5+\varepsilon}$.
 This is the independent-arrival form of main Lemma~20.1, with its
-original grid, rates and exponent.
+original grid, rates and exponent.\par
+\end{samepage}
 
 \begin{samepage}
 The declarations
@@ -325,7 +335,9 @@ and the marginal laws and factorial moments in
 covariance matrix in
 \texttt{Positional\allowbreak{}Arrival\allowbreak{}Covariance}, and the sharp
 independence criterion in
-\texttt{Positional\allowbreak{}Arrival\allowbreak{}Independence}.\par
+\texttt{Positional\allowbreak{}Arrival\allowbreak{}Independence}.
+The full block criterion is in
+\texttt{Positional\allowbreak{}Block\allowbreak{}Independence}.\par
 \end{samepage}
 
 \paragraph{Scope and reproducibility.}

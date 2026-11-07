@@ -218,3 +218,29 @@ inspection at 110dpi. The declaration/module pointer paragraph is kept
 together so no Lean identifier is split across pages. Page counts remain
 65 and 102. All 48 TeX hashes, provenance, both PDF hashes and all numbered
 statement identities were checked.
+
+
+Checkpoint P1-MATH-0996 proves independence of complete natural-valued
+reference-coordinate vectors. Two finite blocks, even possibly overlapping,
+are independent exactly when all their cross covariances vanish. The
+proof explicitly removes shared zero-rate cells from full arrival tuples
+almost everywhere and reconstructs each whole block measurably. For
+pair packets and disjoint blocks, the exact criterion is that every
+retained crossing pair rate is zero. Equivalently, no positive-rate
+retained edge crosses, establishing the full dependency-graph condition.
+The canonical product law and factorization of measurable block-event
+probabilities are included. These are reference-field identities; the
+original arithmetic comparison, exponent and fixed-degree regime are
+preserved. The full replay passed 18,597 build jobs, 19,709 theorem axiom
+checks and 19,854 distinct references, all actual exits 0. All sixteen
+local registry receipts remain valid with unchanged original proof closures.
+
+The companion appendix states the full vector criterion, positive-rate
+dependency-graph property and event factorization, with the reference scope
+explicit. Both PDFs were rebuilt with stable cross-references, no unresolved
+references and no overfull boxes. All 167 pages were rendered: 165 are
+pixel-identical to the prior reviewed version, and both changed companion
+pages (99,100) passed full inspection at 110dpi. The complete module-pointer
+paragraph stays on one page. Counts remain 65 and 102 pages. All 48 TeX
+hashes, provenance, both PDF hashes and all numbered statement identities
+were checked.
