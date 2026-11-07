@@ -1,6 +1,19 @@
 # Mathematical corrections and improvements
 
-Current checkpoint P1-MATH-0990: The complete even-valuation retained
+Current checkpoint P1-MATH-0991: The actual retained positive-start
+forcing event is an explicitly constructed compatible affine fiber.
+Its exact mass is 2^(-r), with r no larger than the supported prime count.
+Both full actual exponential moments inherit the rank charge, together
+with the earlier finite-layer and density count budgets. At N=18,q=3,
+the five retained starts use no prime-19 bit, so r<=10 versus eleven
+prime coordinates. Both moments are at least exp(5*t-10*log(2)) for
+t>=0, at least twice the same-count atom bound. All 31 direct proofs
+and their exact axiom audit passed. Whole-project replay and manuscript
+integration are pending. All 167 revised statements and the original
+t>2 asymptotic theorem are preserved. Fourteen registry families with
+57 selections remain locally qualified; no registration is claimed.
+
+Historical checkpoint P1-MATH-0990: The complete even-valuation retained
 set has an exact finite layer cover at depth k=(Nat.clog q N+1)/2.
 Its count C lies between (N-1)/(q+1)-3*k and N/(q+1)+2*k. Both actual
 full exponential moments inherit the explicit lower budget. For a fixed

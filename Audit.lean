@@ -25,7 +25,7 @@ invokes Lean's own `#print axioms` once for each declaration. Keeping the names
 as data avoids a generated Lean source longer than Palomar's 10,000-line limit.
 -/
 
--- Inventory SHA-256: 41c58ef986a2ff5ea9dbf475ad4069547e016a12c59e41187a58596f3e691189
+-- Inventory SHA-256: e1832ad7f6422cd9f386e226e93aec11b642cbe03d4dfd51ad58c85648328af2
 
 open Lean Elab Command in
 run_cmd do
