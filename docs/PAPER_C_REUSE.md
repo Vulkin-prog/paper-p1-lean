@@ -449,3 +449,12 @@ edges, individual joint rates, independent Poisson arrival model and convergent
 weighted original-grid comparison are P1 constructions. Exact model bridges
 and the pinned-compiler replay are recorded with the candidate; no old compiled
 artifact or additional Paper C source version is introduced.
+
+
+The Poisson-reference registry interface packages the P1 finite reference-law
+refinements from checkpoints 993--996: exact marginal and factorial tests,
+covariance, sharp pair independence and full block dependence. Its standalone
+definitions are the compensated finite Poisson packet model itself. The
+eight exact model bridges introduce no additional Paper C source port or old
+compiled artifact. The unchanged substantive P1 proofs are rebuilt under
+Lean v4.36.0-rc2 and the pinned Mathlib revision.

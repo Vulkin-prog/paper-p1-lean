@@ -1,5 +1,5 @@
-name: P1 positional-field Palomar mechanical preflight
-run-name: P1 positional-field preflight — ${{ inputs.family }} at ${{ inputs.source_commit }}
+name: P1 positional-reference Palomar mechanical preflight
+run-name: P1 positional-reference preflight — ${{ inputs.family }} at ${{ inputs.source_commit }}
 
 on:
   workflow_dispatch:
@@ -16,6 +16,7 @@ on:
         options:
           - all
           - positional_field
+          - poisson_reference
       authorization_relationship:
         description: Confirmed human relationship to the substantive formalization
         required: true
@@ -52,7 +53,7 @@ jobs:
               'I have approval from a responsible author or maintainer',
           }:
               raise SystemExit('An explicit supported human relationship is required')
-          families = ['positional_field']
+          families = ['positional_field', 'poisson_reference']
           if family != 'all' and family not in families:
               raise SystemExit('Unknown candidate family')
           selected = families if family == 'all' else [family]

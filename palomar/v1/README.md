@@ -31,6 +31,7 @@ Two larger representative families also passed the three optional checkers.
 | Uniform local arithmetic rigidity and relative-sign independence | 5 | [configuration](../../comparator/p1_local_rigidity.json) | [metadata](local_rigidity/formalization.yaml), [passed local comparison and both kernels](local_rigidity/qualification.json) |
 | Effective valuation cylinders and affine-rank moment bounds | 4 | [configuration](../../comparator/p1_prime_cylinders.json) | [metadata](prime_cylinders/formalization.yaml), [passed local comparison and both kernels](prime_cylinders/qualification.json) |
 | Convergent original-grid positional Poisson field | 3 | [configuration](../../comparator/p1_positional_field.json) | [metadata](positional_field/formalization.yaml), [passed local comparison and both kernels](positional_field/qualification.json) |
+| Exact finite-product Poisson reference structure | 4 | [configuration](../../comparator/p1_poisson_reference.json) | [metadata](poisson_reference/formalization.yaml); frozen-root qualification pending |
 
 Each configuration names its standalone Mathlib-only Challenge and complete
 Solution. Only the exact selected Challenge statements have deliberate proof
@@ -72,3 +73,18 @@ twelve audited theorem/bridge proofs. Its frozen-root qualification and verified
 con-ron replay passed. The [standalone six-checker report](supplementary/positional-field-draft-checks.json)
 retains its earlier proof base and byte-identical module sources. Its dedicated
 workflow caller preserves the two earlier callers and their fifteen-family scope.
+
+
+A seventeenth [Poisson-reference candidate](poisson_reference/formalization.yaml)
+packages four exact statements for the explicit finite product reference law:
+Poisson marginals and all integrable factorial tests; the complete pair
+covariance matrix; natural-count pair independence; and genuine full-block
+independence exactly when no positive-rate edge crosses between disjoint
+blocks. Its eight exact bridges and four selected proofs passed the direct
+axiom audit and all six local checkers on immutable standalone exports.
+Frozen-root qualification is pending. This packages checkpoints 993--996
+and adds no mathematical-change entry. The two earlier workflow callers
+remain unchanged; the third positional caller selects the two reference
+families. The pending human-relationship question for the original fifteen
+configurations at source 0a9d3e68a8af39b6ea1ce725027f72ca5f10e8c4 retains
+its exact scope. No complete Palomar workflow or registration is claimed.

@@ -1,0 +1,82 @@
+version: v0.4
+project:
+  name: Exact finite-product Poisson reference marginals, covariance and block dependence
+  description: The finite natural-number ground, packet incidence, compensated nonnegative single rates,
+    packet rates, independent product Poisson law and actual natural-valued coordinates are explicit.
+    Four standalone statements give exact marginal laws and integrable factorial moments of every natural
+    order, the complete pair covariance matrix, sharp independence of two counts including zero-rate edges,
+    and genuine independence of full disjoint coordinate blocks exactly when no positive-rate retained
+    edge crosses between them.
+  authors:
+  - Brice Pouly
+  author_identifiers:
+  - name: Brice Pouly
+    github: Vulkin-prog
+    orcid: 0009-0008-8491-2467
+  responsible_maintainers:
+  - Brice Pouly
+  license: Apache-2.0
+repository:
+  role: substantive-development
+classification:
+  arxiv:
+  - math.PR
+sources:
+- title: Sharp Poisson approximation and second-order correction for long multiplicative runs, version
+    1.7 draft
+  authors:
+  - Brice Pouly
+  id: https://github.com/Vulkin-prog/paper-p1-lean
+  type: paper
+  relationship: formalizes
+  location: Main lemma 20.1, main_sections/limits_appendix.tex; Realize the positional target by independent
+    arrivals in the unnumbered version 1.7 companion formalization appendix; exact reference-field refinements
+    P1-MATH-0993 through P1-MATH-0996.
+  note: The four selected statements concern the explicit canonical finite product reference law. Marginals
+    allow arbitrary finite packets and heterogeneous intensities. The covariance, pair-independence and
+    complete-block statements require pair packets; the block criterion requires disjoint blocks. All
+    zero rates are included. The original arithmetic weighted approximation, grid and exponent are qualified
+    separately by positional_field. The present family packages proved reference-field structure and adds
+    no new mathematical-change finding or numbered statement.
+automation:
+  methods:
+  - method: agent
+    framework: Codex
+    models:
+    - OpenAI Codex agents
+    prompting_notes: Expose compensated single rates, independent packet arrivals, their genuine finite
+      product measure, natural-valued coordinates and complete blocks using Mathlib-only definitions.
+      Connect these exact objects to the substantive P1 proofs through eight checked bridges. Preserve
+      every rate assumption, heterogeneous intensity, integrability assertion and zero-rate case; distinguish
+      full-vector independence from pairwise independence.
+    tool_setup: Lean proof construction, native literal-model bridges, source-bound compilation and exact
+      axiom audit, standalone immutable exports and isolated independent checking.
+  notes: Agent assistance is not independent human peer review.
+review:
+  status: agent-reviewed
+  notes: 'Four explicit standalone statements and their complete Solution compile under Lean v4.36.0-rc2
+    with proof warnings as errors. All twelve bridge and theorem axioms passed the exact direct audit,
+    allowing only the three standard kernel axioms. Standalone exports passed exact statement comparison
+    and all six installed checkers: Lean default, Lean paranoid, lean4lean, NanoDa, verified con-leche
+    and verified con-ron with two jobs, with isolation enabled. The original source hashes, immutable
+    earlier proof base, binary hashes and logs are preserved. Frozen-root qualification and the complete
+    Palomar workflow are separate stages. Only the four selected Challenge statements have deliberate
+    holes.'
+status:
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms:
+  - propext
+  - Quot.sound
+  - Classical.choice
+  scope: 'Four selected declarations for the canonical finite product reference law: exact Poisson marginals
+    with integrable factorial tests of every natural order; complete pair covariance matrix; sharp natural-count
+    pair independence; and the full positive-rate dependency-graph criterion for disjoint natural-valued
+    blocks. The Solution has no proof holes. No registration is claimed.'
+fidelity:
+  divergences: A generic finite probability interpretation of the reference construction supporting main
+    lemma 20.1. The original homogeneous intensity and arithmetic rates are included when their compensated
+    single rates are nonnegative. Arbitrary packet marginals and heterogeneous intensities strengthen
+    the finite scope; the three other selected statements explicitly require pairs. The canonical product
+    law, rather than an unspecified probability law, is exposed directly. No independence of the original
+    arithmetic field or stronger arithmetic approximation is asserted.

@@ -128,3 +128,10 @@ moreLeanArgs = ["-DwarningAsError=false"]
 
 [[lean_lib]]
 name = "SolutionP1PositionalField"
+
+[[lean_lib]]
+name = "ChallengeP1PoissonReference"
+moreLeanArgs = ["-DwarningAsError=false"]
+
+[[lean_lib]]
+name = "SolutionP1PoissonReference"

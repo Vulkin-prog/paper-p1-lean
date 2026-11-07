@@ -133,3 +133,18 @@ checkers. The dedicated positional-field caller uses the same immutable full
 pipeline and standard profile, preserving the existing two callers. Actual
 human relationship confirmation and the subsequent Palomar stages remain
 separate from these local checks.
+
+
+A seventeenth [Poisson-reference candidate](../palomar/v1/poisson_reference/formalization.yaml)
+packages four exact statements for the explicit finite product reference law:
+Poisson marginals and all integrable factorial tests; the complete pair
+covariance matrix; natural-count pair independence; and genuine full-block
+independence exactly when no positive-rate edge crosses between disjoint
+blocks. Its eight exact bridges and four selected proofs passed the direct
+axiom audit and all six local checkers on immutable standalone exports.
+Frozen-root qualification is pending. This packages checkpoints 993--996
+and adds no mathematical-change entry. The two earlier workflow callers
+remain unchanged; the third positional caller selects the two reference
+families. The pending human-relationship question for the original fifteen
+configurations at source 0a9d3e68a8af39b6ea1ce725027f72ca5f10e8c4 retains
+its exact scope. No complete Palomar workflow or registration is claimed.

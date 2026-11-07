@@ -178,3 +178,18 @@ identify each site with Poisson(p_x), for arbitrary finite packets and every
 independent realization, without an ambient configuration countability input.
 Every factorial test is integrable with expectation p_x^j. The original
 arithmetic approximation retains its exponent and fixed-degree scope. Its complete replay passed; [the source-bound logs](docs/validation/checkpoint-0993/validation.json) preserve all three checks. The clarification is integrated in the revised companion appendix.
+
+
+A seventeenth [Poisson-reference candidate](palomar/v1/poisson_reference/formalization.yaml)
+packages four exact statements for the explicit finite product reference law:
+Poisson marginals and all integrable factorial tests; the complete pair
+covariance matrix; natural-count pair independence; and genuine full-block
+independence exactly when no positive-rate edge crosses between disjoint
+blocks. Its eight exact bridges and four selected proofs passed the direct
+axiom audit and all six local checkers on immutable standalone exports.
+Frozen-root qualification is pending. This packages checkpoints 993--996
+and adds no mathematical-change entry. The two earlier workflow callers
+remain unchanged; the third positional caller selects the two reference
+families. The pending human-relationship question for the original fifteen
+configurations at source 0a9d3e68a8af39b6ea1ce725027f72ca5f10e8c4 retains
+its exact scope. No complete Palomar workflow or registration is claimed.
