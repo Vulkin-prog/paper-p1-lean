@@ -86,5 +86,6 @@
   },
   "log_path": "palomar/v1/supplementary/prime_cylinders-draft-six-kernels.log.gz",
   "compressed_log_sha256": "9ee02fc940099bc257f309465386e64aed676df0b9c1d88fc8b41db114996cc6",
-  "scope": "Standalone immutable exports and six-checker replay at the stated earlier proof base. Module bytes match the prepared root candidate. Frozen-root qualification, full Palomar workflow, editorial review and registration remain separate."
+  "scope": "Standalone immutable exports and six-checker replay at the stated earlier proof base. Module bytes are identical to the later frozen-root qualification sources. Root Lean/NanoDa qualification and verified con-ron replay are preserved separately. Full Palomar workflow, editorial review and registration remain separate.",
+  "root_qualification_source_commit": "0a9d3e68a8af39b6ea1ce725027f72ca5f10e8c4"
 }

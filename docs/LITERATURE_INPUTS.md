@@ -11,8 +11,10 @@ The full replay passed 18,577 build jobs, 19,598 theorem axiom checks and
 19,759 distinct declaration references, all with actual exit 0. The
 refinement is integrated in the revised companion appendix, with all
 166 PDF pages rebuilt and reviewed. All 167 revised statements and the
-original t>2 theorem are preserved. Fourteen registry families with
-57 selections remain locally qualified; no registration is claimed.
+original t>2 theorem are preserved. Fifteen registry families with
+61 selections are locally qualified; their complete project extension
+passed 18,579 build jobs and 19,611 theorem axiom checks at source
+0a9d3e68a8af39b6ea1ce725027f72ca5f10e8c4; no registration is claimed.
 
 Historical checkpoint P1-MATH-0990: The complete even-valuation retained
 set has an exact finite layer cover at depth k=(Nat.clog q N+1)/2.

@@ -1,12 +1,12 @@
 # P1 candidate registration interfaces
 
-All fourteen independently meaningful families below have passed local statement
+All fifteen independently meaningful families below have passed local statement
 comparison and both Lean and NanoDa with bubblewrap isolation enabled. They
-select **57 declarations**, separately from the complete **167-result revised
+select **61 declarations**, separately from the complete **167-result revised
 manuscript correspondence**. Their immutable local receipts and original
 compressed logs preserve exactly what was checked.
 
-All fourteen also passed supplementary con-ron, NanoDa and Lean replays. Their
+All fifteen also passed supplementary con-ron, NanoDa and Lean replays. Their
 [separate reports and controls](supplementary/README.md) preserve each exact
 source and original log without changing the standard submission configurations.
 
@@ -29,13 +29,14 @@ Two larger representative families also passed the three optional checkers.
 | Exact finite affine spectra and canonical factorization | 4 | [configuration](../../comparator/p1_affine_spectra.json) | [metadata](affine_spectra/formalization.yaml), [passed local comparison and both kernels](affine_spectra/qualification.json) |
 | Actual exponential-moment divergence for multiplicative starts | 4 | [configuration](../../comparator/p1_exponential_divergence.json) | [metadata](exponential_divergence/formalization.yaml), [passed local comparison and both kernels](exponential_divergence/qualification.json) |
 | Uniform local arithmetic rigidity and relative-sign independence | 5 | [configuration](../../comparator/p1_local_rigidity.json) | [metadata](local_rigidity/formalization.yaml), [passed local comparison and both kernels](local_rigidity/qualification.json) |
+| Effective valuation cylinders and affine-rank moment bounds | 4 | [configuration](../../comparator/p1_prime_cylinders.json) | [metadata](prime_cylinders/formalization.yaml), [passed local comparison and both kernels](prime_cylinders/qualification.json) |
 
 Each configuration names its standalone Mathlib-only Challenge and complete
 Solution. Only the exact selected Challenge statements have deliberate proof
 holes. No substantive proof, Solution or axiom audit imports a Challenge. The
 current community v0.4 metadata schema is checked separately.
 
-The latest whole-project replay passed **18,577 build jobs** and **19,598 theorem
+The latest whole-project replay passed **18,579 build jobs** and **19,611 theorem
 axiom checks**. Earlier receipts retain their own historical source inventories.
 The local [evidence checker](../../scripts/check_registry_evidence.py) validates
 their hashes, exact source files, imported project proofs, actual export and
@@ -53,7 +54,7 @@ registration are separate stages. No submission or registry entry is claimed.
 
 The separate [additional-family workflow](../../.github/workflows/palomar-preflight-additional.yml)
 selects factorial cumulants, the moment obstruction, dependent expansions and
-integral-curve counts, finite affine spectra, exponential-moment divergence and local rigidity. The original
+integral-curve counts, finite affine spectra, exponential-moment divergence, local rigidity and finite valuation cylinders. The original
 caller continues to select exactly its seven original families. Both require
 an exact source commit and the confirmed supported human relationship.
 
@@ -62,4 +63,4 @@ b9fa9ba490f201b408a302a86f1594ee620b228b. Its Lean 4.34 tools are not reused.
 Model ports retain their precise licence and source attribution. See the
 [preparation plan](../../docs/PALOMAR_PLAN.md) for the current procedure.
 
-A fifteenth [finite valuation-cylinder candidate](prime_cylinders/formalization.yaml) has four explicit statements and thirteen audited theorem/bridge proofs. The standalone exports passed all six checkers at the stated earlier proof base. Its [source and checker report](supplementary/prime-cylinders-draft-checks.json) is preserved; frozen-root qualification remains pending.
+The finite valuation-cylinder family preserves four literal statements and thirteen audited theorem/bridge proofs. Its frozen-root qualification and verified con-ron replay passed. The [standalone six-checker report](supplementary/prime-cylinders-draft-checks.json) retains its actual earlier proof base and byte-identical module sources.

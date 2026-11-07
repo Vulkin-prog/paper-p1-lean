@@ -1,0 +1,31 @@
+{
+  "stage": "fifteen-family full-project replay",
+  "source_commit": "0a9d3e68a8af39b6ea1ce725027f72ca5f10e8c4",
+  "status": "passed",
+  "full_build_jobs": 18579,
+  "audited_theorems": 19611,
+  "distinct_checked_references": 19759,
+  "actual_process_exit_codes": {
+    "build": 0,
+    "audit": 0,
+    "references": 0
+  },
+  "logs": [
+    {
+      "kind": "build",
+      "path": "docs/validation/registry-prime-cylinders/build.log.gz",
+      "sha256_gzip": "d7764c57b8814efed33899e42bec139456a50e33a4355ab09b859640ee30bbf6"
+    },
+    {
+      "kind": "audit",
+      "path": "docs/validation/registry-prime-cylinders/audit.log.gz",
+      "sha256_gzip": "ca6366f15b13fe07ba7f282ce702041b42d99db63d4bc34dbad9dbec54e0f74e"
+    },
+    {
+      "kind": "references",
+      "path": "docs/validation/registry-prime-cylinders/references.log.gz",
+      "sha256_gzip": "33410d498e2f26769b333981398f4c51aece06a5f47a2f4c7d579054970cbd0d"
+    }
+  ],
+  "scope": "Complete project replay with all fifteen Solutions. The fourteen earlier receipts retain their own source inventories, all 167 revised statements remain proved, and every original numbered statement block is preserved. No full Palomar workflow or registration is claimed."
+}

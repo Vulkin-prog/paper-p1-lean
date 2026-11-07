@@ -1,5 +1,5 @@
 {
-  "source_commit": "57835da7813e314367f689312af436f9ae62e869",
+  "source_commit": "0a9d3e68a8af39b6ea1ce725027f72ca5f10e8c4",
   "validator_commit": "14aa8d6b3c2f14a8540605e37144560b9a00e7e7",
   "community_schema_sha256": "25ff6b25ca4511635aff4443cf20480c15e59dddf19591c730950b442ea54fce",
   "files": [
@@ -70,6 +70,13 @@
       "family": "poisson_scales",
       "path": "palomar/v1/poisson_scales/formalization.yaml",
       "sha256": "745e004c13a94c61e4c2dd38efc7bf2167ba2a056c684227636fb76eb5e4b3a2",
+      "community_v04_schema_passed": true,
+      "palomar_metadata_minimum_passed": true
+    },
+    {
+      "family": "prime_cylinders",
+      "path": "palomar/v1/prime_cylinders/formalization.yaml",
+      "sha256": "e099537af68ecaae43099757e0ec34e653f8be0c6f4e06d96d6dc76140ca9e58",
       "community_v04_schema_passed": true,
       "palomar_metadata_minimum_passed": true
     },

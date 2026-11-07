@@ -87,15 +87,15 @@ then invokes Lean's own axiom report for each declaration. Only `propext`,
 Standalone registry Challenges have only the deliberate selected statement
 holes and are never imported by the proof development or its audit.
 
-The latest complete project replay with all fourteen candidate families passed
-**18,577 build jobs** and **19,598 theorem axiom checks**. Each mathematical
+The latest complete project replay with all fifteen candidate families passed
+**18,579 build jobs** and **19,611 theorem axiom checks**. Each mathematical
 checkpoint and registry replay records its own exact source commit and scope.
 The [evidence checker](scripts/check_registry_evidence.py) validates every
 preserved receipt against its historical inventory and current proof imports.
 
 ## Palomar preparation
 
-Fourteen selected families have passed local statement comparison and both Lean and
+Fifteen selected families have passed local statement comparison and both Lean and
 NanoDa, with bubblewrap isolation enabled:
 
 | Family | Selected declarations | Local evidence |
@@ -114,8 +114,9 @@ NanoDa, with bubblewrap isolation enabled:
 | Exact finite affine spectra and canonical factorization | 4 | [Receipt](palomar/v1/affine_spectra/qualification.json) |
 | Actual exponential-moment divergence for multiplicative starts | 4 | [Receipt](palomar/v1/exponential_divergence/qualification.json) |
 | Uniform local arithmetic rigidity and relative-sign independence | 5 | [Receipt](palomar/v1/local_rigidity/qualification.json) |
+| Effective valuation cylinders and affine-rank moment bounds | 4 | [Receipt](palomar/v1/prime_cylinders/qualification.json) |
 
-All 57 selected declarations also passed supplementary replays with verified
+All 61 selected declarations also passed supplementary replays with verified
 con-ron, Lean and NanoDa. The [source-bound reports](palomar/v1/supplementary/README.md)
 preserve the actual logs, binary identities and positive/ill-typed controls.
 
@@ -124,6 +125,8 @@ The finite-affine family also passed [all six available local checkers](palomar/
 The exponential-moment family has four literal-model statements with explicit integrability, prime thresholds, a nontrivial odd-prime liminf and simultaneous divergence at nominal mean one. Its [standalone six-checker report](palomar/v1/supplementary/exponential-divergence-draft-checks.json) retains its exact earlier proof base; root qualification and the con-ron replay have their own immutable source.
 
 The local-rigidity family now has its source-bound root qualification and con-ron replay. Its separately scoped [standalone six-checker report](palomar/v1/supplementary/local-rigidity-draft-checks.json) preserves all five statements, 13 audited theorem/bridge declarations and the earlier proof base.
+
+The finite valuation-cylinder family has four literal-model statements, its frozen-root Lean/NanoDa qualification and a verified con-ron replay. Its separately scoped [standalone six-checker report](palomar/v1/supplementary/prime-cylinders-draft-checks.json) preserves thirteen direct theorem/bridge audits and the exact earlier proof base.
 
 The [candidate interfaces](palomar/v1/README.md) link each standalone Mathlib-only
 Challenge, complete Solution, Comparator configuration, metadata and preserved
@@ -148,5 +151,3 @@ its exact source attribution and was rebuilt with the new compiler. Manuscript
 provenance and authorship remain in the manuscript packages. Agent assistance
 and review are disclosed in the manuscript and candidate metadata; they do not
 constitute independent human peer review.
-
-The [finite valuation-cylinder candidate](palomar/v1/prime_cylinders/formalization.yaml) adds four literal-model statements and thirteen audited theorem/bridge proofs. Its standalone exports passed all six installed checkers at the preserved earlier proof base; frozen-root qualification is pending.
