@@ -4936,3 +4936,4 @@ public import PaperP1.Asymptotics.IndependentPositionalApproximation
 public import PaperP1.Probability.PositionalArrivalMarginals
 public import PaperP1.Probability.PositionalArrivalCovariance
 public import PaperP1.Probability.PositionalArrivalIndependence
+public import PaperP1.Probability.PositionalBlockIndependence

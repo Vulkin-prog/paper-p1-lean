@@ -1,6 +1,19 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0995: Two actual reference coordinates are
+Current checkpoint P1-MATH-0996: Complete finite reference-coordinate
+blocks are independent exactly when all cross covariances vanish. For
+disjoint blocks in a pair family this is equivalent to absence of a
+crossing positive-rate retained edge, proving the full dependency-graph
+property. Actual natural-valued block vectors, arbitrary finite packets,
+zero rates, the canonical product law and measurable event factorization
+are covered. The original arithmetic comparison and all 167 numbered
+statements are preserved. Eighteen theorems and three definitions passed
+direct Lean and exact permitted-axiom checks. Full project replay and
+manuscript integration of this clarification are pending. Sixteen registry
+families with 64 selections remain locally qualified; no registration is
+claimed.
+
+Historical checkpoint P1-MATH-0995: Two actual reference coordinates are
 independent exactly when their shared Poisson intensity is zero. For pairs,
 dependence occurs precisely on retained edges with strictly positive rate;
 zero-rate edges leave the coordinates independent. Natural-valued counts,

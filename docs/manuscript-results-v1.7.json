@@ -9009,7 +9009,28 @@
         "PaperP1.PositionalArrivalIndependence.independent_count_coordinates_iff",
         "PaperP1.PositionalArrivalIndependence.independent_pair_counts_iff",
         "PaperP1.PositionalArrivalIndependence.independent_canonical_distinct_iff",
-        "PaperP1.PositionalArrivalIndependence.dependent_pair_coordinates_iff"
+        "PaperP1.PositionalArrivalIndependence.dependent_pair_coordinates_iff",
+        "PaperP1.PositionalBlockIndependence.zeroFill",
+        "PaperP1.PositionalBlockIndependence.measurable_zeroFill",
+        "PaperP1.PositionalBlockIndependence.tuple_eq_zeroFill",
+        "PaperP1.PositionalBlockIndependence.independent_tuples_of_shared_zero",
+        "PaperP1.PositionalBlockIndependence.independent_tuples_iff",
+        "PaperP1.PositionalBlockIndependence.collect",
+        "PaperP1.PositionalBlockIndependence.measurable_collect",
+        "PaperP1.PositionalBlockIndependence.collect_tuple",
+        "PaperP1.PositionalBlockIndependence.shared_union_zero_iff",
+        "PaperP1.PositionalBlockIndependence.independent_sum_blocks_iff",
+        "PaperP1.PositionalBlockIndependence.independent_sum_blocks_iff_pairwise",
+        "PaperP1.PositionalBlockIndependence.block",
+        "PaperP1.PositionalBlockIndependence.block_eq_sums",
+        "PaperP1.PositionalBlockIndependence.independent_blocks_iff_cross_covariance_zero",
+        "PaperP1.PositionalBlockIndependence.independent_blocks_iff_pairwise",
+        "PaperP1.PositionalBlockIndependence.independent_pair_blocks_iff",
+        "PaperP1.PositionalBlockIndependence.independent_pair_blocks_iff_cross_rates_zero",
+        "PaperP1.PositionalBlockIndependence.independent_pair_blocks_of_no_edges",
+        "PaperP1.PositionalBlockIndependence.independent_canonical_pair_blocks_iff",
+        "PaperP1.PositionalBlockIndependence.independent_pair_block_events",
+        "PaperP1.PositionalBlockIndependence.independent_pair_blocks_iff_no_positive_crossing"
       ],
       "remaining_unformalized_inputs": [],
       "canonical_statement": "PaperP1.PositionalGridApproximation.main_20_1",
@@ -9064,6 +9085,14 @@
           "scope": "Two finite sums of mutually independent Poisson cells are independent if and only if the total rate of their shared cells is zero. The proof covers both natural-valued counts and their real-valued versions, including all zero-rate cells. Consequently two distinct actual reference coordinates for arbitrary finite packets are independent exactly when their shared packet intensity is zero. In a pair family, dependence occurs exactly on the retained edges with strictly positive rate; an absent edge or a zero-rate retained edge gives independence. A reference coordinate is independent of itself exactly when its original intensity is zero. Every statement holds for any independent realization and the canonical product law, without ambient countable-configuration assumptions. These are identities of the reference Poisson construction, not a general zero-covariance criterion or an assertion about independence in the original arithmetic model.",
           "validation_source_commit": "5d76e8c2ea7f8b3b4eb810c56db23330b3f0499b",
           "validation_record": "docs/validation/checkpoint-0995/validation.json"
+        },
+        {
+          "checkpoint": "P1-MATH-0996",
+          "kind": "exact_reference_block_independence",
+          "canonical_statement": "PaperP1.PositionalBlockIndependence.independent_blocks_iff_cross_covariance_zero",
+          "canonical_additional_statement": "PaperP1.PositionalBlockIndependence.independent_pair_blocks_iff_no_positive_crossing",
+          "validation": "Eighteen theorems and three definitions passed direct Lean v4.36.0-rc2 compilation with proof warnings as errors and exact permitted-axiom checks. Whole-project replay and manuscript integration are pending.",
+          "scope": "Two complete finite blocks of actual Poisson reference counts are independent if and only if every cross covariance vanishes, for arbitrary finite packets and even overlapping blocks with possible zero rates. The proof constructs each whole vector as a measurable function of its finite arrival tuple, removes all shared zero-rate cells almost everywhere, and proves independence of the remaining tuples. For disjoint blocks in a pair family, independence is equivalent to every retained crossing pair rate being zero, or equivalently to absence of a crossing positive-rate retained edge. Thus the positive-rate pair graph satisfies the full dependency-graph condition. The canonical product realization and factorization of all measurable block-event probabilities are covered. No ambient countability or measurable-configuration hypothesis is used. These properties concern the reference field; no independence of arithmetic blocks or new arithmetic approximation rate is asserted."
         }
       ]
     },

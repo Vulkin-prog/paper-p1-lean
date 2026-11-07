@@ -3,7 +3,7 @@
 *Sharp Poisson approximation and second-order correction for long multiplicative
 runs*, and its technical companion, by [Brice Pouly](https://orcid.org/0009-0008-8491-2467).
 
-Current checkpoint P1-MATH-0995: all **167 revised numbered statements** have
+Current checkpoint P1-MATH-0996: all **167 revised numbered statements** have
 checked proofs, using **Lean v4.36.0-rc2**, with no unformalized mathematical
 input. This comprises all 73 main-article and all 94 revised companion results.
 The separate version 1.7 manuscript draft integrates the two necessary statement
@@ -35,7 +35,7 @@ bytes and checked counterexamples are preserved. Their corrected replacements
 are proved and integrated in version 1.7. T19.17 is proved with both original
 coefficients and without an external smooth-number premise.
 
-The ledger records **993 confirmed mathematical improvements and two statement-scope corrections**.
+The ledger records **994 confirmed mathematical improvements and two statement-scope corrections**.
 Proof substitutions, exact parameter ranges and the scope of stronger
 unasserted analytic or geometric results are documented in the source revision.
 
@@ -69,6 +69,8 @@ The [independent positional realization](docs/INDEPENDENT_POSITIONAL_REALIZATION
 The [exact reference covariance](docs/POSITIONAL_ARRIVAL_COVARIANCE.md) identifies the complete pair covariance matrix and the arbitrary finite-packet formula for every independent realization, including the concrete product law. Its complete replay passed; [the source-bound logs](docs/validation/checkpoint-0994/validation.json) preserve all three checks. The clarification is integrated in the revised companion appendix.
 
 The [exact reference independence criterion](docs/POSITIONAL_ARRIVAL_INDEPENDENCE.md) proves that two reference coordinates are independent exactly when their shared arrival intensity vanishes. For pairs, the positive-rate retained edges give precisely the dependence graph, including natural counts and zero-rate cases. Its complete replay passed; [the source-bound logs](docs/validation/checkpoint-0995/validation.json) preserve all three checks. The clarification is integrated in the revised companion appendix.
+
+The [full reference block independence](docs/POSITIONAL_BLOCK_INDEPENDENCE.md) proves independence of complete finite coordinate vectors exactly when every cross covariance vanishes. For pairs it establishes the full dependency-graph property of positive-rate retained edges and measurable block-event factorization. All twenty-one new declarations passed direct compilation and axiom checks; whole-project replay and manuscript integration are pending.
 
 ## Build and verification
 
