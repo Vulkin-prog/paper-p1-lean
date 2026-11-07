@@ -1,13 +1,25 @@
 # Mathematical corrections and improvements
 
-Current checkpoint P1-MATH-1001: The nominal replica identity is exposed
+Current checkpoint P1-MATH-1002: The complete dense-primitive-triple
+statement now has a single exact interface for its homogeneous mass,
+host count and actual centered activity. All primitive triples have an
+actual homogeneous point probability O_C(N^-2); the proved dense host
+count yields total homogeneous mass N^(-2+epsilon), including irregular
+windows and zero original affine marginals. The four prototypes compiled
+without warnings; the complete project replay is pending. No regularity,
+affine compatibility or target mass bound is assumed. The frozen v1.8
+sources, all 167 numbered identities and the six registration scopes
+remain preserved. Palomar submissions remain on hold at the user's request.
+
+Historical checkpoint P1-MATH-1001: The nominal replica identity is exposed
 for the actual infinite-prime run events at arbitrary, possibly repeated
 occurrence centers. The factor p^r uses the kernel of the full colored
 formal row-relation map, including internal local relations. The separate
 effective-relative-kernel identity retains every actual heterogeneous
 marginal. No regularity assumption is imposed on either new general
-interface. The four prototypes compiled with actual exit zero; the
-complete project replay is pending. The 167 numbered statements and
+interface. The complete pinned replay passed 18,623 build jobs,
+19,971 theorem axiom checks and 19,894 distinct reference checks, with
+all three actual exits zero. The 167 numbered statements and
 frozen v1.8 TeX/PDF bytes are preserved. Palomar remains on hold at the
 user's request.
 

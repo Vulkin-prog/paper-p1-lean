@@ -43200,6 +43200,40 @@
         "status": "pending_validation",
         "reason": "Keep the delivered v1.8 source/PDF snapshot unchanged; clarify raw versus effective kernels through exact proof interfaces."
       }
+    },
+    {
+      "id": "P1-MATH-1002",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.8 working draft",
+        "document": "companion",
+        "label": "p13:conf:dense-primitive",
+        "source": "companion_sections/confinement.tex",
+        "line": 191,
+        "statement_sha256": "ff492c29ca556e863681d36f4ccffc4abb8f6fa8ebac9dd03e98e106d52f4202"
+      },
+      "original_assumption": "The existing named dense-triple endpoint explicitly controls host count, mass using actual original affine marginals, and centered activity. The printed homogeneous mass is a different object at irregular or originally incompatible windows; its proof uses closed local caps, exact homogeneous factorization and primitive relative nullity.",
+      "finding": "Assemble a direct unconditional interface for the true homogeneous probability, including irregular windows. Each primitive triple has probability at most K_C/N^2 with K_C=8*(2^C)^4. The independently proved N^epsilon dense host count and fixed constant absorption give the printed total homogeneous mass. The final companion_T8_2 contains all three printed clauses under one common threshold.",
+      "evidence": [
+        "PaperP1.DensePrimitiveHomogeneousMass.two_pow_upper",
+        "PaperP1.DensePrimitiveHomogeneousMass.uniform_point_bound",
+        "PaperP1.DensePrimitiveHomogeneousMass.uniform_mass",
+        "PaperP1.DensePrimitiveHomogeneousMass.companion_T8_2"
+      ],
+      "proposed_revision": "Use DensePrimitiveHomogeneousMass.companion_T8_2 as the exact full companion T8.2 endpoint. Preserve the distinction between original affine p_x-weight mass, nominal p^3*2^rho weight, and actual homogeneous event probability. No source statement edit is necessary.",
+      "impact": "Exact proof-scope assembly, not a new exponent beyond the printed theorem. No regularity, affine compatibility, nonzero actual marginals or homogeneous target bound occurs as an assumption. All 167 numbered statements, their frozen source bytes and the six registration selections are preserved.",
+      "validation": {
+        "status": "pending_full_project_replay",
+        "prototype_actual_exit_code": 0,
+        "prototype_warnings": 0,
+        "toolchain": "leanprover/lean4:v4.36.0-rc2"
+      },
+      "manuscript_integration": {
+        "target_version": "P1 V1.8 proof correspondence supplement",
+        "status": "pending_validation",
+        "reason": "The printed statement is unchanged; its homogeneous clause is now explicitly assembled over the actual homogeneous event law."
+      }
     }
   ]
 }
