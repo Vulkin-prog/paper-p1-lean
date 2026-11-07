@@ -1,6 +1,19 @@
 # Mathematical corrections and improvements
 
-Current checkpoint P1-MATH-1004: A common homogeneous envelope now
+Current checkpoint P1-MATH-1005: Four explicit positive Palm interfaces
+compose the actual positive-excess support inclusion with the existing
+homogeneous effective 41/30 mass. On regular targets, each fixed interior
+channel has normalized power -11/30-1/b, including -7/10 for 2:3 and
+-37/60 for 3:4, with positive beta and the source cutoff 2bB<=H<=DB.
+All fixed parameters precede the common scale threshold. The target
+module compiled successfully under the pinned compiler (12,201 jobs).
+The complete project replay and frozen independent compiled-type review
+are pending. No printed statement, prior manuscript or registry scope
+has changed. The common seed proof may shorten T3.1 while preserving its
+old weaker printed estimates; no new geometric assumption is introduced.
+Palomar stays on hold.
+
+Historical checkpoint P1-MATH-1004: A common homogeneous envelope now
 exposes the fixed-arity global power N^(-r/2+epsilon) and dense power
 N^(1-r+epsilon), including irregular windows and zero original marginals.
 Exact finite factorization gives at most 2^r times the nominal rank

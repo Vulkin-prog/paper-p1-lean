@@ -4946,3 +4946,4 @@ public import PaperP1.Model.NominalRunReplicaFormula
 public import PaperP1.Asymptotics.DensePrimitiveHomogeneousMass
 public import PaperP1.Model.IrregularWindowExamples
 public import PaperP1.Asymptotics.FixedArityHomogeneousMass
+public import PaperP1.Asymptotics.SharpGoodEdgePositivePalm

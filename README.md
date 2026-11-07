@@ -40,6 +40,11 @@ The [editorial integrity gate](docs/validation/editorial-preview-integrity/READM
 checks the exact reviewed patch chain, delivered artifacts and complete result
 bundles in CI, with 29 in-memory controls.
 
+A new sharp positive Palm bridge compiles locally and exposes the normalized
+powers 7/10 and 37/60 in the two retained channels. Its complete pinned replay
+and independent compiled-type review are pending; the completed status below
+remains checkpoint 1004. Existing manuscript copies and registry scopes stay frozen.
+
 The [latest strengthened review copy](docs/editorial-proposals/2026-11-07/scientific-strengthening/README.md)
 also exposes existing sharper bounds in T9.1, T1.14 and T4.4, with an explicit
 positive homogeneous one-target argument and a separate logarithmic-exponent note.
