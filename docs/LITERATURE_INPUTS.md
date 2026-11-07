@@ -1,6 +1,19 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0992: The positional compound target is
+Current checkpoint P1-MATH-0993: Every site of the compensated Poisson
+reference field has exactly the original Poisson parameter p_x. This is
+proved for every independent realization and the concrete product law,
+with arbitrary finite packets and no countability hypothesis on the
+ambient configuration space. Every factorial test is integrable and its
+order-j expectation is p_x^j. These are exact reference-field identities;
+the original arithmetic field, exponent 4/5 and fixed-degree asymptotic
+regime are preserved. Twelve theorems and one definition passed direct
+Lean and exact permitted-axiom checks. Full project replay and manuscript
+integration of this clarification are pending. All 167 revised numbered
+statements remain proved. Sixteen registry families with 64 selections
+remain locally qualified; no registration is claimed.
+
+Historical checkpoint P1-MATH-0992: The positional compound target is
 exactly the law of independent single/pair Poisson arrivals. A concrete
 finite product law supplies the arrivals, and each coordinate is its own
 arrival plus the incident edge arrivals. Every independent realization

@@ -3,7 +3,7 @@
 *Sharp Poisson approximation and second-order correction for long multiplicative
 runs*, and its technical companion, by [Brice Pouly](https://orcid.org/0009-0008-8491-2467).
 
-Current checkpoint P1-MATH-0992: all **167 revised numbered statements** have
+Current checkpoint P1-MATH-0993: all **167 revised numbered statements** have
 checked proofs, using **Lean v4.36.0-rc2**, with no unformalized mathematical
 input. This comprises all 73 main-article and all 94 revised companion results.
 The separate version 1.7 manuscript draft integrates the two necessary statement
@@ -35,7 +35,7 @@ bytes and checked counterexamples are preserved. Their corrected replacements
 are proved and integrated in version 1.7. T19.17 is proved with both original
 coefficients and without an external smooth-number premise.
 
-The ledger records **990 confirmed mathematical improvements and two statement-scope corrections**.
+The ledger records **991 confirmed mathematical improvements and two statement-scope corrections**.
 Proof substitutions, exact parameter ranges and the scope of stronger
 unasserted analytic or geometric results are documented in the source revision.
 
@@ -165,3 +165,12 @@ and verified con-ron replay passed. The separately scoped
 preserves twelve direct proof audits and the exact earlier proof base. The
 original two workflow callers are preserved; a separate caller selects this
 family. The original exponent 4/5 and all 167 numbered statements are unchanged.
+
+
+The [exact reference-arrival marginals](docs/POSITIONAL_ARRIVAL_MARGINALS.md)
+identify each site with Poisson(p_x), for arbitrary finite packets and every
+independent realization, without an ambient configuration countability input.
+Every factorial test is integrable with expectation p_x^j. The original
+arithmetic approximation retains its exponent and fixed-degree scope. All
+thirteen new declarations passed direct compilation and axiom checks;
+whole-project replay and manuscript integration are pending.

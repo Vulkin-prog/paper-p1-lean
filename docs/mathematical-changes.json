@@ -42638,6 +42638,49 @@
       },
       "validation_source_commit": "e6feba8adcf77e204dce8517622ea731da0dacc4",
       "validation_record": "docs/validation/checkpoint-0992/validation.json"
+    },
+    {
+      "id": "P1-MATH-0993",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p1:limits:vector-reference",
+        "number": "20.1",
+        "page": 60,
+        "source": "main_sections/limits_appendix.tex",
+        "line": 45,
+        "statement_sha256": "fd15ebe1159f165a714eb5337648229bacb982d63e0d76c87f983cdeaf06f6a4"
+      },
+      "original_assumption": "The original positional reference is described by independent single and pair arrivals with compensation of the incident rates. Its exact coordinate laws and unbounded factorial tests were not yet connected directly to arbitrary independent realizations.",
+      "finding": "For any finite ground and arbitrary finite packet family with nonnegative compensated single rates and packet rates, each original site of every independent Poisson arrival realization has exactly a Poisson marginal of parameter p_x. The sum of the actual observed arrival rates is proved equal to p_x, and the canonical product realization has the same marginal. No countability or measurable-space hypothesis on the ambient configuration space is required. For every natural order j, the actual factorial test is integrable and its expectation is exactly p_x^j. These identities concern the reference arrival field. The original arithmetic indicators, their approximation exponent 4/5 and the fixed-degree order of the asymptotic comparison are preserved.",
+      "proposed_revision": "State the exact Poisson marginal of each reference coordinate and its integrable factorial moments, with the finite-packet generality and without an ambient countable-configuration hypothesis.",
+      "impact": "Makes the single-site probability interpretation and all finite factorial expectations exact at the level of actual random variables. The finite statement generalizes from pairs to arbitrary packets, and the arithmetic approximation retains its original scope.",
+      "evidence": [
+        "PaperP1.PositionalArrivalMarginals.coordinate_factorial_moment",
+        "PaperP1.PositionalArrivalMarginals.coordinate_sum",
+        "PaperP1.PositionalArrivalMarginals.factorial_moment_of_hasLaw",
+        "PaperP1.PositionalArrivalMarginals.hasLaw_canonical_coordinate",
+        "PaperP1.PositionalArrivalMarginals.hasLaw_coordinate",
+        "PaperP1.PositionalArrivalMarginals.hasLaw_selected_sum",
+        "PaperP1.PositionalArrivalMarginals.hasLaw_sum",
+        "PaperP1.PositionalArrivalMarginals.integrable_poisson_factorial",
+        "PaperP1.PositionalArrivalMarginals.integral_poisson_factorial",
+        "PaperP1.PositionalArrivalMarginals.observedCells",
+        "PaperP1.PositionalArrivalMarginals.poisson_zero",
+        "PaperP1.PositionalArrivalMarginals.rate_sum_observed",
+        "PaperP1.PositionalArrivalMarginals.sum_observed"
+      ],
+      "validation": "All twelve new theorems and the observed-cell definition passed direct Lean v4.36.0-rc2 compilation and exact axiom audit with warnings as errors. Only propext, Classical.choice and Quot.sound occur. Whole-project replay and manuscript integration are pending.",
+      "integration": {
+        "target": "P1 V1.7 draft",
+        "status": "not_integrated",
+        "numbered_statements_changed": false,
+        "source": "manuscripts/paper-p1/v1.7/sources/formalization.tex",
+        "paragraph": "Realize the positional target by independent arrivals",
+        "pdf_validation": "docs/manuscript-v1.7-validation.json"
+      }
     }
   ]
 }

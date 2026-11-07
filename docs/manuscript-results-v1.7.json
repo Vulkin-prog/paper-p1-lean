@@ -8959,7 +8959,20 @@
         "PaperP1.PositionalPoissonRealization.grid_probability_of_hasLaw",
         "PaperP1.PositionalPoissonRealization.hasLaw_canonical_single_pair_field",
         "PaperP1.IndependentPositionalApproximation.main_20_1",
-        "PaperP1.IndependentPositionalApproximation.main_20_1_canonical"
+        "PaperP1.IndependentPositionalApproximation.main_20_1_canonical",
+        "PaperP1.PositionalArrivalMarginals.coordinate_factorial_moment",
+        "PaperP1.PositionalArrivalMarginals.coordinate_sum",
+        "PaperP1.PositionalArrivalMarginals.factorial_moment_of_hasLaw",
+        "PaperP1.PositionalArrivalMarginals.hasLaw_canonical_coordinate",
+        "PaperP1.PositionalArrivalMarginals.hasLaw_coordinate",
+        "PaperP1.PositionalArrivalMarginals.hasLaw_selected_sum",
+        "PaperP1.PositionalArrivalMarginals.hasLaw_sum",
+        "PaperP1.PositionalArrivalMarginals.integrable_poisson_factorial",
+        "PaperP1.PositionalArrivalMarginals.integral_poisson_factorial",
+        "PaperP1.PositionalArrivalMarginals.observedCells",
+        "PaperP1.PositionalArrivalMarginals.poisson_zero",
+        "PaperP1.PositionalArrivalMarginals.rate_sum_observed",
+        "PaperP1.PositionalArrivalMarginals.sum_observed"
       ],
       "remaining_unformalized_inputs": [],
       "canonical_statement": "PaperP1.PositionalGridApproximation.main_20_1",
@@ -8968,7 +8981,9 @@
         "PaperP1.PositionalWeightedApproximation.uniform_coefficient_bound",
         "PaperP1.PositionalFullApproximation.uniform_probability_bound",
         "PaperP1.IndependentPositionalApproximation.main_20_1",
-        "PaperP1.IndependentPositionalApproximation.main_20_1_canonical"
+        "PaperP1.IndependentPositionalApproximation.main_20_1_canonical",
+        "PaperP1.PositionalArrivalMarginals.hasLaw_coordinate",
+        "PaperP1.PositionalArrivalMarginals.coordinate_factorial_moment"
       ],
       "validation": "Verified under Lean v4.36.0-rc2: full build passed (16121 jobs); direct axiom audit passed for 14976 declarations using only propext, Classical.choice and Quot.sound; all 14340 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.24 GiB.",
       "baseline_validation_commit": "b5932d824df1b6acebb7833186be2b15e3fa2099",
@@ -8982,6 +8997,14 @@
           "scope": "The completed positional single/pair target is exactly the law of a sum of independent Poisson arrivals with the original individual rates. A concrete finite product probability space supplies these variables; their marginal laws and mutual independence are proved. Each original site equals its own arrival plus the arrivals of its incident edges. Every independent realization has the same original-grid masses as the completed target. For every fixed polynomial degree, one threshold precedes all critical lengths, probability spaces and independent realizations; the literal original grid error series is summable and bounded by N^(-4/5+epsilon). The canonical product realization has the same convergent bound. The arithmetic good edges, individual joint rates, nominal single intensities and original exponent are unchanged. This identifies the probability interpretation of an already proved theorem; it does not add a new rate or numbered correction.",
           "validation_source_commit": "e6feba8adcf77e204dce8517622ea731da0dacc4",
           "validation_record": "docs/validation/checkpoint-0992/validation.json"
+        },
+        {
+          "checkpoint": "P1-MATH-0993",
+          "kind": "exact_reference_arrival_marginals",
+          "canonical_statement": "PaperP1.PositionalArrivalMarginals.hasLaw_coordinate",
+          "canonical_additional_statement": "PaperP1.PositionalArrivalMarginals.coordinate_factorial_moment",
+          "validation": "All twelve new theorems and the observed-cell definition passed direct Lean v4.36.0-rc2 compilation and exact axiom audit with warnings as errors. Only propext, Classical.choice and Quot.sound occur. Whole-project replay and manuscript integration are pending.",
+          "scope": "For any finite ground and arbitrary finite packet family with nonnegative compensated single rates and packet rates, each original site of every independent Poisson arrival realization has exactly a Poisson marginal of parameter p_x. The sum of the actual observed arrival rates is proved equal to p_x, and the canonical product realization has the same marginal. No countability or measurable-space hypothesis on the ambient configuration space is required. For every natural order j, the actual factorial test is integrable and its expectation is exactly p_x^j. These identities concern the reference arrival field. The original arithmetic indicators, their approximation exponent 4/5 and the fixed-degree order of the asymptotic comparison are preserved."
         }
       ]
     },
