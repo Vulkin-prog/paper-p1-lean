@@ -8935,17 +8935,53 @@
         "PaperP1.PositionalOriginalDeletionWeighted.uniform_bound",
         "PaperP1.PositionalRegularApproximation.uniform_bound",
         "PaperP1.PositionalWeightedApproximation.uniform_coefficient_bound",
-        "PaperP1.PositionalWeightedApproximation.uniform_probability_bound"
+        "PaperP1.PositionalWeightedApproximation.uniform_probability_bound",
+        "PaperP1.PositionalPoissonRealization.coeff_atom_mul",
+        "PaperP1.PositionalPoissonRealization.coeff_mul",
+        "PaperP1.PositionalPoissonRealization.one_probability",
+        "PaperP1.PositionalPoissonRealization.channelJump",
+        "PaperP1.PositionalPoissonRealization.channelRate",
+        "PaperP1.PositionalPoissonRealization.field_coordinate",
+        "PaperP1.PositionalPoissonRealization.channel_product",
+        "PaperP1.PositionalPoissonRealization.poissonJumpLaw",
+        "PaperP1.PositionalPoissonRealization.poissonJumpLaw_real_singleton",
+        "PaperP1.PositionalPoissonRealization.law_jump",
+        "PaperP1.PositionalPoissonRealization.integral_law",
+        "PaperP1.PositionalPoissonRealization.law_mul",
+        "PaperP1.PositionalPoissonRealization.law_one",
+        "PaperP1.PositionalPoissonRealization.hasLaw_finite_sum",
+        "PaperP1.PositionalPoissonRealization.hasLaw_poisson_jump",
+        "PaperP1.PositionalPoissonRealization.poissonProduct",
+        "PaperP1.PositionalPoissonRealization.poissonProduct_hasLaw_eval",
+        "PaperP1.PositionalPoissonRealization.poissonProduct_independent",
+        "PaperP1.PositionalPoissonRealization.hasLaw_independent_poisson_sum",
+        "PaperP1.PositionalPoissonRealization.hasLaw_single_pair_field",
+        "PaperP1.PositionalPoissonRealization.grid_probability_of_hasLaw",
+        "PaperP1.PositionalPoissonRealization.hasLaw_canonical_single_pair_field",
+        "PaperP1.IndependentPositionalApproximation.main_20_1",
+        "PaperP1.IndependentPositionalApproximation.main_20_1_canonical"
       ],
       "remaining_unformalized_inputs": [],
       "canonical_statement": "PaperP1.PositionalGridApproximation.main_20_1",
       "canonical_additional_statements": [
         "PaperP1.PositionalWeightedApproximation.uniform_probability_bound",
         "PaperP1.PositionalWeightedApproximation.uniform_coefficient_bound",
-        "PaperP1.PositionalFullApproximation.uniform_probability_bound"
+        "PaperP1.PositionalFullApproximation.uniform_probability_bound",
+        "PaperP1.IndependentPositionalApproximation.main_20_1",
+        "PaperP1.IndependentPositionalApproximation.main_20_1_canonical"
       ],
       "validation": "Verified under Lean v4.36.0-rc2: full build passed (16121 jobs); direct axiom audit passed for 14976 declarations using only propext, Classical.choice and Quot.sound; all 14340 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.24 GiB.",
-      "baseline_validation_commit": "b5932d824df1b6acebb7833186be2b15e3fa2099"
+      "baseline_validation_commit": "b5932d824df1b6acebb7833186be2b15e3fa2099",
+      "strengthenings": [
+        {
+          "checkpoint": "P1-MATH-0992",
+          "kind": "independent_poisson_realization",
+          "canonical_statement": "PaperP1.IndependentPositionalApproximation.main_20_1",
+          "canonical_additional_statement": "PaperP1.IndependentPositionalApproximation.main_20_1_canonical",
+          "validation": "All 20 new theorems and four definitions passed a direct Lean v4.36.0-rc2 replay and exact axiom audit, with proof warnings treated as errors and only propext, Classical.choice and Quot.sound. Whole-project replay and manuscript integration are pending.",
+          "scope": "The completed positional single/pair target is exactly the law of a sum of independent Poisson arrivals with the original individual rates. A concrete finite product probability space supplies these variables; their marginal laws and mutual independence are proved. Each original site equals its own arrival plus the arrivals of its incident edges. Every independent realization has the same original-grid masses as the completed target. For every fixed polynomial degree, one threshold precedes all critical lengths, probability spaces and independent realizations; the literal original grid error series is summable and bounded by N^(-4/5+epsilon). The canonical product realization has the same convergent bound. The arithmetic good edges, individual joint rates, nominal single intensities and original exponent are unchanged. This identifies the probability interpretation of an already proved theorem; it does not add a new rate or numbered correction."
+        }
+      ]
     },
     {
       "label": "p1:arith:runge",

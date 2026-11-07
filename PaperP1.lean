@@ -4931,3 +4931,5 @@ public import PaperP1.Model.ValuationPrimeCylinder
 public import PaperP1.Model.ValuationLayerCounts
 public import PaperP1.Model.ValuationDensityBounds
 public import PaperP1.Model.RankChargedPrimeCylinder
+public import PaperP1.Probability.PositionalPoissonRealization
+public import PaperP1.Asymptotics.IndependentPositionalApproximation

@@ -1,6 +1,19 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0991: The actual retained positive-start
+Current checkpoint P1-MATH-0992: The positional compound target is
+exactly the law of independent single/pair Poisson arrivals. A concrete
+finite product law supplies the arrivals, and each coordinate is its own
+arrival plus the incident edge arrivals. Every independent realization
+has the original weighted grid comparison, with a summable error series
+and bound N^(-4/5+epsilon). Each fixed degree precedes one threshold before
+all probability spaces and variables. All 20 new theorems and four
+definitions passed direct Lean and exact permitted-axiom checks. The full
+project replay and this clarification's manuscript integration are pending.
+The original arithmetic rates, exponent and all 167 numbered statements
+are preserved. Fifteen registry families with 61 selections remain
+locally qualified; no registration is claimed.
+
+Historical checkpoint P1-MATH-0991: The actual retained positive-start
 forcing event is an explicitly constructed compatible affine fiber.
 Its exact mass is 2^(-r), with r no larger than the supported prime count.
 Both full actual exponential moments inherit the rank charge and earlier
