@@ -1,0 +1,258 @@
+{
+  "schema_version": 1,
+  "status": "complete_frozen",
+  "review_stage": "preliminary_conditions_only",
+  "date": "2026-11-07",
+  "source_commit": "0f67b5432ea89fbc64adb0ee4ea44e72370c195b",
+  "proof_source_commit": "7bfc953cd6092eebfbae5f24aeb72b7180693537",
+  "reviewer": "Instance indépendante /root/p1_independent_review ; aucune délégation.",
+  "future_patch_status": "Diff concret non encore reçu ni approuvé dans ce rapport. La présente note fige seulement les conditions et risques à contrôler.",
+  "summary": {
+    "mathematical_gaps_confirmed": 0,
+    "preliminary_conclusion": "SIM09 est justifié par la conversion algébrique existante, avec n≥2 et coefficients formels correctement distingués des covariances. SIM10 et SIM11 sont des déplacements sans suppression scientifique si leurs blocs sont conservés verbatim. Un renvoi de T1.10 vers les anciennes notes doit être actualisé.",
+    "new_lean_needed": false,
+    "new_build_or_replay_performed": false
+  },
+  "verification": {
+    "performed": [
+      "Lecture des versions condensées de15.1, T17.4, des deux contre-exemples, des résultats de destination et de la table des marges.",
+      "Lecture des déclarations et corps deUniversalHeterogeneousConversion, HeterogeneousPoissonCharlierConversion, SharpRetainedConversion ; contrôle des définitions finiteReference, covarianceSum, absolutePairMass.",
+      "Lecture dePoissonCharlierConversion.regular_card_eventually et des entrées de covariance/ensemble régulier.",
+      "Comparaison avec les types compilés existants de la conversion universelle et deT17.4 ; aucune réexécution."
+    ],
+    "not_performed": [
+      "Aucun Lean/Lake, build, replay ou Palomar.",
+      "Aucune mutation du dépôt, des copies de sources ou des rapports antérieurs.",
+      "Aucune validation du futur diff ni des futursPDF."
+    ]
+  },
+  "SIM09": {
+    "verdict": "justifie_sous_les_conditions_explicites_ci_dessous",
+    "source_locations": [
+      {
+        "file": "manuscripts/paper-p1/editorial-condensed-preview-2026-11-07/sources/main_sections/exact_transfer.tex",
+        "line_start": 68,
+        "line_end": 118,
+        "role": "Conversion15.1 et sa preuve à conserver"
+      },
+      {
+        "file": "manuscripts/paper-p1/editorial-condensed-preview-2026-11-07/sources/companion_sections/closure.tex",
+        "line_start": 303,
+        "line_end": 369,
+        "role": "Paramètres exacts réguliers et preuveT17.4 à mutualiser"
+      },
+      {
+        "file": "manuscripts/paper-p1/editorial-condensed-preview-2026-11-07/sources/main_sections/arithmetic.tex",
+        "line_start": 49,
+        "line_end": 64,
+        "role": "Taille du complément régulier et contrôle de la moyenne"
+      }
+    ],
+    "exact_objects": {
+      "general_reference": "B2=*_{i∈G}b_i + Σ_{e∈E} c(e) Δ^{*2} * *_{i∈G\\e}b_i, b_i=δ0+p_iΔ ; E est une famille finie de sous-ensembles de cardinalité exactement2.",
+      "general_parameters": "μ=Σ_i p_i ; s_j=Σ_i p_i^j ; A2=Σ_e|c(e)| ; α=2Σ_e c(e)−s2.",
+      "regular_specialization": "G est l’ensemble régulier, n=|G|, p_i=p=2^{-L}, μ=np, s2=np², s3=np³ ; C2 est la SOMME SIGNÉE des vraies covariances sur G.",
+      "single_pair": "Choisir une paire e0⊆G quand n≥2 ; lui affecter le coefficient formel C2, tous les autres coefficients étant0. La mesure vaut b^{*n}+C2Δ²*b^{*(n−2)}, sa masse absolue de coefficients vaut |C2| et α=2C2−np²=αG."
+    },
+    "necessary_conditions_for_patch": [
+      "Le paragraphe non numéroté précise que seule la borne ALGÉBRIQUE s’étend aux coefficients réels arbitraires ; ces coefficients n’ont pas à être réalisables comme covariances d’une nouvelle loi.",
+      "Conserver p_i∈[0,1], μ≤M et p_*≤1/4 dans la portée imprimée de15.1. Le théorème universel est plus fort, mais sa portée plus large n’est pas nécessaire pour cette réécriture.",
+      "Écrire A2=Σ|c(e)| pour la famille formelle utilisée. Ne jamais remplacer sans cette construction Σ|cov(e)| par |Σcov(e)|.",
+      "DansT17.4, justifier n≥2 pourN assez grand à partir du compte du complément régulier. Le seuil dépend du C fixé et précèdeN,L,H ; aucune nouvelle hypothèse sur une configuration particulière.",
+      "μ=np=O_C(1) et p=O_C(N^{-1}) donnent μ≤M_C et p≤1/4 pourN assez grand. La constante de15.1 devient donc une constante dépendant du C fixé.",
+      "Le choix de la paire est arbitraire et n’exige ni bonne arête, ni compatibilité, ni positivité d’une covariance. Les b_i sont les lois de référenceBernoulli indépendantes.",
+      "Conserver la formule et le labelp1:close:binomial-expansion. L’obtenir par la spécialisation à tous coefficients nuls de15.1, et non en réintroduisant une deuxième longue preuve logarithmique.",
+      "Le remplacement du coefficient C2 parβ coûte4|β−C2| puisque b^{*(n−2)} est une probabilité et ||Δ²||1=4.",
+      "Conserver l’erreur O_C(np³+(np²)²+|C2|(np²+p)). Puis utiliser séparément |C2|=O_C(a_N), déjà établi arithmétiquement, pour obtenir O_C(N^{-2}+a_N/N).",
+      "Pour des coefficients génériques, α=2Σc−s2 est un paramètre formel. Son identification avecVarZ−EZ n’est justifiée que dans l’application aux vraies covariances."
+    ],
+    "circularity": {
+      "conclusion": "Pas de cycle siT17.4 invoque la seule conversion algébrique15.1. La preuve de cette conversion est indépendante deT17.4 et des reconstructions.",
+      "closed_dependencies": [
+        "L’analyse du produitBernoulli et la suppression d’une paire donnent la norme de conversion, sans entrée arithmétique.",
+        "La borne |C2|≤const·a_N provient du profil d’activité des paires et de la borne inférieure du second coefficient nominal, pas de la loi approchée.",
+        "n≥2 provient de|I_N\\G_N|=N^{o(1)}, indépendamment des moments transférés et des conclusions deT17.4."
+      ],
+      "avoid": [
+        "Ne pas invoquer le taux particulier N^{-5/3+ε} de l’application complète à toutes les covariances au lieu de la borne générale.",
+        "Ne pas déduire la borneC2=O(a_N) de la conclusion de conversion elle-même."
+      ]
+    },
+    "lean_endpoints": [
+      {
+        "declaration": "PaperP1.UniversalHeterogeneousConversion.actual_signed_measure_conversion",
+        "file": "PaperP1/Probability/UniversalHeterogeneousConversion.lean",
+        "line": 115,
+        "compiled_scope": "docs/validation/manuscript-endpoints-v1.8/compiled/compiled-types.json",
+        "is_proposition": true,
+        "compiled_type": "∀ {ι : Type u_1} [inst : DecidableEq ι] (G : Finset ι) (E : Finset (Finset ι)) (p : ι → ℝ) (c : Finset ι → ℝ),\n  (∀ e ∈ E, e ⊆ G ∧ e.card = 2) →\n    (∀ i ∈ G, 0 ≤ p i ∧ p i ≤ 1) →\n      ∀ {P : ℝ},\n        0 ≤ P →\n          (∀ i ∈ G, p i ≤ P) →\n            ∑' (k : ℕ),\n                |(PaperP1.FiniteLawEmbedding.embed\n                        (PaperP1.HeterogeneousPoissonCharlierConversion.finiteReference G E p c) -\n                      PaperP1.QuadraticPoisson.reference (PaperP1.HeterogeneousBernoulli.mean G p)\n                        (2 * PaperP1.HeterogeneousPoissonCharlierConversion.covarianceSum E c -\n                          PaperP1.HeterogeneousBernoulli.powerSum G p 2))\n                    {k}| ≤\n              PaperP1.UniversalHeterogeneousConversion.universalConstant *\n                (PaperP1.HeterogeneousBernoulli.powerSum G p 3 + PaperP1.HeterogeneousBernoulli.powerSum G p 2 ^ 2 +\n                  PaperP1.HeterogeneousPoissonCharlierConversion.absolutePairMass E c *\n                    (PaperP1.HeterogeneousBernoulli.powerSum G p 2 + P))",
+        "meaning": "Aucune hypothèse liant c(e) à des covariances ; p_i∈[0,1], p_i≤P,P≥0 ; norme≤16exp(2)[s3+s2²+A2(s2+P)]."
+      },
+      {
+        "declaration": "PaperP1.HeterogeneousPoissonCharlierConversion.actual_signed_measure_conversion",
+        "file": "PaperP1/Probability/HeterogeneousPoissonCharlierConversion.lean",
+        "line": 102,
+        "verification": "Source et corps lus ; pas d’extraction individuelle retrouvée dans les trois rapports de types consultés. Cela n’est pas une lacune : le théorème universel compilé couvre la même généralité et davantage.",
+        "meaning": "Même conclusion avec constante16exp(2M), sousμ≤M ; c(e) arbitraire."
+      },
+      {
+        "declaration": "PaperP1.SharpRetainedConversion.companion_T17_4",
+        "file": "PaperP1/Asymptotics/SharpRetainedConversion.lean",
+        "line": 17,
+        "compiled_scope": "docs/validation/manuscript-endpoints-v1.8/compiled/compiled-types.json",
+        "is_proposition": true,
+        "compiled_type": "∀ (C : ℝ),\n  ∃ K,\n    0 < K ∧\n      ∃ N₀,\n        3 ≤ N₀ ∧\n          ∀ N ≥ N₀,\n            ∀ (L : ℕ),\n              |↑L - Real.log ↑N / Real.log 2| ≤ C →\n                ∀ (H : ℝ),\n                  ∑' (k : ℕ),\n                      |(PaperP1.FiniteLawEmbedding.embed (PaperP1.RetainedReferenceTheorem.binomialReference H N L) -\n                            PaperP1.QuadraticPoisson.reference\n                              (PaperP1.CountObservables.countMoment (PaperP1.RegularStarts.regularStarts N L) L 1)\n                              (PaperP1.RegularCumulantTransfer.secondFactorialCumulant\n                                (PaperP1.RegularStarts.regularStarts N L) L))\n                          {k}| ≤\n                    4 *\n                        |PaperP1.RetainedReferenceTheorem.beta H N L -\n                            PaperP1.SecondFactorialCorrection.regularCovariance N L| +\n                      K * (1 / ↑N ^ 2 + PaperP1.SecondFactorialCorrection.value N L / ↑N)",
+        "meaning": "Seuil uniforme enN,L avantH ; vraie référence régulière, vraie moyenne et vrai cumulant régulier ; terme4|β−covariance régulière|+K(N^{-2}+a_N/N)."
+      },
+      {
+        "declaration": "PaperP1.PoissonCharlierConversion.regular_card_eventually",
+        "file": "PaperP1/Asymptotics/PoissonCharlierConversion.lean",
+        "lines": [
+          83,
+          98
+        ],
+        "verification": "Source et corps lus ; aucune nouvelle extraction ni exécution.",
+        "meaning": "∀C ∃N0≥4 ∀N≥N0,L critiques :2≤card regularStartsN L. Preuve par le complément irrégulier≤sqrtN et cardinalité totaleN."
+      },
+      {
+        "declaration": "PaperP1.SharpCovarianceScale.uniform_regular_covariance",
+        "file": "PaperP1/Asymptotics/SharpCovarianceScale.lean",
+        "lines": [
+          40,
+          59
+        ],
+        "verification": "Source et corps lus.",
+        "meaning": "∀C ∃K>0,N0 avantN,L :a_N>0 et |C2|≤K a_N. Entrées : activité absolue des paires et borne inférieure nominale, toutes deux fermées."
+      }
+    ],
+    "recommended_english_scope_paragraph": "The same algebraic estimate holds when the symbols $c(e)$ in $B_2$\nare arbitrary real pair coefficients, with\n$A_2=\\sum_e|c(e)|$ and $\\alpha=2\\sum_e c(e)-s_2$.\nTheir interpretation as covariances is needed only to identify\n$\\alpha$ with the second factorial cumulant.\nThe assumptions on the Bernoulli parameters remain unchanged.",
+    "recommended_english_regular_cardinality": "For all sufficiently large $N$, Proposition~\\ref{p1:arith:core}\ngives $n=|G|\\ge2$. Choose any pair in $G$ and assign it the\nformal coefficient $C_2$, with all other pair coefficients zero.",
+    "binomial_equation_to_preserve": "\\begin{equation}\n b^{*n}\n =\\Pi_\\mu-\\frac{np^2}{2}\\Pi_\\mu*\\Delta^{*2}\n           +O_{\\ell^1}\\bigl(np^3+(np^2)^2\\bigr).\n \\label{p1:close:binomial-expansion}\n\\end{equation}"
+  },
+  "SIM10": {
+    "verdict": "deplacement_acceptable_sous_conservation_verbatim",
+    "blocks_to_move": [
+      {
+        "file": "manuscripts/paper-p1/editorial-condensed-preview-2026-11-07/sources/formalization.tex",
+        "line_start": 22,
+        "line_end": 33,
+        "role": "Paragraphe rayon/alignment complet, avec paramètres et contre-exemple"
+      },
+      {
+        "file": "manuscripts/paper-p1/editorial-condensed-preview-2026-11-07/sources/formalization.tex",
+        "line_start": 35,
+        "line_end": 46,
+        "role": "Paragraphe plafond complet, y compris équation et exemple effectif"
+      }
+    ],
+    "recommended_destinations": [
+      {
+        "file": "manuscripts/paper-p1/editorial-condensed-preview-2026-11-07/sources/companion_sections/arithmetic_appendix.tex",
+        "line_start": 874,
+        "line_end": 886,
+        "role": "Après la preuve deT1.10 ou après le paragraphe de convention d’alignement"
+      },
+      {
+        "file": "manuscripts/paper-p1/editorial-condensed-preview-2026-11-07/sources/companion_sections/short_supports.tex",
+        "line_start": 68,
+        "line_end": 70,
+        "role": "Après la preuve deT5.1, avant le lemme suivant"
+      }
+    ],
+    "necessary_conditions_for_patch": [
+      "Déplacer exactement les deux blocs22–33 et35–46, avec mêmes octets et ponctuation scientifique, chacun une seule fois dans le compagnon.",
+      "Le nouveau paragraphe de correction est HORS de l’environnement numéroté et hors de sa preuve ; il explique la nécessité des hypothèses sans ajouter une prémisse au lemme.",
+      "Mettre à jour le renvoi orphelin identifié ci-dessous, sans modifier le bloc du contre-exemple lui-même.",
+      "La note commune courte maintient la séparation : deux corrections nécessaires introduites env1.7, renforcements facultatifs env1.8. Ne pas assimiler les checkpoints/intermédiaires à des nouveautés scientifiques.",
+      "Conserver une traçabilité explicite vers le dépôt, le compilateur/Mathlib épinglés, les déclarations et validations. Les diagnostics finis et le contrôle du noyau ne remplacent pas la correspondance au texte.",
+      "Ne pas transformer les limites de portée de l’ancienne note en nouvelles revendications : short-average général, asymptotique deDickman et surface générale ne sont pas prouvés ici.",
+      "La note partagée peut renvoyer aux deux lemmas via les liens externes du compagnon depuis l’article. Conserver l’entrée de sommaire si le titre de la section non numérotée change.",
+      "Conserver les167 résultats et tous les labels ; les deux paragraphes ne créent aucun environnement numéroté supplémentaire."
+    ],
+    "confirmed_editorial_connection_to_update": {
+      "file": "manuscripts/paper-p1/editorial-condensed-preview-2026-11-07/sources/companion_sections/arithmetic_appendix.tex",
+      "lines": [
+        882,
+        884
+      ],
+      "current_text": "The radius-one assertion with arbitrary D in version1.6 is false, as witnessed by the checked family recorded in the formalization notes.",
+      "issue": "Après déplacement et allègement de la note commune, cette localisation devient fausse.",
+      "required_action": "Remplacer le renvoi par le nouveau paragraphe local (« recorded below » ou un renvoi local précis). Le texte du contre-exemple déplacé reste verbatim."
+    },
+    "circularity": "Aucune dépendance de preuve nouvelle. Les paragraphes corrigent une formulation historique et donnent des contre-exemples ; ils ne servent pas à démontrer les conclusions asymptotiques corrigées.",
+    "scientific_content_not_to_lose": [
+      "Rayon D(r+s)B, gamme de centres et cutoff(2D+1)B≤H≤DcutB.",
+      "Famille décalée2:3, L=3k,B=3k+1,X=2t,z=3t+3B,U_X=[X,X+3B], conditiont>5B^4 et masseN^{4/3}.",
+      "Minimum plafonné avec l’entrée1 ; validité affine sans restriction supplémentaire ; restrictionβ−2δ≤2 pour le non-plafonné etδ≥0.",
+      "Données positives effectives : N,N+1 squarefree, h=e=1, β=log(N(N+1))/logN>2,δ=0."
+    ]
+  },
+  "SIM11": {
+    "verdict": "deplacement_documentaire_acceptable",
+    "block_to_move": {
+      "file": "manuscripts/paper-p1/editorial-condensed-preview-2026-11-07/sources/main_sections/introduction.tex",
+      "line_start": 681,
+      "line_end": 721,
+      "role": "Paragraphe Power margins, table et recette des marges"
+    },
+    "recommended_destination": {
+      "file": "manuscripts/paper-p1/editorial-condensed-preview-2026-11-07/sources/main_sections/exact_transfer.tex",
+      "line_start": 1006,
+      "line_end": 1013,
+      "role": "Après la preuve de reconstruction ; hors de la preuve, avant la fin de section"
+    },
+    "necessary_conditions_for_patch": [
+      "Déplacer la table et son explication, avec toutes les références ; conserver le bref renvoi de l’introduction vers le lieu d’arrivée.",
+      "Conserver les marges exactes1/120,2/15,1/30,1/60,1/6 et la distinction des erreurs quartiques.",
+      "La ligne quartique est un renvoi AVANT vers la preuve du lower bound dans la section suivante ; la table n’est pas une prémisse de l’upper bound.",
+      "Garder le termeA2² au taux4/3 : aucune marge stricte n’autorise son élimination.",
+      "Maintenir les paramètres choisis aprèsε0 et avantN, les ordres fixes≤256 et les deux contrôles séparés des grandes cardinalités.",
+      "Éviter de faire passer le déplacement pour une réduction globale de longueur : l’intérêt est l’ordre de lecture ; gain net de source normalement nul hors phrase de renvoi."
+    ],
+    "circularity": "Pas de cycle si la table reste un bilan après la preuve complète et ne devient pas un lemme utilisé dans celle-ci. Les cibles arithmétiques et de quartique conservent leur direction logique.",
+    "exact_margin_checks": {
+      "11/8-41/30": "1/120",
+      "3/2-41/30": "2/15",
+      "41/30-4/3": "1/30",
+      "27/20-4/3": "1/60",
+      "3/2-4/3": "1/6"
+    }
+  },
+  "diff_review_pending": [
+    "Vérifier les empreintes des fichiers proposés et le diff exact contre l’aperçu0f67b543.",
+    "Vérifier conservation byte-identique des167 blocs numérotés et du multiensemble des labels.",
+    "Vérifier les deux paragraphes déplacés verbatim et l’absence de doublons résiduels.",
+    "Vérifier la formule binomiale/son label, le choix formel de la paire et n≥2 explicite.",
+    "Vérifier les renvois des deux documents après les déplacements ; la QA desPDF reste distincte."
+  ],
+  "baseline_fingerprints": [
+    {
+      "file": "manuscripts/paper-p1/editorial-condensed-preview-2026-11-07/sources/main_sections/exact_transfer.tex",
+      "sha256": "53f2fd71ec705c29336f62bcc18a16e7a3ab8fa3fb40198332de24383dfb3770"
+    },
+    {
+      "file": "manuscripts/paper-p1/editorial-condensed-preview-2026-11-07/sources/companion_sections/closure.tex",
+      "sha256": "6e037bed0465effec4d0e9b8a0ee85952097da211302519344bfcbbe7f952658"
+    },
+    {
+      "file": "manuscripts/paper-p1/editorial-condensed-preview-2026-11-07/sources/formalization.tex",
+      "sha256": "37d7ea903380a0c81f60a4d93c0d2f8b80118fd556539fa305afbaa8b3cc7a3f"
+    },
+    {
+      "file": "manuscripts/paper-p1/editorial-condensed-preview-2026-11-07/sources/companion_sections/arithmetic_appendix.tex",
+      "sha256": "0509263ffdaf001f4015385e25420e6a5af584db9c3c54087c96dab22b4bad51"
+    },
+    {
+      "file": "manuscripts/paper-p1/editorial-condensed-preview-2026-11-07/sources/companion_sections/short_supports.tex",
+      "sha256": "4055767ce142e78dac6780a288b3c0f10687286588e081a7c08fb84ecb504fe9"
+    },
+    {
+      "file": "manuscripts/paper-p1/editorial-condensed-preview-2026-11-07/sources/main_sections/introduction.tex",
+      "sha256": "62807c66e81d826c97803b48ffe62b253d2cd9ccea0dba110af95c1a86e52ac5"
+    }
+  ],
+  "compiled_scope": {
+    "path": "docs/validation/manuscript-endpoints-v1.8/compiled/compiled-types.json",
+    "sha256": "6ac3e4eb3a3bc5519edb3903cdf7770e19b01fee2f16faf3dceba8fb4b023c77"
+  }
+}

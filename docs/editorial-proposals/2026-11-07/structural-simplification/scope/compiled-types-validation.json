@@ -1,0 +1,15 @@
+{
+  "actual_exit_code": 0,
+  "compiled_types": 5,
+  "propositions_audited": 5,
+  "permitted_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "all_propositions_standard_axioms_only": true,
+  "inventory_sha256": "015691ad91b5d2676c1adc0dbb5cec74241cb5a308ed6a56c165f4a44c6144a9",
+  "diagnostic_module_sha256": "43d8a9072a6b589e63465977b7a3068637c712b23711fb38b857acf374534fd5",
+  "compiled_types_sha256": "c7dfe55816fb58d6e363cf5e58d6309fc65f458ac3dc93e094d5b97d29bbd9b9",
+  "log_sha256": "a81b05b690d0ee4d5536cc07624971b2138c449fef0b64bcd5de28d546deb5cf"
+}

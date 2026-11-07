@@ -1,0 +1,50 @@
+P1 — DEUXIÈME PASSE DE SIMPLIFICATION VÉRIFIÉE
+7 novembre 2026
+
+Onze des treize propositions sont appliquées dans un aperçu séparé :
+64 pages pour l’article et 102 pour le compagnon, soit 166 pages au total.
+La version 1.8 en comptait 169 ; le premier aperçu condensé en comptait 168.
+Les 167 énoncés numérotés, leurs numéros et les 552 labels sont conservés.
+
+Cette passe mutualise la conversion analytique de T17.4 avec 15.1, après
+avoir explicité sa validité pour des coefficients de paires réels arbitraires.
+L’erreur conserve Σ|c(e)| ; n≥2 est justifié avant la spécialisation sur une
+paire. Cinq interfaces Lean existantes ont été réextraites et contrôlées.
+
+Les deux contre-exemples sont déplacés intégralement auprès de T1.10 et T5.1.
+La note commune de formalisation est raccourcie ; la déclaration d’assistance
+par IA demeure. La table complète des marges et sa recette de paramètres
+sont conservées après la preuve de reconstruction, avec un renvoi introductif.
+La branche T14–T17, le cas comprimé de T4.4 et les résultats positionnels restent.
+
+Ces trois changements retirent 25 lignes source nettes ; les onze changements
+en retirent 145 par rapport au stade préalablement clarifié. Cette mesure
+porte sur les sources physiques, et non sur les répétitions imprimées dans
+les deux PDF. Le gain de trois pages est mesuré par rapport aux PDF v1.8.
+
+L’autre instance a relu le diff exact et cinq corps/types Lean, sans correction
+mathématique nécessaire ni lacune confirmée. Le parent a compilé les PDF,
+vérifié les numéros et examiné les 166 pages en planches et 44 pages entières
+en détail, sans défaut de présentation observé. Cette relecture assistée par
+IA ne constitue pas une certification humaine.
+
+Deux pistes restent conditionnelles : T1.14 via 10.1 et T4.3 via l’enveloppe
+homogène fixe. Elles ne sont pas appliquées ici ; la preuve utilisée par le
+cas comprimé ne doit pas disparaître sans remplacement autonome.
+
+Cette passe réemploie des théorèmes existants, sans nouvelle entrée dans le
+registre des 1004 étapes mathématiques. Le dernier replay complet reste celui
+de 7bfc953c, sous Lean 4.36.0-rc2 : 18 629 étapes, 19 991 contrôles d’axiomes et
+19 914 références, tous réussis. Les versions et aperçus antérieurs sont conservés.
+
+Les six dossiers Palomar couvrent les 17 familles et les 68 sélections prévues,
+avec Brice Pouly et ORCID 0009-0008-8491-2467. Aucune soumission n’est lancée.
+Cet aperçu est destiné à la relecture et n’est pas une nouvelle version adoptée.
+
+Dépôt : https://github.com/Vulkin-prog/paper-p1-lean
+
+RECONSTRUCTION DES PDF
+Depuis sources/, créer build/, puis exécuter alternativement trois fois :
+pdflatex -no-shell-escape -interaction=nonstopmode -halt-on-error -output-directory=build main.tex
+pdflatex -no-shell-escape -interaction=nonstopmode -halt-on-error -output-directory=build companion.tex
+Conserver les deux PDF dans le même dossier pour leurs liens croisés.

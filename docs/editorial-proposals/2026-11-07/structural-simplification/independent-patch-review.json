@@ -1,0 +1,319 @@
+{
+  "schema_version": 1,
+  "status": "complete_frozen",
+  "date": "2026-11-07",
+  "title": "Relecture indépendante du patch structurel SIM09–SIM11",
+  "documentary_base_commit": "0f67b5432ea89fbc64adb0ee4ea44e72370c195b",
+  "proof_source_commit": "7bfc953cd6092eebfbae5f24aeb72b7180693537",
+  "reviewer": "Instance indépendante /root/p1_independent_review ; aucune délégation.",
+  "patch": {
+    "path": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-editorial-structural/proposal/structural-simplifications.patch",
+    "sha256": "41322ff86ec56e86167016dbffac2579add7d19e55e8af3fc11f3d443e8947be"
+  },
+  "patch_validation": {
+    "path": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-editorial-structural/proposal/patch-validation.json",
+    "sha256": "5f709cef62bd40e918b200722cde10cd87ba66900b81a92472cb372931aef42a"
+  },
+  "source_copy": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-editorial-structural/patched-scientific-sources",
+  "scientific_manifest": {
+    "path": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-editorial-structural/scientific-sources-manifest.json",
+    "sha256": "bfb883f49fb1204fee64258bafccd9dd6096bd3cad62904f12effdbff5a7784f",
+    "files": 48
+  },
+  "file_checks": [
+    {
+      "file": "companion_sections/arithmetic_appendix.tex",
+      "before_sha256": "0509263ffdaf001f4015385e25420e6a5af584db9c3c54087c96dab22b4bad51",
+      "after_sha256": "abfb7b1ab318465e097108e99d1796cb375b64654f660c3615a09b09cbd46bc1",
+      "both_hashes_and_manifest_match": true,
+      "exact_patch_hunks": 1,
+      "net_physical_source_lines_saved": -14
+    },
+    {
+      "file": "companion_sections/closure.tex",
+      "before_sha256": "6e037bed0465effec4d0e9b8a0ee85952097da211302519344bfcbbe7f952658",
+      "after_sha256": "c4e522fa1b996c1e7a83b3e47e81e1abac99623a1ff408d74b7a30c643a29268",
+      "both_hashes_and_manifest_match": true,
+      "exact_patch_hunks": 1,
+      "net_physical_source_lines_saved": 15
+    },
+    {
+      "file": "companion_sections/short_supports.tex",
+      "before_sha256": "4055767ce142e78dac6780a288b3c0f10687286588e081a7c08fb84ecb504fe9",
+      "after_sha256": "7b096de013726a20c738635657990b89ba89d287444ac175fd5f5dbba1763f8e",
+      "both_hashes_and_manifest_match": true,
+      "exact_patch_hunks": 1,
+      "net_physical_source_lines_saved": -15
+    },
+    {
+      "file": "formalization.tex",
+      "before_sha256": "37d7ea903380a0c81f60a4d93c0d2f8b80118fd556539fa305afbaa8b3cc7a3f",
+      "after_sha256": "22f43b5c343a96c22c8b0a6037842c4edae8d910d0c2979a7ed3a1edf3e69206",
+      "both_hashes_and_manifest_match": true,
+      "exact_patch_hunks": 1,
+      "net_physical_source_lines_saved": 51
+    },
+    {
+      "file": "main_sections/exact_transfer.tex",
+      "before_sha256": "53f2fd71ec705c29336f62bcc18a16e7a3ab8fa3fb40198332de24383dfb3770",
+      "after_sha256": "072d858b3c237889d370cf190a0ccba579209acc50e97f178348902b22d94e6f",
+      "both_hashes_and_manifest_match": true,
+      "exact_patch_hunks": 2,
+      "net_physical_source_lines_saved": -50
+    },
+    {
+      "file": "main_sections/introduction.tex",
+      "before_sha256": "62807c66e81d826c97803b48ffe62b253d2cd9ccea0dba110af95c1a86e52ac5",
+      "after_sha256": "0f99240335f710a4bc919836a9d717b062abfd3266ae1bcd76c008525e09ada9",
+      "both_hashes_and_manifest_match": true,
+      "exact_patch_hunks": 1,
+      "net_physical_source_lines_saved": 38
+    }
+  ],
+  "verification": {
+    "all_six_before_after_hash_pairs_match": true,
+    "all_48_manifest_hashes_match": true,
+    "patch_applied_in_memory_exactly_to_committed_base": true,
+    "unchanged_files_match_committed_base": 42,
+    "numbered_statement_blocks_byte_identical": 167,
+    "all_tex_label_multisets_preserved": true,
+    "tex_label_occurrences": 552,
+    "binomial_equation_and_label_byte_identical": true,
+    "obsolete_counterexample_reference_removed": true,
+    "all_added_refs_exist": true,
+    "added_refs": [
+      "p13:activity:kappa-comparison",
+      "p13:lower:positive-quartic",
+      "p13:short:quadratic",
+      "p13:third:unaligned-target-cost",
+      "p13:transfer:B2",
+      "p13:transfer:conversion",
+      "p13:transfer:low-rank-tail",
+      "p13:transfer:reconstruction-bound",
+      "p13:transfer:section",
+      "p1:arith:asymmetric",
+      "p1:close:conversion-bound"
+    ],
+    "net_physical_source_lines_saved": 25,
+    "method": "Lecture du diff/contextes et des corpsLean ; application exacte des hunks en mémoire aux sources du commit0f67b543 ; comparaison des empreintes, des blocs numérotés et des trois déplacements. Les types compilés sont ceux extraits par le parent, lus sans réexécution.",
+    "not_performed": [
+      "Aucun Lean/Lake, build, replay ou contrôlePDF.",
+      "Aucune mutation du dépôt, des sources proposées ou des anciens rapports.",
+      "Aucune actionPalomar."
+    ]
+  },
+  "compiled_scope": {
+    "path": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-editorial-structural/scope/compiled-types.json",
+    "sha256": "c7dfe55816fb58d6e363cf5e58d6309fc65f458ac3dc93e094d5b97d29bbd9b9",
+    "validation_path": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-editorial-structural/scope/compiled-types-validation.json",
+    "validation_sha256": "037eab8bce2e45f102f7a18390a334a0c5052c0f03e2f5b15371ab63aa89b44b",
+    "log_path": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-editorial-structural/scope/compiled-types.log",
+    "log_sha256": "a81b05b690d0ee4d5536cc07624971b2138c449fef0b64bcd5de28d546deb5cf",
+    "exit_value_read": "0",
+    "types_read": 5,
+    "parent_validation_read": {
+      "actual_exit_code": 0,
+      "compiled_types": 5,
+      "propositions_audited": 5,
+      "permitted_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "all_propositions_standard_axioms_only": true,
+      "inventory_sha256": "015691ad91b5d2676c1adc0dbb5cec74241cb5a308ed6a56c165f4a44c6144a9",
+      "diagnostic_module_sha256": "43d8a9072a6b589e63465977b7a3068637c712b23711fb38b857acf374534fd5",
+      "compiled_types_sha256": "c7dfe55816fb58d6e363cf5e58d6309fc65f458ac3dc93e094d5b97d29bbd9b9",
+      "log_sha256": "a81b05b690d0ee4d5536cc07624971b2138c449fef0b64bcd5de28d546deb5cf"
+    },
+    "independent_execution": false
+  },
+  "compiled_results": [
+    {
+      "declaration": "PaperP1.UniversalHeterogeneousConversion.actual_signed_measure_conversion",
+      "file": "PaperP1/Probability/UniversalHeterogeneousConversion.lean",
+      "line": 115,
+      "source_sha256": "27c436219c747d011cb7bc6598dbb5a59320ab50a915d544f625cecb1a0a092a",
+      "compiled_type": "∀ {ι : Type u_1} [inst : DecidableEq ι] (G : Finset ι) (E : Finset (Finset ι)) (p : ι → ℝ) (c : Finset ι → ℝ),\n  (∀ e ∈ E, e ⊆ G ∧ e.card = 2) →\n    (∀ i ∈ G, 0 ≤ p i ∧ p i ≤ 1) →\n      ∀ {P : ℝ},\n        0 ≤ P →\n          (∀ i ∈ G, p i ≤ P) →\n            ∑' (k : ℕ),\n                |(PaperP1.FiniteLawEmbedding.embed\n                        (PaperP1.HeterogeneousPoissonCharlierConversion.finiteReference G E p c) -\n                      PaperP1.QuadraticPoisson.reference (PaperP1.HeterogeneousBernoulli.mean G p)\n                        (2 * PaperP1.HeterogeneousPoissonCharlierConversion.covarianceSum E c -\n                          PaperP1.HeterogeneousBernoulli.powerSum G p 2))\n                    {k}| ≤\n              PaperP1.UniversalHeterogeneousConversion.universalConstant *\n                (PaperP1.HeterogeneousBernoulli.powerSum G p 3 + PaperP1.HeterogeneousBernoulli.powerSum G p 2 ^ 2 +\n                  PaperP1.HeterogeneousPoissonCharlierConversion.absolutePairMass E c *\n                    (PaperP1.HeterogeneousBernoulli.powerSum G p 2 + P))",
+      "is_proposition": true,
+      "verdict": "adequate_exact_scope",
+      "body_comparison": "G,E finis, chaque e⊆G de cardinalité2 ; p_i∈[0,1], p_i≤P,P≥0 ; coefficients c(e) réels arbitraires. Le corps combine erreur quadratique et suppression d’une paire puis compare les mesures signées réelles. Aucun lien à une covariance ni borne supposée de l’erreur cible ; constante16exp2.",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.HeterogeneousPoissonCharlierConversion.actual_signed_measure_conversion",
+      "file": "PaperP1/Probability/HeterogeneousPoissonCharlierConversion.lean",
+      "line": 102,
+      "source_sha256": "c12a587d075fc55386e9a6511840b7eb3709f1329bf64fbb40bf30b89cb8cdcd",
+      "compiled_type": "∀ {ι : Type u_1} [inst : DecidableEq ι] (G : Finset ι) (E : Finset (Finset ι)) (p : ι → ℝ) (c : Finset ι → ℝ),\n  (∀ e ∈ E, e ⊆ G ∧ e.card = 2) →\n    (∀ i ∈ G, 0 ≤ p i ∧ p i ≤ 1) →\n      ∀ {P M : ℝ},\n        0 ≤ P →\n          (∀ i ∈ G, p i ≤ P) →\n            PaperP1.HeterogeneousBernoulli.mean G p ≤ M →\n              ∑' (k : ℕ),\n                  |(PaperP1.FiniteLawEmbedding.embed\n                          (PaperP1.HeterogeneousPoissonCharlierConversion.finiteReference G E p c) -\n                        PaperP1.QuadraticPoisson.reference (PaperP1.HeterogeneousBernoulli.mean G p)\n                          (2 * PaperP1.HeterogeneousPoissonCharlierConversion.covarianceSum E c -\n                            PaperP1.HeterogeneousBernoulli.powerSum G p 2))\n                      {k}| ≤\n                PaperP1.HeterogeneousPoissonCharlierConversion.constant M *\n                  (PaperP1.HeterogeneousBernoulli.powerSum G p 3 + PaperP1.HeterogeneousBernoulli.powerSum G p 2 ^ 2 +\n                    PaperP1.HeterogeneousPoissonCharlierConversion.absolutePairMass E c *\n                      (PaperP1.HeterogeneousBernoulli.powerSum G p 2 + P))",
+      "is_proposition": true,
+      "verdict": "adequate_exact_scope",
+      "body_comparison": "Même référence à coefficients réels arbitraires, avecμ≤M et constante16exp(2M). absolutePairMass=Σ|c(e)| et covarianceSum=Σc(e), malgré ce nom historique. Le corps conserve exactement les erreurs s3+s2²+A2(s2+P).",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.FinitePoissonCharlierConversion.actual_signed_measure_conversion",
+      "file": "PaperP1/Probability/FinitePoissonCharlierConversion.lean",
+      "line": 96,
+      "source_sha256": "38ba71941a3751bea093fe05c3b2118bd832cbff704775c83de66fe4d929d97a",
+      "compiled_type": "∀ {n : ℕ},\n  2 ≤ n →\n    ∀ {p A : ℝ},\n      0 ≤ p →\n        p ≤ 1 →\n          ↑n * p ≤ A →\n            ∀ (β c₂ : ℝ),\n              ∑' (k : ℕ),\n                  |(PaperP1.FiniteLawEmbedding.embed (PaperP1.FinitePoissonCharlierConversion.finiteReference n p β) -\n                        PaperP1.QuadraticPoisson.reference (↑n * p) (2 * c₂ - ↑n * p ^ 2))\n                      {k}| ≤\n                4 * |β - c₂| + 16 * Real.exp (2 * A + 4) * (↑n * p ^ 3 + (↑n * p ^ 2) ^ 2) +\n                  16 * Real.exp (2 * A + 2) * |c₂| * (p + ↑n * p ^ 2)",
+      "is_proposition": true,
+      "verdict": "adequate_exact_scope",
+      "body_comparison": "n≥2,0≤p≤1,np≤A, β,c2 réels ; référence b^n+βΔ²b^{n−2}, paramètre2c2−np². La preuve sépare4|β−c2|, l’erreur quadratique binomiale et|c2|(p+np²). C’est la forme analytique exacte de la spécialisation à une paire.",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.PoissonCharlierConversion.regular_card_eventually",
+      "file": "PaperP1/Asymptotics/PoissonCharlierConversion.lean",
+      "line": 83,
+      "source_sha256": "974beaa47abf02604c4c9fd9e86188b15c1da1b035d2e974e9d4aa94323efd32",
+      "compiled_type": "∀ (C : ℝ),\n  ∃ N₀,\n    4 ≤ N₀ ∧\n      ∀ N ≥ N₀, ∀ (L : ℕ), |↑L - Real.log ↑N / Real.log 2| ≤ C → 2 ≤ (PaperP1.RegularStarts.regularStarts N L).card",
+      "is_proposition": true,
+      "verdict": "adequate_exact_scope",
+      "body_comparison": "∀C ∃N0≥4 avantN,L critiques :card regularStartsN L≥2. Le corps utilise le complément irrégulier≤sqrtN et la cardinalité totaleN ; aucune reconstruction.",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.SharpRetainedConversion.companion_T17_4",
+      "file": "PaperP1/Asymptotics/SharpRetainedConversion.lean",
+      "line": 17,
+      "source_sha256": "488f8616819eb02e19553e855c8e983165e22f23f71bb430d50de7e51c261d4d",
+      "compiled_type": "∀ (C : ℝ),\n  ∃ K,\n    0 < K ∧\n      ∃ N₀,\n        3 ≤ N₀ ∧\n          ∀ N ≥ N₀,\n            ∀ (L : ℕ),\n              |↑L - Real.log ↑N / Real.log 2| ≤ C →\n                ∀ (H : ℝ),\n                  ∑' (k : ℕ),\n                      |(PaperP1.FiniteLawEmbedding.embed (PaperP1.RetainedReferenceTheorem.binomialReference H N L) -\n                            PaperP1.QuadraticPoisson.reference\n                              (PaperP1.CountObservables.countMoment (PaperP1.RegularStarts.regularStarts N L) L 1)\n                              (PaperP1.RegularCumulantTransfer.secondFactorialCumulant\n                                (PaperP1.RegularStarts.regularStarts N L) L))\n                          {k}| ≤\n                    4 *\n                        |PaperP1.RetainedReferenceTheorem.beta H N L -\n                            PaperP1.SecondFactorialCorrection.regularCovariance N L| +\n                      K * (1 / ↑N ^ 2 + PaperP1.SecondFactorialCorrection.value N L / ↑N)",
+      "is_proposition": true,
+      "verdict": "adequate_exact_scope",
+      "body_comparison": "∀C ∃K>0,N0 avantN,L,H : erreur≤4|β−covariance régulière|+K(N^{-2}+a_N/N), avec vraie moyenne et vrai cumulant réguliers. Le corps raccorde actual_regular_bound à SharpCovarianceScale ; aucune conclusion de reconstruction n’est une prémisse.",
+      "necessary_corrections": []
+    }
+  ],
+  "results": [
+    {
+      "id": "SIM09",
+      "verdict": "adequate",
+      "locations": [
+        {
+          "file": "main_sections/exact_transfer.tex",
+          "lines": [
+            120,
+            126
+          ]
+        },
+        {
+          "file": "companion_sections/closure.tex",
+          "lines": [
+            334,
+            354
+          ]
+        }
+      ],
+      "finding": "Le nouveau paragraphe étend seulement la borne algébrique aux coefficients réels, définitA2=Σ|c(e)|, conserve les bornes de moyenne/marginale et réserveVarZ−EZ au cas des vraies covariances.",
+      "hypotheses_and_objects": "DansT17.4 :n≥2 découle uniformément du complément régulier ; p_i=p=2^{-L}, μ=np=O_C(1) etp≤1/4 pourN grand. Un coefficient FORMELC2 sur une seule paire donne b^n+C2Δ²b^{n−2}, A2=|C2| etα=2C2−np²=αG. Aucune nouvelle loi ayant ces covariances n’est supposée.",
+      "error": "ErreurO_C(np³+(np²)²+|C2|(np²+p)), puis remplacement parβ au coût4|β−C2|. n=O(N),p=O_C(N^{-1}) et|C2|=O_C(a_N) donnentO_C(N^{-2}+a_N/N). La formule binomiale sans coefficient et son label sont byte-identiques.",
+      "circularity": "15.1 est purement analytique ; n≥2 etC2=O(a_N) ont des preuves arithmétiques antérieures. La conclusion deT17.4 ou d’une reconstruction n’est jamais supposée.",
+      "necessary_corrections": []
+    },
+    {
+      "id": "SIM10",
+      "verdict": "adequate",
+      "locations": [
+        {
+          "file": "formalization.tex",
+          "lines": [
+            1,
+            22
+          ]
+        },
+        {
+          "file": "companion_sections/arithmetic_appendix.tex",
+          "lines": [
+            882,
+            899
+          ]
+        },
+        {
+          "file": "companion_sections/short_supports.tex",
+          "lines": [
+            70,
+            82
+          ]
+        }
+      ],
+      "finding": "Les deux paragraphes complets sont déplacés verbatim une seule fois, hors des environnements numérotés et de leurs preuves. Le rayon, les cutoffs, les paramètres et les inégalités du plafond restent présents.",
+      "reference_and_scope": "« recorded in the formalization notes » devient « family below », juste avant le contre-exemple local. La note commune garde les correctionsv1.7 distinctes des renforcementsv1.8, les167 labels, la traçabilité et les limites de la correspondance formelle. Compilateur, Mathlib épinglé et validations restent indiqués par le dépôt ; assistance et bibliographie ne changent pas.",
+      "circularity": "Aucun lien de preuve nouveau. Les exemples expliquent pourquoi les formulations historiques devaient être corrigées ; ils n’ajoutent pas d’hypothèse aux énoncés et ne remplacent pas les preuves corrigées.",
+      "necessary_corrections": []
+    },
+    {
+      "id": "SIM11",
+      "verdict": "adequate",
+      "locations": [
+        {
+          "file": "main_sections/introduction.tex",
+          "lines": [
+            681,
+            683
+          ]
+        },
+        {
+          "file": "main_sections/exact_transfer.tex",
+          "lines": [
+            1016,
+            1057
+          ]
+        }
+      ],
+      "finding": "La table et la recette entière sont déplacées verbatim après la preuve complète de reconstruction, hors de celle-ci. Le renvoi de l’introduction est correct. Les cinq marges rationnelles, le termeA2² au taux4/3, les ordres fixes≤256 et les contrôles séparés des grands ordres sont conservés.",
+      "circularity": "La ligne quartique est un renvoi avant vers la preuve indépendante du lower bound. Ce bilan ne devient pas une prémisse de l’upper bound.",
+      "necessary_corrections": []
+    }
+  ],
+  "verbatim_moves": [
+    {
+      "role": "alignment_counterexample_moved_verbatim",
+      "target": "companion_sections/arithmetic_appendix.tex",
+      "line_start": 887,
+      "line_end": 898,
+      "metadata_sha256": "ab16c451eebfb7b1f77355e0097b2c8334519c3c4b98199530b8d15d6d591b93",
+      "metadata_hash_basis": "strip",
+      "verbatim_payload_with_terminal_newline_sha256": "e072e5245d3614ab28d88a9043ddbf394976ffa977e8d52aa8448de728d87600",
+      "physical_copies_after": 1,
+      "verbatim_including_terminal_newline": true
+    },
+    {
+      "role": "exponent_cap_counterexample_moved_verbatim",
+      "target": "companion_sections/short_supports.tex",
+      "line_start": 71,
+      "line_end": 82,
+      "metadata_sha256": "4d20f9b912e1caa965b6f861effd501917d3b7a0a874ef113fd7c58452eb58bd",
+      "metadata_hash_basis": "strip",
+      "verbatim_payload_with_terminal_newline_sha256": "2b282555bc0c70fe314e450303e07856d34094f4144357857994a60301c9597c",
+      "physical_copies_after": 1,
+      "verbatim_including_terminal_newline": true
+    },
+    {
+      "role": "power_margin_table_and_recipe_moved_verbatim",
+      "target": "main_sections/exact_transfer.tex",
+      "line_start": 1016,
+      "line_end": 1057,
+      "metadata_sha256": "e5c0384d3706594f7f4bea84056d4f23a0b1113a3a56381e518ca085d9e0bbc1",
+      "metadata_hash_basis": "raw",
+      "verbatim_payload_with_terminal_newline_sha256": "e5c0384d3706594f7f4bea84056d4f23a0b1113a3a56381e518ca085d9e0bbc1",
+      "physical_copies_after": 1,
+      "verbatim_including_terminal_newline": true
+    }
+  ],
+  "necessary_corrections": [],
+  "summary": {
+    "patch_acceptable_mathematically": true,
+    "mathematical_gaps_confirmed": 0,
+    "loss_of_numbered_results": 0,
+    "unjustified_new_hypotheses_or_conclusions": 0,
+    "net_physical_source_lines_saved": 25,
+    "page_gain_measured_by_this_review": false,
+    "conclusion": "Le patch41322ff8 correspond aux preuves existantes et aux déplacements prévus. Aucune correction nécessaire repérée. Les25 lignes physiques gagnées ne mesurent pas l’économie d’impression du bilan auparavant partagé ; la QA desPDF est distincte."
+  },
+  "earlier_reports_unchanged": [
+    "work/p1-editorial-structural/preliminary-review.json",
+    "work/p1-editorial-followup/simplification-review.json",
+    "work/p1-editorial-condensed/independent-patch-review.json"
+  ]
+}

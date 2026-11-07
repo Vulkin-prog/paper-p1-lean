@@ -26,6 +26,23 @@ read, then all 168 pages and 44 detail pages were visually reviewed.
 See docs/editorial-proposals/2026-11-07/simplification/README.md.
 The preserved v1.8 sources/PDFs and registry scopes are unchanged.
 
+A second, separately preserved editorial preview applies SIM09-SIM11,
+bringing the total to eleven of thirteen simplification proposals.
+Article 15.1 now exposes its already-proved arbitrary real pair weights;
+T17.4 reuses it with one pair, n>=2 and absolute mass |C2|. The general
+error retains sum|c(e)|. Both counterexamples and the full margin table
+are moved verbatim, with no numbered statement change. Five existing
+compiled theorem types were re-extracted and axiom-audited, actual exit
+zero; the separate instance read the exact diff and proof bodies.
+The resulting article/companion are 64/102 pages, three pages fewer
+than frozen v1.8. All 167 numbered blocks and 552 labels are preserved
+from the first condensed stage. All 166 pages were reviewed in contact
+sheets, plus 44 complete detail pages, with no observed layout defect.
+No new theorem or ledger entry is claimed for this editorial reuse.
+See docs/editorial-proposals/2026-11-07/structural-simplification/README.md.
+SIM12/SIM13 remain conditional; all previous versions and previews stay
+preserved. The six registry scopes are unchanged; Palomar stays on hold.
+
 Historical checkpoint P1-MATH-1003: Two concrete irregular-window examples
 separate the formal row kernel, effective relative nullity and true
 homogeneous probability. The start x=18,L=10 has rank nine, actual

@@ -1,0 +1,319 @@
+--- a/companion_sections/arithmetic_appendix.tex
++++ b/companion_sections/arithmetic_appendix.tex
+@@ -881,7 +881,21 @@
+ same time; that sector still has $NB^{O(1)}$ hosts and is treated by
+ the separate aligned-rank estimates.  The radius-one assertion with
+ arbitrary $D$ in version~1.6 is false, as witnessed by the checked
+-family recorded in the formalization notes.
++family below.
++
++\paragraph{Necessity of the enlarged alignment radius.}
++In Lemma~\ref{p1:arith:asymmetric}, the alignment radius follows the
++old enclosing interval $X+[-DB,DB]$: the exclusion is
++$|rz-sX|\le D(r+s)B$. The centres satisfy
++$N\le X<N+QN$, $z\in I_N$, with fixed $Q\ge1$, and the cutoff satisfies
++$(2D+1)B\le H\le D_{\rm cut}B$. The weight $2^{\delta^*}-1$ and the
++power $31/24$ are unchanged. A shifted $2:3$ family with
++$L=3k$, $B=3k+1$, $X=2t$, $z=3t+3B$ and
++$U_X=[X,X+3B]\cap\Z$ has $\delta^*\ge k-1$. It is nonaligned at
++radius one for $t>5B^4$ but aligned at radius two; its dyadic mass
++of order $N^{4/3}$ refutes the original radius-one formulation.
++Compressed-source applications use the same enlarged radius on both
++sides of the alignment partition.
+ 
+ \begin{lemma}[Aligned loss above a rational pair]\label{p1:arith:palmrank}
+ Fix a geometrically good pair in channel $a:b=2:3$ or $3:4$, regardless
+--- a/companion_sections/closure.tex
++++ b/companion_sections/closure.tex
+@@ -332,40 +332,25 @@
+ \end{lemma}
+ 
+ \begin{proof}
+-Work in the Banach algebra of absolutely summable signed
+-measures.  Since $2p<1$ for large $N$, the convolution
+-logarithm converges absolutely and gives
+-\[
+- \log_*(\delta_0+p\Delta)
+-     =p\Delta-\frac{p^2}{2}\Delta^{*2}
+-                     +O_{\ell^1}(p^3).
+-\]
+-The convolution exponential of $\mu\Delta$ is the Poisson
+-probability $\Pi_\mu$, of norm one.  Multiplying the preceding
+-identity by $n$ and exponentiating therefore yields
++Use the algebraic form of Lemma~\ref{p13:transfer:conversion}.
++For large $N$, the regular-set count gives $n\ge2$.
++Take common marginal $p$ and put coefficient $C_2$ on one fixed
++pair, all other pair coefficients being zero. The reference is
++$b^{*n}+C_2\Delta^{*2}*b^{*(n-2)}$, its absolute pair mass is
++$|C_2|$, and its quadratic parameter is $2C_2-np^2=\alpha_G$.
++For zero pair coefficients, the same estimate gives
+ \begin{equation}
+  b^{*n}
+  =\Pi_\mu-\frac{np^2}{2}\Pi_\mu*\Delta^{*2}
+            +O_{\ell^1}\bigl(np^3+(np^2)^2\bigr).
+  \label{p1:close:binomial-expansion}
+ \end{equation}
+-The same calculation, retaining only the leading term, gives
+-\[
+- b^{*(n-2)}
+-       =\Pi_\mu+O_{\ell^1}(p+np^2).
+-\]
+-First replace $\beta_N$ by $C_2$ in
+-\eqref{p1:close:bernoulli-reference}.
+-This costs at most $4|\beta_N-C_2|$, because
+-$b^{*(n-2)}$ is a probability and $\|\Delta^{*2}\|_1=4$.
+-The two expansions then give coefficient
+-$C_2-np^2/2=\alpha_G/2$ in front of
+-$\Pi_\mu*\Delta^{*2}$.  Their remaining error is bounded by
+-\[
+- O_C\bigl(np^3+(np^2)^2+|C_2|(p+np^2)\bigr).
+-\]
+-Now $n=O(N)$, $p=O_C(N^{-1})$ and $C_2=O(a_N)$.
+-This is the error stated in \eqref{p1:close:conversion-bound}.
++For the chosen coefficient, it gives an error
++$O_C(np^3+(np^2)^2+|C_2|(np^2+p))$.
++Replacing $C_2$ by $\beta_N$ costs at most $4|\beta_N-C_2|$,
++since $b^{*(n-2)}$ has norm one. Now $n=O(N)$,
++$p=O_C(N^{-1})$ and $C_2=O_C(a_N)$ give
++\eqref{p1:close:conversion-bound}.
+ \end{proof}
+ 
+ \subsection{The first approximation and its uniform boundary}
+--- a/companion_sections/short_supports.tex
++++ b/companion_sections/short_supports.tex
+@@ -66,6 +66,21 @@
+ same affine value.  This proves the exact comparison, including
+ admissible cases with \(\beta>2\).
+ \end{proof}
++
++\paragraph{Necessity of the exponent cap.}
++In Lemma~\ref{p13:short:quadratic}, the counting exponent is capped:
++\[
++ c_2(\beta,\delta)
++   =\min\{1,\beta-\delta,\max(\beta/2-\delta,1-\beta/2)\}.
++\]
++Its affine upper bound is then valid for every real $\beta,\delta$.
++The uncapped expression still gives a valid counting estimate, but
++its exact affine comparison requires $\beta-2\delta\le2$ when
++$\delta\ge0$. This restriction is necessary on actual positive-divisor
++data: squarefree consecutive $N,N+1$ with $h=e=1$ give
++$\beta=\log(N(N+1))/\log N>2$ and $\delta=0$.
++The extra entry $1$ is supplied by the trivial $O(N)$ count.
++
+ 
+ \begin{lemma}[Kernels of a split product]
+ \label{p13:short:split}
+--- a/formalization.tex
++++ b/formalization.tex
+@@ -1,73 +1,22 @@
+ \clearpage
+-\section*{Formalization and the version 1.8 revision}
+-\addcontentsline{toc}{section}{Formalization and the version 1.8 revision}
++\section*{Formalization and statement correspondence}
++\addcontentsline{toc}{section}{Formalization and statement correspondence}
++The repository \url{https://github.com/Vulkin-prog/paper-p1-lean}
++contains the Lean development for both texts, checked with
++Lean~4.36.0-rc2 and the pinned Mathlib revision.
++It records exact statements, proof entries and validation sources;
++the version~1.6 archive is preserved byte for byte.
+ 
+-The associated repository
+-\url{https://github.com/Vulkin-prog/paper-p1-lean}
+-contains the Lean development for the article and its companion,
+-checked with Lean~4.36.0-rc2 and the pinned Mathlib revision
+-\texttt{9d581dfff2e41de989072ea63abf3daf69311520}.
+-Version~1.8 is a working draft integrating selected strengthened
+-estimates and shorter proofs already present in that development.
+-It preserves the 167 numbered-result labels and their numbering.
+-The original version~1.6 sources remain preserved byte for byte.
++Version~1.7 corrected two false original formulations:
++the enclosing-interval radius in Lemma~\ref{p1:arith:asymmetric}
++and the capped exponent in Lemma~\ref{p13:short:quadratic}.
++Their counterexamples and corrected scopes are now discussed beside
++those results in the companion. Version~1.8 selectively integrates
++stronger estimates and shorter proofs; all 167 numbered-result labels
++and their numbering are retained. Intermediate proof constructions
++in the change ledger are not all separate scientific contributions.
+ 
+-\paragraph{The two statement corrections introduced in version 1.7.}
+-The original inventory has 165 valid statements with checked proofs
+-and two false original formulations. Their corrected replacements
+-are kept separate from those originals. These corrections are retained
+-here; the further strengthenings in version~1.8 are not additional
+-claims that the original statements were false.
+-
+-In Lemma~\ref{p1:arith:asymmetric}, the alignment radius follows the
+-old enclosing interval $X+[-DB,DB]$: the exclusion is
+-$|rz-sX|\le D(r+s)B$. The centres satisfy
+-$N\le X<N+QN$, $z\in I_N$, with fixed $Q\ge1$, and the cutoff satisfies
+-$(2D+1)B\le H\le D_{\rm cut}B$. The weight $2^{\delta^*}-1$ and the
+-power $31/24$ are unchanged. A shifted $2:3$ family with
+-$L=3k$, $B=3k+1$, $X=2t$, $z=3t+3B$ and
+-$U_X=[X,X+3B]\cap\Z$ has $\delta^*\ge k-1$. It is nonaligned at
+-radius one for $t>5B^4$ but aligned at radius two; its dyadic mass
+-of order $N^{4/3}$ refutes the original radius-one formulation.
+-Compressed-source applications use the same enlarged radius on both
+-sides of the alignment partition.
+-
+-In Lemma~\ref{p13:short:quadratic}, the counting exponent is capped:
+-\[
+- c_2(\beta,\delta)
+-   =\min\{1,\beta-\delta,\max(\beta/2-\delta,1-\beta/2)\}.
+-\]
+-Its affine upper bound is then valid for every real $\beta,\delta$.
+-The uncapped expression still gives a valid counting estimate, but
+-its exact affine comparison requires $\beta-2\delta\le2$ when
+-$\delta\ge0$. This restriction is necessary on actual positive-divisor
+-data: squarefree consecutive $N,N+1$ with $h=e=1$ give
+-$\beta=\log(N(N+1))/\log N>2$ and $\delta=0$.
+-The extra entry $1$ is supplied by the trivial $O(N)$ count.
+-
+-\paragraph{Scientific content and proof scope.}
+-The fixed-arity anchored confinement and primitive weights are proved
+-in Section~\ref{p14:comp:confinement} and
+-Proposition~\ref{p13:transfer:primitive}. The ordinary smooth-window
+-census is stated and proved near Proposition~\ref{p1:limits:all-anchors};
+-the finite cylinder refinements follow
+-Proposition~\ref{p1:limits:cylinder}; the exact reference-field
+-identities accompany Lemma~\ref{p1:limits:vector-reference}.
+-Their proofs retain the distinction between actual arithmetic
+-indicators and independent reference arrivals, and between fixed
+-orders and separately controlled growing ranges. The general sharp
+-short-average theorem, the Dickman relative-density asymptotic and
+-an unrestricted general surface estimate are not additional claims
+-of this revision.
+-
+-\paragraph{Reproducibility.}
+-The repository records the original, corrected and strengthened
+-statements, their precise Lean declarations and validation sources.
+-The audited proofs use only the kernel axioms
+-\texttt{propext}, \texttt{Classical.choice} and \texttt{Quot.sound}.
+-Finite diagnostic computations and kernel checking have distinct
+-roles; neither replaces checking that a formal statement represents
+-the printed mathematical claim. The mathematical change ledger
+-also retains intermediate proof constructions, which are not all
+-separate scientific contributions.
+-This working draft has no Palomar registration identifier.
++Kernel checking and finite diagnostics do not replace checking
++the correspondence between the formal and printed statements.
++The audited proofs use only the standard kernel axioms recorded
++in the repository. This editorial preview has no Palomar identifier.
+--- a/main_sections/exact_transfer.tex
++++ b/main_sections/exact_transfer.tex
+@@ -116,6 +116,14 @@
+ Here $s_2\leq p_*\mu=O_C(N^{-1})$ and
+ $s_3\leq p_*^2\mu=O_C(N^{-2})$, giving the stated application.
+ \end{proof}
++
++\paragraph{Algebraic form of the conversion.}
++The estimate in Lemma~\ref{p13:transfer:conversion} also holds for
++arbitrary real pair weights $c(e)$ in \eqref{p13:transfer:B2}, with
++$C_2=\sum_e c(e)$, $A_2=\sum_e|c(e)|$ and $\alpha=2C_2-s_2$.
++The mean and marginal bounds are unchanged. The two approximations
++in its proof and the triangle inequality give this algebraic form;
++only the interpretation $\alpha=\Var Z-\E Z$ uses actual covariances.
+ 
+ \subsection{Two dense targets above a prescribed space}
+ 
+@@ -1005,6 +1013,48 @@
+ separately.
+ \end{proof}
+ 
++\paragraph{Power margins.}
++The strict power savings used in the last stages are recorded below.
++Each margin compares complete contributions, after coefficient choices,
++propagation and rank factors have been included.
++\begin{center}
++\small
++\begin{tabularx}{\textwidth}{@{}Xcl@{}}
++\toprule
++Comparison & Exact margin & Location\\
++\midrule
++Nonaligned target above a rational pair versus dominant triples
++& $11/8-41/30=1/120$
++& \eqref{p13:third:unaligned-target-cost}\\[4pt]
++Incompatible triples versus the third factorial cumulant
++& $3/2-41/30=2/15$
++& \eqref{p13:activity:kappa-comparison}\\[4pt]
++Third activity versus the quadratic remainder
++& $41/30-4/3=1/30$
++& \eqref{p13:transfer:reconstruction-bound}\\[4pt]
++Low-nullity uniform tail versus the quadratic remainder
++& $27/20-4/3=1/60$
++& \eqref{p13:transfer:low-rank-tail}\\[4pt]
++Quartic signed error versus $\alpha_N^2$
++& $3/2-4/3=1/6$
++& \eqref{p13:lower:positive-quartic}\\
++\bottomrule
++\end{tabularx}
++\end{center}
++The smallest displayed margin is $1/120$. In contrast, two pair
++activities have size $A_2^2\ll N^{-4/3+\eta}$ and are retained at
++the target scale. They have no strict power saving to spend.
++For a prescribed final accuracy $\varepsilon_0>0$, one may choose
++$0<\tau<\min(\varepsilon_0/4,1/960)$ and invoke completed auxiliary
++estimates with total loss at most $\tau$ each. Their own input margins
++are chosen smaller as needed; in a product, divide the allotted loss
++between the factors. Thus the same symbol $\varepsilon$ in successive
++statements never requires the same numerical value at every stage.
++Rank thresholds and fixed geometric degrees have separate roles.
++The fixed connected-activity estimates in reconstruction are used only
++through order $256$; larger cardinalities have the uniform certificate estimate and a factorial
++boundary bound.
++
+ The method retains three separate forms of control. Exact Bernoulli
+ marginals handle repetitions of one event; arithmetic counts bound
+ interactions among a fixed number of distinct windows; the certificate
+--- a/main_sections/introduction.tex
++++ b/main_sections/introduction.tex
+@@ -678,47 +678,9 @@
+ The arithmetic inputs in Sections~\ref{p1:arith:appendix}
+ and~\ref{p1:arith:supplement} are part of both reconstruction branches.
+ 
+-\paragraph{Power margins.}
+-The strict power savings used in the last stages are recorded below.
+-Each margin compares complete contributions, after coefficient choices,
+-propagation and rank factors have been included.
+-\begin{center}
+-\small
+-\begin{tabularx}{\textwidth}{@{}Xcl@{}}
+-\toprule
+-Comparison & Exact margin & Location\\
+-\midrule
+-Nonaligned target above a rational pair versus dominant triples
+-& $11/8-41/30=1/120$
+-& \eqref{p13:third:unaligned-target-cost}\\[4pt]
+-Incompatible triples versus the third factorial cumulant
+-& $3/2-41/30=2/15$
+-& \eqref{p13:activity:kappa-comparison}\\[4pt]
+-Third activity versus the quadratic remainder
+-& $41/30-4/3=1/30$
+-& \eqref{p13:transfer:reconstruction-bound}\\[4pt]
+-Low-nullity uniform tail versus the quadratic remainder
+-& $27/20-4/3=1/60$
+-& \eqref{p13:transfer:low-rank-tail}\\[4pt]
+-Quartic signed error versus $\alpha_N^2$
+-& $3/2-4/3=1/6$
+-& \eqref{p13:lower:positive-quartic}\\
+-\bottomrule
+-\end{tabularx}
+-\end{center}
+-The smallest displayed margin is $1/120$. In contrast, two pair
+-activities have size $A_2^2\ll N^{-4/3+\eta}$ and are retained at
+-the target scale. They have no strict power saving to spend.
+-For a prescribed final accuracy $\varepsilon_0>0$, one may choose
+-$0<\tau<\min(\varepsilon_0/4,1/960)$ and invoke completed auxiliary
+-estimates with total loss at most $\tau$ each. Their own input margins
+-are chosen smaller as needed; in a product, divide the allotted loss
+-between the factors. Thus the same symbol $\varepsilon$ in successive
+-statements never requires the same numerical value at every stage.
+-Rank thresholds and fixed geometric degrees have separate roles.
+-The fixed connected-activity estimates in reconstruction are used only
+-through order $256$; larger cardinalities have the uniform certificate estimate and a factorial
+-boundary bound.
++The completed proof records the exact power margins in
++Section~\ref{p13:transfer:section}. The fixed-order inputs and the
++separately controlled large-cardinality tail remain distinct.
+ 
+ \subsection{Notation guide}
+ \label{p1:intro:notation}

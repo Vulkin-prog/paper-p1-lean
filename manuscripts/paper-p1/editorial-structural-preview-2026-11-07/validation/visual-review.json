@@ -1,0 +1,72 @@
+{
+  "status": "passed",
+  "pages_rendered_and_contact_sheet_reviewed": 166,
+  "contact_sheets_actually_inspected": 11,
+  "full_detail_pages_actually_inspected": 44,
+  "detail_pages": {
+    "main": [
+      1,
+      2,
+      3,
+      8,
+      9,
+      10,
+      11,
+      38,
+      39,
+      40,
+      41,
+      49,
+      50,
+      51,
+      61,
+      62,
+      63,
+      64
+    ],
+    "companion": [
+      1,
+      2,
+      3,
+      4,
+      13,
+      14,
+      15,
+      16,
+      31,
+      32,
+      33,
+      34,
+      39,
+      40,
+      41,
+      42,
+      64,
+      65,
+      66,
+      67,
+      68,
+      98,
+      99,
+      100,
+      101,
+      102
+    ]
+  },
+  "observed_clipping_overlap_or_missing_glyph_defects": 0,
+  "automated_out_of_page_characters": 0,
+  "missing_preview_markers": 0,
+  "cross_pdf_file_targets": {
+    "main": [
+      "P1_Structural_Editorial_Preview_Companion_2026-11-07_EN.pdf"
+    ],
+    "companion": [
+      "P1_Structural_Editorial_Preview_Main_2026-11-07_EN.pdf"
+    ]
+  },
+  "pdf_sha256": {
+    "main": "f68c420f4f541ab73e49f60a829a08af19bbe4c79c888ce530f0c7df0a6ce83b",
+    "companion": "ee5560f1e46a1576a164f46e12cf343abbd27aecdb5f5c7f284c4885a2acd546"
+  },
+  "scope": "Parent visual inspection of the latest rendered PDFs, after the metadata-only follow-up. Separate from the independent mathematical diff review; not human certification or a Palomar registration."
+}

@@ -1,0 +1,82 @@
+{
+  "status": "applied_pending_independent_diff_and_pdf_review",
+  "documentary_base_commit": "0f67b5432ea89fbc64adb0ee4ea44e72370c195b",
+  "proof_source_commit": "7bfc953cd6092eebfbae5f24aeb72b7180693537",
+  "base_package": "manuscripts/paper-p1/editorial-condensed-preview-2026-11-07",
+  "applied_proposals": [
+    "SIM09",
+    "SIM10",
+    "SIM11"
+  ],
+  "conditional_proposals_applied": [],
+  "patch_sha256": "41322ff86ec56e86167016dbffac2579add7d19e55e8af3fc11f3d443e8947be",
+  "numbered_blocks_byte_identical": 167,
+  "tex_label_occurrences_preserved": 552,
+  "alignment_counterexample_moved_verbatim": {
+    "sha256": "ab16c451eebfb7b1f77355e0097b2c8334519c3c4b98199530b8d15d6d591b93",
+    "copies_after": 1
+  },
+  "exponent_cap_counterexample_moved_verbatim": {
+    "sha256": "4d20f9b912e1caa965b6f861effd501917d3b7a0a874ef113fd7c58452eb58bd",
+    "copies_after": 1
+  },
+  "power_margin_table_and_recipe_moved_verbatim": {
+    "sha256": "e5c0384d3706594f7f4bea84056d4f23a0b1113a3a56381e518ca085d9e0bbc1",
+    "copies_after": 1
+  },
+  "algebraic_scope": {
+    "arbitrary_real_coefficients": true,
+    "absolute_mass_is_sum_of_absolute_values": true,
+    "single_pair_specialization_requires_n_ge_two": true,
+    "binomial_expansion_label_retained": true,
+    "original_mean_and_marginal_assumptions_retained": true,
+    "proof_entries": [
+      "PaperP1.UniversalHeterogeneousConversion.actual_signed_measure_conversion",
+      "PaperP1.HeterogeneousPoissonCharlierConversion.actual_signed_measure_conversion",
+      "PaperP1.FinitePoissonCharlierConversion.actual_signed_measure_conversion",
+      "PaperP1.PoissonCharlierConversion.regular_card_eventually",
+      "PaperP1.SharpRetainedConversion.companion_T17_4"
+    ]
+  },
+  "files": [
+    {
+      "path": "formalization.tex",
+      "before_sha256": "37d7ea903380a0c81f60a4d93c0d2f8b80118fd556539fa305afbaa8b3cc7a3f",
+      "after_sha256": "22f43b5c343a96c22c8b0a6037842c4edae8d910d0c2979a7ed3a1edf3e69206",
+      "net_physical_source_lines_saved": 51
+    },
+    {
+      "path": "companion_sections/closure.tex",
+      "before_sha256": "6e037bed0465effec4d0e9b8a0ee85952097da211302519344bfcbbe7f952658",
+      "after_sha256": "c4e522fa1b996c1e7a83b3e47e81e1abac99623a1ff408d74b7a30c643a29268",
+      "net_physical_source_lines_saved": 15
+    },
+    {
+      "path": "companion_sections/arithmetic_appendix.tex",
+      "before_sha256": "0509263ffdaf001f4015385e25420e6a5af584db9c3c54087c96dab22b4bad51",
+      "after_sha256": "abfb7b1ab318465e097108e99d1796cb375b64654f660c3615a09b09cbd46bc1",
+      "net_physical_source_lines_saved": -14
+    },
+    {
+      "path": "companion_sections/short_supports.tex",
+      "before_sha256": "4055767ce142e78dac6780a288b3c0f10687286588e081a7c08fb84ecb504fe9",
+      "after_sha256": "7b096de013726a20c738635657990b89ba89d287444ac175fd5f5dbba1763f8e",
+      "net_physical_source_lines_saved": -15
+    },
+    {
+      "path": "main_sections/exact_transfer.tex",
+      "before_sha256": "53f2fd71ec705c29336f62bcc18a16e7a3ab8fa3fb40198332de24383dfb3770",
+      "after_sha256": "072d858b3c237889d370cf190a0ccba579209acc50e97f178348902b22d94e6f",
+      "net_physical_source_lines_saved": -50
+    },
+    {
+      "path": "main_sections/introduction.tex",
+      "before_sha256": "62807c66e81d826c97803b48ffe62b253d2cd9ccea0dba110af95c1a86e52ac5",
+      "after_sha256": "0f99240335f710a4bc919836a9d717b062abfd3266ae1bcd76c008525e09ada9",
+      "net_physical_source_lines_saved": 38
+    }
+  ],
+  "net_physical_source_lines_saved": 25,
+  "page_gain_measured": false,
+  "scope": "Three additional editorial proposals after the first eight. No new Lean theorem, numbered statement, exponent or compressed-family shortcut. Both counterexamples and the complete power table remain scientifically present. Physical source-line totals differ from printed duplication savings because the former shared note is used in both PDFs. All published packages remain preserved. Palomar stays on hold."
+}

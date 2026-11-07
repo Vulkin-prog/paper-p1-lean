@@ -1,0 +1,158 @@
+\section{The first retained class on the regular set}
+\label{p14:comp:stopped}
+
+This section specializes the general stopping identity of
+Section~\ref{p1:stop:section} to the two leading pair channels. It
+supplies the boundary estimates used by the first reconstruction and
+the positional comparison. The optimal scalar reconstruction uses the
+larger class $\mathscr D_2$ in Section~\ref{p13:transfer:section}.
+Here and in the regular-set reconstruction below, write
+\[
+ G=G_N,\quad n=|G|,\quad Z_G=Z_N^\circ,\quad
+ \mu=np,\quad E_N=\mathcal E_N,
+ \qquad a_N=\E(Z_N)_2-\lambda_N^2.
+\]
+The pair calculation and mean estimate give
+$a_N-\alpha_N=O_{C,\varepsilon}(N^{-1+\varepsilon})$ and
+$a_N\asymp_C LN^{-2/3}>0$ for large $N$.
+Every space on $G$ has dimension $L$, and every marginal is $p$.
+
+\subsection{Retaining a direct family and one compressed pair}
+
+We now use the regular set $G$ of arithmetic windows.
+For $I\subseteq G$, recall
+\[
+ \rho(I)=|I|L-\dim\sum_{x\in I}S_x.
+\]
+Every $S_x$ has dimension $L$, and a family is called direct
+when $\rho(I)=0$.  Let $E_N$ be the family of good pairs
+from Corollary~\ref{p1:arith:edgefamily}.  Its pairs are
+compatible and dependent, and
+\begin{equation}
+ \rho(e)\le L/3+O(1)\qquad(e\in E_N).
+ \label{p1:stop:pair-nullity}
+\end{equation}
+For $e=\{x,y\}$ put $V_e=S_x+S_y$ and $q_e=q(e)$.  Define
+\begin{equation}
+ \Gamma_e(h)=\left\{
+ U\subseteq G\setminus e:|U|=h,\quad
+ V_e,\ (S_z)_{z\in U}\ \text{are in direct sum}
+                    \right\}.
+ \label{p1:stop:gamma}
+\end{equation}
+The direct-sum condition concerns the single compressed block
+$V_e$ and the other blocks.  It does not assert independence
+of the two spaces inside $e$.  The affine probability formula
+gives
+\begin{equation}
+ q(e\cup U)=q_ep^{|U|}
+              \qquad\bigl(U\in\Gamma_e(|U|)\bigr).
+ \label{p1:stop:direct-pair-probability}
+\end{equation}
+
+Let $\mathscr D$ consist of all direct families together with
+all families $e\cup U$ occurring in
+\eqref{p1:stop:gamma}.  Thus a family in $\mathscr D$ is allowed
+one good pair, treated as a single block, but no further dependence.
+
+\begin{lemma}[Heredity and boundary nullity]
+\label{p1:stop:class}
+The family $\mathscr D$ is hereditary.  Each non-direct member
+contains a unique dependent pair $e\in E_N$, and its nullity
+equals $\rho(e)$.  Hence, for all sufficiently large $N$,
+\begin{equation}
+ \partial\mathscr D
+ \subseteq\{I\notin\mathscr D:
+                 0<\rho(I)\le 4L/3+O(1)<3L/2\}.
+ \label{p1:stop:boundary-nullity}
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+Every subfamily of a direct family is direct.
+Consider $e\cup U$ in the second part of the definition.
+A subfamily which retains both endpoints of $e$ still consists
+of $V_e$ and some of the independent singleton blocks.  A subfamily
+which removes an endpoint is direct, since the remaining endpoint
+space is contained in $V_e$.  This proves heredity.
+
+The direct-sum condition excludes a dependent pair inside $U$
+and excludes a dependent pair joining $U$ to either endpoint of
+$e$.  Thus $e$ is the unique dependent pair.  Additivity of the
+ranks of the compressed blocks then gives
+$\rho(e\cup U)=\rho(e)$.
+
+Adding one $L$-dimensional space increases nullity by at most
+$L$.  The proper prefix of a boundary member has nullity at most
+$L/3+O(1)$, so the member itself has nullity at most
+$4L/3+O(1)$.  Finally, nullity zero would make it a direct
+family and therefore a member of $\mathscr D$.
+\end{proof}
+
+The retained dependence has the size of the principal correction.
+The strict upper bound on the boundary nullity is what makes
+the stopped remainder easier to estimate than the unrestricted
+absolute expansion.
+
+\subsection{The factorial tail of the boundary}
+
+Write $n=|G|$ and $\mu=np$, and choose a fixed upper bound
+$\Lambda$ for $\mu$ throughout the critical band.  We need a
+cutoff large enough to absorb the loss $2^{3L/2}$ in
+\eqref{p1:stop:boundary-nullity}, yet small enough for the
+critical-size component estimate.  The following explicit
+choice meets both requirements:
+\begin{equation}
+ K_N=\min\left\{K\in\mathbb N:
+ K\ge\max(4,\lceil4e\Lambda\rceil),\quad
+ K\log\frac{K}{2e\Lambda}\ge3\log N\right\}.
+ \label{p1:stop:cutoff}
+\end{equation}
+It satisfies
+\begin{equation}
+ K_N=(3+o(1))\frac{\log N}{\log\log N}=o(L);
+ \qquad K_N\le L/4
+ \quad\text{for all sufficiently large }N.
+ \label{p1:stop:cutoff-range}
+\end{equation}
+The coefficient $3$ is a convenient sufficient choice.
+
+\begin{lemma}[Large boundary families]
+\label{p1:stop:tail}
+Uniformly in the fixed critical band,
+\begin{equation}
+ \sum_{\substack{I\in\partial\mathscr D\\|I|>K_N}}
+           2^{|I|}q(I)=O_C(N^{-3/2}).
+ \label{p1:stop:tail-bound}
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+The affine law and \eqref{p1:stop:boundary-nullity} imply
+\[
+ q(I)\le 2^{3L/2}p^{|I|}
+          \ll_C N^{3/2}p^{|I|}.
+\]
+This remains valid for incompatible families, whose probability
+is zero.  Therefore
+\[
+ \sum_{\substack{I\in\partial\mathscr D\\|I|>K_N}}
+       2^{|I|}q(I)
+ \ll_C N^{3/2}
+       \sum_{r>K_N}\binom nr(2p)^r
+ \le C_C N^{3/2}
+       \sum_{r>K_N}\frac{(2\mu)^r}{r!}.
+\]
+By $K!\ge(K/e)^K$ and \eqref{p1:stop:cutoff},
+$(2\mu)^{K_N}/K_N!\le N^{-3}$.
+The ratios of subsequent terms are at most
+$2\Lambda/(K_N+1)<1/2$, so the last tail is at most
+$2N^{-3}$.  This proves the assertion.
+\end{proof}
+
+Only families of size at most $K_N$ remain.  They have nullity
+at most $3L/2$, a bound fixed relative to $L$.  The component
+estimate in Theorem~\ref{p1:core:bounded-nullity} supplies the
+arithmetic input for this range.  Section~\ref{p1:close:section}
+will convert that centered estimate into the positive boundary
+mass required by \eqref{p1:stop:norm}.

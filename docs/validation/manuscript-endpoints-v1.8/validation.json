@@ -157,5 +157,15 @@
     "numbered_blocks_preserved_after_clarification_stage": 167,
     "pages_saved": 1,
     "frozen_sources_changed": false
+  },
+  "structural_editorial_preview": {
+    "path": "docs/editorial-proposals/2026-11-07/structural-simplification/final-validation.json",
+    "sha256": "051d53700d6f9655a7b657cde271fe50bdeafa80e08ff808fdbbbb563644b783",
+    "applied_proposals": 11,
+    "numbered_blocks_preserved_after_first_condensed_stage": 167,
+    "pages_saved_from_frozen_v18": 3,
+    "frozen_sources_changed": false,
+    "new_lean_theorems": 0,
+    "existing_compiled_interfaces_rechecked": 5
   }
 }

@@ -1,0 +1,262 @@
+\section{Probability references and the reach of the method}
+\label{p1:discussion}
+
+The main theorem gives a probability reference with the exact
+first two factorial cumulants. A second positive reference has
+an elementary sampling interpretation. It belongs to the classical
+Hermite family, whose single and double jump representation is
+studied by Kemp and Kemp~\cite{kempkemp1965}.
+
+The same stopped expansion also retains the unsigned integer
+positions. Lemma~\ref{p1:limits:vector-reference} compares
+\((J_x)_{x\in I_N}\) with a compound-Poisson field built from
+independent single arrivals at sites and double arrivals along
+good arithmetic pairs. Its remainder is
+\(O(N^{-4/5+\varepsilon})\), including every fixed
+polynomial weight in the total count.
+Section~\ref{p1:limits:positions} develops that comparison and
+uses it to justify pair deletion. The target keeps the locations
+of both endpoints, but does not record run signs or exact excess
+lengths.
+
+\begin{corollary}[Hermite approximation with single and double jumps]
+\label{p1:cor:compound}
+For all sufficiently large \(N\), let \(U_N,V_N\) be independent
+Poisson variables with means \(\mu_N-\alpha_N\) and
+\(\alpha_N/2\), respectively. Then
+\[
+ \TV\bigl(\Law(Z_N),\Law(U_N+2V_N)\bigr)
+       \ll_{C,\varepsilon}N^{-4/3+\varepsilon}.
+\]
+For every fixed \(h\ge3\), the entirely explicit reference
+\[
+ \widehat U_N+2\widehat V_N,\qquad
+ \widehat U_N\sim\Pois(\lambda_N-\widehat\alpha_N^{(\le h)}),\qquad
+ \widehat V_N\sim\Pois(\widehat\alpha_N^{(\le h)}/2),
+\]
+with independent summands has optimal power \(h/(h+1)\)
+and the same leading distance equivalent as the corresponding
+quadratic reference in Theorem~\ref{p13:channels:hierarchy}.
+In particular the two-channel choice \(h=4\) has
+error \(O(N^{-4/5+\varepsilon})\).
+No matching lower bound is asserted here for the
+exact-parameter Hermite reference.
+\end{corollary}
+
+\begin{proof}
+Both means are nonnegative for large \(N\).
+In the convolution algebra, the law of \(U_N+2V_N\) is
+\[
+ \exp_*\left(\mu_N\Delta+\frac{\alpha_N}{2}\Delta^{*2}\right).
+\]
+Expanding the second exponential to first order gives
+\(Q_{\mu_N,\alpha_N}\) with an \(\ell^1\) error
+\(O_C(\alpha_N^2)\). Indeed \(\|\Delta^{*2}\|_1=4\),
+and the exponential remainder is bounded by
+\(\frac12(2\alpha_N)^2e^{2\alpha_N}\).
+Since \(\alpha_N^2=N^{-4/3+o(1)}\), the main theorem
+proves the claim.
+For each fixed-height explicit reference, the coefficient
+is positive and tends to zero uniformly in the critical band, while
+\(\lambda_N\) stays bounded away from zero. Thus both proposed
+Poisson means are nonnegative for all sufficiently large \(N\).
+Repeat the same expansion with parameters
+\((\lambda_N,\widehat\alpha_N^{(\le h)})\), and apply
+Theorem~\ref{p13:channels:hierarchy}. The additional norm
+error is \(O_C((\widehat\alpha_N^{(\le h)})^2)
+=N^{-4/3+o(1)}\), smaller than the positive first omitted
+channel term of order \(LN^{-h/(h+1)}\).
+The reverse triangle inequality preserves its equivalent
+and hence its optimal exponent.
+\end{proof}
+
+The double jump represents the leading pair interaction at
+the level of the scalar law. The contribution here is the
+precision of the Hermite approximation for \(Z_N\).
+Its double jump intensity uses either the exact second
+factorial cumulant or a complete finite channel sum.
+This is a representation of the reference law; it does not
+decompose the actual run starts into independent components.
+Keeping only the leading equivalent of that coefficient
+does not preserve the precision of a fixed-height truncation.
+The exact Hermite law already contains the quartic term
+\(\alpha_N^2\Pi_{\mu_N}*\Delta^{*4}/8\), so the lower
+bound for the quadratic reference does not transfer to it.
+
+This distinction is already present in the locally dependent
+setting of \v{C}ekanavi\v{c}ius and Vellaisamy
+\cite[Theorem~3.1, (3.5), and Theorem~3.2, (3.6)]{cekanaviciusvellaisamy2015}.
+Their quadratic reference is
+\(\Pi_{\Gamma_1}*(\delta_0+\Gamma_2\Delta^{*2})\), whereas
+the exponential reference is
+\(\exp_*(\Gamma_1\Delta+\Gamma_2\Delta^{*2})\), with
+\(\Gamma_2=(\Var Z-\E Z)/2\).
+The quadratic estimate contains an additional squared error term
+that is absent from the exponential estimate.
+These results concern sums reduced to one-dependence under
+specified moment conditions. We use this comparison to place the
+references in context; the arithmetic estimates here provide
+their approximation to the multiplicative run count.
+
+\subsection{Computing the correction coefficient}
+\label{p1:discussion:charlier}
+
+The coefficient in the total variation equivalent can be
+evaluated from four Poisson masses.  We record the elementary
+Poisson--Charlier calculation, together with a bound for every
+order. These are standard identities for signed Poisson
+approximations. The orthogonality bound and the exact
+second-difference norm appear in Zacharovas and
+Hwang~\cite[(2.13), Remark~4.4]{zacharovashwang2010}; see also
+\cite{bkn2014} for the Poisson--Charlier expansion framework.
+We include the calculation to fix the normalization of
+\(\Delta\), the endpoint conventions, and the factor relating
+the \(\ell^1\) norm to total variation.
+
+\begin{proposition}[Norms of Poisson differences]
+\label{p1:discussion:charlier-norm}
+For $\mu>0$, put $\pi_\mu(k)=e^{-\mu}\mu^k/k!$ when $k\ge0$
+and $\pi_\mu(k)=0$ when $k<0$.  Define
+\[
+ u_\pm=\mu+\frac12\pm\frac{\sqrt{4\mu+1}}2,\qquad
+ a=\lfloor u_-\rfloor+1,\qquad b=\lceil u_+\rceil-1.
+\]
+Then
+\begin{equation}
+ \|\Pi_\mu*\Delta^{*2}\|_1
+ =2\bigl\{\pi_\mu(a-1)-\pi_\mu(a-2)
+             +\pi_\mu(b-1)-\pi_\mu(b)\bigr\}.
+ \label{p1:discussion:finite-norm}
+\end{equation}
+More generally, for every integer $r\ge0$,
+\begin{equation}
+ \|\Pi_\mu*\Delta^{*r}\|_1
+       \le\min\left\{2^r,\frac{\sqrt{r!}}{\mu^{r/2}}\right\}.
+ \label{p1:discussion:general-norm}
+\end{equation}
+In particular,
+\begin{equation}
+ \|\Pi_2*\Delta^{*2}\|_1=\frac{10}{3e^2},
+ \qquad \mathcal C(2)=\frac{5}{6e^2}.
+ \label{p1:discussion:lambda-two}
+\end{equation}
+\end{proposition}
+
+The proof, including the normalization of the Charlier polynomials and
+the telescoping at integer roots, is given in
+Section~\ref{p14:comp:poisson-differences}.
+
+The function $\mathcal C$ is continuous and strictly positive
+on $(0,\infty)$.  Indeed, coupling two Poisson variables by
+an independent increment gives
+$\|\Pi_\mu-\Pi_\nu\|_1\le2(1-e^{-|\mu-\nu|})$.
+Convolving with $\Delta^{*2}$ proves continuity; the mass
+at zero gives positivity, as in
+\eqref{p1:close:constant-bounds}.  Thus the finite formula
+remains continuous when one of its two roots crosses an integer.
+
+For completeness, let
+$H_{\mu,\theta}=\Law(\Pois(\mu-\theta)+2\Pois(\theta/2))$,
+with independent summands and $0\le\theta<\mu$.
+The expansion of its convolution exponential gives the
+parameter-uniform estimate
+\begin{equation}
+ \left|\TV(H_{\mu,\theta},\Pi_\mu)
+                     -\theta\mathcal C(\mu)\right|
+       \le\theta^2e^{2\theta}.
+ \label{p1:discussion:compound-coefficient}
+\end{equation}
+To verify the constant, write
+$H_{\mu,\theta}
+ =\Pi_\mu*\exp_*(\theta\Delta^{*2}/2)$.
+The $\ell^1$ norm of the exponent is at most $2\theta$,
+so the remainder after its linear term has norm at most
+$2\theta^2e^{2\theta}$.
+The reverse triangle inequality and
+$\TV=\|\cdot\|_1/2$ prove
+\eqref{p1:discussion:compound-coefficient}.
+In particular, the factor $1/4$ in $\mathcal C$ consists
+of the factor $1/2$ in the quadratic correction and the
+factor $1/2$ in the total variation convention.
+Neither \eqref{p1:discussion:general-norm} nor the remainder
+constant in \eqref{p1:discussion:compound-coefficient} is
+asserted to be optimal.
+
+\subsection{A transferable proof structure}
+
+The method starts by choosing a reference that already contains the
+frequent local effects. Here the exact Bernoulli marginals absorb repeated
+indices and the retained covariance term absorbs isolated pairs. The
+choice is part of the proof: replacing it by a Poisson law too early would
+charge the same diagonal effects again.
+
+Next one retains a hereditary family of configurations with explicit joint
+probabilities. The specialization of the abstract lace expansion
+\cite{zeilberger1997} in Section~\ref{p1:stop:section}
+stops at its first excluded prefix.
+It leaves the later variables in positive conditional kernels. The
+probabilistic task is therefore to bound the total mass of that boundary,
+while expanding incompatible configurations with their signs before taking
+absolute values.
+
+Three distinct arithmetic controls supply that bound. Conditional
+full-support counts give a half power for each new block when the numbers
+of sources and targets are fixed. Large rank losses are confined to thin
+families, with a pointwise rank bound obtained from short relations and a
+common curve. Finally, certificate and saturation estimates sum the
+remaining configurations at growing orders. The last step is an independent
+uniform estimate; it is not obtained by letting the fixed-order constants
+grow. The reconstruction theorem expresses their combined effect as
+$N^\varepsilon A_3+N^{-4/3+\varepsilon}$.
+
+In another model, private prime coordinates could be replaced by other
+local coordinates that force rarity or yield a sparse dependency graph.
+To apply the method one would need counterparts of these conditional
+counts, rank bounds, sign cancellations, and uniform tails. The
+combinatorial stopping identity is general; the arithmetic estimates
+proved here are specific to multiplicative runs.
+
+The lower bound must then test the chosen reference. For the quadratic
+truncation the fourth Charlier polynomial detects
+$3\alpha_N^2+\kappa_{4,N}$, whereas for the Hermite reference it detects
+only $\kappa_{4,N}$. The argument therefore identifies the precision of a
+specified approximation, rather than assigning a universal exponent to
+dependent rare events.
+
+\subsection{Precision, parameters, and remaining questions}
+
+Table~\ref{p16:tab:references} collects the precisions for the
+different references. Beyond those results, determining a full
+equivalent for the exact quadratic remainder or the third factorial
+cumulant remains open here. So do a sharp lower bound for the exact
+Hermite reference and the error after a cubic or quartic correction.
+Optimizing over all Poisson means is another question: the equivalents
+proved here use the specified means in Corollary~\ref{p1:cor:tv}.
+The coefficients determine explicit reference laws, but the constants
+in the asymptotic errors and the thresholds in \(N\) are not given
+numerically.
+
+The independent proof of bounded fixed moments is also
+essential. It precedes the law approximation and permits
+the weighted scalar improvement in
+Corollary~\ref{p13:optimal:weighted}.
+Total variation controls bounded observables,
+whereas powers of the count are unbounded. Conversely,
+even eventual exact agreement at each fixed moment order, together
+with uniformly bounded exponential moments, does not give
+a polynomial total variation rate. Section~\ref{p1:moment-obstruction} of the companion
+provides a finite-difference example. The distinction between
+a fixed order and the logarithmic range used in the stopped
+expansion is thus substantive.
+
+The stopped expansion does not require uniformly bounded exponential
+moments for the original count. The arithmetic cylinder in
+Proposition~\ref{p1:limits:cylinder} explains why such a bound cannot be
+imported from a nearby truncated count.
+
+For the positional comparison in
+Lemma~\ref{p1:limits:vector-reference}, the individual edge weights
+\(q_e\) specify geometry that the scalar coefficient
+\(\widehat\alpha_N\) alone cannot recover. A sign-resolved field,
+rare doublet count, or finer Palm distribution would require its
+own target and error estimate.

@@ -1,0 +1,197 @@
+P1 — REVUE INDÉPENDANTE DU PATCH STRUCTUREL SIM09–SIM11
+Statut : complete_frozen
+Base documentaire : 0f67b5432ea89fbc64adb0ee4ea44e72370c195b
+Preuves : 7bfc953cd6092eebfbae5f24aeb72b7180693537
+Patch SHA256 : 41322ff86ec56e86167016dbffac2579add7d19e55e8af3fc11f3d443e8947be
+
+Avis : acceptable mathématiquement ; aucune correction nécessaire, aucune lacune confirmée.
+Six fichiers changés et48 empreintes vérifiées ;167 blocs numérotés et552 labels conservés.
+Les deux contre-exemples et la table/recette sont déplacés verbatim, une seule copie physique chacun.
+Gain :25 lignes physiques de source ; aucun gain de page mesuré dans cette revue.
+Aucun Lean/Lake, replay, PDF, Palomar ni mutation du dépôt, des sources ou des anciens rapports.
+
+SIM09 — adequate
+main_sections/exact_transfer.tex:120–126
+companion_sections/closure.tex:334–354
+
+finding : Le nouveau paragraphe étend seulement la borne algébrique aux coefficients réels, définitA2=Σ|c(e)|, conserve les bornes de moyenne/marginale et réserveVarZ−EZ au cas des vraies covariances.
+
+hypotheses_and_objects : DansT17.4 :n≥2 découle uniformément du complément régulier ; p_i=p=2^{-L}, μ=np=O_C(1) etp≤1/4 pourN grand. Un coefficient FORMELC2 sur une seule paire donne b^n+C2Δ²b^{n−2}, A2=|C2| etα=2C2−np²=αG. Aucune nouvelle loi ayant ces covariances n’est supposée.
+
+error : ErreurO_C(np³+(np²)²+|C2|(np²+p)), puis remplacement parβ au coût4|β−C2|. n=O(N),p=O_C(N^{-1}) et|C2|=O_C(a_N) donnentO_C(N^{-2}+a_N/N). La formule binomiale sans coefficient et son label sont byte-identiques.
+
+circularity : 15.1 est purement analytique ; n≥2 etC2=O(a_N) ont des preuves arithmétiques antérieures. La conclusion deT17.4 ou d’une reconstruction n’est jamais supposée.
+
+Corrections nécessaires : aucune.
+
+SIM10 — adequate
+formalization.tex:1–22
+companion_sections/arithmetic_appendix.tex:882–899
+companion_sections/short_supports.tex:70–82
+
+finding : Les deux paragraphes complets sont déplacés verbatim une seule fois, hors des environnements numérotés et de leurs preuves. Le rayon, les cutoffs, les paramètres et les inégalités du plafond restent présents.
+
+reference_and_scope : « recorded in the formalization notes » devient « family below », juste avant le contre-exemple local. La note commune garde les correctionsv1.7 distinctes des renforcementsv1.8, les167 labels, la traçabilité et les limites de la correspondance formelle. Compilateur, Mathlib épinglé et validations restent indiqués par le dépôt ; assistance et bibliographie ne changent pas.
+
+circularity : Aucun lien de preuve nouveau. Les exemples expliquent pourquoi les formulations historiques devaient être corrigées ; ils n’ajoutent pas d’hypothèse aux énoncés et ne remplacent pas les preuves corrigées.
+
+Corrections nécessaires : aucune.
+
+SIM11 — adequate
+main_sections/introduction.tex:681–683
+main_sections/exact_transfer.tex:1016–1057
+
+finding : La table et la recette entière sont déplacées verbatim après la preuve complète de reconstruction, hors de celle-ci. Le renvoi de l’introduction est correct. Les cinq marges rationnelles, le termeA2² au taux4/3, les ordres fixes≤256 et les contrôles séparés des grands ordres sont conservés.
+
+circularity : La ligne quartique est un renvoi avant vers la preuve indépendante du lower bound. Ce bilan ne devient pas une prémisse de l’upper bound.
+
+Corrections nécessaires : aucune.
+
+CINQ TYPES COMPILÉS ET CORPS COMPARÉS
+PaperP1.UniversalHeterogeneousConversion.actual_signed_measure_conversion (PaperP1/Probability/UniversalHeterogeneousConversion.lean:115)
+G,E finis, chaque e⊆G de cardinalité2 ; p_i∈[0,1], p_i≤P,P≥0 ; coefficients c(e) réels arbitraires. Le corps combine erreur quadratique et suppression d’une paire puis compare les mesures signées réelles. Aucun lien à une covariance ni borne supposée de l’erreur cible ; constante16exp2.
+Verdict : adequate_exact_scope
+Type compilé exact :
+∀ {ι : Type u_1} [inst : DecidableEq ι] (G : Finset ι) (E : Finset (Finset ι)) (p : ι → ℝ) (c : Finset ι → ℝ),
+  (∀ e ∈ E, e ⊆ G ∧ e.card = 2) →
+    (∀ i ∈ G, 0 ≤ p i ∧ p i ≤ 1) →
+      ∀ {P : ℝ},
+        0 ≤ P →
+          (∀ i ∈ G, p i ≤ P) →
+            ∑' (k : ℕ),
+                |(PaperP1.FiniteLawEmbedding.embed
+                        (PaperP1.HeterogeneousPoissonCharlierConversion.finiteReference G E p c) -
+                      PaperP1.QuadraticPoisson.reference (PaperP1.HeterogeneousBernoulli.mean G p)
+                        (2 * PaperP1.HeterogeneousPoissonCharlierConversion.covarianceSum E c -
+                          PaperP1.HeterogeneousBernoulli.powerSum G p 2))
+                    {k}| ≤
+              PaperP1.UniversalHeterogeneousConversion.universalConstant *
+                (PaperP1.HeterogeneousBernoulli.powerSum G p 3 + PaperP1.HeterogeneousBernoulli.powerSum G p 2 ^ 2 +
+                  PaperP1.HeterogeneousPoissonCharlierConversion.absolutePairMass E c *
+                    (PaperP1.HeterogeneousBernoulli.powerSum G p 2 + P))
+
+
+PaperP1.HeterogeneousPoissonCharlierConversion.actual_signed_measure_conversion (PaperP1/Probability/HeterogeneousPoissonCharlierConversion.lean:102)
+Même référence à coefficients réels arbitraires, avecμ≤M et constante16exp(2M). absolutePairMass=Σ|c(e)| et covarianceSum=Σc(e), malgré ce nom historique. Le corps conserve exactement les erreurs s3+s2²+A2(s2+P).
+Verdict : adequate_exact_scope
+Type compilé exact :
+∀ {ι : Type u_1} [inst : DecidableEq ι] (G : Finset ι) (E : Finset (Finset ι)) (p : ι → ℝ) (c : Finset ι → ℝ),
+  (∀ e ∈ E, e ⊆ G ∧ e.card = 2) →
+    (∀ i ∈ G, 0 ≤ p i ∧ p i ≤ 1) →
+      ∀ {P M : ℝ},
+        0 ≤ P →
+          (∀ i ∈ G, p i ≤ P) →
+            PaperP1.HeterogeneousBernoulli.mean G p ≤ M →
+              ∑' (k : ℕ),
+                  |(PaperP1.FiniteLawEmbedding.embed
+                          (PaperP1.HeterogeneousPoissonCharlierConversion.finiteReference G E p c) -
+                        PaperP1.QuadraticPoisson.reference (PaperP1.HeterogeneousBernoulli.mean G p)
+                          (2 * PaperP1.HeterogeneousPoissonCharlierConversion.covarianceSum E c -
+                            PaperP1.HeterogeneousBernoulli.powerSum G p 2))
+                      {k}| ≤
+                PaperP1.HeterogeneousPoissonCharlierConversion.constant M *
+                  (PaperP1.HeterogeneousBernoulli.powerSum G p 3 + PaperP1.HeterogeneousBernoulli.powerSum G p 2 ^ 2 +
+                    PaperP1.HeterogeneousPoissonCharlierConversion.absolutePairMass E c *
+                      (PaperP1.HeterogeneousBernoulli.powerSum G p 2 + P))
+
+
+PaperP1.FinitePoissonCharlierConversion.actual_signed_measure_conversion (PaperP1/Probability/FinitePoissonCharlierConversion.lean:96)
+n≥2,0≤p≤1,np≤A, β,c2 réels ; référence b^n+βΔ²b^{n−2}, paramètre2c2−np². La preuve sépare4|β−c2|, l’erreur quadratique binomiale et|c2|(p+np²). C’est la forme analytique exacte de la spécialisation à une paire.
+Verdict : adequate_exact_scope
+Type compilé exact :
+∀ {n : ℕ},
+  2 ≤ n →
+    ∀ {p A : ℝ},
+      0 ≤ p →
+        p ≤ 1 →
+          ↑n * p ≤ A →
+            ∀ (β c₂ : ℝ),
+              ∑' (k : ℕ),
+                  |(PaperP1.FiniteLawEmbedding.embed (PaperP1.FinitePoissonCharlierConversion.finiteReference n p β) -
+                        PaperP1.QuadraticPoisson.reference (↑n * p) (2 * c₂ - ↑n * p ^ 2))
+                      {k}| ≤
+                4 * |β - c₂| + 16 * Real.exp (2 * A + 4) * (↑n * p ^ 3 + (↑n * p ^ 2) ^ 2) +
+                  16 * Real.exp (2 * A + 2) * |c₂| * (p + ↑n * p ^ 2)
+
+
+PaperP1.PoissonCharlierConversion.regular_card_eventually (PaperP1/Asymptotics/PoissonCharlierConversion.lean:83)
+∀C ∃N0≥4 avantN,L critiques :card regularStartsN L≥2. Le corps utilise le complément irrégulier≤sqrtN et la cardinalité totaleN ; aucune reconstruction.
+Verdict : adequate_exact_scope
+Type compilé exact :
+∀ (C : ℝ),
+  ∃ N₀,
+    4 ≤ N₀ ∧
+      ∀ N ≥ N₀, ∀ (L : ℕ), |↑L - Real.log ↑N / Real.log 2| ≤ C → 2 ≤ (PaperP1.RegularStarts.regularStarts N L).card
+
+
+PaperP1.SharpRetainedConversion.companion_T17_4 (PaperP1/Asymptotics/SharpRetainedConversion.lean:17)
+∀C ∃K>0,N0 avantN,L,H : erreur≤4|β−covariance régulière|+K(N^{-2}+a_N/N), avec vraie moyenne et vrai cumulant réguliers. Le corps raccorde actual_regular_bound à SharpCovarianceScale ; aucune conclusion de reconstruction n’est une prémisse.
+Verdict : adequate_exact_scope
+Type compilé exact :
+∀ (C : ℝ),
+  ∃ K,
+    0 < K ∧
+      ∃ N₀,
+        3 ≤ N₀ ∧
+          ∀ N ≥ N₀,
+            ∀ (L : ℕ),
+              |↑L - Real.log ↑N / Real.log 2| ≤ C →
+                ∀ (H : ℝ),
+                  ∑' (k : ℕ),
+                      |(PaperP1.FiniteLawEmbedding.embed (PaperP1.RetainedReferenceTheorem.binomialReference H N L) -
+                            PaperP1.QuadraticPoisson.reference
+                              (PaperP1.CountObservables.countMoment (PaperP1.RegularStarts.regularStarts N L) L 1)
+                              (PaperP1.RegularCumulantTransfer.secondFactorialCumulant
+                                (PaperP1.RegularStarts.regularStarts N L) L))
+                          {k}| ≤
+                    4 *
+                        |PaperP1.RetainedReferenceTheorem.beta H N L -
+                            PaperP1.SecondFactorialCorrection.regularCovariance N L| +
+                      K * (1 / ↑N ^ 2 + PaperP1.SecondFactorialCorrection.value N L / ↑N)
+
+
+EMPREINTES DES SIX FICHIERS
+companion_sections/arithmetic_appendix.tex
+Avant : 0509263ffdaf001f4015385e25420e6a5af584db9c3c54087c96dab22b4bad51
+Après : abfb7b1ab318465e097108e99d1796cb375b64654f660c3615a09b09cbd46bc1
+Lignes physiques gagnées : -14
+
+companion_sections/closure.tex
+Avant : 6e037bed0465effec4d0e9b8a0ee85952097da211302519344bfcbbe7f952658
+Après : c4e522fa1b996c1e7a83b3e47e81e1abac99623a1ff408d74b7a30c643a29268
+Lignes physiques gagnées : 15
+
+companion_sections/short_supports.tex
+Avant : 4055767ce142e78dac6780a288b3c0f10687286588e081a7c08fb84ecb504fe9
+Après : 7b096de013726a20c738635657990b89ba89d287444ac175fd5f5dbba1763f8e
+Lignes physiques gagnées : -15
+
+formalization.tex
+Avant : 37d7ea903380a0c81f60a4d93c0d2f8b80118fd556539fa305afbaa8b3cc7a3f
+Après : 22f43b5c343a96c22c8b0a6037842c4edae8d910d0c2979a7ed3a1edf3e69206
+Lignes physiques gagnées : 51
+
+main_sections/exact_transfer.tex
+Avant : 53f2fd71ec705c29336f62bcc18a16e7a3ab8fa3fb40198332de24383dfb3770
+Après : 072d858b3c237889d370cf190a0ccba579209acc50e97f178348902b22d94e6f
+Lignes physiques gagnées : -50
+
+main_sections/introduction.tex
+Avant : 62807c66e81d826c97803b48ffe62b253d2cd9ccea0dba110af95c1a86e52ac5
+Après : 0f99240335f710a4bc919836a9d717b062abfd3266ae1bcd76c008525e09ada9
+Lignes physiques gagnées : 38
+
+DÉPLACEMENTS VERBATIM
+alignment_counterexample_moved_verbatim → companion_sections/arithmetic_appendix.tex:887–898
+SHA256 de métadonnées : ab16c451eebfb7b1f77355e0097b2c8334519c3c4b98199530b8d15d6d591b93 ; convention : strip
+Charge textuelle avec nouvelle ligne finale identique ; une seule copie physique.
+
+exponent_cap_counterexample_moved_verbatim → companion_sections/short_supports.tex:71–82
+SHA256 de métadonnées : 4d20f9b912e1caa965b6f861effd501917d3b7a0a874ef113fd7c58452eb58bd ; convention : strip
+Charge textuelle avec nouvelle ligne finale identique ; une seule copie physique.
+
+power_margin_table_and_recipe_moved_verbatim → main_sections/exact_transfer.tex:1016–1057
+SHA256 de métadonnées : e5c0384d3706594f7f4bea84056d4f23a0b1113a3a56381e518ca085d9e0bbc1 ; convention : raw
+Charge textuelle avec nouvelle ligne finale identique ; une seule copie physique.
+
+La compilation et la QA des nouveauxPDF relèvent d’un contrôle distinct par le parent.

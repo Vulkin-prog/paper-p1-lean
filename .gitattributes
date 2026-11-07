@@ -5,3 +5,5 @@ manuscripts/paper-p1/v1.8/sources/**/*.tex whitespace=-blank-at-eol,-blank-at-eo
 docs/editorial-proposals/2026-11-07/clarifications-and-finite-examples.patch whitespace=-blank-at-eol
 docs/editorial-proposals/2026-11-07/simplification/concise-proofs.patch whitespace=-blank-at-eol
 manuscripts/paper-p1/editorial-condensed-preview-2026-11-07/sources/**/*.tex whitespace=-blank-at-eol,-blank-at-eof
+docs/editorial-proposals/2026-11-07/structural-simplification/structural-simplifications.patch whitespace=-blank-at-eol
+manuscripts/paper-p1/editorial-structural-preview-2026-11-07/sources/**/*.tex whitespace=-blank-at-eol,-blank-at-eof

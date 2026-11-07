@@ -1,0 +1,78 @@
+P1 — PASSE STRUCTURELLE SIM09–SIM11 : REVUE PRÉLIMINAIRE
+Statut : complete_frozen ; portée : conditions préalables, diff concret non encore reçu.
+Aperçu : 0f67b5432ea89fbc64adb0ee4ea44e72370c195b
+Preuves : 7bfc953cd6092eebfbae5f24aeb72b7180693537
+
+SIM09 est justifié par la conversion algébrique existante, avec n≥2 et coefficients formels correctement distingués des covariances. SIM10 et SIM11 sont des déplacements sans suppression scientifique si leurs blocs sont conservés verbatim. Un renvoi de T1.10 vers les anciennes notes doit être actualisé.
+Aucun Lean/Lake, build, replay, PDF ou Palomar exécuté ; aucun dépôt/source/ancien rapport modifié.
+
+SIM09 — justifie_sous_les_conditions_explicites_ci_dessous
+
+- Le paragraphe non numéroté précise que seule la borne ALGÉBRIQUE s’étend aux coefficients réels arbitraires ; ces coefficients n’ont pas à être réalisables comme covariances d’une nouvelle loi.
+- Conserver p_i∈[0,1], μ≤M et p_*≤1/4 dans la portée imprimée de15.1. Le théorème universel est plus fort, mais sa portée plus large n’est pas nécessaire pour cette réécriture.
+- Écrire A2=Σ|c(e)| pour la famille formelle utilisée. Ne jamais remplacer sans cette construction Σ|cov(e)| par |Σcov(e)|.
+- DansT17.4, justifier n≥2 pourN assez grand à partir du compte du complément régulier. Le seuil dépend du C fixé et précèdeN,L,H ; aucune nouvelle hypothèse sur une configuration particulière.
+- μ=np=O_C(1) et p=O_C(N^{-1}) donnent μ≤M_C et p≤1/4 pourN assez grand. La constante de15.1 devient donc une constante dépendant du C fixé.
+- Le choix de la paire est arbitraire et n’exige ni bonne arête, ni compatibilité, ni positivité d’une covariance. Les b_i sont les lois de référenceBernoulli indépendantes.
+- Conserver la formule et le labelp1:close:binomial-expansion. L’obtenir par la spécialisation à tous coefficients nuls de15.1, et non en réintroduisant une deuxième longue preuve logarithmique.
+- Le remplacement du coefficient C2 parβ coûte4|β−C2| puisque b^{*(n−2)} est une probabilité et ||Δ²||1=4.
+- Conserver l’erreur O_C(np³+(np²)²+|C2|(np²+p)). Puis utiliser séparément |C2|=O_C(a_N), déjà établi arithmétiquement, pour obtenir O_C(N^{-2}+a_N/N).
+- Pour des coefficients génériques, α=2Σc−s2 est un paramètre formel. Son identification avecVarZ−EZ n’est justifiée que dans l’application aux vraies covariances.
+
+Circularité : Pas de cycle siT17.4 invoque la seule conversion algébrique15.1. La preuve de cette conversion est indépendante deT17.4 et des reconstructions.
+
+Paragraphe anglais proposé :
+The same algebraic estimate holds when the symbols $c(e)$ in $B_2$
+are arbitrary real pair coefficients, with
+$A_2=\sum_e|c(e)|$ and $\alpha=2\sum_e c(e)-s_2$.
+Their interpretation as covariances is needed only to identify
+$\alpha$ with the second factorial cumulant.
+The assumptions on the Bernoulli parameters remain unchanged.
+
+Raccord de cardinalité :
+For all sufficiently large $N$, Proposition~\ref{p1:arith:core}
+gives $n=|G|\ge2$. Choose any pair in $G$ and assign it the
+formal coefficient $C_2$, with all other pair coefficients zero.
+
+Formule et label à conserver :
+\begin{equation}
+ b^{*n}
+ =\Pi_\mu-\frac{np^2}{2}\Pi_\mu*\Delta^{*2}
+           +O_{\ell^1}\bigl(np^3+(np^2)^2\bigr).
+ \label{p1:close:binomial-expansion}
+\end{equation}
+
+SIM10 — deplacement_acceptable_sous_conservation_verbatim
+
+- Déplacer exactement les deux blocs22–33 et35–46, avec mêmes octets et ponctuation scientifique, chacun une seule fois dans le compagnon.
+- Le nouveau paragraphe de correction est HORS de l’environnement numéroté et hors de sa preuve ; il explique la nécessité des hypothèses sans ajouter une prémisse au lemme.
+- Mettre à jour le renvoi orphelin identifié ci-dessous, sans modifier le bloc du contre-exemple lui-même.
+- La note commune courte maintient la séparation : deux corrections nécessaires introduites env1.7, renforcements facultatifs env1.8. Ne pas assimiler les checkpoints/intermédiaires à des nouveautés scientifiques.
+- Conserver une traçabilité explicite vers le dépôt, le compilateur/Mathlib épinglés, les déclarations et validations. Les diagnostics finis et le contrôle du noyau ne remplacent pas la correspondance au texte.
+- Ne pas transformer les limites de portée de l’ancienne note en nouvelles revendications : short-average général, asymptotique deDickman et surface générale ne sont pas prouvés ici.
+- La note partagée peut renvoyer aux deux lemmas via les liens externes du compagnon depuis l’article. Conserver l’entrée de sommaire si le titre de la section non numérotée change.
+- Conserver les167 résultats et tous les labels ; les deux paragraphes ne créent aucun environnement numéroté supplémentaire.
+
+Circularité : Aucune dépendance de preuve nouvelle. Les paragraphes corrigent une formulation historique et donnent des contre-exemples ; ils ne servent pas à démontrer les conclusions asymptotiques corrigées.
+
+Renvoi à corriger : manuscripts/paper-p1/editorial-condensed-preview-2026-11-07/sources/companion_sections/arithmetic_appendix.tex:882–884
+Après déplacement et allègement de la note commune, cette localisation devient fausse.
+Remplacer le renvoi par le nouveau paragraphe local (« recorded below » ou un renvoi local précis). Le texte du contre-exemple déplacé reste verbatim.
+
+SIM11 — deplacement_documentaire_acceptable
+
+- Déplacer la table et son explication, avec toutes les références ; conserver le bref renvoi de l’introduction vers le lieu d’arrivée.
+- Conserver les marges exactes1/120,2/15,1/30,1/60,1/6 et la distinction des erreurs quartiques.
+- La ligne quartique est un renvoi AVANT vers la preuve du lower bound dans la section suivante ; la table n’est pas une prémisse de l’upper bound.
+- Garder le termeA2² au taux4/3 : aucune marge stricte n’autorise son élimination.
+- Maintenir les paramètres choisis aprèsε0 et avantN, les ordres fixes≤256 et les deux contrôles séparés des grandes cardinalités.
+- Éviter de faire passer le déplacement pour une réduction globale de longueur : l’intérêt est l’ordre de lecture ; gain net de source normalement nul hors phrase de renvoi.
+
+Circularité : Pas de cycle si la table reste un bilan après la preuve complète et ne devient pas un lemme utilisé dans celle-ci. Les cibles arithmétiques et de quartique conservent leur direction logique.
+
+À VÉRIFIER SUR LE DIFF CONCRET
+- Vérifier les empreintes des fichiers proposés et le diff exact contre l’aperçu0f67b543.
+- Vérifier conservation byte-identique des167 blocs numérotés et du multiensemble des labels.
+- Vérifier les deux paragraphes déplacés verbatim et l’absence de doublons résiduels.
+- Vérifier la formule binomiale/son label, le choix formel de la paire et n≥2 explicite.
+- Vérifier les renvois des deux documents après les déplacements ; la QA desPDF reste distincte.

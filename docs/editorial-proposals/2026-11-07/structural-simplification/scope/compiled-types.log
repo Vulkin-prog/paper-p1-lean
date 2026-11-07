@@ -1,0 +1,12 @@
+'PaperP1.UniversalHeterogeneousConversion.actual_signed_measure_conversion' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.HeterogeneousPoissonCharlierConversion.actual_signed_measure_conversion' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.FinitePoissonCharlierConversion.actual_signed_measure_conversion' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.PoissonCharlierConversion.regular_card_eventually' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.SharpRetainedConversion.companion_T17_4' depends on axioms: [propext, Classical.choice, Quot.sound]
+Exported compiled scope types for 5 declarations

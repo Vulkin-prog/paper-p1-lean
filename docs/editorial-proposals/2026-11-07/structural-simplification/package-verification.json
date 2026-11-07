@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "source_hashes": 48,
+  "pdf_hashes": 2,
+  "numbered_blocks": 167,
+  "label_occurrences": 552,
+  "local_links": "passed",
+  "protected_prior_files_byte_identical": 310,
+  "math_ledger_entries": 1004
+}

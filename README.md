@@ -26,6 +26,11 @@ now exposes the actual homogeneous bounds and a shared short proof for four weig
 An [independent simplification review](docs/editorial-proposals/2026-11-07/simplification/README.md)
 records 13 proposals. The first eight are applied in a separate marked preview:
 120 source lines removed, all 167 numbered blocks retained, and one PDF page saved.
+A [second structural pass](docs/editorial-proposals/2026-11-07/structural-simplification/README.md)
+applies three more proposals, yielding 64 article pages and 102 companion pages:
+three fewer pages than frozen v1.8, with all 167 numbered blocks and 552 labels
+preserved from the first condensed stage. Both prior previews remain available.
+
 
 The separate review instance has now directly compared all 167 numbered-result
 labels across its frozen source snapshots; the [complete review index](docs/MANUSCRIPT_ENDPOINTS_V1_8.md)
@@ -33,6 +38,8 @@ records every clause and inherited premise.
 
 | Manuscript | PDF | Editable source |
 |---|---|---|
+| Article, separate structural editorial preview | [PDF](manuscripts/paper-p1/editorial-structural-preview-2026-11-07/pdf/P1_Structural_Editorial_Preview_Main_2026-11-07_EN.pdf) | [TeX](manuscripts/paper-p1/editorial-structural-preview-2026-11-07/sources/main.tex) |
+| Companion, separate structural editorial preview | [PDF](manuscripts/paper-p1/editorial-structural-preview-2026-11-07/pdf/P1_Structural_Editorial_Preview_Companion_2026-11-07_EN.pdf) | [TeX](manuscripts/paper-p1/editorial-structural-preview-2026-11-07/sources/companion.tex) |
 | Article, separate condensed editorial preview | [PDF](manuscripts/paper-p1/editorial-condensed-preview-2026-11-07/pdf/P1_Condensed_Editorial_Preview_Main_2026-11-07_EN.pdf) | [TeX](manuscripts/paper-p1/editorial-condensed-preview-2026-11-07/sources/main.tex) |
 | Companion, separate condensed editorial preview | [PDF](manuscripts/paper-p1/editorial-condensed-preview-2026-11-07/pdf/P1_Condensed_Editorial_Preview_Companion_2026-11-07_EN.pdf) | [TeX](manuscripts/paper-p1/editorial-condensed-preview-2026-11-07/sources/companion.tex) |
 | Article, version 1.8 working draft | [PDF](manuscripts/paper-p1/v1.8/pdf/P1_V1_8_Main_Article_2026-11-07_EN.pdf) | [TeX](manuscripts/paper-p1/v1.8/sources/main.tex) |
