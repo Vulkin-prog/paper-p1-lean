@@ -1,0 +1,15 @@
+{
+  "challenge_module": "ChallengeP1PositionalField",
+  "solution_module": "SolutionP1PositionalField",
+  "theorem_names": [
+    "PaperP1Registry.PositionalField.positive_single_rates",
+    "PaperP1Registry.PositionalField.weighted_original_grid",
+    "PaperP1Registry.PositionalField.canonical_weighted_grid"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "enable_nanoda": true
+}

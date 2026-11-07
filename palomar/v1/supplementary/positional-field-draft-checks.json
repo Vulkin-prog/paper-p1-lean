@@ -1,0 +1,87 @@
+{
+  "base_proof_commit": "4606a1f1a70bc28a168200e94ea486134f7f966d",
+  "stage": "draft compile/export and direct audit",
+  "imported_project_proof_sources_unchanged": true,
+  "module_exports": [
+    {
+      "module": "ChallengeP1PositionalField",
+      "source_sha256": "3d2e21215fd0a22dd0b20d45497ea192060561468ee31f517091c15afc906eef",
+      "export_sha256": "2c238d575ce74b6463730389feb682883c72979a2c1d471505af9a537a4e536b",
+      "export_bytes": 150677637,
+      "compilation_exit": 0,
+      "export_exit": 0,
+      "compressed_export_sha256": "63e4f02003a55911a81a74219811bdfae72778c1934cb99e3879b156e98a723e",
+      "compressed_export_bytes": 23167316,
+      "compression_verified_lossless": true
+    },
+    {
+      "module": "SolutionP1PositionalField",
+      "source_sha256": "a10cd249078f0a62139169075becf2c703f480e8eff9274edb9e8d88c416f15b",
+      "export_sha256": "6642361674ccd721afb13e7860d15d4420b06c79cfc004843db138fd1f3f2e59",
+      "export_bytes": 959898499,
+      "compilation_exit": 0,
+      "export_exit": 0,
+      "compressed_export_sha256": "68359317898c0b12219fbf996439fed68874c96bb56e7edbb18ea0f321daa222",
+      "compressed_export_bytes": 145047026,
+      "compression_verified_lossless": true
+    }
+  ],
+  "selected_declarations": [
+    "PaperP1Registry.PositionalField.positive_single_rates",
+    "PaperP1Registry.PositionalField.weighted_original_grid",
+    "PaperP1Registry.PositionalField.canonical_weighted_grid"
+  ],
+  "palomar_full_workflow_passed": false,
+  "audited_draft_theorems": 12,
+  "six_checker_replay": {
+    "actual_comparator_exit": 0,
+    "kernels_accepted": [
+      "Lean paranoid",
+      "con-leche",
+      "con-ron",
+      "lean4lean",
+      "nanoda",
+      "Lean default"
+    ],
+    "bubblewrap_enabled": true,
+    "con_ron_verified": true,
+    "con_ron_jobs": 2,
+    "con_leche_accepted_declarations": 98776,
+    "con_ron_accepted_declarations": 98776,
+    "lean4lean_checked_declarations": 98777,
+    "log_sha256": "910fb6d147f9175d5cf6f537383a7b415597e3c2a71de60358491102ab9cd400"
+  },
+  "tool_binary_sha256": {
+    "lake": "42678ccbc2605e2f892540dc7236e009fdd1224e823d104dfd72725d2f1a52d2",
+    "leanexport": "8298d4412a1f8986b5dbfd1d9925211778d8d320fc47b72040c8fdfdd5b603d5",
+    "leanchecker": "2b2ff08805ace61c935b023f8114ac3f7f1d3bc79cb4e8c47ef7801a5af58798",
+    "leanchecker-paranoid": "4508d26d3e22463a9566a6155d7a1600c7bfc42b6cd2548be73e3d19d159d6c5",
+    "lean4lean": "baaec030a70c78562ced2c75866ab0d2410e81ce680b835179ed16570ad5ef97",
+    "nanoda_bin": "8241c5e6baa29490aa118d382f97961b208ae730fdb96545c2abed74c9ece5a8",
+    "con-leche": "a6380d68b4fb364189821dd4692569c11536de0a1e3aaefea06028c0d67bb193",
+    "con-ron": "4e5616d94374cae37324dad2594f6230c2bb2297240249fc78ff508f3bc5acef"
+  },
+  "kernel_commands": {
+    "Lean paranoid": [
+      "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/leanchecker-paranoid",
+      "--silent",
+      "--from-export"
+    ],
+    "lean4lean": [
+      "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/lean4lean",
+      "--import"
+    ],
+    "nanoda": [
+      "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/nanoda_bin"
+    ],
+    "con-leche": [
+      "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/con-leche"
+    ],
+    "con-ron": [
+      "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/con-ron",
+      "--verified",
+      "--jobs=2"
+    ]
+  },
+  "scope": "Standalone immutable exports and exact statement comparison, direct twelve-theorem audit and six-checker acceptance at the stated proof base. Frozen-root qualification and the complete Palomar workflow are separate stages. No personal relationship declaration or intake."
+}

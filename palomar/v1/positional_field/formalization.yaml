@@ -1,0 +1,83 @@
+version: v0.4
+project:
+  name: Original weighted positional Poisson field on the complete arithmetic grid
+  description: Literal fair prime-sign values, actual unsigned run starts, effective even square classes,
+    the leading normalized private-prime good edges and their individual joint rates are explicit. The
+    original single rates are proved positive uniformly over all private cutoffs. Every independent Poisson
+    realization has the convergent polynomially weighted comparison on the complete original grid, with
+    the printed exponent 4/5. A concrete finite product of Poisson measures supplies the same convergent
+    comparison. Each fixed degree precedes one threshold before all probability spaces and arrival variables.
+  authors:
+  - Brice Pouly
+  author_identifiers:
+  - name: Brice Pouly
+    github: Vulkin-prog
+    orcid: 0009-0008-8491-2467
+  responsible_maintainers:
+  - Brice Pouly
+  license: Apache-2.0
+repository:
+  role: substantive-development
+classification:
+  arxiv:
+  - math.PR
+  - math.NT
+sources:
+- title: Sharp Poisson approximation and second-order correction for long multiplicative runs, version
+    1.7 draft
+  authors:
+  - Brice Pouly
+  id: https://github.com/Vulkin-prog/paper-p1-lean
+  type: paper
+  relationship: formalizes
+  location: Main lemma 20.1, main_sections/limits_appendix.tex; its companion proof in companion_sections/limits_appendix.tex;
+    independent-arrival interpretation in the unnumbered version 1.7 formalization appendix, checkpoint
+    P1-MATH-0992.
+  note: The standalone data include literal exponent parities, actual prime-sign integrals for all q_e,
+    the original arithmetic good-edge predicate and cutoff 8(L+1), p=2^(-L), the individual rates p-iota_x,
+    and the coordinate formula Z_x=U_x+sum_(e containing x)V_e. Both the arbitrary-realization and canonical-product
+    weighted error series are explicitly summable. The original field locations and exponent are preserved.
+related_formalizations:
+- id: https://github.com/Vulkin-prog/paper-c-lean
+  relationship: adapts
+  note: Prime-sign, parity and run-start foundations are adapted through P1 from Paper C commit b9fa9ba490f201b408a302a86f1594ee620b228b,
+    Apache-2.0, rebuilt under Lean v4.36.0-rc2. The arithmetic good edges and convergent weighted positional
+    approximation are substantive P1 proofs. Source headers and docs/PAPER_C_REUSE.md preserve attribution.
+automation:
+  methods:
+  - method: agent
+    framework: Codex
+    models:
+    - OpenAI Codex agents
+    prompting_notes: Expose the complete original unsigned field, actual individual good-edge joint probabilities
+      and mutually independent Poisson arrivals in Mathlib-only definitions. Prove exact arithmetic and
+      probability-model bridges, retain explicit summability and the original exponent 4/5, and keep a
+      common threshold before the probability space and every independent realization.
+    tool_setup: Lean proof construction, native literal-model bridges, source-bound compilation and exact
+      axiom audit, standalone immutable exports and isolated independent checking.
+  notes: Agent assistance is not independent human peer review.
+review:
+  status: agent-reviewed
+  notes: 'Three explicit standalone statements and their complete Solution compile under Lean v4.36.0-rc2
+    with proof warnings as errors. All twelve bridge and theorem axioms passed the exact direct audit,
+    allowing only the three standard kernel axioms. Standalone exports passed exact statement comparison
+    and all six installed checkers: Lean default, Lean paranoid, lean4lean, NanoDa, verified con-leche
+    and verified con-ron with two jobs, with isolation enabled. The original source hashes, immutable
+    earlier proof base, binary hashes and logs are preserved. Frozen-root qualification and the complete
+    Palomar workflow are separate stages. Only the three selected Challenge statements have deliberate
+    holes.'
+status:
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms:
+  - propext
+  - Quot.sound
+  - Classical.choice
+  scope: 'Three selected declarations: arithmetic single-rate positivity uniform over all cutoffs; the
+    convergent weighted comparison for every independent Poisson realization; the same convergent comparison
+    for the explicit product measure. No registration is claimed.'
+fidelity:
+  divergences: An independent-arrival formulation of main20.1, with its original complete dyadic grid,
+    unsigned start events, actual individual good-edge joint rates, nominal single intensity and exponent
+    4/5. Explicit summability and an actual canonical product realization make its probability interpretation
+    precise. All numbered statements retain their original revised scope.

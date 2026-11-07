@@ -124,3 +124,12 @@ statements for the finite layers, effective density, actual affine forcing mass
 and five-start numerical gain. Thirteen direct theorem/bridge audits and all
 six checkers passed on standalone exports. Its frozen-root qualification and
 verified con-ron replay passed, with their exact source recorded separately.
+
+
+A sixteenth [positional-field candidate](../palomar/v1/positional_field/formalization.yaml)
+adds three literal-model statements: positivity of the original single rates,
+the convergent weighted grid comparison for every independent Poisson
+realization, and the explicit product realization. Its twelve theorem/bridge
+proofs and all six local checkers passed on standalone exports at the preserved
+proof base. Frozen-root qualification is pending. The two earlier workflow
+callers are preserved; the new positional-field caller is separate.

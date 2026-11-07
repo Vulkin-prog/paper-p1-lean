@@ -153,3 +153,12 @@ its exact source attribution and was rebuilt with the new compiler. Manuscript
 provenance and authorship remain in the manuscript packages. Agent assistance
 and review are disclosed in the manuscript and candidate metadata; they do not
 constitute independent human peer review.
+
+
+A sixteenth [positional-field candidate](palomar/v1/positional_field/formalization.yaml)
+adds three literal-model statements: positivity of the original single rates,
+the convergent weighted grid comparison for every independent Poisson
+realization, and the explicit product realization. Its twelve theorem/bridge
+proofs and all six local checkers passed on standalone exports at the preserved
+proof base. Frozen-root qualification is pending. The two earlier workflow
+callers are preserved; the new positional-field caller is separate.

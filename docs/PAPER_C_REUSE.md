@@ -439,3 +439,13 @@ expansion to the precise additive error o(H/V) in P1's displayed square-root
 formula. The reciprocal-prime asymptotic, uniform square-part comparison and
 full T19.15 equivalent remain separate obligations. See
 [alignment](HARD_SADDLE_SCALE_ALIGNMENT.md).
+
+
+The standalone positional-field registry interface restates the previously
+ported parity-vector, prime-sign and run-start foundations above at the same
+Paper C commit. Its complete predecessor/word vertex labels retain the same
+convention. The effective square-class maps, actual leading private-prime good
+edges, individual joint rates, independent Poisson arrival model and convergent
+weighted original-grid comparison are P1 constructions. Exact model bridges
+and the pinned-compiler replay are recorded with the candidate; no old compiled
+artifact or additional Paper C source version is introduced.

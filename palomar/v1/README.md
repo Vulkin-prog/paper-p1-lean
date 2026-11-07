@@ -64,3 +64,12 @@ Model ports retain their precise licence and source attribution. See the
 [preparation plan](../../docs/PALOMAR_PLAN.md) for the current procedure.
 
 The finite valuation-cylinder family preserves four literal statements and thirteen audited theorem/bridge proofs. Its frozen-root qualification and verified con-ron replay passed. The [standalone six-checker report](supplementary/prime-cylinders-draft-checks.json) retains its actual earlier proof base and byte-identical module sources.
+
+
+A sixteenth [positional-field candidate](positional_field/formalization.yaml)
+adds three literal-model statements: positivity of the original single rates,
+the convergent weighted grid comparison for every independent Poisson
+realization, and the explicit product realization. Its twelve theorem/bridge
+proofs and all six local checkers passed on standalone exports at the preserved
+proof base. Frozen-root qualification is pending. The two earlier workflow
+callers are preserved; the new positional-field caller is separate.
