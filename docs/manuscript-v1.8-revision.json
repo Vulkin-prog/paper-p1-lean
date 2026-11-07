@@ -2,7 +2,7 @@
   "schema_version": 1,
   "version": "P1 V1.8 working draft",
   "baseline_commit": "2553ce56f7cc6bdc10194801c3d926b72b587dd1",
-  "proof_source_commit": "bd9fcea3f0b0abf147a33bbe543338dcc982e791",
+  "proof_source_commit": "08f019df4d33a817377e5c937356fe4d87ae08e1",
   "numbered_statement_changes": [
     {
       "label": "p1:arith:hosts",
@@ -520,7 +520,7 @@
   },
   "proof_source_manifest": {
     "path": "docs/validation/manuscript-v1.8/proof-source-manifest.json",
-    "sha256": "f0a9837b7db162c464e230e5bb976f47bbb0ffc687e836d1b251251025cf1485"
+    "sha256": "ec3d939a7bc77421d34f49755f6c5449af0d1a58bfb8e86be8786c01a39882e8"
   },
   "source_preservation": {
     "v1.6": true,
@@ -543,6 +543,12 @@
       "previous_proof_manifest_sha256": "892a00bbc6ed4eedd2f840f24a2c2f8e87148474dc986d9d2fb010393ef90b13",
       "new_proof_source_commit": "bd9fcea3f0b0abf147a33bbe543338dcc982e791",
       "record": "docs/validation/checkpoint-1000/manuscript-replay.json"
+    },
+    {
+      "previous_proof_source_commit": "bd9fcea3f0b0abf147a33bbe543338dcc982e791",
+      "previous_proof_manifest_sha256": "f0a9837b7db162c464e230e5bb976f47bbb0ffc687e836d1b251251025cf1485",
+      "new_proof_source_commit": "08f019df4d33a817377e5c937356fe4d87ae08e1",
+      "record": "docs/validation/checkpoint-1002/manuscript-replay.json"
     }
   ]
 }

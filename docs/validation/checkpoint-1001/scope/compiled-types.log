@@ -1,0 +1,7 @@
+'PaperP1.NominalRunReplicaFormula.conditional_nominal_formula' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.NominalRunReplicaFormula.run_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.NominalRunReplicaFormula.heterogeneous_run_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.NominalRunReplicaFormula.companion_T22_7' depends on axioms: [propext, Classical.choice, Quot.sound]
+Exported compiled scope types for 4 declarations

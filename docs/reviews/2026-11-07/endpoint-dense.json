@@ -1,0 +1,720 @@
+{
+  "schema_version": 1,
+  "audit": "independent_dense_endpoint_semantics",
+  "date_utc": "2026-11-07T12:27:32.322244+00:00",
+  "repository": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/paper-p1-lean",
+  "repository_head": "710286443d29df7528b8eb16df34b30707b2487b",
+  "source_version": "v1.8 frozen",
+  "scope": [
+    "15.3",
+    "15.4",
+    "15.6",
+    "15.8",
+    "15.11",
+    "T1.15",
+    "T1.16",
+    "T22.4",
+    "T21.4"
+  ],
+  "method": "Lecture des neuf énoncés et de leurs conventions locales ; lecture des types et corps des terminaux nommés, dépliage des objets/définitions de domaine et contrôle de leurs raccords arithmétiques directs. Confrontation aux types compilés archivés ; aucun nouveau build.",
+  "limits": [
+    "Audit sémantique ciblé, non nouvelle vérification de chaque ligne de preuve transitive ni nouvelle exécution du noyauLean.",
+    "Les historiques de réussite des builds ne sont pas des prémisses de l'adéquation ; les hypothèses formelles et les conclusions ont été lues directement.",
+    "Aucun TeX/PDF ni fichier du dépôt modifié. Aucun Lake ni Palomar exécuté. S07 et checkpoint0999 hors de ce périmètre.",
+    "Les localisateurs sont ceux deHEAD710286443d29df7528b8eb16df34b30707b2487b ; une évolution ultérieure ne doit pas les faire passer pour un audit de nouveaux sources."
+  ],
+  "evidence": [
+    {
+      "file": "docs/manuscript-results-v1.8.json",
+      "sha256": "e01eb2ce4ae72ede8c19d158e45741292d278e8328c26e4d9e7723a5292812b8"
+    },
+    {
+      "file": "docs/validation/manuscript-v1.8/compiled-types.json",
+      "sha256": "3320385e4f340b28fc10a8e9253e45c8aba8246034f779b0d9608d243d8c3aeb",
+      "entries": 528
+    },
+    {
+      "file": "docs/validation/manuscript-v1.8/compiled-types-validation.json",
+      "recorded_actual_exit": 0,
+      "recorded_propositions": 485,
+      "recorded_standard_axioms_only": true
+    },
+    {
+      "file": "work/p1-endpoint-audit/additional-compiled/compiled-types.json",
+      "sha256": "269fe5c87b80f0b9432a47cbc6f7ebeb40e098dcfa957073e8c49e3085241ec9",
+      "entries": 536,
+      "recorded_actual_exit": 0,
+      "recorded_standard_axioms_only": true,
+      "extraction_executed_by": "parent, not this read-only audit"
+    }
+  ],
+  "summary": {
+    "results_audited": 9,
+    "complete_named_primary_endpoints_identified": 9,
+    "all_recommended_endpoints_already_in_ledger": true,
+    "confirmed_mathematical_falsehood_in_context": false,
+    "indexing_corrections_needed": [
+      "15.11 : inclure le terminal modéré autonome ; la seule conjonction article_15_11 restreint indûment la première clause au gapθ+δ<1.",
+      "T21.4 : indexer la variante plane, la sublinéarité et les seuils suffisants avec les terminaux distincts ; expliciter les hypothèses de blocs et de rang pour le raccordβ=2.",
+      "15.4 : conserver H≤D(L+1), hérité deH=C_D B ; la lectureH libre est réellement fausse."
+    ],
+    "optional_quantifier_metadata": "15.8 : le type nommé placeε avants ; l'indépendance des du dernierε se déduit en choisissant un exposanta' strictement supérieur àa, sans nouvelle preuve arithmétique.",
+    "new_scientific_claims": 0,
+    "archived_compiled_terminal_types_included": 16,
+    "terminal_records_total": 22
+  },
+  "findings": [
+    {
+      "id": "D01",
+      "result": "15.11",
+      "kind": "terminal_selection",
+      "importance": "necessary_for_faithful_index",
+      "certainty": "certain",
+      "statement": "Le terminal de conjonction n’implique pas toute la première clause imprimée sans hypothèse de gap.",
+      "source": {
+        "file": "manuscripts/paper-p1/v1.8/sources/main_sections/exact_transfer.tex",
+        "line": 693
+      },
+      "lean": {
+        "file": "PaperP1/Asymptotics/MultiAnchorBudgets.lean",
+        "line": 24
+      },
+      "precise_example": "t=4,A=3,b=9/10,σ=3/4 : hypothèses initiales vraies,θ+δ=163/120>1,masse modérée demandéeN^(−14/15+ε).",
+      "resolution": "Ajouter PaperP1.MultiAnchorModerateMass.uniform_bound au bundle terminal. Déjà dans le ledger ; aucun changement de mathématique requis."
+    },
+    {
+      "id": "D02",
+      "result": "15.4",
+      "kind": "contextual_cutoff_scope",
+      "importance": "necessary_for_faithful_index",
+      "certainty": "certain",
+      "statement": "La seconde clause exige un cutoff borné par une constante fixe foisB ; son écriture locale utilise la convention antérieureH=C_D B.",
+      "source": {
+        "file": "manuscripts/paper-p1/v1.8/sources/main_sections/half_counts.tex",
+        "line": 42
+      },
+      "lean": {
+        "file": "PaperP1/Asymptotics/SmallKernelWindows.lean",
+        "line": 76
+      },
+      "precise_example": "Sans cette portée : H≥3N,q=0 entraîne #X_0=N, et nonO(N^ε)pourε<1.",
+      "resolution": "Écrire H≤D(L+1),D fixé dans le scope de l’index ; ne pas annoncerH arbitraire."
+    },
+    {
+      "id": "D03",
+      "result": "T21.4",
+      "kind": "multi_terminal_and_inherited_rank_scope",
+      "importance": "necessary_for_faithful_index",
+      "certainty": "certain_for_types_contextual_for_text",
+      "statement": "Le terminal3D seul n’est pas la variante plane ni les petits-o ; le raccord originalβ=2 lu porte sur une paire de rangs pleins.",
+      "source": {
+        "file": "manuscripts/paper-p1/v1.8/sources/companion_sections/arithmetic_consequences.tex",
+        "line": 196
+      },
+      "lean": {
+        "file": "PaperP1/Asymptotics/PrimitiveConfinementWeights.lean",
+        "line": 20
+      },
+      "precise_example": "Deux espaces effectifs directs peuvent provenir de cartes locales non injectives ; Primitive seul ne livre pas les deux hypothèses rank=L que uniform_weights réclame explicitement.",
+      "resolution": "ConserverSourceConditions et les hypothèses de rang de la spécialisation. Joindre les terminauxplans/sublinéarité/seuils listés ; ne pas élargir aux triples irrégulières sur la seule foi de ce raccord."
+    }
+  ],
+  "results": [
+    {
+      "number": "15.3",
+      "label": "p13:transfer:compressed-target",
+      "document": "main",
+      "verdict": "aligned_with_complete_terminal",
+      "confidence": "high",
+      "source": {
+        "file": "manuscripts/paper-p1/v1.8/sources/main_sections/exact_transfer.tex",
+        "line": 172,
+        "end_line": 177,
+        "file_sha256": "17d5b26150b9d298f38d513495e493b9fd9847b02b297044bcd1a026623a329e",
+        "statement": "\\begin{lemma}[A dense compressed target]\n\\label{p13:transfer:compressed-target}\nFor fixed sources and a fixed channel of good pairs, the number of\ncompressed centers $X$ for which\n$\\dim(S(U_X)\\cap W)\\geq\\eta L$ is $O_{s,C,\\eta,\\varepsilon}(N^\\varepsilon)$.\n\\end{lemma}"
+      },
+      "ledger_lean_declarations_count": 30,
+      "recommended_terminal_bundle": [
+        {
+          "declaration": "PaperP1.DenseCompressedTargetCount.article_15_3",
+          "role": "primary",
+          "file": "PaperP1/Asymptotics/DenseCompressedTargetCount.lean",
+          "line": 39,
+          "signature_end_line": 44,
+          "source_sha256": "a3f66e3c967af7b98af472c522a2a572517912f36464eceac5957c93d2aa3c3e",
+          "source_signature": "theorem article_15_3 (s a b : ℕ) (ha : 0 < a) (hab : a ≤ b) (C η ε : ℝ) (hη : 0 < η) (hε : 0 < ε) :\n    ∃ N₀ : ℕ, 3 ≤ N₀ ∧ ∀ N ≥ N₀, ∀ L : ℕ,\n      |(L : ℝ) - Real.log N / Real.log 2| ≤ C →\n      ∀ x : Fin s → ℕ, (∀ q, x q ∈ dyadicBlock N) →\n      ∀ W : Submodule F₂ (ℕ →₀ F₂), W ≤ ⨆ q, squareClassSpace (x q) L →\n        ((allDenseCenters N a b L W η).card : ℝ) ≤ (N : ℝ) ^ ε",
+          "in_numbered_result_lean_declarations": true,
+          "existing_compiled_type": "∀ (s a b : ℕ),\n  0 < a →\n    a ≤ b →\n      ∀ (C η ε : ℝ),\n        0 < η →\n          0 < ε →\n            ∃ N₀,\n              3 ≤ N₀ ∧\n                ∀ N ≥ N₀,\n                  ∀ (L : ℕ),\n                    |↑L - Real.log ↑N / Real.log 2| ≤ C →\n                      ∀ (x : Fin s → ℕ),\n                        (∀ (q : Fin s), x q ∈ PaperP1.Model.dyadicBlock N) →\n                          ∀ W ≤ ⨆ q, PaperP1.Arithmetic.squareClassSpace (x q) L,\n                            ↑(PaperP1.CompressedTargetCenters.allDenseCenters N a b L W η).card ≤ ↑N ^ ε",
+          "existing_compiled_type_is_proposition": true,
+          "existing_compiled_type_origin": "docs/validation/manuscript-v1.8/compiled-types.json"
+        },
+        {
+          "declaration": "PaperP1.DenseCompressedTargetCount.uniform_offsets",
+          "role": "supplementary",
+          "file": "PaperP1/Asymptotics/DenseCompressedTargetCount.lean",
+          "line": 19,
+          "signature_end_line": 24,
+          "source_sha256": "a3f66e3c967af7b98af472c522a2a572517912f36464eceac5957c93d2aa3c3e",
+          "source_signature": "theorem uniform_offsets (s a b : ℕ) (ha : 0 < a) (hab : a ≤ b) (C η ε : ℝ) (hη : 0 < η) (hε : 0 < ε) :\n    ∃ N₀ : ℕ, 3 ≤ N₀ ∧ ∀ N ≥ N₀, ∀ L : ℕ,\n      |(L : ℝ) - Real.log N / Real.log 2| ≤ C →\n      ∀ i j : Fin (L + 1), ∀ x : Fin s → ℕ, (∀ q, x q ∈ dyadicBlock N) →\n      ∀ W : Submodule F₂ (ℕ →₀ F₂), W ≤ ⨆ q, squareClassSpace (x q) L →\n        ((denseCenters N a b L i j W η).card : ℝ) ≤ (N : ℝ) ^ ε",
+          "in_numbered_result_lean_declarations": true,
+          "existing_compiled_type": null,
+          "existing_compiled_type_origin": null
+        }
+      ],
+      "objects": "allDenseCenters : union sur toutes les paires d'offsets i,j des vrais centres anchor=b·(x−1+i) de sourcePairs dans le canal a:b. Le bloc est la réunion des deux ensembles de valeurs réellement normalisées ; son espace est l'image des sélections paires, non un espace abstrait de dimension imposée.",
+      "hypotheses": "s,a,b,C,η,ε fixes ; a>0 et a≤b ; η,ε>0. L entier dans la bande critique. Sources x:Fin s→I_N, sans injectivité, séparation, régularité ou indépendance imposées. W≤Σ_q squareClassSpace(x_q,L).",
+      "quantifier_order": "∀ s,a,b,C,η,ε et conditions fixes → ∃N₀≥3 → ∀N≥N₀,∀L dans la bande → ∀sources x → ∀W inclus dans leur somme effective → #allDenseCenters≤N^ε. La variante uniform_offsets met encore ∀i,j après N₀.",
+      "semantic_comparison": "Le W effectif est celui introduit avant15.2 (main exact_transfer l131). Les bons couples du texte forment un sous-ensemble du domaine Lean ; la conclusion Lean inclut même tous les motifs d'offsets. Les constantes fixes du canal a,b doivent figurer dans le scope de l'index, même si le symbole O imprimé ne les écrit pas.",
+      "proof_closure": [
+        "article_15_3 applique uniform_offsets avec ε/2 puis somme les (L+1)^2 motifs ; la puissance polylogarithmique est absorbée.",
+        "uniform_offsets prouve largeur et bornes des centres (center_bounds,block_width), puis applique BoundedWidthDenseCount.uniform_count.",
+        "Ce dernier ramène les blocs physiques à des fenêtres complètes et applique OneTargetLogDenseCount.uniform_count, qui construit la régularisation et les coefficients depuis les sources. Aucun compte final n'est un argument du théorème."
+      ],
+      "rejected_as_terminal": [
+        "CompressedTargetCenters.centers/denseCenters/allDenseCenters : définitions de population ; elles ne prouvent aucune estimation."
+      ],
+      "scope_notes": [
+        "L'index ne doit pas remplacer W≤somme des espaces effectifs par un W arbitraire. Une lecture de « value space » comme tout l'espace ambiant serait plus large que cet endpoint."
+      ]
+    },
+    {
+      "number": "15.4",
+      "label": "p13:transfer:small-kernels",
+      "document": "main",
+      "verdict": "aligned_under_contextual_cutoff_bound",
+      "confidence": "high",
+      "source": {
+        "file": "manuscripts/paper-p1/v1.8/sources/main_sections/exact_transfer.tex",
+        "line": 202,
+        "end_line": 214,
+        "file_sha256": "17d5b26150b9d298f38d513495e493b9fd9847b02b297044bcd1a026623a329e",
+        "statement": "\\begin{lemma}[Several small kernels in one window]\n\\label{p13:transfer:small-kernels}\nFix $A>2$, $0<b,u<1$, and an integer $m$ with $m(1-b)>1$.\nFor $Y=(\\log N)^A$, the number of windows containing $m$ distinct\nvalues with $K_Y(n)\\leq N^b$ and $a_Y(n)^2\\leq N^u$ is\n\\begin{equation}\n \\ll N^{\\max(1-1/A,(1+u)/2)+\\varepsilon}.\n \\label{p13:transfer:small-kernels-bound}\n\\end{equation}\nAlso, the set $\\mathcal X_q$ of windows containing distinct $n_1,n_2$\nwith $K_H(n_1)K_H(n_2)\\leq N^q$ has cardinality\n$O(N^{q+\\varepsilon})$, for fixed $q\\geq0$.\n\\end{lemma}"
+      },
+      "ledger_lean_declarations_count": 61,
+      "recommended_terminal_bundle": [
+        {
+          "declaration": "PaperP1.SmallKernelWindows.article_15_4",
+          "role": "primary",
+          "file": "PaperP1/Asymptotics/SmallKernelWindows.lean",
+          "line": 101,
+          "signature_end_line": 107,
+          "source_sha256": "aa986b5c7cd21bb246a738ec0b9d75b80d0176a40416ea70194b368735734bf7",
+          "source_signature": "theorem article_15_4 (m : ℕ) (A β u D C ε : ℝ) (hA : 2 ≤ A) (hu : u ≤ 1)\n    (hgap : 1 < (m : ℝ) * (1 - β)) (hD : 0 ≤ D) (hε : 0 < ε) :\n    ∃ N₀ : ℕ, ∀ N ≥ N₀, ∀ L H : ℕ, ∀ q : ℝ,\n      |(L : ℝ) - Real.log N / Real.log 2| ≤ C → (H : ℝ) ≤ D * (L + 1 : ℕ) →\n      ((severalWindows N L ⌊(Real.log N) ^ A⌋₊ m β u).card : ℝ) ≤\n        (N : ℝ) ^ (max (1 - 1 / A) ((1 + u) / 2) + ε) ∧\n      ((twoWindows N L H q).card : ℝ) ≤ (N : ℝ) ^ (q + ε)",
+          "in_numbered_result_lean_declarations": true,
+          "existing_compiled_type": "∀ (m : ℕ) (A β u D C ε : ℝ),\n  2 ≤ A →\n    u ≤ 1 →\n      1 < ↑m * (1 - β) →\n        0 ≤ D →\n          0 < ε →\n            ∃ N₀,\n              ∀ N ≥ N₀,\n                ∀ (L H : ℕ) (q : ℝ),\n                  |↑L - Real.log ↑N / Real.log 2| ≤ C →\n                    ↑H ≤ D * ↑(L + 1) →\n                      ↑(PaperP1.SmallKernelWindowSets.severalWindows N L ⌊Real.log ↑N ^ A⌋₊ m β u).card ≤\n                          ↑N ^ (Max.max (1 - 1 / A) ((1 + u) / 2) + ε) ∧\n                        ↑(PaperP1.SmallKernelWindowSets.twoWindows N L H q).card ≤ ↑N ^ (q + ε)",
+          "existing_compiled_type_is_proposition": true,
+          "existing_compiled_type_origin": "docs/validation/manuscript-v1.8/compiled-types.json"
+        },
+        {
+          "declaration": "PaperP1.SmallKernelWindows.critical_several_count",
+          "role": "supplementary",
+          "file": "PaperP1/Asymptotics/SmallKernelWindows.lean",
+          "line": 51,
+          "signature_end_line": 56,
+          "source_sha256": "aa986b5c7cd21bb246a738ec0b9d75b80d0176a40416ea70194b368735734bf7",
+          "source_signature": "theorem critical_several_count (m : ℕ) (A β u C ε : ℝ) (hA : 2 ≤ A) (hu : u ≤ 1)\n    (hgap : 1 < (m : ℝ) * (1 - β)) (hε : 0 < ε) :\n    ∃ N₀ : ℕ, ∀ N ≥ N₀, ∀ L : ℕ,\n      |(L : ℝ) - Real.log N / Real.log 2| ≤ C →\n      ((severalWindows N L ⌊(Real.log N) ^ A⌋₊ m β u).card : ℝ) ≤\n        (N : ℝ) ^ (max (1 - 1 / A) ((1 + u) / 2) + ε)",
+          "in_numbered_result_lean_declarations": true,
+          "existing_compiled_type": null,
+          "existing_compiled_type_origin": null
+        },
+        {
+          "declaration": "PaperP1.SmallKernelWindows.critical_two_count",
+          "role": "supplementary",
+          "file": "PaperP1/Asymptotics/SmallKernelWindows.lean",
+          "line": 76,
+          "signature_end_line": 79,
+          "source_sha256": "aa986b5c7cd21bb246a738ec0b9d75b80d0176a40416ea70194b368735734bf7",
+          "source_signature": "theorem critical_two_count (D C ε : ℝ) (hD : 0 ≤ D) (hε : 0 < ε) :\n    ∃ N₀ : ℕ, ∀ N ≥ N₀, ∀ L H : ℕ, ∀ q : ℝ,\n      |(L : ℝ) - Real.log N / Real.log 2| ≤ C → (H : ℝ) ≤ D * (L + 1 : ℕ) →\n      ((twoWindows N L H q).card : ℝ) ≤ (N : ℝ) ^ (q + ε)",
+          "in_numbered_result_lean_declarations": true,
+          "existing_compiled_type": "∀ (D C ε : ℝ),\n  0 ≤ D →\n    0 < ε →\n      ∃ N₀,\n        ∀ N ≥ N₀,\n          ∀ (L H : ℕ) (q : ℝ),\n            |↑L - Real.log ↑N / Real.log 2| ≤ C →\n              ↑H ≤ D * ↑(L + 1) → ↑(PaperP1.SmallKernelWindowSets.twoWindows N L H q).card ≤ ↑N ^ (q + ε)",
+          "existing_compiled_type_is_proposition": true,
+          "existing_compiled_type_origin": "docs/validation/manuscript-v1.8/compiled-types.json"
+        }
+      ],
+      "objects": "severalWindows filtre les centres x∈I_N dont au moins m valeurs distinctes de V_x satisfont largeOddKernel(Y,n)≤N^b et largeSquarePart(Y,n)^2≤N^u. twoWindows exige deux valeurs distinctes avec le PRODUIT des noyaux≤N^q.",
+      "hypotheses": "Le premier compte exige A≥2,u≤1,m(1−b)>1,ε>0 et couvre donc A>2,0<b,u<1 imprimés. Y=⌊(logN)^A⌋, exactement équivalent au cutoff réel pour des primes entières. Le second exige un D≥0 fixé et H entier avec H≤D(L+1) ; aucun minorant H≥L+1 n'est exigé. C est fixe.",
+      "quantifier_order": "∀ m,A,b,u,D,C,ε fixes → ∃N₀ → ∀N≥N₀ → ∀L,H entiers,∀q réel → bande critique et H≤D(L+1) → les DEUX comptes. Le q est uniforme après le seuil, plus fort que q fixé≥0 du texte.",
+      "semantic_comparison": "La seconde clause imprimée reprend H=C_D B de main_sections/half_counts.tex l42. Sous cette convention elle est couverte ; elle ne l'est pas pour H sans borne supérieure. Il faut porter cette convention dans la métadonnée du résultat, au lieu de laisser croire que H est libre.",
+      "proof_closure": [
+        "critical_several_count vérifie 2(L+1)≤⌊log^A N⌋ puis applique le vrai SeveralSmallKernelCount.uniform_count aux m valeurs distinctes choisies.",
+        "critical_two_count applique TwoSmallKernelCount.critical_block_count et instancie les deux valeurs littérales de twoWindows ; il ne reçoit pas le compte des fenêtres comme hypothèse.",
+        "article_15_4 prend le maximum des deux seuils."
+      ],
+      "rejected_as_terminal": [
+        "SmallKernelWindowSets.severalWindows/twoWindows : définitions seulement.",
+        "Les lemmes de décomposition/CRT isolés ne sont pas à eux seuls les deux comptes uniformes."
+      ],
+      "scope_notes": [
+        "Contre-exemple à H libre : H≥3N,q=0 donne K_H(n)=1 pour toutes les valeurs dyadiques, donc #X_0=N ; O(N^ε) est faux si ε<1.",
+        "Le premier compte est autonome via critical_several_count ; son usage n'exige pas de choisir H ni q."
+      ]
+    },
+    {
+      "number": "15.6",
+      "label": "p13:transfer:independent-deficit",
+      "document": "main",
+      "verdict": "aligned_with_literal_all_cardinality_terminal",
+      "confidence": "high",
+      "source": {
+        "file": "manuscripts/paper-p1/v1.8/sources/main_sections/exact_transfer.tex",
+        "line": 310,
+        "end_line": 318,
+        "file_sha256": "17d5b26150b9d298f38d513495e493b9fd9847b02b297044bcd1a026623a329e",
+        "statement": "\\begin{lemma}[Uniform independent deficit]\n\\label{p13:transfer:independent-deficit}\nFor fixed $s,u,C$ and every $\\varepsilon>0$,\n\\begin{equation}\n E_W(u)\\ll_{s,u,C,\\varepsilon}N^{-1/2+\\varepsilon},\n \\label{p13:transfer:independent-bound}\n\\end{equation}\nuniformly in the sources and $W$. The sum includes all cardinalities.\n\\end{lemma}"
+      },
+      "ledger_lean_declarations_count": 69,
+      "recommended_terminal_bundle": [
+        {
+          "declaration": "PaperP1.UniformIndependentDeficit.uniform_bound",
+          "role": "primary",
+          "file": "PaperP1/Asymptotics/UniformIndependentDeficit.lean",
+          "line": 51,
+          "signature_end_line": 56,
+          "source_sha256": "54e04cbfaab298bebf22d31ac841d0a29c45c60ee3f0f7b80751ac3e22139fbc",
+          "source_signature": "theorem uniform_bound (s : ℕ) (u C ε : ℝ) (hu : 0 < u) (hε : 0 < ε) :\n    ∃ N₀ : ℕ, 4 ≤ N₀ ∧ ∀ N ≥ N₀, ∀ L : ℕ,\n      |(L : ℝ) - Real.log N / Real.log 2| ≤ C →\n      ∀ G : Finset ℕ, G ⊆ dyadicBlock N → ∀ S : Finset ℕ, S ⊆ dyadicBlock N → S.card ≤ s →\n      ∀ W : Submodule F₂ (ℕ →₀ F₂), W ≤ ConditionalWindowRank.oldSpan (OldValuePrimeBudget.rawValues S L) →\n        deficit G S W L u ≤ (N : ℝ) ^ (-1 / 2 + ε)",
+          "in_numbered_result_lean_declarations": true,
+          "existing_compiled_type": "∀ (s : ℕ) (u C ε : ℝ),\n  0 < u →\n    0 < ε →\n      ∃ N₀,\n        4 ≤ N₀ ∧\n          ∀ N ≥ N₀,\n            ∀ (L : ℕ),\n              |↑L - Real.log ↑N / Real.log 2| ≤ C →\n                ∀ G ⊆ PaperP1.Model.dyadicBlock N,\n                  ∀ S ⊆ PaperP1.Model.dyadicBlock N,\n                    S.card ≤ s →\n                      ∀ W ≤ PaperP1.ConditionalWindowRank.oldSpan (PaperP1.OldValuePrimeBudget.rawValues S L),\n                        PaperP1.IndependentExtensionDeficit.deficit G S W L u ≤ ↑N ^ (-1 / 2 + ε)",
+          "existing_compiled_type_is_proposition": true,
+          "existing_compiled_type_origin": "docs/validation/manuscript-v1.8/compiled-types.json"
+        }
+      ],
+      "objects": "deficit G S W L u est exactement Σ_{U⊆G\\S,¬Direct(W,(S_x)_{x∈U})} u^|U| ∏p_x. Le powerset comprend toutes les cardinalités, y compris les cas affinement incompatibles, avec les marges exactes infiniteMarginal.",
+      "hypotheses": "s,u,C,ε fixes, u>0,ε>0 ; G,S⊆I_N et |S|≤s. W≤oldSpan(rawValues S L), somme des classes de toutes les valeurs brutes des sources. Cette inclusion est plus large que la somme des seules images paires demandée dans l'exposition.",
+      "quantifier_order": "∀s,u,C,ε fixes → ∃N₀≥4 → ∀N≥N₀,∀L dans la bande → ∀G⊆I_N,∀S⊆I_N,|S|≤s → ∀W≤span brut des sources → deficit≤N^(−1/2+ε).",
+      "semantic_comparison": "Prendre G=I_N admissible (ou tout I_N puisque les marges nulles annulent leurs termes) et S l'ensemble des sources fournit E_W(u). Le quantificateur universel sur W vient après les sources et le seuil précède les deux.",
+      "proof_closure": [
+        "uniform_bound établit la borne p_x≤2·2^C/N avec ActualPairRowActivity.uniform_marginal_cap.",
+        "UniformIndependentExposureBudget.uniform_budget prouve le budget de première moyenne et le budget des lignes exceptionnelles, uniformément sur tout ensemble déjà exposé A.",
+        "finite_bound applique le vrai majorant combinatoire des germes ExceptionSeedBound.constant_bound ; les hypothèses hmean/hrow de cette étape intermédiaire sont fournies par la ligne précédente."
+      ],
+      "rejected_as_terminal": [
+        "UniformIndependentDeficit.finite_bound seul : il suppose explicitement hmean et hrow ; ne pas le présenter comme la preuve asymptotique fermée.",
+        "IndependentExtensionDeficit.deficit/Direct/families : définitions."
+      ],
+      "scope_notes": [
+        "Les sommes indépendantes ne sont pas des probabilités conditionnelles et ne comportent aucun facteur2^ρ."
+      ]
+    },
+    {
+      "number": "15.8",
+      "label": "p13:transfer:independent-tail",
+      "document": "main",
+      "verdict": "aligned_with_two_clause_terminal_and_actual_compression",
+      "confidence": "high",
+      "source": {
+        "file": "manuscripts/paper-p1/v1.8/sources/main_sections/exact_transfer.tex",
+        "line": 448,
+        "end_line": 461,
+        "file_sha256": "17d5b26150b9d298f38d513495e493b9fd9847b02b297044bcd1a026623a329e",
+        "statement": "\\begin{lemma}[Independent full-support tails]\n\\label{p13:transfer:independent-tail}\nFor every fixed weight $v>0$ and $a<2$, there is a fixed integer $s$\nsuch that\n\\begin{equation}\n \\sum_{\\substack{|F|\\geq s\\\\F\\text{ has a full-support relation}}}\n                  \\prod_{x\\in F}(vp_x)\n \\ll N^{-a+\\varepsilon}.\n \\label{p13:transfer:tail-independent}\n\\end{equation}\nThe same conclusion holds with one block of any of the fixed compressed\ntypes, weighted by $vp$. For this version the remaining factors are\n$vp_x$.\n\\end{lemma}"
+      },
+      "ledger_lean_declarations_count": 171,
+      "recommended_terminal_bundle": [
+        {
+          "declaration": "PaperP1.IndependentTailTheorem.article_15_8",
+          "role": "primary",
+          "file": "PaperP1/Asymptotics/IndependentTailTheorem.lean",
+          "line": 34,
+          "signature_end_line": 41,
+          "source_sha256": "de0510160a5107a78560cb7c259c0f259012e3d1508db16896f354085e7b1c72",
+          "source_signature": "theorem article_15_8 (D Q : ℕ) (hD : 1 ≤ D) (hQ : 2 ≤ Q) (C v a ε : ℝ)\n    (hv : 0 < v) (ha : a < 2) (hε : 0 < ε) :\n    ∃ s : ℕ, 3 ≤ s ∧ ∃ N₀ : ℕ, 10 ≤ N₀ ∧ ∀ N ≥ N₀, ∀ L : ℕ,\n      |(L : ℝ) - Real.log N / Real.log 2| ≤ C →\n      IndependentFullSupportTail.mass (dyadicBlock N) L s v ≤ (N : ℝ) ^ (-a + ε) ∧\n      (∀ U : ℕ → Finset ℕ,\n        (∀ x ∈ Ico 2 (Q * N + 2), U x ⊆ NormalizedWindowSets.values x (D * (L + 1))) →\n        BoundedBlockIndependentTail.mass Q N L (s - 1) v U ≤ (N : ℝ) ^ (-a + ε))",
+          "in_numbered_result_lean_declarations": true,
+          "existing_compiled_type": "∀ (D Q : ℕ),\n  1 ≤ D →\n    2 ≤ Q →\n      ∀ (C v a ε : ℝ),\n        0 < v →\n          a < 2 →\n            0 < ε →\n              ∃ s,\n                3 ≤ s ∧\n                  ∃ N₀,\n                    10 ≤ N₀ ∧\n                      ∀ N ≥ N₀,\n                        ∀ (L : ℕ),\n                          |↑L - Real.log ↑N / Real.log 2| ≤ C →\n                            PaperP1.IndependentFullSupportTail.mass (PaperP1.Model.dyadicBlock N) L s v ≤\n                                ↑N ^ (-a + ε) ∧\n                              ∀ (U : ℕ → Finset ℕ),\n                                (∀ x ∈ Finset.Ico 2 (Q * N + 2),\n                                    U x ⊆ PaperP1.NormalizedWindowSets.values x (D * (L + 1))) →\n                                  PaperP1.BoundedBlockIndependentTail.mass Q N L (s - 1) v U ≤ ↑N ^ (-a + ε)",
+          "existing_compiled_type_is_proposition": true,
+          "existing_compiled_type_origin": "docs/validation/manuscript-v1.8/compiled-types.json"
+        },
+        {
+          "declaration": "PaperP1.CompressedBlockIndependentTail.uniform_channel",
+          "role": "supplementary",
+          "file": "PaperP1/Asymptotics/CompressedBlockIndependentTail.lean",
+          "line": 62,
+          "signature_end_line": 67,
+          "source_sha256": "a335f98c250faa669b9744b76befdf3d74ab399ea11f966d3b1731a3c87efd94",
+          "source_signature": "theorem uniform_channel (a b : ℕ) (hab : a ≤ b) (hb : 1 ≤ b) (C v r ε : ℝ)\n    (hv : 0 < v) (hr : r < 2) (hε : 0 < ε) :\n    ∃ s : ℕ, 2 ≤ s ∧ ∃ N₀ : ℕ, 10 ≤ N₀ ∧ ∀ N ≥ N₀, ∀ L : ℕ,\n      |(L : ℝ) - Real.log N / Real.log 2| ≤ C → ∀ i j : Fin (L + 1),\n      BoundedBlockIndependentTail.mass (3 * b + 2) N L s v (shiftedBlock N a b L i j) ≤\n        (N : ℝ) ^ (-r + ε)",
+          "in_numbered_result_lean_declarations": true,
+          "existing_compiled_type": null,
+          "existing_compiled_type_origin": null
+        }
+      ],
+      "objects": "La première masse somme les F⊆I_N ayant une relation de support complet dans les ESPACES EFFECTIFS S_x, avec poids ∏(v p_x). La seconde somme les centres x d'un bloc fini U_x, puis les ensembles I de fenêtres originales : poids du bloc v·2^(−L), poids restants ∏_{y∈I}(v p_y), et support complet incluant un élément non nul de space(U_x).",
+      "hypotheses": "D≥1,Q≥2 entiers fixes, C,v,a,ε fixes, v>0,a<2,ε>0. Pour la seconde clause, U_x⊆V_x de longueur D(L+1), x∈[2,QN+2). Aucune injectivité du code local, régularité, compatibilité affine ou disjonction physique n'est requise.",
+      "quantifier_order": "∀D,Q,C,v,a,ε fixes → ∃s≥3 → ∃N₀≥10 → ∀N≥N₀,∀L dans la bande → conclusion originale ET ∀familles de blocs physiques U satisfaisant l'inclusion, conclusion avec |I|≥s−1 (donc au moins s blocs au total).",
+      "semantic_comparison": "Le poids du bloc comprimé est bien vp nominal et ne devient pas v p_x ; les autres poids sont bien les marges arithmétiques exactes. uniform_channel instancie shiftedBlock avec les vraies valeurs normalisées du canal, rang local arbitraire compris, et un seuil commun avant i,j. anchor_centre rétablit le centre d'origine par une translation injective.",
+      "proof_closure": [
+        "article_15_8 combine FullSupportIndependentTail.article_15_8_original et BoundedBlockIndependentTail.uniform_blocks avec un même s=max(s0,s1)+1 ; la monotonie en s est prouvée.",
+        "Le premier endpoint utilise OriginalParticipatingTail.subcritical_tail et la vraie borne des marges ; le second utilise WideOneSeedTail.uniform_tail, les inclusions d'espaces et le cap des deux poids.",
+        "La branche comprimée est contenue dans une vraie fenêtre agrandie par contained ; elle n'est pas une hypothèse de cardinalité sur un univers abstrait."
+      ],
+      "rejected_as_terminal": [
+        "OneBlockFullSupport.FullSupport et IndependentFullSupportTail.FullSupport : définitions, pas estimations.",
+        "Un majorant de graphe conditionnel sans le raccord aux familles de fenêtres n'est pas l'énoncé15.8."
+      ],
+      "scope_notes": [
+        "Le type exposé place ε avant ∃s. Si l'on veut un index avec s indépendant de la marge finale ε, choisir d'abord a'∈(a,2), ε0=(a'−a)/2, puis appliquer ce même endpoint : il donne une puissance strictement meilleure que−a avec s fixé. Aucun nouveau contenu mathématique n'est nécessaire, mais ce réordonnement n'est pas textuellement le type nommé.",
+        "Pour réunir un nombre B^J de motifs d'offsets, utiliser une marge interne et l'uniformité en i,j ; ne pas confondre le compte des centres avec une multiplicité de paires non contrôlée.",
+        "Une sélection physique locale non nulle dont la classe effective vaut0 ne suffit pas à la définition Lean FullSupport. Le support complet du texte doit être lu dans les S_x effectifs, conformément aux conventions du début de15."
+      ]
+    },
+    {
+      "number": "15.11",
+      "label": "p13:transfer:anchor-budgets",
+      "document": "main",
+      "verdict": "aligned_by_multiple_terminals_not_by_conjunction_alone",
+      "confidence": "high",
+      "source": {
+        "file": "manuscripts/paper-p1/v1.8/sources/main_sections/exact_transfer.tex",
+        "line": 693,
+        "end_line": 716,
+        "file_sha256": "17d5b26150b9d298f38d513495e493b9fd9847b02b297044bcd1a026623a329e",
+        "statement": "\\begin{lemma}[Certificate budgets with several anchors]\n\\label{p13:transfer:anchor-budgets}\nChoose an even integer $t\\geq2$, $A_0>1$, $0<b<1$, and\n$1/2<\\sigma<1$ with $A_0(1-\\sigma)<1$. Put\n\\[\n \\delta=(1-b)(1-\\sigma),\\qquad \\theta=t/A_0.\n\\]\nSuppose each unmarked block in a family has a relation selecting at\nleast $t$ values in that block; the relation may depend on the block.\nMark a block when some value has odd kernel above\n$Y=(\\log N)^{A_0}$ at most $N^b$.\nUnder any fixed independent weight per block, the moderate certificates\nhave total mass\n\\begin{equation}\n N^{-tb+2t/A_0+o(1)}.\n \\label{p13:transfer:moderate-budget}\n\\end{equation}\nIf $\\theta+\\delta<1$, the saturated families of size at least $s$\nhave total independent mass\n\\begin{equation}\n N^{-s\\delta/2+o(1)}.\n \\label{p13:transfer:saturated-budget}\n\\end{equation}\n\\end{lemma}"
+      },
+      "ledger_lean_declarations_count": 118,
+      "recommended_terminal_bundle": [
+        {
+          "declaration": "PaperP1.MultiAnchorModerateMass.uniform_bound",
+          "role": "primary",
+          "file": "PaperP1/Asymptotics/MultiAnchorModerateMass.lean",
+          "line": 17,
+          "signature_end_line": 26,
+          "source_sha256": "0d824aa360d626317bf142841fa9a109b8f6f7e8b55b0ceeefb5ae0a0ed0094b",
+          "source_signature": "theorem uniform_bound (t : ℕ) (C M A β ε : ℝ)\n    (ht : 1 ≤ t) (hM : 0 ≤ M) (hA : 1 < A) (hβ : 0 ≤ β) (hε : 0 < ε) :\n    ∃ N₀ : ℕ, 10 ≤ N₀ ∧ ∀ N ≥ N₀, ∀ L : ℕ,\n      |(L : ℝ) - Real.log N / Real.log 2| ≤ C →\n      ∀ p : ℕ → ℝ, (∀ x, 0 ≤ p x) → (∀ x ∈ dyadicBlock N, p x ≤ M / N) →\n      ∀ F : Finset (Finset ℕ),\n      (∀ I ∈ F, I ⊆ dyadicBlock N ∧\n        Certified t I.card (L + 1) N ((Real.log N) ^ A) ((N : ℝ) ^ β) I) →\n      (∑ I ∈ F, ∏ x ∈ I, p x) ≤\n        (N : ℝ) ^ (-(t : ℝ) * β + 2 * t / A + ε)",
+          "in_numbered_result_lean_declarations": true,
+          "existing_compiled_type": "∀ (t : ℕ) (C M A β ε : ℝ),\n  1 ≤ t →\n    0 ≤ M →\n      1 < A →\n        0 ≤ β →\n          0 < ε →\n            ∃ N₀,\n              10 ≤ N₀ ∧\n                ∀ N ≥ N₀,\n                  ∀ (L : ℕ),\n                    |↑L - Real.log ↑N / Real.log 2| ≤ C →\n                      ∀ (p : ℕ → ℝ),\n                        (∀ (x : ℕ), 0 ≤ p x) →\n                          (∀ x ∈ PaperP1.Model.dyadicBlock N, p x ≤ M / ↑N) →\n                            ∀ (F : Finset (Finset ℕ)),\n                              (∀ I ∈ F,\n                                  I ⊆ PaperP1.Model.dyadicBlock N ∧\n                                    PaperP1.MultiAnchorFamilyMass.Certified t I.card (L + 1) N (Real.log ↑N ^ A)\n                                      (↑N ^ β) I) →\n                                ∑ I ∈ F, ∏ x ∈ I, p x ≤ ↑N ^ (-↑t * β + 2 * ↑t / A + ε)",
+          "existing_compiled_type_is_proposition": true,
+          "existing_compiled_type_origin": "work/p1-endpoint-audit/additional-compiled/compiled-types.json (parent extraction)"
+        },
+        {
+          "declaration": "PaperP1.MultiAnchorBudgets.article_15_11",
+          "role": "primary",
+          "file": "PaperP1/Asymptotics/MultiAnchorBudgets.lean",
+          "line": 24,
+          "signature_end_line": 37,
+          "source_sha256": "cc6e2b167b8c01350039c6cbdb9eed52b992b033cacdb8b58d02d61de97f2d3d",
+          "source_signature": "theorem article_15_11 (t : ℕ) (C M A β σ ε : ℝ) (_htEven : Even t) (ht : 2 ≤ t)\n    (hM : 0 ≤ M) (hA : 1 < A) (hβ : 0 < β) (hβ1 : β < 1)\n    (hσ : 1 / 2 < σ) (hσ1 : σ < 1) (hcut : A * (1 - σ) < 1)\n    (hgap : (t : ℝ) / A + (1 - β) * (1 - σ) < 1) (hε : 0 < ε) :\n    ∃ N₀ : ℕ, 10 ≤ N₀ ∧ ∀ N ≥ N₀, ∀ L : ℕ,\n      |(L : ℝ) - Real.log N / Real.log 2| ≤ C →\n      ∀ p : ℕ → ℝ, (∀ x, 0 ≤ p x) → (∀ x ∈ dyadicBlock N, p x ≤ M / N) →\n      ∀ s : ℕ, ∀ F : Finset (Finset ℕ),\n      (∀ I ∈ F, I ⊆ dyadicBlock N ∧ s ≤ I.card ∧\n        Witnesses t (L + 1) ((Real.log N) ^ A) ((N : ℝ) ^ β) I) →\n      (∑ I ∈ moderate t (L + 1) N ((Real.log N) ^ A) ((N : ℝ) ^ β) F, ∏ x ∈ I, p x) ≤\n        (N : ℝ) ^ (-(t : ℝ) * β + 2 * t / A + ε) ∧\n      (∑ I ∈ saturated t (L + 1) N ((Real.log N) ^ A) ((N : ℝ) ^ β) F, ∏ x ∈ I, p x) ≤\n        (N : ℝ) ^ (-(1 - β) * (1 - σ) / 2 * s + ε)",
+          "in_numbered_result_lean_declarations": true,
+          "existing_compiled_type": "∀ (t : ℕ) (C M A β σ ε : ℝ),\n  Even t →\n    2 ≤ t →\n      0 ≤ M →\n        1 < A →\n          0 < β →\n            β < 1 →\n              1 / 2 < σ →\n                σ < 1 →\n                  A * (1 - σ) < 1 →\n                    ↑t / A + (1 - β) * (1 - σ) < 1 →\n                      0 < ε →\n                        ∃ N₀,\n                          10 ≤ N₀ ∧\n                            ∀ N ≥ N₀,\n                              ∀ (L : ℕ),\n                                |↑L - Real.log ↑N / Real.log 2| ≤ C →\n                                  ∀ (p : ℕ → ℝ),\n                                    (∀ (x : ℕ), 0 ≤ p x) →\n                                      (∀ x ∈ PaperP1.Model.dyadicBlock N, p x ≤ M / ↑N) →\n                                        ∀ (s : ℕ) (F : Finset (Finset ℕ)),\n                                          (∀ I ∈ F,\n                                              I ⊆ PaperP1.Model.dyadicBlock N ∧\n                                                s ≤ I.card ∧\n                                                  PaperP1.MultiAnchorRelationFamilies.Witnesses t (L + 1)\n                                                    (Real.log ↑N ^ A) (↑N ^ β) I) →\n                                            ∑\n                                                  I ∈\n                                                    PaperP1.MultiAnchorBudgets.moderate t (L + 1) N (Real.log ↑N ^ A)\n                                                      (↑N ^ β) F,\n                                                  ∏ x ∈ I, p x ≤\n                                                ↑N ^ (-↑t * β + 2 * ↑t / A + ε) ∧\n                                              ∑\n                                                  I ∈\n                                                    PaperP1.MultiAnchorBudgets.saturated t (L + 1) N (Real.log ↑N ^ A)\n                                                      (↑N ^ β) F,\n                                                  ∏ x ∈ I, p x ≤\n                                                ↑N ^ (-(1 - β) * (1 - σ) / 2 * ↑s + ε)",
+          "existing_compiled_type_is_proposition": true,
+          "existing_compiled_type_origin": "docs/validation/manuscript-v1.8/compiled-types.json"
+        },
+        {
+          "declaration": "PaperP1.MultiAnchorSaturatedMass.uniform_bound",
+          "role": "supplementary",
+          "file": "PaperP1/Asymptotics/MultiAnchorSaturatedMass.lean",
+          "line": 22,
+          "signature_end_line": 33,
+          "source_sha256": "accaf4211d7ac156ec3befd5d22b563c58b349ebb13cfc95f307d7b8d5134c22",
+          "source_signature": "theorem uniform_bound (t : ℕ) (C M A β σ ε : ℝ) (ht : 1 ≤ t) (hM : 0 ≤ M)\n    (hA : 1 < A) (hβ : 0 ≤ β) (hβ1 : β < 1) (hσ : 1 / 2 ≤ σ) (hσ1 : σ < 1)\n    (hcut : A * (1 - σ) < 1) (hgap : (t : ℝ) / A + (1 - β) * (1 - σ) < 1)\n    (hε : 0 < ε) :\n    ∃ N₀ : ℕ, 10 ≤ N₀ ∧ ∀ N ≥ N₀, ∀ L : ℕ,\n      |(L : ℝ) - Real.log N / Real.log 2| ≤ C →\n      ∀ p : ℕ → ℝ, (∀ x, 0 ≤ p x) → (∀ x ∈ dyadicBlock N, p x ≤ M / N) →\n      ∀ s : ℕ, ∀ F : Finset (Finset ℕ),\n      (∀ I ∈ F, I ⊆ dyadicBlock N ∧ s ≤ I.card ∧\n        Saturated t (L + 1) N ((Real.log N) ^ A) ((N : ℝ) ^ β) I) →\n      (∑ I ∈ F, ∏ x ∈ I, p x) ≤\n        (N : ℝ) ^ (-(1 - β) * (1 - σ) / 2 * s + ε)",
+          "in_numbered_result_lean_declarations": true,
+          "existing_compiled_type": null,
+          "existing_compiled_type_origin": null
+        }
+      ],
+      "objects": "Certified impose, pour toute énumération injective de la famille, l'existence d'un certificat arithmétique modéré à t ancrages distincts, noyaux réellement attribués et modules récepteurs≤6NB. Witnesses exige pour CHAQUE bloc non marqué sa propre relation physique paire avec au moins t coordonnées choisies dans ce bloc ; les relations peuvent varier selon le bloc.",
+      "hypotheses": "Poids p:ℕ→ℝ non négatifs, p_x≤M/N dans I_N avec M≥0 fixé : cette enveloppe est le sens de poids indépendant fixe par bloc. Pour les deux conclusions groupées : t≥2 pair, A>1,0<b<1,1/2<σ<1,A(1−σ)<1 et t/A+(1−b)(1−σ)<1. La clause MODÉRÉE autonome exige seulement t≥1,A>1,b≥0 et ne suppose ni σ ni la dernière inégalité.",
+      "quantifier_order": "Clause modérée : ∀t,C,M,A,b,ε fixes → ∃N₀ → ∀N,L → ∀poids p sous le cap → ∀F de certificats littéraux, toutes cardinalités → masse≤N^(−tb+2t/A+ε). Conjonction : même ordre, avecσ et θ+δ<1 fixés avantN₀, puis ∀s et ∀F de Witnesses de taille≥s aprèsN₀.",
+      "semantic_comparison": "article_15_11 est un endpoint fermé pour les deux masses SOUS θ+δ<1. Il ne suffit pas comme unique canonical_statement pour la première clause imprimée, laquelle précède « If θ+δ<1 ». Cette première clause est effectivement prouvée sans le gap par MultiAnchorModerateMass.uniform_bound, déjà présent dans lean_declarations.",
+      "proof_closure": [
+        "La masse modérée est bornée à toutes cardinalités par le vrai comptage des énumérations (certified_count), la série pondérée (certified_total_bound), puis MultiAnchorCertificateAsymptotic.weightedTotal_le_power_eventually.",
+        "La masse saturée utilise MarkedWindowCount.uniform_count et MultiAnchorSaturationDegrees.uniform_degrees puis UniformGraphExponentTail.uniform_tail, sans supposer les masses finales.",
+        "MultiAnchorRelationFamilies.noncertified_admissible déduit la vraie admissibilité du graphe des relations Witnesses et de l'absence de certificat, avant l'application du générateur."
+      ],
+      "rejected_as_terminal": [
+        "MultiAnchorBudgets.moderate/saturated et MultiAnchorFamilyMass.Certified : définitions.",
+        "MultiAnchorBudgets.article_15_11 seul pour le régime modéré sans gap."
+      ],
+      "scope_notes": [
+        "Exemple séparant les portées : t=4,A=3,b=9/10,σ=3/4 satisfait toutes les hypothèses de la première clause imprimée et A(1−σ)=3/4<1, mais θ+δ=4/3+1/40=163/120>1. Le type article_15_11 ne s'applique pas ; uniform_bound de MultiAnchorModerateMass donne bien l'exposant−14/15+ε.",
+        "Le complément autonome modéré est une preuve existante, pas une nouvelle amélioration scientifique. Absent des528 types v1.8 initiaux, il figure désormais dans les536 types supplémentaires effectivement extraits par le parent ; le type compilé est joint ici."
+      ]
+    },
+    {
+      "number": "T1.15",
+      "label": "p1:arith:fixed-branching",
+      "document": "companion",
+      "verdict": "aligned_with_full_terminal_including_generalizations",
+      "confidence": "high",
+      "source": {
+        "file": "manuscripts/paper-p1/v1.8/sources/companion_sections/arithmetic_appendix.tex",
+        "line": 1105,
+        "end_line": 1117,
+        "file_sha256": "0509263ffdaf001f4015385e25420e6a5af584db9c3c54087c96dab22b4bad51",
+        "statement": "\\begin{proposition}[A fixed number of exposed source windows]\n\\label{p1:arith:fixed-branching}\nFix $j\\geq1$ and source starts $x_1,\\ldots,x_j\\in I_N$.\nOutside a deterministic set of $N^{1/2+o_{C,j}(1)}$ possible starts,\nthe new relative vector is uniform and independent of every value in\nthe old windows.  An explicit bound for the exceptional set is\n\\[\n j(2L+1)+B\\sqrt{3N}\\exp(2\\sqrt{m_{j,N}}),\\qquad\n m_{j,N}=\\left\\lceil\\pi(B)+\\frac{jB\\log(3N)}{\\log B}\\right\\rceil.\n\\]\nFixed dilations, subsets, and fixed enlarged logarithmic windows satisfy\nthe same $N^{1/2+o(1)}$ conclusion.\n\\end{proposition}"
+      },
+      "ledger_lean_declarations_count": 33,
+      "recommended_terminal_bundle": [
+        {
+          "declaration": "PaperP1.GeneralBranchingTheorem.companion_T1_15",
+          "role": "primary",
+          "file": "PaperP1/Asymptotics/GeneralBranchingTheorem.lean",
+          "line": 64,
+          "signature_end_line": 77,
+          "source_sha256": "16aad603c4db4b200a18629733d3eeb43f39e7661e21bd913e424eee65ecb18a",
+          "source_signature": "theorem companion_T1_15 (C : ℝ) (K : ℕ) (hK : 1 ≤ K) (D : ℝ) (hD : 0 ≤ D)\n    (j : ℕ) (ε : ℝ) (hε : 0 < ε) :\n    ∃ N₀ : ℕ, 3 ≤ N₀ ∧ ∀ N ≥ N₀,\n      (∀ L : ℕ, |(L : ℝ) - Real.log N / Real.log 2| ≤ C →\n        ∀ A : Finset ℕ, A ⊆ dyadicBlock N → A.card ≤ j →\n          ∃ E : Finset ℕ, E ⊆ dyadicBlock N ∧ IndependentConclusion N L A E ∧\n            (E.card : ℝ) ≤ (N : ℝ) ^ (1 / 2 + ε) ∧\n            (E.card : ℝ) ≤ (j : ℝ) * (2 * L + 1) + ((L + 1 : ℕ) : ℝ) * Real.sqrt (3 * N : ℕ) *\n              Real.exp (2 * Real.sqrt (primeCountBudget N L j))) ∧\n      (∀ L : ℕ, ((L + 1 : ℕ) : ℝ) ≤ D * Real.log N →\n        ∀ (G R : Finset ℕ) (φ : ℕ → ℕ), Set.InjOn φ G →\n          (∀ z ∈ G, 2 ≤ φ z) → (∀ z ∈ G, φ z + L ≤ K * N) →\n          (∀ n ∈ R, 1 ≤ n ∧ n ≤ K * N) → R.card ≤ j * (L + 1) →\n            ∃ E : Finset ℕ, E ⊆ G ∧ (E.card : ℝ) ≤ (N : ℝ) ^ (1 / 2 + ε) ∧ ReindexedConclusion G φ R L E)",
+          "in_numbered_result_lean_declarations": true,
+          "existing_compiled_type": "∀ (C : ℝ) (K : ℕ),\n  1 ≤ K →\n    ∀ (D : ℝ),\n      0 ≤ D →\n        ∀ (j : ℕ) (ε : ℝ),\n          0 < ε →\n            ∃ N₀,\n              3 ≤ N₀ ∧\n                ∀ N ≥ N₀,\n                  (∀ (L : ℕ),\n                      |↑L - Real.log ↑N / Real.log 2| ≤ C →\n                        ∀ A ⊆ PaperP1.Model.dyadicBlock N,\n                          A.card ≤ j →\n                            ∃ E ⊆ PaperP1.Model.dyadicBlock N,\n                              PaperP1.FixedWindowBranching.IndependentConclusion N L A E ∧\n                                ↑E.card ≤ ↑N ^ (1 / 2 + ε) ∧\n                                  ↑E.card ≤\n                                    ↑j * (2 * ↑L + 1) +\n                                      ↑(L + 1) * √↑(3 * N) *\n                                        Real.exp (2 * √↑(PaperP1.OldPrimeCardinality.primeCountBudget N L j))) ∧\n                    ∀ (L : ℕ),\n                      ↑(L + 1) ≤ D * Real.log ↑N →\n                        ∀ (G R : Finset ℕ) (φ : ℕ → ℕ),\n                          Set.InjOn φ ↑G →\n                            (∀ z ∈ G, 2 ≤ φ z) →\n                              (∀ z ∈ G, φ z + L ≤ K * N) →\n                                (∀ n ∈ R, 1 ≤ n ∧ n ≤ K * N) →\n                                  R.card ≤ j * (L + 1) →\n                                    ∃ E ⊆ G,\n                                      ↑E.card ≤ ↑N ^ (1 / 2 + ε) ∧\n                                        PaperP1.GeneralBranchingTheorem.ReindexedConclusion G φ R L E",
+          "existing_compiled_type_is_proposition": true,
+          "existing_compiled_type_origin": "docs/validation/manuscript-v1.8/compiled-types.json"
+        },
+        {
+          "declaration": "PaperP1.GeneralBranchingTheorem.dilation_conclusion",
+          "role": "supplementary",
+          "file": "PaperP1/Asymptotics/GeneralBranchingTheorem.lean",
+          "line": 55,
+          "signature_end_line": 77,
+          "source_sha256": "16aad603c4db4b200a18629733d3eeb43f39e7661e21bd913e424eee65ecb18a",
+          "source_signature": "theorem dilation_conclusion {ι : Type*} {G E : Finset ι} {φ : ι → ℕ} {R : Finset ℕ} {L : ℕ}\n    (h : ReindexedConclusion G φ R L E) {z : ι} (hz : z ∈ G) (hnot : z ∉ E)\n    (k a d : ℕ) (hd : 0 < d) (hfit : a + d * k ≤ L) :\n    infiniteRademacherMeasure.map (selectedBits (φ z) L (dilationIndices a d hfit)) =\n        Measure.pi (fun _ : Fin k ↦ coordinateMeasure) ∧\n      IndepFun (selectedBits (φ z) L (dilationIndices a d hfit)) (infiniteOldBits R) infiniteRademacherMeasure :=\n  (h z hz hnot).2.2 k _ (dilationIndices_injective a d hd hfit)\n\n/-- Both the original literal bound and the full generalized-window clause. -/\ntheorem companion_T1_15 (C : ℝ) (K : ℕ) (hK : 1 ≤ K) (D : ℝ) (hD : 0 ≤ D)\n    (j : ℕ) (ε : ℝ) (hε : 0 < ε) :\n    ∃ N₀ : ℕ, 3 ≤ N₀ ∧ ∀ N ≥ N₀,\n      (∀ L : ℕ, |(L : ℝ) - Real.log N / Real.log 2| ≤ C →\n        ∀ A : Finset ℕ, A ⊆ dyadicBlock N → A.card ≤ j →\n          ∃ E : Finset ℕ, E ⊆ dyadicBlock N ∧ IndependentConclusion N L A E ∧\n            (E.card : ℝ) ≤ (N : ℝ) ^ (1 / 2 + ε) ∧\n            (E.card : ℝ) ≤ (j : ℝ) * (2 * L + 1) + ((L + 1 : ℕ) : ℝ) * Real.sqrt (3 * N : ℕ) *\n              Real.exp (2 * Real.sqrt (primeCountBudget N L j))) ∧\n      (∀ L : ℕ, ((L + 1 : ℕ) : ℝ) ≤ D * Real.log N →\n        ∀ (G R : Finset ℕ) (φ : ℕ → ℕ), Set.InjOn φ G →\n          (∀ z ∈ G, 2 ≤ φ z) → (∀ z ∈ G, φ z + L ≤ K * N) →\n          (∀ n ∈ R, 1 ≤ n ∧ n ≤ K * N) → R.card ≤ j * (L + 1) →\n            ∃ E : Finset ℕ, E ⊆ G ∧ (E.card : ℝ) ≤ (N : ℝ) ^ (1 / 2 + ε) ∧ ReindexedConclusion G φ R L E)",
+          "in_numbered_result_lean_declarations": true,
+          "existing_compiled_type": null,
+          "existing_compiled_type_origin": null
+        }
+      ],
+      "objects": "IndependentConclusion affirme la loi jointe du NOUVEAU vecteur binaire de longueurL, sa loi produit équitable et IndepFun avec le vecteur de TOUS les anciens bits de valeurs brutes ; il inclut la probabilité de chaque mot conditionnelle à toute observation réalisable. ReindexedConclusion couvre centres réindexés injectivement et tous sous-vecteurs d'indices injectifs.",
+      "hypotheses": "C,K,D,j,ε fixes ; K≥1 entier, D≥0,ε>0. Original : A⊆I_N,|A|≤j. Général : largeurL+1≤DlogN, centresφ(G)≥2,hauteurs≤KN,anciennes valeursR⊆[1,KN],|R|≤j(L+1),φ injective surG. Aucun besoin que les anciennes fenêtres soient directes ou distinctes comme liste.",
+      "quantifier_order": "∀paramètres fixes → ∃N₀≥3 → ∀N≥N₀ → les deux clauses universelles. Dans chacune, L et les anciens starts/valeurs et la géométrie viennent aprèsN₀ ; E déterministe existe ensuite, avant les bits aléatoires de sa conclusion.",
+      "semantic_comparison": "La première clause donne simultanément N^(1/2+ε) et le majorant explicite j(2L+1)+B√(3N)exp(2√m) avec primeCountBudget=ceil(π(B)+jB log(3N)/logB). La seconde couvre les fenêtres logarithmiques agrandies, les sous-ensembles et les dilatations fixes via dilation_conclusion.",
+      "proof_closure": [
+        "Le premier volet est fourni par FixedWindowBranching.original_windows_critical ; son ensemble E est badStarts et le compte est prouvé depuis le budget de primes.",
+        "retained_independent applique les lemmes ConditionalRelativeBits de vraie loi jointe et de probabilité conditionnelle quand au plus une valeur de la nouvelle fenêtre est supportée par le pool ancien.",
+        "Le second volet part de GeneralWindowBranching.bounded_height_windows puis tire les exceptions par une réindexation injective ; l'indépendance n'est pas une hypothèse de l'endpoint."
+      ],
+      "rejected_as_terminal": [
+        "IndependentConclusion et ReindexedConclusion : définitions de la conclusion.",
+        "La seule majoration du pool de primes ne prouve pas la loi du vecteur."
+      ],
+      "scope_notes": [
+        "Indépendance de tout le vecteur d'observations anciennes, plus forte que l'indépendance séparée avec chaque valeur. Seules les observations anciennes réalisables figurent dans le conditionnement."
+      ]
+    },
+    {
+      "number": "T1.16",
+      "label": "p1:arith:ternary-budget",
+      "document": "companion",
+      "verdict": "aligned_with_actual_tuple_terminal_and_unbounded_cutoff",
+      "confidence": "high",
+      "source": {
+        "file": "manuscripts/paper-p1/v1.8/sources/companion_sections/arithmetic_appendix.tex",
+        "line": 1144,
+        "end_line": 1163,
+        "file_sha256": "0509263ffdaf001f4015385e25420e6a5af584db9c3c54087c96dab22b4bad51",
+        "statement": "\\begin{proposition}[A ternary group budget]\\label{p1:arith:ternary-budget}\nLet $U_i\\subset X_i+[-DB,DB]$, $X_i\\asymp N$, be three sets with\ninjective even-selection square-class maps whose images are pairwise\nin direct sum.  The width constant and the number of offset patterns\nare fixed.  Choose $H$ greater than the three diameters.  For an offset\ntriple $u=(u_1,u_2,u_3)$ let\n\\[\n G_u=\\prod_{\\substack{\\ell>H\\ {\\rm prime}\\\\\n       v_\\ell(X_i+u_i)\\ {\\rm odd}\\ (i=1,2,3)}}\\ell.\n\\]\nRetain the groups greater than one and write their decreasing values\n$G_{(1)}>G_{(2)}>\\cdots$.  Put\n$\\mathcal G_k=\\prod_{i=1}^kG_{(i)}$, or zero if fewer than $k$ exist.\nFor every fixed $k\\geq3$, $\\varepsilon>0$, and $1\\leq T\\leq N$,\n\\begin{equation}\\label{p1:arith:ternarycount}\n \\#\\{\\text{tuples}:\\mathcal G_k>T\\}\n \\ll_{C,D,k,\\varepsilon}N^\\varepsilon\n      (N^3/T^2+N^{6/5}).\n\\end{equation}\n\\end{proposition}"
+      },
+      "ledger_lean_declarations_count": 143,
+      "recommended_terminal_bundle": [
+        {
+          "declaration": "PaperP1.TernaryUnboundedCutoff.actual_tuples_bound",
+          "role": "primary",
+          "file": "PaperP1/Asymptotics/TernaryUnboundedCutoff.lean",
+          "line": 96,
+          "signature_end_line": 103,
+          "source_sha256": "b0c2f9af4852098cac4640875890a2c9f2a7400fbbf02f08a9075f3e7fdd4c48",
+          "source_signature": "theorem actual_tuples_bound (C : ℝ) (D k J : ℕ) (hk : 3 ≤ k) (ε : ℝ) (hε : 0 < ε) :\n    ∃ N₀ : ℕ, 2 ≤ N₀ ∧ ∀ N ≥ N₀, ∀ L R : ℕ,\n      |(L : ℝ) - Real.log N / Real.log 2| ≤ C → R ≤ D * (L + 1) →\n      ∀ (α : Type*) [DecidableEq α], ∀ (I : Finset α) (base : α → Fin 3 → ℕ)\n        (U : α → (Fin 3 → ℕ) → Fin 3 → Finset ℕ) (H : α → (Fin 3 → ℕ) → ℕ) (T : ℝ),\n      1 ≤ T → I.card ≤ (L + 1) ^ J →\n      ((tuples N R D k I base U H T).card : ℝ) ≤\n        (N : ℝ) ^ ε * ((N : ℝ) ^ 3 / T ^ 2 + (N : ℝ) ^ (6 / 5 : ℝ))",
+          "in_numbered_result_lean_declarations": true,
+          "existing_compiled_type": null,
+          "existing_compiled_type_origin": null
+        },
+        {
+          "declaration": "PaperP1.TernaryUnboundedCutoff.companion_T1_16",
+          "role": "supplementary",
+          "file": "PaperP1/Asymptotics/TernaryUnboundedCutoff.lean",
+          "line": 52,
+          "signature_end_line": 61,
+          "source_sha256": "b0c2f9af4852098cac4640875890a2c9f2a7400fbbf02f08a9075f3e7fdd4c48",
+          "source_signature": "theorem companion_T1_16 (C : ℝ) (D k J : ℕ) (hk : 3 ≤ k) (ε : ℝ) (hε : 0 < ε) :\n    ∃ N₀ : ℕ, 2 ≤ N₀ ∧ ∀ N ≥ N₀, ∀ L R : ℕ,\n      |(L : ℝ) - Real.log N / Real.log 2| ≤ C → R ≤ D * (L + 1) →\n      ∀ (α : Type*) [DecidableEq α], ∀ (F : Finset (α × (Fin 3 → ℕ)))\n        (U : α → (Fin 3 → ℕ) → Fin 3 → Finset ℕ) (H : α → (Fin 3 → ℕ) → ℕ)\n        (base : α → Fin 3 → ℕ) (T : ℝ), 1 ≤ T →\n      (F.image Prod.fst).card ≤ (L + 1) ^ J →\n      (∀ z ∈ F, SourceConditions N R D (base z.1) (U z.1) (H z.1) z.2) →\n      (∀ z ∈ F, T < (topProduct (U z.1 z.2) (H z.1 z.2) k : ℝ)) →\n      (F.card : ℝ) ≤ (N : ℝ) ^ ε * ((N : ℝ) ^ 3 / T ^ 2 + (N : ℝ) ^ (6 / 5 : ℝ))",
+          "in_numbered_result_lean_declarations": true,
+          "existing_compiled_type": "∀ (C : ℝ) (D k J : ℕ),\n  3 ≤ k →\n    ∀ (ε : ℝ),\n      0 < ε →\n        ∃ N₀,\n          2 ≤ N₀ ∧\n            ∀ N ≥ N₀,\n              ∀ (L R : ℕ),\n                |↑L - Real.log ↑N / Real.log 2| ≤ C →\n                  R ≤ D * (L + 1) →\n                    ∀ (α : Type u_1) [inst : DecidableEq α] (F : Finset (α × (Fin 3 → ℕ)))\n                      (U : α → (Fin 3 → ℕ) → Fin 3 → Finset ℕ) (H : α → (Fin 3 → ℕ) → ℕ) (base : α → Fin 3 → ℕ) (T : ℝ),\n                      1 ≤ T →\n                        (Finset.image Prod.fst F).card ≤ (L + 1) ^ J →\n                          (∀ z ∈ F,\n                              PaperP1.TernaryUnboundedCutoff.SourceConditions N R D (base z.1) (U z.1) (H z.1) z.2) →\n                            (∀ z ∈ F, T < ↑(PaperP1.TernaryTopProducts.topProduct (U z.1 z.2) (H z.1 z.2) k)) →\n                              ↑F.card ≤ ↑N ^ ε * (↑N ^ 3 / T ^ 2 + ↑N ^ (6 / 5))",
+          "existing_compiled_type_is_proposition": true,
+          "existing_compiled_type_origin": "docs/validation/manuscript-v1.8/compiled-types.json"
+        }
+      ],
+      "objects": "tuples est le vrai ensemble fini des couples (motif,triplet de centres) satisfaisant SourceConditions et topProduct>T. topProduct est le produit des k PLUS GRANDS groupes G_u>1, ou0 s'il y en a moins ; les groupes sont exactement les primes>H de valuation impaire dans les trois vraies valeurs.",
+      "hypotheses": "C,D,k,J,ε fixes,k≥3,ε>0 ; N grand,L critique,R≤D(L+1). Au plus(L+1)^J motifs. SourceConditions : centres dans trois boîtes de longueurDN ; valeurs positives≤DN à distance≤R du centre ; diamètre≤H et H≥1 ; evenMap injective dans chaque bloc ; images paires deux à deux disjointes. Le cutoff H peut dépendre des motifs et centres et n'a AUCUNE borne supérieure. T≥1 seulement, plus large que1≤T≤N imprimé.",
+      "quantifier_order": "∀C,D,k,J,ε fixes → ∃N₀≥2 → ∀N≥N₀,∀L,R → ∀type de motifsα et I,∀base,U,H,T sous les contraintes → compte de tuples≤N^ε(N³/T²+N^(6/5)). Le seuil précède motifs, ensembles effectifs de valeurs, cutoffs etT.",
+      "semantic_comparison": "Les bornes comparables àN et de largeurO(B) imprimées s'instancient en choisissant une seule constanteD majorant les constantes fixes. Le type autorise même un nombre polynomial de motifs et un cutoff non borné, donc n'ajoute pas de restriction au texte.",
+      "proof_closure": [
+        "actual_tuples_bound déroule mem_tuples et applique companion_T1_16 à la population littérale.",
+        "companion_T1_16 remplace H par min(H,2R+1) ; SourceConditions.capped vérifie encore les diamètres, et TernaryCutoffMonotonicity.top_product_le prouve que le produit des plus grands groupes peut seulement augmenter.",
+        "TernaryGroupTheorem.bounded_cutoff_patterns ferme ensuite le compte via les budgets ternaires et la somme sur les motifs. SourceConditions ne contient aucune hypothèse de compte."
+      ],
+      "rejected_as_terminal": [
+        "TernaryUnboundedCutoff.tuples/SourceConditions et TernaryTopProducts.topProduct : définitions de domaine/objet.",
+        "TernaryGroupTheorem.source_centres_bound seul garde un cutoff supérieur ; utiliser la version UnboundedCutoff pour la portée imprimée."
+      ],
+      "scope_notes": [
+        "« Pairwise in direct sum » est traduit par l'intersection nulle de chaque PAIRE d'images ; aucune somme directe simultanée des trois n'est ajoutée."
+      ]
+    },
+    {
+      "number": "T22.4",
+      "label": "p1:uniform:branching",
+      "document": "companion",
+      "verdict": "aligned_with_complete_growing_order_terminal",
+      "confidence": "high",
+      "source": {
+        "file": "manuscripts/paper-p1/v1.8/sources/companion_sections/uniform_appendix.tex",
+        "line": 147,
+        "end_line": 161,
+        "file_sha256": "bcc1726be86026b091d6da87e75a442c7d8651128818cba36b9bc33b355a8acb",
+        "statement": "\\begin{proposition}[Independent extensions at the critical order]\n\\label{p1:uniform:branching}\nPut \\(H=\\log N\\), \\(h=\\log H\\), and fix \\(K>0\\).\nFor every \\(j\\le KH/h\\) source windows, there is\nan exceptional set of new centres of size at most\n\\(D_N^*\\), where\n\\begin{equation}\n \\log D_N^*\n \\le\\frac23H-\\frac{H\\log h}{9h}+O_{K,C}(H/h),\n \\label{p1:uniform:branching-rate}\n\\end{equation}\nsuch that outside it the \\(L\\) new relative bits\nare exactly uniform and independent of all\npreviously exposed values.\n\\end{proposition}"
+      },
+      "ledger_lean_declarations_count": 14,
+      "recommended_terminal_bundle": [
+        {
+          "declaration": "PaperP1.CriticalOrderBranching.companion_T22_4",
+          "role": "primary",
+          "file": "PaperP1/Asymptotics/CriticalOrderBranching.lean",
+          "line": 50,
+          "signature_end_line": 60,
+          "source_sha256": "07be9634f36601e2c8fe3c815b7c824c8270b4406574c603fa4330aac5474029",
+          "source_signature": "theorem companion_T22_4 (K C : ℝ) (hK : 0 < K) :\n    ∃ c : ℝ, 0 < c ∧ ∃ Dstar : ℕ → ℝ, ∃ N₀ : ℕ, 3 ≤ N₀ ∧ ∀ N ≥ N₀,\n      0 < Dstar N ∧\n      Real.log (Dstar N) ≤ 2 / 3 * Real.log N -\n        Real.log N * Real.log (Real.log (Real.log N)) / (9 * Real.log (Real.log N)) +\n          c * (Real.log N / Real.log (Real.log N)) ∧\n      ∀ j : ℕ, (j : ℝ) ≤ K * Real.log N / Real.log (Real.log N) →\n      ∀ L : ℕ, |(L : ℝ) - Real.log N / Real.log 2| ≤ C →\n      ∀ A : Finset ℕ, A ⊆ dyadicBlock N → A.card ≤ j →\n        ∃ E : Finset ℕ, E ⊆ dyadicBlock N ∧ (E.card : ℝ) ≤ Dstar N ∧\n          IndependentConclusion N L A E",
+          "in_numbered_result_lean_declarations": true,
+          "existing_compiled_type": "∀ (K C : ℝ),\n  0 < K →\n    ∃ c,\n      0 < c ∧\n        ∃ Dstar N₀,\n          3 ≤ N₀ ∧\n            ∀ N ≥ N₀,\n              0 < Dstar N ∧\n                Real.log (Dstar N) ≤\n                    2 / 3 * Real.log ↑N -\n                        Real.log ↑N * Real.log (Real.log (Real.log ↑N)) / (9 * Real.log (Real.log ↑N)) +\n                      c * (Real.log ↑N / Real.log (Real.log ↑N)) ∧\n                  ∀ (j : ℕ),\n                    ↑j ≤ K * Real.log ↑N / Real.log (Real.log ↑N) →\n                      ∀ (L : ℕ),\n                        |↑L - Real.log ↑N / Real.log 2| ≤ C →\n                          ∀ A ⊆ PaperP1.Model.dyadicBlock N,\n                            A.card ≤ j →\n                              ∃ E ⊆ PaperP1.Model.dyadicBlock N,\n                                ↑E.card ≤ Dstar N ∧ PaperP1.FixedWindowBranching.IndependentConclusion N L A E",
+          "existing_compiled_type_is_proposition": true,
+          "existing_compiled_type_origin": "docs/validation/manuscript-v1.8/compiled-types.json"
+        }
+      ],
+      "objects": "Une seule enveloppe positive Dstar(N), avec la borne logarithmique exacte annoncée, contrôle un ensemble déterministe E de nouveaux centres. HorsE, IndependentConclusion donne équité de tout le vecteur nouveau et indépendance de toutes les anciennes valeurs brutes.",
+      "hypotheses": "K>0,C fixes avant le seuil ; j naturel≤KlogN/loglogN ; L critique ; A⊆I_N avec|A|≤j. Aucune régularité, séparation ni indépendance des anciens starts n'est supposée.",
+      "quantifier_order": "∀K,C fixes → ∃c>0 → ∃Dstar:ℕ→ℝ → ∃N₀≥3 → ∀N≥N₀ : DstarN>0, logDstarN≤(2/3)logN−logN·logloglogN/(9loglogN)+c logN/loglogN ET ∀j admissible,∀L,∀A ancien → ∃E⊆I_N,|E|≤DstarN,IndependentConclusion.",
+      "semantic_comparison": "L'ordre croissantj vient APRÈS une enveloppe et un seuil communs. Le terme O_{K,C}(H/h) est réalisé par errorConstantK>0 ; il est même indépendant deC, le seuil dépendant deC. Les conditions intermédiaires loglogN≥4096 sont déchargées par le choixN₀.",
+      "proof_closure": [
+        "uniform_exception_bound établit le compte des vrais badStarts à partir du budget logarithmique cubique du pool ancien et du tilt analytique.",
+        "companion_T22_4 pose Dstar=exp(rate) et vérifie son logarithme ; retained_independent donne la vraie équité et l'indépendance sur le même ensembleE.",
+        "Le type n'admet ni la taille des exceptions ni l'indépendance comme prémisses."
+      ],
+      "rejected_as_terminal": [
+        "CriticalOrderBranching.finite_exception_bound et uniform_exception_bound seuls : ils ne concluent pas l'indépendance.",
+        "Les définitions rate/exceptionEnvelope seules ne prouvent aucune estimation."
+      ],
+      "scope_notes": [
+        "A peut avoir moins dej starts et j peut être0. Les répétitions d'une liste d'exposition se traitent par son ensemble."
+      ]
+    },
+    {
+      "number": "T21.4",
+      "label": "p1:consequences:confinement",
+      "document": "companion",
+      "verdict": "aligned_by_terminal_bundle_under_inherited_block_hypotheses",
+      "confidence": "high",
+      "source": {
+        "file": "manuscripts/paper-p1/v1.8/sources/companion_sections/arithmetic_consequences.tex",
+        "line": 244,
+        "end_line": 265,
+        "file_sha256": "6b65c0b35a1077bef327644732aacc239f9a6ad50af40a1136b22d00d4f08a46",
+        "statement": "\\begin{proposition}[Polylogarithmic confinement]\n\\label{p1:consequences:confinement}\nFor every fixed $c>0$ and $\\varepsilon>0$, there is a fixed\ninteger $k$ such that, outside a mass\n\\begin{equation}\n O_{c,\\beta,\\varepsilon}\n \\left(N^{-\\min\\{\\beta-6/5,\\,\\beta-1-2/c\\}+\\varepsilon}\\right),\n \\label{p1:consequences:confinement-error}\n\\end{equation}\none has\n\\begin{equation}\n \\#\\{u:G_u>B^c\\}\n       \\le k-1+\\left\\lfloor\\frac{\\log N}{c\\log B}\\right\\rfloor=o(L).\n \\label{p1:consequences:confinement-count}\n\\end{equation}\nThe same assertion holds for $\\#\\{q\\in\\mathcal Q:q>B^c\\}$.\nOn a family of $B^{O(1)}$ fixed affine planes for the centers,\nreplace $2/c$ in the exceptional mass by $1/c$.\nFor original triples, $c>6$ is therefore sufficient for an\nexceptional mass $o(LN^{-2/3})$; on these planes $c>3$\nsuffices. These are sufficient thresholds, not optimality claims.\n\\end{proposition}"
+      },
+      "ledger_lean_declarations_count": 117,
+      "recommended_terminal_bundle": [
+        {
+          "declaration": "PaperP1.PolylogConfinementTheorem.companion_T21_4_three_dimensional",
+          "role": "primary",
+          "file": "PaperP1/Asymptotics/PolylogConfinementTheorem.lean",
+          "line": 33,
+          "signature_end_line": 47,
+          "source_sha256": "59c8f701e8823f6b00dc767b2b8c9385c36cd48883f6c158672ad11dc9bc357e",
+          "source_signature": "theorem companion_T21_4_three_dimensional (c ε : ℝ) (hc : 0 < c) (hε : 0 < ε) :\n    ∃ k : ℕ, 3 ≤ k ∧ ∀ C : ℝ, ∀ D J : ℕ,\n    ∃ N₀ : ℕ, 2 ≤ N₀ ∧ ∀ N ≥ N₀, ∀ L R : ℕ,\n      |(L : ℝ) - Real.log N / Real.log 2| ≤ C → R ≤ D * (L + 1) →\n      ∀ (α : Type*) [DecidableEq α], ∀ (F : Finset (α × (Fin 3 → ℕ)))\n        (U : α → (Fin 3 → ℕ) → Fin 3 → Finset ℕ) (H : α → (Fin 3 → ℕ) → ℕ)\n        (base : α → Fin 3 → ℕ) (β : ℝ) (w : α × (Fin 3 → ℕ) → ℝ),\n      (F.image Prod.fst).card ≤ (L + 1) ^ J →\n      (∀ z ∈ F, SourceConditions N R D (base z.1) (U z.1) (H z.1) z.2) →\n      (∀ z ∈ F, 0 ≤ w z ∧ w z ≤ (N : ℝ) ^ (-β + ε / 4)) →\n      ((∑ z ∈ exceptional F U H k N L c, w z) ≤\n          (N : ℝ) ^ (-min (β - 6 / 5) (β - 1 - 2 / c) + ε)) ∧\n        ∀ z ∈ F \\ exceptional F U H k N L c,\n          (TernaryValueConfinement.largeSupports (U z.1 z.2) (H z.1 z.2) (((L + 1 : ℕ) : ℝ) ^ c)).card ≤ threshold k N L c ∧\n          (TernaryPrimeValueConfinement.largePrimes (U z.1 z.2) (H z.1 z.2) (((L + 1 : ℕ) : ℝ) ^ c)).card ≤ threshold k N L c",
+          "in_numbered_result_lean_declarations": true,
+          "existing_compiled_type": "∀ (c ε : ℝ),\n  0 < c →\n    0 < ε →\n      ∃ k,\n        3 ≤ k ∧\n          ∀ (C : ℝ) (D J : ℕ),\n            ∃ N₀,\n              2 ≤ N₀ ∧\n                ∀ N ≥ N₀,\n                  ∀ (L R : ℕ),\n                    |↑L - Real.log ↑N / Real.log 2| ≤ C →\n                      R ≤ D * (L + 1) →\n                        ∀ (α : Type u_1) [inst : DecidableEq α] (F : Finset (α × (Fin 3 → ℕ)))\n                          (U : α → (Fin 3 → ℕ) → Fin 3 → Finset ℕ) (H : α → (Fin 3 → ℕ) → ℕ) (base : α → Fin 3 → ℕ)\n                          (β : ℝ) (w : α × (Fin 3 → ℕ) → ℝ),\n                          (Finset.image Prod.fst F).card ≤ (L + 1) ^ J →\n                            (∀ z ∈ F,\n                                PaperP1.TernaryUnboundedCutoff.SourceConditions N R D (base z.1) (U z.1) (H z.1) z.2) →\n                              (∀ z ∈ F, 0 ≤ w z ∧ w z ≤ ↑N ^ (-β + ε / 4)) →\n                                ∑ z ∈ PaperP1.PlaneConfinementMass.exceptional F U H k N L c, w z ≤\n                                    ↑N ^ (-Min.min (β - 6 / 5) (β - 1 - 2 / c) + ε) ∧\n                                  ∀ z ∈ F \\ PaperP1.PlaneConfinementMass.exceptional F U H k N L c,\n                                    (PaperP1.TernaryValueConfinement.largeSupports (U z.1 z.2) (H z.1 z.2)\n                                            (↑(L + 1) ^ c)).card ≤\n                                        PaperP1.TernaryGroupConfinement.threshold k N L c ∧\n                                      (PaperP1.TernaryPrimeValueConfinement.largePrimes (U z.1 z.2) (H z.1 z.2)\n                                            (↑(L + 1) ^ c)).card ≤\n                                        PaperP1.TernaryGroupConfinement.threshold k N L c",
+          "existing_compiled_type_is_proposition": true,
+          "existing_compiled_type_origin": "docs/validation/manuscript-v1.8/compiled-types.json"
+        },
+        {
+          "declaration": "PaperP1.PlaneConfinementMass.actual_plane_confinement",
+          "role": "primary",
+          "file": "PaperP1/Asymptotics/PlaneConfinementMass.lean",
+          "line": 119,
+          "signature_end_line": 135,
+          "source_sha256": "0d010d9349b0d351e6df7d4edce88a5b92464ff54aa39734402fde673fe8bb20",
+          "source_signature": "theorem actual_plane_confinement (c ε : ℝ) (hc : 0 < c) (hε : 0 < ε) :\n    ∃ k : ℕ, 3 ≤ k ∧ ∀ C : ℝ, ∀ D J K : ℕ,\n    ∃ N₀ : ℕ, 2 ≤ N₀ ∧ ∀ N ≥ N₀, ∀ L R : ℕ,\n      |(L : ℝ) - Real.log N / Real.log 2| ≤ C → R ≤ D * (L + 1) →\n      ∀ (α : Type*) [DecidableEq α], ∀ (F : Finset (α × (Fin 3 → ℕ)))\n        (U : α → (Fin 3 → ℕ) → Fin 3 → Finset ℕ) (H : α → (Fin 3 → ℕ) → ℕ)\n        (base : α → Fin 3 → ℕ) (planes : α → Finset Plane) (β : ℝ) (w : α × (Fin 3 → ℕ) → ℝ),\n      (F.image Prod.fst).card ≤ (L + 1) ^ J →\n      (∀ a ∈ F.image Prod.fst, (planes a).card ≤ (L + 1) ^ K) →\n      (∀ z ∈ F, SourceConditions N R D (base z.1) (U z.1) (H z.1) z.2) →\n      (∀ z ∈ F, ∃ P ∈ planes z.1, P.1 ≠ 0 ∧ (∑ i, P.1 i * (z.2 i : ℝ)) = P.2) →\n      (∀ z ∈ F, 0 ≤ w z ∧ w z ≤ (N : ℝ) ^ (-β + ε / 2)) →\n      ((∑ z ∈ exceptional F U H k N L c, w z) ≤\n          (N : ℝ) ^ (-min (β - 6 / 5) (β - 1 - 1 / c) + ε)) ∧\n        ∀ z ∈ F \\ exceptional F U H k N L c,\n          (TernaryValueConfinement.largeSupports (U z.1 z.2) (H z.1 z.2) (((L + 1 : ℕ) : ℝ) ^ c)).card ≤ TernaryGroupConfinement.threshold k N L c ∧\n          (TernaryPrimeValueConfinement.largePrimes (U z.1 z.2) (H z.1 z.2) (((L + 1 : ℕ) : ℝ) ^ c)).card ≤ TernaryGroupConfinement.threshold k N L c",
+          "in_numbered_result_lean_declarations": true,
+          "existing_compiled_type": "∀ (c ε : ℝ),\n  0 < c →\n    0 < ε →\n      ∃ k,\n        3 ≤ k ∧\n          ∀ (C : ℝ) (D J K : ℕ),\n            ∃ N₀,\n              2 ≤ N₀ ∧\n                ∀ N ≥ N₀,\n                  ∀ (L R : ℕ),\n                    |↑L - Real.log ↑N / Real.log 2| ≤ C →\n                      R ≤ D * (L + 1) →\n                        ∀ (α : Type u_1) [inst : DecidableEq α] (F : Finset (α × (Fin 3 → ℕ)))\n                          (U : α → (Fin 3 → ℕ) → Fin 3 → Finset ℕ) (H : α → (Fin 3 → ℕ) → ℕ) (base : α → Fin 3 → ℕ)\n                          (planes : α → Finset PaperP1.PlaneSupportCover.Plane) (β : ℝ) (w : α × (Fin 3 → ℕ) → ℝ),\n                          (Finset.image Prod.fst F).card ≤ (L + 1) ^ J →\n                            (∀ a ∈ Finset.image Prod.fst F, (planes a).card ≤ (L + 1) ^ K) →\n                              (∀ z ∈ F,\n                                  PaperP1.TernaryUnboundedCutoff.SourceConditions N R D (base z.1) (U z.1) (H z.1)\n                                    z.2) →\n                                (∀ z ∈ F, ∃ P ∈ planes z.1, P.1 ≠ 0 ∧ ∑ i, P.1 i * ↑(z.2 i) = P.2) →\n                                  (∀ z ∈ F, 0 ≤ w z ∧ w z ≤ ↑N ^ (-β + ε / 2)) →\n                                    ∑ z ∈ PaperP1.PlaneConfinementMass.exceptional F U H k N L c, w z ≤\n                                        ↑N ^ (-Min.min (β - 6 / 5) (β - 1 - 1 / c) + ε) ∧\n                                      ∀ z ∈ F \\ PaperP1.PlaneConfinementMass.exceptional F U H k N L c,\n                                        (PaperP1.TernaryValueConfinement.largeSupports (U z.1 z.2) (H z.1 z.2)\n                                                (↑(L + 1) ^ c)).card ≤\n                                            PaperP1.TernaryGroupConfinement.threshold k N L c ∧\n                                          (PaperP1.TernaryPrimeValueConfinement.largePrimes (U z.1 z.2) (H z.1 z.2)\n                                                (↑(L + 1) ^ c)).card ≤\n                                            PaperP1.TernaryGroupConfinement.threshold k N L c",
+          "existing_compiled_type_is_proposition": true,
+          "existing_compiled_type_origin": "docs/validation/manuscript-v1.8/compiled-types.json"
+        },
+        {
+          "declaration": "PaperP1.PolylogConfinementScales.logarithmic_count_sublinear",
+          "role": "supplementary",
+          "file": "PaperP1/Asymptotics/PolylogConfinementScales.lean",
+          "line": 40,
+          "signature_end_line": 43,
+          "source_sha256": "aceeccb7d185c46858ecbe50fc78e3dadf6e52f5c92df2f6a341ee4f0afeb67c",
+          "source_signature": "theorem logarithmic_count_sublinear (C c : ℝ) (hc : 0 < c) (k : ℕ) (η : ℝ) (hη : 0 < η) :\n    ∃ N₀ : ℕ, 2 ≤ N₀ ∧ ∀ N ≥ N₀, ∀ L : ℕ,\n      |(L : ℝ) - Real.log N / Real.log 2| ≤ C →\n      ((k - 1 + ⌊Real.log N / (c * Real.log ((L + 1 : ℕ) : ℝ))⌋₊ : ℕ) : ℝ) ≤ η * L",
+          "in_numbered_result_lean_declarations": true,
+          "existing_compiled_type": "∀ (C c : ℝ),\n  0 < c →\n    ∀ (k : ℕ) (η : ℝ),\n      0 < η →\n        ∃ N₀,\n          2 ≤ N₀ ∧\n            ∀ N ≥ N₀,\n              ∀ (L : ℕ),\n                |↑L - Real.log ↑N / Real.log 2| ≤ C → ↑(k - 1 + ⌊Real.log ↑N / (c * Real.log ↑(L + 1))⌋₊) ≤ η * ↑L",
+          "existing_compiled_type_is_proposition": true,
+          "existing_compiled_type_origin": "docs/validation/manuscript-v1.8/compiled-types.json"
+        },
+        {
+          "declaration": "PaperP1.PolylogConfinementTheorem.three_dimensional_sufficient_cutoff",
+          "role": "supplementary",
+          "file": "PaperP1/Asymptotics/PolylogConfinementTheorem.lean",
+          "line": 96,
+          "signature_end_line": 109,
+          "source_sha256": "59c8f701e8823f6b00dc767b2b8c9385c36cd48883f6c158672ad11dc9bc357e",
+          "source_signature": "theorem three_dimensional_sufficient_cutoff (c : ℝ) (hc : 6 < c) :\n    ∃ θ : ℝ, 0 < θ ∧ ∃ k : ℕ, 3 ≤ k ∧ ∀ C : ℝ, ∀ D J : ℕ, ∀ η : ℝ, 0 < η →\n    ∃ N₀ : ℕ, 2 ≤ N₀ ∧ ∀ N ≥ N₀, ∀ L R : ℕ,\n      |(L : ℝ) - Real.log N / Real.log 2| ≤ C → R ≤ D * (L + 1) →\n      ∀ (α : Type*) [DecidableEq α], ∀ (F : Finset (α × (Fin 3 → ℕ)))\n        (U : α → (Fin 3 → ℕ) → Fin 3 → Finset ℕ) (H : α → (Fin 3 → ℕ) → ℕ)\n        (base : α → Fin 3 → ℕ) (w : α × (Fin 3 → ℕ) → ℝ),\n      (F.image Prod.fst).card ≤ (L + 1) ^ J →\n      (∀ z ∈ F, SourceConditions N R D (base z.1) (U z.1) (H z.1) z.2) →\n      (∀ z ∈ F, 0 ≤ w z ∧ w z ≤ (N : ℝ) ^ (-2 + θ)) →\n      ((∑ z ∈ exceptional F U H k N L c, w z) ≤ η * L * (N : ℝ) ^ (-2 / 3 : ℝ)) ∧\n        ∀ z ∈ F \\ exceptional F U H k N L c,\n          (TernaryValueConfinement.largeSupports (U z.1 z.2) (H z.1 z.2) (((L + 1 : ℕ) : ℝ) ^ c)).card ≤ threshold k N L c ∧\n          (TernaryPrimeValueConfinement.largePrimes (U z.1 z.2) (H z.1 z.2) (((L + 1 : ℕ) : ℝ) ^ c)).card ≤ threshold k N L c",
+          "in_numbered_result_lean_declarations": true,
+          "existing_compiled_type": "∀ (c : ℝ),\n  6 < c →\n    ∃ θ,\n      0 < θ ∧\n        ∃ k,\n          3 ≤ k ∧\n            ∀ (C : ℝ) (D J : ℕ) (η : ℝ),\n              0 < η →\n                ∃ N₀,\n                  2 ≤ N₀ ∧\n                    ∀ N ≥ N₀,\n                      ∀ (L R : ℕ),\n                        |↑L - Real.log ↑N / Real.log 2| ≤ C →\n                          R ≤ D * (L + 1) →\n                            ∀ (α : Type u_1) [inst : DecidableEq α] (F : Finset (α × (Fin 3 → ℕ)))\n                              (U : α → (Fin 3 → ℕ) → Fin 3 → Finset ℕ) (H : α → (Fin 3 → ℕ) → ℕ) (base : α → Fin 3 → ℕ)\n                              (w : α × (Fin 3 → ℕ) → ℝ),\n                              (Finset.image Prod.fst F).card ≤ (L + 1) ^ J →\n                                (∀ z ∈ F,\n                                    PaperP1.TernaryUnboundedCutoff.SourceConditions N R D (base z.1) (U z.1) (H z.1)\n                                      z.2) →\n                                  (∀ z ∈ F, 0 ≤ w z ∧ w z ≤ ↑N ^ (-2 + θ)) →\n                                    ∑ z ∈ PaperP1.PlaneConfinementMass.exceptional F U H k N L c, w z ≤\n                                        η * ↑L * ↑N ^ (-2 / 3) ∧\n                                      ∀ z ∈ F \\ PaperP1.PlaneConfinementMass.exceptional F U H k N L c,\n                                        (PaperP1.TernaryValueConfinement.largeSupports (U z.1 z.2) (H z.1 z.2)\n                                                (↑(L + 1) ^ c)).card ≤\n                                            PaperP1.TernaryGroupConfinement.threshold k N L c ∧\n                                          (PaperP1.TernaryPrimeValueConfinement.largePrimes (U z.1 z.2) (H z.1 z.2)\n                                                (↑(L + 1) ^ c)).card ≤\n                                            PaperP1.TernaryGroupConfinement.threshold k N L c",
+          "existing_compiled_type_is_proposition": true,
+          "existing_compiled_type_origin": "docs/validation/manuscript-v1.8/compiled-types.json"
+        },
+        {
+          "declaration": "PaperP1.PlaneConfinementNegligibility.sufficient_cutoff",
+          "role": "supplementary",
+          "file": "PaperP1/Asymptotics/PlaneConfinementNegligibility.lean",
+          "line": 22,
+          "signature_end_line": 37,
+          "source_sha256": "21b5a2786e98d2c30cf81f26d7ddecb90420790527858f23e719db1f8a7e15b0",
+          "source_signature": "theorem sufficient_cutoff (c : ℝ) (hc : 3 < c) :\n    ∃ θ : ℝ, 0 < θ ∧ ∃ k : ℕ, 3 ≤ k ∧ ∀ C : ℝ, ∀ D J K : ℕ, ∀ η : ℝ, 0 < η →\n    ∃ N₀ : ℕ, 2 ≤ N₀ ∧ ∀ N ≥ N₀, ∀ L R : ℕ,\n      |(L : ℝ) - Real.log N / Real.log 2| ≤ C → R ≤ D * (L + 1) →\n      ∀ (α : Type*) [DecidableEq α], ∀ (F : Finset (α × (Fin 3 → ℕ)))\n        (U : α → (Fin 3 → ℕ) → Fin 3 → Finset ℕ) (H : α → (Fin 3 → ℕ) → ℕ)\n        (base : α → Fin 3 → ℕ) (planes : α → Finset Plane) (w : α × (Fin 3 → ℕ) → ℝ),\n      (F.image Prod.fst).card ≤ (L + 1) ^ J →\n      (∀ a ∈ F.image Prod.fst, (planes a).card ≤ (L + 1) ^ K) →\n      (∀ z ∈ F, SourceConditions N R D (base z.1) (U z.1) (H z.1) z.2) →\n      (∀ z ∈ F, ∃ P ∈ planes z.1, P.1 ≠ 0 ∧ (∑ i, P.1 i * (z.2 i : ℝ)) = P.2) →\n      (∀ z ∈ F, 0 ≤ w z ∧ w z ≤ (N : ℝ) ^ (-2 + θ)) →\n      ((∑ z ∈ exceptional F U H k N L c, w z) ≤ η * L * (N : ℝ) ^ (-2 / 3 : ℝ)) ∧\n        ∀ z ∈ F \\ exceptional F U H k N L c,\n          (TernaryValueConfinement.largeSupports (U z.1 z.2) (H z.1 z.2) (((L + 1 : ℕ) : ℝ) ^ c)).card ≤ TernaryGroupConfinement.threshold k N L c ∧\n          (TernaryPrimeValueConfinement.largePrimes (U z.1 z.2) (H z.1 z.2) (((L + 1 : ℕ) : ℝ) ^ c)).card ≤ TernaryGroupConfinement.threshold k N L c",
+          "in_numbered_result_lean_declarations": true,
+          "existing_compiled_type": "∀ (c : ℝ),\n  3 < c →\n    ∃ θ,\n      0 < θ ∧\n        ∃ k,\n          3 ≤ k ∧\n            ∀ (C : ℝ) (D J K : ℕ) (η : ℝ),\n              0 < η →\n                ∃ N₀,\n                  2 ≤ N₀ ∧\n                    ∀ N ≥ N₀,\n                      ∀ (L R : ℕ),\n                        |↑L - Real.log ↑N / Real.log 2| ≤ C →\n                          R ≤ D * (L + 1) →\n                            ∀ (α : Type u_1) [inst : DecidableEq α] (F : Finset (α × (Fin 3 → ℕ)))\n                              (U : α → (Fin 3 → ℕ) → Fin 3 → Finset ℕ) (H : α → (Fin 3 → ℕ) → ℕ) (base : α → Fin 3 → ℕ)\n                              (planes : α → Finset PaperP1.PlaneSupportCover.Plane) (w : α × (Fin 3 → ℕ) → ℝ),\n                              (Finset.image Prod.fst F).card ≤ (L + 1) ^ J →\n                                (∀ a ∈ Finset.image Prod.fst F, (planes a).card ≤ (L + 1) ^ K) →\n                                  (∀ z ∈ F,\n                                      PaperP1.TernaryUnboundedCutoff.SourceConditions N R D (base z.1) (U z.1) (H z.1)\n                                        z.2) →\n                                    (∀ z ∈ F, ∃ P ∈ planes z.1, P.1 ≠ 0 ∧ ∑ i, P.1 i * ↑(z.2 i) = P.2) →\n                                      (∀ z ∈ F, 0 ≤ w z ∧ w z ≤ ↑N ^ (-2 + θ)) →\n                                        ∑ z ∈ PaperP1.PlaneConfinementMass.exceptional F U H k N L c, w z ≤\n                                            η * ↑L * ↑N ^ (-2 / 3) ∧\n                                          ∀ z ∈ F \\ PaperP1.PlaneConfinementMass.exceptional F U H k N L c,\n                                            (PaperP1.TernaryValueConfinement.largeSupports (U z.1 z.2) (H z.1 z.2)\n                                                    (↑(L + 1) ^ c)).card ≤\n                                                PaperP1.TernaryGroupConfinement.threshold k N L c ∧\n                                              (PaperP1.TernaryPrimeValueConfinement.largePrimes (U z.1 z.2) (H z.1 z.2)\n                                                    (↑(L + 1) ^ c)).card ≤\n                                                PaperP1.TernaryGroupConfinement.threshold k N L c",
+          "existing_compiled_type_is_proposition": true,
+          "existing_compiled_type_origin": "docs/validation/manuscript-v1.8/compiled-types.json"
+        },
+        {
+          "declaration": "PaperP1.PrimitiveConfinementWeights.uniform_weights",
+          "role": "supplementary",
+          "file": "PaperP1/Asymptotics/PrimitiveConfinementWeights.lean",
+          "line": 20,
+          "signature_end_line": 28,
+          "source_sha256": "63d8dabb08786f7311b1d6ff15eff74af25e43b9de1a9e3681cd098133c298e5",
+          "source_signature": "theorem uniform_weights (C θ : ℝ) (hθ : 0 < θ) :\n    ∃ N₀ : ℕ, 2 ≤ N₀ ∧ ∀ N ≥ N₀, ∀ L : ℕ,\n      |(L : ℝ) - Real.log N / Real.log 2| ≤ C → ∀ X : Fin 3 → ℕ,\n      Function.Injective X → Primitive L X → 0 < X 0 → 0 < X 1 →\n      Module.finrank F₂ (squareClassSpace (X 0) L) = L →\n      Module.finrank F₂ (squareClassSpace (X 1) L) = L →\n      (0 ≤ infiniteJointMoment L (tupleSet X) ∧ infiniteJointMoment L (tupleSet X) ≤ (N : ℝ) ^ (-2 + θ)) ∧\n        (0 ≤ HomogeneousRunMass.probability L (tupleSet X) ∧\n          HomogeneousRunMass.probability L (tupleSet X) ≤ (N : ℝ) ^ (-2 + θ))",
+          "in_numbered_result_lean_declarations": true,
+          "existing_compiled_type": "∀ (C θ : ℝ),\n  0 < θ →\n    ∃ N₀,\n      2 ≤ N₀ ∧\n        ∀ N ≥ N₀,\n          ∀ (L : ℕ),\n            |↑L - Real.log ↑N / Real.log 2| ≤ C →\n              ∀ (X : Fin 3 → ℕ),\n                Function.Injective X →\n                  PaperP1.TripleProbabilityBound.Primitive L X →\n                    0 < X 0 →\n                      0 < X 1 →\n                        Module.finrank PaperP1.Arithmetic.F₂ ↥(PaperP1.Arithmetic.squareClassSpace (X 0) L) = L →\n                          Module.finrank PaperP1.Arithmetic.F₂ ↥(PaperP1.Arithmetic.squareClassSpace (X 1) L) = L →\n                            (0 ≤\n                                  PaperP1.Model.InfiniteStarts.infiniteJointMoment L\n                                    (PaperP1.TripleProbabilityBound.tupleSet X) ∧\n                                PaperP1.Model.InfiniteStarts.infiniteJointMoment L\n                                    (PaperP1.TripleProbabilityBound.tupleSet X) ≤\n                                  ↑N ^ (-2 + θ)) ∧\n                              0 ≤ PaperP1.HomogeneousRunMass.probability L (PaperP1.TripleProbabilityBound.tupleSet X) ∧\n                                PaperP1.HomogeneousRunMass.probability L (PaperP1.TripleProbabilityBound.tupleSet X) ≤\n                                  ↑N ^ (-2 + θ)",
+          "existing_compiled_type_is_proposition": true,
+          "existing_compiled_type_origin": "docs/validation/manuscript-v1.8/compiled-types.json"
+        }
+      ],
+      "objects": "Un même ensemble exceptionnel (union positive de groupes et de primes) porte la masse Σw_z. Hors de cet ensemble, le nombre des supports G_u>B^c ET des primes individuelles de Q supérieures àB^c est≤k−1+floor(logN/(c logB)). Les groupes entiers ne sont pas confondus avec leurs facteurs premiers.",
+      "hypotheses": "Hypothèses de blocs deT1.16 héritées à T21 l196 : SourceConditions, largeurO(B), valeurs positivesO(N), evenMap injective et images deux à deux directes ; au plusB^J motifs. Poids réels non négatifs et uniformément≤N^(−β+ε/4) dans la version3D (≤N^(−β+ε/2) pour les plans). Pour les plans, au plusB^K plans par motif, normales RÉELLES non nulles et incidence de chaque centre à l'un de ces plans.",
+      "quantifier_order": "Version3D : ∀c,ε>0 → ∃k≥3 → ∀C,D,J fixes → ∃N₀ → ∀N,L,R → ∀populationF,motifs,U,H,base,β,w satisfaisant les contraintes → masse exceptionnelle et deux comptes. Versionplans : même ordre avecK fixé avantN₀ et la famille de plans aprèsN₀. Le k est même indépendant deC,D,J,β etw.",
+      "semantic_comparison": "Le corps de l'énoncé réclame PLUSIEURS terminaux : le théorème3D ne contient pas la variante plane ; les deux théorèmes de masse ne disent pas à eux seuls que le seuil=o(L), ni les seuils suffisantsc>6/c>3. Ces pièces existent séparément dans lean_declarations. Le cap des poids n'est pas une supposition du résultat à établir : il est la définition imprimée de «positive mass» (l201–204).",
+      "proof_closure": [
+        "Le terminal3D compose actual_group_confinement et actual_prime_confinement sur une union positive des deux mauvais ensembles, en absorbant le facteur2 dans une marge.",
+        "actual_plane_confinement ferme simultanément groupes et primes sur de vrais plans par PlaneTernaryConfinement.uniform_count et le comptage étiqueté ; il ne suppose pas la masse exceptionnelle.",
+        "logarithmic_count_sublinear prouve pour toutη>0 que le seuil affiché≤ηL, après un seuil dépendantdek,C,c,η.",
+        "three_dimensional_sufficient_cutoff(c>6) et PlaneConfinementNegligibility.sufficient_cutoff(c>3) établissent directement pour toutη>0 une masse≤η L N^(−2/3), avec une tolérance fixeθ>0 dans le capw≤N^(−2+θ).",
+        "PrimitiveConfinementWeights.uniform_weights produit le capβ=2 pour les probabilités jointes effectives et les probabilités homogènes d'un original primitive triple comportant la paire régulière explicitement requise."
+      ],
+      "rejected_as_terminal": [
+        "Les définitions exceptional,threshold et budgetExponent ne sont pas des preuves.",
+        "TernaryConfinementMass.group_mass seul ne conclut ni un ensemble exceptionnel commun, ni le compte des primes, ni la branche plane.",
+        "PrimitiveConfinementWeights.uniform_weights ne doit pas être décrit comme s'appliquant à une triple primitive effective arbitraire sans ses hypothèses de rang."
+      ],
+      "scope_notes": [
+        "Dans la spécialisation originale, uniform_weights exige rank(S_X0)=rank(S_X1)=L, en plus de Primitive et de l'injectivité des trois starts. Cette régularité est compatible avec les blocs à evenMap injective hérités deT1.16. L'index doit l'écrire ; il ne peut remplacer cette portée par «toutes les triples primitives, y compris irrégulières».",
+        "Exemple de décalage de type à éviter : Primitive L X ne fournit à lui seul aucune égalité rank(S_Xi)=L ; le lemme primitive_pair_good les prend explicitement comme arguments. Le fait que les espaces EFFECTIFS de deux blocs soient directs n'implique pas que leurs cartes physiques n'aient aucun noyau local.",
+        "Je n'ai pas confirmé de contre-exemple à l'assertion mathématique T21.4 dans son contexte hérité. La réserve porte sur une indexation qui supprimerait ce contexte, non sur une faute prouvée du texte.",
+        "Le β fixé du texte correspond à un β même quantifié aprèsN₀ dans les terminaux ; les marges o(1) doivent être uniformes en les hôtes comme le texte le précise."
+      ]
+    }
+  ],
+  "no_repository_modifications": true,
+  "no_lake": true,
+  "no_palomar": true,
+  "final_checks": {
+    "all_9_source_statements_and_22_endpoint_source_hashes_unchanged": true,
+    "all_endpoint_locations_valid": true,
+    "all_endpoint_names_in_their_result_ledger": true,
+    "no_new_compilation_by_this_instance": true,
+    "status": "final"
+  }
+}

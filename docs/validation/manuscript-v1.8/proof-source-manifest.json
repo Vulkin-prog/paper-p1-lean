@@ -1,10 +1,10 @@
 {
-  "validated_source_commit": "bd9fcea3f0b0abf147a33bbe543338dcc982e791",
+  "validated_source_commit": "08f019df4d33a817377e5c937356fe4d87ae08e1",
   "scope": "All PaperP1 modules, root Lean files (including all Solutions and Audit), compiler and dependency pins. Temporary diagnostic modules are not imported by any proof.",
   "files": [
     {
       "path": "Audit.lean",
-      "sha256": "272525cf471e9fbf7c385ccfd18b45c030733d9df006343ba8d73b8619d4dc8f"
+      "sha256": "f5d48025596f15ad7a1bfa731e27f9fcb65df204571751f1f236e1a64b151d0e"
     },
     {
       "path": "ChallengeP1AffineSpectra.lean",
@@ -100,7 +100,7 @@
     },
     {
       "path": "PaperP1.lean",
-      "sha256": "931557ef9182eef91c918c4b7ff026fc6785c5886462a6c933dbeeb34b0c5c01"
+      "sha256": "18d8b1de02571eb554c7778bd02a2cc1be149cc69a07a8767d749ff343278071"
     },
     {
       "path": "PaperP1/Affine/BinaryMassLattice.lean",
@@ -10055,6 +10055,10 @@
       "sha256": "4815e21849c9df0aba50b2c990617caf4130f631600aeb7a4a6371a6dbd3c180"
     },
     {
+      "path": "PaperP1/Asymptotics/DensePrimitiveHomogeneousMass.lean",
+      "sha256": "04560db2fe83e57959bf158dc9b292e5d9e1df14ba7e77e6591b1537cb8485c8"
+    },
+    {
       "path": "PaperP1/Asymptotics/DensePrimitiveHosts.lean",
       "sha256": "084702432af9f9c6774aab76950688946e49aa9e213eda52e91b6bf78c17b90b"
     },
@@ -17081,6 +17085,10 @@
     {
       "path": "PaperP1/Model/NoSingletonSeedCover.lean",
       "sha256": "5cc0eebb96a6ef184257070e03539bd54b05e572479a84c532689ac6527152ca"
+    },
+    {
+      "path": "PaperP1/Model/NominalRunReplicaFormula.lean",
+      "sha256": "f3c2dce139c0a2e98f01aad76823346569d90746400720af0591a7b9ac01b76e"
     },
     {
       "path": "PaperP1/Model/NonDirectApartPartition.lean",

@@ -1,0 +1,46 @@
+{
+  "checkpoint": "P1-MATH-1001",
+  "source_commit": "4f5a24bb6f7ec1a0cffe3d8b3f8410d74528a62d",
+  "status": "passed",
+  "full_build_jobs": 18623,
+  "audited_theorems": 19971,
+  "substantive_theorems": 19543,
+  "preserved_component_solution_theorems": 214,
+  "consolidated_solution_theorems": 214,
+  "distinct_checked_references": 19894,
+  "actual_process_exit_codes": {
+    "build": 0,
+    "audit": 0,
+    "references": 0
+  },
+  "toolchain": "leanprover/lean4:v4.36.0-rc2",
+  "mathlib_commit": "9d581dfff2e41de989072ea63abf3daf69311520",
+  "permitted_kernel_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "logs": [
+    {
+      "kind": "build",
+      "path": "docs/validation/checkpoint-1001/build.log.gz",
+      "sha256_gzip": "9cb5131a3221f4ab41fc18c5fc79bd1e4b537f355af06c5874eee136e3751eea"
+    },
+    {
+      "kind": "audit",
+      "path": "docs/validation/checkpoint-1001/audit.log.gz",
+      "sha256_gzip": "d6163b07313fe6a59e34e4a6e8481cf409fe5c01c879d238c99481dd88b3bfe0"
+    },
+    {
+      "kind": "references",
+      "path": "docs/validation/checkpoint-1001/references.log.gz",
+      "sha256_gzip": "9764d3ef556a1f5b6915ec7519492a7d3ede2f24005fe7b1027b444b13539a73"
+    }
+  ],
+  "compiled_scope": {
+    "path": "docs/validation/checkpoint-1001/scope/compiled-types.json",
+    "actual_exit_code": 0,
+    "replay_source_commit": "08f019df4d33a817377e5c937356fe4d87ae08e1"
+  },
+  "scope": "Exact nominal and actual-heterogeneous infinite/run replica interfaces, retaining the formal raw kernel, effective relative kernel, affine incompatibility, irregular windows and repeated centers. All 167 numbered statements, frozen source/PDF versions and six registration scopes are preserved."
+}

@@ -1,0 +1,467 @@
+Revue indépendante des79 canonical_statement — v1.8
+Source examinée : 710286443d29df7528b8eb16df34b30707b2487b
+
+79 blocs et79 types lus :40 article,39 compagnon. 54 résultats sans déclaration supplémentaire requise ;25 avec clause ou support ponctuel.
+37 compléments uniques :15 types dans les archives528+536 et22 lus en source, sans validation compilée inventée.
+Aucun énoncé faux confirmé dans les conventions héritées. Distinguer entrée principale, clauses, signes, identités et compositions.
+
+Points prioritaires :
+3.4,7.4,11.3,15.1,15.2,15.5 : Clauses ponctuelles/générales/denses absentes de la seule entrée principale. Les vrais wrappers fermés sont identifiés ; aucune ancienne interface UnderInputs ne les remplace.
+18.3 : uniform_equivalents ne prouve pas à lui seul loi signée, formuleM5, incrément exact et constantec6. Les six compléments sont différenciés entre estimation et identités finies.
+T1.4,T1.5,T1.10,T2.8,T5.1 : Barrière relâchée, sharpness, invariance, coupure de hauteur et comparaisons algébriques demandent leurs propres clauses. Deux majorants de compte ne prouvent pas une comparaison de leurs exposants.
+T16.3,T19.4,T19.6,T19.17 : Plage linéaire, branchement/logarithme, seuil proche deN et orientation randomisée ont des points d’entrée distincts. Les paramètres fixes et seuils sont conservés.
+T8.2 : La masse exactep_x et les poids NOMINAUXp ne sont pas la probabilité homogène en présence de défauts/incompatibilité locale. Celle-ci se ferme par hôtes+cap homogène+factorisation+ρ≤L ; aucun endpoint homogène complet nommé unique n’a été identifié ici.
+T7.1,T19.14 : Une erreur de loi ne donne pas une structure par réalisation. Ajouter les courts supports cover/disjoint_classes et retained_pair_geometry.
+15.13 : Conserver la PRÉMISSE imprimée des254ordres fixes : le résultat est un principe de transfert conditionnel, pas une loi standalone sans prémisse.
+14.1,14.5,17.3,18.1,T2.7 : Cinq courts supports de signe/intervalle sont séparés des vrais terminaux asymptotiques ; pas de faisceau historique ajouté.
+
+Résultat par résultat :
+
+main 1.1 — p1:thm:main — complete
+Entrée : PaperP1.OptimalQuadratic.article_1_1
+Le type contient les deux bornes4/3, le biais de moyenne et la positivité de la vraie référence. error et reference sont les objets du modèle original ; aucune Hypotheses externe.
+Contexte : Bande critique |L−log₂N|≤C, C et ε fixés avantN₀.
+
+main 1.2 — p1:cor:tv — complete
+Entrée : PaperP1.ExactPoissonScale.article_1_2
+Les deux expansions en TV (moyennes réelle et nominale) et les deux équivalents sont présents. phaseScale est défini comme phaseMass3·norme/4 ; phaseScale_formula déplie le coefficient imprimé et est une identité de notation, non une hypothèse asymptotique.
+Contexte : Même bande critique ; le paramètreτ>0 du rapport asymptotique fixe un second seuil.
+
+main 1.4 — p1:cor:explicit — complete
+Entrée : PaperP1.ExplicitQuadraticApproximation.article_1_4
+Le type donne erreur4/5, caractère de probabilité et formule exacte des masses pour toutk. Le coefficient est twoChannelCoefficient déterminé parN,L.
+Contexte : Bande critique ; ε>0 avantN₀ ; tous k naturels aprèsN₀.
+
+main 3.2 — p1:arith:hosts — complete
+Entrée : PaperP1.NonalignedSourceResidual.uniform_source_bounds
+Les deux clausesN^(1+ε) sont présentes. Ne pas remplacer le support separatedHosts par une simple collection de noyaux abstraits.
+Contexte : Paires ordonnées séparées dansI_N ; ρ ici est la perte brute pairLoss.
+
+main 3.3 — p1:arith:pairs — complete
+Entrée : PaperP1.CompletePairProfile.main_3_3
+Le type contient les deux profils, l’expansion deα et les deux équivalents via les phaseMass explicites ; la toléranceε rend les rapports arbitrairement proches de1.
+Contexte : Paires ordonnées séparées ; mêmes S,U et mêmes classes de L modulo3,4.
+
+main 3.4 — p1:arith:edgefamily — requires_complements
+Entrée : PaperP1.PrincipalEdgeRemainder.uniform_edge_input
+uniform_edge_input couvre |E_N|,β≈LN^−2/3,2β−α et même un reste plus fort sans+B/N. Il manque au type canonique les deux bornes individuellesρ(e)≤B/b etq_e≤p²2^(B/b), fournies par les deux vrais lemmes PrivateChannelRank après oubli du filtre compatible.
+Contexte : H≥8B et H≤Hmult·B avec Hmult fixé ; E_N est l’union compatible des canaux2:3 et3:4 ; pour le cap individuel a:b est réduit,0<a<b et(a+b)B<N (éventuel).
+Compléments : PaperP1.PrivateChannelRank.nullity_bound ; PaperP1.PrivateChannelRank.joint_bound
+
+main 6.4 — p1:fixed:moments — complete
+Entrée : PaperP1.CompleteFixedMoments.article_6_4
+Les deux moments factoriels, le moment ordinaire Touchard, sa borne uniforme et les cumulantsr≥3 figurent dans la conjonction. Les ordres0,1 de «all ordinary moments» sont les identités triviales/borne de moyenne déjà posées.
+Contexte : r≥2 est fixé avantC,ε,N₀ ; aucune utilisation àr croissant.
+
+main 7.4 — p1:core:generator — requires_complements
+Entrée : PaperP1.MarkedGraphGenerator.polynomial_star_bound
+polynomial_star_bound porte seulement sur les poids homogènesz. Le terminal hétérogène couvre la seconde inégalité du texte ; il est déjà correctement proposé dans tentative-index.
+Contexte : Graphe simple FINI ; marks ensemble des sommets marqués ; z≥0 ou poids individuels tous≥0.
+Compléments : PaperP1.GraphStarWeights.heterogeneous_generating_bound
+
+main 11.1 — p13:activity:deficit — complete
+Entrée : PaperP1.SharpPairTargetDeficit.article_11_1
+Le vrai déficit IndependentTargetDeficit.deficit est borné àN^−3/2 ; la clause de masse de paires supplémentaire du type est plus forte que nécessaire et n’est pas une nouvelle hypothèse.
+Contexte : Sous-famille G⊆I_N arbitraire, seuil avantG ; poids exactsp_x, espaces effectifs.
+
+main 11.2 — p13:activity:incompatible — complete
+Entrée : PaperP1.SharpThirdCancellation.article_11_2
+incompatibleAbsolute somme les valeurs absolues des vrais coefficients, donc couvre les deux signes demandés.
+Contexte : G⊆I_N arbitraire ; ensembles non ordonnés de trois fenêtres ; incompatibilité q=0.
+
+main 11.3 — p13:activity:kappa3 — requires_complements
+Entrée : PaperP1.SharpThirdCancellation.uniform_cancellation
+uniform_cancellation contient les deux erreurs, la non-négativité du déficit absolu et un contrôle des répétitions. La phrase pointwise «Every compatible triple has c(T)≥0» nécessite coefficient_nonneg, théorème exact valable même à tout ordre ; la somme positive ne constitue pas à elle seule cette preuve pointwise.
+Contexte : L>0 (éventuel dans la bande), compatible signifieq(T)>0 ; G peut être toute sous-familleI_N.
+Compléments : PaperP1.CompatibleRunCentered.coefficient_nonneg
+
+main 12.1 — p13:conf:near-primitive — complete
+Entrée : PaperP1.NearPrimitiveTripleMass.main_12_1_full
+La conjonction contient les hôtes et les deux masses (exacte et nominale), avec seuil avant toute populationF. Pas de rang local plein ajouté.
+Contexte : η>0,0<θ<η/100 et ε fixés avantN₀ ; densité mesurée enB=L+1 et nonL.
+
+main 12.2 — p13:conf:strong-profile — complete
+Entrée : PaperP1.StrongNonalignedTripleProfile.main_12_2
+Le compte est celui des vraies probabilités jointes. Le type omet la compatibilité car les termes incompatibles sont nuls : portée plus forte, sans hypothèse supplémentaire.
+Contexte : θ,σ,ε>0 fixes ; familles de trois centres dansI_N, connectées, paire NoExact de rang≥θL, nullité≤σL.
+
+main 13.5 — p13:rig:sublinear-grid — complete
+Entrée : PaperP1.QuadraticGrowingDegreePlaneCount.article_13_5
+Les deux clauses sont présentes : cap ponctuel avec logarithme^17 et o(B) uniforme. Le type couvrea=0 et ne suppose pas quecap croisse ni soit monotone.
+Contexte : 0≤a<1/2 et enveloppecap:ℕ→ℝ fixée, UpperPowerCap avant les seuils ; courbes irréductibles de degré≥2 sur un corps de caractéristique0 plongé dansC.
+
+main 13.6 — p13:rig:nonaligned — complete
+Entrée : PaperP1.NonalignedRankTheorem.article_13_6
+Le limsup et l’inégalité stricte(2/3)log2<1/2 figurent dans le type ; aucune compatibilité n’est requise. La suite de longueurs ne doit pas être figée à une valeurL constante.
+Contexte : Toute suiteL(N) éventuellement dans une bandeC fixée ; maximalRatio est le supremum fini des paires non alignées.
+
+main 13.8 — p13:rig:triple — complete
+Entrée : PaperP1.TripleRankTheorem.article_13_8
+Les deux caps de nullité et le maximum de probabilitéN^−3/2 sont présents. Le termeo(L) est rendu par touteε>0 et un seuil uniforme avantI,x,y.
+Contexte : Trois centres distincts via I.card=3 ; bande critique. La première nullité est conditionnée parq>0, la seconde est même valable sans cette condition.
+
+main 14.1 — p13:third:main — requires_sign_support
+Entrée : PaperP1.OptimalThirdCumulant.article_14_1
+article_14_1 contient les deux puissances41/30 sans prémisse mathématique externe. Le fait0<lowerConstant C, absent de la conjonction mais nécessaire à c_C>0, est la petite preuve de signe nommée ; aucune nouvelle estimation à ajouter.
+Contexte : C fixé ; lowerConstant dépend deC seul et nonε ; ε règle seulement le seuil.
+Compléments : PaperP1.OptimalThirdCumulant.lowerConstant_pos
+
+main 14.3 — p13:third:aligned-family — complete
+Entrée : PaperP1.AlignedFamilyTripleMass.article_14_3
+mass somme les triples connectés avec une paire géométrique d’un canalF, sans supprimer irrégularités/contacts ; les q=0 sont des termes nuls. Aucune bonne normalisation ou régularité source n’est ajoutée.
+Contexte : FiniF de canaux réduit0<a<b<2a fixé avantN, doncb≥3 automatiquement ; mêmes bords et largeur.
+
+main 14.4 — p13:third:aligned — complete
+Entrée : PaperP1.StrongAlignedSharpMass.article_14_4
+La somme uniformément sur toutes populationsF contient l’énoncé ; les triplesq=0 peuvent être inclus sans coût. Le choixx<y ne change pas la condition non ordonnée grâce à la symétrie.
+Contexte : θ>0 fixé avantN ; StrongAligned est l’existence d’une paire alignée avecd_xy≥θB. La variableQ existentielle dans le type n’est pas une prémisse de F.
+
+main 14.5 — p13:third:lower — requires_sign_support
+Entrée : PaperP1.SharpThirdCumulantLower.article_14_5
+Le canonique donne la borne K3+ et la borne cumulant tant sur positiveGround que surI_N. Pour la constante strictement positive, ajouter seulement lower_constant_pos comme fait de signe, pas toute la construction des canaux.
+Contexte : C fixé ; positiveGround retire seulement les marges nulles, dont les activités pertinentes sont nulles.
+Compléments : PaperP1.ThreeSlopePositiveActivity.lower_constant_pos
+
+main 14.6 — p13:third:activity — complete
+Entrée : PaperP1.SharpThirdActivity.article_14_6
+Le type borne bien la masse absolue de toutes les triples, non seulement compatibles ou régulières.
+Contexte : C,ε fixés ; toute sous-familleG⊆I_N ; triples non ordonnés.
+
+main 15.1 — p13:transfer:conversion — requires_complements
+Entrée : PaperP1.RunConversion.main_15_1
+RunConversion.main_15_1 ne contient que l’application arithmétiqueN^−5/3. Le terminal général supplémentaire prouve exactement la conversion de toute famille finie, avec une constante universelle, même sans cap p_*≤1/4 ni de moyenne. Ne pas le remplacer par une simple définition deB2.
+Contexte : Dans la première clause les p_i sont de vraies marges Bernoulli dans[0,1],E l’ensemble de toutes les paires,c leurs covariances ; P=p_*≥0.
+Compléments : PaperP1.UniversalHeterogeneousConversion.actual_signed_measure_conversion
+
+main 15.2 — p13:transfer:dense-targets — requires_complements
+Entrée : PaperP1.UnconditionalDenseTwoTargetMass.article_15_2
+Le canonique ferme les trois versions de la paire conditionnelle (marges exactes, homogènes, nominales), mais pas la somme sur collections prescrites de sources. Le complément fermé donne #S≤N^σ → masse≤N^(1−r+σ+ε), sans hypothèse analytique externe. Prendreσ=a+ε_source et partager les marges pour le texte. L’ancien SourceRestrictedDenseMass.article_15_2_source_restricted garde huit prémisses analytiques et ne doit pas être présenté comme endpoint fermé.
+Contexte : s,η,ε,C fixes ; W≤somme EFFECTIVE des sources, séparément direct de chaque cible. θ>0 existe avantN₀ et avant toutes les sources. Pour la dernière clause r≥3 fixé et collectionS de(r−2)-sources.
+Compléments : PaperP1.RestrictedDensePrimitiveMass.uniform_bound
+
+main 15.5 — p13:transfer:primitive — requires_complements
+Entrée : PaperP1.SharpPrimitiveMass.uniform_rank_mass
+Le canonique ne donne que la masse totaleN^−r/2. Deux terminaux supplémentaires, déjà correctement proposés par tentative-index, donnent respectivement N^ε hôtes denses et masse denseN^(1−r+ε). Ne pas les remplacer par les auxiliaires ancrés conditionnels.
+Contexte : r≥3 etη>0 FIXÉS avant tous seuils ; nullité relative effective ; vrais p_x, y compris irréguliers ; populations déterministes aprèsN₀.
+Compléments : PaperP1.DensePrimitiveHosts.uniform_hosts ; PaperP1.DensePrimitiveRankMass.uniform_rank_mass
+
+main 15.7 — p13:transfer:fixed-deficit — complete
+Entrée : PaperP1.FixedPairExtensionDeficit.article_15_7
+FixedPairExtensions.deficit est le vrai déficit avec |c(e)| et les poids exacts des k nouvelles fenêtres. Le type ne suppose ni son compte ni la borne de11.1.
+Contexte : k≥1 fixé avantN ;G⊆I_N arbitraire, supports des extensions disjoints de la paire.
+
+main 15.9 — p13:transfer:pair-deficit — complete
+Entrée : PaperP1.AllPairDeficit.article_15_9
+Le canonique donneN^−3/2 uniformément dansL. L’affirmation «smaller thanN^−4/3» s’en déduit en choisissant une marge interneε<1/6 ; elle ne signifie pas touteε arbitraire sans ce choix.
+Contexte : u>0 fixé ; D2(u)=AllPairExtensionDeficit.deficit sur toutI_N, toutes cardinalités.
+
+main 15.10 — p13:transfer:fixed-activities — complete
+Entrée : PaperP1.ConnectedReductionToTriples.article_15_10
+Les deux clauses, réduction enA3 et part incompatibleN^−3/2, sont dans la conjonction ; pas d’interface conditionnelle historique à rajouter.
+Contexte : r≥4 fixé avantC,ε,N₀ ; G⊆I_N et véritable connectivité effective.
+
+main 15.12 — p13:transfer:uniform-tail — complete
+Entrée : PaperP1.ConnectedTail.article_15_12
+Le premier volet contrôle tous les F de256<|I|≤K_N etρ*≤2L ; le second somme les primitives à partir de257 à toutes cardinalités. Le seuil est commun avantG,F ; aucune constante de compte àr croissant n’est supposée.
+Contexte : K:ℕ→ℕ satisfait K(N)/logN→0, équivalent àK_N=o(L) dans la bande ;w>0 fixé. ρ*=runCompatibleNullity et non la nullité totale.
+
+main 15.13 — p13:transfer:finite — conditional_principle_as_printed
+Entrée : PaperP1.FiniteCompleteLawTransfer.article_15_13
+Le type est exactement le principe de transfert conditionnel sur254 ordres fixes. Ce n’est ni un défaut de preuve ni un théorème standalone inconditionnel. Les grands ordres sont clos en interne par la queue uniforme. Conserver explicitement cette prémisse dans l’index, sans la confondre avec les anciennes Hypotheses externes non imprimées.
+Contexte : 1<β≤4/3 ; FiniteConnectedActivity254.Hypothesis C β est une PRÉMISSE imprimée : ∀r∈[3,256],∀ε>0,∃A≥0,N₀,Σ_{connectés,ρ*≤2L}|c(I)|≤A N^(−β+ε).
+
+main 15.14 — p13:transfer:reconstruction — complete
+Entrée : PaperP1.OptimalTripleReconstruction.article_15_14
+Les deux conclusions, borne structurelle parA3 et taux4/3 inconditionnel après fermeture arithmétique, sont simultanément présentes ; la prémisse de15.13 n’est plus un argument ici.
+Contexte : Bande critique ; A3 est la vraie masse absolue de toutes triples et la moyenne/cumulant sont exacts.
+
+main 16.1 — p13:lower:quartic — complete
+Entrée : PaperP1.FourthCumulantIdentities.article_16_1
+Le type contient l’erreurκ4−24K4 de puissance5/3, l’erreurK4−K4+ de puissance3/2 et la conséquence positive ; aucune confusion entre elles.
+Contexte : Bande critique ;K4 signé sur les quadruples connectés, K4+ compatible. Les deux erreurs sont distinctes.
+
+main 16.2 — p13:lower:optimal — complete
+Entrée : PaperP1.OptimalQuadratic.article_16_2
+Le type prouve une constante strictement positive et les deux bornes4/3. Aucun équivalent/logarithme plus précis n’est revendiqué.
+Contexte : C,ε fixés ; référence exacte (μ_N,α_N).
+
+main 17.1 — p13:optimal:weighted — complete
+Entrée : PaperP1.PolynomialWeightedQuadratic.article_17_1
+Toutes les clauses figurent dans le type : sommabilité, erreur pondérée, moments factoriels et exactitude sans reste aux ordres0,1,2. referenceMoment est le moment factoriel explicite de la référence quadratique.
+Contexte : m etr restent fixés avant leur seuil ; poids(1+k)^m avec m naturel.
+
+main 17.2 — p13:optimal:zero — complete
+Entrée : PaperP1.OptimalZeroProbability.article_17_2
+Le canonique contient directement la formule affichée et le taux4/3.
+Contexte : Bande critique ; original N L0 est la masse du compte arithmétique original en0.
+
+main 17.3 — p13:optimal:nominal — requires_sign_support
+Entrée : PaperP1.OptimalNominalQuadratic.article_17_3
+La quantification du biais, la dichotomie, la majoration générale et la comparaison conditionnelle sont dans le type. Pour le sens deasymp, la constante lowerConstantC est strictement positive par le petit lemme de signe ; aucune occurrence infinie du biais n’est fournie ni nécessaire.
+Contexte : N≥2,L>0 pour l’identité finie ; bande critique pour les comparaisons asymptotiques. La comparaison à deux côtés n’est affirmée que si le biais entier est non nul.
+Compléments : PaperP1.OptimalNominalQuadratic.lowerConstant_pos
+
+main 18.1 — p13:channels:hierarchy — requires_sign_support
+Entrée : PaperP1.FixedHeightHierarchy.article_18_1
+Le canonique contient l’expansion cumulant, l’expansion en mesure signée, l’existence d’une référence de probabilité et l’équivalentTV uniforme. phaseMass etheightMass déplient les formules imprimées. Le fait quec_b(r) soit positif est le support scalaire phaseConstant_pos ; pas de nouveau faisceau de preuves à ajouter.
+Contexte : h≥3 fixé avantN ;b=h+1 etr=L modb. ε contrôle les restes,τ>0 contrôle le rapport ; les deux précèdentN₀.
+Compléments : PaperP1.ChannelPhaseConstants.phaseConstant_pos
+
+main 18.2 — p13:channels:weighted-nonaligned — complete
+Entrée : PaperP1.WeightedNonalignedPairs.article_18_2
+Les deux estimations pondérée et covariance sont dans le type ; ne pas exporter cette version à toutes paires irrégulières sans le raccord séparé de3.2.
+Contexte : Paires ordonnées séparées NON ALIGNÉES du seul ensemble régulierG_N ; ici la nullité effective est égale au rang brut de la paire.
+
+main 18.3 — p13:channels:height-five — requires_complements
+Entrée : PaperP1.TwoChannelReference.uniform_equivalents
+uniform_equivalents ne contient ni le reste en loi signéeN^−5/6, ni les deux écritures exactesM5, ni l’incrément du coefficient. Les compléments cités donnent précisément ces clauses et la constantec6. correction est définie parλ²/N·heightSum5 ; heightSum_five donne les deux sommes rationnelles. Ne pas se contenter des seules distancesTV. coefficient_four identifie la troncature≤4 au coefficienttwoChannel avant coefficient_five.
+Contexte : Bande critique ;q≥1,r<5 pour la formule ferméeM5 ; la dernière phase utilise r=L mod6 et nonmod5.
+Compléments : PaperP1.TwoChannelReference.uniform_law_remainder ; PaperP1.HeightFiveChannelCorrection.heightSum_five ; PaperP1.HeightFiveChannelCorrection.correction_closed ; PaperP1.HeightFiveChannelCorrection.coefficient_five ; PaperP1.ChannelPhaseConstants.phaseConstant_six ; PaperP1.FiniteChannelHierarchy.coefficient_four
+
+main 19.1 — p1:cor:compound — complete
+Entrée : PaperP1.OptimalHermite.article_19_1
+Le canonique couvre le taux exact-parameter4/3, les taux explicites et les équivalents de chaqueh avec existence des probabilités. HermiteReference est la convolution de Poisson simple/double ; aucun lower bound exact-parameter n’est ajouté.
+Contexte : C,ε fixés ;h≥3 fixé pour les références explicites,τ fixe avant leur seuil ; les paramètres Poisson sont admissibles au seuil fourni.
+
+main 20.1 — p1:limits:vector-reference — requires_complements
+Entrée : PaperP1.IndependentPositionalApproximation.main_20_1
+main_20_1 vaut pour toute réalisation des arrivées et établit la compensation ; le complément canonique l’instancie au produit fini de Poisson et ferme explicitement l’existence du champH_N. Le candidat PositionalGridApproximation.main_20_1 n’est pas nécessaire au bundle terminal une fois ces deux points présents. Ne pas identifier les p de référence aux p_x irréguliers.
+Contexte : j naturel fixé ; taux marginaux de RÉFÉRENCEp=2^−L sur toutI_N, q_e joint arithmétique des seules bonnes arêtes, compensationν≥0 prouvée. Les arrivées sont mutuellement indépendantes et de lois Poisson indiquées.
+Compléments : PaperP1.IndependentPositionalApproximation.main_20_1_canonical
+
+companion T1.4 — p1:arith:reuss — requires_complements
+Entrée : PaperP1.CompanionKernelCounts.companion_T1_4
+Le canonique donne la borne au produit-barrière≥N. La phrase finale sur une barrière affaiblie par un facteur fixe/polylog est le wrapper FERMÉ CompanionKernelCounts.weakened_barrier_count avecΓ≤Kbar(logN)^Abar etN≤Γc1c2(DE)^2. Ne pas choisir le théorème homonyme CompanionUniformDeterminantTheorem, qui conserve hHB,hNG.
+Contexte : A0,δ,ε et constantes de comparaisonρ,C fixes avantN ; la boîteBox code quatre échelles positives et les deux comparabilités àN. Les variables entières sont les vrais d,e,u,v positifs.
+Compléments : PaperP1.CompanionKernelCounts.weakened_barrier_count
+
+companion T1.5 — p1:arith:twokernel — requires_complements
+Entrée : PaperP1.CompanionKernelCounts.companion_T1_5
+Le canonique ne donne que la borne supérieure. Le complément fermé donne simultanémentN^(β−ε)≤G2≤N^(β+ε), exactement le sens exponentiel deN^(β+o(1)), et non une simple construction isolée.
+Contexte : B=L+1≤DlogN avecD fixé ; β∈(0,1) pour le texte, etβ≥7/12,L≥2 pour la sharpness (éventuel siB≈logN).
+Compléments : PaperP1.CompanionKernelCounts.companion_T1_5_sharp
+
+companion T1.7 — p1:arith:geometric — complete_after_unfolding_bundle
+Entrée : PaperP1.UniformGeometricCounts.companion_T1_7
+Le champAssertions contient cinq vraies conclusions : SystemsBound (général et degré1), DenseGraphBound,TypedGraphBound,FixedPartnerBound,OneVariableBound. J’ai déplié ces champs et le constructeur du canonique : surface_hypotheses est PROUVÉ par les couvertures internes, pas supposé. Les degrés variables se traitent par le nombre finiK ; la spécialisation des centres s’incorpore aux coefficients. Le casunivarié exige deux racines distinctes et valeurs positives de hauteur≤N², condition satisfaite par les valeurs comparables àN du texte (ou par changement d’échelle polynomial).
+Contexte : A0,ε,η,K,Jexp,a fixes ; coefficients entiers non nuls≤N^A0, racines disjointes par variable et taille≤K ; vrais hôtes avec cartes paires injectives et images directes. Les degrés/nombres requis sont choisis avantN.
+
+companion T1.8 — p1:arith:dense — complete
+Entrée : PaperP1.DenseWeightedSector.uniform_kernels
+Les deux conclusions portent bien sur la perte effective et sur fullRank sans les parités de blocs. Le type couvre même des sous-familles arbitraires, sans devoir supposer la séparation affichée.
+Contexte : η,ε fixes ; c(x,y) est nontrivialComponentCount, non le rang total de la paire ; domaine non aligné dansI_N.
+
+companion T1.10 — p1:arith:asymmetric — requires_complements
+Entrée : PaperP1.RevisedCompanionStatements.companion_T1_10
+Le canonique contient le profil asymétrique31/24 pour les vrais ensemblesold, avec les hypothèses corrigées v1.7 conservées. La dernière phrase d’invariance après ajout de coordonnées premières≤H est un autre théorème exact, small_prime_bits_unchanged ;Q=1 est la spécialisation triviale.
+Contexte : X∈[N,N+QN), z∈I_N ;Q,D,Dcut fixes, H entre(2D+1)B etDcutB ; complément deAligned au RAYOND du texte ; oldX valeurs positives dans la fenêtre centrée correspondante.
+Compléments : PaperP1.RevisedCompanionStatements.small_prime_bits_unchanged
+
+companion T1.12 — p1:arith:fixed-homogeneous-seeds — complete
+Entrée : PaperP1.FixedHomogeneousSeedTheorem.companion_T1_12
+La conjonction couvre les trois masses nominales. Sa dernière borneA(LN^−2/3)^2 est même plus forte que la somme impriméeN^−5/4+(LN^−2/3)^2. nominalSecond somme bien les DEUX arêtes distinctes dont l’union séparée a3ou4 starts, pas seulement quatre starts.
+Contexte : G⊆G_N régulier ; toutes les unions de starts sont pairwise séparées ; Araw est géométrique sans compatibilité ; H entre8B etDB, D fixé.
+
+companion T1.13 — p1:arith:small-kernels — complete
+Entrée : PaperP1.CompanionKernelCounts.companion_T1_13
+Les trois clauses1petit noyau,2petits noyaux et l’améliorationθ≥7/12 sont dans le type. Il est même uniforme pour toutT≥0 et ne requiert niT≤CN ni le minorant du cutoff ; ces hypothèses imprimées sont donc plus restrictives.
+Contexte : Comparabilité des centresaN≤X≤KN aveca>0 fixe ; largeur≤DlogN ; cutoff réelY≤ElogN, constantesfixes ; valeurs positives.
+
+companion T1.17 — p1:arith:twogoodpositive — complete
+Entrée : PaperP1.TwoGoodEdgeSecondMoment.companion_T1_17_original
+La conjonction donne l’équivalent du second moment factoriel, son majorant et les deux bornes de la correction de Bonferroni. OnceAllOriginalCoupling.second et correction sont les quantités deXi_N et non un second moment indépendant artificiel.
+Contexte : Vraie famille des arêtes COMPATIBLES ;H entre8B etDB ;δ>0 règle le petit-o relatif après choixK>0.
+
+companion T2.7 — p1:arith:fixed-channel-palm — requires_sign_support
+Entrée : PaperP1.FixedChannelFullPalm.companion_T2_7
+Le canonique couvreR normalisé et la moyenne centrée àλ avec les exposants exactsη etmin(η,1/2). La borne numériqueη≥1/3 de l’énoncé est le court support eta_bounds, pas une conséquence du seul type canonique.
+Contexte : Canala:b intérieur réduit0<a<b<2a fixé ;H≥2bB etH≤DB ; somme des nouveaux starts hors des deux sources. Le type donneβ>0, donc la normalisation Palm existe.
+Compléments : PaperP1.FixedChannelFullPalm.eta_bounds
+
+companion T2.8 — p1:arith:finite-family-triples — requires_complements
+Entrée : PaperP1.FiniteChannelTripleTheorem.companion_T2_8
+Le canonique donne la formule3λM_F avecν_F=min(1/2,minη). La dernière clause des hauteurs5≤b≤Q et son taux4/5 est l’autre terminalheight_cutoff, pas un majorant fourni automatiquement par le premier type. Ce terminal est même uniforme sans restrictions supplémentaires surH.
+Contexte : F non vide fini de canaux intérieurs réduits fixé avantN ;cutoffsH_ab bornés entre2bB etD_abB pour le premier volet ; triples ORDONNÉS de starts distincts.
+Compléments : PaperP1.FiniteHighChannelTripleMass.height_cutoff
+
+companion T3.1 — p1:arith:palm — complete
+Entrée : PaperP1.GoodEdgePositivePalm.companion_T3_1
+Le type couvre positivité des deuxβ, les deux Palm normalisés et les deux masses non normalisées, avec les quatre exposants imprimés.
+Contexte : Canaux2:3 et3:4, cibles dansG_N régulier ;H entre8B etDB ; seuil avant toute sous-familleG régulière.
+
+companion T4.3 — p1:fixed:primitive — complete_with_context
+Entrée : PaperP1.PrimitiveOrderedBound.companion_T4_3
+PrimitiveOrderedMass.mass est exactement la somme des listes ordonnées et des poids p^r2^ρ. La clause affine découle de l’identité contextuelle q=W ou0 imprimée juste avantT4.3, donc pas de nouveau terminal asymptotique à ajouter. Ne pas relire la notationp^r comme un poids exact de fenêtres irrégulières.
+Contexte : La convention RÉGULIÈRE du débutT4 s’applique : listes injectives deG_N, séparées, ordre r fixé ;ρ effective égale à la perte nominale.
+
+companion T4.4 — p1:fixed:compressed — complete
+Entrée : PaperP1.FixedCompressedPrimitiveTheorem.companion_T4_4
+Le canonique donne mêmeN^−κ_b au lieu du plus faibleN^(−κ_b+1/5) imprimé pourr≥3 ; les deux clauses à une cible et les quatre variantes affines positives sont présentes. Aucune bonne régularité cachée de la paire n’est ajoutée.
+Contexte : t=r−1≥2 fixé ; la population est celle d’une paire exactement comprimée et de t nouvelles fenêtres primitives effectives, avec les vrais labels normalisés.
+
+companion T5.1 — p13:short:quadratic — requires_complements
+Entrée : PaperP1.RevisedCompanionStatements.companion_T5_1
+Le canonique donne les trois vrais COMPTES avec exposant non capé, capé et affine. Les comparaisons ALGÉBRIQUES d’exposants imprimées ne se déduisent pas du compte seul : capped_le_affine pour la comparaison sans restriction, actual_comparison_iff pour le critère exactβ−2δ≤2 du non capé. Ces clauses maintiennent la correction nécessairev1.7, sans nouvel élargissement.
+Contexte : N≥2,e>0 pourδ=log(e)/logN ; h positif de hauteur polylogarithmique ; values impose e squarefree divisant le noyau dans la tranche [N^β,2N^β).
+Compléments : PaperP1.QuadraticKernelExponents.capped_le_affine ; PaperP1.QuadraticComparisonRange.actual_comparison_iff
+
+companion T7.1 — p13:activity:pair-partition — requires_structure_support
+Entrée : PaperP1.FiniteGoodPartition.companion_T7_1
+Le canonique donne les trois masses et la compression de chaque bonne arête. La phrase «can be partitioned» réclame en outre la couverture et la disjonction exactes des trois classes. Ces deux courts lemmes structurels existent ; aucune longue liste historique nécessaire.
+Contexte : η>0 avantQ fixe puisC,ε,N₀ ;H=2QB ;Q ne croît pas avecN. Les bons canaux sont intérieurs réduits et de hauteurb≥3.
+Compléments : PaperP1.FiniteGoodChannelPartition.cover ; PaperP1.FiniteGoodChannelPartition.disjoint_classes
+
+companion T8.1 — p13:conf:groups — complete_with_context
+Entrée : PaperP1.PolynomialConfinement.companion_T8_1_power
+Le type conclut le majorant en B^(1/2+δ) même pourδ>0 plus large. La condition de déterminant non nul n’est imposée qu’à deux points d’offsets DISTINCTS, donc la multiplicité est réellement traitée. Le petit-o utiliseδ<1/2 etB→∞ ; le retrait des alignements est une restriction de la population, non une prémisse supplémentaire de compte.
+Contexte : τ>0,0<δ<1/2,C0 et constantes de comparabilité fixes ;g_a pairwise coprimes, éventuellement offsets répétés comptés avec multiplicité. x comparable positif àN, y=O(N).
+
+companion T8.2 — p13:conf:dense-primitive — requires_homogeneous_composition
+Entrée : PaperP1.PrimitiveTripleMass.companion_T8_2
+Le canonique donne les hôtesN^ε, la masse EXACTEp_x et l’activité totale des primitivesN^−3/2. Pour «homogeneous mass» sur les vraies images effectives y compris défauts locaux, ne pas assimiler p_x à2^−d_x : la composition requiert le cap homogène≤2·2^C/N, la factorisation exacte homogène etρ≤L, puis les hôtes et absorption d’une constante fixe. Aucun terminal nommé unique de cette masse homogène complète n’a été identifié ici. DensePrimitiveNominalMass.uniform_mass couvre séparément les poids NOMINAUXp³2^ρ, plus petits de facteurs locaux ; ce n’est pas une identité avec la probabilité homogène irrégulière.
+Contexte : η,ε>0 fixés ; trois vrais centres dyadiques, primitifs, densité≥ηB. Aucun rang local plein ni compatibilité affine n’est supposé.
+Compléments : PaperP1.HomogeneousLocalMarginalCap.uniform_cap ; PaperP1.HomogeneousEffectiveWeights.factor ; PaperP1.PrimitiveWindowMass.primitive_nullity_le
+
+companion T8.3 — p13:conf:dense-pairs — complete
+Entrée : PaperP1.DenseNonalignedPairs.companion_T8_3_no_exact
+Le type donne directement le compte de toutes populations de paires d’intersection effective≥ηB. Il n’ajoute ni régularité ni compatibilité.
+Contexte : Paires de vrais centres etNoExact est la non-présence de deux unités exactes, donc la non-alignement géométrique du texte l’implique ;η fixe avantN.
+
+companion T14.1 — p1:core:fixed-centred — complete
+Entrée : PaperP1.CoarseConnectedActivity.companion_T14_1
+La conjonction donne exactement les deux taux4/5 et1. Elle est même valable sur touteG⊆I_N, plus large que le seul régulierG_N imprimé.
+Contexte : r≥3 fixé ;les contacts sont ceux deContactCenteredTruncation, sans connectivité requise pour cette seconde famille.
+
+companion T14.2 — p1:core:primitive — complete
+Entrée : PaperP1.AllPrimitiveMass.companion_T14_2
+WeightedPrimitiveMass.actualMass est la somme pondérée q+|c|, donc la seule borne du canonique contient bien les deux termes. Le champfamilies ne sélectionne pas seulement les systèmes compatibles.
+Contexte : u=w>0 fixé ;toutes les familles primitives deG_N à partir de3 sont incluses, sans séparation ni compatibilité.
+
+companion T15.1 — p1:core:compressed — complete_with_context
+Entrée : PaperP1.OriginalCompressedActivity.companion_T15_1_original
+originalPairs etoriginalSeparated contiennent la réunion des deux canaux. La masseCompressedPairMass.mass somme les trois termes q+|ĉ|+|c| avec w^(|A|+2). Le taux séparé canonique41/30 est plus fort que4/3 et5/4 ; restriction à chaque canal et positivité donnent les deux clauses imprimées. La version entière a le bon taux1.
+Contexte : Couplee DISTINGUÉ compatible dans les deux canaux principaux, primitive après compression, toutes cardinalités d’A≥1 ; H réel quelconque, donc le cutoff contextuel est autorisé.
+
+companion T15.2 — p1:core:exceptional — complete
+Entrée : PaperP1.RetainedExceptionalEvent.companion_T15_2
+Le type affirme exactement alternative somme directe totale ou une seule bonne paire comprimée, et le cap de nullité de toute sous-famille active≤L/3+1. Ce n’est pas un simple majorant de la probabilité d’un événement abstrait sans conclusion de structure.
+Contexte : G⊆I_N arbitraire ; evenementE mesurable choisi avant le pointω ; bonnes arêtes des deux principaux canaux.
+
+companion T16.1 — p1:core:low-nullity — complete
+Entrée : PaperP1.AllCardinalityConnected.companion_T16_1
+Le type permet toutes cardinalités et mêmeη≥2 (borne alors non décroissante). Il donne le minimum de puissances indiqué sur toute sous-familleG⊆I_N.
+Contexte : η∈[0,2) fixé pour le texte ;u=w>0 etε fixes. ρ_* désigne le maximum de nullité sur les sous-familles compatibles.
+
+companion T16.2 — p1:core:positive-core — complete
+Entrée : PaperP1.AllCardinalityCoreMass.companion_T16_2
+Le canonique somme toutes cardinalités des vrais q(I). Il n’exige pas explicitementq>0 parce que les autres termes s’annulent ; les hypothèses formelles plus largesη≥0 ne restreignent pas la proposition.
+Contexte : t pair fixé,η+2≤t etη>1 du texte ;Core t signifie projection de relation de dimension≥t−1 dans chaque bloc ; nullité entreL/2 etηL.
+
+companion T16.3 — p1:core:bounded-nullity — requires_complements
+Entrée : PaperP1.GrowingConnected.companion_T16_3
+Le canonique seul couvre la première clause sublogarithmique. uniform_linear_range donne un seuil avant TOUS K vérifiant2(t−2)K≤L, même avec le taux plus fortN^−1+ε. Cela couvreK≈L/4, qui ne vérifie pasK=o(L), notammentη=3/2,t=4.
+Contexte : Première clauseK(N)/logN→0 ; dernière clauseη>1,t pair fixé≥η+2 etK entier≤L/[2(t−2)].
+Compléments : PaperP1.GrowingConnected.uniform_linear_range
+
+companion T17.3 — p1:close:boundary-mass — complete
+Entrée : PaperP1.PositiveBoundaryMass.companion_T17_3
+La conjonction reproduit l’inégalité exponentielle positive puis un taux plus fortN^−4/5 sans les termes positifs+B/N+a_N². L’affirmation est asymptotique dans la bande, uniformément enK, et non un principe fini pour toutN.
+Contexte : Reconstruction régulière : μ=E du compte surG_N, β bons canaux retenus ;K entier avec4K≤L ; mêmesF,𝔊,A_good,A_bad,B_K.
+
+companion T17.4 — p1:close:conversion — complete
+Entrée : PaperP1.SharpRetainedConversion.companion_T17_4
+Le type contient le coefficient EXACT4 du défautβ−C2 et l’erreurK(N^−2+a_N/N), K>0 fixé parC. Ne pas confondre cette conversion régulière avec celle de15.1 sur toutes les marges.
+Contexte : μ etα_G sont les paramètres du compte sur le RÉGULIERG_N ;C2 sa somme de covariances ;a_N=SecondFactorialCorrection.value. H quelconque inclut le cutoff du texte.
+
+companion T17.5 — p13:base-approximation — complete
+Entrée : PaperP1.QuadraticRateOne.companion_T17_5
+Le canonique donne les deux erreurs au taux1, plus fort que4/5 imprimé. Aucune prémisse d’estimation non close n’apparaît dans cette version sansUnderInputs.
+Contexte : Vrai compte complet surI_N ; deux moyennes μ réelle etν=λ, mêmeα exacte.
+
+companion T19.3 — p1:limits:modified — complete
+Entrée : PaperP1.ModifiedCountAllTails.companion_T19_3
+Le type contient le coûtTV,δ_N borné et les quatre inégalités queue réelle,queue modifiée,moment exponentiel (binomial et exponentiel) et moment factoriel. Les quantificateurs arbitrairesk,r ne sont pas ceux d’un lemme à ordre fixé.
+Contexte : Sur la même mesure de signes, Z_N° est le compte régulier et le modifié le tue sur le mauvais événementE'_N ; μ=|G_N|p. Le seuilN₀ est avantk,r,s arbitraires.
+
+companion T19.4 — p1:limits:branching — requires_complements
+Entrée : PaperP1.OrderDependentMomentBound.uniform_source_growth
+uniform_source_growth ne donne que le momentF_k pour2≤k≤logN. finite_independence apporte la vraie équité/indépendance du vecteur nouveau avec toutes les anciennes valeurs et l’ensemble exceptionnel≤D_j,N (avec un meilleur facteur1/2 disponible). uniform_source_rate apporte la borne logarithmique exacte pour1≤j≤logN, avec seuil commun avantj,A. Les définitionssourceException/primeCountBudget identifient la formule imprimée ; elles ne prouvent pas les deux nouvelles clauses.
+Contexte : H=logN et h=loglogN sont les notations deT19, indépendantes du cutoff primeH utilisé dans d’autres sections. A ensemble d’anciens starts de cardinal≤j ; bande critique, doncN≥2,0<L≤N au seuil.
+Compléments : PaperP1.OrderDependentBranching.finite_independence ; PaperP1.OrderDependentRate.uniform_source_rate
+
+companion T19.6 — p1:limits:colored-tail — requires_complements
+Entrée : PaperP1.VerySmallTail.power_threshold
+power_threshold contient les deux exponentielles au seuil de puissance, y comprisr=0. Le corollaireA_N,c nécessite threshold_ge_power puis monotonie de l’événement/de la masse enb. Le bundle proposé est correct ; companion_T19_6 historique seul est plus faible pour la constante−2log³N.
+Contexte : C fixé et, pour la dernière clause,c>0 fixé AVANT son seuil ;b réel aprèsN₀ ; r naturel entre0etlogN. thresholdN=N^(9/10).
+Compléments : PaperP1.NearLinearThreshold.threshold_ge_power
+
+companion T19.10 — p1:limits:erasure — complete
+Entrée : PaperP1.PositionalErasureTheorem.companion_T19_10
+Toutes les clauses sont dans la conjonction. Les normes de mesures des champs sont des l1 et donc impliquent lesTV imprimées. Le nom PositionalFactorialCovariance.covariance désigne EXACTEMENTCov(Xx,Xy)−1{x=y}EXx, comme l’atteste sa définitionfactorialTest ; ne pas le relabeliser en covariance ordinaire. Les moments scalaires,Bonferroni,TV etW1 sont inclus.
+Contexte : Champs d’effacement ponctuel/isolement sur le même couplage ;p−ι sont les intensités de fond et non les marges exactes irrégulières.
+
+companion T19.14 — p1:limits:all-pairs — requires_complements
+Entrée : PaperP1.AllPairErasureTheorem.companion_T19_14
+Le canonique donneτ,TV,biais de moyenne,stabilité du critère et les trois équivalences petit-o finales. Il ne dit pas à lui seul que chaque réalisation a des espaces pairwise directs et starts strictement séparés. retained_pair_geometry fournit précisément x+L<y etDisjoint(Sx,Sy) pour toute paire retenue active.
+Contexte : Vrai effacement de TOUS les contacts/dépendances de paires, y compris distanceL ; starts retenus actifs originaux. Le termeV est évalué à la moyenne de chaque loi ; petit-o relatif au mêmea_N.
+Compléments : PaperP1.AllPairRetainedGeometry.retained_pair_geometry
+
+companion T19.15 — p1:limits:reciprocal — complete_with_discrete_parameter_scope
+Entrée : PaperP1.FineSaddleTheorems.companion_T19_15
+Les deux encadrements exponentiels±εν_N sont présents, avec ε arbitraire et seuil commun. Aucun EIPInput n’est un argument de FineSaddleTheorems. La convention usuelleX entier du compte est la portée directement auditée ; une extension littérale àX réel viafloor et stabilité des paramètres ne fait pas partie de ce type et ne doit pas être attribuée silencieusement à lui seul.
+Contexte : N est entier dans les types : pivotSum sur1≤n≤N etdyadicSum surN≤n<2N ; paramètresV_N=saddleCutoff1(logN),ν_N=saddleNu1(logN).
+
+companion T19.16 — p1:limits:private-exact — complete_after_unfolding_bundle
+Entrée : PaperP1.FineSaddleTheorems.companion_T19_16
+ConclusionC a trois champs lus : encadrement exp(−2V±εν), borne de|logcost+2V| etobstruction∀α,K>0,éventuellementK N^−α≤cost. Le canonique FineSaddleTheorems remplit ce bundle sans EIPInput ni couvertures en arguments ; ne pas substituer l’ancienne interface SignedSaddleCostTheorem.companion_T19_16 qui les suppose.
+Contexte : Coût POSITIF spécifique specifiedCost du forçage signé défini dans la section ;L≥1 et bandeC fixe, pas infimum sur toutes les méthodes de couplage.
+
+companion T19.17 — p1:limits:all-anchors — requires_complements
+Entrée : PaperP1.UnconditionalPrintedAnchorObstruction.companion_T19_17
+Le canonique donne seulement l’obstruction déterministe, nominal=2^(−2iota)λ²N^−a. Le complément randomisé donne le facteur1/2 et contient les vraies conditions de forçage/localité/mesurabilité ; la dépendance de l’orientation au seul mot source est garantie par son TYPE. Il ne demande même pas la fair orientation, donc couvre la sous-classe imprimée. Aucun census de sources n’est une prémisse extérieure.
+Contexte : Ancre arithmétique DÉTERMINISTE, iota∈{0,1}, mot de longueurL+iota ;L+E+2≤DlogN avecD fixe ;cutoff2(L+E+2),fenêtres de bord retenues ;seuil avant tout choix de règleA,motb. La variante randomisée n’observe que le mot source et un bruit indépendant et ne change que ses pivots privés.
+Compléments : PaperP1.UnconditionalPrintedAnchorObstruction.companion_T19_17_randomized
+
+companion T20.8 — p1:offset:six-vertex — complete_after_unfolding_bundle
+Entrée : PaperP1.SixVertexBudget.companion_T20_8
+Budget a été déplié : zéro des coordonnéesD dans la relation effective, borne(3B−|D|)/6+constant(C0)B/logB+12k. Le canonique fournit l’exception massique, ce budget simultané, le compteN^3/2 puis les deux comptes/masses planairesN^1. Le motprimitive ne doit pas effacer les hypothèses régulières/directes héritées ; aucun compte final n’est un champ supposé.
+Contexte : ContexteT20 l11–20 : C0>1 fixe, TROIS fenêtres régulières distinctes et espaces deux à deux directs. Budget porte sur les triples primitifs de ce domaine et sur TOUS les coversD de SharedPrimeCover ; plans entiers de normales non nulles et coefficients/popu≤B^K fixé.
+
+companion T22.5 — p1:uniform:one-pair — complete_with_envelope_scope
+Entrée : PaperP1.SinglePairCriticalTheorem.companion_T22_5
+Le type donne une enveloppefreshEnvelope avec le même taux logarithmique, la comparaison multiplicative pour CHAQUEr et le petit-o de la somme pondérée surm. FreshEnvelope=exceptionEnvelope+max(0,orderCap) paie aussi la fraîcheur ; pour réutiliser le symboleD_N* deT22.4 choisir une enveloppe commune majorante, pas une identité littérale des deux fonctions. L’addition deO(logN) ne change que la constanteO_{K,C}(H/h).
+Contexte : K≥0 fixé ;m≤KlogN/loglogN,2≤r≤m ;H prime entre8B etDB. Les tuples sont construits en position sans répétitions et contiennent une paire marquée distinguée.
+
+companion T22.6 — p1:uniform:modified-moments — complete
+Entrée : PaperP1.ModifiedMomentDecomposition.companion_T22_6
+Le canonique contient l’identité exacte avecF_r,L'_r,G_r,H_r, leur non-négativité, les trois termes de paire nuls pourr<2 et les deux sommes à tous ordres. La seconde somme≤εa_N pour chaqueε>0 après un seuil est bien un petito, non un simpleO(a_N).
+Contexte : Compte MODIFIÉ régulier sur l’espace original ;r≥1 arbitraire dans l’identité finie (N≥2,L>0),H quelconque, puisH=8B pour les budgets asymptotiques.
+
+Types à extraire par le parent :
+PaperP1.AllPairRetainedGeometry.retained_pair_geometry
+PaperP1.ChannelPhaseConstants.phaseConstant_pos
+PaperP1.ChannelPhaseConstants.phaseConstant_six
+PaperP1.CompanionKernelCounts.companion_T1_5_sharp
+PaperP1.CompanionKernelCounts.weakened_barrier_count
+PaperP1.CompatibleRunCentered.coefficient_nonneg
+PaperP1.FiniteChannelHierarchy.coefficient_four
+PaperP1.FiniteGoodChannelPartition.cover
+PaperP1.FiniteGoodChannelPartition.disjoint_classes
+PaperP1.HeightFiveChannelCorrection.coefficient_five
+PaperP1.HeightFiveChannelCorrection.heightSum_five
+PaperP1.HomogeneousEffectiveWeights.factor
+PaperP1.HomogeneousLocalMarginalCap.uniform_cap
+PaperP1.OrderDependentBranching.finite_independence
+PaperP1.OrderDependentRate.uniform_source_rate
+PaperP1.PrimitiveWindowMass.primitive_nullity_le
+PaperP1.PrivateChannelRank.joint_bound
+PaperP1.PrivateChannelRank.nullity_bound
+PaperP1.QuadraticKernelExponents.capped_le_affine
+PaperP1.RestrictedDensePrimitiveMass.uniform_bound
+PaperP1.ThreeSlopePositiveActivity.lower_constant_pos
+PaperP1.UniversalHeterogeneousConversion.actual_signed_measure_conversion
+
+Le JSON contient les79 signatures primaires, les types compilés disponibles, les37 compléments, leurs rôles et les localisateurs exacts.
+Les95 fichiers de preuve concernés et les79 blocs ont été comparés à71028644.
+Le nouveau checkpoint1000 de15.8 signalé ensuite ne fait pas partie de cette tranche.
+Aucun nouveau build, aucune modification dépôt/TeX/PDF et aucun actePalomar.

@@ -1,0 +1,67 @@
+{
+  "checked_at_utc": "2026-11-07T13:15:53.864984+00:00",
+  "proof_source_commit": "08f019df4d33a817377e5c937356fe4d87ae08e1",
+  "checker_sha256": "a44d3ee1637bc0919ecd173c625c0bb6f1e293232fb4c4f9f13d633e0b0045e6",
+  "index_sha256": "5ffca4d673633f45bb802e36c7a66b44b94e74277afc252f1d7ce1e47e93e602",
+  "positive_control": {
+    "actual": "accepted",
+    "results": 167,
+    "main": 73,
+    "companion": 94,
+    "distinct_proof_interfaces": 261,
+    "objects_not_proof_evidence": 3
+  },
+  "negative_controls": [
+    {
+      "case": "omit_one_numbered_result",
+      "expected": "reject",
+      "actual": "rejected",
+      "reason": "The proof-entry index must cover every one of the 167 labels once",
+      "real_repository_modified": false
+    },
+    {
+      "case": "drop_unrestricted_moderate_clause_15_11",
+      "expected": "reject",
+      "actual": "rejected",
+      "reason": "A reviewed dense-result clause or inherited premise was dropped: p13:transfer:anchor-budgets",
+      "real_repository_modified": false
+    },
+    {
+      "case": "erase_fixed_D_window_context_15_4",
+      "expected": "reject",
+      "actual": "rejected",
+      "reason": "A reviewed dense-result clause or inherited premise was dropped: p13:transfer:small-kernels",
+      "real_repository_modified": false
+    },
+    {
+      "case": "erase_printed_conditional_premise_15_13",
+      "expected": "reject",
+      "actual": "rejected",
+      "reason": "A printed conditional premise was relabelled: p13:transfer:finite",
+      "real_repository_modified": false
+    },
+    {
+      "case": "corrupt_compiled_type_digest",
+      "expected": "reject",
+      "actual": "rejected",
+      "reason": "Compiled theorem type changed: PaperP1.OptimalQuadratic.article_1_1",
+      "real_repository_modified": false
+    },
+    {
+      "case": "substitute_mathematical_object_for_proof",
+      "expected": "reject",
+      "actual": "rejected",
+      "reason": "A reviewed canonical clause or inherited premise was dropped: p1:thm:main",
+      "real_repository_modified": false
+    },
+    {
+      "case": "compiled_entry_is_not_a_theorem",
+      "expected": "reject",
+      "actual": "rejected",
+      "reason": "Entry is not a source-audited compiled theorem: PaperP1.OptimalQuadratic.article_1_1",
+      "real_repository_modified": false
+    }
+  ],
+  "status": "passed",
+  "scope": "Identity and recorded scope-binding controls on altered in-memory copies; not semantic TeX parsing or mathematical certification."
+}

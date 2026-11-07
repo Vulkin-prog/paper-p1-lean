@@ -8,8 +8,8 @@
   "note": "The parent added the exact uniform individual-bound interface, verified seven changed numbered blocks and 18 auxiliary claims against compiled types, replayed the full proof project and inspected the rendered PDFs. No scientific source edits after the frozen editorial delivery.",
   "palomar_actions": false,
   "latest_proof_replay": {
-    "source_commit": "bd9fcea3f0b0abf147a33bbe543338dcc982e791",
-    "validation_record": "docs/validation/checkpoint-1000/validation.json",
+    "source_commit": "08f019df4d33a817377e5c937356fe4d87ae08e1",
+    "validation_record": "docs/validation/checkpoint-1002/validation.json",
     "compiled_types_replayed": 528,
     "compiled_propositions_reaudited": 485,
     "all_prior_compiled_type_bytes_identical": true,

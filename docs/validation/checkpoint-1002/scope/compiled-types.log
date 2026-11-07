@@ -1,0 +1,5 @@
+'PaperP1.DensePrimitiveHomogeneousMass.two_pow_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.DensePrimitiveHomogeneousMass.uniform_point_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.DensePrimitiveHomogeneousMass.uniform_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.DensePrimitiveHomogeneousMass.companion_T8_2' depends on axioms: [propext, Classical.choice, Quot.sound]
+Exported compiled scope types for 4 declarations

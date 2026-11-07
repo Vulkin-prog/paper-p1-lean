@@ -1,0 +1,15 @@
+Contrôle post-interfaces — source 08f019df4d33a817377e5c937356fe4d87ae08e1
+
+Aucun écart mathématique confirmé.
+
+T22.7 : la formule nominale utilise explicitement ker(relationMap(jointSystem)), surι×FinL. Les relations internes sont incluses ; aucune injectivité des centres ni déduplication en ensemble n’est utilisée. Les répétitions sont conservées.
+La formule hétérogène emploie les vraies marginales par occurrence et le noyau effectif des images de lignes. Les marges nulles sont autorisées.
+
+T8.2 : le nouveau companion_T8_2 ferme les trois clauses imprimées : hôtes denses, vraie masse homogène dense et activité de toutes les primitives. Le cap ponctuel est8(2^C)^4/N², obtenu par cap homogène+factorisation+ρ≤L ; la vraie borne d’hôtes ferme la somme. Aucune régularité, compatibilité, séparation ni positivité des marginales originales n’est ajoutée.
+
+Raccords éditoriaux/d’index nécessaires :
+1. Préciser queKπ est le noyau FORMEL avant quotient par les relations locales ; le noyau effectif demande le produit des marges réelles.
+2. L’alias nominalT22.7 ne couvre que la formule, pas à lui seul propagation et moments : conserver leurs endpoints distincts.
+3. PourT8.2, l’index peut utiliser désormais DensePrimitiveHomogeneousMass.companion_T8_2 ; le raccord composé du rapport79 est résolu par cette interface ultérieure.
+
+Les rapports79 et9 sont inchangés (empreintes vérifiées). Aucun dépôt/TeX/PDF modifié ; aucune exécutionLean/Lake/Palomar. Les compilations et replays annoncés sont ceux du parent, pas des vérifications exécutées ici.

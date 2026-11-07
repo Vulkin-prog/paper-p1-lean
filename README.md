@@ -3,7 +3,7 @@
 *Sharp Poisson approximation and second-order correction for long multiplicative
 runs*, and its technical companion, by [Brice Pouly](https://orcid.org/0009-0008-8491-2467).
 
-Current checkpoint P1-MATH-1000: all **167 revised numbered statements** have
+Current checkpoint P1-MATH-1002: all **167 revised numbered statements** have
 checked proofs, using **Lean v4.36.0-rc2**, with no unformalized mathematical
 input. This comprises all 73 main-article and all 94 revised companion results.
 The separate version 1.8 working draft integrates the two necessary statement
@@ -15,6 +15,10 @@ preserves the already delivered v1.8 sources and PDFs.
 The [fixed-cutoff tail interface](docs/FIXED_CUTOFF_INDEPENDENT_TAIL.md)
 also makes the size cutoff precede epsilon in article15.8, for both
 original families and an arbitrary fixed bounded-width block.
+The [complete proof and clause index](docs/MANUSCRIPT_ENDPOINTS_V1_8.md)
+locates all 167 results through 261 actual compiled theorem interfaces.
+It records printed premises, inherited context and the new exact
+[replica/homogeneous interfaces](docs/REPLICA_AND_HOMOGENEOUS_INTERFACES.md).
 
 | Manuscript | PDF | Editable source |
 |---|---|---|
@@ -44,7 +48,7 @@ bytes and checked counterexamples are preserved. Their corrected replacements
 are proved and integrated in version 1.7. T19.17 is proved with both original
 coefficients and without an external smooth-number premise.
 
-The ledger records **998 confirmed mathematical improvements and two statement-scope corrections**.
+The ledger records **1000 confirmed mathematical improvements and two statement-scope corrections**.
 Proof substitutions, exact parameter ranges and the scope of stronger
 unasserted analytic or geometric results are documented in the source revision.
 
@@ -57,6 +61,7 @@ unasserted analytic or geometric results are documented in the source revision.
 | Every mathematical correction and improvement | [Change ledger](docs/mathematical-changes.json), [narrative record](docs/MATHEMATICAL_CHANGELOG.md) |
 | Current proof status and input scope | [Status](docs/FORMALIZATION_STATUS.md), [inputs](docs/LITERATURE_INPUTS.md) |
 | Independent mathematical and editorial review | [French report](docs/reviews/2026-11-07/RAPPORT_FR.txt), [exact signatures and proposals](docs/reviews/2026-11-07/review.json), [subsequent corrections](docs/reviews/2026-11-07/disposition.json) |
+| Latest complete clause review and remaining editorial proposals | [167-result index](docs/MANUSCRIPT_ENDPOINTS_V1_8.md), [editorial handoff](docs/EDITORIAL_HANDOFF_AFTER_ENDPOINT_REVIEW.md), [source-bound validation](docs/validation/manuscript-endpoints-v1.8/README.md) |
 | Printed statements, compiled types and explicit hypotheses | [Scope index](docs/NUMBERED_SCOPE_REVIEW.md) |
 | Exact Paper C ports and licence attribution | [Reuse record](docs/PAPER_C_REUSE.md) |
 | Earlier project progress | [Preserved checkpoint history](docs/README_CHECKPOINT_HISTORY.md) |
@@ -94,7 +99,7 @@ and temporary caches are kept on the Ubuntu partition with disk guards.
 
 ```sh
 python3 scripts/check_disk.py
-python3 scripts/check_revised_sources.py --require-proved
+python3 scripts/check_manuscript_endpoints.py
 python3 scripts/update_audit.py --check
 lake build
 lake env lean Audit.lean > axiom-audit.txt
@@ -109,8 +114,10 @@ Standalone registry Challenges have only the deliberate selected statement
 holes and are never imported by the proof development or its audit.
 
 The latest complete project replay with all six consolidated registrations and
-seventeen preserved components passed **18,615 build jobs** and **19,956 theorem axiom checks**.
-The substantive mathematical inventory contains **19,528 theorems**; the remaining
+seventeen preserved components passed **18,625 build jobs**, **19,975 theorem axiom checks**
+and **19,898 distinct reference checks**, all actual exits zero, at
+[source 08f019df](https://github.com/Vulkin-prog/paper-p1-lean/commit/08f019df4d33a817377e5c937356fe4d87ae08e1).
+The substantive mathematical inventory contains **19,547 theorems**; the remaining
 428 are complete component and consolidated Solution wrappers. Each mathematical
 checkpoint and registry replay records its own exact source commit and scope.
 The [evidence checker](scripts/check_registry_evidence.py) validates every

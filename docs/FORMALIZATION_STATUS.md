@@ -1,12 +1,23 @@
 # Formalization status
 
+The complete v1.8 proof-entry supplement now maps all 167 numbered
+statements to 261 compiled theorem interfaces and three separate
+mathematical definitions. A separate instance reviewed 79 existing
+canonical interfaces and nine dense/counting results; the parent reviewed
+the other 79. Required clauses, signs, finite identities and inherited
+hypotheses are explicit. The two new modules, containing eight theorems in total, were
+also read by the separate instance after compilation. This is an AI-assisted scope
+review, not human certification or a Palomar registration.
+
 Current checkpoint P1-MATH-1002: The complete dense-primitive-triple
 statement now has a single exact interface for its homogeneous mass,
 host count and actual centered activity. All primitive triples have an
 actual homogeneous point probability O_C(N^-2); the proved dense host
 count yields total homogeneous mass N^(-2+epsilon), including irregular
-windows and zero original affine marginals. The four prototypes compiled
-without warnings; the complete project replay is pending. No regularity,
+windows and zero original affine marginals. The complete pinned replay passed
+18,625 build jobs, 19,975 theorem axiom checks and 19,898 distinct
+reference checks, all actual exits zero. All 528 previously compared
+manuscript types remain byte-identical after replay. No regularity,
 affine compatibility or target mass bound is assumed. The frozen v1.8
 sources, all 167 numbered identities and the six registration scopes
 remain preserved. Palomar submissions remain on hold at the user's request.

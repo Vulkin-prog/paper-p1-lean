@@ -1,0 +1,46 @@
+{
+  "checkpoint": "P1-MATH-1002",
+  "source_commit": "08f019df4d33a817377e5c937356fe4d87ae08e1",
+  "status": "passed",
+  "full_build_jobs": 18625,
+  "audited_theorems": 19975,
+  "substantive_theorems": 19547,
+  "preserved_component_solution_theorems": 214,
+  "consolidated_solution_theorems": 214,
+  "distinct_checked_references": 19898,
+  "actual_process_exit_codes": {
+    "build": 0,
+    "audit": 0,
+    "references": 0
+  },
+  "toolchain": "leanprover/lean4:v4.36.0-rc2",
+  "mathlib_commit": "9d581dfff2e41de989072ea63abf3daf69311520",
+  "permitted_kernel_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "logs": [
+    {
+      "kind": "build",
+      "path": "docs/validation/checkpoint-1002/build.log.gz",
+      "sha256_gzip": "e714b8edaa3b129c778ab0a364fc9897898f3fc3a71b620a70fa92065d74b403"
+    },
+    {
+      "kind": "audit",
+      "path": "docs/validation/checkpoint-1002/audit.log.gz",
+      "sha256_gzip": "969d0fb8e26e7cef6d4ccf3eaaef5663c03ca586138eb98bd0d5027c23f465cb"
+    },
+    {
+      "kind": "references",
+      "path": "docs/validation/checkpoint-1002/references.log.gz",
+      "sha256_gzip": "885677bae10b139a8e61c171b814b66478c512e77b7f38afaaf7577437b1b7c2"
+    }
+  ],
+  "compiled_scope": {
+    "path": "docs/validation/checkpoint-1002/scope/compiled-types.json",
+    "actual_exit_code": 0,
+    "replay_source_commit": "08f019df4d33a817377e5c937356fe4d87ae08e1"
+  },
+  "scope": "Actual homogeneous mass of dense primitive triples, including irregular or originally incompatible windows; exact point bound and one compound endpoint for all three printed T8.2 clauses. All 167 numbered statements, frozen source/PDF versions and six registration scopes are preserved."
+}

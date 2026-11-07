@@ -1,0 +1,30 @@
+Audit indépendant des endpoints denses — v1.8
+Source examinée : 710286443d29df7528b8eb16df34b30707b2487b
+
+Neuf énoncés contrôlés ; aucun contre-exemple confirmé à leur vérité dans les conventions héritées du texte. Les endpoints sont de vrais théorèmes d’estimation/indépendance, pas seulement des définitions ni des implications supposant le compte final.
+
+Trois précisions indispensables pour l’index :
+1. 15.11 : la conjonction MultiAnchorBudgets.article_15_11 suppose θ+δ<1. La masse modérée imprimée ne l’exige pas ; l’endpoint autonome MultiAnchorModerateMass.uniform_bound, déjà au ledger, ferme ce régime. Exemple : t=4,A=3,b=9/10,σ=3/4 donne θ+δ=163/120>1 et l’exposant modéré−14/15.
+2. 15.4 : le cutoffH est leH=C_D B antérieur. critical_two_count demande H≤D(L+1),D fixé. Sans cela,H≥3N,q=0 donne #X_0=N. Il ne faut donc pas transformer la métadonnée en une assertion uniforme pourH libre.
+3. T21.4 : conserver un bundle3D/plans/sublinéarité/seuils suffisants. Le raccordβ=2 PrimitiveConfinementWeights.uniform_weights exige deux rangs locaux pleins ; cette condition est compatible avec les blocs injectifs hérités deT1.16, mais n’est pas une conséquence de Primitive seul.
+
+Correspondances terminales :
+15.3 : PaperP1.DenseCompressedTargetCount.article_15_3
+15.4 : PaperP1.SmallKernelWindows.article_15_4
+15.6 : PaperP1.UniformIndependentDeficit.uniform_bound
+15.8 : PaperP1.IndependentTailTheorem.article_15_8
+15.11 : PaperP1.MultiAnchorModerateMass.uniform_bound, PaperP1.MultiAnchorBudgets.article_15_11
+T1.15 : PaperP1.GeneralBranchingTheorem.companion_T1_15
+T1.16 : PaperP1.TernaryUnboundedCutoff.actual_tuples_bound
+T22.4 : PaperP1.CriticalOrderBranching.companion_T22_4
+T21.4 : PaperP1.PolylogConfinementTheorem.companion_T21_4_three_dimensional, PaperP1.PlaneConfinementMass.actual_plane_confinement
+
+Points sémantiques confirmés :
+-15.3 compte les vrais centres comprimés, avec W sous la somme effective des sources, et inclut tous les offsets.
+-15.6 somme littéralement toutes les cardinalités et les marges exactes ; son uniforme décharge les budgets supposés par l’étape finie.
+-15.8 paie le bloc comprimé parv2^(−L), une fois, et les autres fenêtres parvp_x. Les relations de support complet sont dans les espaces effectifs. Le seuil précède tous les blocs physiques. Le type metε avants ; choisir un exposanta′ entrea et2 permet au besoin de fixer s avant la marge finale.
+-T1.15 etT22.4 donnent l’indépendance du vecteur entier avec toutes les observations anciennes, et non seulement des indépendances deux à deux. T22.4 choisit son enveloppe avant l’ordre croissantj.
+-T1.16 ne borne pasH par le haut : la preuve le cape en interne et contrôle le vrai ensemble des tuples. Seule l’injectivité de chaque carte paire et la directivité deux à deux sont supposées.
+
+Les signatures exactes, les16 types compilés archivés disponibles pour22 points d’entrée/support, les objets, hypothèses, quantificateurs et localisateurs figurent dans independent-dense.json. Le complément modéré15.11 figure aussi dans l’extraction supplémentaire536 du parent, vérifiée par empreinte.
+Limite : lecture ciblée des raccords, sans nouveau build ni relecture exhaustive de toutes les preuves transitives. Aucune modification du dépôt, de la version1.8, de Lean ou des PDF ; aucun actePalomar.

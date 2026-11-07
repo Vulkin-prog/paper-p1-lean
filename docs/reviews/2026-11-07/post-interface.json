@@ -1,0 +1,256 @@
+{
+  "schema_version": 1,
+  "status": "final",
+  "date_utc": "2026-11-07T13:05:44.371817+00:00",
+  "repository_head_reviewed": "08f019df4d33a817377e5c937356fe4d87ae08e1",
+  "scope": "Deux interfaces ajoutées aux checkpoints1001–1002 ; aucune nouvelle lecture des167 résultats.",
+  "summary": {
+    "real_mathematical_gaps_found": 0,
+    "replica_raw_and_effective_distinction": "correct",
+    "repeated_occurrences": "retained",
+    "homogeneous_T8_2_all_three_clauses": "closed_without_extra_regular_or_affine_hypotheses",
+    "new_theorems_read": 8,
+    "editorial_or_index_connections": 3
+  },
+  "nominal_replica_interface": {
+    "verdict": "correct_for_the_formula_clause",
+    "raw_object": {
+      "file": "PaperP1/Model/NominalRunReplicaFormula.lean",
+      "line": 26,
+      "definition": "finrank_F2(ker(relationMap(ColoredReplicaMass.jointSystem M Y L x color)))",
+      "formal_coordinate_domain": "ι × Fin L → F₂",
+      "interpretation": "Noyau BRUT de toutes les lignes formelles, y compris les relations internes à une occurrence ; aucun quotient par les noyaux locaux."
+    },
+    "repeated_occurrences": {
+      "evidence": {
+        "file": "PaperP1/Model/ColoredReplicaMass.lean",
+        "line": 55
+      },
+      "finding": "jointSystem indexe ses lignes par(ι×FinL), non par l’image des centres. Aucun des quatre théorèmes n’assume Function.Injective x ni ne convertit x en un Finset de centres. Les deux occurrences d’un même centre gardent donc deux jeux de coordonnées formelles, même avec la même couleur.",
+      "coloring": "color:ι→κ est arbitraire ; les couleurs inutilisées sont autorisées et les indices restent des occurrences. Les copies de grands premiers sont par couleur, les petits premiers restent communs."
+    },
+    "actual_block_object": {
+      "file": "PaperP1/Model/RunReplicaSums.lean",
+      "line": 27,
+      "interpretation": "Espérance conditionnelle de l’indicatrice de TOUS les événements de start d’une couleur, sachant primeFiltrationY. conditionalBlock_eq utilise exactement bits_iff_run pour L>0."
+    },
+    "proof_transport": [
+      "conditional_nominal_formula : InfiniteReplicaFormula.integral_eq_finite puis ColoredReplicaMass.exact_nominal_formula, et simple réécriture2^(rL)=(2^L)^r. La masse nominale est2^(−rL)·η·2^dimK_brut.",
+      "run_formula : spécialise chaque mot en startRhsL, puis conditionalBlock_eq. Aucune régularité locale ajoutée.",
+      "companion_T22_7 : choisitM=max(Y,2N+L), doncY≤M etx_i+L≤M pour tous les vrais centres dyadiques. Y est arbitraire, sans borne asymptotique supérieure.",
+      "Le type conserve η comme test de compatibilité du SYSTÈME COLORÉ entier, sans supposer la compatibilité comme prémisse."
+    ],
+    "heterogeneous_formula": {
+      "verdict": "correct_effective_kernel_and_actual_marginals",
+      "marginals": "∏_i InfiniteStarts.infiniteMarginal(x_i,L), une marge par OCCURRENCE, même répétée ; les marges nulles ne sont pas exclues.",
+      "kernel": "relativeNullity(ColoredRelativeFormula.rows M Y L x color), où chaque rows_i est effectiveRowSpace du bloc coloré et relativeNullity est ker(relationAddition des images effectives).",
+      "evidence": [
+        {
+          "file": "PaperP1/Model/ColoredRelativeFormula.lean",
+          "line": 22
+        },
+        {
+          "file": "PaperP1/Affine/EffectiveRows.lean",
+          "line": 26
+        },
+        {
+          "file": "PaperP1/Affine/RelativeNullity.lean",
+          "line": 26
+        }
+      ],
+      "proof": "hmass identifie chaque vraie probabilité de mot-start à infiniteMarginal via bits_iff_run et l’intégrale d’une indicatrice. InfiniteReplicaFormula.exact_relative_formula fournit ensuite η·∏p_x·2^ρ_eff. Aucune substitution p_x=2^−L ni hypothèse de rang plein."
+    },
+    "quantifiers": "Types d’occurrencesι et couleursκ finis ; Y,L,M,x,color arbitraires sousY≤M etx_i+L≤M, avecL>0 pour les événements de start. Le wrapper dyadique quantifie N,Y,L,x∈I_N,color et construitM ; aucune injectivité des centres ni source de compte supposée.",
+    "scope_limit": "Le nouvel alias companion_T22_7 prouve la PREMIÈRE FORMULE imprimée. Il n’énonce ni la propagation positive après sources ni le moment de R ; ces autres clauses doivent conserver leurs autres endpoints dans l’index.",
+    "theorems": [
+      {
+        "declaration": "PaperP1.NominalRunReplicaFormula.conditional_nominal_formula",
+        "file": "PaperP1/Model/NominalRunReplicaFormula.lean",
+        "line": 30,
+        "source_signature": "theorem conditional_nominal_formula {ι κ : Type*} [Fintype ι] [Fintype κ]\n    {M Y L : ℕ} (hYM : Y ≤ M) (x : ι → ℕ) (color : ι → κ)\n    (b : ι → Fin L → F₂) (hcut : ∀ i, x i + L ≤ M) :\n    (∫ ω, (∏ k, InfiniteReplicaFormula.conditionalBlock Y L x color b k ω)\n      ∂infiniteRademacherMeasure) =\n      ((2^L : ℝ)⁻¹)^Fintype.card ι *\n      (if Compatible (ColoredReplicaMass.jointSystem M Y L x color)\n        (ColoredReplicaMass.jointRhs b) then (1 : ℝ) else 0) *\n      (2^rawKernelDimension M Y L x color : ℝ)",
+        "file_sha256": "f3c2dce139c0a2e98f01aad76823346569d90746400720af0591a7b9ac01b76e",
+        "reviewed": "statement, direct proof body, objects and immediate transports",
+        "compiled_type_claim_by_this_reviewer": false
+      },
+      {
+        "declaration": "PaperP1.NominalRunReplicaFormula.run_formula",
+        "file": "PaperP1/Model/NominalRunReplicaFormula.lean",
+        "line": 47,
+        "source_signature": "theorem run_formula {ι κ : Type*} [Fintype ι] [Fintype κ]\n    {M Y L : ℕ} (hYM : Y ≤ M) (hL : 0 < L) (x : ι → ℕ) (color : ι → κ)\n    (hcut : ∀ i, x i + L ≤ M) :\n    (∫ ω, (∏ k, RunReplicaSums.block Y L x color k ω) ∂infiniteRademacherMeasure) =\n      ((2^L : ℝ)⁻¹)^Fintype.card ι *\n      (if Compatible (ColoredReplicaMass.jointSystem M Y L x color)\n        (ColoredReplicaMass.jointRhs (fun _ ↦ startRhs L)) then (1 : ℝ) else 0) *\n      (2^rawKernelDimension M Y L x color : ℝ)",
+        "file_sha256": "f3c2dce139c0a2e98f01aad76823346569d90746400720af0591a7b9ac01b76e",
+        "reviewed": "statement, direct proof body, objects and immediate transports",
+        "compiled_type_claim_by_this_reviewer": false
+      },
+      {
+        "declaration": "PaperP1.NominalRunReplicaFormula.heterogeneous_run_formula",
+        "file": "PaperP1/Model/NominalRunReplicaFormula.lean",
+        "line": 58,
+        "source_signature": "theorem heterogeneous_run_formula {ι κ : Type*} [Fintype ι] [Fintype κ]\n    {M Y L : ℕ} (hYM : Y ≤ M) (hL : 0 < L) (x : ι → ℕ) (color : ι → κ)\n    (hcut : ∀ i, x i + L ≤ M) :\n    (∫ ω, (∏ k, RunReplicaSums.block Y L x color k ω) ∂infiniteRademacherMeasure) =\n      (if Compatible (ColoredReplicaMass.jointSystem M Y L x color)\n        (ColoredReplicaMass.jointRhs (fun _ ↦ startRhs L)) then (1 : ℝ) else 0) *\n      (∏ i, InfiniteStarts.infiniteMarginal (x i) L) *\n      (2^relativeNullity (ColoredRelativeFormula.rows M Y L x color) : ℝ)",
+        "file_sha256": "f3c2dce139c0a2e98f01aad76823346569d90746400720af0591a7b9ac01b76e",
+        "reviewed": "statement, direct proof body, objects and immediate transports",
+        "compiled_type_claim_by_this_reviewer": false
+      },
+      {
+        "declaration": "PaperP1.NominalRunReplicaFormula.companion_T22_7",
+        "file": "PaperP1/Model/NominalRunReplicaFormula.lean",
+        "line": 83,
+        "source_signature": "theorem companion_T22_7 {ι κ : Type*} [Fintype ι] [Fintype κ]\n    (N Y L : ℕ) (hL : 0 < L) (x : ι → ℕ)\n    (hx : ∀ i, x i ∈ dyadicBlock N) (color : ι → κ) :\n    (∫ ω, (∏ k, RunReplicaSums.block Y L x color k ω) ∂infiniteRademacherMeasure) =\n      ((2^L : ℝ)⁻¹)^Fintype.card ι *\n      (if Compatible (ColoredReplicaMass.jointSystem (max Y (2*N+L)) Y L x color)\n        (ColoredReplicaMass.jointRhs (fun _ ↦ startRhs L)) then (1 : ℝ) else 0) *\n      (2^rawKernelDimension (max Y (2*N+L)) Y L x color : ℝ)",
+        "file_sha256": "f3c2dce139c0a2e98f01aad76823346569d90746400720af0591a7b9ac01b76e",
+        "reviewed": "statement, direct proof body, objects and immediate transports",
+        "compiled_type_claim_by_this_reviewer": false
+      }
+    ]
+  },
+  "homogeneous_interface": {
+    "verdict": "exactly_closes_printed_T8_2",
+    "actual_event": {
+      "file": "PaperP1/Model/HomogeneousRunMass.lean",
+      "line": 26,
+      "definition": "P(∀x∈I,infiniteStartBits x L=0)",
+      "interpretation": "Vrais événements homogènes de la mesure originale de signes ; pas poids nominalp^|I|2^ρ ni produit des marges originales qui peuvent s’annuler."
+    },
+    "mass_object": {
+      "file": "PaperP1/Asymptotics/DensePrimitiveHomogeneousMass.lean",
+      "line": 28,
+      "definition": "Σ_{I∈F} HomogeneousRunMass.probability L I"
+    },
+    "point_bound": {
+      "finding": "uniform_point_bound donne8·(2^C)^4/N² pour TOUTE triple primitive de vrais centres dyadiques.",
+      "proof_chain": [
+        "HomogeneousLocalMarginalCap.uniform_cap : chaque marge homogène≤2·2^C/N, y compris fenêtre originale irrégulière/incompatible.",
+        "HomogeneousEffectiveWeights.factor : probabilité homogène exacte=produit des marges homogènes·2^ρ_eff.",
+        "PrimitiveWindowMass.primitive_nullity_le :ρ_eff≤L, sans hypothèse de rang local plein.",
+        "two_pow_upper :2^L≤N·2^C depuis la bande critique.",
+        "Produit(2·2^C/N)^3·N·2^C=8(2^C)^4/N²."
+      ]
+    },
+    "uniform_mass": {
+      "finding": "La vraie borne d’hôtes DensePrimitiveTripleHosts.companion_T8_2_hosts avec margeε/2 multiplie ce cap ponctuel ; HalfCountSchedule absorbe la constante fixe dans l’autreε/2.",
+      "no_assumed_target_bound": true,
+      "threshold_order": "C,η,ε sont fixés AVANTN₀ ; puis∀N≥N₀,∀L dans la bande,∀F de triples primitives denses. Densitéη(L+1), exactementηB."
+    },
+    "terminal_three_clauses": [
+      {
+        "clause": "hôtes denses N^ε",
+        "source": "Première composante du terminal déjà prouvé PrimitiveTripleMass.companion_T8_2, réutilisée sans hypothèse ajoutée."
+      },
+      {
+        "clause": "masse homogène dense N^(−2+ε)",
+        "source": "Le nouveau uniform_mass porte sur les VRAIES probabilités homogènes."
+      },
+      {
+        "clause": "activité absolue de TOUTES les primitives N^(−3/2+ε)",
+        "source": "Seconde composante de PrimitiveTripleMass.companion_T8_2 ; aucune densité requise surF pour cette branche."
+      }
+    ],
+    "no_hidden_hypotheses": [
+      "Pas de régularité locale.",
+      "Pas de compatibilité affine de la triple.",
+      "Pas de p_x>0 ni d’admissibilité originale.",
+      "Pas de séparation ou directivité supplémentaire des paires, hors ce que Primitive implique."
+    ],
+    "no_circularity_found": "L’ancien terminal fournit les hôtes et l’activité déjà prouvés ; sa masse EXACTEp_x n’est pas réutilisée pour prétendre majorer la masse homogène. La nouvelle preuve homogène utilise séparément cap+factorisation+ρ≤L ; l’ancien module n’importe pas le nouveau.",
+    "theorems": [
+      {
+        "declaration": "PaperP1.DensePrimitiveHomogeneousMass.two_pow_upper",
+        "file": "PaperP1/Asymptotics/DensePrimitiveHomogeneousMass.lean",
+        "line": 33,
+        "source_signature": "theorem two_pow_upper {N L : ℕ} {C : ℝ} (hN : 2 ≤ N)\n    (hband : |(L : ℝ)-Real.log N/Real.log 2| ≤ C) :\n    (2^L : ℝ) ≤ (N : ℝ)*(2 : ℝ)^C",
+        "file_sha256": "04560db2fe83e57959bf158dc9b292e5d9e1df14ba7e77e6591b1537cb8485c8",
+        "reviewed": "statement, direct proof body, objects and immediate transports",
+        "compiled_type_claim_by_this_reviewer": false
+      },
+      {
+        "declaration": "PaperP1.DensePrimitiveHomogeneousMass.uniform_point_bound",
+        "file": "PaperP1/Asymptotics/DensePrimitiveHomogeneousMass.lean",
+        "line": 51,
+        "source_signature": "theorem uniform_point_bound (C : ℝ) :\n    ∃ N₀ : ℕ, 2 ≤ N₀ ∧ ∀ N ≥ N₀, ∀ L : ℕ,\n      |(L : ℝ)-Real.log N/Real.log 2| ≤ C → ∀ I : Finset ℕ,\n      I ⊆ dyadicBlock N → I.card = 3 → Primitive L I →\n      HomogeneousRunMass.probability L I ≤ constant C/(N : ℝ)^2",
+        "file_sha256": "04560db2fe83e57959bf158dc9b292e5d9e1df14ba7e77e6591b1537cb8485c8",
+        "reviewed": "statement, direct proof body, objects and immediate transports",
+        "compiled_type_claim_by_this_reviewer": false
+      },
+      {
+        "declaration": "PaperP1.DensePrimitiveHomogeneousMass.uniform_mass",
+        "file": "PaperP1/Asymptotics/DensePrimitiveHomogeneousMass.lean",
+        "line": 83,
+        "source_signature": "theorem uniform_mass (C η ε : ℝ) (hη : 0 < η) (hε : 0 < ε) :\n    ∃ N₀ : ℕ, 3 ≤ N₀ ∧ ∀ N ≥ N₀, ∀ L : ℕ,\n      |(L : ℝ)-Real.log N/Real.log 2| ≤ C → ∀ F : Finset (Finset ℕ),\n      (∀ I ∈ F, I ⊆ dyadicBlock N ∧ I.card = 3 ∧ Primitive L I ∧\n        η*((L+1 : ℕ) : ℝ) ≤ (runRelativeNullity L I : ℝ)) →\n      mass F L ≤ (N : ℝ)^(-2+ε)",
+        "file_sha256": "04560db2fe83e57959bf158dc9b292e5d9e1df14ba7e77e6591b1537cb8485c8",
+        "reviewed": "statement, direct proof body, objects and immediate transports",
+        "compiled_type_claim_by_this_reviewer": false
+      },
+      {
+        "declaration": "PaperP1.DensePrimitiveHomogeneousMass.companion_T8_2",
+        "file": "PaperP1/Asymptotics/DensePrimitiveHomogeneousMass.lean",
+        "line": 113,
+        "source_signature": "theorem companion_T8_2 (C η ε : ℝ) (hη : 0 < η) (hε : 0 < ε) :\n    ∃ N₀ : ℕ, 3 ≤ N₀ ∧ ∀ N ≥ N₀, ∀ L : ℕ,\n      |(L : ℝ)-Real.log N/Real.log 2| ≤ C →\n      (∀ F : Finset (Finset ℕ),\n        (∀ I ∈ F, I ⊆ dyadicBlock N ∧ I.card = 3 ∧ Primitive L I ∧\n          η*((L+1 : ℕ) : ℝ) ≤ (runRelativeNullity L I : ℝ)) →\n        (F.card : ℝ) ≤ (N : ℝ)^ε ∧ mass F L ≤ (N : ℝ)^(-2+ε)) ∧\n      (∀ F : Finset (Finset ℕ),\n        (∀ I ∈ F, I ⊆ dyadicBlock N ∧ I.card = 3 ∧ Primitive L I) →\n        (∑ I ∈ F, |infiniteCenteredCoefficient L I|) ≤ (N : ℝ)^(-(3 : ℝ)/2+ε))",
+        "file_sha256": "04560db2fe83e57959bf158dc9b292e5d9e1df14ba7e77e6591b1537cb8485c8",
+        "reviewed": "statement, direct proof body, objects and immediate transports",
+        "compiled_type_claim_by_this_reviewer": false
+      }
+    ]
+  },
+  "editorial_or_index_connections": [
+    {
+      "id": "PI-01",
+      "result": "T22.7",
+      "kind": "necessary_notation_clarification",
+      "mathematical_error": false,
+      "location": {
+        "file": "manuscripts/paper-p1/v1.8/sources/companion_sections/uniform_appendix.tex",
+        "line": 347
+      },
+      "finding": "La phrase imprimée «relative kernel» peut être confondue avec le noyau EFFECTIF de la reconstruction scalaire. La formule nominalep^r exige ici le noyau desrL coordonnées formelles avant quotient local.",
+      "proposed_english_tex": "Here \\(K_\\pi\\) is the kernel of the relation map on all \\(rL\\) formal occurrence coordinates, before quotienting by within-occurrence relations. Repeated centres retain distinct formal coordinates. With the effective relative kernel, the prefactor is instead \\(\\prod_{i=1}^r p_{x_i}\\).",
+      "action": "Clarification pour une révision éditoriale ultérieure seulement ; aucun TeX modifié dans cet audit."
+    },
+    {
+      "id": "PI-02",
+      "result": "T22.7",
+      "kind": "clause_specific_index",
+      "mathematical_error": false,
+      "finding": "Le nom companion_T22_7 de la nouvelle interface correspond à la formule nominale. Il ne doit pas remplacer à lui seul le bundle des trois clauses de la proposition composée.",
+      "action": "L’index doit garder la propagation après sources compatibles et les moments des sommes positives comme clauses distinctes."
+    },
+    {
+      "id": "PI-03",
+      "result": "T8.2",
+      "kind": "replace_composition_by_new_complete_entry",
+      "mathematical_error": false,
+      "finding": "Le nouvel endpoint ferme le raccord homogène qui avait été seulement composé dans le rapport79 figé. Les trois clauses imprimées ont maintenant un seul type exact, avec la vraie masse homogène.",
+      "action": "Pointer l’index nouveau vers PaperP1.DensePrimitiveHomogeneousMass.companion_T8_2 ; conserver les anciens rapports inchangés et dater ce complément de lecture."
+    }
+  ],
+  "frozen_reports": [
+    {
+      "file": "independent-dense.json",
+      "sha256": "07c268b0ac3ad1541a156b4f2aedde3858c40674131f4ce16355b72533f78bbf",
+      "unchanged": true
+    },
+    {
+      "file": "independent-dense.txt",
+      "sha256": "c2b8e80dad1400ab9a4e3c38fd0aeb6581acd534ddc2d99f1de8f809474d17c5",
+      "unchanged": true
+    },
+    {
+      "file": "independent-canonical.json",
+      "sha256": "9357b542baff154af31c5909b149306281228a5055a590701b76b5e4a6ac7086",
+      "unchanged": true
+    },
+    {
+      "file": "independent-canonical.txt",
+      "sha256": "72f971011083bc18618ffbc22f13e79ebf7a46dc7d7314004ea9b53e67d3f357",
+      "unchanged": true
+    }
+  ],
+  "parent_validation_reports_not_executed_here": {
+    "eight_new_theorems": "Le parent annonce compilation sans avertissements des quatre théorèmes de chaque module.",
+    "checkpoint1001": "Le parent annonce le replay passé :18623 jobs,19971 contrôles d’axiomes,19894 références.",
+    "checkpoint1002": "Le message de mission indique le replay en cours côté parent ; cet audit ne vérifie ni ne présume son résultat.",
+    "reviewer_ran_lean_or_lake": false
+  },
+  "limits": "Lecture des deux objets, des huit signatures et corps, et des transports immédiats/identifications de kernels et événements. Aucun nouveau passage du noyau ni audit transitif intégral.",
+  "no_repository_modifications": true,
+  "no_tex_modifications": true,
+  "no_lake": true,
+  "no_palomar": true
+}
