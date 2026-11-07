@@ -1,10 +1,10 @@
 {
-  "validated_source_commit": "7bfc953cd6092eebfbae5f24aeb72b7180693537",
-  "scope": "All substantive/root Lean sources, compiler/dependency pins and Lake build configuration at the complete replay source.",
+  "validated_source_commit": "d342b507332315c67b1463009061c03f14b5be9b",
+  "scope": "All substantive/root Lean sources, compiler/dependency pins and Lake configuration at the complete replay source.",
   "files": [
     {
       "path": "Audit.lean",
-      "sha256": "8f75cf95d851f2e32fc8942dd2807ec313c553441f28e40a38b1253a01e64db1"
+      "sha256": "bfeb0424b09071308160ff9000349b9aa4f0d291cb2f56167180ed59936a9c26"
     },
     {
       "path": "ChallengeP1AffineSpectra.lean",
@@ -100,7 +100,7 @@
     },
     {
       "path": "PaperP1.lean",
-      "sha256": "c633f269fe7c1dc3290cb945a919cae38f4ed05b422410e517112f54211c561b"
+      "sha256": "f50b1763f1ef3efcd03f85c77cb7602f2de5b4a294ba24087b26500deef45bc8"
     },
     {
       "path": "PaperP1/Affine/BinaryMassLattice.lean",
@@ -13317,6 +13317,10 @@
     {
       "path": "PaperP1/Asymptotics/SharpFixedChannelNonalignedMassUnderInputs.lean",
       "sha256": "cb4a9ff0c9b8741205e49fe371364d148e6948588e822535233e93efe6db42ee"
+    },
+    {
+      "path": "PaperP1/Asymptotics/SharpGoodEdgePositivePalm.lean",
+      "sha256": "927ef0cda8a8e9bcc925a444515866c24ebfa7c0bcb54ca2d1d8797bb9404a45"
     },
     {
       "path": "PaperP1/Asymptotics/SharpIncompatibleActivity.lean",

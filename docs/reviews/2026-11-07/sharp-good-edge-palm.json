@@ -1,0 +1,180 @@
+{
+  "schema_version": 1,
+  "status": "complete_frozen",
+  "date": "2026-11-07",
+  "title": "Relecture indépendante des quatre interfaces SharpGoodEdgePositivePalm",
+  "source_commit": "d342b507332315c67b1463009061c03f14b5be9b",
+  "source_file": "PaperP1/Asymptotics/SharpGoodEdgePositivePalm.lean",
+  "source_sha256": "927ef0cda8a8e9bcc925a444515866c24ebfa7c0bcb54ca2d1d8797bb9404a45",
+  "compiled_scope": {
+    "path": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-further-simplification/sharp-scope/compiled-types.json",
+    "sha256": "636d49b7c2a898b743d1310e6791b6830a25ba9092237e14942bc392c338ac14",
+    "types": 4,
+    "propositions": 4
+  },
+  "compiled_validation": {
+    "path": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-further-simplification/sharp-scope/compiled-types-validation.json",
+    "sha256": "afecddd73deab18b5ae86a49ece96d379f32303c116c6d04a8885441b900b3d7",
+    "reported_actual_exit_code": 0,
+    "exit_file_read": "0",
+    "all_propositions_standard_axioms_only": true,
+    "permitted_axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "execution_by_this_reviewer": false
+  },
+  "summary": {
+    "mathematical_gaps_confirmed": 0,
+    "necessary_corrections": 0,
+    "results_reviewed": 4,
+    "verdict": "les_quatre_corps_et_types_concordent_sur_leurs_domaines_exacts",
+    "gain": "Pont fini vers la masse homogène41/30, puis coût Palm normalisé−11/30−1/b pour chaque canal intérieur fixé.",
+    "printed_T3_1_can_remain_unchanged": true,
+    "scope_limit": "Sous-familles régulières de cibles ; positivité deβ démontrée avant division sous les cutoff indiqués."
+  },
+  "results": [
+    {
+      "declaration": "PaperP1.SharpGoodEdgePositivePalm.finite_mass",
+      "compiled_type": "∀ {N H a b L : ℕ},\n  2 ≤ N →\n    0 < L →\n      ∀ {G : Finset ℕ},\n        G ⊆ PaperP1.RegularStarts.regularStarts N L →\n          PaperP1.GoodEdgePositivePalm.mass N H a b L G ≤ PaperP1.HomogeneousEffectiveGoodPairExtensions.mass N H a b L",
+      "is_proposition": true,
+      "file": "PaperP1/Asymptotics/SharpGoodEdgePositivePalm.lean",
+      "line": 22,
+      "verdict": "conforme_corps_type_objets_et_quantificateurs",
+      "necessary_corrections": [],
+      "body_comparison": "Compose le lemme finiGoodEdgePositivePalm.finite_mass avec une inclusion de populations. L’ancien membre droitHomogeneousGoodPairExtensionsUnderInputs.mass est DÉPLIÉ en une somme effective finie ; le couple(e,z) est conservé et la seule nouvelle étape est regularStarts⊆dyadicBlock. Fraîcheur, séparation et croisement positif sont conservés. Les poidsHomogeneousRunMass.probability sont identiques et positifs, donc la sommation est monotone.",
+      "objects_and_hypotheses": "N,H,a,b,L sont naturels, N≥2,L>0 etG est une sous-famille finie des starts réguliers. La masse de gauche est le vrai excès Palm positif sur les sources compatibles ; leur positivité est encodée dansCompatibleChannelEdges. La masse de droite est une probabilité homogène sur les sources brutes, sans filtre de compatibilité supplémentaire. Aucun seuil de masse, borne finale, propriétéHypotheses ou entrée asymptotique n’est supposé.",
+      "quantifiers": "Tous les paramètres etG sont universels ; c’est une comparaison finie, sans seuilN0 ni exigence0<a<b. Les hypothèses N≥2,L>0 viennent des lemmes de support positif et sont explicites.",
+      "dependencies": [
+        "PaperP1.GoodEdgePositivePalm.finite_mass",
+        "PaperP1.GoodEdgePositivePalm.positive_points_subset",
+        "PaperP1.RegularStarts.regularStarts_subset",
+        "PaperP1.HomogeneousRunMass.probability_pos"
+      ]
+    },
+    {
+      "declaration": "PaperP1.SharpGoodEdgePositivePalm.uniform_mass",
+      "compiled_type": "∀ (a b : ℕ),\n  0 < a →\n    a < b →\n      b < 2 * a →\n        a.Coprime b →\n          ∀ (C ε : ℝ),\n            0 < ε →\n              ∃ N₀,\n                10 ≤ N₀ ∧\n                  ∀ N ≥ N₀,\n                    ∀ (L H : ℕ),\n                      |↑L - Real.log ↑N / Real.log 2| ≤ C →\n                        ∀ G ⊆ PaperP1.RegularStarts.regularStarts N L,\n                          PaperP1.GoodEdgePositivePalm.mass N H a b L G ≤ ↑N ^ (-41 / 30 + ε)",
+      "is_proposition": true,
+      "file": "PaperP1/Asymptotics/SharpGoodEdgePositivePalm.lean",
+      "line": 40,
+      "verdict": "conforme_corps_type_objets_et_quantificateurs",
+      "necessary_corrections": [],
+      "body_comparison": "AppliqueHomogeneousEffectiveGoodPairExtensions.uniform_mass au taux41/30, choisit avecPrincipalChannelEdgesPhase.uniform_geometry un seuil assurantL>0, puis compose la comparaison finie. La borne homogène est prouvée en amont et n’apparaît pas comme prémisse de ce théorème.",
+      "objects_and_hypotheses": "Canal intérieur fixé0<a<b<2a, copremier ; bande critiqueC, ε>0. La conclusion contrôle la vraie masse d’excès Palm original, et non un cumulant signé, pour touteG régulière.",
+      "quantifiers": "a,b et les quatre conditions de canal, puisC,ε>0 précèdent∃N0. Ensuite∀N≥N0,∀L,H critiques,∀G⊆regularStarts. Aucun cutoff inférieur n’est exigé pour cette borne non normalisée. N0 est uniforme enH etG.",
+      "dependencies": [
+        "PaperP1.SharpGoodEdgePositivePalm.finite_mass",
+        "PaperP1.HomogeneousEffectiveGoodPairExtensions.uniform_mass",
+        "PaperP1.PrincipalChannelEdgesPhase.uniform_geometry"
+      ]
+    },
+    {
+      "declaration": "PaperP1.SharpGoodEdgePositivePalm.uniform_normalized",
+      "compiled_type": "∀ (a b D : ℕ),\n  0 < a →\n    a < b →\n      b < 2 * a →\n        a.Coprime b →\n          ∀ (C ε : ℝ),\n            0 < ε →\n              ∃ N₀,\n                10 ≤ N₀ ∧\n                  ∀ N ≥ N₀,\n                    ∀ (L H : ℕ),\n                      |↑L - Real.log ↑N / Real.log 2| ≤ C →\n                        2 * b * (L + 1) ≤ H →\n                          H ≤ D * (L + 1) →\n                            ∀ G ⊆ PaperP1.RegularStarts.regularStarts N L,\n                              0 < PaperP1.GoodEdgePositivePalm.beta N H a b L ∧\n                                PaperP1.GoodEdgePositivePalm.mass N H a b L G ≤ ↑N ^ (-41 / 30 + ε) ∧\n                                  PaperP1.GoodEdgePositivePalm.normalized N H a b L G ≤ ↑N ^ (-11 / 30 - 1 / ↑b + ε)",
+      "is_proposition": true,
+      "file": "PaperP1/Asymptotics/SharpGoodEdgePositivePalm.lean",
+      "line": 54,
+      "verdict": "conforme_corps_type_objets_et_quantificateurs",
+      "necessary_corrections": [],
+      "body_comparison": "Choisit la margeε/2 dansuniform_mass et une constante de phase inférieurec>0 viaPrivateChannelMassPhase.positive_phase. La géométrie donneL≥1 et(a+b)(L+1)<N. Le corps prouveβ≥(c/2)N^(−1+1/b)>0 avant toute division ; il divise la masse41/30 par cette borne, obtient l’exposant−11/30−1/b et absorbe2/c avec la margeε/2.",
+      "objects_and_hypotheses": "Même canal intérieur fixé, avecD naturel et cutoff2b(L+1)≤H≤D(L+1). Ce cutoff est nécessaire à la phase inférieure utilisée pour normaliser. La masse etβ sont les vraies masses compatibles, etnormalized est exactementmass/β. Le théorème ne remplace pasβ par la masse brute homogène.",
+      "quantifiers": "a,b,D,C,ε et conditions de canal sont fixés avantN0 ; toutes les échellesN,L,H et sous-famillesG viennent après ce seuil. Les sorties sont conjointes : β>0, masse≤N^(−41/30+ε), normalisée≤N^(−11/30−1/b+ε). Aucune hypothèseD≥2b supplémentaire n’est nécessaire : les deux conditions surH délimitent le domaine.",
+      "dependencies": [
+        "PaperP1.SharpGoodEdgePositivePalm.uniform_mass",
+        "PaperP1.PrivateChannelMassPhase.positive_phase",
+        "PaperP1.CompatibleChannelEdges.joint_mass_eq",
+        "PaperP1.HalfCountSchedule.factor_absorption"
+      ]
+    },
+    {
+      "declaration": "PaperP1.SharpGoodEdgePositivePalm.companion_T3_1_sharp",
+      "compiled_type": "∀ (D : ℕ) (C ε : ℝ),\n  0 < ε →\n    ∃ N₀,\n      10 ≤ N₀ ∧\n        ∀ N ≥ N₀,\n          ∀ (L H : ℕ),\n            |↑L - Real.log ↑N / Real.log 2| ≤ C →\n              8 * (L + 1) ≤ H →\n                H ≤ D * (L + 1) →\n                  ∀ G ⊆ PaperP1.RegularStarts.regularStarts N L,\n                    0 < PaperP1.GoodEdgePositivePalm.beta N H 2 3 L ∧\n                      0 < PaperP1.GoodEdgePositivePalm.beta N H 3 4 L ∧\n                        PaperP1.GoodEdgePositivePalm.normalized N H 2 3 L G ≤ ↑N ^ (-7 / 10 + ε) ∧\n                          PaperP1.GoodEdgePositivePalm.normalized N H 3 4 L G ≤ ↑N ^ (-37 / 60 + ε) ∧\n                            PaperP1.GoodEdgePositivePalm.mass N H 2 3 L G ≤ ↑N ^ (-41 / 30 + ε) ∧\n                              PaperP1.GoodEdgePositivePalm.mass N H 3 4 L G ≤ ↑N ^ (-41 / 30 + ε)",
+      "is_proposition": true,
+      "file": "PaperP1/Asymptotics/SharpGoodEdgePositivePalm.lean",
+      "line": 102,
+      "verdict": "conforme_corps_type_objets_et_quantificateurs",
+      "necessary_corrections": [],
+      "body_comparison": "Spécialiseuniform_normalized en2:3 et3:4 avec preuves numériques des conditions de canal, puis prend le maximum des deux seuils. Les calculs−11/30−1/3=−7/10 et−11/30−1/4=−37/60 sont exacts. Les six clauses conservent les deux positivitésβ et les deux masses non normalisées41/30.",
+      "objects_and_hypotheses": "D,C etε>0 fixés ; cutoff commun8(L+1)≤H≤D(L+1), suffisant pour les deux canaux. G est une sous-famille régulière quelconque, y compris vide. Aucun élargissement à toutes les cibles irrégulières n’est revendiqué par le pont Palm fini.",
+      "quantifiers": "D,C,ε précèdent∃N0, puis∀N,L,H,G. Le seuil est commun aux deux canaux et à toutes les sous-familles. Les arités restent fixées : une paire et une cible.",
+      "dependencies": [
+        "PaperP1.SharpGoodEdgePositivePalm.uniform_normalized"
+      ]
+    }
+  ],
+  "definitions_and_dependencies_read": [
+    {
+      "file": "PaperP1/Model/GoodEdgePositivePalm.lean",
+      "lines": [
+        24,
+        38,
+        56,
+        87,
+        105,
+        128
+      ],
+      "sha256": "49763c2fd015a52a20b4b1f7f29857f0ea935f31ab13f958f1600f40005916c4",
+      "role": "Définitions, support du positif et domination finie ; les points sources sont compatibles et les poids de droite homogènes."
+    },
+    {
+      "file": "PaperP1/Asymptotics/HomogeneousGoodPairExtensionsUnderInputs.lean",
+      "lines": [],
+      "sha256": "912eb17c55531aa9410ab8bfc769327e2e5b66203bf1b0eca20fa160145c6d0d",
+      "role": "Namespace historique contenant les définitions finies depoints/mass utilisées par le pont ; aucune hypothèse de borne finale n’est fournie au nouveau module."
+    },
+    {
+      "file": "PaperP1/Asymptotics/HomogeneousEffectiveGoodPairExtensions.lean",
+      "lines": [
+        20,
+        24,
+        57
+      ],
+      "sha256": "e96085272fd4919831aa9f4f05c6fa9d4548219d6d7af6b06aab75378c72cfc9",
+      "role": "Population homogène effective, masse positive et estimation41/30 existante."
+    },
+    {
+      "file": "PaperP1/Asymptotics/PrivateChannelMassPhase.lean",
+      "lines": [],
+      "sha256": "e9818092a00ffbff91b8d7f13819a76aae82f67980b0cefd9f230127e612b31c",
+      "role": "Phase positive uniforme fournissant les constantes fixes avant la normalisation."
+    },
+    {
+      "file": "PaperP1/Asymptotics/GoodEdgePositivePalm.lean",
+      "lines": [
+        18,
+        32,
+        78
+      ],
+      "sha256": "f7cb191478cabf24a06818e2775875546203d4a3b691ae197a8fe9f22a4b37e3",
+      "role": "Le module importé contient aussi les anciennes bornes Palm ; les quatre nouveaux corps ne les utilisent pas comme prémisses."
+    }
+  ],
+  "circularity_assessment": {
+    "target_bound_assumed": false,
+    "signed_cumulant_used": false,
+    "historical_UnderInputs_explained": "Le membre droit de la comparaison finie est une définition explicite de somme, pas un témoinHypotheses supposant la conclusion. Son inclusion dans la population effective est prouvée dans le nouveau corps.",
+    "old_Palm_import": "L’importAsymptotics.GoodEdgePositivePalm est plus large que les dépendances mathématiques des nouveaux corps ; finite_mass utilise le lemme fini du modèle, uniform_mass la masse homogène inconditionnelle etuniform_normalized la phase inférieure. Aucun recours au théorèmeT3.1 àprouver ni aux anciensuniform_mass/uniform_normalized de ce namespace dans ces quatre corps."
+  },
+  "manuscript_implications": [
+    "La preuve courte deT3.1 peut utiliser la masse homogène positive de la paire et de la cible, puis normaliser par la vraie masse compatibleβ.",
+    "Les anciens exposants imprimés2/3,1/2 pour les coûts normalisés et4/3,5/4 pour les masses restent des conséquences. Il est raisonnable de les conserver afin de ne pas multiplier les optimisations accessoires.",
+    "Les résultats normalisés de ce module ne portent pas sur une arité croissant avecN ; les canaux, cutoff supérieurs et marges sont fixés avantN0."
+  ],
+  "parent_full_replay_context": {
+    "reported_by_parent_only": true,
+    "source_commit": "d342b507332315c67b1463009061c03f14b5be9b",
+    "actual_exit_reported": 0,
+    "build_jobs": 18631,
+    "axiom_checks": 19995,
+    "reference_checks": 19918,
+    "scope_replays_reported_complete": true,
+    "independent_replay_claimed": false
+  },
+  "limits": [
+    "Lecture indépendante des sources, définitions, quatre types extraits et validation fournie ; aucun Lean/Lake, replay, build ou audit exécuté par cette instance.",
+    "Aucun PDF, Palomar ou délégation.",
+    "Aucun fichier du dépôt ni rapport ancien modifié ; seuls les deux présents rapports sont créés."
+  ]
+}

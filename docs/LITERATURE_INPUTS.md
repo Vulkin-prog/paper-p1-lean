@@ -5,10 +5,16 @@ compose the actual positive-excess support inclusion with the existing
 homogeneous effective 41/30 mass. On regular targets, each fixed interior
 channel has normalized power -11/30-1/b, including -7/10 for 2:3 and
 -37/60 for 3:4, with positive beta and the source cutoff 2bB<=H<=DB.
-All fixed parameters precede the common scale threshold. The target
-module compiled successfully under the pinned compiler (12,201 jobs).
-The complete project replay and frozen independent compiled-type review
-are pending. No printed statement, prior manuscript or registry scope
+All fixed parameters precede the common scale threshold. The complete pinned
+replay passed 18,631 build jobs, 19,995 theorem
+axiom checks and 19,918 distinct references, all actual exits zero.
+All 528 original manuscript types, the prior expanded 535 types,
+264 proof-entry/object types and nine example types replayed byte-identically.
+The seven fixed-arity interfaces were also separately replayed unchanged.
+The separate instance read all four new bodies and their actual compiled
+types without finding a necessary correction. The expanded inventory
+contains 539 types, of which 496 are audited propositions. No printed
+statement, prior manuscript or registry scope
 has changed. The common seed proof may shorten T3.1 while preserving its
 old weaker printed estimates; no new geometric assumption is introduced.
 Palomar stays on hold.

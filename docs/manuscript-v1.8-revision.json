@@ -2,7 +2,7 @@
   "schema_version": 1,
   "version": "P1 V1.8 working draft",
   "baseline_commit": "2553ce56f7cc6bdc10194801c3d926b72b587dd1",
-  "proof_source_commit": "7bfc953cd6092eebfbae5f24aeb72b7180693537",
+  "proof_source_commit": "d342b507332315c67b1463009061c03f14b5be9b",
   "numbered_statement_changes": [
     {
       "label": "p1:arith:hosts",
@@ -530,7 +530,7 @@
   },
   "proof_source_manifest": {
     "path": "docs/validation/manuscript-v1.8/proof-source-manifest.json",
-    "sha256": "d9813f6bf5d5e756eaaa30d03c42b481742a3c4b5200e70380513ae81f5437ad"
+    "sha256": "f8922da613f3f4e3be5325ea31bad73d7c5b45c6bd306699e309d89c8e2de575"
   },
   "source_preservation": {
     "v1.6": true,
@@ -590,6 +590,12 @@
         "log_sha256": "c84f0beb7071cb9aaff0ef3dbdfe88662575b663ac7b2c1aa8989b9063bc4ea7"
       },
       "scope_extension": "Seven common-envelope interfaces added; all528 prior types replayed byte-identically. No TeX/PDF source change."
+    },
+    {
+      "previous_proof_source_commit": "7bfc953cd6092eebfbae5f24aeb72b7180693537",
+      "previous_proof_manifest_sha256": "d9813f6bf5d5e756eaaa30d03c42b481742a3c4b5200e70380513ae81f5437ad",
+      "new_proof_source_commit": "d342b507332315c67b1463009061c03f14b5be9b",
+      "record": "docs/validation/checkpoint-1005/manuscript-replay.json"
     }
   ]
 }

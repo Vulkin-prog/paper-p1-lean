@@ -1,0 +1,5 @@
+'PaperP1.SharpGoodEdgePositivePalm.finite_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.SharpGoodEdgePositivePalm.uniform_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.SharpGoodEdgePositivePalm.uniform_normalized' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.SharpGoodEdgePositivePalm.companion_T3_1_sharp' depends on axioms: [propext, Classical.choice, Quot.sound]
+Exported compiled scope types for 4 declarations

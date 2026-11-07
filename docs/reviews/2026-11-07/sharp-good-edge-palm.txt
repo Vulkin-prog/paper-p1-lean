@@ -1,0 +1,28 @@
+SHARP GOOD-EDGE POSITIVE PALM — REVUE DE PREUVE FIGÉE
+Statut : complete_frozen ; 7 novembre2026.
+Source : d342b507332315c67b1463009061c03f14b5be9b
+Module : PaperP1/Asymptotics/SharpGoodEdgePositivePalm.lean
+SHA256 : 927ef0cda8a8e9bcc925a444515866c24ebfa7c0bcb54ca2d1d8797bb9404a45
+Scope4 SHA256 : 636d49b7c2a898b743d1310e6791b6830a25ba9092237e14942bc392c338ac14
+Validation SHA256 : afecddd73deab18b5ae86a49ece96d379f32303c116c6d04a8885441b900b3d7
+
+Verdict : les quatre corps concordent avec leurs types et leurs quantificateurs. Aucune lacune mathématique confirmée ; aucune correction nécessaire.
+
+1. finite_mass
+Le membre historiqueHomogeneousGoodPairExtensionsUnderInputs.mass est déplié en une véritable somme finie. Le couple(e,z), son poids homogène, sa fraîcheur, sa séparation et son croisement positif sont conservés ; seule l’inclusionregularStarts⊆dyadicBlock élargit la population. Aucune borne n’est supposée.
+Le support positif Palm est celui de sources originales compatibles ; la domination de droite conserve les sources brutes et les probabilités homogènes. N≥2,L>0 etG régulière sont explicites.
+
+2. uniform_mass
+La masse homogène inconditionnelle41/30 et la comparaison finie donnent la vraie masse Palm positive. Les canaux0<a<b<2a,coprime,C,ε précèdentN0 ; N,L,H etG viennent ensuite. H est arbitraire dans cette borne non normalisée.
+
+3. uniform_normalized
+Le cutoff2bB≤H≤DB permet la phase inférieure. Le corps prouveβ≥(c/2)N^(−1+1/b)>0 avant division, puis obtient−11/30−1/b en divisant41/30 et absorbant la constante. β est la masse compatible originale, pas la masse brute homogène. Le seuil est uniforme enN,L,H,G après fixationa,b,D,C,ε.
+
+4. companion_T3_1_sharp
+Le cutoff commun8B≤H≤DB suffit aux deux canaux. Les deux seuils sont joints. Les puissances−7/10 et−37/60 sont exactement−11/30−1/3 et−11/30−1/4. Les deux positivitésβ et les deux masses41/30 sont conservées.
+
+Le nom historiqueUnderInputs ne représente ici que des définitions finies, sans prémisse du compte final. Les anciens théorèmes Palm sont présents dans un module importé mais ne sont pas utilisés pour prouver les quatre nouvelles déclarations.
+Les anciens énoncésT3.1 restent valables et peuvent être conservés ; le nouveau pont justifie une preuve plus courte sans nouvelle optimisation imprimée. Le domaine reste régulier et les canaux sont fixés avantN.
+
+Les quatre types et leurs rapports d’axiomes ont été lus ; le fichier sharp-scope/compiled-types.exit vaut0 et la validation du parent indique uniquement les trois axiomes standards. Le replay complet et ses18631/19995/19918 vérifications sont rapportés par le parent, pas exécutés par cette instance.
+Aucun Lean/Lake,PDF,Palomar ou délégation ; aucun dépôt ni rapport antérieur modifié.

@@ -3,7 +3,7 @@
 *Sharp Poisson approximation and second-order correction for long multiplicative
 runs*, and its technical companion, by [Brice Pouly](https://orcid.org/0009-0008-8491-2467).
 
-Current checkpoint P1-MATH-1004: all **167 revised numbered statements** have
+Current checkpoint P1-MATH-1005: all **167 revised numbered statements** have
 checked proofs, using **Lean v4.36.0-rc2**, with no unformalized mathematical
 input. This comprises all 73 main-article and all 94 revised companion results.
 The separate version 1.8 working draft integrates the two necessary statement
@@ -40,10 +40,11 @@ The [editorial integrity gate](docs/validation/editorial-preview-integrity/READM
 checks the exact reviewed patch chain, delivered artifacts and complete result
 bundles in CI, with 29 in-memory controls.
 
-A new sharp positive Palm bridge compiles locally and exposes the normalized
-powers 7/10 and 37/60 in the two retained channels. Its complete pinned replay
-and independent compiled-type review are pending; the completed status below
-remains checkpoint 1004. Existing manuscript copies and registry scopes stay frozen.
+The [sharp positive Palm bridge](docs/SHARP_GOOD_EDGE_PALM.md) exposes
+the normalized powers 7/10 and 37/60 in the two retained channels. Its complete
+pinned replay and independent four-body/type review passed. A common seed
+proof is available for a future simplification; the existing manuscript copies
+and all six registry scopes remain preserved.
 
 The [latest strengthened review copy](docs/editorial-proposals/2026-11-07/scientific-strengthening/README.md)
 also exposes existing sharper bounds in T9.1, T1.14 and T4.4, with an explicit
@@ -95,7 +96,7 @@ bytes and checked counterexamples are preserved. Their corrected replacements
 are proved and integrated in version 1.7. T19.17 is proved with both original
 coefficients and without an external smooth-number premise.
 
-The historical development ledger contains **1004 entries: 1002 proof improvements and two statement-scope corrections**. These are documented proof-development steps, not 1002 independent manuscript amendments. See the [grouped review guide](docs/editorial-proposals/2026-11-07/HISTORICAL_CHANGE_GUIDE.md).
+The historical development ledger contains **1005 entries: 1003 proof improvements and two statement-scope corrections**. These are documented proof-development steps, not 1003 independent manuscript amendments. See the [grouped review guide](docs/editorial-proposals/2026-11-07/HISTORICAL_CHANGE_GUIDE.md). That frozen guide covers the first 1004 checkpoints; the new Palm bridge is documented separately.
 Proof substitutions, exact parameter ranges and the scope of stronger
 unasserted analytic or geometric results are documented in the source revision.
 
@@ -162,10 +163,10 @@ Standalone registry Challenges have only the deliberate selected statement
 holes and are never imported by the proof development or its audit.
 
 The latest complete project replay with all six consolidated registrations and
-seventeen preserved components passed **18,629 build jobs**, **19,991 theorem axiom checks**
-and **19,914 distinct reference checks**, all actual exits zero, at
-[source 7bfc953c](https://github.com/Vulkin-prog/paper-p1-lean/commit/7bfc953cd6092eebfbae5f24aeb72b7180693537).
-The substantive mathematical inventory contains **19,563 theorems**; the remaining
+seventeen preserved components passed **18,631 build jobs**, **19,995 theorem axiom checks**
+and **19,918 distinct reference checks**, all actual exits zero, at
+[source d342b507](https://github.com/Vulkin-prog/paper-p1-lean/commit/d342b507332315c67b1463009061c03f14b5be9b).
+The substantive mathematical inventory contains **19,567 theorems**; the remaining
 428 are complete component and consolidated Solution wrappers. Each mathematical
 checkpoint and registry replay records its own exact source commit and scope.
 The [evidence checker](scripts/check_registry_evidence.py) validates every

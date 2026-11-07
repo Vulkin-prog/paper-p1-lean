@@ -1,0 +1,15 @@
+{
+  "previous_source_commit": "7bfc953cd6092eebfbae5f24aeb72b7180693537",
+  "new_source_commit": "d342b507332315c67b1463009061c03f14b5be9b",
+  "previous_proof_files": 4739,
+  "unchanged_previous_files": 4737,
+  "extended_roots": [
+    "Audit.lean",
+    "PaperP1.lean"
+  ],
+  "new_modules": [
+    "PaperP1/Asymptotics/SharpGoodEdgePositivePalm.lean"
+  ],
+  "all_previous_substantive_proof_modules_byte_identical": true,
+  "scope": "Only the aggregate import and generated audit extend; all older mathematical proof modules and compiler/dependency/build pins are unchanged."
+}

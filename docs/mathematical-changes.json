@@ -43535,15 +43535,67 @@
       "proposed_revision": "Use the exact finite positive-part domination and the common homogeneous seed estimate to shorten the proof of T3.1. Its printed rates may remain unchanged; retain the regular target domain, source cutoff 2bB<=H<=DB, positive beta and fixed channel parameters before N0.",
       "impact": "Four explicit unconditional bridge/corollary proofs, with a 1/30 improvement over the previous generic 4/3-based normalized exponent. This is an assembly of an already-proved homogeneous bound and source phase, not a newly discovered geometric input, new false-original statement or new registry selection. No optimality or growing-channel-height conclusion.",
       "validation": {
-        "target_build_actual_exit_code": 0,
-        "target_build_jobs": 12201,
-        "complete_project_replay": "pending",
-        "independent_compiled_scope_read": "pending"
+        "checkpoint": "P1-MATH-1005",
+        "source_commit": "d342b507332315c67b1463009061c03f14b5be9b",
+        "status": "passed",
+        "full_build_jobs": 18631,
+        "audited_theorems": 19995,
+        "substantive_theorems": 19567,
+        "preserved_component_solution_theorems": 214,
+        "consolidated_solution_theorems": 214,
+        "distinct_checked_references": 19918,
+        "actual_process_exit_codes": {
+          "build": 0,
+          "audit": 0,
+          "references": 0
+        },
+        "toolchain": "leanprover/lean4:v4.36.0-rc2",
+        "actual_compiler_version": "Lean (version 4.36.0-rc2, x86_64-unknown-linux-gnu, commit b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a, Release)",
+        "compiler_commit": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+        "mathlib_commit": "9d581dfff2e41de989072ea63abf3daf69311520",
+        "permitted_kernel_axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "logs": [
+          {
+            "kind": "build",
+            "path": "docs/validation/checkpoint-1005/build.log.gz",
+            "sha256_gzip": "5907cb9bbf2a54cf140643604158d33ac35402e66744da556a7e5a9b4db40320"
+          },
+          {
+            "kind": "audit",
+            "path": "docs/validation/checkpoint-1005/audit.log.gz",
+            "sha256_gzip": "2d51e6d6296d019d1fa57034996a7e276e0bda659780db92571be365c34db5ff"
+          },
+          {
+            "kind": "references",
+            "path": "docs/validation/checkpoint-1005/references.log.gz",
+            "sha256_gzip": "36d6f0d342d49179ee339c5cc130c1e80dac7513776ec99cc3d9c3792c830fe9"
+          }
+        ],
+        "compiled_scope": {
+          "path": "docs/validation/checkpoint-1005/scope/compiled-types.json",
+          "actual_exit_code": 0,
+          "replay_source_commit": "d342b507332315c67b1463009061c03f14b5be9b"
+        },
+        "independent_scope_read": {
+          "path": "docs/reviews/2026-11-07/sharp-good-edge-palm.json",
+          "sha256": "d3fe302b8343b678b6e1ce037da9b08a105540f4ad34d9b1015e33f0c5faef34"
+        },
+        "scope": "Four explicit positive Palm bridge/corollary proofs. Regular targets, exact positive-excess support, source phases and positive beta under the fixed cutoff are retained. Generic normalized exponent -11/30-1/b, specializing to -7/10 and -37/60; not an optimality or growing-channel claim. All frozen manuscripts and registry selections remain preserved; Palomar is on hold."
       },
       "manuscript_integration": {
         "target_version": "Optional separate editorial review copy",
-        "status": "not_yet_integrated",
+        "status": "proof_simplification_available_not_yet_integrated",
         "reason": "All existing TeX/PDF copies remain frozen; a further common-seed simplification is under independent review."
+      },
+      "validation_source_commit": "d342b507332315c67b1463009061c03f14b5be9b",
+      "validation_record": "docs/validation/checkpoint-1005/validation.json",
+      "independent_scope_read": {
+        "path": "docs/reviews/2026-11-07/sharp-good-edge-palm.json",
+        "sha256": "d3fe302b8343b678b6e1ce037da9b08a105540f4ad34d9b1015e33f0c5faef34"
       }
     }
   ]

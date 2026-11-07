@@ -1,0 +1,14 @@
+{
+  "proof_source_commit": "d342b507332315c67b1463009061c03f14b5be9b",
+  "status": "passed",
+  "historical_ledger_sha256": "67fa9756114c5db95db8d354f68ff68e37c25b2592cfd5a795fb5e6617eb539a",
+  "all_historical_evidence_names_present_in_actual_reference_replay": true,
+  "evidence": {
+    "distinct": 14220,
+    "source_audited_theorems": 12179,
+    "other_objects_or_support_names_not_counted_as_proofs": 2041,
+    "all_names_in_actual_reference_replay": true,
+    "actual_reference_replay_total": 19918
+  },
+  "scope": "Actual reference replay covers every historical evidence name; support objects are not counted as theorem proofs."
+}

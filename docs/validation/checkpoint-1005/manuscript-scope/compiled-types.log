@@ -1,0 +1,629 @@
+'PaperP1.ActualCanonicalComponents.absolute_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.ActualCanonicalComponents.block_connected' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.ActualCanonicalComponents.block_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.ActualCanonicalComponents.block_subset' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.ActualCanonicalComponents.card_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.ActualCanonicalComponents.coefficient_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.ActualCanonicalComponents.image_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.ActualCanonicalComponents.nonconnected_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.ActualCanonicalComponents.nonzero_block_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.ActualCanonicalComponents.singleton_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.ActualCanonicalComponents.union_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.ActualGaussianMeanComparison.uniform_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.Affine.blockDirect_iff_addition_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.Affine.existsUnique_finest_directPartition' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.Affine.missing_full_support_nullity_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.Affine.relationDirect_iff_blockDirect' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.Affine.relativeNullityOn_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.Affine.relativeNullity_canonical_additive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.Affine.relativeNullity_eq_dimension_deficit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.Algebra.orderedBoundary_iff_erase_max' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.Algebra.orderedSuffix_eq_filter_max' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.Algebra.stopped_expansion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.AlignedFamilyTripleMass.article_14_3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.AlignedTargetSourceTheorem.companion_T1_11' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.AlignedTargetSourceTheorem.companion_T2_6' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.AllCardinalityConnected.companion_T16_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.AllCardinalityCoreMass.companion_T16_2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.AllCardinalitySeedBound.cover_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.AllCardinalitySeedBound.superset_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.AllCardinalitySeedBound.superset_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.AllPairDeficit.article_15_9' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.AllPairErasureTheorem.companion_T19_14' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.AllPrimitiveMass.companion_T14_2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.AnchorRelationCertificates.companion_T6_3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.AnchoredPhysicalGroupCount.uniform_count_active' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.AnchoredPhysicalPrimeGroups.dimension_cost' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.AnchoredPhysicalPrimeGroups.throughPool_card_of_noRecovery' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.AnchoredPhysicalPrimeGroups.two_small' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.Arithmetic.vertexParityMap_zero_iff_rational_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.BivariateFactorHeight.companion_T9_4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.CRTSupportCover.cardinal_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.CRTSupportCover.certificate_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.CRTSupportCover.mem_centres_of' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.CRTSupportCover.product_sizes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.CRTSupportCover.short_product_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.CRTSupportCover.sizes_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.CRTSupportCover.sizes_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.CoarseConnectedActivity.companion_T14_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.CoarseDependentFamilyMassUnderBCN.uniform_dependent_mass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.CoarseDependentFamilyMassUnderBCN.uniform_seed_orders' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.CoarseDependentFamilyMassUnderBCN.uniform_seeded_mass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.CommonCurveTheorem.article_13_2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.CompanionKernelCounts.companion_T1_13' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.CompanionKernelCounts.companion_T1_4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.CompanionKernelCounts.companion_T1_5' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.CompanionT21Profiles.companion_T21_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.ComparableSplitProductCount.companion_T5_2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.CompleteFixedMoments.article_6_4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.CompletePairProfile.main_3_3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.ConditionalRankTheorem.companion_T21_2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.ConnectedReductionToTriples.article_15_10' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.ConnectedTail.article_15_12' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.CoordinateForms.companion_T2_2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.CountObservables.count_law_total_variation_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.CountObservables.restrictedCountLaw_realizes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.CriticalDefectPositions.companion_T9_2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.CriticalOrderBranching.companion_T22_4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.CurveDegreeProfile.degree_uniform_bound_without_cap_growth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.DenseAnchoredIndividualWitness.uniform_individual_witness' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.DenseAnchoredKernelWitness.uniform_witness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.DenseCompressedTargetCount.article_15_3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.DenseNonalignedPairs.companion_T8_3_no_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.DenseNonalignedPairs.uniform_kernel_hosts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.DensePrimitiveHosts.uniform_hosts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.DensePrimitiveNominalMass.uniform_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.DensePrimitiveRankMass.uniform_rank_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.DenseTargetCount.main_6_2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.DenseWeightedSector.uniform_kernels' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.DependentBlockPairsCount.article_10_3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.DependentFactorialBound.factorial_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.DependentFactorialBound.nat_power_le_factorial' depends on axioms: [propext, Quot.sound]
+'PaperP1.DependentFactorialBound.ordinary_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.DependentFamilySeeds.dependentMass_le_seeded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.DependentFamilySeeds.dependent_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.DependentFamilySeeds.primitive_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.DependentFamilySeeds.seeded_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.DisjointRecoveryTheorem.disjoint_recovery_sharp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.DisjointRecoveryTheorem.main_6_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.DisjointSquareTheorem.companion_T4_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.EffectiveSupport.companion_T19_5' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.EnlargedAlignedPairTheorem.companion_T1_9' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.EulerPrimeCovers.biUnion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.EulerPrimeCovers.cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.EulerPrimeCovers.local_one_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.EulerPrimeCovers.mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.EulerPrimeCovers.window_one_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.ExactPoissonScale.article_1_2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.ExceptionalSeedBound.constant_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.ExceptionalSeedBound.cover_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.ExceptionalSeedBound.seed_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.ExplicitQuadraticApproximation.article_1_4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.FactorialBranching.factorial_le_power' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.FactorialCountMoments.factorialCountMoment_eq_falling_product' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.FactorialCountMoments.sum_tuple_joint_moments' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.FineSaddleTheorems.companion_T19_15' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.FineSaddleTheorems.companion_T19_16' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.FiniteChannelTripleTheorem.companion_T2_8' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.FiniteCompleteLawTransfer.article_15_13' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.FiniteEulerAverage.average_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.FiniteEulerAverage.exact_average' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.FiniteEulerAverage.localProduct_expand' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.FiniteEulerAverage.product_divides_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.FiniteFactorTopProducts.attained' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.FiniteFactorTopProducts.attained_largest' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.FiniteFactorTopProducts.drop_power' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.FiniteFactorTopProducts.mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.FiniteFactorTopProducts.selected_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.FiniteFactorTopProducts.threshold_drop' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.FiniteFactorTopProducts.zero_of_fewer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.FiniteGoodPartition.companion_T7_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.FiniteProductPowerMean.product_le_average_power' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.FiniteProductPowerMean.sum_product_le_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.FixedArityPhysicalRelationRegularization.uniform_subspace' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.FixedChannelFullPalm.companion_T2_7' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.FixedChannelMassTheorem.companion_T2_5' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.FixedCompressedPrimitiveTheorem.companion_T4_4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.FixedCountMomentBoundsUnderBCN.regular_moment_transfer' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.FixedCountMomentBoundsUnderBCN.uniform_factorial_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.FixedCountMomentBoundsUnderBCN.uniform_factorial_upper' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.FixedCountMomentBoundsUnderBCN.uniform_ordinary_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.FixedCountMomentBoundsUnderBCN.uniformlyBoundedCountMoments' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.FixedHeightHierarchy.article_18_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.FixedHomogeneousSeedTheorem.companion_T1_12' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.FixedPairExtensionDeficit.article_15_7' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.FixedSourcePropagationTheorem.main_6_3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.FourthConnectedCumulant.uniform_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.FourthCumulantIdentities.article_16_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.FreeComponentRank.companion_T9_3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.FreePlaneCRT.card_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.FreePlaneCRT.card_real_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.FreePlaneCRT.projection_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.FullSupportWeightedCount.companion_T22_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.GeneralBranchingTheorem.companion_T1_15' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.GoodEdgeCompression.main_3_5' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.GoodEdgePositivePalm.companion_T3_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.GraphStarPartition.exists_partition' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.GraphStarWeights.heterogeneous_generating_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.GrowingConnected.companion_T16_3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.IndependentExposureEulerBudget.first_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.IndependentExposureEulerBudget.new_euler_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.IndependentExposureEulerBudget.pool_covered' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.IndependentExposureEulerBudget.pool_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.IndependentExposureEulerBudget.weighted_bad_row' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.IndependentExposureEulerBudget.weighted_first_moment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.IndependentExposureEulerBudget.window_one_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.IndependentExposurePrimePool.base_prime' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.IndependentExposurePrimePool.logarithmic_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.IndependentExposurePrimePool.uniform_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.IndependentExtensionDeficit.deficit_eq_product_weights' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.IndependentExtensionDeficit.direct_iff_nullity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.IndependentExtensionDeficit.exists_exceptional_seed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.IndependentExtensionDeficit.mem_families' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.IndependentPositionalApproximation.main_20_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.IndependentPositionalApproximation.main_20_1_canonical' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.IndependentTailTheorem.article_15_8' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.IntegerGridTheorem.article_13_3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.IntegerProductTail.companion_T20_2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.IntegralAffineCurvePointCount.article_13_4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.IntersectionExceptional.effective_le_raw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.IntersectionExceptional.of_intersection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.IntersectionExceptional.oldSpan_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.IntersectionExceptional.span_le_raw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.InverseSqrtTail.interval_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.InverseSqrtTail.step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.InverseSqrtTail.tail_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.KnownAlignmentRank.main_13_7' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.LabeledPopulationCount.cardinal_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.LabeledPopulationCount.cardinal_le_on' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.LargeBoundaryTail.companion_T12_2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.LargeSelectedKernelTheorem.companion_T1_6' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.LargeSmoothExceptionalSet.companion_T6_2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.LocalBlocksTheorem.companion_T19_2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.LocalRigidityConsequences.critical_band_marginals' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.LocalRigidityRegimes.critical_relation_rank_le_one_of_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.LocalRigidityRegimes.relation_rank_lt_of_length_asymptotic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.LocalSquareThreshold.companion_T9_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.LogBudgetEuler.euler_one_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.LogBudgetEuler.euler_union' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.LogBudgetEuler.finite_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.ManyPlanarSquareProducts.companion_T20_6' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.MarkedGraphGenerator.main_7_4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.MarkedGraphGenerator.polynomial_star_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.MarkedGraphGenerator.rational_star_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.MeasureSignedPalm.companion_T19_12' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.MissingBlockProbabilities.infinite_joint_missing_block_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.MissingBlockProbabilities.regular_joint_missing_block_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.MissingBlockTupleSum.companion_T22_2_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.MissingBlockTupleSum.sum_missing_block_tuples_heterogeneous' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.Model.InfiniteStarts.canonical_run_components' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.Model.InfiniteStarts.canonical_run_components_finset' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.Model.InfiniteStarts.compatible_nullity_majorant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.Model.InfiniteStarts.dyadic_squareClass_fourier' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.Model.InfiniteStarts.infiniteCenteredCoefficient_eq_family_subtype' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.Model.InfiniteStarts.infiniteCenteredCoefficient_eq_transform' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.Model.InfiniteStarts.infiniteCenteredCoefficient_subtype' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.Model.InfiniteStarts.infiniteFamilyCenteredMoment_partition' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.Model.InfiniteStarts.infiniteFamilyJointMoment_partition' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.Model.InfiniteStarts.infiniteJointMoment_eq_family_subtype' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.Model.InfiniteStarts.infiniteJointMoment_exact_of_pos' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.Model.InfiniteStarts.infinite_centered_compatible_nullity_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.Model.InfiniteStarts.runCompatibleNullity_attained' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.Model.InfiniteStarts.runCompatibleNullity_eq_maximum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.Model.InfiniteStarts.runCompatibleNullity_eq_of_positive_joint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.Model.InfiniteStarts.runCompatibleNullity_le_relative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.Model.InfiniteStarts.squareClass_centered_moment_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.Model.InfiniteStarts.squareClass_centered_moment_coarse_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.Model.InfiniteStarts.squareClass_full_relation_of_ne_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.Model.InfiniteStarts.squareClass_full_support_formula' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.ModerateCertificateAsymptotic.main_7_2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.ModifiedCountAllTails.companion_T19_3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.ModifiedMomentDecomposition.companion_T22_6' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.MomentObstruction.companion_T23_1_extended' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.MultiAnchorBudgets.article_15_11' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.NearLinearThreshold.threshold_ge_power' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.NearPrimitiveTripleMass.main_12_1_full' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.NonalignedRankTheorem.article_13_6' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.NonalignedSourceResidual.article_3_2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.NonalignedSourceResidual.uniform_source_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.NonalignedSourceResidual.uniform_weighted_hosts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.OffsetLineTheorem.companion_T20_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.OffsetPatternRankin.companion_T21_3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.OffsetPlaneNormalBudget.companion_T20_4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.OffsetPlaneTheorem.companion_T20_3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.OffsetRootPolynomials.companion_T20_5' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.OptimalHermite.article_19_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.OptimalNominalQuadratic.article_17_3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.OptimalQuadratic.article_16_2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.OptimalQuadratic.article_1_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.OptimalThirdCumulant.article_14_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.OptimalTripleReconstruction.article_15_14' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.OptimalZeroProbability.article_17_2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.OrderDependentMomentBound.uniform_source_growth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.OriginalCompressedActivity.companion_T15_1_original' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.OriginalPairHosts.uniform_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.OriginalWindowFamilyMass.article_10_2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.PlaneConfinementMass.actual_plane_confinement' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.PlaneConfinementMass.excessive_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.PlaneConfinementMass.labeled_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.PlaneConfinementMass.mass_exponent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.PlaneConfinementNegligibility.exponent_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.PlaneConfinementNegligibility.sufficient_cutoff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.PlaneRankinCritical.uniform_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.PlaneSupportCover.centres_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.PlaneSupportCover.certificate_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.PlaneSupportCover.fibre_real_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.PlaneSupportCover.mem_centres_of' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.PlaneSupportCover.mem_certificates_of' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.PlaneSupportCover.mem_fibre' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.PlaneSupportCover.plane_centres_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.PlaneSupportCover.restrict_centres' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.PlaneSupportCover.restrict_certificates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.PlaneSupportCover.short_product_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.PlaneTernaryConfinement.first_term_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.PlaneTernaryConfinement.uniform_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.PoissonSecondDifferenceNorm.coefficient_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.PoissonSecondDifferenceNorm.main_19_2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.PolylogConfinementScales.choose_parameters' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.PolylogConfinementScales.logarithmic_count_sublinear' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.PolylogConfinementTheorem.companion_T21_4_three_dimensional' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.PolylogConfinementTheorem.positive_union_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.PolylogConfinementTheorem.three_dimensional_sufficient_cutoff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.PolylogConfinementTheorem.threshold_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.PolynomialConfinement.companion_T8_1_power' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.PolynomialWeightedQuadratic.article_17_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.PositionalArrivalCovariance.covariance_coordinates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.PositionalArrivalCovariance.memLp_coordinate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.PositionalArrivalIndependence.independent_count_coordinates_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.PositionalArrivalMarginals.coordinate_factorial_moment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.PositionalArrivalMarginals.hasLaw_coordinate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.PositionalBivariateLaw.field_covariance_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.PositionalBivariateLaw.field_joint_law' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.PositionalBivariateMass.probability_of_hasLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.PositionalBivariateMass.real_singleton' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.PositionalBlockIndependence.independent_blocks_iff_cross_covariance_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.PositionalBlockIndependence.independent_pair_block_events' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.PositionalBlockIndependence.independent_pair_blocks_iff_no_positive_crossing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.PositionalErasureTheorem.companion_T19_10' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.PositionalGridApproximation.main_20_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.PositionalPoissonRealization.hasLaw_canonical_single_pair_field' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.PositiveBoundaryMass.companion_T17_3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.PrimeBudgetRankin.companion_T22_3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.PrimeCylinderDivergence.companion_T19_7' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.PrimitiveConfinementWeights.uniform_weights' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.PrimitiveNominalMass.primitive_mass_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.PrimitiveOrderedBound.companion_T4_3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.PrimitiveTripleMass.companion_T8_2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.PrimitiveTripleWeights.homogeneous_pair_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.PrimitiveTripleWeights.homogeneous_triple_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.PrimitiveTripleWeights.primitive_pair_good' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.PrimitiveTrueWindowRelations.pair_disjoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.PrimitiveTrueWindowRelations.projection_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.PrincipalEdgeRemainder.uniform_edge_input' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.PrivateRankPeelingTheorem.companion_T19_8' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.Probability.centered_bernoulli_expansion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.Probability.eraseTuple_encoding_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.Probability.indicatorCount_subtype' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.Probability.measureBoundaryKernel_coeff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.Probability.measureJointMoment_eq_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.Probability.measureRetainedReference_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.Probability.observedCountLaw_realizes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.Probability.observedCountLaw_restrict_admissible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.Probability.positive_stopped_remainder' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.Probability.sum_erased_tuple_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.ProductConfinement.card_le_log' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.ProductConfinement.confinement_or_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.ProductConfinement.large_factor_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.ProductConfinement.stopping_subset' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.QuadraticComponent.companion_T19_9' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.QuadraticGrowingDegreePlaneCount.article_13_5' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.QuadraticOrderBranching.quadratic_order_branching' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.QuadraticOrderMoments.factorial_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.QuadraticPoisson.main_8_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.QuadraticRateOne.companion_T17_5' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.QuadraticTailScale.probability_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.QuarticLogPrimePool.actual_pool_count_critical' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.RankChargedPrimeCylinder.positive_exponential_card_lower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.RankChargedPrimeCylinder.retained_forcing_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.RankChargedPrimeCylinder.retained_rank_example' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.RankChargedPrimeCylinder.total_exponential_card_lower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.RankinCertificateCritical.uniform_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.RankinCertificateCritical.weightedCount_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.RankinSmallKernel.main_7_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.RationalTripleIntegers.article_14_2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.RegularCumulantTransfer.regular_second_factorial_cumulant_transfer_along' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.RegularCumulantTransfer.regular_second_factorial_cumulant_transfer_on' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.RegularMomentTransfer.regular_moment_transfer_along' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.RegularMomentTransfer.regular_moment_transfer_on' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.RegularQuadraticReferenceRestoration.mean_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.RegularQuadraticReferenceRestoration.parameter_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.RegularQuadraticReferenceRestoration.uniform_mean_gap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.RegularQuadraticReferenceRestoration.uniform_reference_errors' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.RegularQuadraticReferenceRestoration.uniform_subpower_cumulant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.RegularReplicaFormula.companion_T22_7' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.RegularSecondCumulantRestoration.covariance_difference' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.RegularSecondCumulantRestoration.finite_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.RegularSecondCumulantRestoration.pair_difference' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.RegularSecondCumulantRestoration.uniform_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.RegularSetAsymptotic.affine_marginal_sum_critical' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.RegularSetAsymptotic.irregular_count_critical' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.RegularSetAsymptotic.regular_set_transfer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.RegularSetFinite.regular_set_finite_transfer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.RegularStarts.marginal_on_regular' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.RelativeSignIndependence.subcritical_window_relative_signs_independent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.RetainedClassTheorem.companion_T12_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.RetainedExceptionalEvent.companion_T15_2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.RetainedIndependentDeficitRates.companion_T17_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.RetainedReferenceCardinalityTheorem.companion_T17_2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.RevisedCompanionStatements.companion_T1_10' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.RevisedCompanionStatements.companion_T5_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.RoughEulerMoments.increment_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.RoughEulerMoments.increment_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.RoughEulerMoments.increment_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.RoughEulerMoments.moment_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.RunConversion.main_15_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.RunCountLattice.companion_T19_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.RunFamilyEnumeration.canonical_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.RunFamilyEnumeration.canonical_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.RunFamilyEnumeration.canonical_joint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.RunFamilyEnumeration.canonical_values' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.RunFamilyEnumeration.familyJoint_eq_values' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.RunFamilyEnumeration.prescribed_canonical_joint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.RunFamilyEnumeration.seeded_tuple_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.RunFamilyEnumeration.sum_tuples_joint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.RunFamilyEnumeration.tuples_coordinates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.SaturationDegrees.main_7_3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.ScalarRecurrenceTheorem.companion_T19_11' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.SeveralWindowProjectionCount.companion_T1_14' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.SharpPairTargetDeficit.article_11_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.SharpPrimitiveMass.article_15_5' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.SharpPrimitiveMass.uniform_actual_activity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.SharpPrimitiveMass.uniform_rank_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.SharpPrimitiveNominalMass.uniform_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.SharpRetainedConversion.companion_T17_4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.SharpThirdActivity.article_14_6' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.SharpThirdCancellation.article_11_2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.SharpThirdCancellation.uniform_cancellation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.SharpThirdCumulantLower.article_14_5' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.ShortBasisTheorem.article_13_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.ShortOldSpaceProjection.article_9_2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.ShortSplitMoments.article_9_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.SinglePairCriticalTheorem.companion_T22_5' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.SixVertexBudget.companion_T20_8' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.SmallKernelWindows.article_15_4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.SmallKernelWindows.critical_two_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.SmallPrimeBudget.companion_T2_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.SmoothLogarithmicWindowDensity.uniform_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.SplitProductBound.uniform_split_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.SplitProductBound.uniform_split_product_real_radius' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.StrongAlignedSharpMass.article_14_4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.StrongNonalignedTripleProfile.main_12_2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.SupportedPrimeCylinder.exact_prime_charges_on_original_scale' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.SupportedPrimeCylinder.positive_exponential_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.SupportedPrimeCylinder.total_exponential_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.TernaryConfinementMass.actual_group_confinement' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.TernaryConfinementMass.group_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.TernaryConfinementMass.labeled_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.TernaryConfinementMass.mass_exponent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.TernaryConstraints.companion_T2_3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.TernaryGroupConfinement.uniform_group_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.TernaryGroupNegligibility.exponent_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.TernaryGroupNegligibility.sufficient_cutoff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.TernaryIndividualPrimes.covered_product_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.TernaryIndividualPrimes.mem_pool' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.TernaryIndividualPrimes.prime_of_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.TernaryIndividualPrimes.small_support_product_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.TernaryIndividualPrimes.supporting_active' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.TernaryIndividualPrimes.three_primes_le_top_groups' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.TernaryPrimeBudget.three_prime_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.TernaryPrimeBudget.three_prime_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.TernaryPrimeBudget.uniform_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.TernaryPrimeConfinement.uniform_prime_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.TernaryPrimeConfinementMass.actual_prime_confinement' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.TernaryPrimeConfinementMass.labeled_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.TernaryPrimeConfinementMass.mass_exponent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.TernaryPrimeConfinementMass.prime_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.TernaryPrimeCounts.weak_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.TernaryPrimeNegligibility.exponent_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.TernaryPrimeNegligibility.sufficient_cutoff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.TernaryPrimeTheorem.labeled_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.TernaryPrimeTheorem.population_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.TernaryPrimeTopProducts.cutoff_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.TernaryPrimeTopProducts.large_three_le_groups' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.TernaryPrimeTopProducts.top_product_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.TernaryPrimeTopProducts.top_product_le_height' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.TernaryPrimeValueConfinement.certificate_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.TernaryPrimeValueConfinement.confinement_or_certificate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.TernaryPrimeWeakCritical.uniform_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.TernaryUnboundedCutoff.companion_T1_16' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.TernaryValueConfinement.certificate_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.TernaryValueConfinement.confinement_or_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.TernaryValueConfinement.coprime_values' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.TernaryValueConfinement.large_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.TernaryValueConfinement.large_image' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.TernaryValueConfinement.mem_values' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.TernaryValueConfinement.selected_values_le_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.TripleCoverRank.companion_T20_7' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.TripleRankTheorem.article_13_8' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.TwoChannelReference.uniform_equivalents' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.TwoGoodEdgeSecondMoment.companion_T1_17_original' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.TwoSmallKernelCount.companion_T6_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.TwoWitnessTheorem.companion_T9_5' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.UnconditionalDenseTwoTargetMass.article_15_2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.UnconditionalOrdinarySourceCensus.ordinary_census' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.UnconditionalPrintedAnchorObstruction.companion_T19_17' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.UniformDefectCounts.companion_T1_3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.UniformFixedSourceCertificates.companion_T4_2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.UniformGeometricCounts.companion_T1_7' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.UniformIndependentDeficit.finite_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.UniformIndependentDeficit.uniform_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.UniformIndependentExposureBudget.uniform_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.UniformIndependentExposureBudget.uniform_row_constant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.UniformLocalRigidity.finite_griesmer_eventually' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.UniformQuadraticCount.mem_positiveQuadraticSolutions_real_height' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.UniformQuadraticCount.uniform_quadratic_equation_count' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.UnorderedSeedMassPropagation.uniform_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.UnrestrictedRunComponents.canonical_run_components' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.UnrestrictedRunComponents.centered_partition' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.UnrestrictedRunComponents.joint_partition' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.UnrestrictedRunComponents.nullity_partition' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.ValuationDensityBounds.effective_count_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.ValuationDensityBounds.retained_start_density' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.ValuationDensityBounds.uniform_density_approximation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.ValuationLayerCounts.finite_geometric_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.ValuationLayerCounts.positive_exponential_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.ValuationLayerCounts.total_exponential_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.ValuationPrimeCylinder.positive_start_iff_even_factorization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.ValueHeightHalfCount.article_10_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.VerySmallTail.companion_T19_6' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.VerySmallTail.power_threshold' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.WeightedNonalignedPairs.article_18_2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.WeightedPoissonNorm.companion_T19_13' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.WindowEulerAverage.first_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.WindowEulerAverage.local_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.WindowEulerAverage.window_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.WindowRelationCode.window_relation_griesmer_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.FixedArityHomogeneousMass.point_le_nominal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.FixedArityHomogeneousMass.mass_le_nominal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.FixedArityHomogeneousMass.uniform_nominal_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.FixedArityHomogeneousMass.finite_original_domination' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.FixedArityHomogeneousMass.uniform_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.FixedArityHomogeneousMass.uniform_dense_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.FixedArityHomogeneousMass.uniform_all_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.SharpGoodEdgePositivePalm.finite_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.SharpGoodEdgePositivePalm.uniform_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.SharpGoodEdgePositivePalm.uniform_normalized' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.SharpGoodEdgePositivePalm.companion_T3_1_sharp' depends on axioms: [propext, Classical.choice, Quot.sound]
+Exported compiled scope types for 539 declarations

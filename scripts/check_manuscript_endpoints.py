@@ -49,6 +49,26 @@ def source_locations():
     return result
 
 
+def sharp_palm_rows(review, types, locations, audit):
+    expected = {"PaperP1.SharpGoodEdgePositivePalm." + name for name in
+                ["finite_mass", "uniform_mass", "uniform_normalized", "companion_T3_1_sharp"]}
+    rows = review["results"]
+    if (len(rows) != 4 or {r["declaration"] for r in rows} != expected or set(types) != expected
+            or review["summary"]["mathematical_gaps_confirmed"] != 0
+            or review["summary"]["necessary_corrections"] != 0):
+        raise ValueError("The sharp Palm review does not cover its four interfaces")
+    for row in rows:
+        name = row["declaration"]
+        info, location = types[name], locations.get(name, {})
+        if (row["compiled_type"] != info["type"] or row["is_proposition"] is not True
+                or info["kind"] != "theorem" or info["is_proposition"] is not True
+                or name not in audit or row["verdict"] != "conforme_corps_type_objets_et_quantificateurs"
+                or row["necessary_corrections"] or row["file"] != location.get("source")
+                or row["line"] != location.get("line")
+                or review["source_sha256"] != location.get("source_sha256")):
+            raise ValueError(f"A sharp Palm type/source/role binding changed: {name}")
+
+
 def verify(index, *, compiled=None, locations=None):
     actual = statements()
     ledger_path = ROOT / "docs/manuscript-results-v1.8.json"
@@ -202,6 +222,41 @@ def verify(index, *, compiled=None, locations=None):
                     or reviewed["line"] != location.get("line")
                     or envelope["source_sha256"] != location.get("source_sha256")):
                 raise ValueError(f"A fixed-arity theorem type/source binding changed: {name}")
+    if any(change["id"] == "P1-MATH-1005" for change in changes):
+        palm_record = index["supplemental_sharp_palm_review"]
+        palm_path = local_file(palm_record["path"])
+        if sha(palm_path) != palm_record["sha256"]:
+            raise ValueError("The frozen sharp Palm review changed")
+        palm = json.loads(palm_path.read_text())
+        # Frozen reviews retain original absolute work paths as historical
+        # input locators. Resolve the identical packaged bytes via validation.
+        palm_validation = json.loads(local_file("docs/validation/checkpoint-1005/validation.json").read_text())
+        palm_types_path = local_file(palm_validation["compiled_scope"]["path"])
+        palm_scope = json.loads((palm_types_path.parent / "compiled-types-validation.json").read_text())
+        palm_types = {r["name"]: r for r in json.loads(palm_types_path.read_text())}
+        if (palm["status"] != "complete_frozen" or palm_record != palm_validation["independent_scope_read"]
+                or palm["source_commit"] != palm_validation["source_commit"]
+                or palm_validation["status"] != "passed"
+                or palm_validation["actual_process_exit_codes"] != {"build": 0, "audit": 0, "references": 0}
+                or palm["compiled_scope"]["sha256"] != sha(palm_types_path)
+                or palm["compiled_validation"]["sha256"] != sha(palm_types_path.parent / "compiled-types-validation.json")
+                or palm_scope["compiled_types_sha256"] != sha(palm_types_path)
+                or palm_scope["actual_exit_code"] != 0 or palm_scope["compiled_types"] != 4
+                or palm_scope["propositions_audited"] != 4 or not palm_scope["all_propositions_standard_axioms_only"]
+                or (palm_types_path.parent / "compiled-types.exit").read_text().strip() != "0"
+                or palm_scope["log_sha256"] != sha(palm_types_path.parent / "compiled-types.log")
+                or palm_scope["inventory_sha256"] != sha(palm_types_path.parent.parent / "scope-declarations.json")):
+            raise ValueError("The sharp Palm review does not match its actual compiled extraction")
+        if palm["source_commit"] != index["proof_source_commit"]:
+            record = index["supplemental_sharp_palm_replay"]
+            replay_path = local_file(record["path"])
+            current_palm = json.loads(replay_path.read_text())
+            if (sha(replay_path) != record["sha256"] or current_palm["source_commit"] != index["proof_source_commit"]
+                    or current_palm["actual_exit_code"] != 0 or not current_palm["all_prior_compiled_type_bytes_identical"]
+                    or current_palm["compiled_types_replayed"] != 4 or current_palm["compiled_propositions_reaudited"] != 4
+                    or current_palm["replay_validation"]["compiled_types_sha256"] != sha(palm_types_path)):
+                raise ValueError("The sharp Palm interfaces need a replay at the current proof source")
+        sharp_palm_rows(palm, palm_types, locations, audit)
     for record in index["review_records"]:
         if sha(local_file(record["path"])) != record["sha256"]:
             raise ValueError(f"Frozen review record changed: {record['path']}")

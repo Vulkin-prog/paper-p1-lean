@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "prior_simplification_previews": 3,
+  "strengthened_previews": 1,
+  "numbered_results": 167,
+  "changed_numbered_statements": [
+    "p13:rig:local-square",
+    "p1:arith:fixed-support",
+    "p1:fixed:compressed"
+  ],
+  "labels": 548,
+  "current_targeted_types": 15,
+  "current_targeted_propositions": 15,
+  "pages": 165,
+  "historical_full_proof_source": "7bfc953cd6092eebfbae5f24aeb72b7180693537",
+  "new_full_replay_claimed": false,
+  "palomar_status": "on_hold_at_user_request",
+  "scope": "Exact reviewed source/type/evidence integrity; semantic review remains separate."
+}

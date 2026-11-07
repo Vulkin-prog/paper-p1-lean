@@ -23,13 +23,17 @@ son propre reçu, sa revue du diff et son contrôle automatique. Aucune de ces
 passes ne constitue une nouvelle version adoptée ni un nouvel énoncé original
 déclaré faux. Les deux corrections nécessaires restent celles rappelées ci-dessous.
 
+Le [nouveau raccord Palm](SHARP_GOOD_EDGE_PALM.md) possède quatre preuves
+relues et un replay complet au checkpoint 1005. Ses propositions de coupes
+supplémentaires restent distinctes et ne sont pas encore intégrées à cet aperçu.
+
 Cette note conserve la justification des propositions initiales, en complément
 de la [relecture initiale](reviews/2026-11-07/RAPPORT_FR.txt) et de la
 [révision 1.8](MANUSCRIPT_REVISION_V1_8.md). Les formulations anglaises ci-dessous
 sont des propositions historiques désormais intégrées aux aperçus séparés,
 à adopter ou adapter par l’auteur dans une future version. Les sources et PDF
 v1.8 restent préservés. La dernière source de preuve entièrement rejouée est
-`7bfc953cd6092eebfbae5f24aeb72b7180693537`, sous Lean 4.36.0-rc2.
+`d342b507332315c67b1463009061c03f14b5be9b`, sous Lean 4.36.0-rc2.
 
 Les deux corrections nécessaires de la version originale restent T1.10
 (rayon d'alignement) et T5.1 (plafond trivial de l'exposant). Elles sont déjà

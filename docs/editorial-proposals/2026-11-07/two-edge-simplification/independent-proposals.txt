@@ -1,0 +1,41 @@
+SIMPLIFICATIONS SUPPLÉMENTAIRES — PROPOSITION FIGÉE
+Base documentaire : 3427655c21367297e4798db0bbe4ea6434e84458
+Paquet : manuscripts/paper-p1/editorial-strengthened-preview-2026-11-07/sources
+Support Palm nouveau : d342b507332315c67b1463009061c03f14b5be9b
+
+Avis : préparer une coupe COUPLÉE deT1.12 etT1.17, puis raccourcirT4.4 àune cible etT3.1. ConserverT1.11 et la géométrie nonalignée. Aucune erreur du texte existant n’est confirmée ; le futur diff reste àrelire.
+
+1. ARGUMENT COMMUN POSITIF (FS01)
+DansT1.12, conserver la première clause et prouver explicitement la masse des couples ORDONNÉS de bonnes paires brutes interactives, àunion séparée : I_N=ΣW(e∪f),W_e∩W_f≠{0}. Son taux est41/30.
+Sommet partagé : triple connexe et variante homogène14.3, multiplicité bornée. Paires disjointes nonalignées : garder VERBATIM les27 lignes1018–1044, puis transformer le majorant d’excès en majorant de masse par2^δ≤2(2^δ−1)≤2(2^δ*−1).
+Paires disjointes àcentres comprimés alignés : NB^O(1) quadruples après motifs/codes, pasN². Si un endpointz aS_z∩W_e≠0, le triplee∪{z} est connexe ; son mate aO(B) choix dans le graphe brut, etW(e∪f)≤W(e∪{z}). SinonW(e∪f)≤W(e)p≤N^(−κ_b−1+o1), d’oùN^(−κ_b+o1).
+La dernière branche couvre un croisement ENTRE LES SOMMES de paires même lorsque les deux croisements singleton sont nuls. Ne pas supposer une connexité triple dans ce cas.
+T1.12(2) peut exposer41/30 pour les deux canaux. Le second homogène est≤(ΣA_rawW(e))²+I_N ; une marge fixe<1/30 absorbeI_N dansL²N^(−4/3). La clause(3) peut donc devenirO_C((LN^(−2/3))²), déjà formellement prouvée avec constante fixe.
+La variante conservatrice laisse les anciens énoncés et expose les bornes fortes seulement dans leur preuve.
+
+2. RETIRER LA CLASSIFICATION RÉPÉTÉE DET1.17
+Le blocarith_appendix1251–1327 peut passer de77 à25 lignes dans le texte fourni. La classificationc=9,12,8/3,12/5 et la borne13L/20 n’ont plus besoin d’être refaites.
+Sur les paires COMPATIBLES, q_e=W(e). Les espaces directs factorisent les vrais joints affines. Pour les interactifs séparés, le joint est0 ouW(e∪f) etq_eq_f≤W(e∪f), donc la covariance absolue est≤ce poids homogène.
+Diagonales et contacts stricts : NB^O(1) baselines, chacun de poidsN^(−10/3+o1), soitN^(−7/3+o1). Les contacts stricts ont joint original nul ; ceux exactementL restent dans le secteur séparé.
+La masse interactive commune donne|E(Ξ)_2−β²|≤N^(−41/30+ε). Prendreε<1/30 etβ≈_C LN^(−2/3), puis conserverBonferroni. Une simple borne supérieure homogène ne remplace pas ce raccord affine.
+
+3. T4.4 ÀUNE CIBLE (FS02)
+Après avoir prouvéT1.12(2) directement par14.3 homogène, T4.4 peut renvoyer àcette clause. Ne pas faire simultanément citerT4.4 parT1.12 : la direction voulue est14.3→T1.12→T4.4. Le guide doit suivre.
+La preuveT4.4 àplusieurs cibles reste entière. Les bonnes paires, la régularitéG_N, la séparation et le crossing positif ne changent pas.
+
+4. T3.1 (FS03)
+La nouvelle preuve de13 lignes conserve les anciens énoncés. Le positif Palm pondéré vaut(q(e∪{z})−q_ep)_+. Sur son support positif, séparation et crossing sont démontrés ; le terme est dominé parW(e∪{z}). Appliquer la masse commune puis diviser par la vraieβ compatible avec sa phase inférieure.
+Le nouveau moduleSharpGoodEdgePositivePalm ferme exactement ce pont. Son rapport de preuve séparé est figé, quatre corps/types concordants, aucune lacune. Les exposants plus forts7/10 et37/60 n’ont pas besoin d’être ajoutés aux énoncés du papier.
+
+5. GARDER T1.11 (FS04) ET LES DOMAINES DISTINCTS (FS05)
+T1.11 est un résultat POINT PAR POINT, hors un ensemble précis d’endpoints, avec exposition des primes dea,b. La masse41/30 ne le remplace pas. T2.6 et les arguments de positions réutilisent encore sa géométrie. Une table commune économiserait trop peu et ferait perdre en lecture.
+Une famille contenant une bonne paire est connexe dans le cas de crossing, mais elle n’est pas primitive comme famille originale : sa sous-paire est déjà dépendante. Ne pas appliquer la masse primitiveN^(−3/2) àces triples, ni l’enveloppe originale àun bloc comprimé.
+La présentation commune doit donc rester limitée aux deux masses positives, sans fabriquer un théorème universel sur toutes les petites arités. Les ordres croissants et les branches de positionsT14–T17 restent hors de ces coupes.
+
+6. BILAN DE LIGNES ET ÉVIDENCE
+T1.12 :64→79 lignes (+15) pour loger la preuve commune complète ; T1.17 :77→25 (−52) ; fin deT4.4 :7→3 (−4). Total :41 lignes de PREUVE retirées.
+T3.1 :25→13 (−12), soit53 lignes de preuve retirées avec cette coupe jointe. Les délimiteurs et lignes vides sont comptés. Les ajustements d’énoncés/guide ne sont pas encore dans ce bilan ; aucune estimation de pages.
+LeJSON contient les quatre propositionsTeX anglaises concrètes, les conditions et les localisateurs. Les19 types éditoriaux ont été lus, dont la vraie masse interactive, la factorisation finie, l’erreur affine et les ponts Palm. Leur extraction est celle du parent.
+La fermeture conservativeTwoGoodEdgeSecondMoment a été recalculée et les1712 empreintes comparées :1711 ancêtres, aucun cycle repéré dans les routes proposées. Les corps positifs ne supposent aucune borne finale.
+
+Lecture seule : aucun Lean/Lake,PDF,Palomar ni délégation ; aucune mutation du dépôt ou des anciens rapports. Rapport de proposition, pas approbation d’un futur diff.
