@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "proposals": [
+    {
+      "id": "FS01",
+      "status": "applied",
+      "results": [
+        "T1.12",
+        "T1.17"
+      ],
+      "change": "A single positive homogeneous interaction estimate replaces the repeated second-moment classification. T1.12(2) is strengthened to41/30 in both raw geometric channels and(3) to a fixed pure scale-squared bound. Nonaligned geometry retained verbatim; aligned zero-singleton-crossing case explicit."
+    },
+    {
+      "id": "FS02",
+      "status": "applied",
+      "results": [
+        "T4.4 one target"
+      ],
+      "change": "One-target proof cites T1.12(2); multi-target proof unchanged. Direction14.3->T1.12->T4.4 stays acyclic."
+    },
+    {
+      "id": "FS03",
+      "status": "applied",
+      "results": [
+        "T3.1"
+      ],
+      "change": "Positive-part identity, support inclusion and homogeneous seed replace duplicated channel estimates. Beta positivity established before division. Printed weaker estimates retained."
+    },
+    {
+      "id": "FS04",
+      "status": "retained_required_lemma",
+      "results": [
+        "T1.11"
+      ],
+      "change": "Pointwise aligned estimate and proof retained byte-identically; total mass cannot replace the pointwise input used elsewhere."
+    },
+    {
+      "id": "FS05",
+      "status": "retained_scope_guard",
+      "results": [],
+      "change": "Keep both counterexamples, margin table, positions and fixed/growing-order distinctions. No additional cut asserted."
+    }
+  ],
+  "new_ledger_entries": 0,
+  "new_lean_theorems": 0
+}

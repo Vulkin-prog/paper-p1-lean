@@ -50,6 +50,8 @@ jobs:
           python3 -m unittest discover -s tests -p test_editorial_previews.py
           python3 scripts/check_scientific_preview.py
           python3 -m unittest discover -s tests -p test_scientific_preview.py
+          python3 scripts/check_unified_preview.py
+          python3 -m unittest discover -s tests -p test_unified_preview.py
           python3 scripts/update_audit.py --check
           python3 scripts/check_registry_candidates.py
           python3 scripts/check_registry_consolidation.py

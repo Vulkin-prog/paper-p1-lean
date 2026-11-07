@@ -1,5 +1,30 @@
 # External mathematical inputs
 
+A fifth separate review copy applies FS01-FS03: one positive homogeneous
+interaction mass now supports the shorter T1.17, T3.1 and one-target T4.4
+proofs. T1.12(2) states 41/30 in both raw good channels, and (3) the pure
+fixed-constant squared-scale bound. Affine incompatibility, zero singleton
+crossings and positivity of beta before division remain explicit; all 27
+nonaligned proof lines and the pointwise T1.11 are retained byte-identically.
+The exact independent diff review found no necessary correction. Twenty-one
+existing proposition types were actually extracted and axiom-audited at
+the checkpoint 1005 proof source, actual exit 0. This is reuse, not a new
+Lean theorem, historical ledger entry or complete proof replay.
+All 167 result identities/numbers and 548 labels remain; only T1.12 changes
+as a numbered block from the strengthened stage, and 160 blocks remain
+identical to frozen v1.8. Six successful LaTeX executions give 64/101 pages,
+with all 165 pages and 23 full detail pages visually inspected. This pass
+saves 51 physical source lines and 50 proof lines, with no extra page gain.
+The measured cumulative delivered-source saving is 296 lines after the
+initial five clarifications: the historical 277 scientific-line subtotal
+excluded four added preview-footer lines. Scientific explanations added 28
+lines, and the present pass removes 51. The separate line-accounting record
+keeps these metrics distinct instead of rewriting frozen prior receipts.
+See editorial-proposals/2026-11-07/common-seed-simplification/README.md.
+All earlier manuscripts/previews and frozen reports are preserved.
+The 1005-entry mathematical ledger and six registry scopes are unchanged;
+Palomar stays on hold.
+
 Current checkpoint P1-MATH-1005: Four explicit positive Palm interfaces
 compose the actual positive-excess support inclusion with the existing
 homogeneous effective 41/30 mass. On regular targets, each fixed interior

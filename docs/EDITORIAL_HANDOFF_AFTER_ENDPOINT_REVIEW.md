@@ -1,31 +1,41 @@
 # Reprise éditoriale après vérification des interfaces
 
-La copie de relecture la plus récente est l’[aperçu renforcé de 165 pages](editorial-proposals/2026-11-07/scientific-strengthening/README.md)
-(article : 64 ; compagnon : 101). Elle conserve les cinq précisions initiales
-et les treize simplifications, puis intègre des bornes déjà prouvées plus fortes
-dans T9.1, T1.14 et T4.4. La clause à une cible reçoit son raccord homogène
-positif explicite, et une remarque précise le témoin logarithmique 17 de 13.4,
-hors du théorème attribué. Les [cinq dispositions scientifiques](editorial-proposals/2026-11-07/scientific-strengthening/amendments.json)
-renvoient au journal existant et à 15 types réellement compilés, relus séparément.
+La copie de relecture la plus récente est l’[aperçu unifié](editorial-proposals/2026-11-07/common-seed-simplification/README.md),
+de 64 pages pour l’article et 101 pour le compagnon. Elle conserve les cinq
+précisions initiales, les treize simplifications et les cinq dispositions
+scientifiques de l’[aperçu renforcé](editorial-proposals/2026-11-07/scientific-strengthening/README.md).
+Elle applique maintenant FS01-FS03 : un même argument homogène positif sert
+à T1.12, T1.17, T3.1 et à la clause à une cible de T4.4. T1.12 reçoit le
+taux 41/30 dans les deux canaux bruts et une borne pure pour deux bonnes paires.
+Les 166 autres blocs numérotés sont identiques au stade renforcé ; les 167
+identités/numéros et 548 labels sont conservés. Par rapport à v1.8, 160 blocs
+restent identiques, les trois précisions de contexte, les trois dispositions
+scientifiques et le nouveau T1.12 expliquant les sept différences.
 
-Les 167 résultats et leurs numéros restent présents. Par rapport à 1.8, trois
-blocs antérieurs précisaient déjà un contexte hérité ; les trois énoncés
-renforcés s’y ajoutent. Les 161 autres blocs restent identiques. Les 548 labels
-restants sont conservés ; les quatre anciens labels d’équations retirés avec
-leur preuve restent sans réaffectation. Les nouvelles explications ajoutent 28
-lignes à l’aperçu simplifié, sans augmenter son nombre de pages. Le gain de 277
-lignes documenté pour les treize coupes se rapporte à ce stade précédent.
+Le gain de cette passe est de 51 lignes source, dont 50 lignes de preuves,
+sans page supplémentaire gagnée. Le cumul direct des sources livrées est de
+296 lignes depuis les cinq précisions initiales. Le sous-total historique de
+277 lignes excluait les quatre lignes du pied de page signalant l’aperçu ; les
+explications scientifiques avaient ensuite ajouté 28 lignes. Le [relevé exact](editorial-proposals/2026-11-07/common-seed-simplification/line-accounting.json)
+évite de confondre ces bases. Le gain cumulé en PDF reste de quatre pages par
+rapport à v1.8. Les métriques des anciens reçus restent figées à leur stade.
 
-Les [trois aperçus de simplification](editorial-proposals/2026-11-07/integration-status.json)
-et leurs reçus restent figés. Leur index décrit cette chaîne historique,
-pas l’état ultérieur de la copie scientifique renforcée. Cette dernière possède
-son propre reçu, sa revue du diff et son contrôle automatique. Aucune de ces
-passes ne constitue une nouvelle version adoptée ni un nouvel énoncé original
-déclaré faux. Les deux corrections nécessaires restent celles rappelées ci-dessous.
+La seconde instance a relu le diff exact et 21 types/corps compilés, sans
+correction nécessaire. Les types ont été réellement extraits et audités,
+sortie zéro. La copie possède son propre reçu et son contrôle d’intégrité.
+Les 165 pages ont été vues en planches, plus 23 pages entières en détail.
+Le dernier replay complet reste celui du [raccord Palm](SHARP_GOOD_EDGE_PALM.md),
+checkpoint 1005. Cette passe n’ajoute aucune preuve Lean ni entrée de journal.
 
-Le [nouveau raccord Palm](SHARP_GOOD_EDGE_PALM.md) possède quatre preuves
-relues et un replay complet au checkpoint 1005. Ses propositions de coupes
-supplémentaires restent distinctes et ne sont pas encore intégrées à cet aperçu.
+Les [trois premiers aperçus](editorial-proposals/2026-11-07/integration-status.json)
+et tous les aperçus ultérieurs restent conservés. L’ancien index décrit sa
+chaîne historique et ne doit pas être réappliqué à la nouvelle copie. Cette
+copie reste une proposition à adopter ou adapter par l’auteur. Ne pas supprimer
+le lemme point par point T1.11, les contre-exemples, la table des marges, la
+branche positionnelle ou les distinctions entre ordres fixes et croissants.
+Les deux corrections nécessaires de l’original restent T1.10 et T5.1.
+Palomar reste en attente ; les six dossiers restent exhaustifs pour les
+17 familles et 68 sélections prévues, avec le nom et l’ORCID de l’auteur.
 
 Cette note conserve la justification des propositions initiales, en complément
 de la [relecture initiale](reviews/2026-11-07/RAPPORT_FR.txt) et de la

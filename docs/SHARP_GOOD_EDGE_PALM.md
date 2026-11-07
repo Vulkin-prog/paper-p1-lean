@@ -85,13 +85,13 @@ quantifier type, an omitted support bridge or a stale body read.
 
 ## Editorial use
 
-The printed T3.1 may keep its old, weaker bounds while its proof cites the common
-homogeneous seed estimate and this positive-support comparison. An [independent proposal](editorial-proposals/2026-11-07/two-edge-simplification/README.md)
-considers the coupled T1.12/T1.17/T4.4 proof reduction, while retaining
-the autonomous nonaligned estimate and the pointwise T1.11 lemma. Those cuts are
-not yet integrated and no further PDF page saving is claimed here.
-
-The latest review copy remains the strengthened preview of 64 article pages and
-101 companion pages. Its source/PDF bytes and the thirteen applied simplifications
-remain preserved. The six Palomar dossiers, 17 original families and 68 selections
-are unchanged, including Brice Pouly and ORCID 0009-0008-8491-2467. Palomar is on hold.
+The latest [unified preview](editorial-proposals/2026-11-07/common-seed-simplification/README.md)
+now applies the shorter T3.1 proof while keeping its old weaker printed bounds.
+Its source phase proves beta positive before division. The coupled T1.12,
+T1.17 and one-target T4.4 simplifications also appear there; the autonomous
+nonaligned estimate and pointwise T1.11 stay intact. The original
+[proposal report](editorial-proposals/2026-11-07/two-edge-simplification/independent-proposals.json)
+remains frozen as a historical input, and the new capsule records its applied
+dispositions. It saves 51 source lines and no additional PDF page: 64 article
+and 101 companion pages remain. All earlier copies and registry scopes are
+preserved. Palomar remains on hold at the user's request.

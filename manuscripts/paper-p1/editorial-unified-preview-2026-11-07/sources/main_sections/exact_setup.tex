@@ -1,0 +1,170 @@
+\section{Keeping the exact marginal probabilities}
+\label{p13:exact:section}
+
+The optimal remainder is smaller than \(N^{-1}\), the cost of deleting
+all irregular windows. We therefore keep every event with nonzero
+probability from the outset. Its effective square-class space records
+all local relations once, and its actual probability is the correct
+centering parameter.
+
+Let \(\mathcal I_N=\{x\in I_N:p_x>0\}\), where \(p_x=\E J_x\).
+An event outside \(\mathcal I_N\) is identically zero and can be
+removed without changing \(Z_N\). For every \(x\in I_N\), let
+\(S_x\) be the image of the even selections of
+\(V_x=\{x-1,\ldots,x+L-1\}\) in
+\(\mathbb Q^\times/\mathbb Q^{\times2}\), regarded as a vector
+space over \(\F_2\). Write \(d_x=\dim S_x\).
+The even-selection space has dimension $L$. Its kernel consists of
+local even square relations. The following bound makes the possible
+effective ranks explicit.
+
+We apply the binary Griesmer bound
+\cite[Section~2, equation~(2.10)]{griesmer1960} to the code of
+local even square relations. The arithmetic input is its minimum
+nonzero weight; the residual-code proof below keeps the dependence
+on the parameters explicit.
+
+\begin{lemma}[Local rigidity]
+\label{p1:limits:local-rigidity}
+Let $V=\{U,\ldots,U+B-1\}$, where $U\asymp N$ and $B=O(\log N)$.
+Put
+\[
+ d_{N,B}=\left\lceil\frac{\log U}{\log(64B)}\right\rceil.
+\]
+If the relative square-relation code has dimension $r\ge t$, then
+\begin{equation}
+ \pi(B)+1\ge
+ \sum_{i=0}^{t-1}\left\lceil d_{N,B}/2^i\right\rceil-t.
+ \label{p1:limits:griesmer}
+\end{equation}
+Consequently $r\le1$ when $B=\log N/\log2+o(\log N)$.
+More generally, if $B\sim c\log N$ and
+$c<2-2^{1-t}$, then $r<t$ for all sufficiently large $N$.
+For every fixed $\varepsilon>0$, the relative signs are exactly
+independent in all windows with $B\le(1-\varepsilon)\log N$.
+\end{lemma}
+\begin{proof}
+Every square relation is supported on the $D$ integers whose odd
+prime valuations are all at primes at most $B$: a larger prime is
+private in the window.  The even square-relation code on these
+coordinates has redundancy at most $\pi(B)+1$.  Its minimum nonzero
+weight is at least $d_{N,B}$ by Lemma~\ref{p1:arith:runge}.
+
+For completeness, a binary linear code of length $D$, dimension $r$
+and minimum distance $d$ has redundancy at least
+$\sum_{i<t}\lceil d/2^i\rceil-t$ whenever $r\ge t$.
+Choose a word of minimum weight $d_0\ge d$ and project outside its
+support.  The kernel of this projection is its one-dimensional span:
+another nonzero word supported there would have smaller weight.
+The projected code has dimension $r-1$ and minimum distance at least
+$\lceil d_0/2\rceil$, since one of two complementary lifts uses at
+most $\lfloor d_0/2\rfloor$ coordinates on that support.  The
+redundancy decreases by $d_0-1$.  Repeating $t$ times proves the
+claim, and hence \eqref{p1:limits:griesmer}.
+
+The prime number theorem gives
+$\pi(B)\sim c\log N/\log\log N$, whereas
+$d_{N,B}\sim\log N/\log\log N$ when $B\sim c\log N$.
+Thus \eqref{p1:limits:griesmer} excludes dimension $t$ under the
+stated strict inequality.  At critical length, $1/\log2<3/2$,
+so $t=2$ applies.  The assertion for every smaller subcritical
+window follows by including it in a window of length
+$\lfloor(1-\varepsilon/2)\log N\rfloor$ and projecting.
+\end{proof}
+
+For an admissible window the affine prescription is consistent. Its
+probability is $2^{-d_x}$, as the character expansion in
+Section~\ref{p1:alg:section} also shows. The lemma therefore gives
+\begin{equation}
+ d_x\in\{L-1,L\},\qquad p_x=2^{-d_x}\in\{p,2p\},
+ \qquad p_*:=\max_{x\in\mathcal I_N}p_x\ll_C N^{-1}.
+ \label{p13:exact:marginals}
+\end{equation}
+The assertion about \(d_x\) holds for all sufficiently large \(N\)
+in a fixed critical band. A local square relation may instead
+contradict the run prescription; that is precisely the case
+already removed by \(p_x=0\).
+
+For a finite \(I\subseteq\mathcal I_N\), put
+\begin{align}
+ \rho_{\mathrm{rel}}(I)
+  &=\sum_{x\in I}d_x-\dim\sum_{x\in I}S_x,
+       & d_{xy}&=\dim(S_x\cap S_y),\label{p13:exact:rank}\\
+ q(I)&=\E\prod_{x\in I}J_x,
+       & w(I)&=2^{\rho_{\mathrm{rel}}(I)}
+                         \prod_{x\in I}p_x,\label{p13:exact:weights}\\
+ c(I)&=\E\prod_{x\in I}(J_x-p_x).
+ \label{p13:exact:center}
+\end{align}
+The empty products are one. We have \(q(I)=w(I)\) when the
+affine prescriptions are jointly compatible, and \(q(I)=0\)
+otherwise. On the regular set \(G_N\), these definitions agree
+with the homogeneous-marginal notation used in the companion.
+Outside \(G_N\), \(\rho_{\mathrm{rel}}\) counts dependencies
+between effective spaces; it does not count local relations a
+second time.
+
+The notions of directness, connectedness, and primitive family
+refer to the direct-sum decomposition of the effective spaces
+proved in Section~\ref{p1:alg:section}. A family is direct when its
+effective spaces are in direct sum, and connected when it has just one
+canonical direct component. In particular, a primitive
+family has a nonzero relation and every proper subfamily is
+direct. Every nonzero relation of a primitive family has a
+nonzero projection in each of its blocks. A connected family
+need not have a relation with this property on its entire
+support. This distinction matters in the conditional count below.
+
+For fixed \(r\ge2\), define
+\begin{equation}
+ A_r=\sum_{\substack{I\subseteq\mathcal I_N\\|I|=r}}|c(I)|,
+ \qquad
+ K_3^+=\sum_{\substack{|T|=3,\ T\text{ connected}\\q(T)>0}}c(T).
+ \label{p13:exact:activities}
+\end{equation}
+The nonnegativity in the definition of \(K_3^+\) will be proved
+in Proposition~\ref{p13:activity:kappa3}.
+The exact second and third factorial cumulants satisfy
+\begin{align}
+ \alpha_N&=2\sum_{|e|=2}c(e)-\sum_xp_x^2,
+ \label{p13:exact:alpha}\\
+ \kappa_{3,N}
+   &=6\sum_{|T|=3}c(T)
+       -6\sum_{e=\{x,y\}}(p_x+p_y)c(e)
+       +2\sum_xp_x^3.
+ \label{p13:exact:kappa3}
+\end{align}
+These identities follow by expanding the first three factorial
+moments. They display the repeated-index terms that an
+independent Bernoulli reference will retain exactly.
+
+\paragraph{Fixed sources on effective spaces.}
+The fixed-source estimates stated in
+Propositions~\ref{p1:fixed:targets} and~\ref{p1:fixed:propagation}
+apply on
+\(\mathcal I_N\), with the new conditional rank
+\[
+ \delta_z=\dim\bigl(S_z\cap\textstyle\sum_{x\in I}S_x\bigr)
+\]
+and weight \(p_z2^{\delta_z}\). To see this, choose in each
+even-selection space a linear complement to its local kernel.
+The valuation map is injective on that complement and maps it
+onto \(S_x\). Every label regularization, prime row, and disjoint
+square equation in the proofs is applied to this linear
+realization. Restriction to a complement restricts the allowed
+binary selections within the same physical coordinates; it does
+not enlarge any prime support.
+The factor \(p_z\) is at most \(2p\), and the number of sources
+and targets is fixed in those propositions. Thus their constants
+change by a fixed factor. The same reasoning applies to
+homogeneous prescriptions. In particular, for fixed \(s,m\) and
+\(\varepsilon>0\),
+\begin{equation}
+ \sum_{\substack{T\subseteq\mathcal I_N\setminus I\\|T|=m}}
+       q(I\cup T)\ll_{s,m,C,\varepsilon}N^\varepsilon q(I)
+ \quad (|I|=s),
+ \label{p13:exact:propagation}
+\end{equation}
+and the analogous homogeneous bound holds with \(q\) replaced
+by \(w\). If \(q(I)=0\), every summand on the left is zero.
+No estimate here is asserted for \(s\) or \(m\) growing with \(N\).

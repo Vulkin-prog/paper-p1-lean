@@ -1,0 +1,310 @@
+--- a/companion_sections/arithmetic.tex
++++ b/companion_sections/arithmetic.tex
+@@ -150,27 +150,16 @@
+ \end{proposition}
+ 
+ \begin{proof}
+-We give the two geometric estimates needed for this bound in
+-Lemma~\ref{p1:arith:asymmetric} and Lemma~\ref{p1:arith:palmrank}.
+-Compress the source pair using Lemma~\ref{p1:arith:compression}.
+-Choose a fixed $D$ enclosing the true compressed old values and use
+-radius $DB$ both for the asymmetric nonaligned sector and for its
+-complementary aligned sector.  The expanded old-centre version of
+-Lemma~\ref{p1:arith:asymmetric} applies with the new centre in $I_N$.
+-Away from alignment with this source, the asymmetric profile gives
+-$N^{31/24+\varepsilon}$ for the sum of $2^{\delta}-1$, where $\delta$ is
+-the loss of new rank.  There are $B^{O(1)}$ source offset patterns and
+-$q_{xy}\ll p^2 2^{L/b}$.  Multiplication by the additional factor $p$
+-and division by $\beta_{a,b}\asymp LN^{-1+1/b}$ give
+-$N^{-17/24+\varepsilon}$.
+-
+-For aligned targets there are $B^{O(1)}$ possibilities per source.  Outside
+-$B^{O(1)}$ source pairs at the dyadic endpoints, Lemma~\ref{p1:arith:palmrank}
+-bounds the new rank loss by $L/3+o(L)$ for $2:3$ and $L/2+o(L)$ for $3:4$.
+-Thus their positive conditional cost is at most
+-$pB^{O(1)}2^{L/3+o(L)}$ or $pB^{O(1)}2^{L/2+o(L)}$.
+-The exceptional source mass is $N^{-2+1/b+o(1)}$ and each has only
+-$B^{O(1)}$ aligned targets, so after normalization it contributes
+-$N^{-1+o(1)}$.  This proves both estimates.  The source mass itself is
+-$N^{-1+1/b+o(1)}$, which gives the final assertions.
++For a compatible good source $e=\{x,y\}$ and $z\notin e$,
++\[
++ q_e\bigl(\P(J_z=1\mid J_x=J_y=1)-p\bigr)_+
++       =\bigl(q(e\cup\{z\})-q_ep\bigr)_+.
++\]
++A positive summand has separated starts and positive crossing above
++the source. It is at most $W(e\cup\{z\})$, so part (2) of
++Proposition~\ref{p1:arith:fixed-homogeneous-seeds} bounds the total.
++The source phase gives $\beta_{a,b}\asymp_{C,a,b}LN^{-1+1/b}>0$.
++Divide by this positive quantity and reduce the internal exponent
++margin. This gives both displayed normalized bounds and the stated
++unnormalised bounds.
+ \end{proof}
+--- a/companion_sections/arithmetic_appendix.tex
++++ b/companion_sections/arithmetic_appendix.tex
+@@ -972,20 +972,17 @@
+ \item The sum of $W(\{x,y\})$ over dependent pairs outside
+ $\mathcal A_{\rm raw}$ is $O_{C,\varepsilon}(N^{-4/5+\varepsilon})$.
+ Moreover $\sum_{e\in\mathcal A_{\rm raw}}W(e)\ll_C LN^{-2/3}$.
+-\item For a source $e$ in channel $a:b$, sum over targets $z$ for which
+-$S_z\cap\sum_{x\in e}S_x\ne\{0\}$.  Then
+-\[
+- \sum_{e,z}W(e\cup\{z\})
+- \ll_{C,\varepsilon}
+- \begin{cases}N^{-4/3+\varepsilon},&a:b=2:3,\\
+-               N^{-5/4+\varepsilon},&a:b=3:4.
+- \end{cases}
++\item For a geometric good source $e\in\mathcal A_{\rm raw}$ in channel
++$a:b\in\{2:3,3:4\}$, sum over targets $z$ for which
++$S_z\cap\sum_{x\in e}S_x\ne\{0\}$. Then
++\[
++ \sum_{e,z}W(e\cup\{z\})\ll_{C,\varepsilon}N^{-41/30+\varepsilon}.
+ \]
+ \item For two distinct geometric good edges, whose union has three or
+ four starts,
+ \[
+  \sum_{e\ne f}W(e\cup f)
+- \ll_{C,\varepsilon}N^{-5/4+\varepsilon}+(LN^{-2/3})^2.
++ \ll_C L^2N^{-4/3}.
+ \]
+ \end{enumerate}
+ These are rank bounds without any affine compatibility restriction.
+@@ -993,28 +990,29 @@
+ 
+ \begin{proof}
+ The homogeneous indicators
+-$H_x=\ind_{\{f(x-1)=\cdots=f(x+L-1)\}}$ have zero affine target and
+-therefore $\E\prod_{x\in I}H_x=W(I)$ exactly.
+-The first assertion follows from the positive profile and the same
+-exceptional-channel estimates used in Theorem~\ref{p1:arith:pairs}.
+-On a dependent pair $2^\rho\leq2(2^\rho-1)$, so the support contribution
+-is already controlled by that profile.
+-
+-For a dependent extension let $\delta=\dim(S_z\cap\sum_{x\in e}S_x)>0$.
+-Then $W(e\cup\{z\})=W(e)p2^\delta$, with
+-$2^\delta\leq2(2^\delta-1)$.
+-For the compressed old interval, test alignment at its fixed enclosing
+-radius $DB$ and use the same radius in the aligned-target estimate.
+-Lemma~\ref{p1:arith:asymmetric} gives
+-the nonaligned mass
+-$N^{-3+1/b+31/24+\varepsilon}\leq N^{-11/8+\varepsilon}$.
+-Lemma~\ref{p1:arith:palmrank} and $NB^{O(1)}$ aligned hosts give
+-$N^{-4/3+\varepsilon}$ or $N^{-5/4+\varepsilon}$.
+-Endpoint sources cost at most $N^{-5/3+o(1)}$.  No contact was dropped
+-on a compatibility argument: all starts in this proposition are separated.
+-
+-Two edges sharing a vertex have $NB^{O(1)}$ hosts.  The same three-window
+-rank bound gives their mass $N^{-5/4+\varepsilon}$.
++$H_x=\ind_{\{f(x-1)=\cdots=f(x+L-1)\}}$ have zero affine target, so
++$\E\prod_{x\in I}H_x=W(I)$. The first assertion follows from the
++positive profile and the exceptional-channel estimates in
++Theorem~\ref{p1:arith:pairs}; on a dependent pair,
++$2^\rho\le2(2^\rho-1)$.
++
++For (2), the good source is dependent, so positive crossing gives a
++connected triple.
++The separated homogeneous variant in
++Section~\ref{p14:comp:third:aligned-family}, with at most three marked
++source pairs per triple, gives $O(N^{-41/30+\varepsilon})$.
++
++\paragraph{Two interacting raw edges.}
++Write $W_e=\sum_{x\in e}S_x$ and sum over ordered pairs:
++\[
++ \mathfrak I_N=
++ \sum_{\substack{e,f\in\mathcal A_{\rm raw},\ e\ne f\\
++                  e\cup f\ {\rm separated},\ W_e\cap W_f\ne\{0\}}}W(e\cup f).
++\]
++We prove $\mathfrak I_N\ll_{C,\varepsilon}N^{-41/30+\varepsilon}$.
++If the two edges share a vertex, their union is a connected triple;
++the same homogeneous estimate, with bounded marking multiplicity, applies.
++
+ For disjoint edges first treat nonaligned compressed blocks, using
+ a fixed radius enclosing both true value sets in the alignment test.
+ Its complementary enlarged aligned sector is retained below.  Write
+@@ -1042,18 +1040,33 @@
+ \]
+ The remaining dense mass is $N^{-2+\varepsilon}$.
+ The entire nonaligned excess is therefore $N^{-5/3+\varepsilon}$.
+-
+-Aligned compressed pairs, including overlapping envelopes, have
+-$NB^{O(1)}$ hosts.  Away from endpoint sources their first three original
+-windows have nullity at most $3L/4+o(L)$, by
+-Lemma~\ref{p1:arith:palmrank}.  Adding the fourth loses at most $L$
+-further ranks.  Their mass is at most
+-$N\,N^{-4+7/4+o(1)}=N^{-5/4+o(1)}$.
+-The endpoint source contribution is again $N^{-5/3+o(1)}$.
+-Finally the sum of all baseline products is bounded by
+-$(\sum_{e\in\mathcal A_{\rm raw}}W(e))^2$.
+-All estimates were made with homogeneous ranks, proving the assertion
+-independently of the original phases.
++On an interacting pair let $\delta=\dim(W_e\cap W_f)>0$.
++Since $2^\delta\le2(2^\delta-1)\le2(2^{\delta^*}-1)$, the same
++nonaligned excess bound controls its full homogeneous mass.
++
++For disjoint edges with aligned compressed centres, the fixed channel,
++offset and alignment codes leave $NB^{O(1)}$ quadruples. Choose $z\in f$.
++If $S_z\cap W_e\ne0$, the triple $e\cup\{z\}$ is connected.
++For each such triple the mate of $z$ in $f$ has $O(B)$ choices,
++because the raw good-edge graph has degree $O(B)$. Since
++$W(e\cup f)\le W(e\cup\{z\})$, the homogeneous triple bound applies.
++If $S_z\cap W_e=0$, instead
++$W(e\cup f)\le W(e\cup\{z\})=W(e)p\le N^{-\kappa_b-1+o(1)}$.
++The host count gives $N^{-\kappa_b+o(1)}$ in this case.
++This includes a positive intersection between the two pair spaces
++even when both individual target crossings vanish.
++Thus all sectors satisfy the asserted bound for $\mathfrak I_N$.
++
++Finally, pairs with disjoint effective spaces factor exactly. Hence
++\[
++ \sum_{\substack{e,f\in\mathcal A_{\rm raw},\ e\ne f\\e\cup f\ {\rm separated}}}
++       W(e\cup f)
++ \le \Bigl(\sum_{e\in\mathcal A_{\rm raw}}W(e)\Bigr)^2+\mathfrak I_N.
++\]
++The first assertion bounds the squared sum by $O_C(L^2N^{-4/3})$.
++Fix an internal margin below $1/30$; since $41/30>4/3$,
++the interaction term is absorbed into that scale with a fixed
++constant. This proves (3).
+ \end{proof}
+ 
+ \subsection{Support and branching at a fixed number of blocks}
+@@ -1249,80 +1262,29 @@
+ \end{lemma}
+ 
+ \begin{proof}
+-We only need a strict gap below $2L/3$ for the nullity of three aligned
+-windows containing a good source.  Here is a direct bound that avoids
+-a complete classification of the optimal three-window configuration.
+-Keep the target parametrization and congruences from
+-Lemma~\ref{p1:arith:palmrank}.  If its fraction $c/d$ is physical,
+-two of the three parameter intervals have the same coefficient and
+-disjoint interiors, up to one endpoint.  Their intersections with the
+-third interval have total length at most that third interval.  Thus
+-the full three-window nullity is at most $L/2+o(L)$ for $2:3$, and
+-$L/3+o(L)$ for $3:4$.  This bound includes the original source nullity.
+-The residual on this fixed-width normalized union is $o(L)$ by the
+-private-prime defect estimate, just as in the fixed-height case of
+-Lemma~\ref{p1:arith:alignedrank}.
+-
+-For a nonphysical target above $2:3$, the additional rank loss is at
+-most $3L/10+o(L)$.  Indeed the density
+-$((c,2)+(c,3)-1)/c$ already suffices except for $c=9,12$ and the
+-physical or endpoint fractions.  For $c\geq14$ it is at most $2/7$;
+-$c=5,7,8,10,11,13$ also satisfy the desired bound directly.
+-For $c=9$, the allowed reduced denominators are $4,5$.
+-Count the new class modulo nine everywhere, and the remainder of
+-the class modulo three inside the true three-family parameter
+-interval of length $3B/d$.  This gives
+-\[
+- B/9+(3B/d)(1/3-1/9)+O(1)
+- =B/9+2B/(3d)+O(1)\leq5B/18+O(1)<3B/10+O(1).
+-\]
+-Counting only the three-family units would miss possible matches
+-outside that actual interval; the union count retains them.
+-For $c=12$ the possible denominators are $5,7$.
+-At $d=7$ the two true old intervals supply at most $2B/7+O(1)$ units.
+-At $d=5$ count the entire new class modulo six and the part of the
+-class modulo four outside it.  The latter lies in a true parameter
+-interval of length $4B/5$, giving
+-\[
+- B/6+(4B/5)(1/4-1/12)+O(1)=3B/10+O(1).
+-\]
+-The full nullity is therefore at most $(1/3+3/10)L+o(L)=19L/30+o(L)$.
+-
+-Above $3:4$, the cruder additional bound $2L/5+o(L)$ is enough.
+-The density test proves it for $c\geq15$ and for
+-$c=5,7,9,10,11,13,14$.  The only other nonphysical interior
+-fractions are $8/3$ and $12/5$.
+-For $8/3$, count the class modulo eight everywhere and the remainder
+-of the class modulo two inside the true four-family parameter
+-interval of length $2B/3$.  The bound is
+-\[
+- B/8+(2B/3)(1/2-1/8)+O(1)=3B/8+O(1).
+-\]
+-For $12/5$, each true old family supplies at most $B/5+O(1)$ units.
+-Thus the full nullity is at most $(1/4+2/5)L+o(L)=13L/20+o(L)$.
+-The finitely many endpoint fractions concern only $B^{O(1)}$ sources,
+-as before.  Since $19/30<13/20<2/3$, the bound $13L/20+o(L)$
+-works for both channels outside this exception.
+-
+-For two distinct good edges, configurations sharing a vertex and
+-aligned configurations with four vertices have $NB^{O(1)}$ hosts.
+-In the four-vertex case adding the last window loses at most $L$
+-ranks.  The joint probabilities in both cases therefore total at most
+-$N^{-27/20+o(1)}$.  Endpoint sources cost $N^{-5/3+o(1)}$.
+-Nonaligned compressed edges have total absolute covariance
+-$O_{C,\varepsilon}(N^{-5/3+\varepsilon})$ by the two-block argument in
+-Proposition~\ref{p1:arith:fixed-homogeneous-seeds}; that argument also
+-applies to compatible affine sources.
+-Cross-contacts at distance less than $L$ have zero joint probability.
+-Their baseline products, those of adjacent edges, and the diagonal
+-$\sum_e q_e^2$ have total $N^{-7/3+o(1)}$, since the geometric edge
+-degree is $O(B)$.  Contacts at distance exactly $L$ were included in
+-the physical bounds above.  Consequently
+-\[
+- \E(\Xi_N)_2=\beta_N^2+O_{C,\varepsilon}(N^{-27/20+\varepsilon}).
+-\]
+-Take $\varepsilon<1/60$ and use
+-$\beta_N\asymp LN^{-2/3}$.  The final inequality is the elementary
+-pointwise bound $(m-1)_+\leq m(m-1)/2$ for integers $m\geq0$.
+-\end{proof}
+-
++For compatible good edges put $q_e=q(e)=W(e)$ and
++$W_e=\sum_{x\in e}S_x$. On pairs with $W_e\cap W_f=\{0\}$,
++their original affine events factor exactly.
++On an interacting separated pair,
++\[
++ |q(e\cup f)-q_eq_f|\le W(e\cup f):
++\]
++the joint is zero or $W(e\cup f)$, while $q_eq_f\le W(e\cup f)$.
++The interaction estimate proved in
++Proposition~\ref{p1:arith:fixed-homogeneous-seeds} therefore bounds
++the total separated covariance by $O(N^{-41/30+\varepsilon})$.
++
++The diagonal and strict-contact baseline products have only
++$NB^{O(1)}$ hosts, using the geometric degree $O(B)$.
++Each product is at most $N^{-10/3+o(1)}$, giving a total
++$O(N^{-7/3+o(1)})$;
++strict contacts have zero original joint probability. Thus
++\[
++ \E(\Xi_N)_2=\beta_N^2+O_{C,\varepsilon}(N^{-41/30+\varepsilon}).
++\]
++Choose $\varepsilon<1/30$ and use $\beta_N\asymp_C LN^{-2/3}$.
++This gives the relative asymptotic and its fixed-constant upper bound.
++Finally $(m-1)_+\le m(m-1)/2$ for integers $m\ge0$ gives the
++stated Bonferroni inequality after expectation.
++\end{proof}
++
+--- a/companion_sections/fixed_moments.tex
++++ b/companion_sections/fixed_moments.tex
+@@ -264,13 +264,9 @@
+ Reduce the margins and absorb the motif choices to obtain
+ \eqref{p1:fixed:compressed-bound}.
+ 
+-For one target, a geometric good source has a nonzero pair relation.
+-Positive crossing with the target therefore makes the original triple
+-connected. Apply the separated homogeneous version proved in
+-Section~\ref{p14:comp:third:aligned-family}. A triple has at most three
+-choices of its marked source pair, so this bounds the full extension
+-mass by $O_{C,\varepsilon}(N^{-41/30+\varepsilon})$.
+-This argument uses neither affine compatibility nor a signed cumulant.
++The one-target clause is part (2) of
++Proposition~\ref{p1:arith:fixed-homogeneous-seeds}.
++Original affine joint probabilities are bounded by the homogeneous ones.
+ \end{proof}
+ 
+ \subsection{Proof of Theorem~\ref{p1:fixed:moments}}
+--- a/companion_sections/guide.tex
++++ b/companion_sections/guide.tex
+@@ -71,8 +71,10 @@
+ Proposition~\ref{p13:transfer:primitive}. These geometric inputs
+ are proved independently of the moment theorem and either law reconstruction.
+ The one-target clause of Proposition~\ref{p1:fixed:compressed} instead
+-uses the separated homogeneous triple argument in
+-Section~\ref{p14:comp:third:aligned-family}.
++uses Proposition~\ref{p1:arith:fixed-homogeneous-seeds}(2), proved directly
++from the separated homogeneous triples in
++Section~\ref{p14:comp:third:aligned-family}. The same positive seed
++estimates also give the shorter second-moment and Palm arguments.
+ 
+ \paragraph{Entering a proof and returning to the article.}
+ The following local routes lead to the complete proof subsection,

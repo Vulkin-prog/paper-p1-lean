@@ -1,0 +1,39 @@
+REVUE INDÉPENDANTE — DIFF EXACT DES GRAINES COMMUNES
+Statut : complete_frozen ; 7 novembre2026.
+Base documentaire : b35adf3c7390e6c957be2ed07baf3518ff7a2774
+Source de preuve : d342b507332315c67b1463009061c03f14b5be9b
+Diff : 74e24932b75078ba13c7f238fcbfe235a03c693c9b487a987f9974de380ef28b
+Manifeste : 05d32214f0eced680a789f6b9f83d163d84fc282e582d74930f44e56585bdfde
+Scope21 : 1a6156501b32b8341bbed930dd8759498caa94c45c14254c9d2e160f4a316e83
+
+Verdict : accepté dans le périmètre relu. Aucune lacune mathématique confirmée et aucune correction nécessaire.
+
+1. T1.12(2) ET LA MASSE HOMOGÈNE COMMUNE
+La nouvelle clause41/30 porte explicitement sur les bonnes sources brutesA_raw et les cibles de crossing positif, avecG_N et séparation conservés. La source est déclarée dépendante avant de conclure àla connexité triple. Le marquage coûte au plus3.
+La masse interactive est une somme positive sur couples ORDONNÉS de bonnes paires brutes. Le cas partagé se réduit àla triple connexe. Les27 lignes nonalignées restent verbatim ;2^δ≤2(2^δ−1)≤2(2^δ*−1) convertit l’excès en masse complète.
+Pour les paires disjointes àcentres comprimés alignés, les motifs et codes laissentNB^O(1) quadruples. Crossing singleton positif : triple connexe etO(B) choix du mate. Crossing singleton nul : q0(e∪f)≤q0(e)p, donc coûtN^(−κ_b+o1). Ce dernier cas comprend une interaction entre sommes même si les deux crossings singleton sont nuls.
+La preuve ne suppose donc ni une connexité triple absente, ni un dernier sommet libre de coûtN. Les secteurs restent au rayon agrandi approprié.
+
+2. T1.12(3), CONSTANTE PURE
+Les espaces disjoints factorisent ; le second homogène est≤le carré de la masse brute plus l’interaction. Une marge fixée strictement sous1/30 absorbe41/30 dansL²N^(−4/3). La constante peut être choisie avantε.
+Le canoniqueFixedHomogeneousSeedTheorem ferme la première clause, la masse brute et la borne pure. Sa clause2 historique est encore faible ; le nouvel énoncé41/30 utilise séparémentHomogeneousEffectiveGoodPairExtensions.uniform_mass. Les21 entrées de lecture documentent cette composition, sans faire couvrir tout le bloc par un seul alias faible.
+
+3. T1.17, VRAI SECOND MOMENT AFFINE
+Sur les sources compatiblesq_e=W(e). Les espaces disjoints donnent le vrai produit affine. Sur les interactifs séparés, le joint est0 ouW(e∪f) etq_eq_f≤W(e∪f), donc la covariance absolue est dominée par cette masse homogène.
+Les produits de baseline diagonaux/contacts stricts sont AU PLUSN^(−10/3+o1) surNB^O(1) hôtes ; leur somme estO(N^(−7/3+o1)). Les contacts stricts ont joint affine nul et ceux exactementL restent traités parmi les séparés.
+L’erreur41/30 avecε<1/30 est négligeable devantβ²≈L²N^(−4/3). La constante fixe etBonferroni sont conservés. La longue classification retirée est remplacée par un argument complet de masse et de phase, pas par une simple majoration homogène prise pour une asymptotique.
+
+4. PALM, T4.4 ET GUIDE
+T3.1 conserve ses énoncés. L’identité du positif pondéré, son support séparé àcrossing positif et le majorant homogène sont exacts. β>0 est explicitement indiqué avant division ; les marges donnent les anciens taux normalisés et non normalisés.
+T4.4 àune cible renvoie àT1.12(2), qui est lui-même prouvé directement par14.3 homogène. Il n’y a pas de renvoi inverse. La preuve àplusieurs cibles est intacte. Le guide décrit ce chemin.
+T1.11, son énoncé point par point et sa preuve restent identiques. Les domaines réguliers, bruts/compatibles et degré fixé/croissant restent distincts.
+
+5. CONTRÔLES DE SOURCES
+48 empreintes du manifeste et4 paires de fichiers avant/après comparées. Tous les hunks ont été appliqués exactement EN MÉMOIRE àla baseb35adf3c ; les résultats égalent les copies proposées.
+167 blocs de résultats :166 byte-identiques ; seulT1.12 est renforcé.548 labels uniques conservés et zéro renvoi manquant.
+Les27 lignes nonalignées ont le SHA8feba7f919e349b43ecec3ebc4565292787e40dc6c4b4fe6cae78f90b67d6efb, saut de ligne final inclus.
+Preuves :T1.12 64→80 ;T1.17 77→26 ;T4.4 àune cible7→3 ;T3.1 25→14. Gain50 lignes de preuve,51 lignes source nettes avec énoncé/guide. Aucun gainPDF revendiqué.
+
+6. TYPES ET LIMITES
+Les21 types compilés sont documentés individuellement avec source, ligne, type exact et comparaison du corps ;19 sont byte-identiques aux types précédemment lus et les2 compléments ont été relus. Le fichier.exit vaut0 et la validation fournie par le parent indique21 propositions aux axiomes standards.
+Aucun Lean/Lake,replay,build,extraction,audit,PDF,Palomar ou délégation exécuté par cette instance. Numéros imprimés et rendu restent laQA du parent. Aucun dépôt, source proposée ou ancien rapport modifié ; seuls les deux présents rapports sont créés.

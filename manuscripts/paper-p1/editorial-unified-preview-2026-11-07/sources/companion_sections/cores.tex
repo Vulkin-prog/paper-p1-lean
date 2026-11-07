@@ -1,0 +1,792 @@
+\section{Proofs of the uniform certificate tools}
+\label{p14:comp:certificate-tools}
+
+All definitions and parameter conditions are those of
+Section~\ref{p14:cert:section}. The counts are geometric, and all
+constants are uniform in the size of the family being summed.
+
+\subsection{Proof of Lemma~\ref{p1:core:rankin}}
+\label{p14:comp:certificate-rankin}
+
+\begin{proof}
+Write uniquely $v=k s a^2$, where $k=K_Y(v)$ and $s$ is the
+squarefree product of the primes at most $Y$ occurring to odd order.
+The inequality $1\le (C_1N/(ksa^2))^\sigma$ on the range being
+counted gives an upper bound
+\[
+ (C_1N)^\sigma
+ \left(\sum_{k\le T}k^{-\sigma}\right)
+ \left(\sum_{a\ge1}a^{-2\sigma}\right)
+ \prod_{\ell\le Y}(1+\ell^{-\sigma}).
+\]
+Enlarging the sum over $k$ to all positive integers only increases it.
+The three factors are respectively $O_\sigma(T^{1-\sigma})$,
+$\zeta(2\sigma)$, and at most
+$\exp(\sum_{j\le Y}j^{-\sigma})$. This proves the bound.
+\end{proof}
+
+\subsection{Proof of Lemma~\ref{p1:core:moderate}}
+\label{p14:comp:certificate-moderate}
+
+\begin{proof}
+There are at most $rNB^2$ choices for the anchor and its two offsets.
+The product $Q$ has at most $m$ prime factors, and each has at most
+$rB$ destinations. Once these assignments are fixed, the Chinese
+remainder theorem leaves at most $1+N/D_j$ possibilities for centre
+$j$. At most two of the $D_j$ exceed $N$, since $Q\le9N^2$.
+For those two modules, replacing $1+N/D_j$ by $2N/D_j$ costs at most
+$(6B)^2$. Therefore
+\[
+ \prod_{j\ne\mathrm{anchor}}(1+N/D_j)
+ \le 2^{r-1}(6B)^2N^{r-1}T^{-2}.
+\]
+This proves \eqref{p1:core:moderate-count}; allowing collisions and
+incompatible assignments only enlarges the count.
+
+After multiplication by $(up)^r/r!$, the remaining series is, up to
+a fixed factor,
+\[
+ N^{-2\beta}B^{m+4}\sum_{r\ge0}\frac{z^r r^{m+1}}{r!},
+ \qquad z=2uNp=O_u(1).
+\]
+Since $r^{m+1}\le(m+1)!e^r$, this series is at most
+$N^{-2\beta}B^{m+4}(m+1)!\exp(ez)$. Finally
+\[
+ m=\left(\frac2{A_0}+o(1)\right)\frac{H}{\log H},\qquad
+ \log(B^m(m+1)!)=\left(\frac4{A_0}+o(1)\right)H.
+\]
+This yields \eqref{p1:core:moderate-baseline}. The factorial here
+divides the orderings of a set of distinct windows; it is not an
+assumption on the growth of a fixed-order arithmetic constant.
+\end{proof}
+
+\subsection{Proof of Lemma~\ref{p1:core:degrees}}
+\label{p14:comp:certificate-degrees}
+
+\begin{proof}
+For an outgoing edge, choose two anchor offsets in $B^2$ ways. Each of
+the at most $m$ primes is either unused or assigned to one of $B$
+offsets in the receiver. A qualifying code has modulus $D>N$ and
+therefore determines at most one receiving centre in $I_N$. This gives
+$B^2(B+1)^m=N^{2/A_0+o(1)}$ possibilities.
+
+For the incoming degree, fix the receiving window $y$ and let
+$\Omega_y$ be the primes greater than $Y$ dividing any of its values.
+Writing $R=\lceil B\log(3N)/\log Y\rceil$, we have $|\Omega_y|\le R$.
+A code chooses two anchor offsets, at most $m$ primes from $\Omega_y$,
+and one of the two offsets for each chosen prime. For a qualifying
+code their product exceeds $N$, so its congruences determine at most
+one anchor centre. Thus the number of possible incoming neighbours is
+at most
+\[
+ B^2\sum_{j=0}^m\binom Rj2^j
+ \le B^2(m+1)(2eR/m)^m
+ =N^{2/A_0+o(1)}.
+\]
+The displayed binomial bound holds for large $N$, since $m\le R/2$.
+Nonqualifying codes may be included in the number of codes; the
+one-centre conclusion is applied only to qualifying ones. No receiving
+offset needs to be chosen in this incoming count: the receiver has
+already been fixed. Symmetrisation adds the two degree bounds.
+\end{proof}
+
+\subsection{Proof of Lemma~\ref{p1:core:generator}}
+\label{p14:comp:certificate-generator}
+
+\begin{proof}
+Fix an admissible set $D$. Its isolated vertices are marked singletons.
+On the other vertices choose an inclusion-minimal edge cover of the
+induced graph. Every edge of this cover has an endpoint of degree one
+in the cover, since otherwise that edge could be removed. Its
+components are therefore nontrivial stars. Thus $D$ has a partition
+into marked singletons and stars, each with one centre and a nonempty
+subset of its neighbours as leaves.
+
+Write $w(A)=\prod_{v\in A}w_v$. Choose one such partition for each $D$.
+The product over all possible blocks of $1+w(A)$ contains a distinct
+term of weight $w(D)$ for this chosen partition: its union recovers
+$D$. Dropping disjointness only adds nonnegative terms. Since
+$1+u\le e^u$ for $u\ge0$, the weighted sum is at most the exponential
+of the total block weight. The singleton contribution is
+$\sum_{v\in\mathcal M}w_v$. For a fixed star centre $v$, its leaf sum
+is exactly
+\[
+ w_v\sum_{\varnothing\ne A\subseteq N(v)}\prod_{u\in A}w_u
+   =w_v\left(\prod_{u\sim v}(1+w_u)-1\right).
+\]
+Counting the same two-vertex star from both centres is harmless.
+This proves the heterogeneous assertion. Set $w_v=z$ and use
+$\deg(v)\le\Delta$ to obtain \eqref{p1:core:generator-bound}.
+There is no small-activity hypothesis. When $\Delta z<2$, the
+elementary bound $e^u-1\le2u/(2-u)$ also gives the convenient
+majorant $\exp\{Mz+2n\Delta z^2/(2-\Delta z)\}$.
+\end{proof}
+\section{From fixed orders to all primitive families}
+\label{p1:core:section}
+
+The estimates at each fixed order do not control the growing order needed
+to reconstruct a distribution. We now obtain that uniformity without
+estimating the growth of the fixed-order constants. The argument has two
+parts. A large squarefree kernel produces congruences which count the
+possible centres. When too much of this kernel is received by one other
+window, it produces an edge in a graph of small degree. A generating
+function then controls all large families at once. Only a finite set of
+small cardinalities is left to the fixed-order estimates.
+
+Throughout this section, a family of distinct windows is \emph{primitive}
+if its spaces are not in direct sum but every proper subfamily is in
+direct sum. Connectedness refers to the canonical decomposition into direct-sum
+components in Lemma~\ref{p1:alg:components}.
+All families in this section consist of windows in the regular set $G_N$.
+The quantities $q(I)$, $c(I)$, $\rho(I)$ and $\rho_*(I)$ retain their
+definitions from Section~\ref{p1:alg:section}. All weights and all auxiliary
+parameters in this section are fixed before $N$ tends to infinity.
+
+\subsection{The centred estimate at each fixed order}
+
+The small-cardinality part of the argument needs an estimate for absolute
+centred coefficients, including incompatible affine systems. Positive
+probabilities alone do not give this estimate: a joint event can be
+impossible while its centred coefficient is nonzero. For separated windows
+we remove this difficulty by using a homogeneous majorant. Contacts require
+a different argument, since their homogeneous probabilities can be large.
+
+For $x\in G_N$, let $H_x$ be the indicator of the homogeneous event that
+every character in $S_x$ takes the value $1$. Equivalently, the random
+multiplicative function is constant on the $L+1$ values in window $x$. Set
+\begin{equation}
+ W(I)=\E\prod_{x\in I}H_x
+      =p^{|I|}2^{\rho(I)}.
+ \label{p1:core:homogeneous-weight}
+\end{equation}
+All homogeneous systems are compatible. Moreover, the full-support Fourier
+formula of Lemma~\ref{p1:alg:fourier}, after taking absolute values, gives
+\begin{equation}
+ |c(I)|\le W(I).
+ \label{p1:core:homogeneous-majorant}
+\end{equation}
+Here the geometric good-pair class includes pairs whose prescribed affine
+run-start events are incompatible; denote this enlarged class by
+$\mathcal A_{\rm raw}$.
+
+\begin{lemma}[Absolute centred mass at a fixed order]
+\label{p1:core:fixed-centred}
+For every fixed integer $r\ge3$ and $\varepsilon>0$,
+\begin{equation}
+ \sum_{\substack{C\subseteq G_N,\ |C|=r\\C\ \mathrm{connected}}}
+       |c(C)|\ll_{r,\varepsilon}N^{-4/5+\varepsilon}.
+ \label{p1:core:fixed-centred-bound}
+\end{equation}
+The sum over all $r$-element families containing a contact, with no
+connectedness restriction, is $O_{r,\varepsilon}(N^{-1+\varepsilon})$.
+\end{lemma}
+\begin{proof}
+First suppose that all windows are separated. Call a family residual if
+its relation space is neither zero nor exactly the relation space of one
+geometric good pair, extended by zero on the other blocks. A connected
+family of at least three windows is residual. We prove the stronger bound
+obtained by summing $W(C)$ over all residual separated families of size $r$.
+
+Proposition~\ref{p1:fixed:propagation} applies to the homogeneous targets
+as well as to the prescribed affine targets. Its rank increment
+$\dim(S_x\cap\sum_{y\in I}S_y)$ is geometric, and the conditional
+probability is $p$ times the corresponding power of $2$ in either case.
+Consequently a seed may be completed to any fixed total cardinality at
+a cost $N^{\varepsilon}$, after reducing the error exponent used for
+the seed. The following four cases exhaust residual families.
+
+If a family contains a dependent pair outside $\mathcal A_{\rm raw}$,
+the first seed estimate of Proposition~\ref{p1:arith:fixed-homogeneous-seeds}
+gives total weight $O_\varepsilon(N^{-4/5+\varepsilon})$. Propagation
+adds the other $r-2$ windows at the stated cost. If it contains an
+original primitive subfamily of size $h\ge3$, with $h\le r$,
+Proposition~\ref{p1:fixed:primitive} gives the same bound for its
+homogeneous weight. There are only finitely many such values of $h$,
+so propagation again gives the required estimate.
+
+Next suppose that the family contains two distinct geometric good pairs.
+Their union has three or four windows. By
+Proposition~\ref{p1:arith:fixed-homogeneous-seeds}, the total homogeneous
+weight of these unions is
+\[
+ O_\varepsilon(N^{-5/4+\varepsilon}+L^2N^{-4/3})
+       =O_\varepsilon(N^{-5/4+\varepsilon}).
+\]
+Completing the union to $r$ windows costs only $N^{\varepsilon}$.
+This case includes a pair sharing one endpoint with the other pair.
+
+The remaining family has a unique geometric good pair $e$ and an
+additional relation. Compress $e$ exactly, and choose a minimal dependent
+subfamily of the resulting blocks. If it avoids $e$, it is one of the
+original primitive seeds already considered. Otherwise it consists of
+the compressed pair and $h-1$ original windows. For $h=2$, the
+pair-and-target seed estimate of
+Proposition~\ref{p1:arith:fixed-homogeneous-seeds} gives
+$O_\varepsilon(N^{-4/3+\varepsilon})$ for channel $2:3$ and
+$O_\varepsilon(N^{-5/4+\varepsilon})$ for channel $3:4$.
+For $h\ge3$, Proposition~\ref{p1:fixed:compressed} gives
+\[
+ O_{h,\varepsilon}(N^{-\kappa_b+\varepsilon}),
+ \qquad \kappa_b=2-1/b,\quad b\in\{3,4\}.
+\]
+For $h\ge3$, the larger of the two channel bounds is
+$O(N^{-5/3+\varepsilon})$.
+Propagation is applied after replacing the compressed seed by its original
+windows. The number of seeds and placements in a family of fixed size is
+bounded in terms of $r$. These cases prove the separated estimate by
+\eqref{p1:core:homogeneous-majorant}. No compatibility restriction has
+been introduced in this argument.
+
+For contacts, return to the actual affine events. Expanding the centred
+product gives
+\begin{equation}
+ |c(C)|\le\sum_{U\subseteq C}p^{r-|U|}q(U).
+ \label{p1:core:contact-expansion}
+\end{equation}
+Fix $h=|U|$ and write $u=r-h$. If $U$ already contains a contact,
+the positive contact seed followed by
+Proposition~\ref{p1:fixed:propagation} gives
+\[
+ \sum_{\substack{|U|=h\\U\ \mathrm{contains\ a\ contact}}}q(U)
+       \ll_{h,\varepsilon}N^{-1+\varepsilon}.
+\]
+The remaining $u$ centres and their factors $p^u$ cost at most
+$(Np)^u=O_r(1)$. If $U$ is separated but $C$ contains a contact,
+at least one endpoint of a contact is among the $u$ new centres.
+For fixed $U$ there are at most $O_r(BN^{u-1})$ such completions:
+either a new centre is within $O(B)$ of $U$, or two new centres are
+within $O(B)$ of each other. The cases where no completion is possible
+contribute zero. Since
+\[
+ \sum_{|U|=h}q(U)
+       =\E\binom{Z_N^\circ}{h}=O_h(1)
+\]
+by the fixed moments in Theorem~\ref{p1:fixed:moments}, these
+completions contribute $O_r(B/N)$. Summing over the finitely many
+values of $h$ proves the contact assertion. The moments used here are
+proved from the positive affine classification before this lemma; they
+do not depend on any all-cardinality centred estimate.
+\end{proof}
+
+\subsection{Primitive families at all cardinalities}
+
+\begin{theorem}[Primitive families at all cardinalities]
+\label{p1:core:primitive}
+For every fixed $w>0$ and $\varepsilon>0$,
+\begin{equation}
+ \sum_{\substack{C\subseteq G_N\ \mathrm{primitive}\\|C|\ge3}}
+ w^{|C|}\bigl(q(C)+|c(C)|\bigr)
+ \ll_{w,\varepsilon}N^{-4/5+\varepsilon}.
+ \label{p1:core:primitive-bound}
+\end{equation}
+The sum includes overlapping windows and incompatible affine systems.
+\end{theorem}
+
+\subsection{One rank loss for a primitive family}
+
+If $C$ is primitive, the projection of its relation space onto any one
+block is injective. Indeed, an element in the kernel of that projection
+would be a relation supported on a proper subfamily. Since a regular
+window has rank $L$, a primitive family of $r\ge3$ windows satisfies
+\begin{equation}
+ 1\le\rho(C)\le L,\qquad
+ q(C)\le p^{r-1},\qquad c(C)=q(C)-p^r.
+ \label{p1:core:primitive-rank}
+\end{equation}
+The last identity follows by expanding the centred product: every proper
+subfamily has joint probability equal to the product of its marginals.
+Consequently $|c(C)|\le p^{r-1}$, including when $q(C)=0$.
+
+A nonzero relation of a primitive family uses every block. Its projection
+on a regular window corresponds to a nonempty even selection of the
+$B=L+1$ values in that window. It therefore selects at least two distinct
+values there. This elementary fact is what permits a two-value counting
+argument, rather than a one-value friability estimate.
+
+The kernel, moderate-certificate, saturation graph and generating-function
+estimates used next are stated in Section~\ref{p14:cert:section} and
+proved in Section~\ref{p14:comp:certificate-tools}. Their $p$-weighted
+forms are used here on the regular set.
+
+\subsection{The finite-small-order, uniform-large-order split}
+
+Take
+\begin{equation}
+ A_0=40,\quad\beta=\frac{24}{25},\quad\sigma=\frac{49}{50},
+ \quad\delta=\frac1{1250},\quad\theta=\frac2{A_0}=\frac1{20}.
+ \label{p1:core:primitive-parameters}
+\end{equation}
+These values leave a strict margin in all subsequent inequalities.
+For a fixed $w>0$, substitute $z=wpN^{\delta/2}$ into
+Lemma~\ref{p1:core:generator}. The three quantities controlling its
+exponent satisfy
+\[
+ Mz\le N^{-\delta/2+o(1)},\qquad
+ \Delta z\le N^{-1+\theta+\delta/2+o(1)},\qquad
+ n\Delta z^2\le N^{-1+\theta+\delta+o(1)}.
+\]
+They tend to zero, and
+$nz((1+z)^\Delta-1)\le nz(e^{\Delta z}-1)=O(n\Delta z^2)$.
+Consequently, for every fixed integer $s\ge3$,
+\begin{equation}
+ \sum_{\substack{C\ \mathrm{primitive},\ |C|\ge s\\
+                         C\ \mathrm{without\ a\ moderate\ certificate}}}
+ w^{|C|}\bigl(q(C)+|c(C)|\bigr)
+ \ll_w N^{1-s\delta/2}.
+ \label{p1:core:primitive-tail}
+\end{equation}
+Indeed, removing the tilt contributes $N^{-s\delta/2}$ and the
+primitive rank bound contributes at most $2p^{-1}=O(N)$.
+For the moderate families, Lemma~\ref{p1:core:moderate} and the same
+rank bound give $N^{1-2\beta+4/A_0+o(1)}=N^{-41/50+o(1)}$.
+
+\begin{proof}[Proof of Theorem~\ref{p1:core:primitive}]
+Use $s=5000$, so the nonmoderate tail in
+\eqref{p1:core:primitive-tail} is $O_w(N^{-1})$.
+For each of the finitely many sizes $3\le r<s$, the fixed-order
+primitive estimate in Proposition~\ref{p1:fixed:primitive} gives
+$O_{r,\varepsilon}(N^{-4/5+\varepsilon})$
+for the positive mass of separated families. Compatible contacts and
+their fixed-order extensions contribute $O_{r,\varepsilon}(N^{-1+\varepsilon})$.
+Lemma~\ref{p1:core:fixed-centred} controls $|c(C)|$,
+including contacts and incompatibility. Alternatively, for a primitive
+one can use $|c(C)|\le q(C)+p^r$ and the fixed-order support count.
+Replacing its fixed weight by $w^r$ costs only a constant on this
+finite set of sizes. Add these estimates to the two large-size bounds.
+No fixed-order estimate has been applied with $r=r(N)$.
+\end{proof}
+
+\section{One distinguished pair after compression}
+\label{p1:core:compression-section}
+
+The approximation will keep the contribution of one good pair.
+To control additional relations above it, the pair must first be
+treated as a single affine block. Centring this new block is different
+from centring its two original indicators; we retain the distinction
+until the final identity of this section.
+
+For an affine-compatible good pair $e=\{x,y\}$ of channel
+$(a,b)=(2,3)$ or $(3,4)$,
+let $J_e=J_xJ_y$, $q_e=\E J_e$ and $V_e=S_x+S_y$.
+Its exact compression has centre $X_e=bx$, offset
+$h_e=ay-bx=O(B)$, and values
+\[
+ U_e=b\mathcal V_x\cup a\mathcal V_y,
+ \qquad \mathcal V_x=\{x-1,x,\ldots,x+L-1\}.
+\]
+Thus $U_e$ is a set of integer values, while $V_e$ is a vector space.
+Lemma~\ref{p1:arith:compression} gives an
+injective even-selection representation on the distinct values of
+$U_e$, width $O(B)$, at most $2B$ values, and
+\begin{equation}
+ r_e=\dim V_e\ge\kappa_bL-O(1),\qquad
+ q_e=2^{-r_e}\ll N^{-\kappa_b},\qquad \kappa_b=2-1/b.
+ \label{p1:core:compressed-rank}
+\end{equation}
+There are $B^{O(1)}$ possible motifs; for a fixed motif its centre
+determines the pair subject to the integral congruences. The affine
+event itself is preserved, without an additional random sign from the
+multipliers.
+
+For a set $A$ of original windows disjoint from $e$, put
+\[
+ q(e,A)=\E\left[J_e\prod_{z\in A}J_z\right],\qquad
+ \widehat c(e,A)=\E\left[(J_e-q_e)\prod_{z\in A}(J_z-p)\right].
+\]
+The configuration is primitive after compression when the spaces
+$V_e,(S_z)_{z\in A}$ are primitive. Its number of compressed blocks
+is $r=|A|+1$ and its number of original windows is $r+1$.
+
+\begin{theorem}[A distinguished compressed pair at all cardinalities]
+\label{p1:core:compressed}
+For fixed $w>0$, let
+\[
+ \mathcal P_b(w)=\sum_{\substack{(e,A)\ \mathrm{primitive\ after\ compression}\\
+                  e\ \mathrm{in\ channel}\ a:b,\ |A|\ge1}}
+ w^{|A|+2}\{q(e,A)+|\widehat c(e,A)|+|c(e\cup A)|\}.
+\]
+Then, for each $\varepsilon>0$,
+\begin{align}
+ \mathcal P_3^{\mathrm{sep}}(w)&\ll_{w,\varepsilon}N^{-4/3+\varepsilon},&
+ \mathcal P_4^{\mathrm{sep}}(w)&\ll_{w,\varepsilon}N^{-5/4+\varepsilon},
+ \label{p1:core:compressed-separated}\\
+ \mathcal P_b(w)&\ll_{w,\varepsilon}N^{-1+\varepsilon},&&b=3,4.
+ \label{p1:core:compressed-all}
+\end{align}
+The superscript restricts all original windows to be separated. The
+pair remains distinguished in each sum.
+\end{theorem}
+
+\begin{proof}
+Projection onto any original singleton block is injective on the
+primitive relation space. Thus its nullity is at most $L$, and
+\begin{equation}
+ \widehat c(e,A)=q(e,A)-q_ep^{r-1},\qquad
+ q(e,A),\ |\widehat c(e,A)|\le q_ep^{r-2}
+       \ll N^{2-\kappa_b}p^r.
+ \label{p1:core:compressed-cost}
+\end{equation}
+For an incompatible configuration, the centred value is exactly
+$-q_ep^{r-1}$. These estimates retain the saving from the pair rank.
+
+Use the parameters \eqref{p1:core:primitive-parameters}. The two-anchor
+certificate works on the compressed block as well: all its distinct
+values lie in an interval of width $O(B)$ and are $O(N)$, so their
+large kernels are coprime. Replace the moderate threshold by $C_2NB$
+for a sufficiently large fixed constant, and put
+$m_*=\lceil2\log(C_5N)/\log Y\rceil$, where $C_5$ bounds all
+compressed values divided by $N$. With $P_N=B^{O(1)}$ possible
+pair motifs, the ordered moderate host count is at most
+\[
+ P_N C_3^r r^2B^4N^rT^{-2}(C_4rB)^{m_*}.
+\]
+There is only one factor $P_N$, since only one compressed block is
+present. Dividing by $r!$, using \eqref{p1:core:compressed-cost} and
+summing the exponential series as before gives
+\begin{equation}
+ N^{2-\kappa_b-2\beta+4/A_0+o(1)}
+       =N^{-\kappa_b+9/50+o(1)}
+ \label{p1:core:compressed-moderate}
+\end{equation}
+for each of the first two masses. The factors $P_N$ and $C_4^{m_*}$
+are $N^{o(1)}$.
+
+For the nonmoderate sector use a typed graph whose vertices are all
+original windows and all possible compressed good-pair blocks of the
+fixed channel. It has $n_*=N^{1+o(1)}$ vertices,
+$M_*=N^{1-\delta+o(1)}$ marked vertices, and maximum saturation degree
+$\Delta_*=N^{\theta+o(1)}$. In the incoming and outgoing degree
+counts a fixed motif adds only $B^{O(1)}$ choices. Every unmarked
+vertex of a primitive configuration of at least three blocks has a
+saturated neighbour. Lemma~\ref{p1:core:generator}, with
+$z=wpN^{\delta/2}$, is still bounded because
+$M_*z$, $\Delta_*z$, and $n_*\Delta_*z^2$ tend to zero with strict
+power margins. We may enlarge the generating function to all typed
+families, then retain \eqref{p1:core:compressed-cost} for the
+configurations with exactly one distinguished pair. For each fixed
+$s\ge3$, this bounds their tail by
+\[
+ O_w(N^{2-\kappa_b-s\delta/2}).
+\]
+At $s=5000$ this is $O_w(N^{-\kappa_b})$.
+
+It remains to treat finitely many $2\le r<5000$. For separated
+configurations with fixed $r\ge3$,
+Proposition~\ref{p1:fixed:compressed} bounds their homogeneous mass by
+$O_{r,\varepsilon}(N^{-\kappa_b+\varepsilon})$.
+This bounds both $q$ and $|\widehat c|$, since the latter is at most
+the homogeneous mass even when the full affine configuration is
+incompatible. For $r=2$, the pair-and-target estimate of
+Proposition~\ref{p1:arith:fixed-homogeneous-seeds} gives respectively
+$O_\varepsilon(N^{-4/3+\varepsilon})$ and
+$O_\varepsilon(N^{-5/4+\varepsilon})$ for the same homogeneous
+majorant. Thus no phase restriction is needed in the separated estimate.
+
+For the contact sector, Proposition~\ref{p1:fixed:propagation} bounds the
+mass of the $r+1$ original windows by $O_{r,\varepsilon}(N^{-1+\varepsilon})$.
+The number of possible distinguished pairs in such a fixed-size
+family is bounded in terms of $r$. The deterministic host count for
+these contacts is $N^{r-1+o(1)}$: the good pair costs $NB^{O(1)}$,
+and a contact removes one remaining free centre. Multiplying by the
+centering term $q_ep^{r-1}$ gives $N^{-\kappa_b+o(1)}$.
+The identity in \eqref{p1:core:compressed-cost} therefore bounds
+$|\widehat c|$ on contacts, including incompatible configurations.
+Together with the two tails, these bounds prove
+\eqref{p1:core:compressed-separated}--\eqref{p1:core:compressed-all}
+for $q$ and $|\widehat c|$.
+
+Finally, $A$ is a nonempty direct family, and expansion of
+$(J_x-p)(J_y-p)$ gives the exact identity
+\begin{equation}
+ c(e\cup A)=\widehat c(e,A)
+                -p\,c(\{x\}\cup A)-p\,c(\{y\}\cup A).
+ \label{p1:core:centering-change}
+\end{equation}
+Each endpoint family is direct or primitive: a proper subset
+containing the endpoint is contained in a proper direct family of
+compressed blocks. A fixed original primitive family of size $r$
+can be extended by a distinguished companion in at most $O(rB)$ ways,
+since the deterministic good-pair degree is $O(B)$. Hence the sum of
+the two corrections is bounded by a fixed multiple of
+\[
+ wpB\sum_{r\ge2}r w^r
+             \sum_{\substack{D\ \mathrm{primitive}\\|D|=r}}|c(D)|.
+\]
+For $r\ge3$, absorb $r$ into a slightly larger fixed weight and use
+Theorem~\ref{p1:core:primitive}; for $r=2$, use the total pair activity
+$O(LN^{-2/3})$. The result is
+$O_{w,\varepsilon}(pB(LN^{-2/3}+N^{-4/5+\varepsilon}))
+ =O_{w,\varepsilon}(N^{-5/3+\varepsilon})$.
+This is smaller than each claimed bound and proves the assertion for
+the original centred coefficient as well.
+\end{proof}
+
+\subsection{The active structure outside a small event}
+
+\begin{lemma}[A single pair is the only remaining active component]
+\label{p1:core:exceptional}
+There exists an event $E_*$ with
+$\P(E_*)\ll_\varepsilon N^{-4/5+\varepsilon}$ such that, outside
+$E_*$, all active spaces are a direct sum of singleton spaces and at
+most one compressed good-pair space. In particular every active
+subfamily has nullity at most $L/3+O(1)$.
+\end{lemma}
+\begin{proof}
+Exclude an active contact, an active nongood dependent pair, an active
+primitive family of at least three original windows, two distinct
+active good pairs, and an active primitive family after compression of
+a good pair. The pair and contact estimates, the two-pair seed bound in
+Proposition~\ref{p1:arith:fixed-homogeneous-seeds}, and
+Theorems~\ref{p1:core:primitive} and~\ref{p1:core:compressed}
+bound the union by the asserted probability. All sums here are positive.
+
+If no good pair is active, a minimal dependent active subfamily would
+be one of the excluded families. If exactly one good pair is active,
+compress it. A minimal dependent subfamily of the resulting blocks
+either avoids the compressed block, giving an excluded original
+primitive, or contains it, giving an excluded compressed primitive.
+Thus the remaining compressed blocks are direct. The only rank loss
+is that of the good pair, at most $L/3+O(1)$.
+\end{proof}
+
+\section{Connected coefficients with bounded compatible nullity}
+\label{p1:core:nullity-section}
+
+The preceding theorems concern minimal dependent families. The
+boundary of the stopped expansion can contain larger connected
+families. We first control all cardinalities when the compatible
+nullity is less than two window ranks. We then remove the restriction
+on that fixed nullity level over the growing range needed by the
+expansion.
+
+\subsection{A two-anchor estimate at every cardinality}
+
+\begin{theorem}[All cardinalities below two ranks]
+\label{p1:core:low-nullity}
+For fixed $0\le\eta<2$, $w>0$ and $\varepsilon>0$,
+\begin{equation}
+ \sum_{\substack{C\subseteq G_N\ \mathrm{connected},\ |C|\ge3\\
+                  \rho_*(C)\le\eta L}}
+ w^{|C|}|c(C)|
+ \ll_{\eta,w,\varepsilon}
+ N^{-\min\{4/5,\,2-\eta\}+\varepsilon}.
+ \label{p1:core:low-nullity-bound}
+\end{equation}
+\end{theorem}
+\begin{proof}
+Expansion of the centred product gives
+\begin{equation}
+ |c(C)|\le 2^{|C|}p^{|C|}2^{\rho_*(C)}
+       \ll_\eta N^\eta(2p)^{|C|}.
+ \label{p1:core:compatible-majorant}
+\end{equation}
+The Fourier expansion also shows that $c(C)\ne0$ implies a relation
+meeting every block: centring removes the zero Fourier coordinate in
+each factor. Such a relation again selects at least two values per
+block. Therefore a family with nonzero coefficient and no moderate
+certificate has only marked isolated vertices in the saturation graph.
+No independence assertion about the edges of that graph is used.
+
+With the parameters in \eqref{p1:core:parameter-conditions}, the
+moderate sector, by Lemma~\ref{p1:core:moderate}, costs
+$N^{\eta-2\beta+4/A_0+o(1)}$. The graph generator bounds its
+nonmoderate tail beyond any fixed size $s$ by
+$O_{\eta,w}(N^{\eta-s\delta/2})$.
+For $0<\varepsilon<\min\{1,2-\eta\}$ choose
+\[
+ A_0>\max\{40,32/\varepsilon\},\qquad
+ \beta=1-\varepsilon/16,\qquad
+ \sigma=1-1/(2A_0).
+\]
+Then $\delta=\varepsilon/(32A_0)$, $2/A_0+\delta<1$, and
+$2-2\beta+4/A_0<\varepsilon/4$. Choose a fixed integer $s$ with
+$s\delta/2\ge\eta+1$. The moderate part has the required
+$2-\eta$ exponent, the nonmoderate tail is $O(N^{-1})$, and
+the finitely many connected sizes $3\le r<s$ are handled by
+Lemma~\ref{p1:core:fixed-centred}.
+Shrinking the margins there gives \eqref{p1:core:low-nullity-bound}.
+Larger values of $\varepsilon$ follow from smaller ones.
+\end{proof}
+
+At $\eta=1$, this already gives the $4/5$ exponent at all sizes.
+At $\eta=3/2$, however, the two-anchor estimate would give only
+the exponent $1/2$. We need more anchors where a block carries many
+independent relation coordinates.
+
+\subsection{Projection dimensions and positive cores}
+
+For a family $D$, let $\mathcal K(D)$ be the kernel of the sum map
+$\bigoplus_{x\in D}S_x\to\sum_{x\in D}S_x$. The dimension of its
+projection onto $S_x$ is
+\begin{equation}
+ d_x(D)=\rho(D)-\rho(D\setminus\{x\})
+       =\dim\left(S_x\cap\sum_{y\in D\setminus\{x\}}S_y\right).
+ \label{p1:core:projection-dimension}
+\end{equation}
+The kernel of that projection is exactly
+$\mathcal K(D\setminus\{x\})$, which proves the identity.
+
+If $t$ is even, a subspace of dimension at least $t-1$ in the
+even-selection space contains a vector of weight at least $t$.
+Indeed, choose $t-1$ pivot coordinates and set all of them equal to
+one. The resulting vector has weight at least $t-1$, and its weight
+is even. Call $D$ a \emph{$t$-core} when $d_x(D)\ge t-1$ for every
+$x\in D$. At each of its blocks a relation therefore selects at least
+$t$ distinct values. The selected relation may depend on the block.
+
+\begin{proposition}[Positive mass of high-nullity cores]
+\label{p1:core:positive-core}
+Fix $\eta>1$, an even integer $t\ge\eta+2$, and $v>0$. Then
+\begin{equation}
+ \sum_{\substack{D\ \mathrm{compatible},\ D\ t\mathrm{-core}\\
+                  L/2<\rho(D)\le\eta L}}
+ v^{|D|}q(D)\ll_{\eta,t,v,\varepsilon}N^{-4/5+\varepsilon}
+ \label{p1:core:positive-core-bound}
+\end{equation}
+for every $\varepsilon>0$, with no restriction on the cardinality.
+\end{proposition}
+\begin{proof}
+We give the multiple-anchor count explicitly. Set
+\[
+\begin{gathered}
+ A_0=8t,\qquad Y=(\log N)^{A_0},\qquad
+ \beta=1-\frac1{4t},\qquad T=N^\beta,\\
+ \sigma=1-\frac1{16t},\qquad\delta=\frac1{64t^2},\qquad
+ m_t=\left\lceil\frac{t\log(3N)}{\log Y}\right\rceil.
+\end{gathered}
+\]
+The number of marked windows remains $N^{1-\delta+o(1)}$.
+At an unmarked anchor choose $t$ selected values. Their kernel
+product $Q$ is squarefree, with $T^t<Q\le(3N)^t$ and at most $m_t$
+prime factors. A moderate allocation has $D_j\le6NB$ for each
+receiver. At most $t$ received modules exceed $N$, so its CRT cost is
+\[
+ \prod_{j\ne\mathrm{anchor}}(1+N/D_j)
+ \le2^{r-1}(6B)^tN^{r-1}T^{-t}.
+\]
+The corresponding ordered host count is at most
+$6^t rB^{2t}2^{r-1}N^rT^{-t}(rB)^{m_t}$.
+Multiplication by $(up)^r/r!$ and the same exponential-series
+estimate as before give, for fixed $u>0$,
+\[
+ \sum_r\frac{(up)^r}{r!}|\mathcal U_{r,t}|
+ \le N^{-t\beta+2t/A_0+o(1)}.
+\]
+Here $\log(B^{m_t+2t}(m_t+1)!)=(2t/A_0+o(1))\log N$.
+Since $q(D)\ll_\eta N^\eta p^{|D|}$, the positive moderate mass is
+\begin{equation}
+ N^{\eta-t\beta+2t/A_0+o(1)}
+       =N^{\eta-t+1/2+o(1)}\le N^{-3/2+o(1)}.
+ \label{p1:core:multi-anchor-gain}
+\end{equation}
+
+For the remaining cores, define saturation using $t$ anchor values.
+The outgoing degree is bounded by $B^t(B+1)^{m_t}$. For the incoming
+degree, the fixed receiver has at most
+$R=\lceil B\log(3N)/\log Y\rceil$ possible primes; the codes are
+bounded by
+$B^t\sum_{j\le m_t}\binom Rj t^j$.
+As in Lemma~\ref{p1:core:degrees}, a qualifying code has modulus
+greater than $N$ and determines at most one centre. Both degrees are
+$N^{t/A_0+o(1)}=N^{1/8+o(1)}$.
+Every unmarked vertex of a nonmoderate $t$-core has a saturated
+neighbour. Lemma~\ref{p1:core:generator}, tilted by $N^{\delta/2}$,
+therefore bounds the positive mass beyond fixed size $s$ by
+$O_{\eta,v}(N^{\eta-s\delta/2})$.
+Choose $s\ge128t^2(\eta+1)$, so this is $O(N^{-1})$.
+
+For a fixed size $h<s$, compatibility and $\rho(D)>L/2$ imply that
+activation of $D$ occurs inside the event $E_*$ of
+Lemma~\ref{p1:core:exceptional}. Indeed, its complement permits
+nullity at most $L/3+O(1)$. For every fixed integer $k>1$, H\"older
+and the bounded fixed moments of Theorem~\ref{p1:fixed:moments} give
+\[
+ \sum_{\substack{|D|=h,\ D\ \mathrm{compatible}\\\rho(D)>L/2}}q(D)
+ \le\E\left[\binom{Z_N^\circ}{h};E_*\right]
+ \le C_{h,k}\P(E_*)^{1-1/k}.
+\]
+Choose $k$ large enough that $4/(5k)<\varepsilon/3$, then use a
+sufficiently small fixed margin in the bound for $\P(E_*)$.
+The result is $O_{h,\varepsilon}(N^{-4/5+\varepsilon})$.
+Only finitely many sizes $h$ are involved. Adding these to
+\eqref{p1:core:multi-anchor-gain} and the saturated tail proves
+\eqref{p1:core:positive-core-bound}. The distributional approximation
+being proved in this paper is not used in this argument.
+\end{proof}
+
+\subsection{Removing blocks with small relation projections}
+
+\begin{theorem}[Bounded compatible nullity on the growing range]
+\label{p1:core:bounded-nullity}
+For every fixed $\eta\ge0$, $w>0$, $\varepsilon>0$ and every
+$K_N=o(L)$,
+\begin{equation}
+ \sum_{\substack{C\subseteq G_N\ \mathrm{connected}\\
+          3\le|C|\le K_N,\ \rho_*(C)\le\eta L}}
+ w^{|C|}|c(C)|\ll_{\eta,w,\varepsilon}N^{-4/5+\varepsilon}.
+ \label{p1:core:bounded-nullity-bound}
+\end{equation}
+For $\eta>1$, choose a fixed even $t\ge\eta+2$ and set $d=t-2$.
+The estimate holds uniformly whenever $K_N\le L/(2d)$. In particular,
+for $\eta=3/2$ one may take $t=4$, $d=2$ and $K_N\le L/4$.
+\end{theorem}
+\begin{proof}
+Theorem~\ref{p1:core:low-nullity} handles $\rho_*(C)\le L$.
+For $L<\rho_*(C)\le\eta L$, choose a compatible subfamily
+$A\subseteq C$ attaining $\rho(A)=\rho_*(C)$, using a fixed
+lexicographic rule if needed. Remove from $A$ any block whose
+relation projection has dimension at most $d$, until none remains.
+Let $D$ be the resulting family. Equation~\eqref{p1:core:projection-dimension}
+shows that
+\[
+ 0\le\rho(A)-\rho(D)\le d(|A|-|D|)\le dK_N\le L/2.
+\]
+Thus $D$ is a nonempty compatible $t$-core with
+$L/2<\rho(D)\le\eta L$.
+If $r=|C|$ and $h=|D|$, the centred expansion and the rank bound give
+\begin{equation}
+ |c(C)|\le2^r p^r2^{\rho_*(C)}
+        \le2^r(2^dp)^{r-h}q(D).
+ \label{p1:core:peeling-weight}
+\end{equation}
+The elements of $C\setminus A$ are included in $p^{r-h}$; they need
+not have been removed by the algorithm. This also covers incompatible
+families $C$.
+
+Sum \eqref{p1:core:peeling-weight} over all admissible cores and all
+their supersets. Dropping restrictions on the latter only increases
+the sum. With $n=|G_N|$ and $np\le Np=\lambda$, this gives
+\begin{align*}
+ \sum_{\substack{|C|\le K_N\\L<\rho_*(C)\le\eta L}}
+ w^{|C|}|c(C)|
+ &\le\sum_{D\ \mathrm{admissible}}(2w)^{|D|}q(D)
+        (1+2^{d+1}wp)^{n-|D|}\\
+ &\le e^{2^{d+1}w\lambda}
+        \sum_{D\ \mathrm{admissible}}(2w)^{|D|}q(D).
+\end{align*}
+The last sum is bounded by Proposition~\ref{p1:core:positive-core}.
+There is no factor for the deletion order: a deterministic choice
+assigns one core to each family, and summing over all supersets already
+overcounts the original family. The exponential factor is constant
+because $d,w$ are fixed and $\lambda$ is bounded. Adding the sector
+$\rho_*(C)\le L$ proves the theorem.
+\end{proof}
+
+For the required value $\eta=3/2$, the choices in the positive-core
+proof are
+$A_0=32$, $\beta=15/16$, $\sigma=63/64$, $\delta=1/1024$ and
+$s=5120$. Its moderate mass is $N^{-2+o(1)}$, its saturated tail is
+$O(N^{-1})$, and only fixed sizes below $5120$ use fixed moments.
+This supplies the whole range containing
+$K_N\asymp\log N/\log\log N$ without promoting a fixed-order
+estimate to a growing-order one.
+
+The same deletion argument gives the positive corollary
+\[
+ \sum_{\substack{D\ \mathrm{compatible},\ |D|\le K_N\\
+                    L<\rho(D)\le\eta L}}
+ w^{|D|}q(D)\ll_{\eta,w,\varepsilon}N^{-4/5+\varepsilon}.
+\]
+The centred form \eqref{p1:core:bounded-nullity-bound}, rather than
+this additional corollary, is the estimate used by the stopped
+expansion below.

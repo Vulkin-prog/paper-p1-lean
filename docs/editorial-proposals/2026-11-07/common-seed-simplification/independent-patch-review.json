@@ -1,0 +1,690 @@
+{
+  "schema_version": 1,
+  "status": "complete_frozen",
+  "review_stage": "exact_patch_review",
+  "date": "2026-11-07",
+  "title": "Relecture indépendante du diff exact de mutualisation des graines positives",
+  "documentary_base_commit": "b35adf3c7390e6c957be2ed07baf3518ff7a2774",
+  "proof_source_commit": "d342b507332315c67b1463009061c03f14b5be9b",
+  "patch_sha256": "74e24932b75078ba13c7f238fcbfe235a03c693c9b487a987f9974de380ef28b",
+  "inputs": [
+    {
+      "path": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-common-seed-preview/proposal/common-seed-simplifications.patch",
+      "sha256": "74e24932b75078ba13c7f238fcbfe235a03c693c9b487a987f9974de380ef28b"
+    },
+    {
+      "path": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-common-seed-preview/proposal/patch-validation.json",
+      "sha256": "53a90b47dd7dc54c1675c07e7d4e297aff811caf60ee0a2a566fd6ed951d7258"
+    },
+    {
+      "path": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-common-seed-preview/scientific-sources-manifest.json",
+      "sha256": "05d32214f0eced680a789f6b9f83d163d84fc282e582d74930f44e56585bdfde"
+    },
+    {
+      "path": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-common-seed-preview/scope/compiled-types.json",
+      "sha256": "1a6156501b32b8341bbed930dd8759498caa94c45c14254c9d2e160f4a316e83"
+    },
+    {
+      "path": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-common-seed-preview/scope/compiled-types-validation.json",
+      "sha256": "7de9739b808fb9b50774f6eb270823deaea8b921e1b6944be602f82ce105f097"
+    }
+  ],
+  "proposed_sources_root": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-common-seed-preview/patched-scientific-sources",
+  "summary": {
+    "verdict": "accepte_dans_le_perimetre_mathematique_et_editorial_relu",
+    "mathematical_gaps_confirmed": 0,
+    "necessary_corrections": 0,
+    "compiled_types_read": 21,
+    "new_proofs_or_coverage_claimed": 0,
+    "numbered_results_preserved": 167,
+    "main_effect": "Une seule masse homogène positive d’interactions de bonnes paires remplace la classification locale répétée ; les raccords affines etPalm restent explicites.",
+    "net_source_lines_saved": 51,
+    "net_proof_lines_saved": 50,
+    "page_gain_measured_by_reviewer": false
+  },
+  "mechanical_checks": {
+    "forward_exact_in_memory_patch_application": true,
+    "files_in_manifest_checked": 48,
+    "changed_file_pairs": [
+      {
+        "file": "companion_sections/arithmetic.tex",
+        "before_sha256": "944fb581259756096535c49dada0d3f31d1652bc1010aacbffe3174de5ed0d43",
+        "after_sha256": "3b16c88f219ea6fcc7c0cd329058067757a737a8cf7110a81b75b7dfc8dcaa9a",
+        "source_lines_before": 176,
+        "source_lines_after": 165,
+        "source_lines_saved": 11
+      },
+      {
+        "file": "companion_sections/arithmetic_appendix.tex",
+        "before_sha256": "41878897337c3b5c3d1119591c98cc2c450e54524c231c90b90b64b1f45a3355",
+        "after_sha256": "897f871a5f36e4b1e8fd59472dc6805305b5e0f078219956725e895458c48e71",
+        "source_lines_before": 1328,
+        "source_lines_after": 1290,
+        "source_lines_saved": 38
+      },
+      {
+        "file": "companion_sections/fixed_moments.tex",
+        "before_sha256": "f1a485e16cfacee3bb0d16acb17bc1d1513ff554528de0e735602386fd0292d4",
+        "after_sha256": "90d5f2dafccb74afc39a55425058adee305864b81a994b169a5b21dc254913ac",
+        "source_lines_before": 360,
+        "source_lines_after": 356,
+        "source_lines_saved": 4
+      },
+      {
+        "file": "companion_sections/guide.tex",
+        "before_sha256": "d577335e0bf99b67f7e1e859c2e27593f7db1893feb58d9e0eca20476cb463d1",
+        "after_sha256": "5172e1a25ee29c12657b068f870581761e2a835ec4b61de9a4629ddd2f53fabc",
+        "source_lines_before": 173,
+        "source_lines_after": 175,
+        "source_lines_saved": -2
+      }
+    ],
+    "numbered_blocks_compared": 167,
+    "unchanged_numbered_blocks": 166,
+    "changed_numbered_blocks": [
+      {
+        "label": "p1:arith:fixed-homogeneous-seeds",
+        "file": "companion_sections/arithmetic_appendix.tex",
+        "before_sha256": "5fce2ec24ccfa788f85b2c9a7b7918d032bb754e146f81d4f5c0a10402534d82",
+        "after_sha256": "929a1e731957abed678a1f3d2c7b330600f780405c7fa1fdde40a8c3878c7991"
+      }
+    ],
+    "labels_before": 548,
+    "labels_after": 548,
+    "label_multisets_identical": true,
+    "duplicate_labels": 0,
+    "unresolved_refs_eqrefs_pagerefs": 0,
+    "pointwise_T1_11_statement_and_proof_byte_identical": true,
+    "pointwise_T1_11_statement_plus_proof_sha256": "4bbcb160544a585d24872e0fb13bb9baa0865e3cb744563ab3c65439f1743c5c",
+    "nonaligned_27_lines_preserved_verbatim": true,
+    "nonaligned_preserved_sha256": "8feba7f919e349b43ecec3ebc4565292787e40dc6c4b4fe6cae78f90b67d6efb",
+    "nonaligned_hash_boundary": "Du début For disjoint edges au saut de ligne final suivant la phrase The entire nonaligned excess… ;27 lignes.",
+    "proof_line_counts": {
+      "T1.12": {
+        "before": 64,
+        "after": 80,
+        "saved": -16
+      },
+      "T1.17": {
+        "before": 77,
+        "after": 26,
+        "saved": 51
+      },
+      "T3.1": {
+        "before": 25,
+        "after": 14,
+        "saved": 11
+      },
+      "T4.4_one_target": {
+        "before": 7,
+        "after": 3,
+        "saved": 4
+      }
+    },
+    "net_source_lines_saved": 51,
+    "net_proof_lines_saved": 50,
+    "actual_PDF_numbers_or_rendering_reviewed": false
+  },
+  "findings": [
+    {
+      "id": "CS01",
+      "result": "T1.12(2), masse homogène àune cible",
+      "verdict": "accepte",
+      "locations": [
+        {
+          "file": "companion_sections/arithmetic_appendix.tex",
+          "lines": [
+            961,
+            1011
+          ],
+          "proposed_path": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-common-seed-preview/patched-scientific-sources/companion_sections/arithmetic_appendix.tex"
+        }
+      ],
+      "comparison": [
+        "Le domaine est explicitement la famille géométrique bruteA_raw, surG_N, avec starts distincts séparés. Le crossing est un vecteur effectif non nul dansS_z∩ΣS_x.",
+        "La bonne source est explicitement dépendante avant de conclure àla connexité triple. Le variant homogène de14.3 porte sur ces triples, y compris incompatibles ; le marquage coûte au plus3.",
+        "Le taux41/30 dans les deux canaux vient du type effectif actuel. Le canonique historique deT1.12 est conservé pour ses autres clauses, sans lui attribuer une puissance qu’il ne contient pas."
+      ],
+      "entry_points": [
+        "PaperP1.HomogeneousEffectiveGoodPairExtensions.uniform_mass",
+        "PaperP1.FixedHomogeneousSeedTheorem.companion_T1_12"
+      ],
+      "quantifiers": "Canaux2:3 et3:4 fixés, puisC,ε ; seuil avantN,L,H et avant toute restriction déterministe àG_N. Aucun degré croissant.",
+      "necessary_corrections": []
+    },
+    {
+      "id": "CS02",
+      "result": "Masse positive commune des arêtes interactives",
+      "verdict": "accepte_avec_tous_les_cas_necessaires",
+      "locations": [
+        {
+          "file": "companion_sections/arithmetic_appendix.tex",
+          "lines": [
+            1004,
+            1070
+          ],
+          "proposed_path": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-common-seed-preview/patched-scientific-sources/companion_sections/arithmetic_appendix.tex"
+        }
+      ],
+      "comparison": [
+        "La somme est sur couples ORDONNÉS distincts de bonnes paires brutes, àunion séparée et intersection non nulle entre leurs espaces entiers. Elle est homogène et positive.",
+        "Sommet partagé : triple connexe et multiplicité bornée. Le nonaligné autonome est conservé verbatim ; l’entierδ>0 etδ≤δ* donnent le facteur2 qui transforme l’excès en masse complète.",
+        "Dans le secteur de centres comprimés alignés, les motifs unitaires fixent les partenaires et les codes de pente/déplacement laissent un seul centre libre :NB^O(1) quadruples. Il n’y a pas de facteurN supplémentaire.",
+        "SiS_z∩W_e≠0, le triple est connexe ; àtriple fixé, le mate de z aO(B) choix dans le graphe géométrique brut, et la probabilité àquatre starts est≤celle du triple.",
+        "SiS_z∩W_e=0, q0(e∪f)≤q0(e∪{z})=q0(e)p. La borne sourceN^(-κ_b+o1) et le compteNB^O(1) donnentN^(-κ_b+o1). Ce cas couvre bien une intersection positive entre sommes lorsque les deux crossings singleton sont nuls.",
+        "Le paragraphe ne suppose aucune compatibilité affine et ne déduit aucune masse positive d’un cumulant signé."
+      ],
+      "entry_points": [
+        "PaperP1.TwoGoodPairMass.principal_interactions",
+        "PaperP1.PrivatePairInteractionMass.uniform_bound"
+      ],
+      "body_scope_note": "Le corpsLean dePrivatePairInteractionMass ferme la branche alignée via la population élargieScaledAlignedTripleMass.uniform_extensions, sans supposer la connexité d’un triple. Le texte rédigé utilise la séparation explicite en crossing singleton positif/nul et le compte élémentaire des codes ; les cibles, poids et domaines correspondent, sans prétendre àune identité ligne par ligne des deux algorithmes de preuve.",
+      "necessary_corrections": []
+    },
+    {
+      "id": "CS03",
+      "result": "T1.12(3), borne pure de deux bonnes paires",
+      "verdict": "accepte_constante_fixe",
+      "locations": [
+        {
+          "file": "companion_sections/arithmetic_appendix.tex",
+          "lines": [
+            980,
+            989
+          ],
+          "proposed_path": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-common-seed-preview/patched-scientific-sources/companion_sections/arithmetic_appendix.tex"
+        },
+        {
+          "file": "companion_sections/arithmetic_appendix.tex",
+          "lines": [
+            1057,
+            1070
+          ],
+          "proposed_path": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-common-seed-preview/patched-scientific-sources/companion_sections/arithmetic_appendix.tex"
+        }
+      ],
+      "comparison": [
+        "Les espaces directs se factorisent exactement. La somme homogène de deux arêtes est≤le carré de la masse brute plus la masse interactive.",
+        "La première clause donne la masse bruteO_C(LN^(-2/3)). Fixer une marge interne strictement inférieure à1/30 absorbeN^(-41/30+ε′) dansL²N^(-4/3), avec constanteC fixée, puisqueL≥1 àgrande échelle critique.",
+        "La borne pure est déjà la conclusion deHomogeneousTwoEdgeScale.uniform_second ; nominal_second_eq etregular_weight donnent le même poids sur la population régulière. Le théorème complet de graines choisit effectivement sa constanteA avantε.",
+        "Aucun équivalent du second moment homogène brut n’est revendiqué ; seule une majoration est nécessaire ici."
+      ],
+      "entry_points": [
+        "PaperP1.HomogeneousEdgeInteractions.finite_upper",
+        "PaperP1.TwoGoodPairMass.uniform_homogeneous_second",
+        "PaperP1.TwoGoodPairMass.nominal_second_eq",
+        "PaperP1.HomogeneousTwoEdgeScale.uniform_second",
+        "PaperP1.FixedHomogeneousSeedTheorem.companion_T1_12"
+      ],
+      "necessary_corrections": []
+    },
+    {
+      "id": "CS04",
+      "result": "T1.17, vrai second moment affine",
+      "verdict": "accepte_sans_perte_du_raccord_de_phase",
+      "locations": [
+        {
+          "file": "companion_sections/arithmetic_appendix.tex",
+          "lines": [
+            1264,
+            1289
+          ],
+          "proposed_path": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-common-seed-preview/patched-scientific-sources/companion_sections/arithmetic_appendix.tex"
+        }
+      ],
+      "comparison": [
+        "Pour les paires compatibles deE_N, q_e=W(e). Sur les espaces disjoints, les vrais événements affines se factorisent ; les modèles finis prouvent aussi que ces espaces directs correspondent àdes ensembles d’indices disjoints au régime régulierL>0.",
+        "Sur les interactifs séparés, le joint affine vaut0 ouW(e∪f), etq_eq_f≤W(e∪f). L’inégalité absolue de covariance écrite est donc correcte, même si le joint est nul.",
+        "Diagonales et contacts stricts ontNB^O(1) produits de baseline ; chaque produit est AU PLUSN^(-10/3+o1). La sommeO(N^(-7/3+o1)) est bien une majoration. Les contacts stricts ont joint original nul ; les contacts exactementL restent dans le secteur séparé.",
+        "La masse interactive commune donne l’erreur absolue41/30. Avecε<1/30 etβ_N≈_CLN^(-2/3), elle est négligeable devantβ_N² et donne aussi la constante fixe. L’inégalité entière deBonferroni est conservée.",
+        "La classification locale des fractions supprimée est remplacée par la géométrie14.3 et la masse commune, et non par une borne supérieure homogène présentée comme équivalent affine."
+      ],
+      "entry_points": [
+        "PaperP1.TwoGoodEdgeSecondMoment.finite_upper",
+        "PaperP1.TwoGoodEdgeSecondMoment.uniform_error",
+        "PaperP1.TwoGoodEdgeSecondMoment.companion_T1_17_original",
+        "PaperP1.PrincipalEdgeSecondMomentLower.uniform_lower"
+      ],
+      "necessary_corrections": []
+    },
+    {
+      "id": "CS05",
+      "result": "T3.1, Palm positif",
+      "verdict": "accepte_positivite_avant_division",
+      "locations": [
+        {
+          "file": "companion_sections/arithmetic.tex",
+          "lines": [
+            152,
+            165
+          ],
+          "proposed_path": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-common-seed-preview/patched-scientific-sources/companion_sections/arithmetic.tex"
+        }
+      ],
+      "comparison": [
+        "La multiplication du positif conditionnel parq_e>0 est exacte sur les bonnes sources compatibles. Le support d’un terme positif impose séparation et crossing positif ; la domination par la vraie masse homogène est prouvée par les interfaces finies.",
+        "Le nouveau texte indiqueβ_{a,b}≈LN^(-1+1/b)>0 AVANT la division. Les marges permettent les deux anciens taux normalisés et les anciens taux de masses, sans changer les énoncés.",
+        "Les typesSharpGoodEdgePositivePalm conservent les cutoff de phase2bB≤H≤DB, puis8B pour les deux canaux, et un seuil uniforme enG. Aucun dénominateur nul ou masse brute substituée àβ."
+      ],
+      "entry_points": [
+        "PaperP1.GoodEdgePositivePalm.scaled_positive_part",
+        "PaperP1.GoodEdgePositivePalm.positive_points_subset",
+        "PaperP1.GoodEdgePositivePalm.finite_mass",
+        "PaperP1.SharpGoodEdgePositivePalm.finite_mass",
+        "PaperP1.SharpGoodEdgePositivePalm.uniform_mass",
+        "PaperP1.SharpGoodEdgePositivePalm.uniform_normalized",
+        "PaperP1.SharpGoodEdgePositivePalm.companion_T3_1_sharp"
+      ],
+      "necessary_corrections": []
+    },
+    {
+      "id": "CS06",
+      "result": "T4.4 àune cible, guide et rétentionT1.11",
+      "verdict": "accepte_dependances_acycliques",
+      "locations": [
+        {
+          "file": "companion_sections/fixed_moments.tex",
+          "lines": [
+            267,
+            269
+          ],
+          "proposed_path": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-common-seed-preview/patched-scientific-sources/companion_sections/fixed_moments.tex"
+        },
+        {
+          "file": "companion_sections/guide.tex",
+          "lines": [
+            66,
+            77
+          ],
+          "proposed_path": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-common-seed-preview/patched-scientific-sources/companion_sections/guide.tex"
+        }
+      ],
+      "comparison": [
+        "La clause àune cible deT4.4 renvoie désormais àT1.12(2), qui est prouvé directement par14.3 homogène ; aucun renvoi inverse deT1.12 versT4.4 n’a été ajouté.",
+        "La domination affine par l’homogène reste explicite. La preuve autonome deT4.4 àplusieurs cibles et son énoncé ne changent pas.",
+        "Le guide reflète la nouvelle route. T1.11 et sa preuve point par point sont byte-identiques ; les branches de positions ne sont pas supprimées."
+      ],
+      "necessary_corrections": []
+    }
+  ],
+  "compiled_scope": {
+    "path": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-common-seed-preview/scope/compiled-types.json",
+    "sha256": "1a6156501b32b8341bbed930dd8759498caa94c45c14254c9d2e160f4a316e83",
+    "types": 21,
+    "propositions": 21,
+    "validation_path": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-common-seed-preview/scope/compiled-types-validation.json",
+    "validation_sha256": "7de9739b808fb9b50774f6eb270823deaea8b921e1b6944be602f82ce105f097",
+    "parent_reported_actual_exit": 0,
+    "exit_file_read": "0",
+    "all_propositions_standard_axioms_only": true,
+    "permitted_axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "execution_by_this_reviewer": false,
+    "previous_19_types_compared_byte_identically": true
+  },
+  "compiled_entries_read": [
+    {
+      "declaration": "PaperP1.TwoGoodPairMass.principal_interactions",
+      "file": "PaperP1/Asymptotics/TwoGoodPairMass.lean",
+      "line": 42,
+      "source_sha256": "0c849a480682d9f3acd761bae198d35cd76242cb2c5a1ab7bd0ebe33421e2cc1",
+      "source_commit": "d342b507332315c67b1463009061c03f14b5be9b",
+      "compiled_type": "∀ (C ε : ℝ),\n  0 < ε →\n    ∃ N₀,\n      10 ≤ N₀ ∧\n        ∀ N ≥ N₀,\n          ∀ (L H : ℕ),\n            |↑L - Real.log ↑N / Real.log 2| ≤ C →\n              PaperP1.HomogeneousEdgeInteractions.mass L (PaperP1.HomogeneousChannelMass.rawPrincipal N H L)\n                  (PaperP1.HomogeneousChannelMass.rawPrincipal N H L) ≤\n                ↑N ^ (-41 / 30 + ε)",
+      "is_proposition": true,
+      "type_byte_identical_to_previous_19_read": true,
+      "body_comparison": "Combine les canaux2:3/2:3,3:4/2:3,3:4/3:4 et la symétrie pour tous les couples ordonnés. Les trois secteurs sont fermés parPrivatePairInteractionMass ; le compte ne suppose pas un croisement singleton.",
+      "verdict": "conforme_au_role_exact_attribue",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.TwoGoodPairMass.uniform_homogeneous_second",
+      "file": "PaperP1/Asymptotics/TwoGoodPairMass.lean",
+      "line": 71,
+      "source_sha256": "0c849a480682d9f3acd761bae198d35cd76242cb2c5a1ab7bd0ebe33421e2cc1",
+      "source_commit": "d342b507332315c67b1463009061c03f14b5be9b",
+      "compiled_type": "∀ (C ε : ℝ),\n  0 < ε →\n    ∃ N₀,\n      10 ≤ N₀ ∧\n        ∀ N ≥ N₀,\n          ∀ (L H : ℕ),\n            |↑L - Real.log ↑N / Real.log 2| ≤ C →\n              PaperP1.HomogeneousEdgeInteractions.second L (PaperP1.HomogeneousChannelMass.rawPrincipal N H L) ≤\n                PaperP1.PrimitiveNominalMass.mass (PaperP1.HomogeneousChannelMass.rawPrincipal N H L) L ^ 2 +\n                  ↑N ^ (-41 / 30 + ε)",
+      "is_proposition": true,
+      "type_byte_identical_to_previous_19_read": true,
+      "body_comparison": "HomogeneousEdgeInteractions.finite_upper sépare produit et vraie interaction ; regular_weight identifie la masse nominale brute à la somme homogène. La conclusion est une majoration, pas un équivalent du second moment brut.",
+      "verdict": "conforme_au_role_exact_attribue",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.TwoGoodPairMass.nominal_second_eq",
+      "file": "PaperP1/Asymptotics/TwoGoodPairMass.lean",
+      "line": 90,
+      "source_sha256": "0c849a480682d9f3acd761bae198d35cd76242cb2c5a1ab7bd0ebe33421e2cc1",
+      "source_commit": "d342b507332315c67b1463009061c03f14b5be9b",
+      "compiled_type": "∀ {N H L : ℕ},\n  2 ≤ N →\n    PaperP1.TwoGoodPairMass.nominalSecond N H L =\n      PaperP1.HomogeneousEdgeInteractions.second L (PaperP1.HomogeneousChannelMass.rawPrincipal N H L)",
+      "is_proposition": true,
+      "type_byte_identical_to_previous_19_read": true,
+      "body_comparison": "Identité sur les deux bonnes paires brutes régulières : la vraie probabilité homogène de leur union égale le poids nominal. Le filtre contient distinctness et séparation.",
+      "verdict": "conforme_au_role_exact_attribue",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.TwoGoodEdgeSecondMoment.finite_upper",
+      "file": "PaperP1/Asymptotics/TwoGoodEdgeSecondMoment.lean",
+      "line": 28,
+      "source_sha256": "557d43a812a0ca41d1b73fd2cc57ca8ed65ff561c275e92ce027bf57b35b58d1",
+      "source_commit": "d342b507332315c67b1463009061c03f14b5be9b",
+      "compiled_type": "∀ {N H L : ℕ},\n  2 ≤ N →\n    0 < L →\n      29 * (L + 1) < N →\n        PaperP1.PrincipalEdgeSpaces.jointSecond N H L ≤\n          PaperP1.PrincipalChannelEdges.beta N H L ^ 2 +\n            PaperP1.HomogeneousEdgeInteractions.mass L (PaperP1.HomogeneousChannelMass.rawPrincipal N H L)\n              (PaperP1.HomogeneousChannelMass.rawPrincipal N H L)",
+      "is_proposition": true,
+      "type_byte_identical_to_previous_19_read": true,
+      "body_comparison": "Sur espaces directs, joint_factor donne l’exact produit affine. Sinon un joint positif est séparé et dominé parq0 ; un joint nul est déjà dominé par le produit. Somme sur les paires compatibles, puis inclusion dans la famille brute homogène.",
+      "verdict": "conforme_au_role_exact_attribue",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.TwoGoodEdgeSecondMoment.uniform_error",
+      "file": "PaperP1/Asymptotics/TwoGoodEdgeSecondMoment.lean",
+      "line": 73,
+      "source_sha256": "557d43a812a0ca41d1b73fd2cc57ca8ed65ff561c275e92ce027bf57b35b58d1",
+      "source_commit": "d342b507332315c67b1463009061c03f14b5be9b",
+      "compiled_type": "∀ (C ε : ℝ),\n  0 < ε →\n    ∃ N₀,\n      10 ≤ N₀ ∧\n        ∀ N ≥ N₀,\n          ∀ (L H : ℕ),\n            |↑L - Real.log ↑N / Real.log 2| ≤ C →\n              |PaperP1.PrincipalEdgeSpaces.jointSecond N H L - PaperP1.PrincipalChannelEdges.beta N H L ^ 2| ≤\n                ↑N ^ (-41 / 30 + ε)",
+      "is_proposition": true,
+      "type_byte_identical_to_previous_19_read": true,
+      "body_comparison": "Réunit finite_upper et la masse interactive41/30 avec la minorationPrincipalEdgeSecondMomentLower.uniform_lower au coût7/3. L’erreur absolue est prouvée, sans prémisse d’approximation.",
+      "verdict": "conforme_au_role_exact_attribue",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.TwoGoodEdgeSecondMoment.companion_T1_17",
+      "file": "PaperP1/Asymptotics/TwoGoodEdgeSecondMoment.lean",
+      "line": 89,
+      "source_sha256": "557d43a812a0ca41d1b73fd2cc57ca8ed65ff561c275e92ce027bf57b35b58d1",
+      "source_commit": "d342b507332315c67b1463009061c03f14b5be9b",
+      "compiled_type": "∀ (C : ℝ) (D : ℕ),\n  ∃ K,\n    0 < K ∧\n      ∀ (δ : ℝ),\n        0 < δ →\n          ∃ N₀,\n            10 ≤ N₀ ∧\n              ∀ N ≥ N₀,\n                ∀ (L H : ℕ),\n                  |↑L - Real.log ↑N / Real.log 2| ≤ C →\n                    8 * (L + 1) ≤ H →\n                      H ≤ D * (L + 1) →\n                        have M :=\n                          ∫ (ω : PaperP1.Model.InfiniteRademacher.InfiniteSample),\n                            PaperP1.ActiveEdgeObservables.value (PaperP1.PrincipalChannelEdges.edges N H L) L ω ^ 2 -\n                              PaperP1.ActiveEdgeObservables.value (PaperP1.PrincipalChannelEdges.edges N H L) L\n                                ω ∂PaperP1.Model.InfiniteRademacher.infiniteRademacherMeasure;\n                        |M - PaperP1.PrincipalChannelEdges.beta N H L ^ 2| ≤\n                            δ * PaperP1.PrincipalChannelEdges.beta N H L ^ 2 ∧\n                          M ≤ K * (↑L * ↑N ^ (-2 / 3)) ^ 2 ∧\n                            0 ≤\n                                PaperP1.PrincipalChannelEdges.beta N H L -\n                                  PaperP1.ActiveEdgeObservables.probability (PaperP1.PrincipalChannelEdges.edges N H L)\n                                    L ∧\n                              PaperP1.PrincipalChannelEdges.beta N H L -\n                                  PaperP1.ActiveEdgeObservables.probability (PaperP1.PrincipalChannelEdges.edges N H L)\n                                    L ≤\n                                M / 2",
+      "is_proposition": true,
+      "type_byte_identical_to_previous_19_read": true,
+      "body_comparison": "Fixe une marge1/60 dansuniform_error, utiliseβ² minoré par un multiple positif deN^(-4/3), choisitN0 aprèsδ et conserveK avantδ. Identifie le second moment de la vraie observable, puis applique la borne deBonferroni.",
+      "verdict": "conforme_au_role_exact_attribue",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.TwoGoodEdgeSecondMoment.companion_T1_17_original",
+      "file": "PaperP1/Asymptotics/TwoGoodEdgeSecondMoment.lean",
+      "line": 142,
+      "source_sha256": "557d43a812a0ca41d1b73fd2cc57ca8ed65ff561c275e92ce027bf57b35b58d1",
+      "source_commit": "d342b507332315c67b1463009061c03f14b5be9b",
+      "compiled_type": "∀ (C : ℝ) (D : ℕ),\n  ∃ K,\n    0 < K ∧\n      ∀ (δ : ℝ),\n        0 < δ →\n          ∃ N₀,\n            10 ≤ N₀ ∧\n              ∀ N ≥ N₀,\n                ∀ (L H : ℕ),\n                  |↑L - Real.log ↑N / Real.log 2| ≤ C →\n                    8 * (L + 1) ≤ H →\n                      H ≤ D * (L + 1) →\n                        |PaperP1.OnceAllOriginalCoupling.second (↑H) N L -\n                                PaperP1.RetainedReferenceTheorem.beta (↑H) N L ^ 2| ≤\n                            δ * PaperP1.RetainedReferenceTheorem.beta (↑H) N L ^ 2 ∧\n                          PaperP1.OnceAllOriginalCoupling.second (↑H) N L ≤ K * (↑L * ↑N ^ (-2 / 3)) ^ 2 ∧\n                            0 ≤ PaperP1.OnceAllOriginalCoupling.correction (↑H) N L ∧\n                              PaperP1.OnceAllOriginalCoupling.correction (↑H) N L ≤\n                                PaperP1.OnceAllOriginalCoupling.second (↑H) N L / 2",
+      "is_proposition": true,
+      "type_byte_identical_to_previous_19_read": true,
+      "body_comparison": "Transporte les populations versOnceAllOriginalCoupling etRetainedReferenceTheorem par les égalités exactesgood/principal et second/beta. Les quatre clauses originales sont conservées.",
+      "verdict": "conforme_au_role_exact_attribue",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.PrincipalEdgeSecondMomentLower.uniform_lower",
+      "file": "PaperP1/Asymptotics/PrincipalEdgeSecondMomentLower.lean",
+      "line": 24,
+      "source_sha256": "083d158b91a28be104a2cecd27caf6cf0f5c89f1a3d43c617b9eaeb896ef0bea",
+      "source_commit": "d342b507332315c67b1463009061c03f14b5be9b",
+      "compiled_type": "∀ (C ε : ℝ),\n  0 < ε →\n    ∃ N₀,\n      10 ≤ N₀ ∧\n        ∀ N ≥ N₀,\n          ∀ (L H : ℕ),\n            |↑L - Real.log ↑N / Real.log 2| ≤ C →\n              PaperP1.PrincipalChannelEdges.beta N H L ^ 2 - ↑N ^ (-7 / 3 + ε) ≤\n                PaperP1.PrincipalEdgeSpaces.jointSecond N H L",
+      "is_proposition": true,
+      "type_byte_identical_to_previous_19_read": true,
+      "body_comparison": "Le défaut inférieur est la masse des produits des paires d’espaces couplés. CoupledPrincipalProductMass prouve son coût7/3 à partir du vrai compteN^(1+ε) et du cap produitN^(-10/3+ε).",
+      "verdict": "conforme_au_role_exact_attribue",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.HomogeneousEdgeInteractions.finite_upper",
+      "file": "PaperP1/Model/HomogeneousEdgeInteractions.lean",
+      "line": 80,
+      "source_sha256": "b79de92db090703a040bbc0e8f0ea0c0ac55863ebcd5ba84f376b4d8d82af92f",
+      "source_commit": "d342b507332315c67b1463009061c03f14b5be9b",
+      "compiled_type": "∀ (L : ℕ) (E : Finset (Finset ℕ)),\n  PaperP1.HomogeneousEdgeInteractions.second L E ≤\n    (∑ e ∈ E, PaperP1.HomogeneousRunMass.probability L e) ^ 2 + PaperP1.HomogeneousEdgeInteractions.mass L E E",
+      "is_proposition": true,
+      "type_byte_identical_to_previous_19_read": true,
+      "body_comparison": "Lemme fini sans hypothèse arithmétique : les couples d’espaces disjoints factorisent, les autres sont chargés dans la masse positive d’interaction, et les termes exclus sont majorés par une baseline non négative.",
+      "verdict": "conforme_au_role_exact_attribue",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.HomogeneousTwoEdgeScale.uniform_second",
+      "file": "PaperP1/Asymptotics/HomogeneousTwoEdgeScale.lean",
+      "line": 15,
+      "source_sha256": "40c97795b448a634289e63bcf5fec5376f5fc20c77a069f488d347b0f7f78096",
+      "source_commit": "d342b507332315c67b1463009061c03f14b5be9b",
+      "compiled_type": "∀ (C : ℝ),\n  ∃ K,\n    0 < K ∧\n      ∃ N₀,\n        10 ≤ N₀ ∧\n          ∀ N ≥ N₀,\n            ∀ (L H : ℕ),\n              |↑L - Real.log ↑N / Real.log 2| ≤ C →\n                PaperP1.HomogeneousEdgeInteractions.second L (PaperP1.HomogeneousChannelMass.rawPrincipal N H L) ≤\n                  K * (↑L * ↑N ^ (-2 / 3)) ^ 2",
+      "is_proposition": true,
+      "type_byte_identical_to_previous_19_read": true,
+      "body_comparison": "Prendε=1/60 dans la majoration homogène. L’erreur est plus petite queN^(-4/3), donc absorbée dans(LN^(-2/3))² avecL≥1. La constanteK est fixée sans margeε.",
+      "verdict": "conforme_au_role_exact_attribue",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.PrivatePairInteractionMass.uniform_bound",
+      "file": "PaperP1/Asymptotics/PrivatePairInteractionMass.lean",
+      "line": 24,
+      "source_sha256": "e731b6357b7647f94d332b7762a9ddd301476607dc603d5d754153f58f643d0f",
+      "source_commit": "d342b507332315c67b1463009061c03f14b5be9b",
+      "compiled_type": "∀ (a b c d : ℕ),\n  0 < a →\n    a < b →\n      b < 2 * a →\n        a.Coprime b →\n          0 < c →\n            c < d →\n              d < 2 * c →\n                c.Coprime d →\n                  d ≤ b →\n                    ∀ (C ε : ℝ),\n                      0 < ε →\n                        ∃ N₀,\n                          10 ≤ N₀ ∧\n                            ∀ N ≥ N₀,\n                              ∀ (L H₁ H₂ : ℕ),\n                                |↑L - Real.log ↑N / Real.log 2| ≤ C →\n                                  PaperP1.PrivatePairInteractions.mass N H₁ H₂ a b c d L ≤ ↑N ^ (-41 / 30 + ε)",
+      "is_proposition": true,
+      "type_byte_identical_to_previous_19_read": true,
+      "body_comparison": "Sépare arêtes partageant un sommet, quadruples à centres comprimés alignés et nonalignés. Le secteur aligné passe parScaledAlignedTripleMass.uniform_extensions, qui ne suppose aucune connexité triple. Le cas de croisement entre sommes sans croisement singleton est donc inclus.",
+      "verdict": "conforme_au_role_exact_attribue",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.SharpGoodEdgePositivePalm.finite_mass",
+      "file": "PaperP1/Asymptotics/SharpGoodEdgePositivePalm.lean",
+      "line": 22,
+      "source_sha256": "927ef0cda8a8e9bcc925a444515866c24ebfa7c0bcb54ca2d1d8797bb9404a45",
+      "source_commit": "d342b507332315c67b1463009061c03f14b5be9b",
+      "compiled_type": "∀ {N H a b L : ℕ},\n  2 ≤ N →\n    0 < L →\n      ∀ {G : Finset ℕ},\n        G ⊆ PaperP1.RegularStarts.regularStarts N L →\n          PaperP1.GoodEdgePositivePalm.mass N H a b L G ≤ PaperP1.HomogeneousEffectiveGoodPairExtensions.mass N H a b L",
+      "is_proposition": true,
+      "type_byte_identical_to_previous_19_read": true,
+      "body_comparison": "Vraie comparaison finie : le membre historiqueUnderInputs est une définition de somme et sa population régulière s’inclut dans la population homogène effective. Détail dans le rapport de preuve séparé.",
+      "verdict": "conforme_au_role_exact_attribue",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.SharpGoodEdgePositivePalm.uniform_mass",
+      "file": "PaperP1/Asymptotics/SharpGoodEdgePositivePalm.lean",
+      "line": 40,
+      "source_sha256": "927ef0cda8a8e9bcc925a444515866c24ebfa7c0bcb54ca2d1d8797bb9404a45",
+      "source_commit": "d342b507332315c67b1463009061c03f14b5be9b",
+      "compiled_type": "∀ (a b : ℕ),\n  0 < a →\n    a < b →\n      b < 2 * a →\n        a.Coprime b →\n          ∀ (C ε : ℝ),\n            0 < ε →\n              ∃ N₀,\n                10 ≤ N₀ ∧\n                  ∀ N ≥ N₀,\n                    ∀ (L H : ℕ),\n                      |↑L - Real.log ↑N / Real.log 2| ≤ C →\n                        ∀ G ⊆ PaperP1.RegularStarts.regularStarts N L,\n                          PaperP1.GoodEdgePositivePalm.mass N H a b L G ≤ ↑N ^ (-41 / 30 + ε)",
+      "is_proposition": true,
+      "type_byte_identical_to_previous_19_read": true,
+      "body_comparison": "Compose le pont fini et la masse homogène41/30 ; aucun compte final supposé.",
+      "verdict": "conforme_au_role_exact_attribue",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.SharpGoodEdgePositivePalm.uniform_normalized",
+      "file": "PaperP1/Asymptotics/SharpGoodEdgePositivePalm.lean",
+      "line": 54,
+      "source_sha256": "927ef0cda8a8e9bcc925a444515866c24ebfa7c0bcb54ca2d1d8797bb9404a45",
+      "source_commit": "d342b507332315c67b1463009061c03f14b5be9b",
+      "compiled_type": "∀ (a b D : ℕ),\n  0 < a →\n    a < b →\n      b < 2 * a →\n        a.Coprime b →\n          ∀ (C ε : ℝ),\n            0 < ε →\n              ∃ N₀,\n                10 ≤ N₀ ∧\n                  ∀ N ≥ N₀,\n                    ∀ (L H : ℕ),\n                      |↑L - Real.log ↑N / Real.log 2| ≤ C →\n                        2 * b * (L + 1) ≤ H →\n                          H ≤ D * (L + 1) →\n                            ∀ G ⊆ PaperP1.RegularStarts.regularStarts N L,\n                              0 < PaperP1.GoodEdgePositivePalm.beta N H a b L ∧\n                                PaperP1.GoodEdgePositivePalm.mass N H a b L G ≤ ↑N ^ (-41 / 30 + ε) ∧\n                                  PaperP1.GoodEdgePositivePalm.normalized N H a b L G ≤ ↑N ^ (-11 / 30 - 1 / ↑b + ε)",
+      "is_proposition": true,
+      "type_byte_identical_to_previous_19_read": true,
+      "body_comparison": "Prouveβ>0 avec la phase inférieure sous2bB≤H≤DB avant la division ; exponent−11/30−1/b. Tous les paramètres fixés précèdentN0.",
+      "verdict": "conforme_au_role_exact_attribue",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.SharpGoodEdgePositivePalm.companion_T3_1_sharp",
+      "file": "PaperP1/Asymptotics/SharpGoodEdgePositivePalm.lean",
+      "line": 102,
+      "source_sha256": "927ef0cda8a8e9bcc925a444515866c24ebfa7c0bcb54ca2d1d8797bb9404a45",
+      "source_commit": "d342b507332315c67b1463009061c03f14b5be9b",
+      "compiled_type": "∀ (D : ℕ) (C ε : ℝ),\n  0 < ε →\n    ∃ N₀,\n      10 ≤ N₀ ∧\n        ∀ N ≥ N₀,\n          ∀ (L H : ℕ),\n            |↑L - Real.log ↑N / Real.log 2| ≤ C →\n              8 * (L + 1) ≤ H →\n                H ≤ D * (L + 1) →\n                  ∀ G ⊆ PaperP1.RegularStarts.regularStarts N L,\n                    0 < PaperP1.GoodEdgePositivePalm.beta N H 2 3 L ∧\n                      0 < PaperP1.GoodEdgePositivePalm.beta N H 3 4 L ∧\n                        PaperP1.GoodEdgePositivePalm.normalized N H 2 3 L G ≤ ↑N ^ (-7 / 10 + ε) ∧\n                          PaperP1.GoodEdgePositivePalm.normalized N H 3 4 L G ≤ ↑N ^ (-37 / 60 + ε) ∧\n                            PaperP1.GoodEdgePositivePalm.mass N H 2 3 L G ≤ ↑N ^ (-41 / 30 + ε) ∧\n                              PaperP1.GoodEdgePositivePalm.mass N H 3 4 L G ≤ ↑N ^ (-41 / 30 + ε)",
+      "is_proposition": true,
+      "type_byte_identical_to_previous_19_read": true,
+      "body_comparison": "Spécialise les deux canaux avec cutoff commun8B≤H≤DB et joint les seuils ; les deux masses41/30 et les normalisations7/10,37/60 sont exactes.",
+      "verdict": "conforme_au_role_exact_attribue",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.GoodEdgePositivePalm.scaled_positive_part",
+      "file": "PaperP1/Model/GoodEdgePositivePalm.lean",
+      "line": 36,
+      "source_sha256": "49763c2fd015a52a20b4b1f7f29857f0ea935f31ab13f958f1600f40005916c4",
+      "source_commit": "d342b507332315c67b1463009061c03f14b5be9b",
+      "compiled_type": "∀ (L : ℕ) (e : Finset ℕ) (z : ℕ),\n  0 < PaperP1.Model.InfiniteStarts.infiniteJointMoment L e →\n    PaperP1.Model.InfiniteStarts.infiniteJointMoment L e *\n        Max.max 0 (PaperP1.SourceConditionalDeviations.conditionalStart e L z - (2 ^ L)⁻¹) =\n      PaperP1.GoodEdgePositivePalm.excess L e z",
+      "is_proposition": true,
+      "type_byte_identical_to_previous_19_read": true,
+      "body_comparison": "Identité finie après multiplication par une source de joint strictement positif ; cette positivité vient du filtre des sources compatibles.",
+      "verdict": "conforme_au_role_exact_attribue",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.GoodEdgePositivePalm.positive_points_subset",
+      "file": "PaperP1/Model/GoodEdgePositivePalm.lean",
+      "line": 87,
+      "source_sha256": "49763c2fd015a52a20b4b1f7f29857f0ea935f31ab13f958f1600f40005916c4",
+      "source_commit": "d342b507332315c67b1463009061c03f14b5be9b",
+      "compiled_type": "∀ {N H a b L : ℕ},\n  2 ≤ N →\n    0 < L →\n      ∀ {G : Finset ℕ},\n        G ⊆ PaperP1.RegularStarts.regularStarts N L →\n          {p ∈ PaperP1.GoodEdgePositivePalm.points N H a b L G | 0 < PaperP1.GoodEdgePositivePalm.excess L p.1 p.2} ⊆\n            PaperP1.HomogeneousGoodPairExtensionsUnderInputs.points N H a b L",
+      "is_proposition": true,
+      "type_byte_identical_to_previous_19_read": true,
+      "body_comparison": "Le filtre d’excès strictement positif implique joint positif donc séparation, ainsi que croisement positif. Le namespace historique de droite ne fait que nommer la population finie régulière.",
+      "verdict": "conforme_au_role_exact_attribue",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.GoodEdgePositivePalm.finite_mass",
+      "file": "PaperP1/Model/GoodEdgePositivePalm.lean",
+      "line": 105,
+      "source_sha256": "49763c2fd015a52a20b4b1f7f29857f0ea935f31ab13f958f1600f40005916c4",
+      "source_commit": "d342b507332315c67b1463009061c03f14b5be9b",
+      "compiled_type": "∀ {N H a b L : ℕ},\n  2 ≤ N →\n    0 < L →\n      ∀ {G : Finset ℕ},\n        G ⊆ PaperP1.RegularStarts.regularStarts N L →\n          PaperP1.GoodEdgePositivePalm.mass N H a b L G ≤\n            PaperP1.HomogeneousGoodPairExtensionsUnderInputs.mass N H a b L",
+      "is_proposition": true,
+      "type_byte_identical_to_previous_19_read": true,
+      "body_comparison": "Réécrit la masse en somme d’excès, enlève les zéros et domine chaque excès par la vraie probabilité homogène ; puis somme sur le support positif inclus.",
+      "verdict": "conforme_au_role_exact_attribue",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.GoodEdgePositivePalm.normalized_eq_iterated",
+      "file": "PaperP1/Model/GoodEdgePositivePalm.lean",
+      "line": 128,
+      "source_sha256": "49763c2fd015a52a20b4b1f7f29857f0ea935f31ab13f958f1600f40005916c4",
+      "source_commit": "d342b507332315c67b1463009061c03f14b5be9b",
+      "compiled_type": "∀ (N H a b L : ℕ) (G : Finset ℕ),\n  PaperP1.GoodEdgePositivePalm.normalized N H a b L G =\n    1 / PaperP1.GoodEdgePositivePalm.beta N H a b L *\n      ∑ e ∈ PaperP1.CompatibleChannelEdges.edges N H a b L,\n        PaperP1.Model.InfiniteStarts.infiniteJointMoment L e *\n          ∑ z ∈ G \\ e, Max.max 0 (PaperP1.SourceConditionalDeviations.conditionalStart e L z - (2 ^ L)⁻¹)",
+      "is_proposition": true,
+      "type_byte_identical_to_previous_19_read": true,
+      "body_comparison": "Déplie normalized=mass/beta et la somme itérée. Le lemme est une égalité finie ; les théorèmes normalisés séparés démontrent la positivité deβ quand elle est nécessaire.",
+      "verdict": "conforme_au_role_exact_attribue",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.FixedHomogeneousSeedTheorem.companion_T1_12",
+      "file": "PaperP1/Asymptotics/FixedHomogeneousSeedTheorem.lean",
+      "line": 22,
+      "source_sha256": "27708112ca2effa378c2894725e7cacf4698fb7c597a6e250e2b8fcf746d1de6",
+      "source_commit": "d342b507332315c67b1463009061c03f14b5be9b",
+      "compiled_type": "∀ (C : ℝ) (D : ℕ),\n  ∃ A,\n    0 < A ∧\n      ∀ (ε : ℝ),\n        0 < ε →\n          ∃ N₀,\n            10 ≤ N₀ ∧\n              ∀ N ≥ N₀,\n                ∀ (L H : ℕ),\n                  |↑L - Real.log ↑N / Real.log 2| ≤ C →\n                    8 * (L + 1) ≤ H →\n                      H ≤ D * (L + 1) →\n                        PaperP1.RawGoodPopulation.edges (↑H) N L = PaperP1.HomogeneousChannelMass.rawPrincipal N H L ∧\n                          ∀ G ⊆ PaperP1.RegularStarts.regularStarts N L,\n                            (PaperP1.PrimitiveNominalMass.mass (PaperP1.HomogeneousPairResidual.families N H L G) L ≤\n                                  ↑N ^ (-4 / 5 + ε) ∧\n                                ∑ e ∈ PaperP1.HomogeneousPairResidual.families N H L G,\n                                    PaperP1.HomogeneousRunMass.probability L e ≤\n                                  ↑N ^ (-4 / 5 + ε)) ∧\n                              PaperP1.PrimitiveNominalMass.mass (PaperP1.HomogeneousChannelMass.rawPrincipal N H L) L ≤\n                                  A * (↑L * ↑N ^ (-2 / 3)) ∧\n                                PaperP1.HomogeneousGoodPairExtensions.nominalMass N H 2 3 L ≤ ↑N ^ (-4 / 3 + ε) ∧\n                                  PaperP1.HomogeneousGoodPairExtensions.nominalMass N H 3 4 L ≤ ↑N ^ (-5 / 4 + ε) ∧\n                                    PaperP1.TwoGoodPairMass.nominalSecond N H L ≤ A * (↑L * ↑N ^ (-2 / 3)) ^ 2",
+      "is_proposition": true,
+      "type_byte_identical_to_previous_19_read": false,
+      "body_comparison": "Réunit les paires résiduelles, l’identificationRawGoodPopulation/rawPrincipal, la masse brute et la borne pure de deux arêtes, avecA fixé avantε. Son ancien contenu de clause2 reste4/3 et5/4 ; il n’est PAS utilisé seul comme preuve de la nouvelle puissance41/30. La nouvelle clause2 est couverte séparément parHomogeneousEffectiveGoodPairExtensions.uniform_mass, puis restriction régulière.",
+      "verdict": "conforme_au_role_exact_attribue",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.HomogeneousEffectiveGoodPairExtensions.uniform_mass",
+      "file": "PaperP1/Asymptotics/HomogeneousEffectiveGoodPairExtensions.lean",
+      "line": 57,
+      "source_sha256": "e96085272fd4919831aa9f4f05c6fa9d4548219d6d7af6b06aab75378c72cfc9",
+      "source_commit": "d342b507332315c67b1463009061c03f14b5be9b",
+      "compiled_type": "∀ (a b : ℕ),\n  0 < a →\n    a < b →\n      b < 2 * a →\n        a.Coprime b →\n          ∀ (C ε : ℝ),\n            0 < ε →\n              ∃ N₀,\n                4 ≤ N₀ ∧\n                  ∀ N ≥ N₀,\n                    ∀ (L H : ℕ),\n                      |↑L - Real.log ↑N / Real.log 2| ≤ C →\n                        PaperP1.HomogeneousEffectiveGoodPairExtensions.mass N H a b L ≤ ↑N ^ (-41 / 30 + ε)",
+      "is_proposition": true,
+      "type_byte_identical_to_previous_19_read": false,
+      "body_comparison": "La population finie exige une bonne source brute, un centre frais, la séparation et un croisement positif. La source dépendante et ce crossing donnent une triple connexe ; finite_mass majore par3 fois la masse homogène connexe. Le corps utilise le taux41/30 déjà prouvé et absorbe3. Pas de prémisse de borne finale ni de compatibilité affine.",
+      "verdict": "conforme_au_role_exact_attribue",
+      "necessary_corrections": []
+    }
+  ],
+  "clause_endpoint_map": [
+    {
+      "printed_clause": "T1.12(1), paires résiduelles et masse brute",
+      "entries": [
+        "PaperP1.FixedHomogeneousSeedTheorem.companion_T1_12"
+      ],
+      "notes": "Inclut l’identification exacte de la famille brute, les deux poids résiduels et la constanteA choisie avantε."
+    },
+    {
+      "printed_clause": "T1.12(2),41/30 sur les deux canaux",
+      "entries": [
+        "PaperP1.HomogeneousEffectiveGoodPairExtensions.uniform_mass"
+      ],
+      "notes": "Restreindre la population effective àla régulière et utiliserq0=W surG_N. Les anciennes sorties faibles deFixedHomogeneousSeedTheorem ne sont pas prises pour cette clause renforcée."
+    },
+    {
+      "printed_clause": "T1.12(3), constante pure sur(LN^(-2/3))²",
+      "entries": [
+        "PaperP1.HomogeneousTwoEdgeScale.uniform_second",
+        "PaperP1.TwoGoodPairMass.nominal_second_eq",
+        "PaperP1.FixedHomogeneousSeedTheorem.companion_T1_12"
+      ],
+      "notes": "L’exposant, les couples ordonnés distincts séparés et le choix d’une constante fixe correspondent."
+    },
+    {
+      "printed_clause": "T1.17 etT3.1, énoncés inchangés",
+      "entries": [
+        "PaperP1.TwoGoodEdgeSecondMoment.companion_T1_17_original",
+        "PaperP1.TwoGoodEdgeSecondMoment.uniform_error",
+        "PaperP1.SharpGoodEdgePositivePalm.companion_T3_1_sharp"
+      ],
+      "notes": "Le calcul dans les preuves donne des puissances plus fortes sans relabeliser les anciens énoncés comme erronés."
+    }
+  ],
+  "dependencies": {
+    "printed_order": [
+      "14.3 homogène et géométrie nonalignée autonome",
+      "T1.12(2), puis masse interactive etT1.12(3)",
+      "T1.17 etT3.1 via les ponts affines/Palm",
+      "T4.4 àune cible viaT1.12(2)"
+    ],
+    "cycles_confirmed": 0,
+    "local_import_checks": [
+      {
+        "root": "PaperP1.Asymptotics.TwoGoodPairMass",
+        "ancestor_count_excluding_root": 1631,
+        "queried_circular_dependencies_found": []
+      },
+      {
+        "root": "PaperP1.Asymptotics.HomogeneousEffectiveGoodPairExtensions",
+        "ancestor_count_excluding_root": 1486,
+        "queried_circular_dependencies_found": []
+      },
+      {
+        "root": "PaperP1.Asymptotics.FixedCompressedPrimitiveTheorem",
+        "ancestor_count_excluding_root": 1528,
+        "queried_circular_dependencies_found": []
+      }
+    ],
+    "qualification": "Aucune preuve des graines positives n’utilise le théorème de moments6.4 ou une reconstruction de loi. Les imports plus larges que les corps ne sont pas confondus avec des hypothèses du compte final."
+  },
+  "prior_reports_preserved": [
+    {
+      "path": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-further-simplification/review.json",
+      "sha256": "e2ff2ef63167e3bd1176db167d64d780ff95be78fb7a8fca3aa6003af2be4c88"
+    },
+    {
+      "path": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-further-simplification/review.txt",
+      "sha256": "3f56c3ff99bb5259f8a0614536fba8e54c169d71199823492e1834c8a024a1ac"
+    },
+    {
+      "path": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-further-simplification/sharp-palm-proof-review.json",
+      "sha256": "d3fe302b8343b678b6e1ce037da9b08a105540f4ad34d9b1015e33f0c5faef34"
+    },
+    {
+      "path": "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-further-simplification/sharp-palm-proof-review.txt",
+      "sha256": "6a0655389425ccf0007d364912d0e168643599935a47a43618abc9f7ee9fd1c3"
+    }
+  ],
+  "necessary_corrections": [],
+  "limits": [
+    "Relecture exacte des sources, types et corps pertinents ; aucune exécutionLean/Lake,replay,build,extraction,audit,PDF,Palomar ou délégation par cette instance.",
+    "Le scope21 et sa validation proviennent du parent. Le fichier.exit=0 et les types ont été lus ; cette instance ne revendique pas leur compilation.",
+    "L’application du diff est faite en mémoire et aucun fichier source proposé ou publié n’a été modifié. Seuls les deux présents rapports sont créés.",
+    "Les167 identités et l’ordre des environnements de résultats sont conservés ; numéros effectivement imprimés et mise en page restent les contrôles du parent.",
+    "Pas de gain de pages déduit des51 lignes source. Pas de nouvelle couverture ni de nouveau checkpoint mathématique attribué aux coupes."
+  ]
+}

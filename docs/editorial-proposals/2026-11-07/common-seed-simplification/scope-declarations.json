@@ -1,0 +1,23 @@
+[
+  "PaperP1.TwoGoodPairMass.principal_interactions",
+  "PaperP1.TwoGoodPairMass.uniform_homogeneous_second",
+  "PaperP1.TwoGoodPairMass.nominal_second_eq",
+  "PaperP1.TwoGoodEdgeSecondMoment.finite_upper",
+  "PaperP1.TwoGoodEdgeSecondMoment.uniform_error",
+  "PaperP1.TwoGoodEdgeSecondMoment.companion_T1_17",
+  "PaperP1.TwoGoodEdgeSecondMoment.companion_T1_17_original",
+  "PaperP1.PrincipalEdgeSecondMomentLower.uniform_lower",
+  "PaperP1.HomogeneousEdgeInteractions.finite_upper",
+  "PaperP1.HomogeneousTwoEdgeScale.uniform_second",
+  "PaperP1.PrivatePairInteractionMass.uniform_bound",
+  "PaperP1.SharpGoodEdgePositivePalm.finite_mass",
+  "PaperP1.SharpGoodEdgePositivePalm.uniform_mass",
+  "PaperP1.SharpGoodEdgePositivePalm.uniform_normalized",
+  "PaperP1.SharpGoodEdgePositivePalm.companion_T3_1_sharp",
+  "PaperP1.GoodEdgePositivePalm.scaled_positive_part",
+  "PaperP1.GoodEdgePositivePalm.positive_points_subset",
+  "PaperP1.GoodEdgePositivePalm.finite_mass",
+  "PaperP1.GoodEdgePositivePalm.normalized_eq_iterated",
+  "PaperP1.FixedHomogeneousSeedTheorem.companion_T1_12",
+  "PaperP1.HomogeneousEffectiveGoodPairExtensions.uniform_mass"
+]

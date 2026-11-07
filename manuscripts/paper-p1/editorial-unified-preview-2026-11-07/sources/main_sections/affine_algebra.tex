@@ -1,0 +1,169 @@
+\section{Affine structure and centered coefficients}
+\label{p1:alg:section}
+
+The arithmetic estimates naturally count relations, whereas the
+approximation problem concerns a signed difference of laws.
+We introduce the exact identities linking these two objects.
+They will be used with a stopping rule, so that large connected
+families outside the required nullity range never need to be
+summed in absolute value.
+
+Throughout this section $I\subseteq\mathcal I_N$, and
+$\rho_{\mathrm{rel}}(I)$ is the effective relative nullity.
+Write $b_x=\delta_0+p_x\Delta$. The identities below hold for
+heterogeneous marginals. On the regular set $G_N$, one has $p_x=p$,
+$d_x=L$, and $b_x=b$; their homogeneous specializations are used in
+the first reconstruction in the companion.
+
+\subsection{An exact expansion around independent Bernoulli variables}
+
+Set
+\[
+ Y_x=J_x-p_x,\qquad c(I)=\E\prod_{x\in I}Y_x,
+ \qquad c(\varnothing)=1.
+\]
+
+\begin{proposition}[Centered Bernoulli expansion]
+\label{p1:alg:centred}
+For every \(N\),
+\begin{equation}
+ \Law(Z_N)=\sum_{I\subseteq\mathcal I_N}
+       c(I)\Delta^{*|I|}*\mathop{*}_{x\notin I}b_x .
+ \label{p1:alg:centred-identity}
+\end{equation}
+The complementary convolution products are deterministic probabilities.
+The terms of sizes zero and two are
+\[
+ \mathop{*}_{x}b_x+
+ \sum_{|e|=2}c(e)\Delta^{*2}*\mathop{*}_{x\notin e}b_x.
+\]
+Terms of size one vanish.
+\end{proposition}
+
+\begin{proof}
+For an indicator,
+\(\delta_{J_x}=b_x+Y_x\Delta\). Expand the finite convolution
+product over \(\mathcal I_N\) and take expectations. No independence
+assumption is used in this identity.
+\end{proof}
+
+Each \(s\in S_x\) is a square-class vector. Let
+\(\chi_s\) be its character on the prime signs, and let
+\(\eta_x(s)\in\{\pm1\}\) be the affine sign prescribed by
+the run-start event. The local prescription is consistent on
+\(\mathcal I_N\), so its affine character \(\eta_x\) is well defined
+on the effective space. Thus
+\[
+ J_x=p_x\sum_{s\in S_x}\eta_x(s)\chi_s,\qquad \eta_x(0)=1.
+\]
+
+\begin{lemma}[Full-support Fourier formula]
+\label{p1:alg:fourier}
+For nonempty \(I\subseteq\mathcal I_N\),
+\begin{equation}
+ c(I)=\Bigl(\prod_{x\in I}p_x\Bigr)
+   \sum_{\substack{s_x\in S_x\setminus\{0\}\ (x\in I)\\
+                         \sum_xs_x=0}}
+                 \prod_{x\in I}\eta_x(s_x).
+ \label{p1:alg:fourier-identity}
+\end{equation}
+Consequently,
+\[
+ |c(I)|\le\Bigl(\prod_{x\in I}p_x\Bigr)(2^{\rho_{\mathrm{rel}}(I)}-1)
+           \le\Bigl(\prod_{x\in I}p_x\Bigr)2^{\rho_{\mathrm{rel}}(I)}.
+\]
+If \(c(I)\ne0\), there is a relative relation meeting
+every block of \(I\).
+\end{lemma}
+
+\begin{proof}
+Subtracting \(p_x\) removes the zero character from each
+factor. The expectation of a character product is zero
+unless the sum of its indices vanishes. The kernel of
+\(\bigoplus_{x\in I}S_x\to\sum_{x\in I}S_x\) has
+\(2^{\rho_{\mathrm{rel}}(I)}\) elements. The displayed sum omits its
+zero element and possibly others. Every affine
+coefficient has modulus one.
+\end{proof}
+
+\subsection{The nullity that survives affine compatibility}
+
+Define
+\begin{equation}
+ \rho_*(I)=\max\{\rho_{\mathrm{rel}}(A):A\subseteq I,\ q(A)>0\},
+ \qquad q(\varnothing)=1,\quad\rho_{\mathrm{rel}}(\varnothing)=0 .
+ \label{p1:alg:compatible-nullity}
+\end{equation}
+This parameter records the largest rank loss in a
+compatible subfamily. It can be smaller than the
+nullity of the whole family.
+
+\begin{lemma}[Compatible-nullity majorant]
+\label{p1:alg:compatible}
+For every \(I\subseteq\mathcal I_N\),
+\begin{equation}
+ |c(I)|\le 2^{|I|}\Bigl(\prod_{x\in I}p_x\Bigr)2^{\rho_*(I)},\qquad
+ \rho_*(I)\le\rho_{\mathrm{rel}}(I).
+ \label{p1:alg:compatible-bound}
+\end{equation}
+Equality holds in the second inequality when \(q(I)>0\).
+\end{lemma}
+
+\begin{proof}
+The exact inclusion-exclusion formula is
+\[
+ c(I)=\sum_{A\subseteq I}(-1)^{|I|-|A|}q(A)
+                       \prod_{x\in I\setminus A}p_x.
+\]
+A compatible term has absolute value
+\(\bigl(\prod_{x\in I}p_x\bigr)2^{\rho_{\mathrm{rel}}(A)}\), and an incompatible term is
+zero. There are at most \(2^{|I|}\) terms.
+Nullity increases under inclusion, because adding the block
+\(S_x\) increases the total rank by at most \(d_x\). This proves the other assertions.
+\end{proof}
+
+\subsection{Canonical direct components}
+
+A partition \(\mathcal P\) of \(I\) is called direct if
+the spaces \(V_C=\sum_{x\in C}S_x\), \(C\in\mathcal P\),
+are in direct sum. Its finest such partition is the
+canonical direct decomposition of \(I\).
+We call a nonempty family \emph{connected} if this
+partition has only one part.
+
+\begin{lemma}[Existence, uniqueness, and factorization]
+\label{p1:alg:components}
+Every finite family \(I\) has a unique finest direct
+partition \(\mathcal P(I)\). For it,
+\begin{equation}
+ q(I)=\prod_{C\in\mathcal P(I)}q(C),\qquad
+ c(I)=\prod_{C\in\mathcal P(I)}c(C),\qquad
+ \rho_{\mathrm{rel}}(I)=\sum_{C\in\mathcal P(I)}\rho_{\mathrm{rel}}(C).
+ \label{p1:alg:factorization}
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+If \(\mathcal P,\mathcal Q\) are direct partitions,
+their nonempty intersections form a direct partition.
+Indeed, inside each \(P\in\mathcal P\), the spaces
+\(\sum_{x\in P\cap Q}S_x\) lie in the mutually direct
+spaces \(V_Q\), and sum to \(V_P\). The direct sum over
+\(P\) proves the claim. Intersecting the finitely many
+direct partitions gives the unique finest one.
+
+Characters indexed by mutually direct subspaces of
+the finite prime-sign vector space are independent
+uniform character families. Events, and centered
+variables, depending on different \(V_C\) are therefore
+independent. This proves both probability identities;
+rank additivity proves the last one.
+\end{proof}
+
+Connectedness here is defined by all relative
+relations. A minimal dependent family of original
+blocks is primitive, but primitive block supports
+alone do not determine the canonical components:
+an additional relation can join a third block to
+an already dependent pair. Exact pair compression
+will retain this possibility.

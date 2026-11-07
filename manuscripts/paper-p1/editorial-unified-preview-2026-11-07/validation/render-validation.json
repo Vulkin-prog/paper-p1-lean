@@ -1,0 +1,70 @@
+{
+  "status": "rendered_pending_visual_inspection",
+  "documents": [
+    {
+      "document": "main",
+      "pages": 64,
+      "contact_sheets": [
+        "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-common-seed-preview/preview/renders/main/contact-01.png",
+        "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-common-seed-preview/preview/renders/main/contact-02.png",
+        "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-common-seed-preview/preview/renders/main/contact-03.png",
+        "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-common-seed-preview/preview/renders/main/contact-04.png"
+      ],
+      "detail_images": [
+        "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-common-seed-preview/preview/renders/main/detail-001.png",
+        "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-common-seed-preview/preview/renders/main/detail-002.png",
+        "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-common-seed-preview/preview/renders/main/detail-062.png",
+        "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-common-seed-preview/preview/renders/main/detail-064.png"
+      ],
+      "out_of_page_characters": [],
+      "preview_marker_missing_pages": [],
+      "cross_pdf_file_targets": [
+        "P1_Unified_Editorial_Preview_Companion_2026-11-07_EN.pdf"
+      ],
+      "pdf_title": "Long multiplicative runs: unified editorial preview"
+    },
+    {
+      "document": "companion",
+      "pages": 101,
+      "contact_sheets": [
+        "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-common-seed-preview/preview/renders/companion/contact-01.png",
+        "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-common-seed-preview/preview/renders/companion/contact-02.png",
+        "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-common-seed-preview/preview/renders/companion/contact-03.png",
+        "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-common-seed-preview/preview/renders/companion/contact-04.png",
+        "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-common-seed-preview/preview/renders/companion/contact-05.png",
+        "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-common-seed-preview/preview/renders/companion/contact-06.png",
+        "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-common-seed-preview/preview/renders/companion/contact-07.png"
+      ],
+      "detail_images": [
+        "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-common-seed-preview/preview/renders/companion/detail-001.png",
+        "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-common-seed-preview/preview/renders/companion/detail-002.png",
+        "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-common-seed-preview/preview/renders/companion/detail-003.png",
+        "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-common-seed-preview/preview/renders/companion/detail-004.png",
+        "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-common-seed-preview/preview/renders/companion/detail-015.png",
+        "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-common-seed-preview/preview/renders/companion/detail-016.png",
+        "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-common-seed-preview/preview/renders/companion/detail-017.png",
+        "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-common-seed-preview/preview/renders/companion/detail-018.png",
+        "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-common-seed-preview/preview/renders/companion/detail-019.png",
+        "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-common-seed-preview/preview/renders/companion/detail-020.png",
+        "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-common-seed-preview/preview/renders/companion/detail-025.png",
+        "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-common-seed-preview/preview/renders/companion/detail-026.png",
+        "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-common-seed-preview/preview/renders/companion/detail-027.png",
+        "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-common-seed-preview/preview/renders/companion/detail-028.png",
+        "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-common-seed-preview/preview/renders/companion/detail-029.png",
+        "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-common-seed-preview/preview/renders/companion/detail-030.png",
+        "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-common-seed-preview/preview/renders/companion/detail-099.png",
+        "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-common-seed-preview/preview/renders/companion/detail-100.png",
+        "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/p1-common-seed-preview/preview/renders/companion/detail-101.png"
+      ],
+      "out_of_page_characters": [],
+      "preview_marker_missing_pages": [],
+      "cross_pdf_file_targets": [
+        "P1_Unified_Editorial_Preview_Main_2026-11-07_EN.pdf"
+      ],
+      "pdf_title": "Sharp Poisson approximation for long multiplicative runs: Technical companion (unified editorial preview)"
+    }
+  ],
+  "pages_rendered": 165,
+  "detail_pages_rendered": 23,
+  "scope": "All-page rendering and text-bound/marker checks; visual inspection remains separate."
+}

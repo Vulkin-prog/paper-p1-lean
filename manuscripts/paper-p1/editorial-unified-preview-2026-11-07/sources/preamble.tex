@@ -1,0 +1,62 @@
+% Shared typesetting and notation for the two associated documents.
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{lmodern,microtype}
+\usepackage[a4paper,margin=24mm,headheight=14pt]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools,mathrsfs}
+\usepackage{booktabs,longtable,array,tabularx}
+\usepackage{xcolor,enumitem,fancyhdr,needspace,etoolbox,placeins}
+\usepackage{xr-hyper}
+\usepackage[colorlinks=true,linkcolor=blue!40!black,citecolor=blue!40!black,urlcolor=blue!40!black]{hyperref}
+\usepackage{bookmark,xurl}
+\newcommand{\E}{\mathbb E}
+\renewcommand{\P}{\mathbb P}
+\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\F}{\mathbb F}
+\newcommand{\Law}{\mathcal L}
+\newcommand{\Pois}{\operatorname{Pois}}
+\newcommand{\TV}{d_{\mathrm{TV}}}
+\newcommand{\ind}{\mathbf 1}
+\newcommand{\eps}{\varepsilon}
+\DeclareMathOperator{\Var}{Var}
+\DeclareMathOperator{\Cov}{Cov}
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\codim}{codim}
+\renewcommand{\sf}{\operatorname{sf}}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
+\numberwithin{equation}{section}
+\setlength{\parindent}{1.2em}
+\setlength{\parskip}{3pt}
+\setlength{\emergencystretch}{2em}
+\setlist{itemsep=3pt,topsep=5pt,leftmargin=20pt}
+\renewcommand{\arraystretch}{1.12}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small Long multiplicative runs}
+\fancyhead[R]{\small Brice Pouly}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\setcounter{tocdepth}{1}
+\hypersetup{
+ pdftitle={Sharp Poisson approximation and second-order correction for long multiplicative runs},
+ pdfauthor={Brice Pouly},
+ pdfsubject={Random multiplicative functions, Poisson approximation, hereditary stopping, arithmetic dependencies},
+ pdfkeywords={Random multiplicative functions; long runs; optimal Poisson approximation; factorial cumulants; working draft 1.8, 7 November 2026},
+ bookmarksdepth=2}
+\allowdisplaybreaks[1]
+\widowpenalty=10000
+\clubpenalty=10000
+
+% Presentation-only identifiers for the separate condensed preview.
+\fancyfoot[L]{\scriptsize\color{black!60}Unified editorial preview}
+\hypersetup{pdftitle={Long multiplicative runs: unified editorial preview},pdfkeywords={Unified editorial preview; not an adopted manuscript revision}}

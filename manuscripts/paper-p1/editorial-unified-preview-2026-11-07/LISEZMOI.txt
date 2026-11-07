@@ -1,0 +1,20 @@
+COPIE DE RELECTURE UNIFIÉE — 7 NOVEMBRE 2026
+
+Sources TeX et deux PDF : 64 pages pour l’article, 101 pour le compagnon.
+Conserver les deux PDF avec leurs noms fournis dans le même dossier pour
+leurs liens croisés. Cette copie applique FS01-FS03 au stade renforcé ; tous
+les aperçus précédents restent distincts. Ce n’est pas une version adoptée.
+
+Lire docs/editorial-proposals/2026-11-07/common-seed-simplification/README.md
+dans le dépôt. PROVENANCE.json lie les sources, le diff relu, les 21 types
+compilés et les journaux. Les gains sont 51 lignes source et aucune page
+supplémentaire, avec les 167 résultats conservés. Palomar reste en attente.
+
+Pour reconstruire sur une copie de travail contenant une distribution TeX :
+se placer dans sources/, créer build/, puis exécuter alternativement
+pdflatex -no-shell-escape -interaction=nonstopmode -halt-on-error -file-line-error -output-directory=build main.tex
+pdflatex -no-shell-escape -interaction=nonstopmode -halt-on-error -file-line-error -output-directory=build companion.tex
+Répéter jusqu’à stabilisation des .aux et .toc ; trois tours ont suffi ici.
+Copier build/main.pdf et build/companion.pdf sous les deux noms des PDF fournis.
+Ces compilations historiques sont déjà vérifiées ; une reconstruction locale
+peut modifier les octets du PDF sans modifier la pagination ni le contenu.

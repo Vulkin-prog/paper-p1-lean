@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "baseline": "v1.8 after the initial five-clarification patch, before the preview footer",
+  "stages": [
+    {
+      "stage": "condensed",
+      "delivered_sources": "manuscripts/paper-p1/editorial-condensed-preview-2026-11-07/sources",
+      "physical_lines_saved_from_previous": 116
+    },
+    {
+      "stage": "structural",
+      "delivered_sources": "manuscripts/paper-p1/editorial-structural-preview-2026-11-07/sources",
+      "physical_lines_saved_from_previous": 25
+    },
+    {
+      "stage": "simplified",
+      "delivered_sources": "manuscripts/paper-p1/editorial-simplified-preview-2026-11-07/sources",
+      "physical_lines_saved_from_previous": 132
+    },
+    {
+      "stage": "strengthened",
+      "delivered_sources": "manuscripts/paper-p1/editorial-strengthened-preview-2026-11-07/sources",
+      "physical_lines_saved_from_previous": -28
+    },
+    {
+      "stage": "unified",
+      "delivered_sources": "manuscripts/paper-p1/editorial-unified-preview-2026-11-07/sources",
+      "physical_lines_saved_from_previous": 51
+    }
+  ],
+  "net_delivered_physical_source_lines_saved": 296,
+  "historical_first_three_scientific_savings": 277,
+  "preview_footer_physical_lines_added": 4,
+  "scientific_explanation_lines_added": 28,
+  "latest_physical_lines_saved": 51,
+  "net_scientific_lines_saved_excluding_preview_footer": 300,
+  "actual_total_pdf_pages_saved_from_v18": 4,
+  "actual_pdf_pages_saved_this_pass": 0
+}

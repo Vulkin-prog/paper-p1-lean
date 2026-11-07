@@ -43,10 +43,10 @@ bundles in CI, with 29 in-memory controls.
 The [sharp positive Palm bridge](docs/SHARP_GOOD_EDGE_PALM.md) exposes
 the normalized powers 7/10 and 37/60 in the two retained channels. Its complete
 pinned replay and independent four-body/type review passed. A common seed
-proof is available for a future simplification; the existing manuscript copies
-and all six registry scopes remain preserved.
+proof is now used in the separate unified preview below; all earlier
+manuscript copies and the six registry scopes remain preserved.
 
-The [latest strengthened review copy](docs/editorial-proposals/2026-11-07/scientific-strengthening/README.md)
+The [preserved strengthened review copy](docs/editorial-proposals/2026-11-07/scientific-strengthening/README.md)
 also exposes existing sharper bounds in T9.1, T1.14 and T4.4, with an explicit
 positive homogeneous one-target argument and a separate logarithmic-exponent note.
 It retains all thirteen simplifications and remains 64/101 pages. Fifteen
@@ -56,14 +56,24 @@ ledger entry is counted, and all earlier sources/PDFs/reports remain preserved.
 
 
 
+The [latest unified review copy](docs/editorial-proposals/2026-11-07/common-seed-simplification/README.md)
+uses one common positive seed argument in four proofs. It removes another 51
+physical source lines and strengthens T1.12, while preserving all 167 result
+identities, 548 labels, the earlier 13 simplifications and five scientific
+dispositions. It remains 64/101 pages. Twenty-one existing propositions were
+actually extracted and independently read. The exact diff, visual review,
+result map and eight integrity controls are included; no new theorem is counted.
+
 The separate review instance has now directly compared all 167 numbered-result
 labels across its frozen source snapshots; the [complete review index](docs/MANUSCRIPT_ENDPOINTS_V1_8.md)
 records every clause and inherited premise.
 
 | Manuscript | PDF | Editable source |
 |---|---|---|
-| Article, latest strengthened editorial preview | [PDF](manuscripts/paper-p1/editorial-strengthened-preview-2026-11-07/pdf/P1_Strengthened_Editorial_Preview_Main_2026-11-07_EN.pdf) | [TeX](manuscripts/paper-p1/editorial-strengthened-preview-2026-11-07/sources/main.tex) |
-| Companion, latest strengthened editorial preview | [PDF](manuscripts/paper-p1/editorial-strengthened-preview-2026-11-07/pdf/P1_Strengthened_Editorial_Preview_Companion_2026-11-07_EN.pdf) | [TeX](manuscripts/paper-p1/editorial-strengthened-preview-2026-11-07/sources/companion.tex) |
+| Article, latest unified editorial preview | [PDF](manuscripts/paper-p1/editorial-unified-preview-2026-11-07/pdf/P1_Unified_Editorial_Preview_Main_2026-11-07_EN.pdf) | [TeX](manuscripts/paper-p1/editorial-unified-preview-2026-11-07/sources/main.tex) |
+| Companion, latest unified editorial preview | [PDF](manuscripts/paper-p1/editorial-unified-preview-2026-11-07/pdf/P1_Unified_Editorial_Preview_Companion_2026-11-07_EN.pdf) | [TeX](manuscripts/paper-p1/editorial-unified-preview-2026-11-07/sources/companion.tex) |
+| Article, preserved strengthened editorial preview | [PDF](manuscripts/paper-p1/editorial-strengthened-preview-2026-11-07/pdf/P1_Strengthened_Editorial_Preview_Main_2026-11-07_EN.pdf) | [TeX](manuscripts/paper-p1/editorial-strengthened-preview-2026-11-07/sources/main.tex) |
+| Companion, preserved strengthened editorial preview | [PDF](manuscripts/paper-p1/editorial-strengthened-preview-2026-11-07/pdf/P1_Strengthened_Editorial_Preview_Companion_2026-11-07_EN.pdf) | [TeX](manuscripts/paper-p1/editorial-strengthened-preview-2026-11-07/sources/companion.tex) |
 | Article, preserved simplified editorial preview | [PDF](manuscripts/paper-p1/editorial-simplified-preview-2026-11-07/pdf/P1_Simplified_Editorial_Preview_Main_2026-11-07_EN.pdf) | [TeX](manuscripts/paper-p1/editorial-simplified-preview-2026-11-07/sources/main.tex) |
 | Companion, preserved simplified editorial preview | [PDF](manuscripts/paper-p1/editorial-simplified-preview-2026-11-07/pdf/P1_Simplified_Editorial_Preview_Companion_2026-11-07_EN.pdf) | [TeX](manuscripts/paper-p1/editorial-simplified-preview-2026-11-07/sources/companion.tex) |
 | Article, separate structural editorial preview | [PDF](manuscripts/paper-p1/editorial-structural-preview-2026-11-07/pdf/P1_Structural_Editorial_Preview_Main_2026-11-07_EN.pdf) | [TeX](manuscripts/paper-p1/editorial-structural-preview-2026-11-07/sources/main.tex) |

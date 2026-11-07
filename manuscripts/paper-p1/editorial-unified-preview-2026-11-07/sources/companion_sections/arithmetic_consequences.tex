@@ -1,0 +1,318 @@
+\section{Domain dependence and polylogarithmic arithmetic cutoffs}
+\label{p1:consequences:section}
+
+Two features of the arithmetic estimates have uses beyond the dyadic
+law theorem. Changing the interval of starting points changes the dominant
+rational channel. Revealing more windows changes the set of available
+prime coordinates, and the resulting loss must be measured by rank,
+not just by the number of exceptional positions. We record these facts,
+then explain how to cut off large ternary supports without assuming
+uniformity of a fixed-order counting theorem.
+
+\subsection{The aligned profile on a macroscopic interval}
+
+For an interval of starts $A$, let $\sigma(x,y)$ be the dimension
+of its rational even-unit code and put
+\[
+ R_{\rm rat}(A,B)=\sum_{\substack{x,y\in A\\|x-y|>L}}
+             (2^{\sigma(x,y)}-1).
+\]
+The rational code is zero unless there are at least two exact units.
+Let $R_{\rm al}(A,B)$ and $C_{\rm al}(A,L)$ be the sums over
+aligned ordered separated pairs of $2^{\rho(x,y)}-1$ and
+$\eta(x,y)2^{\rho(x,y)}-1$, respectively. Alignment has the
+definition in Section~\ref{p1:arith:section}; $B=L+1$.
+
+\begin{proposition}[Profiles depend on the interval]
+\label{p1:consequences:macro}
+In the dyadic critical band, writing $B=3k+r$, $0\le r<3$,
+\begin{equation}
+ R_{\rm rat}(I_N,B)\sim R_{\rm al}(I_N,B)
+       \sim \frac{3+r}{18}NB2^k,
+ \qquad
+ R_{\rm al}(I_N,B)-R_{\rm rat}(I_N,B)
+       =O_{C,\varepsilon}(N^{5/4+\varepsilon}).
+ \label{p1:consequences:dyadic-positive}
+\end{equation}
+Fix $0<\delta<1$, let $A_{M,\delta}=[\lceil M^\delta\rceil,M)
+\cap\mathbb Z$, and suppose $|L-\log_2M|\le C$.
+For $B=2k+r$, $0\le r<2$,
+\begin{equation}
+ R_{\rm rat}(A_{M,\delta},B)\sim R_{\rm al}(A_{M,\delta},B)
+       \sim\frac{2+r}{4}MB2^k,
+ \label{p1:consequences:macro-positive}
+\end{equation}
+and their difference is $O_{C,\delta,\varepsilon}(M^{4/3+\varepsilon})$.
+For the signed profile, write instead $L=2m+s$, $0\le s<2$.
+Then
+\begin{align}
+ C_{\rm al}(A_{M,\delta},L)
+   &=(M-2M^\delta)S_{1,2}(L)
+           +O_{C,\delta,\varepsilon}(M^{4/3+\varepsilon}),
+          \label{p1:consequences:macro-signed}\\
+ S_{1,2}(L)
+   &=2^{m-1}\big[(s+1)m+s^2+s+4\big]-3L+1
+       \qquad(m\ge1),\label{p1:consequences:S12}\\
+ C_{\rm al}(A_{M,\delta},L)
+   &\sim\frac{s+1}{4}ML2^m.
+          \label{p1:consequences:macro-equivalent}
+\end{align}
+\end{proposition}
+
+\begin{proof}
+In the channel $1:2$, each orientation permits
+$M/2-M^\delta+O(B)$ translations of the unit parameter.
+For $h=y-2x\in\{-1,\ldots,B-2\}$, the exact units have
+the size of the congruence class of $h$ modulo two in this
+interval. If these two sizes are $m_0,m_1$, their plateau
+contribution is
+\[
+ \sum_{j=0}^1m_j(2^{m_j-1}-1)
+       =2^{k-1}\big[(2+r)k+2r\big]-B.
+\]
+Outside the plateau, the unit count drops linearly with the
+distance, so the sum of the weights is $O(2^{B/2})$.
+Multiplying by both orientations proves the main term in
+\eqref{p1:consequences:macro-positive}. The height-one
+channel has no exact unit for separated windows; its residual
+cost is $M^{1+o(1)}$. All other reduced heights are at least
+three and contribute at most $M B^{O(1)}2^{L/3+o(L)}$.
+
+At a fixed height, the full kernel differs from the rational
+code only when the normalized windows contain a defective
+integer at a threshold proportional to $B$. There are
+$M^{1/2+o(1)}$ such hosts, by the square--smooth decomposition
+in Lemma~\ref{p1:arith:defects}. At height two their weight
+is $2^{L/2+o(L)}$, so the residual costs $M^{1+o(1)}$.
+The proof of Lemma~\ref{p1:arith:alignedrank} applies uniformly
+down to $x,y\ge M^\delta$: its Runge distance becomes
+$\gg_\delta\log M/\log B$, while its redundancy remains
+$O(B/\log B)$. Thus the other aligned heights have the
+stated $M^{4/3+\varepsilon}$ total bound, including all
+residual relations. This proves the comparison of the two
+positive sums.
+
+Retaining the predecessor sign replaces each placement factor
+$L+1-D$ by $g_L(D)=L-1-D$. Hence the signed contribution
+per translation is $S_{1,2}(L)$; the identity
+\eqref{p1:arith:channelidentity} gives
+\eqref{p1:consequences:S12}. The endpoints cost
+$O(B^3 2^{L/2})$ and the other channels and residual kernels
+have the same bounds in absolute value as above. This proves
+\eqref{p1:consequences:macro-signed} and its equivalent.
+
+For the dyadic assertion, the height-two channel is confined
+to the endpoints. The channel $2:3$ has translation count
+$N/3+O(B)$ over the two orientations, and three residue
+classes of total size $B=3k+r$. Its plateau weight is
+$2^{k-1}[(3+r)k+2r]-B$. The height-one residual costs
+$N^{1+o(1)}$; the remaining heights are at least four and
+cost $N^{5/4+o(1)}$. The fixed-height residual costs
+$N^{5/6+o(1)}$. These estimates prove
+\eqref{p1:consequences:dyadic-positive}.
+\end{proof}
+
+The residue classes of $B$ in the positive formulas and of
+$L$ in the signed formulas are different. They cannot be
+interchanged. With $\lambda_M=M2^{-L}$, the last formula gives
+\[
+ p^2C_{\rm al}(A_{M,\delta},L)
+   \sim\frac{s+1}{4\,2^{s/2}}\lambda_M^{3/2}L M^{-1/2}.
+\]
+This is an aligned-pair statement. It does not assert a
+macroscopic analogue of Theorem~\ref{p1:thm:main}. The actual
+mean parameter for this interval would be $|A_{M,\delta}|p$,
+whereas $\lambda_M$ expresses the ambient critical scale.
+
+\subsection{How exceptional vertices bound the conditional rank}
+
+Fix $j$ old windows and let $W$ be the square-class span of
+all their raw values. Let $\mathcal P$ contain the primes at
+most $B$ and every prime larger than $B$ dividing an old value.
+Put
+\[
+ \mathcal S(\mathcal P)=\{n\le3N:\sf(n)\text{ is supported on }
+                    \mathcal P\},\qquad
+ t_x=|V_x\cap\mathcal S(\mathcal P)|.
+\]
+
+\begin{lemma}[Conditional rank loss]
+\label{p1:consequences:conditional-rank}
+Let $\rho_x$ be the dimension of the kernel of the map from
+$E_x$ to square classes modulo $W$. Then
+\[
+ \rho_x\le(t_x-1)_+.
+\]
+Conditional on any realizable vector of the old raw signs,
+the probability of a new start is either zero or $p2^{\rho_x}$.
+It equals $p$ if $t_x\le1$.
+
+Let $O$ be the set of starts at distance at most $L$ from an
+old start, and put
+$D_T=\#\{x\in I_N\setminus O:t_x>T\}$ for $1\le T\le L$.
+Uniformly over the old signs,
+\begin{equation}
+ \E[Z_N\mid\mathcal F_{\rm old}]
+   \le\lambda_N+|O|+p2^{T-1}B|\mathcal S(\mathcal P)|+D_T.
+ \label{p1:consequences:conditional-budget}
+\end{equation}
+For fixed $j$ and $T=\lfloor(1-\delta)L\rfloor$, $0<\delta<1$,
+the third term is $N^{1/2-\delta+o_{C,j}(1)}$.
+\end{lemma}
+
+\begin{proof}
+A nonzero element of $E_x$ is an even nonempty selection of
+values. If its square class lies in $W$, every prime larger
+than $B$ with odd valuation in a selected value must divide
+an old value: it cannot divide a second value of $V_x$.
+Thus every selected value lies in $\mathcal S(\mathcal P)$.
+The kernel injects into the even-subset space on these $t_x$
+values, of dimension $(t_x-1)_+$. The conditional distribution
+of the new relative signs is uniform on an affine image of
+dimension $L-\rho_x$, proving the probability statement.
+
+Use probability at most one on $O$ and on $\{t_x>T\}$.
+On $\{t_x\le1\}$ the probability is $p$; on
+$\{2\le t_x\le T\}$ it is at most $p2^{T-1}$.
+Moreover $\#\{x:t_x\ge2\}\le\sum_xt_x
+\le B|\mathcal S(\mathcal P)|$.
+This proves \eqref{p1:consequences:conditional-budget}.
+The Euler-product bound in Lemma~\ref{p1:limits:branching}
+gives $|\mathcal S(\mathcal P)|=N^{1/2+o_{C,j}(1)}$ when
+$j$ is fixed; substituting $T$ proves the final assertion.
+\end{proof}
+
+For example, if $Q(\mathcal P)$ counts pairs $n<m$ in
+$\mathcal S(\mathcal P)$ with $m-n\le L$, double counting gives
+\[
+ D_T\le\frac{B Q(\mathcal P)}{\binom{T+1}{2}}.
+\]
+No independence of the two exceptional integers is assumed.
+The rank factor explains why merely counting dependent windows
+throws away useful conditional information.
+
+\subsection{Cutting off large primes and large support groups}
+
+Use the triples of blocks and the groups $G_u$ from
+Proposition~\ref{p1:arith:ternary-budget}. The offsets and
+width constants are fixed; a polynomial number in $B$ of
+such patterns is allowed. Let $\mathcal Q$ be the set of
+primes greater than the diameter threshold that occur with
+odd valuation in all three blocks. A positive mass below
+means a sum of nonnegative host weights, each at most
+$N^{-\beta+o(1)}$, with $\beta$ fixed before $N$ and uniform
+$o(1)$. For an original
+primitive triple one can take $\beta=2$: two of its
+window spaces are in direct sum.
+
+\begin{lemma}[A Rankin bound for offset patterns]
+\label{p1:consequences:rankin-patterns}
+For fixed $c,D_0>0$, $d\in\{2,3\}$ and $X\ge1$, put
+$s=1+(d-1)/c$. Then
+\begin{equation}
+ \sum_{\substack{Q\le X\ {\rm squarefree}\\P^-(Q)>B^c}}
+       (D_0B)^{d\omega(Q)}
+ \le X^s\exp\{O_{c,D_0}(B/\log B)\}.
+ \label{p1:consequences:rankin-primes}
+\end{equation}
+If instead the factors are arbitrary distinct integers
+$g>B^c$, then, for every fixed $0<\zeta<1$ and
+$s_\zeta=1+(d-1+\zeta)/c$,
+\begin{equation}
+ \sum_{\substack{A\subset\mathbb N\ {\rm finite}\\
+                g>B^c\ (g\in A),\ \prod_{g\in A}g\le X}}
+       (D_0B)^{d|A|}
+ \le X^{s_\zeta}\exp\{O_{c,d,\zeta,D_0}(B^{1-\zeta})\},
+ \label{p1:consequences:rankin-groups}
+\end{equation}
+where $D_0$ is fixed.
+\end{lemma}
+
+\begin{proof}
+Rankin's inequality bounds the first sum by
+$X^s\prod_{q>B^c}(1+(D_0B)^dq^{-s})$.
+Chebyshev's prime estimate and partial summation give
+$\sum_{q>Y}q^{-s}\ll_s Y^{1-s}/\log Y$.
+Since $d+c(1-s)=1$, taking the logarithm proves
+\eqref{p1:consequences:rankin-primes}. For integer factors
+the analogous product is
+$\prod_{g>B^c}(1+(D_0B)^dg^{-s_\zeta})$.
+Bound its logarithm by the corresponding sum over integers;
+the exponent of $B$ is now $1-\zeta$.
+\end{proof}
+
+\begin{proposition}[Polylogarithmic confinement]
+\label{p1:consequences:confinement}
+For every fixed $c>0$ and $\varepsilon>0$, there is a fixed
+integer $k$ such that, outside a mass
+\begin{equation}
+ O_{c,\beta,\varepsilon}
+ \left(N^{-\min\{\beta-6/5,\,\beta-1-2/c\}+\varepsilon}\right),
+ \label{p1:consequences:confinement-error}
+\end{equation}
+one has
+\begin{equation}
+ \#\{u:G_u>B^c\}
+       \le k-1+\left\lfloor\frac{\log N}{c\log B}\right\rfloor=o(L).
+ \label{p1:consequences:confinement-count}
+\end{equation}
+The same assertion holds for $\#\{q\in\mathcal Q:q>B^c\}$.
+On a family of $B^{O(1)}$ fixed affine planes for the centers,
+replace $2/c$ in the exceptional mass by $1/c$.
+For original triples, $c>6$ is therefore sufficient for an
+exceptional mass $o(LN^{-2/3})$; on these planes $c>3$
+suffices. These are sufficient thresholds, not optimality claims.
+\end{proposition}
+
+\begin{proof}
+First, the fixed-$k$ budget of
+Proposition~\ref{p1:arith:ternary-budget} gives a mass
+$O(N^{6/5-\beta+\varepsilon/3})$ for $\mathcal G_k>N$.
+The identical budget holds for the product of the $k$ largest
+individual primes. Indeed CRT fixes each center modulo their
+product, exactly as in \eqref{p1:arith:groupcrt}. In the
+three-prime tail, repeated offset supports cannot cause a
+new case: if all supports coincide the product divides one
+value; if exactly two coincide, or three are collinear, it
+divides a nonzero coordinate of $d\times(X+u)$, of size
+$O(NB)$. A zero cross product would give a forbidden pair
+relation, as in the proof of the group budget. The large
+product therefore forces a genuine plane. The CRT tail and
+the induction on fixed $k$ apply unchanged.
+
+Outside this first exception at most $k-1$ factors exceed
+$N^{1/k}$. If the product of the remaining factors in
+$(B^c,N^{1/k}]$ exceeds $N$, multiply them in a deterministic
+order until their product first exceeds $N$. The resulting
+$Q$ satisfies $N<Q\le X=N^{1+1/k}$.
+For individual primes, choosing their three offsets costs
+$(D_0B)^{3\omega(Q)}$ for a fixed width constant $D_0$.
+CRT gives $O(1)$ choices for each center.
+Equation~\eqref{p1:consequences:rankin-primes} bounds the
+weighted mass by
+\[
+ N^{-\beta+(1+1/k)(1+2/c)+o(1)}.
+\]
+For groups, each factor has one support, costing at most
+$(D_0B)^3$. Their pairwise coprimality is used in CRT first;
+it may then be dropped in the positive sum over factor sets.
+Equation~\eqref{p1:consequences:rankin-groups} gives instead
+\[
+ N^{-\beta+(1+1/k)(1+(2+\zeta)/c)+o(1)}.
+\]
+Choose $\zeta$ sufficiently small and then $k$ sufficiently
+large, both before $N$, to absorb the extra exponent into
+$\varepsilon$. If the centers lie on one of the specified
+planes, enumerate only the two free coordinates and their
+offsets; the third is fixed by the plane. This uses $d=2$
+and gives $1/c$ in place of $2/c$. In the remaining
+configurations the product is at most $N$, so the number
+of factors greater than $B^c$ is at most
+$\lfloor\log N/(c\log B)\rfloor$.
+\end{proof}
+
+The cutoff applies to whole support groups, even if a group
+contains many primes. It can therefore be imposed before a
+coordinate regularization. Reversing that order could merge
+support labels and invalidate a bound stated only for the
+original labels.

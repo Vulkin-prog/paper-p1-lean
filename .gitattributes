@@ -9,3 +9,6 @@ docs/editorial-proposals/2026-11-07/structural-simplification/structural-simplif
 manuscripts/paper-p1/editorial-structural-preview-2026-11-07/sources/**/*.tex whitespace=-blank-at-eol,-blank-at-eof
 docs/editorial-proposals/2026-11-07/proof-simplification/last-proof-cuts.patch whitespace=-blank-at-eol
 manuscripts/paper-p1/editorial-simplified-preview-2026-11-07/sources/**/*.tex whitespace=-blank-at-eol,-blank-at-eof
+# Preserve the reviewed common-seed diff and its inherited TeX control spaces.
+docs/editorial-proposals/2026-11-07/common-seed-simplification/common-seed-simplifications.patch whitespace=-blank-at-eol
+manuscripts/paper-p1/editorial-unified-preview-2026-11-07/sources/**/*.tex whitespace=-blank-at-eol,-blank-at-eof

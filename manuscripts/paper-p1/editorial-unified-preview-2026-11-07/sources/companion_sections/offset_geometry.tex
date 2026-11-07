@@ -1,0 +1,357 @@
+\section{Offset geometry and residual relation spaces}
+\label{p1:offset:section}
+
+The group budget used in the main proof keeps the product of primes
+sharing an offset. Two further geometric consequences explain what such
+products can force. A line of offsets has a bounded total prime product;
+a large product on three offsets gives a plane involving all three
+windows. These statements also give a more detailed description of the
+relation space after a covering set of coordinates has been removed.
+
+Throughout this section $B=L+1$, $I_N=[N,2N)\cap\mathbb Z$, and
+$H=C_0B$ for a fixed $C_0>1$. We consider three distinct regular windows
+with starts $X=(x_1,x_2,x_3)\in I_N^3$ and pairwise direct relative
+spaces. Their offsets lie in
+$\mathcal O=\{-1,0,\ldots,L-1\}$, whose diameter is less than $B$.
+Every prime $\ell>H$ having odd valuation in all three windows has a
+unique offset $u_\ell\in\mathcal O^3$. Such primes are called shared
+in the statements below. No independence of the three-window system
+is assumed. Whenever a primitive mass is mentioned, it is the sum of
+the original affine joint probabilities over ordered primitive triples.
+Each of these probabilities is at most $p^2$.
+
+\subsection{Whole prime products on lines and planes}
+
+\begin{lemma}[The prime product on an offset line]
+\label{p1:offset:line-product}
+Let $\mathcal L$ be a line in offset space, and let
+$\mathcal Q_{\mathcal L}$ be the shared primes whose offsets lie on it.
+If their distinct offsets consist of one point, then
+\[
+ \prod_{\ell\in\mathcal Q_{\mathcal L}}\ell\le3N.
+\]
+If there are at least two distinct offsets, the line has a primitive
+integer direction $d$ and
+\begin{equation}
+ \prod_{\ell\in\mathcal Q_{\mathcal L}}\ell
+       \le6N\|d\|_\infty\le6NB.
+ \label{p1:offset:line-product-bound}
+\end{equation}
+For $Y\ge H$, the number of distinct offsets on this line supplied by
+primes greater than $Y$ is at most
+\[
+ M_Y=1+\frac{\log(6NB)}{\log Y}=O_{C_0,C}(B/\log B)=o(B).
+\]
+\end{lemma}
+\begin{proof}
+At a single offset the product of the distinct primes divides each
+coordinate of $X+u$, all of which are at most $3N$ for large $N$.
+Otherwise fix one occurring offset $u_0$. Every integer point on the
+line has the form $u_0+td$, with $t\in\mathbb Z$. Each of its shared
+primes divides the same integer vector
+\[
+ d\times(X+u_\ell)=d\times(X+u_0).
+\]
+This vector is nonzero. If it were zero, positivity of $X+u_0$ would
+make all coordinates of $d$ nonzero. Two distinct offsets would give
+two positive proportional value vectors, with two distinct values in
+each block. Their projections on any two blocks would give equal
+nonzero square classes of even selections. Injectivity and the direct
+sum of those two spaces exclude this relation.
+
+A nonzero coordinate of the displayed cross product has absolute value
+at most $6N\|d\|_\infty$ and is divisible by every prime in the
+product. Two offsets in $\mathcal O^3$ give $\|d\|_\infty<B$.
+This proves \eqref{p1:offset:line-product-bound}. Choose one prime per
+distinct offset and take logarithms to obtain the last assertion;
+the extra one covers a line carrying only one offset.
+\end{proof}
+
+\begin{lemma}[An integer product tail]
+\label{p1:offset:integer-tail}
+For fixed $s>1$ and $T\ge1$,
+\[
+ \sum_{\substack{a,b\ge1\\ab>T}}(ab)^{-s}
+       \ll_s T^{1-s}\log(2T).
+\]
+\end{lemma}
+\begin{proof}
+For $a\le T$, the inner sum is at most
+$C_s(T/a)^{1-s}$, giving
+$C_sT^{1-s}\sum_{a\le T}a^{-1}$ after multiplication by $a^{-s}$.
+For $a>T$, use the full sum $\zeta(s)$ and
+$\sum_{a>T}a^{-s}=O_s(T^{1-s})$.
+\end{proof}
+
+Let $\mathscr P_B$ be the family of distinct affine planes
+\[
+ A\cdot X=h,\qquad
+ A=(u_2-u_1)\times(u_3-u_1)\ne0,
+ \qquad h=-A\cdot u_1,
+ \qquad u_1,u_2,u_3\in\mathcal O^3.
+\]
+There are at most $B^9$ such planes, and these representations satisfy
+$\|A\|_\infty\le2B^2$ and $|h|\le6B^3$.
+
+\begin{proposition}[A forced plane uses all three coordinates]
+\label{p1:offset:forced-plane}
+Two distinct shared primes satisfy $\ell\ell'\le6NB$.
+If three distinct shared primes have product greater than $18NB^2$,
+then $X$ belongs to a plane of $\mathscr P_B$ whose normal satisfies
+$A_1A_2A_3\ne0$. Every further shared prime $\ell>12B^3$ has
+\begin{equation}
+ A\cdot u_\ell=-h.
+ \label{p1:offset:subsequent-offset}
+\end{equation}
+The primitive mass of triples belonging to two distinct planes of
+$\mathscr P_B$ is $O_C(N^{-1+o(1)})$.
+\end{proposition}
+\begin{proof}
+For two primes, either they share a value in one of two selected blocks,
+so their product is at most $3N$, or their occurrences are distinct in
+both. In the latter case their product divides
+$nm'-n'm$. Its vanishing gives the forbidden pair relation
+$nn'mm'=(nm')^2$. Since $n,m\le3N$ and both within-block
+differences have absolute value less than $B$, its nonzero absolute
+value is at most $6NB$.
+
+For three primes, their product divides
+\[
+ \det(X+u_1,X+u_2,X+u_3)
+ =(X+u_1)\cdot((u_2-u_1)\times(u_3-u_1)),
+\]
+whose absolute value is at most $18NB^2$. Hence it vanishes.
+The offsets cannot lie on a line, by
+Lemma~\ref{p1:offset:line-product}, including the case of repeated
+offsets. Thus $A\ne0$ and $A\cdot X=-A\cdot u_1$.
+
+Suppose, for example, that $A_1=0$. The other two coefficients must
+both be nonzero, since $A\cdot(X+u_i)=0$ cannot have just one
+nonzero coefficient at a positive vector. The projections of all three
+value vectors onto coordinates two and three are proportional. If two
+projections differ, both their coordinates differ, giving a forbidden
+pair relation. If none differ, the two offset differences are parallel
+to the first axis, contradicting $A\ne0$. The other coordinates are
+handled in the same way.
+
+A further prime divides $A\cdot(X+u_\ell)=h+A\cdot u_\ell$,
+an integer of absolute value at most $12B^3$. A larger prime forces
+it to vanish. Finally, two distinct planes are disjoint or meet in a
+line, which has at most $N$ integer points in $I_N^3$. There are at
+most $B^{18}$ pairs of planes. Multiplication by the upper probability
+$p^2$ gives the mass assertion.
+\end{proof}
+
+\begin{lemma}[Many planar supports force a small normal]
+\label{p1:offset:normal-budget}
+Let $A\cdot u=-h$ be a plane of offsets, with $A\in\mathbb Z^3$
+primitive and nonzero, and $h\in\mathbb Z$. Let $m_{A,Y}$ count its
+distinct offsets supplied by shared primes greater than $Y\ge H$.
+Then
+\begin{equation}
+ m_{A,Y}\le M_Y+\frac{6B^2}{\|A\|_\infty}.
+ \label{p1:offset:normal-count}
+\end{equation}
+If the hyperedges given by these offsets require at least $\delta L$
+vertices to cover them, where $\delta>0$ is fixed, then for large $N$,
+\[
+ \|A\|_\infty\le24B/\delta,
+ \qquad |h|\le72B^2/\delta.
+\]
+There are consequently $O_\delta(B^5)$ possible such integer planes.
+\end{lemma}
+\begin{proof}
+The lattice $\Lambda=A^\perp\cap\mathbb Z^3$ has covolume
+$\|A\|_2$. Indeed, a lattice basis $d,e$ can be completed by an
+integer vector $w$ with $A\cdot w=1$ to a basis of $\mathbb Z^3$,
+so $d\times e=\pm A$.
+Choose a shortest nonzero lattice vector $d$, of length $\ell$.
+It is primitive and extends to a lattice basis. Unless the cube has
+at most one integer point on the plane, $\ell\le\sqrt3B$.
+Parallel lattice lines in direction $d$ have spacing $\|A\|_2/\ell$.
+At most $1+\sqrt3B\ell/\|A\|_2$ meet the cube, and each contains
+at most $1+\sqrt3B/\ell$ integer points. By
+Lemma~\ref{p1:offset:line-product}, each carries at most $M_Y$ supports.
+It follows that
+\[
+ m_{A,Y}\le
+ \left(1+\frac{\sqrt3B\ell}{\|A\|_2}\right)
+       \min\left(M_Y,1+\frac{\sqrt3B}{\ell}\right)
+ \le M_Y+\frac{6B^2}{\|A\|_\infty}.
+\]
+The omitted one-point case satisfies the same bound.
+The covering number is no larger than the number of supports.
+Since $M_Y=o(B)$ and $L=B-1$, a covering number at least $\delta L$
+implies the asserted bound for $A$, with room in the constant.
+The existence of an offset gives $|h|\le3B\|A\|_\infty$.
+Counting the normals and the constants gives $O_\delta(B^5)$ planes.
+\end{proof}
+
+\subsection{Root separation and counting on a plane}
+
+\begin{lemma}[At most one common root]
+\label{p1:offset:root-separation}
+Let $y=\alpha x+\beta$, with rational $\alpha\ne0$, pass through
+a positive pair of regular windows with direct relative spaces.
+Choose offsets distinct within each block. The two root lists
+$-i$ and $-(\beta+j)/\alpha$ have at most one common element.
+If these offsets are partitioned among equations with disjoint supports,
+discarding at most two equations leaves squarefree polynomials with
+pairwise disjoint root sets after substitution of the line.
+\end{lemma}
+\begin{proof}
+A common root says $\beta+j=\alpha i$, and hence
+$y+j=\alpha(x+i)$. Positivity makes $\alpha>0$.
+Two common roots would give two distinct values on each side in the
+same ratio. Their even square classes are nonzero by injectivity and
+equal, contradicting directness. The sole possible common root belongs
+to at most two equations. Removing those equations removes both
+repeated roots within an equation and roots shared between equations.
+\end{proof}
+
+\begin{proposition}[Many transverse square products on prescribed planes]
+\label{p1:offset:planar-components}
+Fix $\eta,\varepsilon>0$ and $K>0$. Let a family of at most $B^K$
+planes have integer equations
+$A_1x+A_2y+A_3z=h$, with nonzero normal and all coefficients of
+absolute value at most $B^K$.
+The number of primitive triples on these planes admitting at least
+$\eta B$ disjoint sets of values, each meeting all three windows and
+having square product modulo primes at most $H$, is
+$O_{C,C_0,\eta,K,\varepsilon}(N^{1+\varepsilon})$.
+Their primitive mass is $O(N^{-1+\varepsilon})$.
+\end{proposition}
+\begin{proof}
+A plane with only one nonzero coordinate coefficient cannot meet the
+dyadic region for large $N$. Otherwise permute coordinates so that
+$A_1A_2\ne0$. The budget of $3B$ values leaves at least $\eta B/2$
+sets of size at most $D_0=\lceil6/\eta\rceil$.
+Select $k+2$ of them, where $k$ is fixed below. Their equations are
+\[
+ w_\nu^2=d_\nu P_\nu(x)Q_\nu(y)R_\nu(z),
+\]
+with nonempty split products, disjoint root lists in each window,
+total degree at most $D_0$, and squarefree $H$-smooth $d_\nu$.
+Their offsets and coefficients have $N^{o(1)}$ possibilities for fixed
+$k,D_0$, and $d_\nu\le\prod_{\ell\le H}\ell=N^{O_{C,C_0}(1)}$.
+
+Fix $z$. The plane gives
+$y=\alpha x+\beta$, where
+$\alpha=-A_1/A_2$ and $\beta=(h-A_3z)/A_2$.
+Lemma~\ref{p1:offset:root-separation} leaves $k$ equations whose
+polynomials $P_\nu(x)Q_\nu(\alpha x+\beta)$ have simple disjoint
+roots. Their square classes are geometrically independent, since
+valuation at a root belonging to one equation detects that equation.
+They define a geometrically integral curve of degree at least $2^k$
+in the coordinates $(x,w_1,\ldots,w_k)$: its generic projection to
+the $x$-line has that degree. Its degree is also bounded above in terms
+of $k,D_0$ only.
+
+Clearing powers of $A_2$ from the equations preserves the original
+integer coordinates $w_\nu$. Their heights are at most $N^{q_0}$
+for fixed $q_0=q_0(C,C_0,D_0,K)$ independent of $k,z$ and the motifs;
+this follows from the original three-variable products.
+Pila's uniform curve estimate \cite[Theorem~A]{pila1995} therefore
+gives $O(N^{q_0/2^k+q_0\zeta})$ points for each motif and fixed $z$.
+Choose $k$ sufficiently large, then $\zeta$ sufficiently small, to
+make this exponent less than $\varepsilon/3$. Sum the $O(N)$ values
+of $z$, the $N^{o(1)}$ motifs and the $B^K$ planes. Finally use
+$q(\{x,y,z\})\le p^2$ to obtain the mass bound.
+\end{proof}
+
+\subsection{Deleting a cover of the three-block constraints}
+
+For a separated primitive triple, let $\mathcal H_3$ have the $3B$
+formal window positions as vertices and the three occurrences of each
+shared prime as a hyperedge. Repeated supports may be identified.
+Let $D$ be any vertex cover of these edges, with $t=|D|$.
+For the relative relation space $R$, define
+$R_D=\{v\in R:v|_D=0\}$.
+
+\begin{lemma}[Covering cost and free components]
+\label{p1:offset:cover-rank}
+One has
+\[
+ \dim R\le t+\dim R_D.
+\]
+After coordinates in $D$ are set to zero, the equations from primes
+greater than $H$ form a graph with possibly pinned vertices. If $c_3(D)$
+counts its unpinned components meeting all three blocks, then
+\[
+ \dim R_D\le c_3(D)+O_{C,C_0}(B/\log B),
+\]
+uniformly in $D$. The product of the values in every free component
+is a square modulo primes at most $H$.
+\end{lemma}
+\begin{proof}
+The first statement is rank--nullity for the coordinate restriction
+$R\to\mathbb F_2^D$. Every row previously of weight three meets
+$D$, so its remaining weight is at most two. A row of weight two
+equates its coordinates, and a row of weight one pins its coordinate
+to zero; pinning propagates through the component.
+
+A free isolated vertex was already $H$-defective. Otherwise a large
+prime incident to it would remain either an edge or a pin. There are
+$O(B/\log B)$ such vertices by Lemma~\ref{p1:arith:defects}.
+A nonsingleton component cannot be contained in one block because
+edges join distinct blocks. For a fixed pair of blocks, there are at
+most $\pi(H)+2$ free components meeting exactly that pair: otherwise
+their small-prime valuation vectors, augmented by the two block
+parities, have a nonzero zero-sum combination. Disjointness of the
+components would then give a forbidden relative pair relation.
+These components also number $O(B/\log B)$.
+All remaining free components meet the three blocks and each has
+one binary coordinate before the additional equations are imposed.
+This proves the dimension estimate. Every large-prime row meets a
+free component zero or two times, proving its product assertion.
+\end{proof}
+
+\begin{proposition}[A six-vertex budget for the residual space]
+\label{p1:offset:six-vertex}
+For every fixed $\varepsilon>0$, there is a set of primitive triples
+of total mass $O_{C,C_0,\varepsilon}(N^{-1+\varepsilon})$ outside
+which every cover $D$ simultaneously satisfies
+\begin{equation}
+ \dim R_D\le\frac{3B-|D|}{6}
+           +O_{C,C_0}(B/\log B)+O_{C,C_0,\varepsilon}(1).
+ \label{p1:offset:six-vertex-bound}
+\end{equation}
+For fixed $\eta>0$, triples admitting some cover with
+$\dim R_D\ge\eta L$ number $O_{C,C_0,\eta,\varepsilon}(N^{3/2+\varepsilon})$.
+On a prescribed family of planes as in
+Proposition~\ref{p1:offset:planar-components}, their number is
+$O(N^{1+\varepsilon})$ and their primitive mass is
+$O(N^{-1+\varepsilon})$.
+\end{proposition}
+\begin{proof}
+For any fixed positive type $(a,b,c)$ with a singleton, sufficiently
+many disjoint square products of that type have $O(N^{1+\varepsilon})$
+primitive hosts. Fix the third centre and apply the degree-one part
+of Lemma~\ref{p1:arith:geometric} to the other two, putting the
+singleton in its linear variable. The specialized coefficients have
+fixed polynomial height. The original smooth coefficients and offsets
+have $N^{o(1)}$ choices; summing the third centre proves the count.
+Multiplication by $p^2$ gives mass $O(N^{-1+\varepsilon})$.
+
+Apply this exclusion to the finitely many permutations of
+$(1,1,1)$, $(2,1,1)$, $(3,1,1)$ and $(2,2,1)$.
+Outside their union, the number $s$ of free three-block components
+of size at most five is bounded, for every cover $D$.
+All other three-block components use at least six surviving vertices,
+and the small ones use at least three. Therefore
+\[
+ 6c_3(D)-3s\le3B-|D|.
+\]
+Lemma~\ref{p1:offset:cover-rank} proves
+\eqref{p1:offset:six-vertex-bound}.
+
+If $\dim R_D\ge\eta L$, the same lemma supplies a positive
+proportion of disjoint three-block square products. Select a fixed
+number of bounded-size ones. Fixing one centre and using the general
+two-parameter estimate of Lemma~\ref{p1:arith:geometric} gives
+$N^{3/2+\varepsilon}$ hosts after the same coefficient and offset
+enumeration. On the prescribed planes use instead
+Proposition~\ref{p1:offset:planar-components}.
+The covers are never enumerated: their existence supplies the disjoint
+sets, of which only a fixed number are selected for counting.
+\end{proof}

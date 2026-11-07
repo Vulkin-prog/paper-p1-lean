@@ -1,0 +1,143 @@
+{
+  "status": "passed",
+  "pages_rendered_and_contact_sheet_reviewed": 165,
+  "contact_sheets_actually_inspected": 11,
+  "detail_pages_rendered": 23,
+  "full_detail_pages_actually_inspected": 23,
+  "detail_pages_actually_inspected": [
+    {
+      "document": "main",
+      "page": 1
+    },
+    {
+      "document": "main",
+      "page": 2
+    },
+    {
+      "document": "main",
+      "page": 62
+    },
+    {
+      "document": "main",
+      "page": 64
+    },
+    {
+      "document": "companion",
+      "page": 1
+    },
+    {
+      "document": "companion",
+      "page": 2
+    },
+    {
+      "document": "companion",
+      "page": 3
+    },
+    {
+      "document": "companion",
+      "page": 4
+    },
+    {
+      "document": "companion",
+      "page": 15
+    },
+    {
+      "document": "companion",
+      "page": 16
+    },
+    {
+      "document": "companion",
+      "page": 17
+    },
+    {
+      "document": "companion",
+      "page": 18
+    },
+    {
+      "document": "companion",
+      "page": 19
+    },
+    {
+      "document": "companion",
+      "page": 20
+    },
+    {
+      "document": "companion",
+      "page": 25
+    },
+    {
+      "document": "companion",
+      "page": 26
+    },
+    {
+      "document": "companion",
+      "page": 27
+    },
+    {
+      "document": "companion",
+      "page": 28
+    },
+    {
+      "document": "companion",
+      "page": 29
+    },
+    {
+      "document": "companion",
+      "page": 30
+    },
+    {
+      "document": "companion",
+      "page": 99
+    },
+    {
+      "document": "companion",
+      "page": 100
+    },
+    {
+      "document": "companion",
+      "page": 101
+    }
+  ],
+  "observed_clipping_overlap_or_missing_glyph_defects": 0,
+  "pdf_sha256": {
+    "main": "ba4aaff2c72861d2729e5ee4e1b994f8e0e3abb509fdad72cb4c04ced883b2aa",
+    "companion": "f699dd80ce2576173a730893cd59e3b513371a2386c3290211d85ca93ebaea8a"
+  },
+  "image_sha256": {
+    "renders/main/contact-01.png": "6fb4f1209b43b3f8c0f1aa629f3764deddcadf32fb82ff308b72c4f4d4efee3b",
+    "renders/main/contact-02.png": "ca97ddf3d063c86d85ff39dae92eabf119b6068bf005b76ef9d8c0378192679e",
+    "renders/main/contact-03.png": "94226bc9ec32e75e7643989932b5f8b3fb46a6c4daba91ec3896383f48349ec2",
+    "renders/main/contact-04.png": "d63408a6dd6b444175b1331a334e792f0efd83801e5b673d8f75539aad99534a",
+    "renders/main/detail-001.png": "742a480332fcbba3bf8d3d014d8bd4c9b63360aa0a4bec5f4df8963e3e97c566",
+    "renders/main/detail-002.png": "21ed091df34dc6747ad66ff0043a45103dd016106ec52a6a9d54bce3ccad72b2",
+    "renders/main/detail-062.png": "31d321f0ea9e41f24c982cfbaf87e579c44cc9b22a5904c2c5ce6a921f6a7587",
+    "renders/main/detail-064.png": "bc26bd517cbd2f339d87460cae2f38511d4be3f263ab9e3194eff9561f2637bb",
+    "renders/companion/contact-01.png": "1e3352bb2421491149eae7f83c0bd656b7ca15b188a4a59c4ce47e8373274731",
+    "renders/companion/contact-02.png": "0190c2892096ae96010f6f519e45452c57d48ef852fbe67f82828c44d0d32bef",
+    "renders/companion/contact-03.png": "f077e2fe3c105521af730fa77df8237e4dab6e24daf61a0378d60f6a7e4f5142",
+    "renders/companion/contact-04.png": "b71ca155e09e53a0478423d80643b93f0e48c73117a44945ca12a424d9815018",
+    "renders/companion/contact-05.png": "8281d0b95e1d8bfb62adddf45b055dbc40fc9799190d2d5f574f6bac52843332",
+    "renders/companion/contact-06.png": "efe2d99394a540c8dc52a096aa0507a06d68dc2d1fe15145d859e11427c8e460",
+    "renders/companion/contact-07.png": "276ce99388b0f28049744e64f0817807aaa2be79cda01fc19502d0c1a05d0212",
+    "renders/companion/detail-001.png": "af43bdc5bdb4715c22a247bce5f57b3c89485ae604da534e289d6487e54dc8e8",
+    "renders/companion/detail-002.png": "50238615f1a30440c5c8db818dbf502ca1d43628ce637c1f0945299a34a214b0",
+    "renders/companion/detail-003.png": "e1b48a4a12041bbf07f5703da64751343fa992096901942e159e723d7011d5f7",
+    "renders/companion/detail-004.png": "c3565884cbb7878ed27e72268ba6e53953c1c82f68216690ce68282a11ef9609",
+    "renders/companion/detail-015.png": "32e5c60257754f5ab23bb8431c1ff0baa009a8ba32ada5e85b6b62b58f845e02",
+    "renders/companion/detail-016.png": "cab33e8de5970cb0687d4d8653beebcc6950359cff23ef15386d3c346725a71f",
+    "renders/companion/detail-017.png": "9595a4a8b5e805135232daf380bd5eb2d47f37897fd548169af540f316efc2ad",
+    "renders/companion/detail-018.png": "0e3430f2de11fce1c06f3d67f3e2cb38428eef56d746578bbb647a059264979c",
+    "renders/companion/detail-019.png": "8d6c86752818292923297151a74b6d511ef1c6f43fcb9318c902fb3a4f80e010",
+    "renders/companion/detail-020.png": "63546e36fdc9700b64c15af53efccf72ec35ef649e281d81345dc54b0728f037",
+    "renders/companion/detail-025.png": "351849b6da7c8aa3ea4857433e0d9a784fbb765e8390654191a46f50e6fcbb14",
+    "renders/companion/detail-026.png": "6875db6931af300f673625de6f7faf309889f4d04a02ddbfaa7176f6e1fb2ee2",
+    "renders/companion/detail-027.png": "a08fbf937af7b41bd96b461b4944ea2178cc36faf2b6ce1cb79f882bcddf275d",
+    "renders/companion/detail-028.png": "c9eab70f93904066f0ad2a01f1e64bad4c9c797b873fa9091a3e3053af81f314",
+    "renders/companion/detail-029.png": "51161408985d81e45f815a9874564bdc0a0430092aa9775f51b790a98cc6682d",
+    "renders/companion/detail-030.png": "6c107b177547cd5c1ea6e32b570a26a9d7fd576c13d7a704d208f9c5a802ca9f",
+    "renders/companion/detail-099.png": "4d649d747190e76253bc33285a5cfa4b15f1639a53e0f288c39ca9b1c0a71552",
+    "renders/companion/detail-100.png": "6ecf8c0bc3a699fa710fe3592c2d1b7c9f51691dd4060461f698addd757ae270",
+    "renders/companion/detail-101.png": "a1929cb8202694ac1742f460abe68e974f6c75150c868c9d26613e48296a2037"
+  },
+  "scope": "All165 pages inspected through eleven contact sheets, plus23 full detail pages. Changed proofs and neighboring pages, reading guide, titles, correspondence/AI statements and bibliography inspected. No additional page gain claimed."
+}

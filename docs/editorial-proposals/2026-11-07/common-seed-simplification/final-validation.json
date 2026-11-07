@@ -1,0 +1,334 @@
+{
+  "schema_version": 1,
+  "status": "verified_separate_unified_preview",
+  "date": "2026-11-07",
+  "documentary_base_commit": "b35adf3c7390e6c957be2ed07baf3518ff7a2774",
+  "proof_source_commit": "d342b507332315c67b1463009061c03f14b5be9b",
+  "package": "manuscripts/paper-p1/editorial-unified-preview-2026-11-07",
+  "base_package": "manuscripts/paper-p1/editorial-strengthened-preview-2026-11-07",
+  "preserved_versions_and_prior_previews_changed": false,
+  "new_lean_theorems": 0,
+  "new_ledger_entries": 0,
+  "historical_mathematical_ledger_entries": 1005,
+  "independent_concrete_diff_review": {
+    "path": "docs/editorial-proposals/2026-11-07/common-seed-simplification/independent-patch-review.json",
+    "sha256": "acce9b140ee81fa0a099e5de788d41fa59cdc89d7260ddbb707b7fa6998a3280",
+    "mathematical_gaps_confirmed": 0
+  },
+  "preliminary_review": {
+    "path": "docs/editorial-proposals/2026-11-07/two-edge-simplification/independent-proposals.json",
+    "sha256": "e2ff2ef63167e3bd1176db167d64d780ff95be78fb7a8fca3aa6003af2be4c88"
+  },
+  "patch": {
+    "path": "docs/editorial-proposals/2026-11-07/common-seed-simplification/common-seed-simplifications.patch",
+    "sha256": "74e24932b75078ba13c7f238fcbfe235a03c693c9b487a987f9974de380ef28b"
+  },
+  "frozen_initial_patch_validation": {
+    "path": "docs/editorial-proposals/2026-11-07/common-seed-simplification/patch-validation.json",
+    "sha256": "53a90b47dd7dc54c1675c07e7d4e297aff811caf60ee0a2a566fd6ed951d7258"
+  },
+  "compiled_scope": {
+    "path": "docs/editorial-proposals/2026-11-07/common-seed-simplification/scope/compiled-types.json",
+    "sha256": "1a6156501b32b8341bbed930dd8759498caa94c45c14254c9d2e160f4a316e83",
+    "validation_path": "docs/editorial-proposals/2026-11-07/common-seed-simplification/scope/compiled-types-validation.json",
+    "validation_sha256": "7de9739b808fb9b50774f6eb270823deaea8b921e1b6944be602f82ce105f097",
+    "inventory_path": "docs/editorial-proposals/2026-11-07/common-seed-simplification/scope-declarations.json",
+    "actual_exit_code": 0,
+    "existing_declarations": 21,
+    "propositions_audited": 21,
+    "standard_axioms_only": true
+  },
+  "source_files": 48,
+  "scientific_source_sha256": {
+    "assistance.tex": "5459338ba44d2a9d4370198f051db42c76d0a4a241d38a523d821127f47d47be",
+    "bibliography.tex": "49ff08f6732d8928302ad4aff31bab8c69e753b1e030ad280a552d1576685edb",
+    "companion.tex": "f0eb8fc23030f08348ae27eb72929146786a4b06b4d8279385999097c10ae5f0",
+    "companion_sections/arithmetic.tex": "3b16c88f219ea6fcc7c0cd329058067757a737a8cf7110a81b75b7dfc8dcaa9a",
+    "companion_sections/arithmetic_appendix.tex": "897f871a5f36e4b1e8fd59472dc6805305b5e0f078219956725e895458c48e71",
+    "companion_sections/arithmetic_consequences.tex": "6b65c0b35a1077bef327644732aacc239f9a6ad50af40a1136b22d00d4f08a46",
+    "companion_sections/closure.tex": "c4e522fa1b996c1e7a83b3e47e81e1abac99623a1ff408d74b7a30c643a29268",
+    "companion_sections/confinement.tex": "474b3ca1ae3c0400495204bbd083ed355ffe80faaff413f9522d411e56ef8bf0",
+    "companion_sections/cores.tex": "d9961c099e8e70d3a260fd7ec43443d0fd9e222aa759e991c3dae9b30ab17b73",
+    "companion_sections/discussion.tex": "049daf41799e840d6e3a71a33463f91f345120b1bd0902f7cb668374e7949135",
+    "companion_sections/exact_transfer.tex": "e206bbb8c7a5fd270d07a9e4e20a33b450ad02a6f59a4dfe57647c9fa80b0e19",
+    "companion_sections/fixed_moments.tex": "90d5f2dafccb74afc39a55425058adee305864b81a994b169a5b21dc254913ac",
+    "companion_sections/guide.tex": "5172e1a25ee29c12657b068f870581761e2a835ec4b61de9a4629ddd2f53fabc",
+    "companion_sections/half_counts.tex": "f27be44ea2689b57455cfa6cd59f7f0104e9a78b376d690a397dc4fbdcac57de",
+    "companion_sections/limits_appendix.tex": "4c774549734a145a06e5e4786bc22eef45af607da92389e75b7c7775fcae08c4",
+    "companion_sections/moment_obstruction.tex": "68d14a0fefd9caabc9960b5fe26088a3cbe139374f31a6fb5a1152ecac39f7ed",
+    "companion_sections/offset_geometry.tex": "b4b12b1fe8471ace075b882cadfe84e207f9b7d5303d22f64dfbc93391cfc2ef",
+    "companion_sections/pair_rigidity.tex": "049b7ca4c2618648c4734c7fc9f4352ab4f4e347d519d573a7d37713810f484b",
+    "companion_sections/short_supports.tex": "7b096de013726a20c738635657990b89ba89d287444ac175fd5f5dbba1763f8e",
+    "companion_sections/stopped.tex": "f2d257e4a39239c707e12154984e1aada147518814a7ab5bc1838e2f5ce17a0c",
+    "companion_sections/supplemental_arithmetic.tex": "e00b3138b8b97c6cc26d3c52672b26bc1bb6d4828598120702439e77b182a829",
+    "companion_sections/third_cumulant.tex": "f6ada4e998c540a7598f7b199fa5badf7024f92191668e7ac20f1eebdfb2a6a7",
+    "companion_sections/triple_activities.tex": "5de2149a4a93690f08b9696a278fad7d23a04ff7f30b01dd83d7447686ad2979",
+    "companion_sections/uniform_appendix.tex": "894672842e0892daed0f5e97ec522ebaff6a809e0f7f5f01c64c73f4eaf934a5",
+    "formalization.tex": "22f43b5c343a96c22c8b0a6037842c4edae8d910d0c2979a7ed3a1edf3e69206",
+    "main.tex": "b43bfcb8578f5e4005059c2944d173a7227962fd3d68ae9483f2b26929c75a25",
+    "main_sections/abstract.tex": "866ef4bc3e4dbb2fedea1a4bc067aaa349789f61d290db86fc582cc56c340494",
+    "main_sections/affine_algebra.tex": "34fea577c41c259edbef9b04b52bd501324c30c284cb979a06cbc53fb30e4bcb",
+    "main_sections/arithmetic.tex": "fc8195cec22f71fa22cb7874066dd83bf60bd40f9c73233cb218adb5d96e9b40",
+    "main_sections/channel_hierarchy.tex": "bdca79979d65457ea356da0f75f9233a993e7a2e08e54abdbfd892b4a431cbb4",
+    "main_sections/closure.tex": "88068742282067a54f0b49c106ce57db811285f109f75dfa821ed7260cf8e299",
+    "main_sections/confinement.tex": "e7ea205606d76cad7c2f5837e97c2353d3ec17c0af7a12fd856fcdca4c479767",
+    "main_sections/cores.tex": "f00e26006c6cb5ecda5f007d26c068c12fbb3baba8919f4e708f4bb23fe11d6b",
+    "main_sections/discussion.tex": "4525701ce6bf0b2cb83abdc4bbbfa560efa0cb02879d7371a0b1317af77e5a24",
+    "main_sections/exact_setup.tex": "74fe4e07938ff4f091629028299779e6bb2cf38f7325ed613180e6d2fbd58602",
+    "main_sections/exact_transfer.tex": "072d858b3c237889d370cf190a0ccba579209acc50e97f178348902b22d94e6f",
+    "main_sections/fixed_moments.tex": "aeb2bbd50f3034310f7944271aeb5221f86d99726a4edcdbe5bf4b3f2cbcbe49",
+    "main_sections/half_counts.tex": "c0617cd80434a68255f0668a41a31fa13c0f7b7759bd1219912dd7ce43808d33",
+    "main_sections/introduction.tex": "0f99240335f710a4bc919836a9d717b062abfd3266ae1bcd76c008525e09ada9",
+    "main_sections/limits_appendix.tex": "9b517cf38874aa3240cc6f6121a34ebd6f9a368563473b8840152dc419bdbfb0",
+    "main_sections/optimal_closure.tex": "3dd21ec1294dd1d0a1baa7b9325c6afa8623517986e419a06e7aa9ef8531a3db",
+    "main_sections/pair_rigidity.tex": "ac8b5be6b83c3f9b9615396bc386b2f2388a9f2e5fdbd96ea12d5e35afffaabb",
+    "main_sections/quartic_lower.tex": "f994e541a70c7b177d9d52290b23a5a0e67322a8cc71cc38836e27576a6906ad",
+    "main_sections/short_supports.tex": "377fceab74eb1d6473f2635f8f9f9290e12fcac97ca1dfa99149bf0fdaf22d0f",
+    "main_sections/stopped.tex": "86d9baeed211a18303210d80b98481c15b6a0e16a9c6d2c569f2977de62879e6",
+    "main_sections/third_cumulant.tex": "95154600c27253c8adb8c658ee6277d4f74119220fe9b5a31acdb1cb365bd7cd",
+    "main_sections/triple_activities.tex": "c693ef06624425be0be3928a4e11261ded3f53d96f62fa1cc273d9eb61a15d82",
+    "preamble.tex": "f234f1393967c03696ea47571c8b809304b2b983226eb67a200a68d67b5543a4"
+  },
+  "delivered_source_sha256": {
+    "assistance.tex": "5459338ba44d2a9d4370198f051db42c76d0a4a241d38a523d821127f47d47be",
+    "bibliography.tex": "49ff08f6732d8928302ad4aff31bab8c69e753b1e030ad280a552d1576685edb",
+    "companion.tex": "e4d21cf8c3ab2b1b6461a05673668af9c860669f7e09290bd7673bc3c768e251",
+    "companion_sections/arithmetic.tex": "3b16c88f219ea6fcc7c0cd329058067757a737a8cf7110a81b75b7dfc8dcaa9a",
+    "companion_sections/arithmetic_appendix.tex": "897f871a5f36e4b1e8fd59472dc6805305b5e0f078219956725e895458c48e71",
+    "companion_sections/arithmetic_consequences.tex": "6b65c0b35a1077bef327644732aacc239f9a6ad50af40a1136b22d00d4f08a46",
+    "companion_sections/closure.tex": "c4e522fa1b996c1e7a83b3e47e81e1abac99623a1ff408d74b7a30c643a29268",
+    "companion_sections/confinement.tex": "474b3ca1ae3c0400495204bbd083ed355ffe80faaff413f9522d411e56ef8bf0",
+    "companion_sections/cores.tex": "d9961c099e8e70d3a260fd7ec43443d0fd9e222aa759e991c3dae9b30ab17b73",
+    "companion_sections/discussion.tex": "049daf41799e840d6e3a71a33463f91f345120b1bd0902f7cb668374e7949135",
+    "companion_sections/exact_transfer.tex": "e206bbb8c7a5fd270d07a9e4e20a33b450ad02a6f59a4dfe57647c9fa80b0e19",
+    "companion_sections/fixed_moments.tex": "90d5f2dafccb74afc39a55425058adee305864b81a994b169a5b21dc254913ac",
+    "companion_sections/guide.tex": "5172e1a25ee29c12657b068f870581761e2a835ec4b61de9a4629ddd2f53fabc",
+    "companion_sections/half_counts.tex": "f27be44ea2689b57455cfa6cd59f7f0104e9a78b376d690a397dc4fbdcac57de",
+    "companion_sections/limits_appendix.tex": "4c774549734a145a06e5e4786bc22eef45af607da92389e75b7c7775fcae08c4",
+    "companion_sections/moment_obstruction.tex": "68d14a0fefd9caabc9960b5fe26088a3cbe139374f31a6fb5a1152ecac39f7ed",
+    "companion_sections/offset_geometry.tex": "b4b12b1fe8471ace075b882cadfe84e207f9b7d5303d22f64dfbc93391cfc2ef",
+    "companion_sections/pair_rigidity.tex": "049b7ca4c2618648c4734c7fc9f4352ab4f4e347d519d573a7d37713810f484b",
+    "companion_sections/short_supports.tex": "7b096de013726a20c738635657990b89ba89d287444ac175fd5f5dbba1763f8e",
+    "companion_sections/stopped.tex": "f2d257e4a39239c707e12154984e1aada147518814a7ab5bc1838e2f5ce17a0c",
+    "companion_sections/supplemental_arithmetic.tex": "e00b3138b8b97c6cc26d3c52672b26bc1bb6d4828598120702439e77b182a829",
+    "companion_sections/third_cumulant.tex": "f6ada4e998c540a7598f7b199fa5badf7024f92191668e7ac20f1eebdfb2a6a7",
+    "companion_sections/triple_activities.tex": "5de2149a4a93690f08b9696a278fad7d23a04ff7f30b01dd83d7447686ad2979",
+    "companion_sections/uniform_appendix.tex": "894672842e0892daed0f5e97ec522ebaff6a809e0f7f5f01c64c73f4eaf934a5",
+    "formalization.tex": "22f43b5c343a96c22c8b0a6037842c4edae8d910d0c2979a7ed3a1edf3e69206",
+    "main.tex": "9f0737d94748168bdb75d29b3707a3a0deeb19106d3bff50f163c321c0c35e86",
+    "main_sections/abstract.tex": "866ef4bc3e4dbb2fedea1a4bc067aaa349789f61d290db86fc582cc56c340494",
+    "main_sections/affine_algebra.tex": "34fea577c41c259edbef9b04b52bd501324c30c284cb979a06cbc53fb30e4bcb",
+    "main_sections/arithmetic.tex": "fc8195cec22f71fa22cb7874066dd83bf60bd40f9c73233cb218adb5d96e9b40",
+    "main_sections/channel_hierarchy.tex": "bdca79979d65457ea356da0f75f9233a993e7a2e08e54abdbfd892b4a431cbb4",
+    "main_sections/closure.tex": "88068742282067a54f0b49c106ce57db811285f109f75dfa821ed7260cf8e299",
+    "main_sections/confinement.tex": "e7ea205606d76cad7c2f5837e97c2353d3ec17c0af7a12fd856fcdca4c479767",
+    "main_sections/cores.tex": "f00e26006c6cb5ecda5f007d26c068c12fbb3baba8919f4e708f4bb23fe11d6b",
+    "main_sections/discussion.tex": "4525701ce6bf0b2cb83abdc4bbbfa560efa0cb02879d7371a0b1317af77e5a24",
+    "main_sections/exact_setup.tex": "74fe4e07938ff4f091629028299779e6bb2cf38f7325ed613180e6d2fbd58602",
+    "main_sections/exact_transfer.tex": "072d858b3c237889d370cf190a0ccba579209acc50e97f178348902b22d94e6f",
+    "main_sections/fixed_moments.tex": "aeb2bbd50f3034310f7944271aeb5221f86d99726a4edcdbe5bf4b3f2cbcbe49",
+    "main_sections/half_counts.tex": "c0617cd80434a68255f0668a41a31fa13c0f7b7759bd1219912dd7ce43808d33",
+    "main_sections/introduction.tex": "0f99240335f710a4bc919836a9d717b062abfd3266ae1bcd76c008525e09ada9",
+    "main_sections/limits_appendix.tex": "9b517cf38874aa3240cc6f6121a34ebd6f9a368563473b8840152dc419bdbfb0",
+    "main_sections/optimal_closure.tex": "3dd21ec1294dd1d0a1baa7b9325c6afa8623517986e419a06e7aa9ef8531a3db",
+    "main_sections/pair_rigidity.tex": "ac8b5be6b83c3f9b9615396bc386b2f2388a9f2e5fdbd96ea12d5e35afffaabb",
+    "main_sections/quartic_lower.tex": "f994e541a70c7b177d9d52290b23a5a0e67322a8cc71cc38836e27576a6906ad",
+    "main_sections/short_supports.tex": "377fceab74eb1d6473f2635f8f9f9290e12fcac97ca1dfa99149bf0fdaf22d0f",
+    "main_sections/stopped.tex": "86d9baeed211a18303210d80b98481c15b6a0e16a9c6d2c569f2977de62879e6",
+    "main_sections/third_cumulant.tex": "95154600c27253c8adb8c658ee6277d4f74119220fe9b5a31acdb1cb365bd7cd",
+    "main_sections/triple_activities.tex": "c693ef06624425be0be3928a4e11261ded3f53d96f62fa1cc273d9eb61a15d82",
+    "preamble.tex": "5feda0819703be5f72319db56873fa7a15101a8d2f100b0c4dca8d30ff09b1e3"
+  },
+  "numbered_result_identities_preserved": 167,
+  "numbered_blocks_identical_to_strengthened_stage": 166,
+  "numbered_blocks_strengthened_this_pass": [
+    "p1:arith:fixed-homogeneous-seeds"
+  ],
+  "frozen_v18_numbered_blocks_unchanged": 160,
+  "actual_typeset_result_numbers_preserved": 167,
+  "tex_label_occurrences": 548,
+  "net_source_lines_saved_this_pass": 51,
+  "net_proof_lines_saved_this_pass": 50,
+  "compilation": {
+    "actual_latex_executions": 6,
+    "overfull_boxes": 0,
+    "unresolved_references": 0,
+    "missing_glyphs": 0,
+    "logs": {
+      "main": {
+        "path": "manuscripts/paper-p1/editorial-unified-preview-2026-11-07/validation/main.log.gz",
+        "gzip_sha256": "e537fdcbd219a565d3eb80bea92e6e050ae5bdceef8b493a5b15b0c04fcec8b2",
+        "uncompressed_sha256": "5aacc39a2e579160064d896a7a32329781679da1050913cc82b44ec506379770"
+      },
+      "companion": {
+        "path": "manuscripts/paper-p1/editorial-unified-preview-2026-11-07/validation/companion.log.gz",
+        "gzip_sha256": "a04a9ab331b3fe3ab0154e247889115eebd351d278778a59a9738381f09ac02b",
+        "uncompressed_sha256": "172ea5b6ed537c2843ee378f67f05f3b9cfbec3fd7a02e7f01fb44d90db1c458"
+      }
+    }
+  },
+  "visual_review": {
+    "status": "passed",
+    "pages_rendered_and_contact_sheet_reviewed": 165,
+    "contact_sheets_actually_inspected": 11,
+    "detail_pages_rendered": 23,
+    "full_detail_pages_actually_inspected": 23,
+    "detail_pages_actually_inspected": [
+      {
+        "document": "main",
+        "page": 1
+      },
+      {
+        "document": "main",
+        "page": 2
+      },
+      {
+        "document": "main",
+        "page": 62
+      },
+      {
+        "document": "main",
+        "page": 64
+      },
+      {
+        "document": "companion",
+        "page": 1
+      },
+      {
+        "document": "companion",
+        "page": 2
+      },
+      {
+        "document": "companion",
+        "page": 3
+      },
+      {
+        "document": "companion",
+        "page": 4
+      },
+      {
+        "document": "companion",
+        "page": 15
+      },
+      {
+        "document": "companion",
+        "page": 16
+      },
+      {
+        "document": "companion",
+        "page": 17
+      },
+      {
+        "document": "companion",
+        "page": 18
+      },
+      {
+        "document": "companion",
+        "page": 19
+      },
+      {
+        "document": "companion",
+        "page": 20
+      },
+      {
+        "document": "companion",
+        "page": 25
+      },
+      {
+        "document": "companion",
+        "page": 26
+      },
+      {
+        "document": "companion",
+        "page": 27
+      },
+      {
+        "document": "companion",
+        "page": 28
+      },
+      {
+        "document": "companion",
+        "page": 29
+      },
+      {
+        "document": "companion",
+        "page": 30
+      },
+      {
+        "document": "companion",
+        "page": 99
+      },
+      {
+        "document": "companion",
+        "page": 100
+      },
+      {
+        "document": "companion",
+        "page": 101
+      }
+    ],
+    "observed_clipping_overlap_or_missing_glyph_defects": 0,
+    "pdf_sha256": {
+      "main": "ba4aaff2c72861d2729e5ee4e1b994f8e0e3abb509fdad72cb4c04ced883b2aa",
+      "companion": "f699dd80ce2576173a730893cd59e3b513371a2386c3290211d85ca93ebaea8a"
+    },
+    "image_sha256": {
+      "renders/main/contact-01.png": "6fb4f1209b43b3f8c0f1aa629f3764deddcadf32fb82ff308b72c4f4d4efee3b",
+      "renders/main/contact-02.png": "ca97ddf3d063c86d85ff39dae92eabf119b6068bf005b76ef9d8c0378192679e",
+      "renders/main/contact-03.png": "94226bc9ec32e75e7643989932b5f8b3fb46a6c4daba91ec3896383f48349ec2",
+      "renders/main/contact-04.png": "d63408a6dd6b444175b1331a334e792f0efd83801e5b673d8f75539aad99534a",
+      "renders/main/detail-001.png": "742a480332fcbba3bf8d3d014d8bd4c9b63360aa0a4bec5f4df8963e3e97c566",
+      "renders/main/detail-002.png": "21ed091df34dc6747ad66ff0043a45103dd016106ec52a6a9d54bce3ccad72b2",
+      "renders/main/detail-062.png": "31d321f0ea9e41f24c982cfbaf87e579c44cc9b22a5904c2c5ce6a921f6a7587",
+      "renders/main/detail-064.png": "bc26bd517cbd2f339d87460cae2f38511d4be3f263ab9e3194eff9561f2637bb",
+      "renders/companion/contact-01.png": "1e3352bb2421491149eae7f83c0bd656b7ca15b188a4a59c4ce47e8373274731",
+      "renders/companion/contact-02.png": "0190c2892096ae96010f6f519e45452c57d48ef852fbe67f82828c44d0d32bef",
+      "renders/companion/contact-03.png": "f077e2fe3c105521af730fa77df8237e4dab6e24daf61a0378d60f6a7e4f5142",
+      "renders/companion/contact-04.png": "b71ca155e09e53a0478423d80643b93f0e48c73117a44945ca12a424d9815018",
+      "renders/companion/contact-05.png": "8281d0b95e1d8bfb62adddf45b055dbc40fc9799190d2d5f574f6bac52843332",
+      "renders/companion/contact-06.png": "efe2d99394a540c8dc52a096aa0507a06d68dc2d1fe15145d859e11427c8e460",
+      "renders/companion/contact-07.png": "276ce99388b0f28049744e64f0817807aaa2be79cda01fc19502d0c1a05d0212",
+      "renders/companion/detail-001.png": "af43bdc5bdb4715c22a247bce5f57b3c89485ae604da534e289d6487e54dc8e8",
+      "renders/companion/detail-002.png": "50238615f1a30440c5c8db818dbf502ca1d43628ce637c1f0945299a34a214b0",
+      "renders/companion/detail-003.png": "e1b48a4a12041bbf07f5703da64751343fa992096901942e159e723d7011d5f7",
+      "renders/companion/detail-004.png": "c3565884cbb7878ed27e72268ba6e53953c1c82f68216690ce68282a11ef9609",
+      "renders/companion/detail-015.png": "32e5c60257754f5ab23bb8431c1ff0baa009a8ba32ada5e85b6b62b58f845e02",
+      "renders/companion/detail-016.png": "cab33e8de5970cb0687d4d8653beebcc6950359cff23ef15386d3c346725a71f",
+      "renders/companion/detail-017.png": "9595a4a8b5e805135232daf380bd5eb2d47f37897fd548169af540f316efc2ad",
+      "renders/companion/detail-018.png": "0e3430f2de11fce1c06f3d67f3e2cb38428eef56d746578bbb647a059264979c",
+      "renders/companion/detail-019.png": "8d6c86752818292923297151a74b6d511ef1c6f43fcb9318c902fb3a4f80e010",
+      "renders/companion/detail-020.png": "63546e36fdc9700b64c15af53efccf72ec35ef649e281d81345dc54b0728f037",
+      "renders/companion/detail-025.png": "351849b6da7c8aa3ea4857433e0d9a784fbb765e8390654191a46f50e6fcbb14",
+      "renders/companion/detail-026.png": "6875db6931af300f673625de6f7faf309889f4d04a02ddbfaa7176f6e1fb2ee2",
+      "renders/companion/detail-027.png": "a08fbf937af7b41bd96b461b4944ea2178cc36faf2b6ce1cb79f882bcddf275d",
+      "renders/companion/detail-028.png": "c9eab70f93904066f0ad2a01f1e64bad4c9c797b873fa9091a3e3053af81f314",
+      "renders/companion/detail-029.png": "51161408985d81e45f815a9874564bdc0a0430092aa9775f51b790a98cc6682d",
+      "renders/companion/detail-030.png": "6c107b177547cd5c1ea6e32b570a26a9d7fd576c13d7a704d208f9c5a802ca9f",
+      "renders/companion/detail-099.png": "4d649d747190e76253bc33285a5cfa4b15f1639a53e0f288c39ca9b1c0a71552",
+      "renders/companion/detail-100.png": "6ecf8c0bc3a699fa710fe3592c2d1b7c9f51691dd4060461f698addd757ae270",
+      "renders/companion/detail-101.png": "a1929cb8202694ac1742f460abe68e974f6c75150c868c9d26613e48296a2037"
+    },
+    "scope": "All165 pages inspected through eleven contact sheets, plus23 full detail pages. Changed proofs and neighboring pages, reading guide, titles, correspondence/AI statements and bibliography inspected. No additional page gain claimed."
+  },
+  "pdfs": {
+    "main": {
+      "filename": "P1_Unified_Editorial_Preview_Main_2026-11-07_EN.pdf",
+      "sha256": "ba4aaff2c72861d2729e5ee4e1b994f8e0e3abb509fdad72cb4c04ced883b2aa",
+      "pages": 64,
+      "preserved_v18_pages": 65,
+      "actual_pages_saved": 1
+    },
+    "companion": {
+      "filename": "P1_Unified_Editorial_Preview_Companion_2026-11-07_EN.pdf",
+      "sha256": "f699dd80ce2576173a730893cd59e3b513371a2386c3290211d85ca93ebaea8a",
+      "pages": 101,
+      "preserved_v18_pages": 104,
+      "actual_pages_saved": 3
+    }
+  },
+  "actual_total_pages_saved_this_pass": 0,
+  "actual_total_pages_saved_from_v18": 4,
+  "palomar_status": "on_hold_at_user_request",
+  "registry_scopes_changed": false,
+  "scope": "Separate optional editorial copy. Three further proposals applied; no new Lean theorem or full replay. Twenty-one existing proposition types actually extracted and independently read. Independent AI-assisted review is distinct from kernel checking and human certification. Earlier previews and reports remain immutable."
+}
