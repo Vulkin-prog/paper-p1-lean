@@ -95,3 +95,12 @@ their different error exponents, both total variations have the same literal
 moving residue-dependent equivalent, and the nominal quadratic lower bound
 is conditional on the actual mean gap being nonzero. No infinitude of such
 scales is claimed.
+
+The sixth family, actual private forcing and universal arithmetic anchor
+obstructions, passed the isolated comparison and both kernels at the source
+SHA recorded in palomar/v1/private_obstruction/qualification.json. Its four
+selections include actual field/pivot existence, full sample conditional laws,
+and both complete original T19.17 obstructions. Their exact coefficients, all
+arithmetic anchors and arbitrary independent auxiliary probability laws are
+retained. Six families and 23 selections now have local evidence. The complete
+build passed 18,549 jobs and the audit checked 19,360 theorems.

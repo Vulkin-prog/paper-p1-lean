@@ -8,7 +8,7 @@ families; a selected declaration count is not the manuscript coverage count.
 |---|---:|---|---|
 | Ordinary smooth integers in logarithmic intervals | 3 | [configuration](../../comparator/p1_smooth_windows.json) | [metadata](smooth_windows/formalization.yaml), [passed local comparison and both kernels](smooth_windows/qualification.json) |
 | Prescribed squarefree kernels of shifted split products | 4 | [configuration](../../comparator/p1_quadratic_kernels.json) | [metadata](quadratic_kernels/formalization.yaml), [passed local comparison and both kernels](quadratic_kernels/qualification.json) |
-| Universal arithmetic anchor obstructions | 4 | [configuration](../../comparator/p1_private_obstruction.json) | [metadata](private_obstruction/formalization.yaml); local comparison pending |
+| Universal arithmetic anchor obstructions | 4 | [configuration](../../comparator/p1_private_obstruction.json) | [metadata](private_obstruction/formalization.yaml), [passed local comparison and both kernels](private_obstruction/qualification.json) |
 | Asymmetric parity-space profiles | 3 | [configuration](../../comparator/p1_asymmetric_profiles.json) | [metadata](asymmetric_profiles/formalization.yaml), [passed local comparison and both kernels](asymmetric_profiles/qualification.json) |
 | Exact Poisson scales and quantized mean bias | 5 | [configuration](../../comparator/p1_poisson_scales.json) | [metadata](poisson_scales/formalization.yaml), [passed local comparison and both kernels](poisson_scales/qualification.json) |
 | Optimal quadratic Poisson--Charlier approximation | 4 | [configuration](../../comparator/p1_quadratic_approximation.json) | [metadata](quadratic_approximation/formalization.yaml), [passed local comparison and both kernels](quadratic_approximation/qualification.json) |
@@ -60,3 +60,10 @@ build passed 18,547 jobs and the extended audit checked 19,341 theorems. Its
 conditional nominal-mean lower comparison asserts no infinitude of biased
 scales. The literal moving residue coefficient and both Poisson means are
 retained.
+
+The universal private-forcing family passed the isolated comparison and both
+kernels at b606e132 (full source SHA in its receipt), retaining both exact
+T19.17 coefficients and every independent auxiliary probability law. Its
+construction and full-observable conditional law are separate checked
+selections. The six locally checked families select 23 declarations. The full
+build passed 18,549 jobs and the extended audit checked 19,360 theorems.

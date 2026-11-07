@@ -72,13 +72,13 @@ then invokes Lean's own axiom report for each declaration. Only `propext`,
 Standalone registry Challenges have only the deliberate selected statement
 holes and are never imported by the proof development or its audit.
 
-The latest complete project replay for the first five candidate families passed
-**18,547 build jobs** and **19,341 theorem axiom checks**. Each mathematical
+The latest complete project replay for the first six candidate families passed
+**18,549 build jobs** and **19,360 theorem axiom checks**. Each mathematical
 checkpoint and registry replay records its own exact source commit and scope.
 
 ## Palomar preparation
 
-Five selected families have passed local statement comparison and both Lean and
+Six selected families have passed local statement comparison and both Lean and
 NanoDa, with bubblewrap isolation enabled:
 
 | Family | Selected declarations | Local evidence |
@@ -88,6 +88,7 @@ NanoDa, with bubblewrap isolation enabled:
 | Asymmetric parity-space profiles | 3 | [Receipt](palomar/v1/asymmetric_profiles/qualification.json) |
 | Optimal quadratic Poisson–Charlier approximation | 4 | [Receipt](palomar/v1/quadratic_approximation/qualification.json) |
 | Exact Poisson scales and quantized mean bias | 5 | [Receipt](palomar/v1/poisson_scales/qualification.json) |
+| Universal arithmetic anchor obstructions | 4 | [Receipt](palomar/v1/private_obstruction/qualification.json) |
 
 The [candidate interfaces](palomar/v1/README.md) link each standalone Mathlib-only
 Challenge, complete Solution, Comparator configuration, metadata and preserved
