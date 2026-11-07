@@ -172,3 +172,24 @@ were rendered: 165 are pixel-identical to the prior reviewed version, and both
 changed companion pages (99,100) passed full inspection at 110dpi. Page counts
 remain 65 and 102. All 48 source hashes, provenance, both PDF hashes and all
 167 numbered statement identities were checked.
+
+
+Checkpoint P1-MATH-0994 proves the exact covariance matrix of the literal
+reference arrivals, with square-integrability assertions. For arbitrary
+finite packets the covariance is the compensated single rate on the
+diagonal plus all shared packet rates. For pairs its diagonal is p_x and
+its off-diagonal entries are the retained pair rates, zero otherwise.
+The formulas hold for every independent realization and the concrete
+finite product law, without countable-configuration hypotheses. They do
+not identify the original arithmetic covariance or change the original
+exponent and fixed-degree scope. The full replay passed 18,593 build jobs,
+19,673 theorem axiom checks and 19,815 distinct references, all actual exits 0.
+
+The unnumbered companion appendix states the shared-arrival formula, square
+integrability and full pair specialization with the reference-field scope.
+Both PDFs were rebuilt with stable cross-references, no unresolved references
+and no overfull boxes. All 167 pages were rendered: 165 are pixel-identical
+to the prior reviewed version, and both changed companion pages (99,100)
+passed full inspection at 110dpi. Page counts remain 65 and 102. All 48 TeX
+hashes, provenance, both PDF hashes and all numbered statement identities
+were checked. All sixteen local registry receipts remain valid.

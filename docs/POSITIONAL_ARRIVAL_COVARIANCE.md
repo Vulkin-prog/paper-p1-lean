@@ -48,4 +48,6 @@ and the variance of a Poisson variable from its actual integrable factorial
 tests, expands covariance over finite observed-cell sums, and identifies
 their exact shared indices.
 
-Eighteen theorems and one coordinate definition passed direct Lean v4.36.0-rc2 compilation with proof warnings as errors and exact permitted-axiom checks. Whole-project replay and manuscript integration are pending.
+Full Lean v4.36.0-rc2 replay passed at source 72c3ec562b832d46779a7fff91b52a750b43ebfb: 18,593 build jobs, 19,673 source-discovered theorem axiom checks and 19,815 distinct declaration-reference checks, all actual process exits 0. Proof warnings are errors; only propext, Classical.choice and Quot.sound occur.
+
+The full replay and compressed original logs are preserved in [the validation record](validation/checkpoint-0994/validation.json). The clarification is integrated in the unnumbered version 1.7 companion appendix, under Realize the positional target by independent arrivals. Both PDFs were rebuilt and reviewed: 65 article pages and 102 companion pages. All 167 numbered statement blocks are preserved. See [the manuscript validation](manuscript-v1.7-validation.json).

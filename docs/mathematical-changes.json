@@ -42723,15 +42723,17 @@
         "PaperP1.PositionalArrivalCovariance.variance_coordinate",
         "PaperP1.PositionalArrivalCovariance.variance_of_hasLaw"
       ],
-      "validation": "Eighteen theorems and one coordinate definition passed direct Lean v4.36.0-rc2 compilation with proof warnings as errors and exact permitted-axiom checks. Whole-project replay and manuscript integration are pending.",
+      "validation": "Full Lean v4.36.0-rc2 replay passed at source 72c3ec562b832d46779a7fff91b52a750b43ebfb: 18,593 build jobs, 19,673 source-discovered theorem axiom checks and 19,815 distinct declaration-reference checks, all actual process exits 0. Proof warnings are errors; only propext, Classical.choice and Quot.sound occur.",
       "integration": {
         "target": "P1 V1.7 draft",
-        "status": "pending",
+        "status": "integrated",
         "numbered_statements_changed": false,
         "source": "manuscripts/paper-p1/v1.7/sources/formalization.tex",
         "paragraph": "Realize the positional target by independent arrivals",
         "pdf_validation": "docs/manuscript-v1.7-validation.json"
-      }
+      },
+      "validation_source_commit": "72c3ec562b832d46779a7fff91b52a750b43ebfb",
+      "validation_record": "docs/validation/checkpoint-0994/validation.json"
     }
   ]
 }

@@ -103,7 +103,7 @@
     },
     {
       "path": "formalization.tex",
-      "sha256": "60257c796f8e0898745c01a680d037c4b79db7023763cd3714fa52e411bde875"
+      "sha256": "01f55febdfc9b30f4c51654f5a26870603b3ecc941be67a915b3ffaf9fb1c82f"
     },
     {
       "path": "main.tex",
@@ -243,6 +243,11 @@
       "checkpoint": "P1-MATH-0993",
       "proof_commit": "2d09439656cc0f923203a465582324237b5bb4cb",
       "scope": "Unnumbered companion appendix: exact Poisson marginal at every reference site, integrable factorial tests of every natural order with expectation p_x^j, and arbitrary finite-packet generality. The arithmetic exponent, fixed-degree comparison and all 167 numbered statement blocks are preserved."
+    },
+    {
+      "checkpoint": "P1-MATH-0994",
+      "proof_commit": "72c3ec562b832d46779a7fff91b52a750b43ebfb",
+      "scope": "Unnumbered companion appendix: square-integrable actual reference coordinates, exact shared-arrival covariance for arbitrary finite packets, diagonal p and retained off-diagonal pair rate q. The distinction from the original arithmetic covariance, exponent, fixed-degree regime and all 167 numbered statement blocks are preserved."
     }
   ]
 }

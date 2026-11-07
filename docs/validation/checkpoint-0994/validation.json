@@ -1,0 +1,36 @@
+{
+  "checkpoint": "P1-MATH-0994",
+  "source_commit": "72c3ec562b832d46779a7fff91b52a750b43ebfb",
+  "status": "passed",
+  "full_build_jobs": 18593,
+  "audited_theorems": 19673,
+  "distinct_checked_references": 19815,
+  "actual_process_exit_codes": {
+    "build": 0,
+    "audit": 0,
+    "references": 0
+  },
+  "permitted_kernel_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "logs": [
+    {
+      "kind": "build",
+      "path": "docs/validation/checkpoint-0994/build.log.gz",
+      "sha256_gzip": "26da8cfe2726d78cc71ddb379d5f1fa03a1539498131418c2b4485f0b10c2e84"
+    },
+    {
+      "kind": "audit",
+      "path": "docs/validation/checkpoint-0994/audit.log.gz",
+      "sha256_gzip": "97ab8075b01bea040344bbb1abe86446078a56e7a01aa9f64b2128faf1865636"
+    },
+    {
+      "kind": "references",
+      "path": "docs/validation/checkpoint-0994/references.log.gz",
+      "sha256_gzip": "24373c9b69c197a753dcd16b4aeb21b2ce6d98340df8436dd2f113802c560380"
+    }
+  ],
+  "scope": "Whole-project replay including the exact covariance of every independent compensated Poisson reference field, arbitrary finite packet sharing, square integrability, the full pair matrix, exact coordinate means and variances, and concrete product realizations. All sixteen registry Solutions and all numbered statements are preserved."
+}

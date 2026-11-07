@@ -291,7 +291,16 @@ constructs these arrivals, and every independent realization has the
 same original-grid probabilities.  Each reference coordinate has exactly
 law $\operatorname{Pois}(p)$.  For every $j\in\mathbb N$, its falling-factorial
 test is integrable and $\mathbb E[(Z_x)_j]=p^j$.  The finite marginal
-statement also holds for arbitrary finite packets.
+statement also holds for arbitrary finite packets. Each reference coordinate
+is square integrable, and the exact shared-arrival formula is
+\[
+ \operatorname{Cov}(Z_x,Z_y)=\boldsymbol{1}_{x=y}(p-\iota_x)
+       +\sum_{e\in E:x,y\in e}q_e.
+\]
+For pair packets the variance is $p$, and the distinct-site covariance is
+$q_{\{x,y\}}$ on a retained edge and zero otherwise. These are identities
+for the reference arrivals; they do not identify the covariance of the
+original arithmetic indicators.
 For each fixed degree $j$ and $\varepsilon>0$, one threshold precedes
 the critical lengths, probability spaces and arrival variables.  The series
 \[
@@ -305,7 +314,9 @@ original grid, rates and exponent.  The declarations
 \texttt{Independent\allowbreak{}Positional\allowbreak{}Approximation}.
 The exact field law is identified in \texttt{Positional\allowbreak{}Poisson\allowbreak{}Realization},
 and the marginal laws and factorial moments in
-\texttt{Positional\allowbreak{}Arrival\allowbreak{}Marginals}.
+\texttt{Positional\allowbreak{}Arrival\allowbreak{}Marginals}, with the
+covariance matrix in
+\texttt{Positional\allowbreak{}Arrival\allowbreak{}Covariance}.
 
 \paragraph{Scope and reproducibility.}
 The smooth-window proof above specializes the physical localization to the
