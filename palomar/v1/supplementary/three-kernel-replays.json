@@ -213,6 +213,24 @@
       "compressed_log_sha256": "b6dc362b6e80189c444aea82891bd758a0c89717564deda93c07e9364c4e03e0",
       "all_three_kernels_accepted": true,
       "con_ron_accepted_declarations": 18552
+    },
+    {
+      "family": "exponential_divergence",
+      "source_commit": "a7d822328e553ce2b4e91cd2c636e20533404ba5",
+      "selected_declarations": [
+        "PaperP1Registry.ExponentialDivergence.finite_cylinder_lower",
+        "PaperP1Registry.ExponentialDivergence.prime_threshold_bounds",
+        "PaperP1Registry.ExponentialDivergence.odd_prime_liminf",
+        "PaperP1Registry.ExponentialDivergence.logarithms_and_moments_diverge"
+      ],
+      "submission_configuration_sha256": "79bd19f9cef061f1d1675437843cbd526460fec0342ce2edbf92c6c6eafe2b67",
+      "derived_configuration_sha256": "0a038c283d997ab93b39f6b4a2086dc0715989c96510845e031de01bd3653747",
+      "actual_comparator_exit": 0,
+      "all_three_kernels_accepted": true,
+      "con_ron_accepted_declarations": 72945,
+      "log_path": "palomar/v1/supplementary/exponential_divergence-three-kernels.log.gz",
+      "log_sha256": "911c3f5ff7a0def55b84a06e76ab0f52ffc96ffd7563b965859b88029c0a5a73",
+      "compressed_log_sha256": "f4d7959d538111dc744f33fc93eeefe5aae1702cb0e7079408f32f4dd486655e"
     }
   ],
   "updated_at": "2026-11-07T03:20:01.237558+00:00",

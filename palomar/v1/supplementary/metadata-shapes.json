@@ -1,5 +1,5 @@
 {
-  "source_commit": "1f25a899d04ff2bac781747b2e7fe5cef42e6c7c",
+  "source_commit": "a7d822328e553ce2b4e91cd2c636e20533404ba5",
   "validator_commit": "14aa8d6b3c2f14a8540605e37144560b9a00e7e7",
   "community_schema_sha256": "25ff6b25ca4511635aff4443cf20480c15e59dddf19591c730950b442ea54fce",
   "files": [
@@ -28,6 +28,13 @@
       "family": "dependent_expansion",
       "path": "palomar/v1/dependent_expansion/formalization.yaml",
       "sha256": "135cccb96d3914bdf7b451b99f3c8878eed8b44fba41c3783e8505605a5993d0",
+      "community_v04_schema_passed": true,
+      "palomar_metadata_minimum_passed": true
+    },
+    {
+      "family": "exponential_divergence",
+      "path": "palomar/v1/exponential_divergence/formalization.yaml",
+      "sha256": "9935de9ec1e06a58c495eb3362429d63e4048cbf9185ee5401014a92c7d3612e",
       "community_v04_schema_passed": true,
       "palomar_metadata_minimum_passed": true
     },

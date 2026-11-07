@@ -1,0 +1,47 @@
+{
+  "base_proof_commit": "1f25a899d04ff2bac781747b2e7fe5cef42e6c7c",
+  "stage": "draft compile/export and direct audit",
+  "imported_project_proof_sources_unchanged": true,
+  "module_exports": [
+    {
+      "module": "ChallengeP1ExponentialDivergence",
+      "source_sha256": "af65f33efcd379a89d8a207b4fbf2bab6bf6bb8d2c6a3db0ee764d0966c06afd",
+      "export_sha256": "86014730ebea3bc634622ac9302c4ecd05ccd636aa9b45c9fa66e9b0fe929801",
+      "export_bytes": 150177446,
+      "compilation_exit": 0,
+      "export_exit": 0
+    },
+    {
+      "module": "SolutionP1ExponentialDivergence",
+      "source_sha256": "05e71b00f6f72e2be00ffb5f9ab17d1871e397b0c2352c58712ccae59fb1c048",
+      "export_sha256": "c8a5b876e829dd4dc2f8f36ea91c2493c024ab65924835bab2ecfcf423f2ed73",
+      "export_bytes": 566289514,
+      "compilation_exit": 0,
+      "export_exit": 0
+    }
+  ],
+  "selected_declarations": [
+    "PaperP1Registry.ExponentialDivergence.finite_cylinder_lower",
+    "PaperP1Registry.ExponentialDivergence.prime_threshold_bounds",
+    "PaperP1Registry.ExponentialDivergence.odd_prime_liminf",
+    "PaperP1Registry.ExponentialDivergence.logarithms_and_moments_diverge"
+  ],
+  "palomar_full_workflow_passed": false,
+  "audited_draft_theorems": 16,
+  "manual_export_comparison_passed": true,
+  "all_six_kernels_accepted": true,
+  "kernels": [
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda",
+    "Lean default"
+  ],
+  "comparison_process_exit": 0,
+  "comparison_log_sha256": "825f8c6563b3b06f4da3d8a0918cb394e086fbebd42e230ede533e264dfb9e8d",
+  "scope": "Standalone draft compiler/export comparison, 16-theorem direct axiom audit and six-checker replay, based on the stated unchanged project proof sources. Frozen-root qualification and the complete Palomar workflow remain separate. The standalone module sources are byte-identical to the later root qualification sources; the six-checker run remains attributed to its actual earlier proof base.",
+  "log_path": "palomar/v1/supplementary/exponential_divergence-draft-six-kernels.log.gz",
+  "compressed_log_sha256": "e5043680a46aab90e1a2ba4fd2f33b8d589cd809e498c8424928d47fc25db166",
+  "root_qualification_source_commit": "a7d822328e553ce2b4e91cd2c636e20533404ba5"
+}

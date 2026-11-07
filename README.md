@@ -77,15 +77,15 @@ then invokes Lean's own axiom report for each declaration. Only `propext`,
 Standalone registry Challenges have only the deliberate selected statement
 holes and are never imported by the proof development or its audit.
 
-The latest complete project replay with all twelve candidate families passed
-**18,563 build jobs** and **19,452 theorem axiom checks**. Each mathematical
+The latest complete project replay with all thirteen candidate families passed
+**18,565 build jobs** and **19,468 theorem axiom checks**. Each mathematical
 checkpoint and registry replay records its own exact source commit and scope.
 The [evidence checker](scripts/check_registry_evidence.py) validates every
 preserved receipt against its historical inventory and current proof imports.
 
 ## Palomar preparation
 
-Twelve selected families have passed local statement comparison and both Lean and
+Thirteen selected families have passed local statement comparison and both Lean and
 NanoDa, with bubblewrap isolation enabled:
 
 | Family | Selected declarations | Local evidence |
@@ -102,14 +102,15 @@ NanoDa, with bubblewrap isolation enabled:
 | Exact expansions for dependent indicator counts | 4 | [Receipt](palomar/v1/dependent_expansion/qualification.json) |
 | Degree-uniform integer points on integral curves | 3 | [Receipt](palomar/v1/integral_curve_count/qualification.json) |
 | Exact finite affine spectra and canonical factorization | 4 | [Receipt](palomar/v1/affine_spectra/qualification.json) |
+| Actual exponential-moment divergence for multiplicative starts | 4 | [Receipt](palomar/v1/exponential_divergence/qualification.json) |
 
-All 48 selected declarations also passed supplementary replays with verified
+All 52 selected declarations also passed supplementary replays with verified
 con-ron, Lean and NanoDa. The [source-bound reports](palomar/v1/supplementary/README.md)
 preserve the actual logs, binary identities and positive/ill-typed controls.
 
 The finite-affine family also passed [all six available local checkers](palomar/v1/supplementary/affine-spectra-six-kernels.json). Two larger representative families passed the additional optional checkers as well; each report identifies its exact source.
 
-A further [exponential-moment candidate](palomar/v1/exponential_divergence/formalization.yaml) has four literal-model statements, complete proofs and a successful six-checker replay on standalone exports. Its frozen-root qualification is pending.
+The exponential-moment family has four literal-model statements with explicit integrability, prime thresholds, a nontrivial odd-prime liminf and simultaneous divergence at nominal mean one. Its [standalone six-checker report](palomar/v1/supplementary/exponential-divergence-draft-checks.json) retains its exact earlier proof base; root qualification and the con-ron replay have their own immutable source.
 
 The [candidate interfaces](palomar/v1/README.md) link each standalone Mathlib-only
 Challenge, complete Solution, Comparator configuration, metadata and preserved

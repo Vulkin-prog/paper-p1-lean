@@ -8,15 +8,15 @@ statements are proved. Both revised PDFs and their visual checks are preserved.
 
 ## Completed local qualification
 
-[Twelve selected families](../palomar/v1/README.md), with **48 declarations**,
+[Thirteen selected families](../palomar/v1/README.md), with **52 declarations**,
 have passed actual statement comparison, Lean and bundled NanoDa, with the
 bubblewrap boundary enabled. Every family has its own immutable source commit,
 configuration, standalone Mathlib-only Challenge, complete Solution, metadata,
 qualification receipt and compressed original logs. The latest complete build
-passed **18,563 jobs** and the direct source-discovered audit checked **19,452
+passed **18,565 jobs** and the direct source-discovered audit checked **19,468
 theorems**, allowing only `propext`, `Classical.choice` and `Quot.sound`.
 
-All twelve families also passed supplementary verified con-ron, Lean and NanoDa
+All thirteen families also passed supplementary verified con-ron, Lean and NanoDa
 replays. Their [source-bound records](../palomar/v1/supplementary/README.md)
 preserve binary identities, original logs, six positive/ill-typed controls,
 metadata shape checks and a historical source-layout scan. These local checks
@@ -39,9 +39,10 @@ The finite-affine family has four standalone statements accepted at its frozen
 root source by all six local checkers. The original
 seven-family caller remains unchanged.
 
-The additional exponential-moment candidate has four explicit literal-model
-statements and complete proofs. Its standalone exports passed six checkers;
-frozen-root qualification is pending. The original t>2 scope is preserved.
+The exponential-moment family has four explicit literal-model statements
+and complete proofs. Its standalone exports passed six checkers at the stated
+proof base, and its frozen root passed Lean/NanoDa and the supplementary
+verified con-ron replay. The original t>2 scope is preserved.
 
 Run the local preparation checks with:
 

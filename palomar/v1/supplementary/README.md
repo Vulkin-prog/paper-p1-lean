@@ -4,7 +4,7 @@ These records supplement the immutable standard Comparator receipts. They are
 local checks, separate from Palomar's complete reusable workflow, source
 provenance audit, editorial review, intake and registration.
 
-- [Three-kernel replays](three-kernel-replays.json): twelve families, 48 selected
+- [Three-kernel replays](three-kernel-replays.json): thirteen families, 52 selected
   declarations; Lean, NanoDa and con-ron `--verified --jobs=2` accepted every
   solution. Each family records its exact source commit, selection, unchanged
   standard configuration hash, binary identities and original compressed log.
@@ -18,7 +18,7 @@ provenance audit, editorial review, intake and registration.
   lean4lean and con-leche each accepted the positive export and rejected the
   ill-typed export. These six additional local controls are separate from
   the pinned Palomar profile and from any candidate replay.
-- [Metadata shapes](metadata-shapes.json): twelve metadata files passed the
+- [Metadata shapes](metadata-shapes.json): thirteen metadata files passed the
   community v0.4 schema and the official metadata minimum parser pinned at
   PalomarSubmission 14aa8d6b3c2f14a8540605e37144560b9a00e7e7. This does not
   provide or infer a human relationship declaration.
@@ -35,3 +35,5 @@ counts of manuscript results. Revised manuscript coverage remains 167/167.
 
 - [Finite-affine six-checker replay](affine-spectra-six-kernels.json): exact root source, four selections, actual isolated Comparator exit 0.
 - [Optional representative replays](optional-representative-replays.json): dependent expansions and integral-curve counts, seven selections, accepted by Lean paranoid, lean4lean, con-leche and the default Lean checker at their stated source. These optional checks are separate from the pinned Palomar profile.
+
+- [Exponential-moment draft checks](exponential-divergence-draft-checks.json): 16 direct theorem audits and six checkers on the standalone exports, with its actual earlier proof base and module hashes preserved. Its later root qualification and three-kernel replay are recorded separately.
