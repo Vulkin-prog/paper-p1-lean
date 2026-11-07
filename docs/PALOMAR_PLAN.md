@@ -39,6 +39,15 @@ Further independently meaningful families and the complete pinned reusable
 workflow remain to be prepared and qualified. Local compilation and dual-kernel
 replay do not establish registry acceptance or registration.
 
+The second family, prescribed squarefree kernels of shifted split products,
+has four selected declarations and passed the isolated comparison, Lean and
+NanoDa at c85100fb3371cfe2869cf98e2fb8e54eed9a231c. It includes the actual
+counting bounds, corrected capped comparison, exact nonnegative-parameter
+criterion, and actual arbitrarily large counterexamples to the original
+unqualified comparison. Its full project build passed 18,541 jobs and the
+extended audit checked 19,299 theorems. Its receipt and original compressed
+logs are in palomar/v1/quadratic_kernels and palomar/v1/evidence.
+
 Registrations are planned **after formalization is complete**, as requested.
 There are no submitted records, generated registry IDs, qualified Comparator
 configurations or certification claims at initialization.
