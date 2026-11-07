@@ -73,7 +73,8 @@
       "command": [
         "git",
         "diff",
-        "--check"
+        "--check",
+        "bd7c818e51161bab34607fd433d3348bef1aa2bb"
       ],
       "actual_exit_code": 0,
       "output": ""
@@ -100,5 +101,6 @@
     "actual_exit_code": 0,
     "output": "Lean (version 4.36.0-rc2, x86_64-unknown-linux-gnu, commit b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a, Release)\n"
   },
-  "scope": "Actual local source/type/review binding, inventory and preserved-evidence checks. The complete Lean replay is recorded separately at checkpoint1003. All167 labels have direct independent comparison records across the frozen review snapshots. No Palomar workflow, intake or registration was launched."
+  "scope": "Actual local source/type/review binding, inventory and preserved-evidence checks. The complete Lean replay is recorded separately at checkpoint1003. All167 labels have direct independent comparison records across the frozen review snapshots. No Palomar workflow, intake or registration was launched.",
+  "whitespace_scope_note": "The complete diff from bd7c818e is checked. The exact reviewed .patch file preserves its required single-space empty context lines through a narrowly scoped .gitattributes rule; Lean source whitespace checks are unchanged."
 }

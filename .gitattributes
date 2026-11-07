@@ -1,3 +1,5 @@
 # TeX control spaces at line ends and authored paragraph endings are intentional.
 # Preserve the exact manuscript bytes bound by the source/proof correspondence.
 manuscripts/paper-p1/v1.8/sources/**/*.tex whitespace=-blank-at-eol,-blank-at-eof
+# A unified diff marks an empty context line with one space; preserve its bytes.
+docs/editorial-proposals/2026-11-07/clarifications-and-finite-examples.patch whitespace=-blank-at-eol

@@ -43,7 +43,7 @@
   },
   "static_checks": {
     "path": "docs/validation/manuscript-endpoints-v1.8/static-checks.json",
-    "sha256": "a298d463e1df902f0ad12134b23d4eb313989b71bcbea5df307476c96b79bb30"
+    "sha256": "d7886bb1cd334c7c2ac71e903207546d9e4196a827fe86990b91ea2319ebf306"
   },
   "controls": {
     "path": "docs/validation/manuscript-endpoints-v1.8/controls.json",
@@ -125,5 +125,6 @@
     "intake_launched": false,
     "registry_id": null
   },
-  "scope": "Actual compiled types, complete project replay and source/review identity checks, with direct independent AI-assisted comparisons of all167 labels across the stated review snapshots. Not a machine proof of TeX semantic equivalence, an independent reconstruction of all transitive proofs, human certification or Palomar registration."
+  "scope": "Actual compiled types, complete project replay and source/review identity checks, with direct independent AI-assisted comparisons of all167 labels across the stated review snapshots. Not a machine proof of TeX semantic equivalence, an independent reconstruction of all transitive proofs, human certification or Palomar registration.",
+  "reviewed_patch_format_preserved": true
 }
