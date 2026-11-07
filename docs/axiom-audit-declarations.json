@@ -11547,6 +11547,8 @@
   "PaperP1.FixedCountMomentBoundsUnderBCN.uniform_ordinary_bound",
   "PaperP1.FixedCountMomentBoundsUnderBCN.uniformlyBoundedCountMoments",
   "PaperP1.FixedCountMomentBoundsUnderBCN.regular_moment_transfer",
+  "PaperP1.FixedCutoffIndependentTail.uniform_tail",
+  "PaperP1.FixedCutoffIndependentTail.article_15_8_fixed_cutoff",
   "PaperP1.FixedDegreeKernelCount.uniform_count",
   "PaperP1.FixedDegreeKernelCount.real_interval_count",
   "PaperP1.FixedDependentJointMass.uniform_range",

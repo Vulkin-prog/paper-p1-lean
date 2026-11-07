@@ -43098,6 +43098,37 @@
       },
       "validation_source_commit": "abef59777a1ba21ecf38270f1aa7596cae1acf6c",
       "validation_record": "docs/validation/checkpoint-0999/validation.json"
+    },
+    {
+      "id": "P1-MATH-1000",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.8 working draft",
+        "document": "main",
+        "label": "p13:transfer:independent-tail",
+        "source": "main_sections/exact_transfer.tex",
+        "line": 448,
+        "statement_sha256": "26d84d57f8cb53436e7b79775ab6c877710277ee810b9a8dbf849a805d4c6e27"
+      },
+      "original_assumption": "The previous public tail endpoint quantifies epsilon before the size cutoff s. The printed fixed-weight, fixed-exponent statement can use s independent of epsilon.",
+      "finding": "Choose a_prime=(a+2)/2 and epsilon_prime=(2-a)/4 in the established theorem. Their positive exponent margin proves both original and arbitrary bounded-block independent tail masses <= N^(-a), with one s>=3 and one N0>=10. Consequently s precedes every later positive epsilon. Original heterogeneous marginals and the single nominal block weight are retained.",
+      "evidence": [
+        "PaperP1.FixedCutoffIndependentTail.uniform_tail",
+        "PaperP1.FixedCutoffIndependentTail.article_15_8_fixed_cutoff"
+      ],
+      "proposed_revision": "Use the new exact quantifier interface when indexing article15.8. The already delivered TeX statement need not change. Keep a<2 fixed and all normalized block range/width constants fixed before N.",
+      "impact": "Quantifier clarification by an existing exponent margin. No new arithmetic input, general compressed-block growth regime, endpoint a=2, numbered result or registry selection. The old theorem and manuscript source bytes remain preserved.",
+      "validation": {
+        "status": "pending_full_project_replay",
+        "prototype_actual_exit_code": 0,
+        "toolchain": "leanprover/lean4:v4.36.0-rc2"
+      },
+      "manuscript_integration": {
+        "target_version": "P1 V1.8 proof correspondence supplement",
+        "status": "pending_validation",
+        "reason": "The source statement is unchanged; the supplement will expose the size cutoff before epsilon as a directly compiled theorem."
+      }
     }
   ]
 }
