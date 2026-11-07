@@ -43026,6 +43026,40 @@
         "target": "manuscripts/paper-p1/v1.8/sources/companion_sections/confinement.tex",
         "status": "pending_validation"
       }
+    },
+    {
+      "id": "P1-MATH-0999",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.8 working draft",
+        "document": "companion",
+        "source": "companion_sections/limits_appendix.tex",
+        "review_item": "S07",
+        "line": 514,
+        "source_sha256": "c2da5516c96395fe8d2797f944aeea583ee0e60f5c5c8eed7453c3abdb8ade2e"
+      },
+      "original_assumption": "The finite retained-cylinder example N=18,q=3 records only rank<=10 among eleven prime coordinates.",
+      "finding": "The homogeneous kernel is one-dimensional, with only prime 19 free. Thus the actual retained forcing system has rank exactly 10, precisely two compatible prime-sign samples and exact mass 2^-10. The ten observed rows give a direct elimination certificate; no unverified external computation is used in the proof.",
+      "evidence": [
+        "PaperP1.ExactRankPrimeCylinderExample.kernel_forced_bits",
+        "PaperP1.ExactRankPrimeCylinderExample.kernel_dimension",
+        "PaperP1.ExactRankPrimeCylinderExample.exact_rank",
+        "PaperP1.ExactRankPrimeCylinderExample.exact_forcing_probability",
+        "PaperP1.ExactRankPrimeCylinderExample.forcing_solution_count"
+      ],
+      "proposed_revision": "Optionally state rank=10 and forcing mass exactly 2^-10 in the existing N=18,q=3 example, with the explicit row sequence 27,32,30,28,22,26,34,23,29,31. No new numbered result is needed.",
+      "impact": "Finite-example precision only. The known moment lower bound, the asymptotic t>2 statement, all 167 numbered results and all six registration interfaces are preserved. No general rank formula or exact full-moment value is asserted.",
+      "validation": {
+        "status": "pending_full_project_replay",
+        "prototype_actual_exit_code": 0,
+        "toolchain": "leanprover/lean4:v4.36.0-rc2"
+      },
+      "manuscript_integration": {
+        "target_version": "optional revision after frozen P1 V1.8",
+        "status": "not_integrated",
+        "reason": "Preserve the already delivered v1.8 source and PDF snapshot; its rank<=10 claim remains valid."
+      }
     }
   ]
 }

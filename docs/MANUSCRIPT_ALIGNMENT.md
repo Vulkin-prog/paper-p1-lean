@@ -1,5 +1,15 @@
 # Manuscript-to-Lean correspondence
 
+Current checkpoint P1-MATH-0999: The optional finite example N=18,q=3
+has exact rank 10, exactly two compatible forcing samples and exact
+probability 2^-10. A direct Lean elimination certificate proves that
+prime 19 is the only free coordinate. The prototype compiled with actual
+exit zero; the complete project replay is pending. The frozen version
+1.8 TeX sources and PDFs retain their valid rank<=10 example; this new
+precision is available for optional later integration. All 167 numbered
+results and the six registration scopes are preserved. Palomar remains
+on hold at the user's request.
+
 Checkpoint P1-MATH-0998 adds an exact public interface for the two individual
 anchor-kernel bounds used in the separate version 1.8 revision. The existing
 167-result baseline below is preserved; the new draft has its own

@@ -4940,3 +4940,4 @@ public import PaperP1.Probability.PositionalBlockIndependence
 public import PaperP1.Probability.PositionalBivariateLaw
 public import PaperP1.Probability.PositionalBivariateMass
 public import PaperP1.Asymptotics.DenseAnchoredIndividualWitness
+public import PaperP1.Model.ExactRankPrimeCylinderExample

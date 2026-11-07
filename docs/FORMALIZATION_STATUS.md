@@ -1,6 +1,16 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0998: The fixed-arity anchored witness now
+Current checkpoint P1-MATH-0999: The optional finite example N=18,q=3
+has exact rank 10, exactly two compatible forcing samples and exact
+probability 2^-10. A direct Lean elimination certificate proves that
+prime 19 is the only free coordinate. The prototype compiled with actual
+exit zero; the complete project replay is pending. The frozen version
+1.8 TeX sources and PDFs retain their valid rank<=10 example; this new
+precision is available for optional later integration. All 167 numbered
+results and the six registration scopes are preserved. Palomar remains
+on hold at the user's request.
+
+Historical checkpoint P1-MATH-0998: The fixed-arity anchored witness now
 exposes two individual bounds for distinct actual natural values in the
 true anchor window. One threshold precedes every physical relation space,
 window centre and cutoff H>=L+1; active nonalignment, recovery exclusion
