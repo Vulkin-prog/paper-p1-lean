@@ -6,7 +6,7 @@
     "status": "passed",
     "shell_escape": false,
     "stable_cross_references": true,
-    "rounds": 3,
+    "rounds": 2,
     "undefined_references": 0,
     "overfull_boxes": 0
   },
@@ -15,13 +15,13 @@
       "document": "main",
       "path": "manuscripts/paper-p1/v1.7/pdf/P1_V1_7_Main_Article_2026-11-07_EN.pdf",
       "pages": 65,
-      "sha256": "945985ce42670b0105f3cb8e30623645905b44f8013c26602aab922b60e8c24e"
+      "sha256": "116c17bf5f157f520d0bcdee9466cb9a6ca740ccea1d26ac0a39007203139d60"
     },
     {
       "document": "companion",
       "path": "manuscripts/paper-p1/v1.7/pdf/P1_V1_7_Technical_Companion_2026-11-07_EN.pdf",
       "pages": 100,
-      "sha256": "4bce22c3e97c21cc16670d5c5e2b8a76997c98744dca0faa5a40698d1e313d44"
+      "sha256": "d8f0c39e9f2ca19e1cfdd84f39f6f76cff14dd09b965768950be1e455c42063b"
     }
   ],
   "visual_review": {
@@ -29,6 +29,16 @@
     "contact_sheet_dpi": 55,
     "detail_dpi": 110,
     "detail_pages_reviewed": {
+      "main": [
+        62
+      ],
+      "companion": [
+        96
+      ]
+    },
+    "complete": true,
+    "findings": "All 165 current pages rendered. The 163 unchanged pages are pixel-identical at55dpi to the previously inspected pages. Both changed appendix pages were inspected at110dpi; no clipped text, overlaps, missing glyphs, or unresolved references observed.",
+    "prior_detail_pages_reviewed": {
       "main": [
         62
       ],
@@ -43,8 +53,21 @@
         98
       ]
     },
-    "complete": true,
-    "findings": "All 165 pages reviewed in contact sheets. All nine listed detail pages inspected at higher resolution. No clipped text, overlapping content, missing glyphs, or unresolved references observed."
+    "latest_revision": {
+      "checkpoint": "P1-MATH-0985",
+      "all_165_pages_rendered": true,
+      "unchanged_pages_pixel_identical_at_55_dpi": 163,
+      "changed_pages": {
+        "main": [
+          62
+        ],
+        "companion": [
+          96
+        ]
+      },
+      "all_changed_pages_inspected_at_110_dpi": true,
+      "pages_added_or_removed": 0
+    }
   },
   "revised_proof_validation": {
     "status": "passed",
@@ -80,5 +103,14 @@
       }
     ]
   },
-  "palomar_registration": null
+  "palomar_registration": null,
+  "appendix_range_clarification": {
+    "checkpoint": "P1-MATH-0985",
+    "proof_commit": "e47386f8f9dfa65d8c2d7a00d80cba45c2950451",
+    "numbered_statement_blocks_changed": false,
+    "all_167_revised_statement_proofs_preserved": true,
+    "full_build_jobs": 18539,
+    "audited_theorems": 19295,
+    "distinct_checked_references": 19611
+  }
 }

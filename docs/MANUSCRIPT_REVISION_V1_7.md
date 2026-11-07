@@ -43,3 +43,13 @@ cross-references. The PDF review covers every rendered page in contact
 sheets and the changed mathematical and formalization pages at higher
 resolution. The current review and revised proof-validation state are
 recorded in docs/manuscript-v1.7-validation.json.
+
+Checkpoint P1-MATH-0985 also makes the exact uncapped comparison criterion
+necessary and sufficient for the actual nonnegative divisor exponent. For
+arbitrary real parameters it is described only as sufficient. This wording
+is integrated in the unnumbered formalization appendix; no numbered statement
+block changes. Its four theorems passed a complete replay with 18,539 build
+jobs, 19,295 theorem axiom checks and 19,611 distinct checked references.
+Both PDFs were rebuilt: all 165 pages were rendered, 163 were pixel-identical
+to the previously reviewed pages, and both changed pages were inspected at
+higher resolution.

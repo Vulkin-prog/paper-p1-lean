@@ -103,7 +103,7 @@
     },
     {
       "path": "formalization.tex",
-      "sha256": "1e54258063ad9270540b0352ca9ab4b631963a27c5e6e06975d991dd97e36ca2"
+      "sha256": "fe68d6976e571d7b778768727b31922b0d4889c0c5a9309c15b7ef8549a79953"
     },
     {
       "path": "main.tex",
@@ -196,6 +196,13 @@
     {
       "path": "preamble.tex",
       "sha256": "fe1675378a47a9778340f5349c44f006beb2a51d2e0efd95b89325a3d2dc6510"
+    }
+  ],
+  "revisions": [
+    {
+      "checkpoint": "P1-MATH-0985",
+      "proof_commit": "e47386f8f9dfa65d8c2d7a00d80cba45c2950451",
+      "scope": "Unnumbered formalization appendix: sufficient range for all real parameters, exact range for the actual nonnegative divisor exponent. No numbered statement block changed."
     }
   ]
 }

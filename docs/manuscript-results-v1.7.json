@@ -17736,14 +17736,16 @@
       "status": "proved",
       "lean_declarations": [
         "PaperP1.RevisedCompanionStatements.companion_T5_1",
-        "PaperP1.RevisedCompanionStatements.companion_T5_1_exact_comparison"
+        "PaperP1.RevisedCompanionStatements.companion_T5_1_exact_comparison",
+        "PaperP1.QuadraticComparisonRange.actual_comparison_iff"
       ],
       "remaining_unformalized_inputs": [],
       "revision_reason": "Cap the exponent minimum by the trivial exponent 1 before the exact affine comparison.",
       "validation": "Full checkpoint P1-MATH-0984 passed: 18535 build jobs, 19288 axiom-audited theorems and 19607 distinct checked references. Only propext, Classical.choice and Quot.sound.",
       "canonical_statement": "PaperP1.RevisedCompanionStatements.companion_T5_1",
       "canonical_additional_statements": [
-        "PaperP1.RevisedCompanionStatements.companion_T5_1_exact_comparison"
+        "PaperP1.RevisedCompanionStatements.companion_T5_1_exact_comparison",
+        "PaperP1.QuadraticComparisonRange.actual_comparison_iff"
       ],
       "validation_commit": "27bc1758cb8ed6b2a95add0f70f90dfe450c2de7"
     },
