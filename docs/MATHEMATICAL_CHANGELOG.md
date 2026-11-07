@@ -1,5 +1,16 @@
 # Mathematical corrections and improvements
 
+Current checkpoint P1-MATH-1003: Two concrete irregular-window examples
+separate the formal row kernel, effective relative nullity and true
+homogeneous probability. The start x=18,L=10 has rank nine, actual
+marginal 2^-9 and raw relation dimension one, while its singleton
+effective relative nullity is zero. The start x=3,L=7 has zero original
+marginal and positive homogeneous mass. The nine theorem prototypes
+compiled without warnings; the complete project replay is pending.
+These are explanatory certificates, not new false-original statements
+or new registration selections. All frozen TeX/PDF versions remain
+preserved. Palomar submissions remain on hold at the user's request.
+
 The complete v1.8 proof-entry supplement now maps all 167 numbered
 statements to 261 compiled theorem interfaces and three separate
 mathematical definitions. A separate instance reviewed 79 existing
@@ -9,7 +20,7 @@ hypotheses are explicit. The two new modules, containing eight theorems in total
 also read by the separate instance after compilation. This is an AI-assisted scope
 review, not human certification or a Palomar registration.
 
-Current checkpoint P1-MATH-1002: The complete dense-primitive-triple
+Historical checkpoint P1-MATH-1002: The complete dense-primitive-triple
 statement now has a single exact interface for its homogeneous mass,
 host count and actual centered activity. All primitive triples have an
 actual homogeneous point probability O_C(N^-2); the proved dense host

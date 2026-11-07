@@ -43319,6 +43319,49 @@
       },
       "validation_source_commit": "08f019df4d33a817377e5c937356fe4d87ae08e1",
       "validation_record": "docs/validation/checkpoint-1002/validation.json"
+    },
+    {
+      "id": "P1-MATH-1003",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.8 working draft",
+        "document": "companion",
+        "label": "p1:uniform:replicas",
+        "source": "companion_sections/uniform_appendix.tex",
+        "line": 351,
+        "statement_sha256": "cee349c607e43eada20a10105ca13a96aba5dbd24c8c491a6857a75064ff04d9"
+      },
+      "related_numbered_results": [
+        "T22.7",
+        "T8.2"
+      ],
+      "original_assumption": "The original nominal formula is valid with the formal row-relation kernel. A later exposition could wrongly substitute the effective relative nullity, or replace true homogeneous mass by the original affine marginal.",
+      "finding": "The concrete true run window x=18,L=10 has finite-cylinder rank9, unique compatible prime assignment at cutoff28, actual infinite marginal2^-9 and formal row-relation dimension1. Its one-window effective relative nullity is0, so using that nullity with the nominal factor2^-10 is false. The window x=3,L=7 has zero original marginal but positive actual homogeneous mass. Direct elimination and a compatible sample certify the first example; a square/multiplicative contradiction certifies the second.",
+      "evidence": [
+        "PaperP1.IrregularWindowExamples.kernel_eq_bot",
+        "PaperP1.IrregularWindowExamples.exact_rank",
+        "PaperP1.IrregularWindowExamples.compatible",
+        "PaperP1.IrregularWindowExamples.exact_marginal",
+        "PaperP1.IrregularWindowExamples.raw_relation_dimension",
+        "PaperP1.IrregularWindowExamples.effective_kernel_nominal_fails",
+        "PaperP1.IrregularWindowExamples.short_window_impossible",
+        "PaperP1.IrregularWindowExamples.zero_marginal",
+        "PaperP1.IrregularWindowExamples.homogeneous_positive_original_zero"
+      ],
+      "proposed_revision": "Use these finite examples to explain the formal/effective kernel and original-affine/homogeneous mass distinctions in a later editorial version. No change to the frozen v1.8 statements is necessary.",
+      "impact": "Concrete pedagogical certificates, not a third false-original statement, new asymptotic regime or additional Palomar selection. The examples concern the exact finite/infinite algebraic identities and do not claim that these small parameters meet a large-N threshold.",
+      "validation": {
+        "status": "prototype_passed_full_replay_pending",
+        "prototype_actual_exit_code": 0,
+        "theorems": 9,
+        "toolchain": "leanprover/lean4:v4.36.0-rc2"
+      },
+      "manuscript_integration": {
+        "target_version": "Optional later editorial revision",
+        "status": "proved_examples_available",
+        "reason": "The frozen TeX/PDF versions are preserved; the exact examples will be documented separately."
+      }
     }
   ]
 }

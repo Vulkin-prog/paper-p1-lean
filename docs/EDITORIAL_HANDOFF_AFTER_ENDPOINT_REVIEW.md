@@ -69,7 +69,7 @@ Proposition de texte :
 > threshold. For one compressed block its independent weight is vp,
 > charged once; all remaining factors are the actual vp_x.
 
-Preuve : `FixedCutoffIndependentTail.article_15_8`. Ne pas étendre cette
+Preuve : `FixedCutoffIndependentTail.article_15_8_fixed_cutoff`. Ne pas étendre cette
 phrase au bord a=2 ni à une collection de types dont la largeur croît avec N.
 
 ## 4. 15.4 : rappeler le cutoff de fenêtre hérité

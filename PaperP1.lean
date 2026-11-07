@@ -4944,3 +4944,4 @@ public import PaperP1.Model.ExactRankPrimeCylinderExample
 public import PaperP1.Asymptotics.FixedCutoffIndependentTail
 public import PaperP1.Model.NominalRunReplicaFormula
 public import PaperP1.Asymptotics.DensePrimitiveHomogeneousMass
+public import PaperP1.Model.IrregularWindowExamples
