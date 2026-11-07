@@ -1,0 +1,16 @@
+{
+  "challenge_module": "ChallengeP1PrivateObstruction",
+  "solution_module": "SolutionP1PrivateObstruction",
+  "theorem_names": [
+    "PaperP1Registry.PrivateObstruction.admissible_fields",
+    "PaperP1Registry.PrivateObstruction.conditional_forcing",
+    "PaperP1Registry.PrivateObstruction.deterministic_obstruction",
+    "PaperP1Registry.PrivateObstruction.randomized_obstruction"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "enable_nanoda": true
+}

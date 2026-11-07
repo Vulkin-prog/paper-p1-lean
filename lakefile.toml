@@ -46,6 +46,13 @@ moreLeanArgs = ["-DwarningAsError=false"]
 [[lean_lib]]
 name = "SolutionP1PoissonScales"
 
+[[lean_lib]]
+name = "ChallengeP1PrivateObstruction"
+moreLeanArgs = ["-DwarningAsError=false"]
+
+[[lean_lib]]
+name = "SolutionP1PrivateObstruction"
+
 [[require]]
 name = "mathlib"
 git = "https://github.com/leanprover-community/mathlib4.git"

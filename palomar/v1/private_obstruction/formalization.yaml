@@ -1,0 +1,88 @@
+version: v0.4
+project:
+  name: Actual private forcing and universal arithmetic anchor obstructions
+  description: The exact original T19.17 lower obstruction holds for every admissible arithmetic
+    anchor, actual private forcing, both offsets and every source word. The deterministic
+    coefficient (1-eta)2^(-2i)(N/2^L)^2 N^(-a) and randomized extra factor one half are retained.
+    The random auxiliary probability space is arbitrary and independent of the prime signs;
+    its orientations may depend on the source word. Arithmetic retained populations, largest
+    odd-valuation primes including 2, actual modified coordinates and offsite costs are explicit.
+    Admissible fields and their actual pivots are constructed, and the full conditional law
+    holds for every sample observable with anchor and small primes preserved. The sufficient
+    ordinary smooth-window census is proved internally. No census, concentration, mean-square
+    or obstruction bound is assumed.
+  authors:
+  - Brice Pouly
+  author_identifiers:
+  - name: Brice Pouly
+    github: Vulkin-prog
+    orcid: 0009-0008-8491-2467
+  responsible_maintainers:
+  - Brice Pouly
+  license: Apache-2.0
+repository:
+  role: substantive-development
+classification:
+  arxiv:
+  - math.NT
+  - math.PR
+sources:
+- title: Sharp Poisson approximation and second-order correction for long multiplicative runs,
+    version 1.7 draft
+  authors:
+  - Brice Pouly
+  id: https://github.com/Vulkin-prog/paper-p1-lean
+  type: paper
+  relationship: formalizes
+  location: Companion proposition T19.17, including its deterministic and randomized forms
+    and the actual anchor-preserving private forcing construction; version 1.7 draft. The
+    numbered obstruction statement is unchanged from version 1.6.
+  note: The maximal support is L+E+2; the two actual word lengths are L+i+1 for i in Fin 2.
+    Retention allows at most one small odd-valuation pivot. The anchor is arithmetic and chosen
+    before the prime signs. This is a working manuscript with no publication identifier asserted.
+related_formalizations:
+- id: https://github.com/Vulkin-prog/paper-c-lean
+  relationship: adapts
+  note: Selected finite and infinite prime-sign model foundations were ported from b9fa9ba490f201b408a302a86f1594ee620b228b,
+    under Apache-2.0, and rebuilt under Lean v4.36.0-rc2. Exact file identities, statement
+    scope and adaptations are recorded in docs/PAPER_C_REUSE.md and source headers. The P1
+    optimal quadratic estimates are proved in this substantive development.
+automation:
+  methods:
+  - method: agent
+    framework: Codex
+    models:
+    - OpenAI Codex agents
+    prompting_notes: Expose literal finite uniform prime signs, actual retained and full-good
+      populations, prime pivots, forcing and offsite costs. Preserve every quantifier and
+      printed coefficient. Include nonvacuous construction of admissible fields and full sample
+      conditional laws. Never assume the analytic census or target obstruction.
+    tool_setup: Lean proof construction, explicit Mathlib-only source definitions, exact bridges
+      to the substantive proof and full axiom audits.
+  notes: Agent assistance is not independent human peer review.
+review:
+  status: agent-reviewed
+  notes: Four selected declarations compile with complete Solution proofs and explicit definition
+    bridges. The Mathlib-only Challenge has exactly four deliberate theorem holes. Independent
+    statement and kernel checks and complete Palomar workflow are recorded separately after
+    actual success.
+status:
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms:
+  - propext
+  - Quot.sound
+  - Classical.choice
+  scope: 'Four selected declarations: existence of admissible deterministic and hybrid fields
+    with actual pivots, full conditional forcing law with anchor and small-prime invariance,
+    complete deterministic T19.17 and complete randomized T19.17. No unformalized input is
+    assumed. Deliberate holes occur only in the Challenge. No registry entry or certification
+    is claimed.'
+fidelity:
+  divergences: Private pivots are explicit prime-coordinate functions, constrained by equality
+    to the actual largest odd-valuation prime. Such functions exist by admissible_fields and
+    are uniquely identified with the substantive construction; they are not an assumed counting
+    or probability estimate. The offsite cost uses actual marginal probabilities in the deterministic
+    form and the proved exact word rate in the randomized form. Every arbitrary independent
+    auxiliary probability law is included. The stronger all-real sharp short-average theorem
+    and Dickman relative-density asymptotic are bypassed, not asserted.
