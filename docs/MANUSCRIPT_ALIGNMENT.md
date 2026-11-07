@@ -1,6 +1,20 @@
 # Manuscript-to-Lean correspondence
 
-Current checkpoint P1-MATH-1003: Two concrete irregular-window examples
+Current checkpoint P1-MATH-1004: A common homogeneous envelope now
+exposes the fixed-arity global power N^(-r/2+epsilon) and dense power
+N^(1-r+epsilon), including irregular windows and zero original marginals.
+Exact finite factorization gives at most 2^r times the nominal rank
+weight; the internally proved nominal bounds absorb that fixed factor.
+One scale threshold controls homogeneous event probabilities, original
+heterogeneous rank weights, actual joint probabilities and absolute
+centered activities, and the dense host count. All parameters, including
+r>=3, precede that threshold. The seven theorem prototypes compiled
+without warnings; the complete project replay is pending.
+This supports a common short argument in the manuscript, not a new
+exponent, growing-order result or additional Palomar selection.
+All frozen manuscript versions remain preserved. Palomar stays on hold.
+
+Historical checkpoint P1-MATH-1003: Two concrete irregular-window examples
 separate the formal row kernel, effective relative nullity and true
 homogeneous probability. The start x=18,L=10 has rank nine, actual
 marginal 2^-9 and raw relation dimension one, while its singleton

@@ -43412,6 +43412,49 @@
         "path": "docs/reviews/2026-11-07/irregular-examples.json",
         "sha256": "540583bd07281e490950043307f667ec0232f4c232bb6e1a53f5438a3fe31e69"
       }
+    },
+    {
+      "id": "P1-MATH-1004",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.8 working draft",
+        "document": "companion",
+        "label": "p18:conf:fixed-primitive",
+        "source": "companion_sections/confinement.tex",
+        "line": 148,
+        "statement_sha256": "1ff874b150ad7faeb5a4012fb8009bdce7c2fbff0bf7e37c37d6c090427861b0"
+      },
+      "related_numbered_results": [
+        "15.5",
+        "T8.2"
+      ],
+      "original_assumption": "The fixed-size and dense bounds already hold separately for nominal and original heterogeneous rank weights. The manuscript's true homogeneous clause needs an explicit comparison retaining locally deficient windows, including cases where the original affine probability is zero.",
+      "finding": "For arbitrary finite I, local homogeneous caps q0({x})<=2p imply q0(I)<=2^|I| p^|I| 2^rho_rel(I). Local rigidity supplies these caps uniformly on the critical band. The proved nominal mass bounds and fixed-factor absorption give the full fixed-r homogeneous powers N^(-r/2+epsilon) and N^(1-r+epsilon). Exact finite domination then bounds original heterogeneous rank mass, actual joint mass and absolute centered activity under one common threshold, together with dense host counts.",
+      "evidence": [
+        "PaperP1.FixedArityHomogeneousMass.point_le_nominal",
+        "PaperP1.FixedArityHomogeneousMass.mass_le_nominal",
+        "PaperP1.FixedArityHomogeneousMass.uniform_nominal_cap",
+        "PaperP1.FixedArityHomogeneousMass.finite_original_domination",
+        "PaperP1.FixedArityHomogeneousMass.uniform_mass",
+        "PaperP1.FixedArityHomogeneousMass.uniform_dense_mass",
+        "PaperP1.FixedArityHomogeneousMass.uniform_all_bounds"
+      ],
+      "proposed_revision": "Use a common finite comparison and one fixed-parameter absorption argument near companion T8, then cite it to shorten article15.5 and the dense homogeneous explanation. Preserve the counting/witness proof and the separate compressed-family argument.",
+      "impact": "Explicit proof assembly and proof simplification for an already printed auxiliary claim. No new exponent, third false-original result, regularity premise, positive-marginal premise, growing-r estimate or registration selection. The 2^r factor is absorbed only after fixing r.",
+      "validation": {
+        "status": "prototype_compiled_project_replay_pending",
+        "prototype_actual_exit_codes": [
+          0,
+          0
+        ],
+        "theorems": 7
+      },
+      "manuscript_integration": {
+        "target_version": "Optional later editorial revision",
+        "status": "proof_simplification_available",
+        "reason": "Frozen sources and PDFs are preserved. A separate condensed preview will distinguish proposed proof cuts from adopted manuscript changes."
+      }
     }
   ]
 }
