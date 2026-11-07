@@ -8,6 +8,7 @@ families; a selected declaration count is not the manuscript coverage count.
 |---|---:|---|---|
 | Ordinary smooth integers in logarithmic intervals | 3 | [configuration](../../comparator/p1_smooth_windows.json) | [metadata](smooth_windows/formalization.yaml), [passed local comparison and both kernels](smooth_windows/qualification.json) |
 | Prescribed squarefree kernels of shifted split products | 4 | [configuration](../../comparator/p1_quadratic_kernels.json) | [metadata](quadratic_kernels/formalization.yaml), [passed local comparison and both kernels](quadratic_kernels/qualification.json) |
+| Asymmetric parity-space profiles | 3 | [configuration](../../comparator/p1_asymmetric_profiles.json) | [metadata](asymmetric_profiles/formalization.yaml); local comparison pending |
 
 Each standalone Challenge imports only Mathlib. Its deliberate statement holes
 are the exact declarations selected by its Comparator configuration. Each

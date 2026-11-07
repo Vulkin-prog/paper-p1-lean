@@ -1,0 +1,88 @@
+version: v0.4
+project:
+  name: Asymmetric parity-space profiles with the necessary alignment radius
+  description: >-
+    Uniformly bound the full exponential even-selection loss profile by
+    N^(31/24+epsilon) for arbitrary old sets contained in intervals of radius
+    D(L+1), when nonalignment uses the same radius. Old centres lie in a fixed
+    expansion [N,N+QN), new centres in [N,2N), and the prime cutoff obeys
+    (2D+1)(L+1)<=H<=Dcut(L+1). One threshold precedes all critical lengths,
+    cutoffs and old sets. Parity vectors, raw old value spans and the actual
+    even-selection preimage are defined explicitly over F2. Adjoining small
+    prime coordinates leaves the loss unchanged. A separate actual profile
+    with old radius 3(L+1) proves that radius-one exclusion cannot give the
+    original exponent, for any fixed cutoff multiple. All estimates and
+    the counterexample are proved without unformalized mathematical inputs.
+  authors: [Brice Pouly]
+  author_identifiers:
+    - name: Brice Pouly
+      github: Vulkin-prog
+      orcid: 0009-0008-8491-2467
+  responsible_maintainers: [Brice Pouly]
+  license: Apache-2.0
+repository:
+  role: substantive-development
+classification:
+  arxiv: [math.NT]
+sources:
+  - title: Sharp Poisson approximation and second-order correction for long multiplicative runs, technical companion, version 1.7 draft
+    authors: [Brice Pouly]
+    id: https://github.com/Vulkin-prog/paper-p1-lean
+    type: paper
+    relationship: formalizes
+    location: >-
+      Corrected T1.10 in companion_sections/arithmetic_appendix.tex and
+      the formalization appendix. P1-MATH-0162 records the radius-one
+      obstruction, P1-MATH-0446 the unconditional corrected profiles,
+      and P1-MATH-0984 their exact revised statement aliases.
+    note: >-
+      The original version 1.6 radius-one statement remains preserved
+      with its checked counterexample. Version 1.7 matches the exclusion
+      radius to the actual old enclosing interval. No publication
+      identifier is asserted for this working manuscript.
+related_formalizations:
+  - id: https://github.com/Vulkin-prog/paper-c-lean
+    relationship: adapts
+    note: >-
+      Selected foundations were ported from exact commit
+      b9fa9ba490f201b408a302a86f1594ee620b228b, under Apache-2.0, and rebuilt
+      under Lean v4.36.0-rc2. Source identities, statement scope and
+      adaptations are recorded in docs/PAPER_C_REUSE.md and source headers.
+automation:
+  methods:
+    - method: agent
+      framework: Codex
+      models: [OpenAI Codex agents]
+      prompting_notes: >-
+        Retain the full exponential loss weight, arbitrary old subsets,
+        exact parity spaces, matching alignment radius and uniform
+        quantifier order. Preserve the false original scope separately.
+      tool_setup: >-
+        Lean proof construction, direct Mathlib statement interfaces,
+        exact definition bridges and constructive counterexample review.
+  notes: Agent assistance is not independent human peer review.
+review:
+  status: agent-reviewed
+  notes: >-
+    The three Solution proofs compile without placeholders or warnings.
+    The standalone Challenge imports only Mathlib and has exactly three
+    selected theorem holes. Comparator, kernel replay and the full Palomar
+    workflow are recorded separately when they have actually passed.
+status:
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms: [propext, Quot.sound, Classical.choice]
+  scope: >-
+    Three selected declarations: the corrected weighted profile,
+    small-prime invariance and failure of radius-one exclusion with
+    arbitrary old radius. Deliberate holes occur only in the Challenge.
+    No registry entry, editorial decision or certification is claimed.
+fidelity:
+  divergences: >-
+    The corrected profile uses the old enclosing radius in its alignment
+    predicate and states its exact expanded domain and cutoff interval.
+    The old value span has no parity restriction, while new selections
+    have zero coefficient sum. The full 2^loss-1 weight is retained.
+    The obstruction uses old radius three and exclusion radius one;
+    it does not contradict the matching-radius estimate. No stronger
+    unrestricted surface estimate is claimed by this selection.
