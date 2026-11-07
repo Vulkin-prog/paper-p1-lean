@@ -8,26 +8,22 @@ statements are proved. Both revised PDFs and their visual checks are preserved.
 
 ## Completed local qualification
 
-[Nine selected families](../palomar/v1/README.md), with **37 declarations**,
+[Eleven selected families](../palomar/v1/README.md), with **44 declarations**,
 have passed actual statement comparison, Lean and bundled NanoDa, with the
 bubblewrap boundary enabled. Every family has its own immutable source commit,
 configuration, standalone Mathlib-only Challenge, complete Solution, metadata,
 qualification receipt and compressed original logs. The latest complete build
-passed **18,555 jobs** and the direct source-discovered audit checked **19,402
+passed **18,559 jobs** and the direct source-discovered audit checked **19,424
 theorems**, allowing only `propext`, `Classical.choice` and `Quot.sound`.
 
-All nine families also passed supplementary verified con-ron, Lean and NanoDa
+All eleven families also passed supplementary verified con-ron, Lean and NanoDa
 replays. Their [source-bound records](../palomar/v1/supplementary/README.md)
 preserve binary identities, original logs, six positive/ill-typed controls,
 metadata shape checks and a historical source-layout scan. These local checks
 do not replace the complete workflow. The additional interfaces introduce no
 new mathematical-change entry.
 
-Two further independently meaningful families are in root qualification:
-the complete centered/stopped expansion for arbitrary dependent indicators
-and the degree-uniform integral-curve count with its growing-degree consequence.
-Their seven standalone statements passed all three kernels; full-root receipts
-remain pending. The [numbered scope index](NUMBERED_SCOPE_REVIEW.md) provides
+The [numbered scope index](NUMBERED_SCOPE_REVIEW.md) provides
 printed source identities and actual compiled types for all 167 revised results.
 
 The [evidence checker](../scripts/check_registry_evidence.py) verifies every

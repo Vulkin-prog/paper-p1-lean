@@ -1,5 +1,5 @@
 {
-  "source_commit": "08fd135021794dcb5a8b902ddbea109dfbd47c5d",
+  "source_commit": "4447dfc36bd66103440118a509831fae3068e804",
   "validator_commit": "14aa8d6b3c2f14a8540605e37144560b9a00e7e7",
   "community_schema_sha256": "25ff6b25ca4511635aff4443cf20480c15e59dddf19591c730950b442ea54fce",
   "files": [
@@ -18,9 +18,23 @@
       "palomar_metadata_minimum_passed": true
     },
     {
+      "family": "dependent_expansion",
+      "path": "palomar/v1/dependent_expansion/formalization.yaml",
+      "sha256": "135cccb96d3914bdf7b451b99f3c8878eed8b44fba41c3783e8505605a5993d0",
+      "community_v04_schema_passed": true,
+      "palomar_metadata_minimum_passed": true
+    },
+    {
       "family": "factorial_cumulants",
       "path": "palomar/v1/factorial_cumulants/formalization.yaml",
       "sha256": "0842ebc70a8f826f12405648f894875a1f507d47c377cb1a9c25939d3a3e3e28",
+      "community_v04_schema_passed": true,
+      "palomar_metadata_minimum_passed": true
+    },
+    {
+      "family": "integral_curve_count",
+      "path": "palomar/v1/integral_curve_count/formalization.yaml",
+      "sha256": "b1961a3d9867ab07a01a9e139ada2e4aff378ea5a7310ed2d334acc82c038b2e",
       "community_v04_schema_passed": true,
       "palomar_metadata_minimum_passed": true
     },

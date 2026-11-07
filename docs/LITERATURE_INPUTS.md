@@ -6,9 +6,9 @@ actual positive prescribed divisors. The range is sufficient for
 arbitrary real parameters, while necessity requires the sign
 qualification. All167 revised numbered statements remain proved;
 original coverage remains165/0/2 with the two false scopes preserved.
-The first analytic registration candidate passed local statement
-comparison and both kernels. Further family preparation and complete
-Palomar preflight remain. Lean v4.36.0-rc2 and original source bytes are
+Eleven registration families (44 selected declarations) passed local
+statement comparison, Lean and NanoDa, plus supplementary verified con-ron
+replays. The complete Palomar workflow and intake remain. Lean v4.36.0-rc2 and original source bytes are
 unchanged. No registration is claimed.
 
 Historical checkpoint P1-MATH-0984: The separate version 1.7 draft

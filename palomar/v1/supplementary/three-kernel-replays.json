@@ -163,12 +163,46 @@
       "log_sha256": "f87f79197061f745a0c2825dedb6be441ba2e42fbd7d4cc59a632e5355a7d6e0",
       "source_commit": "08fd135021794dcb5a8b902ddbea109dfbd47c5d",
       "compressed_log_sha256": "880a36accfbc55304a118a3333d6b01dccb26132defdc3ce7defb223b3312f58"
+    },
+    {
+      "family": "dependent_expansion",
+      "selected_declarations": [
+        "PaperP1Registry.DependentExpansion.polynomial_expansion",
+        "PaperP1Registry.DependentExpansion.centered_identity",
+        "PaperP1Registry.DependentExpansion.positive_stopped_kernel",
+        "PaperP1Registry.DependentExpansion.stopped_l1_bound"
+      ],
+      "submission_configuration_sha256": "e672627836047ce72b7416ef025fa1089f88756e559c512d1bb18b8478d96de1",
+      "actual_comparator_exit": 0,
+      "all_three_kernels_accepted": true,
+      "con_ron_accepted_declarations": 26956,
+      "log_path": "palomar/v1/supplementary/dependent_expansion-three-kernels.log.gz",
+      "log_sha256": "d028e9b3be0bbe905393da426e362f798f81188260b3eac67800a6c23a662774",
+      "source_commit": "4447dfc36bd66103440118a509831fae3068e804",
+      "compressed_log_sha256": "167024784efe85bb17ad311722f30c17cc822dbc4023c14c57ec764b808085be"
+    },
+    {
+      "family": "integral_curve_count",
+      "selected_declarations": [
+        "PaperP1Registry.IntegralCurveCount.all_dimensional_count",
+        "PaperP1Registry.IntegralCurveCount.plane_count",
+        "PaperP1Registry.IntegralCurveCount.growing_degree_sublinear"
+      ],
+      "submission_configuration_sha256": "6a54f4408527abc5ab7fd5ce2d73079f2b04d979f94b719ae807a8ef233fb845",
+      "actual_comparator_exit": 0,
+      "all_three_kernels_accepted": true,
+      "con_ron_accepted_declarations": 85154,
+      "log_path": "palomar/v1/supplementary/integral_curve_count-three-kernels.log.gz",
+      "log_sha256": "29cb43abead11a4380206e8a2a4b3ae63a73b410610650bd5421cf9377d041f2",
+      "source_commit": "4447dfc36bd66103440118a509831fae3068e804",
+      "compressed_log_sha256": "a25a9e8d5362bd3f00f968ed174a2e1b8a509c49f9e847dd449b2d88d54f27c6"
     }
   ],
-  "updated_at": "2026-11-07T02:56:53.008572+00:00",
+  "updated_at": "2026-11-07T03:20:01.237558+00:00",
   "schema_version": 1,
   "source_commits": [
     "08fd135021794dcb5a8b902ddbea109dfbd47c5d",
+    "4447dfc36bd66103440118a509831fae3068e804",
     "ce8d14d39944266a5b2f5b73929625a0236be86d"
   ],
   "baseline_source_commit": "ce8d14d39944266a5b2f5b73929625a0236be86d"

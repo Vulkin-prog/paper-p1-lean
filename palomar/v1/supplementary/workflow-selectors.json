@@ -1,0 +1,20 @@
+{
+  "original_seven_caller_unchanged_from": "ce8d14d39944266a5b2f5b73929625a0236be86d",
+  "outcomes": [
+    {
+      "workflow": ".github/workflows/palomar-preflight.yml",
+      "all_family_count": 7,
+      "both_supported_roles_passed": true,
+      "invalid_source_family_role_rejected": true,
+      "sha256": "8f98fc37a702667da214a609f73f8ed92f19fbf23a98c1c42f6d33bae469e852"
+    },
+    {
+      "workflow": ".github/workflows/palomar-preflight-additional.yml",
+      "all_family_count": 4,
+      "both_supported_roles_passed": true,
+      "invalid_source_family_role_rejected": true,
+      "sha256": "3b0ebc270f68c7d674912596626b7110d4f2588b2dae4ecbcb7f84f5edf975cd"
+    }
+  ],
+  "scope": "Local selector and pin validation only; no relationship assertion, workflow dispatch or intake."
+}

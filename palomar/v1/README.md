@@ -1,18 +1,14 @@
 # P1 candidate registration interfaces
 
-All nine independently meaningful families below have passed local statement
+All eleven independently meaningful families below have passed local statement
 comparison and both Lean and NanoDa with bubblewrap isolation enabled. They
-select **37 declarations**, separately from the complete **167-result revised
+select **44 declarations**, separately from the complete **167-result revised
 manuscript correspondence**. Their immutable local receipts and original
 compressed logs preserve exactly what was checked.
 
-All nine also passed supplementary con-ron, NanoDa and Lean replays. Their
+All eleven also passed supplementary con-ron, NanoDa and Lean replays. Their
 [separate reports and controls](supplementary/README.md) preserve each exact
 source and original log without changing the standard submission configurations.
-
-Two further families are prepared with seven selected declarations. Their
-standalone compile/export comparisons and all three kernels have passed;
-frozen-root qualification remains pending.
 
 | Family | Selected declarations | Comparator configuration | Metadata and local evidence |
 |---|---:|---|---|
@@ -25,15 +21,15 @@ frozen-root qualification remains pending.
 | Actual conditioning and colored replica target sums | 4 | [configuration](../../comparator/p1_conditioning.json) | [metadata](conditioning/formalization.yaml), [passed local comparison and both kernels](conditioning/qualification.json) |
 | Actual factorial cumulants and the optimal third-cumulant power | 5 | [configuration](../../comparator/p1_factorial_cumulants.json) | [metadata](factorial_cumulants/formalization.yaml), [passed local comparison and both kernels](factorial_cumulants/qualification.json) |
 | Fixed-order moment obstruction to a polynomial approximation rate | 5 | [configuration](../../comparator/p1_moment_obstruction.json) | [metadata](moment_obstruction/formalization.yaml), [passed local comparison and both kernels](moment_obstruction/qualification.json) |
-| Exact expansions for dependent indicator counts | 4 | [configuration](../../comparator/p1_dependent_expansion.json) | [metadata](dependent_expansion/formalization.yaml); root qualification pending |
-| Degree-uniform integer points on integral curves | 3 | [configuration](../../comparator/p1_integral_curve_count.json) | [metadata](integral_curve_count/formalization.yaml); root qualification pending |
+| Exact expansions for dependent indicator counts | 4 | [configuration](../../comparator/p1_dependent_expansion.json) | [metadata](dependent_expansion/formalization.yaml), [passed local comparison and both kernels](dependent_expansion/qualification.json) |
+| Degree-uniform integer points on integral curves | 3 | [configuration](../../comparator/p1_integral_curve_count.json) | [metadata](integral_curve_count/formalization.yaml), [passed local comparison and both kernels](integral_curve_count/qualification.json) |
 
 Each configuration names its standalone Mathlib-only Challenge and complete
 Solution. Only the exact selected Challenge statements have deliberate proof
 holes. No substantive proof, Solution or axiom audit imports a Challenge. The
 current community v0.4 metadata schema is checked separately.
 
-The latest whole-project replay passed **18,555 build jobs** and **19,402 theorem
+The latest whole-project replay passed **18,559 build jobs** and **19,424 theorem
 axiom checks**. Earlier receipts retain their own historical source inventories.
 The local [evidence checker](../../scripts/check_registry_evidence.py) validates
 their hashes, exact source files, imported project proofs, actual export and

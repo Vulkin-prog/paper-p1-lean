@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "status": "local_dual_kernel_passed",
+  "source_commit": "4447dfc36bd66103440118a509831fae3068e804",
+  "toolchain": "leanprover/lean4:v4.36.0-rc2",
+  "mathlib_commit": "9d581dfff2e41de989072ea63abf3daf69311520",
+  "configuration": "comparator/p1_dependent_expansion.json",
+  "declarations": [
+    "PaperP1Registry.DependentExpansion.polynomial_expansion",
+    "PaperP1Registry.DependentExpansion.centered_identity",
+    "PaperP1Registry.DependentExpansion.positive_stopped_kernel",
+    "PaperP1Registry.DependentExpansion.stopped_l1_bound"
+  ],
+  "checks": {
+    "challenge_build": true,
+    "solution_build": true,
+    "statement_comparison": true,
+    "permitted_axioms_only": true,
+    "lean_default_kernel": true,
+    "nanoda_kernel": true,
+    "bubblewrap_enabled": true,
+    "actual_process_exit_code": 0
+  },
+  "full_build_jobs": 18559,
+  "all_audited_theorems": 19424,
+  "command": [
+    "lake",
+    "env",
+    "lake",
+    "comparator",
+    "--config",
+    "comparator/p1_dependent_expansion.json"
+  ],
+  "files": {
+    "lean-toolchain": "11c697aebe5b539d74f5069e497a588e7dfab1c4eeb74313f28357e351c55ca3",
+    "lakefile.toml": "92d8160a4cf25f5ec8436faf2ff62d1ce02fc0ef0a223adde63dbaec803b150a",
+    "lake-manifest.json": "e55097e7af1499ee442569b78349960413c5ff020700fff97fcf59ab95b338ad",
+    "ChallengeP1DependentExpansion.lean": "c150c5bb6997750499eb1453d1c5f7706ddacea56e84c69127f5d729eff7bc53",
+    "SolutionP1DependentExpansion.lean": "e6a95e189b21a9c15763e9de8a3340688880a2960bc0b014b03a73f0f7a8f8d2",
+    "comparator/p1_dependent_expansion.json": "e672627836047ce72b7416ef025fa1089f88756e559c512d1bb18b8478d96de1",
+    "palomar/v1/dependent_expansion/formalization.yaml": "135cccb96d3914bdf7b451b99f3c8878eed8b44fba41c3783e8505605a5993d0"
+  },
+  "tool_binary_sha256": {
+    "lake": "42678ccbc2605e2f892540dc7236e009fdd1224e823d104dfd72725d2f1a52d2",
+    "leanexport": "8298d4412a1f8986b5dbfd1d9925211778d8d320fc47b72040c8fdfdd5b603d5",
+    "leanchecker": "2b2ff08805ace61c935b023f8114ac3f7f1d3bc79cb4e8c47ef7801a5af58798",
+    "nanoda_bin": "8241c5e6baa29490aa118d382f97961b208ae730fdb96545c2abed74c9ece5a8"
+  },
+  "logs": [
+    {
+      "kind": "comparator",
+      "path": "palomar/v1/evidence/dependent_expansion-comparator.log.gz",
+      "sha256": "bcee2bc09cd8b09b6728eb385e5931b9baf8583931b1c6e74c07e8cc0f9f1bdb"
+    },
+    {
+      "kind": "full_build",
+      "path": "palomar/v1/evidence/dependent_expansion-full-build.log.gz",
+      "sha256": "9fbe64f1808e657e3294c316e5d497dcb196e522d2563cc8b1c79cd7207c6ee8"
+    },
+    {
+      "kind": "axiom_audit",
+      "path": "palomar/v1/evidence/dependent_expansion-axiom-audit.log.gz",
+      "sha256": "24b7af81cdaa5121ff97af8a1f8b57ecfbab9efe3d7f976b36fc13b98c13abd3"
+    }
+  ],
+  "palomar_complete_reusable_workflow_passed": false,
+  "editorial_review": null,
+  "registration": null,
+  "scope": "Local statement comparison and Lean/NanoDa replay at the exact source commit. This is not the complete Palomar workflow, editorial review or registration."
+}

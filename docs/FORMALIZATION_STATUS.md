@@ -6,14 +6,16 @@ actual positive prescribed divisors. The range is sufficient for
 arbitrary real parameters, while necessity requires the sign
 qualification. All167 revised numbered statements remain proved;
 original coverage remains165/0/2 with the two false scopes preserved.
-Nine registration candidate families (37 selected declarations) have
+Eleven registration candidate families (44 selected declarations) have
 passed local statement comparison and both kernels with isolation enabled.
 Their source-bound receipts and logs are verified.
 Supplementary verified con-ron, Lean and NanoDa replays also passed for all
-nine families, with original logs and positive/ill-typed controls preserved.
-The pinned full reusable
-Palomar workflow is prepared; its dispatch and intake remain. Lean v4.36.0-rc2 and original source bytes are
-unchanged. No registration is claimed.
+eleven families, with original logs and positive/ill-typed controls preserved.
+The whole project passed 18,559 build jobs and 19,424 theorem axiom checks.
+The numbered scope index preserves actual compiled signatures for all 167
+revised statements. The pinned full reusable Palomar workflow is prepared;
+its dispatch and intake remain. Lean v4.36.0-rc2 and original source bytes
+are unchanged. No registration is claimed.
 
 Historical checkpoint P1-MATH-0984: The separate version 1.7 draft
 integrates the two necessary statement corrections. All 167 revised

@@ -1,0 +1,96 @@
+{
+  "source_commit": "4447dfc36bd66103440118a509831fae3068e804",
+  "toolchain": "leanprover/lean4:v4.36.0-rc2",
+  "scope": "Optional local verifier compatibility controls only. These additional checkers are not required by the pinned Palomar profile; no complete workflow or registration is inferred.",
+  "controls": [
+    {
+      "kernel": "Lean paranoid",
+      "control": "positive",
+      "comparator_exit_code": 0,
+      "expected_verdict_observed": true,
+      "seconds": 0.615,
+      "argv": [
+        "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/leanchecker-paranoid",
+        "--silent",
+        "--from-export"
+      ],
+      "log_path": "palomar/v1/supplementary/optional-control-lean-paranoid-positive.log.gz",
+      "log_sha256": "6d7dfd9695a657b5a8d4952dbaafbd33dfe8c05e90f07b8a43359943897f45a3",
+      "compressed_log_sha256": "ff2c93be053734df40368efa462118d1d6534e9b0e6cfc8db9c858e7646d28b4"
+    },
+    {
+      "kernel": "Lean paranoid",
+      "control": "ill-typed",
+      "comparator_exit_code": 1,
+      "expected_verdict_observed": true,
+      "seconds": 0.614,
+      "argv": [
+        "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/leanchecker-paranoid",
+        "--silent",
+        "--from-export"
+      ],
+      "log_path": "palomar/v1/supplementary/optional-control-lean-paranoid-ill-typed.log.gz",
+      "log_sha256": "ef2a277dd5ba47286131d7d93dc161747d0149dfe7a6513f021e60f67d96a84f",
+      "compressed_log_sha256": "153b628b32040eb85ebba14026ae4d7ead53ddd7cee0b1589ea2518991f277f4"
+    },
+    {
+      "kernel": "lean4lean",
+      "control": "positive",
+      "comparator_exit_code": 0,
+      "expected_verdict_observed": true,
+      "seconds": 0.614,
+      "argv": [
+        "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/lean4lean",
+        "--import"
+      ],
+      "log_path": "palomar/v1/supplementary/optional-control-lean4lean-positive.log.gz",
+      "log_sha256": "80250ef8e01f25fdf8eea807d98ce70d394ec16cc6c5182bf0106c62ceaa780d",
+      "compressed_log_sha256": "59dd1faa37bea65053656d66881ccf78ee8770c52a1c4d744ba464e856b1d5a4"
+    },
+    {
+      "kernel": "lean4lean",
+      "control": "ill-typed",
+      "comparator_exit_code": 1,
+      "expected_verdict_observed": true,
+      "seconds": 0.664,
+      "argv": [
+        "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/lean4lean",
+        "--import"
+      ],
+      "log_path": "palomar/v1/supplementary/optional-control-lean4lean-ill-typed.log.gz",
+      "log_sha256": "07af634d6653a1f1cc50e4347e7086f98f2bb4673821b614377b8202252c82df",
+      "compressed_log_sha256": "6074d09ce4d3e2529ea274d523ae4f86bcbfecc4787e1748dec1b1f9bd8b643c"
+    },
+    {
+      "kernel": "con-leche",
+      "control": "positive",
+      "comparator_exit_code": 0,
+      "expected_verdict_observed": true,
+      "seconds": 2.617,
+      "argv": [
+        "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/con-leche"
+      ],
+      "log_path": "palomar/v1/supplementary/optional-control-con-leche-positive.log.gz",
+      "log_sha256": "6ada3e6fb0f12f0f541bb2a14b04773b4dbaeaa25497e6745f6ff12287faf74e",
+      "compressed_log_sha256": "7c6da76d12ae1b428e88b32391bd0b435c86c158e6c384f1dd844d512cae9e99"
+    },
+    {
+      "kernel": "con-leche",
+      "control": "ill-typed",
+      "comparator_exit_code": 1,
+      "expected_verdict_observed": true,
+      "seconds": 2.617,
+      "argv": [
+        "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/con-leche"
+      ],
+      "log_path": "palomar/v1/supplementary/optional-control-con-leche-ill-typed.log.gz",
+      "log_sha256": "ea85dfdd3d7bdec628182b9326c87349731cb2961d25dd504e290a45cd87b863",
+      "compressed_log_sha256": "c24b2f54b61d1b2e003966618270eea7c7f411e2c63e896ac7bac7d16f2dd3a3"
+    }
+  ],
+  "tool_binary_sha256": {
+    "leanchecker-paranoid": "4508d26d3e22463a9566a6155d7a1600c7bfc42b6cd2548be73e3d19d159d6c5",
+    "lean4lean": "baaec030a70c78562ced2c75866ab0d2410e81ce680b835179ed16570ad5ef97",
+    "con-leche": "a6380d68b4fb364189821dd4692569c11536de0a1e3aaefea06028c0d67bb193"
+  }
+}

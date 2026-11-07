@@ -73,15 +73,15 @@ then invokes Lean's own axiom report for each declaration. Only `propext`,
 Standalone registry Challenges have only the deliberate selected statement
 holes and are never imported by the proof development or its audit.
 
-The latest complete project replay with all nine candidate families passed
-**18,555 build jobs** and **19,402 theorem axiom checks**. Each mathematical
+The latest complete project replay with all eleven candidate families passed
+**18,559 build jobs** and **19,424 theorem axiom checks**. Each mathematical
 checkpoint and registry replay records its own exact source commit and scope.
 The [evidence checker](scripts/check_registry_evidence.py) validates every
 preserved receipt against its historical inventory and current proof imports.
 
 ## Palomar preparation
 
-Nine selected families have passed local statement comparison and both Lean and
+Eleven selected families have passed local statement comparison and both Lean and
 NanoDa, with bubblewrap isolation enabled:
 
 | Family | Selected declarations | Local evidence |
@@ -95,16 +95,12 @@ NanoDa, with bubblewrap isolation enabled:
 | Actual conditioning and colored replica target sums | 4 | [Receipt](palomar/v1/conditioning/qualification.json) |
 | Actual factorial cumulants and the optimal third-cumulant power | 5 | [Receipt](palomar/v1/factorial_cumulants/qualification.json) |
 | Fixed-order moment obstruction to a polynomial approximation rate | 5 | [Receipt](palomar/v1/moment_obstruction/qualification.json) |
+| Exact expansions for dependent indicator counts | 4 | [Receipt](palomar/v1/dependent_expansion/qualification.json) |
+| Degree-uniform integer points on integral curves | 3 | [Receipt](palomar/v1/integral_curve_count/qualification.json) |
 
-All 37 selected declarations also passed supplementary replays with verified
+All 44 selected declarations also passed supplementary replays with verified
 con-ron, Lean and NanoDa. The [source-bound reports](palomar/v1/supplementary/README.md)
 preserve the actual logs, binary identities and positive/ill-typed controls.
-
-Two additional families are undergoing root qualification: exact centered and
-stopped expansions for dependent counts (four declarations), and degree-uniform
-integer-point counts on integral curves (three declarations). Their standalone
-exports have passed all three kernels; root build and Comparator receipts remain
-pending.
 
 The [candidate interfaces](palomar/v1/README.md) link each standalone Mathlib-only
 Challenge, complete Solution, Comparator configuration, metadata and preserved
