@@ -1,0 +1,12 @@
+{
+  "challenge_module": "ChallengeP1QuadraticApproximation",
+  "solution_module": "SolutionP1QuadraticApproximation",
+  "theorem_names": [
+    "PaperP1Registry.QuadraticApproximation.source_probability",
+    "PaperP1Registry.QuadraticApproximation.reference_series",
+    "PaperP1Registry.QuadraticApproximation.optimal_quadratic",
+    "PaperP1Registry.QuadraticApproximation.probability_criterion"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"],
+  "enable_nanoda": true
+}

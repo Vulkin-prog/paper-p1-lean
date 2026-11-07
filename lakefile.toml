@@ -32,6 +32,13 @@ moreLeanArgs = ["-DwarningAsError=false"]
 [[lean_lib]]
 name = "SolutionP1AsymmetricProfiles"
 
+[[lean_lib]]
+name = "ChallengeP1QuadraticApproximation"
+moreLeanArgs = ["-DwarningAsError=false"]
+
+[[lean_lib]]
+name = "SolutionP1QuadraticApproximation"
+
 [[require]]
 name = "mathlib"
 git = "https://github.com/leanprover-community/mathlib4.git"

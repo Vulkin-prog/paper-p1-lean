@@ -1,0 +1,99 @@
+version: v0.4
+project:
+  name: Optimal quadratic Poisson--Charlier approximation for multiplicative runs
+  description: >-
+    Count the actual long run starts of a random completely multiplicative
+    sign function in [N,2N), at word lengths L within a fixed band of log_2 N.
+    With the actual mean mu and second factorial cumulant kappa_2, the
+    quadratic reference Pi_mu+(kappa_2/2)Delta^2 Pi_mu has ordinary singleton
+    l1 error between a positive multiple of N^(-4/3-epsilon) and
+    N^(-4/3+epsilon), uniformly over all critical word lengths. The actual
+    mean differs from N/2^L by at most 2^C N^(-1+epsilon), and the quadratic
+    reference is eventually a genuine probability mass function. The
+    independent prime-sign law, literal starts, moments and singleton
+    masses are explicit; measurability, all finite moments, normalization
+    and absolute summability of the error series are proved. A separate
+    exact criterion gives both endpoints of the admissible quadratic
+    coefficient interval for every positive Poisson mean. No unformalized
+    mathematical input is assumed.
+  authors: [Brice Pouly]
+  author_identifiers:
+    - name: Brice Pouly
+      github: Vulkin-prog
+      orcid: 0009-0008-8491-2467
+  responsible_maintainers: [Brice Pouly]
+  license: Apache-2.0
+repository:
+  role: substantive-development
+classification:
+  arxiv: [math.NT, math.PR]
+sources:
+  - title: Sharp Poisson approximation and second-order correction for long multiplicative runs, version 1.7 draft
+    authors: [Brice Pouly]
+    id: https://github.com/Vulkin-prog/paper-p1-lean
+    type: paper
+    relationship: formalizes
+    location: >-
+      Main theorem 1.1, the optimal exponent statement 16.2 and the exact
+      quadratic-reference admissibility criterion 8.1. Editable sources
+      and statement identities are in manuscripts/paper-p1/v1.7 and the
+      separate revised 167-statement ledger.
+    note: >-
+      The source model counts both run signs and includes the preceding
+      opposite-sign boundary. The actual mean and factorial cumulant
+      are used without replacing heterogeneous marginals by their nominal
+      approximation. This is a working manuscript, with no publication
+      identifier asserted.
+related_formalizations:
+  - id: https://github.com/Vulkin-prog/paper-c-lean
+    relationship: adapts
+    note: >-
+      Selected finite and infinite prime-sign model foundations were
+      ported from b9fa9ba490f201b408a302a86f1594ee620b228b, under Apache-2.0,
+      and rebuilt under Lean v4.36.0-rc2. Exact file identities, statement
+      scope and adaptations are recorded in docs/PAPER_C_REUSE.md and
+      source headers. The P1 optimal quadratic estimates are proved in
+      this substantive development.
+automation:
+  methods:
+    - method: agent
+      framework: Codex
+      models: [OpenAI Codex agents]
+      prompting_notes: >-
+        Preserve the actual prime-sign model, all starts, exact mean and
+        factorial cumulant, complete error series and uniform threshold
+        before critical word lengths. Expose probability and integrability
+        rather than relying on implicit totalized expressions.
+      tool_setup: >-
+        Lean proof construction, explicit Mathlib-only source definitions,
+        exact bridges to the substantive proof and full axiom audits.
+  notes: Agent assistance is not independent human peer review.
+review:
+  status: agent-reviewed
+  notes: >-
+    All four selected statements and their complete Solution proofs
+    compile, with source-definition bridges proved explicitly. The
+    standalone Mathlib-only Challenge has four deliberate theorem holes.
+    Statement comparison, independent kernel replay and complete Palomar
+    preflight are recorded separately when they have actually passed.
+status:
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms: [propext, Quot.sound, Classical.choice]
+  scope: >-
+    Four selected declarations for the actual source probability model,
+    normalized reference and summable error, complete optimal quadratic
+    theorem, and exact general reference admissibility interval.
+    Deliberate holes occur only in the standalone Challenge. No registry
+    entry, editorial decision or certification is claimed.
+fidelity:
+  divergences: >-
+    The error is the ordinary singleton l1 distance, with no factor one
+    half. The law counts literal starts of either sign in the full dyadic
+    block, not a retained or nominal surrogate. Both exact actual
+    parameters remain in the reference. Absolute summability, probability
+    normalization and source measurability are explicit conclusions.
+    The two-sided power bounds include every positive epsilon margin;
+    no unqualified constant-factor equivalent at power 4/3 is asserted.
+    The admissibility criterion uses the fractional part of a positive
+    mean, written as mu-floor(mu) with natural floor.

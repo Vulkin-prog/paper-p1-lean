@@ -1,6 +1,7 @@
 module
 
 public import Mathlib.Data.ZMod.Basic
+public import Mathlib.Algebra.Field.ZMod
 public import Mathlib.Data.Nat.Factorization.Basic
 public import Mathlib.Data.Finset.Interval
 public import Mathlib.Data.Finset.Prod
@@ -23,7 +24,7 @@ set_option autoImplicit false
 namespace PaperP1Registry.AsymmetricProfiles
 open Finset
 open scoped Classical
-local instance : Fact (Nat.Prime 2) := ⟨Nat.prime_two⟩
+local instance primeTwo : Fact (Nat.Prime 2) := ⟨Nat.prime_two⟩
 
 /-- The field of parity coordinates. -/
 abbrev F₂ := ZMod 2
