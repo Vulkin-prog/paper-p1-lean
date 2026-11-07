@@ -45,4 +45,6 @@ The main declarations in PaperP1.PositionalArrivalIndependence are
 `independent_distinct_coordinates_iff`, `independent_pair_counts_iff`,
 `dependent_pair_coordinates_iff` and `independent_canonical_pairs_iff`.
 
-Eighteen theorems passed direct Lean v4.36.0-rc2 compilation with proof warnings as errors and exact permitted-axiom checks. Whole-project replay and manuscript integration are pending.
+Full Lean v4.36.0-rc2 replay passed at source 5d76e8c2ea7f8b3b4eb810c56db23330b3f0499b: 18,595 build jobs, 19,691 source-discovered theorem axiom checks and 19,833 distinct declaration-reference checks, all actual process exits 0. Proof warnings are errors; only propext, Classical.choice and Quot.sound occur.
+
+The full replay and compressed original logs are preserved in [the validation record](validation/checkpoint-0995/validation.json). The clarification is integrated in the unnumbered version 1.7 companion appendix, under Realize the positional target by independent arrivals. Both PDFs were rebuilt and reviewed: 65 article pages and 102 companion pages. All 167 numbered statement blocks are preserved. See [the manuscript validation](manuscript-v1.7-validation.json).

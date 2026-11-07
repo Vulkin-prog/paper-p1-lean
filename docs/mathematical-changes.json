@@ -42773,15 +42773,17 @@
         "PaperP1.PositionalArrivalIndependence.self_independent_coordinate_iff",
         "PaperP1.PositionalArrivalIndependence.sum_eq_sdiff_of_shared_zero"
       ],
-      "validation": "Eighteen theorems passed direct Lean v4.36.0-rc2 compilation with proof warnings as errors and exact permitted-axiom checks. Whole-project replay and manuscript integration are pending.",
+      "validation": "Full Lean v4.36.0-rc2 replay passed at source 5d76e8c2ea7f8b3b4eb810c56db23330b3f0499b: 18,595 build jobs, 19,691 source-discovered theorem axiom checks and 19,833 distinct declaration-reference checks, all actual process exits 0. Proof warnings are errors; only propext, Classical.choice and Quot.sound occur.",
       "integration": {
         "target": "P1 V1.7 draft",
-        "status": "pending",
+        "status": "integrated",
         "numbered_statements_changed": false,
         "source": "manuscripts/paper-p1/v1.7/sources/formalization.tex",
         "paragraph": "Realize the positional target by independent arrivals",
         "pdf_validation": "docs/manuscript-v1.7-validation.json"
-      }
+      },
+      "validation_source_commit": "5d76e8c2ea7f8b3b4eb810c56db23330b3f0499b",
+      "validation_record": "docs/validation/checkpoint-0995/validation.json"
     }
   ]
 }

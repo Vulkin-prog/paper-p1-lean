@@ -8,9 +8,9 @@ real coordinates, arbitrary finite packets and the concrete product law
 are covered. The proof removes shared zero-rate cells almost everywhere,
 rather than inferring independence from covariance alone. The original
 arithmetic comparison and all 167 numbered statements are preserved.
-Eighteen theorems passed direct Lean and exact permitted-axiom checks.
-Full project replay and manuscript integration of this clarification are
-pending. Sixteen registry families with 64 selections remain locally
+The full replay passed 18,595 build jobs, 19,691 theorem axiom checks and
+19,833 distinct references, all actual exits 0. The clarification is integrated in the revised
+companion appendix, with all 167 PDF pages rebuilt and reviewed. Sixteen registry families with 64 selections remain locally
 qualified; no registration is claimed.
 
 Historical checkpoint P1-MATH-0994: The exact covariance of the compensated

@@ -193,3 +193,28 @@ to the prior reviewed version, and both changed companion pages (99,100)
 passed full inspection at 110dpi. Page counts remain 65 and 102. All 48 TeX
 hashes, provenance, both PDF hashes and all numbered statement identities
 were checked. All sixteen local registry receipts remain valid.
+
+
+Checkpoint P1-MATH-0995 proves the sharp independence criterion for actual
+reference coordinates. Two finite sums of independent Poisson cells are
+independent exactly when their total shared rate is zero. Shared zero-rate
+cells vanish almost everywhere, leaving functions of disjoint independent
+cell families. For pair arrivals, distinct reference coordinates are
+dependent precisely on retained edges with positive rate. Natural-valued
+counts, their real versions, arbitrary finite packets and the concrete
+product law are covered, including all degenerate rates. This is specific
+to the reference construction; the original arithmetic comparison keeps
+its rates, exponent 4/5 and fixed-degree quantifier order. The full replay
+passed 18,595 build jobs, 19,691 theorem axiom checks and 19,833 distinct
+references, all actual exits 0. All sixteen local registry receipts remain
+valid with unchanged original statement and imported proof bytes.
+
+The companion appendix includes the sharp independence criterion, positive
+pair-rate distinction and natural-valued scope. Both PDFs were rebuilt
+with stable cross-references, no unresolved references and no overfull
+boxes. All 167 pages were rendered: 165 are pixel-identical to the prior
+reviewed version, and both changed companion pages (99,100) passed full
+inspection at 110dpi. The declaration/module pointer paragraph is kept
+together so no Lean identifier is split across pages. Page counts remain
+65 and 102. All 48 TeX hashes, provenance, both PDF hashes and all numbered
+statement identities were checked.

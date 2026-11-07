@@ -68,7 +68,7 @@ The [independent positional realization](docs/INDEPENDENT_POSITIONAL_REALIZATION
 
 The [exact reference covariance](docs/POSITIONAL_ARRIVAL_COVARIANCE.md) identifies the complete pair covariance matrix and the arbitrary finite-packet formula for every independent realization, including the concrete product law. Its complete replay passed; [the source-bound logs](docs/validation/checkpoint-0994/validation.json) preserve all three checks. The clarification is integrated in the revised companion appendix.
 
-The [exact reference independence criterion](docs/POSITIONAL_ARRIVAL_INDEPENDENCE.md) proves that two reference coordinates are independent exactly when their shared arrival intensity vanishes. For pairs, the positive-rate retained edges give precisely the dependence graph, including natural counts and zero-rate cases. All eighteen new theorems passed direct compilation and axiom checks; whole-project replay and manuscript integration are pending.
+The [exact reference independence criterion](docs/POSITIONAL_ARRIVAL_INDEPENDENCE.md) proves that two reference coordinates are independent exactly when their shared arrival intensity vanishes. For pairs, the positive-rate retained edges give precisely the dependence graph, including natural counts and zero-rate cases. Its complete replay passed; [the source-bound logs](docs/validation/checkpoint-0995/validation.json) preserve all three checks. The clarification is integrated in the revised companion appendix.
 
 ## Build and verification
 
@@ -94,7 +94,7 @@ Standalone registry Challenges have only the deliberate selected statement
 holes and are never imported by the proof development or its audit.
 
 The latest complete project replay with all sixteen candidate families passed
-**18,593 build jobs** and **19,673 theorem axiom checks**. Each mathematical
+**18,595 build jobs** and **19,691 theorem axiom checks**. Each mathematical
 checkpoint and registry replay records its own exact source commit and scope.
 The [evidence checker](scripts/check_registry_evidence.py) validates every
 preserved receipt against its historical inventory and current proof imports.

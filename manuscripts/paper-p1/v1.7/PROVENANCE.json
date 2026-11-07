@@ -103,7 +103,7 @@
     },
     {
       "path": "formalization.tex",
-      "sha256": "01f55febdfc9b30f4c51654f5a26870603b3ecc941be67a915b3ffaf9fb1c82f"
+      "sha256": "dc40638faec49450565b630c1f9b39858383222d9e4fec76f094a18b5dda5005"
     },
     {
       "path": "main.tex",
@@ -248,6 +248,11 @@
       "checkpoint": "P1-MATH-0994",
       "proof_commit": "72c3ec562b832d46779a7fff91b52a750b43ebfb",
       "scope": "Unnumbered companion appendix: square-integrable actual reference coordinates, exact shared-arrival covariance for arbitrary finite packets, diagonal p and retained off-diagonal pair rate q. The distinction from the original arithmetic covariance, exponent, fixed-degree regime and all 167 numbered statement blocks are preserved."
+    },
+    {
+      "checkpoint": "P1-MATH-0995",
+      "proof_commit": "5d76e8c2ea7f8b3b4eb810c56db23330b3f0499b",
+      "scope": "Unnumbered companion appendix: sharp independence of distinct reference coordinates if and only if their shared packet intensity is zero, exact positive-rate pair dependence, zero-rate degeneracies, natural counts and real versions. All original arithmetic rates, exponent, fixed-degree regime and 167 numbered statement blocks are preserved."
     }
   ]
 }
