@@ -42080,6 +42080,34 @@
         "status": "not_integrated"
       },
       "validation_commit": "af532c1f3a195cd1dfbd88951ba0ab520868000d"
+    },
+    {
+      "id": "P1-MATH-0983",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The full original deterministic and randomized T19.17 coefficients retained an independent almost-all logarithmic-window ordinary smooth-number input.",
+      "finding": "The internally proved literal source census discharges both original obstruction reductions, at the exact printed coefficients and with all original anchor, private-forcing and orientation quantifiers.",
+      "proposed_revision": "Replace the appeal to the stronger external relative-density asymptotic by the internally proved sufficient two-smooth-integer census and its Gaussian proof. Cite both unconditional canonical T19.17 declarations. Keep the stronger general sharp short-average theorem and Dickman asymptotic outside the proved scope.",
+      "impact": "Completes the full original companion T19.17 without external mathematical input. Coverage is 165 proved, 0 conditional and 2 false-original scopes in_progress out of 167. The original false T1.10/T5.1 scopes retain their checked corrected replacements and require source revision.",
+      "evidence": [
+        "PaperP1.UnconditionalPrintedAnchorObstruction.companion_T19_17",
+        "PaperP1.UnconditionalPrintedAnchorObstruction.companion_T19_17_randomized"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18533 jobs); direct axiom audit passed for 19284 declarations using only propext, Classical.choice and Quot.sound; all 19603 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.91 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

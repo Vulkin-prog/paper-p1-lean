@@ -1,6 +1,18 @@
 # Actual projective scheme map
 
-Current checkpoint P1-MATH-0982: The exact original ordinary source
+Current checkpoint P1-MATH-0983: COMPLETE original companion T19.17 is
+PROVED with NO unformalized mathematical input. Canonical:
+UnconditionalPrintedAnchorObstruction.companion_T19_17 and
+companion_T19_17_randomized. Both exact printed coefficients and all
+original anchor and orientation quantifiers are preserved. Coverage: 165
+proved, 0 conditional, 2 in_progress /167; all 73 main and 92 companion
+original results proved. Original false T1.10 and T5.1 scopes retain
+their checked corrected replacements and still need manuscript revision
+and final alignment. The stronger general sharp short-average theorem
+and Dickman asymptotic are bypassed, not asserted. Original sources and
+Lean v4.36.0-rc2 are unchanged. No Palomar registration.
+
+Historical checkpoint P1-MATH-0982: The exact original ordinary source
 census holds unconditionally. The actual ordinary smooth logarithmic-
 window census and exact original source census interface are proved.
 Unconditional assembly of the printed deterministic and randomized
@@ -28905,3 +28917,16 @@ Two theorems prove the exact equality between literal integer-window smooth popu
 The actual ordinary smooth logarithmic-window census and exact original source census interface are proved. Unconditional assembly of the printed deterministic and randomized T19.17 obstructions remains to be checked. The stronger uniform sharp short-average theorem for all real completely multiplicative functions is not established. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.93 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18531 jobs); direct axiom audit passed for 19282 declarations using only propext, Classical.choice and Quot.sound; all 19601 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.92 GiB.
+
+
+## Complete original companion T19.17 deterministic and randomized obstructions without external inputs
+
+The exact original ordinary source census is proved internally for every fixed a>0, using the genuine actual logarithmic-window two-smooth-integer density. The source proof no longer needs an unformalized Matomaki--Radziwill short-interval premise. The sufficient census is weaker than a full Dickman relative-density asymptotic and is proved by the actual off-central Dirichlet estimate, exact Gaussian square-energy identity, positive smooth long-average comparison and physical localization.
+
+UnconditionalPrintedAnchorObstruction.companion_T19_17 proves the COMPLETE original deterministic printed obstruction. For every original C,D,a with 0<a<1/10, and every eta>0, ONE cutoff precedes all N, critical word lengths, maximal-support parameters, both offsets, every arithmetic anchor rule, every actual private field and every source word. The exact original lower coefficient (1-eta)*2^(-2*i)*lambda_N^2*N^(-a), expressed by the existing exact nominal scale, is preserved.
+
+UnconditionalPrintedAnchorObstruction.companion_T19_17_randomized proves the COMPLETE printed randomized conclusion, with its exact additional factor one half. The theorem covers every allowed measurable private forcing, source-word orientation and arbitrary independent auxiliary probability law, so in particular the original fair randomized orientations. All literal retained-source sets, private-pivot conditions, offsets and quantifier orders are preserved. No smooth-number, concentration, mean-square or obstruction conclusion occurs among the premises.
+
+The original companion T19.17 is now PROVED without any unformalized mathematical input. Its former Corollary Six assumption is BYPASSED by the internally proved sufficient almost-all census; the stronger all-real sharp short-average theorem and Dickman asymptotic are not asserted. Earlier conditional reductions remain as historical alternatives. Coverage becomes 165 proved, 0 conditional and 2 in_progress out of 167: all 73 main and 92 companion original results are proved. Original T1.10 radius-one and T5.1 uncapped-display scopes remain false as printed, with already proved corrected replacements; they are not relabeled as proved originals. Their future source revision and final statement alignment remain required before Palomar preparation. Original v1.6 bytes, Lean v4.36.0-rc2 and the permitted kernel axioms are unchanged.
+
+Verified under Lean v4.36.0-rc2: full build passed (18533 jobs); direct axiom audit passed for 19284 declarations using only propext, Classical.choice and Quot.sound; all 19603 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.91 GiB.

@@ -1,6 +1,18 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0982: The exact original ordinary source
+Current checkpoint P1-MATH-0983: COMPLETE original companion T19.17 is
+PROVED with NO unformalized mathematical input. Canonical:
+UnconditionalPrintedAnchorObstruction.companion_T19_17 and
+companion_T19_17_randomized. Both exact printed coefficients and all
+original anchor and orientation quantifiers are preserved. Coverage: 165
+proved, 0 conditional, 2 in_progress /167; all 73 main and 92 companion
+original results proved. Original false T1.10 and T5.1 scopes retain
+their checked corrected replacements and still need manuscript revision
+and final alignment. The stronger general sharp short-average theorem
+and Dickman asymptotic are bypassed, not asserted. Original sources and
+Lean v4.36.0-rc2 are unchanged. No Palomar registration.
+
+Historical checkpoint P1-MATH-0982: The exact original ordinary source
 census holds unconditionally. The actual ordinary smooth logarithmic-
 window census and exact original source census interface are proved.
 Unconditional assembly of the printed deterministic and randomized
@@ -3692,11 +3704,13 @@ Original integrality over the coefficient field suffices. The formal count
 covers every characteristic-zero field. All projection, fibre, height and
 scalar-extension arguments are internal; no unproved point-count input remains.
 
-Current coverage is **164 proved, 1 conditional and 2 in_progress out of 167**,
-with **165 completed**: 73 main and 90 companion results are proved. The four
-remaining literal obligations are companionT1.7/T19.17 and the original false
-T1.10/T5.1 statements with their recorded checked corrected replacements.
-The companion remains incomplete and no Palomar registration is claimed.
+Current coverage is **165 proved, 0 conditional and 2 in_progress out of 167**:
+all **73 main** and **92 companion** original results have checked proofs.
+Both original T1.7 and T19.17 are unconditional, with no unformalized input.
+The two remaining original statements, T1.10 and T5.1, are false as printed;
+their corrected replacements already have checked proofs. Their source revision
+and final statement alignment remain necessary before Palomar preparation.
+No Palomar registration is claimed.
 See the generated [current statement ledger](MANUSCRIPT_ALIGNMENT.md) and
 [exact main13.4 alignment](COMPLETE_AFFINE_QUADRATIC_CURVE_THEOREM_ALIGNMENT.md).
 
@@ -3822,7 +3836,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records980 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records981 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -3941,7 +3955,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **19282 audited theorem/lemma declarations**. This
+- The project currently has **19284 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -36520,3 +36534,16 @@ Two theorems prove the exact equality between literal integer-window smooth popu
 The actual ordinary smooth logarithmic-window census and exact original source census interface are proved. Unconditional assembly of the printed deterministic and randomized T19.17 obstructions remains to be checked. The stronger uniform sharp short-average theorem for all real completely multiplicative functions is not established. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.93 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18531 jobs); direct axiom audit passed for 19282 declarations using only propext, Classical.choice and Quot.sound; all 19601 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.92 GiB.
+
+
+## Complete original companion T19.17 deterministic and randomized obstructions without external inputs
+
+The exact original ordinary source census is proved internally for every fixed a>0, using the genuine actual logarithmic-window two-smooth-integer density. The source proof no longer needs an unformalized Matomaki--Radziwill short-interval premise. The sufficient census is weaker than a full Dickman relative-density asymptotic and is proved by the actual off-central Dirichlet estimate, exact Gaussian square-energy identity, positive smooth long-average comparison and physical localization.
+
+UnconditionalPrintedAnchorObstruction.companion_T19_17 proves the COMPLETE original deterministic printed obstruction. For every original C,D,a with 0<a<1/10, and every eta>0, ONE cutoff precedes all N, critical word lengths, maximal-support parameters, both offsets, every arithmetic anchor rule, every actual private field and every source word. The exact original lower coefficient (1-eta)*2^(-2*i)*lambda_N^2*N^(-a), expressed by the existing exact nominal scale, is preserved.
+
+UnconditionalPrintedAnchorObstruction.companion_T19_17_randomized proves the COMPLETE printed randomized conclusion, with its exact additional factor one half. The theorem covers every allowed measurable private forcing, source-word orientation and arbitrary independent auxiliary probability law, so in particular the original fair randomized orientations. All literal retained-source sets, private-pivot conditions, offsets and quantifier orders are preserved. No smooth-number, concentration, mean-square or obstruction conclusion occurs among the premises.
+
+The original companion T19.17 is now PROVED without any unformalized mathematical input. Its former Corollary Six assumption is BYPASSED by the internally proved sufficient almost-all census; the stronger all-real sharp short-average theorem and Dickman asymptotic are not asserted. Earlier conditional reductions remain as historical alternatives. Coverage becomes 165 proved, 0 conditional and 2 in_progress out of 167: all 73 main and 92 companion original results are proved. Original T1.10 radius-one and T5.1 uncapped-display scopes remain false as printed, with already proved corrected replacements; they are not relabeled as proved originals. Their future source revision and final statement alignment remain required before Palomar preparation. Original v1.6 bytes, Lean v4.36.0-rc2 and the permitted kernel axioms are unchanged.
+
+Verified under Lean v4.36.0-rc2: full build passed (18533 jobs); direct axiom audit passed for 19284 declarations using only propext, Classical.choice and Quot.sound; all 19603 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.91 GiB.
