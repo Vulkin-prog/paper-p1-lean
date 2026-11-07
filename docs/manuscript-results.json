@@ -121696,7 +121696,8 @@
         "arbitrary_independent_auxiliary_probability_law": true,
         "stronger_general_sharp_short_average_theorem_proved": false,
         "Dickman_relative_density_asymptotic_proved": false
-      }
+      },
+      "validation_commit": "220f3ee8a142ccace526eba7a62fad7cf7ead826"
     },
     {
       "label": "p1:offset:line-product",
