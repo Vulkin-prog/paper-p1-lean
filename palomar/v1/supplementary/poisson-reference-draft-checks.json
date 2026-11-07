@@ -84,5 +84,6 @@
       "--jobs=2"
     ]
   },
-  "scope": "Standalone immutable exports, exact statement comparison, direct twelve-theorem audit and acceptance by all six local checkers at the stated proof base. The selected declarations concern the explicit canonical finite product reference law. Frozen-root qualification and the complete Palomar workflow are separate stages. No personal relationship declaration or intake."
+  "scope": "Standalone immutable exports and six-checker acceptance at the stated earlier proof base. Module bytes are identical to the later frozen-root qualification source. Root Lean/NanoDa qualification and verified con-ron replay are preserved separately. The four selections concern the explicit canonical finite product reference law. Full Palomar workflow, editorial review and registration remain separate.",
+  "root_qualification_source_commit": "07894e254afa070ceef1cb62470f917d68615408"
 }

@@ -1,12 +1,12 @@
 # P1 candidate registration interfaces
 
-All sixteen independently meaningful families below have passed local statement
+All seventeen independently meaningful families below have passed local statement
 comparison and both Lean and NanoDa with bubblewrap isolation enabled. They
-select **64 declarations**, separately from the complete **167-result revised
+select **68 declarations**, separately from the complete **167-result revised
 manuscript correspondence**. Their immutable local receipts and original
 compressed logs preserve exactly what was checked.
 
-All sixteen also passed supplementary con-ron, NanoDa and Lean replays. Their
+All seventeen also passed supplementary con-ron, NanoDa and Lean replays. Their
 [separate reports and controls](supplementary/README.md) preserve each exact
 source and original log without changing the standard submission configurations.
 
@@ -31,14 +31,14 @@ Two larger representative families also passed the three optional checkers.
 | Uniform local arithmetic rigidity and relative-sign independence | 5 | [configuration](../../comparator/p1_local_rigidity.json) | [metadata](local_rigidity/formalization.yaml), [passed local comparison and both kernels](local_rigidity/qualification.json) |
 | Effective valuation cylinders and affine-rank moment bounds | 4 | [configuration](../../comparator/p1_prime_cylinders.json) | [metadata](prime_cylinders/formalization.yaml), [passed local comparison and both kernels](prime_cylinders/qualification.json) |
 | Convergent original-grid positional Poisson field | 3 | [configuration](../../comparator/p1_positional_field.json) | [metadata](positional_field/formalization.yaml), [passed local comparison and both kernels](positional_field/qualification.json) |
-| Exact finite-product Poisson reference structure | 4 | [configuration](../../comparator/p1_poisson_reference.json) | [metadata](poisson_reference/formalization.yaml); frozen-root qualification pending |
+| Exact finite-product Poisson reference structure | 4 | [configuration](../../comparator/p1_poisson_reference.json) | [metadata](poisson_reference/formalization.yaml), [passed local comparison and both kernels](poisson_reference/qualification.json) |
 
 Each configuration names its standalone Mathlib-only Challenge and complete
 Solution. Only the exact selected Challenge statements have deliberate proof
 holes. No substantive proof, Solution or axiom audit imports a Challenge. The
 current community v0.4 metadata schema is checked separately.
 
-The latest whole-project replay passed **18,597 build jobs** and **19,709 theorem
+The latest whole-project replay passed **18,599 build jobs** and **19,721 theorem
 axiom checks**. Earlier receipts retain their own historical source inventories.
 The local [evidence checker](../../scripts/check_registry_evidence.py) validates
 their hashes, exact source files, imported project proofs, actual export and
@@ -75,16 +75,10 @@ retains its earlier proof base and byte-identical module sources. Its dedicated
 workflow caller preserves the two earlier callers and their fifteen-family scope.
 
 
-A seventeenth [Poisson-reference candidate](poisson_reference/formalization.yaml)
-packages four exact statements for the explicit finite product reference law:
-Poisson marginals and all integrable factorial tests; the complete pair
-covariance matrix; natural-count pair independence; and genuine full-block
-independence exactly when no positive-rate edge crosses between disjoint
-blocks. Its eight exact bridges and four selected proofs passed the direct
-axiom audit and all six local checkers on immutable standalone exports.
-Frozen-root qualification is pending. This packages checkpoints 993--996
-and adds no mathematical-change entry. The two earlier workflow callers
-remain unchanged; the third positional caller selects the two reference
-families. The pending human-relationship question for the original fifteen
-configurations at source 0a9d3e68a8af39b6ea1ce725027f72ca5f10e8c4 retains
-its exact scope. No complete Palomar workflow or registration is claimed.
+The Poisson-reference family has four canonical finite-product statements,
+twelve audited proofs, a passed frozen-root qualification and verified
+con-ron replay. Its separately scoped [standalone six-checker report](supplementary/poisson-reference-draft-checks.json)
+retains the earlier exact proof base and byte-identical module sources.
+The original seven-family and additional eight-family callers are unchanged;
+the third caller selects the positional field and exact reference structure.
+No complete Palomar workflow or registration is claimed.

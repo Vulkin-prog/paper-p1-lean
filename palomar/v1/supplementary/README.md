@@ -49,3 +49,13 @@ proof base and acceptance by all six local checkers. Its frozen-root qualificati
 and [three-kernel log](positional_field-three-kernels.log.gz) are separately
 source-bound in the common replay report. All sixteen families, with 64 selected
 declarations, retain their own exact source and actual checker outcomes.
+
+
+The Poisson-reference [standalone report](poisson-reference-draft-checks.json)
+and [original log](poisson-reference-draft-checks.log.gz) record the exact
+earlier proof base and acceptance by all six local checkers. Its frozen-root
+qualification and [three-kernel log](poisson_reference-three-kernels.log.gz)
+are separately source-bound in the common replay report. All seventeen
+families, with 68 selected declarations, retain their own exact source and
+actual checker outcomes. Neither metadata/selector tests nor these local
+replays constitute a human relationship declaration or the complete workflow.

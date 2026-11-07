@@ -8,15 +8,15 @@ statements are proved. Both revised PDFs and their visual checks are preserved.
 
 ## Completed local qualification
 
-[Sixteen selected families](../palomar/v1/README.md), with **64 declarations**,
+[Seventeen selected families](../palomar/v1/README.md), with **68 declarations**,
 have passed actual statement comparison, Lean and bundled NanoDa, with the
 bubblewrap boundary enabled. Every family has its own immutable source commit,
 configuration, standalone Mathlib-only Challenge, complete Solution, metadata,
 qualification receipt and compressed original logs. The latest complete build
-passed **18,597 jobs** and the direct source-discovered audit checked **19,709
+passed **18,599 jobs** and the direct source-discovered audit checked **19,721
 theorems**, allowing only `propext`, `Classical.choice` and `Quot.sound`.
 
-All sixteen families also passed supplementary verified con-ron, Lean and NanoDa
+All seventeen families also passed supplementary verified con-ron, Lean and NanoDa
 replays. Their [source-bound records](../palomar/v1/supplementary/README.md)
 preserve binary identities, original logs, six positive/ill-typed controls,
 metadata shape checks and a historical source-layout scan. These local checks
@@ -135,16 +135,13 @@ human relationship confirmation and the subsequent Palomar stages remain
 separate from these local checks.
 
 
-A seventeenth [Poisson-reference candidate](../palomar/v1/poisson_reference/formalization.yaml)
-packages four exact statements for the explicit finite product reference law:
-Poisson marginals and all integrable factorial tests; the complete pair
-covariance matrix; natural-count pair independence; and genuine full-block
-independence exactly when no positive-rate edge crosses between disjoint
-blocks. Its eight exact bridges and four selected proofs passed the direct
-axiom audit and all six local checkers on immutable standalone exports.
-Frozen-root qualification is pending. This packages checkpoints 993--996
-and adds no mathematical-change entry. The two earlier workflow callers
-remain unchanged; the third positional caller selects the two reference
-families. The pending human-relationship question for the original fifteen
-configurations at source 0a9d3e68a8af39b6ea1ce725027f72ca5f10e8c4 retains
-its exact scope. No complete Palomar workflow or registration is claimed.
+The Poisson-reference family is locally qualified with four selections,
+twelve direct proof audits, all six standalone checkers, and the additional
+verified con-ron replay at its frozen root. Seventeen families now retain
+68 selected declarations and their own immutable receipts. The pending
+human-relationship request concerns exactly the fifteen configurations
+at source 0a9d3e68a8af39b6ea1ce725027f72ca5f10e8c4; this preparation does
+not widen that request or declare a relationship. The two earlier callers
+are unchanged. The third caller selects two reference families with the
+same pinned full pipeline and standard profile. Subsequent Palomar stages
+remain separate.

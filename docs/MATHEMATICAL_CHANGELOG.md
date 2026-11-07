@@ -9,9 +9,10 @@ zero rates, the canonical product law and measurable event factorization
 are covered. The original arithmetic comparison and all 167 numbered
 statements are preserved. The full replay passed 18,597 build jobs, 19,709 theorem axiom checks and
 19,854 distinct references, all actual exits 0. The clarification is integrated in the revised
-companion appendix, with all 167 PDF pages rebuilt and reviewed. Sixteen registry
-families with 64 selections remain locally qualified; no registration is
-claimed.
+companion appendix, with all 167 PDF pages rebuilt and reviewed. Seventeen registry
+families with 68 selections are locally qualified; their project extension
+passed 18,599 build jobs and 19,721 theorem axiom checks at source 07894e254afa070ceef1cb62470f917d68615408.
+No registration is claimed.
 
 Historical checkpoint P1-MATH-0995: Two actual reference coordinates are
 independent exactly when their shared Poisson intensity is zero. For pairs,

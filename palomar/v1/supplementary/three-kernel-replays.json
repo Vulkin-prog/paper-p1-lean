@@ -285,11 +285,30 @@
       "log_path": "palomar/v1/supplementary/positional_field-three-kernels.log.gz",
       "log_sha256": "79d2e724ecff6502b689d9c8518c2ceeac30fd8a109df7dd0414e26fe973246d",
       "compressed_log_sha256": "4b2885770474342356f86e3c36c4ff5319a6b3e93e239190ce51047c5846a983"
+    },
+    {
+      "family": "poisson_reference",
+      "source_commit": "07894e254afa070ceef1cb62470f917d68615408",
+      "selected_declarations": [
+        "PaperP1Registry.PoissonReference.exact_marginals",
+        "PaperP1Registry.PoissonReference.covariance_matrix",
+        "PaperP1Registry.PoissonReference.pair_independence",
+        "PaperP1Registry.PoissonReference.block_dependency"
+      ],
+      "submission_configuration_sha256": "15666cb723fad4a9431e598a6da88dca6b13393fa3925ae2c9129f7434ec0377",
+      "derived_configuration_sha256": "32b13ad0bd6664a509cb5ae6b00a72d0e476b10c723820037e418046242966fc",
+      "actual_comparator_exit": 0,
+      "all_three_kernels_accepted": true,
+      "con_ron_accepted_declarations": 44770,
+      "log_path": "palomar/v1/supplementary/poisson_reference-three-kernels.log.gz",
+      "log_sha256": "b6a7c18e9348e8d1f65c79c60fed048b09639fa93e2ef79b65c7cc769f6624ba",
+      "compressed_log_sha256": "e89f79c67f2a93313f17322fb07ca6403904640b18a879a75d1c79ae59ffdd75"
     }
   ],
-  "updated_at": "2026-11-07T07:16:48.850811+00:00",
+  "updated_at": "2026-11-07T08:28:06.002001+00:00",
   "schema_version": 1,
   "source_commits": [
+    "07894e254afa070ceef1cb62470f917d68615408",
     "08fd135021794dcb5a8b902ddbea109dfbd47c5d",
     "0a9d3e68a8af39b6ea1ce725027f72ca5f10e8c4",
     "1f25a899d04ff2bac781747b2e7fe5cef42e6c7c",

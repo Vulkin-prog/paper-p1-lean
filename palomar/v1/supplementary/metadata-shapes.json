@@ -1,5 +1,5 @@
 {
-  "source_commit": "6a1b83ed81beb61671c2199ffd5272bc36d612d5",
+  "source_commit": "07894e254afa070ceef1cb62470f917d68615408",
   "validator_commit": "14aa8d6b3c2f14a8540605e37144560b9a00e7e7",
   "community_schema_sha256": "25ff6b25ca4511635aff4443cf20480c15e59dddf19591c730950b442ea54fce",
   "files": [
@@ -63,6 +63,13 @@
       "family": "moment_obstruction",
       "path": "palomar/v1/moment_obstruction/formalization.yaml",
       "sha256": "65fae7ff6c22cbe19b40726ed8880dff13f7c5c07fb808d0062df3692661abaf",
+      "community_v04_schema_passed": true,
+      "palomar_metadata_minimum_passed": true
+    },
+    {
+      "family": "poisson_reference",
+      "path": "palomar/v1/poisson_reference/formalization.yaml",
+      "sha256": "31572a0e88357f0ec9b7fe46d3d0d83f890dbd9bd3b0eee2d88999a849696f16",
       "community_v04_schema_passed": true,
       "palomar_metadata_minimum_passed": true
     },

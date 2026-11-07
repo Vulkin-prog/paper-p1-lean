@@ -95,15 +95,15 @@ then invokes Lean's own axiom report for each declaration. Only `propext`,
 Standalone registry Challenges have only the deliberate selected statement
 holes and are never imported by the proof development or its audit.
 
-The latest complete project replay with all sixteen candidate families passed
-**18,597 build jobs** and **19,709 theorem axiom checks**. Each mathematical
+The latest complete project replay with all seventeen candidate families passed
+**18,599 build jobs** and **19,721 theorem axiom checks**. Each mathematical
 checkpoint and registry replay records its own exact source commit and scope.
 The [evidence checker](scripts/check_registry_evidence.py) validates every
 preserved receipt against its historical inventory and current proof imports.
 
 ## Palomar preparation
 
-Sixteen selected families have passed local statement comparison and both Lean and
+Seventeen selected families have passed local statement comparison and both Lean and
 NanoDa, with bubblewrap isolation enabled:
 
 | Family | Selected declarations | Local evidence |
@@ -124,8 +124,9 @@ NanoDa, with bubblewrap isolation enabled:
 | Uniform local arithmetic rigidity and relative-sign independence | 5 | [Receipt](palomar/v1/local_rigidity/qualification.json) |
 | Effective valuation cylinders and affine-rank moment bounds | 4 | [Receipt](palomar/v1/prime_cylinders/qualification.json) |
 | Convergent original-grid positional Poisson field | 3 | [Receipt](palomar/v1/positional_field/qualification.json) |
+| Exact finite-product Poisson reference structure | 4 | [Receipt](palomar/v1/poisson_reference/qualification.json) |
 
-All 64 selected declarations also passed supplementary replays with verified
+All 68 selected declarations also passed supplementary replays with verified
 con-ron, Lean and NanoDa. The [source-bound reports](palomar/v1/supplementary/README.md)
 preserve the actual logs, binary identities and positive/ill-typed controls.
 
@@ -180,16 +181,13 @@ Every factorial test is integrable with expectation p_x^j. The original
 arithmetic approximation retains its exponent and fixed-degree scope. Its complete replay passed; [the source-bound logs](docs/validation/checkpoint-0993/validation.json) preserve all three checks. The clarification is integrated in the revised companion appendix.
 
 
-A seventeenth [Poisson-reference candidate](palomar/v1/poisson_reference/formalization.yaml)
-packages four exact statements for the explicit finite product reference law:
-Poisson marginals and all integrable factorial tests; the complete pair
-covariance matrix; natural-count pair independence; and genuine full-block
-independence exactly when no positive-rate edge crosses between disjoint
-blocks. Its eight exact bridges and four selected proofs passed the direct
-axiom audit and all six local checkers on immutable standalone exports.
-Frozen-root qualification is pending. This packages checkpoints 993--996
-and adds no mathematical-change entry. The two earlier workflow callers
-remain unchanged; the third positional caller selects the two reference
-families. The pending human-relationship question for the original fifteen
-configurations at source 0a9d3e68a8af39b6ea1ce725027f72ca5f10e8c4 retains
-its exact scope. No complete Palomar workflow or registration is claimed.
+The Poisson-reference family packages four exact finite-product statements:
+all integrable factorial tests and marginal laws, the full covariance matrix,
+sharp natural-count independence, and the complete dependency-graph property
+for disjoint blocks. Its [frozen-root qualification](palomar/v1/poisson_reference/qualification.json)
+and verified con-ron replay passed. The [standalone six-checker report](palomar/v1/supplementary/poisson-reference-draft-checks.json)
+preserves the exact earlier proof base and byte-identical source files.
+This packages checkpoints 993--996 without a new mathematical-change entry.
+The two earlier workflow callers and the pending human-relationship question
+for fifteen configurations at source 0a9d3e68a8af39b6ea1ce725027f72ca5f10e8c4
+retain their exact scope; the third caller selects two reference families.
