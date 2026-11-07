@@ -1,0 +1,16 @@
+{
+  "challenge_module": "ChallengeP1ExponentialDivergence",
+  "solution_module": "SolutionP1ExponentialDivergence",
+  "theorem_names": [
+    "PaperP1Registry.ExponentialDivergence.finite_cylinder_lower",
+    "PaperP1Registry.ExponentialDivergence.prime_threshold_bounds",
+    "PaperP1Registry.ExponentialDivergence.odd_prime_liminf",
+    "PaperP1Registry.ExponentialDivergence.logarithms_and_moments_diverge"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "enable_nanoda": true
+}

@@ -39,6 +39,10 @@ The finite-affine family has four standalone statements accepted at its frozen
 root source by all six local checkers. The original
 seven-family caller remains unchanged.
 
+The additional exponential-moment candidate has four explicit literal-model
+statements and complete proofs. Its standalone exports passed six checkers;
+frozen-root qualification is pending. The original t>2 scope is preserved.
+
 Run the local preparation checks with:
 
 ```sh
@@ -78,7 +82,7 @@ inventory. The full project snapshot stays below the 500 MiB source limit.
 The [original workflow caller](../.github/workflows/palomar-preflight.yml) selects
 exactly seven families; the [additional caller](../.github/workflows/palomar-preflight-additional.yml)
 selects factorial cumulants, the moment obstruction, dependent expansions and
-integral-curve counts and finite affine spectra. Both are prepared.
+integral-curve counts, finite affine spectra and exponential-moment divergence. Both are prepared.
 Both its `uses` revision and `pipeline_commit` are fixed to the exact same
 PalomarSubmission SHA above. It uses `mode: full`, the required external
 `palomar-standard-v1` profile, read-only repository permissions and one family

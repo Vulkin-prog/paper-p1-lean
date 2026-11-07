@@ -95,6 +95,13 @@ moreLeanArgs = ["-DwarningAsError=false"]
 [[lean_lib]]
 name = "SolutionP1AffineSpectra"
 
+[[lean_lib]]
+name = "ChallengeP1ExponentialDivergence"
+moreLeanArgs = ["-DwarningAsError=false"]
+
+[[lean_lib]]
+name = "SolutionP1ExponentialDivergence"
+
 [[require]]
 name = "mathlib"
 git = "https://github.com/leanprover-community/mathlib4.git"

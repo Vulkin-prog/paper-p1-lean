@@ -1,6 +1,6 @@
 # P1 candidate registration interfaces
 
-All twelve independently meaningful families below have passed local statement
+Of the thirteen prepared families below, twelve have passed local statement
 comparison and both Lean and NanoDa with bubblewrap isolation enabled. They
 select **48 declarations**, separately from the complete **167-result revised
 manuscript correspondence**. Their immutable local receipts and original
@@ -27,6 +27,7 @@ Two larger representative families also passed the three optional checkers.
 | Exact expansions for dependent indicator counts | 4 | [configuration](../../comparator/p1_dependent_expansion.json) | [metadata](dependent_expansion/formalization.yaml), [passed local comparison and both kernels](dependent_expansion/qualification.json) |
 | Degree-uniform integer points on integral curves | 3 | [configuration](../../comparator/p1_integral_curve_count.json) | [metadata](integral_curve_count/formalization.yaml), [passed local comparison and both kernels](integral_curve_count/qualification.json) |
 | Exact finite affine spectra and canonical factorization | 4 | [configuration](../../comparator/p1_affine_spectra.json) | [metadata](affine_spectra/formalization.yaml), [passed local comparison and both kernels](affine_spectra/qualification.json) |
+| Actual exponential-moment divergence for multiplicative starts | 4 | [configuration](../../comparator/p1_exponential_divergence.json) | [metadata](exponential_divergence/formalization.yaml); frozen-root qualification pending |
 
 Each configuration names its standalone Mathlib-only Challenge and complete
 Solution. Only the exact selected Challenge statements have deliberate proof
@@ -51,7 +52,7 @@ registration are separate stages. No submission or registry entry is claimed.
 
 The separate [additional-family workflow](../../.github/workflows/palomar-preflight-additional.yml)
 selects factorial cumulants, the moment obstruction, dependent expansions and
-integral-curve counts and finite affine spectra. The original
+integral-curve counts, finite affine spectra and exponential-moment divergence. The original
 caller continues to select exactly its seven original families. Both require
 an exact source commit and the confirmed supported human relationship.
 

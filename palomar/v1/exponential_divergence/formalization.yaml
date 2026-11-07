@@ -1,0 +1,86 @@
+version: v0.4
+project:
+  name: Actual exponential-moment divergence for multiplicative run starts
+  description: The actual independent fair prime-sign law, prime-factor parity values, full dyadic run-start
+    count and positive run-start count are explicit. Their exponential integrands are integrable for every
+    real parameter. For every prime q at most N and t at least zero, the one-sided cylinder gives the
+    stronger finite lower bound with start budget N/q-N/q^2-3 and exact prime-counting cost. On N_q=2^(q-1),
+    L_q=q-1, both scaled logarithms have liminf at least (t-2)log(2) for each fixed t>2, along a proved
+    nontrivial odd-prime filter. One threshold precedes all prime indices. Both logarithms and both moments
+    diverge above each real level at nominal mean exactly one.
+  authors:
+  - Brice Pouly
+  author_identifiers:
+  - name: Brice Pouly
+    github: Vulkin-prog
+    orcid: 0009-0008-8491-2467
+  responsible_maintainers:
+  - Brice Pouly
+  license: Apache-2.0
+repository:
+  role: substantive-development
+classification:
+  arxiv:
+  - math.PR
+  - math.NT
+sources:
+- title: Sharp Poisson approximation and second-order correction for long multiplicative runs, version
+    1.7 draft
+  authors:
+  - Brice Pouly
+  id: https://github.com/Vulkin-prog/paper-p1-lean
+  type: paper
+  relationship: formalizes
+  location: 'Companion proposition T19.7: actual positive and total exponential moments, explicit prime
+    thresholds, literal extended-real liminf and divergence. The finite cylinder estimate also incorporates
+    checked mathematical improvement P1-MATH-0986 in the unnumbered version 1.7 formalization appendix.'
+  note: The t>2 domain, odd-prime scale and (t-2)log(2) lower coefficient are retained. Starts include
+    the preceding opposite sign and a constant word of length at least L, with no prescribed right endpoint.
+    These are actual prime-sign expectations; no abstract moment-generating function, target bound, prime
+    number theorem or integrability hypothesis is assumed.
+related_formalizations:
+- id: https://github.com/Vulkin-prog/paper-c-lean
+  relationship: adapts
+  note: The prime-sign measure, prime-factor parity and run-start foundations were adapted through P1
+    from Paper C commit b9fa9ba490f201b408a302a86f1594ee620b228b, Apache-2.0, and rebuilt under Lean v4.36.0-rc2.
+    The one-sided finite cylinder and original exponential-moment divergence proof are in the substantive
+    P1 development. Source headers and docs/PAPER_C_REUSE.md preserve exact attribution.
+automation:
+  methods:
+  - method: agent
+    framework: Codex
+    models:
+    - OpenAI Codex agents
+    prompting_notes: Expose the original independent prime-sign law and actual positive/total start counts
+      in Mathlib-only definitions. Prove finite-cylinder integrability before comparing actual Bochner
+      integrals. Retain the exact prime-counting cost, nontrivial prime filter, epsilon quantifier order,
+      and original t>2 domain. Combine logarithm and moment thresholds and prove the nominal mean equals
+      one on the original prime scale.
+    tool_setup: Lean proof construction, explicit Mathlib-only source definitions, exact finite-cylinder
+      integration bridges, original prime-scale divergence proofs and full axiom audits.
+  notes: Agent assistance is not independent human peer review.
+review:
+  status: agent-reviewed
+  notes: 'Four explicit standalone statements and their complete Solution compile under Lean v4.36.0-rc2
+    with proof warnings as errors. All 16 theorem and bridge axioms pass the direct audit, allowing only
+    the three standard kernel axioms. Both actual modules were exported for independent comparison. Frozen-root
+    qualification and the complete Palomar workflow are separate stages. Only the selected Challenge theorem
+    statements have deliberate holes. Manual exports additionally passed exact statement comparison and
+    all six installed checkers: Lean default, Lean paranoid, lean4lean, NanoDa, verified con-leche and
+    verified con-ron with two jobs, with isolation enabled.'
+status:
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms:
+  - propext
+  - Quot.sound
+  - Classical.choice
+  scope: 'Four selected declarations: integrable actual exponential moments and the sharper finite-cylinder
+    bound; simultaneous prime-index epsilon thresholds; literal extended-real liminf along a nontrivial
+    odd-prime filter; simultaneous divergence of both logarithms and moments at nominal mean one. No registration
+    is claimed.'
+fidelity:
+  divergences: The improved finite count N/q-N/q^2-3 removes an unnecessary right-boundary condition from
+    the earlier valid cylinder construction. The sufficient cutoff 2N+q-1 is used, one below the printed
+    2N+q; its exact charge and proved asymptotic are explicit. The original odd-prime scale and t>2 domain
+    are unchanged. No threshold sharpness or assertion for every positive t is claimed.

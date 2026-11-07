@@ -109,6 +109,8 @@ preserve the actual logs, binary identities and positive/ill-typed controls.
 
 The finite-affine family also passed [all six available local checkers](palomar/v1/supplementary/affine-spectra-six-kernels.json). Two larger representative families passed the additional optional checkers as well; each report identifies its exact source.
 
+A further [exponential-moment candidate](palomar/v1/exponential_divergence/formalization.yaml) has four literal-model statements, complete proofs and a successful six-checker replay on standalone exports. Its frozen-root qualification is pending.
+
 The [candidate interfaces](palomar/v1/README.md) link each standalone Mathlib-only
 Challenge, complete Solution, Comparator configuration, metadata and preserved
 logs. Selected declaration counts describe registration candidates, separately
