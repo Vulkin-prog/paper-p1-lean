@@ -1,0 +1,10 @@
+'PaperP1.FixedArityHomogeneousMass.point_le_nominal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.FixedArityHomogeneousMass.mass_le_nominal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.FixedArityHomogeneousMass.uniform_nominal_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.FixedArityHomogeneousMass.finite_original_domination' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperP1.FixedArityHomogeneousMass.uniform_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.FixedArityHomogeneousMass.uniform_dense_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.FixedArityHomogeneousMass.uniform_all_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+Exported compiled scope types for 7 declarations

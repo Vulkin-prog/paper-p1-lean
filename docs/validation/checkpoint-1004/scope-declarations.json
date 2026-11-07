@@ -1,0 +1,9 @@
+[
+  "PaperP1.FixedArityHomogeneousMass.point_le_nominal",
+  "PaperP1.FixedArityHomogeneousMass.mass_le_nominal",
+  "PaperP1.FixedArityHomogeneousMass.uniform_nominal_cap",
+  "PaperP1.FixedArityHomogeneousMass.finite_original_domination",
+  "PaperP1.FixedArityHomogeneousMass.uniform_mass",
+  "PaperP1.FixedArityHomogeneousMass.uniform_dense_mass",
+  "PaperP1.FixedArityHomogeneousMass.uniform_all_bounds"
+]

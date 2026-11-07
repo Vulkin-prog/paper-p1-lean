@@ -1,10 +1,10 @@
 {
-  "validated_source_commit": "3df7615af2aa6a2a2bc6856bd4203c401d0434de",
+  "validated_source_commit": "7bfc953cd6092eebfbae5f24aeb72b7180693537",
   "scope": "All substantive/root Lean sources, compiler/dependency pins and Lake build configuration at the complete replay source.",
   "files": [
     {
       "path": "Audit.lean",
-      "sha256": "ee1805b6ba0d29b7d5ffc2fa8669308cdf1d5cf8a3904d47c6f04f57409b7db9"
+      "sha256": "8f75cf95d851f2e32fc8942dd2807ec313c553441f28e40a38b1253a01e64db1"
     },
     {
       "path": "ChallengeP1AffineSpectra.lean",
@@ -100,7 +100,7 @@
     },
     {
       "path": "PaperP1.lean",
-      "sha256": "677cf70d7598c1ab2dab95d21aafebd4001b81030b651d9b8b2e45d0511d2739"
+      "sha256": "c633f269fe7c1dc3290cb945a919cae38f4ed05b422410e517112f54211c561b"
     },
     {
       "path": "PaperP1/Affine/BinaryMassLattice.lean",
@@ -10805,6 +10805,10 @@
     {
       "path": "PaperP1/Asymptotics/FixedAnchorDegreeBudget.lean",
       "sha256": "a15d2606a73a7c785a5797ac2a94450a0d198c6e05ce1786b8000c5e4dcee48b"
+    },
+    {
+      "path": "PaperP1/Asymptotics/FixedArityHomogeneousMass.lean",
+      "sha256": "4aeffaf8b11410291c94f6386051604cef7baa5a5407c768979a37b83be274e9"
     },
     {
       "path": "PaperP1/Asymptotics/FixedChannelAlignedTargetMass.lean",

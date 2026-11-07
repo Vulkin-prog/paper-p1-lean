@@ -8,11 +8,12 @@
   "note": "The parent added the exact uniform individual-bound interface, verified seven changed numbered blocks and 18 auxiliary claims against compiled types, replayed the full proof project and inspected the rendered PDFs. No scientific source edits after the frozen editorial delivery.",
   "palomar_actions": false,
   "latest_proof_replay": {
-    "source_commit": "3df7615af2aa6a2a2bc6856bd4203c401d0434de",
+    "source_commit": "7bfc953cd6092eebfbae5f24aeb72b7180693537",
     "actual_exit_code": 0,
     "compiled_types_replayed": 528,
     "compiled_propositions_reaudited": 485,
     "all_prior_compiled_type_bytes_identical": true,
+    "base_compiled_types": "docs/validation/manuscript-v1.8/compiled-types.json",
     "replay_validation": {
       "actual_exit_code": 0,
       "compiled_types": 528,
@@ -28,7 +29,13 @@
       "compiled_types_sha256": "3320385e4f340b28fc10a8e9253e45c8aba8246034f779b0d9608d243d8c3aeb",
       "log_sha256": "c84f0beb7071cb9aaff0ef3dbdfe88662575b663ac7b2c1aa8989b9063bc4ea7"
     },
-    "validation_record": "docs/validation/checkpoint-1003/validation.json",
-    "manuscript_sources_and_pdfs_unchanged": true
+    "validation_record": "docs/validation/checkpoint-1004/validation.json",
+    "manuscript_sources_and_pdfs_unchanged": true,
+    "expanded_compiled_types": {
+      "path": "docs/validation/checkpoint-1004/manuscript-scope/compiled-types.json",
+      "sha256": "bab2f3b8995cde0362afa60bf27db8861e3d8ddf6d8823c38dc7c811e3c22400",
+      "count": 535,
+      "actual_exit_code": 0
+    }
   }
 }

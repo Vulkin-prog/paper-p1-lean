@@ -1,0 +1,93 @@
+{
+  "proof_source_commit": "7bfc953cd6092eebfbae5f24aeb72b7180693537",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "endpoint_scope",
+      "command": [
+        "python3",
+        "scripts/check_manuscript_endpoints.py"
+      ],
+      "actual_exit_code": 0,
+      "output": "Verified 138 manifest entries and 167 numbered results.\nScope: source integrity and inventory only, not mathematical proof certification.\nVerified 48 revised TeX source hashes and 167 revised statements.\nExactly two original statements corrected; revised proofs: 167/167.\nOriginal v1.6 identities and false-original statuses remain preserved.\nVerified 48 v1.8 source hashes and all 167 numbered results.\nExplicit comparisons: 7 strengthened/reworded statements; 167/167 proved.\nAll 18 unnumbered scientific claims have source-bound compiled proof correspondence.\nBoth earlier manuscript versions and the two false-original statuses are preserved.\nScope: source identity and recorded correspondence; hashes alone are not a semantic proof.\nVerified all 167 source-bound proof-entry bundles: 73 article and 94 companion results.\nActual compiled interfaces: 261 theorems; 3 separate mathematical definitions.\nDirect independent comparison records cover 167 labels across the reports' stated source snapshots.\nScope: source/type identity and recorded AI-assisted clause review; not a machine proof of TeX-to-Lean translation, human review or Palomar registration.\n"
+    },
+    {
+      "name": "source_rules",
+      "command": [
+        "python3",
+        "scripts/check_sources.py"
+      ],
+      "actual_exit_code": 0,
+      "output": "Verified 138 manifest entries and 167 numbered results.\nScope: source integrity and inventory only, not mathematical proof certification.\n"
+    },
+    {
+      "name": "audit_inventory",
+      "command": [
+        "python3",
+        "scripts/update_audit.py",
+        "--check"
+      ],
+      "actual_exit_code": 0,
+      "output": "Axiom audit covers all 19991 project theorems and lemmas.\n"
+    },
+    {
+      "name": "palomar_source_limits",
+      "command": [
+        "python3",
+        "scripts/check_palomar_sources.py"
+      ],
+      "actual_exit_code": 0,
+      "output": "Local Palomar source scan passed for 4737 Lean files.\nLongest source: PaperP1.lean (4948 lines).\nScope: source regularity, module headers and line limits; full Palomar preflight remains separate.\n"
+    },
+    {
+      "name": "registry_candidates",
+      "command": [
+        "python3",
+        "scripts/check_registry_candidates.py"
+      ],
+      "actual_exit_code": 0,
+      "output": "component comparator/p1_affine_spectra.json: 4 explicit statement holes, complete Solution, Mathlib-only Challenge.\ncomponent comparator/p1_asymmetric_profiles.json: 3 explicit statement holes, complete Solution, Mathlib-only Challenge.\ncomponent comparator/p1_conditioning.json: 4 explicit statement holes, complete Solution, Mathlib-only Challenge.\ncomponent comparator/p1_dependent_expansion.json: 4 explicit statement holes, complete Solution, Mathlib-only Challenge.\ncomponent comparator/p1_exponential_divergence.json: 4 explicit statement holes, complete Solution, Mathlib-only Challenge.\ncomponent comparator/p1_factorial_cumulants.json: 5 explicit statement holes, complete Solution, Mathlib-only Challenge.\ncomponent comparator/p1_integral_curve_count.json: 3 explicit statement holes, complete Solution, Mathlib-only Challenge.\ncomponent comparator/p1_local_rigidity.json: 5 explicit statement holes, complete Solution, Mathlib-only Challenge.\ncomponent comparator/p1_moment_obstruction.json: 5 explicit statement holes, complete Solution, Mathlib-only Challenge.\ncomponent comparator/p1_poisson_reference.json: 4 explicit statement holes, complete Solution, Mathlib-only Challenge.\ncomponent comparator/p1_poisson_scales.json: 5 explicit statement holes, complete Solution, Mathlib-only Challenge.\ncomponent comparator/p1_positional_field.json: 3 explicit statement holes, complete Solution, Mathlib-only Challenge.\ncomponent comparator/p1_prime_cylinders.json: 4 explicit statement holes, complete Solution, Mathlib-only Challenge.\ncomponent comparator/p1_private_obstruction.json: 4 explicit statement holes, complete Solution, Mathlib-only Challenge.\ncomponent comparator/p1_quadratic_approximation.json: 4 explicit statement holes, complete Solution, Mathlib-only Challenge.\ncomponent comparator/p1_quadratic_kernels.json: 4 explicit statement holes, complete Solution, Mathlib-only Challenge.\ncomponent comparator/p1_smooth_windows.json: 3 explicit statement holes, complete Solution, Mathlib-only Challenge.\nregistration comparator/registrations/p1_arithmetic_geometry.json: 12 explicit statement holes, complete Solution, Mathlib-only Challenge.\nregistration comparator/registrations/p1_profiles_smooth.json: 6 explicit statement holes, complete Solution, Mathlib-only Challenge.\nregistration comparator/registrations/p1_affine_conditioning.json: 12 explicit statement holes, complete Solution, Mathlib-only Challenge.\nregistration comparator/registrations/p1_cumulants_obstructions.json: 14 explicit statement holes, complete Solution, Mathlib-only Challenge.\nregistration comparator/registrations/p1_poisson_fields.json: 16 explicit statement holes, complete Solution, Mathlib-only Challenge.\nregistration comparator/registrations/p1_exponential_cylinders.json: 8 explicit statement holes, complete Solution, Mathlib-only Challenge.\nPrepared 6 planned registrations and 68 selected declarations.\nPreserved 17 separately verified components and their 68 original selections.\nSubmission policy: one complete registration cycle at a time.\nScope: preparation checks; no Comparator or Palomar verification is inferred.\n"
+    },
+    {
+      "name": "six_registration_bijection",
+      "command": [
+        "python3",
+        "scripts/check_registry_consolidation.py",
+        "--strict"
+      ],
+      "actual_exit_code": 0,
+      "output": "arithmetic_geometry: exact models, statements, complete proof bodies and source mapping preserved.\nprofiles_smooth: exact models, statements, complete proof bodies and source mapping preserved.\naffine_conditioning: exact models, statements, complete proof bodies and source mapping preserved.\ncumulants_obstructions: exact models, statements, complete proof bodies and source mapping preserved.\npoisson_fields: exact models, statements, complete proof bodies and source mapping preserved.\nexponential_cylinders: exact models, statements, complete proof bodies and source mapping preserved.\nAll 68 selections from 17 original components are preserved in exactly six registrations.\n"
+    },
+    {
+      "name": "historical_receipts",
+      "command": [
+        "python3",
+        "scripts/check_registry_evidence.py",
+        "--require-all"
+      ],
+      "actual_exit_code": 0,
+      "output": "affine_spectra: source identities, preserved logs and 4 selections verified.\nasymmetric_profiles: source identities, preserved logs and 3 selections verified.\nconditioning: source identities, preserved logs and 4 selections verified.\ndependent_expansion: source identities, preserved logs and 4 selections verified.\nexponential_divergence: source identities, preserved logs and 4 selections verified.\nfactorial_cumulants: source identities, preserved logs and 5 selections verified.\nintegral_curve_count: source identities, preserved logs and 3 selections verified.\nlocal_rigidity: source identities, preserved logs and 5 selections verified.\nmoment_obstruction: source identities, preserved logs and 5 selections verified.\npoisson_reference: source identities, preserved logs and 4 selections verified.\npoisson_scales: source identities, preserved logs and 5 selections verified.\npositional_field: source identities, preserved logs and 3 selections verified.\nprime_cylinders: source identities, preserved logs and 4 selections verified.\nprivate_obstruction: source identities, preserved logs and 4 selections verified.\nquadratic_approximation: source identities, preserved logs and 4 selections verified.\nquadratic_kernels: source identities, preserved logs and 4 selections verified.\nsmooth_windows: source identities, preserved logs and 3 selections verified.\naffine_conditioning: source identities, preserved logs and 12 selections verified.\narithmetic_geometry: source identities, preserved logs and 12 selections verified.\ncumulants_obstructions: source identities, preserved logs and 14 selections verified.\nexponential_cylinders: source identities, preserved logs and 8 selections verified.\npoisson_fields: source identities, preserved logs and 16 selections verified.\nprofiles_smooth: source identities, preserved logs and 6 selections verified.\nVerified 6/6 local registration receipts and 68 selected declarations.\nVerified 17/17 local component receipts and 68 selected declarations.\nOnly the six consolidated registrations are planned for submission; the seventeen component receipts remain proof evidence.\nScope: local evidence integrity; complete Palomar workflow and registration remain separate.\n"
+    },
+    {
+      "name": "whitespace",
+      "command": [
+        "git",
+        "diff",
+        "--check",
+        "8fd105a8468445100b7286bd6b51fb7cd9aa7b21"
+      ],
+      "actual_exit_code": 0,
+      "output": ""
+    },
+    {
+      "name": "ubuntu_disk",
+      "command": [
+        "python3",
+        "scripts/check_disk.py"
+      ],
+      "actual_exit_code": 0,
+      "output": "Available: 48.81 GiB; repository on Ubuntu root device: True\n"
+    }
+  ],
+  "scope": "Local source, recorded scope, registry-preparation integrity and Ubuntu disk checks. No Palomar workflow, intake or registration was launched."
+}

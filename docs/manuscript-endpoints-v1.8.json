@@ -5,19 +5,19 @@
     "path": "docs/manuscript-results-v1.8.json",
     "sha256": "e01eb2ce4ae72ede8c19d158e45741292d278e8328c26e4d9e7723a5292812b8"
   },
-  "proof_source_commit": "3df7615af2aa6a2a2bc6856bd4203c401d0434de",
+  "proof_source_commit": "7bfc953cd6092eebfbae5f24aeb72b7180693537",
   "proof_source_manifest": {
     "path": "docs/validation/manuscript-v1.8/proof-source-manifest.json",
-    "sha256": "bb66f1a6ac41cf07a491b9cbc75fbcb4e166930962557b1a25bb44e8be493f95"
+    "sha256": "d9813f6bf5d5e756eaaa30d03c42b481742a3c4b5200e70380513ae81f5437ad"
   },
-  "proof_validation": "docs/validation/checkpoint-1003/validation.json",
+  "proof_validation": "docs/validation/checkpoint-1004/validation.json",
   "compiled_scope": {
     "path": "docs/validation/manuscript-endpoints-v1.8/compiled/compiled-types.json",
     "sha256": "6ac3e4eb3a3bc5519edb3903cdf7770e19b01fee2f16faf3dceba8fb4b023c77",
     "validation": "docs/validation/manuscript-endpoints-v1.8/compiled/compiled-types-validation.json",
     "latest_replay": {
-      "path": "docs/validation/checkpoint-1003/endpoint-replay.json",
-      "sha256": "64fba47a640c6f150ecf8234c2f21d4d2b8ed4a756dfdd5d433bf4f697701000"
+      "path": "docs/validation/checkpoint-1004/endpoint-replay.json",
+      "sha256": "ae6f60880f5ad3f8489766d52c8bbd53980119064f79d98d0b896eb9d4b7ad68"
     }
   },
   "review_records": [
@@ -44,6 +44,10 @@
     {
       "path": "docs/reviews/2026-11-07/irregular-examples.json",
       "sha256": "540583bd07281e490950043307f667ec0232f4c232bb6e1a53f5438a3fe31e69"
+    },
+    {
+      "path": "docs/reviews/2026-11-07/fixed-arity-envelope.json",
+      "sha256": "befad71bf99a8b443efa6997eb7c8d55b521429320737b4e3a43dc28fd8ef078"
     }
   ],
   "review_partition": {
@@ -7066,5 +7070,13 @@
   "supplemental_example_review": {
     "path": "docs/reviews/2026-11-07/irregular-examples.json",
     "sha256": "540583bd07281e490950043307f667ec0232f4c232bb6e1a53f5438a3fe31e69"
+  },
+  "supplemental_example_replay": {
+    "path": "docs/validation/checkpoint-1004/examples-replay.json",
+    "sha256": "41ee8fda5c06f3afd82e0425f6bfb1025da61ac349fccc7530d9e1f16d3dba77"
+  },
+  "supplemental_fixed_arity_review": {
+    "path": "docs/reviews/2026-11-07/fixed-arity-envelope.json",
+    "sha256": "befad71bf99a8b443efa6997eb7c8d55b521429320737b4e3a43dc28fd8ef078"
   }
 }

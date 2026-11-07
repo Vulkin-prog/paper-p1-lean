@@ -1,0 +1,52 @@
+{
+  "checkpoint": "P1-MATH-1004",
+  "source_commit": "7bfc953cd6092eebfbae5f24aeb72b7180693537",
+  "status": "passed",
+  "full_build_jobs": 18629,
+  "audited_theorems": 19991,
+  "substantive_theorems": 19563,
+  "preserved_component_solution_theorems": 214,
+  "consolidated_solution_theorems": 214,
+  "distinct_checked_references": 19914,
+  "actual_process_exit_codes": {
+    "build": 0,
+    "audit": 0,
+    "references": 0
+  },
+  "toolchain": "leanprover/lean4:v4.36.0-rc2",
+  "compiler_commit": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+  "mathlib_commit": "9d581dfff2e41de989072ea63abf3daf69311520",
+  "permitted_kernel_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "logs": [
+    {
+      "kind": "build",
+      "path": "docs/validation/checkpoint-1004/build.log.gz",
+      "sha256_gzip": "c39d591c9d52900f199718c29732f9cbd98e043f356fd57f12e39a6292b5596b"
+    },
+    {
+      "kind": "audit",
+      "path": "docs/validation/checkpoint-1004/audit.log.gz",
+      "sha256_gzip": "087107c83764c57c0f9e3aeac15aa0feeb50203146675d16c36e2c6c4c26a696"
+    },
+    {
+      "kind": "references",
+      "path": "docs/validation/checkpoint-1004/references.log.gz",
+      "sha256_gzip": "9caacb06b547c53448f7b96b79b61df9c44e1f0e314847cdd8d1c43b41126d3a"
+    }
+  ],
+  "compiled_scope": {
+    "path": "docs/validation/checkpoint-1004/scope/compiled-types.json",
+    "sha256": "f71351d931839f759ce5ee83c10bb2614c6341ba834af1bc72813547ac34d7c4",
+    "actual_exit_code": 0,
+    "replay_source_commit": "7bfc953cd6092eebfbae5f24aeb72b7180693537"
+  },
+  "independent_scope_read": {
+    "path": "docs/reviews/2026-11-07/fixed-arity-envelope.json",
+    "sha256": "befad71bf99a8b443efa6997eb7c8d55b521429320737b4e3a43dc28fd8ef078"
+  },
+  "scope": "Seven fixed-arity interfaces: actual homogeneous mass, common domination of original heterogeneous rank weights, joint probabilities and absolute centered activities, dense hosts and one threshold. Fixed r>=3 and positive eta,epsilon precede N0. No new exponent, growing-order assertion, regularity, compatibility or positive original marginal assumption. All preserved manuscripts,167 labels and six registration scopes are unchanged."
+}

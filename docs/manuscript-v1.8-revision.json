@@ -2,7 +2,7 @@
   "schema_version": 1,
   "version": "P1 V1.8 working draft",
   "baseline_commit": "2553ce56f7cc6bdc10194801c3d926b72b587dd1",
-  "proof_source_commit": "3df7615af2aa6a2a2bc6856bd4203c401d0434de",
+  "proof_source_commit": "7bfc953cd6092eebfbae5f24aeb72b7180693537",
   "numbered_statement_changes": [
     {
       "label": "p1:arith:hosts",
@@ -253,14 +253,24 @@
       "hypotheses_and_quantifiers": "Poids exacts∏p_x2^ρ_rel ; ρ_rel≤L ; p_x≤2p. Cible homogène : marginales2^(−d_x)≤2p ; domination par2^r fois le poids nominal. Paramètres fixés avantN0.",
       "proof_endpoints": [
         "PaperP1.DensePrimitiveRankMass.uniform_rank_mass",
-        "PaperP1.SharpPrimitiveMass.uniform_rank_mass"
+        "PaperP1.SharpPrimitiveMass.uniform_rank_mass",
+        "PaperP1.FixedArityHomogeneousMass.uniform_mass",
+        "PaperP1.FixedArityHomogeneousMass.uniform_dense_mass",
+        "PaperP1.FixedArityHomogeneousMass.uniform_all_bounds"
       ],
       "proof_type_sha256": {
         "PaperP1.DensePrimitiveRankMass.uniform_rank_mass": "2d6046dece65fa60d070648d865aa410e5680a2383eb1f2b2d13672e843c4701",
-        "PaperP1.SharpPrimitiveMass.uniform_rank_mass": "34a1bda0d842cab960ad5f455cb98a2b9e7de50bdb16c44e57f1cf7d8f5c8b86"
+        "PaperP1.SharpPrimitiveMass.uniform_rank_mass": "34a1bda0d842cab960ad5f455cb98a2b9e7de50bdb16c44e57f1cf7d8f5c8b86",
+        "PaperP1.FixedArityHomogeneousMass.uniform_mass": "af27a11fc7289a1dfd52e0626ebb44dc3a8c81ed37e1dbfed9395e5c7d56e9e9",
+        "PaperP1.FixedArityHomogeneousMass.uniform_dense_mass": "20eebcbcd75a21c0f222344452b67bd7934ba53a866fd965840a5665b201267a",
+        "PaperP1.FixedArityHomogeneousMass.uniform_all_bounds": "3bfbafa9f8f084b156412f4d1544be7121c97d58368f2d3f78d31f74ebb47798"
       },
       "semantic_alignment_status": "passed",
-      "note": "point_entree_existant_ou_specialisation"
+      "note": "The original exact heterogeneous endpoints are retained. Checkpoint1004 explicitly proves the actual homogeneous clause for every fixed arity, then simultaneously bounds original rank mass, actual joint mass and absolute centered activity. The finite2^r comparison uses homogeneous local masses, including irregular windows with zero original marginal. The frozen source claim and all numbered statements are unchanged.",
+      "additional_interface_review": {
+        "path": "docs/reviews/2026-11-07/fixed-arity-envelope.json",
+        "sha256": "befad71bf99a8b443efa6997eb7c8d55b521429320737b4e3a43dc28fd8ef078"
+      }
     },
     {
       "id": "late_pair_completion",
@@ -502,25 +512,25 @@
     }
   ],
   "compiled_types": {
-    "path": "docs/validation/manuscript-v1.8/compiled-types.json",
-    "sha256": "3320385e4f340b28fc10a8e9253e45c8aba8246034f779b0d9608d243d8c3aeb",
+    "path": "docs/validation/checkpoint-1004/manuscript-scope/compiled-types.json",
+    "sha256": "bab2f3b8995cde0362afa60bf27db8861e3d8ddf6d8823c38dc7c811e3c22400",
     "actual_exit_code": 0,
-    "compiled_types": 528,
-    "propositions_audited": 485,
+    "compiled_types": 535,
+    "propositions_audited": 492,
     "permitted_axioms": [
       "Classical.choice",
       "Quot.sound",
       "propext"
     ],
     "all_propositions_standard_axioms_only": true,
-    "inventory_sha256": "74231413a8324ee7cc29a4e1b3548ca0b73d97019fe71ca2667e311af3cf4dc4",
+    "inventory_sha256": "d7678278d1657e9136f8cd24de55881aefdaf7632cd9c4574a97f9273d855252",
     "diagnostic_module_sha256": "43d8a9072a6b589e63465977b7a3068637c712b23711fb38b857acf374534fd5",
-    "compiled_types_sha256": "3320385e4f340b28fc10a8e9253e45c8aba8246034f779b0d9608d243d8c3aeb",
-    "log_sha256": "c84f0beb7071cb9aaff0ef3dbdfe88662575b663ac7b2c1aa8989b9063bc4ea7"
+    "compiled_types_sha256": "bab2f3b8995cde0362afa60bf27db8861e3d8ddf6d8823c38dc7c811e3c22400",
+    "log_sha256": "ffe61249c6a529c108a53d668302053438698ee8fb93a875f2a5dff1bd7e6060"
   },
   "proof_source_manifest": {
     "path": "docs/validation/manuscript-v1.8/proof-source-manifest.json",
-    "sha256": "bb66f1a6ac41cf07a491b9cbc75fbcb4e166930962557b1a25bb44e8be493f95"
+    "sha256": "d9813f6bf5d5e756eaaa30d03c42b481742a3c4b5200e70380513ae81f5437ad"
   },
   "source_preservation": {
     "v1.6": true,
@@ -556,6 +566,30 @@
       "new_proof_source_commit": "3df7615af2aa6a2a2bc6856bd4203c401d0434de",
       "record": "docs/validation/checkpoint-1003/manuscript-replay.json",
       "manifest_extension": "Includes lakefile.toml in addition to Lean sources and compiler/dependency pins."
+    },
+    {
+      "previous_proof_source_commit": "3df7615af2aa6a2a2bc6856bd4203c401d0434de",
+      "previous_proof_manifest_sha256": "bb66f1a6ac41cf07a491b9cbc75fbcb4e166930962557b1a25bb44e8be493f95",
+      "new_proof_source_commit": "7bfc953cd6092eebfbae5f24aeb72b7180693537",
+      "record": "docs/validation/checkpoint-1004/manuscript-replay.json",
+      "previous_compiled_types": {
+        "path": "docs/validation/manuscript-v1.8/compiled-types.json",
+        "sha256": "3320385e4f340b28fc10a8e9253e45c8aba8246034f779b0d9608d243d8c3aeb",
+        "actual_exit_code": 0,
+        "compiled_types": 528,
+        "propositions_audited": 485,
+        "permitted_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "all_propositions_standard_axioms_only": true,
+        "inventory_sha256": "74231413a8324ee7cc29a4e1b3548ca0b73d97019fe71ca2667e311af3cf4dc4",
+        "diagnostic_module_sha256": "43d8a9072a6b589e63465977b7a3068637c712b23711fb38b857acf374534fd5",
+        "compiled_types_sha256": "3320385e4f340b28fc10a8e9253e45c8aba8246034f779b0d9608d243d8c3aeb",
+        "log_sha256": "c84f0beb7071cb9aaff0ef3dbdfe88662575b663ac7b2c1aa8989b9063bc4ea7"
+      },
+      "scope_extension": "Seven common-envelope interfaces added; all528 prior types replayed byte-identically. No TeX/PDF source change."
     }
   ]
 }

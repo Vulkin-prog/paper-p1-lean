@@ -1,8 +1,8 @@
 {
-  "checked_at_utc": "2026-11-07T13:41:14.392002+00:00",
-  "proof_source_commit": "3df7615af2aa6a2a2bc6856bd4203c401d0434de",
-  "checker_sha256": "631b313c12c2a0b0efa8ad90edf7afa3bb63a27e541425c5991378de16955438",
-  "index_sha256": "eb16d7631945340250b8ea5206a07e757e3a1da5bbb5f158da771eed4b6b81da",
+  "checked_at_utc": "2026-11-07T14:31:39.816886+00:00",
+  "proof_source_commit": "7bfc953cd6092eebfbae5f24aeb72b7180693537",
+  "checker_sha256": "d98f0faf05eaf2c0876c7c5dcce9f1e6af0b77f5271b143c9e8844a7fe142c05",
+  "index_sha256": "4abefdb07ec62ca8dbaf5d892f4e6e0cb43dd5dadddd4bae9d340826dd2919d2",
   "positive_control": {
     "actual": "accepted",
     "results": 167,
@@ -88,6 +88,34 @@
       "expected": "reject",
       "actual": "rejected",
       "reason": "Additional independent source/scope record changed: p1:core:moderate",
+      "real_repository_modified": false
+    },
+    {
+      "case": "omit_current_replay_of_historical_examples",
+      "expected": "reject",
+      "actual": "rejected",
+      "reason": "Historical example types need a replay at the current proof source",
+      "real_repository_modified": false
+    },
+    {
+      "case": "corrupt_current_example_replay_digest",
+      "expected": "reject",
+      "actual": "rejected",
+      "reason": "The latest nine-example replay record changed",
+      "real_repository_modified": false
+    },
+    {
+      "case": "omit_fixed_arity_envelope_review",
+      "expected": "reject",
+      "actual": "rejected",
+      "reason": "'supplemental_fixed_arity_review'",
+      "real_repository_modified": false
+    },
+    {
+      "case": "corrupt_fixed_arity_envelope_review_digest",
+      "expected": "reject",
+      "actual": "rejected",
+      "reason": "The frozen fixed-arity envelope review changed",
       "real_repository_modified": false
     }
   ],

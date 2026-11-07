@@ -1,0 +1,243 @@
+{
+  "schema_version": 1,
+  "status": "complete_frozen",
+  "date": "2026-11-07",
+  "reviewer": "Instance indépendante /root/p1_independent_review ; lecture sans nouvelle exécution Lean/Lake.",
+  "source_commit": "7bfc953cd6092eebfbae5f24aeb72b7180693537",
+  "file": "PaperP1/Asymptotics/FixedArityHomogeneousMass.lean",
+  "source_sha256": "4aeffaf8b11410291c94f6386051604cef7baa5a5407c768979a37b83be274e9",
+  "source_byte_identical_to_commit": true,
+  "compiled_scope": {
+    "path": "docs/validation/checkpoint-1004/scope/compiled-types.json",
+    "sha256": "f71351d931839f759ce5ee83c10bb2614c6341ba834af1bc72813547ac34d7c4",
+    "validation_path": "docs/validation/checkpoint-1004/scope/compiled-types-validation.json",
+    "validation_sha256": "c083e685d036d68853369a37ec102dce35e2202c5bb9ad1bab305c463120764c",
+    "log_path": "docs/validation/checkpoint-1004/scope/compiled-types.log",
+    "log_sha256": "f8ff41a2b330c996402a9cc783b6e1749f6468bee995e2030f613f87945b80a7",
+    "exit_path": "docs/validation/checkpoint-1004/scope/compiled-types.exit",
+    "exit_value_read": "0",
+    "inventory_path": "docs/validation/checkpoint-1004/scope-declarations.json",
+    "inventory_sha256": "c720c749e42d398b1b07f5791a28f022fb005eda12b4ecc19cf982169565b4cb",
+    "reported_compiled_types": 7,
+    "reported_propositions_audited": 7,
+    "reported_standard_axioms_only": true
+  },
+  "verification": {
+    "performed": [
+      "Lecture des sept types compilés et des sept corps du module.",
+      "Comparaison des définitions deprobability, poids nominal, poids exact original, runRelativeNullity et Primitive.",
+      "Lecture de la factorisation homogène, des trois dominations originales, du cap local et des deux masses nominales antérieures.",
+      "Vérification des empreintes du type compilé et du fichier source ; fichier source byte-identique au commit indiqué."
+    ],
+    "not_performed": [
+      "Aucun Lean/Lake, build ou replay par cette instance.",
+      "Aucune mutation du dépôt, des manuscrits ou des anciens rapports.",
+      "Aucune actionPalomar."
+    ],
+    "parent_reported_replay": {
+      "source_commit": "7bfc953cd6092eebfbae5f24aeb72b7180693537",
+      "jobs": 18629,
+      "axiom_reports": 19991,
+      "references": 19914,
+      "all_exits_zero": true,
+      "attribution": "Compte rendu du parent ; cette instance ne revendique pas l’exécution de ce replay."
+    }
+  },
+  "definitions_read": [
+    {
+      "name": "HomogeneousRunMass.probability",
+      "file": "PaperP1/Model/HomogeneousRunMass.lean",
+      "lines": [
+        26,
+        27
+      ],
+      "meaning": "Probabilité réelle que infiniteStartBits x L=0 pour tout x∈I, sous la loi de signes premiers. Il s’agit de la prescription homogène à second membre nul."
+    },
+    {
+      "name": "HomogeneousEffectiveWeights.factor",
+      "file": "PaperP1/Model/HomogeneousEffectiveWeights.lean",
+      "lines": [
+        31,
+        38
+      ],
+      "meaning": "q0(I)=∏q0({x})·2^{ρrel}, où chaque q0({x})=2^{-d_x}."
+    },
+    {
+      "name": "PrimitiveNominalMass.weight",
+      "file": "PaperP1/Model/PrimitiveNominalMass.lean",
+      "lines": [
+        17,
+        20
+      ],
+      "meaning": "p^{card I}·2^{ρrel}, p=2^{-L} ; distinct du vrai poids homogène irrégulier."
+    },
+    {
+      "name": "PrimitiveWindowMass.weight",
+      "file": "PaperP1/Model/PrimitiveWindowMass.lean",
+      "lines": [
+        20,
+        23
+      ],
+      "meaning": "∏infiniteMarginal x L·2^{ρrel}, avec les vraies marginales originales pouvant être nulles."
+    },
+    {
+      "name": "runRelativeNullity",
+      "file": "PaperP1/Model/CompatibleNullityBound.lean",
+      "lines": [
+        21,
+        22
+      ],
+      "meaning": "Définition directe de relativeNullityOn des squareClassSpace, sans nullités locales formelles ajoutées."
+    },
+    {
+      "name": "Primitive",
+      "file": "PaperP1/Model/ConnectedWindowFamilies.lean",
+      "lines": [
+        26,
+        28
+      ],
+      "meaning": "ρrel(I)>0 etρrel(J)=0 pour toute sous-famille propreJ⊂I."
+    },
+    {
+      "name": "critical_band_relation_rank_le_one",
+      "file": "PaperP1/Coding/LocalRigidityRegimes.lean",
+      "lines": [
+        123,
+        154
+      ],
+      "meaning": "Seuil uniforme avantN,U,L ; aN≤U et bande critique impliquent rang de la relation locale≤1."
+    },
+    {
+      "name": "effective_rank_eq_or_pred",
+      "file": "PaperP1/Model/LocalRigidityConsequences.lean",
+      "lines": [
+        24,
+        38
+      ],
+      "meaning": "Pourx>0, rang de relation locale≤1 donne d_x=L ouL−1 ; inverse_two_pow_pred traiteL>0."
+    }
+  ],
+  "results": [
+    {
+      "declaration": "PaperP1.FixedArityHomogeneousMass.point_le_nominal",
+      "file": "PaperP1/Asymptotics/FixedArityHomogeneousMass.lean",
+      "line": 26,
+      "compiled_type": "∀ (L : ℕ) (I : Finset ℕ),\n  (∀ x ∈ I, PaperP1.HomogeneousRunMass.probability L {x} ≤ 2 * (2 ^ L)⁻¹) →\n    PaperP1.HomogeneousRunMass.probability L I ≤ 2 ^ I.card * PaperP1.PrimitiveNominalMass.weight L I",
+      "is_proposition": true,
+      "kind": "theorem",
+      "verdict": "adequate_exact_scope",
+      "objects_hypotheses_quantifiers": "L entier, I fini quelconque ; cap local q0({x})≤2(2^L)^{-1} pour x∈I. Ni primitivité ni régime asymptotique supposés ici.",
+      "body_comparison": "La factorisation HomogeneousEffectiveWeights.factor et la définition PrimitiveNominalMass.weight donnent le même facteur2^{ρrel} des deux côtés. Le produit des véritables marginales homogènes est majoré par(2p)^{card I}=2^{card I}p^{card I}. Le corps prouve exactement l’inégalité conditionnelle annoncée ; il ne suppose aucune masse finale.",
+      "conclusion_comparison": "q0(I)≤2^{card I}poids_nominal(I), avec nullité relative effective. Le cap est une hypothèse explicite de ce seul lemme algébrique ; il sera construit dans le théorème uniforme.",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.FixedArityHomogeneousMass.mass_le_nominal",
+      "file": "PaperP1/Asymptotics/FixedArityHomogeneousMass.lean",
+      "line": 43,
+      "compiled_type": "∀ (L r : ℕ) (F : Finset (Finset ℕ)),\n  (∀ I ∈ F, I.card = r) →\n    (∀ I ∈ F, ∀ x ∈ I, PaperP1.HomogeneousRunMass.probability L {x} ≤ 2 * (2 ^ L)⁻¹) →\n      ∑ I ∈ F, PaperP1.HomogeneousRunMass.probability L I ≤ 2 ^ r * PaperP1.PrimitiveNominalMass.mass F L",
+      "is_proposition": true,
+      "kind": "theorem",
+      "verdict": "adequate_exact_scope",
+      "objects_hypotheses_quantifiers": "L,r entiers, F fini de familles de cardinalité exactementr, et cap homogène local pour chaque x de chaque I∈F.",
+      "body_comparison": "Somme point_le_nominal sur F, réécrit card I=r puis sort le facteur constant2^r. Le corps utilise les hypothèses de cardinalité et de cap exactement comme le type compilé.",
+      "conclusion_comparison": "Σ_Fq0(I)≤2^r PrimitiveNominalMass.mass F L. F est un ensemble fini de sous-ensembles, sans multiplicité de tuples.",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.FixedArityHomogeneousMass.uniform_nominal_cap",
+      "file": "PaperP1/Asymptotics/FixedArityHomogeneousMass.lean",
+      "line": 56,
+      "compiled_type": "∀ (C : ℝ),\n  ∃ N₀,\n    2 ≤ N₀ ∧\n      ∀ N ≥ N₀,\n        ∀ (L : ℕ),\n          |↑L - Real.log ↑N / Real.log 2| ≤ C →\n            0 < L ∧ ∀ x ∈ PaperP1.Model.dyadicBlock N, PaperP1.HomogeneousRunMass.probability L {x} ≤ 2 * (2 ^ L)⁻¹",
+      "is_proposition": true,
+      "kind": "theorem",
+      "verdict": "adequate_exact_scope",
+      "objects_hypotheses_quantifiers": "C réel fixé ; aucun x régulier, aucune compatibilité affine et aucune marginale originale positive supposés.",
+      "body_comparison": "Prend le maximum des seuils de LocalRigidityRegimes.critical_band_relation_rank_le_one avec a=1/2 et de CriticalWindowGeometry.uniform_geometry. Déduit L>0 et x>0, puis(1/2)N≤x−1 pour x∈dyadicBlockN. Le rang de la relation locale≤1 force le rang effectif d_x=L ouL−1. singleton_rank donne q0({x})=2^{-d_x}, donc le cap2p dans les deux cas. Ce cap ne repose pas sur la positivité de la prescription affine originale.",
+      "conclusion_comparison": "∀C ∃N0≥2 ∀N≥N0 ∀L critique : L>0 et∀x∈dyadicBlockN,q0({x})≤2p. Le seuil précède N,L,x.",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.FixedArityHomogeneousMass.finite_original_domination",
+      "file": "PaperP1/Asymptotics/FixedArityHomogeneousMass.lean",
+      "line": 82,
+      "compiled_type": "∀ (L : ℕ),\n  0 < L →\n    ∀ (F : Finset (Finset ℕ)),\n      (∀ I ∈ F, I.Nonempty) →\n        ∑ I ∈ F, PaperP1.PrimitiveWindowMass.weight L I ≤ ∑ I ∈ F, PaperP1.HomogeneousRunMass.probability L I ∧\n          ∑ I ∈ F, PaperP1.Model.InfiniteStarts.infiniteJointMoment L I ≤\n              ∑ I ∈ F, PaperP1.HomogeneousRunMass.probability L I ∧\n            ∑ I ∈ F, |PaperP1.Model.InfiniteStarts.infiniteCenteredCoefficient L I| ≤\n              ∑ I ∈ F, PaperP1.HomogeneousRunMass.probability L I",
+      "is_proposition": true,
+      "kind": "theorem",
+      "verdict": "adequate_exact_scope",
+      "objects_hypotheses_quantifiers": "L>0 ; F fini et chaque I∈F non vide. Aucune primitivité ni hypothèse de fenêtre critique pour ce lemme fini.",
+      "body_comparison": "Applique terme à terme HomogeneousEffectiveWeights.weight_le, HomogeneousRunMass.actual_joint_le et HomogeneousEffectiveWeights.centered_le. Le dernier théorème sépare lui-même le cas des marginales positives du cas d’une marginale originale nulle ; celui-ci annule le coefficient centré. Les trois sommes visent bien les objets originaux.",
+      "conclusion_comparison": "Le poids exact original, le vrai joint original et |coefficient centré original| sont chacun dominés en somme parΣq0. Ce sont des inégalités numériques, pas des inclusions d’événements affines dans les événements homogènes.",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.FixedArityHomogeneousMass.uniform_mass",
+      "file": "PaperP1/Asymptotics/FixedArityHomogeneousMass.lean",
+      "line": 94,
+      "compiled_type": "∀ (r : ℕ),\n  3 ≤ r →\n    ∀ (C ε : ℝ),\n      0 < ε →\n        ∃ N₀,\n          3 ≤ N₀ ∧\n            ∀ N ≥ N₀,\n              ∀ (L : ℕ),\n                |↑L - Real.log ↑N / Real.log 2| ≤ C →\n                  ∀ (F : Finset (Finset ℕ)),\n                    (∀ I ∈ F,\n                        I ⊆ PaperP1.Model.dyadicBlock N ∧ I.card = r ∧ PaperP1.ConnectedWindowFamilies.Primitive L I) →\n                      ∑ I ∈ F, PaperP1.HomogeneousRunMass.probability L I ≤ ↑N ^ (-↑r / 2 + ε)",
+      "is_proposition": true,
+      "kind": "theorem",
+      "verdict": "adequate_exact_scope",
+      "objects_hypotheses_quantifiers": "r≥3 entier fixé, C réel, ε>0 fixé ; F fini quelconque de I⊆dyadicBlockN, card I=r, Primitive L I.",
+      "body_comparison": "Applique SharpPrimitiveNominalMass.uniform_mass avecε/2 ; construit le cap paruniform_nominal_cap ; multiplie par2^r au moyen demass_le_nominal ; absorbe cette constante fixe grâce à HalfCountSchedule.factor_absorption avec la marge restanteε/2. Le seuil somme les trois seuils avant N,L,F.",
+      "conclusion_comparison": "La vraie masse homogène est≤N^{-r/2+ε}. Les bornes nominales sont des résultats antérieurs fermés, non des prémisses passées par l’utilisateur du nouveau théorème.",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.FixedArityHomogeneousMass.uniform_dense_mass",
+      "file": "PaperP1/Asymptotics/FixedArityHomogeneousMass.lean",
+      "line": 115,
+      "compiled_type": "∀ (r : ℕ),\n  3 ≤ r →\n    ∀ (C η ε : ℝ),\n      0 < η →\n        0 < ε →\n          ∃ N₀,\n            3 ≤ N₀ ∧\n              ∀ N ≥ N₀,\n                ∀ (L : ℕ),\n                  |↑L - Real.log ↑N / Real.log 2| ≤ C →\n                    ∀ (F : Finset (Finset ℕ)),\n                      (∀ I ∈ F,\n                          I ⊆ PaperP1.Model.dyadicBlock N ∧\n                            I.card = r ∧\n                              PaperP1.ConnectedWindowFamilies.Primitive L I ∧\n                                η * ↑L ≤ ↑(PaperP1.Model.InfiniteStarts.runRelativeNullity L I)) →\n                        ∑ I ∈ F, PaperP1.HomogeneousRunMass.probability L I ≤ ↑N ^ (1 - ↑r + ε)",
+      "is_proposition": true,
+      "kind": "theorem",
+      "verdict": "adequate_exact_scope",
+      "objects_hypotheses_quantifiers": "r≥3,C,η,ε fixés ; η,ε>0 ; même domaine primitif et ρrel(I)≥ηL pour chaque I∈F.",
+      "body_comparison": "Applique DensePrimitiveNominalMass.uniform_mass avecε/2, construit le même cap2p puis absorbe2^r avecε/2. Les hypothèses de la masse nominale sont réordonnées, pas renforcées. La densité porte sur runRelativeNullity, définition exacte de relativeNullityOn des squareClassSpace.",
+      "conclusion_comparison": "La vraie masse homogène dense est≤N^{1-r+ε}, sans régularité ni compatibilité originales.",
+      "necessary_corrections": []
+    },
+    {
+      "declaration": "PaperP1.FixedArityHomogeneousMass.uniform_all_bounds",
+      "file": "PaperP1/Asymptotics/FixedArityHomogeneousMass.lean",
+      "line": 142,
+      "compiled_type": "∀ (r : ℕ),\n  3 ≤ r →\n    ∀ (C η ε : ℝ),\n      0 < η →\n        0 < ε →\n          ∃ N₀,\n            3 ≤ N₀ ∧\n              ∀ N ≥ N₀,\n                ∀ (L : ℕ),\n                  |↑L - Real.log ↑N / Real.log 2| ≤ C →\n                    (∀ (F : Finset (Finset ℕ)),\n                        (∀ I ∈ F,\n                            I ⊆ PaperP1.Model.dyadicBlock N ∧\n                              I.card = r ∧ PaperP1.ConnectedWindowFamilies.Primitive L I) →\n                          ∑ I ∈ F, PaperP1.HomogeneousRunMass.probability L I ≤ ↑N ^ (-↑r / 2 + ε) ∧\n                            ∑ I ∈ F, PaperP1.PrimitiveWindowMass.weight L I ≤ ↑N ^ (-↑r / 2 + ε) ∧\n                              ∑ I ∈ F, PaperP1.Model.InfiniteStarts.infiniteJointMoment L I ≤ ↑N ^ (-↑r / 2 + ε) ∧\n                                ∑ I ∈ F, |PaperP1.Model.InfiniteStarts.infiniteCenteredCoefficient L I| ≤\n                                  ↑N ^ (-↑r / 2 + ε)) ∧\n                      ∀ (F : Finset (Finset ℕ)),\n                        (∀ I ∈ F,\n                            I ⊆ PaperP1.Model.dyadicBlock N ∧\n                              I.card = r ∧\n                                PaperP1.ConnectedWindowFamilies.Primitive L I ∧\n                                  η * ↑L ≤ ↑(PaperP1.Model.InfiniteStarts.runRelativeNullity L I)) →\n                          ↑F.card ≤ ↑N ^ ε ∧\n                            ∑ I ∈ F, PaperP1.HomogeneousRunMass.probability L I ≤ ↑N ^ (1 - ↑r + ε) ∧\n                              ∑ I ∈ F, PaperP1.PrimitiveWindowMass.weight L I ≤ ↑N ^ (1 - ↑r + ε) ∧\n                                ∑ I ∈ F, PaperP1.Model.InfiniteStarts.infiniteJointMoment L I ≤ ↑N ^ (1 - ↑r + ε) ∧\n                                  ∑ I ∈ F, |PaperP1.Model.InfiniteStarts.infiniteCenteredCoefficient L I| ≤\n                                    ↑N ^ (1 - ↑r + ε)",
+      "is_proposition": true,
+      "kind": "theorem",
+      "verdict": "adequate_exact_scope",
+      "objects_hypotheses_quantifiers": "r≥3,C,η,ε fixés ; η,ε>0 ; ∃N0 avant N,L et avant chacune des deux familles F. Première branche sans densité ; seconde avec ρrel≥ηL.",
+      "body_comparison": "Réunit les seuils deuniform_mass, uniform_dense_mass, DensePrimitiveHosts.uniform_hosts etuniform_nominal_cap. La dernière fournit L>0 ; card I=r≥3 fournit I.Nonempty. finite_original_domination transporte ensuite la vraie masse homogène vers les trois sommes originales. Le nombre d’hôtes vient d’un compte antérieur prouvé, pas d’un bound supposé.",
+      "conclusion_comparison": "Un seuil commun contrôle quatre sommes au tauxN^{-r/2+ε}, puis le nombre d’hôtesN^ε et les mêmes quatre sommes au tauxN^{1-r+ε} dans le secteur dense. Le nombre de sommes et l’ordre de leurs quantificateurs concordent avec le type compilé.",
+      "necessary_corrections": []
+    }
+  ],
+  "summary": {
+    "theorems_reviewed": 7,
+    "adequate_exact_scope": 7,
+    "mathematical_gaps_confirmed": 0,
+    "necessary_corrections": [],
+    "conclusion": "Les sept types et corps correspondent aux objets annoncés. Les prémisses de cap des lemmes finis sont construites dans les résultats uniformes ; aucune estimation finale n’est supposée. La dernière interface ferme les quatre poids et le compte d’hôtes avec un seuil unique.",
+    "scope_limits": [
+      "Arité r fixée avant N0 ; aucune uniformité en r croissant.",
+      "Fenêtres originales vraies dansdyadicBlockN ; aucun bloc compriméκ_bL couvert automatiquement.",
+      "La formule utilise les marginales homogènes2^{-d_x} et la nullité relative effective ; p^r seul n’est pas la vraie masse homogène sur les irréguliers.",
+      "T8.2 imprimeηB ; son application découle deηB≥ηL. Les ensembles de familles sont non ordonnés ; pour les tuples ordonnés ajouterr! fixe."
+    ]
+  },
+  "editorial_connections": [
+    {
+      "severity": "raccord_recommande",
+      "location": "companion_sections/confinement.tex:175–190",
+      "text": "Définir q0 et sa factorisation une seule fois, puis expliquer cap2p et domination2^r du nominal. Les quatre sommes partagent alors les mêmes puissances."
+    },
+    {
+      "severity": "raccord_necessaire_si_reutilisation",
+      "location": "main_sections/exact_transfer.tex:236–281",
+      "text": "Le renvoi court de15.5 doit viser la preuve ancrée complète et distinguer poids exact original, homogène vrai et nominal. Ne pas supprimer le témoin ou supposer le compte d’hôtes."
+    },
+    {
+      "severity": "limite_a_preserver",
+      "location": "companion_sections/fixed_moments.tex:383–400",
+      "text": "T4.4 réutilise une géométrie de blocs comprimés ; la nouvelle interface de fenêtres originales ne constitue pas une preuve de remplacement."
+    }
+  ]
+}

@@ -3,7 +3,7 @@
 *Sharp Poisson approximation and second-order correction for long multiplicative
 runs*, and its technical companion, by [Brice Pouly](https://orcid.org/0009-0008-8491-2467).
 
-Current checkpoint P1-MATH-1003: all **167 revised numbered statements** have
+Current checkpoint P1-MATH-1004: all **167 revised numbered statements** have
 checked proofs, using **Lean v4.36.0-rc2**, with no unformalized mathematical
 input. This comprises all 73 main-article and all 94 revised companion results.
 The separate version 1.8 working draft integrates the two necessary statement
@@ -21,6 +21,8 @@ It records printed premises, inherited context and the new exact
 [replica/homogeneous interfaces](docs/REPLICA_AND_HOMOGENEOUS_INTERFACES.md).
 The [concrete irregular-window examples](docs/IRREGULAR_WINDOW_EXAMPLES.md)
 certify why the two kernel meanings and the two event masses must remain distinct.
+A [common fixed-arity envelope](docs/FIXED_ARITY_HOMOGENEOUS_ENVELOPE.md)
+now exposes the actual homogeneous bounds and a shared short proof for four weights.
 The separate review instance has now directly compared all 167 numbered-result
 labels across its frozen source snapshots; the [complete review index](docs/MANUSCRIPT_ENDPOINTS_V1_8.md)
 records every clause and inherited premise.
@@ -53,7 +55,7 @@ bytes and checked counterexamples are preserved. Their corrected replacements
 are proved and integrated in version 1.7. T19.17 is proved with both original
 coefficients and without an external smooth-number premise.
 
-The ledger records **1001 confirmed mathematical improvements and two statement-scope corrections**.
+The historical development ledger contains **1004 entries: 1002 proof improvements and two statement-scope corrections**. These are documented proof-development steps, not 1002 independent manuscript amendments. See the [grouped review guide](docs/editorial-proposals/2026-11-07/HISTORICAL_CHANGE_GUIDE.md).
 Proof substitutions, exact parameter ranges and the scope of stronger
 unasserted analytic or geometric results are documented in the source revision.
 
@@ -120,10 +122,10 @@ Standalone registry Challenges have only the deliberate selected statement
 holes and are never imported by the proof development or its audit.
 
 The latest complete project replay with all six consolidated registrations and
-seventeen preserved components passed **18,627 build jobs**, **19,984 theorem axiom checks**
-and **19,907 distinct reference checks**, all actual exits zero, at
-[source 3df7615a](https://github.com/Vulkin-prog/paper-p1-lean/commit/3df7615af2aa6a2a2bc6856bd4203c401d0434de).
-The substantive mathematical inventory contains **19,556 theorems**; the remaining
+seventeen preserved components passed **18,629 build jobs**, **19,991 theorem axiom checks**
+and **19,914 distinct reference checks**, all actual exits zero, at
+[source 7bfc953c](https://github.com/Vulkin-prog/paper-p1-lean/commit/7bfc953cd6092eebfbae5f24aeb72b7180693537).
+The substantive mathematical inventory contains **19,563 theorems**; the remaining
 428 are complete component and consolidated Solution wrappers. Each mathematical
 checkpoint and registry replay records its own exact source commit and scope.
 The [evidence checker](scripts/check_registry_evidence.py) validates every

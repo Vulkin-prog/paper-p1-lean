@@ -4,9 +4,11 @@ Les 167 résultats numérotés (73 dans l’article, 94 dans le compagnon) ont c
 
 La relecture des correspondances est assistée par IA. Une instance distincte a maintenant comparé directement les 167 labels : 79 interfaces canoniques, neuf résultats ciblés, puis les [79 résultats restants et leurs 118 interfaces](reviews/2026-11-07/endpoint-remaining79.json). Les notes initiales du parent sont conservées. Chaque rapport reste figé à son propre snapshot ; les fichiers et types sélectionnés sont toujours identiques. Les huit théorèmes des nouvelles interfaces de répliques et de masse homogène ont aussi été relus séparément. Les prémisses imprimées de 3.1 et 15.13 restent explicites. Les 22 signatures alors absentes des archives des premiers rapports sont toutes compilées dans le rapport courant.
 
-La [vérification complète](validation/checkpoint-1003/validation.json) a réussi : 18 627 tâches, 19 984 contrôles d’axiomes et 19 907 références distinctes, avec trois sorties réelles nulles. Les 528 types précédemment comparés aux manuscrits restent identiques. Les versions sources antérieures et les PDF v1.8 sont inchangés. Palomar reste en attente.
+La [vérification complète](validation/checkpoint-1004/validation.json) a réussi : 18 629 tâches, 19 991 contrôles d’axiomes et 19 914 références distinctes, avec trois sorties réelles nulles. Les 528 types précédemment comparés aux manuscrits restent identiques. Les versions sources antérieures et les PDF v1.8 sont inchangés. Palomar reste en attente.
 
 Cette table est un index de preuves et de raccords. Une proposition composée peut utiliser plusieurs lignes de preuve ; les empreintes ne sont pas une traduction automatique de TeX en Lean. La relecture ne constitue pas une certification humaine ou Palomar.
+
+L’[enveloppe commune à arité fixée](FIXED_ARITY_HOMOGENEOUS_ENVELOPE.md) ajoute sept interfaces relues séparément pour une assertion auxiliaire existante. L’index numéroté conserve ses 261 théorèmes et trois définitions ; les 264 types et les neuf types d’exemples ont été rejoués sans changement au source de preuve courant.
 
 ## Article
 

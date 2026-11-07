@@ -8,8 +8,11 @@ weight; the internally proved nominal bounds absorb that fixed factor.
 One scale threshold controls homogeneous event probabilities, original
 heterogeneous rank weights, actual joint probabilities and absolute
 centered activities, and the dense host count. All parameters, including
-r>=3, precede that threshold. The seven theorem prototypes compiled
-without warnings; the complete project replay is pending.
+r>=3, precede that threshold. The complete pinned replay passed 18,629 build jobs, 19,991 theorem
+axiom checks and 19,914 distinct references, all actual exits zero.
+All 528 prior manuscript types, 264 proof-entry/object types and nine
+example types replayed byte-identically. The separate review instance
+read the seven new bodies and compiled types without finding a gap.
 This supports a common short argument in the manuscript, not a new
 exponent, growing-order result or additional Palomar selection.
 All frozen manuscript versions remain preserved. Palomar stays on hold.

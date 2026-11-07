@@ -1,0 +1,338 @@
+{
+  "documentary_snapshot": "8fd105a8468445100b7286bd6b51fb7cd9aa7b21",
+  "scope": "Exact prior current-index records before the fixed-arity extension. Historical source-explicit snapshots, not current validation.",
+  "records": {
+    "validation.json": {
+      "proof_source_commit": "3df7615af2aa6a2a2bc6856bd4203c401d0434de",
+      "status": "passed",
+      "numbered_results": 167,
+      "main_results": 73,
+      "companion_results": 94,
+      "compiled_interfaces": {
+        "types": 264,
+        "theorems": 261,
+        "separate_objects": 3,
+        "actual_exit_code": 0,
+        "latest_replay": {
+          "path": "docs/validation/checkpoint-1003/endpoint-replay.json",
+          "sha256": "64fba47a640c6f150ecf8234c2f21d4d2b8ed4a756dfdd5d433bf4f697701000"
+        }
+      },
+      "initial_review_partition": {
+        "independent_canonical": 79,
+        "independent_dense": 9,
+        "parent": 79
+      },
+      "independently_compared_result_labels": 167,
+      "additional_independent_review": {
+        "path": "docs/reviews/2026-11-07/endpoint-remaining79.json",
+        "sha256": "5b9648add0ad83d38c92c39a6e3c0dd0228775b4ebce50377077a0568fb68038",
+        "covered_results": 79,
+        "distinct_interfaces": 118,
+        "reviewed_documentary_snapshot": "bd7c818e51161bab34607fd433d3348bef1aa2bb",
+        "scope": "Completes direct independent comparisons of the 79 formerly parent-only labels; combined with the frozen79+9 reports, all167 labels have been compared across their stated source snapshots. Not a new independent reconstruction of all transitive proofs."
+      },
+      "supplemental_example_review": {
+        "path": "docs/reviews/2026-11-07/irregular-examples.json",
+        "sha256": "540583bd07281e490950043307f667ec0232f4c232bb6e1a53f5438a3fe31e69"
+      },
+      "supplemental_example_theorems": 9,
+      "index": {
+        "path": "docs/manuscript-endpoints-v1.8.json",
+        "sha256": "eb16d7631945340250b8ea5206a07e757e3a1da5bbb5f158da771eed4b6b81da"
+      },
+      "checker": {
+        "path": "scripts/check_manuscript_endpoints.py",
+        "sha256": "631b313c12c2a0b0efa8ad90edf7afa3bb63a27e541425c5991378de16955438"
+      },
+      "static_checks": {
+        "path": "docs/validation/manuscript-endpoints-v1.8/static-checks.json",
+        "sha256": "d7886bb1cd334c7c2ac71e903207546d9e4196a827fe86990b91ea2319ebf306"
+      },
+      "controls": {
+        "path": "docs/validation/manuscript-endpoints-v1.8/controls.json",
+        "sha256": "0ade40fe10d6b6e8bdf9d3d1228b8c71fb2781b52aea946a15159bdeb47e01f6"
+      },
+      "complete_project_replay": {
+        "path": "docs/validation/checkpoint-1003/validation.json",
+        "sha256": "43b07bed0db4c5a199d1c140800242d4a7a91f02de285eb5fa1211a14391f7ed"
+      },
+      "compiled_scope": {
+        "path": "docs/validation/manuscript-endpoints-v1.8/compiled/compiled-types.json",
+        "sha256": "6ac3e4eb3a3bc5519edb3903cdf7770e19b01fee2f16faf3dceba8fb4b023c77",
+        "validation": "docs/validation/manuscript-endpoints-v1.8/compiled/compiled-types-validation.json",
+        "latest_replay": {
+          "path": "docs/validation/checkpoint-1003/endpoint-replay.json",
+          "sha256": "64fba47a640c6f150ecf8234c2f21d4d2b8ed4a756dfdd5d433bf4f697701000"
+        }
+      },
+      "frozen_review_records": [
+        {
+          "path": "docs/reviews/2026-11-07/endpoint-canonical.json",
+          "sha256": "9357b542baff154af31c5909b149306281228a5055a590701b76b5e4a6ac7086"
+        },
+        {
+          "path": "docs/reviews/2026-11-07/endpoint-dense.json",
+          "sha256": "07c268b0ac3ad1541a156b4f2aedde3858c40674131f4ce16355b72533f78bbf"
+        },
+        {
+          "path": "docs/reviews/2026-11-07/post-interface.json",
+          "sha256": "0704261f117c4bbad319b541bb878b5363a8bd5901df762c48ece5b141df8a00"
+        },
+        {
+          "path": "docs/reviews/2026-11-07/endpoint-parent.json",
+          "sha256": "c91ec9c7a2b374e7cbb6bef965b047c05d80ba689ab06885e79e7bd13d3e1c81"
+        },
+        {
+          "path": "docs/reviews/2026-11-07/endpoint-remaining79.json",
+          "sha256": "5b9648add0ad83d38c92c39a6e3c0dd0228775b4ebce50377077a0568fb68038"
+        },
+        {
+          "path": "docs/reviews/2026-11-07/irregular-examples.json",
+          "sha256": "540583bd07281e490950043307f667ec0232f4c232bb6e1a53f5438a3fe31e69"
+        }
+      ],
+      "proof_manifest_includes_lake_build_configuration": true,
+      "proof_source_manifest_entries": 4738,
+      "previous_manuscript_types_replayed": {
+        "count": 528,
+        "unchanged": true,
+        "record": "docs/validation/checkpoint-1003/manuscript-replay.json"
+      },
+      "source_preservation": {
+        "path": "docs/validation/checkpoint-1003/prior-proof-preservation.json",
+        "sha256": "49b4d083300277de07a30aee0ec1cad11e5dbdabd85506a5492f225a7abff324"
+      },
+      "editorial_proposal": {
+        "validation": {
+          "path": "docs/editorial-proposals/2026-11-07/validation.json",
+          "sha256": "8601227071fd9e9bc455c40f22cdebb8aa87c51741e16c7e572510df6faef6f4"
+        },
+        "independent_read": {
+          "path": "docs/editorial-proposals/2026-11-07/independent-review.json",
+          "sha256": "93d176ad66dd8b1073858e67585a3dd32c7298ee1cda38e60f924991906bc82f"
+        },
+        "numbered_labels_preserved": 167,
+        "live_sources_changed": false,
+        "pdf_layout_reviewed": false
+      },
+      "previous_index_records": {
+        "path": "docs/validation/checkpoint-1002/endpoint-index-records-at-bd7c818e.json",
+        "sha256": "803843b64d2a0a39a5180e538d4aa011c5619b55c26a3efc4ec991456167761d"
+      },
+      "palomar": {
+        "registrations_planned": 6,
+        "original_families": 17,
+        "original_selections": 68,
+        "submission_status": "on_hold_at_user_request",
+        "full_workflow_launched": false,
+        "intake_launched": false,
+        "registry_id": null
+      },
+      "scope": "Actual compiled types, complete project replay and source/review identity checks, with direct independent AI-assisted comparisons of all167 labels across the stated review snapshots. Not a machine proof of TeX semantic equivalence, an independent reconstruction of all transitive proofs, human certification or Palomar registration.",
+      "reviewed_patch_format_preserved": true
+    },
+    "static-checks.json": {
+      "proof_source_commit": "3df7615af2aa6a2a2bc6856bd4203c401d0434de",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "endpoint_scope",
+          "command": [
+            "python3",
+            "scripts/check_manuscript_endpoints.py"
+          ],
+          "actual_exit_code": 0,
+          "output": "Verified 138 manifest entries and 167 numbered results.\nScope: source integrity and inventory only, not mathematical proof certification.\nVerified 48 revised TeX source hashes and 167 revised statements.\nExactly two original statements corrected; revised proofs: 167/167.\nOriginal v1.6 identities and false-original statuses remain preserved.\nVerified 48 v1.8 source hashes and all 167 numbered results.\nExplicit comparisons: 7 strengthened/reworded statements; 167/167 proved.\nAll 18 unnumbered scientific claims have source-bound compiled proof correspondence.\nBoth earlier manuscript versions and the two false-original statuses are preserved.\nScope: source identity and recorded correspondence; hashes alone are not a semantic proof.\nVerified all 167 source-bound proof-entry bundles: 73 article and 94 companion results.\nActual compiled interfaces: 261 theorems; 3 separate mathematical definitions.\nDirect independent comparison records cover 167 labels across the reports' stated source snapshots.\nScope: source/type identity and recorded AI-assisted clause review; not a machine proof of TeX-to-Lean translation, human review or Palomar registration.\n"
+        },
+        {
+          "name": "source_rules",
+          "command": [
+            "python3",
+            "scripts/check_sources.py"
+          ],
+          "actual_exit_code": 0,
+          "output": "Verified 138 manifest entries and 167 numbered results.\nScope: source integrity and inventory only, not mathematical proof certification.\n"
+        },
+        {
+          "name": "audit_inventory",
+          "command": [
+            "python3",
+            "scripts/update_audit.py",
+            "--check"
+          ],
+          "actual_exit_code": 0,
+          "output": "Axiom audit covers all 19984 project theorems and lemmas.\n"
+        },
+        {
+          "name": "palomar_source_limits",
+          "command": [
+            "python3",
+            "scripts/check_palomar_sources.py"
+          ],
+          "actual_exit_code": 0,
+          "output": "Local Palomar source scan passed for 4736 Lean files.\nLongest source: PaperP1.lean (4947 lines).\nScope: source regularity, module headers and line limits; full Palomar preflight remains separate.\n"
+        },
+        {
+          "name": "registry_candidates",
+          "command": [
+            "python3",
+            "scripts/check_registry_candidates.py"
+          ],
+          "actual_exit_code": 0,
+          "output": "component comparator/p1_affine_spectra.json: 4 explicit statement holes, complete Solution, Mathlib-only Challenge.\ncomponent comparator/p1_asymmetric_profiles.json: 3 explicit statement holes, complete Solution, Mathlib-only Challenge.\ncomponent comparator/p1_conditioning.json: 4 explicit statement holes, complete Solution, Mathlib-only Challenge.\ncomponent comparator/p1_dependent_expansion.json: 4 explicit statement holes, complete Solution, Mathlib-only Challenge.\ncomponent comparator/p1_exponential_divergence.json: 4 explicit statement holes, complete Solution, Mathlib-only Challenge.\ncomponent comparator/p1_factorial_cumulants.json: 5 explicit statement holes, complete Solution, Mathlib-only Challenge.\ncomponent comparator/p1_integral_curve_count.json: 3 explicit statement holes, complete Solution, Mathlib-only Challenge.\ncomponent comparator/p1_local_rigidity.json: 5 explicit statement holes, complete Solution, Mathlib-only Challenge.\ncomponent comparator/p1_moment_obstruction.json: 5 explicit statement holes, complete Solution, Mathlib-only Challenge.\ncomponent comparator/p1_poisson_reference.json: 4 explicit statement holes, complete Solution, Mathlib-only Challenge.\ncomponent comparator/p1_poisson_scales.json: 5 explicit statement holes, complete Solution, Mathlib-only Challenge.\ncomponent comparator/p1_positional_field.json: 3 explicit statement holes, complete Solution, Mathlib-only Challenge.\ncomponent comparator/p1_prime_cylinders.json: 4 explicit statement holes, complete Solution, Mathlib-only Challenge.\ncomponent comparator/p1_private_obstruction.json: 4 explicit statement holes, complete Solution, Mathlib-only Challenge.\ncomponent comparator/p1_quadratic_approximation.json: 4 explicit statement holes, complete Solution, Mathlib-only Challenge.\ncomponent comparator/p1_quadratic_kernels.json: 4 explicit statement holes, complete Solution, Mathlib-only Challenge.\ncomponent comparator/p1_smooth_windows.json: 3 explicit statement holes, complete Solution, Mathlib-only Challenge.\nregistration comparator/registrations/p1_arithmetic_geometry.json: 12 explicit statement holes, complete Solution, Mathlib-only Challenge.\nregistration comparator/registrations/p1_profiles_smooth.json: 6 explicit statement holes, complete Solution, Mathlib-only Challenge.\nregistration comparator/registrations/p1_affine_conditioning.json: 12 explicit statement holes, complete Solution, Mathlib-only Challenge.\nregistration comparator/registrations/p1_cumulants_obstructions.json: 14 explicit statement holes, complete Solution, Mathlib-only Challenge.\nregistration comparator/registrations/p1_poisson_fields.json: 16 explicit statement holes, complete Solution, Mathlib-only Challenge.\nregistration comparator/registrations/p1_exponential_cylinders.json: 8 explicit statement holes, complete Solution, Mathlib-only Challenge.\nPrepared 6 planned registrations and 68 selected declarations.\nPreserved 17 separately verified components and their 68 original selections.\nSubmission policy: one complete registration cycle at a time.\nScope: preparation checks; no Comparator or Palomar verification is inferred.\n"
+        },
+        {
+          "name": "six_registration_bijection",
+          "command": [
+            "python3",
+            "scripts/check_registry_consolidation.py",
+            "--strict"
+          ],
+          "actual_exit_code": 0,
+          "output": "arithmetic_geometry: exact models, statements, complete proof bodies and source mapping preserved.\nprofiles_smooth: exact models, statements, complete proof bodies and source mapping preserved.\naffine_conditioning: exact models, statements, complete proof bodies and source mapping preserved.\ncumulants_obstructions: exact models, statements, complete proof bodies and source mapping preserved.\npoisson_fields: exact models, statements, complete proof bodies and source mapping preserved.\nexponential_cylinders: exact models, statements, complete proof bodies and source mapping preserved.\nAll 68 selections from 17 original components are preserved in exactly six registrations.\n"
+        },
+        {
+          "name": "historical_receipts",
+          "command": [
+            "python3",
+            "scripts/check_registry_evidence.py",
+            "--require-all"
+          ],
+          "actual_exit_code": 0,
+          "output": "affine_spectra: source identities, preserved logs and 4 selections verified.\nasymmetric_profiles: source identities, preserved logs and 3 selections verified.\nconditioning: source identities, preserved logs and 4 selections verified.\ndependent_expansion: source identities, preserved logs and 4 selections verified.\nexponential_divergence: source identities, preserved logs and 4 selections verified.\nfactorial_cumulants: source identities, preserved logs and 5 selections verified.\nintegral_curve_count: source identities, preserved logs and 3 selections verified.\nlocal_rigidity: source identities, preserved logs and 5 selections verified.\nmoment_obstruction: source identities, preserved logs and 5 selections verified.\npoisson_reference: source identities, preserved logs and 4 selections verified.\npoisson_scales: source identities, preserved logs and 5 selections verified.\npositional_field: source identities, preserved logs and 3 selections verified.\nprime_cylinders: source identities, preserved logs and 4 selections verified.\nprivate_obstruction: source identities, preserved logs and 4 selections verified.\nquadratic_approximation: source identities, preserved logs and 4 selections verified.\nquadratic_kernels: source identities, preserved logs and 4 selections verified.\nsmooth_windows: source identities, preserved logs and 3 selections verified.\naffine_conditioning: source identities, preserved logs and 12 selections verified.\narithmetic_geometry: source identities, preserved logs and 12 selections verified.\ncumulants_obstructions: source identities, preserved logs and 14 selections verified.\nexponential_cylinders: source identities, preserved logs and 8 selections verified.\npoisson_fields: source identities, preserved logs and 16 selections verified.\nprofiles_smooth: source identities, preserved logs and 6 selections verified.\nVerified 6/6 local registration receipts and 68 selected declarations.\nVerified 17/17 local component receipts and 68 selected declarations.\nOnly the six consolidated registrations are planned for submission; the seventeen component receipts remain proof evidence.\nScope: local evidence integrity; complete Palomar workflow and registration remain separate.\n"
+        },
+        {
+          "name": "whitespace",
+          "command": [
+            "git",
+            "diff",
+            "--check",
+            "bd7c818e51161bab34607fd433d3348bef1aa2bb"
+          ],
+          "actual_exit_code": 0,
+          "output": ""
+        },
+        {
+          "name": "ubuntu_disk",
+          "command": [
+            "python3",
+            "scripts/check_disk.py"
+          ],
+          "actual_exit_code": 0,
+          "output": "Available: 48.98 GiB; repository on Ubuntu root device: True\n"
+        }
+      ],
+      "actual_compiler": {
+        "command": [
+          "bash",
+          "../run-p1.sh",
+          "lake",
+          "env",
+          "lean",
+          "--version"
+        ],
+        "actual_exit_code": 0,
+        "output": "Lean (version 4.36.0-rc2, x86_64-unknown-linux-gnu, commit b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a, Release)\n"
+      },
+      "scope": "Actual local source/type/review binding, inventory and preserved-evidence checks. The complete Lean replay is recorded separately at checkpoint1003. All167 labels have direct independent comparison records across the frozen review snapshots. No Palomar workflow, intake or registration was launched.",
+      "whitespace_scope_note": "The complete diff from bd7c818e is checked. The exact reviewed .patch file preserves its required single-space empty context lines through a narrowly scoped .gitattributes rule; Lean source whitespace checks are unchanged."
+    },
+    "controls.json": {
+      "checked_at_utc": "2026-11-07T13:41:14.392002+00:00",
+      "proof_source_commit": "3df7615af2aa6a2a2bc6856bd4203c401d0434de",
+      "checker_sha256": "631b313c12c2a0b0efa8ad90edf7afa3bb63a27e541425c5991378de16955438",
+      "index_sha256": "eb16d7631945340250b8ea5206a07e757e3a1da5bbb5f158da771eed4b6b81da",
+      "positive_control": {
+        "actual": "accepted",
+        "results": 167,
+        "main": 73,
+        "companion": 94,
+        "independently_compared_result_labels": 167,
+        "distinct_proof_interfaces": 261,
+        "objects_not_proof_evidence": 3
+      },
+      "negative_controls": [
+        {
+          "case": "omit_one_numbered_result",
+          "expected": "reject",
+          "actual": "rejected",
+          "reason": "The proof-entry index must cover every one of the 167 labels once",
+          "real_repository_modified": false
+        },
+        {
+          "case": "drop_unrestricted_moderate_clause_15_11",
+          "expected": "reject",
+          "actual": "rejected",
+          "reason": "A reviewed dense-result clause or inherited premise was dropped: p13:transfer:anchor-budgets",
+          "real_repository_modified": false
+        },
+        {
+          "case": "erase_fixed_D_window_context_15_4",
+          "expected": "reject",
+          "actual": "rejected",
+          "reason": "A reviewed dense-result clause or inherited premise was dropped: p13:transfer:small-kernels",
+          "real_repository_modified": false
+        },
+        {
+          "case": "erase_printed_conditional_premise_15_13",
+          "expected": "reject",
+          "actual": "rejected",
+          "reason": "A printed conditional premise was relabelled: p13:transfer:finite",
+          "real_repository_modified": false
+        },
+        {
+          "case": "corrupt_compiled_type_digest",
+          "expected": "reject",
+          "actual": "rejected",
+          "reason": "Compiled theorem type changed: PaperP1.OptimalQuadratic.article_1_1",
+          "real_repository_modified": false
+        },
+        {
+          "case": "substitute_mathematical_object_for_proof",
+          "expected": "reject",
+          "actual": "rejected",
+          "reason": "A reviewed canonical clause or inherited premise was dropped: p1:thm:main",
+          "real_repository_modified": false
+        },
+        {
+          "case": "compiled_entry_is_not_a_theorem",
+          "expected": "reject",
+          "actual": "rejected",
+          "reason": "Entry is not a source-audited compiled theorem: PaperP1.OptimalQuadratic.article_1_1",
+          "real_repository_modified": false
+        },
+        {
+          "case": "corrupt_current_scope_replay_digest",
+          "expected": "reject",
+          "actual": "rejected",
+          "reason": "The latest proof-entry scope replay record changed",
+          "real_repository_modified": false
+        },
+        {
+          "case": "truncate_completed_independent_coverage_count",
+          "expected": "reject",
+          "actual": "rejected",
+          "reason": "The supplementary independent review does not complete the 167-label coverage",
+          "real_repository_modified": false
+        },
+        {
+          "case": "omit_nine_example_review_record",
+          "expected": "reject",
+          "actual": "rejected",
+          "reason": "'supplemental_example_review'",
+          "real_repository_modified": false
+        },
+        {
+          "case": "change_independently_reviewed_ordered_list_domain_7_2",
+          "expected": "reject",
+          "actual": "rejected",
+          "reason": "Additional independent source/scope record changed: p1:core:moderate",
+          "real_repository_modified": false
+        }
+      ],
+      "status": "passed",
+      "scope": "Identity and recorded scope-binding controls on altered in-memory copies; not semantic TeX parsing or mathematical certification."
+    }
+  }
+}

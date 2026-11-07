@@ -108,21 +108,41 @@ def verify(index, *, compiled=None, locations=None):
         if sha(local_file(log["path"])) != log["sha256_gzip"]:
             raise ValueError(f"Complete proof replay log changed: {log['kind']}")
     example_record = index["supplemental_example_review"]
-    if example_record != replay["independent_scope_read"]:
-        raise ValueError("The example review and full replay records disagree")
     example_path = local_file(example_record["path"])
     if sha(example_path) != example_record["sha256"]:
         raise ValueError("The frozen nine-example review changed")
     example_review = json.loads(example_path.read_text())
-    example_types_path = local_file(replay["compiled_scope"]["path"])
+    # A frozen review belongs to its own proof snapshot. A later unrelated
+    # scope extraction must not be mistaken for the nine-example inventory.
+    example_types_path = local_file(example_review["compiled_scope"]["path"])
+    example_validation = json.loads((example_types_path.parent.parent / "validation.json").read_text())
     example_types = {r["name"]: r for r in json.loads(example_types_path.read_text())}
     if (example_review["status"] != "complete_frozen"
-            or example_review["source_commit"] != index["proof_source_commit"]
+            or example_record != example_validation["independent_scope_read"]
+            or example_review["source_commit"] != example_validation["source_commit"]
+            or example_validation["status"] != "passed"
+            or example_validation["actual_process_exit_codes"] != {"build": 0, "audit": 0, "references": 0}
+            or example_validation["compiled_scope"]["path"] != str(example_types_path.relative_to(ROOT))
             or example_review["compiled_scope"]["sha256"] != sha(example_types_path)
             or len(example_review["results"]) != 9
             or {r["declaration"] for r in example_review["results"]} != set(example_types)
             or example_review["summary"]["mathematical_gaps_confirmed"] != 0):
         raise ValueError("The nine-example review does not match its compiled scope")
+    example_replay = index.get("supplemental_example_replay")
+    if example_review["source_commit"] != index["proof_source_commit"] and not example_replay:
+        raise ValueError("Historical example types need a replay at the current proof source")
+    if example_replay:
+        example_replay_path = local_file(example_replay["path"])
+        if sha(example_replay_path) != example_replay["sha256"]:
+            raise ValueError("The latest nine-example replay record changed")
+        current_examples = json.loads(example_replay_path.read_text())
+        if (current_examples["source_commit"] != index["proof_source_commit"]
+                or current_examples["actual_exit_code"] != 0
+                or current_examples["all_prior_compiled_type_bytes_identical"] is not True
+                or current_examples["compiled_types_replayed"] != 9
+                or current_examples["compiled_propositions_reaudited"] != 9
+                or current_examples["replay_validation"]["compiled_types_sha256"] != sha(example_types_path)):
+            raise ValueError("The nine-example types were not replayed at the current proof source")
     for reviewed in example_review["results"]:
         name = reviewed["declaration"]
         location = locations.get(name, {})
@@ -137,6 +157,51 @@ def verify(index, *, compiled=None, locations=None):
                 or reviewed["line"] != location.get("line")
                 or example_review["source_sha256"] != location.get("source_sha256")):
             raise ValueError(f"A reviewed example type/source binding changed: {name}")
+    changes = json.loads((ROOT / "docs/mathematical-changes.json").read_text())["findings"]
+    if any(change["id"] == "P1-MATH-1004" for change in changes):
+        envelope_record = index["supplemental_fixed_arity_review"]
+        envelope_path = local_file(envelope_record["path"])
+        if sha(envelope_path) != envelope_record["sha256"]:
+            raise ValueError("The frozen fixed-arity envelope review changed")
+        envelope = json.loads(envelope_path.read_text())
+        envelope_types_path = local_file(envelope["compiled_scope"]["path"])
+        envelope_validation = json.loads((envelope_types_path.parent.parent / "validation.json").read_text())
+        envelope_types = {r["name"]: r for r in json.loads(envelope_types_path.read_text())}
+        if (envelope["status"] != "complete_frozen"
+                or envelope_record != envelope_validation["independent_scope_read"]
+                or envelope["source_commit"] != envelope_validation["source_commit"]
+                or envelope_validation["status"] != "passed"
+                or envelope_validation["actual_process_exit_codes"] != {"build": 0, "audit": 0, "references": 0}
+                or envelope["compiled_scope"]["sha256"] != sha(envelope_types_path)
+                or envelope_validation["compiled_scope"]["path"] != str(envelope_types_path.relative_to(ROOT))
+                or len(envelope["results"]) != 7
+                or {r["declaration"] for r in envelope["results"]} != set(envelope_types)
+                or envelope["summary"]["mathematical_gaps_confirmed"] != 0):
+            raise ValueError("The fixed-arity review does not cover its seven compiled interfaces")
+        if envelope["source_commit"] != index["proof_source_commit"]:
+            envelope_replay = index["supplemental_fixed_arity_replay"]
+            envelope_replay_path = local_file(envelope_replay["path"])
+            current_envelope = json.loads(envelope_replay_path.read_text())
+            if (sha(envelope_replay_path) != envelope_replay["sha256"]
+                    or current_envelope["source_commit"] != index["proof_source_commit"]
+                    or current_envelope["actual_exit_code"] != 0
+                    or current_envelope["all_prior_compiled_type_bytes_identical"] is not True
+                    or current_envelope["compiled_types_replayed"] != 7
+                    or current_envelope["compiled_propositions_reaudited"] != 7
+                    or current_envelope["replay_validation"]["compiled_types_sha256"] != sha(envelope_types_path)):
+                raise ValueError("The fixed-arity types were not replayed at the current proof source")
+        for reviewed in envelope["results"]:
+            name = reviewed["declaration"]
+            info, location = envelope_types[name], locations.get(name, {})
+            if (reviewed["compiled_type"] != info["type"]
+                    or reviewed["is_proposition"] is not True
+                    or info["kind"] != "theorem" or info["is_proposition"] is not True
+                    or name not in audit or reviewed["verdict"] != "adequate_exact_scope"
+                    or reviewed["necessary_corrections"]
+                    or reviewed["file"] != location.get("source")
+                    or reviewed["line"] != location.get("line")
+                    or envelope["source_sha256"] != location.get("source_sha256")):
+                raise ValueError(f"A fixed-arity theorem type/source binding changed: {name}")
     for record in index["review_records"]:
         if sha(local_file(record["path"])) != record["sha256"]:
             raise ValueError(f"Frozen review record changed: {record['path']}")
@@ -201,7 +266,6 @@ def verify(index, *, compiled=None, locations=None):
             extra_names.add(name)
     if len(extra_names) != extra_record["distinct_interfaces"] or len(extra_names) != 118:
         raise ValueError("The additional 118-interface review inventory changed")
-    changes = json.loads((ROOT / "docs/mathematical-changes.json").read_text())["findings"]
     extensions = {}
     for change in changes:
         if change["id"] in index["subsequent_exact_interfaces"]:

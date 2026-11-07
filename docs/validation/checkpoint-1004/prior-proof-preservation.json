@@ -1,0 +1,15 @@
+{
+  "previous_source_commit": "3df7615af2aa6a2a2bc6856bd4203c401d0434de",
+  "new_source_commit": "7bfc953cd6092eebfbae5f24aeb72b7180693537",
+  "previous_proof_files": 4738,
+  "unchanged_previous_files": 4736,
+  "extended_roots": [
+    "Audit.lean",
+    "PaperP1.lean"
+  ],
+  "new_modules": [
+    "PaperP1/Asymptotics/FixedArityHomogeneousMass.lean"
+  ],
+  "all_previous_substantive_proof_modules_byte_identical": true,
+  "scope": "The generated audit and aggregate import root change only to include the seven new theorems. All older substantive proof modules, compiler/dependency pins and Lake configuration are preserved."
+}

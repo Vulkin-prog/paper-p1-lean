@@ -1,5 +1,5 @@
 {
-  "proof_source_commit": "3df7615af2aa6a2a2bc6856bd4203c401d0434de",
+  "proof_source_commit": "7bfc953cd6092eebfbae5f24aeb72b7180693537",
   "status": "passed",
   "checks": [
     {
@@ -28,7 +28,7 @@
         "--check"
       ],
       "actual_exit_code": 0,
-      "output": "Axiom audit covers all 19984 project theorems and lemmas.\n"
+      "output": "Axiom audit covers all 19991 project theorems and lemmas.\n"
     },
     {
       "name": "palomar_source_limits",
@@ -37,7 +37,7 @@
         "scripts/check_palomar_sources.py"
       ],
       "actual_exit_code": 0,
-      "output": "Local Palomar source scan passed for 4736 Lean files.\nLongest source: PaperP1.lean (4947 lines).\nScope: source regularity, module headers and line limits; full Palomar preflight remains separate.\n"
+      "output": "Local Palomar source scan passed for 4737 Lean files.\nLongest source: PaperP1.lean (4948 lines).\nScope: source regularity, module headers and line limits; full Palomar preflight remains separate.\n"
     },
     {
       "name": "registry_candidates",
@@ -74,7 +74,7 @@
         "git",
         "diff",
         "--check",
-        "bd7c818e51161bab34607fd433d3348bef1aa2bb"
+        "8fd105a8468445100b7286bd6b51fb7cd9aa7b21"
       ],
       "actual_exit_code": 0,
       "output": ""
@@ -86,21 +86,8 @@
         "scripts/check_disk.py"
       ],
       "actual_exit_code": 0,
-      "output": "Available: 48.98 GiB; repository on Ubuntu root device: True\n"
+      "output": "Available: 48.81 GiB; repository on Ubuntu root device: True\n"
     }
   ],
-  "actual_compiler": {
-    "command": [
-      "bash",
-      "../run-p1.sh",
-      "lake",
-      "env",
-      "lean",
-      "--version"
-    ],
-    "actual_exit_code": 0,
-    "output": "Lean (version 4.36.0-rc2, x86_64-unknown-linux-gnu, commit b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a, Release)\n"
-  },
-  "scope": "Actual local source/type/review binding, inventory and preserved-evidence checks. The complete Lean replay is recorded separately at checkpoint1003. All167 labels have direct independent comparison records across the frozen review snapshots. No Palomar workflow, intake or registration was launched.",
-  "whitespace_scope_note": "The complete diff from bd7c818e is checked. The exact reviewed .patch file preserves its required single-space empty context lines through a narrowly scoped .gitattributes rule; Lean source whitespace checks are unchanged."
+  "scope": "Local source, recorded scope, registry-preparation integrity and Ubuntu disk checks. No Palomar workflow, intake or registration was launched."
 }

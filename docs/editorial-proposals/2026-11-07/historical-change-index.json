@@ -1,0 +1,3095 @@
+{
+  "status": "source_bound_historical_index",
+  "proof_source_commit": "7bfc953cd6092eebfbae5f24aeb72b7180693537",
+  "historical_ledger": {
+    "path": "docs/mathematical-changes.json",
+    "sha256": "6fd04409d0875be0e0c2923598ac91e6fdb2f1ffb94e1adc2b9246cb1ca66815"
+  },
+  "historical_entries": 1004,
+  "classifications": {
+    "improvement": 1002,
+    "correction": 2
+  },
+  "numbered_location_groups": 137,
+  "other_location_groups": 4,
+  "evidence_names": {
+    "distinct": 14216,
+    "source_audited_theorems": 12175,
+    "other_objects_or_support_names_not_counted_as_proofs": 2041,
+    "all_names_in_actual_reference_replay": true,
+    "actual_reference_replay_total": 19914
+  },
+  "necessary_original_statement_corrections": [
+    {
+      "entry_id": "P1-MATH-0162",
+      "document": "companion",
+      "number": "T1.10",
+      "label": "p1:arith:asymmetric",
+      "title": "An asymmetric pair profile",
+      "finding": "With the literal radius-one nonalignment predicate, T1.10 is false. For L=3k, X=2t, z=3t+3B and U_X=[X,X+3B], k matched coordinates above every H>=3 yield delta*>=k-1. All reduced slopes up to B^3 are excluded for t>5B^4, but the pairs are aligned at radius2. On m=2^(3k), N=6m, a dyadic family of m-B pairs gives a full profile at least m^(4/3)/8. This exceeds every constant multiple of N^(31/24+1/48), for every fixed positive integer cutoff multiple, on the critical band C=3.",
+      "proposed_revision": "Define asymmetric nonalignment with a radius depending explicitly on the old width D, for example max(1,D)*(r+s)*B. Reprove the31/24 profile for this enlarged exclusion and verify the enlarged aligned-sector estimates at each use. Radius2 is proved to exclude this witness family, but sufficiency of the revised lemma is not asserted."
+    },
+    {
+      "entry_id": "P1-MATH-0315",
+      "document": "companion",
+      "number": "T5.1",
+      "label": "p13:short:quadratic",
+      "title": "A quadratic kernel with a prescribed divisor",
+      "finding": "For arbitrarily large N, actual admissible data h=e=1,n=N with squarefree N and N+1 give q=N(N+1)=N^beta(N), beta(N)>2 and delta=0. Then c2=beta(N)/2>1/2+beta(N)/4, while all asymptotic counting estimates remain valid.",
+      "proposed_revision": "Replace c2 by min(1,c2) in the exact displayed comparison; alternatively restrict beta-2delta<=2 or include the vanishing exponent margin. Retain the already proved uniform c2 and affine counting conclusions."
+    }
+  ],
+  "v18_changed_numbered_statement_blocks": [
+    {
+      "document": "main",
+      "number": "3.2",
+      "label": "p1:arith:hosts",
+      "title": "Support and residual mass"
+    },
+    {
+      "document": "main",
+      "number": "7.4",
+      "label": "p1:core:generator",
+      "title": "A generating function with marked isolated vertices"
+    },
+    {
+      "document": "main",
+      "number": "13.5",
+      "label": "p13:rig:sublinear-grid",
+      "title": "Sublinear counts in the offset box"
+    },
+    {
+      "document": "main",
+      "number": "15.5",
+      "label": "p13:transfer:primitive",
+      "title": "Primitive mass at every fixed size"
+    },
+    {
+      "document": "main",
+      "number": "16.1",
+      "label": "p13:lower:quartic",
+      "title": "The fourth factorial cumulant"
+    },
+    {
+      "document": "main",
+      "number": "20.1",
+      "label": "p1:limits:vector-reference",
+      "title": "Unsigned positional compound-Poisson comparison"
+    },
+    {
+      "document": "companion",
+      "number": "T19.6",
+      "label": "p1:limits:colored-tail",
+      "title": "A very small tail from a power threshold"
+    }
+  ],
+  "v18_unnumbered_correspondence_ids": [
+    "anchored_physical_witness",
+    "primitive_physical_regularization",
+    "dense_primitive_hosts",
+    "primitive_exact_and_homogeneous_weights",
+    "late_pair_completion",
+    "star_rational_corollary",
+    "cap_growth_free_endpoint",
+    "poisson_difference_constant",
+    "quadratic_order_factorial_bound",
+    "near_linear_tail_any_fixed_c",
+    "supported_prime_cylinder",
+    "valuation_layers",
+    "valuation_density",
+    "rank_charged_forcing",
+    "ordinary_smooth_census",
+    "reference_realization_and_marginals",
+    "reference_covariance_and_blocks",
+    "reference_bivariate_mass"
+  ],
+  "location_groups": [
+    {
+      "label": "p1:limits:all-anchors",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T19.17",
+      "title": "An obstruction for every such anchor",
+      "historical_entries": 341,
+      "entry_ids": [
+        "P1-MATH-0180",
+        "P1-MATH-0185",
+        "P1-MATH-0186",
+        "P1-MATH-0187",
+        "P1-MATH-0188",
+        "P1-MATH-0189",
+        "P1-MATH-0190",
+        "P1-MATH-0191",
+        "P1-MATH-0192",
+        "P1-MATH-0193",
+        "P1-MATH-0194",
+        "P1-MATH-0195",
+        "P1-MATH-0196",
+        "P1-MATH-0197",
+        "P1-MATH-0470",
+        "P1-MATH-0471",
+        "P1-MATH-0472",
+        "P1-MATH-0473",
+        "P1-MATH-0661",
+        "P1-MATH-0662",
+        "P1-MATH-0663",
+        "P1-MATH-0664",
+        "P1-MATH-0665",
+        "P1-MATH-0666",
+        "P1-MATH-0667",
+        "P1-MATH-0668",
+        "P1-MATH-0669",
+        "P1-MATH-0670",
+        "P1-MATH-0671",
+        "P1-MATH-0672",
+        "P1-MATH-0673",
+        "P1-MATH-0674",
+        "P1-MATH-0675",
+        "P1-MATH-0676",
+        "P1-MATH-0677",
+        "P1-MATH-0678",
+        "P1-MATH-0679",
+        "P1-MATH-0680",
+        "P1-MATH-0681",
+        "P1-MATH-0682",
+        "P1-MATH-0683",
+        "P1-MATH-0684",
+        "P1-MATH-0685",
+        "P1-MATH-0686",
+        "P1-MATH-0687",
+        "P1-MATH-0688",
+        "P1-MATH-0689",
+        "P1-MATH-0690",
+        "P1-MATH-0691",
+        "P1-MATH-0692",
+        "P1-MATH-0693",
+        "P1-MATH-0694",
+        "P1-MATH-0695",
+        "P1-MATH-0696",
+        "P1-MATH-0697",
+        "P1-MATH-0698",
+        "P1-MATH-0699",
+        "P1-MATH-0700",
+        "P1-MATH-0701",
+        "P1-MATH-0702",
+        "P1-MATH-0703",
+        "P1-MATH-0704",
+        "P1-MATH-0705",
+        "P1-MATH-0706",
+        "P1-MATH-0707",
+        "P1-MATH-0708",
+        "P1-MATH-0709",
+        "P1-MATH-0710",
+        "P1-MATH-0711",
+        "P1-MATH-0712",
+        "P1-MATH-0713",
+        "P1-MATH-0714",
+        "P1-MATH-0715",
+        "P1-MATH-0716",
+        "P1-MATH-0717",
+        "P1-MATH-0718",
+        "P1-MATH-0719",
+        "P1-MATH-0720",
+        "P1-MATH-0721",
+        "P1-MATH-0722",
+        "P1-MATH-0723",
+        "P1-MATH-0724",
+        "P1-MATH-0725",
+        "P1-MATH-0726",
+        "P1-MATH-0727",
+        "P1-MATH-0728",
+        "P1-MATH-0729",
+        "P1-MATH-0730",
+        "P1-MATH-0731",
+        "P1-MATH-0732",
+        "P1-MATH-0733",
+        "P1-MATH-0734",
+        "P1-MATH-0735",
+        "P1-MATH-0736",
+        "P1-MATH-0737",
+        "P1-MATH-0738",
+        "P1-MATH-0739",
+        "P1-MATH-0740",
+        "P1-MATH-0741",
+        "P1-MATH-0742",
+        "P1-MATH-0743",
+        "P1-MATH-0744",
+        "P1-MATH-0745",
+        "P1-MATH-0746",
+        "P1-MATH-0747",
+        "P1-MATH-0748",
+        "P1-MATH-0749",
+        "P1-MATH-0750",
+        "P1-MATH-0751",
+        "P1-MATH-0752",
+        "P1-MATH-0753",
+        "P1-MATH-0754",
+        "P1-MATH-0755",
+        "P1-MATH-0756",
+        "P1-MATH-0757",
+        "P1-MATH-0758",
+        "P1-MATH-0759",
+        "P1-MATH-0760",
+        "P1-MATH-0761",
+        "P1-MATH-0762",
+        "P1-MATH-0763",
+        "P1-MATH-0764",
+        "P1-MATH-0765",
+        "P1-MATH-0766",
+        "P1-MATH-0767",
+        "P1-MATH-0768",
+        "P1-MATH-0769",
+        "P1-MATH-0770",
+        "P1-MATH-0771",
+        "P1-MATH-0772",
+        "P1-MATH-0773",
+        "P1-MATH-0774",
+        "P1-MATH-0775",
+        "P1-MATH-0776",
+        "P1-MATH-0777",
+        "P1-MATH-0778",
+        "P1-MATH-0779",
+        "P1-MATH-0780",
+        "P1-MATH-0781",
+        "P1-MATH-0782",
+        "P1-MATH-0783",
+        "P1-MATH-0784",
+        "P1-MATH-0785",
+        "P1-MATH-0786",
+        "P1-MATH-0787",
+        "P1-MATH-0788",
+        "P1-MATH-0789",
+        "P1-MATH-0790",
+        "P1-MATH-0791",
+        "P1-MATH-0792",
+        "P1-MATH-0793",
+        "P1-MATH-0794",
+        "P1-MATH-0795",
+        "P1-MATH-0796",
+        "P1-MATH-0797",
+        "P1-MATH-0798",
+        "P1-MATH-0799",
+        "P1-MATH-0800",
+        "P1-MATH-0801",
+        "P1-MATH-0802",
+        "P1-MATH-0803",
+        "P1-MATH-0804",
+        "P1-MATH-0805",
+        "P1-MATH-0806",
+        "P1-MATH-0807",
+        "P1-MATH-0808",
+        "P1-MATH-0809",
+        "P1-MATH-0810",
+        "P1-MATH-0811",
+        "P1-MATH-0812",
+        "P1-MATH-0813",
+        "P1-MATH-0814",
+        "P1-MATH-0815",
+        "P1-MATH-0816",
+        "P1-MATH-0817",
+        "P1-MATH-0818",
+        "P1-MATH-0819",
+        "P1-MATH-0820",
+        "P1-MATH-0821",
+        "P1-MATH-0822",
+        "P1-MATH-0823",
+        "P1-MATH-0824",
+        "P1-MATH-0825",
+        "P1-MATH-0826",
+        "P1-MATH-0827",
+        "P1-MATH-0828",
+        "P1-MATH-0829",
+        "P1-MATH-0830",
+        "P1-MATH-0831",
+        "P1-MATH-0832",
+        "P1-MATH-0833",
+        "P1-MATH-0834",
+        "P1-MATH-0835",
+        "P1-MATH-0836",
+        "P1-MATH-0837",
+        "P1-MATH-0838",
+        "P1-MATH-0839",
+        "P1-MATH-0840",
+        "P1-MATH-0841",
+        "P1-MATH-0842",
+        "P1-MATH-0843",
+        "P1-MATH-0844",
+        "P1-MATH-0845",
+        "P1-MATH-0846",
+        "P1-MATH-0847",
+        "P1-MATH-0848",
+        "P1-MATH-0849",
+        "P1-MATH-0850",
+        "P1-MATH-0851",
+        "P1-MATH-0852",
+        "P1-MATH-0853",
+        "P1-MATH-0854",
+        "P1-MATH-0855",
+        "P1-MATH-0856",
+        "P1-MATH-0857",
+        "P1-MATH-0858",
+        "P1-MATH-0859",
+        "P1-MATH-0860",
+        "P1-MATH-0861",
+        "P1-MATH-0862",
+        "P1-MATH-0863",
+        "P1-MATH-0864",
+        "P1-MATH-0865",
+        "P1-MATH-0866",
+        "P1-MATH-0867",
+        "P1-MATH-0868",
+        "P1-MATH-0869",
+        "P1-MATH-0870",
+        "P1-MATH-0871",
+        "P1-MATH-0872",
+        "P1-MATH-0873",
+        "P1-MATH-0874",
+        "P1-MATH-0875",
+        "P1-MATH-0876",
+        "P1-MATH-0877",
+        "P1-MATH-0878",
+        "P1-MATH-0879",
+        "P1-MATH-0880",
+        "P1-MATH-0881",
+        "P1-MATH-0882",
+        "P1-MATH-0883",
+        "P1-MATH-0884",
+        "P1-MATH-0885",
+        "P1-MATH-0886",
+        "P1-MATH-0887",
+        "P1-MATH-0888",
+        "P1-MATH-0889",
+        "P1-MATH-0890",
+        "P1-MATH-0891",
+        "P1-MATH-0892",
+        "P1-MATH-0893",
+        "P1-MATH-0894",
+        "P1-MATH-0895",
+        "P1-MATH-0896",
+        "P1-MATH-0897",
+        "P1-MATH-0898",
+        "P1-MATH-0899",
+        "P1-MATH-0900",
+        "P1-MATH-0901",
+        "P1-MATH-0902",
+        "P1-MATH-0903",
+        "P1-MATH-0904",
+        "P1-MATH-0905",
+        "P1-MATH-0906",
+        "P1-MATH-0907",
+        "P1-MATH-0908",
+        "P1-MATH-0909",
+        "P1-MATH-0910",
+        "P1-MATH-0911",
+        "P1-MATH-0912",
+        "P1-MATH-0913",
+        "P1-MATH-0914",
+        "P1-MATH-0915",
+        "P1-MATH-0916",
+        "P1-MATH-0917",
+        "P1-MATH-0918",
+        "P1-MATH-0919",
+        "P1-MATH-0920",
+        "P1-MATH-0921",
+        "P1-MATH-0922",
+        "P1-MATH-0923",
+        "P1-MATH-0924",
+        "P1-MATH-0925",
+        "P1-MATH-0926",
+        "P1-MATH-0927",
+        "P1-MATH-0928",
+        "P1-MATH-0929",
+        "P1-MATH-0930",
+        "P1-MATH-0931",
+        "P1-MATH-0932",
+        "P1-MATH-0933",
+        "P1-MATH-0934",
+        "P1-MATH-0935",
+        "P1-MATH-0936",
+        "P1-MATH-0937",
+        "P1-MATH-0938",
+        "P1-MATH-0939",
+        "P1-MATH-0940",
+        "P1-MATH-0941",
+        "P1-MATH-0942",
+        "P1-MATH-0943",
+        "P1-MATH-0944",
+        "P1-MATH-0945",
+        "P1-MATH-0946",
+        "P1-MATH-0947",
+        "P1-MATH-0948",
+        "P1-MATH-0949",
+        "P1-MATH-0950",
+        "P1-MATH-0951",
+        "P1-MATH-0952",
+        "P1-MATH-0953",
+        "P1-MATH-0954",
+        "P1-MATH-0955",
+        "P1-MATH-0956",
+        "P1-MATH-0957",
+        "P1-MATH-0958",
+        "P1-MATH-0959",
+        "P1-MATH-0960",
+        "P1-MATH-0961",
+        "P1-MATH-0962",
+        "P1-MATH-0963",
+        "P1-MATH-0964",
+        "P1-MATH-0965",
+        "P1-MATH-0966",
+        "P1-MATH-0967",
+        "P1-MATH-0968",
+        "P1-MATH-0969",
+        "P1-MATH-0970",
+        "P1-MATH-0971",
+        "P1-MATH-0972",
+        "P1-MATH-0973",
+        "P1-MATH-0974",
+        "P1-MATH-0975",
+        "P1-MATH-0976",
+        "P1-MATH-0977",
+        "P1-MATH-0978",
+        "P1-MATH-0979",
+        "P1-MATH-0980",
+        "P1-MATH-0981",
+        "P1-MATH-0982",
+        "P1-MATH-0983"
+      ],
+      "classifications": {
+        "improvement": 341
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p13:rig:bcn",
+      "kind": "numbered_result",
+      "document": "main",
+      "number": "13.4",
+      "title": "Binyamini--Cluckers--Novikov",
+      "historical_entries": 114,
+      "entry_ids": [
+        "P1-MATH-0333",
+        "P1-MATH-0334",
+        "P1-MATH-0335",
+        "P1-MATH-0336",
+        "P1-MATH-0337",
+        "P1-MATH-0338",
+        "P1-MATH-0363",
+        "P1-MATH-0364",
+        "P1-MATH-0365",
+        "P1-MATH-0366",
+        "P1-MATH-0367",
+        "P1-MATH-0368",
+        "P1-MATH-0369",
+        "P1-MATH-0370",
+        "P1-MATH-0371",
+        "P1-MATH-0372",
+        "P1-MATH-0373",
+        "P1-MATH-0374",
+        "P1-MATH-0375",
+        "P1-MATH-0376",
+        "P1-MATH-0377",
+        "P1-MATH-0378",
+        "P1-MATH-0379",
+        "P1-MATH-0380",
+        "P1-MATH-0381",
+        "P1-MATH-0382",
+        "P1-MATH-0383",
+        "P1-MATH-0384",
+        "P1-MATH-0385",
+        "P1-MATH-0386",
+        "P1-MATH-0387",
+        "P1-MATH-0388",
+        "P1-MATH-0389",
+        "P1-MATH-0390",
+        "P1-MATH-0391",
+        "P1-MATH-0392",
+        "P1-MATH-0393",
+        "P1-MATH-0394",
+        "P1-MATH-0395",
+        "P1-MATH-0396",
+        "P1-MATH-0397",
+        "P1-MATH-0398",
+        "P1-MATH-0399",
+        "P1-MATH-0400",
+        "P1-MATH-0401",
+        "P1-MATH-0403",
+        "P1-MATH-0404",
+        "P1-MATH-0405",
+        "P1-MATH-0406",
+        "P1-MATH-0420",
+        "P1-MATH-0421",
+        "P1-MATH-0498",
+        "P1-MATH-0499",
+        "P1-MATH-0500",
+        "P1-MATH-0501",
+        "P1-MATH-0502",
+        "P1-MATH-0503",
+        "P1-MATH-0504",
+        "P1-MATH-0505",
+        "P1-MATH-0506",
+        "P1-MATH-0507",
+        "P1-MATH-0508",
+        "P1-MATH-0509",
+        "P1-MATH-0510",
+        "P1-MATH-0511",
+        "P1-MATH-0512",
+        "P1-MATH-0513",
+        "P1-MATH-0514",
+        "P1-MATH-0515",
+        "P1-MATH-0516",
+        "P1-MATH-0517",
+        "P1-MATH-0518",
+        "P1-MATH-0519",
+        "P1-MATH-0520",
+        "P1-MATH-0521",
+        "P1-MATH-0522",
+        "P1-MATH-0523",
+        "P1-MATH-0524",
+        "P1-MATH-0525",
+        "P1-MATH-0526",
+        "P1-MATH-0527",
+        "P1-MATH-0528",
+        "P1-MATH-0529",
+        "P1-MATH-0530",
+        "P1-MATH-0531",
+        "P1-MATH-0532",
+        "P1-MATH-0533",
+        "P1-MATH-0534",
+        "P1-MATH-0535",
+        "P1-MATH-0536",
+        "P1-MATH-0537",
+        "P1-MATH-0538",
+        "P1-MATH-0539",
+        "P1-MATH-0540",
+        "P1-MATH-0541",
+        "P1-MATH-0542",
+        "P1-MATH-0543",
+        "P1-MATH-0544",
+        "P1-MATH-0545",
+        "P1-MATH-0546",
+        "P1-MATH-0547",
+        "P1-MATH-0548",
+        "P1-MATH-0549",
+        "P1-MATH-0550",
+        "P1-MATH-0551",
+        "P1-MATH-0552",
+        "P1-MATH-0553",
+        "P1-MATH-0554",
+        "P1-MATH-0555",
+        "P1-MATH-0556",
+        "P1-MATH-0557",
+        "P1-MATH-0558",
+        "P1-MATH-0559",
+        "P1-MATH-0560"
+      ],
+      "classifications": {
+        "improvement": 114
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:arith:reuss",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T1.4",
+      "title": "Uniform determinant estimate",
+      "historical_entries": 113,
+      "entry_ids": [
+        "P1-MATH-0048",
+        "P1-MATH-0049",
+        "P1-MATH-0050",
+        "P1-MATH-0233",
+        "P1-MATH-0234",
+        "P1-MATH-0235",
+        "P1-MATH-0236",
+        "P1-MATH-0237",
+        "P1-MATH-0238",
+        "P1-MATH-0239",
+        "P1-MATH-0240",
+        "P1-MATH-0241",
+        "P1-MATH-0242",
+        "P1-MATH-0243",
+        "P1-MATH-0244",
+        "P1-MATH-0245",
+        "P1-MATH-0246",
+        "P1-MATH-0247",
+        "P1-MATH-0248",
+        "P1-MATH-0249",
+        "P1-MATH-0250",
+        "P1-MATH-0251",
+        "P1-MATH-0252",
+        "P1-MATH-0253",
+        "P1-MATH-0254",
+        "P1-MATH-0255",
+        "P1-MATH-0256",
+        "P1-MATH-0257",
+        "P1-MATH-0258",
+        "P1-MATH-0259",
+        "P1-MATH-0260",
+        "P1-MATH-0261",
+        "P1-MATH-0262",
+        "P1-MATH-0263",
+        "P1-MATH-0264",
+        "P1-MATH-0265",
+        "P1-MATH-0266",
+        "P1-MATH-0267",
+        "P1-MATH-0268",
+        "P1-MATH-0269",
+        "P1-MATH-0270",
+        "P1-MATH-0271",
+        "P1-MATH-0272",
+        "P1-MATH-0273",
+        "P1-MATH-0274",
+        "P1-MATH-0275",
+        "P1-MATH-0276",
+        "P1-MATH-0277",
+        "P1-MATH-0278",
+        "P1-MATH-0279",
+        "P1-MATH-0280",
+        "P1-MATH-0281",
+        "P1-MATH-0282",
+        "P1-MATH-0283",
+        "P1-MATH-0284",
+        "P1-MATH-0285",
+        "P1-MATH-0286",
+        "P1-MATH-0287",
+        "P1-MATH-0288",
+        "P1-MATH-0289",
+        "P1-MATH-0290",
+        "P1-MATH-0291",
+        "P1-MATH-0292",
+        "P1-MATH-0293",
+        "P1-MATH-0294",
+        "P1-MATH-0295",
+        "P1-MATH-0296",
+        "P1-MATH-0297",
+        "P1-MATH-0298",
+        "P1-MATH-0299",
+        "P1-MATH-0300",
+        "P1-MATH-0301",
+        "P1-MATH-0302",
+        "P1-MATH-0316",
+        "P1-MATH-0317",
+        "P1-MATH-0318",
+        "P1-MATH-0319",
+        "P1-MATH-0320",
+        "P1-MATH-0321",
+        "P1-MATH-0322",
+        "P1-MATH-0323",
+        "P1-MATH-0324",
+        "P1-MATH-0325",
+        "P1-MATH-0326",
+        "P1-MATH-0327",
+        "P1-MATH-0328",
+        "P1-MATH-0329",
+        "P1-MATH-0330",
+        "P1-MATH-0331",
+        "P1-MATH-0339",
+        "P1-MATH-0340",
+        "P1-MATH-0341",
+        "P1-MATH-0342",
+        "P1-MATH-0343",
+        "P1-MATH-0344",
+        "P1-MATH-0345",
+        "P1-MATH-0346",
+        "P1-MATH-0347",
+        "P1-MATH-0348",
+        "P1-MATH-0349",
+        "P1-MATH-0350",
+        "P1-MATH-0351",
+        "P1-MATH-0352",
+        "P1-MATH-0353",
+        "P1-MATH-0354",
+        "P1-MATH-0355",
+        "P1-MATH-0356",
+        "P1-MATH-0357",
+        "P1-MATH-0358",
+        "P1-MATH-0359",
+        "P1-MATH-0360",
+        "P1-MATH-0361",
+        "P1-MATH-0362"
+      ],
+      "classifications": {
+        "improvement": 113
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:arith:geometric",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T1.7",
+      "title": "The uniform geometric counts",
+      "historical_entries": 111,
+      "entry_ids": [
+        "P1-MATH-0096",
+        "P1-MATH-0105",
+        "P1-MATH-0106",
+        "P1-MATH-0107",
+        "P1-MATH-0108",
+        "P1-MATH-0109",
+        "P1-MATH-0110",
+        "P1-MATH-0111",
+        "P1-MATH-0112",
+        "P1-MATH-0161",
+        "P1-MATH-0497",
+        "P1-MATH-0561",
+        "P1-MATH-0562",
+        "P1-MATH-0563",
+        "P1-MATH-0564",
+        "P1-MATH-0565",
+        "P1-MATH-0566",
+        "P1-MATH-0567",
+        "P1-MATH-0568",
+        "P1-MATH-0569",
+        "P1-MATH-0570",
+        "P1-MATH-0571",
+        "P1-MATH-0572",
+        "P1-MATH-0573",
+        "P1-MATH-0574",
+        "P1-MATH-0575",
+        "P1-MATH-0576",
+        "P1-MATH-0577",
+        "P1-MATH-0578",
+        "P1-MATH-0579",
+        "P1-MATH-0580",
+        "P1-MATH-0581",
+        "P1-MATH-0582",
+        "P1-MATH-0583",
+        "P1-MATH-0584",
+        "P1-MATH-0585",
+        "P1-MATH-0586",
+        "P1-MATH-0587",
+        "P1-MATH-0588",
+        "P1-MATH-0589",
+        "P1-MATH-0590",
+        "P1-MATH-0591",
+        "P1-MATH-0592",
+        "P1-MATH-0593",
+        "P1-MATH-0594",
+        "P1-MATH-0595",
+        "P1-MATH-0596",
+        "P1-MATH-0597",
+        "P1-MATH-0598",
+        "P1-MATH-0599",
+        "P1-MATH-0600",
+        "P1-MATH-0601",
+        "P1-MATH-0602",
+        "P1-MATH-0603",
+        "P1-MATH-0604",
+        "P1-MATH-0605",
+        "P1-MATH-0606",
+        "P1-MATH-0607",
+        "P1-MATH-0608",
+        "P1-MATH-0609",
+        "P1-MATH-0610",
+        "P1-MATH-0611",
+        "P1-MATH-0612",
+        "P1-MATH-0613",
+        "P1-MATH-0614",
+        "P1-MATH-0615",
+        "P1-MATH-0616",
+        "P1-MATH-0617",
+        "P1-MATH-0618",
+        "P1-MATH-0619",
+        "P1-MATH-0620",
+        "P1-MATH-0621",
+        "P1-MATH-0622",
+        "P1-MATH-0623",
+        "P1-MATH-0624",
+        "P1-MATH-0625",
+        "P1-MATH-0626",
+        "P1-MATH-0627",
+        "P1-MATH-0628",
+        "P1-MATH-0629",
+        "P1-MATH-0630",
+        "P1-MATH-0631",
+        "P1-MATH-0632",
+        "P1-MATH-0633",
+        "P1-MATH-0634",
+        "P1-MATH-0635",
+        "P1-MATH-0636",
+        "P1-MATH-0637",
+        "P1-MATH-0638",
+        "P1-MATH-0639",
+        "P1-MATH-0640",
+        "P1-MATH-0641",
+        "P1-MATH-0642",
+        "P1-MATH-0643",
+        "P1-MATH-0644",
+        "P1-MATH-0645",
+        "P1-MATH-0646",
+        "P1-MATH-0647",
+        "P1-MATH-0648",
+        "P1-MATH-0649",
+        "P1-MATH-0650",
+        "P1-MATH-0651",
+        "P1-MATH-0652",
+        "P1-MATH-0653",
+        "P1-MATH-0654",
+        "P1-MATH-0655",
+        "P1-MATH-0656",
+        "P1-MATH-0657",
+        "P1-MATH-0658",
+        "P1-MATH-0659",
+        "P1-MATH-0660"
+      ],
+      "classifications": {
+        "improvement": 111
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:limits:reciprocal",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T19.15",
+      "title": "Reciprocal odd-prime pivots",
+      "historical_entries": 24,
+      "entry_ids": [
+        "P1-MATH-0220",
+        "P1-MATH-0221",
+        "P1-MATH-0222",
+        "P1-MATH-0223",
+        "P1-MATH-0457",
+        "P1-MATH-0458",
+        "P1-MATH-0459",
+        "P1-MATH-0461",
+        "P1-MATH-0462",
+        "P1-MATH-0463",
+        "P1-MATH-0464",
+        "P1-MATH-0466",
+        "P1-MATH-0467",
+        "P1-MATH-0468",
+        "P1-MATH-0469",
+        "P1-MATH-0474",
+        "P1-MATH-0475",
+        "P1-MATH-0476",
+        "P1-MATH-0477",
+        "P1-MATH-0479",
+        "P1-MATH-0480",
+        "P1-MATH-0481",
+        "P1-MATH-0482",
+        "P1-MATH-0483"
+      ],
+      "classifications": {
+        "improvement": 24
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:consequences:macro",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T21.1",
+      "title": "Profiles depend on the interval",
+      "historical_entries": 22,
+      "entry_ids": [
+        "P1-MATH-0198",
+        "P1-MATH-0199",
+        "P1-MATH-0200",
+        "P1-MATH-0201",
+        "P1-MATH-0202",
+        "P1-MATH-0203",
+        "P1-MATH-0204",
+        "P1-MATH-0205",
+        "P1-MATH-0206",
+        "P1-MATH-0207",
+        "P1-MATH-0208",
+        "P1-MATH-0209",
+        "P1-MATH-0210",
+        "P1-MATH-0211",
+        "P1-MATH-0212",
+        "P1-MATH-0213",
+        "P1-MATH-0214",
+        "P1-MATH-0215",
+        "P1-MATH-0216",
+        "P1-MATH-0217",
+        "P1-MATH-0218",
+        "P1-MATH-0219"
+      ],
+      "classifications": {
+        "improvement": 22
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:limits:private-exact",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T19.16",
+      "title": "Exact logarithmic cost of this forcing",
+      "historical_entries": 17,
+      "entry_ids": [
+        "P1-MATH-0179",
+        "P1-MATH-0181",
+        "P1-MATH-0182",
+        "P1-MATH-0183",
+        "P1-MATH-0184",
+        "P1-MATH-0224",
+        "P1-MATH-0225",
+        "P1-MATH-0226",
+        "P1-MATH-0227",
+        "P1-MATH-0228",
+        "P1-MATH-0229",
+        "P1-MATH-0230",
+        "P1-MATH-0231",
+        "P1-MATH-0453",
+        "P1-MATH-0460",
+        "P1-MATH-0465",
+        "P1-MATH-0478"
+      ],
+      "classifications": {
+        "improvement": 17
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p13:transfer:dense-targets",
+      "kind": "numbered_result",
+      "document": "main",
+      "number": "15.2",
+      "title": "Conditional dense pair estimate",
+      "historical_entries": 10,
+      "entry_ids": [
+        "P1-MATH-0121",
+        "P1-MATH-0122",
+        "P1-MATH-0123",
+        "P1-MATH-0124",
+        "P1-MATH-0423",
+        "P1-MATH-0424",
+        "P1-MATH-0425",
+        "P1-MATH-0426",
+        "P1-MATH-0428",
+        "P1-MATH-0429"
+      ],
+      "classifications": {
+        "improvement": 10
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p13:rig:sublinear-grid",
+      "kind": "numbered_result",
+      "document": "main",
+      "number": "13.5",
+      "title": "Sublinear counts in the offset box",
+      "historical_entries": 9,
+      "entry_ids": [
+        "P1-MATH-0079",
+        "P1-MATH-0422",
+        "P1-MATH-0455",
+        "P1-MATH-0456",
+        "P1-MATH-0484",
+        "P1-MATH-0493",
+        "P1-MATH-0494",
+        "P1-MATH-0495",
+        "P1-MATH-0496"
+      ],
+      "classifications": {
+        "improvement": 9
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:limits:vector-reference",
+      "kind": "numbered_result",
+      "document": "main",
+      "number": "20.1",
+      "title": "Unsigned positional compound-Poisson comparison",
+      "historical_entries": 9,
+      "entry_ids": [
+        "P1-MATH-0154",
+        "P1-MATH-0155",
+        "P1-MATH-0442",
+        "P1-MATH-0992",
+        "P1-MATH-0993",
+        "P1-MATH-0994",
+        "P1-MATH-0995",
+        "P1-MATH-0996",
+        "P1-MATH-0997"
+      ],
+      "classifications": {
+        "improvement": 9
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:arith:asymmetric",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T1.10",
+      "title": "An asymmetric pair profile",
+      "historical_entries": 8,
+      "entry_ids": [
+        "P1-MATH-0162",
+        "P1-MATH-0163",
+        "P1-MATH-0310",
+        "P1-MATH-0311",
+        "P1-MATH-0312",
+        "P1-MATH-0332",
+        "P1-MATH-0446",
+        "P1-MATH-0984"
+      ],
+      "classifications": {
+        "correction": 1,
+        "improvement": 7
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:arith:twokernel",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T1.5",
+      "title": "Two small odd kernels",
+      "historical_entries": 7,
+      "entry_ids": [
+        "P1-MATH-0100",
+        "P1-MATH-0102",
+        "P1-MATH-0232",
+        "P1-MATH-0303",
+        "P1-MATH-0304",
+        "P1-MATH-0305",
+        "P1-MATH-0306"
+      ],
+      "classifications": {
+        "improvement": 7
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p13:short:quadratic",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T5.1",
+      "title": "A quadratic kernel with a prescribed divisor",
+      "historical_entries": 6,
+      "entry_ids": [
+        "P1-MATH-0053",
+        "P1-MATH-0054",
+        "P1-MATH-0313",
+        "P1-MATH-0314",
+        "P1-MATH-0315",
+        "P1-MATH-0985"
+      ],
+      "classifications": {
+        "improvement": 5,
+        "correction": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:arith:twogoodpositive",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T1.17",
+      "title": "A positive second moment for good edges",
+      "historical_entries": 6,
+      "entry_ids": [
+        "P1-MATH-0092",
+        "P1-MATH-0101",
+        "P1-MATH-0103",
+        "P1-MATH-0104",
+        "P1-MATH-0444",
+        "P1-MATH-0445"
+      ],
+      "classifications": {
+        "improvement": 6
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:limits:cylinder",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T19.7",
+      "title": "Divergence of the real exponential moment",
+      "historical_entries": 6,
+      "entry_ids": [
+        "P1-MATH-0986",
+        "P1-MATH-0987",
+        "P1-MATH-0988",
+        "P1-MATH-0989",
+        "P1-MATH-0990",
+        "P1-MATH-0991"
+      ],
+      "classifications": {
+        "improvement": 6
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:arith:fixed-channel-rank",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T2.6",
+      "title": "Additional rank in a fixed channel",
+      "historical_entries": 5,
+      "entry_ids": [
+        "P1-MATH-0036",
+        "P1-MATH-0037",
+        "P1-MATH-0038",
+        "P1-MATH-0040",
+        "P1-MATH-0041"
+      ],
+      "classifications": {
+        "improvement": 5
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p13:third:main",
+      "kind": "numbered_result",
+      "document": "main",
+      "number": "14.1",
+      "title": "Optimal power of the third factorial cumulant",
+      "historical_entries": 4,
+      "entry_ids": [
+        "P1-MATH-0153",
+        "P1-MATH-0175",
+        "P1-MATH-0454",
+        "P1-MATH-0488"
+      ],
+      "classifications": {
+        "improvement": 4
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p13:transfer:fixed-activities",
+      "kind": "numbered_result",
+      "document": "main",
+      "number": "15.10",
+      "title": "Reduction of connected activities",
+      "historical_entries": 4,
+      "entry_ids": [
+        "P1-MATH-0134",
+        "P1-MATH-0135",
+        "P1-MATH-0148",
+        "P1-MATH-0432"
+      ],
+      "classifications": {
+        "improvement": 4
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p13:transfer:independent-tail",
+      "kind": "numbered_result",
+      "document": "main",
+      "number": "15.8",
+      "title": "Independent full-support tails",
+      "historical_entries": 4,
+      "entry_ids": [
+        "P1-MATH-0127",
+        "P1-MATH-0166",
+        "P1-MATH-0167",
+        "P1-MATH-1000"
+      ],
+      "classifications": {
+        "improvement": 4
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:arith:fixed-homogeneous-seeds",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T1.12",
+      "title": "Homogeneous seeds for fixed extensions",
+      "historical_entries": 4,
+      "entry_ids": [
+        "P1-MATH-0168",
+        "P1-MATH-0173",
+        "P1-MATH-0174",
+        "P1-MATH-0447"
+      ],
+      "classifications": {
+        "improvement": 4
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p13:base-approximation",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T17.5",
+      "title": "The first quadratic approximation",
+      "historical_entries": 3,
+      "entry_ids": [
+        "P1-MATH-0146",
+        "P1-MATH-0149",
+        "P1-MATH-0434"
+      ],
+      "classifications": {
+        "improvement": 3
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p13:lower:quartic",
+      "kind": "numbered_result",
+      "document": "main",
+      "number": "16.1",
+      "title": "The fourth factorial cumulant",
+      "historical_entries": 3,
+      "entry_ids": [
+        "P1-MATH-0089",
+        "P1-MATH-0150",
+        "P1-MATH-0436"
+      ],
+      "classifications": {
+        "improvement": 3
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p13:rig:nonaligned",
+      "kind": "numbered_result",
+      "document": "main",
+      "number": "13.6",
+      "title": "A uniform nonaligned rank bound",
+      "historical_entries": 3,
+      "entry_ids": [
+        "P1-MATH-0080",
+        "P1-MATH-0485",
+        "P1-MATH-0486"
+      ],
+      "classifications": {
+        "improvement": 3
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p13:rig:triple",
+      "kind": "numbered_result",
+      "document": "main",
+      "number": "13.8",
+      "title": "Triple rank and maximum joint probability",
+      "historical_entries": 3,
+      "entry_ids": [
+        "P1-MATH-0081",
+        "P1-MATH-0082",
+        "P1-MATH-0487"
+      ],
+      "classifications": {
+        "improvement": 3
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p13:rig:two-witnesses",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T9.5",
+      "title": "Two complete witnesses",
+      "historical_entries": 3,
+      "entry_ids": [
+        "P1-MATH-0074",
+        "P1-MATH-0075",
+        "P1-MATH-0076"
+      ],
+      "classifications": {
+        "improvement": 3
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p13:short:split",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T5.2",
+      "title": "Kernels of a split product",
+      "historical_entries": 3,
+      "entry_ids": [
+        "P1-MATH-0055",
+        "P1-MATH-0056",
+        "P1-MATH-0057"
+      ],
+      "classifications": {
+        "improvement": 3
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p13:transfer:uniform-tail",
+      "kind": "numbered_result",
+      "document": "main",
+      "number": "15.12",
+      "title": "Uniform connected and primitive tails",
+      "historical_entries": 3,
+      "entry_ids": [
+        "P1-MATH-0133",
+        "P1-MATH-0136",
+        "P1-MATH-0433"
+      ],
+      "classifications": {
+        "improvement": 3
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:arith:hosts",
+      "kind": "numbered_result",
+      "document": "main",
+      "number": "3.2",
+      "title": "Support and residual mass",
+      "historical_entries": 3,
+      "entry_ids": [
+        "P1-MATH-0068",
+        "P1-MATH-0113",
+        "P1-MATH-0409"
+      ],
+      "classifications": {
+        "improvement": 3
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:arith:small-kernels",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T1.13",
+      "title": "Small-kernel counts for fixed-width blocks",
+      "historical_entries": 3,
+      "entry_ids": [
+        "P1-MATH-0307",
+        "P1-MATH-0308",
+        "P1-MATH-0309"
+      ],
+      "classifications": {
+        "improvement": 3
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:arith:ternary-budget",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T1.16",
+      "title": "A ternary group budget",
+      "historical_entries": 3,
+      "entry_ids": [
+        "P1-MATH-0114",
+        "P1-MATH-0115",
+        "P1-MATH-0116"
+      ],
+      "classifications": {
+        "improvement": 3
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:core:compressed",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T15.1",
+      "title": "A distinguished compressed pair at all cardinalities",
+      "historical_entries": 3,
+      "entry_ids": [
+        "P1-MATH-0143",
+        "P1-MATH-0177",
+        "P1-MATH-0178"
+      ],
+      "classifications": {
+        "improvement": 3
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:core:fixed-centred",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T14.1",
+      "title": "Absolute centred mass at a fixed order",
+      "historical_entries": 3,
+      "entry_ids": [
+        "P1-MATH-0091",
+        "P1-MATH-0137",
+        "P1-MATH-0431"
+      ],
+      "classifications": {
+        "improvement": 3
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:core:low-nullity",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T16.1",
+      "title": "All cardinalities below two ranks",
+      "historical_entries": 3,
+      "entry_ids": [
+        "P1-MATH-0138",
+        "P1-MATH-0142",
+        "P1-MATH-0438"
+      ],
+      "classifications": {
+        "improvement": 3
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:fixed:moments",
+      "kind": "numbered_result",
+      "document": "main",
+      "number": "6.4",
+      "title": "Fixed factorial moments",
+      "historical_entries": 3,
+      "entry_ids": [
+        "P1-MATH-0141",
+        "P1-MATH-0413",
+        "P1-MATH-0437"
+      ],
+      "classifications": {
+        "improvement": 3
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:limits:erasure",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T19.10",
+      "title": "Deletion, isolation, and remaining covariances",
+      "historical_entries": 3,
+      "entry_ids": [
+        "P1-MATH-0156",
+        "P1-MATH-0157",
+        "P1-MATH-0159"
+      ],
+      "classifications": {
+        "improvement": 3
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:uniform:replicas",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T22.7",
+      "title": "The replica formula and positive propagation",
+      "historical_entries": 3,
+      "entry_ids": [
+        "P1-MATH-0070",
+        "P1-MATH-1001",
+        "P1-MATH-1003"
+      ],
+      "classifications": {
+        "improvement": 3
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p13:activity:deficit",
+      "kind": "numbered_result",
+      "document": "main",
+      "number": "11.1",
+      "title": "The independent cost of one target after a pair",
+      "historical_entries": 2,
+      "entry_ids": [
+        "P1-MATH-0119",
+        "P1-MATH-0416"
+      ],
+      "classifications": {
+        "improvement": 2
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p13:activity:incompatible",
+      "kind": "numbered_result",
+      "document": "main",
+      "number": "11.2",
+      "title": "Absolute activity of incompatible triples",
+      "historical_entries": 2,
+      "entry_ids": [
+        "P1-MATH-0072",
+        "P1-MATH-0418"
+      ],
+      "classifications": {
+        "improvement": 2
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p13:activity:pair-partition",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T7.1",
+      "title": "A finite partition of the pair activity",
+      "historical_entries": 2,
+      "entry_ids": [
+        "P1-MATH-0090",
+        "P1-MATH-0415"
+      ],
+      "classifications": {
+        "improvement": 2
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p13:conf:dense-primitive",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T8.2",
+      "title": "Dense primitive triples",
+      "historical_entries": 2,
+      "entry_ids": [
+        "P1-MATH-0407",
+        "P1-MATH-1002"
+      ],
+      "classifications": {
+        "improvement": 2
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p13:half:conditional",
+      "kind": "numbered_result",
+      "document": "main",
+      "number": "10.1",
+      "title": "Conditional full-support count",
+      "historical_entries": 2,
+      "entry_ids": [
+        "P1-MATH-0064",
+        "P1-MATH-0065"
+      ],
+      "classifications": {
+        "improvement": 2
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p13:optimal:weighted",
+      "kind": "numbered_result",
+      "document": "main",
+      "number": "17.1",
+      "title": "Every fixed polynomial weight",
+      "historical_entries": 2,
+      "entry_ids": [
+        "P1-MATH-0165",
+        "P1-MATH-0490"
+      ],
+      "classifications": {
+        "improvement": 2
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p13:short:moments",
+      "kind": "numbered_result",
+      "document": "main",
+      "number": "9.1",
+      "title": "Uniform moments for short split products",
+      "historical_entries": 2,
+      "entry_ids": [
+        "P1-MATH-0058",
+        "P1-MATH-0059"
+      ],
+      "classifications": {
+        "improvement": 2
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p13:third:rational-rank",
+      "kind": "numbered_result",
+      "document": "main",
+      "number": "14.2",
+      "title": "A sharp rational overlap inequality",
+      "historical_entries": 2,
+      "entry_ids": [
+        "P1-MATH-0067",
+        "P1-MATH-0099"
+      ],
+      "classifications": {
+        "improvement": 2
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p13:transfer:conversion",
+      "kind": "numbered_result",
+      "document": "main",
+      "number": "15.1",
+      "title": "Conversion with heterogeneous marginals",
+      "historical_entries": 2,
+      "entry_ids": [
+        "P1-MATH-0086",
+        "P1-MATH-0414"
+      ],
+      "classifications": {
+        "improvement": 2
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p13:transfer:pair-deficit",
+      "kind": "numbered_result",
+      "document": "main",
+      "number": "15.9",
+      "title": "The pair deficit over all cardinalities",
+      "historical_entries": 2,
+      "entry_ids": [
+        "P1-MATH-0130",
+        "P1-MATH-0417"
+      ],
+      "classifications": {
+        "improvement": 2
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p13:transfer:primitive",
+      "kind": "numbered_result",
+      "document": "main",
+      "number": "15.5",
+      "title": "Primitive mass at every fixed size",
+      "historical_entries": 2,
+      "entry_ids": [
+        "P1-MATH-0073",
+        "P1-MATH-0427"
+      ],
+      "classifications": {
+        "improvement": 2
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:arith:fixed-channel-mass",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T2.5",
+      "title": "Mass of a fixed channel",
+      "historical_entries": 2,
+      "entry_ids": [
+        "P1-MATH-0044",
+        "P1-MATH-0045"
+      ],
+      "classifications": {
+        "improvement": 2
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:arith:fixed-channel-palm",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T2.7",
+      "title": "Palm mean for a fixed channel",
+      "historical_entries": 2,
+      "entry_ids": [
+        "P1-MATH-0171",
+        "P1-MATH-0449"
+      ],
+      "classifications": {
+        "improvement": 2
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:arith:fixed-support",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T1.14",
+      "title": "A relative relation meeting several blocks",
+      "historical_entries": 2,
+      "entry_ids": [
+        "P1-MATH-0047",
+        "P1-MATH-0066"
+      ],
+      "classifications": {
+        "improvement": 2
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:arith:pairs",
+      "kind": "numbered_result",
+      "document": "main",
+      "number": "3.3",
+      "title": "Complete pair profile",
+      "historical_entries": 2,
+      "entry_ids": [
+        "P1-MATH-0043",
+        "P1-MATH-0411"
+      ],
+      "classifications": {
+        "improvement": 2
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:close:boundary-mass",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T17.3",
+      "title": "Positive mass outside the retained class",
+      "historical_entries": 2,
+      "entry_ids": [
+        "P1-MATH-0145",
+        "P1-MATH-0439"
+      ],
+      "classifications": {
+        "improvement": 2
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:consequences:confinement",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T21.4",
+      "title": "Polylogarithmic confinement",
+      "historical_entries": 2,
+      "entry_ids": [
+        "P1-MATH-0117",
+        "P1-MATH-0118"
+      ],
+      "classifications": {
+        "improvement": 2
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:cor:compound",
+      "kind": "numbered_result",
+      "document": "main",
+      "number": "19.1",
+      "title": "Hermite approximation with single and double jumps",
+      "historical_entries": 2,
+      "entry_ids": [
+        "P1-MATH-0087",
+        "P1-MATH-0492"
+      ],
+      "classifications": {
+        "improvement": 2
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:core:exceptional",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T15.2",
+      "title": "A single pair is the only remaining active component",
+      "historical_entries": 2,
+      "entry_ids": [
+        "P1-MATH-0144",
+        "P1-MATH-0440"
+      ],
+      "classifications": {
+        "improvement": 2
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:fixed:compressed",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T4.4",
+      "title": "Fixed primitive mass after pair compression",
+      "historical_entries": 2,
+      "entry_ids": [
+        "P1-MATH-0176",
+        "P1-MATH-0448"
+      ],
+      "classifications": {
+        "improvement": 2
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:fixed:propagation",
+      "kind": "numbered_result",
+      "document": "main",
+      "number": "6.3",
+      "title": "Conditional sums and propagation",
+      "historical_entries": 2,
+      "entry_ids": [
+        "P1-MATH-0093",
+        "P1-MATH-0094"
+      ],
+      "classifications": {
+        "improvement": 2
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:fixed:recovery",
+      "kind": "numbered_result",
+      "document": "main",
+      "number": "6.1",
+      "title": "Disjoint recovery",
+      "historical_entries": 2,
+      "entry_ids": [
+        "P1-MATH-0013",
+        "P1-MATH-0014"
+      ],
+      "classifications": {
+        "improvement": 2
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:limits:all-pairs",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T19.14",
+      "title": "All active pair dependencies can be removed",
+      "historical_entries": 2,
+      "entry_ids": [
+        "P1-MATH-0158",
+        "P1-MATH-0443"
+      ],
+      "classifications": {
+        "improvement": 2
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:offset:line-product",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T20.1",
+      "title": "The prime product on an offset line",
+      "historical_entries": 2,
+      "entry_ids": [
+        "P1-MATH-0024",
+        "P1-MATH-0025"
+      ],
+      "classifications": {
+        "improvement": 2
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:offset:six-vertex",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T20.8",
+      "title": "A six-vertex budget for the residual space",
+      "historical_entries": 2,
+      "entry_ids": [
+        "P1-MATH-0160",
+        "P1-MATH-0452"
+      ],
+      "classifications": {
+        "improvement": 2
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:thm:main",
+      "kind": "numbered_result",
+      "document": "main",
+      "number": "1.1",
+      "title": "Optimal quadratic Poisson--Charlier approximation",
+      "historical_entries": 2,
+      "entry_ids": [
+        "P1-MATH-0164",
+        "P1-MATH-0489"
+      ],
+      "classifications": {
+        "improvement": 2
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:uniform:one-pair",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T22.5",
+      "title": "A single pair at all critical orders",
+      "historical_entries": 2,
+      "entry_ids": [
+        "P1-MATH-0170",
+        "P1-MATH-0441"
+      ],
+      "classifications": {
+        "improvement": 2
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": null,
+      "kind": "auxiliary_or_unlabelled",
+      "document": "companion",
+      "number": null,
+      "title": null,
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0999"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p13:activity:kappa3",
+      "kind": "numbered_result",
+      "document": "main",
+      "number": "11.3",
+      "title": "The third cumulant and the positive activity",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0071"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p13:channels:hierarchy",
+      "kind": "numbered_result",
+      "document": "main",
+      "number": "18.1",
+      "title": "The optimal error of every fixed height truncation",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0151"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p13:channels:weighted-nonaligned",
+      "kind": "numbered_result",
+      "document": "main",
+      "number": "18.2",
+      "title": "Weighted nonaligned pairs",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0410"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p13:conf:groups",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T8.1",
+      "title": "Polynomial confinement of common divisors",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0402"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p13:conf:near-primitive",
+      "kind": "numbered_result",
+      "document": "main",
+      "number": "12.1",
+      "title": "Dense triples with weak proper intersections",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0408"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p13:conf:strong-profile",
+      "kind": "numbered_result",
+      "document": "main",
+      "number": "12.2",
+      "title": "A strong nonaligned pair in a triple",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0152"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p13:half:saturation",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T6.3",
+      "title": "Incoming and outgoing certificate counts",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0063"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p13:half:small-kernels",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T6.1",
+      "title": "Two small kernels",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0061"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p13:half:smooth",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T6.2",
+      "title": "A large smooth modulus",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0062"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p13:optimal:nominal",
+      "kind": "numbered_result",
+      "document": "main",
+      "number": "17.3",
+      "title": "The quantized mean bias",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0085"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p13:rig:aligned",
+      "kind": "numbered_result",
+      "document": "main",
+      "number": "13.7",
+      "title": "Rank on a known alignment",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0042"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p13:rig:defective",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T9.2",
+      "title": "Few defective positions in every critical window",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0006"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p13:rig:factor-height",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T9.4",
+      "title": "Height of a bivariate factor",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0008"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p13:rig:grid-fibres",
+      "kind": "numbered_result",
+      "document": "main",
+      "number": "13.3",
+      "title": "Integer fibres in the offset grid",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0077"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p13:rig:local-square",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T9.1",
+      "title": "A local square threshold",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0005"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p13:rig:short-basis",
+      "kind": "numbered_result",
+      "document": "main",
+      "number": "13.1",
+      "title": "A short basis with a controlled loss of dimension",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0078"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p13:short:old-space",
+      "kind": "numbered_result",
+      "document": "main",
+      "number": "9.2",
+      "title": "Short projections in an old space",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0060"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p13:third:aligned",
+      "kind": "numbered_result",
+      "document": "main",
+      "number": "14.4",
+      "title": "Strong aligned pairs",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0450"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p13:third:aligned-family",
+      "kind": "numbered_result",
+      "document": "main",
+      "number": "14.3",
+      "title": "Triples meeting finitely many aligned channels",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0451"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p13:third:lower",
+      "kind": "numbered_result",
+      "document": "main",
+      "number": "14.5",
+      "title": "The rational lower bound",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0098"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p13:transfer:compressed-target",
+      "kind": "numbered_result",
+      "document": "main",
+      "number": "15.3",
+      "title": "A dense compressed target",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0125"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p13:transfer:fixed-deficit",
+      "kind": "numbered_result",
+      "document": "main",
+      "number": "15.7",
+      "title": "A fixed number of extensions of a pair",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0126"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p13:transfer:independent-deficit",
+      "kind": "numbered_result",
+      "document": "main",
+      "number": "15.6",
+      "title": "Uniform independent deficit",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0129"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p13:transfer:small-kernels",
+      "kind": "numbered_result",
+      "document": "main",
+      "number": "15.4",
+      "title": "Several small kernels in one window",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0120"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p18:conf:anchored",
+      "kind": "auxiliary_or_unlabelled",
+      "document": "companion",
+      "number": null,
+      "title": null,
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0998"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p18:conf:fixed-primitive",
+      "kind": "auxiliary_or_unlabelled",
+      "document": "companion",
+      "number": null,
+      "title": null,
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-1004"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:arith:alignedrank",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T1.9",
+      "title": "Uniform residual rank on an aligned pair",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0039"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:arith:anchor",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T1.6",
+      "title": "A large selected kernel",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0046"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:arith:compression",
+      "kind": "numbered_result",
+      "document": "main",
+      "number": "3.5",
+      "title": "Exact compression of a good edge",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0035"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:arith:coordinate-regularisation",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T2.2",
+      "title": "Coordinate regularisation",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0011"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:arith:defects",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T1.3",
+      "title": "Local and global defect counts",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0003"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:arith:dense",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T1.8",
+      "title": "The dense weighted sector",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0430"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:arith:finite-family-triples",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T2.8",
+      "title": "Triples containing a good pair",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0172"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:arith:fixed-branching",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T1.15",
+      "title": "A fixed number of exposed source windows",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0030"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:arith:palm",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T3.1",
+      "title": "Positive Palm cost of a good edge",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0169"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:arith:runge",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T1.1",
+      "title": "A split-product bound uniform in the degree",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0002"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:arith:ternary-degree",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T2.3",
+      "title": "Constraints meeting three blocks",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0012"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:close:constant-bounds",
+      "kind": "auxiliary_or_unlabelled",
+      "document": "main",
+      "number": null,
+      "title": null,
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0023"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:close:conversion",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T17.4",
+      "title": "Poisson--Charlier conversion",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0084"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:close:deficit-bounds",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T17.1",
+      "title": "Bounds for the independent deficits",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0131"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:close:retained-reference",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T17.2",
+      "title": "Evaluation of the retained polynomial",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0083"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:consequences:conditional-rank",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T21.2",
+      "title": "Conditional rank loss",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0029"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:consequences:rankin-patterns",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T21.3",
+      "title": "A Rankin bound for offset patterns",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0017"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:cor:explicit",
+      "kind": "numbered_result",
+      "document": "main",
+      "number": "1.4",
+      "title": "An explicit probability reference",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0435"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:cor:tv",
+      "kind": "numbered_result",
+      "document": "main",
+      "number": "1.2",
+      "title": "Exact total variation scale",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0491"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:core:bounded-nullity",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T16.3",
+      "title": "Bounded compatible nullity on the growing range",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0140"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:core:degrees",
+      "kind": "numbered_result",
+      "document": "main",
+      "number": "7.3",
+      "title": "Incoming and outgoing saturation degrees",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0021"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:core:generator",
+      "kind": "numbered_result",
+      "document": "main",
+      "number": "7.4",
+      "title": "A generating function with marked isolated vertices",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0022"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:core:moderate",
+      "kind": "numbered_result",
+      "document": "main",
+      "number": "7.2",
+      "title": "Counting moderate certificates",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0020"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:core:positive-core",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T16.2",
+      "title": "Positive mass of high-nullity cores",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0139"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:core:primitive",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T14.2",
+      "title": "Primitive families at all cardinalities",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0132"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:core:rankin",
+      "kind": "numbered_result",
+      "document": "main",
+      "number": "7.1",
+      "title": "Counting a small truncated squarefree kernel",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0015"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:fixed:CRT",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T4.2",
+      "title": "A product certificate with fixed sources",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0018"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:fixed:curve",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T4.1",
+      "title": "Several disjoint square equations",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0069"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:fixed:primitive",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T4.3",
+      "title": "Fixed primitive mass",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0419"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:limits:branching",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T19.4",
+      "title": "Branching with an explicit order dependence",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0412"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:limits:colored-tail",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T19.6",
+      "title": "A very small tail from a power threshold",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0033"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:limits:effective-tail",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T19.5",
+      "title": "A quantified effective support",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0034"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:limits:local-blocks",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T19.2",
+      "title": "Exact local blocks",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0027"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:limits:local-rigidity",
+      "kind": "numbered_result",
+      "document": "main",
+      "number": "2.1",
+      "title": "Local rigidity",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0004"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:limits:modified",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T19.3",
+      "title": "A modified count with all factorial tails",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0088"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:limits:peeling",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T19.8",
+      "title": "Deleting large private ranks",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0028"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:limits:stein",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T19.11",
+      "title": "A scalar recurrence criterion",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0031"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:limits:weighted-residual",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T19.13",
+      "title": "A recurrence norm equivalent to total variation",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0010"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:obstruction:fixed",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T23.1",
+      "title": "A perturbation invisible at each fixed order",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0009"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:offset:cover-rank",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T20.7",
+      "title": "Covering cost and free components",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0032"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:offset:forced-plane",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T20.3",
+      "title": "A forced plane uses all three coordinates",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0026"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:offset:normal-budget",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T20.4",
+      "title": "Many planar supports force a small normal",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0095"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:offset:planar-components",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T20.6",
+      "title": "Many transverse square products on prescribed planes",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0097"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:offset:root-separation",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T20.5",
+      "title": "At most one common root",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0019"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:stop:class",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T12.1",
+      "title": "Heredity and boundary nullity",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0051"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:stop:polynomial",
+      "kind": "numbered_result",
+      "document": "main",
+      "number": "5.1",
+      "title": "Expansion at the first excluded prefix",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0001"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:stop:tail",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T12.2",
+      "title": "Large boundary families",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0052"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:uniform:full-support",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T22.1",
+      "title": "A weighted count of every full support",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0128"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:uniform:missing-block",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T22.2",
+      "title": "When no relation uses every block",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0007"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:uniform:modified-moments",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T22.6",
+      "title": "Moment decomposition and pair leakage",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0147"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    },
+    {
+      "label": "p1:uniform:prime-budget",
+      "kind": "numbered_result",
+      "document": "companion",
+      "number": "T22.3",
+      "title": "Rankin under a logarithmic prime budget",
+      "historical_entries": 1,
+      "entry_ids": [
+        "P1-MATH-0016"
+      ],
+      "classifications": {
+        "improvement": 1
+      },
+      "interpretation": "One location group, not a count of independent manuscript corrections."
+    }
+  ],
+  "limits": [
+    "Grouping is mechanical by the recorded primary location; findings may have cross-result consequences.",
+    "Historical descriptions of unfinished work refer to their original snapshots and are preserved.",
+    "Neither 1002 improvements nor the evidence-name count is a count of independent scientific amendments.",
+    "The 2041 support/object names are checked references, not proved theorem declarations.",
+    "This index does not replace the clause-by-clause 167-result review or independently classify every historical entry's scientific novelty."
+  ]
+}
