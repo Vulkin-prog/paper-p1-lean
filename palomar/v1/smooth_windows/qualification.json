@@ -63,5 +63,8 @@
   "palomar_complete_reusable_workflow_passed": false,
   "editorial_review": null,
   "registration": null,
-  "scope": "Local statement comparison and Lean/NanoDa replay on the exact source commit. This is not Palomar mechanical preflight, editorial review or registration."
+  "scope": "Local statement comparison and Lean/NanoDa replay on the exact source commit. This is not Palomar mechanical preflight, editorial review or registration.",
+  "full_build_jobs": 18537,
+  "all_audited_theorems": 19291,
+  "count_provenance": "Counts derived from the already preserved full-build and direct-audit logs and checked against the immutable source inventory; original logs and source identities unchanged."
 }

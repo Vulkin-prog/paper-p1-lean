@@ -6,12 +6,15 @@ Historical receipts stay bound to their original source and audit inventory.
 """
 
 import argparse
+from functools import lru_cache
 import gzip
 import hashlib
 import json
 from pathlib import Path, PurePosixPath
 import re
 import subprocess
+
+from update_audit import lean_code
 
 ROOT = Path(__file__).resolve().parents[1]
 ALLOWED = {'propext', 'Classical.choice', 'Quot.sound'}
@@ -38,10 +41,37 @@ def validate_audit(text, names):
     return len(found)
 
 
+@lru_cache(maxsize=None)
 def source_blob(commit, relative):
     path = PurePosixPath(relative)
     require(not path.is_absolute() and '..' not in path.parts, 'Unsafe source-relative path')
     return subprocess.check_output(['git', 'show', f'{commit}:{relative}'], cwd=ROOT)
+
+
+@lru_cache(maxsize=None)
+def changed_sources(commit):
+    return set(subprocess.check_output(
+        ['git', 'diff', '--name-only', commit, '--', 'PaperP1', 'PaperP1.lean'],
+        cwd=ROOT, text=True,
+    ).splitlines())
+
+
+def check_current_proof_closure(commit, module):
+    """Detect changes in actual project imports without blocking unrelated additions."""
+    pending = [module]
+    seen = set()
+    while pending:
+        name = pending.pop()
+        if name in seen:
+            continue
+        seen.add(name)
+        relative = name.replace('.', '/') + '.lean'
+        require(relative not in changed_sources(commit),
+                f'Imported proof source differs from local evidence: {relative}')
+        code = lean_code((ROOT / relative).read_text())
+        imports = re.findall(r'^(?:(?:public|private)\s+)?import\s+(PaperP1(?:\.[A-Za-z0-9_]+)*)\s*$',
+                             code, re.M)
+        pending.extend(imports)
 
 
 def check_receipt(path):
@@ -67,6 +97,10 @@ def check_receipt(path):
         relative = config[module] + '.lean'
         require((ROOT / relative).read_bytes() == source_blob(source, relative),
                 f'Current statement/proof differs from local evidence: {relative}')
+    check_current_proof_closure(source, config['solution_module'])
+    for relative in ['lean-toolchain', 'lake-manifest.json']:
+        require((ROOT / relative).read_bytes() == source_blob(source, relative),
+                f'Current compiler/dependency pin differs from local evidence: {relative}')
     require((ROOT / receipt['configuration']).read_bytes() ==
             source_blob(source, receipt['configuration']), 'Current configuration differs from evidence')
     logs = {}
