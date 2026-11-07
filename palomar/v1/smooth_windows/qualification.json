@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "status": "local_dual_kernel_passed",
+  "source_commit": "eb3039966bdeeb0b4e5e895bc3bbecfe4222342a",
+  "toolchain": "leanprover/lean4:v4.36.0-rc2",
+  "mathlib_commit": "9d581dfff2e41de989072ea63abf3daf69311520",
+  "configuration": "comparator/p1_smooth_windows.json",
+  "declarations": [
+    "PaperP1Registry.SmoothWindows.almost_all_two_smooth",
+    "PaperP1Registry.SmoothWindows.uniform_off_central",
+    "PaperP1Registry.SmoothWindows.gaussian_mean_comparison"
+  ],
+  "checks": {
+    "challenge_build": true,
+    "solution_build": true,
+    "statement_comparison": true,
+    "permitted_axioms_only": true,
+    "lean_default_kernel": true,
+    "nanoda_kernel": true,
+    "bubblewrap_enabled": true,
+    "actual_process_exit_code": 0
+  },
+  "command": [
+    "lake",
+    "env",
+    "lake",
+    "comparator",
+    "--config",
+    "comparator/p1_smooth_windows.json"
+  ],
+  "files": {
+    "lean-toolchain": "11c697aebe5b539d74f5069e497a588e7dfab1c4eeb74313f28357e351c55ca3",
+    "lakefile.toml": "41a9063ebecca3b2fc100855acf6a4bb465e869804489ef149ee118e2389b904",
+    "lake-manifest.json": "e55097e7af1499ee442569b78349960413c5ff020700fff97fcf59ab95b338ad",
+    "ChallengeP1SmoothWindows.lean": "558542657ca2963b319f4cb5986908f36833976225ec305b3ab8d262c499e2d2",
+    "SolutionP1SmoothWindows.lean": "a99623cbc0cfc94ce3297dd1b50c896a1ba4f9d874dbf223547302c56eab9421",
+    "comparator/p1_smooth_windows.json": "de42fa39b674032111f32e4e5e2073c8c8ba62b2164209a857cb244979fb5831",
+    "palomar/v1/smooth_windows/formalization.yaml": "ba43e66e69c84c11fd3ca2ace4a06d3f87aed4b29a5a4a61d71d0e904ec0b31e"
+  },
+  "tool_binary_sha256": {
+    "lake": "42678ccbc2605e2f892540dc7236e009fdd1224e823d104dfd72725d2f1a52d2",
+    "leanexport": "8298d4412a1f8986b5dbfd1d9925211778d8d320fc47b72040c8fdfdd5b603d5",
+    "leanchecker": "2b2ff08805ace61c935b023f8114ac3f7f1d3bc79cb4e8c47ef7801a5af58798",
+    "nanoda_bin": "8241c5e6baa29490aa118d382f97961b208ae730fdb96545c2abed74c9ece5a8"
+  },
+  "logs": [
+    {
+      "kind": "comparator",
+      "path": "palomar/v1/evidence/smooth_windows-comparator.log.gz",
+      "sha256": "bb755ed77ce2f18dc2b1599f10f20ec297f844ec5987a93bfb07997331952358"
+    },
+    {
+      "kind": "full_build",
+      "path": "palomar/v1/evidence/initial-full-build.log.gz",
+      "sha256": "886d328ecae7d26e8c6cdca7b931fafbf21397e8f0fcb1ba6e1d9a7cb65ccee0"
+    },
+    {
+      "kind": "axiom_audit",
+      "path": "palomar/v1/evidence/initial-axiom-audit.log.gz",
+      "sha256": "60da604938a79a4a5ac1ba1201a36cde901958c50f406b19ee2b51655f17781f"
+    }
+  ],
+  "palomar_complete_reusable_workflow_passed": false,
+  "editorial_review": null,
+  "registration": null,
+  "scope": "Local statement comparison and Lean/NanoDa replay on the exact source commit. This is not Palomar mechanical preflight, editorial review or registration."
+}

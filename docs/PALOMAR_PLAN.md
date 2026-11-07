@@ -25,10 +25,19 @@ Current official tooling was checked on 7 November 2026:
   It is a bounded-purpose preparation check, not the full reusable Palomar
   workflow required before intake.
 
-Selected family interfaces, their standalone Mathlib-only Challenges,
-matched Solutions, metadata, local kernel replay and the complete pinned
-reusable workflow remain to be prepared and qualified. Local compilation
-does not establish registry acceptance or registration.
+The first selected family, ordinary smooth integers in logarithmic intervals,
+now has a standalone 95-line Mathlib-only Challenge, matched Solution and
+metadata. Its three selected statements passed Comparator and both Lean and
+NanoDa at source commit eb3039966bdeeb0b4e5e895bc3bbecfe4222342a with the
+bubblewrap boundary enabled. The invocation is `lake env lake comparator` so
+that the exact toolchain's bundled NanoDa is on the executable search path.
+Its receipt and compressed logs are in palomar/v1/smooth_windows and
+palomar/v1/evidence. The complete build passed 18,537 jobs and the extended
+audit checked 19,291 substantive and Solution theorems.
+
+Further independently meaningful families and the complete pinned reusable
+workflow remain to be prepared and qualified. Local compilation and dual-kernel
+replay do not establish registry acceptance or registration.
 
 Registrations are planned **after formalization is complete**, as requested.
 There are no submitted records, generated registry IDs, qualified Comparator
