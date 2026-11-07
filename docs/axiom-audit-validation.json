@@ -20,5 +20,7 @@
       "kind": "audit",
       "sha256_gzip": "bad400094342d47d9cce75194c4c3ec102c71a3ecada12c100a142428ba5718a"
     }
-  ]
+  ],
+  "source_commit": "13be90ed3fbda9b69ead06d32800d2a8fc2d17d5",
+  "scope": "Original 19288-theorem audit before adding standalone registration Solution wrappers; the original checkpoint-984 selection is preserved at this source commit."
 }

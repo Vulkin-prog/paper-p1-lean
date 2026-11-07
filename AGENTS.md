@@ -13,6 +13,14 @@ future manuscript version and preparing Palomar registrations after completion.
 - Do not count an abstract implication assuming the target bound as a proof of
   that bound. State all external inputs as explicit theorem arguments and record
   their exact scope. No hidden axioms, `sorry`, `admit` or circular interfaces.
+- For the user's requested Paper C-style Palomar workflow, standalone
+  `ChallengeP1*.lean` statement files may contain explicitly documented `sorry`
+  holes only for the declarations selected in their Comparator configurations.
+  These are statements to be compared, never proof evidence. They must import
+  only canonical permitted libraries, and must never be imported by PaperP1,
+  the axiom audit, or any Solution. Every Solution and substantive proof remains
+  free of placeholders and nonstandard axioms. Only Challenge libraries may
+  allow their expected placeholder warnings; proof warnings remain errors.
 - Keep exact heterogeneous marginals, affine incompatibility, repeated-index
   cumulant terms, quantifier order and fixed/growing-order regimes explicit.
 - The baseline has 167 numbered results (73 main, 94 companion). A preparatory

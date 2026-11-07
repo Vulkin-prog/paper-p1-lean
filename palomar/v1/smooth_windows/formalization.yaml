@@ -1,0 +1,96 @@
+version: v0.4
+project:
+  name: Ordinary smooth integers in logarithmic intervals
+  description: >-
+    For every fixed a>0, all but o(N) integer starts in [N,2N) have at least
+    two ordinary N^a-smooth integers in the following floor(log N/(4 log 2))
+    integers. The selected family also states the uniform off-central
+    Dirichlet-polynomial energy estimate and whole-line Gaussian mean-square
+    comparison used in its proof. The function class is real completely
+    multiplicative functions bounded by one at every prime. The frequency
+    cutoff precedes every fixed height multiplier. No unformalized
+    mathematical input is assumed. This is a sufficient census for the
+    P1 private-forcing obstruction, not a full Dickman asymptotic or a
+    general sharp short-interval mean-square theorem.
+  authors:
+    - name: Brice Pouly
+      github: Vulkin-prog
+      orcid: 0009-0008-8491-2467
+  responsible_maintainers:
+    - Brice Pouly
+  license: Apache-2.0
+repository:
+  role: substantive-development
+classification:
+  arxiv: [math.NT]
+sources:
+  - title: Sharp Poisson approximation and second-order correction for long multiplicative runs, technical companion, version 1.7 draft
+    authors:
+      - name: Brice Pouly
+        github: Vulkin-prog
+        orcid: 0009-0008-8491-2467
+    id: https://github.com/Vulkin-prog/paper-p1-lean
+    type: paper
+    relationship: formalizes
+    location: >-
+      Formalization appendix and the sufficient census used in T19.17.
+      Revised TeX sources: manuscripts/paper-p1/v1.7/sources/formalization.tex.
+      The separate source manifest and original version 1.6 package are preserved.
+    note: >-
+      Working manuscript supplied by the author; no publication identifier is
+      asserted. The full deterministic and randomized T19.17 obstruction is
+      proved elsewhere in the substantive development and is not selected in
+      this Comparator configuration.
+  - title: Multiplicative functions in short intervals
+    authors:
+      - Kaisa Matomäki
+      - Maksym Radziwiłł
+    id: https://annals.math.princeton.edu/2016/183-3/p06
+    type: paper
+    relationship: background
+    location: Corollary 6 and the short-interval method
+    note: >-
+      The original P1 proof appealed to a stronger ordinary smooth-number
+      relative-density statement. The selected sufficient census is proved
+      internally by the off-central estimate, exact Gaussian identity,
+      ordinary smooth long-mean comparison and physical localization.
+related_formalizations: []
+automation:
+  methods:
+    - method: agent
+      framework: Codex
+      models: [OpenAI Codex agents]
+      prompting_notes: >-
+        Formalization and source review under the author's requested Lean
+        version, with explicit quantifier order and source corrections.
+      tool_setup: >-
+        Lean proof construction, exact source-to-interface bridges, complete
+        source inventory, kernel axiom audits and paired statement preparation.
+  notes: Agent assistance is not independent human peer review.
+review:
+  status: agent-reviewed
+  notes: >-
+    The three Solution proofs compile without placeholders or warnings under
+    Lean v4.36.0-rc2. The Challenge imports only Mathlib and has exactly the
+    three intentional selected statement holes. Comparator, independent kernel
+    replay and complete Palomar mechanical preflight are recorded separately
+    when performed; compilation alone is not claimed as qualification.
+status:
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms: [propext, Quot.sound, Classical.choice]
+  scope: >-
+    Three selected analytic declarations, with no unformalized mathematical
+    premise. Intentional proof holes occur only in the standalone Challenge.
+    This selection does not represent all 167 numbered manuscript statements.
+    No registration, registry identifier, editorial decision or certification
+    is claimed at preparation.
+fidelity:
+  divergences: >-
+    The census uses the literal length floor(log N/(4 log 2)) and ordinary
+    smoothness, including prime two. It asserts two candidates almost
+    everywhere, not a Dickman relative-density asymptotic. The analytic
+    estimate concerns off-central frequencies; no fixed central-frequency
+    decay is claimed. The mean-square comparison is for the displayed
+    Gaussian averages, not sharp interval averages. These suffice for the
+    source census used by T19.17.
