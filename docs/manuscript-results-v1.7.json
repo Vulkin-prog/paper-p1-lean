@@ -8991,7 +8991,25 @@
         "PaperP1.PositionalArrivalCovariance.square_eq_factorial_two",
         "PaperP1.PositionalArrivalCovariance.sum_observed_inter",
         "PaperP1.PositionalArrivalCovariance.variance_coordinate",
-        "PaperP1.PositionalArrivalCovariance.variance_of_hasLaw"
+        "PaperP1.PositionalArrivalCovariance.variance_of_hasLaw",
+        "PaperP1.PositionalArrivalIndependence.independent_disjoint_sums",
+        "PaperP1.PositionalArrivalIndependence.poisson_zero_ae",
+        "PaperP1.PositionalArrivalIndependence.sum_eq_sdiff_of_shared_zero",
+        "PaperP1.PositionalArrivalIndependence.independent_sums_of_shared_zero",
+        "PaperP1.PositionalArrivalIndependence.memLp_real_sum",
+        "PaperP1.PositionalArrivalIndependence.cast_sum",
+        "PaperP1.PositionalArrivalIndependence.independent_real_sums_iff",
+        "PaperP1.PositionalArrivalIndependence.independent_nat_sums_iff",
+        "PaperP1.PositionalArrivalIndependence.independent_real_sums_iff_covariance_zero",
+        "PaperP1.PositionalArrivalIndependence.independent_coordinates_iff_covariance_zero",
+        "PaperP1.PositionalArrivalIndependence.independent_distinct_coordinates_iff",
+        "PaperP1.PositionalArrivalIndependence.independent_pair_coordinates_iff",
+        "PaperP1.PositionalArrivalIndependence.self_independent_coordinate_iff",
+        "PaperP1.PositionalArrivalIndependence.independent_canonical_pairs_iff",
+        "PaperP1.PositionalArrivalIndependence.independent_count_coordinates_iff",
+        "PaperP1.PositionalArrivalIndependence.independent_pair_counts_iff",
+        "PaperP1.PositionalArrivalIndependence.independent_canonical_distinct_iff",
+        "PaperP1.PositionalArrivalIndependence.dependent_pair_coordinates_iff"
       ],
       "remaining_unformalized_inputs": [],
       "canonical_statement": "PaperP1.PositionalGridApproximation.main_20_1",
@@ -9036,6 +9054,14 @@
           "scope": "For any finite ground and arbitrary finite packet family, every independent Poisson arrival realization has square-integrable actual coordinates. Their exact covariance is the compensated single rate on the diagonal plus the sum of all packet rates shared by the two sites. For pair packets the complete matrix has diagonal p_x, retained off-diagonal pair rate q_{x,y}, and zero for every other off-diagonal entry. Both formulas hold also for the explicit finite product realization. The means and variances equal p_x. These are reference-field identities; the original arithmetic indicators, exponent 4/5 and fixed-degree asymptotic comparison are preserved. No countability or measurable-space assumption on the ambient configuration space is used.",
           "validation_source_commit": "72c3ec562b832d46779a7fff91b52a750b43ebfb",
           "validation_record": "docs/validation/checkpoint-0994/validation.json"
+        },
+        {
+          "checkpoint": "P1-MATH-0995",
+          "kind": "exact_reference_arrival_independence",
+          "canonical_statement": "PaperP1.PositionalArrivalIndependence.independent_distinct_coordinates_iff",
+          "canonical_additional_statement": "PaperP1.PositionalArrivalIndependence.independent_pair_counts_iff",
+          "validation": "Eighteen theorems passed direct Lean v4.36.0-rc2 compilation with proof warnings as errors and exact permitted-axiom checks. Whole-project replay and manuscript integration are pending.",
+          "scope": "Two finite sums of mutually independent Poisson cells are independent if and only if the total rate of their shared cells is zero. The proof covers both natural-valued counts and their real-valued versions, including all zero-rate cells. Consequently two distinct actual reference coordinates for arbitrary finite packets are independent exactly when their shared packet intensity is zero. In a pair family, dependence occurs exactly on the retained edges with strictly positive rate; an absent edge or a zero-rate retained edge gives independence. A reference coordinate is independent of itself exactly when its original intensity is zero. Every statement holds for any independent realization and the canonical product law, without ambient countable-configuration assumptions. These are identities of the reference Poisson construction, not a general zero-covariance criterion or an assertion about independence in the original arithmetic model."
         }
       ]
     },

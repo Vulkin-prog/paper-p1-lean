@@ -1,6 +1,19 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0994: The exact covariance of the compensated
+Current checkpoint P1-MATH-0995: Two actual reference coordinates are
+independent exactly when their shared Poisson intensity is zero. For pairs,
+dependence occurs precisely on retained edges with strictly positive rate;
+zero-rate edges leave the coordinates independent. Natural-valued counts,
+real coordinates, arbitrary finite packets and the concrete product law
+are covered. The proof removes shared zero-rate cells almost everywhere,
+rather than inferring independence from covariance alone. The original
+arithmetic comparison and all 167 numbered statements are preserved.
+Eighteen theorems passed direct Lean and exact permitted-axiom checks.
+Full project replay and manuscript integration of this clarification are
+pending. Sixteen registry families with 64 selections remain locally
+qualified; no registration is claimed.
+
+Historical checkpoint P1-MATH-0994: The exact covariance of the compensated
 Poisson reference field is proved for arbitrary finite packets and every
 independent realization. Its coordinates are square integrable. For pair
 packets the full covariance matrix has diagonal p_x, retained pair entries

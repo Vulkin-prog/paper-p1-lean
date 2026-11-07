@@ -42734,6 +42734,54 @@
       },
       "validation_source_commit": "72c3ec562b832d46779a7fff91b52a750b43ebfb",
       "validation_record": "docs/validation/checkpoint-0994/validation.json"
+    },
+    {
+      "id": "P1-MATH-0995",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p1:limits:vector-reference",
+        "number": "20.1",
+        "page": 60,
+        "source": "main_sections/limits_appendix.tex",
+        "line": 45,
+        "statement_sha256": "fd15ebe1159f165a714eb5337648229bacb982d63e0d76c87f983cdeaf06f6a4"
+      },
+      "original_assumption": "The exact reference covariance identifies shared packet rates, but zero covariance alone is not a general independence theorem. The exact independence and positive-rate dependence criteria were not yet proved for the actual arrival variables.",
+      "finding": "Two finite sums of mutually independent Poisson cells are independent if and only if the total rate of their shared cells is zero. The proof covers both natural-valued counts and their real-valued versions, including all zero-rate cells. Consequently two distinct actual reference coordinates for arbitrary finite packets are independent exactly when their shared packet intensity is zero. In a pair family, dependence occurs exactly on the retained edges with strictly positive rate; an absent edge or a zero-rate retained edge gives independence. A reference coordinate is independent of itself exactly when its original intensity is zero. Every statement holds for any independent realization and the canonical product law, without ambient countable-configuration assumptions. These are identities of the reference Poisson construction, not a general zero-covariance criterion or an assertion about independence in the original arithmetic model.",
+      "proposed_revision": "State the sharp reference-coordinate independence criterion and identify positive-rate retained edges as the exact pair dependence graph, explicitly including zero-rate packets.",
+      "impact": "Distinguishes genuine independence from mere decorrelation and gives the precise dependence graph of the Poisson reference field, including degeneracies and natural-valued counts.",
+      "evidence": [
+        "PaperP1.PositionalArrivalIndependence.cast_sum",
+        "PaperP1.PositionalArrivalIndependence.dependent_pair_coordinates_iff",
+        "PaperP1.PositionalArrivalIndependence.independent_canonical_distinct_iff",
+        "PaperP1.PositionalArrivalIndependence.independent_canonical_pairs_iff",
+        "PaperP1.PositionalArrivalIndependence.independent_coordinates_iff_covariance_zero",
+        "PaperP1.PositionalArrivalIndependence.independent_count_coordinates_iff",
+        "PaperP1.PositionalArrivalIndependence.independent_disjoint_sums",
+        "PaperP1.PositionalArrivalIndependence.independent_distinct_coordinates_iff",
+        "PaperP1.PositionalArrivalIndependence.independent_nat_sums_iff",
+        "PaperP1.PositionalArrivalIndependence.independent_pair_coordinates_iff",
+        "PaperP1.PositionalArrivalIndependence.independent_pair_counts_iff",
+        "PaperP1.PositionalArrivalIndependence.independent_real_sums_iff",
+        "PaperP1.PositionalArrivalIndependence.independent_real_sums_iff_covariance_zero",
+        "PaperP1.PositionalArrivalIndependence.independent_sums_of_shared_zero",
+        "PaperP1.PositionalArrivalIndependence.memLp_real_sum",
+        "PaperP1.PositionalArrivalIndependence.poisson_zero_ae",
+        "PaperP1.PositionalArrivalIndependence.self_independent_coordinate_iff",
+        "PaperP1.PositionalArrivalIndependence.sum_eq_sdiff_of_shared_zero"
+      ],
+      "validation": "Eighteen theorems passed direct Lean v4.36.0-rc2 compilation with proof warnings as errors and exact permitted-axiom checks. Whole-project replay and manuscript integration are pending.",
+      "integration": {
+        "target": "P1 V1.7 draft",
+        "status": "pending",
+        "numbered_statements_changed": false,
+        "source": "manuscripts/paper-p1/v1.7/sources/formalization.tex",
+        "paragraph": "Realize the positional target by independent arrivals",
+        "pdf_validation": "docs/manuscript-v1.7-validation.json"
+      }
     }
   ]
 }
