@@ -1,0 +1,16 @@
+{
+  "challenge_module": "ChallengeP1Conditioning",
+  "solution_module": "SolutionP1Conditioning",
+  "theorem_names": [
+    "PaperP1Registry.Conditioning.conditional_target_sum",
+    "PaperP1Registry.Conditioning.colored_target_sum",
+    "PaperP1Registry.Conditioning.negative_deviation",
+    "PaperP1Registry.Conditioning.conditional_mean_lower"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "enable_nanoda": true
+}

@@ -1,0 +1,88 @@
+version: v0.4
+project:
+  name: Actual conditional laws and shared-small-prime replica target sums
+  description: For every fixed positive source count and every epsilon margin, one scale threshold
+    precedes all critical word lengths, all source centers, compatible arbitrary affine source
+    prescriptions and arbitrary target prescriptions. The sum of actual conditional target
+    probabilities over the whole dyadic interval is at most N^epsilon. The same threshold
+    is uniform over every finite color set, every shared-small-prime cutoff and every replica
+    color assignment. All denominators are the actual positive joint source probabilities.
+    After any fixed number of actual starts, the total negative conditional deviation is at
+    most N^(-1/2+epsilon), and the conditional full count with source starts removed is at
+    least N/2^L-N^(-1/2+epsilon). Independent prime signs, literal boundary bits, full counts
+    and replica laws are explicit. No unformalized mathematical input is assumed.
+  authors:
+  - Brice Pouly
+  author_identifiers:
+  - name: Brice Pouly
+    github: Vulkin-prog
+    orcid: 0009-0008-8491-2467
+  responsible_maintainers:
+  - Brice Pouly
+  license: Apache-2.0
+repository:
+  role: substantive-development
+classification:
+  arxiv:
+  - math.NT
+  - math.PR
+sources:
+- title: Sharp Poisson approximation and second-order correction for long multiplicative runs,
+    version 1.7 draft
+  authors:
+  - Brice Pouly
+  id: https://github.com/Vulkin-prog/paper-p1-lean
+  type: paper
+  relationship: formalizes
+  location: Main proposition 6.3, companion proposition T22.7 and the negative-deviation and
+    conditional-mean components of companion T2.7; version 1.7 draft, with separate 167-statement
+    correspondence.
+  note: The source count is fixed before the threshold. The independent colored copies share
+    precisely the prime coordinates at most the cutoff. Repeated source centers, arbitrary
+    compatible affine prescriptions and target-dependent prescriptions are retained. This
+    is a working manuscript without a publication identifier.
+related_formalizations:
+- id: https://github.com/Vulkin-prog/paper-c-lean
+  relationship: adapts
+  note: Selected finite and infinite prime-sign model foundations were ported from b9fa9ba490f201b408a302a86f1594ee620b228b,
+    under Apache-2.0, and rebuilt under Lean v4.36.0-rc2. Exact file identities, statement
+    scope and adaptations are recorded in docs/PAPER_C_REUSE.md and source headers. The P1
+    optimal quadratic estimates are proved in this substantive development.
+automation:
+  methods:
+  - method: agent
+    framework: Codex
+    models:
+    - OpenAI Codex agents
+    prompting_notes: Preserve actual independent prime signs, literal relative bits, positive
+      joint source denominators, all critical lengths and source prescriptions. Keep the source
+      count fixed before the threshold; allow all replica colors and shared-prime cutoffs
+      after it. Expose conditional integrals of the actual full count.
+    tool_setup: Lean proof construction, explicit Mathlib-only source definitions, exact bridges
+      to the substantive proof and full axiom audits.
+  notes: Agent assistance is not independent human peer review.
+review:
+  status: agent-reviewed
+  notes: The four selected statements and their complete Solution proofs compile with explicit
+    source bridges. The Mathlib-only Challenge has exactly four deliberate selected theorem
+    holes. Statement comparison, independent kernels and complete Palomar preflight are recorded
+    separately after actual success.
+status:
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms:
+  - propext
+  - Quot.sound
+  - Classical.choice
+  scope: 'Four selected declarations: uniform conditional target sum, its shared-small-prime
+    colored-replica extension, uniform negative conditional deviation after fixed source count,
+    and actual conditional count mean lower bound. Complete solutions use no placeholders
+    or unformalized inputs. Only the Challenge has deliberate holes. No registration or certification
+    is claimed.'
+fidelity:
+  divergences: All probability ratios use the actual joint source mass, never nominal source
+    marginals. Conditioning events must have strictly positive probability. The number of
+    sources is fixed; no growing-source version is claimed. The replica threshold is uniform
+    in the finite color set and shared-small-prime cutoff. The full count includes both signs
+    with the preceding opposite-sign boundary and subtracts the actual number of prescribed
+    starts in the conditional mean.
