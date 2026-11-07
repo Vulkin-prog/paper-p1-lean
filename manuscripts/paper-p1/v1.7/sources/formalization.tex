@@ -255,6 +255,29 @@ The canonical declarations are
 \texttt{ValuationDensityBounds.effective\_count\_bounds} and
 \texttt{ValuationDensityBounds.uniform\_density\_approximation}.
 
+\paragraph{Charge the rank of the forcing event.}
+Let $G$ be the complete retained start set.  On the actual prime-bit
+space up to $M$, impose the linear equations
+$Y_{x-1}=1$ and $Y_{x+j}=0$ for $x\in G$, $0\leq j<q-1$.
+The one-negative-prime sample proves that this affine system is
+compatible.  If its effective rank is $r$, its exact mass is $2^{-r}$,
+and rank--nullity gives $r\leq\pi(M)$.  Both full exponential moments
+are therefore at least $\exp\{tC(N,q)-r\log2\}$ for $t\geq0$.
+Either earlier lower count budget may replace $C(N,q)$ in this bound.
+
+A prime dividing none of the observed integers supplies a nonzero
+homogeneous kernel vector by flipping just its bit, so $r<\pi(M)$.
+For $N=18$, $q=3$, the retained multipliers are exactly $7,8,9,10,11$,
+giving five starts.  Their observed integers lie between $21$ and $35$.
+The supported cutoff $36$ contains eleven primes, but the prime $19$
+is unused.  Thus $r\leq10$, and both full moments are at least
+$\exp(5t)/1024$, compared with $\exp(5t)/2048$ from the same-count
+single-atom bound.  This gives at least a factor-two gain, with no
+assertion of a new asymptotic threshold or an exact general rank formula.
+The canonical declarations are
+\texttt{RankChargedPrimeCylinder.retained\_forcing\_mass},
+\texttt{positive\_explicit\_example} and \texttt{total\_explicit\_example}.
+
 \paragraph{Scope and reproducibility.}
 The smooth-window proof above specializes the physical localization to the
 ordinary smooth indicator.  A general sharp short-average theorem for

@@ -20712,7 +20712,9 @@
         {
           "checkpoint": "P1-MATH-0991",
           "description": "The actual event forcing all retained starts to have negative predecessors and positive words is the fiber of an explicitly defined linear map on the finite prime-sign space. The one-negative-prime sample proves compatibility. Its exact probability is 2^(-r), where r is the map rank and r<=primeCount(M), M=2*q*floor(N/q). For prime q<=N and t>=0, both full actual exponential moments are at least exp(t*C-r*log(2)), where C is the complete retained start cardinality. The earlier finite-layer and explicit density count budgets inherit the same rank charge. A prime dividing none of the observed vertices gives a proved nonzero homogeneous kernel element, hence strictly smaller rank. At N=18,q=3 the five starts are retained, M=36 has eleven primes and prime 19 is unused, so r<=10. Both full moments are at least exp(5*t-10*log(2)), at least twice the same-count atom lower bound. No exact general rank formula or improved asymptotic threshold is asserted, and the original t>2 theorem and all numbered statements are preserved.",
-          "validation": "All 31 new theorems and their exact direct axiom audit passed under Lean v4.36.0-rc2, with proof warnings as errors and only propext, Classical.choice and Quot.sound. Whole-project replay and manuscript integration are pending."
+          "validation": "Full Lean v4.36.0-rc2 replay passed at source 7a5acb2182ebfaa9e2b1ae59b070cb225362a371: 18,577 build jobs, 19,598 source-discovered theorem axiom checks and 19,759 distinct declaration-reference checks, all actual process exits 0. Proof warnings are errors; only propext, Classical.choice and Quot.sound occur.",
+          "validation_source_commit": "7a5acb2182ebfaa9e2b1ae59b070cb225362a371",
+          "validation_record": "docs/validation/checkpoint-0991/validation.json"
         }
       ]
     },

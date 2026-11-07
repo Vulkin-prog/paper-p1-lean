@@ -62,7 +62,7 @@ The [finite-depth valuation bounds](docs/VALUATION_LAYER_BOUNDS.md) give the exp
 
 The [effective retained-start density](docs/VALUATION_DENSITY_BOUNDS.md) chooses a complete logarithmic layer depth, proves a two-sided finite count and identifies its leading density 1/(q+1), with an error tending to zero uniformly over primes q<=N. Its complete replay passed; [the source-bound logs](docs/validation/checkpoint-0990/validation.json) preserve all three checks. The refinement is integrated in the revised companion appendix.
 
-The [rank-charged forcing event](docs/RANK_CHARGED_PRIME_CYLINDER.md) replaces a full prime assignment by the actual compatible affine fiber. Both full moments inherit the effective-rank cost; the five-start example N=18,q=3 proves a factor-two gain. Its 31 direct proofs and axiom audit passed; full replay and manuscript integration are pending.
+The [rank-charged forcing event](docs/RANK_CHARGED_PRIME_CYLINDER.md) replaces a full prime assignment by the actual compatible affine fiber. Both full moments inherit the effective-rank cost; the five-start example N=18,q=3 proves a factor-two gain. Its complete replay passed; [the source-bound logs](docs/validation/checkpoint-0991/validation.json) preserve all three checks. The refinement is integrated in the revised companion appendix.
 
 ## Build and verification
 
@@ -88,7 +88,7 @@ Standalone registry Challenges have only the deliberate selected statement
 holes and are never imported by the proof development or its audit.
 
 The latest complete project replay with all fourteen candidate families passed
-**18,575 build jobs** and **19,567 theorem axiom checks**. Each mathematical
+**18,577 build jobs** and **19,598 theorem axiom checks**. Each mathematical
 checkpoint and registry replay records its own exact source commit and scope.
 The [evidence checker](scripts/check_registry_evidence.py) validates every
 preserved receipt against its historical inventory and current proof imports.

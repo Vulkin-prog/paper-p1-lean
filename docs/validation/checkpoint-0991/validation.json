@@ -1,0 +1,36 @@
+{
+  "checkpoint": "P1-MATH-0991",
+  "source_commit": "7a5acb2182ebfaa9e2b1ae59b070cb225362a371",
+  "status": "passed",
+  "full_build_jobs": 18577,
+  "audited_theorems": 19598,
+  "distinct_checked_references": 19759,
+  "actual_process_exit_codes": {
+    "build": 0,
+    "audit": 0,
+    "references": 0
+  },
+  "permitted_kernel_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "logs": [
+    {
+      "kind": "build",
+      "path": "docs/validation/checkpoint-0991/build.log.gz",
+      "sha256_gzip": "504d40e7a00ac1ae2d4d69c75a382eee6f150e7f32a82cee2a2412184b41d6a7"
+    },
+    {
+      "kind": "audit",
+      "path": "docs/validation/checkpoint-0991/audit.log.gz",
+      "sha256_gzip": "4e52aca562875ddbfade298a2119528ba9d6e9d94d91485d3ed8fe47cdee2878"
+    },
+    {
+      "kind": "references",
+      "path": "docs/validation/checkpoint-0991/references.log.gz",
+      "sha256_gzip": "33410d498e2f26769b333981398f4c51aece06a5f47a2f4c7d579054970cbd0d"
+    }
+  ],
+  "scope": "Whole-project replay including the exact compatible affine forcing mass, effective rank, both full actual exponential bounds and the five-start numerical factor-two gain. All fourteen registry Solutions and all original and revised numbered statement blocks are preserved."
+}

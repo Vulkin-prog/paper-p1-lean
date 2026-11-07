@@ -103,7 +103,7 @@
     },
     {
       "path": "formalization.tex",
-      "sha256": "737597c3162be68abc8fa22bb1f06b3a3a985542184f61255f8e1fbec8847b8a"
+      "sha256": "93918bdde86f35ad4c50dd13d10b95f22cabb56cc537f403a964063b1ee3c85f"
     },
     {
       "path": "main.tex",
@@ -228,6 +228,11 @@
       "checkpoint": "P1-MATH-0990",
       "proof_commit": "d5bc5deb5056c55be7c72404ed0e0fef4e6f147d",
       "scope": "Unnumbered companion appendix: complete finite valuation-layer cover at an explicit logarithmic depth, two-sided retained-start count, actual exponential bounds, fixed-prime density and uniform absolute normalized error. All 167 numbered statement blocks are preserved."
+    },
+    {
+      "checkpoint": "P1-MATH-0991",
+      "proof_commit": "7a5acb2182ebfaa9e2b1ae59b070cb225362a371",
+      "scope": "Unnumbered companion appendix: exact mass of the actual compatible affine forcing event, effective-rank exponential cost, unused-prime kernel criterion and the nonempty five-start factor-two numerical gain. All 167 numbered statement blocks are preserved."
     }
   ]
 }

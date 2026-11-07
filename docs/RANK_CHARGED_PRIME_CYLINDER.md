@@ -55,7 +55,6 @@ total_exponential_card_lower, rank_lt_primeCount_of_unused,
 positive_explicit_example and total_explicit_example in
 PaperP1.RankChargedPrimeCylinder.
 
-All 31 new theorems and their exact direct axiom audit passed under Lean
-v4.36.0-rc2 with proof warnings as errors. Only propext, Classical.choice
-and Quot.sound occur. Whole-project replay and manuscript integration are
-pending.
+Full Lean v4.36.0-rc2 replay passed at source 7a5acb2182ebfaa9e2b1ae59b070cb225362a371: 18,577 build jobs, 19,598 source-discovered theorem axiom checks and 19,759 distinct declaration-reference checks, all actual process exits 0. Proof warnings are errors; only propext, Classical.choice and Quot.sound occur.
+
+The full replay and original compressed logs are preserved in [the validation record](validation/checkpoint-0991/validation.json). The refinement is integrated in the unnumbered version 1.7 companion appendix, under Charge the rank of the forcing event. Both PDFs were rebuilt and reviewed; the 65 article and 101 companion pages and all 167 numbered statement blocks are preserved. See [the manuscript validation](manuscript-v1.7-validation.json).

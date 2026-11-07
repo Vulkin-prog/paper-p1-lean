@@ -118,3 +118,20 @@ the reviewed version, and the two changed companion pages (98,99) passed
 full visual inspection at 110dpi. No overflow or unresolved references were
 found. All 48 authored source hashes, both PDF hashes, provenance and
 the unchanged 167 numbered statement identities were checked.
+
+
+Checkpoint P1-MATH-0991 integrates the actual compatible affine forcing
+fiber and its exact effective-rank mass. Both full exponential moments
+inherit the rank cost and earlier count budgets. An unused-prime kernel
+vector proves at least a factor-two gain for the five-start N=18,q=3
+example, with the explicit lower bound exp(5*t)/1024 for t>=0. The
+original t>2 theorem and all numbered statement blocks are preserved.
+The full source replay passed 18,577 build jobs, 19,598 theorem axiom
+checks and 19,759 distinct references, with original immutable-source logs.
+
+Both PDFs were rebuilt with stable references, remaining 65 and 101
+pages. All 166 pages were rendered: 165 are pixel-identical to the
+reviewed version, and companion page 99 passed full visual inspection
+at 110dpi. There are no overfull boxes or unresolved references. The 48
+authored source hashes, PDF hashes, provenance and 167 numbered statement
+identities were checked.

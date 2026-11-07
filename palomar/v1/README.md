@@ -35,7 +35,7 @@ Solution. Only the exact selected Challenge statements have deliberate proof
 holes. No substantive proof, Solution or axiom audit imports a Challenge. The
 current community v0.4 metadata schema is checked separately.
 
-The latest whole-project replay passed **18,575 build jobs** and **19,567 theorem
+The latest whole-project replay passed **18,577 build jobs** and **19,598 theorem
 axiom checks**. Earlier receipts retain their own historical source inventories.
 The local [evidence checker](../../scripts/check_registry_evidence.py) validates
 their hashes, exact source files, imported project proofs, actual export and
