@@ -1,0 +1,78 @@
+{
+  "source_commit": "6c242601e9b7b9f58aba3c6a9e91277b7bf57149",
+  "toolchain": "leanprover/lean4:v4.36.0-rc2",
+  "complete_palomar_workflow_passed": false,
+  "scope": "Optional local compatibility with Lean paranoid, lean4lean and con-leche, plus the default Lean kernel, for two representative families. The pinned Palomar profile uses its separate mandatory Lean/NanoDa checks and con-ron replay. No relationship declaration, workflow dispatch or intake.",
+  "tool_binary_sha256": {
+    "lake": "42678ccbc2605e2f892540dc7236e009fdd1224e823d104dfd72725d2f1a52d2",
+    "leanexport": "8298d4412a1f8986b5dbfd1d9925211778d8d320fc47b72040c8fdfdd5b603d5",
+    "leanchecker": "2b2ff08805ace61c935b023f8114ac3f7f1d3bc79cb4e8c47ef7801a5af58798",
+    "leanchecker-paranoid": "4508d26d3e22463a9566a6155d7a1600c7bfc42b6cd2548be73e3d19d159d6c5",
+    "lean4lean": "baaec030a70c78562ced2c75866ab0d2410e81ce680b835179ed16570ad5ef97",
+    "con-leche": "a6380d68b4fb364189821dd4692569c11536de0a1e3aaefea06028c0d67bb193"
+  },
+  "families": [
+    {
+      "family": "dependent_expansion",
+      "selected_declarations": [
+        "PaperP1Registry.DependentExpansion.polynomial_expansion",
+        "PaperP1Registry.DependentExpansion.centered_identity",
+        "PaperP1Registry.DependentExpansion.positive_stopped_kernel",
+        "PaperP1Registry.DependentExpansion.stopped_l1_bound"
+      ],
+      "submission_configuration_sha256": "e672627836047ce72b7416ef025fa1089f88756e559c512d1bb18b8478d96de1",
+      "derived_configuration_sha256": "dc259cbde229b6d09b93fc6ef0dd0cb75baa4999d6cce4980865f7458d495523",
+      "actual_comparator_exit": 0,
+      "all_four_kernels_accepted": true,
+      "kernel_commands": {
+        "Lean paranoid": [
+          "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/leanchecker-paranoid",
+          "--silent",
+          "--from-export"
+        ],
+        "lean4lean": [
+          "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/lean4lean",
+          "--import"
+        ],
+        "con-leche": [
+          "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/con-leche"
+        ]
+      },
+      "seconds": 52.44,
+      "log_path": "palomar/v1/supplementary/dependent_expansion-optional-kernels.log.gz",
+      "log_sha256": "3cb47f51fed76fb93f02e1e9124e794bc85b0e648f3ebffa92d4350f6075ff10",
+      "compressed_log_sha256": "398d6492f066fb0da80f2a66802ae6d6eaac2b86c8529ccc85a56738dd560efb"
+    },
+    {
+      "family": "integral_curve_count",
+      "selected_declarations": [
+        "PaperP1Registry.IntegralCurveCount.all_dimensional_count",
+        "PaperP1Registry.IntegralCurveCount.plane_count",
+        "PaperP1Registry.IntegralCurveCount.growing_degree_sublinear"
+      ],
+      "submission_configuration_sha256": "6a54f4408527abc5ab7fd5ce2d73079f2b04d979f94b719ae807a8ef233fb845",
+      "derived_configuration_sha256": "224f9cb41061f46a14be600785dc2fb92fa4dc1b13e00f89e79b24ba3ab93c8b",
+      "actual_comparator_exit": 0,
+      "all_four_kernels_accepted": true,
+      "kernel_commands": {
+        "Lean paranoid": [
+          "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/leanchecker-paranoid",
+          "--silent",
+          "--from-export"
+        ],
+        "lean4lean": [
+          "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/lean4lean",
+          "--import"
+        ],
+        "con-leche": [
+          "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/con-leche"
+        ]
+      },
+      "seconds": 359.07,
+      "log_path": "palomar/v1/supplementary/integral_curve_count-optional-kernels.log.gz",
+      "log_sha256": "c1b695652e5f6525cfd1d64e80435608bb5b8b0582915d560cfac06b2d5c2a77",
+      "compressed_log_sha256": "cd8e45d3d3d50329eb3dcbe23944aedada49a0f3f655ef71495ecde901761535"
+    }
+  ],
+  "updated_at": "2026-11-07T03:34:47.150112+00:00"
+}

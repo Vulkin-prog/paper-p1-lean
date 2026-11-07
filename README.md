@@ -52,8 +52,7 @@ unasserted analytic or geometric results are documented in the source revision.
 
 The [one-sided prime-cylinder strengthening](docs/ONE_SIDED_PRIME_CYLINDER.md)
 proves the sharper finite start count N/q-N/q^2-3 and corresponding positive
-and total exponential-moment lower bounds. Its direct proofs are checked;
-the full checkpoint replay is pending. No numbered statement changes.
+and total exponential-moment lower bounds. Its full replay passed; the [source-bound evidence](docs/validation/checkpoint-0986/validation.json) preserves all three checks. No numbered statement changes.
 
 ## Build and verification
 
@@ -78,15 +77,15 @@ then invokes Lean's own axiom report for each declaration. Only `propext`,
 Standalone registry Challenges have only the deliberate selected statement
 holes and are never imported by the proof development or its audit.
 
-The latest complete project replay with all eleven candidate families passed
-**18,559 build jobs** and **19,424 theorem axiom checks**. Each mathematical
+The latest complete project replay with all twelve candidate families passed
+**18,563 build jobs** and **19,452 theorem axiom checks**. Each mathematical
 checkpoint and registry replay records its own exact source commit and scope.
 The [evidence checker](scripts/check_registry_evidence.py) validates every
 preserved receipt against its historical inventory and current proof imports.
 
 ## Palomar preparation
 
-Eleven selected families have passed local statement comparison and both Lean and
+Twelve selected families have passed local statement comparison and both Lean and
 NanoDa, with bubblewrap isolation enabled:
 
 | Family | Selected declarations | Local evidence |
@@ -102,14 +101,13 @@ NanoDa, with bubblewrap isolation enabled:
 | Fixed-order moment obstruction to a polynomial approximation rate | 5 | [Receipt](palomar/v1/moment_obstruction/qualification.json) |
 | Exact expansions for dependent indicator counts | 4 | [Receipt](palomar/v1/dependent_expansion/qualification.json) |
 | Degree-uniform integer points on integral curves | 3 | [Receipt](palomar/v1/integral_curve_count/qualification.json) |
+| Exact finite affine spectra and canonical factorization | 4 | [Receipt](palomar/v1/affine_spectra/qualification.json) |
 
-All 44 selected declarations also passed supplementary replays with verified
+All 48 selected declarations also passed supplementary replays with verified
 con-ron, Lean and NanoDa. The [source-bound reports](palomar/v1/supplementary/README.md)
 preserve the actual logs, binary identities and positive/ill-typed controls.
 
-A further [finite-affine candidate](palomar/v1/affine_spectra/formalization.yaml)
-has four explicit statements and complete proofs, with standalone exports
-accepted by six checkers. Its frozen-root qualification is pending.
+The finite-affine family also passed [all six available local checkers](palomar/v1/supplementary/affine-spectra-six-kernels.json). Two larger representative families passed the additional optional checkers as well; each report identifies its exact source.
 
 The [candidate interfaces](palomar/v1/README.md) link each standalone Mathlib-only
 Challenge, complete Solution, Comparator configuration, metadata and preserved

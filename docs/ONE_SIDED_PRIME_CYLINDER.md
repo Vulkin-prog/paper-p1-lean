@@ -14,4 +14,8 @@ is a lower bound for each actual positive and total run-start exponential moment
 
 The positive start needs a preceding negative sign and the next q-1 positive signs. Removing the extra right-end restriction keeps every original forced start. A single residue-class exclusion gives the sharper cardinality budget, including all floor and endpoint errors. The finite lower bound strictly improves the previous algebraic bound. The threshold t>2 and its asymptotic coefficient are unchanged; sharpness of that threshold is not asserted.
 
-Direct Lean v4.36.0-rc2 verification passed for all 12 new theorems with proof warnings as errors. Full project build, source-discovered axiom audit and declaration-reference replay are pending at this source checkpoint.
+Full Lean v4.36.0-rc2 replay passed at source 1f25a899d04ff2bac781747b2e7fe5cef42e6c7c: 18,563 build jobs, 19,452 source-discovered theorem axiom checks and 19,625 distinct declaration-reference checks, all actual process exits 0. Proof warnings are errors; only propext, Classical.choice and Quot.sound occur.
+
+The complete replay and original compressed logs are preserved in [the validation record](validation/checkpoint-0986/validation.json).
+
+The stronger finite bound is integrated in the unnumbered version 1.7 companion formalization appendix. Both revised PDFs were rebuilt and reviewed; all 167 numbered statement blocks are unchanged. See [the manuscript validation](manuscript-v1.7-validation.json).

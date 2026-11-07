@@ -53,3 +53,17 @@ jobs, 19,295 theorem axiom checks and 19,611 distinct checked references.
 Both PDFs were rebuilt: all 165 pages were rendered, 163 were pixel-identical
 to the previously reviewed pages, and both changed pages were inspected at
 higher resolution.
+
+
+Checkpoint P1-MATH-0986 integrates the one-sided prime-cylinder finite bound
+in the unnumbered companion appendix. A start of length at least q-1 needs
+only the preceding negative sign, so the retained count improves from
+N/q-2N/q^2-4 to N/q-N/q^2-3. Both actual exponential moments obey the stronger
+lower bound. The original t>2 domain, prime scale and asymptotic coefficient
+are retained. Its full source replay passed 18,563 build jobs, 19,452 theorem
+axiom checks and 19,625 distinct declaration-reference checks. All 167
+numbered statement blocks are preserved. Both PDFs were rebuilt with stable
+references: 65 main and 100 companion pages; 163 pages are pixel-identical
+to the reviewed version and the two changed companion pages passed detailed
+visual inspection. The exact proof commit and original logs are preserved
+in [the validation record](validation/checkpoint-0986/validation.json).

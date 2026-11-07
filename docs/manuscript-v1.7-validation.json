@@ -15,13 +15,13 @@
       "document": "main",
       "path": "manuscripts/paper-p1/v1.7/pdf/P1_V1_7_Main_Article_2026-11-07_EN.pdf",
       "pages": 65,
-      "sha256": "116c17bf5f157f520d0bcdee9466cb9a6ca740ccea1d26ac0a39007203139d60"
+      "sha256": "3a4bf1758460e5cdb0be44acb48c04cf0302404e346790099e0c4ca652afef9f"
     },
     {
       "document": "companion",
       "path": "manuscripts/paper-p1/v1.7/pdf/P1_V1_7_Technical_Companion_2026-11-07_EN.pdf",
       "pages": 100,
-      "sha256": "d8f0c39e9f2ca19e1cfdd84f39f6f76cff14dd09b965768950be1e455c42063b"
+      "sha256": "60c75b1e23fab2f67182eb7369204b55a2cf89b955fac3981d638a542145aa48"
     }
   ],
   "visual_review": {
@@ -29,15 +29,14 @@
     "contact_sheet_dpi": 55,
     "detail_dpi": 110,
     "detail_pages_reviewed": {
-      "main": [
-        62
-      ],
+      "main": [],
       "companion": [
-        96
+        97,
+        98
       ]
     },
     "complete": true,
-    "findings": "All 165 current pages rendered. The 163 unchanged pages are pixel-identical at55dpi to the previously inspected pages. Both changed appendix pages were inspected at110dpi; no clipped text, overlaps, missing glyphs, or unresolved references observed.",
+    "findings": "All 165 final pages rendered. The 65 main pages and 98 unchanged companion pages are pixel-identical at 55dpi to the previously inspected version. Both changed companion appendix pages were inspected at 110dpi; the new cylinder paragraph starts on one page. No clipping, overlaps, missing glyphs or unresolved references observed.",
     "prior_detail_pages_reviewed": {
       "main": [
         62
@@ -54,15 +53,14 @@
       ]
     },
     "latest_revision": {
-      "checkpoint": "P1-MATH-0985",
+      "checkpoint": "P1-MATH-0986",
       "all_165_pages_rendered": true,
       "unchanged_pages_pixel_identical_at_55_dpi": 163,
       "changed_pages": {
-        "main": [
-          62
-        ],
+        "main": [],
         "companion": [
-          96
+          97,
+          98
         ]
       },
       "all_changed_pages_inspected_at_110_dpi": true,
@@ -112,5 +110,17 @@
     "full_build_jobs": 18539,
     "audited_theorems": 19295,
     "distinct_checked_references": 19611
+  },
+  "appendix_prime_cylinder_strengthening": {
+    "checkpoint": "P1-MATH-0986",
+    "proof_commit": "1f25a899d04ff2bac781747b2e7fe5cef42e6c7c",
+    "numbered_statement_blocks_changed": false,
+    "all_167_revised_statement_proofs_preserved": true,
+    "full_build_jobs": 18563,
+    "audited_theorems": 19452,
+    "distinct_checked_references": 19625,
+    "validation_record": "docs/validation/checkpoint-0986/validation.json",
+    "source": "manuscripts/paper-p1/v1.7/sources/formalization.tex",
+    "source_sha256": "baa0a79f059b3846e010fd784fc8f2772e3795aba91af4b29c7134c1c43d927c"
   }
 }

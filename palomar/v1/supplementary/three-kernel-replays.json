@@ -196,6 +196,23 @@
       "log_sha256": "29cb43abead11a4380206e8a2a4b3ae63a73b410610650bd5421cf9377d041f2",
       "source_commit": "4447dfc36bd66103440118a509831fae3068e804",
       "compressed_log_sha256": "a25a9e8d5362bd3f00f968ed174a2e1b8a509c49f9e847dd449b2d88d54f27c6"
+    },
+    {
+      "family": "affine_spectra",
+      "source_commit": "1f25a899d04ff2bac781747b2e7fe5cef42e6c7c",
+      "selected_declarations": [
+        "PaperP1Registry.AffineSpectra.uniform_affine_mass",
+        "PaperP1Registry.AffineSpectra.centered_fourier_formula",
+        "PaperP1Registry.AffineSpectra.sharp_relative_nullity_bound",
+        "PaperP1Registry.AffineSpectra.canonical_factorization"
+      ],
+      "submission_configuration_sha256": "455344fc70f839f4850e7beb890e4f01887512f0f572e58f49707979f5f48e2a",
+      "actual_comparator_exit": 0,
+      "log_path": "palomar/v1/supplementary/affine_spectra-six-kernels.log.gz",
+      "log_sha256": "dc5ed930f65c2260588be4f8bd83740bfeba64937d0c9d66fcd5230c85c62e33",
+      "compressed_log_sha256": "b6dc362b6e80189c444aea82891bd758a0c89717564deda93c07e9364c4e03e0",
+      "all_three_kernels_accepted": true,
+      "con_ron_accepted_declarations": 18552
     }
   ],
   "updated_at": "2026-11-07T03:20:01.237558+00:00",

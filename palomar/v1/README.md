@@ -1,17 +1,17 @@
 # P1 candidate registration interfaces
 
-All eleven independently meaningful families below have passed local statement
+All twelve independently meaningful families below have passed local statement
 comparison and both Lean and NanoDa with bubblewrap isolation enabled. They
-select **44 declarations**, separately from the complete **167-result revised
+select **48 declarations**, separately from the complete **167-result revised
 manuscript correspondence**. Their immutable local receipts and original
 compressed logs preserve exactly what was checked.
 
-All eleven also passed supplementary con-ron, NanoDa and Lean replays. Their
+All twelve also passed supplementary con-ron, NanoDa and Lean replays. Their
 [separate reports and controls](supplementary/README.md) preserve each exact
 source and original log without changing the standard submission configurations.
 
-The finite-affine spectra candidate adds four prepared declarations. Its
-standalone exports passed six checkers; frozen-root qualification is pending.
+The finite-affine family passed all six local checkers at its frozen source.
+Two larger representative families also passed the three optional checkers.
 
 | Family | Selected declarations | Comparator configuration | Metadata and local evidence |
 |---|---:|---|---|
@@ -26,14 +26,14 @@ standalone exports passed six checkers; frozen-root qualification is pending.
 | Fixed-order moment obstruction to a polynomial approximation rate | 5 | [configuration](../../comparator/p1_moment_obstruction.json) | [metadata](moment_obstruction/formalization.yaml), [passed local comparison and both kernels](moment_obstruction/qualification.json) |
 | Exact expansions for dependent indicator counts | 4 | [configuration](../../comparator/p1_dependent_expansion.json) | [metadata](dependent_expansion/formalization.yaml), [passed local comparison and both kernels](dependent_expansion/qualification.json) |
 | Degree-uniform integer points on integral curves | 3 | [configuration](../../comparator/p1_integral_curve_count.json) | [metadata](integral_curve_count/formalization.yaml), [passed local comparison and both kernels](integral_curve_count/qualification.json) |
-| Exact finite affine spectra and canonical factorization | 4 | [configuration](../../comparator/p1_affine_spectra.json) | [metadata](affine_spectra/formalization.yaml); root qualification pending |
+| Exact finite affine spectra and canonical factorization | 4 | [configuration](../../comparator/p1_affine_spectra.json) | [metadata](affine_spectra/formalization.yaml), [passed local comparison and both kernels](affine_spectra/qualification.json) |
 
 Each configuration names its standalone Mathlib-only Challenge and complete
 Solution. Only the exact selected Challenge statements have deliberate proof
 holes. No substantive proof, Solution or axiom audit imports a Challenge. The
 current community v0.4 metadata schema is checked separately.
 
-The latest whole-project replay passed **18,559 build jobs** and **19,424 theorem
+The latest whole-project replay passed **18,563 build jobs** and **19,452 theorem
 axiom checks**. Earlier receipts retain their own historical source inventories.
 The local [evidence checker](../../scripts/check_registry_evidence.py) validates
 their hashes, exact source files, imported project proofs, actual export and

@@ -6,11 +6,11 @@ count is at least N/q-N/q^2-3, strengthening both original positive and
 total exponential-moment lower bounds. The printed T19.7 prime scales,
 t>2 range and (t-2)log(2) coefficient are preserved. All 167 revised
 statements remain proved; original coverage stays 165 proved and two
-false-original scopes. The 12 new direct Lean proofs passed; the full
-checkpoint replay is pending. Eleven registry families (44 selections)
-retain their completed local qualification. A further finite-affine
-candidate passed six checkers on its standalone exports; root qualification
-remains pending. No Palomar registration is claimed.
+false-original scopes. The full replay passed 18,563 build jobs, 19,452
+theorem axiom checks and 19,625 distinct declaration-reference checks at
+1f25a899d04ff2bac781747b2e7fe5cef42e6c7c. Twelve registry families
+(48 selections) have completed local qualification. The latest finite-affine
+family also passed all six local checkers. No Palomar registration is claimed.
 
 Historical checkpoint P1-MATH-0985: The exact uncapped quadratic-exponent
 comparison is characterized for every nonnegative delta, including all
@@ -35729,4 +35729,4 @@ is a lower bound for each actual positive and total run-start exponential moment
 
 The positive start needs a preceding negative sign and the next q-1 positive signs. Removing the extra right-end restriction keeps every original forced start. A single residue-class exclusion gives the sharper cardinality budget, including all floor and endpoint errors. The finite lower bound strictly improves the previous algebraic bound. The threshold t>2 and its asymptotic coefficient are unchanged; sharpness of that threshold is not asserted.
 
-Direct Lean v4.36.0-rc2 verification passed for all 12 new theorems with proof warnings as errors. Full project build, source-discovered axiom audit and declaration-reference replay are pending at this source checkpoint.
+Full Lean v4.36.0-rc2 replay passed at source 1f25a899d04ff2bac781747b2e7fe5cef42e6c7c: 18,563 build jobs, 19,452 source-discovered theorem axiom checks and 19,625 distinct declaration-reference checks, all actual process exits 0. Proof warnings are errors; only propext, Classical.choice and Quot.sound occur.

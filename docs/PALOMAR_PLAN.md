@@ -8,15 +8,15 @@ statements are proved. Both revised PDFs and their visual checks are preserved.
 
 ## Completed local qualification
 
-[Eleven selected families](../palomar/v1/README.md), with **44 declarations**,
+[Twelve selected families](../palomar/v1/README.md), with **48 declarations**,
 have passed actual statement comparison, Lean and bundled NanoDa, with the
 bubblewrap boundary enabled. Every family has its own immutable source commit,
 configuration, standalone Mathlib-only Challenge, complete Solution, metadata,
 qualification receipt and compressed original logs. The latest complete build
-passed **18,559 jobs** and the direct source-discovered audit checked **19,424
+passed **18,563 jobs** and the direct source-discovered audit checked **19,452
 theorems**, allowing only `propext`, `Classical.choice` and `Quot.sound`.
 
-All eleven families also passed supplementary verified con-ron, Lean and NanoDa
+All twelve families also passed supplementary verified con-ron, Lean and NanoDa
 replays. Their [source-bound records](../palomar/v1/supplementary/README.md)
 preserve binary identities, original logs, six positive/ill-typed controls,
 metadata shape checks and a historical source-layout scan. These local checks
@@ -35,8 +35,8 @@ output, repeated declarations, forbidden axioms and changed imported proofs
 are rejected. The original first receipt's build/audit counts were added from
 its unchanged preserved logs and checked source inventory.
 
-The finite-affine spectra candidate has four standalone statements accepted
-by six checkers; its frozen-root qualification remains pending. The original
+The finite-affine family has four standalone statements accepted at its frozen
+root source by all six local checkers. The original
 seven-family caller remains unchanged.
 
 Run the local preparation checks with:

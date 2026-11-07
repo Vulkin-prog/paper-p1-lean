@@ -1,4 +1,5 @@
 {
+  "source_commit": "1f25a899d04ff2bac781747b2e7fe5cef42e6c7c",
   "original_seven_caller_unchanged_from": "ce8d14d39944266a5b2f5b73929625a0236be86d",
   "outcomes": [
     {
@@ -10,11 +11,11 @@
     },
     {
       "workflow": ".github/workflows/palomar-preflight-additional.yml",
-      "all_family_count": 4,
+      "all_family_count": 5,
       "both_supported_roles_passed": true,
       "invalid_source_family_role_rejected": true,
-      "sha256": "3b0ebc270f68c7d674912596626b7110d4f2588b2dae4ecbcb7f84f5edf975cd"
+      "sha256": "2f663edbed1672d952cb76e28ea0b82a0ed235627de686818ea71519f13d51af"
     }
   ],
-  "scope": "Local selector and pin validation only; no relationship assertion, workflow dispatch or intake."
+  "scope": "Local selector and pin validation only; test relationship strings do not assert a human relationship. No workflow dispatch or intake."
 }

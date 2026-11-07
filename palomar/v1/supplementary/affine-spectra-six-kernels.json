@@ -1,0 +1,52 @@
+{
+  "source_commit": "1f25a899d04ff2bac781747b2e7fe5cef42e6c7c",
+  "toolchain": "leanprover/lean4:v4.36.0-rc2",
+  "family": "affine_spectra",
+  "selected_declarations": [
+    "PaperP1Registry.AffineSpectra.uniform_affine_mass",
+    "PaperP1Registry.AffineSpectra.centered_fourier_formula",
+    "PaperP1Registry.AffineSpectra.sharp_relative_nullity_bound",
+    "PaperP1Registry.AffineSpectra.canonical_factorization"
+  ],
+  "submission_configuration_sha256": "455344fc70f839f4850e7beb890e4f01887512f0f572e58f49707979f5f48e2a",
+  "derived_configuration_sha256": "de050fd10c75cdd06a539eecff77cd8f803547f5ceec38b2066751663545d0f8",
+  "actual_comparator_exit": 0,
+  "all_six_kernels_accepted": true,
+  "kernel_commands": {
+    "Lean paranoid": [
+      "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/leanchecker-paranoid",
+      "--silent",
+      "--from-export"
+    ],
+    "lean4lean": [
+      "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/lean4lean",
+      "--import"
+    ],
+    "nanoda": [
+      "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/nanoda_bin"
+    ],
+    "con-leche": [
+      "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/con-leche"
+    ],
+    "con-ron": [
+      "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/con-ron",
+      "--verified",
+      "--jobs=2"
+    ]
+  },
+  "tool_binary_sha256": {
+    "lake": "42678ccbc2605e2f892540dc7236e009fdd1224e823d104dfd72725d2f1a52d2",
+    "leanexport": "8298d4412a1f8986b5dbfd1d9925211778d8d320fc47b72040c8fdfdd5b603d5",
+    "leanchecker": "2b2ff08805ace61c935b023f8114ac3f7f1d3bc79cb4e8c47ef7801a5af58798",
+    "leanchecker-paranoid": "4508d26d3e22463a9566a6155d7a1600c7bfc42b6cd2548be73e3d19d159d6c5",
+    "lean4lean": "baaec030a70c78562ced2c75866ab0d2410e81ce680b835179ed16570ad5ef97",
+    "nanoda_bin": "8241c5e6baa29490aa118d382f97961b208ae730fdb96545c2abed74c9ece5a8",
+    "con-leche": "a6380d68b4fb364189821dd4692569c11536de0a1e3aaefea06028c0d67bb193",
+    "con-ron": "4e5616d94374cae37324dad2594f6230c2bb2297240249fc78ff508f3bc5acef"
+  },
+  "log_path": "palomar/v1/supplementary/affine_spectra-six-kernels.log.gz",
+  "log_sha256": "dc5ed930f65c2260588be4f8bd83740bfeba64937d0c9d66fcd5230c85c62e33",
+  "compressed_log_sha256": "b6dc362b6e80189c444aea82891bd758a0c89717564deda93c07e9364c4e03e0",
+  "complete_palomar_workflow_passed": false,
+  "scope": "Supplementary six-checker compatibility at the exact root source, with isolation enabled and con-ron in verified mode with two jobs. Separate from full Palomar workflow, editorial review and registration."
+}

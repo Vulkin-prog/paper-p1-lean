@@ -1,8 +1,15 @@
 {
-  "source_commit": "4447dfc36bd66103440118a509831fae3068e804",
+  "source_commit": "1f25a899d04ff2bac781747b2e7fe5cef42e6c7c",
   "validator_commit": "14aa8d6b3c2f14a8540605e37144560b9a00e7e7",
   "community_schema_sha256": "25ff6b25ca4511635aff4443cf20480c15e59dddf19591c730950b442ea54fce",
   "files": [
+    {
+      "family": "affine_spectra",
+      "path": "palomar/v1/affine_spectra/formalization.yaml",
+      "sha256": "da858adaa9d8b502a834c0a32fbe8b305fb8b2fcb0e06e22f9a740ebd96886ea",
+      "community_v04_schema_passed": true,
+      "palomar_metadata_minimum_passed": true
+    },
     {
       "family": "asymmetric_profiles",
       "path": "palomar/v1/asymmetric_profiles/formalization.yaml",
@@ -81,5 +88,5 @@
       "palomar_metadata_minimum_passed": true
     }
   ],
-  "scope": "Offline metadata shape, taxonomy and provenance-field validation only. No personal relationship declaration, complete Palomar workflow, licensee classification, intake or registration."
+  "scope": "Metadata syntax and supported shape only; no personal authorization declaration, workflow dispatch or intake."
 }
