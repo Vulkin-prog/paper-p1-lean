@@ -1,12 +1,12 @@
 # P1 candidate registration interfaces
 
-All fifteen independently meaningful families below have passed local statement
+All sixteen independently meaningful families below have passed local statement
 comparison and both Lean and NanoDa with bubblewrap isolation enabled. They
-select **61 declarations**, separately from the complete **167-result revised
+select **64 declarations**, separately from the complete **167-result revised
 manuscript correspondence**. Their immutable local receipts and original
 compressed logs preserve exactly what was checked.
 
-All fifteen also passed supplementary con-ron, NanoDa and Lean replays. Their
+All sixteen also passed supplementary con-ron, NanoDa and Lean replays. Their
 [separate reports and controls](supplementary/README.md) preserve each exact
 source and original log without changing the standard submission configurations.
 
@@ -30,13 +30,14 @@ Two larger representative families also passed the three optional checkers.
 | Actual exponential-moment divergence for multiplicative starts | 4 | [configuration](../../comparator/p1_exponential_divergence.json) | [metadata](exponential_divergence/formalization.yaml), [passed local comparison and both kernels](exponential_divergence/qualification.json) |
 | Uniform local arithmetic rigidity and relative-sign independence | 5 | [configuration](../../comparator/p1_local_rigidity.json) | [metadata](local_rigidity/formalization.yaml), [passed local comparison and both kernels](local_rigidity/qualification.json) |
 | Effective valuation cylinders and affine-rank moment bounds | 4 | [configuration](../../comparator/p1_prime_cylinders.json) | [metadata](prime_cylinders/formalization.yaml), [passed local comparison and both kernels](prime_cylinders/qualification.json) |
+| Convergent original-grid positional Poisson field | 3 | [configuration](../../comparator/p1_positional_field.json) | [metadata](positional_field/formalization.yaml), [passed local comparison and both kernels](positional_field/qualification.json) |
 
 Each configuration names its standalone Mathlib-only Challenge and complete
 Solution. Only the exact selected Challenge statements have deliberate proof
 holes. No substantive proof, Solution or axiom audit imports a Challenge. The
 current community v0.4 metadata schema is checked separately.
 
-The latest whole-project replay passed **18,587 build jobs** and **19,631 theorem
+The latest whole-project replay passed **18,589 build jobs** and **19,643 theorem
 axiom checks**. Earlier receipts retain their own historical source inventories.
 The local [evidence checker](../../scripts/check_registry_evidence.py) validates
 their hashes, exact source files, imported project proofs, actual export and
@@ -66,10 +67,8 @@ Model ports retain their precise licence and source attribution. See the
 The finite valuation-cylinder family preserves four literal statements and thirteen audited theorem/bridge proofs. Its frozen-root qualification and verified con-ron replay passed. The [standalone six-checker report](supplementary/prime-cylinders-draft-checks.json) retains its actual earlier proof base and byte-identical module sources.
 
 
-A sixteenth [positional-field candidate](positional_field/formalization.yaml)
-adds three literal-model statements: positivity of the original single rates,
-the convergent weighted grid comparison for every independent Poisson
-realization, and the explicit product realization. Its twelve theorem/bridge
-proofs and all six local checkers passed on standalone exports at the preserved
-proof base. Frozen-root qualification is pending. The two earlier workflow
-callers are preserved; the new positional-field caller is separate.
+The positional-field family has three literal original-grid statements and
+twelve audited theorem/bridge proofs. Its frozen-root qualification and verified
+con-ron replay passed. The [standalone six-checker report](supplementary/positional-field-draft-checks.json)
+retains its earlier proof base and byte-identical module sources. Its dedicated
+workflow caller preserves the two earlier callers and their fifteen-family scope.

@@ -8,15 +8,15 @@ statements are proved. Both revised PDFs and their visual checks are preserved.
 
 ## Completed local qualification
 
-[Fifteen selected families](../palomar/v1/README.md), with **61 declarations**,
+[Sixteen selected families](../palomar/v1/README.md), with **64 declarations**,
 have passed actual statement comparison, Lean and bundled NanoDa, with the
 bubblewrap boundary enabled. Every family has its own immutable source commit,
 configuration, standalone Mathlib-only Challenge, complete Solution, metadata,
 qualification receipt and compressed original logs. The latest complete build
-passed **18,587 jobs** and the direct source-discovered audit checked **19,631
+passed **18,589 jobs** and the direct source-discovered audit checked **19,643
 theorems**, allowing only `propext`, `Classical.choice` and `Quot.sound`.
 
-All fifteen families also passed supplementary verified con-ron, Lean and NanoDa
+All sixteen families also passed supplementary verified con-ron, Lean and NanoDa
 replays. Their [source-bound records](../palomar/v1/supplementary/README.md)
 preserve binary identities, original logs, six positive/ill-typed controls,
 metadata shape checks and a historical source-layout scan. These local checks
@@ -126,10 +126,10 @@ six checkers passed on standalone exports. Its frozen-root qualification and
 verified con-ron replay passed, with their exact source recorded separately.
 
 
-A sixteenth [positional-field candidate](../palomar/v1/positional_field/formalization.yaml)
-adds three literal-model statements: positivity of the original single rates,
-the convergent weighted grid comparison for every independent Poisson
-realization, and the explicit product realization. Its twelve theorem/bridge
-proofs and all six local checkers passed on standalone exports at the preserved
-proof base. Frozen-root qualification is pending. The two earlier workflow
-callers are preserved; the new positional-field caller is separate.
+The positional-field family is locally qualified at its frozen source, with
+three selections, twelve direct theorem/bridge audits and the supplementary
+verified con-ron replay. Its earlier standalone exports passed all six local
+checkers. The dedicated positional-field caller uses the same immutable full
+pipeline and standard profile, preserving the existing two callers. Actual
+human relationship confirmation and the subsequent Palomar stages remain
+separate from these local checks.

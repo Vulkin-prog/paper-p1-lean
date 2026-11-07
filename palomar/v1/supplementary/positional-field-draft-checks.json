@@ -83,5 +83,6 @@
       "--jobs=2"
     ]
   },
-  "scope": "Standalone immutable exports and exact statement comparison, direct twelve-theorem audit and six-checker acceptance at the stated proof base. Frozen-root qualification and the complete Palomar workflow are separate stages. No personal relationship declaration or intake."
+  "scope": "Standalone immutable exports and six-checker acceptance at the stated earlier proof base. Module bytes are identical to the later frozen-root qualification sources. Root Lean/NanoDa qualification and verified con-ron replay are preserved separately. Full Palomar workflow, editorial review and registration remain separate.",
+  "root_qualification_source_commit": "6a1b83ed81beb61671c2199ffd5272bc36d612d5"
 }

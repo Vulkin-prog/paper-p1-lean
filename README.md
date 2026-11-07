@@ -89,15 +89,15 @@ then invokes Lean's own axiom report for each declaration. Only `propext`,
 Standalone registry Challenges have only the deliberate selected statement
 holes and are never imported by the proof development or its audit.
 
-The latest complete project replay with all fifteen candidate families passed
-**18,587 build jobs** and **19,631 theorem axiom checks**. Each mathematical
+The latest complete project replay with all sixteen candidate families passed
+**18,589 build jobs** and **19,643 theorem axiom checks**. Each mathematical
 checkpoint and registry replay records its own exact source commit and scope.
 The [evidence checker](scripts/check_registry_evidence.py) validates every
 preserved receipt against its historical inventory and current proof imports.
 
 ## Palomar preparation
 
-Fifteen selected families have passed local statement comparison and both Lean and
+Sixteen selected families have passed local statement comparison and both Lean and
 NanoDa, with bubblewrap isolation enabled:
 
 | Family | Selected declarations | Local evidence |
@@ -117,8 +117,9 @@ NanoDa, with bubblewrap isolation enabled:
 | Actual exponential-moment divergence for multiplicative starts | 4 | [Receipt](palomar/v1/exponential_divergence/qualification.json) |
 | Uniform local arithmetic rigidity and relative-sign independence | 5 | [Receipt](palomar/v1/local_rigidity/qualification.json) |
 | Effective valuation cylinders and affine-rank moment bounds | 4 | [Receipt](palomar/v1/prime_cylinders/qualification.json) |
+| Convergent original-grid positional Poisson field | 3 | [Receipt](palomar/v1/positional_field/qualification.json) |
 
-All 61 selected declarations also passed supplementary replays with verified
+All 64 selected declarations also passed supplementary replays with verified
 con-ron, Lean and NanoDa. The [source-bound reports](palomar/v1/supplementary/README.md)
 preserve the actual logs, binary identities and positive/ill-typed controls.
 
@@ -155,10 +156,12 @@ and review are disclosed in the manuscript and candidate metadata; they do not
 constitute independent human peer review.
 
 
-A sixteenth [positional-field candidate](palomar/v1/positional_field/formalization.yaml)
-adds three literal-model statements: positivity of the original single rates,
-the convergent weighted grid comparison for every independent Poisson
-realization, and the explicit product realization. Its twelve theorem/bridge
-proofs and all six local checkers passed on standalone exports at the preserved
-proof base. Frozen-root qualification is pending. The two earlier workflow
-callers are preserved; the new positional-field caller is separate.
+The positional-field family selects three original-model statements: uniform
+single-rate positivity, the convergent weighted grid comparison for every
+independent Poisson realization, and its canonical product realization. Its
+[frozen-root qualification](palomar/v1/positional_field/qualification.json)
+and verified con-ron replay passed. The separately scoped
+[standalone six-checker report](palomar/v1/supplementary/positional-field-draft-checks.json)
+preserves twelve direct proof audits and the exact earlier proof base. The
+original two workflow callers are preserved; a separate caller selects this
+family. The original exponent 4/5 and all 167 numbered statements are unchanged.

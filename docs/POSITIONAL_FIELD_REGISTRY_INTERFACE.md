@@ -28,7 +28,8 @@ Standalone immutable exports passed exact statement comparison and all six
 installed local checkers, with isolation enabled and verified con-ron using
 two jobs. Their actual proof base, module and export hashes, binary hashes and
 original log are preserved in the supplementary report. Frozen-root
-qualification is pending. The original seven-family and additional eight-family
+[qualification](../palomar/v1/positional_field/qualification.json) and the supplementary
+verified con-ron replay passed at source 6a1b83ed81beb61671c2199ffd5272bc36d612d5. The original seven-family and additional eight-family
 workflow callers retain their exact previous bytes; a separate pinned full
 caller prepares this positional family. No complete Palomar workflow,
 relationship declaration, intake, editorial review or registration is claimed.

@@ -1,252 +1,282 @@
 {
   "status": "passed",
-  "source_commit": "e6feba8adcf77e204dce8517622ea731da0dacc4",
+  "source_commit": "6a1b83ed81beb61671c2199ffd5272bc36d612d5",
   "toolchain": "leanprover/lean4:v4.36.0-rc2",
-  "full_build_jobs": 18587,
-  "audited_theorems": 19631,
+  "full_build_jobs": 18589,
+  "audited_theorems": 19643,
   "substantive_theorems": 19441,
-  "registry_solution_theorems": 190,
+  "registry_solution_theorems": 202,
   "challenge_imported": false,
   "inventory": "docs/axiom-audit-declarations.json",
-  "inventory_sha256": "6728bc22087d5cd316440548965b66d3c34c38335f4f0f7c80b49d62331e5628",
+  "inventory_sha256": "6e88462ec1b1314b9390d5291694929d27c71bff580d1b5bd0396803650434fd",
   "permitted_kernel_axioms": [
     "propext",
     "Classical.choice",
     "Quot.sound"
   ],
-  "scope": "Whole-project replay including exact independent Poisson arrival laws, a concrete product realization, coordinate and grid identities, and the convergent original weighted comparison for every independent realization. All fifteen registry Solutions and all original and revised numbered statements are preserved. This is not the complete Palomar workflow.",
+  "scope": "Complete source-discovered audit at the immutable sixteen-family source, including all sixteen Solutions. This registry packaging adds no new mathematical-change entry and is separate from the full Palomar workflow.",
   "logs": [
     {
       "kind": "build",
-      "path": "docs/validation/checkpoint-0992/build.log.gz",
-      "sha256_gzip": "afd8f2bbca124f873bb395f698eb5a18ffa3b631660c9afe9582af816420d6cb"
+      "path": "docs/validation/registry-positional-field/build.log.gz",
+      "sha256_gzip": "7f601ddba953c8eeaa8ae8a8fbcc85c748cdc3b5389491bf84bab173847e167d"
     },
     {
       "kind": "audit",
-      "path": "docs/validation/checkpoint-0992/audit.log.gz",
-      "sha256_gzip": "a51f85b2be5e3defa2cdb9628596b29a4c1e43ed1ac842d7c90fc437390bb4ea"
+      "path": "docs/validation/registry-positional-field/audit.log.gz",
+      "sha256_gzip": "85c72b6192f8167b00de96f936ad265a891c962a4ed28085951a6a0929f7e4e1"
     }
   ],
   "previous_audit": {
     "status": "passed",
-    "source_commit": "0a9d3e68a8af39b6ea1ce725027f72ca5f10e8c4",
+    "source_commit": "e6feba8adcf77e204dce8517622ea731da0dacc4",
     "toolchain": "leanprover/lean4:v4.36.0-rc2",
-    "full_build_jobs": 18579,
-    "audited_theorems": 19611,
-    "substantive_theorems": 19421,
+    "full_build_jobs": 18587,
+    "audited_theorems": 19631,
+    "substantive_theorems": 19441,
     "registry_solution_theorems": 190,
     "challenge_imported": false,
     "inventory": "docs/axiom-audit-declarations.json",
-    "inventory_sha256": "ab02b66bef71bbdd2d7ec904bd06639c7fce3d8301caa09b325964404660b70b",
+    "inventory_sha256": "6728bc22087d5cd316440548965b66d3c34c38335f4f0f7c80b49d62331e5628",
     "permitted_kernel_axioms": [
       "propext",
       "Classical.choice",
       "Quot.sound"
     ],
-    "scope": "Complete source-discovered audit at the immutable fifteen-family source, including all fifteen Solutions. Only the three standard kernel axioms are permitted. This is not the full Palomar workflow.",
+    "scope": "Whole-project replay including exact independent Poisson arrival laws, a concrete product realization, coordinate and grid identities, and the convergent original weighted comparison for every independent realization. All fifteen registry Solutions and all original and revised numbered statements are preserved. This is not the complete Palomar workflow.",
     "logs": [
       {
         "kind": "build",
-        "path": "docs/validation/registry-prime-cylinders/build.log.gz",
-        "sha256_gzip": "d7764c57b8814efed33899e42bec139456a50e33a4355ab09b859640ee30bbf6"
+        "path": "docs/validation/checkpoint-0992/build.log.gz",
+        "sha256_gzip": "afd8f2bbca124f873bb395f698eb5a18ffa3b631660c9afe9582af816420d6cb"
       },
       {
         "kind": "audit",
-        "path": "docs/validation/registry-prime-cylinders/audit.log.gz",
-        "sha256_gzip": "ca6366f15b13fe07ba7f282ce702041b42d99db63d4bc34dbad9dbec54e0f74e"
+        "path": "docs/validation/checkpoint-0992/audit.log.gz",
+        "sha256_gzip": "a51f85b2be5e3defa2cdb9628596b29a4c1e43ed1ac842d7c90fc437390bb4ea"
       }
     ],
     "previous_audit": {
       "status": "passed",
-      "source_commit": "7a5acb2182ebfaa9e2b1ae59b070cb225362a371",
+      "source_commit": "0a9d3e68a8af39b6ea1ce725027f72ca5f10e8c4",
       "toolchain": "leanprover/lean4:v4.36.0-rc2",
-      "full_build_jobs": 18577,
-      "audited_theorems": 19598,
+      "full_build_jobs": 18579,
+      "audited_theorems": 19611,
       "substantive_theorems": 19421,
-      "registry_solution_theorems": 177,
+      "registry_solution_theorems": 190,
       "challenge_imported": false,
       "inventory": "docs/axiom-audit-declarations.json",
-      "inventory_sha256": "e1832ad7f6422cd9f386e226e93aec11b642cbe03d4dfd51ad58c85648328af2",
-      "scope": "Complete actual source-discovered audit at the immutable checkpoint-991 source, including all fourteen Solutions. Only the three standard kernel axioms are permitted. This is not the complete Palomar workflow.",
+      "inventory_sha256": "ab02b66bef71bbdd2d7ec904bd06639c7fce3d8301caa09b325964404660b70b",
+      "permitted_kernel_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "scope": "Complete source-discovered audit at the immutable fifteen-family source, including all fifteen Solutions. Only the three standard kernel axioms are permitted. This is not the full Palomar workflow.",
       "logs": [
         {
           "kind": "build",
-          "path": "docs/validation/checkpoint-0991/build.log.gz",
-          "sha256_gzip": "504d40e7a00ac1ae2d4d69c75a382eee6f150e7f32a82cee2a2412184b41d6a7"
+          "path": "docs/validation/registry-prime-cylinders/build.log.gz",
+          "sha256_gzip": "d7764c57b8814efed33899e42bec139456a50e33a4355ab09b859640ee30bbf6"
         },
         {
           "kind": "audit",
-          "path": "docs/validation/checkpoint-0991/audit.log.gz",
-          "sha256_gzip": "4e52aca562875ddbfade298a2119528ba9d6e9d94d91485d3ed8fe47cdee2878"
+          "path": "docs/validation/registry-prime-cylinders/audit.log.gz",
+          "sha256_gzip": "ca6366f15b13fe07ba7f282ce702041b42d99db63d4bc34dbad9dbec54e0f74e"
         }
       ],
       "previous_audit": {
         "status": "passed",
-        "source_commit": "d5bc5deb5056c55be7c72404ed0e0fef4e6f147d",
+        "source_commit": "7a5acb2182ebfaa9e2b1ae59b070cb225362a371",
         "toolchain": "leanprover/lean4:v4.36.0-rc2",
-        "full_build_jobs": 18575,
-        "audited_theorems": 19567,
-        "substantive_theorems": 19390,
+        "full_build_jobs": 18577,
+        "audited_theorems": 19598,
+        "substantive_theorems": 19421,
         "registry_solution_theorems": 177,
         "challenge_imported": false,
         "inventory": "docs/axiom-audit-declarations.json",
-        "inventory_sha256": "41c58ef986a2ff5ea9dbf475ad4069547e016a12c59e41187a58596f3e691189",
-        "scope": "Complete actual source-discovered audit at the immutable checkpoint-990 source, including all fourteen Solutions. Only the three standard kernel axioms are permitted. This is not the complete Palomar workflow.",
+        "inventory_sha256": "e1832ad7f6422cd9f386e226e93aec11b642cbe03d4dfd51ad58c85648328af2",
+        "scope": "Complete actual source-discovered audit at the immutable checkpoint-991 source, including all fourteen Solutions. Only the three standard kernel axioms are permitted. This is not the complete Palomar workflow.",
         "logs": [
           {
             "kind": "build",
-            "path": "docs/validation/checkpoint-0990/build.log.gz",
-            "sha256_gzip": "edc0ea7c170bf1bdaa1c4e169105de32aa691c4f8d6fb9d89236fcffd2965618"
+            "path": "docs/validation/checkpoint-0991/build.log.gz",
+            "sha256_gzip": "504d40e7a00ac1ae2d4d69c75a382eee6f150e7f32a82cee2a2412184b41d6a7"
           },
           {
             "kind": "audit",
-            "path": "docs/validation/checkpoint-0990/audit.log.gz",
-            "sha256_gzip": "f00f7bf44898eff2bd881e4894fe38f9340b346660fd427e16caf068d4842e7e"
+            "path": "docs/validation/checkpoint-0991/audit.log.gz",
+            "sha256_gzip": "4e52aca562875ddbfade298a2119528ba9d6e9d94d91485d3ed8fe47cdee2878"
           }
         ],
         "previous_audit": {
           "status": "passed",
-          "source_commit": "f55fe63b9538863bd0ec8bdf8b3deacb70f49e4d",
+          "source_commit": "d5bc5deb5056c55be7c72404ed0e0fef4e6f147d",
           "toolchain": "leanprover/lean4:v4.36.0-rc2",
-          "full_build_jobs": 18573,
-          "audited_theorems": 19540,
-          "substantive_theorems": 19363,
+          "full_build_jobs": 18575,
+          "audited_theorems": 19567,
+          "substantive_theorems": 19390,
           "registry_solution_theorems": 177,
           "challenge_imported": false,
           "inventory": "docs/axiom-audit-declarations.json",
-          "inventory_sha256": "cc39b524c4824228d15ad7ed8e35924ef49dc6fa66f3f4d3aebf06bee7a7841e",
-          "scope": "Complete actual source-discovered audit at the immutable checkpoint-989 source, including all fourteen Solutions. Only the three standard kernel axioms are permitted. This is not the complete Palomar workflow.",
+          "inventory_sha256": "41c58ef986a2ff5ea9dbf475ad4069547e016a12c59e41187a58596f3e691189",
+          "scope": "Complete actual source-discovered audit at the immutable checkpoint-990 source, including all fourteen Solutions. Only the three standard kernel axioms are permitted. This is not the complete Palomar workflow.",
           "logs": [
             {
               "kind": "build",
-              "path": "docs/validation/checkpoint-0989/build.log.gz",
-              "sha256_gzip": "972dd5fa9087a53e6328d0a087ff41ad286b327cb24e6a6186261485d598f324"
+              "path": "docs/validation/checkpoint-0990/build.log.gz",
+              "sha256_gzip": "edc0ea7c170bf1bdaa1c4e169105de32aa691c4f8d6fb9d89236fcffd2965618"
             },
             {
               "kind": "audit",
-              "path": "docs/validation/checkpoint-0989/audit.log.gz",
-              "sha256_gzip": "fe528c81f078d409e1ffc696254988c5af8485d1c1c4c3113e6f0db4d8a5380a"
+              "path": "docs/validation/checkpoint-0990/audit.log.gz",
+              "sha256_gzip": "f00f7bf44898eff2bd881e4894fe38f9340b346660fd427e16caf068d4842e7e"
             }
           ],
           "previous_audit": {
             "status": "passed",
-            "source_commit": "57835da7813e314367f689312af436f9ae62e869",
+            "source_commit": "f55fe63b9538863bd0ec8bdf8b3deacb70f49e4d",
             "toolchain": "leanprover/lean4:v4.36.0-rc2",
-            "full_build_jobs": 18571,
-            "audited_theorems": 19513,
-            "substantive_theorems": 19336,
+            "full_build_jobs": 18573,
+            "audited_theorems": 19540,
+            "substantive_theorems": 19363,
             "registry_solution_theorems": 177,
             "challenge_imported": false,
             "inventory": "docs/axiom-audit-declarations.json",
-            "inventory_sha256": "692ae4b1a543b66bd1b3e1ad156c265dd8b75a7df92fe2cb1f0b8b4c2bc6c2f2",
-            "scope": "Complete actual source-discovered audit at the immutable checkpoint-988 source, including all fourteen Solutions. Only the three standard kernel axioms are permitted. This is not the complete Palomar workflow.",
+            "inventory_sha256": "cc39b524c4824228d15ad7ed8e35924ef49dc6fa66f3f4d3aebf06bee7a7841e",
+            "scope": "Complete actual source-discovered audit at the immutable checkpoint-989 source, including all fourteen Solutions. Only the three standard kernel axioms are permitted. This is not the complete Palomar workflow.",
             "logs": [
               {
                 "kind": "build",
-                "path": "docs/validation/checkpoint-0988/build.log.gz",
-                "sha256_gzip": "3295dbbfdb4f479fac2f019b13778b4e19e22c56d9ab4ea078f2a65260c6b84f"
+                "path": "docs/validation/checkpoint-0989/build.log.gz",
+                "sha256_gzip": "972dd5fa9087a53e6328d0a087ff41ad286b327cb24e6a6186261485d598f324"
               },
               {
                 "kind": "audit",
-                "path": "docs/validation/checkpoint-0988/audit.log.gz",
-                "sha256_gzip": "432a4d50fd7bafb7c10120cada77d76e1808c1faa2075596352677d7da579055"
+                "path": "docs/validation/checkpoint-0989/audit.log.gz",
+                "sha256_gzip": "fe528c81f078d409e1ffc696254988c5af8485d1c1c4c3113e6f0db4d8a5380a"
               }
             ],
             "previous_audit": {
               "status": "passed",
-              "source_commit": "68164c4abb37b8679c9c3f1f4e78dc52667a285b",
+              "source_commit": "57835da7813e314367f689312af436f9ae62e869",
               "toolchain": "leanprover/lean4:v4.36.0-rc2",
-              "full_build_jobs": 18567,
-              "audited_theorems": 19485,
-              "substantive_theorems": 19321,
-              "registry_solution_theorems": 164,
+              "full_build_jobs": 18571,
+              "audited_theorems": 19513,
+              "substantive_theorems": 19336,
+              "registry_solution_theorems": 177,
               "challenge_imported": false,
               "inventory": "docs/axiom-audit-declarations.json",
-              "inventory_sha256": "1ff6f19620bb28f1d89469f6dd4aad9bef232c54e268e21500edf4b1b64fe588",
-              "scope": "Complete actual source-discovered audit at the immutable checkpoint-987 source, including all thirteen Solutions. Only the three standard kernel axioms are permitted. This is not the complete Palomar workflow.",
+              "inventory_sha256": "692ae4b1a543b66bd1b3e1ad156c265dd8b75a7df92fe2cb1f0b8b4c2bc6c2f2",
+              "scope": "Complete actual source-discovered audit at the immutable checkpoint-988 source, including all fourteen Solutions. Only the three standard kernel axioms are permitted. This is not the complete Palomar workflow.",
               "logs": [
                 {
                   "kind": "build",
-                  "path": "docs/validation/checkpoint-0987/build.log.gz",
-                  "sha256_gzip": "5562784c3783a155ea55da3ca6de41dcd6223fe27c93196398257c1aecf6a7fd"
+                  "path": "docs/validation/checkpoint-0988/build.log.gz",
+                  "sha256_gzip": "3295dbbfdb4f479fac2f019b13778b4e19e22c56d9ab4ea078f2a65260c6b84f"
                 },
                 {
                   "kind": "audit",
-                  "path": "docs/validation/checkpoint-0987/audit.log.gz",
-                  "sha256_gzip": "71b3cf01cd4b366b2b6ee59e40cb356ef1098d93707e7f06f20a8ac9308d09ab"
+                  "path": "docs/validation/checkpoint-0988/audit.log.gz",
+                  "sha256_gzip": "432a4d50fd7bafb7c10120cada77d76e1808c1faa2075596352677d7da579055"
                 }
               ],
               "previous_audit": {
                 "status": "passed",
-                "source_commit": "a7d822328e553ce2b4e91cd2c636e20533404ba5",
+                "source_commit": "68164c4abb37b8679c9c3f1f4e78dc52667a285b",
                 "toolchain": "leanprover/lean4:v4.36.0-rc2",
-                "full_build_jobs": 18565,
-                "audited_theorems": 19468,
-                "substantive_theorems": 19304,
+                "full_build_jobs": 18567,
+                "audited_theorems": 19485,
+                "substantive_theorems": 19321,
                 "registry_solution_theorems": 164,
                 "challenge_imported": false,
                 "inventory": "docs/axiom-audit-declarations.json",
-                "inventory_sha256": "798fd3bcef852afa3f943cab174f5da70dfb310770d9042c87f605ca1316938f",
-                "scope": "Complete actual source-discovered audit at this immutable source, including thirteen Solutions. Only the three standard kernel axioms are permitted. This is not the complete Palomar workflow.",
+                "inventory_sha256": "1ff6f19620bb28f1d89469f6dd4aad9bef232c54e268e21500edf4b1b64fe588",
+                "scope": "Complete actual source-discovered audit at the immutable checkpoint-987 source, including all thirteen Solutions. Only the three standard kernel axioms are permitted. This is not the complete Palomar workflow.",
                 "logs": [
                   {
-                    "kind": "full_build",
-                    "path": "palomar/v1/evidence/exponential_divergence-full-build.log.gz",
-                    "sha256": "848ccb324a0c6967461e160eab73f4089aa0d40345fc9b9a4abed9667620e1ee"
+                    "kind": "build",
+                    "path": "docs/validation/checkpoint-0987/build.log.gz",
+                    "sha256_gzip": "5562784c3783a155ea55da3ca6de41dcd6223fe27c93196398257c1aecf6a7fd"
                   },
                   {
-                    "kind": "axiom_audit",
-                    "path": "palomar/v1/evidence/exponential_divergence-axiom-audit.log.gz",
-                    "sha256": "69714a12e865bdece40926aacb1e9599a783f9efda6f40bb5b23fdd3dcf4304e"
+                    "kind": "audit",
+                    "path": "docs/validation/checkpoint-0987/audit.log.gz",
+                    "sha256_gzip": "71b3cf01cd4b366b2b6ee59e40cb356ef1098d93707e7f06f20a8ac9308d09ab"
                   }
                 ],
                 "previous_audit": {
                   "status": "passed",
-                  "source_commit": "eb3039966bdeeb0b4e5e895bc3bbecfe4222342a",
+                  "source_commit": "a7d822328e553ce2b4e91cd2c636e20533404ba5",
                   "toolchain": "leanprover/lean4:v4.36.0-rc2",
-                  "full_build_jobs": 18537,
-                  "audited_theorems": 19291,
-                  "substantive_theorems": 19288,
-                  "registry_solution_theorems": 3,
+                  "full_build_jobs": 18565,
+                  "audited_theorems": 19468,
+                  "substantive_theorems": 19304,
+                  "registry_solution_theorems": 164,
                   "challenge_imported": false,
                   "inventory": "docs/axiom-audit-declarations.json",
+                  "inventory_sha256": "798fd3bcef852afa3f943cab174f5da70dfb310770d9042c87f605ca1316938f",
+                  "scope": "Complete actual source-discovered audit at this immutable source, including thirteen Solutions. Only the three standard kernel axioms are permitted. This is not the complete Palomar workflow.",
                   "logs": [
                     {
                       "kind": "full_build",
-                      "path": "palomar/v1/evidence/initial-full-build.log.gz",
-                      "sha256": "886d328ecae7d26e8c6cdca7b931fafbf21397e8f0fcb1ba6e1d9a7cb65ccee0"
+                      "path": "palomar/v1/evidence/exponential_divergence-full-build.log.gz",
+                      "sha256": "848ccb324a0c6967461e160eab73f4089aa0d40345fc9b9a4abed9667620e1ee"
                     },
                     {
                       "kind": "axiom_audit",
-                      "path": "palomar/v1/evidence/initial-axiom-audit.log.gz",
-                      "sha256": "60da604938a79a4a5ac1ba1201a36cde901958c50f406b19ee2b51655f17781f"
+                      "path": "palomar/v1/evidence/exponential_divergence-axiom-audit.log.gz",
+                      "sha256": "69714a12e865bdece40926aacb1e9599a783f9efda6f40bb5b23fdd3dcf4304e"
                     }
                   ],
                   "previous_audit": {
                     "status": "passed",
+                    "source_commit": "eb3039966bdeeb0b4e5e895bc3bbecfe4222342a",
                     "toolchain": "leanprover/lean4:v4.36.0-rc2",
-                    "full_build_jobs": 18535,
-                    "audited_theorems": 19288,
-                    "same_selection_as_checkpoint_984": true,
-                    "original_checkpoint_output_accepted": true,
-                    "negative_checks": {
-                      "incomplete_output_rejected": true,
-                      "forbidden_axiom_rejected": true
-                    },
+                    "full_build_jobs": 18537,
+                    "audited_theorems": 19291,
+                    "substantive_theorems": 19288,
+                    "registry_solution_theorems": 3,
+                    "challenge_imported": false,
                     "inventory": "docs/axiom-audit-declarations.json",
-                    "audit_source_lines": 26,
                     "logs": [
                       {
-                        "kind": "build",
-                        "sha256_gzip": "aff436f3c692583885cb074bc40ef4f3ffbd51c9301eead1041227f025b966a9"
+                        "kind": "full_build",
+                        "path": "palomar/v1/evidence/initial-full-build.log.gz",
+                        "sha256": "886d328ecae7d26e8c6cdca7b931fafbf21397e8f0fcb1ba6e1d9a7cb65ccee0"
                       },
                       {
-                        "kind": "audit",
-                        "sha256_gzip": "bad400094342d47d9cce75194c4c3ec102c71a3ecada12c100a142428ba5718a"
+                        "kind": "axiom_audit",
+                        "path": "palomar/v1/evidence/initial-axiom-audit.log.gz",
+                        "sha256": "60da604938a79a4a5ac1ba1201a36cde901958c50f406b19ee2b51655f17781f"
                       }
                     ],
-                    "source_commit": "13be90ed3fbda9b69ead06d32800d2a8fc2d17d5",
-                    "scope": "Original 19288-theorem audit before adding standalone registration Solution wrappers; the original checkpoint-984 selection is preserved at this source commit."
+                    "previous_audit": {
+                      "status": "passed",
+                      "toolchain": "leanprover/lean4:v4.36.0-rc2",
+                      "full_build_jobs": 18535,
+                      "audited_theorems": 19288,
+                      "same_selection_as_checkpoint_984": true,
+                      "original_checkpoint_output_accepted": true,
+                      "negative_checks": {
+                        "incomplete_output_rejected": true,
+                        "forbidden_axiom_rejected": true
+                      },
+                      "inventory": "docs/axiom-audit-declarations.json",
+                      "audit_source_lines": 26,
+                      "logs": [
+                        {
+                          "kind": "build",
+                          "sha256_gzip": "aff436f3c692583885cb074bc40ef4f3ffbd51c9301eead1041227f025b966a9"
+                        },
+                        {
+                          "kind": "audit",
+                          "sha256_gzip": "bad400094342d47d9cce75194c4c3ec102c71a3ecada12c100a142428ba5718a"
+                        }
+                      ],
+                      "source_commit": "13be90ed3fbda9b69ead06d32800d2a8fc2d17d5",
+                      "scope": "Original 19288-theorem audit before adding standalone registration Solution wrappers; the original checkpoint-984 selection is preserved at this source commit."
+                    }
                   }
                 }
               }

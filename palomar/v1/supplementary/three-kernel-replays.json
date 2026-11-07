@@ -268,9 +268,26 @@
       "log_path": "palomar/v1/supplementary/prime_cylinders-three-kernels.log.gz",
       "log_sha256": "5d38c05be91461a4af0712e5b339e8fce1d8ac28737f239493605b1ca6db1e4f",
       "compressed_log_sha256": "b0df285cb5aca75bd51b14d7b205bd2ec7b121743990dd037fb3602ad8ba2797"
+    },
+    {
+      "family": "positional_field",
+      "source_commit": "6a1b83ed81beb61671c2199ffd5272bc36d612d5",
+      "selected_declarations": [
+        "PaperP1Registry.PositionalField.positive_single_rates",
+        "PaperP1Registry.PositionalField.weighted_original_grid",
+        "PaperP1Registry.PositionalField.canonical_weighted_grid"
+      ],
+      "submission_configuration_sha256": "aca61f5cf6967ec584171d08cd6a1299c6dcca50729ce92b7c49b2365d49cddc",
+      "derived_configuration_sha256": "b3d4f0eabff9b205e569c6b7d8dff6f06ba55ecb3e18acc0d9330a4ed52c43bc",
+      "actual_comparator_exit": 0,
+      "all_three_kernels_accepted": true,
+      "con_ron_accepted_declarations": 98776,
+      "log_path": "palomar/v1/supplementary/positional_field-three-kernels.log.gz",
+      "log_sha256": "79d2e724ecff6502b689d9c8518c2ceeac30fd8a109df7dd0414e26fe973246d",
+      "compressed_log_sha256": "4b2885770474342356f86e3c36c4ff5319a6b3e93e239190ce51047c5846a983"
     }
   ],
-  "updated_at": "2026-11-07T05:58:35.183578+00:00",
+  "updated_at": "2026-11-07T07:16:48.850811+00:00",
   "schema_version": 1,
   "source_commits": [
     "08fd135021794dcb5a8b902ddbea109dfbd47c5d",
@@ -278,6 +295,7 @@
     "1f25a899d04ff2bac781747b2e7fe5cef42e6c7c",
     "4447dfc36bd66103440118a509831fae3068e804",
     "57835da7813e314367f689312af436f9ae62e869",
+    "6a1b83ed81beb61671c2199ffd5272bc36d612d5",
     "a7d822328e553ce2b4e91cd2c636e20533404ba5",
     "ce8d14d39944266a5b2f5b73929625a0236be86d"
   ],

@@ -41,3 +41,11 @@ counts of manuscript results. Revised manuscript coverage remains 167/167.
 - [Local-rigidity draft checks](local-rigidity-draft-checks.json): 13 direct theorem audits and six checkers on the standalone exports, with its actual earlier proof base and module hashes preserved. Its later root qualification and three-kernel replay are recorded separately.
 
 - [Finite valuation-cylinder draft checks](prime-cylinders-draft-checks.json): thirteen direct theorem audits and six checkers on the standalone exports, retaining the actual earlier proof base and exact module hashes. Frozen-root qualification is separate.
+
+
+The positional-field [standalone report](positional-field-draft-checks.json) and
+[original log](positional-field-draft-checks.log.gz) record the exact earlier
+proof base and acceptance by all six local checkers. Its frozen-root qualification
+and [three-kernel log](positional_field-three-kernels.log.gz) are separately
+source-bound in the common replay report. All sixteen families, with 64 selected
+declarations, retain their own exact source and actual checker outcomes.

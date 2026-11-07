@@ -1,6 +1,7 @@
 {
-  "source_commit": "0a9d3e68a8af39b6ea1ce725027f72ca5f10e8c4",
+  "source_commit": "6a1b83ed81beb61671c2199ffd5272bc36d612d5",
   "original_seven_caller_unchanged_from": "ce8d14d39944266a5b2f5b73929625a0236be86d",
+  "first_fifteen_callers_unchanged_from": "4606a1f1a70bc28a168200e94ea486134f7f966d",
   "outcomes": [
     {
       "workflow": ".github/workflows/palomar-preflight.yml",
@@ -15,6 +16,13 @@
       "both_supported_roles_passed": true,
       "invalid_source_family_role_rejected": true,
       "sha256": "da22708f4c0d796e89acbc381b9826965e9e10e6a8238636a4453fc9e72ca51a"
+    },
+    {
+      "workflow": ".github/workflows/palomar-preflight-positional.yml",
+      "all_family_count": 1,
+      "both_supported_roles_passed": true,
+      "invalid_source_family_role_rejected": true,
+      "sha256": "666f776ff39b55e54ec75e3c060f563e42504b9aa0d01cd19b80a84a8750ec12"
     }
   ],
   "scope": "Local selector and pin validation only; test relationship strings do not assert a human relationship. No workflow dispatch or intake."

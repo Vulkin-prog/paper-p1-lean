@@ -11,8 +11,9 @@ and 19,783 distinct references, all actual exits 0. The clarification is
 integrated in the revised companion appendix, with all 167 PDF pages
 rebuilt and reviewed.
 The original arithmetic rates, exponent and all 167 numbered statements
-are preserved. Fifteen registry families with 61 selections remain
-locally qualified; no registration is claimed.
+are preserved. Sixteen registry families with 64 selections are locally qualified; their
+complete project extension passed 18,589 build jobs and 19,643 theorem axiom
+checks at source 6a1b83ed81beb61671c2199ffd5272bc36d612d5. No registration is claimed.
 
 Historical checkpoint P1-MATH-0991: The actual retained positive-start
 forcing event is an explicitly constructed compatible affine fiber.
