@@ -36,7 +36,7 @@ The frozen preparation records describe the earlier author-requested hold;
 they are not live submission state. The author subsequently resumed the six
 cycles and explicitly confirmed the responsible-author/maintainer relationship
 for source `f9a2d213265a6833318745dd7f2d74c02090ab19`. The first official full
-preflight passed and Palomar's own verification has been launched;
+preflight and Palomar's own verification both passed;
 [current public progress](../palomar/publication/CYCLE_STATE.json)
 records this separately. Publication of each actual private review still
 requires a separate decision after its delivery.

@@ -80,7 +80,10 @@ future manuscript version and preparing Palomar registrations after completion.
   publication plan. Full preflight `43252492734` passed for `quadratic_limits`;
   its receipt is `palomar/publication/quadratic_limits/preflight/VALIDATION.json`.
   Ordinary intake was authenticated and both temporary proof artifacts deleted.
-  Palomar's separate verification is run `43259436857`, initially queued.
+  Palomar's separate verification `43259436857` passed too; its public receipt
+  is `palomar/publication/quadratic_limits/verification/VALIDATION.json`.
+  This does not give permission to register before the actual private review
+  is delivered to the user and that review's publication is explicitly approved.
   Read `palomar/publication/CYCLE_STATE.json` for public
   progress. This supersedes the earlier hold. Keep one complete cycle active
   at a time, and submit only after its exact official full report passes.

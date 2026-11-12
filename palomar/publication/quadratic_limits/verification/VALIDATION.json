@@ -1,0 +1,40 @@
+{
+  "status": "pass",
+  "source_commit": "f9a2d213265a6833318745dd7f2d74c02090ab19",
+  "repository": "Vulkin-prog/paper-p1-lean",
+  "project_path": "RegistryV2",
+  "comparator_config_path": "RegistryV2/comparator/p1_quadratic_limits.json",
+  "formalization_metadata_path": "palomar/publication/quadratic_limits/formalization.yaml",
+  "selected_theorem_count": 10,
+  "workflow_repository": "PalomarRegistry/PalomarSubmission",
+  "workflow_head_sha": "14aa8d6b3c2f14a8540605e37144560b9a00e7e7",
+  "workflow_path": ".github/workflows/submission.yml",
+  "run_id": 43259436857,
+  "workflow_url": "https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/43259436857",
+  "execution_profile": "palomar-namespace-16x32-v1",
+  "request_id": "o235iycwkgmu",
+  "artifact_id": 13967065872,
+  "artifact_sha256": "f2f4039181bf5bd8af6a7f16c9c17d08d8c5287f00b3832c3b7364527c901350",
+  "report_path": "palomar/publication/quadratic_limits/verification/mechanical-report.json",
+  "report_sha256": "0b1c76ddbb7de0bcc429f6cbf2fa38e8a836ea788e9c99d6885ec46faf5e25a2",
+  "native_lean_and_nanoda_passed": true,
+  "reported_external_kernels": [
+    {
+      "argv": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/nanoda_bin"
+      ],
+      "name": "nanoda"
+    },
+    {
+      "argv": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/con-ron",
+        "--jobs=2",
+        "--verified"
+      ],
+      "name": "con-ron"
+    }
+  ],
+  "warnings": [],
+  "registration_consent": false,
+  "scope": "Public Palomar mechanical evidence only. This receipt contains no private review, editorial outcome or registration consent."
+}

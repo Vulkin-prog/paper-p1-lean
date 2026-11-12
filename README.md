@@ -16,7 +16,9 @@ cover all 26 main results through 52 selections; their
 The author has resumed the six successive cycles for source commit
 `f9a2d213265a6833318745dd7f2d74c02090ab19`. The first official full preflight
 [passed](palomar/publication/quadratic_limits/preflight/VALIDATION.json), and
-Palomar's own verification has been launched. See [current public progress](palomar/publication/CYCLE_STATE.json).
+Palomar's own verification has also
+[passed](palomar/publication/quadratic_limits/verification/VALIDATION.json).
+See [current public progress](palomar/publication/CYCLE_STATE.json).
 Publication requires a separate decision after each actual private review.
 
 ## Preceding V2 edition

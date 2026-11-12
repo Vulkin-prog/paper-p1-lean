@@ -21,6 +21,8 @@ public mechanical progress. The first official full preflight is
 Its [full passing report](quadratic_limits/preflight/VALIDATION.json) is retained
 with its exact artifact and source hashes. Palomar's separate verification is
 [run 43259436857](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/43259436857).
+Its [passing mechanical evidence](quadratic_limits/verification/VALIDATION.json)
+is recorded separately from the predictive preflight and from any private review.
 Any publication decision is separate and follows receipt of the exact private review.
 The author name Brice Pouly and ORCID 0009-0008-8491-2467 remain structured fields
 in all six current dossiers.
