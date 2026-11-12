@@ -6,42 +6,42 @@
       "round": 1,
       "actual_exit_code": 0,
       "log": "main-round-1.log",
-      "log_sha256": "54e616e6aa39f4d10d4a59b0b61a48600681555125d4da11e7e8e7524f1671f2"
+      "log_sha256": "f46f36b88bf8d859fb8ab9eeb7eb79a95f78dc8478fbf296a7662df44335e830"
     },
     {
       "document": "companion",
       "round": 1,
       "actual_exit_code": 0,
       "log": "companion-round-1.log",
-      "log_sha256": "83aa6116d8f47f92ad364dfe0935e670df61736642d1782400be2b5e3b0f284b"
+      "log_sha256": "0f29a3df6e5e7905964ee8bf94ec13ca849a5b3617a7e31b7f89e1999508e97b"
     },
     {
       "document": "main",
       "round": 2,
       "actual_exit_code": 0,
       "log": "main-round-2.log",
-      "log_sha256": "8776f71b793da89ef2d5c2c0d0fe52c22fde929d753a1d19b3c0ad39b4cca585"
+      "log_sha256": "f83ea56c9b6cc493f4045a5fee9f1110d14a394b4052aa98166f0f81b7366f88"
     },
     {
       "document": "companion",
       "round": 2,
       "actual_exit_code": 0,
       "log": "companion-round-2.log",
-      "log_sha256": "b616d65cca49a6fc6a819e144b9749b48726f1af08847019f88e312b3e3ee092"
+      "log_sha256": "ce6754c0f840fd8e2ed43596dd3607597446edfccaa16f73df67e5e85cc9e754"
     },
     {
       "document": "main",
       "round": 3,
       "actual_exit_code": 0,
       "log": "main-round-3.log",
-      "log_sha256": "8776f71b793da89ef2d5c2c0d0fe52c22fde929d753a1d19b3c0ad39b4cca585"
+      "log_sha256": "f83ea56c9b6cc493f4045a5fee9f1110d14a394b4052aa98166f0f81b7366f88"
     },
     {
       "document": "companion",
       "round": 3,
       "actual_exit_code": 0,
       "log": "companion-round-3.log",
-      "log_sha256": "eb2dba488588bcc4f8c142e12e6cebdf829d583c17ead7f3dc0e82b17a1b9e97"
+      "log_sha256": "07824a89baaaa0721fbeea00a6631c5d4b7824269192bf6780743c9398643b27"
     }
   ],
   "cross_references_stable": true,
@@ -126,7 +126,7 @@
     },
     {
       "path": "formalization.tex",
-      "sha256": "4b270a708314f0968e3a759410fbe9e418020087e5a226e561d9a66b33e54244"
+      "sha256": "cfe7a597ac355d7894a841b79f2f4c334052087195923560002d59a5f0fa9d9f"
     },
     {
       "path": "main.tex",
@@ -182,14 +182,18 @@
       "document": "main",
       "filename": "P1_V2_0_Main_EN.pdf",
       "pages": 32,
-      "sha256": "e509ca9724014cecfae516c92f39d376cea06f5df81e0adf793fed689ce7d6a9"
+      "sha256": "da394038a861e921af602f1bc18614af931e1b3c681b52357c3e20f5f4d620e8"
     },
     {
       "document": "companion",
       "filename": "P1_V2_0_Companion_EN.pdf",
       "pages": 84,
-      "sha256": "5dd1bba0aaec64a300a535edec2dfb01db1c18cf451a6bd9479d8e61350f3961"
+      "sha256": "d4440aa11610e2eb012a5b7d3a85fda9e211e604bbdeaab9889b14342a44ef44"
     }
   ],
-  "visual_review": "pending_separate_render_and_inspection"
+  "visual_review": "passed_separate_render_and_inspection",
+  "visual_review_record": {
+    "path": "docs/validation/v2.0/pdf/visual-review.json",
+    "sha256": "d59eb1dbab4c62bcb1db85342ca7c75c341e7eb9cd9a15e548536fd052c978ec"
+  }
 }

@@ -24,7 +24,8 @@ is separately proved unconditionally.
   [companion PDF,84 pages](../manuscripts/paper-p1/v2.0/pdf/P1_V2_0_Companion_EN.pdf).
 
 All received scientific sources are unchanged. Only the active shared
-formalization notice was updated to describe the completed alignment.
+formalization notice was updated to describe the completed alignment and the
+six prepared Palomar scopes, with the submission hold stated explicitly.
 The 107 unchanged statement blocks, ten changed blocks and one new lemma
 are bound to actual source bytes and compiled PDF numbering. The 50 omitted
 results remain historical, with their proofs; removal from this scalar-count
@@ -48,9 +49,13 @@ nine examples, seven fixed-arity types and four prior Palm types replayed
 byte-identically. Lean v4.36.0-rc2 and the Mathlib pin remain unchanged.
 
 Six actual pdfLaTeX executions stabilized both documents, without overfull
-boxes or unresolved references. All 116 pages were inspected in ten contact
-sheets and eleven selected pages separately; [visual evidence](validation/v2.0/pdf/visual-review.json)
-records exactly those inspected views. The independent received reports
+boxes or unresolved references. All 116 current pages were inspected in ten
+contact sheets, and the three changed notice pages separately;
+[visual evidence](validation/v2.0/pdf/visual-review.json) records those views.
+The [notice update checks](validation/v2.0/pdf/palomar-notice-update.json)
+compare the rebuilt PDFs to the prior `8b7cc022` snapshot: the other 113 pages
+are pixel-identical at 60dpi, and normalized PDF text outside the notice is
+unchanged. The independent received reports
 remain historical inputs, not new Lean replay receipts.
 
 Source hashes and clause checks protect recorded identity and scope. They do
@@ -69,6 +74,11 @@ The user resumed Palomar preparation on12 November2026. The active
 main results to52 selected statements. Historical dossiers and receipts remain
 preserved. Local checks under `palomar/v3` do not replace official full
 preflight, intake, private review or the human publication decision.
+The shared paper notice now includes the six-dossier allocation and its
+52-statement total, with links to the immutable preparation plan and local
+evidence. It is on article page 30 and companion pages 81--82. The author's
+latest decision keeps the six dossiers in preparation; no official Palomar
+cycle has been launched.
 
 ## Reproduce
 

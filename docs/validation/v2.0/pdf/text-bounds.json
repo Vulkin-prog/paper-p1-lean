@@ -1,5 +1,6 @@
 {
   "status": "passed",
+  "method": "pdfplumber character boxes within physical page bounds, tolerance 0.5pt",
   "pdfs": [
     {
       "filename": "P1_V2_0_Main_EN.pdf",

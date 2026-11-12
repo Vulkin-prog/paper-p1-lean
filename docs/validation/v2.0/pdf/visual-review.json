@@ -9,107 +9,67 @@
   "contact_sheets_actually_inspected": 10,
   "full_page_details_actually_inspected": {
     "main": [
-      9,
       30
     ],
     "companion": [
-      15,
-      31,
-      62,
-      63,
-      68,
-      71,
-      78,
-      79,
-      81
+      81,
+      82
     ]
   },
   "observed_layout_defects": [],
-  "method": "All116 pages rendered and inspected in10 contact sheets;11 full-page detail views inspected. Source reading and PDF extraction checked mathematical text independently of layout. No claim that rendered-but-unopened pages were individually read at full resolution.",
+  "method": "All 116 current pages inspected in 10 contact sheets. The 3 changed pages also inspected at 130dpi. Pixel comparison at 60dpi finds the other 113 pages identical to the previously validated 8b7cc022 PDFs. Scientific TeX sources and normalized PDF text outside the notice are unchanged.",
   "images": [
     {
-      "path": "docs/validation/v2.0/pdf/visual/companion-contact-01.png",
-      "sha256": "3ef25c69300025d8c4d392a656d853911607e9618ddfaf66c6cbc8fb24c37e03"
+      "path": "docs/validation/v2.0/pdf/palomar-notice/visual/main-contact-01.png",
+      "sha256": "ce0c2e3b5b12be6a8e840739d7c206d95e72c5fb59d203f9c989fc910ce7c38b"
     },
     {
-      "path": "docs/validation/v2.0/pdf/visual/companion-contact-02.png",
-      "sha256": "56a9f9e08e98e368f22dabe4a92d3e72657b98462b13f199be9d9eefec20a0b5"
+      "path": "docs/validation/v2.0/pdf/palomar-notice/visual/main-contact-02.png",
+      "sha256": "ba5085011a4d57f1a969475287257123d42aeee9429ba6cefc573c23edef6d2a"
     },
     {
-      "path": "docs/validation/v2.0/pdf/visual/companion-contact-03.png",
-      "sha256": "5ada5f14384ba9a4159e7b497843bd5c9d01a824a11f50f51304cbf192edb3d4"
+      "path": "docs/validation/v2.0/pdf/palomar-notice/visual/main-contact-03.png",
+      "sha256": "15d66a806e2e7b7bee39d8bb89b8891a55c5577e1f73b6adfe70557397fe2c2b"
     },
     {
-      "path": "docs/validation/v2.0/pdf/visual/companion-contact-04.png",
-      "sha256": "fc50643a1c036894d2acc219af7f3c60b538bc281a4883beb7f82a0bccc450ee"
+      "path": "docs/validation/v2.0/pdf/palomar-notice/visual/companion-contact-01.png",
+      "sha256": "ee0049c0c5c056b7c31ab363cc8875b5e17aa1e4aa5dc974a7883f9698ec0e4c"
     },
     {
-      "path": "docs/validation/v2.0/pdf/visual/companion-contact-05.png",
-      "sha256": "48538d619216f51644320ebfb2b59cfa540ae2ff0ca56cb97a329b7686723940"
+      "path": "docs/validation/v2.0/pdf/palomar-notice/visual/companion-contact-02.png",
+      "sha256": "078ce65ab869322be72557ad233169f8916d896c507c42398c2cc01424e52de0"
     },
     {
-      "path": "docs/validation/v2.0/pdf/visual/companion-contact-06.png",
-      "sha256": "694f5d4038dc46c0d6584657112a5d46ee1ef4aa3c407a12c72c13e7784ade54"
+      "path": "docs/validation/v2.0/pdf/palomar-notice/visual/companion-contact-03.png",
+      "sha256": "45738379de6241cf883ee49a9088f04f48e5ca228d961a7694a8358ed82554ec"
     },
     {
-      "path": "docs/validation/v2.0/pdf/visual/companion-contact-07.png",
-      "sha256": "ca00bc6b28e42567dabe3bcf5a71a6fc4c9b715f8c8d5382999477f22aae014f"
+      "path": "docs/validation/v2.0/pdf/palomar-notice/visual/companion-contact-04.png",
+      "sha256": "1758d693147c34516fdf44d8400abfb56287a47043b09208cc13bdcbf950ca24"
     },
     {
-      "path": "docs/validation/v2.0/pdf/visual/main-contact-01.png",
-      "sha256": "913806ea31e08521f5caba815e34b6f8a5e3bd8e0688856544096ddbd6027284"
+      "path": "docs/validation/v2.0/pdf/palomar-notice/visual/companion-contact-05.png",
+      "sha256": "640a7b6bb5757b258d25cd3fb7dc6468704b63a353ab695e83e7465b15e43ab0"
     },
     {
-      "path": "docs/validation/v2.0/pdf/visual/main-contact-02.png",
-      "sha256": "6cbceeeb5920bbad071ce288794f291a2d27889c294ed41b72f4eef71afeb9cd"
+      "path": "docs/validation/v2.0/pdf/palomar-notice/visual/companion-contact-06.png",
+      "sha256": "d3c9c50b70cf0ebe1a4460dbb0d6618cf09d46ad69826d6e486679075c2077f4"
     },
     {
-      "path": "docs/validation/v2.0/pdf/visual/main-contact-03.png",
-      "sha256": "c202f4bfba6b00e3ce2b09866b8a8192aa9c199220197ddb8c64efd37d7cfb22"
+      "path": "docs/validation/v2.0/pdf/palomar-notice/visual/companion-contact-07.png",
+      "sha256": "45330c506de802065470b21ee2ff202e0d9b344e26535395d37735c8d892ee9b"
     },
     {
-      "path": "docs/validation/v2.0/pdf/visual/detail-companion-15.png",
-      "sha256": "55d3511926e45fbf1332c83c229780b521cdfd81298b58d41791db3122e50d0a"
+      "path": "docs/validation/v2.0/pdf/palomar-notice/visual/detail-main-30.png",
+      "sha256": "0e9093e7156ec6b9f7dfc2753c09c120ceca016af6e3e71535afd3e93a332d77"
     },
     {
-      "path": "docs/validation/v2.0/pdf/visual/detail-companion-31.png",
-      "sha256": "26896146caea5dd69a58a77fae54d84e3c6531f273e19097f15017e38872dbf9"
+      "path": "docs/validation/v2.0/pdf/palomar-notice/visual/detail-companion-81.png",
+      "sha256": "dd57b0eafaf66be2d5fa5f738692996ccc07c51784c26f7fb20068bc56286b9d"
     },
     {
-      "path": "docs/validation/v2.0/pdf/visual/detail-companion-62.png",
-      "sha256": "c50f7e6ca3d497f278a9e97fc27fe38b1abb7c4bedd500c9adf02d49274d7e15"
-    },
-    {
-      "path": "docs/validation/v2.0/pdf/visual/detail-companion-63.png",
-      "sha256": "f78a4d576279f0cac8f4b3e3aa6edc3c22652cbe60936ef8981d234bbccb339a"
-    },
-    {
-      "path": "docs/validation/v2.0/pdf/visual/detail-companion-68.png",
-      "sha256": "0d4e96053ee5c8bd401160a20174e657953416d92745461f22259f292e7c8271"
-    },
-    {
-      "path": "docs/validation/v2.0/pdf/visual/detail-companion-71.png",
-      "sha256": "320e444a9e2ff035a79b38f6d65a21c341051fdc5bb7eaf52ef3f8804c8df3b0"
-    },
-    {
-      "path": "docs/validation/v2.0/pdf/visual/detail-companion-78.png",
-      "sha256": "deddc5c25093d4f17674dec34460181a4b873e62784c760e433278dee02fb4be"
-    },
-    {
-      "path": "docs/validation/v2.0/pdf/visual/detail-companion-79.png",
-      "sha256": "b9b05029b1f0653c87c20d3af9c1dd6fbf71dd458f7522fe703fd28a8e2d05e1"
-    },
-    {
-      "path": "docs/validation/v2.0/pdf/visual/detail-companion-81.png",
-      "sha256": "29ee7b5f18b63b37bdd2fa500ea155a8bf382b8a2b5ee3afac0f25705e4b962d"
-    },
-    {
-      "path": "docs/validation/v2.0/pdf/visual/detail-main-09.png",
-      "sha256": "3602a16426b1debd6edfe281230afed49511b94900328ac688cf9da6489433fb"
-    },
-    {
-      "path": "docs/validation/v2.0/pdf/visual/detail-main-30.png",
-      "sha256": "7d3b302c772f310d641cdb1df702424e8d200ba095be18b57ef0507d0b07975f"
+      "path": "docs/validation/v2.0/pdf/palomar-notice/visual/detail-companion-82.png",
+      "sha256": "a9ff56e01cca3b797bd5187056781855b9c2206b59cc79ba068805469b597918"
     }
   ],
   "pdfs": [
@@ -117,13 +77,13 @@
       "document": "main",
       "filename": "P1_V2_0_Main_EN.pdf",
       "pages": 32,
-      "sha256": "e509ca9724014cecfae516c92f39d376cea06f5df81e0adf793fed689ce7d6a9"
+      "sha256": "da394038a861e921af602f1bc18614af931e1b3c681b52357c3e20f5f4d620e8"
     },
     {
       "document": "companion",
       "filename": "P1_V2_0_Companion_EN.pdf",
       "pages": 84,
-      "sha256": "5dd1bba0aaec64a300a535edec2dfb01db1c18cf451a6bd9479d8e61350f3961"
+      "sha256": "d4440aa11610e2eb012a5b7d3a85fda9e211e604bbdeaab9889b14342a44ef44"
     }
   ],
   "aux": {
@@ -133,7 +93,7 @@
     },
     "companion": {
       "path": "docs/validation/v2.0/pdf/companion.aux",
-      "sha256": "06c012ada8e09a1201f6090aff67cff9307a196ca48d72b12da81bc367ebf126"
+      "sha256": "7c5bea0b62a44890c518f7e0228ec3d5e3afdbd3d19671f80d0119428efe14bc"
     }
   }
 }

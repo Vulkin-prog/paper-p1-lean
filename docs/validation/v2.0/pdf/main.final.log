@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2026.7.13)  12 NOV 2026 08:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2026.7.13)  12 NOV 2026 12:48
 entering extended mode
  file:line:error style messages enabled.
  %&-line parsing enabled.
@@ -803,10 +803,10 @@ c/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb></usr/share/te
 xmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmt
 t10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm
 10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on build/main.pdf (32 pages, 504679 bytes).
+Output written on build/main.pdf (32 pages, 505630 bytes).
 PDF statistics:
- 835 PDF objects out of 1000 (max. 8388607)
- 738 compressed objects within 8 object streams
+ 837 PDF objects out of 1000 (max. 8388607)
+ 740 compressed objects within 8 object streams
  215 named destinations out of 1000 (max. 500000)
  58161 words of extra memory for PDF output out of 61914 (max. 10000000)
 
