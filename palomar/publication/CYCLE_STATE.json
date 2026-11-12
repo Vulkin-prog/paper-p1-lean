@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-12T20:05:18.243204+00:00",
+  "updated_at": "2026-11-12T21:29:38.317189+00:00",
   "repository": "Vulkin-prog/paper-p1-lean",
   "maximum_registrations": 6,
   "selected_theorem_count": 52,
@@ -9,8 +9,8 @@
   "author_resumed_cycles": true,
   "explicitly_confirmed_authorization_relationship": "maintainer",
   "approved_source_commit": "f9a2d213265a6833318745dd7f2d74c02090ab19",
-  "active_cycle": "quadratic_limits",
-  "registered_count": 0,
+  "active_cycle": null,
+  "registered_count": 1,
   "publication_requires_each_actual_review_decision": false,
   "positive_reviews_publication_explicitly_delegated": true,
   "publication_requires_actual_review_examination_presentation_and_exact_digest": true,
@@ -24,8 +24,17 @@
       "comparator_config_path": "RegistryV2/comparator/p1_quadratic_limits.json",
       "formalization_metadata_path": "palomar/publication/quadratic_limits/formalization.yaml",
       "selected_theorem_count": 10,
-      "public_mechanical_stage": "palomar_rendering_passed",
-      "registration": null,
+      "public_mechanical_stage": "registered",
+      "registration": {
+        "status": "registered_and_publicly_verified",
+        "id": "PALOMAR-2026-11-12-000013",
+        "version": 1,
+        "url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-12-000013&version=1",
+        "registered_at": "2026-11-12T21:18:17Z",
+        "source_commit": "f9a2d213265a6833318745dd7f2d74c02090ab19",
+        "public_data_receipt": "palomar/publication/quadratic_limits/registration/VALIDATION.json",
+        "nonblocking_warning_disposition": "palomar/publication/quadratic_limits/registration/DISPOSITION.json"
+      },
       "preflight": {
         "workflow_run_id": 43252492734,
         "workflow_url": "https://github.com/Vulkin-prog/paper-p1-lean/actions/runs/43252492734",
@@ -58,54 +67,67 @@
     },
     {
       "slug": "cumulants_optimality",
-      "source_commit": "f9a2d213265a6833318745dd7f2d74c02090ab19",
+      "source_commit": "d6a0f6c5109886127526677603eb6b74e8c0cd82",
       "project_path": "RegistryV2",
       "comparator_config_path": "RegistryV2/comparator/p1_cumulants_optimality.json",
-      "formalization_metadata_path": "palomar/publication/cumulants_optimality/formalization.yaml",
+      "formalization_metadata_path": "palomar/publication-followup/cumulants_optimality/formalization.yaml",
       "selected_theorem_count": 8,
       "public_mechanical_stage": "prepared",
-      "registration": null
+      "registration": null,
+      "metadata_edition": "followup",
+      "frozen_original_preparation_source": "f9a2d213265a6833318745dd7f2d74c02090ab19"
     },
     {
       "slug": "pairs_channels",
-      "source_commit": "f9a2d213265a6833318745dd7f2d74c02090ab19",
+      "source_commit": "d6a0f6c5109886127526677603eb6b74e8c0cd82",
       "project_path": "RegistryV2",
       "comparator_config_path": "RegistryV2/comparator/p1_pairs_channels.json",
-      "formalization_metadata_path": "palomar/publication/pairs_channels/formalization.yaml",
+      "formalization_metadata_path": "palomar/publication-followup/pairs_channels/formalization.yaml",
       "selected_theorem_count": 13,
       "public_mechanical_stage": "prepared",
-      "registration": null
+      "registration": null,
+      "metadata_edition": "followup",
+      "frozen_original_preparation_source": "f9a2d213265a6833318745dd7f2d74c02090ab19"
     },
     {
       "slug": "stopping_reconstruction",
-      "source_commit": "f9a2d213265a6833318745dd7f2d74c02090ab19",
+      "source_commit": "d6a0f6c5109886127526677603eb6b74e8c0cd82",
       "project_path": "RegistryV2",
       "comparator_config_path": "RegistryV2/comparator/p1_stopping_reconstruction.json",
-      "formalization_metadata_path": "palomar/publication/stopping_reconstruction/formalization.yaml",
+      "formalization_metadata_path": "palomar/publication-followup/stopping_reconstruction/formalization.yaml",
       "selected_theorem_count": 8,
       "public_mechanical_stage": "prepared",
-      "registration": null
+      "registration": null,
+      "metadata_edition": "followup",
+      "frozen_original_preparation_source": "f9a2d213265a6833318745dd7f2d74c02090ab19"
     },
     {
       "slug": "probability_references",
-      "source_commit": "f9a2d213265a6833318745dd7f2d74c02090ab19",
+      "source_commit": "d6a0f6c5109886127526677603eb6b74e8c0cd82",
       "project_path": "RegistryV2",
       "comparator_config_path": "RegistryV2/comparator/p1_probability_references.json",
-      "formalization_metadata_path": "palomar/publication/probability_references/formalization.yaml",
+      "formalization_metadata_path": "palomar/publication-followup/probability_references/formalization.yaml",
       "selected_theorem_count": 5,
       "public_mechanical_stage": "prepared",
-      "registration": null
+      "registration": null,
+      "metadata_edition": "followup",
+      "frozen_original_preparation_source": "f9a2d213265a6833318745dd7f2d74c02090ab19"
     },
     {
       "slug": "affine_events",
-      "source_commit": "f9a2d213265a6833318745dd7f2d74c02090ab19",
+      "source_commit": "d6a0f6c5109886127526677603eb6b74e8c0cd82",
       "project_path": "RegistryV2",
       "comparator_config_path": "RegistryV2/comparator/p1_affine_events.json",
-      "formalization_metadata_path": "palomar/publication/affine_events/formalization.yaml",
+      "formalization_metadata_path": "palomar/publication-followup/affine_events/formalization.yaml",
       "selected_theorem_count": 8,
       "public_mechanical_stage": "prepared",
-      "registration": null
+      "registration": null,
+      "metadata_edition": "followup",
+      "frozen_original_preparation_source": "f9a2d213265a6833318745dd7f2d74c02090ab19"
     }
   ],
-  "scope": "Public mechanical progress and the author's operational instructions only. Frozen preparation receipts retain their original on-hold status. No private review, private review outcome, access credential, temporary authentication proof or unissued registry identifier is recorded here. Conditional publication authority does not mean a positive review has been received or a registration has been issued."
+  "scope": "Public mechanical progress and the author's operational instructions only. Frozen preparation receipts retain their original on-hold status. No private review, private review outcome, access credential, temporary authentication proof or unissued registry identifier is recorded here. Conditional publication authority does not mean a positive review has been received or a registration has been issued.",
+  "remaining_disclosure_update_source_commit": "d6a0f6c5109886127526677603eb6b74e8c0cd82",
+  "remaining_metadata_manifest": "palomar/PUBLICATION_FOLLOWUP_METADATA.json",
+  "source_authority_note": "The original personally confirmed source remains the first registered source. The five remaining candidates incorporate the routine structured assistance disclosure authorized within the registration task and latest user delegation; mathematical proof and manuscript bytes are unchanged. Each actual full workflow and intake is recorded separately."
 }

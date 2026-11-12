@@ -21,6 +21,11 @@ Palomar's own verification has also
 The separate [Challenge rendering](palomar/publication/quadratic_limits/rendering/VALIDATION.json)
 also passed, with compiler-backed anchors for all ten selected statements.
 See [current public progress](palomar/publication/CYCLE_STATE.json).
+The first record is now public and checked:
+[PALOMAR-2026-11-12-000013 v1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-12-000013&version=1),
+with all ten selected statements and Brice Pouly's name/ORCID preserved.
+Its [non-blocking disclosure warning and follow-up](palomar/publication/quadratic_limits/registration/DISPOSITION.json)
+remain explicit; its registered source is the original approved snapshot.
 The author subsequently authorized publication of favorable actual reviews
 without a new approval prompt. Each review must first be examined and presented;
 blocking comments require assessment and justified correction before resubmission.

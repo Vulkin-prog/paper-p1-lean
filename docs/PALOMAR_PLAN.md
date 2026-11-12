@@ -13,6 +13,11 @@ or maintainer for source `f9a2d213265a6833318745dd7f2d74c02090ab19`.
 The [first official full preflight](https://github.com/Vulkin-prog/paper-p1-lean/actions/runs/43252492734)
 passed for `quadratic_limits`. Palomar's own verification has also
 [passed](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/43259436857).
+The first full cycle is complete:
+[PALOMAR-2026-11-12-000013 v1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-12-000013&version=1).
+The [public readback receipt](../palomar/publication/quadratic_limits/registration/VALIDATION.json)
+binds the source, ten selections, all three name/ORCID associations, mechanical
+and rendering evidence, and the published non-blocking warning.
 [Current public progress](../palomar/publication/CYCLE_STATE.json)
 is separate from the frozen preparation evidence. The author subsequently
 explicitly authorized publication of favorable actual reviews for the six
@@ -26,12 +31,15 @@ the author. Ordinary proof CI dispatches no submission.
 
 The [follow-up metadata](../palomar/PUBLICATION_FOLLOWUP_METADATA.json) add the
 ChatGPT mathematical/editorial role from the pinned manuscript assistance
-statement for the five remaining identities. They retain42 selections and21
-main results, after the first10 selections/five results. The original six
+statement for the five remaining identities. They retain 42 selections and 21
+main results, after the first 10 selections/five results. The original six
 metadata files and their receipts remain frozen. The same manual caller now
 accepts `metadata_edition: followup` for those five dossiers; its `publication`
 default preserves the old paths. A later exact source commit and full passing
-report are required before each intake. This preparation opens no new cycle.
+report are required before each intake. The live cycle record binds these
+five candidates to `d6a0f6c5109886127526677603eb6b74e8c0cd82`; the first cycle
+keeps its original approved `f9a2d213265a6833318745dd7f2d74c02090ab19`.
+This preparation opens no new cycle.
 
 ## Previous V2 preparation (preserved history)
 

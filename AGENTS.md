@@ -131,3 +131,20 @@ future manuscript version and preparing Palomar registrations after completion.
   submission. Bind each later exact source commit in the live cycle record,
   obtain its actual passing full report, and finish the first complete cycle
   before starting the next.
+- The first cycle is now actually registered and publicly verified as
+  `PALOMAR-2026-11-12-000013` version1, at source
+  `f9a2d213265a6833318745dd7f2d74c02090ab19`. Its public entry, version index,
+  readback receipt and warning disposition are under
+  `palomar/publication/quadratic_limits/registration/`. The private portal also
+  reports `registered` with the exact consented review digest. Name, GitHub and
+  ORCID match in authors, responsible maintainers and source authors. All ten
+  selected statements, original metadata path, mechanical report digest and
+  rendered artifact tree match the actual accepted evidence. Its one published
+  non-blocking warning concerns the structured ChatGPT disclosure already
+  present in the manuscript; the five follow-up files address it without
+  adding another first-cycle version. Do not resubmit the first source.
+  The next permitted full cycle is `cumulants_optimality` at source
+  `d6a0f6c5109886127526677603eb6b74e8c0cd82`, metadata edition `followup`, then
+  the other four in the recorded order. User role and conditional publication
+  authority persist; no new approval prompt is needed for a favorable actual
+  review, which must still be read, presented and bound to its exact digest.

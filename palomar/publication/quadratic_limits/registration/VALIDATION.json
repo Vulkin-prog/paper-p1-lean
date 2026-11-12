@@ -1,0 +1,23 @@
+{
+  "status": "verified_registered",
+  "checked_at": "2026-11-12T21:27:50.157261+00:00",
+  "repository": "Vulkin-prog/paper-p1-lean",
+  "source_commit": "f9a2d213265a6833318745dd7f2d74c02090ab19",
+  "project_path": "RegistryV2",
+  "comparator_config_path": "RegistryV2/comparator/p1_quadratic_limits.json",
+  "formalization_metadata_path": "palomar/publication/quadratic_limits/formalization.yaml",
+  "registration_id": "PALOMAR-2026-11-12-000013",
+  "version": 1,
+  "registry_url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-12-000013&version=1",
+  "registered_at": "2026-11-12T21:18:17Z",
+  "entry_path": "palomar/publication/quadratic_limits/registration/entry.json",
+  "entry_sha256": "2d14285704a7e8059d670f8ccb3529417fa42ed2491ea7efd174b22659b3b161",
+  "entry_data_url": "https://data.palomar-registry.org/entries/PALOMAR-2026-11-12-000013-v1.json",
+  "selected_theorem_count": 10,
+  "author_and_orcid_verified_in_all_three_roles": true,
+  "mechanical_report_and_render_bound": true,
+  "published_material_warnings_match_delivered_review": true,
+  "published_warning_count": 1,
+  "preserved_source_and_mathlib_commits_match": true,
+  "publication_authority": "Explicit user delegation for favorable reviews; actual review and warning presented before the acknowledged request."
+}

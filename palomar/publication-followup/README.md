@@ -7,7 +7,7 @@ They retain the separate Codex entry for Lean development, Brice Pouly's
 authorship and ORCID, all scientific qualifications, and all selected statements.
 
 [The manifest](../PUBLICATION_FOLLOWUP_METADATA.json) maps the same five remaining
-project/configuration identities, with42 selections, after the first10. This
+project/configuration identities, with 42 selections, after the first 10. This
 creates no additional identity beyond the six-dossier plan. The original six
 publication metadata files and their preparation receipts remain unchanged.
 
@@ -16,6 +16,7 @@ It accepts only the five remaining dossiers for this edition; its default
 `publication` edition preserves the original source/path selection. The shared
 serialization group and complete-cycle requirement still apply.
 
-The actual source commit is bound separately in the live cycle record before
-each full preflight. This manifest is metadata preparation, not a new proof
+The prepared source commit is `d6a0f6c5109886127526677603eb6b74e8c0cd82`, bound
+separately in the live cycle record. Each full preflight must check that exact
+source and the selected new metadata path. This manifest is metadata preparation, not a new proof
 replay, an official preflight, an editorial result, or an issued registration.

@@ -1,0 +1,19 @@
+{
+  "registration_id": "PALOMAR-2026-11-12-000013",
+  "version": 1,
+  "source_commit": "f9a2d213265a6833318745dd7f2d74c02090ab19",
+  "registry_url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-12-000013&version=1",
+  "warning_index": 0,
+  "subject": "Structured disclosure of the ChatGPT mathematical/editorial contribution already credited in the manuscript.",
+  "blocking": false,
+  "mathematical_change": false,
+  "first_registered_version_retains_its_published_warning": true,
+  "remedy_for_remaining_five": {
+    "source_commit": "d6a0f6c5109886127526677603eb6b74e8c0cd82",
+    "manifest": "palomar/PUBLICATION_FOLLOWUP_METADATA.json",
+    "added_record": "automation.methods: ChatGPT (GPT-6 Astra), mathematical/editorial role and pinned assistance statement",
+    "scientific_proofs_and_human_authorship_unchanged": true
+  },
+  "additional_first_cycle_version_launched": false,
+  "maximum_registration_identities": 6
+}
