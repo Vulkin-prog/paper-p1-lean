@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-12T21:29:38.317189+00:00",
+  "updated_at": "2026-11-12T21:35:20.788463+00:00",
   "repository": "Vulkin-prog/paper-p1-lean",
   "maximum_registrations": 6,
   "selected_theorem_count": 52,
@@ -9,7 +9,7 @@
   "author_resumed_cycles": true,
   "explicitly_confirmed_authorization_relationship": "maintainer",
   "approved_source_commit": "f9a2d213265a6833318745dd7f2d74c02090ab19",
-  "active_cycle": null,
+  "active_cycle": "cumulants_optimality",
   "registered_count": 1,
   "publication_requires_each_actual_review_decision": false,
   "positive_reviews_publication_explicitly_delegated": true,
@@ -72,10 +72,22 @@
       "comparator_config_path": "RegistryV2/comparator/p1_cumulants_optimality.json",
       "formalization_metadata_path": "palomar/publication-followup/cumulants_optimality/formalization.yaml",
       "selected_theorem_count": 8,
-      "public_mechanical_stage": "prepared",
+      "public_mechanical_stage": "official_full_preflight_running",
       "registration": null,
       "metadata_edition": "followup",
-      "frozen_original_preparation_source": "f9a2d213265a6833318745dd7f2d74c02090ab19"
+      "frozen_original_preparation_source": "f9a2d213265a6833318745dd7f2d74c02090ab19",
+      "preflight": {
+        "workflow_run_id": 43311429286,
+        "workflow_url": "https://github.com/Vulkin-prog/paper-p1-lean/actions/runs/43311429286",
+        "request_id": "pf9fdd74ef36",
+        "source_commit": "d6a0f6c5109886127526677603eb6b74e8c0cd82",
+        "workflow_head": "7d4251b68ddeba9fa52bd8112b9d0aec27dcd4e2",
+        "pipeline_commit": "14aa8d6b3c2f14a8540605e37144560b9a00e7e7",
+        "mode": "full",
+        "execution_profile": "palomar-standard-v1",
+        "metadata_edition": "followup",
+        "report_status": null
+      }
     },
     {
       "slug": "pairs_channels",
