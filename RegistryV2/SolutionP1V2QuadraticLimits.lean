@@ -315,18 +315,20 @@ by
   · simpa only [actualMean_eq,nominalMean_eq] using hi
   · simpa only [actualMean_eq,nominalMean_eq,PaperP1.OptimalNominalQuadratic.meanGap] using hd
 
-theorem nominal_quadratic_comparison (C ε : ℝ) (hε : 0 < ε) :
-    ∃ c : ℝ, 0 < c ∧ ∃ N₀ : ℕ, 10 ≤ N₀ ∧ ∀ N ≥ N₀, ∀ L : ℕ,
+theorem nominal_quadratic_comparison (C : ℝ) :
+    ∃ c : ℝ, 0 < c ∧ ∀ ε : ℝ, 0 < ε → ∃ N₀ : ℕ, 10 ≤ N₀ ∧ ∀ N ≥ N₀, ∀ L : ℕ,
       |(L : ℝ)-Real.log (N : ℝ)/Real.log 2| ≤ C →
       nominalQuadraticError N L ≤ (N : ℝ)^(-1+ε) ∧
       (actualMean N L≠nominalMean N L →
         c*|actualMean N L-nominalMean N L| ≤ nominalQuadraticError N L ∧
         nominalQuadraticError N L ≤ (6+c)*|actualMean N L-nominalMean N L|) :=
 by
+  refine ⟨PaperP1.OptimalNominalQuadratic.lowerConstant C,
+    PaperP1.OptimalNominalQuadratic.lowerConstant_pos C,?_⟩
+  intro ε hε
   obtain ⟨N₀,h₀,h⟩ := PaperP1.OptimalNominalQuadratic.uniform_comparison C ε hε
   obtain ⟨NG,hGeometry⟩ := PaperP1.CriticalWindowGeometry.uniform_geometry C 2
-  refine ⟨PaperP1.OptimalNominalQuadratic.lowerConstant C,
-    PaperP1.OptimalNominalQuadratic.lowerConstant_pos C,max N₀ NG,by omega,?_⟩
+  refine ⟨max N₀ NG,by omega,?_⟩
   intro N hN L hBand
   have hN2 : 2 ≤ N := by omega
   have hL : 0 < L := by
@@ -432,8 +434,18 @@ theorem integerBias_eq (N L : ℕ) : integerBias N L=
     PaperP1.Model.dyadicBlock]
 
 theorem literal_mean_bias (N L : ℕ) (hN : 2≤N) (hL : 0<L) :
-    actualMean N L-nominalMean N L=(2^L : ℝ)⁻¹*(integerBias N L : ℝ) := by
-  simpa only [actualMean_eq,nominalMean,integerBias_eq] using
-    PaperP1.MeanBiasQuantization.main_17_3_integer_identity hN hL
+    actualMean N L-nominalMean N L=(2^L : ℝ)⁻¹*(integerBias N L : ℝ) ∧
+    ∀ C : ℝ, |(L : ℝ)-Real.log N/Real.log 2| ≤ C →
+      ((2 : ℝ)^C)⁻¹/N ≤ (2^L : ℝ)⁻¹ ∧ (2^L : ℝ)⁻¹ ≤ (2 : ℝ)^C/N := by
+  constructor
+  · simpa only [actualMean_eq,nominalMean,integerBias_eq] using
+      PaperP1.MeanBiasQuantization.main_17_3_integer_identity hN hL
+  · intro C hband
+    refine ⟨PaperP1.CriticalChannelPowers.nominal_lower hN hband,?_⟩
+    have hn : (0 : ℝ)<N := by exact_mod_cast (show 0<N by omega)
+    apply (le_div_iff₀ hn).2
+    have h := (PaperP1.FiniteChannelHierarchyBounds.nominal_bounds hN hband).2
+    change (N : ℝ)*(2^L : ℝ)⁻¹ ≤ (2 : ℝ)^C at h
+    simpa only [mul_comm] using h
 
 end PaperP1Registry.V2.QuadraticLimits

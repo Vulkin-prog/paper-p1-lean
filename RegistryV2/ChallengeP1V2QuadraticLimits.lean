@@ -129,8 +129,8 @@ theorem mean_bias_quantized (N L : ℕ) (hN : 2 ≤ N) (hL : 0 < L) :
       (actualMean N L=nominalMean N L ∨
         (2^L : ℝ)⁻¹ ≤ |actualMean N L-nominalMean N L|) :=
 by sorry
-theorem nominal_quadratic_comparison (C ε : ℝ) (hε : 0 < ε) :
-    ∃ c : ℝ, 0 < c ∧ ∃ N₀ : ℕ, 10 ≤ N₀ ∧ ∀ N ≥ N₀, ∀ L : ℕ,
+theorem nominal_quadratic_comparison (C : ℝ) :
+    ∃ c : ℝ, 0 < c ∧ ∀ ε : ℝ, 0 < ε → ∃ N₀ : ℕ, 10 ≤ N₀ ∧ ∀ N ≥ N₀, ∀ L : ℕ,
       |(L : ℝ)-Real.log (N : ℝ)/Real.log 2| ≤ C →
       nominalQuadraticError N L ≤ (N : ℝ)^(-1+ε) ∧
       (actualMean N L≠nominalMean N L →
@@ -171,7 +171,9 @@ theorem no_retained_start (C ε : ℝ) (hε : 0 < ε) :
         (N : ℝ)^(-4/3+ε) :=
 by sorry
 theorem literal_mean_bias (N L : ℕ) (hN : 2≤N) (hL : 0<L) :
-    actualMean N L-nominalMean N L=(2^L : ℝ)⁻¹*(integerBias N L : ℝ) :=
+    actualMean N L-nominalMean N L=(2^L : ℝ)⁻¹*(integerBias N L : ℝ) ∧
+    ∀ C : ℝ, |(L : ℝ)-Real.log N/Real.log 2| ≤ C →
+      ((2 : ℝ)^C)⁻¹/N ≤ (2^L : ℝ)⁻¹ ∧ (2^L : ℝ)⁻¹ ≤ (2 : ℝ)^C/N :=
 by sorry
 
 end PaperP1Registry.V2.QuadraticLimits
