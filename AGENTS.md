@@ -61,8 +61,9 @@ future manuscript version and preparing Palomar registrations after completion.
   the full Palomar workflow or starting intake, obtain the exact declaration
   required by the current official protocol for the concrete commit and paths.
   Finish or close one complete submission cycle before another. Registration
-  requires a separate human publication decision after the exact private review
-  has been received; local checks are not official preflight or certification.
+  requires the actual private review and explicit publication authority from the
+  user; the later delegation below supplies that authority for positive reviews.
+  Local checks are not official preflight or certification.
 
 - The current publication edition is `manuscripts/paper-p1/publication-2026-11-12`.
   Preserve its received archive/files and the preceding V2 tree byte for byte.
@@ -82,13 +83,28 @@ future manuscript version and preparing Palomar registrations after completion.
   Ordinary intake was authenticated and both temporary proof artifacts deleted.
   Palomar's separate verification `43259436857` passed too; its public receipt
   is `palomar/publication/quadratic_limits/verification/VALIDATION.json`.
-  This does not give permission to register before the actual private review
-  is delivered to the user and that review's publication is explicitly approved.
+  That initial intake authorization alone did not authorize publication; the
+  subsequent explicit positive-review delegation below supplies that authority.
   Read `palomar/publication/CYCLE_STATE.json` for public
   progress. This supersedes the earlier hold. Keep one complete cycle active
   at a time, and submit only after its exact official full report passes.
-  This authorization does not pre-approve registration: show each actual
-  private review and get the user's decision about publishing that digest.
+  Apply the later publication instruction below to each actual private review.
   Keep all access tokens, temporary proofs and unregistered editorial outcomes
   out of the public repository. The submitted proof source stays at the
   approved immutable commit even when these progress documents are updated.
+- Later on 12 November 2026 the user explicitly authorized publication whenever
+  Palomar's actual review is favorable, without asking for approval again, for
+  the same six dossiers. They also authorized critically assessing blocking
+  comments, making justified corrections, and submitting a corrected revision.
+  This supersedes the earlier preference for a new approval prompt per review.
+  Read and present the actual author-facing review and explain what registration
+  publishes before posting its exact delivered `review_sha256`. Apply the
+  delegation only when no blocking problem is identified, the review requests
+  no changes, and source/path/digest bindings remain valid. Do not claim that
+  the user personally read future review bytes. Preserve each review privately
+  until registration and trace justified mathematical corrections. Do not
+  resample the same source merely to obtain a different editorial outcome.
+  The user requested five-minute status retries for the intermittent service
+  errors; no public support message has been authorized. Finish or close this
+  first cycle before starting the next. Actual registry identifiers and counts
+  still require independent confirmation of completed public registration.

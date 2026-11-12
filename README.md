@@ -19,7 +19,9 @@ The author has resumed the six successive cycles for source commit
 Palomar's own verification has also
 [passed](palomar/publication/quadratic_limits/verification/VALIDATION.json).
 See [current public progress](palomar/publication/CYCLE_STATE.json).
-Publication requires a separate decision after each actual private review.
+The author subsequently authorized publication of favorable actual reviews
+without a new approval prompt. Each review must first be examined and presented;
+blocking comments require assessment and justified correction before resubmission.
 
 ## Preceding V2 edition
 

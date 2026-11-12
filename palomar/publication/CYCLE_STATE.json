@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-12T17:16:41.952322+00:00",
+  "updated_at": "2026-11-12T18:36:05.206559+00:00",
   "repository": "Vulkin-prog/paper-p1-lean",
   "maximum_registrations": 6,
   "selected_theorem_count": 52,
@@ -11,7 +11,11 @@
   "approved_source_commit": "f9a2d213265a6833318745dd7f2d74c02090ab19",
   "active_cycle": "quadratic_limits",
   "registered_count": 0,
-  "publication_requires_each_actual_review_decision": true,
+  "publication_requires_each_actual_review_decision": false,
+  "positive_reviews_publication_explicitly_delegated": true,
+  "publication_requires_actual_review_examination_presentation_and_exact_digest": true,
+  "blocking_comments_require_assessment_and_justified_correction": true,
+  "status_retry_interval_seconds": 300,
   "cycles": [
     {
       "slug": "quadratic_limits",
@@ -92,5 +96,5 @@
       "registration": null
     }
   ],
-  "scope": "Public mechanical progress only. Frozen preparation receipts retain their original on-hold status. No private review, review outcome, access credential, temporary authentication proof or pre-approved registration is recorded here."
+  "scope": "Public mechanical progress and the author's operational instructions only. Frozen preparation receipts retain their original on-hold status. No private review, private review outcome, access credential, temporary authentication proof or unissued registry identifier is recorded here. Conditional publication authority does not mean a positive review has been received or a registration has been issued."
 }

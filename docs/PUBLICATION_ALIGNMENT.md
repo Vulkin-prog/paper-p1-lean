@@ -38,8 +38,10 @@ cycles and explicitly confirmed the responsible-author/maintainer relationship
 for source `f9a2d213265a6833318745dd7f2d74c02090ab19`. The first official full
 preflight and Palomar's own verification both passed;
 [current public progress](../palomar/publication/CYCLE_STATE.json)
-records this separately. Publication of each actual private review still
-requires a separate decision after its delivery.
+records this separately. The author later explicitly authorized publication
+of favorable actual reviews without repeated approval prompts. Each review is
+examined and presented before its exact digest is registered; blocking findings
+are assessed and justified corrections precede a new submission.
 
 Reproduction:
 

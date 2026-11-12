@@ -14,8 +14,15 @@ The [first official full preflight](https://github.com/Vulkin-prog/paper-p1-lean
 passed for `quadratic_limits`. Palomar's own verification has also
 [passed](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/43259436857).
 [Current public progress](../palomar/publication/CYCLE_STATE.json)
-is separate from the frozen preparation evidence. Each actual private review
-requires its own publication decision. Ordinary proof CI dispatches no submission.
+is separate from the frozen preparation evidence. The author subsequently
+explicitly authorized publication of favorable actual reviews for the six
+dossiers without repeated approval prompts. Read and present each actual review,
+explain the public registration, and bind the request to that review's exact
+digest. Blocking comments require critical assessment, justified corrections,
+and a new submission of the corrected revision. Preserve the private review;
+do not resample unchanged source for a different outcome. Status reads during
+the intermittent service errors are spaced five minutes apart as requested by
+the author. Ordinary proof CI dispatches no submission.
 
 ## Previous V2 preparation (preserved history)
 

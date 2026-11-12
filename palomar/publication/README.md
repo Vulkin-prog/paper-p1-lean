@@ -23,6 +23,11 @@ with its exact artifact and source hashes. Palomar's separate verification is
 [run 43259436857](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/43259436857).
 Its [passing mechanical evidence](quadratic_limits/verification/VALIDATION.json)
 is recorded separately from the predictive preflight and from any private review.
-Any publication decision is separate and follows receipt of the exact private review.
+The author subsequently explicitly authorized publication of favorable actual
+reviews without repeated approval prompts. Each actual review must be examined
+and presented before registration of its exact digest. Blocking findings require
+critical assessment and justified corrections before a new submission. Review
+contents remain private until registration; the delegation is not an editorial
+outcome or an issued registration.
 The author name Brice Pouly and ORCID 0009-0008-8491-2467 remain structured fields
 in all six current dossiers.
