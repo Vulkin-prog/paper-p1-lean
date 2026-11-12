@@ -1,0 +1,157 @@
+module
+
+public import PaperP1.Affine.DirectPartitions
+public import PaperP1.Algebra.BivariateFactorHeight
+public import PaperP1.Algebra.StoppedExpansion
+public import PaperP1.Analysis.QuadraticComparisonRange
+public import PaperP1.Analysis.RevisedCompanionStatements
+public import PaperP1.Arithmetic.ChannelPhaseConstants
+public import PaperP1.Arithmetic.CommonCurveTheorem
+public import PaperP1.Arithmetic.CriticalDefectPositions
+public import PaperP1.Arithmetic.FiniteChannelHierarchy
+public import PaperP1.Arithmetic.GoodEdgeCompression
+public import PaperP1.Arithmetic.HeightFiveChannelCorrection
+public import PaperP1.Arithmetic.IntegerGridTheorem
+public import PaperP1.Arithmetic.IntegralAffineCurvePointCount
+public import PaperP1.Arithmetic.LocalSquareThreshold
+public import PaperP1.Arithmetic.NonalignedRankTheorem
+public import PaperP1.Arithmetic.RankinSmallKernel
+public import PaperP1.Arithmetic.RationalTripleIntegers
+public import PaperP1.Arithmetic.ShortBasisTheorem
+public import PaperP1.Arithmetic.SmallPrimeBudget
+public import PaperP1.Arithmetic.SplitProductBound
+public import PaperP1.Arithmetic.TwoWitnessTheorem
+public import PaperP1.Arithmetic.UniformDefectCounts
+public import PaperP1.Arithmetic.UniformFixedSourceCertificates
+public import PaperP1.Asymptotics.AlignedFamilyTripleMass
+public import PaperP1.Asymptotics.AlignedTargetSourceTheorem
+public import PaperP1.Asymptotics.AllPairDeficit
+public import PaperP1.Asymptotics.AllTargetGoodEdgePalm
+public import PaperP1.Asymptotics.AnchorRelationCertificates
+public import PaperP1.Asymptotics.BlockSupportCount
+public import PaperP1.Asymptotics.BlockSupportParameters
+public import PaperP1.Asymptotics.CompanionKernelCounts
+public import PaperP1.Asymptotics.ComparableSplitProductCount
+public import PaperP1.Asymptotics.CompleteFixedMoments
+public import PaperP1.Asymptotics.CompletePairProfile
+public import PaperP1.Asymptotics.CompressedBlockIndependentTail
+public import PaperP1.Asymptotics.ConnectedReductionToTriples
+public import PaperP1.Asymptotics.ConnectedTail
+public import PaperP1.Asymptotics.DenseCompressedTargetCount
+public import PaperP1.Asymptotics.DenseNonalignedPairs
+public import PaperP1.Asymptotics.DensePrimitiveHomogeneousMass
+public import PaperP1.Asymptotics.DenseTargetCount
+public import PaperP1.Asymptotics.DenseWeightedSector
+public import PaperP1.Asymptotics.DependentBlockPairsCount
+public import PaperP1.Asymptotics.DisjointSquareTheorem
+public import PaperP1.Asymptotics.EnlargedAlignedPairTheorem
+public import PaperP1.Asymptotics.ExactPoissonScale
+public import PaperP1.Asymptotics.ExplicitQuadraticApproximation
+public import PaperP1.Asymptotics.FiniteChannelTripleTheorem
+public import PaperP1.Asymptotics.FiniteCompleteLawTransfer
+public import PaperP1.Asymptotics.FiniteGoodPartition
+public import PaperP1.Asymptotics.FiniteHighChannelTripleMass
+public import PaperP1.Asymptotics.FixedArityHomogeneousMass
+public import PaperP1.Asymptotics.FixedChannelFullPalm
+public import PaperP1.Asymptotics.FixedChannelMassTheorem
+public import PaperP1.Asymptotics.FixedCompressedPrimitiveTheorem
+public import PaperP1.Asymptotics.FixedCutoffIndependentTail
+public import PaperP1.Asymptotics.FixedHeightHierarchy
+public import PaperP1.Asymptotics.FixedPairExtensionDeficit
+public import PaperP1.Asymptotics.FixedSourcePropagationTheorem
+public import PaperP1.Asymptotics.FourthCumulantIdentities
+public import PaperP1.Asymptotics.GeneralBranchingTheorem
+public import PaperP1.Asymptotics.HomogeneousLocalMarginalCap
+public import PaperP1.Asymptotics.KnownAlignmentRank
+public import PaperP1.Asymptotics.LargeSelectedKernelTheorem
+public import PaperP1.Asymptotics.LargeSmoothExceptionalSet
+public import PaperP1.Asymptotics.ModerateCertificateAsymptotic
+public import PaperP1.Asymptotics.MultiAnchorBudgets
+public import PaperP1.Asymptotics.MultiAnchorModerateMass
+public import PaperP1.Asymptotics.MultiAnchorSaturatedMass
+public import PaperP1.Asymptotics.NearPrimitiveTripleMass
+public import PaperP1.Asymptotics.NonalignedSourceResidual
+public import PaperP1.Asymptotics.OptimalHermite
+public import PaperP1.Asymptotics.OptimalNominalQuadratic
+public import PaperP1.Asymptotics.OptimalQuadratic
+public import PaperP1.Asymptotics.OptimalThirdCumulant
+public import PaperP1.Asymptotics.OptimalTripleReconstruction
+public import PaperP1.Asymptotics.OptimalZeroProbability
+public import PaperP1.Asymptotics.OriginalWindowFamilyMass
+public import PaperP1.Asymptotics.PolynomialConfinement
+public import PaperP1.Asymptotics.PolynomialWeightedQuadratic
+public import PaperP1.Asymptotics.PrescribedSplitProductCount
+public import PaperP1.Asymptotics.PrimitiveTripleMass
+public import PaperP1.Asymptotics.PrincipalEdgeRemainder
+public import PaperP1.Asymptotics.QuadraticGrowingDegreePlaneCount
+public import PaperP1.Asymptotics.QuadraticKernelExponents
+public import PaperP1.Asymptotics.RestrictedDensePrimitiveMass
+public import PaperP1.Asymptotics.RunConversion
+public import PaperP1.Asymptotics.SaturationDegrees
+public import PaperP1.Asymptotics.SeveralWindowProjectionCount
+public import PaperP1.Asymptotics.SharpOrderedPrimitiveMass
+public import PaperP1.Asymptotics.SharpPairTargetDeficit
+public import PaperP1.Asymptotics.SharpThirdActivity
+public import PaperP1.Asymptotics.SharpThirdCancellation
+public import PaperP1.Asymptotics.SharpThirdCumulantLower
+public import PaperP1.Asymptotics.ShortOldSpaceProjection
+public import PaperP1.Asymptotics.ShortSplitMoments
+public import PaperP1.Asymptotics.SmallKernelWindows
+public import PaperP1.Asymptotics.StrongAlignedSharpMass
+public import PaperP1.Asymptotics.StrongNonalignedTripleProfile
+public import PaperP1.Asymptotics.TernaryUnboundedCutoff
+public import PaperP1.Asymptotics.ThreeSlopePositiveActivity
+public import PaperP1.Asymptotics.TripleRankTheorem
+public import PaperP1.Asymptotics.TwoChannelReference
+public import PaperP1.Asymptotics.TwoGoodEdgeSecondMoment
+public import PaperP1.Asymptotics.TwoSmallKernelCount
+public import PaperP1.Asymptotics.UnconditionalDenseTwoTargetMass
+public import PaperP1.Asymptotics.UniformFullSupportCount
+public import PaperP1.Asymptotics.UniformGeometricCounts
+public import PaperP1.Asymptotics.UniformIndependentDeficit
+public import PaperP1.Asymptotics.V2FixedHomogeneousSeeds
+public import PaperP1.Asymptotics.V2HomogeneousEnvelope
+public import PaperP1.Asymptotics.ValueHeightHalfCount
+public import PaperP1.Asymptotics.WeightedNonalignedPairs
+public import PaperP1.Coding.CoordinateRegularisation
+public import PaperP1.Coding.DisjointRecoveryTheorem
+public import PaperP1.Coding.LocalRigidityRegimes
+public import PaperP1.Coding.TernaryConstraints
+public import PaperP1.Coding.UniformLocalRigidity
+public import PaperP1.Coding.WindowRelationCode
+public import PaperP1.Combinatorics.GraphStarWeights
+public import PaperP1.Combinatorics.LargePrimeComponentArithmetic
+public import PaperP1.Combinatorics.MarkedGraphGenerator
+public import PaperP1.Diophantine.UniformQuadraticCount
+public import PaperP1.Model.CompatibleNullityBound
+public import PaperP1.Model.CompatibleRunCentered
+public import PaperP1.Model.FiniteGoodChannelPartition
+public import PaperP1.Model.FreeComponentRank
+public import PaperP1.Model.GoodEdgePositivePalm
+public import PaperP1.Model.HomogeneousEffectiveWeights
+public import PaperP1.Model.PrimitiveWindowMass
+public import PaperP1.Model.PrivateChannelRank
+public import PaperP1.Model.RegularCumulantTransfer
+public import PaperP1.Model.RegularMomentTransfer
+public import PaperP1.Model.RegularSetAsymptotic
+public import PaperP1.Model.RelativeSignIndependence
+public import PaperP1.Model.SquareClassFourier
+public import PaperP1.Model.UnrestrictedRunComponents
+public import PaperP1.Probability.CenteredMeasureExpansion
+public import PaperP1.Probability.MomentObstruction
+public import PaperP1.Probability.PoissonSecondDifferenceNorm
+public import PaperP1.Probability.QuadraticPoisson
+public import PaperP1.Probability.StoppedMeasureLaw
+public import PaperP1.Probability.UniversalHeterogeneousConversion
+
+/-! # Current V2 manuscript proof entry point
+
+The 118 numbered results are mapped by stable TeX labels in
+`docs/manuscript-results-v2.0.json`. Established Lean names retain their
+historical numbering. Explicit clause bundles, rather than renamed aliases,
+record all conclusions and printed conditional premises. Results removed
+from V2 remain available through the historical PaperP1 library.
+-/
+
+namespace PaperP1.V2
+end PaperP1.V2
