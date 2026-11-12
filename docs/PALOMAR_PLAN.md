@@ -41,6 +41,15 @@ five candidates to `d6a0f6c5109886127526677603eb6b74e8c0cd82`; the first cycle
 keeps its original approved `f9a2d213265a6833318745dd7f2d74c02090ab19`.
 This preparation opens no new cycle.
 
+The second actual cycle, `cumulants_optimality`, has now started at that
+follow-up source. Its eight selected statements passed the
+[full preflight](https://github.com/Vulkin-prog/paper-p1-lean/actions/runs/43311429286);
+the [actual report receipt](../palomar/publication-followup/cumulants_optimality/preflight/VALIDATION.json)
+binds the source and corrected metadata. Ordinary intake was authenticated and
+both temporary proof artifacts deleted. Palomar's own
+[verification](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/43325541191)
+is in progress. This is not yet a second registration; later cycles remain queued.
+
 ## Previous V2 preparation (preserved history)
 
 On12 November2026 the user resumed this work and requested at most six

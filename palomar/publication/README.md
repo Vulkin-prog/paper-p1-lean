@@ -35,3 +35,13 @@ contents remain private until registration; the delegation is not an editorial
 outcome or an issued registration.
 The author name Brice Pouly and ORCID 0009-0008-8491-2467 remain structured fields
 in all six current dossiers.
+
+The first cycle is now [registered and publicly verified](quadratic_limits/registration/VALIDATION.json)
+as [PALOMAR-2026-11-12-000013 v1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-12-000013&version=1).
+The second, `cumulants_optimality`, uses the corrected
+[follow-up metadata](../publication-followup/cumulants_optimality/formalization.yaml)
+at source `d6a0f6c5109886127526677603eb6b74e8c0cd82`. Its
+[full preflight passed](../publication-followup/cumulants_optimality/preflight/VALIDATION.json),
+ordinary intake was authenticated, and both temporary proof artifacts were
+deleted. Palomar's separate [verification is in progress](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/43325541191).
+No second registration or editorial outcome is asserted by these mechanical records.

@@ -148,3 +148,13 @@ future manuscript version and preparing Palomar registrations after completion.
   the other four in the recorded order. User role and conditional publication
   authority persist; no new approval prompt is needed for a favorable actual
   review, which must still be read, presented and bound to its exact digest.
+
+- The second cycle, `cumulants_optimality`, has passed its actual full preflight
+  `43311429286` for eight selections at source
+  `d6a0f6c5109886127526677603eb6b74e8c0cd82` and the follow-up metadata path.
+  Its authenticated ordinary intake is already open, with both temporary
+  authentication proofs deleted. Palomar's separate verification is run
+  `43325541191`. Follow this existing cycle; do not repeat intake or start the
+  third cycle until the second completes or is properly closed. The actual
+  namespace-profile report, rendering, review and public readback remain separate
+  steps. Keep private outcomes and credentials out of this repository.
