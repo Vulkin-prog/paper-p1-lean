@@ -41,59 +41,64 @@ set_option maxHeartbeats 2000000
 @[expose] public noncomputable section
 
 namespace PaperP1Registry.V2.AffineEvents
+
 open Finset MeasureTheory
+
 open scoped BigOperators
+
 open scoped Classical ENNReal
 
-/-- Prime signs are represented by bits: zero means +1 and one means -1. -/
+open Finset MeasureTheory
+
+open scoped Classical BigOperators
+
+variable {ι Ω : Type*}
 abbrev F₂ := ZMod 2
+
 local instance primeTwo : Fact (Nat.Prime 2) := ⟨Nat.prime_two⟩
+
 local instance measurableF₂ : MeasurableSpace F₂ := ⊤
 abbrev Sample := ℕ → F₂
-
-/-- A fair prime-sign bit, with its discrete sigma algebra. -/
 def coordinateMeasure : Measure F₂ := Measure.uniformOfFinset (univ : Finset F₂)
 instance coordinateProbability : IsProbabilityMeasure coordinateMeasure := by
   constructor
   rw [coordinateMeasure,Measure.uniformOfFinset_apply]
   norm_num
   exact ENNReal.div_self (by norm_num) (by norm_num)
-
-/-- Independent fair bits, indexed in increasing prime order. -/
 def primeSignMeasure : Measure Sample := Measure.infinitePi (fun _ : ℕ ↦ coordinateMeasure)
 instance primeSignProbability : IsProbabilityMeasure primeSignMeasure := by
   unfold primeSignMeasure
   infer_instance
-
-/-- Exponent parities of an integer's prime factorization. -/
 def parity (n : ℕ) : ℕ →₀ F₂ := n.factorization.mapRange (fun e : ℕ ↦ (e : F₂)) (by simp)
-
-/-- The actual completely multiplicative value, represented as a sign bit.
-Prime p uses its coordinate primeCounting' p. -/
 def valueBit (ω : Sample) (n : ℕ) : F₂ :=
   (parity n).sum fun p e ↦ ω (Nat.primeCounting' p)*e
-
-/-- A start has the opposite preceding sign and a constant following word.
-Both signs are counted; the boundary condition prevents counting interior shifts. -/
 def StartEvent (g : ℕ → F₂) (x L : ℕ) : Prop :=
   g (x-1)+g x=1 ∧ ∀ j : ℕ, j<L → g (x+j)=g x
 def startIndicator (x L : ℕ) (ω : Sample) : Bool := decide (StartEvent (valueBit ω) x L)
-
-/-- Number of actual run starts in the complete dyadic block [N,2N). -/
+def runCount (N L : ℕ) (ω : Sample) : ℕ :=
+  ∑ x ∈ Ico N (2*N), (startIndicator x L ω).toNat
+def moment (N L j : ℕ) : ℝ := ∫ ω, (runCount N L ω : ℝ)^j ∂primeSignMeasure
+def actualMean (N L : ℕ) : ℝ := moment N L 1
+def secondCumulant (N L : ℕ) : ℝ := moment N L 2-actualMean N L-(actualMean N L)^2
+def sourceMass (N L k : ℕ) : ℝ := primeSignMeasure.real {ω | runCount N L ω=k}
+def nominalMean (N L : ℕ) : ℝ := (N : ℝ)*(2^L : ℝ)⁻¹
 def indicator (x L : ℕ) (ω : Sample) : ℝ := if startIndicator x L ω then 1 else 0
-
-/-- Actual heterogeneous one-window probability. -/
 def marginal (x L : ℕ) : ℝ := ∫ ω, indicator x L ω ∂primeSignMeasure
-
-/-- Actual joint start mass, including incompatible families. -/
 def jointMoment (L : ℕ) (A : Finset ℕ) : ℝ :=
   ∫ ω, ∏ x ∈ A, indicator x L ω ∂primeSignMeasure
-
-/-- Actual centered joint coefficient, using every window's own mean. -/
 def centeredCoefficient (L : ℕ) (A : Finset ℕ) : ℝ :=
   ∫ ω, ∏ x ∈ A, (indicator x L ω-marginal x L) ∂primeSignMeasure
-
-/-- Actual falling-factorial moment of the complete count. -/
+def factorialMoment (N L r : ℕ) : ℝ :=
+  ∫ ω, ((runCount N L ω).descFactorial r : ℝ) ∂primeSignMeasure
+def thirdCumulant (N L : ℕ) : ℝ :=
+  factorialMoment N L 3-3*factorialMoment N L 2*factorialMoment N L 1+2*(factorialMoment N L 1)^3
+def fourthCumulant (N L : ℕ) : ℝ :=
+  factorialMoment N L 4-4*factorialMoment N L 3*factorialMoment N L 1-
+    3*(factorialMoment N L 2)^2+12*factorialMoment N L 2*(factorialMoment N L 1)^2-
+    6*(factorialMoment N L 1)^4
+def principalSecondScale (N L : ℕ) : ℝ :=
+  (((L%3 : ℕ) : ℝ)+2)/(18*(2 : ℝ)^(((L%3 : ℕ) : ℝ)/3))*
+    (nominalMean N L)^(5/3 : ℝ)*L*(N : ℝ)^(-2/3 : ℝ)
 def vertexLabel (x L : ℕ) (v : Fin (L+1)) : ℕ :=
   if v.val=0 then x-1 else x+(v.val-1)
 def vertexSum (L : ℕ) : (Fin (L+1) → F₂) →ₗ[F₂] F₂ where
@@ -106,8 +111,6 @@ def vertexParity (x L : ℕ) : (Fin (L+1) → F₂) →ₗ[F₂] (ℕ →₀ F�
   Fintype.linearCombination F₂ (fun v ↦ parity (vertexLabel x L v))
 def evenParity (x L : ℕ) : LinearMap.ker (vertexSum L) →ₗ[F₂] (ℕ →₀ F₂) :=
   (vertexParity x L).comp (LinearMap.ker (vertexSum L)).subtype
-
-/-- Effective square classes: local relations are quotiented out once. -/
 def space (x L : ℕ) : Submodule F₂ (ℕ →₀ F₂) := LinearMap.range (evenParity x L)
 def addition {U ι : Type*} [AddCommGroup U] [Module F₂ U] [Fintype ι]
     (S : ι → Submodule F₂ U) : ((i : ι) → S i) →ₗ[F₂] U where
@@ -120,66 +123,60 @@ def RespectsRelations {U ι : Type*} [AddCommGroup U] [Module F₂ U] [Fintype �
 def canonicalPartition {U ι : Type*} [AddCommGroup U] [Module F₂ U]
     [Fintype ι] [DecidableEq ι] (S : ι → Submodule F₂ U) : Finpartition (univ : Finset ι) :=
   ((univ : Finset (Finpartition (univ : Finset ι))).filter (RespectsRelations S)).inf id
-
-/-- Connectedness is the actual finest direct partition, not pairwise overlap. -/
+def Connected (L : ℕ) (I : Finset ℕ) : Prop := canonicalPartition (fun i : I ↦ space i.val L)=⊤
+def connectedFamilies (N L r : ℕ) : Finset (Finset ℕ) :=
+  ((Ico N (2*N)).powersetCard r).filter (Connected L)
 def relativeNullity (L : ℕ) (I : Finset ℕ) : ℕ :=
   Module.finrank F₂ (LinearMap.ker (addition (fun i : I ↦ space i.val L)))
 def compatibleNullity (L : ℕ) (I : Finset ℕ) : ℕ :=
   I.powerset.sup fun A ↦ if 0 < jointMoment L A then relativeNullity L A else 0
-
-/-- Zero-target homogeneous mass, equivalently the reciprocal effective rank. -/
 def totalSpace (L : ℕ) (I : Finset ℕ) : Submodule F₂ (ℕ →₀ F₂) :=
   ⨆ i : I, space i.val L
 def homogeneousMass (L : ℕ) (I : Finset ℕ) : ℝ :=
   (2 ^ Module.finrank F₂ (totalSpace L I) : ℝ)⁻¹
 def rankWeight (L : ℕ) (I : Finset ℕ) : ℝ :=
   (∏ x ∈ I, marginal x L)*(2 ^ relativeNullity L I : ℝ)
-
-open Finset MeasureTheory
-open scoped Classical BigOperators
-
-variable {ι Ω : Type*}
-
-/-- Prefix with the greatest element removed, also defined on the empty set. -/
+def expansion_properPrefix [LinearOrder ι] (I : Finset ι) : Finset ι :=
+  I.filter fun x ↦ ∃ y ∈ I, x<y
+def expansion_Hereditary (D : Finset ι → Prop) : Prop :=
+  ∀ ⦃I J⦄, J ⊆ I → D I → D J
+def expansion_Boundary [LinearOrder ι] (D : Finset ι → Prop) (I : Finset ι) : Prop :=
+  ¬ D I ∧ D (expansion_properPrefix I)
+def expansion_suffix [LinearOrder ι] (G I : Finset ι) : Finset ι :=
+  G.filter fun y ↦ ∀ x ∈ I, x<y
+def expansion_retained (G : Finset ι) (D : Finset ι → Prop) : Finset (Finset ι) :=
+  G.powerset.filter D
+def expansion_boundary [LinearOrder ι] (G : Finset ι) (D : Finset ι → Prop) : Finset (Finset ι) :=
+  G.powerset.filter (expansion_Boundary D)
 abbrev expansion_SignedLaw := AddMonoidAlgebra ℝ ℕ
 def expansion_scalar (r : ℝ) : expansion_SignedLaw := AddMonoidAlgebra.single 0 r
 def expansion_atom (k : ℕ) : expansion_SignedLaw := AddMonoidAlgebra.single k 1
 def expansion_difference : expansion_SignedLaw := expansion_atom 1-expansion_atom 0
 def expansion_bernoulli (p : ℝ) : expansion_SignedLaw := expansion_atom 0+expansion_scalar p*expansion_difference
-
-/-- Ordinary unweighted singleton l1 norm. -/
+def expansion_l1Norm (ν : expansion_SignedLaw) : ℝ := ν.coeff.sum fun _ r ↦ |r|
 def expansion_totalMass (ν : expansion_SignedLaw) : ℝ := ν.coeff.sum fun _ r ↦ r
 def expansion_indicator (b : Bool) : ℝ := if b then 1 else 0
 def expansion_count (G : Finset ι) (J : ι → Ω → Bool) (ω : Ω) : ℕ :=
   ∑ x ∈ G, (J x ω).toNat
-
-/-- All expansion_count probabilities, represented on their literal finite support. -/
 def expansion_countLaw [MeasurableSpace Ω] (G : Finset ι) (μ : Measure Ω)
     (J : ι → Ω → Bool) : expansion_SignedLaw :=
   ∑ k ∈ range (G.card+1), AddMonoidAlgebra.single k (μ.real {ω | expansion_count G J ω=k})
+def expansion_jointMoment [MeasurableSpace Ω] (μ : Measure Ω) (J : ι → Ω → Bool)
+    (I : Finset ι) : ℝ := ∫ ω, ∏ x ∈ I, expansion_indicator (J x ω) ∂μ
 def expansion_marginal [MeasurableSpace Ω] (μ : Measure Ω) (J : ι → Ω → Bool) (x : ι) : ℝ :=
   ∫ ω, expansion_indicator (J x ω) ∂μ
 def expansion_centeredMoment [MeasurableSpace Ω] (μ : Measure Ω) (J : ι → Ω → Bool)
     (I : Finset ι) : ℝ :=
   ∫ ω, ∏ x ∈ I, (expansion_indicator (J x ω)-expansion_marginal μ J x) ∂μ
-
-/-- A signed reference of mass one, whose coefficients need not be positive. -/
-theorem expansion_centered_identity [MeasurableSpace Ω] [Fintype ι] [DecidableEq ι]
-    (G : Finset ι) (μ : Measure Ω) [IsProbabilityMeasure μ]
-    (J : ι → Ω → Bool) (hJ : ∀ x, Measurable (J x)) :
-    (∀ k, (expansion_countLaw G μ J).coeff k=μ.real {ω | expansion_count G J ω=k}) ∧
-    (∀ k, 0 ≤ (expansion_countLaw G μ J).coeff k) ∧ expansion_totalMass (expansion_countLaw G μ J)=1 ∧
-    expansion_countLaw G μ J=∑ I ∈ G.powerset, expansion_scalar (expansion_centeredMoment μ J I)*
-      expansion_difference^I.card*∏ x ∈ G \ I, expansion_bernoulli (expansion_marginal μ J x) :=
-by sorry
+def expansion_retainedReference [MeasurableSpace Ω] (G : Finset ι) (D : Finset ι → Prop)
+    (μ : Measure Ω) (J : ι → Ω → Bool) : expansion_SignedLaw :=
+  ∑ I ∈ expansion_retained G D, expansion_scalar (expansion_jointMoment μ J I)*expansion_difference^I.card
 instance finiteSpace (x L : ℕ) : Fintype (space x L) := by
   classical
   let : Fintype (LinearMap.ker (vertexSum L)) := Fintype.ofFinite _
   exact Fintype.ofSurjective (evenParity x L).rangeRestrict (by
     rintro ⟨c,⟨w,hw⟩⟩
     exact ⟨w,Subtype.ext hw⟩)
-
-/-- An actual finite prime cylinder, with the inclusive cutoff of the paper. -/
 def PrimeUpTo (M : ℕ) := {p : Fin (M+1) // Nat.Prime p.val}
 instance (M : ℕ) : Fintype (PrimeUpTo M) := Subtype.fintype _
 abbrev FiniteSample (M : ℕ) := PrimeUpTo M → F₂
@@ -201,6 +198,15 @@ def FullRelation {ι : Type*} [Fintype ι] (L : ℕ) (g : ι → ℕ)
 def tupleSign {ι : Type*} [Fintype ι] (M L : ℕ) (g : ι → ℕ)
     (a : ι → FiniteSample M) (s : (i : ι) → space (g i) L) : ℝ :=
   ∏ i, if (∑ p : PrimeUpTo M, a i p*(s i).val p.val)=0 then 1 else -1
+def partImage {I : Finset ℕ} (C : Finset I) : Finset ℕ := C.image fun i ↦ i.val
+theorem expansion_centered_identity [MeasurableSpace Ω] [Fintype ι] [DecidableEq ι]
+    (G : Finset ι) (μ : Measure Ω) [IsProbabilityMeasure μ]
+    (J : ι → Ω → Bool) (hJ : ∀ x, Measurable (J x)) :
+    (∀ k, (expansion_countLaw G μ J).coeff k=μ.real {ω | expansion_count G J ω=k}) ∧
+    (∀ k, 0 ≤ (expansion_countLaw G μ J).coeff k) ∧ expansion_totalMass (expansion_countLaw G μ J)=1 ∧
+    expansion_countLaw G μ J=∑ I ∈ G.powerset, expansion_scalar (expansion_centeredMoment μ J I)*
+      expansion_difference^I.card*∏ x ∈ G \ I, expansion_bernoulli (expansion_marginal μ J x) :=
+by sorry
 theorem original_fourier {ι : Type*} [Fintype ι] [DecidableEq ι] [Nonempty ι]
     (M L : ℕ) (g : ι → ℕ) (hL : 0 < L) (hcut : ∀ i, g i+L ≤ M)
     (hp : ∀ i, 0 < marginal (g i) L) :
@@ -235,10 +241,6 @@ theorem unique_direct_partition {U ι : Type*} [AddCommGroup U] [Module F₂ U]
     ∃! P : Finpartition (univ : Finset ι), RespectsRelations S P ∧
       ∀ Q : Finpartition (univ : Finset ι), RespectsRelations S Q → P ≤ Q :=
 by sorry
-def partImage {I : Finset ℕ} (C : Finset I) : Finset ℕ := C.image fun i ↦ i.val
-
-/-- All probability, centered and nullity factorizations use the same canonical
-partition, including zero marginals; no independence assumption is supplied. -/
 theorem canonical_factorization (L : ℕ) (hL : 0 < L) (I : Finset ℕ) :
     let P := canonicalPartition (fun i : I ↦ space i.val L)
     RespectsRelations (fun i : I ↦ space i.val L) P ∧
