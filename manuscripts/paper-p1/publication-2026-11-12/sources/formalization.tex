@@ -1,0 +1,61 @@
+\section*{Formal proofs and reproducibility}
+\addcontentsline{toc}{section}{Formal proofs and reproducibility}
+The accompanying
+\href{https://github.com/Vulkin-prog/paper-p1-lean}{Lean development}
+provides proofs for the 118 numbered results in the article and companion
+(26 and 92, respectively). Its
+\href{https://github.com/Vulkin-prog/paper-p1-lean/blob/main/docs/manuscript-results-publication-2026-11-12.json}{statement index}
+records the correspondence of clauses, definitions and inherited
+hypotheses, including the conditional premise of
+Theorem~\ref{p13:transfer:finite}.
+The documentation of the recorded replay is fixed at commit
+\href{https://github.com/Vulkin-prog/paper-p1-lean/tree/a1c8092f7e25acf7f3b78283039cfbd69491f88e}{\texttt{a1c8092f7e25}}.
+The linked
+\href{https://github.com/Vulkin-prog/paper-p1-lean/blob/a1c8092f7e25acf7f3b78283039cfbd69491f88e/docs/validation/v2.0/proof-source-manifest.json}{source manifest}
+and
+\href{https://github.com/Vulkin-prog/paper-p1-lean/blob/a1c8092f7e25acf7f3b78283039cfbd69491f88e/docs/validation/v2.0/validation.json}{validation record}
+identify the proof source used for the recorded full replay as
+\href{https://github.com/Vulkin-prog/paper-p1-lean/tree/aa12e797ce895f6b7aef6e4f1f0c6e5e9a58aab4}{\texttt{aa12e797ce89}}.
+That record specifies Lean~4.36.0-rc2 and Mathlib commit
+\href{https://github.com/leanprover-community/mathlib4/tree/9d581dfff2e41de989072ea63abf3daf69311520}{\texttt{9d581dfff2e4}},
+and includes compilation results, extracted statement types and the
+kernel-axiom audit. The documentation snapshot and the replayed proof
+source have distinct roles.
+
+The correspondence between the written and formal statements was
+examined with AI assistance. It is not a machine translation of the
+written proofs or a substitute for independent human review.
+The conditional-sum and propagation clauses of
+Proposition~\ref{p1:fixed:propagation} allow homogeneous prescriptions;
+its small-contact clause uses the original run-start events. The formal
+interfaces distinguish these scopes as well.
+
+\Needspace{14\baselineskip}
+Six Palomar dossiers select 52 formal statements covering every clause
+of the 26 numbered results in the article. The companion supplies proof
+dependencies; its 92 results are not all selected separately.
+The allocation is as follows, with numbers referring to the article:
+\begin{center}
+\small
+\begin{tabularx}{\linewidth}{@{}Xlr@{}}
+\toprule
+Dossier & Main results & Statements\\
+\midrule
+Quadratic approximation and Poisson scales & 1.1--1.2, 7.2--7.4 & 10\\
+Cumulants and optimality & 3.3--3.4, 6.1--6.2 & 8\\
+Pair profiles and channel hierarchy & 3.1--3.2, 8.1--8.3 & 13\\
+Stopping, conversion and reconstruction & 4.1--4.2, 5.1--5.3 & 8\\
+Quadratic positivity and Hermite laws & 7.1, 8.4 & 5\\
+Affine events and homogeneous envelopes & 2.1--2.5 & 8\\
+\bottomrule
+\end{tabularx}
+\end{center}
+The
+\href{https://github.com/Vulkin-prog/paper-p1-lean/blob/a1c8092f7e25acf7f3b78283039cfbd69491f88e/palomar/REGISTRATION_PLAN_V2.json}{dossier allocation}
+and
+\href{https://github.com/Vulkin-prog/paper-p1-lean/blob/a1c8092f7e25acf7f3b78283039cfbd69491f88e/palomar/v3/VALIDATION.json}{local dossier validation}
+identify their frozen proof source as
+\href{https://github.com/Vulkin-prog/paper-p1-lean/tree/395c805fac3dbb2930de07cfa5286fef6d85c403}{\texttt{395c805fac3d}}.
+These local checks are separate from official Palomar preflight, review and
+registration. At the author's request, the six dossiers remain in preparation;
+no official submission or registration has been initiated.

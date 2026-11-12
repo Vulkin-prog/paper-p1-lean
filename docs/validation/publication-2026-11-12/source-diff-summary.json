@@ -1,0 +1,194 @@
+[
+  {
+    "path": "sources/assistance.tex",
+    "sha256": "2eaf147747cf16a7b54ab7fa002f684bd500779296f78902bb0034c714ca6b28",
+    "status": "changed",
+    "diff_lines": 11
+  },
+  {
+    "path": "sources/bibliography.tex",
+    "sha256": "ced21913c0ea9b37bc7c59bef6fe6b11d89867c3e4da8868ffe8627a7990cf3b",
+    "status": "changed",
+    "diff_lines": 109
+  },
+  {
+    "path": "sources/bibliography_companion.tex",
+    "sha256": "f3c3602c7248578b98054b5212f85af18117496d11e154916942ced1d190f912",
+    "status": "added"
+  },
+  {
+    "path": "sources/bibliography_main.tex",
+    "sha256": "847f561ce3426a4e51fbde1df333d2c25835e9fa1996cbb92640589d9d539bba",
+    "status": "added"
+  },
+  {
+    "path": "sources/build.py",
+    "sha256": "b56c0d3b5b8997179cbdb56d43f983b1f2f75feeec8e5f440ff7d609fa65d8f7",
+    "status": "added"
+  },
+  {
+    "path": "sources/companion.tex",
+    "sha256": "3d31489734bcabfdc640954b9e5632faa05eb37b64ea636c2b1c5f6fe23447ce",
+    "status": "changed",
+    "diff_lines": 26
+  },
+  {
+    "path": "sources/companion_sections/basic_arithmetic.tex",
+    "sha256": "d9a806c2a54cdd3eb70a4bbac7427d92483be263ebf24147ea77e0f4914d0e84",
+    "status": "identical"
+  },
+  {
+    "path": "sources/companion_sections/certificates.tex",
+    "sha256": "8cd7e4affb7846e24b7b0cd44ae8dda17fc4e83126791c9cfff615bb872961bb",
+    "status": "identical"
+  },
+  {
+    "path": "sources/companion_sections/channel_counts.tex",
+    "sha256": "0dd1bcbe1e2293928482b56adfcb3ce7b846ed5694b82f32b12c4c9a142a6a65",
+    "status": "identical"
+  },
+  {
+    "path": "sources/companion_sections/confinement.tex",
+    "sha256": "cb67ea2dbc9a4401851cfc20c1311a74f601195c57c6a3cd62f2a2bedc55da0a",
+    "status": "changed",
+    "diff_lines": 66
+  },
+  {
+    "path": "sources/companion_sections/exact_reconstruction.tex",
+    "sha256": "428f08a1f0ef855a95d4e452a78de483a315fe33d64537611888e8409f5e814e",
+    "status": "changed",
+    "diff_lines": 50
+  },
+  {
+    "path": "sources/companion_sections/fixed_moments.tex",
+    "sha256": "addce9039fbbbee435b5305346d25a3d93b929756cd730fea679c4ae31526269",
+    "status": "changed",
+    "diff_lines": 51
+  },
+  {
+    "path": "sources/companion_sections/guide.tex",
+    "sha256": "35fb8a964c84f046d5dc5cf20b5143b691157dfd525c35f0aee7efcb0a667068",
+    "status": "identical"
+  },
+  {
+    "path": "sources/companion_sections/half_counts.tex",
+    "sha256": "5fb04088c22d19ffb18c50b6b0a93b1a118412e0c1689c63f3cc0706fae0f3a2",
+    "status": "identical"
+  },
+  {
+    "path": "sources/companion_sections/moment_obstruction.tex",
+    "sha256": "68d14a0fefd9caabc9960b5fe26088a3cbe139374f31a6fb5a1152ecac39f7ed",
+    "status": "identical"
+  },
+  {
+    "path": "sources/companion_sections/pair_profiles.tex",
+    "sha256": "1d53155aba01e0dafbee640eabad08bb6162eaa697080c321f8fac26e2bf86d6",
+    "status": "identical"
+  },
+  {
+    "path": "sources/companion_sections/pair_rigidity.tex",
+    "sha256": "84b8152c24ba67b963ebcbffd4065fc9836631d7470b5412410df040e5e58f10",
+    "status": "changed",
+    "diff_lines": 35
+  },
+  {
+    "path": "sources/companion_sections/poisson_calculus.tex",
+    "sha256": "9751c3cd0723fba0949c246adfc524a49178843d7a7c2031c1efee6c9bd14b09",
+    "status": "identical"
+  },
+  {
+    "path": "sources/companion_sections/short_supports.tex",
+    "sha256": "c2bbbd765ffa0ecf69d9c0d731975eb3a4fa6ff0b79eef8d6970c49dbe82439b",
+    "status": "changed",
+    "diff_lines": 17
+  },
+  {
+    "path": "sources/companion_sections/third_cumulant.tex",
+    "sha256": "91039e61898101961f4db7c1ad9ccfe7f879e4249e19523efb1d21248efc14fc",
+    "status": "identical"
+  },
+  {
+    "path": "sources/companion_sections/triple_activities.tex",
+    "sha256": "8ef14451905c708f1a6115e508d16554ebfb4473f0e9649d13348090331eb8ad",
+    "status": "identical"
+  },
+  {
+    "path": "sources/companion_sections/uniform_support.tex",
+    "sha256": "bc7801a4f3ef8d40f653c63081deef3b47d34a9bcdd5014d062bdaa3fda36f49",
+    "status": "identical"
+  },
+  {
+    "path": "sources/formalization.tex",
+    "sha256": "ef68916b02a385f362b3d38dc73eaebb86bbf13cebc833d92f0f4d345ffec48c",
+    "status": "changed",
+    "diff_lines": 80
+  },
+  {
+    "path": "sources/main.tex",
+    "sha256": "79a17afe331a6643fd0602dcd32c34a55392e303a41d6da630a04b914e199e15",
+    "status": "changed",
+    "diff_lines": 19
+  },
+  {
+    "path": "sources/main_sections/abstract.tex",
+    "sha256": "6893ce5f48c421b94558c2f9df585f71aace49484c1a0c4393e0935ec17465ec",
+    "status": "identical"
+  },
+  {
+    "path": "sources/main_sections/channel_hierarchy.tex",
+    "sha256": "cd10fec13936b973eb82a073659503a51cd827074039674b5e7b3fbb7651498a",
+    "status": "changed",
+    "diff_lines": 18
+  },
+  {
+    "path": "sources/main_sections/completion.tex",
+    "sha256": "7dcc0be2e455b0042f7a3325a085c18864d7805e7e00d975d54eed5d6ed37d97",
+    "status": "identical"
+  },
+  {
+    "path": "sources/main_sections/discussion.tex",
+    "sha256": "95c4583e35d031356ab1d7cea164e24c1cf9ee0529f93cf8e36b5c9f7650dbad",
+    "status": "changed",
+    "diff_lines": 18
+  },
+  {
+    "path": "sources/main_sections/event_algebra.tex",
+    "sha256": "01506e88758ed869214baa07870d14ee1068688d51443b755897b2e17d37b495",
+    "status": "identical"
+  },
+  {
+    "path": "sources/main_sections/introduction.tex",
+    "sha256": "57cfc4b21c9b171269cfe9110ebe04c449d852fe92235e2dce6fd9c5cdcf8a6b",
+    "status": "changed",
+    "diff_lines": 126
+  },
+  {
+    "path": "sources/main_sections/quartic_lower.tex",
+    "sha256": "6e2c882297edb381754dfbac3b7d62ef3e6847d9abe7cc200be2e9a92341da49",
+    "status": "changed",
+    "diff_lines": 15
+  },
+  {
+    "path": "sources/main_sections/reconstruction.tex",
+    "sha256": "8c8c33adadc452b939f7fc3ccbb9a04412b706501c6079671138278d075e8106",
+    "status": "changed",
+    "diff_lines": 53
+  },
+  {
+    "path": "sources/main_sections/scales.tex",
+    "sha256": "e288a8c3a2847d3eed7ae4f3ac9e5c5e1499f836ea84f480a6f42c3259e34434",
+    "status": "changed",
+    "diff_lines": 64
+  },
+  {
+    "path": "sources/main_sections/stopped.tex",
+    "sha256": "86d9baeed211a18303210d80b98481c15b6a0e16a9c6d2c569f2977de62879e6",
+    "status": "identical"
+  },
+  {
+    "path": "sources/preamble.tex",
+    "sha256": "8341243c1aee16364add8cf7100ab81191fa657bdc04e52e521209dc829af61f",
+    "status": "changed",
+    "diff_lines": 23
+  }
+]

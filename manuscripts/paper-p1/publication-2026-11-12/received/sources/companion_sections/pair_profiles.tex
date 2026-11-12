@@ -1,0 +1,299 @@
+\section{Regular windows, pair profiles and compression}
+\label{p1:arith:section}
+
+The first correction to the Poisson law comes from two windows whose integer
+arguments follow the same rational progression.  The relevant quantity is the
+number of square relations, with their affine signs retained.  Counting only
+the pairs that support a relation would lose both the size of the correction
+and its dependence on the integer length.
+
+Throughout this section, $I_N=[N,2N)\cap\mathbb Z$, $B=L+1$,
+$p=2^{-L}$ and $\lambda=Np$, with $|L-\log_2N|\leq C$.
+All constants are uniform in this band.  The square-class vector of a positive
+integer $n$ is denoted by $v(n)$; its prime coordinates are $v_\ell(n)\bmod2$.
+For $V_x=\{x-1,\ldots,x+L-1\}$, let $E_x$ be the space of even subsets of
+$V_x$, and let $S_x$ be its image under the square-class map.  Thus $E_x$ has
+dimension $L$.  A selection $A\in E_x$ has affine sign
+$(-1)^{\ind_{\{x-1\in A\}}}$ for the run-start event $J_x=1$.
+
+For the arithmetic profiles in this section, write
+\[
+ \rho(I)=|I|L-\dim\sum_{x\in I}S_x,\qquad
+ q(I)=\P(J_x=1\text{ for every }x\in I).
+\]
+Here $\rho$ includes the local kernels. On the regular set it equals
+$\rho_{\mathrm{rel}}$; on arbitrary windows the two quantities must be
+distinguished. The exact-marginal probability argument uses
+$\rho_{\mathrm{rel}}$.
+The affine character on the kernel is either trivial or nontrivial.  Accordingly,
+with $\eta(I)\in\{0,1\}$ denoting compatibility, finite Fourier inversion gives
+\begin{equation}\label{p1:arith:affine}
+ q(I)=p^{|I|}\eta(I)2^{\rho(I)}.
+\end{equation}
+This formula includes incompatible events.  In particular,
+$|\eta(I)2^{\rho(I)}-1|\leq2^{\rho(I)}-1$ whenever the individual systems
+have full rank.  For a pair, the same inequality holds even before this
+restriction, since a zero-dimensional kernel has no compatibility obstruction.
+
+\subsection{The regular set and the cost of its complement}
+
+For $H\geq2$ put
+\[
+ K_H(n)=\prod_{\substack{\ell>H\ {\rm prime}\\v_\ell(n)\ {\rm odd}}}\ell.
+\]
+An integer with $K_H(n)=1$ will be called $H$-defective.  When the diameter of
+an interval is less than $H$, every other integer in it has a prime coordinate
+which occurs nowhere else in the interval.  Such a coordinate excludes that
+integer from every square relation.
+
+\begin{proposition}[Regular set]\label{p1:arith:core}
+Let
+\[
+ G_N=\{x\in I_N:\dim S_x=L\},\qquad Z_N^\circ=\sum_{x\in G_N}J_x.
+\]
+Then $|I_N\setminus G_N|=N^{o(1)}$, and
+\begin{equation}\label{p1:arith:coretransfer}
+ d_{\rm TV}(\Law(Z_N),\Law(Z_N^\circ))+
+ |\E Z_N-\lambda|+|\E Z_N^\circ-\lambda|
+ \ll_C N^{-1+o(1)}.
+\end{equation}
+More generally, for every deterministic $A\subset I_N$ and every choice of
+affine targets on its windows,
+\begin{equation}\label{p1:arith:marginalsum}
+ \sum_{x\in A}|\P(A_xX=b_x)-p|\leq pN^{o(1)}.
+\end{equation}
+If the fixed moments of $Z_N$ are uniformly bounded, then, for every fixed
+integer $j\geq1$ and every $\varepsilon>0$,
+\begin{equation}\label{p1:arith:momenttransfer}
+ \big|\E Z_N^j-\E(Z_N^\circ)^j\big|
+ \ll_{C,j,\varepsilon}N^{-1+\varepsilon}.
+\end{equation}
+In particular the second factorial cumulants have the same transfer bound.
+\end{proposition}
+
+The proof is given in Section~\ref{p14:comp:regular-transfer}.
+
+\subsection{Sparse hosts and weighted nonaligned pairs}
+
+For separated windows, $|x-y|>L$, a prime larger than $B$ occurs with odd
+valuation at most once in either window.  Its equation either pins one
+vertex to zero or joins two vertices.  After the pinned components are
+removed, each remaining component has one binary degree of freedom.  If
+$D(x,y)$ counts the defective vertices and $c(x,y)$ the other unpinned
+components, then
+\begin{equation}\label{p1:arith:graphbound}
+ \rho(x,y)\leq D(x,y)+c(x,y),\qquad D(x,y)=o(B).
+\end{equation}
+The small prime equations and the two block parities can only reduce this
+dimension.
+
+A pair is called aligned if, in one orientation, it satisfies
+$bx-ay=h$ for coprime positive $a,b\leq B^3$ and
+$|h|\leq(a+b)B$.  Using this slightly enlarged definition includes every
+alignment produced by two exact units.  Two different reduced slopes cannot
+occur for the same dyadic pair once $N$ is large: distinct slopes are separated
+by at least $B^{-6}$, whereas the allowed displacement changes the ratio of
+the starts by $O(B^{O(1)}/N)$.
+
+\begin{proposition}[Support and residual mass]\label{p1:arith:hosts}
+For every $\varepsilon>0$,
+\begin{align}
+ \#\{(x,y)\in I_N^2:|x-y|>L,\ \rho(x,y)>0\}
+   &\ll_{C,\varepsilon}N^{1+\varepsilon},
+       \label{p1:arith:hostbound}\\
+ \sum_{\substack{x,y\in I_N,\ |x-y|>L\\(x,y)\ {\rm nonaligned}}}
+       (2^{\rho(x,y)}-1)
+   &\ll_{C,\varepsilon}N^{1+\varepsilon}.
+       \label{p1:arith:nonaligned}
+\end{align}
+\end{proposition}
+
+The elementary proof in Section~\ref{p14:comp:sparse-hosts} first gives
+the sufficient bound $N^{6/5+\varepsilon}$ in both displays.
+The stronger bounds stated here are completed in
+Section~\ref{p14:comp:confinement}, using the conditional half-count
+and dense-pair confinement. That later strengthening is not an input
+to either of those arguments; the elementary bounds suffice for the
+earlier pair-profile calculation.
+
+\subsection{Good edges, compression, and one additional window}
+
+Let $\mathcal E_N$ consist of the unordered compatible dependent pairs in
+the channels $2:3$ and $3:4$ for which the distinct normalized values have private
+prime coordinates above the fixed threshold $H$.  Write
+$q_e=\P(J_x=J_y=1)$ for $e=\{x,y\}$ and
+$\beta_N=\sum_{e\in\mathcal E_N}q_e$.  The family is deterministic.
+
+\begin{corollary}[The pair input for the expansion]\label{p1:arith:edgefamily}
+One has $|\mathcal E_N|=O_C(NB)$ and, for an edge in channel $a:b$,
+\[
+ \rho(e)\leq L/b+O(1),\qquad q_e\leq p^2 2^{L/b+O(1)}.
+\]
+Moreover,
+\begin{align}
+ 2\beta_N&=\alpha_N+O_{C,\varepsilon}(N^{-4/5+\varepsilon}),
+    \label{p1:arith:edgemass}\\
+ \sum_{\substack{x,y\in G_N,\ x\ne y\\\{x,y\}\notin\mathcal E_N}}
+   |\E[(J_x-p)(J_y-p)]|
+ &\ll_{C,\varepsilon}N^{-4/5+\varepsilon}+B/N.
+    \label{p1:arith:badpairs}
+\end{align}
+In particular $\beta_N\asymp_C LN^{-2/3}$.
+\end{corollary}
+
+The proof is given in Section~\ref{p14:comp:good-edge-mass}.
+
+\begin{lemma}[Exact compression of a good edge]\label{p1:arith:compression}
+For a good edge in channel $a:b$, the joint homogeneous event space is the
+injective square-class image of the even-selection space of
+\[
+ U_e=bV_x\cup aV_y,
+\]
+where repeated values are included only once.  In particular its rank is
+\begin{equation}\label{p1:arith:compressedrank}
+ \dim(S_x+S_y)=|U_e|-1\geq(2-1/b)L-O(1).
+\end{equation}
+After the endpoint offsets are fixed, $U_e$ is a subset of an interval of
+length $O(B)$ depending on one integer translation parameter.  There are
+only $B^{O(1)}$ offset patterns.
+\end{lemma}
+
+\begin{proof}
+Multiplying every integer in a window by the same constant does not change
+the square class of an even selection.  The two even-selection spaces on
+$bV_x$ and $aV_y$ therefore map to the original event spaces.  They intersect
+on at least one normalized value: dependence in the good family requires
+at least two exact units.  The sum of the even-selection spaces of two
+intersecting finite sets is the even-selection space of their union.  Its
+square-class map is injective, because every distinct value in $U_e$ has a
+private prime.  There are at most $L/b+O(1)$ repeated values, which proves
+\eqref{p1:arith:compressedrank}.
+\end{proof}
+
+
+\subsection{Pair profiles and the regular-set estimates}
+\label{p14:comp:pair-profiles}
+
+This section supplies the estimates used in Section~\ref{p1:arith:section}.
+The regular-set transfer is used for the explicit channel formulas and for
+the independent fixed-moment argument. The scalar reconstruction with exact marginals
+does not discard these exceptional windows.
+
+\subsubsection{Regular-set transfer}
+\label{p14:comp:regular-transfer}
+
+\begin{proof}[Proof of Proposition~\ref{p1:arith:core}]
+The one-window estimates proved in Lemma~\ref{p1:arith:defects} give
+$m_B(x)=O_C(B/\log B)$ uniformly, and only $N^{o(1)}$ windows contain two
+$B$-defective integers.  A nonzero relative relation is an even nonempty
+selection.  Private prime coordinates therefore force it to use at least two
+defects.  Its dimension is at most $m_B(x)$.  Consequently
+\[
+ \sum_{x\in I_N}(2^{L-\dim S_x}-1)=N^{o(1)}.
+\]
+Fourier inversion proves \eqref{p1:arith:marginalsum}.  The sum of the
+probabilities of active discarded starts is at most $pN^{o(1)}$; the coupling
+using the original prime signs proves the total-variation assertion.  On $G_N$
+the marginal is exactly $p$, giving both assertions about the mean.
+
+For the last statement, let $D=\{Z_N\ne Z_N^\circ\}$.  Since
+$0\leq Z_N^\circ\leq Z_N$, H\"older's inequality gives, for any fixed $s>1$,
+\[
+ \E\big[Z_N^j\ind_D\big]
+ \leq(\E Z_N^{js})^{1/s}\P(D)^{1-1/s}.
+\]
+Choose a sufficiently large integer $s$, and then use the fixed-moment bound.
+This last step is used only after that bound has been established; a small
+coupling error alone would not justify a variance transfer.
+\end{proof}
+
+\subsubsection{Sparse hosts and weighted residual mass}
+\label{p14:comp:sparse-hosts}
+
+\begin{proof}[The elementary bounds preceding Proposition~\ref{p1:arith:hosts}]
+A relative relation that is internal to one window contributes at most
+$N^{1+o(1)}$ hosts, by Proposition~\ref{p1:arith:core}.  Otherwise it selects
+at least two vertices in each window.  Put $T=N^{3/5}$.  If all selected
+kernels are at most $T$, each window contains two small kernels.  The estimate
+\begin{equation}\label{p1:arith:twokernelused}
+ \#\{x\in I_N:\#\{n\in V_x:K_B(n)\leq N^\beta\}\geq2\}
+   \ll_{C,\beta,\varepsilon}N^{\max(\beta,7/12)+\varepsilon}
+\end{equation}
+proved in Lemma~\ref{p1:arith:twokernel} gives $N^{6/5+\varepsilon}$
+choices.  If one selected kernel exceeds $T$, Lemma~\ref{p1:arith:anchor}
+gives
+$N^{3/2+o(1)}T^{-1/2+\tau}$, for every fixed $\tau>0$.
+Choose $\tau$ sufficiently small.
+
+For the weighted assertion, first restrict to $c(x,y)<\eta B$.
+Equation~\eqref{p1:arith:graphbound} bounds the weight by
+$2^{\eta B+o(B)}$; choose $\eta$ after the desired error exponent.
+The complementary sector has total weight $O_{C,\eta,\varepsilon}(N^{1+\varepsilon})$
+by Lemma~\ref{p1:arith:dense}.  The latter estimate uses the component
+equations themselves, rather than just their support: many small components
+put the pair on a multiquadratic surface, and its low-degree curves are either
+aligned or absent from the dyadic region.
+This proves both bounds with exponent $6/5+\varepsilon$, which is all
+that the pair-profile proof below uses. The exponent $1+\varepsilon$
+in the revised statement is proved later in
+Section~\ref{p14:comp:confinement}; no late confinement estimate is
+being inferred from this elementary calculation.
+\end{proof}
+
+\subsubsection{The complete pair profile}
+\label{p14:comp:complete-profile}
+
+\begin{proof}[Proof of Theorem~\ref{p1:arith:pairs}]
+For the channel $2:3$, either orientation permits
+$N/2\leq t<2N/3$, up to $O(B)$ endpoint changes.  For $3:4$ the corresponding
+interval is $N/3\leq t<N/2$.  Both intervals have length $N/6+O(B)$.
+The two orientations therefore give $N/3$ times the finite sums~\eqref{p1:arith:S23}--\eqref{p1:arith:S34}.
+Translations near a boundary contribute $O(B^3 2^{L/b})$.
+
+For either fixed channel choose $H$ a sufficiently large fixed multiple of
+$B$ and normalize the values to $bV_x\cup aV_y$.  Its diameter is $O(B)$.
+If its distinct values are all nondefective at level $H$, each has a private
+prime and the only relations before normalization are the even selections
+of exact units.  Lemma~\ref{p1:arith:defects} shows that the exceptional
+channel pairs number $N^{1/2+o(1)}$.  Lemma~\ref{p1:arith:alignedrank} bounds
+their nullity by $L/b+o(L)$.  Replacing the rational kernel by the full
+arithmetic kernel consequently costs at most
+$N^{1/2+1/b+o(1)}$, for either the positive or the signed sum.
+
+There are $N B^{O(1)}$ aligned hosts altogether.  The slope of height two
+forces both starts within $O(B)$ of the dyadic endpoints; its mass is
+$N^{1/2+o(1)}$.  Height one has no exact unit in separated windows.
+The only reduced slopes of heights three and four that occur in the interior
+are $2:3$ and $3:4$.  Every remaining channel has height at least five and
+nullity at most $L/5+o(L)$, again by Lemma~\ref{p1:arith:alignedrank}; its
+total contribution is $N^{6/5+o(1)}$. The elementary version just
+proved controls the nonaligned sector at the same sufficient scale.
+The inequality following
+\eqref{p1:arith:affine} permits exactly the same error estimates for the signed
+sum.
+
+At distances $1,\ldots,L-1$, two run starts are incompatible.  At distance
+$L$, their edge systems form a tree on an interval of diameter $2L$;
+Lemma~\ref{p1:arith:defects}, at threshold $2L+1$, bounds its nullity by
+$o(L)$.  Hence the entire contact band changes the second factorial moment
+by $O(N^{-1+o(1)})$.  Multiplying \eqref{p1:arith:signedprofile} by $p^2$,
+and using $\mu_N-\lambda=O(N^{-1+o(1)})$, proves
+\eqref{p1:arith:cumulantexpansion}.  Finally
+$2^{(L-r)/b}=2^{-r/b}(N/\lambda)^{1/b}$ in
+\eqref{p1:arith:S23}--\eqref{p1:arith:S34} gives the two equivalents.
+\end{proof}
+
+\subsubsection{The good-edge mass}
+\label{p14:comp:good-edge-mass}
+
+\begin{proof}[Proof of Corollary~\ref{p1:arith:edgefamily}]
+Each start has $O(B)$ possible partners in a fixed channel.  The rational
+kernel has dimension one less than the number of exact units when that
+number is positive, giving the rank bound.  All pairs excluded from the good
+family have precisely the error mass estimated in the proof of
+Theorem~\ref{p1:arith:pairs}, together with the contact band.
+For good compatible pairs the centered contribution is $q_e-p^2$.
+Since $p^2|\mathcal E_N|=O(B/N)$, replacing it by $q_e$ has the stated cost.
+The asymptotic follows from \eqref{p1:arith:leadingphase}.
+\end{proof}
+

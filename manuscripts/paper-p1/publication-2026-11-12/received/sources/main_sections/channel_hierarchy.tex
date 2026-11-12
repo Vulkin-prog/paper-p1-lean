@@ -1,0 +1,360 @@
+\section{Explicit references and the first omitted channel}
+\label{p13:channels:section}
+
+The exact second factorial cumulant retains every pair interaction.  An
+explicit reference can instead retain the complete contributions of all
+rational channels up to a chosen height.  The first omitted height then
+determines its error, including the leading coefficient.  This gives a
+different optimal exponent for each finite truncation, even though all
+these references approximate the same random variable.
+
+For coprime integers $b/2<a<b$, $b\geq3$, retain the finite sums
+$S_{a,b}(L)$ from \eqref{p1:arith:channelidentity} and put
+\begin{equation}
+ \begin{split}
+ w_{a,b}&=\frac{2(2a-b)}{ab},\qquad
+ T_b(L)=\sum_{\substack{b/2<a<b\\(a,b)=1}}w_{a,b}S_{a,b}(L),\\
+ \widehat\alpha_N^{(\leq h)}
+   &=\frac{\lambda_N^2}{N}\sum_{b=3}^{h}T_b(L),\qquad h\geq3.
+ \end{split}
+ \label{p13:channels:definitions}
+\end{equation}
+The factor two in $w_{a,b}$ counts the two orientations of a pair.
+Here and throughout this section, the integer $h$ is fixed before $N$.
+In particular,
+$\widehat\alpha_N^{(\leq4)}=\widehat\alpha_N$ from
+\eqref{p1:eq:alpha-explicit}.
+
+\begin{theorem}[The optimal error of every fixed height truncation]
+\label{p13:channels:hierarchy}
+Fix $h\geq3$ and $C>0$, and write $b=h+1$ and $r=L\bmod b$.
+For every $\varepsilon>0$, uniformly in the critical band,
+\begin{align}
+ \alpha_N-\widehat\alpha_N^{(\leq h)}
+  &=\frac{\lambda_N^2}{N}T_b(L)
+       +O_{h,C,\varepsilon}(N^{-b/(b+1)+\varepsilon}),
+       \label{p13:channels:cumulant-remainder}\\
+ \Law(Z_N)-Q_{\lambda_N,\widehat\alpha_N^{(\leq h)}}
+  &=\frac{\lambda_N^2T_b(L)}{2N}\Pi_{\lambda_N}*\Delta^{*2}
+       +O_{\ell^1,h,C,\varepsilon}(N^{-b/(b+1)+\varepsilon}).
+       \label{p13:channels:law-remainder}
+\end{align}
+Define the positive number
+\begin{equation}
+ c_b(r)=\frac{b+r-1}{b^2\,2^{r/b}}
+       \sum_{\substack{b/2<a<b\\(a,b)=1}}
+                    \frac{(2a-b)(b-a)}a .
+ \label{p13:channels:phase-constant}
+\end{equation}
+The reference is a probability measure for all sufficiently large $N$, and
+\begin{equation}
+ \TV\bigl(\Law(Z_N),Q_{\lambda_N,\widehat\alpha_N^{(\leq h)}}\bigr)
+ \sim \frac{c_b(r)}4\lambda_N^{2-1/b}
+       \|\Pi_{\lambda_N}*\Delta^{*2}\|_1\,
+       L N^{-1+1/b}.
+ \label{p13:channels:tv-equivalent}
+\end{equation}
+The ratio tends to one uniformly over the critical band with the displayed
+moving parameters retained.  Thus the optimal power exponent of this
+specified reference is $h/(h+1)$.
+\end{theorem}
+
+Before proving the theorem, we account for the nonaligned pairs.  The
+unweighted count alone would not suffice: a pair carrying many relations
+has a correspondingly larger joint probability.
+
+\begin{lemma}[Weighted nonaligned pairs]
+\label{p13:channels:weighted-nonaligned}
+For every $\varepsilon>0$,
+\begin{equation}
+ \sum_{\substack{x,y\in G_N,\ |x-y|>L\\(x,y)\ {\rm nonaligned}}}
+             (2^{\rho(x,y)}-1)
+       \ll_{C,\varepsilon}N^{1+\varepsilon}.
+ \label{p13:channels:nonaligned-weight}
+\end{equation}
+Consequently the sum of the absolute covariances on these pairs is
+$O_{C,\varepsilon}(N^{-1+\varepsilon})$.
+\end{lemma}
+
+\begin{proof}
+Use the large-prime component decomposition
+\eqref{p1:arith:graphbound}, so that
+$\rho(x,y)\leq D(x,y)+c(x,y)$ and $D(x,y)=o(B)$ uniformly.
+Fix $\eta>0$ temporarily.  On $c(x,y)<\eta B$, the weight is
+at most $2^{\eta B+o(B)}$.  A pair in $G_N$ with $\rho(x,y)>0$
+has a nonzero intersection between its two effective spaces.  The pair
+count of Corollary~\ref{p13:half:pairs} therefore bounds the contribution
+of this sector by $N^{1+\eta+\varepsilon'+o(1)}$.
+On $c(x,y)\geq\eta B$, Lemma~\ref{p1:arith:dense} already bounds the
+entire weighted sum by $N^{1+\varepsilon'}$.  Choose $\eta$ and then
+$\varepsilon'$ inside the prescribed margin.
+
+On $G_N$ both marginals are $p$.  The affine identity
+\eqref{p1:arith:affine} gives
+$|\Cov(J_x,J_y)|\leq p^2(2^{\rho(x,y)}-1)$, including incompatible
+pairs.  Since $p\asymp_C N^{-1}$, this proves the last assertion.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{p13:channels:hierarchy}]
+We first prove, for every fixed integer $m\geq3$,
+\begin{equation}
+ \alpha_N-\widehat\alpha_N^{(\leq m)}
+       =O_{m,C,\varepsilon}(N^{-m/(m+1)+\varepsilon}).
+ \label{p13:channels:coarse-truncation}
+\end{equation}
+The regular-set transfer in Proposition~\ref{p1:arith:core}, justified
+by the independent fixed-moment bound of Theorem~\ref{p1:fixed:moments},
+changes the second factorial cumulant by $O(N^{-1+\varepsilon})$.
+On $G_N$, that cumulant is the sum of covariances over ordered distinct
+pairs minus $|G_N|p^2$.  The last term is $O(N^{-1})$.
+
+Strict contacts are incompatible and number $O(NB)$, so their covariance
+mass is $O(B/N)$.  At separation exactly $L$, the union of the two
+windows lies in an interval of length $O(B)$ and has formal rank
+$2L-o(L)$, by Lemma~\ref{p1:arith:defects}; this band has the same
+$N^{-1+o(1)}$ cost.  Lemma~\ref{p13:channels:weighted-nonaligned}
+treats the separated nonaligned pairs.
+
+For aligned separated pairs, reduced slopes are unique for sufficiently
+large $N$: their separation is at least $B^{-6}$, whereas the allowed
+offset changes the ratio of the starts by only $B^{O(1)}/N$.
+There are $NB^{O(1)}$ aligned hosts altogether.  A slope of height one
+has no exact unit for separated windows and hence only residual nullity
+$o(L)$ by Lemma~\ref{p1:arith:alignedrank}.  The slope $1:2$ is confined
+to $B^{O(1)}$ pairs at the dyadic endpoints; its total mass is at most
+$N^{-3/2+o(1)}$.  Every remaining reduced slope is an interior channel
+$b/2<a<b$, $b\geq3$.
+
+For each fixed channel of height at most $m$, normalize to
+$bV_x\cup aV_y$.  Lemma~\ref{p1:arith:fixed-channel-mass} gives its
+ordered contribution
+$p^2Nw_{a,b}S_{a,b}(L)+O_{m,C,\varepsilon}(N^{-1+\varepsilon})$.
+Changing from the good-pair joint mass to the covariance costs at most
+$O_m(p^2NB)$.  The omitted pairs of bad normalization have total weight
+$N^{-3/2+1/b+o(1)}$, as in that lemma's proof, and are smaller still.
+Only finitely many channels have been retained.
+
+For all remaining heights $b\geq m+1$, including heights varying up to
+$B^3$, the uniform aligned rank bound gives
+$\rho(x,y)\leq L/(m+1)+o(L)$.  Their total contribution, in absolute
+value, is at most
+\[
+ p^2 NB^{O(1)}2^{L/(m+1)+o(L)}
+      =N^{-m/(m+1)+o(1)}.
+\]
+This proves \eqref{p13:channels:coarse-truncation}.  Apply it at $m=h+1$
+and separate the last retained term to obtain
+\eqref{p13:channels:cumulant-remainder}.
+
+The mean estimate of Proposition~\ref{p1:arith:core} gives
+$|\mu_N-\lambda_N|\ll N^{-1+\varepsilon'}$.  Coupling Poisson variables
+shows $\|\Pi_u-\Pi_v\|_1\leq2|u-v|$.  Since $\alpha_N=o(1)$,
+\[
+ \|Q_{\mu_N,\alpha_N}-Q_{\lambda_N,\alpha_N}\|_1
+      \ll |\mu_N-\lambda_N|.
+\]
+Theorem~\ref{p1:thm:main}, this estimate, and the exact linearity of
+$Q_{\lambda,a}$ in $a$ give \eqref{p13:channels:law-remainder}.
+Both the mean error of power one and the exact-reference error of power
+$4/3$ are smaller than $N^{-b/(b+1)+\varepsilon}$ for this fixed $b$.
+
+To identify the leading term, write $L=bq+r$, $0\leq r<b$.
+The finite identity \eqref{p1:arith:channelidentity}, with $s=-1$, yields
+\[
+ S_{a,b}(L)
+  =2^{q-1}\bigl[(b-a)(b+r-1)q+O_b(1)\bigr]+O_b(L).
+\]
+As $q\sim L/b$ and
+$2^q=2^{-r/b}(N/\lambda_N)^{1/b}$, summation gives
+\begin{equation}
+ \frac{\lambda_N^2}{N}T_b(L)
+  \sim c_b(r)\lambda_N^{2-1/b}L N^{-1+1/b}.
+ \label{p13:channels:omitted-equivalent}
+\end{equation}
+Every summand in \eqref{p13:channels:phase-constant} is positive, and
+$a=b-1$ is always present.  The phase ranges over a fixed finite set
+and $\lambda_N$ over a compact subset of $(0,\infty)$.
+Taking $\varepsilon<1/(b(b+1))$ makes the error in
+\eqref{p13:channels:law-remainder} negligible relative to its leading
+term.  The reverse triangle inequality then gives the norm equivalent;
+division by two gives \eqref{p13:channels:tv-equivalent}.
+The factor $1/4$ combines this division with the quadratic coefficient
+$1/2$.
+
+Finally, $\widehat\alpha_N^{(\leq h)}\sim\alpha_N>0$ and tends to
+zero.  The positivity criterion of Lemma~\ref{p1:close:positivity}
+therefore applies uniformly on the compact range of $\lambda_N$.
+The leading coefficient in \eqref{p13:channels:tv-equivalent} is bounded
+above and away from zero, since
+$\|\Pi_{\lambda_N}*\Delta^{*2}\|_1\geq e^{-\lambda_N}$.
+This proves optimality of the stated power for the specified reference.
+\end{proof}
+
+\subsection{What the first omitted height contributes}
+
+The four channels of heights at most five are $2:3$, $3:4$, $3:5$,
+and $4:5$.  Thus the next explicit correction after
+\eqref{p1:eq:alpha-explicit} has a short closed formula.
+
+\begin{corollary}[The error of the two-channel reference]
+\label{p13:channels:height-five}
+Write $L=5q+r$, $0\leq r<5$, and, for $q\geq1$, set
+\begin{equation}
+ \begin{split}
+ M_5(N,L)&=\frac{\lambda_N^2}{N}
+             \left\{\frac2{15}S_{3,5}(L)+\frac3{10}S_{4,5}(L)\right\}\\
+ &=\frac{\lambda_N^2}{30N}
+   \left\{2^{q-1}\bigl[17(r+4)q+13r^2+87r+620\bigr]
+                              -113L-127\right\}.
+ \end{split}
+ \label{p13:channels:M5}
+\end{equation}
+Then
+\begin{align}
+ \Law(Z_N)-Q_{\lambda_N,\widehat\alpha_N}
+   &=\frac{M_5(N,L)}2\Pi_{\lambda_N}*\Delta^{*2}
+                +O_{\ell^1,C,\varepsilon}(N^{-5/6+\varepsilon}),
+                \label{p13:channels:two-channel-law}\\
+ \TV(\Law(Z_N),Q_{\lambda_N,\widehat\alpha_N})
+   &\sim\frac{17(r+4)}{1200\,2^{r/5}}\lambda_N^{9/5}
+       \|\Pi_{\lambda_N}*\Delta^{*2}\|_1\,L N^{-4/5}.
+                \label{p13:channels:two-channel-tv}
+\end{align}
+The four-channel coefficient is
+$\widehat\alpha_N^{(\leq5)}=\widehat\alpha_N+M_5(N,L)$.
+Its reference has optimal exponent $5/6$, with leading phase constant
+$c_6(r)=(r+5)/(45\,2^{r/6})$, where now $r=L\bmod6$.
+\end{corollary}
+
+\begin{proof}
+The finite identity gives
+\begin{align*}
+ S_{3,5}(L)&=2^{q-1}\bigl[2(r+4)q+r^2+6r+38\bigr]-8L-7,\\
+ S_{4,5}(L)&=2^{q-1}\bigl[(r+4)q+r^2+7r+52\bigr]-9L-11.
+\end{align*}
+Their weighted sum proves \eqref{p13:channels:M5}.
+Theorem~\ref{p13:channels:hierarchy} at $h=4$ gives the first two
+conclusions.  At height six the only reduced interior channel is $5:6$;
+substitution in \eqref{p13:channels:phase-constant} gives $c_6$ and the
+assertion for the four-channel reference.
+\end{proof}
+
+For example, if $N=2^L$ and $5\mid L$, the error of the two-channel
+reference is asymptotic in total variation to
+$17LN^{-4/5}/(100e)$, because
+$\|\Pi_1*\Delta^{*2}\|_1=3/e$.
+The table records how successive complete channels change the error.
+
+\begin{center}
+\begin{tabular}{@{}clcl@{}}
+\toprule
+Height $h$ & Retained channels & Optimal power & First omitted channels\\
+\midrule
+3 & $2:3$ & $3/4$ & $3:4$\\
+4 & $2:3,\ 3:4$ & $4/5$ & $3:5,\ 4:5$\\
+5 & $2:3,\ 3:4,\ 3:5,\ 4:5$ & $5/6$ & $5:6$\\
+$h$ fixed & all reduced interior heights $\leq h$
+   & $h/(h+1)$ & height $h+1$\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The full coefficient in \eqref{p13:channels:definitions} has a phase
+dividing $\operatorname{lcm}(3,\ldots,h)$, whereas its leading omitted
+term uses only $L\bmod(h+1)$, together with $\lambda_N$.
+The theorem permits any fixed height, with constants depending on that
+height.  It makes no assertion for a height growing with $N$.
+In particular it does not identify an obstruction of power one for
+other explicit references: the stated optimality concerns precisely the
+finite truncations defined in \eqref{p13:channels:definitions}.
+
+\subsection{Positive Hermite references}
+
+The classical Hermite distribution \cite{kempkemp1965} has generating
+function
+\[
+ \exp\{(\mu-\alpha)(z-1)+(\alpha/2)(z^2-1)\}.
+\]
+For \(0\le\alpha\le\mu\), it is the law of a Poisson variable
+of mean \(\mu-\alpha\) plus twice an independent Poisson variable
+of mean \(\alpha/2\).
+
+\begin{corollary}[Hermite approximation with single and double jumps]
+\label{p1:cor:compound}
+For all sufficiently large \(N\), let \(U_N,V_N\) be independent
+Poisson variables with means \(\mu_N-\alpha_N\) and
+\(\alpha_N/2\), respectively. Then
+\[
+ \TV\bigl(\Law(Z_N),\Law(U_N+2V_N)\bigr)
+       \ll_{C,\varepsilon}N^{-4/3+\varepsilon}.
+\]
+For every fixed \(h\ge3\), the entirely explicit reference
+\[
+ \widehat U_N+2\widehat V_N,\qquad
+ \widehat U_N\sim\Pois(\lambda_N-\widehat\alpha_N^{(\le h)}),\qquad
+ \widehat V_N\sim\Pois(\widehat\alpha_N^{(\le h)}/2),
+\]
+with independent summands has optimal power \(h/(h+1)\)
+and the same leading distance equivalent as the corresponding
+quadratic reference in Theorem~\ref{p13:channels:hierarchy}.
+In particular the two-channel choice \(h=4\) has
+error \(O(N^{-4/5+\varepsilon})\).
+No matching lower bound is asserted here for the
+exact-parameter Hermite reference.
+\end{corollary}
+
+\begin{proof}
+Both means are nonnegative for large \(N\).
+In the convolution algebra, the law of \(U_N+2V_N\) is
+\[
+ \exp_*\left(\mu_N\Delta+\frac{\alpha_N}{2}\Delta^{*2}\right).
+\]
+Expanding the second exponential to first order gives
+\(Q_{\mu_N,\alpha_N}\) with an \(\ell^1\) error
+\(O_C(\alpha_N^2)\). Indeed \(\|\Delta^{*2}\|_1=4\),
+and the exponential remainder is bounded by
+\(\frac12(2\alpha_N)^2e^{2\alpha_N}\).
+Since \(\alpha_N^2=N^{-4/3+o(1)}\), the main theorem
+proves the claim.
+For each fixed-height explicit reference, the coefficient
+is positive and tends to zero uniformly in the critical band, while
+\(\lambda_N\) stays bounded away from zero. Thus both proposed
+Poisson means are nonnegative for all sufficiently large \(N\).
+Repeat the same expansion with parameters
+\((\lambda_N,\widehat\alpha_N^{(\le h)})\), and apply
+Theorem~\ref{p13:channels:hierarchy}. The additional norm
+error is \(O_C((\widehat\alpha_N^{(\le h)})^2)
+=N^{-4/3+o(1)}\), smaller than the positive first omitted
+channel term of order \(LN^{-h/(h+1)}\).
+The reverse triangle inequality preserves its equivalent
+and hence its optimal exponent.
+\end{proof}
+
+The double jump represents the leading pair interaction at
+the level of the scalar law. The contribution here is the
+precision of the Hermite approximation for \(Z_N\).
+Its double jump intensity uses either the exact second
+factorial cumulant or a complete finite channel sum.
+This is a representation of the reference law; it does not
+decompose the actual run starts into independent components.
+Keeping only the leading equivalent of that coefficient
+does not preserve the precision of a fixed-height truncation.
+The exact Hermite law already contains the quartic term
+\(\alpha_N^2\Pi_{\mu_N}*\Delta^{*4}/8\), so the lower
+bound for the quadratic reference does not transfer to it.
+
+This distinction is already present in the locally dependent
+setting of \v{C}ekanavi\v{c}ius and Vellaisamy
+\cite[Theorem~3.1, (3.5), and Theorem~3.2, (3.6)]{cekanaviciusvellaisamy2015}.
+Their quadratic reference is
+\(\Pi_{\Gamma_1}*(\delta_0+\Gamma_2\Delta^{*2})\), whereas
+the exponential reference is
+\(\exp_*(\Gamma_1\Delta+\Gamma_2\Delta^{*2})\), with
+\(\Gamma_2=(\Var Z-\E Z)/2\).
+The quadratic estimate contains an additional squared error term
+that is absent from the exponential estimate.
+These results concern sums reduced to one-dependence under
+specified moment conditions. We use this comparison to place the
+references in context; the arithmetic estimates here provide
+their approximation to the multiplicative run count.
+

@@ -1,0 +1,194 @@
+\section{Separating compatible triples from cancellations}
+\label{p13:activity:section}
+
+A count of hosts does not by itself control their probabilities:
+compatibility multiplies an independent weight by
+\(2^{\rho_{\mathrm{rel}}}\). For incompatible triples,
+however, an exact centered identity removes this multiplier.
+The remaining cost is a pair coefficient followed by a
+dependent target. We estimate that cost before using signs.
+
+\begin{proposition}[The independent cost of one target after a pair]
+\label{p13:activity:deficit}
+Define
+\[
+ D_{2,1}=
+ \sum_{\substack{e=\{x,y\}\subseteq\mathcal I_N\\d_{xy}>0}}
+ |c(e)|
+ \sum_{\substack{z\in\mathcal I_N\setminus e\\
+            S_z\cap(S_x+S_y)\ne\{0\}}}p_z.
+\]
+Then \(D_{2,1}\ll_{C,\varepsilon}N^{-3/2+\varepsilon}\).
+\end{proposition}
+
+The proof in Section~\ref{p14:comp:activity:deficit} partitions pairs
+into finitely many fixed rational channels, weak pairs, and an
+exceptional class.  A fixed-source half-count handles the last two
+classes.  For a good channel, exact compression turns the pair and its
+target into two logarithmic blocks; their total host count is
+$N^{1+\varepsilon}$ and their individual weights give an even smaller
+$N^{-5/3+\varepsilon}$ contribution.  This bound uses independent
+weight only for the new target, while preserving the pair activity.
+
+\begin{theorem}[Absolute activity of incompatible triples]
+\label{p13:activity:incompatible}
+For every \(\varepsilon>0\),
+\[
+ \sum_{\substack{T\subseteq\mathcal I_N,\ |T|=3\\q(T)=0}}
+           |c(T)|\ll_{C,\varepsilon}N^{-3/2+\varepsilon}.
+\]
+Both signs of the centered coefficient are included.
+\end{theorem}
+
+\begin{proof}
+A decomposable triple has a singleton component, hence
+centered coefficient zero. For a connected incompatible
+triple, expansion of its product gives exactly
+\[
+ c(T)=-\prod_{i\in T}p_i
+       -\sum_{\substack{e\subset T\\|e|=2}}
+                  c(e)\prod_{i\in T\setminus e}p_i.
+\]
+The first terms have total magnitude
+\(O(N^{-3/2+\varepsilon'})\) by
+Corollary~\ref{p13:half:connected}.
+A direct pair has \(c(e)=0\); for any other pair in a
+connected triple the remaining space meets its sum
+nontrivially. The pair terms are therefore bounded by
+three copies of \(D_{2,1}\).
+Proposition~\ref{p13:activity:deficit} concludes.
+\end{proof}
+
+\begin{proposition}[The third cumulant and the positive activity]
+\label{p13:activity:kappa3}
+Every compatible triple has \(c(T)\ge0\), and
+\begin{equation}
+ \kappa_{3,N}=6K_3^++O_{C,\varepsilon}(N^{-3/2+\varepsilon}),
+ \qquad
+ A_3=K_3^++O_{C,\varepsilon}(N^{-3/2+\varepsilon}).
+ \label{p13:activity:kappa-comparison}
+\end{equation}
+In the second equality the difference \(A_3-K_3^+\)
+is nonnegative.
+\end{proposition}
+
+\begin{proof}
+Order the pair ranks of a compatible triple as
+\(a\ge b\ge c\). Their relation spaces show
+\(\rho_{\mathrm{rel}}(T)\ge a+b\), so
+\[
+ \frac{c(T)}{\prod_{x\in T}p_x}
+  =2^{\rho_{\mathrm{rel}}(T)}-2^a-2^b-2^c+2\ge0.
+\]
+If \(b=0\), this is immediate. Otherwise use
+\((2^a-1)(2^b-1)\ge2^c-1\).
+The same formula includes the primitive case \(a=b=c=0\).
+Decomposable triples again have zero coefficient.
+
+In \eqref{p13:exact:kappa3}, the repeated-index terms
+are bounded by \(O(p_*A_2+p_*^2\mu_N)
+=O(N^{-5/3+\varepsilon'})\).
+Apply Theorem~\ref{p13:activity:incompatible} to the
+other triples. This proves both formulas.
+\end{proof}
+
+For example, three mutually exclusive events have
+\(c(T)=2p_xp_yp_z>0\) despite being incompatible.
+Thus it is the absolute estimate for incompatible
+triples, rather than an assumption on their sign,
+that permits the reduction to \(K_3^+\).
+
+\subsection{Pair partitions and the cost of one dependent target}
+\label{p14:comp:activity}
+
+The signed triple identities in Section~\ref{p13:activity:section}
+use one quantitative input: the independent target deficit following
+a pair.  We first prove the finite partition needed for that estimate.
+
+\begin{lemma}[A finite partition of the pair activity]
+\label{p13:activity:pair-partition}
+For each fixed \(\eta>0\), dependent pairs can be partitioned
+into good pairs from a finite fixed set of rational channels,
+a weak class, and an exceptional class, with
+\[
+ A_{\rm w}\ll_{C,\eta,\varepsilon}N^{-1+\eta+\varepsilon},
+ \qquad A_{\rm s}\ll_{C,\eta,\varepsilon}N^{-1+\varepsilon}.
+\]
+A good pair in a channel \(a:b\), \(b\ge3\), has
+\[
+ |c(e)|\ll_{a,b,C}N^{-(2-1/b)+o(1)}
+\]
+and an exact compression into a block of fixed logarithmic
+width. Moreover \(A_2\ll_{C,\varepsilon}N^{-2/3+\varepsilon}\).
+\end{lemma}
+
+\begin{proof}
+Choose \(Q\) with \(1/(Q+1)<\eta/2\), and retain the
+channels \(3\le b\le Q\), \(b/2<a<b\), \((a,b)=1\).
+Lemma~\ref{p1:arith:alignedrank} bounds the rank in all
+larger aligned channels by \(L/(Q+1)+o(L)\).
+Put these pairs, nonaligned pairs of rank at most a
+sufficiently small fixed fraction of \(\eta L\), and
+affinely incompatible pairs in the weak class.
+Their coefficients have magnitude at most
+\(N^{-2+\eta+o(1)}\).
+Corollary~\ref{p13:half:pairs} counts their dependent hosts
+by \(N^{1+\varepsilon'}\), proving the weak bound.
+
+Nonaligned pairs of macroscopic rank have total activity
+\(O(N^{-1+\varepsilon'})\) by Lemma~\ref{p1:arith:dense}.
+The local defects contribute only bounded factors under
+\eqref{p13:exact:marginals}.
+Pairs meeting the irregular set have the same bound:
+its marginal mass is \(N^{-1+o(1)}\), by
+Proposition~\ref{p1:arith:core}, and fixed-source
+propagation \eqref{p13:exact:propagation} bounds their
+joint mass. The independent products have the same cost.
+At each retained fixed height, normalized defective pairs
+cost \(N^{-3/2+1/b+o(1)}\), as in the proof of
+Lemma~\ref{p1:arith:fixed-channel-mass}.
+Endpoint height-two pairs and non-strict height-one contacts
+cost \(N^{-1+o(1)}\), by the same rank and endpoint estimates.
+These are the exceptional class.
+The remaining pairs have the private coordinates defining
+the good fixed-channel compression. Its rank is at most
+\(L/b+O(1)\), giving the stated individual weight.
+
+The finite channel sums are \(O(N^{-2/3+\varepsilon'})\),
+by Lemma~\ref{p1:arith:fixed-channel-mass}. Together with
+the other two classes, for a sufficiently small fixed
+\(\eta\), this also proves the assertion about \(A_2\).
+\end{proof}
+
+\subsubsection{Proof of Proposition~\ref{p13:activity:deficit}}
+\label{p14:comp:activity:deficit}
+
+\begin{proof}
+After any fixed pair, Theorem~\ref{p13:half:conditional}
+with one target counts at most \(N^{1/2+\varepsilon'}\)
+centres. Their total independent mass is at most
+\(N^{-1/2+\varepsilon'}\).
+The weak and exceptional pair classes thus cost
+\(N^{-3/2+\eta+O(\varepsilon')}\).
+
+For a good pair in a fixed channel, multiply its two
+windows by the channel coefficients and merge identical
+values. An even selection in each original window is
+multiplied by a square, so its square class is unchanged.
+Merging cancels repeated occurrences and preserves total
+even parity. Consequently every nonzero class in
+\((S_x+S_y)\cap S_z\) is represented by a nonempty even
+selection in the normalized block and in the target.
+The normalized block has fixed logarithmic width.
+Corollary~\ref{p13:half:pairs} counts these two centres
+by \(N^{1+\varepsilon'}\).
+The offsets and their inverse normalization have
+\(B^{O_{a,b}(1)}\) multiplicity. Each host carries weight
+at most \(N^{-(2-1/b)-1+o(1)}\), so its contribution is
+\[
+ N^{1+\varepsilon'}N^{-(2-1/b)-1+o(1)}
+ \ll N^{-5/3+2\varepsilon'}.
+\]
+Sum over the finite channels, then choose \(\eta\) and
+\(\varepsilon'\) within the final margin.
+\end{proof}

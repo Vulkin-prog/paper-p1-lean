@@ -1,0 +1,149 @@
+\section{Poisson differences and reference coefficients}
+\label{p2:poisson-calculus}
+
+\subsection{Computing the correction coefficient}
+\label{p1:discussion:charlier}
+
+The coefficient in the total variation equivalent can be
+evaluated from four Poisson masses.  We record the elementary
+Poisson--Charlier calculation, together with a bound for every
+order. These are standard identities for signed Poisson
+approximations. The orthogonality bound and the exact
+second-difference norm appear in Zacharovas and
+Hwang~\cite[(2.13), Remark~4.4]{zacharovashwang2010}; see also
+\cite{bkn2014} for the Poisson--Charlier expansion framework.
+We include the calculation to fix the normalization of
+\(\Delta\), the endpoint conventions, and the factor relating
+the \(\ell^1\) norm to total variation.
+
+\begin{proposition}[Norms of Poisson differences]
+\label{p1:discussion:charlier-norm}
+For $\mu>0$, put $\pi_\mu(k)=e^{-\mu}\mu^k/k!$ when $k\ge0$
+and $\pi_\mu(k)=0$ when $k<0$.  Define
+\[
+ u_\pm=\mu+\frac12\pm\frac{\sqrt{4\mu+1}}2,\qquad
+ a=\lfloor u_-\rfloor+1,\qquad b=\lceil u_+\rceil-1.
+\]
+Then
+\begin{equation}
+ \|\Pi_\mu*\Delta^{*2}\|_1
+ =2\bigl\{\pi_\mu(a-1)-\pi_\mu(a-2)
+             +\pi_\mu(b-1)-\pi_\mu(b)\bigr\}.
+ \label{p1:discussion:finite-norm}
+\end{equation}
+More generally, for every integer $r\ge0$,
+\begin{equation}
+ \|\Pi_\mu*\Delta^{*r}\|_1
+       \le\min\left\{2^r,\frac{\sqrt{r!}}{\mu^{r/2}}\right\}.
+ \label{p1:discussion:general-norm}
+\end{equation}
+In particular,
+\begin{equation}
+ \|\Pi_2*\Delta^{*2}\|_1=\frac{10}{3e^2},
+ \qquad \mathcal C(2)=\frac{5}{6e^2}.
+ \label{p1:discussion:lambda-two}
+\end{equation}
+\end{proposition}
+
+The proof, including the normalization of the Charlier polynomials and
+the telescoping at integer roots, is given in
+Section~\ref{p14:comp:poisson-differences}.
+
+The function $\mathcal C$ is continuous and strictly positive
+on $(0,\infty)$.  Indeed, coupling two Poisson variables by
+an independent increment gives
+$\|\Pi_\mu-\Pi_\nu\|_1\le2(1-e^{-|\mu-\nu|})$.
+Convolving with $\Delta^{*2}$ proves continuity; the mass
+at zero gives positivity, as in
+\eqref{p1:close:constant-bounds}.  Thus the finite formula
+remains continuous when one of its two roots crosses an integer.
+
+For completeness, let
+$H_{\mu,\theta}=\Law(\Pois(\mu-\theta)+2\Pois(\theta/2))$,
+with independent summands and $0\le\theta<\mu$.
+The expansion of its convolution exponential gives the
+parameter-uniform estimate
+\begin{equation}
+ \left|\TV(H_{\mu,\theta},\Pi_\mu)
+                     -\theta\mathcal C(\mu)\right|
+       \le\theta^2e^{2\theta}.
+ \label{p1:discussion:compound-coefficient}
+\end{equation}
+To verify the constant, write
+$H_{\mu,\theta}
+ =\Pi_\mu*\exp_*(\theta\Delta^{*2}/2)$.
+The $\ell^1$ norm of the exponent is at most $2\theta$,
+so the remainder after its linear term has norm at most
+$2\theta^2e^{2\theta}$.
+The reverse triangle inequality and
+$\TV=\|\cdot\|_1/2$ prove
+\eqref{p1:discussion:compound-coefficient}.
+In particular, the factor $1/4$ in $\mathcal C$ consists
+of the factor $1/2$ in the quadratic correction and the
+factor $1/2$ in the total variation convention.
+Neither \eqref{p1:discussion:general-norm} nor the remainder
+constant in \eqref{p1:discussion:compound-coefficient} is
+asserted to be optimal.
+
+
+\subsection{Norms of Poisson differences}
+\label{p14:comp:poisson-differences}
+
+The following calculation proves Proposition~\ref{p1:discussion:charlier-norm}.
+It fixes both the signed-difference convention and the factor of two between
+$\ell^1$ distance and total variation.
+
+\begin{proof}[Proof of Proposition~\ref{p1:discussion:charlier-norm}]
+Write $v_k=(\Pi_\mu*\Delta^{*2})\{k\}$.  Direct calculation gives
+\[
+ v_k=\pi_\mu(k)-2\pi_\mu(k-1)+\pi_\mu(k-2)
+     =\frac{\pi_\mu(k)}{\mu^2}\bigl((k-\mu)^2-k\bigr).
+\]
+The quadratic has roots $u_-,u_+$ and is strictly negative
+exactly at the integers $a,\ldots,b$.  These form a nonempty
+interval; integer roots contribute zero and are excluded by
+the definitions of $a,b$.  Since $\sum_kv_k=0$,
+\[
+ \begin{aligned}
+ \sum_k|v_k|
+   &=-2\sum_{k=a}^b v_k\\
+   &=2\bigl\{\pi_\mu(a-1)-\pi_\mu(a-2)
+                 +\pi_\mu(b-1)-\pi_\mu(b)\bigr\},
+ \end{aligned}
+\]
+by telescoping.  This proves \eqref{p1:discussion:finite-norm}.
+For $\mu=2$, the quadratic is $(k-1)(k-4)$: the negative
+masses are $v_2=-e^{-2}$ and $v_3=-2e^{-2}/3$.
+Their sum, multiplied by $-2$, gives
+\eqref{p1:discussion:lambda-two}.  The same calculation at
+$\mu=1$ gives the value $3/e$ used in
+\eqref{p1:close:dyadic-example}.
+
+For the general bound, define the normalized Charlier polynomials
+\[
+ C_r(k;\mu)=\sum_{j=0}^r
+       \binom rj(-1)^{r-j}\frac{(k)_j}{\mu^j}.
+\]
+Then $(\Pi_\mu*\Delta^{*r})\{k\}=\pi_\mu(k)C_r(k;\mu)$.
+Their exponential generating function is
+\[
+ \sum_{r\ge0}C_r(k;\mu)\frac{t^r}{r!}
+       =e^{-t}(1+t/\mu)^k.
+\]
+For $P\sim\Pois(\mu)$, the expectation of the product of
+the generating functions with variables $s,t$ is
+\[
+ \E\!\left[e^{-s-t}(1+s/\mu)^P(1+t/\mu)^P\right]
+       =e^{st/\mu}.
+\]
+Coefficient comparison, justified in a neighborhood of
+$(s,t)=(0,0)$ by the Poisson exponential moments, yields
+\[
+ \E[C_r(P;\mu)C_\ell(P;\mu)]
+       =\ind_{\{r=\ell\}}\,\frac{r!}{\mu^r}.
+\]
+Cauchy--Schwarz now gives the second bound in
+\eqref{p1:discussion:general-norm}.  The first follows from
+$\|\Pi_\mu\|_1=1$, $\|\Delta\|_1=2$, and submultiplicativity
+of the convolution norm.
+\end{proof}

@@ -1,0 +1,66 @@
+{
+  "date": "2026-11-12",
+  "master_entries": 31,
+  "local_entries": {
+    "main": 18,
+    "companion": 16
+  },
+  "new_external_mathematical_proof_input": false,
+  "scope": "Targeted reference verification, not exhaustive priority review. Third-party PDFs consulted locally are not redistributed here.",
+  "references": [
+    {
+      "key": "barboureagleson1987",
+      "url": "https://user.math.uzh.ch/barbour/pub/Barbour/BEagleson_ImprovedPoisson.pdf",
+      "finding": "Author scan, printed588, Theorem1: explicit signed quadratic Poisson–Charlier reference.",
+      "evidence_level": "primary_full_text_and_page_image"
+    },
+    {
+      "key": "cekanaviciusvellaisamy2020",
+      "url": "https://www.math.uni.wroc.pl/~pms/files_doi/f1648/f1648.pdf",
+      "finding": "Theorem2.1,(2.3): squared second-factorial-cumulant term in a Kolmogorov lower bound, subject to local-dependence hypotheses and remainder terms. Context only.",
+      "evidence_level": "primary_full_text"
+    },
+    {
+      "key": "basaknathzaharescu2024",
+      "url": "https://doi.org/10.1093/imrn/rnad168",
+      "finding": "Publisher metadata and author PDF: Theorem1 fixes lambda,k and allows growing block length r<=log4 X for almost all primes in short intervals; disjoint block statistic differs from actual run starts.",
+      "evidence_level": "primary_publisher_and_author_pdf"
+    },
+    {
+      "key": "shparlinskisleiman2026",
+      "url": "https://arxiv.org/html/2609.29408v1",
+      "finding": "Theorem1.1 and Section3 use resultants and a degree-uniform integer-point bound. The current paper separately treats a common curve for a relation space.",
+      "evidence_level": "primary_full_text"
+    },
+    {
+      "key": "kempkemp1965",
+      "url": "https://academic.oup.com/biomet/article-abstract/52/3-4/381/336471",
+      "finding": "Publisher bibliographic metadata checked. The stated generating function follows directly from the independent Poisson construction used by the formalization; full historical text not newly read.",
+      "evidence_level": "primary_metadata_and_direct_algebra"
+    },
+    {
+      "key": "binyaminicluckerskato2025",
+      "url": "https://arxiv.org/html/2401.03982",
+      "finding": "Corollary8,(23): affine irreducible curves overQ, quadratic degree factor and existential logarithmic exponent. Does not assert the internal explicit value17.",
+      "evidence_level": "primary_full_text"
+    },
+    {
+      "key": "bretkurlbergshparlinski2021",
+      "url": "https://kurlberg.github.io/eprints/SquareProduct.pdf",
+      "finding": "Theorem2.2 and Corollary2.4 concern a fixed number of bounded global coordinates; distinguished from short-window and growing-support uniform estimates.",
+      "evidence_level": "primary_full_text"
+    },
+    {
+      "key": "pouly2026c",
+      "url": "https://github.com/Vulkin-prog/paper-c-lean",
+      "finding": "Author repository identifies10.5281/zenodo.22872154 as the paper/companion DOI, distinct from the software archive DOI. Zenodo resolver inaccessible through web tool.",
+      "evidence_level": "primary_author_repository_confirmation"
+    },
+    {
+      "key": "bkn2014",
+      "url": "https://people.math.ethz.ch/~kowalski/mod-discrete.pdf",
+      "finding": "Theorem5.1 contains finite bounds both above and below lambda=1 under residue estimates. Thus bounded positive means are not excluded by all mod-discrete bounds.",
+      "evidence_level": "primary_author_full_text"
+    }
+  ]
+}

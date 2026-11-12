@@ -1,0 +1,186 @@
+{
+  "date": "2026-11-12",
+  "status": "passed",
+  "pages": {
+    "main": 33,
+    "companion": 84
+  },
+  "all_pages_inspected_in_contact_sheets": true,
+  "contact_sheets_actually_inspected": 10,
+  "full_page_details_actually_inspected": {
+    "main": [
+      1,
+      4,
+      6,
+      13,
+      14,
+      17,
+      18,
+      31,
+      32,
+      33
+    ],
+    "companion": [
+      1,
+      28,
+      41,
+      44,
+      47,
+      68,
+      69,
+      71,
+      76,
+      82,
+      83,
+      84
+    ]
+  },
+  "detail_dpi": 130,
+  "observed_layout_defects": [],
+  "method": "All 117 pages inspected in 10 contact sheets; 22 selected pages inspected at 130dpi, including both notices, new tables, T4.3, T7.1, T12.4 and bibliography. All fonts embedded; character bounds and internal/reciprocal destinations validated. Received-versus-rebuilt renderings differ typographically, so no inherited pixel validation from the received PDFs is claimed.",
+  "images": [
+    {
+      "path": "docs/validation/publication-2026-11-12/pdf/visual/main-contact-01.png",
+      "sha256": "e134210a9a132d246c43cba5958fb7f3a7e50370742335c966af5e7322e341dc"
+    },
+    {
+      "path": "docs/validation/publication-2026-11-12/pdf/visual/main-contact-02.png",
+      "sha256": "5e5ab10613bcea3cf0ea00484bbc4d13175f56102540d945a2ba1b3eeab10a63"
+    },
+    {
+      "path": "docs/validation/publication-2026-11-12/pdf/visual/main-contact-03.png",
+      "sha256": "9142ba9fe3fb6fb1c757ec6a603180b3c4b82e50d981473c2812cba0d55e386d"
+    },
+    {
+      "path": "docs/validation/publication-2026-11-12/pdf/visual/companion-contact-01.png",
+      "sha256": "c4ab1a6b0b523e4160e320973321543a2f8ad9893d733ea4d88db5bcfc821b41"
+    },
+    {
+      "path": "docs/validation/publication-2026-11-12/pdf/visual/companion-contact-02.png",
+      "sha256": "15c5c542003137586e159ce7c01e1f0cbe8e0ff4cdde01fc020bb9b9be828432"
+    },
+    {
+      "path": "docs/validation/publication-2026-11-12/pdf/visual/companion-contact-03.png",
+      "sha256": "4b6453caaa4022b1fb05b1e9bf24a00babd2184c88be1bf003aed1458877f57d"
+    },
+    {
+      "path": "docs/validation/publication-2026-11-12/pdf/visual/companion-contact-04.png",
+      "sha256": "70dc7a4656a5ea201cecab7c6b04a63b186ddaba5713f43d7b755171474d8e71"
+    },
+    {
+      "path": "docs/validation/publication-2026-11-12/pdf/visual/companion-contact-05.png",
+      "sha256": "97559fa225a9452934c6e003b1be8e7021144f4e583d058bffe2d7a19a23ee91"
+    },
+    {
+      "path": "docs/validation/publication-2026-11-12/pdf/visual/companion-contact-06.png",
+      "sha256": "b5b7b9dfb128abd1867e30930e60252217226b0159055676961576387610bd7a"
+    },
+    {
+      "path": "docs/validation/publication-2026-11-12/pdf/visual/companion-contact-07.png",
+      "sha256": "6c2af7a3472e9fa9c242ce4a33bc0a1ae4687ef65f91edebea1bbc888c8dd677"
+    },
+    {
+      "path": "docs/validation/publication-2026-11-12/pdf/visual/detail-main-01.png",
+      "sha256": "e6d3ac18a8da916140096c705e6b035b398bfa0b03581852430e9ca45381b783"
+    },
+    {
+      "path": "docs/validation/publication-2026-11-12/pdf/visual/detail-main-04.png",
+      "sha256": "d41b65acb283ac14560ef7d25061570d08eeee86364f4f336686a6c96cea5f8d"
+    },
+    {
+      "path": "docs/validation/publication-2026-11-12/pdf/visual/detail-main-06.png",
+      "sha256": "61b526221c006be0b116aa20a7ab9d19d80ff8c9ab7f11ebd6225d09765b7252"
+    },
+    {
+      "path": "docs/validation/publication-2026-11-12/pdf/visual/detail-main-13.png",
+      "sha256": "961941b1ee633c2f7bbd06ebf4520125e182165235f7b833110cbf4e4adacc5c"
+    },
+    {
+      "path": "docs/validation/publication-2026-11-12/pdf/visual/detail-main-14.png",
+      "sha256": "0cb3e2eed8e5e9338be3e5ac1a92ae815841ff09cf8e576517c8126373aaf4ff"
+    },
+    {
+      "path": "docs/validation/publication-2026-11-12/pdf/visual/detail-main-17.png",
+      "sha256": "89f666b8782c866bc2f3ee2e247f0c715bb4a5579aea511afae7ed016450a355"
+    },
+    {
+      "path": "docs/validation/publication-2026-11-12/pdf/visual/detail-main-18.png",
+      "sha256": "c31c7a59146c9bba24bc4556745234e564ad7cd64c9720711dd2b29e9e1e0870"
+    },
+    {
+      "path": "docs/validation/publication-2026-11-12/pdf/visual/detail-main-31.png",
+      "sha256": "ff04bcab9740dfd8a36cd6b6de45ad6f2c49a0ae13199ba8db7b4b98411a35f5"
+    },
+    {
+      "path": "docs/validation/publication-2026-11-12/pdf/visual/detail-main-32.png",
+      "sha256": "33861ada7f66b08fe567966654becf2ba20d3a94abdf81282bd5ebba580a9fd5"
+    },
+    {
+      "path": "docs/validation/publication-2026-11-12/pdf/visual/detail-main-33.png",
+      "sha256": "1cc22cc17a0719a758c3da22d62d41cbdf84715b45dcabc8b219cd476359f79a"
+    },
+    {
+      "path": "docs/validation/publication-2026-11-12/pdf/visual/detail-companion-01.png",
+      "sha256": "27a08fcc23efb5b664e7d7fd0c12dc5ea464df6bac63e218253f1d8377df825a"
+    },
+    {
+      "path": "docs/validation/publication-2026-11-12/pdf/visual/detail-companion-28.png",
+      "sha256": "cc077b1ce2cac42e04ebb384d7a167b7c0c6a825f07f3f6486e29c0260738c84"
+    },
+    {
+      "path": "docs/validation/publication-2026-11-12/pdf/visual/detail-companion-41.png",
+      "sha256": "7aa8f1c7445689aa3fb3c8ea3a61067256a6044d5ac9449270e2ab126534f89a"
+    },
+    {
+      "path": "docs/validation/publication-2026-11-12/pdf/visual/detail-companion-44.png",
+      "sha256": "0399a6f419d16c9a10cafe9db5de3685631c6febc7428037c99c76096ca66836"
+    },
+    {
+      "path": "docs/validation/publication-2026-11-12/pdf/visual/detail-companion-47.png",
+      "sha256": "5a8fbfc026e26676de4ef73c2d33634dde97a605f38cacf526a3df28cb3ce379"
+    },
+    {
+      "path": "docs/validation/publication-2026-11-12/pdf/visual/detail-companion-68.png",
+      "sha256": "2236226e9bca8c8c35cfcec1e4712d3101815eb41f8577c911a77a2174a8477c"
+    },
+    {
+      "path": "docs/validation/publication-2026-11-12/pdf/visual/detail-companion-69.png",
+      "sha256": "078a0d1f815c92150001821fe45b9e0667b88118f1b48cb449e4a7a70ea91ad4"
+    },
+    {
+      "path": "docs/validation/publication-2026-11-12/pdf/visual/detail-companion-71.png",
+      "sha256": "a2c3241e56084a580b8bec414374a6562b61e5c97420cb8b5084b26076986429"
+    },
+    {
+      "path": "docs/validation/publication-2026-11-12/pdf/visual/detail-companion-76.png",
+      "sha256": "396e7fce80115acb69d2c1a0ef6c2a25bd7d74090d0c219d585f9a721df49bfc"
+    },
+    {
+      "path": "docs/validation/publication-2026-11-12/pdf/visual/detail-companion-82.png",
+      "sha256": "14e1940270e51c9c6910efb73984bec1796b601c292660619516f1be87c07f87"
+    },
+    {
+      "path": "docs/validation/publication-2026-11-12/pdf/visual/detail-companion-83.png",
+      "sha256": "fc897692d1bbc5630d6bdebdb5864dc9b7dc44d7a1af1e0ea72060ca94c89d0b"
+    },
+    {
+      "path": "docs/validation/publication-2026-11-12/pdf/visual/detail-companion-84.png",
+      "sha256": "410ab213079652592f4becd21a1963e34e9cff180ea010c3440fbc6053d7b508"
+    }
+  ],
+  "pdfs": [
+    {
+      "document": "main",
+      "filename": "P1_Main_EN.pdf",
+      "pages": 33,
+      "sha256": "c4e01feabf33dd246a542d835d28f1bdf7f2d28c2154bece545a375d32626a00"
+    },
+    {
+      "document": "companion",
+      "filename": "P1_Companion_EN.pdf",
+      "pages": 84,
+      "sha256": "6bafe2ef9337626a5fe7443d02660db5432bcbee4a61cddfef80edec12d9de4b"
+    }
+  ],
+  "render_stage": "draft"
+}

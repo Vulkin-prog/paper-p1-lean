@@ -1,0 +1,168 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "scripts/check_sources.py"
+      ],
+      "exit": 0,
+      "log": "00.log",
+      "sha256": "e69e3256f47b82162fa687c1b0ef1b478e5594a5ddf2b41a709725a8e04d70ac"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check_revised_sources.py",
+        "--require-proved"
+      ],
+      "exit": 0,
+      "log": "01.log",
+      "sha256": "b7d6de15d0462cd0a25a24425bffc1a297f442e2a43106c8706cba29d1134506"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check_manuscript_endpoints.py"
+      ],
+      "exit": 0,
+      "log": "02.log",
+      "sha256": "ccfe30ea76f40e41be8d01fdb9b1d9694e37ee11bd27ea490e55f0b16dc0d316"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check_manuscript_v20.py"
+      ],
+      "exit": 0,
+      "log": "03.log",
+      "sha256": "53bb5a0e7431ba809ad389c32593f856ed8cd0d137f8937b5aef3b6993462ceb"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/update_audit.py",
+        "--check"
+      ],
+      "exit": 0,
+      "log": "04.log",
+      "sha256": "e05d7d7ae24e75c0655abce15fbdb9cc2f681eda3789ad4d4455de3ac16aa86d"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check_registry_v2.py"
+      ],
+      "exit": 0,
+      "log": "05.log",
+      "sha256": "5443f463c8c85597056af458a01582201f97469f12b97ac8e86e50e3dd3d69a0"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check_registry_candidates.py"
+      ],
+      "exit": 0,
+      "log": "06.log",
+      "sha256": "64ffd3b7c8a94be6dae68505d61c2c0155c84a32a0fe66308a11f15e2ab567c5"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check_registry_consolidation.py"
+      ],
+      "exit": 0,
+      "log": "07.log",
+      "sha256": "f0c54db28562ca3cb39c482015bb78324d0be3d582e6e230fbbdda416583169c"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check_palomar_sources.py"
+      ],
+      "exit": 0,
+      "log": "08.log",
+      "sha256": "c631a08ffcf1ce1642b39f6d8b355045b5e9d3d6c5a67806cd572349606642e5"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check_registry_evidence.py",
+        "--require-all"
+      ],
+      "exit": 0,
+      "log": "09.log",
+      "sha256": "0f13c089a0f10733c2a1602b7e88ad10b39a697e66ae217901229d04025d4297"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check_publication.py",
+        "--allow-unfrozen-index-link"
+      ],
+      "exit": 0,
+      "log": "10.log",
+      "sha256": "1c05043bb9245d05fb34e22c90b7d278527284eb4fddec6314364f503e50e555"
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_manuscript_v20.py"
+      ],
+      "exit": 0,
+      "log": "11.log",
+      "sha256": "300cc27b940fb2369851742628b6597cf1ed5af1c5b9b5c9d26755a60f03211a"
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_sharp_palm_scope.py"
+      ],
+      "exit": 0,
+      "log": "12.log",
+      "sha256": "972a411d126d474c1ae5d51a0b312d1e74879ee5ac7482bd1a4327668cfe16a1"
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_registry_v2.py"
+      ],
+      "exit": 0,
+      "log": "13.log",
+      "sha256": "dc8c40aee199058077864f7200b7423ab7b799942276da43c4662a72ccae847f"
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_publication.py"
+      ],
+      "exit": 0,
+      "log": "14.log",
+      "sha256": "220a533db7a8f3f006e878ddd7ab4fc18eb53adc22c11b219d8992b4f2ecec7f"
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "audit_date": "2026-11-12",
+  "new_lean_replay_performed": false,
+  "statements": {
+    "count": 118,
+    "main": 26,
+    "companion": 92,
+    "unchanged_by_latest_audit": 118,
+    "numbering_preserved": 118,
+    "all_label_numbers_preserved": 375,
+    "clarified_since_original_inputs": [
+      "p1:fixed:propagation"
+    ]
+  },
+  "latest_audit_actions": {
+    "A1": "implemented",
+    "A2": "implemented",
+    "A3": "implemented",
+    "A4": "implemented"
+  },
+  "changed_sources_for_latest_audit": [
+    "companion_sections/confinement.tex",
+    "companion_sections/exact_reconstruction.tex",
+    "main_sections/introduction.tex",
+    "main_sections/scales.tex"
+  ],
+  "documents": {
+    "P1_Main_EN.pdf": {
+      "pages": 33,
+      "bytes": 518830,
+      "sha256": "f19f09b0a4b68118a1d2d616664314bca470bd3c711549b38fec982aee2ffa67",
+      "internal_named_links_verified": 153,
+      "cross_document_links_verified": 65,
+      "unresolved_links": 0,
+      "text_outside_page_bounds": 0,
+      "work_or_version_markers": 0,
+      "palomar_pending_mentions": 1,
+      "all_fonts_embedded": true,
+      "font_count": 24
+    },
+    "P1_Companion_EN.pdf": {
+      "pages": 84,
+      "bytes": 900933,
+      "sha256": "9204102d1605445e161c624d8e2bcddd0c07c460c81b3b5746435b1f5a4a41ab",
+      "internal_named_links_verified": 386,
+      "cross_document_links_verified": 39,
+      "unresolved_links": 0,
+      "text_outside_page_bounds": 0,
+      "work_or_version_markers": 0,
+      "palomar_pending_mentions": 1,
+      "all_fonts_embedded": true,
+      "font_count": 27
+    }
+  },
+  "bibliography": {
+    "main": [
+      "agg1989",
+      "agw1990",
+      "barbour1987",
+      "barboureagleson1987",
+      "bkn2014",
+      "bretwngxu2026",
+      "dohmen1999",
+      "godbole1991",
+      "naimanwynn1997",
+      "najnudel2020",
+      "pouly2026c",
+      "zeilberger1997",
+      "cekanaviciusvellaisamy2015",
+      "chhaibietal2020",
+      "cekanaviciusvellaisamy2020",
+      "basaknathzaharescu2024",
+      "shparlinskisleiman2026",
+      "kempkemp1965"
+    ],
+    "companion": [
+      "bkn2014",
+      "binyaminicluckersnovikov2024",
+      "bretwngxu2026",
+      "erdosturk1984",
+      "heathbrown2012",
+      "munsch2026",
+      "pila1995",
+      "reuss2014",
+      "salberger2023",
+      "zacharovashwang2010",
+      "griesmer1960",
+      "cilleruelogaraev2011",
+      "tao2026anatomy",
+      "shparlinskisleiman2026",
+      "binyaminicluckerskato2025",
+      "bretkurlbergshparlinski2021"
+    ]
+  },
+  "typesetting": {
+    "paired_passes_to_stability": 2,
+    "unresolved_references": 0,
+    "overfull_boxes": 0,
+    "font": "Latin Modern",
+    "page_format": "A4, 11 pt, 24 mm margins"
+  },
+  "visual_review": {
+    "modified_passages_and_table_reviewed_full_size": true,
+    "covers_contents_adjacent_pages_and_bibliographies_reviewed": true,
+    "main_pages_reviewed": [
+      1,
+      2,
+      4,
+      5,
+      6,
+      13,
+      14,
+      32,
+      33
+    ],
+    "companion_pages_reviewed": [
+      1,
+      2,
+      43,
+      44,
+      45,
+      68,
+      69,
+      76,
+      77,
+      83,
+      84
+    ],
+    "unresolved_visual_defects": 0
+  },
+  "layout_adjustment": {
+    "running_headers_removed": true,
+    "header_rule_removed": true,
+    "page_footers_retained": true,
+    "checks": {
+      "P1_Main_EN.pdf": {
+        "pages": 33,
+        "header_text_absent_on_all_pages": true,
+        "header_rule_absent_on_all_pages": true,
+        "body_text_and_rendering_unchanged_on_all_pages": true,
+        "page_numbers_preserved": true,
+        "link_destinations_unchanged": true
+      },
+      "P1_Companion_EN.pdf": {
+        "pages": 84,
+        "header_text_absent_on_all_pages": true,
+        "header_rule_absent_on_all_pages": true,
+        "body_text_and_rendering_unchanged_on_all_pages": true,
+        "page_numbers_preserved": true,
+        "link_destinations_unchanged": true
+      }
+    },
+    "representative_pages_visually_reviewed": {
+      "P1_Main_EN.pdf": [
+        4
+      ],
+      "P1_Companion_EN.pdf": [
+        44
+      ]
+    }
+  }
+}

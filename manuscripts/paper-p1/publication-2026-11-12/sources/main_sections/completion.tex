@@ -1,0 +1,326 @@
+\section{Completing the approximation and its consequences}
+\label{p14:reference:section}
+
+The reconstruction is carried out in the algebra of signed measures.
+For the parameters of the model its final reference is a probability.
+The following positivity and continuity facts are elementary and do not
+depend on the law approximation. The deduction of
+Corollary~\ref{p1:cor:tv} from the main theorem is given below.
+
+\subsection{Continuity of the reference}
+
+For nonnegative $\mu,\mu'$,
+\begin{equation}
+ \|\Pi_\mu-\Pi_{\mu'}\|_1\le2|\mu-\mu'|.
+ \label{p1:close:poisson-lipschitz}
+\end{equation}
+For example, if $\mu'=\mu+h$, couple by adding an independent
+Poisson variable of mean $h$.  Its probability of being nonzero
+is $1-e^{-h}\le h$, proving the inequality.
+It follows that
+\begin{equation}
+ \|Q_{\mu,\alpha}-Q_{\mu',\alpha'}\|_1
+ \le2(1+2|\alpha|)|\mu-\mu'|+2|\alpha-\alpha'|.
+ \label{p1:close:reference-lipschitz}
+\end{equation}
+Here we have expanded the difference with coefficient $\alpha$
+on $\Pi_\mu-\Pi_{\mu'}$ and used
+$\|\Pi_{\mu'}*\Delta^{*2}\|_1\le4$.
+
+\subsection{Positivity and the coefficient of total variation}
+\label{p1:close:positivity-section}
+
+The signed representation of the reference is useful in the
+proof, but for the parameters of the theorem it is eventually
+a probability.  The following exact criterion also specifies
+its domain for general parameters.
+
+\begin{lemma}[Positivity of the quadratic Poisson correction]
+\label{p1:close:positivity}
+Let $\mu>0$, $\alpha\in\mathbb R$, and
+$\theta=\mu-\lfloor\mu\rfloor$.  Then $Q_{\mu,\alpha}$ is a
+probability measure if and only if
+\begin{equation}
+ 0\le\alpha\le
+       \frac{2\mu^2}{\mu+\theta(1-\theta)}.
+ \label{p1:close:positivity-range}
+\end{equation}
+Its masses are
+\begin{equation}
+ Q_{\mu,\alpha}\{k\}
+ =e^{-\mu}\frac{\mu^k}{k!}
+   \left[1+\frac{\alpha}{2\mu^2}
+                    \bigl((k-\mu)^2-k\bigr)\right],
+ \qquad k\ge0.
+ \label{p1:close:charlier-masses}
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+Formula \eqref{p1:close:charlier-masses} follows by expressing
+the Poisson masses at $k-1$ and $k-2$ relative to the mass
+at $k$; negative-index masses are taken to be zero.
+The total mass is one because $\Delta^{*2}$ has total mass
+zero.
+
+If $\alpha<0$, the bracket is negative for all sufficiently
+large $k$, so positivity is impossible.
+For $\alpha\ge0$, minimize the quadratic
+$f(k)=(k-\mu)^2-k$ over nonnegative integers.
+Its successive difference is $f(k+1)-f(k)=2(k-\mu)$.
+If $\mu$ is not an integer, the minimum is attained at
+$k=\lceil\mu\rceil$; if $\mu$ is an integer, it is attained
+at both $k=\mu$ and $k=\mu+1$.  In either case its value is
+$-\mu-\theta(1-\theta)$.  Nonnegativity of the bracket
+is therefore exactly \eqref{p1:close:positivity-range}.
+\end{proof}
+
+In the theorem, $\alpha_N>0$ for large $N$ and $\alpha_N\to0$,
+while $\mu_N$ and $\lambda_N$ stay in a compact subinterval
+of $(0,\infty)$.  Both corrected references are therefore
+probabilities for all sufficiently large $N$.
+The norm estimate simultaneously controls all their masses;
+it is not only a pointwise assertion at each fixed count.
+
+Define, for $\lambda>0$,
+\begin{equation}
+ \mathcal C(\lambda)
+   =\frac14\|\Pi_\lambda*\Delta^{*2}\|_1
+   =\frac14\E\left|
+       1-\frac{2P_\lambda}{\lambda}
+          +\frac{P_\lambda(P_\lambda-1)}{\lambda^2}
+                   \right|,
+ \qquad P_\lambda\sim\operatorname{Pois}(\lambda).
+ \label{p1:close:charlier-constant}
+\end{equation}
+The coefficient is explicit even when $\lambda_N$ does not
+converge. A summable signed sequence of total mass zero has
+$\ell^1$ norm at least twice any positive coefficient. The mass
+$e^{-\lambda}$ at zero of $\Pi_\lambda*\Delta^{*2}$ and its
+convolution norm therefore give
+\begin{equation}
+ \frac{e^{-\lambda}}2\le\mathcal C(\lambda)\le1.
+ \label{p1:close:constant-bounds}
+\end{equation}
+
+\subsection{Completion of the main theorem}
+\label{p13:optimal:section}
+
+The arithmetic and probabilistic estimates now meet at a
+single quantity, the absolute third-order activity.
+We complete the main theorem, then record what its precision
+allows for unbounded scalar observables and for the choice
+of mean.
+
+\begin{proof}[Proof of Theorem~\ref{p1:thm:main}]
+Write $\varepsilon_{\mathrm{out}}=\varepsilon$ for the requested
+final margin and choose
+$0<\tau<\min(\varepsilon_{\mathrm{out}}/4,1/960)$.
+Invoke Theorem~\ref{p13:transfer:reconstruction} with accuracy $\tau$
+and Corollary~\ref{p13:third:activity} with accuracy $\tau$.
+The triple contribution is
+\[
+ N^\tau A_3\ll N^{-41/30+2\tau}
+       =N^{-4/3-(1/30-2\tau)}.
+\]
+Since $1/30-2\tau>0$ and the other reconstruction term is
+$N^{-4/3+\tau}$, this proves the upper bound.
+Theorem~\ref{p13:lower:optimal} gives the lower bound for the same
+exact parameters, using its own fixed Charlier interpolation order.
+
+The mean estimate is Proposition~\ref{p1:arith:core}.
+The pair asymptotic \eqref{p1:eq:alpha-leading} shows
+that \(\alpha_N>0\), \(\alpha_N\to0\), and \(\mu_N\)
+stays in a compact subset of \((0,\infty)\).
+Lemma~\ref{p1:close:positivity} therefore makes the
+reference a probability measure for sufficiently large \(N\).
+Every auxiliary accuracy parameter and fixed order was chosen after
+\(C,\varepsilon\) and before \(N\). The conclusion
+is uniform on the entire fixed critical band.
+\end{proof}
+
+\subsection{Polynomial weights and fixed moments}
+
+\begin{corollary}[Every fixed polynomial weight]
+\label{p13:optimal:weighted}
+For every fixed integer \(m\ge0\) and \(\varepsilon>0\),
+\begin{equation}
+ \sum_{k\ge0}(1+k)^m
+   \left|\P(Z_N=k)-Q_{\mu_N,\alpha_N}\{k\}\right|
+       \ll_{C,m,\varepsilon}N^{-4/3+\varepsilon}.
+ \label{p13:optimal:weighted-bound}
+\end{equation}
+For every fixed \(r\ge2\), consequently,
+\begin{equation}
+ \E(Z_N)_r
+ =\mu_N^r+\binom r2\mu_N^{r-2}\alpha_N
+           +O_{C,r,\varepsilon}(N^{-4/3+\varepsilon}).
+ \label{p13:optimal:moments}
+\end{equation}
+The equalities for \(r=0,1,2\) hold without a remainder
+when the right side is interpreted in its natural form.
+\end{corollary}
+
+\begin{proof}
+Let \(R=\Law Z_N-Q_{\mu_N,\alpha_N}\).
+For every fixed integer \(v>1\), H\"older gives
+\[
+ \sum_k(1+k)^m|R\{k\}|
+ \le\|R\|_1^{1-1/v}
+       \left(\sum_k(1+k)^{mv}|R\{k\}|\right)^{1/v}.
+\]
+The second factor is uniformly bounded.
+For the true law this follows from the independent
+fixed-moment proof in Theorem~\ref{p1:fixed:moments};
+for the reference it follows by dominating its variation
+by a fixed sum of shifted Poisson laws, as in
+Theorem~\ref{p13:lower:optimal}.
+Choose \(v\) sufficiently large after \(\varepsilon\)
+and then a sufficiently small margin in the main theorem.
+This proves \eqref{p13:optimal:weighted-bound}.
+The factorial generating function of \(Q_{\mu,\alpha}\)
+is \(e^{\mu t}(1+\alpha t^2/2)\); its coefficient of
+\(t^r\), multiplied by \(r!\), gives the moment formula.
+\end{proof}
+
+This interpolation concerns the scalar count and fixed polynomial degrees.
+
+\begin{corollary}[No retained start]
+\label{p13:optimal:zero}
+Uniformly in a fixed critical band,
+\[
+ \P(Z_N=0)
+   =e^{-\mu_N}\left(1+\frac{\alpha_N}{2}\right)
+          +O_{C,\varepsilon}(N^{-4/3+\varepsilon}).
+\]
+\end{corollary}
+
+\begin{proof}
+Evaluate the approximation at zero, using
+\((\Pi_\mu*\Delta^{*2})\{0\}=e^{-\mu}\).
+\end{proof}
+
+The event is the absence of a retained start in \(I_N\).
+It does not exclude a long run that started before \(N\).
+
+\subsection{Why the mean must be specified at this precision}
+
+\begin{proposition}[The quantized mean bias]
+\label{p13:optimal:nominal}
+Let \(\eta_x\) indicate one-window compatibility and put
+\(h_x=L-\dim S_x\). Then
+\begin{equation}
+ \mu_N-\lambda_N=pM_{N,L},\qquad
+ M_{N,L}=\sum_{x\in I_N}(\eta_x2^{h_x}-1)\in\Z.
+ \label{p13:optimal:integer-mean}
+\end{equation}
+Thus either \(\mu_N=\lambda_N\) or
+\(|\mu_N-\lambda_N|\ge p\asymp_C N^{-1}\).
+Keeping the same exact \(\alpha_N\), one has
+\[
+ \|\Law Z_N-Q_{\lambda_N,\alpha_N}\|_1
+       \ll_{C,\varepsilon}N^{-1+\varepsilon}.
+\]
+On every sufficiently large admissible pair \((N,L)\)
+for which \(M_{N,L}\ne0\),
+\begin{equation}
+ \|\Law Z_N-Q_{\lambda_N,\alpha_N}\|_1
+       \asymp_C|\mu_N-\lambda_N|.
+ \label{p13:optimal:nominal-distance}
+\end{equation}
+No assertion that \(M_{N,L}\ne0\) at infinitely many
+scales is included.
+\end{proposition}
+
+\begin{proof}
+Sum the one-window formula
+\(\E J_x=\eta_xp2^{h_x}\) over the exactly \(N\)
+centres to obtain \eqref{p13:optimal:integer-mean}.
+For two means in the compact range in question,
+\eqref{p1:close:reference-lipschitz} gives
+\[
+ \|Q_{\mu,\alpha_N}-Q_{\lambda,\alpha_N}\|_1
+ \ll_C|\mu-\lambda|.
+\]
+The reverse bound follows from the mass at zero,
+\(e^{-\theta}(1+\alpha_N/2)\), by the mean value theorem.
+The upper bound for the nominal reference follows
+from the main theorem and
+\(|\mu_N-\lambda_N|\ll N^{-1+\varepsilon}\).
+
+If \(M_{N,L}\ne0\), the mean difference is at least \(p\).
+Choose a fixed margin less than \(1/3\) in the main
+theorem; its remainder is then \(o(p)\).
+The triangle and reverse triangle inequalities transfer
+the two-sided reference comparison to
+\eqref{p13:optimal:nominal-distance}.
+\end{proof}
+
+Irregular compatible and incompatible windows contribute
+with opposite signs to \(M_{N,L}\). Their presence alone
+does not prove a nonzero total bias.
+
+\subsection{The total-variation coefficient}
+\label{p14:comp:tv}
+
+\begin{proof}[Proof of Corollary~\ref{p1:cor:tv}]
+Theorem~\ref{p1:thm:main} and the reverse triangle
+inequality first give
+\[
+ \TV(\Law Z_N,\Pi_{\mu_N})
+ =\alpha_N\mathcal C(\mu_N)
+            +O_{C,\varepsilon}(N^{-4/3+\varepsilon}).
+\]
+Use \(|\mu_N-\lambda_N|\ll N^{-1+\varepsilon}\) and
+\eqref{p1:close:reference-lipschitz} to obtain
+\[
+ \Law Z_N-\Pi_{\lambda_N}
+   =\frac{\alpha_N}{2}\Pi_{\lambda_N}*\Delta^{*2}
+          +O_{\ell^1,C,\varepsilon}(N^{-1+\varepsilon}).
+\]
+The reverse triangle inequality, followed by the factor
+$1/2$ converting the $\ell^1$ norm to total variation,
+yields
+\begin{equation}
+ \TV(\Law Z_N,\Pi_{\lambda_N})
+      =\alpha_N\mathcal C(\lambda_N)
+          +O_{C,\varepsilon}(N^{-1+\varepsilon}).
+ \label{p1:close:tv-exact-parameter}
+\end{equation}
+The pair asymptotic from
+Theorem~\ref{p1:arith:pairs} now gives
+\begin{equation}
+ \TV(\Law Z_N,\Pi_{\lambda_N})
+ \sim \mathcal C(\lambda_N)
+       \frac{r_N+2}{18\,2^{r_N/3}}\,
+       \lambda_N^{5/3}L N^{-2/3},
+ \qquad r_N=L\bmod3.
+ \label{p1:close:tv-asymptotic}
+\end{equation}
+The lower bound in \eqref{p1:close:constant-bounds} is uniform
+on the fixed critical band, and the remainder is
+$o(LN^{-2/3})$.  This proves the sharp order asserted in the
+corollary.  The equivalence is relative to the displayed
+oscillating expression; no convergence of its phase or
+intensity factors is required.
+\end{proof}
+
+Replacing $\alpha_N$ by its leading equivalent proves
+\eqref{p1:close:tv-asymptotic}.  It does not by itself preserve
+the error $O(N^{-1+\varepsilon})$ in
+\eqref{p1:close:tv-exact-parameter}, which uses the exact
+second factorial cumulant.
+
+Proposition~\ref{p1:discussion:charlier-norm} gives
+$\|\Pi_1*\Delta^{*2}\|_1=3/e$, hence $\mathcal C(1)=3/(4e)$.
+Along $N=2^L$ with $3\mid L$, the pair coefficient therefore gives
+\begin{equation}
+ \TV(\Law Z_N,\Pi_1)
+       \sim \frac1{12e}\,L N^{-2/3}.
+ \label{p1:close:dyadic-example}
+\end{equation}
+This is the coefficient in the example announced in the introduction.
+
+The total-variation asymptotic uses the exact-marginal reconstruction
+and the explicit pair coefficient. The independent positivity and
+reference-continuity estimates do not use the reconstruction.

@@ -1,0 +1,287 @@
+\section{Pair and triple scales}
+\label{p2:scales}
+
+The first deviation from Poisson is determined by rational coincidences
+between two separated windows. We keep the complete finite coefficient:
+its lower-order terms matter before the next channel becomes visible.
+The counting estimates behind this calculation are proved in
+Sections~\ref{p1:arith:appendix} and~\ref{p1:arith:section}.
+For the pair profiles write $\rho(I)=|I|L-\dim\sum_{x\in I}S_x$
+and let $\eta(I)$ indicate affine compatibility, so that
+$q(I)=p^{|I|}\eta(I)2^{\rho(I)}$. This raw nullity includes local
+kernels and is distinct from the effective relative nullity used in
+Section~\ref{p13:exact:section}.
+
+\subsection{The two leading rational channels}
+
+An exact unit of the reduced channel $a:b$, $a<b$, is a pair of values
+$(at,bt)$ in the two windows.  A relative rational relation selects an even
+number of these units.  If the first and last units are $t$ and $t+d$, the
+number of selections is
+\[
+ A_1=1,\qquad A_d=2^{d-2}\quad(d\geq2).
+\]
+Summing over positions in one window gives $L+1-D$ for a selection of
+diameter $D$.  Retaining the predecessor sign changes this to
+\begin{equation}\label{p1:arith:diametersign}
+ g_L(D)=(L-1-D)\ind_{\{0\leq D\leq L\}}.
+\end{equation}
+Indeed exactly one of the $L+1-D$ placements has its first selected vertex
+at the predecessor; its sign changes from $+1$ to $-1$.  The value
+$g_L(L)=-1$ is part of the formula.
+
+Define
+\begin{align*}
+ U_{a,b}(L)&=\sum_{d=1}^{\lfloor L/b\rfloor}
+            A_d(L+1-ad)(L+1-bd),\\
+ S_{a,b}(L)&=\sum_{d=1}^{\lfloor L/b\rfloor}
+            A_d(L-1-ad)(L-1-bd).
+\end{align*}
+For $L=bm+r$, $0\leq r<b$ and $m\geq1$, both sums are evaluated by
+\begin{equation}\label{p1:arith:channelidentity}
+ \begin{split}
+ &\sum_{d=1}^{m}A_d(L+s-ad)(L+s-bd)\\
+ &\quad=2^{m-1}\big[(b-a)(b+r+s)m+(r+s)^2
+                   +(a+b)(r+s)+3ab\big]\\
+ &\qquad\quad -(a+b)(L+s)-ab,\qquad s\in\{-1,1\}.
+ \end{split}
+\end{equation}
+When $m=0$ the defining sums are empty and equal to zero.
+To verify the identity for $m\geq1$, expand the product and use
+\[
+ \sum A_d=2^{m-1},\quad
+ \sum dA_d=(m-1)2^{m-1}+1,\quad
+ \sum d^2A_d=(m^2-2m+3)2^{m-1}-1.
+\]
+In particular, for $m\geq1$,
+\begin{align}
+ S_{2,3}(L)&=2^{m-1}\big[(r+2)m+r^2+3r+14\big]-5L-1,
+       &&L=3m+r,\quad0\leq r<3,\label{p1:arith:S23}\\
+ S_{3,4}(L)&=2^{m-1}\big[(r+3)m+r^2+5r+30\big]-7L-5,
+       &&L=4m+r,\quad0\leq r<4.\label{p1:arith:S34}
+\end{align}
+
+\begin{theorem}[Complete pair profile]\label{p1:arith:pairs}
+The sums below are over ordered separated pairs in $I_N$:
+\begin{align}
+ \sum_{|x-y|>L}(2^{\rho(x,y)}-1)
+ &=\frac N3\{U_{2,3}(L)+U_{3,4}(L)\}
+      +O_{C,\varepsilon}(N^{6/5+\varepsilon}),\label{p1:arith:positiveprofile}\\
+ \sum_{|x-y|>L}(\eta(x,y)2^{\rho(x,y)}-1)
+ &=\frac N3\{S_{2,3}(L)+S_{3,4}(L)\}
+      +O_{C,\varepsilon}(N^{6/5+\varepsilon}).\label{p1:arith:signedprofile}
+\end{align}
+Writing $\mu_N=\E Z_N$ and $\alpha_N=\operatorname{Var}(Z_N)-\mu_N$, one has
+\begin{equation}\label{p1:arith:cumulantexpansion}
+ \alpha_N=\frac{\lambda_N^2}{3N}\{S_{2,3}(L)+S_{3,4}(L)\}
+            +O_{C,\varepsilon}(N^{-4/5+\varepsilon}).
+\end{equation}
+Thus, with $r_3=L\bmod3$,
+\begin{equation}\label{p1:arith:leadingphase}
+ \alpha_N\sim
+ \frac{r_3+2}{18\,2^{r_3/3}}\lambda_N^{5/3}L N^{-2/3}.
+\end{equation}
+After the entire first-channel term is removed, the next term is
+\begin{equation}\label{p1:arith:secondphase}
+ \alpha_N-\frac{\lambda_N^2}{3N}S_{2,3}(L)
+ \sim\frac{r_4+3}{24\,2^{r_4/4}}\lambda_N^{7/4}L N^{-3/4},
+ \qquad r_4=L\bmod4.
+\end{equation}
+\end{theorem}
+
+The exact-unit calculation gives the displayed channel sums. Both
+orientations of each of the channels $2:3$ and $3:4$ have a translation
+interval of total length $N/3+O(B)$. Private prime coordinates identify
+their rational kernels; the exceptional normalizations and all remaining
+channels have the stated residual mass. Section~\ref{p14:comp:complete-profile}
+gives the complete proof, including the endpoint, contact, and
+mean-transfer estimates.
+
+The subtraction in \eqref{p1:arith:secondphase} must retain the whole finite
+expression $S_{2,3}(L)$.  Its own term of size $N^{-2/3}$ without the factor
+$L$ is larger than $LN^{-3/4}$.  The two exact channel polynomials together
+depend on $L\bmod12$.
+
+
+\subsection{A computable two-channel reference}
+
+An entirely explicit reference has a different optimal rate.
+Retain the complete \(2:3\) and \(3:4\) channel sums, and set
+\begin{equation}
+ \widehat\alpha_N=\frac{\lambda_N^2}{3N}
+             \{S_{2,3}(L)+S_{3,4}(L)\}.
+ \label{p1:eq:alpha-explicit}
+\end{equation}
+The sums have been defined above and are evaluated by
+\eqref{p1:arith:S23}--\eqref{p1:arith:S34}.
+
+\begin{corollary}[An explicit probability reference]
+\label{p1:cor:explicit}
+For every \(\varepsilon>0\), uniformly in the critical band,
+\begin{equation}
+ \left\|\Law(Z_N)-\Pi_{\lambda_N}
+       -\frac{\widehat\alpha_N}{2}
+          \Pi_{\lambda_N}*\Delta^{*2}\right\|_1
+       \ll_{C,\varepsilon}N^{-4/5+\varepsilon}.
+ \label{p1:eq:explicit-law}
+\end{equation}
+For all sufficiently large \(N\), the reference
+\(Q_{\lambda_N,\widehat\alpha_N}\) is a probability measure.
+Its mass at \(k\ge0\) is
+\begin{equation}
+ e^{-\lambda_N}\frac{\lambda_N^k}{k!}
+ \left[
+  1+\frac{\widehat\alpha_N}{2}
+       \left\{\frac{k(k-1)}{\lambda_N^2}
+                    -\frac{2k}{\lambda_N}+1\right\}
+ \right].
+ \label{p1:eq:explicit-masses}
+\end{equation}
+All parameters in this reference are determined by \(N,L\).
+\end{corollary}
+
+\begin{proof}
+Theorem~\ref{p1:arith:pairs} gives
+\(\alpha_N-\widehat\alpha_N=O_{C,\varepsilon}(N^{-4/5+\varepsilon})\).
+Since \(\|\Pi_{\lambda_N}*\Delta^{*2}\|_1\le4\), replacing the
+coefficient costs at most \(2|\alpha_N-\widehat\alpha_N|\).
+Apply Theorem~\ref{p1:thm:main}.
+The replacement of \(\mu_N\) by \(\lambda_N\) costs
+\(O(N^{-1+\varepsilon})\), which is absorbed here.
+The finite formulas give
+\(\widehat\alpha_N\sim\alpha_N>0\) and
+\(\widehat\alpha_N\to0\), uniformly in the band.
+The positivity criterion in Lemma~\ref{p1:close:positivity}
+therefore applies, since \(\lambda_N\) remains in a compact
+subinterval of \((0,\infty)\).
+\end{proof}
+
+The exponent \(4/5\) in \eqref{p1:eq:explicit-law} is optimal
+for this two-channel reference. Its leading error is half the
+height-five contribution times
+\(\|\Pi_{\lambda_N}*\Delta^{*2}\|_1\), as proved in
+Corollary~\ref{p13:channels:height-five}.
+The explicit parameters do not supply a numerical value of
+the constant in the remainder or a numerical threshold for \(N\).
+The same two-channel coefficient also gives a positive Hermite
+reference; see Corollary~\ref{p1:cor:compound}.
+
+\paragraph{The probability of no retained start.}
+Evaluating \eqref{p1:eq:explicit-law} at zero gives the immediate
+consequence
+\begin{equation}
+ \P(Z_N=0)=e^{-\lambda_N}
+       \left(1+\frac{\widehat\alpha_N}{2}\right)
+       +O_{C,\varepsilon}(N^{-4/5+\varepsilon}),
+ \label{p1:eq:no-start}
+\end{equation}
+because \((\Pi_{\lambda_N}*\Delta^{*2})\{0\}=e^{-\lambda_N}\).
+The positive correction shows an effect of the arithmetic pairs
+that is absent from the mean alone. Here \(Z_N=0\) means that
+no retained run start lies in \(I_N\). A run starting before
+\(N\) may still intersect the interval, and a run starting in
+\(I_N\) may continue beyond \(2N\).
+The exact-parameter refinement is Corollary~\ref{p13:optimal:zero}.
+
+\subsection{Why triple interactions are smaller}
+
+The third factorial cumulant is
+\begin{equation}
+ \kappa_{3,N}=\E(Z_N)_3-3\mu_N\E(Z_N)_2+2\mu_N^3.
+ \label{p13:third:definition}
+\end{equation}
+It is distinct from the ordinary third cumulant, which equals the mean
+for a Poisson variable.
+
+\begin{theorem}[Optimal power of the third factorial cumulant]
+\label{p13:third:main}
+For each fixed critical band $C>0$, there is a constant $c_C>0$ such
+that, for all sufficiently large $N$,
+\begin{equation}
+ c_C N^{-41/30}\leq\kappa_{3,N}
+              \ll_{C,\varepsilon}N^{-41/30+\varepsilon}
+              \qquad(\varepsilon>0).
+ \label{p13:third:two-sided}
+\end{equation}
+Both bounds are unconditional.  Thus $41/30$ is the optimal power
+exponent for this factorial cumulant.  The theorem does not assert an
+asymptotic equivalent or identify a logarithmic factor for the full
+cumulant.
+\end{theorem}
+
+The complete proof is given in Section~\ref{p13:third:section}.
+It bounds all admissible triples, with the exact marginals retained.
+The following form is the input to the reconstruction.
+
+\begin{corollary}[Absolute third-order activity]
+\label{p13:third:activity}
+For every $\varepsilon>0$,
+\begin{equation}
+ A_3:=\sum_{|T|=3}|c(T)|
+            \ll_{C,\varepsilon}N^{-41/30+\varepsilon}.
+ \label{p13:third:absolute}
+\end{equation}
+\end{corollary}
+
+\begin{proof}
+Equation~\eqref{p13:activity:kappa-comparison} gives
+$A_3=K_3^++O(N^{-3/2+\varepsilon'})$.
+Use the upper bound of Theorem~\ref{p13:third:main} and reduce the internal margin.
+\end{proof}
+
+
+The geometric step in the upper bound changes the scale at which points
+are counted. Write $d_{xy}=\dim(S_x\cap S_y)$ and suppose
+$d_{xy}>((2/3)\log2+\delta)B$ for a fixed $\delta>0$.
+Short-relation extraction yields a space of dimension $\gg_\delta B$
+and a common curve through $(x,y)$, of degree
+$D\le B^{a+o(1)}$ for some fixed $a<1/2$.
+For the relations in a subspace of codimension at most one, the
+associated products are squares in the curve's function field.
+At a selected noncritical offset $u$, the simple zeros of $X+u$
+must therefore be matched by zeros of factors $Y+v$ from the
+other window. After $O(D^2)$ exceptional offsets
+are removed, these fibres give $\gg_\delta B$ integer points in
+$[-B,B]^2$. Their coordinates are logarithmic-size offsets, although
+the original centres have size $N$. For $D\ge2$, the degree-uniform
+point bound gives only $o(B)$ points, a contradiction. For $D=1$,
+matching the roots gives a small rational slope and an alignment.
+Thus nonaligned pairs obey the rank bound of
+Theorem~\ref{p13:rig:nonaligned}; the full argument is in
+Section~\ref{p13:rig:section}.
+
+The configuration $10t,12t,15t$ explains the third-order power.
+Multiplication by $6,5,4$ gives a common center $60t$ and offset
+steps $6,5,4$. The canonical relative nullity is
+\[
+ \rho_L=\left\lfloor\frac{L-1}{6}\right\rfloor+
+ \left\lfloor\frac{L-1}{3}\right\rfloor+
+ \left\lfloor\frac{L-1}{5}\right\rfloor-
+ \left\lfloor\frac{L-1}{15}\right\rfloor
+ =\frac{19}{30}L+O(1).
+\]
+A compatible triple with no additional square relations therefore has
+weight $N^{-71/30+o(1)}$. For a concrete phase, take $L=30m$ and $N=2^L$.
+Then
+\[
+ \begin{aligned}
+ \rho_L&=(5m-1)+(10m-1)+(6m-1)-(2m-1)=19m-2,\\
+ q(\{10t,12t,15t\})&=p^3 2^{\rho_L}=\frac14N^{-71/30}.
+ \end{aligned}
+\]
+There are $N/30+O(1)$ translations in the dyadic interval.
+Proposition~\ref{p13:third:lower} shows that all but $N^{1/2+o(1)}$
+of them have private prime coordinates and compatible predecessor
+signs. On this population, the largest pair exponent subtracted in
+the centered coefficient is $10m-1$, so $c(T)=q(T)(1+o(1))$.
+This family thus contributes $(1/120+o(1))N^{-41/30}$ to $K_3^+$;
+the coefficient is specific to this family, not to the full cumulant.
+The upper bound also needs pair rigidity and an exhaustive partition
+of the other triples. It is not a consequence of this example alone.
+
+The distinction between pairs and triples is decisive:
+$\alpha_N^2=N^{-4/3+o(1)}$, whereas
+$A_3\ll N^{-41/30+\varepsilon}$ and $41/30-4/3=1/30$.
+The reconstruction will retain the first pair term and allow its
+square in the error. The fourth-order test will prove that this
+remaining scale cannot be improved in power for the quadratic reference.

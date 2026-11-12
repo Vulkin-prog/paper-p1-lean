@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-12",
+  "status": "passed",
+  "proof_code_snapshot": "a1c8092f7e25acf7f3b78283039cfbd69491f88e",
+  "recorded_full_replay_proof_source": "aa12e797ce895f6b7aef6e4f1f0c6e5e9a58aab4",
+  "actual_compiler_version": "Lean (version 4.36.0-rc2, x86_64-unknown-linux-gnu, commit b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a, Release)",
+  "toolchain": "leanprover/lean4:v4.36.0-rc2",
+  "mathlib_commit": "9d581dfff2e41de989072ea63abf3daf69311520",
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "actual_process_exit_codes": {
+    "disk-before": 0,
+    "build": 0,
+    "disk-after": 0,
+    "audit": 0,
+    "axioms": 0,
+    "compiled-scope": 0
+  },
+  "build_jobs": 18645,
+  "audited_theorems": 20019,
+  "compiled_scope_types": 212,
+  "new_lean_theorems": 0,
+  "all_prior_lean_sources_and_pins_unchanged": true,
+  "compiled_types_semantically_identical_to_prior_v2": true,
+  "logs": [
+    {
+      "name": "disk-before",
+      "actual_exit": 0,
+      "path": "docs/validation/publication-2026-11-12/disk-before.log.gz",
+      "sha256_gzip": "b6e7f63ddde9a07dc05623c8f006285ed6baf20f876d9cde0464885919a2b6ac"
+    },
+    {
+      "name": "build",
+      "actual_exit": 0,
+      "path": "docs/validation/publication-2026-11-12/build.log.gz",
+      "sha256_gzip": "29875c718da73020df588842a8f40aad225c7d3f101ef050f696336a202176d4"
+    },
+    {
+      "name": "disk-after",
+      "actual_exit": 0,
+      "path": "docs/validation/publication-2026-11-12/disk-after.log.gz",
+      "sha256_gzip": "f9f1cdbb24bb90f2a4052e5b77bd9c4fa65432e0ce12e98f3614f99a86a56698"
+    },
+    {
+      "name": "audit",
+      "actual_exit": 0,
+      "path": "docs/validation/publication-2026-11-12/audit.log.gz",
+      "sha256_gzip": "c896dec5df415328a814e2f04e44cfb84f34021352fade8c95f14da1c6b5dbfd"
+    },
+    {
+      "name": "axioms",
+      "actual_exit": 0,
+      "path": "docs/validation/publication-2026-11-12/axioms.log.gz",
+      "sha256_gzip": "b545a556dfb6d53f0f9c9978dde2b0e9aba15b59fed566f231e0a6a6aa0d2a26"
+    },
+    {
+      "name": "compiled-scope",
+      "actual_exit": 0,
+      "path": "docs/validation/publication-2026-11-12/compiled-scope.log.gz",
+      "sha256_gzip": "a92abb289d8deba8346cd2c9a46ade05eb8352af1bf79be242e9c1d369999d32"
+    }
+  ],
+  "scope": "Actual incremental pinned build, full axiom audit and fresh extraction of212 existing proposition types. The written-statement comparison remains AI-assisted. No new kernel-checker suite or official Palomar cycle is claimed."
+}

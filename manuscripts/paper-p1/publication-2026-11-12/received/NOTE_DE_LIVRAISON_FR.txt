@@ -1,0 +1,173 @@
+Note de livraison — P1
+12 novembre 2026
+
+Objet de la livraison
+
+Révision de l'article principal et de son compagnon à partir des trois audits
+fournis et des Directives éditoriales et narratives. Les sources exactes des
+PDF transmis ont été retrouvées dans un état immuable du dépôt et comparées
+au reçu de compilation qui porte les mêmes empreintes que les pièces jointes.
+Le corps public des articles ne contient ni numéro de version de P1, ni
+historique de brouillons, ni récit de réponse aux audits.
+
+Corrections du retour complémentaire AUDIT_P1_2026-11-12_FR.pdf
+
+A1 — Preuve de la proposition T7.1, §T7.1.1, page 44 du compagnon.
+Le renvoi au théorème réservé aux triples primitifs est remplacé par un
+appel direct au témoin ancré déjà démontré au §T7.1. La preuve explicite
+la réalisation dans les coordonnées physiques, la régularisation avec d=2
+et le choix d'un paramètre t fixé tel que 6 t^(-1/2) <= eta/8. Après les
+pertes de dimension, l'espace M conserve au moins
+((7 eta/8) - 9 theta) B - 12 >= eta L/2 dimensions pour N assez grand.
+
+Les trois applications du témoin utilisent séparément le même espace M.
+La constante D_* = D(3,t) est définie par le témoin. Le comptage des centres
+par T6.4 donne N^(6 D_* tau + 3 epsilon'), avec choix des paramètres dans
+la moitié de la marge epsilon ; l'autre moitié absorbe le o(1) du poids
+homogène. Le comptage d'incidences précède l'effacement final des positions
+de l'ancre. Aucun sous-espace auxiliaire ni historique d'effacement n'est
+énuméré. Ce raccord n'utilise ni T7.4 ni T12.4.
+
+A2 — Route primitive, §T12.2, page 68, et §T12.7, page 76 du compagnon.
+La présentation suit la preuve effective de T12.4 : construction des hôtes
+primitifs denses au §T7.1, enveloppe homogène du lemme 2.3, puis partage
+des rangs et demi-comptage conditionnel via T6.2. T12.3 reste présent, avec
+son énoncé, son numéro et sa preuve ; il est explicitement qualifié de
+résultat auxiliaire distinct, non utilisé dans la preuve de T12.4.
+Le début de cette preuve, page 69, pointe directement vers le paragraphe
+de construction des hôtes denses. L'ouverture de T12.7 distingue les deux
+preuves locales sans les présenter comme des étapes successives de la
+preuve primitive.
+
+A3 — Transition géométrique, §3.3, page 13 de l'article.
+Un paragraphe explique le passage d'une hypothèse de rang partagé élevé
+à une courbe commune passant par les grands centres, puis à de nombreux
+points entiers dans une grille d'offsets de taille logarithmique. Il nomme
+les produits qui deviennent des carrés dans le corps de fonctions et
+compare les bornes de points avant de distinguer les cas non linéaire et
+linéaire. Il conclut à une borne de rang pour les couples non alignés.
+La formulation de l'introduction rappelle également l'hypothèse de rang
+élevé. Aucune affirmation d'alignement pour tous les couples n'est ajoutée.
+
+A4 — Tableau des références, §1.1, page 4 de l'article.
+Le tableau remplace le paragraphe sur la hiérarchie des canaux et compare
+les références de Poisson, quadratique exacte, quadratique explicite et
+Hermite exacte. Il distingue équivalent complet, puissance optimale avec
+marges fixes et simple borne supérieure. Le paramètre h est explicitement
+un entier fixé avant N. L'optimalité de la correction quadratique n'est
+pas attribuée à la référence de Hermite.
+
+Ces quatre actions modifient seulement quatre fichiers de texte. Les 118
+blocs d'énoncés restent identiques à ceux examinés par ce retour ; les 375
+labels et les 136 titres de sections et sous-sections sont conservés.
+Aucune section ni aucun résultat n'est ajouté. Aucune nouvelle campagne
+de calcul ni aucun rejeu Lean n'a été effectué pour ces corrections.
+
+1. Correction mathématique ciblée
+
+La proposition T4.3 distingue explicitement deux portées : les sommes
+conditionnelles et la propagation restent valables pour les prescriptions
+homogènes ; la petite masse des familles contenant un défaut local ou un
+contact compatible concerne les événements originaux de début de run.
+La preuve traite r=s avant l'itération avec marge epsilon/(r-s). Ses
+applications ont été vérifiées dans le compte original et dans les variantes
+homogènes séparées. Un renvoi interne désignait T4.7 comme proposition : il
+est désormais appelé corollaire.
+
+Les 118 résultats numérotés sont conservés, avec leurs labels et leurs numéros.
+La seule clarification d'énoncé dans l'ensemble du travail demandé concerne
+T4.3. Aucun exposant central n'a été modifié. L'optimalité de puissance
+4/3 reste attachée à la référence quadratique exacte, le troisième cumulant
+reste encadré à la puissance 41/30 sans équivalent complet, et les hauteurs
+h des troncatures restent fixées avant N. Aucun taux optimal supplémentaire
+n'est revendiqué pour la référence de Hermite exacte.
+
+2. Attributions et bibliographie
+
+Paper C est cité avec le DOI demandé : 10.5281/zenodo.22872154.
+L'entrée ne le qualifie plus de manuscrit inédit.
+
+Le renvoi à Barbour–Eagleson identifie le théorème 1, page 588, pour la
+référence quadratique classique. Čekanavičius–Vellaisamy (2020) est ajouté
+pour les minorations comportant le carré du deuxième cumulant sous
+dépendance locale. Le texte distingue cet antécédent des estimations
+arithmétiques nécessaires pour les fenêtres multiplicatives.
+
+Basak–Nath–Zaharescu est ajouté en distinguant ses blocs disjoints, son
+moyennage sur les premiers et sa longueur à quatre logarithmes itérés.
+Shparlinski–Sleiman est cité pour le voisinage de méthode par résultants et
+courbes ; l'apport utilisé ici reste la courbe commune à un espace de
+relations et les fibres entières de la grille d'offsets.
+
+Kemp–Kemp documente la loi classique de Hermite.
+Binyamini–Cluckers–Kato complète BCN, sans remplacer l'entrée externe
+utilisée. De la Bretèche–Kurlberg–Shparlinski apporte le contexte des
+produits carrés à nombre fixé de facteurs, avec la différence d'uniformité.
+
+Le PDF auteur de Mod-discrete expansions est identifié par son URL, ses
+26 pages et ses sections. La portée des bornes finies à moyenne bornée est
+explicitée, séparément de celle du théorème d'équivalent à paramètre
+divergent. Les versions arXiv consommées et leurs dates sont précisées
+lorsque la numérotation des résultats importe.
+
+La base commune comprend 31 notices. Les listes locales impriment seulement
+les références utilisées : 18 dans l'article, 16 dans le compagnon, avec
+numérotation continue propre à chaque texte.
+
+3. Exposition et lecture
+
+Le calcul existant du témoin 10:12:15 est développé pour L=30m et N=2^L :
+la nullité vaut 19m-2 et la probabilité vaut (1/4) N^(-71/30). Le nombre
+N/30+O(1) de translations, les exclusions et le centrage donnent la
+contribution de cette seule sous-famille. Le texte précise que ce coefficient
+n'est pas celui du cumulant complet et que l'exemple ne prouve pas la borne
+supérieure.
+
+Un tableau près de la reconstruction distingue les entrées pour les paires,
+la rigidité non alignée, les triples, les ordres fixés, les déficits à toute
+cardinalité, les queues uniformes et la minoration. Les calculs explicatifs
+déjà présents et les preuves complètes restent en place.
+
+4. Preuves formelles et Palomar
+
+La notice donne les identifiants immuables du dossier documentaire, de la
+source du rejeu principal, de Mathlib et des dossiers Palomar. Elle relie le
+lecteur à l'index des énoncés, au manifeste des sources et aux reçus de
+validation. La valeur kappa=17 pointe vers la déclaration Lean précise et
+reste distinguée de l'assertion existentielle du théorème externe.
+
+Les six dossiers sélectionnent 52 énoncés couvrant les 26 résultats de
+l'article ; le compagnon intervient dans leurs dépendances. La seule
+réserve documentaire publique concerne les identifiants Palomar encore
+attendus. Les contrôles locaux ne sont pas présentés comme un enregistrement
+ou une certification officielle.
+
+Aucun nouveau rejeu Lean n'a été effectué pendant cette révision. Les
+mentions de rejeu et d'audit d'axiomes renvoient aux pièces immuables déjà
+consignées dans le dépôt. La correspondance entre le texte et les énoncés
+formels ainsi que les relectures menées ici sont assistées par IA ; aucune
+validation humaine indépendante nouvelle n'est revendiquée.
+
+5. Contrôles des fichiers livrés
+
+Les deux PDF ont été recompilés jusqu'à stabilisation de leurs références.
+Les contrôles finaux trouvent zéro référence non résolue et zéro dépassement
+signalé par LaTeX. Les 118 numéros de résultats correspondent à l'index
+examiné. Les 539 liens internes et les 104 liens entre les deux PDF ont été
+vérifiés dans les arbres de destinations PDF. Les bibliographies ne
+comportent pas de clé manquante.
+
+La composition finale a été inspectée visuellement sur les passages
+modifiés, les pages adjacentes, les couvertures, les sommaires et les
+bibliographies. Le nouveau tableau et les raccords de preuve ont été
+contrôlés à pleine résolution. Les polices, marges et corps de texte sont
+conservés ; toutes les polices sont incorporées. L'article compte 33 pages,
+le compagnon 84 pages.
+
+Les en-têtes courants et leur filet horizontal sont supprimés dans les
+deux documents. Les numéros de page en pied de page sont conservés.
+Le corps du texte garde le même placement et la même pagination.
+
+Ces contrôles portent sur la révision, la composition et la conservation du
+contenu. Ils ne constituent ni une nouvelle démonstration formelle des PDF,
+ni un audit exhaustif supplémentaire de priorité scientifique.

@@ -1,0 +1,1676 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex)
+entering extended mode
+(./companion.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo)) (./preamble.tex
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+(/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
+(/usr/share/texlive/texmf-dist/tex/generic/babel/locale/en/babel-english.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf))
+(/usr/share/texmf/tex/latex/lm/lmodern.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype-pdftex.def)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.cfg))
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/mathrsfs.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx))
+(/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/needspace/needspace.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/placeins/placeins.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/xr-hyper.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty)))
+(/usr/share/texlive/texmf-dist/tex/generic/stringenc/stringenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def)
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/bookmark/bookmark.sty
+(/usr/share/texlive/texmf-dist/tex/latex/bookmark/bkm-pdftex.def))
+(/usr/share/texlive/texmf-dist/tex/latex/xurl/xurl.sty))
+(/usr/share/texmf/tex/latex/lm/t1lmr.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)
+No file companion.aux.
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)))
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+
+Package epstopdf Warning: Shell escape feature is not enabled.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+(/usr/share/texmf/tex/latex/lm/ot1lmr.fd)
+(/usr/share/texmf/tex/latex/lm/omllmm.fd)
+(/usr/share/texmf/tex/latex/lm/omslmsy.fd)
+(/usr/share/texmf/tex/latex/lm/omxlmex.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd) [1{/var/lib/texmf/f
+onts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.en
+c}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dv
+ips/lm/lm-mathit.enc}]
+No file companion.toc.
+[2] (./companion_sections/guide.tex
+
+LaTeX Warning: Reference `p1:arith:appendix' on page 3 undefined on input line 
+10.
+
+
+LaTeX Warning: Reference `p1:arith:supplement' on page 3 undefined on input lin
+e 10.
+
+
+LaTeX Warning: Reference `p1:fixed:section' on page 3 undefined on input line 1
+3.
+
+
+LaTeX Warning: Reference `p13:third:section' on page 3 undefined on input line 
+21.
+
+
+LaTeX Warning: Reference `p14:cert:section' on page 3 undefined on input line 2
+7.
+
+
+LaTeX Warning: Reference `p2:technical-transfer' on page 3 undefined on input l
+ine 28.
+
+
+LaTeX Warning: Reference `p1:uniform:appendix' on page 3 undefined on input lin
+e 35.
+
+) (./companion_sections/basic_arithmetic.tex
+
+LaTeX Warning: Citation `erdosturk1984' on page 3 undefined on input line 12.
+
+
+LaTeX Warning: Citation `munsch2026' on page 3 undefined on input line 14.
+
+[3{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/en
+c/dvips/lm/lm-mathex.enc}]
+
+LaTeX Warning: Citation `cilleruelogaraev2011' on page 4 undefined on input lin
+e 55.
+
+
+LaTeX Warning: Citation `tao2026anatomy' on page 4 undefined on input line 57.
+
+
+LaTeX Warning: Reference `p1:arith:runge' on page 4 undefined on input line 107
+.
+
+[4]
+
+LaTeX Warning: Reference `p1:arith:pell' on page 5 undefined on input line 128.
+
+
+
+LaTeX Warning: Reference `p1:arith:twodefect' on page 5 undefined on input line
+ 129.
+
+
+LaTeX Warning: Citation `reuss2014' on page 5 undefined on input line 136.
+
+[5]
+
+LaTeX Warning: Citation `reuss2014' on page 6 undefined on input line 243.
+
+
+LaTeX Warning: Citation `reuss2014' on page 6 undefined on input line 266.
+
+
+LaTeX Warning: Reference `p1:arith:pell' on page 6 undefined on input line 275.
+
+
+[6]
+
+LaTeX Warning: Citation `heathbrown2012' on page 7 undefined on input line 288.
+
+
+
+LaTeX Warning: Citation `reuss2014' on page 7 undefined on input line 319.
+
+
+LaTeX Warning: Citation `reuss2014' on page 7 undefined on input line 327.
+
+
+LaTeX Warning: Reference `p1:arith:reussbound' on page 7 undefined on input lin
+e 357.
+
+[7]
+
+LaTeX Warning: Reference `p1:arith:elementarybox' on page 8 undefined on input 
+line 386.
+
+
+LaTeX Warning: Reference `p1:arith:pell' on page 8 undefined on input line 389.
+
+
+
+LaTeX Warning: Reference `p1:arith:reuss' on page 8 undefined on input line 392
+.
+
+
+LaTeX Warning: Citation `salberger2023' on page 8 undefined on input line 462.
+
+
+LaTeX Warning: Citation `pila1995' on page 8 undefined on input line 464.
+
+[8]
+
+LaTeX Warning: Reference `p1:arith:surfaceequations' on page 9 undefined on inp
+ut line 482.
+
+[9]
+
+LaTeX Warning: Reference `p1:arith:surfaceequations' on page 10 undefined on in
+put line 576.
+
+[10]
+
+LaTeX Warning: Reference `p1:arith:curvedegree' on page 11 undefined on input l
+ine 625.
+
+[11]
+
+LaTeX Warning: Reference `p1:arith:pell' on page 12 undefined on input line 734
+.
+
+
+LaTeX Warning: Reference `p1:arith:pell' on page 12 undefined on input line 742
+.
+
+
+LaTeX Warning: Reference `p1:arith:geometric' on page 12 undefined on input lin
+e 759.
+
+
+LaTeX Warning: Reference `p1:arith:geometric' on page 12 undefined on input lin
+e 765.
+
+[12]
+
+LaTeX Warning: Reference `p1:arith:runge' on page 13 undefined on input line 79
+4.
+
+
+LaTeX Warning: Reference `p1:arith:defects' on page 13 undefined on input line 
+796.
+
+
+LaTeX Warning: Reference `p1:arith:defects' on page 13 undefined on input line 
+807.
+
+
+LaTeX Warning: Reference `p1:arith:twokernel' on page 13 undefined on input lin
+e 849.
+
+
+LaTeX Warning: Reference `p1:arith:anchor' on page 13 undefined on input line 8
+50.
+
+
+LaTeX Warning: Reference `p1:arith:geometric' on page 13 undefined on input lin
+e 862.
+
+
+LaTeX Warning: Reference `p1:arith:geometric' on page 13 undefined on input lin
+e 867.
+
+[13]
+
+LaTeX Warning: Reference `p1:arith:section' on page 14 undefined on input line 
+880.
+
+
+LaTeX Warning: Reference `p1:arith:asymmetric' on page 14 undefined on input li
+ne 887.
+
+
+LaTeX Warning: Reference `p1:arith:alignedrank' on page 14 undefined on input l
+ine 918.
+
+
+LaTeX Warning: Reference `p1:arith:matchdensity' on page 14 undefined on input 
+line 940.
+
+[14]
+
+LaTeX Warning: Reference `p14:comp:third:aligned-family' on page 15 undefined o
+n input line 1001.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/ueuf.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-euf.cfg)
+
+LaTeX Warning: Reference `p1:arith:asymmetric' on page 15 undefined on input li
+ne 1022.
+
+
+LaTeX Warning: Reference `p1:arith:geometric' on page 15 undefined on input lin
+e 1032.
+
+[15]
+
+LaTeX Warning: Reference `p1:arith:anchor' on page 16 undefined on input line 1
+086.
+
+
+LaTeX Warning: Reference `p1:arith:twokernel' on page 16 undefined on input lin
+e 1086.
+
+
+LaTeX Warning: Reference `p13:half:conditional' on page 16 undefined on input l
+ine 1111.
+
+[16] [17]
+
+LaTeX Warning: Reference `p1:arith:groupcrt' on page 18 undefined on input line
+ 1238.
+
+
+LaTeX Warning: Reference `p1:arith:planecrt' on page 18 undefined on input line
+ 1238.
+
+
+LaTeX Warning: Reference `p1:arith:groupcrt' on page 18 undefined on input line
+ 1241.
+
+
+LaTeX Warning: Reference `p1:arith:ternarycount' on page 18 undefined on input 
+line 1246.
+
+
+LaTeX Warning: Reference `p1:arith:fixed-homogeneous-seeds' on page 18 undefine
+d on input line 1273.
+
+
+LaTeX Warning: Citation `griesmer1960' on page 18 undefined on input line 1294.
+
+
+[18]
+
+LaTeX Warning: Reference `p1:arith:runge' on page 19 undefined on input line 13
+23.
+
+
+LaTeX Warning: Reference `p1:limits:griesmer' on page 19 undefined on input lin
+e 1335.
+
+
+LaTeX Warning: Reference `p1:limits:griesmer' on page 19 undefined on input lin
+e 1340.
+
+) (./companion_sections/pair_profiles.tex [19]
+
+LaTeX Warning: Reference `p14:comp:regular-transfer' on page 20 undefined on in
+put line 74.
+
+[20]
+
+LaTeX Warning: Reference `p14:comp:sparse-hosts' on page 21 undefined on input 
+line 111.
+
+
+LaTeX Warning: Reference `p14:comp:confinement' on page 21 undefined on input l
+ine 114.
+
+
+LaTeX Warning: Reference `p14:comp:good-edge-mass' on page 21 undefined on inpu
+t line 144.
+
+
+LaTeX Warning: Reference `p1:arith:compressedrank' on page 21 undefined on inpu
+t line 170.
+
+
+LaTeX Warning: Reference `p1:arith:section' on page 21 undefined on input line 
+177.
+
+
+LaTeX Warning: Reference `p1:arith:core' on page 21 undefined on input line 185
+.
+
+
+LaTeX Warning: Reference `p1:arith:defects' on page 21 undefined on input line 
+186.
+
+[21]
+
+LaTeX Warning: Reference `p1:arith:marginalsum' on page 22 undefined on input l
+ine 194.
+
+
+LaTeX Warning: Reference `p1:arith:hosts' on page 22 undefined on input line 21
+3.
+
+
+LaTeX Warning: Reference `p1:arith:core' on page 22 undefined on input line 215
+.
+
+
+LaTeX Warning: Reference `p1:arith:twokernel' on page 22 undefined on input lin
+e 222.
+
+
+LaTeX Warning: Reference `p1:arith:anchor' on page 22 undefined on input line 2
+23.
+
+
+LaTeX Warning: Reference `p1:arith:graphbound' on page 22 undefined on input li
+ne 229.
+
+
+LaTeX Warning: Reference `p1:arith:dense' on page 22 undefined on input line 23
+2.
+
+
+LaTeX Warning: Reference `p14:comp:confinement' on page 22 undefined on input l
+ine 239.
+
+
+LaTeX Warning: Reference `p1:arith:defects' on page 22 undefined on input line 
+257.
+
+
+LaTeX Warning: Reference `p1:arith:alignedrank' on page 22 undefined on input l
+ine 258.
+
+
+LaTeX Warning: Reference `p1:arith:alignedrank' on page 22 undefined on input l
+ine 268.
+
+
+LaTeX Warning: Reference `p1:arith:affine' on page 22 undefined on input line 2
+72.
+
+[22]
+
+LaTeX Warning: Reference `p1:arith:defects' on page 23 undefined on input line 
+277.
+
+
+LaTeX Warning: Reference `p1:arith:edgefamily' on page 23 undefined on input li
+ne 289.
+
+) (./companion_sections/channel_counts.tex [23]
+
+LaTeX Warning: Reference `p1:arith:coordinate-regularisation' on page 24 undefi
+ned on input line 111.
+
+[24]
+
+LaTeX Warning: Reference `p1:arith:palmrank' on page 25 undefined on input line
+ 227.
+
+
+LaTeX Warning: Reference `p1:arith:matchdensity' on page 25 undefined on input 
+line 232.
+
+[25]
+
+LaTeX Warning: Reference `p1:arith:gamma-fixed-channel' on page 26 undefined on
+ input line 248.
+
+
+LaTeX Warning: Reference `p1:arith:asymmetric' on page 26 undefined on input li
+ne 292.
+
+
+LaTeX Warning: Reference `p1:arith:fixed-channel-rank' on page 26 undefined on 
+input line 301.
+
+
+LaTeX Warning: Reference `p1:arith:fixed-branching' on page 26 undefined on inp
+ut line 309.
+
+[26]
+
+LaTeX Warning: Reference `p1:arith:fixed-channel-palm' on page 27 undefined on 
+input line 345.
+
+
+LaTeX Warning: Reference `p1:arith:fixed-branching' on page 27 undefined on inp
+ut line 355.
+
+
+LaTeX Warning: Reference `p1:arith:fixed-channel-mass' on page 27 undefined on 
+input line 366.
+
+) (./companion_sections/fixed_moments.tex [27]
+
+LaTeX Warning: Reference `p14:comp:fixed-targets' on page 28 undefined on input
+ line 102.
+
+
+LaTeX Warning: Reference `p1:fixed:conditional' on page 28 undefined on input l
+ine 123.
+
+
+LaTeX Warning: Reference `p1:fixed:propagate' on page 28 undefined on input lin
+e 123.
+
+
+LaTeX Warning: Reference `p1:fixed:targets' on page 28 undefined on input line 
+133.
+
+
+LaTeX Warning: Reference `p1:fixed:propagate' on page 28 undefined on input lin
+e 138.
+
+[28]
+
+LaTeX Warning: Reference `p1:arith:section' on page 29 undefined on input line 
+146.
+
+
+LaTeX Warning: Reference `p14:comp:fixed-moments' on page 29 undefined on input
+ line 185.
+
+
+LaTeX Warning: Reference `p1:fixed:moment-expansion' on page 29 undefined on in
+put line 189.
+
+
+LaTeX Warning: Reference `p14:cert:section' on page 29 undefined on input line 
+193.
+
+
+LaTeX Warning: Reference `p1:fixed:section' on page 29 undefined on input line 
+201.
+
+[29]
+
+LaTeX Warning: Citation `pila1995' on page 30 undefined on input line 254.
+
+
+LaTeX Warning: Reference `p1:fixed:targets' on page 30 undefined on input line 
+290.
+
+
+LaTeX Warning: Reference `p1:fixed:recovery' on page 30 undefined on input line
+ 296.
+
+
+LaTeX Warning: Reference `p1:fixed:curve' on page 30 undefined on input line 31
+8.
+
+
+LaTeX Warning: Reference `p1:fixed:CRT' on page 30 undefined on input line 325.
+
+
+[30]
+
+LaTeX Warning: Reference `p1:fixed:curve' on page 31 undefined on input line 35
+7.
+
+
+LaTeX Warning: Reference `p1:fixed:targets-bound' on page 31 undefined on input
+ line 361.
+
+
+LaTeX Warning: Reference `p13:transfer:primitive' on page 31 undefined on input
+ line 388.
+
+
+LaTeX Warning: Reference `p1:arith:alignedrank' on page 31 undefined on input l
+ine 425.
+
+[31]
+
+LaTeX Warning: Reference `p13:half:conditional' on page 32 undefined on input l
+ine 431.
+
+
+LaTeX Warning: Reference `p13:transfer:dense-targets' on page 32 undefined on i
+nput line 443.
+
+
+LaTeX Warning: Reference `p1:fixed:compressed-bound' on page 32 undefined on in
+put line 450.
+
+
+LaTeX Warning: Reference `p1:arith:fixed-homogeneous-seeds' on page 32 undefine
+d on input line 453.
+
+
+LaTeX Warning: Reference `p1:fixed:moments' on page 32 undefined on input line 
+457.
+
+
+LaTeX Warning: Reference `p1:fixed:primitive' on page 32 undefined on input lin
+e 471.
+
+
+LaTeX Warning: Reference `p1:arith:fixed-homogeneous-seeds' on page 32 undefine
+d on input line 474.
+
+
+LaTeX Warning: Reference `p1:fixed:compressed' on page 32 undefined on input li
+ne 485.
+
+
+LaTeX Warning: Reference `p1:arith:fixed-support' on page 32 undefined on input
+ line 493.
+
+
+LaTeX Warning: Reference `p1:arith:fixed-branching' on page 32 undefined on inp
+ut line 510.
+
+[32]
+
+LaTeX Warning: Reference `p1:fixed:moment-expansion' on page 33 undefined on in
+put line 528.
+
+
+LaTeX Warning: Reference `p1:fixed:ordinary' on page 33 undefined on input line
+ 532.
+
+) (./companion_sections/short_supports.tex
+
+LaTeX Warning: Citation `bretkurlbergshparlinski2021' on page 33 undefined on i
+nput line 14.
+
+
+LaTeX Warning: Citation `bretwngxu2026' on page 33 undefined on input line 21.
+
+
+LaTeX Warning: Reference `p14:comp:short:moments' on page 33 undefined on input
+ line 50.
+
+[33]
+
+LaTeX Warning: Reference `p13:short:moments' on page 34 undefined on input line
+ 88.
+
+
+LaTeX Warning: Reference `p13:short:section' on page 34 undefined on input line
+ 107.
+
+
+LaTeX Warning: Reference `p1:arith:pell' on page 34 undefined on input line 133
+.
+
+[34]
+
+LaTeX Warning: Reference `p13:short:quadratic' on page 35 undefined on input li
+ne 173.
+
+
+LaTeX Warning: Reference `p13:short:quadratic' on page 35 undefined on input li
+ne 236.
+
+
+LaTeX Warning: Reference `p13:short:split-count' on page 35 undefined on input 
+line 248.
+
+
+LaTeX Warning: Reference `p1:arith:pell' on page 35 undefined on input line 257
+.
+
+[35]
+
+LaTeX Warning: Reference `p13:short:moments' on page 36 undefined on input line
+ 262.
+
+
+LaTeX Warning: Reference `p13:short:split' on page 36 undefined on input line 2
+82.
+
+
+LaTeX Warning: Reference `p13:short:moment-bound' on page 36 undefined on input
+ line 309.
+
+) (./companion_sections/half_counts.tex [36]
+
+LaTeX Warning: Reference `p13:short:old-space' on page 37 undefined on input li
+ne 51.
+
+
+LaTeX Warning: Reference `p14:comp:half:iteration' on page 37 undefined on inpu
+t line 57.
+
+
+LaTeX Warning: Reference `p13:half:conditional' on page 37 undefined on input l
+ine 78.
+
+
+LaTeX Warning: Reference `p13:half:conditional' on page 37 undefined on input l
+ine 109.
+
+
+LaTeX Warning: Reference `p13:half:conditional' on page 37 undefined on input l
+ine 129.
+
+
+LaTeX Warning: Reference `p13:half:section' on page 37 undefined on input line 
+131.
+
+[37]
+
+LaTeX Warning: Reference `p1:arith:pell' on page 38 undefined on input line 162
+.
+
+[38]
+
+LaTeX Warning: Reference `p13:half:condition' on page 39 undefined on input lin
+e 236.
+
+
+LaTeX Warning: Reference `p13:half:conditional' on page 39 undefined on input l
+ine 287.
+
+
+LaTeX Warning: Reference `p13:short:old-space' on page 39 undefined on input li
+ne 305.
+
+[39]
+
+LaTeX Warning: Reference `p13:half:saturation' on page 40 undefined on input li
+ne 315.
+
+
+LaTeX Warning: Reference `p13:half:smooth' on page 40 undefined on input line 3
+39.
+
+) (./companion_sections/confinement.tex
+
+LaTeX Warning: Reference `p13:half:section' on page 40 undefined on input line 
+13.
+
+
+LaTeX Warning: Reference `p14:comp:confinement' on page 40 undefined on input l
+ine 22.
+
+
+LaTeX Warning: Reference `p13:transfer:primitive' on page 40 undefined on input
+ line 38.
+
+
+LaTeX Warning: Reference `p1:arith:hosts' on page 40 undefined on input line 41
+.
+
+
+LaTeX Warning: Reference `p13:conf:dense-primitive' on page 40 undefined on inp
+ut line 45.
+
+
+LaTeX Warning: Reference `p13:conf:dense-pairs' on page 40 undefined on input l
+ine 46.
+
+[40]
+
+LaTeX Warning: Reference `p14:comp:confinement:near' on page 41 undefined on in
+put line 61.
+
+
+LaTeX Warning: Reference `p14:comp:confinement:strong' on page 41 undefined on 
+input line 76.
+
+
+LaTeX Warning: Reference `p13:conf:section' on page 41 undefined on input line 
+90.
+
+
+LaTeX Warning: Citation `pila1995' on page 41 undefined on input line 135.
+
+[41] (/usr/share/texmf/tex/latex/lm/ts1lmr.fd)
+
+LaTeX Warning: Reference `p1:fixed:recovery' on page 42 undefined on input line
+ 189.
+
+
+LaTeX Warning: Reference `p13:conf:groups' on page 42 undefined on input line 2
+15.
+
+
+LaTeX Warning: Reference `p1:fixed:recovery' on page 42 undefined on input line
+ 241.
+
+
+LaTeX Warning: Reference `p1:arith:runge' on page 42 undefined on input line 24
+8.
+
+
+LaTeX Warning: Reference `p13:half:small-kernels' on page 42 undefined on input
+ line 254.
+
+[42{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}]
+
+LaTeX Warning: Reference `p13:transfer:primitive' on page 43 undefined on input
+ line 261.
+
+
+LaTeX Warning: Reference `p13:transfer:primitive' on page 43 undefined on input
+ line 276.
+
+
+LaTeX Warning: Reference `p1:fixed:recovery' on page 43 undefined on input line
+ 303.
+
+
+LaTeX Warning: Reference `p1:arith:hosts' on page 43 undefined on input line 31
+9.
+
+
+LaTeX Warning: Reference `p13:half:pairs' on page 43 undefined on input line 32
+3.
+
+
+LaTeX Warning: Reference `p13:conf:dense-pairs' on page 43 undefined on input l
+ine 337.
+
+
+LaTeX Warning: Reference `p13:conf:near-primitive' on page 43 undefined on inpu
+t line 346.
+
+[43]
+
+LaTeX Warning: Reference `p1:limits:local-rigidity' on page 44 undefined on inp
+ut line 365.
+
+
+LaTeX Warning: Reference `p1:fixed:recovery' on page 44 undefined on input line
+ 372.
+
+
+LaTeX Warning: Hyper reference `p18:conf:anchored' on page 44 undefined on inpu
+t line 385.
+
+
+LaTeX Warning: Reference `p14:comp:confinement' on page 44 undefined on input l
+ine 386.
+
+
+LaTeX Warning: Reference `p13:half:small-kernels' on page 44 undefined on input
+ line 394.
+
+
+LaTeX Warning: Reference `p13:conf:strong-profile' on page 44 undefined on inpu
+t line 411.
+
+
+LaTeX Warning: Reference `p13:half:conditional' on page 44 undefined on input l
+ine 422.
+
+
+LaTeX Warning: Reference `p1:arith:dense' on page 44 undefined on input line 42
+5.
+
+
+LaTeX Warning: Reference `p13:half:pairs' on page 44 undefined on input line 42
+6.
+
+
+LaTeX Warning: Reference `p1:fixed:targets' on page 44 undefined on input line 
+432.
+
+
+LaTeX Warning: Reference `p13:conf:dense-pairs' on page 44 undefined on input l
+ine 435.
+
+) (./companion_sections/pair_rigidity.tex [44]
+
+LaTeX Warning: Citation `shparlinskisleiman2026' on page 45 undefined on input 
+line 18.
+
+
+LaTeX Warning: Reference `p13:rig:triple' on page 45 undefined on input line 26
+.
+
+
+LaTeX Warning: Reference `p13:rig:relative-nullity' on page 45 undefined on inp
+ut line 49.
+
+
+LaTeX Warning: Reference `p13:rig:defective' on page 45 undefined on input line
+ 88.
+
+
+LaTeX Warning: Reference `p13:rig:components' on page 45 undefined on input lin
+e 88.
+
+[45]
+
+LaTeX Warning: Reference `p14:comp:rigidity:short-basis' on page 46 undefined o
+n input line 119.
+
+
+LaTeX Warning: Reference `p13:rig:two-witnesses' on page 46 undefined on input 
+line 124.
+
+
+LaTeX Warning: Reference `p14:comp:rigidity:common-curve' on page 46 undefined 
+on input line 157.
+
+
+LaTeX Warning: Reference `p13:rig:common-curve' on page 46 undefined on input l
+ine 175.
+
+[46]
+
+LaTeX Warning: Citation `binyaminicluckersnovikov2024' on page 47 undefined on 
+input line 219.
+
+
+LaTeX Warning: Citation `binyaminicluckerskato2025' on page 47 undefined on inp
+ut line 237.
+
+(/usr/share/texmf/tex/latex/lm/t1lmtt.fd)
+
+LaTeX Warning: Reference `p13:rig:bcn' on page 47 undefined on input line 270.
+
+
+LaTeX Warning: Reference `p13:rig:sublinear-grid' on page 47 undefined on input
+ line 281.
+
+[47]
+
+LaTeX Warning: Reference `p13:rig:short-basis' on page 48 undefined on input li
+ne 304.
+
+
+LaTeX Warning: Reference `p13:rig:common-curve' on page 48 undefined on input l
+ine 313.
+
+
+LaTeX Warning: Reference `p13:rig:grid-fibres' on page 48 undefined on input li
+ne 318.
+
+
+LaTeX Warning: Reference `p13:rig:sublinear-grid' on page 48 undefined on input
+ line 320.
+
+
+LaTeX Warning: Reference `p13:rig:alignment' on page 48 undefined on input line
+ 341.
+
+
+LaTeX Warning: Reference `p14:comp:rigidity:aligned' on page 48 undefined on in
+put line 372.
+
+[48]
+
+LaTeX Warning: Reference `p13:rig:nonaligned' on page 49 undefined on input lin
+e 412.
+
+
+LaTeX Warning: Reference `p13:rig:aligned' on page 49 undefined on input line 4
+13.
+
+
+LaTeX Warning: Reference `p13:rig:defective' on page 49 undefined on input line
+ 430.
+
+
+LaTeX Warning: Reference `p13:rig:exact-probability' on page 49 undefined on in
+put line 434.
+
+
+LaTeX Warning: Reference `p13:rig:max-triple' on page 49 undefined on input lin
+e 436.
+
+
+LaTeX Warning: Reference `p13:rig:max-triple' on page 49 undefined on input lin
+e 439.
+
+
+LaTeX Warning: Reference `p13:rig:section' on page 49 undefined on input line 4
+48.
+
+[49]
+
+LaTeX Warning: Reference `p1:arith:runge' on page 50 undefined on input line 47
+1.
+
+
+LaTeX Warning: Reference `p1:arith:defects' on page 50 undefined on input line 
+488.
+
+
+LaTeX Warning: Reference `p13:rig:mertens' on page 50 undefined on input line 5
+21.
+
+
+LaTeX Warning: Reference `p13:rig:defective' on page 50 undefined on input line
+ 547.
+
+[50]
+
+LaTeX Warning: Reference `p13:rig:short-basis' on page 51 undefined on input li
+ne 563.
+
+
+LaTeX Warning: Reference `p13:rig:components' on page 51 undefined on input lin
+e 590.
+
+
+LaTeX Warning: Reference `p13:rig:short-dimension' on page 51 undefined on inpu
+t line 631.
+
+
+LaTeX Warning: Reference `p13:rig:short-support' on page 51 undefined on input 
+line 635.
+
+[51] [52]
+
+LaTeX Warning: Reference `p13:rig:factor-height' on page 53 undefined on input 
+line 762.
+
+
+LaTeX Warning: Reference `p13:rig:integer-gap' on page 53 undefined on input li
+ne 801.
+
+
+LaTeX Warning: Reference `p13:rig:primitive-order' on page 53 undefined on inpu
+t line 802.
+
+
+LaTeX Warning: Reference `p13:rig:two-polynomial' on page 53 undefined on input
+ line 823.
+
+[53]
+
+LaTeX Warning: Reference `p13:rig:common-curve' on page 54 undefined on input l
+ine 827.
+
+
+LaTeX Warning: Reference `p13:rig:two-witnesses' on page 54 undefined on input 
+line 834.
+
+
+LaTeX Warning: Reference `p13:rig:aligned' on page 54 undefined on input line 8
+68.
+
+
+LaTeX Warning: Reference `p13:rig:short-basis' on page 54 undefined on input li
+ne 872.
+
+
+LaTeX Warning: Reference `p13:rig:two-witnesses' on page 54 undefined on input 
+line 881.
+
+
+LaTeX Warning: Reference `p13:rig:common-curve' on page 54 undefined on input l
+ine 895.
+
+
+LaTeX Warning: Reference `p13:rig:line-matching' on page 54 undefined on input 
+line 908.
+
+
+LaTeX Warning: Reference `p13:rig:aligned-quantitative' on page 54 undefined on
+ input line 916.
+
+[54]
+
+LaTeX Warning: Reference `p13:rig:line-matching' on page 55 undefined on input 
+line 930.
+
+) (./companion_sections/triple_activities.tex
+
+LaTeX Warning: Reference `p14:comp:activity:deficit' on page 55 undefined on in
+put line 24.
+
+
+LaTeX Warning: Reference `p13:half:connected' on page 55 undefined on input lin
+e 54.
+
+
+LaTeX Warning: Reference `p13:activity:deficit' on page 55 undefined on input l
+ine 59.
+
+[55]
+
+LaTeX Warning: Reference `p13:activity:incompatible' on page 56 undefined on in
+put line 91.
+
+
+LaTeX Warning: Reference `p13:activity:section' on page 56 undefined on input l
+ine 104.
+
+
+LaTeX Warning: Reference `p1:arith:alignedrank' on page 56 undefined on input l
+ine 128.
+
+
+LaTeX Warning: Reference `p13:half:pairs' on page 56 undefined on input line 13
+5.
+
+
+LaTeX Warning: Reference `p1:arith:dense' on page 56 undefined on input line 13
+9.
+
+
+LaTeX Warning: Reference `p1:arith:core' on page 56 undefined on input line 144
+.
+
+
+LaTeX Warning: Reference `p1:arith:fixed-channel-mass' on page 56 undefined on 
+input line 149.
+
+
+LaTeX Warning: Reference `p1:arith:fixed-channel-mass' on page 56 undefined on 
+input line 158.
+
+
+LaTeX Warning: Reference `p13:activity:deficit' on page 56 undefined on input l
+ine 163.
+
+
+LaTeX Warning: Reference `p13:half:conditional' on page 56 undefined on input l
+ine 167.
+
+
+LaTeX Warning: Reference `p13:half:pairs' on page 56 undefined on input line 18
+3.
+
+[56]) (./companion_sections/third_cumulant.tex
+
+LaTeX Warning: Reference `p13:activity:section' on page 57 undefined on input l
+ine 8.
+
+
+LaTeX Warning: Reference `p13:activity:section' on page 57 undefined on input l
+ine 22.
+
+
+Underfull \hbox (badness 1028) in paragraph at lines 47--50
+\T1/lmr/m/n/10.95 (+20) All co-ef-fi-cients in the last ex-pres-sion are non-ne
+g-a-tive. Bound-ing its four lengths by
+[57]
+
+LaTeX Warning: Reference `p13:third:density' on page 58 undefined on input line
+ 74.
+
+
+LaTeX Warning: Reference `p13:third:density' on page 58 undefined on input line
+ 94.
+
+
+LaTeX Warning: Reference `p14:comp:third:aligned-family' on page 58 undefined o
+n input line 140.
+
+[58]
+
+LaTeX Warning: Reference `p13:third:aligned-family' on page 59 undefined on inp
+ut line 165.
+
+
+LaTeX Warning: Reference `p1:fixed:propagation' on page 59 undefined on input l
+ine 168.
+
+
+LaTeX Warning: Reference `p1:arith:onedfect' on page 59 undefined on input line
+ 204.
+
+
+LaTeX Warning: Reference `p13:third:witness-nullity' on page 59 undefined on in
+put line 244.
+
+[59]
+
+LaTeX Warning: Reference `p13:activity:kappa-comparison' on page 60 undefined o
+n input line 264.
+
+
+LaTeX Warning: Reference `p13:third:lower' on page 60 undefined on input line 2
+78.
+
+
+LaTeX Warning: Reference `p13:conf:near-primitive' on page 60 undefined on inpu
+t line 281.
+
+
+LaTeX Warning: Reference `p13:half:connected' on page 60 undefined on input lin
+e 286.
+
+
+LaTeX Warning: Reference `p13:conf:near-primitive' on page 60 undefined on inpu
+t line 293.
+
+
+LaTeX Warning: Reference `p13:third:aligned' on page 60 undefined on input line
+ 298.
+
+
+LaTeX Warning: Reference `p13:rig:nonaligned' on page 60 undefined on input lin
+e 300.
+
+
+LaTeX Warning: Reference `p13:conf:strong-profile' on page 60 undefined on inpu
+t line 313.
+
+
+LaTeX Warning: Reference `p13:activity:kappa-comparison' on page 60 undefined o
+n input line 321.
+
+[60]
+
+LaTeX Warning: Reference `p13:third:section' on page 61 undefined on input line
+ 347.
+
+
+LaTeX Warning: Reference `p13:third:aligned-family' on page 61 undefined on inp
+ut line 352.
+
+
+LaTeX Warning: Reference `p1:arith:asymmetric' on page 61 undefined on input li
+ne 364.
+
+
+LaTeX Warning: Reference `p1:arith:alignedrank' on page 61 undefined on input l
+ine 374.
+
+
+LaTeX Warning: Reference `p13:third:true-compression' on page 61 undefined on i
+nput line 387.
+
+
+LaTeX Warning: Reference `p1:arith:asymmetric' on page 61 undefined on input li
+ne 389.
+
+
+LaTeX Warning: Reference `p1:arith:fixed-channel-rank' on page 61 undefined on 
+input line 413.
+
+[61]
+
+LaTeX Warning: Reference `p1:arith:runge' on page 62 undefined on input line 43
+5.
+
+
+LaTeX Warning: Reference `p13:third:density' on page 62 undefined on input line
+ 469.
+
+
+LaTeX Warning: Reference `p13:third:rational-rank' on page 62 undefined on inpu
+t line 470.
+
+
+LaTeX Warning: Reference `p13:third:source-weight' on page 62 undefined on inpu
+t line 489.
+
+[62]
+
+LaTeX Warning: Reference `p13:third:source-weight' on page 63 undefined on inpu
+t line 508.
+
+
+LaTeX Warning: Reference `p13:third:aligned-family' on page 63 undefined on inp
+ut line 576.
+
+[63]
+
+LaTeX Warning: Reference `p1:arith:marginalsum' on page 64 undefined on input l
+ine 592.
+
+
+LaTeX Warning: Reference `p1:arith:fixed-channel-mass' on page 64 undefined on 
+input line 598.
+
+) (./companion_sections/certificates.tex
+
+LaTeX Warning: Reference `p14:comp:certificate-tools' on page 64 undefined on i
+nput line 13.
+
+
+LaTeX Warning: Reference `p14:comp:certificate-rankin' on page 64 undefined on 
+input line 34.
+
+[64]
+
+LaTeX Warning: Reference `p14:comp:certificate-moderate' on page 65 undefined o
+n input line 82.
+
+
+LaTeX Warning: Reference `p14:comp:certificate-degrees' on page 65 undefined on
+ input line 101.
+
+
+LaTeX Warning: Reference `p14:comp:certificate-generator' on page 65 undefined 
+on input line 129.
+
+
+LaTeX Warning: Reference `p14:cert:section' on page 65 undefined on input line 
+135.
+
+[65]
+
+LaTeX Warning: Reference `p1:core:rankin' on page 66 undefined on input line 13
+8.
+
+
+LaTeX Warning: Reference `p1:core:moderate' on page 66 undefined on input line 
+158.
+
+
+LaTeX Warning: Reference `p1:core:moderate-count' on page 66 undefined on input
+ line 173.
+
+
+LaTeX Warning: Reference `p1:core:moderate-baseline' on page 66 undefined on in
+put line 188.
+
+
+LaTeX Warning: Reference `p1:core:degrees' on page 66 undefined on input line 1
+93.
+
+[66]
+
+LaTeX Warning: Reference `p1:core:generator' on page 67 undefined on input line
+ 223.
+
+
+LaTeX Warning: Reference `p1:core:generator-bound' on page 67 undefined on inpu
+t line 249.
+
+) (./companion_sections/exact_reconstruction.tex [67]
+
+LaTeX Warning: Reference `p14:comp:transfer-dense-targets' on page 68 undefined
+ on input line 58.
+
+
+LaTeX Warning: Reference `p1:fixed:targets' on page 68 undefined on input line 
+72.
+
+
+LaTeX Warning: Reference `p14:comp:confinement' on page 68 undefined on input l
+ine 86.
+
+
+LaTeX Warning: Reference `p13:half:connected' on page 68 undefined on input lin
+e 88.
+
+
+LaTeX Warning: Reference `p13:transfer:primitive' on page 68 undefined on input
+ line 91.
+
+
+LaTeX Warning: Reference `p14:comp:transfer-small-kernels' on page 68 undefined
+ on input line 114.
+
+[68]
+
+LaTeX Warning: Hyper reference `p18:conf:fixed-primitive' on page 69 undefined 
+on input line 148.
+
+
+LaTeX Warning: Reference `p14:comp:confinement' on page 69 undefined on input l
+ine 149.
+
+
+LaTeX Warning: Reference `p13:half:connected' on page 69 undefined on input lin
+e 165.
+
+[69]
+
+LaTeX Warning: Reference `p1:arith:fixed-branching' on page 70 undefined on inp
+ut line 262.
+
+
+LaTeX Warning: Reference `p13:transfer:explicit-exception' on page 70 undefined
+ on input line 281.
+
+[70]
+
+LaTeX Warning: Reference `p13:half:conditional' on page 71 undefined on input l
+ine 314.
+
+
+LaTeX Warning: Reference `p13:activity:deficit' on page 71 undefined on input l
+ine 322.
+
+
+LaTeX Warning: Reference `p13:half:conditional' on page 71 undefined on input l
+ine 325.
+
+
+LaTeX Warning: Reference `p1:core:moderate' on page 71 undefined on input line 
+362.
+
+
+LaTeX Warning: Reference `p1:core:generator' on page 71 undefined on input line
+ 362.
+
+
+LaTeX Warning: Reference `p1:core:degrees' on page 71 undefined on input line 3
+85.
+
+
+LaTeX Warning: Reference `p1:core:generator' on page 71 undefined on input line
+ 387.
+
+[71]
+
+LaTeX Warning: Reference `p13:transfer:independent-tail' on page 72 undefined o
+n input line 426.
+
+
+LaTeX Warning: Reference `p13:activity:pair-partition' on page 72 undefined on 
+input line 431.
+
+
+LaTeX Warning: Reference `p13:transfer:independent-deficit' on page 72 undefine
+d on input line 433.
+
+
+LaTeX Warning: Reference `p13:transfer:fixed-deficit' on page 72 undefined on i
+nput line 436.
+
+
+LaTeX Warning: Reference `p13:transfer:independent-tail' on page 72 undefined o
+n input line 440.
+
+[72]
+
+LaTeX Warning: Reference `p13:transfer:primitive' on page 73 undefined on input
+ line 483.
+
+
+LaTeX Warning: Reference `p13:transfer:dense-targets' on page 73 undefined on i
+nput line 509.
+
+
+LaTeX Warning: Reference `p13:transfer:compressed-target' on page 73 undefined 
+on input line 528.
+
+
+LaTeX Warning: Reference `p1:arith:alignedrank' on page 73 undefined on input l
+ine 540.
+
+
+LaTeX Warning: Reference `p1:arith:fixed-channel-mass' on page 73 undefined on 
+input line 543.
+
+
+LaTeX Warning: Reference `p13:transfer:two-pair-rank' on page 73 undefined on i
+nput line 552.
+
+
+LaTeX Warning: Reference `p13:rig:nonaligned' on page 73 undefined on input lin
+e 557.
+
+
+LaTeX Warning: Reference `p13:rig:aligned' on page 73 undefined on input line 5
+57.
+
+
+LaTeX Warning: Reference `p13:transfer:fixed-activity-bound' on page 73 undefin
+ed on input line 561.
+
+[73]
+
+LaTeX Warning: Reference `p13:transfer:fixed-deficit' on page 74 undefined on i
+nput line 573.
+
+
+LaTeX Warning: Reference `p13:transfer:independent-deficit' on page 74 undefine
+d on input line 577.
+
+
+LaTeX Warning: Reference `p13:transfer:fixed-activity-bound' on page 74 undefin
+ed on input line 584.
+
+
+LaTeX Warning: Reference `p13:transfer:independent-tail' on page 74 undefined o
+n input line 624.
+
+
+LaTeX Warning: Reference `p13:transfer:moderate-budget' on page 74 undefined on
+ input line 630.
+
+
+LaTeX Warning: Reference `p1:core:generator' on page 74 undefined on input line
+ 634.
+
+
+LaTeX Warning: Reference `p13:transfer:saturated-budget' on page 74 undefined o
+n input line 642.
+
+[74]
+
+LaTeX Warning: Reference `p13:transfer:large-core' on page 75 undefined on inpu
+t line 715.
+
+
+LaTeX Warning: Reference `p13:transfer:low-rank-tail' on page 75 undefined on i
+nput line 716.
+
+[75]
+
+LaTeX Warning: Reference `p13:transfer:large-core' on page 76 undefined on inpu
+t line 746.
+
+
+LaTeX Warning: Reference `p13:transfer:core-ratio' on page 76 undefined on inpu
+t line 747.
+
+
+LaTeX Warning: Reference `p13:transfer:fixed-activities' on page 76 undefined o
+n input line 748.
+
+
+LaTeX Warning: Reference `p13:transfer:independent-deficit' on page 76 undefine
+d on input line 752.
+
+
+LaTeX Warning: Reference `p13:transfer:pair-deficit' on page 76 undefined on in
+put line 755.
+
+
+LaTeX Warning: Reference `p13:transfer:connected-tail' on page 76 undefined on 
+input line 756.
+
+
+LaTeX Warning: Reference `p13:transfer:low-rank-tail' on page 76 undefined on i
+nput line 761.
+
+
+LaTeX Warning: Reference `p13:transfer:large-core' on page 76 undefined on inpu
+t line 763.
+
+
+LaTeX Warning: Reference `p13:transfer:primitive-tail' on page 76 undefined on 
+input line 764.
+
+
+LaTeX Warning: Reference `p13:transfer:dense-targets' on page 76 undefined on i
+nput line 772.
+
+
+LaTeX Warning: Reference `p13:transfer:small-kernels' on page 76 undefined on i
+nput line 773.
+
+
+LaTeX Warning: Reference `p13:transfer:dense-targets' on page 76 undefined on i
+nput line 780.
+
+
+LaTeX Warning: Reference `p1:fixed:recovery' on page 76 undefined on input line
+ 809.
+
+[76]
+
+LaTeX Warning: Reference `p1:arith:geometric' on page 77 undefined on input lin
+e 842.
+
+
+LaTeX Warning: Reference `p1:arith:geometric' on page 77 undefined on input lin
+e 862.
+
+
+LaTeX Warning: Reference `p1:arith:geometric' on page 77 undefined on input lin
+e 881.
+
+
+LaTeX Warning: Reference `p1:arith:geometric' on page 77 undefined on input lin
+e 889.
+
+
+LaTeX Warning: Reference `p1:arith:pell' on page 77 undefined on input line 894
+.
+
+
+LaTeX Warning: Reference `p1:arith:runge' on page 77 undefined on input line 89
+8.
+
+[77]
+
+LaTeX Warning: Reference `p13:transfer:dense-target-bound' on page 78 undefined
+ on input line 934.
+
+
+LaTeX Warning: Reference `p13:transfer:restricted-dense' on page 78 undefined o
+n input line 939.
+
+
+LaTeX Warning: Reference `p13:transfer:small-kernels' on page 78 undefined on i
+nput line 943.
+
+
+LaTeX Warning: Reference `p13:transfer:small-kernels-bound' on page 78 undefine
+d on input line 974.
+
+
+LaTeX Warning: Reference `p13:half:small-kernels' on page 78 undefined on input
+ line 977.
+
+) (./companion_sections/uniform_support.tex [78]
+
+LaTeX Warning: Reference `p13:transfer:independent-tail' on page 79 undefined o
+n input line 31.
+
+
+LaTeX Warning: Reference `p1:arith:fixed-support' on page 79 undefined on input
+ line 39.
+
+) (./companion_sections/poisson_calculus.tex
+
+LaTeX Warning: Citation `zacharovashwang2010' on page 79 undefined on input lin
+e 13.
+
+
+LaTeX Warning: Citation `bkn2014' on page 79 undefined on input line 14.
+
+[79]
+
+LaTeX Warning: Reference `p14:comp:poisson-differences' on page 80 undefined on
+ input line 50.
+
+
+LaTeX Warning: Reference `p1:discussion:compound-coefficient' on page 80 undefi
+ned on input line 80.
+
+
+LaTeX Warning: Reference `p1:discussion:general-norm' on page 80 undefined on i
+nput line 84.
+
+
+LaTeX Warning: Reference `p1:discussion:compound-coefficient' on page 80 undefi
+ned on input line 85.
+
+
+LaTeX Warning: Reference `p1:discussion:charlier-norm' on page 80 undefined on 
+input line 92.
+
+
+LaTeX Warning: Reference `p1:discussion:charlier-norm' on page 80 undefined on 
+input line 96.
+
+
+LaTeX Warning: Reference `p1:discussion:finite-norm' on page 80 undefined on in
+put line 114.
+
+
+LaTeX Warning: Reference `p1:discussion:lambda-two' on page 80 undefined on inp
+ut line 118.
+
+[80]
+
+LaTeX Warning: Reference `p1:discussion:general-norm' on page 81 undefined on i
+nput line 146.
+
+) (./companion_sections/moment_obstruction.tex) (./formalization.tex [81]
+
+LaTeX Warning: Reference `p1:fixed:propagation' on page 82 undefined on input l
+ine 29.
+
+) (./assistance.tex) [82] (./bibliography_companion.tex [83]) [84]
+(build/companion.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ )
+(see the transcript file for additional information)</usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/share/texmf/fonts/type1/
+public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/s
+hare/texmf/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf/fonts/type1/public
+/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/t
+exmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lm
+mi7.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fon
+ts/type1/public/lm/lmmib10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pf
+b></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/typ
+e1/public/lm/lmr5.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/sh
+are/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/l
+m/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf
+/fonts/type1/public/lm/lmri8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10
+.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/
+type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on build/companion.pdf (84 pages, 862540 bytes).
+Transcript written on build/companion.log.

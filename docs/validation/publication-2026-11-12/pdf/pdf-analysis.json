@@ -1,0 +1,94 @@
+{
+  "status": "passed",
+  "pdfs": [
+    {
+      "document": "main",
+      "filename": "P1_Main_EN.pdf",
+      "pages": 33,
+      "sha256": "c4e01feabf33dd246a542d835d28f1bdf7f2d28c2154bece545a375d32626a00"
+    },
+    {
+      "document": "companion",
+      "filename": "P1_Companion_EN.pdf",
+      "pages": 84,
+      "sha256": "6bafe2ef9337626a5fe7443d02660db5432bcbee4a61cddfef80edec12d9de4b"
+    }
+  ],
+  "documents": [
+    {
+      "document": "main",
+      "pages": 33,
+      "normalized_text_outside_notice_identical_to_received": true,
+      "characters_outside_page_bounds": [],
+      "embedded_fonts": [
+        "/CIXFWA+LMMathSymbols7-Regular",
+        "/FQAPOF+LMRoman10-Bold",
+        "/GWTFTU+LMRoman8-Italic",
+        "/HELXLV+LMRoman10-Italic",
+        "/IQGVIJ+MSBM10",
+        "/JGFIFN+LMRoman10-Regular",
+        "/JHLFFL+LMMathSymbols10-Regular",
+        "/LJINZV+LMRoman8-Regular",
+        "/MPNIWJ+LMMathItalic6-Regular",
+        "/NFXKFR+LMMathItalic8-Regular",
+        "/NQLFFQ+rsfs10",
+        "/OLGLRN+LMMathExtension10-Regular",
+        "/QQUZEA+LMRoman6-Regular",
+        "/URLCJS+LMMathSymbols8-Regular",
+        "/UUUKJO+LMRoman12-Regular",
+        "/VJPDXL+LMMono10-Regular",
+        "/VKQHXT+LMRoman12-Bold",
+        "/XISSLE+LMMathItalic10-Regular",
+        "/YNQFZC+LMRoman7-Regular",
+        "/YTJUOO+LMMathSymbols6-Regular",
+        "/YUJRRY+LMMathItalic7-Regular"
+      ],
+      "validated_links": {
+        "internal": 153,
+        "reciprocal": 65,
+        "uri": 40
+      },
+      "publication_statement_index_uri": "https://github.com/Vulkin-prog/paper-p1-lean/blob/main/docs/manuscript-results-publication-2026-11-12.json"
+    },
+    {
+      "document": "companion",
+      "pages": 84,
+      "normalized_text_outside_notice_identical_to_received": true,
+      "characters_outside_page_bounds": [],
+      "embedded_fonts": [
+        "/APYYFX+LMRoman10-Regular",
+        "/BOQXUG+LMRoman10-Italic",
+        "/DJDISA+LMRoman8-Italic",
+        "/GDHIHA+LMRoman8-Bold",
+        "/IACSPA+LMRoman5-Regular",
+        "/JLHQBI+LMMathItalic10-Regular",
+        "/KPKLQS+LMMathItalic6-Regular",
+        "/MAVHKT+LMMathSymbols8-Regular",
+        "/NKYPWD+LMRoman10-Bold",
+        "/NLZKMG+LMMathSymbols6-Regular",
+        "/NOXQQM+LMRoman7-Regular",
+        "/OGUNPN+EUFM10",
+        "/POYHVO+LMMathItalic8-Regular",
+        "/SOXLQA+LMRoman8-Regular",
+        "/SZFUCB+LMRoman6-Regular",
+        "/TTVNVA+MSBM10",
+        "/UMZSWI+LMMathSymbols10-Regular",
+        "/UOBGNU+LMMathItalic10-Bold",
+        "/UPZVBA+LMMono10-Regular",
+        "/UUUKJO+LMRoman12-Regular",
+        "/WDAOBJ+LMMathItalic7-Regular",
+        "/WZBWRU+LMMathExtension10-Regular",
+        "/ZEVDCM+LMRoman12-Bold"
+      ],
+      "validated_links": {
+        "internal": 386,
+        "reciprocal": 39,
+        "uri": 37
+      },
+      "publication_statement_index_uri": "https://github.com/Vulkin-prog/paper-p1-lean/blob/main/docs/manuscript-results-publication-2026-11-12.json"
+    }
+  ],
+  "text_bounds_tolerance_pt": 0.5,
+  "comparison_baseline": "exact received publication PDFs",
+  "text_comparison_normalization": "NFKC Unicode; all whitespace removed because of PDF extractor word-spacing differences"
+}

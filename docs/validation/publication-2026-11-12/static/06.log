@@ -1,0 +1,27 @@
+component comparator/p1_affine_spectra.json: 4 explicit statement holes, complete Solution, Mathlib-only Challenge.
+component comparator/p1_asymmetric_profiles.json: 3 explicit statement holes, complete Solution, Mathlib-only Challenge.
+component comparator/p1_conditioning.json: 4 explicit statement holes, complete Solution, Mathlib-only Challenge.
+component comparator/p1_dependent_expansion.json: 4 explicit statement holes, complete Solution, Mathlib-only Challenge.
+component comparator/p1_exponential_divergence.json: 4 explicit statement holes, complete Solution, Mathlib-only Challenge.
+component comparator/p1_factorial_cumulants.json: 5 explicit statement holes, complete Solution, Mathlib-only Challenge.
+component comparator/p1_integral_curve_count.json: 3 explicit statement holes, complete Solution, Mathlib-only Challenge.
+component comparator/p1_local_rigidity.json: 5 explicit statement holes, complete Solution, Mathlib-only Challenge.
+component comparator/p1_moment_obstruction.json: 5 explicit statement holes, complete Solution, Mathlib-only Challenge.
+component comparator/p1_poisson_reference.json: 4 explicit statement holes, complete Solution, Mathlib-only Challenge.
+component comparator/p1_poisson_scales.json: 5 explicit statement holes, complete Solution, Mathlib-only Challenge.
+component comparator/p1_positional_field.json: 3 explicit statement holes, complete Solution, Mathlib-only Challenge.
+component comparator/p1_prime_cylinders.json: 4 explicit statement holes, complete Solution, Mathlib-only Challenge.
+component comparator/p1_private_obstruction.json: 4 explicit statement holes, complete Solution, Mathlib-only Challenge.
+component comparator/p1_quadratic_approximation.json: 4 explicit statement holes, complete Solution, Mathlib-only Challenge.
+component comparator/p1_quadratic_kernels.json: 4 explicit statement holes, complete Solution, Mathlib-only Challenge.
+component comparator/p1_smooth_windows.json: 3 explicit statement holes, complete Solution, Mathlib-only Challenge.
+registration comparator/registrations/p1_arithmetic_geometry.json: 12 explicit statement holes, complete Solution, Mathlib-only Challenge.
+registration comparator/registrations/p1_profiles_smooth.json: 6 explicit statement holes, complete Solution, Mathlib-only Challenge.
+registration comparator/registrations/p1_affine_conditioning.json: 12 explicit statement holes, complete Solution, Mathlib-only Challenge.
+registration comparator/registrations/p1_cumulants_obstructions.json: 14 explicit statement holes, complete Solution, Mathlib-only Challenge.
+registration comparator/registrations/p1_poisson_fields.json: 16 explicit statement holes, complete Solution, Mathlib-only Challenge.
+registration comparator/registrations/p1_exponential_cylinders.json: 8 explicit statement holes, complete Solution, Mathlib-only Challenge.
+Prepared 6 planned registrations and 68 selected declarations.
+Preserved 17 separately verified components and their 68 original selections.
+Submission policy: one complete registration cycle at a time.
+Scope: preparation checks; no Comparator or Palomar verification is inferred.
