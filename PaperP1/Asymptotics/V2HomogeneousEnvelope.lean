@@ -2,7 +2,7 @@ module
 
 public import PaperP1.Asymptotics.FixedArityHomogeneousMass
 
-/-! # V2 Lemma 2.4: the finite envelope and its uniform nominal comparison
+/-! # V2 Lemma 2.3: the finite envelope and its uniform nominal comparison
 
 The finite assertions allow inconsistent prescriptions and zero marginals.
 The eventual comparison retains 2^|I| explicitly, even for growing families.
