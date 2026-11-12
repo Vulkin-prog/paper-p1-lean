@@ -18,6 +18,8 @@ The author has resumed the six successive cycles for source commit
 [passed](palomar/publication/quadratic_limits/preflight/VALIDATION.json), and
 Palomar's own verification has also
 [passed](palomar/publication/quadratic_limits/verification/VALIDATION.json).
+The separate [Challenge rendering](palomar/publication/quadratic_limits/rendering/VALIDATION.json)
+also passed, with compiler-backed anchors for all ten selected statements.
 See [current public progress](palomar/publication/CYCLE_STATE.json).
 The author subsequently authorized publication of favorable actual reviews
 without a new approval prompt. Each review must first be examined and presented;

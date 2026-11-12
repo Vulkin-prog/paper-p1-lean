@@ -83,6 +83,10 @@ future manuscript version and preparing Palomar registrations after completion.
   Ordinary intake was authenticated and both temporary proof artifacts deleted.
   Palomar's separate verification `43259436857` passed too; its public receipt
   is `palomar/publication/quadratic_limits/verification/VALIDATION.json`.
+  Palomar's separate Challenge rendering `43276764491` also passed, with all ten
+  compiler-backed anchors checked; its artifact and receipt are archived under
+  `palomar/publication/quadratic_limits/rendering/`. This is not an editorial
+  review or an issued registration.
   That initial intake authorization alone did not authorize publication; the
   subsequent explicit positive-review delegation below supplies that authority.
   Read `palomar/publication/CYCLE_STATE.json` for public

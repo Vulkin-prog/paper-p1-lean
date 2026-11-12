@@ -1,0 +1,136 @@
+{
+  "artifact_tree_sha256": "b778489333bf753e3d6a6096664f6b708c4d6adc2cb4f2428697fac5ec503b5f",
+  "bwrap_source_tag": "v0.12.0",
+  "entrypoint": "Challenge/index.html",
+  "errors": [],
+  "format": "verso-html",
+  "lean_toolchain": "leanprover/lean4:v4.36.0-rc2",
+  "limits": {
+    "artifact_bytes": 26214400,
+    "artifact_files": 2000,
+    "artifact_nodes": 4000,
+    "build_file_bytes": 2147483648,
+    "memory_bytes": 12884901888,
+    "open_files": 4096,
+    "per_file_bytes": 8388608,
+    "tasks": 512,
+    "wall_seconds": 21600,
+    "workspace_bytes": 12884901888
+  },
+  "mathlib_cache": {
+    "bytes": 0,
+    "downloaded": 0,
+    "requested": 9081
+  },
+  "prepared_at": "2026-11-12T19:13:27Z",
+  "rendered_at": "2026-11-12T19:55:45Z",
+  "renderer_commit": "14aa8d6b3c2f14a8540605e37144560b9a00e7e7",
+  "schema_version": 3,
+  "source": {
+    "challenge_path": "RegistryV2/ChallengeP1V2QuadraticLimits.lean",
+    "challenge_sha256": "47132743839203f785d3b4b7243977fa715d5eee8dfeb0cd3cd439930f10537f",
+    "commit": "f9a2d213265a6833318745dd7f2d74c02090ab19",
+    "comparator_config_path": "RegistryV2/comparator/p1_quadratic_limits.json",
+    "lakefile_path": "RegistryV2/lakefile.toml",
+    "lean_toolchain_path": "RegistryV2/lean-toolchain",
+    "project_path": "RegistryV2",
+    "repository": "Vulkin-prog/paper-p1-lean",
+    "repository_url": "https://github.com/Vulkin-prog/paper-p1-lean",
+    "solution_path": "RegistryV2/SolutionP1V2QuadraticLimits.lean"
+  },
+  "stage": "complete",
+  "status": "pass",
+  "surface": {
+    "audit_declarations": [
+      {
+        "declaration": "theorem PaperP1Registry.V2.QuadraticLimits.source_probability (N L : Nat) :\n  And (Measurable (PaperP1Registry.V2.QuadraticLimits.runCount N L))\n    (And\n      (\u2200 (j : Nat),\n        MeasureTheory.Integrable (fun \u03c9 => HPow.hPow (\u2191(PaperP1Registry.V2.QuadraticLimits.runCount N L \u03c9)) j)\n          PaperP1Registry.V2.QuadraticLimits.primeSignMeasure)\n      (And (\u2200 (k : Nat), LE.le 0 (PaperP1Registry.V2.QuadraticLimits.sourceMass N L k))\n        (HasSum (PaperP1Registry.V2.QuadraticLimits.sourceMass N L) 1)))",
+        "name": "PaperP1Registry.V2.QuadraticLimits.source_probability"
+      },
+      {
+        "declaration": "theorem PaperP1Registry.V2.QuadraticLimits.poisson_expansion (C \u03b5 : Real) (h\u03b5 : LT.lt 0 \u03b5) :\n  Exists fun N\u2080 =>\n    And (LE.le 10 N\u2080)\n      (\u2200 (N : Nat),\n        GE.ge N N\u2080 \u2192\n          \u2200 (L : Nat),\n            LE.le (abs (HSub.hSub (\u2191L) (HDiv.hDiv (Real.log \u2191N) (Real.log 2)))) C \u2192\n              And\n                (LE.le\n                  (abs\n                    (HSub.hSub (PaperP1Registry.V2.QuadraticLimits.actualPoissonTV N L)\n                      (HMul.hMul (HDiv.hDiv (PaperP1Registry.V2.QuadraticLimits.secondCumulant N L) 4)\n                        (PaperP1Registry.V2.QuadraticLimits.secondNorm\n                          (PaperP1Registry.V2.QuadraticLimits.actualMean N L)))))\n                  (HPow.hPow (\u2191N) (HAdd.hAdd (-4 / 3) \u03b5)))\n                (LE.le\n                  (abs\n                    (HSub.hSub (PaperP1Registry.V2.QuadraticLimits.nominalPoissonTV N L)\n                      (HMul.hMul (HDiv.hDiv (PaperP1Registry.V2.QuadraticLimits.secondCumulant N L) 4)\n                        (PaperP1Registry.V2.QuadraticLimits.secondNorm\n                          (PaperP1Registry.V2.QuadraticLimits.nominalMean N L)))))\n                  (HPow.hPow (\u2191N) (HAdd.hAdd (-1) \u03b5))))",
+        "name": "PaperP1Registry.V2.QuadraticLimits.poisson_expansion"
+      },
+      {
+        "declaration": "theorem PaperP1Registry.V2.QuadraticLimits.moving_residue_equivalent (C \u03c4 : Real) :\n  LT.lt 0 \u03c4 \u2192\n    Exists fun N\u2080 =>\n      And (LE.le 10 N\u2080)\n        (\u2200 (N : Nat),\n          GE.ge N N\u2080 \u2192\n            \u2200 (L : Nat),\n              LE.le (abs (HSub.hSub (\u2191L) (HDiv.hDiv (Real.log \u2191N) (Real.log 2)))) C \u2192\n                And (LT.lt 0 (PaperP1Registry.V2.QuadraticLimits.phaseScale N L))\n                  (And\n                    (LE.le\n                      (abs\n                        (HSub.hSub\n                          (HDiv.hDiv (PaperP1Registry.V2.QuadraticLimits.nominalPoissonTV N L)\n                            (PaperP1Registry.V2.QuadraticLimits.phaseScale N L))\n                          1))\n                      \u03c4)\n                    (LE.le\n                      (abs\n                        (HSub.hSub\n                          (HDiv.hDiv (PaperP1Registry.V2.QuadraticLimits.actualPoissonTV N L)\n                            (PaperP1Registry.V2.QuadraticLimits.phaseScale N L))\n                          1))\n                      \u03c4)))",
+        "name": "PaperP1Registry.V2.QuadraticLimits.moving_residue_equivalent"
+      },
+      {
+        "declaration": "theorem PaperP1Registry.V2.QuadraticLimits.mean_bias_quantized (N L : Nat) (hN : LE.le 2 N) (hL : LT.lt 0 L) :\n  Exists fun b =>\n    And\n      (Eq\n        (HSub.hSub (PaperP1Registry.V2.QuadraticLimits.actualMean N L)\n          (PaperP1Registry.V2.QuadraticLimits.nominalMean N L))\n        (HMul.hMul (Inv.inv (HPow.hPow 2 L)) \u2191b))\n      (Or (Eq (PaperP1Registry.V2.QuadraticLimits.actualMean N L) (PaperP1Registry.V2.QuadraticLimits.nominalMean N L))\n        (LE.le (Inv.inv (HPow.hPow 2 L))\n          (abs\n            (HSub.hSub (PaperP1Registry.V2.QuadraticLimits.actualMean N L)\n              (PaperP1Registry.V2.QuadraticLimits.nominalMean N L)))))",
+        "name": "PaperP1Registry.V2.QuadraticLimits.mean_bias_quantized"
+      },
+      {
+        "declaration": "theorem PaperP1Registry.V2.QuadraticLimits.nominal_quadratic_comparison (C : Real) :\n  Exists fun c =>\n    And (LT.lt 0 c)\n      (\u2200 (\u03b5 : Real),\n        LT.lt 0 \u03b5 \u2192\n          Exists fun N\u2080 =>\n            And (LE.le 10 N\u2080)\n              (\u2200 (N : Nat),\n                GE.ge N N\u2080 \u2192\n                  \u2200 (L : Nat),\n                    LE.le (abs (HSub.hSub (\u2191L) (HDiv.hDiv (Real.log \u2191N) (Real.log 2)))) C \u2192\n                      And\n                        (LE.le (PaperP1Registry.V2.QuadraticLimits.nominalQuadraticError N L)\n                          (HPow.hPow (\u2191N) (HAdd.hAdd (-1) \u03b5)))\n                        (Ne (PaperP1Registry.V2.QuadraticLimits.actualMean N L)\n                            (PaperP1Registry.V2.QuadraticLimits.nominalMean N L) \u2192\n                          And\n                            (LE.le\n                              (HMul.hMul c\n                                (abs\n                                  (HSub.hSub (PaperP1Registry.V2.QuadraticLimits.actualMean N L)\n                                    (PaperP1Registry.V2.QuadraticLimits.nominalMean N L))))\n                              (PaperP1Registry.V2.QuadraticLimits.nominalQuadraticError N L))\n                            (LE.le (PaperP1Registry.V2.QuadraticLimits.nominalQuadraticError N L)\n                              (HMul.hMul (HAdd.hAdd 6 c)\n                                (abs\n                                  (HSub.hSub (PaperP1Registry.V2.QuadraticLimits.actualMean N L)\n                                    (PaperP1Registry.V2.QuadraticLimits.nominalMean N L))))))))",
+        "name": "PaperP1Registry.V2.QuadraticLimits.nominal_quadratic_comparison"
+      },
+      {
+        "declaration": "theorem PaperP1Registry.V2.QuadraticLimits.reference_series (N L : Nat) :\n  And\n    (HasSum\n      (PaperP1Registry.V2.QuadraticLimits.quadraticMass (PaperP1Registry.V2.QuadraticLimits.actualMean N L)\n        (PaperP1Registry.V2.QuadraticLimits.secondCumulant N L))\n      1)\n    (Summable fun k =>\n      abs\n        (HSub.hSub (PaperP1Registry.V2.QuadraticLimits.sourceMass N L k)\n          (PaperP1Registry.V2.QuadraticLimits.quadraticMass (PaperP1Registry.V2.QuadraticLimits.actualMean N L)\n            (PaperP1Registry.V2.QuadraticLimits.secondCumulant N L) k)))",
+        "name": "PaperP1Registry.V2.QuadraticLimits.reference_series"
+      },
+      {
+        "declaration": "theorem PaperP1Registry.V2.QuadraticLimits.optimal_quadratic (C \u03b5 : Real) (h\u03b5 : LT.lt 0 \u03b5) :\n  Exists fun a =>\n    And (LT.lt 0 a)\n      (Exists fun N\u2080 =>\n        And (LE.le 10 N\u2080)\n          (\u2200 (N : Nat),\n            GE.ge N N\u2080 \u2192\n              \u2200 (L : Nat),\n                LE.le (abs (HSub.hSub (\u2191L) (HDiv.hDiv (Real.log \u2191N) (Real.log 2)))) C \u2192\n                  And\n                    (LE.le (HMul.hMul a (HPow.hPow (\u2191N) (HSub.hSub (-4 / 3) \u03b5)))\n                      (PaperP1Registry.V2.QuadraticLimits.quadraticError N L))\n                    (And\n                      (LE.le (PaperP1Registry.V2.QuadraticLimits.quadraticError N L)\n                        (HPow.hPow (\u2191N) (HAdd.hAdd (-4 / 3) \u03b5)))\n                      (And\n                        (LE.le\n                          (abs\n                            (HSub.hSub (PaperP1Registry.V2.QuadraticLimits.actualMean N L)\n                              (PaperP1Registry.V2.QuadraticLimits.nominalMean N L)))\n                          (HMul.hMul (HPow.hPow 2 C) (HPow.hPow (\u2191N) (HAdd.hAdd (-1) \u03b5))))\n                        (And\n                          (\u2200 (k : Nat),\n                            LE.le 0\n                              (PaperP1Registry.V2.QuadraticLimits.quadraticMass\n                                (PaperP1Registry.V2.QuadraticLimits.actualMean N L)\n                                (PaperP1Registry.V2.QuadraticLimits.secondCumulant N L) k))\n                          (HasSum\n                            (PaperP1Registry.V2.QuadraticLimits.quadraticMass\n                              (PaperP1Registry.V2.QuadraticLimits.actualMean N L)\n                              (PaperP1Registry.V2.QuadraticLimits.secondCumulant N L))\n                            1))))))",
+        "name": "PaperP1Registry.V2.QuadraticLimits.optimal_quadratic"
+      },
+      {
+        "declaration": "theorem PaperP1Registry.V2.QuadraticLimits.polynomial_weights (C \u03b5 : Real) (h\u03b5 : LT.lt 0 \u03b5) :\n  And\n    (\u2200 (m : Nat),\n      Exists fun N\u2080 =>\n        And (LE.le 2 N\u2080)\n          (\u2200 (N : Nat),\n            GE.ge N N\u2080 \u2192\n              \u2200 (L : Nat),\n                LE.le (abs (HSub.hSub (\u2191L) (HDiv.hDiv (Real.log \u2191N) (Real.log 2)))) C \u2192\n                  And\n                    (Summable fun k =>\n                      HMul.hMul (HPow.hPow (HAdd.hAdd 1 \u2191k) m)\n                        (abs\n                          (HSub.hSub (PaperP1Registry.V2.QuadraticLimits.sourceMass N L k)\n                            (PaperP1Registry.V2.QuadraticLimits.quadraticMass\n                              (PaperP1Registry.V2.QuadraticLimits.actualMean N L)\n                              (PaperP1Registry.V2.QuadraticLimits.secondCumulant N L) k))))\n                    (LE.le (PaperP1Registry.V2.QuadraticLimits.weightedError N L m)\n                      (HPow.hPow (\u2191N) (HAdd.hAdd (-4 / 3) \u03b5)))))\n    (And\n      (\u2200 (r : Nat),\n        Exists fun N\u2081 =>\n          And (LE.le 2 N\u2081)\n            (\u2200 (N : Nat),\n              GE.ge N N\u2081 \u2192\n                \u2200 (L : Nat),\n                  LE.le (abs (HSub.hSub (\u2191L) (HDiv.hDiv (Real.log \u2191N) (Real.log 2)))) C \u2192\n                    LE.le\n                      (abs\n                        (HSub.hSub (PaperP1Registry.V2.QuadraticLimits.factorialMoment N L r)\n                          (PaperP1Registry.V2.QuadraticLimits.referenceMoment\n                            (PaperP1Registry.V2.QuadraticLimits.actualMean N L)\n                            (PaperP1Registry.V2.QuadraticLimits.secondCumulant N L) r)))\n                      (HPow.hPow (\u2191N) (HAdd.hAdd (-4 / 3) \u03b5))))\n      (\u2200 (N L : Nat),\n        And (Eq (PaperP1Registry.V2.QuadraticLimits.factorialMoment N L 0) 1)\n          (And\n            (Eq (PaperP1Registry.V2.QuadraticLimits.factorialMoment N L 1)\n              (PaperP1Registry.V2.QuadraticLimits.actualMean N L))\n            (Eq (PaperP1Registry.V2.QuadraticLimits.factorialMoment N L 2)\n              (HAdd.hAdd (HPow.hPow (PaperP1Registry.V2.QuadraticLimits.actualMean N L) 2)\n                (PaperP1Registry.V2.QuadraticLimits.secondCumulant N L))))))",
+        "name": "PaperP1Registry.V2.QuadraticLimits.polynomial_weights"
+      },
+      {
+        "declaration": "theorem PaperP1Registry.V2.QuadraticLimits.no_retained_start (C \u03b5 : Real) (h\u03b5 : LT.lt 0 \u03b5) :\n  Exists fun N\u2080 =>\n    And (LE.le 2 N\u2080)\n      (\u2200 (N : Nat),\n        GE.ge N N\u2080 \u2192\n          \u2200 (L : Nat),\n            LE.le (abs (HSub.hSub (\u2191L) (HDiv.hDiv (Real.log \u2191N) (Real.log 2)))) C \u2192\n              LE.le\n                (abs\n                  (HSub.hSub (PaperP1Registry.V2.QuadraticLimits.sourceMass N L 0)\n                    (HMul.hMul (Real.exp (Neg.neg (PaperP1Registry.V2.QuadraticLimits.actualMean N L)))\n                      (HAdd.hAdd 1 (HDiv.hDiv (PaperP1Registry.V2.QuadraticLimits.secondCumulant N L) 2)))))\n                (HPow.hPow (\u2191N) (HAdd.hAdd (-4 / 3) \u03b5)))",
+        "name": "PaperP1Registry.V2.QuadraticLimits.no_retained_start"
+      },
+      {
+        "declaration": "theorem PaperP1Registry.V2.QuadraticLimits.literal_mean_bias (N L : Nat) (hN : LE.le 2 N) (hL : LT.lt 0 L) :\n  And\n    (Eq\n      (HSub.hSub (PaperP1Registry.V2.QuadraticLimits.actualMean N L)\n        (PaperP1Registry.V2.QuadraticLimits.nominalMean N L))\n      (HMul.hMul (Inv.inv (HPow.hPow 2 L)) \u2191(PaperP1Registry.V2.QuadraticLimits.integerBias N L)))\n    (\u2200 (C : Real),\n      LE.le (abs (HSub.hSub (\u2191L) (HDiv.hDiv (Real.log \u2191N) (Real.log 2)))) C \u2192\n        And (LE.le (HDiv.hDiv (Inv.inv (HPow.hPow 2 C)) \u2191N) (Inv.inv (HPow.hPow 2 L)))\n          (LE.le (Inv.inv (HPow.hPow 2 L)) (HDiv.hDiv (HPow.hPow 2 C) \u2191N)))",
+        "name": "PaperP1Registry.V2.QuadraticLimits.literal_mean_bias"
+      }
+    ],
+    "declarations": [
+      "PaperP1Registry.V2.QuadraticLimits.source_probability",
+      "PaperP1Registry.V2.QuadraticLimits.poisson_expansion",
+      "PaperP1Registry.V2.QuadraticLimits.moving_residue_equivalent",
+      "PaperP1Registry.V2.QuadraticLimits.mean_bias_quantized",
+      "PaperP1Registry.V2.QuadraticLimits.nominal_quadratic_comparison",
+      "PaperP1Registry.V2.QuadraticLimits.reference_series",
+      "PaperP1Registry.V2.QuadraticLimits.optimal_quadratic",
+      "PaperP1Registry.V2.QuadraticLimits.polynomial_weights",
+      "PaperP1Registry.V2.QuadraticLimits.no_retained_start",
+      "PaperP1Registry.V2.QuadraticLimits.literal_mean_bias"
+    ],
+    "imports": [
+      "Mathlib.Algebra.Field.ZMod",
+      "Mathlib.Algebra.Order.Floor.Semiring",
+      "Mathlib.Analysis.SpecialFunctions.Pow.Real",
+      "Mathlib.Data.Finset.Interval",
+      "Mathlib.Data.Nat.Factorization.Basic",
+      "Mathlib.Data.ZMod.Basic",
+      "Mathlib.LinearAlgebra.Finsupp.LinearCombination",
+      "Mathlib.MeasureTheory.Integral.Bochner.Basic",
+      "Mathlib.NumberTheory.PrimeCounting",
+      "Mathlib.Probability.Distributions.Uniform",
+      "Mathlib.Probability.ProductMeasure",
+      "Mathlib.Tactic.NormNum"
+    ],
+    "module_doc": "# P1 V2: Exact quadratic approximation, Poisson scales and weighted consequences\n\nSelected statements cover main article results 1.1\u20131.2,7.2\u20137.4. Literal definitions specify\nthe independent prime-sign model, exact observables, reference laws and error\nnorms. Parameters and thresholds retain their printed order. The companion\nsupplies substantive proofs through the parent development in this repository.\nThe corresponding six-dossier coverage map records each complete clause bundle.\nOnly the selected Challenge theorem proofs are deliberate statement holes;\nthe Solution and its bridge proofs contain no placeholders.\nSelected model foundations are adapted through P1 from Paper C, commit\nb9fa9ba490f201b408a302a86f1594ee620b228b, Apache-2.0; see docs/PAPER_C_REUSE.md.",
+    "schema_version": 3,
+    "solution_imports": [
+      "Mathlib.Algebra.Field.ZMod",
+      "Mathlib.Algebra.Order.Floor.Semiring",
+      "Mathlib.Analysis.SpecialFunctions.Pow.Real",
+      "Mathlib.Data.Finset.Interval",
+      "Mathlib.Data.Nat.Factorization.Basic",
+      "Mathlib.Data.ZMod.Basic",
+      "Mathlib.LinearAlgebra.Finsupp.LinearCombination",
+      "Mathlib.MeasureTheory.Integral.Bochner.Basic",
+      "Mathlib.NumberTheory.PrimeCounting",
+      "Mathlib.Probability.Distributions.Uniform",
+      "Mathlib.Probability.ProductMeasure",
+      "Mathlib.Tactic.NormNum",
+      "PaperP1.Asymptotics.ExactPoissonScale",
+      "PaperP1.Asymptotics.OptimalNominalQuadratic",
+      "PaperP1.Asymptotics.OptimalQuadratic",
+      "PaperP1.Asymptotics.OptimalZeroProbability",
+      "PaperP1.Model.RetainedMomentTransfer"
+    ]
+  },
+  "verso_commit": "71a2035b44e7f54a797ce799fd1b03cdd3a44684",
+  "workflow_url": "https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/43276764491"
+}

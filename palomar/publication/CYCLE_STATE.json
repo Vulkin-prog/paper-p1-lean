@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-12T18:36:05.206559+00:00",
+  "updated_at": "2026-11-12T20:05:18.243204+00:00",
   "repository": "Vulkin-prog/paper-p1-lean",
   "maximum_registrations": 6,
   "selected_theorem_count": 52,
@@ -24,7 +24,7 @@
       "comparator_config_path": "RegistryV2/comparator/p1_quadratic_limits.json",
       "formalization_metadata_path": "palomar/publication/quadratic_limits/formalization.yaml",
       "selected_theorem_count": 10,
-      "public_mechanical_stage": "palomar_verification_passed",
+      "public_mechanical_stage": "palomar_rendering_passed",
       "registration": null,
       "preflight": {
         "workflow_run_id": 43252492734,
@@ -43,6 +43,17 @@
         "report_status": "pass",
         "conclusion": "success",
         "validation_receipt": "palomar/publication/quadratic_limits/verification/VALIDATION.json"
+      },
+      "palomar_rendering": {
+        "workflow_run_id": 43276764491,
+        "workflow_url": "https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/43276764491",
+        "public_status": "completed",
+        "conclusion": "success",
+        "report_status": "pass",
+        "renderer_commit": "14aa8d6b3c2f14a8540605e37144560b9a00e7e7",
+        "selected_theorem_count": 10,
+        "all_selected_compiler_anchors_present": true,
+        "validation_receipt": "palomar/publication/quadratic_limits/rendering/VALIDATION.json"
       }
     },
     {

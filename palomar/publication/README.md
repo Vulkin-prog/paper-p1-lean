@@ -23,6 +23,10 @@ with its exact artifact and source hashes. Palomar's separate verification is
 [run 43259436857](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/43259436857).
 Its [passing mechanical evidence](quadratic_limits/verification/VALIDATION.json)
 is recorded separately from the predictive preflight and from any private review.
+The separate [Challenge rendering](quadratic_limits/rendering/VALIDATION.json),
+[run 43276764491](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/43276764491),
+also passed. The exact source and all ten selected compiler-backed anchors were
+checked against the downloaded artifact; its thirteen manifest file hashes match.
 The author subsequently explicitly authorized publication of favorable actual
 reviews without repeated approval prompts. Each actual review must be examined
 and presented before registration of its exact digest. Blocking findings require
