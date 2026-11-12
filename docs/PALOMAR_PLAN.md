@@ -11,7 +11,9 @@ Both callers share one serialization group. On 12 November the author resumed
 the six successive cycles and explicitly confirmed being a responsible author
 or maintainer for source `f9a2d213265a6833318745dd7f2d74c02090ab19`.
 The [first official full preflight](https://github.com/Vulkin-prog/paper-p1-lean/actions/runs/43252492734)
-is running for `quadratic_limits`. [Current public progress](../palomar/publication/CYCLE_STATE.json)
+passed for `quadratic_limits`. Palomar's own verification has been
+[launched](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/43259436857).
+[Current public progress](../palomar/publication/CYCLE_STATE.json)
 is separate from the frozen preparation evidence. Each actual private review
 requires its own publication decision. Ordinary proof CI dispatches no submission.
 

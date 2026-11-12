@@ -77,8 +77,11 @@ future manuscript version and preparing Palomar registrations after completion.
 - On 12 November 2026 the user explicitly resumed all six successive Palomar
   cycles and confirmed being a responsible author or maintainer for the exact
   source `f9a2d213265a6833318745dd7f2d74c02090ab19` and all six paths in the
-  publication plan. The first full preflight is run `43252492734` for
-  `quadratic_limits`. Read `palomar/publication/CYCLE_STATE.json` for public
+  publication plan. Full preflight `43252492734` passed for `quadratic_limits`;
+  its receipt is `palomar/publication/quadratic_limits/preflight/VALIDATION.json`.
+  Ordinary intake was authenticated and both temporary proof artifacts deleted.
+  Palomar's separate verification is run `43259436857`, initially queued.
+  Read `palomar/publication/CYCLE_STATE.json` for public
   progress. This supersedes the earlier hold. Keep one complete cycle active
   at a time, and submit only after its exact official full report passes.
   This authorization does not pre-approve registration: show each actual

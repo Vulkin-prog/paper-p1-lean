@@ -1,0 +1,41 @@
+{
+  "status": "pass",
+  "mode": "full",
+  "execution_profile": "palomar-standard-v1",
+  "repository": "Vulkin-prog/paper-p1-lean",
+  "source_commit": "f9a2d213265a6833318745dd7f2d74c02090ab19",
+  "pipeline_commit": "14aa8d6b3c2f14a8540605e37144560b9a00e7e7",
+  "run_id": 43252492734,
+  "workflow_url": "https://github.com/Vulkin-prog/paper-p1-lean/actions/runs/43252492734",
+  "report_path": "palomar/publication/quadratic_limits/preflight/mechanical-report.json",
+  "report_sha256": "808122b5e85694eed2bd67278241517fde05b0e2a0e69c8eb72f08a5935a8a53",
+  "selected_theorem_count": 10,
+  "mandatory_comparator_and_nanoda_passed": true,
+  "reported_external_kernels": [
+    {
+      "argv": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/nanoda_bin"
+      ],
+      "name": "nanoda"
+    },
+    {
+      "argv": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/con-ron",
+        "--jobs=2",
+        "--verified"
+      ],
+      "name": "con-ron"
+    }
+  ],
+  "warnings": [],
+  "artifact_id": 13962093340,
+  "artifact_sha256": "2ff7bd7057c6563b35480a47fa7df73a61b8375a3bd2b1c6f159f86af62db74f",
+  "workflow_head_sha": "f9a2d213265a6833318745dd7f2d74c02090ab19",
+  "referenced_workflows": [
+    {
+      "path": "PalomarRegistry/PalomarSubmission/.github/workflows/submission.yml@14aa8d6b3c2f14a8540605e37144560b9a00e7e7",
+      "sha": "14aa8d6b3c2f14a8540605e37144560b9a00e7e7"
+    }
+  ],
+  "scope": "Official full predictive workflow, not registration or editorial review. Subsequent Palomar verification is a separate workflow."
+}
