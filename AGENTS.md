@@ -153,8 +153,10 @@ future manuscript version and preparing Palomar registrations after completion.
   `43311429286` for eight selections at source
   `d6a0f6c5109886127526677603eb6b74e8c0cd82` and the follow-up metadata path.
   Its authenticated ordinary intake is already open, with both temporary
-  authentication proofs deleted. Palomar's separate verification is run
-  `43325541191`. Follow this existing cycle; do not repeat intake or start the
+  authentication proofs deleted. Palomar's separate verification, run
+  `43325541191`, also passed under the namespace profile for all eight selections,
+  with no mechanical warnings; its receipt is under the follow-up `verification/`
+  directory. Follow this existing cycle; do not repeat intake or start the
   third cycle until the second completes or is properly closed. The actual
-  namespace-profile report, rendering, review and public readback remain separate
+  rendering, review and public readback remain separate
   steps. Keep private outcomes and credentials out of this repository.

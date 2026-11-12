@@ -48,7 +48,11 @@ the [actual report receipt](../palomar/publication-followup/cumulants_optimality
 binds the source and corrected metadata. Ordinary intake was authenticated and
 both temporary proof artifacts deleted. Palomar's own
 [verification](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/43325541191)
-is in progress. This is not yet a second registration; later cycles remain queued.
+has also passed. Its separate
+[namespace-profile receipt](../palomar/publication-followup/cumulants_optimality/verification/VALIDATION.json)
+binds all eight selected statements with no mechanical warnings. Rendering and
+editorial review remain pending. This is not yet a second registration; later
+cycles remain queued.
 
 ## Previous V2 preparation (preserved history)
 

@@ -43,5 +43,8 @@ The second, `cumulants_optimality`, uses the corrected
 at source `d6a0f6c5109886127526677603eb6b74e8c0cd82`. Its
 [full preflight passed](../publication-followup/cumulants_optimality/preflight/VALIDATION.json),
 ordinary intake was authenticated, and both temporary proof artifacts were
-deleted. Palomar's separate [verification is in progress](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/43325541191).
+deleted. Palomar's separate [verification passed](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/43325541191);
+its [namespace-profile report](../publication-followup/cumulants_optimality/verification/VALIDATION.json)
+has eight selections and no mechanical warnings. Rendering and editorial review
+remain pending.
 No second registration or editorial outcome is asserted by these mechanical records.
