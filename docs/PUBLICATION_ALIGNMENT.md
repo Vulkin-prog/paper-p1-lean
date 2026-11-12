@@ -32,10 +32,13 @@ This creates no seventh registration identity and claims no new kernel suite.
 The current caller is `palomar-publication-preflight.yml`; the old V2 caller
 and receipts remain preserved as historical preparation.
 
-The author keeps all six dossiers in preparation. No official full preflight,
-intake, private review or registration has been launched. Renewed user
-instructions and the required explicit personal relationship declaration must
-precede any cycle. Publication of a private review requires a separate decision.
+The frozen preparation records describe the earlier author-requested hold;
+they are not live submission state. The author subsequently resumed the six
+cycles and explicitly confirmed the responsible-author/maintainer relationship
+for source `f9a2d213265a6833318745dd7f2d74c02090ab19`. The first official full
+preflight is running; [current public progress](../palomar/publication/CYCLE_STATE.json)
+records this separately. Publication of each actual private review still
+requires a separate decision after its delivery.
 
 Reproduction:
 

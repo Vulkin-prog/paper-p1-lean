@@ -12,8 +12,12 @@ Both callers share the serial concurrency group; neither ordinary CI nor this
 preparation starts a filing. The full submission/review/decision cycle must be
 finished or closed before another starts, beyond the preflight job's duration.
 
-The author has explicitly kept submissions on hold. A concrete source/configuration
-and personal relationship declaration are still needed before launching. Any
-publication decision is separate and follows receipt of the exact private review.
+The frozen preparation evidence retains its original on-hold status. The author
+subsequently resumed all six cycles and explicitly confirmed being a responsible
+author or maintainer for `f9a2d213265a6833318745dd7f2d74c02090ab19` and the six
+publication configurations. [CYCLE_STATE.json](CYCLE_STATE.json) records current
+public mechanical progress. The first official full preflight is
+[run 43252492734](https://github.com/Vulkin-prog/paper-p1-lean/actions/runs/43252492734).
+Any publication decision is separate and follows receipt of the exact private review.
 The author name Brice Pouly and ORCID 0009-0008-8491-2467 remain structured fields
 in all six current dossiers.

@@ -7,9 +7,13 @@ The [publication correspondence](PUBLICATION_ALIGNMENT.md) records the new
 source paths, pages and parsed author/ORCID metadata. The current manual caller
 is [palomar-publication-preflight.yml](../.github/workflows/palomar-publication-preflight.yml).
 The older V2 caller and metadata remain frozen evidence, not six more filings.
-Both callers share one serialization group. The author's latest explicit
-decision keeps all six dossiers in preparation: no official preflight, intake
-or registration has started. Ordinary proof CI does not dispatch these callers.
+Both callers share one serialization group. On 12 November the author resumed
+the six successive cycles and explicitly confirmed being a responsible author
+or maintainer for source `f9a2d213265a6833318745dd7f2d74c02090ab19`.
+The [first official full preflight](https://github.com/Vulkin-prog/paper-p1-lean/actions/runs/43252492734)
+is running for `quadratic_limits`. [Current public progress](../palomar/publication/CYCLE_STATE.json)
+is separate from the frozen preparation evidence. Each actual private review
+requires its own publication decision. Ordinary proof CI dispatches no submission.
 
 ## Previous V2 preparation (preserved history)
 

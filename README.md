@@ -12,7 +12,11 @@ The [current correspondence](docs/manuscript-results-publication-2026-11-12.json
 and [French review](docs/reviews/2026-11-12/PUBLICATION_REVIEW_FR.md) record the evidence
 and remaining optional simplifications. Six unchanged Palomar configurations
 cover all 26 main results through 52 selections; their
-[publication preparation](palomar/REGISTRATION_PLAN_PUBLICATION.json) remains on hold.
+[publication preparation](palomar/REGISTRATION_PLAN_PUBLICATION.json) is preserved.
+The author has resumed the six successive cycles for source commit
+`f9a2d213265a6833318745dd7f2d74c02090ab19`; the first official full preflight
+is running. See [current public progress](palomar/publication/CYCLE_STATE.json).
+Publication requires a separate decision after each actual private review.
 
 ## Preceding V2 edition
 

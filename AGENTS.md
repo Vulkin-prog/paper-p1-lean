@@ -72,6 +72,17 @@ future manuscript version and preparing Palomar registrations after completion.
   uses `palomar/REGISTRATION_PLAN_PUBLICATION.json` and the manual
   `palomar-publication-preflight.yml` caller. The older V2 caller and metadata
   remain historical evidence; both address the SAME six project/configuration
-  identities, not additional registrations. The author's latest explicit
-  decision keeps all filings on hold. Do not infer submission authorization
-  from the attached publication notes, author line or repository ownership.
+  identities, not additional registrations. The on-hold preparation records
+  describe their frozen snapshot; do not relabel them as subsequent runs.
+- On 12 November 2026 the user explicitly resumed all six successive Palomar
+  cycles and confirmed being a responsible author or maintainer for the exact
+  source `f9a2d213265a6833318745dd7f2d74c02090ab19` and all six paths in the
+  publication plan. The first full preflight is run `43252492734` for
+  `quadratic_limits`. Read `palomar/publication/CYCLE_STATE.json` for public
+  progress. This supersedes the earlier hold. Keep one complete cycle active
+  at a time, and submit only after its exact official full report passes.
+  This authorization does not pre-approve registration: show each actual
+  private review and get the user's decision about publishing that digest.
+  Keep all access tokens, temporary proofs and unregistered editorial outcomes
+  out of the public repository. The submitted proof source stays at the
+  approved immutable commit even when these progress documents are updated.

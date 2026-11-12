@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-11-12T16:02:28.361701+00:00",
+  "repository": "Vulkin-prog/paper-p1-lean",
+  "maximum_registrations": 6,
+  "selected_theorem_count": 52,
+  "main_results": 26,
+  "preparation_snapshot_commit": "f9a2d213265a6833318745dd7f2d74c02090ab19",
+  "author_resumed_cycles": true,
+  "explicitly_confirmed_authorization_relationship": "maintainer",
+  "approved_source_commit": "f9a2d213265a6833318745dd7f2d74c02090ab19",
+  "active_cycle": "quadratic_limits",
+  "registered_count": 0,
+  "publication_requires_each_actual_review_decision": true,
+  "cycles": [
+    {
+      "slug": "quadratic_limits",
+      "source_commit": "f9a2d213265a6833318745dd7f2d74c02090ab19",
+      "project_path": "RegistryV2",
+      "comparator_config_path": "RegistryV2/comparator/p1_quadratic_limits.json",
+      "formalization_metadata_path": "palomar/publication/quadratic_limits/formalization.yaml",
+      "selected_theorem_count": 10,
+      "public_mechanical_stage": "official_preflight_running",
+      "registration": null,
+      "preflight": {
+        "workflow_run_id": 43252492734,
+        "workflow_url": "https://github.com/Vulkin-prog/paper-p1-lean/actions/runs/43252492734",
+        "request_id": "pb6aeb74dbde",
+        "pipeline_commit": "14aa8d6b3c2f14a8540605e37144560b9a00e7e7",
+        "mode": "full",
+        "execution_profile": "palomar-standard-v1",
+        "report_status": "pending"
+      }
+    },
+    {
+      "slug": "cumulants_optimality",
+      "source_commit": "f9a2d213265a6833318745dd7f2d74c02090ab19",
+      "project_path": "RegistryV2",
+      "comparator_config_path": "RegistryV2/comparator/p1_cumulants_optimality.json",
+      "formalization_metadata_path": "palomar/publication/cumulants_optimality/formalization.yaml",
+      "selected_theorem_count": 8,
+      "public_mechanical_stage": "prepared",
+      "registration": null
+    },
+    {
+      "slug": "pairs_channels",
+      "source_commit": "f9a2d213265a6833318745dd7f2d74c02090ab19",
+      "project_path": "RegistryV2",
+      "comparator_config_path": "RegistryV2/comparator/p1_pairs_channels.json",
+      "formalization_metadata_path": "palomar/publication/pairs_channels/formalization.yaml",
+      "selected_theorem_count": 13,
+      "public_mechanical_stage": "prepared",
+      "registration": null
+    },
+    {
+      "slug": "stopping_reconstruction",
+      "source_commit": "f9a2d213265a6833318745dd7f2d74c02090ab19",
+      "project_path": "RegistryV2",
+      "comparator_config_path": "RegistryV2/comparator/p1_stopping_reconstruction.json",
+      "formalization_metadata_path": "palomar/publication/stopping_reconstruction/formalization.yaml",
+      "selected_theorem_count": 8,
+      "public_mechanical_stage": "prepared",
+      "registration": null
+    },
+    {
+      "slug": "probability_references",
+      "source_commit": "f9a2d213265a6833318745dd7f2d74c02090ab19",
+      "project_path": "RegistryV2",
+      "comparator_config_path": "RegistryV2/comparator/p1_probability_references.json",
+      "formalization_metadata_path": "palomar/publication/probability_references/formalization.yaml",
+      "selected_theorem_count": 5,
+      "public_mechanical_stage": "prepared",
+      "registration": null
+    },
+    {
+      "slug": "affine_events",
+      "source_commit": "f9a2d213265a6833318745dd7f2d74c02090ab19",
+      "project_path": "RegistryV2",
+      "comparator_config_path": "RegistryV2/comparator/p1_affine_events.json",
+      "formalization_metadata_path": "palomar/publication/affine_events/formalization.yaml",
+      "selected_theorem_count": 8,
+      "public_mechanical_stage": "prepared",
+      "registration": null
+    }
+  ],
+  "scope": "Public mechanical progress only. Frozen preparation receipts retain their original on-hold status. No private review, review outcome, access credential, temporary authentication proof or pre-approved registration is recorded here."
+}
