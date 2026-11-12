@@ -1,0 +1,78 @@
+version: v0.4
+project:
+  name: 'P1 publication: Factorial cumulants and optimal quadratic error'
+  description: Actual heterogeneous factorial-count identities, with repeated-index corrections, and the
+    unconditional optimal 41/30 power for the third factorial cumulant. Absolute triple activity has the
+    same upper exponent. The fourth-cumulant decomposition retains the positive compatible quartic mass
+    and distinguishes 5/3 and 3/2 errors; the exact quadratic Poisson–Charlier approximation has matching
+    4/3 upper and lower power bounds.
+  authors:
+  - name: Brice Pouly
+    github: Vulkin-prog
+    orcid: 0009-0008-8491-2467
+  responsible_maintainers:
+  - name: Brice Pouly
+    github: Vulkin-prog
+    orcid: 0009-0008-8491-2467
+  license: Apache-2.0
+classification:
+  arxiv:
+  - math.PR
+  - math.NT
+sources:
+- title: Sharp Poisson approximation and second-order correction for long multiplicative runs, article
+    and companion, publication edition12 November2026
+  authors:
+  - name: Brice Pouly
+    github: Vulkin-prog
+    orcid: 0009-0008-8491-2467
+  id: https://github.com/Vulkin-prog/paper-p1-lean/tree/e564207ab543c7c0967e34b52f3d456d7a8f302c/manuscripts/paper-p1/publication-2026-11-12
+  type: paper
+  relationship: formalizes
+  location: 'Main article results 3.3, 3.4, 6.1, 6.2. Publication sources: manuscripts/paper-p1/publication-2026-11-12/sources/main.tex
+    and companion.tex. Exact correspondence: docs/manuscript-results-publication-2026-11-12.json and palomar/REGISTRATION_PLAN_PUBLICATION.json.'
+  note: The selected project is a contained interface to the substantive proof development in the SAME
+    repository, via the committed parent path dependency. The public registry record must retain Brice
+    Pouly and ORCID 0009-0008-8491-2467; structured person mappings use the documented compatible metadata
+    form.
+related_formalizations:
+- id: https://github.com/Vulkin-prog/paper-c-lean
+  relationship: adapts
+  note: 'Only selected model foundations, ported from b9fa9ba490f201b408a302a86f1594ee620b228b under Apache-2.0.
+    Exact scope and source attribution: docs/PAPER_C_REUSE.md.'
+automation:
+  methods:
+  - method: agent
+    framework: Codex
+    models:
+    - OpenAI Codex agents
+    tool_setup: Lean v4.36.0-rc2 proof development and literal statement interfaces, selective Mathlib
+      dependencies, compiled type and axiom inspection, Comparator and local kernel replay.
+    prompting_notes: Align every printed main-article clause with a selected theorem; preserve actual
+      marginals, affine incompatibility, repeated-index terms, exact versus nominal means, fixed-height
+      quantifiers and the explicitly conditional transfer.
+  notes: Agent assistance and local checker replay are not independent human peer review.
+review:
+  status: agent-reviewed
+  notes: Publication source/type alignment and fresh parent build, axiom audit and212-type extraction
+    are recorded under docs/validation/publication-2026-11-12/. Prior six-checker acceptances concern
+    byte-identical Challenge/Solution/configuration files at395c805fac3dbb2930de07cfa5286fef6d85c403;
+    they are not new checker executions or official Palomar preflight. These publication metadata are
+    checked separately. The author has kept all six dossiers in preparation; no personal submission relationship
+    is inferred.
+status:
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms:
+  - propext
+  - Quot.sound
+  - Classical.choice
+  scope: 8 selected proved Solution declarations; only the matching Challenge statements have deliberate
+    holes. This is one of six replacement V2 dossiers.
+fidelity:
+  divergences: Literal self-contained Mathlib-only Challenge models are identified with the existing substantive
+    proofs by explicit checked bridges. Finite inequalities may strengthen printed asymptotic forms by
+    choosing unit upper constants after a larger threshold. Lemma5.1 is strengthened to a universal constant
+    without a mean cap; Theorem5.2 retains its 254 printed hypotheses. Coverage is claimed only for the
+    numbered main results explicitly mapped here; companion proofs are used as dependencies, without claiming
+    separate direct registration of all92 companion results.

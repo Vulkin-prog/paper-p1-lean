@@ -1,0 +1,142 @@
+{
+  "date": "2026-11-12",
+  "status": "statement_alignment_passed_preparation_only",
+  "publication_index": "docs/manuscript-results-publication-2026-11-12.json",
+  "legacy_frozen_validation": {
+    "path": "palomar/v3/VALIDATION.json",
+    "sha256": "f46856d0d864784e5b0cda2f7de5a4ca4087a85f87d72aff7347a7ffac07d26b"
+  },
+  "same_six_project_configuration_identities": true,
+  "main_statement_blocks_identical": 26,
+  "selected_theorems": 52,
+  "maximum_registrations": 6,
+  "new_kernel_suite_performed": false,
+  "metadata_validation": "docs/validation/publication-2026-11-12/publication-metadata-validation.json",
+  "bundles": [
+    {
+      "slug": "affine_events",
+      "selected_theorems": 8,
+      "unchanged_checked_math_files": {
+        "RegistryV2/ChallengeP1V2AffineEvents.lean": "23c4c3760f8ba50e89f4e1779f77d43247189360ae692adacd63c468607a5051",
+        "RegistryV2/SolutionP1V2AffineEvents.lean": "4dcc1b52da9bb9987114f2db52ce0f3c6869606386523aca84ab470969a9d56b",
+        "RegistryV2/comparator/p1_affine_events.json": "f674f60bfbe71382b6c236284b418e8167a32902050c797a5f101bc09d9f62ec",
+        "RegistryV2/lean-toolchain": "11c697aebe5b539d74f5069e497a588e7dfab1c4eeb74313f28357e351c55ca3",
+        "RegistryV2/lakefile.toml": "488445f0871b6d5b410a5f8213be5664ce1058345b704c4e1ecc1192f2b0190f",
+        "RegistryV2/lake-manifest.json": "fd19c70045c0ce4a224d64e593bd15b14f7165bfc1e61930ed7356f23074d2cd"
+      },
+      "accepted_checkers_from_frozen_receipt": [
+        "Lean paranoid",
+        "lean4lean",
+        "nanoda",
+        "con-leche",
+        "con-ron",
+        "Lean default"
+      ]
+    },
+    {
+      "slug": "stopping_reconstruction",
+      "selected_theorems": 8,
+      "unchanged_checked_math_files": {
+        "RegistryV2/ChallengeP1V2StoppingReconstruction.lean": "0b9b313b16bde1f1a52cd58b215b1b03a72e1196a74901a1241cd7aa58dfb006",
+        "RegistryV2/SolutionP1V2StoppingReconstruction.lean": "6ae10f81bd6549c4f79a0e001c67198139bc4b3912c33683da95de1118ce81e2",
+        "RegistryV2/comparator/p1_stopping_reconstruction.json": "6460d815371679d04c76acfa49e63667c24402d2cc5a1bdad7f3e21fef1db7cc",
+        "RegistryV2/lean-toolchain": "11c697aebe5b539d74f5069e497a588e7dfab1c4eeb74313f28357e351c55ca3",
+        "RegistryV2/lakefile.toml": "488445f0871b6d5b410a5f8213be5664ce1058345b704c4e1ecc1192f2b0190f",
+        "RegistryV2/lake-manifest.json": "fd19c70045c0ce4a224d64e593bd15b14f7165bfc1e61930ed7356f23074d2cd"
+      },
+      "accepted_checkers_from_frozen_receipt": [
+        "Lean paranoid",
+        "lean4lean",
+        "nanoda",
+        "con-leche",
+        "con-ron",
+        "Lean default"
+      ]
+    },
+    {
+      "slug": "pairs_channels",
+      "selected_theorems": 13,
+      "unchanged_checked_math_files": {
+        "RegistryV2/ChallengeP1V2PairsChannels.lean": "c9daf1929c5b2aeae82e53fe324c82f0e0ccee4af450190a20043437ff30a3c3",
+        "RegistryV2/SolutionP1V2PairsChannels.lean": "270c1ba86b2e44fd15ed8a9cc87164177444297c8cab771d24e764968c306b99",
+        "RegistryV2/comparator/p1_pairs_channels.json": "56cb58d7e4903e24e483cc91102d931d771895ca2114c51d8ed07c19dbcbdaf1",
+        "RegistryV2/lean-toolchain": "11c697aebe5b539d74f5069e497a588e7dfab1c4eeb74313f28357e351c55ca3",
+        "RegistryV2/lakefile.toml": "488445f0871b6d5b410a5f8213be5664ce1058345b704c4e1ecc1192f2b0190f",
+        "RegistryV2/lake-manifest.json": "fd19c70045c0ce4a224d64e593bd15b14f7165bfc1e61930ed7356f23074d2cd"
+      },
+      "accepted_checkers_from_frozen_receipt": [
+        "Lean paranoid",
+        "lean4lean",
+        "nanoda",
+        "con-leche",
+        "con-ron",
+        "Lean default"
+      ]
+    },
+    {
+      "slug": "cumulants_optimality",
+      "selected_theorems": 8,
+      "unchanged_checked_math_files": {
+        "RegistryV2/ChallengeP1V2CumulantsOptimality.lean": "e459a42167d88b3f45fd8703b2c9356ce9f10db6b8e1d6f39cbd5bf60b48981e",
+        "RegistryV2/SolutionP1V2CumulantsOptimality.lean": "639954f80d20ee01c3f9b9e348d99053a74667a72cc259eb47072e7c6eb657ed",
+        "RegistryV2/comparator/p1_cumulants_optimality.json": "2abae3aae5aa16c75287ce09c3240be5d6c29607ca502db00b5e6fa1072f970c",
+        "RegistryV2/lean-toolchain": "11c697aebe5b539d74f5069e497a588e7dfab1c4eeb74313f28357e351c55ca3",
+        "RegistryV2/lakefile.toml": "488445f0871b6d5b410a5f8213be5664ce1058345b704c4e1ecc1192f2b0190f",
+        "RegistryV2/lake-manifest.json": "fd19c70045c0ce4a224d64e593bd15b14f7165bfc1e61930ed7356f23074d2cd"
+      },
+      "accepted_checkers_from_frozen_receipt": [
+        "Lean paranoid",
+        "lean4lean",
+        "nanoda",
+        "con-leche",
+        "con-ron",
+        "Lean default"
+      ]
+    },
+    {
+      "slug": "quadratic_limits",
+      "selected_theorems": 10,
+      "unchanged_checked_math_files": {
+        "RegistryV2/ChallengeP1V2QuadraticLimits.lean": "47132743839203f785d3b4b7243977fa715d5eee8dfeb0cd3cd439930f10537f",
+        "RegistryV2/SolutionP1V2QuadraticLimits.lean": "69df30d08db88abef8c06c23c1dab07313bccf70d0fdb61cd5c30eddb54592e6",
+        "RegistryV2/comparator/p1_quadratic_limits.json": "d0e137296287a1ccd57aafbec05009cbf460492f04c4e4bccf4303ec736b5e2c",
+        "RegistryV2/lean-toolchain": "11c697aebe5b539d74f5069e497a588e7dfab1c4eeb74313f28357e351c55ca3",
+        "RegistryV2/lakefile.toml": "488445f0871b6d5b410a5f8213be5664ce1058345b704c4e1ecc1192f2b0190f",
+        "RegistryV2/lake-manifest.json": "fd19c70045c0ce4a224d64e593bd15b14f7165bfc1e61930ed7356f23074d2cd"
+      },
+      "accepted_checkers_from_frozen_receipt": [
+        "Lean paranoid",
+        "lean4lean",
+        "nanoda",
+        "con-leche",
+        "con-ron",
+        "Lean default"
+      ]
+    },
+    {
+      "slug": "probability_references",
+      "selected_theorems": 5,
+      "unchanged_checked_math_files": {
+        "RegistryV2/ChallengeP1V2ProbabilityReferences.lean": "84c7991f12084312dc298b9cff31625928779947592e7c6adf8357eb59a70e89",
+        "RegistryV2/SolutionP1V2ProbabilityReferences.lean": "1eb10ff69eeeac9cdd39c1752885154c18d96d6eed4fe447b41c3014842b8e74",
+        "RegistryV2/comparator/p1_probability_references.json": "aa61023b871a18dfbd39b58e16731c0f41f220b326f9a59f6c4693cb7d2fab9b",
+        "RegistryV2/lean-toolchain": "11c697aebe5b539d74f5069e497a588e7dfab1c4eeb74313f28357e351c55ca3",
+        "RegistryV2/lakefile.toml": "488445f0871b6d5b410a5f8213be5664ce1058345b704c4e1ecc1192f2b0190f",
+        "RegistryV2/lake-manifest.json": "fd19c70045c0ce4a224d64e593bd15b14f7165bfc1e61930ed7356f23074d2cd"
+      },
+      "accepted_checkers_from_frozen_receipt": [
+        "Lean paranoid",
+        "lean4lean",
+        "nanoda",
+        "con-leche",
+        "con-ron",
+        "Lean default"
+      ]
+    }
+  ],
+  "author_submission_hold": true,
+  "official_full_preflight_passed": false,
+  "intake_started": false,
+  "registration": null,
+  "scope": "Reuse of unchanged mathematical proof payloads; publication-specific source/type correspondence and independently parsed current metadata. Six current candidates replace no proof payload and add no seventh project/configuration identity."
+}

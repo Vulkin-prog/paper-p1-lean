@@ -1,5 +1,23 @@
 # Mathematical corrections and improvements
 
+Current edition: the publication dossier received **12 November 2026**, with
+**118 numbered results (26 main, 92 companion)**. Relative to the preceding V2
+sources,117 statement blocks are identical and T4.3 clarifies the original-event
+scope of the small-contact bound. Existing Lean proofs already distinguish these
+domains; no mathematical Lean source or pin is changed. A fresh pinned build,
+20,019-theorem axiom audit and212-type extraction passed.
+See [publication alignment](PUBLICATION_ALIGNMENT.md),
+[French critical review](reviews/2026-11-12/PUBLICATION_REVIEW_FR.md),
+[current index](manuscript-results-publication-2026-11-12.json) and
+[actual replay](validation/publication-2026-11-12/lean-validation.json).
+The six Palomar project/configuration identities and52 compared statements
+still cover all26 main results. The current publication metadata and caller
+are under `palomar/publication` and `palomar-publication-preflight.yml`;
+the author keeps submissions on hold. Prior editions and qualification receipts
+remain preserved.
+
+## Preceding V2 alignment (historical snapshot)
+
 Current edition, 12 November 2026: **P1 V2.0 has 118 numbered results
 (26 article, 92 companion)**, mapped through 199 clause endpoints and nine
 retained auxiliary claims (212 extracted proposition types in total).
@@ -36201,3 +36219,23 @@ a next manuscript version: remove the mean cap and the1/4 smallness restriction
 from main5.1, retaining the natural Bernoulli domain0≤p_i≤1 and the explicit
 constant16 exp(2). This is a consequence of the existing proof, not an additional
 new theorem; the received scientific text and current PDFs are not modified.
+
+
+## P1-MATH-1011 — Publication T4.3 scope clarification
+
+The supplied publication explicitly retains homogeneous prescriptions for the
+conditional and propagation clauses, while restricting the final small-contact
+and local-defect mass to original run-start events. The existing
+FixedSourcePropagationTheorem.main_6_3 already makes this distinction; k=0 also
+covers r=s. This is a checked manuscript clarification, not a new false-original
+statement or a new formal theorem.
+
+## P1-MATH-1012 — Direct near-primitive confinement proof
+
+The supplied T7.1 proof now regularizes the physical relation space and applies
+the anchored small-kernel witness separately to the three centres, before final
+anchor erasure. It does not assume primitivity of the triple or enumerate chosen
+subspaces. NearPrimitiveTripleHosts.uniform_hosts already uses the corresponding
+direct physical witness. The source/type review and actual replay are recorded
+under docs/validation/publication-2026-11-12. The T12.4 dependency rewrite and
+the numerical illustration are exposition improvements, without extra finding IDs.

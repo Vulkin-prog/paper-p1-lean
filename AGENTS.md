@@ -28,7 +28,7 @@ future manuscript version and preparing Palomar registrations after completion.
   **118 numbered results (26 main, 92 companion)**,117 retained identities and one
   new envelope lemma. Fifty results leave the current scope; their old proofs,
   source versions and reviews remain preserved and are not invalidated.
-  Read `docs/V2_ALIGNMENT.md` and `docs/manuscript-results-v2.0.json` for current
+  Read `docs/V2_ALIGNMENT.md` and `docs/manuscript-results-v2.0.json` for V2
   numbering and complete clause bundles, including nine retained auxiliary claims.
   A preparatory algebraic lemma is not a completed manuscript result. Maintain
   both the historical ledger and the current V2 correspondence.
@@ -48,7 +48,7 @@ future manuscript version and preparing Palomar registrations after completion.
   identifier before completed coverage, statement alignment and actual checks.
 - On12 November2026 the user resumed Palomar preparation for V2 and requested
   at most six registrations covering most or all of the main article. The active
-  six-dossier allocation is `palomar/REGISTRATION_PLAN_V2.json`, covering all26
+  six-dossier allocation at V2 adoption was `palomar/REGISTRATION_PLAN_V2.json`, covering all26
   numbered main results through52 selected statements. Preserve the old plans
   and receipts as historical evidence; do not count them as additional filings.
 - The contained `RegistryV2` project imports the substantive parent proof library.
@@ -63,3 +63,15 @@ future manuscript version and preparing Palomar registrations after completion.
   Finish or close one complete submission cycle before another. Registration
   requires a separate human publication decision after the exact private review
   has been received; local checks are not official preflight or certification.
+
+- The current publication edition is `manuscripts/paper-p1/publication-2026-11-12`.
+  Preserve its received archive/files and the preceding V2 tree byte for byte.
+  Read `docs/PUBLICATION_ALIGNMENT.md` and its source/type index for current
+  pages and the checked T4.3 original/homogeneous scope clarification.
+  Its existing Lean proof code is unchanged. Current publication preparation
+  uses `palomar/REGISTRATION_PLAN_PUBLICATION.json` and the manual
+  `palomar-publication-preflight.yml` caller. The older V2 caller and metadata
+  remain historical evidence; both address the SAME six project/configuration
+  identities, not additional registrations. The author's latest explicit
+  decision keeps all filings on hold. Do not infer submission authorization
+  from the attached publication notes, author line or repository ownership.

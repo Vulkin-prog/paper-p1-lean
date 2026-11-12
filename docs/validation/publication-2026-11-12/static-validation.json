@@ -163,6 +163,35 @@
       "exit": 0,
       "log": "14.log",
       "sha256": "220a533db7a8f3f006e878ddd7ab4fc18eb53adc22c11b219d8992b4f2ecec7f"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check_publication.py"
+      ],
+      "exit": 0,
+      "log": "15.log",
+      "sha256": "19dec26ebd6507d55cfde2f891d668368c127bb259d8743c8fa25ffa2c0f5611"
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_publication.py"
+      ],
+      "exit": 0,
+      "log": "16.log",
+      "sha256": "220a533db7a8f3f006e878ddd7ab4fc18eb53adc22c11b219d8992b4f2ecec7f"
     }
-  ]
+  ],
+  "final_phase": "The final frozen-index guard and17 negative-control tests pass after the final PDF and metadata freeze. Earlier checks have not been relabelled as later reruns.",
+  "current_checker_sources_sha256": {
+    "scripts/check_publication.py": "9eabb30d4d8d6a9bdc4e99f36e498f82e53eddacb4a041acfd9ba49b744025d6",
+    "tests/test_publication.py": "c6d6a7726e5cd74e5c6fe754e63782dfe02cc726c5ed2f1ad34714e971d98401"
+  }
 }

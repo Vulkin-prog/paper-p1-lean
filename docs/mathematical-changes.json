@@ -43761,6 +43761,66 @@
         "target_version": "V2.0",
         "status": "aligned_current_statement_without_scientific_tex_change"
       }
+    },
+    {
+      "id": "P1-MATH-1011",
+      "classification": "improvement",
+      "status": "confirmed",
+      "title": "Clarify original versus homogeneous clauses in publication T4.3",
+      "location": {
+        "version": "Publication dossier received12 November2026",
+        "document": "companion",
+        "label": "p1:fixed:propagation",
+        "number": "T4.3",
+        "page": "28",
+        "source": "manuscripts/paper-p1/publication-2026-11-12/sources/companion_sections/fixed_moments.tex",
+        "line": 105,
+        "statement_sha256": "75a137f754a1c65d9bfc69b6a838e352d65ba5891c17a4c143102c2d11756608"
+      },
+      "original_assumption": "The prior written presentation could obscure the domain split or the applicable geometric witness; the existing formal statements and proof code remain valid.",
+      "finding": "The provided publication separates the general conditional/propagation clauses from the small bad-family bound for actual run starts. Existing main_6_3 already enforces this split and includes r=s through k=0. This resolves a possible reading ambiguity without adding a false-original numbered statement.",
+      "evidence": [
+        "PaperP1.FixedSourcePropagationTheorem.main_6_3",
+        "PaperP1.FixedSourceConditionalSum.homogeneous_sum"
+      ],
+      "proposed_revision": "Adopt the corrected wording and proof route from the supplied publication dossier.",
+      "impact": "Manuscript scope/proof clarification, validated against unchanged existing proofs. No new Lean theorem or third false-original V1.6 statement is claimed.",
+      "validation_source_commit": "a1c8092f7e25acf7f3b78283039cfbd69491f88e",
+      "validation_record": "docs/validation/publication-2026-11-12/lean-validation.json",
+      "manuscript_integration": {
+        "target_version": "publication-2026-11-12",
+        "status": "adopted_from_user_dossier_and_checked_against_existing_formalization"
+      }
+    },
+    {
+      "id": "P1-MATH-1012",
+      "classification": "improvement",
+      "status": "confirmed",
+      "title": "Repair the written near-primitive confinement route",
+      "location": {
+        "version": "Publication dossier received12 November2026",
+        "document": "companion",
+        "label": "p13:conf:near-primitive",
+        "number": "T7.1",
+        "page": "41",
+        "source": "manuscripts/paper-p1/publication-2026-11-12/sources/companion_sections/confinement.tex",
+        "line": 48,
+        "statement_sha256": "a285c1d53f734e7d5c1493228422c41d6e2aad88d759fe6cf2d42cb4619d1a3d"
+      },
+      "original_assumption": "The prior written presentation could obscure the domain split or the applicable geometric witness; the existing formal statements and proof code remain valid.",
+      "finding": "The provided publication proof of T7.1 uses physical regularization and the anchored small-kernel witness for the same M at all three anchors, before final erasure. It avoids invoking a theorem restricted to primitive triples. The existing Lean host proof already follows the direct physical-witness route.",
+      "evidence": [
+        "PaperP1.NearPrimitiveTripleMass.main_12_1_full",
+        "PaperP1.NearPrimitiveTripleHosts.uniform_hosts"
+      ],
+      "proposed_revision": "Adopt the corrected wording and proof route from the supplied publication dossier.",
+      "impact": "Manuscript scope/proof clarification, validated against unchanged existing proofs. No new Lean theorem or third false-original V1.6 statement is claimed.",
+      "validation_source_commit": "a1c8092f7e25acf7f3b78283039cfbd69491f88e",
+      "validation_record": "docs/validation/publication-2026-11-12/lean-validation.json",
+      "manuscript_integration": {
+        "target_version": "publication-2026-11-12",
+        "status": "adopted_from_user_dossier_and_checked_against_existing_formalization"
+      }
     }
   ]
 }

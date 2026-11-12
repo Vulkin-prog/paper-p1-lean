@@ -6,28 +6,28 @@
       "round": 1,
       "actual_exit_code": 0,
       "log": "main-round-1.log",
-      "log_sha256": "911c10d8e0e61f3926116b5c27978d8d174184fd8c364b3a8d6016cec65c1776"
+      "log_sha256": "a36955ff5e2fb1ed29a7f8f7c857ce45ecfac37665cc46ffe25b33353a6414cb"
     },
     {
       "document": "companion",
       "round": 1,
       "actual_exit_code": 0,
       "log": "companion-round-1.log",
-      "log_sha256": "69f7c5e3dcef3b29142f67590e7432ba791f4acffae1f7064a2927ad7891d04a"
+      "log_sha256": "0d04c4ddbfb00fcf53d0d8d17754899b4659d560ef6babdf10cf9f2685828f85"
     },
     {
       "document": "main",
       "round": 2,
       "actual_exit_code": 0,
       "log": "main-round-2.log",
-      "log_sha256": "ddff7f1af3053534906faaede71c55b9f43057f45aec21e0d805093422b3d11d"
+      "log_sha256": "cfeb7fb8e359470d9489bb7ba94ceb83ff60838bf66cb06d083c980a2256e3a3"
     },
     {
       "document": "companion",
       "round": 2,
       "actual_exit_code": 0,
       "log": "companion-round-2.log",
-      "log_sha256": "bb93ae7dc8af19c9f66b61b4ede2c87496a29ab1ef06492c066fec42bd1d62b4"
+      "log_sha256": "b64141cfe07d857a14e6a02a943d2a9bf06cd6aa7b04728cb8ff2d57e3f413e4"
     }
   ],
   "cross_references_stable": true,
@@ -120,7 +120,7 @@
     },
     {
       "path": "formalization.tex",
-      "sha256": "1dd3901b5d07a853fc112a071578ec043861bcdeddeb8a80ece28f96ba994524"
+      "sha256": "60209c7383913183d2ef8a64f0c2922ca12852678d4e287b217d1c0670380ae7"
     },
     {
       "path": "main.tex",
@@ -176,13 +176,13 @@
       "document": "main",
       "filename": "P1_Main_EN.pdf",
       "pages": 33,
-      "sha256": "c4e01feabf33dd246a542d835d28f1bdf7f2d28c2154bece545a375d32626a00"
+      "sha256": "9734dd66c6aa951299f0dae8538671b1905a41ad04d675f31c28317d21ec8dc4"
     },
     {
       "document": "companion",
       "filename": "P1_Companion_EN.pdf",
       "pages": 84,
-      "sha256": "6bafe2ef9337626a5fe7443d02660db5432bcbee4a61cddfef80edec12d9de4b"
+      "sha256": "5bd564e0521e0a1f26abd62071becfee541e9da7795cc6037355964abc1719c0"
     }
   ],
   "visual_review": "pending_separate_render_and_inspection"

@@ -1,5 +1,23 @@
 # Manuscript-to-Lean correspondence
 
+Current edition: the publication dossier received **12 November 2026**, with
+**118 numbered results (26 main, 92 companion)**. Relative to the preceding V2
+sources,117 statement blocks are identical and T4.3 clarifies the original-event
+scope of the small-contact bound. Existing Lean proofs already distinguish these
+domains; no mathematical Lean source or pin is changed. A fresh pinned build,
+20,019-theorem axiom audit and212-type extraction passed.
+See [publication alignment](PUBLICATION_ALIGNMENT.md),
+[French critical review](reviews/2026-11-12/PUBLICATION_REVIEW_FR.md),
+[current index](manuscript-results-publication-2026-11-12.json) and
+[actual replay](validation/publication-2026-11-12/lean-validation.json).
+The six Palomar project/configuration identities and52 compared statements
+still cover all26 main results. The current publication metadata and caller
+are under `palomar/publication` and `palomar-publication-preflight.yml`;
+the author keeps submissions on hold. Prior editions and qualification receipts
+remain preserved.
+
+## Preceding V2 alignment (historical snapshot)
+
 Current edition, 12 November 2026: **P1 V2.0 has 118 numbered results
 (26 article, 92 companion)**, mapped through 199 clause endpoints and nine
 retained auxiliary claims (212 extracted proposition types in total).

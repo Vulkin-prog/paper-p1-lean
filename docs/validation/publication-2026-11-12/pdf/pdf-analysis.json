@@ -5,13 +5,13 @@
       "document": "main",
       "filename": "P1_Main_EN.pdf",
       "pages": 33,
-      "sha256": "c4e01feabf33dd246a542d835d28f1bdf7f2d28c2154bece545a375d32626a00"
+      "sha256": "9734dd66c6aa951299f0dae8538671b1905a41ad04d675f31c28317d21ec8dc4"
     },
     {
       "document": "companion",
       "filename": "P1_Companion_EN.pdf",
       "pages": 84,
-      "sha256": "6bafe2ef9337626a5fe7443d02660db5432bcbee4a61cddfef80edec12d9de4b"
+      "sha256": "5bd564e0521e0a1f26abd62071becfee541e9da7795cc6037355964abc1719c0"
     }
   ],
   "documents": [
@@ -48,7 +48,7 @@
         "reciprocal": 65,
         "uri": 40
       },
-      "publication_statement_index_uri": "https://github.com/Vulkin-prog/paper-p1-lean/blob/main/docs/manuscript-results-publication-2026-11-12.json"
+      "publication_statement_index_uri": "https://github.com/Vulkin-prog/paper-p1-lean/blob/e564207ab543c7c0967e34b52f3d456d7a8f302c/docs/manuscript-results-publication-2026-11-12.json"
     },
     {
       "document": "companion",
@@ -85,7 +85,7 @@
         "reciprocal": 39,
         "uri": 37
       },
-      "publication_statement_index_uri": "https://github.com/Vulkin-prog/paper-p1-lean/blob/main/docs/manuscript-results-publication-2026-11-12.json"
+      "publication_statement_index_uri": "https://github.com/Vulkin-prog/paper-p1-lean/blob/e564207ab543c7c0967e34b52f3d456d7a8f302c/docs/manuscript-results-publication-2026-11-12.json"
     }
   ],
   "text_bounds_tolerance_pt": 0.5,

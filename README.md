@@ -1,14 +1,30 @@
 # P1 — Lean formalization
 
+## Current publication dossier
+
+The [publication edition received 12 November 2026](manuscripts/paper-p1/publication-2026-11-12/)
+contains the [33-page article](manuscripts/paper-p1/publication-2026-11-12/pdf/P1_Main_EN.pdf)
+and [84-page companion](manuscripts/paper-p1/publication-2026-11-12/pdf/P1_Companion_EN.pdf).
+Its 118 results retain the prior labels and numbering. T4.3 clarifies the original
+versus homogeneous event scopes; the mathematical Lean code and pins are unchanged.
+The [current correspondence](docs/manuscript-results-publication-2026-11-12.json),
+[actual fresh replay](docs/validation/publication-2026-11-12/lean-validation.json)
+and [French review](docs/reviews/2026-11-12/PUBLICATION_REVIEW_FR.md) record the evidence
+and remaining optional simplifications. Six unchanged Palomar configurations
+cover all 26 main results through 52 selections; their
+[publication preparation](palomar/REGISTRATION_PLAN_PUBLICATION.json) remains on hold.
+
+## Preceding V2 edition
+
 *Sharp Poisson approximation and second-order correction for long multiplicative
 runs*, and its technical companion, by [Brice Pouly](https://orcid.org/0009-0008-8491-2467).
 
-Current edition: **P1 V2.0**, aligned 12 November 2026, contains **118 numbered
+Preceding edition: **P1 V2.0**, aligned 12 November 2026, contains **118 numbered
 results (26 article, 92 companion)**. All clauses have checked Lean proof
 interfaces, with printed conditional premises retained. Lean **v4.36.0-rc2**
 and the original Mathlib pin are unchanged.
 
-- [Current article, 32 pages](manuscripts/paper-p1/v2.0/pdf/P1_V2_0_Main_EN.pdf)
+- [Preceding article, 32 pages](manuscripts/paper-p1/v2.0/pdf/P1_V2_0_Main_EN.pdf)
   and [technical companion, 84 pages](manuscripts/paper-p1/v2.0/pdf/P1_V2_0_Companion_EN.pdf).
 - [Editable V2 sources](manuscripts/paper-p1/v2.0/sources/),
   [received dossier preserved unchanged](manuscripts/paper-p1/v2.0/received/).
@@ -25,8 +41,8 @@ Fifty results omitted from V2 remain in the historical proof library; all 547
 older manuscript files are preserved. The active scientific text is unchanged
 from the received V2; its formalization notice now reflects the actual replay.
 
-**Current Palomar preparation:** [six V2 dossiers](RegistryV2/README.md) cover
-all 26 numbered main-article results through52 explicit compared statements.
+**Preceding V2 preparation:** [six V2 dossiers](RegistryV2/README.md) cover
+all 26 numbered main-article results through 52 explicit compared statements.
 A [French overview](docs/PALOMAR_V2_FR.md) explains the proposed order and scope.
 [The allocation](palomar/REGISTRATION_PLAN_V2.json) and
 [local checks](palomar/v3/VALIDATION.json) preserve Brice Pouly's name and ORCID.

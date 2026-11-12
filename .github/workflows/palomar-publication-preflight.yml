@@ -1,0 +1,90 @@
+name: P1 publication single-dossier Palomar preflight
+run-name: P1 publication preflight — ${{ inputs.bundle }} at ${{ inputs.source_commit }}
+
+on:
+  workflow_dispatch:
+    inputs:
+      source_commit:
+        description: Full immutable source commit (40 lowercase hexadecimal characters)
+        required: true
+        type: string
+      bundle:
+        description: One registration only; finish its entire submission cycle before the next
+        required: true
+        type: choice
+        options:
+          - quadratic_limits
+          - cumulants_optimality
+          - pairs_channels
+          - stopping_reconstruction
+          - probability_references
+          - affine_events
+      authorization_relationship:
+        description: Confirmed human relationship to the substantive formalization
+        required: true
+        type: choice
+        options:
+          - I am a responsible author or maintainer
+          - I have approval from a responsible author or maintainer
+
+permissions:
+  contents: read
+
+concurrency:
+  group: p1-palomar-registration
+  cancel-in-progress: false
+
+jobs:
+  select:
+    runs-on: ubuntu-24.04
+    outputs:
+      request_id: ${{ steps.selection.outputs.request_id }}
+      options: ${{ steps.selection.outputs.options }}
+    steps:
+      - name: Validate one exact source, confirmed relationship and registration
+        id: selection
+        env:
+          P1_SOURCE: ${{ inputs.source_commit }}
+          P1_BUNDLE: ${{ inputs.bundle }}
+          P1_RELATIONSHIP: ${{ inputs.authorization_relationship }}
+        run: |
+          python3 - <<'PY'
+          import hashlib, json, os, re
+          source = os.environ['P1_SOURCE']
+          bundle = os.environ['P1_BUNDLE']
+          relationship = os.environ['P1_RELATIONSHIP']
+          if not re.fullmatch('[0-9a-f]{40}', source):
+              raise SystemExit('source_commit must be a full lowercase commit SHA')
+          if relationship not in {
+              'I am a responsible author or maintainer',
+              'I have approval from a responsible author or maintainer',
+          }:
+              raise SystemExit('An explicit supported human relationship is required')
+          bundles = {
+              'affine_events', 'stopping_reconstruction', 'pairs_channels',
+              'cumulants_optimality', 'quadratic_limits', 'probability_references',
+          }
+          if bundle not in bundles:
+              raise SystemExit('Choose exactly one of the six registrations')
+          identity = hashlib.sha256((source + ':' + bundle).encode()).hexdigest()[:10]
+          options = {
+              'project_path': 'RegistryV2',
+              'comparator_config_path': 'RegistryV2/comparator/p1_' + bundle + '.json',
+              'formalization_metadata_path': 'palomar/publication/' + bundle + '/formalization.yaml',
+              'authorization_relationship': relationship,
+          }
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as output:
+              output.write('request_id=pb' + identity + '\n')
+              output.write('options=' + json.dumps(options, separators=(',', ':')) + '\n')
+          PY
+  verify:
+    needs: select
+    uses: PalomarRegistry/PalomarSubmission/.github/workflows/submission.yml@14aa8d6b3c2f14a8540605e37144560b9a00e7e7
+    with:
+      repository: ${{ github.repository }}
+      commit: ${{ inputs.source_commit }}
+      pipeline_commit: 14aa8d6b3c2f14a8540605e37144560b9a00e7e7
+      request_id: ${{ needs.select.outputs.request_id }}
+      mode: full
+      execution_profile: palomar-standard-v1
+      options: ${{ needs.select.outputs.options }}

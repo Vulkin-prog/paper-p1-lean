@@ -48,6 +48,8 @@ jobs:
           python3 scripts/check_manuscript_v20.py
           python3 -m unittest discover -s tests -p test_manuscript_v20.py
           python3 -m unittest discover -s tests -p test_sharp_palm_scope.py
+          python3 scripts/check_publication.py
+          python3 -m unittest discover -s tests -p test_publication.py
           python3 scripts/check_editorial_previews.py
           python3 -m unittest discover -s tests -p test_editorial_previews.py
           python3 scripts/check_scientific_preview.py

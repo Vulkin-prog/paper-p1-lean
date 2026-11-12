@@ -1,4 +1,17 @@
-# Current Palomar preparation — P1 V2
+# Current Palomar preparation — publication edition
+
+The current [publication allocation](../palomar/REGISTRATION_PLAN_PUBLICATION.json)
+retains the SAME six `RegistryV2` project/configuration identities and 52 selected
+statements. It covers all 26 unchanged numbered results of the main article.
+The [publication correspondence](PUBLICATION_ALIGNMENT.md) records the new
+source paths, pages and parsed author/ORCID metadata. The current manual caller
+is [palomar-publication-preflight.yml](../.github/workflows/palomar-publication-preflight.yml).
+The older V2 caller and metadata remain frozen evidence, not six more filings.
+Both callers share one serialization group. The author's latest explicit
+decision keeps all six dossiers in preparation: no official preflight, intake
+or registration has started. Ordinary proof CI does not dispatch these callers.
+
+## Previous V2 preparation (preserved history)
 
 On12 November2026 the user resumed this work and requested at most six
 registrations covering most or all of the main V2 article. The current
