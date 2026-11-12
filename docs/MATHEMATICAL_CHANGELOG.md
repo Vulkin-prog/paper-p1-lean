@@ -12,8 +12,11 @@ formalization notice changes from the received TeX; current PDFs are 32/84 pages
 See [V2 alignment](V2_ALIGNMENT.md), [current complete index](manuscript-results-v2.0.json),
 [French review and simplifications](reviews/2026-11-12/V2_REVIEW_FR.md) and
 [actual validation](validation/v2.0/validation.json). No new external mathematical
-input is introduced. The six historical Palomar dossiers remain unchanged and
-on hold; their prior qualification does not automatically cover V2.
+input is introduced. The user has resumed Palomar preparation: the current
+[six V2 dossiers](../RegistryV2/README.md) explicitly cover all26 numbered main
+results through52 selected statements. Their [current checks](../palomar/v3/VALIDATION.json)
+are separate from official full preflight, intake, review and registration.
+Historical dossiers and receipts remain preserved.
 
 The entries below are historical records. Their then-current wording and frozen
 review scopes are retained; the V2 documents above define the current edition.
@@ -36174,3 +36177,27 @@ Full Lean v4.36.0-rc2 replay passed at source 57835da7813e314367f689312af436f9ae
 For every integer depth k>=0 and prime q<=N, the actual even-valuation retained start count is at least B_k=N/(q+1)*(1-(1/q)^(2*k))-3*k. The proof uses exact translated-interval multiple counts, pairwise disjoint even valuation layers, their inclusion in the actual retained parameter set, and the exact finite geometric sum. For prime q and t>=0, both actual full exponential moments are at least exp(t*B_k-primeCount(2*q*floor(N/q))*log(2)). Depth one is exactly the earlier N/q-N/q^2-3 budget. Depth two strictly improves it at the original critical scale q=17, N=2^(q-1)=65536, hence gives a strictly larger exponential lower bound for every t>0 at the same cylinder cost. The explicit budget need not increase with depth because the error term grows. The original t>2 asymptotic statement and coefficient are preserved; no sharp density or new threshold is asserted.
 
 Full Lean v4.36.0-rc2 replay passed at source f55fe63b9538863bd0ec8bdf8b3deacb70f49e4d: 18,573 build jobs, 19,540 source-discovered theorem axiom checks and 19,692 distinct declaration-reference checks, all actual process exits 0. Proof warnings are errors; only propext, Classical.choice and Quot.sound occur.
+
+
+## 12 November 2026 — V2 Palomar statement packaging
+
+The user requested at most six dossiers covering the current main article.
+The new contained `RegistryV2` project exposes52 selected statements covering
+all26 numbered main results, with262 proved interface/bridge theorems. This is
+a change in the selected registry interfaces and their explicit provenance,
+not a new mathematical correction to the paper, and receives no artificial
+additional P1-MATH finding. All original mathematical source modules, compiler
+pins, historical corrections and manuscript bytes remain preserved.
+The main5.1 interface records the already-proved stronger universal conversion
+constant16 exp(2) without a mean cap. Main5.2 retains its254 assumptions. The
+remaining interfaces preserve exact/nominal parameters and fixed-order regimes.
+Reordering literal model definitions ahead of proof elaboration stabilizes
+automatically shared proof constants for structural Comparator equality; it
+changes neither the model nor the claims. See the current six-dossier map and
+local evidence under `palomar/v3` for the final checks and their precise limits.
+
+The universal conversion also supplies an optional editorial simplification for
+a next manuscript version: remove the mean cap and the1/4 smallness restriction
+from main5.1, retaining the natural Bernoulli domain0≤p_i≤1 and the explicit
+constant16 exp(2). This is a consequence of the existing proof, not an additional
+new theorem; the received scientific text and current PDFs are not modified.

@@ -1,3 +1,30 @@
+# Current Palomar preparation — P1 V2
+
+On12 November2026 the user resumed this work and requested at most six
+registrations covering most or all of the main V2 article. The current
+[contained project](../RegistryV2/README.md) and
+[exact allocation](../palomar/REGISTRATION_PLAN_V2.json) select52 statements
+covering all26 numbered main results, with their complete clause bundles.
+The companion remains the substantive proof source; all92 companion statements
+are not claimed as directly selected. These six replace the historical planned
+scopes; they are not six additional filings.
+
+Brice Pouly, GitHub Vulkin-prog and ORCID0009-0008-8491-2467 are together in
+every current author/maintainer/source record. Local evidence is kept under
+`palomar/v3`. The manual full preflight uses the same official pipeline pin,
+`mode: full`, `palomar-standard-v1`, exact source/configuration/metadata paths,
+and the contained project `RegistryV2`. It requires the user's explicit truthful
+personal relationship declaration before dispatch or intake. A private review
+must be received and shown to the user before any publication decision.
+Only one complete cycle may be active. Ordinary proof CI performs no submission.
+The previous pre-V2 caller is preserved byte for byte at
+[its historical path](../palomar/v2/historical-palomar-preflight.yml).
+
+The remainder of this file records historical preparation and must not be read
+as the active V2 selection or as current qualification.
+
+---
+
 # Palomar preparation
 
 **Submission hold, 7 November 2026.** The user has requested a pause before any

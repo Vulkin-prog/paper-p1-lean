@@ -1,0 +1,281 @@
+{
+  "pipeline_commit": "14aa8d6b3c2f14a8540605e37144560b9a00e7e7",
+  "local_metadata_parser_only": true,
+  "network_orcid_lookup_performed": false,
+  "full_palomar_workflow_passed": false,
+  "rows": [
+    {
+      "slug": "affine_events",
+      "metadata": "palomar/v3/affine_events/formalization.yaml",
+      "sha256": "8189b1eac8832e240695a881e1d713e41cfcbfa6e0e36749a61dae2abff53540",
+      "official_parser_passed": true,
+      "normalized_provenance": {
+        "result_origin": "source-based",
+        "repository_role": "substantive-development",
+        "responsible_maintainers": [
+          {
+            "name": "Brice Pouly",
+            "github": "Vulkin-prog",
+            "orcid": "0009-0008-8491-2467"
+          }
+        ],
+        "mathematical_sources": [
+          {
+            "title": "Sharp Poisson approximation and second-order correction for long multiplicative runs, main article and technical companion, V2.0",
+            "authors": [
+              {
+                "name": "Brice Pouly",
+                "github": "Vulkin-prog",
+                "orcid": "0009-0008-8491-2467"
+              }
+            ],
+            "relationship": "formalizes",
+            "identifier": "https://github.com/Vulkin-prog/paper-p1-lean/tree/main/manuscripts/paper-p1/v2.0",
+            "location": "Main article results 2.1, 2.2, 2.3, 2.4, 2.5. Sources: manuscripts/paper-p1/v2.0/sources/main.tex and companion.tex. Exact labels, source hashes and complete selected clause mapping: palomar/REGISTRATION_PLAN_V2.json.",
+            "note": "The selected project is a contained interface to the substantive proof development in the SAME repository, via the committed parent path dependency. The public registry record must retain Brice Pouly and ORCID 0009-0008-8491-2467; structured person mappings use the documented compatible metadata form.",
+            "type": "paper"
+          }
+        ],
+        "related_formalizations": [
+          {
+            "identifier": "https://github.com/Vulkin-prog/paper-c-lean",
+            "relationship": "adapts",
+            "note": "Only selected model foundations, ported from b9fa9ba490f201b408a302a86f1594ee620b228b under Apache-2.0. Exact scope and source attribution: docs/PAPER_C_REUSE.md."
+          }
+        ]
+      },
+      "declared_orcids": [
+        "0009-0008-8491-2467"
+      ]
+    },
+    {
+      "slug": "stopping_reconstruction",
+      "metadata": "palomar/v3/stopping_reconstruction/formalization.yaml",
+      "sha256": "6096cb4d5a18afb3ac3c956954ccfd398a9e229a3b45f864b3c78b804af0e7f4",
+      "official_parser_passed": true,
+      "normalized_provenance": {
+        "result_origin": "source-based",
+        "repository_role": "substantive-development",
+        "responsible_maintainers": [
+          {
+            "name": "Brice Pouly",
+            "github": "Vulkin-prog",
+            "orcid": "0009-0008-8491-2467"
+          }
+        ],
+        "mathematical_sources": [
+          {
+            "title": "Sharp Poisson approximation and second-order correction for long multiplicative runs, main article and technical companion, V2.0",
+            "authors": [
+              {
+                "name": "Brice Pouly",
+                "github": "Vulkin-prog",
+                "orcid": "0009-0008-8491-2467"
+              }
+            ],
+            "relationship": "formalizes",
+            "identifier": "https://github.com/Vulkin-prog/paper-p1-lean/tree/main/manuscripts/paper-p1/v2.0",
+            "location": "Main article results 4.1, 4.2, 5.1, 5.2, 5.3. Sources: manuscripts/paper-p1/v2.0/sources/main.tex and companion.tex. Exact labels, source hashes and complete selected clause mapping: palomar/REGISTRATION_PLAN_V2.json.",
+            "note": "The selected project is a contained interface to the substantive proof development in the SAME repository, via the committed parent path dependency. The public registry record must retain Brice Pouly and ORCID 0009-0008-8491-2467; structured person mappings use the documented compatible metadata form.",
+            "type": "paper"
+          }
+        ],
+        "related_formalizations": [
+          {
+            "identifier": "https://github.com/Vulkin-prog/paper-c-lean",
+            "relationship": "adapts",
+            "note": "Only selected model foundations, ported from b9fa9ba490f201b408a302a86f1594ee620b228b under Apache-2.0. Exact scope and source attribution: docs/PAPER_C_REUSE.md."
+          }
+        ]
+      },
+      "declared_orcids": [
+        "0009-0008-8491-2467"
+      ]
+    },
+    {
+      "slug": "pairs_channels",
+      "metadata": "palomar/v3/pairs_channels/formalization.yaml",
+      "sha256": "5c6683d111bf64b35ba704c387a974ea73802a723f7bc3a58a820134703bd9c3",
+      "official_parser_passed": true,
+      "normalized_provenance": {
+        "result_origin": "source-based",
+        "repository_role": "substantive-development",
+        "responsible_maintainers": [
+          {
+            "name": "Brice Pouly",
+            "github": "Vulkin-prog",
+            "orcid": "0009-0008-8491-2467"
+          }
+        ],
+        "mathematical_sources": [
+          {
+            "title": "Sharp Poisson approximation and second-order correction for long multiplicative runs, main article and technical companion, V2.0",
+            "authors": [
+              {
+                "name": "Brice Pouly",
+                "github": "Vulkin-prog",
+                "orcid": "0009-0008-8491-2467"
+              }
+            ],
+            "relationship": "formalizes",
+            "identifier": "https://github.com/Vulkin-prog/paper-p1-lean/tree/main/manuscripts/paper-p1/v2.0",
+            "location": "Main article results 3.1, 3.2, 8.1, 8.2, 8.3. Sources: manuscripts/paper-p1/v2.0/sources/main.tex and companion.tex. Exact labels, source hashes and complete selected clause mapping: palomar/REGISTRATION_PLAN_V2.json.",
+            "note": "The selected project is a contained interface to the substantive proof development in the SAME repository, via the committed parent path dependency. The public registry record must retain Brice Pouly and ORCID 0009-0008-8491-2467; structured person mappings use the documented compatible metadata form.",
+            "type": "paper"
+          }
+        ],
+        "related_formalizations": [
+          {
+            "identifier": "https://github.com/Vulkin-prog/paper-c-lean",
+            "relationship": "adapts",
+            "note": "Only selected model foundations, ported from b9fa9ba490f201b408a302a86f1594ee620b228b under Apache-2.0. Exact scope and source attribution: docs/PAPER_C_REUSE.md."
+          }
+        ]
+      },
+      "declared_orcids": [
+        "0009-0008-8491-2467"
+      ]
+    },
+    {
+      "slug": "cumulants_optimality",
+      "metadata": "palomar/v3/cumulants_optimality/formalization.yaml",
+      "sha256": "6b854a04bd50f878beb503545c51c51ccaa45c72d54b7b8feb8b150b4fef8847",
+      "official_parser_passed": true,
+      "normalized_provenance": {
+        "result_origin": "source-based",
+        "repository_role": "substantive-development",
+        "responsible_maintainers": [
+          {
+            "name": "Brice Pouly",
+            "github": "Vulkin-prog",
+            "orcid": "0009-0008-8491-2467"
+          }
+        ],
+        "mathematical_sources": [
+          {
+            "title": "Sharp Poisson approximation and second-order correction for long multiplicative runs, main article and technical companion, V2.0",
+            "authors": [
+              {
+                "name": "Brice Pouly",
+                "github": "Vulkin-prog",
+                "orcid": "0009-0008-8491-2467"
+              }
+            ],
+            "relationship": "formalizes",
+            "identifier": "https://github.com/Vulkin-prog/paper-p1-lean/tree/main/manuscripts/paper-p1/v2.0",
+            "location": "Main article results 3.3, 3.4, 6.1, 6.2. Sources: manuscripts/paper-p1/v2.0/sources/main.tex and companion.tex. Exact labels, source hashes and complete selected clause mapping: palomar/REGISTRATION_PLAN_V2.json.",
+            "note": "The selected project is a contained interface to the substantive proof development in the SAME repository, via the committed parent path dependency. The public registry record must retain Brice Pouly and ORCID 0009-0008-8491-2467; structured person mappings use the documented compatible metadata form.",
+            "type": "paper"
+          }
+        ],
+        "related_formalizations": [
+          {
+            "identifier": "https://github.com/Vulkin-prog/paper-c-lean",
+            "relationship": "adapts",
+            "note": "Only selected model foundations, ported from b9fa9ba490f201b408a302a86f1594ee620b228b under Apache-2.0. Exact scope and source attribution: docs/PAPER_C_REUSE.md."
+          }
+        ]
+      },
+      "declared_orcids": [
+        "0009-0008-8491-2467"
+      ]
+    },
+    {
+      "slug": "quadratic_limits",
+      "metadata": "palomar/v3/quadratic_limits/formalization.yaml",
+      "sha256": "7c82b8b1d4ce8825613c72fe14cd8f3c568b06bdd2ae2b387a1f4acdfc3049b1",
+      "official_parser_passed": true,
+      "normalized_provenance": {
+        "result_origin": "source-based",
+        "repository_role": "substantive-development",
+        "responsible_maintainers": [
+          {
+            "name": "Brice Pouly",
+            "github": "Vulkin-prog",
+            "orcid": "0009-0008-8491-2467"
+          }
+        ],
+        "mathematical_sources": [
+          {
+            "title": "Sharp Poisson approximation and second-order correction for long multiplicative runs, main article and technical companion, V2.0",
+            "authors": [
+              {
+                "name": "Brice Pouly",
+                "github": "Vulkin-prog",
+                "orcid": "0009-0008-8491-2467"
+              }
+            ],
+            "relationship": "formalizes",
+            "identifier": "https://github.com/Vulkin-prog/paper-p1-lean/tree/main/manuscripts/paper-p1/v2.0",
+            "location": "Main article results 1.1, 1.2, 7.2, 7.3, 7.4. Sources: manuscripts/paper-p1/v2.0/sources/main.tex and companion.tex. Exact labels, source hashes and complete selected clause mapping: palomar/REGISTRATION_PLAN_V2.json.",
+            "note": "The selected project is a contained interface to the substantive proof development in the SAME repository, via the committed parent path dependency. The public registry record must retain Brice Pouly and ORCID 0009-0008-8491-2467; structured person mappings use the documented compatible metadata form.",
+            "type": "paper"
+          }
+        ],
+        "related_formalizations": [
+          {
+            "identifier": "https://github.com/Vulkin-prog/paper-c-lean",
+            "relationship": "adapts",
+            "note": "Only selected model foundations, ported from b9fa9ba490f201b408a302a86f1594ee620b228b under Apache-2.0. Exact scope and source attribution: docs/PAPER_C_REUSE.md."
+          }
+        ]
+      },
+      "declared_orcids": [
+        "0009-0008-8491-2467"
+      ]
+    },
+    {
+      "slug": "probability_references",
+      "metadata": "palomar/v3/probability_references/formalization.yaml",
+      "sha256": "4e7722199d2327f2a11b4200e2a4b27fbf74236715dcf203722a393c2cc9b20e",
+      "official_parser_passed": true,
+      "normalized_provenance": {
+        "result_origin": "source-based",
+        "repository_role": "substantive-development",
+        "responsible_maintainers": [
+          {
+            "name": "Brice Pouly",
+            "github": "Vulkin-prog",
+            "orcid": "0009-0008-8491-2467"
+          }
+        ],
+        "mathematical_sources": [
+          {
+            "title": "Sharp Poisson approximation and second-order correction for long multiplicative runs, main article and technical companion, V2.0",
+            "authors": [
+              {
+                "name": "Brice Pouly",
+                "github": "Vulkin-prog",
+                "orcid": "0009-0008-8491-2467"
+              }
+            ],
+            "relationship": "formalizes",
+            "identifier": "https://github.com/Vulkin-prog/paper-p1-lean/tree/main/manuscripts/paper-p1/v2.0",
+            "location": "Main article results 7.1, 8.4. Sources: manuscripts/paper-p1/v2.0/sources/main.tex and companion.tex. Exact labels, source hashes and complete selected clause mapping: palomar/REGISTRATION_PLAN_V2.json.",
+            "note": "The selected project is a contained interface to the substantive proof development in the SAME repository, via the committed parent path dependency. The public registry record must retain Brice Pouly and ORCID 0009-0008-8491-2467; structured person mappings use the documented compatible metadata form.",
+            "type": "paper"
+          }
+        ],
+        "related_formalizations": [
+          {
+            "identifier": "https://github.com/Vulkin-prog/paper-c-lean",
+            "relationship": "adapts",
+            "note": "Only selected model foundations, ported from b9fa9ba490f201b408a302a86f1594ee620b228b under Apache-2.0. Exact scope and source attribution: docs/PAPER_C_REUSE.md."
+          }
+        ]
+      },
+      "declared_orcids": [
+        "0009-0008-8491-2467"
+      ]
+    }
+  ],
+  "validator_files": {
+    "scripts/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "scripts/verification_errors.py": "ce58c4adc2f896a8ce69961d1f49ada7f571d86f9638a196f34197e3293cc776",
+    "scripts/workflow_inputs.py": "0a564f08c2d2628b441c33310d63ab9dddd3caacd32bc0aa52742c30387b429c",
+    "scripts/submission_contract.py": "264b7da57bd099b7cd4da15b580b32978671a60b8b396c60920f584176224cc3",
+    "scripts/orcid_validation.py": "2f368bf27a27f150da1a03f502ff0f45845fce1d5ebcf8dcfcf10908b5d360b7",
+    "taxonomies/msc2020-codes.json": "b4de69f1f562da01e0f4580cecc0ab36098f5297bb7cdd669c8ec3b0d3606060",
+    "taxonomies/arxiv-categories.json": "3b339cf140a914c50bab39b1c44df2437ce3984bd09bb2150fcb0edd60eda776"
+  }
+}

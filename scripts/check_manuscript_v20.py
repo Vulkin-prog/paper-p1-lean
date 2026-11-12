@@ -132,7 +132,7 @@ def check_partition(index, old):
         require(names == expected and len(set(names)) == len(names), 'Incomplete clause bundle: ' + label)
         require(row['printed_conditional_clause'] is (label == 'p13:transfer:finite'), 'Changed printed conditional disposition')
         require(row['status'] == 'proved_as_printed_with_recorded_context', 'Result is not aligned and replayed')
-    require(index['palomar_status'] == 'on_hold_at_user_request', 'Palomar hold changed')
+    require(index['palomar_status'] == 'six_v2_dossiers_awaiting_explicit_submission_declaration', 'Unexpected current Palomar stage')
     require(len(index['auxiliary_claims']) == 9 and len({r['id'] for r in index['auxiliary_claims']}) == 9, 'Missing retained auxiliary claim')
     require(index['counts'] == {'main': 26, 'companion': 92, 'total': 118, 'retained': 117, 'new': 1, 'retired_historical': 50, 'unchanged_from_unified': 107, 'changed_from_unified': 10}, 'V2 accounting changed')
 
@@ -218,7 +218,7 @@ def verify():
     for document in ['main', 'companion']:
         record = visual['aux'][document]
         binding(record)
-    print('P1 V2 integrity passed:118 results, 212 proposition endpoints, 50 historical results preserved; Palomar on hold.')
+    print('P1 V2 integrity passed:118 results, 212 proposition endpoints, 50 historical results preserved; six V2 Palomar dossiers prepared, explicit submission declaration pending.')
 
 
 if __name__ == '__main__':

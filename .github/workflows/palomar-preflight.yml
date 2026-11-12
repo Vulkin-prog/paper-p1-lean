@@ -1,5 +1,5 @@
-name: P1 single-registration Palomar mechanical preflight
-run-name: P1 registration preflight — ${{ inputs.bundle }} at ${{ inputs.source_commit }}
+name: P1 V2 single-dossier Palomar preflight
+run-name: P1 V2 preflight — ${{ inputs.bundle }} at ${{ inputs.source_commit }}
 
 on:
   workflow_dispatch:
@@ -13,12 +13,12 @@ on:
         required: true
         type: choice
         options:
-          - arithmetic_geometry
-          - profiles_smooth
-          - affine_conditioning
-          - cumulants_obstructions
-          - poisson_fields
-          - exponential_cylinders
+          - quadratic_limits
+          - cumulants_optimality
+          - pairs_channels
+          - stopping_reconstruction
+          - probability_references
+          - affine_events
       authorization_relationship:
         description: Confirmed human relationship to the substantive formalization
         required: true
@@ -61,19 +61,20 @@ jobs:
           }:
               raise SystemExit('An explicit supported human relationship is required')
           bundles = {
-              'arithmetic_geometry', 'profiles_smooth', 'affine_conditioning',
-              'cumulants_obstructions', 'poisson_fields', 'exponential_cylinders',
+              'affine_events', 'stopping_reconstruction', 'pairs_channels',
+              'cumulants_optimality', 'quadratic_limits', 'probability_references',
           }
           if bundle not in bundles:
               raise SystemExit('Choose exactly one of the six registrations')
           identity = hashlib.sha256((source + ':' + bundle).encode()).hexdigest()[:10]
           options = {
-              'comparator_config_path': 'comparator/registrations/p1_' + bundle + '.json',
-              'formalization_metadata_path': 'palomar/v2/' + bundle + '/formalization.yaml',
+              'project_path': 'RegistryV2',
+              'comparator_config_path': 'RegistryV2/comparator/p1_' + bundle + '.json',
+              'formalization_metadata_path': 'palomar/v3/' + bundle + '/formalization.yaml',
               'authorization_relationship': relationship,
           }
           with open(os.environ['GITHUB_OUTPUT'], 'a') as output:
-              output.write('request_id=r6' + identity + '\n')
+              output.write('request_id=v2' + identity + '\n')
               output.write('options=' + json.dumps(options, separators=(',', ':')) + '\n')
           PY
   verify:

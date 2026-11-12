@@ -7839,7 +7839,7 @@
       "invalidated_by_v2": false
     }
   ],
-  "palomar_status": "on_hold_at_user_request",
+  "palomar_status": "six_v2_dossiers_awaiting_explicit_submission_declaration",
   "scope": "Source/type-bound clause bundles and recorded source/definition comparison; this index is not a machine translation of TeX, human review or Palomar certification.",
   "auxiliary_claims": [
     {

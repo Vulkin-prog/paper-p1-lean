@@ -1,0 +1,41 @@
+{
+  "challenge_module": "ChallengeP1V2AffineEvents",
+  "solution_module": "SolutionP1V2AffineEvents",
+  "theorem_names": [
+    "PaperP1Registry.V2.AffineEvents.expansion_centered_identity",
+    "PaperP1Registry.V2.AffineEvents.expansion_probability_clauses",
+    "PaperP1Registry.V2.AffineEvents.original_fourier",
+    "PaperP1Registry.V2.AffineEvents.finite_envelope",
+    "PaperP1Registry.V2.AffineEvents.nominal_envelope",
+    "PaperP1Registry.V2.AffineEvents.compatible_nullity",
+    "PaperP1Registry.V2.AffineEvents.unique_direct_partition",
+    "PaperP1Registry.V2.AffineEvents.canonical_factorization"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "external_kernels": {
+    "Lean paranoid": [
+      "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/leanchecker-paranoid",
+      "--silent",
+      "--from-export"
+    ],
+    "lean4lean": [
+      "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/lean4lean",
+      "--import"
+    ],
+    "nanoda": [
+      "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/nanoda_bin"
+    ],
+    "con-leche": [
+      "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/con-leche"
+    ],
+    "con-ron": [
+      "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/con-ron",
+      "--verified",
+      "--jobs=2"
+    ]
+  }
+}

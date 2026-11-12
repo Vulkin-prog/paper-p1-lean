@@ -64,13 +64,11 @@ is claimed. The French review also proposes an optional shorter companion notice
 
 ## Palomar
 
-Submissions remain **on hold at the user's request**. The six historical
-consolidated dossiers and their author metadata (Brice Pouly,
-ORCID 0009-0008-8491-2467) are unchanged. Their former qualification concerns
-their historical statement scopes, not an automatic qualification of V2.
-No official check, intake or submission was launched. When the user resumes
-this milestone, compare the six scopes to V2, preserve the target of fewer
-than ten total submissions, and update statements/evidence before any filing.
+The user resumed Palomar preparation on12 November2026. The active
+[six V2 dossiers](../RegistryV2/README.md) map every clause of all26 numbered
+main results to52 selected statements. Historical dossiers and receipts remain
+preserved. Local checks under `palomar/v3` do not replace official full
+preflight, intake, private review or the human publication decision.
 
 ## Reproduce
 

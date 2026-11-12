@@ -55,6 +55,8 @@ jobs:
           python3 scripts/check_unified_preview.py
           python3 -m unittest discover -s tests -p test_unified_preview.py
           python3 scripts/update_audit.py --check
+          python3 scripts/check_registry_v2.py
+          python3 -m unittest discover -s tests -p test_registry_v2.py
           python3 scripts/check_registry_candidates.py
           python3 scripts/check_registry_consolidation.py
           python3 scripts/check_palomar_sources.py
@@ -75,3 +77,15 @@ jobs:
           lake env lean Audit.lean > axiom-audit.txt
           cat axiom-audit.txt
           python3 scripts/check_axioms.py axiom-audit.txt
+
+      - name: Build current six V2 Palomar proof interfaces
+        run: |
+          python3 scripts/check_disk.py
+          # Reuse the same pinned dependency directory without another cache download.
+          mkdir -p RegistryV2/.lake
+          ln -s ../../.lake/packages RegistryV2/.lake/packages
+          lake -d RegistryV2 build
+          lake -d RegistryV2 build ChallengeP1V2AffineEvents ChallengeP1V2StoppingReconstruction ChallengeP1V2PairsChannels ChallengeP1V2CumulantsOptimality ChallengeP1V2QuadraticLimits ChallengeP1V2ProbabilityReferences
+          lake -d RegistryV2 env lean RegistryV2/AuditRegistryV2.lean > registry-v2-axioms.txt
+          python3 scripts/check_registry_v2.py --audit-log registry-v2-axioms.txt
+          python3 scripts/check_disk.py

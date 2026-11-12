@@ -7,7 +7,7 @@
   "main_result_count": 26,
   "selected_theorem_count": 52,
   "coverage_basis": "Complete explicit selected clause bundles, not imported proof-dependency coverage.",
-  "status": "local_validation_in_progress",
+  "status": "local_checks_passed_awaiting_explicit_submission_declaration",
   "official_full_preflight_passed": false,
   "intake_started": false,
   "registration": null,
@@ -241,8 +241,8 @@
           ]
         }
       ],
-      "challenge_lines": 260,
-      "challenge_bytes": 14534,
+      "challenge_lines": 262,
+      "challenge_bytes": 15474,
       "audited_solution_theorems": [
         "PaperP1Registry.V2.AffineEvents.runCount_eq",
         "PaperP1Registry.V2.AffineEvents.factorialMoment_eq",
@@ -288,7 +288,17 @@
         "PaperP1Registry.V2.AffineEvents.unique_direct_partition",
         "PaperP1Registry.V2.AffineEvents.canonical_factorization",
         "PaperP1Registry.V2.AffineEvents.expansion_probability_clauses"
-      ]
+      ],
+      "compiled_type_sha256": {
+        "PaperP1Registry.V2.AffineEvents.expansion_centered_identity": "cac1d9c57304ce134a2f28467bad0c12fcba5728c7a6266740e6bcd48312fb85",
+        "PaperP1Registry.V2.AffineEvents.expansion_probability_clauses": "32f733eb8ebf8128f0efd19052aeee627c2b64811a98c093b6cf2c2097439b29",
+        "PaperP1Registry.V2.AffineEvents.original_fourier": "ee621644c21034b612ca87577f8c174237d5bcae178c30abd0cc05095e7a2f9d",
+        "PaperP1Registry.V2.AffineEvents.finite_envelope": "3c3818726d9c64abd78a65c229437636a4f2df31ac8058658009063720683535",
+        "PaperP1Registry.V2.AffineEvents.nominal_envelope": "370ced0c616d89784bd561ec2b9c209352a4c74ae5745d9150f33ced412c972c",
+        "PaperP1Registry.V2.AffineEvents.compatible_nullity": "c0be9f50e4b28b93c1afd4001743f8f4f89ea72e08dff6fe45781ec381156b80",
+        "PaperP1Registry.V2.AffineEvents.unique_direct_partition": "bd855b5c88ec288f80031ea7f2f58fe27407f821cedad01cd3794f6f7c4dcc92",
+        "PaperP1Registry.V2.AffineEvents.canonical_factorization": "97df291ba246acbd0ed2a55fc2328e5e735c4d844e456457abf9ee63fcde23b2"
+      }
     },
     {
       "order": 2,
@@ -475,8 +485,8 @@
           ]
         }
       ],
-      "challenge_lines": 272,
-      "challenge_bytes": 15083,
+      "challenge_lines": 255,
+      "challenge_bytes": 14807,
       "audited_solution_theorems": [
         "PaperP1Registry.V2.StoppingReconstruction.runCount_eq",
         "PaperP1Registry.V2.StoppingReconstruction.factorialMoment_eq",
@@ -527,7 +537,17 @@
         "PaperP1Registry.V2.StoppingReconstruction.run_conversion",
         "PaperP1Registry.V2.StoppingReconstruction.conditional_transfer",
         "PaperP1Registry.V2.StoppingReconstruction.triple_reconstruction"
-      ]
+      ],
+      "compiled_type_sha256": {
+        "PaperP1Registry.V2.StoppingReconstruction.expansion_polynomial_expansion": "f5dbb19556499ac6d0d867dffe2254f76ef79acd6e000256b50c71df6e65d712",
+        "PaperP1Registry.V2.StoppingReconstruction.prefix_suffix": "f89e76967392832e9f0a164e56780330004da1e9e3c2e1a3fd0aa78657fb17db",
+        "PaperP1Registry.V2.StoppingReconstruction.expansion_positive_stopped_kernel": "459b93d2ade622d2db6370d73058db3c32b209973b7714b1b596e1513b7e1d0c",
+        "PaperP1Registry.V2.StoppingReconstruction.expansion_stopped_l1_bound": "a771557aa544acb09ab2c8743a45ffb20e1b74b54fbe03b603687f8d9d376942",
+        "PaperP1Registry.V2.StoppingReconstruction.finite_conversion": "b39db2cacaf504a88f1698aef6e42f5ccc01c2eca6a61cb18d113c93169e2478",
+        "PaperP1Registry.V2.StoppingReconstruction.run_conversion": "adcc8d57bb6dfa6378e3c6c634baaba9996e847612eb1be44ac972de1db8f9c1",
+        "PaperP1Registry.V2.StoppingReconstruction.conditional_transfer": "17ff228e4ace39fe56fe269be79b8421518b58ace2f9f5c4b7741dec3c9a14d8",
+        "PaperP1Registry.V2.StoppingReconstruction.triple_reconstruction": "0d1b80beb4de7a4cf4d98cfc86166569b4eea76b36b000b7fc3bff951a4c55b9"
+      }
     },
     {
       "order": 3,
@@ -739,8 +759,8 @@
           ]
         }
       ],
-      "challenge_lines": 263,
-      "challenge_bytes": 15246,
+      "challenge_lines": 266,
+      "challenge_bytes": 16160,
       "audited_solution_theorems": [
         "PaperP1Registry.V2.PairsChannels.runCount_eq",
         "PaperP1Registry.V2.PairsChannels.factorialMoment_eq",
@@ -805,7 +825,22 @@
         "PaperP1Registry.V2.PairsChannels.phase_three_four",
         "PaperP1Registry.V2.PairsChannels.height_five_channels",
         "PaperP1Registry.V2.PairsChannels.fixed_height_lower_power"
-      ]
+      ],
+      "compiled_type_sha256": {
+        "PaperP1Registry.V2.PairsChannels.complete_pair_profile": "4c75f327790089b126efeb7359cbbc8a0deecd6ec89c5c07670f05052e3631da",
+        "PaperP1Registry.V2.PairsChannels.explicit_two_channel": "cf74a05d8a0fb84df874cba32389d88f001996ca2ccf0026e69b2e8c6c3bccb7",
+        "PaperP1Registry.V2.PairsChannels.fixed_height_hierarchy": "e968bd366ab78fc201c2fe609f234e1713b369c946aa798a36e3d058f1bc56bf",
+        "PaperP1Registry.V2.PairsChannels.phase_positive": "2a60838d6d7470f134ef640fe2aea0598a7f5dfce443aa73a74016bd791cb7a2",
+        "PaperP1Registry.V2.PairsChannels.weighted_nonaligned": "fe96de93141197a0aaf726b5e7fc1135f460a2aff8f5e3d5ce64165d9d9c0386",
+        "PaperP1Registry.V2.PairsChannels.two_channel_equivalents": "8fb0dd77e35d85b1893e57b10cd4602cd5d38ec274658f1e538c3f1820f939fa",
+        "PaperP1Registry.V2.PairsChannels.two_channel_remainder": "7ae99a1ad4d4793190a505a61df46ff379cd97030b5e2597f6f510f40fb68716",
+        "PaperP1Registry.V2.PairsChannels.height_five_closed": "5e71bef4215116c8322d9c34a3ebe7cd50d8f1b6aebdb44b197b846ab153969b",
+        "PaperP1Registry.V2.PairsChannels.height_five_coefficient": "919bf719fbde7dd8135c1702a69476623648bd754103f1fd39b34437400ba5b2",
+        "PaperP1Registry.V2.PairsChannels.height_six_phase": "e2939883b96f9a51a4a4064a9c0b5ae09770b12df2b3cfc874b0dc5fc7b4e5a0",
+        "PaperP1Registry.V2.PairsChannels.phase_three_four": "9ef28c86f04851325a08b566aee401ecbd90a82acfe4af2e0186682b773cc3c6",
+        "PaperP1Registry.V2.PairsChannels.height_five_channels": "e351f75ec5526f71104023788249189664987d4320bf28d4093fc6a97bae6164",
+        "PaperP1Registry.V2.PairsChannels.fixed_height_lower_power": "249b8f3f9b8b42414293ae925622206ef6f1a9ec14fac119fe9ca70dc50604b0"
+      }
     },
     {
       "order": 4,
@@ -932,8 +967,8 @@
           ]
         }
       ],
-      "challenge_lines": 217,
-      "challenge_bytes": 11192,
+      "challenge_lines": 190,
+      "challenge_bytes": 10311,
       "audited_solution_theorems": [
         "PaperP1Registry.V2.CumulantsOptimality.runCount_eq",
         "PaperP1Registry.V2.CumulantsOptimality.factorialMoment_eq",
@@ -965,7 +1000,17 @@
         "PaperP1Registry.V2.CumulantsOptimality.absolute_triple_activity",
         "PaperP1Registry.V2.CumulantsOptimality.quartic_non_cancellation",
         "PaperP1Registry.V2.CumulantsOptimality.quadratic_optimality"
-      ]
+      ],
+      "compiled_type_sha256": {
+        "PaperP1Registry.V2.CumulantsOptimality.factorial_source": "faa909520524b6098e6490aef88f4ab9844b0dd5995b2a1da5f77441f29b4bb6",
+        "PaperP1Registry.V2.CumulantsOptimality.third_exact_identity": "0e1682a739b1db2e43aa35ca917cb1b36c117d2a8c68d953ca81ec3983872ec8",
+        "PaperP1Registry.V2.CumulantsOptimality.fourth_exact_identity": "ab5ea62b86203a73b91d530d4c2fa708792ee9bb661914e78651229db871fb8d",
+        "PaperP1Registry.V2.CumulantsOptimality.principal_second_equivalent": "b3ad95d5accdfabac031d7a73326f39bb335b125faeec86873e9279e9e9a4fcf",
+        "PaperP1Registry.V2.CumulantsOptimality.optimal_third_cumulant": "9b31ed5893f3d1aa2b42068d736ef5410c87bd7d5ea187152c71e591168181e8",
+        "PaperP1Registry.V2.CumulantsOptimality.absolute_triple_activity": "335135f8c7b865e86006c572fd6a4d5a88d19dfcdb94e43248f74e8f03485acb",
+        "PaperP1Registry.V2.CumulantsOptimality.quartic_non_cancellation": "a13787b9b6b2345aa80a7c41f00b5f2e0b9745fc87103640632daab3a03ddd4e",
+        "PaperP1Registry.V2.CumulantsOptimality.quadratic_optimality": "0286e0bd011d7aed319d716df50874e96738c28639b8a6f0ba1034a2b611cee1"
+      }
     },
     {
       "order": 5,
@@ -1122,8 +1167,8 @@
           ]
         }
       ],
-      "challenge_lines": 218,
-      "challenge_bytes": 11278,
+      "challenge_lines": 179,
+      "challenge_bytes": 9737,
       "audited_solution_theorems": [
         "PaperP1Registry.V2.QuadraticLimits.runCount_eq",
         "PaperP1Registry.V2.QuadraticLimits.runCount_fun_eq",
@@ -1157,7 +1202,19 @@
         "PaperP1Registry.V2.QuadraticLimits.no_retained_start",
         "PaperP1Registry.V2.QuadraticLimits.integerBias_eq",
         "PaperP1Registry.V2.QuadraticLimits.literal_mean_bias"
-      ]
+      ],
+      "compiled_type_sha256": {
+        "PaperP1Registry.V2.QuadraticLimits.source_probability": "2f186365cd6e8b56b7899ba8cd85f85f2cfb51cd99dae7cf0d173e4175e5bc0b",
+        "PaperP1Registry.V2.QuadraticLimits.poisson_expansion": "7b26648c6404ed0e9027974cc30a20ab8346a51b8fd522cb03f078dda9a33eec",
+        "PaperP1Registry.V2.QuadraticLimits.moving_residue_equivalent": "26ac815475619783fefdaaf8287da5407f9399b010fea2d4afdd87867ccb1dff",
+        "PaperP1Registry.V2.QuadraticLimits.mean_bias_quantized": "66c2beb6fdcc1771079383ccf48030f292d836dcda4c28c870fc647e8b6335fc",
+        "PaperP1Registry.V2.QuadraticLimits.nominal_quadratic_comparison": "684da124c755b926580436302ea54bfba5aeb59a0845a8c3aae8830fefc26ec0",
+        "PaperP1Registry.V2.QuadraticLimits.reference_series": "89a3fd657fa0e8d363a5346d937e73c9bef6bfed374ec8b9cb7c84e871bc45a9",
+        "PaperP1Registry.V2.QuadraticLimits.optimal_quadratic": "a3a1f1d61b61d2e52206e0d35f883579327bf0f994c34645bcd5ad02141800d1",
+        "PaperP1Registry.V2.QuadraticLimits.polynomial_weights": "cd0629ce01523d45c4f174ea16500efef65d53384048287205f07873dc30f993",
+        "PaperP1Registry.V2.QuadraticLimits.no_retained_start": "1ca32f75e05b82066a0f32ef0d3e2a7bca3b5897bf0c1b7530e0bd867058b0ac",
+        "PaperP1Registry.V2.QuadraticLimits.literal_mean_bias": "fe505b3c54d746c34b8c1ce7785706c51407002c624f7a47beaaa66f08d5e679"
+      }
     },
     {
       "order": 6,
@@ -1236,8 +1293,8 @@
           ]
         }
       ],
-      "challenge_lines": 166,
-      "challenge_bytes": 9308,
+      "challenge_lines": 169,
+      "challenge_bytes": 9891,
       "audited_solution_theorems": [
         "PaperP1Registry.V2.ProbabilityReferences.runCount_eq",
         "PaperP1Registry.V2.ProbabilityReferences.factorialMoment_eq",
@@ -1283,7 +1340,23 @@
         "PaperP1Registry.V2.ProbabilityReferences.hermite_exact",
         "PaperP1Registry.V2.ProbabilityReferences.hermite_fixed_height",
         "PaperP1Registry.V2.ProbabilityReferences.hermite_fixed_equivalent"
-      ]
+      ],
+      "compiled_type_sha256": {
+        "PaperP1Registry.V2.ProbabilityReferences.quadratic_probability_criterion": "2fe6c9bc0fe012c762f906fff794f5e829ea3a3ce36fea50a62c28a7bcc93aee",
+        "PaperP1Registry.V2.ProbabilityReferences.quadratic_mass_formula": "ce4340c62542d6f6979cdfdb8e25a7648e78a04d4e5162ce97dd411b37b40a80",
+        "PaperP1Registry.V2.ProbabilityReferences.hermite_exact": "8109158fa89e87f88ccd0611d0b374de17d7b8208ed0f1c5b1bf13214bd33d28",
+        "PaperP1Registry.V2.ProbabilityReferences.hermite_fixed_height": "e83323d2ae8539d7d7050581082f2bb21bc42ac1c89b540b2c4ba246a3632825",
+        "PaperP1Registry.V2.ProbabilityReferences.hermite_fixed_equivalent": "a2b7ff3e68550c2ccb289ce668a9d7150358cbc9a57c6f82ee64f8812411c0ce"
+      }
     }
-  ]
+  ],
+  "submission_sequence": [
+    "quadratic_limits",
+    "cumulants_optimality",
+    "pairs_channels",
+    "stopping_reconstruction",
+    "probability_references",
+    "affine_events"
+  ],
+  "frozen_proof_source_commit": "395c805fac3dbb2930de07cfa5286fef6d85c403"
 }

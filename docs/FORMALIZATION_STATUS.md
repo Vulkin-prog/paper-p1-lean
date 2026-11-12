@@ -12,8 +12,11 @@ formalization notice changes from the received TeX; current PDFs are 32/84 pages
 See [V2 alignment](V2_ALIGNMENT.md), [current complete index](manuscript-results-v2.0.json),
 [French review and simplifications](reviews/2026-11-12/V2_REVIEW_FR.md) and
 [actual validation](validation/v2.0/validation.json). No new external mathematical
-input is introduced. The six historical Palomar dossiers remain unchanged and
-on hold; their prior qualification does not automatically cover V2.
+input is introduced. The user has resumed Palomar preparation: the current
+[six V2 dossiers](../RegistryV2/README.md) explicitly cover all26 numbered main
+results through52 selected statements. Their [current checks](../palomar/v3/VALIDATION.json)
+are separate from official full preflight, intake, review and registration.
+Historical dossiers and receipts remain preserved.
 
 The entries below are historical records. Their then-current wording and frozen
 review scopes are retained; the V2 documents above define the current edition.

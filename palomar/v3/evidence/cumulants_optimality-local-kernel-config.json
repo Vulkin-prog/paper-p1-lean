@@ -1,0 +1,41 @@
+{
+  "challenge_module": "ChallengeP1V2CumulantsOptimality",
+  "solution_module": "SolutionP1V2CumulantsOptimality",
+  "theorem_names": [
+    "PaperP1Registry.V2.CumulantsOptimality.factorial_source",
+    "PaperP1Registry.V2.CumulantsOptimality.third_exact_identity",
+    "PaperP1Registry.V2.CumulantsOptimality.fourth_exact_identity",
+    "PaperP1Registry.V2.CumulantsOptimality.principal_second_equivalent",
+    "PaperP1Registry.V2.CumulantsOptimality.optimal_third_cumulant",
+    "PaperP1Registry.V2.CumulantsOptimality.absolute_triple_activity",
+    "PaperP1Registry.V2.CumulantsOptimality.quartic_non_cancellation",
+    "PaperP1Registry.V2.CumulantsOptimality.quadratic_optimality"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "external_kernels": {
+    "Lean paranoid": [
+      "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/leanchecker-paranoid",
+      "--silent",
+      "--from-export"
+    ],
+    "lean4lean": [
+      "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/lean4lean",
+      "--import"
+    ],
+    "nanoda": [
+      "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/nanoda_bin"
+    ],
+    "con-leche": [
+      "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/con-leche"
+    ],
+    "con-ron": [
+      "/home/vulkin/Documents/Codex/2026-10-31/github-plugin-github-openai-curated-remote-3/work/elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/con-ron",
+      "--verified",
+      "--jobs=2"
+    ]
+  }
+}

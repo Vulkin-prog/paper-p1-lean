@@ -46,7 +46,20 @@ future manuscript version and preparing Palomar registrations after completion.
   Only `propext`, `Classical.choice`, `Quot.sound` are permitted kernel axioms.
 - Palomar is a later milestone: no submission, certification claim or registry
   identifier before completed coverage, statement alignment and actual checks.
-- On 7 November 2026 the user explicitly put Palomar submissions on hold while
-  the article and companion undergo independent mathematical/editorial review.
-  Do not launch the full Palomar workflow, intake or registration until the user
-  resumes that work. Local proof checks and manuscript review may continue.
+- On12 November2026 the user resumed Palomar preparation for V2 and requested
+  at most six registrations covering most or all of the main article. The active
+  six-dossier allocation is `palomar/REGISTRATION_PLAN_V2.json`, covering all26
+  numbered main results through52 selected statements. Preserve the old plans
+  and receipts as historical evidence; do not count them as additional filings.
+- The contained `RegistryV2` project imports the substantive parent proof library.
+  Its literal Mathlib-only Challenges and corresponding Solutions must have
+  structurally identical model definitions. Keep model definitions before proof
+  elaboration in both files to stabilize generated proof constants for Comparator.
+  Check `scripts/check_registry_v2.py`, its negative controls, the nested build
+  and its complete262-theorem axiom audit when changing this interface layer.
+- Do not infer the user's personal authorization relationship. Before dispatching
+  the full Palomar workflow or starting intake, obtain the exact declaration
+  required by the current official protocol for the concrete commit and paths.
+  Finish or close one complete submission cycle before another. Registration
+  requires a separate human publication decision after the exact private review
+  has been received; local checks are not official preflight or certification.

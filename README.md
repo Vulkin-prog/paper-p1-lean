@@ -18,15 +18,20 @@ and the original Mathlib pin are unchanged.
 - [Actual complete validation](docs/validation/v2.0/validation.json): 18,645 build
   jobs, 20,019 theorem axiom checks, 19,942 reference checks; all exits zero.
 
-The new work adds 24 proved comparison/composition interfaces across six
+The V2 alignment adds 24 proved comparison/composition interfaces across six
 mathematical modules. The current scope extracts 212 propositions, including
 199 numbered-result clause endpoints and nine retained auxiliary claims.
 Fifty results omitted from V2 remain in the historical proof library; all 547
 older manuscript files are preserved. The active scientific text is unchanged
 from the received V2; its formalization notice now reflects the actual replay.
 
-**Palomar remains on hold.** The six historical dossiers, author name and ORCID
-are preserved; their previous qualification does not automatically qualify V2.
+**Current Palomar preparation:** [six V2 dossiers](RegistryV2/README.md) cover
+all 26 numbered main-article results through52 explicit compared statements.
+A [French overview](docs/PALOMAR_V2_FR.md) explains the proposed order and scope.
+[The allocation](palomar/REGISTRATION_PLAN_V2.json) and
+[local checks](palomar/v3/VALIDATION.json) preserve Brice Pouly's name and ORCID.
+The previous six planned scopes remain historical. Official full preflight,
+intake, private review and the human publication decision remain separate steps.
 
 ## Historical development through checkpoint 1005
 
