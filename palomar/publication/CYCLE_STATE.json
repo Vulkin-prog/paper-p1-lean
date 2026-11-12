@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-12T21:35:20.788463+00:00",
+  "updated_at": "2026-11-12T22:35:55.832771+00:00",
   "repository": "Vulkin-prog/paper-p1-lean",
   "maximum_registrations": 6,
   "selected_theorem_count": 52,
@@ -72,7 +72,7 @@
       "comparator_config_path": "RegistryV2/comparator/p1_cumulants_optimality.json",
       "formalization_metadata_path": "palomar/publication-followup/cumulants_optimality/formalization.yaml",
       "selected_theorem_count": 8,
-      "public_mechanical_stage": "official_full_preflight_running",
+      "public_mechanical_stage": "official_full_preflight_passed",
       "registration": null,
       "metadata_edition": "followup",
       "frozen_original_preparation_source": "f9a2d213265a6833318745dd7f2d74c02090ab19",
@@ -86,8 +86,11 @@
         "mode": "full",
         "execution_profile": "palomar-standard-v1",
         "metadata_edition": "followup",
-        "report_status": null
-      }
+        "report_status": "pass",
+        "validation_receipt": "palomar/publication-followup/cumulants_optimality/preflight/VALIDATION.json"
+      },
+      "ordinary_intake_started": false,
+      "admission_stage": "waiting_for_service_availability"
     },
     {
       "slug": "pairs_channels",
