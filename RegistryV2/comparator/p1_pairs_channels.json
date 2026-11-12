@@ -1,0 +1,25 @@
+{
+  "challenge_module": "ChallengeP1V2PairsChannels",
+  "solution_module": "SolutionP1V2PairsChannels",
+  "theorem_names": [
+    "PaperP1Registry.V2.PairsChannels.complete_pair_profile",
+    "PaperP1Registry.V2.PairsChannels.explicit_two_channel",
+    "PaperP1Registry.V2.PairsChannels.fixed_height_hierarchy",
+    "PaperP1Registry.V2.PairsChannels.phase_positive",
+    "PaperP1Registry.V2.PairsChannels.weighted_nonaligned",
+    "PaperP1Registry.V2.PairsChannels.two_channel_equivalents",
+    "PaperP1Registry.V2.PairsChannels.two_channel_remainder",
+    "PaperP1Registry.V2.PairsChannels.height_five_closed",
+    "PaperP1Registry.V2.PairsChannels.height_five_coefficient",
+    "PaperP1Registry.V2.PairsChannels.height_six_phase",
+    "PaperP1Registry.V2.PairsChannels.phase_three_four",
+    "PaperP1Registry.V2.PairsChannels.height_five_channels",
+    "PaperP1Registry.V2.PairsChannels.fixed_height_lower_power"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "enable_nanoda": true
+}

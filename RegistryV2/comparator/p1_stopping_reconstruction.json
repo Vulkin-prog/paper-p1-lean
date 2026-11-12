@@ -1,0 +1,20 @@
+{
+  "challenge_module": "ChallengeP1V2StoppingReconstruction",
+  "solution_module": "SolutionP1V2StoppingReconstruction",
+  "theorem_names": [
+    "PaperP1Registry.V2.StoppingReconstruction.expansion_polynomial_expansion",
+    "PaperP1Registry.V2.StoppingReconstruction.prefix_suffix",
+    "PaperP1Registry.V2.StoppingReconstruction.expansion_positive_stopped_kernel",
+    "PaperP1Registry.V2.StoppingReconstruction.expansion_stopped_l1_bound",
+    "PaperP1Registry.V2.StoppingReconstruction.finite_conversion",
+    "PaperP1Registry.V2.StoppingReconstruction.run_conversion",
+    "PaperP1Registry.V2.StoppingReconstruction.conditional_transfer",
+    "PaperP1Registry.V2.StoppingReconstruction.triple_reconstruction"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "enable_nanoda": true
+}

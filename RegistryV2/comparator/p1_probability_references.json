@@ -1,0 +1,17 @@
+{
+  "challenge_module": "ChallengeP1V2ProbabilityReferences",
+  "solution_module": "SolutionP1V2ProbabilityReferences",
+  "theorem_names": [
+    "PaperP1Registry.V2.ProbabilityReferences.quadratic_probability_criterion",
+    "PaperP1Registry.V2.ProbabilityReferences.quadratic_mass_formula",
+    "PaperP1Registry.V2.ProbabilityReferences.hermite_exact",
+    "PaperP1Registry.V2.ProbabilityReferences.hermite_fixed_height",
+    "PaperP1Registry.V2.ProbabilityReferences.hermite_fixed_equivalent"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "enable_nanoda": true
+}

@@ -1,0 +1,53 @@
+name = "paper_p1_registry_v2"
+version = "0.1.0"
+defaultTargets = ["SolutionP1V2AffineEvents", "SolutionP1V2StoppingReconstruction", "SolutionP1V2PairsChannels", "SolutionP1V2CumulantsOptimality", "SolutionP1V2QuadraticLimits", "SolutionP1V2ProbabilityReferences", "AuditRegistryV2"]
+moreLeanArgs = ["-DwarningAsError=true"]
+
+[[require]]
+name = "paper_p1_lean"
+path = ".."
+
+[[lean_lib]]
+name = "ChallengeP1V2QuadraticLimits"
+moreLeanArgs = ["-DwarningAsError=false"]
+
+[[lean_lib]]
+name = "SolutionP1V2QuadraticLimits"
+
+[[lean_lib]]
+name = "ChallengeP1V2CumulantsOptimality"
+moreLeanArgs = ["-DwarningAsError=false"]
+
+[[lean_lib]]
+name = "SolutionP1V2CumulantsOptimality"
+
+[[lean_lib]]
+name = "ChallengeP1V2AffineEvents"
+moreLeanArgs = ["-DwarningAsError=false"]
+
+[[lean_lib]]
+name = "SolutionP1V2AffineEvents"
+
+[[lean_lib]]
+name = "ChallengeP1V2StoppingReconstruction"
+moreLeanArgs = ["-DwarningAsError=false"]
+
+[[lean_lib]]
+name = "SolutionP1V2StoppingReconstruction"
+
+[[lean_lib]]
+name = "ChallengeP1V2PairsChannels"
+moreLeanArgs = ["-DwarningAsError=false"]
+
+[[lean_lib]]
+name = "SolutionP1V2PairsChannels"
+
+[[lean_lib]]
+name = "ChallengeP1V2ProbabilityReferences"
+moreLeanArgs = ["-DwarningAsError=false"]
+
+[[lean_lib]]
+name = "SolutionP1V2ProbabilityReferences"
+
+[[lean_lib]]
+name = "AuditRegistryV2"

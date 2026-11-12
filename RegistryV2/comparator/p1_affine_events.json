@@ -1,0 +1,20 @@
+{
+  "challenge_module": "ChallengeP1V2AffineEvents",
+  "solution_module": "SolutionP1V2AffineEvents",
+  "theorem_names": [
+    "PaperP1Registry.V2.AffineEvents.expansion_centered_identity",
+    "PaperP1Registry.V2.AffineEvents.expansion_probability_clauses",
+    "PaperP1Registry.V2.AffineEvents.original_fourier",
+    "PaperP1Registry.V2.AffineEvents.finite_envelope",
+    "PaperP1Registry.V2.AffineEvents.nominal_envelope",
+    "PaperP1Registry.V2.AffineEvents.compatible_nullity",
+    "PaperP1Registry.V2.AffineEvents.unique_direct_partition",
+    "PaperP1Registry.V2.AffineEvents.canonical_factorization"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "enable_nanoda": true
+}
