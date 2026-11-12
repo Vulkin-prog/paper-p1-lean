@@ -3,12 +3,14 @@ module
 public import PaperP1.Affine.DirectPartitions
 public import PaperP1.Algebra.BivariateFactorHeight
 public import PaperP1.Algebra.StoppedExpansion
+public import PaperP1.Analysis.CurveDegreeProfile
 public import PaperP1.Analysis.QuadraticComparisonRange
 public import PaperP1.Analysis.RevisedCompanionStatements
 public import PaperP1.Arithmetic.ChannelPhaseConstants
 public import PaperP1.Arithmetic.CommonCurveTheorem
 public import PaperP1.Arithmetic.CriticalDefectPositions
 public import PaperP1.Arithmetic.FiniteChannelHierarchy
+public import PaperP1.Arithmetic.FixedArityPhysicalRelationRegularization
 public import PaperP1.Arithmetic.GoodEdgeCompression
 public import PaperP1.Arithmetic.HeightFiveChannelCorrection
 public import PaperP1.Arithmetic.IntegerGridTheorem
@@ -23,6 +25,7 @@ public import PaperP1.Arithmetic.SplitProductBound
 public import PaperP1.Arithmetic.TwoWitnessTheorem
 public import PaperP1.Arithmetic.UniformDefectCounts
 public import PaperP1.Arithmetic.UniformFixedSourceCertificates
+public import PaperP1.Arithmetic.UniformIntegralCurveCount
 public import PaperP1.Asymptotics.AlignedFamilyTripleMass
 public import PaperP1.Asymptotics.AlignedTargetSourceTheorem
 public import PaperP1.Asymptotics.AllPairDeficit
@@ -37,13 +40,17 @@ public import PaperP1.Asymptotics.CompletePairProfile
 public import PaperP1.Asymptotics.CompressedBlockIndependentTail
 public import PaperP1.Asymptotics.ConnectedReductionToTriples
 public import PaperP1.Asymptotics.ConnectedTail
+public import PaperP1.Asymptotics.DenseAnchoredIndividualWitness
 public import PaperP1.Asymptotics.DenseCompressedTargetCount
 public import PaperP1.Asymptotics.DenseNonalignedPairs
 public import PaperP1.Asymptotics.DensePrimitiveHomogeneousMass
+public import PaperP1.Asymptotics.DensePrimitiveHosts
+public import PaperP1.Asymptotics.DensePrimitiveRankMass
 public import PaperP1.Asymptotics.DenseTargetCount
 public import PaperP1.Asymptotics.DenseWeightedSector
 public import PaperP1.Asymptotics.DependentBlockPairsCount
 public import PaperP1.Asymptotics.DisjointSquareTheorem
+public import PaperP1.Asymptotics.EffectiveCompressedPrimitiveMass
 public import PaperP1.Asymptotics.EnlargedAlignedPairTheorem
 public import PaperP1.Asymptotics.ExactPoissonScale
 public import PaperP1.Asymptotics.ExplicitQuadraticApproximation
@@ -61,6 +68,8 @@ public import PaperP1.Asymptotics.FixedPairExtensionDeficit
 public import PaperP1.Asymptotics.FixedSourcePropagationTheorem
 public import PaperP1.Asymptotics.FourthCumulantIdentities
 public import PaperP1.Asymptotics.GeneralBranchingTheorem
+public import PaperP1.Asymptotics.HomogeneousEffectiveConnectedChannel
+public import PaperP1.Asymptotics.HomogeneousEffectiveGoodPairExtensions
 public import PaperP1.Asymptotics.HomogeneousLocalMarginalCap
 public import PaperP1.Asymptotics.KnownAlignmentRank
 public import PaperP1.Asymptotics.LargeSelectedKernelTheorem
@@ -91,6 +100,7 @@ public import PaperP1.Asymptotics.SaturationDegrees
 public import PaperP1.Asymptotics.SeveralWindowProjectionCount
 public import PaperP1.Asymptotics.SharpOrderedPrimitiveMass
 public import PaperP1.Asymptotics.SharpPairTargetDeficit
+public import PaperP1.Asymptotics.SharpPrimitiveMass
 public import PaperP1.Asymptotics.SharpThirdActivity
 public import PaperP1.Asymptotics.SharpThirdCancellation
 public import PaperP1.Asymptotics.SharpThirdCumulantLower
@@ -129,6 +139,7 @@ public import PaperP1.Model.FiniteGoodChannelPartition
 public import PaperP1.Model.FreeComponentRank
 public import PaperP1.Model.GoodEdgePositivePalm
 public import PaperP1.Model.HomogeneousEffectiveWeights
+public import PaperP1.Model.HomogeneousRunMass
 public import PaperP1.Model.PrimitiveWindowMass
 public import PaperP1.Model.PrivateChannelRank
 public import PaperP1.Model.RegularCumulantTransfer
@@ -146,7 +157,7 @@ public import PaperP1.Probability.UniversalHeterogeneousConversion
 
 /-! # Current V2 manuscript proof entry point
 
-The 118 numbered results are mapped by stable TeX labels in
+The 118 numbered results and nine retained auxiliary claims are mapped by stable TeX labels in
 `docs/manuscript-results-v2.0.json`. Established Lean names retain their
 historical numbering. Explicit clause bundles, rather than renamed aliases,
 record all conclusions and printed conditional premises. Results removed
