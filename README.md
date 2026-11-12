@@ -24,6 +24,8 @@ See [current public progress](palomar/publication/CYCLE_STATE.json).
 The author subsequently authorized publication of favorable actual reviews
 without a new approval prompt. Each review must first be examined and presented;
 blocking comments require assessment and justified correction before resubmission.
+The [prepared disclosure update for the remaining five dossiers](palomar/publication-followup/)
+explicitly records the ChatGPT mathematical assistance already credited in the paper.
 
 ## Preceding V2 edition
 

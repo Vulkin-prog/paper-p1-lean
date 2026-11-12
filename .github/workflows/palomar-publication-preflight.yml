@@ -26,6 +26,14 @@ on:
         options:
           - I am a responsible author or maintainer
           - I have approval from a responsible author or maintainer
+      metadata_edition:
+        description: Frozen publication metadata or the prepared disclosure update for the remaining five dossiers
+        required: false
+        default: publication
+        type: choice
+        options:
+          - publication
+          - followup
 
 permissions:
   contents: read
@@ -47,12 +55,14 @@ jobs:
           P1_SOURCE: ${{ inputs.source_commit }}
           P1_BUNDLE: ${{ inputs.bundle }}
           P1_RELATIONSHIP: ${{ inputs.authorization_relationship }}
+          P1_METADATA_EDITION: ${{ inputs.metadata_edition }}
         run: |
           python3 - <<'PY'
           import hashlib, json, os, re
           source = os.environ['P1_SOURCE']
           bundle = os.environ['P1_BUNDLE']
           relationship = os.environ['P1_RELATIONSHIP']
+          edition = os.environ.get('P1_METADATA_EDITION') or 'publication'
           if not re.fullmatch('[0-9a-f]{40}', source):
               raise SystemExit('source_commit must be a full lowercase commit SHA')
           if relationship not in {
@@ -66,15 +76,23 @@ jobs:
           }
           if bundle not in bundles:
               raise SystemExit('Choose exactly one of the six registrations')
+          if edition not in {'publication', 'followup'}:
+              raise SystemExit('Choose a supported metadata edition')
+          if edition == 'followup' and bundle == 'quadratic_limits':
+              raise SystemExit('The disclosure update is prepared only for the five remaining dossiers')
+          metadata_root = 'palomar/publication/' if edition == 'publication' else 'palomar/publication-followup/'
           identity = hashlib.sha256((source + ':' + bundle).encode()).hexdigest()[:10]
           options = {
               'project_path': 'RegistryV2',
               'comparator_config_path': 'RegistryV2/comparator/p1_' + bundle + '.json',
-              'formalization_metadata_path': 'palomar/publication/' + bundle + '/formalization.yaml',
+              'formalization_metadata_path': metadata_root + bundle + '/formalization.yaml',
               'authorization_relationship': relationship,
           }
           with open(os.environ['GITHUB_OUTPUT'], 'a') as output:
-              output.write('request_id=pb' + identity + '\n')
+              if edition == 'publication':
+                  output.write('request_id=pb' + identity + '\n')
+              else:
+                  output.write('request_id=pf' + identity + '\n')
               output.write('options=' + json.dumps(options, separators=(',', ':')) + '\n')
           PY
   verify:

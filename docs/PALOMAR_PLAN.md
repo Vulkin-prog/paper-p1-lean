@@ -24,6 +24,15 @@ do not resample unchanged source for a different outcome. Status reads during
 the intermittent service errors are spaced five minutes apart as requested by
 the author. Ordinary proof CI dispatches no submission.
 
+The [follow-up metadata](../palomar/PUBLICATION_FOLLOWUP_METADATA.json) add the
+ChatGPT mathematical/editorial role from the pinned manuscript assistance
+statement for the five remaining identities. They retain42 selections and21
+main results, after the first10 selections/five results. The original six
+metadata files and their receipts remain frozen. The same manual caller now
+accepts `metadata_edition: followup` for those five dossiers; its `publication`
+default preserves the old paths. A later exact source commit and full passing
+report are required before each intake. This preparation opens no new cycle.
+
 ## Previous V2 preparation (preserved history)
 
 On12 November2026 the user resumed this work and requested at most six

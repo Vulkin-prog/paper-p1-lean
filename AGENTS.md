@@ -112,3 +112,22 @@ future manuscript version and preparing Palomar registrations after completion.
   errors; no public support message has been authorized. Finish or close this
   first cycle before starting the next. Actual registry identifiers and counts
   still require independent confirmation of completed public registration.
+- The separately prepared `palomar/PUBLICATION_FOLLOWUP_METADATA.json` supplies
+  corrected structured assistance disclosures for the five remaining identities:
+  42 selections covering 21 main results, after the first ten selections/five
+  results. Use `metadata_edition: followup` with the same manual publication
+  caller and `palomar/publication-followup/<slug>/formalization.yaml`. The first
+  cycle keeps its exact approved `f9a2d213265a6833318745dd7f2d74c02090ab19`
+  source and original metadata; no extra first-cycle version is being launched.
+  The source manuscript's pinned assistance statement already identifies
+  ChatGPT (GPT-6 Astra)'s mathematical and editorial role. The added method
+  records this role alongside Codex's Lean work, preserving Brice Pouly and his
+  ORCID in all human author/maintainer/source fields. Only that method and
+  obsolete preparation wording differ in the copied metadata. The old six
+  files and their qualification receipts remain frozen; this update leaves
+  the manuscript sources and proof code unchanged.
+  Check `scripts/check_publication_followup.py` and the follow-up negative
+  controls. This is local metadata preparation, not a new full workflow or
+  submission. Bind each later exact source commit in the live cycle record,
+  obtain its actual passing full report, and finish the first complete cycle
+  before starting the next.
