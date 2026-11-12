@@ -1,0 +1,59 @@
+P1 V2.0 — READABILITY AND INTEGRATION REVIEW
+9 November 2026
+
+Scope: actual assembled source files under output/P1_V2_0_2026-11-09/sources; read-only audit. This pass checks the consequences of moving former main statements into the companion and removing the positional/deletion/forcing branch. It is not a new proof replay. Root is applying corrections concurrently; the findings below identify the text read, not a claim that every item remains unresolved.
+
+Overall finding
+The assembled main article now has one identifiable path: model/results, exact event algebra, arithmetic scales, stopping identity, reconstruction, quartic obstruction, completion and explicit channels. The technical interfaces have an appropriate home in the companion. The introductory2:3calculation and the detailed finite sums in scales.tex have distinct purposes; they should both remain. The Hermite theorem at the end of the channel section has the right scope: exact parameters receive an upper4/3 bound only, while fixed-height explicit references retain their omitted-channel equivalent.
+
+NECESSARY INTEGRATION CORRECTIONS
+
+1. companion.tex title line
+Observed: 'runs\[9pt]\large Technical companion' used a display-math opener instead of a line break. Replace by two backslashes before[9pt]. Reported immediately to root. This is a compilation defect, not a stylistic suggestion.
+
+2. main_sections/scales.tex, Complete pair profile
+Observed: four occurrences of bare lambda in the cumulant and phase formulas after the local lambda=Np convention was removed by restructuring. Use lambda_N in all four occurrences, or define the abbreviation explicitly at the start of the section. The article's model defines only lambda_N. Reported to root.
+
+3. Main notation introduced before first use
+The falling factorial(z)_r originally defined in the long introduction had disappeared from the assembled edition. Add(z)_r=z(z-1)...(z-r+1), with(z)_0=1, in the introductory convention paragraph. This correction was observed already applied in the last read.
+In event_algebra.tex, give G_N={x in I_N:d_x=L} when the regular set is first mentioned. Readers of the main should not need to search the companion for this one-line definition. Reported to root.
+For completeness, define S_e=S_x+S_y for e={x,y} at the first occurrence in reconstruction.tex; the abbreviation is natural but was not explicitly introduced in the main text read.
+
+4. main_sections/scales.tex,10:12:15 explanatory paragraph
+Observed: after the canonical relative nullity formula, 'A compatible triple therefore has weight N^{-71/30+o(1)}.' The implication needs the absence of additional square relations. Replace by 'A compatible triple with no additional square relations has weight N^{-71/30+o(1)}.' The following reference to the private-coordinate and exceptional-host proof then has the intended role. Reported to root.
+
+5. companion_sections/pair_profiles.tex, start of proof subsections
+Observed stale sentence: 'The regular-set transfer is used for the explicit channel formulas and for the positional comparison.' The positional comparison is omitted from this edition. Replace the two-sentence paragraph by: 'The regular-set transfer is used for the explicit channel formulas. The exact-marginal reconstruction retains the original count.'
+Observed: 'the two channels above' when defining E_N; the2:3and3:4statement was moved into the main. Name the channels explicitly.
+Observed: 'N/3 times the finite sums above'; replace 'above' by a reference to the two finite sums in the main.
+
+6. companion_sections/pair_rigidity.tex, The short-basis and common-curve constructions
+Observed: 'The final degree-uniform point count and the nonaligned contradiction are proved in that section of the article.' They are now proved earlier in this same companion section. Replace by: 'The degree-uniform point count and the nonaligned contradiction were established earlier in this section.' The label reference can remain if preferred.
+
+7. companion_sections/basic_arithmetic.tex, alignment convention and necessity paragraph
+Observed historical language: 'version1.6', 'checked family', 'power31/24 are unchanged', and 'original radius-one formulation'. These phrases describe revision history instead of the mathematical condition.
+Keep the counterexample and all numerical conditions, but say: 'A radius independent of the old interval width is insufficient, as the following family shows.' Then describe the same family and conclude that it refutes a radius-one estimate for arbitraryD. Replace 'are unchanged' by a mathematical statement of the weighted estimate. Original equal-window alignment is now defined in companion pair_profiles, so the phrase 'the main article' should point to that section instead.
+Root had already removed some of this historical phrasing in the latest partial read; remaining strings 'power31/24 are unchanged' and 'original radius-one formulation' were still present then.
+
+8. Cross-document navigation retained after movement
+fixed_moments.tex: 'Its bounded-moment conclusion is used below in the sharp lower bound' should point to Theorem p13:lower:optimal in the article; it is no longer below in the companion.
+confinement.tex: two sentences still say 'the companion also uses/proves' while appearing in that companion. Replace by direct statements: 'For each fixed arity, an anchored version...' and 'The primitive-triple and dense-pair versions are Theorem... and Corollary...'.
+scales.tex, proof of A3 corollary: replace 'Use the upper bound just proved' by 'Use the upper bound of Theorem p13:third:main'; its proof now lives in the companion.
+
+HEADING CORRECTION
+
+main_sections/completion.tex currently starts with continuity and positivity. The proof of the main theorem then appears under the positivity subsection, with only a bare label p13:optimal:section. Insert a subsection heading 'Completion of the main theorem' immediately before that label. A more informative section title would be 'Completing the approximation and its consequences'; this is optional, whereas the local heading materially improves navigation. Keep the section's stable label p14:reference:section for correspondence.
+
+THREE SMALL FINAL CUTS WITH NO MATHEMATICAL LOSS
+
+A. scales.tex, explicit two-channel coefficient
+S_{a,b}(L), A_1 and A_d are defined in subsection3.1 and then repeated identically inside equation p1:eq:alpha-explicit and its next sentence. Keep only the definition of widehat-alpha_N in that equation and refer to the already-defined sums and their closed formulas. All labels concerning the explicit law can remain.
+
+B. scales.tex, no-start paragraph
+The exact-parameter no-start formula is displayed here and then stated and proved again as Corollary p13:optimal:zero in completion.tex. Retain the explicit two-channel formula and replace the trailing exact-parameter display by a short pointer to that corollary. The explanation about a start beforeN is already made in the model; it need not be repeated in all three locations.
+
+C. reconstruction.tex, final paragraph
+The unlabelled last paragraph beginning 'The method retains three separate forms of control' repeats the dedicated final discussion almost verbatim. It can be removed after the power-margin table and the precise parameter-order paragraph. Keep the margin table and its quantifier explanation; they carry information not supplied by a generic method summary.
+
+NO FURTHER SCOPE CHANGE RECOMMENDED IN THIS PASS
+The main and companion now have a defensible scientific division. The remaining corrections concern truthful local wording, definitions, headings and short repetitions. No additional removal of scientific results or broad reordering is needed to deliver this edition. The new formalization note appropriately distinguishes the inherited checked development from the newly composed statements and renumbering that have not yet been replayed as this edition. The AI-assistance statement does not claim independent human verification.

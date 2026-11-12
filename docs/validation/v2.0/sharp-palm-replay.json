@@ -1,0 +1,23 @@
+{
+  "source_commit": "aa12e797ce895f6b7aef6e4f1f0c6e5e9a58aab4",
+  "actual_exit_code": 0,
+  "compiled_types_replayed": 4,
+  "compiled_propositions_reaudited": 4,
+  "all_prior_compiled_type_bytes_identical": true,
+  "base_compiled_types": "docs/validation/checkpoint-1005/scope/compiled-types.json",
+  "replay_validation": {
+    "actual_exit_code": 0,
+    "compiled_types": 4,
+    "propositions_audited": 4,
+    "permitted_axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "all_propositions_standard_axioms_only": true,
+    "inventory_sha256": "2afbbb7d6e283bee74b111e14792b5a640035b1d58ad28e3d0895f1329f75e77",
+    "diagnostic_module_sha256": "43d8a9072a6b589e63465977b7a3068637c712b23711fb38b857acf374534fd5",
+    "compiled_types_sha256": "636d49b7c2a898b743d1310e6791b6830a25ba9092237e14942bc392c338ac14",
+    "log_sha256": "e939ef7e66f0c5d8fbbe619f7693f5f30d2116aa8f17bd4bc9e6c381891646f8"
+  }
+}

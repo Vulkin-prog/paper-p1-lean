@@ -1,0 +1,356 @@
+\section{Reconstructing the law with every marginal retained}
+\label{p13:transfer:section}
+
+At a precision finer than $N^{-1}$, removing the exceptional windows is
+too expensive. We retain their exact marginals instead. This also keeps
+the repeated occurrence of a single Bernoulli variable inside the
+reference law, where it can be evaluated exactly. The remaining task is
+to control interactions between distinct windows and to sum the expansion
+without applying a fixed-order estimate at an order growing with $N$.
+
+We use the full admissible set $\mathcal I_N=\{x\in I_N:p_x>0\}$,
+the exact marginals $p_x=\E J_x$, the centered coefficients
+$c(I)=\E\prod_{x\in I}(J_x-p_x)$, and the relative nullity defined in
+Section~\ref{p13:exact:section}. Throughout this section we abbreviate
+$\rho_{\mathrm{rel}}(I)$ to $\rho(I)$; this convention uses the effective
+local ranks and does not add the local rank defects again. Put
+\[
+ A_2=\sum_{|e|=2}|c(e)|,\qquad
+ A_3=\sum_{\substack{|T|=3\\T\text{ connected}}}|c(T)|,
+ \qquad p_* =\max_{x\in\mathcal I_N}p_x.
+\]
+The marginal and pair estimates give
+$p_*\leq2p\ll_C N^{-1}$, $\mu=\sum_xp_x=O_C(1)$, and
+$A_2\ll_{C,\varepsilon}N^{-2/3+\varepsilon}$.
+The connection between the arithmetic estimates and the distribution is
+the following bound:
+\begin{equation}
+ \|\Law(Z_N)-Q_{\mu_N,\alpha_N}\|_1
+ \ll_{C,\varepsilon}N^\varepsilon A_3+N^{-4/3+\varepsilon}.
+ \label{p13:transfer:announced-bound}
+\end{equation}
+We prove it in Theorem~\ref{p13:transfer:reconstruction}. The two terms
+have different origins: the first records a genuinely connected
+three-window interaction, while the second permits two pair interactions.
+
+\paragraph{Three errors in the reconstruction.}
+For $e=\{x,y\}$ write $S_e=S_x+S_y$.
+The retained class \(\mathscr D_2\) consists of direct families and
+families \(e\cup U\) with a dependent pair \(e\) for which
+\(S_e\) and the spaces \((S_z)_{z\in U}\) form a direct sum.
+The dependent pair is then unique. Write
+\(T_{\mathscr D_2}=\sum_{I\in\mathscr D_2}q(I)\Delta^{*|I|}\).
+With the covariance-corrected Bernoulli measure \(B_2\) defined in
+\eqref{p13:transfer:B2}, the proof separates
+\[
+ \begin{aligned}
+ \|\Law(Z_N)-Q_{\mu_N,\alpha_N}\|_1
+ &\le \|\Law(Z_N)-T_{\mathscr D_2}\|_1
+       +\|T_{\mathscr D_2}-B_2\|_1\\
+ &\qquad +\|B_2-Q_{\mu_N,\alpha_N}\|_1.
+ \end{aligned}
+\]
+The first term is the stopping boundary, with the unexpanded suffix
+kept in a positive conditional measure. The second consists of the
+independent and pair deficits in
+\eqref{p13:transfer:retained-difference}; the covariance signs are
+retained before taking norms. In particular, an incompatible pair
+is allowed in \(\mathscr D_2\): its joint probability is zero,
+but its covariance is still present in \(B_2\).
+The last term costs \(O(N^{-5/3+\varepsilon})\) by
+Lemma~\ref{p13:transfer:conversion}; that rate concerns the full
+measure \(B_2\), including every covariance.
+Theorem~\ref{p13:transfer:finite} assembles the three estimates,
+using fixed orders and the separately uniform tail of
+Proposition~\ref{p13:transfer:uniform-tail} for the boundary.
+
+\subsection{The exact Bernoulli reference and its conversion}
+
+For any finite family of Bernoulli variables, without an independence
+assumption, define $b_i=\delta_0+p_i\Delta$ and
+\begin{equation}
+ B_2=\mathop{*}_{i\in\mathcal I_N}b_i
+       +\sum_{|e|=2}c(e)\Delta^{*2}*
+                     \mathop{*}_{i\notin e}b_i.
+ \label{p13:transfer:B2}
+\end{equation}
+This is a signed measure. Its first term is the law of a sum of
+independent Bernoulli variables with the exact individual marginals;
+its second term restores every covariance once.
+
+\begin{lemma}[Conversion with heterogeneous marginals]
+\label{p13:transfer:conversion}
+Let $s_j=\sum_i p_i^j$, $C_2=\sum_{|e|=2}c(e)$, and
+$\alpha=2C_2-s_2$. If $\mu\leq M$ and $p_*\leq1/4$, then
+\begin{equation}
+ \|B_2-Q_{\mu,\alpha}\|_1
+ \leq C_M\{s_3+s_2^2+A_2(s_2+p_*)\}.
+ \label{p13:transfer:conversion-bound}
+\end{equation}
+For the present model this is $O_{C,\varepsilon}(N^{-5/3+\varepsilon})$.
+\end{lemma}
+
+\begin{proof}
+In the convolution algebra of finite signed measures, the series for
+$\log_*(\delta_0+p_i\Delta)$ converges absolutely, since
+$\|p_i\Delta\|_1=2p_i\leq1/2$. Summing it gives
+\[
+ \log_*\left(\mathop{*}_ib_i\right)
+   =\mu\Delta-\frac{s_2}{2}\Delta^{*2}+E,
+ \qquad \|E\|_1\leq\sum_{j\geq3}\frac{2^js_j}{j}
+                   \leq\frac{16}{3}s_3.
+\]
+Exponentiation and $\exp_*(\mu\Delta)=\Pi_\mu$ imply
+\[
+ \left\|\mathop{*}_ib_i-\Pi_\mu
+              +\frac{s_2}{2}\Pi_\mu*\Delta^{*2}\right\|_1
+ \leq C_M(s_3+s_2^2).
+\]
+The product omitting a pair $e=\{i,j\}$ differs from
+$\Pi_{\mu-p_i-p_j}$ by $O_M(s_2)$ in norm, and
+\[
+ \|\Pi_{\mu-p_i-p_j}-\Pi_\mu\|_1\leq2(p_i+p_j).
+\]
+Replacing each such product in \eqref{p13:transfer:B2} by $\Pi_\mu$
+therefore costs $O_M(A_2(s_2+p_*))$. The exact identity
+$\Var Z-\E Z=2C_2-s_2$ proves the lemma.
+Here $s_2\leq p_*\mu=O_C(N^{-1})$ and
+$s_3\leq p_*^2\mu=O_C(N^{-2})$, giving the stated application.
+\end{proof}
+
+\paragraph{Algebraic form of the conversion.}
+The estimate in Lemma~\ref{p13:transfer:conversion} also holds for
+arbitrary real pair weights $c(e)$ in \eqref{p13:transfer:B2}, with
+$C_2=\sum_e c(e)$, $A_2=\sum_e|c(e)|$ and $\alpha=2C_2-s_2$.
+The mean and marginal bounds are unchanged. The two approximations
+in its proof and the triangle inequality give this algebraic form;
+only the interpretation $\alpha=\Var Z-\E Z$ uses actual covariances.
+
+
+\subsection{Arithmetic estimates used in the assembly}
+
+The proof below uses three estimates proved in
+Section~\ref{p2:technical-transfer} of the companion. They separate
+fixed geometry from the growing number of windows.
+For each fixed $r\ge4$, the total connected activity is
+\[
+ \sum_{\substack{|I|=r\\I\text{ connected}}}|c(I)|
+ \ll_{r,C,\varepsilon}N^\varepsilon A_3+N^{-4/3+\varepsilon},
+\]
+and its incompatible part is $O(N^{-3/2+\varepsilon})$.
+The independent deficit of all pair extensions is
+$O(N^{-3/2+\varepsilon})$ at every cardinality.
+Finally, the connected activity beyond the fixed size $256$,
+up to the logarithmic boundary cutoff and with compatible nullity
+at most $2L$, is $O(N^{-4/3+\varepsilon})$; the corresponding
+primitive tail has the same bound without a cardinality cutoff.
+These are Proposition~\ref{p13:transfer:fixed-activities},
+Proposition~\ref{p13:transfer:pair-deficit} and
+Proposition~\ref{p13:transfer:uniform-tail}, respectively.
+
+The last estimate has a separate proof. It uses small-kernel counts,
+moderate congruence certificates and a graph with small incoming and
+outgoing degrees. It does not let the order in the first estimate
+grow with $N$. The choice $256$ is sufficient for these estimates;
+no optimality is attached to that cutoff.
+
+\subsection{The stopped expansion and its finite input}
+
+Let $\mathscr D_2$ consist of the direct families and the families
+$e\cup U$ for which $e$ is any dependent pair and $S_e,(S_z)_{z\in U}$
+are direct. Affine incompatibility of $e$ is allowed. This class is
+hereditary; every non-direct member contains exactly one dependent pair.
+For a fixed ordering of $\mathcal I_N$, its boundary contains the first
+excluded prefixes. A boundary family has relative nullity at most $2L$:
+its retained predecessor has at most $L$, and adding one block adds
+at most $L$. In particular every subfamily of a boundary family has
+compatible nullity at most $2L$.
+
+\begin{theorem}[Finite transfer to the complete law]
+\label{p13:transfer:finite}
+Fix $1<\beta\leq4/3$. Suppose that, for each of the fixed integers
+$3\leq r\leq256$ and every $\varepsilon>0$,
+\begin{equation}
+ \sum_{\substack{|I|=r,\ I\text{ connected}\\\rho_*(I)\leq2L}}
+                   |c(I)|\ll_{r,C,\varepsilon}N^{-\beta+\varepsilon}.
+ \label{p13:transfer:finite-hypothesis}
+\end{equation}
+Then
+\begin{equation}
+ \|\Law(Z_N)-Q_{\mu_N,\alpha_N}\|_1
+                  \ll_{C,\varepsilon}N^{-\beta+\varepsilon}.
+ \label{p13:transfer:finite-conclusion}
+\end{equation}
+Only these $254$ fixed orders are assumed in
+\eqref{p13:transfer:finite-hypothesis}; the larger orders are supplied
+by Proposition~\ref{p13:transfer:uniform-tail}.
+\end{theorem}
+
+\begin{proof}
+Fix a weight $w>0$. The hypothesis at sizes at most $256$ and
+\eqref{p13:transfer:connected-tail} give, for $K_N=o(L)$,
+\begin{equation}
+ T:=\sum_{\substack{I\text{ connected},\ 3\leq|I|\leq K_N\\
+                             \rho_*(I)\leq2L}}
+                  w^{|I|}|c(I)|\ll N^{-\beta+\eta}.
+ \label{p13:transfer:connected-range}
+\end{equation}
+The finitely many factors $w^r$ at $r\leq256$ only change constants.
+For a primitive $P$, $\rho(P)\leq L$ and
+$\prod_{x\in P}p_x\leq|c(P)|$, because
+$c(P)=q(P)-\prod_Pp_x$ and $q(P)$ is either zero or at least twice
+the independent product. Together with
+\eqref{p13:transfer:primitive-tail}, this gives
+\begin{equation}
+ \sum_{\substack{P\text{ primitive}\\|P|\geq3}}
+                     w^{|P|}|c(P)|\ll N^{-\beta+\eta}
+ \label{p13:transfer:all-primitives}
+\end{equation}
+over all cardinalities.
+
+Put $T_{\mathscr D_2}=\sum_{I\in\mathscr D_2}q(I)\Delta^{*|I|}$.
+The finite expansion of $B_2$ yields the identity
+\begin{equation}
+ T_{\mathscr D_2}-B_2
+ =-\sum_{I\notin\mathscr D_2}\Delta^{*|I|}
+       \left[\prod_{i\in I}p_i+
+          \sum_{\substack{e\subset I\\|e|=2}}
+                   c(e)\prod_{i\in I\setminus e}p_i\right].
+ \label{p13:transfer:retained-difference}
+\end{equation}
+For the independent term, choose a primitive subfamily of a discarded
+family. If it has at least three members, use
+\eqref{p13:transfer:all-primitives}; if it is a pair $e$, the complement
+must be a non-direct extension of $S_e$, and
+$\prod_{i\in e}p_i\leq|c(e)|$.
+The pair terms in \eqref{p13:transfer:retained-difference} are bounded
+by the same all-cardinality pair deficit. Free complements have total
+weight at most $e^{2\mu}$. Consequently
+\begin{equation}
+ \|T_{\mathscr D_2}-B_2\|_1\ll N^{-\beta+\eta}.
+ \label{p13:transfer:retained-error}
+\end{equation}
+
+Take $K_N=(5+o(1))\log N/\log\log N$.
+The exact stopping identity from Section~\ref{p1:stop:section} gives
+\[
+ \|\Law(Z_N)-T_{\mathscr D_2}\|_1
+       \leq\sum_{I\in\partial\mathscr D_2}2^{|I|}q(I).
+\]
+For $|I|\leq K_N$, expand $q(I)$ in centered coefficients. The terms
+of size zero and two are the independent and pair deficits already
+bounded. Every remaining nonzero centered term has either a connected
+component of size at least three or at least two pair components.
+Canonical factorization, \eqref{p13:transfer:connected-range}, and
+the free independent complements bound their sum by a constant times
+\[
+ e^{4A_2+T}-1-4A_2=O(T+A_2^2).
+\]
+Here $T=o(1)$ and $A_2^2\ll N^{-4/3+\eta}$; the centered coefficient
+of a singleton is zero. This is where the linear contribution of one
+pair is subtracted before taking an absolute bound.
+
+On the larger boundary, $q(I)\leq2^{2L}\prod_Ip_x$, so
+\[
+ \sum_{\substack{I\in\partial\mathscr D_2\\|I|>K_N}}2^{|I|}q(I)
+ \ll_C N^2\sum_{r>K_N}\frac{(2\mu)^r}{r!}=N^{-3+o(1)}.
+\]
+Combining these bounds, \eqref{p13:transfer:retained-error}, and
+Lemma~\ref{p13:transfer:conversion} proves
+\eqref{p13:transfer:finite-conclusion}. All internal margins are chosen
+after the final $\varepsilon$; none is made to vary with $N$.
+\end{proof}
+
+\begin{theorem}[Reconstruction from triple activity]
+\label{p13:transfer:reconstruction}
+With the exact mean and second factorial cumulant,
+\begin{equation}
+ \|\Law(Z_N)-Q_{\mu_N,\alpha_N}\|_1
+       \ll_{C,\varepsilon}N^\varepsilon A_3+N^{-4/3+\varepsilon}.
+ \label{p13:transfer:reconstruction-bound}
+\end{equation}
+In particular the arithmetic triple estimate gives the upper bound
+$O_{C,\varepsilon}(N^{-4/3+\varepsilon})$ for the full model.
+\end{theorem}
+
+\begin{proof}
+In the proof of Theorem~\ref{p13:transfer:finite}, replace the finite
+activity input by Proposition~\ref{p13:transfer:fixed-activities}.
+At sizes $3,\ldots,256$ its total cost is
+$N^{\varepsilon'}A_3+N^{-4/3+\varepsilon'}$; the larger sizes have the
+second cost by Proposition~\ref{p13:transfer:uniform-tail}.
+The primitive deficits, pair deficits, and boundary expansion obey
+the same bounds. In the component generator,
+\[
+ T\ll N^{\varepsilon'}A_3+N^{-4/3+\varepsilon'},\qquad
+ e^{4A_2+T}-1-4A_2=O(T+A_2^2).
+\]
+The established arithmetic estimate makes $T=o(1)$, so this passage
+loses no new fixed power of $N$. The large boundary costs $N^{-3+o(1)}$
+and conversion costs $N^{-5/3+\varepsilon'}$.
+To make the choices explicit, denote the requested final margin by
+$\varepsilon_{\mathrm{out}}=\varepsilon$ and choose
+$0<\tau<\min(\varepsilon_{\mathrm{out}}/4,1/960)$.
+Invoke each completed fixed-order estimate with sufficiently small fixed
+input margins that its total displayed loss is at most $\tau$.
+For example, use the pair estimate with loss $\tau/2$ before squaring
+$A_2$. Only the fixed orders $3,\ldots,256$ occur in this choice;
+the larger orders use the uniform certificate bounds, not constants
+from a fixed-order theorem. With $\varepsilon'=\tau$ the preceding
+argument proves \eqref{p13:transfer:reconstruction-bound}, since
+$\tau<\varepsilon_{\mathrm{out}}$.
+
+Finally invoke Corollary~\ref{p13:third:activity} with loss $\tau$.
+The triple term is then at most $N^{-41/30+2\tau}$, and
+\[
+ \frac{41}{30}-2\tau-\frac43=\frac1{30}-2\tau>0.
+\]
+The conversion and large-boundary exponents exceed $4/3$ by $1/3$
+and $5/3$, respectively. These comparisons give the announced upper
+bound. All accuracy choices, source counts and fixed activity orders used here
+are fixed before $N$; the growing cardinality cutoff $K_N$ is controlled
+separately.
+\end{proof}
+
+\paragraph{Power margins.}
+The strict power savings used in the last stages are recorded below.
+Each margin compares complete contributions, after coefficient choices,
+propagation and rank factors have been included.
+\begin{center}
+\small
+\begin{tabularx}{\textwidth}{@{}Xcl@{}}
+\toprule
+Comparison & Exact margin & Location\\
+\midrule
+Nonaligned target above a rational pair versus dominant triples
+& $11/8-41/30=1/120$
+& \eqref{p13:third:unaligned-target-cost}\\[4pt]
+Incompatible triples versus the third factorial cumulant
+& $3/2-41/30=2/15$
+& \eqref{p13:activity:kappa-comparison}\\[4pt]
+Third activity versus the quadratic remainder
+& $41/30-4/3=1/30$
+& \eqref{p13:transfer:reconstruction-bound}\\[4pt]
+Low-nullity uniform tail versus the quadratic remainder
+& $27/20-4/3=1/60$
+& \eqref{p13:transfer:low-rank-tail}\\[4pt]
+Quartic signed error versus $\alpha_N^2$
+& $3/2-4/3=1/6$
+& \eqref{p13:lower:positive-quartic}\\
+\bottomrule
+\end{tabularx}
+\end{center}
+The smallest displayed margin is $1/120$. In contrast, two pair
+activities have size $A_2^2\ll N^{-4/3+\eta}$ and are retained at
+the target scale. They have no strict power saving to spend.
+For a prescribed final accuracy $\varepsilon_0>0$, one may choose
+$0<\tau<\min(\varepsilon_0/4,1/960)$ and invoke completed auxiliary
+estimates with total loss at most $\tau$ each. Their own input margins
+are chosen smaller as needed; in a product, divide the allotted loss
+between the factors. Thus the same symbol $\varepsilon$ in successive
+statements never requires the same numerical value at every stage.
+Rank thresholds and fixed geometric degrees have separate roles.
+The fixed connected-activity estimates in reconstruction are used only
+through order $256$; larger cardinalities have the uniform certificate estimate and a factorial
+boundary bound.
+

@@ -1,0 +1,191 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[provide=*,french]{babel}
+\usepackage{lmodern,microtype}
+\usepackage[a4paper,margin=24mm,headheight=14pt]{geometry}
+\usepackage{amsmath,amssymb,booktabs,tabularx,longtable,array}
+\usepackage{xcolor,enumitem,fancyhdr}
+\usepackage[colorlinks=true,linkcolor=blue!40!black,urlcolor=blue!40!black]{hyperref}
+\usepackage{xurl}
+\newcommand{\E}{\mathbb E}
+\newcommand{\Pp}{\mathbb P}
+\newcommand{\article}[1]{\href{P1_V2_0_Main_EN.pdf}{article, #1}}
+\newcommand{\compagnon}[1]{\href{P1_V2_0_Companion_EN.pdf}{compagnon, #1}}
+\newcommand{\validationlivree}{Les deux manuscrits ont été compilés jusqu'à stabilisation des renvois, sans référence indéfinie ni débordement signalé, puis inspectés visuellement. Les contrôles de sources et les relectures assistées par IA ont porté sur les dépendances, les énoncés modifiés et la cohérence narrative. Les scripts et comptes rendus sont joints au dossier.}
+\setlength{\parindent}{1.1em}
+\setlength{\parskip}{3pt}
+\setlength{\emergencystretch}{2em}
+\setlist{leftmargin=20pt,itemsep=3pt,topsep=5pt}
+\renewcommand{\arraystretch}{1.15}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small P1 : nouvelle architecture et portée mathématique}
+\fancyhead[R]{\small Note de révision V2.0}
+\fancyfoot[C]{\thepage}
+\widowpenalty=10000
+\clubpenalty=10000
+\hypersetup{pdftitle={P1 V2.0 : note de révision},pdfauthor={Brice Pouly},pdfsubject={Architecture, renforcements et correspondance avec la formalisation}}
+\title{\bfseries P1 V2.0\\[5pt]\large Nouvelle architecture, renforcements et reprise de la formalisation}
+\author{Note de préparation pour Brice Pouly}
+\date{9 novembre 2026}
+\begin{document}
+\maketitle
+\thispagestyle{plain}
+
+\section{La décision éditoriale}
+
+La V2.0 recentre P1 sur une question : comment les dépendances arithmétiques modifient-elles la loi du nombre de départs de longues plages constantes, et jusqu'où peut-on corriger son approximation de Poisson ? Elle conserve un article principal et un compagnon technique. Les deux textes constituent une même démonstration, avec des fonctions désormais plus distinctes.
+
+L'article présente le modèle, les résultats, les échelles des paires et des triples, puis la reconstruction de la loi et la preuve d'optimalité. Le compagnon établit les estimations arithmétiques qui permettent ces passages. Les énoncés techniques autrefois dispersés dans l'article ont été rapprochés de leurs preuves. Le lecteur peut ainsi suivre la démonstration probabiliste sans traverser toutes les constructions de petits noyaux, de congruences et de courbes.
+
+Cette organisation conserve une unité scientifique forte. Le coefficient des paires, la borne sur les triples, la reconstruction et le test quartique répondent à des étapes successives de la même question. Les séparer en plusieurs articles obligerait à répéter les définitions et à importer des ensembles d'hypothèses difficiles à apprécier isolément. Le compagnon permet de détailler ces entrées tout en laissant visibles leurs usages.
+
+L'autorisation de remanier un ensemble encore inédit a aussi permis de retirer des branches autonomes. La nouvelle édition ne cherche plus à réunir toutes les conséquences explorées au cours du travail. Les résultats retirés restent accessibles dans les sources historiques ; leur destination est recensée dans la correspondance jointe. Les titres des deux manuscrits scientifiques ne portent ni numéro de version ni date. La présente note et les noms des fichiers identifient l'édition de travail.
+
+\section{Les résultats centraux conservés}
+
+Le modèle reste celui d'une fonction complètement multiplicative dont les valeurs aux nombres premiers sont des signes équitables indépendants. On compte les départs de plages constantes de longueur au moins $L$, avec les deux signes réunis, dans $I_N=[N,2N)\cap\mathbb Z$, sous $|L-\log_2N|\le C$. La condition au prédécesseur garantit qu'une plage est comptée une seule fois.
+
+Les trois paramètres restent distincts :
+\[
+ \lambda_N=N2^{-L},\qquad \mu_N=\E Z_N,\qquad
+ \alpha_N=\operatorname{Var}(Z_N)-\mu_N.
+\]
+La référence quadratique est
+\[
+ Q_{\mu,\alpha}=\Pi_\mu+
+       \frac{\alpha}{2}\Pi_\mu*(\delta_1-\delta_0)^{*2},
+ \qquad \Pi_\mu=\operatorname{Pois}(\mu).
+\]
+Les produits de mesures sont des convolutions. La variation totale entre probabilités vaut la moitié de la norme $\ell^1$ employée dans le théorème principal.
+
+\begin{center}
+\small
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{0.25\textwidth}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}p{0.19\textwidth}@{}}
+\toprule
+Objet & Conclusion conservée & Repère V2.0\\
+\midrule
+Poisson de moyenne nominale ou exacte & Équivalent explicite de variation totale d'ordre $LN^{-2/3}$. & \article{cor. 1.2}\\[4pt]
+Correction quadratique exacte & Puissance optimale $4/3$, avec marge fixe arbitraire ; référence positive pour $N$ assez grand. & \article{th. 1.1}\\[4pt]
+Troisième cumulant factoriel & Puissance optimale $41/30$, avec un témoin positif de type $10:12:15$. & \article{th. 3.3}\\[4pt]
+Canaux jusqu'à hauteur $h$ & Équivalent donné par la première hauteur omise ; puissance $h/(h+1)$, pour $h$ fixé. & \article{th. 8.1}\\[4pt]
+Référence Hermite exacte & Majoration à la puissance $4/3$ ; aucune borne inférieure optimale correspondante. & \article{cor. 8.4}\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+Ces précisions n'ont pas toutes la même nature. Pour Poisson, le facteur logarithmique et le coefficient sont déterminés. En posant $r=L\bmod3$ et $\Delta=\delta_1-\delta_0$, on conserve
+\[
+ \operatorname{TV}(\mathcal L(Z_N),\Pi_{\lambda_N})
+ \sim \frac{r+2}{72\,2^{r/3}}\lambda_N^{5/3}
+       \|\Pi_{\lambda_N}*\Delta^{*2}\|_1\,LN^{-2/3}.
+\]
+Les paramètres mobiles restent dans l'équivalent : leur convergence n'est pas supposée. Pour la correction quadratique, la conclusion est encadrée par $N^{-4/3-\varepsilon}$ et $N^{-4/3+\varepsilon}$. Aucun facteur logarithmique ni constante dominante du reste n'est annoncé. Les hauteurs des références explicites sont fixées avant le passage à la limite ; le texte ne transforme pas ce résultat en un théorème à hauteur croissante.
+
+La moyenne exacte est indispensable à cette précision. Le biais est de la forme $\mu_N-\lambda_N=2^{-L}M_{N,L}$, avec $M_{N,L}$ entier. Lorsqu'il est non nul, sa taille est au moins comparable à $N^{-1}$ et peut dominer le reste quadratique. La proposition 7.4 explique ce phénomène sans affirmer que le biais est non nul à une infinité d'échelles.
+
+\section{Une démonstration principale devenue plus lisible}
+
+Le calcul du canal $2:3$ sert de fil conducteur. Pour $L=3m$, les fenêtres autour de $2t$ et $3t$ possèdent environ $m$ contraintes communes. Hors relations supplémentaires, leur probabilité jointe est de taille $N^{-5/3}$. Les translations et décalages fournissent environ $NL$ placements, d'où $LN^{-2/3}$. L'article effectue ensuite la somme exacte, y compris les effets de bord et les signes affines. Il conserve le terme complet du premier canal avant d'isoler le suivant.
+
+Le passage au résultat global est présenté en trois opérations. On développe d'abord autour des Bernoulli indépendantes de probabilités exactes $p_x=\E J_x$. Les répétitions d'un même indicateur sont alors déjà contenues dans la référence. On retient ensuite les familles directes et celles possédant une seule paire dépendante, traitée comme un bloc. Enfin, on arrête le développement au premier préfixe qui sort de cette classe.
+
+L'identité finie laisse les indicateurs suivants dans une mesure conditionnelle positive. La masse de cette mesure est exactement la probabilité du préfixe. La difficulté devient le contrôle de la masse de la frontière, avec des annulations à effectuer avant les valeurs absolues. Le théorème 5.3 de l'article donne le raccord :
+\[
+ \|\mathcal L(Z_N)-Q_{\mu_N,\alpha_N}\|_1
+ \ll_{C,\varepsilon}N^\varepsilon A_3+N^{-4/3+\varepsilon},
+ \qquad A_3=\sum_{|T|=3}|c(T)|.
+\]
+La borne arithmétique $A_3\ll N^{-41/30+\varepsilon}$ laisse la marge $1/30$ nécessaire à la fermeture. Le compagnon contient le travail qui la produit : restrictions sur les rangs des paires non alignées, géométrie des alignements rationnels et traitement des triples incompatibles.
+
+L'optimalité conserve sa preuve propre. Un quatrième polynôme de Charlier détecte $\kappa_{4,N}+3\alpha_N^2$. L'identité quartique garde une contribution compatible non négative et une erreur plus petite. Les moments d'ordre fixé, démontrés indépendamment de l'approximation de la loi, permettent ensuite de convertir ce test non borné en une borne inférieure de norme. Les deux erreurs de l'identité quartique restent distinctes : $N^{-5/3+\varepsilon}$ pour le premier raccord et $N^{-3/2+\varepsilon}$ pour sa partie incompatible.
+
+\section{Les renforcements intégrés à la présentation}
+
+\subsection{Une enveloppe commune pour quatre poids}
+
+Le \article{lemme 2.3} met au premier plan la probabilité homogène
+\[
+ q_0(I)=2^{-\dim\left(\sum_{x\in I}S_x\right)}
+       =2^{\rho_{\rm rel}(I)}\prod_{x\in I}2^{-d_x},
+ \qquad d_x=\dim S_x.
+\]
+Elle domine simultanément le poids de rang exact $w(I)$, la probabilité jointe $q(I)$ et l'activité centrée $|c(I)|$. Cette domination reste vraie pour des fenêtres irrégulières ou de marginale nulle. Une même estimation géométrique peut donc servir à ces quatre sommes.
+
+Dans la bande critique, la comparaison avec le poids nominal coûte au plus $2^{|I|}$. La proposition T12.4 du compagnon utilise ce fait à arité fixée $r\ge3$ : chacune des quatre masses sur les familles primitives est
+\[
+ O_{r,C,\varepsilon}(N^{-r/2+\varepsilon}).
+\]
+Si leur nullité relative est au moins $\eta L$, avec $\eta>0$ fixé, les centres possibles sont au nombre de $O(N^\varepsilon)$ et chacune des masses vaut $O(N^{1-r+\varepsilon})$. La preuve distingue le comptage des centres du poids de chaque configuration. Elle ne suppose ni compatibilité affine ni régularité locale. Le facteur $2^r$ est absorbé uniquement après fixation de $r$.
+
+Ce regroupement rend visibles des estimations fortes déjà disponibles dans le développement formel. Il évite de les affaiblir à chaque usage ou de répéter plusieurs arguments presque identiques selon le poids considéré. Les estimations après compression d'une paire restent séparées lorsque leur géométrie impose réellement un traitement supplémentaire.
+
+\subsection{Une queue pure, puis une uniformité nouvelle}
+
+Le \compagnon{lemme T12.7} énonce une borne $N^{-a}$ pour tout $a<2$, sur la somme des poids indépendants des supports suffisamment grands. Le seuil de cardinalité est choisi une fois les paramètres fixés, avant $N$. Le même contrôle autorise un bloc comprimé de largeur logarithmique bornée. L'énoncé garde strictement $a<2$ ; il ne revendique pas l'extrémité $a=2$.
+
+La proposition T13.1 combine ce résultat avec les estimations à chaque ordre fixé. Pour $G\subseteq G_N$, soit $\mathcal H_{r,N}(G)$ l'ensemble des listes de $r$ départs distincts, séparés de plus de $L$, admettant une relation dont chaque projection effective est non nulle. Alors
+\[
+ \sum_{r=s}^{|G|}\frac{u^r}{r!}
+     \sum_{\boldsymbol x\in\mathcal H_{r,N}(G)}p^r
+ \ll_{u,C,\varepsilon}N^{-\min(s/2,2)+\varepsilon},
+ \qquad s\ge2.
+\]
+La constante et le seuil sont indépendants de $s$ et de $G$. Ni minimalité de la relation ni compatibilité affine ne sont requises.
+
+La preuve choisit un cutoff fini après la marge demandée. Les couches en dessous utilisent les bornes $N^{-r/2+\eta}$ ; toutes les couches au-dessus utilisent une seule queue $N^{-2+\eta}$. On prend le maximum des seuils et la somme des constantes des couches finies avant de laisser varier $s$. C'est ce choix qui donne l'uniformité. Le facteur $1/r!$ convertit des listes distinctes en familles non ordonnées ; il ne contrôle pas la croissance des constantes d'un théorème à ordre fixé.
+
+Cette conséquence n'annonce ni une borne pure $N^{-2}$ dans la zone saturée, ni son optimalité. Elle concerne une somme déterministe de poids indépendants, pas une queue exponentielle de la loi originale de $Z_N$.
+
+\subsection{Un contrôle Palm qui inclut les cibles irrégulières}
+
+La proposition T10.5 traite un canal intérieur réduit $a:b$, avec $0<a<b<2a$. Ses sources sont les bonnes paires compatibles et dépendantes du canal ; leurs poids sont $q_e$ et leur masse totale est $\beta_{a,b}$. Pour tout ensemble déterministe de cibles $G\subseteq I_N$, le coût positif centré exactement est
+\[
+ M_{\rm ex}(G)=\sum_e\sum_{z\in G\setminus e}
+       \bigl(q(e\cup\{z\})-q_ep_z\bigr)_+.
+\]
+La version nominale remplace $p_z$ par $p=2^{-L}$. Les deux masses sont $O(N^{-41/30+\varepsilon})$, uniformément en $G$. Les cibles peuvent être irrégulières, y compris de marginale nulle.
+
+Un excès positif impose un croisement non nul avec la paire et une probabilité jointe positive. Il produit donc un triple connecté compatible. La masse de ces triples fournit la borne ; le retour au centrage nominal coûte seulement le biais marginal absolu. La phase des paires donne ensuite $\beta_{a,b}\asymp LN^{-1+1/b}>0$, avant toute division. Le coût normalisé est ainsi
+\[
+ O\bigl(N^{-11/30-1/b+\varepsilon}\bigr).
+\]
+Les canaux $2:3$ et $3:4$ donnent respectivement les puissances $7/10$ et $37/60$. Un choix commun $24B\le H\le DB$, avec $D\ge24$ fixé, convient aux deux. Ces résultats bornent les augmentations positives de probabilités ; ils ne sont ni des estimations de toutes les variations absolues ni des revendications d'optimalité Palm.
+
+\section{Ce qui a été retiré et ce qui demeure nécessaire}
+
+Les comparaisons positionnelles et les opérations sur les paires posent des questions distinctes de celle du compteur scalaire. Elles demandent les intensités de chaque arête, au-delà du seul coefficient de correction. La nouvelle édition retire leur développement ainsi que la reconstruction sur l'ensemble régulier conservée essentiellement pour ces usages.
+
+Le même choix concerne les comptes modifiés, leurs queues factorielles, les longues estimations de queues du compte original, le cylindre d'obstruction aux moments exponentiels, la suppression de doublets, les forçages de signes privés et certains prolongements de géométrie des décalages. Leurs sources sont préservées dans l'état historique de référence. Leur retrait donne au nouveau compagnon une mission précise : prouver les estimations qui conduisent aux résultats scalaires conservés et en présenter quelques conséquences directes.
+
+Les outils partagés n'ont pas été supprimés avec ces branches. Le comptage par certificats, les degrés de saturation entrants et sortants, les générateurs de composantes, les estimations à sources fixées et les compressions nécessaires aux moments restent dans la preuve. Le court contre-exemple par différences finies est également conservé : il explique directement pourquoi des moments fixés, même très bien contrôlés, ne fournissent pas à eux seuls une vitesse polynomiale pour la loi.
+
+La correspondance recense les 167 résultats numérotés de la base et indique ceux qui sont déplacés, reformulés, renforcés ou hors du périmètre V2.0. Cinquante entrées sont ainsi classées hors périmètre. Ces nombres servent à retrouver les résultats et à préparer l'alignement ; ils ne constituent pas une mesure de qualité ou de profondeur.
+
+\section{La méthode que l'on peut extraire}
+
+La preuve suggère une procédure concrète pour d'autres problèmes d'événements rares. Le premier choix est une référence qui contient déjà les effets locaux fréquents. Le deuxième est une classe héréditaire de configurations dont la probabilité reste calculable. Le troisième est une identité d'arrêt laissant une mesure positive au premier défaut. Il faut ensuite établir deux sortes de contrôles : des estimations fines sur les petites configurations et une estimation uniforme indépendante pour la partie de grande cardinalité.
+
+Dans P1, l'enveloppe homogène permet de réemployer les mêmes comptages à plusieurs endroits. La positivité sert à contrôler la frontière ; les signes affines restent présents là où des annulations sont nécessaires. Enfin, le test d'optimalité est choisi pour la référence effectivement soustraite. La référence Hermite contient déjà le terme quartique issu de deux paires, ce qui change la quantité détectée.
+
+L'identité d'arrêt est réutilisable pour des familles finies d'indicateurs. Les exposants de P1 viennent en revanche de son arithmétique : la masse des paires, la rigidité des rangs et les estimations de certificats. Une application nouvelle doit fournir ces entrées ou leurs analogues. Le texte expose donc une démarche et ses obligations mathématiques, sans ériger la puissance $4/3$ en principe universel.
+
+\section{Sources, correspondance et formalisation}
+
+La base est l'aperçu unifié du 7 novembre 2026, dans le dépôt \texttt{paper-p1-lean}, au commit
+\begin{center}
+\small\texttt{fb83aec7b03ddef1397e3a7f9f8f8c458c82003a}.
+\end{center}
+Cet état est identifiable par un \href{https://github.com/Vulkin-prog/paper-p1-lean/tree/fb83aec7b03ddef1397e3a7f9f8f8c458c82003a}{lien immuable vers les sources}. La rédaction V2.0 est séparée de cette base. Le fichier \path{editorial/result_inventory.json} et le tableau CSV de correspondance relient les anciens résultats à leur traitement dans la nouvelle édition. Les labels conservés facilitent la reprise même lorsque les numéros imprimés changent.
+
+Le développement associé contient des preuves vérifiées sous Lean~4.36.0-rc2 et une révision fixée de Mathlib. La V2.0 réorganise leur présentation, expose certaines formes fortes et ajoute deux conséquences par composition : le contrôle Palm pour toutes les cibles et le comptage uniforme en la taille minimale du support. Ces deux formulations composées et la nouvelle correspondance n'ont pas été rejouées comme une interface Lean de cette édition. Aucun nouveau rejeu complet de Lean n'est annoncé ici.
+
+La reprise formelle pourra distinguer trois opérations : mettre à jour les liens et numéros ; relier les formes fortes à leurs interfaces déjà disponibles ; ajouter les deux corollaires composés avec leurs quantificateurs exacts. Les points sensibles sont l'inclusion des cibles irrégulières dans Palm et l'indépendance du seuil par rapport à $s,G$ dans T13.1. Les preuves écrites explicitent ces raccords afin que cette étape ne repose pas sur une simple similitude de formulations.
+
+\paragraph{Contrôles livrés.}
+\validationlivree
+
+Les limites mathématiques restent visibles : pas d'équivalent complet du reste quadratique, pas de constante du cumulant ternaire total, pas d'optimalité établie pour la référence Hermite exacte et pas d'extension aux hauteurs croissantes. Les textes distinguent les relectures assistées par IA, le développement formel existant et les contrôles exécutés pour cette édition. Ils ne présentent aucune de ces opérations comme une vérification humaine indépendante ou comme une publication.
+
+\end{document}

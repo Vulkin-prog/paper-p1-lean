@@ -1,0 +1,14 @@
+{
+  "id": "S01",
+  "status": "proposed_not_applied",
+  "target": "manuscripts/paper-p1/v2.0/sources/companion_sections/uniform_support.tex",
+  "target_sha256": "bc7801a4f3ef8d40f653c63081deef3b47d34a9bcdd5014d062bdaa3fda36f49",
+  "patch": "docs/reviews/2026-11-12/S01-uniform-support-proof.patch",
+  "patch_sha256": "aee90a0c79c8f8efeccd7c5ded2465df37c3411314071c9ab2c47e1ff08a5900",
+  "physical_source_lines_saved": 2,
+  "numbered_statements_unchanged": true,
+  "labels_unchanged": true,
+  "pdf_page_gain": "not_measured_not_claimed",
+  "mathematical_basis": "For every present small layer r>=s, r/2>=min(s/2,2), and min(s/2,2)<=2 also bounds the tail exponent before its eta margin. One finite maximum threshold precedes s,G.",
+  "lean_endpoint": "PaperP1.UniformFullSupportCount.companion_T13_1"
+}

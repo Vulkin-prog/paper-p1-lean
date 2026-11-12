@@ -1,0 +1,63 @@
+\documentclass[11pt,a4paper]{article}
+\input{preamble}
+\newcommand{\PoneTechnicalCompanion}{}
+\externaldocument[][nocite]{build/main}[P1_V2_0_Main_EN.pdf]
+\makeatletter
+\patchcmd{\l@section}{1.5em}{2.3em}{}{\PackageError{p1}{Could not widen contents numbers}{}}
+\makeatother
+\renewcommand{\thesection}{T\arabic{section}}
+\renewcommand{\theHsection}{T.\arabic{section}}
+\fancyhead[L]{\small Long multiplicative runs: technical companion}
+\hypersetup{pdftitle={Sharp Poisson approximation for long multiplicative runs: Technical companion},pdfsubject={Arithmetic estimates and proofs for the scalar run count}}
+\title{\bfseries Sharp Poisson approximation\\and second-order correction\\for long multiplicative runs\\[9pt]\large Technical companion}
+\author{Brice Pouly\\[5pt]
+ \small With mathematical and editorial assistance from ChatGPT (GPT-6 Astra)}
+\date{}
+\begin{document}
+\maketitle
+\thispagestyle{plain}
+\begin{abstract}
+This companion supplies the arithmetic and uniform counting estimates
+for the article \emph{Sharp Poisson approximation and second-order
+correction for long multiplicative runs}. The two texts prove the
+explicit Poisson distance equivalent, the optimal quadratic error
+power $4/3$, the third factorial cumulant power $41/30$, and the
+hierarchy of errors for rational channels of fixed height.
+
+The proofs are organized by the estimates they supply: exact pair
+profiles, fixed-source and half-power counts, confinement and pair
+rigidity, positive triple masses, and independent certificate tails.
+A common homogeneous probability bounds the several weights used
+in these arguments. The resulting consequences include positive Palm
+costs for arbitrary target windows and a support count uniform in
+its lower cardinality. Fixed-order and growing-cardinality estimates
+retain distinct hypotheses throughout.
+\end{abstract}
+\clearpage
+\begingroup
+\small
+\setlength{\parskip}{0pt}
+\tableofcontents
+\endgroup
+\clearpage
+\input{companion_sections/guide}
+\input{companion_sections/basic_arithmetic}
+\input{companion_sections/pair_profiles}
+\input{companion_sections/channel_counts}
+\input{companion_sections/fixed_moments}
+\input{companion_sections/short_supports}
+\input{companion_sections/half_counts}
+\input{companion_sections/confinement}
+\input{companion_sections/pair_rigidity}
+\input{companion_sections/triple_activities}
+\input{companion_sections/third_cumulant}
+\input{companion_sections/certificates}
+\input{companion_sections/exact_reconstruction}
+\input{companion_sections/uniform_support}
+\input{companion_sections/poisson_calculus}
+\input{companion_sections/moment_obstruction}
+\input{formalization}
+\input{assistance}
+\clearpage
+\input{bibliography}
+\end{document}

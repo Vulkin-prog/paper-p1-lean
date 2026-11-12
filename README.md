@@ -3,7 +3,34 @@
 *Sharp Poisson approximation and second-order correction for long multiplicative
 runs*, and its technical companion, by [Brice Pouly](https://orcid.org/0009-0008-8491-2467).
 
-Current checkpoint P1-MATH-1005: all **167 revised numbered statements** have
+Current edition: **P1 V2.0**, aligned 12 November 2026, contains **118 numbered
+results (26 article, 92 companion)**. All clauses have checked Lean proof
+interfaces, with printed conditional premises retained. Lean **v4.36.0-rc2**
+and the original Mathlib pin are unchanged.
+
+- [Current article, 32 pages](manuscripts/paper-p1/v2.0/pdf/P1_V2_0_Main_EN.pdf)
+  and [technical companion, 84 pages](manuscripts/paper-p1/v2.0/pdf/P1_V2_0_Companion_EN.pdf).
+- [Editable V2 sources](manuscripts/paper-p1/v2.0/sources/),
+  [received dossier preserved unchanged](manuscripts/paper-p1/v2.0/received/).
+- [Complete V2 correspondence and reproduction](docs/V2_ALIGNMENT.md),
+  [Lean entry point](PaperP1/V2.lean),
+  [French critical review and simplification proposals](docs/reviews/2026-11-12/V2_REVIEW_FR.md).
+- [Actual complete validation](docs/validation/v2.0/validation.json): 18,645 build
+  jobs, 20,019 theorem axiom checks, 19,942 reference checks; all exits zero.
+
+The new work adds 24 proved comparison/composition interfaces across six
+mathematical modules. The current scope extracts 212 propositions, including
+199 numbered-result clause endpoints and nine retained auxiliary claims.
+Fifty results omitted from V2 remain in the historical proof library; all 547
+older manuscript files are preserved. The active scientific text is unchanged
+from the received V2; its formalization notice now reflects the actual replay.
+
+**Palomar remains on hold.** The six historical dossiers, author name and ORCID
+are preserved; their previous qualification does not automatically qualify V2.
+
+## Historical development through checkpoint 1005
+
+Historical checkpoint P1-MATH-1005: all **167 revised numbered statements** have
 checked proofs, using **Lean v4.36.0-rc2**, with no unformalized mathematical
 input. This comprises all 73 main-article and all 94 revised companion results.
 The separate version 1.8 working draft integrates the two necessary statement
@@ -69,7 +96,9 @@ would remove another 49 source lines from T22.1, T2.6 and 16.1 without changing
 any statement or label. Eleven existing proposition types were actually
 extracted and independently read. These proposals remain **not applied**:
 the user requested session finalization before a new source/PDF pass.
-The unified preview above remains the latest delivered copy.
+The unified preview was the latest delivered copy at checkpoint 1005.
+The current V2 above incorporates the relevant further reuse and supersedes
+that preview as the working edition; frozen prior reports are unchanged.
 
 The separate review instance has now directly compared all 167 numbered-result
 labels across its frozen source snapshots; the [complete review index](docs/MANUSCRIPT_ENDPOINTS_V1_8.md)

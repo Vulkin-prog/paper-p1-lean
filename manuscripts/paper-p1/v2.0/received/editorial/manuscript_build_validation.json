@@ -1,0 +1,31 @@
+{
+  "commands": [
+    {
+      "document": "main",
+      "round": 1,
+      "exit_code": 0
+    },
+    {
+      "document": "companion",
+      "round": 1,
+      "exit_code": 0
+    },
+    {
+      "document": "main",
+      "round": 2,
+      "exit_code": 0
+    },
+    {
+      "document": "companion",
+      "round": 2,
+      "exit_code": 0
+    }
+  ],
+  "cross_references_stable": true,
+  "final_reference_and_overfull_diagnostics": [],
+  "outputs": [
+    "P1_V2_0_Main_EN.pdf",
+    "P1_V2_0_Companion_EN.pdf"
+  ],
+  "lean_replayed": false
+}

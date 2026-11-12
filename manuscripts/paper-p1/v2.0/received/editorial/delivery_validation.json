@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-09",
+  "edition": "P1 V2.0",
+  "source_integrity": {
+    "active_tex_files": 32,
+    "labels": 375,
+    "reference_targets": 253,
+    "errors": [],
+    "scope": "Source integrity only; not a mathematical proof or Lean replay."
+  },
+  "cross_references_stable": true,
+  "clean_build_without_auxiliary_files": true,
+  "clean_build_pdf_text_and_page_counts_match": true,
+  "pdf_integrity": [
+    {
+      "file": "P1_V2_0_Companion_EN.pdf",
+      "pages": 84,
+      "internal_named_links": 372,
+      "external_pdf_links": 38,
+      "invalid_destinations": [],
+      "unicode_replacement_characters": 0
+    },
+    {
+      "file": "P1_V2_0_Main_EN.pdf",
+      "pages": 32,
+      "internal_named_links": 133,
+      "external_pdf_links": 43,
+      "invalid_destinations": [],
+      "unicode_replacement_characters": 0
+    },
+    {
+      "file": "P1_V2_0_Revision_FR.pdf",
+      "pages": 5,
+      "internal_named_links": 0,
+      "external_pdf_links": 7,
+      "invalid_destinations": [],
+      "unicode_replacement_characters": 0
+    }
+  ],
+  "visual_review": {
+    "all_pages_inspected": true,
+    "page_counts": {
+      "P1_V2_0_Companion_EN.pdf": 84,
+      "P1_V2_0_Main_EN.pdf": 32,
+      "P1_V2_0_Revision_FR.pdf": 5
+    },
+    "total_pages": 121,
+    "method": "Contact sheets for every page, followed by full-page inspection of the new results, tables, notation changes, and final page layouts.",
+    "observed_layout_defects_remaining": []
+  },
+  "mathematical_review": "Three AI-assisted integration reviews; new compositions checked against their stated inputs; findings and resolutions in the editorial dossier.",
+  "lean_replayed": false,
+  "independent_human_review_claimed": false,
+  "limits": "Compilation and source checks verify document integrity, not mathematical truth. New compositions and the renumbered manuscript interface await alignment with Lean."
+}

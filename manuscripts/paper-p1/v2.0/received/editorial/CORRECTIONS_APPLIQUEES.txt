@@ -1,0 +1,152 @@
+P1 V2.0 — CLÔTURE DES RETOURS D'INTÉGRATION
+9 novembre 2026
+
+Ce relevé accompagne les trois relectures chronologiques :
+    structure_review.txt
+    math_integration_review.txt
+    narrative_integration_review.txt
+
+Elles décrivent les fichiers au moment de chaque lecture. Leurs formulations
+« à corriger », « observed » ou « required » ne signifient pas que ces défauts
+subsistent dans l'édition livrée. Les résolutions ci-dessous ont été contrôlées
+dans les sources révisées. Aucun nouveau rejeu Lean n'est revendiqué.
+
+1. CORRECTIONS DE SOURCE ET DE NOTATION
+
+— Le titre du compagnon utilise un véritable saut de ligne LaTeX avant
+  « Technical companion ». L'ouverture accidentelle de mode mathématique
+  signalée dans les relectures de structure et de rédaction a été supprimée.
+
+— La condition « I connected » du résumé des budgets de reconstruction
+  s'écrit désormais I\text{ connected}. La corruption de la commande
+  typographique a été réparée, sans modifier l'estimation.
+
+— La nullité compatible porte le même symbole rho_* dans l'algèbre des
+  événements, le transfert fini et les estimations du compagnon. Les deux
+  anciennes graphies désignaient le même maximum ; elles ne sont plus
+  présentées comme des notations distinctes.
+
+— La factorielle décroissante, son ordre zéro et Delta^{*0} sont définis
+  dans les conventions de l'introduction.
+
+— G_N={x in I_N : d_x=L} est défini à sa première mention dans l'article.
+  Le lecteur n'a plus à chercher cette définition élémentaire dans le
+  compagnon. S_e=S_x+S_y pour e={x,y} est également défini au premier usage
+  dans la reconstruction.
+
+— Les formules du profil de paires dans scales.tex utilisent lambda_N,
+  conformément à la définition du modèle. L'abréviation lambda sans indice
+  qui avait perdu sa définition locale a été retirée de ces formules.
+
+2. PORTÉE MATHÉMATIQUE DES DEUX CONSÉQUENCES COMPOSÉES
+
+— Le commentaire du témoin 10:12:15 précise que la probabilité indiquée
+  concerne un triplet compatible sans relations carrées supplémentaires.
+  La formule qui précède ne calcule que la nullité canonique ; la preuve
+  citée contrôle les normalisations privées et les hôtes exceptionnels.
+
+— La preuve du Palm positif précise le passage des paires ordonnées aux
+  arêtes non ordonnées : chaque arête compatible a deux orientations.
+  Elle précise aussi la monotonie de la condition de nombres premiers
+  privés, qui encadre la masse entre les phases aux deux cutoffs 6bB et DB.
+  La positivité du dénominateur et l'uniformité dans tout cet intervalle
+  sont ainsi explicites avant la division.
+
+— La preuve de l'activité absolue d'ordre trois cite le théorème approprié
+  au lieu de parler d'une borne « just proved » après le déplacement de
+  sa démonstration dans le compagnon. Les identités reliant K_3^+, A_3 et
+  le cumulant restent présentes.
+
+— La revue mathématique a vérifié la définition sur toutes les fenêtres
+  du poids homogène, le traitement des marginales nulles, le facteur 2^{|I|}
+  explicite, le domaine a<2 de la queue indépendante et l'ordre des choix
+  qui donne l'uniformité en s et G. Aucun renforcement supplémentaire
+  d'exposant ou de domaine n'a été introduit pour résoudre ces retours.
+
+3. REGROUPEMENT DE LA PREUVE PRIMITIVE
+
+La simplification proposée à la fin de math_integration_review.txt a été
+appliquée. Dans confinement.tex, la construction géométrique des hôtes
+primitifs denses reste entière, jusqu'au comptage ne nécessitant aucune
+énumération de sous-espaces auxiliaires. Le paragraphe qui répétait ensuite
+le passage aux probabilités a été remplacé par un renvoi à la proposition
+commune de masse homogène dans exact_reconstruction.tex.
+
+Le résultat pour les triplets primitifs denses est maintenant obtenu par
+la spécialisation r=3 de cette proposition. Il n'y a pas de boucle : la
+proposition commune utilise la construction d'hôtes, non sa conséquence
+pour les triplets. L'exemple d'une fenêtre impossible mais d'un événement
+homogène de probabilité positive est conservé.
+
+4. NAVIGATION APRÈS LE DÉPLACEMENT DES PREUVES
+
+— Les introductions locales aux profils de paires et aux moments ne
+  présentent plus de comparaison positionnelle ni deux reconstructions.
+  Les usages des estimations sur l'ensemble régulier qui restent utiles
+  au calcul des coefficients et aux moments sont identifiés.
+
+— Les bonnes arêtes sont définies en nommant les canaux 2:3 et 3:4, plutôt
+  qu'en renvoyant à des canaux « above » désormais exposés ailleurs.
+  Le calcul qui utilisait les sommes finies « above » renvoie à leurs
+  formules dans l'article.
+
+— La preuve des moments pointe vers le théorème de borne inférieure dans
+  l'article. Elle ne décrit plus cette preuve comme située « below » dans
+  le compagnon.
+
+— L'exposé de rigidité des paires situe le comptage uniforme des points et
+  la contradiction non alignée dans la section où ils sont effectivement
+  établis. Les formulations décrivant « ce que prouve le compagnon » ont
+  été rendues directes dans les passages désormais placés dans ce document.
+
+— L'alignement des fenêtres originales renvoie à la section appropriée du
+  compagnon. Le contre-exemple au rayon indépendant de la largeur est
+  maintenu avec ses paramètres ; le commentaire de version et le langage
+  de journal de vérification ont été remplacés par l'explication de la
+  nécessité mathématique du rayon.
+
+— completion.tex comporte une sous-section « Completion of the main
+  theorem » avant sa preuve. Son titre de section indique également les
+  conséquences de l'approximation. La preuve n'est plus placée sous la
+  seule rubrique de positivité.
+
+5. SUPPRESSION DE RÉPÉTITIONS SANS PERTE DE CONTENU
+
+Les trois coupes proposées par la revue de rédaction ont été appliquées :
+
+— la définition de la correction explicite ne redéfinit pas une seconde
+  fois S_{a,b}, A_1 et A_d ; elle réemploie les sommes déjà définies ;
+
+— après la formule explicite de probabilité à zéro, un renvoi remplace la
+  seconde copie de la formule à paramètres exacts, qui conserve son
+  corollaire et sa preuve dans completion.tex ;
+
+— le paragraphe final de reconstruction qui répétait la discussion de
+  méthode a été retiré. Le tableau des marges et l'ordre précis des choix
+  de paramètres sont conservés.
+
+6. RÉSULTAT DU CONTRÔLE DE DÉPENDANCES
+
+Les coupures de la branche positionnelle et des conséquences supplémentaires
+n'ont pas supprimé les quatre outils de certificats, les bonnes arêtes et
+leur compression, la masse homogène de deux paires ou la preuve indépendante
+des moments fixes. Le transfert fini garde ses hypothèses sur les seuls
+ordres 3 à 256 ; la queue uniforme a toujours sa preuve distincte.
+
+Les deux erreurs quartiques 5/3 et 3/2 restent distinctes. Les références
+quadratique et Hermite gardent leurs conclusions différentes. La hiérarchie
+des canaux concerne toujours une hauteur fixée avant N. Le statut des
+nouveaux énoncés composés et de la correspondance renumérotée est annoncé
+dans formalization.tex et dans la note française.
+
+La table CORRESPONDANCE_V1_8_V2_0.csv et result_inventory.json consignent
+les destinations des résultats. L'exclusion d'un résultat du nouveau
+périmètre n'est pas un diagnostic d'invalidité de sa preuve historique.
+
+7. LIMITES DE CE RELEVÉ
+
+Ce document clôt les signalements de contenu et de navigation des relectures
+d'intégration. Il ne prétend ni rejouer Lean, ni constituer une nouvelle
+preuve de tous les résultats, ni attester à lui seul la mise en page des PDF.
+La compilation, les contrôles des renvois et l'inspection visuelle font
+l'objet du relevé final de validation de la livraison.

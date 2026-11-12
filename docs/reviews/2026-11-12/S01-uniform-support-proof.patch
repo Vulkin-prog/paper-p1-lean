@@ -1,0 +1,19 @@
+--- a/manuscripts/paper-p1/v2.0/sources/companion_sections/uniform_support.tex
++++ b/manuscripts/paper-p1/v2.0/sources/companion_sections/uniform_support.tex
+@@ -43,12 +43,10 @@
+ \]
+ Since $p\ll_C N^{-1}$, the corresponding weighted layer is
+ $O_{r,u,C,\eta}(N^{-r/2+\eta})$.
+-Take the maximum of these finitely many thresholds and sum their
+-constants before varying $s$ or $G$.
+-For $s=2$, $s=3$, and $4\le s<R$, the small layers are respectively
+-$O(N^{-1+\eta})$, $O(N^{-3/2+\eta})$, and $O(N^{-2+\eta})$.
+-For $s\ge R$ only a subfamily of the same tail remains.
+-These bounds prove the assertion with a constant independent of $s,G$.
++Choose the maximum of the finitely many thresholds before $s,G$ vary.
++Every present small layer satisfies $r/2\ge\min\{s/2,2\}\le2$.
++Thus both the finite layer sum and the tail are
++$O(N^{-\min\{s/2,2\}+\eta})$, uniformly in $s,G$, including empty ranges.
+ \end{proof}
+ 
+ The fixed cutoff may depend on the requested exponent margin.

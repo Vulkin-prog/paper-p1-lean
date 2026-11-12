@@ -1,10 +1,10 @@
 {
-  "validated_source_commit": "d342b507332315c67b1463009061c03f14b5be9b",
+  "validated_source_commit": "aa12e797ce895f6b7aef6e4f1f0c6e5e9a58aab4",
   "scope": "All substantive/root Lean sources, compiler/dependency pins and Lake configuration at the complete replay source.",
   "files": [
     {
       "path": "Audit.lean",
-      "sha256": "bfeb0424b09071308160ff9000349b9aa4f0d291cb2f56167180ed59936a9c26"
+      "sha256": "6576aa5922efea17fd79928d11b39205a862c286619ecb18457a5f3e05720369"
     },
     {
       "path": "ChallengeP1AffineSpectra.lean",
@@ -100,7 +100,7 @@
     },
     {
       "path": "PaperP1.lean",
-      "sha256": "f50b1763f1ef3efcd03f85c77cb7602f2de5b4a294ba24087b26500deef45bc8"
+      "sha256": "08cd0c1bd8b726d4affd48c0c454a4d35db1a7977bbb13e65b4056614597f625"
     },
     {
       "path": "PaperP1/Affine/BinaryMassLattice.lean",
@@ -9103,6 +9103,10 @@
       "sha256": "e45a5c7320530b4fb7fa4396c00e4e1cb0d154aa32d233f6359f44d7c199f79c"
     },
     {
+      "path": "PaperP1/Asymptotics/AllTargetGoodEdgePalm.lean",
+      "sha256": "34a505e98693f8a992c46ca4b82135df6cae786e712680e9ea1e9415a024d3d1"
+    },
+    {
       "path": "PaperP1/Asymptotics/AnchorCertificateDegrees.lean",
       "sha256": "098c2f3ee10ed306d1ee82c9fac85eb59d7b0de4955437ba09928895376f2d42"
     },
@@ -13339,6 +13343,10 @@
       "sha256": "3d958a633e994151e83d028d14f000e97f7e66af5e2a3b59e157e79c9719802f"
     },
     {
+      "path": "PaperP1/Asymptotics/SharpOrderedPrimitiveMass.lean",
+      "sha256": "a64fd68eaaa8f5ff799284a0256b1031a6c08eef07a73333643e76b60423a46b"
+    },
+    {
       "path": "PaperP1/Asymptotics/SharpPairActivity.lean",
       "sha256": "dfee659f487b292ff09b36c613d29a9ec2e494ca9ba3d56e64ee60b3061c6885"
     },
@@ -14195,6 +14203,10 @@
       "sha256": "2794a0226ebe7e4c3d428edeb8e1ee1ab352a3a75a32f7c8aedb2d043ddcfc92"
     },
     {
+      "path": "PaperP1/Asymptotics/UniformFullSupportCount.lean",
+      "sha256": "9c0aba008d890c2de19e17bd24465f64c3606adbb017f4314a59e2f60cf1e918"
+    },
+    {
       "path": "PaperP1/Asymptotics/UniformGeometricCountStatement.lean",
       "sha256": "1ce2229c3a2e4866a6986171c780308166d4a2eb131c5b07becb88e3af5dcf54"
     },
@@ -14325,6 +14337,14 @@
     {
       "path": "PaperP1/Asymptotics/UnsignedTwoChannelMainBound.lean",
       "sha256": "b4c58ba115663a0b4199320206551b88ee87729d5982a6e1ffe65116313707df"
+    },
+    {
+      "path": "PaperP1/Asymptotics/V2FixedHomogeneousSeeds.lean",
+      "sha256": "98c6d528c2bebba2453cc764eecfa1395db5cb39b0f90e7bef3383bee0603db6"
+    },
+    {
+      "path": "PaperP1/Asymptotics/V2HomogeneousEnvelope.lean",
+      "sha256": "f72533705871365cc225621e3c0479dd642533349d73708c9463e708c7aeb6b9"
     },
     {
       "path": "PaperP1/Asymptotics/ValueHeightHalfCount.lean",
@@ -16341,6 +16361,10 @@
     {
       "path": "PaperP1/Model/AllPairRetainedGeometry.lean",
       "sha256": "870a59814b6f5b1d401c007e1fbe0090abb65a758dc6107a89a316a91e260ee7"
+    },
+    {
+      "path": "PaperP1/Model/AllTargetGoodEdgePalm.lean",
+      "sha256": "928d735afedc3001f2b384743f1af4874a6a8e49df7ee7f52f39099c4d07b7b6"
     },
     {
       "path": "PaperP1/Model/AnchoredCleanBoundaryPairs.lean",
@@ -18853,6 +18877,10 @@
     {
       "path": "PaperP1/Topology/FiniteComponentRepresentatives.lean",
       "sha256": "fc913fdd90e15ef3b56df0cadc92961b8dea5c866e66115dcd8ec05d7e3c3245"
+    },
+    {
+      "path": "PaperP1/V2.lean",
+      "sha256": "9c9c96d8e54680d2fbd84375a079f4d30a33b1ff2ab1b36dde278372fac4f7a2"
     },
     {
       "path": "SolutionP1AffineSpectra.lean",

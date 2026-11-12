@@ -1,0 +1,31 @@
+{
+  "source_commit": "aa12e797ce895f6b7aef6e4f1f0c6e5e9a58aab4",
+  "actual_exit_code": 0,
+  "compiled_types_replayed": 528,
+  "compiled_propositions_reaudited": 485,
+  "all_prior_compiled_type_bytes_identical": true,
+  "base_compiled_types": "docs/validation/manuscript-v1.8/compiled-types.json",
+  "replay_validation": {
+    "actual_exit_code": 0,
+    "compiled_types": 528,
+    "propositions_audited": 485,
+    "permitted_axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "all_propositions_standard_axioms_only": true,
+    "inventory_sha256": "74231413a8324ee7cc29a4e1b3548ca0b73d97019fe71ca2667e311af3cf4dc4",
+    "diagnostic_module_sha256": "43d8a9072a6b589e63465977b7a3068637c712b23711fb38b857acf374534fd5",
+    "compiled_types_sha256": "3320385e4f340b28fc10a8e9253e45c8aba8246034f779b0d9608d243d8c3aeb",
+    "log_sha256": "c84f0beb7071cb9aaff0ef3dbdfe88662575b663ac7b2c1aa8989b9063bc4ea7"
+  },
+  "validation_record": "docs/validation/v2.0/validation.json",
+  "manuscript_sources_and_pdfs_unchanged": true,
+  "expanded_compiled_types": {
+    "path": "docs/validation/checkpoint-1005/manuscript-scope/compiled-types.json",
+    "sha256": "ed5fc83b3d45187c2faa635dadd0ff93a50afc5a74b270836b9ca5ab37d40732",
+    "count": 539,
+    "actual_exit_code": 0
+  }
+}

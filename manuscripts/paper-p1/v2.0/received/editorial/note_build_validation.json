@@ -1,0 +1,16 @@
+{
+  "rounds": [
+    {
+      "round": 1,
+      "exit_code": 0
+    },
+    {
+      "round": 2,
+      "exit_code": 0
+    }
+  ],
+  "cross_references_stable": true,
+  "final_reference_and_overfull_diagnostics": [],
+  "output": "P1_V2_0_Revision_FR.pdf",
+  "lean_replayed": false
+}

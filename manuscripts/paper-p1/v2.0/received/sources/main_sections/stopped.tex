@@ -1,0 +1,177 @@
+\section{Stopping the expansion at its first excluded prefix}
+\label{p1:stop:section}
+
+The leading correction comes from retaining one dependent pair.
+An expansion of the entire counting law would also retain every
+possible interaction after that pair.  Taking absolute values at
+that stage can be expensive, even when the interactions that first
+leave the retained class have small total probability.  We therefore
+stop each term at its first excluded prefix and leave all subsequent
+indicators inside a probability kernel.
+
+The first identity is finite and does not require independence.
+Its exact-marginal application will reduce the approximation problem to
+families whose effective nullity is at most $2L$.
+The first-excluded-prefix identity is a specialization of
+Zeilberger's abstract lace expansion
+\cite[formula~(*)]{zeilberger1997}. The broader inclusion--exclusion
+context includes the abstract-tube identities
+\cite{naimanwynn1997,dohmen1999}. We give the prefix proof and its
+convolution form; the model-specific estimates concern the retained
+arithmetic class and its full boundary.
+
+\subsection{An identity for an arbitrary hereditary class}
+
+Let $G$ be a finite totally ordered set.  A family
+$\mathscr D\subseteq 2^G$ is hereditary if $I\in\mathscr D$ and
+$J\subseteq I$ imply $J\in\mathscr D$.  Assume throughout that
+$\varnothing\in\mathscr D$.  Its \emph{ordered boundary} is
+\begin{equation}
+ \partial\mathscr D
+ =\{I\subseteq G:I\notin\mathscr D,\ 
+           I\setminus\{\max I\}\in\mathscr D\}.
+ \label{p1:stop:boundary}
+\end{equation}
+This definition records the first excluded prefix in the prescribed
+order.  It is not the family of all inclusion-minimal excluded sets:
+an element of $\partial\mathscr D$ can contain a smaller excluded
+subset which is not a prefix.
+
+\begin{lemma}[Expansion at the first excluded prefix]
+\label{p1:stop:polynomial}
+Let $(u_x)_{x\in G}$ belong to a commutative unital algebra.
+Then, as a polynomial identity,
+\begin{equation}
+ \prod_{x\in G}(1+t u_x)
+ =\sum_{I\in\mathscr D}t^{|I|}\prod_{x\in I}u_x
+  +\sum_{I\in\partial\mathscr D}
+       t^{|I|}\prod_{x\in I}u_x
+       \prod_{\substack{y\in G\\y>\max I}}(1+t u_y).
+ \label{p1:stop:polynomial-identity}
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+Expand the product on the left and index its monomials by
+$S\subseteq G$.  If $S\notin\mathscr D$, read the elements of $S$
+in their prescribed order.  There is a unique first prefix
+$I\notin\mathscr D$.  Its preceding prefix belongs to $\mathscr D$,
+so $I\in\partial\mathscr D$, and every element of $S\setminus I$
+is larger than $\max I$.
+
+Conversely, take $I\in\partial\mathscr D$ and
+$T\subseteq\{y\in G:y>\max I\}$.  Every proper prefix of $I$
+belongs to $\mathscr D$, by heredity.  The set $I\cup T$ is
+excluded, since it contains $I$, and its first excluded prefix is
+$I$.  Thus the pairs $(I,T)$ partition the monomials indexed by
+$S\notin\mathscr D$.  Summing these monomials proves the identity.
+\end{proof}
+
+To identify the specialization explicitly, define \(\ell(S)=S\)
+for \(S\in\mathscr D\), and otherwise let \(\ell(S)\) be its
+first excluded prefix. This is a lace map: \(\ell(S)\subseteq S\);
+\(\ell(T)=\ell(S)\) whenever \(\ell(S)\subseteq T\subseteq S\);
+and equal images of two sets remain unchanged under their union.
+Its fixed points are \(\mathscr D\cup\partial\mathscr D\).
+The compatible-extension set is empty for \(I\in\mathscr D\),
+and equals \(\{y\in G:y>\max I\}\) for
+\(I\in\partial\mathscr D\). Zeilberger's formula~(*) with
+\(Y_x=t u_x\) is therefore exactly
+\eqref{p1:stop:polynomial-identity}.
+
+For indicators $(J_x)_{x\in G}$, write
+\[
+ Z=\sum_{x\in G}J_x,\qquad
+ q(I)=\E\prod_{x\in I}J_x,\qquad q(\varnothing)=1.
+\]
+Let $\Delta=\delta_1-\delta_0$, and use the convention
+$\Delta^{*0}=\delta_0$.  The measure retained by $\mathscr D$ is
+\begin{equation}
+ T_{\mathscr D}
+       =\sum_{I\in\mathscr D}q(I)\Delta^{*|I|}.
+ \label{p1:stop:retained}
+\end{equation}
+It has total mass one, although its individual masses need not
+be nonnegative.
+
+\begin{proposition}[A positive remainder kernel]
+\label{p1:stop:measure}
+For arbitrary dependence among the indicators,
+\begin{align}
+ \Law Z-T_{\mathscr D}
+   &=\sum_{I\in\partial\mathscr D}\Delta^{*|I|}*\nu_I,
+       \label{p1:stop:measure-identity}\\
+ \nu_I
+   &=\E\left[
+        \left(\prod_{x\in I}J_x\right)
+        \delta_{\sum_{y>\max I}J_y}
+        \right].
+       \notag
+\end{align}
+The measure $\nu_I$ is positive and has mass $q(I)$.  Consequently,
+\begin{equation}
+ \|\Law Z-T_{\mathscr D}\|_1
+       \le \sum_{I\in\partial\mathscr D}2^{|I|}q(I).
+ \label{p1:stop:norm}
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+Apply Lemma~\ref{p1:stop:polynomial} in the convolution algebra
+of finite signed measures, with unit $\delta_0$ and $t=\Delta$.
+For an indicator,
+\[
+ \delta_0+J_x\Delta=\delta_{J_x},
+ \qquad
+ \mathop{*}_{y>\max I}(\delta_0+J_y\Delta)
+       =\delta_{\sum_{y>\max I}J_y}.
+\]
+The expectation of the complete product is $\Law Z$.
+Taking expectations in \eqref{p1:stop:polynomial-identity}
+therefore gives \eqref{p1:stop:measure-identity}.
+Positivity and the mass formula for $\nu_I$ follow directly
+from its definition.  Finally,
+$\|\Delta^{*|I|}\|_1=2^{|I|}$ and the convolution norm is
+submultiplicative, which proves \eqref{p1:stop:norm}.
+\end{proof}
+
+If $q(I)>0$, the normalized measure $\nu_I/q(I)$ is the law
+of the suffix count conditioned on the activity of every member
+of $I$.  This conditional law can differ substantially from its
+unconditional version.  The proof uses only its total mass,
+so no independence between the prefix and suffix is required.
+In particular, it incurs no factor exponential in the number
+of suffix indicators.
+The use of the ordinary $\ell^1$ norm matters: an exponential
+weight would also charge the suffix count.
+
+\begin{example}[A suffix that remains fully dependent]
+\label{p1:stop:example}
+Take $G=\{1,2,3\}$ in its natural order, and retain only the empty
+set and the singletons.  Then
+\[
+ \partial\mathscr D=\{\{1,2\},\{1,3\},\{2,3\}\},
+ \qquad
+ T_{\mathscr D}=\delta_0+(q_1+q_2+q_3)\Delta,
+\]
+and the exact remainder is
+\[
+ \Law Z-T_{\mathscr D}
+ =\Delta^{*2}*
+   \left(\E[J_1J_2\delta_{J_3}]
+               +(q_{13}+q_{23})\delta_0\right).
+\]
+For $J_1=J_2=J_3=H$, where $\P(H=1)=\theta$, the conditional
+suffix following $\{1,2\}$ is identically one.  The formula becomes
+\[
+ \Law(3H)-(\delta_0+3\theta\Delta)
+    =\theta\Delta^{*2}*(2\delta_0+\delta_1).
+\]
+The remainder has norm $6\theta$, while
+\eqref{p1:stop:norm} gives the valid bound $12\theta$.
+The mechanism is the positive kernel of mass $3\theta$, not
+a comparison of the conditional suffix with an independent one.
+This finite example explains the stopping identity; the remaining
+task in our model is to prove that the appropriate boundary has
+small weighted mass.
+\end{example}

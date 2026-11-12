@@ -1,5 +1,23 @@
 # Mathematical corrections and improvements
 
+Current edition, 12 November 2026: **P1 V2.0 has 118 numbered results
+(26 article, 92 companion)**, mapped through 199 clause endpoints and nine
+retained auxiliary claims (212 extracted proposition types in total).
+The complete actual replay passed 18,645 build jobs, 20,019 theorem axiom checks
+and 19,942 references under Lean v4.36.0-rc2. Six new mathematical modules add
+24 proved interfaces; P1-MATH-1006--1010 record their composition/scope work.
+The received V2 and all 547 prior manuscript files are preserved. Fifty former
+results leave the scalar-count scope without invalidation. Only the active
+formalization notice changes from the received TeX; current PDFs are 32/84 pages.
+See [V2 alignment](V2_ALIGNMENT.md), [current complete index](manuscript-results-v2.0.json),
+[French review and simplifications](reviews/2026-11-12/V2_REVIEW_FR.md) and
+[actual validation](validation/v2.0/validation.json). No new external mathematical
+input is introduced. The six historical Palomar dossiers remain unchanged and
+on hold; their prior qualification does not automatically cover V2.
+
+The entries below are historical records. Their then-current wording and frozen
+review scopes are retained; the V2 documents above define the current edition.
+
 Three further independently reviewed proof-reuse proposals are preserved
 without application after the user requested session finalization at about
 5 percent remaining quota. They would remove 49 source lines in T22.1,

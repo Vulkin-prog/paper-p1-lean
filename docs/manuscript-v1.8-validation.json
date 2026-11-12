@@ -99,5 +99,5 @@
   "new_optional_strengthenings_or_clarifications": 7,
   "palomar_registration": null,
   "palomar_submission_status": "on_hold_at_user_request",
-  "latest_proof_replay": "docs/validation/checkpoint-1005/manuscript-replay.json"
+  "latest_proof_replay": "docs/validation/v2.0/original-replay.json"
 }

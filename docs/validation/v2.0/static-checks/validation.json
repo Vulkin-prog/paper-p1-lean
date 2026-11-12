@@ -1,0 +1,117 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "scripts/check_sources.py"
+      ],
+      "actual_exit_code": 0,
+      "log": "check_sources.py.log",
+      "log_sha256": "e69e3256f47b82162fa687c1b0ef1b478e5594a5ddf2b41a709725a8e04d70ac"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check_revised_sources.py",
+        "--require-proved"
+      ],
+      "actual_exit_code": 0,
+      "log": "check_revised_sources.py.log",
+      "log_sha256": "b7d6de15d0462cd0a25a24425bffc1a297f442e2a43106c8706cba29d1134506"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check_manuscript_endpoints.py"
+      ],
+      "actual_exit_code": 0,
+      "log": "check_manuscript_endpoints.py.log",
+      "log_sha256": "ccfe30ea76f40e41be8d01fdb9b1d9694e37ee11bd27ea490e55f0b16dc0d316"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check_manuscript_v20.py"
+      ],
+      "actual_exit_code": 0,
+      "log": "check_manuscript_v20.py.log",
+      "log_sha256": "1f27d95bc925a17e85b3d5eba2e1a8a3b44621420b7193ee4b723246fd53f061"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check_editorial_previews.py"
+      ],
+      "actual_exit_code": 0,
+      "log": "check_editorial_previews.py.log",
+      "log_sha256": "f9cea14a7bbc5aae48caeac4296991e75920da3c5e021ee463e7ecce9970b807"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check_scientific_preview.py"
+      ],
+      "actual_exit_code": 0,
+      "log": "check_scientific_preview.py.log",
+      "log_sha256": "4c314d5ae4504f9e97456b258c28a2cbec6b639f3467ed5a2ddd2ae776bbda25"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check_unified_preview.py"
+      ],
+      "actual_exit_code": 0,
+      "log": "check_unified_preview.py.log",
+      "log_sha256": "ea4be43c25b54ba02dad32a4b2295077f446147c514eb68445a5b7166d98f7e0"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/update_audit.py",
+        "--check"
+      ],
+      "actual_exit_code": 0,
+      "log": "update_audit.py.log",
+      "log_sha256": "e05d7d7ae24e75c0655abce15fbdb9cc2f681eda3789ad4d4455de3ac16aa86d"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check_registry_candidates.py"
+      ],
+      "actual_exit_code": 0,
+      "log": "check_registry_candidates.py.log",
+      "log_sha256": "64ffd3b7c8a94be6dae68505d61c2c0155c84a32a0fe66308a11f15e2ab567c5"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check_registry_consolidation.py"
+      ],
+      "actual_exit_code": 0,
+      "log": "check_registry_consolidation.py.log",
+      "log_sha256": "f0c54db28562ca3cb39c482015bb78324d0be3d582e6e230fbbdda416583169c"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check_palomar_sources.py"
+      ],
+      "actual_exit_code": 0,
+      "log": "check_palomar_sources.py.log",
+      "log_sha256": "ff03d205121365c3b3f3efc04769379ec47acf4e6f219486c27faf7e18bacfd7"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check_registry_evidence.py",
+        "--require-all"
+      ],
+      "actual_exit_code": 0,
+      "log": "check_registry_evidence.py.log",
+      "log_sha256": "0f13c089a0f10733c2a1602b7e88ad10b39a697e66ae217901229d04025d4297"
+    }
+  ],
+  "no_official_palomar_check_or_submission": true
+}

@@ -23,8 +23,15 @@ future manuscript version and preparing Palomar registrations after completion.
   allow their expected placeholder warnings; proof warnings remain errors.
 - Keep exact heterogeneous marginals, affine incompatibility, repeated-index
   cumulant terms, quantifier order and fixed/growing-order regimes explicit.
-- The baseline has 167 numbered results (73 main, 94 companion). A preparatory
-  algebraic lemma is not a completed manuscript result. Maintain the JSON ledger.
+- The preserved historical baseline has 167 numbered results (73 main, 94 companion).
+  The user adopted a new scalar-count scope in the V2 dossier received 12 November:
+  **118 numbered results (26 main, 92 companion)**,117 retained identities and one
+  new envelope lemma. Fifty results leave the current scope; their old proofs,
+  source versions and reviews remain preserved and are not invalidated.
+  Read `docs/V2_ALIGNMENT.md` and `docs/manuscript-results-v2.0.json` for current
+  numbering and complete clause bundles, including nine retained auxiliary claims.
+  A preparatory algebraic lemma is not a completed manuscript result. Maintain
+  both the historical ledger and the current V2 correspondence.
 - Reuse Paper C only with an exact source commit, licence attribution, statement
   comparison, and a successful rebuild under the pinned new compiler.
 - Use selective imports and selective Mathlib caches. Do not fetch all Mathlib

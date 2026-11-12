@@ -1,0 +1,195 @@
+{
+  "status": "passed",
+  "commands": [
+    {
+      "document": "main",
+      "round": 1,
+      "actual_exit_code": 0,
+      "log": "main-round-1.log",
+      "log_sha256": "54e616e6aa39f4d10d4a59b0b61a48600681555125d4da11e7e8e7524f1671f2"
+    },
+    {
+      "document": "companion",
+      "round": 1,
+      "actual_exit_code": 0,
+      "log": "companion-round-1.log",
+      "log_sha256": "83aa6116d8f47f92ad364dfe0935e670df61736642d1782400be2b5e3b0f284b"
+    },
+    {
+      "document": "main",
+      "round": 2,
+      "actual_exit_code": 0,
+      "log": "main-round-2.log",
+      "log_sha256": "8776f71b793da89ef2d5c2c0d0fe52c22fde929d753a1d19b3c0ad39b4cca585"
+    },
+    {
+      "document": "companion",
+      "round": 2,
+      "actual_exit_code": 0,
+      "log": "companion-round-2.log",
+      "log_sha256": "b616d65cca49a6fc6a819e144b9749b48726f1af08847019f88e312b3e3ee092"
+    },
+    {
+      "document": "main",
+      "round": 3,
+      "actual_exit_code": 0,
+      "log": "main-round-3.log",
+      "log_sha256": "8776f71b793da89ef2d5c2c0d0fe52c22fde929d753a1d19b3c0ad39b4cca585"
+    },
+    {
+      "document": "companion",
+      "round": 3,
+      "actual_exit_code": 0,
+      "log": "companion-round-3.log",
+      "log_sha256": "eb2dba488588bcc4f8c142e12e6cebdf829d583c17ead7f3dc0e82b17a1b9e97"
+    }
+  ],
+  "cross_references_stable": true,
+  "unresolved_or_overfull_diagnostics": [],
+  "shell_escape": false,
+  "source_files": [
+    {
+      "path": "assistance.tex",
+      "sha256": "c69717c3576f555b813c00bfc53fe3d0c2a483725d6fea771b6760d59d7dbaba"
+    },
+    {
+      "path": "bibliography.tex",
+      "sha256": "b6b9fbf723a63b01d4ae8543337d684d5ad3ed154e368f60674c9682f0e3ce9b"
+    },
+    {
+      "path": "companion.tex",
+      "sha256": "83ca982aa262b0ced7be9ab9dbc78dc9db414806c845ad8936ba444b165347c6"
+    },
+    {
+      "path": "companion_sections/basic_arithmetic.tex",
+      "sha256": "d9a806c2a54cdd3eb70a4bbac7427d92483be263ebf24147ea77e0f4914d0e84"
+    },
+    {
+      "path": "companion_sections/certificates.tex",
+      "sha256": "8cd7e4affb7846e24b7b0cd44ae8dda17fc4e83126791c9cfff615bb872961bb"
+    },
+    {
+      "path": "companion_sections/channel_counts.tex",
+      "sha256": "0dd1bcbe1e2293928482b56adfcb3ce7b846ed5694b82f32b12c4c9a142a6a65"
+    },
+    {
+      "path": "companion_sections/confinement.tex",
+      "sha256": "f260d4831e32fe859466c6c3cbc48eca849c4ef6fd1262acd5ba410b87b5ed94"
+    },
+    {
+      "path": "companion_sections/exact_reconstruction.tex",
+      "sha256": "09d798705607db3977c147e44fd49af8854c4dc20aabc09d586647c06aba796c"
+    },
+    {
+      "path": "companion_sections/fixed_moments.tex",
+      "sha256": "ca1d4f6249c5ac0fbcd4389c21cbc3b58bb4caf1c40b5e146a8a2a11fcfb9de0"
+    },
+    {
+      "path": "companion_sections/guide.tex",
+      "sha256": "35fb8a964c84f046d5dc5cf20b5143b691157dfd525c35f0aee7efcb0a667068"
+    },
+    {
+      "path": "companion_sections/half_counts.tex",
+      "sha256": "5fb04088c22d19ffb18c50b6b0a93b1a118412e0c1689c63f3cc0706fae0f3a2"
+    },
+    {
+      "path": "companion_sections/moment_obstruction.tex",
+      "sha256": "68d14a0fefd9caabc9960b5fe26088a3cbe139374f31a6fb5a1152ecac39f7ed"
+    },
+    {
+      "path": "companion_sections/pair_profiles.tex",
+      "sha256": "1d53155aba01e0dafbee640eabad08bb6162eaa697080c321f8fac26e2bf86d6"
+    },
+    {
+      "path": "companion_sections/pair_rigidity.tex",
+      "sha256": "6e3c8a7d02feb3f68b29311b0eee1a8cdbe746eb500c656a2c19b17a86e70c77"
+    },
+    {
+      "path": "companion_sections/poisson_calculus.tex",
+      "sha256": "9751c3cd0723fba0949c246adfc524a49178843d7a7c2031c1efee6c9bd14b09"
+    },
+    {
+      "path": "companion_sections/short_supports.tex",
+      "sha256": "e1deeeb50e1637653689dd82978eb76f9d5b4b02ad9ac8397159fa83e670273a"
+    },
+    {
+      "path": "companion_sections/third_cumulant.tex",
+      "sha256": "91039e61898101961f4db7c1ad9ccfe7f879e4249e19523efb1d21248efc14fc"
+    },
+    {
+      "path": "companion_sections/triple_activities.tex",
+      "sha256": "8ef14451905c708f1a6115e508d16554ebfb4473f0e9649d13348090331eb8ad"
+    },
+    {
+      "path": "companion_sections/uniform_support.tex",
+      "sha256": "bc7801a4f3ef8d40f653c63081deef3b47d34a9bcdd5014d062bdaa3fda36f49"
+    },
+    {
+      "path": "formalization.tex",
+      "sha256": "4b270a708314f0968e3a759410fbe9e418020087e5a226e561d9a66b33e54244"
+    },
+    {
+      "path": "main.tex",
+      "sha256": "2e54de2e8ad2a5b147c205626601303f145e12c9e6cd557e74063fd2282c9625"
+    },
+    {
+      "path": "main_sections/abstract.tex",
+      "sha256": "6893ce5f48c421b94558c2f9df585f71aace49484c1a0c4393e0935ec17465ec"
+    },
+    {
+      "path": "main_sections/channel_hierarchy.tex",
+      "sha256": "e54c6a04ace8d09ee6108505400c5e3248cfbadf024708a2cfa4f22396642585"
+    },
+    {
+      "path": "main_sections/completion.tex",
+      "sha256": "7dcc0be2e455b0042f7a3325a085c18864d7805e7e00d975d54eed5d6ed37d97"
+    },
+    {
+      "path": "main_sections/discussion.tex",
+      "sha256": "22e631f537307cfe93b5ef40400ba033c185401d616ee08df0b2bc8bb7987c70"
+    },
+    {
+      "path": "main_sections/event_algebra.tex",
+      "sha256": "01506e88758ed869214baa07870d14ee1068688d51443b755897b2e17d37b495"
+    },
+    {
+      "path": "main_sections/introduction.tex",
+      "sha256": "a433aa4b58fd2e4291821f3f40342a1c516294594ddd37fa79450990c1fb93b8"
+    },
+    {
+      "path": "main_sections/quartic_lower.tex",
+      "sha256": "431d488641a43309694c02366d82003135fa96d402988f4f2b6b201a561bbd7e"
+    },
+    {
+      "path": "main_sections/reconstruction.tex",
+      "sha256": "7028caa8abd9692d244704be3bedaab74c91d3b9ea7002b3511c8c3768ad5152"
+    },
+    {
+      "path": "main_sections/scales.tex",
+      "sha256": "4fce610c790f0a61bb94817d73968b3d8ebc1aa0d669405ce3cdac9d9b384ee5"
+    },
+    {
+      "path": "main_sections/stopped.tex",
+      "sha256": "86d9baeed211a18303210d80b98481c15b6a0e16a9c6d2c569f2977de62879e6"
+    },
+    {
+      "path": "preamble.tex",
+      "sha256": "f901fb7f353b4aa2f92467abe20f33c4c4c7cbeab9dcfc8cd4ef0df898c13265"
+    }
+  ],
+  "pdfs": [
+    {
+      "document": "main",
+      "filename": "P1_V2_0_Main_EN.pdf",
+      "pages": 32,
+      "sha256": "e509ca9724014cecfae516c92f39d376cea06f5df81e0adf793fed689ce7d6a9"
+    },
+    {
+      "document": "companion",
+      "filename": "P1_V2_0_Companion_EN.pdf",
+      "pages": 84,
+      "sha256": "5dd1bba0aaec64a300a535edec2dfb01db1c18cf451a6bd9479d8e61350f3961"
+    }
+  ],
+  "visual_review": "pending_separate_render_and_inspection"
+}

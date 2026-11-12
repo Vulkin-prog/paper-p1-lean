@@ -5,19 +5,19 @@
     "path": "docs/manuscript-results-v1.8.json",
     "sha256": "e01eb2ce4ae72ede8c19d158e45741292d278e8328c26e4d9e7723a5292812b8"
   },
-  "proof_source_commit": "d342b507332315c67b1463009061c03f14b5be9b",
+  "proof_source_commit": "aa12e797ce895f6b7aef6e4f1f0c6e5e9a58aab4",
   "proof_source_manifest": {
     "path": "docs/validation/manuscript-v1.8/proof-source-manifest.json",
-    "sha256": "f8922da613f3f4e3be5325ea31bad73d7c5b45c6bd306699e309d89c8e2de575"
+    "sha256": "c5c41a8e0dd7d1655787c780300d583436fc2c192be583345f8ec029442a945e"
   },
-  "proof_validation": "docs/validation/checkpoint-1005/validation.json",
+  "proof_validation": "docs/validation/v2.0/validation.json",
   "compiled_scope": {
     "path": "docs/validation/manuscript-endpoints-v1.8/compiled/compiled-types.json",
     "sha256": "6ac3e4eb3a3bc5519edb3903cdf7770e19b01fee2f16faf3dceba8fb4b023c77",
     "validation": "docs/validation/manuscript-endpoints-v1.8/compiled/compiled-types-validation.json",
     "latest_replay": {
-      "path": "docs/validation/checkpoint-1005/endpoint-replay.json",
-      "sha256": "a2d67a96439f06c1008c9c2c67e4dd8c2579fc3791170902aff15777dd6de825"
+      "path": "docs/validation/v2.0/endpoints-replay.json",
+      "sha256": "6767663776f227b94357ad22244b25561c83361d84c560eea9c2667c9bad834b"
     }
   },
   "review_records": [
@@ -7072,19 +7072,23 @@
     "sha256": "540583bd07281e490950043307f667ec0232f4c232bb6e1a53f5438a3fe31e69"
   },
   "supplemental_example_replay": {
-    "path": "docs/validation/checkpoint-1005/examples-replay.json",
-    "sha256": "76ec81e6a8d665d1a9532ed4e404e826c510d3f82df0511cf1546613c82549f6"
+    "path": "docs/validation/v2.0/examples-replay.json",
+    "sha256": "56187ee796c55fb6978e0e27b4a65e483befb9e797cf7103dc901fc39d863c99"
   },
   "supplemental_fixed_arity_review": {
     "path": "docs/reviews/2026-11-07/fixed-arity-envelope.json",
     "sha256": "befad71bf99a8b443efa6997eb7c8d55b521429320737b4e3a43dc28fd8ef078"
   },
   "supplemental_fixed_arity_replay": {
-    "path": "docs/validation/checkpoint-1005/fixed-arity-replay.json",
-    "sha256": "f32344d66dba32acd559d9d7671f0a3c2cb5890b437c67ecafa71fb280c74b22"
+    "path": "docs/validation/v2.0/fixed-arity-replay.json",
+    "sha256": "d070ef533035b8fbe4ef92d820a7c927e1a9a7c2143ca33c058709e27e7e36f6"
   },
   "supplemental_sharp_palm_review": {
     "path": "docs/reviews/2026-11-07/sharp-good-edge-palm.json",
     "sha256": "d3fe302b8343b678b6e1ce037da9b08a105540f4ad34d9b1015e33f0c5faef34"
+  },
+  "supplemental_sharp_palm_replay": {
+    "path": "docs/validation/v2.0/sharp-palm-replay.json",
+    "sha256": "66133cc8d0c3d614380b7f217e062198872775fa4249175cd933e554c34cad63"
   }
 }

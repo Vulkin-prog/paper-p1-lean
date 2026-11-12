@@ -1,0 +1,1748 @@
+{
+  "raw_staged_diff_check_exit": 2,
+  "authored_code_and_documentation_diff_check_exit": 0,
+  "all_remaining_diagnostics_classified": true,
+  "issues": [
+    {
+      "path": "docs/reviews/2026-11-12/S01-uniform-support-proof.patch",
+      "line": 18,
+      "reason": "trailing whitespace.",
+      "classification": "required_unified_patch_context_blank_line"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion-round-1.log",
+      "line": 107,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion-round-1.log",
+      "line": 119,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion-round-1.log",
+      "line": 194,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion-round-1.log",
+      "line": 249,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion-round-1.log",
+      "line": 253,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion-round-1.log",
+      "line": 274,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion-round-1.log",
+      "line": 286,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion-round-1.log",
+      "line": 331,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion-round-1.log",
+      "line": 362,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion-round-1.log",
+      "line": 378,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion-round-1.log",
+      "line": 386,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion-round-1.log",
+      "line": 423,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion-round-1.log",
+      "line": 440,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion-round-1.log",
+      "line": 458,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion-round-1.log",
+      "line": 471,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion-round-1.log",
+      "line": 480,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion-round-1.log",
+      "line": 488,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion-round-1.log",
+      "line": 497,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion-round-1.log",
+      "line": 506,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion-round-1.log",
+      "line": 518,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion-round-1.log",
+      "line": 522,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion-round-1.log",
+      "line": 530,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion-round-1.log",
+      "line": 580,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion-round-1.log",
+      "line": 643,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion-round-1.log",
+      "line": 685,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion-round-1.log",
+      "line": 717,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion-round-1.log",
+      "line": 746,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion-round-1.log",
+      "line": 750,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion-round-1.log",
+      "line": 832,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion-round-1.log",
+      "line": 862,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion-round-1.log",
+      "line": 867,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion-round-1.log",
+      "line": 875,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion-round-1.log",
+      "line": 945,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion-round-1.log",
+      "line": 971,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion-round-1.log",
+      "line": 976,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion-round-1.log",
+      "line": 997,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion-round-1.log",
+      "line": 1010,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion-round-1.log",
+      "line": 1018,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion-round-1.log",
+      "line": 1026,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion-round-1.log",
+      "line": 1069,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion-round-1.log",
+      "line": 1073,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion-round-1.log",
+      "line": 1194,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion-round-1.log",
+      "line": 1228,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion-round-1.log",
+      "line": 1238,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion-round-1.log",
+      "line": 1251,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion-round-1.log",
+      "line": 1255,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion-round-1.log",
+      "line": 1263,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion-round-1.log",
+      "line": 1293,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion-round-1.log",
+      "line": 1332,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion-round-1.log",
+      "line": 1353,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion-round-1.log",
+      "line": 1378,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion-round-1.log",
+      "line": 1386,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion-round-1.log",
+      "line": 1464,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion-round-1.log",
+      "line": 1476,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion-round-1.log",
+      "line": 1569,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion-round-1.log",
+      "line": 1573,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion.aux",
+      "line": 1,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion.final.log",
+      "line": 46,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion.final.log",
+      "line": 48,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion.final.log",
+      "line": 50,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion.final.log",
+      "line": 601,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion.final.log",
+      "line": 611,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion.final.log",
+      "line": 693,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion.final.log",
+      "line": 699,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion.final.log",
+      "line": 815,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/companion.final.log",
+      "line": 846,
+      "reason": "new blank line at EOF.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/main-round-1.log",
+      "line": 76,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/main-round-1.log",
+      "line": 127,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/main-round-1.log",
+      "line": 224,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/main-round-1.log",
+      "line": 277,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/main-round-1.log",
+      "line": 311,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/main-round-1.log",
+      "line": 319,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/main-round-1.log",
+      "line": 340,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/main-round-1.log",
+      "line": 377,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/main-round-1.log",
+      "line": 394,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/main-round-1.log",
+      "line": 402,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/main-round-1.log",
+      "line": 406,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/main-round-1.log",
+      "line": 410,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/main-round-1.log",
+      "line": 427,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/main-round-1.log",
+      "line": 435,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/main-round-1.log",
+      "line": 488,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/main-round-1.log",
+      "line": 512,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/main-round-1.log",
+      "line": 520,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/main-round-1.log",
+      "line": 545,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/main-round-1.log",
+      "line": 570,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/main-round-1.log",
+      "line": 617,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/main-round-1.log",
+      "line": 621,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/main-round-1.log",
+      "line": 660,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/main-round-1.log",
+      "line": 664,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/main-round-1.log",
+      "line": 676,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/main-round-1.log",
+      "line": 680,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/main-round-1.log",
+      "line": 703,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/main-round-1.log",
+      "line": 736,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/main-round-1.log",
+      "line": 774,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/main.aux",
+      "line": 1,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/main.final.log",
+      "line": 46,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/main.final.log",
+      "line": 48,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/main.final.log",
+      "line": 50,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/main.final.log",
+      "line": 600,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/main.final.log",
+      "line": 610,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/main.final.log",
+      "line": 692,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/main.final.log",
+      "line": 698,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/main.final.log",
+      "line": 783,
+      "reason": "trailing whitespace.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "docs/validation/v2.0/pdf/main.final.log",
+      "line": 812,
+      "reason": "new blank line at EOF.",
+      "classification": "unaltered_actual_latex_output"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 1,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 2,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 3,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 4,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 5,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 6,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 7,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 8,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 9,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 10,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 11,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 12,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 13,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 14,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 15,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 16,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 17,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 18,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 19,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 20,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 21,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 22,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 23,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 24,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 25,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 26,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 27,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 28,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 29,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 30,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 31,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 32,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 33,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 34,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 35,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 36,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 37,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 38,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 39,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 40,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 41,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 42,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 43,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 44,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 45,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 46,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 47,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 48,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 49,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 50,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 51,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 52,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 53,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 54,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 55,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 56,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 57,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 58,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 59,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 60,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 61,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 62,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 63,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 64,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 65,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 66,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 67,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 68,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 69,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 70,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 71,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 72,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 73,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 74,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 75,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 76,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 77,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 78,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 79,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 80,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 81,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 82,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 83,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 84,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 85,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 86,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 87,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 88,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 89,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 90,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 91,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 92,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 93,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 94,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 95,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 96,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 97,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 98,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 99,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 100,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 101,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 102,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 103,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 104,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 105,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 106,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 107,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 108,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 109,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 110,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 111,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 112,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 113,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 114,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 115,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 116,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 117,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 118,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 119,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 120,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 121,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 122,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 123,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 124,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 125,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 126,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 127,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 128,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 129,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 130,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 131,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 132,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 133,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 134,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 135,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 136,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 137,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 138,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 139,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 140,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 141,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 142,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 143,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 144,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 145,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 146,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 147,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 148,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 149,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 150,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 151,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 152,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 153,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 154,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 155,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 156,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 157,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 158,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 159,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 160,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 161,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 162,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 163,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 164,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 165,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 166,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 167,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/editorial/CORRESPONDANCE_V1_8_V2_0.csv",
+      "line": 168,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/sources/companion_sections/basic_arithmetic.tex",
+      "line": 1346,
+      "reason": "new blank line at EOF.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/sources/companion_sections/channel_counts.tex",
+      "line": 373,
+      "reason": "new blank line at EOF.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/sources/companion_sections/pair_profiles.tex",
+      "line": 299,
+      "reason": "new blank line at EOF.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/sources/companion_sections/pair_rigidity.tex",
+      "line": 274,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/sources/main_sections/channel_hierarchy.tex",
+      "line": 351,
+      "reason": "new blank line at EOF.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/sources/main_sections/reconstruction.tex",
+      "line": 356,
+      "reason": "new blank line at EOF.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/sources/main_sections/stopped.tex",
+      "line": 31,
+      "reason": "trailing whitespace.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/received/sources/preamble.tex",
+      "line": 59,
+      "reason": "new blank line at EOF.",
+      "classification": "received_bytes_preserved"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/sources/companion_sections/basic_arithmetic.tex",
+      "line": 1346,
+      "reason": "new blank line at EOF.",
+      "classification": "inherited_received_source_bytes"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/sources/companion_sections/channel_counts.tex",
+      "line": 373,
+      "reason": "new blank line at EOF.",
+      "classification": "inherited_received_source_bytes"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/sources/companion_sections/pair_profiles.tex",
+      "line": 299,
+      "reason": "new blank line at EOF.",
+      "classification": "inherited_received_source_bytes"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/sources/companion_sections/pair_rigidity.tex",
+      "line": 274,
+      "reason": "trailing whitespace.",
+      "classification": "inherited_received_source_bytes"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/sources/main_sections/channel_hierarchy.tex",
+      "line": 351,
+      "reason": "new blank line at EOF.",
+      "classification": "inherited_received_source_bytes"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/sources/main_sections/reconstruction.tex",
+      "line": 356,
+      "reason": "new blank line at EOF.",
+      "classification": "inherited_received_source_bytes"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/sources/main_sections/stopped.tex",
+      "line": 31,
+      "reason": "trailing whitespace.",
+      "classification": "inherited_received_source_bytes"
+    },
+    {
+      "path": "manuscripts/paper-p1/v2.0/sources/preamble.tex",
+      "line": 59,
+      "reason": "new blank line at EOF.",
+      "classification": "inherited_received_source_bytes"
+    }
+  ],
+  "classification_counts": {
+    "required_unified_patch_context_blank_line": 1,
+    "unaltered_actual_latex_output": 104,
+    "received_bytes_preserved": 176,
+    "inherited_received_source_bytes": 8
+  },
+  "scope": "Received bytes, inherited source bytes, actual LaTeX evidence and standard patch context remain unaltered; fresh code/documentation have no whitespace defects."
+}

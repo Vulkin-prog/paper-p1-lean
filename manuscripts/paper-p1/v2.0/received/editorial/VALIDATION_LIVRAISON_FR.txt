@@ -1,0 +1,32 @@
+P1 V2.0 — VALIDATION DE LIVRAISON
+9 novembre 2026
+
+L'article (32 pages), le compagnon (84 pages) et la note française (5 pages)
+ont été compilés. Les renvois croisés sont stabilisés, sans référence indéfinie,
+label dupliqué ni débordement signalé dans les journaux finaux. Le contrôle
+des sources actives recense 32 fichiers TeX et 375 labels, sans erreur.
+
+Une compilation indépendante à partir des seules sources, sans aucun fichier
+auxiliaire initial, reproduit le texte extrait et le nombre de pages des deux
+PDF scientifiques. Elle confirme que l'archive contient les fichiers nécessaires
+à la compilation avec une installation TeX Live fonctionnelle.
+
+Les 121 pages des trois documents ont été inspectées visuellement. Les tableaux,
+les nouveaux énoncés, leurs formules et les pages concernées par les corrections
+ont également fait l'objet d'une inspection à plus grande échelle. Aucun défaut
+de mise en page bloquant n'a été observé. Les destinations des liens internes
+et les renvois nommés entre les trois PDF ont été contrôlés.
+
+Trois relectures assistées par IA ont examiné la structure des dépendances,
+les modifications mathématiques et leur présentation. Leurs signalements
+ont été résolus ; voir CORRECTIONS_APPLIQUEES.txt. Les comptes rendus complets
+restent joints pour distinguer les constats initiaux de la clôture.
+
+Le dépôt historique n'a pas été modifié. Aucun nouveau rejeu Lean n'a été
+effectué pour cette édition. Les vérifications de compilation et de sources
+ne certifient pas la vérité mathématique. La correspondance renumérotée et
+les deux conséquences composées attendent leur alignement formel. Aucune
+validation humaine indépendante ni publication n'est revendiquée.
+
+Les fichiers JSON voisins contiennent le détail des contrôles, la provenance
+exacte et les empreintes des PDF livrés.

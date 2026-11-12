@@ -1,0 +1,103 @@
+\section{What the proof makes reusable}
+\label{p1:discussion}
+
+The exponent \(4/3\) results from the relation between two scales:
+the leading pair mass is \(N^{-2/3+o(1)}\), and the quadratic
+reference omits a contribution formed from two such interactions.
+The arithmetic work shows that all other terms relevant to the
+reconstruction can be controlled at this precision. The proof also
+separates several choices that can be made in other rare-event
+problems.
+
+\subsection{Choose a reference before estimating the error}
+
+The independent Bernoulli reference retains every exact marginal.
+Its centered expansion has no one-site term, and repeated indices
+are already accounted for. The retained pair correction then
+removes the complete second-order contribution. This makes the
+quantity to be bounded a residual interaction, with a specified
+sign and normalization.
+
+A homogeneous envelope provides a second useful reduction. The
+joint probability of the homogeneous constraints bounds the actual
+joint probability, the exact marginal rank weight and the absolute
+centered activity. Geometric counting can therefore be performed
+once and used for each of these weights. At a fixed arity \(r\),
+the comparison with the nominal weight costs at most \(2^r\).
+That fixed factor can be absorbed into the constant of a fixed-order
+estimate. The estimates that sum over unbounded arities keep their
+own weights and quantifiers.
+
+\subsection{Stop where the remaining dependence is still positive}
+
+The specialization of the abstract lace expansion
+\cite{zeilberger1997} in Section~\ref{p1:stop:section} retains a
+hereditary class of subsets with computable joint probabilities.
+At the first excluded prefix, all later variables remain in a
+positive conditional measure. Its total mass is the joint
+probability of the prefix. The boundary therefore has a direct
+probabilistic weight even though the retained expansion is signed.
+Incompatible pair and triple terms must still be combined before
+absolute values are taken.
+
+To use this identity in another model, one needs a retained class
+that matches the chosen reference and quantitative control of the
+first excluded configurations. Here compression makes a dependent
+pair one affine block. Conditional arithmetic counts control a
+fixed number of blocks, and congruence certificates control the
+large-cardinality part. The reconstruction estimate records exactly
+what these inputs accomplish:
+\[
+ \|\Law(Z_N)-Q_{\mu_N,\alpha_N}\|_1
+       \ll N^\varepsilon A_3+N^{-4/3+\varepsilon}.
+\]
+The finite identity itself does not give the arithmetic bounds
+needed on its right-hand side.
+
+\subsection{Separate fixed orders from a uniform tail}
+
+A fixed-order theorem allows its constant and scale threshold to
+depend on the order. It cannot be summed up to an order growing
+with \(N\) without further information. The proof instead chooses
+a finite cutoff after the desired accuracy, treats the finitely
+many lower orders by their individual estimates, and uses one
+uniform weighted tail above that cutoff.
+
+Proposition~\ref{p1:uniform:full-support} illustrates this
+arrangement. Finite layers give a half power for each effective
+block, while the independent tail gives every power strictly below
+\(2\). Their combination yields the exponent
+\(\min(s/2,2)\), with an arbitrary fixed margin and a common
+constant for all \(s\ge2\). This is a bound on a deterministic
+sum of independent counting weights. It is not an exponential-tail
+statement for the law of \(Z_N\).
+
+The independent fixed-moment proof has a different use: it turns a
+polynomial test into a norm lower bound and gives fixed polynomially
+weighted consequences of the main theorem. The finite-difference
+example in Section~\ref{p1:moment-obstruction} shows why even very strong information at
+each fixed moment order does not by itself provide a polynomial
+rate for the complete law.
+
+\subsection{Test the approximation that was actually retained}
+
+The fourth Charlier polynomial detects
+\(\kappa_{4,N}+3\alpha_N^2\) after subtraction of the quadratic
+reference. The nonnegative compatible part of the quartic identity
+prevents cancellation at the scale of \(\alpha_N^2\).
+For the exact Hermite reference the same test instead detects
+\(\kappa_{4,N}\), because its exponential already contains the
+two-pair term. A lower bound is therefore tied to a specified
+reference, not just to the underlying dependent count.
+
+The full equivalent for the exact quadratic remainder, the full
+constant for the third factorial cumulant, and the sharp error of
+the exact Hermite reference remain open in this work. So do the
+errors after cubic or quartic correction and the optimization of
+total variation over all Poisson means. The explicit channel
+coefficients determine reference laws, but the constants in the
+asymptotic remainders and the thresholds in \(N\) are not supplied
+numerically. Applying the method elsewhere requires counterparts
+of the conditional counts, compatibility cancellations and uniform
+boundary estimate; the stopping identity alone does not impose a
+universal approximation exponent.

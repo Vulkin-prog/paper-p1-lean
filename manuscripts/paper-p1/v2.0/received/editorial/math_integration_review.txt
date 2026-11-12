@@ -1,0 +1,84 @@
+P1 V2.0 — mathematical audit after integration
+Date: 9 November 2026
+Scope: actual integrated TeX files in sources/, compared with their established mathematical inputs. No Lean build was requested or run. This is a source and proof review, not a kernel check of the revised edition.
+
+Overall conclusion
+==================
+The mathematical integration preserves the domains and quantifier order of the established proof. The new homogeneous envelope, four-weight primitive theorem, pure independent tail, uniform full-support consequence, and all-target Palm result are coherent at their actual locations. No substantive mathematical counterexample or missing arithmetic hypothesis was found in the inspected changes. Two notation/convention clarifications and one source typo were sent to root; details below.
+
+Required source correction identified
+====================================
+In main_sections/reconstruction.tex, the displayed connected-activity estimate immediately below 'Arithmetic estimates used in the assembly' contained a carriage-return/newline corruption of the intended TeX \rm connected. Replace the affected condition by I\text{ connected} (or I\ \mathrm{connected}). This is a source defect, not a change to the assertion.
+
+Small notation and convention clarifications
+===========================================
+1. Compatible nullity is introduced as rho_*(I) in event_algebra.tex, whereas the reconstruction and its companion estimate write rho^*(I). They mean the identical maximum over compatible subfamilies. Seven rho^* occurrences in those two files should be changed to rho_* to avoid an undefined-looking second symbol in the main theorem.
+
+2. The Palm proof now cites p1:arith:fixed-channel-mass. That lemma states the mass M of a symmetric ordered family at a fixed sufficiently large cutoff. The new theorem uses unordered compatible edges and uniform cutoffs6bB<=H<=DB. Both transfers are valid, but one sentence should make them explicit: each unordered edge has two ordered orientations, so beta=M/2; monotonicity of the private-prime condition in H sandwiches beta(H) between the two fixed phases at6bB andDB. The lower cutoff exceeds the normalized widths, so both endpoint applications are legitimate. The factor2 has no effect on the powers or asymp statement.
+
+Checks on the principal new modules
+==================================
+A. Finite envelope in main_sections/event_algebra.tex.
+The parent paragraph explicitly extends q,c and relative nullity from the admissible set to arbitrary original families. This is necessary and now present. The proof handles p_x=0 before invoking the Fourier formula, which was stated on the admissible set. A locally consistent affine system has probability2^{-rank}; an inconsistent one has probability0. Therefore w,q,|c|<=q0. The asymptotic comparison2^{-d_x}<=2p is only invoked after the local rigidity statement. Its factor2^{|I|} remains explicit, so the lemma does not turn into an unsupported growing-order comparison.
+
+B. Common primitive theorem in companion_sections/exact_reconstruction.tex.
+The theorem has domain I_N, including locally impossible windows, and all four nonnegative weights. Dense host count is obtained from the anchored construction independently of any law approximation. The proof then uses rho_rel<=min d_x<=L and q0<=(2p)^r2^L for dense mass, and the fixed-order half-count below a small rank threshold. This is acyclic: it never invokes the former15.5 statement as an input. The subfamily uniformity is inherited from positive summation, with thresholds chosen before the subfamily. The alias p13:transfer:primitive correctly points existing consumers at the strong statement. The ordered regular specialization in fixed_moments.tex only costs r! at fixed r.
+
+C. Pure independent tail.
+The new statement uses a<2 and a fixed cutoff, and the certificate proof retains strict inequalities2b-4/A0>a and s delta/2>a. Its final a',epsilon' conversion also gives the stated pure bound. The compressed block is weighted once by vp, while the remaining blocks retain vp_x. The range/width constants are fixed before N. None of this estimates the actual law tail of Z_N. Subsequent uses in the pair deficit retain the ratio between actual source weight and the assigned independent compressed weight.
+
+D. Uniform full-support proposition.
+The definition has distinct regular starts and strict separation>L, with nonzero EFFECTIVE projections in every block. The proof applies the pure tail once at a=2-eta, chooses R before s,G, and uses T1.14 only at the finitely many2<=r<R. The r! conversion is exact. It takes the finite maximum of thresholds and finite sum of constants before varying s,G. Thus the claimed uniformity in both is proved. The saturated exponent is2-epsilon, not a pure endpoint2; the closing paragraph states this correctly. No extra r^{3s} weight is asserted.
+
+E. All-target Palm.
+J_e is now explicitly defined. Each conditioned edge has positive probability and nonzero source dependence. Positive exact excess forces both positive crossing and positive triple probability, hence compatibility, distances>=L, and connectedness. A marked source can be chosen at most3 ways for a triple. The cited positive connected-channel proposition includes irregular targets and exact contacts. It is not a bound on a signed cumulant. The nominal recentering term is beta sum|p_z-p|, bounded on all I_N. Its raw power2-1/b exceeds41/30 for every interior channel b>=3; after division the leftover N^{-1+eta} is smaller than N^{-11/30-1/b+eta}. There is no division by p_z. The statement bounds the sum of exact and nominal costs; both nonnegative costs obey the same estimates, so this strengthening is justified. The common24B convention for2:3 and3:4 is consistent.
+
+Checks on reconstruction, scales and the new narrative
+=====================================================
+- The finite reconstruction theorem remains a conditional implication at the fixed254 orders3,...,256. Its main proof does not silently turn it into a universal theorem: arithmetic assumptions and the separately proved uniform tails are supplied explicitly.
+- Boundary nullity is at most2L because a retained predecessor has at most one dependent pair. Compatible-nullity restriction propagates to subfamilies. The large boundary uses an independent factorial tail timesN^2, not a true-law exponential moment.
+- Exact Bernoulli conversion retains s2=sum p_i^2 and alpha=2C2-s2. All covariance signs remain in B2 before taking norms. The general algebraic pair-weight extension retains A2=sum|c(e)|.
+- A3 in the introduction ranges over all original triples, whereas reconstruction writes connected admissible triples. These are equal: a zero marginal kills c(T), and any nonconnected triple has a singleton canonical direct component whose centered coefficient vanishes.
+- The2:3 introductory witness withL=3m has exactlym matched units2(t+j),3(t+j),0<=j<m. Their even-selection relation space has dimensionm-1. Neither predecessor belongs to these matches. Under the stated absence of further square relations the affine system is compatible and joint probability2^{-2L+m-1}; the example does not assert this probability for everyt without the condition.
+- The fourth-cumulant proof preserves its two different errors:5/3 for removal of disconnected/repeated pair contributions,3/2 for incompatible connected quartics. The latter now correctly cites the fixed-r=4 incompatible clause of the activity proposition. The resulting lower bound is specific to the quadratic reference; the Hermite exclusion remains explicit.
+- The fixed channel-height hierarchy keeps h fixed before N. No growing-h assertion was introduced.
+- The formalization paragraph correctly distinguishes checked ingredients from new combined conclusions and new numbering. It does not claim that this whole edition has already been replayed in Lean.
+
+Safe optional simplification of the remaining duplicated primitive argument
+=========================================================================
+The anchored dense HOST construction in companion_sections/confinement.tex must stay entire through 'No auxiliary support or chosen subspace is enumerated in this last count.' That is the independent geometric input to the new common primitive proposition.
+
+The following probability-weight paragraph, beginning 'Projection injectivity also gives' and ending 'none gives a growing-r estimate', repeats the new proposition's proof. It can be replaced by a short forward pointer:
+
+'The conversion of this host count to homogeneous probabilities and the three original weights is given in Proposition~\ref{p13:transfer:primitive}. That proposition uses the host count proved here, together with the conditional half-count, and treats the weight comparison only at fixed arity.'
+
+Then the proof of Dense primitive triples can be reduced to:
+
+'Apply Proposition~\ref{p13:transfer:primitive} with r=3. The dense condition rho_rel(T)>=eta B implies rho_rel(T)>=eta L, yielding the host count and the homogeneous mass N^{-2+epsilon}. Its global absolute-centered bound is N^{-3/2+epsilon}.'
+
+This is not circular because the common proposition cites only the independently proved dense HOST portion, not this triple corollary or the removed weight calculation. Keep the local impossible-window example after the triple result; it explains why the homogeneous envelope cannot be replaced by the original marginal weight in general. This change is optional editorial simplification, not a correction needed for validity.
+
+Closure of the targeted final pass — 9 November 2026
+===================================================
+The final changed paragraphs were reread in the actual integrated sources.
+The independently proved dense HOST construction is intact. Its duplicate
+probability-weight paragraph is now a forward pointer, and Dense primitive
+triples is correctly deduced by r=3 from the common proposition. There is
+no cycle: the common proposition uses the host construction, not this triple
+specialization. The impossible-window example remains intact.
+
+The Palm proof now explicitly states the factor2 between symmetric ordered
+pairs and unordered compatible edges and the monotone endpoint sandwich
+for6bB<=H<=DB. The compatibility, positivity and threshold conventions are
+consistent. The corrected A3 proof points explicitly to the upper bound of
+the third-cumulant theorem. The10:12:15 explanatory weight is qualified by
+the absence of additional square relations. The malformed connected
+condition is repaired, and the reconstruction uses the established rho_*
+notation.
+
+The first q0 occurrence in the article is its definition in the homogeneous
+envelope lemma, before its scientific uses. Companion uses inherit the
+article notation; the compressed pair expression q0(e)=2^{-r_e} is explicit
+at its first local use. No further notation correction was necessary.
+No remaining issue was found in this deliberately limited final pass.
+No broader re-audit or Lean replay is claimed.

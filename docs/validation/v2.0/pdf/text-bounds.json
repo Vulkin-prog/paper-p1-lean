@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "pdfs": [
+    {
+      "filename": "P1_V2_0_Main_EN.pdf",
+      "pages": 32,
+      "characters_outside_safe_page_bounds": []
+    },
+    {
+      "filename": "P1_V2_0_Companion_EN.pdf",
+      "pages": 84,
+      "characters_outside_safe_page_bounds": []
+    }
+  ]
+}

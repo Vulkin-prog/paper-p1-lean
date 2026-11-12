@@ -43597,6 +43597,170 @@
         "path": "docs/reviews/2026-11-07/sharp-good-edge-palm.json",
         "sha256": "d3fe302b8343b678b6e1ce037da9b08a105540f4ad34d9b1015e33f0c5faef34"
       }
+    },
+    {
+      "id": "P1-MATH-1006",
+      "classification": "improvement",
+      "status": "confirmed",
+      "title": "All-target positive Palm assembly",
+      "location": {
+        "version": "P1 V2.0 received9 November2026, aligned12 November2026",
+        "document": "companion",
+        "label": "p1:arith:palm",
+        "number": "T10.5",
+        "page": "62",
+        "source": "manuscripts/paper-p1/v2.0/sources/companion_sections/third_cumulant.tex",
+        "line": 527,
+        "statement_sha256": "2e54c38be3498f4059abb5b3cab4c6b64502b8c8691301b34c4043c328816148"
+      },
+      "original_assumption": "The old terminal restricted targets to regular windows. V2 asks for both exact- and nominal-centered positive costs on every dyadic target.",
+      "finding": "Positive exact excess forces a nonzero effective crossing and a compatible separated triple, including exact contacts and irregular targets. Finite nominal recentering costs beta times the absolute marginal discrepancy. The existing41/30 homogeneous mass and positive source phase prove the V2 raw and normalized sums.",
+      "evidence": [
+        "PaperP1.AllTargetGoodEdgePalm.companion_T10_5",
+        "PaperP1.AllTargetGoodEdgePalm.exactExcess_nonneg",
+        "PaperP1.AllTargetGoodEdgePalm.exactMass_nonneg",
+        "PaperP1.AllTargetGoodEdgePalm.finite_exact_mass",
+        "PaperP1.AllTargetGoodEdgePalm.finite_nominal_mass",
+        "PaperP1.AllTargetGoodEdgePalm.nominal_normalized_le",
+        "PaperP1.AllTargetGoodEdgePalm.nominal_recenter",
+        "PaperP1.AllTargetGoodEdgePalm.positive_crossing",
+        "PaperP1.AllTargetGoodEdgePalm.positive_points_subset",
+        "PaperP1.AllTargetGoodEdgePalm.principal_channels",
+        "PaperP1.AllTargetGoodEdgePalm.uniform_combined_mass",
+        "PaperP1.AllTargetGoodEdgePalm.uniform_exact_mass",
+        "PaperP1.AllTargetGoodEdgePalm.uniform_marginal_error",
+        "PaperP1.AllTargetGoodEdgePalm.uniform_source_phase"
+      ],
+      "proposed_revision": "Retain all targets, positive beta before division, fixed coprime interior channel and6bB<=H<=DB; principal corollary uses24B. No absolute-discrepancy or optimality assertion.",
+      "impact": "Formalized V2 composition or complete interface; no additional error in a V2 numbered statement identified. The historical ledger records proof-development findings, not a count of paper corrections.",
+      "validation_source_commit": "aa12e797ce895f6b7aef6e4f1f0c6e5e9a58aab4",
+      "validation_record": "docs/validation/v2.0/validation.json",
+      "manuscript_integration": {
+        "target_version": "V2.0",
+        "status": "aligned_current_statement_without_scientific_tex_change"
+      }
+    },
+    {
+      "id": "P1-MATH-1007",
+      "classification": "improvement",
+      "status": "confirmed",
+      "title": "Uniform minimum-support quantifier",
+      "location": {
+        "version": "P1 V2.0 received9 November2026, aligned12 November2026",
+        "document": "companion",
+        "label": "p1:uniform:full-support",
+        "number": "T13.1",
+        "page": "78",
+        "source": "manuscripts/paper-p1/v2.0/sources/companion_sections/uniform_support.tex",
+        "line": 15,
+        "statement_sha256": "a6dda51d420e039da276b01ce5caa6ce7166561520f493db3c14512abcccfe31"
+      },
+      "original_assumption": "The old named interface fixed s before the scale threshold. V2 requires one threshold/constant for every s>=2 and every deterministic target set.",
+      "finding": "One subcritical independent tail near exponent2 handles all high cardinalities. A finite collection of half-power layers handles the rest; fixed factors are absorbed before s,G vary. The exact ordered /r! sum has power min(s/2,2), with epsilon.",
+      "evidence": [
+        "PaperP1.UniformFullSupportCount.companion_T13_1",
+        "PaperP1.UniformFullSupportCount.uniform_ordered_mass",
+        "PaperP1.UniformFullSupportCount.uniform_participating_mass"
+      ],
+      "proposed_revision": "Keep effective nonzero projections, strict>L separation in manuscriptLists, nominal independent weight and epsilon; do not infer a pure N^-2 endpoint or an exponential law tail.",
+      "impact": "Formalized V2 composition or complete interface; no additional error in a V2 numbered statement identified. The historical ledger records proof-development findings, not a count of paper corrections.",
+      "validation_source_commit": "aa12e797ce895f6b7aef6e4f1f0c6e5e9a58aab4",
+      "validation_record": "docs/validation/v2.0/validation.json",
+      "manuscript_integration": {
+        "target_version": "V2.0",
+        "status": "aligned_current_statement_without_scientific_tex_change"
+      }
+    },
+    {
+      "id": "P1-MATH-1008",
+      "classification": "improvement",
+      "status": "confirmed",
+      "title": "Sharp ordered primitive clause bundle",
+      "location": {
+        "version": "P1 V2.0 received9 November2026, aligned12 November2026",
+        "document": "companion",
+        "label": "p1:fixed:primitive",
+        "number": "T4.7",
+        "page": "31",
+        "source": "manuscripts/paper-p1/v2.0/sources/companion_sections/fixed_moments.tex",
+        "line": 379,
+        "statement_sha256": "939a5852cf54324ad7edd132ad7a14cfd13d367ca93de8351a9df1ebdbfa76ff"
+      },
+      "original_assumption": "The historical ordered interface exposed a weaker exponent. V2 prints N^(-r/2+epsilon) for nominal, actual joint and absolute centered masses.",
+      "finding": "Enumeration costs at most r!; the existing fixed-arity homogeneous estimate and pointwise envelope give all three ordered bounds after absorption at fixed r.",
+      "evidence": [
+        "PaperP1.SharpOrderedPrimitiveMass.companion_T4_7",
+        "PaperP1.SharpOrderedPrimitiveMass.finite_ordered_bound",
+        "PaperP1.SharpOrderedPrimitiveMass.uniform_homogeneous_mass"
+      ],
+      "proposed_revision": "State fixed r>=3 before threshold, distinct separated regular lists; retain all three weights. This is a formal bridge to already-proved estimates, not a new geometric discovery.",
+      "impact": "Formalized V2 composition or complete interface; no additional error in a V2 numbered statement identified. The historical ledger records proof-development findings, not a count of paper corrections.",
+      "validation_source_commit": "aa12e797ce895f6b7aef6e4f1f0c6e5e9a58aab4",
+      "validation_record": "docs/validation/v2.0/validation.json",
+      "manuscript_integration": {
+        "target_version": "V2.0",
+        "status": "aligned_current_statement_without_scientific_tex_change"
+      }
+    },
+    {
+      "id": "P1-MATH-1009",
+      "classification": "improvement",
+      "status": "confirmed",
+      "title": "Complete finite-envelope interface",
+      "location": {
+        "version": "P1 V2.0 received9 November2026, aligned12 November2026",
+        "document": "main",
+        "label": "p2:homogeneous:envelope",
+        "number": "2.3",
+        "page": "9",
+        "source": "manuscripts/paper-p1/v2.0/sources/main_sections/event_algebra.tex",
+        "line": 214,
+        "statement_sha256": "9ae844e0439441c44b2533c9d1a31df097cac4f794b0e71bbe4ad2610dc2b424"
+      },
+      "original_assumption": "V2 makes the common homogeneous envelope a numbered lemma. Its constituent proofs existed separately.",
+      "finding": "The new bundle explicitly combines exact rank-nullity factorization and domination of the rank weight, actual joint probability and absolute centered coefficient. A second interface places the nominal comparison threshold before every family, retaining2^|I|.",
+      "evidence": [
+        "PaperP1.V2HomogeneousEnvelope.finite_domination",
+        "PaperP1.V2HomogeneousEnvelope.uniform_nominal_comparison"
+      ],
+      "proposed_revision": "Allow inconsistent prescriptions and zero marginals. Absorb2^r only at fixed arity. The bundle consolidates existing mathematics; no new false-original statement is claimed.",
+      "impact": "Formalized V2 composition or complete interface; no additional error in a V2 numbered statement identified. The historical ledger records proof-development findings, not a count of paper corrections.",
+      "validation_source_commit": "aa12e797ce895f6b7aef6e4f1f0c6e5e9a58aab4",
+      "validation_record": "docs/validation/v2.0/validation.json",
+      "manuscript_integration": {
+        "target_version": "V2.0",
+        "status": "aligned_current_statement_without_scientific_tex_change"
+      }
+    },
+    {
+      "id": "P1-MATH-1010",
+      "classification": "improvement",
+      "status": "confirmed",
+      "title": "Sharp common raw-seed interface",
+      "location": {
+        "version": "P1 V2.0 received9 November2026, aligned12 November2026",
+        "document": "companion",
+        "label": "p1:arith:fixed-homogeneous-seeds",
+        "number": "T1.12",
+        "page": "15",
+        "source": "manuscripts/paper-p1/v2.0/sources/companion_sections/basic_arithmetic.tex",
+        "line": 960,
+        "statement_sha256": "929a1e731957abed678a1f3d2c7b330600f780405c7fa1fdde40a8c3878c7991"
+      },
+      "original_assumption": "The unified editorial source and V2 already print41/30 in both one-target clauses, but the historical all-clause alias still displays4/3 and5/4.",
+      "finding": "Finite regular-population inclusion and nominal/homogeneous identification transfer the already-proved effective41/30 bound. A new complete interface keeps one threshold for all clauses and the raw/two-edge constant before epsilon.",
+      "evidence": [
+        "PaperP1.V2FixedHomogeneousSeeds.finite_nominal_domination",
+        "PaperP1.V2FixedHomogeneousSeeds.companion_T1_12"
+      ],
+      "proposed_revision": "Use the stronger complete interface for current T1.12. Preserve the older true weaker interface and its frozen review; this is interface alignment, not a new manuscript strengthening.",
+      "impact": "Formalized V2 composition or complete interface; no additional error in a V2 numbered statement identified. The historical ledger records proof-development findings, not a count of paper corrections.",
+      "validation_source_commit": "aa12e797ce895f6b7aef6e4f1f0c6e5e9a58aab4",
+      "validation_record": "docs/validation/v2.0/validation.json",
+      "manuscript_integration": {
+        "target_version": "V2.0",
+        "status": "aligned_current_statement_without_scientific_tex_change"
+      }
     }
   ]
 }

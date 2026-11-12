@@ -1,0 +1,40 @@
+Contrôle indépendant de l'assemblage P1 V2.0
+9 novembre 2026
+
+Périmètre : sources effectivement assemblées dans sources/ ; comparaison avec l'aperçu unifié du 7 novembre, commit fb83aec7b03ddef1397e3a7f9f8f8c458c82003a. Contrôle de dépendances, des coupures, de la portée des énoncés modifiés et des renvois directionnels. Aucun rejeu Lean n'a été effectué dans ce contrôle.
+
+Conclusion de fond
+
+Aucun énoncé ou morceau de preuve nécessaire au cœur scalaire n'a été perdu dans les coupures examinées. Les blocs supprimés correspondent à la branche positionnelle/régulière, aux queues/forçage et aux conséquences d'offsets retirées délibérément. Les quatre outils élémentaires de certificats et leurs démonstrations sont présents. La déduction du coefficient de variation totale a rejoint completion.tex. Les bonnes arêtes, leur compression, l'estimation comprimée et la preuve indépendante des moments fixes sont conservées.
+
+Le transfert fini conserve sa nature conditionnelle : seules les tailles 3 à 256 sont supposées, le reste est fourni par la proposition de queue uniforme. Le résumé des trois budgets dans reconstruction.tex correspond aux propositions effectivement présentes dans exact_reconstruction.tex. La nouvelle proposition de supports complets utilise la queue indépendante pure et les couches finies, sans dépendance à l'ancienne branche régulière.
+
+Le renforcement à quatre poids dans exact_reconstruction.tex dépend du compte géométrique des hôtes primitifs denses et du demi-comptage, pas du théorème des moments. La corollaire régulière de fixed_moments.tex est donc une utilisation en avant sans boucle logique. Les preuves de ces deux entrées sont encore présentes. La même remarque vaut pour la masse homogène de triples : son recours à la propagation concerne le lemme de sources fixes et non l'approximation finale de la loi.
+
+Le Palm toutes cibles est placé après la masse positive de triples de canaux fixes et l'utilise dans le bon sens. L'hypothèse sur le cutoff est explicite ; la division ne se fait qu'après la positivité du coefficient de phase. La nouvelle proposition de supports complets fixe le cutoff et le maximum des seuils avant de faire varier s et G. Aucun élargissement caché de la plage de cardinalité n'a été relevé dans ces deux conséquences.
+
+Corrections concrètes signalées à l'assembleur
+
+1. companion.tex, ligne du titre : le saut après « multiplicative runs » contenait un seul antislash avant [9pt], donc une ouverture mathématique \[. Remplacer par le saut de ligne LaTeX à deux antislashs. Signalé immédiatement ; correction prise en charge par l'assembleur.
+
+2. main_sections/reconstruction.tex, sous-indice de la première formule du paragraphe « Arithmetic estimates used in the assembly » : « I { » suivi de « m connected » provenait d'un contrôle \rm mal transporté. Remplacer par I\text{ connected}. Vérifié corrigé lors de la seconde lecture.
+
+3. main_sections/scales.tex, paragraphe du témoin 10:12:15 : rétablir la réserve « A compatible triple with no additional relations therefore has weight ... ». La nullité calculée juste avant est la nullité canonique. Des relations arithmétiques supplémentaires peuvent augmenter la probabilité ; la preuve citée sélectionne les normalisations privées qui les excluent. L'ancienne introduction portait cette réserve, supprimée involontairement lors de la condensation.
+
+4. main_sections/scales.tex : la notation lambda sans indice subsiste dans le théorème du profil de paires, alors que sa définition lambda=Np est maintenant dans le compagnon. Ajouter localement « write lambda=lambda_N » ou employer lambda_N dans ces trois formules.
+
+5. main_sections/introduction.tex : la définition de la factorielle décroissante (z)_r=z(z-1)...(z-r+1), (z)_0=1 a disparu, alors que cette notation est utilisée dès scales.tex et dans la preuve quartique. La rétablir parmi les conventions de notation.
+
+6. companion_sections/pair_profiles.tex, début de « Pair profiles and the regular-set estimates » : supprimer « and for the positional comparison ». Aucune comparaison positionnelle n'est plus énoncée dans la nouvelle édition.
+
+7. companion_sections/fixed_moments.tex, paragraphe ouvrant « Fixed-source geometry and the independent moment proof » : remplacer « independent of either reconstruction of the law » par « independent of the reconstruction of the law ». Le texte ne contient désormais qu'une reconstruction.
+
+8. companion_sections/basic_arithmetic.tex, paragraphe « Alignment convention for asymmetric applications » : le renvoi à l'alignement « in the main article » doit viser la section du compagnon p1:arith:section, où la définition a été déplacée. La phrase sur « version 1.6 » et la famille « checked » doit être reformulée en nécessité mathématique du rayon proportionnel à D. Conserver entièrement le contre-exemple ; enlever seulement l'historique rédactionnel.
+
+9. main_sections/scales.tex, preuve de l'activité absolue d'ordre trois : « Use the upper bound just proved » décrit mal la nouvelle disposition, car la preuve exhaustive est maintenant dans le compagnon. Écrire « Use the upper bound for K_3^+ proved in Section~\ref{p13:third:section} » ou citer le théorème et sa relation explicite avec K_3^+.
+
+10. main_sections/event_algebra.tex : G_N est utilisé avant toute définition dans le main, la définition complète se trouvant désormais dans le compagnon. Lors de sa première occurrence, écrire G_N={x in I_N: d_x=L} ou donner un renvoi explicite à p1:arith:core.
+
+11. Le symbole de nullité compatible utilisait à la fois rho_* dans l'algèbre et rho^* dans la reconstruction. La seconde lecture montre que les occurrences ont été harmonisées vers rho_* ; aucune différence de définition ne demeure.
+
+Après les corrections ci-dessus, aucun autre blocage structurel ou changement involontaire de portée d'énoncé n'a été identifié. Les deux implications à seuil fixé, les deux erreurs quartiques 5/3 et 3/2, la distinction entre marginales exactes et nominales, et la limitation h fixé dans la hiérarchie sont préservées. Les expressions de type « regular set » qui restent ailleurs sont nécessaires à certains comptes arithmétiques et aux moments ; elles ne témoignent pas d'un retour de la reconstruction supprimée.

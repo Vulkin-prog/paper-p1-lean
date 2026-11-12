@@ -1,0 +1,54 @@
+{
+  "edition": "P1 V2.0",
+  "date": "2026-11-09",
+  "repository": "https://github.com/Vulkin-prog/paper-p1-lean",
+  "source_commit": "fb83aec7b03ddef1397e3a7f9f8f8c458c82003a",
+  "base_directory": "manuscripts/paper-p1/editorial-unified-preview-2026-11-07/sources",
+  "existing_development": {
+    "lean_toolchain": "leanprover/lean4:v4.36.0-rc2",
+    "mathlib_revision": "9d581dfff2e41de989072ea63abf3daf69311520"
+  },
+  "repository_modified": false,
+  "lean_replayed_for_this_edition": false,
+  "published": false,
+  "new_composed_conclusions": [
+    {
+      "label": "p1:arith:palm",
+      "number": "T10.5",
+      "description": "Positive Palm bound for all deterministic target windows, including irregular and zero-marginal windows."
+    },
+    {
+      "label": "p1:uniform:full-support",
+      "number": "T13.1",
+      "description": "Independent full-support count uniform in minimum support size s and deterministic G."
+    }
+  ],
+  "formal_alignment_required": [
+    "Update the manuscript correspondence after renumbering.",
+    "Bind the regrouped homogeneous estimates and pure independent tail to the existing strong interfaces.",
+    "Add interfaces for the two composed conclusions with the exact target sets and threshold quantifiers."
+  ],
+  "outputs": [
+    {
+      "file": "P1_V2_0_Companion_EN.pdf",
+      "pages": 84,
+      "sha256": "e0bf87a5c95c49d9e003ce3dbc309e82df5af769e2ab8c284f3c6f0dc37b0502"
+    },
+    {
+      "file": "P1_V2_0_Main_EN.pdf",
+      "pages": 32,
+      "sha256": "a46f02e59b46148e2a52a31804a413070f8b3edf8616dab87a51e8dc041b0316"
+    },
+    {
+      "file": "P1_V2_0_Revision_FR.pdf",
+      "pages": 5,
+      "sha256": "87f943e8109e990c0e07369137fcc347f2923cda9cb7f5c6b16bd75f421fa36b"
+    }
+  ],
+  "inventory": {
+    "baseline_results": 167,
+    "new_results": 118,
+    "baseline_outside_scope": 50
+  },
+  "historical_material": "Omitted branches remain in the immutable source commit; omission is not an assertion of invalidity."
+}

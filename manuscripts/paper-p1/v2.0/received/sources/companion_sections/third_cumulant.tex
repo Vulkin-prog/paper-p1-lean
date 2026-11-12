@@ -1,0 +1,627 @@
+\section{The third factorial cumulant and rational triples}
+\label{p13:third:section}
+
+The quadratic reference removes the first two factorial cumulants.  To
+identify the remaining third-order contribution, two tasks remain distinct:
+we must bound every compatible triple, and we must show that the positive
+rational examples survive in the signed cumulant.  The incompatible
+activity estimate in Section~\ref{p13:activity:section} supplies the second
+step.  The first step combines rational overlap geometry with the
+nonaligned pair bound proved above.
+
+Recall the exact marginals $p_x=\E J_x$ and the relative nullity
+\[
+ \rho_{\mathrm{rel}}(T)=\sum_{x\in T}\dim S_x
+                    -\dim\Bigl(\sum_{x\in T}S_x\Bigr).
+\]
+Write $d_{xy}=\dim(S_x\cap S_y)$ and
+$c(T)=\E\prod_{x\in T}(J_x-p_x)$.  A triple is connected when its
+spaces have no nontrivial direct-sum partition.  For compatible triples,
+$q(T)=2^{\rho_{\mathrm{rel}}(T)}\prod_{x\in T}p_x$ and
+$0\leq c(T)\leq q(T)$, by the identities established in
+Section~\ref{p13:activity:section}.
+
+The third factorial cumulant and its optimal exponent are stated in
+Theorem~\ref{p13:third:main} of the article. We give the geometric
+and probabilistic proof here.
+
+\subsection{The largest canonical overlap of three rational windows}
+
+Consider integer slopes $u<v<w$ with $(u,v,w)=1$ and $w<2u$.
+In the common parameter, the three windows are intervals of lengths
+$L/u,L/v,L/w$ on the lattices $u^{-1}\Z$, $v^{-1}\Z$, and
+$w^{-1}\Z$.  Translation of a window moves its interval and leaves
+the lattice origin fixed.  The densities of pairwise coincidence
+lattices are $(u,v),(u,w),(v,w)$; the density of the triple coincidence
+lattice is one.
+
+Let $I_u,I_v,I_w$ denote the three parameter intervals.  Up to a bounded
+endpoint error, the number of dimensions lost when equal values are
+merged is at most
+\begin{align*}
+ &(u,v)|I_u\cap I_v|+(u,w)|I_u\cap I_w|
+       +(v,w)|I_v\cap I_w|-|I_u\cap I_v\cap I_w|\\
+ &\quad=(u,v)|I_u\cap I_v|+((u,w)-1)|I_u\cap I_w|\\
+ &\qquad\quad+((v,w)-1)|I_v\cap I_w|
+                         +|I_w\cap(I_u\cup I_v)|.
+\end{align*}
+All coefficients in the last expression are nonnegative.  Bounding its
+four lengths by $L/v,L/w,L/w,L/w$ gives
+\begin{equation}
+ D(u,v,w)L+O(1),\qquad
+ D(u,v,w)=\frac{(u,v)}v+\frac{(u,w)+(v,w)-1}{w}.
+ \label{p13:third:density}
+\end{equation}
+Nested intervals attain the coefficient $D$.
+The endpoint error is absolute: each of the four lattice counts has a
+bounded rounding error, even when the integer slopes vary.
+
+\begin{lemma}[A sharp rational overlap inequality]
+\label{p13:third:rational-rank}
+For all integers $u<v<w<2u$ with $(u,v,w)=1$,
+\begin{equation}
+ D(u,v,w)\leq\frac{19}{30}.
+ \label{p13:third:1930}
+\end{equation}
+Equality holds for $(u,v,w)=(10,12,15)$.
+This is an inequality for the canonical coincidence geometry; arithmetic
+relations among the distinct normalized values require a separate bound.
+\end{lemma}
+
+\begin{proof}
+If the reduced height of every pair is at least five, each pairwise
+intersection density is at most $1/5$.  Dropping the subtracted triple
+intersection in \eqref{p13:third:density} gives $D\leq3/5$.
+Otherwise a pair has reduced ratio $2:3$ or $3:4$.  Reduced heights one
+and two are impossible for distinct slopes whose extreme ratio is
+strictly less than two.
+
+For a pair $2:3$, write the three slopes before reordering as
+$(2d,3d,c)$, with $(c,d)=1$ and $3/2<c/d<4$.
+The pair itself contributes at most $L/3+O(1)$ lost dimensions.
+In the third window, positions that can coincide with either old family
+have density at most
+\[
+ \frac{(c,2)+(c,3)-1}{c}.
+\]
+This is at most $1/4$ except for the possible numerators $c=9,12$,
+after removing physical repetitions and endpoint ratios.
+For completeness, if $5\leq c\leq15$, direct evaluation of
+$(c,2)+(c,3)-1$ leaves just $9,12$ above $c/4$; the numerator is at most
+four for $c\geq16$.  The smaller numerators $2,3$ give physical
+repetitions, and $4,6$ have no coprime denominator in the strict
+interior range apart from endpoint cases.  The exceptional fractions
+and their values of \eqref{p13:third:density} are
+\[
+ \begin{array}{c|c|c}
+ c/d & (u,v,w)&D(u,v,w)\\ \hline
+ 9/4&(8,9,12)&11/18\\
+ 9/5&(9,10,15)&17/30\\
+ 12/5&(10,12,15)&19/30\\
+ 12/7&(12,14,21)&4/7.
+ \end{array}
+\]
+Every other case has $D\leq1/3+1/4=7/12$.
+
+For a pair $3:4$, write $(3d,4d,c)$ with $(c,d)=1$ and
+$2<c/d<6$.  The new density is at most
+$((c,3)+(c,4)-1)/c$.  It is at most $1/3$ except for $c=8,12$,
+after the same exclusions: evaluating the integers $c\leq17$ suffices,
+and the numerator is at most six for $c\geq18$.
+The exceptional reduced fractions are $8/3$ and $12/5$, giving
+$(8,9,12)$ and $(12,15,20)$, of densities $11/18$ and $3/5$.
+All other cases have $D\leq1/4+1/3=7/12$.
+The largest value in these cases is $19/30$.
+\end{proof}
+
+\subsection{All triples above a strong aligned pair}
+
+A fixed rational pair can be compressed into its true normalized values
+even when some of these values lack private prime coordinates.
+Injectivity is not needed for the inclusion of event spaces.  This is
+what allows the next estimate to cover all pairs in the chosen channels,
+including the arithmetically exceptional ones.
+
+\begin{proposition}[Triples meeting finitely many aligned channels]
+\label{p13:third:aligned-family}
+Fix a finite set $\mathcal F$ of reduced interior channels $a:b$, with
+$b\geq3$ and $b/2<a<b$, before $N$.  Then
+\begin{equation}
+ \sum_{\substack{|T|=3,\ T\ {\rm connected},\ q(T)>0\\
+            \text{some pair of }T\text{ is aligned in }\mathcal F}}q(T)
+       \ll_{\mathcal F,C,\varepsilon}N^{-41/30+\varepsilon}.
+ \label{p13:third:aligned-family-bound}
+\end{equation}
+The sum allows irregular admissible windows, bad normalization of the
+source pair, and contacts at distance exactly $L$.
+\end{proposition}
+
+The complete normalization argument is in
+Section~\ref{p14:comp:third:aligned-family}.  After exact merging, the
+residual kernel has dimension $o(L)$ uniformly even when the last
+rational coefficients have polynomial height in $B$.  Distinct
+physical slopes then lose at most $19L/30+O(1)$ dimensions through
+canonical coincidences, so each triple has probability at most
+$N^{-71/30+o(1)}$.  Their $NB^{O(1)}$ hosts give
+$N^{-41/30+\varepsilon}$.  The proof separately controls nonaligned
+targets, repeated physical slopes, and dyadic endpoint populations;
+none of these cases requires good normalization of the source pair.
+
+\begin{corollary}[Strong aligned pairs]
+\label{p13:third:aligned}
+For every fixed $\theta>0$ and every $\varepsilon>0$,
+\begin{equation}
+ \sum_{\substack{|T|=3,\ T\ {\rm connected},\ q(T)>0\\
+        \exists\{x,y\}\subset T\ {\rm aligned}:\ d_{xy}\geq\theta B}}
+             q(T)\ll_{C,\theta,\varepsilon}N^{-41/30+\varepsilon}.
+ \label{p13:third:strong-aligned-bound}
+\end{equation}
+\end{corollary}
+
+\begin{proof}
+The uniform bound $d_{xy}\leq L/b+o(L)$ forces $b\leq2/\theta$
+for sufficiently large $N$.  Thus only a finite collection of heights
+is relevant.  Heights at least three satisfy
+Proposition~\ref{p13:third:aligned-family}.
+Height two forces the source pair to the dyadic endpoints: there are
+$B^{O(1)}$ pairs of weight at most $N^{-3/2+o(1)}$.
+Proposition~\ref{p1:fixed:propagation} adds a third window with a loss
+$N^{\varepsilon'}$, which is harmless.
+At height one, compatible distinct windows have disjoint interiors
+and at most one exact unit, so their relative intersection is $o(L)$.
+They cannot reach the threshold $\theta B$.
+\end{proof}
+
+\subsection{A positive family that survives in the total cumulant}
+
+The equality case $(10,12,15)$ of the overlap inequality also supplies
+a population of actual compatible run starts.  Its role is stronger
+than merely maximizing a geometric formula: its centered activity is
+positive, and there are linearly many admissible translations.
+
+\begin{proposition}[The rational lower bound]
+\label{p13:third:lower}
+For all sufficiently large $N$ in the critical band,
+\begin{equation}
+ K_3^+:=\sum_{\substack{|T|=3,\ T\ {\rm connected}\\q(T)>0}}c(T)
+                  \gg_C N^{-41/30}.
+ \label{p13:third:K3-lower}
+\end{equation}
+In particular $\kappa_{3,N}\geq c_C N^{-41/30}$ for a suitable
+$c_C>0$.
+\end{proposition}
+
+\begin{proof}
+Take integers $t$ with $N\leq10t<12t<15t<2N$.
+There are $N/30+O(1)$ choices.  Multiplication of the three windows by
+$6,5,4$ respectively gives the true normalized sets
+\[
+ U_1=60t+6\{-1,0,\ldots,L-1\},\quad
+ U_2=60t+5\{-1,0,\ldots,L-1\},\quad
+ U_3=60t+4\{-1,0,\ldots,L-1\}.
+\]
+Choose $H=10B$, larger than the diameter of their union.
+By \eqref{p1:arith:onedfect}, only $N^{1/2+o(1)}$ integers in the
+relevant range have $K_H(n)=1$.  For each of the $O(B)$ possible
+normalized offsets there is at most one parameter $t$ per such integer.
+Hence, outside $N^{1/2+o(1)}$ choices of $t$, every distinct value in
+$U_1\cup U_2\cup U_3$ has a private prime above $H$.
+Its square-class map is then injective.
+
+The three sets meet at $60t$.  The sum of their even-selection spaces
+is consequently the even-selection space of their union.
+The pairwise intersection sizes are
+\[
+ 1+\left\lfloor\frac{L-1}{6}\right\rfloor,\qquad
+ 1+\left\lfloor\frac{L-1}{3}\right\rfloor,\qquad
+ 1+\left\lfloor\frac{L-1}{5}\right\rfloor,
+\]
+and the triple intersection has size
+$1+\lfloor(L-1)/15\rfloor$.
+Inclusion--exclusion therefore gives the exact relative nullity
+\begin{equation}
+ \rho_L=\left\lfloor\frac{L-1}{6}\right\rfloor
+        +\left\lfloor\frac{L-1}{3}\right\rfloor
+        +\left\lfloor\frac{L-1}{5}\right\rfloor
+        -\left\lfloor\frac{L-1}{15}\right\rfloor
+       =\frac{19}{30}L+O(1).
+ \label{p13:third:witness-nullity}
+\end{equation}
+
+The normalized predecessors have offsets $-6,-5,-4$, each belonging
+to just one set.  Assign sign $-1$ to a private prime of each of these
+three values and sign $+1$ to every other prime occurring in the
+windows and multipliers.  The chosen primes are distinct and occur in
+no other normalized value.  Each original predecessor then has sign
+$-1$ and every internal value has sign $+1$.  This verifies affine
+compatibility explicitly.  For all these parameters,
+\begin{equation}
+ q(\{10t,12t,15t\})=p^3 2^{\rho_L}.
+ \label{p13:third:witness-probability}
+\end{equation}
+
+The three pair nullities are the first three floor terms in
+\eqref{p13:third:witness-nullity}.  Since all marginals are $p$ on
+this private-prime population, the centered identity is exact:
+\begin{equation}
+ \begin{split}
+ c(\{10t,12t,15t\})=p^3\biggl\{2^{\rho_L}
+  &-2^{\lfloor(L-1)/6\rfloor}-2^{\lfloor(L-1)/3\rfloor}\\
+  &-2^{\lfloor(L-1)/5\rfloor}+2\biggr\}.
+ \end{split}
+ \label{p13:third:witness-centered}
+\end{equation}
+The largest subtracted exponent is $L/3+O(1)$, whereas the first
+exponent is $19L/30+O(1)$.  Thus $c(T)\geq q(T)/2>0$ for large $N$.
+This also ensures connectedness: a direct singleton split would make
+the centered coefficient vanish.
+All compatible connected triple coefficients are nonnegative, and
+the triples obtained from distinct $t$ are different.  Consequently
+\[
+ K_3^+\gg Np^3 2^{19L/30}
+                 \gg_C N^{-41/30}.
+\]
+Finally \eqref{p13:activity:kappa-comparison} gives
+$\kappa_{3,N}=6K_3^++O(N^{-3/2+\varepsilon'})$.
+Choose $\varepsilon'<3/2-41/30=2/15$ to make the error negligible.
+\end{proof}
+
+When $N=2^L$ and $L=30m$, the contribution of the private-prime
+population in this proof to $K_3^+$ is
+$(1/120+o(1))N^{-41/30}$, since $\rho_L=19m-2$.
+This coefficient belongs to the displayed subfamily; it is not a
+coefficient for the full cumulant.
+
+\subsection{Partitioning every compatible triple}
+
+\begin{proof}[Proof of Theorem~\ref{p13:third:main}]
+Proposition~\ref{p13:third:lower} supplies the lower bound.
+For the upper bound, fix $\eta=1/30$ and then a positive
+$\theta<\eta/200$ for which
+Proposition~\ref{p13:conf:near-primitive} applies.
+All these parameters are fixed before $N$.
+We bound $K_3^+$ by partitioning its compatible connected triples.
+
+If $\rho_{\mathrm{rel}}(T)<\eta B$, the host bound of
+Corollary~\ref{p13:half:connected} and $p_x\leq2p$ give
+\[
+ \sum q(T)\ll
+        N^{3/2+\varepsilon'}N^{-3+\eta+o(1)}
+       =N^{-22/15+\varepsilon'+o(1)}.
+\]
+If $\rho_{\mathrm{rel}}(T)\geq\eta B$ and every proper pair has
+$d_{xy}<\theta B$, Proposition~\ref{p13:conf:near-primitive}
+gives total homogeneous mass $O(N^{-2+\theta+\varepsilon'})$,
+which bounds the compatible mass as well.
+
+It remains to consider a pair with $d_{xy}\geq\theta B$.
+If any such pair is aligned, Corollary~\ref{p13:third:aligned}
+gives $O(N^{-41/30+\varepsilon'})$.
+Otherwise choose a strong nonaligned pair.  Theorem~\ref{p13:rig:nonaligned}
+gives
+\[
+ d_{xy}\leq\left(\frac23\log2+o(1)\right)L.
+\]
+For the third space,
+\[
+ \rho_{\mathrm{rel}}(T)
+   =d_{xy}+\dim\bigl(S_z\cap(S_x+S_y)\bigr)
+   \leq d_{xy}+L
+   \leq\left(1+\frac23\log2+o(1)\right)L.
+\]
+Since $(2/3)\log2<1/2$, this is eventually at most $3L/2$.
+Proposition~\ref{p13:conf:strong-profile}, with $\sigma=3/2$,
+therefore bounds this sector by $O(N^{-3/2+\varepsilon'})$.
+This is where the unconditional nonaligned-pair rigidity enters the
+third-cumulant theorem.
+
+Each exponent other than $41/30$ is strictly larger than $41/30$.
+Shrink the internal error margins to obtain
+$K_3^+\ll N^{-41/30+\varepsilon}$.
+The identity \eqref{p13:activity:kappa-comparison} transfers the estimate to
+$\kappa_{3,N}$, completing the upper bound on the full critical band.
+\end{proof}
+
+The gap $41/30-4/3=1/30$ explains why third-order activity is below
+the optimal quadratic remainder scale.  This conclusion does not
+identify the optimal error for a reference that also retains cubic or
+quartic terms; such a reference requires its own reconstruction and
+lower-bound argument.
+
+The rank threshold $\eta=1/30$ and the weak-pair threshold
+$\theta<\eta/200$ are distinct from the accuracy parameters.
+Using the convention in Section~\ref{p1:intro:dependencies}, prescribe
+$\varepsilon_{\mathrm{out}}>0$ and choose
+$0<\tau<\min(\varepsilon_{\mathrm{out}}/4,1/960)$.
+Allocate smaller internal losses so that each completed sector loses
+at most $\tau$. The nonaligned target above a rational pair retains
+$1/120-\tau>0$, and the incompatible-triple error retains
+$2/15-\tau>0$. These budgets include offset choices and residual-rank
+losses before $N$ is taken large. The latter error is therefore
+negligible in the positive rational lower bound as well.
+
+\subsection{All triples above finitely many rational pair channels}
+\label{p14:comp:third}
+
+The canonical overlap inequality and the positive $10:12:15$ witness
+are proved in Section~\ref{p13:third:section}.  The remaining technical
+input is uniformity of the upper bound across every triple above a
+fixed finite set of aligned channels, including arithmetically
+exceptional source pairs.  We prove that input here.
+
+\subsubsection{Proof of Proposition~\ref{p13:third:aligned-family}}
+\label{p14:comp:third:aligned-family}
+
+\begin{proof}
+Fix one channel $a:b$ and orient the source pair $e=\{x,y\}$.
+Choosing $B^{O_{a,b}(1)}$ offsets, write
+$x=at-i_0$, $y=bt-j_0$ and $X=abt$.
+Merge repeated values in $bV_x\cup aV_y$ to obtain
+$U_X\subset X+[-D B,D B]$, where $D$ depends only on the fixed channel.
+Use radius $DB$ for alignment with this compressed source, and choose
+the large-prime cutoff above $(2D+1)B$.  The old centre lies in a fixed
+expanded interval starting at $N$, while the new centre remains in $I_N$,
+as required by the expanded version of Lemma~\ref{p1:arith:asymmetric}.
+Multiplying an even selection by a constant does not change its square
+class, so
+\begin{equation}
+ S_x+S_y\subseteq
+       \operatorname{span}\{v(n):n\in U_X\}.
+ \label{p13:third:true-compression}
+\end{equation}
+This inclusion holds regardless of injectivity on $U_X$.
+The uniform aligned rank bound of
+Lemma~\ref{p1:arith:alignedrank} gives
+\begin{equation}
+ q(e)\leq N^{-\kappa_b+o(1)},\qquad
+                   \kappa_b=2-\frac1b\geq\frac53.
+ \label{p13:third:source-weight}
+\end{equation}
+For fixed height the residual defect is uniform, so the same bound
+includes admissible local rank defects.
+
+\paragraph{Targets not aligned with the compressed source.}
+For $z\notin e$, put
+$\delta=\dim(S_z\cap(S_x+S_y))$.
+Connectedness of $T=e\cup\{z\}$ implies $\delta>0$.
+The inclusion \eqref{p13:third:true-compression} bounds $\delta$ by
+the asymmetric rank loss $\delta^*(X,z)$ of
+Lemma~\ref{p1:arith:asymmetric}.  That lemma permits an arbitrary true
+set $U_X$ of this fixed logarithmic width; it does not require injectivity.
+It gives
+\[
+ \sum_{X,z\ {\rm nonaligned}}(2^{\delta^*(X,z)}-1)
+                         \ll N^{31/24+\varepsilon'}.
+\]
+Since $q(T)=q(e)p_z2^\delta$, $p_z\leq2p$, and
+$2^\delta\leq2(2^{\delta^*}-1)$, these targets have total mass at most
+\begin{equation}
+ N^{-\kappa_b-1+31/24+\varepsilon'+o(1)}
+                     \ll N^{-11/8+\varepsilon}.
+ \label{p13:third:unaligned-target-cost}
+\end{equation}
+The number of source-offset patterns is polynomial in $B$ and is
+absorbed into the exponent margin.
+
+\paragraph{The residual kernel for an aligned target.}
+This sector includes every target aligned at the same enlarged radius
+$DB$.  Enlarging that fixed radius changes only the constants in the
+polynomial offset and height bounds below.
+Write an aligned target as
+$z=(ct+h)/d$, with $(c,d)=1$ and
+$c,d,|h|\leq B^{O_{a,b}(1)}$, as in the proof of
+Lemma~\ref{p1:arith:fixed-channel-rank}.
+Before this final normalization, $U_X$ and $V_z$ each have fixed
+logarithmic width.  Choose $H>C_D B$ larger than both diameters and
+remove the prime rows at most $H$ and those dividing the normalization
+multipliers.  Each remaining prime row meets at most one distinct old
+value and at most one new value.  This uses the fact that repeated
+old values were merged before the target was added.
+
+After the common normalization, merge equal values once more.
+There are at most $3B$ distinct integers, all at height at least a
+constant multiple of $N$ and in an interval of diameter
+$B^{O_{a,b}(1)}$.  The remaining prime rows have weight at most two,
+and leave one variable per unpinned component.  We give the uniform
+residual estimate, since the coefficients $c,d$ need not be fixed.
+
+For a fixed integer $K$, restrict to components of at most $K$ vertices.
+The removed prime rows and a total-parity row form a code on these
+components of redundancy
+\[
+ s\leq\pi(H)+O_{a,b}(\log B)+1=O_{a,b}(B/\log B).
+\]
+A nonzero word in its kernel gives an even square product of distinct
+normalized integers.  Lemma~\ref{p1:arith:runge}, applied with the
+polynomial-in-$B$ diameter just specified, forces it to contain
+$\gg_{a,b}\log N/\log B$ physical vertices and hence
+$\gg_{a,b,K}\log N/\log B$ components.
+If $c_K$ is the number of these components, the Hamming inequality with
+$t\asymp_{a,b,K}\log N/\log B$ gives
+\[
+ \sum_{j=0}^{t}\binom{c_K}{j}\leq2^s,
+ \qquad c_K=O_{a,b,K}(B/\log B).
+\]
+Here $t$ is chosen below half the component minimum distance.
+Components larger than $K$ number at most $3B/K$.
+Choosing $K$ arbitrarily large before $N$ therefore bounds the entire
+value kernel on the distinct normalized set by $o_{a,b}(L)$,
+uniformly over $c,d,h$.
+
+The relevant map factors as
+\[
+ \bigoplus_{v\in T}E_v
+   \longrightarrow\{\text{merged normalized coordinates}\}
+   \longrightarrow\{\text{square classes}\}.
+\]
+Its nullity is at most the nullity of merging plus the residual $o(L)$
+just proved.  Internal defects of the old windows are included in this
+composition and do not require any assumption of good normalization.
+
+\paragraph{Counting the exact coincidences.}
+In the common parameter the physical coefficients are $ad,bd,c$.
+Suppose first that they are distinct.  Divide by their common gcd
+and order them as $u<v<w$.  Unless the parameter belongs to a
+$B^{O_{a,b}(1)}$ endpoint population, dyadic geometry gives $w<2u$.
+Indeed a rational ratio of polynomial height cannot cross two by
+$B^{O(1)}/N$, and equality forces the extreme windows to the two
+dyadic endpoints.
+The lattice calculation \eqref{p13:third:density} and
+Lemma~\ref{p13:third:rational-rank} show that merging loses at most
+$19L/30+O(1)$ dimensions.  The residual estimate therefore gives
+\[
+ \dim(S_x+S_y+S_z)\geq\frac{71}{30}L-o(L),\qquad
+ q(T)\leq N^{-71/30+o(1)}.
+\]
+There are $NB^{O_{a,b}(1)}$ aligned triples of this form, including the
+choices of offsets and rational coefficients.  Their total mass is
+$O(N^{-41/30+\varepsilon})$.
+
+If two physical coefficients are equal, compatibility makes the
+interiors of the corresponding parameter intervals disjoint, since
+distinct compatible starts have separation at least $L$.
+Their combined coincidences with the third lattice are bounded by the
+length of that third interval: at most $L/a+O(1)$ or $L/b+O(1)$ units.
+As $a\geq2$, the total merging nullity is at most $L/2+O(1)$.
+Including the residual, this gives mass $O(N^{-3/2+\varepsilon})$.
+Endpoint populations have only $B^{O_{a,b}(1)}$ source and target
+choices; the bound $q(T)\leq q(e)$ from
+\eqref{p13:third:source-weight} gives $O(N^{-5/3+\varepsilon})$.
+These estimates include exact contacts.  Strict contacts are incompatible
+and do not enter the sum.
+
+The least of the exponents obtained is $41/30$.  Sum over the fixed
+finite family $\mathcal F$ to conclude.
+\end{proof}
+
+
+\paragraph{Homogeneous variant for separated triples.}
+The same $O_{C,\mathcal F,\varepsilon}(N^{-41/30+\varepsilon})$ bound
+holds for the sum of
+$q_0(T)=2^{-\dim\sum_{x\in T}S_x}$ over connected triples
+$T\subset G_N$ with distinct, pairwise separated starts and containing
+a source pair in $\mathcal A_{\rm raw}$ in one of the fixed channels.
+Here $q_0$ is the homogeneous probability, even when the original affine
+prescriptions are incompatible.
+
+To see this, repeat the proof above with $q_0$ in place of $q$.
+The source estimate \eqref{p13:third:source-weight} is a rank estimate
+and holds for $q_0(e)$; the target marginal is exactly $p$ on $G_N$.
+The nonaligned identity is
+$q_0(T)=q_0(e)p2^\delta$, giving the same $N^{-11/8+\varepsilon}$ bound.
+In the aligned sector all residual-kernel and merging estimates are
+phase-free. When two physical coefficients coincide, the imposed
+separation makes the corresponding interval interiors disjoint, so
+the $N^{-3/2+\varepsilon}$ estimate still holds without compatibility.
+The distinct-coefficient estimate is $N^{-41/30+\varepsilon}$, and the
+endpoint estimate follows from $q_0(T)\le q_0(e)$ as before.
+Exact contacts at distance $L$ remain allowed. This proves the stated
+homogeneous variant independently of the moment and reconstruction theorems.
+
+\subsection{Positive Palm costs on all target windows}
+
+A good edge changes the law of a third start by introducing an additional
+intersection of square-class spaces. Its positive effect can be bounded
+by the same positive triple mass, even when the target is locally irregular.
+
+\begin{proposition}[Positive Palm cost of a fixed channel]
+\label{p1:arith:palm}
+\label{p1:arith:palm-all-targets}
+Fix a reduced interior channel $a:b$, with $0<a<b<2a$, and an integer
+$D\ge6b$. Choose an integer private-prime threshold with
+$6bB\le H\le DB$.
+Let $\mathcal E_{a,b}$ be its compatible dependent good edges, write $J_e=\prod_{x\in e}J_x$ and
+$q_e=\P(J_e=1)$, and put $\beta_{a,b}=\sum_{e\in\mathcal E_{a,b}}q_e$.
+For a deterministic set of targets $G\subseteq I_N$, define
+\begin{align*}
+ M_{\mathrm{ex}}(G)
+   &=\sum_{e\in\mathcal E_{a,b}}\sum_{z\in G\setminus e}
+       \bigl(q(e\cup\{z\})-q_ep_z\bigr)_+,\\
+ M_{\mathrm{nom}}(G)
+   &=\sum_{e\in\mathcal E_{a,b}}q_e\sum_{z\in G\setminus e}
+       \bigl(\P(J_z=1\mid J_e=1)-p\bigr)_+.
+\end{align*}
+For every fixed critical band and $\varepsilon>0$, uniformly in $G$
+and in the stated range of $H$, for all sufficiently large $N$,
+\begin{equation}
+ \begin{split}
+ &\beta_{a,b}>0,\qquad
+ M_{\mathrm{ex}}(G)+M_{\mathrm{nom}}(G)
+     \ll_{a,b,C,D,\varepsilon}N^{-41/30+\varepsilon},\\
+ &\frac{M_{\mathrm{ex}}(G)+M_{\mathrm{nom}}(G)}{\beta_{a,b}}
+     \ll_{a,b,C,D,\varepsilon}N^{-11/30-1/b+\varepsilon}.
+ \end{split}
+ \label{p2:palm:all-targets-bound}
+\end{equation}
+No regularity condition is imposed on the target windows.
+\end{proposition}
+
+\begin{proof}
+For $z\notin e$, put
+$d_e(z)=\dim(S_z\cap\sum_{x\in e}S_x)$.
+The finite affine rank bound gives
+\[
+ q(e\cup\{z\})\le q_ep_z\,2^{d_e(z)}.
+\]
+The inequality includes incompatible joint prescriptions and zero
+marginals. Thus $p_z=0$ forces $q(e\cup\{z\})=0$, and $d_e(z)=0$
+makes the exact positive excess vanish.
+A positive summand of $M_{\mathrm{ex}}$ therefore has
+$d_e(z)>0$ and $q(e\cup\{z\})>0$.
+Compatibility forces all three pairwise distances to be at least $L$,
+including possible equality. The source is a dependent pair, so neither
+source singleton can split off as a direct component. Positive crossing
+prevents the target singleton from splitting off. The triple is connected.
+Each summand is at most $q(e\cup\{z\})$, and a triple has at most three
+choices of a marked source pair. Proposition~\ref{p13:third:aligned-family},
+which includes irregular windows and exact contacts, gives
+\[
+ M_{\mathrm{ex}}(G)
+ \le3\sum_{\substack{|T|=3,\ T\ \mathrm{connected},\ q(T)>0\\
+              T\text{ contains a pair in the fixed channel}}}q(T)
+ \ll N^{-41/30+\eta}
+\]
+for every fixed $\eta>0$.
+
+All conditioned sources have $q_e>0$. The positive-part inequality gives
+\[
+ \bigl(q(e\cup\{z\})-q_ep\bigr)_+
+ \le\bigl(q(e\cup\{z\})-q_ep_z\bigr)_+
+      +q_e(p_z-p)_+.
+\]
+Using the marginal estimate~\eqref{p1:arith:marginalsum},
+\[
+ M_{\mathrm{nom}}(G)
+ \le M_{\mathrm{ex}}(G)+\beta_{a,b}\sum_{z\in I_N}(p_z-p)_+
+ \ll N^{-41/30+\eta}+\beta_{a,b}N^{-1+\eta}.
+\]
+Lemma~\ref{p1:arith:fixed-channel-mass} gives, in the stated cutoff range,
+$\beta_{a,b}\asymp_{a,b,C,D}LN^{-1+1/b}>0$.
+Each unordered compatible edge has two ordered orientations, so its
+mass is half the ordered mass in that lemma. Monotonicity of the
+private-prime condition sandwiches the mass between the phases at
+$H=6bB$ and $H=DB$, proving uniformity throughout the stated range.
+Since $b\ge3$, the second raw term is
+$O(LN^{-2+1/b+\eta})$, smaller than the $41/30$ scale.
+Division by the positive phase bounds the normalized sum by a constant
+times
+\[
+ L^{-1}N^{-11/30-1/b+\eta}+N^{-1+\eta}.
+\]
+The second exponent is smaller because $11/30+1/b\le7/10<1$.
+Choose the internal margin within $\varepsilon$ and enlarge the scale
+threshold to absorb fixed factors. All parameters precede $N,L,H,G$.
+\end{proof}
+
+For the two principal channels, one common choice $24B\le H\le DB$
+with fixed $D\ge24$ gives
+\begin{align}
+ \frac{M_{\mathrm{nom},2:3}(G)}{\beta_{2,3}}
+     &\ll_{C,D,\varepsilon}N^{-7/10+\varepsilon},
+     \label{p1:arith:palm23}\\
+ \frac{M_{\mathrm{nom},3:4}(G)}{\beta_{3,4}}
+     &\ll_{C,D,\varepsilon}N^{-37/60+\varepsilon}.
+     \label{p1:arith:palm34}
+\end{align}
+These are bounds for positive increases in the target probabilities;
+no optimality or absolute-discrepancy statement is asserted.

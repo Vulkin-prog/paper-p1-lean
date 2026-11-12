@@ -1,0 +1,184 @@
+\section{Why the quadratic approximation stops at the fourth-order scale}
+\label{p13:lower:section}
+
+The quadratic reference retains the second factorial cumulant linearly.
+Two independent pair contributions therefore leave a fourth-order term of
+size $\alpha_N^2$. To turn this observation into a lower bound, one must
+check that incompatible arithmetic configurations cannot cancel that term.
+The half-exponent count supplies this missing sign information.
+The formal term \(\alpha_N^2\Pi_{\mu_N}*\Delta^{*4}/8\)
+is classical in Poisson--Charlier expansions
+\cite{bkn2014,cekanaviciusvellaisamy2015}. The issue here is its
+arithmetic size, the sign of the other fourth-order contributions,
+and the passage from an unbounded polynomial test to the full norm.
+Throughout this section $\mu=\mu_N$, $\alpha=\alpha_N$, and all marginals
+and centered coefficients are those of the full admissible set.
+
+\subsection{Cancellation of the disconnected pair terms}
+
+Write
+\[
+ C_2^{\mathrm s}=\sum_{|e|=2}c(e),\qquad
+ K_4=\sum_{\substack{|I|=4\\I\text{ connected}}}c(I),\qquad
+ K_4^+=\sum_{\substack{|I|=4\\I\text{ connected},\ q(I)>0}}c(I).
+\]
+Compatibility makes every character on the relation space positive, so
+$K_4^+\geq0$.
+
+\begin{lemma}[The fourth factorial cumulant]
+\label{p13:lower:quartic}
+For every fixed critical band and every $\varepsilon>0$,
+\begin{equation}
+ \kappa_4=24K_4+O_{C,\varepsilon}(N^{-5/3+\varepsilon}),\qquad
+ K_4=K_4^++O_{C,\varepsilon}(N^{-3/2+\varepsilon}).
+ \label{p13:lower:quartic-identities}
+\end{equation}
+Consequently
+\begin{equation}
+ \kappa_4+3\alpha^2
+ =3\alpha^2+24K_4^++O_{C,\varepsilon}(N^{-3/2+\varepsilon}).
+ \label{p13:lower:positive-quartic}
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+Expanding the first four factorial moments with the individual $p_i$
+gives the exact identity
+\begin{align}
+ \kappa_4={}&24\sum_{|I|=4}c(I)-12(C_2^{\mathrm s})^2
+ -24\sum_{|T|=3}\Bigl(\sum_{i\in T}p_i\Bigr)c(T)\notag\\
+ &+24\sum_{e=\{i,j\}}(p_i^2+p_ip_j+p_j^2)c(e)
+ -6\sum_i p_i^4.
+ \label{p13:lower:exact-cumulant}
+\end{align}
+For example, first write
+\[
+ \E(1+t)^Z=\prod_i(1+p_it)
+ \left[1+\sum_{2\leq|I|\leq4}
+       \frac{c(I)t^{|I|}}{\prod_{i\in I}(1+p_it)}+O(t^5)\right],
+\]
+then take $24$ times the coefficient of $t^4$ in its formal logarithm.
+This is a finite coefficient calculation; no analytic logarithm of the
+true generating function is required.
+
+Canonical direct decomposition gives
+$\sum_{|I|=4}c(I)=K_4+D_{22}$, where $D_{22}$ sums
+$c(e)c(f)$ over unordered disjoint pairs of edges whose spaces are direct.
+In $(C_2^{\mathrm s})^2/2-D_{22}$ only repeated edges, edges sharing a
+vertex, and disjoint edges with a nonzero intersection remain.
+The positive propagation estimate, together with the product of the
+marginals, implies
+\[
+ \sum_{y\ne x}|c(x,y)|\ll_{C,\eta}p_xN^\eta.
+\]
+Repeated edges and shared vertices consequently have total absolute
+weight $O(p_*A_2N^\eta)=O(N^{-5/3+2\eta})$.
+
+Apply the pair partition of Lemma~\ref{p13:activity:pair-partition} with
+a small fixed parameter $\eta$. A product involving a weak or exceptional
+edge has total weight at most
+$A_2(A_{\mathrm w}+A_{\mathrm s})
+\ll N^{-5/3+O(\eta)}$.
+For two good edges from the remaining finite family of channels, fix the
+first edge and the offset pattern of the second compression. There are
+$NB^{O(1)}$ choices for the first edge. A nonzero intersection imposes
+an exceptional target of fixed width, giving $N^{1/2+o(1)}$ choices for
+the second compressed center by the elementary exceptional-target count
+in Proposition~\ref{p1:arith:fixed-branching}. The proof of that count
+uses only a fixed width and applies to this compression as well.
+Each product has weight at most $N^{-10/3+o(1)}$. Hence this last cost is
+$N^{-11/6+o(1)}$, and
+\[
+ D_{22}=(C_2^{\mathrm s})^2/2+O(N^{-5/3+\varepsilon}).
+\]
+The remaining terms of \eqref{p13:lower:exact-cumulant} are bounded by
+$O(p_*A_3+p_*^2A_2+p_*^3\mu)$.
+The triple estimate in Corollary~\ref{p13:third:activity} gives
+$A_3\ll N^{-41/30+\eta}$, so each is smaller than the stated error.
+This proves the first identity.
+
+The incompatible part of Proposition~\ref{p13:transfer:fixed-activities}
+at the fixed order \(r=4\) gives
+\[
+ |K_4-K_4^+|
+ \le\sum_{\substack{|I|=4,\ I\text{ connected}\\q(I)=0}}|c(I)|
+ \ll_{C,\varepsilon}N^{-3/2+\varepsilon}.
+\]
+Compatible coefficients are nonnegative. This proves the second identity
+and then \eqref{p13:lower:positive-quartic}.
+\end{proof}
+
+\subsection{A Charlier polynomial detects the remaining mass}
+
+\begin{theorem}[Optimal power for the exact quadratic reference]
+\label{p13:lower:optimal}
+For every $C>0$ and $\varepsilon>0$, there are
+$c_{C,\varepsilon}>0$ and $N_0(C,\varepsilon)$ such that
+\begin{equation}
+ \|\Law(Z_N)-Q_{\mu_N,\alpha_N}\|_1
+ \geq c_{C,\varepsilon}N^{-4/3-\varepsilon}
+ \label{p13:lower:norm}
+\end{equation}
+whenever $N\geq N_0$ and $|L-\log_2N|\leq C$.
+Together with Theorem~\ref{p13:transfer:reconstruction} and the triple
+activity bound, this identifies the optimal power as $4/3$.
+It does not assert an asymptotic constant or a logarithmic factor for
+the remainder.
+\end{theorem}
+
+\begin{proof}
+The arithmetic coefficient estimate gives
+$\alpha\asymp_C LN^{-2/3}>0$ uniformly in the critical band.
+The sign argument has the margin $3/2-4/3=1/6$.
+Choose a fixed total error loss $\tau<1/6$ in
+\eqref{p13:lower:positive-quartic}; then
+\[
+ \frac{N^{-3/2+\tau}}{\alpha^2}
+ \ll_C L^{-2}N^{-1/6+\tau}\longrightarrow0.
+\]
+Positivity therefore yields
+\[
+ \kappa_4+3\alpha^2\geq (3-o_C(1))\alpha^2.
+\]
+The fourth Charlier polynomial is
+\[
+ H_4(z;\mu)=(z)_4-4\mu(z)_3+6\mu^2(z)_2-4\mu^3z+\mu^4
+          =4![t^4]e^{-\mu t}(1+t)^z.
+\]
+Its integral against $Q_{\mu,\alpha}$ vanishes, because the factorial
+generating function of that reference is
+$e^{\mu t}(1+\alpha t^2/2)$. On the true law its expectation equals
+$\kappa_4+3\alpha^2$. Thus, with
+$R=\Law(Z_N)-Q_{\mu,\alpha}$,
+\[
+ \left|\int H_4\,dR\right|\gg_C L^2N^{-4/3}.
+\]
+
+The test is unbounded, so a moment argument is needed before it gives
+a norm estimate. For every fixed integer $k>1$, the fixed moments from
+Theorem~\ref{p1:fixed:moments} give
+$\int |H_4(z;\mu)|^k\,d\Law(Z_N)(z)\ll_{C,k}1$.
+The same bound holds for $|Q_{\mu,\alpha}|$, since $\mu$ stays in a
+compact subset of $(0,\infty)$, $\alpha=O_C(1)$, and
+\[
+ |Q_{\mu,\alpha}|
+ \leq\Pi_\mu+\frac{|\alpha|}{2}
+       \Pi_\mu*(\delta_2+2\delta_1+\delta_0).
+\]
+Consequently H\"older's inequality for the positive measure $|R|$ gives
+\[
+ \left|\int H_4\,dR\right|
+ \ll_{C,k}\|R\|_1^{1-1/k},\qquad
+ \|R\|_1\gg_{C,k}(L^2N^{-4/3})^{k/(k-1)}.
+\]
+After $\varepsilon$ has been prescribed, choose the integer $k$ so that
+$4/[3(k-1)]\leq\varepsilon$. It remains fixed as $N$ tends to infinity,
+and proves \eqref{p13:lower:norm}. The upper bound follows from the
+reconstruction and $A_3\ll N^{-41/30+\eta}$, since $41/30>4/3$.
+\end{proof}
+
+The obstruction is specific to the quadratic reference. The Hermite law
+with the same first two factorial cumulants already contains the term
+$\alpha^2\Pi_\mu*\Delta^{*4}/8$. The fourth Charlier test against that
+law sees $\kappa_4$ instead of $\kappa_4+3\alpha^2$, so the lower bound
+above does not establish an optimal Hermite approximation rate.
