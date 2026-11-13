@@ -1,0 +1,8 @@
+{
+  "source_commit": "eeda0e055bc16afa6bb6402727afe733ace9961e",
+  "run_id": 43435182346,
+  "workflow_url": "https://github.com/Vulkin-prog/paper-p1-lean/actions/runs/43435182346",
+  "status": "completed",
+  "conclusion": "success",
+  "scope": "Complete parent build and axiom audit, new111-declaration final interface, preserved262-declaration RegistryV2 interfaces and all source-integrity checks. This is repository CI, separate from official Palomar preflight."
+}

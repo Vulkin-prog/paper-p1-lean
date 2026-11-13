@@ -1,0 +1,42 @@
+{
+  "status": "pass",
+  "checked_at": "2026-11-13T14:59:09.849954+00:00",
+  "mode": "full",
+  "execution_profile": "palomar-standard-v1",
+  "repository": "Vulkin-prog/paper-p1-lean",
+  "source_commit": "eeda0e055bc16afa6bb6402727afe733ace9961e",
+  "project_path": "RegistryFinal",
+  "comparator_config_path": "RegistryFinal/comparator/p1_foundations.json",
+  "formalization_metadata_path": "palomar/final/foundations/formalization.yaml",
+  "pipeline_commit": "14aa8d6b3c2f14a8540605e37144560b9a00e7e7",
+  "run_id": 43439453730,
+  "workflow_head": "daeb5544e48a13dbeedf54179ecee10abfc56239",
+  "workflow_url": "https://github.com/Vulkin-prog/paper-p1-lean/actions/runs/43439453730",
+  "request_id": "pmd736f932ba",
+  "artifact_id": 14048590836,
+  "artifact_path": "palomar/final/foundations/preflight/artifact.zip",
+  "artifact_sha256": "e05a146a9596b6dab60a84c5398086a7c5f612bb32d300f0cc3a04be891c9cc0",
+  "report_path": "palomar/final/foundations/preflight/mechanical-report.json",
+  "report_sha256": "eb24625b639b53afe88a2b04a9b580b1a13ce91b0daca13b652f03512a30657c",
+  "selected_theorem_count": 3,
+  "mandatory_comparator_and_nanoda_passed": true,
+  "reported_external_kernels": [
+    {
+      "argv": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/nanoda_bin"
+      ],
+      "name": "nanoda"
+    },
+    {
+      "argv": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/con-ron",
+        "--jobs=2",
+        "--verified"
+      ],
+      "name": "con-ron"
+    }
+  ],
+  "warnings": [
+    "configured Challenge source exceeds the preferred 32 KiB / 300-line review surface"
+  ]
+}
