@@ -1,0 +1,146 @@
+{
+  "artifact_tree_sha256": "8365f76a7059e8f57ef49259262ffaf5acad9d09ee2f6c29b1d5cc3455da6407",
+  "bwrap_source_tag": "v0.12.0",
+  "entrypoint": "Challenge/index.html",
+  "errors": [],
+  "format": "verso-html",
+  "lean_toolchain": "leanprover/lean4:v4.36.0-rc2",
+  "limits": {
+    "artifact_bytes": 26214400,
+    "artifact_files": 2000,
+    "artifact_nodes": 4000,
+    "build_file_bytes": 2147483648,
+    "memory_bytes": 12884901888,
+    "open_files": 4096,
+    "per_file_bytes": 8388608,
+    "tasks": 512,
+    "wall_seconds": 21600,
+    "workspace_bytes": 12884901888
+  },
+  "mathlib_cache": {
+    "bytes": 0,
+    "downloaded": 0,
+    "requested": 9081
+  },
+  "prepared_at": "2026-11-13T08:08:49Z",
+  "rendered_at": "2026-11-13T08:43:27Z",
+  "renderer_commit": "14aa8d6b3c2f14a8540605e37144560b9a00e7e7",
+  "schema_version": 3,
+  "source": {
+    "challenge_path": "RegistryV2/ChallengeP1V2StoppingReconstruction.lean",
+    "challenge_sha256": "0b9b313b16bde1f1a52cd58b215b1b03a72e1196a74901a1241cd7aa58dfb006",
+    "commit": "d6a0f6c5109886127526677603eb6b74e8c0cd82",
+    "comparator_config_path": "RegistryV2/comparator/p1_stopping_reconstruction.json",
+    "lakefile_path": "RegistryV2/lakefile.toml",
+    "lean_toolchain_path": "RegistryV2/lean-toolchain",
+    "project_path": "RegistryV2",
+    "repository": "Vulkin-prog/paper-p1-lean",
+    "repository_url": "https://github.com/Vulkin-prog/paper-p1-lean",
+    "solution_path": "RegistryV2/SolutionP1V2StoppingReconstruction.lean"
+  },
+  "stage": "complete",
+  "status": "pass",
+  "surface": {
+    "audit_declarations": [
+      {
+        "declaration": "theorem PaperP1Registry.V2.StoppingReconstruction.expansion_polynomial_expansion.{u_1, u_3} {\u03b9 : Type u_1} {R : Type u_3}\n  [LinearOrder \u03b9] [CommSemiring R] (G : Finset \u03b9) (D : Finset \u03b9 \u2192 Prop) (u : \u03b9 \u2192 R) (t : R)\n  (hD : PaperP1Registry.V2.StoppingReconstruction.expansion_Hereditary D) (h0 : D EmptyCollection.emptyCollection) :\n  Eq (Finset.prod G fun x => HAdd.hAdd 1 (HMul.hMul t (u x)))\n    (HAdd.hAdd\n      (Finset.sum (PaperP1Registry.V2.StoppingReconstruction.expansion_retained G D) fun I =>\n        HMul.hMul (HPow.hPow t (Finset.card I)) (Finset.prod I fun x => u x))\n      (Finset.sum (PaperP1Registry.V2.StoppingReconstruction.expansion_boundary G D) fun I =>\n        HMul.hMul (HMul.hMul (HPow.hPow t (Finset.card I)) (Finset.prod I fun x => u x))\n          (Finset.prod (PaperP1Registry.V2.StoppingReconstruction.expansion_suffix G I) fun y =>\n            HAdd.hAdd 1 (HMul.hMul t (u y)))))",
+        "name": "PaperP1Registry.V2.StoppingReconstruction.expansion_polynomial_expansion"
+      },
+      {
+        "declaration": "theorem PaperP1Registry.V2.StoppingReconstruction.prefix_suffix.{u_3} {\u03ba : Type u_3} [LinearOrder \u03ba] (I G : Finset \u03ba)\n  (hne : Finset.Nonempty I) :\n  And (Eq (PaperP1Registry.V2.StoppingReconstruction.expansion_properPrefix I) (Finset.erase I (Finset.max' I hne)))\n    (Eq (PaperP1Registry.V2.StoppingReconstruction.expansion_suffix G I)\n      (Finset.filter (fun y => \u2200 (x : \u03ba), Membership.mem I x \u2192 LT.lt x y) G))",
+        "name": "PaperP1Registry.V2.StoppingReconstruction.prefix_suffix"
+      },
+      {
+        "declaration": "theorem PaperP1Registry.V2.StoppingReconstruction.expansion_positive_stopped_kernel.{u_1, u_2} {\u03b9 : Type u_1} {\u03a9 : Type u_2}\n  [MeasurableSpace \u03a9] [Fintype \u03b9] [LinearOrder \u03b9] (G : Finset \u03b9) (D : Finset \u03b9 \u2192 Prop) (\u03bc : MeasureTheory.Measure \u03a9)\n  [MeasureTheory.IsProbabilityMeasure \u03bc] (J : \u03b9 \u2192 \u03a9 \u2192 Bool) (hJ : \u2200 (x : \u03b9), Measurable (J x))\n  (hD : PaperP1Registry.V2.StoppingReconstruction.expansion_Hereditary D) (h0 : D EmptyCollection.emptyCollection) :\n  And\n    (Eq\n      (PaperP1Registry.V2.StoppingReconstruction.expansion_totalMass\n        (PaperP1Registry.V2.StoppingReconstruction.expansion_retainedReference G D \u03bc J))\n      1)\n    (Exists fun K =>\n      And\n        (Eq\n          (HSub.hSub (PaperP1Registry.V2.StoppingReconstruction.expansion_countLaw G \u03bc J)\n            (PaperP1Registry.V2.StoppingReconstruction.expansion_retainedReference G D \u03bc J))\n          (Finset.sum (PaperP1Registry.V2.StoppingReconstruction.expansion_boundary G D) fun I =>\n            HMul.hMul (HPow.hPow PaperP1Registry.V2.StoppingReconstruction.expansion_difference (Finset.card I)) (K I)))\n        (And\n          (\u2200 (I : Finset \u03b9) (k : Nat),\n            Eq (DFunLike.coe (AddMonoidAlgebra.coeff (K I)) k)\n              (MeasureTheory.integral \u03bc fun \u03c9 =>\n                HMul.hMul (Finset.prod I fun x => PaperP1Registry.V2.StoppingReconstruction.expansion_indicator (J x \u03c9))\n                  (ite\n                    (Eq\n                      (PaperP1Registry.V2.StoppingReconstruction.expansion_count\n                        (PaperP1Registry.V2.StoppingReconstruction.expansion_suffix G I) J \u03c9)\n                      k)\n                    1 0)))\n          (\u2200 (I : Finset \u03b9),\n            And (\u2200 (k : Nat), LE.le 0 (DFunLike.coe (AddMonoidAlgebra.coeff (K I)) k))\n              (And\n                (Eq (PaperP1Registry.V2.StoppingReconstruction.expansion_totalMass (K I))\n                  (MeasureTheory.Measure.real \u03bc\n                    (Set.ofPred fun \u03c9 => \u2200 (x : \u03b9), Membership.mem I x \u2192 Eq (J x \u03c9) Bool.true)))\n                (Eq (PaperP1Registry.V2.StoppingReconstruction.expansion_l1Norm (K I))\n                  (MeasureTheory.Measure.real \u03bc\n                    (Set.ofPred fun \u03c9 => \u2200 (x : \u03b9), Membership.mem I x \u2192 Eq (J x \u03c9) Bool.true)))))))",
+        "name": "PaperP1Registry.V2.StoppingReconstruction.expansion_positive_stopped_kernel"
+      },
+      {
+        "declaration": "theorem PaperP1Registry.V2.StoppingReconstruction.expansion_stopped_l1_bound.{u_1, u_2} {\u03b9 : Type u_1} {\u03a9 : Type u_2}\n  [MeasurableSpace \u03a9] [Fintype \u03b9] [LinearOrder \u03b9] (G : Finset \u03b9) (D : Finset \u03b9 \u2192 Prop) (\u03bc : MeasureTheory.Measure \u03a9)\n  [MeasureTheory.IsProbabilityMeasure \u03bc] (J : \u03b9 \u2192 \u03a9 \u2192 Bool) (hJ : \u2200 (x : \u03b9), Measurable (J x))\n  (hD : PaperP1Registry.V2.StoppingReconstruction.expansion_Hereditary D) (h0 : D EmptyCollection.emptyCollection) :\n  LE.le\n    (PaperP1Registry.V2.StoppingReconstruction.expansion_l1Norm\n      (HSub.hSub (PaperP1Registry.V2.StoppingReconstruction.expansion_countLaw G \u03bc J)\n        (PaperP1Registry.V2.StoppingReconstruction.expansion_retainedReference G D \u03bc J)))\n    (Finset.sum (PaperP1Registry.V2.StoppingReconstruction.expansion_boundary G D) fun I =>\n      HMul.hMul (HPow.hPow 2 (Finset.card I))\n        (MeasureTheory.Measure.real \u03bc (Set.ofPred fun \u03c9 => \u2200 (x : \u03b9), Membership.mem I x \u2192 Eq (J x \u03c9) Bool.true)))",
+        "name": "PaperP1Registry.V2.StoppingReconstruction.expansion_stopped_l1_bound"
+      },
+      {
+        "declaration": "theorem PaperP1Registry.V2.StoppingReconstruction.finite_conversion.{u_3} {\u03ba : Type u_3} [DecidableEq \u03ba] (G : Finset \u03ba)\n  (E : Finset (Finset \u03ba)) (p : \u03ba \u2192 Real) (c : Finset \u03ba \u2192 Real)\n  (hE : \u2200 (e : Finset \u03ba), Membership.mem E e \u2192 And (LE.le e G) (Eq (Finset.card e) 2))\n  (hp : \u2200 (i : \u03ba), Membership.mem G i \u2192 And (LE.le 0 (p i)) (LE.le (p i) 1)) (P : Real) (hP : LE.le 0 P)\n  (hcap : \u2200 (i : \u03ba), Membership.mem G i \u2192 LE.le (p i) P) :\n  LE.le\n    (tsum fun k =>\n      abs\n        (HSub.hSub\n          (DFunLike.coe (AddMonoidAlgebra.coeff (PaperP1Registry.V2.StoppingReconstruction.finiteReference G E p c)) k)\n          (PaperP1Registry.V2.StoppingReconstruction.quadraticMass (Finset.sum G fun i => p i)\n            (HSub.hSub (HMul.hMul 2 (Finset.sum E fun e => c e)) (Finset.sum G fun i => HPow.hPow (p i) 2)) k)))\n    (HMul.hMul (HMul.hMul 16 (Real.exp 2))\n      (HAdd.hAdd\n        (HAdd.hAdd (Finset.sum G fun i => HPow.hPow (p i) 3) (HPow.hPow (Finset.sum G fun i => HPow.hPow (p i) 2) 2))\n        (HMul.hMul (Finset.sum E fun e => abs (c e)) (HAdd.hAdd (Finset.sum G fun i => HPow.hPow (p i) 2) P))))",
+        "name": "PaperP1Registry.V2.StoppingReconstruction.finite_conversion"
+      },
+      {
+        "declaration": "theorem PaperP1Registry.V2.StoppingReconstruction.run_conversion (C \u03b5 : Real) (h\u03b5 : LT.lt 0 \u03b5) :\n  Exists fun N\u2080 =>\n    And (LE.le 2 N\u2080)\n      (\u2200 (N : Nat),\n        GE.ge N N\u2080 \u2192\n          \u2200 (L : Nat),\n            LE.le (abs (HSub.hSub (\u2191L) (HDiv.hDiv (Real.log \u2191N) (Real.log 2)))) C \u2192\n              LE.le\n                (tsum fun k =>\n                  abs\n                    (HSub.hSub\n                      (DFunLike.coe\n                        (AddMonoidAlgebra.coeff (PaperP1Registry.V2.StoppingReconstruction.pairReference N L)) k)\n                      (PaperP1Registry.V2.StoppingReconstruction.quadraticMass\n                        (PaperP1Registry.V2.StoppingReconstruction.actualMean N L)\n                        (PaperP1Registry.V2.StoppingReconstruction.secondCumulant N L) k)))\n                (HPow.hPow (\u2191N) (HAdd.hAdd (-5 / 3) \u03b5)))",
+        "name": "PaperP1Registry.V2.StoppingReconstruction.run_conversion"
+      },
+      {
+        "declaration": "theorem PaperP1Registry.V2.StoppingReconstruction.conditional_transfer (C \u03b2 \u03b5 : Real) (h\u03b2 : LT.lt 1 \u03b2) (h\u03b2cap : LE.le \u03b2 (4 / 3))\n  (h\u03b5 : LT.lt 0 \u03b5) (hfixed : PaperP1Registry.V2.StoppingReconstruction.FixedActivity C \u03b2) :\n  Exists fun N\u2080 =>\n    And (LE.le 10 N\u2080)\n      (\u2200 (N : Nat),\n        GE.ge N N\u2080 \u2192\n          \u2200 (L : Nat),\n            LE.le (abs (HSub.hSub (\u2191L) (HDiv.hDiv (Real.log \u2191N) (Real.log 2)))) C \u2192\n              LE.le (PaperP1Registry.V2.StoppingReconstruction.quadraticError N L)\n                (HPow.hPow (\u2191N) (HAdd.hAdd (Neg.neg \u03b2) \u03b5)))",
+        "name": "PaperP1Registry.V2.StoppingReconstruction.conditional_transfer"
+      },
+      {
+        "declaration": "theorem PaperP1Registry.V2.StoppingReconstruction.triple_reconstruction (C \u03b5 : Real) (h\u03b5 : LT.lt 0 \u03b5) :\n  Exists fun N\u2080 =>\n    And (LE.le 10 N\u2080)\n      (\u2200 (N : Nat),\n        GE.ge N N\u2080 \u2192\n          \u2200 (L : Nat),\n            LE.le (abs (HSub.hSub (\u2191L) (HDiv.hDiv (Real.log \u2191N) (Real.log 2)))) C \u2192\n              And\n                (LE.le (PaperP1Registry.V2.StoppingReconstruction.quadraticError N L)\n                  (HAdd.hAdd\n                    (HMul.hMul (HPow.hPow (\u2191N) \u03b5)\n                      (Finset.sum (Finset.powersetCard 3 (Finset.Ico N (HMul.hMul 2 N))) fun I =>\n                        abs (PaperP1Registry.V2.StoppingReconstruction.centeredCoefficient L I)))\n                    (HPow.hPow (\u2191N) (HAdd.hAdd (-4 / 3) \u03b5))))\n                (LE.le (PaperP1Registry.V2.StoppingReconstruction.quadraticError N L)\n                  (HPow.hPow (\u2191N) (HAdd.hAdd (-4 / 3) \u03b5))))",
+        "name": "PaperP1Registry.V2.StoppingReconstruction.triple_reconstruction"
+      }
+    ],
+    "declarations": [
+      "PaperP1Registry.V2.StoppingReconstruction.expansion_polynomial_expansion",
+      "PaperP1Registry.V2.StoppingReconstruction.prefix_suffix",
+      "PaperP1Registry.V2.StoppingReconstruction.expansion_positive_stopped_kernel",
+      "PaperP1Registry.V2.StoppingReconstruction.expansion_stopped_l1_bound",
+      "PaperP1Registry.V2.StoppingReconstruction.finite_conversion",
+      "PaperP1Registry.V2.StoppingReconstruction.run_conversion",
+      "PaperP1Registry.V2.StoppingReconstruction.conditional_transfer",
+      "PaperP1Registry.V2.StoppingReconstruction.triple_reconstruction"
+    ],
+    "imports": [
+      "Mathlib.Algebra.BigOperators.Group.Finset.Powerset",
+      "Mathlib.Algebra.BigOperators.Ring.Finset",
+      "Mathlib.Algebra.Field.ZMod",
+      "Mathlib.Algebra.MonoidAlgebra.Lift",
+      "Mathlib.Algebra.Order.Floor.Semiring",
+      "Mathlib.Analysis.InnerProductSpace.Basic",
+      "Mathlib.Analysis.SpecialFunctions.Pow.Real",
+      "Mathlib.Data.Finset.Interval",
+      "Mathlib.Data.Fintype.Pi",
+      "Mathlib.Data.Nat.Factorization.Basic",
+      "Mathlib.Data.ZMod.Basic",
+      "Mathlib.LinearAlgebra.Finsupp.LinearCombination",
+      "Mathlib.MeasureTheory.Integral.Bochner.Basic",
+      "Mathlib.NumberTheory.PrimeCounting",
+      "Mathlib.Order.Partition.Finpartition",
+      "Mathlib.Probability.Distributions.Uniform",
+      "Mathlib.Probability.ProductMeasure",
+      "Mathlib.Tactic.NormNum",
+      "Mathlib.Tactic.Ring.Basic"
+    ],
+    "module_doc": "# P1 V2: Stopping, heterogeneous conversion and complete-law reconstruction\n\nSelected statements cover main article results 4.1\u20134.2,5.1\u20135.3. Literal definitions specify\nthe independent prime-sign model, exact observables, reference laws and error\nnorms. Parameters and thresholds retain their printed order. The companion\nsupplies substantive proofs through the parent development in this repository.\nThe corresponding six-dossier coverage map records each complete clause bundle.\nOnly the selected Challenge theorem proofs are deliberate statement holes;\nthe Solution and its bridge proofs contain no placeholders.\nSelected model foundations are adapted through P1 from Paper C, commit\nb9fa9ba490f201b408a302a86f1594ee620b228b, Apache-2.0; see docs/PAPER_C_REUSE.md.",
+    "schema_version": 3,
+    "solution_imports": [
+      "Mathlib.Algebra.BigOperators.Group.Finset.Powerset",
+      "Mathlib.Algebra.BigOperators.Ring.Finset",
+      "Mathlib.Algebra.Field.ZMod",
+      "Mathlib.Algebra.MonoidAlgebra.Lift",
+      "Mathlib.Algebra.Order.Floor.Semiring",
+      "Mathlib.Analysis.InnerProductSpace.Basic",
+      "Mathlib.Analysis.SpecialFunctions.Pow.Real",
+      "Mathlib.Data.Finset.Interval",
+      "Mathlib.Data.Fintype.Pi",
+      "Mathlib.Data.Nat.Factorization.Basic",
+      "Mathlib.Data.ZMod.Basic",
+      "Mathlib.LinearAlgebra.Finsupp.LinearCombination",
+      "Mathlib.MeasureTheory.Integral.Bochner.Basic",
+      "Mathlib.NumberTheory.PrimeCounting",
+      "Mathlib.Order.Partition.Finpartition",
+      "Mathlib.Probability.Distributions.Uniform",
+      "Mathlib.Probability.ProductMeasure",
+      "Mathlib.Tactic.NormNum",
+      "Mathlib.Tactic.Ring.Basic",
+      "PaperP1.Asymptotics.ActualPairPhase",
+      "PaperP1.Asymptotics.FiniteCompleteLawTransfer",
+      "PaperP1.Asymptotics.FixedArityHomogeneousMass",
+      "PaperP1.Asymptotics.OptimalQuadratic",
+      "PaperP1.Asymptotics.OptimalThirdCumulant",
+      "PaperP1.Asymptotics.OptimalTripleReconstruction",
+      "PaperP1.Asymptotics.RunConversion",
+      "PaperP1.Model.FourthRunFactorialCumulant",
+      "PaperP1.Model.RetainedMomentTransfer",
+      "PaperP1.Probability.StoppedMeasureLaw",
+      "PaperP1.Probability.UniversalHeterogeneousConversion"
+    ]
+  },
+  "verso_commit": "71a2035b44e7f54a797ce799fd1b03cdd3a44684",
+  "workflow_url": "https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/43390592969"
+}

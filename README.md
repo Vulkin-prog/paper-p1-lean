@@ -22,7 +22,7 @@ covering 14 of the 26 main results through 31 selected statements.
 | Quadratic approximation and Poisson scales | 1.1–1.2, 7.2–7.4 | 10 | [PALOMAR-2026-11-12-000013 v1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-12-000013&version=1) |
 | Cumulants and optimality | 3.3–3.4, 6.1–6.2 | 8 | [PALOMAR-2026-11-13-000001 v1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000001&version=1) |
 | Pair profiles and channel hierarchy | 3.1–3.2, 8.1–8.3 | 13 | [PALOMAR-2026-11-13-000002 v1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000002&version=1) |
-| Stopping, conversion and reconstruction | 4.1–4.2, 5.1–5.3 | 8 | [Official rendering in progress](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/43390592969) |
+| Stopping, conversion and reconstruction | 4.1–4.2, 5.1–5.3 | 8 | [Rendering passed; review pending](palomar/publication-followup/stopping_reconstruction/rendering/VALIDATION.json) |
 | Quadratic positivity and Hermite laws | 7.1, 8.4 | 5 | Prepared; not submitted |
 | Affine events and homogeneous envelopes | 2.1–2.5 | 8 | Prepared; not submitted |
 

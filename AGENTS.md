@@ -219,3 +219,8 @@ future manuscript version and preparing Palomar registrations after completion.
   `14aa8d6b3c2f14a8540605e37144560b9a00e7e7`. Follow that existing run and
   inspect its actual artifact for all eight exact selections and this
   configuration; a discovered or successful job alone is not that validation.
+  The actual rendering artifact has now passed that inspection: all eight
+  selections and all thirteen manifest file hashes match. Its receipt and ZIP
+  are archived in the fourth follow-up `rendering/` directory. The full,
+  namespace and rendering evidence gates all pass for this exact source and
+  configuration. Its actual editorial review remains a separate pending step.
