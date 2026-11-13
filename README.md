@@ -14,15 +14,15 @@ and remaining optional simplifications. Six unchanged Palomar configurations
 cover all 26 main results through 52 selections; their
 [publication preparation](palomar/REGISTRATION_PLAN_PUBLICATION.json) is preserved.
 The [live cycle record](palomar/publication/CYCLE_STATE.json) follows six strictly
-successive dossiers. **Three registrations are public and independently checked**,
-covering 14 of the 26 main results through 31 selected statements.
+successive dossiers. **Four registrations are public and independently checked**,
+covering 19 of the 26 main results through 39 selected statements.
 
 | Dossier | Main results | Statements | Public status |
 | --- | --- | ---: | --- |
 | Quadratic approximation and Poisson scales | 1.1–1.2, 7.2–7.4 | 10 | [PALOMAR-2026-11-12-000013 v1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-12-000013&version=1) |
 | Cumulants and optimality | 3.3–3.4, 6.1–6.2 | 8 | [PALOMAR-2026-11-13-000001 v1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000001&version=1) |
 | Pair profiles and channel hierarchy | 3.1–3.2, 8.1–8.3 | 13 | [PALOMAR-2026-11-13-000002 v1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000002&version=1) |
-| Stopping, conversion and reconstruction | 4.1–4.2, 5.1–5.3 | 8 | [Rendering passed; review pending](palomar/publication-followup/stopping_reconstruction/rendering/VALIDATION.json) |
+| Stopping, conversion and reconstruction | 4.1–4.2, 5.1–5.3 | 8 | [PALOMAR-2026-11-13-000008 v1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000008&version=1) |
 | Quadratic positivity and Hermite laws | 7.1, 8.4 | 5 | Prepared; not submitted |
 | Affine events and homogeneous envelopes | 2.1–2.5 | 8 | Prepared; not submitted |
 
@@ -34,8 +34,8 @@ remains explicit. The five follow-up dossiers use source
 `d6a0f6c5109886127526677603eb6b74e8c0cd82` and
 [expanded assistance metadata](palomar/publication-followup/), recording the
 ChatGPT mathematical assistance already credited in the paper. Their proof code
-and mathematical manuscript sources are unchanged. The second and third entries
-have no published warnings.
+and mathematical manuscript sources are unchanged. The second, third and fourth
+entries have no published warnings.
 
 The author authorized publication of favorable actual reviews without a new
 approval prompt. Each review must first be examined and presented and the request

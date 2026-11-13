@@ -92,7 +92,17 @@ matches this configuration, all eight compiler-backed declaration anchors and
 all thirteen manifest file hashes. The editorial review remains pending;
 earlier follow-up renders are not evidence for this dossier despite sharing
 its source commit.
-No fourth registration is asserted yet; later cycles remain queued.
+The fourth cycle is now
+[PALOMAR-2026-11-13-000008 v1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000008&version=1),
+with no published warnings or requested corrections. Its favorable actual review
+was read, presented and published under the existing author delegation. The
+[public readback](../palomar/publication-followup/stopping_reconstruction/registration/VALIDATION.json)
+verifies all eight selected statements, source and metadata paths, completed
+consent binding, all three name/ORCID records, accepted mechanical/rendering
+evidence and every git dependency preservation pin. A GET-only retry after five
+minutes resolved the initial public propagation delay. Four closed dossiers
+cover 19 of the 26 main results through 39 selections. The next full cycle is
+`probability_references`, then `affine_events`, at the same follow-up source.
 
 ## Previous V2 preparation (preserved history)
 

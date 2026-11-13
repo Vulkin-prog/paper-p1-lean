@@ -83,4 +83,10 @@ binds all eight selections without mechanical warnings. Its official
 created on 13 November at 08:06:14 UTC, after this intake. Its exact artifact,
 all eight compiler-backed declaration anchors and thirteen manifest file hashes
 have been checked. The editorial review remains pending.
-No fourth registration has been issued; follow this existing cycle.
+The fourth cycle is now [registered and publicly verified](../publication-followup/stopping_reconstruction/registration/VALIDATION.json)
+as [PALOMAR-2026-11-13-000008 v1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000008&version=1),
+with no published warnings. The favorable actual review was read and presented
+before publication under the existing delegation. The exact consent binding,
+source, eight selections, three name/ORCID records, accepted evidence and all
+dependency preservation pins match. Four cycles are closed; the next permitted
+full cycle is `probability_references`, then `affine_events`.

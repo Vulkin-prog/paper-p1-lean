@@ -1,0 +1,22 @@
+{
+  "status": "verified_registered",
+  "checked_at": "2026-11-13T09:28:35.601500+00:00",
+  "repository": "Vulkin-prog/paper-p1-lean",
+  "source_commit": "d6a0f6c5109886127526677603eb6b74e8c0cd82",
+  "project_path": "RegistryV2",
+  "comparator_config_path": "RegistryV2/comparator/p1_stopping_reconstruction.json",
+  "formalization_metadata_path": "palomar/publication-followup/stopping_reconstruction/formalization.yaml",
+  "registration_id": "PALOMAR-2026-11-13-000008",
+  "version": 1,
+  "registry_url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000008&version=1",
+  "registered_at": "2026-11-13T09:20:18Z",
+  "entry_path": "palomar/publication-followup/stopping_reconstruction/registration/entry.json",
+  "entry_sha256": "a63f67d6af40fccf65e904a2269da400d392fc3053a7b1a7a0747294a1b88cc4",
+  "selected_theorem_count": 8,
+  "author_and_orcid_verified_in_all_three_roles": true,
+  "mechanical_report_and_render_bound": true,
+  "published_material_warnings_match_delivered_review": true,
+  "published_warning_count": 0,
+  "source_and_all_git_dependency_preservation_pins_match": true,
+  "completed_private_registration_binds_delivered_review_digest": true
+}

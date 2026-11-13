@@ -224,3 +224,20 @@ future manuscript version and preparing Palomar registrations after completion.
   are archived in the fourth follow-up `rendering/` directory. The full,
   namespace and rendering evidence gates all pass for this exact source and
   configuration. Its actual editorial review remains a separate pending step.
+
+- The fourth cycle is now complete and publicly verified as
+  `PALOMAR-2026-11-13-000008` version1. Its actual favorable review identified
+  no blocking problem, warning or requested change. It was read, presented and
+  published under the existing user delegation, without asserting personal
+  reading by the user. Its final private consent digest, actual public source,
+  eight selections, name/ORCID in all three roles, mechanical/rendering evidence
+  and every git dependency preservation pin match. The initial public404 was
+  resolved by a GET-only retry after five minutes. Its four public records are
+  under the fourth follow-up `registration/` directory. Do not repeat intake or
+  publication for any of the four completed cycles. They cover19 of26 main
+  results through39 selections. The next permitted full cycle is
+  `probability_references` (five selections, main7.1 and8.4), then
+  `affine_events`, both at source
+  `d6a0f6c5109886127526677603eb6b74e8c0cd82` with follow-up metadata. Source and
+  conditional publication authority persist; no new approval prompt is needed
+  for a favorable actual review. Keep one complete cycle active at a time.
