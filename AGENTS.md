@@ -1,17 +1,17 @@
 # P1 formalization contract
 
-## Latest author instruction: preserve four issued registrations
+## Completed five-record allocation; preserve all issued records
 
 On13 November2026 the author explicitly required that the four completed
 registrations remain unchanged, and authorized rescoping or merging the two
 unregistered remainders and adding relevant companion results. This supersedes
 the historical six-candidate sequence below for unregistered work only.
-`palomar/REGISTRATION_PLAN_FINAL.json` aims at five total records: the unchanged
-four and one `RegistryFinal` candidate with three compound targets. These retain
+`palomar/REGISTRATION_PLAN_FINAL.json` now has five actual public records: the unchanged
+four and the `RegistryFinal` dossier with three compound targets. These retain
 all thirteen remaining main-result clauses and directly add companion13.1 and15.1 with
-the latter's displayed sequence corollary. The intended coverage is26 main results and
-two directly selected numbered companion results;42 statements total include39
-already published declarations. Do not reopen or amend any issued registration.
+the latter's displayed sequence corollary. The verified coverage is26 main results and
+two directly selected numbered companion results;42 issued statements include39
+declarations in the four earlier records. Do not reopen or amend any issued registration.
 `palomar/final/PRESERVATION.json` freezes81 existing public files and the exact
 four-cycle prefix. Run `scripts/check_registry_final.py`, its negative controls,
 the new111-theorem audit and the new exact statement comparison. Old `RegistryV2`
@@ -29,16 +29,29 @@ source-bound comparison passed all six isolated local kernels; the parent
 build and20019-declaration audit passed too. The actual source-bound withdrawal
 of the superseded unissued intake has been read back as `withdrawn`. The final
 five-record plan is active in `CYCLE_STATE.json`; its first four objects and81
-preserved files are unchanged. The existing final official cycle uses `RegistryFinal`,
+preserved files are unchanged. The completed final official cycle uses `RegistryFinal`,
 `RegistryFinal/comparator/p1_foundations.json`, and
 `palomar/final/foundations/formalization.yaml` at that immutable source. Its actual
 full preflight43439453730, Palomar namespace verification43448364878 and
 rendering43459500256 all passed. The rendering receipt checks all three selected
-compiler-backed anchors and thirteen manifest file hashes. Follow this existing
-authenticated intake; do not repeat intake or dispatch another cycle. Read and
-present its actual private editorial review before applying the positive-review
-publication delegation. These technical passes do not constitute an issued fifth
-record or a favorable editorial review. Keep unregistered editorial material private.
+compiler-backed anchors and thirteen manifest file hashes. The actual favorable
+review had no editorial warnings or requested changes; it was examined, presented
+and published under the author's delegation. The fifth record is
+`PALOMAR-2026-11-13-000020` version1. Its source, three selections, actual accepted
+evidence, name/ORCID in every person role, exact private consent digest and all
+Git dependency preservation pins were independently read back and checked.
+There is no active intake. Do not repeat any of the five intake or publication
+requests. Public evidence is under `palomar/final/foundations/registration/`.
+Keep all other unregistered editorial material private.
+
+The documentary edition `manuscripts/paper-p1/registration-update-2026-11-13/`
+updates only `formalization.tex` with the actual five identifiers and final scope.
+The other33 TeX files and the received publication edition remain unchanged.
+The33/84-page PDFs have checked registry URLs,104 paired-document links and
+visually inspected notice pages. Run `scripts/check_registration_notice.py`.
+The `RegistryFinal` source files, its frozen plan and all qualification snapshots
+retain their exact submitted-source wording and hashes. Read live outcomes from
+the cycle, coverage and registration records rather than rewriting those snapshots.
 
 ## Preserved development and operational history
 

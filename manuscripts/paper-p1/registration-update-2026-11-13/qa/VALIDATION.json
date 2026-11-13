@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "checked_at": "2026-11-13T22:21:45.162326+00:00",
+  "scope": "Actual fifth public record and documentary notice update; mathematical Lean sources and submitted qualification snapshots are unchanged.",
+  "registered_dossiers": 5,
+  "registered_main_results": 26,
+  "registered_selected_declarations": 42,
+  "direct_numbered_companion_results": [
+    "T13.1",
+    "T15.1"
+  ],
+  "includes_T15_1_displayed_corollary": true,
+  "preserved_earlier_registration_files": 81,
+  "preserved_earlier_cycle_objects": 4,
+  "changed_tex_files": [
+    "formalization.tex"
+  ],
+  "unchanged_tex_files": 33,
+  "latex_executions": 4,
+  "pdf_pages": {
+    "main": 33,
+    "companion": 84
+  },
+  "registry_urls_per_pdf": 5,
+  "cross_document_links_checked": 104,
+  "notice_pages_visually_inspected": 4,
+  "local_checks_passed": [
+    "check_sources",
+    "check_publication (frozen preparation snapshot)",
+    "check_registered_coverage --require-all",
+    "check_registry_final with actual111-theorem axiom log",
+    "check_registration_notice",
+    "git diff --check"
+  ],
+  "negative_controls_passed": {
+    "registered_coverage": 13,
+    "final_interface": 6
+  },
+  "completed_unchanged_proof_graph_ci": {
+    "run_id": 43468665573,
+    "head_sha": "e9eff685bdafe82de13969b684d45215d1031be8",
+    "conclusion": "success",
+    "url": "https://github.com/Vulkin-prog/paper-p1-lean/actions/runs/43468665573"
+  },
+  "submitted_final_source_commit": "eeda0e055bc16afa6bb6402727afe733ace9961e"
+}

@@ -10,9 +10,11 @@ See [publication alignment](PUBLICATION_ALIGNMENT.md),
 [French critical review](reviews/2026-11-12/PUBLICATION_REVIEW_FR.md),
 [current index](manuscript-results-publication-2026-11-12.json) and
 [actual replay](validation/publication-2026-11-12/lean-validation.json).
-The author now requests preservation of the four issued Palomar records and
-allows merging the two unregistered remainders. The [final five-record plan](../palomar/REGISTRATION_PLAN_FINAL.json)
-keeps all26 main results explicitly selected through42 statements and adds
+The author's preservation and merger instruction is complete: the four earlier
+Palomar records are unchanged and the merged remainder is publicly verified as
+[PALOMAR-2026-11-13-000020 v1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000020&version=1).
+The [final five-record plan](../palomar/REGISTRATION_PLAN_FINAL.json)
+has all26 main results explicitly registered through42 statements and includes
 direct companion Propositions13.1 and15.1 with its displayed sequence corollary. The
 [new111-theorem interface and clause correspondence](REGISTRATION_FINAL_ALIGNMENT.md)
 preserve all thirteen remaining main-result clauses. No mathematical paper
@@ -21,7 +23,10 @@ Publication of favorable actual reviews remains delegated. See
 [live progress](../palomar/publication/CYCLE_STATE.json) and the
 [issued-record audit](../palomar/publication/REGISTRATION_COVERAGE.json).
 The earlier six-candidate allocation and all qualification snapshots remain
-preserved; planned coverage does not imply an issued final registration.
+preserved. The [documentary paper/PDF update](../manuscripts/paper-p1/registration-update-2026-11-13/)
+records the five actual identifiers and immutable source pins. Only the
+formalization notice changes; the other33 TeX files are preserved. Both PDFs
+have checked registry and cross-document links and visually inspected notice pages.
 
 ## Preceding V2 alignment (historical snapshot)
 

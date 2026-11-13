@@ -2,9 +2,14 @@
 
 ## Current publication dossier
 
-The [publication edition received 12 November 2026](manuscripts/paper-p1/publication-2026-11-12/)
-contains the [33-page article](manuscripts/paper-p1/publication-2026-11-12/pdf/P1_Main_EN.pdf)
-and [84-page companion](manuscripts/paper-p1/publication-2026-11-12/pdf/P1_Companion_EN.pdf).
+The [registration notice updated 13 November 2026](manuscripts/paper-p1/registration-update-2026-11-13/)
+contains the [33-page article](manuscripts/paper-p1/registration-update-2026-11-13/pdf/P1_Main_EN.pdf)
+and [84-page companion](manuscripts/paper-p1/registration-update-2026-11-13/pdf/P1_Companion_EN.pdf).
+Only the formalization notice differs from the
+[publication edition received 12 November 2026](manuscripts/paper-p1/publication-2026-11-12/):
+the other33 TeX files, including all mathematical statements and the assistance
+statement, are byte-identical. The new notice records the five actual public
+registrations and their exact source commits; its PDF links and layout are checked.
 Its 118 results retain the prior labels and numbering. T4.3 clarifies the original
 versus homogeneous event scopes; the mathematical Lean code and pins are unchanged.
 The [current correspondence](docs/manuscript-results-publication-2026-11-12.json),
@@ -18,8 +23,9 @@ three new targets are explicit compound statements. The historical six-candidate
 allocation and its52 selections remain in the preserved
 [publication preparation](palomar/REGISTRATION_PLAN_PUBLICATION.json).
 The [live cycle record](palomar/publication/CYCLE_STATE.json) follows strictly
-successive dossiers. **Four registrations are public and independently checked**,
-covering 19 of the 26 main results through 39 selected statements.
+successive dossiers. **Five public registrations have been read back and checked**,
+covering all26 main results through42 selected statements, with direct companion
+T13.1 and T15.1 selections and T15.1's displayed sequence corollary.
 The [archived coverage audit](palomar/publication/REGISTRATION_COVERAGE.json)
 links each numbered main result to its actual selection and public record.
 
@@ -29,7 +35,7 @@ links each numbered main result to its actual selection and public record.
 | Cumulants and optimality | 3.3–3.4, 6.1–6.2 | 8 | [PALOMAR-2026-11-13-000001 v1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000001&version=1) |
 | Pair profiles and channel hierarchy | 3.1–3.2, 8.1–8.3 | 13 | [PALOMAR-2026-11-13-000002 v1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000002&version=1) |
 | Stopping, conversion and reconstruction | 4.1–4.2, 5.1–5.3 | 8 | [PALOMAR-2026-11-13-000008 v1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000008&version=1) |
-| Uniform event calculus, Hermite laws and the fixed-moment barrier | 2.1–2.5,7.1,8.4; companion13.1,15.1 and the latter's sequence corollary | 3 compound targets | [Merged final candidate; not registered](RegistryFinal/README.md) |
+| Uniform event calculus, Hermite laws and the fixed-moment barrier | 2.1–2.5,7.1,8.4; companion13.1,15.1 and the latter's sequence corollary | 3 compound targets | [PALOMAR-2026-11-13-000020 v1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000020&version=1) |
 
 Brice Pouly's name, GitHub handle and ORCID are checked in all three person
 roles for every published entry. The first registration fixes source
@@ -40,11 +46,17 @@ remains explicit. The second, third and fourth entries use source
 [expanded assistance metadata](palomar/publication-followup/), recording the
 ChatGPT mathematical assistance already credited in the paper. Their proof code
 and mathematical manuscript sources are unchanged. The second, third and fourth
-entries have no published warnings. The merged remainder uses the separate
+entries have no published warnings. The fifth entry fixes source
+`eeda0e055bc16afa6bb6402727afe733ace9961e` and uses the separate
 `RegistryFinal` project and [final metadata](palomar/final/foundations/formalization.yaml).
 It has its own111-theorem audit; the mathematical manuscript sources and all four
-issued records are preserved. Its official qualification and editorial decision
-remain separate steps.
+earlier records are preserved. Its actual full preflight, Palomar verification,
+rendering and favorable editorial review have completed. It has no published
+editorial warnings. The [public readback receipt](palomar/final/foundations/registration/VALIDATION.json)
+checks its three selected declarations, name/ORCID, source and dependency pins,
+and accepted technical evidence. The four earlier registration trees and their
+exact cycle objects remain unchanged. Frozen candidate READMEs and plans retain
+their source-snapshot wording; live results are in the cycle and coverage records.
 
 The author authorized publication of favorable actual reviews without a new
 approval prompt. Each review must first be examined and presented and the request

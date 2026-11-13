@@ -1,18 +1,18 @@
 {
   "schema_version": 1,
   "status": "verified_archived_public_records",
-  "checked_at": "2026-11-13T17:01:23.743676+00:00",
+  "checked_at": "2026-11-13T22:15:17.894200+00:00",
   "repository": "Vulkin-prog/paper-p1-lean",
   "publication_plan": "palomar/REGISTRATION_PLAN_FINAL.json",
   "publication_index": "docs/manuscript-results-publication-2026-11-12.json",
   "allocation_source_commit": "eeda0e055bc16afa6bb6402727afe733ace9961e",
   "publication_plan_sha256": "8b02b4b05e90f8a09a9a35f24b047841712c52e429d74930f5fb35147c915359",
   "publication_index_sha256": "7796235dfb26c0bd7f1f3f7c3e35bae2371b53430b9bcf98b4effdafe636daef",
-  "cycle_state_sha256": "5bb4dea97898c5fc77dd39fede85c34cbd121a5839e843c230d696880ee9729f",
-  "registered_dossiers": 4,
-  "registered_main_results": 19,
+  "cycle_state_sha256": "d878ed66689c81ee1b3405dee01d13281ea534b5fc13a8adb0022ca572d1a6f8",
+  "registered_dossiers": 5,
+  "registered_main_results": 26,
   "total_main_results": 26,
-  "registered_selected_declarations": 39,
+  "registered_selected_declarations": 42,
   "total_selected_declarations": 42,
   "planned_registrations": 5,
   "records": [
@@ -111,6 +111,24 @@
         "PaperP1Registry.V2.StoppingReconstruction.triple_reconstruction"
       ],
       "supplementary_selected_declarations": [],
+      "published_warning_count": 0,
+      "source_and_git_dependency_pins_checked": 10
+    },
+    {
+      "slug": "foundations",
+      "id": "PALOMAR-2026-11-13-000020",
+      "version": 1,
+      "url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000020&version=1",
+      "source_commit": "eeda0e055bc16afa6bb6402727afe733ace9961e",
+      "public_entry_sha256": "8189c1dc2027b1ad42a49abbfad02b4c4c4776a248f46af620bdd94288a9f612",
+      "selected_declarations": [
+        "PaperP1Registry.Final.Affine.uniform_event_calculus",
+        "PaperP1Registry.Final.Reference.positive_hermite_approximation",
+        "PaperP1Registry.Final.Obstruction.fixed_moment_barrier"
+      ],
+      "supplementary_selected_declarations": [
+        "PaperP1Registry.Final.Obstruction.fixed_moment_barrier"
+      ],
       "published_warning_count": 0,
       "source_and_git_dependency_pins_checked": 10
     }
@@ -407,9 +425,9 @@
         "PaperP1Registry.Final.Affine.uniform_event_calculus"
       ],
       "dossier": "foundations",
-      "registered": false,
-      "registration_id": null,
-      "registry_url": null,
+      "registered": true,
+      "registration_id": "PALOMAR-2026-11-13-000020",
+      "registry_url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000020&version=1",
       "selected_conjunction_clauses": [
         1,
         2
@@ -425,9 +443,9 @@
         "PaperP1Registry.Final.Affine.uniform_event_calculus"
       ],
       "dossier": "foundations",
-      "registered": false,
-      "registration_id": null,
-      "registry_url": null,
+      "registered": true,
+      "registration_id": "PALOMAR-2026-11-13-000020",
+      "registry_url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000020&version=1",
       "selected_conjunction_clauses": [
         3
       ]
@@ -442,9 +460,9 @@
         "PaperP1Registry.Final.Affine.uniform_event_calculus"
       ],
       "dossier": "foundations",
-      "registered": false,
-      "registration_id": null,
-      "registry_url": null,
+      "registered": true,
+      "registration_id": "PALOMAR-2026-11-13-000020",
+      "registry_url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000020&version=1",
       "selected_conjunction_clauses": [
         4,
         5
@@ -460,9 +478,9 @@
         "PaperP1Registry.Final.Affine.uniform_event_calculus"
       ],
       "dossier": "foundations",
-      "registered": false,
-      "registration_id": null,
-      "registry_url": null,
+      "registered": true,
+      "registration_id": "PALOMAR-2026-11-13-000020",
+      "registry_url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000020&version=1",
       "selected_conjunction_clauses": [
         6
       ]
@@ -477,9 +495,9 @@
         "PaperP1Registry.Final.Affine.uniform_event_calculus"
       ],
       "dossier": "foundations",
-      "registered": false,
-      "registration_id": null,
-      "registry_url": null,
+      "registered": true,
+      "registration_id": "PALOMAR-2026-11-13-000020",
+      "registry_url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000020&version=1",
       "selected_conjunction_clauses": [
         7,
         8
@@ -495,9 +513,9 @@
         "PaperP1Registry.Final.Reference.positive_hermite_approximation"
       ],
       "dossier": "foundations",
-      "registered": false,
-      "registration_id": null,
-      "registry_url": null,
+      "registered": true,
+      "registration_id": "PALOMAR-2026-11-13-000020",
+      "registry_url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000020&version=1",
       "selected_conjunction_clauses": [
         1,
         2
@@ -513,9 +531,9 @@
         "PaperP1Registry.Final.Reference.positive_hermite_approximation"
       ],
       "dossier": "foundations",
-      "registered": false,
-      "registration_id": null,
-      "registry_url": null,
+      "registered": true,
+      "registration_id": "PALOMAR-2026-11-13-000020",
+      "registry_url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000020&version=1",
       "selected_conjunction_clauses": [
         3,
         4,
@@ -530,7 +548,7 @@
       "selected_declarations": [
         "PaperP1Registry.Final.Affine.uniform_event_calculus"
       ],
-      "registered": false,
+      "registered": true,
       "additional_displayed_corollary": null
     },
     {
@@ -539,7 +557,7 @@
       "selected_declarations": [
         "PaperP1Registry.Final.Obstruction.fixed_moment_barrier"
       ],
-      "registered": false,
+      "registered": true,
       "additional_displayed_corollary": {
         "numbered_result": false,
         "same_source_file": true,

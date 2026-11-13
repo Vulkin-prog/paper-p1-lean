@@ -57,6 +57,7 @@ jobs:
           python3 -m unittest discover -s tests -p test_publication.py
           python3 scripts/check_registered_coverage.py
           python3 -m unittest discover -s tests -p test_registered_coverage.py
+          python3 scripts/check_registration_notice.py
           python3 scripts/check_editorial_previews.py
           python3 -m unittest discover -s tests -p test_editorial_previews.py
           python3 scripts/check_scientific_preview.py
@@ -98,7 +99,7 @@ jobs:
           cat axiom-audit.txt
           python3 scripts/check_axioms.py axiom-audit.txt
 
-      - name: Build current six V2 Palomar proof interfaces
+      - name: Build preserved V2 Palomar proof interfaces
         run: |
           python3 scripts/check_disk.py
           # Reuse the same pinned dependency directory without another cache download.

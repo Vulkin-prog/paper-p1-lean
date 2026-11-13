@@ -2,9 +2,12 @@
 
 The author requested preservation of the four issued Palomar records and allowed
 the two unregistered remainder scopes to be merged and supplemented from the
-companion. The final allocation therefore aims at **five records**, within the
+companion. The final allocation now has **five issued records**, within the
 maximum of six. It preserves the original manuscript versions, all mathematical
 proof modules, `RegistryV2`, and the four issued records and their evidence.
+The merged final dossier is
+[PALOMAR-2026-11-13-000020 v1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000020&version=1),
+at source `eeda0e055bc16afa6bb6402727afe733ace9961e`.
 
 The new [contained project](../RegistryFinal/README.md) selects three compound
 statements. All eight affine-event endpoints are conjoined without loss of
@@ -41,8 +44,9 @@ distinct. The four unchanged published scopes retain main5.2's conditional
 254-order transfer assumption.
 
 The [final plan](../palomar/REGISTRATION_PLAN_FINAL.json) maps all26 main results
-exactly once. It has42 selected statements:39 issued declarations and three new
-compound targets. It separately maps two of the companion's92 numbered results
+exactly once. Its42 selected statements are all issued:39 declarations in the
+four unchanged earlier records and three compound targets in the fifth.
+It separately maps two of the companion's92 numbered results
 and Proposition15.1's displayed unnumbered corollary. Importing other companion proofs does
 not count as their direct registration. Its new interface contains111 proved
 theorem declarations, including explicit transport to actual probability laws.
@@ -52,12 +56,22 @@ arithmetic error exponents is introduced.
 Lean remains v4.36.0-rc2 and Mathlib remains pinned to
 `9d581dfff2e41de989072ea63abf3daf69311520`. The four-record preservation check,
 complete new axiom inventory and exact kernel comparison qualify the source
-separately from the required new full official workflow and editorial review.
+separately from the completed official workflow and editorial review. Actual full
+preflight43439453730, Palomar verification43448364878 and rendering43459500256
+passed. The favorable actual review had no editorial warnings or requested
+changes and was published under the author's standing delegation. Its exact
+delivered digest was bound to the completed private consent; the public entry,
+three selections, all person records and dependency preservation pins were read
+back and checked. The technical report retains its nonblocking preferred
+review-surface size warning; it did not prevent the actual editorial pass.
 The [issued-record audit](../palomar/publication/REGISTRATION_COVERAGE.json)
 counts only actual public entries. The new source metadata records Brice Pouly
 and ORCID0009-0008-8491-2467 in all three roles, and retains both the Codex Lean
 assistance and the source manuscript's ChatGPT mathematical/editorial assistance.
 
-The mathematical TeX is unchanged. The final documentary paper/PDF notice must
-be generated from the actual issued records and final scope, preserving the
-received publication edition. No prospective record identifier is assigned.
+The [documentary paper/PDF edition](../manuscripts/paper-p1/registration-update-2026-11-13/)
+is generated from these five actual records and the final scope. Only
+`formalization.tex` changes; the other33 TeX files and the received publication
+edition are preserved. Both PDFs have all five actual registry links and104
+checked cross-document links. Their notice and assistance pages were visually
+inspected. Run `scripts/check_registration_notice.py` to verify this edition.

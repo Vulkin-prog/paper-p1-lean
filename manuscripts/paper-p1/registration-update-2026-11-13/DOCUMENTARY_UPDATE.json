@@ -1,0 +1,188 @@
+{
+  "schema_version": 1,
+  "kind": "documentary_registration_notice_update",
+  "created_at": "2026-11-13T22:17:34.640387+00:00",
+  "baseline_source_directory": "manuscripts/paper-p1/publication-2026-11-12/sources",
+  "changed_tex_files": [
+    "formalization.tex"
+  ],
+  "unchanged_math_and_assistance_tex_files": 33,
+  "source_files": {
+    "assistance.tex": "2eaf147747cf16a7b54ab7fa002f684bd500779296f78902bb0034c714ca6b28",
+    "bibliography.tex": "ced21913c0ea9b37bc7c59bef6fe6b11d89867c3e4da8868ffe8627a7990cf3b",
+    "bibliography_companion.tex": "f3c3602c7248578b98054b5212f85af18117496d11e154916942ced1d190f912",
+    "bibliography_main.tex": "847f561ce3426a4e51fbde1df333d2c25835e9fa1996cbb92640589d9d539bba",
+    "companion.tex": "3d31489734bcabfdc640954b9e5632faa05eb37b64ea636c2b1c5f6fe23447ce",
+    "companion_sections/basic_arithmetic.tex": "d9a806c2a54cdd3eb70a4bbac7427d92483be263ebf24147ea77e0f4914d0e84",
+    "companion_sections/certificates.tex": "8cd7e4affb7846e24b7b0cd44ae8dda17fc4e83126791c9cfff615bb872961bb",
+    "companion_sections/channel_counts.tex": "0dd1bcbe1e2293928482b56adfcb3ce7b846ed5694b82f32b12c4c9a142a6a65",
+    "companion_sections/confinement.tex": "cb67ea2dbc9a4401851cfc20c1311a74f601195c57c6a3cd62f2a2bedc55da0a",
+    "companion_sections/exact_reconstruction.tex": "428f08a1f0ef855a95d4e452a78de483a315fe33d64537611888e8409f5e814e",
+    "companion_sections/fixed_moments.tex": "addce9039fbbbee435b5305346d25a3d93b929756cd730fea679c4ae31526269",
+    "companion_sections/guide.tex": "35fb8a964c84f046d5dc5cf20b5143b691157dfd525c35f0aee7efcb0a667068",
+    "companion_sections/half_counts.tex": "5fb04088c22d19ffb18c50b6b0a93b1a118412e0c1689c63f3cc0706fae0f3a2",
+    "companion_sections/moment_obstruction.tex": "68d14a0fefd9caabc9960b5fe26088a3cbe139374f31a6fb5a1152ecac39f7ed",
+    "companion_sections/pair_profiles.tex": "1d53155aba01e0dafbee640eabad08bb6162eaa697080c321f8fac26e2bf86d6",
+    "companion_sections/pair_rigidity.tex": "84b8152c24ba67b963ebcbffd4065fc9836631d7470b5412410df040e5e58f10",
+    "companion_sections/poisson_calculus.tex": "9751c3cd0723fba0949c246adfc524a49178843d7a7c2031c1efee6c9bd14b09",
+    "companion_sections/short_supports.tex": "c2bbbd765ffa0ecf69d9c0d731975eb3a4fa6ff0b79eef8d6970c49dbe82439b",
+    "companion_sections/third_cumulant.tex": "91039e61898101961f4db7c1ad9ccfe7f879e4249e19523efb1d21248efc14fc",
+    "companion_sections/triple_activities.tex": "8ef14451905c708f1a6115e508d16554ebfb4473f0e9649d13348090331eb8ad",
+    "companion_sections/uniform_support.tex": "bc7801a4f3ef8d40f653c63081deef3b47d34a9bcdd5014d062bdaa3fda36f49",
+    "formalization.tex": "a16e7016efb02b18c7a2d4f06aac7483ac211c028dbc0e323f2c40695c658d10",
+    "main.tex": "79a17afe331a6643fd0602dcd32c34a55392e303a41d6da630a04b914e199e15",
+    "main_sections/abstract.tex": "6893ce5f48c421b94558c2f9df585f71aace49484c1a0c4393e0935ec17465ec",
+    "main_sections/channel_hierarchy.tex": "cd10fec13936b973eb82a073659503a51cd827074039674b5e7b3fbb7651498a",
+    "main_sections/completion.tex": "7dcc0be2e455b0042f7a3325a085c18864d7805e7e00d975d54eed5d6ed37d97",
+    "main_sections/discussion.tex": "95c4583e35d031356ab1d7cea164e24c1cf9ee0529f93cf8e36b5c9f7650dbad",
+    "main_sections/event_algebra.tex": "01506e88758ed869214baa07870d14ee1068688d51443b755897b2e17d37b495",
+    "main_sections/introduction.tex": "57cfc4b21c9b171269cfe9110ebe04c449d852fe92235e2dce6fd9c5cdcf8a6b",
+    "main_sections/quartic_lower.tex": "6e2c882297edb381754dfbac3b7d62ef3e6847d9abe7cc200be2e9a92341da49",
+    "main_sections/reconstruction.tex": "8c8c33adadc452b939f7fc3ccbb9a04412b706501c6079671138278d075e8106",
+    "main_sections/scales.tex": "e288a8c3a2847d3eed7ae4f3ac9e5c5e1499f836ea84f480a6f42c3259e34434",
+    "main_sections/stopped.tex": "86d9baeed211a18303210d80b98481c15b6a0e16a9c6d2c569f2977de62879e6",
+    "preamble.tex": "8341243c1aee16364add8cf7100ab81191fa657bdc04e52e521209dc829af61f"
+  },
+  "pdfs": {
+    "main": {
+      "path": "pdf/P1_Main_EN.pdf",
+      "sha256": "3d8d362942b3ba9cafe3fa73c244791fdc64a3c391e634ec99f8b13852ae6834",
+      "pages": 33
+    },
+    "companion": {
+      "path": "pdf/P1_Companion_EN.pdf",
+      "sha256": "803a7c2bd5b794fc7574457c6171e88056b8c05aa1b0a1f320b558b6ac97a8af",
+      "pages": 84
+    }
+  },
+  "registered_count": 5,
+  "selected_statements": 42,
+  "main_results_covered": 26,
+  "direct_companion_results": [
+    "T13.1",
+    "T15.1"
+  ],
+  "includes_T15_1_displayed_corollary": true,
+  "allocation_source_commit": "eeda0e055bc16afa6bb6402727afe733ace9961e",
+  "public_registrations": [
+    {
+      "slug": "quadratic_limits",
+      "id": "PALOMAR-2026-11-12-000013",
+      "version": 1,
+      "url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-12-000013&version=1",
+      "source_commit": "f9a2d213265a6833318745dd7f2d74c02090ab19",
+      "public_entry_sha256": "2d14285704a7e8059d670f8ccb3529417fa42ed2491ea7efd174b22659b3b161",
+      "selected_declarations": [
+        "PaperP1Registry.V2.QuadraticLimits.source_probability",
+        "PaperP1Registry.V2.QuadraticLimits.poisson_expansion",
+        "PaperP1Registry.V2.QuadraticLimits.moving_residue_equivalent",
+        "PaperP1Registry.V2.QuadraticLimits.mean_bias_quantized",
+        "PaperP1Registry.V2.QuadraticLimits.nominal_quadratic_comparison",
+        "PaperP1Registry.V2.QuadraticLimits.reference_series",
+        "PaperP1Registry.V2.QuadraticLimits.optimal_quadratic",
+        "PaperP1Registry.V2.QuadraticLimits.polynomial_weights",
+        "PaperP1Registry.V2.QuadraticLimits.no_retained_start",
+        "PaperP1Registry.V2.QuadraticLimits.literal_mean_bias"
+      ],
+      "supplementary_selected_declarations": [
+        "PaperP1Registry.V2.QuadraticLimits.source_probability"
+      ],
+      "published_warning_count": 1,
+      "source_and_git_dependency_pins_checked": 10
+    },
+    {
+      "slug": "cumulants_optimality",
+      "id": "PALOMAR-2026-11-13-000001",
+      "version": 1,
+      "url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000001&version=1",
+      "source_commit": "d6a0f6c5109886127526677603eb6b74e8c0cd82",
+      "public_entry_sha256": "cb0974d68844b77b7e5060af9209169fcf53f029fa13bfd2e2bb5b51375aefec",
+      "selected_declarations": [
+        "PaperP1Registry.V2.CumulantsOptimality.factorial_source",
+        "PaperP1Registry.V2.CumulantsOptimality.third_exact_identity",
+        "PaperP1Registry.V2.CumulantsOptimality.fourth_exact_identity",
+        "PaperP1Registry.V2.CumulantsOptimality.principal_second_equivalent",
+        "PaperP1Registry.V2.CumulantsOptimality.optimal_third_cumulant",
+        "PaperP1Registry.V2.CumulantsOptimality.absolute_triple_activity",
+        "PaperP1Registry.V2.CumulantsOptimality.quartic_non_cancellation",
+        "PaperP1Registry.V2.CumulantsOptimality.quadratic_optimality"
+      ],
+      "supplementary_selected_declarations": [
+        "PaperP1Registry.V2.CumulantsOptimality.factorial_source",
+        "PaperP1Registry.V2.CumulantsOptimality.third_exact_identity",
+        "PaperP1Registry.V2.CumulantsOptimality.fourth_exact_identity",
+        "PaperP1Registry.V2.CumulantsOptimality.principal_second_equivalent"
+      ],
+      "published_warning_count": 0,
+      "source_and_git_dependency_pins_checked": 10
+    },
+    {
+      "slug": "pairs_channels",
+      "id": "PALOMAR-2026-11-13-000002",
+      "version": 1,
+      "url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000002&version=1",
+      "source_commit": "d6a0f6c5109886127526677603eb6b74e8c0cd82",
+      "public_entry_sha256": "3fbe91f6e1151d109051d4d227038c0180adb4fd9adf404b1323bfad277ff00e",
+      "selected_declarations": [
+        "PaperP1Registry.V2.PairsChannels.complete_pair_profile",
+        "PaperP1Registry.V2.PairsChannels.explicit_two_channel",
+        "PaperP1Registry.V2.PairsChannels.fixed_height_hierarchy",
+        "PaperP1Registry.V2.PairsChannels.phase_positive",
+        "PaperP1Registry.V2.PairsChannels.weighted_nonaligned",
+        "PaperP1Registry.V2.PairsChannels.two_channel_equivalents",
+        "PaperP1Registry.V2.PairsChannels.two_channel_remainder",
+        "PaperP1Registry.V2.PairsChannels.height_five_closed",
+        "PaperP1Registry.V2.PairsChannels.height_five_coefficient",
+        "PaperP1Registry.V2.PairsChannels.height_six_phase",
+        "PaperP1Registry.V2.PairsChannels.phase_three_four",
+        "PaperP1Registry.V2.PairsChannels.height_five_channels",
+        "PaperP1Registry.V2.PairsChannels.fixed_height_lower_power"
+      ],
+      "supplementary_selected_declarations": [],
+      "published_warning_count": 0,
+      "source_and_git_dependency_pins_checked": 10
+    },
+    {
+      "slug": "stopping_reconstruction",
+      "id": "PALOMAR-2026-11-13-000008",
+      "version": 1,
+      "url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000008&version=1",
+      "source_commit": "d6a0f6c5109886127526677603eb6b74e8c0cd82",
+      "public_entry_sha256": "a63f67d6af40fccf65e904a2269da400d392fc3053a7b1a7a0747294a1b88cc4",
+      "selected_declarations": [
+        "PaperP1Registry.V2.StoppingReconstruction.expansion_polynomial_expansion",
+        "PaperP1Registry.V2.StoppingReconstruction.prefix_suffix",
+        "PaperP1Registry.V2.StoppingReconstruction.expansion_positive_stopped_kernel",
+        "PaperP1Registry.V2.StoppingReconstruction.expansion_stopped_l1_bound",
+        "PaperP1Registry.V2.StoppingReconstruction.finite_conversion",
+        "PaperP1Registry.V2.StoppingReconstruction.run_conversion",
+        "PaperP1Registry.V2.StoppingReconstruction.conditional_transfer",
+        "PaperP1Registry.V2.StoppingReconstruction.triple_reconstruction"
+      ],
+      "supplementary_selected_declarations": [],
+      "published_warning_count": 0,
+      "source_and_git_dependency_pins_checked": 10
+    },
+    {
+      "slug": "foundations",
+      "id": "PALOMAR-2026-11-13-000020",
+      "version": 1,
+      "url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000020&version=1",
+      "source_commit": "eeda0e055bc16afa6bb6402727afe733ace9961e",
+      "public_entry_sha256": "8189c1dc2027b1ad42a49abbfad02b4c4c4776a248f46af620bdd94288a9f612",
+      "selected_declarations": [
+        "PaperP1Registry.Final.Affine.uniform_event_calculus",
+        "PaperP1Registry.Final.Reference.positive_hermite_approximation",
+        "PaperP1Registry.Final.Obstruction.fixed_moment_barrier"
+      ],
+      "supplementary_selected_declarations": [
+        "PaperP1Registry.Final.Obstruction.fixed_moment_barrier"
+      ],
+      "published_warning_count": 0,
+      "source_and_git_dependency_pins_checked": 10
+    }
+  ],
+  "original_publication_edition_preserved": true,
+  "four_original_registrations_unchanged": true,
+  "scope": "Only the formalization/registration notice is revised. The other33 TeX files,118 mathematical statements, bibliography and AI-assistance statement are byte-identical to the received publication edition. Registry claims use actual archived issued records and explicit clause coverage, not proof-dependency coverage."
+}

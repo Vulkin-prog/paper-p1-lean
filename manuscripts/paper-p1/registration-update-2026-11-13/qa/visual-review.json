@@ -1,0 +1,69 @@
+{
+  "status": "pass",
+  "reviewed_at": "2026-11-13T22:17:34.521992+00:00",
+  "registered_count": 5,
+  "four_latest_notice_pages_visually_inspected": true,
+  "must_refresh_for_final_fifth_registration": false,
+  "pages_inspected": {
+    "main": [
+      31,
+      32
+    ],
+    "companion": [
+      82,
+      83
+    ]
+  },
+  "findings": "The five-row scope tables, all five actual registry identifiers, immutable source pins and AI-assistance sections are readable. No clipped text, overlap or orphaned heading is present. The two identifiers per line fit inside both text areas. All mathematical and assistance TeX outside the formalization notice is unchanged.",
+  "pdfs": {
+    "main": {
+      "pages": 33,
+      "pdf_sha256": "3d8d362942b3ba9cafe3fa73c244791fdc64a3c391e634ec99f8b13852ae6834",
+      "all_actual_registry_urls_verified": true,
+      "registry_urls": [
+        "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-12-000013&version=1",
+        "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000001&version=1",
+        "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000002&version=1",
+        "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000008&version=1",
+        "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000020&version=1"
+      ],
+      "rendered_pages": [
+        {
+          "path": "qa/rendered/main-31.png",
+          "sha256": "7d65f4794a6a66959cafe6dbc41c2ea739508bb20a5a84e92600e5bb5a407aa7"
+        },
+        {
+          "path": "qa/rendered/main-32.png",
+          "sha256": "fda919666d54fb3de10b94ffc5a8d75f42b89cf6289fbbc025efa30deeab3841"
+        }
+      ],
+      "paired_pdf_file_links_checked": 65,
+      "all_paired_named_destinations_present": true
+    },
+    "companion": {
+      "pages": 84,
+      "pdf_sha256": "803a7c2bd5b794fc7574457c6171e88056b8c05aa1b0a1f320b558b6ac97a8af",
+      "all_actual_registry_urls_verified": true,
+      "registry_urls": [
+        "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-12-000013&version=1",
+        "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000001&version=1",
+        "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000002&version=1",
+        "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000008&version=1",
+        "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000020&version=1"
+      ],
+      "rendered_pages": [
+        {
+          "path": "qa/rendered/companion-82.png",
+          "sha256": "4a771fa8e77beb8da49de1d0a1318727dbe52c2c4ae17441b6a46b3736d569cb"
+        },
+        {
+          "path": "qa/rendered/companion-83.png",
+          "sha256": "fe68bb39676cdefd53a94e5dc5a13a6dca3550bb70d1ad455c0d6919db33bcba"
+        }
+      ],
+      "paired_pdf_file_links_checked": 39,
+      "all_paired_named_destinations_present": true
+    }
+  },
+  "public_copy_paths_remapped": true
+}

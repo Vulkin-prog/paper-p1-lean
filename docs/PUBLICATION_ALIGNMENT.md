@@ -7,6 +7,13 @@ the homogeneous conditional/propagation clauses from the actual-run small-contac
 mass. The existing theorem `FixedSourcePropagationTheorem.main_6_3` already
 proves those scopes. No Lean mathematical source or pin is changed.
 
+The [13 November documentary update](../manuscripts/paper-p1/registration-update-2026-11-13/)
+changes only the formalization notice to the five actual public Palomar records.
+All26 main results and direct companion T13.1, T15.1 and its displayed corollary
+are covered. The other33 TeX files are unchanged. The PDFs remain33 and84 pages;
+their five registry URLs,104 paired-document links and notice layout are checked.
+`scripts/check_registration_notice.py` verifies the edition and all source/PDF hashes.
+
 - [Current source/type correspondence](manuscript-results-publication-2026-11-12.json).
 - [Immutable correspondence snapshot](validation/publication-2026-11-12/documentary-snapshot.json).
 - [French critical review](reviews/2026-11-12/PUBLICATION_REVIEW_FR.md).
@@ -29,10 +36,12 @@ declarations. Its source files and qualification evidence stay unchanged. Four
 of those scopes are now issued public records. At the author's request the two
 unregistered remainders are merged in the separate `RegistryFinal` project, with
 direct companion13.1 and15.1 selections and the latter's displayed corollary.
-The [final allocation](../palomar/REGISTRATION_PLAN_FINAL.json) aims at five total
+The [final allocation](../palomar/REGISTRATION_PLAN_FINAL.json) has five public
 records and42 selections, covering all26 main results explicitly. The new
-three-target interface has its own111-theorem audit and requires a fresh full
-official workflow; none of the four published entries is reopened. See the
+three-target interface has its own111-theorem audit and passed its fresh full
+official workflow, Palomar verification, rendering and editorial review. The
+fifth record is [PALOMAR-2026-11-13-000020 v1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000020&version=1).
+None of the four earlier published entries is reopened. See the
 [detailed correspondence](REGISTRATION_FINAL_ALIGNMENT.md). The final caller is
 `palomar-final-preflight.yml`; earlier callers and receipts remain preserved.
 

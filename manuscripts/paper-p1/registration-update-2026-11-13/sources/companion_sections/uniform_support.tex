@@ -1,0 +1,56 @@
+\section{Uniform independent support counts}
+\label{p1:uniform:appendix}
+
+\subsection{Full-support relations at all cardinalities}
+
+For $G\subseteq G_N$ and $r\ge2$, let $\mathcal H_{r,N}(G)$ consist
+of the ordered lists of $r$ distinct starts in $G$, with pairwise
+distances greater than $L$, for which there exist
+\[
+ s_i\in S_{x_i}\setminus\{0\},\qquad s_1+\cdots+s_r=0.
+\]
+The projections are nonzero in their effective square-class spaces.
+Minimality and affine compatibility are not required.
+
+\begin{proposition}[A uniform weighted count of full supports]
+\label{p1:uniform:full-support}
+For a fixed critical band, fixed $u>0$ and $\varepsilon>0$, uniformly
+in deterministic $G\subseteq G_N$ and integers $s\ge2$,
+\begin{equation}
+ \sum_{r=s}^{|G|}\frac{u^r}{r!}
+     \sum_{\boldsymbol x\in\mathcal H_{r,N}(G)}p^r
+       \ll_{u,C,\varepsilon}N^{-\min\{s/2,2\}+\varepsilon}.
+ \label{p2:uniform:full-support-bound}
+\end{equation}
+The scale threshold and implicit constant are independent of $s$ and $G$.
+Empty sums are zero.
+\end{proposition}
+
+\begin{proof}
+Fix $0<\eta<\min\{1,\varepsilon\}$.
+Lemma~\ref{p13:transfer:independent-tail}, applied with $v=u$ and
+$a=2-\eta$, gives a fixed cutoff. Increase it to $R\ge4$, still
+independent of $s,G$. On $G_N$ the exact marginals equal $p$, and each
+unordered family of $r$ distinct starts has exactly $r!$ orderings.
+Thus all terms with $r\ge R$, and any positive subfamily of them,
+have total mass at most $N^{-2+\eta}$.
+
+For each of the finitely many $2\le r<R$,
+Proposition~\ref{p1:arith:fixed-support}, with all $r$ effective
+projections nonzero, gives
+\[
+ |\mathcal H_{r,N}(G)|\ll_{r,C,\eta}N^{r/2+\eta}.
+\]
+Since $p\ll_C N^{-1}$, the corresponding weighted layer is
+$O_{r,u,C,\eta}(N^{-r/2+\eta})$.
+Take the maximum of these finitely many thresholds and sum their
+constants before varying $s$ or $G$.
+For $s=2$, $s=3$, and $4\le s<R$, the small layers are respectively
+$O(N^{-1+\eta})$, $O(N^{-3/2+\eta})$, and $O(N^{-2+\eta})$.
+For $s\ge R$ only a subfamily of the same tail remains.
+These bounds prove the assertion with a constant independent of $s,G$.
+\end{proof}
+
+The fixed cutoff may depend on the requested exponent margin.
+Accordingly the proposition gives the exponent $2-\varepsilon$ in
+its saturated range, without asserting the endpoint $N^{-2}$.
