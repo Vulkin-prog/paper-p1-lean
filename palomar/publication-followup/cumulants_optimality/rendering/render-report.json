@@ -1,0 +1,133 @@
+{
+  "artifact_tree_sha256": "d79834a10c8df9e4f743a3ac217ae1c621dee616a000c2a00dc4c0b808a0bb78",
+  "bwrap_source_tag": "v0.12.0",
+  "entrypoint": "Challenge/index.html",
+  "errors": [],
+  "format": "verso-html",
+  "lean_toolchain": "leanprover/lean4:v4.36.0-rc2",
+  "limits": {
+    "artifact_bytes": 26214400,
+    "artifact_files": 2000,
+    "artifact_nodes": 4000,
+    "build_file_bytes": 2147483648,
+    "memory_bytes": 12884901888,
+    "open_files": 4096,
+    "per_file_bytes": 8388608,
+    "tasks": 512,
+    "wall_seconds": 21600,
+    "workspace_bytes": 12884901888
+  },
+  "mathlib_cache": {
+    "bytes": 0,
+    "downloaded": 0,
+    "requested": 9081
+  },
+  "prepared_at": "2026-11-12T23:40:42Z",
+  "rendered_at": "2026-11-13T00:19:39Z",
+  "renderer_commit": "14aa8d6b3c2f14a8540605e37144560b9a00e7e7",
+  "schema_version": 3,
+  "source": {
+    "challenge_path": "RegistryV2/ChallengeP1V2CumulantsOptimality.lean",
+    "challenge_sha256": "e459a42167d88b3f45fd8703b2c9356ce9f10db6b8e1d6f39cbd5bf60b48981e",
+    "commit": "d6a0f6c5109886127526677603eb6b74e8c0cd82",
+    "comparator_config_path": "RegistryV2/comparator/p1_cumulants_optimality.json",
+    "lakefile_path": "RegistryV2/lakefile.toml",
+    "lean_toolchain_path": "RegistryV2/lean-toolchain",
+    "project_path": "RegistryV2",
+    "repository": "Vulkin-prog/paper-p1-lean",
+    "repository_url": "https://github.com/Vulkin-prog/paper-p1-lean",
+    "solution_path": "RegistryV2/SolutionP1V2CumulantsOptimality.lean"
+  },
+  "stage": "complete",
+  "status": "pass",
+  "surface": {
+    "audit_declarations": [
+      {
+        "declaration": "theorem PaperP1Registry.V2.CumulantsOptimality.factorial_source (N L r : Nat) :\n  And\n    (MeasureTheory.Integrable (fun \u03c9 => \u2191(Nat.descFactorial (PaperP1Registry.V2.CumulantsOptimality.runCount N L \u03c9) r))\n      PaperP1Registry.V2.CumulantsOptimality.primeSignMeasure)\n    (Eq (PaperP1Registry.V2.CumulantsOptimality.factorialMoment N L r)\n      (HMul.hMul (\u2191(Nat.factorial r))\n        (Finset.sum (Finset.powersetCard r (Finset.Ico N (HMul.hMul 2 N))) fun A =>\n          PaperP1Registry.V2.CumulantsOptimality.jointMoment L A)))",
+        "name": "PaperP1Registry.V2.CumulantsOptimality.factorial_source"
+      },
+      {
+        "declaration": "theorem PaperP1Registry.V2.CumulantsOptimality.third_exact_identity (N L : Nat) :\n  Eq (PaperP1Registry.V2.CumulantsOptimality.thirdCumulant N L)\n    (HAdd.hAdd\n      (HSub.hSub\n        (HMul.hMul 6\n          (Finset.sum (Finset.powersetCard 3 (Finset.Ico N (HMul.hMul 2 N))) fun A =>\n            PaperP1Registry.V2.CumulantsOptimality.centeredCoefficient L A))\n        (HMul.hMul 6\n          (Finset.sum (Finset.powersetCard 2 (Finset.Ico N (HMul.hMul 2 N))) fun e =>\n            HMul.hMul (Finset.sum e fun x => PaperP1Registry.V2.CumulantsOptimality.marginal x L)\n              (PaperP1Registry.V2.CumulantsOptimality.centeredCoefficient L e))))\n      (HMul.hMul 2\n        (Finset.sum (Finset.Ico N (HMul.hMul 2 N)) fun x =>\n          HPow.hPow (PaperP1Registry.V2.CumulantsOptimality.marginal x L) 3)))",
+        "name": "PaperP1Registry.V2.CumulantsOptimality.third_exact_identity"
+      },
+      {
+        "declaration": "theorem PaperP1Registry.V2.CumulantsOptimality.fourth_exact_identity (N L : Nat) :\n  Eq (PaperP1Registry.V2.CumulantsOptimality.fourthCumulant N L)\n    (HSub.hSub\n      (HAdd.hAdd\n        (HSub.hSub\n          (HSub.hSub\n            (HMul.hMul 24\n              (Finset.sum (Finset.powersetCard 4 (Finset.Ico N (HMul.hMul 2 N))) fun A =>\n                PaperP1Registry.V2.CumulantsOptimality.centeredCoefficient L A))\n            (HMul.hMul 12\n              (HPow.hPow\n                (Finset.sum (Finset.powersetCard 2 (Finset.Ico N (HMul.hMul 2 N))) fun e =>\n                  PaperP1Registry.V2.CumulantsOptimality.centeredCoefficient L e)\n                2)))\n          (HMul.hMul 24\n            (Finset.sum (Finset.powersetCard 3 (Finset.Ico N (HMul.hMul 2 N))) fun A =>\n              HMul.hMul (PaperP1Registry.V2.CumulantsOptimality.centeredCoefficient L A)\n                (Finset.sum A fun x => PaperP1Registry.V2.CumulantsOptimality.marginal x L))))\n        (HMul.hMul 24\n          (Finset.sum (Finset.powersetCard 2 (Finset.Ico N (HMul.hMul 2 N))) fun e =>\n            HMul.hMul\n              (HAdd.hAdd (Finset.sum e fun x => HPow.hPow (PaperP1Registry.V2.CumulantsOptimality.marginal x L) 2)\n                (Finset.prod e fun x => PaperP1Registry.V2.CumulantsOptimality.marginal x L))\n              (PaperP1Registry.V2.CumulantsOptimality.centeredCoefficient L e))))\n      (HMul.hMul 6\n        (Finset.sum (Finset.Ico N (HMul.hMul 2 N)) fun x =>\n          HPow.hPow (PaperP1Registry.V2.CumulantsOptimality.marginal x L) 4)))",
+        "name": "PaperP1Registry.V2.CumulantsOptimality.fourth_exact_identity"
+      },
+      {
+        "declaration": "theorem PaperP1Registry.V2.CumulantsOptimality.principal_second_equivalent (C \u03c4 : Real) (h\u03c4 : LT.lt 0 \u03c4) :\n  Exists fun N\u2080 =>\n    And (LE.le 2 N\u2080)\n      (\u2200 (N : Nat),\n        GE.ge N N\u2080 \u2192\n          \u2200 (L : Nat),\n            LE.le (abs (HSub.hSub (\u2191L) (HDiv.hDiv (Real.log \u2191N) (Real.log 2)))) C \u2192\n              And (LT.lt 0 (PaperP1Registry.V2.CumulantsOptimality.principalSecondScale N L))\n                (LE.le\n                  (abs\n                    (HSub.hSub\n                      (HDiv.hDiv (PaperP1Registry.V2.CumulantsOptimality.secondCumulant N L)\n                        (PaperP1Registry.V2.CumulantsOptimality.principalSecondScale N L))\n                      1))\n                  \u03c4))",
+        "name": "PaperP1Registry.V2.CumulantsOptimality.principal_second_equivalent"
+      },
+      {
+        "declaration": "theorem PaperP1Registry.V2.CumulantsOptimality.optimal_third_cumulant (C : Real) :\n  Exists fun c =>\n    And (LT.lt 0 c)\n      (\u2200 (\u03b5 : Real),\n        LT.lt 0 \u03b5 \u2192\n          Exists fun N\u2080 =>\n            And (LE.le 4 N\u2080)\n              (\u2200 (N : Nat),\n                GE.ge N N\u2080 \u2192\n                  \u2200 (L : Nat),\n                    LE.le (abs (HSub.hSub (\u2191L) (HDiv.hDiv (Real.log \u2191N) (Real.log 2)))) C \u2192\n                      And\n                        (LE.le (HMul.hMul c (HPow.hPow (\u2191N) (-41 / 30)))\n                          (PaperP1Registry.V2.CumulantsOptimality.thirdCumulant N L))\n                        (LE.le (PaperP1Registry.V2.CumulantsOptimality.thirdCumulant N L)\n                          (HPow.hPow (\u2191N) (HAdd.hAdd (-41 / 30) \u03b5)))))",
+        "name": "PaperP1Registry.V2.CumulantsOptimality.optimal_third_cumulant"
+      },
+      {
+        "declaration": "theorem PaperP1Registry.V2.CumulantsOptimality.absolute_triple_activity (C \u03b5 : Real) (h\u03b5 : LT.lt 0 \u03b5) :\n  Exists fun N\u2080 =>\n    And (LE.le 4 N\u2080)\n      (\u2200 (N : Nat),\n        GE.ge N N\u2080 \u2192\n          \u2200 (L : Nat),\n            LE.le (abs (HSub.hSub (\u2191L) (HDiv.hDiv (Real.log \u2191N) (Real.log 2)))) C \u2192\n              LE.le\n                (Finset.sum (Finset.powersetCard 3 (Finset.Ico N (HMul.hMul 2 N))) fun I =>\n                  abs (PaperP1Registry.V2.CumulantsOptimality.centeredCoefficient L I))\n                (HPow.hPow (\u2191N) (HAdd.hAdd (-41 / 30) \u03b5)))",
+        "name": "PaperP1Registry.V2.CumulantsOptimality.absolute_triple_activity"
+      },
+      {
+        "declaration": "theorem PaperP1Registry.V2.CumulantsOptimality.quartic_non_cancellation (C \u03b5 : Real) (h\u03b5 : LT.lt 0 \u03b5) :\n  Exists fun N\u2080 =>\n    And (LE.le 2 N\u2080)\n      (\u2200 (N : Nat),\n        GE.ge N N\u2080 \u2192\n          \u2200 (L : Nat),\n            LE.le (abs (HSub.hSub (\u2191L) (HDiv.hDiv (Real.log \u2191N) (Real.log 2)))) C \u2192\n              And (LE.le 0 (PaperP1Registry.V2.CumulantsOptimality.quarticPositive N L))\n                (And\n                  (LE.le\n                    (abs\n                      (HSub.hSub (PaperP1Registry.V2.CumulantsOptimality.fourthCumulant N L)\n                        (HMul.hMul 24 (PaperP1Registry.V2.CumulantsOptimality.quarticSigned N L))))\n                    (HPow.hPow (\u2191N) (HAdd.hAdd (-5 / 3) \u03b5)))\n                  (And\n                    (LE.le\n                      (abs\n                        (HSub.hSub (PaperP1Registry.V2.CumulantsOptimality.quarticSigned N L)\n                          (PaperP1Registry.V2.CumulantsOptimality.quarticPositive N L)))\n                      (HPow.hPow (\u2191N) (HAdd.hAdd (-3 / 2) \u03b5)))\n                    (LE.le\n                      (abs\n                        (HSub.hSub\n                          (HAdd.hAdd (PaperP1Registry.V2.CumulantsOptimality.fourthCumulant N L)\n                            (HMul.hMul 3 (HPow.hPow (PaperP1Registry.V2.CumulantsOptimality.secondCumulant N L) 2)))\n                          (HAdd.hAdd\n                            (HMul.hMul 3 (HPow.hPow (PaperP1Registry.V2.CumulantsOptimality.secondCumulant N L) 2))\n                            (HMul.hMul 24 (PaperP1Registry.V2.CumulantsOptimality.quarticPositive N L)))))\n                      (HPow.hPow (\u2191N) (HAdd.hAdd (-3 / 2) \u03b5))))))",
+        "name": "PaperP1Registry.V2.CumulantsOptimality.quartic_non_cancellation"
+      },
+      {
+        "declaration": "theorem PaperP1Registry.V2.CumulantsOptimality.quadratic_optimality (C \u03b5 : Real) (h\u03b5 : LT.lt 0 \u03b5) :\n  Exists fun a =>\n    And (LT.lt 0 a)\n      (Exists fun N\u2080 =>\n        And (LE.le 10 N\u2080)\n          (\u2200 (N : Nat),\n            GE.ge N N\u2080 \u2192\n              \u2200 (L : Nat),\n                LE.le (abs (HSub.hSub (\u2191L) (HDiv.hDiv (Real.log \u2191N) (Real.log 2)))) C \u2192\n                  And\n                    (LE.le (HMul.hMul a (HPow.hPow (\u2191N) (HSub.hSub (-4 / 3) \u03b5)))\n                      (PaperP1Registry.V2.CumulantsOptimality.quadraticError N L))\n                    (LE.le (PaperP1Registry.V2.CumulantsOptimality.quadraticError N L)\n                      (HPow.hPow (\u2191N) (HAdd.hAdd (-4 / 3) \u03b5)))))",
+        "name": "PaperP1Registry.V2.CumulantsOptimality.quadratic_optimality"
+      }
+    ],
+    "declarations": [
+      "PaperP1Registry.V2.CumulantsOptimality.factorial_source",
+      "PaperP1Registry.V2.CumulantsOptimality.third_exact_identity",
+      "PaperP1Registry.V2.CumulantsOptimality.fourth_exact_identity",
+      "PaperP1Registry.V2.CumulantsOptimality.principal_second_equivalent",
+      "PaperP1Registry.V2.CumulantsOptimality.optimal_third_cumulant",
+      "PaperP1Registry.V2.CumulantsOptimality.absolute_triple_activity",
+      "PaperP1Registry.V2.CumulantsOptimality.quartic_non_cancellation",
+      "PaperP1Registry.V2.CumulantsOptimality.quadratic_optimality"
+    ],
+    "imports": [
+      "Mathlib.Algebra.Field.ZMod",
+      "Mathlib.Algebra.Order.Floor.Semiring",
+      "Mathlib.Analysis.InnerProductSpace.Basic",
+      "Mathlib.Analysis.SpecialFunctions.Pow.Real",
+      "Mathlib.Data.Finset.Interval",
+      "Mathlib.Data.Nat.Factorization.Basic",
+      "Mathlib.Data.ZMod.Basic",
+      "Mathlib.LinearAlgebra.Finsupp.LinearCombination",
+      "Mathlib.MeasureTheory.Integral.Bochner.Basic",
+      "Mathlib.NumberTheory.PrimeCounting",
+      "Mathlib.Order.Partition.Finpartition",
+      "Mathlib.Probability.Distributions.Uniform",
+      "Mathlib.Probability.ProductMeasure",
+      "Mathlib.Tactic.NormNum"
+    ],
+    "module_doc": "# P1 V2: Third and fourth cumulants and optimal quadratic error\n\nSelected statements cover main article results 3.3\u20133.4,6.1\u20136.2. Literal definitions specify\nthe independent prime-sign model, exact observables, reference laws and error\nnorms. Parameters and thresholds retain their printed order. The companion\nsupplies substantive proofs through the parent development in this repository.\nThe corresponding six-dossier coverage map records each complete clause bundle.\nOnly the selected Challenge theorem proofs are deliberate statement holes;\nthe Solution and its bridge proofs contain no placeholders.\nSelected model foundations are adapted through P1 from Paper C, commit\nb9fa9ba490f201b408a302a86f1594ee620b228b, Apache-2.0; see docs/PAPER_C_REUSE.md.",
+    "schema_version": 3,
+    "solution_imports": [
+      "Mathlib.Algebra.Field.ZMod",
+      "Mathlib.Algebra.Order.Floor.Semiring",
+      "Mathlib.Analysis.InnerProductSpace.Basic",
+      "Mathlib.Analysis.SpecialFunctions.Pow.Real",
+      "Mathlib.Data.Finset.Interval",
+      "Mathlib.Data.Nat.Factorization.Basic",
+      "Mathlib.Data.ZMod.Basic",
+      "Mathlib.LinearAlgebra.Finsupp.LinearCombination",
+      "Mathlib.MeasureTheory.Integral.Bochner.Basic",
+      "Mathlib.NumberTheory.PrimeCounting",
+      "Mathlib.Order.Partition.Finpartition",
+      "Mathlib.Probability.Distributions.Uniform",
+      "Mathlib.Probability.ProductMeasure",
+      "Mathlib.Tactic.NormNum",
+      "PaperP1.Asymptotics.ActualPairPhase",
+      "PaperP1.Asymptotics.FixedArityHomogeneousMass",
+      "PaperP1.Asymptotics.FourthCumulantIdentities",
+      "PaperP1.Asymptotics.OptimalQuadratic",
+      "PaperP1.Asymptotics.OptimalThirdCumulant",
+      "PaperP1.Asymptotics.SharpThirdActivity",
+      "PaperP1.Model.FourthRunFactorialCumulant",
+      "PaperP1.Model.RetainedMomentTransfer"
+    ]
+  },
+  "verso_commit": "71a2035b44e7f54a797ce799fd1b03cdd3a44684",
+  "workflow_url": "https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/43329039098"
+}

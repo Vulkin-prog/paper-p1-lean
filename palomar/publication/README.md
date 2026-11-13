@@ -45,6 +45,8 @@ at source `d6a0f6c5109886127526677603eb6b74e8c0cd82`. Its
 ordinary intake was authenticated, and both temporary proof artifacts were
 deleted. Palomar's separate [verification passed](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/43325541191);
 its [namespace-profile report](../publication-followup/cumulants_optimality/verification/VALIDATION.json)
-has eight selections and no mechanical warnings. Rendering and editorial review
-remain pending.
+has eight selections and no mechanical warnings. The
+[separate rendering](../publication-followup/cumulants_optimality/rendering/VALIDATION.json)
+also passed with all eight compiler-backed anchors and thirteen manifest hashes
+verified. Editorial review remains pending.
 No second registration or editorial outcome is asserted by these mechanical records.

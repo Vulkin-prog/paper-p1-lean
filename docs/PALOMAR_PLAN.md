@@ -50,9 +50,11 @@ both temporary proof artifacts deleted. Palomar's own
 [verification](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/43325541191)
 has also passed. Its separate
 [namespace-profile receipt](../palomar/publication-followup/cumulants_optimality/verification/VALIDATION.json)
-binds all eight selected statements with no mechanical warnings. Rendering and
-editorial review remain pending. This is not yet a second registration; later
-cycles remain queued.
+binds all eight selected statements with no mechanical warnings. Its separate
+[rendering also passed](../palomar/publication-followup/cumulants_optimality/rendering/VALIDATION.json),
+with all eight compiler-backed declaration anchors and thirteen manifest file
+hashes verified. Editorial review remains pending. This is not yet a second
+registration; later cycles remain queued.
 
 ## Previous V2 preparation (preserved history)
 

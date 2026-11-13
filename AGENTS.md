@@ -158,5 +158,10 @@ future manuscript version and preparing Palomar registrations after completion.
   with no mechanical warnings; its receipt is under the follow-up `verification/`
   directory. Follow this existing cycle; do not repeat intake or start the
   third cycle until the second completes or is properly closed. The actual
-  rendering, review and public readback remain separate
-  steps. Keep private outcomes and credentials out of this repository.
+  rendering, review and public readback remain separate steps. Its rendering
+  `43329039098` has now also passed; the follow-up `rendering/` receipt binds
+  the exact source, all eight compiler-backed declaration anchors and thirteen
+  manifest file hashes. All three actual mechanical gates have passed. Await
+  the actual private review, present it and apply the user's positive-review
+  delegation; no second registration is asserted yet. Keep private outcomes
+  and credentials out of this repository.
