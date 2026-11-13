@@ -54,6 +54,9 @@ as [PALOMAR-2026-11-13-000001 v1](https://palomar-registry.org/entry.html?id=PAL
 with no published warnings. Name/ORCID in all three roles, the exact accepted
 review binding, mechanical and rendering evidence, and all git dependency
 preservation pins were checked. Four dossiers remain. The third,
-`pairs_channels`, has its [full preflight dispatched](https://github.com/Vulkin-prog/paper-p1-lean/actions/runs/43343229988)
-for thirteen selections at the same follow-up source. Its actual full report
-must pass before ordinary intake; no third intake is open yet.
+`pairs_channels`, has [passed its full preflight](https://github.com/Vulkin-prog/paper-p1-lean/actions/runs/43343229988)
+for thirteen selections at the same follow-up source. The
+[actual full report](../publication-followup/pairs_channels/preflight/VALIDATION.json)
+has no errors or warnings. No third intake is open yet: the unavailable portal
+is monitored in read-only mode every five minutes before one distinct guarded
+intake operation.

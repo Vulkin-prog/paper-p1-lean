@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-13T01:14:18.925023+00:00",
+  "updated_at": "2026-11-13T01:56:14.340570+00:00",
   "repository": "Vulkin-prog/paper-p1-lean",
   "maximum_registrations": 6,
   "selected_theorem_count": 52,
@@ -130,7 +130,7 @@
       "comparator_config_path": "RegistryV2/comparator/p1_pairs_channels.json",
       "formalization_metadata_path": "palomar/publication-followup/pairs_channels/formalization.yaml",
       "selected_theorem_count": 13,
-      "public_mechanical_stage": "official_full_preflight_dispatched",
+      "public_mechanical_stage": "official_full_preflight_passed",
       "registration": null,
       "metadata_edition": "followup",
       "frozen_original_preparation_source": "f9a2d213265a6833318745dd7f2d74c02090ab19",
@@ -145,9 +145,12 @@
         "mode": "full",
         "execution_profile": "palomar-standard-v1",
         "metadata_edition": "followup",
-        "public_status": "queued",
-        "report_status": "pending"
-      }
+        "public_status": "completed",
+        "report_status": "pass",
+        "conclusion": "success",
+        "validation_receipt": "palomar/publication-followup/pairs_channels/preflight/VALIDATION.json"
+      },
+      "admission_stage": "waiting_for_service_availability"
     },
     {
       "slug": "stopping_reconstruction",

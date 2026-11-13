@@ -178,5 +178,11 @@ future manuscript version and preparing Palomar registrations after completion.
   `palomar/publication-followup/pairs_channels/formalization.yaml`, thirteen
   selections. The caller head is `3c37c349a1f9f4b2285d1eac927804e2668b9491`;
   it is distinct from the submitted source and official producer pin. Read the
-  actual run metadata and complete passing report before intake. No ordinary
-  third intake has started. Do not dispatch a duplicate or begin the fourth.
+  actual run metadata and complete passing report before intake. That exact full
+  standard-profile report has now passed for all thirteen selections, with no
+  errors or warnings; its receipt is under the follow-up `pairs_channels/preflight/`
+  directory. The first guarded intake attempt stopped at an unavailable GET probe:
+  no intake POST, intent or credential was created. Wait for readiness using only
+  bounded GET probes five minutes apart, then perform one separate guarded intake.
+  No ordinary third intake has started. Do not dispatch a duplicate or begin the
+  fourth cycle.
