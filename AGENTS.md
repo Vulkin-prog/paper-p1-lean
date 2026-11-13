@@ -241,3 +241,13 @@ future manuscript version and preparing Palomar registrations after completion.
   `d6a0f6c5109886127526677603eb6b74e8c0cd82` with follow-up metadata. Source and
   conditional publication authority persist; no new approval prompt is needed
   for a favorable actual review. Keep one complete cycle active at a time.
+
+- The fifth full workflow is already dispatched once as run `43401796046`,
+  request `pf85c4cd4fc7`, for `probability_references` at source
+  `d6a0f6c5109886127526677603eb6b74e8c0cd82`, with metadata
+  `palomar/publication-followup/probability_references/formalization.yaml` and
+  five selections. Its actual caller head is
+  `4f66b3582d32c6f0b34196afc11a0e2386bd35b7`, distinct from submitted source
+  and official producer pin. Follow this existing workflow; do not redispatch.
+  Obtain and validate its actual passing full report before one ordinary intake.
+  The fourth cycle is publicly closed; the sixth remains prepared only.

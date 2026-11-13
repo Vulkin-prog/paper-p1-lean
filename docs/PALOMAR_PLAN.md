@@ -104,6 +104,13 @@ minutes resolved the initial public propagation delay. Four closed dossiers
 cover 19 of the 26 main results through 39 selections. The next full cycle is
 `probability_references`, then `affine_events`, at the same follow-up source.
 
+The fifth full preflight is now
+[run43401796046](https://github.com/Vulkin-prog/paper-p1-lean/actions/runs/43401796046),
+for five selected positivity/Hermite declarations at the same submitted source
+and follow-up metadata. Its caller head is
+`4f66b3582d32c6f0b34196afc11a0e2386bd35b7`. The report is not yet available;
+ordinary fifth intake has not started.
+
 ## Previous V2 preparation (preserved history)
 
 On12 November2026 the user resumed this work and requested at most six

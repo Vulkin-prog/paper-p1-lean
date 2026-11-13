@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-13T09:29:03.031263+00:00",
+  "updated_at": "2026-11-13T09:31:20.487862+00:00",
   "repository": "Vulkin-prog/paper-p1-lean",
   "maximum_registrations": 6,
   "selected_theorem_count": 52,
@@ -251,10 +251,26 @@
       "comparator_config_path": "RegistryV2/comparator/p1_probability_references.json",
       "formalization_metadata_path": "palomar/publication-followup/probability_references/formalization.yaml",
       "selected_theorem_count": 5,
-      "public_mechanical_stage": "prepared",
+      "public_mechanical_stage": "official_preflight_running",
       "registration": null,
       "metadata_edition": "followup",
-      "frozen_original_preparation_source": "f9a2d213265a6833318745dd7f2d74c02090ab19"
+      "frozen_original_preparation_source": "f9a2d213265a6833318745dd7f2d74c02090ab19",
+      "ordinary_intake_started": false,
+      "preflight": {
+        "workflow_run_id": 43401796046,
+        "workflow_url": "https://github.com/Vulkin-prog/paper-p1-lean/actions/runs/43401796046",
+        "request_id": "pf85c4cd4fc7",
+        "source_commit": "d6a0f6c5109886127526677603eb6b74e8c0cd82",
+        "workflow_head": "4f66b3582d32c6f0b34196afc11a0e2386bd35b7",
+        "pipeline_commit": "14aa8d6b3c2f14a8540605e37144560b9a00e7e7",
+        "mode": "full",
+        "execution_profile": "palomar-standard-v1",
+        "metadata_edition": "followup",
+        "public_status": "in_progress",
+        "report_status": null,
+        "conclusion": null,
+        "validation_receipt": null
+      }
     },
     {
       "slug": "affine_events",
