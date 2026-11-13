@@ -65,8 +65,10 @@ for thirteen selections at the same immutable follow-up source. Its
 has no errors or warnings. After a GET-only readiness check, ordinary intake
 was authenticated and both temporary proof artifacts deleted. Its separate
 [Palomar verification](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/43349041625)
-is queued. No third registration has been issued; the four dossiers following
-the second retain that follow-up source.
+has also passed. The [actual namespace-profile receipt](../palomar/publication-followup/pairs_channels/verification/VALIDATION.json)
+binds the same thirteen selections and has no mechanical warnings. Rendering
+and editorial review remain pending. No third registration has been issued;
+the four dossiers following the second retain that follow-up source.
 
 ## Previous V2 preparation (preserved history)
 

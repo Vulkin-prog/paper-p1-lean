@@ -186,7 +186,12 @@ future manuscript version and preparing Palomar registrations after completion.
   bounded GET probes five minutes apart, then perform one separate guarded intake.
   The portal recovered and one ordinary third intake is now authenticated, with
   both temporary proofs deleted. Palomar's separate verification is run
-  `43349041625`, currently queued. Follow that existing third cycle; do not
+  `43349041625`, now passed under the namespace profile for all thirteen selections
+  with no mechanical warnings; its follow-up `verification/` receipt is archived.
+  Follow that existing third cycle; do not
   repeat its intake, dispatch a duplicate or begin the fourth cycle. Its actual
-  namespace report, renderer, review and public registration still require their
-  own real evidence.
+  renderer, review and public registration still require their own real evidence.
+  Follow-up renders share source `d6a0f6c5109886127526677603eb6b74e8c0cd82`:
+  select the current renderer only after the third intake's actual creation time,
+  `2026-11-13T02:00:37Z`, then check its actual configuration and source bytes.
+  The completed second-cycle rendering is not third-cycle evidence.

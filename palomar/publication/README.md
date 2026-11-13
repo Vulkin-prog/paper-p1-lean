@@ -59,6 +59,9 @@ for thirteen selections at the same follow-up source. The
 [actual full report](../publication-followup/pairs_channels/preflight/VALIDATION.json)
 has no errors or warnings. Ordinary third intake has now been authenticated
 after the portal recovered, and both temporary authentication proofs were
-deleted. Its separate [Palomar verification is queued](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/43349041625).
+deleted. Its separate [Palomar verification passed](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/43349041625),
+with an [actual namespace-profile receipt](../publication-followup/pairs_channels/verification/VALIDATION.json)
+for all thirteen selections and no mechanical warnings. Rendering and editorial
+review remain pending.
 No third registration has been issued yet; follow this existing cycle before
 starting another.
