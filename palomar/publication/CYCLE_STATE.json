@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-13T15:24:34.393430+00:00",
+  "updated_at": "2026-11-13T17:01:15.026640+00:00",
   "repository": "Vulkin-prog/paper-p1-lean",
   "maximum_registrations": 6,
   "selected_theorem_count": 42,
@@ -251,7 +251,7 @@
       "comparator_config_path": "RegistryFinal/comparator/p1_foundations.json",
       "formalization_metadata_path": "palomar/final/foundations/formalization.yaml",
       "selected_theorem_count": 3,
-      "public_mechanical_stage": "server_verification_passed",
+      "public_mechanical_stage": "rendering_passed",
       "registration": null,
       "main_result_count": 7,
       "direct_companion_results": [
@@ -277,6 +277,15 @@
         "workflow_url": "https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/43448364878",
         "report_status": "pass",
         "validation_receipt": "palomar/final/foundations/verification/VALIDATION.json"
+      },
+      "palomar_rendering": {
+        "workflow_run_id": 43459500256,
+        "workflow_url": "https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/43459500256",
+        "report_status": "pass",
+        "validation_receipt": "palomar/final/foundations/rendering/VALIDATION.json",
+        "renderer_commit": "14aa8d6b3c2f14a8540605e37144560b9a00e7e7",
+        "selected_theorem_count": 3,
+        "all_selected_compiler_anchors_present": true
       }
     }
   ],

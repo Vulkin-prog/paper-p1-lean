@@ -29,11 +29,16 @@ source-bound comparison passed all six isolated local kernels; the parent
 build and20019-declaration audit passed too. The actual source-bound withdrawal
 of the superseded unissued intake has been read back as `withdrawn`. The final
 five-record plan is active in `CYCLE_STATE.json`; its first four objects and81
-preserved files are unchanged. The next official cycle uses `RegistryFinal`,
+preserved files are unchanged. The existing final official cycle uses `RegistryFinal`,
 `RegistryFinal/comparator/p1_foundations.json`, and
-`palomar/final/foundations/formalization.yaml` at that immutable source. Run the
-single final manual full caller before any new ordinary intake. Local checks
-and author rescoping do not constitute that full pass or an issued fifth record.
+`palomar/final/foundations/formalization.yaml` at that immutable source. Its actual
+full preflight43439453730, Palomar namespace verification43448364878 and
+rendering43459500256 all passed. The rendering receipt checks all three selected
+compiler-backed anchors and thirteen manifest file hashes. Follow this existing
+authenticated intake; do not repeat intake or dispatch another cycle. Read and
+present its actual private editorial review before applying the positive-review
+publication delegation. These technical passes do not constitute an issued fifth
+record or a favorable editorial review. Keep unregistered editorial material private.
 
 ## Preserved development and operational history
 
