@@ -1,19 +1,20 @@
 {
   "schema_version": 1,
   "status": "verified_archived_public_records",
-  "checked_at": "2026-11-13T12:09:01.195494+00:00",
+  "checked_at": "2026-11-13T14:04:47.807955+00:00",
   "repository": "Vulkin-prog/paper-p1-lean",
-  "publication_plan": "palomar/REGISTRATION_PLAN_PUBLICATION.json",
+  "publication_plan": "palomar/REGISTRATION_PLAN_FINAL.json",
   "publication_index": "docs/manuscript-results-publication-2026-11-12.json",
-  "allocation_source_commit": "f9a2d213265a6833318745dd7f2d74c02090ab19",
-  "publication_plan_sha256": "c35ce1fe00723960b2a1e79403b80f2a650ed78fa8c56461b051e1c84f20fc47",
+  "allocation_source_commit": "eeda0e055bc16afa6bb6402727afe733ace9961e",
+  "publication_plan_sha256": "8b02b4b05e90f8a09a9a35f24b047841712c52e429d74930f5fb35147c915359",
   "publication_index_sha256": "7796235dfb26c0bd7f1f3f7c3e35bae2371b53430b9bcf98b4effdafe636daef",
-  "cycle_state_sha256": "23286dab55e41bf3b67baa2a87aaded60481c80418bc173e77ffb5dbf523ceb5",
+  "cycle_state_sha256": "e270366255b9a781ba27089ff5ceab5b75ab312b84f4306fd3d921319b830d54",
   "registered_dossiers": 4,
   "registered_main_results": 19,
   "total_main_results": 26,
   "registered_selected_declarations": 39,
-  "total_selected_declarations": 52,
+  "total_selected_declarations": 42,
+  "planned_registrations": 5,
   "records": [
     {
       "slug": "quadratic_limits",
@@ -397,50 +398,22 @@
       "registry_url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000008&version=1"
     },
     {
-      "number": "7.1",
-      "label": "p1:close:positivity",
-      "title": "Positivity of the quadratic Poisson correction",
-      "statement_sha256": "1bda3d739142898ef6191306fe15dfe040c58696c9aeab658210a3674d15e5a0",
-      "printed_conditional_clause": false,
-      "selected_declarations": [
-        "PaperP1Registry.V2.ProbabilityReferences.quadratic_probability_criterion",
-        "PaperP1Registry.V2.ProbabilityReferences.quadratic_mass_formula"
-      ],
-      "dossier": "probability_references",
-      "registered": false,
-      "registration_id": null,
-      "registry_url": null
-    },
-    {
-      "number": "8.4",
-      "label": "p1:cor:compound",
-      "title": "Hermite approximation with single and double jumps",
-      "statement_sha256": "a9ffdb62e06b1e04f3aa844d6d8be7662542059790ac01f64f52f4ad8401f732",
-      "printed_conditional_clause": false,
-      "selected_declarations": [
-        "PaperP1Registry.V2.ProbabilityReferences.hermite_exact",
-        "PaperP1Registry.V2.ProbabilityReferences.hermite_fixed_height",
-        "PaperP1Registry.V2.ProbabilityReferences.hermite_fixed_equivalent"
-      ],
-      "dossier": "probability_references",
-      "registered": false,
-      "registration_id": null,
-      "registry_url": null
-    },
-    {
       "number": "2.1",
       "label": "p1:alg:centred",
       "title": "Centered Bernoulli expansion",
       "statement_sha256": "83cae9b79ede35a5fd2cf646a141266c4e697ab953c370cce0922d954f58e2a9",
       "printed_conditional_clause": false,
       "selected_declarations": [
-        "PaperP1Registry.V2.AffineEvents.expansion_centered_identity",
-        "PaperP1Registry.V2.AffineEvents.expansion_probability_clauses"
+        "PaperP1Registry.Final.Affine.uniform_event_calculus"
       ],
-      "dossier": "affine_events",
+      "dossier": "foundations",
       "registered": false,
       "registration_id": null,
-      "registry_url": null
+      "registry_url": null,
+      "selected_conjunction_clauses": [
+        1,
+        2
+      ]
     },
     {
       "number": "2.2",
@@ -449,12 +422,15 @@
       "statement_sha256": "1357e7556eb0994ea9a2b3a23a308dc627fac610d0f5718317f46bf85cebfde1",
       "printed_conditional_clause": false,
       "selected_declarations": [
-        "PaperP1Registry.V2.AffineEvents.original_fourier"
+        "PaperP1Registry.Final.Affine.uniform_event_calculus"
       ],
-      "dossier": "affine_events",
+      "dossier": "foundations",
       "registered": false,
       "registration_id": null,
-      "registry_url": null
+      "registry_url": null,
+      "selected_conjunction_clauses": [
+        3
+      ]
     },
     {
       "number": "2.3",
@@ -463,13 +439,16 @@
       "statement_sha256": "9ae844e0439441c44b2533c9d1a31df097cac4f794b0e71bbe4ad2610dc2b424",
       "printed_conditional_clause": false,
       "selected_declarations": [
-        "PaperP1Registry.V2.AffineEvents.finite_envelope",
-        "PaperP1Registry.V2.AffineEvents.nominal_envelope"
+        "PaperP1Registry.Final.Affine.uniform_event_calculus"
       ],
-      "dossier": "affine_events",
+      "dossier": "foundations",
       "registered": false,
       "registration_id": null,
-      "registry_url": null
+      "registry_url": null,
+      "selected_conjunction_clauses": [
+        4,
+        5
+      ]
     },
     {
       "number": "2.4",
@@ -478,12 +457,15 @@
       "statement_sha256": "26e1395319bc7ffeeecd57be800274c6d52dc8ae94fabdbdadbdc172d9dab61f",
       "printed_conditional_clause": false,
       "selected_declarations": [
-        "PaperP1Registry.V2.AffineEvents.compatible_nullity"
+        "PaperP1Registry.Final.Affine.uniform_event_calculus"
       ],
-      "dossier": "affine_events",
+      "dossier": "foundations",
       "registered": false,
       "registration_id": null,
-      "registry_url": null
+      "registry_url": null,
+      "selected_conjunction_clauses": [
+        6
+      ]
     },
     {
       "number": "2.5",
@@ -492,13 +474,85 @@
       "statement_sha256": "6eaa05eaffd59b96e763bff396ec1b1b18f1f4a6b5004c5a15093d11d49dba84",
       "printed_conditional_clause": false,
       "selected_declarations": [
-        "PaperP1Registry.V2.AffineEvents.unique_direct_partition",
-        "PaperP1Registry.V2.AffineEvents.canonical_factorization"
+        "PaperP1Registry.Final.Affine.uniform_event_calculus"
       ],
-      "dossier": "affine_events",
+      "dossier": "foundations",
       "registered": false,
       "registration_id": null,
-      "registry_url": null
+      "registry_url": null,
+      "selected_conjunction_clauses": [
+        7,
+        8
+      ]
+    },
+    {
+      "number": "7.1",
+      "label": "p1:close:positivity",
+      "title": "Positivity of the quadratic Poisson correction",
+      "statement_sha256": "1bda3d739142898ef6191306fe15dfe040c58696c9aeab658210a3674d15e5a0",
+      "printed_conditional_clause": false,
+      "selected_declarations": [
+        "PaperP1Registry.Final.Reference.positive_hermite_approximation"
+      ],
+      "dossier": "foundations",
+      "registered": false,
+      "registration_id": null,
+      "registry_url": null,
+      "selected_conjunction_clauses": [
+        1,
+        2
+      ]
+    },
+    {
+      "number": "8.4",
+      "label": "p1:cor:compound",
+      "title": "Hermite approximation with single and double jumps",
+      "statement_sha256": "a9ffdb62e06b1e04f3aa844d6d8be7662542059790ac01f64f52f4ad8401f732",
+      "printed_conditional_clause": false,
+      "selected_declarations": [
+        "PaperP1Registry.Final.Reference.positive_hermite_approximation"
+      ],
+      "dossier": "foundations",
+      "registered": false,
+      "registration_id": null,
+      "registry_url": null,
+      "selected_conjunction_clauses": [
+        3,
+        4,
+        5
+      ]
+    }
+  ],
+  "direct_companion_results": [
+    {
+      "number": "T13.1",
+      "label": "p1:uniform:full-support",
+      "selected_declarations": [
+        "PaperP1Registry.Final.Affine.uniform_event_calculus"
+      ],
+      "registered": false,
+      "additional_displayed_corollary": null
+    },
+    {
+      "number": "T15.1",
+      "label": "p1:obstruction:fixed",
+      "selected_declarations": [
+        "PaperP1Registry.Final.Obstruction.fixed_moment_barrier"
+      ],
+      "registered": false,
+      "additional_displayed_corollary": {
+        "numbered_result": false,
+        "same_source_file": true,
+        "selected_conjunction_clauses": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "description": "m_N=floor(sqrt(log N)), a_N=log(N) N^(-2/3); eventual fixed factorial moments, uniform exponential moments, logarithmic TV asymptotic and every inverse-power obstruction.",
+        "proof_module": "PaperP1/Asymptotics/MomentObstructionSequence.lean"
+      }
     }
   ],
   "scope": "Offline integrity and correspondence audit of archived public entries, official reports, rendering receipts and preservation pins. It does not rerun Lean or revalidate private review-consent bytes. Printed conditional premises remain explicit; the 92 companion results are not all selected separately."
