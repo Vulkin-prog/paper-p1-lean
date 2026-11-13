@@ -117,6 +117,9 @@ has now [passed](../palomar/publication-followup/probability_references/verifica
 for all five selections under the namespace profile, without errors or warnings.
 Follow that existing cycle; rendering, review and registration remain
 separate later steps, and the sixth cycle has not started.
+Its [official rendering](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/43414628691)
+is now queued, created at11:08:24 UTC after this intake. The actual
+five-declaration artifact has not yet been validated.
 
 ## Reproducible public coverage audit
 

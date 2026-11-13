@@ -264,6 +264,10 @@ future manuscript version and preparing Palomar registrations after completion.
   without errors or warnings. Its ZIP, report and receipt are archived in the
   fifth follow-up `verification/` directory. Its rendered Challenge and actual
   editorial review remain separate pending evidence; do not start the sixth.
+  The fifth official renderer is now run `43414628691`, created at
+  `2026-11-13T11:08:24Z`, after this intake, at the pinned producer. Follow that
+  existing run and validate its actual source/configuration, all five selected
+  declarations and compiler-backed anchors. Discovery alone is not a pass.
 
 - `scripts/check_registered_coverage.py` audits the archived public records and
   complete26-result allocation without credentials or network calls. Its
