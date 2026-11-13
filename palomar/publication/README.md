@@ -74,6 +74,7 @@ is `stopping_reconstruction` at the same follow-up source.
 
 That fourth cycle has now [passed its full preflight](https://github.com/Vulkin-prog/paper-p1-lean/actions/runs/43366226586)
 for eight selections. The [actual full report](../publication-followup/stopping_reconstruction/preflight/VALIDATION.json)
-has no errors or warnings. Ordinary fourth intake has not started because the
-portal was unavailable at its initial GET probe. Bounded GET-only readiness
-checks precede one separate guarded intake; no intake POST has occurred.
+has no errors or warnings. Ordinary fourth intake was authenticated after the
+portal recovered, and both temporary proofs were deleted. Its separate
+[Palomar verification is in progress](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/43375902252).
+No fourth registration has been issued; follow this existing cycle.

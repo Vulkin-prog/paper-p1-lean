@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-13T05:32:28.807647+00:00",
+  "updated_at": "2026-11-13T06:04:45.419700+00:00",
   "repository": "Vulkin-prog/paper-p1-lean",
   "maximum_registrations": 6,
   "selected_theorem_count": 52,
@@ -190,11 +190,11 @@
       "comparator_config_path": "RegistryV2/comparator/p1_stopping_reconstruction.json",
       "formalization_metadata_path": "palomar/publication-followup/stopping_reconstruction/formalization.yaml",
       "selected_theorem_count": 8,
-      "public_mechanical_stage": "official_full_preflight_passed",
+      "public_mechanical_stage": "palomar_verification_in_progress",
       "registration": null,
       "metadata_edition": "followup",
       "frozen_original_preparation_source": "f9a2d213265a6833318745dd7f2d74c02090ab19",
-      "ordinary_intake_started": false,
+      "ordinary_intake_started": true,
       "preflight": {
         "workflow_run_id": 43366226586,
         "workflow_url": "https://github.com/Vulkin-prog/paper-p1-lean/actions/runs/43366226586",
@@ -210,7 +210,15 @@
         "conclusion": "success",
         "validation_receipt": "palomar/publication-followup/stopping_reconstruction/preflight/VALIDATION.json"
       },
-      "admission_stage": "waiting_for_service_availability"
+      "admission_stage": "authenticated",
+      "temporary_authentication_proofs_deleted": true,
+      "palomar_verification": {
+        "workflow_run_id": 43375902252,
+        "workflow_url": "https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/43375902252",
+        "public_status": "in_progress",
+        "conclusion": null,
+        "report_status": "pending"
+      }
     },
     {
       "slug": "probability_references",

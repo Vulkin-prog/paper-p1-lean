@@ -81,9 +81,10 @@ three dossiers remain at the same follow-up source.
 The fourth cycle, `stopping_reconstruction`, has now
 [passed its full preflight](https://github.com/Vulkin-prog/paper-p1-lean/actions/runs/43366226586)
 for eight selected declarations. Its [actual full report](../palomar/publication-followup/stopping_reconstruction/preflight/VALIDATION.json)
-has no errors or warnings. No fourth ordinary intake is open: an unavailable
-portal deferred that step before any intake POST. Bounded GET-only readiness
-checks remain spaced five minutes apart before one distinct guarded intake.
+has no errors or warnings. After bounded GET-only readiness checks five minutes
+apart, ordinary fourth intake was authenticated and both temporary proof
+artifacts deleted. Its separate [Palomar verification is in progress](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/43375902252).
+No fourth registration is asserted yet; later cycles remain queued.
 
 ## Previous V2 preparation (preserved history)
 
