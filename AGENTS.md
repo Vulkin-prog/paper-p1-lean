@@ -172,3 +172,11 @@ future manuscript version and preparing Palomar registrations after completion.
   permitted full cycle is `pairs_channels` at the same follow-up source and
   metadata edition; the other three follow in the recorded order. Keep all
   future unregistered outcomes and credentials out of this repository.
+
+- The third cycle, `pairs_channels`, now has one full preflight dispatched:
+  `43343229988`, source `d6a0f6c5109886127526677603eb6b74e8c0cd82`, metadata
+  `palomar/publication-followup/pairs_channels/formalization.yaml`, thirteen
+  selections. The caller head is `3c37c349a1f9f4b2285d1eac927804e2668b9491`;
+  it is distinct from the submitted source and official producer pin. Read the
+  actual run metadata and complete passing report before intake. No ordinary
+  third intake has started. Do not dispatch a duplicate or begin the fourth.

@@ -53,5 +53,7 @@ verified. The second full cycle is now also
 as [PALOMAR-2026-11-13-000001 v1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000001&version=1),
 with no published warnings. Name/ORCID in all three roles, the exact accepted
 review binding, mechanical and rendering evidence, and all git dependency
-preservation pins were checked. The next permitted full cycle is `pairs_channels`
-at the same follow-up source; four dossiers remain.
+preservation pins were checked. Four dossiers remain. The third,
+`pairs_channels`, has its [full preflight dispatched](https://github.com/Vulkin-prog/paper-p1-lean/actions/runs/43343229988)
+for thirteen selections at the same follow-up source. Its actual full report
+must pass before ordinary intake; no third intake is open yet.
