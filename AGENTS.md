@@ -143,7 +143,7 @@ future manuscript version and preparing Palomar registrations after completion.
   non-blocking warning concerns the structured ChatGPT disclosure already
   present in the manuscript; the five follow-up files address it without
   adding another first-cycle version. Do not resubmit the first source.
-  The next permitted full cycle is `cumulants_optimality` at source
+  The then-next full cycle was `cumulants_optimality` at source
   `d6a0f6c5109886127526677603eb6b74e8c0cd82`, metadata edition `followup`, then
   the other four in the recorded order. User role and conditional publication
   authority persist; no new approval prompt is needed for a favorable actual
@@ -161,7 +161,14 @@ future manuscript version and preparing Palomar registrations after completion.
   rendering, review and public readback remain separate steps. Its rendering
   `43329039098` has now also passed; the follow-up `rendering/` receipt binds
   the exact source, all eight compiler-backed declaration anchors and thirteen
-  manifest file hashes. All three actual mechanical gates have passed. Await
-  the actual private review, present it and apply the user's positive-review
-  delegation; no second registration is asserted yet. Keep private outcomes
-  and credentials out of this repository.
+  manifest file hashes. Its actual favorable review had no blocking problems,
+  warnings or requested changes; it was presented and published under the
+  user's existing delegation. This cycle is now publicly verified as
+  `PALOMAR-2026-11-13-000001` version1. The public entry, version index and
+  readback receipt are under its follow-up `registration/` directory. Its
+  accepted private consent digest, source, eight selections, all three person
+  records and all git dependency preservation pins match. Do not repeat this
+  intake or publication request. Two complete cycles are closed. The next
+  permitted full cycle is `pairs_channels` at the same follow-up source and
+  metadata edition; the other three follow in the recorded order. Keep all
+  future unregistered outcomes and credentials out of this repository.

@@ -1,0 +1,22 @@
+{
+  "status": "verified_registered",
+  "checked_at": "2026-11-13T01:10:38.371916+00:00",
+  "repository": "Vulkin-prog/paper-p1-lean",
+  "source_commit": "d6a0f6c5109886127526677603eb6b74e8c0cd82",
+  "project_path": "RegistryV2",
+  "comparator_config_path": "RegistryV2/comparator/p1_cumulants_optimality.json",
+  "formalization_metadata_path": "palomar/publication-followup/cumulants_optimality/formalization.yaml",
+  "registration_id": "PALOMAR-2026-11-13-000001",
+  "version": 1,
+  "registry_url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000001&version=1",
+  "registered_at": "2026-11-13T01:03:24Z",
+  "entry_path": "palomar/publication-followup/cumulants_optimality/registration/entry.json",
+  "entry_sha256": "cb0974d68844b77b7e5060af9209169fcf53f029fa13bfd2e2bb5b51375aefec",
+  "selected_theorem_count": 8,
+  "author_and_orcid_verified_in_all_three_roles": true,
+  "mechanical_report_and_render_bound": true,
+  "published_material_warnings_match_delivered_review": true,
+  "published_warning_count": 0,
+  "source_and_all_git_dependency_preservation_pins_match": true,
+  "completed_private_registration_binds_delivered_review_digest": true
+}

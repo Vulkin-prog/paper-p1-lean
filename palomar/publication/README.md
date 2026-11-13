@@ -1,4 +1,4 @@
-# Publication preparation: the same six candidates
+# Publication cycles: the same six identities
 
 The [publication plan](../REGISTRATION_PLAN_PUBLICATION.json) retains the SAME
 selected project/configuration identities and 52 theorem selections as the
@@ -48,5 +48,10 @@ its [namespace-profile report](../publication-followup/cumulants_optimality/veri
 has eight selections and no mechanical warnings. The
 [separate rendering](../publication-followup/cumulants_optimality/rendering/VALIDATION.json)
 also passed with all eight compiler-backed anchors and thirteen manifest hashes
-verified. Editorial review remains pending.
-No second registration or editorial outcome is asserted by these mechanical records.
+verified. The second full cycle is now also
+[registered and publicly verified](../publication-followup/cumulants_optimality/registration/VALIDATION.json)
+as [PALOMAR-2026-11-13-000001 v1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000001&version=1),
+with no published warnings. Name/ORCID in all three roles, the exact accepted
+review binding, mechanical and rendering evidence, and all git dependency
+preservation pins were checked. The next permitted full cycle is `pairs_channels`
+at the same follow-up source; four dossiers remain.

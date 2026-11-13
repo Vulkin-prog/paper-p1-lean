@@ -1,4 +1,4 @@
-# Current Palomar preparation — publication edition
+# Current Palomar cycles — publication edition
 
 The current [publication allocation](../palomar/REGISTRATION_PLAN_PUBLICATION.json)
 retains the SAME six `RegistryV2` project/configuration identities and 52 selected
@@ -31,7 +31,7 @@ the author. Ordinary proof CI dispatches no submission.
 
 The [follow-up metadata](../palomar/PUBLICATION_FOLLOWUP_METADATA.json) add the
 ChatGPT mathematical/editorial role from the pinned manuscript assistance
-statement for the five remaining identities. They retain 42 selections and 21
+statement for the five identities following the first. They retain 42 selections and 21
 main results, after the first 10 selections/five results. The original six
 metadata files and their receipts remain frozen. The same manual caller now
 accepts `metadata_edition: followup` for those five dossiers; its `publication`
@@ -53,8 +53,13 @@ has also passed. Its separate
 binds all eight selected statements with no mechanical warnings. Its separate
 [rendering also passed](../palomar/publication-followup/cumulants_optimality/rendering/VALIDATION.json),
 with all eight compiler-backed declaration anchors and thirteen manifest file
-hashes verified. Editorial review remains pending. This is not yet a second
-registration; later cycles remain queued.
+hashes verified. The complete second cycle is now
+[PALOMAR-2026-11-13-000001 v1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000001&version=1),
+with no published warnings. Its [public readback](../palomar/publication-followup/cumulants_optimality/registration/VALIDATION.json)
+also verifies name/ORCID in all three roles, the exact delivered review binding,
+accepted evidence and source/dependency preservation pins. There are two
+completed registrations. The next full cycle is `pairs_channels`; the four
+later dossiers retain the same immutable follow-up source.
 
 ## Previous V2 preparation (preserved history)
 
