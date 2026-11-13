@@ -95,5 +95,7 @@ The fifth cycle has now [passed its full preflight](../publication-followup/prob
 for five selections without mechanical warnings, at the same follow-up source.
 One ordinary intake was authenticated and both temporary proofs deleted. Its
 separate [Palomar verification](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/43408581680)
-is queued. Follow that existing cycle; its rendering, review and public readback
+has now [passed](../publication-followup/probability_references/verification/VALIDATION.json)
+for all five selections without mechanical warnings. Follow that existing cycle;
+its rendering, review and public readback
 are not yet complete. The sixth cycle remains prepared only.

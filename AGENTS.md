@@ -260,6 +260,10 @@ future manuscript version and preparing Palomar registrations after completion.
   time is `2026-11-13T10:22:16Z`. A later renderer must be disambiguated by this
   time and its actual five-declaration configuration/artifact, since the other
   follow-up renders share the same source commit.
+  Palomar's actual namespace report has now passed for all five selections,
+  without errors or warnings. Its ZIP, report and receipt are archived in the
+  fifth follow-up `verification/` directory. Its rendered Challenge and actual
+  editorial review remain separate pending evidence; do not start the sixth.
 
 - `scripts/check_registered_coverage.py` audits the archived public records and
   complete26-result allocation without credentials or network calls. Its

@@ -113,7 +113,9 @@ and follow-up metadata. Its caller head is
 for all five selections without errors or warnings. One ordinary fifth intake
 was then authenticated and both temporary proofs deleted. The separate
 [Palomar verification](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/43408581680)
-is queued. Follow that existing cycle; rendering, review and registration remain
+has now [passed](../palomar/publication-followup/probability_references/verification/VALIDATION.json)
+for all five selections under the namespace profile, without errors or warnings.
+Follow that existing cycle; rendering, review and registration remain
 separate later steps, and the sixth cycle has not started.
 
 ## Reproducible public coverage audit
