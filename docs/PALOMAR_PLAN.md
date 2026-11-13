@@ -85,8 +85,11 @@ has no errors or warnings. After bounded GET-only readiness checks five minutes
 apart, ordinary fourth intake was authenticated and both temporary proof
 artifacts deleted. Its separate [Palomar verification passed](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/43375902252),
 with an [actual namespace-profile receipt](../palomar/publication-followup/stopping_reconstruction/verification/VALIDATION.json)
-for the same eight selections and no mechanical warnings. Rendering and
-editorial review remain pending.
+for the same eight selections and no mechanical warnings. Its official
+[rendering is running](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/43390592969),
+created after this intake on 13 November at 08:06:14 UTC. Its actual artifact
+and editorial review remain pending; earlier follow-up renders are not evidence
+for this dossier despite sharing its source commit.
 No fourth registration is asserted yet; later cycles remain queued.
 
 ## Previous V2 preparation (preserved history)

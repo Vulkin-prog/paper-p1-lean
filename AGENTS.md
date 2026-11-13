@@ -214,3 +214,8 @@ future manuscript version and preparing Palomar registrations after completion.
   cycles are publicly closed. Its renderer must be created after this intake's
   actual creation time `2026-11-13T06:02:06Z`, then checked on its actual
   configuration/source artifact; prior follow-up renders share the same commit.
+  Its official rendering is now run `43390592969`, created at
+  `2026-11-13T08:06:14Z`, with producer pin
+  `14aa8d6b3c2f14a8540605e37144560b9a00e7e7`. Follow that existing run and
+  inspect its actual artifact for all eight exact selections and this
+  configuration; a discovered or successful job alone is not that validation.

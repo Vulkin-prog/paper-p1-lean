@@ -78,6 +78,8 @@ has no errors or warnings. Ordinary fourth intake was authenticated after the
 portal recovered, and both temporary proofs were deleted. Its separate
 [Palomar verification passed](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/43375902252).
 The [actual namespace-profile receipt](../publication-followup/stopping_reconstruction/verification/VALIDATION.json)
-binds all eight selections without mechanical warnings. Rendering and editorial
-review remain pending.
+binds all eight selections without mechanical warnings. Its official
+[rendering is running](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/43390592969),
+created on 13 November at 08:06:14 UTC, after this intake. Its exact artifact
+and editorial review remain pending.
 No fourth registration has been issued; follow this existing cycle.
