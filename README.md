@@ -13,24 +13,35 @@ and [French review](docs/reviews/2026-11-12/PUBLICATION_REVIEW_FR.md) record the
 and remaining optional simplifications. Six unchanged Palomar configurations
 cover all 26 main results through 52 selections; their
 [publication preparation](palomar/REGISTRATION_PLAN_PUBLICATION.json) is preserved.
-The author has resumed the six successive cycles for source commit
-`f9a2d213265a6833318745dd7f2d74c02090ab19`. The first official full preflight
-[passed](palomar/publication/quadratic_limits/preflight/VALIDATION.json), and
-Palomar's own verification has also
-[passed](palomar/publication/quadratic_limits/verification/VALIDATION.json).
-The separate [Challenge rendering](palomar/publication/quadratic_limits/rendering/VALIDATION.json)
-also passed, with compiler-backed anchors for all ten selected statements.
-See [current public progress](palomar/publication/CYCLE_STATE.json).
-The first record is now public and checked:
-[PALOMAR-2026-11-12-000013 v1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-12-000013&version=1),
-with all ten selected statements and Brice Pouly's name/ORCID preserved.
-Its [non-blocking disclosure warning and follow-up](palomar/publication/quadratic_limits/registration/DISPOSITION.json)
-remain explicit; its registered source is the original approved snapshot.
-The author subsequently authorized publication of favorable actual reviews
-without a new approval prompt. Each review must first be examined and presented;
-blocking comments require assessment and justified correction before resubmission.
-The [prepared disclosure update for the remaining five dossiers](palomar/publication-followup/)
-explicitly records the ChatGPT mathematical assistance already credited in the paper.
+The [live cycle record](palomar/publication/CYCLE_STATE.json) follows six strictly
+successive dossiers. **Three registrations are public and independently checked**,
+covering 14 of the 26 main results through 31 selected statements.
+
+| Dossier | Main results | Statements | Public status |
+| --- | --- | ---: | --- |
+| Quadratic approximation and Poisson scales | 1.1–1.2, 7.2–7.4 | 10 | [PALOMAR-2026-11-12-000013 v1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-12-000013&version=1) |
+| Cumulants and optimality | 3.3–3.4, 6.1–6.2 | 8 | [PALOMAR-2026-11-13-000001 v1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000001&version=1) |
+| Pair profiles and channel hierarchy | 3.1–3.2, 8.1–8.3 | 13 | [PALOMAR-2026-11-13-000002 v1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000002&version=1) |
+| Stopping, conversion and reconstruction | 4.1–4.2, 5.1–5.3 | 8 | [Official rendering in progress](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/43390592969) |
+| Quadratic positivity and Hermite laws | 7.1, 8.4 | 5 | Prepared; not submitted |
+| Affine events and homogeneous envelopes | 2.1–2.5 | 8 | Prepared; not submitted |
+
+Brice Pouly's name, GitHub handle and ORCID are checked in all three person
+roles for every published entry. The first registration fixes source
+`f9a2d213265a6833318745dd7f2d74c02090ab19`; its
+[non-blocking disclosure warning](palomar/publication/quadratic_limits/registration/DISPOSITION.json)
+remains explicit. The five follow-up dossiers use source
+`d6a0f6c5109886127526677603eb6b74e8c0cd82` and
+[expanded assistance metadata](palomar/publication-followup/), recording the
+ChatGPT mathematical assistance already credited in the paper. Their proof code
+and mathematical manuscript sources are unchanged. The second and third entries
+have no published warnings.
+
+The author authorized publication of favorable actual reviews without a new
+approval prompt. Each review must first be examined and presented and the request
+must bind its exact digest. Blocking comments require assessment and justified
+correction before a corrected submission. Each cycle requires its own full
+official preflight, Palomar verification, rendering and public-readback evidence.
 
 ## Preceding V2 edition
 
