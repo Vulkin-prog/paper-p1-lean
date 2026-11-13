@@ -184,5 +184,9 @@ future manuscript version and preparing Palomar registrations after completion.
   directory. The first guarded intake attempt stopped at an unavailable GET probe:
   no intake POST, intent or credential was created. Wait for readiness using only
   bounded GET probes five minutes apart, then perform one separate guarded intake.
-  No ordinary third intake has started. Do not dispatch a duplicate or begin the
-  fourth cycle.
+  The portal recovered and one ordinary third intake is now authenticated, with
+  both temporary proofs deleted. Palomar's separate verification is run
+  `43349041625`, currently queued. Follow that existing third cycle; do not
+  repeat its intake, dispatch a duplicate or begin the fourth cycle. Its actual
+  namespace report, renderer, review and public registration still require their
+  own real evidence.

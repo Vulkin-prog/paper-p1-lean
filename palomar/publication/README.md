@@ -57,6 +57,8 @@ preservation pins were checked. Four dossiers remain. The third,
 `pairs_channels`, has [passed its full preflight](https://github.com/Vulkin-prog/paper-p1-lean/actions/runs/43343229988)
 for thirteen selections at the same follow-up source. The
 [actual full report](../publication-followup/pairs_channels/preflight/VALIDATION.json)
-has no errors or warnings. No third intake is open yet: the unavailable portal
-is monitored in read-only mode every five minutes before one distinct guarded
-intake operation.
+has no errors or warnings. Ordinary third intake has now been authenticated
+after the portal recovered, and both temporary authentication proofs were
+deleted. Its separate [Palomar verification is queued](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/43349041625).
+No third registration has been issued yet; follow this existing cycle before
+starting another.

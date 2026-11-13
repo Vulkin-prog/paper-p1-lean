@@ -62,9 +62,11 @@ completed registrations. The third full cycle, `pairs_channels`, has now
 [passed its full preflight](https://github.com/Vulkin-prog/paper-p1-lean/actions/runs/43343229988)
 for thirteen selections at the same immutable follow-up source. Its
 [actual passing report](../palomar/publication-followup/pairs_channels/preflight/VALIDATION.json)
-has no errors or warnings. Ordinary intake has not started because the portal
-is unavailable; readiness is checked using bounded GET-only probes five minutes
-apart. The four dossiers following the second retain that follow-up source.
+has no errors or warnings. After a GET-only readiness check, ordinary intake
+was authenticated and both temporary proof artifacts deleted. Its separate
+[Palomar verification](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/43349041625)
+is queued. No third registration has been issued; the four dossiers following
+the second retain that follow-up source.
 
 ## Previous V2 preparation (preserved history)
 
