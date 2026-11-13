@@ -90,3 +90,10 @@ before publication under the existing delegation. The exact consent binding,
 source, eight selections, three name/ORCID records, accepted evidence and all
 dependency preservation pins match. Four cycles are closed; the next permitted
 full cycle is `probability_references`, then `affine_events`.
+
+The fifth cycle has now [passed its full preflight](../publication-followup/probability_references/preflight/VALIDATION.json)
+for five selections without mechanical warnings, at the same follow-up source.
+One ordinary intake was authenticated and both temporary proofs deleted. Its
+separate [Palomar verification](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/43408581680)
+is queued. Follow that existing cycle; its rendering, review and public readback
+are not yet complete. The sixth cycle remains prepared only.

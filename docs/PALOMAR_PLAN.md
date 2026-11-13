@@ -108,8 +108,13 @@ The fifth full preflight is now
 [run43401796046](https://github.com/Vulkin-prog/paper-p1-lean/actions/runs/43401796046),
 for five selected positivity/Hermite declarations at the same submitted source
 and follow-up metadata. Its caller head is
-`4f66b3582d32c6f0b34196afc11a0e2386bd35b7`. The report is not yet available;
-ordinary fifth intake has not started.
+`4f66b3582d32c6f0b34196afc11a0e2386bd35b7`. Its
+[actual full report passed](../palomar/publication-followup/probability_references/preflight/VALIDATION.json)
+for all five selections without errors or warnings. One ordinary fifth intake
+was then authenticated and both temporary proofs deleted. The separate
+[Palomar verification](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/43408581680)
+is queued. Follow that existing cycle; rendering, review and registration remain
+separate later steps, and the sixth cycle has not started.
 
 ## Reproducible public coverage audit
 

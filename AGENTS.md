@@ -251,6 +251,15 @@ future manuscript version and preparing Palomar registrations after completion.
   and official producer pin. Follow this existing workflow; do not redispatch.
   Obtain and validate its actual passing full report before one ordinary intake.
   The fourth cycle is publicly closed; the sixth remains prepared only.
+  That actual full report has now passed for all five selections, with no errors
+  or warnings, and is archived under the fifth follow-up `preflight/` directory.
+  One ordinary fifth intake is now authenticated; both temporary proofs were
+  deleted. Its separate Palomar verification is run `43408581680`, producer
+  `14aa8d6b3c2f14a8540605e37144560b9a00e7e7`. Follow that existing cycle; do
+  not repeat dispatch or intake, or begin the sixth. Its actual intake creation
+  time is `2026-11-13T10:22:16Z`. A later renderer must be disambiguated by this
+  time and its actual five-declaration configuration/artifact, since the other
+  follow-up renders share the same source commit.
 
 - `scripts/check_registered_coverage.py` audits the archived public records and
   complete26-result allocation without credentials or network calls. Its
