@@ -1,0 +1,122 @@
+{
+  "artifact_tree_sha256": "62ed968ef5718982b4f2b6789404f899e446bfcbddc006ebeb33de7bcbe9541b",
+  "bwrap_source_tag": "v0.12.0",
+  "entrypoint": "Challenge/index.html",
+  "errors": [],
+  "format": "verso-html",
+  "lean_toolchain": "leanprover/lean4:v4.36.0-rc2",
+  "limits": {
+    "artifact_bytes": 26214400,
+    "artifact_files": 2000,
+    "artifact_nodes": 4000,
+    "build_file_bytes": 2147483648,
+    "memory_bytes": 12884901888,
+    "open_files": 4096,
+    "per_file_bytes": 8388608,
+    "tasks": 512,
+    "wall_seconds": 21600,
+    "workspace_bytes": 12884901888
+  },
+  "mathlib_cache": {
+    "bytes": 0,
+    "downloaded": 0,
+    "requested": 9081
+  },
+  "prepared_at": "2026-11-13T11:23:58Z",
+  "rendered_at": "2026-11-13T12:02:24Z",
+  "renderer_commit": "14aa8d6b3c2f14a8540605e37144560b9a00e7e7",
+  "schema_version": 3,
+  "source": {
+    "challenge_path": "RegistryV2/ChallengeP1V2ProbabilityReferences.lean",
+    "challenge_sha256": "84c7991f12084312dc298b9cff31625928779947592e7c6adf8357eb59a70e89",
+    "commit": "d6a0f6c5109886127526677603eb6b74e8c0cd82",
+    "comparator_config_path": "RegistryV2/comparator/p1_probability_references.json",
+    "lakefile_path": "RegistryV2/lakefile.toml",
+    "lean_toolchain_path": "RegistryV2/lean-toolchain",
+    "project_path": "RegistryV2",
+    "repository": "Vulkin-prog/paper-p1-lean",
+    "repository_url": "https://github.com/Vulkin-prog/paper-p1-lean",
+    "solution_path": "RegistryV2/SolutionP1V2ProbabilityReferences.lean"
+  },
+  "stage": "complete",
+  "status": "pass",
+  "surface": {
+    "audit_declarations": [
+      {
+        "declaration": "theorem PaperP1Registry.V2.ProbabilityReferences.quadratic_probability_criterion (\u03bc \u03b1 : Real) (h\u03bc : LT.lt 0 \u03bc) :\n  Iff\n    (And (\u2200 (k : Nat), LE.le 0 (PaperP1Registry.V2.ProbabilityReferences.quadraticMass \u03bc \u03b1 k))\n      (HasSum (PaperP1Registry.V2.ProbabilityReferences.quadraticMass \u03bc \u03b1) 1))\n    (And (LE.le 0 \u03b1)\n      (LE.le \u03b1\n        (HDiv.hDiv (HMul.hMul 2 (HPow.hPow \u03bc 2))\n          (HAdd.hAdd \u03bc\n            (HMul.hMul (PaperP1Registry.V2.ProbabilityReferences.fractionalPart \u03bc)\n              (HSub.hSub 1 (PaperP1Registry.V2.ProbabilityReferences.fractionalPart \u03bc)))))))",
+        "name": "PaperP1Registry.V2.ProbabilityReferences.quadratic_probability_criterion"
+      },
+      {
+        "declaration": "theorem PaperP1Registry.V2.ProbabilityReferences.quadratic_mass_formula (\u03bc \u03b1 : Real) (h\u03bc : LT.lt 0 \u03bc) (k : Nat) :\n  Eq (DFunLike.coe (PaperP1Registry.V2.ProbabilityReferences.signedReference \u03bc \u03b1) (Singleton.singleton k))\n    (HMul.hMul (HDiv.hDiv (HMul.hMul (Real.exp (Neg.neg \u03bc)) (HPow.hPow \u03bc k)) \u2191(Nat.factorial k))\n      (HAdd.hAdd 1\n        (HMul.hMul (HDiv.hDiv \u03b1 (HMul.hMul 2 (HPow.hPow \u03bc 2))) (HSub.hSub (HPow.hPow (HSub.hSub (\u2191k) \u03bc) 2) \u2191k))))",
+        "name": "PaperP1Registry.V2.ProbabilityReferences.quadratic_mass_formula"
+      },
+      {
+        "declaration": "theorem PaperP1Registry.V2.ProbabilityReferences.hermite_exact (C \u03b5 : Real) (h\u03b5 : LT.lt 0 \u03b5) :\n  Exists fun N\u2080 =>\n    And (LE.le 10 N\u2080)\n      (\u2200 (N : Nat),\n        GE.ge N N\u2080 \u2192\n          \u2200 (L : Nat),\n            LE.le (abs (HSub.hSub (\u2191L) (HDiv.hDiv (Real.log \u2191N) (Real.log 2)))) C \u2192\n              Exists fun h\u03b1 =>\n                Exists fun h\u03b1\u03bc =>\n                  And\n                    (LE.le\n                      (PaperP1Registry.V2.ProbabilityReferences.distance\n                        (PaperP1Registry.V2.ProbabilityReferences.sourceSigned N L)\n                        (MeasureTheory.Measure.toSignedMeasure\n                          (MeasureTheory.ProbabilityMeasure.toMeasure\n                            (PaperP1Registry.V2.ProbabilityReferences.hermiteLaw\n                              (PaperP1Registry.V2.ProbabilityReferences.actualMean N L)\n                              (PaperP1Registry.V2.ProbabilityReferences.secondCumulant N L) h\u03b1 h\u03b1\u03bc))))\n                      (HPow.hPow (\u2191N) (HAdd.hAdd (-4 / 3) \u03b5)))\n                    (LE.le\n                      (PaperP1Registry.V2.ProbabilityReferences.totalVariation N L\n                        (PaperP1Registry.V2.ProbabilityReferences.hermiteLaw\n                          (PaperP1Registry.V2.ProbabilityReferences.actualMean N L)\n                          (PaperP1Registry.V2.ProbabilityReferences.secondCumulant N L) h\u03b1 h\u03b1\u03bc))\n                      (HPow.hPow (\u2191N) (HAdd.hAdd (-4 / 3) \u03b5))))",
+        "name": "PaperP1Registry.V2.ProbabilityReferences.hermite_exact"
+      },
+      {
+        "declaration": "theorem PaperP1Registry.V2.ProbabilityReferences.hermite_fixed_height (h : Nat) (hh : LE.le 3 h) (C \u03b5 : Real) (h\u03b5 : LT.lt 0 \u03b5) :\n  Exists fun N\u2080 =>\n    And (LE.le 2 N\u2080)\n      (\u2200 (N : Nat),\n        GE.ge N N\u2080 \u2192\n          \u2200 (L : Nat),\n            LE.le (abs (HSub.hSub (\u2191L) (HDiv.hDiv (Real.log \u2191N) (Real.log 2)))) C \u2192\n              Exists fun h\u03b1 =>\n                Exists fun h\u03b1\u03bc =>\n                  LE.le\n                    (PaperP1Registry.V2.ProbabilityReferences.distance\n                      (PaperP1Registry.V2.ProbabilityReferences.sourceSigned N L)\n                      (MeasureTheory.Measure.toSignedMeasure\n                        (MeasureTheory.ProbabilityMeasure.toMeasure\n                          (PaperP1Registry.V2.ProbabilityReferences.hermiteLaw\n                            (PaperP1Registry.V2.ProbabilityReferences.nominalMean N L)\n                            (PaperP1Registry.V2.ProbabilityReferences.coefficient N L h) h\u03b1 h\u03b1\u03bc))))\n                    (HPow.hPow (\u2191N) (HAdd.hAdd (HAdd.hAdd (-1) (HDiv.hDiv 1 \u2191(HAdd.hAdd h 1))) \u03b5)))",
+        "name": "PaperP1Registry.V2.ProbabilityReferences.hermite_fixed_height"
+      },
+      {
+        "declaration": "theorem PaperP1Registry.V2.ProbabilityReferences.hermite_fixed_equivalent (h : Nat) (hh : LE.le 3 h) (C \u03c4 : Real) :\n  LT.lt 0 \u03c4 \u2192\n    Exists fun N\u2080 =>\n      And (LE.le 2 N\u2080)\n        (\u2200 (N : Nat),\n          GE.ge N N\u2080 \u2192\n            \u2200 (L : Nat),\n              LE.le (abs (HSub.hSub (\u2191L) (HDiv.hDiv (Real.log \u2191N) (Real.log 2)))) C \u2192\n                Exists fun h\u03b1 =>\n                  Exists fun h\u03b1\u03bc =>\n                    And (LT.lt 0 (PaperP1Registry.V2.ProbabilityReferences.leadingGap N L h))\n                      (LE.le\n                        (abs\n                          (HSub.hSub\n                            (HDiv.hDiv\n                              (PaperP1Registry.V2.ProbabilityReferences.totalVariation N L\n                                (PaperP1Registry.V2.ProbabilityReferences.hermiteLaw\n                                  (PaperP1Registry.V2.ProbabilityReferences.nominalMean N L)\n                                  (PaperP1Registry.V2.ProbabilityReferences.coefficient N L h) h\u03b1 h\u03b1\u03bc))\n                              (HDiv.hDiv\n                                (HMul.hMul (PaperP1Registry.V2.ProbabilityReferences.phaseMass N L (HAdd.hAdd h 1))\n                                  (PaperP1Registry.V2.ProbabilityReferences.secondNorm\n                                    (PaperP1Registry.V2.ProbabilityReferences.nominalMean N L)))\n                                4))\n                            1))\n                        \u03c4))",
+        "name": "PaperP1Registry.V2.ProbabilityReferences.hermite_fixed_equivalent"
+      }
+    ],
+    "declarations": [
+      "PaperP1Registry.V2.ProbabilityReferences.quadratic_probability_criterion",
+      "PaperP1Registry.V2.ProbabilityReferences.quadratic_mass_formula",
+      "PaperP1Registry.V2.ProbabilityReferences.hermite_exact",
+      "PaperP1Registry.V2.ProbabilityReferences.hermite_fixed_height",
+      "PaperP1Registry.V2.ProbabilityReferences.hermite_fixed_equivalent"
+    ],
+    "imports": [
+      "Mathlib.Algebra.Field.ZMod",
+      "Mathlib.Algebra.Order.Floor.Semiring",
+      "Mathlib.Analysis.InnerProductSpace.Basic",
+      "Mathlib.Analysis.SpecialFunctions.Pow.Real",
+      "Mathlib.Data.Finset.Interval",
+      "Mathlib.Data.Nat.Factorization.Basic",
+      "Mathlib.Data.ZMod.Basic",
+      "Mathlib.MeasureTheory.Integral.Bochner.Basic",
+      "Mathlib.MeasureTheory.Measure.ProbabilityMeasure",
+      "Mathlib.MeasureTheory.VectorMeasure.WithDensity",
+      "Mathlib.NumberTheory.PrimeCounting",
+      "Mathlib.Probability.Distributions.Poisson.Basic",
+      "Mathlib.Probability.Distributions.Uniform",
+      "Mathlib.Probability.Independence.Basic",
+      "Mathlib.Probability.ProductMeasure",
+      "Mathlib.Tactic.NormNum"
+    ],
+    "module_doc": "# P1 V2: Probability domain and actual single/double-jump Hermite laws\n\nSelected statements cover main article results 7.1,8.4. Literal definitions specify\nthe independent prime-sign model, exact observables, reference laws and error\nnorms. Parameters and thresholds retain their printed order. The companion\nsupplies substantive proofs through the parent development in this repository.\nThe corresponding six-dossier coverage map records each complete clause bundle.\nOnly the selected Challenge theorem proofs are deliberate statement holes;\nthe Solution and its bridge proofs contain no placeholders.\nSelected model foundations are adapted through P1 from Paper C, commit\nb9fa9ba490f201b408a302a86f1594ee620b228b, Apache-2.0; see docs/PAPER_C_REUSE.md.",
+    "schema_version": 3,
+    "solution_imports": [
+      "Mathlib.Algebra.Field.ZMod",
+      "Mathlib.Algebra.Order.Floor.Semiring",
+      "Mathlib.Analysis.InnerProductSpace.Basic",
+      "Mathlib.Analysis.SpecialFunctions.Pow.Real",
+      "Mathlib.Data.Finset.Interval",
+      "Mathlib.Data.Nat.Factorization.Basic",
+      "Mathlib.Data.ZMod.Basic",
+      "Mathlib.MeasureTheory.Integral.Bochner.Basic",
+      "Mathlib.MeasureTheory.Measure.ProbabilityMeasure",
+      "Mathlib.MeasureTheory.VectorMeasure.WithDensity",
+      "Mathlib.NumberTheory.PrimeCounting",
+      "Mathlib.Probability.Distributions.Poisson.Basic",
+      "Mathlib.Probability.Distributions.Uniform",
+      "Mathlib.Probability.Independence.Basic",
+      "Mathlib.Probability.ProductMeasure",
+      "Mathlib.Tactic.NormNum",
+      "PaperP1.Asymptotics.ActualPairPhase",
+      "PaperP1.Asymptotics.FixedHeightHierarchy",
+      "PaperP1.Asymptotics.OptimalHermite",
+      "PaperP1.Asymptotics.OptimalQuadratic",
+      "PaperP1.Asymptotics.OptimalThirdCumulant",
+      "PaperP1.Asymptotics.TwoChannelReference",
+      "PaperP1.Model.FourthRunFactorialCumulant",
+      "PaperP1.Model.RetainedMomentTransfer"
+    ]
+  },
+  "verso_commit": "71a2035b44e7f54a797ce799fd1b03cdd3a44684",
+  "workflow_url": "https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/43414628691"
+}

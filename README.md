@@ -25,7 +25,7 @@ links each numbered main result to its actual selection and public record.
 | Cumulants and optimality | 3.3–3.4, 6.1–6.2 | 8 | [PALOMAR-2026-11-13-000001 v1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000001&version=1) |
 | Pair profiles and channel hierarchy | 3.1–3.2, 8.1–8.3 | 13 | [PALOMAR-2026-11-13-000002 v1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000002&version=1) |
 | Stopping, conversion and reconstruction | 4.1–4.2, 5.1–5.3 | 8 | [PALOMAR-2026-11-13-000008 v1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000008&version=1) |
-| Quadratic positivity and Hermite laws | 7.1, 8.4 | 5 | [Official rendering queued](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/43414628691) |
+| Quadratic positivity and Hermite laws | 7.1, 8.4 | 5 | [Rendering passed; review pending](palomar/publication-followup/probability_references/rendering/VALIDATION.json) |
 | Affine events and homogeneous envelopes | 2.1–2.5 | 8 | Prepared; not submitted |
 
 Brice Pouly's name, GitHub handle and ORCID are checked in all three person

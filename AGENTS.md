@@ -268,6 +268,11 @@ future manuscript version and preparing Palomar registrations after completion.
   `2026-11-13T11:08:24Z`, after this intake, at the pinned producer. Follow that
   existing run and validate its actual source/configuration, all five selected
   declarations and compiler-backed anchors. Discovery alone is not a pass.
+  Its actual rendering artifact has now passed inspection: all five exact
+  declarations and thirteen manifest file hashes match. The ZIP, report and
+  receipt are under the fifth follow-up `rendering/` directory. All three actual
+  evidence gates pass. Its actual private editorial review remains separate;
+  do not publish until it is read, presented and bound to its exact digest.
 
 - `scripts/check_registered_coverage.py` audits the archived public records and
   complete26-result allocation without credentials or network calls. Its

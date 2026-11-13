@@ -100,5 +100,7 @@ for all five selections without mechanical warnings. Follow that existing cycle;
 its rendering, review and public readback
 are not yet complete. The sixth cycle remains prepared only.
 Its [official rendering](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/43414628691)
-is now queued, created after this intake on13 November at11:08:24 UTC.
-The actual five-declaration artifact has not yet been validated.
+has now [passed](../publication-followup/probability_references/rendering/VALIDATION.json),
+created after this intake on13 November at11:08:24 UTC. All five compiler-backed
+declaration anchors and thirteen manifest file hashes match. The actual editorial
+review remains pending.
