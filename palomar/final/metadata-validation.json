@@ -1,0 +1,14 @@
+{
+  "status": "pass",
+  "checked_at": "2026-11-13T13:23:35.673853+00:00",
+  "pipeline_commit": "14aa8d6b3c2f14a8540605e37144560b9a00e7e7",
+  "parser_source_bytes_match_current_primary": true,
+  "parser_sha256": "264b7da57bd099b7cd4da15b580b32978671a60b8b396c60920f584176224cc3",
+  "metadata_path": "palomar/final/foundations/formalization.yaml",
+  "metadata_sha256": "6e244f8e460e4eabe2d7e5f4674e9d2292d2ad09e77ef87a20b5055e406cee4c",
+  "all_three_person_roles_verified": true,
+  "automation_methods": 2,
+  "network_orcid_lookup_performed": false,
+  "local_metadata_parser_only": true,
+  "not_official_palomar_preflight": true
+}

@@ -30,6 +30,8 @@ jobs:
           sources = {json.loads(path.read_text())['source_commit'] for path in receipts}
           cycles = json.loads(Path('palomar/publication/CYCLE_STATE.json').read_text())
           sources.add(cycles['preparation_snapshot_commit'])
+          if cycles.get('allocation_source_commit'):
+              sources.add(cycles['allocation_source_commit'])
           sources.update(item['source_commit'] for item in cycles['cycles'] if item.get('registration'))
           for source in sorted(sources):
               if not re.fullmatch('[0-9a-f]{40}', source):
@@ -64,6 +66,8 @@ jobs:
           python3 scripts/update_audit.py --check
           python3 scripts/check_registry_v2.py
           python3 -m unittest discover -s tests -p test_registry_v2.py
+          python3 scripts/check_registry_final.py
+          python3 -m unittest discover -s tests -p test_registry_final.py
           python3 scripts/check_registry_candidates.py
           python3 scripts/check_registry_consolidation.py
           python3 scripts/check_palomar_sources.py
@@ -76,6 +80,15 @@ jobs:
       - name: Download only the required Mathlib cache
         run: |
           python3 scripts/cache_dependencies.py
+          python3 scripts/check_disk.py
+      - name: Build the merged final Palomar interface
+        run: |
+          python3 scripts/check_disk.py
+          mkdir -p RegistryFinal/.lake
+          ln -s ../../.lake/packages RegistryFinal/.lake/packages
+          lake -d RegistryFinal build ChallengeP1FinalFoundations SolutionP1FinalFoundations AuditRegistryFinal
+          lake -d RegistryFinal env lean RegistryFinal/AuditRegistryFinal.lean > registry-final-axioms.txt
+          python3 scripts/check_registry_final.py --audit-log registry-final-axioms.txt
           python3 scripts/check_disk.py
       - name: Build with warnings as errors
         run: lake build

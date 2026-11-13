@@ -1,0 +1,67 @@
+name: P1 final merged-dossier Palomar preflight
+run-name: P1 final preflight at ${{ inputs.source_commit }}
+
+on:
+  workflow_dispatch:
+    inputs:
+      source_commit:
+        description: Immutable source of the merged final dossier
+        required: true
+        type: string
+      authorization_relationship:
+        description: Confirmed relationship of the responsible human
+        required: true
+        type: choice
+        options:
+          - I am a responsible author or maintainer
+
+permissions:
+  contents: read
+
+concurrency:
+  group: p1-palomar-registration
+  cancel-in-progress: false
+
+jobs:
+  select:
+    runs-on: ubuntu-24.04
+    outputs:
+      request_id: ${{ steps.selection.outputs.request_id }}
+      options: ${{ steps.selection.outputs.options }}
+    steps:
+      - name: Select the single final source and already confirmed relationship
+        id: selection
+        env:
+          P1_SOURCE: ${{ inputs.source_commit }}
+          P1_RELATIONSHIP: ${{ inputs.authorization_relationship }}
+        run: |
+          python3 - <<'PY'
+          import hashlib, json, os, re
+          source = os.environ['P1_SOURCE']
+          relationship = os.environ['P1_RELATIONSHIP']
+          if not re.fullmatch('[0-9a-f]{40}', source):
+              raise SystemExit('A full immutable source commit is required')
+          if relationship != 'I am a responsible author or maintainer':
+              raise SystemExit('The confirmed responsible-author relationship is required')
+          options = {
+              'project_path': 'RegistryFinal',
+              'comparator_config_path': 'RegistryFinal/comparator/p1_foundations.json',
+              'formalization_metadata_path': 'palomar/final/foundations/formalization.yaml',
+              'authorization_relationship': relationship,
+          }
+          identity = hashlib.sha256((source + ':foundations').encode()).hexdigest()[:10]
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as output:
+              output.write('request_id=pm' + identity + '\n')
+              output.write('options=' + json.dumps(options, separators=(',', ':')) + '\n')
+          PY
+  verify:
+    needs: select
+    uses: PalomarRegistry/PalomarSubmission/.github/workflows/submission.yml@14aa8d6b3c2f14a8540605e37144560b9a00e7e7
+    with:
+      repository: ${{ github.repository }}
+      commit: ${{ inputs.source_commit }}
+      pipeline_commit: 14aa8d6b3c2f14a8540605e37144560b9a00e7e7
+      request_id: ${{ needs.select.outputs.request_id }}
+      mode: full
+      execution_profile: palomar-standard-v1
+      options: ${{ needs.select.outputs.options }}

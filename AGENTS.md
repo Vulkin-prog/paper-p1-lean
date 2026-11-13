@@ -1,5 +1,30 @@
 # P1 formalization contract
 
+## Latest author instruction: preserve four issued registrations
+
+On13 November2026 the author explicitly required that the four completed
+registrations remain unchanged, and authorized rescoping or merging the two
+unregistered remainders and adding relevant companion results. This supersedes
+the historical six-candidate sequence below for unregistered work only.
+`palomar/REGISTRATION_PLAN_FINAL.json` aims at five total records: the unchanged
+four and one `RegistryFinal` candidate with three compound targets. These retain
+all thirteen remaining main-result clauses and directly add companion13.1 and15.1 with
+the latter's displayed sequence corollary. The intended coverage is26 main results and
+two directly selected numbered companion results;42 statements total include39
+already published declarations. Do not reopen or amend any issued registration.
+`palomar/final/PRESERVATION.json` freezes81 existing public files and the exact
+four-cycle prefix. Run `scripts/check_registry_final.py`, its negative controls,
+the new111-theorem audit and the new exact statement comparison. Old `RegistryV2`
+and all qualification receipts stay byte-identical. Only one complete official
+cycle may be active: close the superseded unregistered intake before dispatching
+the final full preflight. Source-only preparation is not a completed new cycle.
+The responsible-author attestation and positive-review publication delegation
+persist. Inspect, present and bind the actual review; do not resample unchanged
+source or publish an adverse review under the favorable-review delegation.
+Keep credentials and all unregistered editorial outcomes private.
+
+## Preserved development and operational history
+
 The user requests a Lean formalization of BOTH the P1 article and its technical
 companion, using Lean **v4.36.0-rc2**, tracking mathematical corrections for a
 future manuscript version and preparing Palomar registrations after completion.

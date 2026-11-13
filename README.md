@@ -10,10 +10,14 @@ versus homogeneous event scopes; the mathematical Lean code and pins are unchang
 The [current correspondence](docs/manuscript-results-publication-2026-11-12.json),
 [actual fresh replay](docs/validation/publication-2026-11-12/lean-validation.json)
 and [French review](docs/reviews/2026-11-12/PUBLICATION_REVIEW_FR.md) record the evidence
-and remaining optional simplifications. Six unchanged Palomar configurations
-cover all 26 main results through 52 selections; their
-[publication preparation](palomar/REGISTRATION_PLAN_PUBLICATION.json) is preserved.
-The [live cycle record](palomar/publication/CYCLE_STATE.json) follows six strictly
+and remaining optional simplifications. The [final five-record allocation](palomar/REGISTRATION_PLAN_FINAL.json)
+preserves the four issued entries and merges the two unregistered remainder
+scopes, adding companion Propositions13.1 and15.1 and the latter's displayed sequence corollary.
+It covers all26 main results through42 selected statements, of which the
+three new targets are explicit compound statements. The historical six-candidate
+allocation and its52 selections remain in the preserved
+[publication preparation](palomar/REGISTRATION_PLAN_PUBLICATION.json).
+The [live cycle record](palomar/publication/CYCLE_STATE.json) follows strictly
 successive dossiers. **Four registrations are public and independently checked**,
 covering 19 of the 26 main results through 39 selected statements.
 The [archived coverage audit](palomar/publication/REGISTRATION_COVERAGE.json)
@@ -25,19 +29,22 @@ links each numbered main result to its actual selection and public record.
 | Cumulants and optimality | 3.3–3.4, 6.1–6.2 | 8 | [PALOMAR-2026-11-13-000001 v1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000001&version=1) |
 | Pair profiles and channel hierarchy | 3.1–3.2, 8.1–8.3 | 13 | [PALOMAR-2026-11-13-000002 v1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000002&version=1) |
 | Stopping, conversion and reconstruction | 4.1–4.2, 5.1–5.3 | 8 | [PALOMAR-2026-11-13-000008 v1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000008&version=1) |
-| Quadratic positivity and Hermite laws | 7.1, 8.4 | 5 | [Rendering passed; review pending](palomar/publication-followup/probability_references/rendering/VALIDATION.json) |
-| Affine events and homogeneous envelopes | 2.1–2.5 | 8 | Prepared; not submitted |
+| Uniform event calculus, Hermite laws and the fixed-moment barrier | 2.1–2.5,7.1,8.4; companion13.1,15.1 and the latter's sequence corollary | 3 compound targets | [Merged final candidate; not registered](RegistryFinal/README.md) |
 
 Brice Pouly's name, GitHub handle and ORCID are checked in all three person
 roles for every published entry. The first registration fixes source
 `f9a2d213265a6833318745dd7f2d74c02090ab19`; its
 [non-blocking disclosure warning](palomar/publication/quadratic_limits/registration/DISPOSITION.json)
-remains explicit. The five follow-up dossiers use source
+remains explicit. The second, third and fourth entries use source
 `d6a0f6c5109886127526677603eb6b74e8c0cd82` and
 [expanded assistance metadata](palomar/publication-followup/), recording the
 ChatGPT mathematical assistance already credited in the paper. Their proof code
 and mathematical manuscript sources are unchanged. The second, third and fourth
-entries have no published warnings.
+entries have no published warnings. The merged remainder uses the separate
+`RegistryFinal` project and [final metadata](palomar/final/foundations/formalization.yaml).
+It has its own111-theorem audit; the mathematical manuscript sources and all four
+issued records are preserved. Its official qualification and editorial decision
+remain separate steps.
 
 The author authorized publication of favorable actual reviews without a new
 approval prompt. Each review must first be examined and presented and the request

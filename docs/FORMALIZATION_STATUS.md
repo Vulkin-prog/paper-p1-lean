@@ -10,14 +10,18 @@ See [publication alignment](PUBLICATION_ALIGNMENT.md),
 [French critical review](reviews/2026-11-12/PUBLICATION_REVIEW_FR.md),
 [current index](manuscript-results-publication-2026-11-12.json) and
 [actual replay](validation/publication-2026-11-12/lean-validation.json).
-The six Palomar project/configuration identities and52 compared statements
-still cover all26 main results. The current publication metadata and caller
-are under `palomar/publication` and `palomar-publication-preflight.yml`.
-The author resumed the six strictly successive cycles and delegated publication
-of favorable actual reviews. See [live progress](../palomar/publication/CYCLE_STATE.json)
-and the [issued-record coverage audit](../palomar/publication/REGISTRATION_COVERAGE.json).
-Frozen on-hold preparation records, prior editions and qualification receipts
-remain preserved as historical snapshots.
+The author now requests preservation of the four issued Palomar records and
+allows merging the two unregistered remainders. The [final five-record plan](../palomar/REGISTRATION_PLAN_FINAL.json)
+keeps all26 main results explicitly selected through42 statements and adds
+direct companion Propositions13.1 and15.1 with its displayed sequence corollary. The
+[new111-theorem interface and clause correspondence](REGISTRATION_FINAL_ALIGNMENT.md)
+preserve all thirteen remaining main-result clauses. No mathematical paper
+statement, parent proof module, compiler or dependency pin is changed.
+Publication of favorable actual reviews remains delegated. See
+[live progress](../palomar/publication/CYCLE_STATE.json) and the
+[issued-record audit](../palomar/publication/REGISTRATION_COVERAGE.json).
+The earlier six-candidate allocation and all qualification snapshots remain
+preserved; planned coverage does not imply an issued final registration.
 
 ## Preceding V2 alignment (historical snapshot)
 

@@ -116,8 +116,16 @@ class RegisteredCoverageTests(unittest.TestCase):
         def read(root, path):
             return state if path == audit.STATE else original_load(root, path)
         with patch.object(audit, 'load', side_effect=read):
-            with self.assertRaisesRegex(ValueError, 'Six public registrations are not complete'):
+            with self.assertRaisesRegex(ValueError, 'planned public registrations are not complete'):
                 audit.inspect(ROOT, require_all=True)
+
+    def test_final_five_record_allocation_preserves_all_main_results(self):
+        plan = audit.load(ROOT, 'palomar/REGISTRATION_PLAN_FINAL.json')
+        bundles, results = audit.validate_allocation(plan, self.index)
+        self.assertEqual(len(bundles), 5)
+        self.assertEqual(len(results), 26)
+        self.assertEqual(sum(len(b['selected_declarations']) for b in bundles.values()), 42)
+        self.assertEqual({r['number'] for r in bundles['foundations']['companion_results']}, {'T13.1','T15.1'})
 
 
 if __name__ == '__main__':

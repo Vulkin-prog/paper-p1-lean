@@ -1,0 +1,168 @@
+{
+  "schema_version": 1,
+  "status": "local_checks_passed",
+  "checked_at": "2026-11-13T13:35:46.667910+00:00",
+  "source_files": {
+    "RegistryFinal/SolutionP1FinalFoundations.lean": "4f4b48e22c00e4ee828230dbec753bd7a08a08992d1c3c19644f4900a8797aca",
+    "RegistryFinal/.gitignore": "fde850d24186b6e99c8c0debd641fb3ab85198b109eb66f71a1fea02bd6ea1b3",
+    "RegistryFinal/lake-manifest.json": "20e5c344bfd5c95a57c279e59c9b91638a0d1e25f81deb162dcc852517bce516",
+    "RegistryFinal/ChallengeP1FinalFoundations.lean": "de037135e6d0e9eca19a7c7382d51bf6d1f92d310e6fe18d93ed222b85aac786",
+    "RegistryFinal/lakefile.toml": "cd491059217bae576f45e247f7e41256c70b023d34c237e1f5b3af1a1396beb4",
+    "RegistryFinal/audit-declarations.json": "65ad0b8ea0b8e059165baf64f1306cdefaa6942bf79378904f53709c3f408638",
+    "RegistryFinal/lean-toolchain": "11c697aebe5b539d74f5069e497a588e7dfab1c4eeb74313f28357e351c55ca3",
+    "RegistryFinal/clause-map.json": "65f62185661c9a7f19d3a811a2b145e3b3d398f1ebda17bb808a542ef6026c06",
+    "RegistryFinal/README.md": "77a2df5aaced630d3918e87e9daf246a2feb1ada57aaa9f0c791c85ccfd5c350",
+    "RegistryFinal/AuditRegistryFinal.lean": "8e20be087bfae0926abc0d9892f7e6a7f793c877f2e10b2addd7be8d891ebcc5",
+    "RegistryFinal/comparator/p1_foundations.json": "16c056a6ad76875957f57730f6aa5df6db7ab73086c580258d003e94d386b074"
+  },
+  "unchanged_parent_proof_baseline_commit": "0d734cbc06f804001bfc9d8fffafdcf5cd9fe4ac",
+  "parent_audited_declarations": 20019,
+  "final_audited_declarations": 111,
+  "final_selected_statements": 3,
+  "main_result_clauses_preserved": 13,
+  "direct_companion_results": [
+    "T13.1",
+    "T15.1"
+  ],
+  "parent_audit_uncompressed_sha256": "67e447d720a59d8d2ef84dccf13b15e244dfe7c4d699790dce8511618b4453a3",
+  "actual_build_steps": [
+    {
+      "name": "disk-before",
+      "actual_exit": 0,
+      "log": "final-disk-before.log",
+      "log_sha256": "69ca14743b5cf79872f93d91a822dfb10aa30263e381457c78f4855b78bc3b82"
+    },
+    {
+      "name": "source-integrity",
+      "actual_exit": 0,
+      "log": "final-source-integrity.log",
+      "log_sha256": "e69e3256f47b82162fa687c1b0ef1b478e5594a5ddf2b41a709725a8e04d70ac"
+    },
+    {
+      "name": "parent-build",
+      "actual_exit": 0,
+      "log": "final-parent-build.log",
+      "log_sha256": "6eb7e2fd1fb7345d9a0d9a4dd1119e75c74ea3c9ae2dc2a6c3d2451962ccc3ee"
+    },
+    {
+      "name": "parent-audit",
+      "actual_exit": 0,
+      "log": "final-parent-audit.log",
+      "log_sha256": "67e447d720a59d8d2ef84dccf13b15e244dfe7c4d699790dce8511618b4453a3"
+    },
+    {
+      "name": "parent-audit-validation",
+      "actual_exit": 0,
+      "log": "final-parent-audit-validation.log",
+      "log_sha256": "8ad767e06e62f7dab97eabfcb5c6ab47e1a3c0bffeb8762885ae74d883c6a131"
+    },
+    {
+      "name": "final-audit",
+      "actual_exit": 0,
+      "log": "final-final-audit.log",
+      "log_sha256": "5502e220fbee3a68d7ea5c6d7e1d094e438b9b603f182354bfad9be10831f1a9"
+    },
+    {
+      "name": "final-audit-validation",
+      "actual_exit": 0,
+      "log": "final-final-audit-validation.log",
+      "log_sha256": "03a0c56c5f59f9052dac61ae94a70c3b70d993d85a9ea03cc8b97af464df3919"
+    },
+    {
+      "name": "disk-after",
+      "actual_exit": 0,
+      "log": "final-disk-after.log",
+      "log_sha256": "22291ef51e6da50f47d8609976b16f2b8048532c91ebebf261d2aa36809c8763"
+    }
+  ],
+  "kernel_checks": {
+    "checked_at": "2026-11-13T13:35:34.561236+00:00",
+    "actual_comparator_exit": 0,
+    "kernels_accepted": [
+      "Lean paranoid",
+      "lean4lean",
+      "nanoda",
+      "con-leche",
+      "con-ron",
+      "Lean default"
+    ],
+    "selected_declarations": [
+      "PaperP1Registry.Final.Affine.uniform_event_calculus",
+      "PaperP1Registry.Final.Reference.positive_hermite_approximation",
+      "PaperP1Registry.Final.Obstruction.fixed_moment_barrier"
+    ],
+    "source_files": {
+      "RegistryFinal/SolutionP1FinalFoundations.lean": "4f4b48e22c00e4ee828230dbec753bd7a08a08992d1c3c19644f4900a8797aca",
+      "RegistryFinal/.gitignore": "fde850d24186b6e99c8c0debd641fb3ab85198b109eb66f71a1fea02bd6ea1b3",
+      "RegistryFinal/lake-manifest.json": "20e5c344bfd5c95a57c279e59c9b91638a0d1e25f81deb162dcc852517bce516",
+      "RegistryFinal/ChallengeP1FinalFoundations.lean": "de037135e6d0e9eca19a7c7382d51bf6d1f92d310e6fe18d93ed222b85aac786",
+      "RegistryFinal/lakefile.toml": "cd491059217bae576f45e247f7e41256c70b023d34c237e1f5b3af1a1396beb4",
+      "RegistryFinal/audit-declarations.json": "65ad0b8ea0b8e059165baf64f1306cdefaa6942bf79378904f53709c3f408638",
+      "RegistryFinal/lean-toolchain": "11c697aebe5b539d74f5069e497a588e7dfab1c4eeb74313f28357e351c55ca3",
+      "RegistryFinal/clause-map.json": "65f62185661c9a7f19d3a811a2b145e3b3d398f1ebda17bb808a542ef6026c06",
+      "RegistryFinal/README.md": "77a2df5aaced630d3918e87e9daf246a2feb1ada57aaa9f0c791c85ccfd5c350",
+      "RegistryFinal/AuditRegistryFinal.lean": "8e20be087bfae0926abc0d9892f7e6a7f793c877f2e10b2addd7be8d891ebcc5",
+      "RegistryFinal/comparator/p1_foundations.json": "16c056a6ad76875957f57730f6aa5df6db7ab73086c580258d003e94d386b074"
+    },
+    "tool_binary_sha256": {
+      "lake": "42678ccbc2605e2f892540dc7236e009fdd1224e823d104dfd72725d2f1a52d2",
+      "lean": "db7f559d05795e7af52e42bc966c90240a39dcb9712161c54c97afa546e20c00",
+      "leanexport": "8298d4412a1f8986b5dbfd1d9925211778d8d320fc47b72040c8fdfdd5b603d5",
+      "leanchecker": "2b2ff08805ace61c935b023f8114ac3f7f1d3bc79cb4e8c47ef7801a5af58798",
+      "leanchecker-paranoid": "4508d26d3e22463a9566a6155d7a1600c7bfc42b6cd2548be73e3d19d159d6c5",
+      "lean4lean": "baaec030a70c78562ced2c75866ab0d2410e81ce680b835179ed16570ad5ef97",
+      "nanoda_bin": "8241c5e6baa29490aa118d382f97961b208ae730fdb96545c2abed74c9ece5a8",
+      "con-leche": "a6380d68b4fb364189821dd4692569c11536de0a1e3aaefea06028c0d67bb193",
+      "con-ron": "4e5616d94374cae37324dad2594f6230c2bb2297240249fc78ff508f3bc5acef"
+    },
+    "exports": [
+      {
+        "kind": "challenge",
+        "exit": 0,
+        "sha256": "e9ed603b76a4cd13b0231eb31b96efa9e16f9b8aeb92bac0248094bd293ce523",
+        "bytes": 166220103,
+        "olean_sha256": "38f721623e9780286b1fb2d8e64ef892da0b4862b29da51e56ca4b8eefc07a54",
+        "compressed_sha256": "3d04c7171e04c78cf35753ac5b793e6a916734c6b62eaf9d3bce1753c85ea8b3",
+        "compressed_bytes": 25558435,
+        "lossless": true
+      },
+      {
+        "kind": "solution",
+        "exit": 0,
+        "sha256": "54a24d4b9307c0d22a2799ef4bcdc9a4901cb8b9bed10836c490befec9a5d95f",
+        "bytes": 1056591213,
+        "olean_sha256": "e64b40813a84048ee41a567de1a003289ad448e14b3809d52f6015f1c5e02744",
+        "compressed_sha256": "e3d320c4b9cc53d9a258a3e1444774a2d7899d6aa1d0e38c1f35fc3ce59e3ab8",
+        "compressed_bytes": 159707824,
+        "lossless": true
+      }
+    ],
+    "seconds": 708.872,
+    "log_sha256": "14e86e8cbd5d9cab5447617187238642d3f782d98683023ea16dc1a2af69e987",
+    "bubblewrap_enabled": true,
+    "source_binding": "Fresh successful build and leanexport; before/after source and olean hashes. Exports are supplied explicitly; this does not replace canonical official preflight.",
+    "comparator_command_paths_shortened_for_public_receipt": [
+      "lake",
+      "comparator",
+      "--config",
+      "<six-kernel-config>",
+      "--challenge-from-export",
+      "<fresh-challenge-export>",
+      "--solution-from-export",
+      "<fresh-solution-export>"
+    ]
+  },
+  "evidence_files": {
+    "palomar/final/qualification/six-kernels.log": "14e86e8cbd5d9cab5447617187238642d3f782d98683023ea16dc1a2af69e987",
+    "palomar/final/qualification/registry-final-axioms.log": "5502e220fbee3a68d7ea5c6d7e1d094e438b9b603f182354bfad9be10831f1a9",
+    "palomar/final/qualification/parent-axiom-validation.log": "8ad767e06e62f7dab97eabfcb5c6ab47e1a3c0bffeb8762885ae74d883c6a131",
+    "palomar/final/qualification/parent-axioms.log.gz": "767fd86c6cfb76053cda69e2779718a0efe731eac5cf1453c72b8c3fe38bcaa2",
+    "palomar/final/qualification/parent-build.log.gz": "ca0359243771bab1cfee9f0a856894d46c72791acf9beabd4173a17a1e0df05a"
+  },
+  "metadata_parser_validation": "palomar/final/metadata-validation.json",
+  "official_full_preflight_passed": false,
+  "intake_started": false,
+  "registration": null,
+  "scope": "Actual pinned parent build and20019-declaration axiom audit,111-declaration final audit, and fresh source-bound exports accepted by six isolated kernels. Explicit exports do not replace canonical Challenge provenance or the complete official Palomar workflow. This is a frozen local qualification snapshot, not an editorial outcome or issued registration.",
+  "parent_build_uncompressed_sha256": "6eb7e2fd1fb7345d9a0d9a4dd1119e75c74ea3c9ae2dc2a6c3d2451962ccc3ee"
+}

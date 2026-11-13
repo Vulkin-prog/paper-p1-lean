@@ -1,0 +1,103 @@
+version: v0.4
+project:
+  name: 'P1: uniform event calculus, Hermite laws and the fixed-moment obstruction'
+  description: Quantitative Poisson approximation for long multiplicative runs requires arithmetic control
+    uniform over growing subfamilies. The selected results give the exact affine event calculus, homogeneous
+    and compatible-nullity envelopes, unique relation-respecting component factorization, and a weighted
+    full-support count summed over all cardinalities with one threshold before every subset and minimum
+    size; actual positive Hermite reference laws with an exact-parameter N^(-4/3+epsilon) upper error
+    bound and fixed-height sharp moving total-variation equivalents; and an explicit counterexample showing
+    that agreement at every fixed factorial-moment order, even with uniform exponential-moment control,
+    does not imply any inverse-power total-variation rate. The quadratic positivity interval and singleton
+    identity calibrate the positive-reference family. The counterexample is an independently constructed
+    family of probability laws; no multiplicative realization is asserted. The selected conjunctions cover
+    main results 2.1--2.5, 7.1 and 8.4 and companion Propositions13.1 and15.1, including the latter's
+    displayed sequence corollary.
+  authors:
+  - name: Brice Pouly
+    github: Vulkin-prog
+    orcid: 0009-0008-8491-2467
+  responsible_maintainers:
+  - name: Brice Pouly
+    github: Vulkin-prog
+    orcid: 0009-0008-8491-2467
+  license: Apache-2.0
+classification:
+  arxiv:
+  - math.PR
+  - math.NT
+sources:
+- title: Sharp Poisson approximation and second-order correction for long multiplicative runs, article
+    and companion, publication edition12 November2026
+  authors:
+  - name: Brice Pouly
+    github: Vulkin-prog
+    orcid: 0009-0008-8491-2467
+  id: https://github.com/Vulkin-prog/paper-p1-lean/tree/e564207ab543c7c0967e34b52f3d456d7a8f302c/manuscripts/paper-p1/publication-2026-11-12
+  type: paper
+  relationship: formalizes
+  location: 'Main article 2.1--2.5, 7.1, 8.4; companion Proposition13.1 (p1:uniform:full-support), Proposition15.1
+    (p1:obstruction:fixed) and its following displayed asymptotic corollary. Exact clause correspondence:
+    RegistryFinal/clause-map.json and palomar/REGISTRATION_PLAN_FINAL.json. The four previously issued
+    records retain their original immutable source commits and scopes.'
+  note: The selected contained project is an interface to the substantive proof development in the same
+    repository, through a committed parent path dependency. Structured author, maintainer and mathematical-source
+    person records identify Brice Pouly, Vulkin-prog and ORCID0009-0008-8491-2467.
+related_formalizations:
+- id: https://github.com/Vulkin-prog/paper-c-lean
+  relationship: adapts
+  note: 'Only selected model foundations, ported from b9fa9ba490f201b408a302a86f1594ee620b228b under Apache-2.0.
+    Exact scope and source attribution: docs/PAPER_C_REUSE.md.'
+automation:
+  methods:
+  - method: agent
+    framework: Codex
+    models:
+    - OpenAI Codex agents
+    tool_setup: Lean v4.36.0-rc2 proof development and literal statement interfaces, selective Mathlib
+      dependencies, compiled type and axiom inspection, Comparator and local kernel replay.
+    prompting_notes: Align every printed main-article clause with a selected theorem; preserve actual
+      marginals, affine incompatibility, repeated-index terms, exact versus nominal means, fixed-height
+      quantifiers and the explicitly conditional transfer.
+  - method: other
+    framework: ChatGPT
+    models:
+    - GPT-6 Astra
+    tool_setup: 'Mathematical and editorial assistance for the source article and technical companion:
+      organizing research material, developing and rewriting mathematical arguments, inspecting references,
+      and preparing the manuscripts.'
+    prompting_notes: 'This contribution is disclosed in the pinned Statement on AI assistance: https://github.com/Vulkin-prog/paper-p1-lean/blob/e564207ab543c7c0967e34b52f3d456d7a8f302c/manuscripts/paper-p1/publication-2026-11-12/sources/assistance.tex.
+      The separate Codex entry records Lean proof construction and statement comparison.'
+  notes: Agent assistance and local checker replay are not independent human peer review.
+review:
+  status: agent-reviewed
+  notes: The substantive proof development for the publication edition was replayed under Lean v4.36.0-rc2;
+    its historical evidence remains under docs/validation/publication-2026-11-12/. This new contained
+    interface has its own111-declaration axiom inventory and three literal selected compound statements.
+    Local qualification evidence is kept distinct from the mandatory new full official preflight, server
+    verification, rendering and editorial decision. No favorable editorial outcome or new registration
+    is asserted by this source metadata.
+status:
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms:
+  - propext
+  - Quot.sound
+  - Classical.choice
+  scope: Three selected proved Solution declarations;111 Solution theorem declarations are audited. Only
+    the matching three Challenge statements contain deliberate holes. This one merged final candidate
+    replaces the two unregistered remainder scopes, aiming at five total public records.
+fidelity:
+  divergences: Literal Mathlib-only models are connected to the substantive parent development by checked
+    bridges. Printed asymptotic constants can be absorbed into a larger threshold using the positive exponent
+    margin; the Lean inequalities then have unit constant. All thirteen old remaining main-result clauses
+    are preserved as conjunction fields, with unchanged hypotheses and fixed-versus-growing-order quantifiers.
+    The fixed-height Hermite equivalent is sharp; only an upper bound is claimed for the exact-parameter
+    Hermite law. For companion13.1 the exact nominal weighted ordered-list sum includes all cardinalities,
+    with one scale threshold before every minimum size and dyadic subset; local regularity and strict
+    distances>L remain in the literal list filter. There is no primitivity or affine-compatibility assumption,
+    and no pure N^-2 endpoint. For companion15.1, the finite signed perturbation is normalized and nonnegative,
+    all displayed factorial and exponential series are summable, and the sequence has explicit harmless
+    Poisson(1) initial terms. The counterexample has no claimed multiplicative realization. The companion92
+    results are not all claimed as directly registered. Main Theorem5.2 remains explicitly conditional
+    in its unchanged, already published dossier.

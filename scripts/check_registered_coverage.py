@@ -50,12 +50,14 @@ def committed(root, commit, relative):
 
 
 def validate_allocation(plan, index):
+    count = plan.get('planned_registrations', 6)
+    total = plan['selected_theorem_count']
     require(plan['maximum_registrations'] == 6 and plan['main_result_count'] == 26
-            and plan['selected_theorem_count'] == 52, 'Unexpected publication scope')
+            and (count, total) in {(6, 52), (5, 42)}, 'Unexpected publication scope')
     bundles = {item['slug']: item for item in plan['bundles']}
     sequence = plan['submission_sequence']
-    require(len(bundles) == len(plan['bundles']) == len(sequence) == 6
-            and set(sequence) == set(bundles), 'Nonbijective six-dossier allocation')
+    require(len(bundles) == len(plan['bundles']) == len(sequence) == count
+            and set(sequence) == set(bundles), 'Nonbijective dossier allocation')
     results = {item['label']: item for item in index['results'] if item['document'] == 'main'}
     require(len(results) == index['counts']['main'] == 26, 'Unexpected article index')
     labels, selections = [], []
@@ -77,7 +79,7 @@ def validate_allocation(plan, index):
             labels.append(label)
     require(len(labels) == len(set(labels)) == 26 and set(labels) == set(results),
             'The main article is not covered exactly once')
-    require(len(selections) == len(set(selections)) == 52,
+    require(len(selections) == len(set(selections)) == total,
             'The selected declaration allocation is not bijective')
     return bundles, results
 
@@ -95,7 +97,7 @@ def validate_public_entry(entry, versions, cycle, bundle, config):
         for item in versions['entries']), 'Public version index mismatch')
     source, formal = entry['source'], entry['formalization']
     require(source['repository'] == REPOSITORY and source['commit'] == cycle['source_commit']
-            and source['project_path'] == 'RegistryV2', 'Wrong registered source')
+            and source['project_path'] == cycle['project_path'], 'Wrong registered source')
     require(formal['comparator_config_path'] == cycle['comparator_config_path'] == bundle['configuration']
             and formal['formalization_metadata_path'] == cycle['formalization_metadata_path'],
             'Wrong registered configuration or metadata')
@@ -130,7 +132,7 @@ def mechanical_evidence(root, cycle, field, profile):
             and report['errors'] == [], 'Incomplete mechanical verification')
     require(report['source']['repository'] == REPOSITORY
             and report['source']['commit'] == cycle['source_commit']
-            and report['source']['project_path'] == 'RegistryV2'
+            and report['source']['project_path'] == cycle['project_path']
             and report['execution_profile'] == profile
             and report['lean_toolchain'] == TOOLCHAIN
             and report['workflow_url'] == receipt['workflow_url'], 'Mechanical source/profile mismatch')
@@ -157,7 +159,7 @@ def validate_render_report(root, report, receipt, cycle, bundle, config):
             and report['stage'] == 'complete' and report['errors'] == [], 'Incomplete Challenge rendering')
     source = report['source']
     require(source['repository'] == REPOSITORY and source['commit'] == cycle['source_commit']
-            and source['project_path'] == 'RegistryV2'
+            and source['project_path'] == cycle['project_path']
             and source['comparator_config_path'] == bundle['configuration']
             and source['challenge_path'] == bundle['challenge']
             and source['solution_path'] == bundle['solution'], 'Another rendered dossier')
@@ -174,10 +176,13 @@ def validate_render_report(root, report, receipt, cycle, bundle, config):
 
 def inspect(root=ROOT, require_all=False):
     root = root.resolve()
-    plan, state = load(root, PLAN), load(root, STATE)
+    state = load(root, STATE)
+    active_plan = state.get('active_plan', PLAN)
+    require(active_plan in {PLAN, 'palomar/REGISTRATION_PLAN_FINAL.json'}, 'Unsupported active allocation')
+    plan = load(root, active_plan)
     index = load(root, plan['source_index'])
-    baseline = state['preparation_snapshot_commit']
-    for path in [PLAN, plan['source_index']]:
+    baseline = state.get('allocation_source_commit', state['preparation_snapshot_commit'])
+    for path in [active_plan, plan['source_index']]:
         require(sha(local(root, path).read_bytes()) == sha(committed(str(root), baseline, path)),
                 'Frozen publication allocation/index changed: ' + path)
     bundles, _ = validate_allocation(plan, index)
@@ -238,7 +243,7 @@ def inspect(root=ROOT, require_all=False):
                     'Registry rendering differs')
             pins = {(item['source_repository'].lower(), item['commit'])
                     for item in entry['preservation']['repositories']}
-            dependencies = json.loads(committed(str(root), cycle['source_commit'], 'RegistryV2/lake-manifest.json'))
+            dependencies = json.loads(committed(str(root), cycle['source_commit'], cycle['project_path']+'/lake-manifest.json'))
             expected_pins = {(REPOSITORY.lower(), cycle['source_commit'])}
             expected_pins.update((item['url'].removeprefix('https://github.com/').removesuffix('.git').lower(), item['rev'])
                                  for item in dependencies['packages'] if item['type'] == 'git')
@@ -256,19 +261,36 @@ def inspect(root=ROOT, require_all=False):
                          'printed_conditional_clause', 'selected_declarations']} | {
                          'dossier': cycle['slug'], 'registered': registration is not None,
                          'registration_id': registration['id'] if registration else None,
-                         'registry_url': registration['url'] if registration else None})
+                         'registry_url': registration['url'] if registration else None,
+                         **({'selected_conjunction_clauses': item['selected_conjunction_clauses']}
+                            if 'selected_conjunction_clauses' in item else {})})
     require(len(records) == state['registered_count'], 'Live registration count mismatch')
     if require_all:
-        require(len(records) == 6 and all(item['registered'] for item in rows), 'Six public registrations are not complete')
+        require(len(records) == len(plan['submission_sequence']) and all(item['registered'] for item in rows),
+                'The planned public registrations are not complete')
+    companion_rows = []
+    for cycle in state['cycles']:
+        for item in bundles[cycle['slug']].get('companion_results', []):
+            original = next(r for r in index['results'] if r['label'] == item['label'])
+            require(original['document'] == 'companion' and item['number'] == original['number']
+                    and item['statement_sha256'] == original['source']['statement_sha256']
+                    and item['source'] == original['source']['path'], 'Companion scope differs')
+            require(set(item['selected_declarations']) <= set(bundles[cycle['slug']]['selected_declarations']),
+                    'Companion endpoint is not selected')
+            companion_rows.append({'number': item['number'], 'label': item['label'],
+                'selected_declarations': item['selected_declarations'],
+                'registered': cycle.get('registration') is not None,
+                'additional_displayed_corollary': item.get('additional_displayed_corollary')})
     return {'schema_version': 1, 'status': 'verified_archived_public_records',
             'checked_at': datetime.datetime.now(datetime.timezone.utc).isoformat(),
-            'repository': REPOSITORY, 'publication_plan': PLAN, 'publication_index': plan['source_index'],
-            'allocation_source_commit': baseline, 'publication_plan_sha256': sha(local(root, PLAN).read_bytes()),
+            'repository': REPOSITORY, 'publication_plan': active_plan, 'publication_index': plan['source_index'],
+            'allocation_source_commit': baseline, 'publication_plan_sha256': sha(local(root, active_plan).read_bytes()),
             'publication_index_sha256': sha(local(root, plan['source_index']).read_bytes()),
             'cycle_state_sha256': sha(local(root, STATE).read_bytes()), 'registered_dossiers': len(records),
             'registered_main_results': sum(item['registered'] for item in rows), 'total_main_results': 26,
-            'registered_selected_declarations': len(selected), 'total_selected_declarations': 52,
-            'records': records, 'main_results': rows,
+            'registered_selected_declarations': len(selected), 'total_selected_declarations': plan['selected_theorem_count'],
+            'planned_registrations': len(plan['submission_sequence']),
+            'records': records, 'main_results': rows, 'direct_companion_results': companion_rows,
             'scope': 'Offline integrity and correspondence audit of archived public entries, official reports, rendering receipts and preservation pins. It does not rerun Lean or revalidate private review-consent bytes. Printed conditional premises remain explicit; the 92 companion results are not all selected separately.'}
 
 

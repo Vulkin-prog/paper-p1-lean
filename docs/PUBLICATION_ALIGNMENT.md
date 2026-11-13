@@ -12,7 +12,8 @@ proves those scopes. No Lean mathematical source or pin is changed.
 - [French critical review](reviews/2026-11-12/PUBLICATION_REVIEW_FR.md).
 - [Fresh build, axiom and compiled-type evidence](validation/publication-2026-11-12/lean-validation.json).
 - [Received archive and active sources/PDFs](../manuscripts/paper-p1/publication-2026-11-12/).
-- [Publication Palomar preparation](../palomar/REGISTRATION_PLAN_PUBLICATION.json).
+- [Final Palomar allocation](../palomar/REGISTRATION_PLAN_FINAL.json) and
+  [preserved six-candidate preparation](../palomar/REGISTRATION_PLAN_PUBLICATION.json).
 - [Metadata-only official-parser checks](validation/publication-2026-11-12/publication-metadata-validation.json).
 - [PDF layout and link verification](validation/publication-2026-11-12/pdf/visual-review.json).
 
@@ -23,14 +24,17 @@ clarifies an existing companion calculation, without asserting a full cumulant
 equivalent. The reference table retains the distinction between exact quadratic
 optimality and the exact-Hermite upper bound.
 
-The current six candidates use the same `RegistryV2` project and Comparator
-configuration paths as before, with the same 52 selected declarations. All 26
-main statement blocks are identical. Previous six-checker acceptances are reused
-only after comparing the actual mathematical source/configuration bytes;
-the new metadata are independently parsed using the pinned official validator.
-This creates no seventh registration identity and claims no new kernel suite.
-The current caller is `palomar-publication-preflight.yml`; the old V2 caller
-and receipts remain preserved as historical preparation.
+The earlier six-candidate allocation uses the `RegistryV2` project and52 selected
+declarations. Its source files and qualification evidence stay unchanged. Four
+of those scopes are now issued public records. At the author's request the two
+unregistered remainders are merged in the separate `RegistryFinal` project, with
+direct companion13.1 and15.1 selections and the latter's displayed corollary.
+The [final allocation](../palomar/REGISTRATION_PLAN_FINAL.json) aims at five total
+records and42 selections, covering all26 main results explicitly. The new
+three-target interface has its own111-theorem audit and requires a fresh full
+official workflow; none of the four published entries is reopened. See the
+[detailed correspondence](REGISTRATION_FINAL_ALIGNMENT.md). The final caller is
+`palomar-final-preflight.yml`; earlier callers and receipts remain preserved.
 
 The frozen preparation records describe the earlier author-requested hold;
 they are not live submission state. The author subsequently resumed the six

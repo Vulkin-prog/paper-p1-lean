@@ -1,0 +1,1528 @@
+{
+  "schema_version": 2,
+  "version": "Publication final allocation: four issued records and one merged remainder",
+  "maximum_registrations": 6,
+  "planned_registrations": 5,
+  "main_result_count": 26,
+  "selected_theorem_count": 42,
+  "direct_companion_numbered_result_count": 2,
+  "source_index": "docs/manuscript-results-publication-2026-11-12.json",
+  "source_index_sha256": "7796235dfb26c0bd7f1f3f7c3e35bae2371b53430b9bcf98b4effdafe636daef",
+  "scientific_source_snapshot": "e564207ab543c7c0967e34b52f3d456d7a8f302c",
+  "legacy_preparation_plan": "palomar/REGISTRATION_PLAN_PUBLICATION.json",
+  "preservation_manifest": "palomar/final/PRESERVATION.json",
+  "coverage_basis": "Explicit selected statements and mapped conjunction clauses. Imported proof dependencies are not separately counted as registered results.",
+  "sequence_rule": "Preserve the four issued records. Close the superseded unregistered intake before starting the single final full cycle. Publish only after actual favorable review under the author delegation.",
+  "submission_sequence": [
+    "quadratic_limits",
+    "cumulants_optimality",
+    "pairs_channels",
+    "stopping_reconstruction",
+    "foundations"
+  ],
+  "bundles": [
+    {
+      "order": 1,
+      "slug": "quadratic_limits",
+      "title": "Optimal quadratic approximation and Poisson scales",
+      "namespace": "PaperP1Registry.V2.QuadraticLimits",
+      "configuration": "RegistryV2/comparator/p1_quadratic_limits.json",
+      "metadata": "palomar/publication/quadratic_limits/formalization.yaml",
+      "challenge": "RegistryV2/ChallengeP1V2QuadraticLimits.lean",
+      "solution": "RegistryV2/SolutionP1V2QuadraticLimits.lean",
+      "selected_declarations": [
+        "PaperP1Registry.V2.QuadraticLimits.source_probability",
+        "PaperP1Registry.V2.QuadraticLimits.poisson_expansion",
+        "PaperP1Registry.V2.QuadraticLimits.moving_residue_equivalent",
+        "PaperP1Registry.V2.QuadraticLimits.mean_bias_quantized",
+        "PaperP1Registry.V2.QuadraticLimits.nominal_quadratic_comparison",
+        "PaperP1Registry.V2.QuadraticLimits.reference_series",
+        "PaperP1Registry.V2.QuadraticLimits.optimal_quadratic",
+        "PaperP1Registry.V2.QuadraticLimits.polynomial_weights",
+        "PaperP1Registry.V2.QuadraticLimits.no_retained_start",
+        "PaperP1Registry.V2.QuadraticLimits.literal_mean_bias"
+      ],
+      "main_results": [
+        {
+          "number": "1.1",
+          "label": "p1:thm:main",
+          "title": "Optimal quadratic approximation with exact parameters",
+          "source": "manuscripts/paper-p1/publication-2026-11-12/sources/main_sections/introduction.tex",
+          "statement_sha256": "87f7a74ae8fedb4cf13196ca6653fb917d136c8bc291225f1ae4e68f405c7a89",
+          "selected_declarations": [
+            "PaperP1Registry.V2.QuadraticLimits.optimal_quadratic",
+            "PaperP1Registry.V2.QuadraticLimits.reference_series"
+          ],
+          "parent_proof_endpoints": [
+            {
+              "name": "PaperP1.OptimalQuadratic.article_1_1",
+              "source": "PaperP1/Asymptotics/OptimalQuadratic.lean",
+              "line": 27,
+              "source_sha256": "6f508976c1d9c8d81fbeb34a702dfea01e9747387b3decea306cbe95ea5bc23c",
+              "role": "primary_or_explicit_clause_endpoint",
+              "compiled_type_sha256": "92443c0deb42aeee4c3aa00547f4b8c20e70c0d9553dd997e3f5b80128828a1b"
+            }
+          ],
+          "printed_conditional_clause": false,
+          "context": [
+            "Bande critique |L−log₂N|≤C, C et ε fixés avantN₀."
+          ],
+          "page": "3"
+        },
+        {
+          "number": "1.2",
+          "label": "p1:cor:tv",
+          "title": "Exact Poisson total variation scale",
+          "source": "manuscripts/paper-p1/publication-2026-11-12/sources/main_sections/introduction.tex",
+          "statement_sha256": "7461910f3aa5eaa8b98655b13c4e67b1222d208eeb048a8e2732035594eab7be",
+          "selected_declarations": [
+            "PaperP1Registry.V2.QuadraticLimits.poisson_expansion",
+            "PaperP1Registry.V2.QuadraticLimits.moving_residue_equivalent"
+          ],
+          "parent_proof_endpoints": [
+            {
+              "name": "PaperP1.ExactPoissonScale.article_1_2",
+              "source": "PaperP1/Asymptotics/ExactPoissonScale.lean",
+              "line": 43,
+              "source_sha256": "98d3012feb2991e0fdbb43178295229723f2215f4852ca6d067729a5b5694627",
+              "role": "primary_or_explicit_clause_endpoint",
+              "compiled_type_sha256": "113e343cd0d4d967d8a7e2c31415b86c6f9b948fd2677fafa302b6b20cb64a7b"
+            }
+          ],
+          "printed_conditional_clause": false,
+          "context": [
+            "Même bande critique ; le paramètreτ>0 du rapport asymptotique fixe un second seuil."
+          ],
+          "page": "4"
+        },
+        {
+          "number": "7.2",
+          "label": "p13:optimal:weighted",
+          "title": "Every fixed polynomial weight",
+          "source": "manuscripts/paper-p1/publication-2026-11-12/sources/main_sections/completion.tex",
+          "statement_sha256": "d682f7116bf95ea02bb1f655e4fa453fee0fc14f16ed1b905e9399d02cc13825",
+          "selected_declarations": [
+            "PaperP1Registry.V2.QuadraticLimits.polynomial_weights"
+          ],
+          "parent_proof_endpoints": [
+            {
+              "name": "PaperP1.PolynomialWeightedQuadratic.article_17_1",
+              "source": "PaperP1/Asymptotics/PolynomialWeightedQuadratic.lean",
+              "line": 49,
+              "source_sha256": "69d68b938b43d15eaa0daec379b5eb95828b36e4df2bf002ebf9e24d828f9c92",
+              "role": "primary_or_explicit_clause_endpoint",
+              "compiled_type_sha256": "924e05b15664e2264b0fcfc60dc95071173253578270b0b9d0f8c1178eb4d505"
+            }
+          ],
+          "printed_conditional_clause": false,
+          "context": [
+            "m etr restent fixés avant leur seuil ; poids(1+k)^m avec m naturel."
+          ],
+          "page": "24"
+        },
+        {
+          "number": "7.3",
+          "label": "p13:optimal:zero",
+          "title": "No retained start",
+          "source": "manuscripts/paper-p1/publication-2026-11-12/sources/main_sections/completion.tex",
+          "statement_sha256": "34ffabbac99c443938607caff8e82231d0739ebc5bffe8bdf06b25464da46d45",
+          "selected_declarations": [
+            "PaperP1Registry.V2.QuadraticLimits.no_retained_start"
+          ],
+          "parent_proof_endpoints": [
+            {
+              "name": "PaperP1.OptimalZeroProbability.article_17_2",
+              "source": "PaperP1/Asymptotics/OptimalZeroProbability.lean",
+              "line": 17,
+              "source_sha256": "5761c199db752fbd7f336e9d3a08c375ece95b811668f7a285fd93130bed7c53",
+              "role": "primary_or_explicit_clause_endpoint",
+              "compiled_type_sha256": "3eb241079d63a8d3d1d01f44aed218cec7446d1b8d2db97363137a648e9edf6b"
+            }
+          ],
+          "printed_conditional_clause": false,
+          "context": [
+            "Bande critique ; original N L0 est la masse du compte arithmétique original en0."
+          ],
+          "page": "24"
+        },
+        {
+          "number": "7.4",
+          "label": "p13:optimal:nominal",
+          "title": "The quantized mean bias",
+          "source": "manuscripts/paper-p1/publication-2026-11-12/sources/main_sections/completion.tex",
+          "statement_sha256": "9930a66023f6178a86ad23dead68d2e585acd6ce00afe5911a2c5d3d9b0013e7",
+          "selected_declarations": [
+            "PaperP1Registry.V2.QuadraticLimits.mean_bias_quantized",
+            "PaperP1Registry.V2.QuadraticLimits.literal_mean_bias",
+            "PaperP1Registry.V2.QuadraticLimits.nominal_quadratic_comparison"
+          ],
+          "parent_proof_endpoints": [
+            {
+              "name": "PaperP1.OptimalNominalQuadratic.article_17_3",
+              "source": "PaperP1/Asymptotics/OptimalNominalQuadratic.lean",
+              "line": 105,
+              "source_sha256": "0d77ab776dbcbe23c0ea905606c21fb0b1c2a088a3955913653b304db53ab651",
+              "role": "primary_or_explicit_clause_endpoint",
+              "compiled_type_sha256": "9e74b74309fbf6d1acdaa7d53ba62028d66ad0f4caf1488b5dcb38de53c7a465"
+            },
+            {
+              "name": "PaperP1.OptimalNominalQuadratic.lowerConstant_pos",
+              "source": "PaperP1/Asymptotics/OptimalNominalQuadratic.lean",
+              "line": 31,
+              "source_sha256": "0d77ab776dbcbe23c0ea905606c21fb0b1c2a088a3955913653b304db53ab651",
+              "role": "primary_or_explicit_clause_endpoint",
+              "compiled_type_sha256": "9f6cea575713a3ccd00d26b000b594c016042aa72f2c3c561f0e0f63350b7e84"
+            }
+          ],
+          "printed_conditional_clause": false,
+          "context": [
+            "N≥2,L>0 pour l’identité finie ; bande critique pour les comparaisons asymptotiques. La comparaison à deux côtés n’est affirmée que si le biais entier est non nul."
+          ],
+          "page": "24"
+        }
+      ],
+      "challenge_lines": 179,
+      "challenge_bytes": 9737,
+      "audited_solution_theorems": [
+        "PaperP1Registry.V2.QuadraticLimits.runCount_eq",
+        "PaperP1Registry.V2.QuadraticLimits.runCount_fun_eq",
+        "PaperP1Registry.V2.QuadraticLimits.moment_eq",
+        "PaperP1Registry.V2.QuadraticLimits.actualMean_eq",
+        "PaperP1Registry.V2.QuadraticLimits.cumulant_eq",
+        "PaperP1Registry.V2.QuadraticLimits.sourceMass_eq",
+        "PaperP1Registry.V2.QuadraticLimits.sourceMass_fun_eq",
+        "PaperP1Registry.V2.QuadraticLimits.mean_nonneg",
+        "PaperP1Registry.V2.QuadraticLimits.quadraticMass_eq",
+        "PaperP1Registry.V2.QuadraticLimits.quadraticMass_fun_eq",
+        "PaperP1Registry.V2.QuadraticLimits.nominalMean_eq",
+        "PaperP1Registry.V2.QuadraticLimits.nominal_nonneg",
+        "PaperP1Registry.V2.QuadraticLimits.poissonLaw_realMass",
+        "PaperP1Registry.V2.QuadraticLimits.actualTV_eq",
+        "PaperP1Registry.V2.QuadraticLimits.nominalTV_eq",
+        "PaperP1Registry.V2.QuadraticLimits.difference_two",
+        "PaperP1Registry.V2.QuadraticLimits.secondNorm_eq",
+        "PaperP1Registry.V2.QuadraticLimits.phaseScale_eq",
+        "PaperP1Registry.V2.QuadraticLimits.nominal_error_eq",
+        "PaperP1Registry.V2.QuadraticLimits.source_probability",
+        "PaperP1Registry.V2.QuadraticLimits.poisson_expansion",
+        "PaperP1Registry.V2.QuadraticLimits.moving_residue_equivalent",
+        "PaperP1Registry.V2.QuadraticLimits.mean_bias_quantized",
+        "PaperP1Registry.V2.QuadraticLimits.nominal_quadratic_comparison",
+        "PaperP1Registry.V2.QuadraticLimits.error_eq",
+        "PaperP1Registry.V2.QuadraticLimits.reference_series",
+        "PaperP1Registry.V2.QuadraticLimits.optimal_quadratic",
+        "PaperP1Registry.V2.QuadraticLimits.factorialMoment_eq",
+        "PaperP1Registry.V2.QuadraticLimits.polynomial_weights",
+        "PaperP1Registry.V2.QuadraticLimits.no_retained_start",
+        "PaperP1Registry.V2.QuadraticLimits.integerBias_eq",
+        "PaperP1Registry.V2.QuadraticLimits.literal_mean_bias"
+      ],
+      "compiled_type_sha256": {
+        "PaperP1Registry.V2.QuadraticLimits.source_probability": "2f186365cd6e8b56b7899ba8cd85f85f2cfb51cd99dae7cf0d173e4175e5bc0b",
+        "PaperP1Registry.V2.QuadraticLimits.poisson_expansion": "7b26648c6404ed0e9027974cc30a20ab8346a51b8fd522cb03f078dda9a33eec",
+        "PaperP1Registry.V2.QuadraticLimits.moving_residue_equivalent": "26ac815475619783fefdaaf8287da5407f9399b010fea2d4afdd87867ccb1dff",
+        "PaperP1Registry.V2.QuadraticLimits.mean_bias_quantized": "66c2beb6fdcc1771079383ccf48030f292d836dcda4c28c870fc647e8b6335fc",
+        "PaperP1Registry.V2.QuadraticLimits.nominal_quadratic_comparison": "684da124c755b926580436302ea54bfba5aeb59a0845a8c3aae8830fefc26ec0",
+        "PaperP1Registry.V2.QuadraticLimits.reference_series": "89a3fd657fa0e8d363a5346d937e73c9bef6bfed374ec8b9cb7c84e871bc45a9",
+        "PaperP1Registry.V2.QuadraticLimits.optimal_quadratic": "a3a1f1d61b61d2e52206e0d35f883579327bf0f994c34645bcd5ad02141800d1",
+        "PaperP1Registry.V2.QuadraticLimits.polynomial_weights": "cd0629ce01523d45c4f174ea16500efef65d53384048287205f07873dc30f993",
+        "PaperP1Registry.V2.QuadraticLimits.no_retained_start": "1ca32f75e05b82066a0f32ef0d3e2a7bca3b5897bf0c1b7530e0bd867058b0ac",
+        "PaperP1Registry.V2.QuadraticLimits.literal_mean_bias": "fe505b3c54d746c34b8c1ce7785706c51407002c624f7a47beaaa66f08d5e679"
+      },
+      "project_path": "RegistryV2",
+      "registered_source_commit": "f9a2d213265a6833318745dd7f2d74c02090ab19",
+      "registration": {
+        "status": "registered_and_publicly_verified",
+        "id": "PALOMAR-2026-11-12-000013",
+        "version": 1,
+        "url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-12-000013&version=1",
+        "registered_at": "2026-11-12T21:18:17Z",
+        "source_commit": "f9a2d213265a6833318745dd7f2d74c02090ab19",
+        "public_data_receipt": "palomar/publication/quadratic_limits/registration/VALIDATION.json",
+        "nonblocking_warning_disposition": "palomar/publication/quadratic_limits/registration/DISPOSITION.json"
+      }
+    },
+    {
+      "order": 2,
+      "slug": "cumulants_optimality",
+      "title": "Factorial cumulants and optimal quadratic error",
+      "namespace": "PaperP1Registry.V2.CumulantsOptimality",
+      "configuration": "RegistryV2/comparator/p1_cumulants_optimality.json",
+      "metadata": "palomar/publication-followup/cumulants_optimality/formalization.yaml",
+      "challenge": "RegistryV2/ChallengeP1V2CumulantsOptimality.lean",
+      "solution": "RegistryV2/SolutionP1V2CumulantsOptimality.lean",
+      "selected_declarations": [
+        "PaperP1Registry.V2.CumulantsOptimality.factorial_source",
+        "PaperP1Registry.V2.CumulantsOptimality.third_exact_identity",
+        "PaperP1Registry.V2.CumulantsOptimality.fourth_exact_identity",
+        "PaperP1Registry.V2.CumulantsOptimality.principal_second_equivalent",
+        "PaperP1Registry.V2.CumulantsOptimality.optimal_third_cumulant",
+        "PaperP1Registry.V2.CumulantsOptimality.absolute_triple_activity",
+        "PaperP1Registry.V2.CumulantsOptimality.quartic_non_cancellation",
+        "PaperP1Registry.V2.CumulantsOptimality.quadratic_optimality"
+      ],
+      "main_results": [
+        {
+          "number": "3.3",
+          "label": "p13:third:main",
+          "title": "Optimal power of the third factorial cumulant",
+          "source": "manuscripts/paper-p1/publication-2026-11-12/sources/main_sections/scales.tex",
+          "statement_sha256": "b3c908053821806fbdaaae7e9cc2d22a4c3fd53a144da0b135f5997df780d34c",
+          "selected_declarations": [
+            "PaperP1Registry.V2.CumulantsOptimality.optimal_third_cumulant"
+          ],
+          "parent_proof_endpoints": [
+            {
+              "name": "PaperP1.OptimalThirdCumulant.article_14_1",
+              "source": "PaperP1/Asymptotics/OptimalThirdCumulant.lean",
+              "line": 25,
+              "source_sha256": "ef661254da30413e349b269707c3847c34b35a83c93d133bc513dc3069dfbc35",
+              "role": "primary_or_explicit_clause_endpoint",
+              "compiled_type_sha256": "c6667c55fb17d67f45d3859108270ec26c883abc113457ae4d565f6cef3ec0c0"
+            },
+            {
+              "name": "PaperP1.OptimalThirdCumulant.lowerConstant_pos",
+              "source": "PaperP1/Asymptotics/OptimalThirdCumulant.lean",
+              "line": 22,
+              "source_sha256": "ef661254da30413e349b269707c3847c34b35a83c93d133bc513dc3069dfbc35",
+              "role": "primary_or_explicit_clause_endpoint",
+              "compiled_type_sha256": "52af24f8ac7e49c5a143b65e286357fba00ff6cfefb6728a0a49c1b409da8507"
+            }
+          ],
+          "printed_conditional_clause": false,
+          "context": [
+            "C fixé ; lowerConstant dépend deC seul et nonε ; ε règle seulement le seuil."
+          ],
+          "page": "13"
+        },
+        {
+          "number": "3.4",
+          "label": "p13:third:activity",
+          "title": "Absolute third-order activity",
+          "source": "manuscripts/paper-p1/publication-2026-11-12/sources/main_sections/scales.tex",
+          "statement_sha256": "273ee279f7583dfcb727646ea40244633b0507cc89b09bbf2e181858f459c59d",
+          "selected_declarations": [
+            "PaperP1Registry.V2.CumulantsOptimality.absolute_triple_activity"
+          ],
+          "parent_proof_endpoints": [
+            {
+              "name": "PaperP1.SharpThirdActivity.article_14_6",
+              "source": "PaperP1/Asymptotics/SharpThirdActivity.lean",
+              "line": 133,
+              "source_sha256": "74d3e79278f3d878edf301b3be4873c8547d978fc2763f8b69ccd1427b8e7371",
+              "role": "primary_or_explicit_clause_endpoint",
+              "compiled_type_sha256": "d65fbcbd8de51594b0f7a1da6239a27a1705594bc8838a6f85991ea4a06555fb"
+            }
+          ],
+          "printed_conditional_clause": false,
+          "context": [
+            "C,ε fixés ; toute sous-familleG⊆I_N ; triples non ordonnés."
+          ],
+          "page": "13"
+        },
+        {
+          "number": "6.1",
+          "label": "p13:lower:quartic",
+          "title": "The fourth factorial cumulant",
+          "source": "manuscripts/paper-p1/publication-2026-11-12/sources/main_sections/quartic_lower.tex",
+          "statement_sha256": "345a16ff574b370197f3327bbebd0fcb7740c01fb2af27ef6849b214e25389f1",
+          "selected_declarations": [
+            "PaperP1Registry.V2.CumulantsOptimality.quartic_non_cancellation"
+          ],
+          "parent_proof_endpoints": [
+            {
+              "name": "PaperP1.FourthCumulantIdentities.article_16_1",
+              "source": "PaperP1/Asymptotics/FourthCumulantIdentities.lean",
+              "line": 18,
+              "source_sha256": "659f85fb9f07081630f1b53b3cec8967de29115f2e2fd99f291ad400bd8914cc",
+              "role": "primary_or_explicit_clause_endpoint",
+              "compiled_type_sha256": "b65290f3a74d13cc1df036b076dedb0d3333b57b521438f23c9c56f868746663"
+            }
+          ],
+          "printed_conditional_clause": false,
+          "context": [
+            "Bande critique ;K4 signé sur les quadruples connectés, K4+ compatible. Les deux erreurs sont distinctes."
+          ],
+          "page": "20"
+        },
+        {
+          "number": "6.2",
+          "label": "p13:lower:optimal",
+          "title": "Optimal power for the exact quadratic reference",
+          "source": "manuscripts/paper-p1/publication-2026-11-12/sources/main_sections/quartic_lower.tex",
+          "statement_sha256": "08e26085b89cd9dc4feb096aef0f0e046a9968f3ba3335f3e558f5e9d1fa432d",
+          "selected_declarations": [
+            "PaperP1Registry.V2.CumulantsOptimality.quadratic_optimality"
+          ],
+          "parent_proof_endpoints": [
+            {
+              "name": "PaperP1.OptimalQuadratic.article_16_2",
+              "source": "PaperP1/Asymptotics/OptimalQuadratic.lean",
+              "line": 45,
+              "source_sha256": "6f508976c1d9c8d81fbeb34a702dfea01e9747387b3decea306cbe95ea5bc23c",
+              "role": "primary_or_explicit_clause_endpoint",
+              "compiled_type_sha256": "e5d4f025f0a8da130b58b0c9de403e0edea06b17a1ac057b6d2b21c74ecbeb36"
+            }
+          ],
+          "printed_conditional_clause": false,
+          "context": [
+            "C,ε fixés ; référence exacte (μ_N,α_N)."
+          ],
+          "page": "21"
+        }
+      ],
+      "challenge_lines": 190,
+      "challenge_bytes": 10311,
+      "audited_solution_theorems": [
+        "PaperP1Registry.V2.CumulantsOptimality.runCount_eq",
+        "PaperP1Registry.V2.CumulantsOptimality.factorialMoment_eq",
+        "PaperP1Registry.V2.CumulantsOptimality.marginal_eq",
+        "PaperP1Registry.V2.CumulantsOptimality.jointMoment_eq",
+        "PaperP1Registry.V2.CumulantsOptimality.centeredCoefficient_eq",
+        "PaperP1Registry.V2.CumulantsOptimality.third_eq",
+        "PaperP1Registry.V2.CumulantsOptimality.fourth_eq",
+        "PaperP1Registry.V2.CumulantsOptimality.second_eq",
+        "PaperP1Registry.V2.CumulantsOptimality.principalScale_eq",
+        "PaperP1Registry.V2.CumulantsOptimality.factorial_source",
+        "PaperP1Registry.V2.CumulantsOptimality.third_exact_identity",
+        "PaperP1Registry.V2.CumulantsOptimality.fourth_exact_identity",
+        "PaperP1Registry.V2.CumulantsOptimality.principal_second_equivalent",
+        "PaperP1Registry.V2.CumulantsOptimality.optimal_third_cumulant",
+        "PaperP1Registry.V2.CumulantsOptimality.space_eq",
+        "PaperP1Registry.V2.CumulantsOptimality.addition_eq",
+        "PaperP1Registry.V2.CumulantsOptimality.canonicalPartition_eq",
+        "PaperP1Registry.V2.CumulantsOptimality.connected_eq",
+        "PaperP1Registry.V2.CumulantsOptimality.connectedFamilies_eq",
+        "PaperP1Registry.V2.CumulantsOptimality.relativeNullity_eq",
+        "PaperP1Registry.V2.CumulantsOptimality.compatibleNullity_eq",
+        "PaperP1Registry.V2.CumulantsOptimality.homogeneousMass_eq",
+        "PaperP1Registry.V2.CumulantsOptimality.rankWeight_eq",
+        "PaperP1Registry.V2.CumulantsOptimality.actualMean_eq",
+        "PaperP1Registry.V2.CumulantsOptimality.sourceMass_eq",
+        "PaperP1Registry.V2.CumulantsOptimality.quadraticMass_eq",
+        "PaperP1Registry.V2.CumulantsOptimality.error_eq",
+        "PaperP1Registry.V2.CumulantsOptimality.absolute_triple_activity",
+        "PaperP1Registry.V2.CumulantsOptimality.quartic_non_cancellation",
+        "PaperP1Registry.V2.CumulantsOptimality.quadratic_optimality"
+      ],
+      "compiled_type_sha256": {
+        "PaperP1Registry.V2.CumulantsOptimality.factorial_source": "faa909520524b6098e6490aef88f4ab9844b0dd5995b2a1da5f77441f29b4bb6",
+        "PaperP1Registry.V2.CumulantsOptimality.third_exact_identity": "0e1682a739b1db2e43aa35ca917cb1b36c117d2a8c68d953ca81ec3983872ec8",
+        "PaperP1Registry.V2.CumulantsOptimality.fourth_exact_identity": "ab5ea62b86203a73b91d530d4c2fa708792ee9bb661914e78651229db871fb8d",
+        "PaperP1Registry.V2.CumulantsOptimality.principal_second_equivalent": "b3ad95d5accdfabac031d7a73326f39bb335b125faeec86873e9279e9e9a4fcf",
+        "PaperP1Registry.V2.CumulantsOptimality.optimal_third_cumulant": "9b31ed5893f3d1aa2b42068d736ef5410c87bd7d5ea187152c71e591168181e8",
+        "PaperP1Registry.V2.CumulantsOptimality.absolute_triple_activity": "335135f8c7b865e86006c572fd6a4d5a88d19dfcdb94e43248f74e8f03485acb",
+        "PaperP1Registry.V2.CumulantsOptimality.quartic_non_cancellation": "a13787b9b6b2345aa80a7c41f00b5f2e0b9745fc87103640632daab3a03ddd4e",
+        "PaperP1Registry.V2.CumulantsOptimality.quadratic_optimality": "0286e0bd011d7aed319d716df50874e96738c28639b8a6f0ba1034a2b611cee1"
+      },
+      "project_path": "RegistryV2",
+      "registered_source_commit": "d6a0f6c5109886127526677603eb6b74e8c0cd82",
+      "registration": {
+        "status": "registered_and_publicly_verified",
+        "id": "PALOMAR-2026-11-13-000001",
+        "version": 1,
+        "url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000001&version=1",
+        "registered_at": "2026-11-13T01:03:24Z",
+        "source_commit": "d6a0f6c5109886127526677603eb6b74e8c0cd82",
+        "public_data_receipt": "palomar/publication-followup/cumulants_optimality/registration/VALIDATION.json",
+        "published_warning_count": 0,
+        "warning_disposition": "palomar/publication-followup/cumulants_optimality/registration/DISPOSITION.json"
+      }
+    },
+    {
+      "order": 3,
+      "slug": "pairs_channels",
+      "title": "Arithmetic pair profiles and finite channel heights",
+      "namespace": "PaperP1Registry.V2.PairsChannels",
+      "configuration": "RegistryV2/comparator/p1_pairs_channels.json",
+      "metadata": "palomar/publication-followup/pairs_channels/formalization.yaml",
+      "challenge": "RegistryV2/ChallengeP1V2PairsChannels.lean",
+      "solution": "RegistryV2/SolutionP1V2PairsChannels.lean",
+      "selected_declarations": [
+        "PaperP1Registry.V2.PairsChannels.complete_pair_profile",
+        "PaperP1Registry.V2.PairsChannels.explicit_two_channel",
+        "PaperP1Registry.V2.PairsChannels.fixed_height_hierarchy",
+        "PaperP1Registry.V2.PairsChannels.phase_positive",
+        "PaperP1Registry.V2.PairsChannels.weighted_nonaligned",
+        "PaperP1Registry.V2.PairsChannels.two_channel_equivalents",
+        "PaperP1Registry.V2.PairsChannels.two_channel_remainder",
+        "PaperP1Registry.V2.PairsChannels.height_five_closed",
+        "PaperP1Registry.V2.PairsChannels.height_five_coefficient",
+        "PaperP1Registry.V2.PairsChannels.height_six_phase",
+        "PaperP1Registry.V2.PairsChannels.phase_three_four",
+        "PaperP1Registry.V2.PairsChannels.height_five_channels",
+        "PaperP1Registry.V2.PairsChannels.fixed_height_lower_power"
+      ],
+      "main_results": [
+        {
+          "number": "3.1",
+          "label": "p1:arith:pairs",
+          "title": "Complete pair profile",
+          "source": "manuscripts/paper-p1/publication-2026-11-12/sources/main_sections/scales.tex",
+          "statement_sha256": "f62d56ff089950d2a24bde6be0a9701a3f67aaa4b0214bed9ac7568d91d07485",
+          "selected_declarations": [
+            "PaperP1Registry.V2.PairsChannels.complete_pair_profile",
+            "PaperP1Registry.V2.PairsChannels.phase_three_four"
+          ],
+          "parent_proof_endpoints": [
+            {
+              "name": "PaperP1.CompletePairProfile.main_3_3",
+              "source": "PaperP1/Asymptotics/CompletePairProfile.lean",
+              "line": 23,
+              "source_sha256": "c3ecc8598e01b5f858e1e217e6d1f1b08e839e276c6a566a7805939aae684d57",
+              "role": "primary_or_explicit_clause_endpoint",
+              "compiled_type_sha256": "686156980ba7a2a0a17b4c9efe24736f3d36a7479043ea972fd6a211909f52d6"
+            }
+          ],
+          "printed_conditional_clause": false,
+          "context": [
+            "Paires ordonnées séparées ; mêmes S,U et mêmes classes de L modulo3,4."
+          ],
+          "page": "11"
+        },
+        {
+          "number": "3.2",
+          "label": "p1:cor:explicit",
+          "title": "An explicit probability reference",
+          "source": "manuscripts/paper-p1/publication-2026-11-12/sources/main_sections/scales.tex",
+          "statement_sha256": "5d3e571464dff97890f4f04e4f1bce1cb7c0ab9450f1bdf8ee282137769d6ea7",
+          "selected_declarations": [
+            "PaperP1Registry.V2.PairsChannels.explicit_two_channel"
+          ],
+          "parent_proof_endpoints": [
+            {
+              "name": "PaperP1.ExplicitQuadraticApproximation.article_1_4",
+              "source": "PaperP1/Asymptotics/ExplicitQuadraticApproximation.lean",
+              "line": 35,
+              "source_sha256": "ecdeb1e459d9259254903a606a285bbc9e3660110a7ac6bd93d05d0bd8e56799",
+              "role": "primary_or_explicit_clause_endpoint",
+              "compiled_type_sha256": "e81420bf678b9c67f692e6e57136783e41bbe213ef3919f341aa11d5baf5e0a0"
+            }
+          ],
+          "printed_conditional_clause": false,
+          "context": [
+            "Bande critique ; ε>0 avantN₀ ; tous k naturels aprèsN₀."
+          ],
+          "page": "12"
+        },
+        {
+          "number": "8.1",
+          "label": "p13:channels:hierarchy",
+          "title": "The optimal error of every fixed height truncation",
+          "source": "manuscripts/paper-p1/publication-2026-11-12/sources/main_sections/channel_hierarchy.tex",
+          "statement_sha256": "26e02ddbfa3972d68cba362c8fb4c97b5f4bc6d5518cab955d5a30333971fa7a",
+          "selected_declarations": [
+            "PaperP1Registry.V2.PairsChannels.fixed_height_hierarchy",
+            "PaperP1Registry.V2.PairsChannels.phase_positive",
+            "PaperP1Registry.V2.PairsChannels.fixed_height_lower_power"
+          ],
+          "parent_proof_endpoints": [
+            {
+              "name": "PaperP1.FixedHeightHierarchy.article_18_1",
+              "source": "PaperP1/Asymptotics/FixedHeightHierarchy.lean",
+              "line": 59,
+              "source_sha256": "08942308e11fe4684506998e4f9e54fb2e7c65a950b5164e7a39779cd0867d2c",
+              "role": "primary_or_explicit_clause_endpoint",
+              "compiled_type_sha256": "ae05bd79cfff8b58e8336306589a2a7f066858196fd3156420ac45ab0e221971"
+            },
+            {
+              "name": "PaperP1.ChannelPhaseConstants.phaseConstant_pos",
+              "source": "PaperP1/Arithmetic/ChannelPhaseConstants.lean",
+              "line": 41,
+              "source_sha256": "446a10f6c2f2f7306c650e83d424d2bfb7ac846e4d7a2403c6e3823e105d83e8",
+              "role": "primary_or_explicit_clause_endpoint",
+              "compiled_type_sha256": "dff0a48651a25275901cc95efb76be6527b1db42784f6eedab10863984097a75"
+            }
+          ],
+          "printed_conditional_clause": false,
+          "context": [
+            "h≥3 fixé avantN ;b=h+1 etr=L modb. ε contrôle les restes,τ>0 contrôle le rapport ; les deux précèdentN₀."
+          ],
+          "page": "26"
+        },
+        {
+          "number": "8.2",
+          "label": "p13:channels:weighted-nonaligned",
+          "title": "Weighted nonaligned pairs",
+          "source": "manuscripts/paper-p1/publication-2026-11-12/sources/main_sections/channel_hierarchy.tex",
+          "statement_sha256": "89fcd3dd7290f5d2e9c88246584d46c192af2ee1acc31acd98ba0b867a0901be",
+          "selected_declarations": [
+            "PaperP1Registry.V2.PairsChannels.weighted_nonaligned"
+          ],
+          "parent_proof_endpoints": [
+            {
+              "name": "PaperP1.WeightedNonalignedPairs.article_18_2",
+              "source": "PaperP1/Asymptotics/WeightedNonalignedPairs.lean",
+              "line": 78,
+              "source_sha256": "2629fba761bde36bcb6a807afdbe2a44c49351e7ab445696ca278a49b92d1303",
+              "role": "primary_or_explicit_clause_endpoint",
+              "compiled_type_sha256": "4adc61c16087682ab7d4c4b6a97f8cc93104cce630c9023dcc2ff4de08dad271"
+            }
+          ],
+          "printed_conditional_clause": false,
+          "context": [
+            "Paires ordonnées séparées NON ALIGNÉES du seul ensemble régulierG_N ; ici la nullité effective est égale au rang brut de la paire."
+          ],
+          "page": "26"
+        },
+        {
+          "number": "8.3",
+          "label": "p13:channels:height-five",
+          "title": "The error of the two-channel reference",
+          "source": "manuscripts/paper-p1/publication-2026-11-12/sources/main_sections/channel_hierarchy.tex",
+          "statement_sha256": "bbba7bc983a8da39894a364dea9b15993d5db9f0863cbf2f81add309dbad5d1a",
+          "selected_declarations": [
+            "PaperP1Registry.V2.PairsChannels.two_channel_equivalents",
+            "PaperP1Registry.V2.PairsChannels.two_channel_remainder",
+            "PaperP1Registry.V2.PairsChannels.height_five_closed",
+            "PaperP1Registry.V2.PairsChannels.height_five_coefficient",
+            "PaperP1Registry.V2.PairsChannels.height_six_phase",
+            "PaperP1Registry.V2.PairsChannels.height_five_channels"
+          ],
+          "parent_proof_endpoints": [
+            {
+              "name": "PaperP1.TwoChannelReference.uniform_equivalents",
+              "source": "PaperP1/Asymptotics/TwoChannelReference.lean",
+              "line": 49,
+              "source_sha256": "45d1a1dfb2d77e52010c14fcf89fb464442f02c084e145db07a450721d1f2cf6",
+              "role": "primary_or_explicit_clause_endpoint",
+              "compiled_type_sha256": "1b138f2f403a1f38de1c4af5a17c07a982d94403537dedfb49c82ede44b0ef4c"
+            },
+            {
+              "name": "PaperP1.TwoChannelReference.uniform_law_remainder",
+              "source": "PaperP1/Asymptotics/TwoChannelReference.lean",
+              "line": 33,
+              "source_sha256": "45d1a1dfb2d77e52010c14fcf89fb464442f02c084e145db07a450721d1f2cf6",
+              "role": "primary_or_explicit_clause_endpoint",
+              "compiled_type_sha256": "08af73dd401b27d4f205c1fed687fb68f9b7a6319d5d4ccc423fa1827f50247c"
+            },
+            {
+              "name": "PaperP1.HeightFiveChannelCorrection.heightSum_five",
+              "source": "PaperP1/Arithmetic/HeightFiveChannelCorrection.lean",
+              "line": 26,
+              "source_sha256": "c10d354b94e51a9baabc193660332a625aa975c546dd0cdc9ca0821a332c8ff3",
+              "role": "primary_or_explicit_clause_endpoint",
+              "compiled_type_sha256": "b0ea3731f94a77fdb8381040ba9402d7c6a721a275bfb4cc13e8b401b8315a3a"
+            },
+            {
+              "name": "PaperP1.HeightFiveChannelCorrection.correction_closed",
+              "source": "PaperP1/Arithmetic/HeightFiveChannelCorrection.lean",
+              "line": 60,
+              "source_sha256": "c10d354b94e51a9baabc193660332a625aa975c546dd0cdc9ca0821a332c8ff3",
+              "role": "primary_or_explicit_clause_endpoint",
+              "compiled_type_sha256": "8bffd10f5f2df982953ab2a786c48e8ba665fdc4c829708297e70a4966ec8c91"
+            },
+            {
+              "name": "PaperP1.HeightFiveChannelCorrection.coefficient_five",
+              "source": "PaperP1/Arithmetic/HeightFiveChannelCorrection.lean",
+              "line": 31,
+              "source_sha256": "c10d354b94e51a9baabc193660332a625aa975c546dd0cdc9ca0821a332c8ff3",
+              "role": "primary_or_explicit_clause_endpoint",
+              "compiled_type_sha256": "e4948dc734ea085ac720c0167ad92e9e1b3257b0dea760115a06830536093860"
+            },
+            {
+              "name": "PaperP1.ChannelPhaseConstants.phaseConstant_six",
+              "source": "PaperP1/Arithmetic/ChannelPhaseConstants.lean",
+              "line": 84,
+              "source_sha256": "446a10f6c2f2f7306c650e83d424d2bfb7ac846e4d7a2403c6e3823e105d83e8",
+              "role": "primary_or_explicit_clause_endpoint",
+              "compiled_type_sha256": "2d1beb9a838fb70f632c6a4ca9b69c6a8977dd5f57ff5235ae6e5799f093e972"
+            },
+            {
+              "name": "PaperP1.FiniteChannelHierarchy.coefficient_four",
+              "source": "PaperP1/Arithmetic/FiniteChannelHierarchy.lean",
+              "line": 80,
+              "source_sha256": "02ee4883a40ed0a388169ff5a10ed50424c671eadc9b2a36f3fdd56d184b5d8f",
+              "role": "primary_or_explicit_clause_endpoint",
+              "compiled_type_sha256": "58f0418be9ad8efa65f4c45f58c83b9f07234650125256f5d222ba3f713c20f7"
+            }
+          ],
+          "printed_conditional_clause": false,
+          "context": [
+            "Bande critique ;q≥1,r<5 pour la formule ferméeM5 ; la dernière phase utilise r=L mod6 et nonmod5."
+          ],
+          "page": "28"
+        }
+      ],
+      "challenge_lines": 266,
+      "challenge_bytes": 16160,
+      "audited_solution_theorems": [
+        "PaperP1Registry.V2.PairsChannels.runCount_eq",
+        "PaperP1Registry.V2.PairsChannels.factorialMoment_eq",
+        "PaperP1Registry.V2.PairsChannels.marginal_eq",
+        "PaperP1Registry.V2.PairsChannels.jointMoment_eq",
+        "PaperP1Registry.V2.PairsChannels.centeredCoefficient_eq",
+        "PaperP1Registry.V2.PairsChannels.third_eq",
+        "PaperP1Registry.V2.PairsChannels.fourth_eq",
+        "PaperP1Registry.V2.PairsChannels.second_eq",
+        "PaperP1Registry.V2.PairsChannels.principalScale_eq",
+        "PaperP1Registry.V2.PairsChannels.factorial_source",
+        "PaperP1Registry.V2.PairsChannels.third_exact_identity",
+        "PaperP1Registry.V2.PairsChannels.fourth_exact_identity",
+        "PaperP1Registry.V2.PairsChannels.principal_second_equivalent",
+        "PaperP1Registry.V2.PairsChannels.optimal_third_cumulant",
+        "PaperP1Registry.V2.PairsChannels.space_eq",
+        "PaperP1Registry.V2.PairsChannels.addition_eq",
+        "PaperP1Registry.V2.PairsChannels.canonicalPartition_eq",
+        "PaperP1Registry.V2.PairsChannels.connected_eq",
+        "PaperP1Registry.V2.PairsChannels.connectedFamilies_eq",
+        "PaperP1Registry.V2.PairsChannels.relativeNullity_eq",
+        "PaperP1Registry.V2.PairsChannels.compatibleNullity_eq",
+        "PaperP1Registry.V2.PairsChannels.homogeneousMass_eq",
+        "PaperP1Registry.V2.PairsChannels.rankWeight_eq",
+        "PaperP1Registry.V2.PairsChannels.actualMean_eq",
+        "PaperP1Registry.V2.PairsChannels.sourceMass_eq",
+        "PaperP1Registry.V2.PairsChannels.quadraticMass_eq",
+        "PaperP1Registry.V2.PairsChannels.error_eq",
+        "PaperP1Registry.V2.PairsChannels.signedChannel_eq",
+        "PaperP1Registry.V2.PairsChannels.unsignedChannel_eq",
+        "PaperP1Registry.V2.PairsChannels.nominalMean_eq",
+        "PaperP1Registry.V2.PairsChannels.orientationWeight_eq",
+        "PaperP1Registry.V2.PairsChannels.heightSum_eq",
+        "PaperP1Registry.V2.PairsChannels.coefficient_eq",
+        "PaperP1Registry.V2.PairsChannels.twoChannel_eq",
+        "PaperP1Registry.V2.PairsChannels.correction_eq",
+        "PaperP1Registry.V2.PairsChannels.heightMass_eq",
+        "PaperP1Registry.V2.PairsChannels.phaseConstant_eq",
+        "PaperP1Registry.V2.PairsChannels.phaseMass_eq",
+        "PaperP1Registry.V2.PairsChannels.sourceMeasure_eq",
+        "PaperP1Registry.V2.PairsChannels.sourceSigned_eq",
+        "PaperP1Registry.V2.PairsChannels.signedReference_eq",
+        "PaperP1Registry.V2.PairsChannels.secondDifference_eq",
+        "PaperP1Registry.V2.PairsChannels.distance_eq",
+        "PaperP1Registry.V2.PairsChannels.secondNorm_eq",
+        "PaperP1Registry.V2.PairsChannels.totalVariation_eq",
+        "PaperP1Registry.V2.PairsChannels.leadingGap_eq",
+        "PaperP1Registry.V2.PairsChannels.pairLoss_eq",
+        "PaperP1Registry.V2.PairsChannels.signedWeight_eq",
+        "PaperP1Registry.V2.PairsChannels.separatedPairs_eq",
+        "PaperP1Registry.V2.PairsChannels.regularNonaligned_eq",
+        "PaperP1Registry.V2.PairsChannels.complete_pair_profile",
+        "PaperP1Registry.V2.PairsChannels.explicit_two_channel",
+        "PaperP1Registry.V2.PairsChannels.fixed_height_hierarchy",
+        "PaperP1Registry.V2.PairsChannels.phase_positive",
+        "PaperP1Registry.V2.PairsChannels.weighted_nonaligned",
+        "PaperP1Registry.V2.PairsChannels.two_channel_equivalents",
+        "PaperP1Registry.V2.PairsChannels.two_channel_remainder",
+        "PaperP1Registry.V2.PairsChannels.height_five_closed",
+        "PaperP1Registry.V2.PairsChannels.height_five_coefficient",
+        "PaperP1Registry.V2.PairsChannels.height_six_phase",
+        "PaperP1Registry.V2.PairsChannels.phase_three_four",
+        "PaperP1Registry.V2.PairsChannels.height_five_channels",
+        "PaperP1Registry.V2.PairsChannels.fixed_height_lower_power"
+      ],
+      "compiled_type_sha256": {
+        "PaperP1Registry.V2.PairsChannels.complete_pair_profile": "4c75f327790089b126efeb7359cbbc8a0deecd6ec89c5c07670f05052e3631da",
+        "PaperP1Registry.V2.PairsChannels.explicit_two_channel": "cf74a05d8a0fb84df874cba32389d88f001996ca2ccf0026e69b2e8c6c3bccb7",
+        "PaperP1Registry.V2.PairsChannels.fixed_height_hierarchy": "e968bd366ab78fc201c2fe609f234e1713b369c946aa798a36e3d058f1bc56bf",
+        "PaperP1Registry.V2.PairsChannels.phase_positive": "2a60838d6d7470f134ef640fe2aea0598a7f5dfce443aa73a74016bd791cb7a2",
+        "PaperP1Registry.V2.PairsChannels.weighted_nonaligned": "fe96de93141197a0aaf726b5e7fc1135f460a2aff8f5e3d5ce64165d9d9c0386",
+        "PaperP1Registry.V2.PairsChannels.two_channel_equivalents": "8fb0dd77e35d85b1893e57b10cd4602cd5d38ec274658f1e538c3f1820f939fa",
+        "PaperP1Registry.V2.PairsChannels.two_channel_remainder": "7ae99a1ad4d4793190a505a61df46ff379cd97030b5e2597f6f510f40fb68716",
+        "PaperP1Registry.V2.PairsChannels.height_five_closed": "5e71bef4215116c8322d9c34a3ebe7cd50d8f1b6aebdb44b197b846ab153969b",
+        "PaperP1Registry.V2.PairsChannels.height_five_coefficient": "919bf719fbde7dd8135c1702a69476623648bd754103f1fd39b34437400ba5b2",
+        "PaperP1Registry.V2.PairsChannels.height_six_phase": "e2939883b96f9a51a4a4064a9c0b5ae09770b12df2b3cfc874b0dc5fc7b4e5a0",
+        "PaperP1Registry.V2.PairsChannels.phase_three_four": "9ef28c86f04851325a08b566aee401ecbd90a82acfe4af2e0186682b773cc3c6",
+        "PaperP1Registry.V2.PairsChannels.height_five_channels": "e351f75ec5526f71104023788249189664987d4320bf28d4093fc6a97bae6164",
+        "PaperP1Registry.V2.PairsChannels.fixed_height_lower_power": "249b8f3f9b8b42414293ae925622206ef6f1a9ec14fac119fe9ca70dc50604b0"
+      },
+      "project_path": "RegistryV2",
+      "registered_source_commit": "d6a0f6c5109886127526677603eb6b74e8c0cd82",
+      "registration": {
+        "status": "registered_and_publicly_verified",
+        "id": "PALOMAR-2026-11-13-000002",
+        "version": 1,
+        "url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000002&version=1",
+        "registered_at": "2026-11-13T04:18:19Z",
+        "source_commit": "d6a0f6c5109886127526677603eb6b74e8c0cd82",
+        "public_data_receipt": "palomar/publication-followup/pairs_channels/registration/VALIDATION.json",
+        "published_warning_count": 0,
+        "warning_disposition": "palomar/publication-followup/pairs_channels/registration/DISPOSITION.json"
+      }
+    },
+    {
+      "order": 4,
+      "slug": "stopping_reconstruction",
+      "title": "Stopping and complete-law reconstruction",
+      "namespace": "PaperP1Registry.V2.StoppingReconstruction",
+      "configuration": "RegistryV2/comparator/p1_stopping_reconstruction.json",
+      "metadata": "palomar/publication-followup/stopping_reconstruction/formalization.yaml",
+      "challenge": "RegistryV2/ChallengeP1V2StoppingReconstruction.lean",
+      "solution": "RegistryV2/SolutionP1V2StoppingReconstruction.lean",
+      "selected_declarations": [
+        "PaperP1Registry.V2.StoppingReconstruction.expansion_polynomial_expansion",
+        "PaperP1Registry.V2.StoppingReconstruction.prefix_suffix",
+        "PaperP1Registry.V2.StoppingReconstruction.expansion_positive_stopped_kernel",
+        "PaperP1Registry.V2.StoppingReconstruction.expansion_stopped_l1_bound",
+        "PaperP1Registry.V2.StoppingReconstruction.finite_conversion",
+        "PaperP1Registry.V2.StoppingReconstruction.run_conversion",
+        "PaperP1Registry.V2.StoppingReconstruction.conditional_transfer",
+        "PaperP1Registry.V2.StoppingReconstruction.triple_reconstruction"
+      ],
+      "main_results": [
+        {
+          "number": "4.1",
+          "label": "p1:stop:polynomial",
+          "title": "Expansion at the first excluded prefix",
+          "source": "manuscripts/paper-p1/publication-2026-11-12/sources/main_sections/stopped.tex",
+          "statement_sha256": "4621b52018c16024632ffb2017abdf5e3c5e3c54b99649ff94956dc7f56846cd",
+          "selected_declarations": [
+            "PaperP1Registry.V2.StoppingReconstruction.expansion_polynomial_expansion",
+            "PaperP1Registry.V2.StoppingReconstruction.prefix_suffix"
+          ],
+          "parent_proof_endpoints": [
+            {
+              "name": "PaperP1.Algebra.stopped_expansion",
+              "source": "PaperP1/Algebra/StoppedExpansion.lean",
+              "line": 213,
+              "source_sha256": "220502e2fd4bf51bbf037cb34993ccfcff9497a9e30cb3b3f5d611e3233886cf",
+              "role": "primary_or_explicit_clause_endpoint",
+              "compiled_type_sha256": "2982ed8681c3beed1c7e8e40cd4d1c7ce9fd91d4b88335b9843212f668619cd9"
+            },
+            {
+              "name": "PaperP1.Algebra.orderedBoundary_iff_erase_max",
+              "source": "PaperP1/Algebra/StoppedExpansion.lean",
+              "line": 105,
+              "source_sha256": "220502e2fd4bf51bbf037cb34993ccfcff9497a9e30cb3b3f5d611e3233886cf",
+              "role": "primary_or_explicit_clause_endpoint",
+              "compiled_type_sha256": "90add85e984235ac5f3bb9b28a9c3b6bd91fe003624bafd418240cef0c5501e5"
+            },
+            {
+              "name": "PaperP1.Algebra.orderedSuffix_eq_filter_max",
+              "source": "PaperP1/Algebra/StoppedExpansion.lean",
+              "line": 110,
+              "source_sha256": "220502e2fd4bf51bbf037cb34993ccfcff9497a9e30cb3b3f5d611e3233886cf",
+              "role": "primary_or_explicit_clause_endpoint",
+              "compiled_type_sha256": "4107dfa4067750dda19800f02f20e2fa6128a0e70e16f914ea0ba54257455fff"
+            }
+          ],
+          "printed_conditional_clause": false,
+          "context": [
+            "G fini totalement ordonné ; D héréditaire et D(∅), explicitement hérités de stopped.tex:25–30.",
+            "CommSemiring R suffit ; aucune propriété probabiliste."
+          ],
+          "page": "14"
+        },
+        {
+          "number": "4.2",
+          "label": "p1:stop:measure",
+          "title": "A positive remainder kernel",
+          "source": "manuscripts/paper-p1/publication-2026-11-12/sources/main_sections/stopped.tex",
+          "statement_sha256": "e50b8b2c7ba9a9e50147f2f9f43e0e6cf92d3bf3e53a4107bb85e07ac865e06f",
+          "selected_declarations": [
+            "PaperP1Registry.V2.StoppingReconstruction.expansion_positive_stopped_kernel",
+            "PaperP1Registry.V2.StoppingReconstruction.expansion_stopped_l1_bound"
+          ],
+          "parent_proof_endpoints": [
+            {
+              "name": "PaperP1.Probability.positive_stopped_remainder",
+              "source": "PaperP1/Probability/StoppedMeasureLaw.lean",
+              "line": 140,
+              "source_sha256": "90196f20197c00c847000535dd076aa4784b9cef18661d03d504a22b92bfd54e",
+              "role": "primary_or_explicit_clause_endpoint",
+              "compiled_type_sha256": "ae8953e05bcf61bce017048644646c3f613bef09ef8e4d4ae93e66cb81b3b3d5"
+            },
+            {
+              "name": "PaperP1.Probability.measureBoundaryKernel_coeff",
+              "source": "PaperP1/Probability/StoppedMeasureLaw.lean",
+              "line": 88,
+              "source_sha256": "90196f20197c00c847000535dd076aa4784b9cef18661d03d504a22b92bfd54e",
+              "role": "primary_or_explicit_clause_endpoint",
+              "compiled_type_sha256": "d5657af708e67bde608a78ce0db504d71a0a1b7924f984f426da520109f505f1"
+            },
+            {
+              "name": "PaperP1.Probability.measureJointMoment_eq_probability",
+              "source": "PaperP1/Probability/StoppedMeasureLaw.lean",
+              "line": 45,
+              "source_sha256": "90196f20197c00c847000535dd076aa4784b9cef18661d03d504a22b92bfd54e",
+              "role": "primary_or_explicit_clause_endpoint",
+              "compiled_type_sha256": "311f0b17fe2cfa8b4bc5893aebff1185c49cb15e62c6ad62abe7eccb2494f42d"
+            }
+          ],
+          "printed_conditional_clause": false,
+          "context": [
+            "Même classe héréditaire contenant ∅ ; indicatrices mesurables sur un espace de probabilité."
+          ],
+          "page": "15"
+        },
+        {
+          "number": "5.1",
+          "label": "p13:transfer:conversion",
+          "title": "Conversion with heterogeneous marginals",
+          "source": "manuscripts/paper-p1/publication-2026-11-12/sources/main_sections/reconstruction.tex",
+          "statement_sha256": "ecaa37b976094a2d309768a81a671f3d7517916194a54dd66f5d48df215e523b",
+          "selected_declarations": [
+            "PaperP1Registry.V2.StoppingReconstruction.finite_conversion",
+            "PaperP1Registry.V2.StoppingReconstruction.run_conversion"
+          ],
+          "parent_proof_endpoints": [
+            {
+              "name": "PaperP1.RunConversion.main_15_1",
+              "source": "PaperP1/Asymptotics/RunConversion.lean",
+              "line": 19,
+              "source_sha256": "80c3b7a071aee79d268036aba93bf3f7357233f0d23ce11c1f88e73a0d0dd14b",
+              "role": "primary_or_explicit_clause_endpoint",
+              "compiled_type_sha256": "a92c5488fcf51ee4c09f938a3a721a5736839e6294840583558fddf2107a897a"
+            },
+            {
+              "name": "PaperP1.UniversalHeterogeneousConversion.actual_signed_measure_conversion",
+              "source": "PaperP1/Probability/UniversalHeterogeneousConversion.lean",
+              "line": 115,
+              "source_sha256": "27c436219c747d011cb7bc6598dbb5a59320ab50a915d544f625cecb1a0a092a",
+              "role": "primary_or_explicit_clause_endpoint",
+              "compiled_type_sha256": "905f16a36600d7e0af907dab35d2d3b1e8f1737e4d5bedcf8d11d10f0835ec33"
+            }
+          ],
+          "printed_conditional_clause": false,
+          "context": [
+            "Dans la première clause les p_i sont de vraies marges Bernoulli dans[0,1],E l’ensemble de toutes les paires,c leurs covariances ; P=p_*≥0."
+          ],
+          "page": "16"
+        },
+        {
+          "number": "5.2",
+          "label": "p13:transfer:finite",
+          "title": "Finite transfer to the complete law",
+          "source": "manuscripts/paper-p1/publication-2026-11-12/sources/main_sections/reconstruction.tex",
+          "statement_sha256": "9f5f47830a40a5631468baa87529caef80b4a519cf1a4491b93d6ee9efcfb415",
+          "selected_declarations": [
+            "PaperP1Registry.V2.StoppingReconstruction.conditional_transfer"
+          ],
+          "parent_proof_endpoints": [
+            {
+              "name": "PaperP1.FiniteCompleteLawTransfer.article_15_13",
+              "source": "PaperP1/Asymptotics/FiniteCompleteLawTransfer.lean",
+              "line": 151,
+              "source_sha256": "2d17f3578829c4469bdee4b4392feea72a10feab7a6ce2b448c0eba333803136",
+              "role": "primary_or_explicit_clause_endpoint",
+              "compiled_type_sha256": "7b3fc86d2bb476437d71ce60f9883643f4a1b3f80a8135edba5cf2d05d145843"
+            }
+          ],
+          "printed_conditional_clause": true,
+          "context": [
+            "1<β≤4/3 ; FiniteConnectedActivity254.Hypothesis C β est une PRÉMISSE imprimée : ∀r∈[3,256],∀ε>0,∃A≥0,N₀,Σ_{connectés,ρ*≤2L}|c(I)|≤A N^(−β+ε)."
+          ],
+          "page": "18"
+        },
+        {
+          "number": "5.3",
+          "label": "p13:transfer:reconstruction",
+          "title": "Reconstruction from triple activity",
+          "source": "manuscripts/paper-p1/publication-2026-11-12/sources/main_sections/reconstruction.tex",
+          "statement_sha256": "0fc03cc57bf67aa74163153f1400bbd8525da696dc7c232068f949ad76f086fd",
+          "selected_declarations": [
+            "PaperP1Registry.V2.StoppingReconstruction.triple_reconstruction"
+          ],
+          "parent_proof_endpoints": [
+            {
+              "name": "PaperP1.OptimalTripleReconstruction.article_15_14",
+              "source": "PaperP1/Asymptotics/OptimalTripleReconstruction.lean",
+              "line": 19,
+              "source_sha256": "0dfb31faff89c4c13947c03df333eb4693726fb9722777a946c465c65e7f0d27",
+              "role": "primary_or_explicit_clause_endpoint",
+              "compiled_type_sha256": "097b25ac15005d53659163d9d124bb36adb80fbb08010196c2881084bbb78700"
+            }
+          ],
+          "printed_conditional_clause": false,
+          "context": [
+            "Bande critique ; A3 est la vraie masse absolue de toutes triples et la moyenne/cumulant sont exacts."
+          ],
+          "page": "19"
+        }
+      ],
+      "challenge_lines": 255,
+      "challenge_bytes": 14807,
+      "audited_solution_theorems": [
+        "PaperP1Registry.V2.StoppingReconstruction.runCount_eq",
+        "PaperP1Registry.V2.StoppingReconstruction.factorialMoment_eq",
+        "PaperP1Registry.V2.StoppingReconstruction.marginal_eq",
+        "PaperP1Registry.V2.StoppingReconstruction.jointMoment_eq",
+        "PaperP1Registry.V2.StoppingReconstruction.centeredCoefficient_eq",
+        "PaperP1Registry.V2.StoppingReconstruction.third_eq",
+        "PaperP1Registry.V2.StoppingReconstruction.fourth_eq",
+        "PaperP1Registry.V2.StoppingReconstruction.second_eq",
+        "PaperP1Registry.V2.StoppingReconstruction.principalScale_eq",
+        "PaperP1Registry.V2.StoppingReconstruction.factorial_source",
+        "PaperP1Registry.V2.StoppingReconstruction.third_exact_identity",
+        "PaperP1Registry.V2.StoppingReconstruction.fourth_exact_identity",
+        "PaperP1Registry.V2.StoppingReconstruction.principal_second_equivalent",
+        "PaperP1Registry.V2.StoppingReconstruction.optimal_third_cumulant",
+        "PaperP1Registry.V2.StoppingReconstruction.space_eq",
+        "PaperP1Registry.V2.StoppingReconstruction.addition_eq",
+        "PaperP1Registry.V2.StoppingReconstruction.canonicalPartition_eq",
+        "PaperP1Registry.V2.StoppingReconstruction.connected_eq",
+        "PaperP1Registry.V2.StoppingReconstruction.connectedFamilies_eq",
+        "PaperP1Registry.V2.StoppingReconstruction.relativeNullity_eq",
+        "PaperP1Registry.V2.StoppingReconstruction.compatibleNullity_eq",
+        "PaperP1Registry.V2.StoppingReconstruction.homogeneousMass_eq",
+        "PaperP1Registry.V2.StoppingReconstruction.rankWeight_eq",
+        "PaperP1Registry.V2.StoppingReconstruction.expansion_reconstruct",
+        "PaperP1Registry.V2.StoppingReconstruction.expansion_countLaw_eq_source",
+        "PaperP1Registry.V2.StoppingReconstruction.expansion_totalMass_eq_source",
+        "PaperP1Registry.V2.StoppingReconstruction.expansion_l1Norm_eq_source",
+        "PaperP1Registry.V2.StoppingReconstruction.expansion_retainedReference_eq_source",
+        "PaperP1Registry.V2.StoppingReconstruction.expansion_jointMoment_eq_source",
+        "PaperP1Registry.V2.StoppingReconstruction.expansion_marginal_eq_source",
+        "PaperP1Registry.V2.StoppingReconstruction.expansion_centeredMoment_eq_source",
+        "PaperP1Registry.V2.StoppingReconstruction.expansion_boundary_eq_source",
+        "PaperP1Registry.V2.StoppingReconstruction.expansion_polynomial_expansion",
+        "PaperP1Registry.V2.StoppingReconstruction.expansion_centered_identity",
+        "PaperP1Registry.V2.StoppingReconstruction.expansion_positive_stopped_kernel",
+        "PaperP1Registry.V2.StoppingReconstruction.expansion_stopped_l1_bound",
+        "PaperP1Registry.V2.StoppingReconstruction.actualMean_eq",
+        "PaperP1Registry.V2.StoppingReconstruction.sourceMass_eq",
+        "PaperP1Registry.V2.StoppingReconstruction.quadraticMass_eq",
+        "PaperP1Registry.V2.StoppingReconstruction.error_eq",
+        "PaperP1Registry.V2.StoppingReconstruction.finiteReference_eq",
+        "PaperP1Registry.V2.StoppingReconstruction.pairReference_eq",
+        "PaperP1Registry.V2.StoppingReconstruction.fixedFamilies_eq",
+        "PaperP1Registry.V2.StoppingReconstruction.fixedActivity_eq",
+        "PaperP1Registry.V2.StoppingReconstruction.prefix_suffix",
+        "PaperP1Registry.V2.StoppingReconstruction.finite_conversion",
+        "PaperP1Registry.V2.StoppingReconstruction.run_conversion",
+        "PaperP1Registry.V2.StoppingReconstruction.conditional_transfer",
+        "PaperP1Registry.V2.StoppingReconstruction.triple_reconstruction"
+      ],
+      "compiled_type_sha256": {
+        "PaperP1Registry.V2.StoppingReconstruction.expansion_polynomial_expansion": "f5dbb19556499ac6d0d867dffe2254f76ef79acd6e000256b50c71df6e65d712",
+        "PaperP1Registry.V2.StoppingReconstruction.prefix_suffix": "f89e76967392832e9f0a164e56780330004da1e9e3c2e1a3fd0aa78657fb17db",
+        "PaperP1Registry.V2.StoppingReconstruction.expansion_positive_stopped_kernel": "459b93d2ade622d2db6370d73058db3c32b209973b7714b1b596e1513b7e1d0c",
+        "PaperP1Registry.V2.StoppingReconstruction.expansion_stopped_l1_bound": "a771557aa544acb09ab2c8743a45ffb20e1b74b54fbe03b603687f8d9d376942",
+        "PaperP1Registry.V2.StoppingReconstruction.finite_conversion": "b39db2cacaf504a88f1698aef6e42f5ccc01c2eca6a61cb18d113c93169e2478",
+        "PaperP1Registry.V2.StoppingReconstruction.run_conversion": "adcc8d57bb6dfa6378e3c6c634baaba9996e847612eb1be44ac972de1db8f9c1",
+        "PaperP1Registry.V2.StoppingReconstruction.conditional_transfer": "17ff228e4ace39fe56fe269be79b8421518b58ace2f9f5c4b7741dec3c9a14d8",
+        "PaperP1Registry.V2.StoppingReconstruction.triple_reconstruction": "0d1b80beb4de7a4cf4d98cfc86166569b4eea76b36b000b7fc3bff951a4c55b9"
+      },
+      "project_path": "RegistryV2",
+      "registered_source_commit": "d6a0f6c5109886127526677603eb6b74e8c0cd82",
+      "registration": {
+        "status": "registered_and_publicly_verified",
+        "id": "PALOMAR-2026-11-13-000008",
+        "version": 1,
+        "url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000008&version=1",
+        "registered_at": "2026-11-13T09:20:18Z",
+        "source_commit": "d6a0f6c5109886127526677603eb6b74e8c0cd82",
+        "public_data_receipt": "palomar/publication-followup/stopping_reconstruction/registration/VALIDATION.json",
+        "published_warning_count": 0,
+        "warning_disposition": "palomar/publication-followup/stopping_reconstruction/registration/DISPOSITION.json"
+      }
+    },
+    {
+      "order": 5,
+      "slug": "foundations",
+      "title": "Uniform event bounds, Hermite approximation and the fixed-moment barrier",
+      "project_path": "RegistryFinal",
+      "configuration": "RegistryFinal/comparator/p1_foundations.json",
+      "metadata": "palomar/final/foundations/formalization.yaml",
+      "challenge": "RegistryFinal/ChallengeP1FinalFoundations.lean",
+      "solution": "RegistryFinal/SolutionP1FinalFoundations.lean",
+      "selected_declarations": [
+        "PaperP1Registry.Final.Affine.uniform_event_calculus",
+        "PaperP1Registry.Final.Reference.positive_hermite_approximation",
+        "PaperP1Registry.Final.Obstruction.fixed_moment_barrier"
+      ],
+      "main_results": [
+        {
+          "number": "2.1",
+          "label": "p1:alg:centred",
+          "title": "Centered Bernoulli expansion",
+          "source": "manuscripts/paper-p1/publication-2026-11-12/sources/main_sections/event_algebra.tex",
+          "statement_sha256": "83cae9b79ede35a5fd2cf646a141266c4e697ab953c370cce0922d954f58e2a9",
+          "selected_declarations": [
+            "PaperP1Registry.Final.Affine.uniform_event_calculus"
+          ],
+          "parent_proof_endpoints": [
+            {
+              "name": "PaperP1.Probability.centered_bernoulli_expansion",
+              "source": "PaperP1/Probability/CenteredMeasureExpansion.lean",
+              "line": 189,
+              "source_sha256": "9e32e3ef334a444633bc27f50185bd1d96e8218919695574ab2259a8d356590c",
+              "role": "primary_or_explicit_clause_endpoint",
+              "compiled_type_sha256": "ee509f6bd6dfdda8af2eb12883ba7adcc34e8595d0afbb215327c63af2c0be2a"
+            },
+            {
+              "name": "PaperP1.Probability.observedCountLaw_realizes",
+              "source": "PaperP1/Probability/CenteredMeasureExpansion.lean",
+              "line": 107,
+              "source_sha256": "9e32e3ef334a444633bc27f50185bd1d96e8218919695574ab2259a8d356590c",
+              "role": "primary_or_explicit_clause_endpoint",
+              "compiled_type_sha256": "e1ac887e7f37f25be8c15155e4db3324c483ad6f383feb17938fc47cb09c2016"
+            }
+          ],
+          "printed_conditional_clause": false,
+          "context": [
+            "Famille finie de Bernoulli mesurables sur une probabilité arbitraire ;c(I) centré aux vraies marges.",
+            "observedCountLaw_realizes identifie la loi algébrique à la pushforward du compte."
+          ],
+          "page": "8",
+          "inherited_selected_declarations": [
+            "PaperP1Registry.V2.AffineEvents.expansion_centered_identity",
+            "PaperP1Registry.V2.AffineEvents.expansion_probability_clauses"
+          ],
+          "selected_conjunction_clauses": [
+            1,
+            2
+          ]
+        },
+        {
+          "number": "2.2",
+          "label": "p1:alg:fourier",
+          "title": "Full-support Fourier formula",
+          "source": "manuscripts/paper-p1/publication-2026-11-12/sources/main_sections/event_algebra.tex",
+          "statement_sha256": "1357e7556eb0994ea9a2b3a23a308dc627fac610d0f5718317f46bf85cebfde1",
+          "selected_declarations": [
+            "PaperP1Registry.Final.Affine.uniform_event_calculus"
+          ],
+          "parent_proof_endpoints": [
+            {
+              "name": "PaperP1.Model.InfiniteStarts.dyadic_squareClass_fourier",
+              "source": "PaperP1/Model/SquareClassFourier.lean",
+              "line": 144,
+              "source_sha256": "8dac4f436002c3c7a4769b133faf7c4195cb9a9d87ef0c2da7fdef582f8a5607",
+              "role": "primary_or_explicit_clause_endpoint",
+              "compiled_type_sha256": "5e97375c8f1b56e009119e9e4210a771b0d0a5e137bdbb9c0f69088fc162dba9"
+            },
+            {
+              "name": "PaperP1.Model.InfiniteStarts.squareClass_centered_moment_bound",
+              "source": "PaperP1/Model/SquareClassFourier.lean",
+              "line": 70,
+              "source_sha256": "8dac4f436002c3c7a4769b133faf7c4195cb9a9d87ef0c2da7fdef582f8a5607",
+              "role": "primary_or_explicit_clause_endpoint",
+              "compiled_type_sha256": "2d789db65486292343b9d3c525a62a697b1d04eeddf60ecaf2c8c412d83e1c3b"
+            },
+            {
+              "name": "PaperP1.Model.InfiniteStarts.squareClass_full_relation_of_ne_zero",
+              "source": "PaperP1/Model/SquareClassFourier.lean",
+              "line": 86,
+              "source_sha256": "8dac4f436002c3c7a4769b133faf7c4195cb9a9d87ef0c2da7fdef582f8a5607",
+              "role": "primary_or_explicit_clause_endpoint",
+              "compiled_type_sha256": "641da977c22f04b3b9dcdc5797263e5a9d9165c3a75ab36f859fc547edb14547"
+            }
+          ],
+          "printed_conditional_clause": false,
+          "context": [
+            "I non vide dansl’ensemble admissiblep_x>0, L>0 ;S_x image EFFECTIVE.",
+            "SquareClassFourierConclusion contient témoins affines, formule signée exacte,les deux caps et la relation de support complet."
+          ],
+          "page": "9",
+          "inherited_selected_declarations": [
+            "PaperP1Registry.V2.AffineEvents.original_fourier"
+          ],
+          "selected_conjunction_clauses": [
+            3
+          ]
+        },
+        {
+          "number": "2.3",
+          "label": "p2:homogeneous:envelope",
+          "title": "A common homogeneous envelope",
+          "source": "manuscripts/paper-p1/publication-2026-11-12/sources/main_sections/event_algebra.tex",
+          "statement_sha256": "9ae844e0439441c44b2533c9d1a31df097cac4f794b0e71bbe4ad2610dc2b424",
+          "selected_declarations": [
+            "PaperP1Registry.Final.Affine.uniform_event_calculus"
+          ],
+          "parent_proof_endpoints": [
+            {
+              "name": "PaperP1.V2HomogeneousEnvelope.finite_domination",
+              "source": "PaperP1/Asymptotics/V2HomogeneousEnvelope.lean",
+              "line": 18,
+              "source_sha256": "f72533705871365cc225621e3c0479dd642533349d73708c9463e708c7aeb6b9",
+              "role": "primary_or_explicit_clause_endpoint",
+              "compiled_type_sha256": "e607c1c58816d9ef6edd33823726d03114b7264782169f3fcd465f346dd4bf11"
+            },
+            {
+              "name": "PaperP1.V2HomogeneousEnvelope.uniform_nominal_comparison",
+              "source": "PaperP1/Asymptotics/V2HomogeneousEnvelope.lean",
+              "line": 29,
+              "source_sha256": "f72533705871365cc225621e3c0479dd642533349d73708c9463e708c7aeb6b9",
+              "role": "primary_or_explicit_clause_endpoint",
+              "compiled_type_sha256": "88cf7246c3a655c169532527c620730ee24d2ed7cfa211d278833635712e3e9a"
+            }
+          ],
+          "printed_conditional_clause": false,
+          "context": [],
+          "page": "9",
+          "inherited_selected_declarations": [
+            "PaperP1Registry.V2.AffineEvents.finite_envelope",
+            "PaperP1Registry.V2.AffineEvents.nominal_envelope"
+          ],
+          "selected_conjunction_clauses": [
+            4,
+            5
+          ]
+        },
+        {
+          "number": "2.4",
+          "label": "p1:alg:compatible",
+          "title": "Compatible-nullity majorant",
+          "source": "manuscripts/paper-p1/publication-2026-11-12/sources/main_sections/event_algebra.tex",
+          "statement_sha256": "26e1395319bc7ffeeecd57be800274c6d52dc8ae94fabdbdadbdc172d9dab61f",
+          "selected_declarations": [
+            "PaperP1Registry.Final.Affine.uniform_event_calculus"
+          ],
+          "parent_proof_endpoints": [
+            {
+              "name": "PaperP1.Model.InfiniteStarts.infinite_centered_compatible_nullity_bound",
+              "source": "PaperP1/Model/CompatibleNullityBound.lean",
+              "line": 64,
+              "source_sha256": "99445aed648585317c3526716ba2c7af147520fab9c3ee894d8658e81a51edbc",
+              "role": "primary_or_explicit_clause_endpoint",
+              "compiled_type_sha256": "2d6a9efda40ba13655f5abeea66fbc8b20105fa82ae71f425511aa7ec6eadc76"
+            },
+            {
+              "name": "PaperP1.Model.InfiniteStarts.runCompatibleNullity_le_relative",
+              "source": "PaperP1/Model/CompatibleNullityBound.lean",
+              "line": 47,
+              "source_sha256": "99445aed648585317c3526716ba2c7af147520fab9c3ee894d8658e81a51edbc",
+              "role": "primary_or_explicit_clause_endpoint",
+              "compiled_type_sha256": "e7c3e2f4b8b8a5f134844567f238b8c36a7950b149867bc266b203fd3ea890b2"
+            },
+            {
+              "name": "PaperP1.Model.InfiniteStarts.runCompatibleNullity_eq_of_positive_joint",
+              "source": "PaperP1/Model/CompatibleNullityBound.lean",
+              "line": 51,
+              "source_sha256": "99445aed648585317c3526716ba2c7af147520fab9c3ee894d8658e81a51edbc",
+              "role": "primary_or_explicit_clause_endpoint",
+              "compiled_type_sha256": "6d39d38d7d599f24efb4812f18796f943c5e7f80116b0060c7a5ad1c04d94929"
+            }
+          ],
+          "printed_conditional_clause": false,
+          "context": [
+            "ρ_*=runCompatibleNullity est le supremum des nullités des SOUS-familles compatibles, pas le rang du noyau d’un système joint incompatible.",
+            "Toutes les marges locales sont strictement positives sur𝓘_N ; aucune compatibilité deI entier n’est supposée."
+          ],
+          "page": "10",
+          "inherited_selected_declarations": [
+            "PaperP1Registry.V2.AffineEvents.compatible_nullity"
+          ],
+          "selected_conjunction_clauses": [
+            6
+          ]
+        },
+        {
+          "number": "2.5",
+          "label": "p1:alg:components",
+          "title": "Existence, uniqueness, and factorization",
+          "source": "manuscripts/paper-p1/publication-2026-11-12/sources/main_sections/event_algebra.tex",
+          "statement_sha256": "6eaa05eaffd59b96e763bff396ec1b1b18f1f4a6b5004c5a15093d11d49dba84",
+          "selected_declarations": [
+            "PaperP1Registry.Final.Affine.uniform_event_calculus"
+          ],
+          "parent_proof_endpoints": [
+            {
+              "name": "PaperP1.Affine.existsUnique_finest_directPartition",
+              "source": "PaperP1/Affine/DirectPartitions.lean",
+              "line": 117,
+              "source_sha256": "509aead2d93e921b0319f3c64e64e4e0430d7f40927c656146273138c520b2c6",
+              "role": "primary_or_explicit_clause_endpoint",
+              "compiled_type_sha256": "dff6652987dcd3f8a81da0156794b97c193844b06e106a48fa214083d6b29d74"
+            },
+            {
+              "name": "PaperP1.UnrestrictedRunComponents.canonical_run_components",
+              "source": "PaperP1/Model/UnrestrictedRunComponents.lean",
+              "line": 90,
+              "source_sha256": "fa80047c169df33a56adb426fcb45b3043de1d578106145197eddae59f82efc6",
+              "role": "primary_or_explicit_clause_endpoint",
+              "compiled_type_sha256": "bf27be614e5840fd5ec9a0880733afcdea9ef52de97d653dde16aa9d9a8acb2d"
+            },
+            {
+              "name": "PaperP1.UnrestrictedRunComponents.joint_partition",
+              "source": "PaperP1/Model/UnrestrictedRunComponents.lean",
+              "line": 21,
+              "source_sha256": "fa80047c169df33a56adb426fcb45b3043de1d578106145197eddae59f82efc6",
+              "role": "primary_or_explicit_clause_endpoint",
+              "compiled_type_sha256": "f7518f2737687dea0c98b17d4b874df2f705b5bb24536e528c3d20c61cd42d3f"
+            },
+            {
+              "name": "PaperP1.UnrestrictedRunComponents.centered_partition",
+              "source": "PaperP1/Model/UnrestrictedRunComponents.lean",
+              "line": 49,
+              "source_sha256": "fa80047c169df33a56adb426fcb45b3043de1d578106145197eddae59f82efc6",
+              "role": "primary_or_explicit_clause_endpoint",
+              "compiled_type_sha256": "d3a467bb96ce9a4049c80f84c3b2d89c48e536eed6595a98e5bd83cf3fa4f031"
+            },
+            {
+              "name": "PaperP1.UnrestrictedRunComponents.nullity_partition",
+              "source": "PaperP1/Model/UnrestrictedRunComponents.lean",
+              "line": 77,
+              "source_sha256": "fa80047c169df33a56adb426fcb45b3043de1d578106145197eddae59f82efc6",
+              "role": "primary_or_explicit_clause_endpoint",
+              "compiled_type_sha256": "6e4d0599cebfcca1b920d9d4b19be06ebfdc864d5f8f18ddbdf25df35d2a5423"
+            }
+          ],
+          "printed_conditional_clause": false,
+          "context": [
+            "Famille finie I de centres, longueur L>0 ; aucune prémisse p_x>0.",
+            "La partition directe porte sur les images effectives squareClassSpace, et non sur les copies physiques."
+          ],
+          "page": "10",
+          "inherited_selected_declarations": [
+            "PaperP1Registry.V2.AffineEvents.unique_direct_partition",
+            "PaperP1Registry.V2.AffineEvents.canonical_factorization"
+          ],
+          "selected_conjunction_clauses": [
+            7,
+            8
+          ]
+        },
+        {
+          "number": "7.1",
+          "label": "p1:close:positivity",
+          "title": "Positivity of the quadratic Poisson correction",
+          "source": "manuscripts/paper-p1/publication-2026-11-12/sources/main_sections/completion.tex",
+          "statement_sha256": "1bda3d739142898ef6191306fe15dfe040c58696c9aeab658210a3674d15e5a0",
+          "selected_declarations": [
+            "PaperP1Registry.Final.Reference.positive_hermite_approximation"
+          ],
+          "parent_proof_endpoints": [
+            {
+              "name": "PaperP1.QuadraticPoisson.main_8_1",
+              "source": "PaperP1/Probability/QuadraticPoisson.lean",
+              "line": 96,
+              "source_sha256": "f17bec8477584b52fd43e72b01dce0f4179dddff085b65515f45bea1de7aedc9",
+              "role": "primary_or_explicit_clause_endpoint",
+              "compiled_type_sha256": "dc2b1caccdbe9617c3b72fde3168904e61572299bd37dab40774a2715366abd8"
+            },
+            {
+              "name": "PaperP1.QuadraticPoisson.reference_singleton",
+              "source": "PaperP1/Probability/QuadraticPoisson.lean",
+              "line": 87,
+              "source_sha256": "f17bec8477584b52fd43e72b01dce0f4179dddff085b65515f45bea1de7aedc9",
+              "role": "primary_or_explicit_clause_endpoint",
+              "compiled_type_sha256": "2508be4e4bfee1fb4504f94f73f0410faf207ec88f7d2b6a52db030b9e58254a"
+            }
+          ],
+          "printed_conditional_clause": false,
+          "context": [
+            "μ>0,α réel quelconque ; k naturel."
+          ],
+          "page": "23",
+          "inherited_selected_declarations": [
+            "PaperP1Registry.V2.ProbabilityReferences.quadratic_probability_criterion",
+            "PaperP1Registry.V2.ProbabilityReferences.quadratic_mass_formula"
+          ],
+          "selected_conjunction_clauses": [
+            1,
+            2
+          ]
+        },
+        {
+          "number": "8.4",
+          "label": "p1:cor:compound",
+          "title": "Hermite approximation with single and double jumps",
+          "source": "manuscripts/paper-p1/publication-2026-11-12/sources/main_sections/channel_hierarchy.tex",
+          "statement_sha256": "a9ffdb62e06b1e04f3aa844d6d8be7662542059790ac01f64f52f4ad8401f732",
+          "selected_declarations": [
+            "PaperP1Registry.Final.Reference.positive_hermite_approximation"
+          ],
+          "parent_proof_endpoints": [
+            {
+              "name": "PaperP1.OptimalHermite.article_19_1",
+              "source": "PaperP1/Asymptotics/OptimalHermite.lean",
+              "line": 61,
+              "source_sha256": "cf6ff8cb02346c90dd33585491c4e03bc0f693ef7d86d6eacb51cfcfdaf150f4",
+              "role": "primary_or_explicit_clause_endpoint",
+              "compiled_type_sha256": "b0a02ac3c6b795f07c3c313e93e119cdc07a1770dbe3ebe28eed101965619a5a"
+            }
+          ],
+          "printed_conditional_clause": false,
+          "context": [
+            "C,ε fixés ;h≥3 fixé pour les références explicites,τ fixe avant leur seuil ; les paramètres Poisson sont admissibles au seuil fourni."
+          ],
+          "page": "29",
+          "inherited_selected_declarations": [
+            "PaperP1Registry.V2.ProbabilityReferences.hermite_exact",
+            "PaperP1Registry.V2.ProbabilityReferences.hermite_fixed_height",
+            "PaperP1Registry.V2.ProbabilityReferences.hermite_fixed_equivalent"
+          ],
+          "selected_conjunction_clauses": [
+            3,
+            4,
+            5
+          ]
+        }
+      ],
+      "companion_results": [
+        {
+          "number": "T13.1",
+          "label": "p1:uniform:full-support",
+          "title": "A uniform weighted count of full supports",
+          "source": "manuscripts/paper-p1/publication-2026-11-12/sources/companion_sections/uniform_support.tex",
+          "source_file_sha256": "bc7801a4f3ef8d40f653c63081deef3b47d34a9bcdd5014d062bdaa3fda36f49",
+          "statement_sha256": "a6dda51d420e039da276b01ce5caa6ce7166561520f493db3c14512abcccfe31",
+          "selected_declarations": [
+            "PaperP1Registry.Final.Affine.uniform_event_calculus"
+          ],
+          "conjunction_clauses": [
+            9
+          ],
+          "parent_proof_endpoints": [
+            {
+              "name": "PaperP1.UniformFullSupportCount.companion_T13_1",
+              "source": "PaperP1/Asymptotics/UniformFullSupportCount.lean",
+              "line": 117,
+              "source_sha256": "9c0aba008d890c2de19e17bd24465f64c3606adbb017f4314a59e2f60cf1e918",
+              "role": "primary_or_explicit_clause_endpoint",
+              "compiled_type_sha256": "f543717cbc3a1b2937fd34a2ef7457a7b81eeb7fd63ef2c8359a4c427056a36e"
+            }
+          ],
+          "literal_clause_type": "(∀ (C u ε : ℝ) (_hu : 0<u) (_hε : 0<ε),\n    ∃ N₀ : ℕ, 10≤N₀ ∧ ∀ N≥N₀, ∀ L : ℕ,\n      |(L : ℝ)-Real.log N/Real.log 2|≤C → ∀ G : Finset ℕ, G⊆Ico N (2*N) →\n      ∀ s : ℕ, 2≤s →\n      (∑ r ∈ Icc s G.card, (u^r/(r.factorial : ℝ))*\n        ((fullSupportLists G L r).card*((2^L : ℝ)⁻¹)^r)) ≤\n          (N : ℝ)^(-min ((s : ℝ)/2) 2+ε))",
+          "scope": "One threshold before every subset G and cutoff s>=2; all cardinalities are summed. Strict separation >L, regular local rank, all effective projections nonzero. No compatibility, minimality or pure N^-2 endpoint is imposed."
+        },
+        {
+          "number": "T15.1",
+          "label": "p1:obstruction:fixed",
+          "title": "A perturbation invisible at each fixed order",
+          "source": "manuscripts/paper-p1/publication-2026-11-12/sources/companion_sections/moment_obstruction.tex",
+          "statement_sha256": "c652d9e1cd007089e2c95a960fa33e1d963832a5f3da703257669a40da70cc64",
+          "source_file_sha256": "68d14a0fefd9caabc9960b5fe26088a3cbe139374f31a6fb5a1152ecac39f7ed",
+          "selected_declarations": [
+            "PaperP1Registry.Final.Obstruction.fixed_moment_barrier"
+          ],
+          "conjunction_clauses": [
+            1
+          ],
+          "parent_proof_endpoints": [
+            {
+              "name": "PaperP1.MomentObstruction.companion_T23_1_extended",
+              "source": "PaperP1/Probability/MomentObstruction.lean",
+              "line": 84,
+              "source_sha256": "479bd03ef64a732c418963f321fee5411cb953a5ec3c8888d04ad5f138bf9ff5",
+              "role": "primary_or_explicit_clause_endpoint",
+              "compiled_type_sha256": "081d5529f25639973a391b1dc5686b0c85bf62472fb3ab8ef2969a076d6a74ad"
+            }
+          ],
+          "additional_displayed_corollary": {
+            "numbered_result": false,
+            "same_source_file": true,
+            "selected_conjunction_clauses": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "description": "m_N=floor(sqrt(log N)), a_N=log(N) N^(-2/3); eventual fixed factorial moments, uniform exponential moments, logarithmic TV asymptotic and every inverse-power obstruction.",
+            "proof_module": "PaperP1/Asymptotics/MomentObstructionSequence.lean"
+          }
+        }
+      ],
+      "challenge_lines": 500,
+      "challenge_bytes": 29187,
+      "audited_solution_theorems": [
+        "PaperP1Registry.Final.Affine.runCount_eq",
+        "PaperP1Registry.Final.Affine.factorialMoment_eq",
+        "PaperP1Registry.Final.Affine.marginal_eq",
+        "PaperP1Registry.Final.Affine.jointMoment_eq",
+        "PaperP1Registry.Final.Affine.centeredCoefficient_eq",
+        "PaperP1Registry.Final.Affine.third_eq",
+        "PaperP1Registry.Final.Affine.fourth_eq",
+        "PaperP1Registry.Final.Affine.second_eq",
+        "PaperP1Registry.Final.Affine.principalScale_eq",
+        "PaperP1Registry.Final.Affine.factorial_source",
+        "PaperP1Registry.Final.Affine.third_exact_identity",
+        "PaperP1Registry.Final.Affine.fourth_exact_identity",
+        "PaperP1Registry.Final.Affine.principal_second_equivalent",
+        "PaperP1Registry.Final.Affine.optimal_third_cumulant",
+        "PaperP1Registry.Final.Affine.space_eq",
+        "PaperP1Registry.Final.Affine.addition_eq",
+        "PaperP1Registry.Final.Affine.canonicalPartition_eq",
+        "PaperP1Registry.Final.Affine.connected_eq",
+        "PaperP1Registry.Final.Affine.connectedFamilies_eq",
+        "PaperP1Registry.Final.Affine.relativeNullity_eq",
+        "PaperP1Registry.Final.Affine.compatibleNullity_eq",
+        "PaperP1Registry.Final.Affine.homogeneousMass_eq",
+        "PaperP1Registry.Final.Affine.rankWeight_eq",
+        "PaperP1Registry.Final.Affine.expansion_reconstruct",
+        "PaperP1Registry.Final.Affine.expansion_countLaw_eq_source",
+        "PaperP1Registry.Final.Affine.expansion_totalMass_eq_source",
+        "PaperP1Registry.Final.Affine.expansion_l1Norm_eq_source",
+        "PaperP1Registry.Final.Affine.expansion_retainedReference_eq_source",
+        "PaperP1Registry.Final.Affine.expansion_jointMoment_eq_source",
+        "PaperP1Registry.Final.Affine.expansion_marginal_eq_source",
+        "PaperP1Registry.Final.Affine.expansion_centeredMoment_eq_source",
+        "PaperP1Registry.Final.Affine.expansion_boundary_eq_source",
+        "PaperP1Registry.Final.Affine.expansion_polynomial_expansion",
+        "PaperP1Registry.Final.Affine.expansion_centered_identity",
+        "PaperP1Registry.Final.Affine.expansion_positive_stopped_kernel",
+        "PaperP1Registry.Final.Affine.expansion_stopped_l1_bound",
+        "PaperP1Registry.Final.Affine.tupleSign_eq",
+        "PaperP1Registry.Final.Affine.original_fourier",
+        "PaperP1Registry.Final.Affine.finite_envelope",
+        "PaperP1Registry.Final.Affine.nominal_envelope",
+        "PaperP1Registry.Final.Affine.compatible_nullity",
+        "PaperP1Registry.Final.Affine.unique_direct_partition",
+        "PaperP1Registry.Final.Affine.canonical_factorization",
+        "PaperP1Registry.Final.Affine.expansion_probability_clauses",
+        "PaperP1Registry.Final.Affine.fullSupportLists_eq",
+        "PaperP1Registry.Final.Affine.uniform_full_support_count",
+        "PaperP1Registry.Final.Affine.uniform_event_calculus",
+        "PaperP1Registry.Final.Reference.runCount_eq",
+        "PaperP1Registry.Final.Reference.factorialMoment_eq",
+        "PaperP1Registry.Final.Reference.marginal_eq",
+        "PaperP1Registry.Final.Reference.jointMoment_eq",
+        "PaperP1Registry.Final.Reference.centeredCoefficient_eq",
+        "PaperP1Registry.Final.Reference.third_eq",
+        "PaperP1Registry.Final.Reference.fourth_eq",
+        "PaperP1Registry.Final.Reference.second_eq",
+        "PaperP1Registry.Final.Reference.principalScale_eq",
+        "PaperP1Registry.Final.Reference.factorial_source",
+        "PaperP1Registry.Final.Reference.third_exact_identity",
+        "PaperP1Registry.Final.Reference.fourth_exact_identity",
+        "PaperP1Registry.Final.Reference.principal_second_equivalent",
+        "PaperP1Registry.Final.Reference.optimal_third_cumulant",
+        "PaperP1Registry.Final.Reference.actualMean_eq",
+        "PaperP1Registry.Final.Reference.sourceMass_eq",
+        "PaperP1Registry.Final.Reference.quadraticMass_eq",
+        "PaperP1Registry.Final.Reference.error_eq",
+        "PaperP1Registry.Final.Reference.signedChannel_eq",
+        "PaperP1Registry.Final.Reference.unsignedChannel_eq",
+        "PaperP1Registry.Final.Reference.nominalMean_eq",
+        "PaperP1Registry.Final.Reference.orientationWeight_eq",
+        "PaperP1Registry.Final.Reference.heightSum_eq",
+        "PaperP1Registry.Final.Reference.coefficient_eq",
+        "PaperP1Registry.Final.Reference.twoChannel_eq",
+        "PaperP1Registry.Final.Reference.correction_eq",
+        "PaperP1Registry.Final.Reference.heightMass_eq",
+        "PaperP1Registry.Final.Reference.phaseConstant_eq",
+        "PaperP1Registry.Final.Reference.phaseMass_eq",
+        "PaperP1Registry.Final.Reference.sourceMeasure_eq",
+        "PaperP1Registry.Final.Reference.sourceSigned_eq",
+        "PaperP1Registry.Final.Reference.signedReference_eq",
+        "PaperP1Registry.Final.Reference.secondDifference_eq",
+        "PaperP1Registry.Final.Reference.distance_eq",
+        "PaperP1Registry.Final.Reference.secondNorm_eq",
+        "PaperP1Registry.Final.Reference.totalVariation_eq",
+        "PaperP1Registry.Final.Reference.leadingGap_eq",
+        "PaperP1Registry.Final.Reference.hermiteLaw_eq",
+        "PaperP1Registry.Final.Reference.criterion_helper",
+        "PaperP1Registry.Final.Reference.quadratic_probability_criterion",
+        "PaperP1Registry.Final.Reference.quadratic_mass_formula",
+        "PaperP1Registry.Final.Reference.hermite_exact",
+        "PaperP1Registry.Final.Reference.hermite_fixed_height",
+        "PaperP1Registry.Final.Reference.hermite_fixed_equivalent",
+        "PaperP1Registry.Final.Reference.positive_hermite_approximation",
+        "PaperP1Registry.Final.Obstruction.baseMass_eq",
+        "PaperP1Registry.Final.Obstruction.epsilon_eq",
+        "PaperP1Registry.Final.Obstruction.parameter_eq",
+        "PaperP1Registry.Final.Obstruction.differenceCoefficient_eq",
+        "PaperP1Registry.Final.Obstruction.perturbedMass_eq",
+        "PaperP1Registry.Final.Obstruction.base_probability",
+        "PaperP1Registry.Final.Obstruction.perturb_probability",
+        "PaperP1Registry.Final.Obstruction.base_moment",
+        "PaperP1Registry.Final.Obstruction.perturb_moment",
+        "PaperP1Registry.Final.Obstruction.perturb_exp",
+        "PaperP1Registry.Final.Obstruction.perturb_variation",
+        "PaperP1Registry.Final.Obstruction.factorial_summable",
+        "PaperP1Registry.Final.Obstruction.exponential_summable",
+        "PaperP1Registry.Final.Obstruction.familyMass_eq",
+        "PaperP1Registry.Final.Obstruction.referenceMass_eq",
+        "PaperP1Registry.Final.Obstruction.familyDistance_eq",
+        "PaperP1Registry.Final.Obstruction.family_probability",
+        "PaperP1Registry.Final.Obstruction.family_integral",
+        "PaperP1Registry.Final.Obstruction.fixed_moment_barrier"
+      ],
+      "clause_map": "RegistryFinal/clause-map.json"
+    }
+  ]
+}

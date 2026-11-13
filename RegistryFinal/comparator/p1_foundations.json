@@ -1,0 +1,15 @@
+{
+  "challenge_module": "ChallengeP1FinalFoundations",
+  "solution_module": "SolutionP1FinalFoundations",
+  "theorem_names": [
+    "PaperP1Registry.Final.Affine.uniform_event_calculus",
+    "PaperP1Registry.Final.Reference.positive_hermite_approximation",
+    "PaperP1Registry.Final.Obstruction.fixed_moment_barrier"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "enable_nanoda": true
+}

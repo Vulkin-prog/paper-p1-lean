@@ -1,0 +1,173 @@
+{
+  "schema_version": 1,
+  "inherited_clauses": [
+    {
+      "selected_declaration": "PaperP1Registry.Final.Affine.uniform_event_calculus",
+      "conjunction_clause": 1,
+      "inherited_declaration": "PaperP1Registry.V2.AffineEvents.expansion_centered_identity",
+      "inherited_challenge": "RegistryV2/ChallengeP1V2AffineEvents.lean",
+      "inherited_challenge_sha256": "23c4c3760f8ba50e89f4e1779f77d43247189360ae692adacd63c468607a5051",
+      "literal_clause_type": "(∀ [MeasurableSpace Ω] [Fintype ι] [DecidableEq ι]\n    (G : Finset ι) (μ : Measure Ω) [IsProbabilityMeasure μ]\n    (J : ι → Ω → Bool) (_hJ : ∀ x, Measurable (J x)),\n    (∀ k, (expansion_countLaw G μ J).coeff k=μ.real {ω | expansion_count G J ω=k}) ∧\n    (∀ k, 0 ≤ (expansion_countLaw G μ J).coeff k) ∧ expansion_totalMass (expansion_countLaw G μ J)=1 ∧\n    expansion_countLaw G μ J=∑ I ∈ G.powerset, expansion_scalar (expansion_centeredMoment μ J I)*\n      expansion_difference^I.card*∏ x ∈ G \\ I, expansion_bernoulli (expansion_marginal μ J x))"
+    },
+    {
+      "selected_declaration": "PaperP1Registry.Final.Affine.uniform_event_calculus",
+      "conjunction_clause": 2,
+      "inherited_declaration": "PaperP1Registry.V2.AffineEvents.expansion_probability_clauses",
+      "inherited_challenge": "RegistryV2/ChallengeP1V2AffineEvents.lean",
+      "inherited_challenge_sha256": "23c4c3760f8ba50e89f4e1779f77d43247189360ae692adacd63c468607a5051",
+      "literal_clause_type": "(∀ {κ Ω : Type*} [Fintype κ] [DecidableEq κ]\n    [MeasurableSpace Ω] (G : Finset κ) (μ : Measure Ω) [IsProbabilityMeasure μ]\n    (J : κ → Ω → Bool) (_hJ : ∀ x, Measurable (J x)),\n    expansion_centeredMoment μ J ∅=1 ∧\n    (∀ x, expansion_centeredMoment μ J {x}=0) ∧\n    ∀ I : Finset κ,\n      (∀ k, 0≤(∏ x ∈ G \\ I, expansion_bernoulli (expansion_marginal μ J x)).coeff k) ∧\n      expansion_totalMass (∏ x ∈ G \\ I, expansion_bernoulli (expansion_marginal μ J x))=1)"
+    },
+    {
+      "selected_declaration": "PaperP1Registry.Final.Affine.uniform_event_calculus",
+      "conjunction_clause": 3,
+      "inherited_declaration": "PaperP1Registry.V2.AffineEvents.original_fourier",
+      "inherited_challenge": "RegistryV2/ChallengeP1V2AffineEvents.lean",
+      "inherited_challenge_sha256": "23c4c3760f8ba50e89f4e1779f77d43247189360ae692adacd63c468607a5051",
+      "literal_clause_type": "(∀ {ι : Type*} [Fintype ι] [DecidableEq ι] [Nonempty ι]\n    (M L : ℕ) (g : ι → ℕ) (_hL : 0 < L) (_hcut : ∀ i, g i+L ≤ M)\n    (_hp : ∀ i, 0 < marginal (g i) L),\n    ∃ a : ι → FiniteSample M, (∀ i, startSystem M (g i) L (a i)=startRhs L) ∧\n      familyCentered L g=(∏ i, marginal (g i) L)*\n        (∑ s : (i : ι) → space (g i) L, if FullRelation L g s then tupleSign M L g a s else 0) ∧\n      |familyCentered L g| ≤ (∏ i, marginal (g i) L)*((2 ^ familyNullity L g : ℝ)-1) ∧\n      |familyCentered L g| ≤ (∏ i, marginal (g i) L)*(2 ^ familyNullity L g : ℝ) ∧\n      (familyCentered L g≠0 → ∃ s : (i : ι) → space (g i) L, FullRelation L g s))"
+    },
+    {
+      "selected_declaration": "PaperP1Registry.Final.Affine.uniform_event_calculus",
+      "conjunction_clause": 4,
+      "inherited_declaration": "PaperP1Registry.V2.AffineEvents.finite_envelope",
+      "inherited_challenge": "RegistryV2/ChallengeP1V2AffineEvents.lean",
+      "inherited_challenge_sha256": "23c4c3760f8ba50e89f4e1779f77d43247189360ae692adacd63c468607a5051",
+      "literal_clause_type": "(∀ (L : ℕ) (_hL : 0 < L) (I : Finset ℕ) (_hne : I.Nonempty),\n    homogeneousMass L I=(∏ x ∈ I, (2 ^ Module.finrank F₂ (space x L) : ℝ)⁻¹)*\n      (2 ^ relativeNullity L I : ℝ) ∧\n    rankWeight L I ≤ homogeneousMass L I ∧ jointMoment L I ≤ homogeneousMass L I ∧\n      |centeredCoefficient L I| ≤ homogeneousMass L I)"
+    },
+    {
+      "selected_declaration": "PaperP1Registry.Final.Affine.uniform_event_calculus",
+      "conjunction_clause": 5,
+      "inherited_declaration": "PaperP1Registry.V2.AffineEvents.nominal_envelope",
+      "inherited_challenge": "RegistryV2/ChallengeP1V2AffineEvents.lean",
+      "inherited_challenge_sha256": "23c4c3760f8ba50e89f4e1779f77d43247189360ae692adacd63c468607a5051",
+      "literal_clause_type": "(∀ (C : ℝ),\n    ∃ N₀ : ℕ, 2 ≤ N₀ ∧ ∀ N ≥ N₀, ∀ L : ℕ,\n      |(L : ℝ)-Real.log N/Real.log 2| ≤ C → ∀ I : Finset ℕ, I ⊆ Ico N (2*N) →\n        homogeneousMass L I ≤ (2 : ℝ)^I.card*((2 ^ L : ℝ)⁻¹)^I.card*\n          (2 ^ relativeNullity L I : ℝ))"
+    },
+    {
+      "selected_declaration": "PaperP1Registry.Final.Affine.uniform_event_calculus",
+      "conjunction_clause": 6,
+      "inherited_declaration": "PaperP1Registry.V2.AffineEvents.compatible_nullity",
+      "inherited_challenge": "RegistryV2/ChallengeP1V2AffineEvents.lean",
+      "inherited_challenge_sha256": "23c4c3760f8ba50e89f4e1779f77d43247189360ae692adacd63c468607a5051",
+      "literal_clause_type": "(∀ (L : ℕ) (_hL : 0 < L) (I : Finset ℕ)\n    (_hp : ∀ x ∈ I, 0 < marginal x L),\n    |centeredCoefficient L I| ≤ (2 : ℝ)^I.card*(∏ x ∈ I, marginal x L)*\n      (2 ^ compatibleNullity L I : ℝ) ∧\n    compatibleNullity L I ≤ relativeNullity L I ∧\n    (0 < jointMoment L I → compatibleNullity L I=relativeNullity L I))"
+    },
+    {
+      "selected_declaration": "PaperP1Registry.Final.Affine.uniform_event_calculus",
+      "conjunction_clause": 7,
+      "inherited_declaration": "PaperP1Registry.V2.AffineEvents.unique_direct_partition",
+      "inherited_challenge": "RegistryV2/ChallengeP1V2AffineEvents.lean",
+      "inherited_challenge_sha256": "23c4c3760f8ba50e89f4e1779f77d43247189360ae692adacd63c468607a5051",
+      "literal_clause_type": "(∀ {U ι : Type*} [AddCommGroup U] [Module F₂ U]\n    [Fintype ι] [DecidableEq ι] (S : ι → Submodule F₂ U),\n    ∃! P : Finpartition (univ : Finset ι), RespectsRelations S P ∧\n      ∀ Q : Finpartition (univ : Finset ι), RespectsRelations S Q → P ≤ Q)"
+    },
+    {
+      "selected_declaration": "PaperP1Registry.Final.Affine.uniform_event_calculus",
+      "conjunction_clause": 8,
+      "inherited_declaration": "PaperP1Registry.V2.AffineEvents.canonical_factorization",
+      "inherited_challenge": "RegistryV2/ChallengeP1V2AffineEvents.lean",
+      "inherited_challenge_sha256": "23c4c3760f8ba50e89f4e1779f77d43247189360ae692adacd63c468607a5051",
+      "literal_clause_type": "(∀ (L : ℕ) (_hL : 0 < L) (I : Finset ℕ),\n    let P := canonicalPartition (fun i : I ↦ space i.val L)\n    RespectsRelations (fun i : I ↦ space i.val L) P ∧\n    (∀ Q : Finpartition (univ : Finset I), RespectsRelations (fun i : I ↦ space i.val L) Q → P ≤ Q) ∧\n    jointMoment L I=∏ C ∈ P.parts, jointMoment L (partImage C) ∧\n    centeredCoefficient L I=∏ C ∈ P.parts, centeredCoefficient L (partImage C) ∧\n    relativeNullity L I=∑ C ∈ P.parts, relativeNullity L (partImage C))"
+    },
+    {
+      "selected_declaration": "PaperP1Registry.Final.Reference.positive_hermite_approximation",
+      "conjunction_clause": 1,
+      "inherited_declaration": "PaperP1Registry.V2.ProbabilityReferences.quadratic_probability_criterion",
+      "inherited_challenge": "RegistryV2/ChallengeP1V2ProbabilityReferences.lean",
+      "inherited_challenge_sha256": "84c7991f12084312dc298b9cff31625928779947592e7c6adf8357eb59a70e89",
+      "literal_clause_type": "(∀ (μ α : ℝ) (_hμ : 0<μ),\n    ((∀ k : ℕ, 0≤quadraticMass μ α k) ∧ HasSum (quadraticMass μ α) 1) ↔\n      0≤α ∧ α≤2*μ^2/(μ+fractionalPart μ*(1-fractionalPart μ)))"
+    },
+    {
+      "selected_declaration": "PaperP1Registry.Final.Reference.positive_hermite_approximation",
+      "conjunction_clause": 2,
+      "inherited_declaration": "PaperP1Registry.V2.ProbabilityReferences.quadratic_mass_formula",
+      "inherited_challenge": "RegistryV2/ChallengeP1V2ProbabilityReferences.lean",
+      "inherited_challenge_sha256": "84c7991f12084312dc298b9cff31625928779947592e7c6adf8357eb59a70e89",
+      "literal_clause_type": "(∀ (μ α : ℝ) (_hμ : 0<μ) (k : ℕ),\n    signedReference μ α {k}=Real.exp (-μ)*μ^k/(k.factorial : ℝ)*\n      (1+α/(2*μ^2)*(((k : ℝ)-μ)^2-k)))"
+    },
+    {
+      "selected_declaration": "PaperP1Registry.Final.Reference.positive_hermite_approximation",
+      "conjunction_clause": 3,
+      "inherited_declaration": "PaperP1Registry.V2.ProbabilityReferences.hermite_exact",
+      "inherited_challenge": "RegistryV2/ChallengeP1V2ProbabilityReferences.lean",
+      "inherited_challenge_sha256": "84c7991f12084312dc298b9cff31625928779947592e7c6adf8357eb59a70e89",
+      "literal_clause_type": "(∀ (C ε : ℝ) (_hε : 0<ε),\n    ∃ N₀ : ℕ, 10≤N₀ ∧ ∀ N≥N₀, ∀ L : ℕ,\n      |(L : ℝ)-Real.log N/Real.log 2| ≤ C →\n      ∃ hα : 0≤secondCumulant N L, ∃ hαμ : secondCumulant N L≤actualMean N L,\n      distance (sourceSigned N L)\n        (hermiteLaw (actualMean N L) (secondCumulant N L) hα hαμ : Measure ℕ).toSignedMeasure ≤\n          (N : ℝ)^(-4/3+ε) ∧\n      totalVariation N L (hermiteLaw (actualMean N L) (secondCumulant N L) hα hαμ) ≤\n        (N : ℝ)^(-4/3+ε))"
+    },
+    {
+      "selected_declaration": "PaperP1Registry.Final.Reference.positive_hermite_approximation",
+      "conjunction_clause": 4,
+      "inherited_declaration": "PaperP1Registry.V2.ProbabilityReferences.hermite_fixed_height",
+      "inherited_challenge": "RegistryV2/ChallengeP1V2ProbabilityReferences.lean",
+      "inherited_challenge_sha256": "84c7991f12084312dc298b9cff31625928779947592e7c6adf8357eb59a70e89",
+      "literal_clause_type": "(∀ (h : ℕ) (_hh : 3≤h) (C ε : ℝ) (_hε : 0<ε),\n    ∃ N₀ : ℕ, 2≤N₀ ∧ ∀ N≥N₀, ∀ L : ℕ,\n      |(L : ℝ)-Real.log N/Real.log 2| ≤ C →\n      ∃ hα : 0≤coefficient N L h, ∃ hαμ : coefficient N L h≤nominalMean N L,\n      distance (sourceSigned N L)\n        (hermiteLaw (nominalMean N L) (coefficient N L h) hα hαμ : Measure ℕ).toSignedMeasure ≤\n          (N : ℝ)^(-1+1/((h+1 : ℕ) : ℝ)+ε))"
+    },
+    {
+      "selected_declaration": "PaperP1Registry.Final.Reference.positive_hermite_approximation",
+      "conjunction_clause": 5,
+      "inherited_declaration": "PaperP1Registry.V2.ProbabilityReferences.hermite_fixed_equivalent",
+      "inherited_challenge": "RegistryV2/ChallengeP1V2ProbabilityReferences.lean",
+      "inherited_challenge_sha256": "84c7991f12084312dc298b9cff31625928779947592e7c6adf8357eb59a70e89",
+      "literal_clause_type": "(∀ (h : ℕ) (_hh : 3≤h) (C : ℝ),\n    ∀ τ : ℝ, 0<τ → ∃ N₀ : ℕ, 2≤N₀ ∧ ∀ N≥N₀, ∀ L : ℕ,\n      |(L : ℝ)-Real.log N/Real.log 2| ≤ C →\n      ∃ hα : 0≤coefficient N L h, ∃ hαμ : coefficient N L h≤nominalMean N L,\n      0<leadingGap N L h ∧\n      |totalVariation N L (hermiteLaw (nominalMean N L) (coefficient N L h) hα hαμ)/\n        (phaseMass N L (h+1)*secondNorm (nominalMean N L)/4)-1| ≤ τ)"
+    }
+  ],
+  "companion_result": {
+    "number": "T15.1",
+    "label": "p1:obstruction:fixed",
+    "title": "A perturbation invisible at each fixed order",
+    "source": "manuscripts/paper-p1/publication-2026-11-12/sources/companion_sections/moment_obstruction.tex",
+    "statement_sha256": "c652d9e1cd007089e2c95a960fa33e1d963832a5f3da703257669a40da70cc64",
+    "source_file_sha256": "68d14a0fefd9caabc9960b5fe26088a3cbe139374f31a6fb5a1152ecac39f7ed",
+    "selected_declarations": [
+      "PaperP1Registry.Final.Obstruction.fixed_moment_barrier"
+    ],
+    "conjunction_clauses": [
+      1
+    ],
+    "parent_proof_endpoints": [
+      {
+        "name": "PaperP1.MomentObstruction.companion_T23_1_extended",
+        "source": "PaperP1/Probability/MomentObstruction.lean",
+        "line": 84,
+        "source_sha256": "479bd03ef64a732c418963f321fee5411cb953a5ec3c8888d04ad5f138bf9ff5",
+        "role": "primary_or_explicit_clause_endpoint",
+        "compiled_type_sha256": "081d5529f25639973a391b1dc5686b0c85bf62472fb3ab8ef2969a076d6a74ad"
+      }
+    ],
+    "additional_displayed_corollary": {
+      "numbered_result": false,
+      "same_source_file": true,
+      "selected_conjunction_clauses": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "description": "m_N=floor(sqrt(log N)), a_N=log(N) N^(-2/3); eventual fixed factorial moments, uniform exponential moments, logarithmic TV asymptotic and every inverse-power obstruction.",
+      "proof_module": "PaperP1/Asymptotics/MomentObstructionSequence.lean"
+    }
+  },
+  "additional_companion_result": {
+    "number": "T13.1",
+    "label": "p1:uniform:full-support",
+    "title": "A uniform weighted count of full supports",
+    "source": "manuscripts/paper-p1/publication-2026-11-12/sources/companion_sections/uniform_support.tex",
+    "source_file_sha256": "bc7801a4f3ef8d40f653c63081deef3b47d34a9bcdd5014d062bdaa3fda36f49",
+    "statement_sha256": "a6dda51d420e039da276b01ce5caa6ce7166561520f493db3c14512abcccfe31",
+    "selected_declarations": [
+      "PaperP1Registry.Final.Affine.uniform_event_calculus"
+    ],
+    "conjunction_clauses": [
+      9
+    ],
+    "parent_proof_endpoints": [
+      {
+        "name": "PaperP1.UniformFullSupportCount.companion_T13_1",
+        "source": "PaperP1/Asymptotics/UniformFullSupportCount.lean",
+        "line": 117,
+        "source_sha256": "9c0aba008d890c2de19e17bd24465f64c3606adbb017f4314a59e2f60cf1e918",
+        "role": "primary_or_explicit_clause_endpoint",
+        "compiled_type_sha256": "f543717cbc3a1b2937fd34a2ef7457a7b81eeb7fd63ef2c8359a4c427056a36e"
+      }
+    ],
+    "literal_clause_type": "(∀ (C u ε : ℝ) (_hu : 0<u) (_hε : 0<ε),\n    ∃ N₀ : ℕ, 10≤N₀ ∧ ∀ N≥N₀, ∀ L : ℕ,\n      |(L : ℝ)-Real.log N/Real.log 2|≤C → ∀ G : Finset ℕ, G⊆Ico N (2*N) →\n      ∀ s : ℕ, 2≤s →\n      (∑ r ∈ Icc s G.card, (u^r/(r.factorial : ℝ))*\n        ((fullSupportLists G L r).card*((2^L : ℝ)⁻¹)^r)) ≤\n          (N : ℝ)^(-min ((s : ℝ)/2) 2+ε))",
+    "scope": "One threshold before every subset G and cutoff s>=2; all cardinalities are summed. Strict separation >L, regular local rank, all effective projections nonzero. No compatibility, minimality or pure N^-2 endpoint is imposed."
+  },
+  "scope": "The first two selected targets retain all thirteen previously prepared remaining main-result endpoints; the first additionally directly states companion T13.1. The third directly states companion T15.1 and its displayed sequence corollary. No prior issued record is replaced."
+}
