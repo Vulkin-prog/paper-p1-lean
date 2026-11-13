@@ -28,6 +28,9 @@ jobs:
           receipts = [*Path('palomar/v1').glob('*/qualification.json'),
                       *Path('palomar/v2').glob('*/qualification.json')]
           sources = {json.loads(path.read_text())['source_commit'] for path in receipts}
+          cycles = json.loads(Path('palomar/publication/CYCLE_STATE.json').read_text())
+          sources.add(cycles['preparation_snapshot_commit'])
+          sources.update(item['source_commit'] for item in cycles['cycles'] if item.get('registration'))
           for source in sorted(sources):
               if not re.fullmatch('[0-9a-f]{40}', source):
                   raise SystemExit('Invalid evidence source commit')
@@ -50,6 +53,8 @@ jobs:
           python3 -m unittest discover -s tests -p test_sharp_palm_scope.py
           python3 scripts/check_publication.py
           python3 -m unittest discover -s tests -p test_publication.py
+          python3 scripts/check_registered_coverage.py
+          python3 -m unittest discover -s tests -p test_registered_coverage.py
           python3 scripts/check_editorial_previews.py
           python3 -m unittest discover -s tests -p test_editorial_previews.py
           python3 scripts/check_scientific_preview.py

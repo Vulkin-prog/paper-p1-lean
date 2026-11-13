@@ -12,9 +12,12 @@ See [publication alignment](PUBLICATION_ALIGNMENT.md),
 [actual replay](validation/publication-2026-11-12/lean-validation.json).
 The six Palomar project/configuration identities and52 compared statements
 still cover all26 main results. The current publication metadata and caller
-are under `palomar/publication` and `palomar-publication-preflight.yml`;
-the author keeps submissions on hold. Prior editions and qualification receipts
-remain preserved.
+are under `palomar/publication` and `palomar-publication-preflight.yml`.
+The author resumed the six strictly successive cycles and delegated publication
+of favorable actual reviews. See [live progress](../palomar/publication/CYCLE_STATE.json)
+and the [issued-record coverage audit](../palomar/publication/REGISTRATION_COVERAGE.json).
+Frozen on-hold preparation records, prior editions and qualification receipts
+remain preserved as historical snapshots.
 
 ## Preceding V2 alignment (historical snapshot)
 

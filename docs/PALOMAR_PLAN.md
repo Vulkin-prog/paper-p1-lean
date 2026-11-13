@@ -111,6 +111,26 @@ and follow-up metadata. Its caller head is
 `4f66b3582d32c6f0b34196afc11a0e2386bd35b7`. The report is not yet available;
 ordinary fifth intake has not started.
 
+## Reproducible public coverage audit
+
+The [coverage record](../palomar/publication/REGISTRATION_COVERAGE.json) is built
+only from issued archived public entries. It maps every numbered main result to
+its selected declarations, keeping the printed conditional premise of Theorem5.2
+explicit. Five of the52 selections are supplementary statements rather than
+additional numbered main results. Companion dependencies are not counted as92
+separately registered results.
+
+```sh
+python3 scripts/check_registered_coverage.py
+python3 -m unittest discover -s tests -p test_registered_coverage.py
+```
+
+This offline audit checks the frozen publication allocation/index, actual source
+bytes, official report and rendering hashes, all three name/ORCID records and git
+dependency preservation pins. It does not rerun Lean, replace editorial review
+or revalidate private consent bytes. Use `--require-all` to require six issued
+registrations covering all26 main results; preparation alone cannot satisfy it.
+
 ## Previous V2 preparation (preserved history)
 
 On12 November2026 the user resumed this work and requested at most six

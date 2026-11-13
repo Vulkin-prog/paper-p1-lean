@@ -1,0 +1,505 @@
+{
+  "schema_version": 1,
+  "status": "verified_archived_public_records",
+  "checked_at": "2026-11-13T09:39:30.314966+00:00",
+  "repository": "Vulkin-prog/paper-p1-lean",
+  "publication_plan": "palomar/REGISTRATION_PLAN_PUBLICATION.json",
+  "publication_index": "docs/manuscript-results-publication-2026-11-12.json",
+  "allocation_source_commit": "f9a2d213265a6833318745dd7f2d74c02090ab19",
+  "publication_plan_sha256": "c35ce1fe00723960b2a1e79403b80f2a650ed78fa8c56461b051e1c84f20fc47",
+  "publication_index_sha256": "7796235dfb26c0bd7f1f3f7c3e35bae2371b53430b9bcf98b4effdafe636daef",
+  "cycle_state_sha256": "595d31062a931c2d94660c88d9f99aa93804ca84d0bbb80128b28d42a4a469ed",
+  "registered_dossiers": 4,
+  "registered_main_results": 19,
+  "total_main_results": 26,
+  "registered_selected_declarations": 39,
+  "total_selected_declarations": 52,
+  "records": [
+    {
+      "slug": "quadratic_limits",
+      "id": "PALOMAR-2026-11-12-000013",
+      "version": 1,
+      "url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-12-000013&version=1",
+      "source_commit": "f9a2d213265a6833318745dd7f2d74c02090ab19",
+      "public_entry_sha256": "2d14285704a7e8059d670f8ccb3529417fa42ed2491ea7efd174b22659b3b161",
+      "selected_declarations": [
+        "PaperP1Registry.V2.QuadraticLimits.source_probability",
+        "PaperP1Registry.V2.QuadraticLimits.poisson_expansion",
+        "PaperP1Registry.V2.QuadraticLimits.moving_residue_equivalent",
+        "PaperP1Registry.V2.QuadraticLimits.mean_bias_quantized",
+        "PaperP1Registry.V2.QuadraticLimits.nominal_quadratic_comparison",
+        "PaperP1Registry.V2.QuadraticLimits.reference_series",
+        "PaperP1Registry.V2.QuadraticLimits.optimal_quadratic",
+        "PaperP1Registry.V2.QuadraticLimits.polynomial_weights",
+        "PaperP1Registry.V2.QuadraticLimits.no_retained_start",
+        "PaperP1Registry.V2.QuadraticLimits.literal_mean_bias"
+      ],
+      "supplementary_selected_declarations": [
+        "PaperP1Registry.V2.QuadraticLimits.source_probability"
+      ],
+      "published_warning_count": 1,
+      "source_and_git_dependency_pins_checked": 10
+    },
+    {
+      "slug": "cumulants_optimality",
+      "id": "PALOMAR-2026-11-13-000001",
+      "version": 1,
+      "url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000001&version=1",
+      "source_commit": "d6a0f6c5109886127526677603eb6b74e8c0cd82",
+      "public_entry_sha256": "cb0974d68844b77b7e5060af9209169fcf53f029fa13bfd2e2bb5b51375aefec",
+      "selected_declarations": [
+        "PaperP1Registry.V2.CumulantsOptimality.factorial_source",
+        "PaperP1Registry.V2.CumulantsOptimality.third_exact_identity",
+        "PaperP1Registry.V2.CumulantsOptimality.fourth_exact_identity",
+        "PaperP1Registry.V2.CumulantsOptimality.principal_second_equivalent",
+        "PaperP1Registry.V2.CumulantsOptimality.optimal_third_cumulant",
+        "PaperP1Registry.V2.CumulantsOptimality.absolute_triple_activity",
+        "PaperP1Registry.V2.CumulantsOptimality.quartic_non_cancellation",
+        "PaperP1Registry.V2.CumulantsOptimality.quadratic_optimality"
+      ],
+      "supplementary_selected_declarations": [
+        "PaperP1Registry.V2.CumulantsOptimality.factorial_source",
+        "PaperP1Registry.V2.CumulantsOptimality.third_exact_identity",
+        "PaperP1Registry.V2.CumulantsOptimality.fourth_exact_identity",
+        "PaperP1Registry.V2.CumulantsOptimality.principal_second_equivalent"
+      ],
+      "published_warning_count": 0,
+      "source_and_git_dependency_pins_checked": 10
+    },
+    {
+      "slug": "pairs_channels",
+      "id": "PALOMAR-2026-11-13-000002",
+      "version": 1,
+      "url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000002&version=1",
+      "source_commit": "d6a0f6c5109886127526677603eb6b74e8c0cd82",
+      "public_entry_sha256": "3fbe91f6e1151d109051d4d227038c0180adb4fd9adf404b1323bfad277ff00e",
+      "selected_declarations": [
+        "PaperP1Registry.V2.PairsChannels.complete_pair_profile",
+        "PaperP1Registry.V2.PairsChannels.explicit_two_channel",
+        "PaperP1Registry.V2.PairsChannels.fixed_height_hierarchy",
+        "PaperP1Registry.V2.PairsChannels.phase_positive",
+        "PaperP1Registry.V2.PairsChannels.weighted_nonaligned",
+        "PaperP1Registry.V2.PairsChannels.two_channel_equivalents",
+        "PaperP1Registry.V2.PairsChannels.two_channel_remainder",
+        "PaperP1Registry.V2.PairsChannels.height_five_closed",
+        "PaperP1Registry.V2.PairsChannels.height_five_coefficient",
+        "PaperP1Registry.V2.PairsChannels.height_six_phase",
+        "PaperP1Registry.V2.PairsChannels.phase_three_four",
+        "PaperP1Registry.V2.PairsChannels.height_five_channels",
+        "PaperP1Registry.V2.PairsChannels.fixed_height_lower_power"
+      ],
+      "supplementary_selected_declarations": [],
+      "published_warning_count": 0,
+      "source_and_git_dependency_pins_checked": 10
+    },
+    {
+      "slug": "stopping_reconstruction",
+      "id": "PALOMAR-2026-11-13-000008",
+      "version": 1,
+      "url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000008&version=1",
+      "source_commit": "d6a0f6c5109886127526677603eb6b74e8c0cd82",
+      "public_entry_sha256": "a63f67d6af40fccf65e904a2269da400d392fc3053a7b1a7a0747294a1b88cc4",
+      "selected_declarations": [
+        "PaperP1Registry.V2.StoppingReconstruction.expansion_polynomial_expansion",
+        "PaperP1Registry.V2.StoppingReconstruction.prefix_suffix",
+        "PaperP1Registry.V2.StoppingReconstruction.expansion_positive_stopped_kernel",
+        "PaperP1Registry.V2.StoppingReconstruction.expansion_stopped_l1_bound",
+        "PaperP1Registry.V2.StoppingReconstruction.finite_conversion",
+        "PaperP1Registry.V2.StoppingReconstruction.run_conversion",
+        "PaperP1Registry.V2.StoppingReconstruction.conditional_transfer",
+        "PaperP1Registry.V2.StoppingReconstruction.triple_reconstruction"
+      ],
+      "supplementary_selected_declarations": [],
+      "published_warning_count": 0,
+      "source_and_git_dependency_pins_checked": 10
+    }
+  ],
+  "main_results": [
+    {
+      "number": "1.1",
+      "label": "p1:thm:main",
+      "title": "Optimal quadratic approximation with exact parameters",
+      "statement_sha256": "87f7a74ae8fedb4cf13196ca6653fb917d136c8bc291225f1ae4e68f405c7a89",
+      "printed_conditional_clause": false,
+      "selected_declarations": [
+        "PaperP1Registry.V2.QuadraticLimits.optimal_quadratic",
+        "PaperP1Registry.V2.QuadraticLimits.reference_series"
+      ],
+      "dossier": "quadratic_limits",
+      "registered": true,
+      "registration_id": "PALOMAR-2026-11-12-000013",
+      "registry_url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-12-000013&version=1"
+    },
+    {
+      "number": "1.2",
+      "label": "p1:cor:tv",
+      "title": "Exact Poisson total variation scale",
+      "statement_sha256": "7461910f3aa5eaa8b98655b13c4e67b1222d208eeb048a8e2732035594eab7be",
+      "printed_conditional_clause": false,
+      "selected_declarations": [
+        "PaperP1Registry.V2.QuadraticLimits.poisson_expansion",
+        "PaperP1Registry.V2.QuadraticLimits.moving_residue_equivalent"
+      ],
+      "dossier": "quadratic_limits",
+      "registered": true,
+      "registration_id": "PALOMAR-2026-11-12-000013",
+      "registry_url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-12-000013&version=1"
+    },
+    {
+      "number": "7.2",
+      "label": "p13:optimal:weighted",
+      "title": "Every fixed polynomial weight",
+      "statement_sha256": "d682f7116bf95ea02bb1f655e4fa453fee0fc14f16ed1b905e9399d02cc13825",
+      "printed_conditional_clause": false,
+      "selected_declarations": [
+        "PaperP1Registry.V2.QuadraticLimits.polynomial_weights"
+      ],
+      "dossier": "quadratic_limits",
+      "registered": true,
+      "registration_id": "PALOMAR-2026-11-12-000013",
+      "registry_url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-12-000013&version=1"
+    },
+    {
+      "number": "7.3",
+      "label": "p13:optimal:zero",
+      "title": "No retained start",
+      "statement_sha256": "34ffabbac99c443938607caff8e82231d0739ebc5bffe8bdf06b25464da46d45",
+      "printed_conditional_clause": false,
+      "selected_declarations": [
+        "PaperP1Registry.V2.QuadraticLimits.no_retained_start"
+      ],
+      "dossier": "quadratic_limits",
+      "registered": true,
+      "registration_id": "PALOMAR-2026-11-12-000013",
+      "registry_url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-12-000013&version=1"
+    },
+    {
+      "number": "7.4",
+      "label": "p13:optimal:nominal",
+      "title": "The quantized mean bias",
+      "statement_sha256": "9930a66023f6178a86ad23dead68d2e585acd6ce00afe5911a2c5d3d9b0013e7",
+      "printed_conditional_clause": false,
+      "selected_declarations": [
+        "PaperP1Registry.V2.QuadraticLimits.mean_bias_quantized",
+        "PaperP1Registry.V2.QuadraticLimits.literal_mean_bias",
+        "PaperP1Registry.V2.QuadraticLimits.nominal_quadratic_comparison"
+      ],
+      "dossier": "quadratic_limits",
+      "registered": true,
+      "registration_id": "PALOMAR-2026-11-12-000013",
+      "registry_url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-12-000013&version=1"
+    },
+    {
+      "number": "3.3",
+      "label": "p13:third:main",
+      "title": "Optimal power of the third factorial cumulant",
+      "statement_sha256": "b3c908053821806fbdaaae7e9cc2d22a4c3fd53a144da0b135f5997df780d34c",
+      "printed_conditional_clause": false,
+      "selected_declarations": [
+        "PaperP1Registry.V2.CumulantsOptimality.optimal_third_cumulant"
+      ],
+      "dossier": "cumulants_optimality",
+      "registered": true,
+      "registration_id": "PALOMAR-2026-11-13-000001",
+      "registry_url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000001&version=1"
+    },
+    {
+      "number": "3.4",
+      "label": "p13:third:activity",
+      "title": "Absolute third-order activity",
+      "statement_sha256": "273ee279f7583dfcb727646ea40244633b0507cc89b09bbf2e181858f459c59d",
+      "printed_conditional_clause": false,
+      "selected_declarations": [
+        "PaperP1Registry.V2.CumulantsOptimality.absolute_triple_activity"
+      ],
+      "dossier": "cumulants_optimality",
+      "registered": true,
+      "registration_id": "PALOMAR-2026-11-13-000001",
+      "registry_url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000001&version=1"
+    },
+    {
+      "number": "6.1",
+      "label": "p13:lower:quartic",
+      "title": "The fourth factorial cumulant",
+      "statement_sha256": "345a16ff574b370197f3327bbebd0fcb7740c01fb2af27ef6849b214e25389f1",
+      "printed_conditional_clause": false,
+      "selected_declarations": [
+        "PaperP1Registry.V2.CumulantsOptimality.quartic_non_cancellation"
+      ],
+      "dossier": "cumulants_optimality",
+      "registered": true,
+      "registration_id": "PALOMAR-2026-11-13-000001",
+      "registry_url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000001&version=1"
+    },
+    {
+      "number": "6.2",
+      "label": "p13:lower:optimal",
+      "title": "Optimal power for the exact quadratic reference",
+      "statement_sha256": "08e26085b89cd9dc4feb096aef0f0e046a9968f3ba3335f3e558f5e9d1fa432d",
+      "printed_conditional_clause": false,
+      "selected_declarations": [
+        "PaperP1Registry.V2.CumulantsOptimality.quadratic_optimality"
+      ],
+      "dossier": "cumulants_optimality",
+      "registered": true,
+      "registration_id": "PALOMAR-2026-11-13-000001",
+      "registry_url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000001&version=1"
+    },
+    {
+      "number": "3.1",
+      "label": "p1:arith:pairs",
+      "title": "Complete pair profile",
+      "statement_sha256": "f62d56ff089950d2a24bde6be0a9701a3f67aaa4b0214bed9ac7568d91d07485",
+      "printed_conditional_clause": false,
+      "selected_declarations": [
+        "PaperP1Registry.V2.PairsChannels.complete_pair_profile",
+        "PaperP1Registry.V2.PairsChannels.phase_three_four"
+      ],
+      "dossier": "pairs_channels",
+      "registered": true,
+      "registration_id": "PALOMAR-2026-11-13-000002",
+      "registry_url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000002&version=1"
+    },
+    {
+      "number": "3.2",
+      "label": "p1:cor:explicit",
+      "title": "An explicit probability reference",
+      "statement_sha256": "5d3e571464dff97890f4f04e4f1bce1cb7c0ab9450f1bdf8ee282137769d6ea7",
+      "printed_conditional_clause": false,
+      "selected_declarations": [
+        "PaperP1Registry.V2.PairsChannels.explicit_two_channel"
+      ],
+      "dossier": "pairs_channels",
+      "registered": true,
+      "registration_id": "PALOMAR-2026-11-13-000002",
+      "registry_url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000002&version=1"
+    },
+    {
+      "number": "8.1",
+      "label": "p13:channels:hierarchy",
+      "title": "The optimal error of every fixed height truncation",
+      "statement_sha256": "26e02ddbfa3972d68cba362c8fb4c97b5f4bc6d5518cab955d5a30333971fa7a",
+      "printed_conditional_clause": false,
+      "selected_declarations": [
+        "PaperP1Registry.V2.PairsChannels.fixed_height_hierarchy",
+        "PaperP1Registry.V2.PairsChannels.phase_positive",
+        "PaperP1Registry.V2.PairsChannels.fixed_height_lower_power"
+      ],
+      "dossier": "pairs_channels",
+      "registered": true,
+      "registration_id": "PALOMAR-2026-11-13-000002",
+      "registry_url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000002&version=1"
+    },
+    {
+      "number": "8.2",
+      "label": "p13:channels:weighted-nonaligned",
+      "title": "Weighted nonaligned pairs",
+      "statement_sha256": "89fcd3dd7290f5d2e9c88246584d46c192af2ee1acc31acd98ba0b867a0901be",
+      "printed_conditional_clause": false,
+      "selected_declarations": [
+        "PaperP1Registry.V2.PairsChannels.weighted_nonaligned"
+      ],
+      "dossier": "pairs_channels",
+      "registered": true,
+      "registration_id": "PALOMAR-2026-11-13-000002",
+      "registry_url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000002&version=1"
+    },
+    {
+      "number": "8.3",
+      "label": "p13:channels:height-five",
+      "title": "The error of the two-channel reference",
+      "statement_sha256": "bbba7bc983a8da39894a364dea9b15993d5db9f0863cbf2f81add309dbad5d1a",
+      "printed_conditional_clause": false,
+      "selected_declarations": [
+        "PaperP1Registry.V2.PairsChannels.two_channel_equivalents",
+        "PaperP1Registry.V2.PairsChannels.two_channel_remainder",
+        "PaperP1Registry.V2.PairsChannels.height_five_closed",
+        "PaperP1Registry.V2.PairsChannels.height_five_coefficient",
+        "PaperP1Registry.V2.PairsChannels.height_six_phase",
+        "PaperP1Registry.V2.PairsChannels.height_five_channels"
+      ],
+      "dossier": "pairs_channels",
+      "registered": true,
+      "registration_id": "PALOMAR-2026-11-13-000002",
+      "registry_url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000002&version=1"
+    },
+    {
+      "number": "4.1",
+      "label": "p1:stop:polynomial",
+      "title": "Expansion at the first excluded prefix",
+      "statement_sha256": "4621b52018c16024632ffb2017abdf5e3c5e3c54b99649ff94956dc7f56846cd",
+      "printed_conditional_clause": false,
+      "selected_declarations": [
+        "PaperP1Registry.V2.StoppingReconstruction.expansion_polynomial_expansion",
+        "PaperP1Registry.V2.StoppingReconstruction.prefix_suffix"
+      ],
+      "dossier": "stopping_reconstruction",
+      "registered": true,
+      "registration_id": "PALOMAR-2026-11-13-000008",
+      "registry_url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000008&version=1"
+    },
+    {
+      "number": "4.2",
+      "label": "p1:stop:measure",
+      "title": "A positive remainder kernel",
+      "statement_sha256": "e50b8b2c7ba9a9e50147f2f9f43e0e6cf92d3bf3e53a4107bb85e07ac865e06f",
+      "printed_conditional_clause": false,
+      "selected_declarations": [
+        "PaperP1Registry.V2.StoppingReconstruction.expansion_positive_stopped_kernel",
+        "PaperP1Registry.V2.StoppingReconstruction.expansion_stopped_l1_bound"
+      ],
+      "dossier": "stopping_reconstruction",
+      "registered": true,
+      "registration_id": "PALOMAR-2026-11-13-000008",
+      "registry_url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000008&version=1"
+    },
+    {
+      "number": "5.1",
+      "label": "p13:transfer:conversion",
+      "title": "Conversion with heterogeneous marginals",
+      "statement_sha256": "ecaa37b976094a2d309768a81a671f3d7517916194a54dd66f5d48df215e523b",
+      "printed_conditional_clause": false,
+      "selected_declarations": [
+        "PaperP1Registry.V2.StoppingReconstruction.finite_conversion",
+        "PaperP1Registry.V2.StoppingReconstruction.run_conversion"
+      ],
+      "dossier": "stopping_reconstruction",
+      "registered": true,
+      "registration_id": "PALOMAR-2026-11-13-000008",
+      "registry_url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000008&version=1"
+    },
+    {
+      "number": "5.2",
+      "label": "p13:transfer:finite",
+      "title": "Finite transfer to the complete law",
+      "statement_sha256": "9f5f47830a40a5631468baa87529caef80b4a519cf1a4491b93d6ee9efcfb415",
+      "printed_conditional_clause": true,
+      "selected_declarations": [
+        "PaperP1Registry.V2.StoppingReconstruction.conditional_transfer"
+      ],
+      "dossier": "stopping_reconstruction",
+      "registered": true,
+      "registration_id": "PALOMAR-2026-11-13-000008",
+      "registry_url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000008&version=1"
+    },
+    {
+      "number": "5.3",
+      "label": "p13:transfer:reconstruction",
+      "title": "Reconstruction from triple activity",
+      "statement_sha256": "0fc03cc57bf67aa74163153f1400bbd8525da696dc7c232068f949ad76f086fd",
+      "printed_conditional_clause": false,
+      "selected_declarations": [
+        "PaperP1Registry.V2.StoppingReconstruction.triple_reconstruction"
+      ],
+      "dossier": "stopping_reconstruction",
+      "registered": true,
+      "registration_id": "PALOMAR-2026-11-13-000008",
+      "registry_url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000008&version=1"
+    },
+    {
+      "number": "7.1",
+      "label": "p1:close:positivity",
+      "title": "Positivity of the quadratic Poisson correction",
+      "statement_sha256": "1bda3d739142898ef6191306fe15dfe040c58696c9aeab658210a3674d15e5a0",
+      "printed_conditional_clause": false,
+      "selected_declarations": [
+        "PaperP1Registry.V2.ProbabilityReferences.quadratic_probability_criterion",
+        "PaperP1Registry.V2.ProbabilityReferences.quadratic_mass_formula"
+      ],
+      "dossier": "probability_references",
+      "registered": false,
+      "registration_id": null,
+      "registry_url": null
+    },
+    {
+      "number": "8.4",
+      "label": "p1:cor:compound",
+      "title": "Hermite approximation with single and double jumps",
+      "statement_sha256": "a9ffdb62e06b1e04f3aa844d6d8be7662542059790ac01f64f52f4ad8401f732",
+      "printed_conditional_clause": false,
+      "selected_declarations": [
+        "PaperP1Registry.V2.ProbabilityReferences.hermite_exact",
+        "PaperP1Registry.V2.ProbabilityReferences.hermite_fixed_height",
+        "PaperP1Registry.V2.ProbabilityReferences.hermite_fixed_equivalent"
+      ],
+      "dossier": "probability_references",
+      "registered": false,
+      "registration_id": null,
+      "registry_url": null
+    },
+    {
+      "number": "2.1",
+      "label": "p1:alg:centred",
+      "title": "Centered Bernoulli expansion",
+      "statement_sha256": "83cae9b79ede35a5fd2cf646a141266c4e697ab953c370cce0922d954f58e2a9",
+      "printed_conditional_clause": false,
+      "selected_declarations": [
+        "PaperP1Registry.V2.AffineEvents.expansion_centered_identity",
+        "PaperP1Registry.V2.AffineEvents.expansion_probability_clauses"
+      ],
+      "dossier": "affine_events",
+      "registered": false,
+      "registration_id": null,
+      "registry_url": null
+    },
+    {
+      "number": "2.2",
+      "label": "p1:alg:fourier",
+      "title": "Full-support Fourier formula",
+      "statement_sha256": "1357e7556eb0994ea9a2b3a23a308dc627fac610d0f5718317f46bf85cebfde1",
+      "printed_conditional_clause": false,
+      "selected_declarations": [
+        "PaperP1Registry.V2.AffineEvents.original_fourier"
+      ],
+      "dossier": "affine_events",
+      "registered": false,
+      "registration_id": null,
+      "registry_url": null
+    },
+    {
+      "number": "2.3",
+      "label": "p2:homogeneous:envelope",
+      "title": "A common homogeneous envelope",
+      "statement_sha256": "9ae844e0439441c44b2533c9d1a31df097cac4f794b0e71bbe4ad2610dc2b424",
+      "printed_conditional_clause": false,
+      "selected_declarations": [
+        "PaperP1Registry.V2.AffineEvents.finite_envelope",
+        "PaperP1Registry.V2.AffineEvents.nominal_envelope"
+      ],
+      "dossier": "affine_events",
+      "registered": false,
+      "registration_id": null,
+      "registry_url": null
+    },
+    {
+      "number": "2.4",
+      "label": "p1:alg:compatible",
+      "title": "Compatible-nullity majorant",
+      "statement_sha256": "26e1395319bc7ffeeecd57be800274c6d52dc8ae94fabdbdadbdc172d9dab61f",
+      "printed_conditional_clause": false,
+      "selected_declarations": [
+        "PaperP1Registry.V2.AffineEvents.compatible_nullity"
+      ],
+      "dossier": "affine_events",
+      "registered": false,
+      "registration_id": null,
+      "registry_url": null
+    },
+    {
+      "number": "2.5",
+      "label": "p1:alg:components",
+      "title": "Existence, uniqueness, and factorization",
+      "statement_sha256": "6eaa05eaffd59b96e763bff396ec1b1b18f1f4a6b5004c5a15093d11d49dba84",
+      "printed_conditional_clause": false,
+      "selected_declarations": [
+        "PaperP1Registry.V2.AffineEvents.unique_direct_partition",
+        "PaperP1Registry.V2.AffineEvents.canonical_factorization"
+      ],
+      "dossier": "affine_events",
+      "registered": false,
+      "registration_id": null,
+      "registry_url": null
+    }
+  ],
+  "scope": "Offline integrity and correspondence audit of archived public entries, official reports, rendering receipts and preservation pins. It does not rerun Lean or revalidate private review-consent bytes. Printed conditional premises remain explicit; the 92 companion results are not all selected separately."
+}

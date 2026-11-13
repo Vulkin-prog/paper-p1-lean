@@ -251,3 +251,15 @@ future manuscript version and preparing Palomar registrations after completion.
   and official producer pin. Follow this existing workflow; do not redispatch.
   Obtain and validate its actual passing full report before one ordinary intake.
   The fourth cycle is publicly closed; the sixth remains prepared only.
+
+- `scripts/check_registered_coverage.py` audits the archived public records and
+  complete26-result allocation without credentials or network calls. Its
+  `--require-all` option requires six actual issued entries, not preparation.
+  Preserve the frozen publication plan/index and conditional Theorem5.2 scope.
+  Five of52 selections are supplementary; the companion's92 results are not
+  separately counted as registered. Regenerate
+  `palomar/publication/REGISTRATION_COVERAGE.json` after a public cycle closes.
+  Its controls include missing main coverage, erased conditional premises,
+  changed report bytes, wrong source/selection/person and false completeness.
+  This is an integrity/correspondence check, not a fresh Lean replay or a
+  revalidation of private consent. CI fetches only its immutable source pins.

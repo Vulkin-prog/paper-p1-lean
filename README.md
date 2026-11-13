@@ -16,6 +16,8 @@ cover all 26 main results through 52 selections; their
 The [live cycle record](palomar/publication/CYCLE_STATE.json) follows six strictly
 successive dossiers. **Four registrations are public and independently checked**,
 covering 19 of the 26 main results through 39 selected statements.
+The [archived coverage audit](palomar/publication/REGISTRATION_COVERAGE.json)
+links each numbered main result to its actual selection and public record.
 
 | Dossier | Main results | Statements | Public status |
 | --- | --- | ---: | --- |
