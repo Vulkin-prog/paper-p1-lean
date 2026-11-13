@@ -1,0 +1,21 @@
+{
+  "repository": "Vulkin-prog/paper-p1-lean",
+  "source_commit": "eeda0e055bc16afa6bb6402727afe733ace9961e",
+  "project_path": "RegistryFinal",
+  "configuration": "RegistryFinal/comparator/p1_foundations.json",
+  "metadata": "palomar/final/foundations/formalization.yaml",
+  "selected_theorem_count": 3,
+  "caller_workflow_id": 417310000,
+  "caller_workflow_path": ".github/workflows/palomar-final-preflight.yml",
+  "caller_head": "daeb5544e48a13dbeedf54179ecee10abfc56239",
+  "pipeline_commit": "14aa8d6b3c2f14a8540605e37144560b9a00e7e7",
+  "request_id": "pmd736f932ba",
+  "run_id": 43439453730,
+  "workflow_url": "https://github.com/Vulkin-prog/paper-p1-lean/actions/runs/43439453730",
+  "mode": "full",
+  "execution_profile": "palomar-standard-v1",
+  "observed_status": "in_progress",
+  "report_status": "pending",
+  "intake_started": false,
+  "registration": null
+}

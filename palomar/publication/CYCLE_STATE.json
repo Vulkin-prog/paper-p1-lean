@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-13T14:04:47.623441+00:00",
+  "updated_at": "2026-11-13T14:06:48.575757+00:00",
   "repository": "Vulkin-prog/paper-p1-lean",
   "maximum_registrations": 6,
   "selected_theorem_count": 42,
@@ -251,7 +251,7 @@
       "comparator_config_path": "RegistryFinal/comparator/p1_foundations.json",
       "formalization_metadata_path": "palomar/final/foundations/formalization.yaml",
       "selected_theorem_count": 3,
-      "public_mechanical_stage": "prepared_merged_final_candidate",
+      "public_mechanical_stage": "full_preflight_running",
       "registration": null,
       "main_result_count": 7,
       "direct_companion_results": [
@@ -259,7 +259,17 @@
         "T15.1"
       ],
       "includes_displayed_sequence_corollary": true,
-      "ordinary_intake_started": false
+      "ordinary_intake_started": false,
+      "preflight": {
+        "workflow_run_id": 43439453730,
+        "workflow_url": "https://github.com/Vulkin-prog/paper-p1-lean/actions/runs/43439453730",
+        "request_id": "pmd736f932ba",
+        "pipeline_commit": "14aa8d6b3c2f14a8540605e37144560b9a00e7e7",
+        "caller_head": "daeb5544e48a13dbeedf54179ecee10abfc56239",
+        "mode": "full",
+        "execution_profile": "palomar-standard-v1",
+        "report_status": "pending"
+      }
     }
   ],
   "scope": "Public mechanical progress and the author's operational instructions only. Frozen preparation receipts retain their original on-hold status. No private review, private review outcome, access credential, temporary authentication proof or unissued registry identifier is recorded here. Conditional publication authority does not mean a positive review has been received or a registration has been issued.",
