@@ -78,10 +78,12 @@ Three completed dossiers cover 14 of the 26 numbered main results through 31
 selected declarations. The next full cycle is `stopping_reconstruction`;
 three dossiers remain at the same follow-up source.
 
-The fourth cycle, `stopping_reconstruction`, now has its single
-[full preflight running](https://github.com/Vulkin-prog/paper-p1-lean/actions/runs/43366226586)
-for eight selected declarations. No fourth ordinary intake is open; its exact
-full report must pass before that step.
+The fourth cycle, `stopping_reconstruction`, has now
+[passed its full preflight](https://github.com/Vulkin-prog/paper-p1-lean/actions/runs/43366226586)
+for eight selected declarations. Its [actual full report](../palomar/publication-followup/stopping_reconstruction/preflight/VALIDATION.json)
+has no errors or warnings. No fourth ordinary intake is open: an unavailable
+portal deferred that step before any intake POST. Bounded GET-only readiness
+checks remain spaced five minutes apart before one distinct guarded intake.
 
 ## Previous V2 preparation (preserved history)
 

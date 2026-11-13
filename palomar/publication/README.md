@@ -72,6 +72,8 @@ delivered review consent, all three name/ORCID associations and dependency
 preservation pins match. Three dossiers remain; the next permitted full cycle
 is `stopping_reconstruction` at the same follow-up source.
 
-That fourth cycle now has one [full preflight running](https://github.com/Vulkin-prog/paper-p1-lean/actions/runs/43366226586)
-for eight selections. Ordinary fourth intake has not started; an actual passing
-full report is required before opening it.
+That fourth cycle has now [passed its full preflight](https://github.com/Vulkin-prog/paper-p1-lean/actions/runs/43366226586)
+for eight selections. The [actual full report](../publication-followup/stopping_reconstruction/preflight/VALIDATION.json)
+has no errors or warnings. Ordinary fourth intake has not started because the
+portal was unavailable at its initial GET probe. Bounded GET-only readiness
+checks precede one separate guarded intake; no intake POST has occurred.

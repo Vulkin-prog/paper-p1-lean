@@ -200,5 +200,11 @@ future manuscript version and preparing Palomar registrations after completion.
   follow-up metadata `palomar/publication-followup/stopping_reconstruction/formalization.yaml`, eight selections.
   Caller head `380a0601ea58a00a60ebac6c42f95e7085400c42` differs from the submitted
   source and official producer pin. Obtain its actual passing full report before
-  ordinary intake. No fourth intake is open yet; do not repeat this dispatch or
-  begin the fifth cycle. The three prior cycles are publicly closed.
+  ordinary intake. Its actual full standard-profile report has now passed for all
+  eight selections, with no errors or warnings; the follow-up
+  `stopping_reconstruction/preflight/` receipt is archived. Its first guarded
+  intake attempt stopped at an unavailable GET probe, before creating any intake
+  POST, intent or credential. Wait with bounded GET-only probes five minutes
+  apart, then perform one separate guarded intake. No fourth intake is open yet;
+  do not repeat this dispatch or begin the fifth cycle. The three prior cycles
+  are publicly closed.
