@@ -83,7 +83,10 @@ The fourth cycle, `stopping_reconstruction`, has now
 for eight selected declarations. Its [actual full report](../palomar/publication-followup/stopping_reconstruction/preflight/VALIDATION.json)
 has no errors or warnings. After bounded GET-only readiness checks five minutes
 apart, ordinary fourth intake was authenticated and both temporary proof
-artifacts deleted. Its separate [Palomar verification is in progress](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/43375902252).
+artifacts deleted. Its separate [Palomar verification passed](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/43375902252),
+with an [actual namespace-profile receipt](../palomar/publication-followup/stopping_reconstruction/verification/VALIDATION.json)
+for the same eight selections and no mechanical warnings. Rendering and
+editorial review remain pending.
 No fourth registration is asserted yet; later cycles remain queued.
 
 ## Previous V2 preparation (preserved history)

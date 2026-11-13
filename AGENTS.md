@@ -207,7 +207,9 @@ future manuscript version and preparing Palomar registrations after completion.
   POST, intent or credential. Wait with bounded GET-only probes five minutes
   apart, then perform one separate guarded intake. That single ordinary fourth
   intake is now authenticated, with both temporary proofs deleted. Palomar's
-  separate verification is run `43375902252`. Follow that existing cycle; do
+  separate verification, run `43375902252`, has now passed under the namespace
+  profile for all eight selections without mechanical warnings. Its follow-up
+  `stopping_reconstruction/verification/` receipt is archived. Follow that existing cycle; do
   not repeat its dispatch or intake, or begin the fifth cycle. The three prior
   cycles are publicly closed. Its renderer must be created after this intake's
   actual creation time `2026-11-13T06:02:06Z`, then checked on its actual

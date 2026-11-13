@@ -76,5 +76,8 @@ That fourth cycle has now [passed its full preflight](https://github.com/Vulkin-
 for eight selections. The [actual full report](../publication-followup/stopping_reconstruction/preflight/VALIDATION.json)
 has no errors or warnings. Ordinary fourth intake was authenticated after the
 portal recovered, and both temporary proofs were deleted. Its separate
-[Palomar verification is in progress](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/43375902252).
+[Palomar verification passed](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/43375902252).
+The [actual namespace-profile receipt](../publication-followup/stopping_reconstruction/verification/VALIDATION.json)
+binds all eight selections without mechanical warnings. Rendering and editorial
+review remain pending.
 No fourth registration has been issued; follow this existing cycle.
