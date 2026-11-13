@@ -194,3 +194,11 @@ future manuscript version and preparing Palomar registrations after completion.
   publication authority persist. Follow-up render jobs share the source commit:
   select each using the current intake creation time and then its actual
   configuration/source artifact, never by source commit alone.
+
+- The fourth cycle, `stopping_reconstruction`, now has one full preflight
+  dispatched, `43366226586`, at source `d6a0f6c5109886127526677603eb6b74e8c0cd82`,
+  follow-up metadata `palomar/publication-followup/stopping_reconstruction/formalization.yaml`, eight selections.
+  Caller head `380a0601ea58a00a60ebac6c42f95e7085400c42` differs from the submitted
+  source and official producer pin. Obtain its actual passing full report before
+  ordinary intake. No fourth intake is open yet; do not repeat this dispatch or
+  begin the fifth cycle. The three prior cycles are publicly closed.

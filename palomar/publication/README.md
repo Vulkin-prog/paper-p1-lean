@@ -71,3 +71,7 @@ with no published warnings. Its actual source, thirteen statements, exact
 delivered review consent, all three name/ORCID associations and dependency
 preservation pins match. Three dossiers remain; the next permitted full cycle
 is `stopping_reconstruction` at the same follow-up source.
+
+That fourth cycle now has one [full preflight running](https://github.com/Vulkin-prog/paper-p1-lean/actions/runs/43366226586)
+for eight selections. Ordinary fourth intake has not started; an actual passing
+full report is required before opening it.

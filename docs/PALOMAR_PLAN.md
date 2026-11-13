@@ -78,6 +78,11 @@ Three completed dossiers cover 14 of the 26 numbered main results through 31
 selected declarations. The next full cycle is `stopping_reconstruction`;
 three dossiers remain at the same follow-up source.
 
+The fourth cycle, `stopping_reconstruction`, now has its single
+[full preflight running](https://github.com/Vulkin-prog/paper-p1-lean/actions/runs/43366226586)
+for eight selected declarations. No fourth ordinary intake is open; its exact
+full report must pass before that step.
+
 ## Previous V2 preparation (preserved history)
 
 On12 November2026 the user resumed this work and requested at most six
