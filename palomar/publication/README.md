@@ -53,7 +53,7 @@ verified. The second full cycle is now also
 as [PALOMAR-2026-11-13-000001 v1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000001&version=1),
 with no published warnings. Name/ORCID in all three roles, the exact accepted
 review binding, mechanical and rendering evidence, and all git dependency
-preservation pins were checked. Four dossiers remain. The third,
+preservation pins were checked. The third,
 `pairs_channels`, has [passed its full preflight](https://github.com/Vulkin-prog/paper-p1-lean/actions/runs/43343229988)
 for thirteen selections at the same follow-up source. The
 [actual full report](../publication-followup/pairs_channels/preflight/VALIDATION.json)
@@ -64,6 +64,10 @@ with an [actual namespace-profile receipt](../publication-followup/pairs_channel
 for all thirteen selections and no mechanical warnings. Its
 [separate rendering](../publication-followup/pairs_channels/rendering/VALIDATION.json)
 also passed with all thirteen compiler-backed declaration anchors and thirteen
-manifest file hashes checked. Editorial review remains pending.
-No third registration has been issued yet; follow this existing cycle before
-starting another.
+manifest file hashes checked. That full cycle is now
+[registered and publicly verified](../publication-followup/pairs_channels/registration/VALIDATION.json)
+as [PALOMAR-2026-11-13-000002 v1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000002&version=1),
+with no published warnings. Its actual source, thirteen statements, exact
+delivered review consent, all three name/ORCID associations and dependency
+preservation pins match. Three dossiers remain; the next permitted full cycle
+is `stopping_reconstruction` at the same follow-up source.

@@ -69,8 +69,14 @@ has also passed. The [actual namespace-profile receipt](../palomar/publication-f
 binds the same thirteen selections and has no mechanical warnings. Its separate
 [rendering has also passed](../palomar/publication-followup/pairs_channels/rendering/VALIDATION.json),
 with all thirteen compiler-backed declaration anchors and thirteen manifest file
-hashes checked. Editorial review remains pending. No third registration has been issued;
-the four dossiers following the second retain that follow-up source.
+hashes checked. The third cycle is now
+[PALOMAR-2026-11-13-000002 v1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000002&version=1),
+with no published warnings. Its [public readback](../palomar/publication-followup/pairs_channels/registration/VALIDATION.json)
+verifies the source, thirteen statements, delivered consent digest, all three
+name/ORCID records, accepted evidence and dependency preservation pins.
+Three completed dossiers cover 14 of the 26 numbered main results through 31
+selected declarations. The next full cycle is `stopping_reconstruction`;
+three dossiers remain at the same follow-up source.
 
 ## Previous V2 preparation (preserved history)
 

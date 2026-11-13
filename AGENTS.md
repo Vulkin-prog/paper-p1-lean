@@ -168,36 +168,29 @@ future manuscript version and preparing Palomar registrations after completion.
   readback receipt are under its follow-up `registration/` directory. Its
   accepted private consent digest, source, eight selections, all three person
   records and all git dependency preservation pins match. Do not repeat this
-  intake or publication request. Two complete cycles are closed. The next
-  permitted full cycle is `pairs_channels` at the same follow-up source and
+  intake or publication request. After those two cycles closed, the next
+  full cycle was `pairs_channels` at the same follow-up source and
   metadata edition; the other three follow in the recorded order. Keep all
   future unregistered outcomes and credentials out of this repository.
 
-- The third cycle, `pairs_channels`, now has one full preflight dispatched:
-  `43343229988`, source `d6a0f6c5109886127526677603eb6b74e8c0cd82`, metadata
-  `palomar/publication-followup/pairs_channels/formalization.yaml`, thirteen
-  selections. The caller head is `3c37c349a1f9f4b2285d1eac927804e2668b9491`;
-  it is distinct from the submitted source and official producer pin. Read the
-  actual run metadata and complete passing report before intake. That exact full
-  standard-profile report has now passed for all thirteen selections, with no
-  errors or warnings; its receipt is under the follow-up `pairs_channels/preflight/`
-  directory. The first guarded intake attempt stopped at an unavailable GET probe:
-  no intake POST, intent or credential was created. Wait for readiness using only
-  bounded GET probes five minutes apart, then perform one separate guarded intake.
-  The portal recovered and one ordinary third intake is now authenticated, with
-  both temporary proofs deleted. Palomar's separate verification is run
-  `43349041625`, now passed under the namespace profile for all thirteen selections
-  with no mechanical warnings; its follow-up `verification/` receipt is archived.
-  Follow that existing third cycle; do not
-  repeat its intake, dispatch a duplicate or begin the fourth cycle. Its actual
-  renderer, review and public registration still require their own real evidence.
-  Follow-up renders share source `d6a0f6c5109886127526677603eb6b74e8c0cd82`:
-  select the current renderer only after the third intake's actual creation time,
-  `2026-11-13T02:00:37Z`, then check its actual configuration and source bytes.
-  The completed second-cycle rendering is not third-cycle evidence.
-  The actual third rendering `43352345446` has now passed. Its downloaded artifact
-  and follow-up `pairs_channels/rendering/` receipt bind the correct configuration,
-  source bytes, all thirteen compiler-backed declaration anchors and thirteen
-  manifest file hashes. All three actual mechanical gates have passed for this
-  cycle. Await the actual private review and apply the existing positive-review
-  delegation after presenting it. There is no third issued registration yet.
+- The third cycle, `pairs_channels`, is complete and publicly verified as
+  `PALOMAR-2026-11-13-000002` version1, without published warnings. It uses source
+  `d6a0f6c5109886127526677603eb6b74e8c0cd82` and follow-up metadata. Its thirteen
+  selections passed full preflight `43343229988` (caller head
+  `3c37c349a1f9f4b2285d1eac927804e2668b9491`), Palomar namespace verification
+  `43349041625`, and rendering `43352345446`. The real artifacts, source hashes
+  and all thirteen compiler-backed anchors were checked. Its actual favorable
+  review had no blocking problems, warnings or requested changes; it was read,
+  presented and published under the existing user delegation. The completed
+  consent digest, public source, statement selection, name/ORCID in all three
+  roles, mechanical/rendering evidence and all git dependency preservation pins
+  match. The public entry initially returned404 after the portal reported
+  registered; a GET-only retry after five minutes confirmed it. Public records
+  are under the follow-up `pairs_channels/registration/` directory.
+  Do not repeat any of the three completed intake or publication requests.
+  Three full cycles are closed. The next permitted full cycle is
+  `stopping_reconstruction` at the same follow-up source and metadata edition,
+  then `probability_references` and `affine_events`. User role and conditional
+  publication authority persist. Follow-up render jobs share the source commit:
+  select each using the current intake creation time and then its actual
+  configuration/source artifact, never by source commit alone.
