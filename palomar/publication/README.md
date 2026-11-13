@@ -61,7 +61,9 @@ has no errors or warnings. Ordinary third intake has now been authenticated
 after the portal recovered, and both temporary authentication proofs were
 deleted. Its separate [Palomar verification passed](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/43349041625),
 with an [actual namespace-profile receipt](../publication-followup/pairs_channels/verification/VALIDATION.json)
-for all thirteen selections and no mechanical warnings. Rendering and editorial
-review remain pending.
+for all thirteen selections and no mechanical warnings. Its
+[separate rendering](../publication-followup/pairs_channels/rendering/VALIDATION.json)
+also passed with all thirteen compiler-backed declaration anchors and thirteen
+manifest file hashes checked. Editorial review remains pending.
 No third registration has been issued yet; follow this existing cycle before
 starting another.

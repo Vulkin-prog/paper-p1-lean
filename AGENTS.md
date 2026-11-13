@@ -195,3 +195,9 @@ future manuscript version and preparing Palomar registrations after completion.
   select the current renderer only after the third intake's actual creation time,
   `2026-11-13T02:00:37Z`, then check its actual configuration and source bytes.
   The completed second-cycle rendering is not third-cycle evidence.
+  The actual third rendering `43352345446` has now passed. Its downloaded artifact
+  and follow-up `pairs_channels/rendering/` receipt bind the correct configuration,
+  source bytes, all thirteen compiler-backed declaration anchors and thirteen
+  manifest file hashes. All three actual mechanical gates have passed for this
+  cycle. Await the actual private review and apply the existing positive-review
+  delegation after presenting it. There is no third issued registration yet.
