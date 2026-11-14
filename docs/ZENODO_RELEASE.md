@@ -1,7 +1,10 @@
-# P1 — préparation Zenodo et première release
+# P1 — préparation Zenodo et licence des manuscrits
 
-La release logicielle **v1.0.0** fige la formalisation et ses preuves publiques
-de validation, après les cinq enregistrements Palomar. Le numéro du logiciel
+La release logicielle **v1.0.1** ajoute la licence **CC BY 4.0**, explicitement
+choisie par Brice Pouly le 14 novembre 2026, pour le papier, le compagnon et
+leurs sources LaTeX et PDF. La [première release v1.0.0](https://github.com/Vulkin-prog/paper-p1-lean/releases/tag/v1.0.0)
+reste disponible sans modification. La formalisation et ses preuves publiques
+de validation sont conservées après les cinq enregistrements Palomar. Le numéro du logiciel
 est distinct de l’édition scientifique **P1 V2.0**. Les sources mathématiques,
 les PDF, Lean, Mathlib et les cinq enregistrements ne changent pas pour cette
 préparation. L’édition documentaire courante reste celle du 13 novembre 2026.
@@ -19,8 +22,10 @@ Auteur humain : **Brice Pouly**, ORCID
 `CITATION.cff` fournit la citation GitHub ; `.zenodo.json` contient les mêmes
 données pour Zenodo. Aucun DOI P1 n’est supposé ni copié du Paper C.
 Les rôles de ChatGPT (GPT-6 Astra) et de Codex sont conservés dans les descriptions.
-La licence du logiciel est Apache-2.0. La licence des manuscrits est une décision
-distincte de l’auteur : voir [LICENSE_SCOPE.md](../LICENSE_SCOPE.md).
+La licence du logiciel est Apache-2.0. Celle des deux manuscrits est CC BY 4.0 :
+voir [l’accord de licence](../LICENSE_MANUSCRIPTS.md), le
+[texte officiel](../LICENSE_CC_BY_4_0.txt) et le
+[périmètre des licences](../LICENSE_SCOPE.md).
 
 ## Génération et contrôles
 
@@ -38,10 +43,12 @@ Le dossier de sortie doit être nouveau, vide, sur la partition Ubuntu et hors
 du dépôt. Le programme lit les fichiers du commit, jamais des fichiers voisins
 ou privés. Il produit :
 
-- `paper-p1-lean-v1.0.0.zip` : chaque fichier Git suivi, vérifié contre son objet
+- `paper-p1-lean-v1.0.1.zip` : chaque fichier Git suivi, vérifié contre son objet
   Git ; aucun `.git`, `.lake`, cache de dépendance ou fichier opérationnel privé.
-- `P1_paper_companion_sources_2026-11-14.zip` : les 34 TeX, les deux PDF exacts,
-  un `build.py` autonome, les informations d’origine, les droits et les empreintes.
+- `P1_paper_companion_sources_v1.0.1_2026-11-14.zip` : les 34 TeX, les deux PDF
+  exacts, un `build.py` autonome, les informations d’origine, la licence CC BY 4.0
+  explicite des manuscrits et les empreintes.
+- `LICENSE_MANUSCRIPTS.md` et `LICENSE_CC_BY_4_0.txt`, aussi inclus dans le ZIP.
 - Les deux PDF séparés, `PAPER_BUILD_VALIDATION.json`, `RELEASE_MANIFEST.json`,
   `SHA256SUMS`, `RELEASE_NOTES.md`, `ZENODO_DEPOSIT_FR.md` et les deux fichiers
   de métadonnées Zenodo.
@@ -53,7 +60,7 @@ pages et l’égalité du texte intégral extrait avec les PDF canoniques. Il n�
 pas l’égalité binaire des PDF recompilés : les horodatages peuvent la changer.
 Les PDF canoniques et tous les TeX conservent leurs empreintes documentées.
 
-Le dernier contrôle complet de la formalisation avant cette préparation est
+Le contrôle complet de référence de la formalisation pour cette préparation est
 [le run 43518789449](https://github.com/Vulkin-prog/paper-p1-lean/actions/runs/43518789449)
 au commit `40b19b56d06d0de0d60ca88dd9855c5a21e38ff5` : construction complète,
 audit parent de 20 019 déclarations, audit RegistryV2 de 262 déclarations et audit
@@ -64,10 +71,11 @@ ce contrôle à un autre commit. Aucune nouvelle soumission Palomar n’est lanc
 ## Publication et DOI
 
 Les fichiers générés sont joints à la
-[release v1.0.0](https://github.com/Vulkin-prog/paper-p1-lean/releases/tag/v1.0.0).
-Les métadonnées préparées ne créent pas un dépôt Zenodo. La session Zenodo
-disponible n’est pas connectée et le dépôt GitHub n’est pas relié automatiquement
-à Zenodo lors de cette préparation. `ZENODO_DEPOSIT_FR.md` indique les fichiers
+[release v1.0.1](https://github.com/Vulkin-prog/paper-p1-lean/releases/tag/v1.0.1).
+Les métadonnées du papier précisent `license: cc-by-4.0` et `access_right: open`.
+Elles ne créent pas un dépôt Zenodo. Lors de la préparation initiale du
+14 novembre 2026, la session Zenodo n’était pas connectée et le dépôt GitHub
+n’était pas relié automatiquement à Zenodo. `ZENODO_DEPOSIT_FR.md` indique les fichiers
 et champs des deux dépôts manuels. Après création des vrais DOI, ajouter les
 liens réciproques papier/logiciel dans leurs métadonnées et dans la citation.
 

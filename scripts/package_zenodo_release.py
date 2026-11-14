@@ -18,7 +18,7 @@ import tempfile
 import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
-SPEC = 'release/v1.0.0.json'
+SPEC = 'release/v1.0.1.json'
 TITLE = 'Sharp Poisson approximation and second-order correction for long multiplicative runs'
 
 
@@ -75,7 +75,8 @@ def package(output):
         raise ValueError('Inconsistent software citation/Zenodo release metadata')
     # The complete CI already checked the mathematical files. Verify that this
     # packaging release really changes only the explicitly reviewed release files.
-    allowed = {'.zenodo.json', 'CITATION.cff', 'LICENSE_SCOPE.md', 'README.md', SPEC,
+    allowed = {'.zenodo.json', '.gitattributes', 'CITATION.cff', 'LICENSE_SCOPE.md', 'README.md', SPEC,
+               'release/v1.0.0.json', 'LICENSE_MANUSCRIPTS.md', 'LICENSE_CC_BY_4_0.txt',
                'docs/ZENODO_RELEASE.md', 'scripts/package_zenodo_release.py',
                'scripts/paper_source_build.py'}
     changed = set(run('git', 'diff', '--name-only', spec['reference_complete_ci']['source_commit'],
@@ -100,12 +101,19 @@ def package(output):
     paper_files['build.py'] = blob('scripts/paper_source_build.py')
     paper_files['LICENSE_BUILD.txt'] = blob('LICENSE')
     paper_files['LICENSE_SCOPE.md'] = blob('LICENSE_SCOPE.md')
+    if (spec['manuscript_license'] != 'CC-BY-4.0'
+            or spec['zenodo_manuscript_license'] != 'cc-by-4.0'):
+        raise ValueError('The author selected CC BY 4.0 for both P1 manuscripts')
+    for path in ['LICENSE_MANUSCRIPTS.md', 'LICENSE_CC_BY_4_0.txt']:
+        data = blob(path)
+        paper_files[path] = data
+        (output / path).write_bytes(data)
     paper_files['DOCUMENTARY_UPDATE.json'] = blob(paper_package + '/DOCUMENTARY_UPDATE.json')
     paper_files['REGISTRY_SNAPSHOT.json'] = blob(paper_package + '/REGISTRY_SNAPSHOT.json')
-    rights = ('Les manuscrits conservent leurs mentions de droits actuelles. Aucune nouvelle '
-              'licence pour le texte ou les PDF n’est ajoutée par cette archive. Le choix de la '
-              'licence du dépôt Zenodo du papier reste à confirmer par l’auteur.'
-              if spec['manuscript_license'] is None else 'Licence des manuscrits : ' + spec['manuscript_license'] + '.')
+    rights = ('Le papier et le compagnon, y compris leurs sources LaTeX et leurs PDF, sont sous '
+              'Creative Commons Attribution 4.0 International (CC BY 4.0), selon le choix explicite '
+              'de Brice Pouly du 14 novembre 2026. Voir `LICENSE_MANUSCRIPTS.md` et le texte officiel '
+              '`LICENSE_CC_BY_4_0.txt` : https://creativecommons.org/licenses/by/4.0/.')
     paper_readme = f'''# P1 — sources du papier et du compagnon
 
 {TITLE}
@@ -155,8 +163,8 @@ ne sont pas tous déclarés comme enregistrés. Les hypothèses imprimées, nota
 l’entrée conditionnelle d’ordre 254 du Théorème 5.2, restent explicites.
 
 {rights}
-Le programme `build.py` est sous Apache-2.0 (`LICENSE_BUILD.txt`) ; cette licence
-du programme ne constitue pas une nouvelle licence des manuscrits.
+Le programme `build.py` est sous Apache-2.0 (`LICENSE_BUILD.txt`), distincte
+de la licence CC BY 4.0 des manuscrits.
 La déclaration d’assistance dans `sources/assistance.tex` est conservée :
 ChatGPT (GPT-6 Astra) a assisté le travail mathématique et éditorial ; le
 développement Lean a bénéficié de l’assistance de Codex. Brice Pouly reste
@@ -174,7 +182,7 @@ l’auteur humain responsable. Cette archive ne crée aucun DOI Zenodo.
     })
     paper_files['SHA256SUMS'] = ''.join(sha(data) + '  ' + name + '\n'
                                       for name, data in sorted(paper_files.items())).encode()
-    paper_zip = output / f'P1_paper_companion_sources_{date}.zip'
+    paper_zip = output / f'P1_paper_companion_sources_{tag}_{date}.zip'
     prefix = 'P1_paper_companion_sources/'
     timestamp = datetime.datetime.fromtimestamp(int(run('git', 'show', '-s', '--format=%ct', commit)),
                                                datetime.timezone.utc).timetuple()[:6]
@@ -254,8 +262,10 @@ l’auteur humain responsable. Cette archive ne crée aucun DOI Zenodo.
                              for r in records)
     notes = f'''# P1 — formalization {tag}
 
-First archived software release accompanying the P1 V2.0 article and technical
-companion, with their five issued Palomar records and updated documentary notice.
+License and deposit-metadata update of the first archived P1 software release.
+The article and companion are now explicitly CC BY 4.0, as selected by the author
+on 14 November 2026. The previous v1.0.0 release remains unchanged. The scientific
+edition is P1 V2.0 with its five issued Palomar records and documentary notice.
 Author: [Brice Pouly](https://orcid.org/0009-0008-8491-2467).
 
 ## Exact source and scope
@@ -288,6 +298,8 @@ manuscript source/PDFs and existing registration evidence are unchanged.
   stable references, no remaining undefined or overfull diagnostics, and full
   extracted text equal to the supplied PDFs.
 - `P1_Main_EN.pdf`, `P1_Companion_EN.pdf`: keep together for reciprocal file links.
+- `LICENSE_MANUSCRIPTS.md`, `LICENSE_CC_BY_4_0.txt`: explicit author license grant
+  for both manuscripts and the unmodified official CC BY 4.0 text.
 - `RELEASE_MANIFEST.json`, `PAPER_BUILD_VALIDATION.json`, `SHA256SUMS`: provenance,
   actual packaging/rebuild evidence and integrity hashes.
 - `ZENODO_SOFTWARE_METADATA.json`, `ZENODO_PAPER_METADATA.json`, `ZENODO_DEPOSIT_FR.md`:
@@ -297,8 +309,8 @@ No dependency caches, compiled Lean artifacts, Git internals, account credential
 private portal files or unpublished private reviews are collected. Historical
 public reports already tracked in Git remain included.
 
-Software: Apache-2.0; third-party notices retained. Manuscript rights are separate
-(see `LICENSE_SCOPE.md`). ChatGPT (GPT-6 Astra)'s mathematical/editorial role and
+Software: Apache-2.0. Article, companion and their LaTeX/PDF distributions: CC BY 4.0.
+Third-party notices retained; see `LICENSE_SCOPE.md`. ChatGPT (GPT-6 Astra)'s mathematical/editorial role and
 Codex's Lean assistance are disclosed. Brice Pouly remains responsible.
 '''
     (output / 'RELEASE_NOTES.md').write_text(notes, encoding='utf-8')
@@ -320,8 +332,7 @@ Codex's Lean assistance are disclosed. Brice Pouly remains responsible.
                        'the responsible human author.</p>',
         'related_identifiers': [{'identifier': release_url, 'relation': 'isSupplementedBy', 'scheme': 'url'}]
     }
-    if spec['manuscript_license'] is not None:
-        paper_meta.update(license=spec['manuscript_license'], access_right='open')
+    paper_meta.update(license=spec['zenodo_manuscript_license'], access_right='open')
     (output / 'ZENODO_PAPER_METADATA.json').write_bytes(encode(paper_meta))
     deposit = f'''# Préparation des deux dépôts Zenodo — P1
 
@@ -338,11 +349,12 @@ Fichiers à déposer ensemble :
 - `P1_Main_EN.pdf` (33 pages) ;
 - `P1_Companion_EN.pdf` (84 pages) ;
 - `{paper_zip.name}` (sources exactes des deux documents et compilation autonome).
+- `LICENSE_MANUSCRIPTS.md` et `LICENSE_CC_BY_4_0.txt` (licence explicite des deux manuscrits).
 
 Les champs descriptifs sont préparés dans `ZENODO_PAPER_METADATA.json`.
 {rights}
-Ce fichier n’est donc un dépôt ouvert complet qu’après le choix de cette licence.
-Ne pas recopier automatiquement la licence Apache-2.0 du code sur le papier.
+La licence à sélectionner dans le dépôt Zenodo du papier est **CC BY 4.0**
+(identifiant `cc-by-4.0`), déjà renseignée avec l’accès ouvert dans les métadonnées.
 Garder les noms des deux PDF pour les liens réciproques. Les PDF canoniques ont
 les mêmes empreintes que l’édition documentaire du dépôt, sans modification.
 
@@ -404,6 +416,8 @@ La compilation extraite du ZIP a réellement produit les deux documents avec
                                   'source_commit': r['source_commit']} for r in records],
         'zenodo_deposit_created': False, 'zenodo_doi': None,
         'software_license': spec['software_license'], 'manuscript_license': spec['manuscript_license'],
+        'zenodo_manuscript_license': spec['zenodo_manuscript_license'],
+        'manuscript_license_authority': spec['manuscript_license_authority'],
         'files': {p.name: {'bytes': p.stat().st_size, 'sha256': sha(p.read_bytes())} for p in assets},
         'manifest_and_checksum_file_are_excluded_from_manifest_file_list': True
     }

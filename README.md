@@ -2,13 +2,14 @@
 
 ## Zenodo release preparation
 
-[Release v1.0.0](https://github.com/Vulkin-prog/paper-p1-lean/releases/tag/v1.0.0)
+[Release v1.0.1](https://github.com/Vulkin-prog/paper-p1-lean/releases/tag/v1.0.1)
 provides a complete source snapshot of the formalization, a standalone source
 ZIP for both PDFs, integrity hashes and separate paper/software deposit metadata.
 The [release guide](docs/ZENODO_RELEASE.md) records the actual checks and Zenodo
 steps. Author: [Brice Pouly](https://orcid.org/0009-0008-8491-2467).
-The software is Apache-2.0; [manuscript rights are separate](LICENSE_SCOPE.md).
-No Zenodo DOI is asserted before an actual deposit. Software version1.0.0 is
+The software is Apache-2.0; the article, companion and their LaTeX/PDF sources
+are [CC BY 4.0](LICENSE_MANUSCRIPTS.md), explicitly selected by the author.
+No Zenodo DOI is asserted before an actual deposit. Software version 1.0.1 is
 distinct from the paper's scientific edition V2.0.
 
 ## Current publication dossier
@@ -336,8 +337,10 @@ lake env lake comparator --config comparator/registrations/p1_profiles_smooth.js
 ## Licence and assistance
 
 The Lean development uses [Apache-2.0](LICENSE). Ported Paper C material retains
-its exact source attribution and was rebuilt with the new compiler. Manuscript
-provenance and authorship remain in the manuscript packages. Agent assistance
+its exact source attribution and was rebuilt with the new compiler. The P1
+article, companion and their LaTeX/PDF distributions are
+[CC BY 4.0](LICENSE_MANUSCRIPTS.md), explicitly selected by Brice Pouly on
+14 November 2026. Manuscript provenance and authorship remain in the manuscript packages. Agent assistance
 and review are disclosed in the manuscript and candidate metadata; they do not
 constitute independent human peer review.
 
