@@ -1,0 +1,27 @@
+{
+  "title": "P1: Lean formalization of Sharp Poisson approximation and second-order correction for long multiplicative runs",
+  "upload_type": "software",
+  "creators": [
+    {
+      "name": "Pouly, Brice",
+      "orcid": "0009-0008-8491-2467"
+    }
+  ],
+  "version": "1.0.0",
+  "publication_date": "2026-11-14",
+  "access_right": "open",
+  "license": "Apache-2.0",
+  "language": "eng",
+  "keywords": [
+    "Lean", "formalized mathematics", "Poisson approximation",
+    "random multiplicative functions", "factorial cumulants", "Palomar"
+  ],
+  "description": "<p>Lean v4.36.0-rc2 formalization and checked correspondence for the P1 article <em>Sharp Poisson approximation and second-order correction for long multiplicative runs</em> and its technical companion, by Brice Pouly (ORCID 0009-0008-8491-2467). The current scientific scope contains 118 numbered results: 26 in the main article and 92 in the companion. Printed conditional hypotheses are retained, including the order-254 input in main Theorem 5.2. Mathlib is pinned to 9d581dfff2e41de989072ea63abf3daf69311520.</p><p>Five issued Palomar records cover all 26 numbered main results through 42 selected statements. The fifth record directly adds companion Propositions T13.1 and T15.1 and the latter's displayed sequence corollary. This does not claim that all 92 companion results are separately registered. The release retains the exact registered source commits and public mechanical, rendering and registration receipts; it does not amend any registration.</p><p>ChatGPT (GPT-6 Astra) assisted the mathematical arguments and editing; Codex assisted the Lean development and statement comparison. These roles are disclosed in the manuscript and repository. Machine checking and AI-assisted review are distinct from independent human verification. Brice Pouly remains the responsible human author and maintainer.</p><p>Apache-2.0 applies to the software. Preserved manuscript packages and third-party material retain their own rights notices; see LICENSE_SCOPE.md. Version 1.0.0 is the software release number; the paper's scientific edition is V2.0 with a documentary registration-notice update dated 13 November 2026. No Zenodo DOI is asserted before an actual Zenodo deposit.</p>",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/Vulkin-prog/paper-p1-lean/tree/v1.0.0",
+      "relation": "isIdenticalTo",
+      "scheme": "url"
+    }
+  ]
+}

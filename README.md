@@ -1,5 +1,16 @@
 # P1 — Lean formalization
 
+## Zenodo release preparation
+
+[Release v1.0.0](https://github.com/Vulkin-prog/paper-p1-lean/releases/tag/v1.0.0)
+provides a complete source snapshot of the formalization, a standalone source
+ZIP for both PDFs, integrity hashes and separate paper/software deposit metadata.
+The [release guide](docs/ZENODO_RELEASE.md) records the actual checks and Zenodo
+steps. Author: [Brice Pouly](https://orcid.org/0009-0008-8491-2467).
+The software is Apache-2.0; [manuscript rights are separate](LICENSE_SCOPE.md).
+No Zenodo DOI is asserted before an actual deposit. Software version1.0.0 is
+distinct from the paper's scientific edition V2.0.
+
 ## Current publication dossier
 
 The [registration notice updated 13 November 2026](manuscripts/paper-p1/registration-update-2026-11-13/)

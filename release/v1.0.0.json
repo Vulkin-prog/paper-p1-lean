@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "version": "1.0.0",
+  "tag": "v1.0.0",
+  "date": "2026-11-14",
+  "repository": "Vulkin-prog/paper-p1-lean",
+  "manuscript_package": "manuscripts/paper-p1/registration-update-2026-11-13",
+  "scientific_manuscript_version": "2.0",
+  "manuscript_license": null,
+  "software_license": "Apache-2.0",
+  "reference_complete_ci": {
+    "source_commit": "40b19b56d06d0de0d60ca88dd9855c5a21e38ff5",
+    "url": "https://github.com/Vulkin-prog/paper-p1-lean/actions/runs/43518789449",
+    "conclusion": "success",
+    "completed_at": "2026-11-13T23:14:37Z",
+    "scope": "Actual complete parent build and 20019-declaration axiom audit, RegistryV2 and its 262-declaration audit, and RegistryFinal and its 111-declaration audit. Release-only changes do not alter Lean, toolchain, dependency manifests, manuscript TeX/PDFs or issued Palomar records."
+  }
+}

@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this Lean formalization, please cite this software release. Cite the article separately for its mathematical results."
+type: software
+title: "P1: Lean formalization of Sharp Poisson approximation and second-order correction for long multiplicative runs"
+authors:
+  - family-names: Pouly
+    given-names: Brice
+    orcid: "https://orcid.org/0009-0008-8491-2467"
+version: "1.0.0"
+date-released: "2026-11-14"
+url: "https://github.com/Vulkin-prog/paper-p1-lean"
+repository-code: "https://github.com/Vulkin-prog/paper-p1-lean"
+license: Apache-2.0
+abstract: >-
+  Lean v4.36.0-rc2 formalization and checked correspondence for the P1 article
+  and its technical companion (26 and 92 numbered results respectively).
+  Printed conditional hypotheses, including the order-254 input in main
+  Theorem 5.2, are retained. Five issued Palomar records cover all 26 main
+  results through 42 selected statements; companion Propositions T13.1 and
+  T15.1 and the latter's displayed sequence corollary are directly selected
+  in the fifth record. The remaining companion results are not separately
+  claimed as registered. Mathematical and editorial assistance from
+  ChatGPT (GPT-6 Astra) and Lean assistance from Codex are documented in the
+  repository and manuscripts. Brice Pouly is the responsible human author.
+  Apache-2.0 describes the software; preserved manuscripts and third-party
+  material retain their own rights notices (see LICENSE_SCOPE.md).
+keywords:
+  - Lean
+  - formalized mathematics
+  - Poisson approximation
+  - random multiplicative functions
+  - factorial cumulants
+  - Palomar
